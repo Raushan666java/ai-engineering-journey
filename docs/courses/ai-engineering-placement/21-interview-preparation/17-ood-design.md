@@ -622,7 +622,9 @@ class VendingMachine {
 
 ## Summary
 
-OOD interviews test your ability to translate real-world systems into clean, extensible code. Follow the framework: clarify requirements, identify entities, define interfaces, implement core logic, discuss tradeoffs. Always consider concurrency, extensibility, and edge cases. Use design patterns appropriately but do not force them. Practice with the four problems in this chapter (parking lot, logger, rate limiter, vending machine) and extend them with new features.
+OOD interviews test your ability to translate real-world systems into clean, extensible code. Follow the framework: clarify requirements, identify entities, define interfaces,.
+implement core logic, discuss tradeoffs. Always consider concurrency, extensibility, and edge cases. Use design patterns appropriately but do not force them. Practice with the four problems in this chapter (parking lot,.
+logger, rate limiter, vending machine) and extend them with new features.
 
 
 ## Practical Takeaways

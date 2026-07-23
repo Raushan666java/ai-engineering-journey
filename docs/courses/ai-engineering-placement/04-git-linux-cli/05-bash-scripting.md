@@ -746,7 +746,9 @@ export PATH="/usr/local/go/bin:$PATH"
     Q1: What is the difference between an alias and a function in bash?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>Aliases</strong> are simple text substitutions — they can't take arguments, use control flow, or handle complex logic. <strong>Functions</strong> are full programs with parameters (<code>$1</code>, <code>$2</code>), local variables, conditionals, and return values. Use aliases for simple shortcuts (<code>alias gs='git status'</code>) and functions when you need flexibility (<code>mkcd() { mkdir -p "$1" && cd "$1"; }</code>).</p>
+<p><strong>Aliases</strong> are simple text substitutions — they can't take arguments, use control flow, or handle complex logic. <strong>Functions</strong> are full programs with parameters (<code>$1</code>,.
+<code>$2</code>), local variables, conditionals, and return values. Use aliases for simple shortcuts (<code>alias gs='git status'</code>) and functions when you need flexibility (<code>mkcd() { mkdir -p "$1" && cd "$1";.
+}</code>).</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -772,7 +774,8 @@ export PATH="/usr/local/go/bin:$PATH"
     Q3: Why would you use tmux instead of just opening multiple terminal windows?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>1. Persistence</strong> — tmux sessions survive SSH disconnections; your server logs keep running. <strong>2. Splits</strong> — View multiple terminals in one window (server + tests + logs). <strong>3. Reattachment</strong> — Detach from home, reattach at work with the same state. <strong>4. Sharing</strong> — Pair program by attaching to the same session. Regular terminal windows don't offer any of these.</p>
+<p><strong>1. Persistence</strong> — tmux sessions survive SSH disconnections; your server logs keep running. <strong>2. Splits</strong> — View multiple terminals in one window (server + tests + logs). <strong>3. Reattachment</strong> — Detach from home,.
+reattach at work with the same state. <strong>4. Sharing</strong> — Pair program by attaching to the same session. Regular terminal windows don't offer any of these.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>

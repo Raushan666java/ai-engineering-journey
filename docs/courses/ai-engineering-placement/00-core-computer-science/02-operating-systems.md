@@ -504,7 +504,10 @@ class MemoryProfiler {
 
 ## Summary
 
-Operating systems knowledge separates engineers who can diagnose production issues from those who guess. The key mental models are: processes provide isolation (use for training jobs), threads provide efficiency (use for inference servers); virtual memory hides physical layout but TLB misses and page faults are real costs; cgroups are how containers enforce limits — understand them before tuning Kubernetes requests and limits; I/O is the most common bottleneck in ML pipelines — io_uring and direct I/O give the best throughput.
+Operating systems knowledge separates engineers who can diagnose production issues from those who guess. The key mental models are: processes provide isolation (use for.
+training jobs), threads provide efficiency (use for inference servers); virtual memory hides physical layout but TLB misses and page faults are real costs;.
+cgroups are how containers enforce limits — understand them before tuning Kubernetes requests and limits; I/O is the most common bottleneck in ML pipelines — io_uring and.
+direct I/O give the best throughput.
 
 ## Practical Takeaways
 

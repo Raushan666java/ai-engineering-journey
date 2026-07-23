@@ -849,7 +849,9 @@ class MultiAgentEvaluator:
 
 ## Summary
 
-Multi-agent collaboration amplifies intelligence when designed correctly. Star topology works for independent subtasks, mesh for consensus, hierarchical for complex workflows, and swarm for homogeneous parallel tasks. Shared context enables coordination but introduces privacy and bandwidth tradeoffs. Failure modes (cascading, deadlock, hallucination amplification) require specific detection and recovery strategies. Agent society simulations reveal emergent norms and specialization. The key skill is knowing when multi-agent wins — and having the metrics to prove it.
+Multi-agent collaboration amplifies intelligence when designed correctly. Star topology works for independent subtasks, mesh for consensus, hierarchical for complex workflows, and.
+swarm for homogeneous parallel tasks. Shared context enables coordination but introduces privacy and bandwidth tradeoffs. Failure modes (cascading, deadlock, hallucination amplification) require specific detection and.
+recovery strategies. Agent society simulations reveal emergent norms and specialization. The key skill is knowing when multi-agent wins — and having the metrics to prove it.
 
 ## Practical Takeaways
 

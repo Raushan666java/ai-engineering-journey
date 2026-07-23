@@ -436,7 +436,8 @@ class ResidualConnection {
 }
 ```text
 
-**Why residuals matter**: In a 12-layer transformer encoder, without residual connections, the gradient at layer 1 would be ∏_{l=2}^{12} (I + d(Sublayer_l)/dx). Each sublayer's Jacobian is close to zero initially, so the product vanishes. With residuals, the Jacobian is I + d(Sublayer_l)/dx, and the product asymptotically approaches I (identity), preserving gradient flow.
+**Why residuals matter**: In a 12-layer transformer encoder, without residual connections, the gradient at layer 1 would be ∏_{l=2}^{12} (I + d(Sublayer_l)/dx). Each sublayer's Jacobian is close to zero initially,.
+so the product vanishes. With residuals, the Jacobian is I + d(Sublayer_l)/dx, and the product asymptotically approaches I (identity), preserving gradient flow.
 
 ---
 
@@ -556,7 +557,10 @@ class TokenEmbedding {
 
 ## Summary
 
-The Transformer architecture replaced recurrent networks with parallelizable self-attention for sequence processing. The encoder stacks identical layers with multi-head self-attention and feed-forward networks, while the decoder adds cross-attention to encoder outputs. Positional encoding injects sequence order information using sinusoidal functions or learned embeddings. Layer normalization stabilizes training by normalizing across feature dimensions. The feed-forward network applies two linear transformations with a ReLU activation, expanding and contracting the representation dimensionality. Residual connections with pre-normalization improve gradient flow in deep stacks. Transformer variants include encoder-only (BERT), decoder-only (GPT), and encoder-decoder (T5) architectures for different task families.
+The Transformer architecture replaced recurrent networks with parallelizable self-attention for sequence processing. The encoder stacks identical layers with multi-head self-attention and.
+feed-forward networks, while the decoder adds cross-attention to encoder outputs. Positional encoding injects sequence order information using sinusoidal functions or learned embeddings. Layer normalization stabilizes training by normalizing across feature dimensions. The feed-forward network applies two linear transformations with a ReLU activation,.
+expanding and contracting the representation dimensionality. Residual connections with pre-normalization improve gradient flow in deep stacks. Transformer variants include encoder-only (BERT),.
+decoder-only (GPT), and encoder-decoder (T5) architectures for different task families.
 
 ## Practical Takeaways
 
@@ -577,7 +581,11 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q1: Why does the transformer use sinusoidal positional encoding instead of a learned embedding?
   </summary>
   <div class="tp-qa-answer">
-    <p>The sinusoidal encoding has several advantages: (1) It can extrapolate to sequence lengths not seen during training — for any position pos+k, the encoding is a linear function of position pos, allowing the model to learn relative position patterns that generalize. (2) It doesn't require learning parameters, reducing model size. (3) The varying frequencies across dimensions (low dimensions encode high-frequency patterns, high dimensions encode low-frequency patterns) give the model both fine-grained and coarse positional information. However, many modern models (BERT, GPT-2) use learned positional embeddings because they perform slightly better when max sequence length is fixed and known in advance (typically 512).</p>
+<p>The sinusoidal encoding has several advantages: (1) It can extrapolate to sequence lengths not seen during training — for any position pos+k,.
+the encoding is a linear function of position pos, allowing the model to learn relative position patterns that generalize. (2) It doesn't require learning parameters,.
+reducing model size. (3) The varying frequencies across dimensions (low dimensions encode high-frequency patterns, high dimensions encode low-frequency patterns) give the model both fine-grained and.
+coarse positional information. However, many modern models (BERT, GPT-2) use learned positional embeddings because they perform slightly better when max sequence length is fixed and.
+known in advance (typically 512).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -589,7 +597,10 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q2: Explain the difference between pre-norm and post-norm in transformer layers.
   </summary>
   <div class="tp-qa-answer">
-    <p>Post-norm (original Transformer): output = LayerNorm(x + Sublayer(x)). Layer norm is applied after the residual addition. Pre-norm (GPT, modern transformers): output = x + Sublayer(LayerNorm(x)). Layer norm is applied before each sublayer. Pre-norm has several benefits: (1) More stable training at higher learning rates (LR can be 2-4x higher). (2) Warmup steps can be reduced or eliminated. (3) The final layer output doesn't go through a norm, preserving scale. (4) Gradient flow through the residual path is closer to identity. Post-norm can achieve slightly better final performance with optimal hyperparameters but is harder to tune. Most modern implementations (GPT, LLaMA, Mistral) use pre-norm.</p>
+<p>Post-norm (original Transformer): output = LayerNorm(x + Sublayer(x)). Layer norm is applied after the residual addition. Pre-norm (GPT, modern transformers): output = x + Sublayer(LayerNorm(x)). Layer norm is applied before each sublayer. Pre-norm has several benefits: (1) More stable training.
+at higher learning rates (LR can be 2-4x higher). (2) Warmup steps can be reduced or.
+eliminated. (3) The final layer output doesn't go through a norm, preserving scale. (4) Gradient flow through the residual path is closer to identity. Post-norm can achieve slightly better final performance with optimal hyperparameters but.
+is harder to tune. Most modern implementations (GPT, LLaMA, Mistral) use pre-norm.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -601,7 +612,10 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q3: What is the role of the feed-forward network in transformer layers?
   </summary>
   <div class="tp-qa-answer">
-    <p>The FFN applies two linear transformations with a ReLU/GELU activation: FFN(x) = W2 * GELU(W1 * x + b1) + b2. The inner dimension d_ff = 4*d_model (2048 for d_model=512). The FFN (1) introduces non-linear transformations that self-attention lacks (attention is purely linear in the value dimension). (2) Allows each position to independently process information aggregated by attention. (3) Contains ~2/3 of all model parameters. Without FFN, the transformer would be a purely linear model in the token embedding space, seriously limiting representational power. Different FFN neurons seem to specialize: some activate for specific syntactic patterns, others for semantic features.</p>
+<p>The FFN applies two linear transformations with a ReLU/GELU activation: FFN(x) = W2 * GELU(W1 * x + b1) + b2. The inner dimension d_ff = 4*d_model (2048 for.
+d_model=512). The FFN (1) introduces non-linear transformations that self-attention lacks (attention is purely linear in the value dimension). (2) Allows each position to independently process information aggregated by attention. (3) Contains ~2/3 of all model parameters. Without FFN,.
+the transformer would be a purely linear model in the token embedding space, seriously limiting representational power. Different FFN neurons seem to specialize: some activate for.
+specific syntactic patterns, others for semantic features.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -613,7 +627,10 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q4: Why is the transformer more parallelizable than RNNs?
   </summary>
   <div class="tp-qa-answer">
-    <p>RNNs process sequences one token at a time — the computation of h_t depends on h_{t-1}, creating a sequential dependency that prevents parallelization across timesteps. Training a 100-token sequence requires 100 sequential operations. Transformers compute attention between all pairs of positions simultaneously using matrix multiplications: Q, K, V are computed in parallel via X * W_q, X * W_k, X * W_v (all tokens at once), and attention scores = softmax(Q * K^T / sqrt(d_k)) are a single matrix operation. This reduces the sequential operation path to O(1) (a fixed number of matrix multiplies per layer), regardless of sequence length. This parallelism is why transformers can be trained efficiently on GPU hardware despite their O(n^2) per-layer complexity.</p>
+<p>RNNs process sequences one token at a time — the computation of h_t depends on h_{t-1}, creating a sequential dependency that prevents parallelization across timesteps. Training a 100-token sequence requires 100 sequential operations. Transformers compute attention between all pairs of positions simultaneously using matrix multiplications: Q,.
+K, V are computed in parallel via X * W_q, X * W_k, X * W_v (all tokens at once), and.
+attention scores = softmax(Q * K^T / sqrt(d_k)) are a single matrix operation. This reduces the sequential operation path to O(1) (a fixed number of matrix multiplies per layer),.
+regardless of sequence length. This parallelism is why transformers can be trained efficiently on GPU hardware despite their O(n^2) per-layer complexity.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -625,7 +642,11 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q5: What is the difference between encoder-only, decoder-only, and encoder-decoder transformers?
   </summary>
   <div class="tp-qa-answer">
-    <p>Encoder-only (BERT, RoBERTa): Uses the encoder stack with bidirectional self-attention (no masking). Outputs contextualized token representations. Best for understanding tasks: classification, NER, QA, sentence similarity. Decoder-only (GPT, LLaMA): Uses the decoder stack with causal masking (each token can only attend to itself and previous tokens). Generates text autoregressively. Best for generation tasks: language modeling, story generation, code completion. Encoder-decoder (T5, BART): Full stack with encoder (bidirectional) and decoder (causal with cross-attention). Best for seq2seq tasks: translation, summarization, text-to-text problems. The choice depends on whether the task requires understanding (encoder-only), generation (decoder-only), or both with input-output transformation (encoder-decoder).</p>
+<p>Encoder-only (BERT, RoBERTa): Uses the encoder stack with bidirectional self-attention (no masking). Outputs contextualized token representations. Best for understanding tasks: classification,.
+NER, QA, sentence similarity. Decoder-only (GPT, LLaMA): Uses the decoder stack with causal masking (each token can only attend to itself and.
+previous tokens). Generates text autoregressively. Best for generation tasks: language modeling, story generation, code completion. Encoder-decoder (T5, BART): Full stack with encoder (bidirectional) and.
+decoder (causal with cross-attention). Best for seq2seq tasks: translation, summarization, text-to-text problems. The choice depends on whether the task requires understanding (encoder-only),.
+generation (decoder-only), or both with input-output transformation (encoder-decoder).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -637,7 +658,10 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q6: How many parameters are in each component of a transformer layer?
   </summary>
   <div class="tp-qa-answer">
-    <p>For a layer with d_model=512, h=8 heads (d_k=64), d_ff=2048: Multi-head attention: 4 * d_model^2 = 4 * 512^2 = 1,048,576 parameters (W_q, W_k, W_v, W_O each 512x512 = 262,144). Layer norm: 2 * d_model = 1,024 (gamma + beta). FFN: 2 * d_model * d_ff = 2 * 512 * 2048 = 2,097,152 (W1: 2048x512, W2: 512x2048). Plus biases: 2048 + 512 = 2,560. Total per layer: ~3.15M. Attention has ~33% of parameters, FFN has ~67%. For a 6-layer base Transformer: ~19M parameters. For BERT-base (12 layers, d_model=768, d_ff=3072): ~110M parameters. GPT-3 (96 layers, d_model=12288, d_ff=49152): ~175B parameters.</p>
+<p>For a layer with d_model=512, h=8 heads (d_k=64), d_ff=2048: Multi-head attention: 4 * d_model^2 = 4 * 512^2 = 1,048,576 parameters (W_q,.
+W_k, W_v, W_O each 512x512 = 262,144). Layer norm: 2 * d_model = 1,024 (gamma + beta). FFN: 2 * d_model * d_ff = 2 * 512 * 2048 = 2,097,152 (W1: 2048x512,.
+W2: 512x2048). Plus biases: 2048 + 512 = 2,560. Total per layer: ~3.15M. Attention has ~33% of parameters, FFN has ~67%. For.
+a 6-layer base Transformer: ~19M parameters. For BERT-base (12 layers, d_model=768, d_ff=3072): ~110M parameters. GPT-3 (96 layers, d_model=12288, d_ff=49152): ~175B parameters.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -649,7 +673,10 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q7: What is label smoothing and why is it used in transformer training?
   </summary>
   <div class="tp-qa-answer">
-    <p>Label smoothing replaces hard targets (0 or 1) with softened targets: y_smooth = (1 - epsilon) * y_hard + epsilon / V where V is vocabulary size and epsilon=0.1 typically. For example, the correct word "chat" would have target 0.9 instead of 1.0, and all other V-1 words get 0.1/V instead of 0. This prevents the model from becoming over-confident, which improves generalization and calibration. In transformer training, label smoothing of 0.1 consistently improves BLEU scores by 0.5-1.0 points and is standard in the Transformer paper. Without it, the model's softmax outputs become too sharp (near one-hot), and the model doesn't learn to assign nonzero probability to plausible alternatives.</p>
+<p>Label smoothing replaces hard targets (0 or 1) with softened targets: y_smooth = (1 - epsilon) * y_hard + epsilon / V where V is vocabulary size and.
+epsilon=0.1 typically. For example, the correct word "chat" would have target 0.9 instead of 1.0, and all other V-1 words get 0.1/V instead of 0. This prevents the model from becoming over-confident,.
+which improves generalization and calibration. In transformer training, label smoothing of 0.1 consistently improves BLEU scores by 0.5-1.0 points and is standard in the Transformer paper. Without it,.
+the model's softmax outputs become too sharp (near one-hot), and the model doesn't learn to assign nonzero probability to plausible alternatives.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -661,7 +688,10 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q8: How does the transformer handle variable-length sequences?
   </summary>
   <div class="tp-qa-answer">
-    <p>Transformers handle variable-length sequences through: (1) Padding — sequences shorter than max_len are padded with a special <pad> token. (2) Attention masking — padding positions are masked out (set to -Infinity before softmax) so they don't contribute to attention. (3) Bucketing — sequences of similar lengths are grouped into batches to minimize padding waste. (4) The learned positional encoding (if used) must be sized for the maximum expected sequence length. Sinusoidal encoding (T5) can extrapolate beyond training lengths. In production, sequences are typically clipped or truncated to a maximum length (512 for BERT, 2048 for GPT-3, 4096 for GPT-4). Packing multiple sequences into one training example is also common for efficiency.</p>
+<p>Transformers handle variable-length sequences through: (1) Padding — sequences shorter than max_len are padded with a special <pad> token. (2) Attention masking — padding positions are masked out (set to -Infinity before softmax) so they don't contribute to attention. (3).
+Bucketing — sequences of similar lengths are grouped into batches to minimize padding waste. (4) The learned positional encoding (if used) must be sized for.
+the maximum expected sequence length. Sinusoidal encoding (T5) can extrapolate beyond training lengths. In production, sequences are typically clipped or truncated to a maximum length (512 for.
+BERT, 2048 for GPT-3, 4096 for GPT-4). Packing multiple sequences into one training example is also common for efficiency.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -673,7 +703,10 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q9: What is cross-attention in the transformer decoder?
   </summary>
   <div class="tp-qa-answer">
-    <p>Cross-attention allows the decoder to attend to the encoder's output. In the decoder's cross-attention sublayer: Query comes from the decoder's previous self-attention output, while Key and Value come from the encoder's final output. This lets each decoder position attend to all input positions and selectively retrieve information. For example, in machine translation, when generating the French word "maison", the decoder queries the English sentence and attends most to "house". Cross-attention is the key difference between encoder and decoder layers: encoder layers use only self-attention, decoder layers use masked self-attention followed by cross-attention. Cross-attention has no causal mask — the decoder can attend to any encoder position regardless of decoding step.</p>
+<p>Cross-attention allows the decoder to attend to the encoder's output. In the decoder's cross-attention sublayer: Query comes from the decoder's previous self-attention output,.
+while Key and Value come from the encoder's final output. This lets each decoder position attend to all input positions and.
+selectively retrieve information. For example, in machine translation, when generating the French word "maison", the decoder queries the English sentence and.
+attends most to "house". Cross-attention is the key difference between encoder and decoder layers: encoder layers use only self-attention, decoder layers use masked self-attention followed by cross-attention. Cross-attention has no causal mask — the decoder can attend to any encoder position regardless of decoding step.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -685,7 +718,11 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
     Q10: What is the "Attention is All You Need" paper's main contribution?
   </summary>
   <div class="tp-qa-answer">
-    <p>The paper (Vaswani et al., 2017) proposed the Transformer, the first sequence transduction model relying entirely on attention, with no recurrence or convolution. Key contributions: (1) Scaled dot-product attention with softmax normalization. (2) Multi-head attention allowing the model to attend to information from different representation subspaces. (3) Positional encoding for sequence order. (4) The complete encoder-decoder architecture with residual connections and layer normalization. (5) Demonstrating that the Transformer trains significantly faster (3.5 days on 8 GPUs) while achieving 28.4 BLEU on WMT 2014 English-to-German translation, and 41.8 on English-to-French — the best results at the time. This paper is the foundation of virtually all modern NLP systems (BERT, GPT, T5, XLNet, etc.).</p>
+<p>The paper (Vaswani et al., 2017) proposed the Transformer, the first sequence transduction model relying entirely on attention, with no recurrence or.
+convolution. Key contributions: (1) Scaled dot-product attention with softmax normalization. (2) Multi-head attention allowing the model to attend to information from different representation subspaces. (3) Positional encoding for.
+sequence order. (4) The complete encoder-decoder architecture with residual connections and layer normalization. (5) Demonstrating that the Transformer trains significantly faster (3.5 days on 8 GPUs) while achieving 28.4 BLEU on WMT 2014 English-to-German translation,.
+and 41.8 on English-to-French — the best results at the time. This paper is the foundation of virtually all modern NLP systems (BERT,.
+GPT, T5, XLNet, etc.).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

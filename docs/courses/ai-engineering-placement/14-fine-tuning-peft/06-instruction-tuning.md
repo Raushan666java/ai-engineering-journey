@@ -609,7 +609,10 @@ print(f"Distribution: {dist}")
 
 ## Summary
 
-Instruction tuning transforms a base LLM into a chat/assistant model by training on formatted instruction-output pairs. Common dataset formats include Alpaca (instruction/input/output), ShareGPT (conversation turns), Dolly (instruction/context/response), and OASST (role-based messages). Chat templates (Llama, ChatML, Mistral, Gemma) define how system, user, and assistant messages are structured with bos/eos tokens. Multi-turn conversations require context window management — truncating older turns when exceeding token limits. System prompts control model behavior through persona, format instructions, constraints, and tone. Dataset quality is improved through deduplication, filtering short/low-quality examples, and balancing across categories (coding, knowledge, summarization, translation, general).
+Instruction tuning transforms a base LLM into a chat/assistant model by training on formatted instruction-output pairs. Common dataset formats include Alpaca (instruction/input/output),.
+ShareGPT (conversation turns), Dolly (instruction/context/response), and OASST (role-based messages). Chat templates (Llama, ChatML, Mistral, Gemma) define how system, user, and assistant messages are structured with bos/eos tokens. Multi-turn conversations require context window management — truncating older turns when exceeding token limits. System prompts control model behavior.
+through persona, format instructions, constraints, and tone. Dataset quality is improved through deduplication, filtering short/low-quality examples, and balancing across categories (coding,.
+knowledge, summarization, translation, general).
 
 ## Practical Takeaways
 
@@ -630,7 +633,12 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q1: What is instruction tuning and why is it important?
   </summary>
   <div class="tp-qa-answer">
-    <p>Instruction tuning is a fine-tuning technique where a language model is trained on (instruction, response) pairs to improve its ability to follow diverse instructions. It transforms a base pre-trained LLM (which predicts next tokens but doesn't follow instructions) into a helpful assistant that can understand and execute user requests. Instruction tuning is important because: (1) it aligns the model with human intent — the model learns to produce responses that satisfy the user's explicit request rather than just continuing the text; (2) it improves generalization to unseen instructions — models trained on diverse instructions can generalize to new tasks they weren't explicitly trained on; (3) it enables zero-shot task performance — after instruction tuning, the model can perform tasks from natural language descriptions without examples. The process uses a dataset of (instruction, response) pairs — typically 10K-100K examples covering diverse tasks (writing, coding, analysis, creative, Q&A). FLAN (Finetuned Language Net) demonstrated that instruction tuning on a broad range of tasks improves both task-specific performance and generalization to held-out tasks.</p>
+<p>Instruction tuning is a fine-tuning technique where a language model is trained on (instruction, response) pairs to improve its ability to follow diverse instructions. It transforms a base pre-trained LLM (which predicts next tokens but.
+doesn't follow instructions) into a helpful assistant that can understand and execute user requests. Instruction tuning is important because: (1) it aligns the model with human intent — the model learns to produce responses that satisfy the user's explicit request rather than just continuing the text;.
+(2) it improves generalization to unseen instructions — models trained on diverse instructions can generalize to new tasks they weren't explicitly trained on;.
+(3) it enables zero-shot task performance — after instruction tuning, the model can perform tasks from natural language descriptions without examples. The process uses a dataset of (instruction,.
+response) pairs — typically 10K-100K examples covering diverse tasks (writing, coding, analysis, creative, Q&A). FLAN (Finetuned Language Net) demonstrated that instruction tuning on a broad range of tasks improves both task-specific performance and.
+generalization to held-out tasks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -642,7 +650,13 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q2: What are the common instruction tuning dataset formats?
   </summary>
   <div class="tp-qa-answer">
-    <p>Common instruction tuning dataset formats: (1) (instruction, output) — the simplest format: <code>{"instruction": "Write a poem about AI", "output": "Here is a poem..."}</code>. Used by Alpaca, Dolly, and ShareGPT datasets; (2) (instruction, input, output) — includes optional input context: <code>{"instruction": "Summarize this text", "input": "Long article text...", "output": "Summary..."}</code>. The input field provides context while the instruction specifies the task. Used by the FLAN dataset; (3) Multi-turn conversation — list of messages with roles: <code>[{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "Hello"}, {"role": "assistant", "content": "Hi! How can I help?"}]</code>. Used by OpenAssistant, LMSYS-Chat-1M; (4) ShareGPT format — JSON array of conversation turns from real ChatGPT interactions. Each example has an "id" and "conversations" array with "from" (human/gpt) and "value" fields. The format must match the model's chat template — for Llama-chat models, use the standard huggingface chat template format. Consistency is critical: all examples in the dataset should use the same format. The chosen format is applied via a formatting function during data loading that converts raw examples into tokenized sequences.</p>
+<p>Common instruction tuning dataset formats: (1) (instruction, output) — the simplest format: <code>{"instruction": "Write a poem about AI", "output": "Here is a poem..."}</code>. Used by Alpaca,.
+Dolly, and ShareGPT datasets; (2) (instruction, input, output) — includes optional input context: <code>{"instruction": "Summarize this text", "input": "Long article text...",.
+"output": "Summary..."}</code>. The input field provides context while the instruction specifies the task. Used by the FLAN dataset; (3) Multi-turn conversation — list of messages with roles: <code>[{"role": "system",.
+"content": "You are a helpful assistant."}, {"role": "user", "content": "Hello"}, {"role": "assistant", "content": "Hi! How can I help?"}]</code>. Used by OpenAssistant,.
+LMSYS-Chat-1M; (4) ShareGPT format — JSON array of conversation turns from real ChatGPT interactions. Each example has an "id" and "conversations" array with "from" (human/gpt) and.
+"value" fields. The format must match the model's chat template — for Llama-chat models, use the standard huggingface chat template format. Consistency is critical: all examples in the dataset should use the same format. The chosen format is applied via.
+a formatting function during data loading that converts raw examples into tokenized sequences.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -654,7 +668,12 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q3: How do you implement chat templates and multi-turn conversations?
   </summary>
   <div class="tp-qa-answer">
-    <p>Chat templates define how conversation turns are formatted into a single tokenizable string. HuggingFace's <code>apply_chat_template()</code> method handles this: (1) each model has a predefined chat template in its tokenizer configuration (<code>tokenizer.chat_template</code>) — for Llama-3, it uses <code>"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{system_message}<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{user_message}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{assistant_message}<|eot_id|>"</code>; (2) for training, format each conversation: <code>tokenizer.apply_chat_template(conversation, tokenize=False, add_generation_prompt=False)</code> produces the full string including all turns; (3) tokenize the full string and create labels where only assistant tokens contribute to loss — user and system tokens have labels = -100 (ignored in loss). Implementation: a formatting function applies the chat template, then the data collator creates proper labels by masking non-assistant tokens. Multi-turn conversations help the model learn to maintain context and consistency across multiple exchanges. The quality of the chat template implementation directly affects training quality — a mismatch between training and inference format degrades performance.</p>
+<p>Chat templates define how conversation turns are formatted into a single tokenizable string. HuggingFace's <code>apply_chat_template()</code> method handles this: (1) each model has a predefined chat template in its tokenizer configuration (<code>tokenizer.chat_template</code>) — for.
+Llama-3, it uses <code>"<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n{system_message}<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{user_message}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{assistant_message}<|eot_id|>"</code>; (2) for training, format each conversation: <code>tokenizer.apply_chat_template(conversation, tokenize=False, add_generation_prompt=False)</code> produces the full string including all turns; (3) tokenize the full string and.
+create labels where only assistant tokens contribute to loss — user and system tokens have labels = -100 (ignored in loss). Implementation: a formatting function applies the chat template,.
+then the data collator creates proper labels by masking non-assistant tokens. Multi-turn conversations help the model learn to maintain context and.
+consistency across multiple exchanges. The quality of the chat template implementation directly affects training quality — a mismatch between training and.
+inference format degrades performance.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -666,7 +685,14 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q4: How do you design effective system prompts for instruction tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Designing effective system prompts for instruction tuning: (1) Role definition — clearly define the model's persona: "You are a helpful, harmless, and honest AI assistant." More specific roles improve task performance: "You are an expert Python programmer who writes clean, well-documented code."; (2) Behavior guidelines — specify desired behaviors: response style (concise vs. detailed), formatting preferences (use markdown, bullet points), safety guidelines (refuse harmful requests politely); (3) Capability boundaries — state what the model can and cannot do: "You can use tools to search the web but cannot access real-time data." Good system prompts improve instruction following by providing consistent context across all training examples. During dataset creation, the system prompt is prepended to every training example (as the first message in the conversation). Some datasets use a single system prompt for all examples, while others vary the system prompt per example to improve generalization. Recommended: use a single consistent system prompt aligned with the target deployment persona, with 10-20% of training examples having slightly varied prompts for robustness.</p>
+<p>Designing effective system prompts for instruction tuning: (1) Role definition — clearly define the model's persona: "You are a helpful, harmless,.
+and honest AI assistant." More specific roles improve task performance: "You are an expert Python programmer who writes clean, well-documented code.";.
+(2) Behavior guidelines — specify desired behaviors: response style (concise vs. detailed), formatting preferences (use markdown, bullet points), safety guidelines (refuse harmful requests politely);.
+(3) Capability boundaries — state what the model can and cannot do: "You can use tools to search the web but.
+cannot access real-time data." Good system prompts improve instruction following by providing consistent context across all training examples. During dataset creation,.
+the system prompt is prepended to every training example (as the first message in the conversation). Some datasets use a single system prompt for.
+all examples, while others vary the system prompt per example to improve generalization. Recommended: use a single consistent system prompt aligned with the target deployment persona,.
+with 10-20% of training examples having slightly varied prompts for robustness.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -678,7 +704,12 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q5: How do you create loss masking for instruction tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Loss masking in instruction tuning ensures the model only learns to predict assistant responses, not the system prompt or user instructions. Implementation: (1) after tokenizing the full conversation (system + user + assistant messages), create a labels tensor identical to input_ids; (2) identify token positions corresponding to the system prompt and user messages — these are typically determined by the chat template structure (e.g., tokens between <|start_header_id|>user<|end_header_id|> and <|start_header_id|>assistant<|end_header_id|> are user tokens); (3) set labels to -100 for all non-assistant token positions — PyTorch's cross-entropy loss ignores positions with label = -100; (4) assistant tokens keep their original labels (the next-token prediction target). A helper function processes each tokenized conversation: iterate through the token IDs, find the assistant turn boundaries (based on the chat template's special tokens), and create the mask. Some datasets pre-tokenize with labels already set. Correct loss masking is critical — without it, the model would learn to predict user messages and system prompts, wasting model capacity and potentially learning to repeat user inputs. Masking ensures the model only learns the desired assistant behavior.</p>
+<p>Loss masking in instruction tuning ensures the model only learns to predict assistant responses, not the system prompt or user instructions. Implementation: (1) after tokenizing the full conversation (system + user + assistant messages),.
+create a labels tensor identical to input_ids; (2) identify token positions corresponding to the system prompt and user messages — these are typically determined by the chat template structure (e.g.,.
+tokens between <|start_header_id|>user<|end_header_id|> and <|start_header_id|>assistant<|end_header_id|> are user tokens); (3) set labels to -100 for all non-assistant token positions — PyTorch's cross-entropy loss ignores positions with label = -100;.
+(4) assistant tokens keep their original labels (the next-token prediction target). A helper function processes each tokenized conversation: iterate through the token IDs,.
+find the assistant turn boundaries (based on the chat template's special tokens), and create the mask. Some datasets pre-tokenize with labels already set. Correct loss masking is critical — without it,.
+the model would learn to predict user messages and system prompts, wasting model capacity and potentially learning to repeat user inputs. Masking ensures the model only learns the desired assistant behavior.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -690,7 +721,12 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q6: How do you evaluate instruction-tuned model quality?
   </summary>
   <div class="tp-qa-answer">
-    <p>Evaluating instruction-tuned models requires multiple approaches: (1) Automated benchmarks — MT-Bench (multi-turn conversation quality judged by GPT-4), AlpacaEval (single-turn instruction following), Chatbot Arena (human preference rankings from real conversations), MMLU (knowledge and reasoning), HumanEval (code generation). These provide standardized comparison scores; (2) Task-specific evaluation — create a test set of held-out instructions representative of the target use case. Use LLM-as-judge (GPT-4 evaluating responses) or human evaluation to score responses on helpfulness, correctness, and format compliance; (3) Side-by-side comparison — present the same instruction to the base model and the instruction-tuned model, comparing response quality. A/B testing with real users provides the most reliable quality signal; (4) Safety evaluation — test with adversarial inputs (jailbreak attempts, harmful requests) to ensure the model refuses appropriately; (5) Regression testing — evaluate on general benchmarks before and after instruction tuning to detect catastrophic forgetting of general capabilities. For production, create an automated evaluation pipeline that runs after each training run and compares against the previous version's scores.</p>
+<p>Evaluating instruction-tuned models requires multiple approaches: (1) Automated benchmarks — MT-Bench (multi-turn conversation quality judged by GPT-4), AlpacaEval (single-turn instruction following),.
+Chatbot Arena (human preference rankings from real conversations), MMLU (knowledge and reasoning), HumanEval (code generation). These provide standardized comparison scores; (2) Task-specific evaluation — create a test set of held-out instructions representative of the target use case. Use LLM-as-judge (GPT-4 evaluating responses) or.
+human evaluation to score responses on helpfulness, correctness, and format compliance; (3) Side-by-side comparison — present the same instruction to the base model and.
+the instruction-tuned model, comparing response quality. A/B testing with real users provides the most reliable quality signal; (4) Safety evaluation — test with adversarial inputs (jailbreak attempts,.
+harmful requests) to ensure the model refuses appropriately; (5) Regression testing — evaluate on general benchmarks before and after instruction tuning to detect catastrophic forgetting of general capabilities. For.
+production, create an automated evaluation pipeline that runs after each training run and compares against the previous version's scores.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -702,7 +738,13 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q7: How do you construct a diverse instruction tuning dataset?
   </summary>
   <div class="tp-qa-answer">
-    <p>Constructing a diverse instruction tuning dataset: (1) Task categories — include diverse task types: brainstorming (30%), creative writing (20%), information extraction (15%), reasoning/analysis (15%), coding (10%), Q&A (10%). Each category has subcategories (brainstorming: ideas, solutions, names, strategies); (2) Difficulty levels — mix simple instructions ("What is 2+2?"), medium ("Explain how transformers work"), and hard ("Write a distributed consensus algorithm"). Aim for 40% easy, 40% medium, 20% hard; (3) Instruction styles — vary verb phrasing ("Write", "Create", "Generate", "Explain", "Analyze", "Compare", "Summarize", "List", "Describe", "Draft"), length (short vs. detailed instructions), and specificity (open-ended vs. constrained); (4) Input variations — for tasks with input context, vary input length (short phrase, paragraph, multi-page) and complexity; (5) Sources — use public datasets (Dolly, OpenAssistant, ShareGPT, FLAN), synthetic data from stronger models (GPT-4 generated instructions), and real user data from production logs. A dataset quality checker validates: no duplicates, balanced category distribution, minimum instruction length (10 chars), and consistent formatting. Quality > quantity — 10K carefully curated examples outperform 100K noisy ones.</p>
+<p>Constructing a diverse instruction tuning dataset: (1) Task categories — include diverse task types: brainstorming (30%), creative writing (20%), information extraction (15%),.
+reasoning/analysis (15%), coding (10%), Q&A (10%). Each category has subcategories (brainstorming: ideas, solutions, names, strategies); (2) Difficulty levels — mix simple instructions ("What is 2+2?"),.
+medium ("Explain how transformers work"), and hard ("Write a distributed consensus algorithm"). Aim for 40% easy, 40% medium, 20% hard; (3) Instruction styles — vary verb phrasing ("Write",.
+"Create", "Generate", "Explain", "Analyze", "Compare", "Summarize", "List", "Describe", "Draft"), length (short vs. detailed instructions), and specificity (open-ended vs. constrained); (4) Input variations — for.
+tasks with input context, vary input length (short phrase, paragraph, multi-page) and complexity; (5) Sources — use public datasets (Dolly, OpenAssistant,.
+ShareGPT, FLAN), synthetic data from stronger models (GPT-4 generated instructions), and real user data from production logs. A dataset quality checker validates: no duplicates,.
+balanced category distribution, minimum instruction length (10 chars), and consistent formatting. Quality > quantity — 10K carefully curated examples outperform 100K noisy ones.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -714,7 +756,13 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q8: What training hyperparameters work best for instruction tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Recommended hyperparameters for instruction tuning with LoRA: (1) Learning rate — 2e-4 to 5e-4 for LoRA (higher than full fine-tuning because only 0.1-1% of parameters are trainable). Use cosine scheduler with 10% warmup steps. Larger models (33B+) need lower LR (1e-4); (2) Batch size — effective batch size of 64-128 (micro_batch_size — gradient_accumulation_steps). Larger batch sizes give more stable gradients; (3) Epochs — 1-3 epochs. Instruction tuning datasets don't need many epochs — the model should learn general patterns, not memorize examples. Monitor validation loss to detect overfitting; (4) LoRA rank — r=16 for Q+V projections. Higher rank (r=32-64) may help for complex multi-turn datasets; (5) Max sequence length — 2048-4096 tokens, matching the target deployment context length. Longer sequences capture more context but use more memory; (6) Weight decay — 0.01 (AdamW default); (7) Warmup ratio — 0.1 (10% of total steps for learning rate warmup). For QLoRA (4-bit base): use slightly higher LR (3e-4 to 5e-4) and consider adding 0.1 LoRA dropout for regularization. Monitor loss curves — training loss should decrease steadily and plateau without spiking.</p>
+<p>Recommended hyperparameters for instruction tuning with LoRA: (1) Learning rate — 2e-4 to 5e-4 for LoRA (higher than full fine-tuning because only 0.1-1% of parameters are trainable). Use cosine scheduler with 10% warmup steps. Larger models (33B+) need lower LR (1e-4);.
+(2) Batch size — effective batch size of 64-128 (micro_batch_size — gradient_accumulation_steps). Larger batch sizes give more stable gradients; (3) Epochs — 1-3 epochs. Instruction tuning datasets don't need many epochs — the model should learn general patterns,.
+not memorize examples. Monitor validation loss to detect overfitting; (4) LoRA rank — r=16 for Q+V projections. Higher rank (r=32-64) may help for.
+complex multi-turn datasets; (5) Max sequence length — 2048-4096 tokens, matching the target deployment context length. Longer sequences capture more context but.
+use more memory; (6) Weight decay — 0.01 (AdamW default); (7) Warmup ratio — 0.1 (10% of total steps for learning rate warmup). For.
+QLoRA (4-bit base): use slightly higher LR (3e-4 to 5e-4) and consider adding 0.1 LoRA dropout for regularization. Monitor loss curves — training loss should decrease steadily and.
+plateau without spiking.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -726,7 +774,14 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q9: How do you handle system prompts in instruction tuning datasets?
   </summary>
   <div class="tp-qa-answer">
-    <p>System prompts set the context and behavior guidelines for the model. In instruction tuning, handling system prompts correctly is important for consistency between training and inference. Approaches: (1) Single system prompt — use one fixed system prompt for all training examples (e.g., "You are a helpful AI assistant."). This is simplest and ensures the model learns to follow instructions given that specific system prompt. During inference, use the same system prompt; (2) Variable system prompts — vary the system prompt per example (different roles, different behavior guidelines). This improves robustness — the model learns to adapt to different system prompts. Include 10-20 different system prompts in the dataset; (3) No system prompt — some datasets omit system prompts entirely and only use user/assistant turns. The model learns to infer the task from the user message alone. The chosen system prompt must be applied consistently during the chat template formatting — it becomes the first message in the conversation. During training, the system prompt tokens are part of the prompt (loss-masked), not the target. The system prompt's content influences the model's behavior — include the exact system prompt that will be used in production for the most consistent results.</p>
+<p>System prompts set the context and behavior guidelines for the model. In instruction tuning, handling system prompts correctly is important for.
+consistency between training and inference. Approaches: (1) Single system prompt — use one fixed system prompt for all training examples (e.g.,.
+"You are a helpful AI assistant."). This is simplest and ensures the model learns to follow instructions given that specific system prompt. During inference,.
+use the same system prompt; (2) Variable system prompts — vary the system prompt per example (different roles, different behavior guidelines). This improves robustness — the model learns to adapt to different system prompts. Include 10-20 different system prompts in the dataset;.
+(3) No system prompt — some datasets omit system prompts entirely and only use user/assistant turns. The model learns to infer the task from the user message alone. The chosen system prompt must be applied consistently during the chat template.
+formatting — it becomes the first message in the conversation. During training,.
+the system prompt tokens are part of the prompt (loss-masked), not the target. The system prompt's content influences the model's behavior.
+— include the exact system prompt that will be used in production for the most consistent results.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -738,7 +793,13 @@ Instruction tuning transforms a base LLM into a chat/assistant model by training
     Q10: How do you prevent overfitting in instruction tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Preventing overfitting in instruction tuning: (1) Dataset quality — ensure diversity and remove near-duplicates. If 90% of examples ask "write a poem," the model will overfit to poetry generation. Use deduplication (embedding-based similarity to remove examples with >0.85 cosine similarity); (2) Early stopping — monitor validation loss on a held-out set (10% of data). Stop training when validation loss stops improving, typically after 1-3 epochs. Use a patience parameter (stop after 3 epochs of no improvement); (3) Regularization — LoRA dropout (0.05-0.1), weight decay (0.01), and LoRA's inherent low rank (r=8-16) naturally limits memorization capacity; (4) Data augmentation — paraphrase instructions, vary formatting, and add noise to reduce memorization; (5) General capability evaluation — evaluate on unrelated benchmarks (MMLU, GSM8K) before and after training. If MMLU score drops by >3%, overfitting is occurring — reduce epochs or increase regularization. Overfitting symptoms: training loss near 0 but validation loss increases, model generates outputs that copy training examples, model fails on novel instructions of similar types. The most effective prevention is high-quality diverse data + early stopping + LoRA's inherent regularization.</p>
+<p>Preventing overfitting in instruction tuning: (1) Dataset quality — ensure diversity and remove near-duplicates. If 90% of examples ask "write a poem," the model will overfit to poetry generation. Use deduplication (embedding-based similarity to remove examples with >0.85 cosine similarity);.
+(2) Early stopping — monitor validation loss on a held-out set (10% of data). Stop training when validation loss stops improving,.
+typically after 1-3 epochs. Use a patience parameter (stop after 3 epochs of no improvement); (3) Regularization — LoRA dropout (0.05-0.1),.
+weight decay (0.01), and LoRA's inherent low rank (r=8-16) naturally limits memorization capacity; (4) Data augmentation — paraphrase instructions, vary formatting,.
+and add noise to reduce memorization; (5) General capability evaluation — evaluate on unrelated benchmarks (MMLU, GSM8K) before and after training. If MMLU score drops by >3%,.
+overfitting is occurring — reduce epochs or increase regularization. Overfitting symptoms: training loss near 0 but validation loss increases, model generates outputs that copy training examples,.
+model fails on novel instructions of similar types. The most effective prevention is high-quality diverse data + early stopping + LoRA's inherent regularization.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

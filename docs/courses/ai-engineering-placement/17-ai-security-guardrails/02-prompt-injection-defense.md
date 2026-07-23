@@ -779,7 +779,8 @@ console.log(defender.sanitize("What is the capital of India?"));
     Q1: What is the difference between direct and indirect prompt injection?
   </summary>
   <div class="tp-qa-answer">
-    <p>Direct prompt injection occurs when the attacker sends malicious input directly to the LLM (e.g., "Ignore previous instructions"). Indirect prompt injection embeds attack instructions in content the LLM retrieves (e.g., a webpage in RAG, or an email in a summarization tool). Indirect injection is harder to detect because the malicious content appears to be legitimate data.</p>
+<p>Direct prompt injection occurs when the attacker sends malicious input directly to the LLM (e.g., "Ignore previous instructions"). Indirect prompt injection embeds attack instructions in content the LLM retrieves (e.g.,.
+a webpage in RAG, or an email in a summarization tool). Indirect injection is harder to detect because the malicious content appears to be legitimate data.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -839,7 +840,9 @@ console.log(defender.sanitize("What is the capital of India?"));
     Q6: What output validation checks should you implement?
   </summary>
   <div class="tp-qa-answer">
-    <p>Essential checks: (1) System prompt leakage — output contains phrases from system prompt, (2) Sensitive data — PII, API keys, credentials in output, (3) Toxicity — hate speech, inappropriate content, (4) Length — prevent unbounded output generation, (5) Format compliance — JSON validity if structured output expected, (6) Confidence threshold — block responses with low model confidence.</p>
+<p>Essential checks: (1) System prompt leakage — output contains phrases from system prompt, (2) Sensitive data — PII, API keys, credentials in output,.
+(3) Toxicity — hate speech, inappropriate content, (4) Length — prevent unbounded output generation, (5) Format compliance — JSON validity if structured output expected,.
+(6) Confidence threshold — block responses with low model confidence.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -851,7 +854,8 @@ console.log(defender.sanitize("What is the capital of India?"));
     Q7: What PII should you redact from user input before LLM processing?
   </summary>
   <div class="tp-qa-answer">
-    <p>Redact: email addresses, phone numbers, Social Security Numbers, credit card numbers, API keys, database connection strings, passwords, and any data your system isn't authorized to process. Use regex patterns or a PII detection library. Consider whether you need to keep certain PII for the use case (e.g., name for customer support).</p>
+<p>Redact: email addresses, phone numbers, Social Security Numbers, credit card numbers, API keys, database connection strings, passwords, and any data your system isn't authorized to process. Use regex patterns or.
+a PII detection library. Consider whether you need to keep certain PII for the use case (e.g., name for customer support).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

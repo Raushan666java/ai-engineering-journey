@@ -654,7 +654,9 @@ class BatchAnalyzer:
 
 ## Summary
 
-The Resume ATS Analyzer project implements a complete resume evaluation system. PDF and DOCX parsing extract text while preserving section structure. The LLM-based analyzer compares resumes against job descriptions, identifying matching and missing skills. The scoring engine evaluates ATS compatibility, keyword matching, and section completeness. The web UI provides an intuitive interface for uploading, analyzing, and reviewing results. This project demonstrates full-stack AI development with document parsing, LLM integration, and web deployment.
+The Resume ATS Analyzer project implements a complete resume evaluation system. PDF and DOCX parsing extract text while preserving section structure. The LLM-based analyzer compares resumes against job descriptions,.
+identifying matching and missing skills. The scoring engine evaluates ATS compatibility, keyword matching, and section completeness. The web UI provides an intuitive interface for.
+uploading, analyzing, and reviewing results. This project demonstrates full-stack AI development with document parsing, LLM integration, and web deployment.
 
 ## Practical Takeaways
 
@@ -675,7 +677,12 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q1: How do you parse different resume formats (PDF, DOCX) while preserving section structure?
   </summary>
   <div class="tp-qa-answer">
-    <p>Resume parsing requires format-specific handling: (1) PDF — use PyPDF2 or pdfminer.six for text extraction. Pdfminer provides layout analysis (character positions, font sizes) which helps detect section headers by font size changes. For scanned PDFs (images), use OCR with Tesseract (pytesseract) or AWS Textract. (2) DOCX — use python-docx which natively parses paragraphs, runs, and styles. Section headers are detectable by style name ("Heading 1", "Heading 2") or font properties (bold, larger font size). (3) Fallback chain — try python-docx first for DOCX, then PyPDF2 for PDF, then pdfminer for PDF with layout, then OCR as last resort. (4) Section detection — use regex patterns for standard headers ("Education", "Experience", "Skills", "Projects") plus font/size heuristics for non-standard formats.</p>
+<p>Resume parsing requires format-specific handling: (1) PDF — use PyPDF2 or pdfminer.six for text extraction. Pdfminer provides layout analysis (character positions,.
+font sizes) which helps detect section headers by font size changes. For scanned PDFs (images), use OCR with Tesseract (pytesseract) or.
+AWS Textract. (2) DOCX — use python-docx which natively parses paragraphs, runs, and styles. Section headers are detectable by style name ("Heading 1",.
+"Heading 2") or font properties (bold, larger font size). (3) Fallback chain — try python-docx first for DOCX, then PyPDF2 for.
+PDF, then pdfminer for PDF with layout, then OCR as last resort. (4) Section detection — use regex patterns for standard headers ("Education",.
+"Experience", "Skills", "Projects") plus font/size heuristics for non-standard formats.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -687,7 +694,12 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q2: How do you calculate ATS compatibility score for a resume?
   </summary>
   <div class="tp-qa-answer">
-    <p>ATS compatibility scoring across dimensions: (1) Format score (30%) — check for tables (negative), images (negative), columns (negative), standard section headers (positive), appropriate length (300-800 words, positive). (2) Keyword score (40%) — compare resume against target job description: % of JD keywords present in resume, weighted by keyword importance (skills > soft skills). Use TF-IDF or embedding similarity. (3) Section completeness (15%) — presence of Education, Experience, Skills, Projects, Certifications sections with appropriate content. (4) Quantification score (10%) — presence of metrics (%, $, numbers) in experience bullets. (5) Formatting score (5%) — consistent date formats, bullet style, font usage. The total score is a weighted sum (0-100), with >80 being excellent ATS compatibility. Provide specific recommendations for each low-scoring area.</p>
+<p>ATS compatibility scoring across dimensions: (1) Format score (30%) — check for tables (negative), images (negative), columns (negative), standard section headers (positive),.
+appropriate length (300-800 words, positive). (2) Keyword score (40%) — compare resume against target job description: % of JD keywords present in resume,.
+weighted by keyword importance (skills > soft skills). Use TF-IDF or embedding similarity. (3) Section completeness (15%) — presence of Education,.
+Experience, Skills, Projects, Certifications sections with appropriate content. (4) Quantification score (10%) — presence of metrics (%, $, numbers) in experience bullets. (5) Formatting score (5%) — consistent date formats,.
+bullet style, font usage. The total score is a weighted sum (0-100), with >80 being excellent ATS compatibility. Provide specific recommendations for.
+each low-scoring area.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -699,7 +711,11 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q3: How do you use LLMs to compare a resume against a job description effectively?
   </summary>
   <div class="tp-qa-answer">
-    <p>LLM-based resume-JD comparison: (1) Prompt engineering — provide the job description, resume text (with section labels), and ask the LLM to: identify matching skills, identify missing skills, evaluate overall fit (Strong/Moderate/Weak), and suggest specific improvements. (2) Structured output — request JSON format: `{"matching_skills": [...], "missing_skills": [...], "fit_score": "Strong", "suggestions": [...]}`. (3) Semantic matching — the LLM understands synonyms and context: "led team of 5 engineers" matches "team leadership" requirement even without the exact phrase. (4) Multi-angle evaluation — have the LLM evaluate separately for hard skills, soft skills, and experience level, then aggregate. (5) Cost optimization — use GPT-3.5-turbo for initial screening, GPT-4 for detailed analysis of shortlisted candidates. Cache results for identical job descriptions.</p>
+<p>LLM-based resume-JD comparison: (1) Prompt engineering — provide the job description, resume text (with section labels), and ask the LLM to: identify matching skills,.
+identify missing skills, evaluate overall fit (Strong/Moderate/Weak), and suggest specific improvements. (2) Structured output — request JSON format: `{"matching_skills": [...], "missing_skills": [...],.
+"fit_score": "Strong", "suggestions": [...]}`. (3) Semantic matching — the LLM understands synonyms and context: "led team of 5 engineers" matches "team leadership" requirement even without the exact phrase. (4) Multi-angle evaluation — have the LLM evaluate separately for.
+hard skills, soft skills, and experience level, then aggregate. (5) Cost optimization — use GPT-3.5-turbo for initial screening, GPT-4 for detailed analysis of shortlisted candidates. Cache results for.
+identical job descriptions.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -711,7 +727,10 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q4: How do you generate actionable improvement suggestions for resume optimization?
   </summary>
   <div class="tp-qa-answer">
-    <p>Actionable suggestions should be specific and prioritized: (1) Missing keywords — "Add these 7 skills from the JD that are missing: Python, PyTorch, AWS, Docker, PostgreSQL, GraphQL, Redis." (2) Weak bullet points — rewrite weak bullets using the STAR format with metrics. Original: "Responsible for improving system performance." → Improved: "Optimized database queries reducing API latency by 40%, serving 100K+ daily requests." (3) Section gaps — "Add a Projects section showcasing 2-3 relevant projects with tech stack and impact." (4) Format issues — "Your resume uses a two-column layout which ATS systems cannot parse. Convert to a single-column format." (5) Quantification opportunities — "Add metrics to 3 experience bullets that lack numbers." Score each suggestion by impact (high/medium/low) to help the user prioritize changes.</p>
+<p>Actionable suggestions should be specific and prioritized: (1) Missing keywords — "Add these 7 skills from the JD that are missing: Python,.
+PyTorch, AWS, Docker, PostgreSQL, GraphQL, Redis." (2) Weak bullet points — rewrite weak bullets using the STAR format with metrics. Original: "Responsible for.
+improving system performance." → Improved: "Optimized database queries reducing API latency by 40%, serving 100K+ daily requests." (3) Section gaps — "Add a Projects section showcasing 2-3 relevant projects with tech stack and.
+impact." (4) Format issues — "Your resume uses a two-column layout which ATS systems cannot parse. Convert to a single-column format." (5) Quantification opportunities — "Add metrics to 3 experience bullets that lack numbers." Score each suggestion by impact (high/medium/low) to help the user prioritize changes.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -723,7 +742,10 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q5: How do you prevent bias in AI-powered resume screening?
   </summary>
   <div class="tp-qa-answer">
-    <p>Bias prevention strategies: (1) PII redaction — automatically remove name, gender indicators, age (graduation dates), ethnicity indicators, and even university names from the resume before analysis. (2) Balanced evaluation — if using an LLM, explicitly instruct it to evaluate skills and experience only, ignoring any demographic signals. (3) Multiple evaluators — use multiple LLM models and average scores to reduce individual model biases. (4) Regular auditing — track score distributions across demographic groups if possible. Flag if certain groups receive systematically lower scores. (5) Transparency — show candidates which factors influenced their score. (6) Human oversight — flag resume-score anomalies (e.g., high-skills candidate with low score) for manual review. (7) Diverse training — ensure evaluation models are fine-tuned on diverse examples. Bias in hiring AI is a regulatory risk under EEOC guidelines.</p>
+<p>Bias prevention strategies: (1) PII redaction — automatically remove name, gender indicators, age (graduation dates), ethnicity indicators, and even university names from the resume before analysis. (2) Balanced evaluation — if using an LLM,.
+explicitly instruct it to evaluate skills and experience only, ignoring any demographic signals. (3) Multiple evaluators — use multiple LLM models and.
+average scores to reduce individual model biases. (4) Regular auditing — track score distributions across demographic groups if possible. Flag if certain groups receive systematically lower scores. (5) Transparency — show candidates which factors influenced their score. (6) Human oversight — flag resume-score anomalies (e.g.,.
+high-skills candidate with low score) for manual review. (7) Diverse training — ensure evaluation models are fine-tuned on diverse examples. Bias in hiring AI is a regulatory risk under EEOC guidelines.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -735,7 +757,11 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q6: How do you scale resume analysis for enterprise-level batch processing?
   </summary>
   <div class="tp-qa-answer">
-    <p>Enterprise scaling: (1) Async processing — use Celery or Redis Queue for background job processing. When a user uploads a resume, the request returns immediately with a job ID, and the results are fetched asynchronously. (2) Batch LLM calls — group multiple resume analyses into one API call with a prompt that lists multiple resumes + one JD, comparing all at once. (3) Caching — cache LLM results for identical JD+resume pairs using content hash keys. (4) Cost management — use GPT-3.5-turbo for initial screening (cost ~$0.001/resume), escalate to GPT-4 only for shortlisted candidates ($0.03/resume). (5) Parallel processing — process multiple resumes in parallel using concurrent.futures or asyncio with rate limiting. (6) Horizontal scaling — add more worker instances based on queue depth. Target: 1000+ resumes processed per hour at <$10/hour cost.</p>
+<p>Enterprise scaling: (1) Async processing — use Celery or Redis Queue for background job processing. When a user uploads a resume,.
+the request returns immediately with a job ID, and the results are fetched asynchronously. (2) Batch LLM calls — group multiple resume analyses into one API call with a prompt that lists multiple resumes + one JD,.
+comparing all at once. (3) Caching — cache LLM results for identical JD+resume pairs using content hash keys. (4) Cost management — use GPT-3.5-turbo for.
+initial screening (cost ~$0.001/resume), escalate to GPT-4 only for shortlisted candidates ($0.03/resume). (5) Parallel processing — process multiple resumes in parallel using concurrent.futures or.
+asyncio with rate limiting. (6) Horizontal scaling — add more worker instances based on queue depth. Target: 1000+ resumes processed per hour at <$10/hour cost.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -747,7 +773,11 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q7: How do you handle encrypted or password-protected PDF resumes?
   </summary>
   <div class="tp-qa-answer">
-    <p>Handling encrypted PDFs: (1) Detection — use PyPDF2's `PdfReader.is_encrypted` property. (2) Automatic decryption — try common empty passwords (""), then "password", then the filename without extension. (3) User prompt — if automatic decryption fails, return a clear error asking the user to upload an unencrypted version. (4) Alternative — if the file cannot be decrypted, convert PDF pages to images using pdf2image and run OCR. This bypasses encryption but loses formatting information. (5) Security — never store the password; decrypt only in memory. (6) Fallback for scanned PDFs — even unencrypted scanned PDFs need OCR because they contain images, not text. Use pytesseract (Tesseract OCR) or cloud OCR APIs (Google Vision, AWS Textract). Provide feedback on which parser succeeded and how confident the extraction is.</p>
+<p>Handling encrypted PDFs: (1) Detection — use PyPDF2's `PdfReader.is_encrypted` property. (2) Automatic decryption — try common empty passwords (""), then "password",.
+then the filename without extension. (3) User prompt — if automatic decryption fails, return a clear error asking the user to upload an unencrypted version. (4) Alternative — if the file cannot be decrypted,.
+convert PDF pages to images using pdf2image and run OCR. This bypasses encryption but loses formatting information. (5) Security — never store the password;.
+decrypt only in memory. (6) Fallback for scanned PDFs — even unencrypted scanned PDFs need OCR because they contain images, not text. Use pytesseract (Tesseract OCR) or.
+cloud OCR APIs (Google Vision, AWS Textract). Provide feedback on which parser succeeded and how confident the extraction is.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -759,7 +789,10 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q8: How do you implement a web UI that provides real-time resume analysis feedback?
   </summary>
   <div class="tp-qa-answer">
-    <p>Real-time feedback UI: (1) Drag-and-drop upload area with file validation (max 5MB, PDF/DOCX only, visual feedback on valid/invalid). (2) Job description text area with paste functionality and character count. (3) Analysis state management — show upload progress → "Parsing resume" spinner → "Analyzing with AI" progress bar → results. (4) Results dashboard — section-by-section analysis with score gauges (0-100%), missing keywords highlighted in red, matching keywords in green. (5) Interactive suggestions — clickable suggestion cards that expand with before/after examples. (6) Download report — generate a styled PDF report using ReportLab with the analysis summary. (7) History — save past analyses and allow comparison side-by-side. Use React/Vue for frontend with WebSocket for real-time updates from the backend during long LLM analyses.</p>
+<p>Real-time feedback UI: (1) Drag-and-drop upload area with file validation (max 5MB, PDF/DOCX only, visual feedback on valid/invalid). (2) Job description text area with paste functionality and.
+character count. (3) Analysis state management — show upload progress → "Parsing resume" spinner → "Analyzing with AI" progress bar → results. (4) Results dashboard — section-by-section analysis with score gauges (0-100%),.
+missing keywords highlighted in red, matching keywords in green. (5) Interactive suggestions — clickable suggestion cards that expand with before/after examples. (6) Download report — generate a styled PDF report using ReportLab with the analysis summary. (7) History — save past analyses and.
+allow comparison side-by-side. Use React/Vue for frontend with WebSocket for real-time updates from the backend during long LLM analyses.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -771,7 +804,11 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
     Q9: How do you implement keyword matching with synonyms for skill detection?
   </summary>
   <div class="tp-qa-answer">
-    <p>Skill synonym matching: (1) Build a skill taxonomy with canonical names and synonym lists: `{"python": ["python", "python3", "python 3.x", "cpython"], "machine_learning": ["machine learning", "ml", "predictive modeling", "statistical modeling", "supervised learning"]}`. (2) For each JD skill, search the resume text with all synonyms using case-insensitive regex. (3) Use embedding similarity for fuzzy matching — precompute embeddings for all skills and synonyms, then match skills whose embedding cosine similarity exceeds 0.85 threshold. This catches typos (e.g., "PyTorch" → "Pytorch") and related terms. (4) Categorize matches: "exact match" (canonical name found), "synonym match" (synonym found), "related match" (embedding similarity only). (5) Track match confidence and report to the user. This approach typically increases keyword detection recall by 30-50% compared to exact string matching.</p>
+<p>Skill synonym matching: (1) Build a skill taxonomy with canonical names and synonym lists: `{"python": ["python", "python3", "python 3.x", "cpython"], "machine_learning": ["machine learning",.
+"ml", "predictive modeling", "statistical modeling", "supervised learning"]}`. (2) For each JD skill, search the resume text with all synonyms using case-insensitive regex. (3) Use embedding similarity for.
+fuzzy matching — precompute embeddings for all skills and synonyms, then match skills whose embedding cosine similarity exceeds 0.85 threshold. This catches typos (e.g.,.
+"PyTorch" → "Pytorch") and related terms. (4) Categorize matches: "exact match" (canonical name found), "synonym match" (synonym found), "related match" (embedding similarity only). (5) Track match confidence and.
+report to the user. This approach typically increases keyword detection recall by 30-50% compared to exact string matching.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -799,7 +836,10 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
   });
   return doc.end();
 }</pre></code>
-    <p>PDF report generation typically uses ReportLab (Python) or PDFKit/PDFDocument (Node.js). Design: (1) Cover page with candidate name and overall score as a large gauge. (2) Section-by-section breakdown with score bars and color coding (green >80%, yellow 60-80%, red <60%). (3) Keyword match visualization — word cloud or bar chart of matched vs. missing keywords. (4) Improvement suggestions — prioritized list with before/after examples. (5) Skills radar chart — comparing resume skills against JD requirements across categories (technical, domain, soft skills). (6) Action items — top 3-5 changes with expected impact score. The report should be both machine-readable (structured data) and human-readable for sharing with users.</p>
+<p>PDF report generation typically uses ReportLab (Python) or PDFKit/PDFDocument (Node.js). Design: (1) Cover page with candidate name and overall score as a large gauge. (2) Section-by-section breakdown with score bars and.
+color coding (green >80%, yellow 60-80%, red <60%). (3) Keyword match visualization — word cloud or bar chart of matched vs. missing keywords. (4) Improvement suggestions — prioritized list with before/after examples. (5) Skills radar chart — comparing resume skills against JD requirements across categories (technical,.
+domain, soft skills). (6) Action items — top 3-5 changes with expected impact score. The report should be both machine-readable (structured data) and.
+human-readable for sharing with users.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

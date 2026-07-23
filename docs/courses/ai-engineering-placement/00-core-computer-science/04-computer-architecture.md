@@ -3,7 +3,9 @@
 
 ## Learning Objectives
 
-After this chapter you will be able to identify whether a model inference kernel is compute-bound or memory-bound using the roofline model, reason about cache hierarchy effects on matrix multiplication performance, explain SIMD vectorization and its impact on ML operators, describe NUMA implications for multi-GPU training, and understand GPU architecture fundamentals for writing efficient kernels.
+After this chapter you will be able to identify whether a model inference kernel is compute-bound or memory-bound using the roofline model,.
+reason about cache hierarchy effects on matrix multiplication performance, explain SIMD vectorization and its impact on ML operators, describe NUMA implications for.
+multi-GPU training, and understand GPU architecture fundamentals for writing efficient kernels.
 
 ## Introduction
 
@@ -498,7 +500,10 @@ class KernelConfigOptimizer {
 
 ## Summary
 
-Computer architecture knowledge directly translates to faster ML code. The roofline model tells you whether to optimize compute (use better algorithms) or memory (quantization, kernel fusion). Cache-aware programming means accessing memory sequentially, using smaller working sets, and reusing data while it is in L1. GPU performance requires understanding warp execution, memory coalescing, and shared memory. For AI engineers, the single most impactful insight is that most inference workloads are memory-bound — reducing memory access (quantization, pruning, fusion) improves latency more than increasing FLOPs.
+Computer architecture knowledge directly translates to faster ML code. The roofline model tells you whether to optimize compute (use better algorithms) or.
+memory (quantization, kernel fusion). Cache-aware programming means accessing memory sequentially, using smaller working sets, and reusing data while it is in L1. GPU performance requires understanding warp execution,.
+memory coalescing, and shared memory. For AI engineers, the single most impactful insight is that most inference workloads are memory-bound — reducing memory access (quantization,.
+pruning, fusion) improves latency more than increasing FLOPs.
 
 ## Practical Takeaways
 

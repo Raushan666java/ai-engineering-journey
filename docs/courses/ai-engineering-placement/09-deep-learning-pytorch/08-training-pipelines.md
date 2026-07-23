@@ -812,7 +812,9 @@ print("CombinedTrainer configured with AMP, checkpointing, and early stopping")
 
 ## Summary
 
-Production training pipelines require careful orchestration of data loading, optimization, and monitoring. DataLoaders with multiprocessing and transforms ensure efficient data throughput. Optimizers like AdamW with decoupled weight decay and cosine annealing schedulers improve convergence. Gradient accumulation simulates larger batch sizes when GPU memory is limited. Mixed precision training (AMP) halves memory usage and accelerates computation on modern GPUs. Checkpointing with model weights, optimizer state, and scheduler state enables fault-tolerant long-running training. Early stopping prevents overfitting by monitoring validation metrics.
+Production training pipelines require careful orchestration of data loading, optimization, and monitoring. DataLoaders with multiprocessing and transforms ensure efficient data throughput. Optimizers like AdamW with decoupled weight decay and.
+cosine annealing schedulers improve convergence. Gradient accumulation simulates larger batch sizes when GPU memory is limited. Mixed precision training (AMP) halves memory usage and.
+accelerates computation on modern GPUs. Checkpointing with model weights, optimizer state, and scheduler state enables fault-tolerant long-running training. Early stopping prevents overfitting by monitoring validation metrics.
 
 ## Practical Takeaways
 

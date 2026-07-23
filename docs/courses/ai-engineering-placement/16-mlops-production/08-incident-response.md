@@ -794,7 +794,9 @@ class IncidentManager {
     Q1: What are the most common types of ML production incidents?
   </summary>
   <div class="tp-qa-answer">
-    <p>Most common: (1) Model degradation — accuracy/MAE drops due to data drift or concept drift, (2) Data pipeline failures — silent ETL failures cause missing features, (3) LLM hallucinations — unsafe or incorrect outputs, (4) Infrastructure issues — GPU OOM, network timeouts, (5) Latency spikes — model serving slows down, (6) Cost anomalies — unexpected cloud cost increases from misconfigured resources.</p>
+<p>Most common: (1) Model degradation — accuracy/MAE drops due to data drift or concept drift, (2) Data pipeline failures — silent ETL failures cause missing features,.
+(3) LLM hallucinations — unsafe or incorrect outputs, (4) Infrastructure issues — GPU OOM, network timeouts, (5) Latency spikes — model serving slows down,.
+(6) Cost anomalies — unexpected cloud cost increases from misconfigured resources.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -818,7 +820,9 @@ class IncidentManager {
     Q3: What should a model degradation runbook include?
   </summary>
   <div class="tp-qa-answer">
-    <p>Steps: (1) Acknowledge and assess severity, (2) Check drift dashboard for recent changes, (3) Compare current vs reference feature distributions, (4) Check for recent deployment or data pipeline changes, (5) If drift confirmed, rollback model to previous version, (6) Verify rollback effectiveness with metric comparison, (7) Create Jira ticket for root cause investigation.</p>
+<p>Steps: (1) Acknowledge and assess severity, (2) Check drift dashboard for recent changes, (3) Compare current vs reference feature distributions, (4) Check for.
+recent deployment or data pipeline changes, (5) If drift confirmed, rollback model to previous version, (6) Verify rollback effectiveness with metric comparison,.
+(7) Create Jira ticket for root cause investigation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -830,7 +834,8 @@ class IncidentManager {
     Q4: What is a blameless post-mortem?
   </summary>
   <div class="tp-qa-answer">
-    <p>A blameless post-mortem focuses on understanding the system failures that led to an incident, not on who made a mistake. It assumes good intent from all team members. Key sections: timeline, root cause, impact assessment, action items, what went well, what went wrong. Action items must have owners and deadlines and be tracked to closure.</p>
+<p>A blameless post-mortem focuses on understanding the system failures that led to an incident, not on who made a mistake. It assumes good intent from all team members. Key sections: timeline,.
+root cause, impact assessment, action items, what went well, what went wrong. Action items must have owners and deadlines and be tracked to closure.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -854,7 +859,9 @@ class IncidentManager {
     Q6: What metrics should you track for incident response?
   </summary>
   <div class="tp-qa-answer">
-    <p>Key metrics: (1) Time to acknowledge — how long before a human responds, (2) Time to resolve (MTTR) — from detection to resolution, (3) Incident volume — count per week/month, (4) Severity distribution — SEV1/2/3/4 breakdown, (5) SLA breach rate — % of incidents exceeding response/resolution SLAs, (6) On-call load — incidents per engineer per rotation.</p>
+<p>Key metrics: (1) Time to acknowledge — how long before a human responds, (2) Time to resolve (MTTR) — from detection to resolution,.
+(3) Incident volume — count per week/month, (4) Severity distribution — SEV1/2/3/4 breakdown, (5) SLA breach rate — % of incidents exceeding response/resolution SLAs,.
+(6) On-call load — incidents per engineer per rotation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -866,7 +873,8 @@ class IncidentManager {
     Q7: How do you handle a silent model failure incident?
   </summary>
   <div class="tp-qa-answer">
-    <p>Silent failures are the most dangerous because the system appears healthy. Mitigations: (1) Monitor prediction distribution against expected baseline, (2) Track null/NaN prediction rates, (3) Implement shadow A/B comparison against a known-good model, (4) Add output validation rules (range checks, type checks), (5) Run periodic golden test set evaluations on production data.</p>
+<p>Silent failures are the most dangerous because the system appears healthy. Mitigations: (1) Monitor prediction distribution against expected baseline, (2) Track null/NaN prediction rates,.
+(3) Implement shadow A/B comparison against a known-good model, (4) Add output validation rules (range checks, type checks), (5) Run periodic golden test set evaluations on production data.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -890,7 +898,9 @@ class IncidentManager {
     Q9: How do you prevent alert fatigue in ML monitoring?
   </summary>
   <div class="tp-qa-answer">
-    <p>Strategies: (1) Use threshold + duration: alert only if threshold exceeded for N consecutive windows, (2) Severity-based routing: critical alerts page immediately, warnings go to Slack, (3) Deduplicate related alerts into a single incident, (4) Regularly review and retire noisy alerts, (5) Implement maintenance windows for known issues, (6) Track alert-to-incident ratio — aim for >20%. </p>
+<p>Strategies: (1) Use threshold + duration: alert only if threshold exceeded for N consecutive windows, (2) Severity-based routing: critical alerts page immediately,.
+warnings go to Slack, (3) Deduplicate related alerts into a single incident, (4) Regularly review and retire noisy alerts, (5) Implement maintenance windows for.
+known issues, (6) Track alert-to-incident ratio — aim for >20%. </p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -902,7 +912,9 @@ class IncidentManager {
     Q10: What should be in a post-incident review for an ML system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Include: (1) Detailed timeline with detection, response, and resolution times, (2) Root cause analysis (e.g., data drift, pipeline failure, model bug), (3) Impact assessment (users affected, financial impact), (4) What went well and what went wrong, (5) Specific, measurable action items with owners and deadlines, (6) Changes to monitoring, runbooks, or architecture to prevent recurrence.</p>
+<p>Include: (1) Detailed timeline with detection, response, and resolution times, (2) Root cause analysis (e.g., data drift, pipeline failure, model bug),.
+(3) Impact assessment (users affected, financial impact), (4) What went well and what went wrong, (5) Specific, measurable action items with owners and.
+deadlines, (6) Changes to monitoring, runbooks, or architecture to prevent recurrence.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

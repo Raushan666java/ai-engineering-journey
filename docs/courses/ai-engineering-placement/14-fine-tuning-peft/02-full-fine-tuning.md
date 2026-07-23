@@ -492,7 +492,10 @@ for t in trials[:3]:
 
 ## Summary
 
-Full fine-tuning updates all parameters of a pre-trained model using supervised learning on task-specific data. The training loop processes batches, computes causal LM loss (next-token prediction), backpropagates gradients, and updates weights. Key considerations include: monitoring loss curves for convergence (train and validation loss should decrease together), detecting overfitting (val loss increases while train loss decreases), using gradient accumulation to simulate larger batch sizes, and tuning hyperparameters (LR ~2e-5 for 7B models, warmup ratio of 0.1, weight decay of 0.01). Early stopping based on validation loss prevents overfitting. Full FT requires significant GPU memory — a 7B model needs ~56GB at FP16 with batch size 1, or ~112GB at FP32.
+Full fine-tuning updates all parameters of a pre-trained model using supervised learning on task-specific data. The training loop processes batches, computes causal LM loss (next-token prediction),.
+backpropagates gradients, and updates weights. Key considerations include: monitoring loss curves for convergence (train and validation loss should decrease together), detecting overfitting (val loss increases while train loss decreases),.
+using gradient accumulation to simulate larger batch sizes, and tuning hyperparameters (LR ~2e-5 for 7B models, warmup ratio of 0.1, weight decay of 0.01). Early stopping based on validation loss prevents overfitting. Full FT requires significant GPU memory — a 7B model needs ~56GB at FP16 with batch size 1,.
+or ~112GB at FP32.
 
 ## Practical Takeaways
 
@@ -512,7 +515,12 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q1: What is the supervised fine-tuning training loop?
   </summary>
   <div class="tp-qa-answer">
-    <p>The supervised fine-tuning (SFT) training loop iteratively updates model weights to minimize the loss between the model's predictions and the target outputs. The loop processes data in batches: (1) load a batch of (input, target) pairs from the training dataset; (2) tokenize inputs and targets, creating attention masks; (3) forward pass — the model generates predictions for each token position; (4) compute loss — typically cross-entropy loss comparing predicted token probabilities against the target tokens, but only on the output tokens (not the input prompt tokens); (5) backward pass — compute gradients of the loss with respect to all trainable parameters using backpropagation; (6) optimizer step — update parameters using the optimizer (AdamW is standard) with learning rate scheduling (cosine, linear, or constant); (7) repeat for all batches in the dataset — one epoch. The training loop runs for multiple epochs (typically 1-5, monitored by validation loss to prevent overfitting). Loss curves show training loss and validation loss over time — decreasing training loss with diverging validation loss indicates overfitting.</p>
+<p>The supervised fine-tuning (SFT) training loop iteratively updates model weights to minimize the loss between the model's predictions and the target outputs. The loop processes data in batches: (1) load a batch of (input,.
+target) pairs from the training dataset; (2) tokenize inputs and targets, creating attention masks; (3) forward pass — the model generates predictions for.
+each token position; (4) compute loss — typically cross-entropy loss comparing predicted token probabilities against the target tokens, but only on the output tokens (not the input prompt tokens);.
+(5) backward pass — compute gradients of the loss with respect to all trainable parameters using backpropagation; (6) optimizer step — update parameters using the optimizer (AdamW is standard) with learning rate scheduling (cosine,.
+linear, or constant); (7) repeat for all batches in the dataset — one epoch. The training loop runs for multiple epochs (typically 1-5,.
+monitored by validation loss to prevent overfitting). Loss curves show training loss and validation loss over time — decreasing training loss with diverging validation loss indicates overfitting.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -524,7 +532,14 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q2: How do you compute loss during fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>During supervised fine-tuning, loss is computed only on the output tokens (not the input prompt). This is called "label masking" or "causal LM loss." Implementation: (1) the input sequence is <code>input_ids = [prompt_tokens, target_tokens]</code>; (2) the model generates logits for every token position; (3) shift logits and labels so that the prediction at position i is compared against the token at position i+1 (next-token prediction); (4) create a loss mask — an array of 1s for target token positions and 0s for prompt token positions; (5) compute cross-entropy loss per-token; (6) sum only masked positions and divide by the number of target tokens. This ensures the model only learns to predict the target completion, not the prompt. The loss function is standard cross-entropy: <code>L = -Σ log p(y_i | x, y_&lt;i)</code> where y_i are target tokens and x is the prompt. Monitoring training loss helps detect issues: loss should decrease steadily. If loss is NaN, check learning rate and gradient clipping. Loss = -ln(1/vocab_size) at initialization (~7-8 for a 50K vocab) and should drop significantly during training.</p>
+<p>During supervised fine-tuning, loss is computed only on the output tokens (not the input prompt). This is called "label masking" or.
+"causal LM loss." Implementation: (1) the input sequence is <code>input_ids = [prompt_tokens, target_tokens]</code>; (2) the model generates logits for every token position;.
+(3) shift logits and labels so that the prediction at position i is compared against the token at position i+1 (next-token prediction);.
+(4) create a loss mask — an array of 1s for target token positions and 0s for prompt token positions; (5) compute cross-entropy loss per-token;.
+(6) sum only masked positions and divide by the number of target tokens. This ensures the model only learns to predict the target completion,.
+not the prompt. The loss function is standard cross-entropy: <code>L = -Σ log p(y_i | x, y_&lt;i)</code> where y_i are target tokens and.
+x is the prompt. Monitoring training loss helps detect issues: loss should decrease steadily. If loss is NaN, check learning rate and.
+gradient clipping. Loss = -ln(1/vocab_size) at initialization (~7-8 for a 50K vocab) and should drop significantly during training.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -536,7 +551,13 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q3: How do you detect and mitigate overfitting during fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Overfitting occurs when the model memorizes the training data but fails to generalize to new examples. Detection: (1) monitor the gap between training loss and validation loss — if training loss keeps decreasing while validation loss plateaus or increases, overfitting is occurring; (2) check if the model performs well on training data but poorly on held-out test data; (3) inspect generated outputs — overfitted models produce outputs that copy training examples verbatim rather than following the task. Mitigation strategies: (1) early stopping — stop training when validation loss stops improving, using a patience parameter (e.g., stop after 3 epochs with no validation loss decrease); (2) regularization — weight decay (AdamW's default, typically 0.01), dropout (if not already in the base model), and label smoothing; (3) data augmentation — increase effective dataset size; (4) reduce model capacity — use LoRA with lower rank to limit the number of trainable parameters; (5) increase dataset size or quality — remove duplicates and add diversity. The simplest effective approach is early stopping combined with LoRA — the small parameter count of LoRA naturally limits overfitting.</p>
+<p>Overfitting occurs when the model memorizes the training data but fails to generalize to new examples. Detection: (1) monitor the gap between training loss and.
+validation loss — if training loss keeps decreasing while validation loss plateaus or increases, overfitting is occurring; (2) check if the model performs well on training data but.
+poorly on held-out test data; (3) inspect generated outputs — overfitted models produce outputs that copy training examples verbatim rather than following the task. Mitigation strategies: (1) early stopping — stop training when validation loss stops improving,.
+using a patience parameter (e.g., stop after 3 epochs with no validation loss decrease); (2) regularization — weight decay (AdamW's default,.
+typically 0.01), dropout (if not already in the base model), and label smoothing; (3) data augmentation — increase effective dataset size;.
+(4) reduce model capacity — use LoRA with lower rank to limit the number of trainable parameters; (5) increase dataset size or.
+quality — remove duplicates and add diversity. The simplest effective approach is early stopping combined with LoRA — the small parameter count of LoRA naturally limits overfitting.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -548,7 +569,12 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q4: How do you evaluate loss curves and model convergence?
   </summary>
   <div class="tp-qa-answer">
-    <p>Loss curves are plots of training loss and validation loss over training steps (or epochs). Convergence analysis: (1) rapid initial drop — loss should decrease quickly in the first few steps as the model adapts to the new task; (2) plateau — after the initial drop, loss should plateau at a lower value; (3) divergence sign — if training loss increases or oscillates wildly, the learning rate may be too high or the data contains errors; (4) overfitting sign — when validation loss starts increasing while training loss continues decreasing, stop training. Tools: TensorBoard or WandB for real-time plotting. Custom loss tracker in training scripts logs loss per step/batch. Key metrics from loss curves: final loss value (lower is better), convergence speed (steps to plateau), loss gap (difference between train and validation). Expected final loss depends on task difficulty: simple classification tasks may reach loss < 0.1, while open-ended generation may plateau at 0.5-1.5. Compare loss curves across runs with different hyperparameters (learning rate, batch size, LoRA rank) to select the best configuration.</p>
+<p>Loss curves are plots of training loss and validation loss over training steps (or epochs). Convergence analysis: (1) rapid initial drop — loss should decrease quickly in the first few steps as the model adapts to the new task;.
+(2) plateau — after the initial drop, loss should plateau at a lower value; (3) divergence sign — if training loss increases or.
+oscillates wildly, the learning rate may be too high or the data contains errors; (4) overfitting sign — when validation loss starts increasing while training loss continues decreasing,.
+stop training. Tools: TensorBoard or WandB for real-time plotting. Custom loss tracker in training scripts logs loss per step/batch. Key metrics from loss curves: final loss value (lower is better),.
+convergence speed (steps to plateau), loss gap (difference between train and validation). Expected final loss depends on task difficulty: simple classification tasks may reach loss < 0.1,.
+while open-ended generation may plateau at 0.5-1.5. Compare loss curves across runs with different hyperparameters (learning rate, batch size, LoRA rank) to select the best configuration.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -560,7 +586,12 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q5: What is the role of learning rate scheduling in fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Learning rate scheduling adjusts the learning rate during training to improve convergence. Common schedules: (1) cosine — learning rate follows a cosine curve from the initial value down to near zero, providing smooth annealing and good convergence; (2) linear — linearly decreases from initial value to zero; (3) constant — fixed learning rate throughout training (simple but less optimal); (4) warmup + decay — start from a small value, linearly increase to the target over the first N steps (warmup), then decay. Warmup is critical for large models because high initial LR can cause training instability (loss explosion). Fine-tuning typically uses lower learning rates than pre-training: 1e-5 to 5e-5 for full fine-tuning, 1e-4 to 5e-4 for LoRA adapters. The optimal LR depends on model size, dataset size, and LoRA rank. Learning rate finder runs short training loops at different LRs to identify the optimal range — the ideal LR is the one that produces the fastest loss decrease without instability. Each optimizer step in the training script applies the scheduler to update the learning rate.</p>
+<p>Learning rate scheduling adjusts the learning rate during training to improve convergence. Common schedules: (1) cosine — learning rate follows a cosine curve from the initial value down to near zero,.
+providing smooth annealing and good convergence; (2) linear — linearly decreases from initial value to zero; (3) constant — fixed learning rate throughout training (simple but.
+less optimal); (4) warmup + decay — start from a small value, linearly increase to the target over the first N steps (warmup),.
+then decay. Warmup is critical for large models because high initial LR can cause training instability (loss explosion). Fine-tuning typically uses lower learning rates than pre-training: 1e-5 to 5e-5 for.
+full fine-tuning, 1e-4 to 5e-4 for LoRA adapters. The optimal LR depends on model size, dataset size, and LoRA rank. Learning rate finder runs short training loops at different LRs to identify the optimal range — the ideal LR is.
+the one that produces the fastest loss decrease without instability. Each optimizer step in the training script applies the scheduler to update the learning rate.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -572,7 +603,12 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q6: How do you implement data collation during training?
   </summary>
   <div class="tp-qa-answer">
-    <p>Data collation transforms raw dataset items into properly padded, batched tensors for the training loop. The collator: (1) takes a list of dataset items, each containing input_ids, attention_mask, and labels; (2) pads all sequences to the same length (max length in the batch) using the padding token ID; (3) ensures sequences don't exceed the model's maximum context length — truncate or filter longer sequences; (4) creates the attention mask (1 for real tokens, 0 for padding tokens) so the model ignores padding during attention computation; (5) creates label tensors, using -100 (ignored by cross-entropy loss) for padding token positions and prompt token positions. HuggingFace's <code>DataCollatorForSeq2Seq</code> or <code>DataCollatorWithPadding</code> handles this automatically. Custom collators add token type IDs, position ids, or apply chat template formatting. Efficient batching sorts similar-length sequences together (sort + bucket batching) to minimize padding waste — this can speed up training by 2-3x by reducing the number of padding tokens processed.</p>
+<p>Data collation transforms raw dataset items into properly padded, batched tensors for the training loop. The collator: (1) takes a list of dataset items,.
+each containing input_ids, attention_mask, and labels; (2) pads all sequences to the same length (max length in the batch) using the padding token ID;.
+(3) ensures sequences don't exceed the model's maximum context length — truncate or filter longer sequences; (4) creates the attention mask (1 for.
+real tokens, 0 for padding tokens) so the model ignores padding during attention computation; (5) creates label tensors, using -100 (ignored by cross-entropy loss) for.
+padding token positions and prompt token positions. HuggingFace's <code>DataCollatorForSeq2Seq</code> or <code>DataCollatorWithPadding</code> handles this automatically. Custom collators add token type IDs, position ids,.
+or apply chat template formatting. Efficient batching sorts similar-length sequences together (sort + bucket batching) to minimize padding waste — this can speed up training by 2-3x by reducing the number of padding tokens processed.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -584,7 +620,12 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q7: What are the key hyperparameters for full fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Key hyperparameters for full fine-tuning: (1) learning rate — 1e-5 to 5e-5, with warmup (typically 10% of total steps). Lower LRs are safer for fine-tuning; (2) batch size — as large as GPU memory allows. Use gradient accumulation to simulate larger batch sizes (e.g., batch_size=4, gradient_accumulation_steps=8 = effective_batch_size=32); (3) epochs — 1-5 for full fine-tuning. Monitor validation loss to determine optimal epoch count; (4) weight decay — 0.01-0.1 (AdamW default 0.01) for regularization; (5) gradient clipping — max_grad_norm = 1.0 to prevent gradient explosion; (6) optimizer — AdamW with β1=0.9, β2=0.999, ε=1e-8; (7) scheduler — cosine with linear warmup. Memory optimization: use gradient checkpointing (trades compute for memory, reduces GPU memory by ~30%), mixed precision training (fp16 or bf16), and optimizer offloading. Start with recommended values and tune the learning rate first — it has the biggest impact on convergence quality. Log all hyperparameters in configuration files for reproducibility.</p>
+<p>Key hyperparameters for full fine-tuning: (1) learning rate — 1e-5 to 5e-5, with warmup (typically 10% of total steps). Lower LRs are safer for.
+fine-tuning; (2) batch size — as large as GPU memory allows. Use gradient accumulation to simulate larger batch sizes (e.g., batch_size=4,.
+gradient_accumulation_steps=8 = effective_batch_size=32); (3) epochs — 1-5 for full fine-tuning. Monitor validation loss to determine optimal epoch count; (4) weight decay — 0.01-0.1 (AdamW default 0.01) for.
+regularization; (5) gradient clipping — max_grad_norm = 1.0 to prevent gradient explosion; (6) optimizer — AdamW with β1=0.9, β2=0.999, ε=1e-8; (7) scheduler — cosine with linear warmup. Memory optimization: use gradient checkpointing (trades compute for.
+memory, reduces GPU memory by ~30%), mixed precision training (fp16 or bf16), and optimizer offloading. Start with recommended values and tune the learning rate first — it has the biggest impact on convergence quality. Log all hyperparameters in configuration files for.
+reproducibility.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -596,7 +637,12 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q8: How do you use gradient accumulation in training?
   </summary>
   <div class="tp-qa-answer">
-    <p>Gradient accumulation simulates a larger batch size by accumulating gradients over multiple forward/backward passes before performing one optimizer step. Implementation: (1) set a micro-batch size that fits in GPU memory (e.g., 4) and accumulation steps (e.g., 8); (2) for each accumulation step, do a forward and backward pass WITHOUT updating weights, accumulating gradients in the model's parameter.grad buffers; (3) after N accumulation steps, call optimizer.step() to update weights using the accumulated gradients; (4) zero gradients and repeat. This enables effective batch sizes of 32 (4—8) using only memory for batch size 4. The effective batch size = micro_batch_size — gradient_accumulation_steps. Key considerations: (1) batch normalization layers need special handling (use group norm instead); (2) loss scaling — divide the loss by accumulation_steps to keep loss magnitudes consistent; (3) larger effective batch sizes improve gradient estimate quality and training stability. In practice, use the largest micro-batch that fits in GPU memory, then scale up with accumulation to reach the target effective batch size (typically 32-128).</p>
+<p>Gradient accumulation simulates a larger batch size by accumulating gradients over multiple forward/backward passes before performing one optimizer step. Implementation: (1) set a micro-batch size that fits in GPU memory (e.g.,.
+4) and accumulation steps (e.g., 8); (2) for each accumulation step, do a forward and backward pass WITHOUT updating weights, accumulating gradients in the model's parameter.grad buffers;.
+(3) after N accumulation steps, call optimizer.step() to update weights using the accumulated gradients; (4) zero gradients and repeat. This enables effective batch sizes of 32 (4—8) using only memory for.
+batch size 4. The effective batch size = micro_batch_size — gradient_accumulation_steps. Key considerations: (1) batch normalization layers need special handling (use group norm instead);.
+(2) loss scaling — divide the loss by accumulation_steps to keep loss magnitudes consistent; (3) larger effective batch sizes improve gradient estimate quality and.
+training stability. In practice, use the largest micro-batch that fits in GPU memory, then scale up with accumulation to reach the target effective batch size (typically 32-128).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -608,7 +654,11 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q9: What is mixed precision training and why use it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Mixed precision training uses both fp16 (half precision) and fp32 (full precision) during training to reduce memory usage and accelerate computation. The technique: (1) store model weights in fp16 (half the memory of fp32); (2) compute forward and backward passes in fp16 (2-4x faster on modern GPUs with Tensor Cores); (3) maintain a master copy of weights in fp32 for the optimizer step (precision-critical); (4) use loss scaling to prevent underflow in fp16 gradients (very small gradients can underflow to zero). Implementation: PyTorch's <code>torch.cuda.amp</code> (automatic mixed precision) with <code>GradScaler</code> handles all the complexity — wrap the forward pass in <code>autocast()</code> for automatic op-level precision selection, and use the scaler for loss scaling. Benefits: ~40-50% less GPU memory, ~2x training speed on modern GPUs with minimal quality loss (<0.1% accuracy difference). bf16 (bfloat16) is preferred on Ampere+ GPUs as it has the same exponent range as fp32, eliminating the need for loss scaling. Most fine-tuning libraries (HuggingFace Trainer) enable mixed precision with a single flag (<code>fp16=True</code> or <code>bf16=True</code>).</p>
+<p>Mixed precision training uses both fp16 (half precision) and fp32 (full precision) during training to reduce memory usage and accelerate computation. The technique: (1) store model weights in fp16 (half the memory of fp32);.
+(2) compute forward and backward passes in fp16 (2-4x faster on modern GPUs with Tensor Cores); (3) maintain a master copy of weights in fp32 for.
+the optimizer step (precision-critical); (4) use loss scaling to prevent underflow in fp16 gradients (very small gradients can underflow to zero). Implementation: PyTorch's <code>torch.cuda.amp</code> (automatic mixed precision) with <code>GradScaler</code> handles all the complexity — wrap the forward pass in <code>autocast()</code> for.
+automatic op-level precision selection, and use the scaler for loss scaling. Benefits: ~40-50% less GPU memory, ~2x training speed on modern GPUs with minimal quality loss (<0.1% accuracy difference). bf16 (bfloat16) is preferred on Ampere+ GPUs as it has the same exponent range as fp32,.
+eliminating the need for loss scaling. Most fine-tuning libraries (HuggingFace Trainer) enable mixed precision with a single flag (<code>fp16=True</code> or <code>bf16=True</code>).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -620,7 +670,12 @@ Full fine-tuning updates all parameters of a pre-trained model using supervised 
     Q10: How do you implement a full fine-tuning pipeline in code?
   </summary>
   <div class="tp-qa-answer">
-    <p>A full fine-tuning pipeline in code follows these steps: (1) load the base model and tokenizer from HuggingFace (<code>AutoModelForCausalLM.from_pretrained</code>) — set <code>torch_dtype=torch.bfloat16</code> and use <code>device_map="auto"</code> for multi-GPU; (2) load and prepare the dataset — tokenize with padding/truncation, split into train/val/test, create data collator; (3) configure training arguments (<code>TrainingArguments</code>) — output directory, learning rate (2e-5), batch size, epochs (3), warmup ratio (0.1), weight decay (0.01), logging/evaluation steps, fp16=True, gradient_checkpointing=True, save_strategy="epoch", evaluation_strategy="epoch", load_best_model_at_end=True, metric_for_best_model="eval_loss"; (4) initialize the Trainer with model, args, train/val datasets, data collator, and tokenizer; (5) call <code>trainer.train()</code> — the Trainer handles the training loop, evaluation, checkpointing, and logging; (6) save the fine-tuned model with <code>trainer.save_model()</code> and push to Hub if needed. The HuggingFace Trainer is the standard approach — it abstracts away the training loop details while providing full control via callbacks and custom metrics.</p>
+<p>A full fine-tuning pipeline in code follows these steps: (1) load the base model and tokenizer from HuggingFace (<code>AutoModelForCausalLM.from_pretrained</code>) — set <code>torch_dtype=torch.bfloat16</code> and.
+use <code>device_map="auto"</code> for multi-GPU; (2) load and prepare the dataset — tokenize with padding/truncation, split into train/val/test, create data collator; (3) configure training arguments (<code>TrainingArguments</code>) — output directory,.
+learning rate (2e-5), batch size, epochs (3), warmup ratio (0.1), weight decay (0.01), logging/evaluation steps, fp16=True, gradient_checkpointing=True, save_strategy="epoch", evaluation_strategy="epoch", load_best_model_at_end=True, metric_for_best_model="eval_loss";.
+(4) initialize the Trainer with model, args, train/val datasets, data collator, and tokenizer; (5) call <code>trainer.train()</code> — the Trainer handles the training loop,.
+evaluation, checkpointing, and logging; (6) save the fine-tuned model with <code>trainer.save_model()</code> and push to Hub if needed. The HuggingFace Trainer is the standard approach — it abstracts away the training loop details while providing full control via callbacks and.
+custom metrics.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

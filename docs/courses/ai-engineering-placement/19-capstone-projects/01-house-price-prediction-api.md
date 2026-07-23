@@ -687,7 +687,10 @@ class MonitoringSetup:
 
 ## Summary
 
-This capstone project builds a complete house price prediction system from data ingestion to production deployment. The data pipeline handles ETL, feature engineering, and validation. Model training compares multiple algorithms with hyperparameter tuning via Optuna. The FastAPI server exposes prediction endpoints with Pydantic validation, OpenAPI documentation, and batch processing. Containerization with Docker and CI/CD via GitHub Actions enables reliable cloud deployment. Monitoring tracks prediction latency, error rates, and data drift. This architecture serves as a template for any ML-powered API service.
+This capstone project builds a complete house price prediction system from data ingestion to production deployment. The data pipeline handles ETL,.
+feature engineering, and validation. Model training compares multiple algorithms with hyperparameter tuning via Optuna. The FastAPI server exposes prediction endpoints with Pydantic validation,.
+OpenAPI documentation, and batch processing. Containerization with Docker and CI/CD via GitHub Actions enables reliable cloud deployment. Monitoring tracks prediction latency,.
+error rates, and data drift. This architecture serves as a template for any ML-powered API service.
 
 ## Practical Takeaways
 
@@ -708,7 +711,10 @@ This capstone project builds a complete house price prediction system from data 
     Q1: How do you handle feature engineering for a house price prediction model?
   </summary>
   <div class="tp-qa-answer">
-    <p>Feature engineering for house prices combines domain knowledge and data transformation: (1) Numeric features — sqft_living, sqft_lot, bedrooms, bathrooms, floors, age (year_built transformed to current_year - year_built). (2) Categorical encoding — zipcode has high cardinality (100+ values), use target encoding (mean price per zipcode) or frequency encoding. (3) Composite features — price_per_sqft, bathroom_per_bedroom ratio, total_area (sqft_living + sqft_basement), has_basement (binary). (4) Location features — derive latitude/longitude from zipcode, compute distance to city center, school quality scores. (5) Temporal features — month/season of sale, days since last renovation. (6) Interaction features — sqft_living — bedrooms (larger homes with fewer bedrooms might indicate luxury). Always validate feature importance using SHAP values to ensure engineered features add predictive value.</p>
+<p>Feature engineering for house prices combines domain knowledge and data transformation: (1) Numeric features — sqft_living, sqft_lot, bedrooms, bathrooms, floors, age (year_built transformed to current_year - year_built). (2) Categorical encoding — zipcode has high cardinality (100+ values),.
+use target encoding (mean price per zipcode) or frequency encoding. (3) Composite features — price_per_sqft, bathroom_per_bedroom ratio, total_area (sqft_living + sqft_basement),.
+has_basement (binary). (4) Location features — derive latitude/longitude from zipcode, compute distance to city center, school quality scores. (5) Temporal features — month/season of sale,.
+days since last renovation. (6) Interaction features — sqft_living — bedrooms (larger homes with fewer bedrooms might indicate luxury). Always validate feature importance using SHAP values to ensure engineered features add predictive value.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -720,7 +726,12 @@ This capstone project builds a complete house price prediction system from data 
     Q2: How do you set up a CI/CD pipeline for an ML prediction API?
   </summary>
   <div class="tp-qa-answer">
-    <p>A CI/CD pipeline for ML involves: (1) CI — trigger on PR to main branch, run linting (ruff, mypy), tests (pytest with coverage >80%), and model training validation (train on a sample to check pipeline runs). (2) Model training — separate workflow triggered manually or on schedule (weekly), runs full training on all data, logs metrics to W&B, registers the model if metrics exceed the current best. (3) CD — on new model registration, build a Docker image with the new model, run integration tests against the API, deploy to staging for shadow traffic validation, then promote to production using canary deployment. (4) Infrastructure as Code — use Terraform or Pulumi to manage cloud resources. GitHub Actions, GitLab CI, or Jenkins are common orchestrators.</p>
+<p>A CI/CD pipeline for ML involves: (1) CI — trigger on PR to main branch, run linting (ruff, mypy), tests (pytest with coverage >80%),.
+and model training validation (train on a sample to check pipeline runs). (2) Model training — separate workflow triggered manually or.
+on schedule (weekly), runs full training on all data, logs metrics to W&B, registers the model if metrics exceed the current best. (3) CD — on new model registration,.
+build a Docker image with the new model, run integration tests against the API, deploy to staging for shadow traffic validation,.
+then promote to production using canary deployment. (4) Infrastructure as Code — use Terraform or Pulumi to manage cloud resources. GitHub Actions,.
+GitLab CI, or Jenkins are common orchestrators.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -732,7 +743,10 @@ This capstone project builds a complete house price prediction system from data 
     Q3: How do you implement A/B testing for ML model deployments?
   </summary>
   <div class="tp-qa-answer">
-    <p>A/B testing for ML models: (1) Shadow deployment — route a copy of traffic to the new model while the old model serves the response. Compare results offline without affecting users. (2) Canary deployment — route a small percentage of traffic (5-10%) to the new model, monitor metrics (latency, error rate, prediction distribution), and compare against the baseline. (3) Feature flags — use LaunchDarkly or custom flags to dynamically control which model serves each request based on user_id hash (% traffic split). (4) Metrics — track business metrics (conversion rate, user engagement) as well as technical metrics (latency, error rate). (5) Statistical significance — use t-test or Mann-Whitney U test to determine if the new model is statistically better. (6) Rollback — if the new model performs worse, redirect 100% traffic back to the old model.</p>
+<p>A/B testing for ML models: (1) Shadow deployment — route a copy of traffic to the new model while the old model serves the response. Compare results offline without affecting users. (2) Canary deployment — route a small percentage of traffic (5-10%) to the new model,.
+monitor metrics (latency, error rate, prediction distribution), and compare against the baseline. (3) Feature flags — use LaunchDarkly or custom flags to dynamically control which model serves each request based on user_id hash (% traffic split). (4) Metrics — track business metrics (conversion rate,.
+user engagement) as well as technical metrics (latency, error rate). (5) Statistical significance — use t-test or Mann-Whitney U test to determine if the new model is statistically better. (6) Rollback — if the new model performs worse,.
+redirect 100% traffic back to the old model.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -757,7 +771,9 @@ COPY . .
 ENV PATH=/root/.local/bin:$PATH
 EXPOSE 8000
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></code>
-    <p>Containerization best practices: (1) Multi-stage builds separate build dependencies (compilers, heavy packages) from runtime dependencies, reducing image size by 2-5—. (2) Pin dependency versions in requirements.txt or poetry.lock for reproducibility. (3) Copy the model file (pkl, ONNX) into the image at build time, not mounted at runtime, to ensure version consistency. (4) Use non-root user for security. (5) Add health check: `HEALTHCHECK --interval=30s CMD curl -f http://localhost:8000/health`. (6) Use a lightweight base image (python:3.11-slim or distroless). (7) Test the Docker build in CI to catch failures early.</p>
+<p>Containerization best practices: (1) Multi-stage builds separate build dependencies (compilers, heavy packages) from runtime dependencies, reducing image size by 2-5—. (2) Pin dependency versions in requirements.txt or.
+poetry.lock for reproducibility. (3) Copy the model file (pkl, ONNX) into the image at build time, not mounted at runtime, to ensure version consistency. (4) Use non-root user for.
+security. (5) Add health check: `HEALTHCHECK --interval=30s CMD curl -f http://localhost:8000/health`. (6) Use a lightweight base image (python:3.11-slim or distroless). (7) Test the Docker build in CI to catch failures early.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -769,7 +785,11 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
     Q5: How do you handle model versioning and model registry for production APIs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Model versioning: (1) Registry storage — store each model version with a unique ID, metadata (training date, metrics, dataset version, hyperparameters), and the serialized model file. MLflow Model Registry and W&B Artifacts are popular tools. (2) API versioning — include the model version in the API response header or as a query parameter. (3) Serve multiple versions — allow clients to specify which model version to use, enabling gradual migration. (4) Version comparison — track metrics per version and provide a dashboard to compare performance. (5) Rollback — keep the last 3-5 versions available and support immediate rollback via API or config change. (6) Staging promotion — promote from staging to production only after automated validation passes (test accuracy, latency benchmarks, drift checks).</p>
+<p>Model versioning: (1) Registry storage — store each model version with a unique ID, metadata (training date, metrics, dataset version, hyperparameters),.
+and the serialized model file. MLflow Model Registry and W&B Artifacts are popular tools. (2) API versioning — include the model version in the API response header or.
+as a query parameter. (3) Serve multiple versions — allow clients to specify which model version to use, enabling gradual migration. (4) Version comparison — track metrics per version and.
+provide a dashboard to compare performance. (5) Rollback — keep the last 3-5 versions available and support immediate rollback via API or.
+config change. (6) Staging promotion — promote from staging to production only after automated validation passes (test accuracy, latency benchmarks, drift checks).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -781,7 +801,11 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
     Q6: How do you design FastAPI endpoints for ML model serving?
   </summary>
   <div class="tp-qa-answer">
-    <p>Key design patterns: (1) Input validation — use Pydantic models with Field constraints (min/max values, regex patterns for categorical inputs). Example: `class PredictionInput(BaseModel): sqft_living: float = Field(ge=100, le=50000); bedrooms: int = Field(ge=0, le=20)`. (2) Async endpoints — FastAPI async handlers with `await` for database calls, keeping the event loop free for other requests. (3) Batch endpoint — POST /predict/batch accepting arrays of inputs for higher throughput. (4) Error handling — custom exception handlers that return consistent error JSON with status codes. (5) Middleware — request ID generation, CORS, logging, and rate limiting. (6) OpenAPI docs — automatic with FastAPI, add `summary` and `description` to endpoints. (7) Caching — use `@lru_cache` or Redis for identical feature sets.</p>
+<p>Key design patterns: (1) Input validation — use Pydantic models with Field constraints (min/max values, regex patterns for categorical inputs). Example: `class PredictionInput(BaseModel): sqft_living: float = Field(ge=100,.
+le=50000); bedrooms: int = Field(ge=0, le=20)`. (2) Async endpoints — FastAPI async handlers with `await` for database calls, keeping the event loop free for.
+other requests. (3) Batch endpoint — POST /predict/batch accepting arrays of inputs for higher throughput. (4) Error handling — custom exception handlers that return consistent error.
+JSON with status codes. (5) Middleware — request ID generation, CORS, logging, and rate limiting. (6) OpenAPI docs — automatic with FastAPI,.
+add `summary` and `description` to endpoints. (7) Caching — use `@lru_cache` or Redis for identical feature sets.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -793,7 +817,11 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
     Q7: How do you monitor prediction drift in a production ML system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Prediction drift monitoring: (1) Log every prediction — store input features, predicted value, timestamp, and model version in a database or data lake. (2) Distribution monitoring — compare daily/weekly prediction distributions against the training set distribution using KS-test (numeric features) or PSI (Population Stability Index). (3) Feature drift — monitor each feature's min, max, mean, std (numeric) or frequency distribution (categorical). (4) Performance drift — when ground truth arrives (lagged feedback), compute actual error (RMSE/MAE) and compare against training performance. (5) Alerts — trigger when PSI > 0.2 or performance drops by more than 10%. (6) Retraining trigger — automatically queue a retraining job when drift is detected. (7) Dashboard — visualize drift metrics over time to identify trends before they become critical.</p>
+<p>Prediction drift monitoring: (1) Log every prediction — store input features, predicted value, timestamp, and model version in a database or.
+data lake. (2) Distribution monitoring — compare daily/weekly prediction distributions against the training set distribution using KS-test (numeric features) or PSI (Population Stability Index). (3) Feature drift — monitor.
+each feature's min, max, mean, std (numeric) or frequency distribution (categorical). (4) Performance drift — when ground truth arrives (lagged feedback),.
+compute actual error (RMSE/MAE) and compare against training performance. (5) Alerts — trigger when PSI > 0.2 or performance drops by more than 10%. (6) Retraining trigger — automatically queue a retraining job when drift is detected. (7) Dashboard —.
+visualize drift metrics over time to identify trends before they become critical.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -805,7 +833,10 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
     Q8: How do you handle hyperparameter tuning for regression models using Optuna?
   </summary>
   <div class="tp-qa-answer">
-    <p>Optuna uses Bayesian optimization with the Tree-structured Parzen Estimator (TPE) to efficiently search hyperparameter spaces. Implementation: (1) Define the objective function that accepts a trial, samples hyperparameters using `trial.suggest_*` methods, trains the model, and returns the validation metric (e.g., RMSE). (2) Use pruning (MedianPruner or HyperbandPruner) to stop poorly performing trials early. (3) Define search spaces: learning_rate (log uniform, 1e-4 to 1e-1), max_depth (int, 3-15), n_estimators (int, 100-2000), subsample (uniform, 0.6-1.0), colsample_bytree (uniform, 0.6-1.0). (4) Run 50-200 trials depending on compute budget. (5) After tuning, retrain on full data with the best parameters. (6) Log all trials to W&B/MLflow for reproducibility. XGBoost tuning with Optuna typically improves RMSE by 10-20% over defaults.</p>
+<p>Optuna uses Bayesian optimization with the Tree-structured Parzen Estimator (TPE) to efficiently search hyperparameter spaces. Implementation: (1) Define the objective function that accepts a trial,.
+samples hyperparameters using `trial.suggest_*` methods, trains the model, and returns the validation metric (e.g., RMSE). (2) Use pruning (MedianPruner or HyperbandPruner) to stop poorly performing trials early. (3) Define search spaces: learning_rate (log uniform,.
+1e-4 to 1e-1), max_depth (int, 3-15), n_estimators (int, 100-2000), subsample (uniform, 0.6-1.0), colsample_bytree (uniform, 0.6-1.0). (4) Run 50-200 trials depending on compute budget. (5) After tuning,.
+retrain on full data with the best parameters. (6) Log all trials to W&B/MLflow for reproducibility. XGBoost tuning with Optuna typically improves RMSE by 10-20% over defaults.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -817,7 +848,10 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
     Q9: How do you implement data validation in an ML pipeline using Pydantic?
   </summary>
   <div class="tp-qa-answer">
-    <p>Pydantic v2 provides powerful validation with Python type hints and `Field` constraints. Example: `class HouseFeatures(BaseModel): sqft_living: int = Field(ge=100, le=50000); bedrooms: int = Field(ge=0, le=20); bathrooms: float = Field(ge=0, le=20); floors: float = Field(ge=1, le=4); condition: int = Field(ge=1, le=5); zipcode: str = Field(pattern=r'^\d{5}$')`. Use `model_config = ConfigDict(extra='forbid')` to reject unknown fields. Add custom validators with `@field_validator` for cross-field validation (e.g., if bedrooms > bathrooms and floors == 1, flag as unlikely). Pydantic catches malformed inputs before they reach the model, providing clear error messages to the client. For training data validation, use Pandera (schema validation for pandas DataFrames) with similar constraints.</p>
+<p>Pydantic v2 provides powerful validation with Python type hints and `Field` constraints. Example: `class HouseFeatures(BaseModel): sqft_living: int = Field(ge=100, le=50000); bedrooms: int = Field(ge=0,.
+le=20); bathrooms: float = Field(ge=0, le=20); floors: float = Field(ge=1, le=4); condition: int = Field(ge=1, le=5); zipcode: str = Field(pattern=r'^\d{5}$')`. Use `model_config = ConfigDict(extra='forbid')` to reject unknown fields. Add custom validators with `@field_validator` for.
+cross-field validation (e.g., if bedrooms > bathrooms and floors == 1, flag as unlikely). Pydantic catches malformed inputs before they reach the model,.
+providing clear error messages to the client. For training data validation, use Pandera (schema validation for pandas DataFrames) with similar constraints.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -829,7 +863,11 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
     Q10: How do you design a monitoring dashboard for a house price prediction API?
   </summary>
   <div class="tp-qa-answer">
-    <p>A comprehensive dashboard (Grafana or similar) should include: (1) Request volume — RPS/RPM over time with breakdown by endpoint (/predict, /predict/batch, /health). (2) Latency — P50, P95, P99 line charts for inference time and total request time. (3) Error rate — percentage of 4xx/5xx responses with breakdown by error type (validation error, model error, timeout). (4) Prediction distribution — histogram of predicted prices overlaid with training distribution to detect drift. (5) Model version — pie chart showing which model version serves each request. (6) Cost — estimated API cost per hour based on compute usage. (7) Active alerts — current firing alerts with severity indicators. (8) Top features — feature importance from SHAP values (retrained periodically). Set up alerts for p95 latency >2s, error rate >5%, and prediction mean shift >10%.</p>
+<p>A comprehensive dashboard (Grafana or similar) should include: (1) Request volume — RPS/RPM over time with breakdown by endpoint (/predict, /predict/batch,.
+/health). (2) Latency — P50, P95, P99 line charts for inference time and total request time. (3) Error rate — percentage of 4xx/5xx responses with breakdown by error.
+type (validation error, model error, timeout). (4) Prediction distribution — histogram of predicted prices overlaid with training distribution to detect drift. (5) Model version — pie chart showing which model version serves each request. (6) Cost — estimated API cost.
+per hour based on compute usage. (7) Active alerts — current firing alerts with severity indicators. (8) Top features — feature importance from SHAP values (retrained periodically). Set up alerts for.
+p95 latency >2s, error rate >5%, and prediction mean shift >10%.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

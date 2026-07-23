@@ -404,7 +404,10 @@ print(f"Recommended for summarization: {rec.recommend('summarization')}")
 
 ## Summary
 
-Evaluation metrics must match the task type: classification uses accuracy (balanced) or F1 (imbalanced), regression uses RMSE/MAE/R², generation uses ROUGE/BLEU, and LLM-specific tasks add perplexity, hallucination rate, and calibration error. No single metric is sufficient — always report multiple metrics and understand their limitations. ROUGE and BLEU correlate weakly with human judgment. F1 is preferred over accuracy for imbalanced datasets. Hallucination rate measures factual accuracy by checking if claims are supported by evidence. Calibration error (ECE) measures whether confidence estimates match actual accuracy.
+Evaluation metrics must match the task type: classification uses accuracy (balanced) or F1 (imbalanced), regression uses RMSE/MAE/R², generation uses ROUGE/BLEU, and.
+LLM-specific tasks add perplexity, hallucination rate, and calibration error. No single metric is sufficient — always report multiple metrics and understand.
+their limitations. ROUGE and BLEU correlate weakly with human judgment. F1 is preferred over accuracy for imbalanced datasets. Hallucination rate measures factual accuracy by checking if claims are supported by evidence. Calibration error.
+(ECE) measures whether confidence estimates match actual accuracy.
 
 ## Practical Takeaways
 
@@ -425,7 +428,10 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q1: How do you choose between accuracy and F1 score for classification tasks?
   </summary>
   <div class="tp-qa-answer">
-    <p>Accuracy measures the proportion of correct predictions out of total predictions, while F1 is the harmonic mean of precision and recall. For balanced datasets, accuracy is straightforward and interpretable. For imbalanced datasets (e.g., 99% legitimate transactions), accuracy is misleading because always predicting the majority class yields 99% accuracy. F1 score, especially macro or weighted F1, provides a better measure by considering both false positives and false negatives. A good rule of thumb: if your minority class is below 20% of the data, prefer macro F1 over accuracy.</p>
+<p>Accuracy measures the proportion of correct predictions out of total predictions, while F1 is the harmonic mean of precision and recall. For.
+balanced datasets, accuracy is straightforward and interpretable. For imbalanced datasets (e.g., 99% legitimate transactions), accuracy is misleading because always predicting the majority class yields 99% accuracy. F1 score,.
+especially macro or weighted F1, provides a better measure by considering both false positives and false negatives. A good rule of thumb: if your minority class is below 20% of the data,.
+prefer macro F1 over accuracy.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -437,7 +443,9 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q2: What is the difference between RMSE and MAE, and when would you use each?
   </summary>
   <div class="tp-qa-answer">
-    <p>MAE (Mean Absolute Error) measures the average absolute difference between predictions and actual values, giving equal weight to all errors. RMSE (Root Mean Squared Error) squares the errors before averaging, which penalizes large errors more heavily. Use MAE when you want a metric in the same units as the target and when all error magnitudes are equally important. Use RMSE when large errors are disproportionately harmful (e.g., a house price prediction off by $100K is not just twice as bad as one off by $50K — it could mean a completely wrong market segment).</p>
+<p>MAE (Mean Absolute Error) measures the average absolute difference between predictions and actual values, giving equal weight to all errors. RMSE (Root Mean Squared Error) squares the errors before averaging,.
+which penalizes large errors more heavily. Use MAE when you want a metric in the same units as the target and.
+when all error magnitudes are equally important. Use RMSE when large errors are disproportionately harmful (e.g., a house price prediction off by $100K is not just twice as bad as one off by $50K — it could mean a completely wrong market segment).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -449,7 +457,10 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q3: Why is ROUGE-N considered limited for summarization evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>ROUGE-N measures n-gram overlap between a generated summary and reference summaries. Its main limitation is that it penalizes valid paraphrases — a summary that uses synonyms or restructures sentences to convey the same meaning receives a lower score despite being equally good. For example, "The cat sat on the mat" vs. "A cat was sitting on the rug" has low ROUGE-1 overlap even though both convey the same information. This weak correlation with human judgment means ROUGE should always be supplemented with semantic metrics like BERTScore or LLM-based evaluation.</p>
+<p>ROUGE-N measures n-gram overlap between a generated summary and reference summaries. Its main limitation is that it penalizes valid paraphrases — a summary that uses synonyms or.
+restructures sentences to convey the same meaning receives a lower score despite being equally good. For example, "The cat sat on the mat" vs. "A cat was sitting on the rug" has low ROUGE-1 overlap even though both convey the.
+same information. This weak correlation with human judgment means ROUGE should always be supplemented with semantic metrics like BERTScore or.
+LLM-based evaluation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -461,7 +472,9 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q4: How do you measure hallucination rate in LLM outputs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Hallucination rate measures the proportion of generated claims that are not supported by the provided context or factual knowledge. The standard approach involves: (1) Extracting atomic claims from the LLM output using an NLI model or another LLM. (2) Checking each claim against a trusted knowledge base using semantic entailment. (3) Computing the hallucination rate as the fraction of unsupported claims. A production-grade implementation uses retrieval-augmented generation (RAG) context as the ground truth and flags any claim that cannot be entailed from the retrieved documents. Modern tools like NLI-based fact-checking models can automate this at scale.</p>
+<p>Hallucination rate measures the proportion of generated claims that are not supported by the provided context or factual knowledge. The standard approach involves: (1) Extracting atomic claims from the LLM output using an NLI model or.
+another LLM. (2) Checking each claim against a trusted knowledge base using semantic entailment. (3) Computing the hallucination rate as the fraction of unsupported claims. A production-grade implementation uses retrieval-augmented generation (RAG) context as the ground truth and.
+flags any claim that cannot be entailed from the retrieved documents. Modern tools like NLI-based fact-checking models can automate this at scale.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -473,7 +486,10 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q5: What is calibration error and how do you compute Expected Calibration Error (ECE)?
   </summary>
   <div class="tp-qa-answer">
-    <p>Calibration measures whether a model's confidence estimates match its actual accuracy. For example, if a model predicts 100 samples with 90% confidence, roughly 90 should be correct. ECE is computed by: (1) Binning predictions by confidence intervals (e.g., 10 bins from [0,0.1] to [0.9,1.0]). (2) For each bin, calculating the difference between average confidence and actual accuracy. (3) Weighting each bin's difference by the fraction of samples in that bin. A perfectly calibrated model has ECE = 0. Modern LLMs tend to be overconfident (high confidence but lower accuracy), making calibration measurement essential before production deployment.</p>
+<p>Calibration measures whether a model's confidence estimates match its actual accuracy. For example, if a model predicts 100 samples with 90% confidence,.
+roughly 90 should be correct. ECE is computed by: (1) Binning predictions by confidence intervals (e.g., 10 bins from [0,0.1] to [0.9,1.0]). (2) For.
+each bin, calculating the difference between average confidence and actual accuracy. (3) Weighting each bin's difference by the fraction of samples in that bin. A perfectly calibrated model has ECE = 0. Modern LLMs tend to be overconfident (high confidence but.
+lower accuracy), making calibration measurement essential before production deployment.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -485,7 +501,10 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q6: How do you evaluate a regression model when outliers are present?
   </summary>
   <div class="tp-qa-answer">
-    <p>When outliers are present, RMSE becomes disproportionately large because squaring amplifies the influence of outliers. Better alternatives include: (1) MAE — treats all errors linearly, less sensitive to outliers. (2) Huber loss — combines MSE for small errors and MAE for large errors, with a tunable delta parameter. (3) Median Absolute Error — uses the median instead of mean, robust to extreme values. (4) R² with robust statistics — Winsorized R² that clips extreme values. In practice, report multiple metrics and inspect residual plots to understand how outliers affect model performance.</p>
+<p>When outliers are present, RMSE becomes disproportionately large because squaring amplifies the influence of outliers. Better alternatives include: (1) MAE — treats all errors linearly,.
+less sensitive to outliers. (2) Huber loss — combines MSE for small errors and MAE for large errors, with a tunable delta parameter. (3) Median Absolute Error.
+— uses the median instead of mean, robust to extreme values. (4) R² with robust statistics — Winsorized R² that clips extreme values. In practice,.
+report multiple metrics and inspect residual plots to understand how outliers affect model performance.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -497,7 +516,10 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q7: What is perplexity and why is it used for language model evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Perplexity measures how well a language model predicts a sequence: it is the exponentiated average negative log-likelihood per token. Lower perplexity means the model is more confident in its predictions. Mathematically, perplexity = exp(-1/N * Σ ln P(token_i | context)). It is useful for comparing models on the same test corpus because it directly reflects the model's ability to predict the next token. However, perplexity has limitations: it does not correlate perfectly with human judgment, it is sensitive to tokenization, and it cannot measure factual accuracy or coherence directly. A strong LLM typically achieves perplexity below 20 on standard benchmarks.</p>
+<p>Perplexity measures how well a language model predicts a sequence: it is the exponentiated average negative log-likelihood per token. Lower perplexity means the model is more confident in its predictions. Mathematically,.
+perplexity = exp(-1/N * Σ ln P(token_i | context)). It is useful for comparing models on the same test corpus because it directly reflects the model's ability to predict the next token. However,.
+perplexity has limitations: it does not correlate perfectly with human judgment, it is sensitive to tokenization, and it cannot measure factual accuracy or.
+coherence directly. A strong LLM typically achieves perplexity below 20 on standard benchmarks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -509,7 +531,9 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q8: How do you set threshold for binary classification when false positives and false negatives have different costs?
   </summary>
   <div class="tp-qa-answer">
-    <p>When costs differ, you should not use the default 0.5 threshold. Instead: (1) Define a cost matrix: cost(FP) and cost(FN). (2) Compute the cost ratio = cost(FP) / cost(FN). (3) Find the optimal threshold where the benefit of reducing one error type outweighs the cost of increasing the other. A practical approach is to plot precision-recall or ROC curves, then choose the threshold that minimizes total cost on a validation set. For example, in medical diagnosis, false negatives (missing a disease) may cost 10x more than false positives, so a threshold of 0.3 might be optimal instead of 0.5.</p>
+<p>When costs differ, you should not use the default 0.5 threshold. Instead: (1) Define a cost matrix: cost(FP) and cost(FN). (2) Compute the cost ratio = cost(FP) / cost(FN). (3) Find the optimal threshold where the benefit of reducing one error.
+type outweighs the cost of increasing the other. A practical approach is to plot precision-recall or ROC curves, then choose the threshold that minimizes total cost on a validation set. For.
+example, in medical diagnosis, false negatives (missing a disease) may cost 10x more than false positives, so a threshold of 0.3 might be optimal instead of 0.5.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -521,7 +545,10 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
     Q9: What is the AUC-ROC metric and what are its limitations?
   </summary>
   <div class="tp-qa-answer">
-    <p>AUC-ROC (Area Under the Receiver Operating Characteristic curve) measures the model's ability to distinguish between positive and negative classes across all possible thresholds. An AUC of 0.5 means random chance, while 1.0 means perfect separation. Its main limitation is that it considers both false positive and true positive rates equally across all thresholds, which may not reflect real-world operating conditions. Additionally, AUC-ROC can be overly optimistic for highly imbalanced datasets because the false positive rate is dominated by the majority class. For imbalanced problems, precision-recall AUC (AUPRC) is often preferred as it focuses on the positive class.</p>
+<p>AUC-ROC (Area Under the Receiver Operating Characteristic curve) measures the model's ability to distinguish between positive and negative classes across all possible thresholds. An AUC of 0.5 means random chance,.
+while 1.0 means perfect separation. Its main limitation is that it considers both false positive and true positive rates equally across all thresholds,.
+which may not reflect real-world operating conditions. Additionally, AUC-ROC can be overly optimistic for highly imbalanced datasets because the false positive rate is dominated by the majority class. For.
+imbalanced problems, precision-recall AUC (AUPRC) is often preferred as it focuses on the positive class.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -545,7 +572,9 @@ Evaluation metrics must match the task type: classification uses accuracy (balan
   const macroF1 = perClass.reduce((s, c) => s + c.f1, 0) / numClasses;
   return { confusionMatrix: cm, perClass, macroF1 };
 }</pre></code>
-    <p>A confusion matrix is a square matrix where rows represent actual classes and columns represent predicted classes. Diagonal entries are correct predictions, off-diagonals are errors. From it you derive: precision (TP / (TP + FP)), recall (TP / (TP + FN)), and F1 score per class. Macro F1 averages per-class F1 scores equally, while weighted F1 weights by class support. The function above computes all these metrics programmatically for a multi-class problem.</p>
+<p>A confusion matrix is a square matrix where rows represent actual classes and columns represent predicted classes. Diagonal entries are correct predictions,.
+off-diagonals are errors. From it you derive: precision (TP / (TP + FP)), recall (TP / (TP + FN)), and F1 score per class. Macro F1 averages per-class F1 scores equally,.
+while weighted F1 weights by class support. The function above computes all these metrics programmatically for a multi-class problem.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

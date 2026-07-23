@@ -830,7 +830,10 @@ print("Ablation study configured for advanced RAG evaluation")
 
 ## Summary
 
-Advanced RAG techniques build on basic RAG to handle complex queries and improve reliability. Self-RAG enables the model to decide when retrieval is needed and self-critique its outputs. Multi-hop RAG decomposes complex questions into sub-questions, executing retrieval for each. Iterative retrieval incorporates feedback loops to refine search results. Agentic RAG uses LLM agents with tool registries, query routers, and planning capabilities. Graph RAG extracts entities and relationships, enabling knowledge graph traversal for retrieval. Evaluation against standard RAG baselines using faithfulness and completeness metrics quantifies the improvement from each technique.
+Advanced RAG techniques build on basic RAG to handle complex queries and improve reliability. Self-RAG enables the model to decide when retrieval is needed and.
+self-critique its outputs. Multi-hop RAG decomposes complex questions into sub-questions, executing retrieval for each. Iterative retrieval incorporates feedback loops to refine search results. Agentic RAG uses LLM agents with tool registries,.
+query routers, and planning capabilities. Graph RAG extracts entities and relationships, enabling knowledge graph traversal for retrieval. Evaluation against standard RAG baselines using faithfulness and.
+completeness metrics quantifies the improvement from each technique.
 
 ## Practical Takeaways
 
@@ -850,7 +853,10 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q1: How does Self-RAG decide whether retrieval is needed for a given query?
   </summary>
   <div class="tp-qa-answer">
-    <p>Self-RAG uses a RetrievalDecider that classifies the query into categories like FACTUAL_RECENT (needs up-to-date info), FACTUAL_STATIC (model may know), OPINION (no retrieval needed), CREATIVE (generation task), or PRIVATE (needs private data). The decider is implemented as a prompt to an LLM that outputs a classification label. Only queries classified as FACTUAL_RECENT or PRIVATE trigger retrieval. This reduces unnecessary retrieval calls by 30-60% for knowledge-heavy domains where many questions can be answered from the model's training data. The classification prompt includes examples and clear category definitions. Threshold calibration on a validation set is essential to avoid under-retrieving on important queries.</p>
+<p>Self-RAG uses a RetrievalDecider that classifies the query into categories like FACTUAL_RECENT (needs up-to-date info), FACTUAL_STATIC (model may know), OPINION (no retrieval needed),.
+CREATIVE (generation task), or PRIVATE (needs private data). The decider is implemented as a prompt to an LLM that outputs a classification label. Only queries classified as FACTUAL_RECENT or.
+PRIVATE trigger retrieval. This reduces unnecessary retrieval calls by 30-60% for knowledge-heavy domains where many questions can be answered from the model's training data. The classification prompt includes examples and.
+clear category definitions. Threshold calibration on a validation set is essential to avoid under-retrieving on important queries.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -862,7 +868,11 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q2: What is multi-hop RAG and how does it handle complex queries that standard RAG cannot?
   </summary>
   <div class="tp-qa-answer">
-    <p>Multi-hop RAG decomposes complex questions into sub-questions, each requiring a separate retrieval step. For example, "What companies were founded by the inventor of the Transformer architecture?" requires: (1) Who invented the Transformer? → (2) What companies did that person found? Each sub-question retrieves different documents, and the answers are accumulated. A QueryDecomposer breaks the original question, a MultiHopExecutor runs retrieval for each sub-question, and a final generator synthesizes all intermediate results. Multi-hop improves accuracy on compound questions by 20-40% compared to standard RAG which would retrieve for the full question and likely miss partial information.</p>
+<p>Multi-hop RAG decomposes complex questions into sub-questions, each requiring a separate retrieval step. For example, "What companies were founded by the inventor.
+of the Transformer architecture?" requires: (1) Who invented the Transformer? → (2) What companies did that person found? Each sub-question retrieves different documents,.
+and the answers are accumulated. A QueryDecomposer breaks the original question, a MultiHopExecutor runs retrieval for each sub-question, and a final generator.
+synthesizes all intermediate results. Multi-hop improves accuracy on compound questions by 20-40% compared to standard RAG which would retrieve for the full question and.
+likely miss partial information.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -874,7 +884,11 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q3: How does Graph RAG extend standard RAG for entity-rich domains?
   </summary>
   <div class="tp-qa-answer">
-    <p>Graph RAG extracts entities (people, organizations, technologies) and their relationships from documents, building a knowledge graph. During retrieval, it first uses vector search to find relevant documents, then traverses the knowledge graph from mentioned entities to find related documents that might not match the query vectorially. For example, for "What companies does Elon Musk lead?", Graph RAG retrieves "Elon Musk" documents, then traverses the graph to find related entities (Tesla, SpaceX, Neuralink) and their associated chunks. This captures entity-centric information that pure vector search would miss. Graph RAG excels in domains like news, research, and enterprise data where entities and relationships are central.</p>
+<p>Graph RAG extracts entities (people, organizations, technologies) and their relationships from documents, building a knowledge graph. During retrieval, it first uses vector.
+search to find relevant documents, then traverses the knowledge graph from mentioned entities to find related documents that might not match the query vectorially. For.
+example, for "What companies does Elon Musk lead?", Graph RAG retrieves "Elon Musk" documents, then traverses the graph to find related entities (Tesla,.
+SpaceX, Neuralink) and their associated chunks. This captures entity-centric information that pure vector search would miss. Graph RAG excels in domains like news,.
+research, and enterprise data where entities and relationships are central.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -886,7 +900,10 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q4: What is corrective RAG and how does it fix errors in generation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Corrective RAG adds a self-review step after generation: the LLM reviews its own answer for factual errors, omissions, or inconsistencies with the retrieved context. If errors are found, the correction feedback is incorporated into a new retrieval-generation cycle. This iterative refinement continues until the LLM judges its answer as correct (or a maximum retry limit is reached). For example, if the first answer says "RAG was introduced in 2023" but the context mentions 2020, the review catches this and the corrected answer uses 2020. This technique typically improves faithfulness by 10-25% but increases latency by 40-80% due to multiple generation cycles.</p>
+<p>Corrective RAG adds a self-review step after generation: the LLM reviews its own answer for factual errors, omissions, or inconsistencies with the retrieved context. If errors are found,.
+the correction feedback is incorporated into a new retrieval-generation cycle. This iterative refinement continues until the LLM judges its answer as correct (or.
+a maximum retry limit is reached). For example, if the first answer says "RAG was introduced in 2023" but the context mentions 2020,.
+the review catches this and the corrected answer uses 2020. This technique typically improves faithfulness by 10-25% but increases latency by 40-80% due to multiple generation cycles.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -898,7 +915,11 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q5: How does agentic RAG use tools to handle queries standard RAG cannot?
   </summary>
   <div class="tp-qa-answer">
-    <p>Agentic RAG equips the LLM with a ToolRegistry containing specialized tools: vector search (for semantic document retrieval), web search (for current events), calculator (for math), code interpreter (for execution), and database query tools. The LLM agent plans which tools to use, in what order, and how to combine their outputs. For example, "Calculate the average revenue of companies in the AI sector" would: (1) search the knowledge base for AI companies, (2) look up revenue data, (3) calculate the average. The agent iteratively decides next actions based on previous results. This extends RAG to handle queries requiring computation, real-time data, or multi-step reasoning that a single retrieval pass cannot satisfy.</p>
+<p>Agentic RAG equips the LLM with a ToolRegistry containing specialized tools: vector search (for semantic document retrieval), web search (for current events),.
+calculator (for math), code interpreter (for execution), and database query tools. The LLM agent plans which tools to use, in what order,.
+and how to combine their outputs. For example, "Calculate the average revenue of companies in the AI sector" would: (1) search the knowledge base for.
+AI companies, (2) look up revenue data, (3) calculate the average. The agent iteratively decides next actions based on previous results. This extends RAG to handle queries requiring computation,.
+real-time data, or multi-step reasoning that a single retrieval pass cannot satisfy.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -910,7 +931,9 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q6: How does iterative retrieval with feedback improve recall for hard queries?
   </summary>
   <div class="tp-qa-answer">
-    <p>Iterative retrieval performs multiple retrieval rounds, where each round's results inform the next round's query reformulation. After receiving initial results, a feedback function identifies gaps (terms present in retrieved chunks that suggest new search directions) and reformulates the query to fill those gaps. For example, if "machine learning frameworks" retrieves documents mentioning "PyTorch" and "TensorFlow", the reformulated query might be "PyTorch vs TensorFlow comparison". This gradually expands the relevant document pool. Iterative retrieval typically improves recall@10 by 15-30% for complex or poorly-specified queries, at the cost of 2-5x more retrieval calls. Set a maximum iteration count to bound latency.</p>
+<p>Iterative retrieval performs multiple retrieval rounds, where each round's results inform the next round's query reformulation. After receiving initial results, a feedback function identifies gaps (terms present in retrieved chunks that suggest new search directions) and.
+reformulates the query to fill those gaps. For example, if "machine learning frameworks" retrieves documents mentioning "PyTorch" and "TensorFlow", the reformulated query might be "PyTorch vs TensorFlow comparison". This gradually expands the relevant document pool. Iterative retrieval typically improves recall@10 by 15-30% for.
+complex or poorly-specified queries, at the cost of 2-5x more retrieval calls. Set a maximum iteration count to bound latency.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -922,7 +945,10 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q7: What is the plan-and-solve approach for RAG and when is it appropriate?
   </summary>
   <div class="tp-qa-answer">
-    <p>Plan-and-Solve instructs the LLM to create a step-by-step plan before executing retrieval: identify key entities, determine needed information, design search strategy, and plan synthesis approach. The plan is then executed step by step. This is appropriate for complex analytical queries like "Compare the environmental impact of electric vehicles vs hydrogen fuel cells across manufacturing, operation, and disposal." Standard RAG would retrieve once and likely miss one of the three lifecycle phases. Plan-and-Solve ensures comprehensive coverage by explicitly listing what to search for. It adds 500-2000ms for planning but improves answer completeness by 25-40% for multi-faceted questions.</p>
+<p>Plan-and-Solve instructs the LLM to create a step-by-step plan before executing retrieval: identify key entities, determine needed information, design search strategy,.
+and plan synthesis approach. The plan is then executed step by step. This is appropriate for complex analytical queries like "Compare the environmental impact of electric vehicles vs hydrogen fuel cells across manufacturing,.
+operation, and disposal." Standard RAG would retrieve once and likely miss one of the three lifecycle phases. Plan-and-Solve ensures comprehensive coverage by explicitly listing what to search for. It adds 500-2000ms for.
+planning but improves answer completeness by 25-40% for multi-faceted questions.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -934,7 +960,10 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q8: How do you evaluate advanced RAG techniques against standard RAG baselines?
   </summary>
   <div class="tp-qa-answer">
-    <p>Design an AblationStudy comparing standard RAG, Self-RAG, multi-hop RAG, and Graph RAG on the same test set of 20-50 queries with ground truth answers. Measure faithfulness (claims supported by context), completeness (all information needed is present), and end-to-end score (match with ground truth). For each variant, report average metrics and per-query latency. A proper ablation isolates which technique contributes which improvement — for example, Self-RAG may improve faithfulness but not recall, while multi-hop may improve recall but not latency. Always maintain the same base retriever, generator, and chunking across all variants to isolate the technique's effect.</p>
+<p>Design an AblationStudy comparing standard RAG, Self-RAG, multi-hop RAG, and Graph RAG on the same test set of 20-50 queries with ground truth answers. Measure faithfulness (claims supported by context),.
+completeness (all information needed is present), and end-to-end score (match with ground truth). For each variant, report average metrics and per-query latency. A proper ablation isolates which technique contributes which improvement — for.
+example, Self-RAG may improve faithfulness but not recall, while multi-hop may improve recall but not latency. Always maintain the same base retriever,.
+generator, and chunking across all variants to isolate the technique's effect.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -946,7 +975,10 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q9: How does a query dependency graph help in multi-hop RAG?
   </summary>
   <div class="tp-qa-answer">
-    <p>A query dependency graph captures which sub-questions depend on answers from other sub-questions. For example, "Who founded company X?" depends on first knowing "Which category does X belong to?" if the database is organized by categories. The graph enables topological sorting to determine execution order — independent sub-questions can be executed in parallel, while dependent ones must be sequential. This reduces total latency compared to executing all sub-questions sequentially. The dependency graph is constructed by an LLM that analyzes the query structure and identifies informational dependencies. Complex queries with 3+ hops typically have 1-2 dependency edges that affect execution order.</p>
+<p>A query dependency graph captures which sub-questions depend on answers from other sub-questions. For example, "Who founded company X?" depends on first knowing "Which category does X belong to?" if the database is organized by categories. The graph enables topological.
+sorting to determine execution order — independent sub-questions can be executed in parallel,.
+while dependent ones must be sequential. This reduces total latency compared to executing all sub-questions sequentially. The dependency graph is constructed by an LLM that analyzes the query structure and.
+identifies informational dependencies. Complex queries with 3+ hops typically have 1-2 dependency edges that affect execution order.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -958,7 +990,11 @@ Advanced RAG techniques build on basic RAG to handle complex queries and improve
     Q10: What is a verifier module in advanced RAG and how does it reduce hallucination?
   </summary>
   <div class="tp-qa-answer">
-    <p>A verifier module checks the generated answer against the retrieved context and identifies unsupported claims. It extracts each claim from the answer and verifies it against the context using an LLM prompt: "Does the context support this claim? SUPPORTED / NOT_SUPPORTED / CONTRADICTED." If unsupported claims are found, the generator is asked to revise the answer to remove or correct them. This process repeats until all claims are supported or a maximum attempt count is reached. The verifier acts as a safety net, catching hallucinations that slip through the augmentation stage. In production, a verifier can reduce hallucination rate from 15% to below 3% on factual Q&A tasks.</p>
+<p>A verifier module checks the generated answer against the retrieved context and identifies unsupported claims. It extracts each claim from the answer and.
+verifies it against the context using an LLM prompt: "Does the context support this claim? SUPPORTED / NOT_SUPPORTED / CONTRADICTED." If unsupported claims are found,.
+the generator is asked to revise the answer to remove or correct them. This process repeats until all claims are supported or.
+a maximum attempt count is reached. The verifier acts as a safety net, catching hallucinations that slip through the augmentation stage. In production,.
+a verifier can reduce hallucination rate from 15% to below 3% on factual Q&A tasks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

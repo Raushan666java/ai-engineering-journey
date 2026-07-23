@@ -2,7 +2,9 @@
 
 ## Overview
 
-This section bridges the gap between traditional computer science fundamentals and modern AI engineering. Each chapter is written from a practitioner's perspective — the way engineers at Google, Meta, and top AI labs think about these systems. You won't find academic proofs or textbook trivia here; you'll find the mental models, performance intuition, and practical knowledge that separates senior engineers from junior ones.
+This section bridges the gap between traditional computer science fundamentals and modern AI engineering. Each chapter is written from a practitioner's perspective — the way engineers at Google,.
+Meta, and top AI labs think about these systems. You won't find academic proofs or textbook trivia here; you'll find the mental models,.
+performance intuition, and practical knowledge that separates senior engineers from junior ones.
 
 | # | Chapter | What You'll Learn | Why It Matters for AI |
 |---|---------|-------------------|----------------------|

@@ -762,7 +762,10 @@ print(f"Streamed output: {full}")
 
 ## Summary
 
-Advanced agent patterns enhance system capabilities beyond basic orchestration. Plan-and-execute decomposes tasks into sub-tasks with dependency management and dynamic replanning. Reflection enables self-critique and iterative improvement through structured evaluation. Tool composition provides routing, chaining, and parallel execution. Self-healing mechanisms handle errors gracefully through recovery strategies and alternative approaches. Context adaptation and feedback loops enable continuous improvement based on user preferences and performance metrics. Optimization through caching (with TTL), request batching, and streaming reduces latency and costs.
+Advanced agent patterns enhance system capabilities beyond basic orchestration. Plan-and-execute decomposes tasks into sub-tasks with dependency management and dynamic replanning. Reflection enables self-critique and.
+iterative improvement through structured evaluation. Tool composition provides routing, chaining, and parallel execution. Self-healing mechanisms handle errors gracefully through recovery strategies and.
+alternative approaches. Context adaptation and feedback loops enable continuous improvement based on user preferences and performance metrics. Optimization through caching (with TTL),.
+request batching, and streaming reduces latency and costs.
 
 ## Practical Takeaways
 
@@ -783,7 +786,13 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q1: What is the plan-and-execute agent pattern?
   </summary>
   <div class="tp-qa-answer">
-    <p>The plan-and-execute pattern separates an agent's workflow into two phases: planning and execution. In the planning phase, the agent analyzes the user's request and creates a structured plan — a sequence of steps with expected outcomes. Each step specifies which tool to use and what input to provide. In the execution phase, the agent follows the plan step by step, marking each step as complete or failed. If a step fails, the agent can either retry, replan (update the remaining plan based on the current state), or escalate. Benefits: (1) the plan provides a clear roadmap visible to both the agent and the user; (2) partial progress is preserved — if interrupted, the agent resumes from the last incomplete step; (3) the plan can be reviewed and modified by a human before execution. Implementation uses a planning node that generates a plan object (a list of steps), an execution loop that iterates through steps, and a replanning mechanism that updates the plan when execution deviates from expectations.</p>
+<p>The plan-and-execute pattern separates an agent's workflow into two phases: planning and execution. In the planning phase, the agent analyzes the user's request and.
+creates a structured plan — a sequence of steps with expected outcomes. Each step specifies which tool to use and what input to provide. In the execution phase,.
+the agent follows the plan step by step, marking each step as complete or failed. If a step fails, the agent can either retry,.
+replan (update the remaining plan based on the current state), or escalate. Benefits: (1) the plan provides a clear roadmap visible to both the agent and.
+the user; (2) partial progress is preserved — if interrupted, the agent resumes from the last incomplete step; (3) the plan can be reviewed and.
+modified by a human before execution. Implementation uses a planning node that generates a plan object (a list of steps), an execution loop that iterates through steps,.
+and a replanning mechanism that updates the plan when execution deviates from expectations.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -795,7 +804,12 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q2: How do you implement a reflection-based agent?
   </summary>
   <div class="tp-qa-answer">
-    <p>A reflection-based agent evaluates its own outputs and corrects mistakes before presenting the final answer. The pattern: (1) the agent generates an initial response; (2) a reflection step analyzes the response for quality issues (inaccuracies, incomplete reasoning, missing citations, policy violations); (3) if issues are found, the agent generates improvements based on the reflection feedback; (4) steps 2-3 repeat until quality thresholds are met or max iterations reached. Implementation uses a <code>ReflectionNode</code> that takes the current output and generates a structured critique with specific issues and suggestions. The critique is fed back to the generation node alongside the original query. The reflection can be done by the same LLM (self-reflection) or a separate evaluator LLM to reduce bias. This pattern significantly improves output quality but adds latency and cost. It's most useful for high-stakes outputs (legal documents, medical advice, code generation) where correctness is critical.</p>
+<p>A reflection-based agent evaluates its own outputs and corrects mistakes before presenting the final answer. The pattern: (1) the agent generates an initial response;.
+(2) a reflection step analyzes the response for quality issues (inaccuracies, incomplete reasoning, missing citations, policy violations); (3) if issues are found,.
+the agent generates improvements based on the reflection feedback; (4) steps 2-3 repeat until quality thresholds are met or max iterations reached. Implementation uses a <code>ReflectionNode</code> that takes the current output and.
+generates a structured critique with specific issues and suggestions. The critique is fed back to the generation node alongside the original query. The reflection can be done by the same LLM (self-reflection) or.
+a separate evaluator LLM to reduce bias. This pattern significantly improves output quality but adds latency and cost. It's most useful for.
+high-stakes outputs (legal documents, medical advice, code generation) where correctness is critical.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -807,7 +821,12 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q3: What is tool composition and how do you implement it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Tool composition combines multiple tools into a higher-level operation that the agent can use as a single step. A composite tool encapsulates a workflow that calls multiple sub-tools in sequence or parallel, handling data flow between them. For example, a "research_and_summarize" composite tool might: (1) search the web for query; (2) fetch each result page; (3) extract key information; (4) generate a summary. Implementation: a <code>CompositeTool</code> class that takes a list of sub-tools and a workflow descriptor (DAG of steps). Each step specifies the tool to call, which previous step outputs to use as inputs, and how to transform the output. The composite tool exposes a single <code>execute(input) → output</code> interface, hiding the complexity from the agent. Benefits: reduces the number of decisions the agent must make (one tool call instead of multiple), ensures consistent execution of complex workflows, and enables reusable operation libraries. Composite tools can be nested — a composite can contain other composites.</p>
+<p>Tool composition combines multiple tools into a higher-level operation that the agent can use as a single step. A composite tool encapsulates a workflow that calls multiple sub-tools in sequence or.
+parallel, handling data flow between them. For example, a "research_and_summarize" composite tool might: (1) search the web for query; (2) fetch each result page;.
+(3) extract key information; (4) generate a summary. Implementation: a <code>CompositeTool</code> class that takes a list of sub-tools and a workflow descriptor.
+(DAG of steps). Each step specifies the tool to call, which previous step outputs to use as inputs, and how to transform the output. The composite tool exposes a single <code>execute(input) → output</code> interface,.
+hiding the complexity from the agent. Benefits: reduces the number of decisions the agent must make (one tool call instead of multiple),.
+ensures consistent execution of complex workflows, and enables reusable operation libraries. Composite tools can be nested — a composite can contain other composites.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -819,7 +838,13 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q4: How do you implement self-healing agents?
   </summary>
   <div class="tp-qa-answer">
-    <p>Self-healing agents detect failures and automatically recover without human intervention. Implementation layers: (1) Error detection — monitor tool execution results, LLM output quality, and state consistency for anomalies (failed tool calls, unexpected outputs, missing required data); (2) Failure classification — classify errors by type: transient (retry), environmental (switch service), logical (replan), permission (escalate); (3) Recovery strategies — for transient errors, retry with backoff; for environmental, use alternative tools; for logical, update the plan; for permission, escalate to human; (4) Health monitoring — track error rates per component; if a component has high error rates, automatically route around it (circuit breaker); (5) Learning — record successful recovery strategies and apply them to similar future failures. Implementation uses a <code>SelfHealingExecutor</code> that wraps tool execution with error detection, classification, and recovery logic. The executor maintains a registry of recovery strategies by error type and a history of which strategies worked best for each error context.</p>
+<p>Self-healing agents detect failures and automatically recover without human intervention. Implementation layers: (1) Error detection — monitor tool execution results, LLM output quality,.
+and state consistency for anomalies (failed tool calls, unexpected outputs, missing required data); (2) Failure classification — classify errors by type: transient (retry),.
+environmental (switch service), logical (replan), permission (escalate); (3) Recovery strategies — for transient errors, retry with backoff; for environmental, use alternative tools;.
+for logical, update the plan; for permission, escalate to human; (4) Health monitoring — track error rates per component; if a component has high error.
+rates, automatically route around it (circuit breaker); (5) Learning — record successful recovery strategies and apply them to similar future failures. Implementation uses a <code>SelfHealingExecutor</code> that wraps tool execution with error.
+detection, classification, and recovery logic. The executor maintains a registry of recovery strategies by error type and a history of which strategies worked best for.
+each error context.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -831,7 +856,13 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q5: How do you implement response caching for agents?
   </summary>
   <div class="tp-qa-answer">
-    <p>Response caching stores LLM responses for reuse when the same or similar queries are received, reducing cost and latency. Implementation: (1) exact-match cache — keyed by (system prompt hash + user message hash), returns cached response if identical request was made before; (2) semantic cache — embeds the query using a text embedding model, stores in a vector database along with the response; on new query, embed it and search for semantically similar cached queries above a similarity threshold (e.g., cosine similarity > 0.95); (3) cache invalidation — set TTL on cached responses (e.g., 1 hour for factual queries, 24 hours for slower-changing information); (4) cache-aside pattern — check cache first, if miss then call LLM and store result. Semantic caching is more useful for agent systems because users rarely ask the exact same question twice. A cache manager handles: cache hit rate tracking, storage backend (Redis for exact, vector DB for semantic), and cache warming (pre-populate with common queries). Cache hit rates of 20-40% are typical in production systems.</p>
+<p>Response caching stores LLM responses for reuse when the same or similar queries are received, reducing cost and latency. Implementation: (1) exact-match cache — keyed by (system prompt hash + user message hash),.
+returns cached response if identical request was made before; (2) semantic cache — embeds the query using a text embedding model,.
+stores in a vector database along with the response; on new query, embed it and search for semantically similar cached queries above a similarity threshold (e.g.,.
+cosine similarity > 0.95); (3) cache invalidation — set TTL on cached responses (e.g., 1 hour for factual queries, 24 hours for.
+slower-changing information); (4) cache-aside pattern — check cache first, if miss then call LLM and store result. Semantic caching is more useful for.
+agent systems because users rarely ask the exact same question twice. A cache manager handles: cache hit rate tracking, storage backend (Redis for.
+exact, vector DB for semantic), and cache warming (pre-populate with common queries). Cache hit rates of 20-40% are typical in production systems.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -843,7 +874,13 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q6: How do you implement adaptive agents?
   </summary>
   <div class="tp-qa-answer">
-    <p>Adaptive agents modify their behavior based on context, feedback, and performance history without code changes. Adaptation mechanisms: (1) Prompt adaptation — dynamically modify system prompts based on user preferences, domain, or task complexity (add domain-specific instructions for technical users, simplify for beginners); (2) Tool selection — adjust which tools are available based on the user's permission level and current task (enable write tools for authorized users only); (3) Model selection — use cheaper models for simple tasks and powerful models for complex ones, learned from historical performance; (4) Threshold adaptation — adjust confidence thresholds for automatic vs. human-approved actions based on the agent's track record with similar tasks; (5) Parameter optimization — tune temperature, max tokens, and penalty settings based on the task type (creative tasks use higher temperature). Implementation uses a <code>BehaviorConfig</code> that can be updated at runtime, with adaptation triggers defined as rules or learned from feedback. The agent checks the current config before each action, enabling behavior changes without restarting.</p>
+<p>Adaptive agents modify their behavior based on context, feedback, and performance history without code changes. Adaptation mechanisms: (1) Prompt adaptation — dynamically modify system prompts based on user preferences,.
+domain, or task complexity (add domain-specific instructions for technical users, simplify for beginners); (2) Tool selection — adjust which tools are available based on the user's permission level and.
+current task (enable write tools for authorized users only); (3) Model selection — use cheaper models for simple tasks and powerful models for.
+complex ones, learned from historical performance; (4) Threshold adaptation — adjust confidence thresholds for automatic vs. human-approved actions based on the agent's track record with similar tasks;.
+(5) Parameter optimization — tune temperature, max tokens, and penalty settings based on the task type (creative tasks use higher temperature). Implementation uses a <code>BehaviorConfig</code> that can be updated at runtime,.
+with adaptation triggers defined as rules or learned from feedback. The agent checks the current config before each action, enabling behavior.
+changes without restarting.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -855,7 +892,13 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q7: How do you implement structured output extraction?
   </summary>
   <div class="tp-qa-answer">
-    <p>Structured output extraction forces the LLM to produce output in a specific format (JSON, XML, YAML) that your code can parse and validate. Implementation: (1) define the output schema — fields, types, constraints (e.g., <code>{"name": "string", "age": "integer", "items": ["string"]}</code>); (2) include the schema in the system prompt with format instructions and examples; (3) use the LLM's response_format parameter (supported by OpenAI and Gemini) to enforce JSON output; (4) parse the LLM response and validate against the schema — check required fields exist, types match, constraints are satisfied; (5) if validation fails, return the error to the LLM with the original schema for correction. For complex schemas, provide default values for optional fields and the exact field names the LLM should use. Structured output is essential for agent-tool interaction (tool call arguments must be parseable JSON), multi-step workflows (state updates must follow the schema), and data processing tasks. A <code>StructuredOutputExtractor</code> class handles schema generation, parsing, validation, and retry logic.</p>
+<p>Structured output extraction forces the LLM to produce output in a specific format (JSON, XML, YAML) that your code can parse and.
+validate. Implementation: (1) define the output schema — fields, types, constraints (e.g., <code>{"name": "string", "age": "integer", "items": ["string"]}</code>); (2) include the schema in the system prompt with format instructions and.
+examples; (3) use the LLM's response_format parameter (supported by OpenAI and Gemini) to enforce JSON output; (4) parse the LLM response and.
+validate against the schema — check required fields exist, types match, constraints are satisfied; (5) if validation fails, return the error.
+to the LLM with the original schema for correction. For complex schemas, provide default values for optional fields and the exact field names the LLM should use. Structured output is essential for.
+agent-tool interaction (tool call arguments must be parseable JSON), multi-step workflows (state updates must follow the schema), and data processing tasks. A <code>StructuredOutputExtractor</code> class handles schema generation,.
+parsing, validation, and retry logic.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -867,7 +910,13 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q8: What is dynamic workflow routing?
   </summary>
   <div class="tp-qa-answer">
-    <p>Dynamic workflow routing allows an agent to choose different execution paths based on runtime conditions, rather than following a fixed flow. The router examines the current state and decides which node to execute next. Examples: (1) complexity-based routing — for simple queries, use a fast single-LLM path; for complex queries, route through a multi-step research path; (2) user preference routing — if the user prefers detailed responses, route through an elaboration path; if concise, route through a summary path; (3) capability-based routing — route to different specialist sub-agents based on the detected domain (tech support vs billing); (4) fallback routing — if the primary path fails, route to the recovery path. Implementation uses conditional edges in LangGraph where the router function has access to the full state and can make decisions based on any state field. Dynamic routing makes agent systems more flexible and efficient — simple queries get fast answers while complex queries get thorough treatment. The routing logic can be rules-based (simple and fast) or LLM-based (flexible but slower).</p>
+<p>Dynamic workflow routing allows an agent to choose different execution paths based on runtime conditions, rather than following a fixed flow. The router examines the current state and.
+decides which node to execute next. Examples: (1) complexity-based routing — for simple queries, use a fast single-LLM path; for complex queries,.
+route through a multi-step research path; (2) user preference routing — if the user prefers detailed responses, route through an elaboration path;.
+if concise, route through a summary path; (3) capability-based routing — route to different specialist sub-agents based on the detected domain (tech support vs billing);.
+(4) fallback routing — if the primary path fails, route to the recovery path. Implementation uses conditional edges in LangGraph where the router function has access to the full state and.
+can make decisions based on any state field. Dynamic routing makes agent systems more flexible and efficient — simple queries get fast answers while complex queries get thorough treatment. The routing logic can be rules-based (simple and.
+fast) or LLM-based (flexible but slower).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -879,7 +928,12 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q9: How do you implement the ReAct pattern with streaming?
   </summary>
   <div class="tp-qa-answer">
-    <p>The ReAct pattern (Reasoning + Acting) with streaming provides real-time visibility into the agent's chain-of-thought and actions. The agent alternates between: (1) reasoning — the LLM thinks about the next step, producing text tokens that are streamed to the client; (2) acting — the agent calls a tool with specific arguments, the tool name and arguments are streamed as events; (3) observing — the tool result is streamed back and fed to the LLM for the next reasoning step. Each "thought → action → observation" cycle is a complete ReAct step. Implementation: the LLM is configured to output its reasoning process before tool calls (via system prompt instructions). Each token from the LLM is sent as an SSE event. When the LLM produces a tool call, a <code>tool_call</code> event is sent with the tool name and parameters. After the tool executes, a <code>tool_result</code> event is sent. The cycle repeats until the LLM produces a final answer (no tool call). Streaming the full ReAct trace builds user trust by showing the agent's work and allows early user intervention if the agent goes off track.</p>
+<p>The ReAct pattern (Reasoning + Acting) with streaming provides real-time visibility into the agent's chain-of-thought and actions. The agent alternates between: (1) reasoning — the LLM thinks about the next step,.
+producing text tokens that are streamed to the client; (2) acting — the agent calls a tool with specific arguments, the tool name and.
+arguments are streamed as events; (3) observing — the tool result is streamed back and fed to the LLM for the next reasoning step. Each "thought → action → observation" cycle is a complete ReAct step. Implementation: the LLM is.
+configured to output its reasoning process before tool calls (via system prompt instructions). Each token from the LLM is sent as an SSE event. When the LLM produces a tool call,.
+a <code>tool_call</code> event is sent with the tool name and parameters. After the tool executes, a <code>tool_result</code> event is sent. The cycle repeats until the LLM produces a final answer (no tool call). Streaming the full ReAct trace builds user trust by showing the agent's work and.
+allows early user intervention if the agent goes off track.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -891,7 +945,14 @@ Advanced agent patterns enhance system capabilities beyond basic orchestration. 
     Q10: How do you implement batching for agent operations?
   </summary>
   <div class="tp-qa-answer">
-    <p>Batching for agent operations groups multiple independent operations into a single call, reducing overhead and cost. Types of batching: (1) LLM call batching — some providers support sending multiple prompts in a single API call (OpenAI batch API, which processes requests asynchronously at 50% discount); (2) Embedding batching — embed multiple texts in one API call instead of individual calls; (3) Tool execution batching — if the agent needs to search for multiple items, batch them into a single bulk search call instead of N individual calls; (4) Memory batching — retrieve memories for multiple query aspects in one batch. Implementation: the agent collects pending operations in a batch buffer, then flushes the buffer when it reaches a size threshold or timeout. A <code>BatchManager</code> handles: operation collection, batch formation (group compatible operations), batch dispatch, and result distribution back to the callers. Batching introduces latency (waiting for the buffer to fill) but improves throughput and reduces cost. The batch size and timeout are configurable — trade off between latency and efficiency. Background batch processing is ideal for non-urgent operations like memory consolidation.</p>
+<p>Batching for agent operations groups multiple independent operations into a single call, reducing overhead and cost. Types of batching: (1) LLM call batching — some providers support sending multiple prompts in a single API call (OpenAI batch API,.
+which processes requests asynchronously at 50% discount); (2) Embedding batching — embed multiple texts in one API call instead of individual calls;.
+(3) Tool execution batching — if the agent needs to search for multiple items, batch them into a single bulk search call instead of N individual calls;.
+(4) Memory batching — retrieve memories for multiple query aspects in one batch. Implementation: the agent collects pending operations in a batch buffer,.
+then flushes the buffer when it reaches a size threshold or timeout. A <code>BatchManager</code> handles: operation collection, batch formation (group compatible operations),.
+batch dispatch, and result distribution back to the callers. Batching introduces latency (waiting for the buffer to fill) but improves throughput and.
+reduces cost. The batch size and timeout are configurable — trade off between latency and efficiency. Background batch processing is ideal for.
+non-urgent operations like memory consolidation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

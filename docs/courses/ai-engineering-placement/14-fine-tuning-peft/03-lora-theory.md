@@ -432,7 +432,10 @@ print(f"Initial LoRA output (should be near zero): norm={np.linalg.norm(out):.6f
 
 ## Summary
 
-LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trainable low-rank decomposition matrices B (d—r) and A (r—k) where r ≪ min(d, k). The forward pass becomes h = xW₀ + xBA·α/r. This reduces trainable parameters from d—k to 2—d—r — a 4,096—4,096 layer with r=8 has 65,536 vs 16,777,216 parameters (256— reduction). Rank selection depends on task complexity: r=2-4 for simple tasks, r=8-16 for moderate, r=32-64 for complex. Alpha controls the update magnitude; common practice sets alpha = 2—r to maintain effective scaling of ~2. B is initialized to zero and A to random (e.g., kaiming or gaussian scaled by 0.01), ensuring BA ≈ 0 at initialization so the model starts from the pre-trained weights.
+LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trainable low-rank decomposition matrices B (d—r) and A (r—k) where r ≪ min(d,.
+k). The forward pass becomes h = xW₀ + xBA·α/r. This reduces trainable parameters from d—k to 2—d—r — a 4,096—4,096 layer with r=8 has 65,536 vs 16,777,216 parameters (256— reduction). Rank selection depends on task complexity: r=2-4 for.
+simple tasks, r=8-16 for moderate, r=32-64 for complex. Alpha controls the update magnitude; common practice sets alpha = 2—r to maintain effective scaling of ~2. B is initialized to zero and.
+A to random (e.g., kaiming or gaussian scaled by 0.01), ensuring BA ≈ 0 at initialization so the model starts from the pre-trained weights.
 
 ## Practical Takeaways
 
@@ -452,7 +455,13 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q1: What is low-rank decomposition and how does it apply to LoRA?
   </summary>
   <div class="tp-qa-answer">
-    <p>Low-rank decomposition represents a large matrix as the product of two smaller matrices. For LoRA, the key insight is that the weight update ΔW during fine-tuning has a low "intrinsic rank" — meaning the effective changes to a weight matrix W ∈ ℝ^{d—k} can be captured by a low-rank decomposition ΔW = BA where B ∈ ℝ^{d—r} and A ∈ ℝ^{r—k} with r ≪ min(d, k). Instead of updating all d—k parameters of W, LoRA only trains the parameters in B and A, reducing the number of trainable parameters from d—k to r—(d+k). For example, with d=4096, k=4096, r=8: full rank requires 16.8M parameters, LoRA requires 8—(4096+4096)=65,536 parameters — a 256x reduction. The matrices B and A are initialized so that BA = 0 at the start of training (B is initialized to zero, A to a random Gaussian), ensuring the model starts from the pre-trained weights. During inference, the LoRA weights can be merged into the original W: W' = W + αBA, where α is a scaling factor that controls the contribution.</p>
+<p>Low-rank decomposition represents a large matrix as the product of two smaller matrices. For LoRA, the key insight is that the weight update ΔW during fine-tuning has a low "intrinsic rank" — meaning the effective changes to a weight matrix.
+W ∈ ℝ^{d—k} can be captured by a low-rank decomposition ΔW = BA where B ∈ ℝ^{d—r} and.
+A ∈ ℝ^{r—k} with r ≪ min(d, k). Instead of updating all d—k parameters of W, LoRA only trains the parameters in B and.
+A, reducing the number of trainable parameters from d—k to r—(d+k). For example, with d=4096, k=4096, r=8: full rank requires 16.8M parameters,.
+LoRA requires 8—(4096+4096)=65,536 parameters — a 256x reduction. The matrices B and A are initialized so that BA = 0 at the start of training (B is initialized to zero,.
+A to a random Gaussian), ensuring the model starts from the pre-trained weights. During inference, the LoRA weights can be merged into the original W: W' = W + αBA,.
+where α is a scaling factor that controls the contribution.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -464,7 +473,13 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q2: How does LoRA reduce trainable parameters?
   </summary>
   <div class="tp-qa-answer">
-    <p>LoRA reduces trainable parameters by only updating low-rank adapter matrices inserted into specific layers of the model, rather than the full weight matrices. For a weight matrix W of shape (d, k), instead of training d—k parameters, LoRA trains r—(d+k) parameters where r is the rank (typically 4-64). For example, applied to all query, key, value, and output projection matrices in a 32-layer, 4096-dimensional transformer: full fine-tuning updates ~32—(4—4096²) ≈ 2.1B parameters; LoRA with r=8 updates ~32—4—8—(4096+4096) ≈ 8.4M parameters — a 250x reduction. The rank r is much smaller than both dimensions because the weight update during fine-tuning has low intrinsic rank — the directions of significant change are far fewer than the full parameter space. The reduction is proportional to min(d, k)/r. In practice, LoRA uses 0.1-1% of the full fine-tuning parameters while achieving 90-95% of the quality. The small parameter count also means lower GPU memory requirements (no need to store optimizer states for billions of parameters).</p>
+<p>LoRA reduces trainable parameters by only updating low-rank adapter matrices inserted into specific layers of the model, rather than the full weight matrices. For.
+a weight matrix W of shape (d, k), instead of training d—k parameters, LoRA trains r—(d+k) parameters where r is the rank (typically 4-64). For.
+example, applied to all query, key, value, and output projection matrices in a 32-layer, 4096-dimensional transformer: full fine-tuning updates ~32—(4—4096²) ≈ 2.1B parameters;.
+LoRA with r=8 updates ~32—4—8—(4096+4096) ≈ 8.4M parameters — a 250x reduction. The rank r is much smaller than both dimensions because the weight update during fine-tuning has low intrinsic rank — the directions of significant change are far fewer.
+than the full parameter space. The reduction is proportional to min(d,.
+k)/r. In practice, LoRA uses 0.1-1% of the full fine-tuning parameters while achieving 90-95% of the quality. The small parameter count also means lower GPU memory requirements (no need to store optimizer states for.
+billions of parameters).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -476,7 +491,12 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q3: How do you select the appropriate rank value for LoRA?
   </summary>
   <div class="tp-qa-answer">
-    <p>The rank r determines the expressiveness of the LoRA adapter. Guidelines: (1) r=1-4 — for simple tasks (binary classification, simple extraction) where the adaptation is small; (2) r=8-16 — recommended starting point for most tasks. Balances parameter efficiency and quality, suitable for instruction tuning, summarization, domain adaptation; (3) r=32-64 — for complex tasks (code generation, complex reasoning) where more adaptation capacity is needed; (4) r > 128 — rarely beneficial. LoRA's quality plateaus after a certain rank — increasing r beyond 64 typically yields diminishing returns because the weight update is inherently low-rank. Key considerations: higher r increases trainable parameters linearly (more memory, slower training), r should be proportional to task complexity and dataset size (more data needs more capacity), different layers may need different ranks (attention query/value projections benefit more from higher rank than key projections). The best practice: start with r=8 or r=16, evaluate quality, double the rank if underfitting, halve it if overfitting or if training is too slow.</p>
+<p>The rank r determines the expressiveness of the LoRA adapter. Guidelines: (1) r=1-4 — for simple tasks (binary classification, simple extraction) where the adaptation is small;.
+(2) r=8-16 — recommended starting point for most tasks. Balances parameter efficiency and quality, suitable for instruction tuning, summarization, domain adaptation;.
+(3) r=32-64 — for complex tasks (code generation, complex reasoning) where more adaptation capacity is needed; (4) r > 128 — rarely beneficial. LoRA's quality plateaus after a certain rank — increasing r beyond 64 typically yields diminishing returns because.
+the weight update is inherently low-rank. Key considerations: higher r increases trainable parameters linearly (more memory,.
+slower training), r should be proportional to task complexity and dataset size (more data needs more capacity), different layers may need different ranks (attention query/value projections benefit more from higher rank than key projections). The best practice: start with r=8 or.
+r=16, evaluate quality, double the rank if underfitting, halve it if overfitting or if training is too slow.</p>
     </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -488,7 +508,13 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q4: What is the mathematical formulation behind LoRA scaling and merging?
   </summary>
   <div class="tp-qa-answer">
-    <p>The LoRA forward pass modifies the original computation: h = W₀x + ΔWx = W₀x + BAx, where W₀ is the frozen pre-trained weight, B and A are the trainable low-rank matrices, and x is the input. The scaling factor α controls the contribution: h = W₀x + (α/r) — BAx. The scaling factor α/r normalizes the update by the rank — this makes the learning rate independent of r, so you can change r without re-tuning the learning rate. During training, the model computes the full forward pass with both W₀ (frozen) and BA (trainable). For inference, the LoRA weights can be merged into W₀: W_merged = W₀ + s — BA, where s = α/r. Merging eliminates the LoRA computation overhead — the merged model has the same architecture and inference speed as the original. Merging is done by matrix addition (in-place or to a copy), and the LoRA adapters can be unmerged if you need to switch between adapters for different tasks. The two forward passes (one through W₀, one through BA) mean LoRA has ~10-20% training overhead compared to <1% parameter count would suggest.</p>
+<p>The LoRA forward pass modifies the original computation: h = W₀x + ΔWx = W₀x + BAx, where W₀ is the frozen pre-trained weight,.
+B and A are the trainable low-rank matrices, and x is the input. The scaling factor α controls the contribution: h = W₀x + (α/r) — BAx. The scaling factor.
+α/r normalizes the update by the rank — this makes the learning rate independent of r, so you can change r without re-tuning the learning rate. During training,.
+the model computes the full forward pass with both W₀ (frozen) and BA (trainable). For inference, the LoRA weights can be merged into W₀: W_merged = W₀ + s — BA,.
+where s = α/r. Merging eliminates the LoRA computation overhead — the merged model has the same architecture and inference speed as the original. Merging is done by matrix addition (in-place or.
+to a copy), and the LoRA adapters can be unmerged if you need to switch between adapters for different tasks. The two forward passes (one through W₀,.
+one through BA) mean LoRA has ~10-20% training overhead compared to <1% parameter count would suggest.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -500,7 +526,12 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q5: Why does weight update have low intrinsic rank?
   </summary>
   <div class="tp-qa-answer">
-    <p>The low intrinsic rank hypothesis states that the change in weights during fine-tuning has a much lower effective dimensionality than the full parameter space. Evidence: (1) empirically, training only a small random subspace of the weight update achieves similar quality to full fine-tuning (Li et al., 2018, Aghajanyan et al., 2020); (2) the singular value decomposition (SVD) of the weight difference ΔW between pre-trained and fine-tuned models shows that most of the change is concentrated in the top singular values — the top 10% of singular values capture 90%+ of the Frobenius norm; (3) the gradient during fine-tuning is naturally low-rank because the pre-trained model has already learned the "important directions" — fine-tuning only needs to make small adjustments along a few directions. This means LoRA with r=8-64 captures the vast majority of the meaningful weight update. The intrinsic rank depends on the task — more complex tasks need higher rank. This property is what makes PEFT methods work: you only need to update parameters along the directions that matter most for the new task, not all directions.</p>
+<p>The low intrinsic rank hypothesis states that the change in weights during fine-tuning has a much lower effective dimensionality than the full parameter space. Evidence: (1) empirically,.
+training only a small random subspace of the weight update achieves similar quality to full fine-tuning (Li et al., 2018, Aghajanyan et al.,.
+2020); (2) the singular value decomposition (SVD) of the weight difference ΔW between pre-trained and fine-tuned models shows that most of the change is concentrated in the top singular values — the top 10% of singular values capture 90%+ of the Frobenius norm;.
+(3) the gradient during fine-tuning is naturally low-rank because the pre-trained model has already learned the "important directions" — fine-tuning only needs to make small adjustments along a few directions. This means LoRA with r=8-64 captures the vast majority of.
+the meaningful weight update. The intrinsic rank depends on the task — more complex tasks need higher rank. This property is what makes PEFT methods work: you only need to update parameters along the directions that matter most for.
+the new task, not all directions.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -512,7 +543,13 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q6: Which layers should you apply LoRA to?
   </summary>
   <div class="tp-qa-answer">
-    <p>LoRA is typically applied to the attention projection matrices in transformer models: query (Q), key (K), value (V), and output (O) projections. The optimal choice depends on the task: (1) Q and V — the most common and effective combination for most tasks, providing a good balance of quality and parameter count; (2) all of Q, K, V, O — highest quality but doubles the parameter count vs. Q+V only; (3) Q only — minimal parameter count, sufficient for simple tasks; (4) feed-forward layers — useful for tasks requiring significant knowledge adaptation (domain-specific factual knowledge). Empirical findings: V projections capture most task-specific information ("what to output"), Q projections capture attention patterns ("where to look"), K projections benefit less from LoRA. For a 7B model with hidden_size=4096, applying LoRA to Q+V requires ~2—33—8—(4096+4096) ≈ 4.3M parameters at r=8. Adding K and O doubles to 8.6M. The best practice is to apply LoRA to at least Q and V for each attention layer, and experiment with adding K and O for complex tasks.</p>
+<p>LoRA is typically applied to the attention projection matrices in transformer models: query (Q), key (K), value (V), and output (O) projections. The optimal choice depends on the task: (1) Q and.
+V — the most common and effective combination for most tasks, providing a good balance of quality and parameter count; (2) all of Q,.
+K, V, O — highest quality but doubles the parameter count vs. Q+V only; (3) Q only — minimal parameter count,.
+sufficient for simple tasks; (4) feed-forward layers — useful for tasks requiring significant knowledge adaptation (domain-specific factual knowledge). Empirical findings: V projections capture most task-specific information ("what to output"),.
+Q projections capture attention patterns ("where to look"), K projections benefit less from LoRA. For a 7B model with hidden_size=4096, applying LoRA to Q+V requires ~2—33—8—(4096+4096) ≈ 4.3M parameters at r=8. Adding K and.
+O doubles to 8.6M. The best practice is to apply LoRA to at least Q and V for each attention layer,.
+and experiment with adding K and O for complex tasks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -524,7 +561,13 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q7: What is the alpha parameter in LoRA and how does it relate to rank?
   </summary>
   <div class="tp-qa-answer">
-    <p>The alpha (α) parameter in LoRA controls the contribution of the LoRA update to the base model. The forward pass becomes: h = W₀x + (α/r) — BAx. The ratio α/r acts as a scaling factor. Common values: (1) α=16 with r=8 (ratio=2), α=32 with r=16 (ratio=2), maintaining a consistent ratio. The ratio α/r is often set to 1 or 2 by default; (2) α=8 with r=16 (ratio=0.5), reducing LoRA's contribution relative to the base model — useful when you want a smaller update; (3) α=64 with r=8 (ratio=8), increasing LoRA's contribution — useful for aggressive adaptation. The key insight is that α/r decouples the learning rate from the rank — you can change r and adjust α proportionally without re-tuning the learning rate. If α is too low, the LoRA update won't have enough influence; if α is too high, the base model's knowledge may be overwritten. The standard practice is α=16 with r=8 as a starting point, then tune α if the output quality isn't satisfactory. During inference merge, α is absorbed into the merged weights.</p>
+<p>The alpha (α) parameter in LoRA controls the contribution of the LoRA update to the base model. The forward pass becomes: h = W₀x + (α/r) — BAx. The ratio α/r acts as a scaling factor. Common values: (1) α=16 with r=8 (ratio=2),.
+α=32 with r=16 (ratio=2), maintaining a consistent ratio. The ratio α/r is often set to 1 or 2 by default; (2) α=8 with r=16 (ratio=0.5),.
+reducing LoRA's contribution relative to the base model — useful when you want a smaller update; (3) α=64 with r=8 (ratio=8),.
+increasing LoRA's contribution — useful for aggressive adaptation. The key insight is that α/r decouples the learning rate from the rank — you can change r and.
+adjust α proportionally without re-tuning the learning rate. If α is too low, the LoRA update won't have enough influence; if α is too high,.
+the base model's knowledge may be overwritten. The standard practice is α=16 with r=8 as a starting point, then tune α if the output quality isn't satisfactory. During inference merge,.
+α is absorbed into the merged weights.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -536,7 +579,12 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q8: How does LoRA initialization work?
   </summary>
   <div class="tp-qa-answer">
-    <p>LoRA initialization sets the adapter matrices so that the model starts from the pre-trained weights with zero modification. The standard initialization: (1) matrix A is initialized with a random Gaussian distribution (mean=0, standard deviation σ = 1/√r) — this ensures the gradients are properly scaled at the start; (2) matrix B is initialized to all zeros — this ensures BA=0 at initialization, so the model output is identical to the pre-trained model; (3) the zero initialization of B means the forward pass initially computes h = W₀x + 0—Ax = W₀x, which is the original model output. As training progresses, B learns non-zero values and the LoRA contribution activates. The gradient flow: since B is zero, the gradient flows through B during the first backward pass (B starts learning immediately), while A's gradients flow through the non-zero A initialization. This initialization scheme ensures the training starts from the pre-trained model and smoothly adds the task-specific adaptation without any initial perturbation. The scaling factor σ = 1/√r for A's initialization ensures the variance of the output doesn't change with rank.</p>
+<p>LoRA initialization sets the adapter matrices so that the model starts from the pre-trained weights with zero modification. The standard initialization: (1) matrix A is initialized with a random Gaussian distribution (mean=0,.
+standard deviation σ = 1/√r) — this ensures the gradients are properly scaled at the start; (2) matrix B is initialized to all zeros — this ensures BA=0 at initialization,.
+so the model output is identical to the pre-trained model; (3) the zero initialization of B means the forward pass initially computes h = W₀x + 0—Ax = W₀x,.
+which is the original model output. As training progresses, B learns non-zero values and the LoRA contribution activates. The gradient flow: since B is zero,.
+the gradient flows through B during the first backward pass (B starts learning immediately), while A's gradients flow through the non-zero A initialization. This initialization scheme ensures the training starts from the pre-trained model and.
+smoothly adds the task-specific adaptation without any initial perturbation. The scaling factor σ = 1/√r for A's initialization ensures the variance of the output doesn't change with rank.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -548,7 +596,13 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q9: How does LoRA compare to other PEFT methods?
   </summary>
   <div class="tp-qa-answer">
-    <p>Popular PEFT methods compared to LoRA: (1) Adapters — insert small bottleneck layers between transformer layers. LoRA is more parameter-efficient (adapters insert new parameters, LoRA factorizes existing weights) and has no inference overhead when merged; (2) Prefix Tuning — prepends learnable virtual tokens to the input. Less flexible than LoRA, doesn't modify weights, struggles with maintaining prefix positions in generated sequences; (3) Prompt Tuning — similar to prefix tuning but only learns input embeddings. Less expressive than LoRA but simpler; (4) IA3 (Infused Adapter by Inhibiting and Amplifying Inner Activations) — learns element-wise scaling vectors for attention and MLP layers. Fewer parameters than LoRA but can be less stable; (5) (IA)³ — further simplifies with learned rescaling. LoRA is preferred for: consistent quality across tasks, no inference latency when merged (unlike adapters and prefix tuning), compatibility with quantization (QLoRA), wide support in HuggingFace PEFT library, and strong empirical results. LoRA's main disadvantage is slightly higher training memory than pure prompt tuning (need to compute gradients for the full model's forward pass).</p>
+<p>Popular PEFT methods compared to LoRA: (1) Adapters — insert small bottleneck layers between transformer layers. LoRA is more parameter-efficient (adapters insert new parameters,.
+LoRA factorizes existing weights) and has no inference overhead when merged; (2) Prefix Tuning — prepends learnable virtual tokens to the input. Less flexible than LoRA,.
+doesn't modify weights, struggles with maintaining prefix positions in generated sequences; (3) Prompt Tuning — similar to prefix tuning but only learns input embeddings. Less expressive than LoRA but.
+simpler; (4) IA3 (Infused Adapter by Inhibiting and Amplifying Inner Activations) — learns element-wise scaling vectors for attention and MLP layers. Fewer parameters than LoRA but.
+can be less stable; (5) (IA)³ — further simplifies with learned rescaling. LoRA is preferred for: consistent quality across tasks, no inference latency when merged (unlike adapters and.
+prefix tuning), compatibility with quantization (QLoRA), wide support in HuggingFace PEFT library, and strong empirical results. LoRA's main disadvantage is slightly higher training memory than pure prompt tuning (need to compute gradients for.
+the full model's forward pass).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -560,7 +614,14 @@ LoRA (Low-Rank Adaptation) freezes the pre-trained weights W₀ and injects trai
     Q10: What are the limitations of LoRA?
   </summary>
   <div class="tp-qa-answer">
-    <p>Key limitations of LoRA: (1) Expressiveness — with very low rank (r=1-2), LoRA may not capture complex adaptations. If the true weight update requires high-rank changes, LoRA with small r will underperform; (2) Layer specialization — applying the same rank to all layers may be suboptimal; some layers need higher capacity than others. AutoLoRA and AdaLoRA address this by learning layer-specific ranks; (3) Quantization interaction — though QLoRA works well, very low precision (2-bit) combined with LoRA can degrade quality; (4) Multi-task adaptation — using the same LoRA for multiple tasks can conflict. Solutions include task-specific routing (MoRA) or orthogonal adaptation (O-LoRA); (5) Training overhead — despite small parameter count, LoRA still requires the full forward pass through all pre-trained weights (which are frozen but still computed), so training is ~30% faster than full fine-tuning, not 99% as parameter reduction suggests; (6) Memory during training — while optimizer states are small, activations for the full model still need to be stored for backward pass (though this can be reduced with gradient checkpointing). Despite these limitations, LoRA is the most widely used PEFT method due to its simplicity and strong empirical performance.</p>
+<p>Key limitations of LoRA: (1) Expressiveness — with very low rank (r=1-2), LoRA may not capture complex adaptations. If the true weight update requires high-rank changes,.
+LoRA with small r will underperform; (2) Layer specialization — applying the same rank to all layers may be suboptimal; some layers need higher capacity than others. AutoLoRA and.
+AdaLoRA address this by learning layer-specific ranks; (3) Quantization interaction — though QLoRA works well, very low precision (2-bit) combined with LoRA can degrade quality;.
+(4) Multi-task adaptation — using the same LoRA for multiple tasks can conflict. Solutions include task-specific routing (MoRA) or orthogonal adaptation (O-LoRA);.
+(5) Training overhead — despite small parameter count, LoRA still requires the full forward pass through all pre-trained weights (which are frozen but.
+still computed), so training is ~30% faster than full fine-tuning, not 99% as parameter reduction suggests; (6) Memory during training — while optimizer states are small,.
+activations for the full model still need to be stored for backward pass (though this can be reduced with gradient checkpointing). Despite these limitations,.
+LoRA is the most widely used PEFT method due to its simplicity and strong empirical performance.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

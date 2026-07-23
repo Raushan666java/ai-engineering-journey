@@ -806,7 +806,8 @@ class ActiveToolSelector {
 
 ## Summary
 
-MCP is the emerging standard for agent-tool communication. The three primitives — tools (actions), resources (data), prompts (templates) — cover all agent needs. Tool design follows three patterns (perception, execution, collaboration) with distinct safety requirements. Event-driven architectures enable non-blocking, interruptible agent operation. Active tool selection optimizes cost and latency by choosing tools dynamically based on task requirements.
+MCP is the emerging standard for agent-tool communication. The three primitives — tools (actions), resources (data), prompts (templates) — cover all agent needs. Tool design follows three patterns (perception,.
+execution, collaboration) with distinct safety requirements. Event-driven architectures enable non-blocking, interruptible agent operation. Active tool selection optimizes cost and latency by choosing tools dynamically based on task requirements.
 
 ## Practical Takeaways
 

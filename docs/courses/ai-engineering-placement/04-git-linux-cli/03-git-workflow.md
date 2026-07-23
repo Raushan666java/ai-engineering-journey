@@ -617,7 +617,8 @@ git checkout HEAD@{1}      # if dropped but in reflog
     Q2: How does git bisect work and when is it most useful?
   </summary>
   <div class="tp-qa-answer">
-    <p>Git bisect performs binary search through commit history. You provide a known "good" and "bad" commit, and Git checks out the middle commit. You test it and mark it good/bad. Git halves the search space each time, finding the exact bug-introducing commit in O(log n) steps. It's invaluable when you can't pinpoint which of hundreds of commits broke something.</p><pre><code>git bisect start
+<p>Git bisect performs binary search through commit history. You provide a known "good" and "bad" commit, and Git checks out the middle commit. You test it and.
+mark it good/bad. Git halves the search space each time, finding the exact bug-introducing commit in O(log n) steps. It's invaluable when you can't pinpoint which of hundreds of commits broke something.</p><pre><code>git bisect start
 git bisect bad HEAD
 git bisect good v1.0
 git bisect run npm test</code></pre>
@@ -632,7 +633,8 @@ git bisect run npm test</code></pre>
     Q3: Explain git reflog and give a scenario where it saves you.
   </summary>
   <div class="tp-qa-answer">
-    <p>Reflog is a log of every reference update in the repo — every commit checkout, branch move, rebase, or reset. It's your safety net. Scenario: you accidentally run <code>git reset --hard HEAD~3</code> and lose 3 commits. <code>git reflog</code> shows the previous HEAD position. You run <code>git reset --hard HEAD@{1}</code> and all commits are restored. Reflog entries expire after 90 days.</p>
+<p>Reflog is a log of every reference update in the repo — every commit checkout, branch move, rebase, or reset. It's your safety net. Scenario: you accidentally run <code>git reset --hard HEAD~3</code> and.
+lose 3 commits. <code>git reflog</code> shows the previous HEAD position. You run <code>git reset --hard HEAD@{1}</code> and all commits are restored. Reflog entries expire after 90 days.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -644,7 +646,9 @@ git bisect run npm test</code></pre>
     Q4: What are git submodules and what problems do they solve?
   </summary>
   <div class="tp-qa-answer">
-    <p>Submodules let you include one Git repository inside another as a subdirectory. They solve the problem of depending on external code without copying it. Use cases: shared libraries across multiple projects, vendor dependencies, monorepo components. Main challenges: teammates must remember to run <code>git submodule update --init</code> after cloning, and submodules point to specific commits, so updates require explicit <code>--remote</code> fetches.</p>
+<p>Submodules let you include one Git repository inside another as a subdirectory. They solve the problem of depending on external code without copying it. Use cases: shared libraries across multiple projects,.
+vendor dependencies, monorepo components. Main challenges: teammates must remember to run <code>git submodule update --init</code> after cloning, and submodules point to specific commits,.
+so updates require explicit <code>--remote</code> fetches.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>

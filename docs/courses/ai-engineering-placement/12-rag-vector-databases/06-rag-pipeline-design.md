@@ -883,7 +883,10 @@ print("Observable pipeline with metrics tracking ready")
 
 ## Summary
 
-A well-designed RAG pipeline consists of modular, independently testable stages: ingestion (load, chunk, embed, index), retrieval (query processing, search, filtering), augmentation (context formatting, instruction design, context selection), and generation (model call, validation, output formatting). Augmentation strategies include context position (prepend, sandwich, append), instruction style (strict, moderate, creative, citation), and dynamic context selection based on relevance threshold and token budget. Multi-turn RAG requires conversation history management, context injection with history, and re-query triggering when retrieval scores are low. Production pipelines incorporate observability with per-stage timing, error tracking, and chunk count monitoring.
+A well-designed RAG pipeline consists of modular, independently testable stages: ingestion (load, chunk, embed, index), retrieval (query processing, search, filtering), augmentation (context formatting,.
+instruction design, context selection), and generation (model call, validation, output formatting). Augmentation strategies include context position (prepend, sandwich, append), instruction style (strict,.
+moderate, creative, citation), and dynamic context selection based on relevance threshold and token budget. Multi-turn RAG requires conversation history management, context injection with history,.
+and re-query triggering when retrieval scores are low. Production pipelines incorporate observability with per-stage timing, error tracking, and chunk count monitoring.
 
 ## Practical Takeaways
 
@@ -925,7 +928,10 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q2: What augmentation strategies (context position) work best for different types of LLMs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Prepending context before the question works best for most instruction-tuned LLMs (GPT-4o, Claude, Llama 3) because these models are trained to follow instructions at the start of the prompt. The sandwich strategy (context → question → "remember to use context") reinforces grounding for models that exhibit recency bias. For models with strong instruction-following (GPT-4o), simple prepend with a clear instruction suffices. For smaller or less capable models, use the sandwich strategy with explicit repetition. For code-generation LLMs, append context after the query to match their training data format. The key is to test your specific model — the optimal position can vary by model family and task type.</p>
+<p>Prepending context before the question works best for most instruction-tuned LLMs (GPT-4o, Claude, Llama 3) because these models are trained to follow instructions at the start of the prompt. The sandwich strategy (context → question → "remember to use context") reinforces grounding for.
+models that exhibit recency bias. For models with strong instruction-following (GPT-4o), simple prepend with a clear instruction suffices. For smaller or.
+less capable models, use the sandwich strategy with explicit repetition. For code-generation LLMs, append context after the query to match their training data format. The key is to test your specific model — the optimal position can vary by model family and.
+task type.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -937,7 +943,10 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q3: How do you handle multi-turn conversations in RAG (follow-up questions)?
   </summary>
   <div class="tp-qa-answer">
-    <p>Multi-turn RAG requires a ConversationManager that stores query-response history with a conversation_id. For follow-up questions, retrieve from the same knowledge base but also inject conversation history into the prompt context. Key design decisions: how much history to include (last N turns or up to M tokens), whether to re-retrieve for each turn, and how to disambiguate pronouns (e.g., "What about its cost?" needs context from the previous turn). Implement a QueryProcessor that rewrites short queries by prepending context from the last user message:</p>
+<p>Multi-turn RAG requires a ConversationManager that stores query-response history with a conversation_id. For follow-up questions, retrieve from the same knowledge base but.
+also inject conversation history into the prompt context. Key design decisions: how much history to include (last N turns or up to M tokens),.
+whether to re-retrieve for each turn, and how to disambiguate pronouns (e.g., "What about its cost?" needs context from the previous turn). Implement a QueryProcessor.
+that rewrites short queries by prepending context from the last user message:</p>
     <pre><code>def rewrite_query(self, query, history):
     if len(query.split()) < 3 and not self.share_terms(query, history):
         return f"{self.last_user_query(history)} {query}"</code></pre>
@@ -952,7 +961,10 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q4: How do you design a re-query trigger when retrieval quality is poor?
   </summary>
   <div class="tp-qa-answer">
-    <p>Implement a ReQueryDecider that checks if the average retrieval score falls below a threshold (e.g., 0.3) or if the number of returned chunks is too few. When triggered, reformulate the query by appending discovered topic terms, using an LLM to generate a better search query, or expanding with synonyms. Set a maximum number of re-query attempts (2-3) to avoid infinite loops. After exhausting attempts, gracefully degrade: either skip retrieval and let the LLM use its internal knowledge (with an accuracy caveat) or return a pre-crafted "insufficient information" response. Log all re-query events to identify patterns of poor retrieval for knowledge base improvement.</p>
+<p>Implement a ReQueryDecider that checks if the average retrieval score falls below a threshold (e.g., 0.3) or if the number of returned chunks is too few. When triggered,.
+reformulate the query by appending discovered topic terms, using an LLM to generate a better search query, or expanding with synonyms. Set a maximum number of re-query attempts (2-3) to avoid infinite loops. After exhausting attempts,.
+gracefully degrade: either skip retrieval and let the LLM use its internal knowledge (with an accuracy caveat) or return a pre-crafted "insufficient information" response. Log all re-query events to identify patterns of poor.
+retrieval for knowledge base improvement.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -964,7 +976,10 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q5: How do you implement observability in a RAG pipeline to track per-stage latency?
   </summary>
   <div class="tp-qa-answer">
-    <p>Wrap each pipeline stage with timing instrumentation that records duration, success/failure, and output metadata. Use an ObservableRAGPipeline that extends the base pipeline with a PipelineMetrics collector. Track: retrieval latency, augmentation latency, generation latency, number of chunks retrieved, total token count, and error count. Export these metrics via structured logging (JSON lines) to a monitoring system (Datadog, Grafana, CloudWatch). Key dashboards: p50/p95/p99 latency by stage, error rate by stage, chunk count distribution, and daily cost. Set alerts when p95 latency exceeds 2x the baseline or error rate exceeds 1%.</p>
+<p>Wrap each pipeline stage with timing instrumentation that records duration, success/failure, and output metadata. Use an ObservableRAGPipeline that extends the base pipeline with a PipelineMetrics collector. Track: retrieval latency,.
+augmentation latency, generation latency, number of chunks retrieved, total token count, and error count. Export these metrics via structured logging (JSON lines) to a monitoring system (Datadog,.
+Grafana, CloudWatch). Key dashboards: p50/p95/p99 latency by stage, error rate by stage, chunk count distribution, and daily cost. Set alerts when p95 latency exceeds 2x the baseline or.
+error rate exceeds 1%.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -976,7 +991,10 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q6: What is dynamic context selection and how does it improve generation quality?
   </summary>
   <div class="tp-qa-answer">
-    <p>Dynamic context selection retrieves more chunks than the final context budget and then selects only the most relevant ones based on relevance score threshold, token budget, and diversity constraints. For example, retrieve top-10 but select only top-5 that are above 0.5 relevance and have no near-duplicate content. This improves generation quality by: removing irrelevant chunks that could distract the LLM, avoiding token budget overflow, and preventing duplicate information from consuming context space. Implement a DynamicContextSelector that sorts by score, filters by threshold, prunes near-duplicates (cosine similarity > 0.9), and stops when the token budget is exhausted. This typically improves faithfulness by 5-15%.</p>
+<p>Dynamic context selection retrieves more chunks than the final context budget and then selects only the most relevant ones based on relevance score threshold,.
+token budget, and diversity constraints. For example, retrieve top-10 but select only top-5 that are above 0.5 relevance and have no near-duplicate content. This improves generation quality by: removing irrelevant chunks that could distract the LLM,.
+avoiding token budget overflow, and preventing duplicate information from consuming context space. Implement a DynamicContextSelector that sorts by score, filters by threshold,.
+prunes near-duplicates (cosine similarity > 0.9), and stops when the token budget is exhausted. This typically improves faithfulness by 5-15%.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -988,7 +1006,9 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q7: How do you handle output validation in the generation stage?
   </summary>
   <div class="tp-qa-answer">
-    <p>Implement a ValidatedGenerator that wraps the base generator with a validation function. Validate that the response is not empty, does not contain obvious hallucinations (claims not in context), and meets length requirements. If validation fails, retry with an augmented prompt that includes the validation error message. Set a maximum retry count (2-3). For structure-sensitive tasks (JSON, code), validate the output format and request regeneration if invalid. For example:</p>
+<p>Implement a ValidatedGenerator that wraps the base generator with a validation function. Validate that the response is not empty, does not contain obvious hallucinations (claims not in context),.
+and meets length requirements. If validation fails, retry with an augmented prompt that includes the validation error message. Set a maximum retry count (2-3). For.
+structure-sensitive tasks (JSON, code), validate the output format and request regeneration if invalid. For example:</p>
     <pre><code>def validate_response(response):
     if len(response) < 10: return False, "Response too short"
     if contains_unverified_claims(response, context): return False, "Unsupported claims"
@@ -1005,7 +1025,10 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q8: How do you design the ingestion pipeline to handle large-scale document processing?
   </summary>
   <div class="tp-qa-answer">
-    <p>Design an IngestionPipeline with batch processing: load documents in batches (100-1000), chunk them, generate embeddings (batched for efficiency), and insert into the vector store. Track progress with counters for documents, chunks, and errors. Handle failures gracefully — log errors for individual documents but continue processing the batch. For very large corpora (millions of documents), use a distributed processing framework (Apache Spark, Ray) with parallel workers. Implement checkpointing so ingestion can resume from failure. After initial ingestion, support incremental updates — index only new or modified documents since the last sync timestamp.</p>
+<p>Design an IngestionPipeline with batch processing: load documents in batches (100-1000), chunk them, generate embeddings (batched for efficiency), and insert into the vector.
+store. Track progress with counters for documents, chunks, and errors. Handle failures gracefully — log errors for individual documents but continue processing the batch. For.
+very large corpora (millions of documents), use a distributed processing framework (Apache Spark, Ray) with parallel workers. Implement checkpointing so ingestion can resume from failure. After initial ingestion,.
+support incremental updates — index only new or modified documents since the last sync timestamp.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1017,7 +1040,10 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q9: What instruction styles work best for RAG augmentation and when would you use each?
   </summary>
   <div class="tp-qa-answer">
-    <p>Four common styles: Strict ("Answer ONLY from context. Say you don't know if insufficient.") for factual Q&A where hallucination is unacceptable. Moderate ("Base answer on context, supplement with knowledge if needed.") for customer support where some flexibility helps. Citation ("Cite sources using [1], [2] matching context numbers.") for research and legal where source attribution is required. Creative ("Use context as inspiration, don't contradict it.") for content generation where creativity is valued. Choose strict for high-stakes domains (medical, legal, financial), citation for academic/research use cases, and moderate for general-purpose chatbots where a helpful tone matters more than strict grounding.</p>
+<p>Four common styles: Strict ("Answer ONLY from context. Say you don't know if insufficient.") for factual Q&A where hallucination is unacceptable. Moderate ("Base answer on context,.
+supplement with knowledge if needed.") for customer support where some flexibility helps. Citation ("Cite sources using [1], [2] matching context numbers.") for.
+research and legal where source attribution is required. Creative ("Use context as inspiration, don't contradict it.") for content generation where creativity is valued. Choose strict for.
+high-stakes domains (medical, legal, financial), citation for academic/research use cases, and moderate for general-purpose chatbots where a helpful tone matters more than strict grounding.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1029,7 +1055,11 @@ A well-designed RAG pipeline consists of modular, independently testable stages:
     Q10: How do you handle the token budget across retrieval and generation in a RAG pipeline?
   </summary>
   <div class="tp-qa-answer">
-    <p>Set a total token budget (e.g., 4000 tokens for a 4096-token window) and allocate across system prompt (200), augmentation instruction (100), retrieved context (3000), conversation history (500), and query (200). At retrieval time, select only as many chunks as fit within the context budget — if each chunk is 500 tokens, retrieve and select at most 6 chunks. Use a DynamicContextSelector that measures chunk tokens and stops adding when the budget is exceeded. Truncate long chunks to fit, prioritizing the beginning of each chunk (most LLMs use head more effectively). If history + context exceed budget, trim history first (oldest turns removed), then truncate context.</p>
+<p>Set a total token budget (e.g., 4000 tokens for a 4096-token window) and allocate across system prompt (200), augmentation instruction (100),.
+retrieved context (3000), conversation history (500), and query (200). At retrieval time, select only as many chunks as fit within the context budget — if each chunk is 500 tokens,.
+retrieve and select at most 6 chunks. Use a DynamicContextSelector that measures chunk tokens and stops adding when the budget is exceeded. Truncate long chunks to fit,.
+prioritizing the beginning of each chunk (most LLMs use head more effectively). If history + context exceed budget, trim history first (oldest turns removed),.
+then truncate context.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

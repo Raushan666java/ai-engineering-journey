@@ -525,7 +525,8 @@ console.log(except(productsA, productsB));       // [1, 2, 3]
 
 <details class="tp-qa-card" data-qid="sql-s06-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: UNION vs UNION ALL?</summary>
-  <div class="tp-qa-answer"><p>UNION removes duplicate rows by sorting or hashing the combined result. UNION ALL keeps all rows, including duplicates. UNION ALL is faster because it avoids the deduplication step. Use UNION when duplicates matter; use UNION ALL when you know there are no duplicates or don't care.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>UNION removes duplicate rows by sorting or hashing the combined result. UNION ALL keeps all rows, including duplicates. UNION ALL is faster because it avoids the deduplication step. Use UNION when duplicates matter;.
+use UNION ALL when you know there are no duplicates or don't care.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s06-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: What are the rules for set operations?</summary>

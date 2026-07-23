@@ -598,7 +598,11 @@ print(f"IQR detection: {sad.iqr_detection('latency', 500)}")
 
 ## Summary
 
-Tracing captures the full execution path of an LLM request through spans (individual operations) organized in a trace tree. Key latency metrics are P50 (median), P95 (typical worst case), and P99 (extreme outliers). Throughput tracks requests per second/minute, and cost tracking breaks down spending by component (LLM, embeddings, search). Dashboards aggregate these metrics into real-time views with alert rules triggered by threshold violations. Anomaly detection uses baselines (mean/std over a window), IQR (interquartile range), or moving average Z-scores to flag unusual behavior. A robust monitoring stack catches P99 latency spikes, cost surges, throughput drops, and anomalous token usage patterns before they impact users.
+Tracing captures the full execution path of an LLM request through spans (individual operations) organized in a trace tree. Key latency metrics are P50 (median),.
+P95 (typical worst case), and P99 (extreme outliers). Throughput tracks requests per second/minute, and cost tracking breaks down spending by component (LLM,.
+embeddings, search). Dashboards aggregate these metrics into real-time views with alert rules triggered by threshold violations. Anomaly detection uses baselines (mean/std over a window),.
+IQR (interquartile range), or moving average Z-scores to flag unusual behavior. A robust monitoring stack catches P99 latency spikes, cost surges,.
+throughput drops, and anomalous token usage patterns before they impact users.
 
 ## Practical Takeaways
 
@@ -619,7 +623,11 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q1: What is distributed tracing and how does it apply to LLM applications?
   </summary>
   <div class="tp-qa-answer">
-    <p>Distributed tracing follows a single request across all components in a distributed system. In an LLM application, a single user request might go through: API gateway → orchestrator → vector database → LLM provider → output validator → response. Each step is captured as a span with timing, status, and metadata, linked together by a shared trace ID. This allows developers to identify bottlenecks — for example, if P95 latency is high, tracing reveals whether the bottleneck is in vector search (slow embedding), LLM inference (large model), or post-processing (regex/parsing). Modern tracing follows the OpenTelemetry standard for interoperability across platforms.</p>
+<p>Distributed tracing follows a single request across all components in a distributed system. In an LLM application, a single user request might go through: API gateway → orchestrator.
+→ vector database → LLM provider → output validator → response. Each step is captured as a span with timing, status,.
+and metadata, linked together by a shared trace ID. This allows developers to identify bottlenecks — for example, if P95 latency is high,.
+tracing reveals whether the bottleneck is in vector search (slow embedding), LLM inference (large model), or post-processing (regex/parsing). Modern tracing follows the OpenTelemetry standard for.
+interoperability across platforms.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -631,7 +639,10 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q2: What is the difference between P50, P95, and P99 latency, and which should you monitor?
   </summary>
   <div class="tp-qa-answer">
-    <p>P50 (median) is the latency below which 50% of requests fall — it represents typical performance. P95 is the latency below which 95% of requests fall — it represents the typical worst case. P99 is the latency below which 99% of requests fall — it captures extreme outliers. You should monitor all three because they tell different stories: a low P50 with high P99 indicates that most requests are fast but a small fraction are very slow (possibly due to cache misses or large inputs). For LLM applications, P95 is the most commonly used SLA metric because it captures the worst-case experience for the majority of users while ignoring the rarest outliers.</p>
+<p>P50 (median) is the latency below which 50% of requests fall — it represents typical performance. P95 is the latency below which 95% of requests fall — it represents the typical worst case. P99 is the latency below which 99%.
+of requests fall — it captures extreme outliers. You should monitor.
+all three because they tell different stories: a low P50 with high P99 indicates that most requests are fast but a small fraction are very slow (possibly due to cache misses or.
+large inputs). For LLM applications, P95 is the most commonly used SLA metric because it captures the worst-case experience for the majority of users while ignoring the rarest outliers.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -643,7 +654,10 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q3: How do you implement cost tracking per LLM request in a tracing system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Cost tracking at the individual request level requires: (1) Capturing token counts (prompt tokens, completion tokens) from the LLM provider's response. (2) Applying the provider's pricing formula — e.g., GPT-4 costs $10/1M input tokens and $30/1M output tokens. (3) Calculating cost per request: cost = (prompt_tokens — input_price + completion_tokens — output_price) / 1,000,000. (4) Aggregating costs across spans to get total request cost (including embedding costs, vector search costs). (5) Tagging costs with tenant_id, model_name, and endpoint for per-tenant billing. Store cost per trace in the observability system and create dashboards for cost trends over time.</p>
+<p>Cost tracking at the individual request level requires: (1) Capturing token counts (prompt tokens, completion tokens) from the LLM provider's response. (2) Applying the provider's pricing formula — e.g.,.
+GPT-4 costs $10/1M input tokens and $30/1M output tokens. (3) Calculating cost per request: cost = (prompt_tokens — input_price + completion_tokens — output_price) / 1,000,000. (4) Aggregating costs across spans to get total request cost (including embedding costs,.
+vector search costs). (5) Tagging costs with tenant_id, model_name, and endpoint for per-tenant billing. Store cost per trace in the observability system and.
+create dashboards for cost trends over time.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -655,7 +669,11 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q4: How do you detect anomalies in LLM latency using statistical methods?
   </summary>
   <div class="tp-qa-answer">
-    <p>Anomaly detection methods for latency: (1) Moving average Z-score — compute rolling mean and standard deviation over a window (e.g., 10 minutes), flag any data point where |z-score| > 3. (2) IQR method — flag values below Q1 - 1.5—IQR or above Q3 + 1.5—IQR. (3) Seasonal decomposition — separate trend, seasonal, and residual components, flag anomalous residuals. (4) Dynamic thresholding — set thresholds automatically from recent history (e.g., threshold = rolling mean + 3—rolling std). For LLM applications, anomalies might indicate degraded LLM provider performance, network issues, or unusually long inputs. Always combine multiple detectors and require sustained anomalies (e.g., 3 consecutive minutes above threshold) before alerting.</p>
+<p>Anomaly detection methods for latency: (1) Moving average Z-score — compute rolling mean and standard deviation over a window (e.g., 10 minutes),.
+flag any data point where |z-score| > 3. (2) IQR method — flag values below Q1 - 1.5—IQR or above Q3 + 1.5—IQR. (3) Seasonal decomposition — separate trend,.
+seasonal, and residual components, flag anomalous residuals. (4) Dynamic thresholding — set thresholds automatically from recent history (e.g., threshold = rolling mean + 3—rolling std). For.
+LLM applications, anomalies might indicate degraded LLM provider performance, network issues, or unusually long inputs. Always combine multiple detectors and require sustained anomalies (e.g.,.
+3 consecutive minutes above threshold) before alerting.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -667,7 +685,10 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q5: What metrics should you include on an LLM application monitoring dashboard?
   </summary>
   <div class="tp-qa-answer">
-    <p>A comprehensive LLM monitoring dashboard should include: (1) Latency panel — line chart showing P50, P95, P99 over time. (2) Throughput panel — requests per minute/second with breakdown by endpoint. (3) Cost panel — cost per hour/day with breakdown by model and tenant. (4) Error rate panel — percentage of failed requests by error type (timeout, rate limit, invalid response). (5) Token usage panel — total tokens per minute, average tokens per request. (6) Model distribution — pie chart of requests per model version. (7) Top slow queries — table of longest-running requests. (8) Quality score trend — if using LLM-as-Judge, overlay quality scores on the same timeline.</p>
+<p>A comprehensive LLM monitoring dashboard should include: (1) Latency panel — line chart showing P50, P95, P99 over time. (2) Throughput panel — requests per minute/second with breakdown by endpoint. (3) Cost panel — cost per hour/day with breakdown by model and.
+tenant. (4) Error rate panel — percentage of failed requests by error type (timeout, rate limit, invalid response). (5) Token usage panel — total tokens per minute,.
+average tokens per request. (6) Model distribution — pie chart of requests per model version. (7) Top slow queries — table of longest-running requests. (8) Quality score trend — if using LLM-as-Judge,.
+overlay quality scores on the same timeline.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -679,7 +700,10 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q6: How do you propagate trace context across synchronous and asynchronous LLM calls?
   </summary>
   <div class="tp-qa-answer">
-    <p>Trace context propagation uses the W3C Trace Context standard with traceparent headers. For synchronous calls, the trace ID and parent span ID are passed via HTTP headers: <code>traceparent: 00-{trace_id}-{parent_span_id}-01</code>. The receiving service extracts these headers and creates a child span. For asynchronous calls (message queues, background jobs), the trace context is serialized into the message payload and extracted when the message is processed. In-process context propagation uses AsyncLocalStorage (Node.js) or contextvars (Python), which automatically carries the current span across async boundaries. The key requirement: every component in the system must understand and propagate trace context.</p>
+<p>Trace context propagation uses the W3C Trace Context standard with traceparent headers. For synchronous calls, the trace ID and parent span ID are passed via HTTP headers: <code>traceparent: 00-{trace_id}-{parent_span_id}-01</code>. The receiving service extracts these headers and.
+creates a child span. For asynchronous calls (message queues, background jobs), the trace context is serialized into the message payload and.
+extracted when the message is processed. In-process context propagation uses AsyncLocalStorage (Node.js) or contextvars (Python), which automatically carries the current span across async boundaries. The key requirement: every component in the system must understand.
+and propagate trace context.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -691,7 +715,11 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q7: How do you set up a baseline for anomaly detection in a new LLM application?
   </summary>
   <div class="tp-qa-answer">
-    <p>Setting a baseline: (1) Run the system with representative traffic for at least 1-2 weeks to capture normal behavior across different times of day and days of the week. (2) Calculate daily and weekly patterns — many LLM apps have higher traffic during business hours. (3) For each metric (latency, throughput, error rate), compute: rolling mean, standard deviation, and typical min/max ranges. (4) Identify any known events during the baseline period (deployments, traffic spikes) and exclude them from baseline calculations. (5) Store the baseline as configuration that anomaly detectors reference. Recalculate baselines periodically (monthly) or when significant system changes occur.</p>
+<p>Setting a baseline: (1) Run the system with representative traffic for at least 1-2 weeks to capture normal behavior across different times of day and.
+days of the week. (2) Calculate daily and weekly patterns — many LLM apps have higher traffic during business hours. (3) For.
+each metric (latency, throughput, error rate), compute: rolling mean, standard deviation, and typical min/max ranges. (4) Identify any known events during the baseline period (deployments,.
+traffic spikes) and exclude them from baseline calculations. (5) Store the baseline as configuration that anomaly detectors reference. Recalculate baselines periodically (monthly) or.
+when significant system changes occur.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -703,7 +731,10 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q8: What are the common bottlenecks in LLM inference pipelines and how do you identify them?
   </summary>
   <div class="tp-qa-answer">
-    <p>Common bottlenecks: (1) Token generation — the LLM itself, especially for long outputs with autoregressive decoding. Mitigation: use smaller models for simple tasks, implement speculative decoding, or use batching. (2) Embedding generation — for RAG systems, embedding the query takes 50-200ms. Mitigation: cache embeddings for frequent queries. (3) Vector search — approximate nearest neighbor search can take 10-100ms. Mitigation: tune HNSW parameters (ef_search, M). (4) Network latency — calls to external LLM APIs. Mitigation: colocate with provider region, use connection pooling. (5) Post-processing — regex parsing or validation. Tracing with span-level timing identifies which stage consumes the most time as a proportion of total request duration.</p>
+<p>Common bottlenecks: (1) Token generation — the LLM itself, especially for long outputs with autoregressive decoding. Mitigation: use smaller models for.
+simple tasks, implement speculative decoding, or use batching. (2) Embedding generation — for RAG systems, embedding the query takes 50-200ms. Mitigation: cache embeddings for.
+frequent queries. (3) Vector search — approximate nearest neighbor search can take 10-100ms. Mitigation: tune HNSW parameters (ef_search, M). (4) Network latency — calls to external LLM APIs. Mitigation: colocate with provider region,.
+use connection pooling. (5) Post-processing — regex parsing or validation. Tracing with span-level timing identifies which stage consumes the most time as a proportion of total request duration.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -715,7 +746,11 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q9: How do you monitor throughput and set capacity planning for LLM APIs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Throughput monitoring tracks requests per second/minute (RPS/RPM) with breakdowns by endpoint, model, and tenant. For capacity planning: (1) Track the peak-to-average ratio — if peak is 5— average, you need 5— headroom. (2) Monitor LLM provider rate limits — track usage vs. limits for each model tier. (3) Measure tokens-per-second generation rate — this varies by model size and hardware. (4) Set utilization alerts — warn when average RPS exceeds 70% of maximum capacity. (5) Model queue depth — monitor how many requests are waiting for LLM inference slots. Use these metrics to scale horizontally: add more API instances, increase rate limit tiers, or distribute load across multiple providers.</p>
+<p>Throughput monitoring tracks requests per second/minute (RPS/RPM) with breakdowns by endpoint, model, and tenant. For capacity planning: (1) Track the peak-to-average ratio — if peak is 5— average,.
+you need 5— headroom. (2) Monitor LLM provider rate limits — track usage vs. limits for each model tier. (3) Measure tokens-per-second generation rate — this varies by model size and.
+hardware. (4) Set utilization alerts — warn when average RPS exceeds 70% of maximum capacity. (5) Model queue depth — monitor.
+how many requests are waiting for LLM inference slots. Use these metrics to scale horizontally: add more API instances, increase rate limit tiers,.
+or distribute load across multiple providers.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -740,7 +775,10 @@ function findCriticalPath(root: Span): Span[] {
   }
   return path;
 }</pre></code>
-    <p>The critical path is the longest sequence of dependent spans that determines the minimum request duration. To find it, traverse the trace tree from the root, always following the child span with the longest duration. This identifies the bottleneck in the pipeline. For an LLM request, the critical path might be: root (1200ms) → LLM call (800ms) → token generation (750ms). This tells you that optimizing token generation will have the biggest impact on overall latency. The critical path also reveals parallelizable work — spans that are not on the critical path (e.g., logging, analytics) can be moved to background tasks without affecting response time.</p>
+<p>The critical path is the longest sequence of dependent spans that determines the minimum request duration. To find it, traverse the trace tree from the root,.
+always following the child span with the longest duration. This identifies the bottleneck in the pipeline. For an LLM request, the critical path might be: root (1200ms) → LLM call (800ms) → token generation (750ms). This tells you that optimizing.
+token generation will have the biggest impact on overall latency. The critical path also reveals parallelizable work — spans that are not on the critical path (e.g.,.
+logging, analytics) can be moved to background tasks without affecting response time.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

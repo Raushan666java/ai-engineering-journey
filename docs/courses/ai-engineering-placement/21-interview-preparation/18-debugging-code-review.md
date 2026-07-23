@@ -465,7 +465,9 @@ async function getData<T = any>(url: string): Promise<T> {
 
 ## Summary
 
-Debugging and code review rounds test your ability to read code critically under time pressure. Use a systematic checklist: off-by-one errors, null references, mutation, async timing, type coercion, edge cases. In code reviews, evaluate correctness, performance, readability, testability, security, and error handling. Communicate findings constructively: start positive, state evidence, suggest specific fixes.
+Debugging and code review rounds test your ability to read code critically under time pressure. Use a systematic checklist: off-by-one errors,.
+null references, mutation, async timing, type coercion, edge cases. In code reviews, evaluate correctness, performance, readability, testability, security, and error handling. Communicate findings constructively: start positive,.
+state evidence, suggest specific fixes.
 
 
 ## Practical Takeaways

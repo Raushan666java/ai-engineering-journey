@@ -763,7 +763,8 @@ print(f"Rollout plan: {rollout.gradual_rollout([10, 25, 50, 100])}")
 
 ## Summary
 
-RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR, NDCG, mAP), generation quality (faithfulness, answer relevance, context precision/recall), and end-to-end metrics. RAGAS defines a standardized framework with four core metrics: faithfulness, answer relevancy, context precision, and context recall. Evaluation frameworks like RAGAS, TruLens, and DeepEval provide automated scoring. A/B testing with statistical significance testing enables data-driven decisions about RAG configuration changes. Regression tracking ensures that pipeline modifications do not degrade quality over time.
+RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR, NDCG, mAP), generation quality (faithfulness, answer relevance, context precision/recall), and end-to-end metrics. RAGAS defines a standardized framework with four core metrics: faithfulness,.
+answer relevancy, context precision, and context recall. Evaluation frameworks like RAGAS, TruLens, and DeepEval provide automated scoring. A/B testing with statistical significance testing enables data-driven decisions about RAG configuration changes. Regression tracking ensures that pipeline modifications do not degrade quality over time.
 
 ## Practical Takeaways
 
@@ -784,7 +785,10 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q1: What are the four core RAGAS metrics and how do they capture RAG quality?
   </summary>
   <div class="tp-qa-answer">
-    <p>The four RAGAS metrics are: Faithfulness (whether the generated response is factually supported by the retrieved context — detects hallucination), Answer Relevancy (whether the response directly addresses the query — detects off-topic responses), Context Precision (whether the retrieved chunks are relevant to the query — detects noisy retrieval), and Context Recall (whether the retrieved chunks cover all information needed for the ground truth answer — detects missing context). Faithfulness and context recall are measured against ground truth or an LLM judge, while answer relevancy and context precision are query-centric. A composite RAGAS score weights these four metrics (typically 0.3, 0.3, 0.2, 0.2) to produce a single quality indicator.</p>
+<p>The four RAGAS metrics are: Faithfulness (whether the generated response is factually supported by the retrieved context — detects hallucination), Answer Relevancy (whether the response directly addresses the query — detects off-topic responses),.
+Context Precision (whether the retrieved chunks are relevant to the query — detects noisy retrieval), and Context Recall (whether the retrieved chunks cover all information needed for.
+the ground truth answer — detects missing context). Faithfulness and context recall are measured against ground truth or an LLM judge,.
+while answer relevancy and context precision are query-centric. A composite RAGAS score weights these four metrics (typically 0.3, 0.3, 0.2, 0.2) to produce a single quality indicator.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -796,7 +800,10 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q2: How do you compute NDCG and why is it preferred over simple precision for retrieval evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>NDCG (Normalized Discounted Cumulative Gain) handles graded relevance (not just binary relevant/irrelevant) and discounts the importance of results at lower ranks. It computes: DCG = sum((2^rel_i - 1) / log2(i+1)), then normalizes by Ideal DCG (perfect ranking). NDCG is preferred over precision because: (1) it supports multi-level relevance (e.g., 3=highly relevant, 2=somewhat relevant, 1=barely relevant), (2) it penalizes relevant results appearing at low ranks, and (3) it handles varying numbers of relevant documents. For binary relevance, NDCG@k is equivalent to average precision at k. Most retrieval benchmarks (BEIR, MS MARCO) report NDCG@10 as the primary metric.</p>
+<p>NDCG (Normalized Discounted Cumulative Gain) handles graded relevance (not just binary relevant/irrelevant) and discounts the importance of results at lower ranks. It computes: DCG = sum((2^rel_i - 1) / log2(i+1)),.
+then normalizes by Ideal DCG (perfect ranking). NDCG is preferred over precision because: (1) it supports multi-level relevance (e.g., 3=highly relevant,.
+2=somewhat relevant, 1=barely relevant), (2) it penalizes relevant results appearing at low ranks, and (3) it handles varying numbers of relevant documents. For.
+binary relevance, NDCG@k is equivalent to average precision at k. Most retrieval benchmarks (BEIR, MS MARCO) report NDCG@10 as the primary metric.</p>
     <pre><code>def ndcg_at_k(retrieved, relevance, k):
     dcg = sum((2**rel - 1) / log2(i+2) for i, rel in enumerate(relevance[:k]))
     idcg = sum((2**r - 1) / log2(i+2) for i, r in enumerate(sorted(relevance, reverse=True)[:k]))
@@ -812,7 +819,10 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q3: How do you build a golden test set for RAG evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Create 50-100 curated query-answer pairs with these fields: query (from real user logs or domain experts), ground_truth_answer (gold standard), relevant_chunks (list of chunk IDs that contain the answer), and context_relevance (which retrieved chunks are relevant). Use stratified sampling to cover different query types (factual, procedural, comparative) and difficulty levels. Annotate with multiple raters and measure inter-rater agreement (Cohen's Kappa > 0.7). Store in JSONL format. The test set serves as the definitive quality benchmark — always evaluate against this set before deploying RAG changes. Refresh quarterly to cover new content and edge cases encountered in production.</p>
+<p>Create 50-100 curated query-answer pairs with these fields: query (from real user logs or domain experts), ground_truth_answer (gold standard), relevant_chunks (list of chunk IDs that contain the answer),.
+and context_relevance (which retrieved chunks are relevant). Use stratified sampling to cover different query types (factual, procedural, comparative) and difficulty levels. Annotate with multiple raters and.
+measure inter-rater agreement (Cohen's Kappa > 0.7). Store in JSONL format. The test set serves as the definitive quality benchmark — always evaluate against this set before deploying RAG changes. Refresh quarterly to cover new content and.
+edge cases encountered in production.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -824,7 +834,9 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q4: How do you implement a faithfulness scorer to detect hallucinations in RAG responses?
   </summary>
   <div class="tp-qa-answer">
-    <p>A FaithfulnessScorer extracts claims (sentences or atomic facts) from the generated response and checks each against the retrieved context. For each claim, compute whether it is SUPPORTED (present in or entailed by context), NOT_SUPPORTED (absent), or CONTRADICTED (opposite claims in context). The faithfulness score is the proportion of supported claims. Use an LLM-as-judge for the entailment check with a prompt like:</p>
+<p>A FaithfulnessScorer extracts claims (sentences or atomic facts) from the generated response and checks each against the retrieved context. For each claim,.
+compute whether it is SUPPORTED (present in or entailed by context), NOT_SUPPORTED (absent), or CONTRADICTED (opposite claims in context). The faithfulness score is the proportion of supported claims. Use an LLM-as-judge for.
+the entailment check with a prompt like:</p>
     <pre><code>def score(self, response, context):
     claims = extract_claims(response)
     supported = 0
@@ -844,7 +856,9 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q5: How do you set up an A/B test for comparing two RAG configurations?
   </summary>
   <div class="tp-qa-answer">
-    <p>Define control (current RAG config) and treatment (new chunking strategy, reranker, or model). Run both on the same set of queries (minimum 30 per variant) from a test set or logged production traffic. Measure faithfulness, answer relevance, and latency for each response. Use a t-test or Mann-Whitney U test to check if differences are statistically significant (p < 0.05). Also measure effect size (Cohen's d) to assess practical significance. If the treatment improves faithfulness by >5% with p < 0.05, consider rolling out gradually: start with 5% of traffic, monitor for 24 hours, then increase to 25%, 50%, 100% with regression checks at each step.</p>
+<p>Define control (current RAG config) and treatment (new chunking strategy, reranker, or model). Run both on the same set of queries (minimum 30 per variant) from a test set or.
+logged production traffic. Measure faithfulness, answer relevance, and latency for each response. Use a t-test or Mann-Whitney U test to check if differences are statistically significant (p < 0.05). Also measure effect size (Cohen's d) to assess practical significance. If the treatment improves faithfulness by >5% with p < 0.05,.
+consider rolling out gradually: start with 5% of traffic, monitor for 24 hours, then increase to 25%, 50%, 100% with regression checks at each step.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -856,7 +870,10 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q6: What is context recall and how does it differ from answer faithfulness?
   </summary>
   <div class="tp-qa-answer">
-    <p>Context recall measures whether all information needed to answer the query is present in the retrieved chunks. It is computed against the ground truth answer: for each claim in the ground truth, check if it is covered by any retrieved chunk. Faithfulness measures the reverse — whether claims in the generated response are supported by context. A system can have high faithfulness (response only uses context) but low context recall (context is missing key information), leading to incomplete answers. Both metrics are needed for a complete picture: recall identifies retrieval gaps, faithfulness identifies generation issues. In practice, address low recall first (retrieval optimization) before addressing low faithfulness (prompt engineering).</p>
+<p>Context recall measures whether all information needed to answer the query is present in the retrieved chunks. It is computed against the ground truth answer: for.
+each claim in the ground truth, check if it is covered by any retrieved chunk. Faithfulness measures the reverse — whether claims in the generated response are supported by context. A system can have high faithfulness (response only uses context) but.
+low context recall (context is missing key information), leading to incomplete answers. Both metrics are needed for a complete picture: recall identifies retrieval gaps,.
+faithfulness identifies generation issues. In practice, address low recall first (retrieval optimization) before addressing low faithfulness (prompt engineering).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -868,7 +885,9 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q7: How do you track evaluation regressions over multiple RAG pipeline versions?
   </summary>
   <div class="tp-qa-answer">
-    <p>Implement a RegressionTracker that stores evaluation results for each pipeline version (faithfulness, relevance, context precision, context recall, RAGAS score, and average latency). Each entry includes version name, timestamp, and full metrics. On each new evaluation, compare against the previous version with configurable tolerance (e.g., >5% degradation triggers alert). Store history in a database or file for trend visualization. Key regression rules: faithfulness drops >5% = BLOCK deployment, latency increases >20% = FLAG for review, RAGAS composite drops >3% = INVESTIGATE. Automate this check in CI/CD — a failing regression check blocks the deployment pipeline.</p>
+<p>Implement a RegressionTracker that stores evaluation results for each pipeline version (faithfulness, relevance, context precision, context recall, RAGAS score, and average latency). Each entry includes version name,.
+timestamp, and full metrics. On each new evaluation, compare against the previous version with configurable tolerance (e.g., >5% degradation triggers alert). Store history in a database or.
+file for trend visualization. Key regression rules: faithfulness drops >5% = BLOCK deployment, latency increases >20% = FLAG for review, RAGAS composite drops >3% = INVESTIGATE. Automate this check in CI/CD — a failing regression check blocks the deployment pipeline.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -880,7 +899,11 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q8: How do you evaluate RAG when ground truth answers are not available?
   </summary>
   <div class="tp-qa-answer">
-    <p>Without ground truth, use reference-free evaluation methods. For retrieval quality, user behavior signals like click-through rate, dwell time, and query reformulation rate can indicate whether retrieved results were useful. For generation quality, use an LLM-as-judge with a rubric to score faithfulness (does the answer use only context?), relevance (does it address the query?), and helpfulness (would a user find this useful?). Two complementary approaches: (1) sample 20-50 queries weekly for manual review by domain experts, (2) use automated LLM-based scoring with calibrated thresholds (validate against a small annotated set first). RAGAS frameworks support reference-free operation for faithfulness and answer relevancy by using the LLM as the evaluator.</p>
+<p>Without ground truth, use reference-free evaluation methods. For retrieval quality, user behavior signals like click-through rate, dwell time, and query reformulation rate can indicate whether retrieved results were useful. For.
+generation quality, use an LLM-as-judge with a rubric to score faithfulness (does the answer use only context?), relevance (does it address the query?),.
+and helpfulness (would a user find this useful?). Two complementary approaches: (1) sample 20-50 queries weekly for manual review by domain experts,.
+(2) use automated LLM-based scoring with calibrated thresholds (validate against a small annotated set first). RAGAS frameworks support reference-free operation for.
+faithfulness and answer relevancy by using the LLM as the evaluator.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -892,7 +915,11 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q9: What is mean reciprocal rank (MRR) and when would you use it over precision@k?
   </summary>
   <div class="tp-qa-answer">
-    <p>MRR computes the average reciprocal rank of the first relevant document across all queries. For example, if the first relevant document is at rank 1 for query A (RR=1.0), rank 3 for query B (RR=0.33), and rank 5 for query C (RR=0.2), then MRR = (1.0 + 0.33 + 0.2)/3 = 0.51. MRR is preferred over precision@k when you care most about whether the user finds a relevant result in the first few positions — it is the standard metric for question answering and factoid retrieval where only one relevant result is sufficient. Precision@k is better when users need multiple relevant results (e.g., search results page with 10 links). In practice, MRR@10 and precision@5 complement each other in a retrieval evaluation suite.</p>
+<p>MRR computes the average reciprocal rank of the first relevant document across all queries. For example, if the first relevant document is at rank 1 for.
+query A (RR=1.0), rank 3 for query B (RR=0.33), and rank 5 for query C (RR=0.2), then MRR = (1.0 + 0.33 + 0.2)/3 = 0.51. MRR is preferred over precision@k when you care most about whether the user finds.
+a relevant result in the first few positions — it is the standard metric for.
+question answering and factoid retrieval where only one relevant result is sufficient. Precision@k is better when users need multiple relevant results (e.g.,.
+search results page with 10 links). In practice, MRR@10 and precision@5 complement each other in a retrieval evaluation suite.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -904,7 +931,10 @@ RAG evaluation requires measuring retrieval quality (precision@k, recall@k, MRR,
     Q10: How would you design an evaluation pipeline that runs on every RAG deployment?
   </summary>
   <div class="tp-qa-answer">
-    <p>Create an EvaluationPipeline that: (1) loads a golden test set of 50-100 queries with ground truth answers and relevance annotations, (2) runs the RAG pipeline on each query, (3) computes retrieval metrics (precision@k, recall@k, MRR, NDCG), (4) computes generation metrics (faithfulness, answer relevance via RAGAS), (5) checks for regressions against the previous deployment's scores. Integrate this into CI/CD so every merge triggers a full evaluation run — block deployment if any metric drops below threshold. Output a structured JSON report comparing current vs previous scores. Store all evaluation runs in a time-series database for dashboard visualization. This catches quality regressions before they reach production users.</p>
+<p>Create an EvaluationPipeline that: (1) loads a golden test set of 50-100 queries with ground truth answers and relevance annotations, (2) runs the RAG pipeline on each query,.
+(3) computes retrieval metrics (precision@k, recall@k, MRR, NDCG), (4) computes generation metrics (faithfulness, answer relevance via RAGAS), (5) checks for regressions against the previous deployment's scores. Integrate this into CI/CD so every merge triggers a full evaluation run — block.
+deployment if any metric drops below threshold. Output a structured JSON report comparing current vs previous scores. Store all evaluation runs in a time-series database for.
+dashboard visualization. This catches quality regressions before they reach production users.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

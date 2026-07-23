@@ -641,7 +641,10 @@ Beam search with beam size 4-10 is standard for NMT and text generation. Larger 
 
 ## Summary
 
-Sequence models process variable-length input and output sequences using recurrent architectures. The vanilla RNN maintains a hidden state that propagates information through time steps but suffers from vanishing gradients. LSTM introduces gating mechanisms and a cell state to preserve long-term dependencies, becoming the standard for most sequence tasks. GRU simplifies the LSTM with fewer gates while maintaining competitive performance. Bidirectional RNNs capture context from both past and future directions. The encoder-decoder architecture maps variable-length input sequences to output sequences through a fixed-dimensional bottleneck. Teacher forcing accelerates training by feeding ground-truth outputs during decoding, while beam search improves inference by maintaining multiple candidate sequences.
+Sequence models process variable-length input and output sequences using recurrent architectures. The vanilla RNN maintains a hidden state that propagates information through time steps but.
+suffers from vanishing gradients. LSTM introduces gating mechanisms and a cell state to preserve long-term dependencies, becoming the standard for most sequence tasks. GRU simplifies the LSTM with fewer gates while maintaining competitive performance. Bidirectional RNNs capture context from both past and.
+future directions. The encoder-decoder architecture maps variable-length input sequences to output sequences through a fixed-dimensional bottleneck. Teacher forcing accelerates training by feeding ground-truth outputs during decoding,.
+while beam search improves inference by maintaining multiple candidate sequences.
 
 ## Practical Takeaways
 
@@ -662,7 +665,8 @@ Sequence models process variable-length input and output sequences using recurre
     Q1: Why do vanilla RNNs suffer from vanishing gradients?
   </summary>
   <div class="tp-qa-answer">
-    <p>During backpropagation through time (BPTT), the gradient at timestep t contains a product of the form ∏_{k=1}^{t} diag(f'(h_k)) * W_hh^T where f'(h_k) is the derivative of tanh (always ≤ 0.25). If the eigenvalues of W_hh are less than 1, this product decays exponentially with sequence length. For example, with 50 timesteps and eigenvalues of 0.9, the gradient scales as 0.9^50 ≈ 0.005. This makes early timesteps effectively untrainable. LSTM solves this by providing an additive gradient path through the cell state with only element-wise gating.</p>
+<p>During backpropagation through time (BPTT), the gradient at timestep t contains a product of the form ∏_{k=1}^{t} diag(f'(h_k)) * W_hh^T where f'(h_k) is the derivative of tanh (always ≤ 0.25). If the eigenvalues of W_hh are less than 1,.
+this product decays exponentially with sequence length. For example, with 50 timesteps and eigenvalues of 0.9, the gradient scales as 0.9^50 ≈ 0.005. This makes early timesteps effectively untrainable. LSTM solves this by providing an additive gradient path through the cell state with only element-wise gating.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -674,7 +678,10 @@ Sequence models process variable-length input and output sequences using recurre
     Q2: Explain the three gates of an LSTM and their functions.
   </summary>
   <div class="tp-qa-answer">
-    <p>(1) Forget gate (f_t): sigmoid(W_f * [h_{t-1}, x_t] + b_f). Decides how much of the previous cell state to forget. Values near 0 mean "forget everything," near 1 mean "keep everything." (2) Input gate (i_t): sigmoid(W_i * [h_{t-1}, x_t] + b_i). Controls how much of the new candidate cell state to add. (3) Output gate (o_t): sigmoid(W_o * [h_{t-1}, x_t] + b_o). Controls how much of the cell state flows to the hidden state. Together, they allow the LSTM to learn long-range dependencies by protecting the cell state from irrelevant inputs and preserving relevant information across many timesteps.</p>
+<p>(1) Forget gate (f_t): sigmoid(W_f * [h_{t-1}, x_t] + b_f). Decides how much of the previous cell state to forget. Values near 0 mean "forget everything," near 1 mean "keep everything." (2) Input gate (i_t): sigmoid(W_i * [h_{t-1},.
+x_t] + b_i). Controls how much of the new candidate cell state to add. (3) Output gate (o_t): sigmoid(W_o * [h_{t-1},.
+x_t] + b_o). Controls how much of the cell state flows to the hidden state. Together, they allow the LSTM to learn long-range dependencies by protecting the cell state from irrelevant inputs and.
+preserving relevant information across many timesteps.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -686,7 +693,11 @@ Sequence models process variable-length input and output sequences using recurre
     Q3: What is the difference between LSTM and GRU?
   </summary>
   <div class="tp-qa-answer">
-    <p>GRU simplifies LSTM by (1) merging the cell state and hidden state into a single state vector. (2) Combining forget and input gates into a single update gate z_t. (3) Using a reset gate r_t to control how much past information to forget when computing the candidate hidden state. GRU has 3 gates total vs LSTM's 4. LSTM has an output gate that lets the network control how much of the cell state is exposed; GRU exposes the full state without gating. GRU has ~25% fewer parameters, trains faster, and often matches LSTM on smaller datasets. LSTM sometimes performs better on very long sequences or large datasets.</p>
+<p>GRU simplifies LSTM by (1) merging the cell state and hidden state into a single state vector. (2) Combining forget and.
+input gates into a single update gate z_t. (3) Using a reset gate r_t to control how much past information to forget when computing the candidate hidden state. GRU has 3 gates total vs LSTM's 4. LSTM has an output.
+gate that lets the network control how much of the cell state is exposed;.
+GRU exposes the full state without gating. GRU has ~25% fewer parameters, trains faster, and often matches LSTM on smaller datasets. LSTM sometimes performs better on very long sequences or.
+large datasets.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -698,7 +709,10 @@ Sequence models process variable-length input and output sequences using recurre
     Q4: What is teacher forcing and what are its drawbacks?
   </summary>
   <div class="tp-qa-answer">
-    <p>Teacher forcing feeds the ground truth token (from the training set) as the next decoder input, instead of the model's prediction. This stabilizes training, prevents error accumulation during training, and speeds convergence. Drawback: exposure bias — at inference time, the model receives its own predictions as input, which it never experienced during training. This creates a distribution mismatch between training and inference. Mitigations: (1) Scheduled sampling: gradually reduce teacher forcing from 1.0 to 0.0 during training. (2) Curriculum learning: start with teacher forcing, switch to student forcing. (3) Professor forcing: use adversarial training to match training/inference distributions.</p>
+<p>Teacher forcing feeds the ground truth token (from the training set) as the next decoder input, instead of the model's prediction. This stabilizes training,.
+prevents error accumulation during training, and speeds convergence. Drawback: exposure bias — at inference time, the model receives its own predictions as input,.
+which it never experienced during training. This creates a distribution mismatch between training and inference. Mitigations: (1) Scheduled sampling: gradually reduce teacher forcing from 1.0 to 0.0 during training. (2) Curriculum learning: start with teacher forcing,.
+switch to student forcing. (3) Professor forcing: use adversarial training to match training/inference distributions.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -710,7 +724,10 @@ Sequence models process variable-length input and output sequences using recurre
     Q5: How does beam search improve over greedy decoding?
   </summary>
   <div class="tp-qa-answer">
-    <p>Greedy decoding picks the highest probability token at each step, which can lead to locally optimal but globally suboptimal sequences. Beam search maintains k (beam size) candidate hypotheses simultaneously. At each timestep, it expands all k hypotheses by considering all V tokens, sorts the k*V candidates by cumulative log probability, keeps the top k, and repeats. This explores multiple paths and finds globally better sequences. For machine translation, beam=4 improves BLEU by 1-3 points over greedy. Larger beams (>10) show diminishing returns and increase computational cost linearly. Beam search also allows length normalization to avoid bias toward short sequences.</p>
+<p>Greedy decoding picks the highest probability token at each step, which can lead to locally optimal but globally suboptimal sequences. Beam search maintains k (beam size) candidate hypotheses simultaneously. At each timestep,.
+it expands all k hypotheses by considering all V tokens, sorts the k*V candidates by cumulative log probability, keeps the top k,.
+and repeats. This explores multiple paths and finds globally better sequences. For machine translation, beam=4 improves BLEU by 1-3 points over greedy. Larger beams (>10) show diminishing returns and.
+increase computational cost linearly. Beam search also allows length normalization to avoid bias toward short sequences.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -722,7 +739,10 @@ Sequence models process variable-length input and output sequences using recurre
     Q6: What is the role of bidirectional RNNs in NLP?
   </summary>
   <div class="tp-qa-answer">
-    <p>Bidirectional RNNs process the sequence in both forward (left to right) and backward (right to left) directions, then concatenate or sum the hidden states at each position. This gives each token access to information from both past and future contexts. For NER, knowing "Washington" was preceded by "George" and followed by "was born" helps classify it as PERSON vs LOCATION. For classification, the final state of a BiLSTM captures the entire sequence in both directions. Standard in NER, POS tagging, relation extraction, and sentence classification. Not suitable for real-time applications (speech recognition, online translation) where future tokens are unavailable.</p>
+<p>Bidirectional RNNs process the sequence in both forward (left to right) and backward (right to left) directions, then concatenate or sum the hidden states at each position. This gives each token access to information from both past and.
+future contexts. For NER, knowing "Washington" was preceded by "George" and followed by "was born" helps classify it as PERSON vs LOCATION. For.
+classification, the final state of a BiLSTM captures the entire sequence in both directions. Standard in NER, POS tagging, relation extraction,.
+and sentence classification. Not suitable for real-time applications (speech recognition, online translation) where future tokens are unavailable.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -734,7 +754,10 @@ Sequence models process variable-length input and output sequences using recurre
     Q7: How do you handle variable-length sequences in RNNs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Three main strategies: (1) Padding — pad all sequences to the length of the longest sequence in the batch using a special <pad> token. Combined with masking to ignore padding during loss computation. (2) Bucketing — group sequences of similar lengths into buckets, pad within each bucket to minimize wasted computation. (3) Packing — pack sequences into a single tensor and store the true lengths; PyTorch's pack_padded_sequence and pad_packed_sequence implement this. Always sort sequences by length descending for efficient packing. Bucketing is most common in production: create 5-10 buckets (e.g., 1-10, 11-20, 21-50, 51-100, 100+) and pad within each bucket.</p>
+<p>Three main strategies: (1) Padding — pad all sequences to the length of the longest sequence in the batch using a special <pad> token. Combined with masking to ignore padding during loss computation. (2) Bucketing — group sequences of similar lengths into buckets,.
+pad within each bucket to minimize wasted computation. (3) Packing — pack sequences into a single tensor and store the true lengths;.
+PyTorch's pack_padded_sequence and pad_packed_sequence implement this. Always sort sequences by length descending for efficient packing. Bucketing is most common in production: create 5-10 buckets (e.g.,.
+1-10, 11-20, 21-50, 51-100, 100+) and pad within each bucket.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -746,7 +769,9 @@ Sequence models process variable-length input and output sequences using recurre
     Q8: What is gradient clipping and why is it important for RNNs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Gradient clipping limits the gradient norm to a maximum threshold (e.g., 5.0) during backpropagation: if ||g|| > threshold, g = g * threshold / ||g||. This prevents gradient explosion in RNNs where repeated multiplication by W_hh during BPTT can cause gradients to grow exponentially (when eigenvalues > 1). Without clipping, a single batch with a long sequence can produce gradient values > 10^10, causing NaN loss and completely destabilizing training. Two variants: (1) Value clipping: clip each gradient element to [-threshold, threshold]. (2) Norm clipping: rescale the entire gradient vector if its L2 norm exceeds threshold. Norm clipping is preferred as it preserves gradient direction.</p>
+<p>Gradient clipping limits the gradient norm to a maximum threshold (e.g., 5.0) during backpropagation: if ||g|| > threshold, g = g * threshold / ||g||. This prevents gradient explosion in RNNs where repeated multiplication by W_hh during BPTT can cause gradients to grow exponentially (when eigenvalues > 1). Without clipping,.
+a single batch with a long sequence can produce gradient values > 10^10, causing NaN loss and completely destabilizing training. Two variants: (1) Value clipping: clip each gradient element to [-threshold,.
+threshold]. (2) Norm clipping: rescale the entire gradient vector if its L2 norm exceeds threshold. Norm clipping is preferred as it preserves gradient direction.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -758,7 +783,9 @@ Sequence models process variable-length input and output sequences using recurre
     Q9: How do you initialize RNN weights to avoid vanishing/exploding gradients?
   </summary>
   <div class="tp-qa-answer">
-    <p>Proper initialization of RNN weights is critical: (1) Hidden-to-hidden weights (W_hh): use identity matrix initialization or orthogonal initialization. Identity initialization (W_hh = I) preserves gradient norm across timesteps. Orthogonal initialization (W_hh^T W_hh = I) keeps eigenvalues exactly 1, maintaining gradient flow. (2) Input-to-hidden weights (W_xh): use Xavier/Glorot initialization (uniform from [-sqrt(6/(fan_in+fan_out)), sqrt(6/(fan_in+fan_out))]). (3) Forget gate bias: initialize to 1.0 (not 0.0) — this biases the forget gate toward remembering, helping long-range information flow at the start of training. LSTM with forget gate bias = 1.0 converges faster and achieves lower final loss.</p>
+<p>Proper initialization of RNN weights is critical: (1) Hidden-to-hidden weights (W_hh): use identity matrix initialization or orthogonal initialization. Identity initialization (W_hh = I) preserves gradient norm across timesteps. Orthogonal initialization (W_hh^T W_hh = I) keeps eigenvalues exactly 1,.
+maintaining gradient flow. (2) Input-to-hidden weights (W_xh): use Xavier/Glorot initialization (uniform from [-sqrt(6/(fan_in+fan_out)), sqrt(6/(fan_in+fan_out))]). (3) Forget gate bias: initialize to 1.0 (not 0.0) — this biases the forget gate toward remembering,.
+helping long-range information flow at the start of training. LSTM with forget gate bias = 1.0 converges faster and achieves lower final loss.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -770,7 +797,9 @@ Sequence models process variable-length input and output sequences using recurre
     Q10: What is the difference between many-to-one, many-to-many, and encoder-decoder RNN architectures?
   </summary>
   <div class="tp-qa-answer">
-    <p>(1) Many-to-one: processes an input sequence and produces a single output at the end. Used for sentiment classification, document classification. The final hidden state is fed to a classifier. (2) Many-to-many (same length): each input timestep produces an output. Used for POS tagging, NER, frame-by-frame video labeling. (3) Many-to-many (different lengths): encoder-decoder (seq2seq). Encoder reads the entire input sequence to produce a context vector. Decoder generates an output sequence of different length. Used for machine translation (English 10 words → French 12 words), summarization, speech recognition.</p>
+<p>(1) Many-to-one: processes an input sequence and produces a single output at the end. Used for sentiment classification, document classification. The final hidden state is fed to a classifier. (2) Many-to-many (same length): each input timestep produces an output. Used for.
+POS tagging, NER, frame-by-frame video labeling. (3) Many-to-many (different lengths): encoder-decoder (seq2seq). Encoder reads the entire input sequence to produce a context vector. Decoder generates an output sequence of different length. Used for.
+machine translation (English 10 words → French 12 words), summarization, speech recognition.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

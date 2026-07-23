@@ -278,7 +278,8 @@ RECOMMENDED_LINKEDIN_SKILLS = [
 ]
 ```text
 
-**LinkedIn SEO tips**: Set your location to a tech hub (San Francisco Bay Area, New York, Seattle, Austin, London). Keep your profile set to "Open to Work" (visible only to recruiters). Post or share technical content weekly. Engage with others' posts (meaningful comments, not just likes). Connect with recruiters at target companies.
+**LinkedIn SEO tips**: Set your location to a tech hub (San Francisco Bay Area, New York, Seattle, Austin, London). Keep your profile set to "Open to Work" (visible only to recruiters). Post or.
+share technical content weekly. Engage with others' posts (meaningful comments, not just likes). Connect with recruiters at target companies.
 
 ---
 
@@ -803,7 +804,8 @@ Tools: Kafka, Git, GitHub Actions, Datadog, Prometheus</code></pre>
   </summary>
   <div class="tp-qa-answer">
     <p><strong>Short gaps (1-3 months)</strong>: Don't call attention to them. List years only (not months) for each role. The gap is unlikely to be noticed.</p>
-    <p><strong>Medium gaps (3-12 months)</strong>: Be prepared to discuss positively. "I took time to travel," "I was working on a personal project," "I was upskilling through courses." Frame it as intentional and productive. If you were laid off, say "My position was eliminated in a company restructuring" — this is not your fault.</p>
+<p><strong>Medium gaps (3-12 months)</strong>: Be prepared to discuss positively. "I took time to travel," "I was working on a personal project," "I was upskilling through courses." Frame it as intentional and.
+productive. If you were laid off, say "My position was eliminated in a company restructuring" — this is not your fault.</p>
     <p><strong>Long gaps (12+ months)</strong>: Be transparent but positive. If you were learning new skills, freelancing, building projects, or dealing with personal/health matters, state it honestly. Show what you did during the gap that keeps your skills current.</p>
     <p><strong>Formatting</strong>: Use a "Career Break" or "Independent Projects" section to account for the time. List relevant activities (courses, freelance work, open source contributions, personal projects).</p>
     <p><strong>The key</strong>: Show that you used the time productively and that your skills are current regardless of the employment gap.</p>

@@ -724,7 +724,9 @@ class ToolAugmentedTrainer:
 
 ## Summary
 
-Model post-training is where raw foundation models become capable agents. SFT teaches format and tool syntax from demonstrations. RL optimizes behavior through exploration and reward maximization. DAPO dynamically adapts reasoning depth to problem difficulty. Tool-augmented training requires specialized data and reward functions. The standard recipe is SFT first (teach the format), then RL (optimize the behavior).
+Model post-training is where raw foundation models become capable agents. SFT teaches format and tool syntax from demonstrations. RL optimizes behavior.
+through exploration and reward maximization. DAPO dynamically adapts reasoning depth to problem difficulty. Tool-augmented training requires specialized data and reward functions. The standard recipe is SFT first (teach the format),.
+then RL (optimize the behavior).
 
 ## Practical Takeaways
 

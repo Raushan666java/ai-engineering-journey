@@ -831,7 +831,9 @@ function renderBarChart(
 </details>
 <details class="tp-qa-card" data-qid="p02-s14-q5">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: Plotly Express vs Graph Objects?</summary>
-  <div class="tp-qa-answer"><p>Plotly Express (px) is a high-level API that creates complete figures from Pandas DataFrames in one line. It auto-generates layout, legend, and hover information. Graph Objects (go) is a low-level API for building figures trace by trace, offering full control over every aspect. Use Express for exploration, Graph Objects for production.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Plotly Express (px) is a high-level API that creates complete figures from Pandas DataFrames in one line. It auto-generates layout,.
+legend, and hover information. Graph Objects (go) is a low-level API for building figures trace by trace, offering full control over every aspect. Use Express for.
+exploration, Graph Objects for production.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s14-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: How to add animation to a Plotly chart?</summary>

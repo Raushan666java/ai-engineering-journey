@@ -653,7 +653,10 @@ print(agent_efficiency(wa, mock_llm, "Quick test"))
 
 ## Summary
 
-AI agents are autonomous systems that combine LLM reasoning with tool use to accomplish complex tasks. Core components include the LLM brain (reasoning engine), tools (external capabilities), memory (short-term and long-term), and an orchestration loop. Key agent paradigms include ReAct (interleaved reasoning and acting), Plan-and-Execute (separate planning and execution), and Reflexion (self-evaluation and retry). A basic ReAct agent can be implemented with a tool registry, structured action parsing, and a reasoning loop. Agent evaluation measures success rate, average steps, latency, and cost per task.
+AI agents are autonomous systems that combine LLM reasoning with tool use to accomplish complex tasks. Core components include the LLM brain (reasoning engine),.
+tools (external capabilities), memory (short-term and long-term), and an orchestration loop. Key agent paradigms include ReAct (interleaved reasoning and acting), Plan-and-Execute (separate planning and.
+execution), and Reflexion (self-evaluation and retry). A basic ReAct agent can be implemented with a tool registry, structured action parsing, and.
+a reasoning loop. Agent evaluation measures success rate, average steps, latency, and cost per task.
 
 ## Practical Takeaways
 
@@ -674,7 +677,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q1: What is the difference between a simple LLM call and an AI agent?
   </summary>
   <div class="tp-qa-answer">
-    <p>A simple LLM call generates a single response from a prompt without iteration or tool use. An AI agent, by contrast, operates in a loop: it reasons, calls tools, observes results, and repeats until the task is complete. For example, an LLM call returns <code>"The weather in Tokyo is 22°C"</code> if it knows the answer, but an agent can call a weather API tool, parse the JSON response, and answer even if the knowledge wasn't in its training data. Agents also maintain state across steps, enabling multi-step workflows like researching a topic and writing a report.</p>
+<p>A simple LLM call generates a single response from a prompt without iteration or tool use. An AI agent, by contrast,.
+operates in a loop: it reasons, calls tools, observes results, and repeats until the task is complete. For example, an LLM call returns <code>"The weather in Tokyo is 22°C"</code> if it knows the answer,.
+but an agent can call a weather API tool, parse the JSON response, and answer even if the knowledge wasn't in its training data. Agents also maintain state across steps,.
+enabling multi-step workflows like researching a topic and writing a report.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -686,7 +692,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q2: Explain the ReAct paradigm with a concrete example.
   </summary>
   <div class="tp-qa-answer">
-    <p>ReAct (Reasoning + Acting) interleaves chain-of-thought reasoning with tool-use actions. For a task like "What is the population density of France?", a ReAct agent might produce: Thought: I need to find France's population and area. Action: search(query="France population 2025"). Observation: 68 million. Action: search(query="France area km2"). Observation: 551,695 km2. Thought: Density = 68M / 551,695 ≈ 123.3 per km2. Final Answer: 123.3 people per km2. The key insight is that each reasoning step informs the next action, and each observation feeds back into reasoning, mirroring how humans solve problems.</p>
+<p>ReAct (Reasoning + Acting) interleaves chain-of-thought reasoning with tool-use actions. For a task like "What is the population density of France?",.
+a ReAct agent might produce: Thought: I need to find France's population and area. Action: search(query="France population 2025"). Observation: 68 million. Action: search(query="France area km2"). Observation: 551,695 km2. Thought: Density = 68M / 551,695 ≈ 123.3 per km2. Final Answer:.
+123.3 people per km2. The key insight is that each reasoning step informs the next action,.
+and each observation feeds back into reasoning, mirroring how humans solve problems.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -698,7 +707,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q3: What are the core components of an AI agent?
   </summary>
   <div class="tp-qa-answer">
-    <p>The four core components are: (1) LLM Brain — the reasoning engine that decides what to do next based on context; (2) Tools — external functions like web search, calculators, or database queries that the agent can invoke; (3) Memory — short-term (conversation context), long-term (facts and preferences), and episodic (past experiences) storage; and (4) Orchestration Loop — the control flow that cycles through thought → action → observation until a stopping condition is met. A simple implementation would combine an LLM call within a while-loop that parses structured actions from the LLM output, executes corresponding tools, and appends observations back into the prompt.</p>
+<p>The four core components are: (1) LLM Brain — the reasoning engine that decides what to do next based on context;.
+(2) Tools — external functions like web search, calculators, or database queries that the agent can invoke; (3) Memory — short-term (conversation context),.
+long-term (facts and preferences), and episodic (past experiences) storage; and (4) Orchestration Loop — the control flow that cycles through thought → action → observation until a stopping condition is met. A simple implementation would combine an LLM call within a while-loop that parses structured actions from the LLM output,.
+executes corresponding tools, and appends observations back into the prompt.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -710,7 +722,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q4: How does Plan-and-Execute differ from ReAct?
   </summary>
   <div class="tp-qa-answer">
-    <p>Plan-and-Execute separates planning from execution as two distinct phases. First, the agent creates a complete step-by-step plan without executing any actions. Then it executes each step sequentially. ReAct, in contrast, interleaves reasoning and acting — it might revise its plan after each observation. Plan-and-Execute is better for tasks with clear, well-understood steps (e.g., "Generate a report: search, analyze, write, format") where the plan rarely changes. ReAct is better for exploratory tasks where the next step depends on the previous result. The trade-off is that Plan-and-Execute can waste steps if the initial plan is wrong, while ReAct is more flexible but can produce longer reasoning chains.</p>
+<p>Plan-and-Execute separates planning from execution as two distinct phases. First, the agent creates a complete step-by-step plan without executing any actions. Then it executes each step sequentially. ReAct,.
+in contrast, interleaves reasoning and acting — it might revise its plan after each observation. Plan-and-Execute is better for tasks with clear,.
+well-understood steps (e.g., "Generate a report: search, analyze, write, format") where the plan rarely changes. ReAct is better for exploratory tasks where the next step depends on the previous result. The trade-off is that Plan-and-Execute can waste steps if the initial plan is wrong,.
+while ReAct is more flexible but can produce longer reasoning chains.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -722,7 +737,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q5: What is the Reflexion paradigm and when should you use it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Reflexion adds a self-evaluation step where the agent critiques its own output and retries if the quality is insufficient. The cycle is: execute → evaluate → reflect → retry (up to N times). Use it when output quality is critical and you can define an evaluation function — for example, code generation where the agent writes code, runs tests, detects failures, and fixes bugs. A Reflexion agent might achieve 90%+ success on coding tasks where a single-pass agent achieves 60-70%. The cost is 2-5x more LLM calls per task, so it's not suitable for latency-sensitive applications. Implementation typically uses a boolean evaluator (pass/fail) or a numeric scorer (0-1) with a threshold.</p>
+<p>Reflexion adds a self-evaluation step where the agent critiques its own output and retries if the quality is insufficient. The cycle is: execute → evaluate → reflect → retry (up to N times). Use it when output quality is critical and.
+you can define an evaluation function — for example, code generation where the agent writes code, runs tests, detects failures, and.
+fixes bugs. A Reflexion agent might achieve 90%+ success on coding tasks where a single-pass agent achieves 60-70%. The cost is 2-5x more LLM calls per task,.
+so it's not suitable for latency-sensitive applications. Implementation typically uses a boolean evaluator (pass/fail) or a numeric scorer (0-1) with a threshold.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -734,7 +752,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q6: How do you implement a tool registry for an agent?
   </summary>
   <div class="tp-qa-answer">
-    <p>A tool registry is a dictionary mapping tool names to their implementations and metadata. Each tool entry typically includes: name, description (used by the LLM to decide when to call it), parameters schema (JSON Schema format), and the callable function. The registry provides methods like <code>register(tool)</code>, <code>get_descriptions()</code> (returns formatted list for the LLM prompt), and <code>execute(name, **kwargs)</code> with error handling. For production, add categories, versioning, and auto-discovery from Python modules. The descriptions are critical — the LLM reads them to choose tools, so invest in clear, specific documentation of what each tool does and when to use it.</p>
+<p>A tool registry is a dictionary mapping tool names to their implementations and metadata. Each tool entry typically includes: name, description (used by the LLM to decide when to call it),.
+parameters schema (JSON Schema format), and the callable function. The registry provides methods like <code>register(tool)</code>, <code>get_descriptions()</code> (returns formatted list for the LLM prompt),.
+and <code>execute(name, **kwargs)</code> with error handling. For production, add categories, versioning, and auto-discovery from Python modules. The descriptions are critical — the LLM reads them to choose tools,.
+so invest in clear, specific documentation of what each tool does and when to use it.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -746,7 +767,11 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q7: What metrics are important for evaluating agent performance?
   </summary>
   <div class="tp-qa-answer">
-    <p>The three most important agent metrics are: (1) Success rate — the percentage of tasks completed correctly on a held-out test set; this is the primary metric that determines whether the agent works at all. (2) Average steps per task — measures efficiency; an agent that takes 15 steps when 3 would suffice is wasting tokens and time. (3) Cost per task — tracks total LLM tokens consumed plus tool API costs. Secondary metrics include latency (end-to-end time), robustness (performance across varied inputs), and hallucination rate (how often the agent fabricates tool outputs). A good evaluation harness runs at least 50-100 test cases and reports all metrics with confidence intervals.</p>
+<p>The three most important agent metrics are: (1) Success rate — the percentage of tasks completed correctly on a held-out test set;.
+this is the primary metric that determines whether the agent works at all. (2) Average steps per task — measures efficiency;.
+an agent that takes 15 steps when 3 would suffice is wasting tokens and time. (3) Cost per task — tracks total LLM tokens consumed plus tool API costs. Secondary metrics include latency (end-to-end time),.
+robustness (performance across varied inputs), and hallucination rate (how often the agent fabricates tool outputs). A good evaluation harness runs at least 50-100 test cases and.
+reports all metrics with confidence intervals.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -758,7 +783,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q8: How does memory work in an AI agent system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Agent memory is divided into types: short-term memory stores the current conversation turns (typically a sliding window of the last 5-10 messages to fit context limits). Long-term memory persists facts across sessions using key-value stores (e.g., "user prefers Python") or vector databases for semantic search. Episodic memory records past actions and outcomes so the agent can learn from experience (e.g., "last time I searched that API, it returned 404"). Working memory holds the current task state. Implementation usually combines a message list with a summarization mechanism — when the window exceeds N messages, older turns are compressed into a summary that replaces them in the prompt.</p>
+<p>Agent memory is divided into types: short-term memory stores the current conversation turns (typically a sliding window of the last 5-10 messages to fit context limits). Long-term memory persists facts across sessions using key-value stores (e.g.,.
+"user prefers Python") or vector databases for semantic search. Episodic memory records past actions and outcomes so the agent can learn from experience (e.g.,.
+"last time I searched that API, it returned 404"). Working memory holds the current task state. Implementation usually combines a message list with a summarization mechanism — when the window exceeds N messages,.
+older turns are compressed into a summary that replaces them in the prompt.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -770,7 +798,10 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q9: What is the orchestrator loop in an agent system?
   </summary>
   <div class="tp-qa-answer">
-    <p>The orchestrator loop is the control flow that manages the agent's reasoning cycle. It typically: (1) sends the current context (task + history) to the LLM; (2) parses the LLM response to extract the intended action and arguments; (3) executes the corresponding tool or function; (4) appends the observation back into the context; and (5) repeats until the LLM outputs a final answer or the step limit is reached. Key implementation details include: setting a maximum step count (e.g., 10-20) to prevent infinite loops, handling JSON parsing failures gracefully, and managing the growing context length. The loop is what distinguishes an agent from a simple LLM call — it enables iterative problem-solving.</p>
+<p>The orchestrator loop is the control flow that manages the agent's reasoning cycle. It typically: (1) sends the current context (task + history) to the LLM;.
+(2) parses the LLM response to extract the intended action and arguments; (3) executes the corresponding tool or function; (4) appends the observation back into the context;.
+and (5) repeats until the LLM outputs a final answer or the step limit is reached. Key implementation details include: setting a maximum step count (e.g.,.
+10-20) to prevent infinite loops, handling JSON parsing failures gracefully, and managing the growing context length. The loop is what distinguishes an agent from a simple LLM call — it enables iterative problem-solving.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -782,7 +813,11 @@ AI agents are autonomous systems that combine LLM reasoning with tool use to acc
     Q10: How do you handle errors in tool execution within an agent?
   </summary>
   <div class="tp-qa-answer">
-    <p>Tool execution errors should be caught and reported back to the LLM as observations, not crash the agent. The pattern is: wrap each tool call in try/except, and if it fails, return an observation like <code>"Error: tool 'web_search' failed with: Connection timeout"</code>. The LLM can then decide to retry, use an alternative tool, or adjust its approach. For production systems, add retry logic with exponential backoff (e.g., 3 retries with 1s, 2s, 4s delays), timeout limits per tool call, and circuit breakers for persistently failing services. Argument validation before execution catches malformed LLM-generated arguments — use JSON Schema validation to reject invalid inputs before the tool runs, returning a clear error message to the LLM.</p>
+<p>Tool execution errors should be caught and reported back to the LLM as observations, not crash the agent. The pattern is: wrap each tool call in try/except,.
+and if it fails, return an observation like <code>"Error: tool 'web_search' failed with: Connection timeout"</code>. The LLM can then decide to retry,.
+use an alternative tool, or adjust its approach. For production systems, add retry logic with exponential backoff (e.g., 3 retries with 1s,.
+2s, 4s delays), timeout limits per tool call, and circuit breakers for persistently failing services. Argument validation before execution catches malformed LLM-generated arguments — use JSON Schema validation to reject invalid inputs before the tool runs,.
+returning a clear error message to the LLM.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

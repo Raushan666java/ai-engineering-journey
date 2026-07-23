@@ -698,62 +698,92 @@ console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // 4
 
 <details class="tp-qa-card">
   <summary><strong>Q1: How does Python's dict achieve O(1) average lookup?</summary>
-  Python uses a hash table with open addressing. When you insert a key, Python computes `hash(key) % table_size` to find the bucket index. If that bucket is occupied by a different key, it probes the next slot (simple linear probing in CPython's implementation). The table is resized when the load factor exceeds 2/3, ensuring O(1) amortized performance. The hash function is randomized per process start (PYTHONHASHSEED) to prevent collision-based denial-of-service attacks.
+Python uses a hash table with open addressing. When you insert a key, Python computes `hash(key) % table_size` to find the bucket index. If that bucket is occupied by a different key,.
+it probes the next slot (simple linear probing in CPython's implementation). The table is resized when the load factor exceeds 2/3,.
+ensuring O(1) amortized performance. The hash function is randomized per process start (PYTHONHASHSEED) to prevent collision-based denial-of-service attacks.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q2: What types can be used as dictionary keys in Python?</strong></summary>
-  Only hashable types: immutable objects whose hash value never changes. This includes `int`, `float`, `str`, `bytes`, `tuple` (if all elements are hashable), `frozenset`, and custom classes that implement `__hash__`. Lists, dictionaries, sets, and other mutable types are unhashable. When using a custom class as a key, you must implement both `__hash__` and `__eq__` consistently (equal objects must have the same hash).
+Only hashable types: immutable objects whose hash value never changes. This includes `int`, `float`, `str`, `bytes`, `tuple` (if all elements are hashable),.
+`frozenset`, and custom classes that implement `__hash__`. Lists, dictionaries, sets, and other mutable types are unhashable. When using a custom class as a key,.
+you must implement both `__hash__` and `__eq__` consistently (equal objects must have the same hash).
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q3: How do you handle collisions in a hash map?</summary>
-  Two main strategies: (1) Separate chaining — each bucket stores a linked list of entries. Insertions append to the list. Lookups traverse the list. (2) Open addressing — on collision, probe subsequent buckets linearly, quadratically, or via double hashing. Python uses open addressing with pseudo-random probing. Chaining is simpler and tolerant of high load factors. Open addressing is more cache-friendly and uses memory more efficiently at low load factors.
+Two main strategies: (1) Separate chaining — each bucket stores a linked list of entries. Insertions append to the list. Lookups traverse the list. (2) Open addressing — on collision,.
+probe subsequent buckets linearly, quadratically, or via double hashing. Python uses open addressing with pseudo-random probing. Chaining is simpler and tolerant of high load factors. Open addressing is more cache-friendly and.
+uses memory more efficiently at low load factors.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q4: What is the time complexity of the subarray sum equals k solution?</summary>
-  O(n) time and O(n) space. The single pass computes prefix sums and stores their frequencies in a hash map. For each position, we check if (current_sum - k) exists in the map. The count increments by the frequency of that prefix sum. The space is O(n) because in the worst case, every prefix sum could be distinct. This is optimal because subarray problems inherently require scanning each element.
+O(n) time and O(n) space. The single pass computes prefix sums and stores their frequencies in a hash map. For each position,.
+we check if (current_sum - k) exists in the map. The count increments by the frequency of that prefix sum. The space is O(n) because in the worst case,.
+every prefix sum could be distinct. This is optimal because subarray problems inherently require scanning each element.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q5: When would you use a set instead of a list for membership testing?</summary>
-  Always prefer a set when you only need to check membership and the collection is large. Set membership is O(1) average while list membership is O(n). For small collections (less than ~20 elements), the overhead of hashing may make lists competitive. Use a set when: checking if duplicates exist, computing intersections/unions, or performing many membership tests. Use a list when: order matters, you need indexing by position, or you have very few elements and no duplicate checking.
+Always prefer a set when you only need to check membership and the collection is large. Set membership is O(1) average while list membership is O(n). For.
+small collections (less than ~20 elements), the overhead of hashing may make lists competitive. Use a set when: checking if duplicates exist,.
+computing intersections/unions, or performing many membership tests. Use a list when: order matters, you need indexing by position, or you have very few elements and.
+no duplicate checking.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q6: How does the LRU cache design achieve O(1) operations?</summary>
-  It combines two data structures: (1) A hash map from key to linked list node for O(1) lookups. (2) A doubly linked list for O(1) insertions and deletions at both ends. On get, we find the node via the hash map, remove it from its current position, and move it to the head. On put, we do the same plus potentially evict the tail node. The hash map provides constant key-to-node mapping, while the linked list maintains the recency order without shifting elements. This dual-structure approach is a classic interview design problem.
+It combines two data structures: (1) A hash map from key to linked list node for O(1) lookups. (2) A doubly linked list for.
+O(1) insertions and deletions at both ends. On get, we find the node via the hash map, remove it from its current position,.
+and move it to the head. On put, we do the same plus potentially evict the tail node. The hash map provides constant key-to-node mapping,.
+while the linked list maintains the recency order without shifting elements. This dual-structure approach is a classic interview design problem.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q7: Explain the group anagrams problem and its optimal solution.</summary>
-  Group anagrams categorizes strings by their sorted character order. Two approaches: (1) Sort each string (O(k log k) per string) and use the sorted version as the hash key. (2) Count characters into a 26-element tuple (O(k) per string) for the key. The second approach is optimal when strings can be very long. Both achieve O(n * k) or better. The hash map groups strings with identical keys into lists. Counting sort is faster when the alphabet is fixed (26 lowercase letters), making the total complexity O(n * k + n * 26).
+Group anagrams categorizes strings by their sorted character order. Two approaches: (1) Sort each string (O(k log k) per string) and.
+use the sorted version as the hash key. (2) Count characters into a 26-element tuple (O(k) per string) for the key. The second approach is optimal when strings can be very long. Both achieve O(n * k) or.
+better. The hash map groups strings with identical keys into lists. Counting sort is faster when the alphabet is fixed (26 lowercase letters),.
+making the total complexity O(n * k + n * 26).
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q8: What is the difference between defaultdict and regular dict?</summary>
-  `defaultdict` from collections provides a default value for missing keys. When you access a key that doesn't exist, `defaultdict` calls the factory function (e.g., `int`, `list`, `set`) to create and return a default value. This eliminates boilerplate `if key not in dict` checks. `defaultdict(int)` initializes missing keys to 0, perfect for counting. `defaultdict(list)` initializes to an empty list, ideal for grouping. Regular dict raises a KeyError on missing key access. `defaultdict` is slightly slower for existing keys due to the factory function overhead.
+`defaultdict` from collections provides a default value for missing keys. When you access a key that doesn't exist, `defaultdict` calls the factory function (e.g.,.
+`int`, `list`, `set`) to create and return a default value. This eliminates boilerplate `if key not in dict` checks. `defaultdict(int)` initializes missing keys to 0,.
+perfect for counting. `defaultdict(list)` initializes to an empty list, ideal for grouping. Regular dict raises a KeyError on missing key access. `defaultdict` is slightly slower for.
+existing keys due to the factory function overhead.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q9: How do you find the longest consecutive sequence in O(n)?</summary>
-  Insert all elements into a hash set. Then iterate through the set, and for each element, check if its predecessor (element-1) is NOT in the set. If not, this element starts a sequence. Count consecutive elements by incrementing and checking the set until the sequence breaks. Update the global maximum. This works because we only start counting from sequence starts, ensuring each element is visited at most twice (once as a potential start, once as part of counting). The hash set provides O(1) membership checks.
+Insert all elements into a hash set. Then iterate through the set, and for each element, check if its predecessor (element-1) is NOT in the set. If not,.
+this element starts a sequence. Count consecutive elements by incrementing and checking the set until the sequence breaks. Update the global maximum. This works because we only start counting from sequence starts,.
+ensuring each element is visited at most twice (once as a potential start, once as part of counting). The hash set provides O(1) membership checks.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q10: What is the tradeoff between hash maps and balanced BSTs?</summary>
-  Hash maps offer O(1) average vs O(log n) for BSTs on basic operations. But BSTs offer: (1) Ordered iteration without sorting. (2) Range queries (find all keys between X and Y) in O(k + log n). (3) Consistent O(log n) worst-case (with tree balancing) vs O(n) worst-case for hash maps under collision. (4) More memory efficient for sparse data. Choose a hash map when you need simple key-value lookups and order doesn't matter. Choose a BST (TreeMap) when you need sorted data, range queries, or predictable performance.
+Hash maps offer O(1) average vs O(log n) for BSTs on basic operations. But BSTs offer: (1) Ordered iteration without sorting. (2) Range queries (find all keys between X and.
+Y) in O(k + log n). (3) Consistent O(log n) worst-case (with tree balancing) vs O(n) worst-case for hash maps under collision. (4) More memory efficient for.
+sparse data. Choose a hash map when you need simple key-value lookups and order doesn't matter. Choose a BST (TreeMap) when you need sorted data,.
+range queries, or predictable performance.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q11: How does Python's Counter work internally?</summary>
-  `Counter` is a subclass of `dict` designed for counting hashable objects. It inherits all dict properties (O(1) avg lookup, hash-based keys) and adds counting-specific methods: `most_common(n)` returns the n most frequent elements using `heapq.nlargest` on the items; `elements()` returns an iterator over elements repeating each as many times as its count; `subtract()` decrements counts; arithmetic operators (`+`, `-`, `&`, `|`) merge counters. The underlying storage is a regular dict mapping elements to integer counts. `Counter.most_common()` sorts by count internally, so it's O(n log n) for the full result, O(n log m) for the top m.
+`Counter` is a subclass of `dict` designed for counting hashable objects. It inherits all dict properties (O(1) avg lookup, hash-based keys) and.
+adds counting-specific methods: `most_common(n)` returns the n most frequent elements using `heapq.nlargest` on the items; `elements()` returns an iterator over elements repeating each as many times as its count;.
+`subtract()` decrements counts; arithmetic operators (`+`, `-`, `&`, `|`) merge counters. The underlying storage is a regular dict mapping elements to integer counts. `Counter.most_common()` sorts by count internally,.
+so it's O(n log n) for the full result, O(n log m) for the top m.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q12: What happens during hash map resize (rehash)?</summary>
-  When the load factor threshold is exceeded, the hash map allocates a new, larger bucket array (typically 2x or 4x the size). Every existing entry must be rehashed — its hash is recomputed modulo the new size, and it is inserted into the new bucket. Rehashing is O(n) and happens infrequently (amortized O(1) per insertion). Python's dict growth factor is approximately 2x (actually follows a specific sequence: 5, 11, 22, 45, 90, 181, 362, 724, 1448, 2896...). The resize ensures amortized constant-time performance despite individual resizes being expensive.
+When the load factor threshold is exceeded, the hash map allocates a new, larger bucket array (typically 2x or 4x the size). Every existing entry must be rehashed — its hash is recomputed modulo the new size,.
+and it is inserted into the new bucket. Rehashing is O(n) and happens infrequently (amortized O(1) per insertion). Python's dict growth factor.
+is approximately 2x (actually follows a specific sequence: 5, 11, 22, 45, 90, 181, 362, 724, 1448, 2896...). The resize ensures amortized constant-time performance despite individual resizes being expensive.
 </details>
 
 ## Chapter Quiz

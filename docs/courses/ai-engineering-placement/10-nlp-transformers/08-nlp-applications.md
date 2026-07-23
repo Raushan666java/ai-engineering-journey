@@ -1022,7 +1022,9 @@ Production sentiment systems use BERT fine-tuned on domain data, achieving 95%+ 
 
 ## Summary
 
-NLP applications span text classification, named entity recognition, question answering, summarization, and machine translation. Text classification assigns categories to documents using encoder-based models fine-tuned on labeled examples. Named entity recognition identifies entities like persons, organizations, and locations using token-level classification heads. Question answering extracts answer spans from context passages using SQuAD-style fine-tuning. Summarization generates concise versions of longer texts using encoder-decoder models with beam search decoding. Machine translation translates between languages using sequence-to-sequence architectures. Sentiment analysis and spam detection apply classification at document or sentence level, often using lightweight models distilled from larger transformers.
+NLP applications span text classification, named entity recognition, question answering, summarization, and machine translation. Text classification assigns categories to documents using encoder-based models fine-tuned on labeled examples. Named entity recognition identifies entities like persons,.
+organizations, and locations using token-level classification heads. Question answering extracts answer spans from context passages using SQuAD-style fine-tuning. Summarization generates concise versions of longer texts using encoder-decoder models with beam search decoding. Machine translation translates between languages using sequence-to-sequence architectures. Sentiment analysis and.
+spam detection apply classification at document or sentence level, often using lightweight models distilled from larger transformers.
 
 ## Practical Takeaways
 
@@ -1043,7 +1045,10 @@ NLP applications span text classification, named entity recognition, question an
     Q1: What is the IOB tagging scheme for NER?
   </summary>
   <div class="tp-qa-answer">
-    <p>IOB (Inside-Outside-Beginning) tags each token with one of three prefixes: B- (Beginning of an entity), I- (Inside/continuation of an entity), O (Outside/no entity). For example, "Barack Obama was born in Hawaii" is tagged as [B-PER, I-PER, O, O, O, B-LOC]. The B tag marks the first token of a multi-token entity. I tags continue the same entity type. O means no entity. Constraints enforced by CRF: B-PER can be followed by I-PER or O (not I-ORG). This scheme handles nested entities poorly (a variant called BIOES adds E=End and S=Single). Most NER datasets (CoNLL-2003, OntoNotes) use the IOB or BIOES format.</p>
+<p>IOB (Inside-Outside-Beginning) tags each token with one of three prefixes: B- (Beginning of an entity), I- (Inside/continuation of an entity), O (Outside/no entity). For.
+example, "Barack Obama was born in Hawaii" is tagged as [B-PER, I-PER, O, O, O, B-LOC]. The B tag marks the first token of a multi-token entity. I tags continue the same entity type. O means no entity. Constraints enforced by CRF: B-PER can be followed by I-PER or.
+O (not I-ORG). This scheme handles nested entities poorly (a variant called BIOES adds E=End and S=Single). Most NER datasets (CoNLL-2003,.
+OntoNotes) use the IOB or BIOES format.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1055,7 +1060,10 @@ NLP applications span text classification, named entity recognition, question an
     Q2: How does BERT handle extractive question answering?
   </summary>
   <div class="tp-qa-answer">
-    <p>For extractive QA (SQuAD), BERT takes the input [CLS] question [SEP] context [SEP]. Two vectors S and E (size d_model) are learned. For each position i, the start score = S^T * h_i and end score = E^T * h_i, where h_i is BERT's hidden state at position i. The answer span (i,j) is selected by maximizing S^T·h_i + E^T·h_j subject to 0 ≤ i ≤ j < length and j-i+1 ≤ max_answer_length (typically 30). During training, cross-entropy loss is computed for start and end positions independently. BERT-base achieves 88.5 F1 on SQuAD 1.1. For SQuAD 2.0 (unanswerable questions), a no-answer score is added as an additional learnable vector.</p>
+<p>For extractive QA (SQuAD), BERT takes the input [CLS] question [SEP] context [SEP]. Two vectors S and E (size d_model) are learned. For.
+each position i, the start score = S^T * h_i and end score = E^T * h_i, where h_i is BERT's hidden state at position i. The answer span (i,j) is selected by maximizing S^T·h_i + E^T·h_j subject to 0 ≤ i ≤ j < length and.
+j-i+1 ≤ max_answer_length (typically 30). During training, cross-entropy loss is computed for start and end positions independently. BERT-base achieves 88.5 F1 on SQuAD 1.1. For.
+SQuAD 2.0 (unanswerable questions), a no-answer score is added as an additional learnable vector.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1067,7 +1075,9 @@ NLP applications span text classification, named entity recognition, question an
     Q3: What is the difference between extractive and abstractive summarization?
   </summary>
   <div class="tp-qa-answer">
-    <p>Extractive summarization selects existing sentences from the source document and concatenates them. It uses sentence scoring methods like TextRank (graph-based PageRank on sentence similarity) or TF-IDF centroid selection. Pros: factual (no hallucination), grammatically perfect sentences. Cons: may not capture the essence, redundant, lack of coherence between selected sentences. Abstractive summarization generates new sentences that may not appear in the source, using seq2seq models (BART, T5, Pegasus). Pros: more fluent, concise, can paraphrase. Cons: can hallucinate facts, requires more training data. Modern systems (BART) achieve ROUGE-L of 40+ on CNN/DailyMail. Hybrid approaches extract key sentences then rewrite them abstractively.</p>
+<p>Extractive summarization selects existing sentences from the source document and concatenates them. It uses sentence scoring methods like TextRank (graph-based PageRank on sentence similarity) or.
+TF-IDF centroid selection. Pros: factual (no hallucination), grammatically perfect sentences. Cons: may not capture the essence, redundant, lack of coherence between selected sentences. Abstractive summarization generates new sentences that may not appear in the source,.
+using seq2seq models (BART, T5, Pegasus). Pros: more fluent, concise, can paraphrase. Cons: can hallucinate facts, requires more training data. Modern systems (BART) achieve ROUGE-L of 40+ on CNN/DailyMail. Hybrid approaches extract key sentences then rewrite them abstractively.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1079,7 +1089,10 @@ NLP applications span text classification, named entity recognition, question an
     Q4: How does BLEU score work for machine translation evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>BLEU (Bilingual Evaluation Understudy) compares n-gram overlap between machine-translated text (hypothesis) and human translations (references). It computes precision for unigrams, bigrams, trigrams, and 4-grams, then averages them geometrically. A brevity penalty (BP) is applied: if the hypothesis is shorter than the reference, BLEU is penalized. BLEU = BP * exp(∑_{n=1}^{4} w_n * log p_n) where p_n is n-gram precision and w_n = 0.25. Score range: 0-100. Human-level translation is ~40-60 BLEU. BLEU correlates reasonably with human judgment at the corpus level but is unreliable for individual sentences. Limitations: ignores meaning, prefers surface form matching, doesn't handle synonyms.</p>
+<p>BLEU (Bilingual Evaluation Understudy) compares n-gram overlap between machine-translated text (hypothesis) and human translations (references). It computes precision for unigrams, bigrams,.
+trigrams, and 4-grams, then averages them geometrically. A brevity penalty (BP) is applied: if the hypothesis is shorter than the reference,.
+BLEU is penalized. BLEU = BP * exp(∑_{n=1}^{4} w_n * log p_n) where p_n is n-gram precision and w_n = 0.25. Score range: 0-100. Human-level translation is ~40-60 BLEU. BLEU correlates reasonably with human judgment at the corpus level but.
+is unreliable for individual sentences. Limitations: ignores meaning, prefers surface form matching, doesn't handle synonyms.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1091,7 +1104,10 @@ NLP applications span text classification, named entity recognition, question an
     Q5: How do you build a spam detection system for emails?
   </summary>
   <div class="tp-qa-answer">
-    <p>Steps: (1) Collect labeled data (spam/ham emails). (2) Feature engineering: word count, uppercase ratio, exclamation/money symbol counts, URL count, presence of spam keywords ("free", "winner", "guarantee"), email header analysis (SPF, DKIM). (3) Train a classifier: logistic regression with TF-IDF features is a strong baseline reaching 95%+ accuracy. (4) Advanced: fine-tune BERT/DistilBERT on email text, achieving 99%+ accuracy. (5) Handle imbalanced data: use weighted loss or oversampling (spam is typically 20% of emails). (6) Deployment: use streaming classification with regular model updates. (7) Evaluation: precision matters more than recall for spam (false positives = lost emails).</p>
+<p>Steps: (1) Collect labeled data (spam/ham emails). (2) Feature engineering: word count, uppercase ratio, exclamation/money symbol counts, URL count, presence of spam keywords ("free",.
+"winner", "guarantee"), email header analysis (SPF, DKIM). (3) Train a classifier: logistic regression with TF-IDF features is a strong baseline reaching 95%+ accuracy. (4) Advanced: fine-tune BERT/DistilBERT on email text,.
+achieving 99%+ accuracy. (5) Handle imbalanced data: use weighted loss or oversampling (spam is typically 20% of emails). (6) Deployment: use streaming classification with regular model updates. (7) Evaluation: precision matters more than recall for.
+spam (false positives = lost emails).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1103,7 +1119,11 @@ NLP applications span text classification, named entity recognition, question an
     Q6: What is Retrieval-Augmented Generation (RAG)?
   </summary>
   <div class="tp-qa-answer">
-    <p>RAG combines a retriever (e.g., Dense Passage Retriever, BM25) with a generator (e.g., BART, T5, LLaMA). Given a query, the retriever fetches the top-k relevant documents from a knowledge base. The generator conditions on both the query and the retrieved documents to produce an answer. This allows the system to access up-to-date or domain-specific knowledge without retraining. RAG reduces hallucination compared to pure generation because the model has factual grounding. Variants: RAG-Sequence (retrieved docs used across all tokens) and RAG-Token (different docs per token). RAG with BART-base achieves state-of-the-art results on open-domain QA (Natural Questions, TriviaQA). Modern RAG systems use vector databases (FAISS, Pinecone) for billion-scale retrieval.</p>
+<p>RAG combines a retriever (e.g., Dense Passage Retriever, BM25) with a generator (e.g., BART, T5, LLaMA). Given a query, the retriever fetches the top-k relevant documents from a knowledge base. The generator.
+conditions on both the query and the retrieved documents to produce an answer. This allows the system to access up-to-date or.
+domain-specific knowledge without retraining. RAG reduces hallucination compared to pure generation because the model has factual grounding. Variants: RAG-Sequence (retrieved docs used across all tokens) and.
+RAG-Token (different docs per token). RAG with BART-base achieves state-of-the-art results on open-domain QA (Natural Questions, TriviaQA). Modern RAG systems use vector.
+databases (FAISS, Pinecone) for billion-scale retrieval.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1115,7 +1135,9 @@ NLP applications span text classification, named entity recognition, question an
     Q7: How do you handle aspect-based sentiment analysis?
   </summary>
   <div class="tp-qa-answer">
-    <p>Aspect-based sentiment identifies sentiment toward specific aspects/features. Example: "The food was great but the service was slow" → food: positive, service: negative. Approaches: (1) Pipeline: first extract aspects (NER-style), then classify sentiment per aspect. (2) Joint models: BERT with aspect embeddings — concatenate aspect with sentence and classify. (3) Sequence labeling with sentiment tags: label each token with aspect-sentiment (e.g., B-FOOD-POS, I-FOOD-POS). (4) Span-based: predict aspect and sentiment spans together. The SemEval ABSA datasets are standard benchmarks. Fine-tuned BERT with aspect-specific attention achieves 90%+ accuracy on laptop/restaurant reviews.</p>
+<p>Aspect-based sentiment identifies sentiment toward specific aspects/features. Example: "The food was great but the service was slow" → food: positive, service: negative. Approaches: (1) Pipeline: first extract aspects (NER-style),.
+then classify sentiment per aspect. (2) Joint models: BERT with aspect embeddings — concatenate aspect with sentence and classify. (3) Sequence labeling with sentiment tags: label each token with aspect-sentiment (e.g.,.
+B-FOOD-POS, I-FOOD-POS). (4) Span-based: predict aspect and sentiment spans together. The SemEval ABSA datasets are standard benchmarks. Fine-tuned BERT with aspect-specific attention achieves 90%+ accuracy on laptop/restaurant reviews.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1127,7 +1149,11 @@ NLP applications span text classification, named entity recognition, question an
     Q8: How does TextRank work for extractive summarization?
   </summary>
   <div class="tp-qa-answer">
-    <p>TextRank is a graph-based algorithm adapted from PageRank. Sentences are nodes, and edges represent sentence similarity (typically cosine similarity of TF-IDF vectors or word overlap Jaccard index). The PageRank algorithm iteratively computes sentence importance: each sentence's score is redistributed to connected sentences. After convergence (typically 20-50 iterations), top-k sentences by score are selected. The damping factor d=0.85 controls the probability of random jumps. Selected sentences are ordered by their original position in the document (not by score). Variants include using BERT embeddings for similarity and adding positional bias (first sentences often contain topic information). TextRank works well for news articles but less so for highly-structured documents.</p>
+<p>TextRank is a graph-based algorithm adapted from PageRank. Sentences are nodes, and edges represent sentence similarity (typically cosine similarity of TF-IDF vectors or.
+word overlap Jaccard index). The PageRank algorithm iteratively computes sentence importance: each sentence's score is redistributed to connected sentences. After convergence (typically 20-50 iterations),.
+top-k sentences by score are selected. The damping factor d=0.85 controls the probability of random jumps. Selected sentences are ordered by their original position in the document (not by score). Variants include using BERT embeddings for.
+similarity and adding positional bias (first sentences often contain topic information). TextRank works well for news articles but less so for.
+highly-structured documents.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1139,7 +1165,10 @@ NLP applications span text classification, named entity recognition, question an
     Q9: What challenges arise in low-resource machine translation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Low-resource languages face: (1) Limited parallel data — <10M sentence pairs. (2) Morphological complexity — Turkish, Finnish, Hungarian have rich inflection. (3) Domain mismatch — available parallel data may be religious/legal text, not conversational. (4) No standard tokenization — SentencePiece/BPE must be trained on small data. Mitigations: (1) Transfer learning — pre-train on high-resource, fine-tune on low-resource. (2) Back-translation — translate target-side monolingual data to source, add synthetic pairs. (3) Multilingual models — mBART, M2M-100 share parameters across 100+ languages, improving low-resource via cross-lingual transfer. (4) Unsupervised NMT — cross-lingual embeddings + denoising autoencoders. (5) Data augmentation — code-switching, word replacement.</p>
+<p>Low-resource languages face: (1) Limited parallel data — <10M sentence pairs. (2) Morphological complexity — Turkish, Finnish, Hungarian have rich inflection. (3) Domain mismatch — available parallel data may be religious/legal text,.
+not conversational. (4) No standard tokenization — SentencePiece/BPE must be trained on small data. Mitigations: (1) Transfer learning — pre-train on high-resource,.
+fine-tune on low-resource. (2) Back-translation — translate target-side monolingual data to source, add synthetic pairs. (3) Multilingual models — mBART, M2M-100 share parameters across 100+ languages,.
+improving low-resource via cross-lingual transfer. (4) Unsupervised NMT — cross-lingual embeddings + denoising autoencoders. (5) Data augmentation — code-switching, word replacement.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1151,7 +1180,9 @@ NLP applications span text classification, named entity recognition, question an
     Q10: How do you evaluate a text classification model beyond accuracy?
   </summary>
   <div class="tp-qa-answer">
-    <p>Beyond accuracy: (1) Precision, Recall, F1-score — essential for imbalanced datasets. Precision = TP/(TP+FP), Recall = TP/(TP+FN), F1 = 2*P*R/(P+R). (2) Confusion matrix — shows which classes are confused. (3) Macro vs micro vs weighted F1: macro averages per-class F1 equally, micro counts global TP/FP/FN, weighted averages by class support. (4) ROC-AUC — tradeoff between TPR and FPR across thresholds. (5) Log-loss — probabilistic measure of uncertainty. (6) Calibration curve — does 90% predicted probability correspond to 90% actual accuracy? (7) Per-class metrics — rare classes often perform worse. (8) Error analysis — manually inspect misclassifications to identify patterns (annotation errors, ambiguous cases, missing features).</p>
+<p>Beyond accuracy: (1) Precision, Recall, F1-score — essential for imbalanced datasets. Precision = TP/(TP+FP), Recall = TP/(TP+FN), F1 = 2*P*R/(P+R). (2) Confusion matrix — shows which classes are confused. (3) Macro vs micro vs weighted F1: macro averages per-class F1 equally,.
+micro counts global TP/FP/FN, weighted averages by class support. (4) ROC-AUC — tradeoff between TPR and FPR across thresholds. (5) Log-loss — probabilistic measure of uncertainty. (6) Calibration curve — does 90% predicted probability correspond to 90% actual accuracy? (7) Per-class metrics — rare classes often perform worse. (8) Error.
+analysis — manually inspect misclassifications to identify patterns (annotation errors, ambiguous cases, missing features).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

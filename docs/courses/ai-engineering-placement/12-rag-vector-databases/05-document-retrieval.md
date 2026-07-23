@@ -839,7 +839,10 @@ print(f"Faceted query: {len(faceted.retrieve('RAG', {'type': 'paper'}))} results
 
 ## Summary
 
-Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for exact keyword matching using inverted indexes, dense (embedding similarity, bi-encoders, ColBERT) for semantic matching, and hybrid fusion (RRF, weighted combination, learning-to-rank) for best overall performance. Query expansion techniques including synonym expansion, HyDE (hypothetical document embeddings), and multi-query retrieval improve recall by diversifying the search surface. Metadata filtering and boosting refine results through attribute constraints and relevance adjustments. The choice of retrieval paradigm depends on document scale, vocabulary overlap, semantic requirements, and latency constraints.
+Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for exact keyword matching using inverted indexes, dense (embedding similarity, bi-encoders,.
+ColBERT) for semantic matching, and hybrid fusion (RRF, weighted combination, learning-to-rank) for best overall performance. Query expansion techniques including synonym expansion,.
+HyDE (hypothetical document embeddings), and multi-query retrieval improve recall by diversifying the search surface. Metadata filtering and boosting refine results through attribute constraints and.
+relevance adjustments. The choice of retrieval paradigm depends on document scale, vocabulary overlap, semantic requirements, and latency constraints.
 
 ## Practical Takeaways
 
@@ -860,7 +863,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q1: How does BM25 work and what do the k1 and b parameters control?
   </summary>
   <div class="tp-qa-answer">
-    <p>BM25 computes a relevance score for each document given a query by summing over query terms. The k1 parameter controls term frequency saturation — with k1=0, BM25 becomes pure IDF (no term frequency effect); with k1→∞, BM25 becomes raw term frequency. The b parameter controls document length normalization — with b=0, no normalization; with b=1, full normalization. Typical defaults are k1=1.5, b=0.75. BM25 improves on TF-IDF by preventing a term from dominating when it appears many times (k1 saturation) and by penalizing long documents that may contain query terms by chance (b normalization). Tune these parameters on your corpus for optimal retrieval.</p>
+<p>BM25 computes a relevance score for each document given a query by summing over query terms. The k1 parameter controls term frequency saturation — with k1=0,.
+BM25 becomes pure IDF (no term frequency effect); with k1→∞, BM25 becomes raw term frequency. The b parameter controls document length normalization — with b=0,.
+no normalization; with b=1, full normalization. Typical defaults are k1=1.5, b=0.75. BM25 improves on TF-IDF by preventing a term from dominating when it appears many times (k1 saturation) and.
+by penalizing long documents that may contain query terms by chance (b normalization). Tune these parameters on your corpus for optimal retrieval.</p>
     <pre><code>def score(self, query_terms, doc_id):
     for term in query_terms:
         idf = log((N - df + 0.5) / (df + 0.5) + 1)
@@ -878,7 +884,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q2: What is reciprocal rank fusion (RRF) and why does it work well for hybrid search?
   </summary>
   <div class="tp-qa-answer">
-    <p>RRF combines multiple ranked lists by assigning each document a score equal to the sum of 1/(k + rank) across all rankings, where k is a constant (typically 60). It works well because it is rank-based rather than score-based — it doesn't require score normalization between different retrieval systems. This is crucial because BM25 scores (e.g., 0-30) and cosine similarity scores (e.g., 0.5-0.95) are on completely different scales. RRF is robust to outliers and consistently outperforms individual sparse or dense retrieval on recall@k. The k constant controls how much high rankings dominate — smaller k gives more weight to top-ranked items.</p>
+<p>RRF combines multiple ranked lists by assigning each document a score equal to the sum of 1/(k + rank) across all rankings,.
+where k is a constant (typically 60). It works well because it is rank-based rather than score-based — it doesn't require score normalization between different retrieval systems. This is crucial because BM25 scores (e.g.,.
+0-30) and cosine similarity scores (e.g., 0.5-0.95) are on completely different scales. RRF is robust to outliers and consistently outperforms individual sparse or.
+dense retrieval on recall@k. The k constant controls how much high rankings dominate — smaller k gives more weight to top-ranked items.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -890,7 +899,9 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q3: How does query expansion with HyDE (Hypothetical Document Embedding) improve retrieval?
   </summary>
   <div class="tp-qa-answer">
-    <p>HyDE generates a hypothetical document that answers the query (using an LLM), then uses that document's embedding for retrieval instead of the query embedding. The intuition is that a hypothetical answer lies closer in embedding space to real relevant documents than the original query does. For example, for the query "How does backpropagation work?", HyDE might generate "Backpropagation computes gradients by applying the chain rule through the network layers..." — this hypothetical document embedding will be closer to actual technical explanations of backpropagation than the short query embedding. HyDE particularly helps with short, ambiguous queries (under 5 words) and queries whose vocabulary differs from the target documents.</p>
+<p>HyDE generates a hypothetical document that answers the query (using an LLM), then uses that document's embedding for retrieval instead of the query embedding. The intuition is that a hypothetical answer lies closer in embedding space to real relevant documents than the original query does. For.
+example, for the query "How does backpropagation work?", HyDE might generate "Backpropagation computes gradients by applying the chain rule through the network layers..." — this hypothetical document embedding will be closer to actual technical explanations of backpropagation than the short query embedding. HyDE particularly helps with short,.
+ambiguous queries (under 5 words) and queries whose vocabulary differs from the target documents.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -902,7 +913,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q4: What is the cascade retriever architecture and when should you use it?
   </summary>
   <div class="tp-qa-answer">
-    <p>A cascade retriever uses a two-stage approach: a fast bi-encoder retrieves top-K candidates (e.g., top-100), then a slow but accurate cross-encoder reranks them to produce the final top-10. The bi-encoder stage pre-computes vector embeddings for all documents, enabling sub-100ms search over millions of documents. The cross-encoder stage processes query-document pairs individually, taking 10-100ms per pair but providing much more accurate relevance scoring. Use cascades when latency budget allows 100-500ms for retrieval and you need the highest possible precision at top-k. Typical configuration: bi-encoder retrieves top-100 in 50ms, cross-encoder reranks 100 candidates in 500ms (5ms each) for highly accurate top-10 results.</p>
+<p>A cascade retriever uses a two-stage approach: a fast bi-encoder retrieves top-K candidates (e.g., top-100), then a slow but accurate cross-encoder reranks them to produce the final top-10. The bi-encoder stage pre-computes vector.
+embeddings for all documents, enabling sub-100ms search over millions of documents. The cross-encoder stage processes query-document pairs individually, taking 10-100ms per pair but.
+providing much more accurate relevance scoring. Use cascades when latency budget allows 100-500ms for retrieval and you need the highest possible precision at top-k. Typical configuration: bi-encoder retrieves top-100 in 50ms,.
+cross-encoder reranks 100 candidates in 500ms (5ms each) for highly accurate top-10 results.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -914,7 +928,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q5: How does ColBERT's late interaction work and why is it more efficient than cross-encoders?
   </summary>
   <div class="tp-qa-answer">
-    <p>ColBERT encodes query and document separately into token-level embeddings (like a bi-encoder), but scores relevance by computing the maximum similarity (MaxSim) between each query token and all document tokens, then averaging. This late interaction captures fine-grained term matching without requiring query-document pairs to be processed together. It is more efficient than cross-encoders because document token embeddings can be pre-computed and stored, and the MaxSim operation is a simple matrix multiplication. ColBERT typically achieves 90-95% of cross-encoder accuracy at 10-100x lower latency, making it suitable for reranking 100-1000 candidates in real-time.</p>
+<p>ColBERT encodes query and document separately into token-level embeddings (like a bi-encoder), but scores relevance by computing the maximum similarity (MaxSim) between each query token and.
+all document tokens, then averaging. This late interaction captures fine-grained term matching without requiring query-document pairs to be processed together. It is more efficient than cross-encoders because document token embeddings can be pre-computed and.
+stored, and the MaxSim operation is a simple matrix multiplication. ColBERT typically achieves 90-95% of cross-encoder accuracy at 10-100x lower latency,.
+making it suitable for reranking 100-1000 candidates in real-time.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -926,7 +943,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q6: How do you implement metadata boosting in document retrieval?
   </summary>
   <div class="tp-qa-answer">
-    <p>Metadata boosting applies a multiplicative factor to retrieval scores based on metadata attributes. For example, boost documents with source="wiki" by 1.2x or documents published in the last year by 1.5x. Implement this in a BoostedRetriever wrapper that retrieves top-K results, then multiplies each result's score by the document's boost factor (default 1.0). Boosted scores may change the ranking order, so re-sort after applying boosts. Boosting is a soft signal — documents without the boost can still appear if their base score is high enough. Unlike hard filtering (which completely excludes documents), boosting preserves recall while favoring preferred documents.</p>
+<p>Metadata boosting applies a multiplicative factor to retrieval scores based on metadata attributes. For example, boost documents with source="wiki" by 1.2x or.
+documents published in the last year by 1.5x. Implement this in a BoostedRetriever wrapper that retrieves top-K results, then multiplies each result's score by the document's boost factor.
+(default 1.0). Boosted scores may change the ranking order, so re-sort after applying boosts. Boosting is a soft signal — documents without the boost can still appear if their base score is high enough. Unlike hard filtering (which completely excludes documents),.
+boosting preserves recall while favoring preferred documents.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -938,7 +958,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q7: What is learning-to-rank and how does it apply to RAG retrieval?
   </summary>
   <div class="tp-qa-answer">
-    <p>Learning-to-rank (LTR) trains a model to combine multiple retrieval signals (BM25 score, cosine similarity, document freshness, page rank, etc.) into a single relevance score. Feature engineering extracts signals like query-document term overlap, embedding similarity, document length, and metadata attributes. A ranking model (LambdaRank, XGBoost) is trained on relevance-judged query-document pairs. In RAG, LTR can fuse sparse and dense scores with learned weights rather than fixed heuristics like RRF. LTR typically achieves 5-15% improvement over RRF fusion but requires a large training set of relevance annotations (1000+ query-document pairs). For small collections, RRF fusion is usually sufficient.</p>
+<p>Learning-to-rank (LTR) trains a model to combine multiple retrieval signals (BM25 score, cosine similarity, document freshness, page rank, etc.) into a single relevance score. Feature engineering extracts signals like query-document term overlap,.
+embedding similarity, document length, and metadata attributes. A ranking model (LambdaRank, XGBoost) is trained on relevance-judged query-document pairs. In RAG, LTR can fuse sparse and.
+dense scores with learned weights rather than fixed heuristics like RRF. LTR typically achieves 5-15% improvement over RRF fusion but requires a large training set of relevance annotations (1000+ query-document pairs). For.
+small collections, RRF fusion is usually sufficient.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -950,7 +973,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q8: How does multi-query retrieval improve recall and what are the trade-offs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Multi-query retrieval generates multiple paraphrased versions of the original query (using an LLM or rule-based thesaurus), retrieves documents for each variant, and fuses the results using RRF. This improves recall because different query phrasings may match different documents — for example, "car repair", "automotive maintenance", and "fixing vehicles" each retrieve different subsets. The trade-off is linear cost increase: N queries means N retrieval calls and N times the embedding cost. Usually 3-5 query variants suffice. Multi-query works best for short, ambiguous queries where the user's exact phrasing may not match the document terminology.</p>
+<p>Multi-query retrieval generates multiple paraphrased versions of the original query (using an LLM or rule-based thesaurus), retrieves documents for each variant,.
+and fuses the results using RRF. This improves recall because different query phrasings may match different documents — for example, "car repair",.
+"automotive maintenance", and "fixing vehicles" each retrieve different subsets. The trade-off is linear cost increase: N queries means N retrieval calls and.
+N times the embedding cost. Usually 3-5 query variants suffice. Multi-query works best for short, ambiguous queries where the user's exact phrasing may not match the document terminology.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -962,7 +988,11 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q9: How do you build an inverted index for sparse retrieval?
   </summary>
   <div class="tp-qa-answer">
-    <p>An inverted index maps each unique term to the list of document IDs containing it, along with term frequency. Construction involves: tokenizing each document into terms, recording the term frequency per document, and merging into a dictionary where keys are terms and values are postings lists. For BM25, also store each document's total term count for length normalization. Query processing involves: looking up each query term in the index, merging their postings lists, computing BM25 scores, and returning the top-K documents. The index can be compressed with techniques like variable-byte encoding or gamma codes to reduce memory footprint.</p>
+<p>An inverted index maps each unique term to the list of document IDs containing it, along with term frequency. Construction involves: tokenizing each document into terms,.
+recording the term frequency per document, and merging into a dictionary where keys are terms and values are postings lists. For.
+BM25, also store each document's total term count for length normalization. Query processing involves: looking up each query term in the index,.
+merging their postings lists, computing BM25 scores, and returning the top-K documents. The index can be compressed with techniques like variable-byte encoding or.
+gamma codes to reduce memory footprint.</p>
     <pre><code>class InvertedIndex:
     def add_document(self, doc_id, text):
         for term, count in Counter(tokenize(text)).items():
@@ -979,7 +1009,10 @@ Document retrieval in RAG encompasses three paradigms: sparse (BM25, TF-IDF) for
     Q10: How do you handle retrieval when there are no relevant documents for a query?
   </summary>
   <div class="tp-qa-answer">
-    <p>Implement a ReQueryDecider that checks if retrieval scores are below a threshold (e.g., all below 0.3) and triggers a reformulation: rephrase the query, expand with synonyms, or use HyDE to generate a hypothetical document. If after N reformulations the scores remain low, implement a graceful fallback: return "I don't have enough information to answer that question" rather than forcing the LLM to answer without context. In the augmentation prompt, include a no-context instruction: "If the context does not contain enough information, say you don't know." Always log low-score queries for analysis — they may indicate gaps in your knowledge base.</p>
+<p>Implement a ReQueryDecider that checks if retrieval scores are below a threshold (e.g., all below 0.3) and triggers a reformulation: rephrase the query,.
+expand with synonyms, or use HyDE to generate a hypothetical document. If after N reformulations the scores remain low, implement a graceful fallback: return "I don't have enough information to answer that question" rather than forcing the LLM to answer without context. In the augmentation prompt,.
+include a no-context instruction: "If the context does not contain enough information, say you don't know." Always log low-score queries for.
+analysis — they may indicate gaps in your knowledge base.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

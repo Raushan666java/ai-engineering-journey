@@ -45,7 +45,9 @@ flowchart LR
 
 ## Introduction
 
-Foundation models like GPT-4o, Claude, and Gemini have fundamentally changed what AI can do — from writing production code to reasoning across massive document collections. But using these models effectively requires understanding their architectures, limitations, and the trade-offs between proprietary and open-source options. This chapter gives you the knowledge to make informed model selection decisions, recognize when models will fail, and deploy them responsibly.
+Foundation models like GPT-4o, Claude, and Gemini have fundamentally changed what AI can do — from writing production code to reasoning across massive document collections. But using these models effectively requires understanding their architectures,.
+limitations, and the trade-offs between proprietary and open-source options. This chapter gives you the knowledge to make informed model selection decisions,.
+recognize when models will fail, and deploy them responsibly.
 
 
 ## Prerequisites
@@ -861,7 +863,9 @@ async function callModel<T = string>(
     Q1: What are foundation models and how do they differ from traditional ML models?
   </summary>
   <div class="tp-qa-answer">
-    <p>Foundation models are large neural networks trained on broad data at scale, designed to be adapted to a wide range of downstream tasks. Unlike traditional ML models trained for a single task, foundation models exhibit emergent abilities, in-context learning, and transfer learning. They are built on the transformer architecture and typically contain billions of parameters trained on trillions of tokens.</p>
+<p>Foundation models are large neural networks trained on broad data at scale, designed to be adapted to a wide range of downstream tasks. Unlike traditional ML models trained for.
+a single task, foundation models exhibit emergent abilities, in-context learning, and transfer learning. They are built on the transformer architecture and.
+typically contain billions of parameters trained on trillions of tokens.</p>
     <p><strong>Key differences</strong>:</p>
     <ul>
       <li>Traditional ML: task-specific training, smaller datasets, specialized architectures</li>
@@ -1168,7 +1172,10 @@ d) Learning rate and dropout
 
 ## Summary
 
-Foundation models are large transformer-based neural networks trained on internet-scale data that exhibit emergent abilities like in-context learning and chain-of-thought reasoning. The landscape includes proprietary models (GPT-4o, Claude 3.5, Gemini 1.5) offering cutting-edge quality and open-source models (Llama 3.1, Mistral, Qwen) enabling self-hosting and customization. MoE architectures enable efficient scaling by activating only a fraction of parameters per token. Key limitations include hallucination, knowledge cutoffs, and bias — mitigated through RAG, safety guardrails, and alignment techniques. Model selection involves balancing latency, cost, context window, and accuracy, with model routing systems optimizing cost by directing queries to appropriately sized models.
+Foundation models are large transformer-based neural networks trained on internet-scale data that exhibit emergent abilities like in-context learning and chain-of-thought reasoning. The landscape includes proprietary models (GPT-4o,.
+Claude 3.5, Gemini 1.5) offering cutting-edge quality and open-source models (Llama 3.1, Mistral, Qwen) enabling self-hosting and customization. MoE architectures enable efficient scaling by activating only a fraction of parameters per token. Key limitations include hallucination,.
+knowledge cutoffs, and bias — mitigated through RAG, safety guardrails, and alignment techniques. Model selection involves balancing latency, cost, context window,.
+and accuracy, with model routing systems optimizing cost by directing queries to appropriately sized models.
 
 
 ## Placement Section

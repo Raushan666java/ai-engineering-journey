@@ -1090,7 +1090,9 @@ def evaluate_for_ci(
 
 ## Summary
 
-LLM evaluation is a multifaceted discipline requiring a combination of automated metrics, reference-based comparison, reference-free techniques, and human judgment. Automated metrics like ROUGE, BLEU, BERTScore, and METEOR provide scalable n-gram and semantic overlap measurement. Reference-free methods including perplexity, self-consistency, LLM-as-judge, and factual consistency checks enable evaluation when gold standards are unavailable. Human evaluation with pairwise comparisons, Likert scales, and inter-rater agreement measures remains essential for subjective quality dimensions. Task-specific benchmarks like MMLU, GSM8K, and TruthfulQA provide standardized comparison across models. Production systems integrate evaluation into automated pipelines with regression tracking to maintain quality across model versions.
+LLM evaluation is a multifaceted discipline requiring a combination of automated metrics, reference-based comparison, reference-free techniques, and human judgment. Automated metrics like ROUGE,.
+BLEU, BERTScore, and METEOR provide scalable n-gram and semantic overlap measurement. Reference-free methods including perplexity, self-consistency, LLM-as-judge, and factual consistency checks enable evaluation when gold standards are unavailable. Human evaluation with pairwise comparisons,.
+Likert scales, and inter-rater agreement measures remains essential for subjective quality dimensions. Task-specific benchmarks like MMLU, GSM8K, and TruthfulQA provide standardized comparison across models. Production systems integrate evaluation into automated pipelines with regression tracking to maintain quality across model versions.
 
 ## Practical Takeaways
 
@@ -1111,7 +1113,9 @@ LLM evaluation is a multifaceted discipline requiring a combination of automated
     Q1: How would you evaluate an LLM's faithfulness in a summarization task without a reference summary?
   </summary>
   <div class="tp-qa-answer">
-    <p>You can use reference-free evaluation methods like factual consistency checking. Extract claims from the generated summary and verify each against the source document using an LLM-as-judge. For example, split the summary into individual sentences, then prompt a judge model (e.g., GPT-4o) to classify each as SUPPORTED, NOT_SUPPORTED, or CONTRADICTED relative to the source. The faithfulness score is the fraction of supported claims. This approach catches hallucinations even when no gold-standard summary exists.</p>
+<p>You can use reference-free evaluation methods like factual consistency checking. Extract claims from the generated summary and verify each against the source document using an LLM-as-judge. For.
+example, split the summary into individual sentences, then prompt a judge model (e.g., GPT-4o) to classify each as SUPPORTED, NOT_SUPPORTED, or.
+CONTRADICTED relative to the source. The faithfulness score is the fraction of supported claims. This approach catches hallucinations even when no gold-standard summary exists.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1123,7 +1127,9 @@ LLM evaluation is a multifaceted discipline requiring a combination of automated
     Q2: Explain the difference between ROUGE-L and BLEU and when you would use each.
   </summary>
   <div class="tp-qa-answer">
-    <p>ROUGE-L measures the longest common subsequence (LCS) between candidate and reference, emphasizing recall — it rewards how much of the reference content appears in the output. BLEU computes n-gram precision with a brevity penalty, emphasizing precision — it rewards how much of the candidate output matches the reference. Use ROUGE for summarization (where capturing all key points matters) and BLEU for translation (where fluency and precision of phrasing matters). A practical pipeline might compute both:</p>
+<p>ROUGE-L measures the longest common subsequence (LCS) between candidate and reference, emphasizing recall — it rewards how much of the reference content appears in the output. BLEU computes n-gram precision with a brevity penalty,.
+emphasizing precision — it rewards how much of the candidate output matches the reference. Use ROUGE for summarization (where capturing all key points matters) and.
+BLEU for translation (where fluency and precision of phrasing matters). A practical pipeline might compute both:</p>
     <pre><code>candidate = "The cat sat on the mat."
 reference = "The cat sat on a mat."
 print(rouge_l(candidate, reference))
@@ -1139,7 +1145,10 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q3: What is the LLM-as-judge approach and what are its failure modes?
   </summary>
   <div class="tp-qa-answer">
-    <p>LLM-as-judge uses a powerful language model (e.g., GPT-4o, Claude) to evaluate outputs by providing a scoring rubric and asking it to rate generated text. It is useful for subjective dimensions like coherence, helpfulness, and instruction-following where automated metrics fall short. However, it has several failure modes: position bias (preferring the first answer in pairwise comparisons), verbosity bias (preferring longer outputs), self-enhancement bias (preferring its own style), and rubric overfitting. Mitigations include swapping presentation order, using chain-of-thought scoring, and calibrating against human judgments with Cohen's Kappa.</p>
+<p>LLM-as-judge uses a powerful language model (e.g., GPT-4o, Claude) to evaluate outputs by providing a scoring rubric and asking it to rate generated text. It is useful for.
+subjective dimensions like coherence, helpfulness, and instruction-following where automated metrics fall short. However, it has several failure modes: position bias (preferring the first answer in pairwise comparisons),.
+verbosity bias (preferring longer outputs), self-enhancement bias (preferring its own style), and rubric overfitting. Mitigations include swapping presentation order, using chain-of-thought scoring,.
+and calibrating against human judgments with Cohen's Kappa.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1151,7 +1160,9 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q4: How do you build an evaluation dataset for a new domain-specific LLM task?
   </summary>
   <div class="tp-qa-answer">
-    <p>Start with stratified sampling across sub-categories to ensure coverage. Collect 100-500 examples with input-output pairs. For each example, include multiple references when possible (2-3 per input) to capture valid variations. Create annotation guidelines with clear rating scales and example annotations. Use inter-rater agreement (Cohen's Kappa or Krippendorff's Alpha) to validate annotation quality — aim for Kappa > 0.7. Store the dataset in JSONL format with fields for input, references, task, domain, and difficulty. Regularly audit and expand the dataset as new edge cases appear in production.</p>
+<p>Start with stratified sampling across sub-categories to ensure coverage. Collect 100-500 examples with input-output pairs. For each example, include multiple references when possible (2-3 per input) to capture valid variations. Create annotation guidelines with clear rating scales and.
+example annotations. Use inter-rater agreement (Cohen's Kappa or Krippendorff's Alpha) to validate annotation quality — aim for Kappa > 0.7. Store the dataset in JSONL format with fields for.
+input, references, task, domain, and difficulty. Regularly audit and expand the dataset as new edge cases appear in production.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1163,7 +1174,10 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q5: What is BERTScore and why does it improve upon n-gram metrics?
   </summary>
   <div class="tp-qa-answer">
-    <p>BERTScore uses contextual embeddings from BERT to compute token-level similarity via cosine similarity. Unlike ROUGE and BLEU which require exact n-gram overlap, BERTScore captures semantic equivalence — "car" and "vehicle" would get partial credit since their embeddings are similar. It computes precision, recall, and F1 by matching each token in the candidate to its most similar token in the reference. This makes it more robust to paraphrasing and synonym usage. However, it requires running a full BERT model, making it computationally more expensive than n-gram metrics.</p>
+<p>BERTScore uses contextual embeddings from BERT to compute token-level similarity via cosine similarity. Unlike ROUGE and BLEU which require exact n-gram overlap,.
+BERTScore captures semantic equivalence — "car" and "vehicle" would get partial credit since their embeddings are similar. It computes precision, recall,.
+and F1 by matching each token in the candidate to its most similar token in the reference. This makes it more robust to paraphrasing and.
+synonym usage. However, it requires running a full BERT model, making it computationally more expensive than n-gram metrics.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1175,7 +1189,9 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q6: How do you set up a CI/CD evaluation pipeline for LLM regressions?
   </summary>
   <div class="tp-qa-answer">
-    <p>Create an EvaluationPipeline that runs a suite of metrics (ROUGE, BLEU, BERTScore, faithfulness) across multiple test datasets on every model version. Compare results against the previous deployment's scores and flag any metric that drops below a configurable threshold (e.g., 5% relative degradation). Integrate this as a CI step that returns exit code 1 on regression, blocking deployment. Store history in a regression tracker for trend analysis. Here's the core check:</p>
+<p>Create an EvaluationPipeline that runs a suite of metrics (ROUGE, BLEU, BERTScore, faithfulness) across multiple test datasets on every model version. Compare results against the previous deployment's scores and.
+flag any metric that drops below a configurable threshold (e.g., 5% relative degradation). Integrate this as a CI step that returns exit code 1 on regression,.
+blocking deployment. Store history in a regression tracker for trend analysis. Here's the core check:</p>
     <pre><code>def evaluate_for_ci(model_fn, pipeline, threshold=0.8):
     result = pipeline.run(model_fn)
     for dataset, metrics in result["scores"].items():
@@ -1194,7 +1210,10 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q7: What evaluation dimensions matter most for a chatbot vs a code generation model?
   </summary>
   <div class="tp-qa-answer">
-    <p>For chatbots, prioritize relevance, coherence, fluency, and safety — the response must address the user's intent, read naturally, and avoid harmful content. For code generation, prioritize functional correctness (passing unit tests), syntactic validity (parsable code), and security (no vulnerabilities). A chatbot evaluation might weight relevance=2.0, fluency=1.5, accuracy=1.0, while code generation might weight correctness=3.0, efficiency=1.0, readability=0.5. Task-specific benchmarks like HumanEval (code) and MMLU (knowledge) provide standardized measurement for each domain.</p>
+<p>For chatbots, prioritize relevance, coherence, fluency, and safety — the response must address the user's intent, read naturally, and avoid harmful content. For.
+code generation, prioritize functional correctness (passing unit tests), syntactic validity (parsable code), and security (no vulnerabilities). A chatbot evaluation might weight relevance=2.0,.
+fluency=1.5, accuracy=1.0, while code generation might weight correctness=3.0, efficiency=1.0, readability=0.5. Task-specific benchmarks like HumanEval (code) and MMLU (knowledge) provide standardized measurement for.
+each domain.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1206,7 +1225,10 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q8: Explain how perplexity relates to model evaluation and its limitations.
   </summary>
   <div class="tp-qa-answer">
-    <p>Perplexity measures how well a language model predicts a sequence — it is the exponential of the average negative log-likelihood. Lower perplexity means the model assigns higher probability to the actual tokens. However, perplexity has significant limitations: it does not correlate well with output quality or factual accuracy (a model can have low perplexity while hallucinating), it penalizes creative or diverse outputs, and it is not comparable across different tokenizers or vocabularies. Use perplexity only as a sanity check for model calibration, not as a primary quality metric.</p>
+<p>Perplexity measures how well a language model predicts a sequence — it is the exponential of the average negative log-likelihood. Lower perplexity means the model assigns higher probability to the actual tokens. However,.
+perplexity has significant limitations: it does not correlate well with output quality or factual accuracy (a model can have low perplexity while hallucinating),.
+it penalizes creative or diverse outputs, and it is not comparable across different tokenizers or vocabularies. Use perplexity only as a sanity check for.
+model calibration, not as a primary quality metric.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1218,7 +1240,10 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q9: How do you measure inter-rater agreement in human evaluation and why does it matter?
   </summary>
   <div class="tp-qa-answer">
-    <p>Cohen's Kappa measures agreement between two raters beyond chance, with values above 0.7 indicating reliable annotation. Krippendorff's Alpha generalizes to multiple raters and handles missing data. Inter-rater agreement matters because human evaluation is subjective — without high agreement, the ratings are noisy and unreliable as a gold standard. To improve agreement, provide detailed annotation guidelines with anchor examples, calibrate raters on a shared set before full annotation, and use pairwise comparisons (A vs B) instead of absolute Likert scales, which tend to have higher agreement rates.</p>
+<p>Cohen's Kappa measures agreement between two raters beyond chance, with values above 0.7 indicating reliable annotation. Krippendorff's Alpha generalizes to multiple raters and.
+handles missing data. Inter-rater agreement matters because human evaluation is subjective — without high agreement, the ratings are noisy and unreliable as a gold standard. To improve agreement,.
+provide detailed annotation guidelines with anchor examples, calibrate raters on a shared set before full annotation, and use pairwise comparisons (A vs B) instead of absolute Likert scales,.
+which tend to have higher agreement rates.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1230,7 +1255,10 @@ print(bleu(candidate, reference, max_n=4))</code></pre>
     Q10: What is METEOR and how does it improve over BLEU for evaluating generated text?
   </summary>
   <div class="tp-qa-answer">
-    <p>METEOR improves on BLEU by aligning unigrams using exact match, stemmed match (Porter stemmer), and synonym match (WordNet). It computes a harmonic mean of precision and recall (with recall weighted higher by a 9:1 ratio) and applies a fragmentation penalty to discourage disordered output. Unlike BLEU which only measures precision, METEOR's recall component better captures whether all reference content is covered. It also correlates better with human judgment at the sentence level. However, it requires WordNet resources and is language-dependent.</p>
+<p>METEOR improves on BLEU by aligning unigrams using exact match, stemmed match (Porter stemmer), and synonym match (WordNet). It computes a harmonic mean of precision and.
+recall (with recall weighted higher by a 9:1 ratio) and applies a fragmentation penalty to discourage disordered output. Unlike BLEU which only measures precision,.
+METEOR's recall component better captures whether all reference content is covered. It also correlates better with human judgment at the sentence level. However,.
+it requires WordNet resources and is language-dependent.</p>
     <pre><code>def meteor_score(candidate, reference):
     # Aligns unigrams via exact + stem + synonym matching
     precision = match_count / len(cand_unigrams)

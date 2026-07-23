@@ -621,7 +621,8 @@ loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: How does a closure work?</summary>
-  <div class="tp-qa-answer"><p>A closure is a function that retains access to variables from its enclosing scope even after the outer function has returned. Python stores these captured variables in the <code>__closure__</code> attribute (a tuple of cell objects). Closures are the foundation of decorators and are created whenever a nested function references variables from its containing scope.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>A closure is a function that retains access to variables from its enclosing scope even after the outer function has returned. Python stores these captured variables in the <code>__closure__</code> attribute (a tuple of cell objects). Closures are the foundation of decorators and.
+are created whenever a nested function references variables from its containing scope.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q3">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q3: Why is functools.wraps important?</summary>
@@ -629,7 +630,9 @@ loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: Generator vs iterator — what's the difference?</summary>
-  <div class="tp-qa-answer"><p>A generator is a function that uses <code>yield</code>, returning a generator object (which is an iterator). All generators are iterators, but not all iterators are generators. Iterators implement <code>__iter__</code> and <code>__next__</code>; generators are created with yield and automatically implement the iterator protocol. Generators are a convenient way to create iterators.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>A generator is a function that uses <code>yield</code>, returning a generator object (which is an iterator). All generators are iterators,.
+but not all iterators are generators. Iterators implement <code>__iter__</code> and <code>__next__</code>; generators are created with yield and automatically implement the iterator.
+protocol. Generators are a convenient way to create iterators.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q5">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: What does yield from do?</summary>
@@ -641,7 +644,8 @@ loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q7">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q7: How does itertools.groupby work?</summary>
-  <div class="tp-qa-answer"><p>itertools.groupby groups consecutive elements by a key function, returning (key, group_iterator) pairs. The input data must be sorted by the same key first; otherwise, identical keys in different positions produce separate groups. Common use: grouping sorted log entries by date or transactions by user ID.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>itertools.groupby groups consecutive elements by a key function, returning (key, group_iterator) pairs. The input data must be sorted by the same key first;.
+otherwise, identical keys in different positions produce separate groups. Common use: grouping sorted log entries by date or transactions by user ID.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: When would you use contextlib.suppress?</summary>
@@ -653,7 +657,9 @@ loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
 </details>
 <details class="tp-qa-card" data-qid="p02-s09-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: When would you choose a generator over a list?</summary>
-  <div class="tp-qa-answer"><p>Generators use O(1) memory regardless of sequence length, making them ideal for large datasets, infinite sequences, and streaming data. Lists use O(n) memory. However, generators cannot be indexed or sliced, have per-item overhead, and can only be iterated once. Use generators for iteration over large data, lists for random access and multiple passes.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Generators use O(1) memory regardless of sequence length, making them ideal for large datasets, infinite sequences, and streaming data. Lists use O(n) memory. However,.
+generators cannot be indexed or sliced, have per-item overhead, and can only be iterated once. Use generators for iteration over large data,.
+lists for random access and multiple passes.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 
 ## Chapter Quiz

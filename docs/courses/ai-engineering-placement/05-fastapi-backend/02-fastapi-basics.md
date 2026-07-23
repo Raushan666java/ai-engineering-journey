@@ -559,14 +559,16 @@ app.post<{}, {}, Omit<User, "id" | "createdAt">>("/users", async (req, res) => {
 
 <details class="tp-qa-card" data-qid="fastapi-s02-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q1: What makes FastAPI different from Flask?</summary>
-  <div class="tp-qa-answer"><p>FastAPI uses Python type hints for automatic request validation, serialization, and OpenAPI documentation generation. It is built on Starlette (async) and Pydantic (validation). Flask is synchronous with manual validation. FastAPI automatically generates interactive Swagger docs, while Flask requires Flasgger or manual setup. FastAPI also supports async natively with better performance.</p></div>
+<div class="tp-qa-answer"><p>FastAPI uses Python type hints for automatic request validation, serialization, and OpenAPI documentation generation. It is built on Starlette (async) and.
+Pydantic (validation). Flask is synchronous with manual validation. FastAPI automatically generates interactive Swagger docs, while Flask requires Flasgger or manual setup. FastAPI also supports async natively with better performance.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="fastapi-s02-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q2: How does FastAPI distinguish between path and query parameters?</summary>
-  <div class="tp-qa-answer"><p>Path parameters are declared as function arguments that appear in the URL pattern (e.g., /users/{user_id}). Query parameters are function arguments not in the path — they become query string parameters automatically. FastAPI infers the source based on the URL template. You can override with Path() or Query() for additional validation.</p></div>
+<div class="tp-qa-answer"><p>Path parameters are declared as function arguments that appear in the URL pattern (e.g., /users/{user_id}). Query parameters are function arguments not in the path — they become query string parameters automatically. FastAPI infers the source based on the URL template. You can override with Path() or.
+Query() for additional validation.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
@@ -601,21 +603,26 @@ app.post<{}, {}, Omit<User, "id" | "createdAt">>("/users", async (req, res) => {
 
 <details class="tp-qa-card" data-qid="fastapi-s02-q7">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q7: What is the difference between response_model and return type annotation?</summary>
-  <div class="tp-qa-answer"><p>response_model is a decorator parameter that controls the response schema in OpenAPI and performs response filtering (excludes extra fields). The return type annotation is used for editor support and type checking. response_model is more explicit and allows returning different types than the annotation suggests. Preferred to always define response_model for public endpoints.</p></div>
+<div class="tp-qa-answer"><p>response_model is a decorator parameter that controls the response schema in OpenAPI and performs response filtering (excludes extra fields). The return type annotation is used for.
+editor support and type checking. response_model is more explicit and allows returning different types than the annotation suggests. Preferred to always define response_model for.
+public endpoints.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="fastapi-s02-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q8: How does FastAPI handle multiple body parameters?</summary>
-  <div class="tp-qa-answer"><p>With a single Pydantic model, the entire request body is expected to match that model. With multiple Pydantic model parameters, FastAPI expects the body to have nested keys matching the parameter names. You can use Body() to mark individual fields as body parameters. Singular values can also be extracted from the body using Body().</p></div>
+<div class="tp-qa-answer"><p>With a single Pydantic model, the entire request body is expected to match that model. With multiple Pydantic model parameters,.
+FastAPI expects the body to have nested keys matching the parameter names. You can use Body() to mark individual fields as body parameters. Singular values can also be extracted from the body using Body().</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="fastapi-s02-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q9: How do you run FastAPI in production?</summary>
-  <div class="tp-qa-answer"><p>Use a production ASGI server like uvicorn with workers (gunicorn + uvicorn workers on Linux). Disable docs in production by setting docs_url=None, redoc_url=None. Use a reverse proxy (Nginx, Traefik) in front. Set proper CORS origins. Enable logging and error tracking. Use environment variables for configuration. Consider using Docker for deployment.</p></div>
+<div class="tp-qa-answer"><p>Use a production ASGI server like uvicorn with workers (gunicorn + uvicorn workers on Linux). Disable docs in production by setting docs_url=None,.
+redoc_url=None. Use a reverse proxy (Nginx, Traefik) in front. Set proper CORS origins. Enable logging and error tracking. Use environment variables for.
+configuration. Consider using Docker for deployment.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>

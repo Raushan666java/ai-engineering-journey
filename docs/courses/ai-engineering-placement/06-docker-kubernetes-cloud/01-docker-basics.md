@@ -45,7 +45,9 @@ flowchart LR
 
 ## Introduction
 
-Docker is the standard for packaging and deploying AI applications — from training environments with GPU passthrough to production inference services at scale. Without containers, the "it works on my machine" problem plagues ML teams, making model deployment unreliable and slow. This chapter covers containers, images, Dockerfiles, and Docker Compose — the essential skills for any AI engineer who needs to ship models from laptop to production.
+Docker is the standard for packaging and deploying AI applications — from training environments with GPU passthrough to production inference services at scale. Without containers,.
+the "it works on my machine" problem plagues ML teams, making model deployment unreliable and slow. This chapter covers containers, images,.
+Dockerfiles, and Docker Compose — the essential skills for any AI engineer who needs to ship models from laptop to production.
 
 
 ## Prerequisites
@@ -1019,7 +1021,10 @@ d) docker inspect
 
 ## Summary
 
-Docker containers provide lightweight, reproducible environments by sharing the host kernel at the OS level, contrasting with VMs that run full guest operating systems. Docker's client-server architecture uses a daemon to manage images (read-only layered templates), containers (runnable instances), networks, and volumes. Dockerfiles define custom images through layered instructions, with multi-stage builds producing lean production artifacts. Container lifecycle management, networking modes (bridge, host, overlay), and persistent volumes are essential for production deployments. Docker Compose orchestrates multi-container applications, and best practices include non-root users, health checks, specific image tags, and `.dockerignore` files.
+Docker containers provide lightweight, reproducible environments by sharing the host kernel at the OS level, contrasting with VMs that run full guest operating systems. Docker's client-server architecture uses a daemon to manage images (read-only layered templates),.
+containers (runnable instances), networks, and volumes. Dockerfiles define custom images through layered instructions, with multi-stage builds producing lean production artifacts. Container lifecycle management,.
+networking modes (bridge, host, overlay), and persistent volumes are essential for production deployments. Docker Compose orchestrates multi-container applications, and best practices include non-root users,.
+health checks, specific image tags, and `.dockerignore` files.
 
 
 ## Placement Section

@@ -713,7 +713,9 @@ echo "second" >> file.txt   # file.txt contains: first\nsecond</code></pre>
     Q4: What does xargs do and why is it needed with pipes?
   </summary>
   <div class="tp-qa-answer">
-    <p>Pipes (<code>|</code>) pass the <strong>output</strong> of one command as <strong>stdin</strong> to another. But many commands expect arguments, not stdin. <code>xargs</code> converts piped input into command arguments. Example: <code>find . -name "*.tmp" | xargs rm</code> — <code>find</code> outputs filenames, <code>xargs</code> feeds them as arguments to <code>rm</code>. Use <code>-print0</code> and <code>-0</code> for filenames with spaces.</p>
+<p>Pipes (<code>|</code>) pass the <strong>output</strong> of one command as <strong>stdin</strong> to another. But many commands expect arguments, not stdin. <code>xargs</code> converts piped input into command.
+arguments. Example: <code>find . -name "*.tmp" | xargs rm</code> — <code>find</code> outputs filenames, <code>xargs</code> feeds them as arguments to <code>rm</code>. Use <code>-print0</code> and.
+<code>-0</code> for filenames with spaces.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>

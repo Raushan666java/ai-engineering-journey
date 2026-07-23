@@ -651,31 +651,40 @@ function strContains(series: (string | null)[], pattern: string): boolean[] {
 </details>
 <details class="tp-qa-card" data-qid="p02-s13-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: Rolling vs expanding windows?</summary>
-  <div class="tp-qa-answer"><p>Rolling windows have a fixed size and slide over the data, dropping old observations. Expanding windows grow over time, using all data from the start. Rolling is used for moving averages and short-term trends. Expanding is used for cumulative statistics like running mean or standard deviation.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Rolling windows have a fixed size and slide over the data, dropping old observations. Expanding windows grow over time, using all data from the start. Rolling is used for.
+moving averages and short-term trends. Expanding is used for cumulative statistics like running mean or standard deviation.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s13-q5">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: How does eval improve performance?</summary>
-  <div class="tp-qa-answer"><p>eval() uses the numexpr library to evaluate expressions without creating intermediate arrays. It operates on contiguous memory blocks, leverages multiple CPU cores via multithreading, and reduces memory bandwidth. For expressions like "A + B * C - D", eval can be 2-5x faster than Pandas' standard evaluation.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>eval() uses the numexpr library to evaluate expressions without creating intermediate arrays. It operates on contiguous memory blocks, leverages multiple CPU cores via multithreading,.
+and reduces memory bandwidth. For expressions like "A + B * C - D", eval can be 2-5x faster than Pandas' standard evaluation.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s13-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: When to use Categorical dtype?</summary>
-  <div class="tp-qa-answer"><p>Use Categorical when a column has a limited number of unique string values relative to the total row count (e.g., gender, country code, status). It stores an integer codes array plus a mapping, reducing memory by 5-10x for highly repeated strings. Also enables ordered categories for sorting and groupby operations.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Use Categorical when a column has a limited number of unique string values relative to the total row count (e.g.,.
+gender, country code, status). It stores an integer codes array plus a mapping, reducing memory by 5-10x for highly repeated strings. Also enables ordered categories for.
+sorting and groupby operations.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s13-q7">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q7: How does resample work?</summary>
-  <div class="tp-qa-answer"><p>resample() groups time series data by a new frequency (e.g., 'h' for hourly, 'D' for daily, 'W' for weekly, 'ME' for month-end). It requires a DatetimeIndex. After resampling, apply aggregation (mean, sum, ohlc), interpolation, or forward/backward fill. Use .asfreq() to see NaN for missing periods.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>resample() groups time series data by a new frequency (e.g., 'h' for hourly, 'D' for daily, 'W' for weekly, 'ME' for.
+month-end). It requires a DatetimeIndex. After resampling, apply aggregation (mean, sum, ohlc), interpolation, or forward/backward fill. Use .asfreq() to see NaN for.
+missing periods.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s13-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: melt vs pivot?</summary>
-  <div class="tp-qa-answer"><p>melt() converts wide format to long (unpivot), turning multiple columns into rows. pivot() converts long to wide. melt is useful when data is in spreadsheet format with columns representing variable values. pivot is useful for creating summary tables. Use melt + pivot for round-trip reshaping.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>melt() converts wide format to long (unpivot), turning multiple columns into rows. pivot() converts long to wide. melt is useful when data is in spreadsheet format with columns representing variable values. pivot is useful for.
+creating summary tables. Use melt + pivot for round-trip reshaping.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s13-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: How to handle missing time series data?</summary>
-  <div class="tp-qa-answer"><p>Use fillna() with method='ffill' (forward fill), method='bfill' (backward fill), or interpolate(). For resampling, use .asfreq() to introduce missing periods then fill. Use .reindex() with a complete date range to ensure all periods exist. For irregular time series, consider using interpolation methods like linear or spline.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Use fillna() with method='ffill' (forward fill), method='bfill' (backward fill), or interpolate(). For resampling, use .asfreq() to introduce missing periods then fill. Use .reindex() with a complete date range to ensure all periods exist. For.
+irregular time series, consider using interpolation methods like linear or spline.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s13-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: Query vs boolean indexing performance?</summary>
-  <div class="tp-qa-answer"><p>query() uses numexpr for fast evaluation, especially beneficial for large DataFrames (100k+ rows) with multiple conditions. Boolean indexing (df[(df.A > 0) & (df.B < 0)]) creates intermediate boolean arrays, increasing memory and time. For small DataFrames, the difference is negligible. query() also supports Python-style variable references with @.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>query() uses numexpr for fast evaluation, especially beneficial for large DataFrames (100k+ rows) with multiple conditions. Boolean indexing (df[(df.A > 0) & (df.B < 0)]) creates intermediate boolean arrays,.
+increasing memory and time. For small DataFrames, the difference is negligible. query() also supports Python-style variable references with @.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 
 ## Chapter Quiz

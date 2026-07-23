@@ -582,7 +582,10 @@ class RegularizedBlock(nn.Module):
 
 ## Summary
 
-Transfer learning enables leveraging pre-trained models to solve new tasks with limited data. Feature extraction freezes the backbone and trains only the classifier head, while fine-tuning updates all layers with a lower learning rate. The model hub provides access to thousands of pre-trained architectures for vision, text, and audio. Domain adaptation techniques bridge the gap between source and target domains when distributions differ. Progressive unfreezing gradually thaws layers from top to bottom, stabilizing fine-tuning of large models. Regularization methods like differential learning rates and mixup prevent catastrophic forgetting during transfer.
+Transfer learning enables leveraging pre-trained models to solve new tasks with limited data. Feature extraction freezes the backbone and trains only the classifier head,.
+while fine-tuning updates all layers with a lower learning rate. The model hub provides access to thousands of pre-trained architectures for.
+vision, text, and audio. Domain adaptation techniques bridge the gap between source and target domains when distributions differ. Progressive unfreezing gradually thaws layers from top to bottom,.
+stabilizing fine-tuning of large models. Regularization methods like differential learning rates and mixup prevent catastrophic forgetting during transfer.
 
 ## Practical Takeaways
 

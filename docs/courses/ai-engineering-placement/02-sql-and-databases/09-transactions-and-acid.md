@@ -578,7 +578,8 @@ class SimpleTransactionManager {
 </details>
 <details class="tp-qa-card" data-qid="sql-s09-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: How does WAL ensure durability?</summary>
-  <div class="tp-qa-answer"><p>Write-Ahead Log (WAL) records changes before they are applied to data files. On COMMIT, the WAL record is flushed to disk (fsync). If the server crashes, on restart PostgreSQL replays WAL to restore committed transactions. This ensures durability without requiring data files to be flushed on every commit.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Write-Ahead Log (WAL) records changes before they are applied to data files. On COMMIT, the WAL record is flushed to disk (fsync). If the server crashes,.
+on restart PostgreSQL replays WAL to restore committed transactions. This ensures durability without requiring data files to be flushed on every commit.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 
 ## Chapter Quiz

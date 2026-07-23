@@ -46,7 +46,10 @@ flowchart LR
 
 ## Introduction
 
-Text preprocessing is the critical first step in every NLP pipeline — before a transformer can understand language, raw text must be tokenized, normalized, and converted to numerical features. Poor preprocessing directly degrades model performance: wrong tokenization splits words incorrectly, skipping stop word removal adds noise, and ignoring Unicode normalization breaks multilingual support. This chapter equips you with the exact skills needed for every subsequent NLP and LLM module.
+Text preprocessing is the critical first step in every NLP pipeline — before a transformer can understand language, raw text must be tokenized,.
+normalized, and converted to numerical features. Poor preprocessing directly degrades model performance: wrong tokenization splits words incorrectly, skipping stop word removal adds noise,.
+and ignoring Unicode normalization breaks multilingual support. This chapter equips you with the exact skills needed for every subsequent NLP and.
+LLM module.
 
 
 ## Prerequisites
@@ -511,7 +514,10 @@ This helps because raw text is messy and unstructured — preprocessing is like 
 
 ## Summary
 
-Text preprocessing transforms raw text into structured inputs for NLP models. Word tokenization splits text into discrete tokens using whitespace and punctuation rules. Subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming reduces words to root forms using heuristic rules, while lemmatization uses vocabulary analysis for more accurate normalization. Stop word removal filters frequent but uninformative words, and text normalization handles case, Unicode, and special characters. Vocabulary building constructs a fixed-size mapping from tokens to integer indices. TF-IDF weighting transforms token counts into relevance scores based on corpus frequency.
+Text preprocessing transforms raw text into structured inputs for NLP models. Word tokenization splits text into discrete tokens using whitespace and.
+punctuation rules. Subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming reduces words to root forms using heuristic rules,.
+while lemmatization uses vocabulary analysis for more accurate normalization. Stop word removal filters frequent but uninformative words, and text normalization handles case,.
+Unicode, and special characters. Vocabulary building constructs a fixed-size mapping from tokens to integer indices. TF-IDF weighting transforms token counts into relevance scores based on corpus frequency.
 
 
 ## Practical Takeaways
@@ -534,7 +540,10 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q1: What is the difference between stemming and lemmatization?
   </summary>
   <div class="tp-qa-answer">
-    <p>Stemming uses heuristic rules to chop affixes (e.g., Porter stemmer reduces "running", "runner", "ran" to "run" but "running" might become "runn"). It is fast but can produce non-dictionary words. Lemmatization uses a vocabulary and morphological analysis to return the dictionary base form (lemma) by considering POS tags. For example, "better" stemmed becomes "bet" (incorrect), but lemmatized to "good" (correct). Lemmatization is slower but produces linguistically valid tokens. Use stemming for search indexing (speed), lemmatization for NLP tasks requiring semantic accuracy.</p>
+<p>Stemming uses heuristic rules to chop affixes (e.g., Porter stemmer reduces "running", "runner", "ran" to "run" but "running" might become "runn"). It is fast but.
+can produce non-dictionary words. Lemmatization uses a vocabulary and morphological analysis to return the dictionary base form (lemma) by considering POS tags. For.
+example, "better" stemmed becomes "bet" (incorrect), but lemmatized to "good" (correct). Lemmatization is slower but produces linguistically valid tokens. Use stemming for.
+search indexing (speed), lemmatization for NLP tasks requiring semantic accuracy.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -546,7 +555,10 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q2: How does Byte-Pair Encoding (BPE) work?
   </summary>
   <div class="tp-qa-answer">
-    <p>BPE starts with a base vocabulary of individual characters and a special end-of-word token. It iteratively merges the most frequent adjacent pair of tokens in the corpus. For example, if "e s" appears 1000 times and "t h" appears 900 times, "es" becomes a new token first. This continues until a target vocabulary size is reached. To encode new text, the learned merge operations are applied greedily. GPT-2 uses BPE with a 50K vocabulary. The key advantage is that any word can be represented as a sequence of subwords, eliminating unknown tokens entirely.</p>
+<p>BPE starts with a base vocabulary of individual characters and a special end-of-word token. It iteratively merges the most frequent adjacent pair of tokens in the corpus. For.
+example, if "e s" appears 1000 times and "t h" appears 900 times, "es" becomes a new token first. This continues until a target vocabulary size is reached. To encode new text,.
+the learned merge operations are applied greedily. GPT-2 uses BPE with a 50K vocabulary. The key advantage is that any word can be represented as a sequence of subwords,.
+eliminating unknown tokens entirely.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -558,7 +570,9 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q3: What is SentencePiece and how is it different from BPE?
   </summary>
   <div class="tp-qa-answer">
-    <p>SentencePiece is a subword tokenizer that treats the input as a raw Unicode byte sequence without requiring language-specific pre-tokenization (splitting on whitespace). This makes it truly language-agnostic — it works for Chinese, Japanese, and Thai where word boundaries are not marked by spaces. SentencePiece supports both BPE and Unigram algorithms. It uses a lossless encoding scheme and can reverse tokens to the original text exactly. T5, XLNet, and ALBERT all use SentencePiece. BPE typically requires pre-tokenized input, making it language-dependent.</p>
+<p>SentencePiece is a subword tokenizer that treats the input as a raw Unicode byte sequence without requiring language-specific pre-tokenization (splitting on whitespace). This makes it truly language-agnostic — it works for.
+Chinese, Japanese, and Thai where word boundaries are not marked by spaces. SentencePiece supports both BPE and Unigram algorithms. It uses a lossless encoding scheme and.
+can reverse tokens to the original text exactly. T5, XLNet, and ALBERT all use SentencePiece. BPE typically requires pre-tokenized input, making it language-dependent.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -570,7 +584,9 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q4: How do you handle out-of-vocabulary (OOV) words?
   </summary>
   <div class="tp-qa-answer">
-    <p>Four common strategies: (1) Replace with a special <unk> token, which loses information. (2) Use subword tokenization (BPE, WordPiece) so OOV words are decomposed into known subwords — the standard approach for transformer models. (3) Character-level fallback: encode the word character-by-character. (4) Use a hash-based embedding (fastText) where OOV words use n-gram embeddings. The best approach depends on the task: subword tokenization is preferred for neural models, n-gram fallback for word-level embedding models. BERT's WordPiece covers 99.8% of text in its 30K vocabulary.</p>
+<p>Four common strategies: (1) Replace with a special <unk> token, which loses information. (2) Use subword tokenization (BPE, WordPiece) so OOV words are decomposed into known subwords — the standard approach for.
+transformer models. (3) Character-level fallback: encode the word character-by-character. (4) Use a hash-based embedding (fastText) where OOV words use n-gram embeddings. The best approach depends on the task: subword tokenization is preferred for.
+neural models, n-gram fallback for word-level embedding models. BERT's WordPiece covers 99.8% of text in its 30K vocabulary.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -582,7 +598,9 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q5: Explain TF-IDF and its components.
   </summary>
   <div class="tp-qa-answer">
-    <p>TF-IDF = Term Frequency — Inverse Document Frequency. TF = (number of times term t appears in document d) / (total terms in document d). IDF = log(N / df) where N = total documents and df = number of documents containing t. Terms that appear frequently in a single document get high TF. Terms that appear in few documents get high IDF. The product downweights common words (high df → low IDF) while upweighting rare, informative words. Smooth IDF variant: log((N+1)/(df+1)) + 1. TF-IDF is used for information retrieval, keyword extraction, and as feature input to ML classifiers.</p>
+<p>TF-IDF = Term Frequency — Inverse Document Frequency. TF = (number of times term t appears in document d) / (total terms in document d). IDF = log(N / df) where N = total documents and.
+df = number of documents containing t. Terms that appear frequently in a single document get high TF. Terms that appear in few documents get high IDF. The product downweights common words (high df → low IDF) while upweighting rare,.
+informative words. Smooth IDF variant: log((N+1)/(df+1)) + 1. TF-IDF is used for information retrieval, keyword extraction, and as feature input to ML classifiers.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -594,7 +612,10 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q6: When should you skip stop word removal?
   </summary>
   <div class="tp-qa-answer">
-    <p>Skip stop word removal when (1) doing sentiment analysis — "not good" loses meaning if "not" is removed, changing negative to neutral. (2) Analyzing style or authorship — function words carry author-specific patterns. (3) Machine translation — stop words are essential for grammatical output. (4) Question answering — question words (what, where, how) are critical. (5) Any task where word order and function words carry meaning. For topic modeling and information retrieval, stop word removal generally improves results by focusing on content words.</p>
+<p>Skip stop word removal when (1) doing sentiment analysis — "not good" loses meaning if "not" is removed, changing negative to neutral. (2) Analyzing style or.
+authorship — function words carry author-specific patterns. (3) Machine translation — stop words are essential for grammatical output. (4) Question answering — question words (what,.
+where, how) are critical. (5) Any task where word order and function words carry meaning. For topic modeling and information retrieval,.
+stop word removal generally improves results by focusing on content words.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -606,7 +627,10 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q7: What is WordPiece tokenization and how does it differ from BPE?
   </summary>
   <div class="tp-qa-answer">
-    <p>WordPiece (used by BERT) is similar to BPE but merges tokens based on likelihood gain on the training data rather than frequency. It picks the merge that maximizes the likelihood of the training data, which is more principled than the greedy frequency approach of BPE. WordPiece also uses a special ## prefix for subword continuations (e.g., "playing" → ["play", "##ing"]), while BPE typically uses spaces or </w> markers. In practice, WordPiece is better at handling morphology because it learns meaningful subword boundaries driven by probability, not brute frequency.</p>
+<p>WordPiece (used by BERT) is similar to BPE but merges tokens based on likelihood gain on the training data rather than frequency. It picks the merge that maximizes the likelihood of the training data,.
+which is more principled than the greedy frequency approach of BPE. WordPiece also uses a special ## prefix for subword continuations (e.g.,.
+"playing" → ["play", "##ing"]), while BPE typically uses spaces or </w> markers. In practice, WordPiece is better at handling morphology because it learns meaningful subword boundaries driven by probability,.
+not brute frequency.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -618,7 +642,10 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q8: How do you build a vocabulary for a neural language model?
   </summary>
   <div class="tp-qa-answer">
-    <p>Steps: (1) Tokenize the training corpus. (2) Count token frequencies. (3) Sort by frequency descending. (4) Select top-K tokens (typically 30K-100K) or set a minimum frequency threshold (e.g., min 3 occurrences). (5) Add special tokens: <pad> for padding, <unk> for unknown, <bos>/<cls> for beginning/start, <eos>/<sep> for end/separator, <mask> for masked language modeling. (6) Assign integer IDs. For subword vocabularies, run BPE/WordPiece training on the corpus directly, producing a merged vocabulary automatically.</p>
+<p>Steps: (1) Tokenize the training corpus. (2) Count token frequencies. (3) Sort by frequency descending. (4) Select top-K tokens (typically 30K-100K) or.
+set a minimum frequency threshold (e.g., min 3 occurrences). (5) Add special tokens: <pad> for padding, <unk> for unknown, <bos>/<cls> for.
+beginning/start, <eos>/<sep> for end/separator, <mask> for masked language modeling. (6) Assign integer IDs. For subword vocabularies, run BPE/WordPiece training on the corpus directly,.
+producing a merged vocabulary automatically.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -630,7 +657,9 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q9: What text normalization steps are essential for a production NLP pipeline?
   </summary>
   <div class="tp-qa-answer">
-    <p>Essential steps: (1) Unicode normalization (NFKC) to handle composed/decomposed characters consistently. (2) Lowercasing for case-insensitive tasks (but not for NER where capitalization signals proper nouns). (3) HTML entity decoding (&amp; → &). (4) URL and email removal or replacement with special tokens. (5) Contraction expansion (don't → do not). (6) Punctuation normalization (smart quotes to straight quotes). (7) Whitespace normalization. (8) Handling emoji (replace with text descriptions or filter). (9) Language detection for multilingual pipelines. (10) Encoding detection (UTF-8, ISO-8859-1) to prevent mojibake.</p>
+<p>Essential steps: (1) Unicode normalization (NFKC) to handle composed/decomposed characters consistently. (2) Lowercasing for case-insensitive tasks (but not for NER where capitalization signals proper nouns). (3) HTML entity decoding (&amp;.
+→ &). (4) URL and email removal or replacement with special tokens. (5) Contraction expansion (don't → do not). (6) Punctuation normalization (smart quotes to straight quotes). (7) Whitespace normalization. (8) Handling emoji (replace with text descriptions or.
+filter). (9) Language detection for multilingual pipelines. (10) Encoding detection (UTF-8, ISO-8859-1) to prevent mojibake.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -642,7 +671,9 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q10: How does TF-IDF handle duplicate or near-duplicate documents?
   </summary>
   <div class="tp-qa-answer">
-    <p>TF-IDF does not inherently handle duplicates — duplicate documents inflate their terms' document frequency (df), reducing IDF and making terms appear less important. Solutions: (1) Deduplicate the corpus before computing IDF. (2) Use min_df filtering to ignore terms appearing in too many documents. (3) Use sublinear TF scaling (log(1+TF)) to dampen the effect of term repetition within a document. (4) For near-duplicates (plagiarism, boilerplate), use sentence-level TF-IDF with cosine similarity thresholds to identify and remove near-duplicate content before building the IDF model.</p>
+<p>TF-IDF does not inherently handle duplicates — duplicate documents inflate their terms' document frequency (df), reducing IDF and making terms appear less important. Solutions: (1) Deduplicate the corpus before computing IDF. (2) Use min_df filtering to ignore terms appearing in.
+too many documents. (3) Use sublinear TF scaling (log(1+TF)) to dampen the effect of term repetition within a document. (4) For.
+near-duplicates (plagiarism, boilerplate), use sentence-level TF-IDF with cosine similarity thresholds to identify and remove near-duplicate content before building the IDF model.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -761,7 +792,10 @@ d) Better for English only
 
 ## Summary
 
-Text preprocessing transforms raw text into structured numerical inputs for NLP models. Word tokenization splits text on whitespace and punctuation, while subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming and lemmatization normalize words to root forms — stemming is fast but crude, lemmatization is accurate but requires POS context. Stop word removal filters uninformative high-frequency words but must be skipped for tasks where function words carry meaning. Vocabulary construction maps tokens to integer IDs with special tokens for padding and unknown words. TF-IDF weighting transforms raw counts into relevance scores based on corpus-wide term importance.
+Text preprocessing transforms raw text into structured numerical inputs for NLP models. Word tokenization splits text on whitespace and punctuation, while subword tokenization (BPE,.
+WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming and lemmatization normalize words to root forms — stemming is fast but.
+crude, lemmatization is accurate but requires POS context. Stop word removal filters uninformative high-frequency words but must be skipped for tasks where function words carry meaning. Vocabulary construction maps tokens to integer IDs with special tokens for.
+padding and unknown words. TF-IDF weighting transforms raw counts into relevance scores based on corpus-wide term importance.
 
 
 ## Placement Section

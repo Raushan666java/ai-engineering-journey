@@ -608,7 +608,9 @@ class CompositeIndex<T> {
 
 <details class="tp-qa-card" data-qid="sql-s07-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: How does a B-tree index work?</summary>
-  <div class="tp-qa-answer"><p>A B-tree is a balanced tree data structure where each page contains sorted key values and pointers to child pages. Root and internal pages guide the search to the correct leaf page, which stores key-to-rowid mappings. Lookup is O(log n) — about 3-5 page reads for millions of rows. B-tree supports equality and range queries.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>A B-tree is a balanced tree data structure where each page contains sorted key values and pointers to child pages. Root and.
+internal pages guide the search to the correct leaf page, which stores key-to-rowid mappings. Lookup is O(log n) — about 3-5 page reads for.
+millions of rows. B-tree supports equality and range queries.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s07-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: Composite index column order rules?</summary>
@@ -616,11 +618,14 @@ class CompositeIndex<T> {
 </details>
 <details class="tp-qa-card" data-qid="sql-s07-q3">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q3: Seq Scan vs Index Scan vs Index Only Scan?</summary>
-  <div class="tp-qa-answer"><p>Seq Scan reads the entire table sequentially (good for small tables or when retrieving most rows). Index Scan reads the index to find matching rowids, then fetches rows from the heap (good for selective queries). Index Only Scan reads all needed data from the index without touching the heap (fastest) — requires a covering index.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Seq Scan reads the entire table sequentially (good for small tables or when retrieving most rows). Index Scan reads the index to find matching rowids,.
+then fetches rows from the heap (good for selective queries). Index Only Scan reads all needed data from the index without touching the heap (fastest) — requires a covering index.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s07-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: What does EXPLAIN ANALYZE show?</summary>
-  <div class="tp-qa-answer"><p>EXPLAIN shows the query plan with estimated costs. EXPLAIN ANALYZE executes the query and shows actual execution time per node, actual row counts, loops, and buffer usage. The actual rows vs estimated rows comparison helps identify stale statistics. Always use EXPLAIN (ANALYZE, BUFFERS) for optimization.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>EXPLAIN shows the query plan with estimated costs. EXPLAIN ANALYZE executes the query and shows actual execution time per node,.
+actual row counts, loops, and buffer usage. The actual rows vs estimated rows comparison helps identify stale statistics. Always use EXPLAIN (ANALYZE,.
+BUFFERS) for optimization.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s07-q5">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: Partial index use cases?</summary>
@@ -644,7 +649,8 @@ class CompositeIndex<T> {
 </details>
 <details class="tp-qa-card" data-qid="sql-s07-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: Covering index vs composite index?</summary>
-  <div class="tp-qa-answer"><p>A composite index uses all its columns for searching and ordering. A covering index uses INCLUDE to add columns that are only returned (not searched). Covering indexes enable index-only scans without adding to the B-tree's internal structure. Example: CREATE INDEX ON orders(customer_id) INCLUDE (total, status).</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>A composite index uses all its columns for searching and ordering. A covering index uses INCLUDE to add columns that are only returned (not searched). Covering indexes enable index-only scans without adding to the B-tree's internal structure. Example: CREATE INDEX ON orders(customer_id) INCLUDE (total,.
+status).</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 
 ## Chapter Quiz

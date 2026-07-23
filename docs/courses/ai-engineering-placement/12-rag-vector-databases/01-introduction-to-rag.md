@@ -41,7 +41,9 @@ flowchart LR
 
 ## Introduction
 
-Retrieval-Augmented Generation (RAG) is the most practical technique for making LLMs useful with private, domain-specific, or up-to-date knowledge. Instead of retraining a model on new data — expensive and slow — RAG retrieves relevant documents at query time and grounds the LLM's response in that context. This chapter covers the full RAG paradigm: why it works, its core components, how it compares to fine-tuning, and how to evaluate output quality.
+Retrieval-Augmented Generation (RAG) is the most practical technique for making LLMs useful with private, domain-specific, or up-to-date knowledge. Instead of retraining a model on new data — expensive and.
+slow — RAG retrieves relevant documents at query time and grounds the LLM's response in that context. This chapter covers the full RAG paradigm: why it works,.
+its core components, how it compares to fine-tuning, and how to evaluate output quality.
 
 
 ## Prerequisites
@@ -648,7 +650,10 @@ This helps because RAG solves the LLM's biggest weakness — **knowledge that's 
 
 ## Summary
 
-Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by grounding responses in external knowledge. The RAG paradigm follows a three-step pipeline: retrieve relevant documents, augment the prompt with context, and generate a grounded response. Core components include the retriever (sparse or dense), the document index (chunks + embeddings + metadata), the prompt augmenter (formatting + instruction), and the LLM generator. RAG offers advantages over fine-tuning and prompt engineering in knowledge freshness, hallucination reduction, and private data access. Evaluating RAG quality requires specialized metrics measuring faithfulness, answer relevance, and context precision.
+Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by grounding responses in external knowledge. The RAG paradigm follows a three-step pipeline: retrieve relevant documents,.
+augment the prompt with context, and generate a grounded response. Core components include the retriever (sparse or dense), the document index (chunks + embeddings + metadata),.
+the prompt augmenter (formatting + instruction), and the LLM generator. RAG offers advantages over fine-tuning and prompt engineering in knowledge freshness,.
+hallucination reduction, and private data access. Evaluating RAG quality requires specialized metrics measuring faithfulness, answer relevance, and context precision.
 
 
 ## Practical Takeaways
@@ -670,7 +675,10 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q1: What are the three main steps of a RAG pipeline and how do they interact?
   </summary>
   <div class="tp-qa-answer">
-    <p>RAG follows a three-step flow: Retrieve, Augment, Generate. First, the retriever searches a knowledge base for documents or chunks relevant to the user's query using either sparse (BM25) or dense (embedding similarity) methods. Second, the augmenter inserts the retrieved context into the LLM prompt alongside a grounding instruction. Third, the generator (an LLM) produces a response strictly based on the provided context. The interaction is sequential — poor retrieval directly degrades augmentation and generation quality. This design grounds the LLM's output in external knowledge, reducing hallucination by 40-80% compared to zero-shot generation.</p>
+<p>RAG follows a three-step flow: Retrieve, Augment, Generate. First, the retriever searches a knowledge base for documents or chunks relevant to the user's query using either sparse (BM25) or.
+dense (embedding similarity) methods. Second, the augmenter inserts the retrieved context into the LLM prompt alongside a grounding instruction. Third, the generator.
+(an LLM) produces a response strictly based on the provided context. The interaction is sequential — poor retrieval directly degrades augmentation and.
+generation quality. This design grounds the LLM's output in external knowledge, reducing hallucination by 40-80% compared to zero-shot generation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -682,7 +690,10 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q2: How does RAG compare to fine-tuning for incorporating new knowledge into an LLM?
   </summary>
   <div class="tp-qa-answer">
-    <p>RAG provides real-time knowledge updates by retrieving from an external index at query time — you can add new documents and immediately make them accessible. Fine-tuning requires collecting labeled data, retraining the model (hours to days), and redeploying. RAG also offers better data privacy since private documents remain in the index rather than being memorized in model weights. Fine-tuning is better when you need the model to learn new behavioral patterns, writing styles, or domain-specific formats that retrieval cannot inject. Many production systems combine both: RAG for factual grounding and fine-tuning for behavior alignment.</p>
+<p>RAG provides real-time knowledge updates by retrieving from an external index at query time — you can add new documents and.
+immediately make them accessible. Fine-tuning requires collecting labeled data, retraining the model (hours to days), and redeploying. RAG also offers better data privacy since private documents remain in the index rather than being memorized in model weights. Fine-tuning is better when you need the model to learn new behavioral patterns,.
+writing styles, or domain-specific formats that retrieval cannot inject. Many production systems combine both: RAG for factual grounding and fine-tuning for.
+behavior alignment.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -694,7 +705,9 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q3: What are the core components of a RAG system and what design decisions does each require?
   </summary>
   <div class="tp-qa-answer">
-    <p>The four core components are: Retriever (sparse vs dense vs hybrid, top-k tuning), Index (chunking strategy, embedding model, metadata schema), Augmenter (context position — prepend/sandwich/append, instruction design — strict/citation/creative), and Generator (model selection — GPT-4o vs self-hosted Llama, temperature, max tokens). Each component has independently tunable parameters that affect the overall system's faithfulness, latency, and cost. The retriever is often the most impactful — improving retrieval quality from precision@5 = 0.6 to 0.9 can double the final answer accuracy.</p>
+<p>The four core components are: Retriever (sparse vs dense vs hybrid, top-k tuning), Index (chunking strategy, embedding model, metadata schema), Augmenter (context position — prepend/sandwich/append,.
+instruction design — strict/citation/creative), and Generator (model selection — GPT-4o vs self-hosted Llama, temperature, max tokens). Each component has independently tunable parameters that affect the overall system's faithfulness,.
+latency, and cost. The retriever is often the most impactful — improving retrieval quality from precision@5 = 0.6 to 0.9 can double the final answer accuracy.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -706,7 +719,9 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q4: What LLM limitations does RAG address and which ones remain unsolved?
   </summary>
   <div class="tp-qa-answer">
-    <p>RAG addresses knowledge cutoff (by retrieving up-to-date documents), hallucination (by grounding responses in retrieved evidence), private data access (by indexing proprietary documents), and domain specificity (by retrieving from domain-specific knowledge bases). Limitations that RAG does NOT solve: the generator can still misinterpret or ignore retrieved context, the retrieval itself can fail (returning irrelevant chunks), and latency increases due to the extra retrieval step. RAG also does not improve the model's reasoning capability — it only provides better information. Combining RAG with chain-of-thought prompting can partially address the reasoning gap.</p>
+<p>RAG addresses knowledge cutoff (by retrieving up-to-date documents), hallucination (by grounding responses in retrieved evidence), private data access (by indexing proprietary documents),.
+and domain specificity (by retrieving from domain-specific knowledge bases). Limitations that RAG does NOT solve: the generator can still misinterpret or.
+ignore retrieved context, the retrieval itself can fail (returning irrelevant chunks), and latency increases due to the extra retrieval step. RAG also does not improve the model's reasoning capability — it only provides better information. Combining RAG with chain-of-thought prompting can partially address the reasoning gap.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -718,7 +733,10 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q5: How do you measure the quality of a RAG system beyond standard LLM metrics?
   </summary>
   <div class="tp-qa-answer">
-    <p>RAG evaluation requires specialized metrics: Faithfulness (are claims in the response supported by retrieved context?), Answer Relevance (does the response address the query?), Context Precision (are the retrieved chunks relevant?), and Context Recall (are all necessary chunks retrieved?). These four metrics form the RAGAS framework. For retrieval specifically, measure precision@k, recall@k, MRR, and NDCG against a relevance-annotated test set. A weighted composite score (e.g., 0.3 faithfulness + 0.3 relevance + 0.2 context precision + 0.2 context recall) gives a single RAG quality score for regression tracking.</p>
+<p>RAG evaluation requires specialized metrics: Faithfulness (are claims in the response supported by retrieved context?), Answer Relevance (does the response address the query?),.
+Context Precision (are the retrieved chunks relevant?), and Context Recall (are all necessary chunks retrieved?). These four metrics form the RAGAS framework. For.
+retrieval specifically, measure precision@k, recall@k, MRR, and NDCG against a relevance-annotated test set. A weighted composite score (e.g., 0.3 faithfulness + 0.3 relevance + 0.2 context precision + 0.2 context recall) gives a single RAG quality score for.
+regression tracking.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -730,7 +748,10 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q6: What is the difference between sparse and dense retrieval in RAG?
   </summary>
   <div class="tp-qa-answer">
-    <p>Sparse retrieval (BM25, TF-IDF) uses keyword matching with an inverted index — it excels at exact term matching, handles rare terms well, and is fast with low storage cost. Dense retrieval uses embedding models to convert text into dense vectors and performs similarity search (cosine, dot product) — it captures semantic meaning, handles synonyms, and works across vocabulary gaps. Sparse retrieval fails on queries like "automotive vehicle" when the document says "car" (vocabulary mismatch). Dense retrieval fails on queries requiring specific term presence, like finding "Python 3.12" when "programming language" is the semantic match. Hybrid retrieval combines both.</p>
+<p>Sparse retrieval (BM25, TF-IDF) uses keyword matching with an inverted index — it excels at exact term matching, handles rare terms well,.
+and is fast with low storage cost. Dense retrieval uses embedding models to convert text into dense vectors and performs similarity search (cosine,.
+dot product) — it captures semantic meaning, handles synonyms, and works across vocabulary gaps. Sparse retrieval fails on queries like "automotive vehicle" when the document says "car" (vocabulary mismatch). Dense retrieval fails on queries requiring specific term presence,.
+like finding "Python 3.12" when "programming language" is the semantic match. Hybrid retrieval combines both.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -742,7 +763,9 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q7: What prompt augmentation strategies prevent the LLM from ignoring retrieved context?
   </summary>
   <div class="tp-qa-answer">
-    <p>Use explicit grounding instructions like "Answer ONLY based on the provided context. If the context lacks information, say you don't know." Position the context before the query (prepend) — studies show LLMs use prepended context more effectively than appended. Use numbered chunk references [1], [2] and instruct the model to cite sources. The sandwich strategy (context, then question, then reminder to use context) reinforces the grounding instruction. For strict tasks, use citation-style augmentation:</p>
+<p>Use explicit grounding instructions like "Answer ONLY based on the provided context. If the context lacks information, say you don't know." Position the context before the query (prepend) — studies show LLMs use prepended context more effectively than appended. Use numbered chunk references [1],.
+[2] and instruct the model to cite sources. The sandwich strategy (context, then question, then reminder to use context) reinforces the grounding instruction. For.
+strict tasks, use citation-style augmentation:</p>
     <pre><code>def augment(self, ctx):
     context = "\n\n".join([f"[{i+1}] {c.text}" for i, c in enumerate(ctx.chunks)])
     return f"{instruction}\n\nContext:\n{context}\n\nQuestion: {ctx.query}\n\nAnswer:"</code></pre>
@@ -757,7 +780,10 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q8: How do you choose the number of chunks to retrieve (top-k) in a RAG system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Top-k selection involves a trade-off: too few chunks (k=1-2) may miss critical information (low recall), while too many (k=10-15) can exceed the LLM's context window, dilute relevance, and increase cost. Start with k=5 as a default, then tune based on chunk size and task complexity. For chunk sizes of 200-500 tokens, k=3-5 typically balances recall and precision. Evaluate recall@k on a validation set to determine the minimum k that captures all relevant information. Use dynamic selection: retrieve more candidates initially (k=10) but select only the top-k by relevance score that fit within your token budget.</p>
+<p>Top-k selection involves a trade-off: too few chunks (k=1-2) may miss critical information (low recall), while too many (k=10-15) can exceed the LLM's context window,.
+dilute relevance, and increase cost. Start with k=5 as a default, then tune based on chunk size and task complexity. For.
+chunk sizes of 200-500 tokens, k=3-5 typically balances recall and precision. Evaluate recall@k on a validation set to determine the minimum k that captures all relevant information. Use dynamic selection: retrieve more candidates initially (k=10) but.
+select only the top-k by relevance score that fit within your token budget.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -769,7 +795,9 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q9: What is the role of the augmenter in RAG and how does prompt engineering apply?
   </summary>
   <div class="tp-qa-answer">
-    <p>The augmenter transforms retrieved chunks into a structured prompt that the LLM can consume effectively. Key prompt engineering decisions include: clear separation between context and query (using "Context:" and "Question:" labels), explicit grounding instructions ("Answer only from context"), formatting chunks with source numbers for citation, and handling edge cases like empty context or contradictory information. The augmentation prompt is often the most iterated-on component in production RAG systems — small wording changes can significantly affect faithfulness. A well-designed augmenter reduces hallucination by 30-50% compared to naive concatenation.</p>
+<p>The augmenter transforms retrieved chunks into a structured prompt that the LLM can consume effectively. Key prompt engineering decisions include: clear separation between context and.
+query (using "Context:" and "Question:" labels), explicit grounding instructions ("Answer only from context"), formatting chunks with source numbers for citation, and.
+handling edge cases like empty context or contradictory information. The augmentation prompt is often the most iterated-on component in production RAG systems — small wording changes can significantly affect faithfulness. A well-designed augmenter reduces hallucination by 30-50% compared to naive concatenation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -781,7 +809,10 @@ Retrieval-Augmented Generation (RAG) addresses fundamental LLM limitations by gr
     Q10: How does RAG help with private or enterprise data that an LLM has never seen?
   </summary>
   <div class="tp-qa-answer">
-    <p>RAG allows an LLM to answer questions about private data by indexing that data into a vector database at the enterprise's infrastructure. The data never enters the LLM's training set or model weights — it is only injected into the context window at query time. This provides data privacy and access control: you can restrict which documents each user can retrieve via metadata filters. It also enables real-time updates — new internal documents, customer records, or product specs are immediately available after indexing without any model retraining. This makes RAG the standard architecture for enterprise knowledge bases, internal documentation Q&A, and customer support systems.</p>
+<p>RAG allows an LLM to answer questions about private data by indexing that data into a vector database at the enterprise's infrastructure. The data never enters the LLM's training set or.
+model weights — it is only injected into the context window at query time. This provides data privacy and access control: you can restrict which documents each user can retrieve via metadata filters. It also enables real-time updates — new internal documents,.
+customer records, or product specs are immediately available after indexing without any model retraining. This makes RAG the standard architecture for.
+enterprise knowledge bases, internal documentation Q&A, and customer support systems.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -908,7 +939,11 @@ Answer: C
 
 ## Summary
 
-Retrieval-Augmented Generation addresses fundamental LLM limitations — knowledge cutoff, hallucination, and private data inaccessibility — by retrieving relevant external documents before generation. The RAG pipeline follows three steps: retrieve relevant chunks from a knowledge base, augment the LLM prompt with that context, and generate a grounded response. Core components include the retriever (sparse BM25, dense embedding search, or hybrid), the document index (chunks + embeddings + metadata), the prompt augmenter (formatting and grounding instructions), and the LLM generator. RAG outperforms fine-tuning and prompt engineering for knowledge freshness and hallucination reduction. Evaluating RAG requires specialized metrics: faithfulness (response-context consistency), answer relevance (query-response alignment), and context precision (retrieval quality).
+Retrieval-Augmented Generation addresses fundamental LLM limitations — knowledge cutoff, hallucination, and private data inaccessibility — by retrieving relevant external documents before generation. The RAG pipeline follows three steps: retrieve relevant chunks from a knowledge base,.
+augment the LLM prompt with that context, and generate a grounded response. Core components include the retriever (sparse BM25, dense embedding search,.
+or hybrid), the document index (chunks + embeddings + metadata), the prompt augmenter (formatting and grounding instructions), and the LLM generator. RAG outperforms fine-tuning and.
+prompt engineering for knowledge freshness and hallucination reduction. Evaluating RAG requires specialized metrics: faithfulness (response-context consistency), answer relevance (query-response alignment), and.
+context precision (retrieval quality).
 
 
 ## Placement Section

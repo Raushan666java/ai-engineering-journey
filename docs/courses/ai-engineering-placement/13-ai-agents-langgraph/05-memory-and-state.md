@@ -754,7 +754,10 @@ print(f"Compressed: {summary}")
 
 ## Summary
 
-Memory and state management are critical for building capable AI agents. Short-term memory maintains the current conversation context with sliding windows and summarization. Long-term memory persists facts, preferences, and knowledge across sessions using vector stores and key-value stores. Episodic memory records past actions and outcomes for experience-based learning. State management patterns include state machines with shared state for multi-agent systems. Save/restore mechanisms with checkpointing enable persistence, rollback, and session management. Memory optimization techniques include importance-based retention, forgetting curves, and compression.
+Memory and state management are critical for building capable AI agents. Short-term memory maintains the current conversation context with sliding windows and.
+summarization. Long-term memory persists facts, preferences, and knowledge across sessions using vector stores and key-value stores. Episodic memory records past actions and.
+outcomes for experience-based learning. State management patterns include state machines with shared state for multi-agent systems. Save/restore mechanisms with checkpointing enable persistence,.
+rollback, and session management. Memory optimization techniques include importance-based retention, forgetting curves, and compression.
 
 ## Practical Takeaways
 
@@ -775,7 +778,10 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q1: What types of memory do AI agents use?
   </summary>
   <div class="tp-qa-answer">
-    <p>AI agents use three types of memory. Short-term memory holds the current conversation context (recent messages, current task state) and is limited by the LLM's context window. Long-term memory persists information across sessions using external storage (databases, vector stores, files). Episodic memory stores specific past events and experiences that can be retrieved and replayed. Additionally, procedural memory stores how to perform tasks (tool usage patterns, workflows). Each memory type serves a different purpose: short-term for immediate coherence, long-term for user preferences and facts, episodic for learning from past mistakes, and procedural for efficient task execution. Production agents typically combine all four types, with size limits and eviction policies for each.</p>
+<p>AI agents use three types of memory. Short-term memory holds the current conversation context (recent messages, current task state) and is limited by the LLM's context window. Long-term memory persists information across sessions using external storage (databases,.
+vector stores, files). Episodic memory stores specific past events and experiences that can be retrieved and replayed. Additionally, procedural memory stores how to perform tasks (tool usage patterns,.
+workflows). Each memory type serves a different purpose: short-term for immediate coherence, long-term for user preferences and facts, episodic for learning from past mistakes,.
+and procedural for efficient task execution. Production agents typically combine all four types, with size limits and eviction policies for each.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -787,7 +793,11 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q2: How does vector search work for long-term memory?
   </summary>
   <div class="tp-qa-answer">
-    <p>Vector search for memory works by converting text into embeddings (fixed-size numerical vectors using models like text-embedding-ada-002) and storing them in a vector database. When a new query arrives, it's embedded with the same model, and the database finds the most similar stored vectors using cosine similarity or dot product. The retrieved memories are then added to the LLM prompt as context. Key parameters: top-K (how many memories to retrieve), similarity threshold (minimum score to include), and recency boost (multiply score by a recency factor). Vector search is preferred over keyword search because it captures semantic meaning — "how do I book a flight?" matches "travel reservation process" even though they share no keywords. Popular vector databases include Pinecone, Qdrant, Milvus, and pgvector.</p>
+<p>Vector search for memory works by converting text into embeddings (fixed-size numerical vectors using models like text-embedding-ada-002) and storing them in a vector.
+database. When a new query arrives, it's embedded with the same model, and the database finds the most similar stored vectors using cosine similarity or.
+dot product. The retrieved memories are then added to the LLM prompt as context. Key parameters: top-K (how many memories to retrieve),.
+similarity threshold (minimum score to include), and recency boost (multiply score by a recency factor). Vector search is preferred over keyword search because it captures semantic meaning — "how do I book a flight?" matches "travel reservation process" even though they share no keywords. Popular vector.
+databases include Pinecone, Qdrant, Milvus, and pgvector.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -799,7 +809,11 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q3: What is a memory manager in an agent system?
   </summary>
   <div class="tp-qa-answer">
-    <p>A memory manager is a centralized service that orchestrates all memory operations across an agent system. It handles: (1) storing new memories (converting text to embeddings, inserting into vector store with metadata like timestamp, session ID, importance score); (2) retrieving relevant memories (embedding queries, searching vector store, ranking and filtering results); (3) memory consolidation (merging duplicate memories, pruning outdated ones, updating importance scores based on access frequency); (4) memory decay (reducing importance of unused memories over time until they're archived); and (5) session management (associating memories with sessions and users). The memory manager provides a clean API for the agent to access memory without knowing the underlying storage details. It also enforces memory limits and implements eviction policies (remove least recently used memories when the store exceeds capacity).</p>
+<p>A memory manager is a centralized service that orchestrates all memory operations across an agent system. It handles: (1) storing new memories (converting text to embeddings,.
+inserting into vector store with metadata like timestamp, session ID, importance score); (2) retrieving relevant memories (embedding queries, searching vector store,.
+ranking and filtering results); (3) memory consolidation (merging duplicate memories, pruning outdated ones, updating importance scores based on access frequency); (4) memory decay (reducing importance of unused memories over time until they're archived);.
+and (5) session management (associating memories with sessions and users). The memory manager provides a clean API for the agent to access memory without knowing the underlying storage details. It also enforces memory limits and.
+implements eviction policies (remove least recently used memories when the store exceeds capacity).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -811,7 +825,12 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q4: How do you manage context window limits?
   </summary>
   <div class="tp-qa-answer">
-    <p>Managing context window limits requires strategies to fit the most relevant information within the LLM's token budget. Common approaches: (1) message pruning — remove oldest or least relevant messages while keeping recent ones; (2) message summarization — compress multiple messages into a summary, trading detail for space; (3) sliding window — keep only the last N messages, archiving older ones to long-term memory; (4) importance scoring — rank messages by relevance and drop low-scoring ones first; (5) token counting — track usage and trigger pruning when approaching the limit. Each strategy has tradeoffs: pruning is simple but may lose context, summarization preserves semantic content but loses verbatim details, sliding window works well for recent context but loses early conversation. Most production agents use a combination, with summarization for older context and a sliding window for recent messages.</p>
+<p>Managing context window limits requires strategies to fit the most relevant information within the LLM's token budget. Common approaches: (1) message pruning — remove oldest or.
+least relevant messages while keeping recent ones; (2) message summarization — compress multiple messages into a summary, trading detail for space;.
+(3) sliding window — keep only the last N messages, archiving older ones to long-term memory; (4) importance scoring — rank messages by relevance and.
+drop low-scoring ones first; (5) token counting — track usage and trigger pruning when approaching the limit. Each strategy has tradeoffs: pruning is simple but.
+may lose context, summarization preserves semantic content but loses verbatim details, sliding window works well for recent context but loses early conversation. Most production agents use a combination,.
+with summarization for older context and a sliding window for recent messages.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -823,7 +842,12 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q5: What strategies exist for memory consolidation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Memory consolidation strategies reorganize and optimize stored memories for better retrieval and efficiency. Key strategies: (1) deduplication — detect and merge memories with near-identical content using similarity thresholds; (2) abstraction — generalize specific memories into broader patterns (e.g., multiple "user liked sci-fi movies" entries become "user's top genre: sci-fi"); (3) forgetting — reduce importance scores for memories that haven't been accessed recently; (4) hierarchical storage — keep high-level summaries in fast storage and detailed memories in slower storage; (5) temporal clustering — group memories by time periods for more efficient retrieval of recent context. Consolidation typically runs as a background process triggered by memory count thresholds or time intervals. The goal is to maintain a manageable, high-signal memory store that provides the most useful context without exceeding storage or retrieval latency limits.</p>
+<p>Memory consolidation strategies reorganize and optimize stored memories for better retrieval and efficiency. Key strategies: (1) deduplication — detect and merge memories with near-identical content using similarity thresholds;.
+(2) abstraction — generalize specific memories into broader patterns (e.g., multiple "user liked sci-fi movies" entries become "user's top genre: sci-fi");.
+(3) forgetting — reduce importance scores for memories that haven't been accessed recently; (4) hierarchical storage — keep high-level summaries in fast storage and.
+detailed memories in slower storage; (5) temporal clustering — group memories by time periods for more efficient retrieval of recent context. Consolidation typically runs as a background process triggered by memory count thresholds or.
+time intervals. The goal is to maintain a manageable, high-signal memory store that provides the most useful context without exceeding storage or.
+retrieval latency limits.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -835,7 +859,12 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q6: How does state persistence work in LangGraph?
   </summary>
   <div class="tp-qa-answer">
-    <p>State persistence in LangGraph saves the graph's state at each execution step using checkpointers. A checkpointer serializes the current state (all message history, node results, and execution metadata) to a storage backend after each node executes. The <code>StateGraph</code> is compiled with a checkpointer instance, and each invocation uses a thread ID to identify the conversation session. On subsequent invocations with the same thread ID, the graph loads the last checkpoint and continues from that point rather than starting fresh. Persistence backends include: in-memory (for testing), SQLite (single-process, file-based), Postgres (production, multi-process), and Redis (high-performance, caching). State persistence enables conversation continuity — the agent remembers past interactions even across server restarts — and is essential for any multi-turn agent application.</p>
+<p>State persistence in LangGraph saves the graph's state at each execution step using checkpointers. A checkpointer serializes the current state (all message history,.
+node results, and execution metadata) to a storage backend after each node executes. The <code>StateGraph</code> is compiled with a checkpointer instance,.
+and each invocation uses a thread ID to identify the conversation session. On subsequent invocations with the same thread ID, the graph loads the last checkpoint and.
+continues from that point rather than starting fresh. Persistence backends include: in-memory (for testing), SQLite (single-process, file-based), Postgres (production, multi-process), and.
+Redis (high-performance, caching). State persistence enables conversation continuity — the agent remembers past interactions even across server restarts — and is essential for.
+any multi-turn agent application.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -847,7 +876,11 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q7: What is semantic memory and how does it differ from episodic memory?
   </summary>
   <div class="tp-qa-answer">
-    <p>Semantic memory stores factual knowledge independent of specific experiences — like "Paris is the capital of France" or "user prefers email over Slack for notifications". Episodic memory stores specific events with temporal context — like "last time user asked about pricing, they chose the enterprise plan on March 15th". The key difference is that semantic memory stores generalizable facts extracted from experiences, while episodic memory stores the raw experiences themselves. For agents, semantic memory grows more useful over time as patterns emerge from many interactions. Episodic memory is better for debugging ("what exactly happened in that last session?") and for learning from specific past mistakes. Both are typically stored in vector databases but with different indexing strategies — semantic memories are clustered by topic, episodic memories by time.</p>
+<p>Semantic memory stores factual knowledge independent of specific experiences — like "Paris is the capital of France" or "user prefers email over Slack for.
+notifications". Episodic memory stores specific events with temporal context — like "last time user asked about pricing, they chose the enterprise plan on March 15th". The key difference is that semantic memory stores generalizable facts extracted from experiences,.
+while episodic memory stores the raw experiences themselves. For agents, semantic memory grows more useful over time as patterns emerge from many interactions. Episodic memory is better for.
+debugging ("what exactly happened in that last session?") and for learning from specific past mistakes. Both are typically stored in vector.
+databases but with different indexing strategies — semantic memories are clustered by topic, episodic memories by time.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -859,7 +892,11 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q8: How do you implement message pruning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Message pruning removes selected messages from the conversation history to stay within context limits. Implementation tracks message metadata (timestamp, token count, role, importance score) and applies a pruning policy when total tokens exceed a threshold. The simplest policy removes oldest messages first, but better policies consider: message role (user messages may be more important than system messages), importance score (tagged by the agent during execution), and whether a message has been referenced in later responses. A summarization-based approach replaces a block of pruned messages with a generated summary. Implementation uses a <code>MessageManager</code> class with a <code>prune(max_tokens)</code> method that calculates current usage, identifies candidates for removal, and reconstructs the message array. Production systems log all pruned messages for debugging and audit trails.</p>
+<p>Message pruning removes selected messages from the conversation history to stay within context limits. Implementation tracks message metadata (timestamp, token count,.
+role, importance score) and applies a pruning policy when total tokens exceed a threshold. The simplest policy removes oldest messages first,.
+but better policies consider: message role (user messages may be more important than system messages), importance score (tagged by the agent during execution),.
+and whether a message has been referenced in later responses. A summarization-based approach replaces a block of pruned messages with a generated summary. Implementation uses a <code>MessageManager</code> class with a <code>prune(max_tokens)</code> method that calculates current usage,.
+identifies candidates for removal, and reconstructs the message array. Production systems log all pruned messages for debugging and audit trails.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -871,7 +908,12 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q9: What is a sliding window buffer and how does it work?
   </summary>
   <div class="tp-qa-answer">
-    <p>A sliding window buffer keeps only the N most recent messages in the LLM context, discarding older ones. It works by maintaining a list of messages with a fixed maximum size — when a new message arrives and the buffer is full, the oldest message is removed before adding the new one. The window size is typically set below the LLM's context limit (e.g., 7000 tokens for an 8000-token model) to leave room for system prompts and tool results. Variants include: (1) token-based window (count tokens, not messages); (2) time-based window (keep messages from the last N minutes); (3) importance-aware window (evict lowest-importance message). The sliding window is simple and efficient, but can drop important early context. Production agents often combine it with summarization — the removed older messages are summarized and kept as a single condensed message at the start of the window.</p>
+<p>A sliding window buffer keeps only the N most recent messages in the LLM context, discarding older ones. It works by maintaining a list of messages with a fixed maximum size — when a new message arrives and.
+the buffer is full, the oldest message is removed before adding the new one. The window size is typically set below the LLM's context limit (e.g.,.
+7000 tokens for an 8000-token model) to leave room for system prompts and tool results. Variants include: (1) token-based window (count tokens,.
+not messages); (2) time-based window (keep messages from the last N minutes); (3) importance-aware window (evict lowest-importance message). The sliding window is simple and.
+efficient, but can drop important early context. Production agents often combine it with summarization — the removed older messages are summarized and.
+kept as a single condensed message at the start of the window.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -883,7 +925,11 @@ Memory and state management are critical for building capable AI agents. Short-t
     Q10: How do you implement a summary-based memory system?
   </summary>
   <div class="tp-qa-answer">
-    <p>A summary-based memory system maintains a running summary of the conversation that's updated after each exchange. Implementation: (1) initialize with a placeholder summary; (2) after each user/assistant turn, pass the current summary and new messages to an LLM to generate an updated summary; (3) always include the summary in the prompt alongside recent messages (within the sliding window). The summary is stored in long-term memory keyed by session ID. This preserves the gist of early conversation even when those messages are pruned from the context window. The system also stores important facts extracted from the conversation (semantic memory) and recent detailed history (episodic memory). When constructing the prompt, the agent includes: the running summary, recent messages from the sliding window, relevant semantic memories from vector search, and any relevant episodic memories. This layered approach maximizes relevant context within the token budget.</p>
+<p>A summary-based memory system maintains a running summary of the conversation that's updated after each exchange. Implementation: (1) initialize with a placeholder summary;.
+(2) after each user/assistant turn, pass the current summary and new messages to an LLM to generate an updated summary; (3) always include the summary in the prompt alongside recent messages (within the sliding window). The summary is stored in.
+long-term memory keyed by session ID. This preserves the gist of early conversation even when those messages are pruned from the context window. The system also stores important facts extracted from the conversation (semantic memory) and.
+recent detailed history (episodic memory). When constructing the prompt, the agent includes: the running summary, recent messages from the sliding window,.
+relevant semantic memories from vector search, and any relevant episodic memories. This layered approach maximizes relevant context within the token budget.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

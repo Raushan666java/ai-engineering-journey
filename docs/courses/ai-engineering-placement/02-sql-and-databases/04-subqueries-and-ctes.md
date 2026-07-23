@@ -390,7 +390,8 @@ const aboveAvg = employees.filter(e =>
 </details>
 <details class="tp-qa-card" data-qid="sql-s04-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: How do you handle NULL in subqueries?</summary>
-  <div class="tp-qa-answer"><p>IN with NULL in subquery: if any NULL exists, IN evaluates to unknown for non-matching rows (handled as false in WHERE). NOT IN with NULL: if NULL exists, ALL rows are excluded (returns empty). Use NOT EXISTS instead of NOT IN for safety with NULLs.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+<div class="tp-qa-answer"><p>IN with NULL in subquery: if any NULL exists, IN evaluates to unknown for non-matching rows (handled as false in WHERE). NOT IN with NULL: if NULL exists,.
+ALL rows are excluded (returns empty). Use NOT EXISTS instead of NOT IN for safety with NULLs.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s04-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: What are derived tables?</summary>

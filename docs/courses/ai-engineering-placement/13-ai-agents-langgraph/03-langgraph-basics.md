@@ -693,7 +693,9 @@ print(f"After approve: {approval.check_status(approval_id)}")
 
 ## Summary
 
-LangGraph provides a graph-based framework for building stateful, multi-actor agent applications. A StateGraph consists of nodes (computation steps) connected by edges (control flow). Conditional edges enable dynamic routing based on state. State management uses typed schemas with reducers for deterministic updates. Checkpointing enables conversation persistence, resumability, and debugging. Human-in-the-loop patterns (interrupts, approval workflows) allow agents to pause execution for human input before continuing. LangGraph's structured approach makes complex agent workflows manageable, testable, and observable.
+LangGraph provides a graph-based framework for building stateful, multi-actor agent applications. A StateGraph consists of nodes (computation steps) connected by edges (control flow). Conditional edges enable dynamic routing based on state. State management uses typed schemas with reducers for.
+deterministic updates. Checkpointing enables conversation persistence, resumability, and debugging. Human-in-the-loop patterns (interrupts, approval workflows) allow agents to pause execution for human input before continuing. LangGraph's structured approach makes complex agent workflows manageable,.
+testable, and observable.
 
 ## Practical Takeaways
 
@@ -713,7 +715,11 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q1: What are the core concepts of LangGraph?
   </summary>
   <div class="tp-qa-answer">
-    <p>LangGraph models agent workflows as directed graphs with four core concepts: Nodes represent computation steps (LLM calls, tool executions, human input); Edges define the control flow between nodes; State is a shared typed data structure that persists across nodes and gets updated by each node; and the Graph is the complete workflow definition that can be compiled and executed. A StateGraph requires a state schema (like a TypedDict), at least one node, an entry point, and edges. Conditional edges enable dynamic routing where the next node depends on the current state. This graph-based approach makes complex multi-step agent workflows explicit, testable, and observable compared to implicit loop-based implementations.</p>
+<p>LangGraph models agent workflows as directed graphs with four core concepts: Nodes represent computation steps (LLM calls, tool executions, human input);.
+Edges define the control flow between nodes; State is a shared typed data structure that persists across nodes and gets updated by each node;.
+and the Graph is the complete workflow definition that can be compiled and executed. A StateGraph requires a state schema (like a TypedDict),.
+at least one node, an entry point, and edges. Conditional edges enable dynamic routing where the next node depends on the current state. This graph-based approach makes complex multi-step agent workflows explicit,.
+testable, and observable compared to implicit loop-based implementations.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -725,7 +731,10 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q2: How do you build a StateGraph in LangGraph?
   </summary>
   <div class="tp-qa-answer">
-    <p>To build a StateGraph: (1) define a state schema (a TypedDict or dataclass with fields like <code>messages: List[Dict]</code>, <code>step_count: int</code>, <code>final_answer: Optional[str]</code>); (2) create node functions that take state and return updated state; (3) add nodes to the graph with <code>graph.add_node("name", fn)</code>; (4) add edges between nodes with <code>graph.add_edge("source", "target")</code> or conditional edges with a router function; (5) set the entry point with <code>graph.set_entry_point("node_name")</code>; and (6) compile with <code>graph.compile()</code>. The compiled graph accepts initial state via <code>invoke()</code> and returns the final state after traversing the graph. This pattern separates workflow topology from business logic.</p>
+<p>To build a StateGraph: (1) define a state schema (a TypedDict or dataclass with fields like <code>messages: List[Dict]</code>, <code>step_count: int</code>, <code>final_answer: Optional[str]</code>);.
+(2) create node functions that take state and return updated state; (3) add nodes to the graph with <code>graph.add_node("name", fn)</code>; (4) add edges between nodes with <code>graph.add_edge("source",.
+"target")</code> or conditional edges with a router function; (5) set the entry point with <code>graph.set_entry_point("node_name")</code>; and (6) compile with <code>graph.compile()</code>. The compiled graph accepts initial state via <code>invoke()</code> and.
+returns the final state after traversing the graph. This pattern separates workflow topology from business logic.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -737,7 +746,11 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q3: What is conditional routing in LangGraph?
   </summary>
   <div class="tp-qa-answer">
-    <p>Conditional routing lets the graph decide which node to execute next based on the current state. Instead of a fixed edge <code>A → B</code>, you add a router function that examines the state and returns the name of the next node. For example, after an LLM node, a router might check if the LLM output contains a tool call: if yes, route to the tool execution node; if no, route to the output node. The router function is registered with <code>graph.add_conditional_edges(source, router, mapping)</code> where <code>mapping</code> is a dict of return-value → target-node. This enables ReAct-style loops where the graph cycles between LLM and tool nodes until a final answer is produced. Conditional edges are the key enabler for non-linear, decision-based workflows.</p>
+<p>Conditional routing lets the graph decide which node to execute next based on the current state. Instead of a fixed edge <code>A → B</code>,.
+you add a router function that examines the state and returns the name of the next node. For example, after an LLM node,.
+a router might check if the LLM output contains a tool call: if yes, route to the tool execution node; if no,.
+route to the output node. The router function is registered with <code>graph.add_conditional_edges(source, router, mapping)</code> where <code>mapping</code> is a dict of return-value → target-node. This enables ReAct-style loops where the graph cycles between LLM and.
+tool nodes until a final answer is produced. Conditional edges are the key enabler for non-linear, decision-based workflows.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -749,7 +762,10 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q4: How does state management work in LangGraph?
   </summary>
   <div class="tp-qa-answer">
-    <p>State in LangGraph is a shared typed data structure that flows through the graph. Each node receives the current state and returns an updated state. State updates are controlled by reducers — functions that determine how to combine existing state with new values. The most common reducers are: "replace" (overwrite the field), "append" (add to a list, used for message history), and "merge" (merge dicts). For example, a messages field uses "append" reducer so each new message is added to the list rather than replacing it. Reducers ensure deterministic, predictable state updates regardless of node execution order. State schemas also define default values and type constraints, catching errors at graph compilation time rather than during execution.</p>
+<p>State in LangGraph is a shared typed data structure that flows through the graph. Each node receives the current state and.
+returns an updated state. State updates are controlled by reducers — functions that determine how to combine existing state with new values. The most common reducers are: "replace" (overwrite the field),.
+"append" (add to a list, used for message history), and "merge" (merge dicts). For example, a messages field uses "append" reducer so each new message is added to the list rather than replacing it. Reducers ensure deterministic,.
+predictable state updates regardless of node execution order. State schemas also define default values and type constraints, catching errors at graph compilation time rather than during execution.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -761,7 +777,10 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q5: What is checkpointing and why is it important?
   </summary>
   <div class="tp-qa-answer">
-    <p>Checkpointing saves the graph's state at each step, enabling persistence, resumption, debugging, and rollback. After each node execution, the current state (including which node executed last) is serialized and stored with a unique checkpoint ID. If execution is interrupted — whether by a crash, a timeout, or a human-in-the-loop pause — the graph can resume from the last checkpoint by loading the saved state and continuing from the saved node. During development, checkpoints allow replaying execution from any step to debug issues. Production agent systems use checkpointing to handle server restarts, long-running workflows, and multi-session conversations. Common storage backends include SQLite, Postgres, and Redis.</p>
+<p>Checkpointing saves the graph's state at each step, enabling persistence, resumption, debugging, and rollback. After each node execution, the current state (including which node executed last) is serialized and.
+stored with a unique checkpoint ID. If execution is interrupted — whether by a crash, a timeout, or a human-in-the-loop pause — the graph can resume from the last checkpoint by loading the saved state and.
+continuing from the saved node. During development, checkpoints allow replaying execution from any step to debug issues. Production agent systems use checkpointing to handle server restarts,.
+long-running workflows, and multi-session conversations. Common storage backends include SQLite, Postgres, and Redis.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -773,7 +792,11 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q6: How do you implement human-in-the-loop with LangGraph?
   </summary>
   <div class="tp-qa-answer">
-    <p>Human-in-the-loop (HITL) in LangGraph is implemented via interrupt nodes. An interrupt node is a special node that pauses graph execution, saves the current state to a checkpoint, and returns control to the caller with the paused state. The human reviews the state (e.g., an agent's proposed action), provides input (approve, reject, or modify), and calls <code>resume()</code> on the graph with the human's input. The graph then continues from the interrupt node, incorporating the human's input into the state. The <code>HumanInTheLoopGraph</code> wrapper manages paused states by thread ID, supporting multiple concurrent paused workflows. This pattern is essential for high-risk actions where you need human approval before proceeding.</p>
+<p>Human-in-the-loop (HITL) in LangGraph is implemented via interrupt nodes. An interrupt node is a special node that pauses graph execution, saves the current state to a checkpoint,.
+and returns control to the caller with the paused state. The human reviews the state (e.g., an agent's proposed action), provides input (approve,.
+reject, or modify), and calls <code>resume()</code> on the graph with the human's input. The graph then continues from the interrupt node,.
+incorporating the human's input into the state. The <code>HumanInTheLoopGraph</code> wrapper manages paused states by thread ID, supporting multiple concurrent paused workflows. This pattern is essential for.
+high-risk actions where you need human approval before proceeding.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -785,7 +808,11 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q7: What are reducers in LangGraph state?
   </summary>
   <div class="tp-qa-answer">
-    <p>Reducers in LangGraph define how state fields are updated when multiple nodes modify the same field. Without reducers, each node would replace the field value. With reducers, you can specify merge strategies: "append" for lists (each new message is added, not replacing previous ones), "merge" for dicts (nested updates), or custom reducer functions. For example, a messages list with "append" reducer accumulates conversation history across all nodes. Reducers are specified in the state schema definition alongside field types and defaults. This pattern is inspired by Redux and ensures state updates are predictable and composable. Custom reducers can implement complex logic like deduplication or priority-based merging.</p>
+<p>Reducers in LangGraph define how state fields are updated when multiple nodes modify the same field. Without reducers, each node would replace the field value. With reducers,.
+you can specify merge strategies: "append" for lists (each new message is added, not replacing previous ones), "merge" for dicts (nested updates),.
+or custom reducer functions. For example, a messages list with "append" reducer accumulates conversation history across all nodes. Reducers are specified in the state schema definition alongside field types and.
+defaults. This pattern is inspired by Redux and ensures state updates are predictable and composable. Custom reducers can implement complex logic like deduplication or.
+priority-based merging.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -797,7 +824,12 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q8: How does a checkpointed graph work?
   </summary>
   <div class="tp-qa-answer">
-    <p>A checkpointed graph wraps the standard compiled graph with a checkpointer that saves state before each node execution. When <code>invoke()</code> is called, the graph proceeds normally but at each step the current state is serialized and stored with a unique checkpoint ID (typically combining thread ID and timestamp). If execution is interrupted or needs to be resumed, the checkpointer loads the most recent checkpoint and restores the state, then continues from the saved node. Checkpoints can also be used for debugging — you can replay execution from any checkpoint, inspect intermediate states, or branch off from a specific point. The pattern enables long-running agent workflows that may span minutes, hours, or even days if waiting for human input.</p>
+<p>A checkpointed graph wraps the standard compiled graph with a checkpointer that saves state before each node execution. When <code>invoke()</code> is called,.
+the graph proceeds normally but at each step the current state is serialized and stored with a unique checkpoint ID (typically combining thread ID and.
+timestamp). If execution is interrupted or needs to be resumed, the checkpointer loads the most recent checkpoint and restores the state,.
+then continues from the saved node. Checkpoints can also be used for debugging — you can replay execution from any checkpoint,.
+inspect intermediate states, or branch off from a specific point. The pattern enables long-running agent workflows that may span minutes, hours,.
+or even days if waiting for human input.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -809,7 +841,12 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q9: What is an approval workflow in LangGraph?
   </summary>
   <div class="tp-qa-answer">
-    <p>An approval workflow in LangGraph pauses execution at a point where human judgment is required before proceeding with a potentially costly or irreversible action. The pattern adds an interrupt node after the agent proposes an action but before it executes. The interrupt presents the proposed action to a human (e.g., via a dashboard notification or email), along with context. The human can approve (execution continues), reject (agent must find an alternative), or modify the action. The approval workflow manager tracks pending approvals by ID, supports timeouts (auto-reject if no response within N minutes), and can require multiple approvers for high-risk actions. This pattern is essential for production agents that send emails, delete data, or make financial transactions.</p>
+<p>An approval workflow in LangGraph pauses execution at a point where human judgment is required before proceeding with a potentially costly or.
+irreversible action. The pattern adds an interrupt node after the agent proposes an action but before it executes. The interrupt presents the proposed action to a human (e.g.,.
+via a dashboard notification or email), along with context. The human can approve (execution continues), reject (agent must find an alternative),.
+or modify the action. The approval workflow manager tracks pending approvals by ID, supports timeouts (auto-reject if no response within N minutes),.
+and can require multiple approvers for high-risk actions. This pattern is essential for production agents that send emails, delete data, or.
+make financial transactions.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -821,7 +858,11 @@ LangGraph provides a graph-based framework for building stateful, multi-actor ag
     Q10: How does a compiled graph execute?
   </summary>
   <div class="tp-qa-answer">
-    <p>A compiled graph executes by starting at the entry point node and following edges until reaching a node with no outgoing edges (terminal state). At each step: (1) the current node's function is called with the current state; (2) the function returns updated state; (3) the graph checks for conditional edges from the current node — if found, the router function determines the next node; (4) if no conditional edges, the graph follows the first unconditional edge; (5) if no edges at all, execution stops and the final state is returned. The execution loop handles cycles (edges that go back to previous nodes), which is how agent loops work — the graph cycles between LLM and tool nodes until the LLM produces a final answer. Compilation does validation too, ensuring all nodes referenced in edges actually exist.</p>
+<p>A compiled graph executes by starting at the entry point node and following edges until reaching a node with no outgoing edges (terminal state). At each step: (1) the current node's function is called with the current state;.
+(2) the function returns updated state; (3) the graph checks for conditional edges from the current node — if found, the router function determines the next node;.
+(4) if no conditional edges, the graph follows the first unconditional edge; (5) if no edges at all, execution stops and.
+the final state is returned. The execution loop handles cycles (edges that go back to previous nodes), which is how agent loops work — the graph cycles between LLM and.
+tool nodes until the LLM produces a final answer. Compilation does validation too, ensuring all nodes referenced in edges actually exist.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

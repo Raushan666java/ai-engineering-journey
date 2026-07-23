@@ -831,7 +831,10 @@ class HealthCheck:
 
 ## Summary
 
-The Full AI SaaS Platform capstone integrates all previous learnings into a production-grade multi-tenant service. Authentication supports JWT, API keys, and social login. Usage-based billing with Stripe handles tiered plans, metered usage, and invoicing. Rate limiting and quota enforcement protect system stability. Structured logging, metrics collection, and alerting provide production observability. Kubernetes deployment with auto-scaling ensures reliability under varying loads. This architecture serves as a complete template for launching an AI SaaS product.
+The Full AI SaaS Platform capstone integrates all previous learnings into a production-grade multi-tenant service. Authentication supports JWT, API keys, and.
+social login. Usage-based billing with Stripe handles tiered plans, metered usage, and invoicing. Rate limiting and quota enforcement protect system stability. Structured logging,.
+metrics collection, and alerting provide production observability. Kubernetes deployment with auto-scaling ensures reliability under varying loads. This architecture serves as a complete template for.
+launching an AI SaaS product.
 
 ## Practical Takeaways
 
@@ -852,7 +855,11 @@ The Full AI SaaS Platform capstone integrates all previous learnings into a prod
     Q1: How do you design multi-tenancy in an AI SaaS platform?
   </summary>
   <div class="tp-qa-answer">
-    <p>Multi-tenancy ensures tenant data isolation. Approaches: (1) Discriminator column — every database table has a `tenant_id` column, and every query filters by `WHERE tenant_id = current_tenant`. This is the simplest and most common approach, suitable for 90% of SaaS applications. (2) Schema-per-tenant — separate database schemas for each tenant (e.g., `tenant1.orders`, `tenant2.orders`). Stronger isolation, useful for enterprise tenants with compliance requirements (HIPAA, SOC2). (3) Database-per-tenant — completely separate databases. Maximum isolation but highest operational cost. The discriminator approach with PostgreSQL Row-Level Security (RLS) is the recommended default. RLS automatically adds tenant filtering to every query without application code changes, preventing data leakage bugs. Always include tenant_id in API rate limiting, billing, and monitoring as well.</p>
+<p>Multi-tenancy ensures tenant data isolation. Approaches: (1) Discriminator column — every database table has a `tenant_id` column, and every query filters by `WHERE tenant_id = current_tenant`. This is the simplest and.
+most common approach, suitable for 90% of SaaS applications. (2) Schema-per-tenant — separate database schemas for each tenant (e.g., `tenant1.orders`, `tenant2.orders`). Stronger isolation,.
+useful for enterprise tenants with compliance requirements (HIPAA, SOC2). (3) Database-per-tenant — completely separate databases. Maximum isolation but highest operational cost. The discriminator.
+approach with PostgreSQL Row-Level Security (RLS) is the recommended default. RLS automatically adds tenant filtering to every query without application code changes,.
+preventing data leakage bugs. Always include tenant_id in API rate limiting, billing, and monitoring as well.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -864,7 +871,12 @@ The Full AI SaaS Platform capstone integrates all previous learnings into a prod
     Q2: How do you implement JWT-based authentication for an AI API?
   </summary>
   <div class="tp-qa-answer">
-    <p>JWT authentication flow: (1) Registration — user registers with email/password, password is hashed (bcrypt, argon2) and stored. (2) Login — validate credentials, generate JWT with claims: `{sub: user_id, tenant_id: "tenant_123", role: "admin", exp: 1609459200}`. (3) Token structure — header (alg: HS256/RS256), payload (claims), signature. Use RS256 for production (asymmetric keys allow services to verify without holding the signing key). (4) Refresh tokens — short-lived access tokens (15 min) + long-lived refresh tokens (7 days). Refresh tokens are stored server-side and can be revoked. (5) API key alternative — for programmatic access, generate API keys (UUIDv4) stored hashed in the database, authenticated via `Authorization: Bearer sk-...` header. (6) Middleware — in FastAPI, create a dependency that extracts and validates the JWT, injects the current user into request handlers. (7) Security — validate expiry, signature, and issuer on every request.</p>
+<p>JWT authentication flow: (1) Registration — user registers with email/password, password is hashed (bcrypt, argon2) and stored. (2) Login — validate credentials,.
+generate JWT with claims: `{sub: user_id, tenant_id: "tenant_123", role: "admin", exp: 1609459200}`. (3) Token structure — header (alg: HS256/RS256), payload (claims),.
+signature. Use RS256 for production (asymmetric keys allow services to verify without holding the signing key). (4) Refresh tokens — short-lived access tokens (15 min) + long-lived refresh tokens (7 days). Refresh tokens are stored server-side and.
+can be revoked. (5) API key alternative — for programmatic access, generate API keys (UUIDv4) stored hashed in the database, authenticated via `Authorization: Bearer sk-...` header. (6) Middleware — in FastAPI,.
+create a dependency that extracts and validates the JWT, injects the current user into request handlers. (7) Security — validate expiry,.
+signature, and issuer on every request.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -876,7 +888,12 @@ The Full AI SaaS Platform capstone integrates all previous learnings into a prod
     Q3: How do you implement usage-based billing with Stripe for an AI SaaS?
   </summary>
   <div class="tp-qa-answer">
-    <p>Stripe usage-based billing: (1) Product setup — create products in Stripe (Free, Starter $29/mo, Pro $99/mo, Enterprise custom). Each has a base price and usage meters (e.g., "tokens_used"). (2) Usage tracking — on each API request, increment the tenant's usage counter in your database. Periodically (every hour or daily), report usage to Stripe using `stripe.subscriptionItems.createUsageRecord()`. (3) Metered billing — Stripe calculates overage charges automatically based on the usage recorded. (4) Tiered plans — Free (1000 tokens/day), Starter (10K tokens/day), Pro (100K tokens/day), Enterprise (custom). Track daily consumption and return 429 (Too Many Requests) when limit is exceeded. (5) Webhooks — listen for `invoice.payment_succeeded` (grant access) and `invoice.payment_failed` (suspend access). (6) Customer portal — use Stripe Customer Portal for users to manage their subscription, view invoices, and update payment methods.</p>
+<p>Stripe usage-based billing: (1) Product setup — create products in Stripe (Free, Starter $29/mo, Pro $99/mo, Enterprise custom). Each has a base price and.
+usage meters (e.g., "tokens_used"). (2) Usage tracking — on each API request, increment the tenant's usage counter in your database. Periodically (every hour or.
+daily), report usage to Stripe using `stripe.subscriptionItems.createUsageRecord()`. (3) Metered billing — Stripe calculates overage charges automatically based on the usage recorded. (4) Tiered plans — Free (1000 tokens/day),.
+Starter (10K tokens/day), Pro (100K tokens/day), Enterprise (custom). Track daily consumption and return 429 (Too Many Requests) when limit is exceeded. (5) Webhooks — listen for.
+`invoice.payment_succeeded` (grant access) and `invoice.payment_failed` (suspend access). (6) Customer portal — use Stripe Customer Portal for users to manage their subscription,.
+view invoices, and update payment methods.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -888,7 +905,12 @@ The Full AI SaaS Platform capstone integrates all previous learnings into a prod
     Q4: How do you implement rate limiting for a multi-tenant AI API?
   </summary>
   <div class="tp-qa-answer">
-    <p>Rate limiting strategy: (1) Token bucket algorithm — each tenant gets a bucket with capacity (burst limit) and refill rate (steady state). e.g., Free tier: 10 req/s burst, 5 req/s steady. Pro tier: 100 req/s burst, 50 req/s steady. (2) Sliding window — track request count in the last 60 seconds. Simpler to implement but allows burst at window boundaries. (3) Implementation — use Redis with: `INCR tenant:{id}:requests` with EXPIRE 60. If count > limit, return 429. For token bucket, use a Lua script for atomic operations. (4) Distributed — since API runs on multiple instances, use a centralized Redis for rate limit state. (5) Headers — return `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset` headers for client-side handling. (6) Graceful degradation — instead of hard 429, consider queuing requests during short bursts with a small delay. (7) Cost protection — rate limiting is the primary defense against runaway costs from abusive users.</p>
+<p>Rate limiting strategy: (1) Token bucket algorithm — each tenant gets a bucket with capacity (burst limit) and refill rate (steady state). e.g.,.
+Free tier: 10 req/s burst, 5 req/s steady. Pro tier: 100 req/s burst, 50 req/s steady. (2) Sliding window — track request count in the last 60 seconds. Simpler to implement but.
+allows burst at window boundaries. (3) Implementation — use Redis with: `INCR tenant:{id}:requests` with EXPIRE 60. If count > limit, return 429. For.
+token bucket, use a Lua script for atomic operations. (4) Distributed — since API runs on multiple instances, use a centralized Redis for.
+rate limit state. (5) Headers — return `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset` headers for client-side handling. (6) Graceful degradation — instead of hard 429,.
+consider queuing requests during short bursts with a small delay. (7) Cost protection — rate limiting is the primary defense against runaway costs from abusive users.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -900,7 +922,12 @@ The Full AI SaaS Platform capstone integrates all previous learnings into a prod
     Q5: How do you design an API key management system for AI SaaS?
   </summary>
   <div class="tp-qa-answer">
-    <p>API key management: (1) Generation — create keys with `crypto.randomUUID()` prefixed with a recognizable prefix (e.g., `sk-` for secret keys, `pk-` for public keys). (2) Storage — store only the SHA-256 hash of the key in the database. The plaintext key is shown once to the user at creation. (3) Metadata — each key has: name (user-defined), permissions (read/write/admin), status (active/revoked), last_used, created_at, expires_at. (4) Validation middleware — extract key from Authorization header, hash it, look up in DB, check status and expiry. (5) Key rotation — allow users to create new keys and revoke old ones. Auto-rotate keys not used in 90 days. (6) IP restriction — Enterprise plan allows restricting keys to specific IP ranges (CIDR). (7) Audit logging — log every API key creation, rotation, and revocation with the user who performed the action. (8) Rate limiting per key — apply rate limits at the key level (in addition to tenant level) for finer control.</p>
+<p>API key management: (1) Generation — create keys with `crypto.randomUUID()` prefixed with a recognizable prefix (e.g., `sk-` for secret keys, `pk-` for.
+public keys). (2) Storage — store only the SHA-256 hash of the key in the database. The plaintext key is shown once to the user at creation. (3) Metadata — each key has: name (user-defined),.
+permissions (read/write/admin), status (active/revoked), last_used, created_at, expires_at. (4) Validation middleware — extract key from Authorization header, hash it, look up in DB,.
+check status and expiry. (5) Key rotation — allow users to create new keys and revoke old ones. Auto-rotate keys not used in 90 days. (6) IP restriction — Enterprise plan allows restricting keys to specific IP ranges (CIDR). (7) Audit logging — log every API key creation,.
+rotation, and revocation with the user who performed the action. (8) Rate limiting per key — apply rate limits at the key level (in addition to tenant level) for.
+finer control.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -912,7 +939,12 @@ The Full AI SaaS Platform capstone integrates all previous learnings into a prod
     Q6: How do you implement structured logging and monitoring for an AI SaaS platform?
   </summary>
   <div class="tp-qa-answer">
-    <p>Structured logging best practices: (1) JSON format — every log line is a JSON object with fields: `{timestamp, level, service, tenant_id, request_id, user_id, endpoint, latency_ms, status_code, tokens_used, model_version}`. (2) Correlation ID — generate a unique request_id at the API gateway that propagates through all microservices via HTTP headers. (3) Log aggregation — send logs to Elasticsearch (ELK stack), Loki (Grafana), or a cloud-native solution (Datadog, New Relic). (4) Metrics — expose Prometheus metrics at /metrics endpoint: request count (counter), latency histogram, error rate (counter with error type label), active sessions (gauge). (5) Dashboards — Grafana dashboards for: request volume, p50/p95/p99 latency, error rate by endpoint, cost per tenant, tokens consumed per model. (6) Alerting — alert on p95 latency >2s, error rate >5%, or any 5xx rate >1% sustained for 5 minutes. (7) Tracing — use OpenTelemetry for distributed tracing across services.</p>
+<p>Structured logging best practices: (1) JSON format — every log line is a JSON object with fields: `{timestamp, level, service, tenant_id,.
+request_id, user_id, endpoint, latency_ms, status_code, tokens_used, model_version}`. (2) Correlation ID — generate a unique request_id at the API gateway that propagates through all microservices via HTTP headers. (3) Log aggregation — send logs to Elasticsearch (ELK stack),.
+Loki (Grafana), or a cloud-native solution (Datadog, New Relic). (4) Metrics — expose Prometheus metrics at /metrics endpoint: request count (counter),.
+latency histogram, error rate (counter with error type label), active sessions (gauge). (5) Dashboards — Grafana dashboards for: request volume, p50/p95/p99 latency,.
+error rate by endpoint, cost per tenant, tokens consumed per model. (6) Alerting — alert on p95 latency >2s, error rate >5%,.
+or any 5xx rate >1% sustained for 5 minutes. (7) Tracing — use OpenTelemetry for distributed tracing across services.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -924,7 +956,12 @@ The Full AI SaaS Platform capstone integrates all previous learnings into a prod
     Q7: How do you handle cost spikes and abuse prevention in an AI SaaS?
   </summary>
   <div class="tp-qa-answer">
-    <p>Cost spike prevention: (1) Hard rate limits — maximum requests per second/minute/day regardless of plan. (2) Budget alerts — notify users at 50%, 80%, and 100% of their monthly budget. (3) Automated throttling — if a tenant's usage exceeds 300% of their normal pattern, automatically reduce their rate limit. (4) Spending caps — allow users to set maximum monthly spending; when exceeded, the API returns 402 (Payment Required). (5) Anomaly detection — monitor usage patterns per tenant. Flag tenants that suddenly increase usage by 10— or start calling expensive models. (6) Model cost controls — limit which models each tier can access (Free: only fast/cheap models, Enterprise: all models). (7) Suspicious pattern detection — detect API keys making rapid requests from diverse IPs (potential credential sharing), rapid token consumption (scraping), or repeated error retries (buggy client). (8) Graceful degradation — during abuse, serve cached responses or use cheaper models rather than failing completely.</p>
+<p>Cost spike prevention: (1) Hard rate limits — maximum requests per second/minute/day regardless of plan. (2) Budget alerts — notify users at 50%,.
+80%, and 100% of their monthly budget. (3) Automated throttling — if a tenant's usage exceeds 300% of their normal pattern,.
+automatically reduce their rate limit. (4) Spending caps — allow users to set maximum monthly spending; when exceeded, the API returns 402 (Payment Required). (5) Anomaly detection — monitor.
+usage patterns per tenant. Flag tenants that suddenly increase usage by 10— or start calling expensive models. (6) Model cost controls — limit which models each tier can access (Free: only fast/cheap models,.
+Enterprise: all models). (7) Suspicious pattern detection — detect API keys making rapid requests from diverse IPs (potential credential sharing), rapid token consumption (scraping),.
+or repeated error retries (buggy client). (8) Graceful degradation — during abuse, serve cached responses or use cheaper models rather than failing completely.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -961,7 +998,11 @@ spec:
       target:
         type: AverageValue
         averageValue: 100</pre></code>
-    <p>Kubernetes deployment: (1) Deployment — define 3+ replicas with resource requests/limits (e.g., requests: cpu=500m, memory=512Mi; limits: cpu=2, memory=2Gi). (2) Horizontal Pod Autoscaler (HPA) — scale based on CPU utilization (target 70%) and custom metrics (requests per second per pod). (3) Readiness probe — `/health` endpoint returns 200 only when the model is loaded and the service is ready. (4) Graceful shutdown — handle SIGTERM by finishing in-flight requests within 30s. (5) Service mesh — use Istio or Linkerd for traffic splitting (canary deployments), retries, and circuit breaking. (6) Ingress — NGINX Ingress Controller with TLS termination, rate limiting at the ingress level. (7) ConfigMap and Secrets — store non-sensitive config (model names, endpoints) in ConfigMap, API keys and DB passwords in Secrets. (8) Namespace isolation — separate dev/staging/production in different namespaces with network policies.</p>
+<p>Kubernetes deployment: (1) Deployment — define 3+ replicas with resource requests/limits (e.g., requests: cpu=500m, memory=512Mi; limits: cpu=2, memory=2Gi). (2) Horizontal Pod Autoscaler (HPA) — scale based on CPU utilization (target 70%) and.
+custom metrics (requests per second per pod). (3) Readiness probe — `/health` endpoint returns 200 only when the model is loaded and.
+the service is ready. (4) Graceful shutdown — handle SIGTERM by finishing in-flight requests within 30s. (5) Service mesh — use Istio or.
+Linkerd for traffic splitting (canary deployments), retries, and circuit breaking. (6) Ingress — NGINX Ingress Controller with TLS termination, rate limiting at the ingress level. (7) ConfigMap and.
+Secrets — store non-sensitive config (model names, endpoints) in ConfigMap, API keys and DB passwords in Secrets. (8) Namespace isolation — separate dev/staging/production in different namespaces with network policies.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -973,7 +1014,13 @@ spec:
     Q9: How do you implement social login (Google, GitHub) alongside JWT auth?
   </summary>
   <div class="tp-qa-answer">
-    <p>Social login integration: (1) OAuth 2.0 flow — redirect user to the provider's auth URL with client_id, redirect_uri, and scope. After authorization, the provider redirects back with an authorization code. (2) Token exchange — server exchanges the code for an access token and ID token via the provider's token endpoint. (3) User lookup — decode the ID token (JWT) to get the user's email and name. Check if a user with that email exists; if not, create a new user. (4) Account linking — if the user already has an email/password account, link the social provider to the existing account (prevent duplicate accounts). (5) JWT generation — after successful social auth, generate your own JWT (same as password-based auth) so the rest of your API uses a consistent auth mechanism. (6) Libraries — use `authlib` or `python-social-auth` to handle the OAuth flow. (7) Security — validate the ID token's signature and expiry using the provider's JWKS endpoint. Always use HTTPS for redirect URIs.</p>
+<p>Social login integration: (1) OAuth 2.0 flow — redirect user to the provider's auth URL with client_id, redirect_uri, and scope. After authorization,.
+the provider redirects back with an authorization code. (2) Token exchange — server exchanges the code for an access token and.
+ID token via the provider's token endpoint. (3) User lookup — decode the ID token (JWT) to get the user's email and.
+name. Check if a user with that email exists; if not, create a new user. (4) Account linking — if the user already has an email/password account,.
+link the social provider to the existing account (prevent duplicate accounts). (5) JWT generation — after successful social auth, generate your own JWT (same as password-based auth) so the rest of your API uses a consistent auth mechanism. (6) Libraries — use `authlib` or.
+`python-social-auth` to handle the OAuth flow. (7) Security — validate the ID token's signature and expiry using the provider's JWKS endpoint. Always use HTTPS for.
+redirect URIs.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -999,7 +1046,11 @@ spec:
     return weightedCount <= limit;
   }
 }</pre></code>
-    <p>Sliding window counters provide accurate usage tracking without the per-request storage cost of a true sliding log. The algorithm divides time into fixed windows (e.g., 1 minute). The current window's counter is incremented on each request. The total estimated count combines the current window count plus a weighted portion of the previous window count, proportional to how far we are into the current window. This smooths out boundary conditions that occur with fixed-window counters (where a burst of requests at the boundary of two windows could double the actual rate). Store counters in Redis with TTL = 2— window duration. This approach uses O(1) storage per tenant and provides accurate (>95%) approximation of true rolling window counts.</p>
+<p>Sliding window counters provide accurate usage tracking without the per-request storage cost of a true sliding log. The algorithm divides time into fixed windows (e.g.,.
+1 minute). The current window's counter is incremented on each request. The total estimated count combines the current window count plus a weighted portion of the previous window count,.
+proportional to how far we are into the current window. This smooths out boundary conditions that occur with fixed-window counters (where a burst of requests at the boundary of two windows could double the actual rate). Store counters in Redis.
+with TTL = 2— window duration. This approach uses O(1) storage per tenant and.
+provides accurate (>95%) approximation of true rolling window counts.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

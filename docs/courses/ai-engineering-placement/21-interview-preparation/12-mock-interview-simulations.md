@@ -226,7 +226,9 @@ print(f"Median: {find_median_sorted_arrays(nums1, nums2)}")
 ## Expected: (11 + 15) / 2 = 13.0
 ```text
 
-**Common DSA problem categories**: Arrays (two pointers, sliding window), Strings (anagrams, palindromes, pattern matching), Hash tables (frequency counts, caching), Linked lists (reversal, cycle detection), Trees (traversals, LCA, BST), Graphs (BFS, DFS, topological sort), Dynamic programming (knapsack, LCS, edit distance), Stacks/Queues (monotonic stack, sliding window max), Heaps (top K, median from stream), Binary search (rotated array, search space), Recursion/backtracking (permutations, subsets, N-queens).
+**Common DSA problem categories**: Arrays (two pointers, sliding window), Strings (anagrams, palindromes, pattern matching), Hash tables (frequency counts, caching), Linked lists (reversal,.
+cycle detection), Trees (traversals, LCA, BST), Graphs (BFS, DFS, topological sort), Dynamic programming (knapsack, LCS, edit distance), Stacks/Queues (monotonic stack, sliding window max),.
+Heaps (top K, median from stream), Binary search (rotated array, search space), Recursion/backtracking (permutations, subsets, N-queens).
 
 **Time management trap**: Don't spend more than 20 minutes on an optimal solution. If you're stuck after 15 minutes, verbally walk through your thought process, state your best approach even if suboptimal, and start coding. A working brute force solution scores higher than an incomplete optimal one.
 
@@ -321,7 +323,9 @@ type Mutation {{
 print(APIDesigner.rest_endpoints("tweet"))
 ```text
 
-**Common system design problems**: Design Twitter (news feed, timeline), Design YouTube/Netflix (video streaming), Design Uber (ride matching, pricing), Design WhatsApp (chat, presence, media), Design URL shortener (tinyurl), Design Dropbox (file sync), Design Instagram (photo sharing, feed), Design Google Maps (navigation, geocoding), Design rate limiter (distributed throttling), Design web crawler (distributed crawling), Design recommendation system (collaborative filtering), Design chat system (real-time messaging).
+**Common system design problems**: Design Twitter (news feed, timeline), Design YouTube/Netflix (video streaming), Design Uber (ride matching, pricing), Design WhatsApp (chat,.
+presence, media), Design URL shortener (tinyurl), Design Dropbox (file sync), Design Instagram (photo sharing, feed), Design Google Maps (navigation, geocoding), Design rate limiter (distributed throttling),.
+Design web crawler (distributed crawling), Design recommendation system (collaborative filtering), Design chat system (real-time messaging).
 
 **Key tradeoffs to discuss**: SQL vs NoSQL, read replicas vs write shards, consistency vs availability (CAP theorem), synchronous vs asynchronous processing, monolithic vs microservices, horizontal vs vertical scaling, batch vs stream processing, strong vs eventual consistency.
 
@@ -461,7 +465,10 @@ print(f"Deployment: {mod_system.deployment_plan['serving_infrastructure']}")
 
 **Common ML design problems**: Search ranking (relevant results), Recommendation system (collaborative filtering), Fraud detection (real-time scoring), Content moderation (toxic comment detection), Autonomous vehicle perception (object detection), Supply chain forecasting (demand prediction), Pricing optimization (dynamic pricing), Customer churn prediction (retention), Personalization (content ranking), Anomaly detection (infrastructure monitoring).
 
-**Key ML knowledge to demonstrate**: Bias-variance tradeoff, regularization techniques, loss functions for different tasks, evaluation metrics and their business alignment, handling missing data and outliers, feature engineering and selection, handling class imbalance, understanding of overfitting and how to combat it, model interpretability (SHAP, LIME, feature importance), distributed training (data parallelism, model parallelism), deployment patterns (batch, streaming, real-time), A/B testing and experiment design, MLOps (CI/CD for ML, model registry, feature store).
+**Key ML knowledge to demonstrate**: Bias-variance tradeoff, regularization techniques, loss functions for different tasks, evaluation metrics and their business alignment, handling missing data and.
+outliers, feature engineering and selection, handling class imbalance, understanding of overfitting and how to combat it, model interpretability (SHAP, LIME, feature importance),.
+distributed training (data parallelism, model parallelism), deployment patterns (batch, streaming, real-time), A/B testing and experiment design, MLOps (CI/CD for ML, model registry,.
+feature store).
 
 ---
 
@@ -779,7 +786,9 @@ print(tracker.summary())
   </summary>
   <div class="tp-qa-answer">
     <p>This happens to everyone. Here's the contingency plan:</p>
-    <p><strong>At the 20-minute mark</strong> (if you're still stuck on optimal): Assess honestly. Can you solve a brute force version in the remaining time? If yes, pivot to brute force and communicate the tradeoff: "I'm going to implement a working O(n²) solution now and discuss optimizations after. Given the constraints, this will still pass for inputs up to 10³."</p>
+<p><strong>At the 20-minute mark</strong> (if you're still stuck on optimal): Assess honestly. Can you solve a brute force version in the remaining time? If yes,.
+pivot to brute force and communicate the tradeoff: "I'm going to implement a working O(n²) solution now and discuss optimizations after. Given the constraints,.
+this will still pass for inputs up to 10³."</p>
     <p><strong>If you're completely stuck</strong>: Ask for a hint. Good interviewers prefer giving a hint to watching you struggle silently. Say: "I'm considering approach X but I'm stuck on Y. Could you point me in the right direction?"</p>
     <p><strong>If time runs out</strong>: Write pseudo-code or describe your approach verbally. "I would use a trie here to solve in O(n*k) time. The structure would look like..." Partial solution + clear thinking scores higher than incomplete silent code.</p>
     <p><strong>Learning from it</strong>: After the interview, solve the problem fully. Identify why you got stuck (wrong pattern recognition, unfamiliar data structure, missed observation). Add it to your weak areas list and practice 5 similar problems.</p>
@@ -970,7 +979,8 @@ print(tracker.summary())
   </summary>
   <div class="tp-qa-answer">
     <p>Not all interviewers are warm and engaging. Some are tired, distracted, or naturally quiet. Here's how to handle it:</p>
-    <p><strong>1. Drive the conversation yourself</strong>: If they're not asking questions, fill the gaps. Narrate your entire thought process: "Now I'm going to analyze the time complexity. The outer loop runs N times and the inner loop runs M times, so overall it's O(N*M). I'm considering whether we can reduce this to O(N+M) using a hash map..."</p>
+<p><strong>1. Drive the conversation yourself</strong>: If they're not asking questions, fill the gaps. Narrate your entire thought process: "Now I'm going to analyze the time complexity. The outer loop runs N times and.
+the inner loop runs M times, so overall it's O(N*M). I'm considering whether we can reduce this to O(N+M) using a hash map..."</p>
     <p><strong>2. Ask directive questions</strong>: Instead of open-ended questions, ask specific ones that are easy to answer: "Do you want me to focus on the most scalable solution, or is a simpler solution acceptable here?" "Should I handle the case where the input is empty?"</p>
     <p><strong>3. Check for understanding</strong>: "Does that approach make sense so far?" "Would you like me to go deeper on the caching strategy, or proceed to deployment?"</p>
     <p><strong>4. Don't take it personally</strong>: The interviewer might be having a bad day or their style is just quiet. Focus on delivering your best performance regardless of their reaction. Many quiet interviewers still give positive feedback if you demonstrate competence.</p>
@@ -1137,7 +1147,9 @@ d) Immediately start the next mock
 
 **Medium** — Create a performance tracking spreadsheet or Python script that records: date, round type, scores (6 categories), strengths, weaknesses, and action items. Complete 5 mock interviews and enter the data. Generate a trend report identifying your top 3 areas for improvement.
 
-**Hard** — Run a complete mock interview loop (4 rounds — DSA, system design, ML deep-dive, behavioral) with a single partner or across multiple sessions. Each round must be timed strictly. Collect feedback from each interviewer. Write a 500-word self-reflection analyzing patterns across all 4 rounds, identifying systemic weaknesses, and creating a 30-day improvement plan with specific weekly targets.
+**Hard** — Run a complete mock interview loop (4 rounds — DSA, system design, ML deep-dive, behavioral) with a single partner or.
+across multiple sessions. Each round must be timed strictly. Collect feedback from each interviewer. Write a 500-word self-reflection analyzing patterns across all 4 rounds,.
+identifying systemic weaknesses, and creating a 30-day improvement plan with specific weekly targets.
 
 ---
 

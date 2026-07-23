@@ -1000,7 +1000,9 @@ console.log(vault.get("openai_key", "production"));
     Q8: What is a secret zero-trust architecture for LLM API keys?
   </summary>
   <div class="tp-qa-answer">
-    <p>The application never directly holds LLM API keys. Instead: (1) A proxy/service mesh handles LLM API calls, (2) The proxy authenticates to Vault, retrieves the key, calls the LLM, (3) The key is held in memory only, never written to disk, (4) Downstream services authenticate to the proxy via mTLS + JWT, (5) The proxy enforces rate limits and audits all usage.</p>
+<p>The application never directly holds LLM API keys. Instead: (1) A proxy/service mesh handles LLM API calls, (2) The proxy authenticates to Vault,.
+retrieves the key, calls the LLM, (3) The key is held in memory only, never written to disk, (4) Downstream services authenticate to the proxy via mTLS + JWT,.
+(5) The proxy enforces rate limits and audits all usage.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1012,7 +1014,8 @@ console.log(vault.get("openai_key", "production"));
     Q9: How do you rotate secrets without downtime?
   </summary>
   <div class="tp-qa-answer">
-    <p>Implement dual-key support: maintain two valid keys during rotation. Steps: (1) Deploy new key alongside old, (2) Update all services to use new key, (3) Verify all services work with new key, (4) Revoke old key. For services that can't be updated simultaneously, have a grace period where both keys are valid. Automate the entire process.</p>
+<p>Implement dual-key support: maintain two valid keys during rotation. Steps: (1) Deploy new key alongside old, (2) Update all services to use new key,.
+(3) Verify all services work with new key, (4) Revoke old key. For services that can't be updated simultaneously, have a grace period where both keys are valid. Automate the entire process.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

@@ -370,7 +370,9 @@ function evaluateScaling(metrics: ServerMetrics, currentServers: number, maxRps:
 
 <details class="tp-qa-card" data-qid="sysdes-s01-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q1: What is the difference between vertical and horizontal scaling?</summary>
-  <div class="tp-qa-answer"><p>Vertical scaling (scale up) adds more resources to a single server — more CPU, RAM, disk. It's simple but has a hard limit and creates a single point of failure. Horizontal scaling (scale out) adds more servers to distribute load. It's virtually unlimited, provides fault tolerance, but requires stateless application design.</p></div>
+<div class="tp-qa-answer"><p>Vertical scaling (scale up) adds more resources to a single server — more CPU, RAM, disk. It's simple but has a hard limit and.
+creates a single point of failure. Horizontal scaling (scale out) adds more servers to distribute load. It's virtually unlimited, provides fault tolerance,.
+but requires stateless application design.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
@@ -606,7 +608,10 @@ pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
 
 ## Summary
 
-Scalability fundamentals provide the framework for handling growing AI system demands. Vertical scaling adds power to a single machine while horizontal scaling adds more machines — the latter requires stateless application design with externalized state. Load balancers distribute traffic using various algorithms with health checks ensuring availability. Database scaling uses read replicas for read throughput and sharding for write distribution. Caching at multiple layers (CDN, Redis, in-memory) reduces database load. Asynchronous processing with queues decouples components and improves responsiveness. Capacity planning requires estimating traffic, projecting growth, and adding headroom validated through load testing.
+Scalability fundamentals provide the framework for handling growing AI system demands. Vertical scaling adds power to a single machine while horizontal scaling adds more machines — the latter requires stateless application design with externalized state. Load balancers distribute traffic using.
+various algorithms with health checks ensuring availability. Database scaling uses read replicas for.
+read throughput and sharding for write distribution. Caching at multiple layers (CDN, Redis, in-memory) reduces database load. Asynchronous processing with queues decouples components and.
+improves responsiveness. Capacity planning requires estimating traffic, projecting growth, and adding headroom validated through load testing.
 
 
 ## Placement Section

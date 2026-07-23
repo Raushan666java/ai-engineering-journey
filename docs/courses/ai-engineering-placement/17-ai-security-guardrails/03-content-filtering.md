@@ -797,7 +797,8 @@ console.log(filter.filter("Hello world"));
     Q4: How does topic restriction work?
   </summary>
   <div class="tp-qa-answer">
-    <p>Topic restriction uses keyword patterns to classify user input into topic categories. An allow list specifies which topics are permitted; a block list specifies forbidden topics. Inputs that don't match any allowed topic are either blocked or handled with a fallback response. This is essential for domain-specific applications (e.g., finance bot shouldn't give medical advice).</p>
+<p>Topic restriction uses keyword patterns to classify user input into topic categories. An allow list specifies which topics are permitted; a block list specifies forbidden topics. Inputs that don't match any allowed topic are either blocked or.
+handled with a fallback response. This is essential for domain-specific applications (e.g., finance bot shouldn't give medical advice).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -857,7 +858,9 @@ console.log(filter.filter("Hello world"));
     Q9: What metrics should you track for content filtering?
   </summary>
   <div class="tp-qa-answer">
-    <p>Track: (1) Block rate — % of inputs/outputs blocked, (2) Flag rate — % requiring human review, (3) False positive rate — incorrectly blocked content, (4) False negative rate — missed harmful content (from user reports), (5) Filter latency — time added by filtering pipeline, (6) Category distribution — which filters are most active, (7) User appeal rate — how often users challenge blocks.</p>
+<p>Track: (1) Block rate — % of inputs/outputs blocked, (2) Flag rate — % requiring human review, (3) False positive rate — incorrectly blocked content,.
+(4) False negative rate — missed harmful content (from user reports), (5) Filter latency — time added by filtering pipeline, (6) Category distribution — which filters are most active,.
+(7) User appeal rate — how often users challenge blocks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

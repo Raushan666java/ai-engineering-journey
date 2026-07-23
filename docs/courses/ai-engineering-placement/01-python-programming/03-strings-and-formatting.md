@@ -581,7 +581,8 @@ const decoded: string = new TextDecoder().decode(utf8);
 
 <details class="tp-qa-card" data-qid="p02-s03-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: How does slicing with negative indices work?</summary>
-  <div class="tp-qa-answer"><p>Negative indices count from the end of the sequence, where -1 is the last element. In slices like <code>s[-5:-2]</code>, Python converts negative indices to positive by adding the length. Works with all sequence types (str, list, tuple). The step can also be negative for reversed traversal: <code>s[::-1]</code> reverses a string.</p></div>
+<div class="tp-qa-answer"><p>Negative indices count from the end of the sequence, where -1 is the last element. In slices like <code>s[-5:-2]</code>, Python converts negative indices to positive by adding the length. Works with all sequence types (str,.
+list, tuple). The step can also be negative for reversed traversal: <code>s[::-1]</code> reverses a string.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -593,7 +594,9 @@ const decoded: string = new TextDecoder().decode(utf8);
 
 <details class="tp-qa-card" data-qid="p02-s03-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: Explain the split and join methods in detail.</summary>
-  <div class="tp-qa-answer"><p><code>split(sep, maxsplit)</code> divides a string into a list at each occurrence of sep. Without arguments, splits on any whitespace and strips empty strings. <code>rsplit()</code> works from the right. <code>join(iterable)</code> is the inverse � concatenates an iterable of strings with the separator string. They form the primary pattern for string tokenization/assembly in Python.</p></div>
+<div class="tp-qa-answer"><p><code>split(sep, maxsplit)</code> divides a string into a list at each occurrence of sep. Without arguments, splits on any whitespace and.
+strips empty strings. <code>rsplit()</code> works from the right. <code>join(iterable)</code> is the inverse � concatenates an iterable of strings with the separator.
+string. They form the primary pattern for string tokenization/assembly in Python.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -605,13 +608,16 @@ const decoded: string = new TextDecoder().decode(utf8);
 
 <details class="tp-qa-card" data-qid="p02-s03-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: Why is string concatenation with + inefficient in loops?</summary>
-  <div class="tp-qa-answer"><p>Strings are immutable, so each <code>+=</code> creates a new string and copies both parts. This results in O(n�) time and O(n�) memory allocation. Using <code>"".join(list)</code> precomputes the total size, allocates once, and copies each string exactly once � O(n) time. For very large strings, StringIO or building a list then joining is preferred.</p></div>
+<div class="tp-qa-answer"><p>Strings are immutable, so each <code>+=</code> creates a new string and copies both parts. This results in O(n�) time and.
+O(n�) memory allocation. Using <code>"".join(list)</code> precomputes the total size, allocates once, and copies each string exactly once � O(n) time. For.
+very large strings, StringIO or building a list then joining is preferred.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="p02-s03-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: What is the difference between str and bytes in Python 3?</summary>
-  <div class="tp-qa-answer"><p><code>str</code> represents Unicode text as a sequence of code points. <code>bytes</code> represents raw binary data as a sequence of integers 0-255. They are different types � you cannot mix them in operations like concatenation. Conversion between them requires explicit <code>.encode()</code> and <code>.decode()</code>. In Python 2, str was bytes and unicode was the text type.</p></div>
+<div class="tp-qa-answer"><p><code>str</code> represents Unicode text as a sequence of code points. <code>bytes</code> represents raw binary data as a sequence of integers 0-255. They are different types � you cannot mix them in operations like concatenation. Conversion between them requires explicit <code>.encode()</code> and.
+<code>.decode()</code>. In Python 2, str was bytes and unicode was the text type.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 

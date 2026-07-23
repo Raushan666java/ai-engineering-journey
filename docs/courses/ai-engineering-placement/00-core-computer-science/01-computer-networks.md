@@ -517,7 +517,10 @@ This helps because networking is all about trade-offs between **reliability** (T
 
 ## Summary
 
-Computer networks form the backbone of every distributed AI system. The key mental models are: protocols have trade-offs (TCP vs UDP, HTTP/1.1 vs HTTP/2 vs HTTP/3), caching is everywhere (DNS, CDN, load balancer), and latency is additive across every network hop. For AI engineers, the practical implications are direct: choose gRPC for high-throughput inference serving, use HTTP/2 multiplexing for dashboard UIs, deploy CDNs for model assets, and design load balancing with consistent hashing to maintain cache locality.
+Computer networks form the backbone of every distributed AI system. The key mental models are: protocols have trade-offs (TCP vs UDP,.
+HTTP/1.1 vs HTTP/2 vs HTTP/3), caching is everywhere (DNS, CDN, load balancer), and latency is additive across every network hop. For.
+AI engineers, the practical implications are direct: choose gRPC for high-throughput inference serving, use HTTP/2 multiplexing for dashboard UIs, deploy CDNs for.
+model assets, and design load balancing with consistent hashing to maintain cache locality.
 
 ## Practical Takeaways
 

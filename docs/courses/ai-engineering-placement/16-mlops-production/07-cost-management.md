@@ -800,7 +800,9 @@ class CostTracker {
     Q4: How do you track costs per ML experiment?
   </summary>
   <div class="tp-qa-answer">
-    <p>Log cost metrics in MLflow: compute GPU hours — rate, storage costs, and API costs. Tag experiments with team, project, and purpose. Cloud resource tagging (AWS tags, GCP labels) links infrastructure costs to experiments. Aggregate costs per team/project in a dashboard. Set budget thresholds that trigger alerts at 50%, 75%, 90%, and 100% utilization.</p>
+<p>Log cost metrics in MLflow: compute GPU hours — rate, storage costs, and API costs. Tag experiments with team, project, and.
+purpose. Cloud resource tagging (AWS tags, GCP labels) links infrastructure costs to experiments. Aggregate costs per team/project in a dashboard. Set budget thresholds that trigger alerts at 50%,.
+75%, 90%, and 100% utilization.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -812,7 +814,8 @@ class CostTracker {
     Q5: What caching strategies reduce inference costs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Redis caching with TTL stores predictions keyed by feature hash. Cache hit rates of 30-50% are common for many ML use cases. Additional strategies: (1) Result cache for identical inputs, (2) Partial cache for model ensembles (cache sub-model outputs), (3) Semantic cache for LLMs (cache similar prompts, not just identical ones).</p>
+<p>Redis caching with TTL stores predictions keyed by feature hash. Cache hit rates of 30-50% are common for many ML use cases. Additional strategies: (1) Result cache for.
+identical inputs, (2) Partial cache for model ensembles (cache sub-model outputs), (3) Semantic cache for LLMs (cache similar prompts, not just identical ones).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

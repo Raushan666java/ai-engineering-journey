@@ -825,7 +825,9 @@ Understanding chunking strategies is fundamental for AI engineers. This section 
 
 ## Summary
 
-Chunking strategy is one of the most impactful decisions in RAG system design. Fixed-size chunking offers simplicity and predictability. Semantic chunking respects natural language boundaries for better coherence. Recursive chunking provides flexibility across separator hierarchies. Document-aware chunking preserves structural integrity in code, HTML, markdown, and PDF content. Evaluation metrics include retrieval precision (how many chunks are relevant), information coverage (what fraction of document content is captured), boundary quality (sentence integrity at cut points), and token utilization (embedding model efficiency). The optimal chunk size depends on content type — technical documentation benefits from larger chunks (500-1000 chars) while conversational content works well with smaller chunks (200-500 chars).
+Chunking strategy is one of the most impactful decisions in RAG system design. Fixed-size chunking offers simplicity and predictability. Semantic chunking respects natural language boundaries for.
+better coherence. Recursive chunking provides flexibility across separator hierarchies. Document-aware chunking preserves structural integrity in code, HTML, markdown, and PDF content. Evaluation metrics include retrieval precision (how many chunks are relevant),.
+information coverage (what fraction of document content is captured), boundary quality (sentence integrity at cut points), and token utilization (embedding model efficiency). The optimal chunk size depends on content type — technical documentation benefits from larger chunks (500-1000 chars) while conversational content works well with smaller chunks (200-500 chars).
 
 ## Practical Takeaways
 
@@ -846,7 +848,10 @@ Chunking strategy is one of the most impactful decisions in RAG system design. F
     Q1: What is the optimal chunk size for RAG and how does it depend on the content type?
   </summary>
   <div class="tp-qa-answer">
-    <p>Optimal chunk size varies by content type and embedding model token limits (typically 512 tokens). For technical documentation and research papers, 500-1000 characters (125-250 tokens) works well because each chunk contains enough context for meaningful retrieval. For conversational content and FAQs, 200-500 characters (50-125 tokens) is better — smaller chunks return more precise matches. For code, use function-level boundaries (entire function as one chunk) regardless of size. The token utilization metric helps assess efficiency: chunks much smaller than the model's max input length waste capacity, while chunks near the limit may carry irrelevant content. Always benchmark 3-5 chunk sizes on your domain.</p>
+<p>Optimal chunk size varies by content type and embedding model token limits (typically 512 tokens). For technical documentation and research papers,.
+500-1000 characters (125-250 tokens) works well because each chunk contains enough context for meaningful retrieval. For conversational content and FAQs, 200-500 characters (50-125 tokens) is better — smaller chunks return more precise matches. For.
+code, use function-level boundaries (entire function as one chunk) regardless of size. The token utilization metric helps assess efficiency: chunks much smaller than the model's max input length waste capacity,.
+while chunks near the limit may carry irrelevant content. Always benchmark 3-5 chunk sizes on your domain.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -858,7 +863,10 @@ Chunking strategy is one of the most impactful decisions in RAG system design. F
     Q2: How much overlap should you use between chunks and why?
   </summary>
   <div class="tp-qa-answer">
-    <p>Chunk overlap of 10-20% of the chunk size prevents information loss at boundaries. For example, a 500-character chunk with 50-100 characters overlap ensures that a sentence or concept spanning a chunk boundary appears in at least one chunk. Without overlap, a query that matches content exactly at the split point may return neither chunk. The overlap tokens are redundant across chunks, increasing storage and embedding costs by 10-20% — this is usually worth the retrieval quality improvement. For content with strong sentence boundaries (periods, newlines), less overlap (5-10%) is sufficient. For dense technical content, use more overlap (15-20%).</p>
+<p>Chunk overlap of 10-20% of the chunk size prevents information loss at boundaries. For example, a 500-character chunk with 50-100 characters overlap ensures that a sentence or.
+concept spanning a chunk boundary appears in at least one chunk. Without overlap, a query that matches content exactly at the split point may return neither chunk. The overlap tokens are redundant across chunks,.
+increasing storage and embedding costs by 10-20% — this is usually worth the retrieval quality improvement. For content with strong sentence boundaries (periods,.
+newlines), less overlap (5-10%) is sufficient. For dense technical content, use more overlap (15-20%).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -870,7 +878,10 @@ Chunking strategy is one of the most impactful decisions in RAG system design. F
     Q3: Compare fixed-size chunking, semantic chunking, and recursive chunking.
   </summary>
   <div class="tp-qa-answer">
-    <p>Fixed-size chunking splits by character or token count with configurable overlap — it is simple, predictable, and fast, but may break sentences and lose coherence. Semantic chunking respects natural boundaries (sentences, paragraphs, topic shifts) — it produces more coherent chunks but is slower and may produce variable-length chunks. Recursive chunking (LangChain-style) tries multiple separators in order (double newline, single newline, period, space), falling back to smaller splits when a chunk exceeds the limit — it combines the reliability of fixed-size with the coherence of semantic. For production, start with recursive chunking as it adapts well to varied content. Use semantic chunking when coherence is critical (e.g., legal contracts).</p>
+<p>Fixed-size chunking splits by character or token count with configurable overlap — it is simple, predictable, and fast, but may break sentences and.
+lose coherence. Semantic chunking respects natural boundaries (sentences, paragraphs, topic shifts) — it produces more coherent chunks but is slower and.
+may produce variable-length chunks. Recursive chunking (LangChain-style) tries multiple separators in order (double newline, single newline, period, space), falling back to smaller splits when a chunk exceeds the limit — it combines the reliability of fixed-size with the coherence of semantic. For.
+production, start with recursive chunking as it adapts well to varied content. Use semantic chunking when coherence is critical (e.g., legal contracts).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -882,7 +893,10 @@ Chunking strategy is one of the most impactful decisions in RAG system design. F
     Q4: How do you chunk code files for a code-aware RAG system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Use function/class boundary-aware chunking that preserves entire function bodies. Split Python code at def, class, and @decorator lines. For JavaScript, split at function, class, const, and export boundaries. Each chunk should contain one complete function or class definition — never split mid-method. For languages with curly braces, use brace-matching to find complete blocks. Include the function signature and docstring with each chunk for self-contained meaning. For very long functions, you may need to split at logical internal blocks, but this is a last resort. Test by verifying that no function body is split across chunks in a representative sample of your codebase.</p>
+<p>Use function/class boundary-aware chunking that preserves entire function bodies. Split Python code at def, class, and @decorator lines. For JavaScript, split at function,.
+class, const, and export boundaries. Each chunk should contain one complete function or class definition — never split mid-method. For languages with curly braces,.
+use brace-matching to find complete blocks. Include the function signature and docstring with each chunk for self-contained meaning. For very long functions,.
+you may need to split at logical internal blocks, but this is a last resort. Test by verifying that no function body is split across chunks in a representative sample of your codebase.</p>
     <pre><code>def _chunk_python(self, code):
     for line in code.split("\n"):
         if line.startswith(("def ", "class ", "@")):
@@ -900,7 +914,9 @@ Chunking strategy is one of the most impactful decisions in RAG system design. F
     Q5: How do you evaluate chunking quality before deploying to production?
   </summary>
   <div class="tp-qa-answer">
-    <p>Measure four metrics: boundary quality (percentage of chunks that end at a sentence boundary — target > 90%), information density (percentage of chunks that contain meaningful content above a minimum length — target > 95%), token utilization (average chunk length relative to model max — target 60-80%), and retrieval precision (percentage of retrieved chunks relevant to the query — measure on a test set). Use the ChunkEvaluator class to compare strategies:</p>
+<p>Measure four metrics: boundary quality (percentage of chunks that end at a sentence boundary — target > 90%), information density (percentage of chunks that contain meaningful content above a minimum length — target > 95%),.
+token utilization (average chunk length relative to model max — target 60-80%), and retrieval precision (percentage of retrieved chunks relevant to the query — measure on a test set). Use the ChunkEvaluator.
+class to compare strategies:</p>
     <pre><code>evaluator = ChunkEvaluator(queries, relevant_chunks)
 results = evaluator.evaluate_chunker(chunker, documents)
 print(f"Precision: {results['precision']}, Coverage: {results['coverage']}")</code></pre>
@@ -916,7 +932,10 @@ print(f"Precision: {results['precision']}, Coverage: {results['coverage']}")</co
     Q6: How do you handle chunking for PDFs and HTML documents differently?
   </summary>
   <div class="tp-qa-context">
-    <p>For PDFs, extract text with layout preservation (using PyMuPDF or pdfplumber) and chunk by page boundaries when pages are semantically cohesive. Use form-feed characters (\f) as page separators and preserve headings, tables, and lists. For HTML, parse the DOM and chunk by heading hierarchy (h1, h2, h3) — each section under a heading becomes a chunk. Preserve structural metadata: include the heading path (e.g., "Chapter 3 > Section 3.1") in the chunk metadata for hierarchical context. Strip navigation, ads, and boilerplate content before chunking. For both formats, maintain a reference to the original page/section URL for source attribution in generated answers.</p>
+<p>For PDFs, extract text with layout preservation (using PyMuPDF or pdfplumber) and chunk by page boundaries when pages are semantically cohesive. Use form-feed characters (\f) as page separators and.
+preserve headings, tables, and lists. For HTML, parse the DOM and chunk by heading hierarchy (h1, h2, h3) — each section under a heading becomes a chunk. Preserve structural metadata: include the heading path (e.g.,.
+"Chapter 3 > Section 3.1") in the chunk metadata for hierarchical context. Strip navigation, ads, and boilerplate content before chunking. For.
+both formats, maintain a reference to the original page/section URL for source attribution in generated answers.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -928,7 +947,10 @@ print(f"Precision: {results['precision']}, Coverage: {results['coverage']}")</co
     Q7: What is topic segmentation and when would you use LLM-based chunking?
   </summary>
   <div class="tp-qa-answer">
-    <p>Topic segmentation detects natural topic boundaries in a document (e.g., "Introduction", "Methodology", "Results") and creates chunks aligned to these topics. LLM-based chunking uses a language model to identify topic shifts by analyzing paragraph embeddings or semantic similarity — it produces the most coherent chunks but is slow and expensive. Use rule-based topic segmentation (detecting heading patterns like "## Introduction", "## Related Work") for structured documents like research papers and technical documentation. Use LLM-based chunking only for unstructured content where headings are absent or inconsistent, and where chunk quality justifies the additional 100-500ms per document processing cost.</p>
+<p>Topic segmentation detects natural topic boundaries in a document (e.g., "Introduction", "Methodology", "Results") and creates chunks aligned to these topics. LLM-based chunking uses a language model to identify topic shifts by analyzing paragraph embeddings or.
+semantic similarity — it produces the most coherent chunks but is slow and expensive. Use rule-based topic segmentation (detecting heading patterns like "## Introduction",.
+"## Related Work") for structured documents like research papers and technical documentation. Use LLM-based chunking only for unstructured content where headings are absent or.
+inconsistent, and where chunk quality justifies the additional 100-500ms per document processing cost.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -940,7 +962,11 @@ print(f"Precision: {results['precision']}, Coverage: {results['coverage']}")</co
     Q8: How do you handle multi-format documents in a single RAG system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Build an AdaptiveChunker that detects the document type (code, markdown, HTML, plain text, PDF) from file extension or content analysis and applies the appropriate strategy. Maintain a registry of chunkers keyed by document type. For mixed documents (e.g., markdown with embedded code blocks), handle them in a single pipeline but preserve the structural context. Normalize all chunks to a common format (text + metadata) after chunking so downstream components (embedder, indexer) receive uniform input. Include a "type" field in chunk metadata so retrieval and generation stages can adapt their behavior (e.g., code chunks might use different augmentation instructions).</p>
+<p>Build an AdaptiveChunker that detects the document type (code, markdown, HTML, plain text, PDF) from file extension or content analysis and.
+applies the appropriate strategy. Maintain a registry of chunkers keyed by document type. For mixed documents (e.g., markdown with embedded code blocks),.
+handle them in a single pipeline but preserve the structural context. Normalize all chunks to a common format (text + metadata) after chunking so downstream components (embedder,.
+indexer) receive uniform input. Include a "type" field in chunk metadata so retrieval and generation stages can adapt their behavior (e.g.,.
+code chunks might use different augmentation instructions).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -952,7 +978,10 @@ print(f"Precision: {results['precision']}, Coverage: {results['coverage']}")</co
     Q9: What is late chunking and when would you use it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Late chunking retrieves at the passage level first (coarse retrieval), then re-chunks the retrieved passages at the sentence level for finer granularity before passing to the generator. This combines the efficiency of passage-level indexing (fewer vectors to search) with the precision of sentence-level context. Use late chunking when you have long documents but need precise answers from specific sentences — for example, retrieving a paragraph about a medical condition and then extracting only the sentence about symptoms. The trade-off is that late chunking adds latency (re-chunking + re-scoring) but improves precision when passages contain mixed content.</p>
+<p>Late chunking retrieves at the passage level first (coarse retrieval), then re-chunks the retrieved passages at the sentence level for finer granularity before passing to the generator. This combines the efficiency of passage-level indexing (fewer vectors to search) with the.
+precision of sentence-level context. Use late chunking when you have long documents but.
+need precise answers from specific sentences — for example, retrieving a paragraph about a medical condition and then extracting only the sentence about symptoms. The trade-off is that late chunking adds latency (re-chunking + re-scoring) but.
+improves precision when passages contain mixed content.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -964,7 +993,11 @@ print(f"Precision: {results['precision']}, Coverage: {results['coverage']}")</co
     Q10: How does chunk size affect embedding quality and retrieval relevance?
   </summary>
   <div class="tp-qa-answer">
-    <p>Small chunks (50-100 chars) produce highly focused embeddings that match exact queries well but may lack the surrounding context needed for the LLM to understand the answer. Large chunks (1000+ chars) contain more context but dilute the semantic signal — the embedding averages over the entire chunk, making it harder to match specific queries. This creates a trade-off: smaller chunks improve retrieval precision (specific matches) while larger chunks improve generation quality (more context for the LLM). The optimal point is where the chunk is large enough for the LLM to answer from context alone but small enough that the embedding precisely matches the query. Typically 200-500 tokens strikes this balance.</p>
+<p>Small chunks (50-100 chars) produce highly focused embeddings that match exact queries well but may lack the surrounding context needed for.
+the LLM to understand the answer. Large chunks (1000+ chars) contain more context but dilute the semantic signal — the embedding averages over the entire chunk,.
+making it harder to match specific queries. This creates a trade-off: smaller chunks improve retrieval precision (specific matches) while larger chunks improve generation quality (more context for.
+the LLM). The optimal point is where the chunk is large enough for the LLM to answer from context alone but.
+small enough that the embedding precisely matches the query. Typically 200-500 tokens strikes this balance.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

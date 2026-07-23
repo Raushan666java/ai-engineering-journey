@@ -434,7 +434,10 @@ for w in warnings:
 
 ## Summary
 
-The decision to fine-tune depends on domain specificity, accuracy requirements, data availability, and query volume. Fine-tuning excels when domain specificity is high, accuracy needs exceed 80%, and sufficient data exists. RAG is better for knowledge-intensive tasks with moderate domain specificity. Prompting is sufficient for general tasks or low-volume scenarios. The break-even analysis shows that fine-tuning becomes cost-effective at high query volumes (typically >1,000 queries/day) where per-query cost savings offset training investment. Anti-patterns include fine-tuning with small datasets, for general tasks, or when knowledge changes rapidly.
+The decision to fine-tune depends on domain specificity, accuracy requirements, data availability, and query volume. Fine-tuning excels when domain specificity is high,.
+accuracy needs exceed 80%, and sufficient data exists. RAG is better for knowledge-intensive tasks with moderate domain specificity. Prompting is sufficient for.
+general tasks or low-volume scenarios. The break-even analysis shows that fine-tuning becomes cost-effective at high query volumes (typically >1,000 queries/day) where per-query cost savings offset training investment. Anti-patterns include fine-tuning with small datasets,.
+for general tasks, or when knowledge changes rapidly.
 
 ## Practical Takeaways
 
@@ -454,7 +457,13 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q1: When should you fine-tune a model instead of using prompting or RAG?
   </summary>
   <div class="tp-qa-answer">
-    <p>Fine-tuning is preferable when: (1) you need consistent output format or style that prompting alone can't reliably enforce — like generating JSON in a specific schema or writing in a particular tone; (2) you have a large dataset of domain-specific examples (thousands to millions) and the model needs deep domain knowledge; (3) you need to reduce latency and cost by using a smaller model fine-tuned to match a larger model's performance on your task; (4) you need offline model deployment without relying on API access. Prompting is better for quick prototypes, tasks requiring general knowledge, and when you need to frequently change instructions. RAG is preferred when knowledge changes rapidly (news, documentation), the knowledge source is large and structured, or you need verifiable citations. A common production pattern is RAG + fine-tuning — use RAG for dynamic knowledge retrieval and fine-tuning for consistent output formatting and style.</p>
+<p>Fine-tuning is preferable when: (1) you need consistent output format or style that prompting alone can't reliably enforce — like generating JSON in a specific schema or.
+writing in a particular tone; (2) you have a large dataset of domain-specific examples (thousands to millions) and the model needs deep domain knowledge;.
+(3) you need to reduce latency and cost by using a smaller model fine-tuned to match a larger model's performance on your task;.
+(4) you need offline model deployment without relying on API access. Prompting is better for quick prototypes, tasks requiring general knowledge,.
+and when you need to frequently change instructions. RAG is preferred when knowledge changes rapidly (news, documentation), the knowledge source is large and.
+structured, or you need verifiable citations. A common production pattern is RAG + fine-tuning — use RAG for dynamic knowledge retrieval and.
+fine-tuning for consistent output formatting and style.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -466,7 +475,11 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q2: What are the cost-benefit trade-offs of fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Fine-tuning costs include: (1) compute — GPU hours for training (A100 or H100, potentially hundreds of dollars for full fine-tuning of a 7B model); (2) data preparation — cleaning, formatting, and validating the dataset; (3) evaluation — running benchmarks after training to validate quality; (4) serving — hosting the fine-tuned model (larger memory footprint than API calls). Benefits: (1) lower per-inference cost if using a smaller fine-tuned model vs. a large API model; (2) lower latency since no API calls; (3) consistent output quality for domain-specific tasks; (4) data privacy — data stays on your infrastructure; (5) offline capability. The break-even point depends on inference volume — high-volume use cases favor fine-tuning because the upfront training cost is amortized over many inferences. For low-volume use cases (<100K requests/month), API-based approaches (prompting + RAG) are typically more cost-effective. Use PEFT methods (LoRA, QLoRA) to reduce training costs by 90%+ while maintaining most of the quality gain.</p>
+<p>Fine-tuning costs include: (1) compute — GPU hours for training (A100 or H100, potentially hundreds of dollars for full fine-tuning of a 7B model);.
+(2) data preparation — cleaning, formatting, and validating the dataset; (3) evaluation — running benchmarks after training to validate quality; (4) serving — hosting the fine-tuned model (larger memory footprint than API calls). Benefits: (1) lower per-inference cost if using a smaller fine-tuned model vs. a large API model;.
+(2) lower latency since no API calls; (3) consistent output quality for domain-specific tasks; (4) data privacy — data stays on your infrastructure;.
+(5) offline capability. The break-even point depends on inference volume — high-volume use cases favor fine-tuning because the upfront training cost is amortized over many inferences. For.
+low-volume use cases (<100K requests/month), API-based approaches (prompting + RAG) are typically more cost-effective. Use PEFT methods (LoRA, QLoRA) to reduce training costs by 90%+ while maintaining most of the quality gain.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -478,7 +491,12 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q3: What data is required for successful fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Successful fine-tuning requires high-quality, task-aligned data. Minimum recommendations: (1) quantity — at least 500-1000 examples for simple tasks (classification, extraction), 5000+ for complex tasks (summarization, generation). More data helps but quality matters more than quantity; (2) format — each example must contain the input (instruction/prompt) and expected output. For instruction tuning, use a consistent chat template format (e.g., HuggingFace's apply_chat_template). For preference tuning, pair each input with a chosen and rejected response; (3) quality — data must be accurate, diverse (covering all edge cases), and representative of the target distribution. Remove duplicates, fix errors, and balance labels; (4) splitting — 80% train, 10% validation, 10% test. The validation set monitors overfitting and the test set gives an unbiased final evaluation. Data augmentation (paraphrasing, back-translation) can help when real data is limited. Synthetic data from stronger models can supplement real data but may introduce hallucinations.</p>
+<p>Successful fine-tuning requires high-quality, task-aligned data. Minimum recommendations: (1) quantity — at least 500-1000 examples for simple tasks (classification, extraction), 5000+ for.
+complex tasks (summarization, generation). More data helps but quality matters more than quantity; (2) format — each example must contain the input (instruction/prompt) and.
+expected output. For instruction tuning, use a consistent chat template format (e.g., HuggingFace's apply_chat_template). For preference tuning, pair each input with a chosen and.
+rejected response; (3) quality — data must be accurate, diverse (covering all edge cases), and representative of the target distribution. Remove duplicates,.
+fix errors, and balance labels; (4) splitting — 80% train, 10% validation, 10% test. The validation set monitors overfitting and the test set gives an unbiased final evaluation. Data augmentation (paraphrasing,.
+back-translation) can help when real data is limited. Synthetic data from stronger models can supplement real data but may introduce hallucinations.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -490,7 +508,12 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q4: When is fine-tuning NOT appropriate?
   </summary>
   <div class="tp-qa-answer">
-    <p>Fine-tuning is not appropriate when: (1) you need the model to learn new factual knowledge — fine-tuning can inject new facts but is inefficient and may cause catastrophic forgetting. RAG is better for factual knowledge; (2) your task changes frequently — each task change requires retraining, making prompting a better choice for rapidly evolving requirements; (3) you have limited data (<100 examples) — fine-tuning on tiny datasets causes overfitting; use few-shot prompting instead; (4) you need general capability across many unrelated tasks — a general-purpose foundation model with prompting handles this better than a narrow fine-tuned model; (5) you lack evaluation resources — without proper evaluation, fine-tuning can silently degrade capabilities. A fine-tuning readiness checklist: do you have 500+ high-quality examples? Is the task stable? Do you have evaluation data and metrics? Can you measure regression on general capabilities? If most answers are no, explore prompting or RAG first.</p>
+<p>Fine-tuning is not appropriate when: (1) you need the model to learn new factual knowledge — fine-tuning can inject new facts but.
+is inefficient and may cause catastrophic forgetting. RAG is better for factual knowledge; (2) your task changes frequently — each task change requires retraining,.
+making prompting a better choice for rapidly evolving requirements; (3) you have limited data (<100 examples) — fine-tuning on tiny datasets causes overfitting;.
+use few-shot prompting instead; (4) you need general capability across many unrelated tasks — a general-purpose foundation model with prompting handles this better than a narrow fine-tuned model;.
+(5) you lack evaluation resources — without proper evaluation, fine-tuning can silently degrade capabilities. A fine-tuning readiness checklist: do you have 500+ high-quality examples? Is the task stable? Do you have evaluation data and.
+metrics? Can you measure regression on general capabilities? If most answers are no, explore prompting or RAG first.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -502,7 +525,12 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q5: How do you decide between full fine-tuning and PEFT methods?
   </summary>
   <div class="tp-qa-answer">
-    <p>Full fine-tuning updates all model parameters, PEFT (LoRA, Adapters) updates a small subset (usually 0.1-1% of parameters). Choose full fine-tuning when: you have a large, high-quality dataset (>10K examples), maximum quality on a specific task is critical, you have sufficient GPU compute (multiple A100s), and you can store multiple full model copies. Choose PEFT when: you have limited data (500-5000 examples), GPU memory is constrained (<24GB), you need to maintain multiple task-specific models simultaneously (PEFT modules are small, typically 5-50MB vs 10-50GB for full models), you want faster training, or you need to avoid catastrophic forgetting. In practice, LoRA fine-tuning achieves 90-95% of full fine-tuning quality for most tasks while using 1-2% of the trainable parameters. QLoRA (quantized LoRA) reduces memory further by loading the base model in 4-bit precision, enabling fine-tuning of 7B models on a single RTX 3090.</p>
+<p>Full fine-tuning updates all model parameters, PEFT (LoRA, Adapters) updates a small subset (usually 0.1-1% of parameters). Choose full fine-tuning when: you have a large,.
+high-quality dataset (>10K examples), maximum quality on a specific task is critical, you have sufficient GPU compute (multiple A100s), and you can store multiple full model copies. Choose PEFT when: you have limited data (500-5000 examples),.
+GPU memory is constrained (<24GB), you need to maintain multiple task-specific models simultaneously (PEFT modules are small, typically 5-50MB vs 10-50GB for.
+full models), you want faster training, or you need to avoid catastrophic forgetting. In practice, LoRA fine-tuning achieves 90-95% of full fine-tuning quality for.
+most tasks while using 1-2% of the trainable parameters. QLoRA (quantized LoRA) reduces memory further by loading the base model in 4-bit precision,.
+enabling fine-tuning of 7B models on a single RTX 3090.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -514,7 +542,11 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q6: What is catastrophic forgetting and how do you prevent it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Catastrophic forgetting occurs when fine-tuning on a new task degrades the model's performance on previously learned tasks. The model overfits to the fine-tuning data distribution and loses general capabilities. Prevention strategies: (1) use PEFT methods (LoRA) — only a small parameter subset is updated, preserving most of the base model's capabilities; (2) mix general domain data into the fine-tuning dataset — include 10-20% of general instruction-following examples alongside task-specific data; (3) use elastic weight consolidation (EWC) — add a regularization term that penalizes changing important parameters; (4) multi-task learning — fine-tune on multiple tasks simultaneously to maintain breadth; (5) evaluation — always evaluate on general benchmarks before and after fine-tuning to detect regression. The simplest and most effective approach is data mixing — include diverse examples in the training set so the model doesn't over-specialize on the target task.</p>
+<p>Catastrophic forgetting occurs when fine-tuning on a new task degrades the model's performance on previously learned tasks. The model overfits to the fine-tuning data distribution and.
+loses general capabilities. Prevention strategies: (1) use PEFT methods (LoRA) — only a small parameter subset is updated, preserving most of the base model's capabilities;.
+(2) mix general domain data into the fine-tuning dataset — include 10-20% of general instruction-following examples alongside task-specific data; (3) use elastic weight consolidation (EWC) — add a regularization term that penalizes changing important parameters;.
+(4) multi-task learning — fine-tune on multiple tasks simultaneously to maintain breadth; (5) evaluation — always evaluate on general benchmarks before and.
+after fine-tuning to detect regression. The simplest and most effective approach is data mixing — include diverse examples in the training set so the model doesn't over-specialize on the target task.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -526,7 +558,12 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q7: How do you build a fine-tuning dataset?
   </summary>
   <div class="tp-qa-answer">
-    <p>Building a fine-tuning dataset involves: (1) source selection — use real user data (logs, support tickets, transcripts), synthetic data (generated by a stronger model like GPT-4), or public datasets (ShareGPT, OpenAssistant, Dolly); (2) formatting — convert raw data into (instruction, input, output) triplets or conversational format following a consistent template. HuggingFace datasets library uses a standardized format with 'instruction', 'input', and 'output' columns; (3) quality filtering — remove duplicates, filter low-quality entries (too short, gibberish), fix formatting inconsistencies, and balance label distributions; (4) splitting — stratified split ensuring all classes/patterns appear in train/val/test sets; (5) dataset card — document size, source, format, distribution, and known biases. For production, create a data pipeline that automates collection, cleaning, and validation. Track dataset versioning (using DVC or HuggingFace datasets with commit hashes) to enable reproducibility of training runs.</p>
+<p>Building a fine-tuning dataset involves: (1) source selection — use real user data (logs, support tickets, transcripts), synthetic data (generated by a stronger model like GPT-4),.
+or public datasets (ShareGPT, OpenAssistant, Dolly); (2) formatting — convert raw data into (instruction, input, output) triplets or conversational format following a consistent template. HuggingFace datasets library uses a standardized format with 'instruction',.
+'input', and 'output' columns; (3) quality filtering — remove duplicates, filter low-quality entries (too short, gibberish), fix formatting inconsistencies, and balance label distributions;.
+(4) splitting — stratified split ensuring all classes/patterns appear in train/val/test sets; (5) dataset card — document size, source, format, distribution,.
+and known biases. For production, create a data pipeline that automates collection, cleaning, and validation. Track dataset versioning (using DVC or.
+HuggingFace datasets with commit hashes) to enable reproducibility of training runs.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -538,7 +575,13 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q8: How do you compare prompting vs. fine-tuning vs. RAG?
   </summary>
   <div class="tp-qa-answer">
-    <p>Comparison across key dimensions: (1) Knowledge incorporation — prompting can include up to ~128K tokens of context (recent models), fine-tuning embeds knowledge in weights (permanent but expensive to update), RAG retrieves from external databases (dynamic and scalable); (2) Output consistency — prompting provides weakest consistency (model may deviate from format), fine-tuning gives strongest consistency (model learns the exact output format), RAG falls between; (3) Latency — prompting is fastest (~1-3s), fine-tuning requires inference on a hosted model (~1-5s including GPU inference), RAG adds retrieval time (~100-500ms for vector search); (4) Cost — prompting has per-token API cost, fine-tuning has upfront training + serving cost, RAG has embedding + vector DB cost; (5) Maintenance — prompting is easiest to update (just change prompt), fine-tuning requires retraining, RAG requires updating the knowledge base. The best approach often combines all three: RAG for dynamic knowledge, fine-tuning for style/format, prompting for task instruction and guardrails.</p>
+<p>Comparison across key dimensions: (1) Knowledge incorporation — prompting can include up to ~128K tokens of context (recent models), fine-tuning embeds knowledge in weights (permanent but.
+expensive to update), RAG retrieves from external databases (dynamic and scalable); (2) Output consistency — prompting provides weakest consistency (model may deviate from format),.
+fine-tuning gives strongest consistency (model learns the exact output format), RAG falls between; (3) Latency — prompting is fastest (~1-3s), fine-tuning requires inference on a hosted model (~1-5s including GPU inference),.
+RAG adds retrieval time (~100-500ms for vector search); (4) Cost — prompting has per-token API cost, fine-tuning has upfront training + serving cost,.
+RAG has embedding + vector DB cost; (5) Maintenance — prompting is easiest to update (just change prompt), fine-tuning requires retraining,.
+RAG requires updating the knowledge base. The best approach often combines all three: RAG for dynamic knowledge, fine-tuning for style/format, prompting for.
+task instruction and guardrails.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -550,7 +593,12 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q9: What metrics should you use to decide if fine-tuning is successful?
   </summary>
   <div class="tp-qa-answer">
-    <p>Fine-tuning success metrics: (1) Task-specific metrics — accuracy/precision/recall/F1 for classification, BLEU/ROUGE for generation, exact match for extraction. Compare pre-fine-tuning (base model with zero/few-shot prompting) vs. post-fine-tuning on the same test set; (2) Quality improvement — absolute gain in task-specific metric (e.g., accuracy improved from 70% to 92%) and human evaluation scores; (3) Regression check — evaluate on general benchmarks (MMLU, HellaSwag, TruthfulQA) before and after fine-tuning. Acceptable regression is <2-3% on most benchmarks; (4) Cost-benefit — compute cost per % improvement; (5) User satisfaction — online A/B test comparing fine-tuned model against base model with prompt engineering. A fine-tuning run is successful if: task metric improves significantly (>10% relative), general capability regression is within tolerance, and the improvement justifies the training cost vs. prompt engineering alternatives. Document all metrics in a model card for reproducibility.</p>
+<p>Fine-tuning success metrics: (1) Task-specific metrics — accuracy/precision/recall/F1 for classification, BLEU/ROUGE for generation, exact match for extraction. Compare pre-fine-tuning (base model with zero/few-shot prompting) vs. post-fine-tuning on the same test set;.
+(2) Quality improvement — absolute gain in task-specific metric (e.g., accuracy improved from 70% to 92%) and human evaluation scores; (3) Regression check — evaluate on general benchmarks (MMLU,.
+HellaSwag, TruthfulQA) before and after fine-tuning. Acceptable regression is <2-3% on most benchmarks; (4) Cost-benefit — compute cost per % improvement;.
+(5) User satisfaction — online A/B test comparing fine-tuned model against base model with prompt engineering. A fine-tuning run is successful if: task metric improves significantly (>10% relative),.
+general capability regression is within tolerance, and the improvement justifies the training cost vs. prompt engineering alternatives. Document all metrics in a model card for.
+reproducibility.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -562,7 +610,11 @@ The decision to fine-tune depends on domain specificity, accuracy requirements, 
     Q10: How do you estimate the cost of a fine-tuning run?
   </summary>
   <div class="tp-qa-answer">
-    <p>Estimating fine-tuning cost: (1) Compute cost = GPU hours — GPU price. A 7B model full fine-tuning on 8—A100-80GB takes roughly 1-4 hours per 1000 examples depending on sequence length. LoRA on the same model takes 0.5-2 hours per 1000 examples on a single A100. QLoRA can run on a single RTX 3090 ($0.5-2/hr on cloud spot instances); (2) Data preparation cost — hours of human effort for data cleaning, validation, and formatting; (3) Evaluation cost — running benchmarks (MLM evaluations, API calls for LLM-as-judge); (4) Serving cost — hosting the fine-tuned model (GPU instance for inference, typically same size as training GPU). Example: fine-tuning Llama-3-8B with LoRA on 5000 examples costs: 3 hours on 1—A100 — $2/hr = $6 for training, plus ~$1 for evaluation, plus ongoing inference cost ($0.5/hr for serverless hosting). Full fine-tuning the same model: 12 hours on 4—A100 — $2/hr = $96. QLoRA on RTX 3090: 4 hours — $0.5/hr = $2.</p>
+<p>Estimating fine-tuning cost: (1) Compute cost = GPU hours — GPU price. A 7B model full fine-tuning on 8—A100-80GB takes roughly 1-4 hours per 1000 examples depending on sequence length. LoRA on the same model takes 0.5-2 hours per 1000.
+examples on a single A100. QLoRA can run on a single RTX 3090 ($0.5-2/hr on cloud spot instances);.
+(2) Data preparation cost — hours of human effort for data cleaning, validation, and formatting; (3) Evaluation cost — running benchmarks (MLM evaluations,.
+API calls for LLM-as-judge); (4) Serving cost — hosting the fine-tuned model (GPU instance for inference, typically same size as training GPU). Example: fine-tuning Llama-3-8B with LoRA on 5000 examples costs: 3 hours on 1—A100 — $2/hr = $6 for.
+training, plus ~$1 for evaluation, plus ongoing inference cost ($0.5/hr for serverless hosting). Full fine-tuning the same model: 12 hours on 4—A100 — $2/hr = $96. QLoRA on RTX 3090: 4 hours — $0.5/hr = $2.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

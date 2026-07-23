@@ -671,7 +671,10 @@ print("Contribution analyzer ready")
 
 ## Summary
 
-Multi-agent systems enable complex task completion through collaboration between specialized agents. Communication protocols define how agents exchange messages via a message bus. The coordinator pattern uses a central agent to plan and distribute tasks. Specialized agents (researcher, analyst, writer, QA) each contribute distinct capabilities. Conflict resolution mechanisms include voting, arbitration, and consensus building. Team performance metrics track task completion, conflict resolution, message volume, and consensus rate. Multi-agent architectures excel at tasks requiring diverse expertise and parallel execution.
+Multi-agent systems enable complex task completion through collaboration between specialized agents. Communication protocols define how agents exchange messages via a message bus. The coordinator.
+pattern uses a central agent to plan and distribute tasks. Specialized agents (researcher, analyst, writer, QA) each contribute distinct capabilities. Conflict resolution mechanisms include voting,.
+arbitration, and consensus building. Team performance metrics track task completion, conflict resolution, message volume, and consensus rate. Multi-agent architectures excel at tasks requiring diverse expertise and.
+parallel execution.
 
 ## Practical Takeaways
 
@@ -691,7 +694,11 @@ Multi-agent systems enable complex task completion through collaboration between
     Q1: What are the main multi-agent communication patterns?
   </summary>
   <div class="tp-qa-answer">
-    <p>Multi-agent systems use several communication patterns. Point-to-point: one agent sends a message directly to another specific agent, useful for delegation. Broadcast: one agent sends a message to all other agents, useful for announcements or task distribution. Supervisor-based: a special supervisor agent receives updates from all workers, makes decisions, and assigns tasks — this centralizes coordination. Blackboard-based: agents share a common state/board where they write results and read others' contributions — this decouples agents from knowing about each other. Hierarchical: agents are organized in a tree, with parent agents delegating to children and aggregating results. The choice depends on the task: supervisor patterns work for complex workflows with decisions, blackboard patterns work for collaborative problem-solving where agents contribute incrementally, and point-to-point works for simple delegation.</p>
+<p>Multi-agent systems use several communication patterns. Point-to-point: one agent sends a message directly to another specific agent, useful for delegation. Broadcast: one agent sends a message to all other agents,.
+useful for announcements or task distribution. Supervisor-based: a special supervisor agent receives updates from all workers, makes decisions, and assigns tasks — this centralizes coordination. Blackboard-based: agents share a common state/board where they write results and.
+read others' contributions — this decouples agents from knowing about each other. Hierarchical: agents are organized in a tree, with parent agents delegating to children and.
+aggregating results. The choice depends on the task: supervisor patterns work for complex workflows with decisions, blackboard patterns work for collaborative problem-solving where agents contribute incrementally,.
+and point-to-point works for simple delegation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -703,7 +710,11 @@ Multi-agent systems enable complex task completion through collaboration between
     Q2: What is the supervisor-orchestrator pattern?
   </summary>
   <div class="tp-qa-answer">
-    <p>The supervisor-orchestrator pattern uses a central supervisor agent that coordinates multiple worker agents. The supervisor receives the user's request, breaks it into subtasks, assigns each subtask to a specialized worker agent (researcher, coder, reviewer), monitors progress, handles failures (reassigning failed tasks), and compiles the final response. Worker agents report their results back to the supervisor, which decides next steps. The supervisor maintains the global state and has visibility into all workers' outputs. This pattern centralizes decision-making, making it easier to enforce policies and track progress. The main limitation is that the supervisor becomes a single point of failure and a potential bottleneck. Implementation uses LangGraph with a supervisor node that has conditional edges to worker nodes, and worker nodes that always route back to the supervisor.</p>
+<p>The supervisor-orchestrator pattern uses a central supervisor agent that coordinates multiple worker agents. The supervisor receives the user's request, breaks it into subtasks,.
+assigns each subtask to a specialized worker agent (researcher, coder, reviewer), monitors progress, handles failures (reassigning failed tasks), and compiles the final response. Worker agents report their results back to the supervisor,.
+which decides next steps. The supervisor maintains the global state and has visibility into all workers' outputs. This pattern centralizes decision-making,.
+making it easier to enforce policies and track progress. The main limitation is that the supervisor becomes a single point of failure and.
+a potential bottleneck. Implementation uses LangGraph with a supervisor node that has conditional edges to worker nodes, and worker nodes that always route back to the supervisor.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -715,7 +726,11 @@ Multi-agent systems enable complex task completion through collaboration between
     Q3: What is peer-to-peer agent collaboration?
   </summary>
   <div class="tp-qa-answer">
-    <p>Peer-to-peer agent collaboration allows agents to communicate directly without a central coordinator. Each agent has an address or identifier and can send messages to specific peers. A P2P network layer handles message routing, delivery guarantees, and agent discovery. Agents broadcast their capabilities on join, and other agents build a capability index for routing messages to the right peer. This pattern is more robust than supervisor-based (no single point of failure) but requires more complex coordination logic — agents must handle negotiation, conflict resolution, and consensus on their own. P2P is used in decentralized AI systems and scenarios where no single entity should have full control. The reliability manager tracks message delivery, retries failures, detects agent unavailability, and finds alternative agents with similar capabilities.</p>
+<p>Peer-to-peer agent collaboration allows agents to communicate directly without a central coordinator. Each agent has an address or identifier and can send messages to specific peers. A P2P network layer handles message routing,.
+delivery guarantees, and agent discovery. Agents broadcast their capabilities on join, and other agents build a capability index for routing messages to the right peer. This pattern is more robust than supervisor-based (no single point of failure) but.
+requires more complex coordination logic — agents must handle negotiation, conflict resolution, and consensus on their own. P2P is used in decentralized AI systems and.
+scenarios where no single entity should have full control. The reliability manager tracks message delivery, retries failures, detects agent unavailability, and.
+finds alternative agents with similar capabilities.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -727,7 +742,11 @@ Multi-agent systems enable complex task completion through collaboration between
     Q4: How do you handle agent handoff?
   </summary>
   <div class="tp-qa-answer">
-    <p>Agent handoff transfers a conversation or task from one agent to another when the current agent can't handle it. Implementation: when an agent determines it cannot fulfill a request (missing capabilities, insufficient permissions, domain mismatch), it serializes the current context (conversation history, state, artifacts) into a handoff message and sends it to a handoff manager. The handoff manager examines the context, finds the best-suited agent based on capability matching and current load, and transfers the context. The receiving agent deserializes the context and continues the conversation seamlessly. Important considerations: preserving context continuity (the user shouldn't notice the handoff), authorization (can this agent hand off to that agent?), and fallback (what if no suitable agent exists?). Handoff can be automatic (agent detects it's out of scope) or user-initiated ("connect me to a billing specialist").</p>
+<p>Agent handoff transfers a conversation or task from one agent to another when the current agent can't handle it. Implementation: when an agent determines it cannot fulfill a request (missing capabilities,.
+insufficient permissions, domain mismatch), it serializes the current context (conversation history, state, artifacts) into a handoff message and sends it to a handoff manager. The handoff manager examines the context,.
+finds the best-suited agent based on capability matching and current load, and transfers the context. The receiving agent deserializes the context and.
+continues the conversation seamlessly. Important considerations: preserving context continuity (the user shouldn't notice the handoff), authorization (can this agent hand off to that agent?),.
+and fallback (what if no suitable agent exists?). Handoff can be automatic (agent detects it's out of scope) or user-initiated ("connect me to a billing specialist").</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -739,7 +758,13 @@ Multi-agent systems enable complex task completion through collaboration between
     Q5: What is the blackboard collaborative pattern?
   </summary>
   <div class="tp-qa-answer">
-    <p>The blackboard pattern uses a shared data store (the blackboard) that all agents can read from and write to. Agents work independently and asynchronously, each contributing to the blackboard when they have relevant input. A controller agent monitors the blackboard for completion conditions and decides when enough information has been gathered. The blackboard stores structured data entries with metadata: contributor agent ID, timestamp, confidence score, and status (proposed, verified, accepted). Agents subscribe to specific entry types and are notified when relevant entries appear. This pattern excels for problems where multiple perspectives are needed — like diagnosis (multiple specialists contribute findings), document creation (different sections written by different agents), or data analysis (multiple algorithms analyze and cross-validate). The main challenge is managing the blackboard content — resolving conflicts between contradictory entries and avoiding information overload.</p>
+<p>The blackboard pattern uses a shared data store (the blackboard) that all agents can read from and write to. Agents work independently and.
+asynchronously, each contributing to the blackboard when they have relevant input. A controller agent monitors the blackboard for completion conditions and.
+decides when enough information has been gathered. The blackboard stores structured data entries with metadata: contributor agent ID, timestamp, confidence score,.
+and status (proposed, verified, accepted). Agents subscribe to specific entry types and are notified when relevant entries appear. This pattern excels for.
+problems where multiple perspectives are needed — like diagnosis (multiple specialists contribute findings), document creation (different sections written by different agents),.
+or data analysis (multiple algorithms analyze and cross-validate). The main challenge is managing the blackboard content — resolving conflicts between contradictory entries and.
+avoiding information overload.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -751,7 +776,11 @@ Multi-agent systems enable complex task completion through collaboration between
     Q6: How do you design a team configuration for multi-agent systems?
   </summary>
   <div class="tp-qa-answer">
-    <p>Team configuration defines which agents participate in a multi-agent system and how they should interact. Configuration data includes: agent roles and capabilities, communication topology (who can talk to whom), leader designation, fallback hierarchy, and interaction rules. Using a declarative YAML or JSON config file, you specify each agent's class, specialized tools, model settings, and limits (max iterations, max cost). The configuration is loaded at startup to instantiate agents and wire up the communication graph. Benefits of declarative config: (1) non-developers can define teams; (2) A/B testing different team structures; (3) dynamic team composition based on task requirements. A <code>TeamConfig</code> class validates configuration (references between agents, required fields) and provides factory methods to create the team runtime.</p>
+<p>Team configuration defines which agents participate in a multi-agent system and how they should interact. Configuration data includes: agent roles and.
+capabilities, communication topology (who can talk to whom), leader designation, fallback hierarchy, and interaction rules. Using a declarative YAML or JSON config file,.
+you specify each agent's class, specialized tools, model settings, and limits (max iterations, max cost). The configuration is loaded at startup to instantiate agents and.
+wire up the communication graph. Benefits of declarative config: (1) non-developers can define teams; (2) A/B testing different team structures; (3) dynamic team composition based on task requirements. A <code>TeamConfig</code> class validates configuration (references between agents,.
+required fields) and provides factory methods to create the team runtime.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -763,7 +792,12 @@ Multi-agent systems enable complex task completion through collaboration between
     Q7: How do you handle conflicts in multi-agent collaboration?
   </summary>
   <div class="tp-qa-answer">
-    <p>Conflicts arise when agents produce contradictory outputs or disagree on a course of action. Resolution strategies: (1) voting — each agent votes and the majority decision wins; (2) confidence-weighted selection — each output has a confidence score, and the highest-confidence output is chosen; (3) arbitration — a designated arbitrator agent reviews conflicting outputs and makes the final decision; (4) evidence-based reconciliation — agents present supporting evidence and the best-supported output wins; (5) consensus seeking — agents negotiate until they reach agreement (iterative, may be expensive). The choice depends on the domain — for factual questions, confidence-weighted or evidence-based works well; for subjective decisions, voting or arbitration may be better. Implementation logs all conflicts and resolutions for audit and debugging. A conflict manager routes conflicting outputs to the appropriate resolution strategy based on the conflict type.</p>
+<p>Conflicts arise when agents produce contradictory outputs or disagree on a course of action. Resolution strategies: (1) voting — each agent votes and.
+the majority decision wins; (2) confidence-weighted selection — each output has a confidence score, and the highest-confidence output is chosen; (3) arbitration — a designated arbitrator.
+agent reviews conflicting outputs and makes the final decision; (4) evidence-based reconciliation — agents present supporting evidence and the best-supported output wins;.
+(5) consensus seeking — agents negotiate until they reach agreement (iterative, may be expensive). The choice depends on the domain — for.
+factual questions, confidence-weighted or evidence-based works well; for subjective decisions, voting or arbitration may be better. Implementation logs all conflicts and.
+resolutions for audit and debugging. A conflict manager routes conflicting outputs to the appropriate resolution strategy based on the conflict type.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -775,7 +809,13 @@ Multi-agent systems enable complex task completion through collaboration between
     Q8: How do you implement a peer-to-peer network for agents?
   </summary>
   <div class="tp-qa-answer">
-    <p>A peer-to-peer agent network connects agents directly without a central message broker. Implementation: each agent runs a lightweight server (e.g., using HTTP or WebSockets) that accepts messages from other agents. A discovery service (using a registry or distributed hash table) maintains the list of active agents and their capabilities. When an agent wants to send a message to a peer, it queries the discovery service for the target's address, then sends the message directly. Message delivery is handled by a reliable transport layer — if the target is unavailable, the message is queued and retried. Key features: (1) dynamic join/leave — agents can join or leave without disrupting the network; (2) capability-based routing — messages are routed to agents that can handle them; (3) fault tolerance — if an agent fails, others can take over its responsibilities. This pattern is more complex than centralized approaches but provides better scalability and resilience.</p>
+<p>A peer-to-peer agent network connects agents directly without a central message broker. Implementation: each agent runs a lightweight server (e.g., using HTTP or.
+WebSockets) that accepts messages from other agents. A discovery service (using a registry or distributed hash table) maintains the list of active agents and.
+their capabilities. When an agent wants to send a message to a peer, it queries the discovery service for the target's address,.
+then sends the message directly. Message delivery is handled by a reliable transport layer — if the target is unavailable, the message is queued and.
+retried. Key features: (1) dynamic join/leave — agents can join or leave without disrupting the network; (2) capability-based routing — messages are routed to agents that can handle them;.
+(3) fault tolerance — if an agent fails, others can take over its responsibilities. This pattern is more complex than centralized approaches but.
+provides better scalability and resilience.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -787,7 +827,12 @@ Multi-agent systems enable complex task completion through collaboration between
     Q9: What is the hierarchical agent pattern?
   </summary>
   <div class="tp-qa-answer">
-    <p>The hierarchical agent pattern organizes agents in a tree structure where parent agents delegate tasks to child agents and aggregate results. A CEO agent at the top receives high-level goals and breaks them into department-level tasks. Department managers further decompose tasks for their team members. Each level abstracts complexity — the CEO doesn't know how individual agents work, only what each department can deliver. Benefits: (1) natural decomposition of complex tasks; (2) clear chains of command and responsibility; (3) each level can be tested independently; (4) scales well — add more agents at any level without affecting other levels. Drawbacks: (1) slower decisions due to multiple layers; (2) information loss as messages pass through layers; (3) rigid structure may not fit all problems. Implementation uses a recursive pattern — each parent agent acts as a supervisor for its children, and the same communication protocol works at every level.</p>
+<p>The hierarchical agent pattern organizes agents in a tree structure where parent agents delegate tasks to child agents and aggregate results. A CEO agent at the top receives high-level goals and.
+breaks them into department-level tasks. Department managers further decompose tasks for their team members. Each level abstracts complexity — the CEO doesn't know how individual agents work,.
+only what each department can deliver. Benefits: (1) natural decomposition of complex tasks; (2) clear chains of command and responsibility; (3) each level can be tested independently;.
+(4) scales well — add more agents at any level without affecting other levels. Drawbacks: (1) slower decisions due to multiple layers;.
+(2) information loss as messages pass through layers; (3) rigid structure may not fit all problems. Implementation uses a recursive pattern — each parent agent acts as a supervisor.
+for its children, and the same communication protocol works at every level.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -799,7 +844,12 @@ Multi-agent systems enable complex task completion through collaboration between
     Q10: How do you design a multi-agent system for code generation?
   </summary>
   <div class="tp-qa-answer">
-    <p>A multi-agent code generation system uses specialized agents for different aspects of software development. Typical roles: ProductManager — writes specifications and acceptance criteria; Architect — designs system architecture, component diagrams, API contracts; Developer — writes code implementing the architecture; Reviewer — reviews code for bugs, style issues, security vulnerabilities; Tester — writes and runs tests; DevOps — handles deployment configuration. The process flows through agents sequentially or iteratively: ProductManager → Architect → Developer → Reviewer → Tester, with loops back to Developer if issues are found. Each agent has access to specialized tools: Developer can read/write files and run linters; Reviewer can run static analysis; Tester can execute test suites. The system maintains a shared state including requirements, architecture documents, source files, and test results. This pattern mirrors real-world development teams and produces higher quality code than a single agent approach.</p>
+<p>A multi-agent code generation system uses specialized agents for different aspects of software development. Typical roles: ProductManager — writes specifications and.
+acceptance criteria; Architect — designs system architecture, component diagrams, API contracts; Developer — writes code implementing the architecture; Reviewer — reviews code for.
+bugs, style issues, security vulnerabilities; Tester — writes and runs tests; DevOps — handles deployment configuration. The process flows through agents sequentially or.
+iteratively: ProductManager → Architect → Developer → Reviewer → Tester, with loops back to Developer if issues are found. Each agent has access to specialized tools: Developer can read/write files and.
+run linters; Reviewer can run static analysis; Tester can execute test suites. The system maintains a shared state including requirements, architecture documents,.
+source files, and test results. This pattern mirrors real-world development teams and produces higher quality code than a single agent approach.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

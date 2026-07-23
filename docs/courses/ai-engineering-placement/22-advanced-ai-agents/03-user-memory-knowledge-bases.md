@@ -805,7 +805,8 @@ class ContextualRetrieval:
 
 ## Summary
 
-Memory is what separates stateless LLM calls from intelligent agents. Three memory stores (episodic, semantic, procedural) provide full coverage. Agentic RAG dramatically outperforms passive RAG by iteratively refining searches. Hybrid retrieval (dense + sparse + re-ranking) captures both semantic and exact matches. Structured indexes (RAPTOR, GraphRAG) organize knowledge hierarchically. Contextual retrieval prefix generation reduces retrieval failure by 49-67%.
+Memory is what separates stateless LLM calls from intelligent agents. Three memory stores (episodic, semantic, procedural) provide full coverage. Agentic RAG dramatically outperforms passive RAG by iteratively refining searches. Hybrid retrieval (dense + sparse + re-ranking) captures both semantic and.
+exact matches. Structured indexes (RAPTOR, GraphRAG) organize knowledge hierarchically. Contextual retrieval prefix generation reduces retrieval failure by 49-67%.
 
 ## Practical Takeaways
 

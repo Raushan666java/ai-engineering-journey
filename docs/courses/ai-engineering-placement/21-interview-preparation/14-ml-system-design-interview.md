@@ -4,7 +4,8 @@
 
 ## Learning Objectives
 
-After this chapter you will be able to design a production recommendation system from data ingestion to serving, architect a model serving platform with GPU scaling and autoscaling, design a feature store that serves training and inference with consistent point-in-time lookups, plan A/B experiments at scale, and reason about tradeoffs in ML pipeline architecture.
+After this chapter you will be able to design a production recommendation system from data ingestion to serving, architect a model serving platform with GPU scaling and.
+autoscaling, design a feature store that serves training and inference with consistent point-in-time lookups, plan A/B experiments at scale, and reason about tradeoffs in ML pipeline architecture.
 
 
 ## Introduction

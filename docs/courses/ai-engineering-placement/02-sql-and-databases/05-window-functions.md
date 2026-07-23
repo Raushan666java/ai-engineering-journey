@@ -536,23 +536,28 @@ function lag<T>(data: T[], orderBy: (item: T) => any, offset: number = 1): (T & 
 
 <details class="tp-qa-card" data-qid="sql-s05-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: What is a window function?</summary>
-  <div class="tp-qa-answer"><p>A window function performs a calculation across a set of rows related to the current row, preserving the individual rows in the output (unlike GROUP BY which collapses them). It uses an OVER() clause with optional PARTITION BY and ORDER BY. Examples: ROW_NUMBER, RANK, SUM() OVER().</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>A window function performs a calculation across a set of rows related to the current row, preserving the individual rows in the output (unlike GROUP BY which collapses them). It uses an OVER() clause with optional PARTITION BY and.
+ORDER BY. Examples: ROW_NUMBER, RANK, SUM() OVER().</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: ROW_NUMBER vs RANK vs DENSE_RANK?</summary>
-  <div class="tp-qa-answer"><p>ROW_NUMBER assigns a unique sequential number within each partition (ties broken arbitrarily). RANK assigns the same number to ties, then skips the next numbers. DENSE_RANK assigns the same number to ties without skipping. Example for values 95, 95, 90: ROW_NUMBER = 1,2,3; RANK = 1,1,3; DENSE_RANK = 1,1,2.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>ROW_NUMBER assigns a unique sequential number within each partition (ties broken arbitrarily). RANK assigns the same number to ties, then skips the next numbers. DENSE_RANK assigns the same number to ties without skipping. Example for.
+values 95, 95, 90: ROW_NUMBER = 1,2,3; RANK = 1,1,3; DENSE_RANK = 1,1,2.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q3">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q3: How does NTILE work?</summary>
-  <div class="tp-qa-answer"><p>NTILE(n) divides rows into n buckets as evenly as possible. If rows are not divisible by n, the first (rows % n) buckets get one extra row. Example: 10 rows into 4 buckets gives bucket sizes 3, 3, 2, 2. Used for quartile/decile analysis and bucketing data.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>NTILE(n) divides rows into n buckets as evenly as possible. If rows are not divisible by n, the first (rows % n) buckets get one extra row. Example: 10 rows into 4 buckets gives bucket sizes 3,.
+3, 2, 2. Used for quartile/decile analysis and bucketing data.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: LAG vs LEAD?</summary>
-  <div class="tp-qa-answer"><p>LAG accesses a row before the current row (offset positive = previous). LEAD accesses a row after the current row (offset positive = next). Both take an offset parameter (default 1) and an optional default value for when no row exists. Used for period-over-period comparisons.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>LAG accesses a row before the current row (offset positive = previous). LEAD accesses a row after the current row (offset positive = next). Both take an offset parameter (default 1) and.
+an optional default value for when no row exists. Used for period-over-period comparisons.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q5">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: ROWS vs RANGE vs GROUPS?</summary>
-  <div class="tp-qa-answer"><p>ROWS is physical: it counts actual rows. RANGE is logical: it includes all rows whose ORDER BY value is within the specified range (handles ties by including all peers). GROUPS is similar to RANGE but counts groups of ties. ROWS is most common; RANGE is used for date/time windows.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>ROWS is physical: it counts actual rows. RANGE is logical: it includes all rows whose ORDER BY value is within the specified range (handles ties by including all peers). GROUPS is similar to RANGE but.
+counts groups of ties. ROWS is most common; RANGE is used for date/time windows.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: Can you use window functions in WHERE?</summary>
@@ -568,7 +573,8 @@ function lag<T>(data: T[], orderBy: (item: T) => any, offset: number = 1): (T & 
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: What does FIRST_VALUE do?</summary>
-  <div class="tp-qa-answer"><p>FIRST_VALUE returns the value from the first row of the window frame. Combined with ORDER BY and PARTITION BY, it can show the earliest value in a group. LAST_VALUE returns the last row, but requires a frame of ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING to work correctly.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>FIRST_VALUE returns the value from the first row of the window frame. Combined with ORDER BY and PARTITION BY, it can show the earliest value in a group. LAST_VALUE returns the last row,.
+but requires a frame of ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING to work correctly.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s05-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: How to calculate percentage of total with window functions?</summary>

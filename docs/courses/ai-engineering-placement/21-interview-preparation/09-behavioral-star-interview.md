@@ -568,7 +568,8 @@ practice_questions = [
       <li><strong>Describe what you're doing about it</strong> €” specific actions, not just "I'm working on it"</li>
       <li><strong>Show progress</strong> €” how has this improved?</li>
     </ol>
-    <p><strong>Good example</strong>: "I tend to dive into coding too quickly instead of writing a design doc first. At my last company, I built a feature that needed significant rework because I hadn't thought through the edge cases. Now I follow a personal rule: any feature that takes more than 3 days to build gets a design doc first. My last 3 features required minimal rework."</p>
+<p><strong>Good example</strong>: "I tend to dive into coding too quickly instead of writing a design doc first. At my last company,.
+I built a feature that needed significant rework because I hadn't thought through the edge cases. Now I follow a personal rule: any feature that takes more than 3 days to build gets a design doc first. My last 3 features required minimal rework."</p>
     <p><strong>Bad example</strong>: "I'm a perfectionist" or "I care too much about quality." These sound rehearsed and don't demonstrate self-awareness.</p>
   </div>
   <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
@@ -641,7 +642,8 @@ practice_questions = [
       <li><strong>Describe how you resolved it</strong>: Data, pilot, compromise, or deferring to their decision</li>
       <li><strong>End with respect</strong>: Even if you disagreed, you supported the final decision (disagree and commit)</li>
     </ol>
-    <p><strong>Example</strong>: "My manager wanted to use MongoDB for a new service. I advocated for PostgreSQL because our team knew it well and we needed ACID transactions. We agreed to a 3-day prototype. PostgreSQL was 2x faster for our workloads. My manager agreed to go with PostgreSQL. I respected that he was open to evidence."</p>
+<p><strong>Example</strong>: "My manager wanted to use MongoDB for a new service. I advocated for PostgreSQL because our team knew it well and.
+we needed ACID transactions. We agreed to a 3-day prototype. PostgreSQL was 2x faster for our workloads. My manager agreed to go with PostgreSQL. I respected that he was open to evidence."</p>
     <p>Avoid: "I was right and they were wrong." Show mutual respect and a data-driven resolution.</p>
   </div>
   <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
@@ -812,7 +814,9 @@ Best,
       <li><strong>Show empathy</strong>: What might be driving their behavior?</li>
       <li><strong>Describe your adaptation</strong>: How did you adjust your approach?</li>
     </ul>
-    <p><strong>Example</strong>: "I worked with a very detail-oriented engineer who insisted on perfect code on the first review. This slowed down our delivery. Instead of confronting them, I learned that they had been burned by production incidents before. I proposed a two-stage review: an early architecture review to catch big issues, followed by detailed code review. This addressed their need for correctness while keeping velocity high."</p>
+<p><strong>Example</strong>: "I worked with a very detail-oriented engineer who insisted on perfect code on the first review. This slowed down our delivery. Instead of confronting them,.
+I learned that they had been burned by production incidents before. I proposed a two-stage review: an early architecture review to catch big issues,.
+followed by detailed code review. This addressed their need for correctness while keeping velocity high."</p>
     <p>The key is showing you can work effectively with different personalities without becoming frustrated or confrontational.</p>
   </div>
   <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>

@@ -482,7 +482,8 @@ E = sum_i P(element i is fixed) = sum_i 1/n = n * 1/n = 1. Expected number of fi
 
 Problem 1: Given a symmetric positive definite matrix A, show that x^T * A * x > 0 for all non-zero x.
 
-By definition: a symmetric matrix is positive definite if all eigenvalues are positive. x^T * A * x = sum_i lambda_i * (v_i^T * x)^2 where v_i are eigenvectors. Since lambda_i > 0 and (v_i^T * x)^2 >= 0, the sum is non-negative and zero only if x is orthogonal to all eigenvectors (i.e., x = 0).
+By definition: a symmetric matrix is positive definite if all eigenvalues are positive. x^T * A * x = sum_i lambda_i * (v_i^T * x)^2 where v_i are eigenvectors. Since lambda_i > 0 and.
+(v_i^T * x)^2 >= 0, the sum is non-negative and zero only if x is orthogonal to all eigenvectors (i.e., x = 0).
 
 Problem 2: Show that the eigenvalues of a covariance matrix are non-negative.
 
@@ -575,7 +576,9 @@ This analogy helps because math and probability interview, like a delivery syste
 
 ## Summary
 
-Math and probability are tested directly in ML interviews. Bayes theorem, MLE/MAP, and distributions appear in nearly every loop. Linear algebra (eigenvalues, SVD, PCA) and information theory (entropy, KL divergence) underpin the ML algorithms you will discuss. The core skill is translating an interview problem into a probability or linear algebra formulation and solving it step by step.
+Math and probability are tested directly in ML interviews. Bayes theorem, MLE/MAP, and distributions appear in nearly every loop. Linear algebra (eigenvalues,.
+SVD, PCA) and information theory (entropy, KL divergence) underpin the ML algorithms you will discuss. The core skill is translating an interview problem into a probability or.
+linear algebra formulation and solving it step by step.
 
 
 ## Practical Takeaways

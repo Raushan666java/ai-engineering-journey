@@ -585,7 +585,10 @@ print(benchmark.run_benchmark("Single Agent", single_fn, ["task1", "task2"]))
 
 ## Summary
 
-Agent architectures define how agents are organized and communicate. Supervisor architecture uses a central controller to delegate to specialized workers. Swarm architecture enables decentralized peer collaboration with voting mechanisms. Pipeline architecture processes data through sequential stages with optional conditional routing. Hierarchical architecture organizes agents in tree structures with multiple levels of abstraction. Choosing the right architecture depends on task complexity, number of skills needed, coordination requirements, fault tolerance needs, and scalability expectations. The supervisor pattern is best for complex multi-skill tasks, swarm for high-fault-tolerance scenarios, pipeline for well-defined sequential processes, and hierarchical for enterprise-scale automation.
+Agent architectures define how agents are organized and communicate. Supervisor architecture uses a central controller to delegate to specialized workers. Swarm architecture enables decentralized peer collaboration with voting mechanisms. Pipeline architecture processes data through sequential stages with optional conditional routing..
+Hierarchical architecture organizes agents in tree structures with multiple levels of abstraction. Choosing the right architecture depends on task complexity,.
+number of skills needed, coordination requirements, fault tolerance needs, and scalability expectations. The supervisor pattern is best for complex multi-skill tasks,.
+swarm for high-fault-tolerance scenarios, pipeline for well-defined sequential processes, and hierarchical for enterprise-scale automation.
 
 ## Practical Takeaways
 
@@ -605,7 +608,11 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q1: What are the main agent architecture topologies?
   </summary>
   <div class="tp-qa-answer">
-    <p>The five main agent architecture topologies are: (1) Single Agent — one agent handles everything with no delegation; (2) Supervisor — a central controller delegates to specialized worker agents; (3) Swarm — multiple peer agents collaborate without central control, often using voting; (4) Pipeline — agents arranged in sequence where each stage's output feeds into the next; and (5) Hierarchical — agents organized in tree structures with multiple levels of abstraction. Each topology balances different trade-offs: supervisor is best for complex multi-skill tasks, swarm for fault tolerance, pipeline for well-defined sequential processes, and hierarchical for enterprise-scale automation. The choice depends on task complexity, number of skills needed, and coordination requirements.</p>
+<p>The five main agent architecture topologies are: (1) Single Agent — one agent handles everything with no delegation; (2) Supervisor — a central controller delegates to specialized worker agents;.
+(3) Swarm — multiple peer agents collaborate without central control, often using voting; (4) Pipeline — agents arranged in sequence where each stage's output feeds into the next;.
+and (5) Hierarchical — agents organized in tree structures with multiple levels of abstraction. Each topology balances different trade-offs: supervisor is best for.
+complex multi-skill tasks, swarm for fault tolerance, pipeline for well-defined sequential processes, and hierarchical for enterprise-scale automation. The choice depends on task complexity,.
+number of skills needed, and coordination requirements.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -617,7 +624,10 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q2: How does a supervisor architecture work?
   </summary>
   <div class="tp-qa-answer">
-    <p>A supervisor architecture uses a central agent that receives the task, decomposes it into subtasks, and delegates each subtask to a specialized worker agent. The supervisor's LLM generates a plan specifying which worker handles each part. Workers execute independently and return results to the supervisor, who synthesizes the final output. For example, for a "create a report" task, the supervisor might delegate research to a researcher agent, analysis to an analyst agent, and writing to a writer agent. The supervisor pattern is simple to implement and debug because all coordination flows through one point. The downside is that the supervisor is a single point of failure and can become a bottleneck at high throughput.</p>
+<p>A supervisor architecture uses a central agent that receives the task, decomposes it into subtasks, and delegates each subtask to a specialized worker agent. The supervisor's LLM generates a plan specifying which worker handles each part. Workers execute independently and.
+return results to the supervisor, who synthesizes the final output. For example, for a "create a report" task, the supervisor might delegate research to a researcher agent,.
+analysis to an analyst agent, and writing to a writer agent. The supervisor pattern is simple to implement and debug because all coordination flows through one point. The downside is that the supervisor.
+is a single point of failure and can become a bottleneck at high throughput.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -629,7 +639,11 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q3: What is a swarm architecture and when is it appropriate?
   </summary>
   <div class="tp-qa-answer">
-    <p>A swarm architecture consists of multiple peer agents that collaborate without any central controller. Agents communicate directly with each other, share information, and may vote on decisions. It's appropriate when: (1) you need high fault tolerance — if one agent fails, others continue working; (2) tasks benefit from diverse perspectives — each agent can approach the problem differently; and (3) the system needs to scale horizontally by adding more agents. Examples include debate systems where agents argue different sides of an issue, or multi-perspective analysis where each agent specializes in a different domain. The main challenges are coordination overhead and ensuring convergence — without a central controller, agents may fail to reach consensus.</p>
+<p>A swarm architecture consists of multiple peer agents that collaborate without any central controller. Agents communicate directly with each other, share information,.
+and may vote on decisions. It's appropriate when: (1) you need high fault tolerance — if one agent fails, others continue working;.
+(2) tasks benefit from diverse perspectives — each agent can approach the problem differently; and (3) the system needs to scale horizontally by adding more agents. Examples include debate systems where agents argue different sides of an issue,.
+or multi-perspective analysis where each agent specializes in a different domain. The main challenges are coordination overhead and ensuring convergence — without a central controller,.
+agents may fail to reach consensus.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -641,7 +655,11 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q4: How does a pipeline architecture process data?
   </summary>
   <div class="tp-qa-answer">
-    <p>A pipeline architecture connects agents in a fixed sequence where each agent's output becomes the next agent's input. Each stage has a specific transformation function. For example, a data processing pipeline might have: Extract (parse raw data) → Transform (clean and normalize) → Enrich (add computed fields) → Format (produce final output). Pipelines can be linear (always forward) or conditional (with a router that decides which branch to take based on intermediate results). Conditional routing is useful for error handling — if validation fails, route to a correction stage instead of continuing. Pipeline architecture is ideal for well-understood, sequential processes but struggles with tasks that require back-and-forth or dynamic replanning.</p>
+<p>A pipeline architecture connects agents in a fixed sequence where each agent's output becomes the next agent's input. Each stage has a specific transformation function. For.
+example, a data processing pipeline might have: Extract (parse raw data) → Transform (clean and normalize) → Enrich (add computed fields) → Format (produce final output). Pipelines can be linear (always forward) or.
+conditional (with a router that decides which branch to take based on intermediate results). Conditional routing is useful for error handling — if validation fails,.
+route to a correction stage instead of continuing. Pipeline architecture is ideal for well-understood, sequential processes but struggles with tasks that require back-and-forth or.
+dynamic replanning.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -653,7 +671,11 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q5: What is a hierarchical agent architecture?
   </summary>
   <div class="tp-qa-answer">
-    <p>A hierarchical architecture organizes agents in a tree structure with multiple levels of abstraction. High-level agents decompose complex tasks into subtasks and delegate to mid-level agents, which further decompose and delegate to leaf agents. Each level operates at a different granularity: top-level agents think strategically (e.g., "research market trends"), mid-level agents plan tactically (e.g., "search for competitor data"), and leaf agents execute specific actions (e.g., "call search API with query 'competitor Q2 2025'"). Results flow back up the tree for synthesis. This architecture scales to enterprise-wide automation because each agent has a bounded responsibility, and new capabilities can be added by attaching new leaf agents without changing higher levels.</p>
+<p>A hierarchical architecture organizes agents in a tree structure with multiple levels of abstraction. High-level agents decompose complex tasks into subtasks and.
+delegate to mid-level agents, which further decompose and delegate to leaf agents. Each level operates at a different granularity: top-level agents think strategically (e.g.,.
+"research market trends"), mid-level agents plan tactically (e.g., "search for competitor data"), and leaf agents execute specific actions (e.g., "call search API with query 'competitor.
+Q2 2025'"). Results flow back up the tree for synthesis. This architecture scales to enterprise-wide automation because each agent has a bounded responsibility,.
+and new capabilities can be added by attaching new leaf agents without changing higher levels.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -665,7 +687,10 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q6: How do you choose the right architecture for a given task?
   </summary>
   <div class="tp-qa-answer">
-    <p>Choosing the right architecture requires evaluating: task complexity (simple/moderate/complex), number of distinct skills needed (one/few/many), coordination requirements (none/some/extensive), fault tolerance needs (low/medium/high), and scalability expectations. For simple tasks with one skill, use single agent. For complex tasks needing multiple skills with some coordination, use supervisor. For maximum fault tolerance and diverse exploration, use swarm. For well-defined sequential processes, use pipeline. For enterprise-scale systems with hundreds of agents, use hierarchical. An architecture advisor can automate this decision — it scores each option against the requirements and recommends the best match.</p>
+<p>Choosing the right architecture requires evaluating: task complexity (simple/moderate/complex), number of distinct skills needed (one/few/many), coordination requirements (none/some/extensive), fault tolerance needs (low/medium/high),.
+and scalability expectations. For simple tasks with one skill, use single agent. For complex tasks needing multiple skills with some coordination,.
+use supervisor. For maximum fault tolerance and diverse exploration, use swarm. For well-defined sequential processes, use pipeline. For enterprise-scale systems with hundreds of agents,.
+use hierarchical. An architecture advisor can automate this decision — it scores each option against the requirements and recommends the best match.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -677,7 +702,11 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q7: What are the trade-offs between supervisor and swarm architectures?
   </summary>
   <div class="tp-qa-answer">
-    <p>Supervisor architecture offers simpler coordination (one central decision-maker), easier debugging (all logic flows through one point), and lower communication overhead. The downsides are a single point of failure, limited scalability (the supervisor becomes a bottleneck), and less diverse output (single perspective). Swarm architecture offers better fault tolerance (no single point of failure), higher scalability (agents can be added freely), and more diverse perspectives (each agent contributes independently). The downsides are coordination complexity (reaching consensus is harder), higher communication costs (agents must talk to each other), and potential for non-convergence (agents may debate forever). Choose supervisor when reliability and simplicity matter more than diversity; choose swarm when resilience and multiple perspectives are critical.</p>
+<p>Supervisor architecture offers simpler coordination (one central decision-maker), easier debugging (all logic flows through one point), and lower communication overhead. The downsides are a single point of failure,.
+limited scalability (the supervisor becomes a bottleneck), and less diverse output (single perspective). Swarm architecture offers better fault tolerance (no single point of failure),.
+higher scalability (agents can be added freely), and more diverse perspectives (each agent contributes independently). The downsides are coordination complexity (reaching consensus is harder),.
+higher communication costs (agents must talk to each other), and potential for non-convergence (agents may debate forever). Choose supervisor when reliability and.
+simplicity matter more than diversity; choose swarm when resilience and multiple perspectives are critical.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -689,7 +718,11 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q8: How does a voting swarm work?
   </summary>
   <div class="tp-qa-answer">
-    <p>A voting swarm consists of multiple independent agents that each evaluate a proposal and cast a vote. There are two main approaches: simple majority (each agent gets one vote, the option with the most votes wins) and weighted voting (agents with more expertise or reliability get higher weight). For example, in a "best programming language" decision, three agents might vote: Agent 1 (Python expert) → Python, Agent 2 (JS expert) → JavaScript, Agent 3 (generalist) → Python. Python wins 2-1. Weighted voting would multiply each vote by the agent's confidence or expertise score. Voting swarms are useful for quality control (reviewing outputs), decision-making (choosing between alternatives), and ensemble predictions (combining multiple models' outputs).</p>
+<p>A voting swarm consists of multiple independent agents that each evaluate a proposal and cast a vote. There are two main approaches: simple majority (each agent gets one vote,.
+the option with the most votes wins) and weighted voting (agents with more expertise or reliability get higher weight). For example,.
+in a "best programming language" decision, three agents might vote: Agent 1 (Python expert) → Python, Agent 2 (JS expert) → JavaScript,.
+Agent 3 (generalist) → Python. Python wins 2-1. Weighted voting would multiply each vote by the agent's confidence or expertise score. Voting swarms are useful for.
+quality control (reviewing outputs), decision-making (choosing between alternatives), and ensemble predictions (combining multiple models' outputs).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -701,7 +734,11 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q9: What is a conditional pipeline?
   </summary>
   <div class="tp-qa-answer">
-    <p>A conditional pipeline extends the basic pipeline by adding a router function between stages that can decide to stop, skip, or branch based on intermediate output. For example, a customer support pipeline might have: Validate → Classify → {Route to billing OR Route to tech support OR Route to human agent}. The router examines the output of the Classify stage and decides which branch to follow. If classification confidence is low, the router might route to a human agent instead of continuing automated processing. Implementation requires a router function that takes the current output and stage name as input and returns the next stage name or "stop". Conditional pipelines reduce wasted processing by stopping early when errors are detected and enable complex workflows with branching logic.</p>
+<p>A conditional pipeline extends the basic pipeline by adding a router function between stages that can decide to stop, skip, or.
+branch based on intermediate output. For example, a customer support pipeline might have: Validate → Classify → {Route to billing OR Route to tech support OR Route to human agent}. The router examines the output of the Classify stage and.
+decides which branch to follow. If classification confidence is low, the router might route to a human agent instead of continuing automated processing. Implementation requires a router function that takes the current output and.
+stage name as input and returns the next stage name or "stop". Conditional pipelines reduce wasted processing by stopping early when errors are detected and.
+enable complex workflows with branching logic.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -713,7 +750,10 @@ Agent architectures define how agents are organized and communicate. Supervisor 
     Q10: How do you benchmark different agent architectures?
   </summary>
   <div class="tp-qa-answer">
-    <p>Benchmarking agent architectures requires running each architecture against the same set of test tasks and measuring: (1) success rate — did the architecture complete the task correctly? (2) average latency — how long did each task take end-to-end? (3) average steps — how many agent iterations were needed? (4) cost — total tokens consumed and API calls made. Use a diverse test set with varying complexity levels. For each architecture configuration, run at least 30-50 trials to get statistically significant results. Report p95 latency alongside averages to capture tail performance. The goal is to identify which architecture best matches your task characteristics — a supervisor might win on structured tasks while a swarm excels on open-ended exploration.</p>
+<p>Benchmarking agent architectures requires running each architecture against the same set of test tasks and measuring: (1) success rate — did the architecture complete the task correctly? (2) average latency — how long did each task take end-to-end? (3) average.
+steps — how many agent iterations were needed? (4) cost — total tokens consumed and.
+API calls made. Use a diverse test set with varying complexity levels. For each architecture configuration, run at least 30-50 trials to get statistically significant results. Report p95 latency alongside averages to capture tail performance. The goal is to identify which architecture best matches your task characteristics — a supervisor.
+might win on structured tasks while a swarm excels on open-ended exploration.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

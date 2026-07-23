@@ -4,7 +4,9 @@
 
 ## Learning Objectives
 
-After this chapter you will be able to tailor your interview preparation to each FAANG company specific process, map your stories to Amazon Leadership Principles and Google Googleyness, understand the bar raiser role and how it affects hiring decisions, prepare for company-specific question types, and develop a strategy for each loop structure.
+After this chapter you will be able to tailor your interview preparation to each FAANG company specific process, map your stories to Amazon Leadership Principles and.
+Google Googleyness, understand the bar raiser role and how it affects hiring decisions, prepare for company-specific question types, and develop a strategy for.
+each loop structure.
 
 
 ## Introduction
@@ -545,7 +547,10 @@ This analogy helps because faang company deep dives, like a delivery system, inv
 
 ## Summary
 
-Each FAANG company has a distinct interview process and cultural values. Amazon focuses on Leadership Principles with a bar raiser. Google emphasizes Googleyness and cognitive ability with a hiring committee. Meta values product execution and generalist engineering. Apple prioritizes craftsmanship and deep technical knowledge. Netflix looks for judgment and cultural fit. The common thread: prepare specific quantified stories mapped to company values, practice STAR format until natural, and approach each interview as a two-way conversation.
+Each FAANG company has a distinct interview process and cultural values. Amazon focuses on Leadership Principles with a bar raiser. Google emphasizes Googleyness and.
+cognitive ability with a hiring committee. Meta values product execution and generalist engineering. Apple prioritizes craftsmanship and deep technical knowledge. Netflix looks for.
+judgment and cultural fit. The common thread: prepare specific quantified stories mapped to company values, practice STAR format until natural, and.
+approach each interview as a two-way conversation.
 
 
 ## Practical Takeaways

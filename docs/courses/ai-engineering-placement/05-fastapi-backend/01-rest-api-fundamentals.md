@@ -44,7 +44,9 @@ flowchart LR
 
 ## Introduction
 
-REST APIs are the backbone of every AI engineering system — from serving model predictions to orchestrating multi-service ML pipelines. Whether you're building a FastAPI endpoint for real-time inference or integrating with third-party AI services, understanding HTTP semantics, resource design, and error handling is non-negotiable. This chapter gives you the principles and patterns to design APIs that are scalable, maintainable, and developer-friendly.
+REST APIs are the backbone of every AI engineering system — from serving model predictions to orchestrating multi-service ML pipelines. Whether you're building a FastAPI endpoint for.
+real-time inference or integrating with third-party AI services, understanding HTTP semantics, resource design, and error handling is non-negotiable. This chapter gives you the principles and.
+patterns to design APIs that are scalable, maintainable, and developer-friendly.
 
 
 ## Prerequisites
@@ -620,14 +622,17 @@ class ApiError extends Error {
 
 <details class="tp-qa-card" data-qid="fastapi-s01-q5">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q5: Why is cursor-based pagination better than offset-based?</summary>
-  <div class="tp-qa-answer"><p>Cursor-based pagination is stable under data changes — adding or removing items between pages does not affect pagination results. Offset-based can skip or duplicate items when data changes between requests. Cursor also performs better on large datasets since the database can use index-based lookups instead of scanning and skipping rows.</p></div>
+<div class="tp-qa-answer"><p>Cursor-based pagination is stable under data changes — adding or removing items between pages does not affect pagination results. Offset-based can skip or.
+duplicate items when data changes between requests. Cursor also performs better on large datasets since the database can use index-based lookups instead of scanning and.
+skipping rows.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="fastapi-s01-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q6: What is HATEOAS and when should you use it?</summary>
-  <div class="tp-qa-answer"><p>HATEOAS (Hypermedia as the Engine of Application State) means API responses include links to related operations, allowing clients to navigate the API dynamically. Example: GET /users/42 returns the user data plus links to their orders and profile edit. Valuable for public APIs with diverse clients, but adds payload size. Not necessary for internal microservices.</p></div>
+<div class="tp-qa-answer"><p>HATEOAS (Hypermedia as the Engine of Application State) means API responses include links to related operations, allowing clients to navigate the API dynamically. Example: GET /users/42 returns the user data plus links to their orders and.
+profile edit. Valuable for public APIs with diverse clients, but adds payload size. Not necessary for internal microservices.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
@@ -655,7 +660,8 @@ class ApiError extends Error {
 
 <details class="tp-qa-card" data-qid="fastapi-s01-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q10: What makes an API truly RESTful vs REST-like?</summary>
-  <div class="tp-qa-answer"><p>Truly RESTful APIs satisfy all six constraints including HATEOAS. Most "REST" APIs are actually REST-like — they use HTTP methods and JSON but omit hypermedia. For practical purposes, REST-like APIs that follow resource naming, proper HTTP methods, and status codes are acceptable. Full HATEOAS adds complexity that most clients do not utilize.</p></div>
+<div class="tp-qa-answer"><p>Truly RESTful APIs satisfy all six constraints including HATEOAS. Most "REST" APIs are actually REST-like — they use HTTP methods and.
+JSON but omit hypermedia. For practical purposes, REST-like APIs that follow resource naming, proper HTTP methods, and status codes are acceptable. Full HATEOAS adds complexity that most clients do not utilize.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
@@ -783,7 +789,10 @@ d) Client-side rendering
 
 ## Summary
 
-REST APIs define how distributed systems communicate through six architectural constraints. HTTP methods map directly to CRUD operations with specific idempotency and safety guarantees. Proper URL design uses plural nouns and consistent naming conventions. Status codes communicate results precisely — 201 for creation, 204 for deletion, 422 for validation errors. Pagination should use cursors for consistency, and errors should follow RFC 7807 Problem Details. FastAPI's type-hint-driven approach auto-generates OpenAPI documentation, making API design and documentation a single step.
+REST APIs define how distributed systems communicate through six architectural constraints. HTTP methods map directly to CRUD operations with specific idempotency and.
+safety guarantees. Proper URL design uses plural nouns and consistent naming conventions. Status codes communicate results precisely — 201 for creation,.
+204 for deletion, 422 for validation errors. Pagination should use cursors for consistency, and errors should follow RFC 7807 Problem Details. FastAPI's type-hint-driven approach auto-generates OpenAPI documentation,.
+making API design and documentation a single step.
 
 
 ## Placement Section

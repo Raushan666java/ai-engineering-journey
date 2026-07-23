@@ -44,7 +44,9 @@ flowchart LR
 
 ## Introduction
 
-Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers. Before you can fine-tune a transformer or deploy an ML model, you must master data preprocessing, bias-variance analysis, train/test splitting, and evaluation metrics. This chapter provides the theoretical and practical foundation that every subsequent module in this course builds upon.
+Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers. Before you can fine-tune a transformer or.
+deploy an ML model, you must master data preprocessing, bias-variance analysis, train/test splitting, and evaluation metrics. This chapter provides the theoretical and.
+practical foundation that every subsequent module in this course builds upon.
 
 
 ## Prerequisites
@@ -619,7 +621,10 @@ d) Feature importance
 
 ## Summary
 
-Machine learning fundamentals form the theoretical and practical base for all AI engineering work. The three learning paradigms — supervised, unsupervised, and reinforcement — each serve different problem types. The bias-variance trade-off explains why models underfit or overfit and guides model selection. Data preprocessing (standardization, encoding, missing value imputation) is critical for model performance. Train/test splitting with stratification and k-fold cross-validation provide reliable performance estimates. Evaluation metrics beyond accuracy — precision, recall, F1, ROC-AUC — are essential for imbalanced real-world datasets.
+Machine learning fundamentals form the theoretical and practical base for all AI engineering work. The three learning paradigms — supervised, unsupervised,.
+and reinforcement — each serve different problem types. The bias-variance trade-off explains why models underfit or overfit and guides model selection. Data preprocessing (standardization,.
+encoding, missing value imputation) is critical for model performance. Train/test splitting with stratification and k-fold cross-validation provide reliable performance estimates. Evaluation metrics beyond accuracy — precision,.
+recall, F1, ROC-AUC — are essential for imbalanced real-world datasets.
 
 
 ## Placement Section

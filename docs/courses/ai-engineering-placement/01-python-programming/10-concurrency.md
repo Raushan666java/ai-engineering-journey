@@ -373,7 +373,8 @@ async function main() {
 
 <details class="tp-qa-card" data-qid="p02-s10-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: What is the GIL and how does it affect Python?</summary>
-  <div class="tp-qa-answer"><p>The GIL (Global Interpreter Lock) is a mutex that prevents multiple threads from executing Python bytecode at once in CPython. It makes CPU-bound threading no faster than sequential code. I/O-bound threads benefit because the GIL is released during blocking I/O operations. Multiprocessing bypasses the GIL by using separate processes.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+<div class="tp-qa-answer"><p>The GIL (Global Interpreter Lock) is a mutex that prevents multiple threads from executing Python bytecode at once in CPython. It makes CPU-bound threading no faster than sequential code. I/O-bound threads benefit because the GIL is released during blocking.
+I/O operations. Multiprocessing bypasses the GIL by using separate processes.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="p02-s10-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: When would you use threading vs asyncio?</summary>

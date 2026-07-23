@@ -834,7 +834,9 @@ console.log(pipeline.process("Hello world"));
     Q2: How does NeMo Guardrails work?
   </summary>
   <div class="tp-qa-answer">
-    <p>NeMo Guardrails uses a dialogue management system with the Colang language. It defines: (1) Canonical forms — mapping user expressions to intents, (2) Rules — flow control based on intent and context, (3) Actions — block, rewrite, or allow responses. It maintains conversation state, supports multi-turn guardrails, and can call external APIs for fact-checking or moderation.</p>
+<p>NeMo Guardrails uses a dialogue management system with the Colang language. It defines: (1) Canonical forms — mapping user expressions to intents,.
+(2) Rules — flow control based on intent and context, (3) Actions — block, rewrite, or allow responses. It maintains conversation state,.
+supports multi-turn guardrails, and can call external APIs for fact-checking or moderation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -882,7 +884,8 @@ console.log(pipeline.process("Hello world"));
     Q6: How do you deploy guardrails in production?
   </summary>
   <div class="tp-qa-answer">
-    <p>Deploy guardrails as middleware between the API gateway and the LLM endpoint. The request path: API → Input guardrails → LLM → Output guardrails → Response. Use a priority-ordered pipeline where high-priority guardrails (safety, legal) run first. Log all guardrail decisions for audit. Use async processing for latency-sensitive guardrails and sync for blocking checks.</p>
+<p>Deploy guardrails as middleware between the API gateway and the LLM endpoint. The request path: API → Input guardrails → LLM → Output guardrails → Response. Use a priority-ordered pipeline where high-priority guardrails (safety,.
+legal) run first. Log all guardrail decisions for audit. Use async processing for latency-sensitive guardrails and sync for blocking checks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -894,7 +897,9 @@ console.log(pipeline.process("Hello world"));
     Q7: What is a context window guardrail?
   </summary>
   <div class="tp-qa-answer">
-    <p>A context window guardrail ensures the total prompt (system prompt + retrieved documents + conversation history + user input) fits within the LLM's token limit. It estimates token usage, trims or truncates documents by relevance, and rejects requests that exceed the limit even after trimming. This prevents truncation errors and ensures consistent model behavior.</p>
+<p>A context window guardrail ensures the total prompt (system prompt + retrieved documents + conversation history + user input) fits within the LLM's token limit. It estimates token usage,.
+trims or truncates documents by relevance, and rejects requests that exceed the limit even after trimming. This prevents truncation errors and.
+ensures consistent model behavior.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -906,7 +911,8 @@ console.log(pipeline.process("Hello world"));
     Q8: How do you test guardrails before deployment?
   </summary>
   <div class="tp-qa-answer">
-    <p>Build a test suite with categories: benign (should pass), harmful (should block), edge cases (long input, special chars, encoded content). Use automated red teaming to generate attack variations. Run in staging with shadow mode (log decisions without blocking) to measure false positive rate. Compare guardrail decisions against human review for a sample of traffic.</p>
+<p>Build a test suite with categories: benign (should pass), harmful (should block), edge cases (long input, special chars, encoded content). Use automated red teaming to generate attack variations. Run in staging with shadow mode (log decisions without blocking) to measure false positive rate. Compare guardrail decisions against human review for.
+a sample of traffic.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -930,7 +936,9 @@ console.log(pipeline.process("Hello world"));
     Q10: How do guardrails for LLM agents differ from standard chatbots?
   </summary>
   <div class="tp-qa-answer">
-    <p>Agent guardrails must also monitor: (1) Tool/function calls — block dangerous operations, (2) Output that could trigger unintended side effects (e.g., sending emails, deleting data), (3) Multi-step reasoning — ensure the agent doesn't chain harmless steps into harmful outcomes, (4) Permission boundaries — verify the agent only accesses authorized tools and data.</p>
+<p>Agent guardrails must also monitor: (1) Tool/function calls — block dangerous operations, (2) Output that could trigger unintended side effects (e.g.,.
+sending emails, deleting data), (3) Multi-step reasoning — ensure the agent doesn't chain harmless steps into harmful outcomes, (4) Permission boundaries — verify the agent only accesses authorized tools and.
+data.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

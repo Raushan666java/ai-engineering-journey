@@ -46,7 +46,9 @@ flowchart LR
 
 ## Introduction
 
-Neural networks are the engine behind every modern AI system — from GPT-4's language generation to self-driving car vision. This chapter builds your understanding from the ground up: starting with the single perceptron, progressing through activation functions and backpropagation, and culminating in a multi-layer perceptron implemented in PyTorch. These fundamentals directly explain why transformers work and how to debug training failures in production.
+Neural networks are the engine behind every modern AI system — from GPT-4's language generation to self-driving car vision. This chapter builds your understanding from the ground up: starting with the single perceptron,.
+progressing through activation functions and backpropagation, and culminating in a multi-layer perceptron implemented in PyTorch. These fundamentals directly explain why transformers work and.
+how to debug training failures in production.
 
 
 ## Prerequisites
@@ -720,7 +722,11 @@ d) Huber
 
 ## Summary
 
-Neural networks start with the perceptron — a simple linear classifier limited to linearly separable problems like AND and OR. Activation functions (sigmoid, tanh, ReLU, Leaky ReLU) introduce non-linearity, enabling multi-layer perceptrons to approximate any continuous function. Backpropagation efficiently computes gradients through the chain rule, and PyTorch's autograd automates this process with dynamic computational graphs. Weight initialization is critical: He init for ReLU networks, Xavier for sigmoid/tanh. Vanishing and exploding gradients are common deep network challenges solved by ReLU activations, proper initialization, and batch normalization. Loss function selection (cross-entropy for classification, MSE for regression) directly impacts training stability.
+Neural networks start with the perceptron — a simple linear classifier limited to linearly separable problems like AND and OR. Activation functions (sigmoid,.
+tanh, ReLU, Leaky ReLU) introduce non-linearity, enabling multi-layer perceptrons to approximate any continuous function. Backpropagation efficiently computes gradients through the chain rule,.
+and PyTorch's autograd automates this process with dynamic computational graphs. Weight initialization is critical: He init for ReLU networks, Xavier for.
+sigmoid/tanh. Vanishing and exploding gradients are common deep network challenges solved by ReLU activations, proper initialization, and batch normalization. Loss function selection (cross-entropy for.
+classification, MSE for regression) directly impacts training stability.
 
 
 ## Placement Section

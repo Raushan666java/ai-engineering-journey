@@ -721,7 +721,9 @@ class LatencyProfiler:
 
 ## Summary
 
-Multimodal agents extend perception beyond text to voice, vision, and physical action. Three voice paradigms offer tradeoffs between latency, quality, and cost. Streaming voice pipelines require careful VAD and buffering design. Computer Use agents enable GUI automation through visual understanding. VLA pipelines connect vision to physical robot control. Real-time evaluation must measure not just accuracy but also latency, turn-taking quality, and interruption handling.
+Multimodal agents extend perception beyond text to voice, vision, and physical action. Three voice paradigms offer tradeoffs between latency, quality, and.
+cost. Streaming voice pipelines require careful VAD and buffering design. Computer Use agents enable GUI automation through visual understanding. VLA pipelines connect vision to physical robot control. Real-time evaluation must measure not just accuracy but.
+also latency, turn-taking quality, and interruption handling.
 
 ## Practical Takeaways
 

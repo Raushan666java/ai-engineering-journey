@@ -2,7 +2,9 @@
 
 ## Overview
 
-The AI/ML tooling landscape in 2026 is unrecognizable from even two years ago. New frontier models (DeepSeek, Gemini, Mistral), open-source agent harnesses (OpenClaw, Hermes, Paperclip), visual workflow builders (n8n), coding agents (Claude Code, Codex CLI), and deployment ecosystems (Hugging Face, Ollama, vLLM) have created a rich but overwhelming ecosystem. This module surveys every major trending platform — what it does, when to use it, and how to integrate it into production systems — with TypeScript examples throughout.
+The AI/ML tooling landscape in 2026 is unrecognizable from even two years ago. New frontier models (DeepSeek, Gemini, Mistral), open-source agent harnesses (OpenClaw,.
+Hermes, Paperclip), visual workflow builders (n8n), coding agents (Claude Code, Codex CLI), and deployment ecosystems (Hugging Face, Ollama, vLLM) have created a rich but.
+overwhelming ecosystem. This module surveys every major trending platform — what it does, when to use it, and how to integrate it into production systems — with TypeScript examples throughout.
 
 ## Sub-Chapters
 

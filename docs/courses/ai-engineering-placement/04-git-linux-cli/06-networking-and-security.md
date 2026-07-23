@@ -764,7 +764,9 @@ GitHub Settings → Branches → Add rule:
     Q2: How do you prevent secrets from being exposed in GitHub Actions logs?
   </summary>
   <div class="tp-qa-answer">
-    <p>1) Store secrets in GitHub Settings → Secrets → Actions. 2) Reference them as <code>${{ secrets.SECRET_NAME }}</code> in workflows. 3) Pass them as environment variables, never echo them directly. 4) GitHub automatically masks secrets in logs if accidentally printed. 5) Avoid script injection by not using secrets in <code>run:</code> echo statements — use <code>env:</code> instead. 6) Use OIDC tokens for cloud credentials instead of long-lived secrets.</p>
+<p>1) Store secrets in GitHub Settings → Secrets → Actions. 2) Reference them as <code>${{ secrets.SECRET_NAME }}</code> in workflows. 3) Pass them as environment variables,.
+never echo them directly. 4) GitHub automatically masks secrets in logs if accidentally printed. 5) Avoid script injection by not using secrets in <code>run:</code> echo statements — use <code>env:</code> instead. 6) Use OIDC tokens for.
+cloud credentials instead of long-lived secrets.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -788,7 +790,8 @@ GitHub Settings → Branches → Add rule:
     Q4: What problem do pre-commit hooks solve?
   </summary>
   <div class="tp-qa-answer">
-    <p>Pre-commit hooks run checks (linting, formatting, type checking, secret scanning) <strong>before</strong> each git commit. This catches issues at the earliest possible point — before code enters the repository or CI pipeline. Benefits: faster feedback (local, no CI wait), consistent code quality, prevents broken code from being pushed, and reduces CI costs by catching simple issues early.</p>
+<p>Pre-commit hooks run checks (linting, formatting, type checking, secret scanning) <strong>before</strong> each git commit. This catches issues at the earliest possible point — before code enters the repository or.
+CI pipeline. Benefits: faster feedback (local, no CI wait), consistent code quality, prevents broken code from being pushed, and reduces CI costs by catching simple issues early.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -800,7 +803,8 @@ GitHub Settings → Branches → Add rule:
     Q5: Describe a blue-green deployment strategy and its advantages.
   </summary>
   <div class="tp-qa-answer">
-    <p>Blue-green deployment maintains two identical production environments. "Blue" serves live traffic; "green" gets the new version. After testing green, traffic is switched instantly. Advantages: zero-downtime deployments, instant rollback (switch back to blue), ability to test the new version under real traffic before switching, and simple deployment process. Disadvantages: requires double the infrastructure resources.</p>
+<p>Blue-green deployment maintains two identical production environments. "Blue" serves live traffic; "green" gets the new version. After testing green, traffic is switched instantly. Advantages: zero-downtime deployments,.
+instant rollback (switch back to blue), ability to test the new version under real traffic before switching, and simple deployment process. Disadvantages: requires double the infrastructure resources.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>

@@ -675,7 +675,9 @@ async function createHPA(name: string, deployment: string, min: number, max: num
     Q2: What is the difference between HPA and Cluster Autoscaler?
   </summary>
   <div class="tp-qa-answer">
-    <p>HPA scales Pod replicas up/down based on metrics. Cluster Autoscaler adds/removes worker nodes from the cluster when Pods can't be scheduled or nodes are underutilized. HPA operates at the Pod level; Cluster Autoscaler operates at the infrastructure level. They work together: HPA creates more Pods, which may trigger Cluster Autoscaler to add nodes if there's insufficient capacity.</p>
+<p>HPA scales Pod replicas up/down based on metrics. Cluster Autoscaler adds/removes worker nodes from the cluster when Pods can't be scheduled or.
+nodes are underutilized. HPA operates at the Pod level; Cluster Autoscaler operates at the infrastructure level. They work together: HPA creates more Pods,.
+which may trigger Cluster Autoscaler to add nodes if there's insufficient capacity.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -687,7 +689,9 @@ async function createHPA(name: string, deployment: string, min: number, max: num
     Q3: Explain blue-green deployment strategy in Kubernetes.
   </summary>
   <div class="tp-qa-answer">
-    <p>Blue-green maintains two identical environments (blue = current, green = new). A Service selector pointing to the active version. Deploy the green version, test it, then switch the Service selector from blue to green to route all traffic to green. Rollback is as simple as switching the selector back to blue.</p>
+<p>Blue-green maintains two identical environments (blue = current, green = new). A Service selector pointing to the active version. Deploy the green version,.
+test it, then switch the Service selector from blue to green to route all traffic to green. Rollback is as simple as switching the selector.
+back to blue.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>

@@ -771,7 +771,9 @@ class DataVersionTracker {
     Q2: How does DVC track data versions?
   </summary>
   <div class="tp-qa-answer">
-    <p>DVC computes a hash (MD5) of the file content, stores the file in the cache directory (<code>.dvc/cache</code>) keyed by hash, and creates a small <code>.dvc</code> file (metadata pointer) that goes into Git. When pushed, the cached files are uploaded to remote storage. When pulled, DVC downloads files matching the <code>.dvc</code> file's hash.</p>
+<p>DVC computes a hash (MD5) of the file content, stores the file in the cache directory (<code>.dvc/cache</code>) keyed by hash, and.
+creates a small <code>.dvc</code> file (metadata pointer) that goes into Git. When pushed, the cached files are uploaded to remote storage. When pulled,.
+DVC downloads files matching the <code>.dvc</code> file's hash.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -831,7 +833,9 @@ class DataVersionTracker {
     Q7: What is the difference between DVC and Git LFS?
   </summary>
   <div class="tp-qa-answer">
-    <p>Git LFS replaces large files with pointer files and stores content on a Git LFS server — it's tightly coupled to Git. DVC works alongside Git but stores data in any remote storage (S3, GCS, SSH). DVC also provides pipeline capabilities (dependency tracking, stage reproduction) that Git LFS lacks. DVC is preferred for ML workflows.</p>
+<p>Git LFS replaces large files with pointer files and stores content on a Git LFS server — it's tightly coupled to Git. DVC works alongside Git but.
+stores data in any remote storage (S3, GCS, SSH). DVC also provides pipeline capabilities (dependency tracking, stage reproduction) that Git LFS lacks. DVC is preferred for.
+ML workflows.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

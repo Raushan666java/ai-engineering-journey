@@ -750,7 +750,8 @@ class PromptRegistry {
     Q4: How does canary deployment work for prompts?
   </summary>
   <div class="tp-qa-answer">
-    <p>Canary deployment starts by routing a small percentage of traffic (e.g., 1%) to the new prompt version while the rest uses the production version. If metrics (error rate, latency, user feedback) remain healthy, traffic is gradually increased. If issues appear, the canary is rolled back instantly. This minimizes blast radius of bad prompt changes.</p>
+<p>Canary deployment starts by routing a small percentage of traffic (e.g., 1%) to the new prompt version while the rest uses the production version. If metrics (error.
+rate, latency, user feedback) remain healthy, traffic is gradually increased. If issues appear, the canary is rolled back instantly. This minimizes blast radius of bad prompt changes.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -786,7 +787,9 @@ class PromptRegistry {
     Q7: What is prompt drift and how do you detect it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Prompt drift occurs when LLM outputs gradually degrade because the base model is updated, the prompt subtly changes over time, or user input distribution shifts. Detect it by tracking evaluation pass rates over time, monitoring output distributions (semantic similarity to golden outputs), and comparing metrics like latency and refusal rates against baselines.</p>
+<p>Prompt drift occurs when LLM outputs gradually degrade because the base model is updated, the prompt subtly changes over time, or.
+user input distribution shifts. Detect it by tracking evaluation pass rates over time, monitoring output distributions (semantic similarity to golden outputs),.
+and comparing metrics like latency and refusal rates against baselines.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

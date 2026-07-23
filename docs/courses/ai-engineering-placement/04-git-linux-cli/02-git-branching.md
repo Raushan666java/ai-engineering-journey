@@ -526,7 +526,8 @@ git rebase main</code></pre>
     Q2: When would you use --squash merge?
   </summary>
   <div class="tp-qa-answer">
-    <p>Use squash merge when a feature branch has many small WIP commits ("fix typo", "wip", "trying something") and you want a single clean commit on the target branch. This keeps the main branch history clean. It loses the individual commit history of the branch but is ideal for messy development branches.</p><pre><code>git switch main
+<p>Use squash merge when a feature branch has many small WIP commits ("fix typo", "wip", "trying something") and you want a single clean commit on the target branch. This keeps the main branch history clean. It loses the individual commit history of the branch but.
+is ideal for messy development branches.</p><pre><code>git switch main
 git merge --squash feature/messy-branch
 git commit -m "feat: add complete user authentication"</code></pre>
   </div>
@@ -540,7 +541,9 @@ git commit -m "feat: add complete user authentication"</code></pre>
     Q3: Explain the golden rule of rebasing and why it matters.
   </summary>
   <div class="tp-qa-answer">
-    <p>"Never rebase commits that have been pushed to a shared branch." Rebase rewrites commit hashes. If a teammate has pulled your old commits and built work on top of them, rebasing creates new hashes. Their copy now points to different commits, causing duplicates, confusion, and potential data loss. Rebase only local, unpushed commits.</p>
+<p>"Never rebase commits that have been pushed to a shared branch." Rebase rewrites commit hashes. If a teammate has pulled your old commits and.
+built work on top of them, rebasing creates new hashes. Their copy now points to different commits, causing duplicates, confusion, and.
+potential data loss. Rebase only local, unpushed commits.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>
@@ -569,7 +572,9 @@ git commit -m "feat: add complete user authentication"</code></pre>
     Q5: How do you resolve a merge conflict?
   </summary>
   <div class="tp-qa-answer">
-    <p>1) Run the merge and identify conflicted files with <code>git status</code>. 2) Open each file and find conflict markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>). 3) Edit to keep the correct code, removing all markers. 4) Stage resolved files with <code>git add</code>. 5) Complete with <code>git commit</code> (for merge) or <code>git rebase --continue</code> (for rebase). Use <code>git merge --abort</code> or <code>git rebase --abort</code> to cancel if needed.</p>
+<p>1) Run the merge and identify conflicted files with <code>git status</code>. 2) Open each file and find conflict markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>,.
+<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>). 3) Edit to keep the correct code, removing all markers. 4) Stage resolved files with <code>git add</code>. 5) Complete with <code>git commit</code> (for.
+merge) or <code>git rebase --continue</code> (for rebase). Use <code>git merge --abort</code> or <code>git rebase --abort</code> to cancel if needed.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>

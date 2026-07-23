@@ -769,7 +769,8 @@ class EvolutionReporter:
 
 ## Summary
 
-Self-evolution is what separates static agents from continuously improving ones. Three paradigms (in-context, memory-based, experience-driven) provide complementary improvement mechanisms. Experience replay with reflection extracts lessons from failures. Tool discovery finds new capabilities in the environment. Tool creation represents the highest level — agents that generate their own tools. Evolution tracking provides quantitative evidence of improvement.
+Self-evolution is what separates static agents from continuously improving ones. Three paradigms (in-context, memory-based, experience-driven) provide complementary improvement mechanisms. Experience replay with reflection extracts lessons from failures. Tool discovery finds new capabilities in the environment. Tool creation represents the highest.
+level — agents that generate their own tools. Evolution tracking provides quantitative evidence of improvement.
 
 ## Practical Takeaways
 

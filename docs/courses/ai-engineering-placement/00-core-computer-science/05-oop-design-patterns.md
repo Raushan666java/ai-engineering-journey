@@ -3,7 +3,9 @@
 
 ## Learning Objectives
 
-After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for common AI engineering problems (multiple LLM providers, caching, rate limiting), design clean interfaces that decouple model serving from business logic, distinguish between composition and inheritance, and refactor monolithic code into maintainable, testable modules.
+After this chapter you will be able to apply SOLID principles to build extensible ML pipelines, select the right GoF pattern for.
+common AI engineering problems (multiple LLM providers, caching, rate limiting), design clean interfaces that decouple model serving from business logic, distinguish between composition and.
+inheritance, and refactor monolithic code into maintainable, testable modules.
 
 ## Introduction
 
@@ -578,7 +580,9 @@ const result = await client.generate("Hello")
 
 ## Summary
 
-SOLID principles and design patterns are battle-tested approaches to writing maintainable, extensible AI systems. The strategy pattern lets you swap model providers at configuration time. The decorator pattern composes cross-cutting concerns (caching, rate limiting, logging) without tangling them with business logic. The adapter pattern unifies different LLM SDKs behind a common interface. Clean architecture keeps framework dependencies at the edges, making your core logic testable. The rule is simple: depend on abstractions, inject dependencies, compose behavior, and test in isolation.
+SOLID principles and design patterns are battle-tested approaches to writing maintainable, extensible AI systems. The strategy pattern lets you swap model providers at configuration time. The decorator.
+pattern composes cross-cutting concerns (caching, rate limiting, logging) without tangling them with business logic. The adapter pattern unifies different LLM SDKs behind a common interface. Clean architecture keeps framework dependencies at the edges,.
+making your core logic testable. The rule is simple: depend on abstractions, inject dependencies, compose behavior, and test in isolation.
 
 ## Practical Takeaways
 

@@ -422,7 +422,9 @@ The goal: your partner should feel you understand the code as well as if you had
 
 ## Summary
 
-AI-assisted coding interviews are increasingly common at FAANGs. The key skill is knowing when and how to use AI as a productivity tool while demonstrating your own understanding. Always verify AI-generated code mentally, understand every line, and be ready to modify or explain it. The best candidates use AI for boilerplate and standard algorithms while handling the problem-solving and design thinking themselves.
+AI-assisted coding interviews are increasingly common at FAANGs. The key skill is knowing when and how to use AI as a productivity tool while demonstrating your own understanding. Always verify AI-generated code mentally,.
+understand every line, and be ready to modify or explain it. The best candidates use AI for boilerplate and standard algorithms while handling the problem-solving and.
+design thinking themselves.
 
 
 ## Practical Takeaways

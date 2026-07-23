@@ -836,7 +836,9 @@ class ModelRouter {
     Q1: What are the common model serving patterns?
   </summary>
   <div class="tp-qa-answer">
-    <p>Four main patterns: (1) REST API — standard HTTP serving, best for most use cases, 50-500ms latency. (2) gRPC — high-throughput binary protocol, 10-100ms. (3) Streaming — event-driven processing for sub-10ms real-time needs. (4) Batch — periodic offline scoring jobs for non-real-time use cases. Each trades off latency, throughput, and complexity.</p>
+<p>Four main patterns: (1) REST API — standard HTTP serving, best for most use cases, 50-500ms latency. (2) gRPC — high-throughput binary protocol,.
+10-100ms. (3) Streaming — event-driven processing for sub-10ms real-time needs. (4) Batch — periodic offline scoring jobs for non-real-time use cases. Each trades off latency,.
+throughput, and complexity.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -848,7 +850,8 @@ class ModelRouter {
     Q2: How does request batching improve inference throughput?
   </summary>
   <div class="tp-qa-answer">
-    <p>Request batching aggregates multiple inference requests into one batch for GPU/TPU processing. GPUs are optimized for parallel computation: processing a batch of 32 takes only slightly longer than processing 1. With a max_wait threshold (e.g., 10ms), the server collects concurrent requests and processes them together, dramatically improving throughput without unacceptable latency increase.</p>
+<p>Request batching aggregates multiple inference requests into one batch for GPU/TPU processing. GPUs are optimized for parallel computation: processing a batch of 32 takes only slightly longer than processing 1. With a max_wait threshold (e.g.,.
+10ms), the server collects concurrent requests and processes them together, dramatically improving throughput without unacceptable latency increase.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -860,7 +863,9 @@ class ModelRouter {
     Q3: How does Redis caching help model serving?
   </summary>
   <div class="tp-qa-answer">
-    <p>Redis caches predictions keyed by a hash of the input features with a configurable TTL. If the same input is requested again within the TTL, the cached prediction is returned instantly without model inference. This reduces latency for repeated queries and protects the model from redundant computation, especially for popular or common inputs.</p>
+<p>Redis caches predictions keyed by a hash of the input features with a configurable TTL. If the same input is requested again within the TTL,.
+the cached prediction is returned instantly without model inference. This reduces latency for repeated queries and protects the model from redundant computation,.
+especially for popular or common inputs.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -872,7 +877,9 @@ class ModelRouter {
     Q4: What is consistent hashing for A/B testing models?
   </summary>
   <div class="tp-qa-answer">
-    <p>Consistent hashing assigns users to model versions deterministically based on a hash of their user ID. The same user always gets the same model version, providing a consistent experience. The hash space is divided into buckets proportional to the traffic split (e.g., 90% for control, 10% for treatment). This enables fair A/B testing without session inconsistency.</p>
+<p>Consistent hashing assigns users to model versions deterministically based on a hash of their user ID. The same user always gets the same model version,.
+providing a consistent experience. The hash space is divided into buckets proportional to the traffic split (e.g., 90% for control, 10% for.
+treatment). This enables fair A/B testing without session inconsistency.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -908,7 +915,8 @@ class ModelRouter {
     Q7: How do you implement autoscaling for model serving?
   </summary>
   <div class="tp-qa-answer">
-    <p>Kubernetes HPA can scale based on CPU (e.g., target 70% utilization), memory, or custom metrics like p95 latency. A custom metric pipeline (Prometheus + custom metrics adapter) publishes per-pod latency metrics. The HPA computes desired replicas as current * (current_metric / target_metric). Minimum replicas ensure baseline capacity; maximum prevents runaway scaling.</p>
+<p>Kubernetes HPA can scale based on CPU (e.g., target 70% utilization), memory, or custom metrics like p95 latency. A custom metric pipeline (Prometheus + custom metrics adapter) publishes per-pod latency metrics. The HPA computes desired replicas as current * (current_metric / target_metric). Minimum replicas ensure baseline capacity;.
+maximum prevents runaway scaling.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -932,7 +940,8 @@ class ModelRouter {
     Q9: How do you handle model versioning in serving?
   </summary>
   <div class="tp-qa-answer">
-    <p>Load all active model versions into memory at startup. Use a ModelRouter with traffic percentage configuration per version. The router selects the version based on random weighted selection or consistent hashing by user ID. Shadow traffic sends copies of requests to new versions for evaluation without affecting responses. Canary routing exposes new versions to increasing traffic.</p>
+<p>Load all active model versions into memory at startup. Use a ModelRouter with traffic percentage configuration per version. The router selects the version based on random weighted selection or.
+consistent hashing by user ID. Shadow traffic sends copies of requests to new versions for evaluation without affecting responses. Canary routing exposes new versions to increasing traffic.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

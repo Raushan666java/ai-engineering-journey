@@ -621,7 +621,9 @@ print(f"Spike anomaly: {detector.is_anomaly('latency', 500)}")
 
 ## Summary
 
-Agent observability is essential for debugging, monitoring, and improving agent systems. Structured logging captures thoughts, actions, observations, and errors at each step. Distributed tracing provides end-to-end visibility across agent workflows with span hierarchies. Performance metrics (latency, token usage, tool calls, steps per task) and quality metrics (success rate, hallucination scores, user ratings) enable quantitative assessment. Step replay and reasoning visualization tools help debug agent decision-making. Alerting rules and anomaly detection catch failures and performance degradation in real-time.
+Agent observability is essential for debugging, monitoring, and improving agent systems. Structured logging captures thoughts, actions, observations, and errors at each step. Distributed tracing provides end-to-end visibility across agent workflows with span hierarchies. Performance metrics (latency,.
+token usage, tool calls, steps per task) and quality metrics (success rate, hallucination scores, user ratings) enable quantitative assessment. Step replay and.
+reasoning visualization tools help debug agent decision-making. Alerting rules and anomaly detection catch failures and performance degradation in real-time.
 
 ## Practical Takeaways
 
@@ -642,7 +644,12 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q1: What are the three pillars of observability and how do they apply to agents?
   </summary>
   <div class="tp-qa-answer">
-    <p>The three pillars of observability are logging, metrics, and tracing. For agent systems: (1) Logging — records every agent action, LLM call, tool execution, and state transition with timestamps, providing a detailed audit trail for debugging and compliance; (2) Metrics — numeric measurements like success rate, latency percentiles (p50, p95, p99), token usage, tool call counts, and cost per request, tracked over time for performance monitoring and trend analysis; (3) Tracing — captures the full execution path of a single request across all components (LLM, tools, state manager, memory), showing the causal chain of events and enabling root cause analysis when something fails. A complete observability implementation combines all three — logs for detailed investigation, metrics for alerting and dashboards, and traces for understanding complex multi-step workflows. OpenTelemetry is the standard framework for instrumenting all three pillars consistently.</p>
+<p>The three pillars of observability are logging, metrics, and tracing. For agent systems: (1) Logging — records every agent action, LLM call,.
+tool execution, and state transition with timestamps, providing a detailed audit trail for debugging and compliance; (2) Metrics — numeric measurements like success rate,.
+latency percentiles (p50, p95, p99), token usage, tool call counts, and cost per request, tracked over time for performance monitoring and.
+trend analysis; (3) Tracing — captures the full execution path of a single request across all components (LLM, tools, state manager,.
+memory), showing the causal chain of events and enabling root cause analysis when something fails. A complete observability implementation combines all three — logs for.
+detailed investigation, metrics for alerting and dashboards, and traces for understanding complex multi-step workflows. OpenTelemetry is the standard framework for instrumenting all three pillars consistently.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -654,7 +661,12 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q2: How do you instrument LLM calls for observability?
   </summary>
   <div class="tp-qa-answer">
-    <p>LLM call instrumentation wraps each API call with logging, timing, and tracing. Implementation: a wrapper around the LLM client records: (1) request metadata — model name, temperature, max tokens, system prompt size, number of messages; (2) performance data — latency (time to first token, total time), token counts (prompt, completion, total), cost (calculated from token counts * model rate); (3) response metadata — finish reason (stop, length, tool_calls), tool call details; (4) error data — error type, status code, retry count. Each LLM call is logged as a structured JSON entry with a unique trace ID linking it to the parent request. Metrics are emitted as counters (total requests, total tokens) and histograms (latency, tokens per request). For streaming responses, instrumentation records time-to-first-token and total streaming duration. This data enables cost tracking, latency optimization, and debugging of model behavior issues.</p>
+<p>LLM call instrumentation wraps each API call with logging, timing, and tracing. Implementation: a wrapper around the LLM client records: (1) request metadata — model name,.
+temperature, max tokens, system prompt size, number of messages; (2) performance data — latency (time to first token, total time), token counts (prompt,.
+completion, total), cost (calculated from token counts * model rate); (3) response metadata — finish reason (stop, length, tool_calls), tool call details;.
+(4) error data — error type, status code, retry count. Each LLM call is logged as a structured JSON entry with a unique trace ID linking it to the parent request. Metrics are emitted as counters (total requests,.
+total tokens) and histograms (latency, tokens per request). For streaming responses, instrumentation records time-to-first-token and total streaming duration. This data enables cost tracking,.
+latency optimization, and debugging of model behavior issues.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -666,7 +678,12 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q3: What metrics should you track for agent performance?
   </summary>
   <div class="tp-qa-answer">
-    <p>Key agent performance metrics fall into categories. Task metrics: success rate (percentage of tasks completed without errors), completion rate (percentage that reached a final answer vs. max iterations), average steps per task. Latency metrics: total response time (user-facing), p50/p95/p99 latency for end-to-end requests, time per step, time per tool call. Quality metrics: LLM-as-judge score, user feedback score (rating or thumbs up/down), hallucination rate, policy violation rate. Cost metrics: cost per request, cost per task, cost breakdown by LLM model and tool usage. Resource metrics: context window utilization percentage, memory retrieval latency, cache hit rate. Sprint metrics: trend over time imp. Metrics are emitted to a time-series database (Prometheus, CloudWatch) and displayed on dashboards. Alert thresholds are set per metric — for example, alert if p95 latency exceeds 10 seconds or success rate drops below 95%.</p>
+<p>Key agent performance metrics fall into categories. Task metrics: success rate (percentage of tasks completed without errors), completion rate (percentage that reached a final answer vs. max iterations),.
+average steps per task. Latency metrics: total response time (user-facing), p50/p95/p99 latency for end-to-end requests, time per step, time per tool call. Quality metrics: LLM-as-judge score,.
+user feedback score (rating or thumbs up/down), hallucination rate, policy violation rate. Cost metrics: cost per request, cost per task, cost breakdown by LLM model and.
+tool usage. Resource metrics: context window utilization percentage, memory retrieval latency, cache hit rate. Sprint metrics: trend over time imp. Metrics are emitted to a time-series database (Prometheus,.
+CloudWatch) and displayed on dashboards. Alert thresholds are set per metric — for example, alert if p95 latency exceeds 10 seconds or.
+success rate drops below 95%.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -678,7 +695,11 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q4: How do you implement distributed tracing for agent workflows?
   </summary>
   <div class="tp-qa-answer">
-    <p>Distributed tracing for agents tracks a single request as it flows through LLM calls, tool executions, memory retrievals, and state updates. Implementation: each incoming request gets a unique trace ID that is propagated through all downstream calls. Each operation is a span with: start time, end time, operation name, attributes (LLM model, tool name, memory collection name), and parent span ID (creating the causal chain). OpenTelemetry SDK provides auto-instrumentation for HTTP calls and manual instrumentation for custom operations. For agents, create spans for: <code>agent.run</code> (top-level), <code>llm.call</code> (per LLM invocation), <code>tool.execute</code> (per tool call), <code>memory.search</code>, <code>state.update</code>. Spans are collected by an OpenTelemetry collector and exported to Jaeger, Zipkin, or cloud backends. Traces enable answering questions like "which step is the slowest?" and "which tool fails most often?"</p>
+<p>Distributed tracing for agents tracks a single request as it flows through LLM calls, tool executions, memory retrievals, and state updates. Implementation: each incoming request gets a unique trace ID that is propagated through all downstream calls. Each operation is a span with: start time,.
+end time, operation name, attributes (LLM model, tool name, memory collection name), and parent span ID (creating the causal chain). OpenTelemetry SDK provides auto-instrumentation for.
+HTTP calls and manual instrumentation for custom operations. For agents, create spans for: <code>agent.run</code> (top-level), <code>llm.call</code> (per LLM invocation), <code>tool.execute</code> (per tool call),.
+<code>memory.search</code>, <code>state.update</code>. Spans are collected by an OpenTelemetry collector and exported to Jaeger, Zipkin, or cloud backends. Traces enable answering questions like "which step is the slowest?" and.
+"which tool fails most often?"</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -690,7 +711,12 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q5: How do you build a monitoring dashboard for agents?
   </summary>
   <div class="tp-qa-answer">
-    <p>A monitoring dashboard provides real-time visibility into agent health and performance. Key sections: (1) Overview — request volume (requests per minute), success rate %, average latency, active users, total cost today; (2) Latency breakdown — p50/p95/p99 latency chart, latency by step type (LLM call, tool execution, total), slowest requests table; (3) Error tracking — error rate over time, top error types (timeout, rate limit, invalid tool args, policy violation), error by component; (4) Tool usage — tool call volume, tool latency, tool error rate, most-used tools ranking; (5) Cost analysis — cost per request, cost by model, cost by tool, daily/weekly cost trends; (6) Quality — average user feedback score, LLM-as-judge score trend, policy violation rate. Each section has time-range controls and drill-down capability. The dashboard uses a time-series database (Prometheus, Grafana, Datadog, CloudWatch) and refreshes automatically in production. Alert rules are configured per metric threshold with notification channels.</p>
+<p>A monitoring dashboard provides real-time visibility into agent health and performance. Key sections: (1) Overview — request volume (requests per minute),.
+success rate %, average latency, active users, total cost today; (2) Latency breakdown — p50/p95/p99 latency chart, latency by step type (LLM call,.
+tool execution, total), slowest requests table; (3) Error tracking — error rate over time, top error types (timeout, rate limit, invalid tool args,.
+policy violation), error by component; (4) Tool usage — tool call volume, tool latency, tool error rate, most-used tools ranking; (5) Cost analysis — cost per request,.
+cost by model, cost by tool, daily/weekly cost trends; (6) Quality — average user feedback score, LLM-as-judge score trend, policy violation rate. Each section has time-range controls and.
+drill-down capability. The dashboard uses a time-series database (Prometheus, Grafana, Datadog, CloudWatch) and refreshes automatically in production. Alert rules are configured per metric threshold with notification channels.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -702,7 +728,12 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q6: How do you debug agent reasoning chains?
   </summary>
   <div class="tp-qa-answer">
-    <p>Debugging agent reasoning chains requires tools that visualize the step-by-step decision process. A debugger shows: (1) the full conversation log — every user message, agent thought, tool call, and tool result; (2) the state at each step — what data was available, what changed after the step; (3) the decision points — why the agent chose one tool over another, what conditional edge was taken and why; (4) timing — how long each step took; (5) cost — tokens consumed per step. Implementation: store the full execution trace in a structured format (JSON or database), then build a UI that renders it as an interactive timeline. Each step is clickable for details. The debugger supports: replay (re-execute from any step with modified inputs), branching (fork execution at a point to try different decisions), and comparison (side-by-side view of two runs with different prompts/models). LangGraph's built-in visualization (draw_mermaid_png) shows the graph topology, while execution traces show the actual path taken.</p>
+<p>Debugging agent reasoning chains requires tools that visualize the step-by-step decision process. A debugger shows: (1) the full conversation log — every user message,.
+agent thought, tool call, and tool result; (2) the state at each step — what data was available, what changed after the step;.
+(3) the decision points — why the agent chose one tool over another, what conditional edge was taken and why; (4) timing — how long each step took;.
+(5) cost — tokens consumed per step. Implementation: store the full execution trace in a structured format (JSON or database), then build a UI that renders it as an interactive timeline. Each step is clickable for.
+details. The debugger supports: replay (re-execute from any step with modified inputs), branching (fork execution at a point to try different decisions),.
+and comparison (side-by-side view of two runs with different prompts/models). LangGraph's built-in visualization (draw_mermaid_png) shows the graph topology, while execution traces show the actual path taken.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -714,7 +745,12 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q7: How do you implement alerting for agent failures?
   </summary>
   <div class="tp-qa-answer">
-    <p>Alerting for agent failures monitors key metrics and triggers notifications when thresholds are exceeded. Alert rules fall into categories: (1) Availability — agent service is down (HTTP 5xx rate > threshold), LLM API is unreachable; (2) Performance — p95 latency exceeds SLA, request queue depth growing; (3) Quality — success rate drops below threshold, error rate spikes, policy violation rate increases; (4) Cost — cost per request exceeds budget, token usage unusually high; (5) Safety — repeated policy violations, same user triggering many escalations. Implementation: metrics are evaluated against alert rules at regular intervals. When a rule fires, the alert system: (1) creates an alert record with severity (critical, warning, info); (2) sends notifications via configured channels (PagerDuty, Slack, email); (3) triggers automated response if configured (e.g., scale up, rollback version). Alert fatigue is managed with: grouping (related alerts combined), deduplication, escalation if not acknowledged within SLA, and auto-resolve when the metric recovers.</p>
+<p>Alerting for agent failures monitors key metrics and triggers notifications when thresholds are exceeded. Alert rules fall into categories: (1) Availability — agent service is down (HTTP 5xx rate > threshold),.
+LLM API is unreachable; (2) Performance — p95 latency exceeds SLA, request queue depth growing; (3) Quality — success rate drops below threshold,.
+error rate spikes, policy violation rate increases; (4) Cost — cost per request exceeds budget, token usage unusually high; (5) Safety — repeated policy violations,.
+same user triggering many escalations. Implementation: metrics are evaluated against alert rules at regular intervals. When a rule fires, the alert system: (1) creates an alert record with severity (critical,.
+warning, info); (2) sends notifications via configured channels (PagerDuty, Slack, email); (3) triggers automated response if configured (e.g., scale up, rollback version). Alert fatigue is managed with: grouping (related alerts combined),.
+deduplication, escalation if not acknowledged within SLA, and auto-resolve when the metric recovers.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -726,7 +762,12 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q8: How do you store and query agent execution logs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Agent execution logs are stored in a structured format (JSON) in a log aggregation system (Elasticsearch, Loki, CloudWatch Logs). Each log entry includes: timestamp, trace ID, session ID, user ID, event type (llm_call, tool_call, state_change, error), event data (model, tool name, duration, tokens), and metadata (version, environment). Logs are indexed by trace ID for correlating related events and by timestamp for time-range queries. A log query interface supports: full-text search across all log fields, filtering by event type, user, or session, aggregation (count of errors by type over time), and drill-down from dashboard to specific logs. Retention policies keep detailed logs for 30 days and aggregated summaries for longer. Structured logging (using JSON format) is critical for machine parsing — unstructured text logs make automated analysis impossible. Log volume can be high for agent systems, so sampling (log 1 in N requests for high-volume endpoints) may be needed for cost management.</p>
+<p>Agent execution logs are stored in a structured format (JSON) in a log aggregation system (Elasticsearch, Loki, CloudWatch Logs). Each log entry includes: timestamp,.
+trace ID, session ID, user ID, event type (llm_call, tool_call, state_change, error), event data (model, tool name, duration, tokens), and metadata (version,.
+environment). Logs are indexed by trace ID for correlating related events and by timestamp for time-range queries. A log query interface supports: full-text search across all log fields,.
+filtering by event type, user, or session, aggregation (count of errors by type over time), and drill-down from dashboard to specific logs. Retention policies keep detailed logs for.
+30 days and aggregated summaries for longer. Structured logging (using JSON format) is critical for machine parsing — unstructured text logs make automated analysis impossible. Log volume can be high for.
+agent systems, so sampling (log 1 in N requests for high-volume endpoints) may be needed for cost management.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -738,7 +779,11 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q9: What is cost tracking for AI agents and how do you implement it?
   </summary>
   <div class="tp-qa-answer">
-    <p>Cost tracking measures and attributes the cost of each agent interaction. Key cost components: LLM API costs (input tokens + output tokens * model-specific rates), tool execution costs (API calls to external services, database queries), infrastructure costs (compute, memory, storage for the agent service). Implementation: an agent cost tracker intercepts each LLM call, calculates prompt and completion tokens, and computes cost using a tiered rate table (different rates for GPT-4, GPT-3.5, Claude, etc.). Costs are logged per request with breakdown by component. Daily/weekly/monthly aggregation shows cost trends. Cost attribution by user, session, task type, or model enables chargebacks and optimization. Alerting on cost anomalies (sudden spikes) prevents budget overruns. Cost data is displayed on the monitoring dashboard alongside performance data. For production systems, cost-aware routing can automatically use cheaper models for simple tasks.</p>
+<p>Cost tracking measures and attributes the cost of each agent interaction. Key cost components: LLM API costs (input tokens + output tokens * model-specific rates),.
+tool execution costs (API calls to external services, database queries), infrastructure costs (compute, memory, storage for the agent service). Implementation: an agent cost tracker intercepts each LLM call,.
+calculates prompt and completion tokens, and computes cost using a tiered rate table (different rates for GPT-4, GPT-3.5, Claude, etc.). Costs are logged per request with breakdown by component. Daily/weekly/monthly aggregation shows cost trends. Cost attribution by user,.
+session, task type, or model enables chargebacks and optimization. Alerting on cost anomalies (sudden spikes) prevents budget overruns. Cost data is displayed on the monitoring dashboard alongside performance data. For.
+production systems, cost-aware routing can automatically use cheaper models for simple tasks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -750,7 +795,13 @@ Agent observability is essential for debugging, monitoring, and improving agent 
     Q10: How do you implement a debug viewer for agent traces?
   </summary>
   <div class="tp-qa-answer">
-    <p>A debug viewer for agent traces is a UI that visualizes the execution trace interactively. Key features: (1) Timeline view — a horizontal timeline showing the sequence of steps (LLM call → tool call → tool result → LLM call), with each step's duration as a bar; (2) Step detail panel — clicking a step shows full details: the exact prompt sent, the response received, tool arguments and results, state changes; (3) State inspector — shows the full state at each step (messages, variables, tool outputs), with diff highlighting showing what changed from the previous step; (4) Search — search across all traces by user query, tool name, error type, or date range; (5) Replay — rerun the trace from any step with modified inputs or prompts to debug; (6) Export — export the trace as JSON for sharing or regression testing. The debug viewer connects to the log storage backend and transforms execution logs into an interactive visualization. This tool is essential for development debugging and production incident investigation.</p>
+<p>A debug viewer for agent traces is a UI that visualizes the execution trace interactively. Key features: (1) Timeline view — a horizontal timeline showing the sequence of steps (LLM call → tool call → tool result → LLM call),.
+with each step's duration as a bar; (2) Step detail panel — clicking a step shows full details: the exact prompt sent,.
+the response received, tool arguments and results, state changes; (3) State inspector — shows the full state at each step (messages,.
+variables, tool outputs), with diff highlighting showing what changed from the previous step; (4) Search — search across all traces by user query,.
+tool name, error type, or date range; (5) Replay — rerun the trace from any step with modified inputs or prompts to debug;.
+(6) Export — export the trace as JSON for sharing or regression testing. The debug viewer connects to the log storage backend and.
+transforms execution logs into an interactive visualization. This tool is essential for development debugging and production incident investigation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

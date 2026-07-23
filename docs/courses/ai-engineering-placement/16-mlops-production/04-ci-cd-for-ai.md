@@ -802,7 +802,9 @@ class AIPipelineRunner {
     Q3: How does canary deployment work for ML models?
   </summary>
   <div class="tp-qa-answer">
-    <p>Canary deployment routes a small percentage of traffic (e.g., 1%) to the new model while the rest uses the current production model. The system monitors error rates, latency, and model-specific metrics. If metrics stay healthy, traffic is gradually increased (e.g., doubled every N minutes). If issues arise, traffic is instantly routed back to the old model.</p>
+<p>Canary deployment routes a small percentage of traffic (e.g., 1%) to the new model while the rest uses the current production model. The system monitors error.
+rates, latency, and model-specific metrics. If metrics stay healthy, traffic is gradually increased (e.g., doubled every N minutes). If issues arise,.
+traffic is instantly routed back to the old model.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -814,7 +816,8 @@ class AIPipelineRunner {
     Q4: What is blue-green deployment for ML?
   </summary>
   <div class="tp-qa-answer">
-    <p>Blue-green deployment maintains two identical environments (Blue = current production, Green = new version). Traffic is switched from Blue to Green atomically via a load balancer. If issues appear, traffic switches back to Blue. For ML, this requires both environments to serve predictions from the same data source and have matching infrastructure.</p>
+<p>Blue-green deployment maintains two identical environments (Blue = current production, Green = new version). Traffic is switched from Blue to Green atomically via a load balancer. If issues appear,.
+traffic switches back to Blue. For ML, this requires both environments to serve predictions from the same data source and have matching infrastructure.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -850,7 +853,9 @@ class AIPipelineRunner {
     Q7: What is the difference between shadow and canary deployment?
   </summary>
   <div class="tp-qa-answer">
-    <p>Shadow deployment runs the new model alongside production but returns the production model's output to users. The shadow model's predictions are logged for comparison without affecting user experience. Canary deployment actually serves the new model's predictions to a subset of users. Shadow is safer but gives no real user feedback; canary provides real feedback with controlled risk.</p>
+<p>Shadow deployment runs the new model alongside production but returns the production model's output to users. The shadow model's predictions are logged for.
+comparison without affecting user experience. Canary deployment actually serves the new model's predictions to a subset of users. Shadow is safer but.
+gives no real user feedback; canary provides real feedback with controlled risk.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -862,7 +867,8 @@ class AIPipelineRunner {
     Q8: How do you handle model rollback in production?
   </summary>
   <div class="tp-qa-answer">
-    <p>Model rollback requires: (1) Versioned model artifacts stored in the registry, (2) Traffic router that can switch between versions instantly, (3) Monitoring alerts that trigger automatic rollback when metrics degrade, (4) Rollback log recording the event. The registry archives the current Production version and promotes the previous version back to Production.</p>
+<p>Model rollback requires: (1) Versioned model artifacts stored in the registry, (2) Traffic router that can switch between versions instantly, (3) Monitoring alerts that trigger automatic rollback when metrics degrade,.
+(4) Rollback log recording the event. The registry archives the current Production version and promotes the previous version back to Production.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -886,7 +892,9 @@ class AIPipelineRunner {
     Q10: What should a post-deployment validation check include?
   </summary>
   <div class="tp-qa-answer">
-    <p>Post-deployment validation should check: (1) Model endpoint responds correctly with healthy latency, (2) Prediction distribution matches expected patterns (no empty/null outputs), (3) Error rate within baseline, (4) Data drift metrics compared to training data, (5) Business metrics (e.g., conversion rate if applicable). Run this for a few minutes before fully promoting.</p>
+<p>Post-deployment validation should check: (1) Model endpoint responds correctly with healthy latency, (2) Prediction distribution matches expected patterns (no empty/null outputs),.
+(3) Error rate within baseline, (4) Data drift metrics compared to training data, (5) Business metrics (e.g., conversion rate if applicable). Run this for.
+a few minutes before fully promoting.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

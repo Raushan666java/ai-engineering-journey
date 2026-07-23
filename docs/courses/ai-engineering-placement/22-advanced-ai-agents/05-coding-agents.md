@@ -915,7 +915,8 @@ class ArtifactGenerator {
 
 ## Summary
 
-Coding agents represent the highest-value category of AI agents. The Proposer-Reviewer pattern ensures quality through automated code review. Code as a meta-tool enables self-healing systems that generate their own fixes. The artifact pattern (LLM generates code → client executes) saves tokens and improves security. Self-healing systems using adaptive log parsing and auto-diagnosis reduce operational burden.
+Coding agents represent the highest-value category of AI agents. The Proposer-Reviewer pattern ensures quality through automated code review. Code as a meta-tool enables self-healing systems that generate their own fixes. The artifact pattern (LLM generates code → client executes) saves tokens and.
+improves security. Self-healing systems using adaptive log parsing and auto-diagnosis reduce operational burden.
 
 ## Practical Takeaways
 

@@ -846,7 +846,9 @@ class JsonStore {
 
 <details class="tp-qa-card" data-qid="sql-s10-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: JSONB vs JSON data types?</summary>
-  <div class="tp-qa-answer"><p>JSON stores text as-is (preserving whitespace, key order, duplicates). JSONB stores a decomposed binary format (no duplicates, sorted keys). JSONB supports indexing (GIN), the @> containment operator, and is faster for querying. JSON preserves original formatting and is slightly faster for input. Use JSONB for querying, JSON for archival.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>JSON stores text as-is (preserving whitespace, key order, duplicates). JSONB stores a decomposed binary format (no duplicates, sorted keys). JSONB supports indexing (GIN),.
+the @> containment operator, and is faster for querying. JSON preserves original formatting and is slightly faster for input. Use JSONB for.
+querying, JSON for archival.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s10-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: How does full-text search ranking work?</summary>
@@ -866,7 +868,8 @@ class JsonStore {
 </details>
 <details class="tp-qa-card" data-qid="sql-s10-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: What is a lateral join?</summary>
-  <div class="tp-qa-answer"><p>LATERAL allows a subquery in FROM to reference columns from preceding FROM items. Each row from the left table "feeds" into the lateral subquery. Used for: top-N per group, nearest neighbor search, and unnesting complex JSONB or array data. Without LATERAL, subqueries cannot reference outer FROM items.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>LATERAL allows a subquery in FROM to reference columns from preceding FROM items. Each row from the left table "feeds" into the lateral subquery. Used for: top-N per group,.
+nearest neighbor search, and unnesting complex JSONB or array data. Without LATERAL, subqueries cannot reference outer FROM items.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 <details class="tp-qa-card" data-qid="sql-s10-q7">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q7: pg_trgm use cases?</summary>
@@ -882,7 +885,8 @@ class JsonStore {
 </details>
 <details class="tp-qa-card" data-qid="sql-s10-q10">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: When to use PL/pgSQL vs application code?</summary>
-  <div class="tp-qa-answer"><p>Use PL/pgSQL when the logic is tightly coupled to data: complex validation triggers, audit trails, permission checks that must be enforced regardless of application. Use application code for business logic, complex transformations, and operations needing external services. PL/pgSQL reduces network round-trips but is harder to test and version.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
+<div class="tp-qa-answer"><p>Use PL/pgSQL when the logic is tightly coupled to data: complex validation triggers, audit trails, permission checks that must be enforced regardless of application. Use application code for.
+business logic, complex transformations, and operations needing external services. PL/pgSQL reduces network round-trips but is harder to test and version.</p></div><button class="tp-qa-mark-btn">✓ Mark Reviewed</button><button class="tp-qa-bookmark-btn">★ Bookmark</button>
 </details>
 
 ## Chapter Quiz

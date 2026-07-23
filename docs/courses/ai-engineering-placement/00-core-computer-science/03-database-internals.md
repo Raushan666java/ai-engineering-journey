@@ -3,7 +3,9 @@
 
 ## Learning Objectives
 
-After this chapter you will be able to choose between B-tree and LSM-tree storage engines for different AI workloads, design indexes that accelerate feature lookups, explain how MVCC enables snapshot isolation for ML training data, reason about replication strategies for high-availability model metadata stores, and understand the distributed consensus algorithms powering modern data infrastructure.
+After this chapter you will be able to choose between B-tree and LSM-tree storage engines for different AI workloads, design indexes that accelerate feature lookups,.
+explain how MVCC enables snapshot isolation for ML training data, reason about replication strategies for high-availability model metadata stores, and understand.
+the distributed consensus algorithms powering modern data infrastructure.
 
 ## Introduction
 
@@ -58,7 +60,8 @@ Primary indexes determine physical row order (clustered) or point to row locatio
 
 ### Query Planning
 
-The planner estimates costs for each strategy. Sequential scans read all pages — optimal above 10% row access. Index scans traverse the B-tree to find a start position, then walk leaf pages. Index-only scans are fastest when the index covers all needed columns. Bitmap scans combine multiple indexes with bitwise operations.
+The planner estimates costs for each strategy. Sequential scans read all pages — optimal above 10% row access. Index scans traverse the B-tree to find a start position,.
+then walk leaf pages. Index-only scans are fastest when the index covers all needed columns. Bitmap scans combine multiple indexes with bitwise operations.
 
 Join strategies include nested loop (for small outer tables), hash join (for equi-joins on unsorted data), and merge join (for pre-sorted inputs). The planner selects based on row estimates and available indexes.
 
@@ -423,7 +426,9 @@ PostgreSQL default is Read Committed. Oracle and SQL Server default to Read Comm
 
 ### Serialization Anomaly Example
 
-Write-skew: two transactions read overlapping data, write different values, and neither observes a conflict. T1 reads A and B, writes A=0. T2 reads A and B, writes B=0. If constraint is A+B>0, each transaction individually sees the constraint satisfied, but after both commit A+B=0 violates it. Serializable isolation prevents this via predicate locking or SSI (serializable snapshot isolation).
+Write-skew: two transactions read overlapping data, write different values, and neither observes a conflict. T1 reads A and B, writes A=0. T2 reads A and.
+B, writes B=0. If constraint is A+B>0, each transaction individually sees the constraint satisfied, but after both commit A+B=0 violates it. Serializable isolation prevents this via predicate locking or.
+SSI (serializable snapshot isolation).
 
 ### Replication Topologies
 

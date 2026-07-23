@@ -747,7 +747,8 @@ class DriftMonitor {
     Q1: What is the difference between data drift and concept drift?
   </summary>
   <div class="tp-qa-answer">
-    <p>Data drift (covariate shift) is when the distribution of input features P(X) changes — e.g., customers become younger over time. Concept drift is when the relationship between inputs and targets P(Y|X) changes — e.g., the same features now predict different outcomes. Data drift often leads to concept drift, but they can occur independently.</p>
+<p>Data drift (covariate shift) is when the distribution of input features P(X) changes — e.g., customers become younger over time. Concept drift is when the relationship between inputs and.
+targets P(Y|X) changes — e.g., the same features now predict different outcomes. Data drift often leads to concept drift, but they can occur independently.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -783,7 +784,8 @@ class DriftMonitor {
     Q4: How do you prevent alert fatigue from drift monitoring?
   </summary>
   <div class="tp-qa-answer">
-    <p>Strategies: (1) Require consecutive threshold violations before alerting (e.g., 3 consecutive windows), (2) Use severity levels — INFO for minor drift, WARNING for moderate, CRITICAL for severe, (3) Implement cooldown periods to avoid repeated alerts for the same drift event, (4) Aggregate alerts across features into a single notification with drift score.</p>
+<p>Strategies: (1) Require consecutive threshold violations before alerting (e.g., 3 consecutive windows), (2) Use severity levels — INFO for minor drift,.
+WARNING for moderate, CRITICAL for severe, (3) Implement cooldown periods to avoid repeated alerts for the same drift event, (4) Aggregate alerts across features into a single notification with drift score.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -795,7 +797,9 @@ class DriftMonitor {
     Q5: When should you trigger automated retraining based on drift?
   </summary>
   <div class="tp-qa-answer">
-    <p>Trigger retraining when: (1) Drift score exceeds threshold (e.g., > 30% features drifted), (2) Prediction drift KS p-value < 0.05 for N consecutive windows, (3) PSI > 0.25 on key features, (4) Concept drift detected through performance degradation > 5%. Always enforce a minimum retraining interval (e.g., 6-24 hours) to prevent oscillation.</p>
+<p>Trigger retraining when: (1) Drift score exceeds threshold (e.g., > 30% features drifted), (2) Prediction drift KS p-value < 0.05 for.
+N consecutive windows, (3) PSI > 0.25 on key features, (4) Concept drift detected through performance degradation > 5%. Always enforce a minimum retraining interval (e.g.,.
+6-24 hours) to prevent oscillation.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -807,7 +811,9 @@ class DriftMonitor {
     Q6: What is prediction drift and why does it matter?
   </summary>
   <div class="tp-qa-answer">
-    <p>Prediction drift is a change in the distribution of model outputs P(Y_hat). It can result from data drift (different inputs produce different outputs) or concept drift (same inputs map to different targets). Monitoring prediction drift provides a holistic view of model behavior change and is often the easiest drift signal to detect and act upon.</p>
+<p>Prediction drift is a change in the distribution of model outputs P(Y_hat). It can result from data drift (different inputs produce different outputs) or.
+concept drift (same inputs map to different targets). Monitoring prediction drift provides a holistic view of model behavior change and is often the easiest drift signal to detect and.
+act upon.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -819,7 +825,8 @@ class DriftMonitor {
     Q7: How do you choose drift detection thresholds?
   </summary>
   <div class="tp-qa-answer">
-    <p>Calibrate thresholds using historical data: compute drift metrics on time windows where you know the model was performing well vs poorly. Set the threshold at the 95th percentile of the "performing well" distribution. For PSI, industry standards exist (< 0.1 stable, > 0.25 drift). For KS test, the standard p-value threshold is 0.05, but you may adjust based on sensitivity needs.</p>
+<p>Calibrate thresholds using historical data: compute drift metrics on time windows where you know the model was performing well vs poorly. Set the threshold at the 95th percentile of the "performing well" distribution. For.
+PSI, industry standards exist (< 0.1 stable, > 0.25 drift). For KS test, the standard p-value threshold is 0.05, but you may adjust based on sensitivity needs.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -831,7 +838,8 @@ class DriftMonitor {
     Q8: What is a drift dashboard and what should it show?
   </summary>
   <div class="tp-qa-answer">
-    <p>A drift dashboard visualizes drift trends over time. It should show: (1) Overall drift score (proportion of drifted features), (2) Per-feature drift metrics (KS stat, PSI) over time, (3) Distribution comparisons (histograms, CDFs) for top drifted features, (4) Alert history and retraining events, (5) Prediction distribution vs reference. This enables quick diagnosis of drift issues.</p>
+<p>A drift dashboard visualizes drift trends over time. It should show: (1) Overall drift score (proportion of drifted features), (2) Per-feature drift metrics (KS stat,.
+PSI) over time, (3) Distribution comparisons (histograms, CDFs) for top drifted features, (4) Alert history and retraining events, (5) Prediction distribution vs reference. This enables quick diagnosis of drift issues.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -855,7 +863,8 @@ class DriftMonitor {
     Q10: What is the difference between drift detection at prediction time vs training time?
   </summary>
   <div class="tp-qa-answer">
-    <p>Training-time drift detection compares new training data against historical training data before model training — it answers "has the world changed since we last trained?" Prediction-time drift compares production inference data against the training reference — it answers "is the model seeing data it understands?" Both are important, but prediction-time drift is more urgent for production systems.</p>
+<p>Training-time drift detection compares new training data against historical training data before model training — it answers "has the world changed since we last trained?" Prediction-time drift compares production inference data against the training reference — it answers "is the model seeing data it understands?" Both are important,.
+but prediction-time drift is more urgent for production systems.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

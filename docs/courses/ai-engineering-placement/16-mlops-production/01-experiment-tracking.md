@@ -654,7 +654,8 @@ async function logRun(run: ExperimentRun): Promise<void> {
     Q5: How do you integrate experiment tracking into a CI/CD pipeline?
   </summary>
   <div class="tp-qa-command">
-    <p>Set CI metadata as tags (commit SHA, branch, workflow name), log all parameters and metrics, and optionally promote models to the registry if performance thresholds are met. Use the tracking URI from secrets to point to a shared MLflow server. This ensures every training run in CI is captured with full lineage.</p>
+<p>Set CI metadata as tags (commit SHA, branch, workflow name), log all parameters and metrics, and optionally promote models to the registry if performance thresholds are met. Use the tracking URI from secrets to point to a shared MLflow server..
+This ensures every training run in CI is captured with full lineage.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

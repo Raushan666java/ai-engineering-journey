@@ -741,7 +741,10 @@ class AutonomousDrivingSegmenter:
 
 ## Summary
 
-Image segmentation assigns labels to every pixel, with three levels of granularity: semantic (class per pixel), instance (distinct object masks), and panoptic (both). U-Net remains the go-to architecture for medical segmentation due to its efficient encoder-decoder design with skip connections. Mask R-CNN extends detection with a parallel mask head for instance segmentation. Panoptic FPN unifies both tasks. Evaluation relies on mean IoU and Dice coefficient, with boundary-aware metrics for finer assessment. Deploying segmentation models requires careful handling of memory-intensive mask outputs and application-specific post-processing.
+Image segmentation assigns labels to every pixel, with three levels of granularity: semantic (class per pixel), instance (distinct object masks), and.
+panoptic (both). U-Net remains the go-to architecture for medical segmentation due to its efficient encoder-decoder design with skip connections. Mask R-CNN extends detection with a parallel mask head for.
+instance segmentation. Panoptic FPN unifies both tasks. Evaluation relies on mean IoU and Dice coefficient, with boundary-aware metrics for finer assessment. Deploying segmentation models requires careful handling of memory-intensive mask outputs and.
+application-specific post-processing.
 
 ## Practical Takeaways
 
@@ -762,7 +765,10 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q1: What is the difference between semantic segmentation, instance segmentation, and panoptic segmentation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Semantic segmentation assigns a class label to every pixel — all pixels belonging to "car" get the same label regardless of which car. Instance segmentation identifies individual object instances — each car gets a unique ID with its own mask. Panoptic segmentation unifies both: it assigns a class label to "stuff" (amorphous regions like sky, road) and a class+instance ID to "things" (countable objects like cars, people). Panoptic Quality (PQ) is the unified metric: PQ = Σ(tp) / (Σ(tp) + 0.5*Σ(fp) + 0.5*Σ(fn)), computed per class and averaged. Panoptic FPN is a popular architecture that adds a panoptic head to the standard Mask R-CNN/Faster R-CNN framework.</p>
+<p>Semantic segmentation assigns a class label to every pixel — all pixels belonging to "car" get the same label regardless of which car. Instance segmentation identifies individual object instances — each car gets a unique ID with its own mask..
+Panoptic segmentation unifies both: it assigns a class label to "stuff" (amorphous regions like sky,.
+road) and a class+instance ID to "things" (countable objects like cars, people). Panoptic Quality (PQ) is the unified metric: PQ = Σ(tp) / (Σ(tp) + 0.5*Σ(fp) + 0.5*Σ(fn)),.
+computed per class and averaged. Panoptic FPN is a popular architecture that adds a panoptic head to the standard Mask R-CNN/Faster R-CNN framework.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -774,7 +780,10 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q2: How does U-Net architecture work and why are skip connections critical?
   </summary>
   <div class="tp-qa-answer">
-    <p>U-Net has a symmetric encoder-decoder structure. The encoder (contracting path) uses repeated convolutional + max-pooling layers to downsample and capture context. The decoder (expanding path) upsamples feature maps back to the original resolution. Skip connections concatenate feature maps from each encoder level to the corresponding decoder level. This is critical because downsampling loses spatial detail needed for precise localization. Without skip connections, the decoder only has coarse, semantic information from the bottleneck, producing blurry segmentations. Skip connections give the decoder access to high-resolution spatial details (edges, texture) directly, enabling pixel-accurate masks. U-Net was designed for biomedical images with limited data, and its efficient use of parameters makes it highly effective.</p>
+<p>U-Net has a symmetric encoder-decoder structure. The encoder (contracting path) uses repeated convolutional + max-pooling layers to downsample and capture context. The decoder (expanding path) upsamples feature maps back to the original resolution. Skip connections concatenate feature maps from each.
+encoder level to the corresponding decoder level. This is critical because downsampling loses spatial detail needed for.
+precise localization. Without skip connections, the decoder only has coarse, semantic information from the bottleneck, producing blurry segmentations. Skip connections give the decoder access to high-resolution spatial details (edges,.
+texture) directly, enabling pixel-accurate masks. U-Net was designed for biomedical images with limited data, and its efficient use of parameters makes it highly effective.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -786,7 +795,10 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q3: What is the Dice loss and when would you use it over cross-entropy for segmentation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Dice loss is based on the Dice coefficient (F1 score at the pixel level): Dice = 2*|A∩B| / (|A| + |B|). The loss is 1 - Dice. It directly optimizes the overlap between predicted and ground truth masks. Use Dice loss when: (1) Classes are highly imbalanced — cross-entropy can get stuck predicting only the background class. Dice loss naturally handles imbalance because it measures relative overlap regardless of absolute size. (2) You care about the region overlap metric (mIoU or Dice) as the final evaluation metric. (3) Small objects are critical — cross-entropy is dominated by large regions. In practice, many state-of-the-art models use a combined loss: 0.5*cross-entropy + 0.5*Dice loss, getting the benefits of both — cross-entropy for easy optimization and Dice for overlap focus.</p>
+<p>Dice loss is based on the Dice coefficient (F1 score at the pixel level): Dice = 2*|A∩B| / (|A| + |B|). The loss is 1 - Dice. It directly optimizes the overlap between predicted and.
+ground truth masks. Use Dice loss when: (1) Classes are highly imbalanced — cross-entropy can get stuck predicting only the background class. Dice loss naturally handles imbalance because it measures relative overlap regardless of absolute size. (2) You care about the region overlap metric (mIoU or.
+Dice) as the final evaluation metric. (3) Small objects are critical — cross-entropy is dominated by large regions. In practice, many state-of-the-art models use a combined loss: 0.5*cross-entropy + 0.5*Dice loss,.
+getting the benefits of both — cross-entropy for easy optimization and Dice for overlap focus.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -798,7 +810,11 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q4: How does Mask R-CNN extend Faster R-CNN for instance segmentation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Mask R-CNN adds a parallel mask prediction branch to Faster R-CNN. In addition to the classification head (class prediction) and box regression head (bounding box refinement), Mask R-CNN introduces a mask head that predicts a binary mask for each Region of Interest (RoI). The mask head is a small FCN applied to each RoI, outputting a 28—28 binary mask. A key improvement is RoI Align, which replaces RoI Pool's quantization with bilinear interpolation, preserving sub-pixel spatial accuracy essential for masks. The overall loss becomes: L = L_cls + L_box + L_mask, where L_mask is the average binary cross-entropy loss per-pixel. The mask branch is only used during training; at inference, masks are generated for the top-K detections after NMS.</p>
+<p>Mask R-CNN adds a parallel mask prediction branch to Faster R-CNN. In addition to the classification head (class prediction) and box regression head (bounding box refinement),.
+Mask R-CNN introduces a mask head that predicts a binary mask for each Region of Interest (RoI). The mask head is a small FCN applied to each RoI,.
+outputting a 28—28 binary mask. A key improvement is RoI Align, which replaces RoI Pool's quantization with bilinear interpolation, preserving sub-pixel spatial accuracy essential for.
+masks. The overall loss becomes: L = L_cls + L_box + L_mask, where L_mask is the average binary cross-entropy loss per-pixel. The mask branch is only used during training;.
+at inference, masks are generated for the top-K detections after NMS.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -810,7 +826,11 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q5: What is mean IoU and how is it computed for segmentation evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Mean Intersection over Union (mIoU) measures the overlap between predicted and ground truth segmentation masks. For each class, IoU = TP / (TP + FP + FN), where TP are pixels correctly predicted as that class, FP are pixels incorrectly predicted as that class, and FN are pixels of that class missed. The "mean" averages IoU across all classes. Unlike pixel accuracy (which is dominated by majority classes), mIoU treats each class equally, making it sensitive to rare class performance. For example, if the background is 95% of pixels and the model predicts all as background, pixel accuracy is 95% but mIoU is 50% or lower. mIoU is the standard metric for segmentation benchmarks like Cityscapes (19 classes) and ADE20K (150 classes).</p>
+<p>Mean Intersection over Union (mIoU) measures the overlap between predicted and ground truth segmentation masks. For each class, IoU = TP / (TP + FP + FN),.
+where TP are pixels correctly predicted as that class, FP are pixels incorrectly predicted as that class, and FN are pixels of that class missed. The "mean" averages IoU across all classes. Unlike pixel accuracy (which is dominated by majority classes),.
+mIoU treats each class equally, making it sensitive to rare class performance. For example, if the background is 95% of pixels and.
+the model predicts all as background, pixel accuracy is 95% but mIoU is 50% or lower. mIoU is the standard metric for.
+segmentation benchmarks like Cityscapes (19 classes) and ADE20K (150 classes).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -822,7 +842,9 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q6: How do you handle class imbalance in segmentation datasets?
   </summary>
   <div class="tp-qa-answer">
-    <p>Class imbalance in segmentation is severe — background classes often dominate 90%+ of pixels. Strategies: (1) Weighted cross-entropy — assign weights inversely proportional to class frequency. Rare classes get higher weight. (2) Dice loss — naturally handles imbalance as it measures overlap ratio, not absolute pixel count. (3) Focal loss — down-weights well-classified pixels, forcing the model to focus on boundary regions and rare classes. (4) Patch-based sampling — crop training patches that contain rare classes with higher probability. (5) Class-balanced sampling — ensure each batch contains a minimum number of pixels for each rare class. (6) Data augmentation — oversample images containing rare classes, copy-paste rare objects onto other images. A combined Dice + cross-entropy loss with class weights is the most common production approach.</p>
+<p>Class imbalance in segmentation is severe — background classes often dominate 90%+ of pixels. Strategies: (1) Weighted cross-entropy — assign weights inversely proportional to class frequency. Rare classes get higher weight. (2) Dice loss — naturally handles imbalance as it measures overlap ratio,.
+not absolute pixel count. (3) Focal loss — down-weights well-classified pixels, forcing the model to focus on boundary regions and rare classes. (4) Patch-based sampling — crop training patches that contain rare classes with higher probability. (5) Class-balanced sampling — ensure each batch contains a minimum number of pixels for.
+each rare class. (6) Data augmentation — oversample images containing rare classes, copy-paste rare objects onto other images. A combined Dice + cross-entropy loss with class weights is the most common production approach.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -834,7 +856,10 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q7: What data augmentations are most effective for medical image segmentation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Medical segmentation benefits from: (1) Elastic deformations — simulate tissue deformation, crucial for organs that shift. (2) Random rotation and flipping — must be limited (90° increments) for medical images with anatomical orientation. (3) Intensity augmentations — random brightness, contrast, gamma, and Gaussian noise, because medical images vary by scanner settings. (4) Cutout — randomly mask square regions to improve robustness to artifacts. (5) Mixup — blend two images and their masks to create realistic-looking training examples. (6) Histogram equalization — simulate different staining/contrast levels. All augmentations must be applied identically to the image and mask. The nnU-Net framework automatically selects optimal augmentations based on dataset properties and has become the de facto standard.</p>
+<p>Medical segmentation benefits from: (1) Elastic deformations — simulate tissue deformation, crucial for organs that shift. (2) Random rotation and flipping — must be limited (90° increments) for.
+medical images with anatomical orientation. (3) Intensity augmentations — random brightness, contrast, gamma, and Gaussian noise, because medical images vary by scanner settings. (4) Cutout — randomly mask square regions to improve robustness to artifacts. (5) Mixup — blend two images and.
+their masks to create realistic-looking training examples. (6) Histogram equalization — simulate different staining/contrast levels. All augmentations must be applied identically to the image and.
+mask. The nnU-Net framework automatically selects optimal augmentations based on dataset properties and has become the de facto standard.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -846,7 +871,10 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q8: How does RoI Align work and why is it better than RoI Pooling for mask prediction?
   </summary>
   <div class="tp-qa-answer">
-    <p>RoI Pooling quantizes the RoI boundaries to integer coordinates and divides the RoI into fixed-size bins using max pooling within each bin. This quantization causes misalignment of up to 1 pixel, which is tolerable for classification but fatal for pixel-accurate mask prediction. RoI Align avoids quantization by: (1) Keeping RoI coordinates as floating-point values. (2) Dividing the RoI into bins of equal size (e.g., 7—7 or 14—14). (3) For each bin, sampling 4 regular points and computing their feature values via bilinear interpolation. (4) Using max or average of these 4 sampled values as the bin output. This preserves sub-pixel spatial accuracy, which is crucial since mask prediction requires precise pixel-level localization. RoI Align improved mask AP by 2-5 points over RoI Pooling in Mask R-CNN.</p>
+<p>RoI Pooling quantizes the RoI boundaries to integer coordinates and divides the RoI into fixed-size bins using max pooling within each bin. This quantization causes misalignment of up to 1 pixel,.
+which is tolerable for classification but fatal for pixel-accurate mask prediction. RoI Align avoids quantization by: (1) Keeping RoI coordinates as floating-point values. (2) Dividing the RoI into bins of equal size (e.g.,.
+7—7 or 14—14). (3) For each bin, sampling 4 regular points and computing their feature values via bilinear interpolation. (4) Using max or.
+average of these 4 sampled values as the bin output. This preserves sub-pixel spatial accuracy, which is crucial since mask prediction requires precise pixel-level localization. RoI Align improved mask AP by 2-5 points over RoI Pooling in Mask R-CNN.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -858,7 +886,10 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q9: How do you deploy segmentation models on large images (e.g., satellite or pathology)?
   </summary>
   <div class="tp-qa-answer">
-    <p>Large images (e.g., 10,000—10,000 pixels) exceed GPU memory. The approach is tiling: (1) Divide the large image into overlapping tiles (e.g., 512—512 with 64-pixel overlap). (2) Run segmentation on each tile independently. (3) Reconstruct the full-resolution mask by combining tile predictions, using overlap averaging to smooth boundary artifacts. (4) For tiles near the edge, mirror padding to maintain context. Optimizations: (1) Process tiles in batches for throughput. (2) Use a sliding window with stride to reduce redundant computations. (3) Cache intermediate features if multiple tiles share context. (4) For pathology, use multi-resolution tiling — downsample for context, upsample for detail. Tools like OpenSlide handle gigapixel pathology images efficiently.</p>
+<p>Large images (e.g., 10,000—10,000 pixels) exceed GPU memory. The approach is tiling: (1) Divide the large image into overlapping tiles (e.g.,.
+512—512 with 64-pixel overlap). (2) Run segmentation on each tile independently. (3) Reconstruct the full-resolution mask by combining tile predictions, using overlap averaging to smooth boundary artifacts. (4) For.
+tiles near the edge, mirror padding to maintain context. Optimizations: (1) Process tiles in batches for throughput. (2) Use a sliding window with stride to reduce redundant computations. (3) Cache intermediate features if multiple tiles share context. (4) For.
+pathology, use multi-resolution tiling — downsample for context, upsample for detail. Tools like OpenSlide handle gigapixel pathology images efficiently.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -883,7 +914,9 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
   const output = Conv2d(baseChannels, outChannels, 1);          // 64→numClasses
   return { enc1, enc2, enc3, bottleneck, dec3, dec2, dec1, output };
 }</pre></code>
-    <p>A U-Net implementation follows the encoder-bottleneck-decoder pattern. The encoder halves spatial dimensions and doubles channels at each level using 3—3 convolutions followed by max-pooling. The decoder up-samples (using transposed convolutions or bilinear upsampling + conv), concatenates the corresponding encoder feature map via skip connection, then applies 3—3 convolutions. The final layer is a 1—1 convolution to map to the desired number of output channels (classes). Verify shapes: input (1—3—256—256) → bottleneck (1—512—32—32) → output (1—num_classes—256—256). Count parameters by summing all conv layers: each 3—3 conv contributes 9—C_in—C_out + C_out parameters.</p>
+<p>A U-Net implementation follows the encoder-bottleneck-decoder pattern. The encoder halves spatial dimensions and doubles channels at each level using 3—3 convolutions followed by max-pooling. The decoder up-samples (using transposed convolutions or.
+bilinear upsampling + conv), concatenates the corresponding encoder feature map via skip connection, then applies 3—3 convolutions. The final layer is a 1—1 convolution to map to the desired number of output channels (classes). Verify shapes: input (1—3—256—256) → bottleneck.
+(1—512—32—32) → output (1—num_classes—256—256). Count parameters by summing all conv layers: each 3—3 conv contributes 9—C_in—C_out + C_out parameters.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

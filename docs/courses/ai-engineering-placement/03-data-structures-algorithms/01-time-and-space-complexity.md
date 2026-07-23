@@ -42,7 +42,9 @@ flowchart LR
 
 ## Introduction
 
-Understanding time and space complexity is the foundation of every technical interview and the first step toward building efficient AI systems. When an ML training loop takes 10 hours instead of 2, or a vector search query times out at scale, the root cause almost always traces back to algorithmic complexity. This chapter teaches you how to analyze any algorithm's performance before writing a single line of code, a skill that separates senior engineers from beginners.
+Understanding time and space complexity is the foundation of every technical interview and the first step toward building efficient AI systems. When an ML training loop takes 10 hours instead of 2,.
+or a vector search query times out at scale, the root cause almost always traces back to algorithmic complexity. This chapter teaches you how to analyze any algorithm's performance before writing a single line of code,.
+a skill that separates senior engineers from beginners.
 
 
 ## Prerequisites
@@ -1076,7 +1078,10 @@ d) O(n�)
 
 ## Summary
 
-This chapter establishes the mathematical foundation for analyzing algorithm efficiency. You learned asymptotic notations (Big-O, Big-Omega, Big-Theta) and how to apply them to iterative and recursive algorithms. The Master Theorem provides a systematic way to solve recurrence relations. Space complexity analysis covers auxiliary and stack space, while amortized analysis gives realistic average costs for data structures like dynamic arrays. These concepts directly inform every data structure and algorithm decision in your engineering career.
+This chapter establishes the mathematical foundation for analyzing algorithm efficiency. You learned asymptotic notations (Big-O, Big-Omega, Big-Theta) and how to apply them to iterative and.
+recursive algorithms. The Master Theorem provides a systematic way to solve recurrence relations. Space complexity analysis covers auxiliary and stack space,.
+while amortized analysis gives realistic average costs for data structures like dynamic arrays. These concepts directly inform every data structure and.
+algorithm decision in your engineering career.
 
 
 ## Placement Section

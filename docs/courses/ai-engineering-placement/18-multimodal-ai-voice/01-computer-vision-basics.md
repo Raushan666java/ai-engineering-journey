@@ -719,7 +719,8 @@ class ImageProcessor {
     Q2: How does transfer learning work in computer vision?
   </summary>
   <div class="tp-qa-answer">
-    <p>Transfer learning takes a model pre-trained on a large dataset (ImageNet) and adapts it to a new task. Two approaches: (1) Feature extraction — freeze backbone weights, replace classifier head, train only the head. (2) Fine-tuning — unfreeze some backbone layers, train entire model with low learning rate. This requires much less data than training from scratch.</p>
+<p>Transfer learning takes a model pre-trained on a large dataset (ImageNet) and adapts it to a new task. Two approaches: (1) Feature extraction — freeze backbone weights,.
+replace classifier head, train only the head. (2) Fine-tuning — unfreeze some backbone layers, train entire model with low learning rate. This requires much less data than training from scratch.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -731,7 +732,9 @@ class ImageProcessor {
     Q3: What is the difference between convolution and pooling?
   </summary>
   <div class="tp-qa-answer">
-    <p>Convolution applies learnable filters to extract features (edges, textures, patterns) — it's a learnable operation. Pooling reduces spatial dimensions by taking the maximum or average value in a window — it's a fixed operation that provides translation invariance and reduces computation. Convolution preserves spatial info; pooling discards some to focus on the most salient features.</p>
+<p>Convolution applies learnable filters to extract features (edges, textures, patterns) — it's a learnable operation. Pooling reduces spatial dimensions by taking the maximum or.
+average value in a window — it's a fixed operation that provides translation invariance and reduces computation. Convolution preserves spatial info;.
+pooling discards some to focus on the most salient features.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -743,7 +746,9 @@ class ImageProcessor {
     Q4: How do you optimize vision models for production?
   </summary>
   <div class="tp-qa-answer">
-    <p>Techniques: (1) ONNX Runtime — graph optimization and hardware-specific backends, (2) TensorRT — NVIDIA GPU optimization with layer fusion and INT8 quantization, (3) Batching — process multiple images together for GPU efficiency, (4) Model distillation — use smaller student model, (5) Quantization — FP16 or INT8 precision reduces memory and latency, (6) Image size — smaller input resolution reduces compute.</p>
+<p>Techniques: (1) ONNX Runtime — graph optimization and hardware-specific backends, (2) TensorRT — NVIDIA GPU optimization with layer fusion and INT8 quantization,.
+(3) Batching — process multiple images together for GPU efficiency, (4) Model distillation — use smaller student model, (5) Quantization — FP16 or.
+INT8 precision reduces memory and latency, (6) Image size — smaller input resolution reduces compute.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -755,7 +760,9 @@ class ImageProcessor {
     Q5: How do you integrate vision with LLMs for multimodal AI?
   </summary>
   <div class="tp-qa-answer">
-    <p>Three approaches: (1) Vision encoder + LLM decoder — encode image features and feed to LLM as part of prompt (Flamingo, LLaVA), (2) Image captioning — caption first, then use text in LLM pipeline, (3) Embedding alignment — CLIP-style models project images and text into shared embedding space for retrieval and similarity.</p>
+<p>Three approaches: (1) Vision encoder + LLM decoder — encode image features and feed to LLM as part of prompt (Flamingo,.
+LLaVA), (2) Image captioning — caption first, then use text in LLM pipeline, (3) Embedding alignment — CLIP-style models project images and.
+text into shared embedding space for retrieval and similarity.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -803,7 +810,8 @@ class ImageProcessor {
     Q9: How do you handle varying image sizes in a batch?
   </summary>
   <div class="tp-qa-answer">
-    <p>Options: (1) Resize to fixed dimensions — simplest, most common, may distort aspect ratio, (2) Pad to largest — add padding to make all images same size, (3) Aspect-ratio-preserving resize + center crop — resize short side to target, center crop the rest, (4) Batch with same-size images — group by image aspect ratio within batch.</p>
+<p>Options: (1) Resize to fixed dimensions — simplest, most common, may distort aspect ratio, (2) Pad to largest — add padding to make all images same size,.
+(3) Aspect-ratio-preserving resize + center crop — resize short side to target, center crop the rest, (4) Batch with same-size images — group by image aspect ratio within batch.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

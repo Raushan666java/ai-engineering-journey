@@ -609,7 +609,10 @@ class DistillationTrainer {
 
 ## Summary
 
-BERT introduced bidirectional pre-training using masked language modeling and next-sentence prediction. The masked LM objective randomly masks tokens and trains the model to predict them from full bidirectional context. Next-sentence prediction learns relationships between sentence pairs for downstream tasks like question answering and natural language inference. Fine-tuning adapts the pre-trained BERT model to specific tasks by adding task-specific heads and training on labeled data. Variants like RoBERTa optimize pre-training with dynamic masking and larger batches, ALBERT reduces parameters through factorized embeddings and cross-layer sharing, and DistilBERT uses knowledge distillation for 40% smaller but 95% effective models. The GLUE benchmark provides a standardized evaluation across diverse NLU tasks.
+BERT introduced bidirectional pre-training using masked language modeling and next-sentence prediction. The masked LM objective randomly masks tokens and trains the model to predict them from full bidirectional context. Next-sentence prediction learns relationships between sentence pairs for.
+downstream tasks like question answering and natural language inference. Fine-tuning adapts the pre-trained BERT model to specific tasks by adding task-specific heads and.
+training on labeled data. Variants like RoBERTa optimize pre-training with dynamic masking and larger batches, ALBERT reduces parameters through factorized embeddings and.
+cross-layer sharing, and DistilBERT uses knowledge distillation for 40% smaller but 95% effective models. The GLUE benchmark provides a standardized evaluation across diverse NLU tasks.
 
 ## Practical Takeaways
 
@@ -630,7 +633,11 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q1: How does BERT's masked language model work?
   </summary>
   <div class="tp-qa-answer">
-    <p>BERT masks 15% of tokens in each input sequence. Of these masked tokens: 80% are replaced with the [MASK] token, 10% are replaced with a random token, and 10% are left unchanged. The model must predict the original token at each masked position using the final hidden state at that position. A feed-forward classifier (dense + GELU + LayerNorm + projection to vocab) is applied to the hidden state of each masked position. The loss is cross-entropy between predicted and original tokens. The 80/10/10 strategy prevents mismatch between pre-training (where [MASK] appears) and fine-tuning (where it never appears). If all masked tokens were [MASK], the model would not learn to handle unmasked text during fine-tuning.</p>
+<p>BERT masks 15% of tokens in each input sequence. Of these masked tokens: 80% are replaced with the [MASK] token, 10% are replaced with a random token,.
+and 10% are left unchanged. The model must predict the original token at each masked position using the final hidden state at that position. A feed-forward classifier (dense + GELU + LayerNorm + projection to vocab) is applied to the.
+hidden state of each masked position. The loss is cross-entropy between predicted and.
+original tokens. The 80/10/10 strategy prevents mismatch between pre-training (where [MASK] appears) and fine-tuning (where it never appears). If all masked tokens were [MASK],.
+the model would not learn to handle unmasked text during fine-tuning.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -642,7 +649,11 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q2: What is Next Sentence Prediction and why was it removed in RoBERTa?
   </summary>
   <div class="tp-qa-answer">
-    <p>NSP is a binary classification task: given two sentences A and B, predict whether B is the actual next sentence after A (50% of pairs) or a random sentence (50% of pairs). The [CLS] token's hidden state is fed to a binary classifier. NSP was designed to help BERT understand sentence relationships for tasks like QA and NLI. RoBERTa found that NSP is not essential: (1) Training without NSP matched or exceeded BERT on all GLUE tasks. (2) The single-sentence approach (always one contiguous document) performed better. (3) NSP's random negatives are too easy — the model learns topic mismatch rather than discourse coherence. ALBERT replaced NSP with SOP (Sentence Order Prediction), which requires actual discourse understanding.</p>
+<p>NSP is a binary classification task: given two sentences A and B, predict whether B is the actual next sentence after A (50% of pairs) or.
+a random sentence (50% of pairs). The [CLS] token's hidden state is fed to a binary classifier. NSP was designed to help BERT understand.
+sentence relationships for tasks like QA and NLI. RoBERTa found that NSP is not essential: (1) Training without NSP matched or.
+exceeded BERT on all GLUE tasks. (2) The single-sentence approach (always one contiguous document) performed better. (3) NSP's random negatives are too easy — the model learns topic mismatch rather than discourse coherence. ALBERT replaced NSP with SOP (Sentence Order Prediction),.
+which requires actual discourse understanding.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -654,7 +665,10 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q3: How do you fine-tune BERT for text classification?
   </summary>
   <div class="tp-qa-answer">
-    <p>Steps: (1) Add a classification head: a linear layer that takes the [CLS] token's final hidden state and projects to num_classes. (2) Format input as [CLS] text [SEP] with padding to max_seq_len. (3) Use token_type_ids = 0 for single sentence, 0/1 for sentence pairs. (4) Initialize BERT with pre-trained weights and the classification head randomly. (5) Fine-tune all parameters end-to-end with learning rate 2e-5 to 5e-5 (AdamW). (6) Use linear warmup (10% of steps) followed by linear decay. (7) Train for 2-10 epochs with early stopping based on validation loss. (8) Batch size: 16-32 for BERT-base on a single GPU. The classification head is tiny (num_classes — 768 parameters) compared to BERT's 110M, so fine-tuning is fast (1-2 hours on a single GPU).</p>
+<p>Steps: (1) Add a classification head: a linear layer that takes the [CLS] token's final hidden state and projects to num_classes. (2) Format input as [CLS] text [SEP] with padding to max_seq_len. (3) Use token_type_ids = 0 for.
+single sentence, 0/1 for sentence pairs. (4) Initialize BERT with pre-trained weights and the classification head randomly. (5) Fine-tune all parameters end-to-end with learning rate 2e-5 to 5e-5 (AdamW). (6) Use linear warmup (10% of steps) followed by linear decay. (7) Train for.
+2-10 epochs with early stopping based on validation loss. (8) Batch size: 16-32 for BERT-base on a single GPU. The classification head is tiny (num_classes — 768 parameters) compared to BERT's 110M,.
+so fine-tuning is fast (1-2 hours on a single GPU).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -666,7 +680,11 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q4: How does BERT handle question answering (SQuAD)?
   </summary>
   <div class="tp-qa-answer">
-    <p>For extractive QA (SQuAD), BERT predicts a span in the context that answers the question. The input is [CLS] question [SEP] context [SEP]. Two additional vectors (start and end projection) are learned on top of the hidden states. For each token position i, the start score = S^T * h_i and end score = E^T * h_i, where S and E are learned vectors of size d_model. The answer span is the pair (i, j) with i ≤ j and maximum S^T·h_i + E^T·h_j. Constraints: i must be in the context (not question), and j - i + 1 ≤ max_answer_length (typically 30). BERT-base achieves F1=88.5 on SQuAD 1.1 (EM=81.0). For SQuAD 2.0 with unanswerable questions, a no-answer class is added.</p>
+<p>For extractive QA (SQuAD), BERT predicts a span in the context that answers the question. The input is [CLS] question [SEP] context [SEP]. Two additional vectors (start and.
+end projection) are learned on top of the hidden states. For each token position i, the start score = S^T * h_i and.
+end score = E^T * h_i, where S and E are learned vectors of size d_model. The answer span is the pair (i,.
+j) with i ≤ j and maximum S^T·h_i + E^T·h_j. Constraints: i must be in the context (not question), and j - i + 1 ≤ max_answer_length (typically 30). BERT-base achieves F1=88.5 on SQuAD 1.1 (EM=81.0). For.
+SQuAD 2.0 with unanswerable questions, a no-answer class is added.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -678,7 +696,10 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q5: What is the GLUE benchmark and what tasks does it include?
   </summary>
   <div class="tp-qa-answer">
-    <p>GLUE (General Language Understanding Evaluation) is a collection of 9 NLP tasks for evaluating general-purpose language understanding models. Tasks: CoLA (grammatical acceptability), SST-2 (sentiment), MRPC (paraphrase detection), STS-B (text similarity regression), QQP (duplicate question detection), MNLI (natural language inference, 3-way), QNLI (question-answering NLI), RTE (textual entailment), WNLI (Winograd schema). The overall score is the average of all task metrics. BERT-base achieved 80.5, RoBERTa 88.5, and human baseline is 87.1. SuperGLUE (2019) replaced GLUE with 8 harder tasks after BERT saturated GLUE scores.</p>
+<p>GLUE (General Language Understanding Evaluation) is a collection of 9 NLP tasks for evaluating general-purpose language understanding models. Tasks: CoLA (grammatical acceptability),.
+SST-2 (sentiment), MRPC (paraphrase detection), STS-B (text similarity regression), QQP (duplicate question detection), MNLI (natural language inference, 3-way), QNLI (question-answering NLI),.
+RTE (textual entailment), WNLI (Winograd schema). The overall score is the average of all task metrics. BERT-base achieved 80.5, RoBERTa 88.5,.
+and human baseline is 87.1. SuperGLUE (2019) replaced GLUE with 8 harder tasks after BERT saturated GLUE scores.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -690,7 +711,10 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q6: How does ALBERT reduce parameters while maintaining performance?
   </summary>
   <div class="tp-qa-answer">
-    <p>ALBERT uses two parameter reduction techniques: (1) Factorized embedding parameterization: decomposes the vocabulary embedding matrix into two smaller matrices (V — E) and (E — H) instead of (V — H). With V=30K, E=128, H=768, embedding parameters go from 23M to 3.9M. (2) Cross-layer parameter sharing: all 12 or 24 layers share the same attention parameters and FFN parameters. This reduces layer parameters by ~90% (from 12—14M=168M to 14M total). ALBERT-xxlarge has 223M parameters vs BERT-large's 340M, but achieves comparable or better GLUE scores. ALBERT also uses SOP (Sentence Order Prediction) instead of NSP, which requires true discourse understanding.</p>
+<p>ALBERT uses two parameter reduction techniques: (1) Factorized embedding parameterization: decomposes the vocabulary embedding matrix into two smaller matrices (V — E) and.
+(E — H) instead of (V — H). With V=30K, E=128, H=768, embedding parameters go from 23M to 3.9M. (2) Cross-layer parameter sharing: all 12 or.
+24 layers share the same attention parameters and FFN parameters. This reduces layer parameters by ~90% (from 12—14M=168M to 14M total). ALBERT-xxlarge has 223M parameters vs BERT-large's 340M,.
+but achieves comparable or better GLUE scores. ALBERT also uses SOP (Sentence Order Prediction) instead of NSP, which requires true discourse understanding.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -702,7 +726,10 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q7: What is knowledge distillation and how is it applied to BERT?
   </summary>
   <div class="tp-qa-answer">
-    <p>Knowledge distillation trains a smaller student model to mimic a larger teacher model. For DistilBERT: (1) Architecture: student has 6 layers (half of BERT-base's 12), initialized from every other layer of the teacher. (2) Loss = α * distillation_loss + β * MLM_loss + γ * cosine_embedding_loss. Distillation loss uses the teacher's softened probabilities (temperature T=2.0) as soft targets. (3) Training uses the same data as BERT (Wikipedia + BookCorpus). DistilBERT is 40% smaller (66M vs 110M), 60% faster, and retains 97% of BERT's GLUE performance. TinyBERT and MobileBERT push this further, achieving 96% performance with 7.5— smaller models.</p>
+<p>Knowledge distillation trains a smaller student model to mimic a larger teacher model. For DistilBERT: (1) Architecture: student has 6 layers (half of BERT-base's 12),.
+initialized from every other layer of the teacher. (2) Loss = α * distillation_loss + β * MLM_loss + γ * cosine_embedding_loss. Distillation loss uses the teacher's softened probabilities (temperature T=2.0) as soft targets. (3) Training uses the same data.
+as BERT (Wikipedia + BookCorpus). DistilBERT is 40% smaller (66M vs 110M),.
+60% faster, and retains 97% of BERT's GLUE performance. TinyBERT and MobileBERT push this further, achieving 96% performance with 7.5— smaller models.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -714,7 +741,10 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q8: What is the difference between BERT and RoBERTa?
   </summary>
   <div class="tp-qa-answer">
-    <p>RoBERTa (Robustly Optimized BERT Approach) makes several training optimizations: (1) Removes NSP loss — trains on single contiguous documents. (2) Dynamic masking — masks tokens differently each epoch (BERT uses static masking once). (3) Larger batch sizes — 8K vs BERT's 256. (4) More training data — 160GB (BookCorpus+Wikipedia+CommonCrawl+News) vs BERT's 16GB. (5) Longer training — 500K steps vs BERT's 100K. (6) Larger learning rate with different warmup schedule. RoBERTa outperforms BERT on all GLUE tasks (88.5 vs 80.5 average). The key insight: BERT was significantly undertrained; most improvements come from longer training with more data, not architectural changes.</p>
+<p>RoBERTa (Robustly Optimized BERT Approach) makes several training optimizations: (1) Removes NSP loss — trains on single contiguous documents. (2) Dynamic masking — masks tokens differently each epoch (BERT uses static masking once). (3) Larger batch sizes — 8K vs.
+BERT's 256. (4) More training data — 160GB (BookCorpus+Wikipedia+CommonCrawl+News) vs BERT's 16GB. (5) Longer training — 500K steps vs BERT's 100K. (6) Larger learning rate with different warmup schedule. RoBERTa outperforms BERT on all GLUE tasks (88.5 vs 80.5 average)..
+The key insight: BERT was significantly undertrained;.
+most improvements come from longer training with more data, not architectural changes.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -726,7 +756,10 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q9: How do you handle long sequences (>512 tokens) with BERT?
   </summary>
   <div class="tp-qa-answer">
-    <p>BERT's maximum sequence length is 512 tokens (limited by O(n^2) self-attention). Strategies for longer texts: (1) Truncation: keep the first 512 tokens (most important for classification). (2) Hierarchical: split into 512-token chunks, encode each separately, aggregate with pooling or an additional transformer layer. (3) Longformer/BigBird: replace full attention with sparse attention patterns (sliding window + global tokens). Longformer handles 4096 tokens. (4) Reformer: uses locality-sensitive hashing for O(n log n) attention. (5) Sliding window: use overlapping windows and a secondary model to combine predictions. For most classification tasks, truncating to 512 tokens loses <1% accuracy because important information is typically at the start.</p>
+<p>BERT's maximum sequence length is 512 tokens (limited by O(n^2) self-attention). Strategies for longer texts: (1) Truncation: keep the first 512 tokens (most important for.
+classification). (2) Hierarchical: split into 512-token chunks, encode each separately, aggregate with pooling or an additional transformer layer. (3) Longformer/BigBird: replace full attention with sparse attention patterns (sliding window + global tokens). Longformer handles 4096 tokens. (4) Reformer: uses locality-sensitive hashing for.
+O(n log n) attention. (5) Sliding window: use overlapping windows and a secondary model to combine predictions. For most classification tasks,.
+truncating to 512 tokens loses <1% accuracy because important information is typically at the start.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -738,7 +771,10 @@ BERT introduced bidirectional pre-training using masked language modeling and ne
     Q10: What learning rate schedule is recommended for BERT fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Recommended: AdamW optimizer (ε=1e-8, β1=0.9, β2=0.999) with learning rate 2e-5 to 5e-5. Use a linear warmup for the first 10% of training steps (increasing LR from 0 to the max), then linear decay to 0. Weight decay: 0.01 (applied to all non-bias and non-norm parameters). The learning rate for fine-tuning is 10-25— lower than pre-training (5e-4) because the pre-trained weights are already near-optimal. Higher LR during fine-tuning can cause catastrophic forgetting. For batch size: 16 or 32 works well. For epochs: 2-10 depending on dataset size (small datasets need more epochs, large datasets need fewer). Use the dev set for early stopping.</p>
+<p>Recommended: AdamW optimizer (ε=1e-8, β1=0.9, β2=0.999) with learning rate 2e-5 to 5e-5. Use a linear warmup for the first 10% of training steps (increasing LR from 0 to the max),.
+then linear decay to 0. Weight decay: 0.01 (applied to all non-bias and non-norm parameters). The learning rate for fine-tuning is 10-25— lower than pre-training (5e-4) because the pre-trained weights are already near-optimal. Higher LR during fine-tuning can cause catastrophic forgetting. For.
+batch size: 16 or 32 works well. For epochs: 2-10 depending on dataset size (small datasets need more epochs, large datasets need fewer). Use the dev set for.
+early stopping.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

@@ -499,7 +499,8 @@ git commit -m "chore(deps): upgrade axios to 1.6.0"
     Q1: What is the difference between git reset --soft, --mixed, and --hard?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>--soft</strong> moves HEAD but keeps changes staged. <strong>--mixed</strong> (default) moves HEAD and unstages changes but keeps them in the working directory. <strong>--hard</strong> moves HEAD and discards all changes permanently. Use --soft for amending commits, --mixed for reorganizing, and --hard only when you're certain you want to discard changes.</p><pre><code># Soft: keeps changes staged
+<p><strong>--soft</strong> moves HEAD but keeps changes staged. <strong>--mixed</strong> (default) moves HEAD and unstages changes but keeps them in the working directory. <strong>--hard</strong> moves HEAD and.
+discards all changes permanently. Use --soft for amending commits, --mixed for reorganizing, and --hard only when you're certain you want to discard changes.</p><pre><code># Soft: keeps changes staged
 git reset --soft HEAD~1
 
 ## Mixed: unstages but keeps files
@@ -518,7 +519,9 @@ git reset --hard HEAD~1</code></pre>
     Q2: Explain the three areas of Git (working directory, staging area, repository).
   </summary>
   <div class="tp-qa-answer">
-    <p>The <strong>working directory</strong> is your project's files on disk. The <strong>staging area (index)</strong> is a preparation zone where you select which changes to include in the next commit. The <strong>repository (.git)</strong> stores the permanent history of committed snapshots. Files flow: Working Directory → (git add) → Staging Area → (git commit) → Repository. This design lets you craft precise, atomic commits rather than dumping all changes at once.</p>
+<p>The <strong>working directory</strong> is your project's files on disk. The <strong>staging area (index)</strong> is a preparation zone where you select which changes to include in the next commit. The <strong>repository (.git)</strong> stores the permanent history of committed snapshots. Files flow:.
+Working Directory → (git add) → Staging Area → (git commit) → Repository. This design lets you craft precise,.
+atomic commits rather than dumping all changes at once.</p>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">Bookmark</button>

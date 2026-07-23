@@ -2,7 +2,8 @@
 
 ## Overview
 
-The complete engineering stack for building production-grade AI agents. Based on the core formula **Agent = LLM + Context + Tools + Harness** — where Harness is the competitive moat (context management, tool integration, evaluation, safety, observability). Covers context engineering, MCP protocol, coding agents, evaluation frameworks, model post-training, self-evolution, multimodal agents, and multi-agent collaboration.
+The complete engineering stack for building production-grade AI agents. Based on the core formula **Agent = LLM + Context + Tools + Harness** — where Harness is the competitive moat (context management,.
+tool integration, evaluation, safety, observability). Covers context engineering, MCP protocol, coding agents, evaluation frameworks, model post-training, self-evolution, multimodal agents, and multi-agent collaboration.
 
 ## Sub-Chapters
 

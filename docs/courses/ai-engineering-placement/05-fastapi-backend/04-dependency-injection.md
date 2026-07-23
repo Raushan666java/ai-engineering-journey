@@ -534,7 +534,8 @@ app.get("/users", async (req, res) => {
 
 <details class="tp-qa-card" data-qid="fastapi-s04-q2">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q2: How does the generator dependency pattern work?</summary>
-  <div class="tp-qa-answer"><p>The dependency function uses yield instead of return. Code before yield runs on request start (setup), the yielded value is injected into the endpoint, and code after yield runs after response is sent (cleanup). The finally block ensures cleanup even on exceptions. Perfect for database sessions where you need to close after each request.</p></div>
+<div class="tp-qa-answer"><p>The dependency function uses yield instead of return. Code before yield runs on request start (setup), the yielded value is injected into the endpoint,.
+and code after yield runs after response is sent (cleanup). The finally block ensures cleanup even on exceptions. Perfect for database sessions where you need to close after each request.</p></div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>

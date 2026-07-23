@@ -667,7 +667,10 @@ print(f"Verdict: {report.generate()['verdict']}")
 
 ## Summary
 
-Evaluating fine-tuned models requires a multi-faceted approach combining intrinsic metrics (perplexity), task-specific metrics (accuracy, F1, exact match, ROUGE-L), and human evaluation (rating scales, pairwise comparison). Perplexity measures how well the model predicts tokens — lower is better, with good models achieving <10 on validation data. Task accuracy varies by domain: classification tasks use accuracy/F1, generation tasks use exact match/ROUGE-L, and math tasks use exact match on final answers. Standardized benchmarks (MMLU, HellaSwag, HumanEval, GSM8K, TruthfulQA) enable comparison across models and fine-tuning runs. The most critical analysis is before/after comparison: verify that fine-tuning improves target metrics while not regressing on unrelated capabilities. A regression test with tolerance (typically 1-2%) should be part of every evaluation pipeline.
+Evaluating fine-tuned models requires a multi-faceted approach combining intrinsic metrics (perplexity), task-specific metrics (accuracy, F1, exact match, ROUGE-L), and human evaluation (rating scales,.
+pairwise comparison). Perplexity measures how well the model predicts tokens — lower is better, with good models achieving <10 on validation data. Task accuracy varies by domain: classification tasks use accuracy/F1,.
+generation tasks use exact match/ROUGE-L, and math tasks use exact match on final answers. Standardized benchmarks (MMLU, HellaSwag, HumanEval, GSM8K, TruthfulQA) enable comparison across models and.
+fine-tuning runs. The most critical analysis is before/after comparison: verify that fine-tuning improves target metrics while not regressing on unrelated capabilities. A regression test with tolerance (typically 1-2%) should be part of every evaluation pipeline.
 
 ## Practical Takeaways
 
@@ -688,7 +691,13 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q1: What evaluation benchmarks are used for fine-tuned LLMs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Common evaluation benchmarks for fine-tuned LLMs: (1) Knowledge and reasoning — MMLU (57 subjects, multiple choice), ARC (science questions), HellaSwag (commonsense reasoning), GSM8K (math word problems), BIG-Bench (200+ diverse tasks). These measure general capability regression after fine-tuning; (2) Instruction following — MT-Bench (multi-turn, GPT-4 judged), AlpacaEval (single-turn, win rate vs reference), Chatbot Arena (human preference rankings); (3) Task-specific — for a custom fine-tuned model, create a domain-specific test set with ground truth labels. Metrics depend on task type: accuracy/ F1 for classification, ROUGE/BLEU for summarization, exact match for extraction, pass@k for code generation; (4) Safety — TruthfulQA (truthfulness), ToxicChat (toxicity detection), adversarial robustness tests; (5) Language quality — perplexity on a held-out corpus, grammaticality scores, repetition rates. For production evaluation, select 3-5 benchmarks most relevant to the target use case plus 1-2 general benchmarks to catch regression. Run evaluations before and after fine-tuning to measure improvement and detect degradation. Standardized evaluation libraries (lm-evaluation-harness, DeepEval, LangSmith) provide consistent benchmarking across models.</p>
+<p>Common evaluation benchmarks for fine-tuned LLMs: (1) Knowledge and reasoning — MMLU (57 subjects, multiple choice), ARC (science questions), HellaSwag (commonsense reasoning),.
+GSM8K (math word problems), BIG-Bench (200+ diverse tasks). These measure general capability regression after fine-tuning; (2) Instruction following — MT-Bench (multi-turn,.
+GPT-4 judged), AlpacaEval (single-turn, win rate vs reference), Chatbot Arena (human preference rankings); (3) Task-specific — for a custom fine-tuned model,.
+create a domain-specific test set with ground truth labels. Metrics depend on task type: accuracy/ F1 for classification, ROUGE/BLEU for summarization,.
+exact match for extraction, pass@k for code generation; (4) Safety — TruthfulQA (truthfulness), ToxicChat (toxicity detection), adversarial robustness tests; (5) Language quality — perplexity on a held-out corpus,.
+grammaticality scores, repetition rates. For production evaluation, select 3-5 benchmarks most relevant to the target use case plus 1-2 general benchmarks to catch regression. Run evaluations before and.
+after fine-tuning to measure improvement and detect degradation. Standardized evaluation libraries (lm-evaluation-harness, DeepEval, LangSmith) provide consistent benchmarking across models.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -700,7 +709,13 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q2: How do you implement perplexity evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Perplexity measures how well a model predicts a text sequence — lower perplexity means better prediction. Implementation: (1) load the model in evaluation mode (<code>model.eval()</code>) and tokenize the evaluation text with <code>return_tensors="pt"</code>; (2) run forward pass with <code>torch.no_grad()</code> — the model returns logits of shape (batch, seq_len, vocab_size); (3) compute cross-entropy loss per token using <code>CrossEntropyLoss()</code> — shift logits and labels so logits[i] predicts labels[i+1]; (4) exclude padding tokens from the loss calculation (set label = -100 for padding); (5) perplexity = <code>exp(loss)</code>. For fine-tuning evaluation: compare perplexity on a domain-specific test set before and after fine-tuning. A perplexity decrease of 10-30% is typical for successful fine-tuning. Caveats: perplexity doesn't always correlate with task performance — a model can have low perplexity but produce incorrect or repetitive outputs. Use perplexity as a diagnostic tool (detect overfitting: perplexity divergence between train and test) combined with task-specific metrics. For large evaluation corpora, process in chunks (sliding window approach) to handle sequences longer than the model's context length, then average the per-token loss across all chunks.</p>
+<p>Perplexity measures how well a model predicts a text sequence — lower perplexity means better prediction. Implementation: (1) load the model in evaluation mode (<code>model.eval()</code>) and.
+tokenize the evaluation text with <code>return_tensors="pt"</code>; (2) run forward pass with <code>torch.no_grad()</code> — the model returns logits of shape (batch, seq_len,.
+vocab_size); (3) compute cross-entropy loss per token using <code>CrossEntropyLoss()</code> — shift logits and labels so logits[i] predicts labels[i+1]; (4) exclude padding tokens from the loss calculation (set label = -100 for.
+padding); (5) perplexity = <code>exp(loss)</code>. For fine-tuning evaluation: compare perplexity on a domain-specific test set before and after fine-tuning. A perplexity decrease of 10-30% is typical for.
+successful fine-tuning. Caveats: perplexity doesn't always correlate with task performance — a model can have low perplexity but produce incorrect or.
+repetitive outputs. Use perplexity as a diagnostic tool (detect overfitting: perplexity divergence between train and test) combined with task-specific metrics. For.
+large evaluation corpora, process in chunks (sliding window approach) to handle sequences longer than the model's context length, then average the per-token loss across all chunks.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -712,7 +727,13 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q3: How do you implement task-specific accuracy evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Task-specific accuracy evaluation measures how well a fine-tuned model performs on the target task. Implementation: (1) create a test set of (input, expected_output) pairs that was never used during training or validation; (2) for each test example, generate the model's output using the same inference parameters as production (temperature, top_p, max_tokens); (3) compare model output against expected output using the appropriate metric — for classification: exact match accuracy, precision/recall/F1; for extraction: exact match of extracted entities; for summarization: ROUGE-L (longest common subsequence), ROUGE-1/2 (unigram/bigram overlap), BERTScore (semantic similarity using embeddings); for code generation: pass@k (compile + pass unit tests); for QA: exact match, F1 of token overlap; (4) aggregate metrics across the test set. Important: use a held-out test set that was never used during training or hyperparameter tuning. If the test set accuracy is much higher than validation accuracy, the test set may have leaked into training. Track accuracy trends across training runs to guide improvements. For production-grade evaluation, use statistical significance testing (bootstrap or permutation test) to determine if accuracy improvements are real or due to chance.</p>
+<p>Task-specific accuracy evaluation measures how well a fine-tuned model performs on the target task. Implementation: (1) create a test set of (input,.
+expected_output) pairs that was never used during training or validation; (2) for each test example, generate the model's output using the same inference parameters as production (temperature,.
+top_p, max_tokens); (3) compare model output against expected output using the appropriate metric — for classification: exact match accuracy, precision/recall/F1; for.
+extraction: exact match of extracted entities; for summarization: ROUGE-L (longest common subsequence), ROUGE-1/2 (unigram/bigram overlap), BERTScore (semantic similarity using embeddings); for.
+code generation: pass@k (compile + pass unit tests); for QA: exact match, F1 of token overlap; (4) aggregate metrics across the test set. Important: use a held-out test set that was never used during training or.
+hyperparameter tuning. If the test set accuracy is much higher than validation accuracy, the test set may have leaked into training. Track accuracy trends across training runs to guide improvements. For.
+production-grade evaluation, use statistical significance testing (bootstrap or permutation test) to determine if accuracy improvements are real or due to chance.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -724,7 +745,15 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q4: How do you implement human evaluation for fine-tuned models?
   </summary>
   <div class="tp-qa-answer">
-    <p>Human evaluation for fine-tuned models involves human raters assessing output quality across multiple dimensions. Implementation: (1) Sampling — select 100-500 representative test cases covering all major use case categories and difficulty levels; (2) Response generation — for each test case, generate responses from both the previous model (baseline) and the new fine-tuned model, shuffled to avoid position bias; (3) Rating dimensions — helpfulness (1-5 Likert), accuracy (1-5), format compliance (binary), safety (binary); (4) Rater selection — use trained raters who understand the task domain. For each test case, have 3 raters evaluate independently and use majority vote or average score; (5) Analysis — calculate win rate (percentage of cases where the new model is preferred), average scores per dimension, inter-rater agreement (Krippendorff's alpha, target > 0.7); (6) Statistical significance — use bootstrap resampling to compute confidence intervals for win rate. Human evaluation is expensive ($500-2000 per evaluation round for 200 examples) but catches quality issues that automated metrics miss. For cheaper alternatives: use LLM-as-judge (GPT-4 evaluating responses) which correlates reasonably well with human judgments for most dimensions, or use the Chatbot Arena methodology for crowdsourced preferences.</p>
+<p>Human evaluation for fine-tuned models involves human raters assessing output quality across multiple dimensions. Implementation: (1) Sampling — select 100-500 representative test cases covering all major.
+use case categories and difficulty levels; (2) Response generation — for each test case, generate responses from both the previous model (baseline) and.
+the new fine-tuned model, shuffled to avoid position bias; (3) Rating dimensions — helpfulness (1-5 Likert), accuracy (1-5), format compliance (binary),.
+safety (binary); (4) Rater selection — use trained raters who understand the task domain. For each test case, have 3 raters evaluate independently and.
+use majority vote or average score; (5) Analysis — calculate win rate (percentage of cases where the new model is preferred),.
+average scores per dimension, inter-rater agreement (Krippendorff's alpha, target > 0.7); (6) Statistical significance — use bootstrap resampling to compute confidence intervals for.
+win rate. Human evaluation is expensive ($500-2000 per evaluation round for 200 examples) but catches quality issues that automated metrics miss. For.
+cheaper alternatives: use LLM-as-judge (GPT-4 evaluating responses) which correlates reasonably well with human judgments for most dimensions, or use the Chatbot Arena methodology for.
+crowdsourced preferences.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -736,7 +765,13 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q5: How do you build a task-specific evaluation pipeline?
   </summary>
   <div class="tp-qa-answer">
-    <p>A task-specific evaluation pipeline automates model evaluation on the target task. Components: (1) Test dataset — collection of (input, expected_output) pairs representing the production distribution. Organize by difficulty (easy, medium, hard) and category; (2) Model runner — loads the fine-tuned model, generates responses with consistent inference parameters. Support batch processing for efficiency. Log all outputs with timing and token counts; (3) Metric calculator — implements task-specific metrics (accuracy, F1, ROUGE, BERTScore, exact match, pass@k). For open-ended generation, include LLM-as-judge evaluator that scores responses on helpfulness and correctness; (4) Comparison engine — runs the same test set on the baseline model (pre-fine-tuning) and the new model, producing side-by-side comparison tables; (5) Report generator — produces a structured evaluation report with: metric tables (model A vs model B per category), win/lose/tie breakdown, statistical significance, examples of wins and losses, and trend line compared to previous evaluations. The pipeline is automated as a CI step after each training run. A quality gate compares metrics against minimum thresholds — if the new model doesn't improve or regresses, the pipeline fails and alerts the team.</p>
+<p>A task-specific evaluation pipeline automates model evaluation on the target task. Components: (1) Test dataset — collection of (input, expected_output) pairs representing the production distribution. Organize by difficulty (easy,.
+medium, hard) and category; (2) Model runner — loads the fine-tuned model, generates responses with consistent inference parameters. Support batch processing for.
+efficiency. Log all outputs with timing and token counts; (3) Metric calculator — implements task-specific metrics (accuracy, F1, ROUGE, BERTScore, exact match,.
+pass@k). For open-ended generation, include LLM-as-judge evaluator that scores responses on helpfulness and correctness; (4) Comparison engine — runs the same test set on the baseline model (pre-fine-tuning) and.
+the new model, producing side-by-side comparison tables; (5) Report generator — produces a structured evaluation report with: metric tables (model A vs model B per category),.
+win/lose/tie breakdown, statistical significance, examples of wins and losses, and trend line compared to previous evaluations. The pipeline is automated as a CI step after each training run. A quality gate compares metrics against minimum thresholds — if the new model doesn't improve or.
+regresses, the pipeline fails and alerts the team.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -748,7 +783,14 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q6: How do you compare models before and after fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Comparing models before and after fine-tuning requires testing on the same benchmarks. Comparison framework: (1) Baseline metrics — evaluate the base model (before fine-tuning) on task-specific test sets and general benchmarks (MMLU, HellaSwag). Use consistent prompting (zero-shot or few-shot) as specified by the benchmark; (2) Post-fine-tuning metrics — evaluate the fine-tuned model on the same test sets and benchmarks. Use the same evaluation settings (temperature=0 for deterministic evaluation); (3) Comparison analysis — create a delta table showing improvement per metric. Task-specific metrics should improve significantly (10-50% relative), while general benchmarks should not degrade more than 2-3%; (4) Visualization — radar chart comparing pre/post scores across dimensions (accuracy, speed, cost, safety, format compliance). Bar chart of win/tie/loss per test category; (5) Qualitative analysis — sample 20-50 examples where the fine-tuned model improved or regressed significantly. Analyze patterns — is the model better at certain types of queries but worse at others? The goal of comparison is not just to confirm the fine-tuned model is better, but to understand how and where it changed. This guides next steps: if the model improved on the target task but regressed on general knowledge, incorporate more diverse training data. Document all comparison results in the model card.</p>
+<p>Comparing models before and after fine-tuning requires testing on the same benchmarks. Comparison framework: (1) Baseline metrics — evaluate the base model (before fine-tuning) on task-specific test sets and.
+general benchmarks (MMLU, HellaSwag). Use consistent prompting (zero-shot or few-shot) as specified by the benchmark; (2) Post-fine-tuning metrics — evaluate the fine-tuned model on the same test sets and.
+benchmarks. Use the same evaluation settings (temperature=0 for deterministic evaluation); (3) Comparison analysis — create a delta table showing improvement per metric. Task-specific metrics should improve significantly (10-50% relative),.
+while general benchmarks should not degrade more than 2-3%; (4) Visualization — radar chart comparing pre/post scores across dimensions (accuracy, speed,.
+cost, safety, format compliance). Bar chart of win/tie/loss per test category; (5) Qualitative analysis — sample 20-50 examples where the fine-tuned model improved or.
+regressed significantly. Analyze patterns — is the model better at certain types of queries but worse at others? The goal of comparison is not just to confirm the fine-tuned model is better,.
+but to understand how and where it changed. This guides next steps: if the model improved on the target task but.
+regressed on general knowledge, incorporate more diverse training data. Document all comparison results in the model card.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -760,7 +802,14 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q7: How do you implement LLM-as-judge evaluation?
   </summary>
   <div class="tp-qa-answer">
-    <p>LLM-as-judge uses a strong model (GPT-4, Claude) to evaluate responses from the fine-tuned model. Implementation: (1) Define evaluation criteria — create a scoring rubric with 3-5 dimensions (correctness, helpfulness, conciseness, format compliance) and clear score anchors (1=poor, 5=excellent with examples per score); (2) Create the judge prompt — include the user query, the model's response, and the scoring rubric. Ask the judge to provide scores with justification in a structured JSON format: <code>{"scores": {"correctness": 4, "helpfulness": 5}, "justification": "...", "overall": 4.5}</code>; (3) Batch evaluation — send all test examples to the judge model. Use concurrent API calls with rate limiting; (4) Aggregate scores — compute average scores per dimension and overall; (5) Side-by-side comparison — present two responses (baseline vs fine-tuned) to the judge and ask which is better (win/tie/loss). This provides a stronger signal than absolute scoring. LLM-as-judge correlates well with human judgments (0.7-0.9 Spearman correlation) for most dimensions. Biases to be aware of: position bias (prefers first response), verbosity bias (prefers longer responses), self-enhancement bias (GPT-4 prefers GPT-4 style). Mitigate by: swapping response order and averaging, controlling for response length, and using a different judge model than the one being evaluated.</p>
+<p>LLM-as-judge uses a strong model (GPT-4, Claude) to evaluate responses from the fine-tuned model. Implementation: (1) Define evaluation criteria — create a scoring rubric with 3-5 dimensions (correctness,.
+helpfulness, conciseness, format compliance) and clear score anchors (1=poor, 5=excellent with examples per score); (2) Create the judge prompt — include the user query,.
+the model's response, and the scoring rubric. Ask the judge to provide scores with justification in a structured JSON format: <code>{"scores": {"correctness": 4,.
+"helpfulness": 5}, "justification": "...", "overall": 4.5}</code>; (3) Batch evaluation — send all test examples to the judge model. Use concurrent API calls with rate limiting;.
+(4) Aggregate scores — compute average scores per dimension and overall; (5) Side-by-side comparison — present two responses (baseline vs fine-tuned) to the judge and.
+ask which is better (win/tie/loss). This provides a stronger signal than absolute scoring. LLM-as-judge correlates well with human judgments (0.7-0.9 Spearman correlation) for.
+most dimensions. Biases to be aware of: position bias (prefers first response), verbosity bias (prefers longer responses), self-enhancement bias (GPT-4 prefers GPT-4 style). Mitigate by: swapping response order and.
+averaging, controlling for response length, and using a different judge model than the one being evaluated.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -772,7 +821,14 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q8: How do you evaluate safety and alignment after fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p>Safety evaluation after fine-tuning checks that the model hasn't lost its safety guardrails. Evaluation methods: (1) Adversarial testing — use a curated set of harmful prompts (hate speech, illegal activities, self-harm, explicit content). The model should refuse all such requests. Measure refusal rate — target 100% for critical categories; (2) Jailbreak testing — test with common jailbreak patterns (role-playing, hypothetical scenarios, encoding tricks). The model should not be tricked into generating harmful content; (3) Bias evaluation — test for demographic bias using tools like WinoBias or BBQ. Compare bias scores before and after fine-tuning; (4) Truthfulness — use TruthfulQA benchmark to measure the model's tendency to produce false statements. Fine-tuning on domain-specific data may increase hallucination risk if the model over-asserts; (5) Prompt injection — test if the model follows instructions embedded in user-provided text (indirect injection). The model should prioritize system-level safety instructions. If fine-tuning reduces safety metrics, mitigation strategies include: mixing safety data into the fine-tuning dataset, applying DPO on safety preference pairs after fine-tuning, or using a safety filter as a post-processing step. Regular safety evaluation (weekly or per training run) is essential for production models.</p>
+<p>Safety evaluation after fine-tuning checks that the model hasn't lost its safety guardrails. Evaluation methods: (1) Adversarial testing — use a curated set of harmful prompts (hate speech,.
+illegal activities, self-harm, explicit content). The model should refuse all such requests. Measure refusal rate — target 100% for critical categories;.
+(2) Jailbreak testing — test with common jailbreak patterns (role-playing, hypothetical scenarios, encoding tricks). The model should not be tricked into generating harmful content;.
+(3) Bias evaluation — test for demographic bias using tools like WinoBias or BBQ. Compare bias scores before and after fine-tuning;.
+(4) Truthfulness — use TruthfulQA benchmark to measure the model's tendency to produce false statements. Fine-tuning on domain-specific data may increase hallucination risk if the model over-asserts;.
+(5) Prompt injection — test if the model follows instructions embedded in user-provided text (indirect injection). The model should prioritize system-level safety instructions. If fine-tuning reduces safety metrics,.
+mitigation strategies include: mixing safety data into the fine-tuning dataset, applying DPO on safety preference pairs after fine-tuning, or using a safety filter as a post-processing step. Regular safety evaluation (weekly or.
+per training run) is essential for production models.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -784,7 +840,14 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q9: How do you integrate evaluation into the training pipeline?
   </summary>
   <div class="tp-qa-answer">
-    <p>Integrating evaluation into the training pipeline creates an automated feedback loop. Implementation: (1) Pre-training validation — before training starts, run evaluation on the base model to establish baseline scores. Store in a metric database; (2) During training — use the HuggingFace Trainer's <code>evaluation_strategy="steps"</code> or <code>"epoch"</code> to run validation set evaluation at regular intervals. Log loss curves and task-specific validation metrics to WandB or TensorBoard; (3) Post-training evaluation — after training completes, run the full evaluation suite (task-specific, general benchmarks, safety, human eval if available). Compare against baseline; (4) Quality gate — define minimum improvement thresholds. For example: task accuracy must improve by >5%, general benchmark regression must be <3%, safety refusal rate must remain at 100%. If thresholds are not met, the pipeline fails; (5) Model registry — for passing models, save evaluation results to the model registry (MLflow, HuggingFace Hub) alongside model weights. Include model card with all metrics; (6) CI integration — trigger evaluation automatically on each training run. Send results to Slack/email. Use the evaluation results to decide whether to deploy, rollback, or refine training. This pipeline ensures every model version is validated before reaching users and provides a clear audit trail of model quality over time.</p>
+<p>Integrating evaluation into the training pipeline creates an automated feedback loop. Implementation: (1) Pre-training validation — before training starts, run evaluation on the base model to establish baseline scores. Store in a metric database;.
+(2) During training — use the HuggingFace Trainer's <code>evaluation_strategy="steps"</code> or <code>"epoch"</code> to run validation set evaluation at regular intervals. Log loss curves and.
+task-specific validation metrics to WandB or TensorBoard; (3) Post-training evaluation — after training completes, run the full evaluation suite (task-specific, general benchmarks,.
+safety, human eval if available). Compare against baseline; (4) Quality gate — define minimum improvement thresholds. For example: task accuracy must improve by >5%,.
+general benchmark regression must be <3%, safety refusal rate must remain at 100%. If thresholds are not met, the pipeline fails;.
+(5) Model registry — for passing models, save evaluation results to the model registry (MLflow, HuggingFace Hub) alongside model weights. Include model card with all metrics;.
+(6) CI integration — trigger evaluation automatically on each training run. Send results to Slack/email. Use the evaluation results to decide whether to deploy,.
+rollback, or refine training. This pipeline ensures every model version is validated before reaching users and provides a clear audit trail of model quality over time.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -796,7 +859,14 @@ Evaluating fine-tuned models requires a multi-faceted approach combining intrins
     Q10: How do you handle evaluation when the model outputs are subjective?
   </summary>
   <div class="tp-qa-answer">
-    <p>Subjective evaluation (for open-ended generation, creative writing, brainstorming) requires methods beyond exact match metrics: (1) Rubric-based scoring — define a detailed scoring rubric with specific criteria (relevance, creativity, structure, engagement) and score levels (1-4 with behavioral anchors). Each criterion is scored independently. Multiple raters (3-5 per example) provide reliability; (2) Pairwise comparison — present two model outputs (A and B) to judges and ask which is better. This avoids absolute scoring issues. Use Bradley-Terry models to compute a quality score from many pairwise comparisons; (3) LLM-as-judge with chain-of-thought — the judge model provides step-by-step reasoning before giving a score, improving evaluation quality for subjective dimensions. Use multi-dimensional scoring (separate scores for different aspects); (4) User satisfaction metrics — track real-world user signals: thumbs up/down rates, response copy rate, follow-up question rate, session duration. These are ultimately the most meaningful metrics for subjective quality; (5) A/B testing — deploy the fine-tuned model to 10% of users and compare against the baseline for the remaining 90%. Measure user engagement and satisfaction metrics over 1-2 weeks. For subjective evaluation, combine automated metrics (for consistency and speed) with human evaluation (for validity). Run automated evaluation daily and human evaluation weekly, using automated results as a leading indicator for human-evaluated quality.</p>
+<p>Subjective evaluation (for open-ended generation, creative writing, brainstorming) requires methods beyond exact match metrics: (1) Rubric-based scoring — define a detailed scoring rubric with specific criteria (relevance,.
+creativity, structure, engagement) and score levels (1-4 with behavioral anchors). Each criterion is scored independently. Multiple raters (3-5 per example) provide reliability;.
+(2) Pairwise comparison — present two model outputs (A and B) to judges and ask which is better. This avoids absolute scoring issues. Use Bradley-Terry models to compute a quality score from many pairwise comparisons;.
+(3) LLM-as-judge with chain-of-thought — the judge model provides step-by-step reasoning before giving a score, improving evaluation quality for subjective dimensions. Use multi-dimensional scoring (separate scores for.
+different aspects); (4) User satisfaction metrics — track real-world user signals: thumbs up/down rates, response copy rate, follow-up question rate, session duration. These are ultimately the most meaningful metrics for.
+subjective quality; (5) A/B testing — deploy the fine-tuned model to 10% of users and compare against the baseline for the remaining 90%. Measure user engagement and.
+satisfaction metrics over 1-2 weeks. For subjective evaluation, combine automated metrics (for consistency and speed) with human evaluation (for validity). Run automated evaluation daily and.
+human evaluation weekly, using automated results as a leading indicator for human-evaluated quality.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

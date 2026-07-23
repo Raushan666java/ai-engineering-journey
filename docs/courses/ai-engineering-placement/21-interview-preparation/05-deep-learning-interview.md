@@ -672,7 +672,8 @@ def train_ddp(rank, world_size, model, dataset):
   <div class="tp-qa-answer">
     <p>The vanishing gradient problem occurs in deep networks (especially RNNs) when gradients become exponentially small as they propagate backward through many layers/timesteps. This prevents early layers from learning effectively.</p>
     <p><strong>In RNNs</strong>: The gradient involves repeated multiplication by the same weight matrix W_h. If ||W_h|| < 1, gradients vanish. If ||W_h|| > 1, gradients explode.</p>
-    <p><strong>LSTM solution</strong>: The cell state c_t acts as a gradient highway. The forget gate and input gate control what to keep/add. The gradient flows through the cell state via additive interactions (c_t = f_t * c_{t-1} + i_t * g_t), not multiplicative. The forget gate is typically initialized close to 1, allowing gradients to flow backward through many timesteps without vanishing.</p>
+<p><strong>LSTM solution</strong>: The cell state c_t acts as a gradient highway. The forget gate and input gate control what to keep/add. The gradient flows through the cell state via additive interactions (c_t = f_t * c_{t-1} + i_t * g_t),.
+not multiplicative. The forget gate is typically initialized close to 1, allowing gradients to flow backward through many timesteps without vanishing.</p>
     <p>Additional solutions: ReLU activations (gradient is 1 for positive inputs), residual connections (gradient highway in ResNets), gradient clipping (prevents explosion).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

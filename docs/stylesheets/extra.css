@@ -576,3 +576,288 @@ h4, .md-content h4, .md-typeset h4 {
     padding: 0 !important;
   }
 }
+
+/* =================================================================
+   ADVANCED UI POLISH
+   ================================================================= */
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* ===== SELECTION ===== */
+::selection {
+  background: rgba(4, 170, 109, 0.2) !important;
+  color: var(--text) !important;
+}
+
+/* ===== FOCUS STATES ===== */
+.md-typeset input:focus,
+.md-typeset textarea:focus,
+.md-typeset select:focus {
+  border-color: var(--green) !important;
+  box-shadow: 0 0 0 3px rgba(4, 170, 109, 0.15) !important;
+  outline: none !important;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-mute);
+}
+
+/* ===== CODE BLOCK COPY BUTTON ===== */
+.md-clipboard {
+  transition: all var(--transition) !important;
+  border-radius: var(--radius) !important;
+  padding: 4px 8px !important;
+}
+
+.md-clipboard:hover {
+  background: var(--green) !important;
+  color: #fff !important;
+}
+
+/* ===== ENHANCED CARDS ===== */
+.md-typeset .grid.cards > ul > li {
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition) !important;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(4, 170, 109, 0.12) !important;
+}
+
+/* ===== COURSE GRID HOVER ===== */
+.course-grid li {
+  transition: all var(--transition) !important;
+}
+
+.course-grid li:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(4, 170, 109, 0.12) !important;
+}
+
+/* ===== LINK UNDERLINE ANIMATION ===== */
+.md-content a:not(.headerlink):not(.md-nav__link):not(.md-footer-nav__link) {
+  position: relative;
+  text-decoration: none;
+}
+
+.md-content a:not(.headerlink):not(.md-nav__link):not(.md-footer-nav__link)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--green);
+  transition: width 0.3s ease;
+}
+
+.md-content a:not(.headerlink):not(.md-nav__link):not(.md-footer-nav__link):hover::after {
+  width: 100%;
+}
+
+/* ===== ADMONITION ICONS ===== */
+.md-typeset .admonition {
+  position: relative;
+  overflow: hidden;
+}
+
+.md-typeset .admonition::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.md-typeset .admonition.note::before {
+  background: #2196F3;
+}
+
+.md-typeset .admonition.tip::before {
+  background: var(--green);
+}
+
+.md-typeset .admonition.warning::before {
+  background: #ff9800;
+}
+
+.md-typeset .admonition.danger::before {
+  background: #f44336;
+}
+
+/* ===== HEADER GRADIENT ===== */
+[data-md-color-scheme="default"] .md-header {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, #282A35 0%, #1e2128 100%) !important;
+}
+
+/* ===== FOOTER GRADIENT ===== */
+[data-md-color-scheme="default"] .md-footer {
+  background: linear-gradient(135deg, #282A35 0%, #1e2128 100%) !important;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background: linear-gradient(135deg, #161b22 0%, #0d1117 100%) !important;
+}
+
+/* ===== SIDEBAR ACTIVE INDICATOR ===== */
+.md-nav__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  background: var(--green);
+  border-radius: 0 3px 3px 0;
+}
+
+.md-nav__item {
+  position: relative;
+}
+
+/* ===== BACK TO TOP BUTTON ===== */
+.md-top {
+  transition: all var(--transition) !important;
+  box-shadow: 0 4px 12px rgba(4, 170, 109, 0.3) !important;
+}
+
+.md-top:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 16px rgba(4, 170, 109, 0.4) !important;
+}
+
+/* ===== TABLE ROW HOVER ===== */
+.md-typeset table:not([class]) tr {
+  transition: background var(--transition) !important;
+}
+
+/* ===== CODE SYNTAX HIGHLIGHTING ===== */
+.md-typeset pre .md-clipboard {
+  opacity: 0;
+  transition: opacity 0.2s ease !important;
+}
+
+.md-typeset pre:hover .md-clipboard {
+  opacity: 1 !important;
+}
+
+/* ===== CONTENT PROGRESS BAR ===== */
+.tp-progress-fill {
+  background: linear-gradient(90deg, var(--green), #3b82f6) !important;
+}
+
+/* ===== READING TIME BADGE ===== */
+.tp-reading-time {
+  background: rgba(4, 170, 109, 0.1) !important;
+  color: var(--green) !important;
+  border: 1px solid rgba(4, 170, 109, 0.2) !important;
+  border-radius: 20px !important;
+  padding: 4px 12px !important;
+  font-weight: 600 !important;
+}
+
+/* ===== MARK COMPLETE BUTTON ===== */
+.tp-complete-btn {
+  border: 2px solid var(--green) !important;
+  color: var(--green) !important;
+  border-radius: 25px !important;
+  transition: all var(--transition) !important;
+}
+
+.tp-complete-btn:hover {
+  background: var(--green) !important;
+  color: #fff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(4, 170, 109, 0.3) !important;
+}
+
+.tp-complete-btn.is-completed {
+  background: var(--green) !important;
+  color: #fff !important;
+}
+
+/* ===== DARK MODE ENHANCEMENTS ===== */
+[data-md-color-scheme="slate"] .md-typeset pre {
+  background: #0d1117 !important;
+  border: 1px solid #21262d !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background: #161b22 !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  border-color: #21262d !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #161b22 !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-color: #21262d !important;
+}
+
+/* ===== ANIMATION ON SCROLL ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.md-content {
+  animation: fadeInUp 0.3s ease-out !important;
+}
+
+/* ===== SEARCH SHORTCUT HINT ===== */
+.md-search__inner::after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* ===== TOOLTIP ===== */
+[data-md-tooltip] {
+  position: relative;
+}
+
+/* ===== BADGE STYLING ===== */
+.md-typeset .twemoji {
+  transition: transform var(--transition) !important;
+}
+
+.md-typeset .twemoji:hover {
+  transform: scale(1.1) !important;
+}

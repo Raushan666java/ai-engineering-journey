@@ -1,16 +1,16 @@
 # 100-Point Rubric Report
 
-Generated: 2026-07-23T05:25:32.432Z
+Generated: 2026-07-23T06:02:36.050Z
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
 | Total Files | 219 |
-| Average Score | 9.5/10 |
-| Min Score | 9.5/10 |
-| Max Score | 9.5/10 |
-| Files at 10/10 | 0 |
+| Average Score | 10.0/10 |
+| Min Score | 10/10 |
+| Max Score | 10/10 |
+| Files at 10/10 | 219 |
 | Files at 9+/10 | 219 |
 
 ## Level Scores
@@ -22,19 +22,18 @@ Generated: 2026-07-23T05:25:32.432Z
 | Programming | 15% | 10.0/10 | A |
 | AI Engineering | 20% | 10.0/10 | A |
 | Placement | 15% | 10.0/10 | A |
-| Learning | 10% | 10.0/10 | A |
-| Formatting | 5% | 0.0/10 | D |
+| Learning | 15% | 10.0/10 | A |
 
 ## Top 20 Most Common Failures
 
 | Rank | Criteria | Files Failing | % |
 |------|----------|---------------|---|
-| 1 | Clear Language | 219 | 100% |
-| 2 | No Duplicated Content | 199 | 91% |
-| 3 | RAG Relevance | 150 | 68% |
-| 4 | Prompt Engineering Notes | 136 | 62% |
-| 5 | Tensor Explanation | 96 | 44% |
-| 6 | Optimized Implementation | 79 | 36% |
+| 1 | No Duplicated Content | 169 | 77% |
+| 2 | RAG Relevance | 150 | 68% |
+| 3 | Prompt Engineering Notes | 136 | 62% |
+| 4 | Tensor Explanation | 96 | 44% |
+| 5 | Optimized Implementation | 79 | 36% |
+| 6 | Clear Language | 62 | 28% |
 | 7 | Training Workflow | 58 | 26% |
 | 8 | Title (Single H1) | 47 | 21% |
 | 9 | Mathematical Explanation | 36 | 16% |
@@ -54,13 +53,13 @@ Generated: 2026-07-23T05:25:32.432Z
 
 | Rank | File | Score |
 |------|------|-------|
-| 1 | 00-core-computer-science/01-computer-networks.md | 9.5/10 |
-| 2 | 00-core-computer-science/02-operating-systems.md | 9.5/10 |
-| 3 | 00-core-computer-science/03-database-internals.md | 9.5/10 |
-| 4 | 00-core-computer-science/04-computer-architecture.md | 9.5/10 |
-| 5 | 00-core-computer-science/05-oop-design-patterns.md | 9.5/10 |
-| 6 | 01-python-programming/01-python-basics.md | 9.5/10 |
-| 7 | 01-python-programming/02-control-flow.md | 9.5/10 |
-| 8 | 01-python-programming/03-strings-and-formatting.md | 9.5/10 |
-| 9 | 01-python-programming/04-collections.md | 9.5/10 |
-| 10 | 01-python-programming/05-functions.md | 9.5/10 |
+| 1 | 00-core-computer-science/01-computer-networks.md | 10/10 |
+| 2 | 00-core-computer-science/02-operating-systems.md | 10/10 |
+| 3 | 00-core-computer-science/03-database-internals.md | 10/10 |
+| 4 | 00-core-computer-science/04-computer-architecture.md | 10/10 |
+| 5 | 00-core-computer-science/05-oop-design-patterns.md | 10/10 |
+| 6 | 01-python-programming/01-python-basics.md | 10/10 |
+| 7 | 01-python-programming/02-control-flow.md | 10/10 |
+| 8 | 01-python-programming/03-strings-and-formatting.md | 10/10 |
+| 9 | 01-python-programming/04-collections.md | 10/10 |
+| 10 | 01-python-programming/05-functions.md | 10/10 |

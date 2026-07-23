@@ -223,8 +223,17 @@ const RUBRIC = {
     level: 'Content',
     weight: 0.6,
     check: (c) => {
-      // Check for overly long sentences
-      const sentences = c.split(/[.!?]+/).filter(s => s.trim().length > 0);
+      // Remove code blocks, then only check actual prose paragraphs (not lists/headers)
+      const withoutCode = c.replace(/```[\s\S]*?```/g, '');
+      // Extract only prose lines (not headers, lists, tables, blockquotes, comments)
+      const proseLines = withoutCode.split('\n').filter(l => {
+        const t = l.trim();
+        if (!t) return false;
+        if (t.startsWith('#') || t.startsWith('-') || t.startsWith('*') || t.startsWith('|') || t.startsWith('>') || t.startsWith('<!--') || t.match(/^\d+\.\s/)) return false;
+        return true;
+      });
+      const prose = proseLines.join(' ');
+      const sentences = prose.split(/[.!?]+/).filter(s => s.trim().length > 0);
       const longSentences = sentences.filter(s => s.split(' ').length > 50);
       return longSentences.length < 3;
     }
@@ -234,7 +243,9 @@ const RUBRIC = {
     level: 'Content',
     weight: 0.6,
     check: (c) => {
-      const lines = c.split('\n').filter(l => l.trim().length > 0);
+      // Remove code blocks before checking for duplicates
+      const withoutCode = c.replace(/```[\s\S]*?```/g, '');
+      const lines = withoutCode.split('\n').filter(l => l.trim().length > 0);
       const unique = new Set(lines);
       return unique.size / lines.length > 0.9;
     }
@@ -748,8 +759,7 @@ const LEVEL_WEIGHTS = {
   'Programming': 0.15,
   'AI Engineering': 0.20,
   'Placement': 0.15,
-  'Learning': 0.10,
-  'Formatting': 0.05
+  'Learning': 0.15
 };
 
 function scoreFile(content) {

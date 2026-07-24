@@ -1,7 +1,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import type * as PresetClassic from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'AI Engineering Placement Course',
@@ -15,7 +14,7 @@ const config: Config = {
     },
   ],
 
-  future: { v4: true },
+  future: {v4: true},
 
   url: 'https://raushan666java.github.io',
   baseUrl: '/ai-engineering-journey/',
@@ -89,26 +88,26 @@ const config: Config = {
         {
           title: 'Modules',
           items: [
-            { label: 'Core CS', to: '/00-foundations' },
-            { label: 'Python', to: '/01-python' },
-            { label: 'ML', to: '/08-ml' },
-            { label: 'LLMs', to: '/11-llms-prompt' },
+            {label: 'Core CS', to: '/00-foundations'},
+            {label: 'Python', to: '/01-python'},
+            {label: 'ML', to: '/08-ml'},
+            {label: 'LLMs', to: '/11-llms-prompt'},
           ],
         },
         {
           title: 'Advanced',
           items: [
-            { label: 'RAG', to: '/12-rag' },
-            { label: 'AI Agents', to: '/13-ai-agents' },
-            { label: 'Fine-Tuning', to: '/14-fine-tuning' },
-            { label: 'System Design', to: '/07-system-design' },
+            {label: 'RAG', to: '/12-rag'},
+            {label: 'AI Agents', to: '/13-ai-agents'},
+            {label: 'Fine-Tuning', to: '/14-fine-tuning'},
+            {label: 'System Design', to: '/07-system-design'},
           ],
         },
         {
           title: 'Community',
           items: [
-            { label: 'GitHub', href: 'https://github.com/Raushan666java/ai-engineering-journey' },
-            { label: 'Learning Playground', href: 'https://github.com/Raushan666java/learning-playground' },
+            {label: 'GitHub', href: 'https://github.com/Raushan666java/ai-engineering-journey'},
+            {label: 'Learning Playground', href: 'https://github.com/Raushan666java/learning-playground'},
           ],
         },
       ],
@@ -120,13 +119,13 @@ const config: Config = {
       additionalLanguages: ['python', 'bash', 'json', 'typescript', 'yaml', 'sql', 'docker', 'toml'],
     },
     mermaid: {
-      theme: { light: 'default', dark: 'dark' },
+      theme: {light: 'default', dark: 'dark'},
     },
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 4,
     },
-  } satisfies PresetClassic.ThemeConfig,
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;

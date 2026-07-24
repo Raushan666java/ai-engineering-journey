@@ -1,15 +1,15 @@
-﻿---
+---
 slug: /22-advanced-agents/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 22 — Advanced AI Agents
+# 22 � Advanced AI Agents
 
 ## Overview
 
-The complete engineering stack for building production-grade AI agents. Based on the core formula **Agent = LLM + Context + Tools + Harness** — where Harness is the competitive moat (context management,.
+The complete engineering stack for building production-grade AI agents. Based on the core formula **Agent = LLM + Context + Tools + Harness** � where Harness is the competitive moat (context management,.
 tool integration, evaluation, safety, observability). Covers context engineering, MCP protocol, coding agents, evaluation frameworks, model post-training, self-evolution, multimodal agents, and multi-agent collaboration.
 
 ## Sub-Chapters
@@ -34,10 +34,10 @@ tool integration, evaluation, safety, observability). Covers context engineering
 3. Lessons 05-06 cover advanced capabilities (coding, evaluation)
 4. Lessons 07-08 cover training and evolution
 5. Lessons 09-10 cover multimodal and multi-agent
-6. Each lesson: read theory → run code → review Q&A → take quiz → do exercises
+6. Each lesson: read theory ? run code ? review Q&A ? take quiz ? do exercises
 
 ## Prerequisites
 
-[AI Agents & LangGraph](/13-ai-agents). Solid understanding of LLM APIs, prompt patterns, and basic agent architectures is required.
+[AI Agents & LangGraph](/13-ai-agents/index). Solid understanding of LLM APIs, prompt patterns, and basic agent architectures is required.
 
-> **Start**: [01 — Agent Fundamentals & Harness →](01-agent-fundamentals-harness.md)
+> **Start**: [01 � Agent Fundamentals & Harness ?](01-agent-fundamentals-harness.md)

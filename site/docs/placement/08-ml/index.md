@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /08-ml/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 08 — Machine Learning
+# 08 � Machine Learning
 
 ## Overview
 
@@ -29,11 +29,11 @@ Understand core machine learning algorithms from regression to ensemble methods 
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[System Design](/07-system-design). Strong Python and linear algebra background is recommended.
+[System Design](/07-system-design/index). Strong Python and linear algebra background is recommended.
 
-> **Start**: [01 — ML Fundamentals →](01-ml-fundamentals.md)
+> **Start**: [01 � ML Fundamentals ?](01-ml-fundamentals.md)

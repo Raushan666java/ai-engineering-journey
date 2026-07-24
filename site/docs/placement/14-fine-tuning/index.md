@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /14-fine-tuning/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 9
 ---
 
-# 14 — Fine-Tuning & PEFT
+# 14 � Fine-Tuning & PEFT
 
 ## Overview
 
@@ -27,11 +27,11 @@ Master parameter-efficient fine-tuning techniques including LoRA, QLoRA, and ins
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[AI Agents & LangGraph](/13-ai-agents). Experience training deep learning models is strongly recommended.
+[AI Agents & LangGraph](/13-ai-agents/index). Experience training deep learning models is strongly recommended.
 
-> **Start**: [01 — When to Fine-Tune →](01-when-to-fine-tune.md)
+> **Start**: [01 � When to Fine-Tune ?](01-when-to-fine-tune.md)

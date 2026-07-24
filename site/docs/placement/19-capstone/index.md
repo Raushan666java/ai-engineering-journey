@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /19-capstone/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 6
 ---
 
-# 19 — Capstone Projects
+# 19 � Capstone Projects
 
 ## Overview
 
@@ -24,11 +24,11 @@ Apply everything you've learned by building five complete real-world projects: a
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Multimodal AI & Voice](/18-multimodal). Completion of all previous technical subjects is expected.
+[Multimodal AI & Voice](/18-multimodal/index). Completion of all previous technical subjects is expected.
 
-> **Start**: [01 — House Price Prediction API →](01-house-price-prediction-api.md)
+> **Start**: [01 � House Price Prediction API ?](01-house-price-prediction-api.md)

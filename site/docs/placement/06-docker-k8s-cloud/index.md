@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /06-docker-k8s-cloud/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 06 — Docker, Kubernetes & Cloud
+# 06 � Docker, Kubernetes & Cloud
 
 ## Overview
 
@@ -29,11 +29,11 @@ Master containerization with Docker, orchestration with Kubernetes, and cloud de
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[FastAPI & Backend Engineering](/05-fastapi). Basic Linux command knowledge is expected.
+[FastAPI & Backend Engineering](/05-fastapi/index). Basic Linux command knowledge is expected.
 
-> **Start**: [01 — Docker Basics →](01-docker-basics.md)
+> **Start**: [01 � Docker Basics ?](01-docker-basics.md)

@@ -1,15 +1,15 @@
-﻿---
+---
 slug: /05-fastapi/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 05 — FastAPI & Backend Engineering
+# 05 � FastAPI & Backend Engineering
 
 ## Overview
 
-Build production-ready REST APIs with FastAPI, Pydantic, SQLAlchemy, and async patterns. Covers authentication, testing, error handling, and deployment — the backend skills needed to serve AI models.
+Build production-ready REST APIs with FastAPI, Pydantic, SQLAlchemy, and async patterns. Covers authentication, testing, error handling, and deployment � the backend skills needed to serve AI models.
 
 ## Sub-Chapters
 
@@ -29,11 +29,11 @@ Build production-ready REST APIs with FastAPI, Pydantic, SQLAlchemy, and async p
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Git, Linux & CLI](/04-git-linux). Solid Python skills and basic understanding of HTTP are required.
+[Git, Linux & CLI](/04-git-linux/index). Solid Python skills and basic understanding of HTTP are required.
 
-> **Start**: [01 — REST API Fundamentals →](01-rest-api-fundamentals.md)
+> **Start**: [01 � REST API Fundamentals ?](01-rest-api-fundamentals.md)

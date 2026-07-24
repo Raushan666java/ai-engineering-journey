@@ -1,15 +1,15 @@
-﻿---
+---
 slug: /01-python/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 15
 ---
 
-# 01 — Python for AI
+# 01 � Python for AI
 
 ## Overview
 
-Master Python programming from fundamentals to advanced data science libraries. Covers syntax, OOP, concurrency, NumPy, Pandas, and visualization — the essential toolkit for any AI/ML engineering role.
+Master Python programming from fundamentals to advanced data science libraries. Covers syntax, OOP, concurrency, NumPy, Pandas, and visualization � the essential toolkit for any AI/ML engineering role.
 
 ## Sub-Chapters
 
@@ -33,11 +33,11 @@ Master Python programming from fundamentals to advanced data science libraries. 
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-No prerequisites — this is the starting point. Basic computer literacy and logical thinking are helpful.
+No prerequisites � this is the starting point. Basic computer literacy and logical thinking are helpful.
 
-> **Start**: [01 — Python Basics →](01-python-basics.md)
+> **Start**: [01 � Python Basics ?](01-python-basics.md)

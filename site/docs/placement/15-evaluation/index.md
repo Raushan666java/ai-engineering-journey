@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /15-evaluation/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 7
 ---
 
-# 15 — AI Evaluation & Observability
+# 15 � AI Evaluation & Observability
 
 ## Overview
 
@@ -25,11 +25,11 @@ Learn systematic approaches to evaluating AI systems and maintaining observabili
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Fine-Tuning & PEFT](/14-fine-tuning). Background in ML evaluation and production monitoring is helpful.
+[Fine-Tuning & PEFT](/14-fine-tuning/index). Background in ML evaluation and production monitoring is helpful.
 
-> **Start**: [01 — Evaluation Metrics →](01-evaluation-metrics.md)
+> **Start**: [01 � Evaluation Metrics ?](01-evaluation-metrics.md)

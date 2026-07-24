@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /10-nlp/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 9
 ---
 
-# 10 — NLP & Transformers
+# 10 � NLP & Transformers
 
 ## Overview
 
@@ -27,11 +27,11 @@ Explore natural language processing from text preprocessing to transformer archi
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Deep Learning with PyTorch](/09-deep-learning). Background in sequence models and attention is helpful.
+[Deep Learning with PyTorch](/09-deep-learning/index). Background in sequence models and attention is helpful.
 
-> **Start**: [01 — Text Preprocessing →](01-text-preprocessing.md)
+> **Start**: [01 � Text Preprocessing ?](01-text-preprocessing.md)

@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /20-portfolio/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 7
 ---
 
-# 20 — Portfolio & Personal Branding
+# 20 � Portfolio & Personal Branding
 
 ## Overview
 
@@ -25,11 +25,11 @@ Build a standout professional profile with an optimized GitHub, technical blog, 
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Capstone Projects](/19-capstone). At least 3 completed projects from the capstone series are recommended.
+[Capstone Projects](/19-capstone/index). At least 3 completed projects from the capstone series are recommended.
 
-> **Start**: [01 — GitHub Profile Optimization →](01-github-profile-optimization.md)
+> **Start**: [01 � GitHub Profile Optimization ?](01-github-profile-optimization.md)

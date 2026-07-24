@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /11-llms-prompt/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 9
 ---
 
-# 11 — LLMs & Prompt Engineering
+# 11 � LLMs & Prompt Engineering
 
 ## Overview
 
@@ -27,11 +27,11 @@ Learn to effectively use large language models through prompt engineering, struc
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[NLP & Transformers](/10-nlp). Understanding of transformer architecture and attention is expected.
+[NLP & Transformers](/10-nlp/index). Understanding of transformer architecture and attention is expected.
 
-> **Start**: [01 — Foundation Models Overview →](01-foundation-models-overview.md)
+> **Start**: [01 � Foundation Models Overview ?](01-foundation-models-overview.md)

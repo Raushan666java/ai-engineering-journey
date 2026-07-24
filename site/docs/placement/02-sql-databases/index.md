@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /02-sql-databases/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 02 — SQL & Databases
+# 02 � SQL & Databases
 
 ## Overview
 
@@ -29,11 +29,11 @@ Build a strong foundation in relational databases and SQL. Covers queries, joins
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Python for AI](/01-python). Basic programming knowledge is sufficient.
+[Python for AI](/01-python/index). Basic programming knowledge is sufficient.
 
-> **Start**: [01 — SQL Basics →](01-sql-basics.md)
+> **Start**: [01 � SQL Basics ?](01-sql-basics.md)

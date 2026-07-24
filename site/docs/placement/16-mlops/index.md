@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /16-mlops/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 9
 ---
 
-# 16 — MLOps & Production AI
+# 16 � MLOps & Production AI
 
 ## Overview
 
@@ -27,11 +27,11 @@ Operationalize AI systems with experiment tracking, data/prompt versioning, CI/C
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[AI Evaluation & Observability](/15-evaluation). Experience deploying and monitoring ML models is expected.
+[AI Evaluation & Observability](/15-evaluation/index). Experience deploying and monitoring ML models is expected.
 
-> **Start**: [01 — Experiment Tracking →](01-experiment-tracking.md)
+> **Start**: [01 � Experiment Tracking ?](01-experiment-tracking.md)

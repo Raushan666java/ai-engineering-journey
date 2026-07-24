@@ -1,4 +1,4 @@
-ï»¿---
+---
 slug: /00-foundations/index
 title: "Index"
 sidebar_label: "Index"
@@ -9,7 +9,7 @@ sidebar_position: 6
 
 ## Overview
 
-This section bridges the gap between traditional computer science fundamentals and modern AI engineering. Each chapter is written from a practitioner's perspective â€” the way engineers at Google,.
+This section bridges the gap between traditional computer science fundamentals and modern AI engineering. Each chapter is written from a practitioner's perspective — the way engineers at Google,.
 Meta, and top AI labs think about these systems. You won't find academic proofs or textbook trivia here; you'll find the mental models,.
 performance intuition, and practical knowledge that separates senior engineers from junior ones.
 
@@ -23,12 +23,12 @@ performance intuition, and practical knowledge that separates senior engineers f
 
 ## Learning Path
 
-1. Start with **Computer Networks** â€” every AI system is a distributed system
-2. Then **Operating Systems** â€” containers and resource management are daily reality
-3. Follow with **Database Internals** â€” data is the foundation of ML
-4. Study **Computer Architecture** â€” understand why your model runs slow/fast
-5. Finish with **OOP & Design Patterns** â€” write code that scales with your team
+1. Start with **Computer Networks** — every AI system is a distributed system
+2. Then **Operating Systems** — containers and resource management are daily reality
+3. Follow with **Database Internals** — data is the foundation of ML
+4. Study **Computer Architecture** — understand why your model runs slow/fast
+5. Finish with **OOP & Design Patterns** — write code that scales with your team
 
 Each chapter follows the same structure: Learning Objectives, Theory, TypeScript Examples, Summary, Practical Takeaways, Chapter Quiz (5 MCQ), and Exercises.
 
-> **Start**: [01 â€” Computer Networks â†’](01-computer-networks.md)
+> **Start**: [01 — Computer Networks ?](01-computer-networks.md)

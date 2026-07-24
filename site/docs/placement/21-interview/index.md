@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /21-interview/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 20
 ---
 
-# 21 — Interview Preparation
+# 21 � Interview Preparation
 
 ## Overview
 
@@ -38,11 +38,11 @@ Comprehensive interview preparation covering DSA patterns, SQL, backend coding, 
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Portfolio & Personal Branding](/20-portfolio). All previous subjects should be completed before starting interview prep.
+[Portfolio & Personal Branding](/20-portfolio/index). All previous subjects should be completed before starting interview prep.
 
-> **Start**: [01 — DSA Patterns Mastery →](01-dsa-patterns-mastery.md)
+> **Start**: [01 � DSA Patterns Mastery ?](01-dsa-patterns-mastery.md)

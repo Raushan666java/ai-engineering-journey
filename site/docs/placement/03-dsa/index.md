@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /03-dsa/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 19
 ---
 
-# 03 — Data Structures & Algorithms
+# 03 � Data Structures & Algorithms
 
 ## Overview
 
@@ -37,11 +37,11 @@ Develop strong problem-solving skills with data structures and algorithms essent
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[SQL & Databases](/02-sql-databases). Proficiency in at least one programming language is expected.
+[SQL & Databases](/02-sql-databases/index). Proficiency in at least one programming language is expected.
 
-> **Start**: [01 — Time & Space Complexity →](01-time-and-space-complexity.md)
+> **Start**: [01 � Time & Space Complexity ?](01-time-and-space-complexity.md)

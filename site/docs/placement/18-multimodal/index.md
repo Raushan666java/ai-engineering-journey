@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /18-multimodal/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 7
 ---
 
-# 18 — Multimodal AI & Voice
+# 18 � Multimodal AI & Voice
 
 ## Overview
 
@@ -25,11 +25,11 @@ Explore multimodal AI including computer vision, object detection, OCR, document
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[AI Security & Guardrails](/17-security). Background in deep learning (especially CNNs) is strongly recommended.
+[AI Security & Guardrails](/17-security/index). Background in deep learning (especially CNNs) is strongly recommended.
 
-> **Start**: [01 — Computer Vision Basics →](01-computer-vision-basics.md)
+> **Start**: [01 � Computer Vision Basics ?](01-computer-vision-basics.md)

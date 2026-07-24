@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /17-security/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 7
 ---
 
-# 17 — AI Security & Guardrails
+# 17 � AI Security & Guardrails
 
 ## Overview
 
@@ -25,11 +25,11 @@ Understand the security landscape for AI systems including prompt injection, con
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[MLOps & Production AI](/16-mlops). Understanding of production AI deployment and security fundamentals is recommended.
+[MLOps & Production AI](/16-mlops/index). Understanding of production AI deployment and security fundamentals is recommended.
 
-> **Start**: [01 — Threat Landscape →](01-threat-landscape.md)
+> **Start**: [01 � Threat Landscape ?](01-threat-landscape.md)

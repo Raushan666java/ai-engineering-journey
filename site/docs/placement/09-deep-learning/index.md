@@ -1,15 +1,15 @@
-﻿---
+---
 slug: /09-deep-learning/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 09 — Deep Learning with PyTorch
+# 09 � Deep Learning with PyTorch
 
 ## Overview
 
-Dive into deep learning using PyTorch — tensors, neural networks, CNNs, RNNs, transfer learning, and deployment. Builds the practical skills needed to train and serve deep learning models.
+Dive into deep learning using PyTorch � tensors, neural networks, CNNs, RNNs, transfer learning, and deployment. Builds the practical skills needed to train and serve deep learning models.
 
 ## Sub-Chapters
 
@@ -29,11 +29,11 @@ Dive into deep learning using PyTorch — tensors, neural networks, CNNs, RNNs, 
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Machine Learning](/08-ml). Solid understanding of linear algebra and calculus is expected.
+[Machine Learning](/08-ml/index). Solid understanding of linear algebra and calculus is expected.
 
-> **Start**: [01 — Neural Networks Basics →](01-neural-networks-basics.md)
+> **Start**: [01 � Neural Networks Basics ?](01-neural-networks-basics.md)

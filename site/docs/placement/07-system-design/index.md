@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /07-system-design/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 13
 ---
 
-# 07 — System Design
+# 07 � System Design
 
 ## Overview
 
@@ -31,11 +31,11 @@ Learn to design scalable, reliable, and maintainable systems. Covers microservic
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[Docker, Kubernetes & Cloud](/06-docker-k8s-cloud). Experience building backend services is strongly recommended.
+[Docker, Kubernetes & Cloud](/06-docker-k8s-cloud/index). Experience building backend services is strongly recommended.
 
-> **Start**: [01 — Scalability Fundamentals →](01-scalability-fundamentals.md)
+> **Start**: [01 � Scalability Fundamentals ?](01-scalability-fundamentals.md)

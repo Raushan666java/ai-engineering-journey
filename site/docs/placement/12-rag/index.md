@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /12-rag/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 12 — RAG & Vector Databases
+# 12 � RAG & Vector Databases
 
 ## Overview
 
@@ -29,11 +29,11 @@ Build retrieval-augmented generation systems using vector databases, embeddings,
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[LLMs & Prompt Engineering](/11-llms-prompt). Experience with LLM APIs and embedding concepts is recommended.
+[LLMs & Prompt Engineering](/11-llms-prompt/index). Experience with LLM APIs and embedding concepts is recommended.
 
-> **Start**: [01 — Introduction to RAG →](01-introduction-to-rag.md)
+> **Start**: [01 � Introduction to RAG ?](01-introduction-to-rag.md)

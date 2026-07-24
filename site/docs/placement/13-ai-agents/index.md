@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /13-ai-agents/index
 title: "Index"
 sidebar_label: "Index"
 sidebar_position: 11
 ---
 
-# 13 — AI Agents & LangGraph
+# 13 � AI Agents & LangGraph
 
 ## Overview
 
@@ -29,11 +29,11 @@ Design and build intelligent AI agents using the ReAct pattern, tool calling, me
 ## Learning Path
 
 1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
+2. For each: read theory ? run code ? review Q&A ? take quiz ? do exercises
 3. Mark complete when all sub-chapters done
 
 ## Prerequisites
 
-[RAG & Vector Databases](/12-rag). Solid understanding of LLM APIs and prompt patterns is required.
+[RAG & Vector Databases](/12-rag/index). Solid understanding of LLM APIs and prompt patterns is required.
 
-> **Start**: [01 — Introduction to AI Agents →](01-introduction-to-ai-agents.md)
+> **Start**: [01 � Introduction to AI Agents ?](01-introduction-to-ai-agents.md)

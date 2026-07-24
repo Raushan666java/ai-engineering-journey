@@ -1,30 +1,27 @@
+/**
+ * Docusaurus CSS
+ * https://docusaurus.io/docs/styling-layout
+ */
+
 :root {
-  --ifm-color-primary: #04AA6D;
-  --ifm-color-primary-dark: #039a62;
-  --ifm-color-primary-darker: #039159;
-  --ifm-color-primary-darkest: #027749;
-  --ifm-color-primary-light: #1db87e;
-  --ifm-color-primary-lighter: #30c189;
-  --ifm-color-primary-lightest: #5cd4a2;
-  --ifm-font-family-base: 'Source Sans Pro', sans-serif;
-  --ifm-font-family-monospace: 'Source Code Pro', monospace;
-  --ifm-code-font-size: 14px;
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
-  --ifm-background-color: #0d1117;
-  --ifm-background-surface-color: #161b22;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8871;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-
-.markdown h1 { font-size: 2.25rem; font-weight: 800; border-bottom: 2px solid var(--ifm-color-emphasis-200); padding-bottom: 0.75rem; }
-.markdown h2 { font-size: 1.65rem; font-weight: 700; border-bottom: 1px solid var(--ifm-color-emphasis-200); padding-bottom: 0.5rem; margin-top: 2.5rem; }
-.markdown h3 { font-size: 1.3rem; font-weight: 700; margin-top: 2rem; }
-.markdown pre code { background: #282A35; color: #f8f8f2; border-radius: 8px; padding: 1.25rem 1.5rem; font-size: 13px; }
-[data-theme='dark'] .markdown pre code { background: #0d1117; }
-.markdown blockquote { border-left: 4px solid var(--ifm-color-primary); background: var(--ifm-color-emphasis-100); border-radius: 0 8px 8px 0; padding: 1rem 1.5rem; }
-.markdown table th { background: var(--ifm-color-emphasis-100); font-weight: 700; text-transform: uppercase; font-size: 14px; letter-spacing: 0.04em; }
-.markdown table tr:nth-child(even) { background: var(--ifm-color-emphasis-100); }
-.menu__link--active { color: var(--ifm-color-primary) !important; font-weight: 600; background: rgba(4, 170, 109, 0.1); }
-.menu__link--active::before { content: ''; position: absolute; left: 0; width: 3px; top: 6px; bottom: 6px; background: var(--ifm-color-primary); border-radius: 0 3px 3px 0; }
-.menu__link { border-radius: 6px; padding: 6px 12px; font-size: 14px; }
-.table-of-contents__link:hover, .table-of-contents__link--active { color: var(--ifm-color-primary) !important; }

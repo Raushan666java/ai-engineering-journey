@@ -15,7 +15,7 @@ sidebar_position: 1
 | LO2 | Sort results with ORDER BY and limit with LIMIT/OFFSET |
 | LO3 | Insert new rows with INSERT and update data with UPDATE |
 | LO4 | Delete rows with DELETE and understand TRUNCATE |
-| LO5 | Use WHERE operators: =, <, IN, BETWEEN, LIKE, IS NULL |
+| LO5 | Use WHERE operators: =, `\<`, IN, BETWEEN, LIKE, IS NULL |
 | LO6 | Combine conditions with AND, OR, NOT and precedence |
 
 ## Introduction

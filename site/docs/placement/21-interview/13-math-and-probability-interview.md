@@ -142,10 +142,10 @@ Maximum of n i.i.d. exponential: grows as log(n)/lambda.
 
 ### Concentration Inequalities
 
-Markov: P(X >= a) <= E[X]/a for non-negative X.
-Chebyshev: P(|X-mu| >= k*sigma) <= 1/k^2.
+Markov: `P(X >= a) <= E[X]/a` for non-negative X.
+Chebyshev: `P(|X-mu| >= k*sigma) <= 1/k^2`.
 Chernoff: sum of independent Bernoulli gives exponential tail bounds.
-Hoeffding: for bounded variables, P(|X_bar - mu| >= t) <= 2*exp(-2*n*t^2).
+Hoeffding: for bounded variables, `P(|X_bar - mu| >= t) <= 2*exp(-2*n*t^2)`.
 
 
 ### Matrix Calculus
@@ -203,7 +203,7 @@ Common problem types:
 
 ### Bayes Theorem Calculator
 
-`	ypescript
+```typescript
 class BayesCalculator {
     calculate(
         prior: number,

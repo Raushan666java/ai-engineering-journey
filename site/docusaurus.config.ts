@@ -14,7 +14,6 @@ const config: Config = {
   projectName: 'ai-engineering-journey',
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',

@@ -34,7 +34,7 @@ Linux command line skills are essential for AI engineers who work with remote se
 | 04.2 | File Operations | cp, mv, rm, mkdir, touch |
 | 04.3 | Permissions | chmod, chown, numeric vs symbolic mode |
 | 04.4 | Searching | grep, find, locate, which |
-| 04.5 | Pipes and Redirection | |, >, >>, <, xargs, tee |
+| 04.5 | Pipes and Redirection | \|, \>, \>\>, `\<`, xargs, tee |
 | 04.6 | Real-World Tasks | Combining commands for daily work |
 
 ## Chapter Roadmap

@@ -32,8 +32,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          remarkPlugins: [require('remark-math')],
-          rehypePlugins: [require('rehype-katex')],
         },
         blog: false,
         theme: {
@@ -41,15 +39,6 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-  ],
-
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
-      type: 'text/css',
-      integrity: 'sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5O',
-      crossorigin: 'anonymous',
-    },
   ],
 
   themeConfig: {

@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'AI Engineering Placement Course',
-  tagline: 'Backend + AI Engineer - Complete Placement Preparation',
+  title: 'AI Engineering Journey',
+  tagline: 'Complete Learning Path - Backend + AI Engineer',
   favicon: 'img/favicon.ico',
 
   url: 'https://raushan666java.github.io',
@@ -14,6 +14,11 @@ const config: Config = {
   projectName: 'ai-engineering-journey',
 
   onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    format: 'md',
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -27,6 +32,8 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
         },
         blog: false,
         theme: {
@@ -34,6 +41,15 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+      type: 'text/css',
+      integrity: 'sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5O',
+      crossorigin: 'anonymous',
+    },
   ],
 
   themeConfig: {
@@ -51,6 +67,12 @@ const config: Config = {
           label: 'Placement Course',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'coursesSidebar',
+          position: 'left',
+          label: 'All Courses',
+        },
+        {
           href: 'https://github.com/Raushan666java/ai-engineering-journey',
           label: 'GitHub',
           position: 'right',
@@ -61,21 +83,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Courses',
           items: [
-            {
-              label: 'Placement Course',
-              to: '/',
-            },
+            {label: 'Placement Course', to: '/placement'},
+            {label: 'Python', to: '/courses/python-programming'},
+            {label: 'Machine Learning', to: '/courses/machine-learning'},
+            {label: 'System Design', to: '/courses/system-design'},
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/Raushan666java/ai-engineering-journey',
-            },
+            {label: 'GitHub', href: 'https://github.com/Raushan666java/ai-engineering-journey'},
+            {label: 'Learning Playground', href: 'https://github.com/Raushan666java/learning-playground'},
           ],
         },
       ],

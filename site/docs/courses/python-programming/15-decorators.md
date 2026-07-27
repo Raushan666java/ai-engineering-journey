@@ -1,4 +1,5 @@
 ---
+id: 15-decorators
 slug: /python-programming/15-decorators
 title: "Chapter 15: Decorators"
 sidebar_label: "Chapter 15: Decorators"

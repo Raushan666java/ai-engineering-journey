@@ -1,4 +1,5 @@
 ---
+id: 03-cyber-threats-attacks
 slug: /information-security/03-cyber-threats-attacks
 title: "Chapter 3: Cyber Threats & Attacks"
 sidebar_label: "Chapter 3: Cyber Threats & Attacks"

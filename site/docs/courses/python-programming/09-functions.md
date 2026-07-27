@@ -1,4 +1,5 @@
 ---
+id: 09-functions
 slug: /python-programming/09-functions
 title: "Chapter 9: Functions"
 sidebar_label: "Chapter 9: Functions"

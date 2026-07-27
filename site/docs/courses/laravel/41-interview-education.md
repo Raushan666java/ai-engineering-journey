@@ -1,4 +1,5 @@
 ---
+id: 41-interview-education
 slug: /laravel/41-interview-education
 title: "Chapter 41: Interview Q&A → Education & EdTech"
 sidebar_label: "Chapter 41: Interview Q&A → Education & EdTech"

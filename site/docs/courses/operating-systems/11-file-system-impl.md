@@ -1,4 +1,5 @@
 ---
+id: 11-file-system-impl
 slug: /operating-systems/11-file-system-impl
 title: "Chapter 11: File System Implementation"
 sidebar_label: "Chapter 11: File System Implementation"

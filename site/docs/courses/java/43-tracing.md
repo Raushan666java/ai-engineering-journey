@@ -1,4 +1,5 @@
 ---
+id: 43-tracing
 slug: /java/43-tracing
 title: "Distributed Tracing & Observability"
 sidebar_label: "Distributed Tracing & Observability"

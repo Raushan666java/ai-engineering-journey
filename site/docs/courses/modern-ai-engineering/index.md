@@ -1,14 +1,15 @@
 ---
+id: index
 slug: /modern-ai-engineering/index
-title: "Modern AI Engineering - Based on Chip Huyen Building Applications with Foundation Models"
-sidebar_label: "Modern AI Engineering"
+title: "Modern AI Engineering — Based on Chip Huyen's \"Building Applications with Foundation Models\""
+sidebar_label: "Modern AI Engineering — Based on Chip Huyen's \"Building Applications with Foundation Models\""
 sidebar_position: 13
 ---
 # Modern AI Engineering — Based on Chip Huyen's "Building Applications with Foundation Models"
 
 > **A comprehensive course based on Chip Huyen's definitive guide to building AI applications with foundation models. Covers data engineering, model selection, evaluation, prompt engineering, RAG, fine-tuning, agents, safety, production, and MLOps — all with TypeScript implementations.**
 
-[![Course Status](https://img.shields.io/badge/status-live-brightgreen.svg)]()
+![Course Status](https://img.shields.io/badge/status-live-brightgreen.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node](https://img.shields.io/badge/node-20%2B-339933.svg)](https://nodejs.org)
 

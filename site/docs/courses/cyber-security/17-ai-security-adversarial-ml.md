@@ -1,4 +1,5 @@
 ---
+id: 17-ai-security-adversarial-ml
 slug: /cyber-security/17-ai-security-adversarial-ml
 title: "Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes"
 sidebar_label: "Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes"

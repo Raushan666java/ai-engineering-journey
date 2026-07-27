@@ -1,4 +1,5 @@
 ---
+id: 05-game-playing
 slug: /artificial-intelligence/05-game-playing
 title: "Chapter 5: Game Playing and Adversarial Search"
 sidebar_label: "Chapter 5: Game Playing and Adversarial Search"

@@ -1,4 +1,5 @@
 ---
+id: 05-phase4-production-hardening
 slug: /ai-agent-engineer/05-phase4-production-hardening
 title: "Phase 4 — Production Hardening"
 sidebar_label: "Phase 4 — Production Hardening"

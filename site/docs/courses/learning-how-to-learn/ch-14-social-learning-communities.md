@@ -1,4 +1,5 @@
 ---
+id: ch-14-social-learning-communities
 slug: /learning-how-to-learn/ch-14-social-learning-communities
 title: "Chapter 14: Social Learning & Communities"
 sidebar_label: "Chapter 14: Social Learning & Communities"

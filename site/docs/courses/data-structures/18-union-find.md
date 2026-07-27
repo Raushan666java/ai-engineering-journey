@@ -1,4 +1,5 @@
 ---
+id: 18-union-find
 slug: /data-structures/18-union-find
 title: "Chapter 18: Union-Find (Disjoint Set Union)"
 sidebar_label: "Chapter 18: Union-Find (Disjoint Set Union)"

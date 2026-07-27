@@ -1,4 +1,5 @@
 ---
+id: 08-serverless
 slug: /cloud-computing/08-serverless
 title: "Chapter 8: Serverless Computing"
 sidebar_label: "Chapter 8: Serverless Computing"

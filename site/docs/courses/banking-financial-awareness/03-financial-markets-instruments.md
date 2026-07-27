@@ -1,4 +1,5 @@
 ---
+id: 03-financial-markets-instruments
 slug: /banking-financial-awareness/03-financial-markets-instruments
 title: "Chapter 3: Financial Markets & Instruments"
 sidebar_label: "Chapter 3: Financial Markets & Instruments"

@@ -1,4 +1,5 @@
 ---
+id: 09-rest-apis
 slug: /web-development/09-rest-apis
 title: "Chapter 9: REST APIs and API Design"
 sidebar_label: "Chapter 9: REST APIs and API Design"

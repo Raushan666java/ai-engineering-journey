@@ -1,4 +1,5 @@
 ---
+id: html-basics
 slug: /laravel/html-basics
 title: "HTML Fundamentals"
 sidebar_label: "HTML Fundamentals"

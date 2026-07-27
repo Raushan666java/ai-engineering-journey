@@ -1,4 +1,5 @@
 ---
+id: 10-structures-unions
 slug: /c-programming/10-structures-unions
 title: "Chapter 10: Structures and Unions"
 sidebar_label: "Chapter 10: Structures and Unions"

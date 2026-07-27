@@ -1,4 +1,5 @@
 ---
+id: 15-ethics-ai
 slug: /artificial-intelligence/15-ethics-ai
 title: "Chapter 15: Ethics of Artificial Intelligence"
 sidebar_label: "Chapter 15: Ethics of Artificial Intelligence"

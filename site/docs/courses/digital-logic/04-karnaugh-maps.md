@@ -1,4 +1,5 @@
 ---
+id: 04-karnaugh-maps
 slug: /digital-logic/04-karnaugh-maps
 title: "Chapter 4: Karnaugh Maps"
 sidebar_label: "Chapter 4: Karnaugh Maps"

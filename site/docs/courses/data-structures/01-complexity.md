@@ -1,4 +1,5 @@
 ---
+id: 01-complexity
 slug: /data-structures/01-complexity
 title: "Chapter 1: Complexity Analysis"
 sidebar_label: "Chapter 1: Complexity Analysis"

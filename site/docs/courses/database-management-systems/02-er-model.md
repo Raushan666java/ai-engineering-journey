@@ -1,4 +1,5 @@
 ---
+id: 02-er-model
 slug: /database-management-systems/02-er-model
 title: "Chapter 2: Entity-Relationship Model"
 sidebar_label: "Chapter 2: Entity-Relationship Model"

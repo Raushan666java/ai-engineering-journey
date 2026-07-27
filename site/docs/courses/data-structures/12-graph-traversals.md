@@ -1,4 +1,5 @@
 ---
+id: 12-graph-traversals
 slug: /data-structures/12-graph-traversals
 title: "Chapter 12: Graph Traversals"
 sidebar_label: "Chapter 12: Graph Traversals"

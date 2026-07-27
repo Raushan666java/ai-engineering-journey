@@ -1,4 +1,5 @@
 ---
+id: 03-sql-problem-bank
 slug: /placement-preparation/03-sql-problem-bank
 title: "SQL Problem Bank"
 sidebar_label: "SQL Problem Bank"

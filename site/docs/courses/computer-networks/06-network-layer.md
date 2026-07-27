@@ -1,4 +1,5 @@
 ---
+id: 06-network-layer
 slug: /computer-networks/06-network-layer
 title: "Chapter 6: The Network Layer"
 sidebar_label: "Chapter 6: The Network Layer"

@@ -1,7 +1,8 @@
 ---
+id: 21-spring-data-jpa
 slug: /java/21-spring-data-jpa
-title: "21 Spring Data Jpa"
-sidebar_label: "21 Spring Data Jpa"
+title: "Spring Data JPA"
+sidebar_label: "Spring Data JPA"
 sidebar_position: 21
 ---
 > **Previous:** [JPA/Hibernate](./20-jpa-hibernate.md) | **Next:** [Migrations](./22-migrations.md)

@@ -1,4 +1,5 @@
 ---
+id: 09-distributed-coordination
 slug: /system-design/09-distributed-coordination
 title: "Chapter 9: Distributed Coordination and Service Discovery"
 sidebar_label: "Chapter 9: Distributed Coordination and Service Discovery"

@@ -1,4 +1,5 @@
 ---
+id: 57-interview-spring
 slug: /java/57-interview-spring
 title: "Spring & Spring Boot Interview Q&A"
 sidebar_label: "Spring & Spring Boot Interview Q&A"

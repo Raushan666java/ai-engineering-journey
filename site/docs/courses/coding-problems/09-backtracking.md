@@ -1,4 +1,5 @@
 ---
+id: 09-backtracking
 slug: /coding-problems/09-backtracking
 title: "Chapter 09: Backtracking"
 sidebar_label: "Chapter 09: Backtracking"

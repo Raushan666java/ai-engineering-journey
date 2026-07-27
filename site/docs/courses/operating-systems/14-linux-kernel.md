@@ -1,4 +1,5 @@
 ---
+id: 14-linux-kernel
 slug: /operating-systems/14-linux-kernel
 title: "Chapter 14: Linux Kernel Internals"
 sidebar_label: "Chapter 14: Linux Kernel Internals"

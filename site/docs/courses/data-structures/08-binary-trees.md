@@ -1,4 +1,5 @@
 ---
+id: 08-binary-trees
 slug: /data-structures/08-binary-trees
 title: "Chapter 8: Binary Trees"
 sidebar_label: "Chapter 8: Binary Trees"

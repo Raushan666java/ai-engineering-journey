@@ -1,4 +1,5 @@
 ---
+id: 10-vector-calculus
 slug: /engineering-mathematics/10-vector-calculus
 title: "Chapter 10: Vector Calculus & Applications"
 sidebar_label: "Chapter 10: Vector Calculus & Applications"

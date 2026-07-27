@@ -1,4 +1,5 @@
 ---
+id: 14-logging-error-i18n
 slug: /java/14-logging-error-i18n
 title: "Logging, Error Handling & Internationalization"
 sidebar_label: "Logging, Error Handling & Internationalization"

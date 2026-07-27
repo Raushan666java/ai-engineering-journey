@@ -1,4 +1,5 @@
 ---
+id: 01-number-systems
 slug: /computer-architecture/01-number-systems
 title: "Number Systems & Boolean Algebra"
 sidebar_label: "Number Systems & Boolean Algebra"

@@ -1,4 +1,5 @@
 ---
+id: 10-security-scalability
 slug: /blockchain/10-security-scalability
 title: "Chapter 10: Security and Scalability"
 sidebar_label: "Chapter 10: Security and Scalability"

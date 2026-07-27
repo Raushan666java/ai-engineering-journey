@@ -1,4 +1,5 @@
 ---
+id: 06-gate-cs-mock
 slug: /mock-tests/06-gate-cs-mock
 title: "GATE CS — Full-Length Mock Test"
 sidebar_label: "GATE CS — Full-Length Mock Test"

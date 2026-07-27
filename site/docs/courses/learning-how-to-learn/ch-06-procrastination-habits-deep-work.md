@@ -1,4 +1,5 @@
 ---
+id: ch-06-procrastination-habits-deep-work
 slug: /learning-how-to-learn/ch-06-procrastination-habits-deep-work
 title: "Chapter 6: Procrastination, Habits & Deep Work"
 sidebar_label: "Chapter 6: Procrastination, Habits & Deep Work"

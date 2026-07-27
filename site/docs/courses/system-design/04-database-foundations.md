@@ -1,4 +1,5 @@
 ---
+id: 04-database-foundations
 slug: /system-design/04-database-foundations
 title: "Chapter 4: Database Foundations: Replication and Indexing"
 sidebar_label: "Chapter 4: Database Foundations: Replication and Indexing"

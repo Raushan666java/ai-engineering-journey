@@ -1,4 +1,5 @@
 ---
+id: osho-glossary
 slug: /vigyan-bhairav-tantra/osho-glossary
 title: "ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ"
 sidebar_label: "ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ"

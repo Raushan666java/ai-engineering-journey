@@ -1,4 +1,5 @@
 ---
+id: 08-memory-management
 slug: /operating-systems/08-memory-management
 title: "Chapter 8: Memory Management"
 sidebar_label: "Chapter 8: Memory Management"

@@ -1,4 +1,5 @@
 ---
+id: 10-testing-observability
 slug: /laravel/10-testing-observability
 title: "Chapter 10: Testing, Debugging & Observability"
 sidebar_label: "Chapter 10: Testing, Debugging & Observability"

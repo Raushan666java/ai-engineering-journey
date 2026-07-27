@@ -1,4 +1,5 @@
 ---
+id: 36-kafka
 slug: /java/36-kafka
 title: "Apache Kafka"
 sidebar_label: "Apache Kafka"

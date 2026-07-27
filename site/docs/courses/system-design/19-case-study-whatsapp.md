@@ -1,4 +1,5 @@
 ---
+id: 19-case-study-whatsapp
 slug: /system-design/19-case-study-whatsapp
 title: "Chapter 19: Case Study — WhatsApp and Real-Time Messaging"
 sidebar_label: "Chapter 19: Case Study — WhatsApp and Real-Time Messaging"

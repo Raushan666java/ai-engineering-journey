@@ -1,4 +1,5 @@
 ---
+id: sadhna-yojana
 slug: /vigyan-bhairav-tantra/sadhna-yojana
 title: "साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)"
 sidebar_label: "साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)"

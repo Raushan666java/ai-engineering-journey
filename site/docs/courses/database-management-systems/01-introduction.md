@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /database-management-systems/01-introduction
 title: "Chapter 1: Introduction to Database Management Systems"
 sidebar_label: "Chapter 1: Introduction to Database Management Systems"

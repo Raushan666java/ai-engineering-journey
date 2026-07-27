@@ -1,4 +1,5 @@
 ---
+id: 02-langchain
 slug: /applied-ai/02-langchain
 title: "Chapter 2: LangChain & LLM Orchestration"
 sidebar_label: "Chapter 2: LangChain & LLM Orchestration"

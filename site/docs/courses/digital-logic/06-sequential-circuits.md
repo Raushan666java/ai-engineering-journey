@@ -1,4 +1,5 @@
 ---
+id: 06-sequential-circuits
 slug: /digital-logic/06-sequential-circuits
 title: "Chapter 6: Sequential Circuits"
 sidebar_label: "Chapter 6: Sequential Circuits"

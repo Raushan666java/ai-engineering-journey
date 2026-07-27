@@ -1,4 +1,5 @@
 ---
+id: 11-caching-performance
 slug: /laravel/11-caching-performance
 title: "Chapter 11: Caching, Performance & Octane"
 sidebar_label: "Chapter 11: Caching, Performance & Octane"

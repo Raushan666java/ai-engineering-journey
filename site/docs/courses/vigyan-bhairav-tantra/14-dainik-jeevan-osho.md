@@ -1,4 +1,5 @@
 ---
+id: 14-dainik-jeevan-osho
 slug: /vigyan-bhairav-tantra/14-dainik-jeevan-osho
 title: "अध्याय १४: दैनिक जीवन में ध्यान: ओशो की विधियाँ"
 sidebar_label: "अध्याय १४: दैनिक जीवन में ध्यान: ओशो की विधियाँ"

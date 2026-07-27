@@ -1,7 +1,8 @@
 ---
+id: 60-interview-microservices-c
 slug: /java/60-interview-microservices-c
-title: "60 Interview Microservices C"
-sidebar_label: "60 Interview Microservices C"
+title: "── Deployment for a microservice ──"
+sidebar_label: "── Deployment for a microservice ──"
 sidebar_position: 66
 ---
 ![Service Mesh - Istio and Envoy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-c.png)

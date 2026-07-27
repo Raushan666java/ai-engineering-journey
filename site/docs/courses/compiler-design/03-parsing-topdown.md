@@ -1,4 +1,5 @@
 ---
+id: 03-parsing-topdown
 slug: /compiler-design/03-parsing-topdown
 title: "Chapter 3: Top-Down Parsing"
 sidebar_label: "Chapter 3: Top-Down Parsing"

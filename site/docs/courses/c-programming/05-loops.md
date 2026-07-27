@@ -1,4 +1,5 @@
 ---
+id: 05-loops
 slug: /c-programming/05-loops
 title: "Chapter 5: Loops (Comprehensive)"
 sidebar_label: "Chapter 5: Loops (Comprehensive)"

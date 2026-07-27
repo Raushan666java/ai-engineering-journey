@@ -1,4 +1,5 @@
 ---
+id: 36-manufacturing
 slug: /laravel/36-manufacturing
 title: "Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents"
 sidebar_label: "Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents"

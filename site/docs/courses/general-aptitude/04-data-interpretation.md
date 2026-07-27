@@ -1,4 +1,5 @@
 ---
+id: 04-data-interpretation
 slug: /general-aptitude/04-data-interpretation
 title: "Chapter 4: Data Interpretation"
 sidebar_label: "Chapter 4: Data Interpretation"

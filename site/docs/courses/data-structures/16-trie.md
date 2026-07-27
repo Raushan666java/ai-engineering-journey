@@ -1,4 +1,5 @@
 ---
+id: 16-trie
 slug: /data-structures/16-trie
 title: "Chapter 16: Trie (Prefix Tree)"
 sidebar_label: "Chapter 16: Trie (Prefix Tree)"

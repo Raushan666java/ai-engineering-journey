@@ -1,4 +1,5 @@
 ---
+id: 05-sdt
 slug: /compiler-design/05-sdt
 title: "Chapter 5: Syntax-Directed Translation"
 sidebar_label: "Chapter 5: Syntax-Directed Translation"

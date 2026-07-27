@@ -1,4 +1,5 @@
 ---
+id: 04-jpms-packaging
 slug: /java/04-jpms-packaging
 title: "Java Modules (JPMS) & Packaging"
 sidebar_label: "Java Modules (JPMS) & Packaging"

@@ -1,4 +1,5 @@
 ---
+id: 16-stacks-queues
 slug: /c-programming/16-stacks-queues
 title: "Chapter 16: Stacks and Queues"
 sidebar_label: "Chapter 16: Stacks and Queues"

@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /compiler-design/index
 title: "Compiler Design — Complete Course Textbook"
 sidebar_label: "Compiler Design — Complete Course Textbook"

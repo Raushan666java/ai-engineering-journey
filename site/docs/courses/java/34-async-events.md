@@ -1,4 +1,5 @@
 ---
+id: 34-async-events
 slug: /java/34-async-events
 title: "Async Processing & Spring Events"
 sidebar_label: "Async Processing & Spring Events"

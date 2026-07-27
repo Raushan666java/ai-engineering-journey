@@ -1,4 +1,5 @@
 ---
+id: 02-variables
 slug: /python-programming/02-variables
 title: "Chapter 2: Variables, Types, and Operators"
 sidebar_label: "Chapter 2: Variables, Types, and Operators"

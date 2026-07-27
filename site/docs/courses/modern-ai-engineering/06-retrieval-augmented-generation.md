@@ -1,7 +1,8 @@
 ---
+id: 06-retrieval-augmented-generation
 slug: /modern-ai-engineering/06-retrieval-augmented-generation
-title: "06 Retrieval Augmented Generation"
-sidebar_label: "06 Retrieval Augmented Generation"
+title: "Chapter 6: Retrieval-Augmented Generation"
+sidebar_label: "Chapter 6: Retrieval-Augmented Generation"
 sidebar_position: 6
 ---
 

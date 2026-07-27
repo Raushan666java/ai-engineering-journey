@@ -1,4 +1,5 @@
 ---
+id: 14-timing-analysis
 slug: /digital-logic/14-timing-analysis
 title: "Chapter 14: Timing Analysis"
 sidebar_label: "Chapter 14: Timing Analysis"

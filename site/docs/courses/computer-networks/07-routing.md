@@ -1,4 +1,5 @@
 ---
+id: 07-routing
 slug: /computer-networks/07-routing
 title: "Chapter 7: Routing"
 sidebar_label: "Chapter 7: Routing"

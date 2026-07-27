@@ -1,4 +1,5 @@
 ---
+id: 38-interview-general
 slug: /laravel/38-interview-general
 title: "Chapter 38: Laravel General Interview Q&A"
 sidebar_label: "Chapter 38: Laravel General Interview Q&A"

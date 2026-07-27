@@ -1,4 +1,5 @@
 ---
+id: 04-architectural-design
 slug: /software-engineering/04-architectural-design
 title: "Architectural Design"
 sidebar_label: "Architectural Design"

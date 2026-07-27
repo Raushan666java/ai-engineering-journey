@@ -1,4 +1,5 @@
 ---
+id: 10-dp-trees-grids
 slug: /algorithms/10-dp-trees-grids
 title: "Chapter 10: Trees, Grids & Dynamic Programming"
 sidebar_label: "Chapter 10: Trees, Grids & Dynamic Programming"

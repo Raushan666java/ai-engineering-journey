@@ -1,4 +1,5 @@
 ---
+id: 05-gate-strategy
 slug: /gate-cs-preparation/05-gate-strategy
 title: "05 Gate Strategy"
 sidebar_label: "05 Gate Strategy"

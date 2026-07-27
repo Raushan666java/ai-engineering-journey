@@ -1,4 +1,5 @@
 ---
+id: 59-interview-databases
 slug: /java/59-interview-databases
 title: "Chapter 59: Database Interview Q&A for Java & Spring Boot Developers"
 sidebar_label: "Chapter 59: Database Interview Q&A for Java & Spring Boot Developers"

@@ -1,4 +1,5 @@
 ---
+id: 05-cloud-database
 slug: /cloud-computing/05-cloud-database
 title: "Chapter 5: Cloud Database Services"
 sidebar_label: "Chapter 5: Cloud Database Services"

@@ -1,4 +1,5 @@
 ---
+id: 12-secondary-storage
 slug: /operating-systems/12-secondary-storage
 title: "Chapter 12: Secondary Storage"
 sidebar_label: "Chapter 12: Secondary Storage"

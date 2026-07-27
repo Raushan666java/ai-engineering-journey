@@ -1,4 +1,5 @@
 ---
+id: 04-fintech-emerging-trends
 slug: /banking-technology/04-fintech-emerging-trends
 title: "Chapter 04: Fintech and Emerging Trends"
 sidebar_label: "Chapter 04: Fintech and Emerging Trends"

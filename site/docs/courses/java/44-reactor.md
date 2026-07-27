@@ -1,4 +1,5 @@
 ---
+id: 44-reactor
 slug: /java/44-reactor
 title: "Chapter 44: Project Reactor & Reactive Streams"
 sidebar_label: "Chapter 44: Project Reactor & Reactive Streams"

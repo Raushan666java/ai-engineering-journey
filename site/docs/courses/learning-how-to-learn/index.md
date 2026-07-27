@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /learning-how-to-learn/index
 title: "Learning How to Learn"
 sidebar_label: "Learning How to Learn"

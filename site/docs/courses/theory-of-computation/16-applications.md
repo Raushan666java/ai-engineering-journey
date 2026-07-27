@@ -1,4 +1,5 @@
 ---
+id: 16-applications
 slug: /theory-of-computation/16-applications
 title: "Chapter 16: Applications of Automata Theory"
 sidebar_label: "Chapter 16: Applications of Automata Theory"

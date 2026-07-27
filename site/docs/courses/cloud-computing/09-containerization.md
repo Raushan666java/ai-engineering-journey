@@ -1,4 +1,5 @@
 ---
+id: 09-containerization
 slug: /cloud-computing/09-containerization
 title: "Chapter 9: Containerization and Orchestration"
 sidebar_label: "Chapter 9: Containerization and Orchestration"

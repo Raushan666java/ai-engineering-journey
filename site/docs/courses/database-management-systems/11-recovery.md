@@ -1,4 +1,5 @@
 ---
+id: 11-recovery
 slug: /database-management-systems/11-recovery
 title: "Chapter 11: Recovery System"
 sidebar_label: "Chapter 11: Recovery System"

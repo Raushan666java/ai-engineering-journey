@@ -1,4 +1,5 @@
 ---
+id: 06-engineering-mathematics
 slug: /gate-cs-preparation/06-engineering-mathematics
 title: "06 Engineering Mathematics"
 sidebar_label: "06 Engineering Mathematics"

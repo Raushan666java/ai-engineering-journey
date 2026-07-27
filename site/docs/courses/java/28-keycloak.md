@@ -1,4 +1,5 @@
 ---
+id: 28-keycloak
 slug: /java/28-keycloak
 title: "Keycloak & Identity Federation"
 sidebar_label: "Keycloak & Identity Federation"

@@ -1,4 +1,5 @@
 ---
+id: p5-generics-reflection
 slug: /java/p5-generics-reflection
 title: "Generics, Annotations & Reflection"
 sidebar_label: "Generics, Annotations & Reflection"

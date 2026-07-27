@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /data-analysis-interpretation/index
 title: "Data Analysis & Interpretation"
 sidebar_label: "Data Analysis & Interpretation"

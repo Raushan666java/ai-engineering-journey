@@ -1,4 +1,5 @@
 ---
+id: 10-model-evaluation
 slug: /machine-learning/10-model-evaluation
 title: "Chapter 10: Model Selection and Evaluation"
 sidebar_label: "Chapter 10: Model Selection and Evaluation"

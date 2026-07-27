@@ -1,4 +1,5 @@
 ---
+id: 15-ot-ics-scada
 slug: /cyber-security/15-ot-ics-scada
 title: "Chapter 15: OT/ICS & SCADA Security"
 sidebar_label: "Chapter 15: OT/ICS & SCADA Security"

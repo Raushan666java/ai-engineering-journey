@@ -1,4 +1,5 @@
 ---
+id: 04-spark-mllib
 slug: /big-data/04-spark-mllib
 title: "Chapter 4: Spark MLlib"
 sidebar_label: "Chapter 4: Spark MLlib"

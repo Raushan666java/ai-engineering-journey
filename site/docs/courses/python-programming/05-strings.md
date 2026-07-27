@@ -1,4 +1,5 @@
 ---
+id: 05-strings
 slug: /python-programming/05-strings
 title: "Chapter 5: Strings"
 sidebar_label: "Chapter 5: Strings"

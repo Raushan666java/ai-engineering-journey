@@ -1,4 +1,5 @@
 ---
+id: 06-semaphores-monitors
 slug: /operating-systems/06-semaphores-monitors
 title: "Chapter 6: Semaphores & Monitors"
 sidebar_label: "Chapter 6: Semaphores & Monitors"

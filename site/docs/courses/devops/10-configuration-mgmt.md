@@ -1,4 +1,5 @@
 ---
+id: 10-configuration-mgmt
 slug: /devops/10-configuration-mgmt
 title: "Chapter 10: Advanced Configuration Management"
 sidebar_label: "Chapter 10: Advanced Configuration Management"

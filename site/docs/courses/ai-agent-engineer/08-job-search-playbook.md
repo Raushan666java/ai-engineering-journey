@@ -1,4 +1,5 @@
 ---
+id: 08-job-search-playbook
 slug: /ai-agent-engineer/08-job-search-playbook
 title: "Job Search Playbook: AI Agent Engineer"
 sidebar_label: "Job Search Playbook: AI Agent Engineer"

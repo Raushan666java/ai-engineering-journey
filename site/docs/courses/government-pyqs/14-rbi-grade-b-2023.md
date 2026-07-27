@@ -1,4 +1,5 @@
 ---
+id: 14-rbi-grade-b-2023
 slug: /government-pyqs/14-rbi-grade-b-2023
 title: "RBI Grade B Phase 1 2023 — Solved Paper"
 sidebar_label: "RBI Grade B Phase 1 2023 — Solved Paper"

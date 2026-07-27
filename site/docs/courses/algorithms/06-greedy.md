@@ -1,4 +1,5 @@
 ---
+id: 06-greedy
 slug: /algorithms/06-greedy
 title: "Chapter 6: Greedy Algorithms"
 sidebar_label: "Chapter 6: Greedy Algorithms"

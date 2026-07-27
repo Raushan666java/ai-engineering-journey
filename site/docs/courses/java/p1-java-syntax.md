@@ -1,4 +1,5 @@
 ---
+id: p1-java-syntax
 slug: /java/p1-java-syntax
 title: "Java Syntax & Fundamentals"
 sidebar_label: "Java Syntax & Fundamentals"

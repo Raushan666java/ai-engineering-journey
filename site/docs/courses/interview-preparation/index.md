@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /interview-preparation/index
 title: "Interview Preparation Module"
 sidebar_label: "Interview Preparation Module"

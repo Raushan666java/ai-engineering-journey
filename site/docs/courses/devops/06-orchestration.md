@@ -1,4 +1,5 @@
 ---
+id: 06-orchestration
 slug: /devops/06-orchestration
 title: "Chapter 6: Orchestration"
 sidebar_label: "Chapter 6: Orchestration"

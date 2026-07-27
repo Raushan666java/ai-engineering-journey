@@ -1,4 +1,5 @@
 ---
+id: 63-interview-tools
 slug: /java/63-interview-tools
 title: "63. Tools & DevOps — Interview Q&A"
 sidebar_label: "63. Tools & DevOps — Interview Q&A"

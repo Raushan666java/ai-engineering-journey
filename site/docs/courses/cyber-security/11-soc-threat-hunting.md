@@ -1,4 +1,5 @@
 ---
+id: 11-soc-threat-hunting
 slug: /cyber-security/11-soc-threat-hunting
 title: "Chapter 11: SOC Operations & Threat Hunting"
 sidebar_label: "Chapter 11: SOC Operations & Threat Hunting"

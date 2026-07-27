@@ -1,4 +1,5 @@
 ---
+id: 02-arrays
 slug: /data-structures/02-arrays
 title: "Chapter 2: Arrays"
 sidebar_label: "Chapter 2: Arrays"

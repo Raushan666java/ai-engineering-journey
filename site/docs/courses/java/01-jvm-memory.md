@@ -1,4 +1,5 @@
 ---
+id: 01-jvm-memory
 slug: /java/01-jvm-memory
 title: "JVM Architecture & Memory Management"
 sidebar_label: "JVM Architecture & Memory Management"

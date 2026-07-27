@@ -1,4 +1,5 @@
 ---
+id: ch-08-gate-theory-prep
 slug: /learning-how-to-learn/ch-08-gate-theory-prep
 title: "Chapter 8: GATE & Theory Exam Prep"
 sidebar_label: "Chapter 8: GATE & Theory Exam Prep"

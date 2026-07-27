@@ -1,4 +1,5 @@
 ---
+id: 02-data-engineering-for-ai
 slug: /modern-ai-engineering/02-data-engineering-for-ai
 title: "Chapter 2: Data Engineering for AI"
 sidebar_label: "Chapter 2: Data Engineering for AI"

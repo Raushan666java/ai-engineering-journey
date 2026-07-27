@@ -1,4 +1,5 @@
 ---
+id: 10-stl-algorithms
 slug: /oop-cpp/10-stl-algorithms
 title: "Chapter 10: STL Algorithms — Master the C++ Standard Template Library"
 sidebar_label: "Chapter 10: STL Algorithms — Master the C++ Standard Template Library"

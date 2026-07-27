@@ -1,4 +1,5 @@
 ---
+id: 05-combinational-circuits
 slug: /digital-logic/05-combinational-circuits
 title: "Chapter 5: Combinational Circuits"
 sidebar_label: "Chapter 5: Combinational Circuits"

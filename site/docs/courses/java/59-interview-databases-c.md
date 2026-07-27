@@ -1,7 +1,8 @@
 ---
+id: 59-interview-databases-c
 slug: /java/59-interview-databases-c
-title: "59 Interview Databases C"
-sidebar_label: "59 Interview Databases C"
+title: "Spring Boot default (enabled) → causes the anti-pattern:"
+sidebar_label: "Spring Boot default (enabled) → causes the anti-pattern:"
 sidebar_position: 61
 ---
 ![Database Sharding - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-c.png)

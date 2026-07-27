@@ -1,4 +1,5 @@
 ---
+id: ch-02-practice-mindset
 slug: /learning-how-to-learn/ch-02-practice-mindset
 title: "Chapter 2: Practice, Mindset & Performance"
 sidebar_label: "Chapter 2: Practice, Mindset & Performance"

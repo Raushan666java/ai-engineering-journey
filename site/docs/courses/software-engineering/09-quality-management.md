@@ -1,4 +1,5 @@
 ---
+id: 09-quality-management
 slug: /software-engineering/09-quality-management
 title: "Software Quality Management"
 sidebar_label: "Software Quality Management"

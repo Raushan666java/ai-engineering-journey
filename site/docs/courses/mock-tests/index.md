@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /mock-tests/index
 title: "Government Exam Mock Tests — Complete Practice Suite"
 sidebar_label: "Government Exam Mock Tests — Complete Practice Suite"

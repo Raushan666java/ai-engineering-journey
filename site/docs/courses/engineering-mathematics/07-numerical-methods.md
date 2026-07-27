@@ -1,4 +1,5 @@
 ---
+id: 07-numerical-methods
 slug: /engineering-mathematics/07-numerical-methods
 title: "Chapter 7: Numerical Methods"
 sidebar_label: "Chapter 7: Numerical Methods"

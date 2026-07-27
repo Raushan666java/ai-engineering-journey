@@ -1,4 +1,5 @@
 ---
+id: 08-nic-scientist-2023
 slug: /government-pyqs/08-nic-scientist-2023
 title: "NIC Scientist B 2023 — Solved Paper"
 sidebar_label: "NIC Scientist B 2023 — Solved Paper"

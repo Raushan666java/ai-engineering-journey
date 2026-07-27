@@ -1,4 +1,5 @@
 ---
+id: 17-boost
 slug: /laravel/17-boost
 title: "Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development"
 sidebar_label: "Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development"

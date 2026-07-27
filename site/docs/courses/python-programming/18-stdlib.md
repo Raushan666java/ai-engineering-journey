@@ -1,4 +1,5 @@
 ---
+id: 18-stdlib
 slug: /python-programming/18-stdlib
 title: "Chapter 18: The Python Standard Library"
 sidebar_label: "Chapter 18: The Python Standard Library"

@@ -1,4 +1,5 @@
 ---
+id: 50-interview-mysql
 slug: /laravel/50-interview-mysql
 title: "MySQL & Database Interview Q&A"
 sidebar_label: "MySQL & Database Interview Q&A"

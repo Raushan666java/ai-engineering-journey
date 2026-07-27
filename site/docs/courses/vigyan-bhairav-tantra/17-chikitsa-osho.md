@@ -1,4 +1,5 @@
 ---
+id: 17-chikitsa-osho
 slug: /vigyan-bhairav-tantra/17-chikitsa-osho
 title: "अध्याय १७: तंत्र चिकित्सा: ओशो के दृष्टिकोण से"
 sidebar_label: "अध्याय १७: तंत्र चिकित्सा: ओशो के दृष्टिकोण से"

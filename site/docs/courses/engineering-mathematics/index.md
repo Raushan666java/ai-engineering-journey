@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /engineering-mathematics/index
 title: "Engineering Mathematics"
 sidebar_label: "Engineering Mathematics"
@@ -45,14 +46,14 @@ The progression follows the typical 4-semester engineering math sequence: Calcul
 
 | Symbol | Meaning | Context |
 |--------|---------|---------|
-| `$\mathbb\{R\}$` | real numbers | throughout |
-| `$\mathbb\{C\}$` | complex numbers | Ch 5 |
-| `$\mathbb\{R\}^n$` | n-dimensional Euclidean space | Ch 1, 3, 10 |
-| `$\nabla$` | gradient operator | Ch 3, 10 |
-| `$\nabla \cdot$` | divergence | Ch 10 |
-| `$\nabla \times$` | curl | Ch 10 |
-| `$\oint$` | contour integral | Ch 5 |
-| `$\mathcal\{L\}$` | Laplace transform | Ch 4, 8 |
-| `$\mathcal\{F\}$` | Fourier transform | Ch 8 |
-| `$\mathbb\{E\}$` | expectation | Ch 6 |
-| `$\mathbf\{1\}_A$` | indicator function | Ch 6 |
+| $\mathbb{R}$ | real numbers | throughout |
+| $\mathbb{C}$ | complex numbers | Ch 5 |
+| $\mathbb{R}^n$ | n-dimensional Euclidean space | Ch 1, 3, 10 |
+| $\nabla$ | gradient operator | Ch 3, 10 |
+| $\nabla \cdot$ | divergence | Ch 10 |
+| $\nabla \times$ | curl | Ch 10 |
+| $\oint$ | contour integral | Ch 5 |
+| $\mathcal{L}$ | Laplace transform | Ch 4, 8 |
+| $\mathcal{F}$ | Fourier transform | Ch 8 |
+| $\mathbb{E}$ | expectation | Ch 6 |
+| $\mathbf{1}_A$ | indicator function | Ch 6 |

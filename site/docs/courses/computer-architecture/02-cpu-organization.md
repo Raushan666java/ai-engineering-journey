@@ -1,4 +1,5 @@
 ---
+id: 02-cpu-organization
 slug: /computer-architecture/02-cpu-organization
 title: "CPU Organization"
 sidebar_label: "CPU Organization"

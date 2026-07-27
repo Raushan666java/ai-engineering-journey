@@ -1,4 +1,5 @@
 ---
+id: 40-interview-finance
 slug: /laravel/40-interview-finance
 title: "Chapter 40: Finance & FinTech Interview Q&A"
 sidebar_label: "Chapter 40: Finance & FinTech Interview Q&A"

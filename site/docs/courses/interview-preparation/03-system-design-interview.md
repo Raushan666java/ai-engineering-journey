@@ -1,4 +1,5 @@
 ---
+id: 03-system-design-interview
 slug: /interview-preparation/03-system-design-interview
 title: "Chapter 3: System Design Interview"
 sidebar_label: "Chapter 3: System Design Interview"

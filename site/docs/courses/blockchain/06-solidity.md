@@ -1,4 +1,5 @@
 ---
+id: 06-solidity
 slug: /blockchain/06-solidity
 title: "Chapter 6: Smart Contract Development"
 sidebar_label: "Chapter 6: Smart Contract Development"

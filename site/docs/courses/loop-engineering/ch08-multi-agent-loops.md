@@ -1,4 +1,5 @@
 ---
+id: ch08-multi-agent-loops
 slug: /loop-engineering/ch08-multi-agent-loops
 title: "Chapter 8: Multi-Agent Loops"
 sidebar_label: "Chapter 8: Multi-Agent Loops"

@@ -1,4 +1,5 @@
 ---
+id: 14-devsecops
 slug: /devops/14-devsecops
 title: "Chapter 14: DevSecOps"
 sidebar_label: "Chapter 14: DevSecOps"

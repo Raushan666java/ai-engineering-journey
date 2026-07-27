@@ -1,4 +1,5 @@
 ---
+id: 01-analysis
 slug: /algorithms/01-analysis
 title: "Chapter 1: Fundamentals of Algorithm Analysis"
 sidebar_label: "Chapter 1: Fundamentals of Algorithm Analysis"

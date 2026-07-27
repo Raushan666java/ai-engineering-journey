@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /banking-financial-awareness/index
 title: "Banking & Financial Awareness"
 sidebar_label: "Banking & Financial Awareness"

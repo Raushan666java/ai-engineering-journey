@@ -1,4 +1,5 @@
 ---
+id: 09-continuous-delivery
 slug: /devops/09-continuous-delivery
 title: "Chapter 9: Continuous Delivery"
 sidebar_label: "Chapter 9: Continuous Delivery"

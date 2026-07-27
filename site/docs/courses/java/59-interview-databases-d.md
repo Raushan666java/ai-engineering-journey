@@ -1,7 +1,8 @@
 ---
+id: 59-interview-databases-d
 slug: /java/59-interview-databases-d
-title: "59 Interview Databases D"
-sidebar_label: "59 Interview Databases D"
+title: "Best practice: Make LAZY the global default"
+sidebar_label: "Best practice: Make LAZY the global default"
 sidebar_position: 62
 ---
 ![Database Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-d.png)

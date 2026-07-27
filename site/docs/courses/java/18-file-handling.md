@@ -1,7 +1,8 @@
 ---
+id: 18-file-handling
 slug: /java/18-file-handling
-title: "18 File Handling"
-sidebar_label: "18 File Handling"
+title: "File Upload, Download & Streaming"
+sidebar_label: "File Upload, Download & Streaming"
 sidebar_position: 18
 ---
 > **Previous:** [OpenAPI](./17-openapi.md) | **Next:** [JDBC/JOOQ](./19-jdbc-jooq.md)

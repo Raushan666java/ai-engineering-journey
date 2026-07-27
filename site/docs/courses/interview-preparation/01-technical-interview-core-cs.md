@@ -1,4 +1,5 @@
 ---
+id: 01-technical-interview-core-cs
 slug: /interview-preparation/01-technical-interview-core-cs
 title: "Chapter 1: Technical Interview — Core Computer Science Subjects"
 sidebar_label: "Chapter 1: Technical Interview — Core Computer Science Subjects"

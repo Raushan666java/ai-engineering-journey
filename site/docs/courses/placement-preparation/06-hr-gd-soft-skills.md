@@ -1,4 +1,5 @@
 ---
+id: 06-hr-gd-soft-skills
 slug: /placement-preparation/06-hr-gd-soft-skills
 title: "HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide"
 sidebar_label: "HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide"

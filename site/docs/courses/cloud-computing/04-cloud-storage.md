@@ -1,4 +1,5 @@
 ---
+id: 04-cloud-storage
 slug: /cloud-computing/04-cloud-storage
 title: "Chapter 4: Cloud Storage Services"
 sidebar_label: "Chapter 4: Cloud Storage Services"

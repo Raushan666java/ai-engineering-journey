@@ -1,4 +1,5 @@
 ---
+id: ch-15-exam-cracking-mastery
 slug: /learning-how-to-learn/ch-15-exam-cracking-mastery
 title: "Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam"
 sidebar_label: "Chapter 15: Exam Cracking Mastery — Universal Strategy for Any Exam"

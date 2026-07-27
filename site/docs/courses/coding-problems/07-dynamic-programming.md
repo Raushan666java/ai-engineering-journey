@@ -1,4 +1,5 @@
 ---
+id: 07-dynamic-programming
 slug: /coding-problems/07-dynamic-programming
 title: "Chapter 07: Dynamic Programming"
 sidebar_label: "Chapter 07: Dynamic Programming"

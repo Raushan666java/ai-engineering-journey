@@ -1,4 +1,5 @@
 ---
+id: 05-behavioral-hr-interview
 slug: /interview-preparation/05-behavioral-hr-interview
 title: "Chapter 5: Behavioral and HR Interview"
 sidebar_label: "Chapter 5: Behavioral and HR Interview"

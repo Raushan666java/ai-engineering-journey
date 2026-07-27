@@ -1,4 +1,5 @@
 ---
+id: 15-cdn-dns-edge
 slug: /system-design/15-cdn-dns-edge
 title: "Chapter 15: CDN, DNS, and Edge Computing"
 sidebar_label: "Chapter 15: CDN, DNS, and Edge Computing"

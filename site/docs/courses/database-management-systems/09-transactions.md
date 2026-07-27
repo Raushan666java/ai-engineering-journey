@@ -1,4 +1,5 @@
 ---
+id: 09-transactions
 slug: /database-management-systems/09-transactions
 title: "Chapter 9: Transactions"
 sidebar_label: "Chapter 9: Transactions"

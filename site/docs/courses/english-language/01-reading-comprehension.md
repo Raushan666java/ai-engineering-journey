@@ -1,4 +1,5 @@
 ---
+id: 01-reading-comprehension
 slug: /english-language/01-reading-comprehension
 title: "Chapter 1: Reading Comprehension"
 sidebar_label: "Chapter 1: Reading Comprehension"

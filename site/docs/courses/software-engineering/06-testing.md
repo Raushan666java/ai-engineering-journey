@@ -1,4 +1,5 @@
 ---
+id: 06-testing
 slug: /software-engineering/06-testing
 title: "Software Testing"
 sidebar_label: "Software Testing"

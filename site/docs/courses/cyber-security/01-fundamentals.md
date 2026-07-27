@@ -1,4 +1,5 @@
 ---
+id: 01-fundamentals
 slug: /cyber-security/01-fundamentals
 title: "Chapter 1: Security Fundamentals"
 sidebar_label: "Chapter 1: Security Fundamentals"

@@ -1,8 +1,8 @@
 # Backend + AI Engineer — Complete Placement Course
 
-> **Zero to job-ready in 12 months. 24 subjects, 224+ sub-chapters, 2,440+ interview Q&A. All in browser localStorage — zero backend.**
+> **Zero to job-ready in 12 months. 26 subjects, 247+ sub-chapters, 2,700+ interview Q&A. All in browser localStorage — zero backend.**
 
-[![Build Status](https://img.shields.io/badge/status-in--progress-yellow)](https://)
+![Build Status](https://img.shields.io/badge/status-in--progress-yellow)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.11%2B-3776AB.svg)](https://python.org)
 
@@ -12,11 +12,11 @@ This is a **single, unified placement course** for software developers targeting
 
 | Feature | Detail |
 |---------|--------|
-| **Subjects** | 24 broad subject areas (Core CS → Trending AI/ML) |
-| **Sub-chapters** | 224+ focused topic files, each 400+ lines |
-| **Interview Q&A** | 2,440+ questions with expandable answers — click to reveal |
-| **Chapter Quizzes** | 5 MCQ per sub-chapter = 975+ total questions |
-| **Exercises** | 5 hands-on per sub-chapter = 975+ exercises |
+| **Subjects** | 26 broad subject areas (Core CS → Trending AI/ML) |
+| **Sub-chapters** | 247+ focused topic files, each 400+ lines |
+| **Interview Q&A** | 2,700+ questions with expandable answers — click to reveal |
+| **Chapter Quizzes** | 5 MCQ per sub-chapter = 1,235+ total questions |
+| **Exercises** | 5 hands-on per sub-chapter = 1,235+ exercises |
 | **Capstone Projects** | 5 production-grade projects, from beginner to SaaS |
 | **Progress Tracking** | All in browser localStorage — theory, Q&A, exercises, streak |
 | **Study Mode** | Review Mode, spaced repetition, bookmarks, daily goals |
@@ -46,14 +46,16 @@ flowchart LR
     subgraph M1[Module 1: Foundations]
         P1[Python<br/>14 ch] --> SQL[SQL<br/>10 ch]
         SQL --> DSA[DSA<br/>18 ch]
-        DSA --> GLC[Git/Linux<br/>6 ch]
+        DSA --> GLC[Git/Linux<br/>9 ch]
+        GLC --> STAT[Stats/Math<br/>8 ch]
     end
-    subgraph M2[Module 2: Backend]
-        FB[FastAPI<br/>10 ch] --> DKC[Docker/K8s<br/>10 ch]
-        DKC --> SD[System Design<br/>12 ch]
+    subgraph M2[Module 2: Backend & Data]
+        FB[FastAPI<br/>10 ch] --> DKC[Docker/K8s<br/>13 ch]
+        DKC --> SD[System Design<br/>14 ch]
+        SD --> DE[Data Eng<br/>5 ch]
     end
     subgraph M3[Module 3: ML & DL]
-        ML[ML<br/>10 ch] --> DL[PyTorch/DL<br/>10 ch]
+        ML[ML<br/>12 ch] --> DL[PyTorch/DL<br/>10 ch]
         DL --> NLP[NLP/Transformers<br/>8 ch]
     end
     subgraph M4[Module 4: GenAI]
@@ -117,88 +119,94 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 11 | DSA: stacks, queues, trees, BST | DSA 08-10 | 3 Q&A per day |
 | 12 | DSA: heaps, tries, graphs | DSA 11-14 | 3 Q&A per day |
 | 13 | DSA: DP 1D, DP 2D, backtracking, bit | DSA 15-18 | 3 Q&A per day |
-| 14 | Git + Linux | GIT 01-06 | Review all Q&A |
+| 14 | Git + Linux + SSH, cron, process mgmt | GIT 01-09 | Review all Q&A |
+| 15 | Statistics: descriptive, probability | STAT 01-02 | 3 Q&A per day |
+| 16 | Statistics: hypothesis testing, correlation | STAT 03-04 | 3 Q&A per day |
+| 17 | Linear algebra, calculus, A/B testing | STAT 05-07 | 3 Q&A per day |
+| 18 | Statistics for ML practical | STAT 08 | 3 Q&A per day |
 
-### Month 3-4: Backend Engineering (FastAPI + Docker/K8s + System Design)
+### Month 3-4: Backend Engineering (FastAPI + Docker/K8s + System Design + Data Engineering)
 
 | Week | Focus | Sub-chapters | Daily Target |
 |------|-------|-------------|--------------|
-| 15 | FastAPI: REST, basics, Pydantic | FB 01-03 | 3 Q&A per day |
-| 16 | FastAPI: DI, auth, database | FB 04-06 | 3 Q&A per day |
-| 17 | FastAPI: async, testing, error, deploy | FB 07-10 | 3 Q&A per day |
-| 18 | Docker: basics, compose, best practices | DKC 01-03 | 3 Q&A per day |
-| 19 | K8s: basics, config, scaling | DKC 04-06 | 3 Q&A per day |
-| 20 | Cloud: AWS, containers, Azure/GCP, CI/CD | DKC 07-10 | 3 Q&A per day |
-| 21 | System Design: scalability, microservices, queues | SD 01-03 | 3 Q&A per day |
-| 22 | System Design: caching, DB scaling, CAP, API | SD 04-07 | 3 Q&A per day |
-| 23 | System Design: rate limiting, monitoring, walkthroughs | SD 08-12 | 3 Q&A per day |
-| 24 | **Capstone 1**: House Price Prediction API | Build + Deploy | — |
+| 19 | FastAPI: REST, basics, Pydantic | FB 01-03 | 3 Q&A per day |
+| 20 | FastAPI: DI, auth, database | FB 04-06 | 3 Q&A per day |
+| 21 | FastAPI: async, testing, error, deploy | FB 07-10 | 3 Q&A per day |
+| 22 | Docker: basics, compose, best practices | DKC 01-03 | 3 Q&A per day |
+| 23 | K8s: basics, config, scaling | DKC 04-06 | 3 Q&A per day |
+| 24 | Cloud: AWS, Lambda, Azure AI, GCP Vertex, CI/CD | DKC 07-13 | 3 Q&A per day |
+| 25 | System Design: scalability, microservices, queues | SD 01-03 | 3 Q&A per day |
+| 26 | System Design: caching, DB scaling, CAP, API | SD 04-07 | 3 Q&A per day |
+| 27 | System Design: rate limiting, monitoring, notification, upload | SD 08-14 | 3 Q&A per day |
+| 28 | Data Engineering: ETL, lakehouse, Spark basics | DE 01-03 | 3 Q&A per day |
+| 29 | Data Engineering: streaming, feature stores | DE 04-05 | 3 Q&A per day |
+| 30 | **Capstone 1**: House Price Prediction API | Build + Deploy | — |
 
 ### Month 5-6: ML & Deep Learning
 
 | Week | Focus | Sub-chapters | Daily Target |
 |------|-------|-------------|--------------|
-| 25 | ML: fundamentals, linear regression | ML 01-02 | 3 Q&A per day |
-| 26 | ML: logistic regression, decision trees | ML 03-04 | 3 Q&A per day |
-| 27 | ML: SVM, ensemble, unsupervised | ML 05-07 | 3 Q&A per day |
-| 28 | ML: PCA, evaluation, hyperparameter tuning | ML 08-10 | 3 Q&A per day |
-| 29 | DL: neural nets basics, PyTorch tensors | DL 01-02 | 3 Q&A per day |
-| 30 | DL: nn.Module, CNN fundamentals | DL 03-04 | 3 Q&A per day |
-| 31 | DL: advanced CNN, transfer learning | DL 05-06 | 3 Q&A per day |
-| 32 | DL: RNN/LSTM, training pipelines | DL 07-08 | 3 Q&A per day |
-| 33 | DL: deployment, best practices | DL 09-10 | 3 Q&A per day |
-| 34 | **Capstone 2**: Resume ATS Analyzer | Build + Deploy | — |
+| 31 | ML: fundamentals, linear regression | ML 01-02 | 3 Q&A per day |
+| 32 | ML: logistic regression, Naive Bayes, decision trees | ML 03-04, 11 | 3 Q&A per day |
+| 33 | ML: SVM, ensemble, unsupervised | ML 05-07 | 3 Q&A per day |
+| 34 | ML: PCA, evaluation, hyperparameter tuning, feature eng | ML 08-10, 12 | 3 Q&A per day |
+| 35 | DL: neural nets basics, PyTorch tensors | DL 01-02 | 3 Q&A per day |
+| 36 | DL: nn.Module, CNN fundamentals | DL 03-04 | 3 Q&A per day |
+| 37 | DL: advanced CNN, transfer learning | DL 05-06 | 3 Q&A per day |
+| 38 | DL: RNN/LSTM, training pipelines | DL 07-08 | 3 Q&A per day |
+| 39 | DL: deployment, best practices | DL 09-10 | 3 Q&A per day |
+| 40 | **Capstone 2**: Resume ATS Analyzer | Build + Deploy | — |
 
 ### Month 7-8: NLP & GenAI
 
 | Week | Focus | Sub-chapters | Daily Target |
 |------|-------|-------------|--------------|
-| 35 | NLP: preprocessing, embeddings | NLP 01-02 | 3 Q&A per day |
-| 36 | NLP: sequence models, attention | NLP 03-04 | 3 Q&A per day |
-| 37 | NLP: transformers, BERT, Hugging Face | NLP 05-07 | 3 Q&A per day |
-| 38 | NLP: applications | NLP 08 | 3 Q&A per day |
-| 39 | LLMs: overview, APIs, zero/few-shot | LLM 01-03 | 3 Q&A per day |
-| 40 | LLMs: CoT, structured output, context | LLM 04-06 | 3 Q&A per day |
-| 41 | LLMs: evaluation, cost optimization | LLM 07-08 | 3 Q&A per day |
-| 42 | **Capstone 3**: Enterprise RAG Platform | Build + Deploy | — |
+| 41 | NLP: preprocessing, embeddings | NLP 01-02 | 3 Q&A per day |
+| 42 | NLP: sequence models, attention | NLP 03-04 | 3 Q&A per day |
+| 43 | NLP: transformers, BERT, Hugging Face | NLP 05-07 | 3 Q&A per day |
+| 44 | NLP: applications | NLP 08 | 3 Q&A per day |
+| 45 | LLMs: overview, APIs, zero/few-shot | LLM 01-03 | 3 Q&A per day |
+| 46 | LLMs: CoT, structured output, context | LLM 04-06 | 3 Q&A per day |
+| 47 | LLMs: evaluation, cost optimization | LLM 07-08 | 3 Q&A per day |
+| 48 | **Capstone 3**: Enterprise RAG Platform | Build + Deploy | — |
 
 ### Month 9-10: RAG, Agents, Fine-Tuning
 
 | Week | Focus | Sub-chapters | Daily Target |
 |------|-------|-------------|--------------|
-| 43 | RAG: architecture, chunking, embeddings | RAG 01-03 | 3 Q&A per day |
-| 44 | RAG: vector DB, similarity, hybrid search | RAG 04-06 | 3 Q&A per day |
-| 45 | RAG: re-ranking, advanced patterns, eval | RAG 07-09 | 3 Q&A per day |
-| 46 | RAG: production | RAG 10 | 3 Q&A per day |
-| 47 | Agents: overview, ReAct, tool calling | AGE 01-03 | 3 Q&A per day |
-| 48 | Agents: memory, LangGraph basics | AGE 04-05 | 3 Q&A per day |
-| 49 | Agents: LangGraph advanced, multi-agent | AGE 06-07 | 3 Q&A per day |
-| 50 | Agents: MCP, evaluation, production | AGE 08-10 | 3 Q&A per day |
-| 51 | Fine-tuning: when, full FT, LoRA theory | FT 01-03 | 3 Q&A per day |
-| 52 | Fine-tuning: LoRA impl, QLoRA, instruction | FT 04-06 | 3 Q&A per day |
-| 53 | Fine-tuning: DPO, evaluation | FT 07-08 | 3 Q&A per day |
-| 54 | **Capstone 4**: Multi-Agent Support System | Build + Deploy | — |
+| 49 | RAG: architecture, chunking, embeddings | RAG 01-03 | 3 Q&A per day |
+| 50 | RAG: vector DB, similarity, hybrid search | RAG 04-06 | 3 Q&A per day |
+| 51 | RAG: re-ranking, advanced patterns, eval | RAG 07-09 | 3 Q&A per day |
+| 52 | RAG: production | RAG 10 | 3 Q&A per day |
+| 53 | Agents: overview, ReAct, tool calling | AGE 01-03 | 3 Q&A per day |
+| 54 | Agents: memory, LangGraph basics | AGE 04-05 | 3 Q&A per day |
+| 55 | Agents: LangGraph advanced, multi-agent | AGE 06-07 | 3 Q&A per day |
+| 56 | Agents: MCP, evaluation, production | AGE 08-10 | 3 Q&A per day |
+| 57 | Fine-tuning: when, full FT, LoRA theory | FT 01-03 | 3 Q&A per day |
+| 58 | Fine-tuning: LoRA impl, QLoRA, instruction | FT 04-06 | 3 Q&A per day |
+| 59 | Fine-tuning: DPO, evaluation | FT 07-08 | 3 Q&A per day |
+| 60 | **Capstone 4**: Multi-Agent Support System | Build + Deploy | — |
 
 ### Month 11-13: Production, Security, Portfolio, Interview
 
 | Week | Focus | Sub-chapters | Daily Target |
 |------|-------|-------------|--------------|
-| 55 | Eval: metrics, LLM-as-judge, datasets | EVAL 01-03 | 3 Q&A per day |
-| 56 | Eval: observability, tracing, alerting | EVAL 04-06 | 3 Q&A per day |
-| 57 | MLOps: tracking, prompt, data, CI/CD | MLOPS 01-04 | 3 Q&A per day |
-| 58 | MLOps: serving, drift, cost, incident | MLOPS 05-08 | 3 Q&A per day |
-| 59 | Security: threats, injection, filtering | SEC 01-03 | 3 Q&A per day |
-| 60 | Security: guardrails, secrets, compliance | SEC 04-06 | 3 Q&A per day |
-| 61 | Multimodal: CV basics, object detection | MM 01-02 | 3 Q&A per day |
-| 62 | Multimodal: segmentation, OCR, STT, voice | MM 03-06 | 3 Q&A per day |
-| 63 | **Capstone 5**: Full AI SaaS Platform | Build + Deploy | — |
-| 64 | Portfolio: GitHub, repos, blogging, LinkedIn | PORT 01-06 | — |
-| 65 | Interview: DSA, SQL, backend patterns | INT 01-03 | Practice 10 Qs |
-| 66 | Interview: ML, DL, LLM/RAG | INT 04-06 | Practice 10 Qs |
-| 67 | Interview: agents, system design, behavioral | INT 07-09 | Mock interview |
-| 68 | Interview: resume, salary, mock sims | INT 10-12 | Full mock round |
-| 69 | Interview: math, ML sys design, FAANG deep dives | INT 13-15 | Practice 10 Qs |
-| 70 | Interview: DSA bank, OOD, debugging, AI tools | INT 16-19 | Full mock round |
+| 61 | Eval: metrics, LLM-as-judge, datasets | EVAL 01-03 | 3 Q&A per day |
+| 62 | Eval: observability, tracing, alerting | EVAL 04-06 | 3 Q&A per day |
+| 63 | MLOps: tracking, prompt, data, CI/CD | MLOPS 01-04 | 3 Q&A per day |
+| 64 | MLOps: serving, drift, cost, incident | MLOPS 05-08 | 3 Q&A per day |
+| 65 | Security: threats, injection, filtering | SEC 01-03 | 3 Q&A per day |
+| 66 | Security: guardrails, secrets, compliance | SEC 04-06 | 3 Q&A per day |
+| 67 | Multimodal: CV basics, object detection | MM 01-02 | 3 Q&A per day |
+| 68 | Multimodal: segmentation, OCR, STT, voice | MM 03-06 | 3 Q&A per day |
+| 69 | **Capstone 5**: Full AI SaaS Platform | Build + Deploy | — |
+| 70 | Portfolio: GitHub, repos, blogging, LinkedIn | PORT 01-06 | — |
+| 71 | Interview: DSA, SQL, backend patterns | INT 01-03 | Practice 10 Qs |
+| 72 | Interview: ML, DL, LLM/RAG | INT 04-06 | Practice 10 Qs |
+| 73 | Interview: agents, system design, behavioral | INT 07-09 | Mock interview |
+| 74 | Interview: resume, salary, mock sims | INT 10-12 | Full mock round |
+| 75 | Interview: math, ML sys design, FAANG deep dives | INT 13-15 | Practice 10 Qs |
+| 76 | Interview: DSA bank, OOD, debugging, AI tools | INT 16-19 | Full mock round |
 
 ## Subject Overview
 
@@ -208,11 +216,11 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 01 | Python for AI | 14 | 140 | 40 | ⭐⭐⭐ |
 | 02 | SQL & Databases | 10 | 100 | 25 | ⭐⭐⭐⭐ |
 | 03 | DSA | 18 | 216 | 60 | ⭐⭐⭐⭐⭐ |
-| 04 | Git, Linux & CLI | 6 | 48 | 10 | ⭐⭐ |
+| 04 | Git, Linux & CLI | 9 | 72 | 15 | ⭐⭐ |
 | 05 | FastAPI & Backend | 10 | 100 | 35 | ⭐⭐⭐⭐⭐ |
-| 06 | Docker, K8s & Cloud | 10 | 100 | 30 | ⭐⭐⭐⭐ |
-| 07 | System Design | 12 | 144 | 40 | ⭐⭐⭐⭐⭐ |
-| 08 | ML | 10 | 100 | 35 | ⭐⭐⭐⭐ |
+| 06 | Docker, K8s & Cloud | 13 | 130 | 35 | ⭐⭐⭐⭐ |
+| 07 | System Design | 14 | 168 | 45 | ⭐⭐⭐⭐⭐ |
+| 08 | ML | 12 | 120 | 40 | ⭐⭐⭐⭐ |
 | 09 | Deep Learning / PyTorch | 10 | 100 | 35 | ⭐⭐⭐⭐ |
 | 10 | NLP & Transformers | 8 | 80 | 25 | ⭐⭐⭐ |
 | 11 | LLMs & Prompt Engineering | 8 | 80 | 25 | ⭐⭐⭐⭐⭐ |
@@ -228,7 +236,9 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 21 | Portfolio & Branding | 6 | 48 | 15 | ⭐⭐⭐ |
 | 22 | Interview Preparation | 19 | 285 | 80 | ⭐⭐⭐⭐⭐ |
 | 23 | Trending AI/ML Platforms & Tools | 4 | 40 | 10 | ⭐⭐⭐ |
-| **Total** | **24** | **~224** | **~2,440** | **~770** | — |
+| 24 | Statistics & Mathematics for AI | 8 | 80 | 30 | ⭐⭐⭐⭐ |
+| 25 | Data Engineering for AI | 5 | 50 | 20 | ⭐⭐⭐ |
+| **Total** | **26** | **~247** | **~2,718** | **~830** | — |
 
 ## How to Use This Course
 

@@ -1,4 +1,5 @@
 ---
+id: 03-hindi-vocabulary
 slug: /hindi-language/03-hindi-vocabulary
 title: "Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)"
 sidebar_label: "Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)"

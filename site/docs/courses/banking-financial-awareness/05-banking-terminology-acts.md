@@ -1,4 +1,5 @@
 ---
+id: 05-banking-terminology-acts
 slug: /banking-financial-awareness/05-banking-terminology-acts
 title: "Chapter 5: Banking Terminology & Acts"
 sidebar_label: "Chapter 5: Banking Terminology & Acts"

@@ -1,4 +1,5 @@
 ---
+id: 30-mockito
 slug: /java/30-mockito
 title: "Mockito & Mocking Frameworks"
 sidebar_label: "Mockito & Mocking Frameworks"

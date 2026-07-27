@@ -1,4 +1,5 @@
 ---
+id: 04-logical-reasoning-drills
 slug: /speed-drills/04-logical-reasoning-drills
 title: "Logical Reasoning Speed Drills"
 sidebar_label: "Logical Reasoning Speed Drills"

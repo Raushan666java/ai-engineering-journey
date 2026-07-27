@@ -1,4 +1,5 @@
 ---
+id: 10-turing-extensions
 slug: /theory-of-computation/10-turing-extensions
 title: "Chapter 10: Turing Machine Extensions and the Church-Turing Thesis"
 sidebar_label: "Chapter 10: Turing Machine Extensions and the Church-Turing Thesis"

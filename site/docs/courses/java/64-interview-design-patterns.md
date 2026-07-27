@@ -1,4 +1,5 @@
 ---
+id: 64-interview-design-patterns
 slug: /java/64-interview-design-patterns
 title: "64. Design Patterns → Interview Q&A"
 sidebar_label: "64. Design Patterns → Interview Q&A"

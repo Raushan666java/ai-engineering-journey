@@ -1,4 +1,5 @@
 ---
+id: 24-gate-2024-solved
 slug: /gate-cs-preparation/24-gate-2024-solved
 title: "24 Gate 2024 Solved"
 sidebar_label: "24 Gate 2024 Solved"

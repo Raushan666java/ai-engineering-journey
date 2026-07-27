@@ -1,4 +1,5 @@
 ---
+id: 04-inheritance
 slug: /oop-cpp/04-inheritance
 title: "Chapter 4: Inheritance"
 sidebar_label: "Chapter 4: Inheritance"

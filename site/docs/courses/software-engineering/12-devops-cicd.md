@@ -1,4 +1,5 @@
 ---
+id: 12-devops-cicd
 slug: /software-engineering/12-devops-cicd
 title: "DevOps and CI/CD"
 sidebar_label: "DevOps and CI/CD"

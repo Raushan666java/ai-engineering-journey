@@ -1,4 +1,5 @@
 ---
+id: 04-threads
 slug: /operating-systems/04-threads
 title: "Chapter 4: Threads"
 sidebar_label: "Chapter 4: Threads"

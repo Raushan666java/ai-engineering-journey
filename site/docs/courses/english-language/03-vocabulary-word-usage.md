@@ -1,4 +1,5 @@
 ---
+id: 03-vocabulary-word-usage
 slug: /english-language/03-vocabulary-word-usage
 title: "Chapter 3: Vocabulary & Word Usage"
 sidebar_label: "Chapter 3: Vocabulary & Word Usage"

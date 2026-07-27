@@ -1,4 +1,5 @@
 ---
+id: 17-sre
 slug: /devops/17-sre
 title: "Chapter 17: SRE Principles"
 sidebar_label: "Chapter 17: SRE Principles"

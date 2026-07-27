@@ -1,4 +1,5 @@
 ---
+id: 05-ethernet-switching
 slug: /computer-networks/05-ethernet-switching
 title: "Chapter 5: Ethernet Switching"
 sidebar_label: "Chapter 5: Ethernet Switching"

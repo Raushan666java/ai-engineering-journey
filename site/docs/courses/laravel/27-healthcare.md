@@ -1,4 +1,5 @@
 ---
+id: 27-healthcare
 slug: /laravel/27-healthcare
 title: "Chapter 27: Healthcare AI Agents"
 sidebar_label: "Chapter 27: Healthcare AI Agents"

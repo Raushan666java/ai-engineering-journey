@@ -1,4 +1,5 @@
 ---
+id: 10-pla-pal
 slug: /digital-logic/10-pla-pal
 title: "Chapter 10: Programmable Logic ? PLA and PAL"
 sidebar_label: "Chapter 10: Programmable Logic ? PLA and PAL"

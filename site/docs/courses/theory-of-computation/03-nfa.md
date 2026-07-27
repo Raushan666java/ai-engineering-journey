@@ -1,4 +1,5 @@
 ---
+id: 03-nfa
 slug: /theory-of-computation/03-nfa
 title: "Chapter 3: Nondeterministic Finite Automata"
 sidebar_label: "Chapter 3: Nondeterministic Finite Automata"

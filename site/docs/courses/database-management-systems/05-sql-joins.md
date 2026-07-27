@@ -1,4 +1,5 @@
 ---
+id: 05-sql-joins
 slug: /database-management-systems/05-sql-joins
 title: "Chapter 5: SQL Joins and Subqueries"
 sidebar_label: "Chapter 5: SQL Joins and Subqueries"

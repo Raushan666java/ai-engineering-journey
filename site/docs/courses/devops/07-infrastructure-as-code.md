@@ -1,4 +1,5 @@
 ---
+id: 07-infrastructure-as-code
 slug: /devops/07-infrastructure-as-code
 title: "Chapter 7: Infrastructure as Code"
 sidebar_label: "Chapter 7: Infrastructure as Code"

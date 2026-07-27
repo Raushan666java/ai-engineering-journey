@@ -1,4 +1,5 @@
 ---
+id: 08-higher-nf
 slug: /database-management-systems/08-higher-nf
 title: "Chapter 8: Higher Normal Forms and Denormalization"
 sidebar_label: "Chapter 8: Higher Normal Forms and Denormalization"

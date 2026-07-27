@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /information-security/index
 title: "Information Security & Cryptography — IBPS SO & Govt Exam Prep"
 sidebar_label: "Information Security & Cryptography — IBPS SO & Govt Exam Prep"

@@ -1,4 +1,5 @@
 ---
+id: 09-memory
 slug: /digital-logic/09-memory
 title: "Chapter 9: Semiconductor Memory"
 sidebar_label: "Chapter 9: Semiconductor Memory"

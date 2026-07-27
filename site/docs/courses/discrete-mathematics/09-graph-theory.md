@@ -1,4 +1,5 @@
 ---
+id: 09-graph-theory
 slug: /discrete-mathematics/09-graph-theory
 title: "Chapter 9: Graph Theory"
 sidebar_label: "Chapter 9: Graph Theory"

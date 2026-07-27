@@ -1,4 +1,5 @@
 ---
+id: 05-prompt-engineering
 slug: /modern-ai-engineering/05-prompt-engineering
 title: "Chapter 5: Prompt Engineering"
 sidebar_label: "Chapter 5: Prompt Engineering"

@@ -1,4 +1,5 @@
 ---
+id: 08-runtime-env
 slug: /compiler-design/08-runtime-env
 title: "Chapter 8: Runtime Environment"
 sidebar_label: "Chapter 8: Runtime Environment"

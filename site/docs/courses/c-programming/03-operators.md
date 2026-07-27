@@ -1,4 +1,5 @@
 ---
+id: 03-operators
 slug: /c-programming/03-operators
 title: "Chapter 3: Operators in C --- In-Depth Reference"
 sidebar_label: "Chapter 3: Operators in C --- In-Depth Reference"

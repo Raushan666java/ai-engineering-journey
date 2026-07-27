@@ -1,4 +1,5 @@
 ---
+id: p2-java-oop
 slug: /java/p2-java-oop
 title: "Object-Oriented Programming in Java"
 sidebar_label: "Object-Oriented Programming in Java"

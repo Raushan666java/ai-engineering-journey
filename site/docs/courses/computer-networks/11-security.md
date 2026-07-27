@@ -1,4 +1,5 @@
 ---
+id: 11-security
 slug: /computer-networks/11-security
 title: "Chapter 11: Network Security"
 sidebar_label: "Chapter 11: Network Security"

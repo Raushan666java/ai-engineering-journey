@@ -1,4 +1,5 @@
 ---
+id: 10-data-structures-algorithms
 slug: /gate-cs-preparation/10-data-structures-algorithms
 title: "10 Data Structures Algorithms"
 sidebar_label: "10 Data Structures Algorithms"

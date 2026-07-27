@@ -1,4 +1,5 @@
 ---
+id: ch09-loop-tooling
 slug: /loop-engineering/ch09-loop-tooling
 title: "Chapter 9: Loop Tooling"
 sidebar_label: "Chapter 9: Loop Tooling"

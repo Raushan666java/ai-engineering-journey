@@ -1,4 +1,5 @@
 ---
+id: 01-dbms
 slug: /professional-knowledge/01-dbms
 title: "Chapter 1: Database Management Systems — Exam Quick Revision"
 sidebar_label: "Chapter 1: Database Management Systems — Exam Quick Revision"

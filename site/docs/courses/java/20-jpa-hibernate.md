@@ -1,7 +1,8 @@
 ---
+id: 20-jpa-hibernate
 slug: /java/20-jpa-hibernate
-title: "20 Jpa Hibernate"
-sidebar_label: "20 Jpa Hibernate"
+title: "JPA & Hibernate Deep Dive"
+sidebar_label: "JPA & Hibernate Deep Dive"
 sidebar_position: 20
 ---
 > **Previous:** [JDBC/JOOQ](./19-jdbc-jooq.md) | **Next:** [Spring Data JPA](./21-spring-data-jpa.md)

@@ -1,4 +1,5 @@
 ---
+id: 53-interview-javascript
 slug: /laravel/53-interview-javascript
 title: "Chapter 53: JavaScript Interview Q&A"
 sidebar_label: "Chapter 53: JavaScript Interview Q&A"

@@ -1,4 +1,5 @@
 ---
+id: 02-missing-data-caselet-di
 slug: /data-analysis-interpretation/02-missing-data-caselet-di
 title: "Chapter 2: Missing Data and Caselet DI"
 sidebar_label: "Chapter 2: Missing Data and Caselet DI"

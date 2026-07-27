@@ -1,4 +1,5 @@
 ---
+id: 02-logic
 slug: /discrete-mathematics/02-logic
 title: "Chapter 2: Logic"
 sidebar_label: "Chapter 2: Logic"

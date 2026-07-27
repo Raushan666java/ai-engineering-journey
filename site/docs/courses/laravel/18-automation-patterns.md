@@ -1,4 +1,5 @@
 ---
+id: 18-automation-patterns
 slug: /laravel/18-automation-patterns
 title: "Chapter 18: Automation Patterns & Workflows"
 sidebar_label: "Chapter 18: Automation Patterns & Workflows"

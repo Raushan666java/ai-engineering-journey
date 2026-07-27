@@ -1,4 +1,5 @@
 ---
+id: 24-capstone
 slug: /laravel/24-capstone
 title: "Chapter 24: Capstone Project Ã¢â‚¬â€ AI-Powered Team Collaboration SaaS"
 sidebar_label: "Chapter 24: Capstone Project Ã¢â‚¬â€ AI-Powered Team Collaboration SaaS"

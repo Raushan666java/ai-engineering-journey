@@ -1,4 +1,5 @@
 ---
+id: 02-sales-distribution
 slug: /marketing-aptitude/02-sales-distribution
 title: "Chapter 2: Sales Management and Distribution"
 sidebar_label: "Chapter 2: Sales Management and Distribution"

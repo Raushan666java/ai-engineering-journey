@@ -1,4 +1,5 @@
 ---
+id: 34-real-estate
 slug: /laravel/34-real-estate
 title: "Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents"
 sidebar_label: "Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents"

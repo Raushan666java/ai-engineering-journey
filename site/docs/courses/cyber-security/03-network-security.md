@@ -1,4 +1,5 @@
 ---
+id: 03-network-security
 slug: /cyber-security/03-network-security
 title: "Chapter 3: Network Security"
 sidebar_label: "Chapter 3: Network Security"

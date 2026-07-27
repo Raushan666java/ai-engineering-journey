@@ -1,4 +1,5 @@
 ---
+id: 03-logic-gates
 slug: /digital-logic/03-logic-gates
 title: "Chapter 3: Logic Gates"
 sidebar_label: "Chapter 3: Logic Gates"

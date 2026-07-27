@@ -1,4 +1,5 @@
 ---
+id: 18-fullstack-project
 slug: /web-development/18-fullstack-project
 title: "Chapter 18: Building a Full-Stack Application"
 sidebar_label: "Chapter 18: Building a Full-Stack Application"

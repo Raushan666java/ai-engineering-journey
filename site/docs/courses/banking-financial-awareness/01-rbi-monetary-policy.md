@@ -1,4 +1,5 @@
 ---
+id: 01-rbi-monetary-policy
 slug: /banking-financial-awareness/01-rbi-monetary-policy
 title: "Chapter 1: RBI & Monetary Policy"
 sidebar_label: "Chapter 1: RBI & Monetary Policy"

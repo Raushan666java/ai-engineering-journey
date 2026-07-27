@@ -1,4 +1,5 @@
 ---
+id: 12-sadhna-mein-badha
 slug: /vigyan-bhairav-tantra/12-sadhna-mein-badha
 title: "अध्याय १२: साधना में बाधाएँ — ओशो का समाधान"
 sidebar_label: "अध्याय १२: साधना में बाधाएँ — ओशो का समाधान"

@@ -1,4 +1,5 @@
 ---
+id: 19-architecture-patterns
 slug: /laravel/19-architecture-patterns
 title: "Chapter 19: Laravel Application Architecture Patterns"
 sidebar_label: "Chapter 19: Laravel Application Architecture Patterns"

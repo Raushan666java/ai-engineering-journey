@@ -1,4 +1,5 @@
 ---
+id: 05-placement-strategy
 slug: /placement-preparation/05-placement-strategy
 title: "05 → Placement Season Strategy"
 sidebar_label: "05 → Placement Season Strategy"

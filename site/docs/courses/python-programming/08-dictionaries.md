@@ -1,4 +1,5 @@
 ---
+id: 08-dictionaries
 slug: /python-programming/08-dictionaries
 title: "Chapter 8: Dictionaries"
 sidebar_label: "Chapter 8: Dictionaries"

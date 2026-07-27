@@ -1,4 +1,5 @@
 ---
+id: ch10-capstone
 slug: /loop-engineering/ch10-capstone
 title: "Chapter 10: Capstone — Build a Production-Grade Coding Agent"
 sidebar_label: "Chapter 10: Capstone — Build a Production-Grade Coding Agent"

@@ -1,4 +1,5 @@
 ---
+id: abhyas-diary
 slug: /vigyan-bhairav-tantra/abhyas-diary
 title: "साधना डायरी: 112 दिनों का अभ्यास पत्रिका"
 sidebar_label: "साधना डायरी: 112 दिनों का अभ्यास पत्रिका"

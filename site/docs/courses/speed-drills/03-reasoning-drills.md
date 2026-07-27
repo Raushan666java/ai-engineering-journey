@@ -1,4 +1,5 @@
 ---
+id: 03-reasoning-drills
 slug: /speed-drills/03-reasoning-drills
 title: "Reasoning Speed Drills"
 sidebar_label: "Reasoning Speed Drills"

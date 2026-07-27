@@ -1,4 +1,5 @@
 ---
+id: 06-queues
 slug: /data-structures/06-queues
 title: "Chapter 6: Queues"
 sidebar_label: "Chapter 6: Queues"

@@ -1,4 +1,5 @@
 ---
+id: 01-marketing-concepts
 slug: /marketing-aptitude/01-marketing-concepts
 title: "Chapter 1: Marketing Concepts"
 sidebar_label: "Chapter 1: Marketing Concepts"

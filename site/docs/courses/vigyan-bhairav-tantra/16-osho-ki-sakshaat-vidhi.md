@@ -1,4 +1,5 @@
 ---
+id: 16-osho-ki-sakshaat-vidhi
 slug: /vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi
 title: "अध्याय १६: ओशो की साक्षात् विधि: गवाही का विज्ञान"
 sidebar_label: "अध्याय १६: ओशो की साक्षात् विधि: गवाही का विज्ञान"

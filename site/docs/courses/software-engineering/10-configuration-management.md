@@ -1,4 +1,5 @@
 ---
+id: 10-configuration-management
 slug: /software-engineering/10-configuration-management
 title: "Configuration Management"
 sidebar_label: "Configuration Management"

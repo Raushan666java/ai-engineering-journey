@@ -1,4 +1,5 @@
 ---
+id: 04-hindi-writing
 slug: /hindi-language/04-hindi-writing
 title: "Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)"
 sidebar_label: "Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)"

@@ -1,4 +1,5 @@
 ---
+id: 04-digital-logic
 slug: /gate-cs-preparation/04-digital-logic
 title: "04 Digital Logic"
 sidebar_label: "04 Digital Logic"

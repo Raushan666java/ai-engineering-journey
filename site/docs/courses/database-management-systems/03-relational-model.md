@@ -1,4 +1,5 @@
 ---
+id: 03-relational-model
 slug: /database-management-systems/03-relational-model
 title: "Chapter 3: The Relational Model"
 sidebar_label: "Chapter 3: The Relational Model"

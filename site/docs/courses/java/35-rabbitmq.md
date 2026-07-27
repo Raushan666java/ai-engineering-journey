@@ -1,4 +1,5 @@
 ---
+id: 35-rabbitmq
 slug: /java/35-rabbitmq
 title: "RabbitMQ"
 sidebar_label: "RabbitMQ"

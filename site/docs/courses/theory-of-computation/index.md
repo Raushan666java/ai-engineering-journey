@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /theory-of-computation/index
 title: "Theory of Computation — Complete Course Textbook"
 sidebar_label: "Theory of Computation — Complete Course Textbook"

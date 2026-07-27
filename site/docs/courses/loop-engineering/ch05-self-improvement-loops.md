@@ -1,4 +1,5 @@
 ---
+id: ch05-self-improvement-loops
 slug: /loop-engineering/ch05-self-improvement-loops
 title: "Chapter 5: Self-Improvement Loops"
 sidebar_label: "Chapter 5: Self-Improvement Loops"

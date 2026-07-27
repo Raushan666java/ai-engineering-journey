@@ -1,4 +1,5 @@
 ---
+id: 05-auth-security
 slug: /laravel/05-auth-security
 title: "Chapter 5: Authentication, Authorization & Security"
 sidebar_label: "Chapter 5: Authentication, Authorization & Security"

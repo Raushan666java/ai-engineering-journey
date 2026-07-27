@@ -1,4 +1,5 @@
 ---
+id: 03-linked-lists
 slug: /coding-problems/03-linked-lists
 title: "Chapter 03: Linked Lists"
 sidebar_label: "Chapter 03: Linked Lists"

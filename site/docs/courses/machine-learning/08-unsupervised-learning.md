@@ -1,4 +1,5 @@
 ---
+id: 08-unsupervised-learning
 slug: /machine-learning/08-unsupervised-learning
 title: "Chapter 8: Unsupervised Learning"
 sidebar_label: "Chapter 8: Unsupervised Learning"

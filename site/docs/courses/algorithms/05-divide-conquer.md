@@ -1,4 +1,5 @@
 ---
+id: 05-divide-conquer
 slug: /algorithms/05-divide-conquer
 title: "Chapter 5: Divide and Conquer"
 sidebar_label: "Chapter 5: Divide and Conquer"

@@ -1,4 +1,5 @@
 ---
+id: javascript-basics
 slug: /laravel/javascript-basics
 title: "Chapter: JavaScript Fundamentals"
 sidebar_label: "Chapter: JavaScript Fundamentals"

@@ -1,4 +1,5 @@
 ---
+id: 15-b-trees
 slug: /data-structures/15-b-trees
 title: "Chapter 15: B-Trees and B+ Trees"
 sidebar_label: "Chapter 15: B-Trees and B+ Trees"

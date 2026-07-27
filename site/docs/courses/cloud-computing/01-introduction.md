@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /cloud-computing/01-introduction
 title: "Chapter 1: Introduction to Cloud Computing"
 sidebar_label: "Chapter 1: Introduction to Cloud Computing"

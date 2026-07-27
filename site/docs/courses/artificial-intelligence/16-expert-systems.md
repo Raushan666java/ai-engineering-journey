@@ -1,4 +1,5 @@
 ---
+id: 16-expert-systems
 slug: /artificial-intelligence/16-expert-systems
 title: "Chapter 16: Expert Systems"
 sidebar_label: "Chapter 16: Expert Systems"

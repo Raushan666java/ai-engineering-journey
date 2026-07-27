@@ -1,4 +1,5 @@
 ---
+id: 07-fol
 slug: /artificial-intelligence/07-fol
 title: "Chapter 7: First-Order Logic and Inference"
 sidebar_label: "Chapter 7: First-Order Logic and Inference"

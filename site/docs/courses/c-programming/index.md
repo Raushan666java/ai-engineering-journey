@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /c-programming/index
 title: "C Programming — Complete University Textbook"
 sidebar_label: "C Programming — Complete University Textbook"

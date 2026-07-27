@@ -1,4 +1,5 @@
 ---
+id: 03-spark-basics
 slug: /big-data/03-spark-basics
 title: "Chapter 3: Apache Spark Basics"
 sidebar_label: "Chapter 3: Apache Spark Basics"

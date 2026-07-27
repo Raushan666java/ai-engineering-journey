@@ -1,4 +1,5 @@
 ---
+id: 07-dapps
 slug: /blockchain/07-dapps
 title: "Chapter 7: Decentralized Applications (dApps)"
 sidebar_label: "Chapter 7: Decentralized Applications (dApps)"

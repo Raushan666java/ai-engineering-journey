@@ -1,4 +1,5 @@
 ---
+id: ch-07-dsa-coding-interview
 slug: /learning-how-to-learn/ch-07-dsa-coding-interview
 title: "Chapter 7: DSA & Coding Interview Prep"
 sidebar_label: "Chapter 7: DSA & Coding Interview Prep"

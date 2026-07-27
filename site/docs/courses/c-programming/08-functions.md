@@ -1,4 +1,5 @@
 ---
+id: 08-functions
 slug: /c-programming/08-functions
 title: "Chapter 8: Functions"
 sidebar_label: "Chapter 8: Functions"

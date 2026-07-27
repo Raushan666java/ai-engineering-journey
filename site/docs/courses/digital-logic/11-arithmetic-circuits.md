@@ -1,4 +1,5 @@
 ---
+id: 11-arithmetic-circuits
 slug: /digital-logic/11-arithmetic-circuits
 title: "Chapter 11: Arithmetic Circuits"
 sidebar_label: "Chapter 11: Arithmetic Circuits"

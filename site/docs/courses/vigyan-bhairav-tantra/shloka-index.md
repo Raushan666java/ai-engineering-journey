@@ -1,4 +1,5 @@
 ---
+id: shloka-index
 slug: /vigyan-bhairav-tantra/shloka-index
 title: "संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)"
 sidebar_label: "संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)"

@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /gate-cs-preparation/index
 title: "Index"
 sidebar_label: "Index"

@@ -1,4 +1,5 @@
 ---
+id: 04-sql-basics
 slug: /database-management-systems/04-sql-basics
 title: "Chapter 4: SQL Basics"
 sidebar_label: "Chapter 4: SQL Basics"

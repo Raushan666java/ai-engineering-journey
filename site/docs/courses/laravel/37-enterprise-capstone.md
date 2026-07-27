@@ -1,4 +1,5 @@
 ---
+id: 37-enterprise-capstone
 slug: /laravel/37-enterprise-capstone
 title: "Chapter 37: Enterprise Capstone → Multi-Agent Platform"
 sidebar_label: "Chapter 37: Enterprise Capstone → Multi-Agent Platform"

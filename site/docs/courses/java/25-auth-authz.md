@@ -1,4 +1,5 @@
 ---
+id: 25-auth-authz
 slug: /java/25-auth-authz
 title: "Authentication & Authorization"
 sidebar_label: "Authentication & Authorization"

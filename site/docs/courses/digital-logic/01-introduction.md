@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /digital-logic/01-introduction
 title: "Chapter 1: Introduction to Digital Logic"
 sidebar_label: "Chapter 1: Introduction to Digital Logic"

@@ -1,4 +1,5 @@
 ---
+id: 16-api-gateways-cqrs
 slug: /system-design/16-api-gateways-cqrs
 title: "Chapter 16: API Gateways, CQRS, and Event Sourcing"
 sidebar_label: "Chapter 16: API Gateways, CQRS, and Event Sourcing"

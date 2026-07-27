@@ -1,4 +1,5 @@
 ---
+id: ch-11-tracking-course-correction
 slug: /learning-how-to-learn-practical/ch-11-tracking-course-correction
 title: "Chapter 11: Tracking & Course Correction"
 sidebar_label: "Chapter 11: Tracking & Course Correction"

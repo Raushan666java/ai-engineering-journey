@@ -1,4 +1,5 @@
 ---
+id: 02-architecture-routing
 slug: /laravel/02-architecture-routing
 title: "Chapter 2: Architecture, Routing, Middleware & Controllers"
 sidebar_label: "Chapter 2: Architecture, Routing, Middleware & Controllers"

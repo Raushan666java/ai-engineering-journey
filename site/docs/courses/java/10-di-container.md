@@ -1,4 +1,5 @@
 ---
+id: 10-di-container
 slug: /java/10-di-container
 title: "Dependency Injection & IoC Container"
 sidebar_label: "Dependency Injection & IoC Container"

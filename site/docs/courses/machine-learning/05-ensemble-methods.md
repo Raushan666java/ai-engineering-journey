@@ -1,4 +1,5 @@
 ---
+id: 05-ensemble-methods
 slug: /machine-learning/05-ensemble-methods
 title: "Chapter 5: Ensemble Methods"
 sidebar_label: "Chapter 5: Ensemble Methods"

@@ -1,4 +1,5 @@
 ---
+id: 04-pipelining-hazards
 slug: /computer-architecture/04-pipelining-hazards
 title: "Pipelining and Hazards"
 sidebar_label: "Pipelining and Hazards"

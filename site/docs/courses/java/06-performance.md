@@ -1,4 +1,5 @@
 ---
+id: 06-performance
 slug: /java/06-performance
 title: "Performance Tuning & Profiling"
 sidebar_label: "Performance Tuning & Profiling"

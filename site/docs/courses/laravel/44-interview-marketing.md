@@ -1,4 +1,5 @@
 ---
+id: 44-interview-marketing
 slug: /laravel/44-interview-marketing
 title: "Chapter 44: Marketing & Advertising → Interview Q&A"
 sidebar_label: "Chapter 44: Marketing & Advertising → Interview Q&A"

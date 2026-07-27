@@ -1,4 +1,5 @@
 ---
+id: 01-quant-arithmetic-drills
 slug: /speed-drills/01-quant-arithmetic-drills
 title: "Quant Arithmetic Speed Drills"
 sidebar_label: "Quant Arithmetic Speed Drills"

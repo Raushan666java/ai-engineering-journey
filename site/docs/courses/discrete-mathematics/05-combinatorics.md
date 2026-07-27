@@ -1,4 +1,5 @@
 ---
+id: 05-combinatorics
 slug: /discrete-mathematics/05-combinatorics
 title: "Chapter 5: Combinatorics"
 sidebar_label: "Chapter 5: Combinatorics"

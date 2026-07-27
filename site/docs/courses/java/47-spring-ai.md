@@ -1,4 +1,5 @@
 ---
+id: 47-spring-ai
 slug: /java/47-spring-ai
 title: "Spring AI"
 sidebar_label: "Spring AI"

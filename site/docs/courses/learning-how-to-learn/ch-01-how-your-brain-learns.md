@@ -1,4 +1,5 @@
 ---
+id: ch-01-how-your-brain-learns
 slug: /learning-how-to-learn/ch-01-how-your-brain-learns
 title: "Chapter 1: How Your Brain Learns"
 sidebar_label: "Chapter 1: How Your Brain Learns"

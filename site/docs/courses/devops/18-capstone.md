@@ -1,4 +1,5 @@
 ---
+id: 18-capstone
 slug: /devops/18-capstone
 title: "Chapter 18: Capstone Project"
 sidebar_label: "Chapter 18: Capstone Project"

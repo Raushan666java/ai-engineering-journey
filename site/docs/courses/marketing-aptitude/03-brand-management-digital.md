@@ -1,4 +1,5 @@
 ---
+id: 03-brand-management-digital
 slug: /marketing-aptitude/03-brand-management-digital
 title: "Chapter 3: Brand Management and Digital Marketing"
 sidebar_label: "Chapter 3: Brand Management and Digital Marketing"

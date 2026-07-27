@@ -1,4 +1,5 @@
 ---
+id: quick-reference-112
 slug: /vigyan-bhairav-tantra/quick-reference-112
 title: "११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)"
 sidebar_label: "११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)"

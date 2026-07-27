@@ -1,4 +1,5 @@
 ---
+id: 04-digital-signatures-pki
 slug: /information-security/04-digital-signatures-pki
 title: "Chapter 4: Digital Signatures & PKI"
 sidebar_label: "Chapter 4: Digital Signatures & PKI"

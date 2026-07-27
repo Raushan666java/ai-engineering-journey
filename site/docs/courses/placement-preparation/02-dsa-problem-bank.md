@@ -1,4 +1,5 @@
 ---
+id: 02-dsa-problem-bank
 slug: /placement-preparation/02-dsa-problem-bank
 title: "DSA Coding Problem Bank for Placement Interviews"
 sidebar_label: "DSA Coding Problem Bank for Placement Interviews"

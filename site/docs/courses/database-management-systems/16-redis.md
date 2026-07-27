@@ -1,4 +1,5 @@
 ---
+id: 16-redis
 slug: /database-management-systems/16-redis
 title: "Chapter 16: Redis â†’ In-Memory Data Store"
 sidebar_label: "Chapter 16: Redis â†’ In-Memory Data Store"

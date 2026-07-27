@@ -1,4 +1,5 @@
 ---
+id: 56-interview-java
 slug: /java/56-interview-java
 title: "Java Core Interview Q&A"
 sidebar_label: "Java Core Interview Q&A"

@@ -1,4 +1,5 @@
 ---
+id: ch-05-deep-work-focus
 slug: /learning-how-to-learn-practical/ch-05-deep-work-focus
 title: "Chapter 5: Deep Work & Focus"
 sidebar_label: "Chapter 5: Deep Work & Focus"

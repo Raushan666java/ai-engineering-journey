@@ -1,4 +1,5 @@
 ---
+id: p4-exceptions-io
 slug: /java/p4-exceptions-io
 title: "Exception Handling & I/O"
 sidebar_label: "Exception Handling & I/O"

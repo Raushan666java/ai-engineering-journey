@@ -1,4 +1,5 @@
 ---
+id: certificate
 slug: /learning-how-to-learn-practical/certificate
 title: "Certificate of Completion"
 sidebar_label: "Certificate of Completion"

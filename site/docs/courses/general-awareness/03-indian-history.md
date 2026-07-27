@@ -1,4 +1,5 @@
 ---
+id: 03-indian-history
 slug: /general-awareness/03-indian-history
 title: "Chapter 3: Indian History & Culture"
 sidebar_label: "Chapter 3: Indian History & Culture"

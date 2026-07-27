@@ -1,4 +1,5 @@
 ---
+id: 04-regex
 slug: /theory-of-computation/04-regex
 title: "Chapter 4: Regular Expressions"
 sidebar_label: "Chapter 4: Regular Expressions"

@@ -1,4 +1,5 @@
 ---
+id: 04-bitcoin
 slug: /blockchain/04-bitcoin
 title: "Chapter 4: The Bitcoin Network"
 sidebar_label: "Chapter 4: The Bitcoin Network"

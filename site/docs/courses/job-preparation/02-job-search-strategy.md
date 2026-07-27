@@ -1,4 +1,5 @@
 ---
+id: 02-job-search-strategy
 slug: /job-preparation/02-job-search-strategy
 title: "Job Search Strategy for Indian IT Professionals"
 sidebar_label: "Job Search Strategy for Indian IT Professionals"

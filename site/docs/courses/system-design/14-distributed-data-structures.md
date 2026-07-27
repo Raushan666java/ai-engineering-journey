@@ -1,4 +1,5 @@
 ---
+id: 14-distributed-data-structures
 slug: /system-design/14-distributed-data-structures
 title: "Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond"
 sidebar_label: "Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond"

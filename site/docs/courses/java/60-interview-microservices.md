@@ -1,4 +1,5 @@
 ---
+id: 60-interview-microservices
 slug: /java/60-interview-microservices
 title: "Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)"
 sidebar_label: "Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)"

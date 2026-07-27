@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /devops/index
 title: "DevOps Engineering — Complete University Textbook"
 sidebar_label: "DevOps Engineering — Complete University Textbook"

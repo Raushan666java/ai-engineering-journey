@@ -1,4 +1,5 @@
 ---
+id: 05-es6-plus
 slug: /web-development/05-es6-plus
 title: "Chapter 5 — ES6+ JavaScript"
 sidebar_label: "Chapter 5 — ES6+ JavaScript"

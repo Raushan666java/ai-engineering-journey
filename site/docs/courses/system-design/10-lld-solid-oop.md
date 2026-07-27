@@ -1,4 +1,5 @@
 ---
+id: 10-lld-solid-oop
 slug: /system-design/10-lld-solid-oop
 title: "Chapter 10: Low-Level Design: SOLID Principles and OOP"
 sidebar_label: "Chapter 10: Low-Level Design: SOLID Principles and OOP"

@@ -1,4 +1,5 @@
 ---
+id: 18-mock-test-4
 slug: /gate-cs-preparation/18-mock-test-4
 title: "18 Mock Test 4"
 sidebar_label: "18 Mock Test 4"

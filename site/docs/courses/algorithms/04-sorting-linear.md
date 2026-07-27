@@ -1,4 +1,5 @@
 ---
+id: 04-sorting-linear
 slug: /algorithms/04-sorting-linear
 title: "Chapter 4: Linear-Time Sorting"
 sidebar_label: "Chapter 4: Linear-Time Sorting"

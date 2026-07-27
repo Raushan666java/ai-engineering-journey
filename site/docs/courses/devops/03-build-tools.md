@@ -1,4 +1,5 @@
 ---
+id: 03-build-tools
 slug: /devops/03-build-tools
 title: "Chapter 3: Build Tools"
 sidebar_label: "Chapter 3: Build Tools"

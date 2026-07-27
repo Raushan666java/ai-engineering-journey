@@ -1,4 +1,5 @@
 ---
+id: 10-architecture
 slug: /cloud-computing/10-architecture
 title: "Chapter 10: Cloud Architecture Design Patterns"
 sidebar_label: "Chapter 10: Cloud Architecture Design Patterns"

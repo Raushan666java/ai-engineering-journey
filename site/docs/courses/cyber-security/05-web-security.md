@@ -1,4 +1,5 @@
 ---
+id: 05-web-security
 slug: /cyber-security/05-web-security
 title: "Chapter 5: Web Security"
 sidebar_label: "Chapter 5: Web Security"

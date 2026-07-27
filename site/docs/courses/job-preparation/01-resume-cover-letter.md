@@ -1,4 +1,5 @@
 ---
+id: 01-resume-cover-letter
 slug: /job-preparation/01-resume-cover-letter
 title: "Resume and Cover Letter Mastery for Indian IT Jobs"
 sidebar_label: "Resume and Cover Letter Mastery for Indian IT Jobs"

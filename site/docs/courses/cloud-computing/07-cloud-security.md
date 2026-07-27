@@ -1,4 +1,5 @@
 ---
+id: 07-cloud-security
 slug: /cloud-computing/07-cloud-security
 title: "Chapter 7: Cloud Security"
 sidebar_label: "Chapter 7: Cloud Security"

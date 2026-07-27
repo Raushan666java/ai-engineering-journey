@@ -1,4 +1,5 @@
 ---
+id: 03-verbal-ability
 slug: /general-aptitude/03-verbal-ability
 title: "Chapter 3: Verbal Ability"
 sidebar_label: "Chapter 3: Verbal Ability"

@@ -1,4 +1,5 @@
 ---
+id: 05-offer-negotiation-career-growth
 slug: /job-preparation/05-offer-negotiation-career-growth
 title: "Offer Negotiation and Career Growth Planning"
 sidebar_label: "Offer Negotiation and Career Growth Planning"

@@ -1,4 +1,5 @@
 ---
+id: 16-generators
 slug: /python-programming/16-generators
 title: "Chapter 16: Generators and itertools"
 sidebar_label: "Chapter 16: Generators and itertools"

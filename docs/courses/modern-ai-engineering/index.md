@@ -2,7 +2,7 @@
 
 > **A comprehensive course based on Chip Huyen's definitive guide to building AI applications with foundation models. Covers data engineering, model selection, evaluation, prompt engineering, RAG, fine-tuning, agents, safety, production, and MLOps — all with TypeScript implementations.**
 
-[![Course Status](https://img.shields.io/badge/status-live-brightgreen.svg)](https://)
+![Course Status](https://img.shields.io/badge/status-live-brightgreen.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node](https://img.shields.io/badge/node-20%2B-339933.svg)](https://nodejs.org)
 

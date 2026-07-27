@@ -1,4 +1,5 @@
 ---
+id: 08-greedy
 slug: /coding-problems/08-greedy
 title: "Chapter 08: Greedy Algorithms"
 sidebar_label: "Chapter 08: Greedy Algorithms"

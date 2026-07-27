@@ -1,4 +1,5 @@
 ---
+id: 03-blade-frontend
 slug: /laravel/03-blade-frontend
 title: "Chapter 3: Blade Templating, Components & Frontend"
 sidebar_label: "Chapter 3: Blade Templating, Components & Frontend"

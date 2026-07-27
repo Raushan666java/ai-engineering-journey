@@ -1,4 +1,5 @@
 ---
+id: 02-linux-basics
 slug: /devops/02-linux-basics
 title: "Chapter 2: Linux Basics for DevOps"
 sidebar_label: "Chapter 2: Linux Basics for DevOps"

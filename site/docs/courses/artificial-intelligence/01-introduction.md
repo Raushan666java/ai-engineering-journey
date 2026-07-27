@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /artificial-intelligence/01-introduction
 title: "Chapter 1: Introduction to Artificial Intelligence"
 sidebar_label: "Chapter 1: Introduction to Artificial Intelligence"

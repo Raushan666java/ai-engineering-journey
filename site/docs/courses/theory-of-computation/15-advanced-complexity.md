@@ -1,4 +1,5 @@
 ---
+id: 15-advanced-complexity
 slug: /theory-of-computation/15-advanced-complexity
 title: "Chapter 15: Advanced Complexity Topics"
 sidebar_label: "Chapter 15: Advanced Complexity Topics"

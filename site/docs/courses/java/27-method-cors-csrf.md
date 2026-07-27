@@ -1,4 +1,5 @@
 ---
+id: 27-method-cors-csrf
 slug: /java/27-method-cors-csrf
 title: "Method Security, CORS & CSRF"
 sidebar_label: "Method Security, CORS & CSRF"

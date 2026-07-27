@@ -1,4 +1,5 @@
 ---
+id: 11-mlops-for-ai-engineering
 slug: /modern-ai-engineering/11-mlops-for-ai-engineering
 title: "Chapter 11: MLOps for AI Engineering"
 sidebar_label: "Chapter 11: MLOps for AI Engineering"

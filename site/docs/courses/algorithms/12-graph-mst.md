@@ -1,4 +1,5 @@
 ---
+id: 12-graph-mst
 slug: /algorithms/12-graph-mst
 title: "Chapter 12: Minimum Spanning Trees"
 sidebar_label: "Chapter 12: Minimum Spanning Trees"

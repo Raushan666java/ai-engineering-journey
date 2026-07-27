@@ -1,4 +1,5 @@
 ---
+id: 41-resilience
 slug: /java/41-resilience
 title: "Resilience & Circuit Breakers (Resilience4j)"
 sidebar_label: "Resilience & Circuit Breakers (Resilience4j)"

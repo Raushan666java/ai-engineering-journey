@@ -1,4 +1,5 @@
 ---
+id: 09-nic-scientist-2022
 slug: /government-pyqs/09-nic-scientist-2022
 title: "NIC Scientist B 2022 — Solved Paper"
 sidebar_label: "NIC Scientist B 2022 — Solved Paper"

@@ -1,4 +1,5 @@
 ---
+id: mysql-database
 slug: /laravel/mysql-database
 title: "MySQL & Database Design"
 sidebar_label: "MySQL & Database Design"

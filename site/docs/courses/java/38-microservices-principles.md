@@ -1,4 +1,5 @@
 ---
+id: 38-microservices-principles
 slug: /java/38-microservices-principles
 title: "Microservices Architecture Principles"
 sidebar_label: "Microservices Architecture Principles"

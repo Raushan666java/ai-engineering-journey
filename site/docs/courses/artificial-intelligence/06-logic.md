@@ -1,4 +1,5 @@
 ---
+id: 06-logic
 slug: /artificial-intelligence/06-logic
 title: "Chapter 6: Logical Agents and Propositional Logic"
 sidebar_label: "Chapter 6: Logical Agents and Propositional Logic"

@@ -1,4 +1,5 @@
 ---
+id: 07-resume-linkedin-portfolio
 slug: /interview-preparation/07-resume-linkedin-portfolio
 title: "Chapter 7: Resume, LinkedIn, and Portfolio Optimization"
 sidebar_label: "Chapter 7: Resume, LinkedIn, and Portfolio Optimization"

@@ -1,4 +1,5 @@
 ---
+id: 07-nic-scientist-2024
 slug: /government-pyqs/07-nic-scientist-2024
 title: "NIC Scientist B 2024 — Solved Paper"
 sidebar_label: "NIC Scientist B 2024 — Solved Paper"

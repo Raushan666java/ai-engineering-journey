@@ -1,4 +1,5 @@
 ---
+id: 05-ssc-cgl-tier1
 slug: /mock-tests/05-ssc-cgl-tier1
 title: "SSC CGL Tier 1 — Full-Length Mock Test"
 sidebar_label: "SSC CGL Tier 1 — Full-Length Mock Test"

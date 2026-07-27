@@ -1,4 +1,5 @@
 ---
+id: 46-r2dbc
 slug: /java/46-r2dbc
 title: "Chapter 46: R2DBC & Reactive Data Access"
 sidebar_label: "Chapter 46: R2DBC & Reactive Data Access"

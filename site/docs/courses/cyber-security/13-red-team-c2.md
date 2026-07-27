@@ -1,4 +1,5 @@
 ---
+id: 13-red-team-c2
 slug: /cyber-security/13-red-team-c2
 title: "Chapter 13: Advanced Red Team Operations & C2 Frameworks"
 sidebar_label: "Chapter 13: Advanced Red Team Operations & C2 Frameworks"

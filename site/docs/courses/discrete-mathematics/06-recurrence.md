@@ -1,4 +1,5 @@
 ---
+id: 06-recurrence
 slug: /discrete-mathematics/06-recurrence
 title: "Chapter 6: Recurrence Relations"
 sidebar_label: "Chapter 6: Recurrence Relations"

@@ -1,7 +1,8 @@
 ---
+id: 22-migrations
 slug: /java/22-migrations
-title: "22 Migrations"
-sidebar_label: "22 Migrations"
+title: "Database Migrations (Flyway & Liquibase)"
+sidebar_label: "Database Migrations (Flyway & Liquibase)"
 sidebar_position: 22
 ---
 > **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)

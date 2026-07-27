@@ -1,4 +1,5 @@
 ---
+id: 17-performance
 slug: /web-development/17-performance
 title: "Chapter 17: Performance Optimization"
 sidebar_label: "Chapter 17: Performance Optimization"

@@ -1,4 +1,5 @@
 ---
+id: 42-config
 slug: /java/42-config
 title: "Distributed Configuration"
 sidebar_label: "Distributed Configuration"

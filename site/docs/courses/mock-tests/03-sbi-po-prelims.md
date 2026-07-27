@@ -1,4 +1,5 @@
 ---
+id: 03-sbi-po-prelims
 slug: /mock-tests/03-sbi-po-prelims
 title: "SBI PO Prelims — Full-Length Mock Test"
 sidebar_label: "SBI PO Prelims — Full-Length Mock Test"

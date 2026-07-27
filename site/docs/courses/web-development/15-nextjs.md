@@ -1,4 +1,5 @@
 ---
+id: 15-nextjs
 slug: /web-development/15-nextjs
 title: "Chapter 15: Next.js"
 sidebar_label: "Chapter 15: Next.js"

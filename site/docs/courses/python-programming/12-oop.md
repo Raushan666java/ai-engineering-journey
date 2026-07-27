@@ -1,4 +1,5 @@
 ---
+id: 12-oop
 slug: /python-programming/12-oop
 title: "Chapter 12: Object-Oriented Programming"
 sidebar_label: "Chapter 12: Object-Oriented Programming"

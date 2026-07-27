@@ -1,5 +1,5 @@
 ---
-id: artificial-intelligence-09-uncertainty
+id: 09-uncertainty
 slug: /artificial-intelligence/09-uncertainty
 title: "Chapter 9: Reasoning Under Uncertainty"
 sidebar_label: "Chapter 9: Reasoning Under Uncertainty"

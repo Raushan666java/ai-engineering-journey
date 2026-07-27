@@ -18,6 +18,9 @@ Master containerization with Docker, orchestration with Kubernetes, and cloud de
 | 08 | [AWS Containers](08-aws-containers.md) | ECS, ECR, EKS, Fargate, App Runner | 10 |
 | 09 | [Azure & GCP Basics](09-azure-and-gcp-basics.md) | AKS, GKE, Cloud Run, managed services | 10 |
 | 10 | [CI/CD Pipelines](10-ci-cd-pipelines.md) | GitHub Actions, Jenkins, GitLab CI, ArgoCD | 10 |
+| 11 | [Serverless & Lambda](11-serverless-lambda.md) | AWS Lambda, triggers, cold starts, serverless ML | 10 |
+| 12 | [Azure AI Services](12-azure-ai-services.md) | Cognitive Services, Azure ML, Azure OpenAI | 10 |
+| 13 | [GCP Vertex AI](13-gcp-vertex-ai.md) | Vertex AI Workbench, Pipelines, Model Registry | 10 |
 
 ## Learning Path
 

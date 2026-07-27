@@ -1,7 +1,8 @@
 ---
+id: 19-jdbc-jooq
 slug: /java/19-jdbc-jooq
-title: "19 Jdbc Jooq"
-sidebar_label: "19 Jdbc Jooq"
+title: "JDBC, Connection Pooling & JOOQ"
+sidebar_label: "JDBC, Connection Pooling & JOOQ"
 sidebar_position: 19
 ---
 > **Previous:** [File Handling](./18-file-handling.md) | **Next:** [JPA/Hibernate](./20-jpa-hibernate.md)

@@ -1,4 +1,5 @@
 ---
+id: 03-112-vidhiya
 slug: /vigyan-bhairav-tantra/03-112-vidhiya
 title: "अध्याय ३: ११२ विधियाँ — ओशो का वर्गीकरण और दृष्टि"
 sidebar_label: "अध्याय ३: ११२ विधियाँ — ओशो का वर्गीकरण और दृष्टि"

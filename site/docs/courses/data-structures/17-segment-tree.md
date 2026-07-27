@@ -1,4 +1,5 @@
 ---
+id: 17-segment-tree
 slug: /data-structures/17-segment-tree
 title: "Chapter 17: Segment Tree"
 sidebar_label: "Chapter 17: Segment Tree"

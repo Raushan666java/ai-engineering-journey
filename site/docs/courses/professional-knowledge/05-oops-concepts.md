@@ -1,4 +1,5 @@
 ---
+id: 05-oops-concepts
 slug: /professional-knowledge/05-oops-concepts
 title: "Chapter 5: Object-Oriented Programming Concepts — Exam Quick Revision"
 sidebar_label: "Chapter 5: Object-Oriented Programming Concepts — Exam Quick Revision"

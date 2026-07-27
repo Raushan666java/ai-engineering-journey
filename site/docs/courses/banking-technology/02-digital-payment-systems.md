@@ -1,4 +1,5 @@
 ---
+id: 02-digital-payment-systems
 slug: /banking-technology/02-digital-payment-systems
 title: "Chapter 02: Digital Payment Systems"
 sidebar_label: "Chapter 02: Digital Payment Systems"

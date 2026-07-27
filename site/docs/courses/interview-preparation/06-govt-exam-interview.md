@@ -1,4 +1,5 @@
 ---
+id: 06-govt-exam-interview
 slug: /interview-preparation/06-govt-exam-interview
 title: "Chapter 6: Government Exam Interview Preparation"
 sidebar_label: "Chapter 6: Government Exam Interview Preparation"

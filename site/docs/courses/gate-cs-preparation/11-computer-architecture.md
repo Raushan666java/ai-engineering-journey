@@ -1,4 +1,5 @@
 ---
+id: 11-computer-architecture
 slug: /gate-cs-preparation/11-computer-architecture
 title: "11 Computer Architecture"
 sidebar_label: "11 Computer Architecture"

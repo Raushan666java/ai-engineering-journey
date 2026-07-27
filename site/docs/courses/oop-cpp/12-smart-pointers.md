@@ -1,4 +1,5 @@
 ---
+id: 12-smart-pointers
 slug: /oop-cpp/12-smart-pointers
 title: "Chapter 12: Smart Pointers"
 sidebar_label: "Chapter 12: Smart Pointers"

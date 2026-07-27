@@ -1,4 +1,5 @@
 ---
+id: 01-arrays
 slug: /coding-problems/01-arrays
 title: "Chapter 01: Arrays"
 sidebar_label: "Chapter 01: Arrays"

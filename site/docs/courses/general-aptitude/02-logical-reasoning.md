@@ -1,4 +1,5 @@
 ---
+id: 02-logical-reasoning
 slug: /general-aptitude/02-logical-reasoning
 title: "Chapter 2: Logical Reasoning"
 sidebar_label: "Chapter 2: Logical Reasoning"

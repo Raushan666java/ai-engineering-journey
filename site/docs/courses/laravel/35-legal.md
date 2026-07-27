@@ -1,4 +1,5 @@
 ---
+id: 35-legal
 slug: /laravel/35-legal
 title: "Chapter 35: Legal & Compliance Agents"
 sidebar_label: "Chapter 35: Legal & Compliance Agents"

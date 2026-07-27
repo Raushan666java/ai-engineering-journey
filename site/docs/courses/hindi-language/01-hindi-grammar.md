@@ -1,4 +1,5 @@
 ---
+id: 01-hindi-grammar
 slug: /hindi-language/01-hindi-grammar
 title: "Chapter 1: हिंदी व्याकरण (Hindi Grammar)"
 sidebar_label: "Chapter 1: हिंदी व्याकरण (Hindi Grammar)"

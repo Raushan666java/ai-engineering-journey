@@ -1,4 +1,5 @@
 ---
+id: 05-non-verbal-reasoning
 slug: /general-aptitude/05-non-verbal-reasoning
 title: "Chapter 5: Non-Verbal Reasoning"
 sidebar_label: "Chapter 5: Non-Verbal Reasoning"

@@ -1,4 +1,5 @@
 ---
+id: 07-web-technologies
 slug: /professional-knowledge/07-web-technologies
 title: "Chapter 7: Web Technologies — Exam Quick Revision"
 sidebar_label: "Chapter 7: Web Technologies — Exam Quick Revision"

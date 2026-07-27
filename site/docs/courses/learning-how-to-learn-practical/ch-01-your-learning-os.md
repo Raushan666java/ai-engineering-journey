@@ -1,4 +1,5 @@
 ---
+id: ch-01-your-learning-os
 slug: /learning-how-to-learn-practical/ch-01-your-learning-os
 title: "Chapter 1: Your Learning OS"
 sidebar_label: "Chapter 1: Your Learning OS"

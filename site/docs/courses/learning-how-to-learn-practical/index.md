@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /learning-how-to-learn-practical/index
 title: "Learning How to Learn (Practical Edition)"
 sidebar_label: "Learning How to Learn (Practical Edition)"

@@ -1,4 +1,5 @@
 ---
+id: 09-virtual-memory
 slug: /operating-systems/09-virtual-memory
 title: "Chapter 9: Virtual Memory"
 sidebar_label: "Chapter 9: Virtual Memory"

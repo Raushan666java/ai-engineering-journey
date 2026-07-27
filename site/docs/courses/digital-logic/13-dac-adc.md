@@ -1,4 +1,5 @@
 ---
+id: 13-dac-adc
 slug: /digital-logic/13-dac-adc
 title: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters"
 sidebar_label: "Chapter 13: Digital-to-Analog and Analog-to-Digital Converters"

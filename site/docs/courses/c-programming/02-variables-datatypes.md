@@ -1,4 +1,5 @@
 ---
+id: 02-variables-datatypes
 slug: /c-programming/02-variables-datatypes
 title: "Chapter 2: Variables and Data Types"
 sidebar_label: "Chapter 2: Variables and Data Types"

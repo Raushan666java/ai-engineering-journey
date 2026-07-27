@@ -1,4 +1,5 @@
 ---
+id: 14-string-algorithms
 slug: /algorithms/14-string-algorithms
 title: "Chapter 14: String Algorithms"
 sidebar_label: "Chapter 14: String Algorithms"

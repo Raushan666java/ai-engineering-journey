@@ -1,4 +1,5 @@
 ---
+id: p3-java-collections
 slug: /java/p3-java-collections
 title: "Java Collections Framework"
 sidebar_label: "Java Collections Framework"

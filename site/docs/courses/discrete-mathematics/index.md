@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /discrete-mathematics/index
 title: "Discrete Mathematics for Computer Science"
 sidebar_label: "Discrete Mathematics for Computer Science"

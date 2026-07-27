@@ -1,4 +1,5 @@
 ---
+id: 02-calculus-i
 slug: /engineering-mathematics/02-calculus-i
 title: "Chapter 2: Single Variable Calculus"
 sidebar_label: "Chapter 2: Single Variable Calculus"

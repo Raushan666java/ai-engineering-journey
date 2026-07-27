@@ -1,4 +1,5 @@
 ---
+id: 06-knowledge-representation
 slug: /artificial-intelligence/06-knowledge-representation
 title: "Chapter 6: Knowledge Representation"
 sidebar_label: "Chapter 6: Knowledge Representation"

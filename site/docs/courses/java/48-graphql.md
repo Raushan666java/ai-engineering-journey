@@ -1,4 +1,5 @@
 ---
+id: 48-graphql
 slug: /java/48-graphql
 title: "Spring GraphQL"
 sidebar_label: "Spring GraphQL"

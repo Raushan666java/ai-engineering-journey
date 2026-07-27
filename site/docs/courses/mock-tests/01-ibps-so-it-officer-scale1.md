@@ -1,4 +1,5 @@
 ---
+id: 01-ibps-so-it-officer-scale1
 slug: /mock-tests/01-ibps-so-it-officer-scale1
 title: "IBPS SO IT Officer Scale 1 — Full-Length Mock Test"
 sidebar_label: "IBPS SO IT Officer Scale 1 — Full-Length Mock Test"

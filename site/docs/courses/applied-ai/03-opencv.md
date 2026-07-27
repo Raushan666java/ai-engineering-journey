@@ -1,4 +1,5 @@
 ---
+id: 03-opencv
 slug: /applied-ai/03-opencv
 title: "Chapter 3: OpenCV & Computer Vision"
 sidebar_label: "Chapter 3: OpenCV & Computer Vision"

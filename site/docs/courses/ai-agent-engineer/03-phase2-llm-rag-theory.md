@@ -1,4 +1,5 @@
 ---
+id: 03-phase2-llm-rag-theory
 slug: /ai-agent-engineer/03-phase2-llm-rag-theory
 title: "Phase 2 — LLM Fundamentals + RAG Theory"
 sidebar_label: "Phase 2 — LLM Fundamentals + RAG Theory"

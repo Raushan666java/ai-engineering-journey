@@ -1,4 +1,5 @@
 ---
+id: 26-jwt-oauth2
 slug: /java/26-jwt-oauth2
 title: "JWT, OAuth2 & OIDC"
 sidebar_label: "JWT, OAuth2 & OIDC"

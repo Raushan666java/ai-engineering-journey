@@ -1,4 +1,5 @@
 ---
+id: 08-broadcasting-realtime
 slug: /laravel/08-broadcasting-realtime
 title: "Chapter 8: Broadcasting, Events & Real-Time Features"
 sidebar_label: "Chapter 8: Broadcasting, Events & Real-Time Features"

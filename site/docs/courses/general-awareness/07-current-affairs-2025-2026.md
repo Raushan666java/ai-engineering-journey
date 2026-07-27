@@ -1,4 +1,5 @@
 ---
+id: 07-current-affairs-2025-2026
 slug: /general-awareness/07-current-affairs-2025-2026
 title: "Chapter 7: Current Affairs 2025–2026"
 sidebar_label: "Chapter 7: Current Affairs 2025–2026"

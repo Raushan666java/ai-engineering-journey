@@ -1,4 +1,5 @@
 ---
+id: 12-ai-observability-debugging
 slug: /ai-agent-engineer/12-ai-observability-debugging
 title: "Chapter 12 — AI Observability & Debugging"
 sidebar_label: "Chapter 12 — AI Observability & Debugging"

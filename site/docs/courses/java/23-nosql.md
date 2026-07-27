@@ -1,7 +1,8 @@
 ---
+id: 23-nosql
 slug: /java/23-nosql
-title: "23 Nosql"
-sidebar_label: "23 Nosql"
+title: "Spring Data for NoSQL"
+sidebar_label: "Spring Data for NoSQL"
 sidebar_position: 23
 ---
 > **Previous:** [Migrations](./22-migrations.md) | **Next:** [Transactions](./24-transactions.md)

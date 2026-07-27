@@ -1,4 +1,5 @@
 ---
+id: 11-adhunik-vigyan-osho
 slug: /vigyan-bhairav-tantra/11-adhunik-vigyan-osho
 title: "अध्याय ११: आधुनिक विज्ञान और ओशो का तंत्र"
 sidebar_label: "अध्याय ११: आधुनिक विज्ञान और ओशो का तंत्र"

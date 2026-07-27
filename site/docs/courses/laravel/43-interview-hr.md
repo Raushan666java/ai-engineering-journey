@@ -1,4 +1,5 @@
 ---
+id: 43-interview-hr
 slug: /laravel/43-interview-hr
 title: "Chapter 43: HR & Recruitment → Interview Q&A"
 sidebar_label: "Chapter 43: HR & Recruitment → Interview Q&A"

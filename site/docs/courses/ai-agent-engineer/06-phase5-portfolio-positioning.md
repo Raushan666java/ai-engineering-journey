@@ -1,4 +1,5 @@
 ---
+id: 06-phase5-portfolio-positioning
 slug: /ai-agent-engineer/06-phase5-portfolio-positioning
 title: "Phase 5 — Portfolio + Market Positioning"
 sidebar_label: "Phase 5 — Portfolio + Market Positioning"

@@ -1,4 +1,5 @@
 ---
+id: 05-ethereum
 slug: /blockchain/05-ethereum
 title: "Chapter 5: Ethereum and Smart Contracts"
 sidebar_label: "Chapter 5: Ethereum and Smart Contracts"

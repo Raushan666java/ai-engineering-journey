@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /operating-systems/index
 title: "Operating Systems — A Comprehensive Textbook"
 sidebar_label: "Operating Systems — A Comprehensive Textbook"

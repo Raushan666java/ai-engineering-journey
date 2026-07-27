@@ -1,4 +1,5 @@
 ---
+id: 30-logistics
 slug: /laravel/30-logistics
 title: "Chapter 30: Logistics & Supply Chain Agents"
 sidebar_label: "Chapter 30: Logistics & Supply Chain Agents"

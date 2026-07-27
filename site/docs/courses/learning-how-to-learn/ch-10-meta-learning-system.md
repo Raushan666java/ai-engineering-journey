@@ -1,4 +1,5 @@
 ---
+id: ch-10-meta-learning-system
 slug: /learning-how-to-learn/ch-10-meta-learning-system
 title: "Chapter 10: Meta-Learning & Your Lifelong System"
 sidebar_label: "Chapter 10: Meta-Learning & Your Lifelong System"

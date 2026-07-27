@@ -1,4 +1,5 @@
 ---
+id: 48-interview-manufacturing
 slug: /laravel/48-interview-manufacturing
 title: "Chapter 48: Manufacturing Interview Q&A"
 sidebar_label: "Chapter 48: Manufacturing Interview Q&A"

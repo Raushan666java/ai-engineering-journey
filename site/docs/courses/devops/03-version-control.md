@@ -1,4 +1,5 @@
 ---
+id: 03-version-control
 slug: /devops/03-version-control
 title: "Chapter 3: Version Control"
 sidebar_label: "Chapter 3: Version Control"

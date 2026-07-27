@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /speed-drills/index
 title: "Speed & Accuracy Drills"
 sidebar_label: "Speed & Accuracy Drills"

@@ -1,4 +1,5 @@
 ---
+id: 09-stl-containers
 slug: /oop-cpp/09-stl-containers
 title: "Chapter 9: STL Containers -- In-Depth Mastery"
 sidebar_label: "Chapter 9: STL Containers -- In-Depth Mastery"

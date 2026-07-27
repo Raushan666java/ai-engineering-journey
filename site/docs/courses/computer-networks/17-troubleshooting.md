@@ -1,4 +1,5 @@
 ---
+id: 17-troubleshooting
 slug: /computer-networks/17-troubleshooting
 title: "Chapter 17: Network Troubleshooting"
 sidebar_label: "Chapter 17: Network Troubleshooting"

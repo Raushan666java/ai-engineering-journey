@@ -1,4 +1,5 @@
 ---
+id: ch-08-system-design-study-plan
 slug: /learning-how-to-learn-practical/ch-08-system-design-study-plan
 title: "Chapter 8: Study Plan for Any Exam"
 sidebar_label: "Chapter 8: Study Plan for Any Exam"

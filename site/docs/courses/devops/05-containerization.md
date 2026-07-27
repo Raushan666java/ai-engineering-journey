@@ -1,4 +1,5 @@
 ---
+id: 05-containerization
 slug: /devops/05-containerization
 title: "Chapter 5: Containerization"
 sidebar_label: "Chapter 5: Containerization"

@@ -1,4 +1,5 @@
 ---
+id: 09-tcp-congestion
 slug: /computer-networks/09-tcp-congestion
 title: "Chapter 9: TCP Congestion Control"
 sidebar_label: "Chapter 9: TCP Congestion Control"

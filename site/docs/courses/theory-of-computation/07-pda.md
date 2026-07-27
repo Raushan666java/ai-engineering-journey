@@ -1,4 +1,5 @@
 ---
+id: 07-pda
 slug: /theory-of-computation/07-pda
 title: "Chapter 7: Pushdown Automata"
 sidebar_label: "Chapter 7: Pushdown Automata"

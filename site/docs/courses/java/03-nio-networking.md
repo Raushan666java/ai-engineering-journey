@@ -1,4 +1,5 @@
 ---
+id: 03-nio-networking
 slug: /java/03-nio-networking
 title: "Java NIO & Networking"
 sidebar_label: "Java NIO & Networking"

@@ -1,4 +1,5 @@
 ---
+id: 12-dfa
 slug: /compiler-design/12-dfa
 title: "Chapter 12: Data-Flow Analysis"
 sidebar_label: "Chapter 12: Data-Flow Analysis"

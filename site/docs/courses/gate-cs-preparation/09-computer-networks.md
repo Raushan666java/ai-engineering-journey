@@ -1,4 +1,5 @@
 ---
+id: 09-computer-networks
 slug: /gate-cs-preparation/09-computer-networks
 title: "09 Computer Networks"
 sidebar_label: "09 Computer Networks"

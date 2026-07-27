@@ -1,4 +1,5 @@
 ---
+id: 15-mcp
 slug: /laravel/15-mcp
 title: "Chapter 15: Laravel MCP → Model Context Protocol"
 sidebar_label: "Chapter 15: Laravel MCP → Model Context Protocol"

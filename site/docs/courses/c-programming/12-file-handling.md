@@ -1,4 +1,5 @@
 ---
+id: 12-file-handling
 slug: /c-programming/12-file-handling
 title: "Chapter 12: File Handling"
 sidebar_label: "Chapter 12: File Handling"

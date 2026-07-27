@@ -1,4 +1,5 @@
 ---
+id: archive-complete-reference
 slug: /learning-how-to-learn/archive-complete-reference
 title: "Learning How to Learn"
 sidebar_label: "Learning How to Learn"

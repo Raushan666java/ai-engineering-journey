@@ -1,4 +1,5 @@
 ---
+id: 18-case-studies-classic
 slug: /system-design/18-case-studies-classic
 title: "Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin"
 sidebar_label: "Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin"

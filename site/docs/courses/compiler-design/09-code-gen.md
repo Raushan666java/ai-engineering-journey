@@ -1,4 +1,5 @@
 ---
+id: 09-code-gen
 slug: /compiler-design/09-code-gen
 title: "Chapter 9: Code Generation"
 sidebar_label: "Chapter 9: Code Generation"

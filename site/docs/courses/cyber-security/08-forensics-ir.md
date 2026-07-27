@@ -1,4 +1,5 @@
 ---
+id: 08-forensics-ir
 slug: /cyber-security/08-forensics-ir
 title: "Chapter 8: Forensics & Incident Response"
 sidebar_label: "Chapter 8: Forensics & Incident Response"

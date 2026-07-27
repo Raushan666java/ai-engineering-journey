@@ -1,4 +1,5 @@
 ---
+id: 01-indian-polity
 slug: /general-awareness/01-indian-polity
 title: "Chapter 1: Indian Polity & Constitution"
 sidebar_label: "Chapter 1: Indian Polity & Constitution"

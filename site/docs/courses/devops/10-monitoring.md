@@ -1,4 +1,5 @@
 ---
+id: 10-monitoring
 slug: /devops/10-monitoring
 title: "Chapter 10: Site Reliability Engineering (SRE) and Monitoring"
 sidebar_label: "Chapter 10: Site Reliability Engineering (SRE) and Monitoring"

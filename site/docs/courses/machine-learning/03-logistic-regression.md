@@ -1,4 +1,5 @@
 ---
+id: 03-logistic-regression
 slug: /machine-learning/03-logistic-regression
 title: "Chapter 3: Logistic Regression"
 sidebar_label: "Chapter 3: Logistic Regression"

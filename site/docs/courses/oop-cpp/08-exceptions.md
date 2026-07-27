@@ -1,4 +1,5 @@
 ---
+id: 08-exceptions
 slug: /oop-cpp/08-exceptions
 title: "Chapter 8: Exception Handling"
 sidebar_label: "Chapter 8: Exception Handling"

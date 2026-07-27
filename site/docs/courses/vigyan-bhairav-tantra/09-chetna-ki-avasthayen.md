@@ -1,4 +1,5 @@
 ---
+id: 09-chetna-ki-avasthayen
 slug: /vigyan-bhairav-tantra/09-chetna-ki-avasthayen
 title: "अध्याय ९: चेतना की अवस्थाएँ — ओशो की व्याख्या"
 sidebar_label: "अध्याय ९: चेतना की अवस्थाएँ — ओशो की व्याख्या"

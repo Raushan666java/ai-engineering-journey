@@ -1,4 +1,5 @@
 ---
+id: 04-evaluation-of-ai-systems
 slug: /modern-ai-engineering/04-evaluation-of-ai-systems
 title: "Chapter 4: Evaluation of AI Systems"
 sidebar_label: "Chapter 4: Evaluation of AI Systems"

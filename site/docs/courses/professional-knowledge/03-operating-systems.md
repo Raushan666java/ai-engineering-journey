@@ -1,4 +1,5 @@
 ---
+id: 03-operating-systems
 slug: /professional-knowledge/03-operating-systems
 title: "Chapter 3: Operating Systems — Exam Quick Revision"
 sidebar_label: "Chapter 3: Operating Systems — Exam Quick Revision"

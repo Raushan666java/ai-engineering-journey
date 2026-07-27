@@ -1,4 +1,5 @@
 ---
+id: 11-auto-configuration
 slug: /java/11-auto-configuration
 title: "Auto-Configuration & Starters"
 sidebar_label: "Auto-Configuration & Starters"

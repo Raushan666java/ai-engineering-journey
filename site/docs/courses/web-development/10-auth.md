@@ -1,4 +1,5 @@
 ---
+id: 10-auth
 slug: /web-development/10-auth
 title: "Chapter 10: Authentication and Authorization"
 sidebar_label: "Chapter 10: Authentication and Authorization"

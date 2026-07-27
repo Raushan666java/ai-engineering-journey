@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /placement-preparation/index
 title: "Placement Preparation"
 sidebar_label: "Placement Preparation"

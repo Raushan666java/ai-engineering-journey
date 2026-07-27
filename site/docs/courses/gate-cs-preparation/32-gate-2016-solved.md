@@ -1,4 +1,5 @@
 ---
+id: 32-gate-2016-solved
 slug: /gate-cs-preparation/32-gate-2016-solved
 title: "32 Gate 2016 Solved"
 sidebar_label: "32 Gate 2016 Solved"

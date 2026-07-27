@@ -1,4 +1,5 @@
 ---
+id: 10-concurrency
 slug: /database-management-systems/10-concurrency
 title: "Chapter 10: Concurrency Control"
 sidebar_label: "Chapter 10: Concurrency Control"

@@ -1,4 +1,5 @@
 ---
+id: 18-advanced-c
 slug: /c-programming/18-advanced-c
 title: "Chapter 18: Advanced C"
 sidebar_label: "Chapter 18: Advanced C"

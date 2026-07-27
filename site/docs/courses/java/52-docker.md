@@ -1,4 +1,5 @@
 ---
+id: 52-docker
 slug: /java/52-docker
 title: "Docker & Containerization"
 sidebar_label: "Docker & Containerization"

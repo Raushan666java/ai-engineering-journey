@@ -1,4 +1,5 @@
 ---
+id: 10-lambda
 slug: /python-programming/10-lambda
 title: "Chapter 10: Lambda and Functional Programming"
 sidebar_label: "Chapter 10: Lambda and Functional Programming"

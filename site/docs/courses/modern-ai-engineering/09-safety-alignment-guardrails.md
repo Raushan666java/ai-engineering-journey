@@ -1,4 +1,5 @@
 ---
+id: 09-safety-alignment-guardrails
 slug: /modern-ai-engineering/09-safety-alignment-guardrails
 title: "Chapter 9: Safety, Alignment, and Guardrails"
 sidebar_label: "Chapter 9: Safety, Alignment, and Guardrails"

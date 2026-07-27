@@ -1,7 +1,8 @@
 ---
+id: 09-grc
 slug: /cyber-security/09-grc
-title: "09 Grc"
-sidebar_label: "09 Grc"
+title: "Chapter 9: Governance, Risk & Compliance (GRC)"
+sidebar_label: "Chapter 9: Governance, Risk & Compliance (GRC)"
 sidebar_position: 8
 ---
 

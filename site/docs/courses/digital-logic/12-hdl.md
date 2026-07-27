@@ -1,4 +1,5 @@
 ---
+id: 12-hdl
 slug: /digital-logic/12-hdl
 title: "Chapter 12: Hardware Description Languages"
 sidebar_label: "Chapter 12: Hardware Description Languages"

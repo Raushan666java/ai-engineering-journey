@@ -1,4 +1,5 @@
 ---
+id: 66-interview-behavioral
 slug: /java/66-interview-behavioral
 title: "66. Behavioral Interview — Q&A"
 sidebar_label: "66. Behavioral Interview — Q&A"

@@ -1,4 +1,5 @@
 ---
+id: 06-queues-notifications
 slug: /laravel/06-queues-notifications
 title: "Chapter 6: Queues, Jobs, Notifications & Mail"
 sidebar_label: "Chapter 6: Queues, Jobs, Notifications & Mail"

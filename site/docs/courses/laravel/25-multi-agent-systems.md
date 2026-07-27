@@ -1,4 +1,5 @@
 ---
+id: 25-multi-agent-systems
 slug: /laravel/25-multi-agent-systems
 title: "Chapter 25: Multi-Agent Systems & Orchestration with Laravel"
 sidebar_label: "Chapter 25: Multi-Agent Systems & Orchestration with Laravel"

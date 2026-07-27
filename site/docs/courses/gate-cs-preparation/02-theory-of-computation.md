@@ -1,4 +1,5 @@
 ---
+id: 02-theory-of-computation
 slug: /gate-cs-preparation/02-theory-of-computation
 title: "02 Theory Of Computation"
 sidebar_label: "02 Theory Of Computation"

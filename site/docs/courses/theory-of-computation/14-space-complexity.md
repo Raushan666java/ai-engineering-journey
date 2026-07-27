@@ -1,4 +1,5 @@
 ---
+id: 14-space-complexity
 slug: /theory-of-computation/14-space-complexity
 title: "Chapter 14: Space Complexity"
 sidebar_label: "Chapter 14: Space Complexity"

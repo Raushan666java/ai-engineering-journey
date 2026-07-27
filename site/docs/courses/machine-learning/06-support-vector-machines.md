@@ -1,4 +1,5 @@
 ---
+id: 06-support-vector-machines
 slug: /machine-learning/06-support-vector-machines
 title: "Chapter 6: Support Vector Machines"
 sidebar_label: "Chapter 6: Support Vector Machines"

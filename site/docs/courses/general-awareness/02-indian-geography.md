@@ -1,4 +1,5 @@
 ---
+id: 02-indian-geography
 slug: /general-awareness/02-indian-geography
 title: "Chapter 2: Indian Geography & Environment"
 sidebar_label: "Chapter 2: Indian Geography & Environment"

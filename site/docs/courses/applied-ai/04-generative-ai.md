@@ -1,4 +1,5 @@
 ---
+id: 04-generative-ai
 slug: /applied-ai/04-generative-ai
 title: "Chapter 4: Generative AI"
 sidebar_label: "Chapter 4: Generative AI"

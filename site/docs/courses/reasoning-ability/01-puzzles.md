@@ -1,4 +1,5 @@
 ---
+id: 01-puzzles
 slug: /reasoning-ability/01-puzzles
 title: "Puzzles — Floor, Box, and Scheduling"
 sidebar_label: "Puzzles — Floor, Box, and Scheduling"

@@ -1,4 +1,5 @@
 ---
+id: 07-state-machines
 slug: /digital-logic/07-state-machines
 title: "Chapter 7: State Machines"
 sidebar_label: "Chapter 7: State Machines"

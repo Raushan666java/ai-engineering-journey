@@ -1,4 +1,5 @@
 ---
+id: 04-control-flow
 slug: /c-programming/04-control-flow
 title: "Chapter 4: Control Flow"
 sidebar_label: "Chapter 4: Control Flow"

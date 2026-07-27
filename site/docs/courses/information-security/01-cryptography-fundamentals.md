@@ -1,4 +1,5 @@
 ---
+id: 01-cryptography-fundamentals
 slug: /information-security/01-cryptography-fundamentals
 title: "Chapter 1: Cryptography Fundamentals"
 sidebar_label: "Chapter 1: Cryptography Fundamentals"

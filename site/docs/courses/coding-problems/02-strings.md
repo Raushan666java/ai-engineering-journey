@@ -1,4 +1,5 @@
 ---
+id: 02-strings
 slug: /coding-problems/02-strings
 title: "Chapter 02: Strings"
 sidebar_label: "Chapter 02: Strings"

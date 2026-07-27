@@ -1,4 +1,5 @@
 ---
+id: 06-sql-advanced
 slug: /database-management-systems/06-sql-advanced
 title: "Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"
 sidebar_label: "Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables"

@@ -1,4 +1,5 @@
 ---
+id: 10-computer-architecture
 slug: /professional-knowledge/10-computer-architecture
 title: "Chapter 10: Computer Architecture — Exam Quick Revision"
 sidebar_label: "Chapter 10: Computer Architecture — Exam Quick Revision"

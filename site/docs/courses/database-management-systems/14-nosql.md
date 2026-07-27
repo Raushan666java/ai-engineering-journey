@@ -1,4 +1,5 @@
 ---
+id: 14-nosql
 slug: /database-management-systems/14-nosql
 title: "Chapter 14: NoSQL Databases"
 sidebar_label: "Chapter 14: NoSQL Databases"

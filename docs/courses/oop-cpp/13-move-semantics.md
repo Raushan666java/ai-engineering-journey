@@ -2599,7 +2599,7 @@ lvalue rvalue lvalue
    B) `T&&` in a deduced context is a forwarding reference; in a non-deduced context it's an rvalue reference
    C) `T&&` is always an rvalue reference
    D) Forwarding references use `T&&&` syntax
-   <details><summary>Answer&lt;/summary&gt;**B)** In a template with deduced `T` (e.g., `template<typename T> void f(T&&)`), `T&&` is a forwarding reference that binds to both lvalues and rvalues. In non-deduced contexts (e.g., `void f(int&&)` or when T is known from the class), it's a plain rvalue reference.</details>
+    <details><summary>Answer&lt;/summary&gt;**B)** In a template with deduced `T` (e.g., `template&lt;typename T&gt; void f(T&amp;&amp;)`), `T&amp;&amp;` is a forwarding reference that binds to both lvalues and rvalues. In non-deduced contexts (e.g., `void f(int&amp;&amp;)` or when T is known from the class), it's a plain rvalue reference.</details>
 
 5. The Rule of Five adds which two functions to the Rule of Three?
    A) Default constructor and destructor
@@ -2613,14 +2613,14 @@ lvalue rvalue lvalue
    B) `int&`
    C) `int`
    D) `const int&`
-   <details><summary>Answer&lt;/summary&gt;**B)** When T is `int&`, `std::forward<int&>(arg)` returns `int&` (via reference collapsing: `int& &&` â†’ `int&`). This preserves the original lvalue category.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** When T is `&lt;int&amp;`, `std::forward&lt;int&amp;&gt;(arg)` returns `&lt;int&amp;` (via reference collapsing: `&lt;int&amp; &amp;&amp;` â†’ `int&`). This preserves the original lvalue category.</details>
 
 7. What is an xvalue?
    A) An expression with no identity that cannot be moved
    B) An expression with identity whose resources can be reused
    C) An expression with no identity that can be moved
    D) A named rvalue reference
-   <details><summary>Answer&lt;/summary&gt;**B)** An xvalue (expiring value) has identity but its resources can be reused because it is about to expire. Examples: `std::move(x)`, `static_cast<T&&>(x)`.</details>
+   <details><summary>Answer&lt;/summary&gt;**B)** An xvalue (expiring value) has identity but its resources can be reused because it is about to expire. Examples: `std::move(x)`, `static_cast&lt;T&amp;&amp;&gt;(x)`.</details>
 
 8. Which of the following is NOT a valid reference collapsing rule?
    A) `T& & â†’ T&`

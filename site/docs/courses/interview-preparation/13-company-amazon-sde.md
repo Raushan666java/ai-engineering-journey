@@ -1,4 +1,5 @@
 ---
+id: 13-company-amazon-sde
 slug: /interview-preparation/13-company-amazon-sde
 title: "Chapter 13: Amazon SDE — Company-Specific Question Bank"
 sidebar_label: "Chapter 13: Amazon SDE — Company-Specific Question Bank"

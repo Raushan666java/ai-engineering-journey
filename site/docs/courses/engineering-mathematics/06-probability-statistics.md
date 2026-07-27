@@ -1,4 +1,5 @@
 ---
+id: 06-probability-statistics
 slug: /engineering-mathematics/06-probability-statistics
 title: "Chapter 6: Probability & Statistics"
 sidebar_label: "Chapter 6: Probability & Statistics"

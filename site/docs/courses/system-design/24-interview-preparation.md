@@ -1,4 +1,5 @@
 ---
+id: 24-interview-preparation
 slug: /system-design/24-interview-preparation
 title: "Chapter 24: System Design Interview Preparation"
 sidebar_label: "Chapter 24: System Design Interview Preparation"

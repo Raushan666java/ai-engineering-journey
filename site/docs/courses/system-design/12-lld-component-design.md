@@ -1,4 +1,5 @@
 ---
+id: 12-lld-component-design
 slug: /system-design/12-lld-component-design
 title: "Chapter 12: Low-Level Design: Component and Class Design"
 sidebar_label: "Chapter 12: Low-Level Design: Component and Class Design"

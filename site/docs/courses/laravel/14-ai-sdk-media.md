@@ -1,4 +1,5 @@
 ---
+id: 14-ai-sdk-media
 slug: /laravel/14-ai-sdk-media
 title: "Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings"
 sidebar_label: "Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings"

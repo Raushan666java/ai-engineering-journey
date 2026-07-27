@@ -1,4 +1,5 @@
 ---
+id: 11-cloud-platforms
 slug: /devops/11-cloud-platforms
 title: "Chapter 11: Cloud Platforms"
 sidebar_label: "Chapter 11: Cloud Platforms"

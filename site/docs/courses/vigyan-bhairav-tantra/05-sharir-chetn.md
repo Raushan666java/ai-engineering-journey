@@ -1,4 +1,5 @@
 ---
+id: 05-sharir-chetn
 slug: /vigyan-bhairav-tantra/05-sharir-chetn
 title: "अध्याय ५: शरीर चेतना — ओशो की शारीरिक ध्यान विधियाँ"
 sidebar_label: "अध्याय ५: शरीर चेतना — ओशो की शारीरिक ध्यान विधियाँ"

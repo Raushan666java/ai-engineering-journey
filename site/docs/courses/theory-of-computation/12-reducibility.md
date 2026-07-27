@@ -1,4 +1,5 @@
 ---
+id: 12-reducibility
 slug: /theory-of-computation/12-reducibility
 title: "Chapter 12: Reducibility and Advanced Undecidability"
 sidebar_label: "Chapter 12: Reducibility and Advanced Undecidability"

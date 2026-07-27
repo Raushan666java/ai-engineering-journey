@@ -1,4 +1,5 @@
 ---
+id: php-basics
 slug: /laravel/php-basics
 title: "Chapter 0: PHP Foundations for Laravel"
 sidebar_label: "Chapter 0: PHP Foundations for Laravel"

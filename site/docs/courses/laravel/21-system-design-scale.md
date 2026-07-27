@@ -1,4 +1,5 @@
 ---
+id: 21-system-design-scale
 slug: /laravel/21-system-design-scale
 title: "Chapter 21: System Design: Laravel at Enterprise Scale"
 sidebar_label: "Chapter 21: System Design: Laravel at Enterprise Scale"

@@ -1,4 +1,5 @@
 ---
+id: 06-distributed-consistency
 slug: /system-design/06-distributed-consistency
 title: "Chapter 6: CAP Theorem and Distributed Consistency"
 sidebar_label: "Chapter 6: CAP Theorem and Distributed Consistency"

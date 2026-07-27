@@ -1,4 +1,5 @@
 ---
+id: 07-deadlocks
 slug: /operating-systems/07-deadlocks
 title: "Chapter 7: Deadlocks"
 sidebar_label: "Chapter 7: Deadlocks"

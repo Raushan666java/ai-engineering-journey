@@ -1,4 +1,5 @@
 ---
+id: personality-technique-matcher
 slug: /vigyan-bhairav-tantra/personality-technique-matcher
 title: "आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण"
 sidebar_label: "आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण"

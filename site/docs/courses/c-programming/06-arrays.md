@@ -1,4 +1,5 @@
 ---
+id: 06-arrays
 slug: /c-programming/06-arrays
 title: "Chapter 6: Arrays"
 sidebar_label: "Chapter 6: Arrays"

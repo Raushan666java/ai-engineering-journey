@@ -1,4 +1,5 @@
 ---
+id: 01-linear-algebra
 slug: /engineering-mathematics/01-linear-algebra
 title: "Chapter 1: Linear Algebra"
 sidebar_label: "Chapter 1: Linear Algebra"

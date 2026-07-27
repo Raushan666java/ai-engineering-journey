@@ -1,5 +1,5 @@
 ---
-id: ai-csp-04
+id: 04-csp
 slug: /artificial-intelligence/04-csp
 title: "Chapter 4: Constraint Satisfaction Problems"
 sidebar_label: "Chapter 4: Constraint Satisfaction Problems"

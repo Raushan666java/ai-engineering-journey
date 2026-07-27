@@ -1,4 +1,5 @@
 ---
+id: 12-nlp
 slug: /artificial-intelligence/12-nlp
 title: "Chapter 12: Natural Language Processing"
 sidebar_label: "Chapter 12: Natural Language Processing"

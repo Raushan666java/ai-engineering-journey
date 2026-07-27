@@ -1,4 +1,5 @@
 ---
+id: 11-algebra
 slug: /discrete-mathematics/11-algebra
 title: "Chapter 11: Algebraic Structures"
 sidebar_label: "Chapter 11: Algebraic Structures"

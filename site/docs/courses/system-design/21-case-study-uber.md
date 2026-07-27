@@ -1,4 +1,5 @@
 ---
+id: 21-case-study-uber
 slug: /system-design/21-case-study-uber
 title: "Chapter 21: Case Study — Uber and Location-Based Services"
 sidebar_label: "Chapter 21: Case Study — Uber and Location-Based Services"

@@ -1,4 +1,5 @@
 ---
+id: 11-company-tcs-nqt
 slug: /interview-preparation/11-company-tcs-nqt
 title: "Chapter 11: TCS NQT & Digital — Company-Specific Question Bank"
 sidebar_label: "Chapter 11: TCS NQT & Digital — Company-Specific Question Bank"

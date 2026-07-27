@@ -1,4 +1,5 @@
 ---
+id: 54-cicd
 slug: /java/54-cicd
 title: "CI/CD for Spring Boot"
 sidebar_label: "CI/CD for Spring Boot"

@@ -1,4 +1,5 @@
 ---
+id: 03-banking-security-guidelines
 slug: /banking-technology/03-banking-security-guidelines
 title: "Chapter 03: Banking Security Guidelines"
 sidebar_label: "Chapter 03: Banking Security Guidelines"

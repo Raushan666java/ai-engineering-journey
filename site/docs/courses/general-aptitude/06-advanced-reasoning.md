@@ -1,4 +1,5 @@
 ---
+id: 06-advanced-reasoning
 slug: /general-aptitude/06-advanced-reasoning
 title: "Chapter 6: Advanced Reasoning"
 sidebar_label: "Chapter 6: Advanced Reasoning"

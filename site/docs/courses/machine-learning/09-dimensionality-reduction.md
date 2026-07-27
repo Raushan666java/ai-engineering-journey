@@ -1,4 +1,5 @@
 ---
+id: 09-dimensionality-reduction
 slug: /machine-learning/09-dimensionality-reduction
 title: "Chapter 9: Dimensionality Reduction"
 sidebar_label: "Chapter 9: Dimensionality Reduction"

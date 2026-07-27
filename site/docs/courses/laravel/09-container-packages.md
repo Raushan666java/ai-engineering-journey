@@ -1,4 +1,5 @@
 ---
+id: 09-container-packages
 slug: /laravel/09-container-packages
 title: "Chapter 9: Service Container, Facades & Package Development"
 sidebar_label: "Chapter 9: Service Container, Facades & Package Development"

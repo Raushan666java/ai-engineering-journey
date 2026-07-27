@@ -1,4 +1,5 @@
 ---
+id: 03-compiler-design
 slug: /gate-cs-preparation/03-compiler-design
 title: "03 Compiler Design"
 sidebar_label: "03 Compiler Design"

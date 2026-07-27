@@ -10,3 +10,5 @@ __pycache__/
 Thumbs.db
 AGENTS.md
 node_modules/
+site/build-logs/
+site/build-logs*.zip

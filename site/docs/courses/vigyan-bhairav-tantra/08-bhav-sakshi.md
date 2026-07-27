@@ -1,4 +1,5 @@
 ---
+id: 08-bhav-sakshi
 slug: /vigyan-bhairav-tantra/08-bhav-sakshi
 title: "अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें"
 sidebar_label: "अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें"

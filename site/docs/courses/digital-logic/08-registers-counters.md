@@ -1,4 +1,5 @@
 ---
+id: 08-registers-counters
 slug: /digital-logic/08-registers-counters
 title: "Chapter 8: Registers and Counters"
 sidebar_label: "Chapter 8: Registers and Counters"

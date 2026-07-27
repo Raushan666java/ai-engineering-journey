@@ -1,4 +1,5 @@
 ---
+id: ch-16-self-assessment-strategy
 slug: /learning-how-to-learn/ch-16-self-assessment-strategy
 title: "Chapter 16: Self-Assessment & Structured Preparation Strategy"
 sidebar_label: "Chapter 16: Self-Assessment & Structured Preparation Strategy"

@@ -1,4 +1,5 @@
 ---
+id: 02-banking-system-regulations
 slug: /banking-financial-awareness/02-banking-system-regulations
 title: "Chapter 2: Banking System & Regulations"
 sidebar_label: "Chapter 2: Banking System & Regulations"

@@ -1,4 +1,5 @@
 ---
+id: 07-react-advanced
 slug: /web-development/07-react-advanced
 title: "Chapter 7 → React Advanced"
 sidebar_label: "Chapter 7 → React Advanced"

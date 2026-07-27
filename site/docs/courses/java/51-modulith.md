@@ -1,4 +1,5 @@
 ---
+id: 51-modulith
 slug: /java/51-modulith
 title: "Spring Modulith"
 sidebar_label: "Spring Modulith"

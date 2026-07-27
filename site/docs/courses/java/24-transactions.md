@@ -1,4 +1,5 @@
 ---
+id: 24-transactions
 slug: /java/24-transactions
 title: "Transaction Management"
 sidebar_label: "Transaction Management"

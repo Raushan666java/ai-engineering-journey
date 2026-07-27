@@ -1,4 +1,5 @@
 ---
+id: 07-tuples-sets
 slug: /python-programming/07-tuples-sets
 title: "Chapter 7: Tuples and Sets"
 sidebar_label: "Chapter 7: Tuples and Sets"

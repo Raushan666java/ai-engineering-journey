@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /general-aptitude/index
 title: "General Aptitude"
 sidebar_label: "General Aptitude"

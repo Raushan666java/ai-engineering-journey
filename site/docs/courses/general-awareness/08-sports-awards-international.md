@@ -1,4 +1,5 @@
 ---
+id: 08-sports-awards-international
 slug: /general-awareness/08-sports-awards-international
 title: "Chapter 8: Sports, Awards & International Organizations"
 sidebar_label: "Chapter 8: Sports, Awards & International Organizations"

@@ -1,4 +1,5 @@
 ---
+id: 04-proofs
 slug: /discrete-mathematics/04-proofs
 title: "Chapter 4: Proof Techniques"
 sidebar_label: "Chapter 4: Proof Techniques"

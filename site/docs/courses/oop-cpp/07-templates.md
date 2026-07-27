@@ -1,4 +1,5 @@
 ---
+id: 07-templates
 slug: /oop-cpp/07-templates
 title: "Chapter 7: Templates"
 sidebar_label: "Chapter 7: Templates"

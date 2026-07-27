@@ -1,4 +1,5 @@
 ---
+id: 04-phase3-agents-langgraph-mcp
 slug: /ai-agent-engineer/04-phase3-agents-langgraph-mcp
 title: "Phase 3 — AI Agents: LangGraph, CrewAI, MCP"
 sidebar_label: "Phase 3 — AI Agents: LangGraph, CrewAI, MCP"

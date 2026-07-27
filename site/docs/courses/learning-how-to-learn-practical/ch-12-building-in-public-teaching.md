@@ -1,4 +1,5 @@
 ---
+id: ch-12-building-in-public-teaching
 slug: /learning-how-to-learn-practical/ch-12-building-in-public-teaching
 title: "Chapter 12: Building in Public & Teaching"
 sidebar_label: "Chapter 12: Building in Public & Teaching"

@@ -1,4 +1,5 @@
 ---
+id: 18-ai-applications
 slug: /artificial-intelligence/18-ai-applications
 title: "Chapter 18: Applications of Artificial Intelligence"
 sidebar_label: "Chapter 18: Applications of Artificial Intelligence"

@@ -1,4 +1,5 @@
 ---
+id: 02-agents
 slug: /artificial-intelligence/02-agents
 title: "Chapter 2: Intelligent Agents"
 sidebar_label: "Chapter 2: Intelligent Agents"

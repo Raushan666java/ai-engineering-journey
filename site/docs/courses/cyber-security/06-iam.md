@@ -1,4 +1,5 @@
 ---
+id: 06-iam
 slug: /cyber-security/06-iam
 title: "Chapter 6: Identity & Access Management"
 sidebar_label: "Chapter 6: Identity & Access Management"

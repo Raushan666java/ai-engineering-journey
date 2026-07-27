@@ -1,4 +1,5 @@
 ---
+id: 23-case-study-ai-content
 slug: /laravel/23-case-study-ai-content
 title: "Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform"
 sidebar_label: "Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform"

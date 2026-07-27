@@ -1,4 +1,5 @@
 ---
+id: 02-linear-regression
 slug: /machine-learning/02-linear-regression
 title: "Chapter 2: Linear Regression"
 sidebar_label: "Chapter 2: Linear Regression"

@@ -1,4 +1,5 @@
 ---
+id: 14-magic-methods
 slug: /python-programming/14-magic-methods
 title: "Chapter 14: Magic Methods"
 sidebar_label: "Chapter 14: Magic Methods"

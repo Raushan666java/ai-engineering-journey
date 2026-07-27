@@ -1,4 +1,5 @@
 ---
+id: 20-case-study-netflix
 slug: /system-design/20-case-study-netflix
 title: "Chapter 20: Case Study — Netflix and Video Streaming"
 sidebar_label: "Chapter 20: Case Study — Netflix and Video Streaming"

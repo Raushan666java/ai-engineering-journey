@@ -1,4 +1,5 @@
 ---
+id: 12-ai-sdk-agents
 slug: /laravel/12-ai-sdk-agents
 title: "Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output"
 sidebar_label: "Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output"

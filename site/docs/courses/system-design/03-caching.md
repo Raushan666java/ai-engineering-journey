@@ -1,4 +1,5 @@
 ---
+id: 03-caching
 slug: /system-design/03-caching
 title: "Chapter 3: Caching Strategies and Patterns"
 sidebar_label: "Chapter 3: Caching Strategies and Patterns"

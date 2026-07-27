@@ -1,4 +1,5 @@
 ---
+id: 15-applications
 slug: /discrete-mathematics/15-applications
 title: "Chapter 15: Applications of Discrete Mathematics"
 sidebar_label: "Chapter 15: Applications of Discrete Mathematics"

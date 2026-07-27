@@ -1,4 +1,5 @@
 ---
+id: 01-core-banking-solutions
 slug: /banking-technology/01-core-banking-solutions
 title: "Chapter 01: Core Banking Solutions (CBS)"
 sidebar_label: "Chapter 01: Core Banking Solutions (CBS)"

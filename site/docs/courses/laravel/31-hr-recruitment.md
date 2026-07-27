@@ -1,4 +1,5 @@
 ---
+id: 31-hr-recruitment
 slug: /laravel/31-hr-recruitment
 title: "Chapter 31: HR & Recruitment Ã¢â‚¬â€ AI-Powered Talent Agents"
 sidebar_label: "Chapter 31: HR & Recruitment Ã¢â‚¬â€ AI-Powered Talent Agents"

@@ -1,4 +1,5 @@
 ---
+id: ch01-loop-foundations
 slug: /loop-engineering/ch01-loop-foundations
 title: "Chapter 1: Loop Foundations"
 sidebar_label: "Chapter 1: Loop Foundations"

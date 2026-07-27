@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /machine-learning/01-introduction
 title: "Chapter 1: Introduction to Machine Learning"
 sidebar_label: "Chapter 1: Introduction to Machine Learning"

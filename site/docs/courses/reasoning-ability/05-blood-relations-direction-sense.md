@@ -1,4 +1,5 @@
 ---
+id: 05-blood-relations-direction-sense
 slug: /reasoning-ability/05-blood-relations-direction-sense
 title: "Blood Relations, Direction Sense, and Order-Ranking"
 sidebar_label: "Blood Relations, Direction Sense, and Order-Ranking"

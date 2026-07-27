@@ -1,4 +1,5 @@
 ---
+id: 16-mock-test-2
 slug: /gate-cs-preparation/16-mock-test-2
 title: "16 Mock Test 2"
 sidebar_label: "16 Mock Test 2"

@@ -1,4 +1,5 @@
 ---
+id: 03-syllogism-coding-decoding
 slug: /reasoning-ability/03-syllogism-coding-decoding
 title: "Syllogism and Coding-Decoding"
 sidebar_label: "Syllogism and Coding-Decoding"

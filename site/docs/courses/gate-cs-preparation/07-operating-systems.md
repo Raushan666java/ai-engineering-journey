@@ -1,4 +1,5 @@
 ---
+id: 07-operating-systems
 slug: /gate-cs-preparation/07-operating-systems
 title: "07 Operating Systems"
 sidebar_label: "07 Operating Systems"

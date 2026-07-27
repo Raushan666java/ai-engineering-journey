@@ -1,4 +1,5 @@
 ---
+id: 03-calculus-ii
 slug: /engineering-mathematics/03-calculus-ii
 title: "Chapter 3: Multivariable Calculus"
 sidebar_label: "Chapter 3: Multivariable Calculus"

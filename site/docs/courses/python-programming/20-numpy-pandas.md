@@ -1,4 +1,5 @@
 ---
+id: 20-numpy-pandas
 slug: /python-programming/20-numpy-pandas
 title: "Chapter 20: NumPy and pandas"
 sidebar_label: "Chapter 20: NumPy and pandas"

@@ -1,4 +1,5 @@
 ---
+id: 28-finance
 slug: /laravel/28-finance
 title: "Chapter 28: Finance & FinTech Agents"
 sidebar_label: "Chapter 28: Finance & FinTech Agents"

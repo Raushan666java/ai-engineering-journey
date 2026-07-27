@@ -1,4 +1,5 @@
 ---
+id: 46-interview-real-estate
 slug: /laravel/46-interview-real-estate
 title: "Chapter 46: Real Estate & Property Interview Q&A"
 sidebar_label: "Chapter 46: Real Estate & Property Interview Q&A"

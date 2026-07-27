@@ -1,4 +1,5 @@
 ---
+id: ch-11-ai-assisted-learning
 slug: /learning-how-to-learn/ch-11-ai-assisted-learning
 title: "Chapter 11: AI-Assisted Learning"
 sidebar_label: "Chapter 11: AI-Assisted Learning"

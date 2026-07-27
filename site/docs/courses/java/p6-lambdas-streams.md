@@ -1,4 +1,5 @@
 ---
+id: p6-lambdas-streams
 slug: /java/p6-lambdas-streams
 title: "Lambda Expressions & Functional Programming"
 sidebar_label: "Lambda Expressions & Functional Programming"

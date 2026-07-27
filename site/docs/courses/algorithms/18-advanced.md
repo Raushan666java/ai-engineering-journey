@@ -1,4 +1,5 @@
 ---
+id: 18-advanced
 slug: /algorithms/18-advanced
 title: "Chapter 18: Advanced Topics"
 sidebar_label: "Chapter 18: Advanced Topics"

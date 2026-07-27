@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /cyber-security/index
 title: "CS 410: Comprehensive Cyber Security (Expanded Edition)"
 sidebar_label: "CS 410: Comprehensive Cyber Security (Expanded Edition)"

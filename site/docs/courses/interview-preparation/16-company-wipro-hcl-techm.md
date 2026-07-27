@@ -1,4 +1,5 @@
 ---
+id: 16-company-wipro-hcl-techm
 slug: /interview-preparation/16-company-wipro-hcl-techm
 title: "Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank"
 sidebar_label: "Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank"

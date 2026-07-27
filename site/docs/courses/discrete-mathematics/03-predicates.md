@@ -1,4 +1,5 @@
 ---
+id: 03-predicates
 slug: /discrete-mathematics/03-predicates
 title: "Chapter 3: Predicates and Quantifiers"
 sidebar_label: "Chapter 3: Predicates and Quantifiers"

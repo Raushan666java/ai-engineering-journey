@@ -1,4 +1,5 @@
 ---
+id: 06-operator-overloading
 slug: /oop-cpp/06-operator-overloading
 title: "Chapter 6: Operator Overloading"
 sidebar_label: "Chapter 6: Operator Overloading"

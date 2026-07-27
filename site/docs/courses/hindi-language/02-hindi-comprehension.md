@@ -1,4 +1,5 @@
 ---
+id: 02-hindi-comprehension
 slug: /hindi-language/02-hindi-comprehension
 title: "Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)"
 sidebar_label: "Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)"

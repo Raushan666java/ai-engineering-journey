@@ -1,4 +1,5 @@
 ---
+id: 10-optimization
 slug: /compiler-design/10-optimization
 title: "Chapter 10: Code Optimization"
 sidebar_label: "Chapter 10: Code Optimization"

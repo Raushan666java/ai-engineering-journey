@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /operating-systems/01-introduction
 title: "Chapter 1: Introduction to Operating Systems"
 sidebar_label: "Chapter 1: Introduction to Operating Systems"

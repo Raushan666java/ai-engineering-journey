@@ -1,4 +1,5 @@
 ---
+id: 08-uncertainty
 slug: /artificial-intelligence/08-uncertainty
 title: "Chapter 8: Uncertainty and Probabilistic Reasoning"
 sidebar_label: "Chapter 8: Uncertainty and Probabilistic Reasoning"

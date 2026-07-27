@@ -1,4 +1,5 @@
 ---
+id: 18-modern
 slug: /computer-networks/18-modern
 title: "Chapter 18: Modern Networking → Complete Reference"
 sidebar_label: "Chapter 18: Modern Networking → Complete Reference"

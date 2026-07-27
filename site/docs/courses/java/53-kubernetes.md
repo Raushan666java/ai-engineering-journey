@@ -1,4 +1,5 @@
 ---
+id: 53-kubernetes
 slug: /java/53-kubernetes
 title: "Kubernetes Deployment"
 sidebar_label: "Kubernetes Deployment"

@@ -1,4 +1,5 @@
 ---
+id: 11-graphs
 slug: /data-structures/11-graphs
 title: "Chapter 11: Graphs"
 sidebar_label: "Chapter 11: Graphs"

@@ -1,4 +1,5 @@
 ---
+id: 13-sockets
 slug: /computer-networks/13-sockets
 title: "Chapter 13: Socket Programming → Complete Reference"
 sidebar_label: "Chapter 13: Socket Programming → Complete Reference"

@@ -1,4 +1,5 @@
 ---
+id: 04-differential-equations
 slug: /engineering-mathematics/04-differential-equations
 title: "Chapter 4: Differential Equations"
 sidebar_label: "Chapter 4: Differential Equations"

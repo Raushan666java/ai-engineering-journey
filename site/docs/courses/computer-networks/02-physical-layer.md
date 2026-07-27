@@ -1,4 +1,5 @@
 ---
+id: 02-physical-layer
 slug: /computer-networks/02-physical-layer
 title: "Chapter 2: The Physical Layer"
 sidebar_label: "Chapter 2: The Physical Layer"

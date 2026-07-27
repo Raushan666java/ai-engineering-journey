@@ -1,4 +1,5 @@
 ---
+id: ch-12-teaching-knowledge-transfer
 slug: /learning-how-to-learn/ch-12-teaching-knowledge-transfer
 title: "Chapter 12: Teaching & Knowledge Transfer"
 sidebar_label: "Chapter 12: Teaching & Knowledge Transfer"

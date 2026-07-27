@@ -1,4 +1,5 @@
 ---
+id: 29-junit5
 slug: /java/29-junit5
 title: "JUnit 5 Deep Dive"
 sidebar_label: "JUnit 5 Deep Dive"

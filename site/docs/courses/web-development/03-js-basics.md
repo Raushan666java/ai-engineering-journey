@@ -1,4 +1,5 @@
 ---
+id: 03-js-basics
 slug: /web-development/03-js-basics
 title: "Chapter 3 → JavaScript Basics"
 sidebar_label: "Chapter 3 → JavaScript Basics"

@@ -1,4 +1,5 @@
 ---
+id: 15-web-apis
 slug: /computer-networks/15-web-apis
 title: "Chapter 15: Web APIs and Application Protocols"
 sidebar_label: "Chapter 15: Web APIs and Application Protocols"

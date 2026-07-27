@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /devops/01-introduction
 title: "Chapter 1: Introduction to DevOps"
 sidebar_label: "Chapter 1: Introduction to DevOps"

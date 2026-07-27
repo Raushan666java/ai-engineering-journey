@@ -1,4 +1,5 @@
 ---
+id: 16-design-patterns
 slug: /oop-cpp/16-design-patterns
 title: "Chapter 16: Design Patterns → The Gang of Four"
 sidebar_label: "Chapter 16: Design Patterns → The Gang of Four"

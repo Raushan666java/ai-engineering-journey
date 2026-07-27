@@ -1,4 +1,5 @@
 ---
+id: 03-memory-hierarchy
 slug: /computer-architecture/03-memory-hierarchy
 title: "Memory Hierarchy"
 sidebar_label: "Memory Hierarchy"

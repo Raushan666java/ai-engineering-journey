@@ -1,4 +1,5 @@
 ---
+id: 02-classes-objects
 slug: /oop-cpp/02-classes-objects
 title: "Chapter 2: Classes and Objects"
 sidebar_label: "Chapter 2: Classes and Objects"

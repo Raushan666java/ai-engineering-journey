@@ -1,4 +1,5 @@
 ---
+id: 05-verbal-ability-drills
 slug: /speed-drills/05-verbal-ability-drills
 title: "Verbal Ability Speed Drills"
 sidebar_label: "Verbal Ability Speed Drills"

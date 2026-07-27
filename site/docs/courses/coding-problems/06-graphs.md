@@ -1,4 +1,5 @@
 ---
+id: 06-graphs
 slug: /coding-problems/06-graphs
 title: "Chapter 06: Graphs"
 sidebar_label: "Chapter 06: Graphs"

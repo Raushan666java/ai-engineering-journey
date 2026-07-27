@@ -1,4 +1,5 @@
 ---
+id: 08-cfl
 slug: /theory-of-computation/08-cfl
 title: "Chapter 8: Properties of Context-Free Languages"
 sidebar_label: "Chapter 8: Properties of Context-Free Languages"

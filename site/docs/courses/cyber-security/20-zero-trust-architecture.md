@@ -1,4 +1,5 @@
 ---
+id: 20-zero-trust-architecture
 slug: /cyber-security/20-zero-trust-architecture
 title: "Chapter 20: Zero Trust & Enterprise Security Architecture"
 sidebar_label: "Chapter 20: Zero Trust & Enterprise Security Architecture"

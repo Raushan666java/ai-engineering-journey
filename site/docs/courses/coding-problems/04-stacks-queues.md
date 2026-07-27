@@ -1,4 +1,5 @@
 ---
+id: 04-stacks-queues
 slug: /coding-problems/04-stacks-queues
 title: "Chapter 04: Stacks & Queues"
 sidebar_label: "Chapter 04: Stacks & Queues"

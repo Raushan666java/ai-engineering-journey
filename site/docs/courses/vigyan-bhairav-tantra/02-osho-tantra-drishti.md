@@ -1,4 +1,5 @@
 ---
+id: 02-osho-tantra-drishti
 slug: /vigyan-bhairav-tantra/02-osho-tantra-drishti
 title: "अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार"
 sidebar_label: "अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार"

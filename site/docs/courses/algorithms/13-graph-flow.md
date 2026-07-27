@@ -1,4 +1,5 @@
 ---
+id: 13-graph-flow
 slug: /algorithms/13-graph-flow
 title: "Chapter 13: Network Flow"
 sidebar_label: "Chapter 13: Network Flow"

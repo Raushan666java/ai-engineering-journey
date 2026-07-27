@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /marketing-aptitude/index
 title: "Marketing Aptitude — Complete Course"
 sidebar_label: "Marketing Aptitude — Complete Course"

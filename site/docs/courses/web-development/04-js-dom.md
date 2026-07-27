@@ -1,4 +1,5 @@
 ---
+id: 04-js-dom
 slug: /web-development/04-js-dom
 title: "Chapter 4 → JavaScript and the DOM"
 sidebar_label: "Chapter 4 → JavaScript and the DOM"

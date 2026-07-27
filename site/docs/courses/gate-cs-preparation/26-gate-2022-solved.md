@@ -1,4 +1,5 @@
 ---
+id: 26-gate-2022-solved
 slug: /gate-cs-preparation/26-gate-2022-solved
 title: "26 Gate 2022 Solved"
 sidebar_label: "26 Gate 2022 Solved"

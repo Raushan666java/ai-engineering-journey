@@ -1,4 +1,5 @@
 ---
+id: 03-data-sufficiency
 slug: /data-analysis-interpretation/03-data-sufficiency
 title: "Chapter 3: Data Sufficiency"
 sidebar_label: "Chapter 3: Data Sufficiency"

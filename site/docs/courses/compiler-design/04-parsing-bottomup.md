@@ -1,4 +1,5 @@
 ---
+id: 04-parsing-bottomup
 slug: /compiler-design/04-parsing-bottomup
 title: "Chapter 4: Bottom-Up Parsing"
 sidebar_label: "Chapter 4: Bottom-Up Parsing"

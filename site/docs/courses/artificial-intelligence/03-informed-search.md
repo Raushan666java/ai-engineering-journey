@@ -1,4 +1,5 @@
 ---
+id: 03-informed-search
 slug: /artificial-intelligence/03-informed-search
 title: "Chapter 3: Informed Search and Heuristics"
 sidebar_label: "Chapter 3: Informed Search and Heuristics"

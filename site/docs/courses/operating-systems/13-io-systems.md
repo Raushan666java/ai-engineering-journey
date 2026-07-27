@@ -1,4 +1,5 @@
 ---
+id: 13-io-systems
 slug: /operating-systems/13-io-systems
 title: "Chapter 13: I/O Systems"
 sidebar_label: "Chapter 13: I/O Systems"

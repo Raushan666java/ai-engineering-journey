@@ -1,4 +1,5 @@
 ---
+id: 02-searching
 slug: /algorithms/02-searching
 title: "Chapter 2: Searching"
 sidebar_label: "Chapter 2: Searching"

@@ -1,4 +1,5 @@
 ---
+id: 04-mac
 slug: /computer-networks/04-mac
 title: "Chapter 4: Medium Access Control (MAC)"
 sidebar_label: "Chapter 4: Medium Access Control (MAC)"

@@ -1,4 +1,5 @@
 ---
+id: 05-hindi-translation
 slug: /hindi-language/05-hindi-translation
 title: "Chapter 5: à¤…à¤¨à¥à¤µà¤¾à¤¦ (Translation)"
 sidebar_label: "Chapter 5: à¤…à¤¨à¥à¤µà¤¾à¤¦ (Translation)"

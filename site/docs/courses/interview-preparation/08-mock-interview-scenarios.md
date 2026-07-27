@@ -1,4 +1,5 @@
 ---
+id: 08-mock-interview-scenarios
 slug: /interview-preparation/08-mock-interview-scenarios
 title: "Chapter 8: Mock Interview Scenarios"
 sidebar_label: "Chapter 8: Mock Interview Scenarios"

@@ -1,4 +1,5 @@
 ---
+id: 04-banking-marketing
 slug: /marketing-aptitude/04-banking-marketing
 title: "Chapter 4: Marketing in Banking Sector"
 sidebar_label: "Chapter 4: Marketing in Banking Sector"

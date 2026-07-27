@@ -1,4 +1,5 @@
 ---
+id: common-mistakes-faq
 slug: /vigyan-bhairav-tantra/common-mistakes-faq
 title: "सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)"
 sidebar_label: "सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)"

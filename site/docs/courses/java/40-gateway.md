@@ -1,4 +1,5 @@
 ---
+id: 40-gateway
 slug: /java/40-gateway
 title: "API Gateway (Spring Cloud Gateway)"
 sidebar_label: "API Gateway (Spring Cloud Gateway)"

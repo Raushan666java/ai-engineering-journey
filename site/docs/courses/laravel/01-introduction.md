@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /laravel/01-introduction
 title: "Chapter 1: Introduction to Laravel 13"
 sidebar_label: "Chapter 1: Introduction to Laravel 13"

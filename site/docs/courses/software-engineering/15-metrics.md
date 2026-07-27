@@ -1,4 +1,5 @@
 ---
+id: 15-metrics
 slug: /software-engineering/15-metrics
 title: "Software Metrics and Measurement"
 sidebar_label: "Software Metrics and Measurement"

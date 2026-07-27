@@ -1,4 +1,5 @@
 ---
+id: 02-cryptography
 slug: /blockchain/02-cryptography
 title: "Chapter 2: Cryptography for Blockchain"
 sidebar_label: "Chapter 2: Cryptography for Blockchain"

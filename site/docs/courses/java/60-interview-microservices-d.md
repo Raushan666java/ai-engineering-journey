@@ -1,7 +1,8 @@
 ---
+id: 60-interview-microservices-d
 slug: /java/60-interview-microservices-d
-title: "60 Interview Microservices D"
-sidebar_label: "60 Interview Microservices D"
+title: "── Istio DestinationRule (circuit breaker at mesh level) ──"
+sidebar_label: "── Istio DestinationRule (circuit breaker at mesh level) ──"
 sidebar_position: 67
 ---
 ![Microservices Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-d.png)

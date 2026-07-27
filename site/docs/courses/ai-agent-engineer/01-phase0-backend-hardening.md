@@ -1,4 +1,5 @@
 ---
+id: 01-phase0-backend-hardening
 slug: /ai-agent-engineer/01-phase0-backend-hardening
 title: "Phase 0 — Compressed Backend Hardening"
 sidebar_label: "Phase 0 — Compressed Backend Hardening"

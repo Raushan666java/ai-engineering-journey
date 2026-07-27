@@ -1,4 +1,5 @@
 ---
+id: 06-docker-compose
 slug: /devops/06-docker-compose
 title: "Chapter 6: Docker Compose"
 sidebar_label: "Chapter 6: Docker Compose"

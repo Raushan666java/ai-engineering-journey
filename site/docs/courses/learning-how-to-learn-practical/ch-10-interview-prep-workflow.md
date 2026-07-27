@@ -1,4 +1,5 @@
 ---
+id: ch-10-interview-prep-workflow
 slug: /learning-how-to-learn-practical/ch-10-interview-prep-workflow
 title: "Chapter 10: Interview Preparation Workflow"
 sidebar_label: "Chapter 10: Interview Preparation Workflow"

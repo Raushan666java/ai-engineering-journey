@@ -1,4 +1,5 @@
 ---
+id: 14-lambdas
 slug: /oop-cpp/14-lambdas
 title: "Chapter 14: Lambdas (Deep Dive)"
 sidebar_label: "Chapter 14: Lambdas (Deep Dive)"

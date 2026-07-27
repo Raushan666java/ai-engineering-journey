@@ -1,4 +1,5 @@
 ---
+id: 22-case-study-ecommerce
 slug: /laravel/22-case-study-ecommerce
 title: "Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform"
 sidebar_label: "Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform"

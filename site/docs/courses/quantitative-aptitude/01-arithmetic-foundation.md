@@ -1,4 +1,5 @@
 ---
+id: 01-arithmetic-foundation
 slug: /quantitative-aptitude/01-arithmetic-foundation
 title: "Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/Compound Interest, Ratio & Proportion, Averages"
 sidebar_label: "Chapter 1: Arithmetic Foundation — Percentage, Profit & Loss, Simple/Compound Interest, Ratio & Proportion, Averages"

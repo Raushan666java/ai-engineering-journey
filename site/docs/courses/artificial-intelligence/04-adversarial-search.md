@@ -1,4 +1,5 @@
 ---
+id: 04-adversarial-search
 slug: /artificial-intelligence/04-adversarial-search
 title: "Chapter 4: Adversarial Search and Games"
 sidebar_label: "Chapter 4: Adversarial Search and Games"

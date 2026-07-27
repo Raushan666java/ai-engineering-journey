@@ -1,4 +1,5 @@
 ---
+id: 09-optimization
 slug: /engineering-mathematics/09-optimization
 title: "Chapter 9: Optimization"
 sidebar_label: "Chapter 9: Optimization"

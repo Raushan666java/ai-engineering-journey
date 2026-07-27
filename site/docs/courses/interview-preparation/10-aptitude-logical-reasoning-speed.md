@@ -1,4 +1,5 @@
 ---
+id: 10-aptitude-logical-reasoning-speed
 slug: /interview-preparation/10-aptitude-logical-reasoning-speed
 title: "Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics"
 sidebar_label: "Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics"

@@ -1,4 +1,5 @@
 ---
+id: 02-lexical
 slug: /compiler-design/02-lexical
 title: "Chapter 2: Lexical Analysis"
 sidebar_label: "Chapter 2: Lexical Analysis"

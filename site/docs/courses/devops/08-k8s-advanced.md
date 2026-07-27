@@ -1,4 +1,5 @@
 ---
+id: 08-k8s-advanced
 slug: /devops/08-k8s-advanced
 title: "Chapter 8: Advanced Kubernetes"
 sidebar_label: "Chapter 8: Advanced Kubernetes"

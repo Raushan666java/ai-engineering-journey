@@ -1,4 +1,5 @@
 ---
+id: 08-ai-agents-and-tool-use
 slug: /modern-ai-engineering/08-ai-agents-and-tool-use
 title: "Chapter 8: AI Agents and Tool Use"
 sidebar_label: "Chapter 8: AI Agents and Tool Use"

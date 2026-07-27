@@ -1,4 +1,5 @@
 ---
+id: 13-query-processing
 slug: /database-management-systems/13-query-processing
 title: "Chapter 13: Query Processing and Optimization"
 sidebar_label: "Chapter 13: Query Processing and Optimization"

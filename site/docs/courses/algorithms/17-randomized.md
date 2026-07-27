@@ -1,4 +1,5 @@
 ---
+id: 17-randomized
 slug: /algorithms/17-randomized
 title: "Chapter 17: Randomized Algorithms"
 sidebar_label: "Chapter 17: Randomized Algorithms"

@@ -1,4 +1,5 @@
 ---
+id: ch04-feedback-loops
 slug: /loop-engineering/ch04-feedback-loops
 title: "Chapter 4: Feedback Loops"
 sidebar_label: "Chapter 4: Feedback Loops"

@@ -1,4 +1,5 @@
 ---
+id: 55-observability
 slug: /java/55-observability
 title: "Observability (Micrometer, Prometheus, Grafana)"
 sidebar_label: "Observability (Micrometer, Prometheus, Grafana)"

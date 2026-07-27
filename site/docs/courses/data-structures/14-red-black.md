@@ -1,4 +1,5 @@
 ---
+id: 14-red-black
 slug: /data-structures/14-red-black
 title: "Chapter 14: Red-Black Trees"
 sidebar_label: "Chapter 14: Red-Black Trees"

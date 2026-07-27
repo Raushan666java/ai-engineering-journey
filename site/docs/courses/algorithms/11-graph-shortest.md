@@ -1,4 +1,5 @@
 ---
+id: 11-graph-shortest
 slug: /algorithms/11-graph-shortest
 title: "Chapter 11: Graph Shortest Paths"
 sidebar_label: "Chapter 11: Graph Shortest Paths"

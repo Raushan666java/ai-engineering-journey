@@ -1,4 +1,5 @@
 ---
+id: 09-information-security
 slug: /professional-knowledge/09-information-security
 title: "Chapter 9: Information Security — Exam Quick Revision"
 sidebar_label: "Chapter 9: Information Security — Exam Quick Revision"

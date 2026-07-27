@@ -1,4 +1,5 @@
 ---
+id: 04-cicd
 slug: /devops/04-cicd
 title: "Chapter 4: CI/CD"
 sidebar_label: "Chapter 4: CI/CD"

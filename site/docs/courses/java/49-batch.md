@@ -1,4 +1,5 @@
 ---
+id: 49-batch
 slug: /java/49-batch
 title: "Spring Batch"
 sidebar_label: "Spring Batch"

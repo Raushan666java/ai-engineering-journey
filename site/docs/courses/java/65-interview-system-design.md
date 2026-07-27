@@ -1,4 +1,5 @@
 ---
+id: 65-interview-system-design
 slug: /java/65-interview-system-design
 title: "65. System Design → Interview Q&A"
 sidebar_label: "65. System Design → Interview Q&A"

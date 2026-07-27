@@ -1,4 +1,5 @@
 ---
+id: 07-kubernetes
 slug: /devops/07-kubernetes
 title: "Chapter 7: Kubernetes"
 sidebar_label: "Chapter 7: Kubernetes"

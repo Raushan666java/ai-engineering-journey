@@ -1,4 +1,5 @@
 ---
+id: 33-customer-service
 slug: /laravel/33-customer-service
 title: "Chapter 33: Customer Service & Support Agents"
 sidebar_label: "Chapter 33: Customer Service & Support Agents"

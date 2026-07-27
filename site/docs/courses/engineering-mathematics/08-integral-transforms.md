@@ -1,4 +1,5 @@
 ---
+id: 08-integral-transforms
 slug: /engineering-mathematics/08-integral-transforms
 title: "Chapter 8: Integral Transforms"
 sidebar_label: "Chapter 8: Integral Transforms"

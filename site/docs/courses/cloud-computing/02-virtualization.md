@@ -1,4 +1,5 @@
 ---
+id: 02-virtualization
 slug: /cloud-computing/02-virtualization
 title: "Chapter 2: Virtualization"
 sidebar_label: "Chapter 2: Virtualization"

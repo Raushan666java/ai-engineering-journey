@@ -1,4 +1,5 @@
 ---
+id: 13-inheritance
 slug: /python-programming/13-inheritance
 title: "Chapter 13: Inheritance and Protocols"
 sidebar_label: "Chapter 13: Inheritance and Protocols"

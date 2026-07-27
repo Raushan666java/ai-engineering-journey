@@ -1,4 +1,5 @@
 ---
+id: 47-interview-legal
 slug: /laravel/47-interview-legal
 title: "Chapter 47: Legal & Compliance Interview Q&A"
 sidebar_label: "Chapter 47: Legal & Compliance Interview Q&A"

@@ -1,4 +1,5 @@
 ---
+id: 13-ai-sdk-tools
 slug: /laravel/13-ai-sdk-tools
 title: "Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools"
 sidebar_label: "Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools"

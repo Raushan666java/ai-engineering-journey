@@ -1,4 +1,5 @@
 ---
+id: 07-company-wise-pyqs
 slug: /placement-preparation/07-company-wise-pyqs
 title: "07 → Company-Wise Previous Year Questions"
 sidebar_label: "07 → Company-Wise Previous Year Questions"

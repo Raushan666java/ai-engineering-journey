@@ -1,4 +1,5 @@
 ---
+id: 19-performance-tuning
 slug: /database-management-systems/19-performance-tuning
 title: "Chapter 19: Performance Tuning"
 sidebar_label: "Chapter 19: Performance Tuning"

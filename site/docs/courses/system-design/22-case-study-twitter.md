@@ -1,4 +1,5 @@
 ---
+id: 22-case-study-twitter
 slug: /system-design/22-case-study-twitter
 title: "Chapter 22: Case Study — Twitter and News Feed"
 sidebar_label: "Chapter 22: Case Study — Twitter and News Feed"

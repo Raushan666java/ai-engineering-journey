@@ -1,4 +1,5 @@
 ---
+id: 17-standard-library
 slug: /c-programming/17-standard-library
 title: "Chapter 17: The C Standard Library"
 sidebar_label: "Chapter 17: The C Standard Library"

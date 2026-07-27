@@ -1,4 +1,5 @@
 ---
+id: ch-07-dsa-practice-system
 slug: /learning-how-to-learn-practical/ch-07-dsa-practice-system
 title: "Chapter 7: Practice System for Mastery"
 sidebar_label: "Chapter 7: Practice System for Mastery"

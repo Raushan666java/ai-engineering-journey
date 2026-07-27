@@ -1,4 +1,5 @@
 ---
+id: 13-lld-concurrency
 slug: /system-design/13-lld-concurrency
 title: "Chapter 13: Low-Level Design: Concurrency and Threading"
 sidebar_label: "Chapter 13: Low-Level Design: Concurrency and Threading"

@@ -1,4 +1,5 @@
 ---
+id: 05-ecosystem
 slug: /big-data/05-ecosystem
 title: "Chapter 5: Big Data Ecosystem Tools"
 sidebar_label: "Chapter 5: Big Data Ecosystem Tools"

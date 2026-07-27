@@ -1,4 +1,5 @@
 ---
+id: 15-advanced-topics
 slug: /digital-logic/15-advanced-topics
 title: "Chapter 15: Advanced Topics in Digital Logic"
 sidebar_label: "Chapter 15: Advanced Topics in Digital Logic"

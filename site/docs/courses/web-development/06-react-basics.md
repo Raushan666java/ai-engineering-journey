@@ -1,4 +1,5 @@
 ---
+id: 06-react-basics
 slug: /web-development/06-react-basics
 title: "Chapter 6 → React Basics"
 sidebar_label: "Chapter 6 → React Basics"

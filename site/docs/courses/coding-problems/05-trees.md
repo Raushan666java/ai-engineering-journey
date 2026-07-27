@@ -1,4 +1,5 @@
 ---
+id: 05-trees
 slug: /coding-problems/05-trees
 title: "Chapter 05: Trees"
 sidebar_label: "Chapter 05: Trees"

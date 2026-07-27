@@ -1,4 +1,5 @@
 ---
+id: ch-04-active-recall-spaced-repetition
 slug: /learning-how-to-learn-practical/ch-04-active-recall-spaced-repetition
 title: "Chapter 4: Active Recall & Spaced Repetition"
 sidebar_label: "Chapter 4: Active Recall & Spaced Repetition"

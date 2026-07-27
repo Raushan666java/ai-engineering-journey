@@ -1,4 +1,5 @@
 ---
+id: 12-capstone-customer-support-platform
 slug: /modern-ai-engineering/12-capstone-customer-support-platform
 title: "Chapter 12: Capstone — AI Customer Support Platform"
 sidebar_label: "Chapter 12: Capstone — AI Customer Support Platform"

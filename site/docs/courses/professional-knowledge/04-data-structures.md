@@ -1,4 +1,5 @@
 ---
+id: 04-data-structures
 slug: /professional-knowledge/04-data-structures
 title: "Chapter 4: Data Structures — Exam Quick Revision"
 sidebar_label: "Chapter 4: Data Structures — Exam Quick Revision"

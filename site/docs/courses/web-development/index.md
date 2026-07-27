@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /web-development/index
 title: "Web Development — Complete Textbook"
 sidebar_label: "Web Development — Complete Textbook"

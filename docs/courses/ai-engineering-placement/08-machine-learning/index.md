@@ -18,6 +18,8 @@ Understand core machine learning algorithms from regression to ensemble methods 
 | 08 | [Dimensionality Reduction](08-dimensionality-reduction.md) | PCA, t-SNE, UMAP, feature selection, LDA | 10 |
 | 09 | [Model Evaluation](09-model-evaluation.md) | cross-validation, ROC-AUC, confusion matrix, metrics | 10 |
 | 10 | [Hyperparameter Tuning](10-hyperparameter-tuning.md) | grid search, random search, Bayesian opt, Optuna | 10 |
+| 11 | [Naive Bayes](11-naive-bayes.md) | Bayes theorem, Gaussian/Multinomial/Bernoulli, text classification | 10 |
+| 12 | [Feature Engineering](12-feature-engineering.md) | imputation, encoding, scaling, feature construction, selection | 10 |
 
 ## Learning Path
 

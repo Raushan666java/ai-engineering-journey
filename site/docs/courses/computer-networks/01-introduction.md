@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /computer-networks/01-introduction
 title: "Chapter 1: Introduction to Computer Networks"
 sidebar_label: "Chapter 1: Introduction to Computer Networks"

@@ -1,4 +1,5 @@
 ---
+id: 08-cloud-computing
 slug: /professional-knowledge/08-cloud-computing
 title: "Chapter 8: Cloud Computing — Exam Quick Revision"
 sidebar_label: "Chapter 8: Cloud Computing — Exam Quick Revision"

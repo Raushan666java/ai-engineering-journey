@@ -1,4 +1,5 @@
 ---
+id: 13-avl
 slug: /data-structures/13-avl
 title: "Chapter 13: AVL Trees"
 sidebar_label: "Chapter 13: AVL Trees"

@@ -1,4 +1,5 @@
 ---
+id: 06-intermediate-code
 slug: /compiler-design/06-intermediate-code
 title: "Chapter 6: Intermediate Code Generation"
 sidebar_label: "Chapter 6: Intermediate Code Generation"

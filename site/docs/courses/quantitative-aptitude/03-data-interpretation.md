@@ -1,4 +1,5 @@
 ---
+id: 03-data-interpretation
 slug: /quantitative-aptitude/03-data-interpretation
 title: "Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs"
 sidebar_label: "Chapter 3: Data Interpretation — Table DI, Bar/Line Charts, Pie Charts, Caselets, Mixed Graphs"

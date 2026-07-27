@@ -1,4 +1,5 @@
 ---
+id: 05-functional-deep
 slug: /java/05-functional-deep
 title: "Functional Programming in Practice"
 sidebar_label: "Functional Programming in Practice"

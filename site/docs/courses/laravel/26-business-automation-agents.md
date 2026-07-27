@@ -1,4 +1,5 @@
 ---
+id: 26-business-automation-agents
 slug: /laravel/26-business-automation-agents
 title: "Chapter 26: Business Automation Agents"
 sidebar_label: "Chapter 26: Business Automation Agents"

@@ -1,4 +1,5 @@
 ---
+id: 14-company-google-swe
 slug: /interview-preparation/14-company-google-swe
 title: "Chapter 14: Google SWE — Company-Specific Question Bank"
 sidebar_label: "Chapter 14: Google SWE — Company-Specific Question Bank"

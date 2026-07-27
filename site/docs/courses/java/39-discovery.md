@@ -1,4 +1,5 @@
 ---
+id: 39-discovery
 slug: /java/39-discovery
 title: "Service Discovery & Load Balancing"
 sidebar_label: "Service Discovery & Load Balancing"

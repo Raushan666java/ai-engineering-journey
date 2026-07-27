@@ -1,4 +1,5 @@
 ---
+id: 10-file-systems
 slug: /operating-systems/10-file-systems
 title: "Chapter 10: File Systems"
 sidebar_label: "Chapter 10: File Systems"

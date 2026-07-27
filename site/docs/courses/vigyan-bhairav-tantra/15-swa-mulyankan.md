@@ -1,4 +1,5 @@
 ---
+id: 15-swa-mulyankan
 slug: /vigyan-bhairav-tantra/15-swa-mulyankan
 title: "अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि"
 sidebar_label: "अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि"

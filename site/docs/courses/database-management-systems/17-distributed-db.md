@@ -1,4 +1,5 @@
 ---
+id: 17-distributed-db
 slug: /database-management-systems/17-distributed-db
 title: "Chapter 17: Distributed Database Systems"
 sidebar_label: "Chapter 17: Distributed Database Systems"

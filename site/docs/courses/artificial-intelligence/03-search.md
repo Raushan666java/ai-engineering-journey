@@ -1,4 +1,5 @@
 ---
+id: 03-search
 slug: /artificial-intelligence/03-search
 title: "Chapter 3: Solving Problems by Searching"
 sidebar_label: "Chapter 3: Solving Problems by Searching"

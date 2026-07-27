@@ -1,4 +1,5 @@
 ---
+id: 04-doubly-linked-list
 slug: /data-structures/04-doubly-linked-list
 title: "Chapter 4: Doubly Linked List and Circular Linked List"
 sidebar_label: "Chapter 4: Doubly Linked List and Circular Linked List"

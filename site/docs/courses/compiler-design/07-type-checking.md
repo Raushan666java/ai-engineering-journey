@@ -1,4 +1,5 @@
 ---
+id: 07-type-checking
 slug: /compiler-design/07-type-checking
 title: "Chapter 7: Type Checking"
 sidebar_label: "Chapter 7: Type Checking"

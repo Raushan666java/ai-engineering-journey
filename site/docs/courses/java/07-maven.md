@@ -1,4 +1,5 @@
 ---
+id: 07-maven
 slug: /java/07-maven
 title: "Maven Deep Dive"
 sidebar_label: "Maven Deep Dive"

@@ -1,4 +1,5 @@
 ---
+id: 04-shwas-pragya
 slug: /vigyan-bhairav-tantra/04-shwas-pragya
 title: "अध्याय ४: श्वास-प्रज्ञा — ओशो की श्वास तकनीकें"
 sidebar_label: "अध्याय ४: श्वास-प्रज्ञा — ओशो की श्वास तकनीकें"

@@ -1,4 +1,5 @@
 ---
+id: 09-pointers
 slug: /c-programming/09-pointers
 title: "Chapter 9: Pointers"
 sidebar_label: "Chapter 9: Pointers"

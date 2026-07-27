@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /digital-logic/index
 title: "Digital Logic — Course Overview"
 sidebar_label: "Digital Logic — Course Overview"

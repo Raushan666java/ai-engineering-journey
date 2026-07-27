@@ -1,4 +1,5 @@
 ---
+id: 05-complex-analysis
 slug: /engineering-mathematics/05-complex-analysis
 title: "Chapter 5: Complex Analysis"
 sidebar_label: "Chapter 5: Complex Analysis"

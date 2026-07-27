@@ -1,4 +1,5 @@
 ---
+id: 09-dp-sequences
 slug: /algorithms/09-dp-sequences
 title: "Chapter 9: Dynamic Programming — Sequences"
 sidebar_label: "Chapter 9: Dynamic Programming — Sequences"

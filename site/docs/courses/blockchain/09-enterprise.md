@@ -1,4 +1,5 @@
 ---
+id: 09-enterprise
 slug: /blockchain/09-enterprise
 title: "Chapter 9: Enterprise Blockchain"
 sidebar_label: "Chapter 9: Enterprise Blockchain"

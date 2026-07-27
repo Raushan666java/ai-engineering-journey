@@ -1,4 +1,5 @@
 ---
+id: ch-02-the-30-day-sprint
 slug: /learning-how-to-learn-practical/ch-02-the-30-day-sprint
 title: "Chapter 2: The 30-Day Sprint"
 sidebar_label: "Chapter 2: The 30-Day Sprint"

@@ -1,4 +1,5 @@
 ---
+id: 17-exceptions-files
 slug: /python-programming/17-exceptions-files
 title: "Chapter 17: Exceptions and File I/O"
 sidebar_label: "Chapter 17: Exceptions and File I/O"

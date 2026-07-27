@@ -20,6 +20,8 @@ Learn to design scalable, reliable, and maintainable systems. Covers microservic
 | 10 | [Design URL Shortener](10-design-url-shortener.md) | hashing, key generation, redirects, analytics | 12 |
 | 11 | [Design ChatGPT](11-design-chatgpt.md) | streaming, context window, prompt caching, rate limits | 12 |
 | 12 | [Design WhatsApp](12-design-whatsapp.md) | real-time messaging, presence, end-to-end encryption | 12 |
+| 13 | [Design Notification System](13-design-notification-system.md) | push notification, WebSocket, FCM/APNs, deduplication | 12 |
+| 14 | [Design File Upload System](14-design-file-upload-system.md) | presigned URL, chunked upload, CDN, virus scanning | 12 |
 
 ## Learning Path
 

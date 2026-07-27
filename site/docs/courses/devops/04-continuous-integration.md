@@ -1,4 +1,5 @@
 ---
+id: 04-continuous-integration
 slug: /devops/04-continuous-integration
 title: "Chapter 4: Continuous Integration"
 sidebar_label: "Chapter 4: Continuous Integration"

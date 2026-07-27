@@ -1,4 +1,5 @@
 ---
+id: 01-general-aptitude
 slug: /gate-cs-preparation/01-general-aptitude
 title: "01 General Aptitude"
 sidebar_label: "01 General Aptitude"

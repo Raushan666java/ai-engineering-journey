@@ -1,4 +1,5 @@
 ---
+id: 37-event-driven-saga
 slug: /java/37-event-driven-saga
 title: "Event-Driven Architecture & SAGA"
 sidebar_label: "Event-Driven Architecture & SAGA"

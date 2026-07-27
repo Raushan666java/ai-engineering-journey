@@ -1,4 +1,5 @@
 ---
+id: 06-current-affairs-2024
 slug: /general-awareness/06-current-affairs-2024
 title: "Chapter 6: Current Affairs 2024"
 sidebar_label: "Chapter 6: Current Affairs 2024"

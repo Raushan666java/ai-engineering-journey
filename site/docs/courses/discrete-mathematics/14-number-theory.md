@@ -1,4 +1,5 @@
 ---
+id: 14-number-theory
 slug: /discrete-mathematics/14-number-theory
 title: "Chapter 14: Number Theory"
 sidebar_label: "Chapter 14: Number Theory"

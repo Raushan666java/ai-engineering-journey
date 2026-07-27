@@ -1,4 +1,5 @@
 ---
+id: 06-cfg
 slug: /theory-of-computation/06-cfg
 title: "Chapter 6: Context-Free Grammars"
 sidebar_label: "Chapter 6: Context-Free Grammars"

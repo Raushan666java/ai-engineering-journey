@@ -1,4 +1,5 @@
 ---
+id: 11-lld-design-patterns
 slug: /system-design/11-lld-design-patterns
 title: "Chapter 11: Low-Level Design: Design Patterns"
 sidebar_label: "Chapter 11: Low-Level Design: Design Patterns"

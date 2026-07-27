@@ -1,4 +1,5 @@
 ---
+id: 11-cfa
 slug: /compiler-design/11-cfa
 title: "Chapter 11: Control-Flow Analysis"
 sidebar_label: "Chapter 11: Control-Flow Analysis"

@@ -1,4 +1,5 @@
 ---
+id: 03-consensus
 slug: /blockchain/03-consensus
 title: "Chapter 3: Consensus Mechanisms"
 sidebar_label: "Chapter 3: Consensus Mechanisms"

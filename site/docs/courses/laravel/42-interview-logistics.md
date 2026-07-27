@@ -1,4 +1,5 @@
 ---
+id: 42-interview-logistics
 slug: /laravel/42-interview-logistics
 title: "Chapter 42: Logistics & Supply Chain → Interview Q&A"
 sidebar_label: "Chapter 42: Logistics & Supply Chain → Interview Q&A"

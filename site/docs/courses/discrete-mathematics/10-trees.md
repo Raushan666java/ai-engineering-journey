@@ -1,4 +1,5 @@
 ---
+id: 10-trees
 slug: /discrete-mathematics/10-trees
 title: "Chapter 10: Trees"
 sidebar_label: "Chapter 10: Trees"

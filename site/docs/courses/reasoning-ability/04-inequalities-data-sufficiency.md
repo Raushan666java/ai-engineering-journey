@@ -1,4 +1,5 @@
 ---
+id: 04-inequalities-data-sufficiency
 slug: /reasoning-ability/04-inequalities-data-sufficiency
 title: "Inequalities and Data Sufficiency"
 sidebar_label: "Inequalities and Data Sufficiency"

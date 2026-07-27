@@ -1,4 +1,5 @@
 ---
+id: 32-testcontainers
 slug: /java/32-testcontainers
 title: "Testcontainers & Integration Testing"
 sidebar_label: "Testcontainers & Integration Testing"

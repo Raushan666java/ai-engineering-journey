@@ -1,4 +1,5 @@
 ---
+id: 09-ai-system-design
 slug: /ai-agent-engineer/09-ai-system-design
 title: "Chapter 9 — AI System Design & Architecture"
 sidebar_label: "Chapter 9 — AI System Design & Architecture"

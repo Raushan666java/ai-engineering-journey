@@ -1,4 +1,5 @@
 ---
+id: 15-database-devops
 slug: /devops/15-database-devops
 title: "Chapter 15: Database DevOps"
 sidebar_label: "Chapter 15: Database DevOps"

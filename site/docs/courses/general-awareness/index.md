@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /general-awareness/index
 title: "General Awareness & Current Affairs"
 sidebar_label: "General Awareness & Current Affairs"

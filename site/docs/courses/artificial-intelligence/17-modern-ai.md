@@ -1,4 +1,5 @@
 ---
+id: 17-modern-ai
 slug: /artificial-intelligence/17-modern-ai
 title: "Chapter 17: Modern Artificial Intelligence"
 sidebar_label: "Chapter 17: Modern Artificial Intelligence"

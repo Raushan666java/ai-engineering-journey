@@ -1,4 +1,5 @@
 ---
+id: 05-docker
 slug: /devops/05-docker
 title: "Chapter 5: Docker"
 sidebar_label: "Chapter 5: Docker"

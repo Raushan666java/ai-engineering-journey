@@ -1,4 +1,5 @@
 ---
+id: 23-case-study-dropbox
 slug: /system-design/23-case-study-dropbox
 title: "Chapter 23: Case Study — Dropbox and File Storage"
 sidebar_label: "Chapter 23: Case Study — Dropbox and File Storage"

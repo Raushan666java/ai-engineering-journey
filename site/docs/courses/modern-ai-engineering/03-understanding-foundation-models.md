@@ -1,4 +1,5 @@
 ---
+id: 03-understanding-foundation-models
 slug: /modern-ai-engineering/03-understanding-foundation-models
 title: "Chapter 3: Understanding Foundation Models"
 sidebar_label: "Chapter 3: Understanding Foundation Models"

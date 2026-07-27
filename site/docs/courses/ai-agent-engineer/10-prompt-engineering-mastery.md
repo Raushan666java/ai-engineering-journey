@@ -1,4 +1,5 @@
 ---
+id: 10-prompt-engineering-mastery
 slug: /ai-agent-engineer/10-prompt-engineering-mastery
 title: "Chapter 10 — Prompt Engineering Mastery"
 sidebar_label: "Chapter 10 — Prompt Engineering Mastery"

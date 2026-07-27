@@ -1,4 +1,5 @@
 ---
+id: 11-reinforcement-learning
 slug: /artificial-intelligence/11-reinforcement-learning
 title: "Chapter 11: Reinforcement Learning"
 sidebar_label: "Chapter 11: Reinforcement Learning"

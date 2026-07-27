@@ -1,4 +1,5 @@
 ---
+id: 02-nic-scientist-b
 slug: /mock-tests/02-nic-scientist-b
 title: "NIC Scientist B — Full-Length Mock Test"
 sidebar_label: "NIC Scientist B — Full-Length Mock Test"

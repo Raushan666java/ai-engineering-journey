@@ -1,7 +1,8 @@
 ---
+id: 60-interview-microservices-b
 slug: /java/60-interview-microservices-b
-title: "60 Interview Microservices B"
-sidebar_label: "60 Interview Microservices B"
+title: "── Multi-stage Dockerfile for a Spring Boot microservice ──"
+sidebar_label: "── Multi-stage Dockerfile for a Spring Boot microservice ──"
 sidebar_position: 65
 ---
 ![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)

@@ -1,4 +1,5 @@
 ---
+id: 07-hash-tables
 slug: /data-structures/07-hash-tables
 title: "Chapter 7: Hash Tables"
 sidebar_label: "Chapter 7: Hash Tables"

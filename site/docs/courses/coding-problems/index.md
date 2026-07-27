@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /coding-problems/index
 title: "Coding Problems Bank"
 sidebar_label: "Coding Problems Bank"

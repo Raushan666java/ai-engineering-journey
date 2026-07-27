@@ -1,4 +1,5 @@
 ---
+id: 13-loop-optimization
 slug: /compiler-design/13-loop-optimization
 title: "Chapter 13: Loop Optimization"
 sidebar_label: "Chapter 13: Loop Optimization"

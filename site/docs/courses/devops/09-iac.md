@@ -1,4 +1,5 @@
 ---
+id: 09-iac
 slug: /devops/09-iac
 title: "Chapter 9: Terraform & Infrastructure as Code"
 sidebar_label: "Chapter 9: Terraform & Infrastructure as Code"

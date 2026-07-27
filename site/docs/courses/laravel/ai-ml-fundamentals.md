@@ -1,4 +1,5 @@
 ---
+id: ai-ml-fundamentals
 slug: /laravel/ai-ml-fundamentals
 title: "Chapter P6: AI/ML Fundamentals & Laravel Integration"
 sidebar_label: "Chapter P6: AI/ML Fundamentals & Laravel Integration"

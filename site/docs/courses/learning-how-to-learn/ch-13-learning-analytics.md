@@ -1,4 +1,5 @@
 ---
+id: ch-13-learning-analytics
 slug: /learning-how-to-learn/ch-13-learning-analytics
 title: "Chapter 13: Learning Analytics & Self-Measurement"
 sidebar_label: "Chapter 13: Learning Analytics & Self-Measurement"

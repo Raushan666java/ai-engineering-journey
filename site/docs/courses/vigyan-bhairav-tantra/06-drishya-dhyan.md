@@ -1,4 +1,5 @@
 ---
+id: 06-drishya-dhyan
 slug: /vigyan-bhairav-tantra/06-drishya-dhyan
 title: "अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें"
 sidebar_label: "अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें"

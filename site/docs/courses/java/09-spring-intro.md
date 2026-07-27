@@ -1,4 +1,5 @@
 ---
+id: 09-spring-intro
 slug: /java/09-spring-intro
 title: "Introduction to Spring & Spring Boot"
 sidebar_label: "Introduction to Spring & Spring Boot"

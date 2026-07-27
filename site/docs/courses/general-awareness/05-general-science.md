@@ -1,4 +1,5 @@
 ---
+id: 05-general-science
 slug: /general-awareness/05-general-science
 title: "Chapter 5: General Science & Technology"
 sidebar_label: "Chapter 5: General Science & Technology"

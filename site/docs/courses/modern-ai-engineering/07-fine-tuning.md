@@ -1,4 +1,5 @@
 ---
+id: 07-fine-tuning
 slug: /modern-ai-engineering/07-fine-tuning
 title: "Chapter 7: Fine-Tuning"
 sidebar_label: "Chapter 7: Fine-Tuning"

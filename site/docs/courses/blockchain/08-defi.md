@@ -1,4 +1,5 @@
 ---
+id: 08-defi
 slug: /blockchain/08-defi
 title: "Chapter 8: Decentralized Finance (DeFi)"
 sidebar_label: "Chapter 8: Decentralized Finance (DeFi)"

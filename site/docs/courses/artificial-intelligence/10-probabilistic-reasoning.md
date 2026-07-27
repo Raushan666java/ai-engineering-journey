@@ -1,4 +1,5 @@
 ---
+id: 10-probabilistic-reasoning
 slug: /artificial-intelligence/10-probabilistic-reasoning
 title: "Chapter 10: Probabilistic Reasoning"
 sidebar_label: "Chapter 10: Probabilistic Reasoning"

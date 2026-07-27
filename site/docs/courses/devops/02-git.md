@@ -1,4 +1,5 @@
 ---
+id: 02-git
 slug: /devops/02-git
 title: "Chapter 2: Advanced Git"
 sidebar_label: "Chapter 2: Advanced Git"

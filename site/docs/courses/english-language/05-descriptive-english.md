@@ -1,4 +1,5 @@
 ---
+id: 05-descriptive-english
 slug: /english-language/05-descriptive-english
 title: "Chapter 5: Descriptive English"
 sidebar_label: "Chapter 5: Descriptive English"

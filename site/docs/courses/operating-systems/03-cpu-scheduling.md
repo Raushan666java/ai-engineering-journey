@@ -1,4 +1,5 @@
 ---
+id: 03-cpu-scheduling
 slug: /operating-systems/03-cpu-scheduling
 title: "Chapter 3: CPU Scheduling"
 sidebar_label: "Chapter 3: CPU Scheduling"

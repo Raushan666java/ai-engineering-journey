@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /theory-of-computation/01-introduction
 title: "Chapter 1: Introduction to the Theory of Computation"
 sidebar_label: "Chapter 1: Introduction to the Theory of Computation"

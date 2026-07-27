@@ -1,4 +1,5 @@
 ---
+id: 14-typescript
 slug: /web-development/14-typescript
 title: "Chapter 14: TypeScript"
 sidebar_label: "Chapter 14: TypeScript"

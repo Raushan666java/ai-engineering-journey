@@ -1,4 +1,5 @@
 ---
+id: 08-database-management-systems
 slug: /gate-cs-preparation/08-database-management-systems
 title: "08 Database Management Systems"
 sidebar_label: "08 Database Management Systems"

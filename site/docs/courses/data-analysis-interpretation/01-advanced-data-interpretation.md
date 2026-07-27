@@ -1,4 +1,5 @@
 ---
+id: 01-advanced-data-interpretation
 slug: /data-analysis-interpretation/01-advanced-data-interpretation
 title: "Chapter 1: Advanced Data Interpretation"
 sidebar_label: "Chapter 1: Advanced Data Interpretation"

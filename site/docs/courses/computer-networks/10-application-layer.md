@@ -1,4 +1,5 @@
 ---
+id: 10-application-layer
 slug: /computer-networks/10-application-layer
 title: "Chapter 10: The Application Layer → Complete Reference"
 sidebar_label: "Chapter 10: The Application Layer → Complete Reference"

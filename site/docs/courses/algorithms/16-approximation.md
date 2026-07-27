@@ -1,4 +1,5 @@
 ---
+id: 16-approximation
 slug: /algorithms/16-approximation
 title: "Chapter 16: Approximation Algorithms"
 sidebar_label: "Chapter 16: Approximation Algorithms"

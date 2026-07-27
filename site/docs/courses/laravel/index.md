@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /laravel/index
 title: "Laravel 13 with AI & Automation → Complete University Textbook"
 sidebar_label: "Laravel 13 with AI & Automation → Complete University Textbook"

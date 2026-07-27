@@ -1,4 +1,5 @@
 ---
+id: 02-advanced-arithmetic
 slug: /quantitative-aptitude/02-advanced-arithmetic
 title: "Chapter 2: Advanced Arithmetic — Time & Work, Time-Speed-Distance, Mixtures & Alligations, Partnership, Ages"
 sidebar_label: "Chapter 2: Advanced Arithmetic — Time & Work, Time-Speed-Distance, Mixtures & Alligations, Partnership, Ages"

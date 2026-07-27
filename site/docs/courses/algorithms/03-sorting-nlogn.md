@@ -1,4 +1,5 @@
 ---
+id: 03-sorting-nlogn
 slug: /algorithms/03-sorting-nlogn
 title: "Chapter 3: Comparison-Based Sorting"
 sidebar_label: "Chapter 3: Comparison-Based Sorting"

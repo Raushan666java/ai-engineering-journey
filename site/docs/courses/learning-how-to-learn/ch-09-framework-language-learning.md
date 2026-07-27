@@ -1,4 +1,5 @@
 ---
+id: ch-09-framework-language-learning
 slug: /learning-how-to-learn/ch-09-framework-language-learning
 title: "Chapter 9: Framework & Language Learning"
 sidebar_label: "Chapter 9: Framework & Language Learning"

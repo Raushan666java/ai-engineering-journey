@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /blockchain/index
 title: "Blockchain Technology — Complete University Textbook"
 sidebar_label: "Blockchain Technology — Complete University Textbook"

@@ -1,4 +1,5 @@
 ---
+id: 16-validation
 slug: /java/16-validation
 title: "Request Validation, Error Handling & Binding"
 sidebar_label: "Request Validation, Error Handling & Binding"

@@ -1,4 +1,5 @@
 ---
+id: 03-datalink-layer
 slug: /computer-networks/03-datalink-layer
 title: "Chapter 3: The Data Link Layer"
 sidebar_label: "Chapter 3: The Data Link Layer"

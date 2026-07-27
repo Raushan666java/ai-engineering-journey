@@ -1,4 +1,5 @@
 ---
+id: 09-turing
 slug: /theory-of-computation/09-turing
 title: "Chapter 9: Turing Machines"
 sidebar_label: "Chapter 9: Turing Machines"

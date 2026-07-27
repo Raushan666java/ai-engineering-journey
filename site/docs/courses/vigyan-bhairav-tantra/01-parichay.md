@@ -1,4 +1,5 @@
 ---
+id: 01-parichay
 slug: /vigyan-bhairav-tantra/01-parichay
 title: "अध्याय १: ओशो का परिचय — विज्ञान भैरव तंत्र और ओशो का जीवन"
 sidebar_label: "अध्याय १: ओशो का परिचय — विज्ञान भैरव तंत्र और ओशो का जीवन"

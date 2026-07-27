@@ -1,4 +1,5 @@
 ---
+id: 02-cryptography
 slug: /cyber-security/02-cryptography
 title: "Chapter 2: Cryptography"
 sidebar_label: "Chapter 2: Cryptography"

@@ -1,4 +1,5 @@
 ---
+id: 15-linked-lists
 slug: /c-programming/15-linked-lists
 title: "Chapter 15: Linked Lists"
 sidebar_label: "Chapter 15: Linked Lists"

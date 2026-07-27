@@ -1,4 +1,5 @@
 ---
+id: 15-advanced
 slug: /compiler-design/15-advanced
 title: "Chapter 15: Advanced Topics in Compilation"
 sidebar_label: "Chapter 15: Advanced Topics in Compilation"

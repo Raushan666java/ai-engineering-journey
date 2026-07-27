@@ -1,4 +1,5 @@
 ---
+id: 16-capstone
 slug: /software-engineering/16-capstone
 title: "Capstone: Building a Complete Software System"
 sidebar_label: "Capstone: Building a Complete Software System"

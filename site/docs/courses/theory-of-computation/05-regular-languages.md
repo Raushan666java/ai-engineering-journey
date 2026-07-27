@@ -1,4 +1,5 @@
 ---
+id: 05-regular-languages
 slug: /theory-of-computation/05-regular-languages
 title: "Chapter 5: Properties of Regular Languages"
 sidebar_label: "Chapter 5: Properties of Regular Languages"

@@ -1,4 +1,5 @@
 ---
+id: 11-decidability
 slug: /theory-of-computation/11-decidability
 title: "Chapter 11: Decidability"
 sidebar_label: "Chapter 11: Decidability"

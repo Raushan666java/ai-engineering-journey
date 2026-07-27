@@ -1,4 +1,5 @@
 ---
+id: 11-file-io
 slug: /oop-cpp/11-file-io
 title: "Chapter 11: File I/O"
 sidebar_label: "Chapter 11: File I/O"

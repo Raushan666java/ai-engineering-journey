@@ -1,4 +1,5 @@
 ---
+id: 07-dhwani-nad
 slug: /vigyan-bhairav-tantra/07-dhwani-nad
 title: "अध्याय ७: ध्वनि और नाद — ओशो की ध्वनि तकनीकें"
 sidebar_label: "अध्याय ७: ध्वनि और नाद — ओशो की ध्वनि तकनीकें"

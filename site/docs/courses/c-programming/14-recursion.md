@@ -1,4 +1,5 @@
 ---
+id: 14-recursion
 slug: /c-programming/14-recursion
 title: "Chapter 14: Recursion"
 sidebar_label: "Chapter 14: Recursion"

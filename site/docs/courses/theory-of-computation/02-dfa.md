@@ -1,4 +1,5 @@
 ---
+id: 02-dfa
 slug: /theory-of-computation/02-dfa
 title: "Chapter 2: Deterministic Finite Automata"
 sidebar_label: "Chapter 2: Deterministic Finite Automata"

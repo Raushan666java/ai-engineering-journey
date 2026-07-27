@@ -1,4 +1,5 @@
 ---
+id: 06-software-engineering
 slug: /professional-knowledge/06-software-engineering
 title: "Chapter 6: Software Engineering — Exam Quick Revision"
 sidebar_label: "Chapter 6: Software Engineering — Exam Quick Revision"

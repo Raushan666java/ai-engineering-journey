@@ -1,4 +1,5 @@
 ---
+id: 10-heaps
 slug: /data-structures/10-heaps
 title: "Chapter 10: Heaps"
 sidebar_label: "Chapter 10: Heaps"

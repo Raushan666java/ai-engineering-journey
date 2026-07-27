@@ -1,4 +1,5 @@
 ---
+id: 02-processes
 slug: /operating-systems/02-processes
 title: "Chapter 2: Processes"
 sidebar_label: "Chapter 2: Processes"

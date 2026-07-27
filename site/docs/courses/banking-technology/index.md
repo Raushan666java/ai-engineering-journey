@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /banking-technology/index
 title: "Banking Technology & Digital Banking"
 sidebar_label: "Banking Technology & Digital Banking"

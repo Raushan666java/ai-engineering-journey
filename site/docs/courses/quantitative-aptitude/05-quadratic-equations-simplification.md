@@ -1,4 +1,5 @@
 ---
+id: 05-quadratic-equations-simplification
 slug: /quantitative-aptitude/05-quadratic-equations-simplification
 title: "Chapter 5: Quadratic Equations & Simplification — Quadratic Comparison, Approximation, BODMAS"
 sidebar_label: "Chapter 5: Quadratic Equations & Simplification — Quadratic Comparison, Approximation, BODMAS"

@@ -1,4 +1,5 @@
 ---
+id: 20-scaling-laravel
 slug: /laravel/20-scaling-laravel
 title: "Chapter 20: Scaling Laravel"
 sidebar_label: "Chapter 20: Scaling Laravel"

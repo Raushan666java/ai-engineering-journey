@@ -1,4 +1,5 @@
 ---
+id: 13-time-complexity
 slug: /theory-of-computation/13-time-complexity
 title: "Chapter 13: Time Complexity and NP-Completeness"
 sidebar_label: "Chapter 13: Time Complexity and NP-Completeness"

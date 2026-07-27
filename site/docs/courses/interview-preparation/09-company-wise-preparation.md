@@ -1,4 +1,5 @@
 ---
+id: 09-company-wise-preparation
 slug: /interview-preparation/09-company-wise-preparation
 title: "Chapter 9: Company-Wise Preparation Strategy"
 sidebar_label: "Chapter 9: Company-Wise Preparation Strategy"

@@ -1,4 +1,5 @@
 ---
+id: 45-webflux
 slug: /java/45-webflux
 title: "Chapter 45: Spring WebFlux"
 sidebar_label: "Chapter 45: Spring WebFlux"

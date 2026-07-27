@@ -1,4 +1,5 @@
 ---
+id: 02-boolean-algebra
 slug: /digital-logic/02-boolean-algebra
 title: "Chapter 2: Boolean Algebra"
 sidebar_label: "Chapter 2: Boolean Algebra"

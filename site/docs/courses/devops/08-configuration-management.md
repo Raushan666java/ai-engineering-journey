@@ -1,4 +1,5 @@
 ---
+id: 08-configuration-management
 slug: /devops/08-configuration-management
 title: "Chapter 8: Configuration Management"
 sidebar_label: "Chapter 8: Configuration Management"

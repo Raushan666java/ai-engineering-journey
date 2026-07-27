@@ -1,4 +1,5 @@
 ---
+id: 17-company-psus-govt
 slug: /interview-preparation/17-company-psus-govt
 title: "Chapter 17: PSUs & Government — Company-Specific Question Bank"
 sidebar_label: "Chapter 17: PSUs & Government — Company-Specific Question Bank"

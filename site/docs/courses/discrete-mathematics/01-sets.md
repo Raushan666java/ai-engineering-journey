@@ -1,4 +1,5 @@
 ---
+id: 01-sets
 slug: /discrete-mathematics/01-sets
 title: "Chapter 1: Sets"
 sidebar_label: "Chapter 1: Sets"

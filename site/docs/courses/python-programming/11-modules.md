@@ -1,4 +1,5 @@
 ---
+id: 11-modules
 slug: /python-programming/11-modules
 title: "Chapter 11: Modules and Packages"
 sidebar_label: "Chapter 11: Modules and Packages"

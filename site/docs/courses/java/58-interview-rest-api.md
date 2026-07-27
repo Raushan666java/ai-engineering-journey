@@ -1,4 +1,5 @@
 ---
+id: 58-interview-rest-api
 slug: /java/58-interview-rest-api
 title: "REST API Interview Q&A"
 sidebar_label: "REST API Interview Q&A"

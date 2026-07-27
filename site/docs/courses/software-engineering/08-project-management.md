@@ -1,4 +1,5 @@
 ---
+id: 08-project-management
 slug: /software-engineering/08-project-management
 title: "Project Management"
 sidebar_label: "Project Management"

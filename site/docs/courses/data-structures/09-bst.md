@@ -1,4 +1,5 @@
 ---
+id: 09-bst
 slug: /data-structures/09-bst
 title: "Chapter 9: Binary Search Trees"
 sidebar_label: "Chapter 9: Binary Search Trees"

@@ -1,4 +1,5 @@
 ---
+id: 15-rest-api
 slug: /java/15-rest-api
 title: "REST API Development with Spring MVC"
 sidebar_label: "REST API Development with Spring MVC"

@@ -1,4 +1,5 @@
 ---
+id: 15-company-microsoft-sde
 slug: /interview-preparation/15-company-microsoft-sde
 title: "Chapter 15: Microsoft SDE — Company-Specific Question Bank"
 sidebar_label: "Chapter 15: Microsoft SDE — Company-Specific Question Bank"

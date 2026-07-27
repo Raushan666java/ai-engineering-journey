@@ -1,4 +1,5 @@
 ---
+id: 17-observability-resiliency
 slug: /system-design/17-observability-resiliency
 title: "Chapter 17: Observability and Resiliency Patterns"
 sidebar_label: "Chapter 17: Observability and Resiliency Patterns"

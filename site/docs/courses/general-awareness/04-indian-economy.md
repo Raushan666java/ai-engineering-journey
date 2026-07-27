@@ -1,4 +1,5 @@
 ---
+id: 04-indian-economy
 slug: /general-awareness/04-indian-economy
 title: "Chapter 4: Indian Economy & Planning"
 sidebar_label: "Chapter 4: Indian Economy & Planning"

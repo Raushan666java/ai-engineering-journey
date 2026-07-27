@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /hindi-language/index
 title: "हिंदी भाषा पाठ्यक्रम (Hindi Language Course)"
 sidebar_label: "हिंदी भाषा पाठ्यक्रम (Hindi Language Course)"

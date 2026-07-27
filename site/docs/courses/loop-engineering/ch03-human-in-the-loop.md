@@ -1,4 +1,5 @@
 ---
+id: ch03-human-in-the-loop
 slug: /loop-engineering/ch03-human-in-the-loop
 title: "Chapter 3: Human-in-the-Loop"
 sidebar_label: "Chapter 3: Human-in-the-Loop"

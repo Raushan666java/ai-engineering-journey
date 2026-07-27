@@ -1,4 +1,5 @@
 ---
+id: ch-14-glossary
 slug: /learning-how-to-learn-practical/ch-14-glossary
 title: "Master Glossary"
 sidebar_label: "Master Glossary"

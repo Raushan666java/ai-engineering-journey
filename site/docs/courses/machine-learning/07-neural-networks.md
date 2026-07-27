@@ -1,4 +1,5 @@
 ---
+id: 07-neural-networks
 slug: /machine-learning/07-neural-networks
 title: "Chapter 7: Neural Networks"
 sidebar_label: "Chapter 7: Neural Networks"

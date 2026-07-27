@@ -1,4 +1,5 @@
 ---
+id: 08-dp-knapsack
 slug: /algorithms/08-dp-knapsack
 title: "Chapter 8: Dynamic Programming — Knapsack Problems"
 sidebar_label: "Chapter 8: Dynamic Programming — Knapsack Problems"

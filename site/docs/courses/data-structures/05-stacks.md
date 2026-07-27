@@ -1,4 +1,5 @@
 ---
+id: 05-stacks
 slug: /data-structures/05-stacks
 title: "Chapter 5: Stacks"
 sidebar_label: "Chapter 5: Stacks"

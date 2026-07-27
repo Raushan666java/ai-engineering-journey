@@ -1,4 +1,5 @@
 ---
+id: 04-rbi-grade-b
 slug: /mock-tests/04-rbi-grade-b
 title: "RBI Grade B Phase 1 — Full-Length Mock Test"
 sidebar_label: "RBI Grade B Phase 1 — Full-Length Mock Test"

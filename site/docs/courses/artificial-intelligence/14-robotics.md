@@ -1,4 +1,5 @@
 ---
+id: 14-robotics
 slug: /artificial-intelligence/14-robotics
 title: "Chapter 14: Robotics"
 sidebar_label: "Chapter 14: Robotics"

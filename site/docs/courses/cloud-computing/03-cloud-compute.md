@@ -1,4 +1,5 @@
 ---
+id: 03-cloud-compute
 slug: /cloud-computing/03-cloud-compute
 title: "Chapter 3: Cloud Compute Services"
 sidebar_label: "Chapter 3: Cloud Compute Services"

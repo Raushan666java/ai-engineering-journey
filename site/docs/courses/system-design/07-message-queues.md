@@ -1,4 +1,5 @@
 ---
+id: 07-message-queues
 slug: /system-design/07-message-queues
 title: "Chapter 7: Message Queues and Event-Driven Architecture"
 sidebar_label: "Chapter 7: Message Queues and Event-Driven Architecture"

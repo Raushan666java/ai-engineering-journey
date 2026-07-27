@@ -1,4 +1,5 @@
 ---
+id: 06-lists
 slug: /python-programming/06-lists
 title: "Chapter 6: Lists"
 sidebar_label: "Chapter 6: Lists"

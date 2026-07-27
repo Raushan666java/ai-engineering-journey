@@ -1,7 +1,8 @@
 ---
+id: 13-computer-vision
 slug: /artificial-intelligence/13-computer-vision
-title: "13 Computer Vision"
-sidebar_label: "13 Computer Vision"
+title: "Chapter 13: Computer Vision"
+sidebar_label: "Chapter 13: Computer Vision"
 sidebar_position: 21
 ---
 

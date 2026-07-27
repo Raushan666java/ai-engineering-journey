@@ -1,4 +1,5 @@
 ---
+id: 12-indexing
 slug: /database-management-systems/12-indexing
 title: "Chapter 12: Indexing"
 sidebar_label: "Chapter 12: Indexing"

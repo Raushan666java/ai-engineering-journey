@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /quantitative-aptitude/index
 title: "Quantitative Aptitude — IBPS SO & Govt Exam Prep"
 sidebar_label: "Quantitative Aptitude — IBPS SO & Govt Exam Prep"

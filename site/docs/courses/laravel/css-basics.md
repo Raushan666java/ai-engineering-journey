@@ -1,4 +1,5 @@
 ---
+id: css-basics
 slug: /laravel/css-basics
 title: "CSS Fundamentals"
 sidebar_label: "CSS Fundamentals"

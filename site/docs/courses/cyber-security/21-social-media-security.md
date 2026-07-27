@@ -1,4 +1,5 @@
 ---
+id: 21-social-media-security
 slug: /cyber-security/21-social-media-security
 title: "Chapter 21: Social Media Security & Account Takeover Prevention"
 sidebar_label: "Chapter 21: Social Media Security & Account Takeover Prevention"

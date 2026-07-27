@@ -1,4 +1,5 @@
 ---
+id: 07-day-by-day-plan
 slug: /ai-agent-engineer/07-day-by-day-plan
 title: "Day-by-Day Plan: 12 Weeks"
 sidebar_label: "Day-by-Day Plan: 12 Weeks"

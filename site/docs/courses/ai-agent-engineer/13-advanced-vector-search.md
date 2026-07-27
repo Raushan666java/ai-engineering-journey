@@ -1,4 +1,5 @@
 ---
+id: 13-advanced-vector-search
 slug: /ai-agent-engineer/13-advanced-vector-search
 title: "Chapter 13 — Advanced Vector Search & RAG"
 sidebar_label: "Chapter 13 — Advanced Vector Search & RAG"

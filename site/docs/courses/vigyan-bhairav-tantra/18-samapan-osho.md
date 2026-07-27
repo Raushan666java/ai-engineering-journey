@@ -1,4 +1,5 @@
 ---
+id: 18-samapan-osho
 slug: /vigyan-bhairav-tantra/18-samapan-osho
 title: "अध्याय १८: समापन — ओशो की समग्र दृष्टि में अंतिम सत्य"
 sidebar_label: "अध्याय १८: समापन — ओशो की समग्र दृष्टि में अंतिम सत्य"

@@ -1,4 +1,5 @@
 ---
+id: ch-03-daily-workflow-energy
 slug: /learning-how-to-learn-practical/ch-03-daily-workflow-energy
 title: "Chapter 3: Daily Workflow & Energy Management"
 sidebar_label: "Chapter 3: Daily Workflow & Energy Management"

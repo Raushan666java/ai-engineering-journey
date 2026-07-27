@@ -1,4 +1,5 @@
 ---
+id: 32-marketing
 slug: /laravel/32-marketing
 title: "Chapter 32: Marketing & Advertising Agents"
 sidebar_label: "Chapter 32: Marketing & Advertising Agents"

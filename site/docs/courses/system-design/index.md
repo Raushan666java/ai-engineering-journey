@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /system-design/index
 title: "System Design — Complete University Textbook"
 sidebar_label: "System Design — Complete University Textbook"

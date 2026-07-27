@@ -1,4 +1,5 @@
 ---
+id: 05-mixed-data-interpretation
 slug: /data-analysis-interpretation/05-mixed-data-interpretation
 title: "Chapter 5: Mixed Data Interpretation"
 sidebar_label: "Chapter 5: Mixed Data Interpretation"

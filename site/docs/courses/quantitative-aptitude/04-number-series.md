@@ -1,4 +1,5 @@
 ---
+id: 04-number-series
 slug: /quantitative-aptitude/04-number-series
 title: "Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification"
 sidebar_label: "Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification"

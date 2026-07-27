@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /algorithms/index
 title: "CS 310: Design and Analysis of Algorithms"
 sidebar_label: "CS 310: Design and Analysis of Algorithms"

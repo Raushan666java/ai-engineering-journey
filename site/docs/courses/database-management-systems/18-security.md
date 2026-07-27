@@ -1,4 +1,5 @@
 ---
+id: 18-security
 slug: /database-management-systems/18-security
 title: "Chapter 18: Database Security"
 sidebar_label: "Chapter 18: Database Security"

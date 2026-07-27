@@ -1,4 +1,5 @@
 ---
+id: 05-synchronization
 slug: /operating-systems/05-synchronization
 title: "Chapter 5: Process Synchronization"
 sidebar_label: "Chapter 5: Process Synchronization"

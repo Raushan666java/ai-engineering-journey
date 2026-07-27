@@ -1,4 +1,5 @@
 ---
+id: 05-io-organization
 slug: /computer-architecture/05-io-organization
 title: "I/O Organization"
 sidebar_label: "I/O Organization"

@@ -1,4 +1,5 @@
 ---
+id: 18-privacy-osint
 slug: /cyber-security/18-privacy-osint
 title: "Chapter 18: Digital Privacy, Anonymity & OSINT"
 sidebar_label: "Chapter 18: Digital Privacy, Anonymity & OSINT"

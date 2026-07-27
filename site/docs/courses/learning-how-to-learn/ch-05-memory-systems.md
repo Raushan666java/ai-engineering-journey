@@ -1,4 +1,5 @@
 ---
+id: ch-05-memory-systems
 slug: /learning-how-to-learn/ch-05-memory-systems
 title: "Chapter 5: Memory Systems & Mnemonics"
 sidebar_label: "Chapter 5: Memory Systems & Mnemonics"

@@ -1,4 +1,5 @@
 ---
+id: 01-resume-aptitude
 slug: /placement-preparation/01-resume-aptitude
 title: "Resume Building, LinkedIn Optimization & Aptitude Crash Course"
 sidebar_label: "Resume Building, LinkedIn Optimization & Aptitude Crash Course"

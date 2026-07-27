@@ -1,4 +1,5 @@
 ---
+id: 02-seating-arrangements
 slug: /reasoning-ability/02-seating-arrangements
 title: "Seating Arrangements — Circular, Linear, and Double Row"
 sidebar_label: "Seating Arrangements — Circular, Linear, and Double Row"

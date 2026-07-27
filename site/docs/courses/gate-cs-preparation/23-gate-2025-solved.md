@@ -1,4 +1,5 @@
 ---
+id: 23-gate-2025-solved
 slug: /gate-cs-preparation/23-gate-2025-solved
 title: "23 Gate 2025 Solved"
 sidebar_label: "23 Gate 2025 Solved"

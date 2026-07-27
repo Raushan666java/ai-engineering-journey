@@ -1,4 +1,5 @@
 ---
+id: 02-css
 slug: /web-development/02-css
 title: "Chapter 2 → CSS3"
 sidebar_label: "Chapter 2 → CSS3"

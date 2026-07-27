@@ -1,4 +1,5 @@
 ---
+id: 05-design-implementation
 slug: /software-engineering/05-design-implementation
 title: "Design and Implementation"
 sidebar_label: "Design and Implementation"

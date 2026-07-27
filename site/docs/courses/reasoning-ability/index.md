@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /reasoning-ability/index
 title: "Reasoning Ability — IBPS SO & Govt Exam Prep"
 sidebar_label: "Reasoning Ability — IBPS SO & Govt Exam Prep"

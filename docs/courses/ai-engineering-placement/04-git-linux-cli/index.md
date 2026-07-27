@@ -14,6 +14,9 @@ Learn version control with Git, essential Linux commands, and Bash scripting —
 | 04 | [Linux Commands](04-linux-commands.md) | file system, permissions, pipes, grep, find, sed, awk | 8 |
 | 05 | [Bash Scripting](05-bash-scripting.md) | variables, loops, conditionals, functions, cron | 8 |
 | 06 | [Networking & Security](06-networking-and-security.md) | SSH, SCP, curl, firewalls, SSL/TLS, VPN | 8 |
+| 07 | [SSH & Remote Access](07-ssh-and-remote-access.md) | keygen, agent, tunneling, port forwarding, rsync | 8 |
+| 08 | [Process Management](08-process-management.md) | ps, top, systemd, cgroups, service management | 8 |
+| 09 | [Cron & Automation](09-cron-automation.md) | cron, systemd timers, logrotate, Ansible basics | 8 |
 
 ## Learning Path
 

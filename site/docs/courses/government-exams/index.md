@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /government-exams/index
 title: "Government Exams — Complete Preparation Hub"
 sidebar_label: "Government Exams — Complete Preparation Hub"

@@ -1,4 +1,5 @@
 ---
+id: 13-observability
 slug: /devops/13-observability
 title: "Chapter 13: Observability"
 sidebar_label: "Chapter 13: Observability"

@@ -1,4 +1,5 @@
 ---
+id: 12-company-infosys-sp
 slug: /interview-preparation/12-company-infosys-sp
 title: "Chapter 12: Infosys SP & DSE — Company-Specific Question Bank"
 sidebar_label: "Chapter 12: Infosys SP & DSE — Company-Specific Question Bank"

@@ -1,4 +1,5 @@
 ---
+id: index
 slug: /java/index
 title: "Java & Spring Boot — Complete University Textbook"
 sidebar_label: "Java & Spring Boot — Complete University Textbook"

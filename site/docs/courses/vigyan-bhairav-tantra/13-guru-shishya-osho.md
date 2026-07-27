@@ -1,4 +1,5 @@
 ---
+id: 13-guru-shishya-osho
 slug: /vigyan-bhairav-tantra/13-guru-shishya-osho
 title: "अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण"
 sidebar_label: "अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण"

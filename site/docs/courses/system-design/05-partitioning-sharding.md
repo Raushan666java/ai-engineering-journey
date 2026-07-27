@@ -1,4 +1,5 @@
 ---
+id: 05-partitioning-sharding
 slug: /system-design/05-partitioning-sharding
 title: "Chapter 5: Data Partitioning and Sharding"
 sidebar_label: "Chapter 5: Data Partitioning and Sharding"

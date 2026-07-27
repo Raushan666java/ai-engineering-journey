@@ -1,4 +1,5 @@
 ---
+id: 08-planning
 slug: /artificial-intelligence/08-planning
 title: "Chapter 8: Planning"
 sidebar_label: "Chapter 8: Planning"

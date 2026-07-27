@@ -1,4 +1,5 @@
 ---
+id: 14-formal-methods
 slug: /software-engineering/14-formal-methods
 title: "Formal Methods"
 sidebar_label: "Formal Methods"

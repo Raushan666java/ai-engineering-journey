@@ -1,4 +1,5 @@
 ---
+id: 02-problem-solving
 slug: /artificial-intelligence/02-problem-solving
 title: "Chapter 2: Problem-Solving by Search"
 sidebar_label: "Chapter 2: Problem-Solving by Search"

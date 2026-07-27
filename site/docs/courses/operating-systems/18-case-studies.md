@@ -1,4 +1,5 @@
 ---
+id: 18-case-studies
 slug: /operating-systems/18-case-studies
 title: "Chapter 18: Case Studies in Operating Systems"
 sidebar_label: "Chapter 18: Case Studies in Operating Systems"

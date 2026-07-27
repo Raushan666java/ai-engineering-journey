@@ -1,4 +1,5 @@
 ---
+id: 04-group-discussion-case-study
 slug: /job-preparation/04-group-discussion-case-study
 title: "Group Discussion and Case Study Interview Preparation"
 sidebar_label: "Group Discussion and Case Study Interview Preparation"

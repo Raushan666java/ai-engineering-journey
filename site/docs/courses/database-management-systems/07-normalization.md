@@ -1,4 +1,5 @@
 ---
+id: 07-normalization
 slug: /database-management-systems/07-normalization
 title: "Chapter 7: Normalization in Database Management Systems"
 sidebar_label: "Chapter 7: Normalization in Database Management Systems"

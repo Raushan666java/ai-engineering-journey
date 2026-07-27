@@ -1,4 +1,5 @@
 ---
+id: 12-wireless
 slug: /computer-networks/12-wireless
 title: "Chapter 12: Wireless Networks (Extended)"
 sidebar_label: "Chapter 12: Wireless Networks (Extended)"

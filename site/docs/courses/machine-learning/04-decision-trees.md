@@ -1,4 +1,5 @@
 ---
+id: 04-decision-trees
 slug: /machine-learning/04-decision-trees
 title: "Chapter 4: Decision Trees"
 sidebar_label: "Chapter 4: Decision Trees"

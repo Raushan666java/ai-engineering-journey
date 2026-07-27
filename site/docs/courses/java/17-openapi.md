@@ -1,7 +1,8 @@
 ---
+id: 17-openapi
 slug: /java/17-openapi
-title: "17 Openapi"
-sidebar_label: "17 Openapi"
+title: "API Documentation with OpenAPI/Swagger"
+sidebar_label: "API Documentation with OpenAPI/Swagger"
 sidebar_position: 17
 ---
 > **Previous:** [Validation](./16-validation.md) | **Next:** [File Handling](./18-file-handling.md)

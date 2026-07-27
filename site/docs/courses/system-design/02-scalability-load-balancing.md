@@ -1,4 +1,5 @@
 ---
+id: 02-scalability-load-balancing
 slug: /system-design/02-scalability-load-balancing
 title: "Chapter 2: Scalability and Load Balancing"
 sidebar_label: "Chapter 2: Scalability and Load Balancing"

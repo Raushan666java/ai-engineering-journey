@@ -1,4 +1,5 @@
 ---
+id: 04-verbal-ability
 slug: /english-language/04-verbal-ability
 title: "Chapter 4: Verbal Ability"
 sidebar_label: "Chapter 4: Verbal Ability"

@@ -1,4 +1,5 @@
 ---
+id: 27-gate-2021-solved
 slug: /gate-cs-preparation/27-gate-2021-solved
 title: "27 Gate 2021 Solved"
 sidebar_label: "27 Gate 2021 Solved"

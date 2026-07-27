@@ -1,4 +1,5 @@
 ---
+id: 31-spring-boot-test
 slug: /java/31-spring-boot-test
 title: "Spring Boot Testing"
 sidebar_label: "Spring Boot Testing"

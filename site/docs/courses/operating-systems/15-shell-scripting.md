@@ -1,4 +1,5 @@
 ---
+id: 15-shell-scripting
 slug: /operating-systems/15-shell-scripting
 title: "Chapter 15: Shell Scripting"
 sidebar_label: "Chapter 15: Shell Scripting"

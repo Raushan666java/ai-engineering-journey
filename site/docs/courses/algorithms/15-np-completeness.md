@@ -1,4 +1,5 @@
 ---
+id: 15-np-completeness
 slug: /algorithms/15-np-completeness
 title: "Chapter 15: NP-Completeness"
 sidebar_label: "Chapter 15: NP-Completeness"

@@ -1,4 +1,5 @@
 ---
+id: 04-loops
 slug: /python-programming/04-loops
 title: "Chapter 4: Loops and Iteration"
 sidebar_label: "Chapter 4: Loops and Iteration"

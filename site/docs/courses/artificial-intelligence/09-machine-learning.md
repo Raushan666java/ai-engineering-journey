@@ -1,4 +1,5 @@
 ---
+id: 09-machine-learning
 slug: /artificial-intelligence/09-machine-learning
 title: "Chapter 9: Machine Learning: Learning from Examples"
 sidebar_label: "Chapter 9: Machine Learning: Learning from Examples"

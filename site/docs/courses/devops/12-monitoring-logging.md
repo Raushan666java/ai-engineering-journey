@@ -1,4 +1,5 @@
 ---
+id: 12-monitoring-logging
 slug: /devops/12-monitoring-logging
 title: "Chapter 12: Monitoring and Logging"
 sidebar_label: "Chapter 12: Monitoring and Logging"

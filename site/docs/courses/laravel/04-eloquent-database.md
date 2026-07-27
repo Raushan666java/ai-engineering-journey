@@ -1,4 +1,5 @@
 ---
+id: 04-eloquent-database
 slug: /laravel/04-eloquent-database
 title: "Chapter 4: Eloquent ORM, Database & Migrations"
 sidebar_label: "Chapter 4: Eloquent ORM, Database & Migrations"

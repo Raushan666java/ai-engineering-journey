@@ -1,4 +1,5 @@
 ---
+id: 28-gate-2020-solved
 slug: /gate-cs-preparation/28-gate-2020-solved
 title: "28 Gate 2020 Solved"
 sidebar_label: "28 Gate 2020 Solved"

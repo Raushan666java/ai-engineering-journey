@@ -1,4 +1,5 @@
 ---
+id: 07-logical-reasoning
 slug: /artificial-intelligence/07-logical-reasoning
 title: "Chapter 7: Logical Reasoning and Inference"
 sidebar_label: "Chapter 7: Logical Reasoning and Inference"

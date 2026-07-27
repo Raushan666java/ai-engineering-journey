@@ -1,4 +1,5 @@
 ---
+id: ch-09-ai-ml-learning-strategy
 slug: /learning-how-to-learn-practical/ch-09-ai-ml-learning-strategy
 title: "Chapter 9: Mastering Hard Subjects"
 sidebar_label: "Chapter 9: Mastering Hard Subjects"

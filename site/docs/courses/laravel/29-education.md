@@ -1,4 +1,5 @@
 ---
+id: 29-education
 slug: /laravel/29-education
 title: "Chapter 29: Education & EdTech"
 sidebar_label: "Chapter 29: Education & EdTech"

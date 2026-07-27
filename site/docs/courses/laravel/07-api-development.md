@@ -1,4 +1,5 @@
 ---
+id: 07-api-development
 slug: /laravel/07-api-development
 title: "Chapter 7: API Development & Integration"
 sidebar_label: "Chapter 7: API Development & Integration"

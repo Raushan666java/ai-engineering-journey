@@ -1,4 +1,5 @@
 ---
+id: 02-phase1-python-fastapi-async
 slug: /ai-agent-engineer/02-phase1-python-fastapi-async
 title: "Phase 1 — Python + FastAPI + AsyncIO"
 sidebar_label: "Phase 1 — Python + FastAPI + AsyncIO"

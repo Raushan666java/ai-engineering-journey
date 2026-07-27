@@ -1,4 +1,5 @@
 ---
+id: 13-probability
 slug: /discrete-mathematics/13-probability
 title: "Chapter 13: Probability"
 sidebar_label: "Chapter 13: Probability"

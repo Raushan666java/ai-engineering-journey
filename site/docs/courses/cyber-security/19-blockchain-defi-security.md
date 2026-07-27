@@ -1,4 +1,5 @@
 ---
+id: 19-blockchain-defi-security
 slug: /cyber-security/19-blockchain-defi-security
 title: "Chapter 19: Blockchain, Smart Contract & DeFi Security"
 sidebar_label: "Chapter 19: Blockchain, Smart Contract & DeFi Security"

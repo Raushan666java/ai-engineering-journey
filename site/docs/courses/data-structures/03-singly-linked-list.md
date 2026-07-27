@@ -1,4 +1,5 @@
 ---
+id: 03-singly-linked-list
 slug: /data-structures/03-singly-linked-list
 title: "Chapter 3: Singly Linked List"
 sidebar_label: "Chapter 3: Singly Linked List"

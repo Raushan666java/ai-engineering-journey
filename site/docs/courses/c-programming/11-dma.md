@@ -1,4 +1,5 @@
 ---
+id: 11-dma
 slug: /c-programming/11-dma
 title: "Chapter 11: Dynamic Memory Allocation"
 sidebar_label: "Chapter 11: Dynamic Memory Allocation"

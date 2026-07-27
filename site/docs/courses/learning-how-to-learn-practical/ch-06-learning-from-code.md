@@ -1,4 +1,5 @@
 ---
+id: ch-06-learning-from-code
 slug: /learning-how-to-learn-practical/ch-06-learning-from-code
 title: "Chapter 6: Learning From Any Resource"
 sidebar_label: "Chapter 6: Learning From Any Resource"

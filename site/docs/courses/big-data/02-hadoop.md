@@ -1,4 +1,5 @@
 ---
+id: 02-hadoop
 slug: /big-data/02-hadoop
 title: "Chapter 2: Hadoop ? HDFS, MapReduce & YARN"
 sidebar_label: "Chapter 2: Hadoop ? HDFS, MapReduce & YARN"

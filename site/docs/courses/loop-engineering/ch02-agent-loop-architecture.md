@@ -1,4 +1,5 @@
 ---
+id: ch02-agent-loop-architecture
 slug: /loop-engineering/ch02-agent-loop-architecture
 title: "Chapter 2: Agent Loop Architecture"
 sidebar_label: "Chapter 2: Agent Loop Architecture"

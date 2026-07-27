@@ -1,4 +1,5 @@
 ---
+id: 08-node-express
 slug: /web-development/08-node-express
 title: "Chapter 8 → Node.js and Express"
 sidebar_label: "Chapter 8 → Node.js and Express"

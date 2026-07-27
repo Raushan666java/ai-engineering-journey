@@ -1,4 +1,5 @@
 ---
+id: 08-gradle
 slug: /java/08-gradle
 title: "Gradle Deep Dive"
 sidebar_label: "Gradle Deep Dive"

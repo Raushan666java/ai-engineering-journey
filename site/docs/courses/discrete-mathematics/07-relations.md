@@ -1,4 +1,5 @@
 ---
+id: 07-relations
 slug: /discrete-mathematics/07-relations
 title: "Chapter 7: Relations"
 sidebar_label: "Chapter 7: Relations"

@@ -1,4 +1,5 @@
 ---
+id: 04-graph-chart-analysis
 slug: /data-analysis-interpretation/04-graph-chart-analysis
 title: "Chapter 4: Graph and Chart Analysis"
 sidebar_label: "Chapter 4: Graph and Chart Analysis"

@@ -1,4 +1,5 @@
 ---
+id: ch07-loop-safety
 slug: /loop-engineering/ch07-loop-safety
 title: "Chapter 7: Loop Safety"
 sidebar_label: "Chapter 7: Loop Safety"

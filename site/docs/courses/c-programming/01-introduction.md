@@ -1,4 +1,5 @@
 ---
+id: 01-introduction
 slug: /c-programming/01-introduction
 title: "Chapter 1: Introduction to C"
 sidebar_label: "Chapter 1: Introduction to C"

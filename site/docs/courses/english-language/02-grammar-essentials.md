@@ -1,4 +1,5 @@
 ---
+id: 02-grammar-essentials
 slug: /english-language/02-grammar-essentials
 title: "Chapter 2: Grammar Essentials"
 sidebar_label: "Chapter 2: Grammar Essentials"

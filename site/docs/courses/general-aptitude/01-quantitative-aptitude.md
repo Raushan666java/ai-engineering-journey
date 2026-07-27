@@ -1,4 +1,5 @@
 ---
+id: 01-quantitative-aptitude
 slug: /general-aptitude/01-quantitative-aptitude
 title: "Chapter 1: Quantitative Aptitude"
 sidebar_label: "Chapter 1: Quantitative Aptitude"

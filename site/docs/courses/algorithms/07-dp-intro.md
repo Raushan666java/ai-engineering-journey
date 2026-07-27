@@ -1,4 +1,5 @@
 ---
+id: 07-dp-intro
 slug: /algorithms/07-dp-intro
 title: "Chapter 7: Dynamic Programming — Foundations"
 sidebar_label: "Chapter 7: Dynamic Programming — Foundations"

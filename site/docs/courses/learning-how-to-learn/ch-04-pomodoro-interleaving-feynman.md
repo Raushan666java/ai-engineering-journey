@@ -1,4 +1,5 @@
 ---
+id: ch-04-pomodoro-interleaving-feynman
 slug: /learning-how-to-learn/ch-04-pomodoro-interleaving-feynman
 title: "Chapter 4: Pomodoro, Interleaving & the Feynman Technique"
 sidebar_label: "Chapter 4: Pomodoro, Interleaving & the Feynman Technique"

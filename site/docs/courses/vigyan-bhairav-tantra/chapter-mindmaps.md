@@ -1,7 +1,8 @@
 ---
+id: chapter-mindmaps
 slug: /vigyan-bhairav-tantra/chapter-mindmaps
-title: "Chapter Mindmaps"
-sidebar_label: "Chapter Mindmaps"
+title: "अध्याय-वार माइंड मैप: 18 अध्यायों का दृश्य सारांश"
+sidebar_label: "अध्याय-वार माइंड मैप: 18 अध्यायों का दृश्य सारांश"
 sidebar_position: 20
 ---
 ## इस गाइड का उपयोग कैसे करें (How to Use This Guide)

@@ -1,4 +1,5 @@
 ---
+id: 02-computer-networks
 slug: /professional-knowledge/02-computer-networks
 title: "Chapter 2: Computer Networks — Exam Quick Revision"
 sidebar_label: "Chapter 2: Computer Networks — Exam Quick Revision"

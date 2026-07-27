@@ -1,4 +1,5 @@
 ---
+id: 05-banking-payment-security
 slug: /information-security/05-banking-payment-security
 title: "Chapter 5: Banking & Payment Security"
 sidebar_label: "Chapter 5: Banking & Payment Security"

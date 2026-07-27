@@ -1,4 +1,5 @@
 ---
+id: 33-security-perf-test
 slug: /java/33-security-perf-test
 title: "Security Testing & Performance Testing"
 sidebar_label: "Security Testing & Performance Testing"

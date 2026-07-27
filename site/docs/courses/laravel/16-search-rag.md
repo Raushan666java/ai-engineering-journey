@@ -1,4 +1,5 @@
 ---
+id: 16-search-rag
 slug: /laravel/16-search-rag
 title: "Chapter 16: Semantic Search, Vector Search & RAG with pgvector"
 sidebar_label: "Chapter 16: Semantic Search, Vector Search & RAG with pgvector"

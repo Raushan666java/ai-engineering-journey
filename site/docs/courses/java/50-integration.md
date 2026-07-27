@@ -1,4 +1,5 @@
 ---
+id: 50-integration
 slug: /java/50-integration
 title: "Spring Integration"
 sidebar_label: "Spring Integration"

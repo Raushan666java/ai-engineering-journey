@@ -1,4 +1,5 @@
 ---
+id: 13-actuator-devtools
 slug: /java/13-actuator-devtools
 title: "Actuator, DevTools & Monitoring"
 sidebar_label: "Actuator, DevTools & Monitoring"

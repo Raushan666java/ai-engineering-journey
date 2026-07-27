@@ -1,4 +1,5 @@
 ---
+id: 07-strings
 slug: /c-programming/07-strings
 title: "Chapter 7: Strings"
 sidebar_label: "Chapter 7: Strings"

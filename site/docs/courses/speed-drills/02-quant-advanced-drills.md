@@ -1,4 +1,5 @@
 ---
+id: 02-quant-advanced-drills
 slug: /speed-drills/02-quant-advanced-drills
 title: "Quant Advanced Speed Drills"
 sidebar_label: "Quant Advanced Speed Drills"

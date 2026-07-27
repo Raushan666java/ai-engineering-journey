@@ -1,4 +1,5 @@
 ---
+id: 02-coding-problem-solving
 slug: /interview-preparation/02-coding-problem-solving
 title: "Chapter 2: Coding Problem Solving"
 sidebar_label: "Chapter 2: Coding Problem Solving"

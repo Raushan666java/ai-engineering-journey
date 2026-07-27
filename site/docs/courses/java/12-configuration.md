@@ -1,4 +1,5 @@
 ---
+id: 12-configuration
 slug: /java/12-configuration
 title: "Application Properties & Configuration"
 sidebar_label: "Application Properties & Configuration"

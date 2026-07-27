@@ -1,7 +1,8 @@
 ---
+id: 59-interview-databases-b
 slug: /java/59-interview-databases-b
-title: "59 Interview Databases B"
-sidebar_label: "59 Interview Databases B"
+title: "❌ WRONG: Hibernate can drop columns or change types unexpectedly"
+sidebar_label: "❌ WRONG: Hibernate can drop columns or change types unexpectedly"
 sidebar_position: 60
 ---
 ![JPA Auditing - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-b.png)

@@ -1,4 +1,5 @@
 ---
+id: 14-register-allocation
 slug: /compiler-design/14-register-allocation
 title: "Chapter 14: Register Allocation"
 sidebar_label: "Chapter 14: Register Allocation"

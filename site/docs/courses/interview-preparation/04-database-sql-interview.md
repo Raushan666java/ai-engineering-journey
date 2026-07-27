@@ -1,4 +1,5 @@
 ---
+id: 04-database-sql-interview
 slug: /interview-preparation/04-database-sql-interview
 title: "Chapter 4: Database and SQL Interview"
 sidebar_label: "Chapter 4: Database and SQL Interview"

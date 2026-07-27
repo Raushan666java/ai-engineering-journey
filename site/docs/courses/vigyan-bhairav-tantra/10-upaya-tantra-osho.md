@@ -1,4 +1,5 @@
 ---
+id: 10-upaya-tantra-osho
 slug: /vigyan-bhairav-tantra/10-upaya-tantra-osho
 title: "अध्याय १०: उपाय — ओशो का दृष्टिकोण"
 sidebar_label: "अध्याय १०: उपाय — ओशो का दृष्टिकोण"

@@ -1,4 +1,5 @@
 ---
+id: ch-13-final-capstone
 slug: /learning-how-to-learn-practical/ch-13-final-capstone
 title: "Chapter 13: Final Capstone — Design Your Learning System"
 sidebar_label: "Chapter 13: Final Capstone — Design Your Learning System"

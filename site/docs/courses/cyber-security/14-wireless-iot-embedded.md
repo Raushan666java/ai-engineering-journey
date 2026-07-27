@@ -1,4 +1,5 @@
 ---
+id: 14-wireless-iot-embedded
 slug: /cyber-security/14-wireless-iot-embedded
 title: "Chapter 14: Wireless, IoT & Embedded Security"
 sidebar_label: "Chapter 14: Wireless, IoT & Embedded Security"

@@ -1,4 +1,5 @@
 ---
+id: 06-cloud-networking
 slug: /cloud-computing/06-cloud-networking
 title: "Chapter 6: Cloud Networking"
 sidebar_label: "Chapter 6: Cloud Networking"

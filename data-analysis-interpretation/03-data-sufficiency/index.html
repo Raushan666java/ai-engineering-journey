@@ -1,0 +1,1327 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-courses/data-analysis-interpretation/data-sufficiency" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Chapter 3: Data Sufficiency | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/data-analysis-interpretation/03-data-sufficiency"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 3: Data Sufficiency | AI Engineering Journey"><meta data-rh="true" name="description" content="Learning Objectives"><meta data-rh="true" property="og:description" content="Learning Objectives"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/data-analysis-interpretation/03-data-sufficiency"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/data-analysis-interpretation/03-data-sufficiency" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/data-analysis-interpretation/03-data-sufficiency" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Data Analysis Interpretation","item":"https://raushan666java.github.io/ai-engineering-journey/data-analysis-interpretation/index"},{"@type":"ListItem","position":2,"name":"Chapter 3: Data Sufficiency","item":"https://raushan666java.github.io/ai-engineering-journey/data-analysis-interpretation/03-data-sufficiency"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.27659dc5.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.e6b87124.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.d24ae1f4.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ai-engineering-journey/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ai-engineering-journey/"><div class="navbar__logo"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI Engineering</b></a><a class="navbar__item navbar__link" href="/ai-engineering-journey/placement">Placement Course</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ai-engineering-journey/government-exams/index">All Courses</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ai-engineering-journey/government-exams/index"><span class="linkLabel_WmDU">Government Exams — Complete Preparation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/applied-ai/index"><span class="categoryLinkLabel_W154">Applied Ai</span></a><button aria-label="Expand sidebar category &#x27;Applied Ai&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-technology/index"><span class="categoryLinkLabel_W154">Banking Technology</span></a><button aria-label="Expand sidebar category &#x27;Banking Technology&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/marketing-aptitude/index"><span class="categoryLinkLabel_W154">Marketing Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Marketing Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-financial-awareness/index"><span class="categoryLinkLabel_W154">Banking Financial Awareness</span></a><button aria-label="Expand sidebar category &#x27;Banking Financial Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/big-data/index"><span class="categoryLinkLabel_W154">Big Data</span></a><button aria-label="Expand sidebar category &#x27;Big Data&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-architecture/index"><span class="categoryLinkLabel_W154">Computer Architecture</span></a><button aria-label="Expand sidebar category &#x27;Computer Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/ai-engineering-journey/data-analysis-interpretation/index"><span class="categoryLinkLabel_W154">Data Analysis Interpretation</span></a><button aria-label="Collapse sidebar category &#x27;Data Analysis Interpretation&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/data-analysis-interpretation/01-advanced-data-interpretation"><span class="linkLabel_WmDU">Chapter 1: Advanced Data Interpretation</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/data-analysis-interpretation/02-missing-data-caselet-di"><span class="linkLabel_WmDU">Chapter 2: Missing Data and Caselet DI</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ai-engineering-journey/data-analysis-interpretation/03-data-sufficiency"><span class="linkLabel_WmDU">Chapter 3: Data Sufficiency</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/data-analysis-interpretation/04-graph-chart-analysis"><span class="linkLabel_WmDU">Chapter 4: Graph and Chart Analysis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/data-analysis-interpretation/05-mixed-data-interpretation"><span class="linkLabel_WmDU">Chapter 5: Mixed Data Interpretation</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/english-language/index"><span class="categoryLinkLabel_W154">English Language</span></a><button aria-label="Expand sidebar category &#x27;English Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/hindi-language/index"><span class="categoryLinkLabel_W154">Hindi Language</span></a><button aria-label="Expand sidebar category &#x27;Hindi Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/information-security/index"><span class="categoryLinkLabel_W154">Information Security</span></a><button aria-label="Expand sidebar category &#x27;Information Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/speed-drills/index"><span class="categoryLinkLabel_W154">Speed Drills</span></a><button aria-label="Expand sidebar category &#x27;Speed Drills&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-aptitude/index"><span class="categoryLinkLabel_W154">General Aptitude</span></a><button aria-label="Expand sidebar category &#x27;General Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/job-preparation/index"><span class="categoryLinkLabel_W154">Job Preparation</span></a><button aria-label="Expand sidebar category &#x27;Job Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/mock-tests/index"><span class="categoryLinkLabel_W154">Mock Tests</span></a><button aria-label="Expand sidebar category &#x27;Mock Tests&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/quantitative-aptitude/index"><span class="categoryLinkLabel_W154">Quantitative Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Quantitative Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/reasoning-ability/index"><span class="categoryLinkLabel_W154">Reasoning Ability</span></a><button aria-label="Expand sidebar category &#x27;Reasoning Ability&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/placement-preparation/index"><span class="categoryLinkLabel_W154">Placement Preparation</span></a><button aria-label="Expand sidebar category &#x27;Placement Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-awareness/index"><span class="categoryLinkLabel_W154">General Awareness</span></a><button aria-label="Expand sidebar category &#x27;General Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/coding-problems/index"><span class="categoryLinkLabel_W154">Coding Problems</span></a><button aria-label="Expand sidebar category &#x27;Coding Problems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/blockchain/index"><span class="categoryLinkLabel_W154">Blockchain</span></a><button aria-label="Expand sidebar category &#x27;Blockchain&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cloud-computing/index"><span class="categoryLinkLabel_W154">Cloud Computing</span></a><button aria-label="Expand sidebar category &#x27;Cloud Computing&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/engineering-mathematics/index"><span class="categoryLinkLabel_W154">Engineering Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Engineering Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/loop-engineering/index"><span class="categoryLinkLabel_W154">Loop Engineering</span></a><button aria-label="Expand sidebar category &#x27;Loop Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/machine-learning/index"><span class="categoryLinkLabel_W154">Machine Learning</span></a><button aria-label="Expand sidebar category &#x27;Machine Learning&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/professional-knowledge/index"><span class="categoryLinkLabel_W154">Professional Knowledge</span></a><button aria-label="Expand sidebar category &#x27;Professional Knowledge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/modern-ai-engineering/index"><span class="categoryLinkLabel_W154">Modern Ai Engineering</span></a><button aria-label="Expand sidebar category &#x27;Modern Ai Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/ai-engineering-journey/ai-agent-engineer/00-index"><span class="categoryLinkLabel_W154">Ai Agent Engineer</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/government-pyqs/index"><span class="categoryLinkLabel_W154">Government Pyqs</span></a><button aria-label="Expand sidebar category &#x27;Government Pyqs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/compiler-design/index"><span class="categoryLinkLabel_W154">Compiler Design</span></a><button aria-label="Expand sidebar category &#x27;Compiler Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/digital-logic/index"><span class="categoryLinkLabel_W154">Digital Logic</span></a><button aria-label="Expand sidebar category &#x27;Digital Logic&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/discrete-mathematics/index"><span class="categoryLinkLabel_W154">Discrete Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Discrete Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn-practical/index"><span class="categoryLinkLabel_W154">Learning How To Learn Practical</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn Practical&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/oop-cpp/index"><span class="categoryLinkLabel_W154">Oop Cpp</span></a><button aria-label="Expand sidebar category &#x27;Oop Cpp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/software-engineering/index"><span class="categoryLinkLabel_W154">Software Engineering</span></a><button aria-label="Expand sidebar category &#x27;Software Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/theory-of-computation/index"><span class="categoryLinkLabel_W154">Theory Of Computation</span></a><button aria-label="Expand sidebar category &#x27;Theory Of Computation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/interview-preparation/index"><span class="categoryLinkLabel_W154">Interview Preparation</span></a><button aria-label="Expand sidebar category &#x27;Interview Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn/index"><span class="categoryLinkLabel_W154">Learning How To Learn</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/algorithms/index"><span class="categoryLinkLabel_W154">Algorithms</span></a><button aria-label="Expand sidebar category &#x27;Algorithms&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/c-programming/index"><span class="categoryLinkLabel_W154">C Programming</span></a><button aria-label="Expand sidebar category &#x27;C Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-networks/index"><span class="categoryLinkLabel_W154">Computer Networks</span></a><button aria-label="Expand sidebar category &#x27;Computer Networks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-structures/index"><span class="categoryLinkLabel_W154">Data Structures</span></a><button aria-label="Expand sidebar category &#x27;Data Structures&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/operating-systems/index"><span class="categoryLinkLabel_W154">Operating Systems</span></a><button aria-label="Expand sidebar category &#x27;Operating Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/web-development/index"><span class="categoryLinkLabel_W154">Web Development</span></a><button aria-label="Expand sidebar category &#x27;Web Development&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/database-management-systems/index"><span class="categoryLinkLabel_W154">Database Management Systems</span></a><button aria-label="Expand sidebar category &#x27;Database Management Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cyber-security/index"><span class="categoryLinkLabel_W154">Cyber Security</span></a><button aria-label="Expand sidebar category &#x27;Cyber Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/python-programming/index"><span class="categoryLinkLabel_W154">Python Programming</span></a><button aria-label="Expand sidebar category &#x27;Python Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/system-design/index"><span class="categoryLinkLabel_W154">System Design</span></a><button aria-label="Expand sidebar category &#x27;System Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/artificial-intelligence/index"><span class="categoryLinkLabel_W154">Artificial Intelligence</span></a><button aria-label="Expand sidebar category &#x27;Artificial Intelligence&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/vigyan-bhairav-tantra/index"><span class="categoryLinkLabel_W154">Vigyan Bhairav Tantra</span></a><button aria-label="Expand sidebar category &#x27;Vigyan Bhairav Tantra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/devops/index"><span class="categoryLinkLabel_W154">Devops</span></a><button aria-label="Expand sidebar category &#x27;Devops&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/gate-cs-preparation/index"><span class="categoryLinkLabel_W154">Gate Cs Preparation</span></a><button aria-label="Expand sidebar category &#x27;Gate Cs Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-course/README"><span class="categoryLinkLabel_W154">Learning Course</span></a><button aria-label="Expand sidebar category &#x27;Learning Course&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/laravel/index"><span class="categoryLinkLabel_W154">Laravel</span></a><button aria-label="Expand sidebar category &#x27;Laravel&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/java/index"><span class="categoryLinkLabel_W154">Java</span></a><button aria-label="Expand sidebar category &#x27;Java&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/ai-engineering-placement/index"><span class="categoryLinkLabel_W154">Ai Engineering Placement</span></a><button aria-label="Expand sidebar category &#x27;Ai Engineering Placement&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ai-engineering-journey/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ai-engineering-journey/data-analysis-interpretation/index"><span>Data Analysis Interpretation</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Chapter 3: Data Sufficiency</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Chapter 3: Data Sufficiency</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<p>By the end of this chapter, you will be able to:</p>
+<ul>
+<li class="">Determine whether given data statements are sufficient to answer a question</li>
+<li class="">Apply the correct reasoning process for Statement (1) alone, Statement (2) alone, both together, or neither</li>
+<li class="">Identify common trick questions and avoid reasoning errors</li>
+<li class="">Solve data sufficiency problems involving percentages, ratios, profit/loss, time-speed-distance, number systems, and algebra</li>
+<li class="">Distinguish between &quot;sufficient&quot; and &quot;necessary&quot; conditions</li>
+<li class="">Apply the decision tree approach consistently</li>
+</ul>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a href="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/handwritten-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/handwritten-notes.png" alt="Handwritten notes" class="img_ev3q">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a href="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/sticky-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/sticky-notes.png" alt="Sticky-note revision" class="img_ev3q">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a href="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/visual-explanation.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/data-analysis-interpretation/03-data-sufficiency/visual-explanation.png" alt="Visual concept guide" class="img_ev3q">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
+<!-- -->
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="theory">Theory<a href="#theory" class="hash-link" aria-label="Direct link to Theory" title="Direct link to Theory" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="31-what-is-data-sufficiency">3.1 What is Data Sufficiency?<a href="#31-what-is-data-sufficiency" class="hash-link" aria-label="Direct link to 3.1 What is Data Sufficiency?" title="Direct link to 3.1 What is Data Sufficiency?" translate="no">​</a></h3>
+<p>Data Sufficiency (DS) questions test your ability to determine whether the information provided is adequate to answer a given question â€”ithout actually solving it completely.</p>
+<p>Each question has:</p>
+<ul>
+<li class="">A <strong>question stem</strong> asking for a value, a comparison, or a verification</li>
+<li class=""><strong>Two statements</strong>, labelled (1) and (2), each providing some information</li>
+</ul>
+<p><strong>Your task:</strong> Determine whether:</p>
+<ul>
+<li class=""><strong>(A)</strong> Statement (1) ALONE is sufficient, but statement (2) alone is NOT sufficient</li>
+<li class=""><strong>(B)</strong> Statement (2) ALONE is sufficient, but statement (1) alone is NOT sufficient</li>
+<li class=""><strong>(C)</strong> BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient</li>
+<li class=""><strong>(D)</strong> EACH statement ALONE is sufficient</li>
+<li class=""><strong>(E)</strong> Statements (1) and (2) TOGETHER are NOT sufficient</li>
+</ul>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A[Start: Read Question &amp; Statements] --&gt; B{Can Q be answered&lt;br/&gt;using Statement 1 alone?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Yes| C{Can Q be answered&lt;br/&gt;using Statement 2 alone?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|No| D{Can Q be answered&lt;br/&gt;using Statement 2 alone?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|Yes| E[Answer: D â€”ach Alone Sufficient]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|No| F[Answer: A â€”nly Statement 1 Sufficient]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    D --&gt;|Yes| G[Answer: B â€”nly Statement 2 Sufficient]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    D --&gt;|No| H{Can Q be answered&lt;br/&gt;using BOTH together?}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    H --&gt;|Yes| I[Answer: C â€”oth Together Sufficient]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    H --&gt;|No| J[Answer: E â€”either Sufficient]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    style E fill:#2E8B57,color:#fff</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    style F fill:#4A90D9,color:#fff</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    style G fill:#7B68EE,color:#fff</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    style I fill:#DAA520,color:#fff</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    style J fill:#CD5C5C,color:#fff</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="32-the-five-answer-choices-explained">3.2 The Five Answer Choices Explained<a href="#32-the-five-answer-choices-explained" class="hash-link" aria-label="Direct link to 3.2 The Five Answer Choices Explained" title="Direct link to 3.2 The Five Answer Choices Explained" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Code</th><th>Meaning</th><th>Example</th></tr></thead><tbody><tr><td><strong>A</strong></td><td>Statement (1) alone is enough; Statement (2) alone is not</td><td>Q: What is x? (1) x + 5 = 10 (2) x &gt; 3</td></tr><tr><td><strong>B</strong></td><td>Statement (2) alone is enough; Statement (1) alone is not</td><td>Q: What is y? (1) y + z = 10 (2) 2y = 14</td></tr><tr><td><strong>C</strong></td><td>Both together are needed; neither alone is enough</td><td>Q: What is x + y? (1) x - y = 5 (2) 2x + y = 16</td></tr><tr><td><strong>D</strong></td><td>Each statement alone is sufficient</td><td>Q: What is x? (1) x² = 25 (2) x³ = 125</td></tr><tr><td><strong>E</strong></td><td>Both together are still not sufficient</td><td>Q: What is x? (1) x + y = 10 (2) x - z = 5</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="33-the-decision-process-âtep-by-step">3.3 The Decision Process â€”tep by Step<a href="#33-the-decision-process-âtep-by-step" class="hash-link" aria-label="Direct link to 3.3 The Decision Process â€”tep by Step" title="Direct link to 3.3 The Decision Process â€”tep by Step" translate="no">​</a></h3>
+<p><strong>Step 1: Analyse the question stem</strong></p>
+<ul>
+<li class="">What exactly is being asked? A value? A comparison? A yes/no answer?</li>
+<li class="">How many unknowns are involved?</li>
+</ul>
+<p><strong>Step 2: Evaluate Statement (1) alone</strong></p>
+<ul>
+<li class="">Ignore Statement (2) completely</li>
+<li class="">Can the question be answered definitively?</li>
+<li class="">If yes ? S1 is sufficient. If no ? S1 is insufficient.</li>
+</ul>
+<p><strong>Step 3: Evaluate Statement (2) alone</strong></p>
+<ul>
+<li class="">Ignore Statement (1) completely</li>
+<li class="">Can the question be answered definitively?</li>
+<li class="">If yes ? S2 is sufficient. If no ? S2 is insufficient.</li>
+</ul>
+<p><strong>Step 4: Combine (if neither alone is sufficient)</strong></p>
+<ul>
+<li class="">Use both statements together</li>
+<li class="">Can the question be answered now?</li>
+<li class="">If yes ? Both together sufficient. If no ? Neither sufficient.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="34-types-of-data-sufficiency-questions">3.4 Types of Data Sufficiency Questions<a href="#34-types-of-data-sufficiency-questions" class="hash-link" aria-label="Direct link to 3.4 Types of Data Sufficiency Questions" title="Direct link to 3.4 Types of Data Sufficiency Questions" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="type-a-what-is-the-value-of-x">Type A: &quot;What is the value of X?&quot;<a href="#type-a-what-is-the-value-of-x" class="hash-link" aria-label="Direct link to Type A: &quot;What is the value of X?&quot;" title="Direct link to Type A: &quot;What is the value of X?&quot;" translate="no">​</a></h4>
+<p>The question asks for a unique numerical value.</p>
+<p><strong>Key rule:</strong> A statement is sufficient only if it yields a <strong>unique</strong> value. If it yields multiple possible values, it is NOT sufficient.</p>
+<p><strong>Example:</strong> What is x?</p>
+<ul>
+<li class="">Statement (1): x² = 25 ? x = 5 or -5 ? NOT sufficient (two possible values)</li>
+<li class="">Statement (2): x &gt; 0 ? x could be any positive number ? NOT sufficient alone</li>
+<li class="">Combined: x² = 25 AND x &gt; 0 ? x = 5 ONLY ? Sufficient</li>
+</ul>
+<p><strong>Trap:</strong> For a quadratic equation that has two solutions, the statement is insufficient unless additional constraints eliminate one solution.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="type-b-is-a--b-yesno-questions">Type B: &quot;Is A &gt; B?&quot; (Yes/No Questions)<a href="#type-b-is-a--b-yesno-questions" class="hash-link" aria-label="Direct link to Type B: &quot;Is A &gt; B?&quot; (Yes/No Questions)" title="Direct link to Type B: &quot;Is A &gt; B?&quot; (Yes/No Questions)" translate="no">​</a></h4>
+<p>The question asks for a comparison that can be answered &quot;yes&quot; or &quot;no&quot;.</p>
+<p><strong>Key rule:</strong> A statement is sufficient if it gives a <strong>definitive</strong> answer (either yes or no). A &quot;no&quot; answer is as valid as a &quot;yes&quot; answer.</p>
+<p><strong>Example:</strong> Is x &gt; 10?</p>
+<ul>
+<li class="">Statement (1): x = 15 ? Yes ? Sufficient</li>
+<li class="">Statement (2): x &lt; 5 ? No ? Also Sufficient!</li>
+</ul>
+<p><strong>Trap:</strong> If the answer could be &quot;yes&quot; for some values and &quot;no&quot; for others, the statement is insufficient.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="type-c-percentage-and-ratio-problems">Type C: Percentage and Ratio Problems<a href="#type-c-percentage-and-ratio-problems" class="hash-link" aria-label="Direct link to Type C: Percentage and Ratio Problems" title="Direct link to Type C: Percentage and Ratio Problems" translate="no">​</a></h4>
+<p><strong>Example:</strong> What is the salary of A?</p>
+<ul>
+<li class="">Statement (1): A&#x27;s salary is 20% more than B&#x27;s ? Not sufficient (B unknown)</li>
+<li class="">Statement (2): B&#x27;s salary is ?50,000 ? Not sufficient (relationship to A unknown)</li>
+<li class="">Combined: A = 1.20 × 50,000 ? Sufficient ? Answer: C</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="type-d-profitloss-problems">Type D: Profit/Loss Problems<a href="#type-d-profitloss-problems" class="hash-link" aria-label="Direct link to Type D: Profit/Loss Problems" title="Direct link to Type D: Profit/Loss Problems" translate="no">​</a></h4>
+<p><strong>Example:</strong> What is the profit percentage?</p>
+<ul>
+<li class="">Statement (1): Cost price is ?500 ? Not sufficient (selling price unknown)</li>
+<li class="">Statement (2): Selling price is ?600 ? Not sufficient (cost price unknown)</li>
+<li class="">Combined: Profit = (600-500)/500 × 100 = 20% ? Sufficient ? Answer: C</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="type-e-number-system-problems">Type E: Number System Problems<a href="#type-e-number-system-problems" class="hash-link" aria-label="Direct link to Type E: Number System Problems" title="Direct link to Type E: Number System Problems" translate="no">​</a></h4>
+<p><strong>Example:</strong> Is x divisible by 6?</p>
+<ul>
+<li class="">Statement (1): x is divisible by 2 ? Not sufficient (could be 2, 4, 8, 10, ...)</li>
+<li class="">Statement (2): x is divisible by 3 ? Not sufficient (could be 3, 6, 9, 15, ...)</li>
+<li class="">Combined: x divisible by both 2 and 3 ? divisible by LCM (6) ? Sufficient ? Answer: C</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="35-common-trick-questions-and-how-to-avoid-them">3.5 Common Trick Questions and How to Avoid Them<a href="#35-common-trick-questions-and-how-to-avoid-them" class="hash-link" aria-label="Direct link to 3.5 Common Trick Questions and How to Avoid Them" title="Direct link to 3.5 Common Trick Questions and How to Avoid Them" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Trick</th><th>Example</th><th>Why It&#x27;s Tricky</th><th>How to Avoid</th></tr></thead><tbody><tr><td>Multiple solutions</td><td>x² = 16 ? x = ±4</td><td>Both satisfy, so not unique</td><td>Always check if the equation yields one or multiple solutions</td></tr><tr><td>False sufficiency</td><td>Is x &gt; y? (1) x &gt; z (2) z &gt; y</td><td>Both needed together</td><td>Test with numbers: z = 5, x &gt; 5, y &lt; 5 ? x &gt; y definitely</td></tr><tr><td>Hidden assumption</td><td>What is the area? (1) side = 5</td><td>Assumes it&#x27;s a square but not stated</td><td>Identify the shape first</td></tr><tr><td>Both mean same</td><td>(1) x + y = 10 (2) 2x + 2y = 20</td><td>Same equation, not independent</td><td>Check if statements are equivalent</td></tr><tr><td>Answer is &quot;No&quot;</td><td>Is x &gt; 5? (1) x = 3</td><td>Gives &quot;No&quot; â€”till sufficient</td><td>&quot;No&quot; is a valid answer</td></tr><tr><td>Ambiguous wording</td><td>&quot;x is multiple of 3&quot; â€”ould be 3, 6, 9, ...</td><td>Insufficient unless range given</td><td>Look for constraints that limit possibilities</td></tr><tr><td>Redundant info</td><td>(1) A &gt; B (2) B &lt; A</td><td>Same information repeated</td><td>Redundant statements do not add new data</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="36-when-is-data-sufficient-âhe-criteria">3.6 When Is Data Sufficient? â€”he Criteria<a href="#36-when-is-data-sufficient-âhe-criteria" class="hash-link" aria-label="Direct link to 3.6 When Is Data Sufficient? â€”he Criteria" title="Direct link to 3.6 When Is Data Sufficient? â€”he Criteria" translate="no">​</a></h3>
+<p>Data is <strong>sufficient</strong> when:</p>
+<ol>
+<li class="">It yields a <strong>unique</strong> numerical value (for &quot;what is&quot; questions)</li>
+<li class="">It gives a <strong>definitive yes or no</strong> (for &quot;is/are/does&quot; questions)</li>
+<li class="">The answer can be <strong>derived logically</strong> without additional assumptions</li>
+</ol>
+<p>Data is <strong>insufficient</strong> when:</p>
+<ol>
+<li class="">Multiple values satisfy the condition</li>
+<li class="">The answer is &quot;yes&quot; for some cases and &quot;no&quot; for others</li>
+<li class="">Additional information (not provided) is required</li>
+<li class="">The statements are contradictory</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="37-systematic-testing-approach">3.7 Systematic Testing Approach<a href="#37-systematic-testing-approach" class="hash-link" aria-label="Direct link to 3.7 Systematic Testing Approach" title="Direct link to 3.7 Systematic Testing Approach" translate="no">​</a></h3>
+<p>For &quot;Is/Does&quot; (Yes/No) questions, use this testing method:</p>
+<ol>
+<li class="">Try to find <strong>one example</strong> that gives &quot;Yes&quot; and <strong>one example</strong> that gives &quot;No&quot;</li>
+<li class="">If both exist with the same statement ? NOT sufficient</li>
+<li class="">If only one outcome is possible ? Sufficient</li>
+</ol>
+<p><strong>Example:</strong> Is x &gt; 0?</p>
+<ul>
+<li class="">Statement (1): x² = 9 ? x = 3 or x = -3
+<ul>
+<li class="">If x = 3, answer is Yes</li>
+<li class="">If x = -3, answer is No</li>
+<li class="">Both are possible ? NOT sufficient</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38-data-sufficiency-in-different-contexts">3.8 Data Sufficiency in Different Contexts<a href="#38-data-sufficiency-in-different-contexts" class="hash-link" aria-label="Direct link to 3.8 Data Sufficiency in Different Contexts" title="Direct link to 3.8 Data Sufficiency in Different Contexts" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="algebra">Algebra<a href="#algebra" class="hash-link" aria-label="Direct link to Algebra" title="Direct link to Algebra" translate="no">​</a></h4>
+<ul>
+<li class="">Linear equations in one variable: One equation is enough</li>
+<li class="">Two variables: Need two independent equations</li>
+<li class="">Quadratic: Usually two solutions ? need additional constraint</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="geometry">Geometry<a href="#geometry" class="hash-link" aria-label="Direct link to Geometry" title="Direct link to Geometry" translate="no">​</a></h4>
+<ul>
+<li class="">Area formulas depend on knowing the shape</li>
+<li class="">Triangles: Need base and height, or three sides (Heron&#x27;s formula)</li>
+<li class="">Circles: Radius alone is sufficient for area and circumference</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="arithmetic-percentages-ratios">Arithmetic (Percentages, Ratios)<a href="#arithmetic-percentages-ratios" class="hash-link" aria-label="Direct link to Arithmetic (Percentages, Ratios)" title="Direct link to Arithmetic (Percentages, Ratios)" translate="no">​</a></h4>
+<ul>
+<li class="">Need both the part and the whole, or the ratio and one actual value</li>
+<li class="">Ratio alone is insufficient for absolute values</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="number-properties">Number Properties<a href="#number-properties" class="hash-link" aria-label="Direct link to Number Properties" title="Direct link to Number Properties" translate="no">​</a></h4>
+<ul>
+<li class="">Divisibility, prime factors, odd/even properties</li>
+<li class="">Need sufficient constraints to narrow down possibilities</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38a-data-sufficiency-in-time-speed-distance-context">3.8a Data Sufficiency in Time-Speed-Distance Context<a href="#38a-data-sufficiency-in-time-speed-distance-context" class="hash-link" aria-label="Direct link to 3.8a Data Sufficiency in Time-Speed-Distance Context" title="Direct link to 3.8a Data Sufficiency in Time-Speed-Distance Context" translate="no">​</a></h3>
+<p><strong>Key formulas:</strong></p>
+<ul>
+<li class="">Distance = Speed × Time</li>
+<li class="">Speed = Distance / Time</li>
+<li class="">Time = Distance / Speed</li>
+</ul>
+<p><strong>Sufficiency patterns:</strong></p>
+<ol>
+<li class=""><strong>Distance known, speed known ? Time</strong> â€”ufficient (one equation, one unknown)</li>
+<li class=""><strong>Distance known, time unknown, speed unknown</strong> â€”ot sufficient</li>
+<li class=""><strong>Ratio of speeds + total time + distance</strong> â€”ufficient (two equations)</li>
+<li class=""><strong>Relative speed concept:</strong> If two objects move toward each other, combined speed = sum. If same direction, combined speed = difference.</li>
+</ol>
+<p><strong>Example:</strong> What is the speed of train A?</p>
+<ul>
+<li class="">(1) Train A covers 300 km in 4 hours ? Speed = 75 km/h ? Sufficient</li>
+<li class="">(2) Train A takes 2 hours less than Train B to cover 300 km, Train B speed = 50 km/h ? B time = 6 hours, A time = 4 hours ? Speed = 75 km/h ? Sufficient</li>
+<li class="">Answer: D</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38b-data-sufficiency-in-profit-loss-context">3.8b Data Sufficiency in Profit-Loss Context<a href="#38b-data-sufficiency-in-profit-loss-context" class="hash-link" aria-label="Direct link to 3.8b Data Sufficiency in Profit-Loss Context" title="Direct link to 3.8b Data Sufficiency in Profit-Loss Context" translate="no">​</a></h3>
+<p><strong>Key formulas:</strong></p>
+<ul>
+<li class="">Profit = SP - CP</li>
+<li class="">Profit % = (Profit / CP) × 100</li>
+<li class="">SP = CP × (1 + Profit%/100)</li>
+<li class="">Discount = MP - SP</li>
+<li class="">Discount % = (Discount / MP) × 100</li>
+</ul>
+<p><strong>Sufficiency patterns:</strong></p>
+<ol>
+<li class=""><strong>CP and SP known ? Profit %</strong> â€”ufficient</li>
+<li class=""><strong>Only CP known OR only SP known</strong> â€”ot sufficient</li>
+<li class=""><strong>CP and Profit % known ? SP</strong> â€”ufficient</li>
+<li class=""><strong>MP and Discount % known ? SP</strong> â€”ufficient, but need CP for profit %</li>
+</ol>
+<p><strong>Example:</strong> What is the profit percentage?</p>
+<ul>
+<li class="">(1) CP = ?500, SP = ?650 ? Profit = 150, Profit % = 30% ? Sufficient</li>
+<li class="">(2) SP is 30% more than CP ? Profit % = 30% ? Sufficient</li>
+<li class="">Answer: D</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38c-data-sufficiency-in-number-systems">3.8c Data Sufficiency in Number Systems<a href="#38c-data-sufficiency-in-number-systems" class="hash-link" aria-label="Direct link to 3.8c Data Sufficiency in Number Systems" title="Direct link to 3.8c Data Sufficiency in Number Systems" translate="no">​</a></h3>
+<p><strong>Key concepts:</strong></p>
+<ul>
+<li class=""><strong>Divisibility rules:</strong> A number divisible by a and b is divisible by LCM(a,b)</li>
+<li class=""><strong>Prime numbers:</strong> Exactly 2 factors (1 and itself)</li>
+<li class=""><strong>Even/odd:</strong> Even × Even = Even, Even × Odd = Even, Odd × Odd = Odd</li>
+<li class=""><strong>Consecutive numbers:</strong> One of every n consecutive numbers is divisible by n</li>
+</ul>
+<p><strong>Example:</strong> Is n divisible by 24?</p>
+<ul>
+<li class="">(1) n is divisible by 6 ? n = 6, 12, 18, 24, 30... Some divisible by 24, some not ? Not sufficient</li>
+<li class="">(2) n is divisible by 8 ? n = 8, 16, 24, 32... Some divisible by 24, some not ? Not sufficient</li>
+<li class="">Combined: n divisible by LCM(6,8) = 24 ? Sufficient ? Answer: C</li>
+</ul>
+<p><strong>Example:</strong> Is n a prime number?</p>
+<ul>
+<li class="">(1) n is odd ? Could be prime (3,5,7) or composite (9,15,21) ? Not sufficient</li>
+<li class="">(2) n has exactly two positive divisors ? By definition, prime ? Sufficient</li>
+<li class="">Answer: B</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38d-advanced-strategies-for-yesno-questions">3.8d Advanced Strategies for Yes/No Questions<a href="#38d-advanced-strategies-for-yesno-questions" class="hash-link" aria-label="Direct link to 3.8d Advanced Strategies for Yes/No Questions" title="Direct link to 3.8d Advanced Strategies for Yes/No Questions" translate="no">​</a></h3>
+<p><strong>Strategy 1: Pick extreme values</strong>
+If a statement says &quot;x &gt; 5&quot;, test with x = 6 and x = 100 â€”o they give the same answer to the question? If yes, the statement is likely sufficient for that answer direction.</p>
+<p><strong>Strategy 2: Consider zero and negative</strong>
+Many DS mistakes involve forgetting about zero, negative numbers, or fractions:</p>
+<ul>
+<li class="">Is x² &gt; x?
+<ul>
+<li class="">x = 2 ? 4 &gt; 2 ? Yes</li>
+<li class="">x = 0.5 ? 0.25 &lt; 0.5 ? No</li>
+<li class="">Not sufficient without additional constraint</li>
+</ul>
+</li>
+</ul>
+<p><strong>Strategy 3: The &quot;Both Not Needed&quot; Test</strong>
+Sometimes both statements are independently sufficient (Answer D). To detect this:</p>
+<ul>
+<li class="">If statement (1) gives a clear answer, check statement (2) separately</li>
+<li class="">If statement (2) also gives a clear answer (possibly different, but definitive), it&#x27;s D</li>
+<li class="">The two statements don&#x27;t need to give the same answer â€”ach just needs to be sufficient</li>
+</ul>
+<p><strong>Strategy 4: The &quot;One Number&quot; Verification</strong>
+For &quot;What is X?&quot; questions, if a statement yields exactly one possible value, it&#x27;s sufficient. The most common trap is quadratic equations that give two values.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38e-mock-ds-question-set-with-detailed-reasoning">3.8e Mock DS Question Set with Detailed Reasoning<a href="#38e-mock-ds-question-set-with-detailed-reasoning" class="hash-link" aria-label="Direct link to 3.8e Mock DS Question Set with Detailed Reasoning" title="Direct link to 3.8e Mock DS Question Set with Detailed Reasoning" translate="no">​</a></h3>
+<p><strong>Set: Three questions about the same scenario</strong></p>
+<p><strong>Scenario:</strong> A shop sells pens and pencils. The total number of items is 100.</p>
+<p><strong>Q1:</strong> How many pens are there?</p>
+<ul>
+<li class="">(1) There are 30 more pens than pencils.</li>
+<li class="">(2) The ratio of pens to pencils is 3:2.</li>
+</ul>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li class="">(1): P = Pencils + 30. Total = P + (P-30) = 100 ? 2P = 130 ? P = 65. Sufficient alone.</li>
+<li class="">(2): P:Pencils = 3:2 ? P = 3k, Pencils = 2k ? 5k = 100 ? k = 20 ? P = 60. Sufficient alone.</li>
+<li class="">Each alone sufficient. Answer: D (Note: the two statements give different answers â€”5 vs 60 â€”ut this is fine for DS as each statement defines its own scenario.)</li>
+</ul>
+<p><strong>Q2:</strong> Are there more pens than pencils?</p>
+<ul>
+<li class="">(1) There are 30 more pens than pencils.</li>
+<li class="">(2) Pens are 60% of total items.</li>
+</ul>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li class="">(1): Pens &gt; Pencils by 30 ? Definitely Yes. Sufficient.</li>
+<li class="">(2): Pens = 60% of 100 = 60, Pencils = 40 ? Pens &gt; Pencils ? Yes. Sufficient.</li>
+<li class="">Answer: D</li>
+</ul>
+<p><strong>Q3:</strong> What is the total cost of all pens?</p>
+<ul>
+<li class="">(1) Each pen costs ?10.</li>
+<li class="">(2) There are 60 pens.</li>
+</ul>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li class="">(1): Need number of pens. Not sufficient alone.</li>
+<li class="">(2): Need cost per pen. Not sufficient alone.</li>
+<li class="">Combined: Total cost = 60 × ?10 = ?600. Sufficient.</li>
+<li class="">Answer: C</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38f-one-statement-vs-two-statement-problems">3.8f One-Statement vs Two-Statement Problems<a href="#38f-one-statement-vs-two-statement-problems" class="hash-link" aria-label="Direct link to 3.8f One-Statement vs Two-Statement Problems" title="Direct link to 3.8f One-Statement vs Two-Statement Problems" translate="no">​</a></h3>
+<p>Some variations of DS present only one statement with the question. While the standard format uses two statements, understanding how to evaluate a single statement is the foundation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>If Statement (1) alone...</th><th>And Statement (2) alone...</th><th>Answer</th></tr></thead><tbody><tr><td>Is sufficient</td><td>Is also sufficient</td><td>D</td></tr><tr><td>Is sufficient</td><td>Is NOT sufficient</td><td>A</td></tr><tr><td>Is NOT sufficient</td><td>Is sufficient</td><td>B</td></tr><tr><td>Is NOT sufficient</td><td>Is NOT sufficient</td><td>Check combined ? C or E</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-definitive-no-concept">The &quot;Definitive No&quot; Concept<a href="#the-definitive-no-concept" class="hash-link" aria-label="Direct link to The &quot;Definitive No&quot; Concept" title="Direct link to The &quot;Definitive No&quot; Concept" translate="no">​</a></h4>
+<p>A common misconception is that &quot;No&quot; means insufficient. This is WRONG.</p>
+<p><strong>Example:</strong> Is x &gt; 10?</p>
+<ul>
+<li class="">Statement: x = 5</li>
+<li class="">Answer: x = 5 ? 5 is NOT &gt; 10 ? The answer is &quot;No&quot; â€”ut it&#x27;s DEFINITIVE.</li>
+<li class="">This statement IS sufficient.</li>
+</ul>
+<p><strong>Example:</strong> Is x &gt; 10?</p>
+<ul>
+<li class="">Statement: x &lt; 8</li>
+<li class="">Answer: Any x &lt; 8 is NOT &gt; 10 ? The answer is consistently &quot;No&quot; ? Sufficient.</li>
+</ul>
+<p><strong>Example:</strong> Is x &gt; 10?</p>
+<ul>
+<li class="">Statement: x &lt; 15</li>
+<li class="">Answer: If x = 5 ? No; if x = 12 ? Yes. Not consistent ? NOT sufficient.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38g-data-sufficiency-in-geometry">3.8g Data Sufficiency in Geometry<a href="#38g-data-sufficiency-in-geometry" class="hash-link" aria-label="Direct link to 3.8g Data Sufficiency in Geometry" title="Direct link to 3.8g Data Sufficiency in Geometry" translate="no">​</a></h3>
+<p><strong>Key concepts for geometry DS:</strong></p>
+<ul>
+<li class=""><strong>Circle:</strong> Radius gives area (pr²) and circumference (2pr)</li>
+<li class=""><strong>Triangle:</strong> Base and height give area. Three sides give area (Heron&#x27;s formula)</li>
+<li class=""><strong>Rectangle:</strong> Length and width give area. Perimeter gives l + w but not area alone</li>
+<li class=""><strong>Square:</strong> Side gives everything</li>
+<li class=""><strong>Right triangle:</strong> Pythagoras: a² + b² = c²</li>
+</ul>
+<p><strong>Example:</strong> What is the area of triangle ABC?</p>
+<ul>
+<li class="">(1) Base BC = 10 cm, Height from A to BC = 6 cm ? Area = 30 cm² ? Sufficient</li>
+<li class="">(2) Sides: AB = 8 cm, BC = 10 cm, CA = 6 cm ? Using Heron&#x27;s: s = 12, Area = v(12×4×2×6) = v576 = 24 cm² ? Sufficient</li>
+<li class="">Answer: D</li>
+</ul>
+<p><strong>Example:</strong> Is triangle PQR right-angled?</p>
+<ul>
+<li class="">(1) PQ² + QR² = PR² ? Yes, by Pythagoras theorem ? Sufficient</li>
+<li class="">(2) Two angles are 35° and 55° ? Third = 90° ? Yes ? Sufficient</li>
+<li class="">Answer: D</li>
+</ul>
+<p><strong>Trap:</strong> Is a quadrilateral a square?</p>
+<ul>
+<li class="">(1) All sides are equal ? Could be a rhombus ? Not sufficient</li>
+<li class="">(2) All angles are 90° ? Could be a rectangle ? Not sufficient</li>
+<li class="">Combined: All sides equal AND all angles 90° ? Square ? Sufficient ? Answer: C</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38h-data-sufficiency-in-probability">3.8h Data Sufficiency in Probability<a href="#38h-data-sufficiency-in-probability" class="hash-link" aria-label="Direct link to 3.8h Data Sufficiency in Probability" title="Direct link to 3.8h Data Sufficiency in Probability" translate="no">​</a></h3>
+<p><strong>Key concepts:</strong></p>
+<ul>
+<li class="">Probability = Favorable / Total</li>
+<li class="">Can be expressed as fraction, decimal, or percentage</li>
+<li class="">Mutually exclusive events: P(A or B) = P(A) + P(B)</li>
+<li class="">Independent events: P(A and B) = P(A) × P(B)</li>
+</ul>
+<p><strong>Example:</strong> What is the probability of drawing a red ball from a box?</p>
+<ul>
+<li class="">(1) There are 5 red balls and 10 blue balls ? Total 15, P(Red) = 5/15 = 1/3 ? Sufficient</li>
+<li class="">(2) The probability of drawing a blue ball is 2/3 ? P(Red) = 1 - 2/3 = 1/3 ? Sufficient</li>
+<li class="">Answer: D</li>
+</ul>
+<p><strong>Example:</strong> What is the probability of getting at least one head when flipping a coin n times?</p>
+<ul>
+<li class="">(1) n = 3 ? P(at least one head) = 1 - P(all tails) = 1 - (1/2)³ = 7/8 ? Sufficient</li>
+<li class="">(2) The probability of all tails is 1/8 ? (1/2)n = 1/8 ? n = 3 ? Same as (1) ? Sufficient</li>
+<li class="">Answer: D</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="38i-practice-drills-for-data-sufficiency">3.8i Practice Drills for Data Sufficiency<a href="#38i-practice-drills-for-data-sufficiency" class="hash-link" aria-label="Direct link to 3.8i Practice Drills for Data Sufficiency" title="Direct link to 3.8i Practice Drills for Data Sufficiency" translate="no">​</a></h3>
+<p><strong>Drill 1: Quick Classification (30 seconds per question)</strong>
+Classify each as A, B, C, D, or E:</p>
+<ol>
+<li class="">What is x? (1) x + 5 = 10 (2) 2x = 10</li>
+<li class="">Is x &gt; 0? (1) x² = 4 (2) x³ = 8</li>
+<li class="">What is x + y? (1) x - y = 3 (2) xy = 10</li>
+<li class="">Is n even? (1) n² is even (2) n³ is odd</li>
+<li class="">What is the area? (1) radius = 5 (2) circumference = 10p</li>
+</ol>
+<p><strong>Answers:</strong> 1-D, 2-B, 3-C, 4-A (since n³ odd ? n odd ? not even ? definitive No), 5-D</p>
+<p><strong>Drill 2: Identify the Trap</strong>
+Each of these has a common DS trap. Can you spot it?</p>
+<ol>
+<li class="">
+<p>What is x? (1) x² = 36 (2) x &gt; 0</p>
+<ul>
+<li class=""><strong>Trap:</strong> (1) gives x = ±6, not sufficient. Combined: x = 6. Answer: C.</li>
+</ul>
+</li>
+<li class="">
+<p>Is x an integer? (1) 2x is an integer (2) x = 1/2</p>
+<ul>
+<li class=""><strong>Trap:</strong> (1) 2x integer ? x could be integer (2, 4) or fraction (0.5, 1.5). Not sufficient.</li>
+<li class="">(2) x = 0.5 ? Not integer ? Definitive No ? Sufficient. Answer: B.</li>
+</ul>
+</li>
+<li class="">
+<p>What is the value of a? (1) a + b = 10 (2) a - b = 4</p>
+<ul>
+<li class=""><strong>Trap:</strong> Two variables, two independent equations ? Solvable. Combined: a = 7. Answer: C.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Drill 3: Speed Practice</strong>
+For each, evaluate in 20 seconds:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Question</th><th>S1</th><th>S2</th><th>Answer</th></tr></thead><tbody><tr><td>What is x?</td><td>x = 5</td><td>x² = 25</td><td>A</td></tr><tr><td>Is x prime?</td><td>x is odd</td><td>x &gt; 2</td><td>E</td></tr><tr><td>A + B = ?</td><td>A = B + 5</td><td>2A + B = 25</td><td>C</td></tr><tr><td>Is triangle right?</td><td>a² + b² = c²</td><td>angle = 90°</td><td>D</td></tr><tr><td>Student count?</td><td>5 rows × 6 desks</td><td>each desk = 1 student</td><td>E</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39-time-management-for-data-sufficiency">3.9 Time Management for Data Sufficiency<a href="#39-time-management-for-data-sufficiency" class="hash-link" aria-label="Direct link to 3.9 Time Management for Data Sufficiency" title="Direct link to 3.9 Time Management for Data Sufficiency" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Step</th><th>Time</th></tr></thead><tbody><tr><td>Read question stem</td><td>15 seconds</td></tr><tr><td>Analyse what is needed</td><td>15 seconds</td></tr><tr><td>Evaluate Statement (1)</td><td>30 seconds</td></tr><tr><td>Evaluate Statement (2)</td><td>30 seconds</td></tr><tr><td>Combine if needed</td><td>30 seconds</td></tr><tr><td>Select answer</td><td>10 seconds</td></tr><tr><td><strong>Total per question</strong></td><td><strong>~2 minutes</strong></td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="examples-with-solved-exercises">Examples with Solved Exercises<a href="#examples-with-solved-exercises" class="hash-link" aria-label="Direct link to Examples with Solved Exercises" title="Direct link to Examples with Solved Exercises" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39a-advanced-practice-category-wise-ds-strategy">3.9a Advanced Practice: Category-Wise DS Strategy<a href="#39a-advanced-practice-category-wise-ds-strategy" class="hash-link" aria-label="Direct link to 3.9a Advanced Practice: Category-Wise DS Strategy" title="Direct link to 3.9a Advanced Practice: Category-Wise DS Strategy" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="category-1-number-properties-ds">Category 1: Number Properties DS<a href="#category-1-number-properties-ds" class="hash-link" aria-label="Direct link to Category 1: Number Properties DS" title="Direct link to Category 1: Number Properties DS" translate="no">​</a></h4>
+<p><strong>Key sufficiency rules:</strong></p>
+<ul>
+<li class="">&quot;Is x even?&quot; ? Check divisibility by 2. If x² is even ? x is even. If x³ is even ? x is even.</li>
+<li class="">&quot;Is x prime?&quot; ? A prime has exactly 2 factors. Odd &gt; 1 is NOT sufficient (9, 15, 21 are odd composites).</li>
+<li class="">&quot;Is x divisible by n?&quot; ? Check if x is divisible by all prime factors of n.</li>
+</ul>
+<p><strong>Common traps:</strong></p>
+<ul>
+<li class="">&quot;x is divisible by 6&quot; DOES NOT mean x is divisible by 12</li>
+<li class="">&quot;x² is divisible by 4&quot; DOES NOT mean x is divisible by 4 (x could be 2)</li>
+<li class="">A number divisible by 4 and 6 is divisible by LCM(4,6) = 12, not 24</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="category-2-algebraic-equations-ds">Category 2: Algebraic Equations DS<a href="#category-2-algebraic-equations-ds" class="hash-link" aria-label="Direct link to Category 2: Algebraic Equations DS" title="Direct link to Category 2: Algebraic Equations DS" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Scenario</th><th>Equations</th><th>Unknowns</th><th>Sufficiency</th></tr></thead><tbody><tr><td>Linear equation in 1 variable</td><td>1</td><td>1</td><td>Sufficient</td></tr><tr><td>Quadratic equation</td><td>1</td><td>1</td><td>Not sufficient (2 solutions)</td></tr><tr><td>Two linear equations in 2 variables</td><td>2</td><td>2</td><td>Sufficient (if independent)</td></tr><tr><td>Two proportional equations</td><td>2</td><td>2</td><td>Not sufficient (same equation)</td></tr><tr><td>One equation in 2 variables</td><td>1</td><td>2</td><td>Not sufficient</td></tr></tbody></table>
+<p><strong>The Proportionality Trap:</strong></p>
+<ul>
+<li class="">(1) 2x + 3y = 10</li>
+<li class="">(2) 4x + 6y = 20</li>
+<li class="">These are the SAME equation (multiply (1) by 2). Combined: still 1 equation, 2 unknowns ? NOT sufficient.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="category-3-geometry-ds">Category 3: Geometry DS<a href="#category-3-geometry-ds" class="hash-link" aria-label="Direct link to Category 3: Geometry DS" title="Direct link to Category 3: Geometry DS" translate="no">​</a></h4>
+<p><strong>Circle sufficiency:</strong></p>
+<ul>
+<li class="">Radius ? Area, Circumference (all sufficient)</li>
+<li class="">Circumference ? Radius ? Area (sufficient)</li>
+<li class="">Area ? Radius ? Circumference (sufficient)</li>
+<li class="">Any one of {radius, diameter, circumference, area} gives all others</li>
+</ul>
+<p><strong>Triangle sufficiency:</strong></p>
+<ul>
+<li class="">Base + Height ? Area (sufficient)</li>
+<li class="">Three sides ? Area via Heron&#x27;s formula (sufficient)</li>
+<li class="">Two sides + included angle ? Area (sufficient)</li>
+<li class="">Two angles ? Third angle, but not side lengths (NOT sufficient for area)</li>
+<li class="">Being right-angled ? Need at least two sides</li>
+</ul>
+<p><strong>Quadrilateral sufficiency:</strong></p>
+<ul>
+<li class="">Square: one side ? everything (sufficient)</li>
+<li class="">Rectangle: length and width needed for area</li>
+<li class="">Rhombus: diagonals or side + angle needed for area</li>
+<li class="">Parallelogram: base + height needed for area</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="category-4-arithmetic-word-problems-ds">Category 4: Arithmetic Word Problems DS<a href="#category-4-arithmetic-word-problems-ds" class="hash-link" aria-label="Direct link to Category 4: Arithmetic Word Problems DS" title="Direct link to Category 4: Arithmetic Word Problems DS" translate="no">​</a></h4>
+<p><strong>Work and Time:</strong></p>
+<ul>
+<li class="">To find time taken together ? need individual rates</li>
+<li class="">If A takes x days and B takes y days ? combined time = xy/(x+y)</li>
+<li class="">If only ratio of efficiencies given ? need absolute time for at least one</li>
+</ul>
+<p><strong>Speed and Distance:</strong></p>
+<ul>
+<li class="">Distance = Speed × Time ? need any two of three variables</li>
+<li class="">Relative speed: objects moving toward each other ? add speeds</li>
+<li class="">Objects moving in same direction ? subtract speeds</li>
+</ul>
+<p><strong>Profit and Loss:</strong></p>
+<ul>
+<li class="">Profit % needs CP and SP</li>
+<li class="">If only Profit % given, need either CP or SP for actual profit</li>
+<li class="">Discount % needs MP and SP, or discount amount and MP</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39b-the-c-trap-âhen-both-statements-are-needed-but-seemingly-not">3.9b The &quot;C-Trap&quot; â€”hen Both Statements Are Needed but Seemingly Not<a href="#39b-the-c-trap-âhen-both-statements-are-needed-but-seemingly-not" class="hash-link" aria-label="Direct link to 3.9b The &quot;C-Trap&quot; â€”hen Both Statements Are Needed but Seemingly Not" title="Direct link to 3.9b The &quot;C-Trap&quot; â€”hen Both Statements Are Needed but Seemingly Not" translate="no">​</a></h3>
+<p>Some questions appear solvable with one statement but actually need both:</p>
+<p><strong>Example:</strong> What is the value of x?</p>
+<p>(1) 2x + y = 10
+(2) x + 2y = 8</p>
+<p><strong>Analysis:</strong></p>
+<ul>
+<li class="">(1) alone: 2x + y = 10 ? infinite (x, y) pairs ? NOT sufficient</li>
+<li class="">(2) alone: x + 2y = 8 ? infinite (x, y) pairs ? NOT sufficient</li>
+<li class="">Combined: Solve: 2(8-2y) + y = 10 ? 16 - 4y + y = 10 ? 16 - 3y = 10 ? 3y = 6 ? y = 2, x = 4 ? Sufficient</li>
+<li class="">Answer: C</li>
+</ul>
+<p><strong>The key insight:</strong> Even though each equation has two variables, combined they form a solvable system of two independent equations.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39c-the-d-trap-âhen-both-statements-seem-insufficient">3.9c The &quot;D-Trap&quot; â€”hen Both Statements Seem Insufficient<a href="#39c-the-d-trap-âhen-both-statements-seem-insufficient" class="hash-link" aria-label="Direct link to 3.9c The &quot;D-Trap&quot; â€”hen Both Statements Seem Insufficient" title="Direct link to 3.9c The &quot;D-Trap&quot; â€”hen Both Statements Seem Insufficient" translate="no">​</a></h3>
+<p><strong>Example:</strong> Is x &gt; 0?</p>
+<p>(1) x³ &gt; 0
+(2) x² &gt; 0</p>
+<p><strong>Analysis:</strong></p>
+<ul>
+<li class="">(1): x³ &gt; 0 ? x &gt; 0 ? Yes, Sufficient</li>
+<li class="">(2): x² &gt; 0 ? x ? 0 ? could be positive or negative ? NOT Sufficient</li>
+<li class="">Answer: A</li>
+</ul>
+<p><strong>Why it&#x27;s a trap:</strong> Many test-takers think (2) also proves x &gt; 0, but x² &gt; 0 is true for both positive and negative numbers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39d-the-e-trap-âhen-the-answer-seems-obvious">3.9d The &quot;E-Trap&quot; â€”hen the Answer Seems Obvious<a href="#39d-the-e-trap-âhen-the-answer-seems-obvious" class="hash-link" aria-label="Direct link to 3.9d The &quot;E-Trap&quot; â€”hen the Answer Seems Obvious" title="Direct link to 3.9d The &quot;E-Trap&quot; â€”hen the Answer Seems Obvious" translate="no">​</a></h3>
+<p><strong>Example:</strong> Is x &gt; y?</p>
+<p>(1) x &gt; 2y
+(2) y &lt; x/2</p>
+<p><strong>Analysis:</strong></p>
+<ul>
+<li class="">(1): x &gt; 2y ? x &gt; y (since 2y &gt; y for positive y). But what if y is negative? If y = -5, 2y = -10, x &gt; -10 doesn&#x27;t guarantee x &gt; -5. Example: x = -7, y = -5 ? x &gt; 2y? -7 &gt; -10 ?. Is x &gt; y? -7 &gt; -5? No.</li>
+<li class="">So (1) is NOT sufficient alone.</li>
+<li class="">(2): y &lt; x/2 ? 2y &lt; x ? same as (1). NOT sufficient alone.</li>
+<li class="">Combined: Still the same issue. NOT sufficient.</li>
+<li class="">Answer: E</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39e-real-exam-level-ds-questions">3.9e Real Exam-Level DS Questions<a href="#39e-real-exam-level-ds-questions" class="hash-link" aria-label="Direct link to 3.9e Real Exam-Level DS Questions" title="Direct link to 3.9e Real Exam-Level DS Questions" translate="no">​</a></h3>
+<p><strong>Q21 (Advanced):</strong> What is the value of the integer p?</p>
+<p>(1) p is a prime number between 40 and 50.
+(2) p is one more than a multiple of 6.</p>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li class="">(1): Primes between 40-50: 41, 43, 47. Not unique.</li>
+<li class="">(2): p = 6k + 1. Many possibilities. Not unique.</li>
+<li class="">Combined: 41 = 6×6+5 (no), 43 = 6×7+1 (yes), 47 = 6×7+5 (no). Only 43 works. Unique. Answer: C.</li>
+</ul>
+<p><strong>Q22 (Advanced):</strong> Does x = y?</p>
+<p>(1) x² = y²
+(2) x³ = y³</p>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li class="">(1): x² = y² ? x = y or x = -y. Not definitive.</li>
+<li class="">(2): x³ = y³ ? x = y (unique real solution). Sufficient.</li>
+<li class="">Answer: B.</li>
+</ul>
+<p><strong>Q23 (Advanced):</strong> What is the tens digit of integer n?</p>
+<p>(1) The units digit of n is 6.
+(2) n² has units digit 6.</p>
+<p><strong>Reasoning:</strong></p>
+<ul>
+<li class="">(1): n could be 16, 26, 36, ... ? tens digit varies. Not sufficient.</li>
+<li class="">(2): Numbers ending in 4 or 6 have squares ending in 6. So n could end in 4 or 6. Not sufficient.</li>
+<li class="">Combined: Still multiple possibilities. Answer: E.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39f-data-sufficiency-in-modern-exam-patterns">3.9f Data Sufficiency in Modern Exam Patterns<a href="#39f-data-sufficiency-in-modern-exam-patterns" class="hash-link" aria-label="Direct link to 3.9f Data Sufficiency in Modern Exam Patterns" title="Direct link to 3.9f Data Sufficiency in Modern Exam Patterns" translate="no">​</a></h3>
+<p>Recent exams have introduced variations in DS questions:</p>
+<p><strong>Variation 1: Three Statements</strong>
+Some exams give three statements and ask which combination is sufficient. The approach remains the same â€”valuate each statement individually, then in pairs, then all three together.</p>
+<p><strong>Variation 2: Match the Sufficiency</strong>
+Questions that ask: &quot;Which of the following pairs of statements is sufficient to answer the question?&quot; â€”valuate each pair separately.</p>
+<p><strong>Variation 3: Data Comparison</strong>
+Instead of standard DS, some exams ask to compare two quantities:</p>
+<ul>
+<li class="">Quantity A: Given certain data</li>
+<li class="">Quantity B: Given other data</li>
+<li class="">Answer: A &gt; B, B &gt; A, A = B, or Cannot determine</li>
+</ul>
+<p>The logic is the same â€”valuate whether each quantity can be uniquely determined and compare.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39g-comparison-of-ds-with-other-di-types">3.9g Comparison of DS with Other DI Types<a href="#39g-comparison-of-ds-with-other-di-types" class="hash-link" aria-label="Direct link to 3.9g Comparison of DS with Other DI Types" title="Direct link to 3.9g Comparison of DS with Other DI Types" translate="no">​</a></h3>
+<p>Data Sufficiency is fundamentally different from other DI types:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Aspect</th><th>Data Sufficiency</th><th>Standard DI</th></tr></thead><tbody><tr><td>Goal</td><td>Determine if answer is possible</td><td>Compute the actual answer</td></tr><tr><td>Calculation</td><td>Minimal â€”ust enough to test sufficiency</td><td>Full calculation required</td></tr><tr><td>Time per question</td><td>~2 minutes</td><td>~3-4 minutes</td></tr><tr><td>Decision points</td><td>5 possible answers (A-E)</td><td>4 answer choices</td></tr><tr><td>Skill tested</td><td>Logical reasoning</td><td>Numerical computation</td></tr><tr><td>Partial credit</td><td>Not possible</td><td>Not possible</td></tr><tr><td>Common traps</td><td>Multiple solutions, redundancy</td><td>Unit errors, scale misreading</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39h-practice-drills-for-ds-mastery">3.9h Practice Drills for DS Mastery<a href="#39h-practice-drills-for-ds-mastery" class="hash-link" aria-label="Direct link to 3.9h Practice Drills for DS Mastery" title="Direct link to 3.9h Practice Drills for DS Mastery" translate="no">​</a></h3>
+<p><strong>Drill 1: Classification Speed Drill (5 minutes)</strong>
+Classify each question as A, B, C, D, or E as fast as possible:</p>
+<ol>
+<li class="">What is x? (1) x + 3 = 7 (2) 2x = 8</li>
+<li class="">Is x &gt; y? (1) x - y = 5 (2) x + y = 10</li>
+<li class="">What is average? (1) Sum = 100, n = 5 (2) Values: 18, 20, 22, 24, 16</li>
+<li class="">Is n even? (1) n² is even (2) n³ is even</li>
+<li class="">What is area? (1) radius = 7 (2) circumference = 44</li>
+</ol>
+<p><strong>Answers:</strong> 1-D, 2-A, 3-D, 4-D, 5-D</p>
+<p><strong>Drill 2: Trap Identification (3 minutes)</strong>
+For each, identify the trap before determining the answer:</p>
+<ol>
+<li class="">
+<p>What is x? (1) x² = 100 (2) x &gt; 0</p>
+<ul>
+<li class=""><strong>Trap:</strong> x² = 100 gives ±10. Need both statements.</li>
+<li class=""><strong>Answer:</strong> C</li>
+</ul>
+</li>
+<li class="">
+<p>Is triangle ABC right-angled? (1) AB² + BC² = AC² (2) AB = 3, BC = 4</p>
+<ul>
+<li class=""><strong>Trap:</strong> (1) directly tells it&#x27;s right-angled. (2) gives two sides only.</li>
+<li class=""><strong>Answer:</strong> A</li>
+</ul>
+</li>
+<li class="">
+<p>What is the profit? (1) CP = 500, SP = 600 (2) Profit = 100</p>
+<ul>
+<li class=""><strong>Trap:</strong> Both give the same information.</li>
+<li class=""><strong>Answer:</strong> D</li>
+</ul>
+</li>
+</ol>
+<p><strong>Drill 3: Minimal Computation (4 minutes)</strong>
+For each, determine sufficiency WITHOUT computing the full answer:</p>
+<ol>
+<li class="">
+<p>Is the sum of 5 numbers &gt; 100? (1) Average = 25 (2) Median = 20</p>
+<ul>
+<li class=""><strong>Analysis:</strong> (1) Sum = 125 &gt; 100. Sufficient. (2) Median alone is insufficient.</li>
+<li class=""><strong>Answer:</strong> A</li>
+</ul>
+</li>
+<li class="">
+<p>What is the ratio of boys to girls? (1) Boys = 60% of total (2) Girls = 40% of total</p>
+<ul>
+<li class=""><strong>Analysis:</strong> (1) B:G = 60:40 = 3:2. Sufficient. (2) Same information. Sufficient.</li>
+<li class=""><strong>Answer:</strong> D</li>
+</ul>
+</li>
+<li class="">
+<p>Is x/y &gt; 1? (1) x &gt; y (2) y &gt; 0</p>
+<ul>
+<li class=""><strong>Analysis:</strong> (1) If y &gt; 0, x &gt; y means x/y &gt; 1. If y &lt; 0, x/y &lt; 1. Not sufficient alone.</li>
+<li class="">(2) Only tells y &gt; 0, not relationship with x. Not sufficient.</li>
+<li class="">Combined: x &gt; y and y &gt; 0 ? x/y &gt; 1. Sufficient.</li>
+<li class=""><strong>Answer:</strong> C</li>
+</ul>
+</li>
+</ol>
+<p><strong>Drill 4: 30-Second Questions</strong>
+For each, decide in 30 seconds:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Q</th><th>S1</th><th>S2</th><th>Answer</th></tr></thead><tbody><tr><td>x = ?</td><td>x + 5 = 12</td><td>x - 5 = 2</td><td>D</td></tr><tr><td>y &gt; 0?</td><td>y² = 4</td><td>y³ = 8</td><td>B</td></tr><tr><td>Area of square?</td><td>side = 5</td><td>diagonal = 5v2</td><td>D</td></tr><tr><td>Is p prime?</td><td>p is odd</td><td>p &gt; 2</td><td>E</td></tr><tr><td>a + b = ?</td><td>a = b + 3</td><td>2a + b = 12</td><td>C</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="39i-mock-test-section-10-questions-in-20-minutes">3.9i Mock Test Section: 10 Questions in 20 Minutes<a href="#39i-mock-test-section-10-questions-in-20-minutes" class="hash-link" aria-label="Direct link to 3.9i Mock Test Section: 10 Questions in 20 Minutes" title="Direct link to 3.9i Mock Test Section: 10 Questions in 20 Minutes" translate="no">​</a></h3>
+<p><strong>Instructions:</strong> Answer each question within 2 minutes. Use the decision tree.</p>
+<p><strong>Questions:</strong></p>
+<ol>
+<li class="">
+<p>What is the value of x?
+(1) 4x - 8 = 16
+(2) 2x + 5 = 17</p>
+</li>
+<li class="">
+<p>Is integer n divisible by 8?
+(1) n is divisible by 4.
+(2) n is divisible by 2.</p>
+</li>
+<li class="">
+<p>What is the area of triangle PQR?
+(1) Base QR = 12 cm, height from P = 8 cm.
+(2) Sides: PQ = 10 cm, QR = 12 cm, RP = 14 cm.</p>
+</li>
+<li class="">
+<p>Is x &gt; y?
+(1) x - y &gt; 2
+(2) x + y &lt; 10</p>
+</li>
+<li class="">
+<p>What is the speed of the train?
+(1) The train covers 360 km in 4 hours.
+(2) The train covers 270 km in 3 hours.</p>
+</li>
+<li class="">
+<p>What is the cost price?
+(1) Selling price = ?750.
+(2) Profit = 25% of cost price.</p>
+</li>
+<li class="">
+<p>Is a² &gt; b²?
+(1) a &gt; b
+(2) a + b &gt; 0</p>
+</li>
+<li class="">
+<p>What is the value of p/q?
+(1) p = 3q - 4
+(2) p + q = 12</p>
+</li>
+<li class="">
+<p>How many students passed the exam?
+(1) 60% of students passed.
+(2) Total students = 500.</p>
+</li>
+<li class="">
+<p>Is the polygon regular?
+(1) All sides are equal.
+(2) All angles are equal.</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="typescript-data-sufficiency-decision-tree-simulator">TypeScript Data Sufficiency Decision Tree Simulator<a href="#typescript-data-sufficiency-decision-tree-simulator" class="hash-link" aria-label="Direct link to TypeScript Data Sufficiency Decision Tree Simulator" title="Direct link to TypeScript Data Sufficiency Decision Tree Simulator" translate="no">​</a></h3>
+<div class="language-typescript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-typescript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">type</span><span class="token plain"> </span><span class="token class-name">SufficiencyAnswer</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;A&#x27;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;B&#x27;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;C&#x27;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;D&#x27;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;E&#x27;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">interface</span><span class="token plain"> </span><span class="token class-name">DSQuestion</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  id</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  question</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  statement1</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  statement2</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateS1</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateS2</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateCombined</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">class</span><span class="token plain"> </span><span class="token class-name">DataSufficiencySolver</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">private</span><span class="token plain"> questions</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> DSQuestion</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">addQuestion</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">q</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> DSQuestion</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">questions</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">push</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">q</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">solve</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">q</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> DSQuestion</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> SufficiencyAnswer </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> s1Sufficient </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">evaluateS1</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> s2Sufficient </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">evaluateS2</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">s1Sufficient </span><span class="token operator" style="color:#393A34">&amp;&amp;</span><span class="token plain"> s2Sufficient</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;D&#x27;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">s1Sufficient </span><span class="token operator" style="color:#393A34">&amp;&amp;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">!</span><span class="token plain">s2Sufficient</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;A&#x27;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">!</span><span class="token plain">s1Sufficient </span><span class="token operator" style="color:#393A34">&amp;&amp;</span><span class="token plain"> s2Sufficient</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;B&#x27;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token operator" style="color:#393A34">!</span><span class="token plain">s1Sufficient </span><span class="token operator" style="color:#393A34">&amp;&amp;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">!</span><span class="token plain">s2Sufficient</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> combined </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">evaluateCombined</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> combined </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;C&#x27;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;E&#x27;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;E&#x27;</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">static</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">isUniqueValue</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token function-variable function" style="color:#d73a49">expression</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">x</span><span class="token operator" style="color:#393A34">?</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">|</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    constraint</span><span class="token operator" style="color:#393A34">?</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">x</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> results </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">expression</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">typeof</span><span class="token plain"> results </span><span class="token operator" style="color:#393A34">===</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;number&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> validResults </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> constraint</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> results</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">filter</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">constraint</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> results</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> validResults</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">length </span><span class="token operator" style="color:#393A34">===</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">static</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">isDefinitive</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    possibleValues</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token function-variable function" style="color:#d73a49">condition</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">x</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">possibleValues</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">length </span><span class="token operator" style="color:#393A34">===</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">false</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> firstResult </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">condition</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">possibleValues</span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> val </span><span class="token keyword" style="color:#00009f">of</span><span class="token plain"> possibleValues</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">slice</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token function" style="color:#d73a49">condition</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">val</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">!==</span><span class="token plain"> firstResult</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">false</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">static</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">areIndependent</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">statements</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">boolean</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> seen </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">Set</span><span class="token class-name operator" style="color:#393A34">&lt;</span><span class="token class-name builtin">string</span><span class="token class-name operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> stmt </span><span class="token keyword" style="color:#00009f">of</span><span class="token plain"> statements</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> normalized </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> stmt</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">replace</span><span class="token punctuation" style="color:#393A34">(</span><span class="token regex regex-delimiter" style="color:#36acaa">/</span><span class="token regex regex-source language-regex char-set class-name" style="color:#36acaa">\s</span><span class="token regex regex-source language-regex quantifier number" style="color:#36acaa">+</span><span class="token regex regex-delimiter" style="color:#36acaa">/</span><span class="token regex regex-flags" style="color:#36acaa">g</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">toLowerCase</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">seen</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">has</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">normalized</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">false</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      seen</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">add</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">normalized</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Example:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> solver </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">DataSufficiencySolver</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> q1</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> DSQuestion </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  id</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Q1&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  question</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;What is the value of x?&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  statement1</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;x² = 25&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  statement2</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;x &gt; 0&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateS1</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">false</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateS2</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">false</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateCombined</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;Q1 Answer:&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> solver</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">solve</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">q1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// C</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> q2</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> DSQuestion </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  id</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Q2&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  question</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;Is x greater than y?&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  statement1</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;x = 10&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  statement2</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;y = 5&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateS1</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">false</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateS2</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">false</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">evaluateCombined</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;Q2 Answer:&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> solver</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">solve</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">q2</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// C</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> results </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> DataSufficiencySolver</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">isUniqueValue</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">5</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">5</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  x </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> x </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin">console</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">log</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&quot;Unique with constraint:&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> results</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// true</span><br></div></code></pre></div></div>
+<p><strong>Q1.</strong> What is the value of x?\n\n(1) 3x + 5 = 20\n(2) x² = 25\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Statements (1) and (2) together are not sufficient\n\n</p><details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\na) Statement (1) alone is sufficient, but (2) alone is not\n\nFrom (1): 3x + 5 = 20 ? 3x = 15 ? x = 5. Unique value. Sufficient.\nFrom (2): x² = 25 ? x = 5 or x = -5. Two possible values. Not sufficient.\n</div></div></details>\n\n---\n\n<strong>Q2.</strong> Is x &gt; y?\n\n(1) x - y = 5\n(2) 2x &gt; 2y + 10\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nd) Each statement alone is sufficient\n\nFrom (1): x - y = 5 ? x = y + 5 ? x &gt; y for all values. Sufficient.\nFrom (2): 2x &gt; 2y + 10 ? x &gt; y + 5 ? x &gt; y for all values. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q3.</strong> What is the two-digit number?\n\n(1) The sum of its digits is 9.\n(2) The number is divisible by 5.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): Sum of digits = 9. Possible: 18, 27, 36, 45, 54, 63, 72, 81, 90. Not unique.\nFrom (2): Divisible by 5. Possible: 10, 15, 20, ..., 95. Not unique.\nCombined: Sum 9 AND divisible by 5: 45 and 90. Still two options. Not unique.\n</div></div></details>\n\n---\n\n<strong>Q4.</strong> Is x an even integer?\n\n(1) x is divisible by 2.\n(2) x is a multiple of 4.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nd) Each statement alone is sufficient\n\nFrom (1): Divisible by 2 ? x is even. Sufficient.\nFrom (2): Multiple of 4 ? x is always even (since 4k = 2 × 2k). Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q5.</strong> What is the value of xy?\n\n(1) x + y = 10\n(2) x - y = 4\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): x + y = 10. Multiple possibilities for xy. Not sufficient.\nFrom (2): x - y = 4. Multiple possibilities for xy. Not sufficient.\nCombined: Solving, x = 7, y = 3. xy = 21. Unique value. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q6.</strong> How many students are in the class?\n\n(1) There are 5 rows of desks, each row having 6 desks.\n(2) Each desk is occupied by at most 1 student, and there are 30 desks.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): There are 30 desks. But we do not know occupancy. Not sufficient.\nFrom (2): At most 30 students. Actual number unknown. Not sufficient.\nCombined: Still do not know actual occupancy. Not sufficient.\n</div></div></details>\n\n---\n\n<strong>Q7.</strong> What is the average of five numbers?\n\n(1) The sum of the five numbers is 250.\n(2) The median of the five numbers is 50.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\na) Statement (1) alone is sufficient, but (2) alone is not\n\nFrom (1): Average = Sum / Count = 250 / 5 = 50. Sufficient.\nFrom (2): Median = 50. Does not tell sum or average. Not sufficient.\n</div></div></details>\n\n---\n\n<strong>Q8.</strong> Is triangle ABC right-angled at B?\n\n(1) AB² + BC² = AC²\n(2) AB = 3, BC = 4, AC = 5\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nd) Each statement alone is sufficient\n\nFrom (1): By Pythagoras theorem, if AB² + BC² = AC², triangle is right-angled at B. Sufficient.\nFrom (2): 3² + 4² = 9 + 16 = 25 = 5² ? AB² + BC² = AC² ? Right-angled at B. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q9.</strong> What is the profit percentage on an item?\n\n(1) The cost price is ?400.\n(2) The selling price is ?520.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): Only CP known. Need SP for profit %. Not sufficient.\nFrom (2): Only SP known. Need CP for profit %. Not sufficient.\nCombined: Profit = (520-400)/400 × 100 = 30%. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q10.</strong> Is x &gt; 0?\n\n(1) x² = 9\n(2) x³ = 27\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nb) Statement (2) alone is sufficient, but (1) alone is not\n\nFrom (1): x² = 9 ? x = 3 or x = -3. If x = 3 ? Yes; if x = -3 ? No. Not definitive.\nFrom (2): x³ = 27 ? x = 3 only ? x &gt; 0 ? Yes. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q11.</strong> What is the value of a + b?\n\n(1) 2a + 2b = 20\n(2) 3a + 3b = 30\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nd) Each statement alone is sufficient\n\nFrom (1): 2a + 2b = 20 ? a + b = 10. Sufficient.\nFrom (2): 3a + 3b = 30 ? a + b = 10. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q12.</strong> What is the value of x?\n\n(1) 3x + 2y = 12\n(2) 6x + 4y = 24\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): 3x + 2y = 12 ? One equation, two unknowns. Not sufficient.\nFrom (2): 6x + 4y = 24 ? Dividing by 2: 3x + 2y = 12. Same as (1).\nCombined: Still only one independent equation, two unknowns. Not sufficient.\n</div></div></details>\n\n---\n\n<strong>Q13.</strong> Is the integer n divisible by 6?\n\n(1) n is divisible by 3.\n(2) n is divisible by 2.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): n divisible by 3. Could be 3, 6, 9, 12... Some divisible by 6, some not. Not sufficient.\nFrom (2): n divisible by 2. Could be 2, 6, 8, 10, 12... Some divisible by 6, some not. Not sufficient.\nCombined: n divisible by both 2 and 3 ? divisible by LCM(2,3) = 6. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q14.</strong> What is the area of a rectangle?\n\n(1) The perimeter is 40 cm.\n(2) The length is 5 cm more than the width.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): Perimeter = 2(l + w) = 40 ? l + w = 20. Area = lw. Not sufficient without individual values.\nFrom (2): l = w + 5. Infinitely many possibilities. Not sufficient.\nCombined: l + w = 20 and l = w + 5 ? w = 7.5, l = 12.5. Area = 93.75 cm². Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q15.</strong> Is a &gt; b?\n\n(1) a - b &gt; 0\n(2) a/b &gt; 1 (b &gt; 0)\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nd) Each statement alone is sufficient\n\nFrom (1): a - b &gt; 0 ? a &gt; b. Sufficient.\nFrom (2): a/b &gt; 1. Since b &gt; 0, multiplying: a &gt; b. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q16.</strong> Is x a prime number?\n\n(1) x is an odd integer greater than 1.\n(2) x has exactly 2 factors.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nb) Statement (2) alone is sufficient, but (1) alone is not\n\nFrom (1): Odd integers &gt; 1 could be prime (3, 5, 7) or composite (9, 15). Not sufficient.\nFrom (2): A number with exactly 2 factors IS prime by definition. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q17.</strong> How many children does Mr Sharma have?\n\n(1) Mr Sharma has 3 more daughters than sons.\n(2) Mr Sharma has 7 children in total.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): D = S + 3. Multiple possibilities. Not sufficient.\nFrom (2): Total = 7. Could be various splits. Not sufficient.\nCombined: D + S = 7 and D = S + 3 ? (S+3) + S = 7 ? 2S = 4 ? S = 2, D = 5. Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q18.</strong> What is the rate of interest per annum?\n\n(1) Simple interest on ?5,000 for 2 years is ?1,000.\n(2) The amount becomes ?6,000 after 2 years at simple interest on ?5,000.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nd) Each statement alone is sufficient\n\nFrom (1): SI = PRT/100 ? 1,000 = (5,000 × R × 2) / 100 ? R = 10%. Sufficient.\nFrom (2): Amount = P + SI ? 6,000 = 5,000 + SI ? SI = 1,000. Same as (1). Sufficient.\n</div></div></details>\n\n---\n\n<strong>Q19.</strong> What is the value of x + y + z?\n\n(1) x + y = 10\n(2) y + z = 15\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\ne) Neither statement alone, nor both together, is sufficient\n\nFrom (1): x + y = 10. z unknown. Not sufficient.\nFrom (2): y + z = 15. x unknown. Not sufficient.\nCombined: (x + y) + (y + z) = 10 + 15 = 25 = x + 2y + z. This gives x + z = 25 - 2y. Still depends on y. Not sufficient.\n</div></div></details>\n\n---\n\n<strong>Q20.</strong> Is x &gt; y?\n\n(1) x² &gt; y²\n(2) x and y are positive integers.\n\na) Statement (1) alone is sufficient, but (2) alone is not\nb) Statement (2) alone is sufficient, but (1) alone is not\nc) Both statements together are sufficient, but neither alone is\nd) Each statement alone is sufficient\ne) Neither statement alone, nor both together, is sufficient\n\n<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">\n<!-- -->\nc) Both statements together are sufficient, but neither alone is\n\nFrom (1): x² &gt; y² ? |x| &gt; |y|. If x = 3, y = 2 ? Yes; if x = -3, y = 2 ? No. Not definitive.\nFrom (2): Both positive. But without relationship, not sufficient.\nCombined: If both positive and x² &gt; y², then x &gt; y. Sufficient.\n</div></div></details>\n\n---\n\n<p></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="310-calculation-shortcuts-for-data-sufficiency">3.10 Calculation Shortcuts for Data Sufficiency<a href="#310-calculation-shortcuts-for-data-sufficiency" class="hash-link" aria-label="Direct link to 3.10 Calculation Shortcuts for Data Sufficiency" title="Direct link to 3.10 Calculation Shortcuts for Data Sufficiency" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-sufficiency-rules">Quick Sufficiency Rules<a href="#quick-sufficiency-rules" class="hash-link" aria-label="Direct link to Quick Sufficiency Rules" title="Direct link to Quick Sufficiency Rules" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Scenario</th><th>Rule</th><th>Example</th></tr></thead><tbody><tr><td>Linear equation, 1 variable</td><td>Always sufficient</td><td>x + 5 = 10 ? x = 5</td></tr><tr><td>Quadratic equation</td><td>Not sufficient (2 solutions)</td><td>x² = 25 ? x = ±5</td></tr><tr><td>Two variables, one equation</td><td>Not sufficient</td><td>x + y = 10 ? infinite pairs</td></tr><tr><td>Two variables, two equations</td><td>Sufficient (if independent)</td><td>x + y = 10, x - y = 4</td></tr><tr><td>Ratio alone</td><td>Not sufficient for actual values</td><td>A:B = 3:4 ? infinite possibilities</td></tr><tr><td>Ratio + actual value</td><td>Sufficient</td><td>A:B = 3:4, A = 30 ? B = 40</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-definitive-no-rule">The &quot;Definitive No&quot; Rule<a href="#the-definitive-no-rule" class="hash-link" aria-label="Direct link to The &quot;Definitive No&quot; Rule" title="Direct link to The &quot;Definitive No&quot; Rule" translate="no">​</a></h4>
+<p>A statement is sufficient if it gives a definite &quot;No&quot; answer. Many students mistakenly think &quot;No&quot; means insufficient.</p>
+<p><strong>Example:</strong> Is x &gt; 10?</p>
+<ul>
+<li class="">Statement: x = 5 ? Answer: No ? This IS sufficient (definitive No)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="testing-with-extreme-values">Testing with Extreme Values<a href="#testing-with-extreme-values" class="hash-link" aria-label="Direct link to Testing with Extreme Values" title="Direct link to Testing with Extreme Values" translate="no">​</a></h4>
+<p>For yes/no questions, test with extreme values:</p>
+<ul>
+<li class="">If the statement says &quot;x &gt; 5&quot;, test x = 6 and x = 1,000</li>
+<li class="">If both give the same answer (both Yes or both No), the statement is sufficient</li>
+<li class="">If they give different answers, the statement is NOT sufficient</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-proportionality-trap">The Proportionality Trap<a href="#the-proportionality-trap" class="hash-link" aria-label="Direct link to The Proportionality Trap" title="Direct link to The Proportionality Trap" translate="no">​</a></h4>
+<p>Watch for statements that are actually the same equation:</p>
+<ul>
+<li class="">(1) 2x + 3y = 10</li>
+<li class="">(2) 4x + 6y = 20
+These are the same equation (multiply (1) by 2). Combined: still 2 variables, 1 equation ? NOT sufficient.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-zero-negative-fraction-trap">The Zero, Negative, Fraction Trap<a href="#the-zero-negative-fraction-trap" class="hash-link" aria-label="Direct link to The Zero, Negative, Fraction Trap" title="Direct link to The Zero, Negative, Fraction Trap" translate="no">​</a></h4>
+<p>Always consider:</p>
+<ul>
+<li class="">Zero: Is x² &gt; x? If x = 0, no. If x = 2, yes.</li>
+<li class="">Negative numbers: Is x &gt; y? If x = -5, y = -10, yes. But what if y = -3?</li>
+<li class="">Fractions: Is x² &gt; x? If x = 0.5, no (0.25). If x = 2, yes.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="311-common-mistakes-in-data-sufficiency">3.11 Common Mistakes in Data Sufficiency<a href="#311-common-mistakes-in-data-sufficiency" class="hash-link" aria-label="Direct link to 3.11 Common Mistakes in Data Sufficiency" title="Direct link to 3.11 Common Mistakes in Data Sufficiency" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Mistake</th><th>Example</th><th>Why It&#x27;s Wrong</th><th>Correct</th></tr></thead><tbody><tr><td>Thinking &quot;No&quot; = insufficient</td><td>Is x &gt; 5? (1) x = 3 ? &quot;No&quot;</td><td>&quot;No&quot; is a definitive answer</td><td>Statement IS sufficient</td></tr><tr><td>Forgetting negative numbers</td><td>Is x &gt; y? (1) x² &gt; y²</td><td>x = -5, y = 3: 25 &gt; 9 but -5 &lt; 3</td><td>Test with negatives</td></tr><tr><td>Assuming statements are independent</td><td>(1) x + y = 10, (2) 2x + 2y = 20</td><td>Same equation repeated</td><td>Check if statements are equivalent</td></tr><tr><td>Not checking for uniqueness</td><td>What is x? (1) x² = 36</td><td>x = ±6, not unique</td><td>Need additional constraint</td></tr><tr><td>Missing the &quot;both needed&quot; case</td><td>(1) x + y = 10, (2) x - y = 4</td><td>Each alone insufficient</td><td>Combined: x = 7, y = 3</td></tr><tr><td>Confusing &quot;sufficient&quot; with &quot;correct&quot;</td><td>DS doesn&#x27;t ask if statement is true</td><td>A statement can be false but sufficient</td><td>&quot;Is x &gt; 5?&quot; &quot;x = 3&quot; gives No ? sufficient</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="312-gfg-style-comprehensive-ds-questions">3.12 GFG-Style Comprehensive DS Questions<a href="#312-gfg-style-comprehensive-ds-questions" class="hash-link" aria-label="Direct link to 3.12 GFG-Style Comprehensive DS Questions" title="Direct link to 3.12 GFG-Style Comprehensive DS Questions" translate="no">​</a></h3>
+<p><strong>Q21.</strong> What is the value of x?</p>
+<p>(1) 4x + 8 = 24
+(2) 2x = 8</p>
+<p>a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+d) Each alone is sufficient
+<p>(1): 4x + 8 = 24 ? 4x = 16 ? x = 4. Sufficient.
+(2): 2x = 8 ? x = 4. Sufficient.</p>
+</div></div></details>
+<p><strong>Q22.</strong> Is triangle ABC right-angled at B?</p>
+<p>(1) AB² + BC² = AC²
+(2) ?ABC = 90°</p>
+<p>a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+d) Each alone is sufficient
+<p>(1): AB² + BC² = AC² ? Pythagoras theorem applies ? right angle at B. Sufficient.
+(2): ?ABC = 90° ? directly stated. Sufficient.</p>
+</div></div></details>
+<p><strong>Q23.</strong> What is the area of a rectangle?</p>
+<p>(1) Length = 12 cm, Width = 8 cm
+(2) Perimeter = 40 cm, Length = 12 cm</p>
+<p>a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+d) Each alone is sufficient
+<p>(1): Area = 12 × 8 = 96 cm². Sufficient.
+(2): Perimeter = 2(l + w) = 40 ? l + w = 20. l = 12 ? w = 8. Area = 96 cm². Sufficient.</p>
+</div></div></details>
+<p><strong>Q24.</strong> Is integer n divisible by 12?</p>
+<p>(1) n is divisible by 3.
+(2) n is divisible by 4.</p>
+<p>a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+c) Both together are sufficient
+<p>(1): n divisible by 3 ? could be 3, 6, 9, 12, 15... Not all divisible by 12. Not sufficient.
+(2): n divisible by 4 ? could be 4, 8, 12, 16... Not all divisible by 12. Not sufficient.
+Combined: Divisible by 3 and 4 ? divisible by LCM(3,4) = 12. Sufficient.</p>
+</div></div></details>
+<p><strong>Q25.</strong> What is the value of p/q?</p>
+<p>(1) p = 3q - 4
+(2) p + q = 12</p>
+<p>a) Statement (1) alone is sufficient
+b) Statement (2) alone is sufficient
+c) Both together are sufficient
+d) Each alone is sufficient
+e) Neither is sufficient</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+c) Both together are sufficient
+<p>(1): p = 3q - 4 ? infinite (p, q) pairs. Not sufficient.
+(2): p + q = 12 ? infinite (p, q) pairs. Not sufficient.
+Combined: 3q - 4 + q = 12 ? 4q = 16 ? q = 4, p = 8. p/q = 2. Sufficient.</p>
+</div></div></details>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="313-advanced-ds-ârick-questions-solved">3.13 Advanced DS â€”rick Questions Solved<a href="#313-advanced-ds-ârick-questions-solved" class="hash-link" aria-label="Direct link to 3.13 Advanced DS â€”rick Questions Solved" title="Direct link to 3.13 Advanced DS â€”rick Questions Solved" translate="no">​</a></h3>
+<p><strong>Q26.</strong> Is x &gt; 0?</p>
+<p>(1) x³ &gt; 0
+(2) x² &gt; 0</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+a) Statement (1) alone is sufficient
+<p>(1): x³ &gt; 0 ? x &gt; 0. Sufficient.
+(2): x² &gt; 0 ? x ? 0. x could be positive or negative. Not sufficient.</p>
+</div></div></details>
+<p><strong>Q27.</strong> What is the value of x?</p>
+<p>(1) x is between 10 and 20
+(2) x is a prime number</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+c) Both together are sufficient
+<p>(1): x could be 11, 12, 13, 14, 15, 16, 17, 18, 19. Not unique.
+(2): x could be 2, 3, 5, 7, 11, 13, 17, 19... Not unique.
+Combined: Prime between 10 and 20: 11, 13, 17, 19. Still 4 options. Hmm, still not unique.
+Actually this is E â€”ven combined, there are 4 possible values. Neither sufficient.</p>
+<p>Correction: Answer is e) Neither statement alone, nor both together, is sufficient.</p>
+</div></div></details>
+<p><strong>Q28.</strong> Is the quadrilateral a square?</p>
+<p>(1) All sides are equal.
+(2) All angles are 90°.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+c) Both together are sufficient
+<p>(1): All sides equal ? could be a rhombus. Not sufficient.
+(2): All angles 90° ? could be a rectangle. Not sufficient.
+Combined: All sides equal AND all angles 90° ? square. Sufficient.</p>
+</div></div></details>
+<p><strong>Q29.</strong> Does x = y?</p>
+<p>(1) x² = y²
+(2) x³ = y³</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+b) Statement (2) alone is sufficient
+<p>(1): x² = y² ? x = y or x = -y. Not definitive.
+(2): x³ = y³ ? x = y (unique real solution). Sufficient.</p>
+</div></div></details>
+<p><strong>Q30.</strong> What is the two-digit number?</p>
+<p>(1) The sum of its digits is 12.
+(2) The number reversed is 18 less than the original.</p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+c) Both together are sufficient
+<p>(1): Sum = 12. Possible: 39, 48, 57, 66, 75, 84, 93. Not unique.
+(2): Let number = 10a + b. Reversed = 10b + a. Difference: (10a+b) - (10b+a) = 9(a-b) = 18 ? a - b = 2.
+Possible: 20, 31, 42, 53, 64, 75, 86, 97. Not unique.
+Combined: a + b = 12 and a - b = 2 ? a = 7, b = 5 ? number = 75. Unique. Sufficient.</p>
+</div></div></details>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="314-additional-ds-exercises-q31-q40">3.14 Additional DS Exercises (Q31-Q40)<a href="#314-additional-ds-exercises-q31-q40" class="hash-link" aria-label="Direct link to 3.14 Additional DS Exercises (Q31-Q40)" title="Direct link to 3.14 Additional DS Exercises (Q31-Q40)" translate="no">​</a></h3>
+<p><strong>31.</strong> Is x &gt; y?
+(1) x - y &gt; 5
+(2) 2x &gt; 2y</p>
+<p><strong>32.</strong> What is the profit percentage?
+(1) Cost price = ?500
+(2) Selling price = ?650</p>
+<p><strong>33.</strong> Is n an even integer?
+(1) n² is even
+(2) n³ is odd</p>
+<p><strong>34.</strong> What is the average of 5 numbers?
+(1) Sum of numbers = 250
+(2) The numbers are 45, 50, 55, 60, 40</p>
+<p><strong>35.</strong> Is triangle PQR isosceles?
+(1) PQ = PR
+(2) ?Q = ?R</p>
+<p><strong>36.</strong> What is the speed of the train?
+(1) Distance = 300 km, Time = 4 hours
+(2) Distance = 450 km, Time = 6 hours</p>
+<p><strong>37.</strong> Is p divisible by 15?
+(1) p is divisible by 3
+(2) p is divisible by 5</p>
+<p><strong>38.</strong> What is the value of a + b?
+(1) a - b = 8
+(2) 2a + b = 22</p>
+<p><strong>39.</strong> Is the polygon a regular hexagon?
+(1) All sides are equal
+(2) All interior angles are 120°</p>
+<p><strong>40.</strong> How many students passed?
+(1) 65% of students passed
+(2) Total students = 400</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="315-ds-exam-strategy">3.15 DS Exam Strategy<a href="#315-ds-exam-strategy" class="hash-link" aria-label="Direct link to 3.15 DS Exam Strategy" title="Direct link to 3.15 DS Exam Strategy" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Strategy</th><th>Description</th></tr></thead><tbody><tr><td><strong>Read question first</strong></td><td>Understand exactly what&#x27;s being asked before reading statements</td></tr><tr><td><strong>Identify variable count</strong></td><td>How many unknowns? One equation per variable needed</td></tr><tr><td><strong>Evaluate S1 alone</strong></td><td>Completely ignore S2; can question be answered?</td></tr><tr><td><strong>Evaluate S2 alone</strong></td><td>Completely ignore S1; can question be answered?</td></tr><tr><td><strong>Combine only if needed</strong></td><td>If neither is sufficient alone, check if together they work</td></tr><tr><td><strong>Watch for traps</strong></td><td>Quadratic = 2 solutions, same equation repeated, &quot;No&quot; = sufficient</td></tr><tr><td><strong>Time management</strong></td><td>~2 minutes per question; don&#x27;t over-analyze</td></tr></tbody></table>
+<p><strong>Key insight for IBPS/SBI/RBI exams:</strong> Data Sufficiency in these exams often tests:</p>
+<ul>
+<li class="">Whether you can identify when data is missing (Answer E)</li>
+<li class="">Whether you can spot when two equations are the same (Answer E)</li>
+<li class="">Whether you understand that &quot;sufficient&quot; ? &quot;true&quot; (a statement that gives &quot;No&quot; IS sufficient)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary-and-chart-analysis">Summary and Chart Analysis*<a href="#summary-and-chart-analysis" class="hash-link" aria-label="Direct link to Summary and Chart Analysis*" title="Direct link to Summary and Chart Analysis*" translate="no">​</a></h2></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ai-engineering-journey/data-analysis-interpretation/02-missing-data-caselet-di"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Chapter 2: Missing Data and Caselet DI</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ai-engineering-journey/data-analysis-interpretation/04-graph-chart-analysis"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Chapter 4: Graph and Chart Analysis</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#theory" class="table-of-contents__link toc-highlight">Theory</a><ul><li><a href="#31-what-is-data-sufficiency" class="table-of-contents__link toc-highlight">3.1 What is Data Sufficiency?</a></li><li><a href="#32-the-five-answer-choices-explained" class="table-of-contents__link toc-highlight">3.2 The Five Answer Choices Explained</a></li><li><a href="#33-the-decision-process-âtep-by-step" class="table-of-contents__link toc-highlight">3.3 The Decision Process â€”tep by Step</a></li><li><a href="#34-types-of-data-sufficiency-questions" class="table-of-contents__link toc-highlight">3.4 Types of Data Sufficiency Questions</a></li><li><a href="#35-common-trick-questions-and-how-to-avoid-them" class="table-of-contents__link toc-highlight">3.5 Common Trick Questions and How to Avoid Them</a></li><li><a href="#36-when-is-data-sufficient-âhe-criteria" class="table-of-contents__link toc-highlight">3.6 When Is Data Sufficient? â€”he Criteria</a></li><li><a href="#37-systematic-testing-approach" class="table-of-contents__link toc-highlight">3.7 Systematic Testing Approach</a></li><li><a href="#38-data-sufficiency-in-different-contexts" class="table-of-contents__link toc-highlight">3.8 Data Sufficiency in Different Contexts</a></li><li><a href="#38a-data-sufficiency-in-time-speed-distance-context" class="table-of-contents__link toc-highlight">3.8a Data Sufficiency in Time-Speed-Distance Context</a></li><li><a href="#38b-data-sufficiency-in-profit-loss-context" class="table-of-contents__link toc-highlight">3.8b Data Sufficiency in Profit-Loss Context</a></li><li><a href="#38c-data-sufficiency-in-number-systems" class="table-of-contents__link toc-highlight">3.8c Data Sufficiency in Number Systems</a></li><li><a href="#38d-advanced-strategies-for-yesno-questions" class="table-of-contents__link toc-highlight">3.8d Advanced Strategies for Yes/No Questions</a></li><li><a href="#38e-mock-ds-question-set-with-detailed-reasoning" class="table-of-contents__link toc-highlight">3.8e Mock DS Question Set with Detailed Reasoning</a></li><li><a href="#38f-one-statement-vs-two-statement-problems" class="table-of-contents__link toc-highlight">3.8f One-Statement vs Two-Statement Problems</a></li><li><a href="#38g-data-sufficiency-in-geometry" class="table-of-contents__link toc-highlight">3.8g Data Sufficiency in Geometry</a></li><li><a href="#38h-data-sufficiency-in-probability" class="table-of-contents__link toc-highlight">3.8h Data Sufficiency in Probability</a></li><li><a href="#38i-practice-drills-for-data-sufficiency" class="table-of-contents__link toc-highlight">3.8i Practice Drills for Data Sufficiency</a></li><li><a href="#39-time-management-for-data-sufficiency" class="table-of-contents__link toc-highlight">3.9 Time Management for Data Sufficiency</a></li></ul></li><li><a href="#examples-with-solved-exercises" class="table-of-contents__link toc-highlight">Examples with Solved Exercises</a><ul><li><a href="#39a-advanced-practice-category-wise-ds-strategy" class="table-of-contents__link toc-highlight">3.9a Advanced Practice: Category-Wise DS Strategy</a></li><li><a href="#39b-the-c-trap-âhen-both-statements-are-needed-but-seemingly-not" class="table-of-contents__link toc-highlight">3.9b The &quot;C-Trap&quot; â€”hen Both Statements Are Needed but Seemingly Not</a></li><li><a href="#39c-the-d-trap-âhen-both-statements-seem-insufficient" class="table-of-contents__link toc-highlight">3.9c The &quot;D-Trap&quot; â€”hen Both Statements Seem Insufficient</a></li><li><a href="#39d-the-e-trap-âhen-the-answer-seems-obvious" class="table-of-contents__link toc-highlight">3.9d The &quot;E-Trap&quot; â€”hen the Answer Seems Obvious</a></li><li><a href="#39e-real-exam-level-ds-questions" class="table-of-contents__link toc-highlight">3.9e Real Exam-Level DS Questions</a></li><li><a href="#39f-data-sufficiency-in-modern-exam-patterns" class="table-of-contents__link toc-highlight">3.9f Data Sufficiency in Modern Exam Patterns</a></li><li><a href="#39g-comparison-of-ds-with-other-di-types" class="table-of-contents__link toc-highlight">3.9g Comparison of DS with Other DI Types</a></li><li><a href="#39h-practice-drills-for-ds-mastery" class="table-of-contents__link toc-highlight">3.9h Practice Drills for DS Mastery</a></li><li><a href="#39i-mock-test-section-10-questions-in-20-minutes" class="table-of-contents__link toc-highlight">3.9i Mock Test Section: 10 Questions in 20 Minutes</a></li><li><a href="#typescript-data-sufficiency-decision-tree-simulator" class="table-of-contents__link toc-highlight">TypeScript Data Sufficiency Decision Tree Simulator</a></li><li><a href="#310-calculation-shortcuts-for-data-sufficiency" class="table-of-contents__link toc-highlight">3.10 Calculation Shortcuts for Data Sufficiency</a></li><li><a href="#311-common-mistakes-in-data-sufficiency" class="table-of-contents__link toc-highlight">3.11 Common Mistakes in Data Sufficiency</a></li><li><a href="#312-gfg-style-comprehensive-ds-questions" class="table-of-contents__link toc-highlight">3.12 GFG-Style Comprehensive DS Questions</a></li><li><a href="#313-advanced-ds-ârick-questions-solved" class="table-of-contents__link toc-highlight">3.13 Advanced DS â€”rick Questions Solved</a></li><li><a href="#314-additional-ds-exercises-q31-q40" class="table-of-contents__link toc-highlight">3.14 Additional DS Exercises (Q31-Q40)</a></li><li><a href="#315-ds-exam-strategy" class="table-of-contents__link toc-highlight">3.15 DS Exam Strategy</a></li></ul></li><li><a href="#summary-and-chart-analysis" class="table-of-contents__link toc-highlight">Summary and Chart Analysis*</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Courses</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/placement">Placement Course</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/python-programming">Python</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/machine-learning">Machine Learning</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/system-design">System Design</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Raushan666java/learning-playground" target="_blank" rel="noopener noreferrer" class="footer__link-item">Learning Playground<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2026 AI Engineering Journey. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

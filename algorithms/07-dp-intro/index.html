@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-courses/algorithms/dp-intro" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Chapter 7: Dynamic Programming — Foundations | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/algorithms/07-dp-intro"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 7: Dynamic Programming — Foundations | AI Engineering Journey"><meta data-rh="true" name="description" content="Prerequisites Greedy Algorithms — Understanding when local choices aren&#x27;t enough | Next Dynamic Programming — Knapsack Problems — Classic DP patterns for resource allocation"><meta data-rh="true" property="og:description" content="Prerequisites Greedy Algorithms — Understanding when local choices aren&#x27;t enough | Next Dynamic Programming — Knapsack Problems — Classic DP patterns for resource allocation"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/algorithms/07-dp-intro"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/algorithms/07-dp-intro" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/algorithms/07-dp-intro" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Algorithms","item":"https://raushan666java.github.io/ai-engineering-journey/algorithms/index"},{"@type":"ListItem","position":2,"name":"Chapter 7: Dynamic Programming — Foundations","item":"https://raushan666java.github.io/ai-engineering-journey/algorithms/07-dp-intro"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.27659dc5.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.e6b87124.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.d24ae1f4.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ai-engineering-journey/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ai-engineering-journey/"><div class="navbar__logo"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI Engineering</b></a><a class="navbar__item navbar__link" href="/ai-engineering-journey/placement">Placement Course</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ai-engineering-journey/government-exams/index">All Courses</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ai-engineering-journey/government-exams/index"><span class="linkLabel_WmDU">Government Exams — Complete Preparation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/applied-ai/index"><span class="categoryLinkLabel_W154">Applied Ai</span></a><button aria-label="Expand sidebar category &#x27;Applied Ai&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-technology/index"><span class="categoryLinkLabel_W154">Banking Technology</span></a><button aria-label="Expand sidebar category &#x27;Banking Technology&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/marketing-aptitude/index"><span class="categoryLinkLabel_W154">Marketing Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Marketing Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-financial-awareness/index"><span class="categoryLinkLabel_W154">Banking Financial Awareness</span></a><button aria-label="Expand sidebar category &#x27;Banking Financial Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/big-data/index"><span class="categoryLinkLabel_W154">Big Data</span></a><button aria-label="Expand sidebar category &#x27;Big Data&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-architecture/index"><span class="categoryLinkLabel_W154">Computer Architecture</span></a><button aria-label="Expand sidebar category &#x27;Computer Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-analysis-interpretation/index"><span class="categoryLinkLabel_W154">Data Analysis Interpretation</span></a><button aria-label="Expand sidebar category &#x27;Data Analysis Interpretation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/english-language/index"><span class="categoryLinkLabel_W154">English Language</span></a><button aria-label="Expand sidebar category &#x27;English Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/hindi-language/index"><span class="categoryLinkLabel_W154">Hindi Language</span></a><button aria-label="Expand sidebar category &#x27;Hindi Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/information-security/index"><span class="categoryLinkLabel_W154">Information Security</span></a><button aria-label="Expand sidebar category &#x27;Information Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/speed-drills/index"><span class="categoryLinkLabel_W154">Speed Drills</span></a><button aria-label="Expand sidebar category &#x27;Speed Drills&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-aptitude/index"><span class="categoryLinkLabel_W154">General Aptitude</span></a><button aria-label="Expand sidebar category &#x27;General Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/job-preparation/index"><span class="categoryLinkLabel_W154">Job Preparation</span></a><button aria-label="Expand sidebar category &#x27;Job Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/mock-tests/index"><span class="categoryLinkLabel_W154">Mock Tests</span></a><button aria-label="Expand sidebar category &#x27;Mock Tests&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/quantitative-aptitude/index"><span class="categoryLinkLabel_W154">Quantitative Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Quantitative Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/reasoning-ability/index"><span class="categoryLinkLabel_W154">Reasoning Ability</span></a><button aria-label="Expand sidebar category &#x27;Reasoning Ability&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/placement-preparation/index"><span class="categoryLinkLabel_W154">Placement Preparation</span></a><button aria-label="Expand sidebar category &#x27;Placement Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-awareness/index"><span class="categoryLinkLabel_W154">General Awareness</span></a><button aria-label="Expand sidebar category &#x27;General Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/coding-problems/index"><span class="categoryLinkLabel_W154">Coding Problems</span></a><button aria-label="Expand sidebar category &#x27;Coding Problems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/blockchain/index"><span class="categoryLinkLabel_W154">Blockchain</span></a><button aria-label="Expand sidebar category &#x27;Blockchain&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cloud-computing/index"><span class="categoryLinkLabel_W154">Cloud Computing</span></a><button aria-label="Expand sidebar category &#x27;Cloud Computing&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/engineering-mathematics/index"><span class="categoryLinkLabel_W154">Engineering Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Engineering Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/loop-engineering/index"><span class="categoryLinkLabel_W154">Loop Engineering</span></a><button aria-label="Expand sidebar category &#x27;Loop Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/machine-learning/index"><span class="categoryLinkLabel_W154">Machine Learning</span></a><button aria-label="Expand sidebar category &#x27;Machine Learning&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/professional-knowledge/index"><span class="categoryLinkLabel_W154">Professional Knowledge</span></a><button aria-label="Expand sidebar category &#x27;Professional Knowledge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/modern-ai-engineering/index"><span class="categoryLinkLabel_W154">Modern Ai Engineering</span></a><button aria-label="Expand sidebar category &#x27;Modern Ai Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/ai-engineering-journey/ai-agent-engineer/00-index"><span class="categoryLinkLabel_W154">Ai Agent Engineer</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/government-pyqs/index"><span class="categoryLinkLabel_W154">Government Pyqs</span></a><button aria-label="Expand sidebar category &#x27;Government Pyqs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/compiler-design/index"><span class="categoryLinkLabel_W154">Compiler Design</span></a><button aria-label="Expand sidebar category &#x27;Compiler Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/digital-logic/index"><span class="categoryLinkLabel_W154">Digital Logic</span></a><button aria-label="Expand sidebar category &#x27;Digital Logic&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/discrete-mathematics/index"><span class="categoryLinkLabel_W154">Discrete Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Discrete Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn-practical/index"><span class="categoryLinkLabel_W154">Learning How To Learn Practical</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn Practical&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/oop-cpp/index"><span class="categoryLinkLabel_W154">Oop Cpp</span></a><button aria-label="Expand sidebar category &#x27;Oop Cpp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/software-engineering/index"><span class="categoryLinkLabel_W154">Software Engineering</span></a><button aria-label="Expand sidebar category &#x27;Software Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/theory-of-computation/index"><span class="categoryLinkLabel_W154">Theory Of Computation</span></a><button aria-label="Expand sidebar category &#x27;Theory Of Computation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/interview-preparation/index"><span class="categoryLinkLabel_W154">Interview Preparation</span></a><button aria-label="Expand sidebar category &#x27;Interview Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn/index"><span class="categoryLinkLabel_W154">Learning How To Learn</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/ai-engineering-journey/algorithms/index"><span class="categoryLinkLabel_W154">Algorithms</span></a><button aria-label="Collapse sidebar category &#x27;Algorithms&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/01-analysis"><span class="linkLabel_WmDU">Chapter 1: Fundamentals of Algorithm Analysis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/02-searching"><span class="linkLabel_WmDU">Chapter 2: Searching</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/03-sorting-nlogn"><span class="linkLabel_WmDU">Chapter 3: Comparison-Based Sorting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/04-sorting-linear"><span class="linkLabel_WmDU">Chapter 4: Linear-Time Sorting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/05-divide-conquer"><span class="linkLabel_WmDU">Chapter 5: Divide and Conquer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/06-greedy"><span class="linkLabel_WmDU">Chapter 6: Greedy Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ai-engineering-journey/algorithms/07-dp-intro"><span class="linkLabel_WmDU">Chapter 7: Dynamic Programming — Foundations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/08-dp-knapsack"><span class="linkLabel_WmDU">Chapter 8: Dynamic Programming — Knapsack Problems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/09-dp-sequences"><span class="linkLabel_WmDU">Chapter 9: Dynamic Programming — Sequences</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/10-dp-trees-grids"><span class="linkLabel_WmDU">Chapter 10: Trees, Grids &amp; Dynamic Programming</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/11-graph-shortest"><span class="linkLabel_WmDU">Chapter 11: Graph Shortest Paths</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/12-graph-mst"><span class="linkLabel_WmDU">Chapter 12: Minimum Spanning Trees</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/13-graph-flow"><span class="linkLabel_WmDU">Chapter 13: Network Flow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/14-string-algorithms"><span class="linkLabel_WmDU">Chapter 14: String Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/15-np-completeness"><span class="linkLabel_WmDU">Chapter 15: NP-Completeness</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/16-approximation"><span class="linkLabel_WmDU">Chapter 16: Approximation Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/17-randomized"><span class="linkLabel_WmDU">Chapter 17: Randomized Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/18-advanced"><span class="linkLabel_WmDU">Chapter 18: Advanced Topics</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/c-programming/index"><span class="categoryLinkLabel_W154">C Programming</span></a><button aria-label="Expand sidebar category &#x27;C Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-networks/index"><span class="categoryLinkLabel_W154">Computer Networks</span></a><button aria-label="Expand sidebar category &#x27;Computer Networks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-structures/index"><span class="categoryLinkLabel_W154">Data Structures</span></a><button aria-label="Expand sidebar category &#x27;Data Structures&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/operating-systems/index"><span class="categoryLinkLabel_W154">Operating Systems</span></a><button aria-label="Expand sidebar category &#x27;Operating Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/web-development/index"><span class="categoryLinkLabel_W154">Web Development</span></a><button aria-label="Expand sidebar category &#x27;Web Development&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/database-management-systems/index"><span class="categoryLinkLabel_W154">Database Management Systems</span></a><button aria-label="Expand sidebar category &#x27;Database Management Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cyber-security/index"><span class="categoryLinkLabel_W154">Cyber Security</span></a><button aria-label="Expand sidebar category &#x27;Cyber Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/python-programming/index"><span class="categoryLinkLabel_W154">Python Programming</span></a><button aria-label="Expand sidebar category &#x27;Python Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/system-design/index"><span class="categoryLinkLabel_W154">System Design</span></a><button aria-label="Expand sidebar category &#x27;System Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/artificial-intelligence/index"><span class="categoryLinkLabel_W154">Artificial Intelligence</span></a><button aria-label="Expand sidebar category &#x27;Artificial Intelligence&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/vigyan-bhairav-tantra/index"><span class="categoryLinkLabel_W154">Vigyan Bhairav Tantra</span></a><button aria-label="Expand sidebar category &#x27;Vigyan Bhairav Tantra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/devops/index"><span class="categoryLinkLabel_W154">Devops</span></a><button aria-label="Expand sidebar category &#x27;Devops&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/gate-cs-preparation/index"><span class="categoryLinkLabel_W154">Gate Cs Preparation</span></a><button aria-label="Expand sidebar category &#x27;Gate Cs Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-course/README"><span class="categoryLinkLabel_W154">Learning Course</span></a><button aria-label="Expand sidebar category &#x27;Learning Course&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/laravel/index"><span class="categoryLinkLabel_W154">Laravel</span></a><button aria-label="Expand sidebar category &#x27;Laravel&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/java/index"><span class="categoryLinkLabel_W154">Java</span></a><button aria-label="Expand sidebar category &#x27;Java&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/ai-engineering-placement/index"><span class="categoryLinkLabel_W154">Ai Engineering Placement</span></a><button aria-label="Expand sidebar category &#x27;Ai Engineering Placement&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ai-engineering-journey/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ai-engineering-journey/algorithms/index"><span>Algorithms</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Chapter 7: Dynamic Programming — Foundations</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Chapter 7: Dynamic Programming — Foundations</h1></header>
+<blockquote>
+<p><strong>Prerequisites:</strong> <a class="" href="/ai-engineering-journey/algorithms/06-greedy">Chapter 6: Greedy Algorithms</a> — Understanding when local choices aren&#x27;t enough | <strong>Next:</strong> <a class="" href="/ai-engineering-journey/algorithms/08-dp-knapsack">Chapter 8: Dynamic Programming — Knapsack Problems</a> — Classic DP patterns for resource allocation</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a href="../../assets/images/lessons/algorithms/07-dp-intro/handwritten-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/algorithms/07-dp-intro/handwritten-notes.png" alt="Handwritten notes" class="img_ev3q">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a href="../../assets/images/lessons/algorithms/07-dp-intro/sticky-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/algorithms/07-dp-intro/sticky-notes.png" alt="Sticky-note revision" class="img_ev3q">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a href="../../assets/images/lessons/algorithms/07-dp-intro/visual-explanation.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/algorithms/07-dp-intro/visual-explanation.png" alt="Visual concept guide" class="img_ev3q">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
+<!-- -->
+<ol>
+<li class="">Identify problems with optimal substructure and overlapping subproblems.</li>
+<li class="">Distinguish between memoization (top-down) and tabulation (bottom-up) approaches.</li>
+<li class="">Solve Fibonacci numbers and the rod cutting problem using dynamic programming.</li>
+<li class="">Transform recursive solutions into DP solutions and analyze complexity.</li>
+<li class="">Apply the 5-step DP decision framework to new problems.</li>
+<li class="">Recognize common DP patterns in interview and real-world scenarios.</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-dynamic-programming-matters">Why Dynamic Programming Matters<a href="#why-dynamic-programming-matters" class="hash-link" aria-label="Direct link to Why Dynamic Programming Matters" title="Direct link to Why Dynamic Programming Matters" translate="no">​</a></h2>
+<p><strong>Real-world analogy — GPS shortest path:</strong> Imagine you need to drive from New York to Los Angeles. The naive approach enumerates every possible route — 2^(number of intersections) — which is computationally impossible. Instead, GPS systems use DP: the shortest path to Los Angeles through any city X is the shortest path to X plus the shortest path from X to LA. By caching the shortest path to every intermediate city, we avoid recomputing the same subpaths thousands of times. This is <em>exactly</em> how DP works — break a problem into overlapping pieces, solve each once, and reuse.</p>
+<p>Contrast this with <strong>Fibonacci</strong>: while it demonstrates DP&#x27;s mechanics beautifully, it is not a real-world problem. Nobody computes Fibonacci numbers for a living. But shortest paths, sequence alignment, resource allocation, and inventory optimization are DP — and they run billions of times daily in Google Maps, BLAST, AWS EC2 Auto Scaling, and SAP systems. DP turns exponential-time pipe dreams into polynomial-time production systems.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-at-a-glance">Chapter at a Glance<a href="#chapter-at-a-glance" class="hash-link" aria-label="Direct link to Chapter at a Glance" title="Direct link to Chapter at a Glance" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Topic</th><th>Key Insight</th><th>Practical Takeaway</th></tr></thead><tbody><tr><td>DP Paradigm</td><td>Optimal substructure + overlapping subproblems</td><td>Two properties distinguish DP from divide-and-conquer</td></tr><tr><td>Memoization</td><td>Top-down recursion with caching</td><td>Easy conversion from recursive; lazy evaluation</td></tr><tr><td>Tabulation</td><td>Bottom-up table filling</td><td>Better constant factors; avoids recursion overhead</td></tr><tr><td>Fibonacci Numbers</td><td>Naive O(phi^n) -&gt; DP O(n)</td><td>1D state with O(1) space optimization</td></tr><tr><td>Rod Cutting</td><td>First cut decides remaining optimal</td><td>The canonical &quot;DP is for optimization&quot; example</td></tr><tr><td>DP Decision Framework</td><td>5-step systematic approach</td><td>How to tackle any new DP problem in interviews</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-roadmap">Chapter Roadmap<a href="#chapter-roadmap" class="hash-link" aria-label="Direct link to Chapter Roadmap" title="Direct link to Chapter Roadmap" translate="no">​</a></h3>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">flowchart LR</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A[DP Properties] --&gt; B[Optimal Substructure]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A --&gt; C[Overlapping Subproblems]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; D[Memoization Top-Down]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; D</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; E[Tabulation Bottom-Up]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; E</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; F[Fibonacci]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; G[Rod Cutting]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; F</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; G</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; H[DP Decision Framework]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; H</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; I[Interview Corner]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; J[Real-World Applications]</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="theory">Theory<a href="#theory" class="hash-link" aria-label="Direct link to Theory" title="Direct link to Theory" translate="no">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch07-dp-intro.png" alt="DP Introduction Diagram" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="71-the-dynamic-programming-paradigm">7.1 The Dynamic Programming Paradigm<a href="#71-the-dynamic-programming-paradigm" class="hash-link" aria-label="Direct link to 7.1 The Dynamic Programming Paradigm" title="Direct link to 7.1 The Dynamic Programming Paradigm" translate="no">​</a></h3>
+<p>Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems, solving each subproblem once, and storing the results for reuse. It was pioneered by Richard Bellman in the 1950s — the name &quot;dynamic programming&quot; was chosen to hide the mathematical nature from his skeptical Pentagon boss.</p>
+<p>DP applies when a problem exhibits two properties:</p>
+<p><strong>1. Optimal Substructure</strong></p>
+<p>An optimal solution to the problem contains optimal solutions to its subproblems. In other words, you can build the global optimum from locally optimal decisions.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Scenario</th><th>Has Optimal Substructure?</th><th>Why</th></tr></thead><tbody><tr><td>Shortest path</td><td>Yes</td><td>Subpath of shortest path is shortest between its endpoints</td></tr><tr><td>Longest path (general graph)</td><td>No</td><td>Subpath of longest path may not be longest — cycles make it NP-hard</td></tr><tr><td>Merge sort</td><td>Yes</td><td>Sorting halves correctly gives sorted whole</td></tr><tr><td>Binary search</td><td>Yes</td><td>Searching in correct half guarantees result</td></tr><tr><td>Matrix chain multiplication</td><td>Yes</td><td>Optimal parenthesization contains optimal sub-chains</td></tr></tbody></table>
+<blockquote>
+<p><strong>Warning:</strong> Greedy algorithms also require optimal substructure but add the &quot;greedy-choice property&quot; — that a local choice is globally optimal. DP never assumes this; it explores all choices.</p>
+</blockquote>
+<p><strong>2. Overlapping Subproblems</strong></p>
+<p>The same subproblems recur multiple times, and the total number of distinct subproblems is polynomial. This is what makes DP worthwhile — without overlap, you just have divide-and-conquer (like merge sort, which splits into non-overlapping halves).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Problem</th><th>Subproblems Overlap?</th><th>Distinct Subproblems</th><th>Total Calls (Naive)</th></tr></thead><tbody><tr><td>Fibonacci</td><td>Yes</td><td>O(n)</td><td>O(phi^n)</td></tr><tr><td>Rod cutting</td><td>Yes</td><td>O(n)</td><td>O(2^n)</td></tr><tr><td>Merge sort</td><td>No</td><td>O(n)</td><td>O(n log n)</td></tr><tr><td>Binary search</td><td>No</td><td>O(log n)</td><td>O(log n)</td></tr></tbody></table>
+<p><strong>Core Insight:</strong> When subproblems overlap, storing results converts exponential to polynomial. When they don&#x27;t, DP buys you nothing.</p>
+<p><strong>Memoization vs. Tabulation: Step-by-Step Comparison</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Aspect</th><th>Memoization (Top-Down)</th><th>Tabulation (Bottom-Up)</th></tr></thead><tbody><tr><td>Direction</td><td>Start from goal, recurse down</td><td>Start from base, build up</td></tr><tr><td>State solves</td><td>Solves only needed states</td><td>Solves all states up to target</td></tr><tr><td>Implementation</td><td>Recursive + cache (hash map / array)</td><td>Iterative loops over table</td></tr><tr><td>Order</td><td>Automatic (recursion order)</td><td>Must determine topological order</td></tr><tr><td>Space</td><td>Cache + call stack</td><td>Table (often smaller)</td></tr><tr><td>When to use</td><td>Sparse state space, unknown dependencies</td><td>Dense state space, known order</td></tr><tr><td>Easy reconstruction</td><td>Requires separate traceback</td><td>Can store decisions in companion table</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="72-fibonacci-numbers">7.2 Fibonacci Numbers<a href="#72-fibonacci-numbers" class="hash-link" aria-label="Direct link to 7.2 Fibonacci Numbers" title="Direct link to 7.2 Fibonacci Numbers" translate="no">​</a></h3>
+<p><strong>Real-world analogy — rabbit population growth:</strong> The Fibonacci sequence originally modeled idealized rabbit reproduction: each pair matures in one month, then produces one pair per month forever. While biologically simplified, the same recurrence appears in stock option pricing (binomial trees), computer science (AVL tree height analysis, Fibonacci heap operations), and even nature (phyllotaxis, nautilus shells). The real lesson: recurrences that branch into overlapping subproblems are everywhere.</p>
+<p><strong>Problem:</strong> Compute F(n) where F(0) = 0, F(1) = 1, and F(n) = F(n-1) + F(n-2) for n &gt;= 2.</p>
+<p><strong>Algorithm Steps:</strong></p>
+<ol>
+<li class=""><strong>Check base cases:</strong> if n &lt;= 1, return n.</li>
+<li class=""><strong>Check cache (memoization):</strong> if result exists, return it.</li>
+<li class=""><strong>Recurrence:</strong> F(n) = F(n-1) + F(n-2).</li>
+<li class=""><strong>Store and return:</strong> save computed result before returning.</li>
+</ol>
+<p><strong>Step-by-Step Dry Run — Memoization Trace for F(5)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">Call Tree:</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                  F(5)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                /      \</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">           F(4)          F(3)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">          /    \         /    \</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      F(3)      F(2)   F(2)  F(1)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">     /    \    /   \   /   \</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  F(2)  F(1) F(1) F(0) F(1) F(0)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">  /   \</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">F(1) F(0)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">DP Table After Execution:</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Index:  0  1  2  3  4  5</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Value:  0  1  1  2  3  5</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Without memoization: F(2) computed 3 times, F(3) computed 2 times = 15 calls</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">With memoization:    each subproblem solved once = 9 calls</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Savings: 40% fewer calls even for n=5; exponential savings for larger n</span><br></div></code></pre></div></div>
+<p><strong>Tabulation Trace for F(5)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>i</th><th>dp[i-2]</th><th>dp[i-1]</th><th>dp[i] = dp[i-1] + dp[i-2]</th></tr></thead><tbody><tr><td>2</td><td>0</td><td>1</td><td>1</td></tr><tr><td>3</td><td>1</td><td>1</td><td>2</td></tr><tr><td>4</td><td>1</td><td>2</td><td>3</td></tr><tr><td>5</td><td>2</td><td>3</td><td>5</td></tr></tbody></table>
+<p>Result: F(5) = 5.</p>
+<p><strong>Implementations</strong></p>
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">// C++ — Memoization (Top-Down)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token macro property directive-hash" style="color:#36acaa">#</span><span class="token macro property directive keyword" style="color:#00009f">include</span><span class="token macro property" style="color:#36acaa"> </span><span class="token macro property string" style="color:#e3116c">&lt;vector&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fibMemo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">!=</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fibMemo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fibMemo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fib</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">memo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token operator" style="color:#393A34">+</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fibMemo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">// C++ — Tabulation (Bottom-Up) O(1) Space</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fib</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> prev2 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">++</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> curr </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> prev2</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev2 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> prev1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> curr</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> prev1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic"># Python — Memoization</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fib_memo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">list</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">None</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> memo </span><span class="token keyword" style="color:#00009f">is</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">None</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        memo </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> n </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> n</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">!=</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> fib_memo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> fib_memo</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> memo</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Python — Tabulation O(1) Space</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fib</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> n </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> n</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    prev2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> _ </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token builtin">range</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> prev1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> prev2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> prev1</span><br></div></code></pre></div></div>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">// Java — Memoization</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">class Solution {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int fibMemo(int n, int[] memo) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        if (n &lt;= 1) return n;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        if (memo[n] != -1) return memo[n];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        memo[n] = fibMemo(n-1, memo) + fibMemo(n-2, memo);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        return memo[n];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int fib(int n) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int[] memo = new int[n+1];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        Arrays.fill(memo, -1);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        return fibMemo(n, memo);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// Java — Tabulation O(1) Space</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">int fib(int n) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    if (n &lt;= 1) return n;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int prev2 = 0, prev1 = 1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    for (int i = 2; i &lt;= n; i++) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int curr = prev1 + prev2;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev2 = prev1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev1 = curr;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    return prev1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+<p><strong>Complexity Analysis</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Approach</th><th>Time</th><th>Space</th><th>Stack Depth</th></tr></thead><tbody><tr><td>Naive recursion</td><td>O(phi^n)</td><td>O(n) (stack)</td><td>O(n)</td></tr><tr><td>Memoization</td><td>O(n)</td><td>O(n)</td><td>O(n)</td></tr><tr><td>Tabulation (array)</td><td>O(n)</td><td>O(n)</td><td>O(1)</td></tr><tr><td>Tabulation (space-optimized)</td><td>O(n)</td><td>O(1)</td><td>O(1)</td></tr></tbody></table>
+<p><strong>Space Optimization Discussion:</strong> Fibonacci only ever needs the previous two values. This is the simplest example of state compression — noticing that dp[i] depends only on dp[i-1] and dp[i-2], so we can drop the full array. This pattern generalizes: whenever dp[i] depends on a fixed window of previous k states, we can reduce space from O(n) to O(k). More broadly, this is the first hint at <strong>rolling array</strong> optimization.</p>
+<blockquote>
+<p><strong>Pro Tip:</strong> Fibonacci is the simplest example of DP&#x27;s power — naive recursion is exponential (O(phi^n)), while DP is linear (O(n)). Always draw the recursion tree to check if subproblems overlap.</p>
+<p><strong>Warning:</strong> The naive recursive Fibonacci is a classic interview trap — never implement it without memoization.</p>
+</blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Fibonacci numbers demonstrate DP&#x27;s transformative power, dropping from exponential to linear time by caching overlapping subproblem results.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="73-rod-cutting">7.3 Rod Cutting<a href="#73-rod-cutting" class="hash-link" aria-label="Direct link to 7.3 Rod Cutting" title="Direct link to 7.3 Rod Cutting" translate="no">​</a></h3>
+<p><strong>Real-world analogy — lumber mill optimization:</strong> A lumber mill receives logs of fixed length 10 meters. Customers want rods of lengths 1–10 meters at known prices. Should they sell one 10m rod? Cut into 4m + 6m? 3m + 3m + 4m? Each cut reduces total usable wood (kerf loss), and different markets value different lengths differently. The mill must compute optimal cutting patterns to maximize revenue. This is rod cutting — every sawmill, paper mill, and metal fabrication plant solves this exact problem.</p>
+<p><strong>Problem:</strong> Given a rod of length <code>n</code> and a price function <code>p[i]</code> for rods of length <code>i</code>, determine the maximum revenue obtainable by cutting the rod and selling the pieces.</p>
+<p><strong>Optimal substructure:</strong> Let <code>r[n]</code> be the optimal revenue for length <code>n</code>. The first cut of length <code>i</code> yields revenue <code>p[i] + r[n - i]</code>. Therefore:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">r[n] = max( p[i] + r[n - i] )  for 1 &lt;= i &lt;= n</span><br></div></code></pre></div></div>
+<p>with base case <code>r[0] = 0</code>.</p>
+<p><strong>Algorithm Steps:</strong></p>
+<ol>
+<li class=""><strong>Initialize:</strong> Create array <code>r[0..n]</code> with <code>r[0] = 0</code>.</li>
+<li class=""><strong>For each length j from 1 to n:</strong>
+a. Set <code>q = -infinity</code>.
+b. <strong>For each cut i from 1 to j:</strong>
+<ul>
+<li class="">If <code>p[i] + r[j - i] &gt; q</code>, update <code>q</code>.
+c. Store <code>r[j] = q</code>.</li>
+</ul>
+</li>
+<li class=""><strong>Return</strong> <code>r[n]</code>.</li>
+<li class=""><strong>(Reconstruction):</strong> Track <code>s[j]</code> = optimal first cut for each length; backtrack.</li>
+</ol>
+<p><strong>Step-by-Step Dry Run — DP Table Trace</strong></p>
+<p>Price table: <code>p = [0, 1, 5, 8, 9, 10, 17, 17, 20]</code>, <code>n = 8</code></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">j=1:  cut 1: p[1] + r[0] = 1 + 0 = 1  =&gt;  r[1] = 1,   s[1] = 1</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">j=2:  cut 1: p[1] + r[1] = 1 + 1 = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 2: p[2] + r[0] = 5 + 0 = 5  =&gt;  r[2] = 5,   s[2] = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">j=3:  cut 1: p[1] + r[2] = 1 + 5 = 6</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 2: p[2] + r[1] = 5 + 1 = 6</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 3: p[3] + r[0] = 8 + 0 = 8  =&gt;  r[3] = 8,   s[3] = 3</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">j=4:  cut 1: p[1] + r[3] = 1 + 8 = 9</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 2: p[2] + r[2] = 5 + 5 = 10 =&gt; r[4] = 10,  s[4] = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 3: p[3] + r[1] = 8 + 1 = 9</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 4: p[4] + r[0] = 9 + 0 = 9</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">j=5:  cut 1: p[1] + r[4] = 1 + 10 = 11</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 2: p[2] + r[3] = 5 + 8 = 13 =&gt; r[5] = 13,  s[5] = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 3: p[3] + r[2] = 8 + 5 = 13 =&gt; (also 13)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 4: p[4] + r[1] = 9 + 1 = 10</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 5: p[5] + r[0] = 10 + 0 = 10</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">j=6:  cut 1: p[1] + r[5] = 1 + 13 = 14</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 2: p[2] + r[4] = 5 + 10 = 15</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 3: p[3] + r[3] = 8 + 8 = 16</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 4: p[4] + r[2] = 9 + 5 = 14</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 5: p[5] + r[1] = 10 + 1 = 11</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 6: p[6] + r[0] = 17 + 0 = 17 =&gt; r[6] = 17,  s[6] = 6</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">j=7:  cut 1: p[1] + r[6] = 1 + 17 = 18 =&gt; r[7] = 18,  s[7] = 1</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 2: p[2] + r[5] = 5 + 13 = 18 =&gt; (also 18, could be s[7]=2)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 3: p[3] + r[4] = 8 + 10 = 18</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 4: p[4] + r[3] = 9 + 8 = 17</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 5: p[5] + r[2] = 10 + 5 = 15</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 6: p[6] + r[1] = 17 + 1 = 18</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 7: p[7] + r[0] = 17 + 0 = 17</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">j=8:  cut 1: p[1] + r[7] = 1 + 18 = 19</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 2: p[2] + r[6] = 5 + 17 = 22 =&gt; r[8] = 22,  s[8] = 2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 3: p[3] + r[5] = 8 + 13 = 21</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 4: p[4] + r[4] = 9 + 10 = 19</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 5: p[5] + r[3] = 10 + 8 = 18</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 6: p[6] + r[2] = 17 + 5 = 22 =&gt; (also 22)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 7: p[7] + r[1] = 17 + 1 = 18</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">      cut 8: p[8] + r[0] = 20 + 0 = 20</span><br></div></code></pre></div></div>
+<p><strong>DP Table (r array):</strong></p>
+<p>| j | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|----|----|----|----|----|----|----|----|
+| r[j] | 0 | 1 | 5 | 8 | 10 | 13 | 17 | 18 | 22 |
+| s[j] | — | 1 | 2 | 3 | 2 | 2 | 6 | 1 | 2 |</p>
+<p><strong>Reconstruction:</strong> For n=8, s[8]=2. Cut a piece of length 2, remaining 6. s[6]=6. Cut 6, remaining 0. Cuts: [2, 6]. Revenue: p[2] + p[6] = 5 + 17 = 22.</p>
+<p><strong>Implementations</strong></p>
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">// C++ — Rod Cutting with Reconstruction</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token macro property directive-hash" style="color:#36acaa">#</span><span class="token macro property directive keyword" style="color:#00009f">include</span><span class="token macro property" style="color:#36acaa"> </span><span class="token macro property string" style="color:#e3116c">&lt;vector&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token macro property directive-hash" style="color:#36acaa">#</span><span class="token macro property directive keyword" style="color:#00009f">include</span><span class="token macro property" style="color:#36acaa"> </span><span class="token macro property string" style="color:#e3116c">&lt;algorithm&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">struct</span><span class="token plain"> </span><span class="token class-name">RodSolution</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> maxRevenue</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> cuts</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">RodSolution </span><span class="token function" style="color:#d73a49">rodCutting</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain"> price</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">r</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">s</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">++</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> q </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> j</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">++</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">price</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                q </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> price</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    RodSolution sol</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    sol</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">maxRevenue </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> len </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">len </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        sol</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">cuts</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">push_back</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">len</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        len </span><span class="token operator" style="color:#393A34">-=</span><span class="token plain"> s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">len</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> sol</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic"># Python — Rod Cutting with Reconstruction</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">rod_cutting</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">price</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">list</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token builtin">tuple</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    r </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    s </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">*</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> j </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token builtin">range</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        q </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> i </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token builtin">range</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> price</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                q </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> price</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> i</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> q</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic"># Reconstruction</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    cuts </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    length </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> n</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> length </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        cuts</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">append</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">length</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        length </span><span class="token operator" style="color:#393A34">-=</span><span class="token plain"> s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">length</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> cuts</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Example</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">price </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">5</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">8</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">9</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">10</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">17</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">17</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">20</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">max_rev</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> cuts </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> rod_cutting</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">price</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">8</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">print</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string-interpolation string" style="color:#e3116c">f&quot;Max revenue: </span><span class="token string-interpolation interpolation punctuation" style="color:#393A34">{</span><span class="token string-interpolation interpolation">max_rev</span><span class="token string-interpolation interpolation punctuation" style="color:#393A34">}</span><span class="token string-interpolation string" style="color:#e3116c">, Cuts: </span><span class="token string-interpolation interpolation punctuation" style="color:#393A34">{</span><span class="token string-interpolation interpolation">cuts</span><span class="token string-interpolation interpolation punctuation" style="color:#393A34">}</span><span class="token string-interpolation string" style="color:#e3116c">&quot;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic"># 22, [2, 6]</span><br></div></code></pre></div></div>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">// Java — Rod Cutting with Reconstruction</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">import java.util.*;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">class RodSolution {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int maxRevenue;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    List&lt;Integer&gt; cuts;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    RodSolution(int maxRevenue, List&lt;Integer&gt; cuts) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        this.maxRevenue = maxRevenue;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        this.cuts = cuts;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">class RodCutting {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    static RodSolution solve(int[] price, int n) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int[] r = new int[n + 1];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int[] s = new int[n + 1];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        for (int j = 1; j &lt;= n; j++) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            int q = Integer.MIN_VALUE;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            for (int i = 1; i &lt;= j; i++) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                if (price[i] + r[j - i] &gt; q) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                    q = price[i] + r[j - i];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                    s[j] = i;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            r[j] = q;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        List&lt;Integer&gt; cuts = new ArrayList&lt;&gt;();</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int len = n;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        while (len &gt; 0) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            cuts.add(s[len]);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            len -= s[len];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        return new RodSolution(r[n], cuts);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    public static void main(String[] args) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int[] price = {0, 1, 5, 8, 9, 10, 17, 17, 20};</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        RodSolution sol = solve(price, 8);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        System.out.println(&quot;Max: &quot; + sol.maxRevenue + &quot;, Cuts: &quot; + sol.cuts);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+<p><strong>Complexity Analysis</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Approach</th><th>Time</th><th>Space</th><th>Notes</th></tr></thead><tbody><tr><td>Naive recursion</td><td>O(2^n)</td><td>O(n) (stack)</td><td>Explores all 2^(n-1) cutting patterns</td></tr><tr><td>Memoization</td><td>O(n^2)</td><td>O(n)</td><td>Cache prevents recomputation</td></tr><tr><td>Tabulation (basic)</td><td>O(n^2)</td><td>O(n)</td><td>Double loop over lengths and cuts</td></tr><tr><td>Tabulation (optimized)</td><td>Theta(n^2)</td><td>O(n)</td><td>Cannot improve beyond quadratic input/output</td></tr></tbody></table>
+<p><strong>Space Optimization Discussion:</strong> Rod cutting&#x27;s DP depends on all smaller subproblems (r[j] uses r[j-i] for any i), so the full array is necessary — O(1) space is impossible. However, if we only need the maximum value (not the cuts), the reconstruction array <code>s[]</code> can be omitted, still O(n) for <code>r[]</code>.</p>
+<blockquote>
+<p><strong>Pro Tip:</strong> Rod cutting introduces the critical DP step of reconstruction — storing decisions alongside optimal values. Always implement reconstruction if the problem asks for the actual solution, not just the value.</p>
+<p><strong>Remember:</strong> The four-step DP framework (structure, recurse, compute, reconstruct) applies to every DP problem.</p>
+</blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Rod cutting uses the recurrence r[n] = max(p[i] + r[n-i]) to find optimal cutting patterns in O(n^2), demonstrating the four-step DP methodology with reconstruction.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="74-steps-for-dp-problem-solving">7.4 Steps for DP Problem Solving<a href="#74-steps-for-dp-problem-solving" class="hash-link" aria-label="Direct link to 7.4 Steps for DP Problem Solving" title="Direct link to 7.4 Steps for DP Problem Solving" translate="no">​</a></h3>
+<p>The classic <strong>4-step DP framework:</strong></p>
+<ol>
+<li class=""><strong>Characterize the structure</strong> of an optimal solution.</li>
+<li class=""><strong>Define the value</strong> of an optimal solution recursively (the recurrence).</li>
+<li class=""><strong>Compute the value</strong> bottom-up (or top-down with memoization).</li>
+<li class=""><strong>Construct the optimal solution</strong> from the computed information (reconstruction).</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dp-decision-framework">DP Decision Framework<a href="#dp-decision-framework" class="hash-link" aria-label="Direct link to DP Decision Framework" title="Direct link to DP Decision Framework" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-identify-dp-problems-the-5-step-approach">How to Identify DP Problems (The 5-Step Approach)<a href="#how-to-identify-dp-problems-the-5-step-approach" class="hash-link" aria-label="Direct link to How to Identify DP Problems (The 5-Step Approach)" title="Direct link to How to Identify DP Problems (The 5-Step Approach)" translate="no">​</a></h3>
+<p>When you encounter a new problem, run through these five steps to determine if DP applies:</p>
+<p><strong>Step 1: Is it an optimization problem?</strong>
+Does the problem ask for maximum, minimum, longest, shortest, or number of ways? If no, it might not be DP. (Exception: counting problems without optimization can still be DP.)</p>
+<p><strong>Step 2: Can you make a choice at each step?</strong>
+Is the solution built from a sequence of decisions? Each choice leads to a subproblem of the same type.</p>
+<p><strong>Step 3: Does the choice affect future choices?</strong>
+If choosing A vs B at step 1 changes what&#x27;s available at step 2, greedy might fail — and DP might be needed.</p>
+<p><strong>Step 4: Can you find overlapping subproblems?</strong>
+Draw the recursion tree for a small input. Do the same subproblems appear in multiple branches? If yes, memoization will help.</p>
+<p><strong>Step 5: Can you define a state?</strong>
+A state <code>dp[i]</code>, <code>dp[i][j]</code>, or <code>dp[i][j][k]</code> must capture everything needed to make future decisions. Ask: what variables change as we recurse?</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-7-dp-patterns-interview-cheatsheet">The 7 DP Patterns (Interview Cheatsheet)<a href="#the-7-dp-patterns-interview-cheatsheet" class="hash-link" aria-label="Direct link to The 7 DP Patterns (Interview Cheatsheet)" title="Direct link to The 7 DP Patterns (Interview Cheatsheet)" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Pattern</th><th>State</th><th>Classic Problems</th></tr></thead><tbody><tr><td>1D DP</td><td>dp[i] — best for first i items</td><td>Fibonacci, rod cutting, climbing stairs</td></tr><tr><td>2D DP (two sequences)</td><td>dp[i][j] — prefixes of two strings</td><td>LCS, edit distance</td></tr><tr><td>2D DP (knapsack)</td><td>dp[i][c] — first i items with capacity c</td><td>0/1 Knapsack, subset sum</td></tr><tr><td>Interval DP</td><td>dp[i][j] — substring i..j</td><td>Matrix chain multiplication, palindrome partitioning</td></tr><tr><td>Tree DP</td><td>dp[node] — subtree rooted at node</td><td>Diameter of tree, max independent set</td></tr><tr><td>Bitmask DP</td><td>dp[mask] — subset represented as bitmask</td><td>Traveling salesman, assignment</td></tr><tr><td>DP on Grid</td><td>dp[i][j] — cell (i, j) in grid</td><td>Minimum path sum, unique paths</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-decision-questions">Common Decision Questions<a href="#common-decision-questions" class="hash-link" aria-label="Direct link to Common Decision Questions" title="Direct link to Common Decision Questions" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Question</th><th>Answer</th></tr></thead><tbody><tr><td>Greedy, DP, or just recursion?</td><td>Greedy has greedy-choice property; DP has overlapping subproblems; recursion alone has neither</td></tr><tr><td>Medium constraint -&gt; DP?</td><td>If constraints are 10^2-10^3, DP array of size O(n) or O(n^2) is feasible</td></tr><tr><td>Top-down or bottom-up?</td><td>Top-down for complex dependencies or sparse solves; bottom-up for dense, known order</td></tr><tr><td>Can space be optimized?</td><td>Check dp[i]&#x27;s dependency window — only previous k states? O(1) possible</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="examples">Examples<a href="#examples" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-71-fibonacci-with-constant-space">Example 7.1: Fibonacci with Constant Space<a href="#example-71-fibonacci-with-constant-space" class="hash-link" aria-label="Direct link to Example 7.1: Fibonacci with Constant Space" title="Direct link to Example 7.1: Fibonacci with Constant Space" translate="no">​</a></h3>
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fib</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> prev2 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">++</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> curr </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> prev2</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev2 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> prev1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> curr</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> prev1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">fib</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token builtin">int</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> n </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> n</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    prev2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> _ </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token builtin">range</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev2</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> prev1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> prev1 </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> prev2</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> prev1</span><br></div></code></pre></div></div>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">int fib(int n) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    if (n &lt;= 1) return n;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int prev2 = 0, prev1 = 1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    for (int i = 2; i &lt;= n; i++) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int curr = prev1 + prev2;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev2 = prev1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        prev1 = curr;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    return prev1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-72-rod-cutting-with-reconstruction">Example 7.2: Rod Cutting with Reconstruction<a href="#example-72-rod-cutting-with-reconstruction" class="hash-link" aria-label="Direct link to Example 7.2: Rod Cutting with Reconstruction" title="Direct link to Example 7.2: Rod Cutting with Reconstruction" translate="no">​</a></h3>
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token macro property directive-hash" style="color:#36acaa">#</span><span class="token macro property directive keyword" style="color:#00009f">include</span><span class="token macro property" style="color:#36acaa"> </span><span class="token macro property string" style="color:#e3116c">&lt;vector&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token macro property directive-hash" style="color:#36acaa">#</span><span class="token macro property directive keyword" style="color:#00009f">include</span><span class="token macro property" style="color:#36acaa"> </span><span class="token macro property string" style="color:#e3116c">&lt;algorithm&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">struct</span><span class="token plain"> </span><span class="token class-name">RodSolution</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> maxRevenue</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> cuts</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">RodSolution </span><span class="token function" style="color:#d73a49">rodCutting</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain"> price</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">r</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">s</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">n </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// optimal first cut for each length</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">++</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> q </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> j</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">++</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">price</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                q </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> price</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">                s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> q</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    RodSolution sol</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    sol</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">maxRevenue </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">n</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> len </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> n</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">len </span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        sol</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">cuts</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">push_back</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">len</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        len </span><span class="token operator" style="color:#393A34">-=</span><span class="token plain"> s</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">len</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> sol</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+<p><strong>Walkthrough:</strong> price = [0, 1, 5, 8, 9, 10, 17, 17, 20], n = 8.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>j</th><th>Candidates</th><th>r[j]</th><th>s[j]</th></tr></thead><tbody><tr><td>1</td><td>p[1]+r[0]=1</td><td>1</td><td>1</td></tr><tr><td>2</td><td>p[1]+r[1]=2, p[2]+r[0]=5</td><td>5</td><td>2</td></tr><tr><td>3</td><td>p[1]+r[2]=6, p[2]+r[1]=6, p[3]+r[0]=8</td><td>8</td><td>3</td></tr><tr><td>4</td><td>p[1]+r[3]=9, p[2]+r[2]=10, p[3]+r[1]=9, p[4]+r[0]=9</td><td>10</td><td>2</td></tr><tr><td>5</td><td>p[1]+r[4]=11, p[2]+r[3]=13, p[3]+r[2]=13, p[4]+r[1]=10, p[5]+r[0]=10</td><td>13</td><td>2</td></tr><tr><td>6</td><td>p[1]+r[5]=14, p[2]+r[4]=15, p[3]+r[3]=16, p[4]+r[2]=14, p[5]+r[1]=11, p[6]+r[0]=17</td><td>17</td><td>6</td></tr><tr><td>7</td><td>p[1]+r[6]=18, p[2]+r[5]=18, p[3]+r[4]=18, p[4]+r[3]=17, p[5]+r[2]=15, p[6]+r[1]=18, p[7]+r[0]=17</td><td>18</td><td>1</td></tr><tr><td>8</td><td>p[1]+r[7]=19, p[2]+r[6]=22, p[3]+r[5]=21, p[4]+r[4]=19, p[5]+r[3]=18, p[6]+r[2]=22, p[7]+r[1]=18, p[8]+r[0]=20</td><td>22</td><td>2</td></tr></tbody></table>
+<p>Maximum revenue for length 8: 22, cuts = [2, 6] (p[2]=5, p[6]=17, sum=22).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-73-identifying-dp-problems">Example 7.3: Identifying DP Problems<a href="#example-73-identifying-dp-problems" class="hash-link" aria-label="Direct link to Example 7.3: Identifying DP Problems" title="Direct link to Example 7.3: Identifying DP Problems" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Problem</th><th>Optimal Substructure?</th><th>Overlapping Subproblems?</th><th>DP Applicable?</th></tr></thead><tbody><tr><td>Binary search</td><td>Yes</td><td>No</td><td>No (divide-and-conquer)</td></tr><tr><td>Fibonacci</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Merge sort</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>0/1 knapsack</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Activity selection</td><td>Yes</td><td>No</td><td>No (greedy works)</td></tr><tr><td>Shortest path (DAG)</td><td>Yes</td><td>Yes</td><td>Yes (Bellman-Ford)</td></tr><tr><td>Longest increasing subsequence</td><td>Yes</td><td>Yes</td><td>Yes</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-74-dp-vs-greedy--activity-selection">Example 7.4: DP vs Greedy — Activity Selection<a href="#example-74-dp-vs-greedy--activity-selection" class="hash-link" aria-label="Direct link to Example 7.4: DP vs Greedy — Activity Selection" title="Direct link to Example 7.4: DP vs Greedy — Activity Selection" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Aspect</th><th>Greedy</th><th>DP</th></tr></thead><tbody><tr><td>Approach</td><td>Pick earliest-finishing, recurse</td><td>Try every possible first activity</td></tr><tr><td>Time</td><td>O(n log n)</td><td>O(n^2)</td></tr><tr><td>Result</td><td>Optimal</td><td>Optimal</td></tr><tr><td>Need</td><td>Greedy-choice property</td><td>Optimal substructure only</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interview-corner">Interview Corner<a href="#interview-corner" class="hash-link" aria-label="Direct link to Interview Corner" title="Direct link to Interview Corner" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="classic-dp-patterns-for-interviews">Classic DP Patterns for Interviews<a href="#classic-dp-patterns-for-interviews" class="hash-link" aria-label="Direct link to Classic DP Patterns for Interviews" title="Direct link to Classic DP Patterns for Interviews" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Pattern</th><th>Signature</th><th>Example Problems</th></tr></thead><tbody><tr><td><strong>Linear DP</strong></td><td><code>dp[i] = f(dp[i-1], dp[i-2], ...)</code></td><td>Fibonacci, climbing stairs, house robber</td></tr><tr><td><strong>Two-String DP</strong></td><td><code>dp[i][j] = f(dp[i-1][j-1], dp[i-1][j], dp[i][j-1])</code></td><td>LCS, edit distance, wildcard matching</td></tr><tr><td><strong>Knapsack DP</strong></td><td><code>dp[c] = max(dp[c], v + dp[c-w])</code></td><td>0/1 Knapsack, subset sum, coin change</td></tr><tr><td><strong>Palindrome DP</strong></td><td><code>dp[i][j] = (s[i]==s[j] &amp;&amp; dp[i+1][j-1])</code></td><td>Longest palindromic substring, palindrome partitioning</td></tr><tr><td><strong>Grid DP</strong></td><td><code>dp[i][j] = f(dp[i-1][j], dp[i][j-1])</code></td><td>Unique paths, minimum path sum</td></tr><tr><td><strong>Stock DP</strong></td><td><code>dp[i][k][hold] = max(skip, buy/sell)</code></td><td>Best time to buy/sell stock (all variants)</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-mistakes">Common Mistakes<a href="#common-mistakes" class="hash-link" aria-label="Direct link to Common Mistakes" title="Direct link to Common Mistakes" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Mistake</th><th>Fix</th></tr></thead><tbody><tr><td>Forgetting base cases</td><td>Always check n=0, n=1, empty input</td></tr><tr><td>Wrong recurrence direction</td><td>Use small example to verify; trace by hand</td></tr><tr><td>Off-by-one in array indices</td><td>DP[0] is base, DP[i] uses DP[i-1] — test with i=1</td></tr><tr><td>Not handling negative values</td><td>Initialize with -inf, not 0</td></tr><tr><td>Over-indexing</td><td>Allocate n+1, not n</td></tr><tr><td>Ignoring reconstruction until end</td><td>Store decisions in companion array during compute phase</td></tr><tr><td>Using DP when greedy works</td><td>Check if greedy-choice property holds (local optimum is global)</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-interview-strategy">Quick Interview Strategy<a href="#quick-interview-strategy" class="hash-link" aria-label="Direct link to Quick Interview Strategy" title="Direct link to Quick Interview Strategy" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">1. Ask:  &quot;What&#x27;s the smallest input?&quot;  -&gt;  Base case.</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">2. Ask:  &quot;What choices do I have?&quot;     -&gt;  Recurrence.</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">3. Draw:  Recursion tree.               -&gt;  Check overlap.</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">4. State: &quot;dp[i] = best for first i items&quot;  -&gt;  Define state.</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">5. Write: Recursive + memo first.       -&gt;  Then convert to iterative.</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">6. Check: Off-by-one, initialization, return value.</span><br></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="time-complexity-estimation">Time Complexity Estimation<a href="#time-complexity-estimation" class="hash-link" aria-label="Direct link to Time Complexity Estimation" title="Direct link to Time Complexity Estimation" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>State Dimensions</th><th>Transition Cost</th><th>Typical Time</th></tr></thead><tbody><tr><td>O(n) 1-state</td><td>O(1)</td><td>O(n)</td></tr><tr><td>O(n) 1-state</td><td>O(n)</td><td>O(n^2)</td></tr><tr><td>O(n*m) 2-state</td><td>O(1)</td><td>O(n*m)</td></tr><tr><td>O(n*m) 2-state</td><td>O(k)</td><td>O(n<em>m</em>k)</td></tr><tr><td>O(n^2) interval</td><td>O(n)</td><td>O(n^3)</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="applications-in-real-systems">Applications in Real Systems<a href="#applications-in-real-systems" class="hash-link" aria-label="Direct link to Applications in Real Systems" title="Direct link to Applications in Real Systems" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bioinformatics--sequence-alignment">Bioinformatics — Sequence Alignment<a href="#bioinformatics--sequence-alignment" class="hash-link" aria-label="Direct link to Bioinformatics — Sequence Alignment" title="Direct link to Bioinformatics — Sequence Alignment" translate="no">​</a></h3>
+<p>The Smith-Waterman algorithm (local sequence alignment) is DP applied to DNA/protein sequences. Given two genetic sequences, it finds regions of similarity by filling a DP table where each cell represents the alignment score up to that position. BLAST, the most-cited bioinformatics tool ever, uses DP as its core engine. Every genome sequencing pipeline depends on DP for aligning reads to reference genomes — enabling personalized medicine, evolutionary biology, and COVID-19 variant tracking.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="routing-and-navigation">Routing and Navigation<a href="#routing-and-navigation" class="hash-link" aria-label="Direct link to Routing and Navigation" title="Direct link to Routing and Navigation" translate="no">​</a></h3>
+<p>GPS systems use Dijkstra&#x27;s algorithm (which is DP — it relies on optimal substructure) and A* (which adds heuristics) to compute shortest paths. Google Maps processes over 40 billion kilometers of route computation daily. Without DP, routing at this scale would require supercomputers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="natural-language-processing">Natural Language Processing<a href="#natural-language-processing" class="hash-link" aria-label="Direct link to Natural Language Processing" title="Direct link to Natural Language Processing" translate="no">​</a></h3>
+<p><strong>Viterbi algorithm</strong> (DP) powers part-of-speech tagging: given a sequence of words, find the most likely sequence of tags (noun, verb, etc.). The recurrence <code>dp[i][tag] = max( dp[i-1][prev] + emission + transition )</code> is textbook DP. Similarly, the <strong>CKY algorithm</strong> (DP) underlies constituency parsing — how computers understand sentence structure.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="operations-research">Operations Research<a href="#operations-research" class="hash-link" aria-label="Direct link to Operations Research" title="Direct link to Operations Research" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Application</th><th>DP Pattern</th><th>Industry</th></tr></thead><tbody><tr><td>Inventory management</td><td>Rod cutting variant</td><td>Manufacturing, retail</td></tr><tr><td>Resource allocation</td><td>0/1 Knapsack</td><td>Cloud computing, finance</td></tr><tr><td>Portfolio optimization</td><td>Knapsack + risk constraints</td><td>Investment banking</td></tr><tr><td>Supply chain routing</td><td>Shortest path on DAG</td><td>Logistics (Amazon, FedEx)</td></tr><tr><td>Sequence alignment</td><td>2D DP (LCS)</td><td>Bioinformatics, NLP</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="system-design-context">System Design Context<a href="#system-design-context" class="hash-link" aria-label="Direct link to System Design Context" title="Direct link to System Design Context" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>System</th><th>DP Component</th><th>Why It&#x27;s DP</th></tr></thead><tbody><tr><td>CDN caching</td><td>Optimal cache replacement (Belady&#x27;s)</td><td>Future-knowing optimal — theoretical upper bound</td></tr><tr><td>Load balancer</td><td>Least-connections routing</td><td>Overlapping server state subproblems</td></tr><tr><td>Rate limiter</td><td>Token bucket / sliding window</td><td>Stateful counting with overlapping time windows</td></tr><tr><td>Database query optimizer</td><td>Join order selection</td><td>Matrix-chain multiplication pattern (interval DP)</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="concept-comparison-table">Concept Comparison Table<a href="#concept-comparison-table" class="hash-link" aria-label="Direct link to Concept Comparison Table" title="Direct link to Concept Comparison Table" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Concept</th><th>Definition</th><th>Key Distinction</th><th>Use Case</th></tr></thead><tbody><tr><td>Optimal Substructure</td><td>Optimal solution from optimal sub-solutions</td><td>Shared with greedy — not unique to DP</td><td>All DP problems</td></tr><tr><td>Overlapping Subproblems</td><td>Same subproblems recur</td><td>Distinguishes DP from divide-and-conquer</td><td>What makes DP necessary</td></tr><tr><td>Memoization</td><td>Top-down recursion + caching</td><td>Lazy — only solves needed subproblems</td><td>When subproblem space is sparse</td></tr><tr><td>Tabulation</td><td>Bottom-up iterative table</td><td>Eager — solves all subproblems</td><td>When all subproblems are needed</td></tr><tr><td>Reconstruction</td><td>Store decisions to recover solution</td><td>Separates value computation from solution building</td><td>Problems asking for actual solution</td></tr><tr><td>State Compression</td><td>Reduce table to minimal window</td><td>Decreases space from O(n) to O(1) or O(k)</td><td>Fibonacci, house robber, grid DP row-by-row</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-reference">Quick Reference<a href="#quick-reference" class="hash-link" aria-label="Direct link to Quick Reference" title="Direct link to Quick Reference" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Category</th><th>Key Points</th></tr></thead><tbody><tr><td><strong>Two Required Properties</strong></td><td>Optimal substructure + overlapping subproblems</td></tr><tr><td><strong>Two Implementation Styles</strong></td><td>Top-down (memoization) vs bottom-up (tabulation)</td></tr><tr><td><strong>4-Step Framework</strong></td><td>Structure -&gt; Recurrence -&gt; Compute -&gt; Reconstruct</td></tr><tr><td><strong>5-Step Decision Framework</strong></td><td>Optimization? Choices? Future affected? Overlap? State definable?</td></tr><tr><td><strong>Complexity Pattern</strong></td><td>States x Transitions = O(number of subproblems x choices per problem)</td></tr><tr><td><strong>Common Pitfall</strong></td><td>Using DP when subproblems don&#x27;t overlap (just use recursion); forgetting base cases; off-by-one in indices</td></tr><tr><td><strong>Space Optimization</strong></td><td>Check dependency window — rolling array for last k states</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross-application-matrix">Cross-Application Matrix<a href="#cross-application-matrix" class="hash-link" aria-label="Direct link to Cross-Application Matrix" title="Direct link to Cross-Application Matrix" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Technique</th><th>DSA Interviews</th><th>Competitive Programming</th><th>System Design</th><th>Academia/Research</th></tr></thead><tbody><tr><td>DP Paradigm</td><td>Extremely common — most important technique</td><td>Core technique for optimization</td><td>Resource allocation, routing</td><td>Algorithm design theory</td></tr><tr><td>Memoization</td><td>Quick DP in interviews</td><td>Lazy DP for sparse states</td><td>Caching, query optimization</td><td>Computational complexity</td></tr><tr><td>Tabulation</td><td>Preferred for efficiency</td><td>Standard CP DP approach</td><td>Table-driven automation</td><td>Formal verification</td></tr><tr><td>Fibonacci DP</td><td>Trivial — warm-up</td><td>Matrix exponentiation variation</td><td>N/A</td><td>Recursion theory</td></tr><tr><td>Rod Cutting</td><td>Classic DP intro problem</td><td>Variations in cutting problems</td><td>Inventory optimization</td><td>Operations research</td></tr><tr><td>DP Decision Framework</td><td>Systematic approach to unknown problems</td><td>Pattern recognition training</td><td>Architecture decisions</td><td>Curriculum design</td></tr><tr><td>Sequence Alignment DP</td><td>LCS, edit distance</td><td>String DP variations</td><td>Diff tools, plagiarism detection</td><td>Bioinformatics</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h2>
+<ul>
+<li class="">DP solves problems by combining solutions to overlapping subproblems, turning exponential into polynomial time.</li>
+<li class=""><strong>Memoization</strong> is recursive with caching; <strong>tabulation</strong> is iterative with table-filling.</li>
+<li class="">The two required properties are <strong>optimal substructure</strong> and <strong>overlapping subproblems</strong>.</li>
+<li class="">The <strong>5-step decision framework</strong> helps identify if DP applies: optimization? choices? future affected? overlap? definable state?</li>
+<li class="">Rod cutting illustrates the four-step DP methodology with reconstruction.</li>
+<li class="">Fibonacci demonstrates exponential improvement from O(phi^n) to O(n) with O(1) space.</li>
+<li class="">Real-world applications span bioinformatics (BLAST), GPS routing (Dijkstra&#x27;s, A*), NLP (Viterbi), and operations research.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-quiz">Chapter Quiz<a href="#chapter-quiz" class="hash-link" aria-label="Direct link to Chapter Quiz" title="Direct link to Chapter Quiz" translate="no">​</a></h3>
+<p><strong>Q1.</strong> What two properties must a problem have for DP to apply?</p>
+<ul>
+<li class="">A) Divide-and-conquer and recursion</li>
+<li class="">B) Optimal substructure and overlapping subproblems</li>
+<li class="">C) Greedy-choice property and optimal substructure</li>
+<li class="">D) Polynomial time and linear space</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+B) Optimal substructure (optimal solution from optimal sub-solutions) and overlapping subproblems (same subproblems recur).
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<p><strong>Q2.</strong> What is the time complexity of naive recursive Fibonacci?</p>
+<ul>
+<li class="">A) O(n)</li>
+<li class="">B) O(n^2)</li>
+<li class="">C) O(phi^n) — exponential</li>
+<li class="">D) O(log n)</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+C) O(phi^n) where phi approx 1.618 — each call spawns two recursive calls, leading to exponential growth.
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<p><strong>Q3.</strong> Which DP approach solves only the subproblems that are actually needed?</p>
+<ul>
+<li class="">A) Tabulation</li>
+<li class="">B) Memoization</li>
+<li class="">C) Both</li>
+<li class="">D) Neither</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+B) Memoization (top-down) only computes subproblems that are reached through recursion. Tabulation (bottom-up) computes all subproblems in order.
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<p><strong>Q4.</strong> Why does merge sort NOT benefit from DP?</p>
+<ul>
+<li class="">A) It has no optimal substructure</li>
+<li class="">B) Its subproblems don&#x27;t overlap</li>
+<li class="">C) It&#x27;s already O(n log n)</li>
+<li class="">D) It uses recursion</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+B) Merge sort&#x27;s subproblems are disjoint (left half, right half) — they never overlap, so caching provides no benefit.
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<p><strong>Q5.</strong> What is the space-optimized Fibonacci implementation&#x27;s space complexity?</p>
+<ul>
+<li class="">A) O(n)</li>
+<li class="">B) O(1)</li>
+<li class="">C) O(n^2)</li>
+<li class="">D) O(log n)</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+B) O(1) — since dp[i] depends only on dp[i-1] and dp[i-2], we only need two variables.
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercises">Exercises<a href="#exercises" class="hash-link" aria-label="Direct link to Exercises" title="Direct link to Exercises" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="review-questions">Review Questions<a href="#review-questions" class="hash-link" aria-label="Direct link to Review Questions" title="Direct link to Review Questions" translate="no">​</a></h3>
+<ol>
+<li class="">Explain the difference between optimal substructure and overlapping subproblems.</li>
+<li class="">Why does merge sort not benefit from dynamic programming?</li>
+<li class="">What is the space complexity of memoization for Fibonacci? How does it compare to bottom-up?</li>
+<li class="">Give an example of a problem that has optimal substructure but no overlapping subproblems.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="application-problems">Application Problems<a href="#application-problems" class="hash-link" aria-label="Direct link to Application Problems" title="Direct link to Application Problems" translate="no">​</a></h3>
+<ol start="5">
+<li class="">Implement Fibonacci using memoization (top-down) in all three languages (C++, Python, Java).</li>
+<li class="">Modify the rod cutting algorithm to return the maximum revenue and the cuts that achieve it.</li>
+<li class="">Given the price table for n = 10, find the maximum revenue and optimal cuts using DP.</li>
+<li class="">Write a DP solution for the <strong>climbing stairs</strong> problem: a staircase with n steps, you can climb 1 or 2 steps at a time. Count distinct ways to reach the top.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenge-problems">Challenge Problems<a href="#challenge-problems" class="hash-link" aria-label="Direct link to Challenge Problems" title="Direct link to Challenge Problems" translate="no">​</a></h3>
+<ol start="9">
+<li class="">Generalize rod cutting to include a <strong>cost per cut</strong> c. Modify the recurrence and implement the solution. Analyze the complexity.</li>
+<li class=""><strong>Can Rod Cutting be solved with O(1) space?</strong> Prove or disprove — what about the problem&#x27;s dependency structure prevents O(1) space optimization?</li>
+<li class=""><strong>Identify the pattern:</strong> For each of these problems, determine if DP applies and identify the state: (a) Minimum number of coins to make change, (b) Maximum subarray sum, (c) Tower of Hanoi, (d) Counting paths in a grid with obstacles.</li>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ai-engineering-journey/algorithms/06-greedy"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Chapter 6: Greedy Algorithms</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ai-engineering-journey/algorithms/08-dp-knapsack"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Chapter 8: Dynamic Programming — Knapsack Problems</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#why-dynamic-programming-matters" class="table-of-contents__link toc-highlight">Why Dynamic Programming Matters</a><ul><li><a href="#chapter-at-a-glance" class="table-of-contents__link toc-highlight">Chapter at a Glance</a></li><li><a href="#chapter-roadmap" class="table-of-contents__link toc-highlight">Chapter Roadmap</a></li></ul></li><li><a href="#theory" class="table-of-contents__link toc-highlight">Theory</a><ul><li><a href="#71-the-dynamic-programming-paradigm" class="table-of-contents__link toc-highlight">7.1 The Dynamic Programming Paradigm</a></li><li><a href="#72-fibonacci-numbers" class="table-of-contents__link toc-highlight">7.2 Fibonacci Numbers</a></li><li><a href="#73-rod-cutting" class="table-of-contents__link toc-highlight">7.3 Rod Cutting</a></li><li><a href="#74-steps-for-dp-problem-solving" class="table-of-contents__link toc-highlight">7.4 Steps for DP Problem Solving</a></li></ul></li><li><a href="#dp-decision-framework" class="table-of-contents__link toc-highlight">DP Decision Framework</a><ul><li><a href="#how-to-identify-dp-problems-the-5-step-approach" class="table-of-contents__link toc-highlight">How to Identify DP Problems (The 5-Step Approach)</a></li><li><a href="#the-7-dp-patterns-interview-cheatsheet" class="table-of-contents__link toc-highlight">The 7 DP Patterns (Interview Cheatsheet)</a></li><li><a href="#common-decision-questions" class="table-of-contents__link toc-highlight">Common Decision Questions</a></li></ul></li><li><a href="#examples" class="table-of-contents__link toc-highlight">Examples</a><ul><li><a href="#example-71-fibonacci-with-constant-space" class="table-of-contents__link toc-highlight">Example 7.1: Fibonacci with Constant Space</a></li><li><a href="#example-72-rod-cutting-with-reconstruction" class="table-of-contents__link toc-highlight">Example 7.2: Rod Cutting with Reconstruction</a></li><li><a href="#example-73-identifying-dp-problems" class="table-of-contents__link toc-highlight">Example 7.3: Identifying DP Problems</a></li><li><a href="#example-74-dp-vs-greedy--activity-selection" class="table-of-contents__link toc-highlight">Example 7.4: DP vs Greedy — Activity Selection</a></li></ul></li><li><a href="#interview-corner" class="table-of-contents__link toc-highlight">Interview Corner</a><ul><li><a href="#classic-dp-patterns-for-interviews" class="table-of-contents__link toc-highlight">Classic DP Patterns for Interviews</a></li><li><a href="#common-mistakes" class="table-of-contents__link toc-highlight">Common Mistakes</a></li><li><a href="#quick-interview-strategy" class="table-of-contents__link toc-highlight">Quick Interview Strategy</a></li><li><a href="#time-complexity-estimation" class="table-of-contents__link toc-highlight">Time Complexity Estimation</a></li></ul></li><li><a href="#applications-in-real-systems" class="table-of-contents__link toc-highlight">Applications in Real Systems</a><ul><li><a href="#bioinformatics--sequence-alignment" class="table-of-contents__link toc-highlight">Bioinformatics — Sequence Alignment</a></li><li><a href="#routing-and-navigation" class="table-of-contents__link toc-highlight">Routing and Navigation</a></li><li><a href="#natural-language-processing" class="table-of-contents__link toc-highlight">Natural Language Processing</a></li><li><a href="#operations-research" class="table-of-contents__link toc-highlight">Operations Research</a></li><li><a href="#system-design-context" class="table-of-contents__link toc-highlight">System Design Context</a></li><li><a href="#concept-comparison-table" class="table-of-contents__link toc-highlight">Concept Comparison Table</a></li><li><a href="#quick-reference" class="table-of-contents__link toc-highlight">Quick Reference</a></li><li><a href="#cross-application-matrix" class="table-of-contents__link toc-highlight">Cross-Application Matrix</a></li></ul></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a><ul><li><a href="#chapter-quiz" class="table-of-contents__link toc-highlight">Chapter Quiz</a></li></ul></li><li><a href="#exercises" class="table-of-contents__link toc-highlight">Exercises</a><ul><li><a href="#review-questions" class="table-of-contents__link toc-highlight">Review Questions</a></li><li><a href="#application-problems" class="table-of-contents__link toc-highlight">Application Problems</a></li><li><a href="#challenge-problems" class="table-of-contents__link toc-highlight">Challenge Problems</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Courses</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/placement">Placement Course</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/python-programming">Python</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/machine-learning">Machine Learning</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/system-design">System Design</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Raushan666java/learning-playground" target="_blank" rel="noopener noreferrer" class="footer__link-item">Learning Playground<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2026 AI Engineering Journey. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Backend + AI Engineer — Complete Placement Course
 
-> **Zero to job-ready in 12 months. 26 subjects, 247+ sub-chapters, 2,700+ interview Q&A. All in browser localStorage — zero backend.**
+> **Zero to job-ready in 12 months. 33 subjects, 290+ sub-chapters, 3,148+ interview Q&A. All in browser localStorage — zero backend.**
 
 ![Build Status](https://img.shields.io/badge/status-in--progress-yellow)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,10 +12,10 @@ This is a **single, unified placement course** for software developers targeting
 
 | Feature | Detail |
 |---------|--------|
-| **Subjects** | 26 broad subject areas (Core CS → Trending AI/ML) |
-| **Sub-chapters** | 247+ focused topic files, each 400+ lines |
-| **Interview Q&A** | 2,700+ questions with expandable answers — click to reveal |
-| **Chapter Quizzes** | 5 MCQ per sub-chapter = 1,235+ total questions |
+| **Subjects** | 33 broad subject areas (Core CS → Competitive Programming) |
+| **Sub-chapters** | 290+ focused topic files, each 400+ lines |
+| **Interview Q&A** | 3,148+ questions with expandable answers — click to reveal |
+| **Chapter Quizzes** | 5 MCQ per sub-chapter = 1,450+ total questions |
 | **Exercises** | 5 hands-on per sub-chapter = 1,235+ exercises |
 | **Capstone Projects** | 5 production-grade projects, from beginner to SaaS |
 | **Progress Tracking** | All in browser localStorage — theory, Q&A, exercises, streak |
@@ -59,20 +59,25 @@ flowchart LR
         DL --> NLP[NLP/Transformers<br/>8 ch]
     end
     subgraph M4[Module 4: GenAI]
-        LLM[LLMs/Prompt<br/>8 ch] --> RAG[RAG<br/>10 ch]
+        LLM[LLMs/Prompt<br/>8 ch] --> RAG[RAG<br/>16 ch]
         RAG --> AGE[Agents<br/>10 ch]
-        AGE --> AAA[Adv Agents<br/>10 ch]
+        AGE --> AAA[Adv Agents<br/>15 ch]
         AAA --> TMP[Trending AI/ML<br/>4 ch]
         TMP --> FT[Fine-Tuning<br/>8 ch]
     end
-    subgraph M5[Module 5: Production]
+    subgraph M5[Module 5: Production & Infra]
         EVAL[Eval/Observ<br/>6 ch] --> MLOps[MLOps<br/>8 ch]
         MLOps --> SEC[Security<br/>6 ch]
         SEC --> MM[Multimodal<br/>6 ch]
+        MM --> AIF[AI Infra<br/>9 ch]
     end
-    subgraph M6[Module 6: Career]
+    subgraph M6[Module 6: Career, Growth & Mastery]
         CAP[Capstones<br/>5 ch] --> PORT[Portfolio<br/>6 ch]
         PORT --> INT[Interview<br/>19 ch]
+        INT --> PT[Product Thinking<br/>5 ch]
+        PT --> CERT[Certs+Research+Business<br/>11 ch]
+        CERT --> MOBILE[Mobile AI<br/>4 ch]
+        MOBILE --> CP[Competitive Prog<br/>3 ch]
     end
     M1 --> M2
     M2 --> M3
@@ -224,21 +229,28 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 09 | Deep Learning / PyTorch | 10 | 100 | 35 | ⭐⭐⭐⭐ |
 | 10 | NLP & Transformers | 8 | 80 | 25 | ⭐⭐⭐ |
 | 11 | LLMs & Prompt Engineering | 8 | 80 | 25 | ⭐⭐⭐⭐⭐ |
-| 12 | RAG & Vector Databases | 10 | 100 | 35 | ⭐⭐⭐⭐⭐ |
+| 12 | RAG & Vector Databases | 16 | 160 | 35 | ⭐⭐⭐⭐⭐ |
 | 13 | AI Agents & LangGraph | 10 | 100 | 40 | ⭐⭐⭐⭐⭐ |
-| 14 | Advanced AI Agents | 10 | 100 | 40 | ⭐⭐⭐⭐⭐ |
-| 15 | Fine-Tuning & PEFT | 8 | 80 | 25 | ⭐⭐⭐ |
-| 16 | AI Eval & Observability | 6 | 60 | 20 | ⭐⭐⭐ |
-| 17 | MLOps & Production | 8 | 80 | 25 | ⭐⭐⭐⭐ |
-| 18 | AI Security & Guardrails | 6 | 60 | 15 | ⭐⭐⭐ |
-| 19 | Multimodal AI & Voice | 6 | 60 | 20 | ⭐⭐⭐ |
-| 20 | Capstone Projects | 5 | 25 | 50 | ⭐⭐⭐⭐⭐ |
-| 21 | Portfolio & Branding | 6 | 48 | 15 | ⭐⭐⭐ |
-| 22 | Interview Preparation | 19 | 285 | 80 | ⭐⭐⭐⭐⭐ |
+| 14 | Fine-Tuning & PEFT | 8 | 80 | 25 | ⭐⭐⭐ |
+| 15 | AI Eval & Observability | 6 | 60 | 20 | ⭐⭐⭐ |
+| 16 | MLOps & Production | 8 | 80 | 25 | ⭐⭐⭐⭐ |
+| 17 | AI Security & Guardrails | 6 | 60 | 15 | ⭐⭐⭐ |
+| 18 | Multimodal AI & Voice | 6 | 60 | 20 | ⭐⭐⭐ |
+| 19 | Capstone Projects | 5 | 25 | 50 | ⭐⭐⭐⭐⭐ |
+| 20 | Portfolio & Branding | 6 | 48 | 15 | ⭐⭐⭐ |
+| 21 | Interview Preparation | 19 | 285 | 80 | ⭐⭐⭐⭐⭐ |
+| 22 | Advanced AI Agents | 10 | 100 | 40 | ⭐⭐⭐⭐⭐ |
 | 23 | Trending AI/ML Platforms & Tools | 4 | 40 | 10 | ⭐⭐⭐ |
 | 24 | Statistics & Mathematics for AI | 8 | 80 | 30 | ⭐⭐⭐⭐ |
 | 25 | Data Engineering for AI | 5 | 50 | 20 | ⭐⭐⭐ |
-| **Total** | **26** | **~247** | **~2,718** | **~830** | — |
+| 26 | AI Product Thinking | 5 | 50 | 20 | ⭐⭐⭐ |
+| 27 | AI Infrastructure & Optimization | 9 | 90 | 35 | ⭐⭐⭐⭐ |
+| 28 | AI Certifications Guide | 3 | 30 | 10 | ⭐⭐ |
+| 29 | Research Reading & AI Literature | 4 | 40 | 15 | ⭐⭐ |
+| 30 | Business Skills for AI Engineers | 4 | 40 | 15 | ⭐⭐ |
+| 31 | Mobile AI & Edge Deployment | 4 | 40 | 15 | ⭐⭐ |
+| 32 | Competitive Programming | 3 | 30 | 10 | ⭐⭐ |
+| **Total** | **33** | **~290** | **~3,148** | **~950** | — |
 
 ## How to Use This Course
 

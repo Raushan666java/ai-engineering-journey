@@ -19,6 +19,11 @@ tool integration, evaluation, safety, observability). Covers context engineering
 | 08 | [Agent Self-Evolution](08-agent-self-evolution.md) | learning from experience, tool discovery, tool creation | 10 |
 | 09 | [Multimodal & Real-Time Agents](09-multimodal-real-time-agents.md) | voice agents, Computer Use, streaming, vision-language-action | 10 |
 | 10 | [Advanced Multi-Agent Collaboration](10-advanced-multi-agent-collaboration.md) | topologies, shared context, agent society, failure modes | 10 |
+| 11 | [CrewAI: Multi-Agent Orchestration](11-crewai-multi-agent.md) | agents, tasks, crews, processes, tools, production deployment | 10 |
+| 12 | [AutoGen: Multi-Agent Conversations](12-autogen-agentic-chat.md) | two-agent chat, group chat, code execution, tool registration, advanced patterns | 10 |
+| 13 | [OpenAI Agents SDK](13-openai-agents-sdk.md) | agent loop, handoffs, guardrails, tracing, tool use | 10 |
+| 14 | [Google Agent Development Kit](14-google-adk.md) | agent types, function agents, Workspace tools, multi-agent, Vertex AI | 10 |
+| 15 | [Agent-to-Agent (A2A) Protocol](15-a2a-protocol.md) | agent cards, task delegation, message format, security, A2A vs MCP | 10 |
 
 ## Learning Path
 
@@ -26,8 +31,11 @@ tool integration, evaluation, safety, observability). Covers context engineering
 2. Lessons 02-04 build the core harness components (context, memory, tools)
 3. Lessons 05-06 cover advanced capabilities (coding, evaluation)
 4. Lessons 07-08 cover training and evolution
-5. Lessons 09-10 cover multimodal and multi-agent
-6. Each lesson: read theory → run code → review Q&A → take quiz → do exercises
+5. Lessons 09-11 cover multimodal, multi-agent, and CrewAI
+6. Lesson 12 covers AutoGen for conversational multi-agent systems
+7. Lesson 13 covers the OpenAI Agents SDK for production agent systems
+8. Lessons 14-15 cover Google ADK and A2A protocol for interoperable agents
+9. Each lesson: read theory → run code → review Q&A → take quiz → do exercises
 
 ## Prerequisites
 

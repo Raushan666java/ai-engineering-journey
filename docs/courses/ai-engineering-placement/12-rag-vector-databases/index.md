@@ -18,6 +18,12 @@ Build retrieval-augmented generation systems using vector databases, embeddings,
 | 08 | [RAG Evaluation](08-rag-evaluation.md) | faithfulness, relevancy, context precision, RAGAS | 10 |
 | 09 | [Production RAG Systems](09-production-rag-systems.md) | caching, monitoring, scaling, AB testing | 10 |
 | 10 | [Hybrid Search & Reranking](10-hybrid-search-and-reranking.md) | cross-encoder, Cohere rerank, monoBERT, listwise | 10 |
+| 11 | [Query Rewriting & Decomposition](11-query-rewriting-decomposition.md) | query expansion, HyDE, multi-query, step-back, decomposition | 10 |
+| 12 | [Parent-Child & Multi-Vector](12-parent-child-multi-vector.md) | small-to-big, sentence window, multi-vector, hierarchical indices | 10 |
+| 13 | [Knowledge Graph RAG](13-knowledge-graph-rag.md) | entity extraction, graph traversal, KG construction | 10 |
+| 14 | [GraphRAG (Microsoft)](14-graphrag.md) | Leiden algorithm, community detection, local/global search | 10 |
+| 15 | [Context Compression](15-context-compression.md) | LLMLingua, selective context, extraction, summary-based | 10 |
+| 16 | [Hybrid Search Architecture](16-hybrid-search-architecture.md) | dense + sparse fusion, RRF, late interaction, multi-stage | 10 |
 
 ## Learning Path
 

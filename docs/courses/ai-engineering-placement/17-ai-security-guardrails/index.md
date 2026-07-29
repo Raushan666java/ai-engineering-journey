@@ -14,12 +14,17 @@ Understand the security landscape for AI systems including prompt injection, con
 | 04 | [Guardrails Frameworks](04-guardrails-frameworks.md) | NVIDIA NeMo, Guardrails AI, Lakera, custom policies | 10 |
 | 05 | [Secret & Key Management](05-secret-and-key-management.md) | API key rotation, vaults, env variables, KMS | 10 |
 | 06 | [Compliance & Ethics](06-compliance-and-ethics.md) | GDPR, EU AI Act, CCPA, bias audits, transparency | 10 |
+| 07 | [Jailbreaks & Red Teaming](07-jailbreaks-red-teaming.md) | GCG, PAIR, DeepInception, many-shot, role-playing, encoding, automated red teaming, refusal training, ASR, defense strategies | 10 |
+| 08 | [Data Leakage & PII Detection](08-data-leakage-pii.md) | PII detection, data sanitization, training data extraction, prompt leakage, prevention | 10 |
+| 09 | [Toxicity & Content Moderation](09-toxicity-content-moderation.md) | toxicity classification, moderation APIs, safety filters, RLHF, red teaming, measurement | 10 |
+| 10 | [AI Alignment & Constitutional AI](10-alignment-constitutional-ai.md) | RLHF, DPO, Constitutional AI, superalignment, value alignment | 10 |
 
 ## Learning Path
 
-1. Read sub-chapters in order
-2. For each: read theory → run code → review Q&A → take quiz → do exercises
-3. Mark complete when all sub-chapters done
+1. Read sub-chapters in order (01–10)
+2. Chapters 07–10 expand core safety into advanced red teaming, PII protection, moderation, and alignment
+3. For each: read theory → run code → review Q&A → take quiz → do exercises
+4. Mark complete when all sub-chapters done
 
 ## Prerequisites
 

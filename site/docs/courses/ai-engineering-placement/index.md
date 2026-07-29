@@ -1,6 +1,4 @@
 ---
-id: index
-slug: /ai-engineering-placement/index
 title: "Backend + AI Engineer — Complete Placement Course"
 sidebar_label: "Backend + AI Engineer — Complete Placement Course"
 sidebar_position: 1

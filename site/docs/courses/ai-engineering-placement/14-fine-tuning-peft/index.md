@@ -1,6 +1,4 @@
 ---
-id: index
-slug: /ai-engineering-placement/14-fine-tuning-peft/index
 title: "14 — Fine-Tuning & PEFT"
 sidebar_label: "14 — Fine-Tuning & PEFT"
 sidebar_position: 175

@@ -1,6 +1,4 @@
 ---
-id: index
-slug: /ai-engineering-placement/21-interview-preparation/index
 title: "21 — Interview Preparation"
 sidebar_label: "21 — Interview Preparation"
 sidebar_position: 238

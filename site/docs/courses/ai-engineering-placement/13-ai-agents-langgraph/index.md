@@ -1,6 +1,4 @@
 ---
-id: index
-slug: /ai-engineering-placement/13-ai-agents-langgraph/index
 title: "13 — AI Agents & LangGraph"
 sidebar_label: "13 — AI Agents & LangGraph"
 sidebar_position: 166

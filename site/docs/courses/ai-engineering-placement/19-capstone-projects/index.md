@@ -1,6 +1,4 @@
 ---
-id: index
-slug: /ai-engineering-placement/19-capstone-projects/index
 title: "19 — Capstone Projects"
 sidebar_label: "19 — Capstone Projects"
 sidebar_position: 211

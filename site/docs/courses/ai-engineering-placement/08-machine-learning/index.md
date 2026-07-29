@@ -1,6 +1,4 @@
 ---
-id: index
-slug: /ai-engineering-placement/08-machine-learning/index
 title: "08 — Machine Learning"
 sidebar_label: "08 — Machine Learning"
 sidebar_position: 115

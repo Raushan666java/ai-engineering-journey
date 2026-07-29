@@ -1,8 +1,3 @@
-/**
- * Docusaurus CSS
- * https://docusaurus.io/docs/styling-layout
- */
-
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -24,4 +19,117 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.tp-qa-card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  margin: 1.5rem 0;
+  background: var(--ifm-background-surface-color);
+  transition: box-shadow 0.2s ease;
+}
+
+.tp-qa-card[open] {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .tp-qa-card[open] {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tp-qa-card.tp-reviewed {
+  border-left: 3px solid var(--ifm-color-success);
+}
+
+.tp-qa-card.tp-bookmarked {
+  border-right: 3px solid var(--ifm-color-warning);
+}
+
+.tp-qa-question {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.tp-qa-question::-webkit-details-marker {
+  display: none;
+}
+
+.tp-qa-question::before {
+  content: '▶';
+  font-size: 0.7em;
+  color: var(--ifm-color-primary);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.tp-qa-card[open] > .tp-qa-question::before {
+  transform: rotate(90deg);
+}
+
+.tp-qa-status {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-400);
+  flex-shrink: 0;
+}
+
+.tp-reviewed .tp-qa-status {
+  background: var(--ifm-color-success);
+}
+
+.tp-qa-answer {
+  padding: 0.75rem 1rem;
+  margin: 0 0.75rem 0.75rem;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  font-size: 0.9em;
+}
+
+.tp-qa-mark-btn,
+.tp-qa-bookmark-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.5rem 0.75rem;
+  font-size: 0.8em;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--ifm-color-emphasis-600);
+  transition: all 0.15s;
+}
+
+.tp-qa-mark-btn:hover {
+  border-color: var(--ifm-color-success);
+  color: var(--ifm-color-success);
+  background: rgba(0, 180, 0, 0.05);
+}
+
+.tp-qa-bookmark-btn:hover {
+  border-color: var(--ifm-color-warning);
+  color: var(--ifm-color-warning);
+  background: rgba(255, 180, 0, 0.05);
+}
+
+.tp-reviewed .tp-qa-mark-btn {
+  background: var(--ifm-color-success);
+  color: #fff;
+  border-color: var(--ifm-color-success);
+}
+
+.tp-bookmarked .tp-qa-bookmark-btn {
+  background: var(--ifm-color-warning);
+  color: #fff;
+  border-color: var(--ifm-color-warning);
 }

@@ -78,7 +78,7 @@ flowchart TD
     Memory --> Retrieval
     Retrieval --> AGENT
     Index --> AGENT
-```text
+```
 
 ## 3.1 Memory Architecture
 
@@ -147,7 +147,7 @@ class MemoryStore {
         return this.procedural.get(toolName)
     }
 }
-```text
+```
 
 ```python
 from dataclasses import dataclass
@@ -224,7 +224,7 @@ class LongTermMemory:
             used.add(i)
 
         self.entries = merged
-```text
+```
 
 ## 3.2 User Memory Systems
 
@@ -296,7 +296,7 @@ class UserMemorySystem {
         return interaction.query.slice(0, 100)
     }
 }
-```text
+```
 
 ## 3.3 Agentic RAG
 
@@ -387,7 +387,7 @@ class AgenticRAG {
 interface Retriever {
     retrieve(query: string): Promise<RetrievalResult>
 }
-```text
+```
 
 ```python
 from typing import List, Optional
@@ -435,7 +435,7 @@ class AgenticRAG:
 
         answer_prompt = f"Question: {question}\nContext: {context}\nAnswer with what you have:"
         return self.llm(answer_prompt)
-```text
+```
 
 ## 3.4 Hybrid Retrieval
 
@@ -567,7 +567,7 @@ class HybridRetriever {
         }))
     }
 }
-```text
+```
 
 ## 3.5 Structured Indexes
 
@@ -651,7 +651,7 @@ class RAPTORIndex {
         return this.llm(prompt)
     }
 }
-```text
+```
 
 ### GraphRAG
 
@@ -703,7 +703,7 @@ class GraphRAGIndex {
         )
     }
 }
-```text
+```
 
 ## 3.6 Contextual Retrieval
 
@@ -765,7 +765,7 @@ class ContextualRetriever {
         return scored.slice(0, topK).map(s => s.chunk)
     }
 }
-```text
+```
 
 ```python
 from typing import List
@@ -808,7 +808,7 @@ class ContextualRetrieval:
 
         scored.sort(key=lambda x: -x[0])
         return [c for _, c in scored[:top_k]]
-```text
+```
 
 ## Summary
 

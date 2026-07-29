@@ -70,7 +70,7 @@ flowchart LR
         RL_ALGO[DAPO / PPO / GRPO] --> FINAL
     end
     Stage1 --> Stage2 --> Stage3
-```text
+```
 
 ## 7.1 The Three-Stage Pipeline
 
@@ -162,7 +162,7 @@ class TrainingOrchestrator {
         await new Promise(r => setTimeout(r, 10))
     }
 }
-```text
+```
 
 ```python
 from typing import List, Optional
@@ -221,7 +221,7 @@ class PostTrainingPipeline:
             'avg_steps': random.uniform(3, 12),
         }
         return results
-```text
+```
 
 ## 7.2 SFT for Agents
 
@@ -278,7 +278,7 @@ class SFTTrainer {
         return templates[taskType] ?? templates['tool_use']
     }
 }
-```text
+```
 
 ## 7.3 RL for Agents
 
@@ -355,7 +355,7 @@ class RLTrainer {
         return advantages
     }
 }
-```text
+```
 
 ```python
 import numpy as np
@@ -410,7 +410,7 @@ class RLPostTraining:
             'avg_reward': float(np.mean(rewards)),
             'kl_penalty': float(kl_penalty),
         }
-```text
+```
 
 ## 7.4 SFT vs RL Comparison
 
@@ -489,7 +489,7 @@ class SFTvsRLGuide {
         }
     }
 }
-```text
+```
 
 ## 7.5 DAPO Algorithm
 
@@ -583,7 +583,7 @@ class DAPOAlgorithm {
         return 0.8 + 0.4 * Math.random()
     }
 }
-```text
+```
 
 ## 7.6 Tool-Augmented Reasoning
 
@@ -674,7 +674,7 @@ class ToolAugmentedTraining {
         return curriculum
     }
 }
-```text
+```
 
 ```python
 from typing import List, Dict
@@ -727,7 +727,7 @@ class ToolAugmentedTrainer:
         reward += efficiency * 1.0
 
         return reward
-```text
+```
 
 ## Summary
 

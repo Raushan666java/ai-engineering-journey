@@ -77,7 +77,7 @@ flowchart LR
     Coding --> Integration
     Workflow --> Integration
     Web --> Integration
-```text
+```
 
 ## 3.1 Claude Code — Terminal Coding Agent
 
@@ -95,7 +95,7 @@ irm https://claude.ai/install.ps1 | iex
 
 ## Homebrew
 brew install --cask claude-code
-```text
+```
 
 ```typescript
 interface ClaudeCodeConfig {
@@ -177,7 +177,7 @@ List the files to create/modify, the approach, and any risks.`)
         return commands
     }
 }
-```text
+```
 
 
 ## Overview
@@ -211,7 +211,7 @@ class MCPClient {
         return res.json()
     }
 }
-```text
+```
 
 Claude Code is ideal for complex multi-file changes, refactoring, and debugging — tasks that require understanding the full codebase context.
 
@@ -298,7 +298,7 @@ Return your changes as a JSON array of {path, content} objects.`
         return 0
     }
 }
-```text
+```
 
 Codex CLI's key advantage is its open-source nature and sandboxed execution environment, making it suitable for automated CI/CD pipelines and safe code generation at scale.
 
@@ -390,7 +390,7 @@ class N8nWorkflowBuilder {
         return JSON.stringify(this.build(name), null, 2)
     }
 }
-```text
+```
 
 ### Example: Customer Support AI Agent Workflow
 
@@ -425,7 +425,7 @@ switch(category) {
         return builder.exportJson('Customer Support AI Agent')
     }
 }
-```text
+```
 
 n8n's AI Agent node can use any n8n node as a tool — database queries, HTTP requests, file operations, even other AI agents. This makes it the most flexible platform for building visual AI workflows without writing everything from scratch.
 
@@ -495,7 +495,7 @@ class ActivepiecesBuilder {
         return this.flow
     }
 }
-```text
+```
 
 Activepieces excels at lightweight automation — connecting Slack, Gmail, Notion, and databases with AI processing steps. It's easier to set up than n8n but less powerful for complex agent workflows.
 
@@ -585,7 +585,7 @@ class AIAssistant {
         }
     }
 }
-```text
+```
 
 ### Stream Chat UI Hook Pattern
 
@@ -606,7 +606,7 @@ function useStreamChat() {
         }
     }
 }
-```text
+```
 
 The Vercel AI SDK is the most popular way to add AI to web applications in 2026. It handles streaming, backpressure, tool calling, and fallbacks with minimal boilerplate.
 

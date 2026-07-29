@@ -80,7 +80,7 @@ flowchart TD
         M[(Knowledge Base)] --> N[Indexer]
         N --> H
     end
-```text
+```
 
 ## 9.1 Production Architecture
 
@@ -127,7 +127,7 @@ configs = {
 }
 ms = MicroserviceRAG(configs)
 print(f"Health: {ms.health_check()}")
-```text
+```
 
 ### 9.1.2 Async Pipeline
 
@@ -164,7 +164,7 @@ async def test():
     print(f"Async query: {result} ({elapsed:.0f}ms)")
 
 asyncio.run(test())
-```text
+```
 
 ### 9.1.3 Deployment Patterns
 
@@ -201,7 +201,7 @@ dm = DeploymentManager()
 strategy = dm.recommend("large", "medium", "strict")
 print(f"Recommended: {strategy}")
 print(dm.deployment_plan(strategy))
-```text
+```
 
 ## 9.2 API Design
 
@@ -235,40 +235,40 @@ class SourceResponse(BaseModel):
     metadata: Dict
 
 
-## app = FastAPI(title="RAG API")
+# app = FastAPI(title="RAG API")
 #
 
-## @app.post("/query", response_model=QueryResponse)
+# @app.post("/query", response_model=QueryResponse)
 
-## async def query_endpoint(request: QueryRequest):
+# async def query_endpoint(request: QueryRequest):
 
-##     try:
+#     try:
 
-##         start = time.time()
+#         start = time.time()
 
-##         result = rag_pipeline.query(request.query, request.top_k)
+#         result = rag_pipeline.query(request.query, request.top_k)
 
-##         elapsed = (time.time() - start) * 1000
+#         elapsed = (time.time() - start) * 1000
 
-##         return QueryResponse(
+#         return QueryResponse(
 
-##             answer=result["response"],
+#             answer=result["response"],
 
-##             sources=[s["text"] for s in result["sources"]],
+#             sources=[s["text"] for s in result["sources"]],
 
-##             confidence=result.get("confidence", 0.95),
+#             confidence=result.get("confidence", 0.95),
 
-##             latency_ms=round(elapsed, 2),
+#             latency_ms=round(elapsed, 2),
 
-##         )
+#         )
 
-##     except Exception as e:
+#     except Exception as e:
 
-##         raise HTTPException(status_code=500, detail=str(e))
+#         raise HTTPException(status_code=500, detail=str(e))
 
 
 print("FastAPI RAG endpoint design ready")
-```text
+```
 
 
 ## Overview
@@ -340,7 +340,7 @@ auth = JWTAuth("my-secret-key")
 token = auth.create_token("user-1", ["rag:query", "rag:sources"])
 print(f"JWT token: {token[:50]}...")
 print(f"Validated: {auth.validate_token(token)}")
-```text
+```
 
 ### 9.2.3 Rate Limiting
 
@@ -380,7 +380,7 @@ limiter = SlidingWindowRateLimiter(default_limit=5, window_seconds=60)
 for i in range(7):
     allowed = limiter.check("user-1")
     print(f"Request {i+1}: {'allowed' if allowed else 'blocked'}")
-```text
+```
 
 ## 9.3 Monitoring & Logging
 
@@ -435,7 +435,7 @@ class StructuredLogger:
 logger = StructuredLogger("rag-service")
 logger.log_query("What is RAG?", "user-1", 5, 450.2)
 logger.log_error("Vector DB timeout", "Connection pool exhausted", "req-123")
-```text
+```
 
 ### 9.3.2 Metrics Collection
 
@@ -485,7 +485,7 @@ metrics.record_timing("retrieval_latency", 150.5)
 metrics.record_timing("retrieval_latency", 200.3)
 metrics.set_gauge("vector_db_size", 10000)
 print(json.dumps(metrics.snapshot(), indent=2, default=str))
-```text
+```
 
 ### 9.3.3 Alerting Rules
 
@@ -547,7 +547,7 @@ alert_mgr = AlertManager()
 alert_mgr.add_rule(AlertRule("retrieval_p95_latency", "gt", 500, 300, "warning"))
 alert_mgr.feed_metric("retrieval_p95_latency", 600)
 print(f"Alerts: {alert_mgr.check_alerts()}")
-```text
+```
 
 ## 9.4 Fallback Strategies
 
@@ -595,7 +595,7 @@ for i in range(10):
         result = cb.call(unreliable_llm_call, "test")
     except Exception as e:
         print(f"Attempt {i+1}: {e}")
-```text
+```
 
 ### 9.4.2 Fallback Chain
 
@@ -631,7 +631,7 @@ fallback = FallbackChain([
 ])
 result, method = fallback.execute("What is RAG?")
 print(f"Fallback method: {method}, result: {result}")
-```text
+```
 
 ### 9.4.3 Graceful Degradation
 
@@ -674,7 +674,7 @@ deg = DegradationManager()
 deg.mark_unhealthy("generator")
 print(f"Degradation level: {deg.degradation_level}")
 print(f"Response config: {deg.get_response_config()}")
-```text
+```
 
 ## 9.5 Data Refresh
 
@@ -716,7 +716,7 @@ class IncrementalIndexer:
 indexer = IncrementalIndexer(VectorStore())
 stats = indexer.index_new_documents([Document(id="new-doc", text="New RAG research")])
 print(f"Indexing stats: {stats}")
-```text
+```
 
 ### 9.5.2 Scheduled Refresh
 
@@ -764,7 +764,7 @@ scheduler = RefreshScheduler(IncrementalIndexer(VectorStore()), MockDataSource()
 scheduler.add_hourly_refresh()
 scheduler.add_daily_full_refresh()
 print(f"Refresh schedule: {scheduler.schedule_jobs}")
-```text
+```
 
 ### 9.5.3 Consistency Management
 
@@ -801,7 +801,7 @@ class ConsistencyManager:
 
 cm = ConsistencyManager(VectorStore(), None)
 print("Consistency manager ready")
-```text
+```
 
 ## 9.6 Cost & Scale
 
@@ -851,7 +851,7 @@ for i in range(100):
 pcache.get("key-1")
 pcache.get("key-2")
 print(f"Cache stats: {pcache.stats()}")
-```text
+```
 
 ### 9.6.2 Auto-Scaling
 
@@ -886,7 +886,7 @@ class AutoScaler:
 scaler = AutoScaler(min_replicas=2, max_replicas=10)
 print(scaler.scale(cpu=85.0, qps=150))
 print(scaler.scale(cpu=30.0, qps=40))
-```text
+```
 
 ### 9.6.3 Cost Allocation
 
@@ -928,7 +928,7 @@ allocator.record_request("What is RAG?", "user-1", 1500, 200, "gpt-4o-mini")
 allocator.record_request("Explain transformers", "user-1", 2000, 500, "gpt-4o")
 print(f"User-1 spend: ${allocator.user_spend('user-1')}")
 print(f"Top users: {allocator.top_users()}")
-```text
+```
 
 ## Summary
 

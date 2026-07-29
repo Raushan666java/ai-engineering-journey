@@ -72,7 +72,7 @@ flowchart LR
     SERVER --> TOOLS
     SERVER --> RES
     SERVER --> PROMPTS
-```text
+```
 
 ## 4.1 MCP Architecture
 
@@ -186,7 +186,7 @@ class MCPServer {
         }
     }
 }
-```text
+```
 
 ```python
 from dataclasses import dataclass, field
@@ -251,7 +251,7 @@ class MCPServer:
 
         return {"jsonrpc": "2.0", "id": req_id,
                 "error": {"code": -32601, "message": f"Unknown method: {method}"}}
-```text
+```
 
 ## 4.2 Implementing an MCP Server
 
@@ -491,7 +491,7 @@ class CollaborationTools {
         }
     }
 }
-```text
+```
 
 ## 4.3 Tool Design Patterns
 
@@ -557,7 +557,7 @@ class ToolValidator {
         return errors
     }
 }
-```text
+```
 
 ## 4.4 Event-Driven Async Agents
 
@@ -671,7 +671,7 @@ class AsyncEventAgent {
         }
     }
 }
-```text
+```
 
 ```python
 import asyncio
@@ -737,7 +737,7 @@ class AsyncEventAgent:
                 priority=Priority.NORMAL,
                 data={'tool': event.data.get('name'), 'result': 'done'}
             ))
-```text
+```
 
 ## 4.5 Active Tool Selection
 
@@ -809,7 +809,7 @@ class ActiveToolSelector {
         return types
     }
 }
-```text
+```
 
 ## Summary
 

@@ -47,7 +47,7 @@ flowchart TD
     I --> K
     J --> K
     K --> L[Vector Index]
-```text
+```
 
 ## 4.1 Chunking Fundamentals
 
@@ -84,7 +84,7 @@ class ChunkStats:
 text = "RAG is a technique for grounding LLM responses. " * 20
 chunks = [text[i:i+100] for i in range(0, len(text), 100)]
 print(ChunkStats(chunks).report())
-```text
+```
 
 ### Key Parameters
 
@@ -99,7 +99,7 @@ class ChunkingConfig:
     chunk_overlap: int = 50
     separator: str = " "
     respect_boundaries: bool = True
-```text
+```
 
 ## 4.2 Fixed-Size Chunking
 
@@ -154,7 +154,7 @@ chunker = FixedSizeChunker(chunk_size=200, overlap=30)
 doc = "RAG is powerful. " * 50
 result = chunker.chunk_with_stats(doc)
 print(f"Fixed-size chunks: {result['stats']}")
-```text
+```
 
 ### Token-Based Fixed Chunking
 
@@ -188,7 +188,7 @@ class TokenFixedChunker:
 tk_chunker = TokenFixedChunker(chunk_tokens=256, overlap_tokens=32)
 chunks = tk_chunker.chunk("AI " * 1000)
 print(f"Token-based chunks: {len(chunks)} chunks, {ChunkStats(chunks).report()}")
-```text
+```
 
 ## 4.3 Semantic Chunking
 
@@ -227,7 +227,7 @@ text = "Sentence one. Sentence two. Sentence three. Sentence four. Sentence five
 chunks = sent_chunker.chunk(text)
 for i, c in enumerate(chunks):
     print(f"Chunk {i}: {c[:100]}...")
-```text
+```
 
 ### Paragraph-Based Chunking
 
@@ -261,7 +261,7 @@ para_chunker = ParagraphChunker(max_paragraphs=2)
 doc = "Para one.\n\nPara two.\n\nPara three.\n\nPara four."
 chunks = para_chunker.chunk(doc)
 print(f"Paragraph chunks: {len(chunks)}")
-```text
+```
 
 ### Topic Segmentation (LLM-Based)
 
@@ -322,7 +322,7 @@ Results show improved accuracy."""
 segments = segmenter.segment(doc)
 for seg in segments:
     print(f"Topic: {seg['topic']} ({len(seg['text'])} chars)")
-```text
+```
 
 ## 4.4 Recursive Chunking
 
@@ -396,7 +396,7 @@ recursive = RecursiveChunker(chunk_size=300, chunk_overlap=50)
 doc = "Par1.\n\nPar2.\n\nPar3.\n\nPar4.\n\nPar5." * 10
 chunks = recursive.chunk(doc)
 print(f"Recursive chunks: {len(chunks)}")
-```text
+```
 
 ### LangChain-Compatible Interface
 
@@ -431,7 +431,7 @@ docs = [
 ]
 chunks = lc.split_documents(docs)
 print(f"LangChain-style splitting: {len(chunks)} chunks")
-```text
+```
 
 ## 4.5 Document-Aware Chunking
 
@@ -489,7 +489,7 @@ def world():
 chunks = code_chunker.chunk(python_code)
 for i, c in enumerate(chunks):
     print(f"Code chunk {i}: {c[:60]}...")
-```text
+```
 
 ### 4.5.2 HTML Chunking
 
@@ -527,13 +527,13 @@ class HTMLChunker:
 html_chunker = HTMLChunker()
 html_doc = "<h1>Intro</h1><p>Text</p><h2>Details</h2><p>More text</p>"
 
-## sections = html_chunker.chunk(html_doc)
+# sections = html_chunker.chunk(html_doc)
 
-## for s in sections:
+# for s in sections:
 
-##     print(f"HTML Section: {s['heading']}")
+#     print(f"HTML Section: {s['heading']}")
 print("HTML chunker ready (requires beautifulsoup4)")
-```text
+```
 
 
 ## Overview
@@ -576,15 +576,15 @@ md_chunker = MarkdownChunker()
 md_doc = """# Chapter 1
 Content here.
 
-## Section 1.1
+# Section 1.1
 More content.
 
-## Section 1.2
+# Section 1.2
 Even more content."""
 sections = md_chunker.chunk(md_doc)
 for s in sections:
     print(f"MD section: {s['heading']} (level {s['level']})")
-```text
+```
 
 ### 4.5.4 PDF Chunking
 
@@ -615,7 +615,7 @@ pdf_chunker = PDFChunker(chunk_by_page=True)
 pdf_text = "Page 1 content.\fPage 2 content.\fPage 3 content."
 pages = pdf_chunker.chunk(pdf_text)
 print(f"PDF pages: {len(pages)}")
-```text
+```
 
 ## 4.6 Chunk Evaluation
 
@@ -677,7 +677,7 @@ docs = ["RAG is retrieval augmented generation. " * 50]
 chunker = FixedSizeChunker(300, 30)
 results = evaluator.evaluate_chunker(chunker, docs)
 print(f"Chunk evaluation: {results}")
-```text
+```
 
 ### 4.6.2 Information Density
 
@@ -704,7 +704,7 @@ def token_utilization(chunks: List[str], max_tokens: int = 512) -> Dict:
 chunks = ["Short"] * 10 + ["A" * 1500] * 5
 print(information_density(chunks))
 print(token_utilization(chunks))
-```text
+```
 
 ### 4.6.3 Chunk Boundary Quality
 
@@ -730,7 +730,7 @@ good_chunks = ["Complete sentence here. ", "Another sentence here."]
 bad_chunks = ["Incomplete sent", "ence here. Another sent", "ence here."]
 print(f"Good boundaries: {evaluate_boundaries(good_chunks)}")
 print(f"Bad boundaries: {evaluate_boundaries(bad_chunks)}")
-```text
+```
 
 ## 4.7 Practical Optimization
 
@@ -771,7 +771,7 @@ tuner = ChunkSizeTuner(
 results = tuner.find_optimal_size([200, 500, 1000, 2000])
 for r in results:
     print(f"Size {r['chunk_size']}: {r['num_chunks']} chunks, avg {r['avg_chars']:.0f} chars")
-```text
+```
 
 ### 4.7.2 Multi-Strategy Chunking
 
@@ -811,7 +811,7 @@ adaptive = AdaptiveChunker()
 code = "def hello():\n    pass\n\nclass Test:\n    pass\n"
 result = adaptive.chunk(code)
 print(f"Adaptive chunking: {len(result)} chunks")
-```text
+```
 
 ## Prerequisites
 

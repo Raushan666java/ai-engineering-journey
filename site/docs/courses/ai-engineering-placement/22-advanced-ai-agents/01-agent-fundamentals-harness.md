@@ -79,7 +79,7 @@ flowchart LR
     ACT --> RES[Result]
     RES --> EVAL
     EVAL --> REACT
-```text
+```
 
 ## 1.1 The Agent Formula
 
@@ -120,7 +120,7 @@ class Agent {
         })
     }
 }
-```text
+```
 
 ## 1.2 Harness Engineering
 
@@ -228,7 +228,7 @@ class TokenBudgetGuard implements HarnessComponent {
         return text.slice(0, maxChars - 50) + '\n... [truncated]'
     }
 }
-```text
+```
 
 ```python
 from dataclasses import dataclass, field
@@ -270,7 +270,7 @@ class ObservableHarness:
             'success_rate': (total - failures) / total * 100 if total > 0 else 0,
             'avg_duration_ms': round(avg_duration, 2),
         }
-```text
+```
 
 ## 1.3 RL vs ICL Comparison
 
@@ -362,7 +362,7 @@ class ICLAgent {
         this.examples.push(`State: ${state} | Action: ${action} | Outcome: ${outcome}`)
     }
 }
-```text
+```
 
 ```python
 import numpy as np
@@ -382,7 +382,7 @@ def compare_sample_efficiency():
     print(f"ICL examples: {ict_examples_needed}")
     print(f"Efficiency ratio: {efficiency_ratio:.0f}x")
     return efficiency_ratio
-```text
+```
 
 ## 1.4 ReAct Loop with Harness
 
@@ -487,7 +487,7 @@ class CalculatorTool implements Tool {
         return Function(`"use strict"; return (${expr})`)()
     }
 }
-```text
+```
 
 ## 1.5 Ablation Studies
 
@@ -554,7 +554,7 @@ class AblationReporter {
         })
     }
 }
-```text
+```
 
 ## Summary
 

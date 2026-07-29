@@ -77,7 +77,7 @@ flowchart LR
     end
     Benchmarks --> Metrics
     Metrics --> Ranking
-```text
+```
 
 ## 6.1 Agent Benchmarks Overview
 
@@ -148,7 +148,7 @@ class BenchmarkRegistry {
             .filter(b => b.difficulty === level)
     }
 }
-```text
+```
 
 ```python
 from dataclasses import dataclass
@@ -211,7 +211,7 @@ class BenchmarkRunner:
             'avg_time': total_time / total,
             'total_cost': total_cost,
         }
-```text
+```
 
 ## 6.2 Evaluation Metrics
 
@@ -313,7 +313,7 @@ interface ScoredComparison {
     loser: string
     margin: 'decisive' | 'moderate' | 'narrow'
 }
-```text
+```
 
 ## 6.3 ELO Rating System
 
@@ -390,7 +390,7 @@ class ELORating {
         }
     }
 }
-```text
+```
 
 ```python
 import math
@@ -438,7 +438,7 @@ class ELORatingSystem:
              for n, r in self.ratings.items()],
             key=lambda x: -x['rating']
         )
-```text
+```
 
 ## 6.4 Cost Analysis
 
@@ -549,7 +549,7 @@ class A_BTest {
         }
     }
 }
-```text
+```
 
 ## 6.5 Evaluation Datasets
 
@@ -656,7 +656,7 @@ class DatasetDesigner {
         }
     }
 }
-```text
+```
 
 ## 6.6 Observability & Tracing
 
@@ -760,7 +760,7 @@ class AgentTracer {
         return totalDuration * costPerMs
     }
 }
-```text
+```
 
 ```python
 import time
@@ -830,7 +830,7 @@ class AgentTracer:
             'avg_duration_ms': sum(durations) / len(durations) if durations else 0,
             'max_duration_ms': max(durations) if durations else 0,
         }
-```text
+```
 
 ## Summary
 

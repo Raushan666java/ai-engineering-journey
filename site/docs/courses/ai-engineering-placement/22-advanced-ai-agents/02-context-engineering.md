@@ -72,7 +72,7 @@ flowchart TD
         K -->|No| M[Allow]
     end
     Cache --> Compress --> Safety --> N[LLM]
-```text
+```
 
 ## 2.1 LLM Context Structure
 
@@ -131,7 +131,7 @@ const ctx = new ContextBuilder()
     .build()
 
 console.log(`Context uses ~${ctx.length} messages, ~${new ContextBuilder().setSystem('').addUserQuery('').build().length * 0} tokens`)
-```text
+```
 
 ```python
 from dataclasses import dataclass
@@ -158,7 +158,7 @@ class ContextWindow:
 
     def fits_in_window(self, max_tokens: int) -> bool:
         return self.estimated_tokens() <= max_tokens
-```text
+```
 
 ## 2.2 KV Cache Mechanics
 
@@ -235,7 +235,7 @@ const cacheUnfriendlyLayout = [
 const result = analyzer.compareLayouts(cacheFriendlyLayout, cacheUnfriendlyLayout)
 console.log('Cache-friendly latency:', result.static.estimatedLatencyMs, 'ms')
 console.log('Cache-unfriendly latency:', result.interleaved.estimatedLatencyMs, 'ms')
-```text
+```
 
 ```python
 class KVCacheOptimizer:
@@ -284,7 +284,7 @@ class KVCacheOptimizer:
             'cost_with_cache': round(cost_with_cache, 4),
             'savings_percent': round(savings, 1),
         }
-```text
+```
 
 ## 2.3 Context Compression
 
@@ -408,7 +408,7 @@ class CompressionPipeline {
         }
     }
 }
-```text
+```
 
 ```python
 from typing import List, Tuple
@@ -473,7 +473,7 @@ class ContextCompressor:
         return (cleaned[:half] +
                 '\n[... truncated ...]\n' +
                 cleaned[-half:])
-```text
+```
 
 ## 2.4 Prompt Injection Defense
 
@@ -587,7 +587,7 @@ class StructuredInputDefense {
         return `[SOURCE: ${source}]\n${input}\n[END ${source}]`
     }
 }
-```text
+```
 
 ```python
 import re
@@ -630,7 +630,7 @@ return {
                        self.check_indirect(text) or
                        self.check_memory(history)),
         }
-```text
+```
 
 ## 2.5 Prompt Engineering Ablation
 
@@ -743,7 +743,7 @@ class PromptAblationStudy {
         }
     }
 }
-```text
+```
 
 ## Summary
 

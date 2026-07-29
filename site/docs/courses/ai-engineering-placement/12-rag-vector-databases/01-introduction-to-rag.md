@@ -43,7 +43,7 @@ flowchart LR
     E --> F[LLM Generator]
     F --> G[Grounded Response]
     G --> H[Evaluation]
-```text
+```
 
 
 ## Introduction
@@ -127,7 +127,7 @@ limitations = [
 
 for lim in limitations:
     print(f"{lim.name} ({lim.severity}): {lim.rag_mitigation}")
-```text
+```
 
 
 ### 1.2 RAG Paradigm
@@ -192,7 +192,7 @@ def mock_generator(prompt: str) -> str:
 
 result = rag_pipeline("What is RAG?", mock_retriever, mock_augmenter, mock_generator)
 print(json.dumps(result, indent=2))
-```text
+```
 
 
 ### 1.3 Core Components
@@ -240,7 +240,7 @@ retriever = Retriever(docs)
 results = retriever.retrieve("How does RAG work?", top_k=2)
 for doc, score in results:
     print(f"Score: {score:.2f} | Doc: {doc}")
-```text
+```
 
 
 ### 1.3.2 Index
@@ -283,7 +283,7 @@ index.add_chunk("RAG fundamentals", {"source": "textbook", "chapter": 1})
 index.add_chunk("Vector search techniques", {"source": "paper", "year": 2024})
 print(f"Index size: {index.size()}")
 print(f"Filtered: {len(index.filter_by_metadata('source', 'textbook'))} chunks")
-```text
+```
 
 
 ### 1.3.3 Augmenter
@@ -321,7 +321,7 @@ augmenter = PromptAugmenter()
 query = "What is vector search?"
 chunks = ["Vector search finds similar items using embedding similarity."]
 print(augmenter.augment(query, chunks))
-```text
+```
 
 
 ### 1.3.4 Generator
@@ -349,7 +349,7 @@ class Generator:
 
 
 
-## For offline/demo use without API:
+# For offline/demo use without API:
 class MockGenerator(Generator):
     def generate(self, augmented_prompt: str, temperature: float = 0) -> str:
         return "This is a generated response grounded in the provided context."
@@ -357,7 +357,7 @@ class MockGenerator(Generator):
 
 gen = MockGenerator()
 print(gen.generate("mock prompt"))
-```text
+```
 
 
 
@@ -415,7 +415,7 @@ class ApproachComparator:
 comparator = ApproachComparator()
 reqs = {"freshness": "critical", "latency_sensitive": False}
 print(f"Recommended: {comparator.recommend(reqs)}")
-```text
+```
 
 
 ### 1.5 Basic RAG Pipeline
@@ -454,7 +454,7 @@ document = """Retrieval-Augmented Generation (RAG) is a technique that combines 
 chunks = chunk_document(document, chunk_size=200, overlap=30)
 for i, chunk in enumerate(chunks, 1):
     print(f"Chunk {i} ({len(chunk)} chars): {chunk[:80]}...")
-```text
+```
 
 
 ### 1.5.2 Embedding and Indexing
@@ -482,7 +482,7 @@ class SimpleEmbedder:
 embedded = SimpleEmbedder(384).embed("RAG pipeline")
 print(f"Embedding dimension: {len(embedded)}")
 print(f"First 5 values: {embedded[:5]}")
-```text
+```
 
 
 ### 1.5.3 Complete Pipeline
@@ -542,7 +542,7 @@ def mock_llm(prompt: str) -> str:
 
 answer = pipeline.answer("How does RAG work?", mock_llm)
 print(f"Answer: {answer}")
-```text
+```
 
 
 ### 1.6 Evaluation Dimensions
@@ -611,7 +611,7 @@ prec = evaluator.evaluate_context_precision(query, context)
 print(f"Faithfulness: {faith:.2%}")
 print(f"Relevance: {rel:.2%}")
 print(f"Context Precision: {prec:.2%}")
-```text
+```
 
 
 ### Comprehensive RAG Score
@@ -638,7 +638,7 @@ def rag_score(
 
 
 print(rag_score(response, query, context))
-```text
+```
 
 
 ## Visual Analogy

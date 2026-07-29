@@ -69,7 +69,7 @@ flowchart LR
     G --> I
     H --> I
     I --> J[Filtered Results]
-```text
+```
 
 ## 5.1 Retrieval Paradigms
 
@@ -85,7 +85,7 @@ class RetrievalResult:
 
     def __repr__(self):
         return f"{self.document_id} ({self.method}, score={self.score:.3f})"
-```text
+```
 
 ### Paradigm Comparison
 
@@ -115,7 +115,7 @@ def select_retrieval_paradigm(
 
 print(select_retrieval_paradigm(1000, 0.8, False))
 print(select_retrieval_paradigm(100000, 0.2, True))
-```text
+```
 
 ## 5.2 Sparse Retrieval
 
@@ -163,7 +163,7 @@ index.add_document("doc3", "Generation is powered by LLMs")
 
 print(f"DF('retrieval'): {index.get_df('retrieval')}")
 print(f"Postings('retrieval'): {index.get_postings('retrieval')}")
-```text
+```
 
 ### 5.2.2 TF-IDF
 
@@ -207,7 +207,7 @@ tfidf.add_document("doc2", "Retrieval systems use BM25 and embedding search")
 results = tfidf.retrieve("retrieval methods")
 for r in results:
     print(r)
-```text
+```
 
 ### 5.2.3 BM25
 
@@ -271,7 +271,7 @@ bm25.build()
 results = bm25.retrieve("how does retrieval work")
 for r in results:
     print(r)
-```text
+```
 
 ### 5.2.4 BM25 Variants
 
@@ -322,7 +322,7 @@ class BM25L(BM25):
 for name, model in [("BM25", bm25), ("BM25+", BM25Plus()), ("BM25L", BM25L())]:
     results = model.retrieve("retrieval systems")
     print(f"{name}: {[r.document_id for r in results]}")
-```text
+```
 
 ## 5.3 Dense Retrieval
 
@@ -375,7 +375,7 @@ dense.add_document("doc2", "Embedding search uses semantic similarity", mock_emb
 results = dense.retrieve("semantic search", mock_embedder)
 for r in results:
     print(r)
-```text
+```
 
 ### 5.3.2 Bi-Encoder vs Cross-Encoder
 
@@ -431,7 +431,7 @@ docs = ["RAG combines retrieval", "Dense retrieval uses embeddings"]
 result = cascade.retrieve("retrieval methods", docs)
 for doc, score in result:
     print(f"Cascade: {doc[:60]} -> {score:.3f}")
-```text
+```
 
 ### 5.3.3 Late Interaction (ColBERT)
 
@@ -467,7 +467,7 @@ late = LateInteractionRetriever()
 docs = ["RAG combines retrieval and generation", "Embedding search is fast"]
 for doc, score in late.retrieve("retrieval generation", docs):
     print(f"ColBERT: {doc[:60]} -> {score:.3f}")
-```text
+```
 
 ## 5.4 Hybrid Retrieval
 
@@ -508,7 +508,7 @@ dense_results = [
 hybrid = reciprocal_rank_fusion([sparse_results, dense_results], k=60, top_n=3)
 for r in hybrid:
     print(r)
-```text
+```
 
 ### 5.4.2 Weighted Score Fusion
 
@@ -554,7 +554,7 @@ fusion = WeightedFusion(sparse_weight=0.3, dense_weight=0.7)
 hybrid_weighted = fusion.fuse(sparse_results, dense_results)
 for r in hybrid_weighted:
     print(r)
-```text
+```
 
 ### 5.4.3 Learning to Rank
 
@@ -600,7 +600,7 @@ docs = ["Short doc", "A very long document with many words for testing purposes"
 ranking = ltr.rank("testing document", docs)
 for doc, score in ranking:
     print(f"LTR: {doc[:60]} -> {score:.3f}")
-```text
+```
 
 ## 5.5 Query Expansion
 
@@ -639,7 +639,7 @@ expander = QueryExpander()
 print(f"Original: 'retrieval generation'")
 for i, eq in enumerate(expander.expand("retrieval generation", 2)):
     print(f"  {i}: {eq}")
-```text
+```
 
 ### 5.5.2 HyDE (Hypothetical Document Embedding)
 
@@ -677,7 +677,7 @@ def mock_generator(prompt: str) -> str:
 hyde = HyDERetriever(dense, mock_generator)
 results = hyde.retrieve("RAG systems")
 print(f"HyDE results: {[r.document_id for r in results]}")
-```text
+```
 
 ### 5.5.3 Multi-Query Retrieval
 
@@ -710,7 +710,7 @@ multi = MultiQueryRetriever(dense, mock_query_generator)
 results = multi.retrieve("RAG retrieval", num_queries=3)
 for r in results:
     print(r)
-```text
+```
 
 ## 5.6 Metadata Retrieval
 
@@ -756,7 +756,7 @@ filtered.add_document("doc2", "RAG tutorial 2024", {"year": 2024, "type": "tutor
 results = filtered.retrieve("RAG", mock_embedder, filters={"type": "paper"})
 for r in results:
     print(f"Filtered: {r.document_id}")
-```text
+```
 
 ### 5.6.2 Boosting
 
@@ -785,9 +785,9 @@ class BoostedRetriever:
 boosted = BoostedRetriever(bm25)
 boosted.set_boost("doc1", 1.5)
 
-## Results will favor doc1 score
+# Results will favor doc1 score
 print("Boosted retriever ready")
-```text
+```
 
 
 ## Overview
@@ -842,7 +842,7 @@ faceted_docs = [
 faceted = FacetedRetriever(faceted_docs)
 print(f"Available facets: {faceted.get_facets()}")
 print(f"Faceted query: {len(faceted.retrieve('RAG', {'type': 'paper'}))} results")
-```text
+```
 
 ## Summary
 

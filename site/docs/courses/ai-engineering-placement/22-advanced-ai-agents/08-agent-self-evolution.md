@@ -70,7 +70,7 @@ flowchart TD
         STORE --> TASK
     end
     Learn --> Evolve
-```text
+```
 
 ## 8.1 The Three Learning Paradigms
 
@@ -124,7 +124,7 @@ class ParadigmCatalog {
         }
     }
 }
-```text
+```
 
 ```python
 from dataclasses import dataclass, field
@@ -176,7 +176,7 @@ class ExperienceBuffer:
                     f"Reflection: {exp.reflections[-1] if exp.reflections else 'None'}"
                 )
         return reflections
-```text
+```
 
 ## 8.2 Learning from Experience
 
@@ -303,7 +303,7 @@ class SkillExtractor {
         return skills
     }
 }
-```text
+```
 
 ## 8.3 Active Tool Discovery
 
@@ -420,7 +420,7 @@ class ToolDiscovery {
         return this.discovered.filter(t => t.usageCount === 0)
     }
 }
-```text
+```
 
 ```python
 from typing import List, Optional
@@ -482,7 +482,7 @@ class ToolDiscoverer:
                 self.discovered_tools.append(tool)
 
         return discoveries
-```text
+```
 
 ## 8.4 From Tool User to Tool Creator
 
@@ -649,7 +649,7 @@ class ToolCreator {
         return [...this.createdTools.values()]
     }
 }
-```text
+```
 
 ## 8.5 Measuring Self-Evolution
 
@@ -730,7 +730,7 @@ class EvolutionTracker {
         return `${hours}h ${minutes}m`
     }
 }
-```text
+```
 
 ```python
 from typing import List
@@ -772,7 +772,7 @@ class EvolutionReporter:
             bar = '█' * int(m['success_rate'] * 50)
             chart.append(f"Ep {m['episode']:3d}: {bar} {m['success_rate']:.0%}")
         return '\n'.join(chart)
-```text
+```
 
 ## Summary
 

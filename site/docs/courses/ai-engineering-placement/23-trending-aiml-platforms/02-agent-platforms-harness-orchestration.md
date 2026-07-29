@@ -77,7 +77,7 @@ flowchart TD
     Harness --> SK
     Harness --> MEM
     Harness --> CH
-```text
+```
 
 ## 2.1 OpenClaw — Personal AI Agent Harness
 
@@ -155,7 +155,7 @@ class OpenClawSkill {
 
     getToolDefs(): ToolDef[] { return this.config.tools }
 }
-```text
+```
 
 ### Concrete Skill: Morning Briefing
 
@@ -204,7 +204,7 @@ class MorningBriefingSkill extends OpenClawSkill {
         }
     }
 }
-```text
+```
 
 The skill registers with the OpenClaw gateway and runs automatically on its cron schedule. All memory is persisted as Markdown on disk — zero cloud dependency.
 
@@ -317,7 +317,7 @@ class HermesAgentClient {
         return this.memory.keyFacts.filter(f => f.toLowerCase().includes(lower))
     }
 }
-```text
+```
 
 ### Hermes Desktop
 
@@ -404,7 +404,7 @@ class PaperclipCompany {
         return chart
     }
 }
-```text
+```
 
 ### Paperclip Agent Config Generator
 
@@ -428,7 +428,7 @@ class PaperclipAgentConfig {
         }
     }
 }
-```text
+```
 
 Paperclip's killer feature is **budget governance** — each agent has a spend cap, and the platform auto-pauses agents that exceed it. Combined with goal alignment, this makes Paperclip the standard for teams running multiple concurrent AI agents.
 
@@ -482,7 +482,7 @@ class DifyAppBuilder {
         return result
     }
 }
-```text
+```
 
 Dify's key advantage is accessibility — non-developers can build AI apps without writing code, while developers can extend with custom tools and API integrations.
 
@@ -522,7 +522,7 @@ class AgentFrameworkSelector {
             .sort((a, b) => a.complexity - b.complexity)
     }
 }
-```text
+```
 
 **CrewAI** excels at role-based agent teams where each agent has a defined persona (Researcher, Writer, Critic) working on a shared goal. **AutoGen** is more flexible for research-style multi-agent conversations with dynamic agent discovery. Both require Python coding, while OpenClaw and Paperclip offer config-first or UI-first approaches.
 

@@ -78,7 +78,7 @@ flowchart TB
     end
     Threats --> Frameworks
     Frameworks --> Defense
-```text
+```
 
 ## 1.1 AI Security Overview
 
@@ -109,7 +109,7 @@ class AIThreat:
     likelihood: str
     mitigation: str
 
-## OWASP Top 10 for LLM Applications
+# OWASP Top 10 for LLM Applications
 owasp_llm_top10 = [
     AIThreat(AIThreatCategory.PROMPT_INJECTION, "LLM01: Prompt Injection",
              "Attacker crafts input that overrides the system prompt to extract data or execute unauthorized actions",
@@ -135,7 +135,7 @@ owasp_llm_top10 = [
 
 for threat in owasp_llm_top10:
     print(f"{threat.name}: {threat.description[:70]}...")
-```text
+```
 
 **AI attack surface expansion**:
 
@@ -207,7 +207,7 @@ assertion.assess(
     output_handler="exec(llm_output)"
 )
 print(assessment.generate_report())
-```text
+```
 
 ---
 
@@ -276,7 +276,7 @@ atlas.add_technique("TA13", "AML.T0005", "Adversarial Example",
     ["Adversarial training", "Input sanitization", "Ensemble methods"])
 
 print(atlas.generate_threat_matrix())
-```text
+```
 
 ---
 
@@ -328,7 +328,7 @@ class STRIDEThreatModel:
             "risk_summary": {c: sum(1 for t in self.threats if t["category"] == c) for c in STRIDEThreatModel.CATEGORIES}
         }
 
-## LLM application threat model
+# LLM application threat model
 llm_threats = STRIDEThreatModel("Enterprise RAG Chatbot")
 llm_threats.add_threat("S", "Adversary spoofs as authorized user via prompt injection", "High", "Input validation + authentication")
 llm_threats.add_threat("T", "Adversary modifies RAG context to inject false information", "High", "Context integrity checks + signed documents")
@@ -340,7 +340,7 @@ llm_threats.add_control("Input Sanitizer", "Strips injection patterns from user 
 llm_threats.add_control("Output Filter", "Detects and blocks sensitive data in responses", ["Information disclosure", "data leakage"])
 
 print(llm_threats.analyze())
-```text
+```
 
 **PASTA threat modeling for AI pipelines**:
 
@@ -387,7 +387,7 @@ pasta = PASTAThreatModel("RAG-based Customer Support")
 components = pasta.decompose_ai_pipeline()
 print(f"AI Pipeline Components: {len(components)}")
 print(f"Attack Simulation: {pasta.simulate_attack('prompt_injection')}")
-```text
+```
 
 ---
 
@@ -460,7 +460,7 @@ dod.print_defense()
 
 threats = ["prompt injection", "data poisoning", "model extraction", "DoS", "data leakage"]
 print(f"\nCoverage: {dod.verify_coverage(threats)}")
-```text
+```
 
 ---
 
@@ -517,7 +517,7 @@ classifier.record_incident("User bypassed system prompt via role-playing attack"
 classifier.record_incident("Attacker extracted 1000 training examples via API queries", "2025-06-14T08:15:00Z")
 classifier.record_incident("Model extraction detected via high-frequency API calls", "2025-06-13T22:00:00Z")
 print(classifier.summary())
-```text
+```
 
 ---
 
@@ -551,7 +551,7 @@ const modeler = new ThreatModeler();
 modeler.addThreat({ category: "prompt_injection", name: "Direct Prompt Injection", risk: "critical", mitigation: "Input validation" });
 modeler.addThreat({ category: "data_poisoning", name: "Training Data Poisoning", risk: "high", mitigation: "Data provenance" });
 console.log(modeler.analyze());
-```text
+```
 
 ---
 

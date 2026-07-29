@@ -77,7 +77,7 @@ flowchart TD
         K --> L[LLM]
         L --> M[Response]
     end
-```text
+```
 
 ## 6.1 Pipeline Architecture
 
@@ -132,7 +132,7 @@ class PipelineContext:
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 
-## Abstract pipeline stages
+# Abstract pipeline stages
 class Loader(ABC):
     @abstractmethod
     def load(self, source: str) -> List[Document]: ...
@@ -164,7 +164,7 @@ class Generator(ABC):
 
 
 print("Pipeline component interfaces defined")
-```text
+```
 
 
 ## Overview
@@ -251,7 +251,7 @@ pipeline = RAGPipeline(
 )
 result = pipeline.query("What is RAG?")
 print(f"Response: {result.response}")
-```text
+```
 
 ## 6.2 Ingestion Pipeline
 
@@ -290,7 +290,7 @@ class DirectoryLoader(Loader):
 
 loader = FileLoader()
 print("File loader ready for ingestion")
-```text
+```
 
 ### 6.2.2 Ingestion Pipeline with Progress
 
@@ -340,7 +340,7 @@ store = VectorStore()
 ingestion = IngestionPipeline(MockChunker(), MockEmbedder(), store)
 stats = ingestion.run([Document(id="doc1", text="RAG pipeline design")])
 print(f"Ingestion stats: {stats}")
-```text
+```
 
 ## 6.3 Retrieval Pipeline
 
@@ -390,7 +390,7 @@ class QueryProcessor:
 processor = QueryProcessor()
 print(f"Query type: {processor.classify_query('What is RAG?')}")
 print(f"Rewritten: {processor.rewrite_query('explain more', [{'role': 'user', 'content': 'What is RAG?'}])}")
-```text
+```
 
 ### 6.3.2 Hybrid Retrieval Pipeline
 
@@ -438,7 +438,7 @@ retrieval_pipeline = RetrievalPipeline(
     dense if 'dense' in dir() else None,
 )
 print("Retrieval pipeline configured with RRF fusion")
-```text
+```
 
 ### 6.3.3 Late Chunking
 
@@ -473,7 +473,7 @@ def sentence_splitter(text: str) -> List[str]:
 
 
 print("Late chunking retriever ready")
-```text
+```
 
 ## 6.4 Augmentation Strategies
 
@@ -518,7 +518,7 @@ for position in ["prepend", "sandwich", "append"]:
     ctx.retrieved_chunks = [RetrievalResult("c1", "RAG combines retrieval and generation.", 0.9)]
     print(f"\n--- {position} ---")
     print(augmenter.augment(ctx)[:150])
-```text
+```
 
 ### 6.4.2 Instruction Design
 
@@ -552,7 +552,7 @@ for style in ["strict", "moderate", "citation"]:
     ctx.retrieved_chunks = [RetrievalResult("c1", "RAG stands for Retrieval-Augmented Generation.", 0.95)]
     print(f"\n=== {style} ===")
     print(aug.augment(ctx)[:200])
-```text
+```
 
 ### 6.4.3 Dynamic Context Selection
 
@@ -600,7 +600,7 @@ chunks = [
 ]
 selected = selector.select(chunks, "What is RAG?")
 print(f"Selected {len(selected)} chunks (relevance >= 0.4)")
-```text
+```
 
 ## 6.5 Generation Pipeline
 
@@ -635,7 +635,7 @@ formatter = OutputFormatter(include_citations=True)
 print(formatter.format("RAG is retrieval-augmented generation.", [
     RetrievalResult("c1", "RAG stands for Retrieval-Augmented Generation.", 0.9)
 ]))
-```text
+```
 
 ### 6.5.2 Streaming Response
 
@@ -661,7 +661,7 @@ for token in StreamingGenerator("gpt-4o-mini").generate("Explain RAG"):
     if isinstance(token, str) and len(token) < 10:
         pass
 print("Streaming generator ready")
-```text
+```
 
 ### 6.5.3 Generation with Validation
 
@@ -696,7 +696,7 @@ def validate_response(response: str) -> tuple:
 validator = ValidatedGenerator(MockGenerator(), validate_response)
 response, valid = validator.generate_and_validate("Explain RAG")
 print(f"Valid: {valid}, Response: {response[:100]}")
-```text
+```
 
 ## 6.6 Multi-Turn RAG
 
@@ -744,7 +744,7 @@ cm.add_message("conv-1", "assistant", "RAG is Retrieval-Augmented Generation.")
 cm.add_message("conv-1", "user", "Tell me more about it.")
 history = cm.format_history("conv-1")
 print(f"Conversation history:\n{history}")
-```text
+```
 
 ### 6.6.2 Context Injection with History
 
@@ -800,7 +800,7 @@ Answer based on the conversation history and retrieved context:"""
 
 
 print("Multi-turn RAG pipeline ready")
-```text
+```
 
 ### 6.6.3 Re-Query Trigger
 
@@ -823,7 +823,7 @@ class ReQueryDecider:
 decider = ReQueryDecider(threshold=0.3)
 print(f"Needs re-query (low scores): {decider.needs_requery([RetrievalResult('c1', '', 0.2, {})])}")
 print(f"Needs re-query (good scores): {decider.needs_requery([RetrievalResult('c1', '', 0.9, {})])}")
-```text
+```
 
 ## 6.7 Observability and Monitoring
 
@@ -886,7 +886,7 @@ class ObservableRAGPipeline(RAGPipeline):
 
 
 print("Observable pipeline with metrics tracking ready")
-```text
+```
 
 ## Summary
 

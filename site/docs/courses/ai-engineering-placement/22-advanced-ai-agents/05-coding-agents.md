@@ -75,7 +75,7 @@ flowchart TD
         SHELL[Shell Session]
     end
     Agent --> Tools
-```text
+```
 
 ## 5.1 Coding Agent Architecture
 
@@ -287,7 +287,7 @@ class CodingAgent {
         }
     }
 }
-```text
+```
 
 ```python
 from typing import List, Optional
@@ -362,7 +362,7 @@ class CodingAgent:
             language="python"
         )
         return file
-```text
+```
 
 ## 5.2 Proposer-Reviewer Pattern
 
@@ -479,7 +479,7 @@ class ProposerReviewerLoop {
         return result
     }
 }
-```text
+```
 
 ```python
 from typing import List, Tuple
@@ -526,7 +526,7 @@ class CodeReviewer:
 
         approved = all(i['severity'] != 'critical' for i in issues)
         return issues, approved
-```text
+```
 
 ## 5.3 Code as Meta-Tool
 
@@ -631,7 +631,7 @@ return parsed;
         return Object.fromEntries(this.parseFailureCount)
     }
 }
-```text
+```
 
 ```python
 from typing import Dict, Any, Callable
@@ -660,7 +660,7 @@ class DynamicToolCreator:
             return parser_fn
 
         return lambda x: {'raw': x}
-```text
+```
 
 ## 5.4 Self-Healing Systems
 
@@ -738,7 +738,7 @@ class SelfHealingSystem {
         return this.diagnosisHistory
     }
 }
-```text
+```
 
 ## 5.5 NL-to-SQL and Forms
 
@@ -840,7 +840,7 @@ class DynamicFormGenerator {
         return 'text'
     }
 }
-```text
+```
 
 ## 5.6 Artifact Pattern
 
@@ -918,7 +918,7 @@ class ArtifactGenerator {
         ].join('\n')
     }
 }
-```text
+```
 
 ## Summary
 

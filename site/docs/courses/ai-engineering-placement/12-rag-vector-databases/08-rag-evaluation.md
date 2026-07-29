@@ -68,7 +68,7 @@ flowchart LR
     G --> H{Pass?}
     H -->|Yes| I[Deploy]
     H -->|No| J[Rollback]
-```text
+```
 
 ## 8.1 RAG Evaluation Dimensions
 
@@ -119,7 +119,7 @@ class RAGEvaluator:
 evaluator = RAGEvaluator()
 print(f"Registered retrieval metrics: {len(evaluator.retrieval_metrics)}")
 print(f"Registered generation metrics: {len(evaluator.generation_metrics)}")
-```text
+```
 
 ## 8.2 Retrieval Metrics
 
@@ -149,7 +149,7 @@ print(f"Precision@3: {precision_at_k(retrieved_docs, relevant_docs, 3):.3f}")
 print(f"Recall@3: {recall_at_k(retrieved_docs, relevant_docs, 3):.3f}")
 print(f"Precision@5: {precision_at_k(retrieved_docs, relevant_docs, 5):.3f}")
 print(f"Recall@5: {recall_at_k(retrieved_docs, relevant_docs, 5):.3f}")
-```text
+```
 
 ### 8.2.2 Mean Reciprocal Rank (MRR)
 
@@ -172,7 +172,7 @@ results = [
     (["doc7", "doc8", "doc9"], {"doc10"}),
 ]
 print(f"MRR: {mean_reciprocal_rank(results):.4f}")
-```text
+```
 
 ### 8.2.3 Normalized Discounted Cumulative Gain (NDCG)
 
@@ -198,7 +198,7 @@ retrieved = ["doc1", "doc2", "doc3", "doc4", "doc5"]
 relevance_grades = {"doc1": 3.0, "doc2": 2.0, "doc3": 0.0, "doc4": 1.0, "doc5": 0.0}
 print(f"NDCG@3: {ndcg_at_k(retrieved, relevance_grades, 3):.4f}")
 print(f"NDCG@5: {ndcg_at_k(retrieved, relevance_grades, 5):.4f}")
-```text
+```
 
 ### 8.2.4 Mean Average Precision (mAP)
 
@@ -226,7 +226,7 @@ results = [
     (["doc4", "doc5", "doc6"], {"doc5", "doc6"}),
 ]
 print(f"mAP: {mean_average_precision(results):.4f}")
-```text
+```
 
 ### 8.2.5 Comprehensive Retrieval Evaluator
 
@@ -275,7 +275,7 @@ retrieval_eval = RetrievalEvaluator(
     relevant_docs=[{"doc1", "doc3"}, {"doc5"}],
 )
 print(retrieval_eval.full_report())
-```text
+```
 
 ## 8.3 Generation Metrics
 
@@ -318,7 +318,7 @@ faithfulness = FaithfulnessScorer()
 response = "RAG combines retrieval with generation. It reduces hallucination."
 context = ["RAG is Retrieval-Augmented Generation that combines retrieval with generation."]
 print(f"Faithfulness: {faithfulness.score(response, context):.2%}")
-```text
+```
 
 ### 8.3.2 Answer Relevance
 
@@ -356,7 +356,7 @@ Score (0.0 to 1.0):"""
 
 relevance = AnswerRelevanceScorer()
 print(f"Answer relevance: {relevance.score('What is RAG?', 'RAG is a technique for grounding LLMs.'):.2%}")
-```text
+```
 
 ### 8.3.3 Context Precision and Recall
 
@@ -392,7 +392,7 @@ result = cpr.evaluate(
     {"RAG is retrieval augmented generation."},
 )
 print(f"Context precision: {result['context_precision']:.3f}, recall: {result['context_recall']:.3f}")
-```text
+```
 
 ## 8.4 End-to-End Metrics (RAGAS)
 
@@ -454,7 +454,7 @@ result = ragas.evaluate(
     ground_truth="RAG is Retrieval-Augmented Generation, a technique for grounding LLMs.",
 )
 print(f"RAGAS scores: {result}")
-```text
+```
 
 ### 8.4.2 RAGAS Batch Evaluation
 
@@ -490,7 +490,7 @@ test_set = [
 
 evaluator = RAGASBatchEvaluator()
 print("RAGAS batch evaluator ready")
-```text
+```
 
 ### 8.4.3 TruLens-Style Feedback Functions
 
@@ -530,7 +530,7 @@ tl = TruLensStyleEvaluator()
 tl.add_feedback("qa_relevance", qa_relevance)
 tl.add_feedback("groundedness", groundedness)
 print(tl.evaluate("What is RAG?", "RAG is a technique.", ["RAG is a technique."]))
-```text
+```
 
 ## 8.5 Evaluation Frameworks
 
@@ -575,7 +575,7 @@ pipeline = EvaluationPipeline("rag-eval-v1")
 pipeline.add_metric("faithfulness", lambda query, response: 0.9, ["query"])
 pipeline.add_test_set("test-qa", [{"query": "What is RAG?"}])
 print("Custom evaluation pipeline ready")
-```text
+```
 
 ### 8.5.2 DeepEval Integration (Conceptual)
 
@@ -616,7 +616,7 @@ class DeepEvalAdapter:
 deep_eval = DeepEvalAdapter()
 deep_eval.add_test_case("What is RAG?", "RAG is a technique.", ["RAG is a technique."])
 print("DeepEval-style adapter ready")
-```text
+```
 
 ### 8.5.3 Regression Tracking
 
@@ -657,7 +657,7 @@ tracker = RegressionTracker()
 tracker.record_evaluation("v1", {"faithfulness": 0.85, "relevancy": 0.80})
 tracker.record_evaluation("v2", {"faithfulness": 0.82, "relevancy": 0.83})
 print(f"Regressions: {tracker.check_regression({'faithfulness': 0.82})}")
-```text
+```
 
 ## 8.6 A/B Testing
 
@@ -707,7 +707,7 @@ class MockRAG:
 
 experiment = RAGExperiment("test-v1", MockRAG(), MockRAG())
 print("A/B experiment configured")
-```text
+```
 
 ### 8.6.2 Statistical Significance
 
@@ -733,7 +733,7 @@ def significance_test(control_scores: List[float], treatment_scores: List[float]
 control = [0.8, 0.85, 0.82, 0.79, 0.83]
 treatment = [0.88, 0.91, 0.85, 0.89, 0.87]
 print(significance_test(control, treatment))
-```text
+```
 
 ### 8.6.3 Rollout Strategy
 
@@ -766,7 +766,7 @@ rollout = RAGRolloutManager(MockRAG(), MockRAG())
 rollout.set_traffic_percentage(10)
 print(f"Treatment at {rollout.traffic_percentage}%")
 print(f"Rollout plan: {rollout.gradual_rollout([10, 25, 50, 100])}")
-```text
+```
 
 ## Summary
 

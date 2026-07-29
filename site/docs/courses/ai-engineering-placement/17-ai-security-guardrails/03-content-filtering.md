@@ -69,7 +69,7 @@ flowchart TB
     H -->|No| J[Fallback + Log]
     D --> K[Moderation Log]
     J --> K
-```text
+```
 
 ## 3.1 Content Filtering Overview
 
@@ -118,7 +118,7 @@ class BaseFilter:
         elif result.action == "flag":
             self.stats["flagged"] += 1
 
-## Toxicity keyword filter
+# Toxicity keyword filter
 class ToxicityFilter(BaseFilter):
     def __init__(self):
         super().__init__("toxicity_filter")
@@ -151,7 +151,7 @@ class ToxicityFilter(BaseFilter):
 toxicity = ToxicityFilter()
 print(toxicity.filter("You are an idiot"))
 print(toxicity.filter("What is the weather today?"))
-```text
+```
 
 ---
 
@@ -184,7 +184,7 @@ class InputFilterPipeline:
     def summary(self) -> dict:
         return {f.name: f.stats for f in self.filters}
 
-## Build input filter pipeline
+# Build input filter pipeline
 class PIIFilter(BaseFilter):
     def __init__(self):
         super().__init__("pii_filter")
@@ -262,7 +262,7 @@ for test in tests:
     else:
         blocked = [r for r in results if r.action == "block"]
         print(f"❌ Blocked: {blocked[0].details} | '{test[:40]}...'")
-```text
+```
 
 ---
 
@@ -342,7 +342,7 @@ output_pipeline.add_filter(SafetyFilter())
 output_pipeline.add_filter(BrandAlignmentFilter())
 output_pipeline.add_filter(MisinformationFilter())
 
-## Test outputs
+# Test outputs
 outputs = [
     "Here is how to improve your credit score",
     "This product will guaranteed double your money in 24 hours!",
@@ -358,7 +358,7 @@ for out in outputs:
         blocked = [r for r in results if r.action == "block"]
         if blocked:
             print(f"❌ Blocked: {blocked[0].details} | '{out[:40]}...'")
-```text
+```
 
 ---
 
@@ -415,7 +415,7 @@ class TopicRestrictor:
 
         return True, "allowed"
 
-## Configure topic restrictions for a financial advisory bot
+# Configure topic restrictions for a financial advisory bot
 restrictor = TopicRestrictor()
 restrictor.allow_topic("investing", [r"\binvest(ing|ment|or)?s?\b", r"\bportfolio\b", r"\bstock\b", r"\bbond\b", r"\betf\b"])
 restrictor.allow_topic("retirement", [r"\bretire(ment)?\b", r"\b401k?\b", r"\bIRA\b", r"\bpension\b"])
@@ -434,7 +434,7 @@ for q in queries:
     allowed, reason = restrictor.check_input(q)
     status = "✅" if allowed else "❌"
     print(f"{status} {reason}: {q[:50]}")
-```text
+```
 
 **Category-based response handling**:
 
@@ -466,7 +466,7 @@ for q in queries:
     print(f"Action: {r['action']}")
     if r['action'] == 'block':
         print(f"Response: {r['response']}")
-```text
+```
 
 ---
 
@@ -551,7 +551,7 @@ for text in test_texts:
     result = classifier.classify(text)
     icon = "❌" if result["action"] == "block" else "✅"
     print(f"{icon} [{result['action']}] {text[:45]:45s} | filters: {result['triggered_filters']}")
-```text
+```
 
 **LLM-as-judge safety classifier**:
 
@@ -583,7 +583,7 @@ Text: {text}"""
 judge = LLMAsJudgeClassifier()
 print(judge.evaluate("I will kill you"))
 print(judge.evaluate("The weather is nice today"))
-```text
+```
 
 ---
 
@@ -672,18 +672,18 @@ class ModerationPipeline:
     def _log(self, event: str, content: str, stage: str):
         self.log.append({"event": event, "content": content[:100], "stage": stage, "timestamp": datetime.utcnow().isoformat()})
 
-## Build moderation pipeline
+# Build moderation pipeline
 moderation = ModerationPipeline()
 
-## Input stages
+# Input stages
 moderation.add_input_stage("toxicity_check", lambda t: {"action": "block" if re.search(r"idiot|stupid|hate", t.lower()) else "allow"})
 moderation.add_input_stage("pii_check", lambda t: {"action": "block" if re.search(r"\b\d{3}-\d{2}-\d{4}\b", t) else "allow"})
 
-## Output stages
+# Output stages
 moderation.add_output_stage("safety_check", lambda t: {"action": "block" if re.search(r"kill|hurt|bomb", t.lower()) else "allow"})
 moderation.add_output_stage("misinformation_check", lambda t: {"action": "block" if re.search(r"vaccine.*autism", t.lower()) else "allow"})
 
-## Test
+# Test
 tests = [
     ("You are stupid", "I'm sorry you feel that way"),
     ("What's my SSN? 123-45-6789", "Your SSN is..."),
@@ -694,7 +694,7 @@ for inp, resp in tests:
     result = moderation.process(inp, resp)
     status = "✅" if result["allowed"] else "❌"
     print(f"{status} Input: {inp[:40]:40s} | Response: {result['response'][:40]}")
-```text
+```
 
 ---
 
@@ -732,7 +732,7 @@ filter.addPattern("toxicity", ["\\b(hate|idiot|stupid)\\b"]);
 filter.addPattern("pii", ["\\b\\d{3}-\\d{2}-\\d{4}\\b"]);
 console.log(filter.filter("You are an idiot"));
 console.log(filter.filter("Hello world"));
-```text
+```
 
 ---
 

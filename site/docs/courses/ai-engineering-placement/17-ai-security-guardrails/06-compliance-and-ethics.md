@@ -78,7 +78,7 @@ flowchart TB
     end
     Regulations --> Requirements
     Requirements --> Implementation
-```text
+```
 
 ## 6.1 Compliance Frameworks
 
@@ -164,7 +164,7 @@ for reg in [AIRegulation.GDPR, AIRegulation.EU_AI_ACT]:
 
 print(f"Total compliance checks: {checklist.generate_report()['total_checks']}")
 print(f"GDPR requirements: {len(ComplianceChecklist.REGULATION_REQUIREMENTS[AIRegulation.GDPR])}")
-```text
+```
 
 **Risk classification per EU AI Act**:
 
@@ -230,7 +230,7 @@ for desc, use, domain in systems:
     print(f"\n{desc}")
     print(f"  Risk Level: {result['risk_level'].upper()}")
     print(f"  Requirements: {result['requirements'][:2]}")
-```text
+```
 
 ---
 
@@ -332,19 +332,19 @@ privacy = DataPrivacyManager()
 privacy.log_consent("user_123", "model_training", True)
 privacy.log_consent("user_123", "analytics", True)
 
-## Check consent before training
+# Check consent before training
 if privacy.check_consent("user_123", "model_training"):
     print("User consented to model training — proceeding")
 
-## Handle deletion request
+# Handle deletion request
 req_id = privacy.register_data_subject_request("user_123", "deletion")
 privacy.fulfill_deletion_request("user_123")
 
-## Anonymization example
+# Anonymization example
 record = {"name": "Alice Johnson", "email": "alice@example.com", "age": 30}
 anon = privacy.anonymize_data(record, ["name", "email"])
 print(f"Anonymized: {anon}")
-```text
+```
 
 **Data retention policy enforcement**:
 
@@ -378,7 +378,7 @@ rp.add_policy("training_logs", 90, "anonymize")
 rp.add_policy("raw_user_data", 365, "delete")
 
 print(rp.check_expiry("2024-01-15T00:00:00", "training_logs"))
-```text
+```
 
 ---
 
@@ -483,7 +483,7 @@ groups = np.random.choice(["group_a", "group_b"], n)
 results = assessor.comprehensive_assessment(predictions, labels, groups)
 print(json.dumps({k: v for k, v in results.items() if k != "overall_pass"}, indent=2, default=str))
 print(f"Overall fairness: {'PASS' if results['overall_pass'] else 'FAIL'}")
-```text
+```
 
 **Bias mitigation techniques**:
 
@@ -528,7 +528,7 @@ df = pd.DataFrame({
 })
 reweighed = mitigator.reweigh_training_data(df, "group", "target")
 print(f"Reweighed data: {reweighed['sample_weight'].describe()}")
-```text
+```
 
 ---
 
@@ -577,7 +577,7 @@ class SHAPExplainer:
             "top_features": sorted(zip(self.feature_names, shap_values), key=lambda x: -abs(x[1]))[:3]
         }
 
-## Simulated model
+# Simulated model
 def mock_model(X):
     return X @ np.array([2.0, -1.0, 0.5]) + 0.1
 
@@ -585,7 +585,7 @@ X_sample = np.array([1.5, -0.5, 2.0])
 explainer = SHAPExplainer(mock_model, ["sqft", "bedrooms", "age"])
 explanation = explainer.explain(X_sample)
 print(json.dumps(explanation, indent=2, default=str))
-```text
+```
 
 **LIME explainer**:
 
@@ -622,7 +622,7 @@ class LIMExplainer:
 lime = LIMExplainer(mock_model, ["sqft", "bedrooms", "age"])
 lime_result = lime.explain_instance(np.array([1500, 3, 10]))
 print(f"LIME: {lime_result['feature_importances']}")
-```text
+```
 
 **Global feature importance**:
 
@@ -651,7 +651,7 @@ X = np.random.randn(100, 4)
 y = X @ np.array([1.5, -0.5, 0.0, 2.0]) + np.random.randn(100) * 0.1
 importance = GlobalFeatureImportance.permutation_importance(mock_model, X, y, ["f1", "f2", "f3", "f4"], mae)
 print(json.dumps(importance, indent=2))
-```text
+```
 
 ---
 
@@ -736,7 +736,7 @@ card.add_section("ethical_considerations", {
 })
 
 print(card.generate())
-```text
+```
 
 **Data sheet**:
 
@@ -772,7 +772,7 @@ ds.add_entry("Legal", "Consent", "All data from public sources, no PII retained"
 ds.add_entry("Legal", "Licensing", "MIT license for derived dataset")
 ds.add_entry("Ethics", "Bias assessment", "Balanced across urban/suburban/rural, income bias < 2%")
 print(ds.generate()[:300])
-```text
+```
 
 ---
 
@@ -850,7 +850,7 @@ ethics.approve_principle(review["id"], "transparency", "Response includes confid
 print(f"Review progress: {ethics.get_review_status(review['id'])}")
 
 ethics.report_incident("biased_response", "Model favored male names for promotion recommendations", "high")
-```text
+```
 
 **AI ethics review board workflow**:
 
@@ -903,7 +903,7 @@ board = EthicsReviewBoard()
 board.submit_for_review("SupportBot-v2", {"fairness": "passed"})
 board.assign_reviewer("erb-1")
 board.approve("erb-1", "All ethical considerations addressed")
-```text
+```
 
 ---
 
@@ -941,7 +941,7 @@ tracker.addRequirement("GDPR", "Right to erasure");
 tracker.addRequirement("GDPR", "Right to access");
 tracker.complete("Right to access");
 console.log(tracker.report());
-```text
+```
 
 ---
 

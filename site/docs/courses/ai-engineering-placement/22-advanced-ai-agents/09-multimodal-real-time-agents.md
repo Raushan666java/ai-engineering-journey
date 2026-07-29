@@ -73,7 +73,7 @@ flowchart LR
         VLA --> MOTOR[Motor Commands]
         MOTOR --> CAM
     end
-```text
+```
 
 ## 9.1 Three Voice Paradigms
 
@@ -123,7 +123,7 @@ class VoiceParadigmCatalog {
         return map[useCase] ?? 'Cascaded (ASR → LLM → TTS)'
     }
 }
-```text
+```
 
 ```python
 from enum import Enum
@@ -155,7 +155,7 @@ class VoiceAgentConfig:
             },
         }
         return latencies.get(paradigm, {})
-```text
+```
 
 ## 9.2 Streaming Voice Pipeline
 
@@ -287,7 +287,7 @@ class StreamingVoicePipeline {
         }
     }
 }
-```text
+```
 
 ## 9.3 Computer Use Agents
 
@@ -407,7 +407,7 @@ class ComputerUseAgent {
         }
     }
 }
-```text
+```
 
 ```python
 from typing import List, Optional
@@ -472,7 +472,7 @@ class ComputerUseAgent:
             'total_actions': len(self.action_log),
             'success': True,
         }
-```text
+```
 
 ## 9.4 Vision-Language-Action (VLA) Pipelines
 
@@ -599,7 +599,7 @@ class VLAPipeline {
         }
     }
 }
-```text
+```
 
 ## 9.5 Real-Time Evaluation
 
@@ -689,7 +689,7 @@ class RealTimeEvaluator {
         ].join('\n')
     }
 }
-```text
+```
 
 ```python
 from typing import List
@@ -724,7 +724,7 @@ class LatencyProfiler:
             'tts_latency_ms': self.measure_segment('llm_end', 'audio_play_start'),
             'end_to_end_ms': self.measure_segment('audio_start', 'audio_play_start'),
         }
-```text
+```
 
 ## Summary
 

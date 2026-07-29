@@ -79,7 +79,7 @@ flowchart TD
     HF --> FT
     Local --> Prod
     Prod --> FT
-```text
+```
 
 ## 4.1 Hugging Face Ecosystem
 
@@ -144,7 +144,7 @@ class HuggingFaceHub {
         }
     }
 }
-```text
+```
 
 ### Inference API
 
@@ -202,7 +202,7 @@ class HFInferenceClient {
         }
     }
 }
-```text
+```
 
 ### Spaces
 
@@ -236,7 +236,7 @@ class TransformersJSClient {
         return result[0]
     }
 }
-```text
+```
 
 The Hugging Face ecosystem is the single most important resource for AI developers in 2026 — it is the GitHub of machine learning.
 
@@ -323,7 +323,7 @@ class OllamaClient {
         return `${this.baseUrl}/v1`
     }
 }
-```text
+```
 
 ### Modelfile — Customizing Models
 
@@ -385,7 +385,7 @@ class OllamaModelfileBuilder {
         if (!res.ok) throw new Error(`Failed to create model: ${name}`)
     }
 }
-```text
+```
 
 Open WebUI is the most popular GUI companion for Ollama — a self-hosted ChatGPT-like interface with conversation history, model switching, RAG integration, and multi-user support.
 
@@ -475,7 +475,7 @@ class VLLMClient {
         return `python -m vllm.entrypoints.openai.api_server ${args.join(' \\\n  ')}`
     }
 }
-```text
+```
 
 vLLM is the recommended deployment target for any production LLM application serving open-weight models at scale. Combined with Hugging Face for model storage and Docker for deployment, it forms the backbone of enterprise AI infrastructure.
 
@@ -560,7 +560,7 @@ class UnslothTrainer {
         return Math.max(0.1, 2.5 - epoch * 0.8 + (Math.random() - 0.5) * 0.3)
     }
 }
-```text
+```
 
 Unsloth's key innovations:
 - **Fast attention kernels** — custom CUDA kernels that are 1.5-2x faster than Flash Attention
@@ -631,7 +631,7 @@ class DeploymentAdvisor {
         return purpose.split(' ').filter(w => lower.includes(w)).length
     }
 }
-```text
+```
 
 ## Summary
 

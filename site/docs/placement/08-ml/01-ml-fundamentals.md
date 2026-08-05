@@ -45,7 +45,7 @@ flowchart LR
     G -->|No| H[Tune Hyperparameters]
     H --> D
     G -->|Yes| I[Deploy]
-```text
+```
 
 
 ## Introduction
@@ -92,7 +92,7 @@ interface SupervisedModel {
   predict(X: number[][]): (number | string)[];
   score(X: number[][], y: (number | string)[]): number;
 }
-```text
+```
 
 **Unsupervised learning**: Model finds patterns in unlabeled data. Used for clustering and dimensionality reduction.
 
@@ -141,7 +141,7 @@ function analyzeBiasVariance(
   // Total error = bias^2 + variance + irreducible error
   return { bias, variance, totalError: bias + variance };
 }
-```text
+```
 
 **Rule of thumb**: Simple models (linear regression) have high bias, low variance. Complex models (deep neural networks) have low bias, high variance.
 
@@ -222,7 +222,7 @@ class DataPreprocessor {
     );
   }
 }
-```text
+```
 
 ---
 
@@ -325,7 +325,7 @@ class TrainTestSplitter {
     };
   }
 }
-```text
+```
 
 ---
 
@@ -415,7 +415,7 @@ class MetricsCalculator {
     return { fpr, tpr, auc };
   }
 }
-```text
+```
 
 ---
 
@@ -461,7 +461,7 @@ class MLEngine {
     return this.metrics.classification(yTest, predictions);
   }
 }
-```text
+```
 
 ---
 
@@ -623,281 +623,3 @@ d) Feature importance
 - Confusion matrix: TP, TN, FP, FN — all classification metrics derive from these four values
 - Learning curves: high training + high validation error = underfitting; low training + high validation error = overfitting
 - Always preprocess test data using statistics from training data only to prevent data leakage
-
-
-## Summary
-
-Machine learning fundamentals form the theoretical and practical base for all AI engineering work. The three learning paradigms — supervised, unsupervised,.
-and reinforcement — each serve different problem types. The bias-variance trade-off explains why models underfit or overfit and guides model selection. Data preprocessing (standardization,.
-encoding, missing value imputation) is critical for model performance. Train/test splitting with stratification and k-fold cross-validation provide reliable performance estimates. Evaluation metrics beyond accuracy — precision,.
-recall, F1, ROC-AUC — are essential for imbalanced real-world datasets.
-
-
-## Placement Section
-
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. You have a dataset with 1 million samples and 500 features. Walk through your complete ML pipeline from preprocessing to evaluation, explaining each decision
-2. Explain the bias-variance trade-off mathematically and describe how you would diagnose each in a production model
-
-#### Amazon Style
-1. A fraud detection model has 99.5% accuracy but is failing to catch actual fraud. How do you redesign the evaluation approach and retrain the model?
-2. Describe a machine learning project where data quality issues caused model failure. How did you identify and fix the problems?
-
-#### Microsoft Style
-1. How do you explain the difference between precision and recall to a product manager who needs to choose a threshold for a content moderation system?
-2. A model performs well in testing but poorly in production. What are the top 5 reasons and how do you investigate each?
-
-#### NVIDIA Style
-1. A classification model processes 10 million features per sample on GPU. How do you optimize the preprocessing pipeline to leverage parallel computation?
-2. Your training pipeline preprocesses data in O(n^2) time. How do you profile and optimize the bottleneck for large-scale datasets?
-
-#### AI Startup Style
-1. You need to build a sentiment analysis model with only 200 labeled samples. What approaches do you use and how do you evaluate the model reliably?
-2. A startup client wants to predict customer churn but has no ML expertise. How do you frame the problem, choose metrics, and communicate results?
-
-
-### Resume Tips
-- List "Machine Learning" under Technical Skills with specific libraries (scikit-learn, pandas, NumPy)
-- Project example: "Built end-to-end ML pipeline with stratified cross-validation, achieving F1=0.87 on imbalanced fraud detection dataset"
-- Include ML-specific metrics in project descriptions: "Reduced false negative rate by 35% through threshold optimization and SMOTE oversampling"
-
-
-### Interview Day Checklist
-- [ ] Can explain bias-variance trade-off with a visual diagram from memory
-- [ ] Can derive precision, recall, F1 from a confusion matrix without notes
-- [ ] Can describe the difference between standardization and normalization and when to use each
-- [ ] Can implement k-fold cross-validation from memory in Python or TypeScript
-- [ ] Can list 3 ways to handle imbalanced datasets
-
-> **Next**: [Linear Regression](02-linear-regression.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Machine Learning fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master ml fundamentals?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of ml fundamentals helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding ml fundamentals at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of ml fundamentals like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply ml fundamentals concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of ml fundamentals?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply ml fundamentals in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Machine Learning?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Machine Learning, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Training Workflow
-
-1. **Data Preparation**: Collect, clean, and preprocess data
-2. **Model Selection**: Choose architecture based on task requirements
-3. **Training Loop**: Forward pass, loss computation, backpropagation
-4. **Validation**: Evaluate on held-out data to prevent overfitting
-5. **Hyperparameter Tuning**: Optimize learning rate, batch size, etc.
-6. **Model Export**: Save trained model for deployment

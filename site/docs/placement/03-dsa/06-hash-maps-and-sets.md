@@ -71,7 +71,7 @@ flowchart LR
     E --> O[Subarray Sum]
     F --> P[Group Anagrams]
     F --> Q[Isomorphic Strings]
-```text
+```
 
 ## 6.1 Hash Map Fundamentals
 
@@ -92,7 +92,7 @@ def simple_hash(key, table_size):
 
 print(simple_hash("hello", 16))  # Example: 9
 print(simple_hash("world", 16))  # Example: 2
-```text
+```
 
 ### Collision Resolution
 
@@ -131,7 +131,7 @@ class HashMapChaining:
                 del self.buckets[idx][i]
                 return
         raise KeyError(key)
-```text
+```
 
 **Open Addressing (Linear Probing):** When a collision occurs, probe the next available bucket.
 
@@ -162,7 +162,7 @@ class HashMapLinearProbing:
                 return self.values[idx]
             idx = (idx + 1) % self.size
         raise KeyError(key)
-```text
+```
 
 ### Load Factor and Rehashing
 
@@ -190,7 +190,7 @@ def char_frequency(s):
 print(char_frequency("hello world"))
 
 ## {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
-```text
+```
 
 
 ## Overview
@@ -209,7 +209,7 @@ text = "the quick brown fox jumps over the lazy dog the quick"
 print(word_frequency(text))
 
 ## {'the': 3, 'quick': 2, 'brown': 1, 'fox': 1, 'jumps': 1, 'over': 1, 'lazy': 1, 'dog': 1}
-```text
+```
 
 
 ## Overview
@@ -230,7 +230,7 @@ def majority_element_hash(nums):
 
 nums = [2, 2, 1, 1, 1, 2, 2]
 print(majority_element_hash(nums))  # 2
-```text
+```
 
 ### Frequency Counting Patterns
 
@@ -265,7 +265,7 @@ print(f"Intersection: {inter}")      # {4, 5}
 print(f"Union: {uni}")               # {1, 2, 3, 4, 5, 6, 7, 8}
 print(f"Difference: {diff}")         # {1, 2, 3}
 print(f"Symmetric diff: {sym}")      # {1, 2, 3, 6, 7, 8}
-```text
+```
 
 ### Intersection of Two Arrays
 
@@ -281,7 +281,7 @@ def intersection_of_arrays(nums1, nums2):
 nums1 = [1, 2, 2, 1]
 nums2 = [2, 2]
 print(intersection_of_arrays(nums1, nums2))  # [2]
-```text
+```
 
 ### Longest Consecutive Sequence
 
@@ -303,7 +303,7 @@ def longest_consecutive(nums):
 
 nums = [100, 4, 200, 1, 3, 2]
 print(longest_consecutive(nums))  # 4 (sequence: 1, 2, 3, 4)
-```text
+```
 
 **Why it works:** We only start counting from the smallest element of each sequence (no predecessor in the set). This ensures each element is visited at most twice, giving O(n) total.
 
@@ -336,7 +336,7 @@ def two_sum(nums, target):
 
 nums = [2, 7, 11, 15]
 print(two_sum(nums, 9))  # [0, 1]
-```text
+```
 
 **Key insight:** As we iterate, we store each number's index. The next number checks if its complement has already been stored. This avoids needing to sort and handles unsorted input in one pass.
 
@@ -358,7 +358,7 @@ def subarray_sum(nums, k):
 
 nums = [1, 1, 1]
 print(subarray_sum(nums, 2))  # 2 ([1,1] at index 0-1, and [1,1] at index 1-2)
-```text
+```
 
 **How it works:** We track the cumulative prefix sum at each position. If `prefix_sum - k` has been seen before, that means the subarray between those two points sums to k. The hash map stores how many times each prefix sum has occurred.
 
@@ -375,7 +375,7 @@ def contains_duplicate(nums):
 
 print(contains_duplicate([1, 2, 3, 1]))  # True
 print(contains_duplicate([1, 2, 3, 4]))  # False
-```text
+```
 
 ### Constant-Time Lookup Patterns
 
@@ -408,7 +408,7 @@ strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print(group_anagrams(strs))
 
 ## [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
-```text
+```
 
 **Optimization:** Instead of sorting (O(k log k)), count characters as a tuple of 26 counts for O(k) key computation.
 
@@ -423,7 +423,7 @@ def group_anagrams_optimized(strs):
     return list(groups.values())
 
 print(group_anagrams_optimized(["eat", "tea", "tan", "ate", "nat", "bat"]))
-```text
+```
 
 
 ## Overview
@@ -452,7 +452,7 @@ def is_isomorphic(s, t):
 print(is_isomorphic("egg", "add"))   # True
 print(is_isomorphic("foo", "bar"))   # False
 print(is_isomorphic("paper", "title"))  # True
-```text
+```
 
 Two hash maps enforce a bijection: each character in s maps to exactly one character in t, and vice versa.
 
@@ -478,7 +478,7 @@ def word_pattern(pattern, s):
 
 print(word_pattern("abba", "dog cat cat dog"))  # True
 print(word_pattern("abba", "dog cat cat fish"))  # False
-```text
+```
 
 ### Pattern Matching Comparison
 
@@ -547,7 +547,7 @@ cache.put(2, 2)
 print(cache.get(1))    # 1
 cache.put(3, 3)        # evicts key 2
 print(cache.get(2))    # -1
-```text
+```
 
 ### Hash Map vs. Alternative Data Structures
 
@@ -580,7 +580,7 @@ freq["a"] += 1  # No KeyError, defaults to 0 then increments
 from collections import Counter
 c = Counter("hello world")
 print(c.most_common(3))  # [('l', 3), ('o', 2), ('h', 1)]
-```text
+```
 
 ## TypeScript Parallel
 
@@ -599,7 +599,7 @@ function charFrequency(s: string): Map<string, number> {
 
 const freq = charFrequency("hello world");
 console.log(freq); // Map(8) { 'h' => 1, 'e' => 1, 'l' => 3, 'o' => 2, ' ' => 1, 'w' => 1, 'r' => 1, 'd' => 1 }
-```text
+```
 
 ### Two Sum with Type Safety
 
@@ -617,7 +617,7 @@ function twoSum(nums: number[], target: number): number[] | null {
 }
 
 console.log(twoSum([2, 7, 11, 15], 9)); // [0, 1]
-```text
+```
 
 ### Group Anagrams
 
@@ -635,7 +635,7 @@ function groupAnagrams(strs: string[]): string[][] {
 }
 
 console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
-```text
+```
 
 ### Longest Consecutive Sequence
 
@@ -658,7 +658,7 @@ function longestConsecutive(nums: number[]): number {
 }
 
 console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // 4
-```text
+```
 
 ### TypeScript vs Python Hash Maps
 
@@ -863,7 +863,7 @@ def num_jewels_in_stones(jewels, stones):
 
 print(num_jewels_in_stones("aA", "aAAbbbb"))  # 3
 print(num_jewels_in_stones("z", "ZZ"))        # 0
-```text
+```
 
 ### Exercise 2 (Medium): Top K Frequent Elements
 
@@ -895,7 +895,7 @@ def top_k_frequent_bucket(nums, k):
     return result
 
 print(top_k_frequent_bucket([1, 1, 1, 2, 2, 3], 2))  # [1, 2]
-```text
+```
 
 
 ## Overview
@@ -937,7 +937,7 @@ board = [
     [".",".",".",".","8",".",".","7","9"]
 ]
 print(is_valid_sudoku(board))  # True
-```text
+```
 
 ### Exercise 4 (Hard): Longest Substring Without Repeating Characters
 
@@ -957,7 +957,7 @@ def length_of_longest_substring(s):
 print(length_of_longest_substring("abcabcbb"))  # 3 ("abc")
 print(length_of_longest_substring("bbbbb"))     # 1 ("b")
 print(length_of_longest_substring("pwwkew"))    # 3 ("wke")
-```text
+```
 
 ### Exercise 5 (Hard): Minimum Window Substring
 
@@ -994,7 +994,7 @@ def min_window(s, t):
 s = "ADOBECODEBANC"
 t = "ABC"
 print(min_window(s, t))  # "BANC"
-```text
+```
 
 ---
 
@@ -1007,262 +1007,3 @@ print(min_window(s, t))  # "BANC"
 - Collision resolution: chaining vs open addressing
 - Use for frequency counting and two-sum patterns
 - Ordered map for sorted key requirements
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
-2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
-2. How would you explain data structures algorithms to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
-2. What are the security implications of data structures algorithms?
-
-#### NVIDIA Style
-1. How would you optimize data structures algorithms for GPU-accelerated computing?
-2. What parallel processing patterns apply to data structures algorithms?
-
-#### AI Startup Style
-1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using data structures algorithms?
-
-### Resume Tips
-- **Technical Skills**: List data structures algorithms under relevant technical skills
-- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of data structures algorithms
-- [ ] Practice 3-5 problems related to data structures algorithms
-- [ ] Prepare 2 real-world examples of using data structures algorithms
-- [ ] Know the time/space complexity of common data structures algorithms operations
-- [ ] Have questions ready about how the company uses data structures algorithmslists.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Data Structures & Algorithms fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master hash maps and sets?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of hash maps and sets helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding hash maps and sets at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of hash maps and sets like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply hash maps and sets concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of hash maps and sets?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply hash maps and sets in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Data Structures & Algorithms?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Data Structures & Algorithms, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

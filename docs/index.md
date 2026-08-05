@@ -2,7 +2,7 @@
 hide:
   - navigation
   - toc
-description: "Raushan Kumar — AI Engineering Journey. Laravel developer transitioning to AI Engineering. 500+ lessons: LLMs, RAG, Agents, MCP, Transformer, GATE CS, placement prep, Java, system design."
+description: "Explore a comprehensive AI Engineering curriculum with 1,900+ lessons. Master Machine Learning, LLMs, AI Agents, System Design, and Full-Stack Development through hands-on, production-ready projects."
 ---
 
 <div class="home-hero">
@@ -11,7 +11,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 # AI Engineering Journey
 
-<p class="hero-tagline">From zero to production AI — 1,900+ lessons covering ML, LLMs, agents, full-stack dev, CS fundamentals, and exam prep. Built in public by a Laravel dev turned AI engineer.</p>
+<p class="hero-tagline">Master Artificial Intelligence from the ground up. 1,900+ in-depth lessons spanning Machine Learning, LLMs, Autonomous Agents, Full-Stack Development, and core CS fundamentals. Building production-grade AI in public.</p>
 
 <div class="hero-stats">
   <span class="hero-stat"><strong>52+</strong> Courses</span>
@@ -30,7 +30,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="hero-subsection">
 
-Looking for something specific? <a href="?q=" onclick="document.querySelector('.md-search__input').focus();return false;">Search all courses</a> · <a href="roadmap/">View roadmap</a> · <a href="trending/">Trending topics</a>
+Ready to dive in? <a href="?q=" onclick="document.querySelector('.md-search__input').focus();return false;">Search the catalog</a> · <a href="roadmap/">View the learning roadmap</a> · <a href="trending/">Discover trending topics</a>
 
 </div>
 
@@ -38,7 +38,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
 ## AI Engineering Path
 
-<p class="section-intro">Follow the sequence, build as you learn, and leave with an evidence-backed portfolio.</p>
+<p class="section-intro">Follow a structured learning progression, build functional systems as you learn, and graduate with a robust, evidence-backed portfolio.</p>
 
 <div class="grid cards" markdown>
 
@@ -46,7 +46,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
     ---
 
-    Setup & tooling, math foundations, ML fundamentals, deep learning core. Building from first principles.
+    Master the prerequisites. Build strong mathematical foundations, grasp core Machine Learning concepts, and construct deep learning architectures from first principles.
 
     [:octicons-arrow-right-24: Start Here](ai-engineering-from-scratch/phases/00-setup-and-tooling/)
 
@@ -54,7 +54,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
     ---
 
-    Computer vision from CNN to ViT, NLP from bag-of-words to Transformers. Full-stack AI foundations.
+    Process visual and textual data at scale. Progress from traditional CNNs to Vision Transformers, and master NLP from basic bag-of-words to modern transformer architectures.
 
     [:octicons-arrow-right-24: Explore](ai-engineering-from-scratch/phases/04-computer-vision/)
 
@@ -62,7 +62,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
     ---
 
-    Speech/audio, Transformers deep-dive, generative AI, RL, LLMs from scratch. The core curriculum.
+    Unlock the power of Generative AI. Dive deep into attention mechanisms, Reinforcement Learning, and engineer Large Language Models entirely from scratch.
 
     [:octicons-arrow-right-24: LLMs From Scratch](ai-engineering-from-scratch/phases/10-llms-from-scratch/)
 
@@ -70,7 +70,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
     ---
 
-    LLM engineering, multimodal AI, MCP/A2A protocols, agent engineering, autonomous systems, safety alignment, capstone projects.
+    Deploy autonomous systems to production. Master LLMOps, multimodal AI integrations, MCP/A2A protocols, and build highly capable, safety-aligned agentic workflows.
 
     [:octicons-arrow-right-24: Agent Engineering](ai-engineering-from-scratch/phases/14-agent-engineering/)
 
@@ -80,7 +80,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
 <h2 id="course-catalog">Complete Course Catalog</h2>
 
-<p class="section-subtitle">A searchable library across programming, core CS, AI, infrastructure, exam preparation, and career readiness. Each course is designed for active learning with diagrams, TypeScript examples, quizzes, and exercises.</p>
+<p class="section-subtitle">A meticulously organized, searchable library spanning software engineering, core computer science, AI, and cloud infrastructure. Designed for active learning with practical exercises, architectural diagrams, and production-focused examples.</p>
 
 ### Languages & Frameworks
 
@@ -194,25 +194,25 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
     ---
 
-    Persistent memory layer for AI agents using ChromaDB with semantic caching, hybrid search, and automatic embedding management.
+    Persistent memory layer for AI agents featuring semantic caching, hybrid search, and automatic embedding management. <br><small>**Tech Stack:** Python, FastAPI, ChromaDB, Docker</small>
 
 -   :fontawesome-solid-wifi:{ .lg .middle } __WhatsApp AI Agents__
 
     ---
 
-    Multi-agent WhatsApp automation system for business workflows — lead capture, appointment booking, order tracking.
+    Multi-agent WhatsApp automation ecosystem for streamlining business workflows, lead capture, and appointment booking. <br><small>**Tech Stack:** Node.js, WhatsApp Cloud API, LangChain, OpenAI</small>
 
 -   :fontawesome-solid-building:{ .lg .middle } __Multi-Tenant ERP__
 
     ---
 
-    Laravel-based ERP with tenant isolation, role-based access, dynamic form builder, reporting engine, and REST API.
+    Scalable ERP architecture featuring strict tenant isolation, role-based access control (RBAC), and a dynamic reporting engine. <br><small>**Tech Stack:** Laravel, Vue.js, PostgreSQL, Redis</small>
 
 -   :fontawesome-solid-video:{ .lg .middle } __Automated Media Pipeline__
 
     ---
 
-    AI-driven media processing: transcription, summarization, content moderation, and automated publishing workflows.
+    AI-driven media processing pipeline orchestrating transcription, semantic summarization, and automated publishing. <br><small>**Tech Stack:** Python, FFmpeg, Whisper, AWS S3</small>
 
 </div>
 
@@ -224,16 +224,20 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
 ## Why This Site Exists
 
-I'm **Raushan Kumar** — a full-stack Laravel developer transitioning into AI Engineering. I run [ApexPillar Technologies](https://apexpillar.tech) and build production AI systems in Patna, Bihar.
+I'm **Raushan Kumar**, a seasoned Full-Stack Developer leveraging my software engineering background to build robust, scalable AI systems. Based in Patna, Bihar, I run [ApexPillar Technologies](https://apexpillar.tech) and architect production-grade AI solutions.
 
-This site serves two purposes:
+This repository is my living portfolio and technical brain trust:
 
-1. **Accountability.** 500+ public lessons are harder to abandon than a private folder.
-2. **Proof.** When I apply for AI Automation Engineer roles (target: Dubai / Remote, July 2026), my GitHub is my resume.
+1. **Radical Transparency:** Over 1,900+ public lessons and technical deep-dives act as a public accountability mechanism. It's a testament to continuous learning and execution.
+2. **Technical Proof of Work:** As I pursue AI Automation Engineer roles (targeting Dubai/Remote for July 2026), this site serves as verifiable evidence of my capabilities. 
 
-Every algorithm here is written from scratch. Every project is deployed. Every mistake is documented.
+Every algorithm detailed here is implemented from scratch. Every project is deployed to production. Every architectural decision and technical challenge is rigorously documented.
 
 ---
+
+<div style="text-align:center; margin-bottom: 2rem;">
+  <p style="font-size: 1.1rem; color: var(--md-default-fg-color--light);">Ready to collaborate or want to learn more about my technical journey?</p>
+</div>
 
 <div class="cta-row">
   <a href="about/" class="cta-primary">👤 About Me</a>

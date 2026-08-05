@@ -1,4 +1,4 @@
-﻿---
+---
 slug: /15-evaluation/observability-tools
 title: "Observability Tools"
 sidebar_label: "Observability Tools"
@@ -71,7 +71,7 @@ flowchart LR
     WB --> MT & AR
     ML --> AR & E
     AZ --> T & MT
-```text
+```
 
 ## 4.1 Observability Overview
 
@@ -154,7 +154,7 @@ trace_id = obs.start_trace("llm_call")
 time.sleep(0.01)
 obs.end_trace(trace_id)
 print(f"Stats: {obs.get_stats()}")
-```text
+```
 
 ### 4.1.2 Telemetry Pipeline
 
@@ -183,7 +183,7 @@ pipeline.add_processor("add_timestamp", lambda e: {**e, "processed_at": time.tim
 pipeline.add_processor("sanitize", lambda e: {k: v for k, v in e.items() if "secret" not in k})
 event = pipeline.process({"name": "llm_call", "latency": 150})
 print(f"Processed: {event}")
-```text
+```
 
 ## 4.2 LangSmith
 
@@ -257,7 +257,7 @@ ls_client = LangSmithClient(project="ai-course")
 run_id = ls_client.create_run("test-run", "llm", {"prompt": "Hello"})
 ls_client.add_feedback(run_id, 0.95)
 print(f"LangSmith summary: {ls_client.get_project_summary()}")
-```text
+```
 
 ### 4.2.2 LangSmith Tracing
 
@@ -311,7 +311,7 @@ time.sleep(0.01)
 tracer.end_span(span, {"tokens": 50})
 tracer.end_trace("completed")
 print(f"Traced {len(tracer.spans)} runs")
-```text
+```
 
 ## 4.3 W&B (Weights & Biases)
 
@@ -384,7 +384,7 @@ run_id = wandb.init_run("lora-ft-1", {"lr": 3e-4, "r": 8})
 wandb.log_metrics({"loss": 2.5, "val_loss": 2.7}, step=0)
 wandb.log_metrics({"loss": 1.8, "val_loss": 2.0}, step=100)
 print(f"W&B summary: {wandb.get_summary(run_id)}")
-```text
+```
 
 ### 4.3.2 Experiment Comparison
 
@@ -416,7 +416,7 @@ ec.add_experiment("lora-r8", {"val_loss": 1.5, "accuracy": 0.85}, {"r": 8})
 ec.add_experiment("lora-r16", {"val_loss": 1.4, "accuracy": 0.87}, {"r": 16})
 ec.add_experiment("lora-r32", {"val_loss": 1.45, "accuracy": 0.86}, {"r": 32})
 print(f"Best config: {ec.best_config('accuracy')}")
-```text
+```
 
 ## 4.4 MLflow
 
@@ -473,7 +473,7 @@ mlflow.create_experiment("lora-experiments")
 rid = mlflow.log_run("lora-experiments", "lora-r8", {"r": 8, "lr": 3e-4}, {"val_loss": 1.5})
 mlflow.register_model(rid, "lora-model", "runs:/lora-r8/model")
 print(f"MLflow runs: {len(mlflow.search_runs('lora-experiments'))}")
-```text
+```
 
 ## 4.5 Other Tools
 
@@ -507,7 +507,7 @@ adapter = ObservabilityToolAdapter("langsmith")
 adapter.register_tool("langsmith", ls_client)
 adapter.register_tool("wandb", wandb)
 print(f"Metrics: {adapter.get_metrics('langsmith')}")
-```text
+```
 
 ## 4.6 Tool Comparison
 
@@ -569,7 +569,7 @@ class ToolComparison:
 
 comparison = ToolComparison()
 print(f"Recommended for tracing+eval: {comparison.recommend(['tracing', 'eval_datasets'])}")
-```text
+```
 
 ## Summary
 
@@ -661,7 +661,7 @@ teams use W&B to track prompt variants, fine-tuning runs, and evaluation results
   </summary>
   <div class="tp-qa-answer">
     <pre><code>class LLMTracer {
-  private traces: Map<string, Trace> = new Map();
+  private traces: Map&lt;string, Trace&gt; = new Map();
   startTrace(id: string, metadata: any) {
     this.traces.set(id, { startTime: Date.now(), spans: [], metadata });
   }
@@ -673,11 +673,11 @@ teams use W&B to track prompt variants, fine-tuning runs, and evaluation results
     const trace = this.traces.get(traceId);
     if (trace) {
       trace.totalDuration = Date.now() - trace.startTime;
-      trace.totalTokens = trace.spans.reduce((s, sp) => s + (sp.tokens || 0), 0);
+      trace.totalTokens = trace.spans.reduce((s, sp) =&gt; s + (sp.tokens || 0), 0);
       // Export trace to monitoring system
     }
   }
-}</pre></code>
+}</code></pre>
 <p>Custom telemetry implements the OpenTelemetry standard with traces, spans, and metrics. Each request gets a trace ID that propagates through all components (API gateway,.
 LLM call, vector search, post-processing). Spans capture individual operations with timing, token counts, and status. Metrics are aggregated (counters for request count,.
 histograms for latency) and exported to Prometheus or Datadog. The key is to make telemetry part of the application framework so it's automatically captured for.
@@ -764,9 +764,9 @@ class MLflowProvider implements ObservabilityProvider { /* ... */ }
 class CompositeProvider {
   constructor(private providers: ObservabilityProvider[]) {}
   async logTrace(trace: Trace) {
-    await Promise.all(this.providers.map(p => p.logTrace(trace)));
+    await Promise.all(this.providers.map(p =&gt; p.logTrace(trace)));
   }
-}</pre></code>
+}</code></pre>
 <p>A unified observability adapter wraps multiple providers behind a common interface. The application code only depends on the interface, and the adapter forwards telemetry to all configured backends (LangSmith for.
 LLM tracing, W&B for experiment tracking, Prometheus for metrics). This decouples the application from specific vendors and enables easy migration. The CompositeProvider pattern allows sending to multiple destinations simultaneously,.
 useful when transitioning between platforms. Each provider implementation handles the specific API format and authentication for its target platform.</p>
@@ -850,253 +850,3 @@ Answer: B
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 15-ai-evaluation-observability. When would you choose one approach over another?
-2. Design a system that efficiently handles 15-ai-evaluation-observability at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 15-ai-evaluation-observability. What was your approach and what was the result?
-2. How would you explain 15-ai-evaluation-observability to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 15-ai-evaluation-observability integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 15-ai-evaluation-observability?
-
-#### NVIDIA Style
-1. How would you optimize 15-ai-evaluation-observability for GPU-accelerated computing?
-2. What parallel processing patterns apply to 15-ai-evaluation-observability?
-
-#### AI Startup Style
-1. How would you implement 15-ai-evaluation-observability in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 15-ai-evaluation-observability?
-
-### Resume Tips
-- **Technical Skills**: List 15-ai-evaluation-observability under relevant technical skills
-- **Project Description**: "Implemented 15-ai-evaluation-observability to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 15-ai-evaluation-observability in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 15-ai-evaluation-observability
-- [ ] Practice 3-5 problems related to 15-ai-evaluation-observability
-- [ ] Prepare 2 real-world examples of using 15-ai-evaluation-observability
-- [ ] Know the time/space complexity of common 15-ai-evaluation-observability operations
-- [ ] Have questions ready about how the company uses 15-ai-evaluation-observabilityeam of 5.
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to AI Evaluation & Observability fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master observability tools?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of observability tools helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding observability tools at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of observability tools like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply observability tools concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of observability tools?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply observability tools in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of AI Evaluation & Observability?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering AI Evaluation & Observability, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

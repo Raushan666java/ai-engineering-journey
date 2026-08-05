@@ -1,5 +1,13 @@
 # 01 — ETL & Data Pipelines
 
+## Learning Objectives
+
+- Design an idempotent ETL pipeline that can be re-run without data duplication
+- Explain the difference between ELT and ETL and when each fits
+- Extract data from REST APIs, databases, and flat files using paginated and chunked readers
+- Apply cleaning, validation, normalization, aggregation, and deduplication transformations to raw data
+- Implement batch, incremental, and full refresh loading strategies with watermark tracking
+
 ## Introduction
 
 ETL (Extract, Transform, Load) is the process of moving data from source systems to a target database or data warehouse. Every AI engineer must understand ETL because model training pipelines, feature engineering, and data validation all depend on reliable data movement and transformation.
@@ -705,27 +713,22 @@ ETL pipelines form the backbone of data infrastructure for AI systems. The choic
 4. **b** — Raw data persistence enables re-transformation without re-extraction.
 5. **c** — Cursor-based pagination uses a cursor token and limit; offset-based pagination is less stable.
 
-## PYQs (Previous Year Questions)
+## Exercises
 
-### Google (2024)
-Design an ETL pipeline that processes 500 GB of daily log data from 200 microservices. The pipeline must handle late-arriving data (up to 48 hours), deduplicate events, and produce both real-time dashboards and daily training datasets. Discuss trade-offs between batch and micro-batch approaches.
+### Exercise 1: Build a Mini ETL Pipeline
+Write a Python script that extracts data from a CSV file (1000 rows, synthetic sales data), transforms by cleaning nulls, normalizing prices, and aggregating by region, then loads to a SQLite database. Verify with a SELECT query.
 
-**Answer**: Use a Lambda architecture — Kafka for real-time ingestion, Spark Structured Streaming for micro-batch (1-minute windows) for dashboard, and hourly Spark batch jobs for training data. Deduplicate using event IDs with a 48-hour window store. Late data lands in the batch layer; streaming layer uses watermarking to handle lateness.
+### Exercise 2: Implement Incremental Load
+Modify Exercise 1 to support incremental loads. Maintain a `last_processed_id` or `last_processed_timestamp` file. On each run, only extract rows newer than the watermark. Verify that duplicates are not inserted.
 
-### Amazon (2023)
-You need to migrate a legacy ETL pipeline that runs on a single PostgreSQL instance to a cloud-native architecture. The pipeline processes 50 GB of clickstream data daily. Design the migration strategy, addressing data extraction, transformation, and loading for ML training data.
+### Exercise 3: Data Quality Framework
+Build a data quality checker that validates a DataFrame against a YAML config file specifying column constraints (type, nullability, unique, min, max, regex). Generate a JSON report with pass/fail per rule.
 
-**Answer**: Stage 1: Extract to S3 (Parquet format) using AWS DMS. Stage 2: Transform using Spark on EMR or Glue — partition by date for efficient querying. Stage 3: Load to Redshift for structured analytics and keep Parquet in S3 for ML training. Implement incremental loads using last-modified timestamps.
+### Exercise 4: Parallel Extraction
+Implement a multi-threaded extractor that fetches data from 3 different API endpoints simultaneously and combines the results into a single DataFrame. Measure speedup compared to sequential extraction.
 
-### Microsoft (2024)
-Your ML team spends 70% of time on data preparation. Design a data pipeline framework that reduces this to under 30%. Focus on reusability, testing, and validation across multiple model training pipelines.
-
-**Answer**: Build a shared ETL framework with: (1) reusable transformation components (clean, validate, normalize), (2) data quality tests run as CI steps, (3) schema registry for versioned data contracts, (4) feature computation as configurable DAGs, (5) data profiling dashboards for early anomaly detection.
-
-### Meta (2023)
-How would you design a real-time ETL pipeline for Facebook's news feed ranking features? The pipeline must process 10 million events/second with sub-5-minute freshness for model features.
-
-**Answer**: Use Apache Kafka as ingestion layer with 100+ partitions per topic. Stream processing with Apache Flink for windowed aggregations (tumbling windows, 1-minute). Feature values computed in Flink and written to a key-value store (RocksDB) for online serving. Batch layer computes historical features daily with Spark. Feature store ensures consistency between online and offline features.
+### Exercise 5: Schema Evolution Handler
+Write a function that compares an incoming DataFrame schema to a registered schema (stored as JSON). If new columns appear, log a warning and add them. If columns are missing, fill with NULL. If types changed, attempt safe casting.
 
 ## Common Mistakes
 
@@ -748,7 +751,29 @@ How would you design a real-time ETL pipeline for Facebook's news feed ranking f
 - Schema evolution: schema registry, Avro/Protobuf, schema-on-read for lakes
 - ML best practice: separate feature computation from model training
 
-## Interview Questions
+## PYQs (Previous Year Questions)
+
+### Google (2024)
+Design an ETL pipeline that processes 500 GB of daily log data from 200 microservices. The pipeline must handle late-arriving data (up to 48 hours), deduplicate events, and produce both real-time dashboards and daily training datasets. Discuss trade-offs between batch and micro-batch approaches.
+
+**Answer**: Use a Lambda architecture — Kafka for real-time ingestion, Spark Structured Streaming for micro-batch (1-minute windows) for dashboard, and hourly Spark batch jobs for training data. Deduplicate using event IDs with a 48-hour window store. Late data lands in the batch layer; streaming layer uses watermarking to handle lateness.
+
+### Amazon (2023)
+You need to migrate a legacy ETL pipeline that runs on a single PostgreSQL instance to a cloud-native architecture. The pipeline processes 50 GB of clickstream data daily. Design the migration strategy, addressing data extraction, transformation, and loading for ML training data.
+
+**Answer**: Stage 1: Extract to S3 (Parquet format) using AWS DMS. Stage 2: Transform using Spark on EMR or Glue — partition by date for efficient querying. Stage 3: Load to Redshift for structured analytics and keep Parquet in S3 for ML training. Implement incremental loads using last-modified timestamps.
+
+### Microsoft (2024)
+Your ML team spends 70% of time on data preparation. Design a data pipeline framework that reduces this to under 30%. Focus on reusability, testing, and validation across multiple model training pipelines.
+
+**Answer**: Build a shared ETL framework with: (1) reusable transformation components (clean, validate, normalize), (2) data quality tests run as CI steps, (3) schema registry for versioned data contracts, (4) feature computation as configurable DAGs, (5) data profiling dashboards for early anomaly detection.
+
+### Meta (2023)
+How would you design a real-time ETL pipeline for Facebook's news feed ranking features? The pipeline must process 10 million events/second with sub-5-minute freshness for model features.
+
+**Answer**: Use Apache Kafka as ingestion layer with 100+ partitions per topic. Stream processing with Apache Flink for windowed aggregations (tumbling windows, 1-minute). Feature values computed in Flink and written to a key-value store (RocksDB) for online serving. Batch layer computes historical features daily with Spark. Feature store ensures consistency between online and offline features.
+
+## Interview Q&A
 
 ### Q1: What is the difference between ETL and ELT, and when would you choose each?
 **A**: ETL transforms data before loading, ensuring clean data in the target. Use when target storage is expensive or compute-limited. ELT loads raw data first, transforms later using warehouse compute. Use with cloud warehouses (BigQuery, Snowflake) for flexibility and raw data preservation.
@@ -780,23 +805,6 @@ How would you design a real-time ETL pipeline for Facebook's news feed ranking f
 ### Q10: What is a data contract and why is it important for ETL?
 **A**: A data contract is a formal agreement between data producers and consumers specifying schema, semantics, quality SLAs, and ownership. It prevents breaking changes, enables schema evolution, and establishes clear ownership. Implemented via schema registries and CI checks.
 
-## Exercises
-
-### Exercise 1: Build a Mini ETL Pipeline
-Write a Python script that extracts data from a CSV file (1000 rows, synthetic sales data), transforms by cleaning nulls, normalizing prices, and aggregating by region, then loads to a SQLite database. Verify with a SELECT query.
-
-### Exercise 2: Implement Incremental Load
-Modify Exercise 1 to support incremental loads. Maintain a `last_processed_id` or `last_processed_timestamp` file. On each run, only extract rows newer than the watermark. Verify that duplicates are not inserted.
-
-### Exercise 3: Data Quality Framework
-Build a data quality checker that validates a DataFrame against a YAML config file specifying column constraints (type, nullability, unique, min, max, regex). Generate a JSON report with pass/fail per rule.
-
-### Exercise 4: Parallel Extraction
-Implement a multi-threaded extractor that fetches data from 3 different API endpoints simultaneously and combines the results into a single DataFrame. Measure speedup compared to sequential extraction.
-
-### Exercise 5: Schema Evolution Handler
-Write a function that compares an incoming DataFrame schema to a registered schema (stored as JSON). If new columns appear, log a warning and add them. If columns are missing, fill with NULL. If types changed, attempt safe casting.
-
 ## Placement Section
 
 ### Resume Tips
@@ -814,6 +822,40 @@ Write a function that compares an incoming DataFrame schema to a registered sche
 ### Top Companies Asking ETL Questions
 - Google, Amazon, Microsoft, Meta, Uber, Airbnb, Stripe, Snowflake, Databricks, Confluent
 
+## True/False
+
+1. **True or False:** 01 — ETL & Data Pipelines builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for 01 — ETL & Data Pipelines before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for 01 — ETL & Data Pipelines is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for 01 — ETL & Data Pipelines in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the 01 — ETL & Data Pipelines chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers 01 — ETL & Data Pipelines is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to 01 — ETL & Data Pipelines is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing 01 — ETL & Data Pipelines is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug 01 — ETL & Data Pipelines issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to 01 — ETL & Data Pipelines in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving 01 — ETL & Data Pipelines that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of 01 — ETL & Data Pipelines is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain 01 — ETL & Data Pipelines in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for 01 — ETL & Data Pipelines and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of 01 — ETL & Data Pipelines on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+
 ## Difficulty Level
 
 **Level**: Intermediate
@@ -828,6 +870,14 @@ Write a function that compares an incoming DataFrame schema to a registered sche
 
 **Tip**: Implement idempotent pipelines — running the same pipeline twice should produce the same result.
 
+## Memory Tricks
+
+- **Acronym**: build a mnemonic from the 5 key concepts of 01 — ETL & Data Pipelines listed in the Chapter at a Glance table.
+- **Story**: link 01 — ETL & Data Pipelines to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of 01 — ETL & Data Pipelines by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain 01 — ETL & Data Pipelines to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
+
 ## Further Reading
 
 - "The Data Warehouse Toolkit" by Ralph Kimball
@@ -836,9 +886,216 @@ Write a function that compares an incoming DataFrame schema to a registered sche
 - Great Expectations docs for data quality
 - dbt documentation for ELT transformations
 
+## Related Topics
+
+- The previous chapter in this module (see table of contents) â€” foundational for 01 — ETL & Data Pipelines
+- The next chapter (see Next Topic below) â€” builds on 01 — ETL & Data Pipelines
+- The system design chapters in Module 07 â€” how 01 — ETL & Data Pipelines fits into production architectures
+- The interview preparation module â€” how 01 — ETL & Data Pipelines is asked in screening rounds
+- The capstone project â€” where 01 — ETL & Data Pipelines is applied end-to-end
+
+## FAQs
+
+1. **Do I need to memorize all of 01 — ETL & Data Pipelines, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is 01 — ETL & Data Pipelines asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+
+## Important Notes
+
+- 01 — ETL & Data Pipelines is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with 01 — ETL & Data Pipelines.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
+
+## Historical Context
+
+- 01 — ETL & Data Pipelines emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for 01 — ETL & Data Pipelines today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about 01 — ETL & Data Pipelines â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around 01 — ETL & Data Pipelines changes quickly; focus on fundamentals that remain stable.
+
+## Security Considerations
+
+- Never trust external input: validate and sanitize data before processing 01 — ETL & Data Pipelines.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
+
+## ML Intuition
+
+- 01 — ETL & Data Pipelines appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding 01 — ETL & Data Pipelines helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the 01 — ETL & Data Pipelines concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, 01 — ETL & Data Pipelines skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply 01 — ETL & Data Pipelines to a dataset of 10 million records? â€” Batching and vectorization.
+
+## Analogies
+
+- **01 — ETL & Data Pipelines is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
+
+## Capstone Project Link
+
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the 01 — ETL & Data Pipelines skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+
+## Flashcards
+
+<details class="tp-qa-card" data-qid="25dataengineering-01etlpipelines-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the core concept of 01 — ETL & Data Pipelines in one sentence?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-01etlpipelines-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the most common mistake engineers make with 
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Common Mistakes section of this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-01etlpipelines-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the time and space complexity of the standard 01 — ETL & Data Pipelines approach?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Refer to the theory and complexity analysis in this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-01etlpipelines-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    When is 01 — ETL & Data Pipelines NOT the right choice?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Limitations section of this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-01etlpipelines-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How is 01 — ETL & Data Pipelines applied in a real production system?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Real-World Examples section of this chapter.</p>
+  </div>
+</details>
+
+## Research References
+
+- Official documentation of the primary library for 01 — ETL & Data Pipelines (linked in Further Reading)
+- The classic paper or textbook chapter introducing 01 — ETL & Data Pipelines (see References below)
+- The standard library reference for 01 — ETL & Data Pipelines-related functions
+- Engineering blog posts from companies running 01 — ETL & Data Pipelines in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
+
+## Open-Source Tools
+
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of 01 — ETL & Data Pipelines code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on 01 — ETL & Data Pipelines
+
+## Debugging Guide
+
+- Start with `print()` or a debugger to inspect intermediate values in 01 — ETL & Data Pipelines code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the 01 — ETL & Data Pipelines example code.
+
+## Mock Interview Section
+
+**Round 1 â€” Screening (15 min)**
+- Explain 01 — ETL & Data Pipelines in 60 seconds.
+- Write a minimal working example of 01 — ETL & Data Pipelines.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a 01 — ETL & Data Pipelines problem in a project.
+- How would you design a system where 01 — ETL & Data Pipelines is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for 01 — ETL & Data Pipelines.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core 01 — ETL & Data Pipelines logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
+
 ## References
 
 - Kimball, R., & Caserta, J. (2004). The Data Warehouse ETL Toolkit.
 - Kleppmann, M. (2017). Designing Data-Intensive Applications.
 - Apache Airflow: https://airflow.apache.org/
 - Great Expectations: https://greatexpectations.io/
+
+## Evaluation Metrics
+
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain 01 — ETL & Data Pipelines without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
+
+## Real-World Examples
+
+- **Startup**: a small team uses 01 — ETL & Data Pipelines daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: 01 — ETL & Data Pipelines patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: 01 — ETL & Data Pipelines principles apply to transaction validation and fraud detection flows.
+- **ML platform**: 01 — ETL & Data Pipelines shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect 01 — ETL & Data Pipelines to the business outcome, not just the code.
+
+## Next Topic
+
+[02 — Data Lakehouse & Warehouse](02-data-lakehouse-warehouse.md)
+
+## Limitations
+
+- 01 — ETL & Data Pipelines, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of 01 — ETL & Data Pipelines depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "30 — Business Skills for AI Engineers"
+sidebar_label: "30 — Business Skills for AI Engineers"
+sidebar_position: 318
+---
 # 30 — Business Skills for AI Engineers
 
 ## Overview

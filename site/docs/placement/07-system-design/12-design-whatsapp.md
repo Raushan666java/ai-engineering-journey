@@ -69,6 +69,7 @@ flowchart LR
     J --> K[Retrieve Stored Messages]
     K --> H
 
+```
 ## 12.1 High-Level Architecture
 
 WhatsApp serves 2B+ users globally, processing 100B+ messages daily. The architecture must handle real-time delivery, offline storage, and end-to-end encryption at massive scale.
@@ -98,7 +99,7 @@ interface WhatsAppMessage {
   };
   deliveryStatus: "sent" | "delivered" | "read";
 }
-```text
+```
 
 **Scale numbers**: 100B messages/day = ~1.2M msg/sec peak. Each message is ~1KB raw, ~100 bytes ciphertext after encryption. Storage: 10TB/day.
 
@@ -163,7 +164,7 @@ class ConnectionManager {
     await this.rpcClient.forwardMessage(targetNode, message);
   }
 }
-```text
+```
 
 **Connection management**: Each physical server handles 500K-1M concurrent connections. Edge servers terminate connections close to users (global PoP deployment).
 
@@ -267,7 +268,7 @@ class SignalProtocolManager {
     return response.json();
   }
 }
-```text
+```
 
 **Key properties**: **Forward secrecy** — compromising current keys doesn't expose past messages. **Deniable authentication** — message authenticity can't be proven to third parties. **Post-compromise security** — sessions heal after compromise through the ratchet mechanism.
 
@@ -340,7 +341,7 @@ class PresenceService {
     return this.presenceCache.get(userId) ?? { status: "offline", lastSeen: 0 };
   }
 }
-```text
+```
 
 **Privacy**: Users can configure "last seen" visibility: Everyone, Contacts, or Nobody. Presence updates are distributed via the same WebSocket connections used for messaging.
 
@@ -421,7 +422,7 @@ class GroupChatService {
     return { ciphertext: ct + cipher.getAuthTag().toString("hex") };
   }
 }
-```text
+```
 
 **Media sharing**: Images/videos uploaded to Media Service, encrypted with a random key, key sent along with message. CDN delivers media files globally. Thumbnails generated server-side. Streaming for audio/video messages.
 
@@ -512,7 +513,7 @@ class DeliveryReceiptManager {
     });
   }
 }
-```text
+```
 
 **Message ordering**: Each message has a server-assigned timestamp. Messages are delivered in chronological order. For multi-device sync, each device maintains its own pointer of last read message.
 
@@ -576,7 +577,7 @@ class WhatsAppService {
     // Send to APNs/FCM
   }
 }
-```text
+```
 
 ---
 

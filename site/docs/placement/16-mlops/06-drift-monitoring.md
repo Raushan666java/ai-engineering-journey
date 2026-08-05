@@ -68,7 +68,7 @@ flowchart LR
     I --> J[Deploy New Model]
     J --> K[Update Reference]
     K --> C
-```text
+```
 
 ## 6.1 Types of Drift
 
@@ -87,7 +87,7 @@ flowchart TB
     end
     Data Drift --> PD
     Concept Drift --> PD
-```text
+```
 
 ```python
 import numpy as np
@@ -168,7 +168,7 @@ ref_df = pd.DataFrame({"price": np.random.normal(300000, 50000, 1000), "sqft": n
 cur_df = pd.DataFrame({"price": np.random.normal(350000, 60000, 1000), "sqft": np.random.normal(1800, 400, 1000)})
 result = analyzer.data_drift(ref_df, cur_df, ["price", "sqft"], [])
 print(f"Data drift: {result['drifted_features']} (score: {result['drift_score']:.2f})")
-```text
+```
 
 ---
 
@@ -242,7 +242,7 @@ ref = np.random.normal(0, 1, 10000)
 curr = np.random.normal(0.3, 1.2, 10000)
 report = detector.comprehensive_analysis(ref, curr, "feature_1")
 print(json.dumps(report, indent=2))
-```text
+```
 
 **PSI interpretation guide**:
 
@@ -338,7 +338,7 @@ for i in range(2000):
         monitor.add_prediction(np.random.normal(0.7, 0.15))  # Drifted
 
 print(f"Drift events: {sum(1 for d in monitor.drift_history if d['drifted'])}")
-```text
+```
 
 **Streaming drift with batch processing**:
 
@@ -390,7 +390,7 @@ for _ in range(10):
     time.sleep(0.1)
 
 print(f"Drift trend for 'price': {reporter.get_trend('price')[:3]}...")
-```text
+```
 
 ---
 
@@ -492,7 +492,7 @@ for psi in [0.1, 0.3, 0.4, 0.6]:
     alert = policy.evaluate(psi)
     if alert:
         manager.send_alert(alert)
-```text
+```
 
 ---
 
@@ -565,7 +565,7 @@ for drift_score in [0.1, 0.2, 0.4, 0.5]:
     report = {"drift_score": drift_score, "drifted_features": ["price", "sqft"]}
     if retrainer.should_retrain(report, alert_mgr):
         print(f"Retrain triggered at drift score {drift_score}")
-```text
+```
 
 ---
 
@@ -662,7 +662,7 @@ dashboard.plot_feature_distributions(
     "house_price",
     "price_dist_comparison.png"
 )
-```text
+```
 
 ---
 
@@ -717,7 +717,7 @@ class DriftMonitor {
     return { stat: maxDiff, p };
   }
 }
-```text
+```
 
 ---
 
@@ -950,262 +950,3 @@ d) Manual request only
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 16-mlops-production. When would you choose one approach over another?
-2. Design a system that efficiently handles 16-mlops-production at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 16-mlops-production. What was your approach and what was the result?
-2. How would you explain 16-mlops-production to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 16-mlops-production integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 16-mlops-production?
-
-#### NVIDIA Style
-1. How would you optimize 16-mlops-production for GPU-accelerated computing?
-2. What parallel processing patterns apply to 16-mlops-production?
-
-#### AI Startup Style
-1. How would you implement 16-mlops-production in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 16-mlops-production?
-
-### Resume Tips
-- **Technical Skills**: List 16-mlops-production under relevant technical skills
-- **Project Description**: "Implemented 16-mlops-production to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 16-mlops-production in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 16-mlops-production
-- [ ] Practice 3-5 problems related to 16-mlops-production
-- [ ] Prepare 2 real-world examples of using 16-mlops-production
-- [ ] Know the time/space complexity of common 16-mlops-production operations
-- [ ] Have questions ready about how the company uses 16-mlops-production> **Next**: [07 — Cost Management →](07-cost-management.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to MLOps & Production fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master drift monitoring?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of drift monitoring helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding drift monitoring at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of drift monitoring like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply drift monitoring concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of drift monitoring?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply drift monitoring in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of MLOps & Production?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering MLOps & Production, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Inference Workflow
-
-1. **Input Validation**: Sanitize and validate incoming requests
-2. **Preprocessing**: Transform input to model-ready format
-3. **Model Execution**: Run inference with optimized runtime
-4. **Postprocessing**: Format model output for consumption
-5. **Response**: Return results with metadata and timing
-6. **Monitoring**: Log requests, responses, and latency
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

@@ -1,4 +1,4 @@
-﻿---
+---
 slug: /15-evaluation/evaluation-datasets
 title: "Evaluation Datasets"
 sidebar_label: "Evaluation Datasets"
@@ -71,7 +71,7 @@ flowchart TD
     end
     G & S & H --> V --> E
     E --> D --> R --> G & S & H
-```text
+```
 
 ## 3.1 Golden Datasets
 
@@ -170,7 +170,7 @@ ds = GoldenDataset("qa_benchmark", "1.0.0")
 ds.add(EvalExample(id="001", input="What is RAG?", expected_output="Retrieval-Augmented Generation", domain="AI"))
 ds.add(EvalExample(id="002", input="What is Python?", expected_output="A programming language", domain="programming"))
 print(f"Dataset stats: {ds.statistics()}")
-```text
+```
 
 ### 3.1.2 Domain Coverage
 
@@ -211,7 +211,7 @@ class DatasetCoverage:
 cov = DatasetCoverage()
 analysis = cov.analyze(ds, ["AI", "programming", "math", "science"])
 print(f"Coverage: {analysis}")
-```text
+```
 
 ## 3.2 Synthetic Data
 
@@ -268,7 +268,7 @@ def mock_gen_llm(prompt: str) -> str:
 gen = SyntheticEvalGenerator(mock_gen_llm)
 pairs = gen.generate_batch("AI", 3)
 print(f"Generated {len(pairs)} synthetic pairs")
-```text
+```
 
 ### 3.2.2 Adversarial Examples
 
@@ -314,7 +314,7 @@ adv_gen = AdversarialGenerator()
 base = EvalExample(id="001", input="What is machine learning?", expected_output="ML is...")
 adversarial = adv_gen.generate(base)
 print(f"Generated {len(adversarial)} adversarial examples")
-```text
+```
 
 ## 3.3 Human Annotation
 
@@ -385,7 +385,7 @@ wf.assign(task_id, "annotator-2")
 wf.submit_annotation(task_id, "annotator-1", {"score": 5})
 wf.submit_annotation(task_id, "annotator-2", {"score": 4})
 print(f"Agreement: {wf.agreement(task_id)}")
-```text
+```
 
 ### 3.3.2 Quality Control
 
@@ -425,7 +425,7 @@ class AnnotationQC:
 qc = AnnotationQC()
 annotations = [{"annotation": {"score": 4}}, {"annotation": {"score": 5}}, {"annotation": {"score": 4}}]
 print(f"QC check: {qc.check_agreement(annotations)}")
-```text
+```
 
 ## 3.4 Dataset Versioning
 
@@ -489,7 +489,7 @@ vman.create_version(ds, "Initial release")
 ds.add(EvalExample(id="003", input="Q3?", expected_output="A3"))
 vman.create_version(ds, "Added Q3")
 print(f"History: {vman.history()}")
-```text
+```
 
 ## 3.5 Dataset Maintenance
 
@@ -541,7 +541,7 @@ class EvalDriftDetector:
 
 detector = EvalDriftDetector(ds)
 print(f"Drift detected: {detector.detect_drift(ds)}")
-```text
+```
 
 ## Summary
 
@@ -704,18 +704,18 @@ a sample. (5) Statistical monitoring — track metrics over time (example length
   </summary>
   <div class="tp-qa-answer">
     <pre><code>function balanceDataset(examples: Example[], targetDomainCount: number) {
-  const byDomain = new Map<string, Example[]>();
-  examples.forEach(e => {
+  const byDomain = new Map&lt;string, Example[]&gt;();
+  examples.forEach(e =&gt; {
     if (!byDomain.has(e.domain)) byDomain.set(e.domain, []);
     byDomain.get(e.domain)!.push(e);
   });
   const balanced: Example[] = [];
   for (const [domain, items] of byDomain) {
-    const sampled = items.sort(() => Math.random() - 0.5).slice(0, targetDomainCount);
+    const sampled = items.sort(() =&gt; Math.random() - 0.5).slice(0, targetDomainCount);
     balanced.push(...sampled);
   }
   return shuffle(balanced);
-}</pre></code>
+}</code></pre>
 <p>A balanced dataset ensures no domain dominates evaluation metrics. The approach: (1) Categorize each example by domain. (2) Calculate per-domain statistics — count,.
 difficulty distribution. (3) Apply stratified sampling to ensure each domain contributes equally (same count) or proportionally (relative to production traffic). (4) Within each domain,.
 ensure difficulty distribution is balanced. (5) For underrepresented domains, generate synthetic examples to supplement. The code above demonstrates a simple equal-count balancing strategy. In production,.
@@ -800,251 +800,3 @@ Answer: B
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 15-ai-evaluation-observability. When would you choose one approach over another?
-2. Design a system that efficiently handles 15-ai-evaluation-observability at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 15-ai-evaluation-observability. What was your approach and what was the result?
-2. How would you explain 15-ai-evaluation-observability to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 15-ai-evaluation-observability integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 15-ai-evaluation-observability?
-
-#### NVIDIA Style
-1. How would you optimize 15-ai-evaluation-observability for GPU-accelerated computing?
-2. What parallel processing patterns apply to 15-ai-evaluation-observability?
-
-#### AI Startup Style
-1. How would you implement 15-ai-evaluation-observability in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 15-ai-evaluation-observability?
-
-### Resume Tips
-- **Technical Skills**: List 15-ai-evaluation-observability under relevant technical skills
-- **Project Description**: "Implemented 15-ai-evaluation-observability to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 15-ai-evaluation-observability in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 15-ai-evaluation-observability
-- [ ] Practice 3-5 problems related to 15-ai-evaluation-observability
-- [ ] Prepare 2 real-world examples of using 15-ai-evaluation-observability
-- [ ] Know the time/space complexity of common 15-ai-evaluation-observability operations
-- [ ] Have questions ready about how the company uses 15-ai-evaluation-observabilityo 40% AI.
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to AI Evaluation & Observability fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master evaluation datasets?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-Understanding the evolution of evaluation datasets helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding evaluation datasets at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of evaluation datasets like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply evaluation datasets concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of evaluation datasets?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply evaluation datasets in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of AI Evaluation & Observability?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering AI Evaluation & Observability, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

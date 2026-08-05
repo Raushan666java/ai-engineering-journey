@@ -1,4 +1,4 @@
-﻿---
+---
 slug: /11-llms-prompt/llm-evaluation
 title: "Llm Evaluation"
 sidebar_label: "Llm Evaluation"
@@ -58,7 +58,7 @@ flowchart TD
     K --> L
     L --> M[Regression Monitor]
     M --> N[Deploy / Reject / Regress]
-```text
+```
 
 ## 7.1 Evaluation Dimensions
 
@@ -126,7 +126,7 @@ eval_result = LLMOutputEvaluation(
     ],
 )
 print(json.dumps(eval_result.to_report(), indent=2))
-```text
+```
 
 **Weighting dimensions** allows customization per task. For summarization, faithfulness may receive higher weight. For creative writing, fluency and coherence matter more.
 
@@ -194,7 +194,7 @@ reference = "The cat sat on a mat."
 print("ROUGE-1:", rouge_n(candidate, reference, 1))
 print("ROUGE-2:", rouge_n(candidate, reference, 2))
 print("ROUGE-L:", rouge_l(candidate, reference))
-```text
+```
 
 ### 7.2.2 BLEU (Bilingual Evaluation Understudy)
 
@@ -270,7 +270,7 @@ def bleu_multiref(candidate: str, references: List[str], max_n: int = 4) -> floa
 
     log_avg /= max_n
     return round(bp * math.exp(log_avg), 4)
-```text
+```
 
 
 ## Overview
@@ -346,7 +346,7 @@ cand_vecs = cand_emb.numpy()
 ref_vecs = ref_emb.numpy()
 print(f"BERTScore F1: {bertscore_f1(list(cand_vecs), list(ref_vecs)):.4f}")
 """
-```text
+```
 
 
 ## Overview
@@ -390,7 +390,7 @@ def meteor_score(candidate: str, reference: str) -> float:
 
 
 print(f"METEOR: {meteor_score(candidate, reference)}")
-```text
+```
 
 ## 7.3 Reference-Based Evaluation
 
@@ -450,7 +450,7 @@ dataset = ReferenceDataset(
     ],
 )
 print(json.dumps(dataset.filter_by_difficulty("easy"), indent=2, default=str))
-```text
+```
 
 ### Scoring with Multiple References
 
@@ -487,7 +487,7 @@ references = [
     "The capital city of France is Paris.",
 ]
 print(evaluate_with_references(candidate, references))
-```text
+```
 
 ## 7.4 Reference-Free Evaluation
 
@@ -512,7 +512,7 @@ log_probs_bad = [-2.5, -3.0, -1.8, -4.2]
 
 print(f"Good output perplexity: {perplexity(log_probs_good)}")
 print(f"Bad output perplexity: {perplexity(log_probs_bad)}")
-```text
+```
 
 
 ## Overview
@@ -569,7 +569,7 @@ def consistency_with_semantic_similarity(
                 agreements += 1
 
     return agreements / total if total > 0 else 1.0
-```text
+```
 
 ### 7.4.3 LLM-as-Judge
 
@@ -616,7 +616,7 @@ rubric = """
 ## result = judge_evaluation(prompt, generated, rubric)
 
 ## print(result)
-```text
+```
 
 
 ## Overview
@@ -669,7 +669,7 @@ def factual_consistency_score(
 ## score = factual_consistency_score(generated, context, client)
 
 ## print(f"Factual consistency: {score:.2%}")
-```text
+```
 
 ## 7.5 Evaluation Datasets
 
@@ -736,7 +736,7 @@ builder.add_sample(DatasetSample("What is a function?", "A function is a reusabl
 
 stratified = builder.stratified_sample(2)
 print(f"Stratified sample size: {len(stratified)}")
-```text
+```
 
 ### Annotation Guidelines
 
@@ -774,7 +774,7 @@ guidelines = AnnotationGuideline(
     ],
 )
 print(guidelines.generate_instructions())
-```text
+```
 
 ## 7.6 Human Evaluation
 
@@ -827,7 +827,7 @@ outputs = [
     ("model-c", "France's capital is Paris and it is a beautiful city."),
 ]
 print(json.dumps(pairwise_comparison(outputs, judge_fn_simple), indent=2))
-```text
+```
 
 ### 7.6.2 Likert Scale Ratings
 
@@ -870,7 +870,7 @@ result = HumanEvaluationResult(
     ],
 )
 print(json.dumps(result.aggregate(), indent=2))
-```text
+```
 
 ### 7.6.3 Inter-Rater Agreement
 
@@ -900,7 +900,7 @@ def cohens_kappa(ratings_a: List[int], ratings_b: List[int], num_categories: int
 rater_a = [5, 4, 5, 3, 5, 4, 4, 5]
 rater_b = [5, 4, 4, 3, 5, 5, 4, 4]
 print(f"Cohen's Kappa: {cohens_kappa(rater_a, rater_b)}")
-```text
+```
 
 ## 7.7 Task-Specific Benchmarks
 
@@ -974,7 +974,7 @@ def simple_math_solver(input_text: str) -> str:
 runner = BenchmarkRunner(simple_math_solver)
 result = runner.evaluate(gsm8k_data, "simple-math-v1")
 print(f"Benchmark: {result.benchmark_name}, Accuracy: {result.accuracy:.2%}")
-```text
+```
 
 ## 7.8 Evaluation Pipelines
 
@@ -1064,7 +1064,7 @@ result2 = pipeline.run(lambda x: "Tokyo" if "Japan" in x else "Paris")
 
 print(json.dumps(result1, indent=2))
 print(json.dumps(pipeline.regression_report(), indent=2))
-```text
+```
 
 ### CI/CD Integration
 
@@ -1092,7 +1092,7 @@ def evaluate_for_ci(
 
 
 ## Example: exit_code = evaluate_for_ci(model_fn, pipeline, threshold=0.7)
-```text
+```
 
 ## Summary
 
@@ -1202,7 +1202,7 @@ blocking deployment. Store history in a regression tracker for trend analysis. H
     result = pipeline.run(model_fn)
     for dataset, metrics in result["scores"].items():
         for metric, score in metrics.items():
-            if score < threshold:
+            if score &lt; threshold:
                 return 1  # Fail
     return 0  # Pass</code></pre>
   </div>
@@ -1351,270 +1351,3 @@ Answer: D
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 11-llms-prompt-engineering. When would you choose one approach over another?
-2. Design a system that efficiently handles 11-llms-prompt-engineering at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 11-llms-prompt-engineering. What was your approach and what was the result?
-2. How would you explain 11-llms-prompt-engineering to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 11-llms-prompt-engineering integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 11-llms-prompt-engineering?
-
-#### NVIDIA Style
-1. How would you optimize 11-llms-prompt-engineering for GPU-accelerated computing?
-2. What parallel processing patterns apply to 11-llms-prompt-engineering?
-
-#### AI Startup Style
-1. How would you implement 11-llms-prompt-engineering in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 11-llms-prompt-engineering?
-
-### Resume Tips
-- **Technical Skills**: List 11-llms-prompt-engineering under relevant technical skills
-- **Project Description**: "Implemented 11-llms-prompt-engineering to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 11-llms-prompt-engineering in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 11-llms-prompt-engineering
-- [ ] Practice 3-5 problems related to 11-llms-prompt-engineering
-- [ ] Prepare 2 real-world examples of using 11-llms-prompt-engineering
-- [ ] Know the time/space complexity of common 11-llms-prompt-engineering operations
-- [ ] Have questions ready about how the company uses 11-llms-prompt-engineeringscenario.
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to LLMs & Prompt Engineering fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master llm evaluation?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of llm evaluation helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding llm evaluation at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of llm evaluation like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply llm evaluation concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of llm evaluation?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply llm evaluation in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of LLMs & Prompt Engineering?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Prompt Engineering Notes
-
-- **Be Specific**: Clear, detailed prompts get better results
-- **Provide Examples**: Few-shot learning improves consistency
-- **Use Structured Output**: JSON, tables, or markdown for parsing
-- **Chain of Thought**: Break complex reasoning into steps
-- **Temperature Control**: Adjust creativity vs consistency
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering LLMs & Prompt Engineering, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

@@ -43,7 +43,7 @@ flowchart TD
     G --> H{Tradeoffs}
     H -->|Refine| B
     H -->|Done| I[Code]
-```text
+```
 
 
 ### What OOD Interviews Test
@@ -230,7 +230,7 @@ class ParkingLot {
         return undefined
     }
 }
-```text
+```
 
 
 ### Discussion Points
@@ -370,7 +370,7 @@ class Logger {
         this.log(LogLevel.ERROR, message, metadata)
     }
 }
-```text
+```
 
 
 ### Discussion Points
@@ -494,7 +494,7 @@ class RateLimiterFactory {
         return new SlidingWindowRateLimiter(maxRequests, windowMs)
     }
 }
-```text
+```
 
 
 ### Discussion Points
@@ -615,16 +615,8 @@ class VendingMachine {
         if (slot) slot.restock(amount)
     }
 }
-```text
+```
 
-
-## Exercises
-
-**Easy** — Implement a basic ood design example that demonstrates the core concept.
-
-**Medium** — Create a more complex implementation that handles edge cases.
-
-**Hard** — Design an optimized solution for large-scale ood design scenarios.
 
 ## Summary
 
@@ -682,6 +674,14 @@ logger, rate limiter, vending machine) and extend them with new features.
    // correct: B
 
 #
+
+## Exercises
+
+**Easy** — Implement a basic ood design example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale ood design scenarios.
 
 ## Common Mistakes
 

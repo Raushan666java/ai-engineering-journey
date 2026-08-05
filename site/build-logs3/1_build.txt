@@ -1,0 +1,1341 @@
+﻿2026-07-25T10:31:21.4388916Z Current runner version: '2.336.0'
+2026-07-25T10:31:21.4416385Z ##[group]Runner Image Provisioner
+2026-07-25T10:31:21.4417277Z Hosted Compute Agent
+2026-07-25T10:31:21.4417862Z Version: 20260707.563
+2026-07-25T10:31:21.4418584Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-07-25T10:31:21.4419617Z Build Date: 2026-07-07T19:33:50Z
+2026-07-25T10:31:21.4420409Z Worker ID: {3662d0bf-d7b3-4fc1-bacf-74a4f948d798}
+2026-07-25T10:31:21.4421251Z Azure Region: centralus
+2026-07-25T10:31:21.4421858Z ##[endgroup]
+2026-07-25T10:31:21.4423373Z ##[group]Operating System
+2026-07-25T10:31:21.4424016Z Ubuntu
+2026-07-25T10:31:21.4424573Z 24.04.4
+2026-07-25T10:31:21.4425177Z LTS
+2026-07-25T10:31:21.4425707Z ##[endgroup]
+2026-07-25T10:31:21.4426297Z ##[group]Runner Image
+2026-07-25T10:31:21.4426930Z Image: ubuntu-24.04
+2026-07-25T10:31:21.4427553Z Version: 20260720.247.2
+2026-07-25T10:31:21.4429150Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+2026-07-25T10:31:21.4430803Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+2026-07-25T10:31:21.4431914Z ##[endgroup]
+2026-07-25T10:31:21.4433199Z ##[group]GITHUB_TOKEN Permissions
+2026-07-25T10:31:21.4435604Z Contents: read
+2026-07-25T10:31:21.4436219Z Metadata: read
+2026-07-25T10:31:21.4436867Z Pages: write
+2026-07-25T10:31:21.4437461Z ##[endgroup]
+2026-07-25T10:31:21.4440027Z Secret source: Actions
+2026-07-25T10:31:21.4441582Z Prepare workflow directory
+2026-07-25T10:31:21.4849553Z Prepare all required actions
+2026-07-25T10:31:21.4910696Z Getting action download info
+2026-07-25T10:31:21.7213627Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-07-25T10:31:22.1182464Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-07-25T10:31:22.2091119Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+2026-07-25T10:31:22.4527196Z Getting action download info
+2026-07-25T10:31:22.5339078Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-07-25T10:31:22.6937708Z Complete job name: build
+2026-07-25T10:31:22.7958142Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T10:31:22.7969885Z ##[group]Run actions/checkout@v4
+2026-07-25T10:31:22.7971076Z with:
+2026-07-25T10:31:22.7972016Z   repository: Raushan666java/ai-engineering-journey
+2026-07-25T10:31:22.7980458Z   token: ***
+2026-07-25T10:31:22.7981284Z   ssh-strict: true
+2026-07-25T10:31:22.7982116Z   ssh-user: git
+2026-07-25T10:31:22.7982973Z   persist-credentials: true
+2026-07-25T10:31:22.7983900Z   clean: true
+2026-07-25T10:31:22.7984770Z   sparse-checkout-cone-mode: true
+2026-07-25T10:31:22.7985809Z   fetch-depth: 1
+2026-07-25T10:31:22.7986639Z   fetch-tags: false
+2026-07-25T10:31:22.7987484Z   show-progress: true
+2026-07-25T10:31:22.7988369Z   lfs: false
+2026-07-25T10:31:22.7989333Z   submodules: false
+2026-07-25T10:31:22.7990197Z   set-safe-directory: true
+2026-07-25T10:31:22.7991214Z   allow-unsafe-pr-checkout: false
+2026-07-25T10:31:22.7992422Z ##[endgroup]
+2026-07-25T10:31:22.9052037Z Syncing repository: Raushan666java/ai-engineering-journey
+2026-07-25T10:31:22.9056310Z ##[group]Getting Git version info
+2026-07-25T10:31:22.9059033Z Working directory is '/home/runner/work/ai-engineering-journey/ai-engineering-journey'
+2026-07-25T10:31:22.9062650Z [command]/usr/bin/git version
+2026-07-25T10:31:22.9064117Z git version 2.54.0
+2026-07-25T10:31:22.9083161Z ##[endgroup]
+2026-07-25T10:31:22.9098569Z Temporarily overriding HOME='/home/runner/work/_temp/b73a9412-0d58-4c5d-aacf-78630b441b29' before making global git config changes
+2026-07-25T10:31:22.9103379Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-25T10:31:22.9109877Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-engineering-journey/ai-engineering-journey
+2026-07-25T10:31:22.9154479Z Deleting the contents of '/home/runner/work/ai-engineering-journey/ai-engineering-journey'
+2026-07-25T10:31:22.9158409Z ##[group]Initializing the repository
+2026-07-25T10:31:22.9161760Z [command]/usr/bin/git init /home/runner/work/ai-engineering-journey/ai-engineering-journey
+2026-07-25T10:31:22.9237610Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-07-25T10:31:22.9241197Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-07-25T10:31:22.9244715Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-07-25T10:31:22.9246563Z hint: call:
+2026-07-25T10:31:22.9247828Z hint:
+2026-07-25T10:31:22.9249554Z hint: 	git config --global init.defaultBranch <name>
+2026-07-25T10:31:22.9251534Z hint:
+2026-07-25T10:31:22.9253354Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-07-25T10:31:22.9256178Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-07-25T10:31:22.9258352Z hint:
+2026-07-25T10:31:22.9259699Z hint: 	git branch -m <name>
+2026-07-25T10:31:22.9261017Z hint:
+2026-07-25T10:31:22.9263009Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-07-25T10:31:22.9266412Z Initialized empty Git repository in /home/runner/work/ai-engineering-journey/ai-engineering-journey/.git/
+2026-07-25T10:31:22.9270507Z [command]/usr/bin/git remote add origin https://github.com/Raushan666java/ai-engineering-journey
+2026-07-25T10:31:22.9339593Z ##[endgroup]
+2026-07-25T10:31:22.9341894Z ##[group]Disabling automatic garbage collection
+2026-07-25T10:31:22.9343977Z [command]/usr/bin/git config --local gc.auto 0
+2026-07-25T10:31:22.9376590Z ##[endgroup]
+2026-07-25T10:31:22.9381411Z ##[group]Setting up auth
+2026-07-25T10:31:22.9385936Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-25T10:31:22.9423462Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-25T10:31:22.9774761Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-25T10:31:22.9817429Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-25T10:31:23.0087076Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-25T10:31:23.0130036Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-25T10:31:23.0376937Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-07-25T10:31:23.0419737Z ##[endgroup]
+2026-07-25T10:31:23.0422302Z ##[group]Fetching the repository
+2026-07-25T10:31:23.0431046Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0310bdb465a8002fc4f19269c1b4017ffae18f95:refs/remotes/origin/main
+2026-07-25T10:31:33.7820888Z From https://github.com/Raushan666java/ai-engineering-journey
+2026-07-25T10:31:33.7821643Z  * [new ref]         0310bdb465a8002fc4f19269c1b4017ffae18f95 -> origin/main
+2026-07-25T10:31:33.7857946Z ##[endgroup]
+2026-07-25T10:31:33.7858479Z ##[group]Determining the checkout info
+2026-07-25T10:31:33.7861368Z ##[endgroup]
+2026-07-25T10:31:33.7870935Z [command]/usr/bin/git sparse-checkout disable
+2026-07-25T10:31:33.7949789Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-07-25T10:31:33.7990631Z ##[group]Checking out the ref
+2026-07-25T10:31:33.7991438Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-07-25T10:31:34.8228272Z Updating files:  50% (6420/12622)
+2026-07-25T10:31:34.8530796Z Updating files:  51% (6438/12622)
+2026-07-25T10:31:34.8867399Z Updating files:  52% (6564/12622)
+2026-07-25T10:31:34.9151047Z Updating files:  53% (6690/12622)
+2026-07-25T10:31:34.9460415Z Updating files:  54% (6816/12622)
+2026-07-25T10:31:34.9787732Z Updating files:  55% (6943/12622)
+2026-07-25T10:31:35.0076980Z Updating files:  56% (7069/12622)
+2026-07-25T10:31:35.0360483Z Updating files:  57% (7195/12622)
+2026-07-25T10:31:35.0649168Z Updating files:  58% (7321/12622)
+2026-07-25T10:31:35.0989563Z Updating files:  59% (7447/12622)
+2026-07-25T10:31:35.1321334Z Updating files:  60% (7574/12622)
+2026-07-25T10:31:35.1623945Z Updating files:  61% (7700/12622)
+2026-07-25T10:31:35.1891756Z Updating files:  62% (7826/12622)
+2026-07-25T10:31:35.2264774Z Updating files:  63% (7952/12622)
+2026-07-25T10:31:35.2651845Z Updating files:  64% (8079/12622)
+2026-07-25T10:31:35.3020019Z Updating files:  65% (8205/12622)
+2026-07-25T10:31:35.3401225Z Updating files:  66% (8331/12622)
+2026-07-25T10:31:35.3751981Z Updating files:  67% (8457/12622)
+2026-07-25T10:31:35.4099309Z Updating files:  68% (8583/12622)
+2026-07-25T10:31:35.4479781Z Updating files:  69% (8710/12622)
+2026-07-25T10:31:35.4794876Z Updating files:  70% (8836/12622)
+2026-07-25T10:31:35.5052435Z Updating files:  71% (8962/12622)
+2026-07-25T10:31:35.5324076Z Updating files:  72% (9088/12622)
+2026-07-25T10:31:35.5662250Z Updating files:  73% (9215/12622)
+2026-07-25T10:31:35.5976235Z Updating files:  74% (9341/12622)
+2026-07-25T10:31:35.6378945Z Updating files:  75% (9467/12622)
+2026-07-25T10:31:35.6744842Z Updating files:  76% (9593/12622)
+2026-07-25T10:31:35.7012588Z Updating files:  77% (9719/12622)
+2026-07-25T10:31:35.7295642Z Updating files:  78% (9846/12622)
+2026-07-25T10:31:35.7555623Z Updating files:  79% (9972/12622)
+2026-07-25T10:31:35.7825333Z Updating files:  80% (10098/12622)
+2026-07-25T10:31:35.8157266Z Updating files:  81% (10224/12622)
+2026-07-25T10:31:35.8175398Z Updating files:  82% (10351/12622)
+2026-07-25T10:31:35.8594731Z Updating files:  82% (10356/12622)
+2026-07-25T10:31:35.8951300Z Updating files:  83% (10477/12622)
+2026-07-25T10:31:35.9336681Z Updating files:  84% (10603/12622)
+2026-07-25T10:31:35.9751874Z Updating files:  85% (10729/12622)
+2026-07-25T10:31:36.0178511Z Updating files:  86% (10855/12622)
+2026-07-25T10:31:36.0517004Z Updating files:  87% (10982/12622)
+2026-07-25T10:31:36.0679291Z Updating files:  88% (11108/12622)
+2026-07-25T10:31:36.0753775Z Updating files:  89% (11234/12622)
+2026-07-25T10:31:36.0896590Z Updating files:  90% (11360/12622)
+2026-07-25T10:31:36.1176319Z Updating files:  91% (11487/12622)
+2026-07-25T10:31:36.1645517Z Updating files:  92% (11613/12622)
+2026-07-25T10:31:36.1910999Z Updating files:  93% (11739/12622)
+2026-07-25T10:31:36.2282345Z Updating files:  94% (11865/12622)
+2026-07-25T10:31:36.2565407Z Updating files:  95% (11991/12622)
+2026-07-25T10:31:36.2938478Z Updating files:  96% (12118/12622)
+2026-07-25T10:31:36.3105418Z Updating files:  97% (12244/12622)
+2026-07-25T10:31:36.3175936Z Updating files:  98% (12370/12622)
+2026-07-25T10:31:36.3257898Z Updating files:  99% (12496/12622)
+2026-07-25T10:31:36.3258890Z Updating files: 100% (12622/12622)
+2026-07-25T10:31:36.3259620Z Updating files: 100% (12622/12622), done.
+2026-07-25T10:31:36.3428313Z Switched to a new branch 'main'
+2026-07-25T10:31:36.3431069Z branch 'main' set up to track 'origin/main'.
+2026-07-25T10:31:36.3584415Z ##[endgroup]
+2026-07-25T10:31:36.3636997Z [command]/usr/bin/git log -1 --format=%H
+2026-07-25T10:31:36.3667484Z 0310bdb465a8002fc4f19269c1b4017ffae18f95
+2026-07-25T10:31:36.3944838Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T10:31:36.3946522Z ##[group]Run actions/setup-node@v4
+2026-07-25T10:31:36.3946781Z with:
+2026-07-25T10:31:36.3946983Z   node-version: 20
+2026-07-25T10:31:36.3947203Z   cache: npm
+2026-07-25T10:31:36.3947453Z   cache-dependency-path: site/package-lock.json
+2026-07-25T10:31:36.3947753Z   always-auth: false
+2026-07-25T10:31:36.3947974Z   check-latest: false
+2026-07-25T10:31:36.3950503Z   token: ***
+2026-07-25T10:31:36.3950717Z ##[endgroup]
+2026-07-25T10:31:36.5328554Z Attempting to download 20...
+2026-07-25T10:31:36.5449326Z (node:2244) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-25T10:31:36.5450287Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-25T10:31:37.1474801Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+2026-07-25T10:31:37.6666237Z Extracting ...
+2026-07-25T10:31:37.6779755Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/00714474-81e7-497e-8f1e-4f09c0cc46f4 -f /home/runner/work/_temp/27dfaa32-e806-42d9-bde2-7bbe8dc3ced6
+2026-07-25T10:31:38.7967151Z Adding to the cache ...
+2026-07-25T10:31:40.8481940Z ##[group]Environment details
+2026-07-25T10:31:41.0717666Z node: v20.20.2
+2026-07-25T10:31:41.0718062Z npm: 10.8.2
+2026-07-25T10:31:41.0718346Z yarn: 1.22.22
+2026-07-25T10:31:41.0719219Z ##[endgroup]
+2026-07-25T10:31:41.0738640Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+2026-07-25T10:31:41.1767690Z /home/runner/.npm
+2026-07-25T10:31:41.3158994Z npm cache is not found
+2026-07-25T10:31:41.3367164Z ##[group]Run npm ci
+2026-07-25T10:31:41.3367455Z [36;1mnpm ci[0m
+2026-07-25T10:31:41.3424885Z shell: /usr/bin/bash -e {0}
+2026-07-25T10:31:41.3425179Z ##[endgroup]
+2026-07-25T10:31:44.8033896Z npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+2026-07-25T10:31:52.7260163Z npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+2026-07-25T10:32:03.4443595Z 
+2026-07-25T10:32:03.4444729Z added 1456 packages, and audited 1457 packages in 22s
+2026-07-25T10:32:03.4445171Z 
+2026-07-25T10:32:03.4445438Z 446 packages are looking for funding
+2026-07-25T10:32:03.4445905Z   run `npm fund` for details
+2026-07-25T10:32:03.6819584Z 
+2026-07-25T10:32:03.6820480Z 27 vulnerabilities (6 moderate, 21 high)
+2026-07-25T10:32:03.6820877Z 
+2026-07-25T10:32:03.6821335Z To address issues that do not require attention, run:
+2026-07-25T10:32:03.6821861Z   npm audit fix
+2026-07-25T10:32:03.6822044Z 
+2026-07-25T10:32:03.6822460Z To address all issues possible (including breaking changes), run:
+2026-07-25T10:32:03.6823042Z   npm audit fix --force
+2026-07-25T10:32:03.6823273Z 
+2026-07-25T10:32:03.6823578Z Some issues need review, and may require choosing
+2026-07-25T10:32:03.6823935Z a different dependency.
+2026-07-25T10:32:03.6824088Z 
+2026-07-25T10:32:03.6824211Z Run `npm audit` for details.
+2026-07-25T10:32:03.7205492Z ##[group]Run npm run build
+2026-07-25T10:32:03.7205790Z [36;1mnpm run build[0m
+2026-07-25T10:32:03.7256699Z shell: /usr/bin/bash -e {0}
+2026-07-25T10:32:03.7256959Z env:
+2026-07-25T10:32:03.7257224Z   NODE_OPTIONS: --max-old-space-size=7168
+2026-07-25T10:32:03.7257516Z ##[endgroup]
+2026-07-25T10:32:03.8596809Z 
+2026-07-25T10:32:03.8597458Z > site@0.0.0 build
+2026-07-25T10:32:03.8597902Z > docusaurus build
+2026-07-25T10:32:03.8598046Z 
+2026-07-25T10:32:04.9331859Z [WARNING] The `siteConfig.onBrokenMarkdownLinks` config option is deprecated and will be removed in Docusaurus v4.
+2026-07-25T10:32:04.9333339Z Please migrate and move this option to `siteConfig.markdown.hooks.onBrokenMarkdownLinks` instead.
+2026-07-25T10:32:04.9339036Z [INFO] [en] Creating an optimized production build...
+2026-07-25T10:32:04.9404422Z [WARNING] The `siteConfig.onBrokenMarkdownLinks` config option is deprecated and will be removed in Docusaurus v4.
+2026-07-25T10:32:04.9405470Z Please migrate and move this option to `siteConfig.markdown.hooks.onBrokenMarkdownLinks` instead.
+2026-07-25T10:32:06.6758196Z [info] [webpackbar] Compiling Client
+2026-07-25T10:32:06.6969262Z [info] [webpackbar] Compiling Server
+2026-07-25T10:33:03.5998596Z [WARNING] Docusaurus found 1 unused Markdown directives in file "docs/courses/ai-agent-engineer/09-ai-system-design.md"
+2026-07-25T10:33:03.5999793Z - :match (1111:76)
+2026-07-25T10:33:03.6000985Z Your content might render in an unexpected way. Visit https://github.com/facebook/docusaurus/pull/9394 to find out why and how to fix it.
+2026-07-25T10:33:22.9817793Z [WARNING] Markdown link with URL `./09-bhavana-anand.md` in source file "docs/courses/vigyan-bhairav-tantra/08-bhav-sakshi.md" (10:20) couldn't be resolved.
+2026-07-25T10:33:22.9819740Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:33:33.8285838Z [WARNING] Markdown link with URL `./09-bhavana-anand.md` in source file "docs/courses/vigyan-bhairav-tantra/08-bhav-sakshi.md" (10:20) couldn't be resolved.
+2026-07-25T10:33:33.8286793Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:33:36.5147793Z [WARNING] Markdown link with empty URL found in source file "docs/courses/modern-ai-engineering/index.md" (11:1).
+2026-07-25T10:33:39.3570987Z [WARNING] Markdown link with empty URL found in source file "docs/courses/modern-ai-engineering/index.md" (11:1).
+2026-07-25T10:35:14.0063186Z [WARNING] Markdown link with URL `./04-dhyan-taiyari.md` in source file "docs/courses/vigyan-bhairav-tantra/05-sharir-chetn.md" (9:21) couldn't be resolved.
+2026-07-25T10:35:14.0064778Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:35:18.3826115Z [WARNING] Markdown link with URL `./04-dhyan-taiyari.md` in source file "docs/courses/vigyan-bhairav-tantra/05-sharir-chetn.md" (9:21) couldn't be resolved.
+2026-07-25T10:35:18.3827715Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:35:45.4832206Z [WARNING] Docusaurus found 1 unused Markdown directives in file "docs/courses/ai-agent-engineer/03-phase2-llm-rag-theory.md"
+2026-07-25T10:35:45.4832853Z - :match (953:43)
+2026-07-25T10:35:45.4833585Z Your content might render in an unexpected way. Visit https://github.com/facebook/docusaurus/pull/9394 to find out why and how to fix it.
+2026-07-25T10:37:17.8342889Z [WARNING] Markdown link with URL `../08-machine-learning/index.md` in source file "docs/courses/ai-engineering-placement/index.md" (35:9) couldn't be resolved.
+2026-07-25T10:37:17.8344515Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:37:17.8346305Z [WARNING] Markdown link with URL `../11-llms-prompt-engineering/index.md` in source file "docs/courses/ai-engineering-placement/index.md" (35:68) couldn't be resolved.
+2026-07-25T10:37:17.8347949Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:37:27.3831830Z [WARNING] Markdown link with URL `../08-machine-learning/index.md` in source file "docs/courses/ai-engineering-placement/index.md" (35:9) couldn't be resolved.
+2026-07-25T10:37:27.3833731Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:37:27.3835522Z [WARNING] Markdown link with URL `../11-llms-prompt-engineering/index.md` in source file "docs/courses/ai-engineering-placement/index.md" (35:68) couldn't be resolved.
+2026-07-25T10:37:27.3837095Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:37:57.1031237Z [WARNING] Markdown link with URL `../../roadmap.md` in source file "docs/courses/learning-how-to-learn/ch-16-self-assessment-strategy.md" (1162:25) couldn't be resolved.
+2026-07-25T10:37:57.1073202Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:37:57.1100940Z [WARNING] Markdown link with URL `../../roadmap.md` in source file "docs/courses/learning-how-to-learn/ch-16-self-assessment-strategy.md" (1288:16) couldn't be resolved.
+2026-07-25T10:37:57.1129823Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:38:01.6355356Z [WARNING] Markdown link with URL `../../roadmap.md` in source file "docs/courses/learning-how-to-learn/ch-16-self-assessment-strategy.md" (1162:25) couldn't be resolved.
+2026-07-25T10:38:01.6361907Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:38:01.6363704Z [WARNING] Markdown link with URL `../../roadmap.md` in source file "docs/courses/learning-how-to-learn/ch-16-self-assessment-strategy.md" (1288:16) couldn't be resolved.
+2026-07-25T10:38:01.6365321Z Make sure it references a local Markdown file that exists within the current plugin.
+2026-07-25T10:38:18.9160413Z [success] [webpackbar] Server: Compiled successfully in 6.20m
+2026-07-25T10:41:00.1030177Z [success] [webpackbar] Client: Compiled successfully in 8.89m
+2026-07-25T10:41:46.4668454Z 
+2026-07-25T10:41:46.4752873Z [ERROR] Error: Unable to build website for locale en.
+2026-07-25T10:41:46.4754154Z     at tryToBuildLocale (/home/runner/work/ai-engineering-journey/ai-engineering-journey/site/node_modules/@docusaurus/core/lib/commands/build/build.js:76:15)
+2026-07-25T10:41:46.4756002Z     at async /home/runner/work/ai-engineering-journey/ai-engineering-journey/site/node_modules/@docusaurus/core/lib/commands/build/build.js:34:9
+2026-07-25T10:41:46.4757068Z     ... 4 lines matching cause stack trace ...
+2026-07-25T10:41:46.4759260Z     at async file:///home/runner/work/ai-engineering-journey/ai-engineering-journey/site/node_modules/@docusaurus/core/bin/docusaurus.mjs:44:3 {
+2026-07-25T10:41:46.4762352Z   [cause]: Error: Docusaurus static site generation failed for 1308 paths:
+2026-07-25T10:41:46.4763037Z   - "/ai-engineering-journey/404.html"
+2026-07-25T10:41:46.4763535Z   - "/ai-engineering-journey/"
+2026-07-25T10:41:46.4764138Z   - "/ai-engineering-journey/00-foundations/computer-architecture"
+2026-07-25T10:41:46.4764887Z   - "/ai-engineering-journey/00-foundations/computer-networks"
+2026-07-25T10:41:46.4765350Z   - "/ai-engineering-journey/00-foundations/database-internals"
+2026-07-25T10:41:46.4765807Z   - "/ai-engineering-journey/00-foundations/index"
+2026-07-25T10:41:46.4766233Z   - "/ai-engineering-journey/00-foundations/oop-design-patterns"
+2026-07-25T10:41:46.4766681Z   - "/ai-engineering-journey/00-foundations/operating-systems"
+2026-07-25T10:41:46.4767076Z   - "/ai-engineering-journey/01-python/collections"
+2026-07-25T10:41:46.4767445Z   - "/ai-engineering-journey/01-python/concurrency"
+2026-07-25T10:41:46.4790162Z   - "/ai-engineering-journey/01-python/control-flow"
+2026-07-25T10:41:46.4790711Z   - "/ai-engineering-journey/01-python/data-visualization"
+2026-07-25T10:41:46.4791206Z   - "/ai-engineering-journey/01-python/decorators-and-generators"
+2026-07-25T10:41:46.4791699Z   - "/ai-engineering-journey/01-python/file-io-and-exceptions"
+2026-07-25T10:41:46.4792526Z   - "/ai-engineering-journey/01-python/functions"
+2026-07-25T10:41:46.4792903Z   - "/ai-engineering-journey/01-python/index"
+2026-07-25T10:41:46.4793315Z   - "/ai-engineering-journey/01-python/modules-and-packages"
+2026-07-25T10:41:46.4793733Z   - "/ai-engineering-journey/01-python/numpy-fundamentals"
+2026-07-25T10:41:46.4794120Z   - "/ai-engineering-journey/01-python/oop-in-python"
+2026-07-25T10:41:46.4794512Z   - "/ai-engineering-journey/01-python/pandas-advanced"
+2026-07-25T10:41:46.4794886Z   - "/ai-engineering-journey/01-python/pandas-basics"
+2026-07-25T10:41:46.4795241Z   - "/ai-engineering-journey/01-python/python-basics"
+2026-07-25T10:41:46.4795631Z   - "/ai-engineering-journey/01-python/strings-and-formatting"
+2026-07-25T10:41:46.4796078Z   - "/ai-engineering-journey/02-sql-databases/aggregate-functions"
+2026-07-25T10:41:46.4796516Z   - "/ai-engineering-journey/02-sql-databases/database-design"
+2026-07-25T10:41:46.4797064Z   - "/ai-engineering-journey/02-sql-databases/index"
+2026-07-25T10:41:46.4797548Z   - "/ai-engineering-journey/02-sql-databases/indexes-and-performance"
+2026-07-25T10:41:46.4797989Z   - "/ai-engineering-journey/02-sql-databases/joins"
+2026-07-25T10:41:46.4798394Z   - "/ai-engineering-journey/02-sql-databases/postgresql-advanced"
+2026-07-25T10:41:46.4799147Z   - "/ai-engineering-journey/02-sql-databases/set-operations"
+2026-07-25T10:41:46.4799750Z   - "/ai-engineering-journey/02-sql-databases/sql-basics"
+2026-07-25T10:41:46.4800242Z   - "/ai-engineering-journey/02-sql-databases/subqueries-and-ctes"
+2026-07-25T10:41:46.4800722Z   - "/ai-engineering-journey/02-sql-databases/transactions-and-acid"
+2026-07-25T10:41:46.4801190Z   - "/ai-engineering-journey/02-sql-databases/window-functions"
+2026-07-25T10:41:46.4801568Z   - "/ai-engineering-journey/03-dsa/arrays"
+2026-07-25T10:41:46.4801901Z   - "/ai-engineering-journey/03-dsa/backtracking"
+2026-07-25T10:41:46.4802285Z   - "/ai-engineering-journey/03-dsa/binary-search-trees"
+2026-07-25T10:41:46.4802655Z   - "/ai-engineering-journey/03-dsa/binary-trees"
+2026-07-25T10:41:46.4803061Z   - "/ai-engineering-journey/03-dsa/bit-manipulation-and-math"
+2026-07-25T10:41:46.4803486Z   - "/ai-engineering-journey/03-dsa/dynamic-programming-1d"
+2026-07-25T10:41:46.4803889Z   - "/ai-engineering-journey/03-dsa/dynamic-programming-2d"
+2026-07-25T10:41:46.4804257Z   - "/ai-engineering-journey/03-dsa/graphs-bfs-dfs"
+2026-07-25T10:41:46.4804634Z   - "/ai-engineering-journey/03-dsa/graphs-shortest-path"
+2026-07-25T10:41:46.4805047Z   - "/ai-engineering-journey/03-dsa/graphs-topological-sort"
+2026-07-25T10:41:46.4805438Z   - "/ai-engineering-journey/03-dsa/hash-maps-and-sets"
+2026-07-25T10:41:46.4805799Z   - "/ai-engineering-journey/03-dsa/heaps-and-tries"
+2026-07-25T10:41:46.4806141Z   - "/ai-engineering-journey/03-dsa/index"
+2026-07-25T10:41:46.4806471Z   - "/ai-engineering-journey/03-dsa/linked-lists"
+2026-07-25T10:41:46.4806820Z   - "/ai-engineering-journey/03-dsa/sliding-window"
+2026-07-25T10:41:46.4807174Z   - "/ai-engineering-journey/03-dsa/stacks-and-queues"
+2026-07-25T10:41:46.4807516Z   - "/ai-engineering-journey/03-dsa/strings"
+2026-07-25T10:41:46.4807890Z   - "/ai-engineering-journey/03-dsa/time-and-space-complexity"
+2026-07-25T10:41:46.4808266Z   - "/ai-engineering-journey/03-dsa/two-pointers"
+2026-07-25T10:41:46.4808804Z   - "/ai-engineering-journey/04-git-linux/bash-scripting"
+2026-07-25T10:41:46.4809213Z   - "/ai-engineering-journey/04-git-linux/git-basics"
+2026-07-25T10:41:46.4809584Z   - "/ai-engineering-journey/04-git-linux/git-branching"
+2026-07-25T10:41:46.4809954Z   - "/ai-engineering-journey/04-git-linux/git-workflow"
+2026-07-25T10:41:46.4810303Z   - "/ai-engineering-journey/04-git-linux/index"
+2026-07-25T10:41:46.4810666Z   - "/ai-engineering-journey/04-git-linux/linux-commands"
+2026-07-25T10:41:46.4811169Z   - "/ai-engineering-journey/04-git-linux/networking-and-security"
+2026-07-25T10:41:46.4811625Z   - "/ai-engineering-journey/05-fastapi/api-deployment"
+2026-07-25T10:41:46.4812003Z   - "/ai-engineering-journey/05-fastapi/async-patterns"
+2026-07-25T10:41:46.4812580Z   - "/ai-engineering-journey/05-fastapi/authentication-and-authz"
+2026-07-25T10:41:46.4813049Z   - "/ai-engineering-journey/05-fastapi/database-with-sqlalchemy"
+2026-07-25T10:41:46.4813479Z   - "/ai-engineering-journey/05-fastapi/dependency-injection"
+2026-07-25T10:41:46.4813931Z   - "/ai-engineering-journey/05-fastapi/error-handling-and-logging"
+2026-07-25T10:41:46.4814352Z   - "/ai-engineering-journey/05-fastapi/fastapi-basics"
+2026-07-25T10:41:46.4814708Z   - "/ai-engineering-journey/05-fastapi/index"
+2026-07-25T10:41:46.4815100Z   - "/ai-engineering-journey/05-fastapi/pydantic-and-validation"
+2026-07-25T10:41:46.4815530Z   - "/ai-engineering-journey/05-fastapi/rest-api-fundamentals"
+2026-07-25T10:41:46.4815936Z   - "/ai-engineering-journey/05-fastapi/testing-fastapi"
+2026-07-25T10:41:46.4816334Z   - "/ai-engineering-journey/06-docker-k8s-cloud/aws-containers"
+2026-07-25T10:41:46.4816978Z   - "/ai-engineering-journey/06-docker-k8s-cloud/aws-fundamentals"
+2026-07-25T10:41:46.4817456Z   - "/ai-engineering-journey/06-docker-k8s-cloud/azure-and-gcp-basics"
+2026-07-25T10:41:46.4817949Z   - "/ai-engineering-journey/06-docker-k8s-cloud/ci-cd-pipelines"
+2026-07-25T10:41:46.4818389Z   - "/ai-engineering-journey/06-docker-k8s-cloud/docker-basics"
+2026-07-25T10:41:46.4819028Z   - "/ai-engineering-journey/06-docker-k8s-cloud/docker-best-practices"
+2026-07-25T10:41:46.4819503Z   - "/ai-engineering-journey/06-docker-k8s-cloud/docker-compose"
+2026-07-25T10:41:46.4819909Z   - "/ai-engineering-journey/06-docker-k8s-cloud/index"
+2026-07-25T10:41:46.4820339Z   - "/ai-engineering-journey/06-docker-k8s-cloud/kubernetes-basics"
+2026-07-25T10:41:46.4820799Z   - "/ai-engineering-journey/06-docker-k8s-cloud/kubernetes-config"
+2026-07-25T10:41:46.4821250Z   - "/ai-engineering-journey/06-docker-k8s-cloud/kubernetes-scaling"
+2026-07-25T10:41:46.4821716Z   - "/ai-engineering-journey/07-system-design/api-design-patterns"
+2026-07-25T10:41:46.4822171Z   - "/ai-engineering-journey/07-system-design/caching-strategies"
+2026-07-25T10:41:46.4822625Z   - "/ai-engineering-journey/07-system-design/cap-and-consistency"
+2026-07-25T10:41:46.4823062Z   - "/ai-engineering-journey/07-system-design/database-scaling"
+2026-07-25T10:41:46.4823490Z   - "/ai-engineering-journey/07-system-design/design-chatgpt"
+2026-07-25T10:41:46.4823929Z   - "/ai-engineering-journey/07-system-design/design-url-shortener"
+2026-07-25T10:41:46.4824364Z   - "/ai-engineering-journey/07-system-design/design-whatsapp"
+2026-07-25T10:41:46.4824751Z   - "/ai-engineering-journey/07-system-design/index"
+2026-07-25T10:41:46.4825186Z   - "/ai-engineering-journey/07-system-design/message-queues"
+2026-07-25T10:41:46.4825646Z   - "/ai-engineering-journey/07-system-design/microservices-architecture"
+2026-07-25T10:41:46.4826169Z   - "/ai-engineering-journey/07-system-design/monitoring-and-observability"
+2026-07-25T10:41:46.4826854Z   - "/ai-engineering-journey/07-system-design/rate-limiting-and-idempotency"
+2026-07-25T10:41:46.4827391Z   - "/ai-engineering-journey/07-system-design/scalability-fundamentals"
+2026-07-25T10:41:46.4827837Z   - "/ai-engineering-journey/08-ml/decision-trees-and-rf"
+2026-07-25T10:41:46.4828240Z   - "/ai-engineering-journey/08-ml/dimensionality-reduction"
+2026-07-25T10:41:46.4828618Z   - "/ai-engineering-journey/08-ml/ensemble-methods"
+2026-07-25T10:41:46.4829313Z   - "/ai-engineering-journey/08-ml/hyperparameter-tuning"
+2026-07-25T10:41:46.4829662Z   - "/ai-engineering-journey/08-ml/index"
+2026-07-25T10:41:46.4829998Z   - "/ai-engineering-journey/08-ml/linear-regression"
+2026-07-25T10:41:46.4830367Z   - "/ai-engineering-journey/08-ml/logistic-regression"
+2026-07-25T10:41:46.4830727Z   - "/ai-engineering-journey/08-ml/ml-fundamentals"
+2026-07-25T10:41:46.4831081Z   - "/ai-engineering-journey/08-ml/model-evaluation"
+2026-07-25T10:41:46.4831457Z   - "/ai-engineering-journey/08-ml/svm-and-kernel-methods"
+2026-07-25T10:41:46.4831853Z   - "/ai-engineering-journey/08-ml/unsupervised-learning"
+2026-07-25T10:41:46.4832240Z   - "/ai-engineering-journey/09-deep-learning/advanced-cnn"
+2026-07-25T10:41:46.4832815Z   - "/ai-engineering-journey/09-deep-learning/cnn-fundamentals"
+2026-07-25T10:41:46.4833280Z   - "/ai-engineering-journey/09-deep-learning/deployment-best-practices"
+2026-07-25T10:41:46.4833709Z   - "/ai-engineering-journey/09-deep-learning/index"
+2026-07-25T10:41:46.4834093Z   - "/ai-engineering-journey/09-deep-learning/model-deployment"
+2026-07-25T10:41:46.4834544Z   - "/ai-engineering-journey/09-deep-learning/neural-networks-basics"
+2026-07-25T10:41:46.4835006Z   - "/ai-engineering-journey/09-deep-learning/pytorch-nn-module"
+2026-07-25T10:41:46.4835439Z   - "/ai-engineering-journey/09-deep-learning/pytorch-tensors"
+2026-07-25T10:41:46.4835841Z   - "/ai-engineering-journey/09-deep-learning/rnn-and-lstm"
+2026-07-25T10:41:46.4836259Z   - "/ai-engineering-journey/09-deep-learning/training-pipelines"
+2026-07-25T10:41:46.4836816Z   - "/ai-engineering-journey/09-deep-learning/transfer-learning"
+2026-07-25T10:41:46.4837217Z   - "/ai-engineering-journey/10-nlp/attention-mechanism"
+2026-07-25T10:41:46.4837599Z   - "/ai-engineering-journey/10-nlp/bert-and-fine-tuning"
+2026-07-25T10:41:46.4837980Z   - "/ai-engineering-journey/10-nlp/hugging-face-ecosystem"
+2026-07-25T10:41:46.4838327Z   - "/ai-engineering-journey/10-nlp/index"
+2026-07-25T10:41:46.4838815Z   - "/ai-engineering-journey/10-nlp/nlp-applications"
+2026-07-25T10:41:46.4839202Z   - "/ai-engineering-journey/10-nlp/sequence-models"
+2026-07-25T10:41:46.4839564Z   - "/ai-engineering-journey/10-nlp/text-preprocessing"
+2026-07-25T10:41:46.4839949Z   - "/ai-engineering-journey/10-nlp/transformer-architecture"
+2026-07-25T10:41:46.4840319Z   - "/ai-engineering-journey/10-nlp/word-embeddings"
+2026-07-25T10:41:46.4840688Z   - "/ai-engineering-journey/11-llms-prompt/chain-of-thought"
+2026-07-25T10:41:46.4841091Z   - "/ai-engineering-journey/11-llms-prompt/context-management"
+2026-07-25T10:41:46.4841570Z   - "/ai-engineering-journey/11-llms-prompt/cost-and-latency-optimization"
+2026-07-25T10:41:46.4842078Z   - "/ai-engineering-journey/11-llms-prompt/foundation-models-overview"
+2026-07-25T10:41:46.4842492Z   - "/ai-engineering-journey/11-llms-prompt/index"
+2026-07-25T10:41:46.4842845Z   - "/ai-engineering-journey/11-llms-prompt/llm-apis"
+2026-07-25T10:41:46.4843214Z   - "/ai-engineering-journey/11-llms-prompt/llm-evaluation"
+2026-07-25T10:41:46.4843613Z   - "/ai-engineering-journey/11-llms-prompt/structured-output"
+2026-07-25T10:41:46.4844045Z   - "/ai-engineering-journey/11-llms-prompt/zero-shot-and-few-shot"
+2026-07-25T10:41:46.4844467Z   - "/ai-engineering-journey/12-rag/advanced-rag-techniques"
+2026-07-25T10:41:46.4844845Z   - "/ai-engineering-journey/12-rag/chunking-strategies"
+2026-07-25T10:41:46.4845207Z   - "/ai-engineering-journey/12-rag/document-retrieval"
+2026-07-25T10:41:46.4845563Z   - "/ai-engineering-journey/12-rag/embedding-models"
+2026-07-25T10:41:46.4845951Z   - "/ai-engineering-journey/12-rag/hybrid-search-and-reranking"
+2026-07-25T10:41:46.4846316Z   - "/ai-engineering-journey/12-rag/index"
+2026-07-25T10:41:46.4846650Z   - "/ai-engineering-journey/12-rag/introduction-to-rag"
+2026-07-25T10:41:46.4847023Z   - "/ai-engineering-journey/12-rag/production-rag-systems"
+2026-07-25T10:41:46.4847390Z   - "/ai-engineering-journey/12-rag/rag-evaluation"
+2026-07-25T10:41:46.4847748Z   - "/ai-engineering-journey/12-rag/rag-pipeline-design"
+2026-07-25T10:41:46.4848118Z   - "/ai-engineering-journey/12-rag/vector-database-basics"
+2026-07-25T10:41:46.4848529Z   - "/ai-engineering-journey/13-ai-agents/advanced-agent-patterns"
+2026-07-25T10:41:46.4849217Z   - "/ai-engineering-journey/13-ai-agents/agent-architectures"
+2026-07-25T10:41:46.4849645Z   - "/ai-engineering-journey/13-ai-agents/agent-observability"
+2026-07-25T10:41:46.4850048Z   - "/ai-engineering-journey/13-ai-agents/human-in-the-loop"
+2026-07-25T10:41:46.4850412Z   - "/ai-engineering-journey/13-ai-agents/index"
+2026-07-25T10:41:46.4850844Z   - "/ai-engineering-journey/13-ai-agents/introduction-to-ai-agents"
+2026-07-25T10:41:46.4851286Z   - "/ai-engineering-journey/13-ai-agents/langgraph-basics"
+2026-07-25T10:41:46.4851836Z   - "/ai-engineering-journey/13-ai-agents/memory-and-state"
+2026-07-25T10:41:46.4852240Z   - "/ai-engineering-journey/13-ai-agents/multi-agent-systems"
+2026-07-25T10:41:46.4852643Z   - "/ai-engineering-journey/13-ai-agents/production-agents"
+2026-07-25T10:41:46.4853086Z   - "/ai-engineering-journey/13-ai-agents/tool-use-and-function-calling"
+2026-07-25T10:41:46.4853575Z   - "/ai-engineering-journey/14-fine-tuning/dpo-and-preference-tuning"
+2026-07-25T10:41:46.4854064Z   - "/ai-engineering-journey/14-fine-tuning/evaluating-fine-tuned-models"
+2026-07-25T10:41:46.4854515Z   - "/ai-engineering-journey/14-fine-tuning/full-fine-tuning"
+2026-07-25T10:41:46.4854889Z   - "/ai-engineering-journey/14-fine-tuning/index"
+2026-07-25T10:41:46.4855278Z   - "/ai-engineering-journey/14-fine-tuning/instruction-tuning"
+2026-07-25T10:41:46.4855845Z   - "/ai-engineering-journey/14-fine-tuning/lora-implementation"
+2026-07-25T10:41:46.4856255Z   - "/ai-engineering-journey/14-fine-tuning/lora-theory"
+2026-07-25T10:41:46.4856681Z   - "/ai-engineering-journey/14-fine-tuning/qlora-and-quantization"
+2026-07-25T10:41:46.4857120Z   - "/ai-engineering-journey/14-fine-tuning/when-to-fine-tune"
+2026-07-25T10:41:46.4857587Z   - "/ai-engineering-journey/15-evaluation/alerting-and-incident-response"
+2026-07-25T10:41:46.4858062Z   - "/ai-engineering-journey/15-evaluation/evaluation-datasets"
+2026-07-25T10:41:46.4858478Z   - "/ai-engineering-journey/15-evaluation/evaluation-metrics"
+2026-07-25T10:41:46.4859029Z   - "/ai-engineering-journey/15-evaluation/index"
+2026-07-25T10:41:46.4859398Z   - "/ai-engineering-journey/15-evaluation/llm-as-judge"
+2026-07-25T10:41:46.4859831Z   - "/ai-engineering-journey/15-evaluation/observability-tools"
+2026-07-25T10:41:46.4860286Z   - "/ai-engineering-journey/15-evaluation/tracing-and-monitoring"
+2026-07-25T10:41:46.4860687Z   - "/ai-engineering-journey/16-mlops/ci-cd-for-ai"
+2026-07-25T10:41:46.4861067Z   - "/ai-engineering-journey/16-mlops/cost-management"
+2026-07-25T10:41:46.4861430Z   - "/ai-engineering-journey/16-mlops/data-versioning"
+2026-07-25T10:41:46.4861789Z   - "/ai-engineering-journey/16-mlops/drift-monitoring"
+2026-07-25T10:41:46.4862166Z   - "/ai-engineering-journey/16-mlops/experiment-tracking"
+2026-07-25T10:41:46.4862545Z   - "/ai-engineering-journey/16-mlops/incident-response"
+2026-07-25T10:41:46.4862890Z   - "/ai-engineering-journey/16-mlops/index"
+2026-07-25T10:41:46.4863236Z   - "/ai-engineering-journey/16-mlops/model-serving"
+2026-07-25T10:41:46.4863609Z   - "/ai-engineering-journey/16-mlops/prompt-versioning"
+2026-07-25T10:41:46.4864013Z   - "/ai-engineering-journey/17-security/compliance-and-ethics"
+2026-07-25T10:41:46.4864419Z   - "/ai-engineering-journey/17-security/content-filtering"
+2026-07-25T10:41:46.4864820Z   - "/ai-engineering-journey/17-security/guardrails-frameworks"
+2026-07-25T10:41:46.4865193Z   - "/ai-engineering-journey/17-security/index"
+2026-07-25T10:41:46.4865602Z   - "/ai-engineering-journey/17-security/prompt-injection-defense"
+2026-07-25T10:41:46.4866087Z   - "/ai-engineering-journey/17-security/secret-and-key-management"
+2026-07-25T10:41:46.4866509Z   - "/ai-engineering-journey/17-security/threat-landscape"
+2026-07-25T10:41:46.4866954Z   - "/ai-engineering-journey/18-multimodal/computer-vision-basics"
+2026-07-25T10:41:46.4867520Z   - "/ai-engineering-journey/18-multimodal/image-segmentation"
+2026-07-25T10:41:46.4867892Z   - "/ai-engineering-journey/18-multimodal/index"
+2026-07-25T10:41:46.4868263Z   - "/ai-engineering-journey/18-multimodal/object-detection"
+2026-07-25T10:41:46.4868818Z   - "/ai-engineering-journey/18-multimodal/ocr-and-document-ai"
+2026-07-25T10:41:46.4869234Z   - "/ai-engineering-journey/18-multimodal/speech-to-text"
+2026-07-25T10:41:46.4869618Z   - "/ai-engineering-journey/18-multimodal/voice-agents"
+2026-07-25T10:41:46.4870029Z   - "/ai-engineering-journey/19-capstone/enterprise-rag-platform"
+2026-07-25T10:41:46.4870472Z   - "/ai-engineering-journey/19-capstone/full-ai-saas-platform"
+2026-07-25T10:41:46.4871061Z   - "/ai-engineering-journey/19-capstone/house-price-prediction-api"
+2026-07-25T10:41:46.4871466Z   - "/ai-engineering-journey/19-capstone/index"
+2026-07-25T10:41:46.4871864Z   - "/ai-engineering-journey/19-capstone/multi-agent-support-system"
+2026-07-25T10:41:46.4872296Z   - "/ai-engineering-journey/19-capstone/resume-ats-analyzer"
+2026-07-25T10:41:46.4872751Z   - "/ai-engineering-journey/20-portfolio/github-profile-optimization"
+2026-07-25T10:41:46.4873164Z   - "/ai-engineering-journey/20-portfolio/index"
+2026-07-25T10:41:46.4873556Z   - "/ai-engineering-journey/20-portfolio/linkedin-optimization"
+2026-07-25T10:41:46.4874010Z   - "/ai-engineering-journey/20-portfolio/open-source-contribution"
+2026-07-25T10:41:46.4874437Z   - "/ai-engineering-journey/20-portfolio/portfolio-website"
+2026-07-25T10:41:46.4874837Z   - "/ai-engineering-journey/20-portfolio/repository-structure"
+2026-07-25T10:41:46.4875391Z   - "/ai-engineering-journey/20-portfolio/technical-blogging"
+2026-07-25T10:41:46.4875813Z   - "/ai-engineering-journey/21-interview/ai-agents-interview"
+2026-07-25T10:41:46.4876222Z   - "/ai-engineering-journey/21-interview/ai-assisted-coding"
+2026-07-25T10:41:46.4876648Z   - "/ai-engineering-journey/21-interview/backend-coding-interview"
+2026-07-25T10:41:46.4877115Z   - "/ai-engineering-journey/21-interview/behavioral-star-interview"
+2026-07-25T10:41:46.4877568Z   - "/ai-engineering-journey/21-interview/debugging-code-review"
+2026-07-25T10:41:46.4878016Z   - "/ai-engineering-journey/21-interview/deep-learning-interview"
+2026-07-25T10:41:46.4878452Z   - "/ai-engineering-journey/21-interview/dsa-patterns-mastery"
+2026-07-25T10:41:46.4879060Z   - "/ai-engineering-journey/21-interview/dsa-problem-bank"
+2026-07-25T10:41:46.4879498Z   - "/ai-engineering-journey/21-interview/faang-company-deep-dives"
+2026-07-25T10:41:46.4879894Z   - "/ai-engineering-journey/21-interview/index"
+2026-07-25T10:41:46.4880291Z   - "/ai-engineering-journey/21-interview/llm-and-rag-interview"
+2026-07-25T10:41:46.4880766Z   - "/ai-engineering-journey/21-interview/math-and-probability-interview"
+2026-07-25T10:41:46.4881246Z   - "/ai-engineering-journey/21-interview/ml-foundations-interview"
+2026-07-25T10:41:46.4881704Z   - "/ai-engineering-journey/21-interview/ml-system-design-interview"
+2026-07-25T10:41:46.4882177Z   - "/ai-engineering-journey/21-interview/mock-interview-simulations"
+2026-07-25T10:41:46.4882588Z   - "/ai-engineering-journey/21-interview/ood-design"
+2026-07-25T10:41:46.4883020Z   - "/ai-engineering-journey/21-interview/resume-and-portfolio-review"
+2026-07-25T10:41:46.4883460Z   - "/ai-engineering-journey/21-interview/salary-negotiation"
+2026-07-25T10:41:46.4883856Z   - "/ai-engineering-journey/21-interview/sql-problem-bank"
+2026-07-25T10:41:46.4884277Z   - "/ai-engineering-journey/21-interview/system-design-interview"
+2026-07-25T10:41:46.4884802Z   - "/ai-engineering-journey/22-advanced-agents/advanced-multi-agent-collaboration"
+2026-07-25T10:41:46.4885320Z   - "/ai-engineering-journey/22-advanced-agents/agent-evaluation"
+2026-07-25T10:41:46.4885809Z   - "/ai-engineering-journey/22-advanced-agents/agent-fundamentals-harness"
+2026-07-25T10:41:46.4886304Z   - "/ai-engineering-journey/22-advanced-agents/agent-self-evolution"
+2026-07-25T10:41:46.4886766Z   - "/ai-engineering-journey/22-advanced-agents/coding-agents"
+2026-07-25T10:41:46.4887202Z   - "/ai-engineering-journey/22-advanced-agents/context-engineering"
+2026-07-25T10:41:46.4887616Z   - "/ai-engineering-journey/22-advanced-agents/index"
+2026-07-25T10:41:46.4888027Z   - "/ai-engineering-journey/22-advanced-agents/mcp-protocol-tools"
+2026-07-25T10:41:46.4888499Z   - "/ai-engineering-journey/22-advanced-agents/model-post-training"
+2026-07-25T10:41:46.4889223Z   - "/ai-engineering-journey/22-advanced-agents/multimodal-real-time-agents"
+2026-07-25T10:41:46.4889771Z   - "/ai-engineering-journey/22-advanced-agents/user-memory-knowledge-bases"
+2026-07-25T10:41:46.4890324Z   - "/ai-engineering-journey/23-trending/agent-platforms-harness-orchestration"
+2026-07-25T10:41:46.4891000Z   - "/ai-engineering-journey/23-trending/ai-developer-toolkits-workflows"
+2026-07-25T10:41:46.4891504Z   - "/ai-engineering-journey/23-trending/frontier-llm-apis-providers"
+2026-07-25T10:41:46.4891914Z   - "/ai-engineering-journey/23-trending/index"
+2026-07-25T10:41:46.4892332Z   - "/ai-engineering-journey/23-trending/model-ecosystem-deployment-hub"
+2026-07-25T10:41:46.4892774Z   - "/ai-engineering-journey/ai-agent-engineer/00-index"
+2026-07-25T10:41:46.4893232Z   - "/ai-engineering-journey/ai-agent-engineer/01-phase0-backend-hardening"
+2026-07-25T10:41:46.4893762Z   - "/ai-engineering-journey/ai-agent-engineer/02-phase1-python-fastapi-async"
+2026-07-25T10:41:46.4894282Z   - "/ai-engineering-journey/ai-agent-engineer/03-phase2-llm-rag-theory"
+2026-07-25T10:41:46.4894785Z   - "/ai-engineering-journey/ai-agent-engineer/04-phase3-agents-langgraph-mcp"
+2026-07-25T10:41:46.4895307Z   - "/ai-engineering-journey/ai-agent-engineer/05-phase4-production-hardening"
+2026-07-25T10:41:46.4895972Z   - "/ai-engineering-journey/ai-agent-engineer/06-phase5-portfolio-positioning"
+2026-07-25T10:41:46.4896472Z   - "/ai-engineering-journey/ai-agent-engineer/07-day-by-day-plan"
+2026-07-25T10:41:46.4896938Z   - "/ai-engineering-journey/ai-agent-engineer/08-job-search-playbook"
+2026-07-25T10:41:46.4897442Z   - "/ai-engineering-journey/ai-agent-engineer/09-ai-system-design"
+2026-07-25T10:41:46.4897951Z   - "/ai-engineering-journey/ai-agent-engineer/10-prompt-engineering-mastery"
+2026-07-25T10:41:46.4898480Z   - "/ai-engineering-journey/ai-agent-engineer/11-ai-testing-evaluation"
+2026-07-25T10:41:46.4899159Z   - "/ai-engineering-journey/ai-agent-engineer/12-ai-observability-debugging"
+2026-07-25T10:41:46.4899677Z   - "/ai-engineering-journey/ai-agent-engineer/13-advanced-vector-search"
+2026-07-25T10:41:46.4900229Z   - "/ai-engineering-journey/ai-engineering-placement/01-agent-fundamentals-harness"
+2026-07-25T10:41:46.4900799Z   - "/ai-engineering-journey/ai-engineering-placement/01-computer-networks"
+2026-07-25T10:41:46.4901343Z   - "/ai-engineering-journey/ai-engineering-placement/01-computer-vision-basics"
+2026-07-25T10:41:46.4901859Z   - "/ai-engineering-journey/ai-engineering-placement/01-docker-basics"
+2026-07-25T10:41:46.4902368Z   - "/ai-engineering-journey/ai-engineering-placement/01-dsa-patterns-mastery"
+2026-07-25T10:41:46.4902895Z   - "/ai-engineering-journey/ai-engineering-placement/01-evaluation-metrics"
+2026-07-25T10:41:46.4903423Z   - "/ai-engineering-journey/ai-engineering-placement/01-experiment-tracking"
+2026-07-25T10:41:46.4903967Z   - "/ai-engineering-journey/ai-engineering-placement/01-foundation-models-overview"
+2026-07-25T10:41:46.4904566Z   - "/ai-engineering-journey/ai-engineering-placement/01-frontier-llm-apis-providers"
+2026-07-25T10:41:46.4905092Z   - "/ai-engineering-journey/ai-engineering-placement/01-git-basics"
+2026-07-25T10:41:46.4905614Z   - "/ai-engineering-journey/ai-engineering-placement/01-github-profile-optimization"
+2026-07-25T10:41:46.4906193Z   - "/ai-engineering-journey/ai-engineering-placement/01-house-price-prediction-api"
+2026-07-25T10:41:46.4906766Z   - "/ai-engineering-journey/ai-engineering-placement/01-introduction-to-ai-agents"
+2026-07-25T10:41:46.4907309Z   - "/ai-engineering-journey/ai-engineering-placement/01-introduction-to-rag"
+2026-07-25T10:41:46.4907824Z   - "/ai-engineering-journey/ai-engineering-placement/01-ml-fundamentals"
+2026-07-25T10:41:46.4908354Z   - "/ai-engineering-journey/ai-engineering-placement/01-neural-networks-basics"
+2026-07-25T10:41:46.4909029Z   - "/ai-engineering-journey/ai-engineering-placement/01-python-basics"
+2026-07-25T10:41:46.4909556Z   - "/ai-engineering-journey/ai-engineering-placement/01-rest-api-fundamentals"
+2026-07-25T10:41:46.4910127Z   - "/ai-engineering-journey/ai-engineering-placement/01-scalability-fundamentals"
+2026-07-25T10:41:46.4910644Z   - "/ai-engineering-journey/ai-engineering-placement/01-sql-basics"
+2026-07-25T10:41:46.4911154Z   - "/ai-engineering-journey/ai-engineering-placement/01-text-preprocessing"
+2026-07-25T10:41:46.4911806Z   - "/ai-engineering-journey/ai-engineering-placement/01-threat-landscape"
+2026-07-25T10:41:46.4912366Z   - "/ai-engineering-journey/ai-engineering-placement/01-time-and-space-complexity"
+2026-07-25T10:41:46.4912915Z   - "/ai-engineering-journey/ai-engineering-placement/01-when-to-fine-tune"
+2026-07-25T10:41:46.4913433Z   - "/ai-engineering-journey/ai-engineering-placement/02-agent-architectures"
+2026-07-25T10:41:46.4914041Z   - "/ai-engineering-journey/ai-engineering-placement/02-agent-platforms-harness-orchestration"
+2026-07-25T10:41:46.4914658Z   - "/ai-engineering-journey/ai-engineering-placement/02-aggregate-functions"
+2026-07-25T10:41:46.4915140Z   - "/ai-engineering-journey/ai-engineering-placement/02-arrays"
+2026-07-25T10:41:46.4915623Z   - "/ai-engineering-journey/ai-engineering-placement/02-context-engineering"
+2026-07-25T10:41:46.4916116Z   - "/ai-engineering-journey/ai-engineering-placement/02-control-flow"
+2026-07-25T10:41:46.4916742Z   - "/ai-engineering-journey/ai-engineering-placement/02-docker-compose"
+2026-07-25T10:41:46.4917259Z   - "/ai-engineering-journey/ai-engineering-placement/02-embedding-models"
+2026-07-25T10:41:46.4917751Z   - "/ai-engineering-journey/ai-engineering-placement/02-fastapi-basics"
+2026-07-25T10:41:46.4918236Z   - "/ai-engineering-journey/ai-engineering-placement/02-full-fine-tuning"
+2026-07-25T10:41:46.4918940Z   - "/ai-engineering-journey/ai-engineering-placement/02-git-branching"
+2026-07-25T10:41:46.4919493Z   - "/ai-engineering-journey/ai-engineering-placement/02-linear-regression"
+2026-07-25T10:41:46.4919985Z   - "/ai-engineering-journey/ai-engineering-placement/02-llm-apis"
+2026-07-25T10:41:46.4920459Z   - "/ai-engineering-journey/ai-engineering-placement/02-llm-as-judge"
+2026-07-25T10:41:46.4920996Z   - "/ai-engineering-journey/ai-engineering-placement/02-microservices-architecture"
+2026-07-25T10:41:46.4921543Z   - "/ai-engineering-journey/ai-engineering-placement/02-object-detection"
+2026-07-25T10:41:46.4922061Z   - "/ai-engineering-journey/ai-engineering-placement/02-operating-systems"
+2026-07-25T10:41:46.4922609Z   - "/ai-engineering-journey/ai-engineering-placement/02-prompt-injection-defense"
+2026-07-25T10:41:46.4923144Z   - "/ai-engineering-journey/ai-engineering-placement/02-prompt-versioning"
+2026-07-25T10:41:46.4923637Z   - "/ai-engineering-journey/ai-engineering-placement/02-pytorch-tensors"
+2026-07-25T10:41:46.4924153Z   - "/ai-engineering-journey/ai-engineering-placement/02-repository-structure"
+2026-07-25T10:41:46.4924677Z   - "/ai-engineering-journey/ai-engineering-placement/02-resume-ats-analyzer"
+2026-07-25T10:41:46.4925183Z   - "/ai-engineering-journey/ai-engineering-placement/02-sql-problem-bank"
+2026-07-25T10:41:46.4925676Z   - "/ai-engineering-journey/ai-engineering-placement/02-word-embeddings"
+2026-07-25T10:41:46.4926242Z   - "/ai-engineering-journey/ai-engineering-placement/03-ai-developer-toolkits-workflows"
+2026-07-25T10:41:46.4926858Z   - "/ai-engineering-journey/ai-engineering-placement/03-backend-coding-interview"
+2026-07-25T10:41:46.4927396Z   - "/ai-engineering-journey/ai-engineering-placement/03-content-filtering"
+2026-07-25T10:41:46.4927890Z   - "/ai-engineering-journey/ai-engineering-placement/03-data-versioning"
+2026-07-25T10:41:46.4928401Z   - "/ai-engineering-journey/ai-engineering-placement/03-database-internals"
+2026-07-25T10:41:46.4929126Z   - "/ai-engineering-journey/ai-engineering-placement/03-docker-best-practices"
+2026-07-25T10:41:46.4929690Z   - "/ai-engineering-journey/ai-engineering-placement/03-enterprise-rag-platform"
+2026-07-25T10:41:46.4930241Z   - "/ai-engineering-journey/ai-engineering-placement/03-evaluation-datasets"
+2026-07-25T10:41:46.4930746Z   - "/ai-engineering-journey/ai-engineering-placement/03-git-workflow"
+2026-07-25T10:41:46.4931244Z   - "/ai-engineering-journey/ai-engineering-placement/03-image-segmentation"
+2026-07-25T10:41:46.4931714Z   - "/ai-engineering-journey/ai-engineering-placement/03-joins"
+2026-07-25T10:41:46.4932197Z   - "/ai-engineering-journey/ai-engineering-placement/03-langgraph-basics"
+2026-07-25T10:41:46.4932877Z   - "/ai-engineering-journey/ai-engineering-placement/03-logistic-regression"
+2026-07-25T10:41:46.4933382Z   - "/ai-engineering-journey/ai-engineering-placement/03-lora-theory"
+2026-07-25T10:41:46.4933876Z   - "/ai-engineering-journey/ai-engineering-placement/03-message-queues"
+2026-07-25T10:41:46.4934440Z   - "/ai-engineering-journey/ai-engineering-placement/03-pydantic-and-validation"
+2026-07-25T10:41:46.4934984Z   - "/ai-engineering-journey/ai-engineering-placement/03-pytorch-nn-module"
+2026-07-25T10:41:46.4935498Z   - "/ai-engineering-journey/ai-engineering-placement/03-sequence-models"
+2026-07-25T10:41:46.4935975Z   - "/ai-engineering-journey/ai-engineering-placement/03-strings"
+2026-07-25T10:41:46.4936478Z   - "/ai-engineering-journey/ai-engineering-placement/03-strings-and-formatting"
+2026-07-25T10:41:46.4937025Z   - "/ai-engineering-journey/ai-engineering-placement/03-technical-blogging"
+2026-07-25T10:41:46.4937730Z   - "/ai-engineering-journey/ai-engineering-placement/03-user-memory-knowledge-bases"
+2026-07-25T10:41:46.4938328Z   - "/ai-engineering-journey/ai-engineering-placement/03-vector-database-basics"
+2026-07-25T10:41:46.4939040Z   - "/ai-engineering-journey/ai-engineering-placement/03-zero-shot-and-few-shot"
+2026-07-25T10:41:46.4939583Z   - "/ai-engineering-journey/ai-engineering-placement/04-attention-mechanism"
+2026-07-25T10:41:46.4940116Z   - "/ai-engineering-journey/ai-engineering-placement/04-caching-strategies"
+2026-07-25T10:41:46.4940634Z   - "/ai-engineering-journey/ai-engineering-placement/04-chain-of-thought"
+2026-07-25T10:41:46.4941152Z   - "/ai-engineering-journey/ai-engineering-placement/04-chunking-strategies"
+2026-07-25T10:41:46.4941658Z   - "/ai-engineering-journey/ai-engineering-placement/04-ci-cd-for-ai"
+2026-07-25T10:41:46.4942146Z   - "/ai-engineering-journey/ai-engineering-placement/04-cnn-fundamentals"
+2026-07-25T10:41:46.4942628Z   - "/ai-engineering-journey/ai-engineering-placement/04-collections"
+2026-07-25T10:41:46.4943155Z   - "/ai-engineering-journey/ai-engineering-placement/04-computer-architecture"
+2026-07-25T10:41:46.4943700Z   - "/ai-engineering-journey/ai-engineering-placement/04-decision-trees-and-rf"
+2026-07-25T10:41:46.4944233Z   - "/ai-engineering-journey/ai-engineering-placement/04-dependency-injection"
+2026-07-25T10:41:46.4944760Z   - "/ai-engineering-journey/ai-engineering-placement/04-guardrails-frameworks"
+2026-07-25T10:41:46.4945280Z   - "/ai-engineering-journey/ai-engineering-placement/04-kubernetes-basics"
+2026-07-25T10:41:46.4945799Z   - "/ai-engineering-journey/ai-engineering-placement/04-linkedin-optimization"
+2026-07-25T10:41:46.4946315Z   - "/ai-engineering-journey/ai-engineering-placement/04-linux-commands"
+2026-07-25T10:41:46.4946825Z   - "/ai-engineering-journey/ai-engineering-placement/04-lora-implementation"
+2026-07-25T10:41:46.4947352Z   - "/ai-engineering-journey/ai-engineering-placement/04-mcp-protocol-tools"
+2026-07-25T10:41:46.4947900Z   - "/ai-engineering-journey/ai-engineering-placement/04-ml-foundations-interview"
+2026-07-25T10:41:46.4948514Z   - "/ai-engineering-journey/ai-engineering-placement/04-model-ecosystem-deployment-hub"
+2026-07-25T10:41:46.4949285Z   - "/ai-engineering-journey/ai-engineering-placement/04-multi-agent-support-system"
+2026-07-25T10:41:46.4949880Z   - "/ai-engineering-journey/ai-engineering-placement/04-observability-tools"
+2026-07-25T10:41:46.4950414Z   - "/ai-engineering-journey/ai-engineering-placement/04-ocr-and-document-ai"
+2026-07-25T10:41:46.4950920Z   - "/ai-engineering-journey/ai-engineering-placement/04-sliding-window"
+2026-07-25T10:41:46.4951415Z   - "/ai-engineering-journey/ai-engineering-placement/04-subqueries-and-ctes"
+2026-07-25T10:41:46.4951973Z   - "/ai-engineering-journey/ai-engineering-placement/04-tool-use-and-function-calling"
+2026-07-25T10:41:46.4952547Z   - "/ai-engineering-journey/ai-engineering-placement/05-advanced-cnn"
+2026-07-25T10:41:46.4953091Z   - "/ai-engineering-journey/ai-engineering-placement/05-authentication-and-authz"
+2026-07-25T10:41:46.4953634Z   - "/ai-engineering-journey/ai-engineering-placement/05-bash-scripting"
+2026-07-25T10:41:46.4954266Z   - "/ai-engineering-journey/ai-engineering-placement/05-coding-agents"
+2026-07-25T10:41:46.4954775Z   - "/ai-engineering-journey/ai-engineering-placement/05-database-scaling"
+2026-07-25T10:41:46.4955321Z   - "/ai-engineering-journey/ai-engineering-placement/05-deep-learning-interview"
+2026-07-25T10:41:46.4955863Z   - "/ai-engineering-journey/ai-engineering-placement/05-document-retrieval"
+2026-07-25T10:41:46.4956396Z   - "/ai-engineering-journey/ai-engineering-placement/05-full-ai-saas-platform"
+2026-07-25T10:41:46.4956903Z   - "/ai-engineering-journey/ai-engineering-placement/05-functions"
+2026-07-25T10:41:46.4957399Z   - "/ai-engineering-journey/ai-engineering-placement/05-kubernetes-config"
+2026-07-25T10:41:46.4957906Z   - "/ai-engineering-journey/ai-engineering-placement/05-memory-and-state"
+2026-07-25T10:41:46.4958539Z   - "/ai-engineering-journey/ai-engineering-placement/05-model-serving"
+2026-07-25T10:41:46.4959232Z   - "/ai-engineering-journey/ai-engineering-placement/05-oop-design-patterns"
+2026-07-25T10:41:46.4959793Z   - "/ai-engineering-journey/ai-engineering-placement/05-open-source-contribution"
+2026-07-25T10:41:46.4960356Z   - "/ai-engineering-journey/ai-engineering-placement/05-qlora-and-quantization"
+2026-07-25T10:41:46.4960930Z   - "/ai-engineering-journey/ai-engineering-placement/05-secret-and-key-management"
+2026-07-25T10:41:46.4961477Z   - "/ai-engineering-journey/ai-engineering-placement/05-speech-to-text"
+2026-07-25T10:41:46.4961992Z   - "/ai-engineering-journey/ai-engineering-placement/05-structured-output"
+2026-07-25T10:41:46.4962532Z   - "/ai-engineering-journey/ai-engineering-placement/05-svm-and-kernel-methods"
+2026-07-25T10:41:46.4963073Z   - "/ai-engineering-journey/ai-engineering-placement/05-tracing-and-monitoring"
+2026-07-25T10:41:46.4963629Z   - "/ai-engineering-journey/ai-engineering-placement/05-transformer-architecture"
+2026-07-25T10:41:46.4964166Z   - "/ai-engineering-journey/ai-engineering-placement/05-two-pointers"
+2026-07-25T10:41:46.4964674Z   - "/ai-engineering-journey/ai-engineering-placement/05-window-functions"
+2026-07-25T10:41:46.4965172Z   - "/ai-engineering-journey/ai-engineering-placement/06-agent-evaluation"
+2026-07-25T10:41:46.4965734Z   - "/ai-engineering-journey/ai-engineering-placement/06-alerting-and-incident-response"
+2026-07-25T10:41:46.4966321Z   - "/ai-engineering-journey/ai-engineering-placement/06-bert-and-fine-tuning"
+2026-07-25T10:41:46.4966860Z   - "/ai-engineering-journey/ai-engineering-placement/06-cap-and-consistency"
+2026-07-25T10:41:46.4967399Z   - "/ai-engineering-journey/ai-engineering-placement/06-compliance-and-ethics"
+2026-07-25T10:41:46.4967931Z   - "/ai-engineering-journey/ai-engineering-placement/06-context-management"
+2026-07-25T10:41:46.4968476Z   - "/ai-engineering-journey/ai-engineering-placement/06-database-with-sqlalchemy"
+2026-07-25T10:41:46.4969181Z   - "/ai-engineering-journey/ai-engineering-placement/06-drift-monitoring"
+2026-07-25T10:41:46.4969692Z   - "/ai-engineering-journey/ai-engineering-placement/06-ensemble-methods"
+2026-07-25T10:41:46.4970204Z   - "/ai-engineering-journey/ai-engineering-placement/06-hash-maps-and-sets"
+2026-07-25T10:41:46.4970715Z   - "/ai-engineering-journey/ai-engineering-placement/06-instruction-tuning"
+2026-07-25T10:41:46.4971217Z   - "/ai-engineering-journey/ai-engineering-placement/06-kubernetes-scaling"
+2026-07-25T10:41:46.4971737Z   - "/ai-engineering-journey/ai-engineering-placement/06-llm-and-rag-interview"
+2026-07-25T10:41:46.4972266Z   - "/ai-engineering-journey/ai-engineering-placement/06-modules-and-packages"
+2026-07-25T10:41:46.4972786Z   - "/ai-engineering-journey/ai-engineering-placement/06-multi-agent-systems"
+2026-07-25T10:41:46.4973331Z   - "/ai-engineering-journey/ai-engineering-placement/06-networking-and-security"
+2026-07-25T10:41:46.4973866Z   - "/ai-engineering-journey/ai-engineering-placement/06-portfolio-website"
+2026-07-25T10:41:46.4974387Z   - "/ai-engineering-journey/ai-engineering-placement/06-rag-pipeline-design"
+2026-07-25T10:41:46.4975081Z   - "/ai-engineering-journey/ai-engineering-placement/06-set-operations"
+2026-07-25T10:41:46.4975588Z   - "/ai-engineering-journey/ai-engineering-placement/06-transfer-learning"
+2026-07-25T10:41:46.4976079Z   - "/ai-engineering-journey/ai-engineering-placement/06-voice-agents"
+2026-07-25T10:41:46.4976603Z   - "/ai-engineering-journey/ai-engineering-placement/07-advanced-rag-techniques"
+2026-07-25T10:41:46.4977140Z   - "/ai-engineering-journey/ai-engineering-placement/07-ai-agents-interview"
+2026-07-25T10:41:46.4977658Z   - "/ai-engineering-journey/ai-engineering-placement/07-api-design-patterns"
+2026-07-25T10:41:46.4978172Z   - "/ai-engineering-journey/ai-engineering-placement/07-async-patterns"
+2026-07-25T10:41:46.4978813Z   - "/ai-engineering-journey/ai-engineering-placement/07-aws-fundamentals"
+2026-07-25T10:41:46.4979335Z   - "/ai-engineering-journey/ai-engineering-placement/07-cost-management"
+2026-07-25T10:41:46.4980019Z   - "/ai-engineering-journey/ai-engineering-placement/07-dpo-and-preference-tuning"
+2026-07-25T10:41:46.4980612Z   - "/ai-engineering-journey/ai-engineering-placement/07-file-io-and-exceptions"
+2026-07-25T10:41:46.4981171Z   - "/ai-engineering-journey/ai-engineering-placement/07-hugging-face-ecosystem"
+2026-07-25T10:41:46.4981737Z   - "/ai-engineering-journey/ai-engineering-placement/07-human-in-the-loop"
+2026-07-25T10:41:46.4982278Z   - "/ai-engineering-journey/ai-engineering-placement/07-indexes-and-performance"
+2026-07-25T10:41:46.4982806Z   - "/ai-engineering-journey/ai-engineering-placement/07-linked-lists"
+2026-07-25T10:41:46.4983296Z   - "/ai-engineering-journey/ai-engineering-placement/07-llm-evaluation"
+2026-07-25T10:41:46.4983804Z   - "/ai-engineering-journey/ai-engineering-placement/07-model-post-training"
+2026-07-25T10:41:46.4984300Z   - "/ai-engineering-journey/ai-engineering-placement/07-rnn-and-lstm"
+2026-07-25T10:41:46.4984818Z   - "/ai-engineering-journey/ai-engineering-placement/07-unsupervised-learning"
+2026-07-25T10:41:46.4985352Z   - "/ai-engineering-journey/ai-engineering-placement/08-agent-observability"
+2026-07-25T10:41:46.4985878Z   - "/ai-engineering-journey/ai-engineering-placement/08-agent-self-evolution"
+2026-07-25T10:41:46.4986391Z   - "/ai-engineering-journey/ai-engineering-placement/08-aws-containers"
+2026-07-25T10:41:46.4986944Z   - "/ai-engineering-journey/ai-engineering-placement/08-cost-and-latency-optimization"
+2026-07-25T10:41:46.4987497Z   - "/ai-engineering-journey/ai-engineering-placement/08-database-design"
+2026-07-25T10:41:46.4988029Z   - "/ai-engineering-journey/ai-engineering-placement/08-dimensionality-reduction"
+2026-07-25T10:41:46.4988607Z   - "/ai-engineering-journey/ai-engineering-placement/08-evaluating-fine-tuned-models"
+2026-07-25T10:41:46.4989356Z   - "/ai-engineering-journey/ai-engineering-placement/08-incident-response"
+2026-07-25T10:41:46.4989875Z   - "/ai-engineering-journey/ai-engineering-placement/08-nlp-applications"
+2026-07-25T10:41:46.4990394Z   - "/ai-engineering-journey/ai-engineering-placement/08-oop-in-python"
+2026-07-25T10:41:46.4990895Z   - "/ai-engineering-journey/ai-engineering-placement/08-rag-evaluation"
+2026-07-25T10:41:46.4991459Z   - "/ai-engineering-journey/ai-engineering-placement/08-rate-limiting-and-idempotency"
+2026-07-25T10:41:46.4992026Z   - "/ai-engineering-journey/ai-engineering-placement/08-stacks-and-queues"
+2026-07-25T10:41:46.4992568Z   - "/ai-engineering-journey/ai-engineering-placement/08-system-design-interview"
+2026-07-25T10:41:46.4993096Z   - "/ai-engineering-journey/ai-engineering-placement/08-testing-fastapi"
+2026-07-25T10:41:46.4993613Z   - "/ai-engineering-journey/ai-engineering-placement/08-training-pipelines"
+2026-07-25T10:41:46.4994147Z   - "/ai-engineering-journey/ai-engineering-placement/09-azure-and-gcp-basics"
+2026-07-25T10:41:46.4994708Z   - "/ai-engineering-journey/ai-engineering-placement/09-behavioral-star-interview"
+2026-07-25T10:41:46.4995246Z   - "/ai-engineering-journey/ai-engineering-placement/09-binary-trees"
+2026-07-25T10:41:46.4995943Z   - "/ai-engineering-journey/ai-engineering-placement/09-decorators-and-generators"
+2026-07-25T10:41:46.4996534Z   - "/ai-engineering-journey/ai-engineering-placement/09-error-handling-and-logging"
+2026-07-25T10:41:46.4997074Z   - "/ai-engineering-journey/ai-engineering-placement/09-model-deployment"
+2026-07-25T10:41:46.4997603Z   - "/ai-engineering-journey/ai-engineering-placement/09-model-evaluation"
+2026-07-25T10:41:46.4998157Z   - "/ai-engineering-journey/ai-engineering-placement/09-monitoring-and-observability"
+2026-07-25T10:41:46.4998926Z   - "/ai-engineering-journey/ai-engineering-placement/09-multimodal-real-time-agents"
+2026-07-25T10:41:46.4999505Z   - "/ai-engineering-journey/ai-engineering-placement/09-production-agents"
+2026-07-25T10:41:46.5000051Z   - "/ai-engineering-journey/ai-engineering-placement/09-production-rag-systems"
+2026-07-25T10:41:46.5000608Z   - "/ai-engineering-journey/ai-engineering-placement/09-transactions-and-acid"
+2026-07-25T10:41:46.5001357Z   - "/ai-engineering-journey/ai-engineering-placement/10-advanced-agent-patterns"
+2026-07-25T10:41:46.5001993Z   - "/ai-engineering-journey/ai-engineering-placement/10-advanced-multi-agent-collaboration"
+2026-07-25T10:41:46.5002572Z   - "/ai-engineering-journey/ai-engineering-placement/10-api-deployment"
+2026-07-25T10:41:46.5003093Z   - "/ai-engineering-journey/ai-engineering-placement/10-binary-search-trees"
+2026-07-25T10:41:46.5003612Z   - "/ai-engineering-journey/ai-engineering-placement/10-ci-cd-pipelines"
+2026-07-25T10:41:46.5004099Z   - "/ai-engineering-journey/ai-engineering-placement/10-concurrency"
+2026-07-25T10:41:46.5004627Z   - "/ai-engineering-journey/ai-engineering-placement/10-deployment-best-practices"
+2026-07-25T10:41:46.5005174Z   - "/ai-engineering-journey/ai-engineering-placement/10-design-url-shortener"
+2026-07-25T10:41:46.5005740Z   - "/ai-engineering-journey/ai-engineering-placement/10-hybrid-search-and-reranking"
+2026-07-25T10:41:46.5006315Z   - "/ai-engineering-journey/ai-engineering-placement/10-hyperparameter-tuning"
+2026-07-25T10:41:46.5006848Z   - "/ai-engineering-journey/ai-engineering-placement/10-postgresql-advanced"
+2026-07-25T10:41:46.5007410Z   - "/ai-engineering-journey/ai-engineering-placement/10-resume-and-portfolio-review"
+2026-07-25T10:41:46.5007945Z   - "/ai-engineering-journey/ai-engineering-placement/11-design-chatgpt"
+2026-07-25T10:41:46.5008435Z   - "/ai-engineering-journey/ai-engineering-placement/11-heaps-and-tries"
+2026-07-25T10:41:46.5009104Z   - "/ai-engineering-journey/ai-engineering-placement/11-numpy-fundamentals"
+2026-07-25T10:41:46.5009634Z   - "/ai-engineering-journey/ai-engineering-placement/11-salary-negotiation"
+2026-07-25T10:41:46.5010136Z   - "/ai-engineering-journey/ai-engineering-placement/12-design-whatsapp"
+2026-07-25T10:41:46.5010628Z   - "/ai-engineering-journey/ai-engineering-placement/12-graphs-bfs-dfs"
+2026-07-25T10:41:46.5011162Z   - "/ai-engineering-journey/ai-engineering-placement/12-mock-interview-simulations"
+2026-07-25T10:41:46.5011712Z   - "/ai-engineering-journey/ai-engineering-placement/12-pandas-basics"
+2026-07-25T10:41:46.5012230Z   - "/ai-engineering-journey/ai-engineering-placement/13-graphs-shortest-path"
+2026-07-25T10:41:46.5012841Z   - "/ai-engineering-journey/ai-engineering-placement/13-math-and-probability-interview"
+2026-07-25T10:41:46.5013402Z   - "/ai-engineering-journey/ai-engineering-placement/13-pandas-advanced"
+2026-07-25T10:41:46.5013902Z   - "/ai-engineering-journey/ai-engineering-placement/14-data-visualization"
+2026-07-25T10:41:46.5014443Z   - "/ai-engineering-journey/ai-engineering-placement/14-graphs-topological-sort"
+2026-07-25T10:41:46.5015006Z   - "/ai-engineering-journey/ai-engineering-placement/14-ml-system-design-interview"
+2026-07-25T10:41:46.5015562Z   - "/ai-engineering-journey/ai-engineering-placement/15-dynamic-programming-1d"
+2026-07-25T10:41:46.5016124Z   - "/ai-engineering-journey/ai-engineering-placement/15-faang-company-deep-dives"
+2026-07-25T10:41:46.5016669Z   - "/ai-engineering-journey/ai-engineering-placement/16-dsa-problem-bank"
+2026-07-25T10:41:46.5017342Z   - "/ai-engineering-journey/ai-engineering-placement/16-dynamic-programming-2d"
+2026-07-25T10:41:46.5017866Z   - "/ai-engineering-journey/ai-engineering-placement/17-backtracking"
+2026-07-25T10:41:46.5018349Z   - "/ai-engineering-journey/ai-engineering-placement/17-ood-design"
+2026-07-25T10:41:46.5019044Z   - "/ai-engineering-journey/ai-engineering-placement/18-bit-manipulation-and-math"
+2026-07-25T10:41:46.5019612Z   - "/ai-engineering-journey/ai-engineering-placement/18-debugging-code-review"
+2026-07-25T10:41:46.5020145Z   - "/ai-engineering-journey/ai-engineering-placement/19-ai-assisted-coding"
+2026-07-25T10:41:46.5020613Z   - "/ai-engineering-journey/ai-engineering-placement/index"
+2026-07-25T10:41:46.5021005Z   - "/ai-engineering-journey/algorithms/01-analysis"
+2026-07-25T10:41:46.5021369Z   - "/ai-engineering-journey/algorithms/02-searching"
+2026-07-25T10:41:46.5021896Z   - "/ai-engineering-journey/algorithms/03-sorting-nlogn"
+2026-07-25T10:41:46.5022289Z   - "/ai-engineering-journey/algorithms/04-sorting-linear"
+2026-07-25T10:41:46.5022683Z   - "/ai-engineering-journey/algorithms/05-divide-conquer"
+2026-07-25T10:41:46.5023047Z   - "/ai-engineering-journey/algorithms/06-greedy"
+2026-07-25T10:41:46.5023416Z   - "/ai-engineering-journey/algorithms/07-dp-intro"
+2026-07-25T10:41:46.5023788Z   - "/ai-engineering-journey/algorithms/08-dp-knapsack"
+2026-07-25T10:41:46.5024164Z   - "/ai-engineering-journey/algorithms/09-dp-sequences"
+2026-07-25T10:41:46.5024541Z   - "/ai-engineering-journey/algorithms/10-dp-trees-grids"
+2026-07-25T10:41:46.5024915Z   - "/ai-engineering-journey/algorithms/11-graph-shortest"
+2026-07-25T10:41:46.5025275Z   - "/ai-engineering-journey/algorithms/12-graph-mst"
+2026-07-25T10:41:46.5025638Z   - "/ai-engineering-journey/algorithms/13-graph-flow"
+2026-07-25T10:41:46.5026028Z   - "/ai-engineering-journey/algorithms/14-string-algorithms"
+2026-07-25T10:41:46.5026438Z   - "/ai-engineering-journey/algorithms/15-np-completeness"
+2026-07-25T10:41:46.5026824Z   - "/ai-engineering-journey/algorithms/16-approximation"
+2026-07-25T10:41:46.5027202Z   - "/ai-engineering-journey/algorithms/17-randomized"
+2026-07-25T10:41:46.5027552Z   - "/ai-engineering-journey/algorithms/18-advanced"
+2026-07-25T10:41:46.5027892Z   - "/ai-engineering-journey/algorithms/index"
+2026-07-25T10:41:46.5028249Z   - "/ai-engineering-journey/applied-ai/01-introduction"
+2026-07-25T10:41:46.5028609Z   - "/ai-engineering-journey/applied-ai/02-langchain"
+2026-07-25T10:41:46.5029120Z   - "/ai-engineering-journey/applied-ai/03-opencv"
+2026-07-25T10:41:46.5029490Z   - "/ai-engineering-journey/applied-ai/04-generative-ai"
+2026-07-25T10:41:46.5029836Z   - "/ai-engineering-journey/applied-ai/index"
+2026-07-25T10:41:46.5030245Z   - "/ai-engineering-journey/artificial-intelligence/01-introduction"
+2026-07-25T10:41:46.5030708Z   - "/ai-engineering-journey/artificial-intelligence/02-agents"
+2026-07-25T10:41:46.5031192Z   - "/ai-engineering-journey/artificial-intelligence/02-problem-solving"
+2026-07-25T10:41:46.5031689Z   - "/ai-engineering-journey/artificial-intelligence/03-informed-search"
+2026-07-25T10:41:46.5032138Z   - "/ai-engineering-journey/artificial-intelligence/03-search"
+2026-07-25T10:41:46.5032627Z   - "/ai-engineering-journey/artificial-intelligence/04-adversarial-search"
+2026-07-25T10:41:46.5033100Z   - "/ai-engineering-journey/artificial-intelligence/04-csp"
+2026-07-25T10:41:46.5033511Z   - "/ai-engineering-journey/artificial-intelligence/05-csp"
+2026-07-25T10:41:46.5033950Z   - "/ai-engineering-journey/artificial-intelligence/05-game-playing"
+2026-07-25T10:41:46.5034611Z   - "/ai-engineering-journey/artificial-intelligence/06-knowledge-representation"
+2026-07-25T10:41:46.5035347Z   - "/ai-engineering-journey/artificial-intelligence/06-logic"
+2026-07-25T10:41:46.5035772Z   - "/ai-engineering-journey/artificial-intelligence/07-fol"
+2026-07-25T10:41:46.5036229Z   - "/ai-engineering-journey/artificial-intelligence/07-logical-reasoning"
+2026-07-25T10:41:46.5036725Z   - "/ai-engineering-journey/artificial-intelligence/08-planning"
+2026-07-25T10:41:46.5037360Z   - "/ai-engineering-journey/artificial-intelligence/08-uncertainty"
+2026-07-25T10:41:46.5037855Z   - "/ai-engineering-journey/artificial-intelligence/09-machine-learning"
+2026-07-25T10:41:46.5038337Z   - "/ai-engineering-journey/artificial-intelligence/09-uncertainty"
+2026-07-25T10:41:46.5039035Z   - "/ai-engineering-journey/artificial-intelligence/10-probabilistic-reasoning"
+2026-07-25T10:41:46.5039611Z   - "/ai-engineering-journey/artificial-intelligence/11-reinforcement-learning"
+2026-07-25T10:41:46.5040094Z   - "/ai-engineering-journey/artificial-intelligence/12-nlp"
+2026-07-25T10:41:46.5040559Z   - "/ai-engineering-journey/artificial-intelligence/13-computer-vision"
+2026-07-25T10:41:46.5041033Z   - "/ai-engineering-journey/artificial-intelligence/14-robotics"
+2026-07-25T10:41:46.5041489Z   - "/ai-engineering-journey/artificial-intelligence/15-ethics-ai"
+2026-07-25T10:41:46.5042105Z   - "/ai-engineering-journey/artificial-intelligence/16-expert-systems"
+2026-07-25T10:41:46.5042584Z   - "/ai-engineering-journey/artificial-intelligence/17-modern-ai"
+2026-07-25T10:41:46.5043059Z   - "/ai-engineering-journey/artificial-intelligence/18-ai-applications"
+2026-07-25T10:41:46.5043540Z   - "/ai-engineering-journey/artificial-intelligence/index"
+2026-07-25T10:41:46.5044052Z   - "/ai-engineering-journey/banking-financial-awareness/01-rbi-monetary-policy"
+2026-07-25T10:41:46.5044644Z   - "/ai-engineering-journey/banking-financial-awareness/02-banking-system-regulations"
+2026-07-25T10:41:46.5045290Z   - "/ai-engineering-journey/banking-financial-awareness/03-financial-markets-instruments"
+2026-07-25T10:41:46.5045913Z   - "/ai-engineering-journey/banking-financial-awareness/04-government-schemes-budget"
+2026-07-25T10:41:46.5046512Z   - "/ai-engineering-journey/banking-financial-awareness/05-banking-terminology-acts"
+2026-07-25T10:41:46.5047018Z   - "/ai-engineering-journey/banking-financial-awareness/index"
+2026-07-25T10:41:46.5047509Z   - "/ai-engineering-journey/banking-technology/01-core-banking-solutions"
+2026-07-25T10:41:46.5048030Z   - "/ai-engineering-journey/banking-technology/02-digital-payment-systems"
+2026-07-25T10:41:46.5048574Z   - "/ai-engineering-journey/banking-technology/03-banking-security-guidelines"
+2026-07-25T10:41:46.5049278Z   - "/ai-engineering-journey/banking-technology/04-fintech-emerging-trends"
+2026-07-25T10:41:46.5049730Z   - "/ai-engineering-journey/banking-technology/index"
+2026-07-25T10:41:46.5050097Z   - "/ai-engineering-journey/big-data/01-introduction"
+2026-07-25T10:41:46.5050444Z   - "/ai-engineering-journey/big-data/02-hadoop"
+2026-07-25T10:41:46.5050800Z   - "/ai-engineering-journey/big-data/03-spark-basics"
+2026-07-25T10:41:46.5051158Z   - "/ai-engineering-journey/big-data/04-spark-mllib"
+2026-07-25T10:41:46.5051513Z   - "/ai-engineering-journey/big-data/05-ecosystem"
+2026-07-25T10:41:46.5051855Z   - "/ai-engineering-journey/big-data/index"
+2026-07-25T10:41:46.5052219Z   - "/ai-engineering-journey/blockchain/01-introduction"
+2026-07-25T10:41:46.5052597Z   - "/ai-engineering-journey/blockchain/02-cryptography"
+2026-07-25T10:41:46.5052959Z   - "/ai-engineering-journey/blockchain/03-consensus"
+2026-07-25T10:41:46.5053313Z   - "/ai-engineering-journey/blockchain/04-bitcoin"
+2026-07-25T10:41:46.5053662Z   - "/ai-engineering-journey/blockchain/05-ethereum"
+2026-07-25T10:41:46.5054012Z   - "/ai-engineering-journey/blockchain/06-solidity"
+2026-07-25T10:41:46.5054355Z   - "/ai-engineering-journey/blockchain/07-dapps"
+2026-07-25T10:41:46.5054700Z   - "/ai-engineering-journey/blockchain/08-defi"
+2026-07-25T10:41:46.5055050Z   - "/ai-engineering-journey/blockchain/09-enterprise"
+2026-07-25T10:41:46.5055454Z   - "/ai-engineering-journey/blockchain/10-security-scalability"
+2026-07-25T10:41:46.5055844Z   - "/ai-engineering-journey/blockchain/index"
+2026-07-25T10:41:46.5056219Z   - "/ai-engineering-journey/c-programming/01-introduction"
+2026-07-25T10:41:46.5056664Z   - "/ai-engineering-journey/c-programming/02-variables-datatypes"
+2026-07-25T10:41:46.5057077Z   - "/ai-engineering-journey/c-programming/03-operators"
+2026-07-25T10:41:46.5057614Z   - "/ai-engineering-journey/c-programming/04-control-flow"
+2026-07-25T10:41:46.5057990Z   - "/ai-engineering-journey/c-programming/05-loops"
+2026-07-25T10:41:46.5058346Z   - "/ai-engineering-journey/c-programming/06-arrays"
+2026-07-25T10:41:46.5058868Z   - "/ai-engineering-journey/c-programming/07-strings"
+2026-07-25T10:41:46.5059232Z   - "/ai-engineering-journey/c-programming/08-functions"
+2026-07-25T10:41:46.5059601Z   - "/ai-engineering-journey/c-programming/09-pointers"
+2026-07-25T10:41:46.5060001Z   - "/ai-engineering-journey/c-programming/10-structures-unions"
+2026-07-25T10:41:46.5060393Z   - "/ai-engineering-journey/c-programming/11-dma"
+2026-07-25T10:41:46.5060782Z   - "/ai-engineering-journey/c-programming/12-file-handling"
+2026-07-25T10:41:46.5061189Z   - "/ai-engineering-journey/c-programming/13-preprocessor"
+2026-07-25T10:41:46.5061706Z   - "/ai-engineering-journey/c-programming/14-recursion"
+2026-07-25T10:41:46.5062090Z   - "/ai-engineering-journey/c-programming/15-linked-lists"
+2026-07-25T10:41:46.5062480Z   - "/ai-engineering-journey/c-programming/16-stacks-queues"
+2026-07-25T10:41:46.5062886Z   - "/ai-engineering-journey/c-programming/17-standard-library"
+2026-07-25T10:41:46.5063297Z   - "/ai-engineering-journey/c-programming/18-advanced-c"
+2026-07-25T10:41:46.5063661Z   - "/ai-engineering-journey/c-programming/index"
+2026-07-25T10:41:46.5064048Z   - "/ai-engineering-journey/cloud-computing/01-introduction"
+2026-07-25T10:41:46.5064468Z   - "/ai-engineering-journey/cloud-computing/02-virtualization"
+2026-07-25T10:41:46.5064887Z   - "/ai-engineering-journey/cloud-computing/03-cloud-compute"
+2026-07-25T10:41:46.5065304Z   - "/ai-engineering-journey/cloud-computing/04-cloud-storage"
+2026-07-25T10:41:46.5065707Z   - "/ai-engineering-journey/cloud-computing/05-cloud-database"
+2026-07-25T10:41:46.5066141Z   - "/ai-engineering-journey/cloud-computing/06-cloud-networking"
+2026-07-25T10:41:46.5066567Z   - "/ai-engineering-journey/cloud-computing/07-cloud-security"
+2026-07-25T10:41:46.5066967Z   - "/ai-engineering-journey/cloud-computing/08-serverless"
+2026-07-25T10:41:46.5067378Z   - "/ai-engineering-journey/cloud-computing/09-containerization"
+2026-07-25T10:41:46.5067794Z   - "/ai-engineering-journey/cloud-computing/10-architecture"
+2026-07-25T10:41:46.5068169Z   - "/ai-engineering-journey/cloud-computing/index"
+2026-07-25T10:41:46.5068538Z   - "/ai-engineering-journey/coding-problems/01-arrays"
+2026-07-25T10:41:46.5069072Z   - "/ai-engineering-journey/coding-problems/02-strings"
+2026-07-25T10:41:46.5069464Z   - "/ai-engineering-journey/coding-problems/03-linked-lists"
+2026-07-25T10:41:46.5069864Z   - "/ai-engineering-journey/coding-problems/04-stacks-queues"
+2026-07-25T10:41:46.5070243Z   - "/ai-engineering-journey/coding-problems/05-trees"
+2026-07-25T10:41:46.5070604Z   - "/ai-engineering-journey/coding-problems/06-graphs"
+2026-07-25T10:41:46.5071040Z   - "/ai-engineering-journey/coding-problems/07-dynamic-programming"
+2026-07-25T10:41:46.5071508Z   - "/ai-engineering-journey/coding-problems/08-greedy"
+2026-07-25T10:41:46.5071893Z   - "/ai-engineering-journey/coding-problems/09-backtracking"
+2026-07-25T10:41:46.5072262Z   - "/ai-engineering-journey/coding-problems/index"
+2026-07-25T10:41:46.5072637Z   - "/ai-engineering-journey/compiler-design/01-introduction"
+2026-07-25T10:41:46.5073017Z   - "/ai-engineering-journey/compiler-design/02-lexical"
+2026-07-25T10:41:46.5073426Z   - "/ai-engineering-journey/compiler-design/03-parsing-topdown"
+2026-07-25T10:41:46.5073868Z   - "/ai-engineering-journey/compiler-design/04-parsing-bottomup"
+2026-07-25T10:41:46.5074262Z   - "/ai-engineering-journey/compiler-design/05-sdt"
+2026-07-25T10:41:46.5074668Z   - "/ai-engineering-journey/compiler-design/06-intermediate-code"
+2026-07-25T10:41:46.5075090Z   - "/ai-engineering-journey/compiler-design/07-type-checking"
+2026-07-25T10:41:46.5075490Z   - "/ai-engineering-journey/compiler-design/08-runtime-env"
+2026-07-25T10:41:46.5075869Z   - "/ai-engineering-journey/compiler-design/09-code-gen"
+2026-07-25T10:41:46.5076400Z   - "/ai-engineering-journey/compiler-design/10-optimization"
+2026-07-25T10:41:46.5076779Z   - "/ai-engineering-journey/compiler-design/11-cfa"
+2026-07-25T10:41:46.5077133Z   - "/ai-engineering-journey/compiler-design/12-dfa"
+2026-07-25T10:41:46.5077530Z   - "/ai-engineering-journey/compiler-design/13-loop-optimization"
+2026-07-25T10:41:46.5077983Z   - "/ai-engineering-journey/compiler-design/14-register-allocation"
+2026-07-25T10:41:46.5078409Z   - "/ai-engineering-journey/compiler-design/15-advanced"
+2026-07-25T10:41:46.5078962Z   - "/ai-engineering-journey/compiler-design/index"
+2026-07-25T10:41:46.5079398Z   - "/ai-engineering-journey/computer-architecture/01-number-systems"
+2026-07-25T10:41:46.5079894Z   - "/ai-engineering-journey/computer-architecture/02-cpu-organization"
+2026-07-25T10:41:46.5080390Z   - "/ai-engineering-journey/computer-architecture/03-memory-hierarchy"
+2026-07-25T10:41:46.5081023Z   - "/ai-engineering-journey/computer-architecture/04-pipelining-hazards"
+2026-07-25T10:41:46.5081535Z   - "/ai-engineering-journey/computer-architecture/05-io-organization"
+2026-07-25T10:41:46.5081985Z   - "/ai-engineering-journey/computer-architecture/index"
+2026-07-25T10:41:46.5082403Z   - "/ai-engineering-journey/computer-networks/01-introduction"
+2026-07-25T10:41:46.5082848Z   - "/ai-engineering-journey/computer-networks/02-physical-layer"
+2026-07-25T10:41:46.5083293Z   - "/ai-engineering-journey/computer-networks/03-datalink-layer"
+2026-07-25T10:41:46.5083694Z   - "/ai-engineering-journey/computer-networks/04-mac"
+2026-07-25T10:41:46.5084118Z   - "/ai-engineering-journey/computer-networks/05-ethernet-switching"
+2026-07-25T10:41:46.5084566Z   - "/ai-engineering-journey/computer-networks/06-network-layer"
+2026-07-25T10:41:46.5084979Z   - "/ai-engineering-journey/computer-networks/07-routing"
+2026-07-25T10:41:46.5085414Z   - "/ai-engineering-journey/computer-networks/08-transport-layer"
+2026-07-25T10:41:46.5085866Z   - "/ai-engineering-journey/computer-networks/09-tcp-congestion"
+2026-07-25T10:41:46.5086322Z   - "/ai-engineering-journey/computer-networks/10-application-layer"
+2026-07-25T10:41:46.5086752Z   - "/ai-engineering-journey/computer-networks/11-security"
+2026-07-25T10:41:46.5087147Z   - "/ai-engineering-journey/computer-networks/12-wireless"
+2026-07-25T10:41:46.5087531Z   - "/ai-engineering-journey/computer-networks/13-sockets"
+2026-07-25T10:41:46.5087902Z   - "/ai-engineering-journey/computer-networks/14-sdn"
+2026-07-25T10:41:46.5088281Z   - "/ai-engineering-journey/computer-networks/15-web-apis"
+2026-07-25T10:41:46.5088858Z   - "/ai-engineering-journey/computer-networks/16-cloud-networking"
+2026-07-25T10:41:46.5089328Z   - "/ai-engineering-journey/computer-networks/17-troubleshooting"
+2026-07-25T10:41:46.5089750Z   - "/ai-engineering-journey/computer-networks/18-modern"
+2026-07-25T10:41:46.5090127Z   - "/ai-engineering-journey/computer-networks/index"
+2026-07-25T10:41:46.5090542Z   - "/ai-engineering-journey/courses/cyber-security/cloud-mobile"
+2026-07-25T10:41:46.5090961Z   - "/ai-engineering-journey/cyber-security/01-fundamentals"
+2026-07-25T10:41:46.5091354Z   - "/ai-engineering-journey/cyber-security/02-cryptography"
+2026-07-25T10:41:46.5091768Z   - "/ai-engineering-journey/cyber-security/03-network-security"
+2026-07-25T10:41:46.5092188Z   - "/ai-engineering-journey/cyber-security/04-system-software"
+2026-07-25T10:41:46.5092590Z   - "/ai-engineering-journey/cyber-security/05-web-security"
+2026-07-25T10:41:46.5092955Z   - "/ai-engineering-journey/cyber-security/06-iam"
+2026-07-25T10:41:46.5093325Z   - "/ai-engineering-journey/cyber-security/08-forensics-ir"
+2026-07-25T10:41:46.5093693Z   - "/ai-engineering-journey/cyber-security/09-grc"
+2026-07-25T10:41:46.5094063Z   - "/ai-engineering-journey/cyber-security/10-pentesting"
+2026-07-25T10:41:46.5094492Z   - "/ai-engineering-journey/cyber-security/11-soc-threat-hunting"
+2026-07-25T10:41:46.5095114Z   - "/ai-engineering-journey/cyber-security/12-malware-analysis"
+2026-07-25T10:41:46.5095874Z   - "/ai-engineering-journey/cyber-security/13-red-team-c2"
+2026-07-25T10:41:46.5096676Z   - "/ai-engineering-journey/cyber-security/14-wireless-iot-embedded"
+2026-07-25T10:41:46.5097253Z   - "/ai-engineering-journey/cyber-security/15-ot-ics-scada"
+2026-07-25T10:41:46.5097823Z   - "/ai-engineering-journey/cyber-security/16-supply-chain-cicd"
+2026-07-25T10:41:46.5098524Z   - "/ai-engineering-journey/cyber-security/17-ai-security-adversarial-ml"
+2026-07-25T10:41:46.5099375Z   - "/ai-engineering-journey/cyber-security/18-privacy-osint"
+2026-07-25T10:41:46.5100007Z   - "/ai-engineering-journey/cyber-security/19-blockchain-defi-security"
+2026-07-25T10:41:46.5100664Z   - "/ai-engineering-journey/cyber-security/20-zero-trust-architecture"
+2026-07-25T10:41:46.5101284Z   - "/ai-engineering-journey/cyber-security/21-social-media-security"
+2026-07-25T10:41:46.5101939Z   - "/ai-engineering-journey/cyber-security/index"
+2026-07-25T10:41:46.5102792Z   - "/ai-engineering-journey/data-analysis-interpretation/01-advanced-data-interpretation"
+2026-07-25T10:41:46.5103616Z   - "/ai-engineering-journey/data-analysis-interpretation/02-missing-data-caselet-di"
+2026-07-25T10:41:46.5104392Z   - "/ai-engineering-journey/data-analysis-interpretation/03-data-sufficiency"
+2026-07-25T10:41:46.5105073Z   - "/ai-engineering-journey/data-analysis-interpretation/04-graph-chart-analysis"
+2026-07-25T10:41:46.5116830Z   - "/ai-engineering-journey/data-analysis-interpretation/05-mixed-data-interpretation"
+2026-07-25T10:41:46.5117441Z   - "/ai-engineering-journey/data-analysis-interpretation/index"
+2026-07-25T10:41:46.5117891Z   - "/ai-engineering-journey/data-structures/01-complexity"
+2026-07-25T10:41:46.5118300Z   - "/ai-engineering-journey/data-structures/02-arrays"
+2026-07-25T10:41:46.5118913Z   - "/ai-engineering-journey/data-structures/03-singly-linked-list"
+2026-07-25T10:41:46.5119390Z   - "/ai-engineering-journey/data-structures/04-doubly-linked-list"
+2026-07-25T10:41:46.5119819Z   - "/ai-engineering-journey/data-structures/05-stacks"
+2026-07-25T10:41:46.5120195Z   - "/ai-engineering-journey/data-structures/06-queues"
+2026-07-25T10:41:46.5120579Z   - "/ai-engineering-journey/data-structures/07-hash-tables"
+2026-07-25T10:41:46.5120993Z   - "/ai-engineering-journey/data-structures/08-binary-trees"
+2026-07-25T10:41:46.5121380Z   - "/ai-engineering-journey/data-structures/09-bst"
+2026-07-25T10:41:46.5121756Z   - "/ai-engineering-journey/data-structures/10-heaps"
+2026-07-25T10:41:46.5122168Z   - "/ai-engineering-journey/data-structures/11-graphs"
+2026-07-25T10:41:46.5122586Z   - "/ai-engineering-journey/data-structures/12-graph-traversals"
+2026-07-25T10:41:46.5122994Z   - "/ai-engineering-journey/data-structures/13-avl"
+2026-07-25T10:41:46.5123384Z   - "/ai-engineering-journey/data-structures/14-red-black"
+2026-07-25T10:41:46.5123777Z   - "/ai-engineering-journey/data-structures/15-b-trees"
+2026-07-25T10:41:46.5124148Z   - "/ai-engineering-journey/data-structures/16-trie"
+2026-07-25T10:41:46.5124545Z   - "/ai-engineering-journey/data-structures/17-segment-tree"
+2026-07-25T10:41:46.5124953Z   - "/ai-engineering-journey/data-structures/18-union-find"
+2026-07-25T10:41:46.5125329Z   - "/ai-engineering-journey/data-structures/index"
+2026-07-25T10:41:46.5125778Z   - "/ai-engineering-journey/database-management-systems/01-introduction"
+2026-07-25T10:41:46.5126297Z   - "/ai-engineering-journey/database-management-systems/02-er-model"
+2026-07-25T10:41:46.5126820Z   - "/ai-engineering-journey/database-management-systems/03-relational-model"
+2026-07-25T10:41:46.5127344Z   - "/ai-engineering-journey/database-management-systems/04-sql-basics"
+2026-07-25T10:41:46.5127833Z   - "/ai-engineering-journey/database-management-systems/05-sql-joins"
+2026-07-25T10:41:46.5128328Z   - "/ai-engineering-journey/database-management-systems/06-sql-advanced"
+2026-07-25T10:41:46.5129026Z   - "/ai-engineering-journey/database-management-systems/07-normalization"
+2026-07-25T10:41:46.5129545Z   - "/ai-engineering-journey/database-management-systems/08-higher-nf"
+2026-07-25T10:41:46.5130252Z   - "/ai-engineering-journey/database-management-systems/09-transactions"
+2026-07-25T10:41:46.5130772Z   - "/ai-engineering-journey/database-management-systems/10-concurrency"
+2026-07-25T10:41:46.5131272Z   - "/ai-engineering-journey/database-management-systems/11-recovery"
+2026-07-25T10:41:46.5131748Z   - "/ai-engineering-journey/database-management-systems/12-indexing"
+2026-07-25T10:41:46.5132256Z   - "/ai-engineering-journey/database-management-systems/13-query-processing"
+2026-07-25T10:41:46.5132761Z   - "/ai-engineering-journey/database-management-systems/14-nosql"
+2026-07-25T10:41:46.5133227Z   - "/ai-engineering-journey/database-management-systems/15-mongodb"
+2026-07-25T10:41:46.5133687Z   - "/ai-engineering-journey/database-management-systems/16-redis"
+2026-07-25T10:41:46.5134180Z   - "/ai-engineering-journey/database-management-systems/17-distributed-db"
+2026-07-25T10:41:46.5134825Z   - "/ai-engineering-journey/database-management-systems/18-security"
+2026-07-25T10:41:46.5135349Z   - "/ai-engineering-journey/database-management-systems/19-performance-tuning"
+2026-07-25T10:41:46.5135864Z   - "/ai-engineering-journey/database-management-systems/index"
+2026-07-25T10:41:46.5136274Z   - "/ai-engineering-journey/devops/01-introduction"
+2026-07-25T10:41:46.5136630Z   - "/ai-engineering-journey/devops/02-git"
+2026-07-25T10:41:46.5136974Z   - "/ai-engineering-journey/devops/02-linux-basics"
+2026-07-25T10:41:46.5137374Z   - "/ai-engineering-journey/devops/03-build-tools"
+2026-07-25T10:41:46.5137743Z   - "/ai-engineering-journey/devops/03-version-control"
+2026-07-25T10:41:46.5138092Z   - "/ai-engineering-journey/devops/04-cicd"
+2026-07-25T10:41:46.5138477Z   - "/ai-engineering-journey/devops/04-continuous-integration"
+2026-07-25T10:41:46.5139066Z   - "/ai-engineering-journey/devops/05-containerization"
+2026-07-25T10:41:46.5139440Z   - "/ai-engineering-journey/devops/05-docker"
+2026-07-25T10:41:46.5139824Z   - "/ai-engineering-journey/devops/06-docker-compose"
+2026-07-25T10:41:46.5140200Z   - "/ai-engineering-journey/devops/06-orchestration"
+2026-07-25T10:41:46.5140607Z   - "/ai-engineering-journey/devops/07-infrastructure-as-code"
+2026-07-25T10:41:46.5140999Z   - "/ai-engineering-journey/devops/07-kubernetes"
+2026-07-25T10:41:46.5141404Z   - "/ai-engineering-journey/devops/08-configuration-management"
+2026-07-25T10:41:46.5141804Z   - "/ai-engineering-journey/devops/08-k8s-advanced"
+2026-07-25T10:41:46.5142186Z   - "/ai-engineering-journey/devops/09-continuous-delivery"
+2026-07-25T10:41:46.5142550Z   - "/ai-engineering-journey/devops/09-iac"
+2026-07-25T10:41:46.5142918Z   - "/ai-engineering-journey/devops/10-configuration-mgmt"
+2026-07-25T10:41:46.5143294Z   - "/ai-engineering-journey/devops/10-monitoring"
+2026-07-25T10:41:46.5143667Z   - "/ai-engineering-journey/devops/11-cloud-platforms"
+2026-07-25T10:41:46.5144049Z   - "/ai-engineering-journey/devops/12-monitoring-logging"
+2026-07-25T10:41:46.5144427Z   - "/ai-engineering-journey/devops/13-observability"
+2026-07-25T10:41:46.5144780Z   - "/ai-engineering-journey/devops/14-devsecops"
+2026-07-25T10:41:46.5145146Z   - "/ai-engineering-journey/devops/15-database-devops"
+2026-07-25T10:41:46.5145503Z   - "/ai-engineering-journey/devops/16-networking"
+2026-07-25T10:41:46.5145833Z   - "/ai-engineering-journey/devops/17-sre"
+2026-07-25T10:41:46.5146160Z   - "/ai-engineering-journey/devops/18-capstone"
+2026-07-25T10:41:46.5146496Z   - "/ai-engineering-journey/devops/index"
+2026-07-25T10:41:46.5146859Z   - "/ai-engineering-journey/digital-logic/01-introduction"
+2026-07-25T10:41:46.5147280Z   - "/ai-engineering-journey/digital-logic/02-boolean-algebra"
+2026-07-25T10:41:46.5147685Z   - "/ai-engineering-journey/digital-logic/03-logic-gates"
+2026-07-25T10:41:46.5148088Z   - "/ai-engineering-journey/digital-logic/04-karnaugh-maps"
+2026-07-25T10:41:46.5148539Z   - "/ai-engineering-journey/digital-logic/05-combinational-circuits"
+2026-07-25T10:41:46.5149177Z   - "/ai-engineering-journey/digital-logic/06-sequential-circuits"
+2026-07-25T10:41:46.5149626Z   - "/ai-engineering-journey/digital-logic/07-state-machines"
+2026-07-25T10:41:46.5150212Z   - "/ai-engineering-journey/digital-logic/08-registers-counters"
+2026-07-25T10:41:46.5150623Z   - "/ai-engineering-journey/digital-logic/09-memory"
+2026-07-25T10:41:46.5150998Z   - "/ai-engineering-journey/digital-logic/10-pla-pal"
+2026-07-25T10:41:46.5151412Z   - "/ai-engineering-journey/digital-logic/11-arithmetic-circuits"
+2026-07-25T10:41:46.5151805Z   - "/ai-engineering-journey/digital-logic/12-hdl"
+2026-07-25T10:41:46.5152159Z   - "/ai-engineering-journey/digital-logic/13-dac-adc"
+2026-07-25T10:41:46.5152541Z   - "/ai-engineering-journey/digital-logic/14-timing-analysis"
+2026-07-25T10:41:46.5152948Z   - "/ai-engineering-journey/digital-logic/15-advanced-topics"
+2026-07-25T10:41:46.5153321Z   - "/ai-engineering-journey/digital-logic/index"
+2026-07-25T10:41:46.5153699Z   - "/ai-engineering-journey/discrete-mathematics/01-sets"
+2026-07-25T10:41:46.5154259Z   - "/ai-engineering-journey/discrete-mathematics/02-logic"
+2026-07-25T10:41:46.5154684Z   - "/ai-engineering-journey/discrete-mathematics/03-predicates"
+2026-07-25T10:41:46.5155108Z   - "/ai-engineering-journey/discrete-mathematics/04-proofs"
+2026-07-25T10:41:46.5155542Z   - "/ai-engineering-journey/discrete-mathematics/05-combinatorics"
+2026-07-25T10:41:46.5155990Z   - "/ai-engineering-journey/discrete-mathematics/06-recurrence"
+2026-07-25T10:41:46.5156417Z   - "/ai-engineering-journey/discrete-mathematics/07-relations"
+2026-07-25T10:41:46.5156831Z   - "/ai-engineering-journey/discrete-mathematics/08-functions"
+2026-07-25T10:41:46.5157258Z   - "/ai-engineering-journey/discrete-mathematics/09-graph-theory"
+2026-07-25T10:41:46.5157673Z   - "/ai-engineering-journey/discrete-mathematics/10-trees"
+2026-07-25T10:41:46.5158073Z   - "/ai-engineering-journey/discrete-mathematics/11-algebra"
+2026-07-25T10:41:46.5158473Z   - "/ai-engineering-journey/discrete-mathematics/12-boolean"
+2026-07-25T10:41:46.5159073Z   - "/ai-engineering-journey/discrete-mathematics/13-probability"
+2026-07-25T10:41:46.5159532Z   - "/ai-engineering-journey/discrete-mathematics/14-number-theory"
+2026-07-25T10:41:46.5159984Z   - "/ai-engineering-journey/discrete-mathematics/15-applications"
+2026-07-25T10:41:46.5160405Z   - "/ai-engineering-journey/discrete-mathematics/index"
+2026-07-25T10:41:46.5160853Z   - "/ai-engineering-journey/engineering-mathematics/01-linear-algebra"
+2026-07-25T10:41:46.5161330Z   - "/ai-engineering-journey/engineering-mathematics/02-calculus-i"
+2026-07-25T10:41:46.5161788Z   - "/ai-engineering-journey/engineering-mathematics/03-calculus-ii"
+2026-07-25T10:41:46.5162307Z   - "/ai-engineering-journey/engineering-mathematics/04-differential-equations"
+2026-07-25T10:41:46.5162844Z   - "/ai-engineering-journey/engineering-mathematics/05-complex-analysis"
+2026-07-25T10:41:46.5163376Z   - "/ai-engineering-journey/engineering-mathematics/06-probability-statistics"
+2026-07-25T10:41:46.5163899Z   - "/ai-engineering-journey/engineering-mathematics/07-numerical-methods"
+2026-07-25T10:41:46.5164426Z   - "/ai-engineering-journey/engineering-mathematics/08-integral-transforms"
+2026-07-25T10:41:46.5164934Z   - "/ai-engineering-journey/engineering-mathematics/09-optimization"
+2026-07-25T10:41:46.5165421Z   - "/ai-engineering-journey/engineering-mathematics/10-vector-calculus"
+2026-07-25T10:41:46.5165866Z   - "/ai-engineering-journey/engineering-mathematics/index"
+2026-07-25T10:41:46.5166313Z   - "/ai-engineering-journey/english-language/01-reading-comprehension"
+2026-07-25T10:41:46.5166838Z   - "/ai-engineering-journey/english-language/02-grammar-essentials"
+2026-07-25T10:41:46.5167307Z   - "/ai-engineering-journey/english-language/03-vocabulary-word-usage"
+2026-07-25T10:41:46.5167756Z   - "/ai-engineering-journey/english-language/04-verbal-ability"
+2026-07-25T10:41:46.5168207Z   - "/ai-engineering-journey/english-language/05-descriptive-english"
+2026-07-25T10:41:46.5168625Z   - "/ai-engineering-journey/english-language/index"
+2026-07-25T10:41:46.5169252Z   - "/ai-engineering-journey/gate-cs-preparation/01-general-aptitude"
+2026-07-25T10:41:46.5169890Z   - "/ai-engineering-journey/gate-cs-preparation/02-theory-of-computation"
+2026-07-25T10:41:46.5170402Z   - "/ai-engineering-journey/gate-cs-preparation/03-compiler-design"
+2026-07-25T10:41:46.5170873Z   - "/ai-engineering-journey/gate-cs-preparation/04-digital-logic"
+2026-07-25T10:41:46.5171328Z   - "/ai-engineering-journey/gate-cs-preparation/05-gate-strategy"
+2026-07-25T10:41:46.5171813Z   - "/ai-engineering-journey/gate-cs-preparation/06-engineering-mathematics"
+2026-07-25T10:41:46.5172327Z   - "/ai-engineering-journey/gate-cs-preparation/07-operating-systems"
+2026-07-25T10:41:46.5172860Z   - "/ai-engineering-journey/gate-cs-preparation/08-database-management-systems"
+2026-07-25T10:41:46.5173379Z   - "/ai-engineering-journey/gate-cs-preparation/09-computer-networks"
+2026-07-25T10:41:46.5173895Z   - "/ai-engineering-journey/gate-cs-preparation/10-data-structures-algorithms"
+2026-07-25T10:41:46.5174569Z   - "/ai-engineering-journey/gate-cs-preparation/11-computer-architecture"
+2026-07-25T10:41:46.5175054Z   - "/ai-engineering-journey/gate-cs-preparation/15-mock-test-1"
+2026-07-25T10:41:46.5175496Z   - "/ai-engineering-journey/gate-cs-preparation/16-mock-test-2"
+2026-07-25T10:41:46.5175913Z   - "/ai-engineering-journey/gate-cs-preparation/17-mock-test-3"
+2026-07-25T10:41:46.5176332Z   - "/ai-engineering-journey/gate-cs-preparation/18-mock-test-4"
+2026-07-25T10:41:46.5176748Z   - "/ai-engineering-journey/gate-cs-preparation/19-mock-test-5"
+2026-07-25T10:41:46.5177161Z   - "/ai-engineering-journey/gate-cs-preparation/20-mock-test-6"
+2026-07-25T10:41:46.5177577Z   - "/ai-engineering-journey/gate-cs-preparation/21-mock-test-7"
+2026-07-25T10:41:46.5177990Z   - "/ai-engineering-journey/gate-cs-preparation/22-mock-test-8"
+2026-07-25T10:41:46.5178428Z   - "/ai-engineering-journey/gate-cs-preparation/23-gate-2025-solved"
+2026-07-25T10:41:46.5179060Z   - "/ai-engineering-journey/gate-cs-preparation/24-gate-2024-solved"
+2026-07-25T10:41:46.5179534Z   - "/ai-engineering-journey/gate-cs-preparation/25-gate-2023-solved"
+2026-07-25T10:41:46.5179988Z   - "/ai-engineering-journey/gate-cs-preparation/26-gate-2022-solved"
+2026-07-25T10:41:46.5180436Z   - "/ai-engineering-journey/gate-cs-preparation/27-gate-2021-solved"
+2026-07-25T10:41:46.5180880Z   - "/ai-engineering-journey/gate-cs-preparation/28-gate-2020-solved"
+2026-07-25T10:41:46.5181328Z   - "/ai-engineering-journey/gate-cs-preparation/29-gate-2019-solved"
+2026-07-25T10:41:46.5181772Z   - "/ai-engineering-journey/gate-cs-preparation/30-gate-2018-solved"
+2026-07-25T10:41:46.5182227Z   - "/ai-engineering-journey/gate-cs-preparation/31-gate-2017-solved"
+2026-07-25T10:41:46.5182673Z   - "/ai-engineering-journey/gate-cs-preparation/32-gate-2016-solved"
+2026-07-25T10:41:46.5183087Z   - "/ai-engineering-journey/gate-cs-preparation/index"
+2026-07-25T10:41:46.5183538Z   - "/ai-engineering-journey/general-aptitude/01-quantitative-aptitude"
+2026-07-25T10:41:46.5184025Z   - "/ai-engineering-journey/general-aptitude/02-logical-reasoning"
+2026-07-25T10:41:46.5184469Z   - "/ai-engineering-journey/general-aptitude/03-verbal-ability"
+2026-07-25T10:41:46.5184913Z   - "/ai-engineering-journey/general-aptitude/04-data-interpretation"
+2026-07-25T10:41:46.5185376Z   - "/ai-engineering-journey/general-aptitude/05-non-verbal-reasoning"
+2026-07-25T10:41:46.5185843Z   - "/ai-engineering-journey/general-aptitude/06-advanced-reasoning"
+2026-07-25T10:41:46.5186255Z   - "/ai-engineering-journey/general-aptitude/index"
+2026-07-25T10:41:46.5186663Z   - "/ai-engineering-journey/general-awareness/01-indian-polity"
+2026-07-25T10:41:46.5187126Z   - "/ai-engineering-journey/general-awareness/02-indian-geography"
+2026-07-25T10:41:46.5187592Z   - "/ai-engineering-journey/general-awareness/03-indian-history"
+2026-07-25T10:41:46.5188037Z   - "/ai-engineering-journey/general-awareness/04-indian-economy"
+2026-07-25T10:41:46.5188481Z   - "/ai-engineering-journey/general-awareness/05-general-science"
+2026-07-25T10:41:46.5189131Z   - "/ai-engineering-journey/general-awareness/06-current-affairs-2024"
+2026-07-25T10:41:46.5189800Z   - "/ai-engineering-journey/general-awareness/07-current-affairs-2025-2026"
+2026-07-25T10:41:46.5190353Z   - "/ai-engineering-journey/general-awareness/08-sports-awards-international"
+2026-07-25T10:41:46.5190807Z   - "/ai-engineering-journey/general-awareness/index"
+2026-07-25T10:41:46.5191172Z   - "/ai-engineering-journey/government-exams/index"
+2026-07-25T10:41:46.5191561Z   - "/ai-engineering-journey/government-pyqs/01-ibps-so-2024"
+2026-07-25T10:41:46.5191967Z   - "/ai-engineering-journey/government-pyqs/02-ibps-so-2023"
+2026-07-25T10:41:46.5192368Z   - "/ai-engineering-journey/government-pyqs/03-ibps-so-2022"
+2026-07-25T10:41:46.5192763Z   - "/ai-engineering-journey/government-pyqs/04-ibps-so-2021"
+2026-07-25T10:41:46.5193160Z   - "/ai-engineering-journey/government-pyqs/05-ibps-so-2020"
+2026-07-25T10:41:46.5193549Z   - "/ai-engineering-journey/government-pyqs/06-ibps-so-2019"
+2026-07-25T10:41:46.5194112Z   - "/ai-engineering-journey/government-pyqs/07-nic-scientist-2024"
+2026-07-25T10:41:46.5194570Z   - "/ai-engineering-journey/government-pyqs/08-nic-scientist-2023"
+2026-07-25T10:41:46.5195016Z   - "/ai-engineering-journey/government-pyqs/09-nic-scientist-2022"
+2026-07-25T10:41:46.5195437Z   - "/ai-engineering-journey/government-pyqs/10-sbi-po-2024"
+2026-07-25T10:41:46.5195835Z   - "/ai-engineering-journey/government-pyqs/11-sbi-po-2023"
+2026-07-25T10:41:46.5196226Z   - "/ai-engineering-journey/government-pyqs/12-sbi-po-2022"
+2026-07-25T10:41:46.5196642Z   - "/ai-engineering-journey/government-pyqs/13-rbi-grade-b-2024"
+2026-07-25T10:41:46.5197078Z   - "/ai-engineering-journey/government-pyqs/14-rbi-grade-b-2023"
+2026-07-25T10:41:46.5197543Z   - "/ai-engineering-journey/government-pyqs/index"
+2026-07-25T10:41:46.5197932Z   - "/ai-engineering-journey/hindi-language/01-hindi-grammar"
+2026-07-25T10:41:46.5198357Z   - "/ai-engineering-journey/hindi-language/02-hindi-comprehension"
+2026-07-25T10:41:46.5199028Z   - "/ai-engineering-journey/hindi-language/03-hindi-vocabulary"
+2026-07-25T10:41:46.5199589Z   - "/ai-engineering-journey/hindi-language/04-hindi-writing"
+2026-07-25T10:41:46.5200019Z   - "/ai-engineering-journey/hindi-language/05-hindi-translation"
+2026-07-25T10:41:46.5200420Z   - "/ai-engineering-journey/hindi-language/index"
+2026-07-25T10:41:46.5200900Z   - "/ai-engineering-journey/information-security/01-cryptography-fundamentals"
+2026-07-25T10:41:46.5201427Z   - "/ai-engineering-journey/information-security/02-network-security"
+2026-07-25T10:41:46.5201936Z   - "/ai-engineering-journey/information-security/03-cyber-threats-attacks"
+2026-07-25T10:41:46.5202463Z   - "/ai-engineering-journey/information-security/04-digital-signatures-pki"
+2026-07-25T10:41:46.5203004Z   - "/ai-engineering-journey/information-security/05-banking-payment-security"
+2026-07-25T10:41:46.5203464Z   - "/ai-engineering-journey/information-security/index"
+2026-07-25T10:41:46.5203953Z   - "/ai-engineering-journey/interview-preparation/01-technical-interview-core-cs"
+2026-07-25T10:41:46.5204534Z   - "/ai-engineering-journey/interview-preparation/02-coding-problem-solving"
+2026-07-25T10:41:46.5205076Z   - "/ai-engineering-journey/interview-preparation/03-system-design-interview"
+2026-07-25T10:41:46.5205604Z   - "/ai-engineering-journey/interview-preparation/04-database-sql-interview"
+2026-07-25T10:41:46.5206127Z   - "/ai-engineering-journey/interview-preparation/05-behavioral-hr-interview"
+2026-07-25T10:41:46.5206644Z   - "/ai-engineering-journey/interview-preparation/06-govt-exam-interview"
+2026-07-25T10:41:46.5207178Z   - "/ai-engineering-journey/interview-preparation/07-resume-linkedin-portfolio"
+2026-07-25T10:41:46.5207727Z   - "/ai-engineering-journey/interview-preparation/08-mock-interview-scenarios"
+2026-07-25T10:41:46.5208269Z   - "/ai-engineering-journey/interview-preparation/09-company-wise-preparation"
+2026-07-25T10:41:46.5209032Z   - "/ai-engineering-journey/interview-preparation/10-aptitude-logical-reasoning-speed"
+2026-07-25T10:41:46.5209610Z   - "/ai-engineering-journey/interview-preparation/11-company-tcs-nqt"
+2026-07-25T10:41:46.5210256Z   - "/ai-engineering-journey/interview-preparation/12-company-infosys-sp"
+2026-07-25T10:41:46.5210765Z   - "/ai-engineering-journey/interview-preparation/13-company-amazon-sde"
+2026-07-25T10:41:46.5211255Z   - "/ai-engineering-journey/interview-preparation/14-company-google-swe"
+2026-07-25T10:41:46.5211762Z   - "/ai-engineering-journey/interview-preparation/15-company-microsoft-sde"
+2026-07-25T10:41:46.5212295Z   - "/ai-engineering-journey/interview-preparation/16-company-wipro-hcl-techm"
+2026-07-25T10:41:46.5212810Z   - "/ai-engineering-journey/interview-preparation/17-company-psus-govt"
+2026-07-25T10:41:46.5213257Z   - "/ai-engineering-journey/interview-preparation/index"
+2026-07-25T10:41:46.5213629Z   - "/ai-engineering-journey/java/01-jvm-memory"
+2026-07-25T10:41:46.5213979Z   - "/ai-engineering-journey/java/02-concurrency"
+2026-07-25T10:41:46.5214457Z   - "/ai-engineering-journey/java/03-nio-networking"
+2026-07-25T10:41:46.5214816Z   - "/ai-engineering-journey/java/04-jpms-packaging"
+2026-07-25T10:41:46.5215186Z   - "/ai-engineering-journey/java/05-functional-deep"
+2026-07-25T10:41:46.5215539Z   - "/ai-engineering-journey/java/06-performance"
+2026-07-25T10:41:46.5215871Z   - "/ai-engineering-journey/java/07-maven"
+2026-07-25T10:41:46.5216191Z   - "/ai-engineering-journey/java/08-gradle"
+2026-07-25T10:41:46.5216524Z   - "/ai-engineering-journey/java/09-spring-intro"
+2026-07-25T10:41:46.5216869Z   - "/ai-engineering-journey/java/10-di-container"
+2026-07-25T10:41:46.5217228Z   - "/ai-engineering-journey/java/11-auto-configuration"
+2026-07-25T10:41:46.5217589Z   - "/ai-engineering-journey/java/12-configuration"
+2026-07-25T10:41:46.5217959Z   - "/ai-engineering-journey/java/13-actuator-devtools"
+2026-07-25T10:41:46.5218330Z   - "/ai-engineering-journey/java/14-logging-error-i18n"
+2026-07-25T10:41:46.5218822Z   - "/ai-engineering-journey/java/15-rest-api"
+2026-07-25T10:41:46.5219178Z   - "/ai-engineering-journey/java/16-validation"
+2026-07-25T10:41:46.5219526Z   - "/ai-engineering-journey/java/17-openapi"
+2026-07-25T10:41:46.5219881Z   - "/ai-engineering-journey/java/18-file-handling"
+2026-07-25T10:41:46.5220230Z   - "/ai-engineering-journey/java/19-jdbc-jooq"
+2026-07-25T10:41:46.5220579Z   - "/ai-engineering-journey/java/20-jpa-hibernate"
+2026-07-25T10:41:46.5220936Z   - "/ai-engineering-journey/java/21-spring-data-jpa"
+2026-07-25T10:41:46.5221288Z   - "/ai-engineering-journey/java/22-migrations"
+2026-07-25T10:41:46.5221614Z   - "/ai-engineering-journey/java/23-nosql"
+2026-07-25T10:41:46.5221943Z   - "/ai-engineering-journey/java/24-transactions"
+2026-07-25T10:41:46.5222282Z   - "/ai-engineering-journey/java/25-auth-authz"
+2026-07-25T10:41:46.5222635Z   - "/ai-engineering-journey/java/26-jwt-oauth2"
+2026-07-25T10:41:46.5222998Z   - "/ai-engineering-journey/java/27-method-cors-csrf"
+2026-07-25T10:41:46.5223357Z   - "/ai-engineering-journey/java/28-keycloak"
+2026-07-25T10:41:46.5223691Z   - "/ai-engineering-journey/java/29-junit5"
+2026-07-25T10:41:46.5224010Z   - "/ai-engineering-journey/java/30-mockito"
+2026-07-25T10:41:46.5224357Z   - "/ai-engineering-journey/java/31-spring-boot-test"
+2026-07-25T10:41:46.5224718Z   - "/ai-engineering-journey/java/32-testcontainers"
+2026-07-25T10:41:46.5225093Z   - "/ai-engineering-journey/java/33-security-perf-test"
+2026-07-25T10:41:46.5225454Z   - "/ai-engineering-journey/java/34-async-events"
+2026-07-25T10:41:46.5225790Z   - "/ai-engineering-journey/java/35-rabbitmq"
+2026-07-25T10:41:46.5226109Z   - "/ai-engineering-journey/java/36-kafka"
+2026-07-25T10:41:46.5226460Z   - "/ai-engineering-journey/java/37-event-driven-saga"
+2026-07-25T10:41:46.5226868Z   - "/ai-engineering-journey/java/38-microservices-principles"
+2026-07-25T10:41:46.5227252Z   - "/ai-engineering-journey/java/39-discovery"
+2026-07-25T10:41:46.5227580Z   - "/ai-engineering-journey/java/40-gateway"
+2026-07-25T10:41:46.5227905Z   - "/ai-engineering-journey/java/41-resilience"
+2026-07-25T10:41:46.5228234Z   - "/ai-engineering-journey/java/42-config"
+2026-07-25T10:41:46.5228543Z   - "/ai-engineering-journey/java/43-tracing"
+2026-07-25T10:41:46.5229148Z   - "/ai-engineering-journey/java/44-reactor"
+2026-07-25T10:41:46.5229461Z   - "/ai-engineering-journey/java/45-webflux"
+2026-07-25T10:41:46.5229770Z   - "/ai-engineering-journey/java/46-r2dbc"
+2026-07-25T10:41:46.5230087Z   - "/ai-engineering-journey/java/47-spring-ai"
+2026-07-25T10:41:46.5230405Z   - "/ai-engineering-journey/java/48-graphql"
+2026-07-25T10:41:46.5230715Z   - "/ai-engineering-journey/java/49-batch"
+2026-07-25T10:41:46.5231038Z   - "/ai-engineering-journey/java/50-integration"
+2026-07-25T10:41:46.5231373Z   - "/ai-engineering-journey/java/51-modulith"
+2026-07-25T10:41:46.5231687Z   - "/ai-engineering-journey/java/52-docker"
+2026-07-25T10:41:46.5231999Z   - "/ai-engineering-journey/java/53-kubernetes"
+2026-07-25T10:41:46.5232320Z   - "/ai-engineering-journey/java/54-cicd"
+2026-07-25T10:41:46.5232649Z   - "/ai-engineering-journey/java/55-observability"
+2026-07-25T10:41:46.5233132Z   - "/ai-engineering-journey/java/56-interview-java"
+2026-07-25T10:41:46.5233521Z   - "/ai-engineering-journey/java/57-interview-spring"
+2026-07-25T10:41:46.5233906Z   - "/ai-engineering-journey/java/58-interview-rest-api"
+2026-07-25T10:41:46.5234300Z   - "/ai-engineering-journey/java/59-interview-databases"
+2026-07-25T10:41:46.5234698Z   - "/ai-engineering-journey/java/59-interview-databases-a"
+2026-07-25T10:41:46.5235095Z   - "/ai-engineering-journey/java/59-interview-databases-b"
+2026-07-25T10:41:46.5235478Z   - "/ai-engineering-journey/java/59-interview-databases-c"
+2026-07-25T10:41:46.5235857Z   - "/ai-engineering-journey/java/59-interview-databases-d"
+2026-07-25T10:41:46.5236255Z   - "/ai-engineering-journey/java/60-interview-microservices"
+2026-07-25T10:41:46.5236679Z   - "/ai-engineering-journey/java/60-interview-microservices-a"
+2026-07-25T10:41:46.5237101Z   - "/ai-engineering-journey/java/60-interview-microservices-b"
+2026-07-25T10:41:46.5237519Z   - "/ai-engineering-journey/java/60-interview-microservices-c"
+2026-07-25T10:41:46.5237927Z   - "/ai-engineering-journey/java/60-interview-microservices-d"
+2026-07-25T10:41:46.5238331Z   - "/ai-engineering-journey/java/61-interview-security"
+2026-07-25T10:41:46.5238863Z   - "/ai-engineering-journey/java/62-interview-testing"
+2026-07-25T10:41:46.5239238Z   - "/ai-engineering-journey/java/63-interview-tools"
+2026-07-25T10:41:46.5239628Z   - "/ai-engineering-journey/java/64-interview-design-patterns"
+2026-07-25T10:41:46.5240040Z   - "/ai-engineering-journey/java/65-interview-system-design"
+2026-07-25T10:41:46.5240438Z   - "/ai-engineering-journey/java/66-interview-behavioral"
+2026-07-25T10:41:46.5240788Z   - "/ai-engineering-journey/java/index"
+2026-07-25T10:41:46.5241126Z   - "/ai-engineering-journey/java/p1-java-syntax"
+2026-07-25T10:41:46.5241472Z   - "/ai-engineering-journey/java/p2-java-oop"
+2026-07-25T10:41:46.5241828Z   - "/ai-engineering-journey/java/p3-java-collections"
+2026-07-25T10:41:46.5242208Z   - "/ai-engineering-journey/java/p4-exceptions-io"
+2026-07-25T10:41:46.5242582Z   - "/ai-engineering-journey/java/p5-generics-reflection"
+2026-07-25T10:41:46.5243021Z   - "/ai-engineering-journey/java/p6-lambdas-streams"
+2026-07-25T10:41:46.5243444Z   - "/ai-engineering-journey/job-preparation/01-resume-cover-letter"
+2026-07-25T10:41:46.5243915Z   - "/ai-engineering-journey/job-preparation/02-job-search-strategy"
+2026-07-25T10:41:46.5244401Z   - "/ai-engineering-journey/job-preparation/03-aptitude-test-preparation"
+2026-07-25T10:41:46.5244931Z   - "/ai-engineering-journey/job-preparation/04-group-discussion-case-study"
+2026-07-25T10:41:46.5245487Z   - "/ai-engineering-journey/job-preparation/05-offer-negotiation-career-growth"
+2026-07-25T10:41:46.5246067Z   - "/ai-engineering-journey/job-preparation/06-govt-job-portal-notification-tracker"
+2026-07-25T10:41:46.5246558Z   - "/ai-engineering-journey/job-preparation/index"
+2026-07-25T10:41:46.5246915Z   - "/ai-engineering-journey/laravel/01-introduction"
+2026-07-25T10:41:46.5247302Z   - "/ai-engineering-journey/laravel/02-architecture-routing"
+2026-07-25T10:41:46.5247834Z   - "/ai-engineering-journey/laravel/03-blade-frontend"
+2026-07-25T10:41:46.5248222Z   - "/ai-engineering-journey/laravel/04-eloquent-database"
+2026-07-25T10:41:46.5248595Z   - "/ai-engineering-journey/laravel/05-auth-security"
+2026-07-25T10:41:46.5249138Z   - "/ai-engineering-journey/laravel/06-queues-notifications"
+2026-07-25T10:41:46.5249529Z   - "/ai-engineering-journey/laravel/07-api-development"
+2026-07-25T10:41:46.5249930Z   - "/ai-engineering-journey/laravel/08-broadcasting-realtime"
+2026-07-25T10:41:46.5250340Z   - "/ai-engineering-journey/laravel/09-container-packages"
+2026-07-25T10:41:46.5250752Z   - "/ai-engineering-journey/laravel/10-testing-observability"
+2026-07-25T10:41:46.5251155Z   - "/ai-engineering-journey/laravel/11-caching-performance"
+2026-07-25T10:41:46.5251533Z   - "/ai-engineering-journey/laravel/12-ai-sdk-agents"
+2026-07-25T10:41:46.5251903Z   - "/ai-engineering-journey/laravel/13-ai-sdk-tools"
+2026-07-25T10:41:46.5252419Z   - "/ai-engineering-journey/laravel/14-ai-sdk-media"
+2026-07-25T10:41:46.5252771Z   - "/ai-engineering-journey/laravel/15-mcp"
+2026-07-25T10:41:46.5253122Z   - "/ai-engineering-journey/laravel/16-search-rag"
+2026-07-25T10:41:46.5253470Z   - "/ai-engineering-journey/laravel/17-boost"
+2026-07-25T10:41:46.5253853Z   - "/ai-engineering-journey/laravel/18-automation-patterns"
+2026-07-25T10:41:46.5254273Z   - "/ai-engineering-journey/laravel/19-architecture-patterns"
+2026-07-25T10:41:46.5254676Z   - "/ai-engineering-journey/laravel/20-scaling-laravel"
+2026-07-25T10:41:46.5255064Z   - "/ai-engineering-journey/laravel/21-system-design-scale"
+2026-07-25T10:41:46.5255468Z   - "/ai-engineering-journey/laravel/22-case-study-ecommerce"
+2026-07-25T10:41:46.5255880Z   - "/ai-engineering-journey/laravel/23-case-study-ai-content"
+2026-07-25T10:41:46.5256258Z   - "/ai-engineering-journey/laravel/24-capstone"
+2026-07-25T10:41:46.5256630Z   - "/ai-engineering-journey/laravel/25-multi-agent-systems"
+2026-07-25T10:41:46.5257063Z   - "/ai-engineering-journey/laravel/26-business-automation-agents"
+2026-07-25T10:41:46.5257477Z   - "/ai-engineering-journey/laravel/27-healthcare"
+2026-07-25T10:41:46.5257821Z   - "/ai-engineering-journey/laravel/28-finance"
+2026-07-25T10:41:46.5258167Z   - "/ai-engineering-journey/laravel/29-education"
+2026-07-25T10:41:46.5258514Z   - "/ai-engineering-journey/laravel/30-logistics"
+2026-07-25T10:41:46.5259075Z   - "/ai-engineering-journey/laravel/31-hr-recruitment"
+2026-07-25T10:41:46.5259430Z   - "/ai-engineering-journey/laravel/32-marketing"
+2026-07-25T10:41:46.5259795Z   - "/ai-engineering-journey/laravel/33-customer-service"
+2026-07-25T10:41:46.5260175Z   - "/ai-engineering-journey/laravel/34-real-estate"
+2026-07-25T10:41:46.5260515Z   - "/ai-engineering-journey/laravel/35-legal"
+2026-07-25T10:41:46.5260861Z   - "/ai-engineering-journey/laravel/36-manufacturing"
+2026-07-25T10:41:46.5261247Z   - "/ai-engineering-journey/laravel/37-enterprise-capstone"
+2026-07-25T10:41:46.5261651Z   - "/ai-engineering-journey/laravel/38-interview-general"
+2026-07-25T10:41:46.5262063Z   - "/ai-engineering-journey/laravel/39-interview-healthcare"
+2026-07-25T10:41:46.5262458Z   - "/ai-engineering-journey/laravel/40-interview-finance"
+2026-07-25T10:41:46.5262841Z   - "/ai-engineering-journey/laravel/41-interview-education"
+2026-07-25T10:41:46.5263228Z   - "/ai-engineering-journey/laravel/42-interview-logistics"
+2026-07-25T10:41:46.5263599Z   - "/ai-engineering-journey/laravel/43-interview-hr"
+2026-07-25T10:41:46.5263978Z   - "/ai-engineering-journey/laravel/44-interview-marketing"
+2026-07-25T10:41:46.5264401Z   - "/ai-engineering-journey/laravel/45-interview-customer-service"
+2026-07-25T10:41:46.5264838Z   - "/ai-engineering-journey/laravel/46-interview-real-estate"
+2026-07-25T10:41:46.5265252Z   - "/ai-engineering-journey/laravel/47-interview-legal"
+2026-07-25T10:41:46.5265666Z   - "/ai-engineering-journey/laravel/48-interview-manufacturing"
+2026-07-25T10:41:46.5266075Z   - "/ai-engineering-journey/laravel/49-interview-php"
+2026-07-25T10:41:46.5266438Z   - "/ai-engineering-journey/laravel/50-interview-mysql"
+2026-07-25T10:41:46.5266949Z   - "/ai-engineering-journey/laravel/51-interview-html"
+2026-07-25T10:41:46.5267318Z   - "/ai-engineering-journey/laravel/52-interview-css"
+2026-07-25T10:41:46.5267706Z   - "/ai-engineering-journey/laravel/53-interview-javascript"
+2026-07-25T10:41:46.5268105Z   - "/ai-engineering-journey/laravel/54-interview-ai-ml"
+2026-07-25T10:41:46.5268472Z   - "/ai-engineering-journey/laravel/ai-ml-fundamentals"
+2026-07-25T10:41:46.5268989Z   - "/ai-engineering-journey/laravel/css-basics"
+2026-07-25T10:41:46.5269137Z   - "/ai-engineering-journey/laravel/html-basics"
+2026-07-25T10:41:46.5269278Z   - "/ai-engineering-journey/laravel/index"
+2026-07-25T10:41:46.5269450Z   - "/ai-engineering-journey/laravel/javascript-basics"
+2026-07-25T10:41:46.5269605Z   - "/ai-engineering-journey/laravel/mysql-database"
+2026-07-25T10:41:46.5269754Z   - "/ai-engineering-journey/laravel/php-basics"
+2026-07-25T10:41:46.5270132Z   - "/ai-engineering-journey/learning-how-to-learn-practical/certificate"
+2026-07-25T10:41:46.5270423Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-01-your-learning-os"
+2026-07-25T10:41:46.5270707Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-02-the-30-day-sprint"
+2026-07-25T10:41:46.5270998Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-03-daily-workflow-energy"
+2026-07-25T10:41:46.5271378Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-04-active-recall-spaced-repetition"
+2026-07-25T10:41:46.5271667Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-05-deep-work-focus"
+2026-07-25T10:41:46.5271944Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-06-learning-from-code"
+2026-07-25T10:41:46.5272226Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-07-dsa-practice-system"
+2026-07-25T10:41:46.5272528Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-08-system-design-study-plan"
+2026-07-25T10:41:46.5272840Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-09-ai-ml-learning-strategy"
+2026-07-25T10:41:46.5273150Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-10-interview-prep-workflow"
+2026-07-25T10:41:46.5273467Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-11-tracking-course-correction"
+2026-07-25T10:41:46.5273792Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-12-building-in-public-teaching"
+2026-07-25T10:41:46.5274067Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-13-final-capstone"
+2026-07-25T10:41:46.5274315Z   - "/ai-engineering-journey/learning-how-to-learn-practical/ch-14-glossary"
+2026-07-25T10:41:46.5274533Z   - "/ai-engineering-journey/learning-how-to-learn-practical/index"
+2026-07-25T10:41:46.5274790Z   - "/ai-engineering-journey/learning-how-to-learn/archive-complete-reference"
+2026-07-25T10:41:46.5275050Z   - "/ai-engineering-journey/learning-how-to-learn/ch-01-how-your-brain-learns"
+2026-07-25T10:41:46.5275292Z   - "/ai-engineering-journey/learning-how-to-learn/ch-02-practice-mindset"
+2026-07-25T10:41:46.5275594Z   - "/ai-engineering-journey/learning-how-to-learn/ch-03-active-recall-spaced-repetition"
+2026-07-25T10:41:46.5275883Z   - "/ai-engineering-journey/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman"
+2026-07-25T10:41:46.5276110Z   - "/ai-engineering-journey/learning-how-to-learn/ch-05-memory-systems"
+2026-07-25T10:41:46.5276411Z   - "/ai-engineering-journey/learning-how-to-learn/ch-06-procrastination-habits-deep-work"
+2026-07-25T10:41:46.5276662Z   - "/ai-engineering-journey/learning-how-to-learn/ch-07-dsa-coding-interview"
+2026-07-25T10:41:46.5276894Z   - "/ai-engineering-journey/learning-how-to-learn/ch-08-gate-theory-prep"
+2026-07-25T10:41:46.5277180Z   - "/ai-engineering-journey/learning-how-to-learn/ch-09-framework-language-learning"
+2026-07-25T10:41:46.5277427Z   - "/ai-engineering-journey/learning-how-to-learn/ch-10-meta-learning-system"
+2026-07-25T10:41:46.5277600Z [INFO] Docusaurus version: 3.10.2
+2026-07-25T10:41:46.5277722Z Node version: v20.20.2
+2026-07-25T10:41:46.9713953Z   - "/ai-engineering-journey/learning-how-to-learn/ch-11-ai-assisted-learnin
+2026-07-25T10:41:46.9730308Z ##[error]Process completed with exit code 1.
+2026-07-25T10:41:46.9863764Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T10:41:46.9864993Z Post job cleanup.
+2026-07-25T10:41:47.0819900Z [command]/usr/bin/git version
+2026-07-25T10:41:47.0866242Z git version 2.54.0
+2026-07-25T10:41:47.0906785Z Temporarily overriding HOME='/home/runner/work/_temp/af2c9a82-6dd1-4d52-b40a-fe0ea7ba7c20' before making global git config changes
+2026-07-25T10:41:47.0908327Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-25T10:41:47.0912928Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-engineering-journey/ai-engineering-journey
+2026-07-25T10:41:47.0956479Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-25T10:41:47.1019567Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-25T10:41:47.1349275Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-25T10:41:47.1382977Z http.https://github.com/.extraheader
+2026-07-25T10:41:47.1395215Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-07-25T10:41:47.1434489Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-25T10:41:47.1727382Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-25T10:41:47.1773041Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-25T10:41:47.2246222Z Cleaning up orphan processes
+2026-07-25T10:41:47.2553897Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

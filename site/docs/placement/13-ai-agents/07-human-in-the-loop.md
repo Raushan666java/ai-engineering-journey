@@ -65,7 +65,7 @@ flowchart TD
     E --> G[Human Takes Over]
     C --> H[Collect Feedback]
     H --> I[Learn & Improve]
-```text
+```
 
 ## 7.1 HITL Patterns
 
@@ -128,7 +128,7 @@ policy = HITLPolicy(approval_threshold=0.7, escalation_threshold=0.4)
 print(policy.evaluate("send_email", 0.85, "low"))
 print(policy.evaluate("delete_record", 0.65, "high"))
 print(policy.evaluate("unknown_action", 0.3, "critical"))
-```text
+```
 
 ## 7.2 Approval Workflows
 
@@ -184,7 +184,7 @@ rid = gate.request_approval("req-1", "send_email", {"to": "user@example.com", "b
 print(f"Before: {gate.check_status(rid)}")
 gate.approve(rid)
 print(f"After approval: {gate.check_status(rid)}")
-```text
+```
 
 ### 7.2.2 Multi-Step Approval
 
@@ -223,7 +223,7 @@ msa = MultiStepApproval(required_approvers=2)
 req = msa.request("req-2", "delete_data", {"table": "users"})
 print(msa.approve("req-2", "manager-1"))
 print(msa.approve("req-2", "compliance-1"))
-```text
+```
 
 ### 7.2.3 Timeout-Based Approval
 
@@ -272,7 +272,7 @@ class TimeoutApproval:
 toa = TimeoutApproval(timeout_seconds=5, auto_approve=False)
 toa.submit("req-3", "update_settings", {"setting": "theme"})
 print(f"Immediately: {toa.check('req-3')}")
-```text
+```
 
 ## 7.3 Escalation Handling
 
@@ -331,7 +331,7 @@ def human_handoff(escalation: Dict) -> str:
 esc_mgr = EscalationManager(human_handoff)
 result = esc_mgr.escalate("agent-1", "Security concern detected", {"action": "delete_user"}, "tier3")
 print(f"Escalation result: {result['action']}")
-```text
+```
 
 ### 7.3.2 Confidence-Based Escalation
 
@@ -358,7 +358,7 @@ class ConfidenceEscalator:
 ce = ConfidenceEscalator(0.4)
 print(ce.check_and_escalate("complex question", {"confidence": 0.3}, esc_mgr))
 print(ce.check_and_escalate("simple question", {"confidence": 0.9}, esc_mgr))
-```text
+```
 
 ## 7.4 Feedback Collection
 
@@ -402,7 +402,7 @@ fc.collect("agent-1", "What is RAG?", "RAG is...", 5, "Great explanation!")
 fc.collect("agent-1", "Complex math", "I don't know", 2, "Not helpful")
 print(f"Average rating: {fc.get_average_rating('agent-1'):.2f}")
 print(f"Low-rated responses: {len(fc.get_low_rated(2))}")
-```text
+```
 
 ### 7.4.2 Preference Learning
 
@@ -438,7 +438,7 @@ pl = PreferenceLearner()
 pl.record_preference("user-1", "tone", "professional")
 pl.record_preference("user-1", "detail_level", "high")
 print(f"User preference: {pl.get_preference('user-1', 'tone')}")
-```text
+```
 
 ### 7.4.3 Corrections
 
@@ -475,7 +475,7 @@ ct = CorrectionTracker()
 ct.record_correction("agent-1", "Wrong fact", "Correct fact", "factual_error")
 ct.record_correction("agent-1", "Bad formatting", "Good formatting", "formatting")
 print(f"Common errors: {ct.get_common_corrections()}")
-```text
+```
 
 ## 7.5 Interrupt & Resume
 
@@ -527,7 +527,7 @@ interrupt.pause("wf-1", state, "Human review needed")
 print(f"Paused workflows: {len(interrupt.get_paused())}")
 resumed_state = interrupt.resume("wf-1", {"approved": True})
 print(f"Resumed state: {resumed_state}")
-```text
+```
 
 ### 7.5.2 Context Preservation
 
@@ -563,7 +563,7 @@ preserver.save_context("wf-1", {"step": 2, "messages": ["hello", "world"]})
 restored = preserver.restore_context("wf-1")
 print(f"Restored context: {restored}")
 print(f"Versions: {preserver.get_versions('wf-1')}")
-```text
+```
 
 ## 7.6 Design Patterns
 
@@ -604,7 +604,7 @@ class HITLPatternSelector:
 selector = HITLPatternSelector()
 patterns = selector.recommend("high", "medium", "critical")
 print(f"Recommended patterns: {[p for p in patterns]}")
-```text
+```
 
 ### 7.6.2 HITL Integration
 
@@ -638,7 +638,7 @@ class HITLIntegratedAgent:
 hitl_agent = HITLIntegratedAgent(gate, fc, interrupt)
 print(hitl_agent.process_with_hitl("High risk task", "high"))
 print(hitl_agent.process_with_hitl("Simple task", "low"))
-```text
+```
 
 ## Summary
 
@@ -903,270 +903,3 @@ Answer: B
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 13-ai-agents-langgraph. When would you choose one approach over another?
-2. Design a system that efficiently handles 13-ai-agents-langgraph at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 13-ai-agents-langgraph. What was your approach and what was the result?
-2. How would you explain 13-ai-agents-langgraph to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 13-ai-agents-langgraph integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 13-ai-agents-langgraph?
-
-#### NVIDIA Style
-1. How would you optimize 13-ai-agents-langgraph for GPU-accelerated computing?
-2. What parallel processing patterns apply to 13-ai-agents-langgraph?
-
-#### AI Startup Style
-1. How would you implement 13-ai-agents-langgraph in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 13-ai-agents-langgraph?
-
-### Resume Tips
-- **Technical Skills**: List 13-ai-agents-langgraph under relevant technical skills
-- **Project Description**: "Implemented 13-ai-agents-langgraph to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 13-ai-agents-langgraph in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 13-ai-agents-langgraph
-- [ ] Practice 3-5 problems related to 13-ai-agents-langgraph
-- [ ] Prepare 2 real-world examples of using 13-ai-agents-langgraph
-- [ ] Know the time/space complexity of common 13-ai-agents-langgraph operations
-- [ ] Have questions ready about how the company uses 13-ai-agents-langgraphguration.
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to AI Agents with LangGraph fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master human in the loop?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of human in the loop helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding human in the loop at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of human in the loop like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply human in the loop concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of human in the loop?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply human in the loop in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of AI Agents with LangGraph?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Prompt Engineering Notes
-
-- **Be Specific**: Clear, detailed prompts get better results
-- **Provide Examples**: Few-shot learning improves consistency
-- **Use Structured Output**: JSON, tables, or markdown for parsing
-- **Chain of Thought**: Break complex reasoning into steps
-- **Temperature Control**: Adjust creativity vs consistency
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering AI Agents with LangGraph, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

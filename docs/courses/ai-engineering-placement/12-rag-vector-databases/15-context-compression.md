@@ -124,7 +124,6 @@ class CompressionTradeOff:
         # Exponential decay: quality drops faster past 0.3 ratio
         return min(1.0, 1.0 - 0.05 * (1 / ratio - 1) ** 2)
 
-
 trade = CompressionTradeOff(original_tokens=8000)
 for row in trade.compute_trade_offs():
     quality = trade.estimated_quality(row["ratio"])
@@ -138,7 +137,7 @@ for row in trade.compute_trade_offs():
 # Ratio 0.3: 2400 tokens, $0.0360/query, est. quality=0.84
 # Ratio 0.2: 1600 tokens, $0.0240/query, est. quality=0.70
 # Ratio 0.1: 800 tokens, $0.0120/query, est. quality=0.40
-```text
+```
 
 ### Categories of Compression
 
@@ -166,14 +165,12 @@ import numpy as np
 from typing import List, Dict, Tuple
 from dataclasses import dataclass
 
-
 @dataclass
 class CompressedContext:
     tokens: List[str]
     token_ids: List[int]
     kept_mask: List[bool]
     compression_ratio: float
-
 
 class SimulatedPerplexityScorer:
     """Simulates per-token perplexity from a compressor model."""
@@ -195,7 +192,6 @@ class SimulatedPerplexityScorer:
                 base *= 0.3
             scores.append(base)
         return scores
-
 
 class LLMLinguaCompressor:
     """Task-aware token classifier based on LLMLingua paper."""
@@ -258,7 +254,6 @@ class LLMLinguaCompressor:
             compression_ratio=len(kept_tokens) / len(tokens) if tokens else 0.0,
         )
 
-
 # Simulate LLMLingua compression
 scorer = SimulatedPerplexityScorer(seed=42)
 compressor = LLMLinguaCompressor(scorer, base_threshold=0.8)
@@ -271,7 +266,7 @@ print(f"Original tokens: {len(context_tokens)}")
 print(f"Compressed tokens: {len(result.tokens)}")
 print(f"Compression ratio: {result.compression_ratio:.3f}")
 print(f"Kept: {' '.join(result.tokens)}")
-```text
+```
 
 ### 15.2.2 Dynamic Compression Ratio
 
@@ -306,13 +301,12 @@ class DynamicRatioController:
 
         return np.clip(ratio, self.min_ratio, self.max_ratio)
 
-
 controller = DynamicRatioController()
 print(f"Dynamic ratio (short ctx, high relevance): "
       f"{controller.compute_ratio(200, 5, [0.9, 0.8, 0.7]):.3f}")
 print(f"Dynamic ratio (long ctx, low relevance): "
       f"{controller.compute_ratio(8000, 15, [0.3, 0.2, 0.1]):.3f}")
-```text
+```
 
 ### 15.2.3 End-to-End LLMLingua Pipeline
 
@@ -352,7 +346,6 @@ class LLMLinguaPipeline:
             "latency_reduction_pct": round((1 - compressed_tokens / original_tokens) * 100, 1)
         }
 
-
 pipeline = LLMLinguaPipeline(compressor, controller)
 docs = [
     {"id": "d1", "text": "Paris is the capital and largest city of France."},
@@ -370,7 +363,7 @@ savings = pipeline.estimate_savings(
 print(f"Compression ratio: {result.compression_ratio:.3f}")
 print(f"Cost saved per query: ${savings['cost_saved']:.4f}")
 print(f"Latency reduction: {savings['latency_reduction_pct']}%")
-```text
+```
 
 ## 15.3 Selective Context
 
@@ -382,14 +375,12 @@ Selective context methods operate at the sentence or token level. They score eac
 import re
 from typing import List, Callable
 
-
 class SentenceSplitter:
     """Splits text into sentences using regex."""
 
     def split(self, text: str) -> List[str]:
         sentences = re.split(r'(?<=[.!?])\s+', text.strip())
         return [s.strip() for s in sentences if s.strip()]
-
 
 class SentenceScorer:
     """Assigns importance scores to sentences based on query relevance."""
@@ -408,7 +399,6 @@ class SentenceScorer:
             return 0.0
         overlap = len(query_terms & sent_terms)
         return overlap / len(query_terms)
-
 
 class SentenceFilter:
     """Filters sentences by importance threshold or count."""
@@ -448,7 +438,6 @@ class SentenceFilter:
                 break
         return selected
 
-
 splitter = SentenceSplitter()
 scorer = SentenceScorer()
 filter_engine = SentenceFilter(splitter, scorer)
@@ -465,7 +454,7 @@ print(f"Threshold filter: {filtered_threshold}")
 
 filtered_budget = filter_engine.filter_by_budget(text, query, max_tokens=15)
 print(f"Budget filter ({len(' '.join(filtered_budget).split())} tokens): {filtered_budget}")
-```text
+```
 
 ### 15.3.2 Token-Level Pruning
 
@@ -515,7 +504,6 @@ class TokenPruner:
 
         return [t for i, t in enumerate(tokens) if i in kept_indices]
 
-
 pruner = TokenPruner()
 tokens = "The capital of France is Paris and it is a beautiful city".split()
 query = "capital France Paris"
@@ -525,7 +513,7 @@ print(f"Importance pruned: {' '.join(pruned)}")
 
 positional = pruner.prune_by_position(tokens, keep_first=4, keep_last=3)
 print(f"Positional pruned: {' '.join(positional)}")
-```text
+```
 
 ### 15.3.3 Semantic Importance Scoring
 
@@ -553,7 +541,6 @@ class SemanticScorer:
         scored.sort(key=lambda x: x[1], reverse=True)
         return scored
 
-
 sem_scorer = SemanticScorer()
 sentences = [
     "Paris is the capital of France.",
@@ -565,7 +552,7 @@ query = "capital of France"
 ranked = sem_scorer.score_and_rank(sentences, query)
 for sent, score in ranked:
     print(f"  {score:.3f}: {sent}")
-```text
+```
 
 ## 15.4 Summary-Based Retrieval
 
@@ -622,7 +609,6 @@ Refined summary:"""
 
         return combined
 
-
 def mock_summarizer(prompt: str) -> str:
     """Simulate an LLM summarizer."""
     if "Refine" in prompt:
@@ -631,7 +617,6 @@ def mock_summarizer(prompt: str) -> str:
         # Extract a short mock summary from the prompt
         return "Paris is the capital of France. It is located in Western Europe."
     return "Summary of the document content."
-
 
 compressor = SummaryCompressor(mock_summarizer, max_summary_tokens=100)
 docs = [
@@ -649,7 +634,7 @@ print(f"Original: {original_tokens} tokens")
 print(f"Compressed: {compressed_tokens} tokens")
 print(f"Ratio: {compressed_tokens / original_tokens:.3f}")
 print(f"Combined summary: {combined}")
-```text
+```
 
 ### 15.4.2 Multi-Query Merging
 
@@ -696,13 +681,12 @@ Summaries:
 Merged summary:"""
         return self.summarizer(merge_prompt)
 
-
 merger = MultiQuerySummaryMerger(mock_summarizer)
 query_variants = merger.expand_queries("What is the capital of France?", 2)
 summaries = merger.retrieve_and_summarize(query_variants, docs)
 merged = merger.merge_summaries(summaries, "What is the capital of France?")
 print(f"Merged summary: {merged}")
-```text
+```
 
 ### 15.4.3 Hierarchical Summarization
 
@@ -745,11 +729,10 @@ class HierarchicalSummarizer:
 Concise answer:"""
         return self.summarizer(final_prompt)
 
-
 hierarchical = HierarchicalSummarizer(mock_summarizer)
 result = hierarchical.compress("What is the capital of France?", docs)
 print(f"Hierarchical result: {result}")
-```text
+```
 
 ## 15.5 Extractive Compression
 
@@ -825,7 +808,6 @@ class BudgetSelector:
 
         return selected, coverage
 
-
 budget_selector = BudgetSelector(scorer)
 sentences = [
     "Paris is the capital of France.",
@@ -841,7 +823,7 @@ selected, coverage = budget_selector.greedy_select(
 )
 print(f"Greedy selection ({len(' '.join(selected).split())} tokens): {selected}")
 print(f"Coverage: {coverage:.3f}")
-```text
+```
 
 ### 15.5.2 Max Marginal Relevance (MMR)
 
@@ -908,7 +890,6 @@ class MMRSelector:
         selected.sort()
         return [sentences[i] for i in selected], mmr_scores
 
-
 mmr = MMRSelector(scorer, lambda_param=0.7)
 sentences = [
     "Paris is the capital of France.",
@@ -924,7 +905,7 @@ selected, scores = mmr.select(sentences, query, budget=25)
 print(f"MMR selected ({len(' '.join(selected).split())} tokens):")
 for s in selected:
     print(f"  - {s}")
-```text
+```
 
 ### 15.5.3 Extractive Compression Pipeline
 
@@ -972,7 +953,6 @@ class ExtractiveCompressionPipeline:
                                  if all_sentences[i] in selected],
         }
 
-
 extractive_pipeline = ExtractiveCompressionPipeline(
     splitter, scorer, mmr
 )
@@ -985,7 +965,7 @@ result = extractive_pipeline.compress(docs, "capital of France", max_tokens=30)
 print(f"Compressed ({result['ratio']:.2%} of original):")
 print(f"  {result['compressed_text']}")
 print(f"  Sentences: {result['num_sentences_original']} -> {result['num_sentences_selected']}")
-```text
+```
 
 ## 15.6 Evaluation of Compression
 
@@ -1078,7 +1058,6 @@ class CompressionEvaluator:
             "latency": self.latency_improvement(original_latency, compressed_latency),
         }
 
-
 evaluator = CompressionEvaluator()
 results = evaluator.evaluate_all(
     original_tokens=8000,
@@ -1093,7 +1072,7 @@ results = evaluator.evaluate_all(
 print("Evaluation Results:")
 for key, val in results.items():
     print(f"  {key}: {val}")
-```text
+```
 
 ### 15.6.2 Compression Benchmark
 
@@ -1149,12 +1128,10 @@ class CompressionBenchmark:
             "num_queries": len(self.test_queries),
         }
 
-
 def mock_extractive_compress(docs: List[Dict], query: str) -> Dict:
     """Mock extractive compression for benchmark demonstration."""
     selected = [d["text"] for d in docs[:2]]
     return {"compressed_text": " ".join(selected)}
-
 
 benchmark = CompressionBenchmark([
     {
@@ -1183,7 +1160,7 @@ print(f"Benchmark: {result['strategy']}")
 print(f"  Avg compression ratio: {result['avg_compression_ratio']}")
 print(f"  Avg preservation: {result['avg_preservation']}")
 print(f"  Avg faithfulness: {result['avg_faithfulness']}")
-```text
+```
 
 ### 15.6.3 Quality-Cost Trade-off Analysis
 
@@ -1226,13 +1203,12 @@ class TradeOffAnalyzer:
         return (f"Recommended: {best['name']} (ratio={best['ratio']}, "
                 f"quality={best['quality']}, cost=${best['cost_per_query']}/query)")
 
-
 analyzer = TradeOffAnalyzer(cost_per_1k_tokens=0.015)
 for s in analyzer.analyze_strategies():
     print(f"{s['name']:20s} | ratio={s['ratio']:.2f} | "
           f"quality={s['quality']:.2f} | ${s['cost_per_query']:.4f}/query")
 print(f"\n{analyzer.recommend(quality_threshold=0.9)}")
-```text
+```
 
 ## Summary
 
@@ -1456,243 +1432,319 @@ Answer: C
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Design a context compression system for a RAG pipeline handling 1000 queries per second. What compression strategy would you use and why? How would you evaluate it?
-2. Explain the time and space complexity of extractive compression with MMR. How does it scale to 100 retrieved documents with 500 sentences each?
+
+1. **Explain the core idea of Context Compression for RAG in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Context Compression for RAG.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
-1. Tell me about a time you optimized a system that was too slow or too expensive. How did you measure the improvement and what trade-offs did you make?
-2. How would you explain context compression to a non-technical product manager who is concerned about answer quality?
+
+4. **Describe a production bug caused by misunderstanding Context Compression for RAG. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Context Compression for RAG from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
-1. How does context compression integrate with enterprise RAG systems that require high accuracy on compliance-critical documents?
-2. What security considerations apply when using a third-party compressor model for context compression?
+
+6. **Compare Context Compression for RAG with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Context Compression for RAG.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
-1. How would you optimize LLMLingua-style token classification for GPU-accelerated inference? What batching strategies would you use?
-2. What parallel processing patterns apply to summary-based compression when compressing 50+ documents per query?
+
+8. **How does Context Compression for RAG behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Context Compression for RAG run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
-1. How would you implement context compression cost-effectively for a startup RAG product with limited GPU budget?
-2. What's the fastest way to prototype and A/B test a compression strategy for a new RAG feature?
+
+10. **Write the smallest possible implementation of Context Compression for RAG that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
-- **Technical Skills**: List "Context Compression, LLMLingua, MMR, Token Classification, RAG Optimization" under relevant technical skills
-- **Project Description**: "Implemented context compression for RAG pipeline using LLMLingua and MMR, reducing token usage by 65% while maintaining 94% answer preservation rate"
-- **Keywords**: Include "context compression, token pruning, extractive summarization, RAG optimization, cost reduction, latency optimization" in your skills section for ATS optimization
+
+- Name Context Compression for RAG explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Context Compression for RAG").
+- Add a bullet describing a project that applies Context Compression for RAG to real data, with numbers.
+- Mention the tools and libraries you used alongside Context Compression for RAG (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
 
 ### Interview Day Checklist
-- [ ] Review compression ratio formula and trade-offs
-- [ ] Practice explaining LLMLingua, MMR, and summary-based compression
-- [ ] Prepare 2 real-world examples of compression in production RAG
-- [ ] Know when to use each compression strategy and the trade-offs
-- [ ] Have questions ready about how the company handles RAG cost and latency
+
+- Rehearse a 60-second explanation of Context Compression for RAG and one real-world analogy.
+- Prepare one STAR story about debugging a Context Compression for RAG-related production issue.
+- Review complexity and edge cases for the classic Context Compression for RAG interview problem.
+- Have questions ready: how does the team apply Context Compression for RAG in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
+
+## True/False
+
+1. **True or False:** Context Compression for RAG builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Context Compression for RAG before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Context Compression for RAG is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Context Compression for RAG in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Context Compression for RAG chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Context Compression for RAG is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Context Compression for RAG is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Context Compression for RAG is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Context Compression for RAG issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Context Compression for RAG in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Context Compression for RAG that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Context Compression for RAG is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Context Compression for RAG in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Context Compression for RAG and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Context Compression for RAG on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
-**Level**: Advanced
-**Estimated Study Time**: 60-75 minutes
-**Prerequisites**: Complete understanding of RAG pipeline, transformers, and LLM inference
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Context Compression for RAG to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
 
 ## Tips & Tricks
 
-**Tip**: Start with extractive MMR compression — it is the safest option that preserves verbatim facts.
-
-**Tip**: Profile your actual context lengths before choosing a strategy. A system retrieving 5 short documents may not need compression.
-
-**Tip**: Use dynamic compression ratio to adapt to each query's complexity. Simple queries can be compressed more aggressively.
-
-**Pro Tip**: Combine multiple strategies in a cascade: extractive MMR for sentence selection, then LLMLingua for token-level pruning within selected sentences.
-
-**Pro Tip**: Always measure answer preservation rate on your specific domain. Compression that works on Wikipedia may fail on legal or medical text.
+- Always write a one-line example of Context Compression for RAG from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Context Compression for RAG when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Context Compression for RAG twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Context Compression for RAG snippets; interviewers love original examples.
 
 ## Memory Tricks
 
-- **CRaFT**: Compression = Cost, Ratio, Faithfulness, Tokens — four dimensions to track
-- **LLMLingua**: "Loud tokens stay, quiet tokens go" — high perplexity (surprising) tokens are kept
-- **MMR**: "Don't say the same thing twice" — λ balances relevance vs diversity
-- **Ratio recall**: 0.3 ratio = 70% reduction = 3.3x compression factor
+- **Acronym**: build a mnemonic from the 5 key concepts of Context Compression for RAG listed in the Chapter at a Glance table.
+- **Story**: link Context Compression for RAG to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Context Compression for RAG by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Context Compression for RAG to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
-- "LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models" (Jiang et al., 2023)
-- "Selective Context: Making the Most of Context in LLM Generation" (Li et al., 2023)
-- "Lost in the Middle: How Language Models Use Long Contexts" (Liu et al., 2023)
-- "Maximal Marginal Relevance for Multi-Document Summarization" (Carbonell & Goldstein, 1998)
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Context Compression for RAG
+- The classic textbook chapter on Context Compression for RAG (check the Research References below)
+- Two blog posts from engineers who debugged real Context Compression for RAG problems in production
+- The repository of the open-source project that implements Context Compression for RAG
 
 ## Related Topics
 
-- How compression connects to RAG evaluation metrics (faithfulness, relevance)
-- Prerequisites for agent-based compression and adaptive retrieval
-- Real-world applications in enterprise document QA and legal review
-- Interview questions that test understanding of cost-quality trade-offs
+- The previous chapter in this module (see table of contents) â€” foundational for Context Compression for RAG
+- The next chapter (see Next Topic below) â€” builds on Context Compression for RAG
+- The system design chapters in Module 07 â€” how Context Compression for RAG fits into production architectures
+- The interview preparation module â€” how Context Compression for RAG is asked in screening rounds
+- The capstone project â€” where Context Compression for RAG is applied end-to-end
 
 ## FAQs
 
-**Q: How much can I compress before losing answer quality?**
-A: Most systems maintain 90%+ accuracy at 0.3-0.5 compression ratio. Below 0.3, quality drops faster.
-
-**Q: Does compression work for all types of queries?**
-A: No. Factual QA compresses well. Multi-step reasoning, numerical analysis, and tasks needing fine detail require conservative compression.
-
-**Q: Do I need a GPU for compression?**
-A: Extractive compression needs no GPU. LLMLingua benefits from GPU for the compressor model. Summary-based needs GPU/API for the summarizer.
-
-**Q: How much latency does compression add?**
-A: Extractive MMR adds 5-20ms. LLMLingua adds 20-100ms. Summary-based adds 500-3000ms for summarization. Net latency usually decreases because the LLM generates faster on shorter input.
+1. **Do I need to memorize all of Context Compression for RAG, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Context Compression for RAG asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-> **Note**: Context compression is a cost optimization, not a free lunch. Every compression strategy trades some answer quality for token savings.
-
-> **Note**: The lost-in-the-middle problem means compression can sometimes improve answer quality by removing distracting irrelevant content.
-
-> **Note**: Always measure answer preservation on your specific domain before deploying compression to production.
-
-> **Note**: Compression strategies compose well. Use cascade approaches for the best results.
+- Context Compression for RAG is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Context Compression for RAG.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
 
 ## Historical Context
 
-Context compression emerged as a practical necessity in 2023 when LLM API costs became a major bottleneck for RAG deployments. The LLMLingua paper (September 2023) introduced task-aware prompt compression using smaller models. Selective context and MMR-based compression adapted summarization techniques from the 1990s and 2000s to the RAG setting. The field is rapidly evolving, with learned compression (training small models specifically for token pruning) and adaptive retrieval (deciding whether to retrieve at all) representing the cutting edge.
-
-## Coding Standards
-
-- Use dataclasses for structured compression results
-- Implement scorer classes with clear interfaces for testability
-- Keep compression functions pure (no side effects) for benchmarking
-- Document the expected compression ratio and quality trade-offs
-- Use NumPy for efficient score computation when processing many sentences
-
-**Best Practice**: Follow PEP 8 for Python code. Use type hints for all compression functions to improve readability.
+- Context Compression for RAG emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Context Compression for RAG today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Context Compression for RAG â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Context Compression for RAG changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
 
-- **Input Validation**: Ensure compression doesn't strip security-critical content (PII, legal disclaimers)
-- **Data Integrity**: Extractive compression is safer than summary-based because it doesn't modify text
-- **Model Access**: If using a cloud compressor model, ensure data doesn't leave your security boundary
-- **Audit Trail**: Log compression decisions to debug quality issues in production
+- Never trust external input: validate and sanitize data before processing Context Compression for RAG.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
 
 ## ML Intuition
 
-Compression is about signal extraction. The retriever provides a noisy signal (documents that may or may not be relevant). The compressor filters the noise to leave only the signal. Think of it like a radio tuner — a weak signal needs less filtering, a strong signal with lots of static needs aggressive filtering. The compressor model (in LLMLingua) acts as a learned filter, while MMR acts as a diversity-aware filter.
+- Context Compression for RAG appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Context Compression for RAG helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Context Compression for RAG concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Context Compression for RAG skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Context Compression for RAG to a dataset of 10 million records? â€” Batching and vectorization.
 
 ## Analogies
 
-Think of context compression like packing a suitcase. Extractive MMR is like carefully choosing which items to bring — you pick the most important ones and avoid duplicates (don't pack two identical shirts). LLMLingua is like cutting the tags off your clothes to save space — you keep the useful part and remove the extra material. Summary-based compression is like writing a packing list instead of bringing the actual items — it takes less space but you lose the original items. The cascade approach is like choosing your best items first, then trimming tags for extra space.
+- **Context Compression for RAG is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-**Project**: Build a production-ready context compression module for a RAG-based QA system
-**Goal**: Implement 3 compression strategies (extractive MMR, LLMLingua-style, summary-based) and benchmark them
-**Duration**: 4-6 hours
-**Outcome**: Working compression module with evaluation dashboard showing trade-offs
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Context Compression for RAG skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
-**Card 1**: What is the compression ratio formula?
-**Answer**: compressed_tokens / original_tokens (0.5 = 50% of original)
+<details class="tp-qa-card" data-qid="12ragvectordatabases-15contextcompression-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the core concept of Context Compression for RAG in one sentence?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+  </div>
+</details>
 
-**Card 2**: What does LLMLingua keep?
-**Answer**: Tokens with highest perplexity from the compressor model
+<details class="tp-qa-card" data-qid="12ragvectordatabases-15contextcompression-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the most common mistake engineers make with 
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Common Mistakes section of this chapter.</p>
+  </div>
+</details>
 
-**Card 3**: What does MMR balance?
-**Answer**: Relevance to query vs diversity from already-selected sentences
+<details class="tp-qa-card" data-qid="12ragvectordatabases-15contextcompression-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the time and space complexity of the standard Context Compression for RAG approach?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Refer to the theory and complexity analysis in this chapter.</p>
+  </div>
+</details>
 
-**Card 4**: Name 3 compression evaluation metrics.
-**Answer**: Compression ratio, answer preservation rate, faithfulness
+<details class="tp-qa-card" data-qid="12ragvectordatabases-15contextcompression-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    When is Context Compression for RAG NOT the right choice?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Limitations section of this chapter.</p>
+  </div>
+</details>
 
-## Study Plan
-
-**Day 1**: Read theory, understand compression ratios and trade-offs (20 minutes)
-**Day 2**: Implement LLMLingua and extractive MMR compression (25 minutes)
-**Day 3**: Build evaluation benchmark and compare strategies (15 minutes)
+<details class="tp-qa-card" data-qid="12ragvectordatabases-15contextcompression-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How is Context Compression for RAG applied in a real production system?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Real-World Examples section of this chapter.</p>
+  </div>
+</details>
 
 ## Research References
 
-- Jiang et al. (2023). "LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models." arXiv:2310.05736
-- Li et al. (2023). "Selective Context: Making the Most of Context in LLM Generation."
-- Carbonell & Goldstein (1998). "The Use of MMR for Multi-Document Summarization." SIGIR.
-- Liu et al. (2023). "Lost in the Middle: How Language Models Use Long Contexts."
+- Official documentation of the primary library for Context Compression for RAG (linked in Further Reading)
+- The classic paper or textbook chapter introducing Context Compression for RAG (see References below)
+- The standard library reference for Context Compression for RAG-related functions
+- Engineering blog posts from companies running Context Compression for RAG in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
 
 ## Open-Source Tools
 
-- **LLMLingua**: Official implementation of prompt compression (github.com/microsoft/LLMLingua)
-- **LangChain**: Document compressors module with built-in compression support
-- **LlamaIndex**: Node parsers and metadata filters for selective context
-- **Hugging Face Transformers**: Small models for perplexity-based compression
-- **spaCy**: Sentence segmentation for extractive compression pipelines
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Context Compression for RAG code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Context Compression for RAG
 
 ## Debugging Guide
 
-**Common Issues**:
-- Compression ratio too low → quality degrades — check your threshold or budget
-- MMR selecting few sentences → λ is too low — increase toward 1.0
-- LLMLingua dropping important tokens → compressor model is too small — try a larger model
-- Summary-based compression hallucinating → reduce summarization temperature
-
-**Debugging Steps**:
-1. Log original and compressed context for a failing query
-2. Verify the answer is present in the compressed context (term-level check)
-3. Check compression ratio — if below 0.2, quality loss is expected
-4. Compare compressed vs uncompressed answer side by side
+- Start with `print()` or a debugger to inspect intermediate values in Context Compression for RAG code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Context Compression for RAG example code.
 
 ## Mock Interview Section
 
-**Quick Fire Questions**:
-1. What is a compression ratio and what is a good target?
-2. How does MMR prevent redundancy?
-3. When would you NOT use context compression?
-4. What's the difference between LLMLingua and summary-based compression?
-5. How do you measure answer preservation rate?
+**Round 1 â€” Screening (15 min)**
+- Explain Context Compression for RAG in 60 seconds.
+- Write a minimal working example of Context Compression for RAG.
+- What is the complexity of your example?
 
-**Follow-up Questions**:
-- How would you optimize compression for a legal document QA system?
-- What monitoring would you add to detect compression-induced quality loss?
-- How would you handle queries where compression consistently hurts accuracy?
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
 
-## References
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Context Compression for RAG problem in a project.
+- How would you design a system where Context Compression for RAG is used at scale?
+- What metrics would you monitor?
 
-- "LLMLingua" paper (arXiv:2310.05736)
-- "Lost in the Middle" paper (Liu et al., 2023)
-- LangChain documentation on document compression
-- LlamaIndex documentation on node postprocessing
-- OpenAI API pricing documentation for cost modeling
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
 
-## Prompt Engineering Notes
+## Optimized Implementation
 
-- **Query-aware compression**: Include the query in the compression prompt to guide token/sentence selection
-- **Summarization prompts**: Use "focus only on information relevant to" to constrain summaries
-- **Refinement prompts**: "Refine to be more concise while keeping all information needed"
-- **Temperature control**: Use low temperature (0.0-0.3) for extractive tasks, higher for summarization
-- **Structured output**: Request JSON from compressors for easier parsing of results
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Context Compression for RAG.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Context Compression for RAG logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 
-**Compression Metrics**:
-- Compression ratio (0.2-0.5 is typical)
-- Compression factor (2x-5x)
-- Token savings percentage
-
-**Quality Metrics**:
-- Answer preservation rate (>90% target)
-- Faithfulness score (>0.85 target)
-- F1 score on ground truth answers
-
-**Performance Metrics**:
-- End-to-end latency (ms)
-- Cost per query ($)
-- Latency reduction percentage
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Context Compression for RAG without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
 
 ## Real-World Examples
 
-- **Legal document QA**: Extractive MMR compression preserves verbatim legal language critical for accuracy
-- **Customer support RAG**: Summary-based compression reduces costs by 70% for high-volume support queries
-- **Medical research assistant**: Cascade MMR + LLMLingua achieves 3x compression with 96% answer preservation
-- **Code documentation search**: Token-level pruning removes code comments while keeping function signatures
+- **Startup**: a small team uses Context Compression for RAG daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Context Compression for RAG patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Context Compression for RAG principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Context Compression for RAG shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Context Compression for RAG to the business outcome, not just the code.
 
 ## Next Topic
 
-After mastering context compression, continue to Module 13 (Fine-Tuning & Alignment) to learn how to fine-tune models for your specific RAG domain and compress even more effectively.
+[Hybrid Search Architecture](16-hybrid-search-architecture.md)
 
 ## Limitations
 
-Context compression is not a silver bullet. Aggressive compression (ratio < 0.2) reliably degrades answer quality. Summary-based compression can introduce hallucinations. LLMLingua adds an extra model forward pass, increasing infrastructure complexity. No single compression strategy works optimally across all domains — you must evaluate on your specific data.
+- Context Compression for RAG, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Context Compression for RAG depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

@@ -323,7 +323,7 @@ class FeatureStore {
         return snapshot
     }
 }
-```text
+```
 
 
 ### Recommendation Pipeline Simulator
@@ -392,7 +392,7 @@ class RecommendationSystem {
         return this.rerank(userId, candidates, topK)
     }
 }
-```text
+```
 
 
 ### A/B Test Calculator
@@ -445,7 +445,7 @@ class ABTestCalculator {
         return 0.5 * (1 + sign * y)
     }
 }
-```text
+```
 
 
 ### Model Serving Platform
@@ -515,7 +515,7 @@ class ModelServingPlatform {
         workers.push(newWorker)
     }
 }
-```text
+```
 
 
 
@@ -544,7 +544,7 @@ flowchart TD
     B --> C[Output]
     C --> D[Feedback Loop]
     D --> B
-```text
+```
 
 ## Visual Analogy
 
@@ -556,14 +556,6 @@ Think of ml system design interview like a **delivery system**:
 - **Feedback** = Delivery confirmation and tracking
 
 This analogy helps because ml system design interview, like a delivery system, involves transforming inputs into outputs efficiently while handling constraints and edge cases.
-
-## Exercises
-
-**Easy** — Implement a basic ml system design interview example that demonstrates the core concept.
-
-**Medium** — Create a more complex implementation that handles edge cases.
-
-**Hard** — Design an optimized solution for large-scale ml system design interview scenarios.
 
 ## Summary
 
@@ -618,6 +610,14 @@ ML system design interviews test your ability to architect end-to-end systems th
    // correct: B
 
 #
+
+## Exercises
+
+**Easy** — Implement a basic ml system design interview example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale ml system design interview scenarios.
 
 ## Common Mistakes
 

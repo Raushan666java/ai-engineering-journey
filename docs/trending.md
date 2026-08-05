@@ -1,158 +1,182 @@
 ---
 hide:
   - toc
-description: "Live trending AI repositories, frameworks, tools, and tech news — auto-updated daily."
+description: "Live trending AI repositories, frameworks, tools, and breaking tech news — auto-updated daily via GitHub API and curated feeds."
 ---
 
 # Trending in AI Engineering
 
-<small>Auto-updated daily via GitHub API. <span id="trending-updated">Loading...</span>&lt;/small&gt;
+<small>Auto-updated daily via GitHub API. <span id="trending-updated">Loading...</span></small>
 
 ---
 
 <div id="trending-root">
 
 <!-- ==================== SECTION 1: MOST STARRED ==================== -->
-<h2>Most Starred Repos <small>— All Languages, Last 7 Days&lt;/small&gt;</h2>
+<h2>Most Starred Repos <small>— All Languages, Last 7 Days</small></h2>
 <div id="section-most-starred" class="trending-section">
     <div class="trending-loading">Loading most starred repos...</div>
 </div>
 
 <!-- ==================== SECTION 2: BY LANGUAGE ==================== -->
-<h2>Trending by Language&lt;/h2&gt;
+<h2>Trending by Language</h2>
 <div class="trending-tabs">
-    <button class="trending-tab active" data-lang="python">Python&lt;/button&gt;
-    <button class="trending-tab" data-lang="typescript">TypeScript&lt;/button&gt;
-    <button class="trending-tab" data-lang="javascript">JavaScript&lt;/button&gt;
-    <button class="trending-tab" data-lang="rust">Rust&lt;/button&gt;
-    <button class="trending-tab" data-lang="go">Go&lt;/button&gt;
-    <button class="trending-tab" data-lang="swift">Swift&lt;/button&gt;
-    <button class="trending-tab" data-lang="java">Java&lt;/button&gt;
-    <button class="trending-tab" data-lang="kotlin">Kotlin&lt;/button&gt;
+    <button class="trending-tab active" data-lang="python">Python</button>
+    <button class="trending-tab" data-lang="typescript">TypeScript</button>
+    <button class="trending-tab" data-lang="javascript">JavaScript</button>
+    <button class="trending-tab" data-lang="rust">Rust</button>
+    <button class="trending-tab" data-lang="go">Go</button>
+    <button class="trending-tab" data-lang="swift">Swift</button>
+    <button class="trending-tab" data-lang="java">Java</button>
+    <button class="trending-tab" data-lang="kotlin">Kotlin</button>
 </div>
 <div id="section-by-language" class="trending-section">
-    <div class="trending-loading">Loading repos for <strong>Python&lt;/strong&gt;...</div>
+    <div class="trending-loading">Loading repos for <strong>Python</strong>...</div>
 </div>
 
 <!-- ==================== SECTION 3: AI/ML SPECIFIC ==================== -->
-<h2>AI / ML Repos <small>— Trending This Week&lt;/small&gt;</h2>
+<h2>AI / ML Repos <small>— Trending This Week</small></h2>
 <div id="section-aiml" class="trending-section">
     <div class="trending-loading">Loading AI repositories...</div>
 </div>
 
 <!-- ==================== SECTION 4: FRAMEWORKS ==================== -->
-<h2>Framework & Tool Releases <small>— Recent & Notable&lt;/small&gt;</h2>
+<h2>Framework & Tool Releases <small>— Recent & Notable</small></h2>
 <div id="section-frameworks" class="trending-section">
     <div class="trending-card-grid framework-grid">
         <div class="trending-card">
-            <div class="card-title">LangGraph&lt;/div&gt;
-            <div class="card-subtitle">Stateful agent orchestration&lt;/div&gt;
+            <div class="card-title">LangGraph</div>
+            <div class="card-subtitle">Stateful multi-actor agent orchestration with cycles, persistence, and human-in-the-loop control</div>
             <div class="card-links">
-                <a href="https://langchain-ai.github.io/langgraph/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/langchain-ai/langgraph" target="_blank">GitHub&lt;/a>
+                <a href="https://langchain-ai.github.io/langgraph/" target="_blank">Docs</a>
+                <a href="https://github.com/langchain-ai/langgraph" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">CrewAI&lt;/div&gt;
-            <div class="card-subtitle">Multi-agent role-based framework&lt;/div&gt;
+            <div class="card-title">CrewAI</div>
+            <div class="card-subtitle">Role-based multi-agent framework for autonomous task orchestration and collaboration</div>
             <div class="card-links">
-                <a href="https://docs.crewai.com/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/crewAIInc/crewAI" target="_blank">GitHub&lt;/a>
+                <a href="https://docs.crewai.com/" target="_blank">Docs</a>
+                <a href="https://github.com/crewAIInc/crewAI" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">MCP (Model Context Protocol)&lt;/div&gt;
-            <div class="card-subtitle">Anthropic's tool/server protocol&lt;/div&gt;
+            <div class="card-title">MCP (Model Context Protocol)</div>
+            <div class="card-subtitle">Anthropic's open standard for connecting AI models to external tools, data sources, and services</div>
             <div class="card-links">
-                <a href="https://modelcontextprotocol.io/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/modelcontextprotocol" target="_blank">GitHub&lt;/a>
+                <a href="https://modelcontextprotocol.io/" target="_blank">Docs</a>
+                <a href="https://github.com/modelcontextprotocol" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">FastAPI&lt;/div&gt;
-            <div class="card-subtitle">Modern Python web framework&lt;/div&gt;
+            <div class="card-title">FastAPI</div>
+            <div class="card-subtitle">High-performance Python web framework with automatic OpenAPI docs and async-first design</div>
             <div class="card-links">
-                <a href="https://fastapi.tiangolo.com/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/fastapi/fastapi" target="_blank">GitHub&lt;/a>
+                <a href="https://fastapi.tiangolo.com/" target="_blank">Docs</a>
+                <a href="https://github.com/fastapi/fastapi" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">ChromaDB&lt;/div&gt;
-            <div class="card-subtitle">Vector database for RAG&lt;/div&gt;
+            <div class="card-title">ChromaDB</div>
+            <div class="card-subtitle">Open-source AI-native embedding database for building RAG applications with vector search</div>
             <div class="card-links">
-                <a href="https://docs.trychroma.com/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/chroma-core/chroma" target="_blank">GitHub&lt;/a>
+                <a href="https://docs.trychroma.com/" target="_blank">Docs</a>
+                <a href="https://github.com/chroma-core/chroma" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">n8n&lt;/div&gt;
-            <div class="card-subtitle">Workflow automation with AI&lt;/div&gt;
+            <div class="card-title">n8n</div>
+            <div class="card-subtitle">Fair-code workflow automation platform with 400+ integrations and native AI agent capabilities</div>
             <div class="card-links">
-                <a href="https://docs.n8n.io/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/n8n-io/n8n" target="_blank">GitHub&lt;/a>
+                <a href="https://docs.n8n.io/" target="_blank">Docs</a>
+                <a href="https://github.com/n8n-io/n8n" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">OpenAI Agents SDK&lt;/div&gt;
-            <div class="card-subtitle">Official agent runtime&lt;/div&gt;
+            <div class="card-title">OpenAI Agents SDK</div>
+            <div class="card-subtitle">Official lightweight runtime for building agentic AI applications with tool use and handoffs</div>
             <div class="card-links">
-                <a href="https://openai.github.io/openai-agents-python/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/openai/openai-agents-python" target="_blank">GitHub&lt;/a>
+                <a href="https://openai.github.io/openai-agents-python/" target="_blank">Docs</a>
+                <a href="https://github.com/openai/openai-agents-python" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">LangChain&lt;/div&gt;
-            <div class="card-subtitle">LLM application framework&lt;/div&gt;
+            <div class="card-title">LangChain</div>
+            <div class="card-subtitle">Framework for developing context-aware, reasoning LLM applications with composable chains</div>
             <div class="card-links">
-                <a href="https://python.langchain.com/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/langchain-ai/langchain" target="_blank">GitHub&lt;/a>
+                <a href="https://python.langchain.com/" target="_blank">Docs</a>
+                <a href="https://github.com/langchain-ai/langchain" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="trending-card">
-            <div class="card-title">Ollama&lt;/div&gt;
-            <div class="card-subtitle">Local LLM runner&lt;/div&gt;
+            <div class="card-title">Ollama</div>
+            <div class="card-subtitle">Run open-source LLMs locally — Llama 3, Mistral, Gemma, Phi and more with one command</div>
             <div class="card-links">
-                <a href="https://ollama.ai/" target="_blank">Docs&lt;/a>
-                <a href="https://github.com/ollama/ollama" target="_blank">GitHub&lt;/a>
+                <a href="https://ollama.ai/" target="_blank">Docs</a>
+                <a href="https://github.com/ollama/ollama" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="trending-card">
+            <div class="card-title">vLLM</div>
+            <div class="card-subtitle">High-throughput LLM serving engine with PagedAttention for 24x faster inference</div>
+            <div class="card-links">
+                <a href="https://docs.vllm.ai/" target="_blank">Docs</a>
+                <a href="https://github.com/vllm-project/vllm" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="trending-card">
+            <div class="card-title">LiteLLM</div>
+            <div class="card-subtitle">Unified API gateway — call 100+ LLM providers using the OpenAI format with load balancing</div>
+            <div class="card-links">
+                <a href="https://docs.litellm.ai/" target="_blank">Docs</a>
+                <a href="https://github.com/BerriAI/litellm" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="trending-card">
+            <div class="card-title">Instructor</div>
+            <div class="card-subtitle">Structured output extraction from LLMs using Pydantic validation and automatic retries</div>
+            <div class="card-links">
+                <a href="https://python.useinstructor.com/" target="_blank">Docs</a>
+                <a href="https://github.com/instructor-ai/instructor" target="_blank">GitHub</a>
             </div>
         </div>
     </div>
 </div>
 
 <!-- ==================== SECTION 5: TECH NEWS ==================== -->
-<h2>Tech News <small>— From DEV.to & Hacker News&lt;/small&gt;</h2>
+<h2>Tech News <small>— From DEV.to & Hacker News</small></h2>
 <div id="section-news" class="trending-section">
     <div class="trending-loading">Loading tech news...</div>
 </div>
 
 <!-- ==================== SECTION 6: TOPICS IN FOCUS ==================== -->
-<h2>Topics in Focus <small>— Curated Learning Paths&lt;/small&gt;</h2>
+<h2>Topics in Focus <small>— Curated Learning Paths</small></h2>
 <div class="trending-card-grid topic-grid">
     <a href="../docs/courses/ai-agent-engineer/00-index.md" class="trending-card">
-        <div class="card-title">AI Agent Engineer&lt;/div&gt;
-        <div class="card-subtitle">12-week transition curriculum. LangGraph, RAG, MCP, FastAPI.</div>
+        <div class="card-title">AI Agent Engineer</div>
+        <div class="card-subtitle">12-week transition curriculum — LangGraph, RAG, MCP, FastAPI. From zero to production agents.</div>
     </a>
     <a href="../docs/courses/java/58-interview-rest-api.md" class="trending-card">
-        <div class="card-title">REST API Interview Prep&lt;/div&gt;
-        <div class="card-subtitle">25 Q&As on REST, HATEOAS, OpenAPI, JWT, rate limiting.</div>
+        <div class="card-title">REST API Interview Prep</div>
+        <div class="card-subtitle">25 battle-tested Q&As — REST, HATEOAS, OpenAPI, JWT, rate limiting, pagination.</div>
     </a>
     <a href="../docs/courses/java/57-interview-spring.md" class="trending-card">
-        <div class="card-title">Spring Boot Interview Prep&lt;/div&gt;
-        <div class="card-subtitle">50 Q&As on DI/IoC, MVC, Security, AOP, Transactions.</div>
+        <div class="card-title">Spring Boot Interview Prep</div>
+        <div class="card-subtitle">50 expert Q&As — DI/IoC, MVC, Security, AOP, Transactions, Actuator.</div>
     </a>
     <a href="../docs/courses/java/56-interview-java.md" class="trending-card">
-        <div class="card-title">Java Interview Prep&lt;/div&gt;
-        <div class="card-subtitle">45 Q&As on OOP, Collections, Concurrency, JVM, Java 8+.</div>
+        <div class="card-title">Java Interview Prep</div>
+        <div class="card-subtitle">45 deep-dive Q&As — OOP, Collections, Concurrency, JVM internals, Java 17+.</div>
     </a>
     <a href="https://github.com/Raushan666java/ai-engineering-journey" class="trending-card">
-        <div class="card-title">Full Curriculum (GitHub)&lt;/div&gt;
-        <div class="card-subtitle">500+ lessons, 20 phases, all open-source.</div>
+        <div class="card-title">Full Curriculum (GitHub)</div>
+        <div class="card-subtitle">1,900+ lessons across 52+ courses, 20 phases — entirely open-source.</div>
     </a>
 </div>
 
 </div>
 
-<script src="assets/js/trending.js">&lt;/script&gt;
+<script src="assets/js/trending.js"></script>
 
 <style>
 .trending-loading {

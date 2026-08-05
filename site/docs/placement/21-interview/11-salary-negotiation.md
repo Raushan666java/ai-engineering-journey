@@ -1,4 +1,4 @@
-﻿---
+---
 slug: /21-interview/salary-negotiation
 title: "Salary Negotiation"
 sidebar_label: "Salary Negotiation"
@@ -62,7 +62,7 @@ flowchart LR
     C --> D[Negotiation Tactics]
     D --> E[Competing Offers]
     E --> F[Benefits & Relocation]
-```text
+```
 
 ## 11.1 Market Research
 
@@ -122,7 +122,7 @@ result = estimate_market_range("Senior Backend Engineer", 6, "Seattle")
 print(f"{result['role']} ({result['yoe']} yrs, {result['location']})")
 print(f"Base salary range: ${result['low']:,} - ${result['high']:,}")
 print(f"Median: ${result['median']:,}")
-```text
+```
 
 **Company stage matters**: Early-stage startups (<50 employees) pay lower base but offer significant equity upside (4-year vest with 1-year cliff). Mid-stage ($10M-$100M funding) balance base and.
 equity. Public companies (FAANG, Microsoft) have the highest total comp with liquid RSUs. Late-stage pre-IPO (Stripe, Databricks, OpenAI) offer the highest risk/reward — equity at $0.01/share could 10x at IPO.
@@ -170,7 +170,7 @@ offer_b = calculate_total_comp(base=210000, bonus_pct=0.05, rsu_grant=80000, sig
 
 print("Offer A (Startup):", offer_a)
 print("\nOffer B (Public Co):", offer_b)
-```text
+```
 
 **Sign-on bonus**: One-time cash payment to accept the offer. Typical range: $10K-$50K for IC roles, $50K-$200K+ for senior/staff. Often repayable if you leave within 1 year (prorated clawback). Negotiate for this even if they say "no budget" — signing bonuses are often separate from comp bands.
 
@@ -222,7 +222,7 @@ timeline = model_comp_timeline(
 )
 for entry in timeline:
     print(f"Year {entry['Year']}: ${entry['Total']:,} (cum: ${entry['Cumulative']:,})")
-```text
+```
 
 **Refinancing risk**: If you leave before your RSUs fully cliff, you forfeit unvested shares. This is a real cost. A $400K grant over 4 years means you lose $100K/year of unvested compensation if you leave early. Model what happens if you stay 1 year, 2 years, 3 years.
 
@@ -271,7 +271,7 @@ print(f"Target: ${negotiation['target']:,}")
 print(f"Ask range: ${negotiation['initial_ask']:,} - ${negotiation['max_ask']:,}")
 print(f"Likely settlement: ${negotiation['likely_settlement']:,}")
 print(f"Gain vs initial offer: +${negotiation['delta']:,}/yr")
-```text
+```
 
 **The silence tactic**: After stating your number, stop talking. Don't fill the silence with justification. The next person to speak loses. Recruiters are trained to wait you out. Count to 10 in your head. If they still don't respond,.
 say "I'd love to make this work. Is there flexibility in the budget?"
@@ -343,7 +343,7 @@ competing = evaluate_competing_offers([
 ])
 for o in competing["offers"]:
     print(f"{o['name']}: ${o['tc']:,} (vs median: ${o['vs_median']:+}, vs max: ${o['vs_max']:+})")
-```text
+```
 
 **Exploding offers**: Some companies pressure you with short deadlines (48-72 hours). Don't panic. Say: "I need the full week to make this important decision. Can we extend the deadline?" If they refuse, consider whether you want to work at a company that applies high-pressure tactics.
 
@@ -411,7 +411,7 @@ benefits = {
 result = calculate_benefits_value(180000, benefits)
 for k, v in result.items():
     print(f"{k}: ${v:,}")
-```text
+```
 
 **Other benefits to ask about**: Stock purchase plans (ESPP) at 15% discount (typical max 10-15% of salary), parental leave (12-20 weeks vs minimal), sabbatical (every 4-5 years), professional development budget ($2K-$10K/year), gym/wellness stipend, commuter benefits, meal subsidies, and cell phone/internet reimbursement.
 
@@ -465,7 +465,7 @@ the root issues are fixed.
     </ul>
     <p>Once you have 10-15 data points, your market range is the 25th-75th percentile. Your negotiation target is the 60th-75th percentile for your level and location.</p>
     <pre><code># Market value calculator
-def market_value(data_points: list[float]) -> dict:
+def market_value(data_points: list[float]) -&gt; dict:
     import statistics
     data = sorted(data_points)
     n = len(data)
@@ -907,239 +907,3 @@ d) Only negotiating with companies that bracket their offers
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 21-interview-preparation. When would you choose one approach over another?
-2. Design a system that efficiently handles 21-interview-preparation at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 21-interview-preparation. What was your approach and what was the result?
-2. How would you explain 21-interview-preparation to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 21-interview-preparation integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 21-interview-preparation?
-
-#### NVIDIA Style
-1. How would you optimize 21-interview-preparation for GPU-accelerated computing?
-2. What parallel processing patterns apply to 21-interview-preparation?
-
-#### AI Startup Style
-1. How would you implement 21-interview-preparation in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 21-interview-preparation?
-
-### Resume Tips
-- **Technical Skills**: List 21-interview-preparation under relevant technical skills
-- **Project Description**: "Implemented 21-interview-preparation to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 21-interview-preparation in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 21-interview-preparation
-- [ ] Practice 3-5 problems related to 21-interview-preparation
-- [ ] Prepare 2 real-world examples of using 21-interview-preparation
-- [ ] Know the time/space complexity of common 21-interview-preparation operations
-- [ ] Have questions ready about how the company uses 21-interview-preparation> **Next**: [12 — Mock Interview Simulations →](12-mock-interview-simulations.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Interview Preparation fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master salary negotiation?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of salary negotiation helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding salary negotiation at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of salary negotiation like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply salary negotiation concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of salary negotiation?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply salary negotiation in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Interview Preparation, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

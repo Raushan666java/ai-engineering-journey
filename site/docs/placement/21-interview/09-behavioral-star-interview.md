@@ -66,7 +66,7 @@ flowchart LR
     E --> F[Ambition & Growth]
     F --> G[Technical Leadership]
     G --> H[Delivery & Practice]
-```text
+```
 
 ## 9.1 STAR Framework
 
@@ -115,7 +115,7 @@ def evaluate_star(answer: dict) -> dict:
     # Result: Are there metrics or impact?
     scores["result"] = any(c.isdigit() for c in answer.get("result", ""))
     return scores
-```text
+```
 
 **Golden rules**: Keep each story under 90 seconds. The Action section should be ~50 seconds. Use specific, quantifiable results. Prepare 8-10 stories that cover different competencies. Practice telling each story out loud until it flows naturally.
 
@@ -161,7 +161,7 @@ story_bank = {
         }
     },
 }
-```text
+```
 
 **Building your stories**: Use real experiences. If you don't have a perfect story, choose a close one and frame it appropriately. Practice transitioning between categories €” you might need to adapt a story for a different question.
 
@@ -213,7 +213,7 @@ mentoring_story = leadership_story(
         "Program adopted by 6 other teams across the company",
     }
 )
-```text
+```
 
 **Common leadership questions**:
 - "Tell me about a time you went above and beyond"
@@ -257,7 +257,7 @@ print(conflict_story(
     resolution="Instead of debating in meetings, I proposed a structured evaluation: we each built a prototype with realistic data (1M products) and benchmarked the 5 most critical queries. I led the evaluation with clear criteria (query performance, operational cost, learning curve). The PostgreSQL prototype was 3x faster for our access patterns and required 40% less infrastructure.",
     outcome="The team chose PostgreSQL based on data, not opinions. The engineer who preferred MongoDB appreciated the evidence-based approach. We delivered the project on schedule, and the database has performed well for 2 years serving 10M+ products.",
 ))
-```text
+```
 
 **Handling "Tell me about a conflict with a coworker"**:
 1. Choose a real conflict but de-escalate it in your answer
@@ -309,7 +309,7 @@ print(failure_story(
     change="I created a 'Database Change Playbook' with: (1) always benchmark migrations against production traffic patterns, (2) set up I/O and latency alerts during migrations, (3) have a rollback plan tested before starting. I presented this in a tech talk that was recorded and shared across the company.",
     impact="The playbook became the standard across the org (30+ teams). No similar migration incident occurred in the following 2 years. I was invited to the Database Infrastructure team's review board for all future large migrations.",
 ))
-```text
+```
 
 **Common failure questions**:
 - "Tell me about a time you failed"
@@ -359,7 +359,7 @@ print(career_goal_story(
     ],
     why_company="Your company's mission to democratize AI infrastructure aligns perfectly with my goal to work on systems that have broad impact. The scale of your ML platform (serving 100M+ predictions/day) is exactly the challenge I'm looking for to grow into a Staff Engineer role.",
 ))
-```text
+```
 
 **Answering "Why do you want to work here?"**:
 1. Research the company's products, culture, and recent news (2-3 specific points)
@@ -426,7 +426,7 @@ def code_review_principles() -> list[str]:
         "Praise good solutions explicitly",
         "Ask questions instead of making demands: 'What do you think about...' vs 'Change this to...'",
     ]
-```text
+```
 
 **Technical questions to prepare for**:
 - "Describe a system you designed and the tradeoffs you made"
@@ -511,7 +511,7 @@ practice_questions = [
     "Describe a time you had to learn a new technology quickly",
     "Where do you see yourself in 5 years?",
 ]
-```text
+```
 
 **Recording yourself**: Use your phone to record video answers. Watch the playback. Check for: filler words ("um", "uh", "like"), pacing, eye contact, body language, story structure clarity. Do this for 3-5 questions per practice session.
 
@@ -989,239 +989,3 @@ d) Say you don't like the work
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 21-interview-preparation. When would you choose one approach over another?
-2. Design a system that efficiently handles 21-interview-preparation at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 21-interview-preparation. What was your approach and what was the result?
-2. How would you explain 21-interview-preparation to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 21-interview-preparation integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 21-interview-preparation?
-
-#### NVIDIA Style
-1. How would you optimize 21-interview-preparation for GPU-accelerated computing?
-2. What parallel processing patterns apply to 21-interview-preparation?
-
-#### AI Startup Style
-1. How would you implement 21-interview-preparation in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 21-interview-preparation?
-
-### Resume Tips
-- **Technical Skills**: List 21-interview-preparation under relevant technical skills
-- **Project Description**: "Implemented 21-interview-preparation to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 21-interview-preparation in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 21-interview-preparation
-- [ ] Practice 3-5 problems related to 21-interview-preparation
-- [ ] Prepare 2 real-world examples of using 21-interview-preparation
-- [ ] Know the time/space complexity of common 21-interview-preparation operations
-- [ ] Have questions ready about how the company uses 21-interview-preparation> **Next**: [10 €” Resume & Portfolio Review †’](10-resume-and-portfolio-review.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Interview Preparation fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master behavioral star interview?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of behavioral star interview helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding behavioral star interview at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of behavioral star interview like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply behavioral star interview concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of behavioral star interview?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply behavioral star interview in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Interview Preparation, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

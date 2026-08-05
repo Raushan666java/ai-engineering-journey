@@ -1,4 +1,4 @@
-﻿---
+---
 slug: /03-dsa/time-and-space-complexity
 title: "Time And Space Complexity"
 sidebar_label: "Time And Space Complexity"
@@ -43,7 +43,7 @@ flowchart LR
     D --> E
     E --> F[Amortized Analysis]
     F --> G[Practice Problems]
-```text
+```
 
 
 ## Introduction
@@ -119,7 +119,7 @@ def quadratic(n):
 for n in [10, 100, 1000]:
     print(f"n={n}: O(1)={measure_time(constant, n):.6f}s, "
           f"O(n)={measure_time(linear, n):.6f}s")
-```text
+```
 
 **Growth rate hierarchy** (slowest to fastest):
 - O(1) � Constant
@@ -149,7 +149,7 @@ def get_first_element(arr):
 ## Constant time operations
 def swap(a, b):
     return b, a
-```text
+```
 
 **O(log n) � Logarithmic Time**: Input size halves each step. Binary search, balanced BST operations.
 
@@ -165,7 +165,7 @@ def binary_search(arr, target):
         else:
             right = mid - 1
     return -1
-```text
+```
 
 **O(n) � Linear Time**: Single pass through data. Linear search, array sum, finding max/min.
 
@@ -175,7 +175,7 @@ def linear_search(arr, target):
         if val == target:
             return i
     return -1
-```text
+```
 
 **O(n log n) � Linearithmic Time**: Efficient sorting algorithms. Merge sort, heap sort, divide-and-conquer.
 
@@ -201,7 +201,7 @@ def merge(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
     return result
-```text
+```
 
 **O(n�) � Quadratic Time**: Nested iterations over data. Bubble sort, insertion sort, naive matrix multiplication.
 
@@ -213,7 +213,7 @@ def bubble_sort(arr):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
-```text
+```
 
 **O(2n) � Exponential Time**: Recursive without memoization. Naive Fibonacci, subset generation.
 
@@ -222,7 +222,7 @@ def fibonacci_naive(n):
     if n <= 1:
         return n
     return fibonacci_naive(n - 1) + fibonacci_naive(n - 2)
-```text
+```
 
 | Complexity | n=10 | n=100 | n=1000 |
 |------------|------|-------|--------|
@@ -249,7 +249,7 @@ def sum_array(arr):
     for x in arr:      # n iterations
         total += x     # O(1) per iteration
     return total       # O(1) total: O(n)
-```text
+```
 
 **Nested loops**: Multiply iteration counts.
 
@@ -260,7 +260,7 @@ def nested_sum(arr):
         for j in range(len(arr)):   # n iterations per outer
             total += arr[i] + arr[j]  # O(1)
     return total  # Total: O(n�)
-```text
+```
 
 **Dependent nested loops**: Summation formula.
 
@@ -271,7 +271,7 @@ def triangular_sum(arr):
         for j in range(i, len(arr)): # n-i iterations
             total += arr[j]         # O(1)
     return total  # n + (n-1) + ... + 1 = n(n+1)/2 = O(n�)
-```text
+```
 
 **Loop with constant stride**: Only the number of iterations matters.
 
@@ -283,7 +283,7 @@ def halving_loop(n):
         count += 1
         i //= 2          # halves each step ? O(log n)
     return count
-```text
+```
 
 **Loop with varying increment**: Analyze how the counter changes.
 
@@ -295,7 +295,7 @@ def varying_increment(n):
         count += 1
         i *= 2           # doubles each step ? O(log n)
     return count
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -305,7 +305,7 @@ flowchart TD
         E[Divide each step] -->|"O(log n)"| F[Logarithmic]
         G[Divide + process each half] -->|"O(n log n)"| H[Linearithmic]
     end
-```text
+```
 
 ---
 
@@ -327,7 +327,7 @@ def binary_search_recursive(arr, target, left, right):
         return binary_search_recursive(arr, target, mid + 1, right)
     else:
         return binary_search_recursive(arr, target, left, mid - 1)
-```text
+```
 
 **Recurrence for merge sort**: `T(n) = 2T(n/2) + O(n)`
 
@@ -358,7 +358,7 @@ def count_calls_fib(n):
 ## n=30 ? 2692537 calls
 
 ## Demonstrates exponential growth
-```text
+```
 
 | Algorithm | Recurrence | Complexity |
 |-----------|------------|------------|
@@ -386,7 +386,7 @@ def sum_const_space(arr):
     for x in arr:
         total += x
     return total
-```text
+```
 
 ```python
 
@@ -396,7 +396,7 @@ def double_array(arr):
     for i, val in enumerate(arr):
         result[i] = val * 2
     return result
-```text
+```
 
 ```python
 
@@ -407,7 +407,7 @@ def factorial_recursive(n):
     return n * factorial_recursive(n - 1)
 
 ## Call stack grows to n frames ? O(n) stack space
-```text
+```
 
 ```python
 
@@ -415,7 +415,7 @@ def factorial_recursive(n):
 def create_matrix(n):
     matrix = [[0] * n for _ in range(n)]   # n * n elements
     return matrix
-```text
+```
 
 **Input space vs auxiliary space**:
 - Input space: memory used by the input data (typically not counted in complexity analysis)
@@ -437,7 +437,7 @@ def reverse_array_in_place(arr):
 ## Out-of-place � O(n) auxiliary space
 def reverse_array_copy(arr):
     return arr[::-1]   # Creates new array
-```text
+```
 
 ---
 
@@ -476,7 +476,7 @@ class DynamicArray:
 
 
 ## Analysis: n appends cost O(n) total, so O(1) amortized per append
-```text
+```
 
 **Aggregate method**: Sum the cost of all operations and divide by n.
 
@@ -489,7 +489,7 @@ class DynamicArray:
 ## Total copies = 1 + 2 + 4 + ... + n/2 + n = O(n)
 
 ## Amortized cost = O(n)/n = O(1)
-```text
+```
 
 **Potential method**: Define a potential function that captures the "debt" of the data structure.
 
@@ -531,7 +531,7 @@ dyn = DynamicArray()
 for i in range(1000):
     dyn.append(i)
 print(f"Final capacity: {dyn.capacity}, size: {dyn.size}")
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -540,7 +540,7 @@ flowchart TD
         B[Accounting] -->|"Assign different charges"| D
         C[Potential] -->|"Use potential function F"| D
     end
-```text
+```
 
 ---
 
@@ -582,7 +582,7 @@ function mergeSort<T>(arr: T[]): T[] {
     const right = mergeSort(arr.slice(mid));
     return merge(left, right);
 } // O(n log n)
-```text
+```
 
 ---
 
@@ -691,7 +691,7 @@ def linear_search(arr, target):
     <pre><code>def fib_memo(n, memo={}):
     if n in memo:
         return memo[n]
-    if n <= 1:
+    if n &lt;= 1:
         return n
     memo[n] = fib_memo(n-1, memo) + fib_memo(n-2, memo)
     return memo[n]
@@ -775,7 +775,7 @@ def linear_search(arr, target):
 
 
 ## Binary search
-while left <= right:
+while left &lt;= right:
     mid = (left + right) // 2
     # eliminate half
 
@@ -785,7 +785,7 @@ def count_bits(n):
     count = 0
     while n:
         count += n & 1
-        n >>= 1  # divide by 2
+        n &gt;&gt;= 1  # divide by 2
     return count
 
 
@@ -847,7 +847,7 @@ def power(x, n):
     <pre><code># In-place � O(1) auxiliary space
 def reverse_array(arr):
     i, j = 0, len(arr) - 1
-    while i < j:
+    while i &lt; j:
         arr[i], arr[j] = arr[j], arr[i]
         i += 1
         j -= 1
@@ -945,7 +945,7 @@ def compare_sorting(n=1000):
     <pre><code># Number of times you can divide n by 2 before reaching = 1
 def log_n_steps(n):
     steps = 0
-    while n > 1:
+    while n &gt; 1:
         n //= 2
         steps += 1
     return steps
@@ -1080,330 +1080,3 @@ d) O(n�)
 - Space complexity = auxiliary space + stack space (recursion depth)
 - In-place algorithms use O(1) auxiliary space; out-of-place create copies
 - Amortized analysis averages expensive operations over sequences — dynamic array append = O(1) amortized
-
-
-## Summary
-
-This chapter establishes the mathematical foundation for analyzing algorithm efficiency. You learned asymptotic notations (Big-O, Big-Omega, Big-Theta) and how to apply them to iterative and.
-recursive algorithms. The Master Theorem provides a systematic way to solve recurrence relations. Space complexity analysis covers auxiliary and stack space,.
-while amortized analysis gives realistic average costs for data structures like dynamic arrays. These concepts directly inform every data structure and.
-algorithm decision in your engineering career.
-
-
-## Placement Section
-
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Given an algorithm with recurrence T(n) = 4T(n/2) + n^2, determine its complexity using the Master Theorem and explain which case applies
-2. Design a data structure that supports O(1) insert, O(1) delete, and O(1) getMin — discuss how amortized analysis validates your design choices
-
-#### Amazon Style
-1. You have a service that processes 1 million requests per day. How do you analyze whether the current algorithm is scalable to 100 million requests?
-2. Describe a situation where you optimized an algorithm's time complexity and the real-world impact it had on system performance
-
-#### Microsoft Style
-1. How would you explain Big-O notation to a non-technical product manager who wants to understand why a feature is slow?
-2. A legacy system uses an O(n^2) algorithm that worked fine for 1000 records but now must handle 100,000. Walk through your approach to redesigning it
-
-#### NVIDIA Style
-1. A GPU kernel processes N data points with an O(n log n) algorithm. How does memory access pattern and cache behavior affect actual performance beyond the theoretical complexity?
-2. You need to choose between an O(n) algorithm with poor cache locality and an O(n log n) algorithm with sequential memory access for a 10GB dataset. Which do you choose and why?
-
-#### AI Startup Style
-1. An ML training pipeline preprocesses 10 million records in O(n^2) time. How would you restructure the preprocessing to achieve O(n log n) or better?
-2. Your inference API has p99 latency of 2 seconds. Profiling shows the bottleneck is an O(n) linear scan over a 50,000-element feature vector. Propose three optimization approaches
-
-
-### Resume Tips
-- List "Time Complexity Analysis" under Technical Skills with specific algorithms you can analyze (binary search, merge sort, hash tables)
-- Describe projects with complexity-aware language: "Reduced query processing from O(n^2) to O(n log n) using indexed data structures, improving p99 latency by 40%"
-- Include a "CS Fundamentals" section if space permits, listing asymptotic analysis, recurrence relations, and amortized analysis
-
-
-### Interview Day Checklist
-- [ ] Can derive Big-O for any loop structure (single, nested, dependent) in under 60 seconds
-- [ ] Can solve a recurrence relation using the Master Theorem without notes
-- [ ] Can explain the difference between time and space complexity with a concrete trade-off example
-- [ ] Can state best, average, and worst-case for binary search, merge sort, and quicksort from memory
-- [ ] Can explain amortized analysis using the dynamic array append example
-
-> **Next**: [02 � Arrays ?](02-ar
-
-### True/False
-
-**T/F 1**: Big-O notation describes the best-case performance of an algorithm.
-**Answer**: False — Big-O describes the worst-case (upper bound). Big-Omega describes the best-case.
-
-**T/F 2**: O(n log n) is always faster than O(n²) for all input sizes.
-**Answer**: False — For small inputs, O(n²) can be faster due to lower constant factors.
-
-**T/F 3**: Space complexity includes both auxiliary space and input space.
-**Answer**: True — Total space = auxiliary space + input space.
-
-**T/F 4**: Binary search has O(log n) time complexity.
-**Answer**: True — Binary search halves the search space each step.
-
-**T/F 5**: Amortized analysis averages performance over a sequence of operations.
-**Answer**: True — Amortized analysis gives the average cost per operation over a worst-case sequence.
-
-### Fill in the Blank
-
-**FIB 1**: The time complexity of merge sort is ________.
-**Answer**: O(n log n)
-
-**FIB 2**: An algorithm with time complexity ________ scales linearly with input size.
-**Answer**: O(n)
-
-**FIB 3**: The Master Theorem solves recurrence relations of the form T(n) = aT(n/b) + ________.
-**Answer**: f(n) (or O(n^d))
-
-**FIB 4**: An in-place algorithm uses ________ auxiliary space.
-**Answer**: O(1)
-
-**FIB 5**: The best case for linear search is ________.
-**Answer**: O(1) — element found at first position
-
-### Scenario Questions
-
-**Scenario 1**: You have a function that runs in O(n²) time. Your dataset grows from 1,000 to 10,000 elements. How much longer will your function take?
-
-**Answer**: With n growing 10x, O(n²) grows 100x. If the original took 1 second, it will now take ~100 seconds. This is why O(n²) algorithms don't scale — always analyze complexity for large inputs.
-
-**Scenario 2**: You need to find the two largest elements in an unsorted array. What's the optimal approach and its complexity?
-
-**Answer**: Single pass with two variables tracking max1 and max2. O(n) time, O(1) space. No need for sorting (O(n log n)) or a heap (O(n log k)). Just iterate once, updating max1 and max2 as you go.
-
-### Output Questions
-
-**Output 1**: What is the time complexity of accessing the 100th element in an array?
-**Answer**: O(1) — Array access by index is constant time via direct memory addressing.
-
-**Output 2**: What is the output of this code? `def f(n): return n + f(n-1) if n > 0 else 0; print(f(5))`
-**Answer**: 15 — This is O(n) recursion: 5+4+3+2+1+0 = 15.
-
-rays.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Data Structures & Algorithms fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master time and space complexity?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of time and space complexity helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding time and space complexity at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of time and space complexity like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply time and space complexity concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of time and space complexity?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply time and space complexity in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Data Structures & Algorithms?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Data Structures & Algorithms, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

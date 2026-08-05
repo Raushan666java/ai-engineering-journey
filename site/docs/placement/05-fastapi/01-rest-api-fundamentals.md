@@ -45,7 +45,7 @@ flowchart LR
     E --> F[Error Handling]
     F --> G[Versioning]
     G --> H[OpenAPI Docs]
-```text
+```
 
 
 ## Introduction
@@ -108,7 +108,7 @@ response = requests.get(
 )
 
 ## Server does not need to remember previous interactions
-```text
+```
 
 
 
@@ -164,7 +164,7 @@ def delete_user(user_id: int):
     if user_id not in users_db:
         raise HTTPException(status_code=404, detail="User not found")
     del users_db[user_id]
-```text
+```
 
 **Best practices**: Always use the correct status code. Never return 200 for errors. Use 201 for resource creation. Use 204 for successful deletions. Use 422 for validation errors and 409 for conflicts.
 
@@ -183,7 +183,7 @@ flowchart LR
     D --> G[PATCH: Partial update]
     D --> H[DELETE: Remove user]
     D --> I[/users/42/orders]
-```text
+```
 
 **URL conventions**:
 
@@ -205,7 +205,7 @@ GET    /getUser                  # Verb in URL
 POST   /createUser               # Verb
 GET    /UserList                 # PascalCase
 POST   /api/v1/get_user_profile  # Snake_case + verb
-```text
+```
 
 **Naming rules**:
 - Plural nouns (`/users` not `/user`)
@@ -263,7 +263,7 @@ async def get_user(user_id: int, request: Request):
 ##           Cache-Control: private, max-age=60
 
 ##           X-Request-ID: req_abc123
-```text
+```
 
 **Common headers**:
 
@@ -318,7 +318,7 @@ def list_users(
             "limit": limit
         }
     }
-```text
+```
 
 **Offset-based pagination** (simpler, but inconsistent under writes):
 
@@ -339,7 +339,7 @@ def list_products(offset: int = 0, limit: int = 20):
             "next_offset": offset + limit if offset + limit < total else None
         }
     }
-```text
+```
 
 **Filtering and sorting**:
 
@@ -365,7 +365,7 @@ def list_orders(
     query += f" ORDER BY {order_col} {order_dir}"
 
     return db.execute(query, params)
-```text
+```
 
 
 ### 1.6 Error Handling
@@ -411,7 +411,7 @@ def get_user(user_id: int):
     if user is None:
         raise ProblemDetail(404, "Not Found", f"User {user_id} not found")
     return user
-```text
+```
 
 **Error response structure**:
 
@@ -430,7 +430,7 @@ def get_user(user_id: int):
     }
   ]
 }
-```text
+```
 
 
 
@@ -466,7 +466,7 @@ def list_users_v2():
 app = FastAPI()
 app.include_router(v1_router)
 app.include_router(v2_router)
-```text
+```
 
 **Deprecation strategy**: Support at least two versions simultaneously. Return `Sunset` and `Deprecation` headers on old versions with migration timeline.
 
@@ -505,7 +505,7 @@ class UserCreate(BaseModel):
 )
 def create_user(user: UserCreate):
     return user
-```text
+```
 
 FastAPI auto-generates OpenAPI specs from Python type hints. Every endpoint appears in `/docs` (Swagger UI) and `/redoc` (ReDoc) automatically.
 
@@ -564,7 +564,7 @@ class ApiError extends Error {
     super(`API Error ${status}: ${body?.detail || body?.message}`);
   }
 }
-```text
+```
 
 ---
 
@@ -791,285 +791,3 @@ d) Client-side rendering
 - RFC 7807 Problem Details provides a consistent error response structure
 - API versioning via URL path (`/api/v1/`) is the most explicit and common strategy
 - OpenAPI/Swagger auto-generates documentation from FastAPI type hints
-
-
-## Summary
-
-REST APIs define how distributed systems communicate through six architectural constraints. HTTP methods map directly to CRUD operations with specific idempotency and.
-safety guarantees. Proper URL design uses plural nouns and consistent naming conventions. Status codes communicate results precisely — 201 for creation,.
-204 for deletion, 422 for validation errors. Pagination should use cursors for consistency, and errors should follow RFC 7807 Problem Details. FastAPI's type-hint-driven approach auto-generates OpenAPI documentation,.
-making API design and documentation a single step.
-
-
-## Placement Section
-
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Design a REST API for a global ride-sharing service with millions of drivers and riders. How do you handle versioning, pagination, and rate limiting at scale?
-2. Explain how HATEOAS works and why most production APIs choose not to implement it fully
-
-#### Amazon Style
-1. A client retries a failed POST request and creates duplicate records. How do you redesign the API to prevent this while maintaining backward compatibility?
-2. Your API serves 50,000 RPS. How do you design the pagination, filtering, and sorting endpoints to handle this load without database bottlenecks?
-
-#### Microsoft Style
-1. Two teams are building microservices that share a user resource. How do you ensure API consistency and prevent breaking changes across teams?
-2. Explain how you would implement API versioning with a deprecation strategy for a platform with 10,000 active API consumers
-
-#### NVIDIA Style
-1. An ML inference API needs to return streaming responses for long-running generation tasks. How do you design the HTTP interface for streaming while maintaining REST conventions?
-2. A model serving API must handle requests ranging from 1KB text to 50MB image payloads. How do you design the endpoint structure and content negotiation?
-
-#### AI Startup Style
-1. You're building an API that wraps multiple LLM providers (OpenAI, Anthropic, local models). How do you design a unified REST interface that abstracts provider differences?
-2. Your startup needs to ship a REST API MVP in one week. What do you implement first and what do you deliberately skip?
-
-
-### Resume Tips
-- List "REST API Design" under Technical Skills alongside FastAPI, OpenAPI, and HTTP protocol knowledge
-- Project example: "Designed and implemented a RESTful API with 15 endpoints, cursor-based pagination, and RFC 7807 error handling using FastAPI"
-- Mention API-specific metrics: "Achieved 99.9% uptime serving 10K RPS with proper status code handling and rate limiting"
-
-
-### Interview Day Checklist
-- [ ] Can explain all 6 REST constraints without notes
-- [ ] Can draw the HTTP method ↔ CRUD mapping with idempotency/safety columns from memory
-- [ ] Can design a REST API for a given domain (e.g., bookstore, task manager) in under 5 minutes
-- [ ] Can explain the difference between PUT and PATCH with a concrete example
-- [ ] Can describe cursor-based pagination implementation from memory
-
-> **Next**: [FastAPI Basics](02-fastapi-basics.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to FastAPI Backend fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master rest api fundamentals?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of rest api fundamentals helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding rest api fundamentals at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of rest api fundamentals like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply rest api fundamentals concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of rest api fundamentals?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply rest api fundamentals in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of FastAPI Backend?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering FastAPI Backend, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Inference Workflow
-
-1. **Input Validation**: Sanitize and validate incoming requests
-2. **Preprocessing**: Transform input to model-ready format
-3. **Model Execution**: Run inference with optimized runtime
-4. **Postprocessing**: Format model output for consumption
-5. **Response**: Return results with metadata and timing
-6. **Monitoring**: Log requests, responses, and latency
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

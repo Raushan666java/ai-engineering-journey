@@ -72,7 +72,7 @@ flowchart LR
     J --> K[Decoder]
     K --> L[Teacher Forcing]
     L --> M[Output Sequence]
-```text
+```
 
 ## 7.1 Vanilla RNN
 
@@ -129,7 +129,7 @@ x = torch.randn(4, 15, 10)  # batch=4, seq_len=15, features=10
 output, hidden = rnn(x)
 print(f"RNN output shape: {output.shape}")  # (4, 15, 20)
 print(f"RNN hidden shape: {hidden.shape}")  # (2, 4, 20)
-```text
+```
 
 **Backpropagation Through Time (BPTT)** unrolls the RNN across all time steps and computes gradients by backpropagating through the unrolled graph.
 
@@ -147,7 +147,7 @@ class BPTTDemo:
                 param_norm = p.grad.data.norm(2)
                 total_norm += param_norm.item() ** 2
         return loss.item(), total_norm ** 0.5
-```text
+```
 
 ---
 
@@ -195,7 +195,7 @@ for name, norm in norms:
 flow = analyzer.analyze_gradient_flow([5, 10, 20, 50])
 for seq_len, norm in flow.items():
     print(f"Seq Len {seq_len}: hidden weight grad norm = {norm:.6f}")
-```text
+```
 
 **Why gradients vanish**: In BPTT, the gradient of the loss w.r.t. the hidden state at time t involves the product of Jacobians across all time steps. If the eigenvalues of the recurrent weight matrix are less than 1, this product decays exponentially. Tanh activation (derivative ≤ 1) compounds this effect.
 
@@ -214,7 +214,7 @@ class GradientClipping:
         nn.utils.clip_grad_norm_(self.model.parameters(), self.max_norm)
         optimizer.step()
         return loss.item()
-```text
+```
 
 ---
 
@@ -264,7 +264,7 @@ output, (h_n, c_n) = lstm(x)
 print(f"LSTM output: {output.shape}")     # (4, 20, 32)
 print(f"LSTM h_n: {h_n.shape}")           # (2, 4, 32)
 print(f"LSTM c_n: {c_n.shape}")           # (2, 4, 32)
-```text
+```
 
 **Custom LSTM with peephole connections**:
 ```python
@@ -291,7 +291,7 @@ class LSTMPeephole(nn.Module):
         o = torch.sigmoid(self.w_o(combined) + self.peep_o * c_new)
         h_new = o * torch.tanh(c_new)
         return h_new, c_new
-```text
+```
 
 ---
 
@@ -336,7 +336,7 @@ x = torch.randn(4, 20, 10)
 output, h_n = gru(x)
 print(f"GRU output: {output.shape}")  # (4, 20, 32)
 print(f"GRU h_n: {h_n.shape}")        # (2, 4, 32)
-```text
+```
 
 **LSTM vs GRU comparison**:
 ```python
@@ -365,7 +365,7 @@ stats = compare_gru_lstm()
 print(f"LSTM parameters: {stats['lstm_params']}")
 print(f"GRU parameters: {stats['gru_params']}")
 print(f"GRU has {stats['param_reduction_pct']:.1f}% fewer parameters")
-```text
+```
 
 ---
 
@@ -419,7 +419,7 @@ birnn = BidirectionalLSTM(input_size=10, hidden_size=32, num_layers=2)
 x = torch.randn(4, 20, 10)
 out = birnn(x)
 print(f"BiLSTM output shape: {out.shape}")  # (4, 1)
-```text
+```
 
 **Visualizing bidirectional context**:
 ```python
@@ -441,7 +441,7 @@ demo = BidirectionalContextDemo(16)
 x = torch.randn(2, 10, 10)
 combined, fwd, bwd = demo.process(x)
 print(f"Forward: {fwd.shape}, Backward: {bwd.shape}, Combined: {combined.shape}")
-```text
+```
 
 ---
 
@@ -528,7 +528,7 @@ src = torch.randint(1, 100, (4, 10))
 tgt = torch.randint(1, 100, (4, 12))
 output = seq2seq(src, tgt, teacher_forcing_ratio=0.7)
 print(f"Seq2Seq output shape: {output.shape}")  # (4, 12, 100)
-```text
+```
 
 **Packed sequences** handle variable-length sequences efficiently:
 ```python
@@ -555,7 +555,7 @@ lengths = torch.tensor([10, 7, 5])
 output_packed = packed_demo.forward_with_packing(x, lengths)
 print(f"Packed output shape: {output_packed.shape}")  # (3, 10, 20)
 print("Zeros in padded positions:", (output_packed[2, 7:, :] == 0).all().item())
-```text
+```
 
 **Attention mechanism for Seq2Seq**:
 ```python
@@ -581,7 +581,7 @@ class AttentionDecoder(nn.Module):
         h_new, c_new = self.lstm(lstm_input, (h, c))
         prediction = self.fc(h_new)
         return prediction, h_new, c_new, attn_weights
-```text
+```
 
 ---
 
@@ -705,267 +705,3 @@ d) Random
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 09-deep-learning-pytorch. When would you choose one approach over another?
-2. Design a system that efficiently handles 09-deep-learning-pytorch at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 09-deep-learning-pytorch. What was your approach and what was the result?
-2. How would you explain 09-deep-learning-pytorch to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 09-deep-learning-pytorch integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 09-deep-learning-pytorch?
-
-#### NVIDIA Style
-1. How would you optimize 09-deep-learning-pytorch for GPU-accelerated computing?
-2. What parallel processing patterns apply to 09-deep-learning-pytorch?
-
-#### AI Startup Style
-1. How would you implement 09-deep-learning-pytorch in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 09-deep-learning-pytorch?
-
-### Resume Tips
-- **Technical Skills**: List 09-deep-learning-pytorch under relevant technical skills
-- **Project Description**: "Implemented 09-deep-learning-pytorch to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 09-deep-learning-pytorch in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 09-deep-learning-pytorch
-- [ ] Practice 3-5 problems related to 09-deep-learning-pytorch
-- [ ] Prepare 2 real-world examples of using 09-deep-learning-pytorch
-- [ ] Know the time/space complexity of common 09-deep-learning-pytorch operations
-- [ ] Have questions ready about how the company uses 09-deep-learning-pytorchlines.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Deep Learning with PyTorch fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master rnn and lstm?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of rnn and lstm helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding rnn and lstm at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of rnn and lstm like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply rnn and lstm concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of rnn and lstm?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply rnn and lstm in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Deep Learning with PyTorch?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Deep Learning with PyTorch, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Training Workflow
-
-1. **Data Preparation**: Collect, clean, and preprocess data
-2. **Model Selection**: Choose architecture based on task requirements
-3. **Training Loop**: Forward pass, loss computation, backpropagation
-4. **Validation**: Evaluate on held-out data to prevent overfitting
-5. **Hyperparameter Tuning**: Optimize learning rate, batch size, etc.
-6. **Model Export**: Save trained model for deployment

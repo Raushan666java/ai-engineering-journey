@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /03-dsa/sliding-window
 title: "Sliding Window"
 sidebar_label: "Sliding Window"
 sidebar_position: 4
 ---
 
-﻿# Sliding Window
+# Sliding Window
 
 ## Learning Objectives
 
@@ -62,7 +62,7 @@ flowchart LR
     D --> F[Monotonic Queue]
     E --> F
     F --> G[Practice Problems]
-```text
+```
 
 ## 4.1 Fixed-Size Window
 
@@ -82,7 +82,7 @@ def max_sum_fixed_window(arr, k):
     return max_sum
 
 print(max_sum_fixed_window([2, 1, 5, 1, 3, 2], 3))  # 9 (5+1+3)
-```text
+```
 
 **First negative integer in every window of size k**:
 
@@ -105,7 +105,7 @@ def first_negative_in_window(arr, k):
     return result
 
 print(first_negative_in_window([12, -1, -7, 8, -15, 30, 16, 28], 3))
-```text
+```
 
 **Count occurrences of anagram in a string**:
 
@@ -131,7 +131,7 @@ def count_anagram_occurrences(text, pattern):
     return count
 
 print(count_anagram_occurrences("cbaebabacd", "abc"))  # 2
-```text
+```
 
 ---
 
@@ -156,7 +156,7 @@ def longest_substring_no_repeat(s):
 print(longest_substring_no_repeat("abcabcbb"))  # 3 ("abc")
 print(longest_substring_no_repeat("bbbbb"))     # 1 ("b")
 print(longest_substring_no_repeat("pwwkew"))    # 3 ("wke")
-```text
+```
 
 **Longest substring with at most k distinct characters**:
 
@@ -181,7 +181,7 @@ def longest_substring_k_distinct(s, k):
 
 print(longest_substring_k_distinct("eceba", 2))  # 3 ("ece")
 print(longest_substring_k_distinct("aa", 1))     # 2 ("aa")
-```text
+```
 
 ---
 
@@ -220,7 +220,7 @@ def min_window_substring(s, t):
     return "" if min_len == float('inf') else s[min_left:min_left + min_len]
 
 print(min_window_substring("ADOBECODEBANC", "ABC"))  # "BANC"
-```text
+```
 
 **Subarray with sum at least target**:
 
@@ -237,7 +237,7 @@ def min_subarray_len(target, nums):
     return 0 if min_len == float('inf') else min_len
 
 print(min_subarray_len(7, [2, 3, 1, 2, 4, 3]))  # 2 ([4, 3])
-```text
+```
 
 ---
 
@@ -265,7 +265,7 @@ def max_sliding_window(nums, k):
 
 print(max_sliding_window([1, 3, -1, -3, 5, 3, 6, 7], 3))
 # [3, 3, 5, 5, 6, 7]
-```text
+```
 
 **Sliding window minimum**:
 
@@ -288,7 +288,7 @@ def min_sliding_window(nums, k):
 print(min_sliding_window([1, 3, -1, -3, 5, 3, 6, 7], 3))
 
 ## [-1, -3, -3, -3, 3, 3]
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -305,7 +305,7 @@ flowchart TD
         G -->|No| I[Continue]
         H --> I
     end
-```text
+```
 
 ---
 
@@ -329,7 +329,7 @@ def num_subarray_product_less_than_k(nums, k):
     return count
 
 print(num_subarray_product_less_than_k([10, 5, 2, 6], 100))  # 8
-```text
+```
 
 **Count number of nice subarrays** (odd numbers count = k):
 
@@ -351,7 +351,7 @@ def number_of_subarrays_with_odd_k(nums, k):
     return at_most_k_odds(k) - at_most_k_odds(k - 1)
 
 print(number_of_subarrays_with_odd_k([1, 1, 2, 1, 1], 3))  # 2
-```text
+```
 
 **Fruits into baskets**:
 
@@ -370,7 +370,7 @@ def total_fruit(fruits):
     return max_count
 
 print(total_fruit([1, 2, 1, 2, 3]))  # 4
-```text
+```
 
 **Binary subarrays with sum = goal**:
 
@@ -390,7 +390,7 @@ def num_subarrays_with_sum(nums, goal):
     return at_most_sum(goal) - at_most_sum(goal - 1)
 
 print(num_subarrays_with_sum([1, 0, 1, 0, 1], 2))  # 4
-```text
+```
 
 ---
 
@@ -414,7 +414,7 @@ def count_complete_subarrays(nums):
     return count
 
 print(count_complete_subarrays([1, 3, 1, 2, 2]))  # 4
-```text
+```
 
 **Maximum length of subarray with equal 0s and 1s**:
 
@@ -432,7 +432,7 @@ def find_max_length(nums):
     return max_len
 
 print(find_max_length([0, 1, 0, 1]))  # 4
-```text
+```
 
 **Minimum operations to reduce X to zero**:
 
@@ -456,7 +456,7 @@ def min_operations(nums, x):
     return len(nums) - max_len if found else -1
 
 print(min_operations([3, 2, 20, 1, 1, 3], 10))  # 5
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -466,7 +466,7 @@ flowchart TD
         E[Variable - Exactly k] --> F[Using atMost(k) - atMost(k-1)]
         G[Variable - Minimum] --> H[Shrink while condition met]
     end
-```text
+```
 
 ---
 
@@ -497,7 +497,7 @@ function longestSubstringNoRepeat(s: string): number {
     }
     return maxLen;
 }
-```text
+```
 
 ---
 
@@ -568,7 +568,7 @@ function longestSubstringNoRepeat(s: string): number {
     last_seen = {}
     left = max_len = 0
     for right, char in enumerate(s):
-        if char in last_seen and last_seen[char] >= left:
+        if char in last_seen and last_seen[char] &gt;= left:
             left = last_seen[char] + 1
         last_seen[char] = right
         max_len = max(max_len, right - left + 1)
@@ -628,14 +628,14 @@ function longestSubstringNoRepeat(s: string): number {
   </summary>
   <div class="tp-qa-answer">
     <pre><code>def num_subarray_product_less_than_k(nums, k):
-    if k <= 1:
+    if k &lt;= 1:
         return 0
     left = 0
     product = 1
     count = 0
     for right, num in enumerate(nums):
         product *= num
-        while product >= k and left <= right:
+        while product &gt;= k and left &lt;= right:
             product //= nums[left]
             left += 1
         count += right - left + 1
@@ -661,7 +661,7 @@ def longest_substring_k_distinct(s, k):
     left = max_len = 0
     for right, char in enumerate(s):
         char_count[char] += 1
-        while len(char_count) > k:
+        while len(char_count) &gt; k:
             left_char = s[left]
             char_count[left_char] -= 1
             if char_count[left_char] == 0:
@@ -759,7 +759,7 @@ def longest_substring_k_distinct(s, k):
   <div class="tp-qa-answer">
     <pre><code>def count_anagram_occurrences(text, pattern):
     m, n = len(pattern), len(text)
-    if m > n:
+    if m &gt; n:
         return 0
     p_count = [0] * 26
     w_count = [0] * 26
@@ -859,262 +859,3 @@ d) Minimum window substring
 - Fast/slow pointer for cycle detection
 - Dummy node simplifies edge cases
 - Reversing a linked list is O(n) time O(1) space
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
-2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
-2. How would you explain data structures algorithms to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
-2. What are the security implications of data structures algorithms?
-
-#### NVIDIA Style
-1. How would you optimize data structures algorithms for GPU-accelerated computing?
-2. What parallel processing patterns apply to data structures algorithms?
-
-#### AI Startup Style
-1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using data structures algorithms?
-
-### Resume Tips
-- **Technical Skills**: List data structures algorithms under relevant technical skills
-- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of data structures algorithms
-- [ ] Practice 3-5 problems related to data structures algorithms
-- [ ] Prepare 2 real-world examples of using data structures algorithms
-- [ ] Know the time/space complexity of common data structures algorithms operations
-- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [05 � Two Pointers ?](05-two-pointers.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Data Structures & Algorithms fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master sliding window?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of sliding window helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding sliding window at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of sliding window like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply sliding window concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of sliding window?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply sliding window in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Data Structures & Algorithms?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Data Structures & Algorithms, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

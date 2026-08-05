@@ -231,12 +231,12 @@ class BayesCalculator {
         }
     }
 }
-`
+```
 
 
 ### Distribution Sampler
 
-`	ypescript
+```typescript
 class DistributionSampler {
     bernoulli(p: number): number {
         return Math.random() < p ? 1 : 0
@@ -268,12 +268,12 @@ class DistributionSampler {
         return k - 1
     }
 }
-`
+```
 
 
 ### MLE Estimator
 
-`	ypescript
+```typescript
 class MLEstimator {
     bernoulliMLE(samples: number[]): number {
         const n = samples.length
@@ -292,12 +292,12 @@ class MLEstimator {
         return samples.reduce((a, b) => a + b, 0) / samples.length
     }
 }
-`
+```
 
 
 ### Linear Algebra Utilities
 
-`	ypescript
+```typescript
 class LinearAlgebra {
     dotProduct(a: number[], b: number[]): number {
         return a.reduce((sum, _, i) => sum + a[i] * b[i], 0)
@@ -352,12 +352,12 @@ class LinearAlgebra {
         return { eigenvalue: lambda, eigenvector: v }
     }
 }
-`
+```
 
 
 ### Entropy and KL Divergence
 
-`	ypescript
+```typescript
 class InformationTheory {
     entropy(probabilities: number[]): number {
         return -probabilities.reduce((sum, p) => {
@@ -401,7 +401,7 @@ class InformationTheory {
         return mi
     }
 }
-`
+```
 
 
 
@@ -572,14 +572,6 @@ Think of math and probability interview like a **delivery system**:
 
 This analogy helps because math and probability interview, like a delivery system, involves transforming inputs into outputs efficiently while handling constraints and edge cases.
 
-## Exercises
-
-**Easy** — Implement a basic math and probability interview example that demonstrates the core concept.
-
-**Medium** — Create a more complex implementation that handles edge cases.
-
-**Hard** — Design an optimized solution for large-scale math and probability interview scenarios.
-
 ## Summary
 
 Math and probability are tested directly in ML interviews. Bayes theorem, MLE/MAP, and distributions appear in nearly every loop. Linear algebra (eigenvalues,.
@@ -636,6 +628,18 @@ linear algebra formulation and solving it step by step.
 
 #
 
+## Exercises
+
+**Easy** — Implement a Monte Carlo simulation that estimates pi by sampling points in a unit square and counting those inside the unit circle.
+
+**Medium** — Write a function that computes the posterior distribution for a Beta-Bernoulli model given prior parameters alpha, beta and observed data.
+
+**Medium** — Implement PCA from scratch using SVD (compute the covariance matrix, find top-k eigenvectors).
+
+**Hard** — Write a function that computes the gradient of the cross-entropy loss with respect to the model parameters for binary classification.
+
+**Hard** — Implement Newton-Raphson optimization to find the MLE for logistic regression parameters.
+
 ## Common Mistakes
 
 1. Not understanding the fundamental concepts before applying them
@@ -643,6 +647,16 @@ linear algebra formulation and solving it step by step.
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
+## Revision Notes
+
+- **Bayes Theorem**: Posterior = (Likelihood × Prior) / Evidence
+- **MLE**: Maximize likelihood function; for Gaussian, it's sample mean and std
+- **MAP**: Maximize posterior = likelihood × prior; L2 reg = Gaussian prior
+- **KL Divergence**: Asymmetric; KL(P||Q) ≠ KL(Q||P); measures information loss
+- **Entropy**: H(X) = -Σ p(x) log p(x); measures uncertainty
+- **Variance**: Var(X) = E[X²] - E[X]²; always ≥ 0
+- **Covariance**: Measures linear relationship between two variables
 
 ## Code Examples
 
@@ -750,28 +764,6 @@ X_2d, comps, var = pca(X, k=2)
 print(f"Explained variance: {var}")
 print(f"Shape: {X.shape} -> {X_2d.shape}")
 ```text
-
-## Exercises
-
-**Easy** — Implement a Monte Carlo simulation that estimates pi by sampling points in a unit square and counting those inside the unit circle.
-
-**Medium** — Write a function that computes the posterior distribution for a Beta-Bernoulli model given prior parameters alpha, beta and observed data.
-
-**Medium** — Implement PCA from scratch using SVD (compute the covariance matrix, find top-k eigenvectors).
-
-**Hard** — Write a function that computes the gradient of the cross-entropy loss with respect to the model parameters for binary classification.
-
-**Hard** — Implement Newton-Raphson optimization to find the MLE for logistic regression parameters.
-
-## Revision Notes
-
-- **Bayes Theorem**: Posterior = (Likelihood × Prior) / Evidence
-- **MLE**: Maximize likelihood function; for Gaussian, it's sample mean and std
-- **MAP**: Maximize posterior = likelihood × prior; L2 reg = Gaussian prior
-- **KL Divergence**: Asymmetric; KL(P||Q) ≠ KL(Q||P); measures information loss
-- **Entropy**: H(X) = -Σ p(x) log p(x); measures uncertainty
-- **Variance**: Var(X) = E[X²] - E[X]²; always ≥ 0
-- **Covariance**: Measures linear relationship between two variables
 
 ## Placement Section
 

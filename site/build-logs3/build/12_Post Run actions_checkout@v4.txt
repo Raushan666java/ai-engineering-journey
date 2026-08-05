@@ -1,0 +1,15 @@
+﻿2026-07-25T10:41:46.9863754Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T10:41:46.9864991Z Post job cleanup.
+2026-07-25T10:41:47.0819856Z [command]/usr/bin/git version
+2026-07-25T10:41:47.0866215Z git version 2.54.0
+2026-07-25T10:41:47.0906769Z Temporarily overriding HOME='/home/runner/work/_temp/af2c9a82-6dd1-4d52-b40a-fe0ea7ba7c20' before making global git config changes
+2026-07-25T10:41:47.0908322Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-25T10:41:47.0912920Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-engineering-journey/ai-engineering-journey
+2026-07-25T10:41:47.0956374Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-25T10:41:47.1019537Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-25T10:41:47.1349226Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-25T10:41:47.1382951Z http.https://github.com/.extraheader
+2026-07-25T10:41:47.1395191Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-07-25T10:41:47.1434470Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-25T10:41:47.1727338Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-25T10:41:47.1772947Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url

@@ -223,7 +223,6 @@ from sklearn.metrics import (
 )
 from sklearn.pipeline import Pipeline
 
-
 class GaussianNaiveBayesScratch:
     """Gaussian Naive Bayes from scratch"""
 
@@ -287,7 +286,6 @@ class GaussianNaiveBayesScratch:
             probabilities.append(probs)
 
         return np.array(probabilities)
-
 
 class MultinomialNaiveBayesScratch:
     """Multinomial Naive Bayes from scratch for text classification"""
@@ -357,7 +355,6 @@ class MultinomialNaiveBayesScratch:
 
         return np.array(probabilities)
 
-
 def text_classification_demo():
     """Demonstrate Naive Bayes for text classification"""
     print("=" * 60)
@@ -423,7 +420,6 @@ def text_classification_demo():
         top_features = [feature_names[idx] for idx in top_indices]
         print(f"  {class_name}: {', '.join(top_features)}")
 
-
 def compare_nb_variants():
     """Compare Gaussian, Multinomial, and Bernoulli Naive Bayes"""
     print("\n" + "=" * 60)
@@ -460,7 +456,6 @@ def compare_nb_variants():
 
     return results
 
-
 def scratch_vs_sklearn():
     """Compare scratch implementation with sklearn"""
     print("\n" + "=" * 60)
@@ -490,7 +485,6 @@ def scratch_vs_sklearn():
     print(f"Scratch accuracy: {acc_scratch:.4f}")
     print(f"sklearn accuracy: {acc_sklearn:.4f}")
     print(f"Match: {np.array_equal(y_pred_scratch, y_pred_sklearn)}")
-
 
 def spam_classifier_example():
     """Simple spam detection example"""
@@ -536,7 +530,6 @@ def spam_classifier_example():
         label = "SPAM" if pred == 1 else "HAM"
         confidence = max(prob)
         print(f"[{label}] ({confidence:.2%}): {email[:60]}")
-
 
 if __name__ == "__main__":
     # Set random seed
@@ -597,7 +590,28 @@ Spam Detection with Naive Bayes
 [HAM] (91.78%): Here is the report you requested.
 ```
 
-## Interview Questions
+## Summary
+
+Naive Bayes is a generative probabilistic classifier that applies Bayes theorem with the assumption that features are conditionally independent given the class, turning posterior computation into a product of per-feature likelihoods. The independence assumption is rarely true in real data, yet the classifier still works well because the argmax decision is robust to poor probability estimates and dependencies often cancel out across features. Three variants fit different data types: Gaussian NB for continuous features with per-class mean and variance, Multinomial NB for word counts and TF-IDF text, and Bernoulli NB for binary word presence. Laplace smoothing (alpha = 1) prevents zero probabilities for unseen features, and log-space computation avoids floating-point underflow while staying monotonic for the argmax. Training is a single O(n x d) pass, making Naive Bayes extremely fast, incrementally updateable, and strong on high-dimensional sparse text data, though its probabilities are biased toward extremes and correlated features get double counted. It excels as a cheap strong baseline and for spam detection, sentiment analysis, and real-time filtering, while logistic regression typically wins once enough data is available.
+
+- P(y|x) is proportional to P(y) times the product of P(x_i|y) per feature
+- Variants: Gaussian (continuous), Multinomial (counts), Bernoulli (binary presence)
+- Laplace smoothing (N_yi + alpha)/(N_y + alpha x n) prevents zero-probability collapse
+- Log probabilities: sum log P(y) + sum log P(x_i|y) to avoid underflow
+- Generative model that learns P(X, y); O(n x d) training, ideal for sparse high-dimensional text
+- Limitations: extreme/biased probabilities, correlated features double counted, not for regression
+
+## Practical Takeaways
+
+- **Independence assumption**: Naive Bayes assumes conditional independence of features — it still works well in practice because it only needs the ranking of posterior probabilities to be correct, not their absolute values.
+- **Variant selection**: Use Multinomial NB for word counts/TF-IDF text, Bernoulli NB for word presence on short documents, and Gaussian NB for continuous features — matching the variant to the feature type is the single most important correctness decision.
+- **Smoothing**: Always apply Laplace smoothing (alpha = 1, tune down to 0.01) — a single unseen word yields P = 0 and multiplies the entire posterior product to zero without it.
+- **Log space**: Compute in log space (log P(y) + sum log P(x_i|y)) because multiplying hundreds of sub-1 probabilities underflows floating-point precision.
+- **Calibration**: Do not ship raw Naive Bayes probabilities as confidence scores — they are extreme (near 0 or 1); use the argmax class and calibrate (Platt or isotonic) if scores are needed.
+- **Imbalance**: For skewed classes such as 99% ham versus 1% spam, prefer ComplementNB, which scores features against the complement class and counters majority-class bias.
+- **Baseline value**: Use Naive Bayes as the cheap strong baseline — linear-time training, millisecond inference, interpretable feature probabilities — then beat it with logistic regression when data is plentiful.
+
+## Interview Q&A
 
 <details class="tp-qa-card" data-qid="ml11-q1">
   <summary class="tp-qa-question">
@@ -806,103 +820,319 @@ d) Non-parametric
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Derive the Naive Bayes classifier from Bayes theorem. Show how the independence assumption simplifies computation.
-2. Explain why Naive Bayes works well for text classification despite the independence assumption being violated.
+
+1. **Explain the core idea of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
-1. Tell me about a time you used Naive Bayes for a real-world classification problem.
-2. How would you build and deploy a spam filter for Amazon's customer messages?
+
+4. **Describe a production bug caused by misunderstanding Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
-1. How does Naive Bayes compare to Logistic Regression in terms of bias-variance tradeoff?
-2. How would you use Naive Bayes for document categorization in SharePoint?
+
+6. **Compare Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
-1. How would you parallelize Naive Bayes training for very large datasets on GPU?
-2. What modifications would you make to Naive Bayes for streaming data?
+
+8. **How does Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
-1. Design a Naive Bayes-based content moderation system for a social media startup.
-2. How would you build a simple sentiment analyzer using Naive Bayes on a budget?
+
+10. **Write the smallest possible implementation of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
-- **Technical Skills**: Naive Bayes, probabilistic classification, text classification, spam filtering
-- **Project Description**: "Built Naive Bayes-based spam filter achieving 98.5% accuracy, processing 10M emails/day with sub-millisecond inference"
-- **Keywords**: Naive Bayes, Bayes theorem, Multinomial NB, text classification, spam detection
+
+- Name Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications").
+- Add a bullet describing a project that applies Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications to real data, with numbers.
+- Mention the tools and libraries you used alongside Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
 
 ### Interview Day Checklist
-- [ ] Derive Bayes theorem and Naive Bayes formula
-- [ ] Know the three NB variants and when to use each
-- [ ] Understand log probabilities and Laplace smoothing
-- [ ] Practice text classification pipeline explanation
-- [ ] Know strengths and limitations compared to logistic regression
+
+- Rehearse a 60-second explanation of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications and one real-world analogy.
+- Prepare one STAR story about debugging a Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications-related production issue.
+- Review complexity and edge cases for the classic Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications interview problem.
+- Have questions ready: how does the team apply Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
+
+## True/False
+
+1. **True or False:** Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
-**Level**: Intermediate
-**Estimated Study Time**: 35-50 minutes
-**Prerequisites**: Probability basics, Python, classification concepts
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
 
 ## Tips & Tricks
 
-**Tip**: Always use log probabilities in Naive Bayes. Test with small probabilities to verify.
-
-**Tip**: For text, try Multinomial NB with both count vectors and TF-IDF. TF-IDF often helps.
-
-**Pro Tip**: Use Complement NB for imbalanced text datasets — it handles class imbalance better.
-
-**Pro Tip**: Naive Bayes is an excellent baseline. Always compare more complex models against it.
+- Always write a one-line example of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications snippets; interviewers love original examples.
 
 ## Memory Tricks
 
-- **Naive = Independent** — features are "naively" assumed independent
-- **GNB**: **G**aussian = **G**oes with continuous
-- **MNB**: **M**ultinomial = **M**any counts
-- **BNB**: **B**ernoulli = **B**inary presence
-- **Laplace = Add-one** — add 1 to all counts
-- **Log = No underflow** — multiply probabilities in log space
+- **Acronym**: build a mnemonic from the 5 key concepts of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications listed in the Chapter at a Glance table.
+- **Story**: link Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
-- "Pattern Recognition and Machine Learning" by Christopher Bishop
-- sklearn Naive Bayes documentation
-- "Speech and Language Processing" by Jurafsky & Martin
-- Bayes theorem original paper by Thomas Bayes (1763)
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications
+- The classic textbook chapter on Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications (check the Research References below)
+- Two blog posts from engineers who debugged real Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications problems in production
+- The repository of the open-source project that implements Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications
 
 ## Related Topics
 
-- Bayesian inference and Bayesian networks
-- Logistic regression (discriminative counterpart)
-- Text preprocessing and NLP pipelines
-- Ensemble methods (combining NB with other classifiers)
+- The previous chapter in this module (see table of contents) â€” foundational for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications
+- The next chapter (see Next Topic below) â€” builds on Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications
+- The system design chapters in Module 07 â€” how Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications fits into production architectures
+- The interview preparation module â€” how Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is asked in screening rounds
+- The capstone project â€” where Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is applied end-to-end
 
 ## FAQs
 
-**Q: Is Naive Bayes a linear classifier?**
-**A**: Yes, in log space Naive Bayes creates linear decision boundaries.
-
-**Q: Can Naive Bayes handle missing values?**
-**A**: Yes, it naturally handles missing features by ignoring them (product over only present features).
-
-**Q: How many training examples does Naive Bayes need?**
-**A**: Very few — NB can work well with even 10-100 examples per class, though more is always better.
+1. **Do I need to memorize all of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-> **Note**: Naive Bayes is an excellent baseline — always try it before complex models.
+- Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
 
-> **Note**: The "naive" assumption rarely holds, but the classifier still works well in practice.
+## Historical Context
 
-> **Note**: Naive Bayes is a probabilistic model. It provides confidence scores, not just hard labels.
+- Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
 
-- Spam filters must handle adversarial attacks (adversarial text obfuscation)
-- Use feature hashing to prevent feature-space attacks
-- Monitor model performance over time for concept drift
-- Implement rate limiting on spam flagging to prevent abuse
-- Privacy: train models without storing user email content
+- Never trust external input: validate and sanitize data before processing Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
+
+## ML Intuition
+
+- Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications to a dataset of 10 million records? â€” Batching and vectorization.
+
+## Analogies
+
+- **Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
+
+## Capstone Project Link
+
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+
+## Flashcards
+
+<details class="tp-qa-card" data-qid="08machinelearning-11naivebayes-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What assumption does Naive Bayes make about features?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Conditionally independent given the class</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="08machinelearning-11naivebayes-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Which Naive Bayes variant is best for text classification with word counts?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Multinomial NB</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="08machinelearning-11naivebayes-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What problem does Laplace smoothing solve?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>c) Zero probabilities for unseen features</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="08machinelearning-11naivebayes-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Why are log probabilities used in Naive Bayes?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Numerical stability against underflow</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="08machinelearning-11naivebayes-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What type of model is Naive Bayes?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Generative</p>
+  </div>
+</details>
+
+## Research References
+
+- Official documentation of the primary library for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications (linked in Further Reading)
+- The classic paper or textbook chapter introducing Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications (see References below)
+- The standard library reference for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications-related functions
+- Engineering blog posts from companies running Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
+
+## Open-Source Tools
+
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications
+
+## Debugging Guide
+
+- Start with `print()` or a debugger to inspect intermediate values in Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications example code.
+
+## Mock Interview Section
+
+**Round 1 â€” Screening (15 min)**
+- Explain Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications in 60 seconds.
+- Write a minimal working example of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications problem in a project.
+- How would you design a system where Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
+
+## Evaluation Metrics
+
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
+
+## Real-World Examples
+
+- **Startup**: a small team uses Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications to the business outcome, not just the code.
 
 ## Next Topic
 
-After Naive Bayes, continue to Feature Engineering for improving ML model performance through better data representation.
+[Feature Engineering — Imputation, Encoding, Scaling, Feature Construction, Feature Selection](12-feature-engineering.md)
+
+## Limitations
+
+- Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Naive Bayes — Bayes Theorem, Probabilistic Classification, Text Applications depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

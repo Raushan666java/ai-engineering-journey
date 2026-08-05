@@ -70,7 +70,7 @@ flowchart LR
     H --> I[Error Handling]
     I --> J[Retry Logic]
     J --> K[Cost Tracking & Logging]
-```text
+```
 
 ## 2.1 API Basics
 
@@ -88,7 +88,7 @@ if not api_key:
     raise ValueError("OPENAI_API_KEY not set")
 
 client = OpenAI(api_key=api_key)
-```text
+```
 
 **Request structure** includes model selection, messages, and parameters:
 
@@ -105,7 +105,7 @@ response = client.chat.completions.create(
     frequency_penalty=0,       # Reduce repetition
     presence_penalty=0         # Encourage new topics
 )
-```text
+```
 
 **Response structure** includes the generated message and usage:
 
@@ -137,7 +137,7 @@ def calculate_cost(model, prompt_tokens, completion_tokens):
 
 cost = calculate_cost("gpt-4o", response.usage.prompt_tokens, response.usage.completion_tokens)
 print(f"Request cost: ${cost:.6f}")
-```text
+```
 
 **Secure key management** using environment files:
 
@@ -162,7 +162,7 @@ load_dotenv()
 ## Or use Python's built-in approach
 import os
 assert os.environ.get("OPENAI_API_KEY"), "Missing API key"
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -174,7 +174,7 @@ flowchart TD
     E -->|OK| G[Model Inference]
     G --> H[Response + Usage Stats]
     H --> A
-```text
+```
 
 ---
 
@@ -211,7 +211,7 @@ conversation.append({"role": "user", "content": "Show me a practical example wit
 
 resp2 = chat_with_history(conversation)
 print(resp2.choices[0].message.content)
-```text
+```
 
 **JSON mode** for structured output:
 
@@ -231,7 +231,7 @@ data = json.loads(response.choices[0].message.content)
 print(data)
 
 ## {'name': 'John', 'age': 32, 'city': 'San Francisco', 'occupation': 'software engineer'}
-```text
+```
 
 **Function calling** for tool integration:
 
@@ -275,7 +275,7 @@ if tool_call.function.name == "get_weather":
     args = json.loads(tool_call.function.arguments)
     result = get_weather(**args)
     print(f"Weather in {args['city']}: {result}")
-```text
+```
 
 **Token counting** before sending:
 
@@ -312,7 +312,7 @@ messages = [
 ]
 estimate = estimate_cost(messages)
 print(f"Estimated cost: ${estimate['estimated_cost']:.6f}")
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -326,7 +326,7 @@ flowchart TD
     G --> I[Extract Message]
     G --> J[Extract Usage]
     J --> K[Track Cost]
-```text
+```
 
 ---
 
@@ -353,7 +353,7 @@ response = client.messages.create(
 print(response.content[0].text)
 print(f"Input tokens: {response.usage.input_tokens}")
 print(f"Output tokens: {response.usage.output_tokens}")
-```text
+```
 
 **Multi-turn conversations**:
 
@@ -377,7 +377,7 @@ history = [
 
 resp = claude_conversation(history)
 print(resp.content[0].text)
-```text
+```
 
 **Claude's extended thinking** for complex reasoning:
 
@@ -402,7 +402,7 @@ for block in response.content:
         print("Thinking:", block.thinking)
     elif block.type == "text":
         print("Answer:", block.text)
-```text
+```
 
 **Image understanding** with Claude:
 
@@ -434,7 +434,7 @@ response = client.messages.create(
 )
 
 print(response.content[0].text)
-```text
+```
 
 ```mermaid
 flowchart LR
@@ -448,7 +448,7 @@ flowchart LR
     F --> G[Response]
     G --> H[Content Blocks List]
     H --> I[Extract Text / Thinking]
-```text
+```
 
 ---
 
@@ -479,7 +479,7 @@ print(response.text)
 ## Safety ratings
 for rating in response.prompt_feedback.safety_ratings:
     print(f"{rating.category}: {rating.probability}")
-```text
+```
 
 **Chat sessions** for multi-turn:
 
@@ -495,7 +495,7 @@ print(response.text)
 ## Access full history
 for entry in chat.history:
     print(f"{entry.role}: {entry.parts[0].text[:50]}...")
-```text
+```
 
 **Multimodal input**:
 
@@ -507,7 +507,7 @@ prompt = "Describe this architecture diagram in detail."
 
 response = model.generate_content([prompt, image])
 print(response.text)
-```text
+```
 
 **Safety settings** customization:
 
@@ -525,7 +525,7 @@ model = genai.GenerativeModel(
 
 response = model.generate_content("Tell me about historical warfare tactics.")
 print(response.text)
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -540,7 +540,7 @@ flowchart TD
     G --> J[Extract Text]
     G --> K[Safety Feedback]
     G --> L[Usage Metadata]
-```text
+```
 
 ---
 
@@ -567,7 +567,7 @@ for chunk in stream:
     # Last chunk has usage info
     if chunk.choices[0].finish_reason == "stop":
         print(f"\n\nReason: {chunk.choices[0].finish_reason}")
-```text
+```
 
 **Anthropic streaming**:
 
@@ -583,7 +583,7 @@ with client.messages.stream(
 ) as stream:
     for text in stream.text_stream:
         print(text, end="", flush=True)
-```text
+```
 
 **Gemini streaming**:
 
@@ -596,7 +596,7 @@ response = model.generate_content(
 
 for chunk in response:
     print(chunk.text, end="", flush=True)
-```text
+```
 
 **Building a streaming proxy**:
 
@@ -640,7 +640,7 @@ async def chat_stream(messages: list):
 ##     // Read chunks incrementally
 
 ##   })
-```text
+```
 
 ```mermaid
 flowchart LR
@@ -651,7 +651,7 @@ flowchart LR
     C -->|Token N| B
     B -->|SSE: data: token\n\n| A
     A -->[Update UI Incrementally]
-```text
+```
 
 ---
 
@@ -711,7 +711,7 @@ def safe_api_call(client, messages, model="gpt-4o", max_retries=3):
             raise  # Don't retry auth errors
 
     raise Exception(f"All {max_retries} attempts failed. Last error: {last_error}")
-```text
+```
 
 **Circuit breaker pattern** for preventing cascading failures:
 
@@ -766,7 +766,7 @@ def make_request():
 ##     except Exception as e:
 
 ##         print(f"Request {i} failed: {e}")
-```text
+```
 
 **Rate limit handling with token bucket**:
 
@@ -809,7 +809,7 @@ def rate_limited_api_call(client, messages):
 ## for i in range(100):
 
 ##     response = rate_limited_api_call(client, messages)
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -826,7 +826,7 @@ flowchart TD
     J -->|Retries Left| I
     J -->|Exhausted| K[Raise Error]
     I --> E
-```text
+```
 
 ---
 
@@ -978,7 +978,7 @@ response = router.route(messages, "openai")
 print(f"[{response.provider}] {response.content[:100]}...")
 print(f"Cost: ${calculate_cost('gpt-4o', response.input_tokens, response.output_tokens):.6f}")
 print(f"Latency: {response.latency_ms:.0f}ms")
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -991,7 +991,7 @@ flowchart TD
     E --> G
     F --> G
     G --> H[Content + Usage + Latency]
-```text
+```
 
 ---
 
@@ -1029,7 +1029,7 @@ async function callLLM(
   const data = await res.json();
   return data.choices[0].message.content;
 }
-```text
+```
 
 ---
 
@@ -1339,266 +1339,3 @@ d) o200k_base
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 11-llms-prompt-engineering. When would you choose one approach over another?
-2. Design a system that efficiently handles 11-llms-prompt-engineering at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 11-llms-prompt-engineering. What was your approach and what was the result?
-2. How would you explain 11-llms-prompt-engineering to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 11-llms-prompt-engineering integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 11-llms-prompt-engineering?
-
-#### NVIDIA Style
-1. How would you optimize 11-llms-prompt-engineering for GPU-accelerated computing?
-2. What parallel processing patterns apply to 11-llms-prompt-engineering?
-
-#### AI Startup Style
-1. How would you implement 11-llms-prompt-engineering in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 11-llms-prompt-engineering?
-
-### Resume Tips
-- **Technical Skills**: List 11-llms-prompt-engineering under relevant technical skills
-- **Project Description**: "Implemented 11-llms-prompt-engineering to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 11-llms-prompt-engineering in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 11-llms-prompt-engineering
-- [ ] Practice 3-5 problems related to 11-llms-prompt-engineering
-- [ ] Prepare 2 real-world examples of using 11-llms-prompt-engineering
-- [ ] Know the time/space complexity of common 11-llms-prompt-engineering operations
-- [ ] Have questions ready about how the company uses 11-llms-prompt-engineering> **Next**: [03 — Zero-Shot & Few-Shot →](03-zero-shot-and-few-shot.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to LLMs & Prompt Engineering fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master llm apis?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of llm apis helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding llm apis at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of llm apis like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply llm apis concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of llm apis?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply llm apis in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of LLMs & Prompt Engineering?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Prompt Engineering Notes
-
-- **Be Specific**: Clear, detailed prompts get better results
-- **Provide Examples**: Few-shot learning improves consistency
-- **Use Structured Output**: JSON, tables, or markdown for parsing
-- **Chain of Thought**: Break complex reasoning into steps
-- **Temperature Control**: Adjust creativity vs consistency
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering LLMs & Prompt Engineering, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.

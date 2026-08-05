@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /ai-engineering-placement
 title: "06 — Docker, Kubernetes & Cloud"
 sidebar_label: "06 — Docker, Kubernetes & Cloud"
 sidebar_position: 87

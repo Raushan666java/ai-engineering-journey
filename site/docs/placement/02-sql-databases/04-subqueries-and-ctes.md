@@ -56,7 +56,7 @@ def example():
     return result
 
 example()
-```text
+```
 
 ### Expected Output
 
@@ -86,13 +86,13 @@ flowchart LR
     F[CTEs] --> G[WITH ... AS]
     F --> H[Recursive CTEs]
     F --> I[Multiple CTEs]
-```text
+```
 
 ## 4.1 Scalar Subqueries
 
 Return a single value, used in SELECT or WHERE.
 
-`sql
+```sql
 -- In SELECT � employee salary vs average
 SELECT name, salary,
     (SELECT AVG(salary) FROM employees) AS company_avg,
@@ -108,11 +108,11 @@ WHERE salary > (SELECT AVG(salary) FROM employees);
 SELECT name, price, category_id
 FROM products p
 WHERE price > (SELECT AVG(price) FROM products WHERE category_id = p.category_id);
-`
+```
 
 **Python simulation**:
 
-`python
+```python
 import sqlite3
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
@@ -134,11 +134,11 @@ for row in cur.fetchall():
 ## Alice: 75000 > Eng avg (71500)
 
 ## Charlie: 82000 > Sales avg (77000)
-`
+```
 
 ## 4.2 Row & Table Subqueries
 
-`sql
+```sql
 -- FROM clause subquery (derived table)
 SELECT dept_stats.dept_id, dept_stats.avg_sal
 FROM (
@@ -163,13 +163,13 @@ SELECT name FROM employees
 WHERE department_id IN (
     SELECT id FROM departments WHERE location = 'New York'
 );
-`
+```
 
 ## 4.3 Correlated Subqueries
 
 A correlated subquery references columns from the outer query and executes once per outer row.
 
-`sql
+```sql
 -- Find each employee's rank within their department
 SELECT e.name, e.salary, e.department_id,
     (SELECT COUNT(*) + 1 FROM employees
@@ -193,11 +193,11 @@ WHERE p.price > (
     SELECT AVG(price) FROM products
     WHERE category_id = p.category_id
 );
-`
+```
 
 ## 4.4 EXISTS / ANY / ALL
 
-`sql
+```sql
 -- EXISTS: true if subquery returns any rows
 SELECT name FROM customers c
 WHERE EXISTS (
@@ -228,13 +228,13 @@ WHERE salary > ALL (
 -- Equivalent to MAX/MIN
 WHERE salary > ANY (...)  -- same as salary > MIN(...)
 WHERE salary > ALL (...)  -- same as salary > MAX(...)
-`
+```
 
 ## 4.5 CTEs with WITH
 
 CTEs (Common Table Expressions) name a subquery for reuse.
 
-`python
+```python
 import sqlite3
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
@@ -256,9 +256,9 @@ cur.execute("""
 """)
 for row in cur.fetchall():
     print(f"{row[0]}:  > dept avg ")
-`
+```
 
-`sql
+```sql
 -- Multiple CTEs
 WITH
 dept_stats AS (
@@ -276,13 +276,13 @@ WITH deleted AS (
     DELETE FROM orders WHERE order_date < '2020-01-01' RETURNING *
 )
 SELECT COUNT(*) AS archived FROM deleted;
-`
+```
 
 ## 4.6 Recursive CTEs
 
 Recursive CTEs reference themselves to traverse hierarchical or graph data.
 
-`sql
+```sql
 -- Organization chart: employee -> manager chain
 WITH RECURSIVE org_chain AS (
     -- Anchor: top-level employees
@@ -318,11 +318,11 @@ WITH RECURSIVE dates(d) AS (
     WHERE d < '2024-01-10'
 )
 SELECT * FROM dates;
-`
+```
 
 ## TypeScript Parallel
 
-`	ypescript
+```typescript
 // TypeScript: subquery-like patterns with arrays
 const employees = [
     { name: "Alice", salary: 75000, dept: "Eng" },
@@ -338,7 +338,7 @@ const deptAvgs = employees.reduce((acc, e) => {
 const aboveAvg = employees.filter(e =>
     e.salary > deptAvgs[e.dept] / employees.filter(x => x.dept === e.dept).length
 );
-`
+```
 
 ## Summary
 
@@ -443,7 +443,7 @@ ALL rows are excluded (returns empty). Use NOT EXISTS instead of NOT IN for safe
 
 LATERAL allows subqueries in FROM to reference columns from preceding tables.
 
-`sql
+```sql
 -- For each department, get the top 3 highest-paid employees
 SELECT d.department_name, top_emp.name, top_emp.salary
 FROM departments d
@@ -495,11 +495,11 @@ LEFT JOIN LATERAL (
     FROM order_items oi
     WHERE oi.product_id = p.product_id
 ) stats ON true;
-`
+```
 
 ## 4.8 Multiple CTEs and CTE Modifications
 
-`sql
+```sql
 -- Multiple CTEs working together
 WITH
 sales_summary AS (
@@ -557,11 +557,11 @@ WITH old_orders AS (
 )
 INSERT INTO orders_archive
 SELECT * FROM old_orders;
-`
+```
 
 ## 4.9 Performance: Subqueries vs CTEs vs Joins
 
-`sql
+```sql
 -- Scenario 1: Correlated subquery
 SELECT e.name, e.salary,
     (SELECT AVG(salary) FROM employees WHERE department_id = e.department_id) AS dept_avg
@@ -595,11 +595,11 @@ FROM employees;
 -- 4. Use window functions over correlated subqueries
 -- 5. Avoid subqueries in SELECT for large tables
 -- 6. LATERAL joins can replace some correlated subqueries efficiently
-`
+```
 
 ## 4.10 Recursive CTE Advanced Examples
 
-`sql
+```sql
 -- Generate a calendar year
 WITH RECURSIVE calendar(date) AS (
     SELECT DATE('2024-01-01')
@@ -699,11 +699,11 @@ SELECT DISTINCT user_id, degrees, path
 FROM connections
 WHERE user_id != 1
 ORDER BY degrees, user_id;
-`
+```
 
 ## 4.11 Common Pitfalls
 
-`sql
+```sql
 -- Pitfall 1: NOT IN with NULLs
 SELECT name FROM customers
 WHERE customer_id NOT IN (
@@ -751,11 +751,11 @@ SELECT name, salary,
     (SELECT salary FROM employees WHERE department_id = e.department_id)  -- ERROR if multiple
 FROM employees e;
 -- Fix: Use aggregate or ensure single-row subquery
-`
+```
 
 ## 4.12 Real-World CTE Applications
 
-`sql
+```sql
 -- Session segmentation analysis (web analytics)
 WITH session_data AS (
     SELECT
@@ -834,7 +834,7 @@ revenue_with_ma AS (
 SELECT * FROM revenue_with_ma
 WHERE moving_avg_7d IS NOT NULL
 ORDER BY order_date;
-`
+```
 
 ---
 
@@ -856,262 +856,3 @@ ORDER BY order_date;
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 02-sql-and-databases. When would you choose one approach over another?
-2. Design a system that efficiently handles 02-sql-and-databases at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 02-sql-and-databases. What was your approach and what was the result?
-2. How would you explain 02-sql-and-databases to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 02-sql-and-databases integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 02-sql-and-databases?
-
-#### NVIDIA Style
-1. How would you optimize 02-sql-and-databases for GPU-accelerated computing?
-2. What parallel processing patterns apply to 02-sql-and-databases?
-
-#### AI Startup Style
-1. How would you implement 02-sql-and-databases in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 02-sql-and-databases?
-
-### Resume Tips
-- **Technical Skills**: List 02-sql-and-databases under relevant technical skills
-- **Project Description**: "Implemented 02-sql-and-databases to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 02-sql-and-databases in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 02-sql-and-databases
-- [ ] Practice 3-5 problems related to 02-sql-and-databases
-- [ ] Prepare 2 real-world examples of using 02-sql-and-databases
-- [ ] Know the time/space complexity of common 02-sql-and-databases operations
-- [ ] Have questions ready about how the company uses 02-sql-and-databases> **Next**: [05 � Window Functions ?](05-window-functions.md)
-
-
-## Difficulty Level
-
-**Level**: Beginner
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to SQL & Databases fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master subqueries and ctes?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of subqueries and ctes helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding subqueries and ctes at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of subqueries and ctes like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply subqueries and ctes concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of subqueries and ctes?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply subqueries and ctes in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of SQL & Databases?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering SQL & Databases, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

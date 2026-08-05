@@ -1,5 +1,13 @@
 # Chapter 02: Probability Basics
 
+## Learning Objectives
+
+- Understand the three probability axioms and the addition and multiplication rules for combining events.
+- Compute conditional probabilities and apply Bayes' theorem to update beliefs with evidence.
+- Explain the difference between PMF, PDF, and CDF and when to use each for discrete versus continuous variables.
+- Apply the Binomial, Poisson, Normal, Uniform, and Exponential distributions to model real-world random processes.
+- Analyze the Central Limit Theorem and Law of Large Numbers to justify normal approximations in large samples.
+
 ## Introduction
 
 Probability theory quantifies uncertainty and randomness, forming the mathematical foundation for machine learning, Bayesian inference, and decision-making under uncertainty. From Naive Bayes classifiers to probabilistic graphical models and generative AI, every ML algorithm relies on probability concepts. This chapter covers core probability rules, Bayes theorem, and the most important probability distributions used in AI engineering.
@@ -268,7 +276,7 @@ print(f"Theoretical SEM (pop_std / sqrt(n)): {pop_std / math.sqrt(sample_size):.
 # => Even with a positive test, only 16.7% chance of having the disease!
 ```
 
-## Interview Questions
+## Interview Q&A
 
 **Q1: Explain Bayes Theorem in the context of ML model predictions.**
 A: Bayes Theorem updates prior beliefs with evidence to compute posterior probability. In ML: P(Class|Data) = P(Data|Class) * P(Class) / P(Data). Naive Bayes classifiers use this directly. In Bayesian neural networks, we maintain a distribution over weights and update it as we see data. This is crucial for uncertainty estimation in AI systems.
@@ -300,7 +308,7 @@ A: Many loss functions derive from probabilistic principles: (1) Mean Squared Er
 **Q10: Explain the difference between frequentist and Bayesian probability.**
 A: Frequentist: probability is the long-run frequency of events. Parameters are fixed (unknown) constants. Only data is random. Bayesian: probability represents degree of belief. Parameters are random variables with distributions. Bayesian incorporates prior knowledge and updates with data using Bayes rule. In ML, frequentist gives point estimates (MLE), Bayesian gives full posterior distributions (uncertainty quantification).
 
-## MCQs
+## Chapter Quiz
 
 **Q1: If P(A) = 0.5, P(B) = 0.4, P(A ∩ B) = 0.2, what is P(A ∪ B)?**
 - A) 0.5
@@ -336,6 +344,23 @@ A: Frequentist: probability is the long-run frequency of events. Parameters are 
 - C) P(A ∪ B) = P(A) + P(B)
 - D) P(A|B) = P(B)
 - **Answer: A) P(A|B) = P(A)** (Independence means knowing B doesn't change probability of A)
+
+## Exercises
+
+### Exercise 1: Bayes' Theorem Calculator
+Write a Python (NumPy/SciPy) implementation that computes the probability of disease given a positive test using Bayes' theorem, and sweeps prevalence from 0.1% to 10% to show how the posterior changes.
+- Requirements: use the law of total probability to compute P(Positive); print the posterior P(Disease|Positive) for each prevalence value; state the sensitivity and specificity used.
+- Expected output: a table of prevalence vs posterior showing that a 99%-accurate test still gives a low posterior for very rare diseases.
+
+### Exercise 2: Simulated Distributions vs Theory
+Write a Python implementation that simulates a Binomial and a Poisson distribution with NumPy, estimates PMF values from the samples, and compares them to the theoretical PMF from scipy.stats.
+- Requirements: use np.random.binomial and np.random.poisson; compute mean and variance from samples and compare with np and lambda; repeat with increasing n to show convergence (Law of Large Numbers).
+- Expected output: empirical vs theoretical probabilities with errors shrinking as the number of samples grows.
+
+### Exercise 3: Central Limit Theorem Demonstration
+Write a Python implementation that draws repeated samples from a highly skewed exponential population, computes the mean of each sample, and verifies that the distribution of sample means becomes approximately normal.
+- Requirements: use stats.normaltest on the sample means; compare the standard deviation of sample means with the theoretical SEM (population std / sqrt(sample size)); test sample sizes 10, 30, 100.
+- Expected output: printed SEM comparison and normality test results showing the sampling distribution approaching normal as n increases.
 
 ## PYQs
 
@@ -382,6 +407,15 @@ A: Frequentist: probability is the long-run frequency of events. Parameters are 
 ## Summary
 
 Probability theory provides the mathematical framework for handling uncertainty in AI and machine learning systems. The core rules (addition, multiplication, Bayes theorem) govern how probabilities combine, while probability distributions (Binomial, Poisson, Normal, Uniform, Exponential) model different types of random processes. Understanding the difference between discrete (PMF) and continuous (PDF/CDF) distributions is essential for choosing appropriate models and loss functions. The Central Limit Theorem and Law of Large Numbers justify why normal approximations work in large samples, enabling statistical inference in A/B testing and model evaluation. Mastery of these fundamentals is required for Bayesian methods, probabilistic graphical models, and uncertainty-aware AI systems.
+
+## Practical Takeaways
+
+- **P(A|B) vs P(B|A)**: Confusing these two is the prosecutor's fallacy - p-values are P(Data|H0), never P(H0|Data); use Bayes' theorem to invert conditional probabilities.
+- **Bayes Theorem**: The posterior P(A|B) = P(B|A)*P(A)/P(B) explains why even a 99% accurate test gives only ~16.7% posterior probability for a 1% prevalence disease.
+- **Poisson vs Binomial**: Use Poisson for counts in a fixed interval with no upper bound and Binomial for a fixed number of independent binary trials; Poisson approximates Binomial for large n and small p.
+- **CLT**: The sampling distribution of the mean becomes normal as n grows regardless of the population shape - this is why t-tests and z-tests work for skewed metrics like revenue with n > 30.
+- **PDF vs PMF**: P(X = x) = 0 for continuous variables - always compute probabilities over intervals using CDF differences, never evaluate the PDF at a single point.
+- **Law of Large Numbers**: The sample mean converges to the population mean as n grows; a single small sample can deviate wildly from the true probability.
 
 ## Additional Code: Law of Total Probability & Random Variable Simulation
 
@@ -436,3 +470,325 @@ print(f"Mean of sums: {np.mean(sums):.4f} (expected {n_per_sum*0.5:.4f})")
 print(f"Std of sums: {np.std(sums, ddof=1):.4f} (expected {np.sqrt(n_per_sum/12):.4f})")
 print(f"Distribution of sums is approximately normal (CLT confirmed)")
 ```
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+
+1. **Explain the core idea of Chapter 02: Probability Basics in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Chapter 02: Probability Basics.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
+
+#### Amazon Style
+
+4. **Describe a production bug caused by misunderstanding Chapter 02: Probability Basics. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Chapter 02: Probability Basics from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
+
+#### Microsoft Style
+
+6. **Compare Chapter 02: Probability Basics with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Chapter 02: Probability Basics.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
+
+#### NVIDIA Style
+
+8. **How does Chapter 02: Probability Basics behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Chapter 02: Probability Basics run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
+
+#### AI Startup Style
+
+10. **Write the smallest possible implementation of Chapter 02: Probability Basics that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
+
+### Resume Tips
+
+- Name Chapter 02: Probability Basics explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Chapter 02: Probability Basics").
+- Add a bullet describing a project that applies Chapter 02: Probability Basics to real data, with numbers.
+- Mention the tools and libraries you used alongside Chapter 02: Probability Basics (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
+
+### Interview Day Checklist
+
+- Rehearse a 60-second explanation of Chapter 02: Probability Basics and one real-world analogy.
+- Prepare one STAR story about debugging a Chapter 02: Probability Basics-related production issue.
+- Review complexity and edge cases for the classic Chapter 02: Probability Basics interview problem.
+- Have questions ready: how does the team apply Chapter 02: Probability Basics in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
+
+## True/False
+
+1. **True or False:** Chapter 02: Probability Basics builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Chapter 02: Probability Basics before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Chapter 02: Probability Basics is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Chapter 02: Probability Basics in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Chapter 02: Probability Basics chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Chapter 02: Probability Basics is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Chapter 02: Probability Basics is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Chapter 02: Probability Basics is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Chapter 02: Probability Basics issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Chapter 02: Probability Basics in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Chapter 02: Probability Basics that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Chapter 02: Probability Basics is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Chapter 02: Probability Basics in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Chapter 02: Probability Basics and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Chapter 02: Probability Basics on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+
+## Difficulty Level
+
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Chapter 02: Probability Basics to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
+
+## Tips & Tricks
+
+- Always write a one-line example of Chapter 02: Probability Basics from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Chapter 02: Probability Basics when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Chapter 02: Probability Basics twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Chapter 02: Probability Basics snippets; interviewers love original examples.
+
+## Memory Tricks
+
+- **Acronym**: build a mnemonic from the 5 key concepts of Chapter 02: Probability Basics listed in the Chapter at a Glance table.
+- **Story**: link Chapter 02: Probability Basics to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Chapter 02: Probability Basics by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Chapter 02: Probability Basics to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
+
+## Further Reading
+
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Chapter 02: Probability Basics
+- The classic textbook chapter on Chapter 02: Probability Basics (check the Research References below)
+- Two blog posts from engineers who debugged real Chapter 02: Probability Basics problems in production
+- The repository of the open-source project that implements Chapter 02: Probability Basics
+
+## Related Topics
+
+- The previous chapter in this module (see table of contents) â€” foundational for Chapter 02: Probability Basics
+- The next chapter (see Next Topic below) â€” builds on Chapter 02: Probability Basics
+- The system design chapters in Module 07 â€” how Chapter 02: Probability Basics fits into production architectures
+- The interview preparation module â€” how Chapter 02: Probability Basics is asked in screening rounds
+- The capstone project â€” where Chapter 02: Probability Basics is applied end-to-end
+
+## FAQs
+
+1. **Do I need to memorize all of Chapter 02: Probability Basics, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Chapter 02: Probability Basics asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+
+## Important Notes
+
+- Chapter 02: Probability Basics is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Chapter 02: Probability Basics.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
+
+## Historical Context
+
+- Chapter 02: Probability Basics emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Chapter 02: Probability Basics today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Chapter 02: Probability Basics â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Chapter 02: Probability Basics changes quickly; focus on fundamentals that remain stable.
+
+## Security Considerations
+
+- Never trust external input: validate and sanitize data before processing Chapter 02: Probability Basics.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
+
+## ML Intuition
+
+- Chapter 02: Probability Basics appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Chapter 02: Probability Basics helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Chapter 02: Probability Basics concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Chapter 02: Probability Basics skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Chapter 02: Probability Basics to a dataset of 10 million records? â€” Batching and vectorization.
+
+## Analogies
+
+- **Chapter 02: Probability Basics is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
+
+## Capstone Project Link
+
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Chapter 02: Probability Basics skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+
+## Flashcards
+
+<details class="tp-qa-card" data-qid="24statisticsmathematics-02probabilitybasics-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the core concept of Chapter 02: Probability Basics in one sentence?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="24statisticsmathematics-02probabilitybasics-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the most common mistake engineers make with 
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Common Mistakes section of this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="24statisticsmathematics-02probabilitybasics-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the time and space complexity of the standard Chapter 02: Probability Basics approach?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Refer to the theory and complexity analysis in this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="24statisticsmathematics-02probabilitybasics-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    When is Chapter 02: Probability Basics NOT the right choice?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Limitations section of this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="24statisticsmathematics-02probabilitybasics-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How is Chapter 02: Probability Basics applied in a real production system?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Real-World Examples section of this chapter.</p>
+  </div>
+</details>
+
+## Research References
+
+- Official documentation of the primary library for Chapter 02: Probability Basics (linked in Further Reading)
+- The classic paper or textbook chapter introducing Chapter 02: Probability Basics (see References below)
+- The standard library reference for Chapter 02: Probability Basics-related functions
+- Engineering blog posts from companies running Chapter 02: Probability Basics in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
+
+## Open-Source Tools
+
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Chapter 02: Probability Basics code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Chapter 02: Probability Basics
+
+## Debugging Guide
+
+- Start with `print()` or a debugger to inspect intermediate values in Chapter 02: Probability Basics code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Chapter 02: Probability Basics example code.
+
+## Mock Interview Section
+
+**Round 1 â€” Screening (15 min)**
+- Explain Chapter 02: Probability Basics in 60 seconds.
+- Write a minimal working example of Chapter 02: Probability Basics.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Chapter 02: Probability Basics problem in a project.
+- How would you design a system where Chapter 02: Probability Basics is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Chapter 02: Probability Basics.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Chapter 02: Probability Basics logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
+
+## Evaluation Metrics
+
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Chapter 02: Probability Basics without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
+
+## Real-World Examples
+
+- **Startup**: a small team uses Chapter 02: Probability Basics daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Chapter 02: Probability Basics patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Chapter 02: Probability Basics principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Chapter 02: Probability Basics shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Chapter 02: Probability Basics to the business outcome, not just the code.
+
+## Next Topic
+
+[Chapter 03: Hypothesis Testing](03-hypothesis-testing.md)
+
+## Limitations
+
+- Chapter 02: Probability Basics, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Chapter 02: Probability Basics depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

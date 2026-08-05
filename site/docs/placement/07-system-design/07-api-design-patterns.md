@@ -63,6 +63,7 @@ flowchart LR
     B -->|gRPC| E[Protocol Buffers over HTTP/2]
     B -->|Webhook| F[Server pushes to Callback URL]
 
+```
 ## 7.1 RESTful API Design
 
 REST (Representational State Transfer) uses resources identified by URLs and manipulated via standard HTTP methods. Each resource has a unique URL, a representation format (typically JSON), and supports GET, POST, PUT, PATCH, DELETE operations.
@@ -76,7 +77,7 @@ app.get("/api/v1/users/:id", async (req, res) => {
   if (!user) return res.status(404).json({ error: "not_found" });
   res.json(user);
 });
-```text
+```
 
 **HTTP status codes**: 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found), 409 (Conflict), 422 (Validation Error), 429 (Rate Limited), 500 (Server Error). Use consistent error response format with machine-readable error codes.
 
@@ -106,7 +107,7 @@ const resolvers = {
   Query: { user: (_, { id }) => userLoader.load(id) },
   Post: { author: (post) => userLoader.load(post.authorId) },
 };
-```text
+```
 
 **N+1 problem**: DataLoader batches individual loads into a single query per request tick, solving the N+1 problem where fetching N posts and their authors would otherwise require N+1 queries.
 
@@ -130,7 +131,7 @@ service UserService {
 message User { string id = 1; string name = 2; string email = 3; }
 message GetUserRequest { string id = 1; }
 message ChatMessage { string user_id = 1; string room_id = 2; string content = 3; }
-```text
+```
 
 **Advantages**: Binary serialization (3-10x faster than JSON), strong typing with code generation, native streaming support, HTTP/2 multiplexing and header compression.
 
@@ -176,7 +177,7 @@ class WebhookDelivery {
       .digest("hex");
   }
 }
-```text
+```
 
 **Best practices**: HMAC signature verification, HTTPS-only endpoints, idempotency keys for deduplication, exponential backoff with dead-letter queue after exhausting retries.
 
@@ -211,7 +212,7 @@ class VersioningMiddleware {
     };
   }
 }
-```text
+```
 
 **Recommendation**: URL path versioning for public APIs (explicit, easy to route, cache-friendly). Support at least two versions simultaneously with deprecation headers (Sunset, Deprecation).
 
@@ -240,7 +241,7 @@ function generateOpenAPISpec() {
     },
   };
 }
-```text
+```
 
 **API gateways** (Kong, Envoy, AWS API Gateway): centralize rate limiting, authentication, routing, logging, and monitoring at a single entry point.
 
@@ -269,7 +270,7 @@ class APIClient {
     return data;
   }
 }
-```text
+```
 
 ---
 
@@ -514,7 +515,7 @@ function rateLimit(maxRequests: number, windowMs: number) {
     next();
   };
 }
-```text
+```
 
 ## GraphQL Subscriptions and Real-Time
 
@@ -545,7 +546,7 @@ const resolvers = {
 function publishOrderUpdate(order: Order) {
   pubsub.publish(`ORDER_UPDATED_${order.id}`, { orderUpdated: order });
 }
-```text
+```
 
 ## API Design Anti-Patterns
 
@@ -610,7 +611,7 @@ class TokenBucket {
     this.lastRefill = now;
   }
 }
-```text
+```
 
 ---
 

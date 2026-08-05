@@ -1,5 +1,5 @@
 <!-- Clear Language: Keep sentences under 50 words -->
-﻿# OOP and Design Patterns for AI Engineers
+# OOP and Design Patterns for AI Engineers
 
 ## Learning Objectives
 
@@ -10,8 +10,6 @@ inheritance, and refactor monolithic code into maintainable, testable modules.
 ## Introduction
 
 Computer science fundamentals are the bedrock of every AI system. Understanding networks, operating systems, databases, and architecture helps you build reliable, scalable AI services. This module covers what interviewers expect you to know cold.
-
-
 
 ## Prerequisites
 
@@ -175,7 +173,7 @@ class InferenceClient {
         return this.provider.generate(prompt)
     }
 }
-`
+```
 
 ### Decorator Pattern: Caching, Rate Limiting, Logging
 
@@ -249,7 +247,7 @@ class LoggingDecorator implements LLMProvider {
         }
     }
 }
-`
+```
 
 ### Adapter Pattern: Unified LLM Interface
 
@@ -306,7 +304,7 @@ class HuggingFaceAdapter implements ILLMProvider {
         return new Array(768).fill(0).map(() => Math.random())
     }
 }
-`
+```
 
 ### Factory and Template Method
 
@@ -348,7 +346,7 @@ class ClassificationPipeline extends TrainingPipeline {
         console.log("Model saved with metrics:", metrics)
     }
 }
-`
+```
 
 ### SOLID Refactoring Example
 
@@ -372,7 +370,8 @@ class MonolithicService {
     }
 
     private async callOpenAI(prompt: string): Promise<string> {
-        return esponse to
+        return 
+esponse to
     }
 
     private getFromCache(key: string): string | null {
@@ -386,7 +385,7 @@ class MonolithicService {
         console.log(prompt, response)
     }
 }
-`
+```
 
 After refactoring with Dependency Inversion and composition:
 
@@ -423,7 +422,7 @@ class RefactoredService {
         return response
     }
 }
-`
+```
 
 ### Observer Pattern for ML Pipeline Monitoring
 
@@ -594,6 +593,92 @@ making your core logic testable. The rule is simple: depend on abstractions, inj
 - Test with mock providers using the same interface — swap OpenAI with a mock that returns canned responses
 - Design patterns should simplify, not complicate. If a pattern adds more code than it removes, don't use it
 
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="m00-s05-q1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q1: Explain the five SOLID principles with an example from an ML service.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Single Responsibility: a class has one reason to change — an LLMService should not also handle caching and rate limiting. Open/Closed: open for extension, closed for modification — add new providers behind an interface instead of editing existing code. Liskov Substitution: subtypes are substitutable — code accepting <code>LLMProvider</code> must work with OpenAI, Anthropic, and local implementations interchangeably. Interface Segregation: clients do not depend on unused methods — a <code>ModelInference</code> interface should not include <code>train()</code>. Dependency Inversion: depend on abstractions, not concretions — orchestration code depends on the provider interface, not on an SDK client.</p>
+    <p>The chapter's <code>MonolithicService</code> violates Single Responsibility and Dependency Inversion; the <code>RefactoredService</code> injects <code>LLMProvider</code>, <code>Cache</code>, and <code>Logger</code> interfaces instead.</p>
+    <p><strong>Interview follow-up</strong>: Which principle is violated when a mock provider cannot be substituted in tests?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m00-s05-q2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q2: How does the Strategy pattern let you swap LLM providers at runtime?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Strategy defines a family of algorithms, encapsulates each, and makes them interchangeable. An <code>InferenceStrategy</code> interface declares <code>generate(prompt)</code>; <code>OpenAIStrategy</code>, <code>AnthropicStrategy</code>, and <code>LocalStrategy</code> implement it; <code>InferenceClient</code> holds a strategy and swaps it via <code>setStrategy()</code> — callers never know which provider is active.</p>
+    <p>In AI systems this pattern also covers vector stores (Pinecone, Chroma, Qdrant) and embedding models. Combined with a Factory that reads config and constructs the right strategy, it handles most provider-switching needs in one place.</p>
+    <p><strong>Interview follow-up</strong>: How would you add a fallback provider chain on top of the Strategy pattern?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m00-s05-q3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q3: Why is the Decorator pattern ideal for caching, rate limiting, and logging around LLM calls?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Decorator wraps an object to add behavior without changing its interface. <code>CachingDecorator</code> checks a TTL cache before calling the wrapped provider; <code>RateLimitDecorator</code> enforces requests-per-minute; <code>LoggingDecorator</code> times calls and logs failures. Each implements the same <code>LLMProvider</code> interface, so decorators nest in any order: <code>new LoggingDecorator(new RateLimitDecorator(new CachingDecorator(new BasicLLMService())))</code>.</p>
+    <p>Cross-cutting concerns stay out of business logic, every decorator is independently testable, and adding a new concern never touches the core service. This is the standard production shape for LLM gateways.</p>
+    <p><strong>Interview follow-up</strong>: What order would you apply cache, rate limit, and retry decorators and why?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m00-s05-q4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q4: What problem does the Adapter pattern solve when integrating multiple model SDKs?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Each SDK has a different interface — OpenAI, Anthropic, and Hugging Face pipelines all expose different method names, message formats, and embedding dimensions. The Adapter pattern wraps each SDK behind one common interface: <code>complete(messages)</code> and <code>embedding(text)</code>. The chapter's <code>OpenAIClientAdapter</code>, <code>AnthropicClientAdapter</code>, and <code>HuggingFaceAdapter</code> each implement <code>ILLMProvider</code>, so the application code never changes when a provider is swapped.</p>
+    <p>Note embedding dimensions differ per provider (1536 vs 1024 vs 768), so the abstraction must normalize embeddings or the vector store must be versioned by model. The adapter is also where mapping to a canonical message schema belongs.</p>
+    <p><strong>Interview follow-up</strong>: Where would you normalize different embedding dimensions across providers?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m00-s05-q5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q5: Why prefer composition over inheritance in ML pipelines?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Inheritance creates an is-a relationship with tight coupling and deep hierarchies that are brittle to change — swapping the model backend means touching the class tree. Composition defines has-a relationships: a service owns an <code>LLMProvider</code>, a <code>Cache</code>, and a <code>Logger</code>, injected at construction time. Implementations swap at runtime and are mocked trivially in tests.</p>
+    <p>The chapter's refactoring example shows the same <code>handlePrompt</code> behavior implemented with composition: the provider, cache, and logger are injectable collaborators, so a test uses <code>MockLLMProvider</code> with canned responses. This is also why the Strategy and Decorator patterns are composable while inheritance hierarchies are not.</p>
+    <p><strong>Interview follow-up</strong>: Give an example where inheritance is genuinely the right call.</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m00-s05-q6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q6: Explain the dependency rule in Clean Architecture using a RAG system.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Source code dependencies point inwards. Entities (Document, Chunk, Embedding, Query) are innermost; use cases (IngestDocument, AnswerQuery) orchestrate entities; interface adapters (VectorStoreGateway, LLMGateway, DocumentStoreGateway) wrap external dependencies; frameworks (Express routes, CLI) are outermost. Inner layers never depend on outer layers.</p>
+    <p>Consequence: if Pinecone changes its API, only the Pinecone adapter changes — <code>AnswerQuery</code> is untouched. Tests exercise use cases with mock adapters. For a RAG system, the LLM gateway, vector store adapter, and document store are all swappable behind interfaces.</p>
+    <p><strong>Interview follow-up</strong>: Where would you put prompt templating — entity, use case, or adapter?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
 ## Chapter Quiz
 
 1. Which SOLID principle is violated when a class handles both model inference and request logging?
@@ -630,9 +715,6 @@ making your core logic testable. The rule is simple: depend on abstractions, inj
    - C) Composition uses less memory
    - D) Inheritance is deprecated in TypeScript
    // correct: B
-
-## Exercises
-
 
 ## Exercises
 
@@ -695,6 +777,39 @@ making your core logic testable. The rule is simple: depend on abstractions, inj
 - [ ] Know when to use composition vs inheritance
 - [ ] Have questions ready about the company's architecture and design patterns used
 
+## True/False
+
+1. **True or False:** OOP and Design Patterns for AI Engineers builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for OOP and Design Patterns for AI Engineers before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for OOP and Design Patterns for AI Engineers is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for OOP and Design Patterns for AI Engineers in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the OOP and Design Patterns for AI Engineers chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers OOP and Design Patterns for AI Engineers is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to OOP and Design Patterns for AI Engineers is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing OOP and Design Patterns for AI Engineers is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug OOP and Design Patterns for AI Engineers issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to OOP and Design Patterns for AI Engineers in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving OOP and Design Patterns for AI Engineers that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of OOP and Design Patterns for AI Engineers is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain OOP and Design Patterns for AI Engineers in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for OOP and Design Patterns for AI Engineers and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of OOP and Design Patterns for AI Engineers on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -767,16 +882,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of oop design patterns helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -811,27 +916,12 @@ Think of oop design patterns like learning a new language — start with basic v
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -871,14 +961,28 @@ When applying this topic to production, consider:
 - What monitoring would you add?
 - How would you test this in production?
 
-## References
+## Optimized Implementation
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for OOP and Design Patterns for AI Engineers.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core OOP and Design Patterns for AI Engineers logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 

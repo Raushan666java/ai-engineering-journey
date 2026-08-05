@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /ai-engineering-placement
 title: "03 — Data Structures & Algorithms"
 sidebar_label: "03 — Data Structures & Algorithms"
 sidebar_position: 52

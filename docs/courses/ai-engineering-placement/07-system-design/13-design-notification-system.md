@@ -837,7 +837,6 @@ import redis
 from pydantic import BaseModel
 import requests
 
-
 class NotificationMessage(BaseModel):
     id: str = ""
     user_id: str
@@ -851,7 +850,6 @@ class NotificationMessage(BaseModel):
     scheduled_at: Optional[int] = None
     expires_at: Optional[int] = None
 
-
 class DeviceRegistration(BaseModel):
     device_id: str
     user_id: str
@@ -859,7 +857,6 @@ class DeviceRegistration(BaseModel):
     push_token: str
     locale: str = "en"
     app_version: str = ""
-
 
 class NotificationService:
     """Core notification service with delivery, dedup, rate limiting"""
@@ -1140,7 +1137,6 @@ class NotificationService:
         import os
         return os.urandom(n)
 
-
 if __name__ == "__main__":
     service = NotificationService()
 
@@ -1174,7 +1170,26 @@ Send result: {'status': 'queued', 'id': 'a1b2c3d4-...', 'timestamp': 1712345678}
 Processed: 1 notifications
 ```
 
-## Interview Questions
+## Summary
+
+A notification system delivers timely information to users across mobile, web, and email, and production design must balance delivery guarantees, push provider integrations, user preferences, and deduplication. The architecture flows from a notification API through a preference filter, deduplication cache, rate limiter, and priority queue into a message queue (Kafka/SQS), where workers render templates and push via FCM, APNs, or Web Push. Real-time options are compared: SSE is the best fit for one-direction notifications because it auto-reconnects, WebSocket suits bidirectional chat, and polling is stateless but latency-bound. Delivery uses at-least-once semantics backed by idempotency keys in Redis with a 24-hour TTL, exponential backoff retries, a dead-letter queue after three failed attempts, and immediate token-expiry cleanup on APNs 410 and FCM 404. Scale targets include 1M+ notifications per second to 100M+ devices, with trade-offs such as FCM's 600K requests/minute quota and APNs' 4KB payload limit. AI engineers apply this to model alerting, drift monitoring, and user engagement, where quiet hours and per-channel preference checks prevent alert fatigue.
+
+- Notification flow: API to preference filter to dedup to rate limit to priority queue to message queue to worker to provider to device.
+- Delivery is at-least-once with idempotency keys; worker failures are absorbed by the queue and reprocessing.
+- APNs returns HTTP 410 and FCM returns 404/NotRegistered for expired tokens - remove them immediately.
+- Common failures are expired tokens, rate limits, missing dedup, cross-timezone sends, and no delivery-rate monitoring.
+
+## Practical Takeaways
+
+- **Fan-out**: Use a message queue with per-consumer subscriber groups so notification fan-out does not block the API.
+- **SSE for notifications**: Prefer Server-Sent Events over WebSocket for one-direction notification delivery because SSE auto-reconnects, works through firewalls, and needs no manual reconnect logic.
+- **Idempotency keys**: Deduplicate with a Redis SETNX keyed on the notification UUID with a 24-hour TTL so retried sends never produce duplicates.
+- **Token hygiene**: Treat APNs 410 and FCM 404 responses as expired-token signals and remove the device from the registry to stop wasted API calls.
+- **Quiet hours**: Evaluate quiet hours in the user's local timezone, handle overnight ranges such as 22:00-08:00, and queue rather than drop messages.
+- **Rate limiting by tier**: Enforce per-user per-minute limits (20/min free, 100/min premium) and delay over-limit notifications with a low priority instead of dropping them.
+- **Collapse keys**: Use FCM collapseKey or APNs collapseId to group non-critical duplicates so only the latest notification in the group is delivered.
+
+## Interview Q&A
 
 <details class="tp-qa-card" data-qid="sd13-q1">
   <summary class="tp-qa-question">
@@ -1381,101 +1396,319 @@ d) 16 KB
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Design WhatsApp's notification system. How does it deliver messages when users are offline?
-2. Design a real-time notification system for Gmail that handles 1B+ users with < 1s latency.
+
+1. **Explain the core idea of Design Notification System — Push, Real-Time, Delivery Guarantees in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Design Notification System — Push, Real-Time, Delivery Guarantees.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
-1. Tell me about a time you designed a notification system. What trade-offs did you make?
-2. How would you ensure 99.99% delivery reliability for critical notifications?
+
+4. **Describe a production bug caused by misunderstanding Design Notification System — Push, Real-Time, Delivery Guarantees. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Design Notification System — Push, Real-Time, Delivery Guarantees from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
-1. How does Windows push notification service work? Compare with FCM and APNs.
-2. Design a notification system that integrates with Microsoft Teams, Outlook, and mobile apps.
+
+6. **Compare Design Notification System — Push, Real-Time, Delivery Guarantees with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Design Notification System — Push, Real-Time, Delivery Guarantees.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
-1. Design a notification system for monitoring 10K GPU training jobs with alert severity levels.
-2. How would you notify ML engineers when model accuracy drops below threshold?
+
+8. **How does Design Notification System — Push, Real-Time, Delivery Guarantees behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Design Notification System — Push, Real-Time, Delivery Guarantees run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
-1. Design a low-cost notification system for a startup with 10K users using a single server.
-2. What's the simplest architecture for push notifications using Firebase Cloud Functions?
+
+10. **Write the smallest possible implementation of Design Notification System — Push, Real-Time, Delivery Guarantees that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
-- **Technical Skills**: Push notifications, FCM, APNs, WebSocket, SSE, message queues, Redis
-- **Project Description**: "Designed push notification system serving 5M users with 99.95% delivery rate, integrating FCM, APNs, and Web Push"
-- **Keywords**: Push notification, FCM, APNs, WebSocket, SSE, Real-time, Message queue
+
+- Name Design Notification System — Push, Real-Time, Delivery Guarantees explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Design Notification System — Push, Real-Time, Delivery Guarantees").
+- Add a bullet describing a project that applies Design Notification System — Push, Real-Time, Delivery Guarantees to real data, with numbers.
+- Mention the tools and libraries you used alongside Design Notification System — Push, Real-Time, Delivery Guarantees (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
 
 ### Interview Day Checklist
-- [ ] Understand FCM and APNs architecture and differences
-- [ ] Know WebSocket vs SSE trade-offs
-- [ ] Practice notification flow design (preference → dedup → rate limit → queue → deliver)
-- [ ] Be ready to discuss quiet hours, timezone handling, batching
-- [ ] Know delivery reliability patterns: retries, DLQ, idempotency
+
+- Rehearse a 60-second explanation of Design Notification System — Push, Real-Time, Delivery Guarantees and one real-world analogy.
+- Prepare one STAR story about debugging a Design Notification System — Push, Real-Time, Delivery Guarantees-related production issue.
+- Review complexity and edge cases for the classic Design Notification System — Push, Real-Time, Delivery Guarantees interview problem.
+- Have questions ready: how does the team apply Design Notification System — Push, Real-Time, Delivery Guarantees in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
+
+## True/False
+
+1. **True or False:** Design Notification System — Push, Real-Time, Delivery Guarantees builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Design Notification System — Push, Real-Time, Delivery Guarantees before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Design Notification System — Push, Real-Time, Delivery Guarantees is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Design Notification System — Push, Real-Time, Delivery Guarantees in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Design Notification System — Push, Real-Time, Delivery Guarantees chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Design Notification System — Push, Real-Time, Delivery Guarantees is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Design Notification System — Push, Real-Time, Delivery Guarantees is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Design Notification System — Push, Real-Time, Delivery Guarantees is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Design Notification System — Push, Real-Time, Delivery Guarantees issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Design Notification System — Push, Real-Time, Delivery Guarantees in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Design Notification System — Push, Real-Time, Delivery Guarantees that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Design Notification System — Push, Real-Time, Delivery Guarantees is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Design Notification System — Push, Real-Time, Delivery Guarantees in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Design Notification System — Push, Real-Time, Delivery Guarantees and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Design Notification System — Push, Real-Time, Delivery Guarantees on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
-**Level**: Advanced
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: System design fundamentals, message queues
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Design Notification System — Push, Real-Time, Delivery Guarantees to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
 
 ## Tips & Tricks
 
-**Tip**: Use FCM data messages (not display) for more control over notification rendering.
-
-**Tip**: Implement exponential backoff with jitter for retry logic.
-
-**Pro Tip**: Use APNs `apns-collapse-id` and FCM `collapse_key` for smart batching.
-
-**Pro Tip**: Monitor `token_invalid` rate to detect app uninstall trends.
+- Always write a one-line example of Design Notification System — Push, Real-Time, Delivery Guarantees from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Design Notification System — Push, Real-Time, Delivery Guarantees when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Design Notification System — Push, Real-Time, Delivery Guarantees twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Design Notification System — Push, Real-Time, Delivery Guarantees snippets; interviewers love original examples.
 
 ## Memory Tricks
 
-- **3 protocols**: **W**ebSocket (bidirectional), **S**SE (server→client), **P**olling (client→server) = **WSP**
-- **3 providers**: **F**CM (Android), **A**PNs (iOS), **W**eb Push = **FAW**
-- **Notification flow**: **F**ilter, **D**edup, **R**ate, **Q**ueue, **D**eliver = **FDRQD**
-- **Delivery triangle**: **S**peed, **R**eliability, **C**ost — pick two
+- **Acronym**: build a mnemonic from the 5 key concepts of Design Notification System — Push, Real-Time, Delivery Guarantees listed in the Chapter at a Glance table.
+- **Story**: link Design Notification System — Push, Real-Time, Delivery Guarantees to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Design Notification System — Push, Real-Time, Delivery Guarantees by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Design Notification System — Push, Real-Time, Delivery Guarantees to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
-- Firebase Cloud Messaging documentation
-- Apple Push Notification Service documentation
-- Web Push API specification (W3C)
-- "Designing Data-Intensive Applications" — messaging patterns
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Design Notification System — Push, Real-Time, Delivery Guarantees
+- The classic textbook chapter on Design Notification System — Push, Real-Time, Delivery Guarantees (check the Research References below)
+- Two blog posts from engineers who debugged real Design Notification System — Push, Real-Time, Delivery Guarantees problems in production
+- The repository of the open-source project that implements Design Notification System — Push, Real-Time, Delivery Guarantees
 
 ## Related Topics
 
-- Message queues (Kafka, RabbitMQ, SQS)
-- Real-time communication (WebRTC, gRPC streaming)
-- Mobile app architecture
-- System reliability patterns
+- The previous chapter in this module (see table of contents) â€” foundational for Design Notification System — Push, Real-Time, Delivery Guarantees
+- The next chapter (see Next Topic below) â€” builds on Design Notification System — Push, Real-Time, Delivery Guarantees
+- The system design chapters in Module 07 â€” how Design Notification System — Push, Real-Time, Delivery Guarantees fits into production architectures
+- The interview preparation module â€” how Design Notification System — Push, Real-Time, Delivery Guarantees is asked in screening rounds
+- The capstone project â€” where Design Notification System — Push, Real-Time, Delivery Guarantees is applied end-to-end
 
 ## FAQs
 
-**Q: Can I send push notifications without a backend?**
-**A**: Firebase Functions or AWS Lambda can serve as a serverless backend for push.
-
-**Q: What is the difference between local and push notifications?**
-**A**: Local: scheduled on-device, no server. Push: sent from server, delivered via provider.
-
-**Q: How do I test push notifications?**
-**A**: Use Firebase Console for FCM, APNs Pusher for iOS, and browser dev tools for web push.
+1. **Do I need to memorize all of Design Notification System — Push, Real-Time, Delivery Guarantees, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Design Notification System — Push, Real-Time, Delivery Guarantees asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-> **Note**: Always handle token expiration gracefully — remove and re-register.
+- Design Notification System — Push, Real-Time, Delivery Guarantees is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Design Notification System — Push, Real-Time, Delivery Guarantees.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
 
-> **Note**: Respect user preferences — excessive notifications lead to uninstalls.
+## Historical Context
 
-> **Note**: Use notification channels (Android 8+) for user control over notification categories.
+- Design Notification System — Push, Real-Time, Delivery Guarantees emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Design Notification System — Push, Real-Time, Delivery Guarantees today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Design Notification System — Push, Real-Time, Delivery Guarantees â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Design Notification System — Push, Real-Time, Delivery Guarantees changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
 
-- Use FCM HTTP v1 API with OAuth2 (legacy API uses server key with no scope control)
-- APNs JWT: rotate keys, use short-lived tokens
-- Never log push tokens or notification content with PII
-- Authenticate notification API requests with service-to-service auth
-- Implement rate limiting to prevent abuse and billing surprises
+- Never trust external input: validate and sanitize data before processing Design Notification System — Push, Real-Time, Delivery Guarantees.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
+
+## ML Intuition
+
+- Design Notification System — Push, Real-Time, Delivery Guarantees appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Design Notification System — Push, Real-Time, Delivery Guarantees helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Design Notification System — Push, Real-Time, Delivery Guarantees concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Design Notification System — Push, Real-Time, Delivery Guarantees skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Design Notification System — Push, Real-Time, Delivery Guarantees to a dataset of 10 million records? â€” Batching and vectorization.
+
+## Analogies
+
+- **Design Notification System — Push, Real-Time, Delivery Guarantees is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
+
+## Capstone Project Link
+
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Design Notification System — Push, Real-Time, Delivery Guarantees skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+
+## Flashcards
+
+<details class="tp-qa-card" data-qid="07systemdesign-13designnotificationsystem-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Which protocol provides automatic reconnection for real-time notifications?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) SSE</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="07systemdesign-13designnotificationsystem-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What FCM/APNs feature groups similar notifications and shows only the latest?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Collapse key</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="07systemdesign-13designnotificationsystem-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What HTTP status code from APNs indicates an expired device token?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>c) 410</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="07systemdesign-13designnotificationsystem-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Which component prevents notification overload for a single user?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Rate limiter</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="07systemdesign-13designnotificationsystem-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the maximum payload size for APNs?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) 4 KB</p>
+  </div>
+</details>
+
+## Research References
+
+- Official documentation of the primary library for Design Notification System — Push, Real-Time, Delivery Guarantees (linked in Further Reading)
+- The classic paper or textbook chapter introducing Design Notification System — Push, Real-Time, Delivery Guarantees (see References below)
+- The standard library reference for Design Notification System — Push, Real-Time, Delivery Guarantees-related functions
+- Engineering blog posts from companies running Design Notification System — Push, Real-Time, Delivery Guarantees in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
+
+## Open-Source Tools
+
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Design Notification System — Push, Real-Time, Delivery Guarantees code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Design Notification System — Push, Real-Time, Delivery Guarantees
+
+## Debugging Guide
+
+- Start with `print()` or a debugger to inspect intermediate values in Design Notification System — Push, Real-Time, Delivery Guarantees code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Design Notification System — Push, Real-Time, Delivery Guarantees example code.
+
+## Mock Interview Section
+
+**Round 1 â€” Screening (15 min)**
+- Explain Design Notification System — Push, Real-Time, Delivery Guarantees in 60 seconds.
+- Write a minimal working example of Design Notification System — Push, Real-Time, Delivery Guarantees.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Design Notification System — Push, Real-Time, Delivery Guarantees problem in a project.
+- How would you design a system where Design Notification System — Push, Real-Time, Delivery Guarantees is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Design Notification System — Push, Real-Time, Delivery Guarantees.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Design Notification System — Push, Real-Time, Delivery Guarantees logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
+
+## Evaluation Metrics
+
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Design Notification System — Push, Real-Time, Delivery Guarantees without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
+
+## Real-World Examples
+
+- **Startup**: a small team uses Design Notification System — Push, Real-Time, Delivery Guarantees daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Design Notification System — Push, Real-Time, Delivery Guarantees patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Design Notification System — Push, Real-Time, Delivery Guarantees principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Design Notification System — Push, Real-Time, Delivery Guarantees shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Design Notification System — Push, Real-Time, Delivery Guarantees to the business outcome, not just the code.
 
 ## Next Topic
 
-After notification systems, continue to file upload system design for handling media and large file transfers.
+[Design File Upload System — Direct Upload, Presigned URLs, CDN](14-design-file-upload-system.md)
+
+## Limitations
+
+- Design Notification System — Push, Real-Time, Delivery Guarantees, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Design Notification System — Push, Real-Time, Delivery Guarantees depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

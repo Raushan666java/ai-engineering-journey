@@ -66,7 +66,7 @@ flowchart LR
     E --> F[Repository Pattern]
     F --> G[Query Optimization]
     G --> H[Transactions]
-```text
+```
 
 ## 6.1 SQLAlchemy Setup
 
@@ -114,7 +114,7 @@ async def lifespan(app: FastAPI):
     await engine.dispose()
 
 app = FastAPI(lifespan=lifespan)
-```text
+```
 
 **Sync alternative** (simpler for smaller projects):
 
@@ -132,7 +132,7 @@ def get_db():
         yield db
     finally:
         db.close()
-```text
+```
 
 ## 6.2 ORM Models
 
@@ -182,7 +182,7 @@ class Post(Base):
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
 
     author = relationship("User", back_populates="posts")
-```text
+```
 
 **Column types**:
 
@@ -268,7 +268,7 @@ async def delete_user_endpoint(user_id: int, db: AsyncSession = Depends(get_db))
     deleted = await delete_user(db, user_id)
     if not deleted:
         raise HTTPException(status_code=404, detail="User not found")
-```text
+```
 
 ## 6.4 Relationships
 
@@ -332,7 +332,7 @@ async def list_posts_selectin(db: AsyncSession = Depends(get_db)):
     posts = result.scalars().all()
     # Author loaded in second query with WHERE IN clause
     return posts
-```text
+```
 
 **Relationship loading strategies**:
 
@@ -370,7 +370,7 @@ alembic downgrade -1
 
 ## View history
 alembic history
-```text
+```
 
 **Migration file example**:
 
@@ -390,7 +390,7 @@ def upgrade():
 def downgrade():
     op.drop_index("idx_users_role")
     op.drop_column("users", "role")
-```text
+```
 
 **Migration best practices**:
 - Always review auto-generated migrations before applying
@@ -466,7 +466,7 @@ async def get_user(user_id: int, repo: UserRepository = Depends(get_user_reposit
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
-```text
+```
 
 **Repository pattern benefits**: Testable (mock repository in tests), swappable (change ORM without changing business logic), consistent data access patterns.
 
@@ -523,7 +523,7 @@ async def list_posts_cursor(
     next_cursor = posts[-1].id if has_more and posts else None
 
     return {"data": posts, "next_cursor": next_cursor, "has_more": has_more}
-```text
+```
 
 **Optimization tips**:
 - Use `selectinload` instead of `joinedload` for collections
@@ -586,7 +586,7 @@ async def create_order_with_items(
         await db.flush()
         await db.refresh(order)
         return order
-```text
+```
 
 ---
 
@@ -627,7 +627,7 @@ class UserRepository {
     return prisma.user.create({ data });
   }
 }
-```text
+```
 
 ---
 
@@ -807,271 +807,3 @@ d) sqlite
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 05-fastapi-backend. When would you choose one approach over another?
-2. Design a system that efficiently handles 05-fastapi-backend at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 05-fastapi-backend. What was your approach and what was the result?
-2. How would you explain 05-fastapi-backend to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 05-fastapi-backend integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 05-fastapi-backend?
-
-#### NVIDIA Style
-1. How would you optimize 05-fastapi-backend for GPU-accelerated computing?
-2. What parallel processing patterns apply to 05-fastapi-backend?
-
-#### AI Startup Style
-1. How would you implement 05-fastapi-backend in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 05-fastapi-backend?
-
-### Resume Tips
-- **Technical Skills**: List 05-fastapi-backend under relevant technical skills
-- **Project Description**: "Implemented 05-fastapi-backend to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 05-fastapi-backend in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 05-fastapi-backend
-- [ ] Practice 3-5 problems related to 05-fastapi-backend
-- [ ] Prepare 2 real-world examples of using 05-fastapi-backend
-- [ ] Know the time/space complexity of common 05-fastapi-backend operations
-- [ ] Have questions ready about how the company uses 05-fastapi-backend> **Next**: [Async Patterns](07-async-patterns.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to FastAPI Backend fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master database with sqlalchemy?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of database with sqlalchemy helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding database with sqlalchemy at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of database with sqlalchemy like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply database with sqlalchemy concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of database with sqlalchemy?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply database with sqlalchemy in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of FastAPI Backend?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering FastAPI Backend, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Inference Workflow
-
-1. **Input Validation**: Sanitize and validate incoming requests
-2. **Preprocessing**: Transform input to model-ready format
-3. **Model Execution**: Run inference with optimized runtime
-4. **Postprocessing**: Format model output for consumption
-5. **Response**: Return results with metadata and timing
-6. **Monitoring**: Log requests, responses, and latency
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

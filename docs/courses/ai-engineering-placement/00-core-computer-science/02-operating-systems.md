@@ -1,5 +1,5 @@
 <!-- Clear Language: Keep sentences under 50 words -->
-﻿# Operating Systems for AI Engineers
+# Operating Systems for AI Engineers
 
 ## Learning Objectives
 
@@ -8,8 +8,6 @@ After this chapter you will be able to explain the difference between processes 
 ## Introduction
 
 Operating systems manage hardware resources and provide abstractions for process management, memory, and I/O. Understanding OS concepts is crucial for optimizing AI workloads and managing GPU resources.
-
-
 
 ## Prerequisites
 
@@ -49,7 +47,7 @@ graph LR
     P2 --> S
     P1 --> M
     P2 --> M
-```text
+```
 
 ### Scheduling
 
@@ -86,7 +84,7 @@ sequenceDiagram
     CPU->>Disk: Page Fault → Swap In
     Disk-->>RAM: Load Page
     CPU->>RAM: Access PA
-```text
+```
 
 ### File Systems
 
@@ -141,7 +139,6 @@ Containers are not lightweight VMs. They use Linux namespaces for isolation and 
 - **Type 1 hypervisor**: runs directly on hardware (KVM, Xen, Hyper-V). VMs have dedicated vCPUs, memory, devices
 - **Paravirtualization**: guest OS is modified to make hypercalls — better performance for I/O
 - **Bare-metal**: no hypervisor, OS runs directly. Best for GPU workloads where PCIe passthrough adds no overhead
-
 
 ### cgroups v2 Deep Dive
 
@@ -241,7 +238,7 @@ class CfsScheduler {
         }))
     }
 }
-```text
+```
 
 ### Memory Manager with Paging Simulation
 
@@ -309,7 +306,7 @@ class MemoryManager {
         return (this.totalAccesses - this.tlbMisses) / this.totalAccesses
     }
 }
-```text
+```
 
 ### Container Isolation with cgroups Simulation
 
@@ -368,7 +365,7 @@ class CgroupManager {
         }))
     }
 }
-```text
+```
 
 ### I/O Model Comparison
 
@@ -390,7 +387,7 @@ async function simulateAsyncIO(requests: number): Promise<number> {
     await Promise.all(promises)
     return 10
 }
-```text
+```
 
 ### File System Performance
 
@@ -470,7 +467,7 @@ class ThreadPoolSimulator {
         this.dispatch()
     }
 }
-```text
+```
 
 ### Memory Profiling
 
@@ -500,7 +497,7 @@ class MemoryProfiler {
         return "Peak RSS: ${peak}MB, growth: ${this.getGrowth()}MB, samples: ${this.snapshots.length}"
     }
 }
-```text
+```
 
 ## Summary
 
@@ -617,8 +614,6 @@ direct I/O give the best throughput.
 - [ ] Know the difference between blocking and async I/O with use cases
 - [ ] Have questions about the company's infrastructure and deployment model
 
-
-
 ## Difficulty Level
 
 **Level**: Intermediate
@@ -690,16 +685,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of operating systems helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -734,27 +719,12 @@ Think of operating systems like learning a new language — start with basic voc
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -793,15 +763,6 @@ When applying this topic to production, consider:
 - How would you optimize this for 10x scale?
 - What monitoring would you add?
 - How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
 
 ## Evaluation Metrics
 

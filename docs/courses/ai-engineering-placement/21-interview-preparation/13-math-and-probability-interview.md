@@ -1,17 +1,13 @@
 <!-- Clear Language: Keep sentences under 50 words -->
 # Math and Probability for ML Interviews
 
-
 ## Learning Objectives
 
 After this chapter you will be able to solve probability problems asked in ML interviews, derive MLE and MAP estimates, explain the math behind PCA and SVD, compute information-theoretic quantities like entropy and KL divergence, and reason about expectation and variance in the context of model evaluation.
 
-
 ## Introduction
 
 Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers.
-
-
 
 ## Prerequisites
 
@@ -26,7 +22,6 @@ Interviews test both technical skill and communication. DSA patterns, system des
 
 ## Theory
 
-
 ### Probability Fundamentals
 
 A probability space consists of a sample space Omega, event space, and probability measure P. The axioms: non-negativity, unit measure for Omega, and countable additivity for disjoint events.
@@ -38,7 +33,6 @@ P(A|B) = P(B|A) * P(A) / P(B)
 Bayes theorem is the foundation of Bayesian ML. The posterior is proportional to likelihood times prior. In interview contexts, Bayes theorem problems test your ability to update beliefs given evidence.
 
 Law of total probability: P(A) = sum_i P(A|B_i) * P(B_i) for a partition B_i.
-
 
 ### Random Variables and Expectation
 
@@ -52,7 +46,6 @@ Covariance: Cov(X,Y) = E[(X - E[X])(Y - E[Y])]. Correlation: Corr(X,Y) = Cov(X,Y
 
 Linearity of expectation: E[aX + bY] = aE[X] + bE[Y]. This holds even for dependent variables.
 
-
 ### Common Distributions
 
 Bernoulli: P(X=1) = p, P(X=0) = 1-p. E[X] = p, Var(X) = p(1-p).
@@ -65,7 +58,6 @@ Gaussian (Normal): N(mu, sigma^2). pdf f(x) = 1/(sigma * sqrt(2pi)) * exp(-(x-mu
 
 Exponential: models waiting time. pdf f(x) = lambda * e^(-lambda * x) for x >= 0. Memoryless property: P(X > s+t | X > s) = P(X > t).
 
-
 ### MLE and MAP
 
 Maximum Likelihood Estimation: choose parameters theta that maximize P(data | theta). For i.i.d. data, maximize product of individual likelihoods (or sum of log-likelihoods).
@@ -75,7 +67,6 @@ Example: MLE for Bernoulli: theta_hat = (number of successes) / (total trials).
 Maximum A Posteriori: theta_MAP = argmax P(theta | data) = argmax P(data | theta) * P(theta). The prior P(theta) acts as regularization.
 
 MAP with Gaussian prior on weights is equivalent to L2 regularization. MAP with Laplace prior is equivalent to L1 regularization (LASSO).
-
 
 ### Linear Algebra for ML
 
@@ -89,7 +80,6 @@ PCA: project data onto the top-k principal components (eigenvectors of the covar
 
 Matrix calculus: gradient of a scalar function with respect to a vector. Chain rule. Jacobian and Hessian matrices.
 
-
 ### Information Theory
 
 Self-information: I(x) = -log(P(x)). Surprise associated with an event.
@@ -102,8 +92,6 @@ KL Divergence: D_KL(P || Q) = sum P(x) * log(P(x)/Q(x)). Measures how much infor
 
 Mutual information: I(X;Y) = D_KL(P(X,Y) || P(X)P(Y)). Measures dependence between variables.
 
-
-
 ### Conditional Probability and Independence
 
 Two events A and B are independent if P(A and B) = P(A) * P(B). Independence does not imply disjointness. Conditional independence: P(A and B | C) = P(A | C) * P(B | C). This is the naive Bayes assumption.
@@ -111,7 +99,6 @@ Two events A and B are independent if P(A and B) = P(A) * P(B). Independence doe
 Law of total probability: P(A) = sum_i P(A | B_i) * P(B_i) for a partition B_i.
 
 Bayes theorem extended: P(A | B, C) = P(B | A, C) * P(A | C) / P(B | C).
-
 
 ### Expectation and Variance Properties
 
@@ -125,14 +112,12 @@ Var(X + Y) = Var(X) + Var(Y) + 2*Cov(X,Y)
 Law of total expectation: E[X] = E[E[X | Y]].
 Law of total variance: Var(X) = E[Var(X | Y)] + Var(E[X | Y]).
 
-
 ### Order Statistics
 
 Given n i.i.d. samples, the k-th smallest is the k-th order statistic.
 For Uniform(0,1): X_(k) ~ Beta(k, n-k+1). E[X_(k)] = k / (n+1).
 For Exponential(lambda): X_(1) ~ Exponential(n*lambda).
 Maximum of n i.i.d. exponential: grows as log(n)/lambda.
-
 
 ### Concentration Inequalities
 
@@ -141,7 +126,6 @@ Chebyshev: P(|X-mu| >= k*sigma) <= 1/k^2.
 Chernoff: sum of independent Bernoulli gives exponential tail bounds.
 Hoeffding: for bounded variables, P(|X_bar - mu| >= t) <= 2*exp(-2*n*t^2).
 
-
 ### Matrix Calculus
 
 Gradient: d/dx (a^T * x) = a
@@ -149,7 +133,6 @@ Quadratic: d/dx (x^T * A * x) = (A+A^T)*x (or 2*A*x if symmetric)
 Chain rule: dz/dx = (dy/dx)^T * dz/dy
 Jacobian: J[i][j] = d(f_i)/d(x_j)
 Hessian: H[i][j] = d^2(f)/(d(x_i)*d(x_j))
-
 
 ### Distribution Reference
 
@@ -165,19 +148,15 @@ For each distribution know: support, parameters, mean, variance, uses.
 - Beta(alpha,beta): distribution of probabilities
 - Dirichlet(alpha): multivariate Beta
 
-
 ### Confidence Intervals
 
 CI for mean: X_bar +/- z * sigma/sqrt(n)
 CI for proportion: p_hat +/- z * sqrt(p_hat*(1-p_hat)/n)
 Type I error (alpha): false positive. Type II error (beta): false negative. Power = 1-beta.
 
-
 ### Central Limit Theorem
 
 Distribution of sample mean approaches Gaussian as n grows. Rate depends on skewness. Justifies Gaussian assumptions for evaluation metrics. Bootstrap provides non-parametric alternative.
-
-
 
 ### Probability in ML Interviews
 
@@ -191,13 +170,11 @@ Common problem types:
 6. Order statistics: distribution of min/max of samples
 7. Concentration: Chebyshev, Chernoff bounds
 
-
 ## Examples
-
 
 ### Bayes Theorem Calculator
 
-`	ypescript
+```typescript
 class BayesCalculator {
     calculate(
         prior: number,
@@ -225,12 +202,11 @@ class BayesCalculator {
         }
     }
 }
-`
-
+```
 
 ### Distribution Sampler
 
-`	ypescript
+```typescript
 class DistributionSampler {
     bernoulli(p: number): number {
         return Math.random() < p ? 1 : 0
@@ -262,12 +238,11 @@ class DistributionSampler {
         return k - 1
     }
 }
-`
-
+```
 
 ### MLE Estimator
 
-`	ypescript
+```typescript
 class MLEstimator {
     bernoulliMLE(samples: number[]): number {
         const n = samples.length
@@ -286,12 +261,11 @@ class MLEstimator {
         return samples.reduce((a, b) => a + b, 0) / samples.length
     }
 }
-`
-
+```
 
 ### Linear Algebra Utilities
 
-`	ypescript
+```typescript
 class LinearAlgebra {
     dotProduct(a: number[], b: number[]): number {
         return a.reduce((sum, _, i) => sum + a[i] * b[i], 0)
@@ -346,12 +320,11 @@ class LinearAlgebra {
         return { eigenvalue: lambda, eigenvector: v }
     }
 }
-`
-
+```
 
 ### Entropy and KL Divergence
 
-`	ypescript
+```typescript
 class InformationTheory {
     entropy(probabilities: number[]): number {
         return -probabilities.reduce((sum, p) => {
@@ -395,9 +368,7 @@ class InformationTheory {
         return mi
     }
 }
-`
-
-
+```
 
 ### Hypothesis Testing Walkthrough
 
@@ -411,7 +382,6 @@ p-value = 2 * P(Z > 0.98) = 0.327
 
 At alpha = 0.05, p > 0.05, so we cannot reject H0. The observed 20% relative lift is not statistically significant at this sample size.
 
-
 ### Bootstrap Confidence Intervals
 
 When CLT assumptions do not hold, bootstrap provides non-parametric confidence intervals:
@@ -421,7 +391,6 @@ When CLT assumptions do not hold, bootstrap provides non-parametric confidence i
 3. The 2.5th and 97.5th percentiles of the bootstrap distribution form the 95% CI
 
 Bootstrap does not assume normality and works for any statistic. It is computationally expensive but unbiased.
-
 
 ### PCA Math Walkthrough
 
@@ -433,7 +402,6 @@ Given centered data matrix X (n x d), PCA computes:
 
 PCA minimizes reconstruction error: ||X - X * V_k * V_k^T||_F^2
 The proportion of variance explained by k components: sum(lambda_1..k) / sum(lambda_all)
-
 
 ### MLE Derivation Example
 
@@ -450,9 +418,6 @@ p_hat = k/n
 
 The MLE for Bernoulli is simply the sample proportion.
 
-
-
-
 ### Bayes Theorem Problem Bank
 
 Problem 1: A factory has two machines. Machine A produces 60% of items with 2% defect rate. Machine B produces 40% of items with 5% defect rate. An item is randomly selected and found defective. What is the probability it came from Machine A?
@@ -462,7 +427,6 @@ P(A|D) = P(D|A)*P(A) / P(D) = 0.02*0.60 / (0.02*0.60 + 0.05*0.40) = 0.012 / 0.03
 Problem 2: A spam filter has 99% accuracy on spam (true positive) and 98% accuracy on non-spam (true negative). If 10% of emails are spam, what is the probability an email flagged as spam is actually spam?
 
 P(S|F) = 0.99*0.10 / (0.99*0.10 + 0.02*0.90) = 0.099 / 0.117 = 0.846 = 84.6%
-
 
 ### Expectation Problem Bank
 
@@ -477,7 +441,6 @@ Problem 3: Randomly permute n elements. What is the expected number of fixed poi
 
 E = sum_i P(element i is fixed) = sum_i 1/n = n * 1/n = 1. Expected number of fixed points is always 1 regardless of n.
 
-
 ### Linear Algebra Problem Bank
 
 Problem 1: Given a symmetric positive definite matrix A, show that x^T * A * x > 0 for all non-zero x.
@@ -488,7 +451,6 @@ By definition: a symmetric matrix is positive definite if all eigenvalues are po
 Problem 2: Show that the eigenvalues of a covariance matrix are non-negative.
 
 Covariance matrix Sigma = E[(X - mu)*(X - mu)^T]. For any vector v, v^T * Sigma * v = E[(v^T*(X-mu))^2] = E[Y^2] >= 0 where Y = v^T*(X-mu). So Sigma is positive semidefinite, hence eigenvalues >= 0.
-
 
 ### Information Theory Problem Bank
 
@@ -503,7 +465,6 @@ H(Y) = -0.55*log2(0.55) - 0.45*log2(0.45) = 0.993 bits.
 H(Y|X) = 0.5*H(0.8,0.2) + 0.5*H(0.3,0.7) = 0.5*0.722 + 0.5*0.881 = 0.801 bits.
 I(X;Y) = H(Y) - H(Y|X) = 0.993 - 0.801 = 0.192 bits.
 
-
 ### Variance and Covariance Problem Bank
 
 Problem 1: X ~ Bernoulli(0.5) and Y = 1 - X. What is Cov(X, Y)?
@@ -517,9 +478,6 @@ Var(E[X|Y]) = E[E[X|Y]^2] - E[E[X|Y]]^2 = E[E[X|Y]^2] - E[X]^2.
 E[Var(X|Y)] = E[E[X^2|Y] - E[X|Y]^2] = E[X^2] - E[E[X|Y]^2].
 Adding: E[Var(X|Y)] + Var(E[X|Y]) = E[X^2] - E[X]^2 = Var(X).
 
-
-
-
 ### Gradient Descent Math
 
 For linear regression with MSE loss: L(w) = (1/n) * ||Xw - y||^2
@@ -532,7 +490,6 @@ Where sigma(z) = 1/(1 + exp(-z))
 
 Stochastic gradient descent: use one sample per update. Mini-batch: use m samples. Tradeoff between gradient noise and computational efficiency.
 
-
 ### Entropy in Decision Trees
 
 Information gain at node: IG(D, feature) = H(D) - sum_v (|D_v|/|D|) * H(D_v)
@@ -542,9 +499,6 @@ Gini impurity: G(D) = 1 - sum_c p_c^2. Alternative to entropy, computationally s
 
 Both measures choose splits that maximize class purity in child nodes. Entropy is slightly more computationally expensive but produces more balanced trees.
 
-
-
-
 ## Visual Explanation
 
 ```mermaid
@@ -553,7 +507,7 @@ flowchart TD
     B --> C[Output]
     C --> D[Feedback Loop]
     D --> B
-```text
+```
 
 ## Visual Analogy
 
@@ -566,20 +520,11 @@ Think of math and probability interview like a **delivery system**:
 
 This analogy helps because math and probability interview, like a delivery system, involves transforming inputs into outputs efficiently while handling constraints and edge cases.
 
-## Exercises
-
-**Easy** — Implement a basic math and probability interview example that demonstrates the core concept.
-
-**Medium** — Create a more complex implementation that handles edge cases.
-
-**Hard** — Design an optimized solution for large-scale math and probability interview scenarios.
-
 ## Summary
 
 Math and probability are tested directly in ML interviews. Bayes theorem, MLE/MAP, and distributions appear in nearly every loop. Linear algebra (eigenvalues,.
 SVD, PCA) and information theory (entropy, KL divergence) underpin the ML algorithms you will discuss. The core skill is translating an interview problem into a probability or.
 linear algebra formulation and solving it step by step.
-
 
 ## Practical Takeaways
 
@@ -590,6 +535,91 @@ linear algebra formulation and solving it step by step.
 - Entropy is the foundation of decision trees, cross-entropy loss, and KL-based model evaluation
 - In interviews, always state your assumptions before computing
 
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="m21-s13-q1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q1: Solve the disease-testing Bayes problem: 1% prevalence, 99% sensitivity, 95% specificity. What is the probability of disease given a positive test?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Let D = disease, T+ = positive test. We want P(D|T+) = P(T+|D) P(D) / P(T+). P(T+) = 0.99 x 0.01 + 0.05 x 0.99 = 0.0099 + 0.0495 = 0.0594. So P(D|T+) = 0.0099 / 0.0594 = 0.167 — only about 17%.</p>
+    <p>Counterintuitive because the 5% false positive rate applies to 99% of the population. The chapter's <code>diseaseTesting()</code> in <code>BayesCalculator</code> computes exactly this, and the code example prints ~0.167 for these parameters. State assumptions (test accuracy, prevalence) before computing.</p>
+    <p><strong>Interview follow-up</strong>: How does the answer change if prevalence is 10%?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s13-q2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q2: Derive the MLE for a Bernoulli distribution and relate MAP to regularization.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>With n flips and k heads, the likelihood is L(p) = p^k (1-p)^(n-k). Take logs: log L = k log p + (n-k) log(1-p). Set the derivative to zero: k/p - (n-k)/(1-p) = 0, giving k = np, so p_hat = k/n — the sample proportion. The chapter walks this derivation step by step.</p>
+    <p>MAP maximizes P(theta|data) proportional to likelihood times prior. A Gaussian prior on weights is equivalent to L2 regularization; a Laplace prior is equivalent to L1 (LASSO). This is why MAP = MLE + prior, and the prior is a regularizer.</p>
+    <p><strong>Interview follow-up</strong>: What is the MLE for the variance of a Gaussian, and why does it use n instead of n-1?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s13-q3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q3: Compute the expected number of rolls until a 6 appears, and the expected fixed points in a random permutation.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Rolls until first 6 follow a Geometric(p=1/6) distribution with expectation 1/p = 6. By linearity of expectation, E[number of fixed points] = sum over elements i of P(element i is fixed) = n x (1/n) = 1, independent of n — linearity holds even though the events are dependent.</p>
+    <p>These are the two most common expectation tricks in interviews: geometric waiting time (1/p) and decomposing a complex random variable into indicators. The chapter's expectation problem bank includes both, plus the die-roll-with-double variant with E = 10/6 + (1/3)(2)(3.5) = 4.</p>
+    <p><strong>Interview follow-up</strong>: What is the expected number of coin flips to see two consecutive heads?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s13-q4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q4: Define entropy, cross-entropy, and KL divergence, and state when they are equal or zero.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Entropy H(X) = -sum p(x) log p(x) measures average information; a uniform distribution maximizes it (a biased coin with p=0.9 has H = 0.469 bits vs 1 bit fair). Cross-entropy H(P,Q) = -sum p(x) log q(x) is the classification loss; minimizing it pushes Q toward P. KL divergence D_KL(P||Q) = sum p(x) log(p(x)/q(x)) = H(P,Q) - H(P) measures information lost when Q approximates P.</p>
+    <p>KL is non-negative and zero iff P = Q; it is asymmetric (D_KL(P||Q) != D_KL(Q||P)). The chapter's <code>InformationTheory</code> class computes all three, and the mutual information problem bank shows I(X;Y) = H(Y) - H(Y|X) = 0.192 bits.</p>
+    <p><strong>Interview follow-up</strong>: Why is cross-entropy loss numerically stabilized by log-softmax?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s13-q5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q5: Walk through PCA via SVD and explain why SVD is the workhorse.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Center the data X (n x d), compute the covariance matrix Sigma = X^T X / (n-1), eigendecompose Sigma v = lambda v, sort eigenvalues descending, and project X onto the top-k eigenvectors. PCA minimizes reconstruction error ||X - X V_k V_k^T||_F^2, and explained variance is the ratio of top-k eigenvalues to the total.</p>
+    <p>Numerically, computing the SVD A = U Sigma V^T directly is more stable than forming the covariance matrix, which squares the condition number. SVD also underlies matrix factorization for recommendations and low-rank approximations. The chapter's <code>LinearAlgebra</code> class implements covariance and power iteration, and the Python example shows the full <code>pca()</code> from scratch.</p>
+    <p><strong>Interview follow-up</strong>: When would you choose truncated SVD over PCA for sparse high-dimensional data?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s13-q6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q6: A/B test: control converts 5% of 1000, treatment 6% of 1000. Is the lift statistically significant?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Pooled proportion p = (50 + 60)/2000 = 0.055. SE = sqrt(0.055 x 0.945 x (1/1000 + 1/1000)) = 0.0102. Z = (0.06 - 0.05)/0.0102 = 0.98. p-value = 2 P(Z > 0.98) = 0.327. At alpha = 0.05 we cannot reject H0 — the 20% relative lift is not significant at this sample size.</p>
+    <p>This is why sample size must be computed up front from the minimum detectable effect, significance level, and power (the chapter's <code>ABTestCalculator</code> implements this). Guardrail metrics (latency, error rate) protect system health while the experiment runs.</p>
+    <p><strong>Interview follow-up</strong>: What sample size is needed to detect a 1% absolute lift with 80% power?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
 
 ## Chapter Quiz
 
@@ -630,6 +660,18 @@ linear algebra formulation and solving it step by step.
 
 #
 
+## Exercises
+
+**Easy** — Implement a Monte Carlo simulation that estimates pi by sampling points in a unit square and counting those inside the unit circle.
+
+**Medium** — Write a function that computes the posterior distribution for a Beta-Bernoulli model given prior parameters alpha, beta and observed data.
+
+**Medium** — Implement PCA from scratch using SVD (compute the covariance matrix, find top-k eigenvectors).
+
+**Hard** — Write a function that computes the gradient of the cross-entropy loss with respect to the model parameters for binary classification.
+
+**Hard** — Implement Newton-Raphson optimization to find the MLE for logistic regression parameters.
+
 ## Common Mistakes
 
 1. Not understanding the fundamental concepts before applying them
@@ -637,6 +679,16 @@ linear algebra formulation and solving it step by step.
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
+## Revision Notes
+
+- **Bayes Theorem**: Posterior = (Likelihood × Prior) / Evidence
+- **MLE**: Maximize likelihood function; for Gaussian, it's sample mean and std
+- **MAP**: Maximize posterior = likelihood × prior; L2 reg = Gaussian prior
+- **KL Divergence**: Asymmetric; KL(P||Q) ≠ KL(Q||P); measures information loss
+- **Entropy**: H(X) = -Σ p(x) log p(x); measures uncertainty
+- **Variance**: Var(X) = E[X²] - E[X]²; always ≥ 0
+- **Covariance**: Measures linear relationship between two variables
 
 ## Code Examples
 
@@ -667,7 +719,7 @@ false_positive_rate = 1 - specificity  # 5%
 posterior = bayes_theorem(prior_disease, sensitivity, 
                           sensitivity * prior_disease + false_positive_rate * (1 - prior_disease))
 print(f"P(Disease | Positive test) = {posterior:.4f}")  # ~0.167
-```text
+```
 
 ### MLE for Gaussian
 
@@ -686,7 +738,7 @@ data = np.random.normal(loc=5, scale=2, size=1000)
 mu_hat, sigma_hat = mle_gaussian(data)
 print(f"True mu: 5.0, MLE mu: {mu_hat:.4f}")
 print(f"True sigma: 2.0, MLE sigma: {sigma_hat:.4f}")
-```text
+```
 
 ### KL Divergence
 
@@ -707,7 +759,7 @@ x = np.linspace(-5, 5, 1000)
 p = np.exp(-x**2 / 2) / np.sqrt(2 * np.pi)  # N(0,1)
 q = np.exp(-(x-1)**2 / 2) / np.sqrt(2 * np.pi)  # N(1,1)
 print(f"KL(N(0,1) || N(1,1)) = {kl_divergence(p, q):.4f}")
-```text
+```
 
 ### PCA from Scratch
 
@@ -743,29 +795,7 @@ X = np.random.randn(100, 3)
 X_2d, comps, var = pca(X, k=2)
 print(f"Explained variance: {var}")
 print(f"Shape: {X.shape} -> {X_2d.shape}")
-```text
-
-## Exercises
-
-**Easy** — Implement a Monte Carlo simulation that estimates pi by sampling points in a unit square and counting those inside the unit circle.
-
-**Medium** — Write a function that computes the posterior distribution for a Beta-Bernoulli model given prior parameters alpha, beta and observed data.
-
-**Medium** — Implement PCA from scratch using SVD (compute the covariance matrix, find top-k eigenvectors).
-
-**Hard** — Write a function that computes the gradient of the cross-entropy loss with respect to the model parameters for binary classification.
-
-**Hard** — Implement Newton-Raphson optimization to find the MLE for logistic regression parameters.
-
-## Revision Notes
-
-- **Bayes Theorem**: Posterior = (Likelihood × Prior) / Evidence
-- **MLE**: Maximize likelihood function; for Gaussian, it's sample mean and std
-- **MAP**: Maximize posterior = likelihood × prior; L2 reg = Gaussian prior
-- **KL Divergence**: Asymmetric; KL(P||Q) ≠ KL(Q||P); measures information loss
-- **Entropy**: H(X) = -Σ p(x) log p(x); measures uncertainty
-- **Variance**: Var(X) = E[X²] - E[X]²; always ≥ 0
-- **Covariance**: Measures linear relationship between two variables
+```
 
 ## Placement Section
 
@@ -803,6 +833,39 @@ print(f"Shape: {X.shape} -> {X_2d.shape}")
 - [ ] Prepare 2 examples of applying statistics in real projects
 - [ ] Know the difference between Type I and Type II errors
 
+## True/False
+
+1. **True or False:** Math and Probability for ML Interviews builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Math and Probability for ML Interviews before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Math and Probability for ML Interviews is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Math and Probability for ML Interviews in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Math and Probability for ML Interviews chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Math and Probability for ML Interviews is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Math and Probability for ML Interviews is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Math and Probability for ML Interviews is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Math and Probability for ML Interviews issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Math and Probability for ML Interviews in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Math and Probability for ML Interviews that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Math and Probability for ML Interviews is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Math and Probability for ML Interviews in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Math and Probability for ML Interviews and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Math and Probability for ML Interviews on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -875,16 +938,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of math and probability interview helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -919,27 +972,12 @@ Think of math and probability interview like learning a new language — start w
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -965,14 +1003,47 @@ When applying this topic to production, consider:
 4. Verify configuration settings
 5. Test with known-good inputs
 
-## References
+## Mock Interview Section
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+**Round 1 â€” Screening (15 min)**
+- Explain Math and Probability for ML Interviews in 60 seconds.
+- Write a minimal working example of Math and Probability for ML Interviews.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Math and Probability for ML Interviews problem in a project.
+- How would you design a system where Math and Probability for ML Interviews is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Math and Probability for ML Interviews.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Math and Probability for ML Interviews logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 

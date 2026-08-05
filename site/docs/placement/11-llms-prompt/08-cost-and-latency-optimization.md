@@ -51,7 +51,7 @@ flowchart LR
     I --> J[Track Usage]
     J --> K[Update Budget]
     K --> L[Return Response]
-```text
+```
 
 ## 8.1 Cost Drivers
 
@@ -107,7 +107,7 @@ def calculate_cost(
 
 print(json.dumps(calculate_cost("gpt-4o", 2000, 500), indent=2))
 print(json.dumps(calculate_cost("gpt-4o-mini", 2000, 500), indent=2))
-```text
+```
 
 ### 8.1.2 Cost Comparison Across Models
 
@@ -123,7 +123,7 @@ def compare_model_costs(input_tokens: int, output_tokens: int) -> None:
 
 
 compare_model_costs(10000, 2000)
-```text
+```
 
 ### 8.1.3 Hidden Cost Drivers
 
@@ -176,7 +176,7 @@ analyzer.record_call(1000, 200)
 analyzer.record_call(1500, 300)
 analyzer.record_retry(500)
 print(json.dumps(analyzer.summary(), indent=2))
-```text
+```
 
 ## 8.2 Token Optimization
 
@@ -205,7 +205,7 @@ compressed = compress_system_prompt(original_prompt)
 print(f"Original length: {len(original_prompt)} chars")
 print(f"Compressed length: {len(compressed)} chars")
 print(f"Compressed: {compressed}")
-```text
+```
 
 ### 8.2.2 Output Length Control
 
@@ -252,7 +252,7 @@ def optimize_output_strategy(
 
 
 print(optimize_output_strategy("Explain quantum computing.", 5))
-```text
+```
 
 
 ## Overview
@@ -312,7 +312,7 @@ optimizer = PromptTemplateOptimizer()
 optimizer.register_template("qa", "You are a Q&A assistant. Be accurate. Be concise.")
 optimizer.register_template("summary", "You are a summarizer. Be accurate. Be concise.")
 print(optimizer.estimate_savings(10000))
-```text
+```
 
 ### 8.2.4 Dynamic Prompt Truncation
 
@@ -363,7 +363,7 @@ docs = ["A" * 5000, "B" * 5000, "C" * 5000]
 query = "What is the capital of France?"
 fitted = smart_context_fit(docs, query, 2000)
 print(f"Fitted context length: {len(fitted)} chars")
-```text
+```
 
 ## 8.3 Caching Strategies
 
@@ -436,7 +436,7 @@ cache.set(msgs, "4", "gpt-4o-mini")
 second = cache.get(msgs, "gpt-4o-mini")
 print(f"Second get (hit): {second}")
 print(f"Stats: {cache.stats()}")
-```text
+```
 
 
 ## Overview
@@ -492,7 +492,7 @@ found = sem_cache.find_similar(emb2)
 print(f"Similar query found: {found}")
 not_found = sem_cache.find_similar(emb3)
 print(f"Dissimilar query found: {not_found}")
-```text
+```
 
 
 ## Overview
@@ -526,7 +526,7 @@ layered = LayeredCache(exact_ttl=600, semantic_threshold=0.92)
 
 ## Usage: layered.get(messages, embedding, "gpt-4o-mini")
 print(f"Layered cache ready. Exact TTL: {layered.exact_cache.ttl}")
-```text
+```
 
 
 ## Overview
@@ -588,7 +588,7 @@ invalidator.record_access("key1")
 invalidator.record_access("key2")
 invalidator.invalidate_by_pattern(dummy_cache, "model-")
 print(f"After pattern invalidation: {dummy_cache}")
-```text
+```
 
 ## 8.4 Batching
 
@@ -633,7 +633,7 @@ batcher = RequestBatcher(max_batch_size=5)
 texts = ["Article about AI", "Article about ML", "Article about DL"]
 combined = batcher.batch_summarize(texts, "Summarize each text in one sentence.")
 print(f"Combined prompt length: {len(combined)} chars")
-```text
+```
 
 ### 8.4.2 Prompt Packing
 
@@ -663,7 +663,7 @@ Labels:"""
 items = ["Great product!", "Terrible service", "It was okay"]
 batches = pack_classification_batch(items, ["positive", "negative", "neutral"])
 print(batches[0])
-```text
+```
 
 ### 8.4.3 Inference Batching (Server-Side)
 
@@ -715,7 +715,7 @@ def dummy_model(batch: List[str]) -> List[str]:
 batcher = InferenceBatcher(dummy_model, max_batch_size=10)
 results = batcher.benchmark(["a"] * 20)
 print(results)
-```text
+```
 
 ## 8.5 Latency Management
 
@@ -763,7 +763,7 @@ profiles = [
 for p in profiles:
     model = select_model(p)
     print(f"Complexity={p.complexity}, Budget={p.latency_budget_ms}ms -> {model}")
-```text
+```
 
 ### 8.5.2 Streaming
 
@@ -805,7 +805,7 @@ class StreamingClient:
 client = StreamingClient(["hello", " world"], 0.1)
 ttft = client.measure_time_to_first_token()
 print(f"Time to first token: {ttft:.3f}s")
-```text
+```
 
 ### 8.5.3 Speculative Decoding
 
@@ -850,7 +850,7 @@ class MockTargetModel:
 decoder = SpeculativeDecoder(MockDraftModel(), MockTargetModel())
 output = decoder.decode("What is the capital of France?")
 print(f"Speculative output: {output}")
-```text
+```
 
 
 ## Overview
@@ -875,7 +875,7 @@ def create_concise_prompt(original_prompt: str) -> str:
 
 long_response = "The capital of France is Paris. It is a beautiful city located on the Seine River. The Eiffel Tower is a famous landmark."
 print(f"Trimmed: {trim_response(long_response, 2)}")
-```text
+```
 
 ## 8.6 Budget Monitoring
 
@@ -962,7 +962,7 @@ tracker.record("gpt-4o-mini", 200000, 40000)
 print(f"Monthly cost: ${tracker.monthly_cost()}")
 print(f"Budget remaining: ${tracker.budget_remaining()}")
 print(f"Top models: {tracker.top_models_by_cost()}")
-```text
+```
 
 ### 8.6.2 Alerting System
 
@@ -1009,7 +1009,7 @@ class BudgetAlertSystem:
 alert_system = BudgetAlertSystem(thresholds=[0.5, 0.75, 0.9, 1.0])
 alerts = alert_system.check_budget(tracker)
 print(f"Alerts: {alerts}")
-```text
+```
 
 ### 8.6.3 Cost Attribution
 
@@ -1053,7 +1053,7 @@ class AttributionTracker:
 
 attribution = AttributionTracker()
 print("Attribution tracker ready")
-```text
+```
 
 ## 8.7 Practical Optimization Checklist
 
@@ -1089,7 +1089,7 @@ audit.add_check("Set max_tokens constraints", True, 0)
 audit.add_check("Monitor usage with alerts", True, 0)
 
 print(json.dumps(audit.report(), indent=2))
-```text
+```
 
 ## Summary
 
@@ -1340,270 +1340,3 @@ Answer: C
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 11-llms-prompt-engineering. When would you choose one approach over another?
-2. Design a system that efficiently handles 11-llms-prompt-engineering at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 11-llms-prompt-engineering. What was your approach and what was the result?
-2. How would you explain 11-llms-prompt-engineering to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 11-llms-prompt-engineering integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 11-llms-prompt-engineering?
-
-#### NVIDIA Style
-1. How would you optimize 11-llms-prompt-engineering for GPU-accelerated computing?
-2. What parallel processing patterns apply to 11-llms-prompt-engineering?
-
-#### AI Startup Style
-1. How would you implement 11-llms-prompt-engineering in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 11-llms-prompt-engineering?
-
-### Resume Tips
-- **Technical Skills**: List 11-llms-prompt-engineering under relevant technical skills
-- **Project Description**: "Implemented 11-llms-prompt-engineering to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 11-llms-prompt-engineering in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 11-llms-prompt-engineering
-- [ ] Practice 3-5 problems related to 11-llms-prompt-engineering
-- [ ] Prepare 2 real-world examples of using 11-llms-prompt-engineering
-- [ ] Know the time/space complexity of common 11-llms-prompt-engineering operations
-- [ ] Have questions ready about how the company uses 11-llms-prompt-engineeringand user.
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to LLMs & Prompt Engineering fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master cost and latency optimization?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of cost and latency optimization helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding cost and latency optimization at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of cost and latency optimization like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply cost and latency optimization concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of cost and latency optimization?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply cost and latency optimization in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of LLMs & Prompt Engineering?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Prompt Engineering Notes
-
-- **Be Specific**: Clear, detailed prompts get better results
-- **Provide Examples**: Few-shot learning improves consistency
-- **Use Structured Output**: JSON, tables, or markdown for parsing
-- **Chain of Thought**: Break complex reasoning into steps
-- **Temperature Control**: Adjust creativity vs consistency
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering LLMs & Prompt Engineering, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

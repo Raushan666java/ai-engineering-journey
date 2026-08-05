@@ -14,9 +14,6 @@
 
 Machine learning is the core of AI engineering. From linear regression to ensemble methods, understanding these algorithms lets you build, debug, and improve models. This module covers the math and code behind ML.
 
-
-
-
 ## Prerequisites
 
 - Basic programming knowledge
@@ -31,8 +28,6 @@ Machine learning is the core of AI engineering. From linear regression to ensemb
 ## Theory
 
 Understanding logistic regression is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how logistic regression works in practice.
-
-
 
 ## Chapter at a Glance
 
@@ -57,6 +52,7 @@ flowchart LR
     H --> I[Optimized Weights]
     I --> J[Predict: p > 0.5]
 
+```
 ## 3.1 Sigmoid & Odds
 
 Logistic regression models the probability that an instance belongs to the positive class: p = 1 / (1 + e^{-z}) where z = Xw + b.
@@ -78,7 +74,7 @@ class Sigmoid {
     return Math.log(p / (1 - p));
   }
 }
-```text
+```
 
 **Decision boundary**: p >= 0.5 predicts class 1, p < 0.5 predicts class 0. This corresponds to z >= 0.
 
@@ -121,7 +117,7 @@ class CrossEntropyLoss {
     return loss / n;
   }
 }
-```text
+```
 
 ---
 
@@ -175,7 +171,7 @@ class LogisticRegression {
     return preds.filter((p, i) => p === y[i]).length / y.length;
   }
 }
-```text
+```
 
 ---
 
@@ -230,7 +226,7 @@ class MulticlassLogisticRegression {
     }).map((probs) => probs.indexOf(Math.max(...probs)));
   }
 }
-```text
+```
 
 **One-vs-Rest (OvR)**: Train K binary classifiers. **Softmax**: Train one multi-class model. Softmax is preferred when classes are mutually exclusive.
 
@@ -295,7 +291,6 @@ class RegularizedLogisticRegression:
         probs = np.clip(probs, eps, 1 - eps)
         return -np.mean(y * np.log(probs) + (1 - y) * np.log(1 - probs))
 
-
 ## Demo: compare L1 vs L2 vs no regularization
 np.random.seed(42)
 X_demo = np.random.randn(200, 20)
@@ -312,7 +307,7 @@ for name, model in models.items():
     losses = model.fit(X_demo, y_demo)
     nz = np.sum(np.abs(model.weights) > 1e-6)
     print(f"{name}: non-zero weights={nz}, final_loss={losses[-1]:.4f}")
-```text
+```
 
 **L1 (Lasso)**: Performs feature selection by zeroing out unimportant coefficients. Good for high-dimensional sparse problems.
 
@@ -353,7 +348,7 @@ class LogisticEvaluation {
     return result;
   }
 }
-```text
+```
 
 ---
 
@@ -370,7 +365,7 @@ async function trainLogisticModel(X: number[][], y: number[]): Promise<tf.Sequen
   await model.fit(tf.tensor2d(X), tf.tensor1d(y), { epochs: 50, batchSize: 32 });
   return model;
 }
-```text
+```
 
 ## Summary
 
@@ -473,9 +468,7 @@ d) Precision
 
 **Hard** — Implement logistic regression with L1 regularization (lasso) using coordinate descent. Show how increasing alpha drives coefficients to zero.
 
-
 ---
-
 
 ## Common Mistakes
 
@@ -531,6 +524,39 @@ d) Precision
 - [ ] Know the time/space complexity of common 08-machine-learning operations
 - [ ] Have questions ready about how the company uses 08-machine-learning> **Next**: [Decision Trees & Random Forest](04-decision-trees-and-rf.md)
 
+## True/False
+
+1. **True or False:** Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Logistic Regression  -  Sigmoid, Cross-Entropy, Multiclass on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -603,16 +629,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of logistic regression helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -647,27 +663,12 @@ Think of logistic regression like learning a new language — start with basic v
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -715,15 +716,6 @@ For production systems, consider:
 - **Async/Await**: Use non-blocking I/O for concurrent operations
 - **Connection Pooling**: Reuse database and API connections
 - **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
 
 ## Evaluation Metrics
 

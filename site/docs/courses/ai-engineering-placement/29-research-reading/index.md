@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "29 — Research Reading & AI Literature"
+sidebar_label: "29 — Research Reading & AI Literature"
+sidebar_position: 313
+---
 # 29 — Research Reading & AI Literature
 
 ## Overview

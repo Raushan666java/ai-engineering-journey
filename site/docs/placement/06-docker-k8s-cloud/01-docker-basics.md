@@ -46,7 +46,7 @@ flowchart LR
     F --> G[Networking]
     G --> H[Volumes]
     H --> I[Docker Compose]
-```text
+```
 
 
 ## Introduction
@@ -85,7 +85,7 @@ Containers provide OS-level virtualization by sharing the host kernel, while VMs
 ## Check Docker version
 docker --version
 docker info
-```text
+```
 
 **Comparison table**:
 
@@ -120,7 +120,7 @@ flowchart LR
         D1 --> D2[Host OS]
         D2 --> D3[Hardware]
     end
-```text
+```
 
 
 
@@ -148,7 +148,7 @@ docker ps
 
 ## Show all containers (including stopped)
 docker ps -a
-```text
+```
 
 **Key Docker objects**:
 
@@ -162,7 +162,7 @@ flowchart TD
     C --> I
     C --> N
     C --> V
-```text
+```
 
 Images are read-only templates. Containers are runnable instances of images. Each container gets its own filesystem, network stack, and process tree.
 
@@ -203,7 +203,7 @@ docker image prune  # remove dangling images
 
 ## Show image layers
 docker history nginx:latest
-```text
+```
 
 **Image naming convention**:
 
@@ -220,7 +220,7 @@ Examples: `python:3.11-slim`, `nginx:latest`, `myregistry.com/team/app:v2`
 ## Save and load images as tar files
 docker save -o my-image.tar my-image:tag
 docker load -i my-image.tar
-```text
+```
 
 
 
@@ -263,7 +263,7 @@ COPY --from=builder /app/src ./src
 EXPOSE 8000
 
 CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
-```text
+```
 
 **Key Dockerfile instructions**:
 
@@ -289,7 +289,7 @@ docker build -t my-app:v1 .
 
 ## Build with build args
 docker build --build-arg VERSION=2.0 -t my-app:v2 .
-```text
+```
 
 
 
@@ -345,7 +345,7 @@ docker inspect web
 
 ## View resource usage
 docker stats web
-```text
+```
 
 **Container states**:
 
@@ -360,7 +360,7 @@ stateDiagram-v2
     Stopped --> Running: docker start
     Stopped --> [*]: docker rm
     Exited --> [*]: docker rm
-```text
+```
 
 
 
@@ -390,7 +390,7 @@ docker network connect my-network web
 
 ## Inspect network
 docker network inspect my-network
-```text
+```
 
 **Network drivers**:
 
@@ -409,7 +409,7 @@ docker network inspect my-network
 docker run -d -p 8080:80 -p 443:443 nginx
 
 ## HOST:CONTAINER
-```text
+```
 
 
 
@@ -445,7 +445,7 @@ docker volume prune
 ## Copy files between container and host
 docker cp file.txt container:/app/
 docker cp container:/app/output.txt .
-```text
+```
 
 **Volume types**:
 
@@ -468,7 +468,7 @@ docker run -d \
     --mount type=volume,source=data,target=/data \
     --mount type=bind,source=$(pwd),target=/app \
     my-image
-```text
+```
 
 
 
@@ -513,7 +513,7 @@ services:
 
 volumes:
   postgres_data:
-```text
+```
 
 **Common Compose commands**:
 
@@ -546,7 +546,7 @@ docker compose up -d --scale api=3
 
 ## Execute in running service
 docker compose exec api bash
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -559,7 +559,7 @@ flowchart TD
     E --> H[redis:6379]
     F --> G
     F --> H
-```text
+```
 
 ---
 
@@ -603,7 +603,7 @@ async function runContainer(image: string, cmd: string[]): Promise<void> {
   const stream = await container.logs({ stdout: true, follow: true });
   stream.pipe(process.stdout);
 }
-```text
+```
 
 ---
 
@@ -1023,276 +1023,3 @@ d) docker inspect
 - Volumes persist data independently of containers; bind mounts enable hot-reload in development
 - Docker Compose defines multi-container apps in YAML with automatic networking
 - `.dockerignore` excludes files from build context; HEALTHCHECK enables orchestrator health monitoring
-
-
-## Summary
-
-Docker containers provide lightweight, reproducible environments by sharing the host kernel at the OS level, contrasting with VMs that run full guest operating systems. Docker's client-server architecture uses a daemon to manage images (read-only layered templates),.
-containers (runnable instances), networks, and volumes. Dockerfiles define custom images through layered instructions, with multi-stage builds producing lean production artifacts. Container lifecycle management,.
-networking modes (bridge, host, overlay), and persistent volumes are essential for production deployments. Docker Compose orchestrates multi-container applications, and best practices include non-root users,.
-health checks, specific image tags, and `.dockerignore` files.
-
-
-## Placement Section
-
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Design a Docker-based CI/CD pipeline for an ML model that builds, tests, and deploys to a GPU-enabled cluster. How do you handle model weights and dependencies?
-2. Explain the difference between COPY and ADD in a Dockerfile and when you would use each
-
-#### Amazon Style
-1. A containerized microservice is consuming 3x more memory than expected. Walk through your debugging approach from Docker stats to application profiling
-2. How would you design a Docker image that works identically in development, staging, and production environments?
-
-#### Microsoft Style
-1. Your team has 20 microservices in Docker Compose for local development. How do you manage shared configurations, secrets, and service discovery?
-2. Explain how Docker networking works between containers and how you would implement service-to-service communication with proper isolation
-
-#### NVIDIA Style
-1. A deep learning training container needs GPU passthrough, 64GB of shared memory, and access to a mounted dataset volume. How do you configure all three?
-2. Your GPU container image is 15GB. How do you optimize it for faster pulls and deploys without losing required CUDA libraries?
-
-#### AI Startup Style
-1. You need to containerize a FastAPI app that runs a Hugging Face model for inference. Write the Dockerfile from memory, including GPU support and health checks
-2. Docker builds are taking 10 minutes. Identify the three most impactful optimizations you would implement
-
-
-### Resume Tips
-- List "Docker" and "Containerization" under Technical Skills with proficiency level
-- Project example: "Containerized ML inference service using multi-stage Docker builds, reducing image size from 8GB to 1.2GB and deploy time from 5 minutes to 30 seconds"
-- Mention Docker in DevOps or deployment sections: "Implemented Docker Compose development environment with 5 services and automated health checks"
-
-
-### Interview Day Checklist
-- [ ] Can write a multi-stage Dockerfile from memory for a Python/Node.js application
-- [ ] Can explain the difference between CMD and ENTRYPOINT with examples
-- [ ] Can describe container states and lifecycle transitions
-- [ ] Can explain how Docker networking works (bridge, host, overlay)
-- [ ] Can list 5 Docker production best practices without notes
-
-> **Next**: [02 — Docker Compose](02-docker-compose.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Docker, Kubernetes & Cloud fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master docker basics?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of docker basics helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding docker basics at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of docker basics like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply docker basics concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of docker basics?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply docker basics in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Docker, Kubernetes & Cloud?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Docker, Kubernetes & Cloud, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Inference Workflow
-
-1. **Input Validation**: Sanitize and validate incoming requests
-2. **Preprocessing**: Transform input to model-ready format
-3. **Model Execution**: Run inference with optimized runtime
-4. **Postprocessing**: Format model output for consumption
-5. **Response**: Return results with metadata and timing
-6. **Monitoring**: Log requests, responses, and latency
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

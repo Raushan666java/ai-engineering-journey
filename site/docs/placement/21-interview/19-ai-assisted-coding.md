@@ -44,7 +44,7 @@ flowchart TD
     B -->|No| H[Write Manually]
     H --> G
     G --> I[Explain to Interviewer]
-```text
+```
 
 
 ### The New Interview Reality
@@ -146,7 +146,7 @@ class TreeNode {
         this.right = null
     }
 }
-```text
+```
 
 Review: Simple, no errors, exactly what was requested.
 
@@ -170,7 +170,7 @@ function nextGreaterElement(nums: number[]): number[] {
 
     return result
 }
-```text
+```
 
 Verify mentally: nums=[4,1,2,3]. i=0: stack=[0]. i=1: 1<4, stack=[0,1]. i=2: 2>1, pop 1, result[1]=2. stack=[0,2]. i=3: 3>2, pop 2, result[2]=3. 3<4, stack=[0,3]. Result=[-1,2,3,-1]. Correct.
 
@@ -199,7 +199,7 @@ Good prompt: "I have this function that checks if a string is a valid palindrome
 
 // Test 6: Only non-alphanumeric
 // isPalindrome(".,") -> true (empty after filtering)
-```text
+```
 
 
 ### Example 4: Refactoring for Performance
@@ -219,7 +219,7 @@ function findDuplicates(nums: number[]): number[] {
     }
     return duplicates
 }
-```text
+```
 
 After:
 ```typescript
@@ -234,7 +234,7 @@ function findDuplicates(nums: number[]): number[] {
     }
     return Array.from(duplicates)
 }
-```text
+```
 
 
 ## Complete Interview Simulation
@@ -317,7 +317,7 @@ class LRUCache {
         this.head.next = node
     }
 }
-```text
+```
 
 Interviewer probes: "Why do we need dummy head and tail nodes?"
 
@@ -418,14 +418,6 @@ The goal: your partner should feel you understand the code as well as if you had
 
 
 
-## Exercises
-
-**Easy** — Implement a basic ai assisted coding example that demonstrates the core concept.
-
-**Medium** — Create a more complex implementation that handles edge cases.
-
-**Hard** — Design an optimized solution for large-scale ai assisted coding scenarios.
-
 ## Summary
 
 AI-assisted coding interviews are increasingly common at FAANGs. The key skill is knowing when and how to use AI as a productivity tool while demonstrating your own understanding. Always verify AI-generated code mentally,.
@@ -482,6 +474,14 @@ design thinking themselves.
    // correct: B
 
 #
+
+## Exercises
+
+**Easy** — Implement a basic ai assisted coding example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale ai assisted coding scenarios.
 
 ## Common Mistakes
 

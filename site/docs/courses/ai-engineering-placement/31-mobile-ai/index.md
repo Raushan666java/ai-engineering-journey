@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "31 — Mobile AI & Edge Deployment"
+sidebar_label: "31 — Mobile AI & Edge Deployment"
+sidebar_position: 323
+---
 # 31 — Mobile AI & Edge Deployment
 
 ## Overview

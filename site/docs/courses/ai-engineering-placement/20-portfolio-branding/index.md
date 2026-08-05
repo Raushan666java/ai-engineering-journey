@@ -1,7 +1,9 @@
 ---
+id: index
+slug: /ai-engineering-placement
 title: "20 — Portfolio & Personal Branding"
 sidebar_label: "20 — Portfolio & Personal Branding"
-sidebar_position: 218
+sidebar_position: 228
 ---
 # 20 — Portfolio & Personal Branding
 

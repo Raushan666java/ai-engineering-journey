@@ -1,3 +1,10 @@
+---
+id: 11-query-rewriting-decomposition
+slug: /ai-engineering-placement/12-rag-vector-databases/11-query-rewriting-decomposition
+title: "Query Rewriting & Decomposition for RAG"
+sidebar_label: "Query Rewriting & Decomposition for RAG"
+sidebar_position: 155
+---
 <!-- Clear Language: Keep sentences under 50 words -->
 # Query Rewriting & Decomposition for RAG
 
@@ -100,7 +107,6 @@ from collections import defaultdict
 import json
 import re
 
-
 class QueryExpander:
     """Expand queries with synonyms and related terms."""
 
@@ -139,7 +145,6 @@ class QueryExpander:
         original_parts = query.split()
         weighted = " ".join(original_parts * int(original_weight))
         return f"{weighted} {expanded}"
-
 
 expander = QueryExpander()
 original = "How does RAG model train on private data?"
@@ -187,13 +192,11 @@ class EmbeddingSynonymExpander:
 
         return " ".join(synonyms)
 
-
 def mock_embed(text: str) -> np.ndarray:
     """Mock embedding function for demonstration."""
     rng = np.random.RandomState(hash(text) % (2**31))
     emb = rng.randn(384)
     return emb / np.linalg.norm(emb)
-
 
 corpus = ["retrieval", "generation", "augmented", "embedding",
           "transformer", "attention", "fine-tuning", "training"]
@@ -235,7 +238,6 @@ class BackTranslationRewriter:
 
         return variants
 
-
 def mock_translate(text: str, target: str) -> str:
     """Mock translation service."""
     translations = {
@@ -245,7 +247,6 @@ def mock_translate(text: str, target: str) -> str:
         ("Wie funktioniert RAG?", "en"): "How does RAG operate?",
     }
     return translations.get((text, target), text)
-
 
 backtranslator = BackTranslationRewriter(mock_translate)
 paraphrases = backtranslator.multi_pivot_rewrite("How does RAG work?", ["fr", "de"])
@@ -323,7 +324,6 @@ Return as JSON:
         except json.JSONDecodeError:
             return {"intent": query, "entities": [], "search_queries": [query]}
 
-
 def mock_llm(prompt: str) -> str:
     """Mock LLM for demonstration."""
     if "rewrite" in prompt.lower() and "semantic" in prompt:
@@ -335,7 +335,6 @@ def mock_llm(prompt: str) -> str:
     if "intent" in prompt.lower():
         return '{"intent": "Understand how RAG works in LLMs", "entities": ["RAG", "LLM"], "search_queries": ["RAG mechanism explained", "How retrieval augmented generation works", "RAG in LLM applications"]}'
     return query
-
 
 rewriter = LLMQueryRewriter(mock_llm)
 query = "How does RAG work?"
@@ -389,7 +388,6 @@ class RewritingPipeline:
                 print(f"  Step '{step['name']}' failed: {e}")
 
         return variants
-
 
 pipeline = RewritingPipeline()
 pipeline.add_step("expand", lambda q: expander.expand(q), weight=1.0)
@@ -523,7 +521,6 @@ Detailed answer:""",
 
         return result[:top_k]
 
-
 class MockDocumentStore:
     """Mock document store for demonstration."""
 
@@ -546,13 +543,11 @@ class MockDocumentStore:
         scores.sort(key=lambda x: x["score"], reverse=True)
         return scores[:top_k]
 
-
 def hyde_generator(prompt: str) -> str:
     """Generate hypothetical document."""
     if "RAG" in prompt:
         return "Retrieval-Augmented Generation (RAG) is a technique that combines a retrieval system with a generative language model. The retriever finds relevant documents from a knowledge base, and the generator uses those documents to produce grounded, factual responses. RAG reduces hallucinations by providing the LLM with actual source material."
     return "This is a hypothetical document that would contain information relevant to answering the question."
-
 
 store = MockDocumentStore()
 hyde = HyDE(
@@ -638,7 +633,6 @@ class MultiStyleHyDE:
         voted.sort(key=lambda x: (x["votes"], x["avg_score"]), reverse=True)
         return voted[:top_k]
 
-
 multi_hyde = MultiStyleHyDE(hyde, styles=["textbook", "summary"])
 results = multi_hyde.retrieve("What is RAG?", top_k=3, fusion="mean")
 print("Multi-style HyDE results (mean fusion):")
@@ -683,7 +677,6 @@ class IterativeHyDE:
 
         all_results.sort(key=lambda x: x.get("score", 0), reverse=True)
         return all_results[:top_k]
-
 
 iter_hyde = IterativeHyDE(hyde, max_iterations=2)
 results = iter_hyde.retrieve("What is RAG?", top_k=3)
@@ -774,7 +767,6 @@ Return one query per line, numbered 1 to {self.num_queries}:"""
             variants.append(f"{query} {aspect}")
         return variants
 
-
 def mock_multi_query_llm(prompt: str) -> str:
     """Mock LLM for multi-query generation."""
     return """1. What is Retrieval-Augmented Generation and how does it work?
@@ -782,7 +774,6 @@ def mock_multi_query_llm(prompt: str) -> str:
 3. How does RAG combine retrieval with generation?
 4. RAG vs traditional language model approaches
 5. Benefits and limitations of RAG systems"""
-
 
 mq_generator = MultiQueryGenerator(mock_multi_query_llm, num_queries=5)
 variants = mq_generator.generate_variants("How does RAG work?")
@@ -908,7 +899,6 @@ class MultiQueryRetriever:
         return [dict(doc_details.get(doc_id, {}), merged_score=score)
                 for doc_id, score in sorted_docs[:top_k]]
 
-
 class MockMultiQueryRetriever:
     """Mock retriever that returns different results for different queries."""
 
@@ -922,7 +912,6 @@ class MockMultiQueryRetriever:
                 "text": f"Content related to: {query[:30]}...",
             })
         return results
-
 
 mq_retriever = MultiQueryRetriever(MockMultiQueryRetriever(), merger="rrf")
 results = mq_retriever.retrieve(variants, top_k=5)
@@ -1015,7 +1004,6 @@ class AdvancedMultiQueryRetriever:
             covered_queries.update(candidate["source_queries"])
 
         return selected
-
 
 adv_mq = AdvancedMultiQueryRetriever(MockMultiQueryRetriever())
 results = adv_mq.retrieve(variants, top_k=5, min_score=0.3, diversify=True)
@@ -1167,7 +1155,6 @@ Step-back question:"""
 
         return step_backs
 
-
 def mock_stepback_llm(prompt: str) -> str:
     """Mock LLM for step-back generation."""
     if "step-back question" in prompt.lower():
@@ -1180,7 +1167,6 @@ def mock_stepback_llm(prompt: str) -> str:
         else:
             return "What are the fundamental approaches to reducing AI hallucinations?"
     return "What is the broader context of this topic?"
-
 
 stepback_gen = StepBackGenerator(mock_stepback_llm)
 query = "How does the RAG retriever find relevant documents?"
@@ -1256,7 +1242,6 @@ class StepBackRetriever:
             "num_broad": sum(1 for r in results if r.get("source") == "step_back"),
         }
 
-
 class MockStepBackRetriever:
     """Mock retriever that returns different docs for different queries."""
 
@@ -1272,7 +1257,6 @@ class MockStepBackRetriever:
             {"id": "spec2", "score": 0.88, "text": "Vector databases enable efficient semantic search in RAG retrieval."},
             {"id": "spec3", "score": 0.82, "text": "BM25 and dense retrievers are commonly used in RAG pipelines."},
         ][:top_k]
-
 
 sb_retriever = StepBackRetriever(
     MockStepBackRetriever(),
@@ -1332,7 +1316,6 @@ class MultiLevelStepBack:
             ],
             "results": merged[:top_k],
         }
-
 
 mlsb = MultiLevelStepBack(MockStepBackRetriever(), stepback_gen, levels=3)
 context = mlsb.retrieve("How does RAG retrieval work?", top_k=4)
@@ -1435,7 +1418,6 @@ Answer only YES or NO:"""
 
         return dependencies
 
-
 def mock_decompose_llm(prompt: str) -> str:
     """Mock LLM for query decomposition."""
     if "decompose" in prompt.lower():
@@ -1446,7 +1428,6 @@ def mock_decompose_llm(prompt: str) -> str:
     if "YES or NO" in prompt:
         return "NO"
     return "What is retrieval in AI systems?"
-
 
 decomposer = QueryDecomposer(mock_decompose_llm)
 complex_query = "How does the RAG retriever work and what embedding models does it use?"
@@ -1534,7 +1515,6 @@ Synthesize a comprehensive answer to the original query based on the retrieved d
 
         return answer
 
-
 class MockDecompositionRetriever:
     def __call__(self, query: str, top_k: int) -> List[Dict]:
         hash_val = hash(query) % 100
@@ -1543,10 +1523,8 @@ class MockDecompositionRetriever:
             {"id": f"d_{(hash_val+1) % 10}", "score": 0.8, "text": f"Related content for: {query[:40]}"},
         ][:top_k]
 
-
 def mock_generator(prompt: str) -> str:
     return "Based on the retrieved documents, the RAG retriever uses embedding similarity search in vector databases to find relevant documents."
-
 
 executor = HierarchicalRetrievalExecutor(
     MockDecompositionRetriever(),
@@ -1619,7 +1597,6 @@ Synthesize a complete answer:"""
             "intermediate": intermediate_answers,
             "final_answer": final_answer,
         }
-
 
 seq_executor = SequentialDecompositionExecutor(
     MockDecompositionRetriever(),
@@ -1698,7 +1675,6 @@ Return as JSON:
             "dimension_contexts": comparison_contexts,
         }
 
-
 def mock_comparison_llm(prompt: str) -> str:
     if "JSON" in prompt:
         return json.dumps({
@@ -1713,7 +1689,6 @@ def mock_comparison_llm(prompt: str) -> str:
             ],
         })
     return query
-
 
 comp_decomp = ComparativeDecomposition(mock_comparison_llm)
 analysis = comp_decomp.decompose_comparison(
@@ -1778,7 +1753,6 @@ class DecompositionPipeline:
             },
             "answer": answer,
         }
-
 
 pipeline = DecompositionPipeline(decomposer, executor)
 result = pipeline.run(
@@ -1933,265 +1907,319 @@ Answer: B
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Design a query rewriting system that handles ambiguous queries at scale. How would you evaluate its effectiveness?
-2. Explain the time and complexity trade-offs between HyDE, multi-query, and step-back prompting. When would you choose each?
+
+1. **Explain the core idea of Query Rewriting & Decomposition for RAG in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Query Rewriting & Decomposition for RAG.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
-1. Tell me about a time you improved retrieval quality in a RAG system. What techniques did you use and what metrics improved?
-2. How would you explain query decomposition to a non-technical product manager? What business value does it provide?
+
+4. **Describe a production bug caused by misunderstanding Query Rewriting & Decomposition for RAG. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Query Rewriting & Decomposition for RAG from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
-1. How does query rewriting integrate with enterprise RAG systems that have domain-specific vocabulary?
-2. What are the security implications of sending user queries to an LLM for rewriting before retrieval?
+
+6. **Compare Query Rewriting & Decomposition for RAG with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Query Rewriting & Decomposition for RAG.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
-1. How would you optimize multi-query retrieval for GPU-accelerated batch processing?
-2. What parallelization strategies apply to query decomposition across multiple sub-queries?
+
+8. **How does Query Rewriting & Decomposition for RAG behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Query Rewriting & Decomposition for RAG run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
-1. How would you implement query rewriting cost-effectively for a startup with limited LLM budget?
-2. What's the fastest way to prototype a multi-query retrieval system and measure its impact?
+
+10. **Write the smallest possible implementation of Query Rewriting & Decomposition for RAG that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
-- **Technical Skills**: List query rewriting, HyDE, multi-query retrieval under RAG optimization skills
-- **Project Description**: "Implemented query rewriting pipeline improving RAG recall@10 by 28% across 500 test queries"
-- **Keywords**: Include query rewriting, query decomposition, HyDE, multi-query retrieval, step-back prompting
+
+- Name Query Rewriting & Decomposition for RAG explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Query Rewriting & Decomposition for RAG").
+- Add a bullet describing a project that applies Query Rewriting & Decomposition for RAG to real data, with numbers.
+- Mention the tools and libraries you used alongside Query Rewriting & Decomposition for RAG (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
 
 ### Interview Day Checklist
-- [ ] Review query rewriting techniques (expansion, back-translation, LLM-based)
-- [ ] Practice implementing HyDE end-to-end
-- [ ] Know RRF merging formula and parameters
-- [ ] Prepare examples of when to use each technique
-- [ ] Understand the latency and cost trade-offs
+
+- Rehearse a 60-second explanation of Query Rewriting & Decomposition for RAG and one real-world analogy.
+- Prepare one STAR story about debugging a Query Rewriting & Decomposition for RAG-related production issue.
+- Review complexity and edge cases for the classic Query Rewriting & Decomposition for RAG interview problem.
+- Have questions ready: how does the team apply Query Rewriting & Decomposition for RAG in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
+
+## True/False
+
+1. **True or False:** Query Rewriting & Decomposition for RAG builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Query Rewriting & Decomposition for RAG before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Query Rewriting & Decomposition for RAG is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Query Rewriting & Decomposition for RAG in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Query Rewriting & Decomposition for RAG chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Query Rewriting & Decomposition for RAG is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Query Rewriting & Decomposition for RAG is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Query Rewriting & Decomposition for RAG is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Query Rewriting & Decomposition for RAG issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Query Rewriting & Decomposition for RAG in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Query Rewriting & Decomposition for RAG that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Query Rewriting & Decomposition for RAG is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Query Rewriting & Decomposition for RAG in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Query Rewriting & Decomposition for RAG and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Query Rewriting & Decomposition for RAG on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
-**Level**: Advanced
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: Complete understanding of basic RAG pipeline (Chapter 12.1), embedding models (Chapter 12.2)
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Query Rewriting & Decomposition for RAG to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
 
 ## Tips & Tricks
 
-**Tip**: Start with simple synonym expansion before adding LLM-based rewriting — measure the baseline improvement first.
-
-**Tip**: Use 5 query variants for multi-query retrieval — fewer may miss coverage, more adds diminishing returns and latency.
-
-**Tip**: For HyDE, experiment with different document styles (textbook, abstract, summary) — the best style depends on your document collection.
-
-**Pro Tip**: Profile which queries benefit from rewriting vs decomposition vs both. Not all queries need all techniques — use a classifier to route queries to the optimal strategy.
-
-**Pro Tip**: Always measure retrieval metrics (recall@k, MRR) before and after adding rewriting — it's easy to add complexity without measurable improvement.
+- Always write a one-line example of Query Rewriting & Decomposition for RAG from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Query Rewriting & Decomposition for RAG when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Query Rewriting & Decomposition for RAG twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Query Rewriting & Decomposition for RAG snippets; interviewers love original examples.
 
 ## Memory Tricks
 
-- **HYDE = Hypothetical Doc Embeds bridge the gap** (imagine writing the perfect answer first)
-- **MQ + RRF = Many Questions + Reciprocal Rank Fusion** (ask many friends, rank by consensus)
-- **Step-Back = Zoom out, then zoom in** (see the forest, then the trees)
-- **Decomposition = Divide and conquer** (break big problem into small retrievals)
-- **Expansion = Coat the query with synonyms** (throw a wider net)
+- **Acronym**: build a mnemonic from the 5 key concepts of Query Rewriting & Decomposition for RAG listed in the Chapter at a Glance table.
+- **Story**: link Query Rewriting & Decomposition for RAG to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Query Rewriting & Decomposition for RAG by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Query Rewriting & Decomposition for RAG to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
-- "Precise Zero-Shot Dense Retrieval without Relevance Labels" (HyDE paper) — Gao et al., 2022
-- "Query Rewriting for Retrieval-Augmented Generation" — various industry blog posts
-- "Step-Back Prompting Enables Reasoning via Abstraction" — Google DeepMind
-- "RaLEs: A Benchmark for Query Decomposition" — research benchmark
-- LangChain and LlamaIndex documentation for production implementations
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Query Rewriting & Decomposition for RAG
+- The classic textbook chapter on Query Rewriting & Decomposition for RAG (check the Research References below)
+- Two blog posts from engineers who debugged real Query Rewriting & Decomposition for RAG problems in production
+- The repository of the open-source project that implements Query Rewriting & Decomposition for RAG
 
 ## Related Topics
 
-- How query rewriting connects to embedding models (12.2) — rewritten queries need good embeddings
-- How decomposition connects to multi-hop RAG (7.2) — both involve sub-queries
-- How step-back connects to self-RAG (7.1) — both reflect on retrieval needs
-- How merged results feed into reranking (10.4) — reranking is the next stage after expanded retrieval
+- The previous chapter in this module (see table of contents) â€” foundational for Query Rewriting & Decomposition for RAG
+- The next chapter (see Next Topic below) â€” builds on Query Rewriting & Decomposition for RAG
+- The system design chapters in Module 07 â€” how Query Rewriting & Decomposition for RAG fits into production architectures
+- The interview preparation module â€” how Query Rewriting & Decomposition for RAG is asked in screening rounds
+- The capstone project â€” where Query Rewriting & Decomposition for RAG is applied end-to-end
 
 ## FAQs
 
-**Q: How many query variants should I generate for multi-query retrieval?**
-**A**: 3-5 variants typically give 80% of the benefit. More than 10 adds latency without proportional recall improvement.
-
-**Q: Does HyDE work for non-factual queries?**
-**A**: HyDE works best for factual queries where a hypothetical document would look similar to real documents. For opinion or creative queries, multi-query retrieval is usually better.
-
-**Q: How much latency does query rewriting add?**
-**A**: Synonym expansion: <5ms. Back-translation: 500-2000ms. LLM-based rewriting: 200-1000ms. Multi-query with 5 variants: 5x retrieval cost + LLM time.
-
-**Q: Can I use these techniques together?**
-**A**: Yes. For example, decompose a query, rewrite each sub-query, generate a HyDE document for each, and merge all results. But be mindful of latency — a tiered approach is recommended for production.
+1. **Do I need to memorize all of Query Rewriting & Decomposition for RAG, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Query Rewriting & Decomposition for RAG asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-> **Note**: Always benchmark before and after adding query rewriting — the improvement varies significantly by domain.
-
-> **Note**: Query rewriting with an LLM means the LLM could introduce biases or hallucinated terms in the rewritten query. Monitor rewrite quality.
-
-> **Note**: HyDE assumes the LLM can generate realistic hypothetical documents. For niche domains, this may fail — test on your domain first.
-
-> **Note**: Multi-query retrieval linearly increases retrieval cost. Use caching and consider a budget for the number of variants.
+- Query Rewriting & Decomposition for RAG is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Query Rewriting & Decomposition for RAG.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
 
 ## Historical Context
 
-Query rewriting has its roots in information retrieval research from the 1960s with relevance feedback. Rocchio's algorithm (1971) expanded queries using terms from relevant documents. Modern RAG systems have revived these techniques with LLMs replacing statistical methods. HyDE was introduced by Gao et al. in 2022, combining the old idea of "query by example" with modern text generation. Step-back prompting emerged from Google DeepMind's 2023 research on abstraction-based reasoning. These techniques represent a convergence of classical IR wisdom and modern LLM capabilities.
-
-## Coding Standards
-
-- Use consistent naming conventions (snake_case for functions, PascalCase for classes)
-- Add docstrings explaining the rewriting strategy each class implements
-- Keep each rewriting technique in its own class for testability
-- Use type hints for all function signatures
-- Handle edge cases (empty queries, unsupported languages for back-translation)
-
-**Best Practice**: Make query rewriting configurable via a YAML/JSON config so non-engineers can tune the strategy mix.
+- Query Rewriting & Decomposition for RAG emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Query Rewriting & Decomposition for RAG today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Query Rewriting & Decomposition for RAG â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Query Rewriting & Decomposition for RAG changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
 
-- **Prompt Injection**: User queries rewritten by LLMs could contain injection attempts. Validate LLM outputs before using them as search queries.
-- **Data Leakage**: Sending user queries to external LLM APIs for rewriting may expose sensitive information. Use local models for sensitive domains.
-- **Denial of Service**: Multi-query retrieval multiplies retrieval cost. Set limits on concurrent queries and maximum variants.
-- **Rebound Effect**: Aggressive query expansion can return irrelevant or harmful documents. Implement content filtering on retrieved documents.
+- Never trust external input: validate and sanitize data before processing Query Rewriting & Decomposition for RAG.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
 
 ## ML Intuition
 
-Think of query rewriting as a translation problem: translate from the user's language (ambiguous, incomplete, colloquial) to the document's language (precise, complete, formal). The embedding space is the shared representation where both exist. HyDE creates a "placeholder" document in this space. Multi-query explores different paths through the space. Step-back zooms out to a higher-level region. Decomposition splits a single complex path into multiple simpler paths.
+- Query Rewriting & Decomposition for RAG appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Query Rewriting & Decomposition for RAG helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Query Rewriting & Decomposition for RAG concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Query Rewriting & Decomposition for RAG skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Query Rewriting & Decomposition for RAG to a dataset of 10 million records? â€” Batching and vectorization.
 
 ## Analogies
 
-**Query rewriting** is like asking a librarian to rephrase your vague question — "I need something about..." becomes "Do you have any books on [specific topic]?"
-
-**HyDE** is like sketching what you're looking for before searching — you draw a rough picture of the document you need, then the search engine finds similar real documents.
-
-**Multi-query retrieval** is like asking 5 different people the same question and comparing their answers — each person might mention different things, and you combine all the information.
-
-**Step-back prompting** is like understanding the textbook chapter before answering the specific homework problem — the general context helps you reason about the specific case.
-
-**Query decomposition** is like breaking down "How do I bake a cake?" into "What ingredients?", "What equipment?", "What steps?" — each sub-question is easy to answer alone.
+- **Query Rewriting & Decomposition for RAG is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-**Project**: Build a comprehensive query optimization system for RAG
-**Goal**: Create a system that combines all 5 techniques with configurable strategy selection
-**Duration**: 4-6 hours
-**Outcome**: Working query optimizer with benchmarking suite showing improvement over naive retrieval
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Query Rewriting & Decomposition for RAG skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
-**Card 1**: What is the core idea behind HyDE?
-**Answer**: Generate a hypothetical answer document, embed it, and use that embedding to retrieve similar real documents.
+<details class="tp-qa-card" data-qid="12ragvectordatabases-11queryrewritingdecomposition-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the core concept of Query Rewriting & Decomposition for RAG in one sentence?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+  </div>
+</details>
 
-**Card 2**: What formula does RRF use to merge ranked lists?
-**Answer**: score(d) = sum(1 / (k + rank_i(d))) for all result lists i, where k is typically 60.
+<details class="tp-qa-card" data-qid="12ragvectordatabases-11queryrewritingdecomposition-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the most common mistake engineers make with 
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Common Mistakes section of this chapter.</p>
+  </div>
+</details>
 
-**Card 3**: When do you use step-back vs. decomposition?
-**Answer**: Step-back for getting broader context; decomposition for splitting complex queries into independent sub-questions.
+<details class="tp-qa-card" data-qid="12ragvectordatabases-11queryrewritingdecomposition-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the time and space complexity of the standard Query Rewriting & Decomposition for RAG approach?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Refer to the theory and complexity analysis in this chapter.</p>
+  </div>
+</details>
 
-## Study Plan
+<details class="tp-qa-card" data-qid="12ragvectordatabases-11queryrewritingdecomposition-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    When is Query Rewriting & Decomposition for RAG NOT the right choice?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Limitations section of this chapter.</p>
+  </div>
+</details>
 
-**Day 1**: Read theory and implement query expansion + basic HyDE (18 minutes)
-**Day 2**: Implement multi-query retrieval and step-back prompting (18 minutes)
-**Day 3**: Implement query decomposition and run benchmarks comparing all methods (9 minutes)
+<details class="tp-qa-card" data-qid="12ragvectordatabases-11queryrewritingdecomposition-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How is Query Rewriting & Decomposition for RAG applied in a real production system?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Real-World Examples section of this chapter.</p>
+  </div>
+</details>
 
 ## Research References
 
-- Gao, L. et al. (2022). "Precise Zero-Shot Dense Retrieval without Relevance Labels" — HyDE paper
-- Google DeepMind (2023). "Step-Back Prompting Enables Reasoning via Abstraction"
-- Rocchio, J. (1971). "Relevance Feedback in Information Retrieval" — foundational query expansion
-- Khattab, O. & Zaharia, M. (2020). "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction"
-- Lewis, P. et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-
-## Fine-Tuning Notes
-
-When applying these techniques to production:
-- Fine-tune a small model specifically for query rewriting in your domain (distilled 7B model typical)
-- Adapt HyDE to generate domain-specific hypothetical documents using fine-tuned generators
-- Tune RRF k-constant per domain via grid search on a validation set
-- Optimize the number of query variants per query type via online A/B testing
+- Official documentation of the primary library for Query Rewriting & Decomposition for RAG (linked in Further Reading)
+- The classic paper or textbook chapter introducing Query Rewriting & Decomposition for RAG (see References below)
+- The standard library reference for Query Rewriting & Decomposition for RAG-related functions
+- Engineering blog posts from companies running Query Rewriting & Decomposition for RAG in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
 
 ## Open-Source Tools
 
-- **LangChain**: Multi-query retrieval and HyDE implementations built-in
-- **LlamaIndex**: Query decomposition and step-back prompting modules
-- **Hugging Face Transformers**: Embedding models for synonym expansion
-- **Sentence-Transformers**: Efficient embedding for HyDE and query expansion
-- **Redis/Valkey**: Cache for storing rewritten queries and results
-- **Prometheus + Grafana**: Monitor query rewrite quality and latency
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Query Rewriting & Decomposition for RAG code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Query Rewriting & Decomposition for RAG
 
 ## Debugging Guide
 
-**Common Issues**:
-- Rewritten queries are worse than original: check LLM prompt quality and test different prompts
-- HyDE generates unrealistic documents: the generator needs domain-specific fine-tuning
-- Multi-query returns duplicate documents: add deduplication before merging
-- Step-back retrieves irrelevant context: step-back question is too broad — constrain with specificity prompt
-- Decomposition misses information: sub-queries don't cover all aspects — increase max_sub_queries
-
-**Debugging Steps**:
-1. Log all rewritten query variants
-2. Compare retrieval results for original vs. rewritten queries
-3. Measure recall@k improvement per query
-4. Inspect edge cases (empty results, degraded performance)
-5. A/B test in production with gradual rollout
+- Start with `print()` or a debugger to inspect intermediate values in Query Rewriting & Decomposition for RAG code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Query Rewriting & Decomposition for RAG example code.
 
 ## Mock Interview Section
 
-**Quick Fire Questions**:
-1. What's the difference between query expansion and query rewriting?
-2. When does HyDE fail?
-3. What's the optimal number of query variants?
-4. How does RRF handle score normalization?
-5. What's the main risk of LLM-based query rewriting?
+**Round 1 â€” Screening (15 min)**
+- Explain Query Rewriting & Decomposition for RAG in 60 seconds.
+- Write a minimal working example of Query Rewriting & Decomposition for RAG.
+- What is the complexity of your example?
 
-**Follow-up Questions**:
-- How would you measure if query rewriting is actually helping?
-- How would you scale multi-query retrieval to 1000 QPS?
-- How would you handle multilingual queries with these techniques?
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
 
-## References
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Query Rewriting & Decomposition for RAG problem in a project.
+- How would you design a system where Query Rewriting & Decomposition for RAG is used at scale?
+- What metrics would you monitor?
 
-- Gao, L., et al. "Precise Zero-Shot Dense Retrieval without Relevance Labels." ACL 2022.
-- Google DeepMind. "Step-Back Prompting Enables Reasoning via Abstraction." 2023.
-- Rocchio, J. "Relevance Feedback in Information Retrieval." SMART Retrieval System, 1971.
-- Lewis, P., et al. "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." NeurIPS 2020.
-- LangChain Documentation: Multi-Query Retrieval, HyDE, Step-Back
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
 
-## Prompt Engineering Notes
+## Optimized Implementation
 
-- **Query Rewriting Prompt**: Include guidelines (precise terms, domain vocabulary, remove ambiguity) and examples for few-shot learning
-- **HyDE Generation Prompt**: Specify document style explicitly (textbook paragraph, research abstract, etc.) — different styles produce different embeddings
-- **Step-Back Prompt**: Define abstraction levels clearly — "What broader concept does this belong to?" works better than "Be more general"
-- **Decomposition Prompt**: Ask for "independent sub-questions" — otherwise the LLM may produce overlapping or sequential ones
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Query Rewriting & Decomposition for RAG.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Query Rewriting & Decomposition for RAG logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 
-**Retrieval Metrics**:
-- Recall@k: Does the rewritten query retrieve more relevant docs?
-- MRR: Does it rank relevant docs higher?
-- Precision@k: Does rewriting introduce noise?
-
-**Downstream Metrics**:
-- Answer faithfulness: Does better retrieval lead to more grounded answers?
-- Answer completeness: Does decomposition lead to more comprehensive answers?
-- Latency: Total time including rewriting + retrieval + generation
-
-**Cost Metrics**:
-- LLM calls per query (for rewriting)
-- Total tokens consumed
-- Retrieval API costs (multi-query multiplies this)
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Query Rewriting & Decomposition for RAG without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
 
 ## Real-World Examples
 
-- **Perplexity AI**: Uses query rewriting and decomposition for their answer engine — rewrites user queries into search-optimized forms
-- **Glean**: Enterprise search with multi-query retrieval and RRF merging across different data sources
-- **Notion AI**: Uses HyDE-style generation for retrieving relevant workspace content
-- **Google Search**: Long history of query rewriting — spelling correction, synonym expansion, entity recognition
-- **Amazon Kendra**: Enterprise RAG with query decomposition for complex FAQ-style questions
+- **Startup**: a small team uses Query Rewriting & Decomposition for RAG daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Query Rewriting & Decomposition for RAG patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Query Rewriting & Decomposition for RAG principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Query Rewriting & Decomposition for RAG shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Query Rewriting & Decomposition for RAG to the business outcome, not just the code.
 
 ## Next Topic
 
-After mastering query rewriting and decomposition, continue to the next chapter on advanced RAG optimization techniques. These skills form the foundation for building production-grade retrieval systems that handle real user queries effectively.
+[Parent-Child & Multi-Vector Retrieval](12-parent-child-multi-vector.md)
 
 ## Limitations
 
-- **LLM Cost**: Every LLM-based rewrite adds cost. For high-volume systems ($1M+ queries/month), this adds up significantly.
-- **Latency Overhead**: Multi-query retrieval with 5 variants means 5x the retrieval calls. In sub-200ms systems, this may be prohibitive.
-- **Domain Dependence**: HyDE works best when the LLM knows the domain well. For niche domains, generated hypothetical documents may be unrealistic.
-- **Quality Cliff**: Poor query rewriting can actually decrease retrieval quality by introducing irrelevant terms or changing the query intent. Always benchmark.
+- Query Rewriting & Decomposition for RAG, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Query Rewriting & Decomposition for RAG depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

@@ -8,7 +8,6 @@ sidebar_position: 74
 <!-- Clear Language: Keep sentences under 50 words -->
 # Docker Basics — Containers, Images, and Docker Engine
 
-
 ## Learning Objectives
 
 | Objective | Description |
@@ -19,7 +18,6 @@ sidebar_position: 74
 | LO4 | Create Dockerfiles and build custom images |
 | LO5 | Manage container lifecycle: run, stop, exec, logs, inspect |
 | LO6 | Use Docker networking and volumes for data persistence |
-
 
 ## Chapter at a Glance
 
@@ -34,7 +32,6 @@ sidebar_position: 74
 | 1.7 | Volumes and Bind Mounts | persist, share, backup data |
 | 1.8 | Docker Compose Basics | multi-container with docker-compose.yml |
 
-
 ## Chapter Roadmap
 
 ```mermaid
@@ -47,8 +44,7 @@ flowchart LR
     F --> G[Networking]
     G --> H[Volumes]
     H --> I[Docker Compose]
-```text
-
+```
 
 ## Introduction
 
@@ -56,13 +52,11 @@ Docker is the standard for packaging and deploying AI applications — from trai
 the "it works on my machine" problem plagues ML teams, making model deployment unreliable and slow. This chapter covers containers, images,.
 Dockerfiles, and Docker Compose — the essential skills for any AI engineer who needs to ship models from laptop to production.
 
-
 ## Prerequisites
 
 - Basic command line / terminal proficiency
 - Understanding of what a server and process are
 - Familiarity with Python or TypeScript project structures
-
 
 ## Key Terminology
 
@@ -72,12 +66,9 @@ Dockerfiles, and Docker Compose — the essential skills for any AI engineer who
 
 ## Theory
 
-
 ### 1.1 Containers vs Virtual Machines
 
 Containers provide OS-level virtualization by sharing the host kernel, while VMs use a hypervisor to run full guest operating systems. This fundamental difference makes containers lighter, faster, and more resource-efficient.
-
-
 
 ## Examples
 
@@ -86,7 +77,7 @@ Containers provide OS-level virtualization by sharing the host kernel, while VMs
 ## Check Docker version
 docker --version
 docker info
-```text
+```
 
 **Comparison table**:
 
@@ -121,9 +112,7 @@ flowchart LR
         D1 --> D2[Host OS]
         D2 --> D3[Hardware]
     end
-```text
-
-
+```
 
 ## Overview
 
@@ -142,14 +131,12 @@ Docker follows a client-server architecture with three main components:
 ## Docker daemon info
 docker info
 
-
 ## Show running containers
 docker ps
 
-
 ## Show all containers (including stopped)
 docker ps -a
-```text
+```
 
 **Key Docker objects**:
 
@@ -163,11 +150,9 @@ flowchart TD
     C --> I
     C --> N
     C --> V
-```text
+```
 
 Images are read-only templates. Containers are runnable instances of images. Each container gets its own filesystem, network stack, and process tree.
-
-
 
 ## Overview
 
@@ -181,30 +166,25 @@ Images consist of read-only layers stacked on top of each other. Each RUN, COPY,
 docker pull nginx:latest
 docker pull python:3.11-slim
 
-
 ## List images
 docker images
 
 ## or
 docker image ls
 
-
 ## Tag an image
 docker tag nginx:latest my-nginx:v1
 
-
 ## Push to registry
 docker push my-nginx:v1
-
 
 ## Remove images
 docker rmi nginx:latest
 docker image prune  # remove dangling images
 
-
 ## Show image layers
 docker history nginx:latest
-```text
+```
 
 **Image naming convention**:
 
@@ -221,9 +201,7 @@ Examples: `python:3.11-slim`, `nginx:latest`, `myregistry.com/team/app:v2`
 ## Save and load images as tar files
 docker save -o my-image.tar my-image:tag
 docker load -i my-image.tar
-```text
-
-
+```
 
 ## Overview
 
@@ -238,21 +216,17 @@ FROM python:3.11-slim AS builder
 
 WORKDIR /app
 
-
 ## Install system dependencies
 RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-
 ## Copy requirements first (leverage layer caching)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-
 ## Copy application code
 COPY src/ ./src/
-
 
 ## Final stage — multi-stage build
 FROM python:3.11-slim AS runtime
@@ -264,7 +238,7 @@ COPY --from=builder /app/src ./src
 EXPOSE 8000
 
 CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
-```text
+```
 
 **Key Dockerfile instructions**:
 
@@ -287,12 +261,9 @@ CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "
 ## Build an image
 docker build -t my-app:v1 .
 
-
 ## Build with build args
 docker build --build-arg VERSION=2.0 -t my-app:v2 .
-```text
-
-
+```
 
 ## Overview
 
@@ -303,50 +274,40 @@ docker build --build-arg VERSION=2.0 -t my-app:v2 .
 ## Run a container
 docker run -d --name web -p 8080:80 nginx:latest
 
-
 ## Run interactively
 docker run -it --name debug python:3.11-slim bash
-
 
 ## List containers
 docker ps           # running only
 docker ps -a        # all containers
 
-
 ## Stop a container
 docker stop web
-
 
 ## Start a stopped container
 docker start web
 
-
 ## Restart
 docker restart web
-
 
 ## Remove a container
 docker rm web
 docker rm -f web    # force remove running container
 docker container prune  # remove all stopped containers
 
-
 ## Execute command in running container
 docker exec -it web bash
-
 
 ## View logs
 docker logs web
 docker logs -f web  # follow mode
 
-
 ## Inspect container details
 docker inspect web
 
-
 ## View resource usage
 docker stats web
-```text
+```
 
 **Container states**:
 
@@ -361,9 +322,7 @@ stateDiagram-v2
     Stopped --> Running: docker start
     Stopped --> [*]: docker rm
     Exited --> [*]: docker rm
-```text
-
-
+```
 
 ## Overview
 
@@ -376,22 +335,18 @@ Docker provides several network drivers for different isolation levels.
 ## List networks
 docker network ls
 
-
 ## Create custom network
 docker network create --driver bridge my-network
-
 
 ## Run container on specific network
 docker run -d --name app --network my-network my-app
 
-
 ## Connect container to network
 docker network connect my-network web
 
-
 ## Inspect network
 docker network inspect my-network
-```text
+```
 
 **Network drivers**:
 
@@ -410,9 +365,7 @@ docker network inspect my-network
 docker run -d -p 8080:80 -p 443:443 nginx
 
 ## HOST:CONTAINER
-```text
-
-
+```
 
 ## Overview
 
@@ -425,28 +378,23 @@ Data persistence in Docker is managed through volumes and bind mounts.
 ## Create a volume
 docker volume create data-volume
 
-
 ## Run with volume
 docker run -d --name db -v data-volume:/var/lib/postgresql/data postgres:15
-
 
 ## Bind mount (host directory)
 docker run -d --name dev -v $(pwd):/app python:3.11-slim python /app/script.py
 
-
 ## List volumes
 docker volume ls
-
 
 ## Remove volume
 docker volume rm data-volume
 docker volume prune
 
-
 ## Copy files between container and host
 docker cp file.txt container:/app/
 docker cp container:/app/output.txt .
-```text
+```
 
 **Volume types**:
 
@@ -469,9 +417,7 @@ docker run -d \
     --mount type=volume,source=data,target=/data \
     --mount type=bind,source=$(pwd),target=/app \
     my-image
-```text
-
-
+```
 
 ## Overview
 
@@ -514,7 +460,7 @@ services:
 
 volumes:
   postgres_data:
-```text
+```
 
 **Common Compose commands**:
 
@@ -524,30 +470,24 @@ volumes:
 docker compose up
 docker compose up -d  # detached
 
-
 ## Build and start
 docker compose up --build
-
 
 ## Stop services
 docker compose down
 
-
 ## Stop and remove volumes
 docker compose down -v
-
 
 ## View logs
 docker compose logs -f
 
-
 ## Scale a service
 docker compose up -d --scale api=3
 
-
 ## Execute in running service
 docker compose exec api bash
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -560,10 +500,9 @@ flowchart TD
     E --> H[redis:6379]
     F --> G
     F --> H
-```text
+```
 
 ---
-
 
 ## Visual Analogy
 
@@ -576,7 +515,6 @@ Think of Docker like **shipping containers** on a cargo ship:
 - **Volumes** = Storage containers — persistent boxes that stay even when the shipping container is unloaded. Your data survives container restarts.
 
 This helps because the entire Docker revolution came from the shipping industry's insight: **standardize the container, not the contents**. Just as you can ship anything in a standard 20-foot box, you can run any app in a standard Docker container regardless of the language or framework inside.
-
 
 ## TypeScript Parallel
 
@@ -604,10 +542,9 @@ async function runContainer(image: string, cmd: string[]): Promise<void> {
   const stream = await container.logs({ stdout: true, follow: true });
   stream.pipe(process.stdout);
 }
-```text
+```
 
 ---
-
 
 ## Summary
 
@@ -622,7 +559,6 @@ async function runContainer(image: string, cmd: string[]): Promise<void> {
 - Layer caching optimizes builds: place infrequently-changing instructions early in the Dockerfile
 - Best practices include using `.dockerignore`, minimal base images, non-root users, and health checks
 
-
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
@@ -634,7 +570,6 @@ async function runContainer(image: string, cmd: string[]): Promise<void> {
 | Secrets | Docker secrets or env_file | Hardcoding in Dockerfile |
 | GPU access | `--gpus all` flag | CPU-only when GPU needed |
 | Health checks | HEALTHCHECK instruction in Dockerfile | No health monitoring |
-
 
 ## Interview Q&A
 
@@ -670,7 +605,6 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
 
-
 ## Inefficient: copies everything first, cache invalidated
 COPY . .
 RUN npm ci</code></pre>
@@ -692,7 +626,6 @@ RUN npm ci</code></pre>
 CMD ["python", "app.py"]
 
 ## docker run my-image python other.py  # runs other.py
-
 
 ## ENTRYPOINT fixed, CMD as default args
 ENTRYPOINT ["python"]
@@ -763,7 +696,6 @@ WORKDIR /app
 COPY . .
 RUN go build -o myapp
 
-
 ## Runtime stage — only the binary
 FROM alpine:latest
 COPY --from=builder /app/myapp /usr/local/bin/
@@ -796,7 +728,6 @@ CMD ["myapp"]</code></pre>
     </ol>
     <pre><code># Debug with interactive shell
 docker run -it --entrypoint sh my-image
-
 
 ## Check exit code
 docker inspect --format '{{.State.ExitCode}}' container_name</code></pre>
@@ -849,10 +780,8 @@ __pycache__
 DATABASE_URL=postgresql://user:pass@localhost:5432/db
 API_KEY=sk-abc123
 
-
 ## docker run with env file
 docker run --env-file .env my-app
-
 
 ## docker-compose.yml
 services:
@@ -905,7 +834,6 @@ CMD ["node", "dist/server.js"]</code></pre>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
-
 ## Chapter Quiz
 
 **Q1**: Which Docker component is responsible for managing containers, images, and volumes?
@@ -952,7 +880,6 @@ c) docker info
 d) docker inspect
 
 <details class="tp-qa-card" data-qid="docker-s01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) docker stats</strong></p><p>docker stats displays real-time CPU, memory, network I/O, and disk I/O for running containers.</p></div></details>
-
 
 ### True/False
 
@@ -1004,7 +931,6 @@ d) docker inspect
 
 ---
 
-
 ## Common Mistakes
 
 1. Using `latest` tag in production Dockerfiles — always pin specific versions (`python:3.11-slim`) for reproducible builds
@@ -1012,7 +938,6 @@ d) docker inspect
 3. Running containers as root — always add a non-root USER for security in production
 4. Storing secrets in Dockerfiles or images — use Docker secrets, env_file, or external secret managers instead
 5. Skipping `.dockerignore` — the build context sends the entire directory including `.git`, `node_modules`, and `.env` to the daemon
-
 
 ## Revision Notes
 
@@ -1025,275 +950,324 @@ d) docker inspect
 - Docker Compose defines multi-container apps in YAML with automatic networking
 - `.dockerignore` excludes files from build context; HEALTHCHECK enables orchestrator health monitoring
 
-
-## Summary
-
-Docker containers provide lightweight, reproducible environments by sharing the host kernel at the OS level, contrasting with VMs that run full guest operating systems. Docker's client-server architecture uses a daemon to manage images (read-only layered templates),.
-containers (runnable instances), networks, and volumes. Dockerfiles define custom images through layered instructions, with multi-stage builds producing lean production artifacts. Container lifecycle management,.
-networking modes (bridge, host, overlay), and persistent volumes are essential for production deployments. Docker Compose orchestrates multi-container applications, and best practices include non-root users,.
-health checks, specific image tags, and `.dockerignore` files.
-
-
 ## Placement Section
-
 
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Design a Docker-based CI/CD pipeline for an ML model that builds, tests, and deploys to a GPU-enabled cluster. How do you handle model weights and dependencies?
-2. Explain the difference between COPY and ADD in a Dockerfile and when you would use each
+
+1. **Explain the core idea of Docker Basics — Containers, Images, and Docker Engine in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Docker Basics — Containers, Images, and Docker Engine.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
-1. A containerized microservice is consuming 3x more memory than expected. Walk through your debugging approach from Docker stats to application profiling
-2. How would you design a Docker image that works identically in development, staging, and production environments?
+
+4. **Describe a production bug caused by misunderstanding Docker Basics — Containers, Images, and Docker Engine. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Docker Basics — Containers, Images, and Docker Engine from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
-1. Your team has 20 microservices in Docker Compose for local development. How do you manage shared configurations, secrets, and service discovery?
-2. Explain how Docker networking works between containers and how you would implement service-to-service communication with proper isolation
+
+6. **Compare Docker Basics — Containers, Images, and Docker Engine with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Docker Basics — Containers, Images, and Docker Engine.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
-1. A deep learning training container needs GPU passthrough, 64GB of shared memory, and access to a mounted dataset volume. How do you configure all three?
-2. Your GPU container image is 15GB. How do you optimize it for faster pulls and deploys without losing required CUDA libraries?
+
+8. **How does Docker Basics — Containers, Images, and Docker Engine behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Docker Basics — Containers, Images, and Docker Engine run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
-1. You need to containerize a FastAPI app that runs a Hugging Face model for inference. Write the Dockerfile from memory, including GPU support and health checks
-2. Docker builds are taking 10 minutes. Identify the three most impactful optimizations you would implement
 
+10. **Write the smallest possible implementation of Docker Basics — Containers, Images, and Docker Engine that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
-- List "Docker" and "Containerization" under Technical Skills with proficiency level
-- Project example: "Containerized ML inference service using multi-stage Docker builds, reducing image size from 8GB to 1.2GB and deploy time from 5 minutes to 30 seconds"
-- Mention Docker in DevOps or deployment sections: "Implemented Docker Compose development environment with 5 services and automated health checks"
 
+- Name Docker Basics — Containers, Images, and Docker Engine explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Docker Basics — Containers, Images, and Docker Engine").
+- Add a bullet describing a project that applies Docker Basics — Containers, Images, and Docker Engine to real data, with numbers.
+- Mention the tools and libraries you used alongside Docker Basics — Containers, Images, and Docker Engine (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
 
 ### Interview Day Checklist
-- [ ] Can write a multi-stage Dockerfile from memory for a Python/Node.js application
-- [ ] Can explain the difference between CMD and ENTRYPOINT with examples
-- [ ] Can describe container states and lifecycle transitions
-- [ ] Can explain how Docker networking works (bridge, host, overlay)
-- [ ] Can list 5 Docker production best practices without notes
 
-> **Next**: [02 — Docker Compose](02-docker-compose.md)
+- Rehearse a 60-second explanation of Docker Basics — Containers, Images, and Docker Engine and one real-world analogy.
+- Prepare one STAR story about debugging a Docker Basics — Containers, Images, and Docker Engine-related production issue.
+- Review complexity and edge cases for the classic Docker Basics — Containers, Images, and Docker Engine interview problem.
+- Have questions ready: how does the team apply Docker Basics — Containers, Images, and Docker Engine in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
 
+## True/False
+
+1. **True or False:** Docker Basics — Containers, Images, and Docker Engine builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Docker Basics — Containers, Images, and Docker Engine before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Docker Basics — Containers, Images, and Docker Engine is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Docker Basics — Containers, Images, and Docker Engine in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Docker Basics — Containers, Images, and Docker Engine chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Docker Basics — Containers, Images, and Docker Engine is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Docker Basics — Containers, Images, and Docker Engine is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Docker Basics — Containers, Images, and Docker Engine is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Docker Basics — Containers, Images, and Docker Engine issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Docker Basics — Containers, Images, and Docker Engine in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Docker Basics — Containers, Images, and Docker Engine that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Docker Basics — Containers, Images, and Docker Engine is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Docker Basics — Containers, Images, and Docker Engine in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Docker Basics — Containers, Images, and Docker Engine and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Docker Basics — Containers, Images, and Docker Engine on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Docker Basics — Containers, Images, and Docker Engine to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
 
 ## Tips & Tricks
 
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
+- Always write a one-line example of Docker Basics — Containers, Images, and Docker Engine from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Docker Basics — Containers, Images, and Docker Engine when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Docker Basics — Containers, Images, and Docker Engine twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Docker Basics — Containers, Images, and Docker Engine snippets; interviewers love original examples.
 
 ## Memory Tricks
 
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
+- **Acronym**: build a mnemonic from the 5 key concepts of Docker Basics — Containers, Images, and Docker Engine listed in the Chapter at a Glance table.
+- **Story**: link Docker Basics — Containers, Images, and Docker Engine to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Docker Basics — Containers, Images, and Docker Engine by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Docker Basics — Containers, Images, and Docker Engine to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Docker Basics — Containers, Images, and Docker Engine
+- The classic textbook chapter on Docker Basics — Containers, Images, and Docker Engine (check the Research References below)
+- Two blog posts from engineers who debugged real Docker Basics — Containers, Images, and Docker Engine problems in production
+- The repository of the open-source project that implements Docker Basics — Containers, Images, and Docker Engine
 
 ## Related Topics
 
-- How this connects to Docker, Kubernetes & Cloud fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
+- The previous chapter in this module (see table of contents) â€” foundational for Docker Basics — Containers, Images, and Docker Engine
+- The next chapter (see Next Topic below) â€” builds on Docker Basics — Containers, Images, and Docker Engine
+- The system design chapters in Module 07 â€” how Docker Basics — Containers, Images, and Docker Engine fits into production architectures
+- The interview preparation module â€” how Docker Basics — Containers, Images, and Docker Engine is asked in screening rounds
+- The capstone project â€” where Docker Basics — Containers, Images, and Docker Engine is applied end-to-end
 
 ## FAQs
 
-**Q: How long does it take to master docker basics?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
+1. **Do I need to memorize all of Docker Basics — Containers, Images, and Docker Engine, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Docker Basics — Containers, Images, and Docker Engine asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
+- Docker Basics — Containers, Images, and Docker Engine is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Docker Basics — Containers, Images, and Docker Engine.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
 
 ## Historical Context
 
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of docker basics helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
+- Docker Basics — Containers, Images, and Docker Engine emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Docker Basics — Containers, Images, and Docker Engine today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Docker Basics — Containers, Images, and Docker Engine â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Docker Basics — Containers, Images, and Docker Engine changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
 
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
+- Never trust external input: validate and sanitize data before processing Docker Basics — Containers, Images, and Docker Engine.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
 
 ## ML Intuition
 
-For AI engineering, understanding docker basics at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
+- Docker Basics — Containers, Images, and Docker Engine appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Docker Basics — Containers, Images, and Docker Engine helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Docker Basics — Containers, Images, and Docker Engine concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Docker Basics — Containers, Images, and Docker Engine skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Docker Basics — Containers, Images, and Docker Engine to a dataset of 10 million records? â€” Batching and vectorization.
 
 ## Analogies
 
-Think of docker basics like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
+- **Docker Basics — Containers, Images, and Docker Engine is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-**Project**: Apply docker basics concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Docker Basics — Containers, Images, and Docker Engine skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
-**Card 1**: What is the core concept of docker basics?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
+<details class="tp-qa-card" data-qid="06dockerkubernetescloud-01dockerbasics-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Which Docker component is responsible for managing containers, images, and volumes?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Docker Daemon</p>
+  </div>
+</details>
 
-**Card 2**: When would you apply docker basics in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
+<details class="tp-qa-card" data-qid="06dockerkubernetescloud-01dockerbasics-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What instruction in a Dockerfile sets the command that always runs when the container starts?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>c) ENTRYPOINT</p>
+  </div>
+</details>
 
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
+<details class="tp-qa-card" data-qid="06dockerkubernetescloud-01dockerbasics-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Which network driver allows a container to use the host's network stack directly?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>c) host</p>
+  </div>
+</details>
 
-## Study Plan
+<details class="tp-qa-card" data-qid="06dockerkubernetescloud-01dockerbasics-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the purpose of a .dockerignore file?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) Exclude files from the build context</p>
+  </div>
+</details>
 
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
+<details class="tp-qa-card" data-qid="06dockerkubernetescloud-01dockerbasics-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Which command shows resource usage of running containers?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>b) docker stats</p>
+  </div>
+</details>
 
 ## Research References
 
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
+- Official documentation of the primary library for Docker Basics — Containers, Images, and Docker Engine (linked in Further Reading)
+- The classic paper or textbook chapter introducing Docker Basics — Containers, Images, and Docker Engine (see References below)
+- The standard library reference for Docker Basics — Containers, Images, and Docker Engine-related functions
+- Engineering blog posts from companies running Docker Basics — Containers, Images, and Docker Engine in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
 
 ## Open-Source Tools
 
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Docker Basics — Containers, Images, and Docker Engine code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Docker Basics — Containers, Images, and Docker Engine
 
 ## Debugging Guide
 
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
+- Start with `print()` or a debugger to inspect intermediate values in Docker Basics — Containers, Images, and Docker Engine code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Docker Basics — Containers, Images, and Docker Engine example code.
 
 ## Mock Interview Section
 
-**Quick Fire Questions**:
-1. What is the core concept of Docker, Kubernetes & Cloud?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
+**Round 1 â€” Screening (15 min)**
+- Explain Docker Basics — Containers, Images, and Docker Engine in 60 seconds.
+- Write a minimal working example of Docker Basics — Containers, Images, and Docker Engine.
+- What is the complexity of your example?
 
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
 
-## References
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Docker Basics — Containers, Images, and Docker Engine problem in a project.
+- How would you design a system where Docker Basics — Containers, Images, and Docker Engine is used at scale?
+- What metrics would you monitor?
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Docker Basics — Containers, Images, and Docker Engine.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Docker Basics — Containers, Images, and Docker Engine logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Docker Basics — Containers, Images, and Docker Engine without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
 
 ## Real-World Examples
 
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
+- **Startup**: a small team uses Docker Basics — Containers, Images, and Docker Engine daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Docker Basics — Containers, Images, and Docker Engine patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Docker Basics — Containers, Images, and Docker Engine principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Docker Basics — Containers, Images, and Docker Engine shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Docker Basics — Containers, Images, and Docker Engine to the business outcome, not just the code.
 
 ## Next Topic
 
-After mastering Docker, Kubernetes & Cloud, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Inference Workflow
-
-1. **Input Validation**: Sanitize and validate incoming requests
-2. **Preprocessing**: Transform input to model-ready format
-3. **Model Execution**: Run inference with optimized runtime
-4. **Postprocessing**: Format model output for consumption
-5. **Response**: Return results with metadata and timing
-6. **Monitoring**: Log requests, responses, and latency
+[Docker Compose — Multi-Container Orchestration](02-docker-compose.md)
 
 ## Limitations
 
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.
+- Docker Basics — Containers, Images, and Docker Engine, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Docker Basics — Containers, Images, and Docker Engine depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

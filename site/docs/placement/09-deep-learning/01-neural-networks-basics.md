@@ -47,7 +47,7 @@ flowchart LR
     H --> I{Converged?}
     I -->|No| A
     I -->|Yes| J[Trained Model]
-```text
+```
 
 
 ## Introduction
@@ -123,7 +123,7 @@ p = Perceptron(2)
 p.fit(X_xor, y_xor, epochs=20)
 print(f"Perceptron XOR predictions: {p.predict(X_xor)}")
 print("Perceptron cannot learn XOR (linear separability limitation)")
-```text
+```
 
 **Perceptron convergence theorem**: If the data is linearly separable, the perceptron converges in finite steps. XOR is not linearly separable, requiring a multi-layer network.
 
@@ -186,7 +186,7 @@ class ActivationFunctions:
 
 af = ActivationFunctions()
 af.plot_activations()
-```text
+```
 
 **PyTorch activations**:
 ```python
@@ -197,7 +197,7 @@ print(f"Sigmoid: {torch.sigmoid(x_t)}")
 print(f"ReLU: {torch.relu(x_t)}")
 print(f"Tanh: {torch.tanh(x_t)}")
 print(f"LeakyReLU: {nn.LeakyReLU(0.01)(x_t)}")
-```text
+```
 
 | Activation | Range | Derivative | Use Case |
 |------------|-------|------------|----------|
@@ -316,7 +316,7 @@ for epoch in range(500):
 
     if epoch % 100 == 0:
         print(f"Epoch {epoch}: loss = {loss:.6f}")
-```text
+```
 
 ---
 
@@ -372,7 +372,7 @@ loss.backward()
 print(f"dL/dw = {w.grad.item():.2f} (manual: {2 * (z.item() - y.item()) * x.item():.2f})")
 print(f"dL/db = {b.grad.item():.2f} (manual: {2 * (z.item() - y.item()):.2f})")
 print(f"dL/dx = {x.grad.item():.2f}")
-```text
+```
 
 **Backpropagation steps**:
 1. Forward pass: compute all activations
@@ -433,7 +433,7 @@ class WeightInitializer:
 
 init = WeightInitializer()
 init.test_initialization(100, 100)
-```text
+```
 
 **PyTorch initialization**:
 ```python
@@ -441,7 +441,7 @@ layer = nn.Linear(100, 100)
 nn.init.kaiming_normal_(layer.weight, mode="fan_in", nonlinearity="relu")
 nn.init.xavier_normal_(layer.weight)
 print(f"PyTorch init: mean={layer.weight.mean().item():.4f}, std={layer.weight.std().item():.4f}")
-```text
+```
 
 | Initialization | Distribution | Scale | Best For |
 |----------------|-------------|-------|----------|
@@ -488,7 +488,7 @@ y_p = np.array([0.1, 0.9, 0.3, 0.7])
 print(f"MSE: {lf.mse(y_t, y_p):.4f}")
 print(f"Binary CE: {lf.binary_cross_entropy(y_t, y_p):.4f}")
 print(f"Huber: {lf.huber_loss(y_t, y_p):.4f}")
-```text
+```
 
 ---
 
@@ -555,7 +555,7 @@ class NeuralNetworkTS {
 const nnTS = new NeuralNetworkTS();
 nnTS.addLayer(3, 8, "relu");
 nnTS.addLayer(8, 1, "sigmoid");
-```text
+```
 
 
 ## Summary
@@ -724,282 +724,3 @@ d) Huber
 - He initialization (variance = 2/fan_in) for ReLU; Xavier initialization (variance = 2/(fan_in + fan_out)) for tanh/sigmoid
 - Vanishing gradients: solved by ReLU, batch normalization, residual connections, and proper initialization
 - Cross-entropy loss for classification; MSE for regression; BCE for binary classification
-
-
-## Summary
-
-Neural networks start with the perceptron — a simple linear classifier limited to linearly separable problems like AND and OR. Activation functions (sigmoid,.
-tanh, ReLU, Leaky ReLU) introduce non-linearity, enabling multi-layer perceptrons to approximate any continuous function. Backpropagation efficiently computes gradients through the chain rule,.
-and PyTorch's autograd automates this process with dynamic computational graphs. Weight initialization is critical: He init for ReLU networks, Xavier for.
-sigmoid/tanh. Vanishing and exploding gradients are common deep network challenges solved by ReLU activations, proper initialization, and batch normalization. Loss function selection (cross-entropy for.
-classification, MSE for regression) directly impacts training stability.
-
-
-## Placement Section
-
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain why a single perceptron cannot solve XOR and design a minimal neural network that can. What is the decision boundary?
-2. Derive backpropagation for a 2-layer network from scratch, showing the chain rule application at each step
-
-#### Amazon Style
-1. A neural network's training loss stops decreasing after 5 epochs. Diagnose whether this is underfitting or overfitting and describe your next three actions
-2. Describe how you would build and deploy a neural network classifier that processes 1 million predictions per day with p99 < 50ms
-
-#### Microsoft Style
-1. How would you explain the vanishing gradient problem to a junior developer who is seeing their deep network fail to train?
-2. A production neural network's accuracy dropped from 95% to 80% after a code update. Walk through your debugging process
-
-#### NVIDIA Style
-1. A neural network trains on GPU but the backward pass is 5x slower than the forward pass. What causes this and how do you optimize it?
-2. You need to train a model with 10 billion parameters on a cluster of 8 A100 GPUs. How do you implement model parallelism and gradient synchronization?
-
-#### AI Startup Style
-1. You need to classify customer support tickets into 20 categories using a neural network. What architecture do you choose, what loss function, and how do you handle class imbalance?
-2. Your inference API runs a neural network that takes 2 seconds per prediction. The client needs 100ms. Propose three optimization strategies
-
-
-### Resume Tips
-- List "Deep Learning" and "PyTorch" under Technical Skills with specific capabilities (autograd, nn.Module, GPU training)
-- Project example: "Implemented multi-layer perceptron from scratch with backpropagation, achieving 98% accuracy on MNIST"
-- Mention neural network debugging skills: "Diagnosed vanishing gradient problem in 12-layer network, resolved with He initialization and batch normalization"
-
-
-### Interview Day Checklist
-- [ ] Can explain why a single perceptron cannot solve XOR with a diagram
-- [ ] Can derive backpropagation for a 2-layer network on a whiteboard
-- [ ] Can list the vanishing gradient problem's causes and 3 solutions from memory
-- [ ] Can describe He vs Xavier initialization and when to use each
-- [ ] Can explain PyTorch autograd's dynamic computational graph concept
-
-> **Next**: [PyTorch Tensors](02-pytorch-tensors.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Deep Learning with PyTorch fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master neural networks basics?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of neural networks basics helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding neural networks basics at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of neural networks basics like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply neural networks basics concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of neural networks basics?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply neural networks basics in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Deep Learning with PyTorch?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Deep Learning with PyTorch, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Training Workflow
-
-1. **Data Preparation**: Collect, clean, and preprocess data
-2. **Model Selection**: Choose architecture based on task requirements
-3. **Training Loop**: Forward pass, loss computation, backpropagation
-4. **Validation**: Evaluate on held-out data to prevent overfitting
-5. **Hyperparameter Tuning**: Optimize learning rate, batch size, etc.
-6. **Model Export**: Save trained model for deployment

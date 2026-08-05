@@ -16,9 +16,6 @@
 
 System design interviews test your ability to architect large-scale systems. Caching, load balancing, message queues, and database sharding are patterns you will apply daily. This module prepares you for both interviews and production.
 
-
-
-
 ## Prerequisites
 
 - Basic programming knowledge
@@ -33,8 +30,6 @@ System design interviews test your ability to architect large-scale systems. Cac
 ## Theory
 
 Understanding rate limiting and idempotency is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how rate limiting and idempotency works in practice.
-
-
 
 ## Chapter at a Glance
 
@@ -60,6 +55,7 @@ flowchart LR
     F --> H[Store Key in Redis]
     H --> I[Response with Rate Headers]
 
+```
 ## 8.1 Rate Limiting Fundamentals
 
 Rate limiting controls the number of requests a client can make within a specific time window. It protects APIs from abuse, ensures fair resource allocation, and maintains system stability.
@@ -84,7 +80,7 @@ class RateLimiter {
     throw new Error("Not implemented");
   }
 }
-```text
+```
 
 **Common reasons**: Prevent DDoS attacks, protect against brute force login attempts, ensure fair usage between tenants, control costs for paid APIs, prevent cascading failures from traffic spikes.
 
@@ -128,7 +124,7 @@ class TokenBucket extends RateLimiter {
     return { allowed: false, remaining: 0, resetTime: now + Math.ceil((1 - bucket.tokens) / this.refillRate * 1000) };
   }
 }
-```text
+```
 
 **Pros**: Smooth traffic, allows bursts, configurable burst capacity. **Cons**: Memory per key, clock-dependent refill timing.
 
@@ -172,7 +168,7 @@ class SlidingWindowCounter extends RateLimiter {
     return { allowed: true, remaining: this.maxRequests - Math.ceil(weightedCount), resetTime: (currentWindow + 1) * this.windowMs };
   }
 }
-```text
+```
 
 Sliding window counter is the best trade-off: O(1) memory with no boundary burst, within 5-10% accuracy.
 
@@ -224,7 +220,7 @@ class RedisSlidingWindowLimiter {
     return { allowed: allowed === 1, remaining };
   }
 }
-```text
+```
 
 **Challenges**: Redis becomes a single point of failure and adds ~1ms latency per request. Mitigations: Redis Sentinel/Cluster, local counters with periodic sync (approximate rate limiting).
 
@@ -277,7 +273,7 @@ class IdempotencyMiddleware {
     };
   }
 }
-```text
+```
 
 **Best practices**: Use UUIDv4 as idempotency key, set 24h TTL, return cached response for duplicate keys, include key in response headers.
 
@@ -322,7 +318,7 @@ class ResilientClient {
     throw new Error("Max retries exceeded");
   }
 }
-```text
+```
 
 **Retry strategies**: Immediate retry (idempotent only), fixed delay, exponential backoff (base x 2^attempt), jitter (randomize delay to avoid thundering herd).
 
@@ -362,7 +358,7 @@ class HybridRateLimiter {
     return true;
   }
 }
-```text
+```
 
 ---
 
@@ -575,7 +571,6 @@ d) Cache-Control
 
 ---
 
-
 ## Common Mistakes
 
 1. Not understanding the fundamental concepts before applying them
@@ -630,6 +625,39 @@ d) Cache-Control
 - [ ] Know the time/space complexity of common 07-system-design operations
 - [ ] Have questions ready about how the company uses 07-system-design> **Next**: [Monitoring & Observability](09-monitoring-and-observability.md)
 
+## True/False
+
+1. **True or False:** Rate Limiting & Idempotency — Algorithms, Distributed Strategies builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Rate Limiting & Idempotency — Algorithms, Distributed Strategies before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Rate Limiting & Idempotency — Algorithms, Distributed Strategies is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Rate Limiting & Idempotency — Algorithms, Distributed Strategies in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Rate Limiting & Idempotency — Algorithms, Distributed Strategies chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Rate Limiting & Idempotency — Algorithms, Distributed Strategies is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Rate Limiting & Idempotency — Algorithms, Distributed Strategies is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Rate Limiting & Idempotency — Algorithms, Distributed Strategies is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Rate Limiting & Idempotency — Algorithms, Distributed Strategies issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Rate Limiting & Idempotency — Algorithms, Distributed Strategies in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Rate Limiting & Idempotency — Algorithms, Distributed Strategies that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Rate Limiting & Idempotency — Algorithms, Distributed Strategies is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Rate Limiting & Idempotency — Algorithms, Distributed Strategies in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Rate Limiting & Idempotency — Algorithms, Distributed Strategies and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Rate Limiting & Idempotency — Algorithms, Distributed Strategies on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -702,16 +730,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of rate limiting and idempotency helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -746,27 +764,12 @@ Think of rate limiting and idempotency like learning a new language — start wi
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -806,14 +809,28 @@ When applying this topic to production, consider:
 - What monitoring would you add?
 - How would you test this in production?
 
-## References
+## Optimized Implementation
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Rate Limiting & Idempotency — Algorithms, Distributed Strategies.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Rate Limiting & Idempotency — Algorithms, Distributed Strategies logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 

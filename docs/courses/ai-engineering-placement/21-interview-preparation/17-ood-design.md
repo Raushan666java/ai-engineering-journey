@@ -1,17 +1,13 @@
 <!-- Clear Language: Keep sentences under 50 words -->
 # Low-Level and OOD Design
 
-
 ## Learning Objectives
 
 After this chapter you will be able to design class hierarchies for common interview problems, apply SOLID principles to object-oriented design, handle concurrency and edge cases in design, and communicate tradeoffs during object-oriented design (OOD) rounds.
 
-
 ## Introduction
 
 Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers.
-
-
 
 ## Prerequisites
 
@@ -37,8 +33,7 @@ flowchart TD
     G --> H{Tradeoffs}
     H -->|Refine| B
     H -->|Done| I[Code]
-```text
-
+```
 
 ### What OOD Interviews Test
 
@@ -56,7 +51,6 @@ The standard framework:
 4. Handle edge cases and concurrency
 5. Discuss extensibility and tradeoffs
 
-
 ### Common Entities in OOD Problems
 
 Most OOD problems share entity types:
@@ -65,7 +59,6 @@ Most OOD problems share entity types:
 - Enums for types and statuses (SpotSize, Direction, State)
 - Strategies for algorithms (PricingStrategy, SchedulingStrategy)
 
-
 ### Concurrency in OOD
 
 For multi-user systems (parking lot, library, restaurant), consider thread safety:
@@ -73,7 +66,6 @@ For multi-user systems (parking lot, library, restaurant), consider thread safet
 - ConcurrentHashMap or explicit locks
 - Atomic counters for unique IDs
 - ReadWriteLock for read-heavy workloads
-
 
 ### Design Patterns in OOD
 
@@ -85,17 +77,13 @@ Common patterns used in OOD solutions:
 - Command: queuing operations (elevator requests)
 - State: object behaves differently based on internal state (elevator moving/idle)
 
-
 ## Examples
 
-
 ### Problem 1: Parking Lot
-
 
 ### Requirements
 
 Design a parking lot with multiple levels. Each level has spots of different sizes (small, medium, large). The system should assign the nearest available spot, handle different vehicle types (motorcycle, car, truck), track payment by hour, and support disabled spots.
-
 
 ### Entities
 
@@ -224,8 +212,7 @@ class ParkingLot {
         return undefined
     }
 }
-```text
-
+```
 
 ### Discussion Points
 
@@ -235,14 +222,11 @@ class ParkingLot {
 - Electric vehicle charging spots: subclass ParkingSpot with charger capability
 - Validation: license plate uniqueness, maximum stay duration
 
-
 ## Problem 2: Design a Logger
-
 
 ### Requirements
 
 Design a library that supports multiple log levels (DEBUG, INFO, WARN, ERROR), multiple outputs (console, file, network), configurable formatting (timestamp, level, message), and performance logging with configurable sampling.
-
 
 ### Design
 
@@ -364,8 +348,7 @@ class Logger {
         this.log(LogLevel.ERROR, message, metadata)
     }
 }
-```text
-
+```
 
 ### Discussion Points
 
@@ -375,14 +358,11 @@ class Logger {
 - Structured logging: JSON format for log aggregation systems (ELK, Datadog)
 - Sampling strategy: rate limiting per source, adaptive sampling during high traffic
 
-
 ## Problem 3: Design a Rate Limiter Library
-
 
 ### Requirements
 
 Design a reusable rate limiter that supports token bucket, sliding window, and fixed window algorithms. It should be configurable per client, thread-safe, support distributed deployment via Redis, and emit metrics.
-
 
 ### Design
 
@@ -488,8 +468,7 @@ class RateLimiterFactory {
         return new SlidingWindowRateLimiter(maxRequests, windowMs)
     }
 }
-```text
-
+```
 
 ### Discussion Points
 
@@ -499,14 +478,11 @@ class RateLimiterFactory {
 - Backpressure: HTTP 429 with Retry-After header
 - Race conditions: use atomic operations (CAS, Redis Lua) for concurrent safety
 
-
 ## Problem 4: Design a Vending Machine
-
 
 ### Requirements
 
 Design a vending machine that supports multiple product types, different payment methods (cash, card), inventory tracking, change calculation, and state machine for operations.
-
 
 ### Design
 
@@ -609,23 +585,13 @@ class VendingMachine {
         if (slot) slot.restock(amount)
     }
 }
-```text
-
-
-## Exercises
-
-**Easy** — Implement a basic ood design example that demonstrates the core concept.
-
-**Medium** — Create a more complex implementation that handles edge cases.
-
-**Hard** — Design an optimized solution for large-scale ood design scenarios.
+```
 
 ## Summary
 
 OOD interviews test your ability to translate real-world systems into clean, extensible code. Follow the framework: clarify requirements, identify entities, define interfaces,.
 implement core logic, discuss tradeoffs. Always consider concurrency, extensibility, and edge cases. Use design patterns appropriately but do not force them. Practice with the four problems in this chapter (parking lot,.
 logger, rate limiter, vending machine) and extend them with new features.
-
 
 ## Practical Takeaways
 
@@ -637,6 +603,91 @@ logger, rate limiter, vending machine) and extend them with new features.
 - Discuss tradeoffs: simplicity vs features, performance vs readability
 - Practice with a whiteboard or plain text editor (no IDE autocomplete)
 
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="m21-s17-q1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q1: What framework do you follow when given an OOD problem in an interview?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Five steps: clarify requirements and scope (ask what is in and out of scope); identify core entities and their relationships (ParkingSpot, Vehicle, Ticket for a parking lot); define interfaces and abstract classes before implementations; handle edge cases and concurrency (multiple users, thread safety, invalid input); discuss extensibility and tradeoffs.</p>
+    <p>OOD rounds differ from system design — they test class hierarchy, encapsulation, pattern application, and relationship modeling on a single machine, not distributed scale. The chapter's flowchart runs requirements to entities to hierarchy to interfaces to edge cases to concurrency to tradeoffs, looping back to refine.</p>
+    <p><strong>Interview follow-up</strong>: When should you stop adding abstractions and just write the class?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s17-q2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q2: Design a parking lot. Walk through entities, spot assignment, and the key tradeoffs.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Entities: <code>ParkingSpot</code> (id, level, size, occupancy), <code>Vehicle</code> (type, disabled flag), <code>Ticket</code> (entry/exit time, fee), <code>ParkingLevel</code>, and <code>ParkingLot</code> orchestrating. <code>canFit()</code> encodes size rules: motorcycles fit anywhere, cars need medium or larger, trucks need large; disabled spots reserve priority. <code>park()</code> finds the nearest available spot, issues a ticket, and <code>exit()</code> computes a ceil-to-hour fee.</p>
+    <p>Tradeoffs to discuss: nearest-spot scanning is O(spots) — optimize with per-level available queues; hourly rate could vary by level, size, or time via the Strategy pattern; concurrent entry requires thread-safe allocation; EV charging extends <code>ParkingSpot</code> with a charger capability.</p>
+    <p><strong>Interview follow-up</strong>: How does the design change if a vehicle can reserve a spot in advance?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s17-q3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q3: Design a logger library. How do you keep it extensible and non-blocking?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Core pieces: <code>LogLevel</code> enum, <code>LogMessage</code> (timestamp, level, source, message, metadata) with a <code>format()</code> method, a <code>LogAppender</code> interface implemented by <code>ConsoleAppender</code>, <code>FileAppender</code>, and <code>NetworkAppender</code>, a <code>LoggerConfig</code> (level filter, appender list, sampling rate), and a <code>Logger</code> that filters, samples, and fans out to appenders, catching per-appender failures.</p>
+    <p>Extensibility: adding an appender never touches the logger — it implements <code>LogAppender</code>. Production considerations: async logging with a background queue so log calls never block the application, config from YAML/JSON, dynamic level changes, JSON structured output for ELK/Datadog, and adaptive sampling during high traffic.</p>
+    <p><strong>Interview follow-up</strong>: Where does the background logging queue live, and what happens when it fills?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s17-q4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q4: Compare token bucket and sliding window rate limiters. Which do you deploy and why?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Token bucket: each client has a bucket refilled at a fixed rate up to a cap; a request consumes a token. It allows short bursts up to the bucket size while capping the sustained rate — the chapter's <code>TokenBucketRateLimiter</code> tracks tokens and lastRefill timestamps. Sliding window: keeps a timestamp list per client and trims entries older than the window; it enforces a strict per-window count at the cost of O(maxRequests) space per client.</p>
+    <p>Deployment: a <code>RateLimiterFactory</code> constructs the algorithm per config. For distributed systems, move state to Redis with Lua scripts for atomic token operations, return HTTP 429 with Retry-After for backpressure, and emit allowed/blocked metrics via Prometheus.</p>
+    <p><strong>Interview follow-up</strong>: What is the worst-case space complexity of the sliding window limiter per client?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s17-q5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q5: Design a vending machine. Why is a state machine the right model?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Operations depend on the current state — you cannot insert payment before selecting a product, and you cannot dispense before payment. The chapter models states as an enum (IDLE, SELECTING, DISPENSING, OUT_OF_STOCK, MAINTENANCE) and guards every method: <code>insertCash()</code> returns an error unless state is SELECTING, and <code>dispense()</code> transitions back to IDLE with change computed from the balance.</p>
+    <p>This is the State pattern: behavior varies with internal state. Entities: <code>Product</code>, <code>InventorySlot</code> (quantity, capacity, restock clamp), and <code>VendingMachine</code> orchestrating. Tradeoffs: exact change handling, refund on cancel, payment failure handling (card declined must restore state), and maintenance-mode locking.</p>
+    <p><strong>Interview follow-up</strong>: What happens to the balance if payment fails after insertion?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s17-q6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q6: How do you handle concurrency in OOD systems, and which primitives do you reach for?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Multi-user OOD problems (parking lot, library, restaurant) need thread safety. Options: synchronized blocks for critical sections; ConcurrentHashMap or explicit locks for shared maps; atomic counters for unique ID generation; ReadWriteLock for read-heavy workloads where readers do not block each other.</p>
+    <p>The chapter's quiz asks exactly this: ReadWriteLock wins for read-heavy systems because multiple readers proceed concurrently while writes still serialize. Race conditions in spot allocation are prevented by making check-and-assign atomic, and the rate limiter discussion covers CAS and Redis Lua for distributed atomicity.</p>
+    <p><strong>Interview follow-up</strong>: What happens to throughput if you use a single global lock instead of per-shard locks?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
 
 ## Chapter Quiz
 
@@ -676,6 +727,14 @@ logger, rate limiter, vending machine) and extend them with new features.
    // correct: B
 
 #
+
+## Exercises
+
+**Easy** — Implement a basic ood design example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale ood design scenarios.
 
 ## Common Mistakes
 
@@ -741,6 +800,39 @@ logger, rate limiter, vending machine) and extend them with new features.
 - [ ] Know the time/space complexity of common 21-interview-preparation operations
 - [ ] Have questions ready about how the company uses 21-interview-preparationllation.
 
+## True/False
+
+1. **True or False:** Low-Level and OOD Design builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Low-Level and OOD Design before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Low-Level and OOD Design is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Low-Level and OOD Design in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Low-Level and OOD Design chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Low-Level and OOD Design is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Low-Level and OOD Design is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Low-Level and OOD Design is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Low-Level and OOD Design issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Low-Level and OOD Design in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Low-Level and OOD Design that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Low-Level and OOD Design is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Low-Level and OOD Design in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Low-Level and OOD Design and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Low-Level and OOD Design on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -813,16 +905,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of ood design helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -857,27 +939,12 @@ Think of ood design like learning a new language — start with basic vocabulary
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -903,14 +970,47 @@ When applying this topic to production, consider:
 4. Verify configuration settings
 5. Test with known-good inputs
 
-## References
+## Mock Interview Section
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+**Round 1 â€” Screening (15 min)**
+- Explain Low-Level and OOD Design in 60 seconds.
+- Write a minimal working example of Low-Level and OOD Design.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Low-Level and OOD Design problem in a project.
+- How would you design a system where Low-Level and OOD Design is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Low-Level and OOD Design.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Low-Level and OOD Design logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 

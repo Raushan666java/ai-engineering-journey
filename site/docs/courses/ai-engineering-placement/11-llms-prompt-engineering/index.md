@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /ai-engineering-placement
 title: "11 — LLMs & Prompt Engineering"
 sidebar_label: "11 — LLMs & Prompt Engineering"
 sidebar_position: 144

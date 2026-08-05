@@ -60,7 +60,7 @@ flowchart LR
     E --> F[Operators]
     F --> G[Type Conversion]
     G --> H[PEP 8 Style]
-```text
+```
 
 ## 1.1 Setting Up Python
 
@@ -72,7 +72,7 @@ Python is an interpreted, dynamically-typed, high-level programming language. It
 python --version
 
 ## Python 3.11.9
-```text
+```
 
 **Two modes of execution**:
 
@@ -83,7 +83,7 @@ python --version
 
 ## hello.py — Your first Python program
 print("Hello, AI Engineering Journey!")
-```text
+```
 
 **Recommended IDEs**: VS Code with Python extension, PyCharm Community Edition, or Cursor for AI-assisted development.
 
@@ -93,7 +93,7 @@ print("Hello, AI Engineering Journey!")
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 .venv\Scripts\activate     # Windows
-```text
+```
 
 ---
 
@@ -117,7 +117,7 @@ data = "now a str"   # Now str
 ## Multiple assignment
 x, y, z = 1, 2, 3
 a = b = c = 0
-```text
+```
 
 **Variable naming rules**:
 - Letters, digits, underscores (cannot start with digit)
@@ -130,7 +130,7 @@ a = b = c = 0
 ## Constants by convention (not enforced)
 MAX_RETRIES = 3
 DEFAULT_TIMEOUT = 30.0
-```text
+```
 
 **Reference semantics**: Variables hold references, not values. Assignment copies the reference, not the object.
 
@@ -145,7 +145,7 @@ c = a.copy()
 c.append(5)
 print(a)           # [1, 2, 3, 4]
 print(c)           # [1, 2, 3, 4, 5]
-```text
+```
 
 ---
 
@@ -168,7 +168,7 @@ scientific = 1.5e-3        # 0.0015
 ## complex — real and imaginary parts
 z = 3 + 4j
 print(z.real, z.imag)      # 3.0 4.0
-```text
+```
 
 **Arithmetic operators**:
 
@@ -181,7 +181,7 @@ print(a / b)    # 3.333... — float division
 print(a // b)   # 3   — floor division
 print(a % b)    # 1   — modulo
 print(a ** b)   # 1000 — exponentiation
-```text
+```
 
 **Division behavior**: `/` always returns float. `//` returns int (floor).
 
@@ -189,7 +189,7 @@ print(a ** b)   # 1000 — exponentiation
 print(5 / 2)    # 2.5
 print(5 // 2)   # 2
 print(-5 // 2)  # -3 (floor, not truncate toward zero)
-```text
+```
 
 **Floating-point precision**:
 
@@ -200,7 +200,7 @@ print(round(0.1 + 0.2, 2))  # 0.3
 ## Use Decimal for exact arithmetic
 from decimal import Decimal
 print(Decimal('0.1') + Decimal('0.2'))  # 0.3
-```text
+```
 
 ---
 
@@ -234,7 +234,7 @@ print(text.split(","))    # ["  hello", " world!  "]
 print(", ".join(["a", "b", "c"]))  # "a, b, c"
 print(text.startswith("  hello"))   # True
 print(text.find("world"))  # 9
-```text
+```
 
 **f-strings** (Python 3.6+) — preferred string formatting:
 
@@ -253,7 +253,7 @@ pi = 3.14159
 print(f"{pi:.2f}")         # 3.14
 print(f"{pi:10.2f}")       # "      3.14" (right-aligned in width 10)
 print(f"{pi:<10.2f}")      # "3.14      " (left-aligned)
-```text
+```
 
 **String immutability**: Strings cannot be modified in place.
 
@@ -264,7 +264,7 @@ s = "hello"
 
 ## Must create new string
 s = "H" + s[1:]  # "Hello"
-```text
+```
 
 ---
 
@@ -284,7 +284,7 @@ print(bool(0))        # False
 print(bool(42))       # True
 print(bool(""))       # False
 print(bool("text"))   # True
-```text
+```
 
 **None**: Python's null value. Singleton of `NoneType`.
 
@@ -296,7 +296,7 @@ if result is None:
 ## Use is/is not for None comparison, not ==
 print(None is None)   # True
 print(None == 0)      # False
-```text
+```
 
 ---
 
@@ -307,7 +307,7 @@ print(None == 0)      # False
 ```python
 print(3 + 4.0)    # 7.0 — int promoted to float
 print(True + 2)   # 3   — bool promoted to int
-```text
+```
 
 **Explicit conversion** (type casting):
 
@@ -333,7 +333,7 @@ print(str(3.14))      # "3.14"
 ## float("3.14") — works fine
 
 ## int("0xFF", 0) — uses base from prefix
-```text
+```
 
 ---
 
@@ -347,7 +347,7 @@ print(str(3.14))      # "3.14"
 print(3 == 3.0)   # True (value comparison)
 print(3 is 3.0)   # False (identity comparison)
 print("a" < "b")  # True (lexicographic)
-```text
+```
 
 **Logical operators**: `and`, `or`, `not`
 
@@ -364,7 +364,7 @@ def get_value():
 
 ## If first condition is False, second is never evaluated
 result = False and get_value()  # get_value NOT called
-```text
+```
 
 **Assignment operators**: `=`, `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`
 
@@ -372,7 +372,7 @@ result = False and get_value()  # get_value NOT called
 x = 10
 x += 5   # x = 15
 x *= 2   # x = 30
-```text
+```
 
 **Identity operators**: `is`, `is not` — check object identity (memory address), not value.
 
@@ -390,7 +390,7 @@ print(x is y)   # True (CPython caches -5 to 256)
 x = 1000
 y = 1000
 print(x is y)   # May be True or False — implementation dependent!
-```text
+```
 
 **Membership operators**: `in`, `not in`
 
@@ -398,7 +398,7 @@ print(x is y)   # May be True or False — implementation dependent!
 print("a" in "hello")      # False
 print(3 in [1, 2, 3])      # True
 print("key" in {"key": 1}) # True
-```text
+```
 
 **Operator precedence** (highest to lowest):
 1. `**` — exponentiation
@@ -419,7 +419,7 @@ print("key" in {"key": 1}) # True
 ## Complex expression — use parentheses for clarity
 result = (2 + 3) * 4 > 15 and not False
 print(result)  # True
-```text
+```
 
 ---
 
@@ -450,7 +450,7 @@ def calculate_mean(values: List[float]) -> Optional[float]:
     if not values:
         return None
     return sum(values) / len(values)
-```text
+```
 
 Use `black` for auto-formatting and `ruff` for linting:
 
@@ -458,7 +458,7 @@ Use `black` for auto-formatting and `ruff` for linting:
 pip install black ruff
 black my_script.py
 ruff check my_script.py
-```text
+```
 
 ---
 
@@ -480,7 +480,7 @@ if (3 === 3) { console.log("strict equality"); }
 
 // Template literals (similar to f-strings)
 console.log(`${name} is ${age} years old.`);
-```text
+```
 
 ---
 
@@ -726,7 +726,7 @@ print(False or expensive())   # True — expensive() IS called</code></pre>
       <li><strong>Round for display</strong>: <code>print(round(0.1 + 0.2, 2))  # 0.3</code></li>
       <li><strong>Use tolerance for comparison</strong>:
         <pre><code>tolerance = 1e-9
-if abs(a - b) < tolerance:  # instead of a == b</code></pre></li>
+if abs(a - b) &lt; tolerance:  # instead of a == b</code></pre></li>
       <li><strong>Use <code>Decimal</code></strong> for financial calculations:
         <pre><code>from decimal import Decimal, ROUND_HALF_UP
 Decimal('0.1') + Decimal('0.2')  # Decimal('0.3')</code></pre></li>
@@ -834,317 +834,477 @@ d) 2
 
 ## Revision Notes
 
-- - Core principle: Understand the fundamental concepts thoroughly
-- - Implementation pattern: Practice with real code examples
-- - Complexity: Know the time and space complexity
-- - Application: Know when to use this in production systems
-- - Interview: Frequently asked in technical interviews
-- - Edge cases: Consider common failure scenarios
-- - Related concepts: Connect to broader system design
+- Core principle: Understand the fundamental concepts thoroughly
+- Implementation pattern: Practice with real code examples
+- Complexity: Know the time and space complexity
+- Application: Know when to use this in production systems
+- Interview: Frequently asked in technical interviews
+- Edge cases: Consider common failure scenarios
+- Related concepts: Connect to broader system design
+
+---
 
 ## Placement Section
 
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 01-python-programming. When would you choose one approach over another?
-2. Design a system that efficiently handles 01-python-programming at scale (millions of requests/second).
+
+1. **Write a function `safe_int(s)` that converts a string to an integer without using `int()`. Handle signs, whitespace, and invalid input.** — The interviewer is testing character-by-character accumulation: `result = result * 10 + digit`, sign handling, and validation. Expected follow-up: overflow behavior and Unicode digits.
+
+2. **Why does `0.1 + 0.2 != 0.3` in Python?** — Binary floating-point (IEEE 754) cannot represent 0.1 exactly. Show `Decimal` and `round(x, n)` as fixes. Follow-up: why `0.1 + 0.2 == 0.3` evaluates to `False` but `0.5 + 0.25 == 0.75` evaluates to `True`.
+
+3. **What is the output of `print(type(True), True == 1, True + True)`?** — `bool` is a subclass of `int`; `True == 1` and `True + True == 2`. Follow-up: `isinstance(True, int)` returns `True`.
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 01-python-programming. What was your approach and what was the result?
-2. How would you explain 01-python-programming to a non-technical stakeholder?
+
+4. **Explain `is` vs `==` with an example where they disagree.** — Use the integer caching range (-5 to 256) as the surprise case: `a = 1000; b = 1000; a is b` may be `False`, but `a = 5; b = 5; a is b` is `True`. Amazon tests whether you can explain implementation-dependent behavior without relying on it.
+
+5. **Describe a scenario where Python's dynamic typing caused a production bug. How would you prevent it?** — Example: a service returned a string where an int was expected; arithmetic failed silently. Fix: type hints, `mypy`/`pyright` in CI, and runtime validation with `pydantic` or `isinstance` guards at API boundaries.
 
 #### Microsoft Style
-1. How does 01-python-programming integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 01-python-programming?
+
+6. **Compare Python's `int` with Java's `int` and C's `int`.** — Python integers are arbitrary-precision objects; Java/C use fixed-width registers. Python `sys.maxsize` vs unlimited; memory overhead; performance trade-off. Follow-up: when would this matter in production? (IDs, counters, hashing, ML indexing.)
+
+7. **Write code that swaps two variables without a temporary variable.** — `a, b = b, a` (tuple packing/unpacking). Follow-up: how does Python evaluate the right-hand side first? (Tuple constructed, then unpacked.)
 
 #### NVIDIA Style
-1. How would you optimize 01-python-programming for GPU-accelerated computing?
-2. What parallel processing patterns apply to 01-python-programming?
+
+8. **How would you store and compare 1 billion numeric values in Python with minimal memory?** — Use `array.array` or `numpy` with an appropriate dtype (`float32` = 4 GB, `int8` = 1 GB) instead of Python lists of boxed objects. Follow-up: why does this matter for GPU workloads? (GPU expects contiguous typed memory; Python objects can't be copied directly to VRAM.)
+
+9. **Explain why `float32` is preferred for ML training pipelines even though `float64` is more precise.** — Memory bandwidth, GPU throughput, and the fact that gradient noise dominates beyond float32 precision. Follow-up: mixed precision (float16/float32) and the `Decimal` module's irrelevance in training.
 
 #### AI Startup Style
-1. How would you implement 01-python-programming in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 01-python-programming?
+
+10. **Write a one-liner to compute the average of a list of numbers, returning 0 for an empty list.** — `avg = (lambda xs: sum(xs) / len(xs) if xs else 0)(data)` or the clean `sum(data) / len(data) if data else 0`. Follow-up: time and space complexity (O(n), O(1)).
 
 ### Resume Tips
-- **Technical Skills**: List 01-python-programming under relevant technical skills
-- **Project Description**: "Implemented 01-python-programming to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 01-python-programming in your skills section for ATS optimization
+
+- List Python with measurable outcomes: "Reduced ETL runtime by 40% by rewriting string parsing with efficient slicing and join operations."
+- Mention PEP 8 adherence, type hints, and tooling (black, ruff, mypy) — ATS systems and recruiters filter on these keywords.
+- Quantify the scale you handled: "Processed 10M+ records with pandas/numpy pipelines."
+- Show the Python badge in your skills section next to ML libraries (NumPy, PyTorch, scikit-learn).
+- Add a "Python Projects" line linking your GitHub, with 2–3 clean, documented repos.
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 01-python-programming
-- [ ] Practice 3-5 problems related to 01-python-programming
-- [ ] Prepare 2 real-world examples of using 01-python-programming
-- [ ] Know the time/space complexity of common 01-python-programming operations
-- [ ] Have questions ready about how the company uses 01-python-programming> **Next**: [02 — Control Flow →](02-control
 
-### True/False
+- Warm up with 15 minutes of small Python snippets (f-strings, slicing, list comprehensions) before the interview.
+- Rehearse the "elevator pitch" for `is` vs `==`, dynamic typing, and float precision — the three most common Python screening questions.
+- Have a whiteboard-safe mental model: variables are name tags (references), not boxes.
+- Prepare two STAR stories about debugging a Python production issue.
+- Know the exact Python version on the system you will use (3.11+ features like `|` union types, `match` statements).
 
-**T/F 1**: Python is a statically typed language.
-**Answer**: False — Python is dynamically typed. Variable types are determined at runtime.
+## True/False
 
-**T/F 2**: Python uses 0-based indexing.
-**Answer**: True — Python lists, strings, and tuples use 0-based indexing.
+1. **True or False:** In Python, `1 == True` evaluates to `True`. — **True.** `bool` is a subclass of `int`, and `True` has value 1.
+2. **True or False:** `float("3.14")` and `int("3.14")` both succeed. — **False.** `int("3.14")` raises `ValueError` because int conversion of strings requires an integer literal.
+3. **True or False:** Slicing a string out of range raises an `IndexError`. — **False.** Slicing clamps to valid bounds; only direct indexing raises `IndexError`.
+4. **True or False:** `-7 // 2` equals `-3`. — **True.** Floor division rounds toward negative infinity, so `-7 // 2 = -4`. (The correct statement is False! This is the trick — **False** is the answer.)
+5. **True or False:** Python variables hold references to objects, not copies of values. — **True.** Assignment binds a name to an object; mutation through one reference is visible through others.
 
-**T/F 3**: The `len()` function returns the number of elements in a list.
-**Answer**: True — len([1,2,3]) returns 3.
+## Fill in the Blank
 
-**T/F 4**: Python variables must be declared before use.
-**Answer**: False — Python doesn't require explicit variable declaration.
+1. The operator used for floor division is **`//`**, and the operator for exponentiation is **`**`**.
+2. Python uses **reference counting** plus a generational **garbage collector** for memory management.
+3. The function **`isinstance`** checks an object's type against a type or tuple of types, and returns a boolean.
+4. `"python"[::-1]` returns the string **`"nohtyp"`**.
+5. A variable that holds the absence of a value should be assigned **`None`**, and it should be compared with the **`is`** operator.
 
-**T/F 5**: `None` is a keyword in Python.
-**Answer**: True — None represents the absence of a value.
+## Scenario Questions
 
-### Fill in the Blank
+1. **Scenario:** You are debugging a service that sometimes returns `0.30000000000000004` instead of `0.3` in an API response. Users see the raw float in their dashboards. — Diagnosis: binary float representation. Fix: round at the serialization boundary (`round(value, 2)`) or use `Decimal` for money-like values; document that raw floats are never user-facing.
 
-**FIB 1**: In Python, the ________ function converts a string to an integer.
-**Answer**: int()
+2. **Scenario:** A teammate writes `if x == None:` everywhere. Your code review must explain why this is risky. — `==` calls `__eq__` and can be overridden, returning custom truthiness; `None` is a singleton, so `is` is both faster and semantically correct. Require `is None` / `is not None`.
 
-**FIB 2**: The ________ keyword is used to define a function in Python.
-**Answer**: def
+3. **Scenario:** A list of 10 million floats is consuming 280 MB of RAM in a batch job. Your manager wants it cut down. — Python lists box every float in a PyObject (28+ bytes each). Switch to `array('d')` (80 MB) or NumPy `float64` (80 MB) / `float32` (40 MB). This matters for AI data pipelines.
 
-**FIB 3**: Python's ________ data type is immutable.
-**Answer**: tuple (and str, frozenset)
+4. **Scenario:** A new hire writes `s = s.replace("a", "b"); s.upper()` and is confused why `s` is still lowercase. — `str` methods return new strings; strings are immutable. They must reassign: `s = s.replace("a", "b").upper()`.
 
-**FIB 4**: The ________ operator is used for exponentiation in Python.
-**Answer**: ** (double asterisk)
+## Output Questions
 
-**FIB 5**: `print(type(5))` outputs ________.
-**Answer**: <class 'int'>
+1. **What is the output?**
+   ```python
+   print(2 ** 3 ** 2)
+   ```
+   **Output:** `512` — exponentiation is right-associative: `2 ** (3 ** 2) = 2 ** 9`.
 
-### Scenario Questions
+2. **What is the output?**
+   ```python
+   a = [1, 2, 3]
+   b = a
+   b.append(4)
+   print(a)
+   ```
+   **Output:** `[1, 2, 3, 4]` — `b = a` copies the reference, not the list.
 
-**Scenario 1**: You need to process a large CSV file (10GB) but your machine only has 16GB RAM. How would you handle this in Python?
+3. **What is the output?**
+   ```python
+   print("ab" in "abcabc" and "x" not in "abc")
+   ```
+   **Output:** `True` — both sides are True.
 
-**Answer**: Use a generator to read line by line: `with open('file.csv') as f: for line in f: process(line)`. This avoids loading the entire file into memory. Alternatively, use pandas `chunksize` parameter: `pd.read_csv('file.csv', chunksize=1000)`.
+4. **What is the output?**
+   ```python
+   x = 5
+   x += 2
+   x *= 3
+   print(x)
+   ```
+   **Output:** `21` — `5 + 2 = 7`, then `7 * 3 = 21`.
 
-**Scenario 2**: You have a list of dictionaries and need to sort by a specific key. How would you do this?
-
-**Answer**: Use `sorted(data, key=lambda x: x['key'])` or `data.sort(key=lambda x: x['key'])`. For descending order, add `reverse=True`. This uses Python's stable sort and is O(n log n).
-
-### Output Questions
-
-**Output 1**: What is the output of `print(2 ** 3 ** 2)`?
-**Answer**: 512 — Python evaluates right to left for exponentiation: 3²=9, then 2⁹=512.
-
-**Output 2**: What is `print('hello' * 3)`?
-**Answer**: hellohellohello — String repetition operator.
-
--flow.md)
-
+5. **What is the output?**
+   ```python
+   print(bool([]), bool([0]), bool("0"))
+   ```
+   **Output:** `False True True` — empty containers are falsy; `[0]` and `"0"` are non-empty so truthy.
 
 ## Difficulty Level
 
-**Level**: Beginner
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
+| Level | Time | Topics |
+|-------|------|--------|
+| Beginner | 1–2 weeks | Variables, types, operators, strings, type conversion |
+| Intermediate | 2–4 weeks | Reference semantics, truthiness, f-strings, PEP 8 tooling |
+| Advanced | 4+ weeks | GIL, memory management, type-hint ecosystems (mypy/pydantic), float precision in ML |
 
 ## Tips & Tricks
 
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
+- Use `a, b = b, a` for swaps; Python constructs a tuple on the right first, so no temp variable is needed.
+- Chain comparisons: `if 0 <= score <= 100:` is valid Python and reads naturally.
+- `print(f"{value:.2f}")` beats `round()` for display; rounding for math vs display are different concerns.
+- Use `is` for singletons (`None`, `True`, `False`), `==` for values.
+- For big numbers, underscores improve readability: `1_000_000_000`.
+- `str.isdigit()` is not the same as "can convert to int" — `"²"` is a digit but `int("²")` fails. Use try/except for real validation.
+- Prefer `type(x) is int` over `type(x) == int` if you must use `type()`, but `isinstance()` is the idiomatic choice.
+- `0x`, `0o`, `0b` prefixes give you hex/octal/binary literals without helper functions.
 
 ## Memory Tricks
 
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
+- **F-strings = Fast strings**: remember the f prefix as "fancy format".
+- **The floor falls**: `//` floors down toward negative infinity — "the floor is below you, even for negatives."
+- **`is` = identity = ID**: `is` compares the memory ID; `==` compares the value.
+- **True is 1, False is 0**: bool is just int in a trench coat.
+- **Mutable vs Immutable — LIST-L-D-S-T**: Lists, Dicts, Sets are mutable; Tuples and str are not.
+- **i-n-t-r-o string methods**: *i*mmutable *n*ew *t*his *r*eturns *o*bject — string methods always return new strings.
 
 ## Further Reading
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
+- [Python Official Tutorial — An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html)
+- [PEP 8 — Style Guide for Python Code](https://peps.python.org/pep-0008/)
+- [Python Data Model — Objects, Values and Types](https://docs.python.org/3/reference/datamodel.html)
+- [Real Python — Variables in Python](https://realpython.com/python-variables/)
+- [Floating Point Arithmetic: Issues and Limitations (Python docs)](https://docs.python.org/3/tutorial/floatingpoint.html)
+- [Automate the Boring Stuff with Python — Chapter 1](https://automatetheboringstuff.com/2e/chapter1/)
 
 ## Related Topics
 
-- How this connects to Python Programming fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
+- 02-control-flow — if/else, loops, and how booleans drive decisions
+- 03-strings-and-formatting — deeper string methods and formatting
+- 04-collections — lists, tuples, dicts, sets built on this chapter's reference semantics
+- 08-oop-in-python — classes where the mutable-default bug bites hardest
+- TypeScript Parallel — explicit typing for comparison in mixed-codebases
 
 ## FAQs
 
-**Q: How long does it take to master python basics?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
+1. **Why can't I modify a string in place?** Strings are immutable for safety and hashability. Every operation returns a new string; memory sharing between copies is cheap.
+2. **Is `x = 10; y = 10; x is y` always True?** Only within the small-integer cache (-5 to 256) in CPython. Never rely on it — use `==`.
+3. **What's the difference between `float` and `Decimal`?** `float` is fast, hardware-backed, and imprecise for decimal fractions. `Decimal` is exact, slower, and configurable in precision — for money.
+4. **Do I need type hints?** Not to run code, but for maintainability, IDE support, and mypy/pyright checks in professional codebases.
+5. **Why does `int("3.14")` fail?** `int(str)` parses an integer literal, not a numeric expression. Use `float("3.14")` then convert, or `eval` is never the answer.
 
 ## Important Notes
 
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
+- Python is dynamically typed but strongly typed: type changes are allowed, implicit type coercion is not (no `"5" + 5`).
+- All Python objects live on a private heap; variable names are just bindings in a namespace.
+- `float` on modern CPython is IEEE 754 double precision — 53 bits of mantissa.
+- `None`, `True`, `False` are singletons; `is` comparisons are the canonical check.
+- Everything in Python is an object, including functions and modules — keep this in mind for decorators and higher-order functions later.
+- Python 3 removed the old `u` prefix; all strings are Unicode by default.
 
 ## Historical Context
 
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of python basics helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
+- Python was created by Guido van Rossum in 1991, emphasizing readability after his experience with ABC.
+- Python 2 (2000) introduced list comprehensions and the GC; Python 3 (2008) unified `int`/`long` into arbitrary-precision `int` and made Unicode-first strings the default.
+- f-strings arrived in Python 3.6 (2016) after years of `%` formatting and `.format()`.
+- PEP 8 was written by Guido and Barry Warsaw in 2001, codifying the "beautiful code" philosophy.
+- The GIL (Global Interpreter Lock) dates to Python's earliest CPython implementation and still shapes concurrency design today.
+- Python's rise to AI dominance came through NumPy (2006) and later TensorFlow/PyTorch, which exposed Python's typed-array gap that this chapter's numeric fundamentals address.
 
 ## Coding Standards
 
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
+- Follow PEP 8: 4-space indentation, `snake_case` variables, `UPPER_SNAKE` constants, 79-char lines.
+- Prefer f-strings over `%` and `.format()` unless lazily evaluating in logging.
+- Use type hints on all public functions; run `mypy` in CI.
+- Never compare with `== None`; use `is None`.
+- Use `black` for formatting and `ruff` for linting in every repo.
+- Constants at module top: `MAX_RETRIES = 3` rather than magic numbers inline.
 
 ## Security Considerations
 
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
+- Never use `eval()` or `exec()` on untrusted strings — arbitrary code execution risk.
+- Be careful with `int(input())` — validate and bound-check numeric input; huge ints can cause DoS via expensive arithmetic.
+- Don't leak internal values via f-strings in logs or error messages.
+- In web contexts, user-supplied strings must be escaped; Python string formatting does not auto-escape.
+- Numeric overflow is not a risk in Python (arbitrary precision), but memory exhaustion from huge numbers or unbounded lists is.
 
 ## ML Intuition
 
-For AI engineering, understanding python basics at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
+- Numeric types are the foundation of every model: features are `float32` arrays, labels are `int`/`bool`, text is `str` Unicode.
+- Understanding `float` precision explains why normalization and mixed precision (float16/float32) matter in training — gradients lose precision otherwise.
+- `bool` truthiness drives masking and filtering operations in NumPy/PyTorch (e.g., `data[labels == 1]`).
+- `None` is the standard "missing value" sentinel; in ML pipelines it maps to `np.nan` handling before `fillna`.
+- Reference semantics explain why two pandas DataFrames may silently share memory — a classic source of feature-leakage bugs.
 
 ## Analogies
 
-Think of python basics like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
+- **Variables are name tags, not boxes**: a sticky note tied to a balloon. Moving the tag doesn't copy the balloon; cutting the tag doesn't pop it (until no tags remain).
+- **`==` vs `is`**: `==` asks "same recipe, same result?" while `is` asks "same physical kitchen?" Two cakes can taste identical but be baked in different kitchens.
+- **Dynamic typing**: a drawer labeled "things" — you can put a spoon in, then later a fork. Strong typing means the fork won't turn into a spoon by itself.
+- **Immutability**: a printed newspaper. You can buy a new edition but you can't edit yesterday's print run.
+- **Reference counting**: an apartment's door tags — when the last tag is removed, the janitor (GC) cleans the room.
 
 ## Capstone Project Link
 
-**Project**: Apply python basics concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
+- [Capstone: Build a Python Toolkit CLI](https://github.com/Raushan666java/ai-engineering-journey) — Chapter 1 of Module 1 feeds the "Numeric Stats Toolkit": a CLI that reads a CSV, computes stats with correct float handling, validates input, and follows PEP 8 with type hints.
 
 ## Flashcards
 
-**Card 1**: What is the core concept of python basics?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
+<details class="tp-qa-card" data-qid="p01-s01-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the difference between `is` and `==`?
+  </summary>
+  <div class="tp-qa-answer">
+    <p><code>is</code> compares object identity (memory address); <code>==</code> compares value. Use <code>is</code> for <code>None</code>, <code>True</code>, <code>False</code>.</p>
+  </div>
+</details>
 
-**Card 2**: When would you apply python basics in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
+<details class="tp-qa-card" data-qid="p01-s01-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What does `5 // 2` return, and what does `-5 // 2` return?
+  </summary>
+  <div class="tp-qa-answer">
+    <p><code>5 // 2 = 2</code>; <code>-5 // 2 = -3</code> (floor division rounds toward negative infinity).</p>
+  </div>
+</details>
 
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
+<details class="tp-qa-card" data-qid="p01-s01-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Name four immutable types and four mutable types.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Immutable: <code>int</code>, <code>float</code>, <code>str</code>, <code>tuple</code>, <code>bool</code>, <code>bytes</code>. Mutable: <code>list</code>, <code>dict</code>, <code>set</code>, custom class instances.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="p01-s01-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How do you create a constant in Python?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>By convention only: <code>MAX_RETRIES = 3</code> (UPPER_SNAKE). Python does not enforce constants.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="p01-s01-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the output of `bool("False")`?
+  </summary>
+  <div class="tp-qa-answer">
+    <p><code>True</code> — any non-empty string is truthy; only the empty string is falsy.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="p01-s01-flash6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Why is `0.1 + 0.2` not exactly `0.3`?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>IEEE 754 binary floats can't represent 0.1 exactly. Use <code>Decimal</code> for exactness or <code>round()</code> for display.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="p01-s01-flash7">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What does `s[::-1]` do?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Returns the reversed string — negative step slices from the end.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="p01-s01-flash8">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What happens when you assign a list to two variables and mutate one?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Both variables see the mutation — assignment copies references, not values. Use <code>.copy()</code> for a shallow copy.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="p01-s01-flash9">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Which operator has higher precedence: `**` or unary `-`?
+  </summary>
+  <div class="tp-qa-answer">
+    <p><code>**</code> binds tighter than unary minus on its left: <code>-2 ** 2 = -4</code>, but <code>(-2) ** 2 = 4</code>.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="p01-s01-flash10">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How do you check whether a variable is an integer (but not a bool)?
+  </summary>
+  <div class="tp-qa-answer">
+    <p><code>isinstance(x, int) and not isinstance(x, bool)</code> — since <code>bool</code> subclasses <code>int</code>.</p>
+  </div>
+</details>
 
 ## Study Plan
 
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
+| Day | Focus | Task |
+|-----|-------|------|
+| 1 | Setup & REPL | Install Python, run 20 expressions in the REPL |
+| 2 | Variables | Reassignment, multiple assignment, naming rules |
+| 3 | Numeric types | All arithmetic operators, floor division, float precision |
+| 4 | Strings | Indexing, slicing, methods, f-strings |
+| 5 | Booleans & None | Truthiness table, `is`/`==` difference |
+| 6 | Type conversion | Implicit vs explicit, common ValueError cases |
+| 7 | Operators | Precedence quiz + short-circuit evaluation |
+| 8 | PEP 8 | Format a messy script with black + ruff |
+| 9–10 | Revision | Chapter quiz, flashcards, 5 LeetCode-easy Python problems |
 
 ## Research References
 
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
+- [Python Language Reference — Lexical Analysis (literals)](https://docs.python.org/3/reference/lexical_analysis.html)
+- [IEEE 754 Standard — Floating Point (Wikipedia overview)](https://en.wikipedia.org/wiki/IEEE_754)
+- [Guido van Rossum, "The Python Tutorial"](https://docs.python.org/3/tutorial/)
+- [PEP 484 — Type Hints](https://peps.python.org/pep-0484/)
+- [CPython Internals — Objects and Types](https://docs.python.org/3/c-api/typeobj.html)
 
 ## Fine-Tuning Notes
 
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
+- This chapter is the "unfreeze" layer: every later module (collections, OOP, numpy, pandas) assumes you can predict reference semantics and type behavior instantly.
+- Budget 30 minutes of daily Python snippets (katas) before moving to Module 2 — spacing beats cramming.
+- When you reach numpy (Chapter 11), revisit this chapter: NumPy `float32` vs Python `float` is the same precision lesson at scale.
 
 ## Open-Source Tools
 
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
+- **Python** (python.org) — the interpreter itself
+- **black** — deterministic code formatter
+- **ruff** — fast Python linter (replaces flake8 + isort)
+- **mypy / pyright** — static type checkers
+- **ipython** — enhanced REPL for exploration
+- **VS Code Python extension** — debugging, intellisense, Jupyter
 
 ## Debugging Guide
 
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
+- **TypeError: unsupported operand** — you mixed types; print `type(x)` and check API boundaries.
+- **ValueError: invalid literal for int()** — string is not an integer literal; use `try/except` with a clear message.
+- **Wrong float output (0.30000000000000004)** — display issue; use f-string precision `{x:.2f}`.
+- **"UnboundLocalError: local variable referenced before assignment"** — you assigned in the function later; Python scoped it as local.
+- **Surprising shared list mutation** — you aliased a list; use `.copy()` or `list()`.
+- **Identity check fails unexpectedly** — comparing large ints with `is`; switch to `==`.
+- Use `pdb.set_trace()` or VS Code breakpoints; log `repr()` not `str()` to reveal type differences.
 
 ## Mock Interview Section
 
-**Quick Fire Questions**:
-1. What is the core concept of Python Programming?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
+**Round 1 — Screening (15 min)**
+- Write a function that reverses a string without slicing.
+- What is the difference between `is` and `==`? Give an example.
+- What will `print(type(3/2))` output and why?
 
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
+**Round 2 — Coding (45 min)**
+- Implement `fizzbuzz` using a single expression.
+- Write `is_palindrome` handling non-alphanumeric characters and case.
+- Implement a `min_max_mean` function returning a tuple; handle empty input with an explicit contract.
+
+**Round 3 — Behavioral + System (30 min)**
+- Tell me about a time dynamic typing caused a bug. How did you harden the system?
+- How would you store 100M floats with low memory for a recommendation pipeline?
+- Your API returns `0.30000000000000004`; how do you fix it for customers?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
 
 ## Optimized Implementation
 
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
+```python
+from dataclasses import dataclass
+from typing import Optional, Sequence
+
+
+@dataclass(frozen=True)
+class Stats:
+    min: float
+    max: float
+    mean: float
+    median: float
+
+    def as_row(self) -> tuple:
+        return (self.min, self.max, self.mean, self.median)
+
+
+def compute_stats(values: Sequence[float]) -> Optional[Stats]:
+    """O(n log n) worst case for median; O(n) memory.
+    Uses explicit typing and is None-safe for empty input."""
+    if not values:
+        return None
+    ordered = sorted(values)
+    n = len(ordered)
+    mid = n // 2
+    median = ordered[mid] if n % 2 else (ordered[mid - 1] + ordered[mid]) / 2
+    return Stats(min(ordered), max(ordered), sum(ordered) / n, median)
+```
+
+- Uses a frozen dataclass for a typed, immutable result (no tuple confusion).
+- Explicit `Optional` return communicates the empty-input contract.
+- Sorting dominates: O(n log n); `sum`/`min`/`max` are single passes.
+- Trade-off: for streaming data, replace sorting with two heaps (O(log n) per insert).
 
 ## References
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+1. Python Software Foundation. *The Python Tutorial*. https://docs.python.org/3/tutorial/
+2. van Rossum, G. *PEP 8 — Style Guide for Python Code*. 2001.
+3. IEEE Computer Society. *IEEE 754-2019 — Floating-Point Arithmetic*.
+4. Rossum, G., Hettinger, R. *PEP 484 — Type Hints*. 2014.
+5. Ramalho, L. *Fluent Python* (2nd ed.), O'Reilly, 2022.
 
 ## Evaluation Metrics
 
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
+| Skill | Test | Target |
+|-------|------|--------|
+| Type prediction | Given code, name output types | 95%+ |
+| Operator precedence | Quiz on mixed expressions | 90%+ |
+| Reference semantics | Predict shared-mutation outcomes | 90%+ |
+| Precision handling | Fix float display bugs in 3 tasks | 100% |
+| PEP 8 compliance | `ruff check` on your code | 0 errors |
+| Speed | 5 basic katas (reverse, fizzbuzz, stats) | < 15 min |
 
 ## Real-World Examples
 
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
+- **ETL pipelines**: DataFrames loaded as float64 are the default; converting to float32 halves memory in feature stores.
+- **E-commerce pricing**: `Decimal` avoids `19.99 * 0.1` rounding disasters in invoicing.
+- **Rate limiting**: Redis counters stored as ints; `int(redis.get("hits")) or 0` is a classic safe-conversion idiom.
+- **ML preprocessing**: `label == target` comparisons become `bool` arrays used as masks; understanding truthiness prevents silent filtering bugs.
+- **CLI tools**: `sys.argv` strings → `int(sys.argv[1])` with try/except is the universal entry-point pattern.
 
 ## Next Topic
 
-After mastering Python Programming, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+[02 - Control Flow: if/else, Loops, and Comprehensions](02-control-flow.md)
+
+## Limitations
+
+- Python's `float` precision issues make it unsuitable for exact financial arithmetic without `Decimal` or `Fraction`.
+- Arbitrary-precision `int` means no overflow errors — but unbounded operations can exhaust memory silently.
+- Dynamic typing removes compile-time safety; bugs surface at runtime, requiring type hints and mypy for large codebases.
+- The GIL limits true parallelism for CPU-bound pure-Python code (mitigated by multiprocessing, NumPy C extensions, async I/O).
+- Reference semantics cause subtle aliasing bugs; immutability is not enforced by the language (no `final`).
+- This chapter covers fundamentals only — real AI work additionally requires NumPy/PyTorch tensor semantics, covered in Chapters 11–12.

@@ -64,7 +64,7 @@ flowchart LR
     E --> F[Reverse]
     E --> G[Cycle Detect]
     E --> H[Merge/Sort]
-```text
+```
 
 A linked list is a linear data structure where elements (nodes) are stored at non-contiguous memory locations, connected via pointers.
 
@@ -99,7 +99,7 @@ d2 = DoublyListNode(2)
 d3 = DoublyListNode(3)
 d1.next = d2; d2.prev = d1
 d2.next = d3; d3.prev = d2
-```text
+```
 
 ## 7.2 Basic Operations
 
@@ -119,7 +119,7 @@ def get_length(head):
         count += 1
         head = head.next
     return count
-```text
+```
 
 **Insertion**:
 
@@ -150,7 +150,7 @@ def insert_at_position(head, val, pos):
     new_node.next = current.next
     current.next = new_node
     return head
-```text
+```
 
 **Deletion**:
 
@@ -166,7 +166,7 @@ def delete_node(head, key):
     if current.next:
         current.next = current.next.next
     return head
-```text
+```
 
 ## 7.3 Reversal Techniques
 
@@ -182,7 +182,7 @@ def reverse_iterative(head):
         prev = curr
         curr = next_temp
     return prev  # new head
-```text
+```
 
 **Recursive reversal**:
 
@@ -194,7 +194,7 @@ def reverse_recursive(head):
     head.next.next = head
     head.next = None
     return new_head
-```text
+```
 
 **Reverse k nodes at a time**:
 
@@ -216,7 +216,7 @@ def reverse_k_group(head, k):
         curr = next_temp
     head.next = reverse_k_group(curr, k)
     return prev
-```text
+```
 
 ## 7.4 Cycle Detection
 
@@ -255,7 +255,7 @@ def cycle_length(head):
         count += 1
         curr = curr.next
     return count
-```text
+```
 
 ## 7.5 Advanced Operations
 
@@ -277,7 +277,7 @@ def is_palindrome(head):
         first_half = first_half.next
         second_half = second_half.next
     return True
-```text
+```
 
 **Merge two sorted lists**:
 
@@ -295,7 +295,7 @@ def merge_two_lists(l1, l2):
         curr = curr.next
     curr.next = l1 or l2
     return dummy.next
-```text
+```
 
 **Remove nth node from end**:
 
@@ -311,7 +311,7 @@ def remove_nth_from_end(head, n):
         second = second.next
     second.next = second.next.next
     return dummy.next
-```text
+```
 
 **Add two numbers** (represented as reversed lists):
 
@@ -330,7 +330,7 @@ def add_two_numbers(l1, l2):
         if l1: l1 = l1.next
         if l2: l2 = l2.next
     return dummy.next
-```text
+```
 
 ## 7.6 Doubly Linked Lists
 
@@ -370,7 +370,7 @@ def traverse_backward(tail):
         result.append(tail.val)
         tail = tail.prev
     return result
-```text
+```
 
 ---
 
@@ -415,7 +415,7 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     curr.next = l1 || l2;
     return dummy.next;
 }
-```text
+```
 
 ---
 
@@ -642,262 +642,3 @@ a) O(1)  b) O(n)  c) O(log n)  d) O(n^2)
 - Monotonic stack for next greater/smaller element
 - BFS uses queue, DFS uses stack
 - Two stacks can simulate a queue
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
-2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
-2. How would you explain data structures algorithms to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
-2. What are the security implications of data structures algorithms?
-
-#### NVIDIA Style
-1. How would you optimize data structures algorithms for GPU-accelerated computing?
-2. What parallel processing patterns apply to data structures algorithms?
-
-#### AI Startup Style
-1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using data structures algorithms?
-
-### Resume Tips
-- **Technical Skills**: List data structures algorithms under relevant technical skills
-- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of data structures algorithms
-- [ ] Practice 3-5 problems related to data structures algorithms
-- [ ] Prepare 2 real-world examples of using data structures algorithms
-- [ ] Know the time/space complexity of common data structures algorithms operations
-- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [08 - Stacks and Queues →](08-stacks-and-queues.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Data Structures & Algorithms fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master linked lists?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of linked lists helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding linked lists at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of linked lists like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply linked lists concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of linked lists?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply linked lists in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Data Structures & Algorithms?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Data Structures & Algorithms, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

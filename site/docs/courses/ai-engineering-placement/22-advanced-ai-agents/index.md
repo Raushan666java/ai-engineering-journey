@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "22 — Advanced AI Agents"
+sidebar_label: "22 — Advanced AI Agents"
+sidebar_position: 264
+---
 # 22 — Advanced AI Agents
 
 ## Overview

@@ -5,7 +5,7 @@ sidebar_label: "Computer Networks"
 sidebar_position: 1
 ---
 
-﻿# Computer Networks for AI Engineers
+# Computer Networks for AI Engineers
 
 ## Learning Objectives
 
@@ -60,7 +60,7 @@ graph TB
     L3 --> I
     L2 --> N
     L1 --> N
-```text
+```
 
 ### TCP vs UDP
 
@@ -100,7 +100,7 @@ sequenceDiagram
     LB->>LB: Hash(request_id) % 2
     LB->>N2: Forward
     N2-->>C: Response
-```text
+```
 
 ### CDN
 
@@ -151,7 +151,7 @@ sequenceDiagram
     C->>S: Finished
     S->>C: Finished
     Note over C,S: Encrypted Application Data
-```text
+```
 
 ### HTTP Methods and RESTful Design
 
@@ -234,7 +234,7 @@ class DnsResolver {
         this.cache.delete(hostname)
     }
 }
-```text
+```
 
 ### Load Balancer with Multiple Strategies
 
@@ -279,7 +279,7 @@ class LoadBalancer {
         return healthy[Math.abs(hash) % healthy.length]
     }
 }
-```text
+```
 
 ### API Gateway with Token Bucket Rate Limiting
 
@@ -337,7 +337,7 @@ class ApiGateway {
         return { status: 200, body: { result: "ok" } }
     }
 }
-```text
+```
 
 ### gRPC Streaming Simulation
 
@@ -361,7 +361,7 @@ async function simulateGrpcInference(prompt: string, tokens: string[]): Promise<
         process.stdout.write(msg.token)
     }
 }
-```text
+```
 
 ### Content Delivery Networks
 
@@ -434,7 +434,7 @@ class GrpcClient {
         return generate()
     }
 }
-```text
+```
 
 ### Connection Pooling
 
@@ -482,7 +482,7 @@ class ConnectionPool {
         return { id: Math.random().toString(36).substring(2) }
     }
 }
-```text
+```
 
 ### Retry with Exponential Backoff
 
@@ -506,7 +506,7 @@ async function withRetry<T>(
     }
     throw lastError
 }
-```text
+```
 
 
 ## Visual Analogy
@@ -601,311 +601,3 @@ model assets, and design load balancing with consistent hashing to maintain cach
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Design a URL shortener like bit.ly that handles billions of URLs. How do DNS, load balancing, and CDN fit into the architecture?
-2. Explain the difference between TCP and UDP. When would you choose each for an AI inference service?
-
-#### Amazon Style
-1. Tell me about a time you debugged a network connectivity issue. What tools and techniques did you use?
-2. How would you explain the OSI model to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How would you design a globally distributed API with low latency? What networking concepts apply?
-2. What are the security implications of running AI inference over public networks?
-
-#### NVIDIA Style
-1. How would you optimize network throughput for GPU-to-GPU communication in a distributed training cluster?
-2. What networking patterns are critical for multi-node inference serving?
-
-#### AI Startup Style
-1. How would you set up networking for a startup deploying AI models across multiple regions?
-2. What's the simplest network architecture for a startup serving AI inference to 10K users?
-
-### Resume Tips
-- **Technical Skills**: List "TCP/IP", "DNS", "Load Balancing", "Network Debugging" under relevant skills
-- **Project Description**: "Implemented network optimization for AI inference service, reducing latency by 40% through connection pooling and CDN"
-- **Keywords**: Include "networking", "TCP/IP", "DNS", "load balancing", "latency optimization" for ATS
-
-### Interview Day Checklist
-- [ ] Review TCP 3-way handshake and connection lifecycle
-- [ ] Practice network debugging with curl, netstat, nslookup
-- [ ] Prepare examples of network optimization you've implemented
-- [ ] Know the difference between TCP and UDP with use cases
-- [ ] Have questions about the company's network architecture
-
-### True/False
-
-**T/F 1**: TCP is a connectionless protocol.
-**Answer**: False — TCP is connection-oriented; UDP is connectionless.
-
-**T/F 2**: DNS translates domain names to IP addresses.
-**Answer**: True — DNS resolves human-readable domain names to machine-readable IP addresses.
-
-**T/F 3**: HTTP/3 uses TCP as its transport protocol.
-**Answer**: False — HTTP/3 uses QUIC, which is built on UDP.
-
-**T/F 4**: A load balancer can improve application availability.
-**Answer**: True — Load balancers distribute traffic so if one server fails, others handle the load.
-
-**T/F 5**: HTTPS uses TLS encryption for secure communication.
-**Answer**: True — HTTPS = HTTP + TLS (Transport Layer Security).
-
-### Fill in the Blank
-
-**FIB 1**: The ________ protocol is used to resolve domain names to IP addresses.
-**Answer**: DNS (Domain Name System)
-
-**FIB 2**: In TCP, the ________ flag initiates a connection.
-**Answer**: SYN (Synchronize)
-
-**FIB 3**: A ________ distributes incoming network traffic across multiple servers.
-**Answer**: Load Balancer
-
-**FIB 4**: The OSI model has ________ layers.
-**Answer**: 7 (Physical, Data Link, Network, Transport, Session, Presentation, Application)
-
-**FIB 5**: ARP maps ________ addresses to ________ addresses.
-**Answer**: IP addresses to MAC addresses
-
-### Scenario Questions
-
-**Scenario 1**: Your web application is experiencing 504 Gateway Timeout errors during peak hours. Users report slow loading. What networking issues could cause this and how would you resolve them?
-
-**Answer**: Possible causes: (1) Load balancer overwhelmed — add more backend servers or upgrade LB, (2) Backend servers hitting connection limits — increase ulimit, (3) Network congestion — check bandwidth, add CDN, (4) DNS resolution slow — use DNS caching. Solutions: auto-scaling, CDN for static assets, connection pooling, DNS prefetching.
-
-**Scenario 2**: You're designing a microservices architecture with 20 services. Services need to communicate reliably. How would you handle service-to-service communication?
-
-**Answer**: (1) Use service mesh (Istio/Linkerd) for mTLS and observability, (2) Implement circuit breakers for fault tolerance, (3) Use async messaging (Kafka) for non-critical communication, (4) Implement retry with exponential backoff, (5) Use gRPC for internal communication, (6) Distributed tracing (Jaeger) for debugging.
-
-### Output Questions
-
-**Output 1**: What does `curl -I https://example.com` return?
-**Answer**: HTTP headers including status code (200 OK), server type, content-type, and other metadata.
-
-**Output 2**: What is the output of `nslookup google.com`?
-**Answer**: The IP address(es) associated with google.com (e.g., 142.250.80.46).
-
-**Output 3**: What does `netstat -tuln` show?
-**Answer**: All active TCP/UDP listening ports with numeric addresses (no DNS resolution).
-
-egions.
-
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Core Computer Science fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master computer networks?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of computer networks helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding computer networks at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of computer networks like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply computer networks concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of computer networks?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply computer networks in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Core Computer Science?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Core Computer Science, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

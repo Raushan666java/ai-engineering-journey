@@ -21,9 +21,6 @@ sidebar_position: 104
 
 Machine learning is the core of AI engineering. From linear regression to ensemble methods, understanding these algorithms lets you build, debug, and improve models. This module covers the math and code behind ML.
 
-
-
-
 ## Prerequisites
 
 - Basic programming knowledge
@@ -38,8 +35,6 @@ Machine learning is the core of AI engineering. From linear regression to ensemb
 ## Theory
 
 Understanding linear regression is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how linear regression works in practice.
-
-
 
 ## Chapter at a Glance
 
@@ -63,6 +58,7 @@ flowchart LR
     F --> G
     G --> H[Evaluate: MSE, R2]
 
+```
 ## 2.1 OLS Linear Regression
 
 Linear regression models the relationship between input features X and target y as y = Xw + b. The OLS (Ordinary Least Squares) solution minimizes the sum of squared residuals.
@@ -106,7 +102,7 @@ class LinearRegression {
     return [[m[1][1] / det, -m[0][1] / det], [-m[1][0] / det, m[0][0] / det]];
   }
 }
-```text
+```
 
 **Assumptions**: Linearity, independence of errors, homoscedasticity (constant variance), normality of errors.
 
@@ -167,7 +163,7 @@ class GradientDescentRegression {
     return preds.reduce((sum, p, i) => sum + (p - y[i]) ** 2, 0) / y.length;
   }
 }
-```text
+```
 
 **Variants**: Batch GD (all data), Stochastic GD (one sample at a time), Mini-batch GD (small batches). Mini-batch (32-256 samples) is most common.
 
@@ -215,7 +211,7 @@ class PolynomialRegression {
     return this.model.predict(this.poly.transform(X));
   }
 }
-```text
+```
 
 **Degree selection**: Low degree (1-2) underfits complex patterns. High degree (10+) overfits. Use cross-validation to select optimal degree.
 
@@ -267,7 +263,7 @@ class RidgeRegression {
     return [[m[1][1] / det, -m[0][1] / det], [-m[1][0] / det, m[0][0] / det]];
   }
 }
-```text
+```
 
 **Elastic Net** combines L1 and L2 penalties: alpha * (rho * L1 + (1-rho) * L2). Good for datasets with many correlated features.
 
@@ -293,7 +289,7 @@ class RegressionMetrics {
     return 1 - ssRes / ssTot;
   }
 }
-```text
+```
 
 ---
 
@@ -312,7 +308,7 @@ async function trainLinearRegression(X: number[][], y: number[]): Promise<tf.Seq
   await model.fit(xs, ys, { epochs: 100, batchSize: 32 });
   return model;
 }
-```text
+```
 
 ## Summary
 
@@ -415,9 +411,7 @@ d) 85% of data is used
 
 **Hard** — Implement Elastic Net regularization with coordinate descent. Compare feature selection with Ridge and Lasso on a high-dimensional dataset.
 
-
 ---
-
 
 ## Common Mistakes
 
@@ -520,6 +514,39 @@ def check_normality(y, model, X):
 - Non-normal residuals → use GLM or transform target (log, Box-Cox)
 - Multicollinearity → use Ridge regression or remove correlated features
 
+## True/False
+
+1. **True or False:** Linear Regression  -  OLS, Gradient Descent, Regularization builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Linear Regression  -  OLS, Gradient Descent, Regularization before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Linear Regression  -  OLS, Gradient Descent, Regularization is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Linear Regression  -  OLS, Gradient Descent, Regularization in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Linear Regression  -  OLS, Gradient Descent, Regularization chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Linear Regression  -  OLS, Gradient Descent, Regularization is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Linear Regression  -  OLS, Gradient Descent, Regularization is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Linear Regression  -  OLS, Gradient Descent, Regularization is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Linear Regression  -  OLS, Gradient Descent, Regularization issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Linear Regression  -  OLS, Gradient Descent, Regularization in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Linear Regression  -  OLS, Gradient Descent, Regularization that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Linear Regression  -  OLS, Gradient Descent, Regularization is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Linear Regression  -  OLS, Gradient Descent, Regularization in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Linear Regression  -  OLS, Gradient Descent, Regularization and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Linear Regression  -  OLS, Gradient Descent, Regularization on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -592,16 +619,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of linear regression helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -636,27 +653,12 @@ Think of linear regression like learning a new language — start with basic voc
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -704,15 +706,6 @@ For production systems, consider:
 - **Async/Await**: Use non-blocking I/O for concurrent operations
 - **Connection Pooling**: Reuse database and API connections
 - **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
 
 ## Evaluation Metrics
 

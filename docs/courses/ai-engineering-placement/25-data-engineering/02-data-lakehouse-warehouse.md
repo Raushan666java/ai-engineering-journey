@@ -1,5 +1,13 @@
 # 02 — Data Lakehouse & Warehouse
 
+## Learning Objectives
+
+- Explain the difference between a data lake (schema-on-read) and a data warehouse (schema-on-write) and when each fits
+- Describe how the lakehouse architecture combines lake flexibility with warehouse reliability using Delta Lake and Iceberg
+- Design star and snowflake schemas with fact tables and dimensions for analytical queries
+- Use data catalogs to manage metadata, discovery, and lineage of datasets
+- Apply data versioning with DVC and lakeFS to reproduce and roll back ML experiments
+
 ## Introduction
 
 Choosing the right storage architecture is one of the most consequential decisions an AI engineer makes. Data lakes store raw data in native formats (schema-on-read), data warehouses store structured data optimized for analytics (schema-on-write), and the lakehouse combines both — bringing ACID transactions and schema enforcement to data lakes. This chapter covers when to use each, how to model data with star and snowflake schemas, and how modern formats like Delta Lake and Iceberg enable reliable ML on data lakes.
@@ -713,27 +721,22 @@ The lakehouse architecture unifies data lakes and warehouses by adding ACID tran
 4. **b** — Time travel (versionAsOf option) queries historical snapshots of Delta tables.
 5. **b** — Data catalogs manage metadata, enable discovery, track lineage, and provide governance.
 
-## PYQs (Previous Year Questions)
+## Exercises
 
-### Google (2024)
-Design a unified storage architecture for YouTube's recommendation system. The system needs: (a) raw video metadata and user interaction logs, (b) structured features for ML training, (c) real-time feature access for inference, and (d) BI dashboards. Propose a lakehouse architecture with specific technologies.
+### Exercise 1: Build a Lakehouse Simulator
+Implement a Python class that simulates bronze/silver/gold layers with pandas. Write functions for bronze ingestion, silver cleaning (drop nulls, dedup, type casting), and gold aggregation (groupby with mean/count).
 
-**Answer**: Use GCS as the object store with the medallion architecture. Bronze: raw Avro logs (video views, likes, shares). Silver: Spark jobs parse and validate data into Delta Lake format with schema enforcement. Gold: aggregated user/video features as Delta tables. ML training reads gold features via Spark; real-time inference reads from Bigtable (populated by streaming pipeline). BI uses BigQuery queries on gold Delta tables via BigQuery Omni.
+### Exercise 2: Star Schema Design
+Given raw sales CSV with columns (sale_id, product_name, product_category, customer_name, customer_city, store_name, store_region, amount, quantity, sale_date), design and build a star schema. Create fact and dimension tables.
 
-### Amazon (2023)
-You need to migrate 200 TB of data from an on-premises data warehouse to a lakehouse on AWS. The data includes 5 years of sales transactions, customer profiles, and product catalogs. Design the migration strategy with minimal downtime.
+### Exercise 3: Delta Lake Merge Simulation
+Implement an upsert operation that merges new data into an existing table using a key column. Simulate the ACID transaction log by keeping versioned JSON manifests.
 
-**Answer**: Phase 1: Set up S3 data lake with DMS continuous CDC replication. Phase 2: Convert existing warehouse schema to Iceberg tables using Spark — partition by year/month. Phase 3: Set up AWS Glue catalog for metadata. Phase 4: Run dual-writes during cutover (30 days). Phase 5: Decommission old warehouse. Use Redshift Spectrum or Athena for queries during transition.
+### Exercise 4: Data Catalog Search
+Build a basic search engine over a catalog of 100+ datasets (generate synthetic metadata). Support full-text search, tag filtering, and lineage graph traversal.
 
-### Meta (2024)
-Facebook's ranking features are computed from Petabyte-scale raw event data. Currently, data scientists use Hive tables on the data lake, but face slow queries and no ACID. Migrate to a lakehouse. Address schema evolution, concurrent writes, and query performance.
-
-**Answer**: Migrate from Hive tables to Apache Iceberg format. Benefits: (1) schema evolution with add/drop/rename columns without rewriting data, (2) optimistic concurrency for concurrent job writes, (3) hidden partitioning for faster queries. Use Presto/Trino as query engine (already in Meta's stack). Implement compaction jobs to merge small files. Add Z-ordering on frequently filtered columns (user_id, date).
-
-### Microsoft (2023)
-Design a data cataloging strategy for a large enterprise with 10,000+ datasets across 200 teams. The catalog must support discovery, lineage, ownership, and governance for ML and BI workloads.
-
-**Answer**: Implement Apache Atlas or Microsoft Purview. Auto-register datasets from ADLS, Azure SQL, Synapse. Extract lineage from ADF pipelines and Databricks notebooks. Assign data owners automatically based on AD group membership. Implement data quality scoring. Provide search with faceted filtering (team, format, sensitivity). Enforce access control through Azure AD integration.
+### Exercise 5: Time Travel Query
+Implement a data versioning system where each write creates a new version. Support querying data at any version using a timestamp or version number. Include a diff function showing what changed between versions.
 
 ## Common Mistakes
 
@@ -759,7 +762,29 @@ Design a data cataloging strategy for a large enterprise with 10,000+ datasets a
 - Partitioning: divides data by column values for query pruning
 - Compaction: merges small files into optimal size for read performance
 
-## Interview Questions
+## PYQs (Previous Year Questions)
+
+### Google (2024)
+Design a unified storage architecture for YouTube's recommendation system. The system needs: (a) raw video metadata and user interaction logs, (b) structured features for ML training, (c) real-time feature access for inference, and (d) BI dashboards. Propose a lakehouse architecture with specific technologies.
+
+**Answer**: Use GCS as the object store with the medallion architecture. Bronze: raw Avro logs (video views, likes, shares). Silver: Spark jobs parse and validate data into Delta Lake format with schema enforcement. Gold: aggregated user/video features as Delta tables. ML training reads gold features via Spark; real-time inference reads from Bigtable (populated by streaming pipeline). BI uses BigQuery queries on gold Delta tables via BigQuery Omni.
+
+### Amazon (2023)
+You need to migrate 200 TB of data from an on-premises data warehouse to a lakehouse on AWS. The data includes 5 years of sales transactions, customer profiles, and product catalogs. Design the migration strategy with minimal downtime.
+
+**Answer**: Phase 1: Set up S3 data lake with DMS continuous CDC replication. Phase 2: Convert existing warehouse schema to Iceberg tables using Spark — partition by year/month. Phase 3: Set up AWS Glue catalog for metadata. Phase 4: Run dual-writes during cutover (30 days). Phase 5: Decommission old warehouse. Use Redshift Spectrum or Athena for queries during transition.
+
+### Meta (2024)
+Facebook's ranking features are computed from Petabyte-scale raw event data. Currently, data scientists use Hive tables on the data lake, but face slow queries and no ACID. Migrate to a lakehouse. Address schema evolution, concurrent writes, and query performance.
+
+**Answer**: Migrate from Hive tables to Apache Iceberg format. Benefits: (1) schema evolution with add/drop/rename columns without rewriting data, (2) optimistic concurrency for concurrent job writes, (3) hidden partitioning for faster queries. Use Presto/Trino as query engine (already in Meta's stack). Implement compaction jobs to merge small files. Add Z-ordering on frequently filtered columns (user_id, date).
+
+### Microsoft (2023)
+Design a data cataloging strategy for a large enterprise with 10,000+ datasets across 200 teams. The catalog must support discovery, lineage, ownership, and governance for ML and BI workloads.
+
+**Answer**: Implement Apache Atlas or Microsoft Purview. Auto-register datasets from ADLS, Azure SQL, Synapse. Extract lineage from ADF pipelines and Databricks notebooks. Assign data owners automatically based on AD group membership. Implement data quality scoring. Provide search with faceted filtering (team, format, sensitivity). Enforce access control through Azure AD integration.
+
+## Interview Q&A
 
 ### Q1: Compare data lake, warehouse, and lakehouse. When would you choose each?
 **A**: Data lake for raw storage and ML exploration (cheap, flexible). Warehouse for structured analytics and BI (fast, governed). Lakehouse when you need both — most modern AI systems use lakehouse to avoid silos.
@@ -791,23 +816,6 @@ Design a data cataloging strategy for a large enterprise with 10,000+ datasets a
 ### Q10: Compare DVC vs lakeFS for data versioning.
 **A**: DVC is Git-based, stores data pointers in Git, actual data in remote storage. Good for ML experiments with small-to-medium datasets. lakeFS is a separate storage layer providing Git semantics (branch, merge, revert) directly on data lakes. Better for large-scale collaborative data engineering.
 
-## Exercises
-
-### Exercise 1: Build a Lakehouse Simulator
-Implement a Python class that simulates bronze/silver/gold layers with pandas. Write functions for bronze ingestion, silver cleaning (drop nulls, dedup, type casting), and gold aggregation (groupby with mean/count).
-
-### Exercise 2: Star Schema Design
-Given raw sales CSV with columns (sale_id, product_name, product_category, customer_name, customer_city, store_name, store_region, amount, quantity, sale_date), design and build a star schema. Create fact and dimension tables.
-
-### Exercise 3: Delta Lake Merge Simulation
-Implement an upsert operation that merges new data into an existing table using a key column. Simulate the ACID transaction log by keeping versioned JSON manifests.
-
-### Exercise 4: Data Catalog Search
-Build a basic search engine over a catalog of 100+ datasets (generate synthetic metadata). Support full-text search, tag filtering, and lineage graph traversal.
-
-### Exercise 5: Time Travel Query
-Implement a data versioning system where each write creates a new version. Support querying data at any version using a timestamp or version number. Include a diff function showing what changed between versions.
-
 ## Placement Section
 
 ### Resume Tips
@@ -822,11 +830,61 @@ Implement a data versioning system where each write creates a new version. Suppo
 - [ ] Compare Iceberg vs Delta Lake vs Hudi
 - [ ] Know partitioning strategies for common query patterns
 
+## True/False
+
+1. **True or False:** 02 — Data Lakehouse & Warehouse builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for 02 — Data Lakehouse & Warehouse before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for 02 — Data Lakehouse & Warehouse is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for 02 — Data Lakehouse & Warehouse in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the 02 — Data Lakehouse & Warehouse chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers 02 — Data Lakehouse & Warehouse is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to 02 — Data Lakehouse & Warehouse is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing 02 — Data Lakehouse & Warehouse is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug 02 — Data Lakehouse & Warehouse issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to 02 — Data Lakehouse & Warehouse in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving 02 — Data Lakehouse & Warehouse that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of 02 — Data Lakehouse & Warehouse is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain 02 — Data Lakehouse & Warehouse in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for 02 — Data Lakehouse & Warehouse and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of 02 — Data Lakehouse & Warehouse on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+
 ## Difficulty Level
 
 **Level**: Intermediate
 **Estimated Study Time**: 60 minutes
 **Prerequisites**: Chapter 01 (ETL), SQL
+
+## Tips & Tricks
+
+- Always write a one-line example of 02 — Data Lakehouse & Warehouse from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered 02 — Data Lakehouse & Warehouse when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining 02 — Data Lakehouse & Warehouse twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own 02 — Data Lakehouse & Warehouse snippets; interviewers love original examples.
+
+## Memory Tricks
+
+- **Acronym**: build a mnemonic from the 5 key concepts of 02 — Data Lakehouse & Warehouse listed in the Chapter at a Glance table.
+- **Story**: link 02 — Data Lakehouse & Warehouse to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of 02 — Data Lakehouse & Warehouse by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain 02 — Data Lakehouse & Warehouse to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
@@ -835,9 +893,216 @@ Implement a data versioning system where each write creates a new version. Suppo
 - Apache Iceberg spec: https://iceberg.apache.org/spec/
 - "Lakehouse: A New Generation of Open Platforms" (CIDR 2021 paper)
 
+## Related Topics
+
+- The previous chapter in this module (see table of contents) â€” foundational for 02 — Data Lakehouse & Warehouse
+- The next chapter (see Next Topic below) â€” builds on 02 — Data Lakehouse & Warehouse
+- The system design chapters in Module 07 â€” how 02 — Data Lakehouse & Warehouse fits into production architectures
+- The interview preparation module â€” how 02 — Data Lakehouse & Warehouse is asked in screening rounds
+- The capstone project â€” where 02 — Data Lakehouse & Warehouse is applied end-to-end
+
+## FAQs
+
+1. **Do I need to memorize all of 02 — Data Lakehouse & Warehouse, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is 02 — Data Lakehouse & Warehouse asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+
+## Important Notes
+
+- 02 — Data Lakehouse & Warehouse is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with 02 — Data Lakehouse & Warehouse.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
+
+## Historical Context
+
+- 02 — Data Lakehouse & Warehouse emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for 02 — Data Lakehouse & Warehouse today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about 02 — Data Lakehouse & Warehouse â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around 02 — Data Lakehouse & Warehouse changes quickly; focus on fundamentals that remain stable.
+
+## Security Considerations
+
+- Never trust external input: validate and sanitize data before processing 02 — Data Lakehouse & Warehouse.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
+
+## ML Intuition
+
+- 02 — Data Lakehouse & Warehouse appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding 02 — Data Lakehouse & Warehouse helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the 02 — Data Lakehouse & Warehouse concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, 02 — Data Lakehouse & Warehouse skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply 02 — Data Lakehouse & Warehouse to a dataset of 10 million records? â€” Batching and vectorization.
+
+## Analogies
+
+- **02 — Data Lakehouse & Warehouse is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
+
+## Capstone Project Link
+
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the 02 — Data Lakehouse & Warehouse skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+
+## Flashcards
+
+<details class="tp-qa-card" data-qid="25dataengineering-02datalakehousewarehouse-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the core concept of 02 — Data Lakehouse & Warehouse in one sentence?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-02datalakehousewarehouse-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the most common mistake engineers make with 
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Common Mistakes section of this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-02datalakehousewarehouse-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the time and space complexity of the standard 02 — Data Lakehouse & Warehouse approach?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Refer to the theory and complexity analysis in this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-02datalakehousewarehouse-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    When is 02 — Data Lakehouse & Warehouse NOT the right choice?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Limitations section of this chapter.</p>
+  </div>
+</details>
+
+<details class="tp-qa-card" data-qid="25dataengineering-02datalakehousewarehouse-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How is 02 — Data Lakehouse & Warehouse applied in a real production system?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Real-World Examples section of this chapter.</p>
+  </div>
+</details>
+
+## Research References
+
+- Official documentation of the primary library for 02 — Data Lakehouse & Warehouse (linked in Further Reading)
+- The classic paper or textbook chapter introducing 02 — Data Lakehouse & Warehouse (see References below)
+- The standard library reference for 02 — Data Lakehouse & Warehouse-related functions
+- Engineering blog posts from companies running 02 — Data Lakehouse & Warehouse in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
+
+## Open-Source Tools
+
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of 02 — Data Lakehouse & Warehouse code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on 02 — Data Lakehouse & Warehouse
+
+## Debugging Guide
+
+- Start with `print()` or a debugger to inspect intermediate values in 02 — Data Lakehouse & Warehouse code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the 02 — Data Lakehouse & Warehouse example code.
+
+## Mock Interview Section
+
+**Round 1 â€” Screening (15 min)**
+- Explain 02 — Data Lakehouse & Warehouse in 60 seconds.
+- Write a minimal working example of 02 — Data Lakehouse & Warehouse.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a 02 — Data Lakehouse & Warehouse problem in a project.
+- How would you design a system where 02 — Data Lakehouse & Warehouse is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for 02 — Data Lakehouse & Warehouse.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core 02 — Data Lakehouse & Warehouse logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
+
 ## References
 
 - Armbrust, M. et al. (2021). Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics. CIDR.
 - Kimball, R., & Ross, M. (2013). The Data Warehouse Toolkit.
 - Apache Iceberg Documentation. https://iceberg.apache.org/
 - Delta Lake Documentation. https://docs.delta.io/
+
+## Evaluation Metrics
+
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain 02 — Data Lakehouse & Warehouse without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
+
+## Real-World Examples
+
+- **Startup**: a small team uses 02 — Data Lakehouse & Warehouse daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: 02 — Data Lakehouse & Warehouse patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: 02 — Data Lakehouse & Warehouse principles apply to transaction validation and fraud detection flows.
+- **ML platform**: 02 — Data Lakehouse & Warehouse shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect 02 — Data Lakehouse & Warehouse to the business outcome, not just the code.
+
+## Next Topic
+
+[03 — Apache Spark Basics](03-apache-spark-basics.md)
+
+## Limitations
+
+- 02 — Data Lakehouse & Warehouse, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of 02 — Data Lakehouse & Warehouse depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

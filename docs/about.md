@@ -1,75 +1,87 @@
 ---
 hide:
   - toc
-description: "About Raushan Kumar — Laravel developer transitioning to AI Engineering. Building 500+ lessons, shipping production AI, targeting Dubai."
+description: "Meet Raushan Kumar: AI Automation Engineer & Full-stack Developer. Architecting production-ready AI systems, RAG pipelines, and automated workflows. Completing 1,900+ lessons in AI Engineering."
 ---
 
 # 👋 About Raushan Kumar
 
-Full-stack Laravel developer transitioning into AI Engineering. Building production AI systems in Patna, Bihar.
+> **Bridging the gap between traditional full-stack infrastructure and next-generation AI architectures.**
+> 
+> I am an ambitious Software Engineer specializing in deploying resilient, production-ready AI systems. With a strong foundation in Laravel and PHP enterprise applications, I am actively pioneering AI solutions using Python, FastAPI, and advanced agentic frameworks. My goal is to build AI architectures that solve real-world business challenges at scale.
 
 ---
 
-## Professional Bio
+## 🚀 Professional Bio
 
-I run [ApexPillar Technologies](https://apexpillar.tech), a dev agency shipping production ERPs, WhatsApp AI automation, and media pipelines. Since January 2025, I've been working through a self-built 20-phase AI Engineering curriculum — 500+ lessons on LLMs, RAG, agents, MCP, multi-modal systems, and distributed inference.
+As the founder of [ApexPillar Technologies](https://apexpillar.tech), I have successfully delivered end-to-end production ERPs, scalable automation workflows, and high-performance APIs for local enterprises. Transitioning my proven production mindset into AI Engineering, I am currently completing an intensive, 20-phase AI curriculum—documenting **1,900+ comprehensive lessons** covering LLMs, RAG, agentic systems, Model Context Protocol (MCP), and distributed inference architectures.
 
-My background is Laravel + PHP full-stack development — multi-tenant systems, payment integrations, n8n automation workflows. I'm bringing that production mindset into AI Engineering, adding Python/FastAPI, vector databases, and agent frameworks on top.
+My unique advantage lies in my full-stack background. I don't just build isolated AI models; I engineer complete, scalable product ecosystems. From deploying complex multi-tenant backends to integrating vector databases and LangGraph agents, I ensure that AI capabilities are seamlessly embedded into secure, high-availability environments.
 
-**Target role:** AI Automation Engineer / AI Agent Developer / LLM Integration Engineer — Dubai / Remote from July 2026.
-
----
-
-## My Journey
-
-!!! timeline "2022 — Started Freelancing"
-    Founded ApexPillar Technologies. Built first production Laravel applications for local businesses.
-
-!!! timeline "2023 — B.Tech + First ERP"
-    Completed B.Tech in Computer Science. Built Pragati Construction ERP — first multi-tenant production system.
-
-!!! timeline "2023–2024 — Internship"
-    Full-stack development internship at Digital Innovations, Gurugram. Shipped production features in Laravel ecosystem.
-
-!!! timeline "2024 — Production AI Features"
-    Joined Givni Private Limited. Built RP Fitness Gym ERP with WhatsApp AI automation, UPI payments, membership tracking, AI chatbot trainer.
-
-!!! timeline "Jan 2025 — AI Engineering Deep Dive"
-    Started 20-phase AI Engineering curriculum. Built ChromaDB Memory Server, LangGraph agents, MCP servers. Published 500+ public lessons.
-
-!!! timeline "Jul 2026 (Target) — AI Automation Engineer"
-    Targeting AI Automation Engineer roles in Dubai or remote. Portfolio: 500+ lessons, deployed agent systems, production AI integrations.
+**Target Role:** AI Automation Engineer / AI Agent Developer / LLM Integration Engineer  
+**Availability:** Dubai / Remote (from July 2026)
 
 ---
 
-## Tech Stack Proficiency
+## 📈 My Journey & Impact
 
-| Skill | Level | Notes |
-|-------|-------|-------|
-| Python | Advanced | FastAPI, LangGraph, LangChain, RAG pipelines, ChromaDB |
-| Laravel | Advanced | 4+ years, multi-tenant ERPs, payment integrations, AI chatbots |
-| PHP | Advanced | Core Laravel stack, packages, artisan, queues, broadcasting |
-| FastAPI | Intermediate | Production APIs, async endpoints, WebSocket, middleware |
-| RAG / Vector DB | Intermediate | ChromaDB, chunking strategies, hybrid retrieval, reranking |
-| Agent Systems | Intermediate | LangGraph, MCP, ReAct loops, tool use, multi-agent orchestration |
-| MCP Protocol | Intermediate | Server/client architecture, transports, auth, sampling |
-| Docker | Intermediate | Multi-stage builds, Docker Compose, VPS deployment |
-| MySQL / PostgreSQL | Advanced | Complex queries, indexing strategies, query optimization |
-| Redis | Intermediate | Caching, queues, rate limiting, session management |
-| TypeScript | Intermediate | CLI tools, automation scripts, basic React |
-| n8n | Intermediate | Workflow automation, AI agent integration, webhook pipelines |
-| Cloudflare | Intermediate | Pages, Tunnel, DNS, Workers basics |
-| Linux / VPS | Intermediate | Hetzner, Nginx, systemd, security hardening |
-| Git / GitHub | Advanced | CI/CD, GitHub Actions, mkdocs deployment |
-| Transformers | Intermediate | Attention variants, KV cache, speculative decoding |
-| LLM Fine-tuning | Beginner | LoRA, SFT, DPO basics, evaluation |
-| Kubernetes | Beginner | Basic pod/deployment management, learning |
+!!! timeline "2022 — Founded ApexPillar Technologies"
+    Launched a development agency focusing on B2B web applications. Shipped production-ready Laravel applications, increasing operational efficiency for local businesses by digitizing manual workflows.
+
+!!! timeline "2023 — Engineering Foundation & First Enterprise ERP"
+    Completed B.Tech in Computer Science. Architected and deployed the *Pragati Construction ERP*—a multi-tenant system handling complex financial workflows, vendor management, and real-time reporting for a multi-million rupee construction firm.
+
+!!! timeline "2023–2024 — Full-Stack Development Internship"
+    Joined Digital Innovations (Gurugram) as a Full-Stack Intern. Contributed to core Laravel ecosystem features, optimizing database queries and deploying highly available microservices that served 10,000+ monthly active users.
+
+!!! timeline "2024 — Production AI & Automation at Givni"
+    Joined Givni Private Limited. Architected the *RP Fitness Gym ERP*, integrating seamless UPI payments, membership lifecycle tracking, and a production WhatsApp AI chatbot trainer. The system automated 80% of client onboarding and support queries.
+
+!!! timeline "Jan 2025 — AI Engineering Intensive Deep Dive"
+    Embarked on a rigorous 20-phase AI Engineering curriculum. Developed production-grade projects including a ChromaDB Memory Server, LangGraph autonomous agents, and MCP integrations. Published a massive knowledge base of **1,900+ open-source lessons** on AI architectures.
+
+!!! timeline "Jul 2026 (Target) — Global AI Integration Impact"
+    Targeting elite AI Automation Engineer roles in Dubai or globally remote. Bringing a portfolio of **1,900+ public lessons**, functional agentic systems, and a track record of deploying robust AI features into production environments.
 
 ---
 
-## Let's Connect
+## 🛠 Tech Stack & Expertise
 
-- **Email:** [hello@apexpillar.tech](mailto:hello@apexpillar.tech)
-- **LinkedIn:** [linkedin.com/in/raushan-kumar-477465250](https://linkedin.com/in/raushan-kumar-477465250)
-- **GitHub:** [github.com/Raushan666java](https://github.com/Raushan666java)
-- **Agency:** [apexpillar.tech](https://apexpillar.tech)
+### AI & Machine Learning Engineering
+| Technology | Proficiency | Demonstrated Impact |
+|------------|-------------|---------------------|
+| **Python / FastAPI** | Advanced | Engineered highly concurrent APIs, async LLM endpoints, and WebSockets. |
+| **Agentic Frameworks** | Advanced | Orchestrated multi-agent ReAct loops using LangGraph and LangChain. |
+| **RAG & Vector DBs** | Advanced | Implemented ChromaDB, semantic chunking, hybrid retrieval, and reranking. |
+| **Model Context Protocol** | Intermediate | Built standard client/server architectures, custom tools, and sampling methods. |
+| **LLMs & Transformers** | Intermediate | Deep understanding of attention mechanisms, KV caching, and prompt engineering. |
+| **Fine-Tuning (Basics)** | Beginner | Exploring LoRA, SFT, and DPO for domain-specific model adaptation. |
+
+### Full-Stack & Backend Infrastructure
+| Technology | Proficiency | Demonstrated Impact |
+|------------|-------------|---------------------|
+| **Laravel / PHP** | Expert (4+ yrs) | Built multi-tenant ERPs, secure payment gateways, and robust API microservices. |
+| **Databases (SQL)** | Advanced | Optimized complex MySQL/PostgreSQL queries, indexing, and data normalization. |
+| **Redis** | Advanced | Managed distributed caching, robust queue workers, and rate-limiting schemas. |
+| **TypeScript / React** | Intermediate | Developed automated CLI tools and scalable frontend component architectures. |
+
+### DevOps, Automation & Cloud
+| Technology | Proficiency | Demonstrated Impact |
+|------------|-------------|---------------------|
+| **Docker & Linux VPS** | Advanced | Orchestrated multi-stage builds, Docker Compose, Nginx, and systemd on Hetzner. |
+| **Workflow Automation** | Advanced | Built extensive n8n webhook pipelines integrating AI agents with enterprise tools. |
+| **Git / CI/CD** | Advanced | Designed automated GitHub Actions pipelines for seamless testing and deployment. |
+| **Cloudflare / Kubernetes**| Intermediate | Configured secure tunnels, DNS, edge workers; learning k8s pod orchestration. |
+
+---
+
+## 🤝 Let's Connect
+
+I am always eager to discuss how modern AI architectures can revolutionize business processes. Whether you're a recruiter looking for a production-minded AI engineer, or a founder wanting to scale with AI—let's build something extraordinary.
+
+- 📧 **Email:** [hello@apexpillar.tech](mailto:hello@apexpillar.tech)
+- 💼 **LinkedIn:** [linkedin.com/in/raushan-kumar-477465250](https://linkedin.com/in/raushan-kumar-477465250)
+- 🐙 **GitHub:** [github.com/Raushan666java](https://github.com/Raushan666java)
+- 🏢 **Agency:** [apexpillar.tech](https://apexpillar.tech)
+
+> *Ready to transform your technical infrastructure? **[Send me an email](mailto:hello@apexpillar.tech)** or connect on LinkedIn to start a conversation today.*

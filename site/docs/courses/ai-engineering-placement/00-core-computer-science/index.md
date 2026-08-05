@@ -1,4 +1,6 @@
 ---
+id: index
+slug: /ai-engineering-placement
 title: "Core Computer Science for AI Engineers"
 sidebar_label: "Core Computer Science for AI Engineers"
 sidebar_position: 7

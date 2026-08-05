@@ -72,6 +72,7 @@ flowchart LR
     M --> K
     K --> N[Record Analytics Event]
 
+```
 ## 10.1 Requirements & Constraints
 
 **Functional requirements**: Generate a short URL for any long URL, redirect short URL to original URL, track click analytics, handle billions of URLs.
@@ -94,7 +95,7 @@ const DEFAULT_CONFIG: URLShortenerConfig = {
   cacheTTL: 3600,
   rateLimitPerIP: 100,
 };
-```text
+```
 
 **Scale estimation**: 100M URLs/month = ~3.3M/day = ~38/sec writes. 1B redirects/month = ~33M/day = ~380/sec reads. Read to write ratio is about 10:1.
 
@@ -130,7 +131,7 @@ class Base62Encoder {
     return id;
   }
 }
-```text
+```
 
 **Hash-based**: Hash the long URL using MD5 or SHA-256, take first 7 bytes, encode to base62. Collision risk requires resolution (append counter, retry with salt).
 
@@ -150,7 +151,7 @@ class KeyGenerator {
     return this.redis.incr("url:counter");
   }
 }
-```text
+```
 
 **Recommended approach**: Counter-based with Redis INCR (or Snowflake for distributed setup). Pre-generate batches of IDs for lower latency.
 
@@ -183,7 +184,7 @@ CREATE TABLE click_events (
     country VARCHAR(2),
     device_type VARCHAR(20)
 );
-```text
+```
 
 **NoSQL (DynamoDB/Cassandra)**: Partition key = short_key, with long_url as sort key or attribute. Click events stored in separate time-series table.
 
@@ -213,7 +214,7 @@ class URLRepository {
     return record;
   }
 }
-```text
+```
 
 **Sharding strategy**: Shard by short_key using consistent hashing. Co-locate URL record and its click events on the same shard.
 
@@ -269,7 +270,7 @@ class RedirectHandler {
     });
   }
 }
-```text
+```
 
 **Caching strategy**: Cache URL mappings in Redis with TTL (1 hour). Use CDN (CloudFront, Cloudflare) for frequently accessed URLs. Consider stale-while-revalidate for cache hits.
 
@@ -359,7 +360,7 @@ class AnalyticsAggregator {
       .toArray();
   }
 }
-```text
+```
 
 **Architecture**: Redirect servers emit click events to Kafka/Kinesis. Stream processor aggregates data into time-series database (ClickHouse, InfluxDB). API server queries aggregated data for analytics dashboards.
 
@@ -428,7 +429,7 @@ interface ValidationResult {
   valid: boolean;
   reason?: string;
 }
-```text
+```
 
 **Additional security measures**: Rate limiting per IP (100 URLs/hour), user authentication for URL creation, click-through warnings for suspicious URLs, URL expiration policies, real-time scanning against threat intelligence feeds.
 
@@ -479,7 +480,7 @@ class URLShortenerService {
     return Date.now();
   }
 }
-```text
+```
 
 ---
 

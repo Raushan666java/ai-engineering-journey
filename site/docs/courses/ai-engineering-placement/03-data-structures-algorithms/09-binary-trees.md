@@ -28,7 +28,6 @@ Heaps (priority queues) are specialized trees that efficiently provide the minim
 - Binary tree basics
 - Array representation of trees
 
-
 ## Key Terminology
 
 **Key Terms**: Core vocabulary and concepts for this topic.
@@ -38,8 +37,6 @@ Heaps (priority queues) are specialized trees that efficiently provide the minim
 ## Theory
 
 Understanding binary trees is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how binary trees works in practice.
-
-
 
 ## Chapter at a Glance
 
@@ -66,8 +63,7 @@ flowchart LR
     E --> I[Construction]
     F --> I
     G --> J[LCA, Path Sum]
-```text
-
+```
 
 A binary tree is a hierarchical data structure where each node has at most two children: left and right.
 
@@ -101,16 +97,17 @@ def count_nodes(root):
 def height(root):
     if not root: return -1  # edge-based height
     return 1 + max(height(root.left), height(root.right))
-```text
+```
 
 ## 9.2 Tree Traversals
 
 **Preorder** (Root-Left-Right):
 
+```python
 def preorder(root):
     if not root: return []
     return [root.val] + preorder(root.left) + preorder(root.right)
-```text
+```
 
 **Inorder** (Left-Root-Right):
 
@@ -120,7 +117,7 @@ def inorder(root):
     return inorder(root.left) + [root.val] + inorder(root.right)
 
 ## Inorder of BST gives sorted order
-```text
+```
 
 **Postorder** (Left-Right-Root):
 
@@ -128,7 +125,7 @@ def inorder(root):
 def postorder(root):
     if not root: return []
     return postorder(root.left) + postorder(root.right) + [root.val]
-```text
+```
 
 **Level-order** (BFS):
 
@@ -148,7 +145,7 @@ def level_order(root):
             if node.right: queue.append(node.right)
         result.append(level)
     return result
-```text
+```
 
 ## 9.3 Recursive Tree Problems
 
@@ -158,7 +155,7 @@ def level_order(root):
 def max_depth(root):
     if not root: return 0
     return 1 + max(max_depth(root.left), max_depth(root.right))
-```text
+```
 
 **Diameter of binary tree**:
 
@@ -176,7 +173,7 @@ def diameter_of_binary_tree(root):
 
     dfs(root)
     return diameter
-```text
+```
 
 **Balanced binary tree** (height difference <= 1):
 
@@ -190,7 +187,7 @@ def is_balanced(root):
                    abs(left_h - right_h) <= 1)
         return (balanced, 1 + max(left_h, right_h))
     return dfs(root)[0]
-```text
+```
 
 ## 9.4 Iterative Traversals
 
@@ -206,7 +203,7 @@ def preorder_iterative(root):
         if node.right: stack.append(node.right)
         if node.left: stack.append(node.left)
     return result
-```text
+```
 
 **Iterative inorder**:
 
@@ -222,7 +219,7 @@ def inorder_iterative(root):
         result.append(curr.val)
         curr = curr.right
     return result
-```text
+```
 
 ## 9.5 Tree Construction
 
@@ -238,7 +235,7 @@ def build_tree(preorder, inorder):
     root.left = build_tree(preorder[1:mid+1], inorder[:mid])
     root.right = build_tree(preorder[mid+1:], inorder[mid+1:])
     return root
-```text
+```
 
 ## 9.6 Advanced Problems
 
@@ -253,7 +250,7 @@ def lowest_common_ancestor(root, p, q):
     if left and right:
         return root  # p and q in different subtrees
     return left or right
-```text
+```
 
 **Maximum path sum** (any node to any node):
 
@@ -271,7 +268,7 @@ def max_path_sum(root):
 
     dfs(root)
     return max_sum
-```text
+```
 
 **Serialize and deserialize**:
 
@@ -292,7 +289,7 @@ def deserialize(data):
         node.right = dfs()
         return node
     return dfs()
-```text
+```
 
 ---
 
@@ -323,7 +320,7 @@ function inorderTraversal(root: TreeNode | null): number[] {
     }
     return result;
 }
-```text
+```
 
 ---
 
@@ -350,7 +347,6 @@ function inorderTraversal(root: TreeNode | null): number[] {
 | LCA | Recursive divide-and-conquer | Path-finding approach (O(n^2)) |
 | Tree construction | Use hash map for O(1) inorder index lookup | Linear search each recursive call |
 | Level-order | Queue-based BFS | Recursive approach with depth tracking |
-
 
 ## Interview Q&A
 <details class="tp-qa-card" data-qid="dsa09-q1">
@@ -496,7 +492,6 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 
 ---
 
-
 ## Common Mistakes
 
 1. Not understanding 0-indexed vs 1-indexed heap
@@ -549,6 +544,39 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 - [ ] Know the time/space complexity of common data structures algorithms operations
 - [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [10 - Binary Search Trees ?](10-binary-search-trees.md)
 
+## True/False
+
+1. **True or False:** Binary Trees builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Binary Trees before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Binary Trees is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Binary Trees in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Binary Trees chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Binary Trees is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Binary Trees is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Binary Trees is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Binary Trees issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Binary Trees in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Binary Trees that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Binary Trees is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Binary Trees in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Binary Trees and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Binary Trees on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -621,16 +649,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of binary trees helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -665,27 +683,12 @@ Think of binary trees like learning a new language — start with basic vocabula
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -733,15 +736,6 @@ For production systems, consider:
 - **Async/Await**: Use non-blocking I/O for concurrent operations
 - **Connection Pooling**: Reuse database and API connections
 - **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
 
 ## Evaluation Metrics
 

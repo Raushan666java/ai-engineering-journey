@@ -1,0 +1,24 @@
+﻿2026-07-25T10:14:13.0534515Z ##[group]Run npm ci
+2026-07-25T10:14:13.0534818Z [36;1mnpm ci[0m
+2026-07-25T10:14:13.0591335Z shell: /usr/bin/bash -e {0}
+2026-07-25T10:14:13.0591623Z ##[endgroup]
+2026-07-25T10:14:16.5107676Z npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+2026-07-25T10:14:24.3874925Z npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+2026-07-25T10:14:35.2735163Z 
+2026-07-25T10:14:35.2736226Z added 1456 packages, and audited 1457 packages in 22s
+2026-07-25T10:14:35.2736675Z 
+2026-07-25T10:14:35.2736932Z 446 packages are looking for funding
+2026-07-25T10:14:35.2737387Z   run `npm fund` for details
+2026-07-25T10:14:35.5116618Z 
+2026-07-25T10:14:35.5117638Z 27 vulnerabilities (6 moderate, 21 high)
+2026-07-25T10:14:35.5118189Z 
+2026-07-25T10:14:35.5118412Z To address issues that do not require attention, run:
+2026-07-25T10:14:35.5118892Z   npm audit fix
+2026-07-25T10:14:35.5119023Z 
+2026-07-25T10:14:35.5119301Z To address all issues possible (including breaking changes), run:
+2026-07-25T10:14:35.5119685Z   npm audit fix --force
+2026-07-25T10:14:35.5119836Z 
+2026-07-25T10:14:35.5120021Z Some issues need review, and may require choosing
+2026-07-25T10:14:35.5120371Z a different dependency.
+2026-07-25T10:14:35.5120523Z 
+2026-07-25T10:14:35.5120659Z Run `npm audit` for details.

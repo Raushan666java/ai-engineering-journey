@@ -45,7 +45,7 @@ flowchart LR
     E --> F[Async Processing]
     F --> G[Metrics]
     G --> H[Capacity Planning]
-```text
+```
 
 
 ## Introduction
@@ -91,7 +91,7 @@ flowchart LR
         H1 --> H3[Server 2]
         H1 --> H4[Server N]
     end
-```text
+```
 
 | Aspect | Vertical | Horizontal |
 |--------|----------|------------|
@@ -117,7 +117,7 @@ session_data["user"] = user_info  # stored locally
 
 ## Stateless approach
 redis.set(f"session:{session_id}", user_info)  # external store
-```text
+```
 
 **Externalizing state**:
 - Session data -> Redis/Memcached
@@ -153,7 +153,7 @@ class LoadBalancer:
         server = self.servers[self.index]
         self.index = (self.index + 1) % len(self.servers)
         return server
-```text
+```
 
 **Health checks**: Active (periodic pings) and passive (monitoring traffic errors).
 
@@ -177,7 +177,7 @@ class DatabaseRouter:
         import random
         replica = random.choice(self.replicas)
         return replica.execute(query)
-```text
+```
 
 **Sharding**: Splitting data across multiple databases based on a shard key.
 
@@ -217,7 +217,7 @@ def get_user(user_id):
     user = db.query("SELECT * FROM users WHERE id = ?", user_id)
     redis.set(f"user:{user_id}", user, ttl=3600)
     return user
-```text
+```
 
 
 ### 1.6 Asynchronous Processing
@@ -230,7 +230,7 @@ flowchart LR
     B --> C[Worker 1]
     B --> D[Worker 2]
     B --> E[Worker N]
-```text
+```
 
 ```python
 
@@ -247,7 +247,7 @@ def process_tasks():
         task = queue.dequeue()
         if task:
             process(task["data"])
-```text
+```
 
 **Benefits**: Improved responsiveness, decoupled components, burst handling, graceful degradation.
 
@@ -289,7 +289,7 @@ def estimate_servers(rps, rps_per_server, headroom=2.5):
 ## Example: 10000 RPS, each server handles 500 RPS
 servers = estimate_servers(10000, 500)
 print(f"Need {servers} servers")  # 51
-```text
+```
 
 ---
 
@@ -340,7 +340,7 @@ function evaluateScaling(metrics: ServerMetrics, currentServers: number, maxRps:
   }
   return { action: "scale-up", reason: "Within limits", targetCount: currentServers };
 }
-```text
+```
 
 ---
 
@@ -529,7 +529,7 @@ class AutoScaler:
         return self.current
 
 scaler = AutoScaler()
-```text
+```
 
 **Predictive scaling** — use historical patterns to pre-provision:
 
@@ -540,7 +540,7 @@ def predict_capacity(traffic_history: list[int]) -> int:
     predicted_rps = sum(window) / len(window)
     # Add 30% headroom
     return int(predicted_rps * 1.3 / 500) + 1
-```text
+```
 
 
 ## Distributed System Patterns
@@ -586,7 +586,7 @@ def calculate_pool_size(
 
 ## Example: 500 concurrent requests, 50ms avg query, 10ms target queue
 pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
-```text
+```
 
 ---
 
@@ -610,321 +610,3 @@ pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
 - Key metrics: latency, throughput, p99, error rate, availability (99.9%+)
 - SLI = measured metric, SLO = target value, SLA = contractual agreement with consequences
 - Capacity planning: estimate traffic, project growth, add 2-3x headroom, load test to validate
-
-
-## Summary
-
-Scalability fundamentals provide the framework for handling growing AI system demands. Vertical scaling adds power to a single machine while horizontal scaling adds more machines — the latter requires stateless application design with externalized state. Load balancers distribute traffic using.
-various algorithms with health checks ensuring availability. Database scaling uses read replicas for.
-read throughput and sharding for write distribution. Caching at multiple layers (CDN, Redis, in-memory) reduces database load. Asynchronous processing with queues decouples components and.
-improves responsiveness. Capacity planning requires estimating traffic, projecting growth, and adding headroom validated through load testing.
-
-
-## Placement Section
-
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Design a URL shortener service that handles 100 million URLs per day. How do you handle scaling, caching, and database partitioning?
-2. Explain the CAP theorem and how it applies to your choice of database for a scalable AI system
-
-#### Amazon Style
-1. Your ML inference service experiences 10x traffic spikes during certain hours. Design an auto-scaling architecture that minimizes cost while maintaining p99 < 500ms
-2. Describe a time when you identified a scalability bottleneck and the engineering decisions you made to resolve it
-
-#### Microsoft Style
-1. How would you design a real-time collaboration feature for an AI writing assistant that scales to millions of concurrent users?
-2. A monolithic application needs to be decomposed for horizontal scaling. Walk through your approach to identifying service boundaries
-
-#### NVIDIA Style
-1. Design a distributed GPU cluster for training large language models. How do you handle model parallelism, data loading, and fault tolerance across nodes?
-2. An AI inference service runs on 50 GPU servers. How do you implement load balancing that accounts for variable GPU utilization and batch sizes?
-
-#### AI Startup Style
-1. You need to scale a RAG-based Q&A system from 100 to 100,000 daily queries. What are the three most critical scalability bottlenecks and how do you address each?
-2. Your startup's API costs are growing faster than revenue. How do you optimize the architecture to reduce infrastructure costs while maintaining performance?
-
-
-### Resume Tips
-- List "System Design" and "Scalability" under Technical Skills with specific technologies (Redis, load balancers, sharding)
-- Project example: "Designed horizontally scalable ML inference system handling 50K RPS with Redis caching, load balancing, and auto-scaling"
-- Quantify scalability achievements: "Reduced p99 latency from 2s to 200ms by implementing CDN caching and database read replicas"
-
-
-### Interview Day Checklist
-- [ ] Can design a scalable architecture for a given system in under 20 minutes
-- [ ] Can explain the trade-offs between vertical and horizontal scaling with specific examples
-- [ ] Can describe at least 3 load balancing algorithms and when to use each
-- [ ] Can calculate connection pool size using Little's Law
-- [ ] Can explain cache invalidation strategies and when to use each
-
-> **Next**: [Microservices Architecture](02-microservices-architec
-
-### True/False
-
-**T/F 1**: Vertical scaling means adding more servers.
-**Answer**: False — Vertical scaling means adding more power (CPU/RAM) to a single server. Adding servers is horizontal scaling.
-
-**T/F 2**: Stateless applications are easier to scale horizontally.
-**Answer**: True — Any instance can handle any request since no local state.
-
-**T/F 3**: A load balancer distributes traffic to only one server.
-**Answer**: False — Load balancers distribute traffic across multiple servers.
-
-**T/F 4**: Redis is a type of load balancer.
-**Answer**: False — Redis is an in-memory cache/database.
-
-**T/F 5**: Microservices are always better than monoliths.
-**Answer**: False — It depends on team size, complexity, and requirements. Monoliths are simpler to start with.
-
-### Fill in the Blank
-
-**FIB 1**: ________ scaling means adding more power to a single machine.
-**Answer**: Vertical (scale up)
-
-**FIB 2**: A ________ distributes incoming network traffic across multiple servers.
-**Answer**: Load Balancer
-
-**FIB 3**: ________ is an in-memory data store used for caching.
-**Answer**: Redis
-
-**FIB 4**: The ________ pattern ensures any instance can handle any request.
-**Answer**: Stateless
-
-**FIB 5**: ________ scaling means adding more machines to distribute the load.
-**Answer**: Horizontal (scale out)
-
-### Scenario Questions
-
-**Scenario 1**: Your e-commerce site handles 1,000 requests/second normally but spikes to 10,000 during flash sales. How do you scale?
-
-**Answer**: (1) Auto-scaling group with pre-warmed instances, (2) CDN for static assets, (3) Redis caching for product catalog, (4) Database read replicas, (5) Message queue for order processing, (6) Rate limiting to prevent overload.
-
-**Scenario 2**: Design a URL shortener that handles 100M URLs/day.
-
-**Answer**: (1) Generate unique IDs (base62 encoding), (2) Store in distributed DB (Cassandra), (3) Cache hot URLs in Redis, (4) Load balancer in front of stateless API servers, (5) Analytics pipeline for click tracking.
-
-### Output Questions
-
-**Output 1**: What does Little's Law state?
-**Answer**: L = λW — the average number of customers in a system equals the arrival rate times the average time in the system.
-
-**Output 2**: What is the formula for connection pool sizing?
-**Answer**: Pool size = (requests per second × avg query time) + headroom. E.g., 100 req/s × 50ms = 5 connections + buffer.
-
-ture.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to System Design fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master scalability fundamentals?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of scalability fundamentals helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding scalability fundamentals at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of scalability fundamentals like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply scalability fundamentals concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of scalability fundamentals?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply scalability fundamentals in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of System Design?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering System Design, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

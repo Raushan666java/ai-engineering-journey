@@ -42,7 +42,7 @@ flowchart LR
     E --> F[LLM Generator]
     F --> G[Grounded Response]
     G --> H[Evaluation]
-```text
+```
 
 
 ## Introduction
@@ -126,7 +126,7 @@ limitations = [
 
 for lim in limitations:
     print(f"{lim.name} ({lim.severity}): {lim.rag_mitigation}")
-```text
+```
 
 
 ### 1.2 RAG Paradigm
@@ -191,7 +191,7 @@ def mock_generator(prompt: str) -> str:
 
 result = rag_pipeline("What is RAG?", mock_retriever, mock_augmenter, mock_generator)
 print(json.dumps(result, indent=2))
-```text
+```
 
 
 ### 1.3 Core Components
@@ -239,7 +239,7 @@ retriever = Retriever(docs)
 results = retriever.retrieve("How does RAG work?", top_k=2)
 for doc, score in results:
     print(f"Score: {score:.2f} | Doc: {doc}")
-```text
+```
 
 
 ### 1.3.2 Index
@@ -282,7 +282,7 @@ index.add_chunk("RAG fundamentals", {"source": "textbook", "chapter": 1})
 index.add_chunk("Vector search techniques", {"source": "paper", "year": 2024})
 print(f"Index size: {index.size()}")
 print(f"Filtered: {len(index.filter_by_metadata('source', 'textbook'))} chunks")
-```text
+```
 
 
 ### 1.3.3 Augmenter
@@ -320,7 +320,7 @@ augmenter = PromptAugmenter()
 query = "What is vector search?"
 chunks = ["Vector search finds similar items using embedding similarity."]
 print(augmenter.augment(query, chunks))
-```text
+```
 
 
 ### 1.3.4 Generator
@@ -356,7 +356,7 @@ class MockGenerator(Generator):
 
 gen = MockGenerator()
 print(gen.generate("mock prompt"))
-```text
+```
 
 
 
@@ -414,7 +414,7 @@ class ApproachComparator:
 comparator = ApproachComparator()
 reqs = {"freshness": "critical", "latency_sensitive": False}
 print(f"Recommended: {comparator.recommend(reqs)}")
-```text
+```
 
 
 ### 1.5 Basic RAG Pipeline
@@ -453,7 +453,7 @@ document = """Retrieval-Augmented Generation (RAG) is a technique that combines 
 chunks = chunk_document(document, chunk_size=200, overlap=30)
 for i, chunk in enumerate(chunks, 1):
     print(f"Chunk {i} ({len(chunk)} chars): {chunk[:80]}...")
-```text
+```
 
 
 ### 1.5.2 Embedding and Indexing
@@ -481,7 +481,7 @@ class SimpleEmbedder:
 embedded = SimpleEmbedder(384).embed("RAG pipeline")
 print(f"Embedding dimension: {len(embedded)}")
 print(f"First 5 values: {embedded[:5]}")
-```text
+```
 
 
 ### 1.5.3 Complete Pipeline
@@ -541,7 +541,7 @@ def mock_llm(prompt: str) -> str:
 
 answer = pipeline.answer("How does RAG work?", mock_llm)
 print(f"Answer: {answer}")
-```text
+```
 
 
 ### 1.6 Evaluation Dimensions
@@ -610,7 +610,7 @@ prec = evaluator.evaluate_context_precision(query, context)
 print(f"Faithfulness: {faith:.2%}")
 print(f"Relevance: {rel:.2%}")
 print(f"Context Precision: {prec:.2%}")
-```text
+```
 
 
 ### Comprehensive RAG Score
@@ -637,7 +637,7 @@ def rag_score(
 
 
 print(rag_score(response, query, context))
-```text
+```
 
 
 ## Visual Analogy
@@ -941,270 +941,3 @@ Answer: C
 - Key evaluation metrics: faithfulness (response matches context), answer relevance (response addresses query), context precision (retrieved chunks are relevant)
 - Chunking strategies: fixed-size, sentence-based, recursive, semantic — each affects retrieval quality
 - Prompt augmentation: explicit grounding instructions, numbered chunk references, context before query
-
-
-## Summary
-
-Retrieval-Augmented Generation addresses fundamental LLM limitations — knowledge cutoff, hallucination, and private data inaccessibility — by retrieving relevant external documents before generation. The RAG pipeline follows three steps: retrieve relevant chunks from a knowledge base,.
-augment the LLM prompt with that context, and generate a grounded response. Core components include the retriever (sparse BM25, dense embedding search,.
-or hybrid), the document index (chunks + embeddings + metadata), the prompt augmenter (formatting and grounding instructions), and the LLM generator. RAG outperforms fine-tuning and.
-prompt engineering for knowledge freshness and hallucination reduction. Evaluating RAG requires specialized metrics: faithfulness (response-context consistency), answer relevance (query-response alignment), and.
-context precision (retrieval quality).
-
-
-## Placement Section
-
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Design a RAG system that serves 10 million documents across 5 languages. How do you handle multilingual retrieval, chunking, and cross-lingual search?
-2. Explain the mathematical foundation of cosine similarity vs dot product for dense retrieval and when you would choose each
-
-#### Amazon Style
-1. A RAG-powered internal search system returns irrelevant chunks for technical queries. Walk through your debugging process from retrieval to generation
-2. How would you implement access control in a RAG system where different users can only retrieve documents they're authorized to see?
-
-#### Microsoft Style
-1. How do you explain the value of RAG vs simply increasing an LLM's context window to a technical stakeholder?
-2. A RAG system's faithfulness score is 0.6 but answer relevance is 0.9. What does this mismatch indicate and how do you fix it?
-
-#### NVIDIA Style
-1. Your RAG pipeline embeds 10 million documents using a sentence-transformer model. How do you optimize the embedding and indexing process for GPU acceleration?
-2. A real-time RAG system needs sub-100ms retrieval latency across 50 million chunks. What vector database architecture and indexing strategy do you choose?
-
-#### AI Startup Style
-1. Build a RAG Q&A system over a startup's 500-page internal wiki. What chunking strategy, embedding model, and retrieval approach do you use?
-2. Your RAG system's context precision is 0.4 — retrieved chunks are mostly irrelevant. Identify the three most likely causes and your fixes for each
-
-
-### Resume Tips
-- List "RAG" and "Vector Search" under Technical Skills with specific tools (FAISS, Pinecone, Weaviate, ChromaDB)
-- Project example: "Built RAG pipeline over 10K documents achieving faithfulness=0.92 and context precision=0.87 using BGE embeddings and hybrid retrieval"
-- Mention evaluation rigor: "Implemented RAGAS evaluation framework, reducing hallucination rate from 25% to 8% through prompt augmentation optimization"
-
-
-### Interview Day Checklist
-- [ ] Can describe the RAG pipeline (retrieve → augment → generate) from memory
-- [ ] Can explain sparse vs dense retrieval with specific pros and cons
-- [ ] Can describe 3 chunking strategies and their trade-offs
-- [ ] Can explain faithfulness, answer relevance, and context precision metrics
-- [ ] Can outline a complete RAG evaluation framework
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 45-60 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to RAG & Vector Databases fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master introduction to rag?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of introduction to rag helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding introduction to rag at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of introduction to rag like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply introduction to rag concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of introduction to rag?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply introduction to rag in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of RAG & Vector Databases?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Prompt Engineering Notes
-
-- **Be Specific**: Clear, detailed prompts get better results
-- **Provide Examples**: Few-shot learning improves consistency
-- **Use Structured Output**: JSON, tables, or markdown for parsing
-- **Chain of Thought**: Break complex reasoning into steps
-- **Temperature Control**: Adjust creativity vs consistency
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering RAG & Vector Databases, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.

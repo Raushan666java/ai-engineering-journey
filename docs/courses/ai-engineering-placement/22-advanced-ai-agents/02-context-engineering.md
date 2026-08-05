@@ -15,9 +15,6 @@
 
 Advanced agents use context engineering, memory, and multi-agent collaboration to solve complex problems. This module covers cutting-edge agent patterns used at leading AI labs.
 
-
-
-
 ## Prerequisites
 
 - Basic programming knowledge
@@ -32,8 +29,6 @@ Advanced agents use context engineering, memory, and multi-agent collaboration t
 ## Theory
 
 Understanding context engineering is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how context engineering works in practice.
-
-
 
 ## Chapter at a Glance
 
@@ -65,7 +60,7 @@ flowchart TD
         K -->|No| M[Allow]
     end
     Cache --> Compress --> Safety --> N[LLM]
-```text
+```
 
 ## 2.1 LLM Context Structure
 
@@ -124,12 +119,11 @@ const ctx = new ContextBuilder()
     .build()
 
 console.log(`Context uses ~${ctx.length} messages, ~${new ContextBuilder().setSystem('').addUserQuery('').build().length * 0} tokens`)
-```text
+```
 
 ```python
 from dataclasses import dataclass
 from typing import List, Optional
-
 
 @dataclass
 class ContextWindow:
@@ -151,7 +145,7 @@ class ContextWindow:
 
     def fits_in_window(self, max_tokens: int) -> bool:
         return self.estimated_tokens() <= max_tokens
-```text
+```
 
 ## 2.2 KV Cache Mechanics
 
@@ -228,7 +222,7 @@ const cacheUnfriendlyLayout = [
 const result = analyzer.compareLayouts(cacheFriendlyLayout, cacheUnfriendlyLayout)
 console.log('Cache-friendly latency:', result.static.estimatedLatencyMs, 'ms')
 console.log('Cache-unfriendly latency:', result.interleaved.estimatedLatencyMs, 'ms')
-```text
+```
 
 ```python
 class KVCacheOptimizer:
@@ -277,7 +271,7 @@ class KVCacheOptimizer:
             'cost_with_cache': round(cost_with_cache, 4),
             'savings_percent': round(savings, 1),
         }
-```text
+```
 
 ## 2.3 Context Compression
 
@@ -401,12 +395,11 @@ class CompressionPipeline {
         }
     }
 }
-```text
+```
 
 ```python
 from typing import List, Tuple
 import re
-
 
 class ContextCompressor:
     """Multi-strategy context compression with fallback chain."""
@@ -466,7 +459,7 @@ class ContextCompressor:
         return (cleaned[:half] +
                 '\n[... truncated ...]\n' +
                 cleaned[-half:])
-```text
+```
 
 ## 2.4 Prompt Injection Defense
 
@@ -580,12 +573,11 @@ class StructuredInputDefense {
         return `[SOURCE: ${source}]\n${input}\n[END ${source}]`
     }
 }
-```text
+```
 
 ```python
 import re
 from typing import List, Dict
-
 
 class LayeredInjectionDefense:
     """Implements layered prompt injection defense."""
@@ -623,7 +615,7 @@ return {
                        self.check_indirect(text) or
                        self.check_memory(history)),
         }
-```text
+```
 
 ## 2.5 Prompt Engineering Ablation
 
@@ -736,7 +728,7 @@ class PromptAblationStudy {
         }
     }
 }
-```text
+```
 
 ## Summary
 
@@ -749,6 +741,88 @@ Context engineering is the most impactful harness component. KV Cache-friendly l
 3. Implement at least 3 compression strategies with fallback chain
 4. Never rely on prompt hardening alone — use source tagging and runtime validation
 5. Run prompt ablations early; small phrasing changes can yield 20%+ performance differences
+
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="m22-s02-q1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q1: What is context engineering and why is it the most impactful harness component?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Context engineering is the discipline of designing what the LLM sees — prompt layout, message roles, compression, and safety — to maximize quality while minimizing cost and latency. LLM APIs distinguish three message roles (<code>system</code>, <code>user</code>, <code>assistant</code>), and how you structure them directly affects KV Cache reuse, token spend, and instruction adherence. The chapter calls it the most impactful harness component because layout and compression decisions move both quality and unit economics.</p>
+    <p><strong>Interview follow-up</strong>: Where does tool output belong — as a user message or a separate role — and why?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m22-s02-q2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q2: Explain the KV Cache and how prompt layout affects inference latency and cost.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>During generation, the model computes key/value tensors for every token of the prompt and caches them so later tokens only need attention against the cache. Tokens already in the cache are roughly 10x faster to reuse than recomputing. A cache-friendly layout puts static content first (system prompt), then dynamic context, then the user query last, so the expensive static prefix is computed once and reused across turns. A cache-unfriendly layout that interleaves roles or reorders content forces full KV recomputation, and latency grows linearly with uncached tokens.</p>
+    <pre><code>// Cache-friendly order
+[systemPrompt, '---', dynamicContext, '---', userQuery]</code></pre>
+    <p><strong>Interview follow-up</strong>: How would you measure your cache hit ratio in production?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m22-s02-q3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q3: How do you handle long context windows that exceed your token budget?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>You apply a compression pipeline with a fallback chain of strategies. <code>SummarizationCompressor</code> keeps the most informative head and tail of the text with a middle summary; <code>KeyExtractionCompressor</code> scores sentences by importance keywords like <code>critical</code>, <code>result</code>, and <code>error</code> and keeps the highest-scoring ones; <code>SemanticCompressor</code> strips low-value lines such as <code>INFO</code>/<code>DEBUG</code> logs, redundant comments, and empty lines. If none hit the target, hard truncation of the middle is the final fallback. This is eviction (dropping low-value content) combined with compaction (condensing what remains).</p>
+    <p><strong>Interview follow-up</strong>: How do you choose between summarization and key extraction when fidelity matters?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m22-s02-q4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q4: What is context eviction vs compaction and when would you use each?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Eviction drops content outright — for example, removing old turns or low-value log lines — while compaction rewrites remaining content into a denser form, such as an LLM-generated summary or extracted key sentences. Eviction is cheap and deterministic but loses information permanently; compaction preserves the gist but costs an extra LLM call and can introduce lossy reformulation. In practice you combine them: semantic compression evicts noise first, then summarization or key extraction compacts what remains, with hard truncation as a last resort.</p>
+    <p><strong>Interview follow-up</strong>: How would you decide what conversation history is safe to evict in a multi-turn agent?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m22-s02-q5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q5: Explain the types of prompt injection and why layered defenses are required.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Injection attacks attempt to override system instructions. <code>direct</code> injection comes from the user ("Ignore previous instructions"), <code>indirect</code> injection hides in retrieved content such as documents with <code>[system]</code> tags, and <code>memory</code> injection exploits stored history. No single defense catches all types: prompt hardening catches direct attacks with regex patterns, source tagging wraps third-party content in <code>[SOURCE: ...]</code> markers and flags <code>[system]</code>-style tags, and runtime validation sanitizes input. The chapter's test harness shows the combined level blocks the most attacks, and it still recommends defense in depth over any one layer.</p>
+    <p><strong>Interview follow-up</strong>: How would you defend against injection when untrusted content is already in your retrieval store?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m22-s02-q6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q6: What does a prompt engineering ablation study measure and how do you run one?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>A prompt ablation varies one factor at a time — tone ("Do this task" vs "Please help me"), instruction format (numbered steps vs bullets), or tool description detail — and measures success rate, average tokens, and average latency across a fixed set of test tasks. The chapter's <code>PromptAblationStudy</code> evaluates each variation against tasks like "Find the capital of France" and reports results grouped by factor, sorted by success rate. This quantifies which phrasing changes matter; the takeaways note that small changes can yield 20%+ performance differences.</p>
+    <p><strong>Interview follow-up</strong>: What risks do you see in optimizing prompts against a fixed test set?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
 
 ## Chapter Quiz (5 MCQ)
 
@@ -769,7 +843,6 @@ Context engineering is the most impactful harness component. KV Cache-friendly l
 <summary>The impact of individual prompt factor variations (tone, structure, detail level) on agent success rate, token usage, and latency.</summary>
 
 ## Exercises
-
 
 ## Common Mistakes
 
@@ -812,255 +885,319 @@ Build a tool that takes a multi-turn conversation and allocates tokens across sy
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 22-advanced-ai-agents. When would you choose one approach over another?
-2. Design a system that efficiently handles 22-advanced-ai-agents at scale (millions of requests/second).
+
+1. **Explain the core idea of Context Engineering in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Context Engineering.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 22-advanced-ai-agents. What was your approach and what was the result?
-2. How would you explain 22-advanced-ai-agents to a non-technical stakeholder?
+
+4. **Describe a production bug caused by misunderstanding Context Engineering. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Context Engineering from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
-1. How does 22-advanced-ai-agents integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 22-advanced-ai-agents?
+
+6. **Compare Context Engineering with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Context Engineering.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
-1. How would you optimize 22-advanced-ai-agents for GPU-accelerated computing?
-2. What parallel processing patterns apply to 22-advanced-ai-agents?
+
+8. **How does Context Engineering behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Context Engineering run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
-1. How would you implement 22-advanced-ai-agents in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 22-advanced-ai-agents?
+
+10. **Write the smallest possible implementation of Context Engineering that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
-- **Technical Skills**: List 22-advanced-ai-agents under relevant technical skills
-- **Project Description**: "Implemented 22-advanced-ai-agents to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 22-advanced-ai-agents in your skills section for ATS optimization
+
+- Name Context Engineering explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Context Engineering").
+- Add a bullet describing a project that applies Context Engineering to real data, with numbers.
+- Mention the tools and libraries you used alongside Context Engineering (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 22-advanced-ai-agents
-- [ ] Practice 3-5 problems related to 22-advanced-ai-agents
-- [ ] Prepare 2 real-world examples of using 22-advanced-ai-agents
-- [ ] Know the time/space complexity of common 22-advanced-ai-agents operations
-- [ ] Have questions ready about how the company uses 22-advanced-ai-agentsptimally.
 
+- Rehearse a 60-second explanation of Context Engineering and one real-world analogy.
+- Prepare one STAR story about debugging a Context Engineering-related production issue.
+- Review complexity and edge cases for the classic Context Engineering interview problem.
+- Have questions ready: how does the team apply Context Engineering in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
+
+## True/False
+
+1. **True or False:** Context Engineering builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Context Engineering before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Context Engineering is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Context Engineering in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Context Engineering chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Context Engineering is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Context Engineering is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Context Engineering is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Context Engineering issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Context Engineering in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Context Engineering that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Context Engineering is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Context Engineering in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Context Engineering and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Context Engineering on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
-**Level**: Expert
-**Estimated Study Time**: 90-120 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Context Engineering to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
 
 ## Tips & Tricks
 
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
+- Always write a one-line example of Context Engineering from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Context Engineering when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Context Engineering twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Context Engineering snippets; interviewers love original examples.
 
 ## Memory Tricks
 
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
+- **Acronym**: build a mnemonic from the 5 key concepts of Context Engineering listed in the Chapter at a Glance table.
+- **Story**: link Context Engineering to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Context Engineering by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Context Engineering to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Context Engineering
+- The classic textbook chapter on Context Engineering (check the Research References below)
+- Two blog posts from engineers who debugged real Context Engineering problems in production
+- The repository of the open-source project that implements Context Engineering
 
 ## Related Topics
 
-- How this connects to Advanced AI Agents fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
+- The previous chapter in this module (see table of contents) â€” foundational for Context Engineering
+- The next chapter (see Next Topic below) â€” builds on Context Engineering
+- The system design chapters in Module 07 â€” how Context Engineering fits into production architectures
+- The interview preparation module â€” how Context Engineering is asked in screening rounds
+- The capstone project â€” where Context Engineering is applied end-to-end
 
 ## FAQs
 
-**Q: How long does it take to master context engineering?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
+1. **Do I need to memorize all of Context Engineering, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Context Engineering asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
+- Context Engineering is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Context Engineering.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
 
 ## Historical Context
 
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of context engineering helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
+- Context Engineering emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Context Engineering today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Context Engineering â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Context Engineering changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
 
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
+- Never trust external input: validate and sanitize data before processing Context Engineering.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
 
 ## ML Intuition
 
-For AI engineering, understanding context engineering at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
+- Context Engineering appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Context Engineering helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Context Engineering concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Context Engineering skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Context Engineering to a dataset of 10 million records? â€” Batching and vectorization.
 
 ## Analogies
 
-Think of context engineering like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
+- **Context Engineering is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-**Project**: Apply context engineering concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Context Engineering skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
-**Card 1**: What is the core concept of context engineering?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
+<details class="tp-qa-card" data-qid="22advancedaiagents-02contextengineering-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the core concept of Context Engineering in one sentence?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+  </div>
+</details>
 
-**Card 2**: When would you apply context engineering in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
+<details class="tp-qa-card" data-qid="22advancedaiagents-02contextengineering-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the most common mistake engineers make with 
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Common Mistakes section of this chapter.</p>
+  </div>
+</details>
 
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
+<details class="tp-qa-card" data-qid="22advancedaiagents-02contextengineering-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the time and space complexity of the standard Context Engineering approach?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Refer to the theory and complexity analysis in this chapter.</p>
+  </div>
+</details>
 
-## Study Plan
+<details class="tp-qa-card" data-qid="22advancedaiagents-02contextengineering-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    When is Context Engineering NOT the right choice?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Limitations section of this chapter.</p>
+  </div>
+</details>
 
-**Day 1**: Read theory and review examples (36 minutes)
-**Day 2**: Complete exercises and practice (36 minutes)
-**Day 3**: Review flashcards and take quiz (18 minutes)
+<details class="tp-qa-card" data-qid="22advancedaiagents-02contextengineering-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How is Context Engineering applied in a real production system?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Real-World Examples section of this chapter.</p>
+  </div>
+</details>
 
 ## Research References
 
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
+- Official documentation of the primary library for Context Engineering (linked in Further Reading)
+- The classic paper or textbook chapter introducing Context Engineering (see References below)
+- The standard library reference for Context Engineering-related functions
+- Engineering blog posts from companies running Context Engineering in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
 
 ## Open-Source Tools
 
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Context Engineering code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Context Engineering
 
 ## Debugging Guide
 
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
+- Start with `print()` or a debugger to inspect intermediate values in Context Engineering code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Context Engineering example code.
 
 ## Mock Interview Section
 
-**Quick Fire Questions**:
-1. What is the core concept of Advanced AI Agents?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
+**Round 1 â€” Screening (15 min)**
+- Explain Context Engineering in 60 seconds.
+- Write a minimal working example of Context Engineering.
+- What is the complexity of your example?
 
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
 
-## References
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Context Engineering problem in a project.
+- How would you design a system where Context Engineering is used at scale?
+- What metrics would you monitor?
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
 
-## Prompt Engineering Notes
+## Optimized Implementation
 
-- **Be Specific**: Clear, detailed prompts get better results
-- **Provide Examples**: Few-shot learning improves consistency
-- **Use Structured Output**: JSON, tables, or markdown for parsing
-- **Chain of Thought**: Break complex reasoning into steps
-- **Temperature Control**: Adjust creativity vs consistency
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Context Engineering.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Context Engineering logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Context Engineering without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
 
 ## Real-World Examples
 
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
+- **Startup**: a small team uses Context Engineering daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Context Engineering patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Context Engineering principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Context Engineering shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Context Engineering to the business outcome, not just the code.
 
 ## Next Topic
 
-After mastering Advanced AI Agents, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+[User Memory & Knowledge Bases](03-user-memory-knowledge-bases.md)
 
 ## Limitations
 
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.
+- Context Engineering, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Context Engineering depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

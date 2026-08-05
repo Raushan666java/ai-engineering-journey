@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "28 — AI Certifications Guide"
+sidebar_label: "28 — AI Certifications Guide"
+sidebar_position: 308
+---
 # 28 — AI Certifications Guide
 
 ## Overview

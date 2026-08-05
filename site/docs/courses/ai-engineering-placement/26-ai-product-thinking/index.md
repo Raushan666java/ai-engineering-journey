@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "26 — AI Product Thinking"
+sidebar_label: "26 — AI Product Thinking"
+sidebar_position: 294
+---
 # 26 — AI Product Thinking
 
 ## Overview

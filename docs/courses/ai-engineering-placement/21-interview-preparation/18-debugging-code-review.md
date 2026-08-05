@@ -1,17 +1,13 @@
 <!-- Clear Language: Keep sentences under 50 words -->
 # Debugging and Code Review
 
-
 ## Learning Objectives
 
 After this chapter you will be able to identify common bugs in TypeScript and Python code under time pressure, systematically approach debugging without a debugger, review code for correctness, performance, and style, and communicate your findings clearly during code review rounds.
 
-
 ## Introduction
 
 Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers.
-
-
 
 ## Prerequisites
 
@@ -36,15 +32,13 @@ flowchart TD
     E -->|Yes| F[Fix]
     F --> G[Verify Tests Pass]
     G --> H[Check Edge Cases]
-```text
-
+```
 
 ### Debugging Interview Format
 
 Two common formats:
 1. Given buggy code, find and fix all bugs (10-20 min). Often includes compilation errors, logic errors, and edge cases.
 2. Given a failing test, debug the production code and fix it. Tests provide the expected behavior.
-
 
 ### The Debugging Checklist
 
@@ -59,7 +53,6 @@ Systematically check these categories:
 7. **Integer overflow**: JavaScript safe integer (2^53), bitwise operations truncate to 32-bit
 8. **Floating point precision**: 0.1 + 0.2 !== 0.3, use epsilon comparison
 
-
 ### Code Review Checklist
 
 When reviewing code, evaluate:
@@ -72,7 +65,6 @@ When reviewing code, evaluate:
 6. **Error handling**: exceptions caught at right level, meaningful error messages
 7. **Concurrency**: race conditions, deadlocks, atomicity
 
-
 ### How to Communicate Findings
 
 In code review rounds, your tone matters as much as your findings:
@@ -81,12 +73,9 @@ In code review rounds, your tone matters as much as your findings:
 - Suggest specific fixes ("we can add a guard clause here")
 - Ask questions rather than dictate ("does this handle the case where x is null?")
 
-
 ## Examples
 
-
 ### Buggy Code Examples
-
 
 ### Example 1: Array Index Bug
 
@@ -101,10 +90,9 @@ function findMissingNumber(nums: number[], n: number): number {
     }
     return total
 }
-```text
+```
 
 Bug: `i <= n` includes n, but the range should be 1 to n. Fix: `i < n` or start at 1: `for (let i = 1; i <= n; i++)`.
-
 
 ### Example 2: Null Reference
 
@@ -112,10 +100,9 @@ Bug: `i <= n` includes n, but the range should be 1 to n. Fix: `i < n` or start 
 function getFirstCharacter(str: string | null): string {
     return str.charAt(0)  // Bug: str could be null, calling charAt on null throws
 }
-```text
+```
 
 Fix: `return str?.charAt(0) ?? ''` or `if (!str) return ''; return str.charAt(0);`
-
 
 ### Example 3: Mutation Bug
 
@@ -124,10 +111,9 @@ function sortAndReverse(arr: number[]): number[] {
     arr.sort((a, b) => a - b)  // Bug: sort mutates the original array
     return arr.reverse()  // Bug: also mutates
 }
-```text
+```
 
 Fix: `const copy = [...arr]; copy.sort(...); return copy.reverse();`
-
 
 ### Example 4: Floating Point Precision
 
@@ -139,10 +125,9 @@ function calculateTotal(prices: number[]): number {
     }
     return total  // Should round to 2 decimal places
 }
-```text
+```
 
 Fix: `return Math.round(total * 100) / 100;` or use integer arithmetic (cents).
-
 
 ### Example 5: Async Timing Bug
 
@@ -156,7 +141,7 @@ async function processItems(items: string[]): Promise<void> {
     // Bug: at this point, results is still empty
     saveResults(results)
 }
-```text
+```
 
 Fix: Use `for...of` with await, or `Promise.all` with map:
 ```typescript
@@ -164,8 +149,7 @@ async function processItems(items: string[]): Promise<void> {
     const results = await Promise.all(items.map((item) => processItem(item)))
     saveResults(results)
 }
-```text
-
+```
 
 ### Example 6: Type Coercion
 
@@ -181,10 +165,9 @@ function countOccurrences(arr: any[]): Record<string, number> {
     }
     return counts
 }
-```text
+```
 
 Bug: when `counts[item]` is 0 (falsy), it incorrectly sets to 1 instead of incrementing. Fix: `if (counts[item] !== undefined)`.
-
 
 ### Example 7: Closure in Loop
 
@@ -196,10 +179,9 @@ function createCallbacks(): (() => void)[] {
     }
     return callbacks
 }
-```text
+```
 
 Fix: Use `let i = 0` (block scope) or an IIFE closure.
-
 
 ### Example 8: Off-by-One in Binary Search
 
@@ -215,10 +197,9 @@ function binarySearch(arr: number[], target: number): number {
     }
     return -1  // Bug: never checks if arr[left] === target when left === right
 }
-```text
+```
 
 Fix: `while (left <= right)` or add a check after the loop for arr[left] === target.
-
 
 ### Example 9: Shared Mutable State
 
@@ -231,10 +212,9 @@ function expensiveComputation(key: string): number {
     cache.set(key, result)
     return result
 }
-```text
+```
 
 Fix: Use async/await properly and handle concurrent requests for the same key with a pending promise map.
-
 
 ### Example 10: Deep Equality
 
@@ -242,13 +222,11 @@ Fix: Use async/await properly and handle concurrent requests for the same key wi
 function areEqual(a: object, b: object): boolean {
     return a === b  // Bug: checks reference equality, not deep equality
 }
-```text
+```
 
 Fix: Implement recursive deep equality or use JSON.stringify for simple cases: `JSON.stringify(a) === JSON.stringify(b)` (does not handle all types).
 
-
 ## Code Review Simulation
-
 
 ### Review 1: API Endpoint
 
@@ -258,7 +236,7 @@ app.post('/api/users', async (req, res) => {
     const saved = await db.save(user)
     res.status(201).json(saved)
 })
-```text
+```
 
 Issues found:
 - Missing input validation (`req.body` could be malformed)
@@ -285,8 +263,7 @@ app.post('/api/users', rateLimit(100, 60000), async (req, res, next) => {
         next(error)
     }
 })
-```text
-
+```
 
 ### Review 2: File Processing
 
@@ -296,7 +273,7 @@ function processFile(filename: string): string[] {
     const lines = data.split('\\n')
     return lines.filter((l) => l.trim() !== '')
 }
-```text
+```
 
 Issues found:
 - Synchronous file reading blocks event loop for large files
@@ -307,7 +284,6 @@ Issues found:
 
 Recommended fix: use streaming or async read with encoding specified.
 
-
 ### Review 3: Database Query
 
 ```typescript
@@ -317,7 +293,7 @@ async function getOrders(userId: string): Promise<Order[]> {
     )
     return result.rows
 }
-```text
+```
 
 Fix: Use parameterized queries:
 ```typescript
@@ -327,9 +303,7 @@ async function getOrders(userId: string): Promise<Order[]> {
     )
     return result.rows
 }
-```text
-
-
+```
 
 ### Advanced Debugging Techniques
 
@@ -343,7 +317,6 @@ async function getOrders(userId: string): Promise<Order[]> {
 
 **Diff debugging**: compare broken code with a known working version. The difference is likely the bug.
 
-
 ### Common TypeScript Pitfalls
 
 1. == vs ===: always use === (strict equality). == coerces types
@@ -351,13 +324,12 @@ async function getOrders(userId: string): Promise<Order[]> {
 3. 	ypeof null === 'object': check === null explicitly
 4. NaN !== NaN: use Number.isNaN() to check
 5. Floating point: 	oFixed(2) returns a string, use Math.round(n * 100) / 100
-6. map without return: rr.map(x => x * 2) returns a new array, but if you forget the return in {}, it returns undefined
-7. ilter(Boolean) removes falsy values including 0 and empty strings
+6. map without return: arr.map(x => x * 2) returns a new array, but if you forget the return in {}, it returns undefined
+7. filter(Boolean) removes falsy values including 0 and empty strings
 8.
 educe without initial value: errors on empty arrays
 9. const does not make objects/arrays immutable
 10. Promise.all fails fast: one rejection rejects the entire promise
-
 
 ### Debugging Async Code
 
@@ -375,7 +347,6 @@ Fix: copy the variable into the closure scope or use let (block scope).
 **Promise.all error swallowing**: unhandled promise rejections are silently ignored in older Node versions.
 Fix: always add .catch to promises or use try/catch with await.
 
-
 ### Code Review Anti-Patterns
 
 What NOT to do in a code review:
@@ -387,12 +358,11 @@ What NOT to do in a code review:
 5. Rubber stamping: approving without reading is worse than being strict
 6. Personal attacks: review the code, not the person
 
-
 ### Real-World Code Review Example
 
 Reviewing a caching function:
 
-`	ypescript
+```typescript
 const cache: { [key: string]: any } = {}
 
 async function getData(url: string): Promise<any> {
@@ -404,19 +374,19 @@ async function getData(url: string): Promise<any> {
     cache[url] = data
     return data
 }
-`
+```
 
 Issues:
 1. cache[url] could be a falsy value (0, false, empty string) that gets incorrectly treated as a cache miss. Use url in cache or cache.hasOwnProperty(url).
 2. Concurrent requests for the same URL both miss the cache and fire duplicate fetches. Use a pending promise map.
 3. No error handling: if fetch fails, the cache is not populated, but the error is returned anyway.
 4. No cache invalidation: data is cached forever. Add TTL.
-5. No types: using ny loses type safety.
+5. No types: using any loses type safety.
 6. Cache is global and persists for the lifetime of the process. Could cause memory leaks.
 
 Fixed version:
 
-`	ypescript
+```typescript
 interface CacheEntry<T> {
     data: T
     expiresAt: number
@@ -451,24 +421,13 @@ async function getData<T = any>(url: string): Promise<T> {
     pendingRequests.set(url, promise)
     return promise
 }
-`
-
-
-
-## Exercises
-
-**Easy** — Implement a basic debugging code review example that demonstrates the core concept.
-
-**Medium** — Create a more complex implementation that handles edge cases.
-
-**Hard** — Design an optimized solution for large-scale debugging code review scenarios.
+```
 
 ## Summary
 
 Debugging and code review rounds test your ability to read code critically under time pressure. Use a systematic checklist: off-by-one errors,.
 null references, mutation, async timing, type coercion, edge cases. In code reviews, evaluate correctness, performance, readability, testability, security, and error handling. Communicate findings constructively: start positive,.
 state evidence, suggest specific fixes.
-
 
 ## Practical Takeaways
 
@@ -480,6 +439,91 @@ state evidence, suggest specific fixes.
 - In code reviews, look for SQL injection, unsanitized user input, hardcoded secrets
 - Always check error handling: what happens when a database call fails? When a file is missing? When an API returns 500?
 
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="m21-s18-q1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q1: What systematic checklist do you apply when debugging buggy code in an interview?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Work through categories in order: off-by-one errors (loop bounds <code>&lt;=</code> vs <code>&lt;</code>), null/undefined references, type coercion, mutation of input data, async timing (missing awaits, races), edge cases (empty, single element, negatives), integer overflow (JavaScript safe integer 2^53, bitwise 32-bit truncation), and floating point precision (0.1 + 0.2 != 0.3, use epsilon).</p>
+    <p>Process-wise: reproduce the bug, read the error trace, form a hypothesis, isolate with logs, then fix and verify tests plus edge cases. When no debugger is available, trace execution by hand — the chapter's 10 buggy examples (array index, null reference, mutation, closure-in-loop, binary search off-by-one) are the exact patterns interviewers plant.</p>
+    <p><strong>Interview follow-up</strong>: Which two bug classes do you check first in async TypeScript code?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s18-q2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q2: Find the bugs in this code: a missing-number function and a string charAt call.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>First example: <code>for (let i = 0; i &lt;= n; i++)</code> sums through n instead of 1..n, so the total includes an extra number — the fix is <code>i &lt; n</code> or <code>i = 1; i &lt;= n</code>. Second example: <code>str.charAt(0)</code> throws when <code>str</code> is null — fix with <code>str?.charAt(0) ?? ''</code> or an explicit guard.</p>
+    <p>These are the two most common planted bugs: boundary conditions and null dereferences. The pattern: for every loop ask "what happens at the first and last iteration?", and for every value that can be null ask "what happens when it is?" The chapter's debugging checklist encodes both.</p>
+    <p><strong>Interview follow-up</strong>: Is <code>arr[arr.length]</code> ever valid, and what does it return?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s18-q3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q3: Why does <code>items.forEach(async ...)</code> fail, and what is the correct pattern?
+  </summary>
+  <div class="tp-qa-answer">
+    <p><code>forEach</code> does not await its callbacks — it fires them and returns immediately, so the code after the loop runs before any processing finishes, and the results array is still empty. The chapter's Example 5 shows <code>saveResults(results)</code> running with an empty array.</p>
+    <p>Correct patterns: sequential execution with <code>for...of</code> plus <code>await</code> when order matters, or parallel with <code>Promise.all(items.map(...))</code> when it does not. Related async bugs to hunt: missing await on an async function, stale closures capturing loop variables (fix with <code>let</code>), and <code>Promise.all</code> failing fast on the first rejection.</p>
+    <p><strong>Interview follow-up</strong>: When would you choose <code>Promise.allSettled</code> over <code>Promise.all</code>?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s18-q4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q4: Explain mutation and floating point bugs, with fixes.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Mutation: <code>arr.sort()</code> and <code>arr.reverse()</code> modify the input array in place, so a function that sorts-and-reverses silently corrupts the caller's data. Fix: copy first — <code>[...arr].sort()</code>. Shared mutable state is the same class of bug: a module-level cache mutated from async code creates races.</p>
+    <p>Floating point: 0.1 + 0.2 === 0.30000000000000004, never exactly 0.3, because binary fractions cannot represent decimal tenths. Money must use integer cents or round with <code>Math.round(total * 100) / 100</code>; comparisons use an epsilon. The chapter's <code>calculateTotal</code> example demonstrates the exact failure.</p>
+    <p><strong>Interview follow-up</strong>: When is <code>JSON.stringify</code> deep equality wrong for object comparison?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s18-q5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q5: Spot the issue in <code>SELECT * FROM orders WHERE user_id = ${userId}</code> and explain the fix.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>String-interpolating <code>userId</code> into SQL creates an injection vulnerability: input like <code>1; DROP TABLE orders; --</code> executes arbitrary SQL. The chapter's Review 3 flags this as the top security finding.</p>
+    <p>Fix with parameterized queries: <code>db.query('SELECT * FROM orders WHERE user_id = $1', [userId])</code>. Parameterized statements separate data from structure, so input can never be parsed as SQL. The same review checklist catches unsanitized user input and hardcoded secrets as adjacent findings.</p>
+    <p><strong>Interview follow-up</strong>: Does escaping quotes fully protect against SQL injection? Why not?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m21-s18-q6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q6: How do you communicate code review findings so the author listens?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Tone matters as much as findings. The chapter prescribes: start with positive observations ("the overall structure is clean"), state each finding with evidence and location ("line 12 has a potential null reference when input is empty"), suggest specific fixes ("a guard clause here"), and ask questions rather than dictate ("does this handle x being null?").</p>
+    <p>Anti-patterns to avoid: nitpicking style instead of logic bugs, assuming intent, reviewing too fast (5-10 minutes per 100 lines), ignoring the absence of tests, rubber-stamping, and personal attacks — review the code, not the person.</p>
+    <p><strong>Interview follow-up</strong>: How do you escalate when the author disagrees with a critical security finding?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
 
 ## Chapter Quiz
 
@@ -519,6 +563,14 @@ state evidence, suggest specific fixes.
    // correct: C
 
 #
+
+## Exercises
+
+**Easy** — Implement a basic debugging code review example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale debugging code review scenarios.
 
 ## Common Mistakes
 
@@ -582,6 +634,39 @@ state evidence, suggest specific fixes.
 - [ ] Know the time/space complexity of common 21-interview-preparation operations
 - [ ] Have questions ready about how the company uses 21-interview-preparation handle.
 
+## True/False
+
+1. **True or False:** Debugging and Code Review builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Debugging and Code Review before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Debugging and Code Review is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Debugging and Code Review in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Debugging and Code Review chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Debugging and Code Review is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Debugging and Code Review is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Debugging and Code Review is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Debugging and Code Review issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Debugging and Code Review in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Debugging and Code Review that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Debugging and Code Review is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Debugging and Code Review in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Debugging and Code Review and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Debugging and Code Review on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -654,16 +739,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of debugging code review helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -698,27 +773,12 @@ Think of debugging code review like learning a new language — start with basic
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -744,14 +804,47 @@ When applying this topic to production, consider:
 4. Verify configuration settings
 5. Test with known-good inputs
 
-## References
+## Mock Interview Section
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+**Round 1 â€” Screening (15 min)**
+- Explain Debugging and Code Review in 60 seconds.
+- Write a minimal working example of Debugging and Code Review.
+- What is the complexity of your example?
+
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
+
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Debugging and Code Review problem in a project.
+- How would you design a system where Debugging and Code Review is used at scale?
+- What metrics would you monitor?
+
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Debugging and Code Review.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Debugging and Code Review logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 

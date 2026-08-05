@@ -64,7 +64,7 @@ flowchart LR
     D --> E[Compare Runs]
     E --> F[Sweeps & Nested Runs]
     F --> G[CI/CD Integration]
-```text
+```
 
 ## 1.1 What is Experiment Tracking
 
@@ -98,7 +98,7 @@ with mlflow.start_run(run_name="baseline-random-forest"):
 
     mlflow.sklearn.log_model(model, "model")
     print(f"Logged run with MAE={mae:.4f}")
-```text
+```
 
 **Components of an experiment run**:
 - **Run ID**: Unique identifier for the run
@@ -130,7 +130,7 @@ flowchart TB
     subgraph Registry[Registry]
         MR2[Model Registry API]
     end
-```text
+```
 
 - **Tracking Server**: HTTP server that records runs, parameters, metrics, and artifacts. Can use local filesystem, SQLite, MySQL, or PostgreSQL as backend store.
 - **Artifact Store**: Cloud storage (S3, GCS, Azure Blob) or local path for binary artifacts.
@@ -157,7 +157,7 @@ with mlflow.start_run():
     model = RandomForestRegressor(n_estimators=200)
     model.fit(X_train, y_train)
     # Everything logged automatically!
-```text
+```
 
 **Setting up the tracking server**:
 
@@ -169,7 +169,7 @@ mlflow server \
     --default-artifact-root ./artifacts \
     --host 0.0.0.0 \
     --port 5000
-```text
+```
 
 ---
 
@@ -214,7 +214,7 @@ with mlflow.start_run(run_name="with-config"):
         "split_ratio": 0.8
     }
     mlflow.log_dict(config, "config.json")
-```text
+```
 
 **Metric logging patterns**:
 
@@ -237,7 +237,7 @@ with mlflow.start_run():
         "preprocessing.scaler": "standard",
         "preprocessing.handle_missing": "mean_impute"
     })
-```text
+```
 
 ---
 
@@ -284,7 +284,7 @@ with mlflow.start_run(run_name="artifact-demo"):
     with open("summary_reports/model_card.txt", "w") as f:
         f.write("Model: RandomForest\nAccuracy: 0.95\n")
     mlflow.log_artifacts("summary_reports", artifact_path="reports")
-```text
+```
 
 **Artifact storage options**:
 
@@ -306,7 +306,7 @@ with mlflow.start_run(run_name="register-model"):
     # Register (if using registry)
     model_uri = f"runs:/{mlflow.active_run().info.run_id}/model"
     mlflow.register_model(model_uri, "HousePricePredictor")
-```text
+```
 
 ---
 
@@ -349,7 +349,7 @@ def runs_to_df(experiment_name):
 
 df = runs_to_df("house-price-prediction")
 print(df.sort_values("metric_mae").head())
-```text
+```
 
 **Using the MLflow UI for comparison**:
 
@@ -357,7 +357,7 @@ print(df.sort_values("metric_mae").head())
 
 ## Launch the UI to compare runs visually
 mlflow ui --port 5000
-```text
+```
 
 The UI provides:
 - **Parallel coordinates plot**: Visualize hyperparameter combinations and resulting metrics
@@ -377,7 +377,7 @@ def compare_experiments(run_ids_a, run_ids_b, metric="mae"):
     group_b = get_metrics(run_ids_b)
     t_stat, p_value = stats.ttest_ind(group_a, group_b)
     return {"t_statistic": t_stat, "p_value": p_value, "significant": p_value < 0.05}
-```text
+```
 
 ---
 
@@ -415,7 +415,7 @@ with mlflow.start_run(run_name="grid-search-parent") as parent_run:
             mlflow.set_tag("mlflow.parentRunId", parent_run.info.run_id)
 
 print(f"Completed {len(configs)} child runs under parent {parent_run.info.run_id}")
-```text
+```
 
 **Integration with Optuna for intelligent hyperparameter search**:
 
@@ -446,7 +446,7 @@ with mlflow.start_run(run_name="optuna-sweep"):
     mlflow.log_params(study.best_params)
     mlflow.log_metric("best_cv_mae", study.best_value)
     mlflow.log_artifact("optuna_study.pkl")
-```text
+```
 
 ---
 
@@ -494,7 +494,7 @@ Integrating experiment tracking into CI/CD pipelines ensures every model trainin
 ##             --tracking-uri ${{ secrets.MLFLOW_TRACKING_URI }} \
 
 ##             --experiment-name ${{ github.ref_name }}
-```text
+```
 
 ```python
 
@@ -538,7 +538,7 @@ with mlflow.start_run() as run:
         mlflow.set_tag("promoted", "true")
 
 print(f"CI run completed — MAE={mae:.4f}")
-```text
+```
 
 **Experiment tracking maturity levels**:
 
@@ -573,7 +573,7 @@ async function logRun(run: ExperimentRun): Promise<void> {
 }
 
 // Similar pattern for logging metrics and artifacts via REST API
-```text
+```
 
 ---
 
@@ -838,262 +838,3 @@ d) Logs environment variables
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 16-mlops-production. When would you choose one approach over another?
-2. Design a system that efficiently handles 16-mlops-production at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 16-mlops-production. What was your approach and what was the result?
-2. How would you explain 16-mlops-production to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 16-mlops-production integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 16-mlops-production?
-
-#### NVIDIA Style
-1. How would you optimize 16-mlops-production for GPU-accelerated computing?
-2. What parallel processing patterns apply to 16-mlops-production?
-
-#### AI Startup Style
-1. How would you implement 16-mlops-production in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 16-mlops-production?
-
-### Resume Tips
-- **Technical Skills**: List 16-mlops-production under relevant technical skills
-- **Project Description**: "Implemented 16-mlops-production to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 16-mlops-production in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 16-mlops-production
-- [ ] Practice 3-5 problems related to 16-mlops-production
-- [ ] Prepare 2 real-world examples of using 16-mlops-production
-- [ ] Know the time/space complexity of common 16-mlops-production operations
-- [ ] Have questions ready about how the company uses 16-mlops-production> **Next**: [02 — Prompt Versioning →](02-prompt-versioning.md)
-
-
-## Difficulty Level
-
-**Level**: Advanced
-**Estimated Study Time**: 60-90 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to MLOps & Production fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master experiment tracking?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of experiment tracking helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding experiment tracking at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of experiment tracking like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply experiment tracking concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of experiment tracking?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply experiment tracking in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (24 minutes)
-**Day 2**: Complete exercises and practice (24 minutes)
-**Day 3**: Review flashcards and take quiz (12 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of MLOps & Production?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering MLOps & Production, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Inference Workflow
-
-1. **Input Validation**: Sanitize and validate incoming requests
-2. **Preprocessing**: Transform input to model-ready format
-3. **Model Execution**: Run inference with optimized runtime
-4. **Postprocessing**: Format model output for consumption
-5. **Response**: Return results with metadata and timing
-6. **Monitoring**: Log requests, responses, and latency
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

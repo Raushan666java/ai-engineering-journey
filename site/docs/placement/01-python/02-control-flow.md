@@ -1,4 +1,4 @@
-﻿---
+---
 slug: /01-python/control-flow
 title: "Control Flow"
 sidebar_label: "Control Flow"
@@ -56,7 +56,7 @@ def example():
     return result
 
 example()
-```text
+```
 
 ### Expected Output
 
@@ -69,7 +69,8 @@ Hello, control flow!
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
 | 2.1 | Conditional Statements | if, elif, else, nested conditions, ternary operator |
-| 2.2 | For Loops | or item in iterable, ange(), enumerate(), zip() |
+| 2.2 | For Loops | or item in iterable, 
+ange(), enumerate(), zip() |
 | 2.3 | While Loops | while condition, infinite loops, sentinel patterns |
 | 2.4 | Loop Control | reak, continue, pass, else clauses on loops |
 | 2.5 | Comprehensions | list, dict, set comprehensions; generator expressions |
@@ -87,13 +88,13 @@ flowchart LR
     F --> G
     G --> H[Comprehensions]
     H --> I[Iteration Protocol]
-```text
+```
 
 ## 2.1 Conditional Statements
 
 Conditional statements direct program flow based on boolean expressions. Python uses if, elif (short for "else if"), and else blocks.
 
-`python
+```python
 
 ## Basic if-elif-else structure
 temperature = 30
@@ -108,11 +109,11 @@ else:
     print("It is cold")
 
 ## Output: It is warm
-`
+```
 
 **Truthiness in conditionals**: Python evaluates any object as True or False in a boolean context.
 
-`python
+```python
 
 ## Objects evaluated as False
 bool(0)       # False
@@ -125,11 +126,11 @@ bool(None)    # False
 ## All other objects are True
 bool(" ")     # True (non-empty string)
 bool([0])     # True (non-empty list)
-`
+```
 
 **Nested conditionals** should be kept shallow � 2 levels max. Use guard clauses to flatten:
 
-`python
+```python
 
 ## Deep nesting � hard to read
 def process_user(user):
@@ -156,11 +157,11 @@ def process_user_flat(user):
         print("Insufficient permissions")
         return
     print("Process admin action")
-`
+```
 
 **Ternary (conditional) expression**:
 
-`python
+```python
 
 ## Syntax: value_if_true if condition else value_if_false
 age = 20
@@ -171,7 +172,7 @@ print(status)  # Adult
 score = 85
 grade = "A" if score >= 90 else "B" if score >= 80 else "C" if score >= 70 else "F"
 print(grade)  # B
-`
+```
 
 ---
 
@@ -179,7 +180,7 @@ print(grade)  # B
 
 The or loop iterates over any iterable object. It is Python's primary looping construct.
 
-`python
+```python
 
 ## Iterating over a list
 fruits = ["apple", "banana", "cherry"]
@@ -198,11 +199,11 @@ for i in range(2, 10, 3):
 print()
 
 ## range(start, stop, step) � stop is exclusive
-`
+```
 
 **enumerate()** � access both index and value:
 
-`python
+```python
 colors = ["red", "green", "blue"]
 for index, color in enumerate(colors, start=1):
     print(f"{index}: {color}")
@@ -214,11 +215,11 @@ for index, color in enumerate(colors, start=1):
 ## 2: green
 
 ## 3: blue
-`
+```
 
 **zip()** � iterate multiple sequences in parallel:
 
-`python
+```python
 names = ["Alice", "Bob", "Charlie"]
 scores = [85, 92, 78]
 grades = ["A", "A", "B"]
@@ -237,11 +238,11 @@ a = [1, 2, 3]
 b = ["x", "y"]
 for pair in zip(a, b):
     print(pair)  # (1, 'x') then (2, 'y') � stops at shortest
-`
+```
 
 **Iterating dictionaries**:
 
-`python
+```python
 data = {"name": "Alice", "age": 30, "city": "London"}
 
 for key in data:                # keys by default
@@ -252,7 +253,7 @@ for value in data.values():     # values
 
 for key, value in data.items(): # key-value pairs
     print(f"{key}={value}")
-`
+```
 
 ---
 
@@ -260,7 +261,7 @@ for key, value in data.items(): # key-value pairs
 
 while loops execute as long as a condition remains True. Use them when the number of iterations is unknown.
 
-`python
+```python
 
 ## Basic while loop
 count = 0
@@ -278,11 +279,11 @@ while True:
         break
     total += float(value)
 print(f"Total: {total}")
-`
+```
 
 **Avoid infinite loops** � ensure the condition eventually becomes False:
 
-`python
+```python
 
 ## Infinite loop � CTRL+C to stop
 x = 0
@@ -302,7 +303,7 @@ def sum_to(n):
     return total
 
 print(sum_to(100))  # 5050
-`
+```
 
 ---
 
@@ -312,7 +313,7 @@ Python provides four statements to control loop execution.
 
 **reak** � exits the loop immediately:
 
-`python
+```python
 for num in range(10):
     if num == 5:
         break
@@ -327,22 +328,22 @@ for i in range(3):
             break
         print(f"({i},{j})", end=" ")
     print()
-`
+```
 
 **continue** � skips the rest of the current iteration and moves to the next:
 
-`python
+```python
 for num in range(10):
     if num % 2 == 0:
         continue  # skip even numbers
     print(num, end=" ")
 
 ## Output: 1 3 5 7 9
-`
+```
 
 **pass** � no-op placeholder for syntactically required blocks:
 
-`python
+```python
 def not_implemented_yet():
     pass  # placeholder � will implement later
 
@@ -351,11 +352,11 @@ class Placeholder:
 
 if True:
     pass  # conditional block cannot be empty
-`
+```
 
 **else on loops** � executes only if the loop completed normally (no reak):
 
-`python
+```python
 
 ## else after for � executes when no break occurred
 def find_item(items, target):
@@ -378,7 +379,7 @@ else:
     print("� loop completed without break")
 
 ## Output: 0 1 2 � loop completed without break
-`
+```
 
 ---
 
@@ -388,7 +389,7 @@ Comprehensions provide a concise syntax for creating collections from iterables.
 
 **List comprehension** � most common:
 
-`python
+```python
 
 ## Syntax: [expression for item in iterable if condition]
 
@@ -409,11 +410,11 @@ print(flat)  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 words = ["hello", "world", "python"]
 caps = [word.upper() for word in words if len(word) > 4]
 print(caps)  # ['HELLO', 'WORLD', 'PYTHON']
-`
+```
 
 **Dict comprehension**:
 
-`python
+```python
 
 ## {key_expr: value_expr for item in iterable}
 squares_dict = {x: x**2 for x in range(5)}
@@ -430,20 +431,20 @@ temperatures_f = {city: c * 9/5 + 32
                   for city, c in temperatures_c.items()
                   if c > 20}
 print(temperatures_f)  # {'New York': 71.6, 'Tokyo': 82.4}
-`
+```
 
 **Set comprehension**:
 
-`python
+```python
 
 ## {expression for item in iterable}
 unique_lengths = {len(word) for word in ["hello", "world", "python", "hi"]}
 print(unique_lengths)  # {2, 5, 6}
-`
+```
 
 **Generator expression** � memory-efficient, produces values on demand:
 
-`python
+```python
 
 ## (expression for item in iterable) � note parentheses
 import sys
@@ -457,7 +458,7 @@ print(sys.getsizeof(gen_expr))   # ~200 bytes (lazy generator)
 ## Sum of first 10 million squares (impossible with list)
 total = sum(x**2 for x in range(10_000_000))
 print(total)  # 333333283333335000000
-`
+```
 
 | Feature | List Comp | Gen Expression | Set Comp | Dict Comp |
 |---------|-----------|----------------|----------|-----------|
@@ -474,7 +475,7 @@ Every or loop in Python uses the **iteration protocol** under the hood.
 
 **The protocol**: An object is iterable if it implements __iter__(), which returns an iterator. An iterator implements __next__(), which returns the next element or raises StopIteration.
 
-`python
+```python
 
 ## Manual iteration � what for does internally
 fruits = ["apple", "banana", "cherry"]
@@ -485,11 +486,11 @@ print(next(iterator))  # banana
 print(next(iterator))  # cherry
 
 ## print(next(iterator))  # StopIteration raised
-`
+```
 
 **Building a custom iterable**:
 
-`python
+```python
 class CountDown:
     def __init__(self, start):
         self.start = start
@@ -513,11 +514,11 @@ class CountDownIterator:
 
 for num in CountDown(5):
     print(num, end=" ")  # 5 4 3 2 1 0
-`
+```
 
 **Simpler with generator** � functions using yield are generators:
 
-`python
+```python
 def count_down(start):
     while start >= 0:
         yield start
@@ -534,11 +535,11 @@ print(next(gen))  # 1
 print(next(gen))  # 0
 
 ## print(next(gen))  # StopIteration
-`
+```
 
 **itertools � advanced iteration toolkit**:
 
-`python
+```python
 from itertools import chain, cycle, product, permutations, combinations
 
 ## chain � combine iterables
@@ -569,7 +570,7 @@ print(list(permutations([1, 2, 3], 2)))
 print(list(combinations([1, 2, 3], 2)))
 
 ## [(1, 2), (1, 3), (2, 3)]
-`
+```
 
 ---
 
@@ -577,7 +578,7 @@ print(list(combinations([1, 2, 3], 2)))
 
 TypeScript uses similar control flow constructs but with C-style syntax:
 
-`	ypescript
+```typescript
 // Conditional
 const age: number = 20;
 const status: string = age >= 18 ? "Adult" : "Minor";
@@ -602,7 +603,7 @@ fruits.forEach((fruit: string, index: number) => {
 function range(n: number): number[] {
     return Array.from({ length: n }, (_, i) => i);
 }
-`
+```
 
 ---
 
@@ -700,7 +701,7 @@ total = sum(squares)  # compute on the fly</code></pre>
   </summary>
   <div class="tp-qa-answer">
     <p>The Python ternary (conditional expression) has the syntax <code>value_if_true if condition else value_if_false</code>.</p>
-    <pre><code>status = "Adult" if age >= 18 else "Minor"</code></pre>
+    <pre><code>status = "Adult" if age &gt;= 18 else "Minor"</code></pre>
     <p>This differs from C/Java/JavaScript ternary: <code>condition ? value_if_true : value_if_false</code>. Python's version reads more like natural English.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -849,13 +850,13 @@ d) StopIteration signals the end of iteration
 <details class="tp-qa-card" data-qid="p02-s02-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) A generator function returns a list</strong></p><p>A generator function returns a generator object, not a list.</p></div></details>
 
 **Q5**: What is the output of this code?
-`python
+```python
 for i in range(3):
     if i == 1:
         break
 else:
     print("done")
-`
+```
 
 a) done
 b) (nothing prints)
@@ -898,262 +899,3 @@ d)  
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 01-python-programming. When would you choose one approach over another?
-2. Design a system that efficiently handles 01-python-programming at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 01-python-programming. What was your approach and what was the result?
-2. How would you explain 01-python-programming to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 01-python-programming integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 01-python-programming?
-
-#### NVIDIA Style
-1. How would you optimize 01-python-programming for GPU-accelerated computing?
-2. What parallel processing patterns apply to 01-python-programming?
-
-#### AI Startup Style
-1. How would you implement 01-python-programming in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 01-python-programming?
-
-### Resume Tips
-- **Technical Skills**: List 01-python-programming under relevant technical skills
-- **Project Description**: "Implemented 01-python-programming to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 01-python-programming in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 01-python-programming
-- [ ] Practice 3-5 problems related to 01-python-programming
-- [ ] Prepare 2 real-world examples of using 01-python-programming
-- [ ] Know the time/space complexity of common 01-python-programming operations
-- [ ] Have questions ready about how the company uses 01-python-programming> **Next**: [03 � Strings & Formatting ?](03-strings-and-formatting.md)
-
-
-## Difficulty Level
-
-**Level**: Beginner
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Python Programming fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master control flow?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of control flow helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding control flow at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of control flow like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply control flow concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of control flow?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply control flow in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Python Programming?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Python Programming, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

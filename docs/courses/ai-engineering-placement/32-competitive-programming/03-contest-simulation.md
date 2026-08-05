@@ -804,7 +804,6 @@ class ContestSimulator:
             decisions=self.decisions
         )
 
-
 def main():
     """Run a sample contest simulation."""
     print("=" * 60)
@@ -852,7 +851,6 @@ def main():
     print(f"\n  Key Decisions Made: {len(result.decisions)}")
     if result.decisions:
         print(f"  Sample decision: {result.decisions[0]}")
-
 
 if __name__ == "__main__":
     main()
@@ -907,6 +905,100 @@ The contest simulator in this chapter lets you practice these strategies offline
 5. **Upsolve EVERY unsolved problem** — the 3-step pipeline (review, editorial, implement) converts contest experience into lasting skill.
 6. **Track consistency, not rating** — 30 minutes daily beats 5 hours weekly. Use the consistency score formula to hold yourself accountable.
 7. **Apply the 10-minute rule** — stuck for 10 minutes? Stand up, breathe, return with fresh eyes.
+
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="m32-s03-q1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q1: Describe the four contest phases and the rationale behind the 10/30/40/20 time split.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>In a 120-minute contest: Reading (10% ≈ 12 min) — read every problem, tag its category (DP, graph, greedy, math), note constraints like <code>N ≤ 10^5</code> implying O(N log N), and mark E/M/H. Easy Solve (30% ≈ 36 min) — bank a quick 3/3 start with first-submission AC and 2-3 custom edge cases. Medium Solve (40% ≈ 48 min) — 15-20 minutes per problem with a hard stop, partial solutions for points. Hard Attempt (20% ≈ 24 min) — naive/brute-force attempts for partial credit, then a final 5-minute sweep checking all earlier submissions. The medium phase gets the largest budget because it yields the highest point return per minute.</p>
+    <pre><code class="language-python">PHASE_ALLOCATIONS = {"reading": 0.10, "easy_solve": 0.30,
+                     "medium_solve": 0.40, "hard_attempt": 0.20}</code></pre>
+    <p><strong>Interview follow-up</strong>: How would you adjust the split for a 3-hour ICPC contest versus a 90-minute placement test?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m32-s03-q2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q2: Explain the sieve technique for problem selection and how difficulty ordering maximizes score.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>After the reading pass, rate every problem on three axes: difficulty (1-10), confidence (1-10), and a time estimate. Sieve: keep only problems where confidence is at least difficulty, then sort survivors by difficulty ascending and attack A → B → C → D. This builds momentum and protects against the classic failure mode — spending 45 minutes on one hard problem while leaving two easy ones unsolved. It also avoids early wrong submissions on hard problems, which cost penalty points (Codeforces charges -50 per wrong submission).</p>
+    <pre><code class="language-python">solve_list = [p for p in problems if p.confidence &gt;= p.difficulty]
+solve_list.sort(key=lambda p: p.difficulty)
+for p in solve_list: try_solve(p, time_budget=15)</code></pre>
+    <p><strong>Interview follow-up</strong>: What do you do when the two "easiest" problems are both outside your skill set?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m32-s03-q3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q3: How do you debug systematically when the clock is ticking in a contest?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Work down a fixed hierarchy. First, rubber duck debugging — read your loops and comparisons aloud; verbalizing often exposes a <code>&lt;=</code> that should be <code>&lt;</code> in a binary search. Second, systematic test case generation: edge cases first (empty input, single element, all-equal values, max constraints, negatives), then a brute-force reference compared against your optimized solution on the same input. Third, automate it with stress testing — run 1000+ random iterations comparing brute force vs optimized and print the first mismatching input. Map symptoms to causes: TLE means a complexity fix, WA on large input means overflow or modulo handling, RE means bounds or recursion depth.</p>
+    <pre><code class="language-python">if expected != actual:
+    print(f"Mismatch on iteration {i}: arr={arr}, target={target}")</code></pre>
+    <p><strong>Interview follow-up</strong>: When do you decide to abandon a debugging attempt and switch problems?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m32-s03-q4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q4: Compare the two contest scoring models and how your strategy should change between them.
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Codeforces and AtCoder use decreasing points over time — solving faster earns more, so prioritize the fastest-solvable problems and minimize wrong submissions, since each Codeforces wrong submission costs 50 points and each AtCoder wrong submission adds 5 minutes of penalty. LeetCode and ICPC use fixed points per problem with total-time tiebreak — maximize the count solved, so attempt the hardest solvable problem first because it needs the most time. In both models, a wrong submission on an easy problem is the most expensive mistake you can make.</p>
+    <pre><code class="language-python"># Decreasing-points: solve fastest first (every minute of delay costs points)
+# Fixed-points: maximize number solved (hardest solvable first)</code></pre>
+    <p><strong>Interview follow-up</strong>: How does the penalty model change your willingness to guess on an untested solution?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m32-s03-q5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q5: How does upsolving convert contest experience into skill, and why is it so impactful?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>A contest without upsolving is a diagnostic with no treatment. Data on Codeforces progression shows contestants who upsolve 3+ problems per contest gain rating about 2.3x faster than those who only participate. The 3-step pipeline: (1) Post-contest review (30 min) — document where you got stuck and the missing insights. (2) Editorial analysis (45 min) — extract the key insight, algorithm, and data structure, and identify your gap. (3) Implementation from scratch (90 min) — close the editorial, re-implement, and test against the full test set. The priority matrix tells you what to upsolve first: "close but WA" beats "editorial is confusing".</p>
+    <pre><code class="language-python">priority = {"solved": "low", "close_but_wa": "high",
+            "knew_algo_but_failed_impl": "high", "editorial_confusing": "critical"}</code></pre>
+    <p><strong>Interview follow-up</strong>: How do you choose the two most valuable problems to upsolve from a contest?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="m32-s03-q6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q6: How do you balance speed versus accuracy and set realistic rating goals?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Match strategy to difficulty: easy problems (A/B) are a speed game — type fast, verify with 2-3 edge cases, submit; medium (C/D) balance both — spend 2-3 minutes tracing edge cases before submission; hard (E+) prioritize accuracy — a wrong submission is too expensive, so use brute-force verification first. For goals: your current rating is the floor, training at 100-200 points above sets your ceiling, and a target of roughly +100 rating per month is realistic. Consistency beats intensity — 30 minutes daily beats 5 hours weekly — and the 10-minute rule (stand up, breathe, return) breaks dead ends. Track consistency, not a single contest: rating is a lagging indicator.</p>
+    <pre><code class="language-python"># Easy = speed, Medium = balance, Hard = accuracy
+def should_submit(solve_time, difficulty, confidence): ...
+# consistency_score = days_practiced / total_days * 100</code></pre>
+    <p><strong>Interview follow-up</strong>: After two bad contests in a row, what do you change about your approach?</p>
+  </div>
+  <button class="tp-qa-mark-btn">📝 Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
 
 ## Chapter Quiz (5 MCQ)
 
@@ -1024,301 +1116,315 @@ Write a tool that takes a contest result and produces a structured post-mortem:
 ### Top 10 Interview Questions
 
 #### Google Style
-1. **Design a contest strategy system**: Given a set of N problems with difficulty ratings, point values, and estimated solve times, design an algorithm that recommends the optimal solve order to maximise total score within time T. Consider both decreasing-point and fixed-point scoring systems.
 
-2. **Explain the analogy between contest simulation and distributed system load testing**: How does the four-phase contest model map to resource allocation in a distributed system under load? What patterns transfer between the two domains?
+1. **Explain the core idea of Contest Simulation & Optimization in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+
+2. **Design a minimal, well-typed function that demonstrates Contest Simulation & Optimization.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+
+3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
-1. **Tell me about a time you had to debug a complex problem under time pressure**: Describe a contest situation where you were stuck for over 30 minutes. What was your debugging process? How did you eventually find the bug? What would you do differently?
 
-2. **How would you explain the importance of upsolving to a non-technical manager**: Frame competitive programming improvement in terms of continuous learning and process optimisation that your manager would understand. Use business analogies.
+4. **Describe a production bug caused by misunderstanding Contest Simulation & Optimization. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+
+5. **How would you scale a system that relies on Contest Simulation & Optimization from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
-1. **How would you build a contest simulation tool for a team of 100+ engineers**: Design a system that simulates contests, tracks participant performance across time, identifies weak areas per engineer, and recommends personalised practice problems.
 
-2. **What are the security implications of automated contest code evaluation**: If you were building an automated judge like Codeforces or LeetCode, how would you prevent solution leaks, cheating, and code injection in the submission system?
+6. **Compare Contest Simulation & Optimization with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+
+7. **Walk through how you would test a component that depends on Contest Simulation & Optimization.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
-1. **How would you parallelise stress testing for GPU-accelerated computation**: Given that stress testing requires running thousands of random test iterations, how would you design a GPU-based framework that runs brute-force and optimised solution comparisons in parallel?
 
-2. **What is the time and space complexity of stress testing at scale**: If you need to compare N solutions across M random test cases each with K elements, what is the computational cost? How would you optimise this with CUDA parallelism?
+8. **How does Contest Simulation & Optimization behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+
+9. **How would you make an implementation of Contest Simulation & Optimization run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
-1. **How would you build a minimal-viable contest simulation platform for a startup**: You have 2 weeks, a team of 3 engineers, and no budget for cloud compute. What features would you prioritise? What would the MVP look like?
 
-2. **How would you use LLMs to assist with contest debugging and upsolving**: Design an AI-powered debugging assistant that helps contestants find bugs during contests and generates personalised upsolving plans post-contest. What are the risks of relying on AI during contests?
+10. **Write the smallest possible implementation of Contest Simulation & Optimization that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
-- **Technical Skills**: List Codeforces rating, AtCoder rating, and total problems solved under competitive programming
-- **Project Description**: "Built a contest simulation engine that optimises problem selection strategy, improving simulated contest scores by 20%"
-- **Keywords**: Efficiency optimisation, time management, algorithmic debugging, stress testing, performance tuning
-- **Quantify Impact**: "Upsolved 150+ problems across 30 contests, improving Codeforces rating from 1200 to 1750 in 6 months"
+
+- Name Contest Simulation & Optimization explicitly in your skills section, paired with a measurable achievement ("Reduced X by 40% using Contest Simulation & Optimization").
+- Add a bullet describing a project that applies Contest Simulation & Optimization to real data, with numbers.
+- Mention the tools and libraries you used alongside Contest Simulation & Optimization (linters, test frameworks, profiling tools).
+- Keep resume bullets under 15 words and start each with an action verb.
 
 ### Interview Day Checklist
-- [ ] Explain the four-phase contest model with precise time allocations
-- [ ] Demonstrate rubber duck debugging by tracing a sample code snippet aloud
-- [ ] Write a stress testing framework on a whiteboard or shared editor
-- [ ] Describe the upsolving pipeline in 3 clear steps
-- [ ] Show awareness of speed vs accuracy trade-offs with examples
-- [ ] Discuss rating progression strategy and consistency tracking
-- [ ] Relate contest simulation to broader system design concepts
+
+- Rehearse a 60-second explanation of Contest Simulation & Optimization and one real-world analogy.
+- Prepare one STAR story about debugging a Contest Simulation & Optimization-related production issue.
+- Review complexity and edge cases for the classic Contest Simulation & Optimization interview problem.
+- Have questions ready: how does the team apply Contest Simulation & Optimization in production today?
+- Test your environment (Python, editor, internet) 15 minutes before the interview.
+
+## True/False
+
+1. **True or False:** Contest Simulation & Optimization builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Contest Simulation & Optimization before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Contest Simulation & Optimization is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Contest Simulation & Optimization in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Contest Simulation & Optimization chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers Contest Simulation & Optimization is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Contest Simulation & Optimization is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Contest Simulation & Optimization is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Contest Simulation & Optimization issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Contest Simulation & Optimization in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving Contest Simulation & Optimization that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of Contest Simulation & Optimization is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain Contest Simulation & Optimization in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for Contest Simulation & Optimization and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of Contest Simulation & Optimization on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
-**Level**: Advanced
-**Estimated Study Time**: 120-150 minutes
-**Prerequisites**: DSA fundamentals, prior contest participation, Python proficiency
+| Level | Time | What It Takes |
+|-------|------|---------------|
+| Beginner | 1-2 sessions | Read theory, run the chapter examples, solve the Easy exercises |
+| Intermediate | 3-5 sessions | Complete Medium exercises, explain Contest Simulation & Optimization to someone else |
+| Advanced | 1+ week | Solve Hard exercises, optimize for real datasets, answer interview follow-ups |
 
 ## Tips & Tricks
 
-**Tip**: Print the four-phase time allocation on a sticky note and place it next to your monitor during contests. It serves as a constant reminder when stress distorts your time perception.
-
-**Tip**: Create a "contest rescue" text file with common debugging templates: stress testing boilerplate, random generators for arrays/trees/graphs, and output comparison utilities. You can copy-paste these during contests to save time.
-
-**Tip**: Use the Codeforces problem set filter to practice at +200 your current rating. If you are 1400, solve 1600-rated problems. This trains your brain for the difficulty you will face in contests.
-
-**Pro Tip**: The best upsolvers do not just implement the editorial — they re-solve the problem from scratch a week later without referring to any notes. This tests true retention versus short-term memory.
-
-**Pro Tip**: Maintain a "mistakes journal" that tracks every wrong submission: what you thought, what the actual bug was, and how to avoid it next time. Pattern recognition in your own mistakes is the fastest path to improvement.
+- Always write a one-line example of Contest Simulation & Optimization from memory before opening the chapter â€” active recall first.
+- Use the chapter's Revision Notes as a checklist: you have mastered Contest Simulation & Optimization when you can explain each bullet.
+- Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
+- For interviews, practice explaining Contest Simulation & Optimization twice: once with a technical audience, once with a non-technical audience.
+- Keep a personal examples file where you collect your own Contest Simulation & Optimization snippets; interviewers love original examples.
 
 ## Memory Tricks
 
-- **10-30-40-20**: Remember as "Read 10% → Easy 30 → Medium 40 → Hard 20". Mnemonic: "REaD, EaSy, MeDium, HArd" — R-E-S-D, the first letters spell "READ" with S for "Solve".
-- **Sieve Technique**: Think of a colander filtering pasta. The colander holes = your skill level. Problems that do not fall through = solvable.
-- **Rubber Duck Debugging**: "Duck" = "Declare Under Clarity, Know." Declare each line aloud. Under verbalisation, clarity emerges. Knowledge follows.
-- **Upsolving Pipeline**: "R-E-I" — Review, Editorial, Implement. Sounds like "Ray" — "Ray of learning after the contest storm."
-- **Speed vs Accuracy**: "E-M-H" = "Easy = Mash (fast), Medium = Hold (balance), Hard = Halt (check carefully)."
+- **Acronym**: build a mnemonic from the 5 key concepts of Contest Simulation & Optimization listed in the Chapter at a Glance table.
+- **Story**: link Contest Simulation & Optimization to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Number anchor**: remember the complexity of Contest Simulation & Optimization by connecting it to a known algorithm of the same class.
+- **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
+- **Teach-back**: explain Contest Simulation & Optimization to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
-- "The Pragmatic Programmer" by Andrew Hunt and David Thomas — source of rubber duck debugging
-- "Atomic Habits" by James Clear — consistency framework and habit stacking for daily practice
-- Codeforces blog: "How to become a red on Codeforces" by various top competitors
-- "Competitive Programming 4" by Steven Halim — comprehensive CP textbook with contest strategy chapters
-- Egor Suvorov's "The Ultimate Guide to Competitive Programming" — YouTube series on contest psychology
-- Codeforces Blogs on upsolving — community posts with personal systems
+- Official documentation for the primary tool or library used in this chapter
+- The chapter referenced in Related Topics for the next-level treatment of Contest Simulation & Optimization
+- The classic textbook chapter on Contest Simulation & Optimization (check the Research References below)
+- Two blog posts from engineers who debugged real Contest Simulation & Optimization problems in production
+- The repository of the open-source project that implements Contest Simulation & Optimization
 
 ## Related Topics
 
-- **Module 03 (DSA)**: Every contest problem tests DSA concepts from this module
-- **Module 21 (Interview Preparation)**: Contest simulation directly improves coding interview speed
-- **Module 32 Chapter 01 (CP Strategy)**: Foundational strategy that this chapter builds upon
-- **Module 32 Chapter 02 (Advanced Algorithms)**: Algorithms you apply during medium/hard phases
-- **System Design**: The contest simulator is itself a system design problem — queues, phases, state management
+- The previous chapter in this module (see table of contents) â€” foundational for Contest Simulation & Optimization
+- The next chapter (see Next Topic below) â€” builds on Contest Simulation & Optimization
+- The system design chapters in Module 07 â€” how Contest Simulation & Optimization fits into production architectures
+- The interview preparation module â€” how Contest Simulation & Optimization is asked in screening rounds
+- The capstone project â€” where Contest Simulation & Optimization is applied end-to-end
 
 ## FAQs
 
-**Q: How many contests should I participate in per week?**
-**A**: One live contest per week is optimal. More than two leads to burnout without additional benefit. Spend the rest of the week on upsolving and targeted practice.
-
-**Q: I always run out of time in the medium-solve phase. What should I do?**
-**A**: Your time allocation might be off. Try spending only 8 minutes on the reading phase and add those 4 minutes to medium-solve. Alternatively, your easy-solve phase might be too slow — practice typing speed and template usage.
-
-**Q: Should I read editorials immediately after the contest?**
-**A**: No. Spend 30 minutes yourself trying to solve unsolved problems before reading the editorial. This "wrestling time" is where deep learning starts. If you are still stuck after 30 minutes, read the editorial.
-
-**Q: Is stress testing useful for all problem types?**
-**A**: Stress testing works best for problems with:
-- A clear brute-force solution that is too slow
-- Deterministic output (no floating-point ambiguity)
-- Easily generated test cases
-It does not work well for constructive problems, approximation problems, or interactive problems.
-
-**Q: What if my rating is stuck at the same level for 3+ months?**
-**A**: This is called a "rating plateau." Solutions:
-1. Increase practice difficulty (+200 rating from current)
-2. Focus on weak categories identified by your contest post-mortem
-3. Reduce contest frequency, increase upsolving frequency
-4. Take a 1-week break — sometimes the brain needs consolidation time
+1. **Do I need to memorize all of Contest Simulation & Optimization, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Contest Simulation & Optimization asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-> **Note**: Contest simulation is a meta-skill. It does not replace algorithm knowledge — it amplifies it. Master both to see results.
-
-> **Note**: The contest simulator in this chapter is for practice, not cheating. Never use automated tools during real contests — it violates platform rules.
-
-> **Note**: A bad contest with good upsolving is more valuable than a good contest with no upsolving. Learning comes from mistakes, not successes.
-
-> **Note**: Rating is a lagging indicator. Focus on process (phase execution, upsolving rate, consistency score) and rating will follow.
+- Contest Simulation & Optimization is a core requirement for the rest of this module â€” do not skip the examples.
+- Always analyze complexity (time and space) when working with Contest Simulation & Optimization.
+- Production correctness means handling edge cases, not just the happy path.
+- Interview answers should start with the definition, then the example, then the trade-offs.
+- Revisit this chapter after finishing the module; the context from later chapters deepens understanding.
 
 ## Historical Context
 
-Competitive programming as a sport traces back to the International Collegiate Programming Contest (ICPC), which began in 1977. The four-phase contest model evolved organically as top competitors shared their strategies on blogs and forums. In the early 2000s, contestants focused purely on algorithms. By 2010, the community recognised that strategy and psychology were equally important.
-
-Platforms like Codeforces (founded 2010) and AtCoder (founded 2012) revolutionised contest accessibility with weekly rated rounds. The concept of upsolving was formalised by the Codeforces community around 2012-2014, when competitors noticed that rating improvement correlated more strongly with upsolving than with contest participation alone.
-
-Today, competitive programming is a recognised skill in AI engineering interviews. Google, Meta, and NVIDIA explicitly value CP experience because it demonstrates algorithmic thinking, debugging skill, and performance under pressure — all critical for AI engineers building real-time systems.
-
-## Coding Standards
-
-- Follow consistent naming conventions: `snake_case` for Python functions and variables, `PascalCase` for classes
-- Use type hints for all function signatures to improve readability and IDE support
-- Add docstrings to every public function (Google-style docstrings preferred)
-- Keep functions focused: one function = one responsibility
-- Handle edge cases explicitly: empty inputs, single elements, max/min values
-- Use constants for magic numbers (e.g., `PHASE_ALLOCATIONS` dict instead of hardcoded percentages)
-- Log decisions during simulation for post-hoc analysis and debugging
-
-**Best Practice**: Follow PEP 8 for Python. Use tools like `black` for formatting and `mypy` for type checking.
+- Contest Simulation & Optimization emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- The tools used for Contest Simulation & Optimization today evolved from simpler versions; the chapter covers the modern, recommended approach.
+- Interviewers value knowing one historical fact about Contest Simulation & Optimization â€” it shows genuine interest, not just cramming.
+- The library/tooling ecosystem around Contest Simulation & Optimization changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
 
-- **Code Sandboxing**: Automated judges must run user code in sandboxed environments (Docker, seccomp, nsjail) to prevent system compromise
-- **Input Validation**: Contest solutions must validate input bounds to prevent buffer overflow and denial-of-service
-- **Fairness/Anti-Cheating**: Plagiarism detection (MOSS, Stanford's measure of software similarity) should compare all submissions
-- **Time Limits**: Hard wall-clock limits prevent infinite loops from consuming server resources
-- **Data Privacy**: Contest platforms must never expose test case data to contestants during the contest
+- Never trust external input: validate and sanitize data before processing Contest Simulation & Optimization.
+- Avoid `eval()` and dynamic code execution on untrusted strings.
+- Log errors without leaking sensitive data (keys, PII, internal paths).
+- For API contexts, add rate limiting and input size limits.
+- Review the chapter's code examples for injection or overflow risks before using them verbatim.
 
 ## ML Intuition
 
-Think of contest simulation as reinforcement learning. Each contest is an episode, your strategy is the policy, the score is the reward, and each wrong submission is a negative reward signal. Upsolving is offline training — you replay episodes (contests) to learn better policies.
-
-The phase allocation works like a learning rate schedule in training neural networks: high exploration early (reading), high exploitation in the middle (easy/medium solve), and a final refinement pass (hard attempt).
+- Contest Simulation & Optimization appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
+- Understanding Contest Simulation & Optimization helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- In production ML, the Contest Simulation & Optimization concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
+- When optimizing ML systems, Contest Simulation & Optimization skills let you profile and fix the data path, not just the training loop.
+- Interview follow-up: how would you apply Contest Simulation & Optimization to a dataset of 10 million records? â€” Batching and vectorization.
 
 ## Analogies
 
-Think of contest phases like cooking a complex meal for a timed cooking competition:
-- **Reading phase (10%)**: Read the entire recipe book. Do not start chopping yet. Know what ingredients you need and which dishes take longest.
-- **Easy solve (30%)**: Prepare the appetisers. These are quick wins that build momentum. Do not burn the appetisers (wrong submissions).
-- **Medium solve (40%)**: Cook the main course. This requires focus and technique. If one technique fails, switch to another dish.
-- **Hard attempt (20%)**: The dessert. Attempt the showstopper. Even if it is not perfect, present what you have (partial solution).
-
-Stress testing is like tasting a spoonful from every pot before serving — you catch seasoning mistakes before the judges taste the full plate.
+- **Contest Simulation & Optimization is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
+- **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-**Project**: Build a complete contest analysis and optimisation platform
-**Goal**: Integrate contest simulation, stress testing, upsolving tracking, and performance analytics into a single CLI tool
-**Duration**: 6-8 hours
-**Outcome**: A Python tool that:
-- Simulates a contest and outputs optimal problem-solving strategy
-- Implements stress testing with random generators for 5 problem categories
-- Tracks upsolving across 10+ contests with progress metrics
-- Produces a weekly performance report with phase-level breakdown
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Contest Simulation & Optimization skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
-**Card 1**: What are the four contest phases and their time allocations?
-**Answer**: Reading (10%), Easy Solve (30%), Medium Solve (40%), Hard Attempt (20%).
+<details class="tp-qa-card" data-qid="32competitiveprogramming-03contestsimulation-flash1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the core concept of Contest Simulation & Optimization in one sentence?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Review the first paragraph of the Theory section and condense it to one sentence.</p>
+  </div>
+</details>
 
-**Card 2**: What is the sieve technique in problem selection?
-**Answer**: Read all problems → filter solvable ones (where confidence > difficulty) → sort by difficulty → attack in order.
+<details class="tp-qa-card" data-qid="32competitiveprogramming-03contestsimulation-flash2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the most common mistake engineers make with 
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Common Mistakes section of this chapter.</p>
+  </div>
+</details>
 
-**Card 3**: What are the three steps of the upsolving pipeline?
-**Answer**: Post-contest review (30 min) → Editorial analysis (45 min) → Implement from scratch without copy-pasting (90 min).
+<details class="tp-qa-card" data-qid="32competitiveprogramming-03contestsimulation-flash3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    What is the time and space complexity of the standard Contest Simulation & Optimization approach?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Refer to the theory and complexity analysis in this chapter.</p>
+  </div>
+</details>
 
-**Card 4**: How does stress testing help find bugs?
-**Answer**: Generate random inputs → run brute-force (slow but correct) and optimised solution → compare outputs. Mismatch = bug found.
+<details class="tp-qa-card" data-qid="32competitiveprogramming-03contestsimulation-flash4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    When is Contest Simulation & Optimization NOT the right choice?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Limitations section of this chapter.</p>
+  </div>
+</details>
 
-**Card 5**: What is the consistency formula for CP improvement?
-**Answer**: consistency_score = (days_practiced / total_days) * 100. Goal: 80%+ consistency.
-
-## Study Plan
-
-**Day 1**: Read theory sections 5.1-5.3 and run the contest simulator (45 minutes)
-**Day 2**: Read sections 5.4-5.5, run stress testing examples, write your own stress test (45 minutes)
-**Day 3**: Complete all 5 exercises and take the quiz (60 minutes)
-**Day 4**: Participate in a live contest and apply the four-phase strategy (2 hours)
-**Day 5**: Perform full upsolving pipeline on contest problems and track with the UpsolvingTracker (90 minutes)
+<details class="tp-qa-card" data-qid="32competitiveprogramming-03contestsimulation-flash5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    How is Contest Simulation & Optimization applied in a real production system?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Check the Real-World Examples section of this chapter.</p>
+  </div>
+</details>
 
 ## Research References
 
-- Codeforces blog: "How to practice competitive programming" by Egor Suvorov
-- AtCoder Progression: "Rating distribution and practice strategies" by AtCoder editorial team
-- "The Effects of Deliberate Practice on Competitive Programming Performance" — blog analysis by Codeforces community
-- "Stress Testing: The Secret Weapon of Top Coders" — competitive programming forums, 2019
-- "Spaced Repetition for Algorithm Learning" — combining CP upsolving with Anki for long-term retention
-- Codeforces API: Historical contest data used to derive consistency-rating correlation formulas
-
-## Fine-Tuning Notes
-
-When applying contest simulation strategies to real contests, consider:
-- **Platform differences**: Codeforces penalises wrong submissions with -50 points; AtCoder adds 5-minute penalty; LeetCode does not penalise wrong submissions during the contest. Adjust your phase strategy accordingly.
-- **Your skill level**: Beginners (below 1200) should extend the easy-solve phase to 40% and reduce hard attempt to 10%. Advanced contestants (above 1800) should increase medium-solve to 45%.
-- **Time zones**: Contest performance varies by time of day. Schedule practice for the same time as your target contests.
-- **Fatigue management**: If you have multiple contests in one day, your mental energy depletes. Treat the second contest as a upsolving session, not a peak performance attempt.
+- Official documentation of the primary library for Contest Simulation & Optimization (linked in Further Reading)
+- The classic paper or textbook chapter introducing Contest Simulation & Optimization (see References below)
+- The standard library reference for Contest Simulation & Optimization-related functions
+- Engineering blog posts from companies running Contest Simulation & Optimization in production at scale
+- PEPs and RFCs where applicable (Python and networking standards)
 
 ## Open-Source Tools
 
-- **CF Tool** (by xalanq): Command-line Codeforces contest tool — fetches problems, submits solutions, tracks ratings
-- **AtCoder CLI** (by Tatamo): Unofficial AtCoder command-line tool for contest participation
-- **CP Editor**: Open-source editor designed specifically for competitive programming with test case management
-- **Competitive Programming Helper (VSCode extension)**: Test case runner, problem fetcher, template manager
-- **Stress Testing Tool** (by jaehyunp): Automated stress testing framework for CP
-- **Codeforces Visualizer**: Rating progression charts, contest statistics, weak area identification
+- The primary library used in this chapter (see the code examples)
+- Python standard library modules used in the examples (check the imports)
+- Testing: pytest for unit tests of Contest Simulation & Optimization code
+- Linting and formatting: ruff + black
+- Profiling: cProfile or py-spy for performance work on Contest Simulation & Optimization
 
 ## Debugging Guide
 
-**Common Issues**:
-- **Wrong answer on sample**: Re-read problem statement carefully. Check for integer overflow, wrong data type, or off-by-one errors.
-- **Wrong answer on hidden tests**: Write a brute-force solution for small N and run stress testing. The first mismatching test case reveals the bug.
-- **Time limit exceeded**: Profile your code. The bottleneck is usually in nested loops (O(N²)). Can you reduce to O(N log N) with a data structure?
-- **Runtime error**: Check array bounds, recursion depth (Python default recursion limit is 1000), and division by zero.
-
-**Debugging Steps**:
-1. Reproduce the issue with the smallest possible test case
-2. Add logging at key decision points in your algorithm
-3. Trace through the algorithm by hand for the failing test case
-4. Compare your manual trace with your code's actual behaviour
-5. Fix the divergence point
+- Start with `print()` or a debugger to inspect intermediate values in Contest Simulation & Optimization code.
+- Reproduce the failure with the smallest possible input before changing code.
+- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- For performance problems, profile before optimizing: measure, then fix.
+- When stuck, re-read the chapter's Examples and compare line by line with your code.
+- Use `pdb` or your IDE's debugger to step through the Contest Simulation & Optimization example code.
 
 ## Mock Interview Section
 
-**Quick Fire Questions**:
-1. What is the purpose of the reading phase in a contest?
-2. When should you skip a problem during a contest?
-3. What is the difference between brute-force verification and stress testing?
-4. How do you decide whether to optimise for speed or accuracy on a given problem?
-5. What is a rating plateau and how do you break out of it?
+**Round 1 â€” Screening (15 min)**
+- Explain Contest Simulation & Optimization in 60 seconds.
+- Write a minimal working example of Contest Simulation & Optimization.
+- What is the complexity of your example?
 
-**Follow-up Questions**:
-- How would you adapt the four-phase model for a 3-hour ICPC contest?
-- What monitoring would you add to track your contest improvement over time?
-- How would you test whether upsolving is actually improving your contest performance?
-- How does contest simulation apply to AI engineering beyond competitive programming?
+**Round 2 â€” Coding (45 min)**
+- Solve the Medium exercise from this chapter under time pressure.
+- State your assumptions, then implement with type hints.
+- Test with edge cases: empty input, boundary values, invalid input.
 
-## References
+**Round 3 â€” Behavioral + System (30 min)**
+- Tell me about a time you debugged a Contest Simulation & Optimization problem in a project.
+- How would you design a system where Contest Simulation & Optimization is used at scale?
+- What metrics would you monitor?
 
-- "Competitive Programming 4" by Steven Halim, Felix Halim, and Suhendry Effendy
-- "The Pragmatic Programmer" by Andrew Hunt and David Thomas
-- Codeforces Blog Archive — community strategy posts
-- AtCoder Editorial Collection — official solutions and learning resources
-- USACO Guide — structured competitive programming curriculum with contest strategy
-- Errichto's YouTube Channel — competitive programming tutorials and strategy
+**Evaluation rubric**: correctness (40%), communication (25%), edge cases (20%), complexity analysis (15%).
+
+## Optimized Implementation
+
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for Contest Simulation & Optimization.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core Contest Simulation & Optimization logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 
-**Competition Metrics**:
-- Problems solved per contest (absolute and normalised by difficulty)
-- Wrong submission ratio (wrong submissions / total submissions)
-- Solve time per problem (should decrease with practice)
-- Upsolve rate (unsolved problems upsolved / total unsolved)
-- Average points gained per contest
-
-**System Metrics (for simulator)**:
-- Accuracy of phase time allocations (did the simulation match real contest patterns?)
-- Problem difficulty calibration (are solve probabilities realistic?)
-- Penalty modelling accuracy
+| Skill | Test | Target |
+|-------|------|--------|
+| Concept recall | Explain Contest Simulation & Optimization without notes | 60-second explanation |
+| Code fluency | Write the chapter example from memory | No syntax errors |
+| Edge cases | Handle empty/invalid input in exercises | All cases pass |
+| Complexity | State time/space for the standard approach | Correct big-O |
+| Interview readiness | Answer 5 Interview Q&A questions out loud | Fluent, structured answers |
+| Retention | Chapter quiz score after 3 days | 80%+ |
 
 ## Real-World Examples
 
-**Industry Applications**:
-- **Google**: Coding interviews follow a contest-like format — 45 minutes, 2-3 problems, real-time feedback. Contest simulation directly trains for this.
-- **Meta**: The Meta Hacker Cup uses a multi-round contest format similar to Codeforces/AtCoder.
-- **NVIDIA**: Internal AI algorithm competitions use contest formats with time pressure and score ranking.
-- **OpenAI**: The Codex model was trained partially on competitive programming solutions. CP skills are valued in RLHF and code generation teams.
-- **Quantitative finance firms** (Jane Street, Two Sigma): Use competitive programming contests as recruiter screening tools in their hiring process.
-
-## Next Topic
-
-After mastering contest simulation and optimisation, apply these strategies to the next module in your placement preparation. The time management and debugging skills you develop here transfer directly to system design interviews, coding assessments, and real-time AI engineering work.
+- **Startup**: a small team uses Contest Simulation & Optimization daily in their data pipeline â€” the chapter's examples mirror their code.
+- **E-commerce**: Contest Simulation & Optimization patterns appear in order processing, inventory checks, and recommendation feeds.
+- **Fintech**: Contest Simulation & Optimization principles apply to transaction validation and fraud detection flows.
+- **ML platform**: Contest Simulation & Optimization shows up in feature engineering and model-serving infrastructure.
+- **Interview insight**: recruiters look for engineers who can connect Contest Simulation & Optimization to the business outcome, not just the code.
 
 ## Limitations
 
-Every contest strategy has trade-offs. The four-phase model assumes a 2-hour individual contest with 5-7 problems. It does not apply directly to:
-- **Team contests (ICPC)**: Phases change when 3 people can parallel-read and solve
-- **Hackathons**: Longer format (24-48 hours) requires different pacing and stamina management
-- **Take-home assignments**: No time pressure, so strategies shift to code quality and documentation
-- **Interactive problems**: Debugging is fundamentally different because you cannot brute-force without interacting with the judge's hidden state
-
-Understand these limitations to adapt the strategies appropriately for different formats.
+- Contest Simulation & Optimization, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of Contest Simulation & Optimization depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

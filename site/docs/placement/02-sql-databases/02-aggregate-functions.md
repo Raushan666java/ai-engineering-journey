@@ -56,7 +56,7 @@ def example():
     return result
 
 example()
-```text
+```
 
 ### Expected Output
 
@@ -85,22 +85,22 @@ flowchart LR
     D --> E[HAVING filter]
     F[DISTINCT] --> G[COUNT DISTINCT]
     H[NULL behavior] -.-> A
-```text
+```
 
 ## 2.1 Basic Aggregates
 
-`sql
+```sql
 SELECT COUNT(*) FROM employees;
 SELECT COUNT(employee_id) FROM employees;  -- non-null count
 SELECT SUM(salary) AS total_payroll FROM employees;
 SELECT AVG(salary) AS average_salary FROM employees;
 SELECT MIN(salary) AS lowest, MAX(salary) AS highest FROM employees;
 SELECT COUNT(*), SUM(amount), AVG(amount), MIN(amount), MAX(amount) FROM orders;
-`
+```
 
 **Python equivalent**:
 
-`python
+```python
 data = [75000, 68000, 82000, 72000]
 print(f"Count: {len(data)}")
 print(f"Sum: {sum(data)}")
@@ -124,13 +124,13 @@ for row in cur.fetchall():
 ## Eng: avg=71500, max=75000
 
 ## Sales: avg=77000, max=82000
-`
+```
 
 ## 2.2 GROUP BY
 
 GROUP BY splits rows into groups and applies aggregate functions per group.
 
-`sql
+```sql
 -- Single column group
 SELECT department_id, COUNT(*) AS emp_count
 FROM employees
@@ -155,13 +155,13 @@ GROUP BY dept_id, job_id;
 
 -- GROUP BY without aggregate � acts like DISTINCT
 SELECT department_id FROM employees GROUP BY department_id;
-`
+```
 
 ## 2.3 HAVING
 
 HAVING filters groups after aggregation (WHERE filters rows before aggregation).
 
-`sql
+```sql
 -- Departments with more than 5 employees
 SELECT department_id, COUNT(*) AS headcount
 FROM employees
@@ -181,7 +181,7 @@ FROM employees
 WHERE hire_date > '2020-01-01'    -- filter rows first
 GROUP BY department_id
 HAVING AVG(salary) > 70000;       -- then filter groups
-`
+```
 
 **WHERE vs HAVING**:
 
@@ -190,7 +190,7 @@ HAVING AVG(salary) > 70000;       -- then filter groups
 | WHERE | Before GROUP BY | No | No |
 | HAVING | After GROUP BY | Yes | Yes (some DBs) |
 
-`python
+```python
 import pandas as pd
 df = pd.DataFrame({
     "dept": ["Eng","Eng","Sales","Sales"],
@@ -199,11 +199,11 @@ df = pd.DataFrame({
 result = df.groupby("dept").agg(avg_salary=("salary", "mean"), count=("salary", "count"))
 result = result[result["avg_salary"] > 70000]
 print(result)
-`
+```
 
 ## 2.4 DISTINCT with Aggregates
 
-`sql
+```sql
 -- Count total vs distinct
 SELECT COUNT(*) AS total, COUNT(DISTINCT department_id) AS unique_depts
 FROM employees;
@@ -219,11 +219,11 @@ SELECT SUM(DISTINCT salary) FROM employees;  -- sum of unique salaries
 -- Multi-column distinct count (not standard SQL)
 -- COUNT(DISTINCT col1, col2) � supported in PostgreSQL, SQL Server
 SELECT COUNT(DISTINCT (department_id, job_id)) FROM employees;
-`
+```
 
 ## 2.5 NULL Handling
 
-`python
+```python
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
 cur.execute("CREATE TABLE scores (name, score)")
@@ -234,9 +234,9 @@ cur.executemany("INSERT INTO scores VALUES (?,?)", [
 ## COUNT(*) includes NULL rows; COUNT(score) excludes NULLs
 cur.execute("SELECT COUNT(*), COUNT(score), AVG(score) FROM scores")
 print(cur.fetchone())  # (4, 2, 91.5) � NULLs ignored in AVG
-`
+```
 
-`sql
+```sql
 -- NULLs in aggregates
 SELECT COUNT(*) FROM scores;      -- 4 (includes all rows)
 SELECT COUNT(score) FROM scores;  -- 2 (excludes NULLs)
@@ -246,11 +246,11 @@ SELECT MIN(score) FROM scores;    -- 88
 
 -- COALESCE for default values
 SELECT AVG(COALESCE(score, 0)) FROM scores;  -- (95+0+88+0)/4 = 45.75
-`
+```
 
 ## 2.6 Multi-Aggregate Reports
 
-`sql
+```sql
 -- Comprehensive department report
 SELECT
     department_id,
@@ -276,11 +276,11 @@ SELECT
 FROM orders
 GROUP BY month
 ORDER BY month;
-`
+```
 
 ## TypeScript Parallel
 
-`	ypescript
+```typescript
 type Employee = { name: string; dept: string; salary: number };
 
 const employees: Employee[] = [
@@ -299,7 +299,7 @@ for (const [dept, salaries] of Object.entries(grouped)) {
     const avg = salaries.reduce((a, b) => a + b, 0) / salaries.length;
     console.log(${dept}: avg=, count=);
 }
-`
+```
 
 ## Summary
 
@@ -409,7 +409,7 @@ for (const [dept, salaries] of Object.entries(grouped)) {
 
 Window functions perform calculations across a set of rows related to the current row.
 
-`sql
+```sql
 -- ROW_NUMBER: sequential number within partition
 SELECT
     name,
@@ -467,11 +467,11 @@ SELECT
     name, salary,
     NTILE(4) OVER (ORDER BY salary DESC) AS salary_quartile
 FROM employees;
-`
+```
 
 ## 2.8 GROUP BY Extensions
 
-`sql
+```sql
 -- GROUPING SETS: multiple groupings in one query
 SELECT
     COALESCE(department_id, -1) AS dept,
@@ -516,11 +516,11 @@ SELECT
 FROM orders
 GROUP BY ROLLUP(year, month)
 ORDER BY year, month;
-`
+```
 
 ## 2.9 Common Mistakes
 
-`sql
+```sql
 -- Mistake 1: Using WHERE instead of HAVING for aggregate filters
 SELECT department_id, AVG(salary) AS avg_sal
 FROM employees
@@ -562,11 +562,11 @@ SELECT
     COUNT(*) FILTER (WHERE score >= 90) AS excellent,
     COUNT(*) FILTER (WHERE score >= 70) AS passing
 FROM exam_results;
-`
+```
 
 ## 2.10 Advanced Report Examples
 
-`sql
+```sql
 -- Employee demographics report
 SELECT
     department_id,
@@ -609,11 +609,11 @@ FROM sales_data
 WHERE sale_date >= DATE('now', '-1 year')
 GROUP BY category_id
 ORDER BY turnover_ratio DESC;
-`
+```
 
 ## 2.11 Performance Considerations
 
-`sql
+```sql
 -- 1. Filter before aggregating
 -- BAD: Groups all rows, then filters
 SELECT department_id, AVG(salary)
@@ -642,7 +642,7 @@ FROM employees e;
 CREATE MATERIALIZED VIEW dept_summary AS
 SELECT department_id, COUNT(*), AVG(salary), SUM(salary)
 FROM employees GROUP BY department_id;
-`
+```
 
 ---
 
@@ -664,262 +664,3 @@ FROM employees GROUP BY department_id;
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 02-sql-and-databases. When would you choose one approach over another?
-2. Design a system that efficiently handles 02-sql-and-databases at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 02-sql-and-databases. What was your approach and what was the result?
-2. How would you explain 02-sql-and-databases to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 02-sql-and-databases integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 02-sql-and-databases?
-
-#### NVIDIA Style
-1. How would you optimize 02-sql-and-databases for GPU-accelerated computing?
-2. What parallel processing patterns apply to 02-sql-and-databases?
-
-#### AI Startup Style
-1. How would you implement 02-sql-and-databases in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 02-sql-and-databases?
-
-### Resume Tips
-- **Technical Skills**: List 02-sql-and-databases under relevant technical skills
-- **Project Description**: "Implemented 02-sql-and-databases to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 02-sql-and-databases in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 02-sql-and-databases
-- [ ] Practice 3-5 problems related to 02-sql-and-databases
-- [ ] Prepare 2 real-world examples of using 02-sql-and-databases
-- [ ] Know the time/space complexity of common 02-sql-and-databases operations
-- [ ] Have questions ready about how the company uses 02-sql-and-databases> **Next**: [03 � Joins ?](03-joins.md)
-
-
-## Difficulty Level
-
-**Level**: Beginner
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to SQL & Databases fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master aggregate functions?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of aggregate functions helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding aggregate functions at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of aggregate functions like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply aggregate functions concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of aggregate functions?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply aggregate functions in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of SQL & Databases?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering SQL & Databases, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

@@ -47,7 +47,7 @@ flowchart LR
     D --> E[GitFlow]
     E --> F[Trunk-Based]
     F --> G[Conflict Resolution]
-```text
+```
 
 ## Key Terminology
 
@@ -85,7 +85,7 @@ git branch -d feature/old
 
 ## Force delete a branch (even if unmerged)
 git branch -D feature/abandoned
-```text
+```
 
 **Switching branches:**
 
@@ -102,7 +102,7 @@ git checkout feature/login
 
 ## Create and switch (legacy)
 git checkout -b feature/signup
-```text
+```
 
 **What happens when you switch branches:**
 
@@ -113,7 +113,7 @@ flowchart LR
     A[main: commit C] --> B[feature: commit D]
     B --> C[Switch to main]
     C --> D[Files revert to commit C state]
-```text
+```
 
 
 ## Overview
@@ -135,7 +135,7 @@ git merge feature/login
 ## If the feature branch is ahead of main with no divergence,
 
 ## Git simply moves the main pointer forward (fast-forward)
-```text
+```
 
 ```mermaid
 flowchart LR
@@ -145,7 +145,7 @@ flowchart LR
     subgraph After
     C[main + feature: D]
     end
-```text
+```
 
 **Three-way merge:**
 
@@ -159,14 +159,14 @@ git merge feature/login
 git merge --no-ff feature/login
 
 ## Always creates a merge commit — useful for feature branch history
-```text
+```
 
 ```mermaid
 flowchart TD
     A[main: C] --> C[merge commit: E]
     B[feature: D] --> C
     C --> F[main points to E]
-```text
+```
 
 **Merge strategies:**
 
@@ -190,7 +190,7 @@ git diff --staged
 
 ## Commit with a clean message
 git commit -m "Add user login with OAuth2"
-```text
+```
 
 
 ## Overview
@@ -210,7 +210,7 @@ git switch feature/login
 git rebase main
 
 ## This replays all feature commits on top of main's latest commit
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -220,7 +220,7 @@ flowchart TD
     subgraph After
     C[main: C] --> D[feature: D', E']
     end
-```text
+```
 
 **Interactive rebase (cleaning up history):**
 
@@ -235,7 +235,7 @@ pick def5678 Fix typo in login
 pick ghi9012 Add password validation
 pick jkl3456 Fix validation regex
 pick mno7890 Add remember me checkbox
-```text
+```
 
 **Interactive rebase commands:**
 
@@ -285,7 +285,7 @@ git rebase --skip
 
 ## Abort and return to pre-rebase state
 git rebase --abort
-```text
+```
 
 
 ## Overview
@@ -306,7 +306,7 @@ flowchart TD
     main --> hotfix[hotfix/crash-fix]
     hotfix --> main
     hotfix --> develop
-```text
+```
 
 **Branch types and roles:**
 
@@ -365,7 +365,7 @@ git merge --no-ff hotfix/crash-fix
 git switch develop
 git merge --no-ff hotfix/crash-fix
 git branch -d hotfix/crash-fix
-```text
+```
 
 
 ## Overview
@@ -397,7 +397,7 @@ git push origin fix/memory-leak
 
 ## Delete branch immediately after merge
 git branch -d fix/memory-leak
-```text
+```
 
 **Feature flags example:**
 
@@ -407,7 +407,7 @@ if (featureFlags.isEnabled('new-checkout')) {
   return <NewCheckoutFlow />;
 }
 return <LegacyCheckoutFlow />;
-```text
+```
 
 **GitFlow vs Trunk-Based comparison:**
 
@@ -464,7 +464,7 @@ git commit -m "Merge feature/new-timeout, resolve timeout conflict"
 
 ## If things go wrong, abort
 git merge --abort
-```text
+```
 
 **Using a merge tool:**
 
@@ -480,7 +480,7 @@ git mergetool
 ## After resolving, mark as resolved
 git add resolved-file.ts
 git commit
-```text
+```
 
 ## Summary
 
@@ -670,253 +670,3 @@ d) staging
 - Rebase: linear history, cleaner log
 - GitFlow: main, develop, feature, release, hotfix
 - Trunk-based: single main branch, short-lived feature branches
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of git linux cli. When would you choose one approach over another?
-2. Design a system that efficiently handles git linux cli at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to git linux cli. What was your approach and what was the result?
-2. How would you explain git linux cli to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does git linux cli integrate with enterprise systems and cloud architectures?
-2. What are the security implications of git linux cli?
-
-#### NVIDIA Style
-1. How would you optimize git linux cli for GPU-accelerated computing?
-2. What parallel processing patterns apply to git linux cli?
-
-#### AI Startup Style
-1. How would you implement git linux cli in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using git linux cli?
-
-### Resume Tips
-- **Technical Skills**: List git linux cli under relevant technical skills
-- **Project Description**: "Implemented git linux cli to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include git linux cli in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of git linux cli
-- [ ] Practice 3-5 problems related to git linux cli
-- [ ] Prepare 2 real-world examples of using git linux cli
-- [ ] Know the time/space complexity of common git linux cli operations
-- [ ] Have questions ready about how the company uses git linux cli> **Next**: [03 Git Workflow →](03-git-workflow.md)
-
-
-## Difficulty Level
-
-**Level**: Beginner
-**Estimated Study Time**: 20-30 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Git, Linux & CLI fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master git branching?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of git branching helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding git branching at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of git branching like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply git branching concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of git branching?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply git branching in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (8 minutes)
-**Day 2**: Complete exercises and practice (8 minutes)
-**Day 3**: Review flashcards and take quiz (4 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Git, Linux & CLI?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Git, Linux & CLI, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

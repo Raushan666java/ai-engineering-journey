@@ -65,7 +65,7 @@ flowchart LR
     E --> I[Construction]
     F --> I
     G --> J[LCA, Path Sum]
-```text
+```
 
 
 A binary tree is a hierarchical data structure where each node has at most two children: left and right.
@@ -100,16 +100,17 @@ def count_nodes(root):
 def height(root):
     if not root: return -1  # edge-based height
     return 1 + max(height(root.left), height(root.right))
-```text
+```
 
 ## 9.2 Tree Traversals
 
 **Preorder** (Root-Left-Right):
 
+```python
 def preorder(root):
     if not root: return []
     return [root.val] + preorder(root.left) + preorder(root.right)
-```text
+```
 
 **Inorder** (Left-Root-Right):
 
@@ -119,7 +120,7 @@ def inorder(root):
     return inorder(root.left) + [root.val] + inorder(root.right)
 
 ## Inorder of BST gives sorted order
-```text
+```
 
 **Postorder** (Left-Right-Root):
 
@@ -127,7 +128,7 @@ def inorder(root):
 def postorder(root):
     if not root: return []
     return postorder(root.left) + postorder(root.right) + [root.val]
-```text
+```
 
 **Level-order** (BFS):
 
@@ -147,7 +148,7 @@ def level_order(root):
             if node.right: queue.append(node.right)
         result.append(level)
     return result
-```text
+```
 
 ## 9.3 Recursive Tree Problems
 
@@ -157,7 +158,7 @@ def level_order(root):
 def max_depth(root):
     if not root: return 0
     return 1 + max(max_depth(root.left), max_depth(root.right))
-```text
+```
 
 **Diameter of binary tree**:
 
@@ -175,7 +176,7 @@ def diameter_of_binary_tree(root):
 
     dfs(root)
     return diameter
-```text
+```
 
 **Balanced binary tree** (height difference <= 1):
 
@@ -189,7 +190,7 @@ def is_balanced(root):
                    abs(left_h - right_h) <= 1)
         return (balanced, 1 + max(left_h, right_h))
     return dfs(root)[0]
-```text
+```
 
 ## 9.4 Iterative Traversals
 
@@ -205,7 +206,7 @@ def preorder_iterative(root):
         if node.right: stack.append(node.right)
         if node.left: stack.append(node.left)
     return result
-```text
+```
 
 **Iterative inorder**:
 
@@ -221,7 +222,7 @@ def inorder_iterative(root):
         result.append(curr.val)
         curr = curr.right
     return result
-```text
+```
 
 ## 9.5 Tree Construction
 
@@ -237,7 +238,7 @@ def build_tree(preorder, inorder):
     root.left = build_tree(preorder[1:mid+1], inorder[:mid])
     root.right = build_tree(preorder[mid+1:], inorder[mid+1:])
     return root
-```text
+```
 
 ## 9.6 Advanced Problems
 
@@ -252,7 +253,7 @@ def lowest_common_ancestor(root, p, q):
     if left and right:
         return root  # p and q in different subtrees
     return left or right
-```text
+```
 
 **Maximum path sum** (any node to any node):
 
@@ -270,7 +271,7 @@ def max_path_sum(root):
 
     dfs(root)
     return max_sum
-```text
+```
 
 **Serialize and deserialize**:
 
@@ -291,7 +292,7 @@ def deserialize(data):
         node.right = dfs()
         return node
     return dfs()
-```text
+```
 
 ---
 
@@ -322,7 +323,7 @@ function inorderTraversal(root: TreeNode | null): number[] {
     }
     return result;
 }
-```text
+```
 
 ---
 

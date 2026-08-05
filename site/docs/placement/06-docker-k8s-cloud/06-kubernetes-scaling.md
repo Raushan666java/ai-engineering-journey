@@ -5,7 +5,7 @@ sidebar_label: "Kubernetes Scaling"
 sidebar_position: 6
 ---
 
-﻿# Kubernetes Scaling � HPA, Autoscaling, and Cluster Management
+# Kubernetes Scaling � HPA, Autoscaling, and Cluster Management
 
 ## Learning Objectives
 
@@ -55,7 +55,7 @@ def example():
     return result
 
 example()
-```text
+```
 
 
 ## Overview
@@ -89,13 +89,13 @@ flowchart LR
     E --> F[Upgrades]
     F --> G[Deploy Strategies]
     G --> H[Monitoring]
-```text
+```
 
 ## 6.1 Horizontal Pod Autoscaler
 
 HPA automatically scales Pod replicas based on observed CPU, memory, or custom metrics.
 
-`yaml
+```yaml
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
@@ -127,17 +127,17 @@ spec:
         target:
           type: AverageValue
           averageValue: 1000
-`
+```
 
 **How HPA works**: The HPA controller queries the Metrics Server every 15 seconds. It calculates desired replicas as:
 
-`
+```
 desiredReplicas = ceil[currentReplicas * (currentMetricValue / desiredMetricValue)]
-`
+```
 
 **Custom metrics with Prometheus**:
 
-`yaml
+```yaml
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 spec:
@@ -153,20 +153,20 @@ spec:
         target:
           type: Value
           value: 5000
-`
+```
 
-`ash
+```bash
 kubectl apply -f hpa.yaml
 kubectl get hpa
 kubectl describe hpa api-hpa
 kubectl get hpa --watch
-`
+```
 
 ## 6.2 Cluster Autoscaler
 
 Cluster Autoscaler automatically adds or removes nodes based on pending Pods.
 
-`yaml
+```yaml
 
 ## AWS EKS Cluster Autoscaler deployment
 apiVersion: apps/v1
@@ -188,7 +188,7 @@ spec:
             - --skip-nodes-with-local-storage=false
             - --balance-similar-node-groups
             - --node-group-auto-discovery=asg:tag=k8s.io/cluster-autoscaler/enabled
-`
+```
 
 **How it works**:
 
@@ -201,11 +201,11 @@ flowchart TD
     NodeReady --> Schedule[Schedule Pods]
     Schedule --> Idle[Node Underutilized]
     Idle --> ScaleDown[Scale Down Node]
-```text
+```
 
 **Cloud provider configuration**:
 
-`ash
+```bash
 
 ## AWS
 aws autoscaling describe-auto-scaling-groups
@@ -216,21 +216,21 @@ gcloud container clusters resize my-cluster --node-pool default-pool --num-nodes
 
 ## AKS
 az aks scale --resource-group my-rg --name my-cluster --node-count 5
-`
+```
 
 **Node group sizing**: Set min/max nodes per node group. Cluster Autoscaler works within these bounds.
 
-`ash
+```bash
 eksctl create nodegroup --cluster my-cluster --name workers \
     --node-type t3.medium \
     --nodes 3 --nodes-min 1 --nodes-max 10
-`
+```
 
 ## 6.3 Vertical Pod Autoscaler
 
 VPA recommends or automatically adjusts CPU/memory requests based on historical usage.
 
-`yaml
+```yaml
 apiVersion: autoscaling.k8s.io/v1
 kind: VerticalPodAutoscaler
 metadata:
@@ -252,7 +252,7 @@ spec:
           cpu: 4
           memory: 4Gi
         controlledResources: ["cpu", "memory"]
-`
+```
 
 **Update modes**:
 
@@ -263,7 +263,7 @@ spec:
 | Auto | Update Pods during runtime (eviction) |
 | Recreate | Evict and recreate Pods with new requests |
 
-`ash
+```bash
 
 ## Install VPA
 git clone https://github.com/kubernetes/autoscaler.git
@@ -279,13 +279,13 @@ kubectl describe vpa api-vpa
 ##   cpu: 250m (lower bound: 150m, upper bound: 500m)
 
 ##   memory: 512Mi (lower bound: 256Mi, upper bound: 1Gi)
-`
+```
 
 ## 6.4 Pod Disruption Budgets
 
 PDB limits the number of Pods that can be unavailable during voluntary disruptions (node maintenance, cluster upgrades).
 
-`yaml
+```yaml
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -297,11 +297,11 @@ spec:
   selector:
     matchLabels:
       app: api
-`
+```
 
 **PDB strategies**:
 
-`yaml
+```yaml
 
 ## Critical service � always keep most available
 apiVersion: policy/v1
@@ -324,30 +324,30 @@ spec:
   selector:
     matchLabels:
       job: batch-worker
-`
+```
 
-`ash
+```bash
 kubectl apply -f pdb.yaml
 kubectl get pdb
 kubectl describe pdb api-pdb
-`
+```
 
 **When PDBs block operations**:
 
-`ash
+```bash
 
 ## If PDB prevents drain, use --disable-eviction
 kubectl drain node-1 --ignore-daemonsets --disable-eviction
 
 ## Force drain (use with caution)
 kubectl drain node-1 --ignore-daemonsets --delete-emptydir-data --force
-`
+```
 
 ## 6.5 Node Management
 
 **Taints and Tolerations**: Taints repel Pods from nodes; tolerations allow Pods to be scheduled on tainted nodes.
 
-`ash
+```bash
 
 ## Taint a node
 kubectl taint nodes node1 key=value:NoSchedule
@@ -356,9 +356,9 @@ kubectl taint nodes node1 key=value:PreferNoSchedule
 
 ## Remove taint
 kubectl taint nodes node1 key=value:NoSchedule-
-`
+```
 
-`yaml
+```yaml
 
 ## Pod toleration
 apiVersion: v1
@@ -373,11 +373,11 @@ spec:
       operator: "Exists"
       effect: "NoExecute"
       tolerationSeconds: 3600
-`
+```
 
 **Node selectors and affinity**:
 
-`yaml
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 spec:
@@ -402,11 +402,11 @@ spec:
                     operator: In
                     values:
                       - t3.large
-`
+```
 
 **Cordon, Drain, and Delete**:
 
-`ash
+```bash
 
 ## Mark node as unschedulable
 kubectl cordon node1
@@ -422,13 +422,13 @@ kubectl uncordon node1
 
 ## Delete node
 kubectl delete node node1
-`
+```
 
 ## 6.6 Cluster Upgrades
 
 **Upgrade strategy**: Upgrade control plane first, then worker nodes.
 
-`ash
+```bash
 
 ## Check current version
 kubectl version --short
@@ -445,7 +445,7 @@ gcloud container clusters upgrade my-cluster \
 
 ## AKS
 az aks upgrade --resource-group my-rg --name my-cluster --kubernetes-version 1.28
-`
+```
 
 **Node upgrade strategies**:
 
@@ -457,7 +457,7 @@ az aks upgrade --resource-group my-rg --name my-cluster --kubernetes-version 1.2
 
 **Blue-green node pools**:
 
-`ash
+```bash
 
 ## Create new node pool with updated version
 eksctl create nodegroup --cluster my-cluster --name workers-v2 \
@@ -469,32 +469,32 @@ kubectl drain workers-v1 --ignore-daemonsets
 
 ## Delete old node pool
 eksctl delete nodegroup --cluster my-cluster --name workers-v1
-`
+```
 
 ## 6.7 Deployment Strategies
 
 **Rolling update** (default):
 
-`yaml
+```yaml
 spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
       maxSurge: 25%
       maxUnavailable: 25%
-`
+```
 
 **Recreate**:
 
-`yaml
+```yaml
 spec:
   strategy:
     type: Recreate  # Kills old Pods before creating new
-`
+```
 
 **Blue-green deployment**:
 
-`yaml
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -534,11 +534,11 @@ spec:
       labels:
         app: my-app
         version: green
-`
+```
 
 **Canary deployment**:
 
-`ash
+```bash
 
 ## Deploy canary with 1 replica
 kubectl scale deployment my-app-canary --replicas=1
@@ -553,22 +553,22 @@ kubectl scale deployment my-app-stable --replicas=2
 ## Full rollout
 kubectl scale deployment my-app-canary --replicas=5
 kubectl scale deployment my-app-stable --replicas=0
-`
+```
 
 ## 6.8 Cluster Monitoring
 
 **Metrics Server** (required for HPA):
 
-`ash
+```bash
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 kubectl top nodes
 kubectl top pods
-`
+```
 
 **Prometheus and Grafana**:
 
-`ash
+```bash
 
 ## Install with Helm
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
@@ -579,16 +579,16 @@ kubectl port-forward service/prometheus-grafana 3000:80
 
 ## Access Prometheus
 kubectl port-forward service/prometheus-kube-prometheus-prometheus 9090:9090
-`
+```
 
 **Dashboard**:
 
-`ash
+```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 kubectl proxy
 
 ## Access: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
-`
+```
 
 **Key metrics to monitor**:
 
@@ -607,7 +607,7 @@ kubectl proxy
 
 TypeScript can automate scaling decisions using the Kubernetes API:
 
-`	ypescript
+```typescript
 import * as k8s from "@kubernetes/client-node";
 
 const kc = new k8s.KubeConfig();
@@ -631,7 +631,7 @@ async function createHPA(name: string, deployment: string, min: number, max: num
   };
   await autoscalingApi.createNamespacedHorizontalPodAutoscaler("default", hpa);
 }
-`
+```
 
 ---
 
@@ -867,262 +867,3 @@ d) ConfigMap
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 06-docker-kubernetes-cloud. When would you choose one approach over another?
-2. Design a system that efficiently handles 06-docker-kubernetes-cloud at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 06-docker-kubernetes-cloud. What was your approach and what was the result?
-2. How would you explain 06-docker-kubernetes-cloud to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 06-docker-kubernetes-cloud integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 06-docker-kubernetes-cloud?
-
-#### NVIDIA Style
-1. How would you optimize 06-docker-kubernetes-cloud for GPU-accelerated computing?
-2. What parallel processing patterns apply to 06-docker-kubernetes-cloud?
-
-#### AI Startup Style
-1. How would you implement 06-docker-kubernetes-cloud in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 06-docker-kubernetes-cloud?
-
-### Resume Tips
-- **Technical Skills**: List 06-docker-kubernetes-cloud under relevant technical skills
-- **Project Description**: "Implemented 06-docker-kubernetes-cloud to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 06-docker-kubernetes-cloud in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 06-docker-kubernetes-cloud
-- [ ] Practice 3-5 problems related to 06-docker-kubernetes-cloud
-- [ ] Prepare 2 real-world examples of using 06-docker-kubernetes-cloud
-- [ ] Know the time/space complexity of common 06-docker-kubernetes-cloud operations
-- [ ] Have questions ready about how the company uses 06-docker-kubernetes-cloud> **Next**: [AWS Fundamentals](07-aws-fundamentals.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Docker, Kubernetes & Cloud fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master kubernetes scaling?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of kubernetes scaling helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding kubernetes scaling at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of kubernetes scaling like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply kubernetes scaling concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of kubernetes scaling?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply kubernetes scaling in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Docker, Kubernetes & Cloud?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Docker, Kubernetes & Cloud, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Inference Workflow
-
-1. **Input Validation**: Sanitize and validate incoming requests
-2. **Preprocessing**: Transform input to model-ready format
-3. **Model Execution**: Run inference with optimized runtime
-4. **Postprocessing**: Format model output for consumption
-5. **Response**: Return results with metadata and timing
-6. **Monitoring**: Log requests, responses, and latency
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

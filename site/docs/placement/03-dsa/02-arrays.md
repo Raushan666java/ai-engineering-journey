@@ -1,11 +1,11 @@
-﻿---
+---
 slug: /03-dsa/arrays
 title: "Arrays"
 sidebar_label: "Arrays"
 sidebar_position: 2
 ---
 
-﻿# Arrays
+# Arrays
 
 ## Learning Objectives
 
@@ -63,7 +63,7 @@ flowchart LR
     D --> F
     E --> F
     F --> G[Practice Problems]
-```text
+```
 
 ## 2.1 Array Fundamentals
 
@@ -84,7 +84,7 @@ dynamic_arr = [1, 2, 3]  # Initial capacity > 3
 dynamic_arr.append(4)     # Amortized O(1)
 dynamic_arr.extend([5, 6, 7])  # May trigger resize
 print(len(dynamic_arr))   # 7
-```text
+```
 
 **Memory layout comparison**:
 
@@ -102,7 +102,7 @@ arr = [10, 20, 30, 40, 50]
 ## Linked list — nodes scattered in memory
 
 ## Access by index: must traverse nodes — O(n)
-```text
+```
 
 | Operation | Static Array | Dynamic Array (amortized) | Linked List |
 |-----------|-------------|--------------------------|-------------|
@@ -128,7 +128,7 @@ def traverse(arr):
 def traverse_bidirectional(arr):
     for i in range(len(arr) // 2):
         print(arr[i], arr[-(i + 1)])
-```text
+```
 
 **Linear search**:
 
@@ -138,7 +138,7 @@ def linear_search(arr, target):
         if val == target:
             return i
     return -1
-```text
+```
 
 **Insertion at position**:
 
@@ -154,7 +154,7 @@ def insert_at(arr, index, value):
 ## Better: use list.insert
 arr = [1, 2, 4, 5]
 arr.insert(2, 3)  # [1, 2, 3, 4, 5]
-```text
+```
 
 **Deletion at position**:
 
@@ -169,7 +169,7 @@ def delete_at(arr, index):
 ## Better: use list.pop
 arr = [1, 2, 3, 4, 5]
 arr.pop(2)  # [1, 2, 4, 5]
-```text
+```
 
 **Reverse an array**:
 
@@ -186,7 +186,7 @@ def reverse_array(arr):
 arr = [1, 2, 3, 4, 5]
 reversed_arr = arr[::-1]  # Creates new array
 arr.reverse()             # In-place
-```text
+```
 
 ---
 
@@ -212,7 +212,7 @@ def range_sum(pref, L, R):
 
 print(range_sum(pref, 2, 5))  # 4 + 1 + 5 + 9 = 19
 print(range_sum(pref, 0, 3))  # 3 + 1 + 4 + 1 = 9
-```text
+```
 
 **Subarray sum equals k**: Count subarrays whose sum equals k.
 
@@ -234,7 +234,7 @@ def subarray_sum_equals_k(arr, k):
 
 ## Example: [1, 1, 1], k=2 → 2
 print(subarray_sum_equals_k([1, 1, 1], 2))  # 2
-```text
+```
 
 **Two-dimensional prefix sum**: Efficient rectangle sum queries.
 
@@ -266,7 +266,7 @@ matrix = [
 ]
 pref = prefix_sum_2d(matrix)
 print(rectangle_sum(pref, 1, 1, 2, 2))  # 5+6+8+9 = 28
-```text
+```
 
 ---
 
@@ -290,7 +290,7 @@ def two_sum_sorted(arr, target):
     return [-1, -1]
 
 print(two_sum_sorted([2, 7, 11, 15], 9))  # [0, 1]
-```text
+```
 
 **Remove duplicates from sorted array**:
 
@@ -308,7 +308,7 @@ def remove_duplicates(arr):
 arr = [1, 1, 2, 2, 3, 4, 4, 5]
 new_len = remove_duplicates(arr)
 print(arr[:new_len])  # [1, 2, 3, 4, 5]
-```text
+```
 
 **Container with most water**:
 
@@ -327,7 +327,7 @@ def max_area(heights):
     return max_water
 
 print(max_area([1, 8, 6, 2, 5, 4, 8, 3, 7]))  # 49
-```text
+```
 
 **Trapping rain water**:
 
@@ -355,7 +355,7 @@ def trap_rain_water(heights):
     return water
 
 print(trap_rain_water([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))  # 6
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -364,7 +364,7 @@ flowchart TD
         B[Same Direction] -->|"Remove Duplicates"| E[Fast & Slow]
         C[Fast & Slow] -->|"Cycle Detection"| F[Linked List]
     end
-```text
+```
 
 ---
 
@@ -391,7 +391,7 @@ def reverse(arr, left, right):
         right -= 1
 
 print(rotate_right([1, 2, 3, 4, 5], 2))  # [4, 5, 1, 2, 3]
-```text
+```
 
 **Move zeros to end**:
 
@@ -405,7 +405,7 @@ def move_zeros(arr):
     return arr
 
 print(move_zeros([0, 1, 0, 3, 12]))  # [1, 3, 12, 0, 0]
-```text
+```
 
 **Dutch national flag problem** (sort 0, 1, 2):
 
@@ -425,7 +425,7 @@ def sort_colors(arr):
     return arr
 
 print(sort_colors([2, 0, 2, 1, 1, 0]))  # [0, 0, 1, 1, 2, 2]
-```text
+```
 
 **Find the first missing positive integer**:
 
@@ -446,7 +446,7 @@ def first_missing_positive(arr):
 
 print(first_missing_positive([3, 4, -1, 1]))  # 2
 print(first_missing_positive([7, 8, 9, 11, 12]))  # 1
-```text
+```
 
 ---
 
@@ -465,7 +465,7 @@ def transpose(matrix):
 
 matrix = [[1, 2, 3], [4, 5, 6]]
 print(transpose(matrix))  # [[1, 4], [2, 5], [3, 6]]
-```text
+```
 
 **Spiral matrix traversal**:
 
@@ -500,7 +500,7 @@ def spiral_order(matrix):
 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(spiral_order(matrix))  # [1, 2, 3, 6, 9, 8, 7, 4, 5]
-```text
+```
 
 **Rotate image** (90 degrees clockwise):
 
@@ -518,7 +518,7 @@ def rotate_image(matrix):
 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(rotate_image(matrix))  # [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
-```text
+```
 
 **Set matrix zeros**: If an element is 0, set its entire row and column to 0.
 
@@ -558,7 +558,7 @@ def set_zeroes(matrix):
 
 matrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
 print(set_zeroes(matrix))  # [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
-```text
+```
 
 ```mermaid
 flowchart TD
@@ -570,7 +570,7 @@ flowchart TD
         E --> G
         F --> G
     end
-```text
+```
 
 ---
 
@@ -601,7 +601,7 @@ function prefixSum(arr: number[]): number[] {
     }
     return pref;
 }
-```text
+```
 
 ---
 
@@ -639,7 +639,7 @@ function prefixSum(arr: number[]): number[] {
   <div class="tp-qa-answer">
     <pre><code>def reverse(arr):
     left, right = 0, len(arr) - 1
-    while left < right:
+    while left &lt; right:
         arr[left], arr[right] = arr[right], arr[left]
         left += 1
         right -= 1</code></pre>
@@ -684,7 +684,7 @@ rect_sum(r1,c1,r2,c2) = pref[r2+1][c2+1]
     low = mid = 0
     high = len(arr) - 1
 
-    while mid <= high:
+    while mid &lt;= high:
         if arr[mid] == 0:
             arr[low], arr[mid] = arr[mid], arr[low]
             low += 1
@@ -712,10 +712,10 @@ rect_sum(r1,c1,r2,c2) = pref[r2+1][c2+1]
     <pre><code>def max_area(heights):
     left, right = 0, len(heights) - 1
     max_water = 0
-    while left < right:
+    while left &lt; right:
         water = (right - left) * min(heights[left], heights[right])
         max_water = max(max_water, water)
-        if heights[left] < heights[right]:
+        if heights[left] &lt; heights[right]:
             left += 1
         else:
             right -= 1
@@ -742,7 +742,7 @@ rect_sum(r1,c1,r2,c2) = pref[r2+1][c2+1]
     reverse(arr, k, n - 1)    # Reverse the rest
 
 def reverse(arr, left, right):
-    while left < right:
+    while left &lt; right:
         arr[left], arr[right] = arr[right], arr[left]
         left += 1
         right -= 1</code></pre>
@@ -767,15 +767,15 @@ def reverse(arr, left, right):
     left_max = right_max = 0
     water = 0
 
-    while left < right:
-        if heights[left] < heights[right]:
-            if heights[left] >= left_max:
+    while left &lt; right:
+        if heights[left] &lt; heights[right]:
+            if heights[left] &gt;= left_max:
                 left_max = heights[left]
             else:
                 water += left_max - heights[left]
             left += 1
         else:
-            if heights[right] >= right_max:
+            if heights[right] &gt;= right_max:
                 right_max = heights[right]
             else:
                 water += right_max - heights[right]
@@ -800,7 +800,7 @@ def reverse(arr, left, right):
     n = len(arr)
     # Place each number at its correct index
     for i in range(n):
-        while 1 <= arr[i] <= n and arr[arr[i] - 1] != arr[i]:
+        while 1 &lt;= arr[i] &lt;= n and arr[arr[i] - 1] != arr[i]:
             correct = arr[i] - 1
             arr[i], arr[correct] = arr[correct], arr[i]
 
@@ -829,7 +829,7 @@ def reverse(arr, left, right):
     top, bottom = 0, len(matrix) - 1
     left, right = 0, len(matrix[0]) - 1
 
-    while top <= bottom and left <= right:
+    while top &lt;= bottom and left &lt;= right:
         # Left to right on top row
         for j in range(left, right + 1):
             result.append(matrix[top][j])
@@ -841,13 +841,13 @@ def reverse(arr, left, right):
         right -= 1
 
         # Right to left on bottom row
-        if top <= bottom:
+        if top &lt;= bottom:
             for j in range(right, left - 1, -1):
                 result.append(matrix[bottom][j])
             bottom -= 1
 
         # Bottom to top on left column
-        if left <= right:
+        if left &lt;= right:
             for i in range(bottom, top - 1, -1):
                 result.append(matrix[i][left])
             left += 1
@@ -974,8 +974,8 @@ list_arr = [1, "hello", 3.14, None]</code></pre>
     <pre><code>def merge_sorted(arr1, arr2):
     result = []
     i = j = 0
-    while i < len(arr1) and j < len(arr2):
-        if arr1[i] <= arr2[j]:
+    while i &lt; len(arr1) and j &lt; len(arr2):
+        if arr1[i] &lt;= arr2[j]:
             result.append(arr1[i])
             i += 1
         else:
@@ -1070,262 +1070,3 @@ d) O(n²)
 - Two-pointer technique for sorted arrays
 - Sliding window for subarray problems
 - Prefix sums for range queries
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
-2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
-2. How would you explain data structures algorithms to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
-2. What are the security implications of data structures algorithms?
-
-#### NVIDIA Style
-1. How would you optimize data structures algorithms for GPU-accelerated computing?
-2. What parallel processing patterns apply to data structures algorithms?
-
-#### AI Startup Style
-1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using data structures algorithms?
-
-### Resume Tips
-- **Technical Skills**: List data structures algorithms under relevant technical skills
-- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of data structures algorithms
-- [ ] Practice 3-5 problems related to data structures algorithms
-- [ ] Prepare 2 real-world examples of using data structures algorithms
-- [ ] Know the time/space complexity of common data structures algorithms operations
-- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [03 — Strings →](03-strings.md)
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Data Structures & Algorithms fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master arrays?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of arrays helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding arrays at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of arrays like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply arrays concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of arrays?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply arrays in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Data Structures & Algorithms?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Data Structures & Algorithms, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

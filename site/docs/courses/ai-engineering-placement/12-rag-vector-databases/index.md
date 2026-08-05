@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "12 — RAG & Vector Databases"
+sidebar_label: "12 — RAG & Vector Databases"
+sidebar_position: 161
+---
 # 12 — RAG & Vector Databases
 
 ## Overview

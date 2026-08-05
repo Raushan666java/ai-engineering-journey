@@ -1,3 +1,10 @@
+---
+id: index
+slug: /ai-engineering-placement
+title: "17 — AI Security & Guardrails"
+sidebar_label: "17 — AI Security & Guardrails"
+sidebar_position: 208
+---
 # 17 — AI Security & Guardrails
 
 ## Overview

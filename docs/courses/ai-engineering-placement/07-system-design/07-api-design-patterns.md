@@ -1,5 +1,5 @@
 <!-- Clear Language: Keep sentences under 50 words -->
-# API Design Patterns â€” REST, GraphQL, gRPC, Webhooks
+# API Design Patterns — REST, GraphQL, gRPC, Webhooks
 
 ## Learning Objectives
 
@@ -16,9 +16,6 @@
 
 System design interviews test your ability to architect large-scale systems. Caching, load balancing, message queues, and database sharding are patterns you will apply daily. This module prepares you for both interviews and production.
 
-
-
-
 ## Prerequisites
 
 - Basic programming knowledge
@@ -33,8 +30,6 @@ System design interviews test your ability to architect large-scale systems. Cac
 ## Theory
 
 Understanding api design patterns is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how api design patterns works in practice.
-
-
 
 ## Chapter at a Glance
 
@@ -57,6 +52,7 @@ flowchart LR
     B -->|gRPC| E[Protocol Buffers over HTTP/2]
     B -->|Webhook| F[Server pushes to Callback URL]
 
+```
 ## 7.1 RESTful API Design
 
 REST (Representational State Transfer) uses resources identified by URLs and manipulated via standard HTTP methods. Each resource has a unique URL, a representation format (typically JSON), and supports GET, POST, PUT, PATCH, DELETE operations.
@@ -70,7 +66,7 @@ app.get("/api/v1/users/:id", async (req, res) => {
   if (!user) return res.status(404).json({ error: "not_found" });
   res.json(user);
 });
-```text
+```
 
 **HTTP status codes**: 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found), 409 (Conflict), 422 (Validation Error), 429 (Rate Limited), 500 (Server Error). Use consistent error response format with machine-readable error codes.
 
@@ -100,7 +96,7 @@ const resolvers = {
   Query: { user: (_, { id }) => userLoader.load(id) },
   Post: { author: (post) => userLoader.load(post.authorId) },
 };
-```text
+```
 
 **N+1 problem**: DataLoader batches individual loads into a single query per request tick, solving the N+1 problem where fetching N posts and their authors would otherwise require N+1 queries.
 
@@ -124,7 +120,7 @@ service UserService {
 message User { string id = 1; string name = 2; string email = 3; }
 message GetUserRequest { string id = 1; }
 message ChatMessage { string user_id = 1; string room_id = 2; string content = 3; }
-```text
+```
 
 **Advantages**: Binary serialization (3-10x faster than JSON), strong typing with code generation, native streaming support, HTTP/2 multiplexing and header compression.
 
@@ -170,7 +166,7 @@ class WebhookDelivery {
       .digest("hex");
   }
 }
-```text
+```
 
 **Best practices**: HMAC signature verification, HTTPS-only endpoints, idempotency keys for deduplication, exponential backoff with dead-letter queue after exhausting retries.
 
@@ -205,7 +201,7 @@ class VersioningMiddleware {
     };
   }
 }
-```text
+```
 
 **Recommendation**: URL path versioning for public APIs (explicit, easy to route, cache-friendly). Support at least two versions simultaneously with deprecation headers (Sunset, Deprecation).
 
@@ -234,7 +230,7 @@ function generateOpenAPISpec() {
     },
   };
 }
-```text
+```
 
 **API gateways** (Kong, Envoy, AWS API Gateway): centralize rate limiting, authentication, routing, logging, and monitoring at a single entry point.
 
@@ -263,7 +259,7 @@ class APIClient {
     return data;
   }
 }
-```text
+```
 
 ---
 
@@ -301,8 +297,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p><strong>REST</strong> is resource-oriented with multiple endpoints. Best for simple CRUD, public APIs, when caching is important (URLs are cache keys). <strong>GraphQL</strong> has a single endpoint with client-specified fields. Best for complex data graphs (dashboards, social feeds), mobile APIs (bandwidth constrained), when client data requirements vary significantly. Use REST for stability and simplicity; use GraphQL when clients need flexible data shapes.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q2">
@@ -313,8 +309,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p>Use <strong>DataLoader</strong> which batches individual loads within a request tick and caches results. Instead of loading each post's author separately, DataLoader collects all author IDs, dispatches a single batched query, and distributes results. Also consider: look-ahead patterns to eagerly load related data, query complexity analysis to reject expensive queries, and field-level resolvers with DataLoader.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q3">
@@ -325,8 +321,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p><strong>1)</strong> Protocol Buffers are 3-10x faster than JSON with smaller payloads. <strong>2)</strong> HTTP/2 multiplexing and header compression reduce overhead. <strong>3)</strong> Strong typing with code generation across multiple languages. <strong>4)</strong> Native streaming support (4 patterns). <strong>5)</strong> Built-in deadline/timeout propagation. Trade-offs: browser support requires gRPC-Web proxy, less human-readable debugging, smaller ecosystem compared to REST.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q4">
@@ -337,8 +333,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p><strong>1)</strong> Persistent delivery queue (Redis, SQS) with at-least-once delivery. <strong>2)</strong> Exponential backoff retry: 1s, 5s, 15s, 1m, 5m, then dead-letter. <strong>3)</strong> HMAC signature for payload verification. <strong>4)</strong> Idempotency key for deduplication. <strong>5)</strong> Circuit breaker for failing consumers. <strong>6)</strong> Monitoring on delivery success rate and dead-letter queue size.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q5">
@@ -349,8 +345,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p>URL path versioning (/api/v1/) is the most pragmatic. It's explicit, easy to route, and cache-friendly. Support at least the current plus previous version simultaneously. Communicate deprecation via Sunset and Deprecation HTTP headers with a minimum 6-month migration window. Avoid query-parameter versioning (pollutes caching). Use header-based versioning only if you need the cleanest URLs.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q6">
@@ -361,8 +357,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p>HATEOAS (Hypermedia as the Engine of Application State) means API responses include links to related operations, allowing clients to navigate dynamically. Example: a user response includes links to their orders and profile edit. Pros: self-documenting, decouples clients from URL structure, enables API evolution. Cons: increases payload size, complex to implement, few clients use the links dynamically. Valuable for public APIs with diverse clients; optional for internal microservices.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q7">
@@ -373,8 +369,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p><strong>Cursor-based</strong> (recommended for most cases): GET /api/users?cursor=eyJpZCI6IDQyfQ==&limit=20. Consistent even when data changes. <strong>Offset-based</strong>: simple but inconsistent when items are inserted between pages. <strong>Keyset-based</strong>: filter by last seen value (?after_id=42). Best for immutable ordering (created_at). Always include next_cursor and has_more in responses.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q8">
@@ -385,8 +381,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p>An API gateway centralizes: <strong>1)</strong> Request routing to appropriate services. <strong>2)</strong> Authentication (JWT, OAuth, API keys). <strong>3)</strong> Rate limiting per client. <strong>4)</strong> Load balancing across instances. <strong>5)</strong> Response caching. <strong>6)</strong> Request/response transformation. <strong>7)</strong> Centralized logging and metrics. <strong>8)</strong> Circuit breaking. Popular gateways: Kong, Envoy, AWS API Gateway, NGINX Plus, Traefik.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q9">
@@ -397,8 +393,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p><strong>PUT</strong>: Full resource replacement. The client sends the complete resource; missing fields are set to null/default. Idempotent. <strong>PATCH</strong>: Partial update. The client sends only the fields to change. Not necessarily idempotent. Use PATCH for partial updates to avoid sending the entire resource and to prevent accidentally clearing fields. Example: updating just email: PATCH /users/42 with {"email": "new@example.com"}.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="sd07-q10">
@@ -409,8 +405,8 @@ class APIClient {
   <div class="tp-qa-answer">
     <p>Consistent error format across all endpoints. Use standard HTTP status codes for the category, detailed errors in the body. Format: {"error": {"code": "validation_error", "message": "Invalid input", "details": [{"field": "email", "reason": "invalid_format"}], "request_id": "req_abc123"}}. Include: machine-readable error code, human-readable message, request ID for debugging, validation details for field errors. Never expose stack traces or internal implementation details.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 ## Chapter Quiz
@@ -462,17 +458,17 @@ d) Content negotiation
 
 ## Exercises
 
-**Easy** â€” Design REST endpoints for a blog platform with users, posts, and comments. Define HTTP methods, URL patterns, and response formats.
+**Easy** — Design REST endpoints for a blog platform with users, posts, and comments. Define HTTP methods, URL patterns, and response formats.
 
-**Easy** â€” Write an OpenAPI 3.0 specification for a todos CRUD API with create, read, update, and delete operations.
+**Easy** — Write an OpenAPI 3.0 specification for a todos CRUD API with create, read, update, and delete operations.
 
-**Medium** â€” Implement a DataLoader in TypeScript that batches 100 individual user lookups into a single batched database query. Include request-scoped caching.
+**Medium** — Implement a DataLoader in TypeScript that batches 100 individual user lookups into a single batched database query. Include request-scoped caching.
 
-**Medium** â€” Build a webhook delivery system with HMAC signing, exponential backoff retry (max 5 attempts), and a dead-letter queue for failed deliveries.
+**Medium** — Build a webhook delivery system with HMAC signing, exponential backoff retry (max 5 attempts), and a dead-letter queue for failed deliveries.
 
-**Hard** â€” Implement a GraphQL-like query resolver that takes a nested field selection string and automatically resolves it using a schema of resolvers with DataLoader integration for batching.
+**Hard** — Implement a GraphQL-like query resolver that takes a nested field selection string and automatically resolves it using a schema of resolvers with DataLoader integration for batching.
 
-**Hard** â€” Design and implement a gRPC service definition in Protocol Buffers for a real-time chat application with bidirectional streaming, chat rooms, and typing indicators.
+**Hard** — Design and implement a gRPC service definition in Protocol Buffers for a real-time chat application with bidirectional streaming, chat rooms, and typing indicators.
 
 ## API Security Patterns
 
@@ -508,7 +504,7 @@ function rateLimit(maxRequests: number, windowMs: number) {
     next();
   };
 }
-```text
+```
 
 ## GraphQL Subscriptions and Real-Time
 
@@ -539,7 +535,7 @@ const resolvers = {
 function publishOrderUpdate(order: Order) {
   pubsub.publish(`ORDER_UPDATED_${order.id}`, { orderUpdated: order });
 }
-```text
+```
 
 ## API Design Anti-Patterns
 
@@ -604,10 +600,9 @@ class TokenBucket {
     this.lastRefill = now;
   }
 }
-```text
+```
 
 ---
-
 
 ## Common Mistakes
 
@@ -663,6 +658,39 @@ class TokenBucket {
 - [ ] Know the time/space complexity of common 07-system-design operations
 - [ ] Have questions ready about how the company uses 07-system-design> **Next**: [Rate Limiting & Idempotency](08-rate-limiting-and-idempotency.md)
 
+## True/False
+
+1. **True or False:** API Design Patterns — REST, GraphQL, gRPC, Webhooks builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for API Design Patterns — REST, GraphQL, gRPC, Webhooks before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for API Design Patterns — REST, GraphQL, gRPC, Webhooks is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for API Design Patterns — REST, GraphQL, gRPC, Webhooks in production. â€” **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the API Design Patterns — REST, GraphQL, gRPC, Webhooks chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+
+## Fill in the Blank
+
+1. The chapter that covers API Design Patterns — REST, GraphQL, gRPC, Webhooks is Chapter ___ of this module. â€” Answer: check the module's table of contents.
+2. The time complexity of the standard approach to API Design Patterns — REST, GraphQL, gRPC, Webhooks is ___. â€” Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing API Design Patterns — REST, GraphQL, gRPC, Webhooks is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug API Design Patterns — REST, GraphQL, gRPC, Webhooks issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to API Design Patterns — REST, GraphQL, gRPC, Webhooks in the next chapter is ___. â€” Answer: see the Next Topic section.
+
+## Scenario Questions
+
+1. **Scenario:** A teammate ships a change involving API Design Patterns — REST, GraphQL, gRPC, Webhooks that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+
+2. **Scenario:** Your implementation of API Design Patterns — REST, GraphQL, gRPC, Webhooks is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+
+3. **Scenario:** A new hire asks you to explain API Design Patterns — REST, GraphQL, gRPC, Webhooks in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+
+4. **Scenario:** Your team's codebase has three different patterns for API Design Patterns — REST, GraphQL, gRPC, Webhooks and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+
+## Output Questions
+
+1. **What is the output of the simplest correct implementation of API Design Patterns — REST, GraphQL, gRPC, Webhooks on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -735,16 +763,6 @@ The Evolution of this technology reflects decades of research and practical engi
 
 Understanding the evolution of api design patterns helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
 
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
 ## Security Considerations
 
 - **Input Validation**: Always validate and sanitize inputs
@@ -779,27 +797,12 @@ Think of api design patterns like learning a new language — start with basic v
 **Card 3**: What are the common pitfalls to avoid?
 **Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
 
-## Study Plan
-
-**Day 1**: Read theory and review examples (18 minutes)
-**Day 2**: Complete exercises and practice (18 minutes)
-**Day 3**: Review flashcards and take quiz (9 minutes)
-
 ## Research References
 
 - Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
 - Industry whitepapers from leading AI companies
 - Technical blogs from Google, Meta, OpenAI, Anthropic
 - Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
 
 ## Open-Source Tools
 
@@ -839,14 +842,28 @@ When applying this topic to production, consider:
 - What monitoring would you add?
 - How would you test this in production?
 
-## References
+## Optimized Implementation
 
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
+`python
+from typing import Any, Optional
+
+def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
+    """Runnable scaffold for API Design Patterns — REST, GraphQL, gRPC, Webhooks.
+
+    Replace the body with the optimized implementation from the chapter,
+    keeping type hints, docstring, and edge-case handling.
+    """
+    if not input_data:
+        return None
+    # Step 1: validate input types
+    # Step 2: apply the core API Design Patterns — REST, GraphQL, gRPC, Webhooks logic from the Examples section
+    # Step 3: return the result with the documented default
+    return 0.0
+`
+
+- Keeps the function signature stable so tests written against it stay valid.
+- Handles the empty-input contract explicitly.
+- Add unit tests for the edge cases before implementing the logic (test-first).
 
 ## Evaluation Metrics
 
@@ -872,3 +889,10 @@ When applying this topic to production, consider:
 ## Next Topic
 
 After mastering System Design, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+- API Design Patterns — REST, GraphQL, gRPC, Webhooks, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
+- Performance of API Design Patterns — REST, GraphQL, gRPC, Webhooks depends on input size and distribution â€” always benchmark for your own data.
+- This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

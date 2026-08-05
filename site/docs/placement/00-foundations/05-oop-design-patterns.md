@@ -5,7 +5,7 @@ sidebar_label: "Oop Design Patterns"
 sidebar_position: 5
 ---
 
-﻿# OOP and Design Patterns for AI Engineers
+# OOP and Design Patterns for AI Engineers
 
 ## Learning Objectives
 
@@ -181,7 +181,7 @@ class InferenceClient {
         return this.provider.generate(prompt)
     }
 }
-`
+```
 
 ### Decorator Pattern: Caching, Rate Limiting, Logging
 
@@ -255,7 +255,7 @@ class LoggingDecorator implements LLMProvider {
         }
     }
 }
-`
+```
 
 ### Adapter Pattern: Unified LLM Interface
 
@@ -312,7 +312,7 @@ class HuggingFaceAdapter implements ILLMProvider {
         return new Array(768).fill(0).map(() => Math.random())
     }
 }
-`
+```
 
 ### Factory and Template Method
 
@@ -354,7 +354,7 @@ class ClassificationPipeline extends TrainingPipeline {
         console.log("Model saved with metrics:", metrics)
     }
 }
-`
+```
 
 ### SOLID Refactoring Example
 
@@ -378,7 +378,8 @@ class MonolithicService {
     }
 
     private async callOpenAI(prompt: string): Promise<string> {
-        return esponse to
+        return 
+esponse to
     }
 
     private getFromCache(key: string): string | null {
@@ -392,7 +393,7 @@ class MonolithicService {
         console.log(prompt, response)
     }
 }
-`
+```
 
 After refactoring with Dependency Inversion and composition:
 
@@ -429,7 +430,7 @@ class RefactoredService {
         return response
     }
 }
-`
+```
 
 ### Observer Pattern for ML Pipeline Monitoring
 
@@ -636,9 +637,6 @@ making your core logic testable. The rule is simple: depend on abstractions, inj
    - C) Composition uses less memory
    - D) Inheritance is deprecated in TypeScript
    // correct: B
-
-## Exercises
-
 
 ## Exercises
 

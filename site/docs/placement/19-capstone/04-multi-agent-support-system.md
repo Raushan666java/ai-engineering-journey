@@ -1,4 +1,4 @@
-﻿---
+---
 slug: /19-capstone/multi-agent-support-system
 title: "Multi Agent Support System"
 sidebar_label: "Multi Agent Support System"
@@ -72,7 +72,7 @@ flowchart TB
     OA --> M[Shared Memory]
     RA --> M
     FA --> M
-```text
+```
 
 ## 4.1 Multi-Agent Architecture
 
@@ -201,7 +201,7 @@ class RouterAgent:
             "action": "transfer",
             "reason": f"No agent available for intent: {intent.value}",
         }
-```text
+```
 
 ## 4.2 Specialized Agents
 
@@ -389,7 +389,7 @@ class TechnicalSupportAgent(BaseAgent):
                 "Let me suggest some steps: 1) Clear your browser cache, "
                 "2) Try a different browser, 3) Check your internet connection. "
                 "If the problem persists, I'll transfer you to a specialist.")
-```text
+```
 
 ## 4.3 Tool Integration
 
@@ -491,7 +491,7 @@ class TicketTool:
                 ticket["status"] = "in_progress"
                 return True
         return False
-```text
+```
 
 ## 4.4 Agent Memory
 
@@ -565,7 +565,7 @@ class ConversationMemory:
                     to_remove.append(session_id)
         for session_id in to_remove:
             del self.sessions[session_id]
-```text
+```
 
 ## 4.5 Escalation Logic
 
@@ -670,7 +670,7 @@ class EscalationManager:
         elif context.current_intent == Intent.TECHNICAL_ISSUE:
             return "Create internal bug ticket and assign to engineering"
         return "Review conversation and respond"
-```text
+```
 
 ## 4.6 Analytics Dashboard
 
@@ -764,7 +764,7 @@ class SupportAnalytics:
             "intent_distribution": self.intent_distribution(),
             "avg_feedback_rating": self.csat_score(),
         }
-```text
+```
 
 ## Summary
 
@@ -945,7 +945,7 @@ class ToolRegistry {
   private tools = new Map&lt;string, Tool&gt;();
   register(tool: Tool) { this.tools.set(tool.name, tool); }
   getToolDefinitions(): string {
-    return JSON.stringify([...this.tools.values()].map(t => ({
+    return JSON.stringify([...this.tools.values()].map(t =&gt; ({
       name: t.name, description: t.description, parameters: t.parameters
     })));
   }
@@ -954,7 +954,7 @@ class ToolRegistry {
     if (!tool) throw new Error(`Tool ${name} not found`);
     return tool.execute(params, ctx);
   }
-}</pre></code>
+}</code></pre>
 <p>The ToolRegistry centralizes tool management for agents. Each tool defines: name (unique identifier), description (for LLM to decide when to call it),.
 parameters (JSON Schema for validation), and execute function. The registry provides: (1) Tool definitions for LLM system prompts in JSON format. (2) Centralized execution with error.
 handling, logging, and rate limiting. (3) Authorization checks before tool execution. (4) Metrics collection (call count, latency, error rate per tool). (5) Idempotency support for.
@@ -1087,251 +1087,3 @@ databases, or even other agents in a controlled manner.</p>
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 19-capstone-projects. When would you choose one approach over another?
-2. Design a system that efficiently handles 19-capstone-projects at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 19-capstone-projects. What was your approach and what was the result?
-2. How would you explain 19-capstone-projects to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 19-capstone-projects integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 19-capstone-projects?
-
-#### NVIDIA Style
-1. How would you optimize 19-capstone-projects for GPU-accelerated computing?
-2. What parallel processing patterns apply to 19-capstone-projects?
-
-#### AI Startup Style
-1. How would you implement 19-capstone-projects in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 19-capstone-projects?
-
-### Resume Tips
-- **Technical Skills**: List 19-capstone-projects under relevant technical skills
-- **Project Description**: "Implemented 19-capstone-projects to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 19-capstone-projects in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 19-capstone-projects
-- [ ] Practice 3-5 problems related to 19-capstone-projects
-- [ ] Prepare 2 real-world examples of using 19-capstone-projects
-- [ ] Know the time/space complexity of common 19-capstone-projects operations
-- [ ] Have questions ready about how the company uses 19-capstone-projectsnt users.
-
-
-## Difficulty Level
-
-**Level**: Intermediate
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to Capstone Projects fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master multi agent support system?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-Understanding the evolution of multi agent support system helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding multi agent support system at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of multi agent support system like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply multi agent support system concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of multi agent support system?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply multi agent support system in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of Capstone Projects?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering Capstone Projects, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

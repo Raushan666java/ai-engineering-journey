@@ -71,6 +71,7 @@ flowchart LR
     I --> K
     K --> L[Alerting & On-Call]
 
+```
 ## 9.1 Observability vs Monitoring
 
 **Monitoring** is knowing when something is wrong — alerting on known failure modes. **Observability** is being able to ask arbitrary questions about system behavior without shipping new code.
@@ -107,7 +108,7 @@ class ObservabilityMiddleware {
     };
   }
 }
-```text
+```
 
 **Key difference**: Monitoring tells you what's broken. Observability lets you understand why it broke and what unexpected things are happening.
 
@@ -142,7 +143,7 @@ class SLOCalculator {
     return 1 - bad / total;
   }
 }
-```text
+```
 
 **Error budget**: The amount of unreliability you're allowed within SLO (100% - SLO target). If SLO is 99.9%, error budget is 0.1% of total requests. You can choose to spend error budget on deployments, experiments, or feature velocity.
 
@@ -200,7 +201,7 @@ class StructuredLogger {
     });
   }
 }
-```text
+```
 
 **Best practices**: Use structured JSON format, include correlation IDs, set appropriate log levels, sample high-volume logs, never log sensitive data (PII, passwords, tokens).
 
@@ -254,7 +255,7 @@ class Tracer {
     return end - start;
   }
 }
-```text
+```
 
 **OpenTelemetry** is the industry standard for distributed tracing. It provides SDKs in multiple languages and supports exporting to various backends (Jaeger, Zipkin, Datadog, Grafana Tempo).
 
@@ -303,7 +304,7 @@ class MetricsRegistry {
     return sorted[Math.max(0, idx)];
   }
 }
-```text
+```
 
 **RED method**: Rate (requests/sec), Errors (failed requests/sec), Duration (latency distribution). This is the gold standard for service-level monitoring.
 
@@ -349,7 +350,7 @@ class AlertManager {
     return alerts;
   }
 }
-```text
+```
 
 **Best practices**: Alert on symptoms (user-visible problems), not causes (internal implementation details). Use pager duty rotation, auto-escalation, and runbooks. Aim for <10 actionable alerts per on-call shift.
 
@@ -393,7 +394,7 @@ class HealthCheckEndpoint {
     }
   }
 }
-```text
+```
 
 ---
 

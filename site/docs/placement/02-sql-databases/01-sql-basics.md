@@ -56,7 +56,7 @@ def example():
     return result
 
 example()
-```text
+```
 
 ### Expected Output
 
@@ -86,22 +86,22 @@ flowchart LR
     F[DML] --> G[INSERT]
     F --> H[UPDATE]
     F --> I[DELETE]
-```text
+```
 
 ## 1.1 SELECT Queries
 
 SELECT retrieves rows from a table.
 
-`sql
+```sql
 SELECT * FROM employees;
 SELECT first_name, last_name, salary FROM employees;
 SELECT first_name AS "First Name", salary * 12 AS annual FROM employees;
 SELECT DISTINCT department_id FROM employees;
-`
+```
 
 **Python simulation**:
 
-`python
+```python
 import sqlite3
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
@@ -115,11 +115,11 @@ for row in cur.fetchall():
     print(row)
 
 ## ('Alice', 75000) ('Charlie', 82000)
-`
+```
 
 ## 1.2 WHERE Clauses
 
-`sql
+```sql
 SELECT * FROM products WHERE price > 100;
 SELECT * FROM products WHERE price = 49.99;
 SELECT * FROM products WHERE price <> 0;
@@ -132,21 +132,21 @@ SELECT * FROM employees WHERE dept_id = 3 AND salary > 70000;
 SELECT * FROM products WHERE category = 'Electronics' OR category = 'Books';
 SELECT * FROM orders WHERE NOT status = 'Cancelled';
 SELECT * FROM employees WHERE (dept_id = 3 OR dept_id = 5) AND salary > 60000;
-`
+```
 
 ## 1.3 Sorting & Limiting
 
-`sql
+```sql
 SELECT name, price FROM products ORDER BY price;
 SELECT name, price FROM products ORDER BY price DESC;
 SELECT last_name, first_name FROM employees ORDER BY salary DESC, last_name;
 SELECT * FROM products ORDER BY price DESC LIMIT 10;
 SELECT * FROM products ORDER BY price DESC LIMIT 10 OFFSET 20;
-`
+```
 
 **Python example**:
 
-`python
+```python
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
 cur.execute("CREATE TABLE scores (name, score)")
@@ -156,20 +156,20 @@ for r in cur.fetchall():
     print(f"{r[0]}: {r[1]}")
 
 ## Alice: 95, Charlie: 92
-`
+```
 
 ## 1.4 NULL Handling
 
-`sql
+```sql
 SELECT * FROM employees WHERE manager_id IS NULL;
 SELECT * FROM customers WHERE email IS NOT NULL;
 SELECT name, COALESCE(phone, email, 'No contact') AS contact FROM customers;
 SELECT * FROM products WHERE price < 100;  -- excludes NULL prices
-`
+```
 
 **Python**:
 
-`python
+```python
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
 cur.execute("CREATE TABLE users (id, name, email)")
@@ -182,11 +182,11 @@ for r in cur.fetchall():
 ## Alice: a@test.com
 
 ## Bob: No email
-`
+```
 
 ## 1.5 INSERT
 
-`sql
+```sql
 INSERT INTO employees (first_name, last_name, salary, dept_id)
 VALUES ('Eve', 'Wilson', 65000, 3);
 
@@ -199,21 +199,21 @@ SELECT id, name, total_spent FROM customers WHERE total_spent > 10000;
 
 INSERT INTO users (id, name) VALUES (1, 'Alice')
 ON CONFLICT(id) DO UPDATE SET name = EXCLUDED.name;
-`
+```
 
 ## 1.6 UPDATE & DELETE
 
-`sql
+```sql
 UPDATE employees SET salary = 80000 WHERE employee_id = 5;
 UPDATE products SET price = price * 1.1 WHERE category = 'Electronics';
 DELETE FROM employees WHERE employee_id = 10;
 DELETE FROM logs;          -- slow for large tables
 TRUNCATE TABLE temp_data;  -- fast, DDL, non-recoverable
-`
+```
 
 **Python**:
 
-`python
+```python
 conn = sqlite3.connect(":memory:")
 cur = conn.cursor()
 cur.execute("CREATE TABLE emp(id, name, salary)")
@@ -223,11 +223,11 @@ conn.commit()
 print(f"Updated: {cur.rowcount} rows")
 cur.execute("DELETE FROM emp WHERE salary < 55000")
 print(f"Deleted: {cur.rowcount} rows")
-`
+```
 
 ## TypeScript Parallel
 
-`	ypescript
+```typescript
 import sqlite3 from "sqlite3";
 import { open } from "sqlite";
 
@@ -239,7 +239,7 @@ async function query() {
     console.log(rows);
     await db.close();
 }
-`
+```
 
 ## Visual Analogy
 
@@ -395,7 +395,7 @@ This helps because databases are fundamentally organized storage, just like a li
 
 DDL creates and modifies database structure.
 
-`sql
+```sql
 -- CREATE TABLE
 CREATE TABLE employees (
     employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -427,11 +427,11 @@ CREATE VIEW high_earners AS
 SELECT first_name, last_name, salary, department_id
 FROM employees
 WHERE salary > 80000;
-`
+```
 
 ## 1.8 Constraints
 
-`sql
+```sql
 -- NOT NULL: column must have a value
 CREATE TABLE products (
     id INTEGER PRIMARY KEY,
@@ -479,13 +479,13 @@ CREATE TABLE logs (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     severity INTEGER DEFAULT 1
 );
-`
+```
 
 ## 1.9 Working with Indexes
 
 Indexes speed up data retrieval at the cost of slower writes.
 
-`sql
+```sql
 -- When to use indexes:
 -- 1. Columns used frequently in WHERE clauses
 -- 2. Columns used in JOIN conditions
@@ -516,13 +516,13 @@ INCLUDE (email, department_id);
 -- PostgreSQL: SELECT * FROM pg_indexes WHERE tablename = 'employees';
 -- SQLite: .indexes employees
 -- MySQL: SHOW INDEX FROM employees;
-`
+```
 
 ## 1.10 Transactions
 
 Transactions ensure data consistency with ACID properties.
 
-`sql
+```sql
 -- Basic transaction
 BEGIN TRANSACTION;
 UPDATE accounts SET balance = balance - 100 WHERE id = 1;
@@ -546,9 +546,9 @@ SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
 -- Consistency: data remains valid
 -- Isolation: concurrent transactions don't interfere
 -- Durability: committed changes persist
-`
+```
 
-`python
+```python
 import sqlite3
 
 conn = sqlite3.connect("example.db")
@@ -558,11 +558,11 @@ try:
         conn.execute("UPDATE accounts SET balance = balance + 100 WHERE id = 2")
 except sqlite3.Error as e:
     print(f"Transaction failed: {e}")
-`
+```
 
 ## 1.11 Common Pitfalls
 
-`sql
+```sql
 -- Pitfall 1: SELECT * in production
 SELECT * FROM employees;  -- BAD: returns all columns, order-dependent
 SELECT id, name, email FROM employees;  -- GOOD: explicit columns
@@ -593,11 +593,11 @@ ORDER BY new_salary;  -- OK: ORDER BY can use alias
 BEGIN;
 UPDATE inventory SET quantity = quantity - 1 WHERE product_id = 10;
 -- Missing COMMIT: other sessions see old data
-`
+```
 
 ## 1.12 Real-World Query Examples
 
-`sql
+```sql
 -- Customer order summary
 SELECT
     c.customer_id,
@@ -641,7 +641,7 @@ FROM (
 ORDER BY price
 LIMIT 20 OFFSET 40;
 -- Returns items 41-60 along with total count
-`
+```
 
 ---
 
@@ -663,262 +663,3 @@ LIMIT 20 OFFSET 40;
 - - Interview: Frequently asked in technical interviews
 - - Edge cases: Consider common failure scenarios
 - - Related concepts: Connect to broader system design
-
-## Placement Section
-
-### Top 10 Interview Questions
-
-#### Google Style
-1. Explain the time and space trade-offs of 02-sql-and-databases. When would you choose one approach over another?
-2. Design a system that efficiently handles 02-sql-and-databases at scale (millions of requests/second).
-
-#### Amazon Style
-1. Tell me about a time you had to optimize a system related to 02-sql-and-databases. What was your approach and what was the result?
-2. How would you explain 02-sql-and-databases to a non-technical stakeholder?
-
-#### Microsoft Style
-1. How does 02-sql-and-databases integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 02-sql-and-databases?
-
-#### NVIDIA Style
-1. How would you optimize 02-sql-and-databases for GPU-accelerated computing?
-2. What parallel processing patterns apply to 02-sql-and-databases?
-
-#### AI Startup Style
-1. How would you implement 02-sql-and-databases in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 02-sql-and-databases?
-
-### Resume Tips
-- **Technical Skills**: List 02-sql-and-databases under relevant technical skills
-- **Project Description**: "Implemented 02-sql-and-databases to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 02-sql-and-databases in your skills section for ATS optimization
-
-### Interview Day Checklist
-- [ ] Review core concepts of 02-sql-and-databases
-- [ ] Practice 3-5 problems related to 02-sql-and-databases
-- [ ] Prepare 2 real-world examples of using 02-sql-and-databases
-- [ ] Know the time/space complexity of common 02-sql-and-databases operations
-- [ ] Have questions ready about how the company uses 02-sql-and-databases> **Next**: [02 -- Aggregate Functions ?](02-aggregate-functions.md)
-
-
-## Difficulty Level
-
-**Level**: Beginner
-**Estimated Study Time**: 30-45 minutes
-**Prerequisites**: Complete understanding of previous modules recommended
-
-## Tips & Tricks
-
-**Tip**: Start with the basics — understand the fundamental concepts before moving to advanced topics.
-
-**Tip**: Practice actively — don't just read, implement the code examples yourself.
-
-**Tip**: Connect to prior knowledge — relate new concepts to what you learned in previous modules.
-
-**Pro Tip**: Focus on understanding, not memorizing — understand why things work, not just how.
-
-**Pro Tip**: Review regularly — revisit key concepts after a few days to reinforce learning.
-
-## Memory Tricks
-
-- **Acronym Method**: Create acronyms for lists of concepts
-- **Visualization**: Draw diagrams to visualize abstract concepts
-- **Teach someone else**: Explaining concepts to others reinforces your understanding
-- **Connect to real-world**: Relate technical concepts to everyday experiences
-- **Chunking**: Break complex topics into smaller, manageable pieces
-
-## Further Reading
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers and blog posts from leading AI labs
-
-## Related Topics
-
-- How this connects to SQL & Databases fundamentals
-- Prerequisites for advanced topics in this module
-- Real-world applications in AI engineering systems
-- Interview questions that test deep understanding
-
-## FAQs
-
-**Q: How long does it take to master sql basics?
-**A**: With consistent practice, 2-4 weeks for basic proficiency, 2-3 months for advanced mastery.
-
-**Q: Do I need to memorize all the details?
-**A**: Focus on understanding the core principles. Details can be looked up, but understanding cannot.
-
-**Q: What's the best way to practice?
-**A**: Implement the code examples, then modify them to solve different problems. Build small projects.
-
-**Q: How often should I review this material?
-**A**: Review after 1 day, 3 days, 1 week, and 1 month for long-term retention.
-
-## Important Notes
-
-> **Note**: Understanding the fundamentals is more important than memorizing syntax.
-
-> **Note**: Don't skip the exercises — they reinforce critical concepts.
-
-> **Note**: This topic frequently appears in technical interviews at top companies.
-
-> **Note**: In real systems, these concepts are used daily by AI engineers.
-
-## Historical Context
-
-The Evolution of this technology reflects decades of research and practical engineering experience.
-
-Understanding the evolution of sql basics helps appreciate why current approaches exist. These concepts have been developed over decades of computer science research and practical engineering experience.
-
-## Coding Standards
-
-- Follow consistent naming conventions (camelCase for variables, PascalCase for types)
-- Add clear comments explaining complex logic
-- Keep functions focused on a single responsibility
-- Write self-documenting code with meaningful names
-- Handle errors gracefully and provide informative messages
-
-**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
-
-## Security Considerations
-
-- **Input Validation**: Always validate and sanitize inputs
-- **Error Handling**: Don't expose internal details in error messages
-- **Resource Limits**: Set appropriate limits to prevent denial of service
-- **Authentication**: Ensure proper authentication and authorization
-- **Data Protection**: Handle sensitive data according to security best practices
-
-## ML Intuition
-
-For AI engineering, understanding sql basics at an intuitive level is crucial. Think of it as building mental models that help you reason about system behavior, debug issues, and make architectural decisions.
-
-## Analogies
-
-Think of sql basics like learning a new language — start with basic vocabulary (fundamentals), then learn grammar (rules), and finally practice conversation (application). The more you practice, the more natural it becomes.
-
-## Capstone Project Link
-
-**Project**: Apply sql basics concepts in a mini-project
-**Goal**: Build a small application that demonstrates understanding of core principles
-**Duration**: 2-4 hours
-**Outcome**: Working implementation with documentation
-
-## Flashcards
-
-**Card 1**: What is the core concept of sql basics?
-**Answer**: The fundamental principle that enables efficient and scalable systems.
-
-**Card 2**: When would you apply sql basics in real systems?
-**Answer**: When building production AI systems that require reliability, scalability, and maintainability.
-
-**Card 3**: What are the common pitfalls to avoid?
-**Answer**: Over-engineering, ignoring edge cases, and not considering production requirements.
-
-## Study Plan
-
-**Day 1**: Read theory and review examples (12 minutes)
-**Day 2**: Complete exercises and practice (12 minutes)
-**Day 3**: Review flashcards and take quiz (6 minutes)
-
-## Research References
-
-- Academic papers and conference proceedings (NeurIPS, ICML, ICLR)
-- Industry whitepapers from leading AI companies
-- Technical blogs from Google, Meta, OpenAI, Anthropic
-- Open-source implementations and documentation
-
-## Fine-Tuning Notes
-
-When applying this topic to production, consider:
-- Fine-tuning with LoRA or Adapters for domain adaptation
-- Adapting general principles to your specific use cases
-- Performance optimization for target hardware
-- Cost considerations for deployment
-
-
-## Open-Source Tools
-
-- **LangChain**: Framework for building LLM-powered applications
-- **LlamaIndex**: Data framework for connecting LLMs with external data
-- **Hugging Face Transformers**: State-of-the-art ML models and datasets
-- **Weights & Biases**: Experiment tracking and model evaluation
-- **MLflow**: Open-source platform for ML lifecycle management
-- **Prometheus + Grafana**: Monitoring and observability stack
-
-## Debugging Guide
-
-**Common Issues**:
-- Check input validation and data types
-- Verify API keys and authentication
-- Monitor resource usage (CPU, memory, GPU)
-- Review error logs for stack traces
-
-**Debugging Steps**:
-1. Reproduce the issue with minimal input
-2. Add logging at key points
-3. Check external dependencies
-4. Verify configuration settings
-5. Test with known-good inputs
-
-## Mock Interview Section
-
-**Quick Fire Questions**:
-1. What is the core concept of SQL & Databases?
-2. When would you use this in production?
-3. What are the trade-offs?
-4. How does this scale?
-5. What are common pitfalls?
-
-**Follow-up Questions**:
-- How would you optimize this for 10x scale?
-- What monitoring would you add?
-- How would you test this in production?
-
-## Optimized Implementation
-
-For production systems, consider:
-- **Caching**: Cache frequent computations and API responses
-- **Batching**: Process multiple items together for efficiency
-- **Async/Await**: Use non-blocking I/O for concurrent operations
-- **Connection Pooling**: Reuse database and API connections
-- **Lazy Loading**: Load resources only when needed
-
-## References
-
-- Official documentation and language specifications
-- "Designing Data-Intensive Applications" by Martin Kleppmann
-- "System Design Interview" by Alex Xu
-- "AI Engineering" by Chip Huyen
-- Research papers from NeurIPS, ICML, ICLR
-- Industry blogs from Google, Meta, OpenAI, Anthropic
-
-## Evaluation Metrics
-
-**Model Evaluation**:
-- Accuracy, Precision, Recall, F1-Score
-- BLEU, ROUGE for text generation
-- Latency, Throughput, Cost per inference
-
-**System Evaluation**:
-- End-to-end latency (p50, p95, p99)
-- Error rate and availability
-- Resource utilization (CPU, memory, GPU)
-
-## Real-World Examples
-
-**Industry Applications**:
-- Google: Search ranking, translation, autocomplete
-- Amazon: Product recommendations, Alexa, fraud detection
-- Netflix: Content recommendations, personalization
-- Tesla: Autonomous driving, computer vision
-- OpenAI: ChatGPT, DALL-E, Codex
-
-## Next Topic
-
-After mastering SQL & Databases, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
-
-## Limitations
-
-Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

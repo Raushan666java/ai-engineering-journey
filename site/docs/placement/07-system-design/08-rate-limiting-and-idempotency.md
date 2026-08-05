@@ -66,6 +66,7 @@ flowchart LR
     F --> H[Store Key in Redis]
     H --> I[Response with Rate Headers]
 
+```
 ## 8.1 Rate Limiting Fundamentals
 
 Rate limiting controls the number of requests a client can make within a specific time window. It protects APIs from abuse, ensures fair resource allocation, and maintains system stability.
@@ -90,7 +91,7 @@ class RateLimiter {
     throw new Error("Not implemented");
   }
 }
-```text
+```
 
 **Common reasons**: Prevent DDoS attacks, protect against brute force login attempts, ensure fair usage between tenants, control costs for paid APIs, prevent cascading failures from traffic spikes.
 
@@ -134,7 +135,7 @@ class TokenBucket extends RateLimiter {
     return { allowed: false, remaining: 0, resetTime: now + Math.ceil((1 - bucket.tokens) / this.refillRate * 1000) };
   }
 }
-```text
+```
 
 **Pros**: Smooth traffic, allows bursts, configurable burst capacity. **Cons**: Memory per key, clock-dependent refill timing.
 
@@ -178,7 +179,7 @@ class SlidingWindowCounter extends RateLimiter {
     return { allowed: true, remaining: this.maxRequests - Math.ceil(weightedCount), resetTime: (currentWindow + 1) * this.windowMs };
   }
 }
-```text
+```
 
 Sliding window counter is the best trade-off: O(1) memory with no boundary burst, within 5-10% accuracy.
 
@@ -230,7 +231,7 @@ class RedisSlidingWindowLimiter {
     return { allowed: allowed === 1, remaining };
   }
 }
-```text
+```
 
 **Challenges**: Redis becomes a single point of failure and adds ~1ms latency per request. Mitigations: Redis Sentinel/Cluster, local counters with periodic sync (approximate rate limiting).
 
@@ -283,7 +284,7 @@ class IdempotencyMiddleware {
     };
   }
 }
-```text
+```
 
 **Best practices**: Use UUIDv4 as idempotency key, set 24h TTL, return cached response for duplicate keys, include key in response headers.
 
@@ -328,7 +329,7 @@ class ResilientClient {
     throw new Error("Max retries exceeded");
   }
 }
-```text
+```
 
 **Retry strategies**: Immediate retry (idempotent only), fixed delay, exponential backoff (base x 2^attempt), jitter (randomize delay to avoid thundering herd).
 
@@ -368,7 +369,7 @@ class HybridRateLimiter {
     return true;
   }
 }
-```text
+```
 
 ---
 

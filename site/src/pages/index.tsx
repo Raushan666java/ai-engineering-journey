@@ -10,29 +10,29 @@ const features = [
   {
     title: 'Complete Curriculum',
     description: '55 courses covering Core CS, Python, ML, Deep Learning, LLMs, RAG, AI Agents, System Design, and more.',
-    link: '/docs/courses',
+    link: '/courses',
   },
   {
     title: 'Placement Focused',
     description: '2,440+ interview Q&A, 975+ quiz questions, mock interviews, and FAANG company deep dives.',
-    link: '/docs/placement',
+    link: '/ai-engineering-placement',
   },
   {
     title: 'Learn by Doing',
     description: 'Hands-on projects, code examples, capstone projects, and portfolio building guidance.',
-    link: '/docs/courses',
+    link: '/courses',
   },
 ];
 
 const featuredCourses = [
   { name: 'Python Programming', slug: 'python-programming' },
   { name: 'Machine Learning', slug: 'machine-learning' },
-  { name: 'Deep Learning', slug: 'neural-networks' },
+  { name: 'Applied AI', slug: 'applied-ai' },
   { name: 'LLMs & RAG', slug: 'modern-ai-engineering' },
   { name: 'System Design', slug: 'system-design' },
   { name: 'Data Structures', slug: 'data-structures' },
   { name: 'Interview Prep', slug: 'interview-preparation' },
-  { name: 'Generative AI', slug: 'generative-ai' },
+  { name: 'AI Agent Engineer', slug: 'ai-agent-engineer' },
 ];
 
 function HomepageHeader() {
@@ -45,7 +45,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/placement">
+            to="/ai-engineering-placement">
             Start Learning
           </Link>
         </div>
@@ -88,7 +88,7 @@ export default function Home(): React.JSX.Element {
             {featuredCourses.map((course) => (
               <Link
                 key={course.slug}
-                to={`/docs/courses/${course.slug}`}
+                to={`/courses/${course.slug}`}
                 style={{
                   display: 'block',
                   padding: '1rem',

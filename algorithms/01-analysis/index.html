@@ -1,0 +1,1377 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-courses/algorithms/01-analysis" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Chapter 1: Fundamentals of Algorithm Analysis | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/algorithms/01-analysis"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 1: Fundamentals of Algorithm Analysis | AI Engineering Journey"><meta data-rh="true" name="description" content="Prerequisites Chapter 2: Searching — From measuring efficiency to finding elements"><meta data-rh="true" property="og:description" content="Prerequisites Chapter 2: Searching — From measuring efficiency to finding elements"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/algorithms/01-analysis"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/algorithms/01-analysis" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/algorithms/01-analysis" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Algorithms","item":"https://raushan666java.github.io/ai-engineering-journey/algorithms/index"},{"@type":"ListItem","position":2,"name":"Chapter 1: Fundamentals of Algorithm Analysis","item":"https://raushan666java.github.io/ai-engineering-journey/algorithms/01-analysis"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.68ae8ef5.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.4470784e.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.bc7a9306.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ai-engineering-journey/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ai-engineering-journey/"><div class="navbar__logo"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI Engineering</b></a><a class="navbar__item navbar__link" href="/ai-engineering-journey/ai-engineering-placement">Placement Course</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ai-engineering-journey/government-exams/index">All Courses</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ai-engineering-journey/government-exams/index"><span class="linkLabel_WmDU">Government Exams — Complete Preparation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/applied-ai/index"><span class="categoryLinkLabel_W154">Applied Ai</span></a><button aria-label="Expand sidebar category &#x27;Applied Ai&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-technology/index"><span class="categoryLinkLabel_W154">Banking Technology</span></a><button aria-label="Expand sidebar category &#x27;Banking Technology&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/marketing-aptitude/index"><span class="categoryLinkLabel_W154">Marketing Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Marketing Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-financial-awareness/index"><span class="categoryLinkLabel_W154">Banking Financial Awareness</span></a><button aria-label="Expand sidebar category &#x27;Banking Financial Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/big-data/index"><span class="categoryLinkLabel_W154">Big Data</span></a><button aria-label="Expand sidebar category &#x27;Big Data&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-architecture/index"><span class="categoryLinkLabel_W154">Computer Architecture</span></a><button aria-label="Expand sidebar category &#x27;Computer Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-analysis-interpretation/index"><span class="categoryLinkLabel_W154">Data Analysis Interpretation</span></a><button aria-label="Expand sidebar category &#x27;Data Analysis Interpretation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/english-language/index"><span class="categoryLinkLabel_W154">English Language</span></a><button aria-label="Expand sidebar category &#x27;English Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/hindi-language/index"><span class="categoryLinkLabel_W154">Hindi Language</span></a><button aria-label="Expand sidebar category &#x27;Hindi Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/information-security/index"><span class="categoryLinkLabel_W154">Information Security</span></a><button aria-label="Expand sidebar category &#x27;Information Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/speed-drills/index"><span class="categoryLinkLabel_W154">Speed Drills</span></a><button aria-label="Expand sidebar category &#x27;Speed Drills&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-aptitude/index"><span class="categoryLinkLabel_W154">General Aptitude</span></a><button aria-label="Expand sidebar category &#x27;General Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/job-preparation/index"><span class="categoryLinkLabel_W154">Job Preparation</span></a><button aria-label="Expand sidebar category &#x27;Job Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/mock-tests/index"><span class="categoryLinkLabel_W154">Mock Tests</span></a><button aria-label="Expand sidebar category &#x27;Mock Tests&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/quantitative-aptitude/index"><span class="categoryLinkLabel_W154">Quantitative Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Quantitative Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/reasoning-ability/index"><span class="categoryLinkLabel_W154">Reasoning Ability</span></a><button aria-label="Expand sidebar category &#x27;Reasoning Ability&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/placement-preparation/index"><span class="categoryLinkLabel_W154">Placement Preparation</span></a><button aria-label="Expand sidebar category &#x27;Placement Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-awareness/index"><span class="categoryLinkLabel_W154">General Awareness</span></a><button aria-label="Expand sidebar category &#x27;General Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/coding-problems/index"><span class="categoryLinkLabel_W154">Coding Problems</span></a><button aria-label="Expand sidebar category &#x27;Coding Problems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/blockchain/index"><span class="categoryLinkLabel_W154">Blockchain</span></a><button aria-label="Expand sidebar category &#x27;Blockchain&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cloud-computing/index"><span class="categoryLinkLabel_W154">Cloud Computing</span></a><button aria-label="Expand sidebar category &#x27;Cloud Computing&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/engineering-mathematics/index"><span class="categoryLinkLabel_W154">Engineering Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Engineering Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/loop-engineering/index"><span class="categoryLinkLabel_W154">Loop Engineering</span></a><button aria-label="Expand sidebar category &#x27;Loop Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/machine-learning/index"><span class="categoryLinkLabel_W154">Machine Learning</span></a><button aria-label="Expand sidebar category &#x27;Machine Learning&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/professional-knowledge/index"><span class="categoryLinkLabel_W154">Professional Knowledge</span></a><button aria-label="Expand sidebar category &#x27;Professional Knowledge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/modern-ai-engineering/index"><span class="categoryLinkLabel_W154">Modern Ai Engineering</span></a><button aria-label="Expand sidebar category &#x27;Modern Ai Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/ai-engineering-journey/ai-agent-engineer/00-index"><span class="categoryLinkLabel_W154">Ai Agent Engineer</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/government-pyqs/index"><span class="categoryLinkLabel_W154">Government Pyqs</span></a><button aria-label="Expand sidebar category &#x27;Government Pyqs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/compiler-design/index"><span class="categoryLinkLabel_W154">Compiler Design</span></a><button aria-label="Expand sidebar category &#x27;Compiler Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/digital-logic/index"><span class="categoryLinkLabel_W154">Digital Logic</span></a><button aria-label="Expand sidebar category &#x27;Digital Logic&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/discrete-mathematics/index"><span class="categoryLinkLabel_W154">Discrete Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Discrete Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn-practical/index"><span class="categoryLinkLabel_W154">Learning How To Learn Practical</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn Practical&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/oop-cpp/index"><span class="categoryLinkLabel_W154">Oop Cpp</span></a><button aria-label="Expand sidebar category &#x27;Oop Cpp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/software-engineering/index"><span class="categoryLinkLabel_W154">Software Engineering</span></a><button aria-label="Expand sidebar category &#x27;Software Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/theory-of-computation/index"><span class="categoryLinkLabel_W154">Theory Of Computation</span></a><button aria-label="Expand sidebar category &#x27;Theory Of Computation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/interview-preparation/index"><span class="categoryLinkLabel_W154">Interview Preparation</span></a><button aria-label="Expand sidebar category &#x27;Interview Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn/index"><span class="categoryLinkLabel_W154">Learning How To Learn</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/ai-engineering-journey/algorithms/index"><span class="categoryLinkLabel_W154">Algorithms</span></a><button aria-label="Collapse sidebar category &#x27;Algorithms&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ai-engineering-journey/algorithms/01-analysis"><span class="linkLabel_WmDU">Chapter 1: Fundamentals of Algorithm Analysis</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/02-searching"><span class="linkLabel_WmDU">Chapter 2: Searching</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/03-sorting-nlogn"><span class="linkLabel_WmDU">Chapter 3: Comparison-Based Sorting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/04-sorting-linear"><span class="linkLabel_WmDU">Chapter 4: Linear-Time Sorting</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/05-divide-conquer"><span class="linkLabel_WmDU">Chapter 5: Divide and Conquer</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/06-greedy"><span class="linkLabel_WmDU">Chapter 6: Greedy Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/07-dp-intro"><span class="linkLabel_WmDU">Chapter 7: Dynamic Programming — Foundations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/08-dp-knapsack"><span class="linkLabel_WmDU">Chapter 8: Dynamic Programming — Knapsack Problems</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/09-dp-sequences"><span class="linkLabel_WmDU">Chapter 9: Dynamic Programming — Sequences</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/10-dp-trees-grids"><span class="linkLabel_WmDU">Chapter 10: Trees, Grids &amp; Dynamic Programming</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/11-graph-shortest"><span class="linkLabel_WmDU">Chapter 11: Graph Shortest Paths</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/12-graph-mst"><span class="linkLabel_WmDU">Chapter 12: Minimum Spanning Trees</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/13-graph-flow"><span class="linkLabel_WmDU">Chapter 13: Network Flow</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/14-string-algorithms"><span class="linkLabel_WmDU">Chapter 14: String Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/15-np-completeness"><span class="linkLabel_WmDU">Chapter 15: NP-Completeness</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/16-approximation"><span class="linkLabel_WmDU">Chapter 16: Approximation Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/17-randomized"><span class="linkLabel_WmDU">Chapter 17: Randomized Algorithms</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/algorithms/18-advanced"><span class="linkLabel_WmDU">Chapter 18: Advanced Topics</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/c-programming/index"><span class="categoryLinkLabel_W154">C Programming</span></a><button aria-label="Expand sidebar category &#x27;C Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-networks/index"><span class="categoryLinkLabel_W154">Computer Networks</span></a><button aria-label="Expand sidebar category &#x27;Computer Networks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-structures/index"><span class="categoryLinkLabel_W154">Data Structures</span></a><button aria-label="Expand sidebar category &#x27;Data Structures&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/operating-systems/index"><span class="categoryLinkLabel_W154">Operating Systems</span></a><button aria-label="Expand sidebar category &#x27;Operating Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/web-development/index"><span class="categoryLinkLabel_W154">Web Development</span></a><button aria-label="Expand sidebar category &#x27;Web Development&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/database-management-systems/index"><span class="categoryLinkLabel_W154">Database Management Systems</span></a><button aria-label="Expand sidebar category &#x27;Database Management Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cyber-security/index"><span class="categoryLinkLabel_W154">Cyber Security</span></a><button aria-label="Expand sidebar category &#x27;Cyber Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/python-programming/index"><span class="categoryLinkLabel_W154">Python Programming</span></a><button aria-label="Expand sidebar category &#x27;Python Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/system-design/index"><span class="categoryLinkLabel_W154">System Design</span></a><button aria-label="Expand sidebar category &#x27;System Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/artificial-intelligence/index"><span class="categoryLinkLabel_W154">Artificial Intelligence</span></a><button aria-label="Expand sidebar category &#x27;Artificial Intelligence&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/vigyan-bhairav-tantra/index"><span class="categoryLinkLabel_W154">Vigyan Bhairav Tantra</span></a><button aria-label="Expand sidebar category &#x27;Vigyan Bhairav Tantra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/devops/index"><span class="categoryLinkLabel_W154">Devops</span></a><button aria-label="Expand sidebar category &#x27;Devops&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/gate-cs-preparation/index"><span class="categoryLinkLabel_W154">Gate Cs Preparation</span></a><button aria-label="Expand sidebar category &#x27;Gate Cs Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-course/README"><span class="categoryLinkLabel_W154">Learning Course</span></a><button aria-label="Expand sidebar category &#x27;Learning Course&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/laravel/index"><span class="categoryLinkLabel_W154">Laravel</span></a><button aria-label="Expand sidebar category &#x27;Laravel&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/java/index"><span class="categoryLinkLabel_W154">Java</span></a><button aria-label="Expand sidebar category &#x27;Java&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/ai-engineering-placement"><span class="categoryLinkLabel_W154">Ai Engineering Placement</span></a><button aria-label="Expand sidebar category &#x27;Ai Engineering Placement&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ai-engineering-journey/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ai-engineering-journey/algorithms/index"><span>Algorithms</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Chapter 1: Fundamentals of Algorithm Analysis</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Chapter 1: Fundamentals of Algorithm Analysis</h1></header>
+<blockquote>
+<p><strong>Prerequisites:</strong> None | <strong>Next:</strong> <a class="" href="/ai-engineering-journey/algorithms/02-searching">Chapter 2: Searching</a> — From measuring efficiency to finding elements</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a href="../../assets/images/lessons/algorithms/01-analysis/handwritten-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/algorithms/01-analysis/handwritten-notes.png" alt="Handwritten notes" class="img_ev3q">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a href="../../assets/images/lessons/algorithms/01-analysis/sticky-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/algorithms/01-analysis/sticky-notes.png" alt="Sticky-note revision" class="img_ev3q">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a href="../../assets/images/lessons/algorithms/01-analysis/visual-explanation.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/algorithms/01-analysis/visual-explanation.png" alt="Visual concept guide" class="img_ev3q">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
+<!-- -->
+<ol>
+<li class="">Define and apply Big-O, Big-Omega, Big-Theta, little-o, and little-omega notation.</li>
+<li class="">Solve recurrence relations using the substitution method, recursion-tree method, and the master theorem.</li>
+<li class="">Perform amortized analysis using the aggregate method, accounting method, and potential method.</li>
+<li class="">Analyze the asymptotic complexity of iterative and recursive algorithms.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-algorithm-analysis-matters">Why Algorithm Analysis Matters<a href="#why-algorithm-analysis-matters" class="hash-link" aria-label="Direct link to Why Algorithm Analysis Matters" title="Direct link to Why Algorithm Analysis Matters" translate="no">​</a></h2>
+<p>Imagine choosing a route to work. Walking works for 1 block (linear in distance) but fails at 10 miles. A bicycle handles neighborhood errands, but a car cruises at constant speed once on the highway. Algorithm analysis is the same science — it predicts how your code behaves before input grows.</p>
+<p>Consider Google: it processes 40,000+ queries per second. If search were O(n²) instead of O(n log n), each query would take years instead of milliseconds. Facebook&#x27;s News Feed ranks billions of posts in real time. Amazon recommends from 350+ million products. Without algorithm analysis, engineers build bridges without load-testing them.</p>
+<p><strong>Three reasons every developer needs algorithm analysis:</strong></p>
+<ol>
+<li class=""><strong>Scalability prediction</strong> — Code that runs fine on 100 items may crash on 100,000.</li>
+<li class=""><strong>Tool selection</strong> — HashMap (O(1)) vs. TreeMap (O(log n)) trades speed for ordering.</li>
+<li class=""><strong>Bottleneck hunting</strong> — A single O(n³) loop can dominate an entire system&#x27;s runtime.</li>
+</ol>
+<blockquote>
+<p><strong>Pro Tip:</strong> Always ask &quot;What happens when n is 10? 1000? 1,000,000?&quot; If you can&#x27;t answer, you need asymptotic analysis.</p>
+</blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Algorithm analysis is the engineering discipline that turns &quot;it works on my machine&quot; into &quot;it scales to production.&quot;</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-at-a-glance">Chapter at a Glance<a href="#chapter-at-a-glance" class="hash-link" aria-label="Direct link to Chapter at a Glance" title="Direct link to Chapter at a Glance" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Topic</th><th>Key Insight</th><th>Practical Takeaway</th></tr></thead><tbody><tr><td>Asymptotic Notation</td><td>Big-O, Θ, Ω describe upper, tight, and lower bounds</td><td>Always express algorithm efficiency using Big-O for worst-case analysis</td></tr><tr><td>Recurrence Relations</td><td>Recursive algorithms modeled as T(n) = aT(n/b) + f(n)</td><td>Master theorem solves most common recurrences in one step</td></tr><tr><td>Substitution Method</td><td>Guess + induction proves asymptotic bounds</td><td>Use when master theorem doesn&#x27;t apply; guess from experience</td></tr><tr><td>Recursion-Tree Method</td><td>Visualize recursion as levels with per-level costs</td><td>Builds intuition for why divide-and-conquer algorithms have log factors</td></tr><tr><td>Master Theorem</td><td>Three cases covering polynomial comparisons</td><td>The fastest way to analyze divide-and-conquer recurrences</td></tr><tr><td>Amortized Analysis</td><td>Average cost per operation over a sequence</td><td>Reveals O(1) amortized cost for structures with rare expensive ops</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-roadmap">Chapter Roadmap<a href="#chapter-roadmap" class="hash-link" aria-label="Direct link to Chapter Roadmap" title="Direct link to Chapter Roadmap" translate="no">​</a></h3>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">flowchart LR</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A[Asymptotic Notation] --&gt; B[Recurrence Relations]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; C[Substitution Method]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; D[Recursion-Tree Method]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; E[Master Theorem]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A --&gt; F[Amortized Analysis]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; G[Aggregate Method]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; H[Accounting Method]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; I[Potential Method]</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="theory">Theory<a href="#theory" class="hash-link" aria-label="Direct link to Theory" title="Direct link to Theory" translate="no">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch01-analysis.png" alt="Algorithm Analysis Diagram" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="11-asymptotic-notation">1.1 Asymptotic Notation<a href="#11-asymptotic-notation" class="hash-link" aria-label="Direct link to 1.1 Asymptotic Notation" title="Direct link to 1.1 Asymptotic Notation" translate="no">​</a></h3>
+<p>Asymptotic notation describes the limiting behavior of functions as the input size grows to infinity. It abstracts away constant factors and lower-order terms to focus on the fundamental growth rate.</p>
+<p><strong>Definition 1.1 (Big-O).</strong> Let ( f, g : \mathbb{N} \to \mathbb{R}^+ ). We say ( f(n) = O(g(n)) ) if there exist positive constants ( c ) and ( n_0 ) such that for all ( n \ge n_0 ),</p>
+<p>[
+0 \le f(n) \le c \cdot g(n).
+]</p>
+<p>Big-O provides an asymptotic <em>upper bound</em>. For example, ( 3n^2 + 5n + 7 = O(n^3) ) but the tightest bound is ( O(n^2) ).</p>
+<p><strong>Definition 1.2 (Big-Omega).</strong> ( f(n) = \Omega(g(n)) ) if there exist positive constants ( c ) and ( n_0 ) such that for all ( n \ge n_0 ),</p>
+<p>[
+0 \le c \cdot g(n) \le f(n).
+]</p>
+<p>Big-Omega provides an asymptotic <em>lower bound</em>.</p>
+<p><strong>Definition 1.3 (Big-Theta).</strong> ( f(n) = \Theta(g(n)) ) if ( f(n) = O(g(n)) ) and ( f(n) = \Omega(g(n)) ). Equivalently, there exist positive constants ( c_1, c_2, n_0 ) such that</p>
+<p>[
+0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n) \quad \text{for all } n \ge n_0.
+]</p>
+<p>Big-Theta is an asymptotically <em>tight</em> bound.</p>
+<p><strong>Definition 1.4 (Little-o and Little-Omega).</strong> ( f(n) = o(g(n)) ) if for every positive constant ( c &gt; 0 ), there exists ( n_0 ) such that ( f(n) &lt; c \cdot g(n) ) for all ( n \ge n_0 ). This is the asymptotic analogue of a strict inequality. Similarly, ( f(n) = \omega(g(n)) ) if for every positive constant ( c ), ( f(n) &gt; c \cdot g(n) ) for all sufficiently large ( n ).</p>
+<p><strong>Common growth rates (ordered by increasing asymptotic growth):</strong></p>
+<p>[
+O(1) \subset O(\log n) \subset O(n) \subset O(n \log n) \subset O(n^2) \subset O(2^n) \subset O(n!)
+]</p>
+<blockquote>
+<p><strong>Pro Tip:</strong> Always find the <em>tightest</em> Big-O bound. Saying an algorithm is O(n³) might be technically correct, but if it&#x27;s actually O(n log n), the looser bound hides the algorithm&#x27;s true efficiency.</p>
+</blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Asymptotic notation gives a precise language to describe how runtime grows with input size, abstracting away constants and lower-order terms.</p>
+<blockquote>
+<p><strong>Real-World Analogy (Shipping):</strong> Choosing a Big-O bound is like picking a delivery method. A bicycle (O(1)) is perfect for one package downtown. A delivery van (O(n)) handles suburban routes. A freight train (O(n log n)) moves cross-country cargo. A fleet covering every route combination (O(n²)) is wasteful. The right vehicle depends on how many packages you carry.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="algorithm-steps-how-to-find-the-asymptotic-bound">Algorithm Steps: How to Find the Asymptotic Bound<a href="#algorithm-steps-how-to-find-the-asymptotic-bound" class="hash-link" aria-label="Direct link to Algorithm Steps: How to Find the Asymptotic Bound" title="Direct link to Algorithm Steps: How to Find the Asymptotic Bound" translate="no">​</a></h4>
+<ol>
+<li class=""><strong>Identify the dominant operation</strong> — the most frequent instruction (comparisons, swaps, memory accesses).</li>
+<li class=""><strong>Count executions</strong> — express the number of times the dominant operation runs as a function of input size n.</li>
+<li class=""><strong>Drop constant factors</strong> — <code>3n²</code> becomes <code>n²</code>; <code>1000n</code> becomes <code>n</code>.</li>
+<li class=""><strong>Drop lower-order terms</strong> — <code>n² + 100n + 50000</code> becomes <code>n²</code>.</li>
+<li class=""><strong>Classify into a growth rate</strong> — match the result to a known complexity class.</li>
+</ol>
+<p><strong>Example walkthrough:</strong> <code>f(n) = 12n² + 300n + 5</code></p>
+<ul>
+<li class="">n = 10: 12(100) + 3000 + 5 = 4205 — both terms matter</li>
+<li class="">n = 100: 12(10000) + 30000 + 5 = 150005 — n² already dominant</li>
+<li class="">n = 1000: 12(1,000,000) + 300,000 + 5 = 12,300,005 — n² overwhelms everything</li>
+<li class="">n = 10,000: n² term contributes ~99.9% of total</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="dry-run-visualizing-bound-relations">Dry Run: Visualizing Bound Relations<a href="#dry-run-visualizing-bound-relations" class="hash-link" aria-label="Direct link to Dry Run: Visualizing Bound Relations" title="Direct link to Dry Run: Visualizing Bound Relations" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>n</th><th>f(n) = 2n² + 3n</th><th>g(n) = n²</th><th>f(n) ≤ 3·g(n)?</th><th>f(n) ≤ 3·g(n) from n₀ ≥?</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>1</td><td>No (5 &gt; 3)</td><td>—</td></tr><tr><td>2</td><td>14</td><td>4</td><td>No (14 &gt; 12)</td><td>—</td></tr><tr><td>3</td><td>27</td><td>9</td><td>Yes (27 ≤ 27)</td><td>3</td></tr><tr><td>4</td><td>44</td><td>16</td><td>Yes (44 ≤ 48)</td><td>3</td></tr><tr><td>5</td><td>65</td><td>25</td><td>Yes (65 ≤ 75)</td><td>3</td></tr><tr><td>10</td><td>230</td><td>100</td><td>Yes (230 ≤ 300)</td><td>3</td></tr><tr><td>100</td><td>20,300</td><td>10,000</td><td>Yes (20,300 ≤ 30,000)</td><td>3</td></tr></tbody></table>
+<p>Thus 2n² + 3n = O(n²) with c = 3, n₀ = 3.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="code-examples-complexity-in-practice">Code Examples: Complexity in Practice<a href="#code-examples-complexity-in-practice" class="hash-link" aria-label="Direct link to Code Examples: Complexity in Practice" title="Direct link to Code Examples: Complexity in Practice" translate="no">​</a></h4>
+<p><strong>Linear Search — O(n):</strong></p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>C++</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">linearSearch</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">size_t i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">size</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// n iterations</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">==</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">         </span><span class="token comment" style="color:#999988;font-style:italic">// O(1) comparison</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Worst-case: O(n), Best-case: O(1), Average-case: O(n)</span><br></div></code></pre></div></div>
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Python&lt;/summary&gt;
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">linear_search</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> i</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> val </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token builtin">enumerate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic"># n iterations</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> val </span><span class="token operator" style="color:#393A34">==</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">            </span><span class="token comment" style="color:#999988;font-style:italic"># O(1) comparison</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> i                  </span><span class="token comment" style="color:#999988;font-style:italic"># O(1) return</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Worst-case: O(n), Best-case: O(1), Average-case: O(n/2) = O(n)</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Java&lt;/summary&gt;
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">public static int linearSearch(int[] arr, int target) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    for (int i = 0; i &lt; arr.length; i++) {  // n iterations</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        if (arr[i] == target) return i;      // O(1) comparison</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    return -1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// Worst-case: O(n), Best-case: O(1), Average-case: O(n)</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<p><strong>Binary Search — O(log n):</strong></p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>C++</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">binarySearch</span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> lo </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> hi </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">size</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">lo </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> hi</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain">                        </span><span class="token comment" style="color:#999988;font-style:italic">// log₂(n) iterations</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> mid </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> lo </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">hi </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> lo</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">/</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">mid</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">==</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> mid</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">else</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">mid</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> lo </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> mid </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">else</span><span class="token plain"> hi </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> mid </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Requires sorted input. Each iteration halves the search space.</span><br></div></code></pre></div></div>
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Python&lt;/summary&gt;
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">binary_search</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    lo</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> hi </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token builtin">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> lo </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> hi</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">                          </span><span class="token comment" style="color:#999988;font-style:italic"># log₂(n) iterations</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        mid </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">lo </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> hi</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">//</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">mid</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">==</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> mid</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">elif</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">mid</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> target</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            lo </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> mid </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">else</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            hi </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> mid </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">-</span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Each step eliminates half the remaining elements → O(log n)</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Java&lt;/summary&gt;
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">public static int binarySearch(int[] arr, int target) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int lo = 0, hi = arr.length - 1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    while (lo &lt;= hi) {                        // log₂(n) iterations</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        int mid = lo + (hi - lo) / 2;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        if (arr[mid] == target) return mid;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        else if (arr[mid] &lt; target) lo = mid + 1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        else hi = mid - 1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    return -1;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// Only on sorted arrays. O(log n) time, O(1) space.</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-asymptotic-notation">Advantages &amp; Disadvantages of Asymptotic Notation<a href="#advantages--disadvantages-of-asymptotic-notation" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of Asymptotic Notation" title="Direct link to Advantages &amp; Disadvantages of Asymptotic Notation" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Advantage</th><th>Disadvantage</th></tr></thead><tbody><tr><td>Hardware-independent — pure mathematical growth</td><td>Hides constant factors that matter in practice</td></tr><tr><td>Enables direct algorithm comparison</td><td>Ignores low-input-size behavior (n &lt; 100)</td></tr><tr><td>Works for any input size n</td><td>Misleading when hidden constants are large</td></tr><tr><td>Established standard in CS literature</td><td>Ignores cache misses, I/O, and parallelism</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="edge-cases-in-asymptotic-analysis">Edge Cases in Asymptotic Analysis<a href="#edge-cases-in-asymptotic-analysis" class="hash-link" aria-label="Direct link to Edge Cases in Asymptotic Analysis" title="Direct link to Edge Cases in Asymptotic Analysis" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Edge Case</th><th>Example</th><th>Explanation</th></tr></thead><tbody><tr><td><strong>Constant functions</strong></td><td>f(n) = 10, g(n) = 20</td><td>Both O(1) — even a constant of 10²⁰ is still O(1)</td></tr><tr><td><strong>Oscillating functions</strong></td><td>f(n) = n·(1 + sin n)</td><td>Big-O cannot capture oscillating growth cleanly; Θ may not exist</td></tr><tr><td><strong>Very small n</strong></td><td>Sorting n = 3 items</td><td>O(n²) bubble sort can beat O(n log n) quick sort for n &lt; 10</td></tr><tr><td><strong>Equal growth class</strong></td><td>f(n) = 3n², g(n) = 5n²</td><td>Both Θ(n²) — constants differ but class is same</td></tr><tr><td><strong>Multi-variable</strong></td><td>f(n, m) = n + m²</td><td>Two-dimensional; which variable dominates depends on context</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="12-recurrence-relations">1.2 Recurrence Relations<a href="#12-recurrence-relations" class="hash-link" aria-label="Direct link to 1.2 Recurrence Relations" title="Direct link to 1.2 Recurrence Relations" translate="no">​</a></h3>
+<p>A recurrence relation expresses the running time of a recursive algorithm in terms of its running time on smaller inputs. The general form for divide-and-conquer recurrences is:</p>
+<p>[
+T(n) = aT(n/b) + f(n),
+]</p>
+<p>where ( a ) is the number of subproblems, ( n/b ) is the size of each subproblem, and ( f(n) ) is the cost to divide and combine.</p>
+<blockquote>
+<p><strong>Real-World Analogy (Russian Nesting Dolls):</strong> A recurrence is like a set of matryoshka dolls. Each doll contains a smaller copy of itself. To compute the total paint volume, you paint the outer doll (pay f(n)), then recursively paint each inner doll (pay a × T(n/b)). The total depends on how many dolls exist (a) and how much smaller each one gets (b).</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="121-substitution-method">1.2.1 Substitution Method<a href="#121-substitution-method" class="hash-link" aria-label="Direct link to 1.2.1 Substitution Method" title="Direct link to 1.2.1 Substitution Method" translate="no">​</a></h4>
+<p>The substitution method involves two steps:</p>
+<ol>
+<li class=""><strong>Guess</strong> the form of the solution.</li>
+<li class=""><strong>Prove</strong> by induction that the guess is correct.</li>
+</ol>
+<p><strong>Example:</strong> Solve ( T(n) = 2T(\lfloor n/2 \rfloor) + n ).</p>
+<p><em>Guess:</em> ( T(n) = O(n \log n) ). Assume ( T(k) \le ck \lg k ) for ( k &lt; n ).</p>
+<p><em>Proof:</em>
+[
+\begin{aligned}
+T(n) &amp;\le 2 \cdot c (n/2) \lg (n/2) + n \
+&amp;= cn \lg (n/2) + n \
+&amp;= cn \lg n - cn \lg 2 + n \
+&amp;= cn \lg n - cn + n \
+&amp;\le cn \lg n \quad \text{for } c \ge 1.
+\end{aligned}
+]</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="algorithm-steps-for-substitution-method">Algorithm Steps for Substitution Method<a href="#algorithm-steps-for-substitution-method" class="hash-link" aria-label="Direct link to Algorithm Steps for Substitution Method" title="Direct link to Algorithm Steps for Substitution Method" translate="no">​</a></h5>
+<ol>
+<li class=""><strong>Guess the form</strong> — based on similar recurrences you&#x27;ve encountered.</li>
+<li class=""><strong>State the inductive hypothesis</strong> — assume T(k) ≤ c·g(k) for all k &lt; n.</li>
+<li class=""><strong>Substitute</strong> — replace T(n/b) with the inductive bound.</li>
+<li class=""><strong>Simplify</strong> — expand algebra until the desired form emerges.</li>
+<li class=""><strong>Choose constants</strong> — pick c and n₀ to make the induction hold.</li>
+<li class=""><strong>Verify the base case</strong> — check that n₀ and c satisfy small values.</li>
+</ol>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="dry-run-trace-table-tn--2tn2--n-with-guess-tn--cn-lg-n">Dry Run Trace Table: T(n) = 2T(n/2) + n with guess T(n) ≤ cn lg n<a href="#dry-run-trace-table-tn--2tn2--n-with-guess-tn--cn-lg-n" class="hash-link" aria-label="Direct link to Dry Run Trace Table: T(n) = 2T(n/2) + n with guess T(n) ≤ cn lg n" title="Direct link to Dry Run Trace Table: T(n) = 2T(n/2) + n with guess T(n) ≤ cn lg n" translate="no">​</a></h5>
+<p>Assume T(1) = 1. Test the guess for increasing n:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>n</th><th>2T(n/2)</th><th>+ n</th><th>= T(n)</th><th>cn lg₂n (c = 2)</th><th>Valid?</th></tr></thead><tbody><tr><td>2</td><td>2·T(1) = 2</td><td>+2</td><td>4</td><td>2·2·1 = 4</td><td>Yes</td></tr><tr><td>4</td><td>2·T(2) = 8</td><td>+4</td><td>12</td><td>2·4·2 = 16</td><td>Yes</td></tr><tr><td>8</td><td>2·T(4) = 24</td><td>+8</td><td>32</td><td>2·8·3 = 48</td><td>Yes</td></tr><tr><td>16</td><td>2·T(8) = 64</td><td>+16</td><td>80</td><td>2·16·4 = 128</td><td>Yes</td></tr></tbody></table>
+<p>For c = 2, the bound holds for all n ≥ 1. The inequality becomes progressively tighter as n grows.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-substitution-method">Advantages &amp; Disadvantages of Substitution Method<a href="#advantages--disadvantages-of-substitution-method" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of Substitution Method" title="Direct link to Advantages &amp; Disadvantages of Substitution Method" translate="no">​</a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Advantage</th><th>Disadvantage</th></tr></thead><tbody><tr><td>Works for any recurrence form</td><td>Requires accurate guess — bad guess = wasted effort</td></tr><tr><td>Yields exact constants, not just order</td><td>Becomes algebraically heavy for complex recurrences</td></tr><tr><td>Builds deep understanding of induction proofs</td><td>Not systematic — no guaranteed procedure</td></tr></tbody></table>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="edge-cases-in-substitution-method">Edge Cases in Substitution Method<a href="#edge-cases-in-substitution-method" class="hash-link" aria-label="Direct link to Edge Cases in Substitution Method" title="Direct link to Edge Cases in Substitution Method" translate="no">​</a></h5>
+<ul>
+<li class=""><strong>Floor/ceiling functions:</strong> Asymptotic analysis usually ignores ⌊n/2⌋ vs. n/2, but rigorous proofs must handle them.</li>
+<li class=""><strong>Non-integer n:</strong> Recurrences are defined on integers; treat n/2 with floor/ceil.</li>
+<li class=""><strong>Unequal subproblems:</strong> T(n) = T(2n/3) + T(n/3) + n needs Akra-Bazzi, not standard substitution.</li>
+<li class=""><strong>Tightness verification:</strong> Proving O(·) alone is insufficient; you may also need Ω(·) for a Θ result.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="122-recursion-tree-method">1.2.2 Recursion-Tree Method<a href="#122-recursion-tree-method" class="hash-link" aria-label="Direct link to 1.2.2 Recursion-Tree Method" title="Direct link to 1.2.2 Recursion-Tree Method" translate="no">​</a></h4>
+<p>The recursion-tree method visualizes each recursive call as a node, with the cost of each level written explicitly. The total cost is the sum over all levels.</p>
+<p><strong>Example:</strong> For ( T(n) = 3T(n/4) + cn^2 ):</p>
+<ul>
+<li class="">Level 0: ( 1 ) node, cost ( cn^2 ).</li>
+<li class="">Level 1: ( 3 ) nodes, each cost ( c(n/4)^2 = cn^2/16 ), total ( 3cn^2/16 ).</li>
+<li class="">Level 2: ( 9 ) nodes, each cost ( c(n/16)^2 = cn^2/256 ), total ( 9cn^2/256 ).</li>
+<li class="">Depth: ( \log_4 n ).</li>
+<li class="">Total: ( cn^2 \sum_{i=0}^{\log_4 n} (3/16)^i \le cn^2 \cdot \frac{1}{1 - 3/16} = (16/13)cn^2 = O(n^2) ).</li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="dry-run-trace-table-tn--3tn4--cn">Dry Run Trace Table: T(n) = 3T(n/4) + cn²<a href="#dry-run-trace-table-tn--3tn4--cn" class="hash-link" aria-label="Direct link to Dry Run Trace Table: T(n) = 3T(n/4) + cn²" title="Direct link to Dry Run Trace Table: T(n) = 3T(n/4) + cn²" translate="no">​</a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Level i</th><th>Nodes</th><th>Node Cost</th><th>Level Cost</th><th>Running Sum</th></tr></thead><tbody><tr><td>0</td><td>1 = 3⁰</td><td>c(n/4⁰)² = cn²</td><td>cn²</td><td>cn²</td></tr><tr><td>1</td><td>3 = 3¹</td><td>c(n/4¹)² = cn²/16</td><td>(3/16)cn²</td><td>(1 + 3/16)cn²</td></tr><tr><td>2</td><td>9 = 3²</td><td>c(n/4²)² = cn²/256</td><td>(9/256)cn²</td><td>(1 + 3/16 + 9/256)cn²</td></tr><tr><td>3</td><td>27 = 3³</td><td>c(n/4³)² = cn²/4096</td><td>(27/4096)cn²</td><td>(continued)</td></tr><tr><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td></tr><tr><td>log₄ n</td><td>n^{log₄ 3}</td><td>c(1)² = c</td><td>c·n^{log₄ 3}</td><td>Total &lt; (16/13)cn²</td></tr></tbody></table>
+<p>The geometric ratio r = 3/16 &lt; 1, so the series converges. The deepest level contributes negligible cost.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-recursion-tree-method">Advantages &amp; Disadvantages of Recursion-Tree Method<a href="#advantages--disadvantages-of-recursion-tree-method" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of Recursion-Tree Method" title="Direct link to Advantages &amp; Disadvantages of Recursion-Tree Method" translate="no">​</a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Advantage</th><th>Disadvantage</th></tr></thead><tbody><tr><td>Intuitive visual representation</td><td>Impractical for complex recurrences</td></tr><tr><td>No initial guess required</td><td>Becomes messy with non-uniform branching</td></tr><tr><td>Handles unbalanced recurrences</td><td>Level sums may be difficult to compute in closed form</td></tr></tbody></table>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="edge-cases-in-recursion-tree-method">Edge Cases in Recursion-Tree Method<a href="#edge-cases-in-recursion-tree-method" class="hash-link" aria-label="Direct link to Edge Cases in Recursion-Tree Method" title="Direct link to Edge Cases in Recursion-Tree Method" translate="no">​</a></h5>
+<ul>
+<li class=""><strong>Uneven depth:</strong> In quicksort&#x27;s worst case, the tree is highly unbalanced; computing level costs is harder.</li>
+<li class=""><strong>Non-constant branching:</strong> Algorithms that branch on data values rather than fixed ratios produce irregular trees.</li>
+<li class=""><strong>Fractional nodes:</strong> Floor/ceil effects create slightly irregular tree shapes — usually safe to ignore.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="123-master-theorem">1.2.3 Master Theorem<a href="#123-master-theorem" class="hash-link" aria-label="Direct link to 1.2.3 Master Theorem" title="Direct link to 1.2.3 Master Theorem" translate="no">​</a></h4>
+<p><strong>Theorem 1.1 (Master Theorem).</strong> Let ( a \ge 1 ) and ( b &gt; 1 ) be constants, let ( f(n) ) be a function, and let ( T(n) = aT(n/b) + f(n) ). Then:</p>
+<ol>
+<li class="">If ( f(n) = O(n^{\log_b a - \epsilon}) ) for some ( \epsilon &gt; 0 ), then ( T(n) = \Theta(n^{\log_b a}) ).</li>
+<li class="">If ( f(n) = \Theta(n^{\log_b a}) ), then ( T(n) = \Theta(n^{\log_b a} \log n) ).</li>
+<li class="">If ( f(n) = \Omega(n^{\log_b a + \epsilon}) ) for some ( \epsilon &gt; 0 ) and if ( af(n/b) \le cf(n) ) for some ( c &lt; 1 ) and all sufficiently large ( n ), then ( T(n) = \Theta(f(n)) ).</li>
+</ol>
+<p><strong>Examples:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Recurrence</th><th>( a )</th><th>( b )</th><th>( \log_b a )</th><th>( f(n) )</th><th>Case</th><th>Solution</th></tr></thead><tbody><tr><td>( T(n) = 2T(n/2) + n )</td><td>2</td><td>2</td><td>1</td><td>( n )</td><td>2</td><td>( \Theta(n \log n) )</td></tr><tr><td>( T(n) = 2T(n/2) + 1 )</td><td>2</td><td>2</td><td>1</td><td>( 1 )</td><td>1</td><td>( \Theta(n) )</td></tr><tr><td>( T(n) = 4T(n/2) + n^3 )</td><td>4</td><td>2</td><td>2</td><td>( n^3 )</td><td>3</td><td>( \Theta(n^3) )</td></tr><tr><td>( T(n) = 4T(n/2) + n^2 )</td><td>4</td><td>2</td><td>2</td><td>( n^2 )</td><td>2</td><td>( \Theta(n^2 \log n) )</td></tr></tbody></table>
+<blockquote>
+<p><strong>Pro Tip:</strong> When applying the master theorem, first compute log_b a, then compare f(n) to n^{log_b a} — these are the two critical numbers that determine the case.</p>
+<p><strong>Warning:</strong> The master theorem only works for recurrences of the exact form T(n) = aT(n/b) + f(n). If the subproblem sizes differ (e.g., T(n) = T(n-1) + n), you must use other methods.</p>
+</blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Recurrence relations model recursive algorithm costs, and the master theorem solves the common divide-and-conquer cases in constant time by comparing f(n) with n^{log_b a}.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="algorithm-steps-how-to-apply-the-master-theorem">Algorithm Steps: How to Apply the Master Theorem<a href="#algorithm-steps-how-to-apply-the-master-theorem" class="hash-link" aria-label="Direct link to Algorithm Steps: How to Apply the Master Theorem" title="Direct link to Algorithm Steps: How to Apply the Master Theorem" translate="no">​</a></h5>
+<ol>
+<li class=""><strong>Identify a, b, and f(n)</strong> from the recurrence T(n) = aT(n/b) + f(n).</li>
+<li class=""><strong>Compute ρ = log_b a</strong> — the critical exponent.</li>
+<li class=""><strong>Compare f(n) to n^ρ</strong>:
+<ul>
+<li class=""><strong>Case 1:</strong> f(n) = O(n^{ρ-ε}) for ε &gt; 0 → recursion dominates → T(n) = Θ(n^ρ).</li>
+<li class=""><strong>Case 2:</strong> f(n) = Θ(n^ρ) → equal weight → T(n) = Θ(n^ρ log n).</li>
+<li class=""><strong>Case 3:</strong> f(n) = Ω(n^{ρ+ε}) for ε &gt; 0 AND af(n/b) ≤ cf(n) for c &lt; 1 → divide/combine dominates → T(n) = Θ(f(n)).</li>
+</ul>
+</li>
+<li class=""><strong>Verify regularity (Case 3 only)</strong> — check af(n/b) ≤ cf(n) holds.</li>
+</ol>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="dry-run-comparing-fn-with-nlog_b-a">Dry Run: Comparing f(n) with n^{log_b a}<a href="#dry-run-comparing-fn-with-nlog_b-a" class="hash-link" aria-label="Direct link to Dry Run: Comparing f(n) with n^{log_b a}" title="Direct link to Dry Run: Comparing f(n) with n^{log_b a}" translate="no">​</a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Recurrence</th><th>a</th><th>b</th><th>log_b a</th><th>f(n)</th><th>Compare f(n) to n^{log_b a}</th><th>Case</th><th>Solution</th></tr></thead><tbody><tr><td>T(n) = 2T(n/2) + n</td><td>2</td><td>2</td><td>1</td><td>n</td><td>n = Θ(n¹) → equal</td><td>2</td><td>Θ(n log n)</td></tr><tr><td>T(n) = 2T(n/2) + 1</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1 = O(n^{1-ε}) → smaller</td><td>1</td><td>Θ(n)</td></tr><tr><td>T(n) = 4T(n/2) + n³</td><td>4</td><td>2</td><td>2</td><td>n³</td><td>n³ = Ω(n^{2+ε}) → larger</td><td>3</td><td>Θ(n³)</td></tr><tr><td>T(n) = 4T(n/2) + n²</td><td>4</td><td>2</td><td>2</td><td>n²</td><td>n² = Θ(n²) → equal</td><td>2</td><td>Θ(n² log n)</td></tr><tr><td>T(n) = 3T(n/3) + n</td><td>3</td><td>3</td><td>1</td><td>n</td><td>n = Θ(n¹) → equal</td><td>2</td><td>Θ(n log n)</td></tr><tr><td>T(n) = 2T(n/4) + √n</td><td>2</td><td>4</td><td>0.5</td><td>√n</td><td>√n = Θ(n^{0.5}) → equal</td><td>2</td><td>Θ(√n log n)</td></tr></tbody></table>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-the-master-theorem">Advantages &amp; Disadvantages of the Master Theorem<a href="#advantages--disadvantages-of-the-master-theorem" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of the Master Theorem" title="Direct link to Advantages &amp; Disadvantages of the Master Theorem" translate="no">​</a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Advantage</th><th>Disadvantage</th></tr></thead><tbody><tr><td>Solves common recurrences in seconds</td><td>Only works for T(n) = aT(n/b) + f(n) form</td></tr><tr><td>No induction or heavy algebra required</td><td>Fails when f(n) and n^{log_b a} differ by non-polynomial factor (e.g., log n)</td></tr><tr><td>Three clear, memorizable cases</td><td>Case 3 requires verifying the regularity condition</td></tr><tr><td>Industry standard — used in CLRS and papers</td><td>Cannot handle T(n) = T(n-1) + n or other non-divide-and-conquer forms</td></tr></tbody></table>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="edge-cases-where-the-master-theorem-fails">Edge Cases Where the Master Theorem Fails<a href="#edge-cases-where-the-master-theorem-fails" class="hash-link" aria-label="Direct link to Edge Cases Where the Master Theorem Fails" title="Direct link to Edge Cases Where the Master Theorem Fails" translate="no">​</a></h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Edge Case</th><th>Example</th><th>Why It Fails</th><th>Alternative</th></tr></thead><tbody><tr><td>Non-polynomial gap</td><td>T(n) = 2T(n/2) + n/log n</td><td>f(n) differs by log factor, not n^ε</td><td>Recursion-tree / substitution</td></tr><tr><td>Unbalanced subproblems</td><td>T(n) = T(n-1) + n</td><td>Sizes don&#x27;t divide evenly</td><td>Iteration method</td></tr><tr><td>Different subproblem sizes</td><td>T(n) = T(2n/3) + T(n/3) + n</td><td>Not of the form aT(n/b)</td><td>Akra-Bazzi method</td></tr><tr><td>Non-constant a or b</td><td>T(n) = √n·T(√n) + n</td><td>a depends on n</td><td>Substitution</td></tr><tr><td>Gap between cases</td><td>T(n) = 2T(n/2) + n/lg n</td><td>f(n) is polynomially smaller?</td><td>Extended master theorem</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="code-implementations-merge-sort-divide-and-conquer">Code Implementations: Merge Sort (Divide and Conquer)<a href="#code-implementations-merge-sort-divide-and-conquer" class="hash-link" aria-label="Direct link to Code Implementations: Merge Sort (Divide and Conquer)" title="Direct link to Code Implementations: Merge Sort (Divide and Conquer)" translate="no">​</a></h4>
+<p><strong>Merge Sort — O(n log n):</strong></p>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>C++</summary><div><div class="collapsibleContent_i85q">
+<!-- -->
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">merge</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> l</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> m</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">L</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">begin</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> l</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">begin</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> m </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">R</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">begin</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> m </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">begin</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> r </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> k </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> l</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">i </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> L</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">size</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&amp;&amp;</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> R</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">size</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">k</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">L</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> R</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> L</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> R</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">i </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> L</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">size</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">k</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> L</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">j </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> R</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">size</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">k</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> R</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">void</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">mergeSort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token operator" style="color:#393A34">&amp;</span><span class="token plain"> arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> l</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">l </span><span class="token operator" style="color:#393A34">&gt;=</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">return</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">                     </span><span class="token comment" style="color:#999988;font-style:italic">// O(1) — base case</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> m </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> l </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">r </span><span class="token operator" style="color:#393A34">-</span><span class="token plain"> l</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">/</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token function" style="color:#d73a49">mergeSort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> l</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> m</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">                    </span><span class="token comment" style="color:#999988;font-style:italic">// T(n/2)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token function" style="color:#d73a49">mergeSort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> m </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">                </span><span class="token comment" style="color:#999988;font-style:italic">// T(n/2)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token function" style="color:#d73a49">merge</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> l</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> m</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> r</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">                     </span><span class="token comment" style="color:#999988;font-style:italic">// O(n)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">// Recurrence: T(n) = 2T(n/2) + n → Θ(n log n)</span><br></div></code></pre></div></div>
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Python&lt;/summary&gt;
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">def</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">merge_sort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> </span><span class="token builtin">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">                       </span><span class="token comment" style="color:#999988;font-style:italic"># O(1) — base case</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> arr</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    mid </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token builtin">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">//</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">2</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    left </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> merge_sort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">mid</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">             </span><span class="token comment" style="color:#999988;font-style:italic"># T(n/2)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    right </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> merge_sort</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">arr</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">mid</span><span class="token punctuation" style="color:#393A34">:</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">            </span><span class="token comment" style="color:#999988;font-style:italic"># T(n/2)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic"># Merge — O(n)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    result </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">while</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> </span><span class="token builtin">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">left</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">and</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> </span><span class="token builtin">len</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">right</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> left</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;=</span><span class="token plain"> right</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            result</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">append</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">left</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">+=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token keyword" style="color:#00009f">else</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            result</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">append</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">right</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> j </span><span class="token operator" style="color:#393A34">+=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> result </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> left</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">:</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> right</span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">j</span><span class="token punctuation" style="color:#393A34">:</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Recurrence: T(n) = 2T(n/2) + n → Θ(n log n)</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Java&lt;/summary&gt;
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">public static void mergeSort(int[] arr, int l, int r) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    if (l &gt;= r) return;                      // O(1) — base case</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int m = l + (r - l) / 2;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    mergeSort(arr, l, m);                     // T(n/2)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    mergeSort(arr, m + 1, r);                 // T(n/2)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    merge(arr, l, m, r);                      // O(n)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">private static void merge(int[] arr, int l, int m, int r) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int[] L = Arrays.copyOfRange(arr, l, m + 1);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int[] R = Arrays.copyOfRange(arr, m + 1, r + 1);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    int i = 0, j = 0, k = l;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    while (i &lt; L.length &amp;&amp; j &lt; R.length)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        arr[k++] = (L[i] &lt;= R[j]) ? L[i++] : R[j++];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    while (i &lt; L.length) arr[k++] = L[i++];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    while (j &lt; R.length) arr[k++] = R[j++];</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// Recurrence: T(n) = 2T(n/2) + n → Master Theorem Case 2 → Θ(n log n)</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-recurrence-analysis-methods">Advantages &amp; Disadvantages of Recurrence Analysis Methods<a href="#advantages--disadvantages-of-recurrence-analysis-methods" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of Recurrence Analysis Methods" title="Direct link to Advantages &amp; Disadvantages of Recurrence Analysis Methods" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Method</th><th>Advantages</th><th>Disadvantages</th></tr></thead><tbody><tr><td><strong>Substitution</strong></td><td>Any recurrence form, exact constants</td><td>Needs a good guess, algebra-heavy</td></tr><tr><td><strong>Recursion-Tree</strong></td><td>Intuitive, no guess needed</td><td>Messy for complex branching</td></tr><tr><td><strong>Master Theorem</strong></td><td>Fastest, systematic, three clear cases</td><td>Restricted form, fails on non-polynomial gaps</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="13-amortized-analysis">1.3 Amortized Analysis<a href="#13-amortized-analysis" class="hash-link" aria-label="Direct link to 1.3 Amortized Analysis" title="Direct link to 1.3 Amortized Analysis" translate="no">​</a></h3>
+<p>Amortized analysis gives the average performance of each operation in the worst case over a sequence of operations. Three methods exist.</p>
+<blockquote>
+<p><strong>Real-World Analogy (Netflix Subscription):</strong> A Netflix subscription costs $15/month regardless of how many movies you watch. Watch 1 movie → cost is $15. Watch 30 movies → amortized cost is $0.50/movie. Renting individually costs $5/movie — cheaper for 1 movie but far more expensive for 30. A dynamic array is the same: occasional O(n) &quot;rental&quot; costs are absorbed into cheap O(1) &quot;subscription&quot; payments.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="131-aggregate-method">1.3.1 Aggregate Method<a href="#131-aggregate-method" class="hash-link" aria-label="Direct link to 1.3.1 Aggregate Method" title="Direct link to 1.3.1 Aggregate Method" translate="no">​</a></h4>
+<p>Compute the total cost of ( m ) operations and divide by ( m ).</p>
+<p><strong>Example (Dynamic array resizing):</strong> A dynamic array doubles its capacity when full. The cost of inserting the ( i )-th element is ( O(1) ) except when ( i ) is a power of two, where the cost is ( O(i) ) to copy existing elements. Total cost for ( n ) insertions:</p>
+<p>[
+\sum_{i=0}^{\lfloor \lg n \rfloor} 2^i = 2n - 1.
+]</p>
+<p>Amortized cost per insertion: ( (2n - 1)/n = O(1) ).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="132-accounting-method">1.3.2 Accounting Method<a href="#132-accounting-method" class="hash-link" aria-label="Direct link to 1.3.2 Accounting Method" title="Direct link to 1.3.2 Accounting Method" translate="no">​</a></h4>
+<p>Assign different amortized costs to different operations. When the amortized cost exceeds the actual cost, the surplus is stored as &quot;credit.&quot; Credit is spent to pay for operations whose actual cost exceeds amortized cost.</p>
+<p><strong>Binary counter:</strong> A ( k )-bit binary counter increments from 0 to ( n ). Each flip of a bit costs 1. The amortized cost per increment is 2: charge 1 for flipping the 0 to 1, and 1 for future flips from 1 back to 0. Each bit flip is prepaid.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="133-potential-method">1.3.3 Potential Method<a href="#133-potential-method" class="hash-link" aria-label="Direct link to 1.3.3 Potential Method" title="Direct link to 1.3.3 Potential Method" translate="no">​</a></h4>
+<p>Define a potential function ( \Phi ) that maps the data structure state to a non-negative real number. The amortized cost of an operation is:</p>
+<p>[
+\hat{c} = c + \Phi(D_{i}) - \Phi(D_{i-1}),
+]</p>
+<p>where ( c ) is the actual cost and ( D_i ) is the state after the ( i )-th operation.</p>
+<p><strong>Example (Stack with multipop):</strong> Define ( \Phi = \text{number of elements on stack} ). For a push: actual cost 1, potential increases by 1, amortized cost = ( 1 + 1 = 2 ). For a multipop of ( k ) elements: actual cost ( k ), potential decreases by ( k ), amortized cost = ( k - k = 0 ).</p>
+<blockquote>
+<p><strong>Pro Tip:</strong> The potential method is the most powerful amortized technique because a well-chosen potential function can handle complex data structures where aggregate and accounting become unwieldy.</p>
+<p><strong>Remember:</strong> Amortized analysis is not the same as average-case analysis — amortized guarantees hold for <em>every</em> sequence of operations, not just on average.</p>
+</blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Amortized analysis reveals that data structures with occasional expensive operations can still guarantee constant average cost per operation across any sequence.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="algorithm-steps-for-amortized-analysis">Algorithm Steps for Amortized Analysis<a href="#algorithm-steps-for-amortized-analysis" class="hash-link" aria-label="Direct link to Algorithm Steps for Amortized Analysis" title="Direct link to Algorithm Steps for Amortized Analysis" translate="no">​</a></h4>
+<p><strong>Aggregate Method:</strong></p>
+<ol>
+<li class="">Trace the sequence of m operations.</li>
+<li class="">Sum all actual costs: total = Σc_i.</li>
+<li class="">Divide by m: amortized cost = total / m.</li>
+</ol>
+<p><strong>Accounting Method:</strong></p>
+<ol>
+<li class="">Assign an amortized cost (≥ actual) to each operation type.</li>
+<li class="">Track the credit balance: credit_i = Σ(amortized_j − actual_j) for j ≤ i.</li>
+<li class="">Prove credit never goes negative.</li>
+</ol>
+<p><strong>Potential Method:</strong></p>
+<ol>
+<li class="">Define Φ(D_i) — a non-negative potential function on the data structure state.</li>
+<li class="">Compute amortized cost: â = actual + Φ(D_i) − Φ(D_{i-1}).</li>
+<li class="">Show Φ(D_0) = 0 and Φ(D_i) ≥ 0 for all i.</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="dry-run-dynamic-array-insertions-aggregate-method">Dry Run: Dynamic Array Insertions (Aggregate Method)<a href="#dry-run-dynamic-array-insertions-aggregate-method" class="hash-link" aria-label="Direct link to Dry Run: Dynamic Array Insertions (Aggregate Method)" title="Direct link to Dry Run: Dynamic Array Insertions (Aggregate Method)" translate="no">​</a></h4>
+<p>A dynamic array starts empty (capacity 1). When full, it doubles capacity and copies all elements.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Ins #</th><th>Size n</th><th>Capacity</th><th>Action</th><th>Actual Cost</th><th>Running Total</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>1</td><td>insert</td><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td><td>2</td><td>double (copy 1) + insert</td><td>1 + 1 = 2</td><td>3</td></tr><tr><td>3</td><td>3</td><td>4</td><td>double (copy 2) + insert</td><td>2 + 1 = 3</td><td>6</td></tr><tr><td>4</td><td>4</td><td>4</td><td>insert</td><td>1</td><td>7</td></tr><tr><td>5</td><td>5</td><td>8</td><td>double (copy 4) + insert</td><td>4 + 1 = 5</td><td>12</td></tr><tr><td>6</td><td>6</td><td>8</td><td>insert</td><td>1</td><td>13</td></tr><tr><td>7</td><td>7</td><td>8</td><td>insert</td><td>1</td><td>14</td></tr><tr><td>8</td><td>8</td><td>8</td><td>insert</td><td>1</td><td>15</td></tr><tr><td>9</td><td>9</td><td>16</td><td>double (copy 8) + insert</td><td>8 + 1 = 9</td><td>24</td></tr></tbody></table>
+<p>Total cost for n insertions = n + sum of powers of two (for copying) &lt; n + 2n = 3n. Amortized per insertion = 3n/n = O(1).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="code-examples-dynamic-array-amortized-o1-append">Code Examples: Dynamic Array (Amortized O(1) Append)<a href="#code-examples-dynamic-array-amortized-o1-append" class="hash-link" aria-label="Direct link to Code Examples: Dynamic Array (Amortized O(1) Append)" title="Direct link to Code Examples: Dynamic Array (Amortized O(1) Append)" translate="no">​</a></h4>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>C++ (std::vector)&lt;/summary&gt;
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token macro property directive-hash" style="color:#36acaa">#</span><span class="token macro property directive keyword" style="color:#00009f">include</span><span class="token macro property" style="color:#36acaa"> </span><span class="token macro property string" style="color:#e3116c">&lt;vector&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">main</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    vector</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token keyword" style="color:#00009f">int</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token plain"> v</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">                          </span><span class="token comment" style="color:#999988;font-style:italic">// capacity starts at 0</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i </span><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">1&#x27;000&#x27;000</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> i</span><span class="token operator" style="color:#393A34">++</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        v</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">push_back</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain">                     </span><span class="token comment" style="color:#999988;font-style:italic">// amortized O(1)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">// When capacity exhausted, vector doubles its buffer</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        </span><span class="token comment" style="color:#999988;font-style:italic">// and copies all existing elements — O(n) but rare</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// Total cost across all push_backs: O(n)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// Amortized per push_back: O(1)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Python (list)&lt;/summary&gt;
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-python codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">arr </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain">                                    </span><span class="token comment" style="color:#999988;font-style:italic"># dynamic array</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">for</span><span class="token plain"> i </span><span class="token keyword" style="color:#00009f">in</span><span class="token plain"> </span><span class="token builtin">range</span><span class="token punctuation" style="color:#393A34">(</span><span class="token number" style="color:#36acaa">1_000_000</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    arr</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">append</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">i</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain">                           </span><span class="token comment" style="color:#999988;font-style:italic"># amortized O(1)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Python&#x27;s list uses geometric growth (~1.125×)</span><span class="token plain"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Overall: O(n) total, O(1) amortized per append</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Java (ArrayList)&lt;/summary&gt;
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">import java.util.ArrayList;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">public class DynamicArrayDemo {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    public static void main(String[] args) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        ArrayList&lt;Integer&gt; list = new ArrayList&lt;&gt;();</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        for (int i = 0; i &lt; 1_000_000; i++) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            list.add(i);                    // amortized O(1)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        }                                   // ArrayList grows by 50% (1.5×)</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="advantages--disadvantages-of-amortized-analysis">Advantages &amp; Disadvantages of Amortized Analysis<a href="#advantages--disadvantages-of-amortized-analysis" class="hash-link" aria-label="Direct link to Advantages &amp; Disadvantages of Amortized Analysis" title="Direct link to Advantages &amp; Disadvantages of Amortized Analysis" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Advantage</th><th>Disadvantage</th></tr></thead><tbody><tr><td>Provides real-world average cost per operation</td><td>Does not bound cost of any single operation</td></tr><tr><td>Guarantees worst-case over any sequence</td><td>Requires careful potential function design</td></tr><tr><td>Reveals O(1) cost where worst-case suggests O(n)</td><td>Not applicable outside sequential operations</td></tr><tr><td>Three complementary methods offer flexibility</td><td>Potential method is abstract and non-intuitive</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="edge-cases-in-amortized-analysis">Edge Cases in Amortized Analysis<a href="#edge-cases-in-amortized-analysis" class="hash-link" aria-label="Direct link to Edge Cases in Amortized Analysis" title="Direct link to Edge Cases in Amortized Analysis" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Edge Case</th><th>Example</th><th>Explanation</th></tr></thead><tbody><tr><td><strong>Shrink as well as grow</strong></td><td>Dynamic array shrink on delete</td><td>Simple doubling fails; use halving at ¼ capacity</td></tr><tr><td><strong>Non-geometric growth</strong></td><td>Fibonacci heap</td><td>More complex potential functions required</td></tr><tr><td><strong>Concurrent operations</strong></td><td>Lock contention</td><td>Standard analysis assumes sequential execution</td></tr><tr><td><strong>Real-time constraints</strong></td><td>Audio / video processing</td><td>O(1) amortized ≠ O(1) per op; individual ops may be slow</td></tr><tr><td><strong>Shrink-resistant structures</strong></td><td>Hash table with deletions</td><td>Frequent insert/delete cycles can break amortized bounds</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-11-ordering-functions-by-growth-rate">Example 1.1: Ordering Functions by Growth Rate<a href="#example-11-ordering-functions-by-growth-rate" class="hash-link" aria-label="Direct link to Example 1.1: Ordering Functions by Growth Rate" title="Direct link to Example 1.1: Ordering Functions by Growth Rate" translate="no">​</a></h3>
+<p>Order the following functions by asymptotic growth rate:</p>
+<p>[
+f_1(n) = 2^n, \quad f_2(n) = n^{3/2}, \quad f_3(n) = n \log n, \quad f_4(n) = \log(n!), \quad f_5(n) = n^3, \quad f_6(n) = n^{0.5}
+]</p>
+<p><strong>Solution:</strong> Compute ( \log(n!) = \Theta(n \log n) ) by Stirling&#x27;s approximation. Ordering (slowest to fastest): ( n^{0.5} \prec n \log n \prec \log(n!) \prec n^{3/2} \prec n^3 \prec 2^n ).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-12-solving-by-master-theorem">Example 1.2: Solving by Master Theorem<a href="#example-12-solving-by-master-theorem" class="hash-link" aria-label="Direct link to Example 1.2: Solving by Master Theorem" title="Direct link to Example 1.2: Solving by Master Theorem" translate="no">​</a></h3>
+<p>Solve ( T(n) = 3T(n/3) + n ).</p>
+<p><strong>Solution:</strong> Here ( a = 3 ), ( b = 3 ), ( \log_b a = 1 ), ( f(n) = n = \Theta(n^1) ). This is Case 2 of the master theorem, so ( T(n) = \Theta(n \log n) ).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-13-substitution-method">Example 1.3: Substitution Method<a href="#example-13-substitution-method" class="hash-link" aria-label="Direct link to Example 1.3: Substitution Method" title="Direct link to Example 1.3: Substitution Method" translate="no">​</a></h3>
+<p>Solve ( T(n) = T(\sqrt{n}) + O(\log \log n) ) using substitution.</p>
+<p><strong>Solution:</strong> Let ( m = \log n ), so ( n = 2^m ). Then ( T(2^m) = T(2^{m/2}) + O(\log m) ). Let ( S(m) = T(2^m) ). Then ( S(m) = S(m/2) + O(\log m) ). By the master theorem, ( S(m) = O(\log^2 m) ). Thus ( T(n) = O(\log^2 \log n) ).</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interview-corner">Interview Corner<a href="#interview-corner" class="hash-link" aria-label="Direct link to Interview Corner" title="Direct link to Interview Corner" translate="no">​</a></h2>
+<p>Algorithm analysis is the most frequently tested topic in technical interviews — every solution requires complexity analysis.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="top-10-interview-questions">Top 10 Interview Questions<a href="#top-10-interview-questions" class="hash-link" aria-label="Direct link to Top 10 Interview Questions" title="Direct link to Top 10 Interview Questions" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>What is the difference between O, Ω, and Θ?</strong>
+<em>O = upper bound, Ω = lower bound, Θ = tight bound (both upper and lower).</em></p>
+</li>
+<li class="">
+<p><strong>Solve T(n) = 2T(n/2) + n using the master theorem.</strong>
+<em>a=2, b=2, log_b a=1, f(n)=n=n¹ → Case 2 → Θ(n log n).</em></p>
+</li>
+<li class="">
+<p><strong>What is the amortized cost of n insertions into a dynamic array?</strong>
+<em>O(1) amortized — total = 3n, divided by n = O(1).</em></p>
+</li>
+<li class="">
+<p><strong>Prove that 2ⁿ⁺¹ = O(2ⁿ).</strong>
+<em>2ⁿ⁺¹ = 2·2ⁿ ≤ c·2ⁿ for c = 2, n₀ = 1.</em></p>
+</li>
+<li class="">
+<p><strong>Is n² = Ω(n log n)? Is n² = ω(n log n)?</strong>
+<em>Yes to both: n²/(n log n) → ∞, so n² = ω(n log n) ⊆ Ω(n log n).</em></p>
+</li>
+<li class="">
+<p><strong>When does the master theorem fail?</strong>
+<em>When f(n) and n^{log_b a} differ by a non-polynomial factor, or when the recurrence is not of the form T(n) = aT(n/b) + f(n).</em></p>
+</li>
+<li class="">
+<p><strong>How is amortized analysis different from average-case analysis?</strong>
+<em>Amortized is deterministic over any sequence; average-case assumes a probability distribution over inputs.</em></p>
+</li>
+<li class="">
+<p><strong>Design a data structure with O(1) amortized insert and delete-min.</strong>
+<em>Use a pair of stacks or a finger structure; prove the bound via the accounting method.</em></p>
+</li>
+<li class="">
+<p><strong>Why do we ignore constants in asymptotic analysis?</strong>
+<em>As n → ∞, constants become negligible compared to the growth rate. They matter for profiling but not for scalability classification.</em></p>
+</li>
+<li class="">
+<p><strong>What is the regularity condition in Master Theorem Case 3?</strong>
+<em>af(n/b) ≤ cf(n) for some c &lt; 1 — ensures cost decreases down the recursion tree.</em></p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-pitfalls-table">Common Pitfalls Table<a href="#common-pitfalls-table" class="hash-link" aria-label="Direct link to Common Pitfalls Table" title="Direct link to Common Pitfalls Table" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Pitfall</th><th>Why It&#x27;s Wrong</th><th>Right Approach</th></tr></thead><tbody><tr><td>Writing &quot;O(n) = O(n²)&quot;</td><td>Big-O is a set relation, not equality</td><td>Write &quot;f(n) = O(n²)&quot; meaning f ∈ O(n²)</td></tr><tr><td>Applying master theorem to T(n) = T(n-1) + n</td><td>Subproblem must divide, not decrement</td><td>Use iteration: T(n) = Σ(i) = Θ(n²)</td></tr><tr><td>Confusing amortized with average-case</td><td>Amortized = worst-case bound over any sequence</td><td>Both have different mathematical guarantees</td></tr><tr><td>Ignoring constants for small n</td><td>Constants dominate for n &lt; 100</td><td>Profile and benchmark when n is small</td></tr><tr><td>Claiming binary search is O(n)</td><td>It halves each step → log₂ n iterations</td><td>Each comparison eliminates half the array</td></tr><tr><td>Forgetting regularity in Master Case 3</td><td>Without it, the series may not converge</td><td>Always verify af(n/b) ≤ cf(n)</td></tr><tr><td>Wrong log base in Master Theorem</td><td>Case 2 requires exact polynomial comparison</td><td>log_b a is the only exponent that matters</td></tr><tr><td>Using Big-O when Θ is needed</td><td>O says &quot;at most&quot; but doesn&#x27;t guarantee tightness</td><td>Prefer Θ when you know the exact bound</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="applications-in-real-systems">Applications in Real Systems<a href="#applications-in-real-systems" class="hash-link" aria-label="Direct link to Applications in Real Systems" title="Direct link to Applications in Real Systems" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>System / Technology</th><th>Concept Applied</th><th>How It&#x27;s Used</th></tr></thead><tbody><tr><td><strong>Google Search</strong></td><td>Big-O, recursion-tree</td><td>PageRank converges in O(log n) iterations; indexing requires O(n) crawl pass</td></tr><tr><td><strong>PostgreSQL / MySQL</strong></td><td>Amortized analysis</td><td>B-tree node splits are amortized O(1); buffer pool management uses potential method</td></tr><tr><td><strong>Python list</strong></td><td>Amortized O(1) append</td><td>Geometric growth (~1.125×); append is O(1) amortized, O(n) worst-case</td></tr><tr><td><strong>Java ArrayList</strong></td><td>Amortized analysis</td><td>Grows 50% (1.5×) when full; add() is O(1) amortized</td></tr><tr><td><strong>Redis</strong></td><td>Big-O documentation</td><td>Every command documents Big-O complexity (e.g., ZADD = O(log n))</td></tr><tr><td><strong>Linux CFS scheduler</strong></td><td>O(log n)</td><td>Red-black tree for task management — O(log n) enqueue/dequeue</td></tr><tr><td><strong>Uber / Google Maps</strong></td><td>O((V+E) log V)</td><td>Dijkstra&#x27;s shortest path on road networks</td></tr><tr><td><strong>Apache Kafka</strong></td><td>O(1) sequential I/O</td><td>Log-structured storage appends in O(1); index lookups in O(log n)</td></tr><tr><td><strong>TensorFlow / PyTorch</strong></td><td>O(n³) complexity</td><td>Matrix multiplication limits model scaling; motivates sparse methods</td></tr><tr><td><strong>Git</strong></td><td>O(log n) graph ops</td><td>Merge-base computation in O(log n) via binary search on DAG</td></tr><tr><td><strong>MongoDB</strong></td><td>O(log n) queries</td><td>Default B-tree index on _id — all indexed lookups are O(log n)</td></tr><tr><td><strong>Elasticsearch</strong></td><td>O(log n) + scoring</td><td>Inverted index lookup O(1) per term; TF-IDF scoring O(k) per document</td></tr><tr><td><strong>AWS DynamoDB</strong></td><td>O(1) amortized</td><td>Consistent hash ring; partition splits are amortized O(1)</td></tr><tr><td><strong>Facebook News Feed</strong></td><td>O(n log n) ranking</td><td>EdgeRank / ML ranking sorts billions of candidate posts per user</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="concept-comparison-table">Concept Comparison Table<a href="#concept-comparison-table" class="hash-link" aria-label="Direct link to Concept Comparison Table" title="Direct link to Concept Comparison Table" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Concept</th><th>Definition</th><th>Key Distinction</th><th>Use Case</th></tr></thead><tbody><tr><td>Big-O ( O )</td><td>Asymptotic upper bound</td><td>Worst-case growth</td><td>Algorithm guarantees</td></tr><tr><td>Big-Omega ( \Omega )</td><td>Asymptotic lower bound</td><td>Best-case or lower limit</td><td>Lower-bound proofs</td></tr><tr><td>Big-Theta ( \Theta )</td><td>Asymptotically tight bound</td><td>Both upper and lower</td><td>Exact growth classification</td></tr><tr><td>Master Theorem</td><td>Solves T(n) = aT(n/b) + f(n)</td><td>Compares f(n) to n^{log_b a}</td><td>Divide-and-conquer analysis</td></tr><tr><td>Substitution Method</td><td>Guess + induction proof</td><td>Requires good initial guess</td><td>Non-standard recurrences</td></tr><tr><td>Amortized Analysis</td><td>Average over sequence</td><td>Three methods: aggregate, accounting, potential</td><td>Data structure analysis</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-reference">Quick Reference<a href="#quick-reference" class="hash-link" aria-label="Direct link to Quick Reference" title="Direct link to Quick Reference" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Category</th><th>Key Points</th></tr></thead><tbody><tr><td><strong>Notation</strong></td><td>O = upper bound, Ω = lower bound, Θ = tight bound, o = strict upper, ω = strict lower</td></tr><tr><td><strong>Growth Rates</strong></td><td>1 &lt; log n &lt; n &lt; n log n &lt; n² &lt; 2ⁿ &lt; n! — memorize this ordering</td></tr><tr><td><strong>Master Theorem</strong></td><td>Case 1: f(n) &lt; n^{log_b a} → Θ(n^{log_b a}); Case 2: f(n) = n^{log_b a} → Θ(n^{log_b a} log n); Case 3: f(n) &gt; n^{log_b a} → Θ(f(n))</td></tr><tr><td><strong>Amortized Methods</strong></td><td>Aggregate: total ÷ n; Accounting: prepay credit; Potential: energy function</td></tr><tr><td><strong>Common Pitfalls</strong></td><td>Forget the regularity condition in Master Case 3; Use master theorem on unbalanced recurrences</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross-application-matrix">Cross-Application Matrix<a href="#cross-application-matrix" class="hash-link" aria-label="Direct link to Cross-Application Matrix" title="Direct link to Cross-Application Matrix" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Technique</th><th>DSA Interviews</th><th>Competitive Programming</th><th>System Design</th><th>Academia/Research</th></tr></thead><tbody><tr><td>Big-O Analysis</td><td>Essential for every solution explanation</td><td>Required for problem constraints</td><td>Capacity planning, latency modeling</td><td>Paper complexity proofs</td></tr><tr><td>Master Theorem</td><td>Quick recurrence solving</td><td>Fast divide-and-conquer analysis</td><td>N/A</td><td>Algorithm design verification</td></tr><tr><td>Substitution Method</td><td>Proving tighter bounds</td><td>Verifying non-standard recurrences</td><td>N/A</td><td>Publishing novel algorithms</td></tr><tr><td>Amortized Analysis</td><td>Designing efficient data structures</td><td>Union-find, segment tree analysis</td><td>Database index costing</td><td>Persistent data structure analysis</td></tr><tr><td>Recursion-Tree Method</td><td>Intuition for merge sort / quick sort</td><td>Understanding log factors</td><td>N/A</td><td>Teaching and exposition</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h2>
+<ul>
+<li class="">Asymptotic notation (( O, \Omega, \Theta, o, \omega )) provides a precise language for describing growth rates.</li>
+<li class="">Recurrence relations model recursive algorithms; the master theorem solves many common recurrences in closed form.</li>
+<li class="">The substitution method proves guesses by induction; recursion trees build intuition.</li>
+<li class="">Amortized analysis reveals constant amortized costs for data structures with occasional expensive operations.</li>
+<li class="">Three amortized methods exist: aggregate, accounting, and potential.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-quiz">Chapter Quiz<a href="#chapter-quiz" class="hash-link" aria-label="Direct link to Chapter Quiz" title="Direct link to Chapter Quiz" translate="no">​</a></h3>
+<p><strong>Q1.</strong> Which notation represents an asymptotically tight bound?</p>
+<ul>
+<li class="">A) Big-O</li>
+<li class="">B) Big-Omega</li>
+<li class="">C) Big-Theta</li>
+<li class="">D) Little-o</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+C) Big-Theta — it requires both an upper and lower bound match.
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<p><strong>Q2.</strong> Solve T(n) = 2T(n/4) + n^{0.5} using the master theorem.</p>
+<ul>
+<li class="">A) Θ(n)</li>
+<li class="">B) Θ(√n log n)</li>
+<li class="">C) Θ(√n)</li>
+<li class="">D) Θ(log n)</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is Case 2, so T(n) = Θ(n^{0.5} log n)... Wait — f(n) = √n = n^{1/2}, and log_b a = log_4 2 = 1/2. They match, so Case 2 gives Θ(√n log n). The correct answer is B.
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<p><strong>Q3.</strong> A dynamic array that doubles when full has what amortized insertion cost?</p>
+<ul>
+<li class="">A) O(n)</li>
+<li class="">B) O(log n)</li>
+<li class="">C) O(1)</li>
+<li class="">D) O(n²)</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Answer&lt;/summary&gt;
+C) O(1). Although occasional insertions cost O(n) to copy elements, the amortized cost across n insertions is (2n-1)/n = O(1).
+</summary><div><div class="collapsibleContent_i85q">
+</div></div></details>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercises">Exercises<a href="#exercises" class="hash-link" aria-label="Direct link to Exercises" title="Direct link to Exercises" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="review-questions">Review Questions<a href="#review-questions" class="hash-link" aria-label="Direct link to Review Questions" title="Direct link to Review Questions" translate="no">​</a></h3>
+<ol>
+<li class="">Determine whether ( 2^{n+1} = O(2^n) ). Justify your answer.</li>
+<li class="">Is ( n^2 = \Omega(n \log n) )? Is ( n^2 = \omega(n \log n) )?</li>
+<li class="">State the three cases of the master theorem. Give an example recurrence for each case.</li>
+<li class="">Explain the difference between Big-O and little-o notation.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="application-problems">Application Problems<a href="#application-problems" class="hash-link" aria-label="Direct link to Application Problems" title="Direct link to Application Problems" translate="no">​</a></h3>
+<ol start="5">
+<li class="">Solve ( T(n) = 2T(n/4) + n^{0.5} ) using the master theorem.</li>
+<li class="">Solve ( T(n) = T(n-1) + 1/n ) by iteration.</li>
+<li class="">Show that ( \log(n!) = \Theta(n \log n) ) using Stirling&#x27;s approximation.</li>
+<li class="">Perform amortized analysis of a binary counter using the potential method.</li>
+<li class="">Order: ( n^2, 2^n, \log n, n \log n, n, \sqrt{n}, n! ) by asymptotic growth.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenge-problem">Challenge Problem<a href="#challenge-problem" class="hash-link" aria-label="Direct link to Challenge Problem" title="Direct link to Challenge Problem" translate="no">​</a></h3>
+<ol start="10">
+<li class="">Design a data structure that supports insert and delete-min in ( O(1) ) amortized time. Prove the bound using the accounting method.</li>
+</ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ai-engineering-journey/algorithms/index"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">CS 310: Design and Analysis of Algorithms</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ai-engineering-journey/algorithms/02-searching"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Chapter 2: Searching</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#why-algorithm-analysis-matters" class="table-of-contents__link toc-highlight">Why Algorithm Analysis Matters</a><ul><li><a href="#chapter-at-a-glance" class="table-of-contents__link toc-highlight">Chapter at a Glance</a></li><li><a href="#chapter-roadmap" class="table-of-contents__link toc-highlight">Chapter Roadmap</a></li></ul></li><li><a href="#theory" class="table-of-contents__link toc-highlight">Theory</a><ul><li><a href="#11-asymptotic-notation" class="table-of-contents__link toc-highlight">1.1 Asymptotic Notation</a></li><li><a href="#12-recurrence-relations" class="table-of-contents__link toc-highlight">1.2 Recurrence Relations</a></li><li><a href="#13-amortized-analysis" class="table-of-contents__link toc-highlight">1.3 Amortized Analysis</a></li><li><a href="#example-11-ordering-functions-by-growth-rate" class="table-of-contents__link toc-highlight">Example 1.1: Ordering Functions by Growth Rate</a></li><li><a href="#example-12-solving-by-master-theorem" class="table-of-contents__link toc-highlight">Example 1.2: Solving by Master Theorem</a></li><li><a href="#example-13-substitution-method" class="table-of-contents__link toc-highlight">Example 1.3: Substitution Method</a></li></ul></li><li><a href="#interview-corner" class="table-of-contents__link toc-highlight">Interview Corner</a><ul><li><a href="#top-10-interview-questions" class="table-of-contents__link toc-highlight">Top 10 Interview Questions</a></li><li><a href="#common-pitfalls-table" class="table-of-contents__link toc-highlight">Common Pitfalls Table</a></li></ul></li><li><a href="#applications-in-real-systems" class="table-of-contents__link toc-highlight">Applications in Real Systems</a><ul><li><a href="#concept-comparison-table" class="table-of-contents__link toc-highlight">Concept Comparison Table</a></li><li><a href="#quick-reference" class="table-of-contents__link toc-highlight">Quick Reference</a></li><li><a href="#cross-application-matrix" class="table-of-contents__link toc-highlight">Cross-Application Matrix</a></li></ul></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a><ul><li><a href="#chapter-quiz" class="table-of-contents__link toc-highlight">Chapter Quiz</a></li></ul></li><li><a href="#exercises" class="table-of-contents__link toc-highlight">Exercises</a><ul><li><a href="#review-questions" class="table-of-contents__link toc-highlight">Review Questions</a></li><li><a href="#application-problems" class="table-of-contents__link toc-highlight">Application Problems</a></li><li><a href="#challenge-problem" class="table-of-contents__link toc-highlight">Challenge Problem</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Courses</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/ai-engineering-placement">Placement Course</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/python-programming">Python</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/machine-learning">Machine Learning</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/system-design">System Design</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Raushan666java/learning-playground" target="_blank" rel="noopener noreferrer" class="footer__link-item">Learning Playground<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2026 AI Engineering Journey. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

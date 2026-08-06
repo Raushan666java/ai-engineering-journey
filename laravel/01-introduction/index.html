@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-courses/laravel/01-introduction" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.2">
+<title data-rh="true">Chapter 1: Introduction to Laravel 13 | AI Engineering Journey</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/laravel/01-introduction"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 1: Introduction to Laravel 13 | AI Engineering Journey"><meta data-rh="true" name="description" content="Next: Architecture, Routing, Middleware &amp; Controllers"><meta data-rh="true" property="og:description" content="Next: Architecture, Routing, Middleware &amp; Controllers"><link data-rh="true" rel="icon" href="/ai-engineering-journey/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://raushan666java.github.io/ai-engineering-journey/laravel/01-introduction"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/laravel/01-introduction" hreflang="en"><link data-rh="true" rel="alternate" href="https://raushan666java.github.io/ai-engineering-journey/laravel/01-introduction" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Laravel","item":"https://raushan666java.github.io/ai-engineering-journey/laravel/index"},{"@type":"ListItem","position":2,"name":"Chapter 1: Introduction to Laravel 13","item":"https://raushan666java.github.io/ai-engineering-journey/laravel/01-introduction"}]}</script><link rel="stylesheet" href="/ai-engineering-journey/assets/css/styles.68ae8ef5.css">
+<script src="/ai-engineering-journey/assets/js/runtime~main.4470784e.js" defer="defer"></script>
+<script src="/ai-engineering-journey/assets/js/main.bc7a9306.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ai-engineering-journey/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ai-engineering-journey/"><div class="navbar__logo"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ai-engineering-journey/img/logo.svg" alt="AI Engineering Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI Engineering</b></a><a class="navbar__item navbar__link" href="/ai-engineering-journey/ai-engineering-placement">Placement Course</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ai-engineering-journey/government-exams/index">All Courses</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ai-engineering-journey/government-exams/index"><span class="linkLabel_WmDU">Government Exams — Complete Preparation Hub</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/applied-ai/index"><span class="categoryLinkLabel_W154">Applied Ai</span></a><button aria-label="Expand sidebar category &#x27;Applied Ai&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-technology/index"><span class="categoryLinkLabel_W154">Banking Technology</span></a><button aria-label="Expand sidebar category &#x27;Banking Technology&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/marketing-aptitude/index"><span class="categoryLinkLabel_W154">Marketing Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Marketing Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/banking-financial-awareness/index"><span class="categoryLinkLabel_W154">Banking Financial Awareness</span></a><button aria-label="Expand sidebar category &#x27;Banking Financial Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/big-data/index"><span class="categoryLinkLabel_W154">Big Data</span></a><button aria-label="Expand sidebar category &#x27;Big Data&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-architecture/index"><span class="categoryLinkLabel_W154">Computer Architecture</span></a><button aria-label="Expand sidebar category &#x27;Computer Architecture&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-analysis-interpretation/index"><span class="categoryLinkLabel_W154">Data Analysis Interpretation</span></a><button aria-label="Expand sidebar category &#x27;Data Analysis Interpretation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/english-language/index"><span class="categoryLinkLabel_W154">English Language</span></a><button aria-label="Expand sidebar category &#x27;English Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/hindi-language/index"><span class="categoryLinkLabel_W154">Hindi Language</span></a><button aria-label="Expand sidebar category &#x27;Hindi Language&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/information-security/index"><span class="categoryLinkLabel_W154">Information Security</span></a><button aria-label="Expand sidebar category &#x27;Information Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/speed-drills/index"><span class="categoryLinkLabel_W154">Speed Drills</span></a><button aria-label="Expand sidebar category &#x27;Speed Drills&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-aptitude/index"><span class="categoryLinkLabel_W154">General Aptitude</span></a><button aria-label="Expand sidebar category &#x27;General Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/job-preparation/index"><span class="categoryLinkLabel_W154">Job Preparation</span></a><button aria-label="Expand sidebar category &#x27;Job Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/mock-tests/index"><span class="categoryLinkLabel_W154">Mock Tests</span></a><button aria-label="Expand sidebar category &#x27;Mock Tests&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/quantitative-aptitude/index"><span class="categoryLinkLabel_W154">Quantitative Aptitude</span></a><button aria-label="Expand sidebar category &#x27;Quantitative Aptitude&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/reasoning-ability/index"><span class="categoryLinkLabel_W154">Reasoning Ability</span></a><button aria-label="Expand sidebar category &#x27;Reasoning Ability&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/placement-preparation/index"><span class="categoryLinkLabel_W154">Placement Preparation</span></a><button aria-label="Expand sidebar category &#x27;Placement Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/general-awareness/index"><span class="categoryLinkLabel_W154">General Awareness</span></a><button aria-label="Expand sidebar category &#x27;General Awareness&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/coding-problems/index"><span class="categoryLinkLabel_W154">Coding Problems</span></a><button aria-label="Expand sidebar category &#x27;Coding Problems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/blockchain/index"><span class="categoryLinkLabel_W154">Blockchain</span></a><button aria-label="Expand sidebar category &#x27;Blockchain&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cloud-computing/index"><span class="categoryLinkLabel_W154">Cloud Computing</span></a><button aria-label="Expand sidebar category &#x27;Cloud Computing&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/engineering-mathematics/index"><span class="categoryLinkLabel_W154">Engineering Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Engineering Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/loop-engineering/index"><span class="categoryLinkLabel_W154">Loop Engineering</span></a><button aria-label="Expand sidebar category &#x27;Loop Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/machine-learning/index"><span class="categoryLinkLabel_W154">Machine Learning</span></a><button aria-label="Expand sidebar category &#x27;Machine Learning&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/professional-knowledge/index"><span class="categoryLinkLabel_W154">Professional Knowledge</span></a><button aria-label="Expand sidebar category &#x27;Professional Knowledge&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/modern-ai-engineering/index"><span class="categoryLinkLabel_W154">Modern Ai Engineering</span></a><button aria-label="Expand sidebar category &#x27;Modern Ai Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/ai-engineering-journey/ai-agent-engineer/00-index"><span class="categoryLinkLabel_W154">Ai Agent Engineer</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/government-pyqs/index"><span class="categoryLinkLabel_W154">Government Pyqs</span></a><button aria-label="Expand sidebar category &#x27;Government Pyqs&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/compiler-design/index"><span class="categoryLinkLabel_W154">Compiler Design</span></a><button aria-label="Expand sidebar category &#x27;Compiler Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/digital-logic/index"><span class="categoryLinkLabel_W154">Digital Logic</span></a><button aria-label="Expand sidebar category &#x27;Digital Logic&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/discrete-mathematics/index"><span class="categoryLinkLabel_W154">Discrete Mathematics</span></a><button aria-label="Expand sidebar category &#x27;Discrete Mathematics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn-practical/index"><span class="categoryLinkLabel_W154">Learning How To Learn Practical</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn Practical&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/oop-cpp/index"><span class="categoryLinkLabel_W154">Oop Cpp</span></a><button aria-label="Expand sidebar category &#x27;Oop Cpp&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/software-engineering/index"><span class="categoryLinkLabel_W154">Software Engineering</span></a><button aria-label="Expand sidebar category &#x27;Software Engineering&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/theory-of-computation/index"><span class="categoryLinkLabel_W154">Theory Of Computation</span></a><button aria-label="Expand sidebar category &#x27;Theory Of Computation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/interview-preparation/index"><span class="categoryLinkLabel_W154">Interview Preparation</span></a><button aria-label="Expand sidebar category &#x27;Interview Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-how-to-learn/index"><span class="categoryLinkLabel_W154">Learning How To Learn</span></a><button aria-label="Expand sidebar category &#x27;Learning How To Learn&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/algorithms/index"><span class="categoryLinkLabel_W154">Algorithms</span></a><button aria-label="Expand sidebar category &#x27;Algorithms&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/c-programming/index"><span class="categoryLinkLabel_W154">C Programming</span></a><button aria-label="Expand sidebar category &#x27;C Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/computer-networks/index"><span class="categoryLinkLabel_W154">Computer Networks</span></a><button aria-label="Expand sidebar category &#x27;Computer Networks&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/data-structures/index"><span class="categoryLinkLabel_W154">Data Structures</span></a><button aria-label="Expand sidebar category &#x27;Data Structures&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/operating-systems/index"><span class="categoryLinkLabel_W154">Operating Systems</span></a><button aria-label="Expand sidebar category &#x27;Operating Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/web-development/index"><span class="categoryLinkLabel_W154">Web Development</span></a><button aria-label="Expand sidebar category &#x27;Web Development&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/database-management-systems/index"><span class="categoryLinkLabel_W154">Database Management Systems</span></a><button aria-label="Expand sidebar category &#x27;Database Management Systems&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/cyber-security/index"><span class="categoryLinkLabel_W154">Cyber Security</span></a><button aria-label="Expand sidebar category &#x27;Cyber Security&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/python-programming/index"><span class="categoryLinkLabel_W154">Python Programming</span></a><button aria-label="Expand sidebar category &#x27;Python Programming&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/system-design/index"><span class="categoryLinkLabel_W154">System Design</span></a><button aria-label="Expand sidebar category &#x27;System Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/artificial-intelligence/index"><span class="categoryLinkLabel_W154">Artificial Intelligence</span></a><button aria-label="Expand sidebar category &#x27;Artificial Intelligence&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/vigyan-bhairav-tantra/index"><span class="categoryLinkLabel_W154">Vigyan Bhairav Tantra</span></a><button aria-label="Expand sidebar category &#x27;Vigyan Bhairav Tantra&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/devops/index"><span class="categoryLinkLabel_W154">Devops</span></a><button aria-label="Expand sidebar category &#x27;Devops&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/gate-cs-preparation/index"><span class="categoryLinkLabel_W154">Gate Cs Preparation</span></a><button aria-label="Expand sidebar category &#x27;Gate Cs Preparation&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/learning-course/README"><span class="categoryLinkLabel_W154">Learning Course</span></a><button aria-label="Expand sidebar category &#x27;Learning Course&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/ai-engineering-journey/laravel/index"><span class="categoryLinkLabel_W154">Laravel</span></a><button aria-label="Collapse sidebar category &#x27;Laravel&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ai-engineering-journey/laravel/01-introduction"><span class="linkLabel_WmDU">Chapter 1: Introduction to Laravel 13</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/02-architecture-routing"><span class="linkLabel_WmDU">Chapter 2: Architecture, Routing, Middleware &amp; Controllers</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/03-blade-frontend"><span class="linkLabel_WmDU">Chapter 3: Blade Templating, Components &amp; Frontend</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/04-eloquent-database"><span class="linkLabel_WmDU">Chapter 4: Eloquent ORM, Database &amp; Migrations</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/05-auth-security"><span class="linkLabel_WmDU">Chapter 5: Authentication, Authorization &amp; Security</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/06-queues-notifications"><span class="linkLabel_WmDU">Chapter 6: Queues, Jobs, Notifications &amp; Mail</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/07-api-development"><span class="linkLabel_WmDU">Chapter 7: API Development &amp; Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/08-broadcasting-realtime"><span class="linkLabel_WmDU">Chapter 8: Broadcasting, Events &amp; Real-Time Features</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/09-container-packages"><span class="linkLabel_WmDU">Chapter 9: Service Container, Facades &amp; Package Development</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/10-testing-observability"><span class="linkLabel_WmDU">Chapter 10: Testing, Debugging &amp; Observability</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/11-caching-performance"><span class="linkLabel_WmDU">Chapter 11: Caching, Performance &amp; Octane</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/12-ai-sdk-agents"><span class="linkLabel_WmDU">Chapter 12: Laravel AI SDK → Agents, Prompting &amp; Structured Output</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/13-ai-sdk-tools"><span class="linkLabel_WmDU">Chapter 13: Laravel AI SDK → Tools, MCP Tools &amp; Provider Tools</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/14-ai-sdk-media"><span class="linkLabel_WmDU">Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions &amp; Embeddings</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/15-mcp"><span class="linkLabel_WmDU">Chapter 15: Laravel MCP → Model Context Protocol</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/16-search-rag"><span class="linkLabel_WmDU">Chapter 16: Semantic Search, Vector Search &amp; RAG with pgvector</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/17-boost"><span class="linkLabel_WmDU">Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/18-automation-patterns"><span class="linkLabel_WmDU">Chapter 18: Automation Patterns &amp; Workflows</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/19-architecture-patterns"><span class="linkLabel_WmDU">Chapter 19: Laravel Application Architecture Patterns</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/20-scaling-laravel"><span class="linkLabel_WmDU">Chapter 20: Scaling Laravel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/21-system-design-scale"><span class="linkLabel_WmDU">Chapter 21: System Design: Laravel at Enterprise Scale</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/22-case-study-ecommerce"><span class="linkLabel_WmDU">Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/23-case-study-ai-content"><span class="linkLabel_WmDU">Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/24-capstone"><span class="linkLabel_WmDU">Chapter 24: Capstone Project Ã¢â‚¬â€ AI-Powered Team Collaboration SaaS</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/25-multi-agent-systems"><span class="linkLabel_WmDU">Chapter 25: Multi-Agent Systems &amp; Orchestration with Laravel</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/26-business-automation-agents"><span class="linkLabel_WmDU">Chapter 26: Business Automation Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/27-healthcare"><span class="linkLabel_WmDU">Chapter 27: Healthcare AI Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/28-finance"><span class="linkLabel_WmDU">Chapter 28: Finance &amp; FinTech Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/29-education"><span class="linkLabel_WmDU">Chapter 29: Education &amp; EdTech</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/30-logistics"><span class="linkLabel_WmDU">Chapter 30: Logistics &amp; Supply Chain Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/31-hr-recruitment"><span class="linkLabel_WmDU">Chapter 31: HR &amp; Recruitment Ã¢â‚¬â€ AI-Powered Talent Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/32-marketing"><span class="linkLabel_WmDU">Chapter 32: Marketing &amp; Advertising Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/33-customer-service"><span class="linkLabel_WmDU">Chapter 33: Customer Service &amp; Support Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/34-real-estate"><span class="linkLabel_WmDU">Chapter 34: Real Estate &amp; Property → AI-Powered Real Estate Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/35-legal"><span class="linkLabel_WmDU">Chapter 35: Legal &amp; Compliance Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/36-manufacturing"><span class="linkLabel_WmDU">Chapter 36: Manufacturing &amp; Industrial → AI-Powered Factory Agents</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/37-enterprise-capstone"><span class="linkLabel_WmDU">Chapter 37: Enterprise Capstone → Multi-Agent Platform</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/38-interview-general"><span class="linkLabel_WmDU">Chapter 38: Laravel General Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/39-interview-healthcare"><span class="linkLabel_WmDU">Chapter 39: Healthcare Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/40-interview-finance"><span class="linkLabel_WmDU">Chapter 40: Finance &amp; FinTech Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/41-interview-education"><span class="linkLabel_WmDU">Chapter 41: Interview Q&amp;A → Education &amp; EdTech</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/42-interview-logistics"><span class="linkLabel_WmDU">Chapter 42: Logistics &amp; Supply Chain → Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/43-interview-hr"><span class="linkLabel_WmDU">Chapter 43: HR &amp; Recruitment → Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/44-interview-marketing"><span class="linkLabel_WmDU">Chapter 44: Marketing &amp; Advertising → Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/45-interview-customer-service"><span class="linkLabel_WmDU">Chapter 45: Customer Service &amp; Support → Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/46-interview-real-estate"><span class="linkLabel_WmDU">Chapter 46: Real Estate &amp; Property Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/47-interview-legal"><span class="linkLabel_WmDU">Chapter 47: Legal &amp; Compliance Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/48-interview-manufacturing"><span class="linkLabel_WmDU">Chapter 48: Manufacturing Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/49-interview-php"><span class="linkLabel_WmDU">Chapter 49: PHP Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/50-interview-mysql"><span class="linkLabel_WmDU">MySQL &amp; Database Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/51-interview-html"><span class="linkLabel_WmDU">HTML Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/52-interview-css"><span class="linkLabel_WmDU">CSS Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/53-interview-javascript"><span class="linkLabel_WmDU">Chapter 53: JavaScript Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/54-interview-ai-ml"><span class="linkLabel_WmDU">Chapter 54: AI/ML Interview Q&amp;A</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/ai-ml-fundamentals"><span class="linkLabel_WmDU">Chapter P6: AI/ML Fundamentals &amp; Laravel Integration</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/css-basics"><span class="linkLabel_WmDU">CSS Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/html-basics"><span class="linkLabel_WmDU">HTML Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/javascript-basics"><span class="linkLabel_WmDU">Chapter: JavaScript Fundamentals</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/mysql-database"><span class="linkLabel_WmDU">MySQL &amp; Database Design</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ai-engineering-journey/laravel/php-basics"><span class="linkLabel_WmDU">Chapter 0: PHP Foundations for Laravel</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/java/index"><span class="categoryLinkLabel_W154">Java</span></a><button aria-label="Expand sidebar category &#x27;Java&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ai-engineering-journey/ai-engineering-placement"><span class="categoryLinkLabel_W154">Ai Engineering Placement</span></a><button aria-label="Expand sidebar category &#x27;Ai Engineering Placement&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ai-engineering-journey/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ai-engineering-journey/laravel/index"><span>Laravel</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Chapter 1: Introduction to Laravel 13</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Chapter 1: Introduction to Laravel 13</h1></header>
+<p><strong>Next:</strong> <a class="" href="/ai-engineering-journey/laravel/02-architecture-routing">Architecture, Routing, Middleware &amp; Controllers</a></p>
+<p><strong>Next:</strong> <a class="" href="/ai-engineering-journey/laravel/02-architecture-routing">Architecture, Routing, Middleware &amp; Controllers</a></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-objectives">Learning Objectives<a href="#learning-objectives" class="hash-link" aria-label="Direct link to Learning Objectives" title="Direct link to Learning Objectives" translate="no">​</a></h2>
+<ul>
+<li class="">Understand the history and philosophy behind the Laravel framework</li>
+<li class="">Identify Laravel 13&#x27;s specific requirements and new capabilities</li>
+<li class="">Create new Laravel applications using the installer, Herd, Sail, and Composer</li>
+<li class="">Navigate and explain Laravel&#x27;s directory structure with confidence</li>
+<li class="">Use Artisan CLI for common development tasks</li>
+<li class="">Configure environment settings using <code>.env</code> and the <code>config/</code> directory</li>
+<li class="">Build a complete &quot;Hello World&quot; application using routes, controllers, and Blade views</li>
+</ul>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a href="../../assets/images/lessons/laravel/01-introduction/handwritten-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/laravel/01-introduction/handwritten-notes.png" alt="Handwritten notes" class="img_ev3q">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a href="../../assets/images/lessons/laravel/01-introduction/sticky-notes.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/laravel/01-introduction/sticky-notes.png" alt="Sticky-note revision" class="img_ev3q">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a href="../../assets/images/lessons/laravel/01-introduction/visual-explanation.png" class="lesson-visual-card" target="_blank" rel="noopener">
+    <img decoding="async" loading="lazy" src="../../assets/images/lessons/laravel/01-introduction/visual-explanation.png" alt="Visual concept guide" class="img_ev3q">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
+<!-- -->
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-at-a-glance">Chapter at a Glance<a href="#chapter-at-a-glance" class="hash-link" aria-label="Direct link to Chapter at a Glance" title="Direct link to Chapter at a Glance" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Topic</th><th>Key Insight</th><th>Practical Takeaway</th></tr></thead><tbody><tr><td>Framework Philosophy</td><td>Laravel offers elegant syntax, expressive code, and convention over configuration</td><td>Use Laravel when you need rapid development with clean, maintainable code</td></tr><tr><td>Laravel 13 Features</td><td>PHP 8.3 minimum, annual release cadence, AI-native workflows, minimal breaking changes</td><td>Upgrade planning should start 3 months before each August release</td></tr><tr><td>Application Setup</td><td>Four methods: Installer, Herd, Sail, and Composer</td><td>Use Herd for local dev, Sail for team consistency</td></tr><tr><td>Directory Structure</td><td>MVC-based layout with app/, config/, database/, resources/, routes/ as core</td><td>Follow Laravel conventions — AI tools find files predictably</td></tr><tr><td>Artisan CLI</td><td>CLI for scaffolding, migrations, and queue commands</td><td>Use <code>php artisan make:</code> for all scaffolding</td></tr><tr><td>Environment Config</td><td>.env + config/ for environment-specific settings</td><td>Store secrets in .env, defaults in config/</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-roadmap">Chapter Roadmap<a href="#chapter-roadmap" class="hash-link" aria-label="Direct link to Chapter Roadmap" title="Direct link to Chapter Roadmap" translate="no">​</a></h2>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A[Chapter Start] --&gt; B[What is Laravel?]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; C[Laravel 13 Specifics]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; D[Creating Laravel Apps]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; E[Directory Structure]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; F[Artisan CLI]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; G[Configuration &amp; Environment]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; H[Hello World Application]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; I[Summary &amp; Exercises]</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-at-a-glance-1">Chapter at a Glance<a href="#chapter-at-a-glance-1" class="hash-link" aria-label="Direct link to Chapter at a Glance" title="Direct link to Chapter at a Glance" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Topic</th><th>Key Insight</th><th>Practical Takeaway</th></tr></thead><tbody><tr><td>Framework Philosophy</td><td>Laravel offers elegant syntax, expressive code, and convention over configuration</td><td>Use Laravel when you need rapid development with clean, maintainable code</td></tr><tr><td>Laravel 13 Features</td><td>PHP 8.3 minimum, annual release cadence, AI-native workflows, minimal breaking changes</td><td>Upgrade planning should start 3 months before each August release</td></tr><tr><td>Application Setup</td><td>Four methods: Installer, Herd, Sail (Docker), and Composer create-project</td><td>Use Laravel Herd for local dev, Sail for team consistency</td></tr><tr><td>Directory Structure</td><td>MVC-based layout with app/, config/, database/, resources/, routes/ as core directories</td><td>Follow Laravel conventions — AI tools and team members will find files predictably</td></tr><tr><td>Artisan CLI</td><td>CLI tool for scaffolding, migrations, queue work, and custom commands</td><td>Use <code>php artisan make:</code> commands to scaffold controllers, models, migrations, and more</td></tr><tr><td>Environment Config</td><td>.env file + config/ directory for environment-specific settings</td><td>Store secrets in .env, configuration defaults in config/ files</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-roadmap-1">Chapter Roadmap<a href="#chapter-roadmap-1" class="hash-link" aria-label="Direct link to Chapter Roadmap" title="Direct link to Chapter Roadmap" translate="no">​</a></h2>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    A[Chapter Start] --&gt; B[What is Laravel?]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; C[Laravel 13 Specifics]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; D[Creating Laravel Applications]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; E[Directory Structure]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; F[Artisan CLI]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; G[Configuration &amp; Environment]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; H[Hello World Application]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; I[Summary &amp; Exercises]</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="theory">Theory<a href="#theory" class="hash-link" aria-label="Direct link to Theory" title="Direct link to Theory" translate="no">​</a></h2>
+<blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Laravel combines elegant PHP syntax with powerful defaults to make web development productive and enjoyable</p>
+</blockquote>
+<blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Laravel combines elegant syntax with powerful defaults to make web development productive and enjoyable</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/01-introduction.png" alt="Introduction to Laravel" class="img_ev3q"></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="11-what-is-laravel">1.1 What is Laravel?<a href="#11-what-is-laravel" class="hash-link" aria-label="Direct link to 1.1 What is Laravel?" title="Direct link to 1.1 What is Laravel?" translate="no">​</a></h3>
+<blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Laravel&#x27;s progressive nature lets you start small and scale up by adopting only the features you need</p>
+</blockquote>
+<p>Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications with CodeIgniter and saw an opportunity to create something better → a framework that combined the best ideas from Ruby on Rails, ASP.NET MVC, and existing PHP frameworks into a cohesive, elegant package. The first beta of Laravel 1.0 was released on GitHub on June 9, 2011, and immediately resonated with developers who were frustrated with PHP&#x27;s fragmented ecosystem.</p>
+<p>At the time, PHP frameworks fell into two camps: lightweight but underpowered (CodeIgniter, CakePHP) or powerful but overly complex (Symfony). Laravel struck a balance. It offered modern features like routing, ORM, authentication, and templating, but wrapped them in what Otwell called &quot;developer ergonomics&quot; → clean syntax, intuitive method names, and sensible defaults.</p>
+<blockquote>
+<p><strong>Remember:</strong> Laravel ships with sensible defaults. You do not need to configure a database, view renderer, or mailer before they work.</p>
+</blockquote>
+<p>The core philosophy rests on three pillars:</p>
+<ul>
+<li class=""><strong>Elegant Syntax</strong>: Laravel code reads like well-written prose. Database queries are expressed fluently. Relationships read naturally. Method chains are predictable. The goal is to minimize the distance between what you think and what you type.</li>
+<li class=""><strong>Expressive</strong>: Common web development tasks → database queries, email delivery, authentication, caching, file storage → are expressed in as few lines as possible without sacrificing clarity. A simple contact form submission might be five lines of controller code.</li>
+<li class=""><strong>Convention over Configuration</strong>: Laravel ships with sensible defaults. You do not need to write a configuration file to render a view, connect to a database, or send email. When you need to override conventions, the escape hatch is always there → but you rarely need it.</li>
+</ul>
+<blockquote>
+<p><strong>Remember:</strong> Laravel ships with sensible defaults. You do not need to configure a database, view renderer, or mailer before they work.</p>
+</blockquote>
+<p>Laravel also brands itself as a <em>progressive framework</em>. You can adopt only the parts you need for your task. Want Eloquent for database queries but not Blade for templating? That is fine. Want the router but not the service container? Also fine. You can start with a single route file and gradually adopt more pieces as your application grows. This makes Laravel equally suitable for a five-route microservice and a multi-tenant SaaS platform.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="12-laravel-13-specifics">1.2 Laravel 13 Specifics<a href="#12-laravel-13-specifics" class="hash-link" aria-label="Direct link to 1.2 Laravel 13 Specifics" title="Direct link to 1.2 Laravel 13 Specifics" translate="no">​</a></h3>
+<blockquote>
+<p><strong>One-Sentence Takeaway:</strong> With PHP 8.3 minimum and AI-native workflows, Laravel 13 is designed for modern, agent-assisted development</p>
+</blockquote>
+<p>Laravel follows an annual major release cadence, shipping each August. Laravel 13 continues this tradition with several defining characteristics:</p>
+<p><strong>PHP 8.3 Minimum</strong>: Laravel 13 requires PHP 8.3 or higher. This gives the framework access to language features like typed class constants, the <code>json_validate()</code> function, <code>mb_str_pad()</code>, and the <code>#[Override]</code> attribute. The framework&#x27;s core uses these features for better type safety, performance, and self-documentation.</p>
+<blockquote>
+<p><strong>Warning:</strong> Verify your PHP version before upgrading. Laravel 13 drops support for PHP 8.2 and below.</p>
+</blockquote>
+<blockquote>
+<p><strong>Warning:</strong> Verify your PHP version before upgrading. Laravel 13 drops support for PHP 8.2 and below — run <code>php -v</code> first.</p>
+</blockquote>
+<p><strong>Annual Release Cadence</strong>: The predictable August release schedule allows teams to plan upgrades. Each major version receives 18 months of bug fixes and two years of security fixes. The upgrade path between consecutive versions is designed to be minimal → Laravel&#x27;s core team treats breaking changes as a last resort.</p>
+<p><strong>Minimal Breaking Changes Philosophy</strong>: When a breaking change is unavoidable, Laravel provides comprehensive upgrade guides, automation via Laravel Shift (a paid service that rewrites your code for the new version), and deprecation warnings that span multiple versions. Most applications upgrade from N-1 to N in under an hour.</p>
+<p><strong>AI-Native Workflows</strong>: Laravel 13 introduces first-class support for AI-assisted development. The framework&#x27;s conventions are designed to be predictable for AI coding agents. Method signatures follow consistent naming patterns. Service providers always have <code>register()</code> and <code>boot()</code>. Middleware always uses <code>handle()</code>. This predictability means an AI agent can scaffold an entire feature with near-100% accuracy on file paths and wiring.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="13-creating-laravel-applications">1.3 Creating Laravel Applications<a href="#13-creating-laravel-applications" class="hash-link" aria-label="Direct link to 1.3 Creating Laravel Applications" title="Direct link to 1.3 Creating Laravel Applications" translate="no">​</a></h3>
+<blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Laravel Herd provides instant local PHP environments while Sail ensures Docker-consistent team setups</p>
+</blockquote>
+<p>There are four primary ways to bootstrap a new Laravel application.</p>
+<blockquote>
+<p><strong>Pro Tip:</strong> Use <code>laravel new app</code> via the Laravel Installer for the fastest setup. Herd is ideal for local dev without Docker.</p>
+</blockquote>
+<blockquote>
+<p><strong>Pro Tip:</strong> Use <code>laravel new app</code> via the Laravel Installer for the fastest setup. Herd is ideal for local development without Docker overhead.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="laravel-installer">Laravel Installer<a href="#laravel-installer" class="hash-link" aria-label="Direct link to Laravel Installer" title="Direct link to Laravel Installer" translate="no">​</a></h4>
+<p>The recommended approach. Install the installer globally via Composer, then create applications with a single command:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">composer global require laravel/installer</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">laravel new my-app</span><br></div></code></pre></div></div>
+<p>This command scaffolds a fresh Laravel 13 skeleton, installs Composer dependencies, and prompts you to select optional starter kits (Laravel Breeze for simple auth scaffolding, Laravel Jetstream for team-based authentication with Livewire or Inertia) and your testing framework (Pest or PHPUnit). The installer is the fastest path to a running application.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="laravel-herd">Laravel Herd<a href="#laravel-herd" class="hash-link" aria-label="Direct link to Laravel Herd" title="Direct link to Laravel Herd" translate="no">​</a></h4>
+<p>Herd is Laravel&#x27;s native PHP development environment for macOS and Windows. It bundles PHP 8.3+, Nginx, and a DNS proxy into a single desktop application:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain"># Herd is installed from https://herd.laravel.com</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># Once installed, creating an app is one command:</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">herd create my-app</span><br></div></code></pre></div></div>
+<p>Herd automatically serves projects from <code>~/Herd/</code> at <code>{folder}.test</code> with HTTPS. It provides a GUI for managing PHP versions (you can set different PHP versions per project), controlling services like MySQL and Redis, and accessing logs. No configuration files, no Docker overhead → it just works.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="laravel-sail">Laravel Sail<a href="#laravel-sail" class="hash-link" aria-label="Direct link to Laravel Sail" title="Direct link to Laravel Sail" translate="no">​</a></h4>
+<p>Sail is a Docker-based development environment that wraps <code>docker-compose</code> with a thin CLI:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain"># Create with Sail preset</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">laravel new my-app --with-sail</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">cd my-app</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">./vendor/bin/sail up</span><br></div></code></pre></div></div>
+<p>Sail comes pre-configured with PHP, MySQL, Redis, Meilisearch, and Mailpit. All commands run through the <code>sail</code> binary:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">./vendor/bin/sail artisan make:model Product -mc</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">./vendor/bin/sail composer require laravel/cashier</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">./vendor/bin/sail npm run dev</span><br></div></code></pre></div></div>
+<p>You can customize the <code>docker-compose.yml</code> to add services like PostgreSQL, Selenium, or MinIO.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="composer-create-project">Composer Create-Project<a href="#composer-create-project" class="hash-link" aria-label="Direct link to Composer Create-Project" title="Direct link to Composer Create-Project" translate="no">​</a></h4>
+<p>The traditional method, useful when you want a specific version or lack the installer:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">composer create-project laravel/laravel my-app</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">composer create-project laravel/laravel:^13.0 my-app</span><br></div></code></pre></div></div>
+<p>This downloads the latest skeleton, installs dependencies, and copies <code>.env.example</code> to <code>.env</code>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="14-directory-structure">1.4 Directory Structure<a href="#14-directory-structure" class="hash-link" aria-label="Direct link to 1.4 Directory Structure" title="Direct link to 1.4 Directory Structure" translate="no">​</a></h3>
+<blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Laravel&#x27;s predictable directory layout makes every file findable without documentation</p>
+</blockquote>
+<p>A fresh Laravel application follows a consistent, well-documented layout.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="root-level">Root Level<a href="#root-level" class="hash-link" aria-label="Direct link to Root Level" title="Direct link to Root Level" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Directory / File</th><th>Purpose</th></tr></thead><tbody><tr><td><code>app/</code></td><td>Core application code → models, controllers, middleware, providers</td></tr><tr><td><code>bootstrap/</code></td><td>Framework bootstrapping files</td></tr><tr><td><code>config/</code></td><td>Configuration files, one per system concern</td></tr><tr><td><code>database/</code></td><td>Migrations, factories, seeders</td></tr><tr><td><code>public/</code></td><td>Web server document root; <code>index.php</code> is the single entry point</td></tr><tr><td><code>resources/</code></td><td>Blade views, raw CSS/JS assets, language files</td></tr><tr><td><code>routes/</code></td><td>Route definitions: <code>web.php</code>, <code>api.php</code>, <code>console.php</code></td></tr><tr><td><code>storage/</code></td><td>Compiled Blade templates, logs, sessions, cached views</td></tr><tr><td><code>tests/</code></td><td>Unit and feature tests (Pest or PHPUnit)</td></tr><tr><td><code>vendor/</code></td><td>Composer dependencies (not committed)</td></tr></tbody></table>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="inside-app">Inside <code>app/</code><a href="#inside-app" class="hash-link" aria-label="Direct link to inside-app" title="Direct link to inside-app" translate="no">​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Directory</th><th>Purpose</th></tr></thead><tbody><tr><td><code>Console/</code></td><td>Artisan commands and scheduled task definitions</td></tr><tr><td><code>Exceptions/</code></td><td>Custom exception handler</td></tr><tr><td><code>Http/Controllers/</code></td><td>Controller classes</td></tr><tr><td><code>Http/Middleware/</code></td><td>HTTP middleware for request filtering</td></tr><tr><td><code>Http/Requests/</code></td><td>Form request validation classes</td></tr><tr><td><code>Models/</code></td><td>Eloquent model classes</td></tr><tr><td><code>Providers/</code></td><td>Service providers → the bootstrapping logic</td></tr></tbody></table>
+<p>The <code>app/Models</code> directory is notable. Models live under <code>app/Models/</code> by convention rather than directly in <code>app/</code>. This keeps the namespace clean and predictable.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="15-artisan-cli">1.5 Artisan CLI<a href="#15-artisan-cli" class="hash-link" aria-label="Direct link to 1.5 Artisan CLI" title="Direct link to 1.5 Artisan CLI" translate="no">​</a></h3>
+<blockquote>
+<p><strong>One-Sentence Takeaway:</strong> Artisan is your Swiss Army knife — from scaffolding to migrations to custom commands, it handles everything</p>
+</blockquote>
+<p>Artisan is Laravel&#x27;s command-line interface. It is your daily companion for development.</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain"># List all available commands</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">php artisan list</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># Create a model with migration and controller</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">php artisan make:model Product -mc</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># Start the built-in PHP development server</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">php artisan serve</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># Output: Server running on [http://127.0.0.1:8000]</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># Interactive REPL for testing code</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">php artisan tinker</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># In tinker:</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># &gt;&gt;&gt; User::count();</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># =&gt; 42</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># &gt;&gt;&gt; User::first()-&gt;name;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># =&gt; &quot;Alice&quot;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># Create a database migration</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">php artisan make:migration create_products_table</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># View all registered routes with middleware</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">php artisan route:list</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># Clear application caches</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">php artisan optimize:clear</span><br></div></code></pre></div></div>
+<p><strong>Scaffold Commands:</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">make:model Product           # Model file</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:controller Product      # Controller</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:middleware LogRequests   # Middleware</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:request StoreProduct    # Form request</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:seeder ProductSeeder    # Database seeder</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:factory ProductFactory  # Model factory</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:migration create_X      # Migration</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:command ProcessReports  # Artisan command</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:event OrderPlaced        # Event class</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:listener SendConfirmation # Listener</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:notification OrderShipped # Notification</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:job ProcessImage        # Queued job</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:mail OrderConfirmation  # Mailable</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:rule ValidCurrency      # Validation rule</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">make:provider ReportService  # Service provider</span><br></div></code></pre></div></div>
+<p>Each scaffolded file follows the correct namespace, imports framework base classes, and includes PHPDoc stubs. This saves minutes per feature and enforces consistency across the codebase.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="16-environment-configuration">1.6 Environment Configuration<a href="#16-environment-configuration" class="hash-link" aria-label="Direct link to 1.6 Environment Configuration" title="Direct link to 1.6 Environment Configuration" translate="no">​</a></h3>
+<p>Laravel separates configuration from code to support different environments without modifying application files.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-env-file">The <code>.env</code> File<a href="#the-env-file" class="hash-link" aria-label="Direct link to the-env-file" title="Direct link to the-env-file" translate="no">​</a></h4>
+<p>Located at the project root. It is listed in <code>.gitignore</code> and is never committed:</p>
+<div class="language-env codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-env codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">APP_NAME=Laravel</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">APP_ENV=local</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">APP_DEBUG=true</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">APP_URL=http://localhost</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">DB_CONNECTION=mysql</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">DB_HOST=127.0.0.1</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">DB_PORT=3306</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">DB_DATABASE=my_app</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">DB_USERNAME=root</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">DB_PASSWORD=</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">SESSION_DRIVER=file</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">LOG_CHANNEL=stack</span><br></div></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-config-directory">The <code>config/</code> Directory<a href="#the-config-directory" class="hash-link" aria-label="Direct link to the-config-directory" title="Direct link to the-config-directory" translate="no">​</a></h4>
+<p>Each file in <code>config/</code> returns an array and uses the <code>env()</code> helper to read from <code>.env</code>:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">// config/app.php</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">return [</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &#x27;name&#x27; =&gt; env(&#x27;APP_NAME&#x27;, &#x27;Laravel&#x27;),</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &#x27;env&#x27; =&gt; env(&#x27;APP_ENV&#x27;, &#x27;production&#x27;),</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &#x27;debug&#x27; =&gt; (bool) env(&#x27;APP_DEBUG&#x27;, false),</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &#x27;url&#x27; =&gt; env(&#x27;APP_URL&#x27;, &#x27;http://localhost&#x27;),</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">];</span><br></div></code></pre></div></div>
+<p>The second argument to <code>env()</code> is the default value used when the environment variable is not set.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="retrieving-configuration-at-runtime">Retrieving Configuration at Runtime<a href="#retrieving-configuration-at-runtime" class="hash-link" aria-label="Direct link to Retrieving Configuration at Runtime" title="Direct link to Retrieving Configuration at Runtime" translate="no">​</a></h4>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">// The env() helper should only be used inside config files</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">$name = env(&#x27;APP_NAME&#x27;); // works but not recommended outside config/</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// The config() helper works anywhere</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">$name = config(&#x27;app.name&#x27;);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">$dbHost = config(&#x27;database.connections.mysql.host&#x27;);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">$debug = config(&#x27;app.debug&#x27;);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// Set a value at runtime for the current request only</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">config([&#x27;app.debug&#x27; =&gt; true]);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// Get all configuration</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">$all = config()-&gt;all();</span><br></div></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="environment-detection">Environment Detection<a href="#environment-detection" class="hash-link" aria-label="Direct link to Environment Detection" title="Direct link to Environment Detection" translate="no">​</a></h4>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">$env = app()-&gt;environment(); // &#x27;local&#x27;, &#x27;staging&#x27;, &#x27;production&#x27;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">if (app()-&gt;environment(&#x27;local&#x27;)) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    // Only in local</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">if (app()-&gt;environment(&#x27;local&#x27;, &#x27;testing&#x27;)) {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    // In local or testing</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+<p>The golden rule: never hardcode sensitive values. Use <code>.env</code> in development and server-level environment variables in production (set via Forge, Vapor, or your deployment platform).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="17-laravel-and-ai">1.7 Laravel and AI<a href="#17-laravel-and-ai" class="hash-link" aria-label="Direct link to 1.7 Laravel and AI" title="Direct link to 1.7 Laravel and AI" translate="no">​</a></h3>
+<p>Laravel 13 is explicitly designed to work well with AI coding assistants. This influences the framework in concrete ways.</p>
+<p><strong>Predicable Conventions</strong>: An AI agent can reliably predict that <code>php artisan make:controller ProductController --resource</code> creates seven methods with specific names and signatures. It knows Eloquent models are in <code>app/Models/</code>, form requests in <code>app/Http/Requests/</code>, and middleware in <code>app/Http/Middleware/</code>. This deterministic structure dramatically reduces ambiguity.</p>
+<p><strong>Consistent Method Signatures</strong>: Controllers always follow the same pattern. Middleware always uses <code>handle(Request, Closure)</code>. Service providers always use <code>register()</code> and <code>boot()</code>. AI agents trained on Laravel code can generate accurate code because the patterns are uniform across the framework.</p>
+<p><strong>Laravel for Agents</strong>: The ecosystem publishes guidelines for AI coding tools. These guidelines recommend using <code>artisan make</code> commands over manual file creation, defining routes explicitly rather than relying on magic, and writing tests first. They also document file path conventions, namespace rules, and naming patterns that AI agents should follow.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="18-hello-world--complete-walkthrough">1.8 Hello World → Complete Walkthrough<a href="#18-hello-world--complete-walkthrough" class="hash-link" aria-label="Direct link to 1.8 Hello World → Complete Walkthrough" title="Direct link to 1.8 Hello World → Complete Walkthrough" translate="no">​</a></h3>
+<p>We will build &quot;Hello World&quot; three ways, each demonstrating a deeper layer.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="version-1-route-closure">Version 1: Route Closure<a href="#version-1-route-closure" class="hash-link" aria-label="Direct link to Version 1: Route Closure" title="Direct link to Version 1: Route Closure" translate="no">​</a></h4>
+<p>In <code>routes/web.php</code>:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">&lt;?php</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">use Illuminate\Support\Facades\Route;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Route::get(&#x27;/&#x27;, function () {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    return &#x27;Hello, World!&#x27;;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">});</span><br></div></code></pre></div></div>
+<p>Start the server with <code>php artisan serve</code> and visit <code>http://localhost:8000</code>. The response is a bare string. Laravel wraps it in an <code>Illuminate\Http\Response</code> object internally.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="version-2-route-to-controller">Version 2: Route to Controller<a href="#version-2-route-to-controller" class="hash-link" aria-label="Direct link to Version 2: Route to Controller" title="Direct link to Version 2: Route to Controller" translate="no">​</a></h4>
+<p>Create the controller:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">php artisan make:controller HelloController</span><br></div></code></pre></div></div>
+<p><code>app/Http/Controllers/HelloController.php</code>:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">&lt;?php</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">namespace App\Http\Controllers;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">use Illuminate\Http\Request;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">class HelloController extends Controller</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">{</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    public function index(): string</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        return &#x27;Hello from a controller!&#x27;;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+<p>Register the route:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">use App\Http\Controllers\HelloController;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Route::get(&#x27;/&#x27;, [HelloController::class, &#x27;index&#x27;]);</span><br></div></code></pre></div></div>
+<p>This separates routing logic from response logic. The route decides <em>when</em> and <em>with what parameters</em>; the controller decides <em>how</em>.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="version-3-route-to-controller-to-view">Version 3: Route to Controller to View<a href="#version-3-route-to-controller-to-view" class="hash-link" aria-label="Direct link to Version 3: Route to Controller to View" title="Direct link to Version 3: Route to Controller to View" translate="no">​</a></h4>
+<p>Create <code>resources/views/hello.blade.php</code>:</p>
+<div class="language-blade codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-blade codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">&lt;!DOCTYPE html&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">&lt;html lang=&quot;en&quot;&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">&lt;head&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &lt;title&gt;Hello World&lt;/title&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &lt;style&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        body {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            font-family: system-ui, sans-serif;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            display: flex;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            justify-content: center;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            align-items: center;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            height: 100vh;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            background: #f5f5f5;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            margin: 0;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        .card {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            background: white;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            padding: 2rem 3rem;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            border-radius: 12px;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            box-shadow: 0 2px 12px rgba(0,0,0,0.1);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">            text-align: center;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        h1 { color: #ff2d20; margin-bottom: 0.5rem; }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        p { color: #666; }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &lt;/style&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">&lt;/head&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">&lt;body&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &lt;div class=&quot;card&quot;&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        &lt;h1&gt;{{ $greeting }}&lt;/h1&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        &lt;p&gt;Welcome to Laravel {{ date(&#x27;Y&#x27;) }}.&lt;/p&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    &lt;/div&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">&lt;/body&gt;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">&lt;/html&gt;</span><br></div></code></pre></div></div>
+<p>Update the controller:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-php codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">&lt;?php</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">namespace App\Http\Controllers;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">use Illuminate\Http\Request;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">class HelloController extends Controller</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">{</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    public function index()</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        $greeting = &#x27;Hello, World!&#x27;;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">        return view(&#x27;hello&#x27;, compact(&#x27;greeting&#x27;));</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">}</span><br></div></code></pre></div></div>
+<p>The route stays the same. Now visiting <code>/</code> renders a styled HTML page. The <code>$greeting</code> variable is passed from the controller to the Blade template using the <code>view()</code> helper. The view file name (<code>hello</code>) resolves to <code>resources/views/hello.blade.php</code> by convention.</p>
+<p>This is the classic Model-View-Controller pattern in action: the route delegates to the controller, the controller prepares data, and the view renders it.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="19-package-ecosystem-overview">1.9 Package Ecosystem Overview<a href="#19-package-ecosystem-overview" class="hash-link" aria-label="Direct link to 1.9 Package Ecosystem Overview" title="Direct link to 1.9 Package Ecosystem Overview" translate="no">​</a></h3>
+<p>Laravel&#x27;s first-party ecosystem is one of its greatest strengths. These packages solve common production concerns:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Package</th><th>Category</th><th>Purpose</th></tr></thead><tbody><tr><td><strong>Forge</strong></td><td>Deployment</td><td>Server provisioning and management on AWS, DigitalOcean, Linode</td></tr><tr><td><strong>Vapor</strong></td><td>Deployment</td><td>Serverless deployment on AWS Lambda</td></tr><tr><td><strong>Cloud</strong></td><td>Deployment</td><td>Managed Laravel platform (successor to Vapor)</td></tr><tr><td><strong>Nova</strong></td><td>Admin</td><td>Resource management, metrics, dashboards</td></tr><tr><td><strong>Horizon</strong></td><td>Monitoring</td><td>Redis queue dashboard</td></tr><tr><td><strong>Telescope</strong></td><td>Debugging</td><td>Request/query/exception inspector</td></tr><tr><td><strong>Pulse</strong></td><td>Monitoring</td><td>Production health (slow queries, users, queues)</td></tr><tr><td><strong>Sanctum</strong></td><td>Auth</td><td>API token auth for SPAs and mobile apps</td></tr><tr><td><strong>Socialite</strong></td><td>Auth</td><td>OAuth → GitHub, Google, Facebook, Twitter</td></tr><tr><td><strong>Cashier</strong></td><td>Billing</td><td>Subscription management (Stripe, Paddle)</td></tr><tr><td><strong>Scout</strong></td><td>Search</td><td>Full-text search (Meilisearch, Algolia)</td></tr><tr><td><strong>Sail</strong></td><td>Dev</td><td>Docker development environment</td></tr><tr><td><strong>Pint</strong></td><td>Quality</td><td>Opinionated PHP code style fixer</td></tr><tr><td><strong>Envoyer</strong></td><td>Deploy</td><td>Zero-downtime deployment</td></tr><tr><td><strong>Reverb</strong></td><td>Real-time</td><td>WebSocket server</td></tr><tr><td><strong>Echo</strong></td><td>Real-time</td><td>JavaScript WebSocket client</td></tr><tr><td><strong>Boost</strong></td><td>Perf</td><td>Query caching and optimization</td></tr><tr><td><strong>MCP</strong></td><td>AI</td><td>Model Context Protocol tools</td></tr><tr><td><strong>AI SDK</strong></td><td>AI</td><td>OpenAI, Anthropic, and local model SDK</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="concept-comparison">Concept Comparison<a href="#concept-comparison" class="hash-link" aria-label="Direct link to Concept Comparison" title="Direct link to Concept Comparison" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Concept</th><th>Description</th><th>Use Case</th></tr></thead><tbody><tr><td>Installer vs Composer</td><td>Laravel Installer is faster; Composer create-project is the universal fallback</td><td>Use installer day-to-day, Composer in CI/container builds</td></tr><tr><td>Herd vs Sail</td><td>Herd is a native macOS app; Sail is Docker-based cross-platform</td><td>Herd for solo dev, Sail for team environments</td></tr><tr><td>Artisan vs Tinker</td><td>Artisan runs CLI commands; Tinker is an interactive REPL</td><td>Use Artisan for scaffolding, Tinker for ad-hoc testing</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-reference">Quick Reference<a href="#quick-reference" class="hash-link" aria-label="Direct link to Quick Reference" title="Direct link to Quick Reference" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Task</th><th>Command / Method</th><th>Notes</th></tr></thead><tbody><tr><td>Create project</td><td>laravel new app or composer create-project laravel/laravel app</td><td>Laravel Installer is faster</td></tr><tr><td>Run dev server</td><td>php artisan serve</td><td>Uses PHP built-in server on port 8000</td></tr><tr><td>List Artisan commands</td><td>php artisan list</td><td>Over 200 built-in commands</td></tr><tr><td>Generate encryption key</td><td>php artisan key:generate</td><td>Required after fresh install</td></tr><tr><td>View .env</td><td>cat .env or php artisan env</td><td>Never commit .env to version control</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross-application-matrix">Cross-Application Matrix<a href="#cross-application-matrix" class="hash-link" aria-label="Direct link to Cross-Application Matrix" title="Direct link to Cross-Application Matrix" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Domain</th><th>Application</th><th>Key Integration</th></tr></thead><tbody><tr><td>Web Development</td><td>Any Laravel app</td><td>MVC architecture, routing, Blade templating, Eloquent ORM</td></tr><tr><td>API Development</td><td>RESTful APIs</td><td>API routes, resource controllers, Sanctum auth</td></tr><tr><td>CLI Tools</td><td>Artisan commands</td><td>Custom commands, scheduler, queue worker</td></tr><tr><td>Real-Time Apps</td><td>Broadcasting</td><td>WebSockets, events, Laravel Reverb</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-quiz">Chapter Quiz<a href="#chapter-quiz" class="hash-link" aria-label="Direct link to Chapter Quiz" title="Direct link to Chapter Quiz" translate="no">​</a></h2>
+<p>Test your understanding with these questions.</p>
+<p><strong>1.</strong> Who created Laravel?</p>
+<ul>
+<li class="">A) Taylor Otwell</li>
+<li class="">B) Rasmus Lerdorf</li>
+<li class="">C) Fabien Potencier</li>
+<li class="">D) Taylor Otwell
+<strong>Answer:</strong> A</li>
+</ul>
+<p><strong>2.</strong> Which PHP version does Laravel 13 require?</p>
+<ul>
+<li class="">A) PHP 8.0</li>
+<li class="">B) PHP 8.2</li>
+<li class="">C) PHP 8.3</li>
+<li class="">D) PHP 8.1
+<strong>Answer:</strong> C</li>
+</ul>
+<p><strong>3.</strong> What command creates a new Laravel project?</p>
+<ul>
+<li class="">A) npm init laravel</li>
+<li class="">B) laravel new</li>
+<li class="">C) php artisan new</li>
+<li class="">D) create-laravel
+<strong>Answer:</strong> B</li>
+</ul>
+<p><strong>4.</strong> Which directory handles HTTP controllers?</p>
+<ul>
+<li class="">A) resources/</li>
+<li class="">B) routes/</li>
+<li class="">C) app/Http/Controllers</li>
+<li class="">D) database/
+<strong>Answer:</strong> C</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="concept-comparison-1">Concept Comparison<a href="#concept-comparison-1" class="hash-link" aria-label="Direct link to Concept Comparison" title="Direct link to Concept Comparison" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Concept</th><th>Description</th><th>Use Case</th></tr></thead><tbody><tr><td>Installer vs Composer</td><td>Installer: fast; Composer: universal fallback</td><td>Use installer day-to-day, Composer in CI</td></tr><tr><td>Herd vs Sail</td><td>Herd: native macOS; Sail: Docker cross-platform</td><td>Herd for solo dev, Sail for team</td></tr><tr><td>Artisan vs Tinker</td><td>Artisan: CLI commands; Tinker: interactive REPL</td><td>Artisan for scaffolding, Tinker for testing</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="quick-reference-1">Quick Reference<a href="#quick-reference-1" class="hash-link" aria-label="Direct link to Quick Reference" title="Direct link to Quick Reference" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Task</th><th>Command / Method</th><th>Notes</th></tr></thead><tbody><tr><td>Create project</td><td>laravel new app</td><td>Laravel Installer is faster</td></tr><tr><td>Run dev server</td><td>php artisan serve</td><td>Port 8000 by default</td></tr><tr><td>List commands</td><td>php artisan list</td><td>200+ built-in commands</td></tr><tr><td>Generate key</td><td>php artisan key:generate</td><td>Required after fresh install</td></tr><tr><td>View env</td><td>cat .env</td><td>Never commit .env</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cross-application-matrix-1">Cross-Application Matrix<a href="#cross-application-matrix-1" class="hash-link" aria-label="Direct link to Cross-Application Matrix" title="Direct link to Cross-Application Matrix" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Domain</th><th>Application</th><th>Key Integration</th></tr></thead><tbody><tr><td>Web Apps</td><td>Any Laravel app</td><td>MVC, routing, Blade, Eloquent</td></tr><tr><td>APIs</td><td>RESTful services</td><td>API routes, Sanctum auth</td></tr><tr><td>CLI Tools</td><td>Artisan commands</td><td>Custom commands, scheduler</td></tr><tr><td>Real-Time</td><td>Broadcasting</td><td>WebSockets, Laravel Reverb</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="chapter-quiz-1">Chapter Quiz<a href="#chapter-quiz-1" class="hash-link" aria-label="Direct link to Chapter Quiz" title="Direct link to Chapter Quiz" translate="no">​</a></h2>
+<p>Test your understanding with these questions.</p>
+<p><strong>1.</strong> Who created Laravel?</p>
+<ul>
+<li class="">A) Taylor Otwell</li>
+<li class="">B) Rasmus Lerdorf</li>
+<li class="">C) Fabien Potencier</li>
+<li class="">D) Taylor Otwell
+<strong>Answer:</strong> A</li>
+</ul>
+<p><strong>2.</strong> Laravel 13 requires which PHP?</p>
+<ul>
+<li class="">A) PHP 8.0</li>
+<li class="">B) PHP 8.2</li>
+<li class="">C) PHP 8.3</li>
+<li class="">D) PHP 8.1
+<strong>Answer:</strong> C</li>
+</ul>
+<p><strong>3.</strong> What creates a new Laravel project?</p>
+<ul>
+<li class="">A) npm init laravel</li>
+<li class="">B) laravel new</li>
+<li class="">C) php artisan new</li>
+<li class="">D) create-laravel
+<strong>Answer:</strong> B</li>
+</ul>
+<p><strong>4.</strong> Which directory has controllers?</p>
+<ul>
+<li class="">A) resources/</li>
+<li class="">B) routes/</li>
+<li class="">C) app/Http/Controllers</li>
+<li class="">D) database/
+<strong>Answer:</strong> C</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h2>
+<ul>
+<li class="">Laravel was created by Taylor Otwell in 2011 as a modern, elegant alternative to PHP&#x27;s existing frameworks</li>
+<li class="">The philosophy centers on elegant syntax, expressive code, and convention over configuration</li>
+<li class="">Laravel 13 requires PHP 8.3+ and follows an annual August release cadence</li>
+<li class="">Breaking changes are minimized with long deprecation periods and automated upgrade tools</li>
+<li class="">Four installation methods exist: Laravel Installer (recommended), Herd (native), Sail (Docker), and Composer</li>
+<li class="">The directory structure cleanly separates application code, configuration, routes, views, and storage</li>
+<li class="">Artisan CLI provides scaffolding commands for models, controllers, migrations, and middleware</li>
+<li class="">Environment configuration uses <code>.env</code> files and a <code>config/</code> directory with <code>env()</code> and <code>config()</code> helpers</li>
+<li class="">The framework is designed for AI-assisted development with predictable, agent-friendly conventions</li>
+<li class="">Hello World can be built at three depth levels → closure, controller, or full MVC with Blade</li>
+<li class="">The first-party ecosystem spans deployment, monitoring, admin, search, billing, real-time, and AI</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="110-development-workflow">1.10 Development Workflow<a href="#110-development-workflow" class="hash-link" aria-label="Direct link to 1.10 Development Workflow" title="Direct link to 1.10 Development Workflow" translate="no">​</a></h3>
+<p>A typical Laravel development session follows this rhythm:</p>
+<ol>
+<li class=""><strong>Scaffold</strong>: Use <code>laravel new project</code> or an existing repository</li>
+<li class=""><strong>Configure</strong>: Set <code>.env</code> values for your database and services</li>
+<li class=""><strong>Model</strong>: Create models with <code>php artisan make:model Product -m</code> (the <code>-m</code> flag also creates the migration)</li>
+<li class=""><strong>Migrate</strong>: Run <code>php artisan migrate</code> to create database tables</li>
+<li class=""><strong>Route</strong>: Define endpoints in <code>routes/web.php</code> or <code>routes/api.php</code></li>
+<li class=""><strong>Controller</strong>: Create controllers with <code>php artisan make:controller ProductController --resource</code></li>
+<li class=""><strong>View</strong>: Build Blade templates in <code>resources/views/</code></li>
+<li class=""><strong>Test</strong>: Write tests with Pest or PHPUnit in the <code>tests/</code> directory</li>
+<li class=""><strong>Iterate</strong>: Artisan commands, Tinker REPL, and Telescope debugging support rapid iteration</li>
+</ol>
+<p>This workflow is intentionally linear and predictable → another reason AI agents excel at Laravel development. Each step has a clear entry point and a known output location.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercises">Exercises<a href="#exercises" class="hash-link" aria-label="Direct link to Exercises" title="Direct link to Exercises" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="review-questions">Review Questions<a href="#review-questions" class="hash-link" aria-label="Direct link to Review Questions" title="Direct link to Review Questions" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p>What problem did Taylor Otwell identify in the PHP ecosystem that led him to create Laravel? Explain how Laravel&#x27;s &quot;convention over configuration&quot; philosophy addresses this.</p>
+</li>
+<li class="">
+<p>Compare and contrast the four methods of creating a new Laravel application. Under what circumstances would you choose each one?</p>
+</li>
+<li class="">
+<p>Explain the relationship between the <code>.env</code> file and the <code>config/</code> directory. Why is it a security risk to commit <code>.env</code> to version control, and what is the production alternative?</p>
+</li>
+<li class="">
+<p>What makes Laravel 13 an &quot;agent-ready&quot; framework? Name three specific design decisions that make the framework predictable for AI coding assistants.</p>
+</li>
+<li class="">
+<p>Why does <code>php artisan make:model Product -mc</code> create three files? What are they and what is the relationship between them?</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="application-problems">Application Problems<a href="#application-problems" class="hash-link" aria-label="Direct link to Application Problems" title="Direct link to Application Problems" translate="no">​</a></h3>
+<ol>
+<li class="">
+<p><strong>Environment Configuration</strong>: Create a configuration file <code>config/referral.php</code> that reads the following environment variables with defaults: <code>REFERRAL_BONUS_AMOUNT</code> (25.00), <code>REFERRAL_BONUS_CURRENCY</code> (USD), <code>REFERRAL_MAX_PER_MONTH</code> (10), and <code>REFERRAL_EXPIRY_DAYS</code> (30). Then write a code snippet that retrieves each value using the <code>config()</code> helper and displays them.</p>
+</li>
+<li class="">
+<p><strong>Custom Artisan Command</strong>: Create an Artisan command called <code>app:status</code> that displays the application name, environment, debug mode status, and database connection name. Use <code>php artisan make:command</code> to scaffold it, then implement the logic using the <code>config()</code> helper. Output a formatted table.</p>
+</li>
+<li class="">
+<p><strong>Directory Structure Navigation</strong>: Starting from a fresh Laravel installation, trace the full path from an incoming HTTP request entering through <code>public/index.php</code> to the point where <code>routes/web.php</code> is loaded. List every PHP file that is touched along the way, in order, and explain what each file contributes.</p>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenge-problem">Challenge Problem<a href="#challenge-problem" class="hash-link" aria-label="Direct link to Challenge Problem" title="Direct link to Challenge Problem" translate="no">​</a></h3>
+<p><strong>Multi-Developer Application Setup</strong>: Create a Laravel 13 application configured for a team of five developers with the following requirements:</p>
+<ul>
+<li class="">Use Laravel Sail with Docker for consistent environments across Windows, macOS, and Linux</li>
+<li class="">Include MySQL, Redis, and Meilisearch services in the Sail configuration</li>
+<li class="">Configure <code>.env</code> so each developer can use their own database name (e.g., <code>app_jane</code>, <code>app_john</code>) without editing <code>docker-compose.yml</code></li>
+<li class="">Create a custom Artisan command <code>app:doctor</code> that validates the environment by checking that the database connection works (run a simple <code>SELECT 1</code>), Redis responds to a ping, and required environment variables (<code>APP_KEY</code>, <code>DB_DATABASE</code>, <code>MAIL_MAILER</code>) are all set</li>
+<li class="">The <code>app:doctor</code> output must be a color-coded ASCII table with columns for Check, Status (PASS/FAIL/SKIP), and Detail</li>
+<li class="">Write a Blade view at <code>resources/views/welcome-custom.blade.php</code> that displays the application name from <code>.env</code>, the current PHP version, and a list of enabled services read from a config file</li>
+</ul>
+<p>Implement every piece: the Docker additions, the config file, the complete <code>app:doctor</code> command, the Blade view, and the route pointing to a controller that renders the view.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ai-engineering-journey/laravel/index"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Laravel 13 with AI &amp; Automation → Complete University Textbook</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ai-engineering-journey/laravel/02-architecture-routing"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Chapter 2: Architecture, Routing, Middleware &amp; Controllers</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#learning-objectives" class="table-of-contents__link toc-highlight">Learning Objectives</a></li><li><a href="#chapter-at-a-glance" class="table-of-contents__link toc-highlight">Chapter at a Glance</a></li><li><a href="#chapter-roadmap" class="table-of-contents__link toc-highlight">Chapter Roadmap</a></li><li><a href="#chapter-at-a-glance-1" class="table-of-contents__link toc-highlight">Chapter at a Glance</a></li><li><a href="#chapter-roadmap-1" class="table-of-contents__link toc-highlight">Chapter Roadmap</a></li><li><a href="#theory" class="table-of-contents__link toc-highlight">Theory</a><ul><li><a href="#11-what-is-laravel" class="table-of-contents__link toc-highlight">1.1 What is Laravel?</a></li><li><a href="#12-laravel-13-specifics" class="table-of-contents__link toc-highlight">1.2 Laravel 13 Specifics</a></li><li><a href="#13-creating-laravel-applications" class="table-of-contents__link toc-highlight">1.3 Creating Laravel Applications</a></li><li><a href="#14-directory-structure" class="table-of-contents__link toc-highlight">1.4 Directory Structure</a></li><li><a href="#15-artisan-cli" class="table-of-contents__link toc-highlight">1.5 Artisan CLI</a></li><li><a href="#16-environment-configuration" class="table-of-contents__link toc-highlight">1.6 Environment Configuration</a></li><li><a href="#17-laravel-and-ai" class="table-of-contents__link toc-highlight">1.7 Laravel and AI</a></li><li><a href="#18-hello-world--complete-walkthrough" class="table-of-contents__link toc-highlight">1.8 Hello World → Complete Walkthrough</a></li><li><a href="#19-package-ecosystem-overview" class="table-of-contents__link toc-highlight">1.9 Package Ecosystem Overview</a></li></ul></li><li><a href="#concept-comparison" class="table-of-contents__link toc-highlight">Concept Comparison</a></li><li><a href="#quick-reference" class="table-of-contents__link toc-highlight">Quick Reference</a></li><li><a href="#cross-application-matrix" class="table-of-contents__link toc-highlight">Cross-Application Matrix</a></li><li><a href="#chapter-quiz" class="table-of-contents__link toc-highlight">Chapter Quiz</a></li><li><a href="#concept-comparison-1" class="table-of-contents__link toc-highlight">Concept Comparison</a></li><li><a href="#quick-reference-1" class="table-of-contents__link toc-highlight">Quick Reference</a></li><li><a href="#cross-application-matrix-1" class="table-of-contents__link toc-highlight">Cross-Application Matrix</a></li><li><a href="#chapter-quiz-1" class="table-of-contents__link toc-highlight">Chapter Quiz</a></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a><ul><li><a href="#110-development-workflow" class="table-of-contents__link toc-highlight">1.10 Development Workflow</a></li></ul></li><li><a href="#exercises" class="table-of-contents__link toc-highlight">Exercises</a><ul><li><a href="#review-questions" class="table-of-contents__link toc-highlight">Review Questions</a></li><li><a href="#application-problems" class="table-of-contents__link toc-highlight">Application Problems</a></li><li><a href="#challenge-problem" class="table-of-contents__link toc-highlight">Challenge Problem</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Courses</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/ai-engineering-placement">Placement Course</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/python-programming">Python</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/machine-learning">Machine Learning</a></li><li class="footer__item"><a class="footer__link-item" href="/ai-engineering-journey/courses/system-design">System Design</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/Raushan666java/ai-engineering-journey" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/Raushan666java/learning-playground" target="_blank" rel="noopener noreferrer" class="footer__link-item">Learning Playground<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright 2026 AI Engineering Journey. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

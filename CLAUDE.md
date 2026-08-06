@@ -42,8 +42,14 @@ Turn the learning-playground repo into a complete, self-contained placement prep
 - All commits pushed to both repos (ai-engineering-journey + learning-playground)
 
 ### Repos
-- `git@github.com:Raushan666java/ai-engineering-journey.git` — theory chapters (224 chapters, 24 modules)
+- `git@github.com:Raushan666java/ai-engineering-journey.git` — theory chapters (224 chapters, 24 modules) + Docusaurus site under `site/`
 - `git@github.com:Raushan666java/learning-playground.git` — practice code, interview prep, learning methods, tracker
+
+### Site Deployment (Docusaurus at `site/`)
+- GitHub Pages serves the `gh-pages` branch; the live site is NOT updated by the Actions workflow (it flakily OOMs, exit 134, on the 7GB runner).
+- Deploy process: `site/` → `node ./node_modules/@docusaurus/core/bin/docusaurus.mjs build` with `NODE_OPTIONS=--max-old-space-size=8192` → push `site/build/*` to `gh-pages` (use a worktree: `git worktree add <tmp> gh-pages`, clear, copy, commit, push; pages re-serves in ~2 min).
+- `site/docs/courses/ai-engineering-placement/` is the synced placement tree (sync via `C:\Users\hiii\AppData\Local\Temp\opencode\sync-site.ps1`; verify via `verify-site.ps1`). The old legacy tree `site/docs/placement/` was deleted — placement routes are `/ai-engineering-placement/...` only.
+- `gh` CLI is NOT authenticated — workflow file edits can't be pushed (needs `workflow` OAuth scope), and Actions logs can't be fetched.
 
 ### Next Steps
 1. User to run `npx ts-node learning-methods/learning-dashboard.ts` to view stats

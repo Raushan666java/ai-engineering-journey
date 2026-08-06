@@ -48,6 +48,7 @@ Turn the learning-playground repo into a complete, self-contained placement prep
 ### Site Deployment (Docusaurus at `site/`)
 - GitHub Pages serves the `gh-pages` branch; the live site is NOT updated by the Actions workflow (it flakily OOMs, exit 134, on the 7GB runner).
 - Deploy process: `site/` → `node ./node_modules/@docusaurus/core/bin/docusaurus.mjs build` with `NODE_OPTIONS=--max-old-space-size=8192` → push `site/build/*` to `gh-pages` (use a worktree: `git worktree add <tmp> gh-pages`, clear, copy, commit, push; pages re-serves in ~2 min).
+- Build memory: the page-generation phase needs ~6GB live heap; on a RAM-loaded machine (few GB free) use heap `5632`+ → crashes, so stay at `8192` and add `--no-minify` (skips terser; cuts ~1GB). Build takes 15-25 min under paging. After copying into the worktree, NEVER `Remove-Item -Force` the worktree root glob — it deletes the hidden `.git` file; clear with `-Exclude .git`.
 - `site/docs/courses/ai-engineering-placement/` is the synced placement tree (sync via `C:\Users\hiii\AppData\Local\Temp\opencode\sync-site.ps1`; verify via `verify-site.ps1`). The old legacy tree `site/docs/placement/` was deleted — placement routes are `/ai-engineering-placement/...` only.
 - `gh` CLI is NOT authenticated — workflow file edits can't be pushed (needs `workflow` OAuth scope), and Actions logs can't be fetched.
 

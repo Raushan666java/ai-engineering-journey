@@ -27,6 +27,8 @@ A 12-week, 6-phase transition curriculum for experienced Laravel/PHP backend dev
 
 By the end of this course, you will have three production-grade portfolio projects, a rewritten professional profile, and a repeatable job-search system targeting AI Agent Engineer roles in Dubai, remote globally, and freelance on Upwork.
 
+> **Companion text — Agentic AI: The Complete Book:** A complete 17-chapter reference from first principles to production multi-agent systems (tool calling, hand-built ReAct loop, LangGraph, agentic RAG, MCP, guardrails, evaluation, deployment, and an end-to-end capstone). Read it chapter-by-chapter alongside this curriculum: [`agentic-ai-book/00-index.md`](agentic-ai-book/00-index.md)
+
 ---
 
 ## Prerequisites & Requirements

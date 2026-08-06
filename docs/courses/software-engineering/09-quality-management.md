@@ -1,4 +1,4 @@
-﻿# Software Quality Management
+# Software Quality Management
 
 ## Learning Objectives
 
@@ -33,7 +33,7 @@
 
 ### What is Software Quality?
 
-Software quality is the degree to which a software product satisfies stated and implied needs. Quality is not merely the absence of defects â€” it encompasses the entire user experience, maintainability, performance, and security. Quality must be designed into the product from the start, not inspected in at the end.
+Software quality is the degree to which a software product satisfies stated and implied needs. Quality is not merely the absence of defects — it encompasses the entire user experience, maintainability, performance, and security. Quality must be designed into the product from the start, not inspected in at the end.
 
 ```mermaid
 graph TD
@@ -149,17 +149,17 @@ Six Sigma is a data-driven methodology for eliminating defects. Applied to softw
 Software adapts Six Sigma by treating KLOC, function points, or story points as "opportunities":
 
 ```
-DPMO = (Number of Defects / (Opportunities per Unit Ã— Number of Units)) Ã— 1,000,000
+DPMO = (Number of Defects / (Opportunities per Unit × Number of Units)) × 1,000,000
 Sigma Level = NORMSINV(1 - DPMO/1,000,000) + 1.5
 ```
 
 | Sigma Level | DPMO | Cost of Quality (% of sales) |
 |-------------|------|------------------------------|
-| 2Ïƒ | 308,537 | 30-40% |
-| 3Ïƒ | 66,807 | 20-30% |
-| 4Ïƒ | 6,210 | 15-20% |
-| 5Ïƒ | 233 | 10-15% |
-| 6Ïƒ | 3.4 | <10% |
+| 2σ | 308,537 | 30-40% |
+| 3σ | 66,807 | 20-30% |
+| 4σ | 6,210 | 15-20% |
+| 5σ | 233 | 10-15% |
+| 6σ | 3.4 | <10% |
 
 #### ISO/IEC 25010 Quality Model
 
@@ -327,15 +327,15 @@ graph LR
 ```
 
 **Control limit formulas:**
-- UCL = Î¼ + 3Ïƒ
-- LCL = Î¼ - 3Ïƒ
-- Mean (Î¼) = average of sample means
-- Sigma (Ïƒ) = standard deviation of sample means
+- UCL = μ + 3σ
+- LCL = μ - 3σ
+- Mean (μ) = average of sample means
+- Sigma (σ) = standard deviation of sample means
 
 **Control chart rules for special causes:**
-1. One point beyond Â±3Ïƒ
-2. Two of three points beyond Â±2Ïƒ (same side)
-3. Four of five points beyond Â±1Ïƒ (same side)
+1. One point beyond ±3σ
+2. Two of three points beyond ±2σ (same side)
+3. Four of five points beyond ±1σ (same side)
 4. Eight consecutive points on one side of the mean
 5. Six consecutive points trending up or down
 
@@ -395,11 +395,11 @@ flowchart TD
         GATE6 -->|Pass| GATE7[Gate 7: Performance]
     end
     
-    GATE1 -->|Fail| BLOCK1[âŒ Fix Lint Issues]
-    GATE2 -->|Fail| BLOCK2[âŒ Fix Broken Tests]
-    GATE3 -->|Fail| BLOCK3[âŒ Improve Coverage]
-    GATE4 -->|Fail| BLOCK4[âŒ Fix Vulnerabilities]
-    GATE7 -->|Fail| BLOCK5[âŒ Optimize Performance]
+    GATE1 -->|Fail| BLOCK1[❌ Fix Lint Issues]
+    GATE2 -->|Fail| BLOCK2[❌ Fix Broken Tests]
+    GATE3 -->|Fail| BLOCK3[❌ Improve Coverage]
+    GATE4 -->|Fail| BLOCK4[❌ Fix Vulnerabilities]
+    GATE7 -->|Fail| BLOCK5[❌ Optimize Performance]
     
     classDef gate fill:#4caf50,color:#fff
     classDef block fill:#f44336,color:#fff
@@ -411,7 +411,7 @@ flowchart TD
 
 ## Examples
 
-### Example 1: QualityMetricsCollector â€” Defect Density, MTBF, Reliability
+### Example 1: QualityMetricsCollector — Defect Density, MTBF, Reliability
 
 This production-grade quality metrics collector computes defect density, mean time between failures (MTBF), and system reliability using exponential distribution models commonly used in reliability engineering.
 
@@ -504,11 +504,11 @@ class QualityMetricsCollector {
     const direction = changePercent < -10 ? 'improving' : changePercent > 10 ? 'declining' : 'stable';
 
     const recommendations: string[] = [];
-    if (overallDefectDensity > 5) recommendations.push('Defect density exceeds 5/KLOC â€” invest in root cause analysis');
-    if (mtbf < 24) recommendations.push('MTBF under 24 hours â€” critical reliability risk, implement chaos engineering');
-    if (mttr > 2) recommendations.push('MTTR over 2 hours â€” improve runbooks and automate recovery');
-    if (availability < 0.99) recommendations.push('Availability below 99% â€” review SLAs and implement redundancy');
-    if (direction === 'declining') recommendations.push('Quality trend is declining â€” consider process changes and training');
+    if (overallDefectDensity > 5) recommendations.push('Defect density exceeds 5/KLOC — invest in root cause analysis');
+    if (mtbf < 24) recommendations.push('MTBF under 24 hours — critical reliability risk, implement chaos engineering');
+    if (mttr > 2) recommendations.push('MTTR over 2 hours — improve runbooks and automate recovery');
+    if (availability < 0.99) recommendations.push('Availability below 99% — review SLAs and implement redundancy');
+    if (direction === 'declining') recommendations.push('Quality trend is declining — consider process changes and training');
 
     return {
       defectDensity: { overall: overallDefectDensity, perModule: moduleDensities, perSeverity },
@@ -551,7 +551,7 @@ const report = collector.analyze(
 console.log(report.reliability);
 ```
 
-### Example 2: ISO25010Evaluator â€” Evaluate Against Each Quality Characteristic
+### Example 2: ISO25010Evaluator — Evaluate Against Each Quality Characteristic
 
 This evaluator scores a software product against each of the eight ISO 25010 quality characteristics, aggregating sub-characteristic scores into a weighted quality index.
 
@@ -644,24 +644,24 @@ class ISO25010Evaluator {
   public generateCertificationReport(evaluation: ISO25010Evaluation): string {
     const scoreBar = (score: number) => {
       const filled = Math.round(score / 10);
-      return 'â–ˆ'.repeat(filled) + 'â–‘'.repeat(10 - filled);
+      return '█'.repeat(filled) + '░'.repeat(10 - filled);
     };
 
     const lines = [
-      'â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',
+      '═══════════════════════════════════════════',
       '  ISO 25010 Quality Evaluation Report',
-      'â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',
+      '═══════════════════════════════════════════',
       '',
       `  Overall Quality Index: ${evaluation.overallIndex}/100`,
       `  Certification Readiness: ${evaluation.certificationReadiness.toUpperCase()}`,
       '',
-      '  â”€â”€â”€ Characteristic Scores â”€â”€â”€',
+      '  ─── Characteristic Scores ───',
       ...evaluation.scores.map(s =>
-        `    ${s.name.padEnd(28)} ${scoreBar(s.score)} ${s.score.toFixed(1)}${s.failsMinimum ? ' âš ' : ''}`
+        `    ${s.name.padEnd(28)} ${scoreBar(s.score)} ${s.score.toFixed(1)}${s.failsMinimum ? ' ⚠' : ''}`
       ),
       '',
-      `  âœ… Strongest: ${evaluation.strongestAreas.join(', ')}`,
-      `  âš   Weakest: ${evaluation.weakestAreas.join(', ')}`,
+      `  ✅ Strongest: ${evaluation.strongestAreas.join(', ')}`,
+      `  ⚠  Weakest: ${evaluation.weakestAreas.join(', ')}`,
       '',
       '  Recommendations:',
       ...evaluation.weakestAreas.map(a => `    - Improve ${a}`),
@@ -722,7 +722,7 @@ const evalResult = evaluator.evaluate(data);
 console.log(evaluator.generateCertificationReport(evalResult));
 ```
 
-### Example 3: FaganInspection â€” Inspection Process with Defect Logging and Tracking
+### Example 3: FaganInspection — Inspection Process with Defect Logging and Tracking
 
 A full Fagan inspection implementation with role management, defect logging, phase tracking, and productivity metrics.
 
@@ -890,12 +890,12 @@ class FaganInspection {
     }
 
     const lines = [
-      'â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',
+      '═══════════════════════════════════════════',
       `  Fagan Inspection Report: ${this.artifactName}`,
       `  ID: ${this.id}`,
-      'â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',
+      '═══════════════════════════════════════════',
       '',
-      '  â”€â”€â”€ Metrics â”€â”€â”€',
+      '  ─── Metrics ───',
       `  Artifact Size: ${this.artifactSize} units`,
       `  Total Defects Found: ${metrics.totalDefects}`,
       `  Defect Density: ${metrics.defectDensity}/unit`,
@@ -905,22 +905,22 @@ class FaganInspection {
       `  Meeting Efficiency: ${metrics.meetingEfficiency} defects/hour`,
       `  Cost Per Defect: ${metrics.costPerDefect} hours`,
       '',
-      '  â”€â”€â”€ Severity Breakdown â”€â”€â”€',
+      '  ─── Severity Breakdown ───',
       ...Object.entries(severityBreakdown).map(([sev, count]) =>
         `    ${sev.toUpperCase().padEnd(12)} ${count}`
       ),
       '',
-      '  â”€â”€â”€ Defect Class Breakdown â”€â”€â”€',
+      '  ─── Defect Class Breakdown ───',
       ...Object.entries(classBreakdown).map(([cls, count]) =>
         `    ${cls.padEnd(16)} ${count}`
       ),
       '',
-      '  â”€â”€â”€ All Defects â”€â”€â”€',
+      '  ─── All Defects ───',
       ...this.defects.map(d =>
         `    ${d.id} | ${d.severity.toUpperCase()} | ${d.location} | ${d.description} | ${d.status}`
       ),
       '',
-      '  â”€â”€â”€ Team Effort â”€â”€â”€',
+      '  ─── Team Effort ───',
       ...this.inspectors.map(i =>
         `    ${i.role.padEnd(12)} ${i.name.padEnd(20)} ${i.hoursSpent}h`
       ),
@@ -978,7 +978,7 @@ const metrics = inspection.close();
 console.log(inspection.generateReport());
 ```
 
-### Example 4: Quality Metric Collector â€” Cyclomatic Complexity, Coverage, Gates
+### Example 4: Quality Metric Collector — Cyclomatic Complexity, Coverage, Gates
 
 ```typescript
 interface QualityMetrics {
@@ -1114,9 +1114,9 @@ class QualityDashboard {
 
   public renderDashboard(entries: DashboardEntry[], overallStatus: DashboardStatus, score: number): string {
     const statusIcon = (s: DashboardStatus) =>
-      s === DashboardStatus.HEALTHY ? 'ðŸŸ¢' : s === DashboardStatus.WARNING ? 'ðŸŸ¡' : 'ðŸ”´';
+      s === DashboardStatus.HEALTHY ? '🟢' : s === DashboardStatus.WARNING ? '🟡' : '🔴';
     const trendIcon = (t: 'up' | 'down' | 'flat') =>
-      t === 'up' ? 'â–²' : t === 'down' ? 'â–¼' : 'â”€';
+      t === 'up' ? '▲' : t === 'down' ? '▼' : '─';
     const rows = entries.map(e =>
       `  ${statusIcon(e.status)} ${trendIcon(e.trend)} ${e.metric.padEnd(25)} ${e.value.padEnd(12)} ${e.status}`
     ).join('\n');
@@ -1124,7 +1124,7 @@ class QualityDashboard {
       '=== Quality Dashboard ===',
       `  Overall Score: ${score}/100 ${statusIcon(overallStatus)}`,
       `  Overall Status: ${overallStatus.toUpperCase()}`,
-      '  ' + 'â”€'.repeat(55),
+      '  ' + '─'.repeat(55),
       rows,
     ].join('\n');
   }
@@ -1254,14 +1254,14 @@ class DefectDensityAnalyzer {
   public generateReport(entries: DensityReportEntry[], trend: { release: string; density: number }[]): string {
     const header = '=== Defect Density Report ===\n';
     const tableHeader = `${'Module'.padEnd(20)} ${'KS LOC'.padEnd(8)} ${'Defects'.padEnd(8)} ${'Density'.padEnd(8)} ${'Risk'}`;
-    const separator = 'â”€'.repeat(60);
+    const separator = '─'.repeat(60);
     const rows = entries.map(e =>
       `${e.module.padEnd(20)} ${String(e.ksloc).padEnd(8)} ${String(e.defectCount).padEnd(8)} ${String(e.density).padEnd(8)} ${e.riskLevel.toUpperCase()}`
     ).join('\n');
     const hotspots = entries.filter(e => e.density > 5);
     const hotspotSection = hotspots.length > 0
-      ? `\n\nâš  Hotspots (density > 5):\n${hotspots.map(h => `  - ${h.module} (${h.density} defects/KLOC)`).join('\n')}`
-      : '\n\nâœ“ No hotspots detected';
+      ? `\n\n⚠ Hotspots (density > 5):\n${hotspots.map(h => `  - ${h.module} (${h.density} defects/KLOC)`).join('\n')}`
+      : '\n\n✓ No hotspots detected';
     const trendLines = trend.map(t => `  ${t.release.padEnd(12)} ${t.density} defects/KLOC`).join('\n');
     const trendSection = `\n\n=== Density Trend ===\n${trendLines}`;
     return [header, tableHeader, separator, rows, hotspotSection, trendSection].join('\n');
@@ -1271,13 +1271,13 @@ class DefectDensityAnalyzer {
 
 ### Real-World Case Studies
 
-**Case Study 1: Toyota â€” Quality at Scale**
+**Case Study 1: Toyota — Quality at Scale**
 
-Toyota's quality management system, which inspired Lean manufacturing, demonstrates quality principles at industrial scale. Their "Andon Cord" system empowers any worker to stop the production line if a defect is found â€” analogous to "stop the line" culture in software. Toyota's defect rate of <10 parts per million (PPM) inspired Six Sigma. For software, this translates to stopping the build when tests fail and empowering any developer to block a release.
+Toyota's quality management system, which inspired Lean manufacturing, demonstrates quality principles at industrial scale. Their "Andon Cord" system empowers any worker to stop the production line if a defect is found — analogous to "stop the line" culture in software. Toyota's defect rate of <10 parts per million (PPM) inspired Six Sigma. For software, this translates to stopping the build when tests fail and empowering any developer to block a release.
 
-**Case Study 2: NASA â€” Software Quality in Safety-Critical Systems**
+**Case Study 2: NASA — Software Quality in Safety-Critical Systems**
 
-NASA's Space Shuttle software (developed by IBM) had a defect rate of 0.1 defects per KLOC â€” 50x better than industry average. They achieved this through:
+NASA's Space Shuttle software (developed by IBM) had a defect rate of 0.1 defects per KLOC — 50x better than industry average. They achieved this through:
 - **Formal inspections:** Every line of code was inspected by 4+ people
 - **Independent V&V:** Separate team verified all requirements traceability
 - **Static analysis:** Rigorous use of tools before every build
@@ -1285,7 +1285,7 @@ NASA's Space Shuttle software (developed by IBM) had a defect rate of 0.1 defect
 
 The cost of this quality was $1,000 per line of code, but the cost of failure was unthinkable.
 
-**Case Study 3: Microsoft â€” Quality Transformation with Windows**
+**Case Study 3: Microsoft — Quality Transformation with Windows**
 
 Microsoft's Windows division underwent a major quality transformation from 2012-2015, moving from "ship when ready" to predictable quality releases. They implemented:
 - **Quality gates** in build pipeline
@@ -1328,9 +1328,9 @@ graph LR
         D4[Density 10+] -->|Critical| IMMEDIATE[Must Refactor]
     end
     subgraph "Dashboard Status"
-        DS1[Score 80-100] -->|ðŸŸ¢| HLTH[Healthy]
-        DS2[Score 50-79] -->|ðŸŸ¡| WARN[Warning]
-        DS3[Score 0-49] -->|ðŸ”´| CRIT[Critical]
+        DS1[Score 80-100] -->|🟢| HLTH[Healthy]
+        DS2[Score 50-79] -->|🟡| WARN[Warning]
+        DS3[Score 0-49] -->|🔴| CRIT[Critical]
     end
 ```
 
@@ -1462,20 +1462,20 @@ console.log(predictReliability(720, 24)); // Reliability over 24h with 30-day MT
 
 Software quality management is a multi-faceted discipline that spans planning, assurance, control, and continuous improvement. Quality models like McCall (1977), Boehm (1978), FURPS (1987), and ISO 25010 (2011) provide structured frameworks for defining and evaluating software quality across dimensions such as functional suitability, reliability, performance, security, maintainability, and portability. Process quality frameworks like CMMI (with its five maturity levels) and Six Sigma (with DMAIC) guide organisations in maturing their quality practices from ad hoc to quantitatively managed and continuously optimising.
 
-At the tactical level, formal inspections such as Fagan inspections catch 60-70% of defects before testing at substantially lower cost. Static analysis tools enforce coding standards, detect bug patterns, and identify security vulnerabilities automatically. Statistical process control (SPC) distinguishes common cause from special cause variation, enabling data-driven quality decisions. Quality gates integrated into CI/CD pipelines (lint â†’ test â†’ coverage â†’ security â†’ build â†’ integration â†’ performance) prevent quality degradation from reaching production.
+At the tactical level, formal inspections such as Fagan inspections catch 60-70% of defects before testing at substantially lower cost. Static analysis tools enforce coding standards, detect bug patterns, and identify security vulnerabilities automatically. Statistical process control (SPC) distinguishes common cause from special cause variation, enabling data-driven quality decisions. Quality gates integrated into CI/CD pipelines (lint → test → coverage → security → build → integration → performance) prevent quality degradation from reaching production.
 
 Practical tools like the QualityMetricsCollector (computing defect density, MTBF, and reliability), ISO25010Evaluator (scoring against all eight characteristics), and FaganInspection (managing the full inspection lifecycle with defect tracking and metrics) demonstrate how to operationalise quality management. Real-world cases from Toyota (Andon Cord culture), NASA (0.1 defects/KLOC through formal inspections and independent V&V), and Microsoft (60% crash reduction through quality gates and telemetry) show that systematic quality investment pays dividends in reliability, customer satisfaction, and reduced cost of rework.
 
 ## Practical Takeaways
 
-1. **Quality must be planned, not inspected in** â€” allocate dedicated time for quality activities in every sprint
-2. **Process quality drives product quality** â€” fix the process, and product defects decrease predictably
-3. **Inspections catch defects cheaper than testing** â€” the cost of fixing a bug increases exponentially through the lifecycle (1:10:100 rule at requirements:development:production)
-4. **Static analysis is cheap insurance** â€” run linters, type checkers, and vulnerability scanning as part of every CI build
-5. **Track quality metrics over time** â€” trends reveal process degradation before it becomes critical; use control charts
-6. **Automate quality checks** â€” manual quality control does not scale across teams or releases
-7. **Use multiple quality models** â€” combine ISO 25010 for product quality with CMMI for process maturity
-8. **Quality is everyone's responsibility** â€” developers, testers, product owners, and operations all contribute to quality
+1. **Quality must be planned, not inspected in** — allocate dedicated time for quality activities in every sprint
+2. **Process quality drives product quality** — fix the process, and product defects decrease predictably
+3. **Inspections catch defects cheaper than testing** — the cost of fixing a bug increases exponentially through the lifecycle (1:10:100 rule at requirements:development:production)
+4. **Static analysis is cheap insurance** — run linters, type checkers, and vulnerability scanning as part of every CI build
+5. **Track quality metrics over time** — trends reveal process degradation before it becomes critical; use control charts
+6. **Automate quality checks** — manual quality control does not scale across teams or releases
+7. **Use multiple quality models** — combine ISO 25010 for product quality with CMMI for process maturity
+8. **Quality is everyone's responsibility** — developers, testers, product owners, and operations all contribute to quality
 
 ## Chapter Quiz
 
@@ -1484,7 +1484,7 @@ Practical tools like the QualityMetricsCollector (computing defect density, MTBF
 | Q1: What is the primary difference between quality assurance and quality control? | B | QA focuses on process compliance (prevention), QC focuses on product verification (detection) |
 | Q2: The CMMI level that requires organisation-wide standard processes is: | B | Level 3 (Defined) establishes standard processes across the organisation, beyond Level 2's project-level focus |
 | Q3: In Fagan inspections, the participant who leads the process is called the: | C | The moderator leads the inspection, ensures process compliance, and manages the meeting flow |
-| Q4: What cyclomatic complexity value is considered high risk and difficult to test? | C | Complexity 21-50 is high risk â€” requires significant refactoring to achieve adequate test coverage |
+| Q4: What cyclomatic complexity value is considered high risk and difficult to test? | C | Complexity 21-50 is high risk — requires significant refactoring to achieve adequate test coverage |
 | Q5: ISO 25010 defines how many quality characteristics? | C | Eight characteristics: functional suitability, reliability, performance efficiency, operability, security, compatibility, maintainability, portability |
 
 ## Exercises
@@ -1512,7 +1512,7 @@ class SPCMonitor {
     const ucl = Math.min(1, mean + 3 * std);
     const lcl = Math.max(0, mean - 3 * std);
     const violations: SPCRuleViolation[] = [];
-    // Rule 1: One point beyond 3Ïƒ
+    // Rule 1: One point beyond 3σ
     failureRates.forEach((rate, i) => {
       if (rate > ucl || rate < lcl) {
         violations.push({ rule: 1, description: `Day ${i+1}: ${(rate*100).toFixed(1)}% beyond control limits`, severity: 'critical' });
@@ -1605,12 +1605,12 @@ class QualityGatePipeline {
       this.results.push({ stage: stage.name, passed, timestamp: new Date() });
       if (!passed) {
         if (stage.critical) failedStages.push(stage.name);
-        else console.log(`Non-critical stage '${stage.name}' failed â€” continuing`);
+        else console.log(`Non-critical stage '${stage.name}' failed — continuing`);
       }
     }
     const passed = failedStages.length === 0;
     const report = this.results.map(r =>
-      `  ${r.passed ? 'âœ…' : 'âŒ'} ${r.stage}: ${r.passed ? 'PASSED' : 'FAILED'}`
+      `  ${r.passed ? '✅' : '❌'} ${r.stage}: ${r.passed ? 'PASSED' : 'FAILED'}`
     ).join('\n');
     return { passed, failedStages, report };
   }
@@ -1686,7 +1686,7 @@ class FaganBenchmarkComparator {
     for (const [key, expected] of Object.entries(FaganBenchmarkComparator.benchmarks)) {
       const actualVal = actual[key as keyof typeof actual];
       const diff = ((actualVal - expected) / expected * 100).toFixed(1);
-      const status = Math.abs(parseFloat(diff)) < 15 ? 'âœ…' : parseFloat(diff) > 0 ? 'âš¡' : 'âš ';
+      const status = Math.abs(parseFloat(diff)) < 15 ? '✅' : parseFloat(diff) > 0 ? '⚡' : '⚠';
       lines.push(`  ${status} ${key.padEnd(20)} Expected: ${expected} | Actual: ${actualVal} | Diff: ${diff}%`);
     }
     return lines.join('\n');

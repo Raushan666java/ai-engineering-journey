@@ -1,4 +1,4 @@
-﻿# Chapter 03: Banking Security Guidelines
+# Chapter 03: Banking Security Guidelines
 
 ## Learning Objectives
 
@@ -169,7 +169,7 @@ The IT Act 2000 is the primary law dealing with cybercrime and electronic commer
 
 Key amendments relevant to banking:
 
-- **Section 66A:** Offensive messages through communication service (struck down by SC in 2015 â€” Shreya Singhal vs. Union of India)
+- **Section 66A:** Offensive messages through communication service (struck down by SC in 2015 — Shreya Singhal vs. Union of India)
 - **Section 69:** Government's power to intercept, monitor, or decrypt information
 - **Section 69A:** Blocking of websites (by Department of IT)
 - **Section 69B:** Monitor network traffic (computer resource)
@@ -233,20 +233,20 @@ ISMS Policy -> Scope Definition -> Risk Assessment
 
 | Domain | Key Controls for Banking |
 |--------|-------------------------|
-| A.5 â€” Information Security Policies | Board-approved IS policy |
-| A.6 â€” Organization of IS | CISO, IS Steering Committee |
-| A.7 â€” Human Resource Security | Background checks, NDAs |
-| A.8 â€” Asset Management | Asset inventory, classification |
-| A.9 â€” Access Control | RBAC, PAM, MFA |
-| A.10 â€” Cryptography | Key management, encryption policies |
-| A.11 â€” Physical Security | Data center security, CCTV |
-| A.12 â€” Operations Security | Change management, backup, malware protection |
-| A.13 â€” Communications Security | Network security, segregation |
-| A.14 â€” System Acquisition & Dev | SDLC security, secure coding |
-| A.15 â€” Supplier Relationships | Vendor risk assessments |
-| A.16 â€” Incident Management | Incident response, reporting |
-| A.17 â€” Business Continuity | BCP, DR testing |
-| A.18 â€” Compliance | IT Act, RBI guidelines, PCI DSS |
+| A.5 — Information Security Policies | Board-approved IS policy |
+| A.6 — Organization of IS | CISO, IS Steering Committee |
+| A.7 — Human Resource Security | Background checks, NDAs |
+| A.8 — Asset Management | Asset inventory, classification |
+| A.9 — Access Control | RBAC, PAM, MFA |
+| A.10 — Cryptography | Key management, encryption policies |
+| A.11 — Physical Security | Data center security, CCTV |
+| A.12 — Operations Security | Change management, backup, malware protection |
+| A.13 — Communications Security | Network security, segregation |
+| A.14 — System Acquisition & Dev | SDLC security, secure coding |
+| A.15 — Supplier Relationships | Vendor risk assessments |
+| A.16 — Incident Management | Incident response, reporting |
+| A.17 — Business Continuity | BCP, DR testing |
+| A.18 — Compliance | IT Act, RBI guidelines, PCI DSS |
 
 ### 5. Basel III Technology Implications
 
@@ -258,18 +258,18 @@ Basel III is a global regulatory framework for banks, issued by the Basel Commit
 
 ```
 Basel III Pillars:
-â”œâ”€â”€ Pillar 1: Minimum Capital Requirements
-â”‚   â”œâ”€â”€ Credit Risk: Data aggregation, risk weighting engines
-â”‚   â”œâ”€â”€ Market Risk: VaR computation, trading systems
-â”‚   â””â”€â”€ Operational Risk: Loss data collection, AMA systems
-â”œâ”€â”€ Pillar 2: Supervisory Review
-â”‚   â”œâ”€â”€ ICAAP (Internal Capital Adequacy Assessment Process)
-â”‚   â”œâ”€â”€ Risk appetite framework (automated dashboards)
-â”‚   â””â”€â”€ Stress testing models (IT infrastructure for simulation)
-â””â”€â”€ Pillar 3: Market Discipline
-    â”œâ”€â”€ Disclosure requirements (XBRL-based reporting)
-    â”œâ”€â”€ Pillar 3 reports (automated generation)
-    â””â”€â”€ Public dashboards
+├── Pillar 1: Minimum Capital Requirements
+│   ├── Credit Risk: Data aggregation, risk weighting engines
+│   ├── Market Risk: VaR computation, trading systems
+│   └── Operational Risk: Loss data collection, AMA systems
+├── Pillar 2: Supervisory Review
+│   ├── ICAAP (Internal Capital Adequacy Assessment Process)
+│   ├── Risk appetite framework (automated dashboards)
+│   └── Stress testing models (IT infrastructure for simulation)
+└── Pillar 3: Market Discipline
+    ├── Disclosure requirements (XBRL-based reporting)
+    ├── Pillar 3 reports (automated generation)
+    └── Public dashboards
 ```
 
 **IT Systems Required for Basel III:**
@@ -304,22 +304,22 @@ Basel III Pillars:
    - Cash flow forecasting
    - Collateral management
 
-#### 5.2 BCBS 239 â€” Risk Data Aggregation
+#### 5.2 BCBS 239 — Risk Data Aggregation
 
 BCBS 239 (Principles for Effective Risk Data Aggregation and Risk Reporting) is critical for bank IT:
 
 ```
-Principle 1: Governance â€” Risk data architecture must have board/management oversight
-Principle 2: Data Architecture â€” Robust infrastructure across the bank
-Principle 3: Accuracy â€” Data must be accurate; automated reconciliation
-Principle 4: Completeness â€” All material risk data must be included
-Principle 5: Timeliness â€” Data available within regulatory timeframes
-Principle 6: Adaptation â€” System must adapt to changing risk profile
-Principle 7: Accuracy of Reports â€” Reports must be accurate and reviewed
-Principle 8: Comprehensiveness of Reports â€” Cover all risk areas
-Principle 9: Clear Reports â€” Reports must be clear and actionable
-Principle 10: Frequency â€” Reports at frequency appropriate for risk type
-Principle 11: Distribution â€” Reports must reach the right stakeholders
+Principle 1: Governance — Risk data architecture must have board/management oversight
+Principle 2: Data Architecture — Robust infrastructure across the bank
+Principle 3: Accuracy — Data must be accurate; automated reconciliation
+Principle 4: Completeness — All material risk data must be included
+Principle 5: Timeliness — Data available within regulatory timeframes
+Principle 6: Adaptation — System must adapt to changing risk profile
+Principle 7: Accuracy of Reports — Reports must be accurate and reviewed
+Principle 8: Comprehensiveness of Reports — Cover all risk areas
+Principle 9: Clear Reports — Reports must be clear and actionable
+Principle 10: Frequency — Reports at frequency appropriate for risk type
+Principle 11: Distribution — Reports must reach the right stakeholders
 ```
 
 ### 6. SWIFT Security (CSP Program)
@@ -398,7 +398,7 @@ RBI mandates that all banks maintain a Business Continuity Plan (BCP) and Disast
 | RTO (Recovery Time Objective) | Critical systems: &lt; 2-4 hours |
 | RPO (Recovery Point Objective) | Critical systems: &lt; 15 minutes |
 | DR Testing | Minimum once per year (full simulated failover) |
-| Alternate Channel DR | Internet Banking, ATM switch, UPI â€” independent DR |
+| Alternate Channel DR | Internet Banking, ATM switch, UPI — independent DR |
 | Live Data Testing | Actual customer data used in DR test (with safeguards) |
 
 #### 7.2 Bank DR Architecture
@@ -433,19 +433,19 @@ Primary Data Center (PDC)                 Disaster Recovery (DR)
 
 ```
 DR Test Phases (as per RBI):
-â”œâ”€â”€ Phase 1: Table-top exercise (quarterly)
-â”‚   â”œâ”€â”€ Review BCP documentation
-â”‚   â””â”€â”€ Simulate crisis scenarios
-â”œâ”€â”€ Phase 2: Technical DR test (half-yearly)
-â”‚   â”œâ”€â”€ Failover application servers
-â”‚   â””â”€â”€ Verify data synchronization
-â”œâ”€â”€ Phase 3: Full business DR test (annual)
-â”‚   â”œâ”€â”€ Actual failover of production CBS
-â”‚   â”œâ”€â”€ Business operations from DR
-â”‚   â””â”€â”€ Customer-facing channels tested
-â””â”€â”€ Phase 4: Independent audit (annual)
-    â”œâ”€â”€ External auditor reviews DR setup
-    â””â”€â”€ Compliance report to RBI
+├── Phase 1: Table-top exercise (quarterly)
+│   ├── Review BCP documentation
+│   └── Simulate crisis scenarios
+├── Phase 2: Technical DR test (half-yearly)
+│   ├── Failover application servers
+│   └── Verify data synchronization
+├── Phase 3: Full business DR test (annual)
+│   ├── Actual failover of production CBS
+│   ├── Business operations from DR
+│   └── Customer-facing channels tested
+└── Phase 4: Independent audit (annual)
+    ├── External auditor reviews DR setup
+    └── Compliance report to RBI
 ```
 
 ### 8. PCI DSS for Card Data
@@ -458,28 +458,28 @@ Payment Card Industry Data Security Standard (PCI DSS) applies to all entities t
 
 ```
 Goal 1: Build and Maintain a Secure Network
-â”œâ”€â”€ Req 1: Install and maintain firewalls
-â””â”€â”€ Req 2: Change vendor defaults (passwords, configs)
+├── Req 1: Install and maintain firewalls
+└── Req 2: Change vendor defaults (passwords, configs)
 
 Goal 2: Protect Cardholder Data
-â”œâ”€â”€ Req 3: Protect stored cardholder data
-â””â”€â”€ Req 4: Encrypt transmission of cardholder data
+├── Req 3: Protect stored cardholder data
+└── Req 4: Encrypt transmission of cardholder data
 
 Goal 3: Maintain Vulnerability Management
-â”œâ”€â”€ Req 5: Use anti-malware solutions
-â””â”€â”€ Req 6: Develop and maintain secure systems
+├── Req 5: Use anti-malware solutions
+└── Req 6: Develop and maintain secure systems
 
 Goal 4: Implement Strong Access Control
-â”œâ”€â”€ Req 7: Restrict access to cardholder data
-â”œâ”€â”€ Req 8: Identify and authenticate system users
-â””â”€â”€ Req 9: Restrict physical access
+├── Req 7: Restrict access to cardholder data
+├── Req 8: Identify and authenticate system users
+└── Req 9: Restrict physical access
 
 Goal 5: Monitor and Test Networks
-â”œâ”€â”€ Req 10: Track and monitor all access
-â””â”€â”€ Req 11: Test security systems regularly
+├── Req 10: Track and monitor all access
+└── Req 11: Test security systems regularly
 
 Goal 6: Maintain Information Security Policy
-â””â”€â”€ Req 12: Maintain policy for information security
+└── Req 12: Maintain policy for information security
 ```
 
 #### 8.2 Card Data Storage Requirements
@@ -488,10 +488,10 @@ PCI DSS strictly limits storage of card data:
 
 **Permitted Storage (must be protected):**
 - Cardholder Name (primary account holder)
-- PAN (Primary Account Number) â€” must be rendered unreadable (tokenized, truncated, hashed, or encrypted)
+- PAN (Primary Account Number) — must be rendered unreadable (tokenized, truncated, hashed, or encrypted)
 - Expiration Date
 
-**NEVER Store (prohibited â€” even if encrypted):**
+**NEVER Store (prohibited — even if encrypted):**
 - Full Track Data (Track 1 and Track 2)
 - CVV/CVC (card verification code)
 - PIN or PIN Block
@@ -507,12 +507,12 @@ As per PCI DSS v4.0, tokenization is recommended to reduce scope:
 
 ```
 Tokenization Reduces PCI DSS Scope:
-â”œâ”€â”€ Token replaces PAN in merchant systems
-â”œâ”€â”€ Merchant/PSP only stores token (not in PCI scope)
-â”œâ”€â”€ Token stored in merchant database = out of scope
-â”œâ”€â”€ Actual PAN stored only at token vault
-â”‚   (Token vault is in PCI scope but isolated)
-â””â”€â”€ Network(s) between token vault and PAN storage must be segmented
+├── Token replaces PAN in merchant systems
+├── Merchant/PSP only stores token (not in PCI scope)
+├── Token stored in merchant database = out of scope
+├── Actual PAN stored only at token vault
+│   (Token vault is in PCI scope but isolated)
+└── Network(s) between token vault and PAN storage must be segmented
 ```
 
 ### 9. 2FA in Internet Banking
@@ -524,20 +524,20 @@ RBI mandated two-factor authentication (2FA) for all internet banking transactio
 **Authentication Factors:**
 ```
 Factor 1: Something you KNOW
-â”œâ”€â”€ Password / PIN
-â”œâ”€â”€ Security questions
-â””â”€â”€ Transaction password
+├── Password / PIN
+├── Security questions
+└── Transaction password
 
 Factor 2: Something you HAVE
-â”œâ”€â”€ OTP on registered mobile/SMS
-â”œâ”€â”€ Hardware token (RSA SecurID, Yubico)
-â”œâ”€â”€ Software token (authenticator app)
-â””â”€â”€ Smart card (rare in retail banking)
+├── OTP on registered mobile/SMS
+├── Hardware token (RSA SecurID, Yubico)
+├── Software token (authenticator app)
+└── Smart card (rare in retail banking)
 
 Factor 3: Something you ARE (biometric)
-â”œâ”€â”€ Fingerprint
-â”œâ”€â”€ Iris scan
-â””â”€â”€ Facial recognition
+├── Fingerprint
+├── Iris scan
+└── Facial recognition
 ```
 
 **RBI Mandated Levels:**
@@ -608,7 +608,7 @@ TOTP (Time-based OTP):
 
 #### 10.1 CMS Overview
 
-Cash Management System (CMS) handles cash logistics for banks â€” CIT (Cash-In-Transit), ATM cash replenishment, cash vaults, and currency verification.
+Cash Management System (CMS) handles cash logistics for banks — CIT (Cash-In-Transit), ATM cash replenishment, cash vaults, and currency verification.
 
 **CMS Architecture:**
 
@@ -699,44 +699,44 @@ Aadhaar authentication is the process by which Aadhaar number + biometric/demogr
 ```
 Step 1: Customer provides consent + Aadhaar number
 Step 2: Customer authenticates via:
-        â”œâ”€â”€ Biometric (fingerprint at branch/micro-ATM)
-        â”œâ”€â”€ OTP on registered mobile (for non-face-to-face)
-        â””â”€â”€ Iris (for specialized use cases)
+        ├── Biometric (fingerprint at branch/micro-ATM)
+        ├── OTP on registered mobile (for non-face-to-face)
+        └── Iris (for specialized use cases)
 Step 3: Bank (KUA) sends request to UIDAI
 Step 4: UIDAI returns XML response with:
-        â”œâ”€â”€ Name
-        â”œâ”€â”€ DOB (Year/Date of Birth)
-        â”œâ”€â”€ Gender
-        â”œâ”€â”€ Address
-        â””â”€â”€ Photo (base64 encoded)
+        ├── Name
+        ├── DOB (Year/Date of Birth)
+        ├── Gender
+        ├── Address
+        └── Photo (base64 encoded)
 Step 5: Bank records in CBS as valid KYC
 ```
 
 **Offline e-KYC (XML/Paper):**
 
-Introduced for privacy â€” the customer downloads digitally signed XML from UIDAI website and shares with bank. No UIDAI server transaction at the time of KYC.
+Introduced for privacy — the customer downloads digitally signed XML from UIDAI website and shares with bank. No UIDAI server transaction at the time of KYC.
 
 ```
 Offline e-KYC:
-â”œâ”€â”€ Signed XML (Aadhaar-issued, digitally signed by UIDAI)
-â”œâ”€â”€ ZIP file (password-protected, password = last 4 digits + PIN)
-â”œâ”€â”€ Tamper-evident (digital signature verification)
-â””â”€â”€ Valid for: 6 months from download
+├── Signed XML (Aadhaar-issued, digitally signed by UIDAI)
+├── ZIP file (password-protected, password = last 4 digits + PIN)
+├── Tamper-evident (digital signature verification)
+└── Valid for: 6 months from download
 ```
 
 #### 11.3 Aadhaar Authentication Security
 
 ```
 Security Architecture:
-â”œâ”€â”€ Transport Security: TLS 1.2+ (end-to-end)
-â”œâ”€â”€ Payload Encryption: XML encrypted with UIDAI public key
-â”œâ”€â”€ Session Key: Each request has unique session key
-â”œâ”€â”€ Timestamp: All requests timestamped (anti-replay)
-â”œâ”€â”€ Licence Key: AUA-specific encryption key (rotated periodically)
-â”œâ”€â”€ Biometric Data: Encrypted at device level (PID block)
-â”‚   â”œâ”€â”€ PID block encrypted using UIDAI public key
-â”‚   â””â”€â”€ Biometric never stored at AUA
-â””â”€â”€ Logging: All auth attempts logged, reported to UIDAI
+├── Transport Security: TLS 1.2+ (end-to-end)
+├── Payload Encryption: XML encrypted with UIDAI public key
+├── Session Key: Each request has unique session key
+├── Timestamp: All requests timestamped (anti-replay)
+├── Licence Key: AUA-specific encryption key (rotated periodically)
+├── Biometric Data: Encrypted at device level (PID block)
+│   ├── PID block encrypted using UIDAI public key
+│   └── Biometric never stored at AUA
+└── Logging: All auth attempts logged, reported to UIDAI
 ```
 
 ### 12. Architecture Diagrams
@@ -1301,7 +1301,7 @@ console.log('PCI DSS:', pciResult.passed + '/4 passed');
 console.log('Compliant:', pciChecker.isCompliant(merchantData));
 ```
 
-### 14. Architecture Diagrams â€” Additional
+### 14. Architecture Diagrams — Additional
 
 #### Bank SOC / SIEM Integration Architecture
 
@@ -1370,43 +1370,43 @@ flowchart TB
 
 #### 15.1 New RBI Cybersecurity Circulars
 
-- **July 2024:** "Cyber Resilience and Payment Security" circular â€” all payment transactions above Rs. 5,000 must use transaction signing. Banks must implement AI/ML transaction monitoring. Quarterly external pen testing (up from annual).
+- **July 2024:** "Cyber Resilience and Payment Security" circular — all payment transactions above Rs. 5,000 must use transaction signing. Banks must implement AI/ML transaction monitoring. Quarterly external pen testing (up from annual).
 
-- **January 2025:** "Digital Payment Security Controls" â€” tokenization extended to all card-on-file transactions. All payment aggregators must obtain PCI DSS v4.0 by June 2025. Mandatory 3DS 2.0 for e-commerce. UPI/IMPS fraud reporting within 1 hour.
+- **January 2025:** "Digital Payment Security Controls" — tokenization extended to all card-on-file transactions. All payment aggregators must obtain PCI DSS v4.0 by June 2025. Mandatory 3DS 2.0 for e-commerce. UPI/IMPS fraud reporting within 1 hour.
 
-- **August 2025:** Enhanced BCP/DR guidelines â€” RTO reduced to 1 hour for critical systems, RPO to 5 minutes for payment systems. Two full DR tests per year. DR must be active-active for UPI/payment switches.
+- **August 2025:** Enhanced BCP/DR guidelines — RTO reduced to 1 hour for critical systems, RPO to 5 minutes for payment systems. Two full DR tests per year. DR must be active-active for UPI/payment switches.
 
-- **March 2026:** "AI Governance in Banking" â€” all AI/ML models must be explainable (XAI). Mandatory model validation and fairness testing. AI model inventory with risk classification. Third-party AI vendor security assessment.
+- **March 2026:** "AI Governance in Banking" — all AI/ML models must be explainable (XAI). Mandatory model validation and fairness testing. AI model inventory with risk classification. Third-party AI vendor security assessment.
 
 #### 15.2 IT Act Amendments
 
-- **2024:** IT (Amendment) Act â€” Section 66F (cyber terrorism, life imprisonment), Section 66G (data breach notification within 72 hours, penalty up to Rs. 5 crore/2% turnover), Section 72B (re-identification of anonymized data, penalty Rs. 3 crore), Section 79A (AI-based content moderation for intermediaries).
+- **2024:** IT (Amendment) Act — Section 66F (cyber terrorism, life imprisonment), Section 66G (data breach notification within 72 hours, penalty up to Rs. 5 crore/2% turnover), Section 72B (re-identification of anonymized data, penalty Rs. 3 crore), Section 79A (AI-based content moderation for intermediaries).
 
-- **2025:** DPDP Act rules notified â€” DPO appointment mandatory for banks. Consent managers registered with Data Protection Board. Data localization for critical personal data (financial, health, biometric). Penalties up to Rs. 250 crore.
+- **2025:** DPDP Act rules notified — DPO appointment mandatory for banks. Consent managers registered with Data Protection Board. Data localization for critical personal data (financial, health, biometric). Penalties up to Rs. 250 crore.
 
-- **2026:** Proposed AI regulation amendments â€” mandatory watermarking of AI-generated content. Liability framework for AI-based banking decisions. Algorithmic audit for credit scoring models.
+- **2026:** Proposed AI regulation amendments — mandatory watermarking of AI-generated content. Liability framework for AI-based banking decisions. Algorithmic audit for credit scoring models.
 
 #### 15.3 SWIFT & Security Updates
 
-- **2024:** SWIFT CSP 2024 â€” 24 mandatory controls (up from 21). AI-based anomaly detection, enhanced sanctions screening, 6-monthly pen testing.
+- **2024:** SWIFT CSP 2024 — 24 mandatory controls (up from 21). AI-based anomaly detection, enhanced sanctions screening, 6-monthly pen testing.
 
-- **2025:** ISO 20022 migration complete â€” all cross-border payments use ISO 20022 XML. Indian banks completed by November 2025.
+- **2025:** ISO 20022 migration complete — all cross-border payments use ISO 20022 XML. Indian banks completed by November 2025.
 
-- **2026:** SWIFT Neural â€” AI-based fraud detection for real-time payment screening. Indian banks to implement by December 2026.
+- **2026:** SWIFT Neural — AI-based fraud detection for real-time payment screening. Indian banks to implement by December 2026.
 
 #### 15.4 Security Incidents
 
 - **2024:** Rise in UPI "screen sharing" attacks. RBI banned screen sharing during UPI transactions.
-- **2025:** Major PSB ransomware attack on CBS â€” restored from DR in 4 hours. Mandatory offline backups for all CBS systems.
+- **2025:** Major PSB ransomware attack on CBS — restored from DR in 4 hours. Mandatory offline backups for all CBS systems.
 - **2026:** First AI deepfake voice attack on phone banking. RBI mandated voice biometric liveness detection.
 
 #### 15.5 E-KYC Updates
 
-- **2024:** UIDAI "Aadhaar Face Authentication" â€” facial recognition for e-KYC with liveness detection.
+- **2024:** UIDAI "Aadhaar Face Authentication" — facial recognition for e-KYC with liveness detection.
 - **2025:** Aadhaar authentication limit increased to Rs. 1,00,000.
-- **2026:** Offline e-KYC with QR code verification â€” no internet required.
+- **2026:** Offline e-KYC with QR code verification — no internet required.
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **1.** As per RBI 2020 cybersecurity circular, which technology is recommended for detecting APTs?
 
@@ -1461,7 +1461,7 @@ D) Expiration date
 <summary>Answer</summary>
 **Answer: C) CVV/CVC**
 
-CVV/CVC, full track data, and PIN must NEVER be stored â€” even if encrypted. Cardholder name, PAN (encrypted/truncated/tokenized), and expiration date may be stored with protection.
+CVV/CVC, full track data, and PIN must NEVER be stored — even if encrypted. Cardholder name, PAN (encrypted/truncated/tokenized), and expiration date may be stored with protection.
 </details>
 
 **5.** Under SWIFT CSP, what is the primary requirement for SWIFT system connectivity?
@@ -1550,14 +1550,14 @@ SWIFT CSP 2024 version increased mandatory controls from 21 to 24. New controls 
 
 **11.** In the Aadhaar authentication architecture, what is an AUA?
 
-A) Authentication User Agency â€” the bank using Aadhaar auth
+A) Authentication User Agency — the bank using Aadhaar auth
 B) Aadhaar Validation Authority
 C) Automated User Authenticator
 D) Aadhaar Verification Agency
 
 <details>
 <summary>Answer</summary>
-**Answer: A) Authentication User Agency â€” the bank using Aadhaar auth**
+**Answer: A) Authentication User Agency — the bank using Aadhaar auth**
 
 AUA (Authentication User Agency) is the entity (typically a bank) that uses Aadhaar authentication for customer verification. KUA is for e-KYC, ASA routes requests to UIDAI.
 </details>
@@ -1601,7 +1601,7 @@ D) Up to 7 years + Rs. 10 lakh fine
 <summary>Answer</summary>
 **Answer: B) Up to 3 years + Rs. 1 lakh fine**
 
-Section 66C deals with identity theft â€” punishment up to 3 years and/or fine up to Rs. 1 lakh.
+Section 66C deals with identity theft — punishment up to 3 years and/or fine up to Rs. 1 lakh.
 </details>
 
 **15.** What is the purpose of e-KYC in banking?
@@ -1620,14 +1620,14 @@ e-KYC uses Aadhaar-based electronic identity verification to onboard customers w
 
 **16.** Under Basel III, which principle of BCBS 239 deals with data accuracy?
 
-A) Principle 1 â€” Governance
-B) Principle 2 â€” Data Architecture
-C) Principle 3 â€” Accuracy
-D) Principle 7 â€” Accuracy of Reports
+A) Principle 1 — Governance
+B) Principle 2 — Data Architecture
+C) Principle 3 — Accuracy
+D) Principle 7 — Accuracy of Reports
 
 <details>
 <summary>Answer</summary>
-**Answer: C) Principle 3 â€” Accuracy**
+**Answer: C) Principle 3 — Accuracy**
 
 BCBS 239 Principle 3 mandates data accuracy with automated reconciliation. Principle 7 covers report accuracy. Principle 3 specifically addresses data accuracy and integrity.
 </details>
@@ -1635,13 +1635,13 @@ BCBS 239 Principle 3 mandates data accuracy with automated reconciliation. Princ
 **17.** In the SWIFT CSP maker-checker principle, what is the 4-eyes principle?
 
 A) Four people must approve each transaction
-B) Dual control â€” one person creates, another approves
+B) Dual control — one person creates, another approves
 C) Four-factor authentication
 D) Four different systems must verify
 
 <details>
 <summary>Answer</summary>
-**Answer: B) Dual control â€” one person creates, another approves**
+**Answer: B) Dual control — one person creates, another approves**
 
 The 4-eyes principle (maker-checker) requires the person who initiates a transaction is different from the person who authorizes it. SWIFT CSP Control 2.7 mandates this.
 </details>
@@ -1688,7 +1688,7 @@ D) Up to Rs. 50 lakh
 The 2024 amendment introduced Section 66G requiring data breach notification within 72 hours, with penalties up to Rs. 5 crore or 2% of global turnover.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 ### Section A: Short Answer (Questions 1-10)
 
@@ -1775,17 +1775,17 @@ The 2024 amendment introduced Section 66G requiring data breach notification wit
 <details>
 <summary>Section B Answers (11-20)</summary>
 
-**11.** 2016: Baseline â€” CISO, IS steering committee, cyber policy, IS audit, BCP, incident reporting (2hrs), vendor assessment, annual pen test. 2020: Enhanced â€” APT defense, network segmentation, sandboxing, deception tech, DLP, UEBA, 24x7 SOC/SIEM, SOAR, MITRE ATT and CK, supply chain security, cloud security.
+**11.** 2016: Baseline — CISO, IS steering committee, cyber policy, IS audit, BCP, incident reporting (2hrs), vendor assessment, annual pen test. 2020: Enhanced — APT defense, network segmentation, sandboxing, deception tech, DLP, UEBA, 24x7 SOC/SIEM, SOAR, MITRE ATT and CK, supply chain security, cloud security.
 
 **12.** Layer 1 (Governance): ISO 27001, ISMS. Layer 2 (Physical): DC access, CCTV, biometrics. Layer 3 (Platform): OS hardening, patching, EDR. Layer 4 (Network): Firewalls, IDS/IPS, VPN, DDoS. Layer 5 (Access): RBAC, PIM/PAM, SSO, MFA. Layer 6 (Data): AES-256, DLP, tokenization. Layer 7 (Application): OAuth 2.0, 2FA, session management.
 
 **13.** v3.2.1: 12 requirements, annual validation, ASV quarterly. v4.0: Customized approach, continuous validation, enhanced MFA, expanded CDE definition, new e-commerce requirements (3DS), flexible pen testing.
 
-**14.** Phase 1: Table-top (quarterly) â€” review BCP, simulate crises. Phase 2: Technical DR (half-yearly) â€” failover app servers, verify sync. Phase 3: Full business DR (annual/semi-annual from 2025) â€” actual CBS failover. Phase 4: Independent audit (annual) â€” external review, report to RBI.
+**14.** Phase 1: Table-top (quarterly) — review BCP, simulate crises. Phase 2: Technical DR (half-yearly) — failover app servers, verify sync. Phase 3: Full business DR (annual/semi-annual from 2025) — actual CBS failover. Phase 4: Independent audit (annual) — external review, report to RBI.
 
-**15.** CBS/TXN data â†’ Rules Engine (PEP, sanctions, velocity, geo) â†’ ML models (XGBoost, neural nets) â†’ Alert generation â†’ SAR creation â†’ Automated filing to FIU-IND.
+**15.** CBS/TXN data → Rules Engine (PEP, sanctions, velocity, geo) → ML models (XGBoost, neural nets) → Alert generation → SAR creation → Automated filing to FIU-IND.
 
-**16.** Customer consent + Aadhaar + biometric/OTP â†’ Bank (AUA/KUA) formats PID block (encrypted with UIDAI public key) â†’ ASA routes to UIDAI â†’ CIDR matches â†’ Response XML: name, DOB, gender, address, photo â†’ Bank stores as valid KYC.
+**16.** Customer consent + Aadhaar + biometric/OTP → Bank (AUA/KUA) formats PID block (encrypted with UIDAI public key) → ASA routes to UIDAI → CIDR matches → Response XML: name, DOB, gender, address, photo → Bank stores as valid KYC.
 
 **17.** Key 10 controls: 1.1 (restrict internet), 1.2 (OS privilege), 1.3 (virtualization protection), 1.5 (PKI auth), 2.1 (MFA), 2.3 (segregation), 2.4 (anomaly detection), 2.5 (transaction controls), 2.7 (maker-checker), 2.9 (incident response).
 
@@ -1799,7 +1799,7 @@ The 2024 amendment introduced Section 66G requiring data breach notification wit
 <details>
 <summary>Section C Answers (21-30)</summary>
 
-**21.** SIEM: Log shippers (Filebeat) on CBS/ATM/UPI/IB servers â†’ Kafka for buffering â†’ Elasticsearch for storage â†’ Kibana for visualization â†’ Correlation rules for alerting â†’ SOAR for auto-response â†’ SIMS/CERT-IN for RBI reporting.
+**21.** SIEM: Log shippers (Filebeat) on CBS/ATM/UPI/IB servers → Kafka for buffering → Elasticsearch for storage → Kibana for visualization → Correlation rules for alerting → SOAR for auto-response → SIMS/CERT-IN for RBI reporting.
 
 **22.** DLP class: Monitor outbound HTTP/SMTP/FTP. Regex patterns for PAN (/\d{16}/), Aadhaar (/\d{12}/), account numbers. Block/alert on match. Use content inspection and contextual analysis.
 
@@ -1811,13 +1811,13 @@ The 2024 amendment introduced Section 66G requiring data breach notification wit
 
 **26.** Vulnerability scanner: HTTP client checks CBS endpoints for: SQLi (parameter tampering), XSS (script injection), CSRF (missing tokens), insecure headers, outdated TLS. Report with severity and remediation.
 
-**27.** SOAR playbook: (1) Phishing â€” auto-analyze email headers, quarantine, notify user. (2) Ransomware â€” isolate host, block C2, restore from backup. (3) Data breach â€” identify leaked data, notify DPO, report to RBI/CERT-IN within 2hrs.
+**27.** SOAR playbook: (1) Phishing — auto-analyze email headers, quarantine, notify user. (2) Ransomware — isolate host, block C2, restore from backup. (3) Data breach — identify leaked data, notify DPO, report to RBI/CERT-IN within 2hrs.
 
 **28.** Session management: max 2 concurrent sessions per user. Idle timeout 15 min. Absolute timeout 8 hrs. Forced re-auth for beneficiary addition, high-value transactions, password changes. All sessions logged.
 
-**29.** Fraud detection: Transaction enters â†’ Rule checks (velocity, amount threshold, geo-match) â†’ ML score (XGBoost model, 100ms inference) â†’ Hotlist check â†’ Composite score â†’ Allow/Block/Review. Feedback loop for model retraining.
+**29.** Fraud detection: Transaction enters → Rule checks (velocity, amount threshold, geo-match) → ML score (XGBoost model, 100ms inference) → Hotlist check → Composite score → Allow/Block/Review. Feedback loop for model retraining.
 
-**30.** XBRL generator: Fetch data from CBS (CRAR, NPA, LCR, NSFR) â†’ Map to XBRL taxonomy (RBI DAKSH schema) â†’ Generate XBRL instance document â†’ Validate against XSD â†’ Submit via API to RBI's DAKSH portal.
+**30.** XBRL generator: Fetch data from CBS (CRAR, NPA, LCR, NSFR) → Map to XBRL taxonomy (RBI DAKSH schema) → Generate XBRL instance document → Validate against XSD → Submit via API to RBI's DAKSH portal.
 </details>
 
 ## Summary
@@ -1838,13 +1838,13 @@ PCI DSS (v4.0) prohibits storage of CVV and full track data. Tokenization reduce
 
 2. **SWIFT Air Gap:** Never allow internet connectivity to SWIFT systems. Banks that were breached (Bangladesh Bank) had weak/absent segregation. This is the single most critical SWIFT CSP control.
 
-3. **2FA Design:** For internet banking, implement risk-based authentication â€” step up authentication only for high-value transactions. Users accept friction better when it is proportional to risk.
+3. **2FA Design:** For internet banking, implement risk-based authentication — step up authentication only for high-value transactions. Users accept friction better when it is proportional to risk.
 
 4. **PCI DSS Scoping:** Use tokenization to reduce PCI DSS scope. A tokenized merchant environment has significantly fewer requirements than one storing actual PAN.
 
 5. **DR Testing:** Full failover tests must use actual customer data. Table-top exercises are insufficient for validating DR readiness. Run at least one unannounced test per year.
 
-6. **OTP Delivery Diversity:** Do not rely solely on SMS OTP â€” SMS has latency and SIM swap vulnerabilities. Implement app push OTP and software tokens as alternatives.
+6. **OTP Delivery Diversity:** Do not rely solely on SMS OTP — SMS has latency and SIM swap vulnerabilities. Implement app push OTP and software tokens as alternatives.
 
 7. **e-KYC Encryption:** Always use the latest PID block encryption standards from UIDAI. The encryption key must be rotated per UIDAI schedule. Never store biometric data after authentication.
 

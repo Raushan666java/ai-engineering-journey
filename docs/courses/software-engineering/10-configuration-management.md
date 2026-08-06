@@ -1,4 +1,4 @@
-﻿# Configuration Management
+# Configuration Management
 
 ## Learning Objectives
 
@@ -114,7 +114,7 @@ graph LR
 | **Developmental** | Sprint/release end | Current state of all CIs at milestone | Normal change process |
 
 **Baseline management principles:**
-1. Baselines are immutable â€” once created, changes produce a new baseline version
+1. Baselines are immutable — once created, changes produce a new baseline version
 2. Each baseline references specific versions of all CIs
 3. Traceability between baselines must be maintained
 4. Baseline contents are auditable at any time
@@ -179,17 +179,17 @@ flowchart TD
 | **Trunk-Based** | `main` (short-lived branches) | Multiple times daily | Continuous deployment | CI/CD, DevOps teams |
 
 **Git Flow detailed:**
-- `main` â€” production-ready state, only updated via release/hotfix merges
-- `develop` â€” integration branch for features
-- `feature/<name>` â€” branched from `develop`, merged back via PR
-- `release/<version>` â€” branched from `develop` for release preparation
-- `hotfix/<name>` â€” branched from `main` for emergency fixes
+- `main` — production-ready state, only updated via release/hotfix merges
+- `develop` — integration branch for features
+- `feature/<name>` — branched from `develop`, merged back via PR
+- `release/<version>` — branched from `develop` for release preparation
+- `hotfix/<name>` — branched from `main` for emergency fixes
 
 **Trunk-Based Development detailed:**
 - Single main branch with short-lived feature branches (< 2 days)
 - Feature flags to hide incomplete work
 - Continuous integration with multiple daily commits
-- No release branches â€” any commit can be released
+- No release branches — any commit can be released
 
 ```mermaid
 sequenceDiagram
@@ -234,7 +234,7 @@ sequenceDiagram
 
 **Change Request (CR) Lifecycle:**
 ```
-Submitted â†’ Under Review â†’ Approved / Rejected â†’ Implemented â†’ Verified â†’ Closed
+Submitted → Under Review → Approved / Rejected → Implemented → Verified → Closed
 ```
 
 **Change Control Board (CCB):**
@@ -311,9 +311,9 @@ Release management coordinates the deployment of software to production.
 
 **Semantic Versioning (SemVer):** `MAJOR.MINOR.PATCH`
 
-- **MAJOR:** Incompatible API changes (e.g., `2.0.0 â†’ 3.0.0`)
-- **MINOR:** Backward-compatible functionality added (e.g., `2.0.0 â†’ 2.1.0`)
-- **PATCH:** Backward-compatible bug fixes (e.g., `2.0.0 â†’ 2.0.1`)
+- **MAJOR:** Incompatible API changes (e.g., `2.0.0 → 3.0.0`)
+- **MINOR:** Backward-compatible functionality added (e.g., `2.0.0 → 2.1.0`)
+- **PATCH:** Backward-compatible bug fixes (e.g., `2.0.0 → 2.0.1`)
 
 **Pre-release suffixes:** `-alpha`, `-beta`, `-rc.1`, `-dev.20250115`
 
@@ -321,7 +321,7 @@ Release management coordinates the deployment of software to production.
 1. Code freeze on release branch
 2. Regression testing
 3. Release candidate creation
-4. Staged deployment (dev â†’ staging â†’ production)
+4. Staged deployment (dev → staging → production)
 5. Smoke testing in production
 6. Tag release in version control
 7. Update changelog
@@ -420,7 +420,7 @@ Release Tag: v1.2.3
 
 ## Examples
 
-### Example 1: VersionManager â€” Semantic Versioning with Bump, Compare, Tag
+### Example 1: VersionManager — Semantic Versioning with Bump, Compare, Tag
 
 A production-grade semantic versioning manager that supports parsing, bumping, comparing, tagging, and dependency compatibility checking.
 
@@ -513,7 +513,7 @@ class VersionManager {
       categorized[cat].push(commit.message);
     }
     const lines = [
-      `# Changelog [${fromVersion} â†’ ${toVersion}]`,
+      `# Changelog [${fromVersion} → ${toVersion}]`,
       '',
       ...Object.entries(categorized).flatMap(([category, items]) =>
         items.length > 0 ? [`### ${category}`, ...items.map(i => `- ${i}`), ''] : []
@@ -526,7 +526,7 @@ class VersionManager {
     const violations: string[] = [];
     for (const dep of dependencies) {
       if (!this.satisfiesConstraint(version, dep)) {
-        violations.push(`${dep.name}: ${version} violates ${dep.minVersion} â†’ ${dep.maxVersion}`);
+        violations.push(`${dep.name}: ${version} violates ${dep.minVersion} → ${dep.maxVersion}`);
       }
     }
     return { compatible: violations.length === 0, violations };
@@ -549,7 +549,7 @@ const commits = [
 console.log(vm.generateChangelog('v1.0.0', 'v1.1.0', commits));
 ```
 
-### Example 2: ChangeControlBoard â€” CR Lifecycle, Approvals, Tracking
+### Example 2: ChangeControlBoard — CR Lifecycle, Approvals, Tracking
 
 A full change control board implementation with CR lifecycle management, voting, notifications, and metrics.
 
@@ -715,9 +715,9 @@ class ChangeControlBoard {
     const rejected = relevant.filter(cr => cr.status === 'rejected').length;
     const pending = relevant.filter(cr => cr.status === 'submitted' || cr.status === 'under_review').length;
     return [
-      `â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•`,
+      `═══════════════════════════════════`,
       `  Monthly CCB Report: ${year}-${String(month).padStart(2, '0')}`,
-      `â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•`,
+      `═══════════════════════════════════`,
       `  Total CRs: ${relevant.length}`,
       `  Approved: ${approved}`,
       `  Rejected: ${rejected}`,
@@ -764,7 +764,7 @@ console.log(cr.status); // approved
 console.log(ccb.generateMonthlyReport(2025, 1));
 ```
 
-### Example 3: ReleaseManager â€” Build Pipeline, Artifact Versioning, Changelog
+### Example 3: ReleaseManager — Build Pipeline, Artifact Versioning, Changelog
 
 A comprehensive release manager that orchestrates builds, manages artifact versioning, generates changelogs, and supports release trains.
 
@@ -840,7 +840,7 @@ class ReleaseManager {
       const stageStart = Date.now();
       const passed = await stage.run();
       const stageDuration = Date.now() - stageStart;
-      console.log(`Stage ${stage.name}: ${passed ? 'âœ… PASSED' : 'âŒ FAILED'} (${stageDuration}ms)`);
+      console.log(`Stage ${stage.name}: ${passed ? '✅ PASSED' : '❌ FAILED'} (${stageDuration}ms)`);
       if (!passed) {
         return { success: false, failedStage: stage.name, duration: Date.now() - start };
       }
@@ -1081,7 +1081,7 @@ jobs:
 
 ### Real-World Case Studies
 
-**Case Study 1: Google â€” Monorepo with Trunk-Based Development**
+**Case Study 1: Google — Monorepo with Trunk-Based Development**
 
 Google operates one of the world's largest monorepos with over 2 billion lines of code and 25,000+ developers. Their SCM approach:
 - **Single trunk:** All development happens on mainline trunk
@@ -1092,7 +1092,7 @@ Google operates one of the world's largest monorepos with over 2 billion lines o
 
 Key innovation: A single CI system that can rebuild the entire repository from source with deterministic outputs.
 
-**Case Study 2: Netflix â€” Spinnaker for Continuous Delivery**
+**Case Study 2: Netflix — Spinnaker for Continuous Delivery**
 
 Netflix's Spinnaker is an open-source CD platform that manages releases across AWS. Key SCM practices:
 - **Pipeline-as-code:** Deployment pipelines defined in version control
@@ -1103,7 +1103,7 @@ Netflix's Spinnaker is an open-source CD platform that manages releases across A
 
 Result: Netflix deploys thousands of times per day with < 1% change failure rate.
 
-**Case Study 3: NASA â€” Configuration Management for Mars Rovers**
+**Case Study 3: NASA — Configuration Management for Mars Rovers**
 
 NASA's Mars rover software requires absolute SCM rigor:
 - **Every CI is accounted for:** Source code, FPGA bitstreams, parameter tables, calibration data
@@ -1116,26 +1116,26 @@ The SCM system for Mars 2020 Perseverance tracked over 50,000 CIs across 15 subs
 
 ## Summary
 
-Software Configuration Management is the backbone of disciplined software engineering. It establishes control over the evolution of software artifacts through seven key activities: configuration identification (defining CIs), change control (CCB with formal CR lifecycle), version control (branching strategies like Git Flow, GitHub Flow, trunk-based), build management (automated, reproducible builds), release management (semantic versioning, changelogs, release trains), status accounting (tracking CI states), and configuration auditing (FCA, PCA, process audits). The choice of branching strategy depends on the release model â€” Git Flow suits scheduled releases, trunk-based suits continuous deployment, and GitHub Flow suits SaaS teams.
+Software Configuration Management is the backbone of disciplined software engineering. It establishes control over the evolution of software artifacts through seven key activities: configuration identification (defining CIs), change control (CCB with formal CR lifecycle), version control (branching strategies like Git Flow, GitHub Flow, trunk-based), build management (automated, reproducible builds), release management (semantic versioning, changelogs, release trains), status accounting (tracking CI states), and configuration auditing (FCA, PCA, process audits). The choice of branching strategy depends on the release model — Git Flow suits scheduled releases, trunk-based suits continuous deployment, and GitHub Flow suits SaaS teams.
 
 Modern SCM integrates deeply with CI/CD pipelines. Every commit generates a unique build ID that flows through to artifact tagging, release notes, and deployment tracking. The VersionManager implements semantic versioning with bump, compare, and constraint satisfaction. The ChangeControlBoard models the complete CR lifecycle with voting, approval tracking, and metrics. The ReleaseManager orchestrates build pipelines, artifact versioning, and changelog generation. Real-world practice from Google (monorepo with trunk-based development), Netflix (Spinnaker CD with immutable artifacts), and NASA (cryptographically signed CIs with full traceability) demonstrates that SCM rigor directly correlates with release reliability and team productivity.
 
 ## Practical Takeaways
 
-1. **Everything that changes should be a CI** â€” source code, database scripts, build scripts, documentation, infrastructure definitions
-2. **Baselines protect against scope creep** â€” once baselined, changes require formal approval
-3. **Branch early, branch often** â€” branches are cheap; isolation reduces coordination overhead
-4. **Automate everything you can** â€” builds, tests, deployments should be single-command operations
-5. **Tag every release** â€” you cannot inspect a bug in production if you cannot recreate the exact binary
-6. **Audit traceability** â€” every release must trace back to specific commits and change requests
-7. **Adopt a branching strategy that matches your release model** â€” don't force Git Flow on a continuous-deployment team
-8. **Semantic versioning communicates intent** â€” MAJOR breaks compatibility, MINOR adds features, PATCH fixes bugs
+1. **Everything that changes should be a CI** — source code, database scripts, build scripts, documentation, infrastructure definitions
+2. **Baselines protect against scope creep** — once baselined, changes require formal approval
+3. **Branch early, branch often** — branches are cheap; isolation reduces coordination overhead
+4. **Automate everything you can** — builds, tests, deployments should be single-command operations
+5. **Tag every release** — you cannot inspect a bug in production if you cannot recreate the exact binary
+6. **Audit traceability** — every release must trace back to specific commits and change requests
+7. **Adopt a branching strategy that matches your release model** — don't force Git Flow on a continuous-deployment team
+8. **Semantic versioning communicates intent** — MAJOR breaks compatibility, MINOR adds features, PATCH fixes bugs
 
 ## Chapter Quiz
 
 | Question | Answer | Explanation |
 |----------|--------|-------------|
-| Q1: What is a configuration item? | B | A CI is any software artifact that is versioned, reviewed, and auditable â€” including source, docs, build scripts, and config files |
+| Q1: What is a configuration item? | B | A CI is any software artifact that is versioned, reviewed, and auditable — including source, docs, build scripts, and config files |
 | Q2: A baseline is defined as: | B | A formally reviewed version of a CI that serves as a foundation for further development; changes require formal control |
 | Q3: In semantic versioning 2.3.1, incrementing the MINOR version produces: | B | `bumpMinor` increments minor and resets patch to 0: 2.4.0 |
 | Q4: The branching strategy where main is always deployable and feature branches are short-lived is called: | B | GitHub Flow uses short-lived feature branches merged to main via PR; trunk-based is similar but with even higher commit frequency |

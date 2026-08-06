@@ -1,4 +1,4 @@
-﻿# Chapter 9: STL Containers -- In-Depth Mastery
+# Chapter 9: STL Containers -- In-Depth Mastery
 
 > **Previous:** [08-exceptions](./08-exceptions.md) | **Next:** [10-stl-algorithms](./10-stl-algorithms.md)
 
@@ -179,7 +179,7 @@ The growth factor is implementation-defined:
 
 **Why is push_back amortized O(1)?**
 
-Consider a sequence of N push_back operations. Capacity grows geometrically (e.g., 1, 2, 4, 8, 16...). Total copy cost = sum of capacities at each reallocation = 1 + 2 + 4 + ... + N/2 + N = 2N - 1. Spread over N operations: (2N - 1) / N = 2 - 1/N Ã¢â€°Ë† O(1) per operation.
+Consider a sequence of N push_back operations. Capacity grows geometrically (e.g., 1, 2, 4, 8, 16...). Total copy cost = sum of capacities at each reallocation = 1 + 2 + 4 + ... + N/2 + N = 2N - 1. Spread over N operations: (2N - 1) / N = 2 - 1/N ≈ O(1) per operation.
 
 **Why is insert in the middle O(n)?**
 
@@ -881,7 +881,7 @@ A Red-Black tree is a self-balancing binary search tree with these properties:
 (black)10 (black)25 (black)35 (black)50
 ```
 
-These properties guarantee O(log n) height (max depth Ã¢â€°Â¤ 2 * log2(n+1)).
+These properties guarantee O(log n) height (max depth ≤ 2 * log2(n+1)).
 
 **Tree node structure (libstdc++):**
 ```
@@ -1134,7 +1134,7 @@ Same as set: `insert()` does not invalidate existing iterators; `erase()` invali
 
 #### Real-World Analogy
 
-A physical dictionary (word â†’ definition). Words are organized alphabetically. You can look up any word in O(log n) time using the book's index (binary search through dictionary pages). Adding a new word requires inserting it in the correct alphabetical position. Iterating through the dictionary gives words in alphabetical order.
+A physical dictionary (word → definition). Words are organized alphabetically. You can look up any word in O(log n) time using the book's index (binary search through dictionary pages). Adding a new word requires inserting it in the correct alphabetical position. Iterating through the dictionary gives words in alphabetical order.
 
 #### Internal Implementation
 
@@ -1428,7 +1428,7 @@ Key components:
 
 **Why average O(1)?**
 
-The hash function distributes keys uniformly across buckets. With `size / bucket_count Ã¢â€°Ë† 1.0` (default max load factor), the expected chain length is 0-2 elements. Finding an element means: compute hash (constant time), index into bucket array (constant time), walk a chain of expected length Ã¢â€°Â¤ 2 (constant time).
+The hash function distributes keys uniformly across buckets. With `size / bucket_count ≈ 1.0` (default max load factor), the expected chain length is 0-2 elements. Finding an element means: compute hash (constant time), index into bucket array (constant time), walk a chain of expected length ≤ 2 (constant time).
 
 **Why worst-case O(n)?**
 
@@ -1971,7 +1971,7 @@ A binary heap is a complete binary tree stored in an array where:
 
 **Why O(log n) for push/pop?**
 
-The heap is a complete binary tree with height Ã¢Å’Å log2(n)Ã¢Å’â€¹. `push_heap` (sift-up) moves the new element up the tree, comparing with its parent at each level -- at most log2(n) comparisons. `pop_heap` (sift-down) moves the root down the tree, comparing with larger child -- also O(log n).
+The heap is a complete binary tree with height ⌊log2(n)⌋. `push_heap` (sift-up) moves the new element up the tree, comparing with its parent at each level -- at most log2(n) comparisons. `pop_heap` (sift-down) moves the root down the tree, comparing with larger child -- also O(log n).
 
 #### C++ Code with Output
 
@@ -2472,7 +2472,7 @@ Deque occupies a middle ground:
 
 For 1 million insert/find operations on a modern CPU:
 ```
-map:              ~180 ms (20 log2(1M) Ã¢â€°Ë† 20 comparisons per op)
+map:              ~180 ms (20 log2(1M) ≈ 20 comparisons per op)
 unordered_map:    ~80 ms (good hash, load factor 0.75)
 unordered_map:   ~300 ms (bad hash, all collide)
 ```
@@ -2790,7 +2790,7 @@ v.push_back(50);
 
 1. **Check capacity:** `size == capacity` (4 == 4), so growth is needed.
 
-2. **Allocate new block:** Allocate new memory of size `capacity * growth_factor` elements. GCC uses 2x â†’ new capacity = 8 â†’ `8 * sizeof(int) = 32 bytes` allocated via `operator new`.
+2. **Allocate new block:** Allocate new memory of size `capacity * growth_factor` elements. GCC uses 2x → new capacity = 8 → `8 * sizeof(int) = 32 bytes` allocated via `operator new`.
 
 3. **Move (or copy) elements:** Move each existing element from old block to new block.
    - For `int` (trivially copyable): single `memcpy` or `memmove` call copies all 4 ints.
@@ -2800,7 +2800,7 @@ v.push_back(50);
 
 5. **Deallocate old block:** `operator delete` on the old memory.
 
-6. **Update pointers:** `_start` â†’ new block start, `_finish` â†’ new block start + old_size + 1, `_end_of_storage` â†’ new block start + new_capacity.
+6. **Update pointers:** `_start` → new block start, `_finish` → new block start + old_size + 1, `_end_of_storage` → new block start + new_capacity.
 
 7. **Construct new element:** Construct argument in-place at `_finish - 1`.
 

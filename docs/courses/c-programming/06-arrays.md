@@ -1,4 +1,4 @@
-﻿# Chapter 6: Arrays
+# Chapter 6: Arrays
 
 > **Previous:** [Loops](./05-loops.md) | **Next:** [Strings](./07-strings.md)
 
@@ -37,12 +37,12 @@
 |-------|-------------|-------------------|
 | Array Declaration | Contiguous block of elements of the same type | Array indices start at 0 and go to size-1 |
 | Array Initialization | Can be fully, partially, or zero-initialized | Uninitialized elements in a partial list are zero-filled |
-| Accessing Elements | Use `arr[index]` which is equivalent to `*(arr + index)` | No bounds checking â€” accessing out-of-bounds is undefined behavior |
-| Multi-dimensional Arrays | Arrays of arrays stored in row-major order | Access `arr[row][col]` â€” inner index varies fastest |
+| Accessing Elements | Use `arr[index]` which is equivalent to `*(arr + index)` | No bounds checking — accessing out-of-bounds is undefined behavior |
+| Multi-dimensional Arrays | Arrays of arrays stored in row-major order | Access `arr[row][col]` — inner index varies fastest |
 | Arrays and Functions | Arrays decay to pointers when passed to functions | Pass the size separately since `sizeof` on a parameter gives pointer size, not array size |
 | Array of Pointers | Array elements are pointer values | Useful for string tables and ragged arrays |
 | Pointer to Array | Single pointer targeting an entire array | Key for 2D function parameters: `int (*p)[N]` |
-| VLA | Runtime-sized stack allocation (C99) | Can cause stack overflow â€” watch the size |
+| VLA | Runtime-sized stack allocation (C99) | Can cause stack overflow — watch the size |
 | Array Bounds | No runtime bounds checking in C | Buffer overflows are the #1 security vulnerability in C |
 | String vs Char Array | Strings are null-terminated char arrays | Not all char arrays are strings |
 
@@ -177,7 +177,7 @@ arr[8] = 0
 arr[9] = 20
 ```
 
-### 6.1.4 Dry Run â€” Memory Layout Trace
+### 6.1.4 Dry Run — Memory Layout Trace
 
 
 ```
@@ -201,9 +201,9 @@ Address formula: &arr[i] = base_addr + i * sizeof(type)
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Declaration | O(1) | O(n) | Single instruction reserves n Ã— sizeof(type) bytes |
+| Declaration | O(1) | O(n) | Single instruction reserves n × sizeof(type) bytes |
 | Full initialization | O(n) | O(n) | Compiler emits n store instructions |
-| Partial initialization | O(n) | O(n) | Remaining elements zero-filled â€” still O(n) |
+| Partial initialization | O(n) | O(n) | Remaining elements zero-filled — still O(n) |
 | Designated init | O(n) | O(n) | Unspecified positions zero-filled |
 
 ### 6.1.6 Edge Cases
@@ -211,17 +211,17 @@ Address formula: &arr[i] = base_addr + i * sizeof(type)
 
 | Scenario | Behavior | Explanation |
 |----------|----------|-------------|
-| `int x[0];` | Zero-length array â€” compiler extension (GCC), UB in standard C | GCC allows this as a struct hack; standard C forbids zero-size objects |
+| `int x[0];` | Zero-length array — compiler extension (GCC), UB in standard C | GCC allows this as a struct hack; standard C forbids zero-size objects |
 | `int x[-1];` | Compile-time error | Size must be a positive integer constant |
 | `int x[1000000000];` | Stack overflow at runtime | Too large for stack; use malloc for huge arrays |
-| `int x[5] = {1,2,3,4,5,6};` | Compile-time warning, excess elements ignored | More initializers than array size â€” compiler warns |
+| `int x[5] = {1,2,3,4,5,6};` | Compile-time warning, excess elements ignored | More initializers than array size — compiler warns |
 | `int x[5] = { };` | Zero-initializes all 5 elements | Empty initializer list = {0, 0, 0, 0, 0} |
 
 ---
 
 ## 6.2 Accessing Elements (Indexing)
 
-**Real-world analogy:** A post office box wall. Box #0 is the first box. The key for box #i opens the (i)th box. If you try box #100 in a 50-box wall, you open someone else's locked drawer (undefined behavior â€” could be anything).
+**Real-world analogy:** A post office box wall. Box #0 is the first box. The key for box #i opens the (i)th box. If you try box #100 in a 50-box wall, you open someone else's locked drawer (undefined behavior — could be anything).
 
 ### 6.2.1 The Indexing Contract
 
@@ -230,7 +230,7 @@ Address formula: &arr[i] = base_addr + i * sizeof(type)
 
 1. Write the array name: `arr`
 2. Write the index in square brackets: `[i]`
-3. The compiler computes `*(arr + i)` â€” add `i * sizeof(type)` to base address
+3. The compiler computes `*(arr + i)` — add `i * sizeof(type)` to base address
 4. The value at that address is returned (for read) or overwritten (for write)
 
 **Pseudocode:**
@@ -244,7 +244,7 @@ FUNCTION modify(arr, index, new_value):
     set_value_at(address, new_value)
 ```
 
-### 6.2.2 Code Example â€” Read and Write
+### 6.2.2 Code Example — Read and Write
 
 
 ```c
@@ -294,7 +294,7 @@ Pointer arithmetic demonstration:
 *(arr + 4) = 500  (same as arr[4])
 ```
 
-### 6.2.3 Dry Run â€” Index Access Trace
+### 6.2.3 Dry Run — Index Access Trace
 
 
 ```
@@ -315,7 +315,7 @@ Bad     | arr[4]       | 0x2000 + 4*4=0x2010 | UNDEFINED (out of bounds)
 
 | Operation | Time | Why |
 |-----------|------|-----|
-| Read arr[i] | O(1) | Direct address calculation: base + i Ã— sizeof(type) |
+| Read arr[i] | O(1) | Direct address calculation: base + i × sizeof(type) |
 | Write arr[i] | O(1) | Same direct calculation |
 | Sequential read/write | O(n) | Must visit n elements |
 | Random access | O(1) per element | Index gives O(1) anywhere in the array |
@@ -325,9 +325,9 @@ Bad     | arr[4]       | 0x2000 + 4*4=0x2010 | UNDEFINED (out of bounds)
 
 | Scenario | Behavior | Explanation |
 |----------|----------|-------------|
-| `arr[size]` (one past last) | Undefined behavior â€” might work, might crash | C does no bounds checking |
-| `arr[-1]` | Accesses memory before the array | Negative index moves backward â€” catastrophic UB |
-| `arr[i]` where i is out of range | Undefined behavior | Buffer overflow â€” root cause of most C CVEs |
+| `arr[size]` (one past last) | Undefined behavior — might work, might crash | C does no bounds checking |
+| `arr[-1]` | Accesses memory before the array | Negative index moves backward — catastrophic UB |
+| `arr[i]` where i is out of range | Undefined behavior | Buffer overflow — root cause of most C CVEs |
 | `5[arr]` | Equivalent to `arr[5]` | Commutative property: `a[b] == *(a + b) == *(b + a) == b[a]` |
 
 **The `5[arr]` curiosity:**
@@ -336,7 +336,7 @@ Bad     | arr[4]       | 0x2000 + 4*4=0x2010 | UNDEFINED (out of bounds)
 int main(void) {
     int arr[] = {10, 20, 30, 40, 50};
     printf("arr[3] = %d\n", arr[3]);   /* 40 */
-    printf("3[arr] = %d\n", 3[arr]);   /* 40 â€” same thing! */
+    printf("3[arr] = %d\n", 3[arr]);   /* 40 — same thing! */
     return 0;
 }
 ```
@@ -393,7 +393,7 @@ int length = sizeof(arr) / sizeof(arr[0]);   /* 5 */
 
 **Caveat:** This only works in the scope where the array was declared. Once decayed to a pointer (when passed to a function), `sizeof` returns the pointer size, not the array size.
 
-### 6.3.2 Dry Run â€” Max Search
+### 6.3.2 Dry Run — Max Search
 
 
 ```
@@ -403,8 +403,8 @@ size = 5
 Iteration | i | scores[i] | current max | Condition (scores[i] > max)
 ----------|---|-----------|-------------|----------------------------
 Init      | - | -         | 88          | (max = scores[0])
-1         | 1 | 72        | 88          | 72 > 88 ? NO â†’ keep 88
-2         | 2 | 93        | 93          | 93 > 88 ? YES â†’ max = 93
+1         | 1 | 72        | 88          | 72 > 88 ? NO → keep 88
+2         | 2 | 93        | 93          | 93 > 88 ? YES → max = 93
 3         | 3 | 65        | 93          | 65 > 93 ? NO
 4         | 4 | 80        | 93          | 80 > 93 ? NO
 
@@ -440,7 +440,7 @@ An array of pointers stores pointer values as its elements. Each element is a po
 type *array_name[size];
 ```
 
-### 6.4.1 Code Example â€” Array of String Pointers
+### 6.4.1 Code Example — Array of String Pointers
 
 
 ```c
@@ -489,7 +489,7 @@ int main(void)
     int *arr[3] = {&a, &b, &c};
 
     for (int i = 0; i < 3; i++) {
-        printf("arr[%d] = %p  â†’  *arr[%d] = %d\n", i, (void*)arr[i], i, *arr[i]);
+        printf("arr[%d] = %p  →  *arr[%d] = %d\n", i, (void*)arr[i], i, *arr[i]);
     }
 
     /* Modify through the pointer */
@@ -502,13 +502,13 @@ int main(void)
 
 **Output:**
 ```
-arr[0] = 0x7fff5fbff700  â†’  *arr[0] = 10
-arr[1] = 0x7fff5fbff704  â†’  *arr[1] = 20
-arr[2] = 0x7fff5fbff708  â†’  *arr[2] = 30
+arr[0] = 0x7fff5fbff700  →  *arr[0] = 10
+arr[1] = 0x7fff5fbff704  →  *arr[1] = 20
+arr[2] = 0x7fff5fbff708  →  *arr[2] = 30
 After modification: b = 999
 ```
 
-### 6.4.3 Memory Layout â€” Array of Pointers
+### 6.4.3 Memory Layout — Array of Pointers
 
 
 ```
@@ -516,9 +516,9 @@ int *arr[3] = {&a, &b, &c};
 
 Address     Content      Points to
 --------    -----------  ---------
-arr[0]      0x7fff...00  â†’ a (value 10)     at 0x7fff...00
-arr[1]      0x7fff...04  â†’ b (value 20)     at 0x7fff...04
-arr[2]      0x7fff...08  â†’ c (value 30)     at 0x7fff...08
+arr[0]      0x7fff...00  → a (value 10)     at 0x7fff...00
+arr[1]      0x7fff...04  → b (value 20)     at 0x7fff...04
+arr[2]      0x7fff...08  → c (value 30)     at 0x7fff...08
 
 sizeof(arr) = 3 * sizeof(int*) = 3 * 8 = 24 bytes (on 64-bit)
 sizeof(arr[0]) = sizeof(int*) = 8 bytes
@@ -537,9 +537,9 @@ sizeof(arr[0]) = sizeof(int*) = 8 bytes
 
 | Scenario | Behavior |
 |----------|----------|
-| `int *arr[5] = {NULL, NULL, NULL, NULL, NULL};` | All pointers are NULL â€” safe to iterate but must check before dereferencing |
-| `free(arr[i]); arr[i] = NULL;` | Proper pattern â€” free then NULL to prevent dangling |
-| `int *arr[3]; *arr[0] = 5;` | Undefined behavior â€” uninitialized pointer dereference |
+| `int *arr[5] = {NULL, NULL, NULL, NULL, NULL};` | All pointers are NULL — safe to iterate but must check before dereferencing |
+| `free(arr[i]); arr[i] = NULL;` | Proper pattern — free then NULL to prevent dangling |
+| `int *arr[3]; *arr[0] = 5;` | Undefined behavior — uninitialized pointer dereference |
 
 ---
 
@@ -552,8 +552,8 @@ type (*pointer_name)[size];
 ```
 
 This is NOT the same as an array of pointers. The parentheses matter:
-- `int *p[5]` â€” array of 5 pointers to int
-- `int (*p)[5]` â€” pointer to an array of 5 ints
+- `int *p[5]` — array of 5 pointers to int
+- `int (*p)[5]` — pointer to an array of 5 ints
 
 ### 6.5.1 Code Example
 
@@ -613,7 +613,7 @@ int main(void)
 
     /* matrix[0] is int* pointing to first element of first row */
     /* &matrix[0] is int(*)[4] pointing to entire first row */
-    int (*p)[4] = matrix;  /* decays to &matrix[0] â€” int(*)[4] */
+    int (*p)[4] = matrix;  /* decays to &matrix[0] — int(*)[4] */
 
     printf("Access via pointer to array:\n");
     for (int i = 0; i < 3; i++) {
@@ -629,9 +629,9 @@ int main(void)
 
 | Operation | Time | Why |
 |-----------|------|-----|
-| Dereference and index `(*p)[i]` | O(1) | Deref then offset by i Ã— sizeof(type) |
-| Advance to next array `p + 1` | O(1) | Compiler adds N Ã— sizeof(type) bytes |
-| `sizeof(*p)` | Compile-time | Known at compile time â€” N Ã— sizeof(type) |
+| Dereference and index `(*p)[i]` | O(1) | Deref then offset by i × sizeof(type) |
+| Advance to next array `p + 1` | O(1) | Compiler adds N × sizeof(type) bytes |
+| `sizeof(*p)` | Compile-time | Known at compile time — N × sizeof(type) |
 
 ### 6.5.4 Edge Cases
 
@@ -645,7 +645,7 @@ int main(void)
 
 ## 6.6 Two-Dimensional Arrays (Row-Major vs Column-Major)
 
-**Real-world analogy (row-major):** A movie theater. Row 0 starts at the screen-left aisle, seats 0â€“9. After the last seat in row 0, the very next seat is row 1, seat 0. C organizes memory exactly like this â€” all of row 0 first, then all of row 1.
+**Real-world analogy (row-major):** A movie theater. Row 0 starts at the screen-left aisle, seats 0–9. After the last seat in row 0, the very next seat is row 1, seat 0. C organizes memory exactly like this — all of row 0 first, then all of row 1.
 
 ### 6.6.1 Declaration and Initialization
 
@@ -694,7 +694,7 @@ Rows: 3
 Cols: 4
 ```
 
-### 6.6.2 Memory Layout â€” Row-Major
+### 6.6.2 Memory Layout — Row-Major
 
 
 **Numbered steps for address calculation (row-major):**
@@ -748,7 +748,7 @@ p[4] = 5  (at 0x7fff5fbff6f0)
 p[5] = 6  (at 0x7fff5fbff6f4)
 ```
 
-### 6.6.3 Row-Major Address Calculation â€” Dry Run
+### 6.6.3 Row-Major Address Calculation — Dry Run
 
 
 ```
@@ -782,8 +782,8 @@ For m[3][4] (3 rows, 4 cols), col-major order:
 
 | Layout | Access Pattern | Used By | Cache Behavior |
 |--------|---------------|---------|----------------|
-| Row-major | `m[row][col]` â€” col varies fastest | C, C++, Java, Python (NumPy row-major by default) | Iterating rows first is cache-friendly â€” consecutive memory |
-| Column-major | `m[row][col]` â€” row varies fastest | Fortran, MATLAB, R | Iterating columns first is cache-friendly |
+| Row-major | `m[row][col]` — col varies fastest | C, C++, Java, Python (NumPy row-major by default) | Iterating rows first is cache-friendly — consecutive memory |
+| Column-major | `m[row][col]` — row varies fastest | Fortran, MATLAB, R | Iterating columns first is cache-friendly |
 
 ### 6.6.5 2D Arrays as Function Parameters
 
@@ -813,7 +813,7 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 
 | Aspect | Description |
 |--------|-------------|
-| Advantages | Contiguous memory â€” cache efficient; simple indexing; works with pointer-to-array types |
+| Advantages | Contiguous memory — cache efficient; simple indexing; works with pointer-to-array types |
 | Disadvantages | Column count must be compile-time constant in traditional C; row-major vs col-major can cause cache misses if iterated in wrong order |
 | When to use | Fixed-size grids, matrices, images, game boards |
 
@@ -823,22 +823,22 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 | Operation | Time | Why |
 |-----------|------|-----|
 | Access `m[r][c]` | O(1) | Direct address calculation |
-| Row-major traversal | O(mÃ—n) | Sequential memory access â€” good cache behavior |
-| Column-major traversal | O(mÃ—n) | Strided access â€” cache misses per element |
-| Matrix addition | O(mÃ—n) | Must visit every element once |
-| Matrix multiplication | O(mÃ—nÃ—p) | Triple-nested loop |
+| Row-major traversal | O(m×n) | Sequential memory access — good cache behavior |
+| Column-major traversal | O(m×n) | Strided access — cache misses per element |
+| Matrix addition | O(m×n) | Must visit every element once |
+| Matrix multiplication | O(m×n×p) | Triple-nested loop |
 
 ### 6.6.8 Edge Cases
 
 
 | Scenario | Behavior |
 |----------|----------|
-| `int m[0][5]` | Zero rows â€” allowed by some compilers, UB in standard C |
-| `int m[5][0]` | Zero columns â€” UB, zero-size type not allowed |
-| `int m[-1][5]` | Negative size â€” compile error |
-| `m[row][col]` with row/col out of range | Undefined behavior â€” no bounds check |
+| `int m[0][5]` | Zero rows — allowed by some compilers, UB in standard C |
+| `int m[5][0]` | Zero columns — UB, zero-size type not allowed |
+| `int m[-1][5]` | Negative size — compile error |
+| `m[row][col]` with row/col out of range | Undefined behavior — no bounds check |
 
-### 6.6.9 Cache Performance â€” Row vs Column Iteration
+### 6.6.9 Cache Performance — Row vs Column Iteration
 
 
 ```c
@@ -853,7 +853,7 @@ int main(void)
     clock_t start, end;
     long long sum = 0;
 
-    /* Row-major iteration (fast â€” sequential memory) */
+    /* Row-major iteration (fast — sequential memory) */
     start = clock();
     for (int i = 0; i < SIZE; i++) {
         for (int j = 0; j < SIZE; j++) {
@@ -865,7 +865,7 @@ int main(void)
 
     sum = 0;
 
-    /* Column-major iteration (slow â€” strided memory) */
+    /* Column-major iteration (slow — strided memory) */
     start = clock();
     for (int j = 0; j < SIZE; j++) {
         for (int i = 0; i < SIZE; i++) {
@@ -885,7 +885,7 @@ Row-major: 0.295 seconds
 Column-major: 1.843 seconds
 ```
 
-The row-major version is 6Ã— faster because it accesses consecutive memory addresses, utilizing CPU cache lines efficiently.
+The row-major version is 6× faster because it accesses consecutive memory addresses, utilizing CPU cache lines efficiently.
 
 ---
 
@@ -897,7 +897,7 @@ The row-major version is 6Ã— faster because it accesses consecutive memory ad
 
 
 ```c
-int cube[3][4][5];   /* 3 layers, 4 rows, 5 columns â€” 60 elements total */
+int cube[3][4][5];   /* 3 layers, 4 rows, 5 columns — 60 elements total */
 ```
 
 **Numbered steps for 3D access:**
@@ -963,7 +963,7 @@ Layer 1:
   21  22  23  24
 ```
 
-### 6.7.2 3D Address Calculation â€” Dry Run
+### 6.7.2 3D Address Calculation — Dry Run
 
 
 ```
@@ -985,17 +985,17 @@ Row stride: 4 * 4 = 16 bytes
 
 
 ```c
-/* Best â€” innermost index varies fastest (row-major friendly) */
+/* Best — innermost index varies fastest (row-major friendly) */
 for (int l = 0; l < L; l++)
     for (int r = 0; r < R; r++)
         for (int c = 0; c < C; c++)
-            process(cube[l][r][c]);  /* sequential â€” cache friendly */
+            process(cube[l][r][c]);  /* sequential — cache friendly */
 
-/* Worst â€” innermost index varies slowest */
+/* Worst — innermost index varies slowest */
 for (int c = 0; c < C; c++)
     for (int r = 0; r < R; r++)
         for (int l = 0; l < L; l++)
-            process(cube[l][r][c]);  /* large stride â€” cache misses */
+            process(cube[l][r][c]);  /* large stride — cache misses */
 ```
 
 ### 6.7.4 A&D Table
@@ -1004,7 +1004,7 @@ for (int c = 0; c < C; c++)
 | Aspect | Description |
 |--------|-------------|
 | Advantages | Natural representation for volumetric data (CT scans, voxel grids, RGB video frames) |
-| Disadvantages | Large memory usage â€” L Ã— R Ã— C Ã— sizeof(type); deep nesting makes code harder to read |
+| Disadvantages | Large memory usage — L × R × C × sizeof(type); deep nesting makes code harder to read |
 | Best for | 3D graphics, scientific simulations, image volumes |
 
 ---
@@ -1013,7 +1013,7 @@ for (int c = 0; c < C; c++)
 
 **Real-world analogy:** You hand someone a paper with your locker number written on it (the address), not your entire locker contents. They go to the locker, look inside, change things. When they give the paper back, the locker contents may have changed.
 
-### 6.8.1 Array Decay â€” The Fundamental Rule
+### 6.8.1 Array Decay — The Fundamental Rule
 
 
 When an array is passed to a function, it *decays* to a pointer to its first element. The function receives the address, not a copy of the array.
@@ -1021,7 +1021,7 @@ When an array is passed to a function, it *decays* to a pointer to its first ele
 ```c
 #include <stdio.h>
 
-/* arr[] is syntactic sugar for *arr â€” both are pointers */
+/* arr[] is syntactic sugar for *arr — both are pointers */
 void print_array(int arr[], int size)
 {
     printf("Inside function: sizeof(arr) = %zu (pointer size!)\n", sizeof(arr));
@@ -1050,7 +1050,7 @@ Inside function: sizeof(arr) = 8 (pointer size!)
 10 20 30 40 50
 ```
 
-**Critical:** The size must be passed separately â€” `sizeof(arr)` inside the function returns the pointer size (4 or 8 bytes), not the array size.
+**Critical:** The size must be passed separately — `sizeof(arr)` inside the function returns the pointer size (4 or 8 bytes), not the array size.
 
 ### 6.8.2 Modifying Arrays Through Functions
 
@@ -1097,7 +1097,7 @@ Doubled:  2 4 6 8 10
 |--------|------------------------|---------------------------|
 | What is passed | Copy of the data | Copy of the address (pointer) |
 | Modifications affect original? | No | Yes |
-| Memory/time cost | O(n) â€” copies entire data | O(1) â€” copies 4/8 bytes |
+| Memory/time cost | O(n) — copies entire data | O(1) — copies 4/8 bytes |
 | Syntax | `void f(int x)` | `void f(int arr[])` or `void f(int *arr)` |
 | `sizeof` behavior | Returns size of type | Returns pointer size (not array) |
 
@@ -1146,7 +1146,7 @@ After pass_by_reference: arr = 999 999 999 (changed!)
 ```c
 #include <stdio.h>
 
-/* Standard C99 VLA notation â€” rows and cols are parameters */
+/* Standard C99 VLA notation — rows and cols are parameters */
 void fill_identity(int rows, int cols, int matrix[rows][cols])
 {
     for (int i = 0; i < rows; i++) {
@@ -1190,16 +1190,16 @@ Identity matrix:
 |-----------|------|-----|
 | Pass array to function | O(1) time, O(1) space | Only the address (4/8 bytes) is copied |
 | Copy array in function | O(n) time, O(n) space | Must allocate and copy each element manually |
-| `sizeof` inside function | Compile-time | Returns pointer size, not array size â€” common pitfall |
+| `sizeof` inside function | Compile-time | Returns pointer size, not array size — common pitfall |
 
 ### 6.8.6 Edge Cases
 
 
 | Scenario | Behavior |
 |----------|----------|
-| Pass NULL as array | Undefined behavior when dereferenced â€” always check for NULL if parameter could be null |
-| Pass array of wrong size | No compiler error â€” must trust the size parameter |
-| Return pointer to local array | Dangling pointer â€” array goes out of scope; use static or malloc |
+| Pass NULL as array | Undefined behavior when dereferenced — always check for NULL if parameter could be null |
+| Pass array of wrong size | No compiler error — must trust the size parameter |
+| Return pointer to local array | Dangling pointer — array goes out of scope; use static or malloc |
 
 ---
 
@@ -1217,7 +1217,7 @@ C99 allows array sizes to be determined at runtime. VLAs are allocated on the st
 
 void process(int n)
 {
-    int arr[n];  /* VLA â€” size determined at call time */
+    int arr[n];  /* VLA — size determined at call time */
 
     for (int i = 0; i < n; i++) {
         arr[i] = i * i;
@@ -1225,7 +1225,7 @@ void process(int n)
 
     printf("Squares up to %d:\n", n);
     for (int i = 0; i < n; i++) {
-        printf("%dÂ² = %d\n", i, arr[i]);
+        printf("%d² = %d\n", i, arr[i]);
     }
 }
 
@@ -1240,22 +1240,22 @@ int main(void)
 **Output:**
 ```
 Squares up to 5:
-0Â² = 0
-1Â² = 1
-2Â² = 4
-3Â² = 9
-4Â² = 16
+0² = 0
+1² = 1
+2² = 4
+3² = 9
+4² = 16
 Squares up to 10:
-0Â² = 0
-1Â² = 1
-2Â² = 4
-3Â² = 9
-4Â² = 16
-5Â² = 25
-6Â² = 36
-7Â² = 49
-8Â² = 64
-9Â² = 81
+0² = 0
+1² = 1
+2² = 4
+3² = 9
+4² = 16
+5² = 25
+6² = 36
+7² = 49
+8² = 64
+9² = 81
 ```
 
 ### 6.9.2 VLA with `sizeof`
@@ -1285,23 +1285,23 @@ Number of elements: 7
 
 Unlike fixed-size arrays where `sizeof` is a compile-time constant, for VLAs `sizeof` is evaluated at runtime.
 
-### 6.9.3 VLA â€” Pros and Cons
+### 6.9.3 VLA — Pros and Cons
 
 
 ```
 PROS:
-  âœ“ Flexible sizes â€” allocate exactly what you need
-  âœ“ No heap allocation overhead (no malloc/free)
-  âœ“ Automatic deallocation when scope exits
-  âœ“ Clean syntax for variable-size 2D function parameters
+  ✓ Flexible sizes — allocate exactly what you need
+  ✓ No heap allocation overhead (no malloc/free)
+  ✓ Automatic deallocation when scope exits
+  ✓ Clean syntax for variable-size 2D function parameters
 
 CONS:
-  âœ— Stack allocation â€” large VLAs cause stack overflow
-  âœ— Cannot be global or static
-  âœ— Cannot have initializer list
-  âœ— Optional in C11 â€” not guaranteed to be supported
-  âœ— sizeof evaluated at runtime (minor overhead)
-  âœ— No error reporting on allocation failure (silent crash)
+  ✗ Stack allocation — large VLAs cause stack overflow
+  ✗ Cannot be global or static
+  ✗ Cannot have initializer list
+  ✗ Optional in C11 — not guaranteed to be supported
+  ✗ sizeof evaluated at runtime (minor overhead)
+  ✗ No error reporting on allocation failure (silent crash)
 ```
 
 ### 6.9.4 VLA Stack Overflow Example
@@ -1314,7 +1314,7 @@ CONS:
 void dangerous_vla(void)
 {
     int n = 100000000;  /* 100 million ints ~ 400 MB on stack */
-    int arr[n];         /* Stack overflow â€” typical stack is 1-8 MB */
+    int arr[n];         /* Stack overflow — typical stack is 1-8 MB */
     /* Program crashes before reaching this point */
     printf("Never reached\n");
 }
@@ -1328,7 +1328,7 @@ int main(void)
 }
 ```
 
-**Expected behavior:** Segmentation fault (stack overflow) â€” the program crashes.
+**Expected behavior:** Segmentation fault (stack overflow) — the program crashes.
 
 **Safe alternative using heap:**
 ```c
@@ -1374,17 +1374,17 @@ void matrix_multiply(int r1, int c1, int a[r1][c1],
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| VLA declaration | O(1) allocation | O(n) | Stack pointer adjusted by n Ã— sizeof(type) |
-| VLA sizeof | O(1) runtime | â€” | Evaluated at runtime; not constant |
-| Stack overflow for large VLA | Crash | â€” | No way to detect or recover |
-| Heap alternative (malloc) | O(1) allocation | O(n) | Malloc returns NULL on failure â€” detectable |
+| VLA declaration | O(1) allocation | O(n) | Stack pointer adjusted by n × sizeof(type) |
+| VLA sizeof | O(1) runtime | — | Evaluated at runtime; not constant |
+| Stack overflow for large VLA | Crash | — | No way to detect or recover |
+| Heap alternative (malloc) | O(1) allocation | O(n) | Malloc returns NULL on failure — detectable |
 
 ### 6.9.7 Edge Cases
 
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
-| `int n = 0; int arr[n];` | Zero-length array â€” UB in C standard | Check `n > 0` before declaration |
+| `int n = 0; int arr[n];` | Zero-length array — UB in C standard | Check `n > 0` before declaration |
 | `int n = -1; int arr[n];` | Undefined behavior | Ensure n is non-negative |
 | `n = 1000000; int arr[n];` | Stack overflow if n is too large | Use malloc for large arrays |
 | `static int arr[n];` | Compile error | Static storage cannot be VLA |
@@ -1394,7 +1394,7 @@ void matrix_multiply(int r1, int c1, int a[r1][c1],
 
 ## 6.10 Array Bounds and Bounds Checking
 
-**Real-world analogy:** A parking lot with 50 spaces numbered 0â€“49. If you park in spot 50, you're on the neighbor's property. If you park in spot -1, you're on the sidewalk. C lets you do both â€” and crashes when the tow truck comes.
+**Real-world analogy:** A parking lot with 50 spaces numbered 0–49. If you park in spot 50, you're on the neighbor's property. If you park in spot -1, you're on the sidewalk. C lets you do both — and crashes when the tow truck comes.
 
 ### 6.10.1 The Core Problem
 
@@ -1408,10 +1408,10 @@ int main(void)
 {
     int arr[5] = {10, 20, 30, 40, 50};
 
-    printf("arr[5] (out of bounds): %d\n", arr[5]);  /* UB â€” could crash */
-    printf("arr[-1] (out of bounds): %d\n", arr[-1]); /* UB â€” even worse */
+    printf("arr[5] (out of bounds): %d\n", arr[5]);  /* UB — could crash */
+    printf("arr[-1] (out of bounds): %d\n", arr[-1]); /* UB — even worse */
 
-    /* Buffer overflow â€” writing past the end */
+    /* Buffer overflow — writing past the end */
     arr[10] = 999;  /* silently corrupts adjacent memory */
 
     printf("This may or may not print...\n");
@@ -1419,9 +1419,9 @@ int main(void)
 }
 ```
 
-**Output:** Undefined â€” could print garbage, crash, or appear to work (the most dangerous case).
+**Output:** Undefined — could print garbage, crash, or appear to work (the most dangerous case).
 
-### 6.10.2 Dry Run â€” Buffer Overflow Trace
+### 6.10.2 Dry Run — Buffer Overflow Trace
 
 
 ```
@@ -1433,14 +1433,14 @@ Address     Content
 0x1008      arr[2] = 30
 0x100C      arr[3] = 40
 0x1010      arr[4] = 50
-0x1014      [other local variable â€” e.g., int x]
+0x1014      [other local variable — e.g., int x]
 0x1018      [saved frame pointer]
-0x101C      [return address]   â† CRITICAL
+0x101C      [return address]   ← CRITICAL
 
 If we write arr[7] = 999:
   arr[7] = *(arr + 7) = address 0x101C
   We just overwrote the RETURN ADDRESS!
-  When main tries to return â†’ crash or hijack
+  When main tries to return → crash or hijack
 ```
 
 ### 6.10.3 Safe Access Pattern
@@ -1493,16 +1493,16 @@ data[-1] is out of bounds!
 | Operation | Time | Why |
 |-----------|------|-----|
 | Bound check with wrapper | O(1) | Two comparisons: index &lt; 0 OR index &gt;= size |
-| Unchecked access | O(1) | Raw pointer arithmetic â€” fastest but dangerous |
+| Unchecked access | O(1) | Raw pointer arithmetic — fastest but dangerous |
 
 ### 6.10.5 Historical Impact
 
 
 Buffer overflows are the single most exploited vulnerability class in C/C++ history:
-- Morris Worm (1988) â€” fingerd buffer overflow
-- Code Red (2001) â€” IIS buffer overflow
-- Heartbleed (2014) â€” bounds check missing in OpenSSL heartbeat
-- EternalBlue (2017) â€” Windows SMB buffer overflow (WannaCry, NotPetya)
+- Morris Worm (1988) — fingerd buffer overflow
+- Code Red (2001) — IIS buffer overflow
+- Heartbleed (2014) — bounds check missing in OpenSSL heartbeat
+- EternalBlue (2017) — Windows SMB buffer overflow (WannaCry, NotPetya)
 
 ---
 
@@ -1524,7 +1524,7 @@ int main(void)
 {
     char not_a_string[5] = {'H', 'e', 'l', 'l', 'o'};  /* NO null terminator */
     char is_a_string[6] = {'H', 'e', 'l', 'l', 'o', '\0'};  /* null-terminated */
-    char also_a_string[] = "Hello";  /* string literal â€” auto null-terminated */
+    char also_a_string[] = "Hello";  /* string literal — auto null-terminated */
 
     printf("not_a_string: ");
     for (int i = 0; i < 5; i++) printf("%c", not_a_string[i]);
@@ -1560,10 +1560,10 @@ sizeof(also_a_string) = 6
 strlen(is_a_string) = 5
 strlen(also_a_string) = 5
 
-DANGER: Helloâ• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• 
+DANGER: Hello╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠
 ```
 
-### 6.11.2 String vs Char Array â€” Comparison Table
+### 6.11.2 String vs Char Array — Comparison Table
 
 
 | Feature | Char Array | String |
@@ -1575,7 +1575,7 @@ DANGER: Helloâ• â• â• â• â• â• â• â• â• â�
 | `char arr[] = "abc";` | `arr` is a 4-byte string literal | 4 bytes: 'a','b','c','\0' |
 | `char arr[] = {'a','b','c'};` | 3-byte char array, NOT a string | Not safe to use as string |
 
-### 6.11.3 Common Pitfall â€” Buffer Overflow with Strings
+### 6.11.3 Common Pitfall — Buffer Overflow with Strings
 
 
 ```c
@@ -1627,7 +1627,7 @@ int main(void)
 
 ## 6.12 Array Decay to Pointer
 
-**Real-world analogy:** A full restaurant menu (the array) is a book with many pages. When you hand the menu to the chef saying "I want this," you're pointing at the whole book. But the chef sees it as "the address of page 0" â€” they need to know the page count separately.
+**Real-world analogy:** A full restaurant menu (the array) is a book with many pages. When you hand the menu to the chef saying "I want this," you're pointing at the whole book. But the chef sees it as "the address of page 0" — they need to know the page count separately.
 
 ### 6.12.1 When Decay Happens
 
@@ -1649,7 +1649,7 @@ int main(void)
 
     check_decay(arr);       /* decay happens here */
     int *ptr = arr;         /* decay happens here */
-    int *ptr2 = &arr[0];    /* explicit â€” same as decay */
+    int *ptr2 = &arr[0];    /* explicit — same as decay */
 
     printf("sizeof(ptr) = %zu (pointer)\n", sizeof(ptr));
     printf("sizeof(ptr2) = %zu (pointer)\n", sizeof(ptr2));
@@ -1671,7 +1671,7 @@ sizeof(ptr2) = 8 (pointer)
 
 | Context | No Decay | Reason |
 |---------|----------|--------|
-| `sizeof(arr)` | Returns array size in bytes | Special case â€” `sizeof` operator on the original array |
+| `sizeof(arr)` | Returns array size in bytes | Special case — `sizeof` operator on the original array |
 | `&arr` | Returns `type (*)[N]`, not `type**` | Address of entire array, not first element |
 | `typeof(arr)` (GCC extension) | Returns array type | No decay for type queries |
 
@@ -1683,8 +1683,8 @@ int main(void)
     int arr[5] = {1, 2, 3, 4, 5};
 
     /* These are different types: */
-    int *p1 = arr;         /* int* â€” pointer to first element */
-    int (*p2)[5] = &arr;   /* int(*)[5] â€” pointer to entire array */
+    int *p1 = arr;         /* int* — pointer to first element */
+    int (*p2)[5] = &arr;   /* int(*)[5] — pointer to entire array */
 
     printf("p1 + 1 = %p (advances by %zu byte(s))\n",
            (void*)(p1 + 1), sizeof(int));
@@ -1711,12 +1711,12 @@ p2 + 1 = 0x7fff...14 (advances by 20 byte(s))
 | Property | Array | Pointer |
 |----------|-------|---------|
 | Declaration | `int arr[10];` | `int *p;` |
-| Memory | Block of N Ã— sizeof(type) bytes | Single address (4 or 8 bytes) |
+| Memory | Block of N × sizeof(type) bytes | Single address (4 or 8 bytes) |
 | `sizeof` | Total array bytes | Pointer size (4 or 8) |
-| Assignment | `arr = other;` â€” illegal (not assignable) | `p = other;` â€” legal |
-| Arithmetic | `arr++` â€” illegal | `p++` â€” advances to next element |
+| Assignment | `arr = other;` — illegal (not assignable) | `p = other;` — legal |
+| Arithmetic | `arr++` — illegal | `p++` — advances to next element |
 | `&arr` | Returns `type (*)[N]` | Returns `type**` |
-| Decay to pointer | Yes, in expressions | No â€” already a pointer |
+| Decay to pointer | Yes, in expressions | No — already a pointer |
 | Storage | Automatic/static/global | Automatic/static/global/heap |
 | `arr[i]` vs `*(arr + i)` | Equivalent | Equivalent |
 
@@ -1743,11 +1743,11 @@ memcpy(arr2, arr1, sizeof(arr1));
 | Property | 1D Array | 2D Array | 3D Array |
 |----------|----------|----------|----------|
 | Declaration | `int a[N]` | `int a[M][N]` | `int a[L][M][N]` |
-| Logical view | Line | Grid (rows Ã— cols) | Cube (layers Ã— rows Ã— cols) |
-| Total elements | N | M Ã— N | L Ã— M Ã— N |
-| Memory size | N Ã— sizeof(type) | M Ã— N Ã— sizeof(type) | L Ã— M Ã— N Ã— sizeof(type) |
+| Logical view | Line | Grid (rows × cols) | Cube (layers × rows × cols) |
+| Total elements | N | M × N | L × M × N |
+| Memory size | N × sizeof(type) | M × N × sizeof(type) | L × M × N × sizeof(type) |
 | Access | `a[i]` | `a[i][j]` | `a[i][j][k]` |
-| Address formula | base + i Ã— S | base + (i Ã— N + j) Ã— S | base + ((i Ã— M Ã— N) + (j Ã— N) + k) Ã— S |
+| Address formula | base + i × S | base + (i × N + j) × S | base + ((i × M × N) + (j × N) + k) × S |
 | Function param | `int a[]` or `int *a` | `int a[][N]` or `int (*a)[N]` | `int a[][M][N]` or `int (*a)[M][N]` |
 
 ### 6.13.4 Row-major vs Column-major
@@ -1755,12 +1755,12 @@ memcpy(arr2, arr1, sizeof(arr1));
 
 | Aspect | Row-major | Column-major |
 |--------|-----------|--------------|
-| Address formula | base + (row Ã— cols + col) Ã— S | base + (col Ã— rows + row) Ã— S |
+| Address formula | base + (row × cols + col) × S | base + (col × rows + row) × S |
 | Consecutive in memory | Elements in same row | Elements in same column |
 | Used by | C, C++, Java, Python (default), Rust | Fortran, MATLAB, R, Julia |
 | Iterating rows first | Cache-friendly (fast) | Cache-inefficient (slow) |
 | Iterating cols first | Cache-inefficient (slow) | Cache-friendly (fast) |
-| Practical difference | ~6Ã— performance difference on large matrices (as shown in 6.6.9) |
+| Practical difference | ~6× performance difference on large matrices (as shown in 6.6.9) |
 
 ### 6.13.5 `sizeof` Array vs Pointer
 
@@ -1773,7 +1773,7 @@ int main(void)
     int arr[10];
     int *p = arr;
 
-    printf("sizeof(arr) = %zu  (10 Ã— %zu)\n", sizeof(arr), sizeof(int));
+    printf("sizeof(arr) = %zu  (10 × %zu)\n", sizeof(arr), sizeof(int));
     printf("sizeof(p)   = %zu  (pointer size)\n", sizeof(p));
     printf("Element count = %zu\n", sizeof(arr) / sizeof(arr[0]));
 
@@ -1783,7 +1783,7 @@ int main(void)
 
 **Output (64-bit system):**
 ```
-sizeof(arr) = 40  (10 Ã— 4)
+sizeof(arr) = 40  (10 × 4)
 sizeof(p)   = 8  (pointer size)
 Element count = 10
 ```
@@ -1803,7 +1803,7 @@ Element count = 10
 
 
 ```c
-/* C99+ allows static to hint minimum size â€” compiler may optimize */
+/* C99+ allows static to hint minimum size — compiler may optimize */
 void process(int arr[static 10])
 {
     /* Compiler assumes arr has at least 10 elements */
@@ -1856,8 +1856,8 @@ Number of elements in the array. Works **only** in the scope where the array was
 
 | Declaration | Type | Meaning |
 |-------------|------|---------|
-| `int a[][4]` | `int (*)[4]` | Pointer to array of 4 ints â€” 2D array parameter |
-| `int *a[4]` | `int **[4]` | Array of 4 pointers â€” not a 2D array at all |
+| `int a[][4]` | `int (*)[4]` | Pointer to array of 4 ints — 2D array parameter |
+| `int *a[4]` | `int **[4]` | Array of 4 pointers — not a 2D array at all |
 
 ### Q6: What is array decay and when does it happen?
 
@@ -1870,7 +1870,7 @@ Array decay is the implicit conversion of an array name to a pointer to its firs
 ```c
 int arr[5] = {1, 2, 3, 4, 5};
 int *p = &arr[2];
-printf("%d\n", p[-1]);  /* prints 3 â€” valid, same as arr[1] */
+printf("%d\n", p[-1]);  /* prints 3 — valid, same as arr[1] */
 ```
 
 **Yes, but only when the pointer points to the middle of the array.** The expression `p[-1]` is valid as long as `p - 1` is within the array bounds.
@@ -1954,7 +1954,7 @@ Edge-detected image:
    0   0   0   0
 ```
 
-### 6.15.2 Matrix Math (3Ã—3 Transformations)
+### 6.15.2 Matrix Math (3×3 Transformations)
 
 
 ```c
@@ -1963,7 +1963,7 @@ Edge-detected image:
 typedef double Matrix3x3[3][3];
 typedef double Vector3[3];
 
-/* Multiply two 3Ã—3 matrices */
+/* Multiply two 3×3 matrices */
 void mat_mul(Matrix3x3 a, Matrix3x3 b, Matrix3x3 result)
 {
     for (int i = 0; i < 3; i++) {
@@ -1976,7 +1976,7 @@ void mat_mul(Matrix3x3 a, Matrix3x3 b, Matrix3x3 result)
     }
 }
 
-/* Apply 3Ã—3 transformation matrix to a 3D vector */
+/* Apply 3×3 transformation matrix to a 3D vector */
 void transform_point(Matrix3x3 m, Vector3 v, Vector3 result)
 {
     for (int i = 0; i < 3; i++) {
@@ -1986,7 +1986,7 @@ void transform_point(Matrix3x3 m, Vector3 v, Vector3 result)
 
 int main(void)
 {
-    /* Rotation matrix (90Â° around Z axis) */
+    /* Rotation matrix (90° around Z axis) */
     Matrix3x3 rotate_z = {
         { 0, -1, 0},
         { 1,  0, 0},
@@ -2000,14 +2000,14 @@ int main(void)
 
     printf("Original point: (%.1f, %.1f, %.1f)\n",
            point[0], point[1], point[2]);
-    printf("Rotated (90Â°):  (%.1f, %.1f, %.1f)\n",
+    printf("Rotated (90°):  (%.1f, %.1f, %.1f)\n",
            rotated[0], rotated[1], rotated[2]);
 
     /* Matrix multiplication */
     Matrix3x3 identity;
     mat_mul(rotate_z, rotate_z, identity);
 
-    printf("\nRotationÂ² (should be identity except first two rows negated):\n");
+    printf("\nRotation² (should be identity except first two rows negated):\n");
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%6.1f", identity[i][j]);
@@ -2022,9 +2022,9 @@ int main(void)
 **Output:**
 ```
 Original point: (1.0, 0.0, 0.0)
-Rotated (90Â°):  (0.0, 1.0, 0.0)
+Rotated (90°):  (0.0, 1.0, 0.0)
 
-RotationÂ² (should be identity except first two rows negated):
+Rotation² (should be identity except first two rows negated):
   -1.0   0.0   0.0
    0.0  -1.0   0.0
    0.0   0.0   1.0
@@ -2060,9 +2060,9 @@ RotationÂ² (should be identity except first two rows negated):
 | Array of pointers | `type *name[N];` | `const char *names[10];` |
 | Pointer to array | `type (*name)[N];` | `int (*row)[4];` |
 
-## Common Pitfalls â€” Checklist
+## Common Pitfalls — Checklist
 
-- [ ] Index out of bounds â€” C does not check!
+- [ ] Index out of bounds — C does not check!
 - [ ] `sizeof` on decayed pointer instead of array
 - [ ] Forgetting null terminator on char arrays
 - [ ] VLA too large for stack
@@ -2091,7 +2091,7 @@ RotationÂ² (should be identity except first two rows negated):
 
 3. How is `int a[2][3]` laid out in memory?
    A) Column by column
-   B) Row by row â€” all of row 0, then all of row 1
+   B) Row by row — all of row 0, then all of row 1
    C) Random order
    D) Zigzag pattern
 
@@ -2103,7 +2103,7 @@ RotationÂ² (should be identity except first two rows negated):
    C) 40
    D) 8
 
-<details><summary>Answer&lt;/summary&gt;**C)** `int *p[5]` is an array of 5 pointers, each 8 bytes â†’ 40 bytes.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `int *p[5]` is an array of 5 pointers, each 8 bytes → 40 bytes.</details>
 
 5. Which is a valid use of a VLA?
    A) `static int arr[n];`
@@ -2124,7 +2124,7 @@ RotationÂ² (should be identity except first two rows negated):
 - Array of pointers (`int *p[N]`) stores pointer values; pointer to array (`int (*p)[N]`) points to an entire array.
 - VLAs allow runtime sizing but risk stack overflow.
 - String vs char array: strings are null-terminated char arrays.
-- Array assignment is illegal in C â€” use `memcpy` or element-by-element copy.
+- Array assignment is illegal in C — use `memcpy` or element-by-element copy.
 
 ## Exercises
 
@@ -2152,7 +2152,7 @@ RotationÂ² (should be identity except first two rows negated):
 
 Write a program that implements the Sieve of Eratosthenes to find all prime numbers up to a user-specified limit `n`. Use an array of booleans (or `int`). The algorithm: create an array of size `n+1` initialized to true. Set indices 0 and 1 to false. For each `i` from 2 to sqrt(n), if `i` is prime, mark all multiples of `i` (starting from `i*i`) as false. Print all remaining prime numbers. Analyze the time complexity of this approach.
 
-**Complexity:** O(n log log n) â€” each composite gets marked once; the inner loop runs n/i times for each prime i. Sum of reciprocals of primes ~ log log n.
+**Complexity:** O(n log log n) — each composite gets marked once; the inner loop runs n/i times for each prime i. Sum of reciprocals of primes ~ log log n.
 
 ---
 

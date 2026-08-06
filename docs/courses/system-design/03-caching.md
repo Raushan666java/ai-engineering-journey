@@ -1,4 +1,4 @@
-﻿# Chapter 3: Caching Strategies and Patterns
+# Chapter 3: Caching Strategies and Patterns
 > **Previous:** [02 Scalability Load Balancing](./02-scalability-load-balancing.md) | **Next:** [04 Database Foundations](./04-database-foundations.md)
 
 ---
@@ -96,7 +96,7 @@ flowchart LR
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
-Caching works because of locality of reference â€” the observation that accessed data is not uniformly distributed.
+Caching works because of locality of reference — the observation that accessed data is not uniformly distributed.
 
 **Temporal locality:** If a piece of data is accessed now, it is likely to be accessed again soon. Examples: a user's session data, the hot tweet in a timeline, the current page's CSS file. Temporal locality is the reason LRU (Least Recently Used) eviction works well: recently accessed items are kept, untouched items are evicted.
 
@@ -125,10 +125,10 @@ Caching occurs at every level of a modern system. Each level is faster, smaller,
 | L2 | CPU cache | 256-512 KB | ~4 ns | Hardware |
 | L3 | CPU cache | 4-32 MB | ~12 ns | Hardware |
 | RAM | Main memory | 8-512 GB | ~100 ns | OS |
-| Local disk | SSD | 256 GB-2 TB | ~50 Âµs | OS/App |
-| Local memory cache | In-process (e.g., Guava cache) | 0-4 GB | ~5 Âµs | Application |
+| Local disk | SSD | 256 GB-2 TB | ~50 µs | OS/App |
+| Local memory cache | In-process (e.g., Guava cache) | 0-4 GB | ~5 µs | Application |
 | Distributed cache | Redis, Memcached | 10-500 GB | ~1-5 ms | Application |
-| Database buffer pool | InnoDB buffer pool, PostgreSQL shared buffers | 1-100 GB | ~100 Âµs | Database |
+| Database buffer pool | InnoDB buffer pool, PostgreSQL shared buffers | 1-100 GB | ~100 µs | Database |
 | CDN | Edge cache (CloudFront, Cloudflare) | Distributed | ~10-50 ms | CDN provider |
 
 The **cache miss penalty** increases by orders of magnitude at each level. A miss in L1 (~1 ns) costs ~4 ns to fetch from L2. A miss in Redis (~5 ms) costs ~50 ms to fetch from the database. This asymmetry drives the entire caching strategy: maximize the hit rate at the fastest level possible.
@@ -178,7 +178,7 @@ def update_user(user_id, data):
     # Cache-aside write
     db.execute("UPDATE users SET name = ? WHERE id = ?", data.name, user_id)
 
-    # Invalidate, don't update â€” simpler and avoids race conditions
+    # Invalidate, don't update — simpler and avoids race conditions
     cache.delete(f"user:{user_id}")
 ```
 
@@ -249,9 +249,9 @@ The cache proactively refreshes a key before it expires, based on access pattern
 ### Eviction Policies
 
 
-When the cache is full, something must be evicted. The choice of eviction policy is a bet on future access patterns â€” which entry is least likely to be needed again?
+When the cache is full, something must be evicted. The choice of eviction policy is a bet on future access patterns — which entry is least likely to be needed again?
 
-#### LRU â€” Least Recently Used
+#### LRU — Least Recently Used
 
 Evict the item accessed furthest in the past.
 
@@ -261,15 +261,15 @@ Evict the item accessed furthest in the past.
 
 **Cons:** Vulnerable to scan attacks (a one-time scan of many items evicts all hot data). Does not distinguish between "frequently used but not right now" and "rarely used."
 
-#### LFU â€” Least Frequently Used
+#### LFU — Least Frequently Used
 
 Evict the item with the lowest access frequency.
 
 **Pros:** Resists scan attacks (one-time accesses have low frequency). Good for workload where popularity distribution is stable.
 
-**Cons:** High implementation complexity (need frequency counters + min-heap or frequency buckets). Suffers from "frequency inertia" â€” once-hot items remain in cache even after they become cold, because their frequency counters take time to decay.
+**Cons:** High implementation complexity (need frequency counters + min-heap or frequency buckets). Suffers from "frequency inertia" — once-hot items remain in cache even after they become cold, because their frequency counters take time to decay.
 
-#### FIFO â€” First In, First Out
+#### FIFO — First In, First Out
 
 Evict the item that was inserted earliest.
 
@@ -277,21 +277,21 @@ Evict the item that was inserted earliest.
 
 **Cons:** Ignores access patterns entirely. The most valuable hot item can be evicted simply because it was inserted first. Poor hit rate in practice.
 
-#### MRU â€” Most Recently Used
+#### MRU — Most Recently Used
 
 Evict the most recently used item.
 
-**Counter-intuitive but useful for:** Scenarios where older items are more likely to be reused. For example, a "scrollable feed" where users start at the most recent item and move backward â€” recent items have been seen, older ones have not.
+**Counter-intuitive but useful for:** Scenarios where older items are more likely to be reused. For example, a "scrollable feed" where users start at the most recent item and move backward — recent items have been seen, older ones have not.
 
-#### ARC â€” Adaptive Replacement Cache
+#### ARC — Adaptive Replacement Cache
 
 Combines LRU and LFU by maintaining four lists: recent (recency), frequent (frequency), ghost entries (evicted but tracked). Adaptively balances between recency and frequency based on observed workload.
 
-**Pros:** Self-tuning â€” no manual configuration of recency vs frequency weight. Outperforms LRU on most real-world workloads.
+**Pros:** Self-tuning — no manual configuration of recency vs frequency weight. Outperforms LRU on most real-world workloads.
 
 **Cons:** Complex implementation. Ghost entries consume memory.
 
-#### 2Q â€” Two-Queue Algorithm
+#### 2Q — Two-Queue Algorithm
 
 Maintains three queues: Am (FIFO, for single-access items), A1 (FIFO for recently accessed that do not appear in Am), and Am (LRU for frequently accessed items). An item starts in Am ? promoted to A1 on second access ? promoted to Am on third access.
 
@@ -395,13 +395,13 @@ Each cache entry has a Time-To-Live (TTL). After TTL expires, the entry is autom
 cache.set(key, value, ttl=3600)   # valid for 1 hour
 ```
 
-**Pros:** Simple, automatic, no coordination needed. Bounded staleness â€” data is never more than TTL old.
+**Pros:** Simple, automatic, no coordination needed. Bounded staleness — data is never more than TTL old.
 
 **Cons:** Data can be stale within the TTL window. Short TTL reduces cache effectiveness. Choosing the right TTL is workload-dependent and requires tuning.
 
 #### Event-Driven Invalidation
 
-The database publishes change events (via CDC â€” Change Data Capture, or explicit application events). A subscriber receives the event and invalidates or updates the cache.
+The database publishes change events (via CDC — Change Data Capture, or explicit application events). A subscriber receives the event and invalidates or updates the cache.
 
 ```
 Application update:
@@ -413,7 +413,7 @@ Application update:
 
 **Pros:** Near-instant invalidation (sub-second). TTL can be long or infinite since manual invalidation handles consistency.
 
-**Cons:** Requires a message broker. Eventual consistency â€” there is a window between DB update and cache invalidation. If the invalidation message is lost, the cache is permanently stale (until TTL fires).
+**Cons:** Requires a message broker. Eventual consistency — there is a window between DB update and cache invalidation. If the invalidation message is lost, the cache is permanently stale (until TTL fires).
 
 #### Write Invalidate
 
@@ -428,7 +428,7 @@ def update_user(user_id, name):
     cache.set(f"user:{user_id}", user, ttl=3600)  # update (eager: cache stays hot)
 ```
 
-**Invalidate vs update:** Invalidation is safer â€” writing the updated value directly to the cache risks writing a stale value if another concurrent writer commits a newer version. Invalidation causes the next read to fetch the latest value. The trade-off is one extra read (the cache miss).
+**Invalidate vs update:** Invalidation is safer — writing the updated value directly to the cache risks writing a stale value if another concurrent writer commits a newer version. Invalidation causes the next read to fetch the latest value. The trade-off is one extra read (the cache miss).
 
 ---
 
@@ -442,7 +442,7 @@ Time 0:    key "homepage_feed" expires
 Time 0.01: 500 requests check cache ? all miss
 Time 0.02: 500 requests query DB simultaneously
 Time 0.05: Database CPU spikes to 100%, latency degrades
-Time 0.10: Cascading failure â€” DB connection pool exhausted
+Time 0.10: Cascading failure — DB connection pool exhausted
 ```
 
 **Solution 1: Mutex Locking (Cache Stampede Prevention)**
@@ -467,7 +467,7 @@ def get_homepage():
     else:
         # Another request is reloading. Wait and retry.
         sleep(0.05)
-        return get_homepage()   # recursion â€” will hit cache
+        return get_homepage()   # recursion — will hit cache
 ```
 
 **Solution 2: Probabilistic Early Expiration (XFetch Algorithm)**
@@ -492,7 +492,7 @@ if should_refresh(ttl_remaining=60, total_ttl=300, beta=2.0):
     thread_pool.submit(reload_cache_entry, key)
 ```
 
-The parameter ÃŸ (beta) controls the aggressiveness: ÃŸ=0 means refresh immediately (always); ÃŸ=8 means never refresh early (pure TTL). The XFetch algorithm ensures that the expected number of concurrent recomputations at the TTL boundary is approximately 1, regardless of the number of requesting clients.
+The parameter ß (beta) controls the aggressiveness: ß=0 means refresh immediately (always); ß=8 means never refresh early (pure TTL). The XFetch algorithm ensures that the expected number of concurrent recomputations at the TTL boundary is approximately 1, regardless of the number of requesting clients.
 
 ---
 
@@ -514,11 +514,11 @@ Redis Cluster:
 - Keys are mapped to a slot: HASH_SLOT = CRC16(key) mod 16384
 - Each node owns a subset of slots
 - Replication: each master has 1+ replicas (for failover)
-- No central coordinator â€” gossip protocol for cluster state
+- No central coordinator — gossip protocol for cluster state
 
 Memcached:
 - Client-side consistent hashing
-- No replication (Memcached is a cache, not a store â€” data loss is acceptable)
+- No replication (Memcached is a cache, not a store — data loss is acceptable)
 - No persistence
 - Very low overhead (simpler than Redis, faster for simple get/set)
 ```
@@ -562,7 +562,7 @@ Cache-Control: public, max-age=60, must-revalidate    # 1 minute, must check ori
 Cache-Control: private, max-age=0                     # do not cache
 ```
 
-**Edge caching:** CDN nodes cache responses by URL. On a miss (not in edge cache), the edge fetches from the origin. Cache hit serves from the edge â€” significantly reduced latency.
+**Edge caching:** CDN nodes cache responses by URL. On a miss (not in edge cache), the edge fetches from the origin. Cache hit serves from the edge — significantly reduced latency.
 
 **Purge strategies:**
 - **Time-based purge:** Content expires based on Cache-Control headers.
@@ -576,7 +576,7 @@ Cache-Control: private, max-age=0                     # do not cache
 ### Real-World Systems
 
 
-**Facebook's TAO â€” The Graph Cache at Scale.** Facebook's social graph (users, friends, pages, likes) does not fit traditional caching patterns. TAO is a geographically distributed, always-consistent graph cache layer that sits between application servers and MySQL.
+**Facebook's TAO — The Graph Cache at Scale.** Facebook's social graph (users, friends, pages, likes) does not fit traditional caching patterns. TAO is a geographically distributed, always-consistent graph cache layer that sits between application servers and MySQL.
 
 Key properties:
 - **Object association cache:** TAO caches graph associations (friend-of-friend, page-liked-by-user), not just key-value pairs.
@@ -619,7 +619,7 @@ async def get_user_profile(user_id):
     if cached is not None:
         return json.loads(cached)
 
-    # Cache miss â€” load from database
+    # Cache miss — load from database
     profile = await db.fetch_one(
         "SELECT id, name, avatar_url, bio FROM users WHERE id = $1",
         user_id
@@ -637,7 +637,7 @@ async def update_user_profile(user_id, updates):
         "UPDATE users SET name = $1, bio = $2 WHERE id = $3",
         updates['name'], updates['bio'], user_id
     )
-    # Invalidate cache â€” next read will fetch fresh data
+    # Invalidate cache — next read will fetch fresh data
     r.delete(f"user_profile:{user_id}")
 ```
 
@@ -678,7 +678,7 @@ async function getFeed(userId) {
     return JSON.parse(cached);
   }
 
-  // Cold miss â€” synchronous reload
+  // Cold miss — synchronous reload
   const feed = await db.queryFeed(userId);
   await client.setEx(cacheKey, TTL_SECONDS, JSON.stringify(feed));
   return feed;
@@ -938,7 +938,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### TypeScript: LRU Cache (O(1) Get/Put)
 
-This class implements a true O(1) LRU cache using a doubly linked list and a hash map â€” the production-grade approach used in Redis, Memcached, and database buffer pools.
+This class implements a true O(1) LRU cache using a doubly linked list and a hash map — the production-grade approach used in Redis, Memcached, and database buffer pools.
 
 ```typescript
 class LRUCache<K, V> {
@@ -1026,7 +1026,7 @@ const cache = new LRUCache<string, number>(3);
 cache.put('a', 1);
 cache.put('b', 2);
 cache.put('c', 3);
-console.log('Get a:', cache.get('a')); // 1 â€” moves 'a' to head
+console.log('Get a:', cache.get('a')); // 1 — moves 'a' to head
 cache.put('d', 4); // evicts 'b' (LRU)
 console.log('Get b (evicted):', cache.get('b')); // -1
 console.log('Cache size:', cache.size()); // 3
@@ -1034,7 +1034,7 @@ console.log('Cache size:', cache.size()); // 3
 
 ### TypeScript: Cache-Aside Pattern (Read/Write-Through, Write-Behind)
 
-This class implements the three major cache access patterns â€” cache-aside, read-through, and write-behind â€” with configurable TTL and batch flush.
+This class implements the three major cache access patterns — cache-aside, read-through, and write-behind — with configurable TTL and batch flush.
 
 ```typescript
 interface DataStore<K, V> {
@@ -1145,7 +1145,7 @@ class WriteBehindCache<K, V> {
 
 ### TypeScript: Redis Sentinel (Failover Simulation)
 
-This class simulates the Redis Sentinel failover process â€” master election, replica promotion, and quorum-based decision making.
+This class simulates the Redis Sentinel failover process — master election, replica promotion, and quorum-based decision making.
 
 ```typescript
 interface SentinelNode {
@@ -1335,19 +1335,19 @@ flowchart TD
 
 | Takeaway | Application |
 |----------|-------------|
-| Cache what you measure, not everything | Profile read patterns first â€” cache only data with high read-to-write ratio (>10:1) and temporal locality |
+| Cache what you measure, not everything | Profile read patterns first — cache only data with high read-to-write ratio (>10:1) and temporal locality |
 | Cache-aside is the safest default | Application manages both cache and DB; cache failure degrades gracefully to direct DB reads |
 | LRU works for most workloads but is vulnerable to scans | Use ARC or 2Q if your workload has periodic batch scans that would evict hot data |
-| Thundering herd requires both locking and early expiration | Use mutex for cold-start protection; use XFetch (ÃŸ=1.5) for smooth pre-expiration of hot keys |
+| Thundering herd requires both locking and early expiration | Use mutex for cold-start protection; use XFetch (ß=1.5) for smooth pre-expiration of hot keys |
 | Invalidate, don't update | Cache invalidation (delete) is race-condition safe; direct cache updates risk writing stale values |
 | TTL provides bounded staleness | Set TTL = acceptable staleness window, not "how long data is valid" |
 | Multi-tier caching reduces latency by 10-100x | L1 (in-process) for hot keys, L2 (Redis) for warm data, L3 (DB/CDN) for cold reads |
 
 ### Case Study
 
-**Twitter's Cache Architecture Evolution.** Twitter's caching infrastructure evolved through three distinct phases as the platform grew from 10M to 330M MAU. Phase 1 (2009): A single Redis instance cached user timelines with cache-aside pattern â€” each tweet read went to Redis, missed tweets were fetched from MySQL. This worked until a single celebrity tweet caused 50K QPS on a single cache key, melting down the Redis instance. Phase 2 (2011): Twitter deployed Twemproxy (Nutcracker), a proxy layer that distributed cache requests across 100+ Memcached nodes using consistent hashing with virtual nodes. This solved the sharding problem but introduced connection-exhaustion issues â€” each of 5,000 app servers opened connections to every Memcached node, totaling 500K connections.
+**Twitter's Cache Architecture Evolution.** Twitter's caching infrastructure evolved through three distinct phases as the platform grew from 10M to 330M MAU. Phase 1 (2009): A single Redis instance cached user timelines with cache-aside pattern — each tweet read went to Redis, missed tweets were fetched from MySQL. This worked until a single celebrity tweet caused 50K QPS on a single cache key, melting down the Redis instance. Phase 2 (2011): Twitter deployed Twemproxy (Nutcracker), a proxy layer that distributed cache requests across 100+ Memcached nodes using consistent hashing with virtual nodes. This solved the sharding problem but introduced connection-exhaustion issues — each of 5,000 app servers opened connections to every Memcached node, totaling 500K connections.
 
-**Phase 3 (2013-Present):** Twitter adopted a three-tier cache architecture. L1: Local in-process cache (Guava) on each app server for the hottest 1% of keys (5ms latency, 50MB per server). L2: Twemproxy-managed Redis Cluster with 256 nodes for warm data (5-10ms latency, 250GB total). L3: MySQL with replica reads for cache misses and cold data. The key innovation was probabilistic early expiration (XFetch with ÃŸ=1.0) combined with a distributed mutex per key â€” this eliminated the thundering herd problem entirely. When a key approaches TTL expiry (~80% age), each app server probabilistically decides to refresh; the mutex ensures only one server actually queries MySQL. This smoothed cache reloads from spiky (all servers at TTL boundary) to uniform across the TTL window.
+**Phase 3 (2013-Present):** Twitter adopted a three-tier cache architecture. L1: Local in-process cache (Guava) on each app server for the hottest 1% of keys (5ms latency, 50MB per server). L2: Twemproxy-managed Redis Cluster with 256 nodes for warm data (5-10ms latency, 250GB total). L3: MySQL with replica reads for cache misses and cold data. The key innovation was probabilistic early expiration (XFetch with ß=1.0) combined with a distributed mutex per key — this eliminated the thundering herd problem entirely. When a key approaches TTL expiry (~80% age), each app server probabilistically decides to refresh; the mutex ensures only one server actually queries MySQL. This smoothed cache reloads from spiky (all servers at TTL boundary) to uniform across the TTL window.
 
 **Business Impact.** The multi-tier cache reduced p99 read latency from 45ms to 8ms and cut MySQL read load by 94%. Twitter's cache infrastructure now handles 300B+ reads per day with a 98.7% overall hit rate. The Twemproxy connection aggregation reduced total cache connections from 500K to 8K, freeing OS resources and eliminating connection-timeout errors. This case demonstrates that caching at scale requires not just the right data structure (LRU with O(1) operations) but the right architecture (tiered, with XFetch for thundering herd prevention and consistent hashing for elastic scaling).
 
@@ -1378,7 +1378,7 @@ flowchart TD
 ## Exercises
 
 <details>
-<summary>Review Questions â€” Click to expand</summary>
+<summary>Review Questions — Click to expand</summary>
 
 ### Review Questions (4-5)
 
@@ -1392,7 +1392,7 @@ flowchart TD
    **Solution:** Choose Write-behind when write throughput is critical and some data loss is acceptable (logging, metrics, analytics). Risk: cache failure before flush causes permanent data loss. Write-behind also introduces a consistency window where DB lags behind cache.
 
 4. Describe the XFetch algorithm. Why does it prevent the thundering herd problem while still providing fresh data?
-   **Solution:** XFetch probabilistically refreshes cache entries before TTL expiry using a probability function based on entry age. With ÃŸ=1.0, the expected number of concurrent recomputations at TTL boundary â‰ˆ 1, eliminating the herd while ensuring fresh data is loaded smoothly over time.
+   **Solution:** XFetch probabilistically refreshes cache entries before TTL expiry using a probability function based on entry age. With ß=1.0, the expected number of concurrent recomputations at TTL boundary ≈ 1, eliminating the herd while ensuring fresh data is loaded smoothly over time.
 
 5. What is the difference between event-driven cache invalidation and TTL-based invalidation? When would you use each?
    **Solution:** TTL-based invalidation automatically evicts entries after a fixed time (bounded staleness, simple). Event-driven invalidation uses CDC or application events to immediately invalidate on data change (near-instant, but requires message broker). Use TTL for data with natural expiration (sessions); use event-driven for data where freshness is critical (prices, inventory).
@@ -1400,7 +1400,7 @@ flowchart TD
 </details>
 
 <details>
-<summary>Application Problems â€” Click to expand</summary>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems (3-4)
 
@@ -1414,12 +1414,12 @@ flowchart TD
    **Solution:** At 90%: avg = 0.9 * 5ms + 0.1 * 100ms = 4.5 + 10 = 14.5ms. At 70%: avg = 0.7 * 5ms + 0.3 * 100ms = 3.5 + 30 = 33.5ms. A 20% hit rate drop causes a 2.3x increase in average response time.
 
 4. You have a 10-node Redis Cluster. Each node has 8 GB memory. Keys are 1 KB average. Compute the maximum number of keys the cluster can hold. Assuming 20-byte key names, what percentage of memory is overhead?
-   **Solution:** Total memory = 10 Ã— 8 GB = 80 GB = 80 Ã— 10^9 bytes. Max keys = 80 Ã— 10^9 / 1024 â‰ˆ 78.1M keys. Overhead per key: Redis dict entry (~64 bytes) + key (20 bytes) + value pointer (~8 bytes) + SDS overhead (~16 bytes) â‰ˆ 108 bytes. Data = 1024 bytes, total per key â‰ˆ 1132 bytes. Overhead % = 108/1132 â‰ˆ 9.5%.
+   **Solution:** Total memory = 10 × 8 GB = 80 GB = 80 × 10^9 bytes. Max keys = 80 × 10^9 / 1024 ≈ 78.1M keys. Overhead per key: Redis dict entry (~64 bytes) + key (20 bytes) + value pointer (~8 bytes) + SDS overhead (~16 bytes) ≈ 108 bytes. Data = 1024 bytes, total per key ≈ 1132 bytes. Overhead % = 108/1132 ≈ 9.5%.
 
 </details>
 
 <details>
-<summary>Challenge Problem â€” Click to expand</summary>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem (1)
 
@@ -1427,10 +1427,10 @@ You are designing the caching infrastructure for a real-time news aggregation pl
 
 **Solution Outline:**
 1. **Three-tier cache:** CDN (Cloudflare) for static assets and top 50 viral articles (TTL=30s). Redis Cluster (distributed) for category pages (TTL=60s) and per-user timeline fragments (TTL=10s). Local in-process cache (Guava/Caffeine) for the hottest 0.1% of articles and user sessions.
-2. **Eviction policies:** CDN: LRU. Redis: ARC (resists scan attacks from breaking news â€” new articles don't evict hot viral data). Local: LRU with small capacity (10K entries).
-3. **Thundering herd:** For viral articles, use a two-tier approach: (a) Dedicated "hot cache" with longer TTL and pre-warming on trending detection; (b) XFetch (ÃŸ=1.0) for the general cache. On viral detection, proactively pre-compute and push to CDN edge.
+2. **Eviction policies:** CDN: LRU. Redis: ARC (resists scan attacks from breaking news — new articles don't evict hot viral data). Local: LRU with small capacity (10K entries).
+3. **Thundering herd:** For viral articles, use a two-tier approach: (a) Dedicated "hot cache" with longer TTL and pre-warming on trending detection; (b) XFetch (ß=1.0) for the general cache. On viral detection, proactively pre-compute and push to CDN edge.
 4. **Personalization caching:** Cache per-user timeline fragments by computed hash of follow-sources. Invalidate on new article from followed source. Use write-through to ensure consistency within 10s.
 5. **Cache warming:** On new DC deployment, replay the last 24 hours of cache writes from the existing DC at 10% of peak rate. Prioritize viral articles and top 1% of users. Use a dedicated warming service with rate limiting to avoid origin overload.
-6. **CDN cost:** Daily reads = 100M Ã— 50 (assume 50 items/user) = 5B reads. Static: 5B Ã— 0.8 Ã— 200KB = 800 TB/day. Dynamic: 5B Ã— 0.2 Ã— 50KB = 50 TB/day. Total = 850 TB/day Ã— $0.02 = $17,000/day. Optimizations: (a) Use image CDN with WebP/AVIF compression (reduces 30%); (b) Implement Brotli compression for article content (reduces 50%); (c) Tiered CDN with regional edge caching.
+6. **CDN cost:** Daily reads = 100M × 50 (assume 50 items/user) = 5B reads. Static: 5B × 0.8 × 200KB = 800 TB/day. Dynamic: 5B × 0.2 × 50KB = 50 TB/day. Total = 850 TB/day × $0.02 = $17,000/day. Optimizations: (a) Use image CDN with WebP/AVIF compression (reduces 30%); (b) Implement Brotli compression for article content (reduces 50%); (c) Tiered CDN with regional edge caching.
 
 </details>

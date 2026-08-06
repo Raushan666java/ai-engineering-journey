@@ -1,4 +1,4 @@
-﻿# Logical Reasoning and Input-Output
+# Logical Reasoning and Input-Output
 
 ## Learning Objectives
 
@@ -38,7 +38,7 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance in IBPS SO IT Officer Prelims
 
-Logical reasoning and input-output questions typically contribute 4â€“6 questions out of 25 in the IBPS SO Reasoning Ability section. These topics include:
+Logical reasoning and input-output questions typically contribute 4–6 questions out of 25 in the IBPS SO Reasoning Ability section. These topics include:
 
 1. Statement-Analytical Reasoning (including conclusions and assumptions)
 2. Cause-Effect Reasoning
@@ -59,42 +59,42 @@ A statement (or paragraph) is given, followed by one or more conclusions. The ca
 
 | Type | Meaning | Example |
 |------|---------|---------|
-| Definitely True | The conclusion must be true based on the statement | "All dogs are mammals. Fido is a dog." â†’ "Fido is a mammal" |
-| Probably True | The conclusion is likely but not guaranteed | "Most dogs are friendly. Fido is a dog." â†’ "Fido is probably friendly" |
-| Cannot Be Determined | The statement does not provide enough information | "Some dogs are black. Fido is a dog." â†’ "Fido is black" â€” cannot determine |
-| Definitely False | The conclusion contradicts the statement | "No dog is a cat. Fido is a dog." â†’ "Fido is a cat" â€” false |
-| Possibly True | The conclusion is not contradicted by the statement | "Some dogs are friendly. Fido is a dog." â†’ "Fido may be friendly" â€” possible |
+| Definitely True | The conclusion must be true based on the statement | "All dogs are mammals. Fido is a dog." → "Fido is a mammal" |
+| Probably True | The conclusion is likely but not guaranteed | "Most dogs are friendly. Fido is a dog." → "Fido is probably friendly" |
+| Cannot Be Determined | The statement does not provide enough information | "Some dogs are black. Fido is a dog." → "Fido is black" — cannot determine |
+| Definitely False | The conclusion contradicts the statement | "No dog is a cat. Fido is a dog." → "Fido is a cat" — false |
+| Possibly True | The conclusion is not contradicted by the statement | "Some dogs are friendly. Fido is a dog." → "Fido may be friendly" — possible |
 
 #### 2.3 Logical Fallacies to Avoid
 
 | Fallacy | Description | Example |
 |---------|-------------|---------|
-| Overgeneralization | Extending a specific case to all cases | "One student failed" â†’ "All students will fail" |
-| Affirming the Consequent | A â†’ B, B is true â†’ A must be true | "If it rains, ground is wet. Ground is wet. â†’ It rained" (could be wet for other reasons) |
-| Denying the Antecedent | A â†’ B, A is false â†’ B is false | "If it rains, ground is wet. It didn't rain. â†’ Ground is not wet" (could be wet from sprinklers) |
-| False Cause | Assuming correlation implies causation | "Ice cream sales increase when crime increases" â†’ "Ice cream causes crime" |
+| Overgeneralization | Extending a specific case to all cases | "One student failed" → "All students will fail" |
+| Affirming the Consequent | A → B, B is true → A must be true | "If it rains, ground is wet. Ground is wet. → It rained" (could be wet for other reasons) |
+| Denying the Antecedent | A → B, A is false → B is false | "If it rains, ground is wet. It didn't rain. → Ground is not wet" (could be wet from sprinklers) |
+| False Cause | Assuming correlation implies causation | "Ice cream sales increase when crime increases" → "Ice cream causes crime" |
 | Circular Reasoning | Using the conclusion as a premise | "This drug is effective because it works" |
 | Appeal to Authority | Claiming truth because an authority said it | "The expert said it, so it must be true" |
 
 #### 2.4 Rules for Statement-Conclusion Questions
 
-1. **Read the statement carefully â€” every word matters**
+1. **Read the statement carefully — every word matters**
 2. **Identify the core assertion** and any qualifying words (all, some, most, many, few, usually, always, never, etc.)
-3. **Check each conclusion independently** â€” do not let one conclusion influence your judgment of another
-4. **A conclusion must be directly supported** â€” implied or assumed facts that are not stated do not constitute valid conclusions
-5. **The conclusion must stay within the scope of the statement** â€” it cannot introduce new information or extend beyond what is stated
-6. **Remember the difference between "All" and "Some"** â€” "All A are B" is much stronger than "Some A are B"
+3. **Check each conclusion independently** — do not let one conclusion influence your judgment of another
+4. **A conclusion must be directly supported** — implied or assumed facts that are not stated do not constitute valid conclusions
+5. **The conclusion must stay within the scope of the statement** — it cannot introduce new information or extend beyond what is stated
+6. **Remember the difference between "All" and "Some"** — "All A are B" is much stronger than "Some A are B"
 
 **Quick Decision Table:**
 
 | Statement Type | Valid Conclusion Type | Example | Valid? |
 |----------------|---------------------|---------|--------|
-| All A are B | Some A are B | All cats are animals â†’ Some cats are animals | âœ“ |
-| All A are B | No A is not B | All cats are animals â†’ No cat is non-animal | âœ“ |
-| Some A are B | Some B are A | Some cats are black â†’ Some black things are cats | âœ“ |
-| No A is B | Some A are not B | No cat is a dog â†’ Some cats are not dogs | âœ“ |
-| All A are B | All B are A | All cats are animals â†’ All animals are cats | âœ— |
-| Some A are B | All A are B | Some cats are black â†’ All cats are black | âœ— |
+| All A are B | Some A are B | All cats are animals → Some cats are animals | ✓ |
+| All A are B | No A is not B | All cats are animals → No cat is non-animal | ✓ |
+| Some A are B | Some B are A | Some cats are black → Some black things are cats | ✓ |
+| No A is B | Some A are not B | No cat is a dog → Some cats are not dogs | ✓ |
+| All A are B | All B are A | All cats are animals → All animals are cats | ✗ |
+| Some A are B | All A are B | Some cats are black → All cats are black | ✗ |
 
 #### 2.5 Common Statement Types in IBPS SO
 
@@ -127,10 +127,10 @@ An assumption is something that is taken for granted or accepted as true without
 Statement: "The government should invest more in education."
 Assumption: "Education is currently underfunded."
 
-Negation test: "Education is NOT currently underfunded." â€” If education is already fully funded, the suggestion to invest more loses its basis. So this assumption IS implicit.
+Negation test: "Education is NOT currently underfunded." — If education is already fully funded, the suggestion to invest more loses its basis. So this assumption IS implicit.
 
 **Assumption:** "The government has the money to invest."
-Negation test: "The government does NOT have the money to invest." â€” Even if the government lacks money, the statement could still be valid (it says "should," not "can"). So this assumption is NOT necessarily implicit.
+Negation test: "The government does NOT have the money to invest." — Even if the government lacks money, the statement could still be valid (it says "should," not "can"). So this assumption is NOT necessarily implicit.
 
 #### 3.3 Types of Assumptions
 
@@ -169,33 +169,33 @@ A cause-effect question presents a pair of events (I and II) and asks about the 
 
 1. **Temporal Order:** The cause always precedes the effect in time
 2. **Necessary Condition:** The cause must be necessary for the effect
-3. **Logical Connection:** There must be a logical link â€” not just temporal coincidence
+3. **Logical Connection:** There must be a logical link — not just temporal coincidence
 4. **Plausibility:** The cause-effect relationship must be reasonable
 5. **No Third Factor:** Rule out a common cause before assuming direct causation
 
 **Strong Cause-Effect Indicators:**
-- "Because" â†’ explicit cause
-- "Therefore" â†’ explicit effect
-- "Resulted in" â†’ effect stated
-- "Due to" â†’ cause stated
+- "Because" → explicit cause
+- "Therefore" → explicit effect
+- "Resulted in" → effect stated
+- "Due to" → cause stated
 
 **Weak Cause-Effect Indicators:**
-- "And" â†’ may be just sequence, not causation
-- "Then" â†’ may be just temporal, not causal
-- "Meanwhile" â†’ simultaneous, not necessarily causal
+- "And" → may be just sequence, not causation
+- "Then" → may be just temporal, not causal
+- "Meanwhile" → simultaneous, not necessarily causal
 
 #### 4.4 Common Patterns in IBPS SO
 
 **Pattern 1: Both events seem related but one is clearly the cause**
-- I: Heavy rain forecast â†’ II: People carried umbrellas
-- I: Price of petrol increased â†’ II: Number of car users decreased
+- I: Heavy rain forecast → II: People carried umbrellas
+- I: Price of petrol increased → II: Number of car users decreased
 
 **Pattern 2: Both events have a common cause**
-- I: More people using public transport â†’ II: Traffic congestion reduced
+- I: More people using public transport → II: Traffic congestion reduced
 - Common cause: Increased fuel prices
 
 **Pattern 3: Events are unrelated despite temporal proximity**
-- I: A new mall opened â†’ II: School holiday started
+- I: A new mall opened → II: School holiday started
 - No logical connection
 
 ### 5. Statement-Arguments
@@ -279,7 +279,7 @@ Step 3: 12 23 34 45 78 56 (third smallest moved to left)
 Step 4: 12 23 34 45 56 78 (fourth smallest moved to left)
 
 **Pattern 2: Word Arrangement (Alphabetical/Reverse Alphabetical)**
-Words are rearranged in alphabetical order (Aâ†’Z) or reverse alphabetical order (Zâ†’A).
+Words are rearranged in alphabetical order (A→Z) or reverse alphabetical order (Z→A).
 
 **Pattern 3: Number Operation**
 Numbers are transformed using mathematical operations (add, subtract, multiply, divide digits or values).
@@ -290,7 +290,7 @@ Step 1: 7 13 17 5 (sum of digits: 3+4=7, 6+7=13, 8+9=17, 2+3=5)
 Step 2: 5 7 13 17 (ascending order)
 
 **Pattern 4: Word-Number Mixed**
-Both words and numbers are rearranged according to rules â€” words alphabetically, numbers by value.
+Both words and numbers are rearranged according to rules — words alphabetically, numbers by value.
 
 **Pattern 5: Position-Based Shifting**
 Elements are shifted to specific positions (leftmost, rightmost, between) based on a rule.
@@ -341,22 +341,22 @@ flowchart TD
 #### 6.4 Common Questions Based on Input-Output
 
 **Question Type 1:** "What is the output after Step N?"
-â†’ Apply the pattern N times to the input.
+→ Apply the pattern N times to the input.
 
 **Question Type 2:** "What is Step N in the rearrangement?"
-â†’ Generate the step by applying the pattern N times.
+→ Generate the step by applying the pattern N times.
 
 **Question Type 3:** "How many steps are required to complete the arrangement?"
-â†’ Count the number of elements to be rearranged.
+→ Count the number of elements to be rearranged.
 
 **Question Type 4:** "What is the input given a specific step (backward)?"
-â†’ Reverse the pattern to work backward from the given step.
+→ Reverse the pattern to work backward from the given step.
 
 **Question Type 5:** "Which step has a particular arrangement?"
-â†’ Apply steps until you reach the given arrangement.
+→ Apply steps until you reach the given arrangement.
 
 **Question Type 6:** "What is the Nth element from the left/right in Step K?"
-â†’ Generate Step K and identify the element at the requested position.
+→ Generate Step K and identify the element at the requested position.
 
 #### 6.5 Working Backward in Input-Output
 
@@ -376,7 +376,7 @@ If we had Step 2 only and the pattern is "smallest number moves to leftmost rema
 - Numbers placed so far: 12, 23
 - Numbers remaining: 45 78 56 34
 - Step 3 (forward): 12 23 34 45 78 56 (34 moves to position 3)
-- Step 1 (reverse of Step 2): 23 was moved in Step 2 â†’ Step 1 has 23 at some other position
+- Step 1 (reverse of Step 2): 23 was moved in Step 2 → Step 1 has 23 at some other position
 - Input: original order before any rearrangement
 
 Working backward requires knowing the full pattern and the specific step structure.
@@ -384,7 +384,7 @@ Working backward requires knowing the full pattern and the specific step structu
 #### 6.6 Common Patterns in IBPS SO Input-Output Questions
 
 **Most Common Pattern (Single Shift):**
-"Arrange numbers in ascending order â€” one number per step, moved to the left."
+"Arrange numbers in ascending order — one number per step, moved to the left."
 
 **Second Most Common Pattern (Number + Word):**
 "Arrange words in alphabetical order AND numbers in descending order simultaneously."
@@ -414,7 +414,7 @@ Conclusion I: "Most IT professionals prefer remote work."
 - The statement says 75% of 1000 IT professionals surveyed prefer remote work at least 3 days/week.
 - "Most" generally means more than 50%.
 - 75% qualifies as "most."
-- However, the survey is of only 1000 IT professionals â€” it may not represent all IT professionals.
+- However, the survey is of only 1000 IT professionals — it may not represent all IT professionals.
 - Without evidence that the sample is representative, we cannot generalize to ALL IT professionals.
 - Conclusion I does NOT definitively follow.
 
@@ -442,22 +442,22 @@ Assumption I: "AI ethics is relevant to computer science education."
 - The statement proposes a compulsory AI ethics course for CS students.
 - This suggestion only makes sense if AI ethics is relevant to CS education.
 - If it were irrelevant, the proposal to make it compulsory would be baseless.
-- Negation test: "AI ethics is NOT relevant to CS education." â†’ Then the proposal has no justification.
+- Negation test: "AI ethics is NOT relevant to CS education." → Then the proposal has no justification.
 - Assumption I IS implicit.
 
 Assumption II: "Students currently do not study AI ethics."
 - The proposal says "should introduce" a compulsory course.
 - "Introduce" implies the course is not currently offered.
 - If students already study AI ethics, there would be no need to "introduce" it.
-- However, "introduce" could mean "start requiring" â€” students might already have access to it as an elective but don't take it.
-- The key word is "compulsory" â€” maybe the course exists as an elective and the change is just making it compulsory.
-- Negation test: "Students currently DO study AI ethics (as a compulsory course)." â†’ Then why introduce it? The statement becomes redundant. So the assumption is partially implicit (that it's not already compulsory).
+- However, "introduce" could mean "start requiring" — students might already have access to it as an elective but don't take it.
+- The key word is "compulsory" — maybe the course exists as an elective and the change is just making it compulsory.
+- Negation test: "Students currently DO study AI ethics (as a compulsory course)." → Then why introduce it? The statement becomes redundant. So the assumption is partially implicit (that it's not already compulsory).
 
 While both could be argued, Assumption II is more likely NOT implicit because students might study it as an elective, and the change is making it compulsory. The phrase "should introduce a compulsory course" can mean making an existing non-compulsory course compulsory.
 
 **Answer:** Only assumption I is implicit.
 
-Wait, let me reconsider. "Introduce" means bring in for the first time. If the course already exists (even as an elective), it is not being "introduced" â€” it already exists. "Introduce" clearly implies the course does not currently exist. So Assumption II IS implicit.
+Wait, let me reconsider. "Introduce" means bring in for the first time. If the course already exists (even as an elective), it is not being "introduced" — it already exists. "Introduce" clearly implies the course does not currently exist. So Assumption II IS implicit.
 
 **Corrected Answer:** Both assumptions I and II are implicit.
 
@@ -538,7 +538,7 @@ While a common cause (like an industrial accident) could cause both, the most di
 
 ---
 
-### Example 6: Input-Output â€” Number Arrangement
+### Example 6: Input-Output — Number Arrangement
 
 **Question:**
 An input-output machine rearranges numbers step by step. Study the steps and answer the question.
@@ -560,7 +560,7 @@ Step 4 is given above: 12 23 34 45 56 89 78 67
 
 The input has 8 numbers. Each step places one number in its correct position. Since 7 numbers need to be placed (the 8th automatically falls into place), 7 steps are needed.
 
-Wait, let me count: Input â†’ Step 1 â†’ Step 2 â†’ Step 3 â†’ Step 4 â†’ Step 5 â†’ Step 6. That's 6 steps to get from input to final sorted order. But do we need 7 steps? Let me check:
+Wait, let me count: Input → Step 1 → Step 2 → Step 3 → Step 4 → Step 5 → Step 6. That's 6 steps to get from input to final sorted order. But do we need 7 steps? Let me check:
 
 Actually with 8 numbers, if in each step we bring one smallest remaining number to the front, we need at most 7 steps (since after placing 7 numbers, the largest remains at the end). But in this example, Step 6 is the final sorted arrangement, so 6 steps were needed.
 
@@ -574,7 +574,7 @@ The pattern: In each step, the smallest number among the remaining (not-yet-sort
 - Step 6: 67 (sixth smallest) moved to position 6
 - Step 7 would move 78 to position 7, leaving 89 at position 8
 
-But Step 6 shows 12 23 34 45 56 67 89 78 â€” this is NOT fully sorted. The 78 and 89 are still swapped.
+But Step 6 shows 12 23 34 45 56 67 89 78 — this is NOT fully sorted. The 78 and 89 are still swapped.
 
 Let me re-examine:
 Step 6: 12 23 34 45 56 67 89 78
@@ -602,12 +602,12 @@ Let me think about this more carefully. The machine in this example appears to w
 - In Step N, the Nth smallest number is moved to position N.
 
 So:
-- Step 1: Smallest (12) â†’ position 1
-- Step 2: Second smallest (23) â†’ position 2
-- Step N: Nth smallest â†’ position N
+- Step 1: Smallest (12) → position 1
+- Step 2: Second smallest (23) → position 2
+- Step N: Nth smallest → position N
 
 Given Step 2: 12 23 56 89 45 78 34 67
-To get Step 1, we reverse Step 2 â€” take 23 from position 2 and put it back where it was before Step 2.
+To get Step 1, we reverse Step 2 — take 23 from position 2 and put it back where it was before Step 2.
 To get Input, we take 12 from position 1 and put it back where it was before Step 1.
 
 But we don't know where 23 and 12 originally were! We only have Step 2, not the pattern of where they moved FROM.
@@ -618,7 +618,7 @@ Let me provide a cleaner example that's more typical for IBPS SO.
 
 ---
 
-### Example 7: Input-Output â€” Word Arrangement
+### Example 7: Input-Output — Word Arrangement
 
 **Question:**
 A machine rearranges words in a specific pattern. Study the following steps:
@@ -652,7 +652,7 @@ This is Step 4 (and also the final arrangement after Step 5, since fig and grape
 
 ---
 
-### Example 8: Input-Output â€” Number Operation
+### Example 8: Input-Output — Number Operation
 
 **Question:**
 A machine transforms numbers by applying a rule at each step.
@@ -666,9 +666,9 @@ Step 5: 1 0 0 0 0 0
 Step 6: 0 0 0 0 0 0
 
 **Pattern Analysis:**
-Step 1: Sum of digits? 4+7=11, 8+3=11, 5+6=11, 2+9=11, 6+4=10, 9+1=10 â†’ Yes, sum of digits of each number.
-Step 2: Sum of digits of Step 1 numbers? 1+1=2, 1+1=2, 1+1=2, 1+1=2, 1+0=1, 1+0=1 â†’ Yes.
-Step 3: Sum of digits of Step 2? 2, 2, 2, 2, 1 â†’ but Step 3 shows 2 2 2 2 2 0. Wait, 1 â†’ sum of digits = 1, not 0.
+Step 1: Sum of digits? 4+7=11, 8+3=11, 5+6=11, 2+9=11, 6+4=10, 9+1=10 → Yes, sum of digits of each number.
+Step 2: Sum of digits of Step 1 numbers? 1+1=2, 1+1=2, 1+1=2, 1+1=2, 1+0=1, 1+0=1 → Yes.
+Step 3: Sum of digits of Step 2? 2, 2, 2, 2, 1 → but Step 3 shows 2 2 2 2 2 0. Wait, 1 → sum of digits = 1, not 0.
 
 Let me recheck: Step 2: 2 2 2 2 1 1. Sum of digits of each: 2, 2, 2, 2, 1, 1. Step 3 should be: 2 2 2 2 1 1. But Step 3 shows 2 2 2 2 2 0. Different!
 
@@ -678,7 +678,7 @@ Input: 47 83 56 29 64 91
 Step 1: 11 11 11 11 10 10 (sum of digits)
 Step 2: 2 2 2 2 1 1 (sum of digits of Step 1 values)
 
-Wait, 10 â†’ 1+0 = 1. So Step 2 of 10 should be 1. But the Step 3 shows for the last two positions: 2 and 0.
+Wait, 10 → 1+0 = 1. So Step 2 of 10 should be 1. But the Step 3 shows for the last two positions: 2 and 0.
 
 Hmm, maybe Step 3 is: sum of digits of Step 2, but 1+1 = 2 for the last two positions in Step 2? But Step 2 last two are 1 and 1, so Step 3 should be 1 and 1.
 
@@ -689,14 +689,14 @@ Maybe the rule involves adjacent numbers or a different operation.
 Actually, Step 3 shows: 2 2 2 2 2 0. The last value changed from 1 (Step 2) to 0 (Step 3).
 
 If we compute sum of digits of Step 2 values:
-2 â†’ 2
-1 â†’ 1
+2 → 2
+1 → 1
 
 Then Step 3 should be 2 2 2 2 1 1, not 2 2 2 2 2 0.
 
 Maybe the rule in Step 3 is different: subtract 1 from each? 
 Step 2: 2 2 2 2 1 1
-Step 3: 2 2 2 2 2 0 â€” Not a simple subtract.
+Step 3: 2 2 2 2 2 0 — Not a simple subtract.
 
 Maybe the operation changes each step, or involves pairs. Without a clear pattern, an IBPS SO question would provide a consistent, observable pattern across all steps. This example illustrates the importance of finding the actual pattern.
 
@@ -704,7 +704,7 @@ For IBPS SO, the most predictable pattern is number arrangement (sorting) or dig
 
 ---
 
-### Example 9: Input-Output â€” Clean Number Sorting
+### Example 9: Input-Output — Clean Number Sorting
 
 **Question:**
 A machine rearranges numbers in each step. Study the steps:
@@ -747,26 +747,26 @@ Conclusion I: "AI research investment leads to higher profits."
 - The statement says companies with heavy AI investment saw "even higher growth."
 - This implies a correlation, but does it prove causation?
 - The statement presents the data but does not rule out other factors.
-- However, the conclusion uses the word "leads to" which implies causation â€” this is stronger than what the statement asserts.
+- However, the conclusion uses the word "leads to" which implies causation — this is stronger than what the statement asserts.
 - Strictly speaking, the conclusion goes beyond the statement. However, in IBPS SO exams, when a clear correlation is stated, a causation conclusion is often considered to follow.
 - Let's be conservative: The statement shows correlation, not necessarily causation. Conclusion I does NOT definitely follow.
 
 Conclusion II: "All companies investing in AI research have higher profits than those that don't."
-- The statement says "companies that invested heavily... have seen even higher growth" â€” it describes a subset.
+- The statement says "companies that invested heavily... have seen even higher growth" — it describes a subset.
 - It does NOT say "all" such companies have higher profits.
-- "Most IT companies reported increased profits" â€” is about all IT companies.
+- "Most IT companies reported increased profits" — is about all IT companies.
 - The comparison is between AI-investing companies and the "most" IT sector.
 - But "even higher growth" implies AI companies outperform the general trend.
-- However, "all" is too strong â€” the statement talks about the general trend, not every single company.
+- However, "all" is too strong — the statement talks about the general trend, not every single company.
 - Conclusion II does NOT follow.
 
 **Answer:** Neither conclusion I nor II definitively follows.
 
 ---
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
-### Type 1: Statement-Conclusion (Q1â€“Q5)
+### Type 1: Statement-Conclusion (Q1–Q5)
 
 **Q1. Statement:** "All dogs are mammals. Some mammals are not carnivores."
 **Conclusions:**
@@ -778,7 +778,7 @@ Which conclusion(s) follow?
 
 <details>
 <summary>Show Answer</summary>
-**(d) Neither I nor II.** From "all dogs are mammals" and "some mammals are not carnivores," we cannot conclude anything about dogs and carnivores â€” the non-carnivore mammals might be entirely different from dogs. Conclusion II is the converse of the first statement, which does not follow.
+**(d) Neither I nor II.** From "all dogs are mammals" and "some mammals are not carnivores," we cannot conclude anything about dogs and carnivores — the non-carnivore mammals might be entirely different from dogs. Conclusion II is the converse of the first statement, which does not follow.
 </details>
 
 **Q2. Statement:** "No engineer is a doctor. All doctors are graduates."
@@ -791,7 +791,7 @@ Which conclusion(s) follow?
 
 <details>
 <summary>Show Answer</summary>
-**(a) Only I.** All doctors are graduates, and no engineer is a doctor, so there exists at least some graduates (namely doctors) who are not engineers. Conclusion II does not follow â€” an engineer could still be a graduate (just not a doctor).
+**(a) Only I.** All doctors are graduates, and no engineer is a doctor, so there exists at least some graduates (namely doctors) who are not engineers. Conclusion II does not follow — an engineer could still be a graduate (just not a doctor).
 </details>
 
 **Q3. Statement:** "If it rains, the ground will be wet. The ground is wet."
@@ -804,7 +804,7 @@ Which conclusion(s) follow?
 
 <details>
 <summary>Show Answer</summary>
-**(b) Only II.** The statement says "if rain â†’ wet ground." This does NOT mean "wet ground â†’ rain" (affirming the consequent fallacy). The ground could be wet due to a sprinkler, a spill, etc. Conclusion II correctly identifies this.
+**(b) Only II.** The statement says "if rain → wet ground." This does NOT mean "wet ground → rain" (affirming the consequent fallacy). The ground could be wet due to a sprinkler, a spill, etc. Conclusion II correctly identifies this.
 </details>
 
 **Q4. Statement:** "Some politicians are honest. No honest person is corrupt."
@@ -817,7 +817,7 @@ Which conclusion(s) follow?
 
 <details>
 <summary>Show Answer</summary>
-**(a) Only I.** Some politicians are honest, and no honest person is corrupt, so those honest politicians are not corrupt. Hence, some politicians are not corrupt. Conclusion II is too broad â€” there could be dishonest politicians who are corrupt.
+**(a) Only I.** Some politicians are honest, and no honest person is corrupt, so those honest politicians are not corrupt. Hence, some politicians are not corrupt. Conclusion II is too broad — there could be dishonest politicians who are corrupt.
 </details>
 
 **Q5. Statement:** "All squares are rectangles. All rectangles are polygons."
@@ -830,12 +830,12 @@ Which conclusion(s) follow?
 
 <details>
 <summary>Show Answer</summary>
-**(c) Both I and II.** From "all squares â†’ rectangles" and "all rectangles â†’ polygons," by transitivity, all squares are polygons (I follows). Since all squares are polygons, some polygons are squares by the rule of conversion (II follows).
+**(c) Both I and II.** From "all squares → rectangles" and "all rectangles → polygons," by transitivity, all squares are polygons (I follows). Since all squares are polygons, some polygons are squares by the rule of conversion (II follows).
 </details>
 
 ---
 
-### Type 2: Statement-Assumption (Q6â€“Q10)
+### Type 2: Statement-Assumption (Q6–Q10)
 
 **Q6. Statement:** "The government should build more public libraries to improve literacy."
 **Assumption:** "Public libraries contribute to literacy improvement."
@@ -867,7 +867,7 @@ Is the assumption implicit?
 
 <details>
 <summary>Show Answer</summary>
-**(b) No.** The statement recommends learning a language to "improve" prospects, which implies prospects could be better â€” not that they are currently poor. The assumption is too extreme.
+**(b) No.** The statement recommends learning a language to "improve" prospects, which implies prospects could be better — not that they are currently poor. The assumption is too extreme.
 </details>
 
 **Q9. Statement:** "The company should switch to renewable energy to reduce operating costs."
@@ -894,9 +894,9 @@ Is the assumption implicit?
 
 ---
 
-### Type 3: Input-Output Machine (Q11â€“Q15)
+### Type 3: Input-Output Machine (Q11–Q15)
 
-**Q11â€“Q15 are based on the following input-output machine:**
+**Q11–Q15 are based on the following input-output machine:**
 
 A machine rearranges numbers step by step following a consistent pattern. Study the steps:
 
@@ -949,7 +949,7 @@ flowchart LR
 
 <details>
 <summary>Show Answer</summary>
-**(a) 12 34 57 91 68 45 83 26.** Step 1 moves 12 to position 1: 12 91 34 57 68 45 83 26. Step 2 moves the second smallest (26) to position 2: 12 26 91 34 57 68 45 83. Wait â€” that gives 12 26 91 34 57 68 45 83, which is option (b). Let me recheck: after Step 1 (12 moved): 12 91 34 57 68 45 83 26. Step 2: the next smallest among positions 2-8 is 26. 26 is at position 8, so move 26 to position 2: 12 26 91 34 57 68 45 83. Answer is (b).
+**(a) 12 34 57 91 68 45 83 26.** Step 1 moves 12 to position 1: 12 91 34 57 68 45 83 26. Step 2 moves the second smallest (26) to position 2: 12 26 91 34 57 68 45 83. Wait — that gives 12 26 91 34 57 68 45 83, which is option (b). Let me recheck: after Step 1 (12 moved): 12 91 34 57 68 45 83 26. Step 2: the next smallest among positions 2-8 is 26. 26 is at position 8, so move 26 to position 2: 12 26 91 34 57 68 45 83. Answer is (b).
 </details>
 
 **Q14.** In the original input-output, if Step 3 were: 17 29 38 42 85 63 54 71, what would Step 4 be?
@@ -970,7 +970,7 @@ flowchart LR
 
 ---
 
-### Type 4: Cause-Effect (Q16â€“Q17)
+### Type 4: Cause-Effect (Q16–Q17)
 
 **Q16.** **Event I:** The number of road accidents in the city increased significantly.
 **Event II:** The city government introduced stricter traffic penalties.
@@ -991,12 +991,12 @@ What is the relationship?
 
 <details>
 <summary>Show Answer</summary>
-**(b) II is the cause, I is the effect.** The CEO's resignation (II) would cause investors to lose confidence, driving the stock price down (I). However, the stated reason ("personal reasons") may hide deeper issues; if the resignation was due to poor performance, then a common cause (underlying problems) would link both. Given the information, the direct cause-effect (II â†’ I) is the most logical.
+**(b) II is the cause, I is the effect.** The CEO's resignation (II) would cause investors to lose confidence, driving the stock price down (I). However, the stated reason ("personal reasons") may hide deeper issues; if the resignation was due to poor performance, then a common cause (underlying problems) would link both. Given the information, the direct cause-effect (II → I) is the most logical.
 </details>
 
 ---
 
-### Type 5: Statement-Arguments (Q18â€“Q20)
+### Type 5: Statement-Arguments (Q18–Q20)
 
 **Q18. Statement:** "Should the government ban single-use plastics?"
 **Argument I:** "Yes, because they cause significant environmental damage and take hundreds of years to decompose."
@@ -1019,7 +1019,7 @@ Which argument(s) is/are strong?
 
 <details>
 <summary>Show Answer</summary>
-**(c) Both I and II.** Argument I points to objectivity as a valid advantage of exams. Argument II correctly identifies the limitation â€” exams cannot assess the full range of student qualities. Both present logical, substantive points on a legitimate policy debate.
+**(c) Both I and II.** Argument I points to objectivity as a valid advantage of exams. Argument II correctly identifies the limitation — exams cannot assess the full range of student qualities. Both present logical, substantive points on a legitimate policy debate.
 </details>
 
 **Q20. Statement:** "Should the government invest more in space exploration?"
@@ -1132,9 +1132,9 @@ function determineCausalRelation(
 
 ---
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
-### Statement-Conclusion (Q1â€“Q8)
+### Statement-Conclusion (Q1–Q8)
 
 **Q1.** Statement: "All tigers are cats. Some cats are not domesticated."
 Conclusions: (I) Some tigers are not domesticated. (II) All cats are tigers.
@@ -1160,7 +1160,7 @@ Conclusions: (I) Some planets orbit stars with multiple planets. (II) All orbiti
 **Q8.** Statement: "If you practice daily, you will improve. John improved."
 Conclusions: (I) John practiced daily. (II) John may have practiced daily.
 
-### Statement-Assumption (Q9â€“Q12)
+### Statement-Assumption (Q9–Q12)
 
 **Q9.** Statement: "Schools should introduce coding from grade 5."
 Assumption: "Coding is a valuable skill for students to learn."
@@ -1174,7 +1174,7 @@ Assumption: "All employees prefer flexible working hours."
 **Q12.** Statement: "The city needs more public parks."
 Assumption: "Public parks improve the quality of life for residents."
 
-### Cause-Effect (Q13â€“Q16)
+### Cause-Effect (Q13–Q16)
 
 **Q13.** Event I: Heavy rainfall caused flooding in the city. Event II: The government deployed rescue teams.
 
@@ -1184,7 +1184,7 @@ Assumption: "Public parks improve the quality of life for residents."
 
 **Q16.** Event I: The team lost three consecutive matches. Event II: The coach was replaced.
 
-### Statement-Arguments (Q17â€“Q20)
+### Statement-Arguments (Q17–Q20)
 
 **Q17.** Statement: "Should smoking be banned in all public places?"
 Argument I: "Yes, because secondhand smoke harms non-smokers."
@@ -1202,9 +1202,9 @@ Argument II: "No, because they lack the maturity to make informed decisions."
 Argument I: "Yes, because it prevents data leaks and security breaches."
 Argument II: "No, because it violates employee privacy rights."
 
-### Input-Output (Q21â€“Q30)
+### Input-Output (Q21–Q30)
 
-**Input for Q21â€“Q25:**
+**Input for Q21–Q25:**
 Input: 73 48 91 26 55 64 19 82
 Step 1: 19 73 48 91 26 55 64 82
 Step 2: 19 26 73 48 91 55 64 82
@@ -1223,7 +1223,7 @@ Step 6: 19 26 48 55 64 73 82 91
 
 **Q25.** Which step would show 19 26 48 73 91 55 64 82?
 
-**Input for Q26â€“Q27:**
+**Input for Q26–Q27:**
 A word arrangement machine rearranges words step by step.
 Input: mango apple banana grape orange cherry
 Step 1: apple mango banana grape orange cherry
@@ -1249,21 +1249,21 @@ Step 5: apple banana cherry grape mango orange (no change)
 <details>
 <summary>Show Answers</summary>
 
-**Q1:** (I) does not follow â€” the non-domesticated cats may not include tigers. (II) does not follow â€” converse not valid.
+**Q1:** (I) does not follow — the non-domesticated cats may not include tigers. (II) does not follow — converse not valid.
 
-**Q2:** (I) follows â€” dishonest politicians exist. (II) does not follow â€” honest people can still be politicians.
+**Q2:** (I) follows — dishonest politicians exist. (II) does not follow — honest people can still be politicians.
 
 **Q3:** Neither follows. Divisibility by 5 does not imply divisibility by 10 (affirming consequent fallacy).
 
-**Q4:** (I) does not follow â€” no overlap guaranteed between engineers and creative individuals. (II) does not follow.
+**Q4:** (I) does not follow — no overlap guaranteed between engineers and creative individuals. (II) does not follow.
 
-**Q5:** (I) follows â€” some fruits are sweet, and all sweet things are tasty. (II) does not follow.
+**Q5:** (I) follows — some fruits are sweet, and all sweet things are tasty. (II) does not follow.
 
-**Q6:** (I) does not follow â€” clouds are not solids, but heaviness of solids tells us nothing about clouds. (II) does not follow.
+**Q6:** (I) does not follow — clouds are not solids, but heaviness of solids tells us nothing about clouds. (II) does not follow.
 
-**Q7:** (I) does not follow â€” not guaranteed. (II) does not follow.
+**Q7:** (I) does not follow — not guaranteed. (II) does not follow.
 
-**Q8:** (I) does not follow (affirming consequent). (II) follows â€” improvement could be from daily practice or other reasons.
+**Q8:** (I) does not follow (affirming consequent). (II) follows — improvement could be from daily practice or other reasons.
 
 **Q9:** Implicit. The recommendation assumes coding is valuable.
 
@@ -1293,7 +1293,7 @@ Step 5: apple banana cherry grape mango orange (no change)
 
 **Q22:** 6 steps (the 7th number's position is determined automatically).
 
-**Q23:** Position 4 (Step 3: 19 26 48 73 91 55 64 82, with 55 at position 6 â€” wait: let me re-check. Step 3 = 19 26 48 73 91 55 64 82. 55 is at position 6.)
+**Q23:** Position 4 (Step 3: 19 26 48 73 91 55 64 82, with 55 at position 6 — wait: let me re-check. Step 3 = 19 26 48 73 91 55 64 82. 55 is at position 6.)
 
 **Q24:** With input 82 19 64 55 26 91 48 73, Step 1 = 19 82 64 55 26 91 48 73.
 
@@ -1303,7 +1303,7 @@ Step 5: apple banana cherry grape mango orange (no change)
 
 **Q27:** 4 steps (5 words, place 4 correctly).
 
-**Q28:** Step 3: 2, 8, 5, 3, 5 (same as Step 2 â€” the digits of single-digit numbers are themselves).
+**Q28:** Step 3: 2, 8, 5, 3, 5 (same as Step 2 — the digits of single-digit numbers are themselves).
 
 **Q29:** Step 1: 28 73 41 54 17 96 (96 moved to position 6). Step 2: 28 73 41 17 54 96 (54 moved to position 5).
 
@@ -1315,7 +1315,7 @@ Step 5: apple banana cherry grape mango orange (no change)
 ## Summary
 
 - Statement-conclusion questions require logical deduction from the given statement without adding external knowledge
-- Conclusions must be directly supported by the statement â€” avoid overgeneralization and affirming the consequent
+- Conclusions must be directly supported by the statement — avoid overgeneralization and affirming the consequent
 - Statement-assumption questions require identifying what is taken for granted in the statement
 - The negation test is the most reliable method: if negating the assumption makes the statement invalid, the assumption is implicit
 - Cause-effect questions require establishing temporal order and logical connection between two events
@@ -1328,14 +1328,14 @@ Step 5: apple banana cherry grape mango orange (no change)
 
 ## Practical Takeaways
 
-- For statement-conclusion: read the statement first, then evaluate each conclusion independently â€” do not let one conclusion bias another
-- For statement-assumption: use the negation test â€” if the assumption is false and the statement becomes meaningless, it was implicit
-- For statement-argument: focus on relevance, logic, and substance â€” ignore emotional appeals and trivial points
-- For cause-effect: look for temporal order and logical connection â€” both must be present
+- For statement-conclusion: read the statement first, then evaluate each conclusion independently — do not let one conclusion bias another
+- For statement-assumption: use the negation test — if the assumption is false and the statement becomes meaningless, it was implicit
+- For statement-argument: focus on relevance, logic, and substance — ignore emotional appeals and trivial points
+- For cause-effect: look for temporal order and logical connection — both must be present
 - For input-output: identify the pattern by examining what changes from one step to the next
-- In input-output, focus on ONE element each step â€” ask "which element moved and where?"
-- Practice backward-solving for input-output â€” this is often the hardest sub-type
-- Aim for 1 minute per logical reasoning question and 2â€“3 minutes per input-output machine question
+- In input-output, focus on ONE element each step — ask "which element moved and where?"
+- Practice backward-solving for input-output — this is often the hardest sub-type
+- Aim for 1 minute per logical reasoning question and 2–3 minutes per input-output machine question
 
 ---
 
@@ -1390,10 +1390,10 @@ What is Step 4?
 <details>
 <summary>Show Answer</summary>
 **(a) 19 28 32 41 53 74 65 87.** The pattern is: the smallest remaining number is moved to the leftmost unsorted position each step.
-Step 1: 19 (smallest) â†’ position 1
-Step 2: 28 (second smallest) â†’ position 2
-Step 3: 32 (third smallest) â†’ position 3
-Step 4: 41 (fourth smallest) â†’ position 4
+Step 1: 19 (smallest) → position 1
+Step 2: 28 (second smallest) → position 2
+Step 3: 32 (third smallest) → position 3
+Step 4: 41 (fourth smallest) → position 4
 Result: 19 28 32 41 53 74 65 87
 </details>
 

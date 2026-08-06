@@ -1,4 +1,4 @@
-﻿# Chapter 11: File I/O
+# Chapter 11: File I/O
 
 > **Previous:** [10-stl-algorithms](./10-stl-algorithms.md) | **Next:** [12-smart-pointers](./12-smart-pointers.md)
 
@@ -44,7 +44,7 @@ After studying this chapter, students will be able to:
 | Concept | Required Knowledge |
 |---------|-------------------|
 | C++ Streams | Basic understanding of cin/cout from `<iostream>` |
-| Classes & Objects | Chapter 2 â†’ member functions, access specifiers |
+| Classes & Objects | Chapter 2 → member functions, access specifiers |
 | Pointers & References | Address-of operator, reinterpret_cast |
 | Strings | std::string class basics |
 | Arrays & Structs | POD types, fixed-size buffers |
@@ -106,11 +106,11 @@ Think of file I/O like a **filing cabinet** in an office:
 File I/O (Input/Output) is the mechanism by which a program reads data from or writes data to files on persistent storage (hard drive, SSD, etc.). Unlike console I/O (cin/cout), file I/O persists across program executions.
 
 **Why File I/O Matters:**
-- **Persistence** â†’ Data survives program termination
-- **Sharing** â†’ Multiple programs can exchange data via files
-- **Configuration** â†’ Programs read settings from config files
-- **Data Processing** â†’ Batch process large datasets stored in files
-- **Logging** â†’ Record program activity for debugging and auditing
+- **Persistence** → Data survives program termination
+- **Sharing** → Multiple programs can exchange data via files
+- **Configuration** → Programs read settings from config files
+- **Data Processing** → Batch process large datasets stored in files
+- **Logging** → Record program activity for debugging and auditing
 
 ### Types of Files
 
@@ -121,7 +121,7 @@ File I/O (Input/Output) is the mechanism by which a program reads data from or w
 
 ---
 
-## 11.2 File Stream Classes â†’ ifstream, ofstream, fstream
+## 11.2 File Stream Classes → ifstream, ofstream, fstream
 
 ### Real-World Analogy
 
@@ -164,10 +164,10 @@ STEP 5: Perform read/write operations
 STEP 6: Close the file (close() or let destructor handle it)
 ```
 
-### Opening a File â†’ Constructor vs open()
+### Opening a File → Constructor vs open()
 
 ```cpp
-// Method 1: Constructor (preferred â†’ RAII)
+// Method 1: Constructor (preferred → RAII)
 std::ifstream file1("data.txt");
 
 // Method 2: Default constructor + open()
@@ -196,7 +196,7 @@ int main() {
 
     out << "Hello, File I/O!\n";
     out << "Line 2: The answer is " << 42 << "\n";
-    out << "Line 3: Pi Ã¢â€°Ë† " << 3.14159 << "\n";
+    out << "Line 3: Pi ≈ " << 3.14159 << "\n";
     out.close();   // explicit close (optional)
 
     // --- READING ---
@@ -220,10 +220,10 @@ int main() {
 ```
 Read: Hello, File I/O!
 Read: Line 2: The answer is 42
-Read: Line 3: Pi Ã¢â€°Ë† 3.14159
+Read: Line 3: Pi ≈ 3.14159
 ```
 
-### Dry Run Trace Table â†’ Writing Phase
+### Dry Run Trace Table → Writing Phase
 
 | Step | Line | out Stream State | File on Disk | Action |
 |------|------|-----------------|--------------|--------|
@@ -233,15 +233,15 @@ Read: Line 3: Pi Ã¢â€°Ë† 3.14159
 | 4 | `out << "Line 3: ..." << 3.14159` | good=true | All three lines written | Number formatted |
 | 5 | `out.close()` | good=true, is_open=false | File finalized | Resources released |
 
-### Dry Run Trace Table â†’ Reading Phase
+### Dry Run Trace Table → Reading Phase
 
 | Step | Line | in Stream State | `line` Value | `std::cout` Output |
 |------|------|----------------|-------------|-------------------|
-| 1 | `ifstream in("example.txt")` | good=true, eof=false | â†’ | â†’ |
-| 2 | `getline(in, line)` â†’ call 1 | good=true | `"Hello, File I/O!"` | `Read: Hello, File I/O!` |
-| 3 | `getline(in, line)` â†’ call 2 | good=true | `"Line 2: The answer is 42"` | `Read: Line 2: The answer is 42` |
-| 4 | `getline(in, line)` â†’ call 3 | good=true | `"Line 3: Pi Ã¢â€°Ë† 3.14159"` | `Read: Line 3: Pi Ã¢â€°Ë† 3.14159` |
-| 5 | `getline(in, line)` â†’ call 4 | eof=true, fail=true | `""` | Loop exits (no output) |
+| 1 | `ifstream in("example.txt")` | good=true, eof=false | → | → |
+| 2 | `getline(in, line)` → call 1 | good=true | `"Hello, File I/O!"` | `Read: Hello, File I/O!` |
+| 3 | `getline(in, line)` → call 2 | good=true | `"Line 2: The answer is 42"` | `Read: Line 2: The answer is 42` |
+| 4 | `getline(in, line)` → call 3 | good=true | `"Line 3: Pi ≈ 3.14159"` | `Read: Line 3: Pi ≈ 3.14159` |
+| 5 | `getline(in, line)` → call 4 | eof=true, fail=true | `""` | Loop exits (no output) |
 
 ### Complexity Analysis
 
@@ -256,7 +256,7 @@ Read: Line 3: Pi Ã¢â€°Ë† 3.14159
 
 **Why Not O(1) for N characters?** The disk is a mechanical device (HDD) or has limited write cycles (SSD). Each byte must physically alter the storage medium. The OS buffers writes to amortize this cost, but over N bytes, the total work is proportional to N.
 
-### Edge Cases â†’ Opening Files
+### Edge Cases → Opening Files
 
 | Scenario | What Happens | How to Handle |
 |----------|-------------|---------------|
@@ -282,18 +282,18 @@ Open modes are like **instructions you give a librarian** about how you want to 
 | `app` | "I want to add notes at the end only" |
 | `ate` | "Take me to the last page, but I can still flip anywhere" |
 | `trunc` | "Clear the entire book before I start" |
-| `binary` | "Don't translate anything â†’ give me the raw pages" |
+| `binary` | "Don't translate anything → give me the raw pages" |
 
 ### Complete Open Modes Table
 
 | Flag | Full Name | Effect | Default for ifstream | Default for ofstream | Default for fstream |
 |------|-----------|--------|---------------------|---------------------|---------------------|
-| `ios::in` | Input | Open for reading | Ã¢Å“â€¦ Yes | Ã¢ÂÅ’ No | Ã¢Å“â€¦ Yes |
-| `ios::out` | Output | Open for writing (implies trunc unless combined with in, app, or ate) | Ã¢ÂÅ’ No | Ã¢Å“â€¦ Yes | Ã¢Å“â€¦ Yes |
-| `ios::app` | Append | Always write at the end; file created if it doesn't exist | Ã¢ÂÅ’ No | â†’ | â†’ |
-| `ios::ate` | At End | Seek to end immediately after opening | Ã¢ÂÅ’ No | â†’ | â†’ |
-| `ios::trunc` | Truncate | If file exists, discard its contents | Ã¢ÂÅ’ No | Ã¢Å“â€¦ Yes (with out) | Ã¢ÂÅ’ No |
-| `ios::binary` | Binary | No newline translation; raw byte I/O | Ã¢ÂÅ’ No | Ã¢ÂÅ’ No | Ã¢ÂÅ’ No |
+| `ios::in` | Input | Open for reading | ✅ Yes | ❌ No | ✅ Yes |
+| `ios::out` | Output | Open for writing (implies trunc unless combined with in, app, or ate) | ❌ No | ✅ Yes | ✅ Yes |
+| `ios::app` | Append | Always write at the end; file created if it doesn't exist | ❌ No | → | → |
+| `ios::ate` | At End | Seek to end immediately after opening | ❌ No | → | → |
+| `ios::trunc` | Truncate | If file exists, discard its contents | ❌ No | ✅ Yes (with out) | ❌ No |
+| `ios::binary` | Binary | No newline translation; raw byte I/O | ❌ No | ❌ No | ❌ No |
 
 ### Combining Modes (Bitwise OR)
 
@@ -326,7 +326,7 @@ std::ofstream log("log.txt");          // TRUNCATES the file!
 std::ofstream log("log.txt", ios::app); // Appends safely
 ```
 
-### Code Example â†’ Different Open Modes
+### Code Example → Different Open Modes
 
 ```cpp
 #include <fstream>
@@ -363,7 +363,7 @@ First write
 Appended line
 ```
 
-### Dry Run â†’ Append Mode
+### Dry Run → Append Mode
 
 | Step | Operation | File Content After | Comment |
 |------|-----------|-------------------|---------|
@@ -372,13 +372,13 @@ Appended line
 | 3 | Destructor closes f1 | `First write\n` | File flushed |
 | 4 | `ofstream f2(..., app)` | `First write\n` | File NOT truncated (append mode) |
 | 5 | `f2 << "Appended line\n"` | `First write\nAppended line\n` | New content at end |
-| 6 | Read via ifstream | â†’ | Both lines visible |
+| 6 | Read via ifstream | → | Both lines visible |
 
-### Edge Cases â†’ Open Modes
+### Edge Cases → Open Modes
 
 | Mode Combination | Behavior |
 |-----------------|----------|
-| `out \| trunc` | Same as `out` alone for ofstream â†’ truncates |
+| `out \| trunc` | Same as `out` alone for ofstream → truncates |
 | `out \| app` | Write at end only; seekp() has no effect |
 | `in \| out` | fstream default; does NOT truncate |
 | `in \| out \| trunc` | Opens for read/write but truncates first |
@@ -436,9 +436,9 @@ Charlie scored 92
 | 1 | `"Alice"` | `95` | good=true | Read name then score |
 | 2 | `"Bob"` | `87` | good=true | Read name then score |
 | 3 | `"Charlie"` | `92` | good=true | Read name then score |
-| 4 | â†’ | â†’ | eof=true | Extraction fails; loop exits |
+| 4 | → | → | eof=true | Extraction fails; loop exits |
 
-### Method 2: getline() â†’ Line by Line
+### Method 2: getline() → Line by Line
 
 Reads until newline (or custom delimiter).
 
@@ -474,7 +474,7 @@ int main() {
 4: And so are you.
 ```
 
-### Dry Run â†’ getline()
+### Dry Run → getline()
 
 | Iteration | Buffer Before | `line` After | Stream State | Output |
 |-----------|--------------|-------------|-------------|--------|
@@ -525,7 +525,7 @@ while (std::getline(file, token, ',')) {   // comma-separated values
 }
 ```
 
-### Complexity Analysis â†’ Reading Text
+### Complexity Analysis → Reading Text
 
 | Method | Time | Space | Why |
 |--------|------|-------|-----|
@@ -536,7 +536,7 @@ while (std::getline(file, token, ',')) {   // comma-separated values
 
 **Space Complexity Note:** Reading the entire file at once requires O(N) memory. For large files (gigabytes), line-by-line or token-by-token reading is preferred to avoid exhausting RAM.
 
-### Edge Cases â†’ Reading Text
+### Edge Cases → Reading Text
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
@@ -553,7 +553,7 @@ while (std::getline(file, token, ',')) {   // comma-separated values
 
 ### Real-World Analogy
 
-Writing to a text file is like **recording a voice memo** â†’ everything you say (write) gets captured in order.
+Writing to a text file is like **recording a voice memo** → everything you say (write) gets captured in order.
 
 ### Method 1: Insertion Operator `<<`
 
@@ -595,7 +595,7 @@ Expenses: $31200
 Net Profit: $14030.5
 ```
 
-### Method 2: put() â†’ Write Single Character
+### Method 2: put() → Write Single Character
 
 ```cpp
 std::ofstream out("letters.txt");
@@ -608,13 +608,13 @@ out.put('\n');
 // File content: "Hello\n"
 ```
 
-### Method 3: write() â†’ Write Raw Bytes
+### Method 3: write() → Write Raw Bytes
 
 ```cpp
 std::ofstream out("data.bin", std::ios::binary);
 int numbers[] = {1, 2, 3, 4, 5};
 out.write(reinterpret_cast<const char*>(numbers), sizeof(numbers));
-// Writes 20 bytes (5 ints Ãƒâ€” 4 bytes each)
+// Writes 20 bytes (5 ints × 4 bytes each)
 ```
 
 ### Formatting Output
@@ -668,7 +668,7 @@ Bob       87
 |--------|-----------|-------------|
 | **Like** | Writing a letter | Taking a photocopy |
 | **Reading** | Interpreting the handwriting | Scanning the exact ink pattern |
-| **Translation** | "Best regards" â†’ "Sincerely" (interpretation) | Exact pixel-for-pixel copy |
+| **Translation** | "Best regards" → "Sincerely" (interpretation) | Exact pixel-for-pixel copy |
 | **Result** | Human-readable, may lose some formatting | Not readable, but 100% accurate |
 
 ### Comparison Table
@@ -676,7 +676,7 @@ Bob       87
 | Criterion | Text Mode | Binary Mode |
 |-----------|-----------|-------------|
 | **Flag** | Default (no flag needed) | `std::ios::binary` |
-| **Newline Handling** | Translates `\n` â†” `\r\n` on Windows | No translation |
+| **Newline Handling** | Translates `\n` ↔ `\r\n` on Windows | No translation |
 | **EOF Marker** | `Ctrl+Z` (0x1A) treated as EOF on some systems | Every byte is data |
 | **Data Representation** | Characters (ASCII/UTF-8) | Raw memory bytes |
 | **Human Readable** | Yes | No |
@@ -691,8 +691,8 @@ Bob       87
 ### The Newline Translation Problem
 
 On Windows, text mode transforms:
-- **Write:** `\n` (LF, 0x0A) â†’ `\r\n` (CRLF, 0x0D 0x0A)
-- **Read:** `\r\n` â†’ `\n`
+- **Write:** `\n` (LF, 0x0A) → `\r\n` (CRLF, 0x0D 0x0A)
+- **Read:** `\r\n` → `\n`
 
 This means: writing 100 bytes with 10 newlines in text mode produces 110 bytes on disk.
 
@@ -705,7 +705,7 @@ int main() {
     // Text mode write
     {
         std::ofstream out("text_mode.txt");   // text mode
-        out << "Line 1\nLine 2\n";             // \n â†’ \r\n on Windows
+        out << "Line 1\nLine 2\n";             // \n → \r\n on Windows
     }
 
     // Binary mode write (same data)
@@ -732,7 +732,7 @@ Binary mode size: 14 bytes
 
 **Why?** `Line 1\nLine 2\n` = 14 chars. Text mode writes `Line 1\r\nLine 2\r\n` = 16 chars.
 
-### Binary I/O â†’ read() and write()
+### Binary I/O → read() and write()
 
 ```cpp
 #include <fstream>
@@ -798,7 +798,7 @@ Read back: num=12345, pi=3.14159, text=Hello Binary!
 | `double` (0.0000001) | 10+ bytes (`"1e-07"`) | 8 bytes | Binary wins |
 | `char[100]` ("Hello") | 5 bytes (`"Hello"`) | 100 bytes | Text wins |
 
-### Portability Concerns â†’ Binary Mode
+### Portability Concerns → Binary Mode
 
 Binary files are **not portable** across platforms because:
 
@@ -818,7 +818,7 @@ int x = 0x01020304;
 
 ---
 
-## 11.7 File Positioning â†’ tellg/tellp, seekg/seekp
+## 11.7 File Positioning → tellg/tellp, seekg/seekp
 
 ### Real-World Analogy
 
@@ -903,24 +903,24 @@ Current get position: 20 bytes
 Value at position 20: 5
 ```
 
-### Dry Run â†’ File Positioning
+### Dry Run → File Positioning
 
 Assume file initially contains: `[0][1][2][3][4][5][6][7][8][9]` (40 bytes, 4 bytes per int)
 
 | Step | Operation | get Pointer | put Pointer | Action |
 |------|-----------|-------------|-------------|--------|
-| Initial (after write) | â†’ | 40 (EOF) | 40 (EOF) | File written |
+| Initial (after write) | → | 40 (EOF) | 40 (EOF) | File written |
 | 1 | `seekg(0, beg)` | 0 | 40 | Jump to start for reading |
-| 2 | `read(&first, 4)` | 4 | 40 | Read int 0 â†’ `first=0` |
+| 2 | `read(&first, 4)` | 4 | 40 | Read int 0 → `first=0` |
 | 3 | `seekg(-4, end)` | 36 | 40 | Jump to last int |
-| 4 | `read(&last, 4)` | 40 | 40 | Read int 9 â†’ `last=9` |
+| 4 | `read(&last, 4)` | 40 | 40 | Read int 9 → `last=9` |
 | 5 | `seekg(-12, cur)` | 28 | 40 | Back 3 ints from 40 |
-| 6 | `read(&middle, 4)` | 32 | 40 | Read int 7 â†’ `middle=7` |
+| 6 | `read(&middle, 4)` | 32 | 40 | Read int 7 → `middle=7` |
 | 7 | `seekg(20, beg)` | 20 | 40 | Jump to byte 20 |
-| 8 | `tellg()` | 20 â†’ returned | 40 | Returns `20` |
-| 9 | `read(&v, 4)` | 24 | 40 | Read int 5 â†’ `v=5` |
+| 8 | `tellg()` | 20 → returned | 40 | Returns `20` |
+| 9 | `read(&v, 4)` | 24 | 40 | Read int 5 → `v=5` |
 
-### Random Access Example â†’ CSV Indexing
+### Random Access Example → CSV Indexing
 
 ```cpp
 #include <fstream>
@@ -967,19 +967,19 @@ int main() {
 Employee at index 2: Charlie (ID: 103, Salary: $82000)
 ```
 
-### Complexity Analysis â†’ File Positioning
+### Complexity Analysis → File Positioning
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | `seekg(n)` | O(1) | O(1) | Just moves a file offset number in the OS file table |
 | `tellg()` | O(1) | O(1) | Returns stored file offset value |
-| Random access read | O(1) | O(1) | Disk can seek to any position (HDD Ã¢â€°Ë† 10ms, SSD Ã¢â€°Ë† 0.1ms) |
+| Random access read | O(1) | O(1) | Disk can seek to any position (HDD ≈ 10ms, SSD ≈ 0.1ms) |
 | Sequential read | O(N) | O(1) | Must transfer N bytes |
-| `seekg` past EOF | Implementation-defined | â†’ | On read: sets failbit. On write: creates a "sparse" file (or extends) |
+| `seekg` past EOF | Implementation-defined | → | On read: sets failbit. On write: creates a "sparse" file (or extends) |
 
-**Why is seeking O(1)?** The OS maintains a file offset (a single 64-bit integer) for each open file descriptor. `seekg()` simply changes this number. No data is read during the seek â†’ the actual I/O happens on the next `read()` or `write()`.
+**Why is seeking O(1)?** The OS maintains a file offset (a single 64-bit integer) for each open file descriptor. `seekg()` simply changes this number. No data is read during the seek → the actual I/O happens on the next `read()` or `write()`.
 
-### Edge Cases â†’ File Positioning
+### Edge Cases → File Positioning
 
 | Scenario | Behavior | Prevention |
 |----------|----------|------------|
@@ -1010,14 +1010,14 @@ Stream state flags are like **dashboard warning lights** in a car:
 
 | Flag | Type | Description | Set When | Recoverable? |
 |------|------|-------------|----------|-------------|
-| `goodbit` | 0 | No error flags set | Operation succeeds | â†’ |
+| `goodbit` | 0 | No error flags set | Operation succeeds | → |
 | `eofbit` | 1 | End of file reached | Read past EOF | Yes |
 | `failbit` | 2 | Logical error | Format error, non-existent file | Yes |
 | `badbit` | 4 | Read/write error | Hardware failure, disk full | No (usually) |
-| `good()` | â†’ | Returns true if NO flags set | â†’ | â†’ |
-| `fail()` | â†’ | Returns true if failbit OR badbit set | â†’ | â†’ |
-| `bad()` | â†’ | Returns true if badbit set | â†’ | â†’ |
-| `eof()` | â†’ | Returns true if eofbit set | â†’ | â†’ |
+| `good()` | → | Returns true if NO flags set | → | → |
+| `fail()` | → | Returns true if failbit OR badbit set | → | → |
+| `bad()` | → | Returns true if badbit set | → | → |
+| `eof()` | → | Returns true if eofbit set | → | → |
 
 ### Checking File Open
 
@@ -1135,16 +1135,16 @@ Error code: generic:2
 ### Complete Error Handling Checklist
 
 ```
-Ã¢Å“â€œ Check if file opened (!file or file.fail())
-Ã¢Å“â€œ Check is_open() for open-status (separate from state)
-Ã¢Å“â€œ Check reads in loop condition (while (file >> x))
-Ã¢Å“â€œ Distinguish EOF from format error (eof() vs fail())
-Ã¢Å“â€œ Use clear() to recover from non-fatal errors
-Ã¢Å“â€œ Use exceptions() for exception-based error handling (optional)
-Ã¢Å“â€œ Check after every read/write in critical code
+✓ Check if file opened (!file or file.fail())
+✓ Check is_open() for open-status (separate from state)
+✓ Check reads in loop condition (while (file >> x))
+✓ Distinguish EOF from format error (eof() vs fail())
+✓ Use clear() to recover from non-fatal errors
+✓ Use exceptions() for exception-based error handling (optional)
+✓ Check after every read/write in critical code
 ```
 
-### Complexity Analysis â†’ Error Handling
+### Complexity Analysis → Error Handling
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -1163,7 +1163,7 @@ Error code: generic:2
 
 ---
 
-## 11.9 String Streams â†’ istringstream, ostringstream, stringstream
+## 11.9 String Streams → istringstream, ostringstream, stringstream
 
 ### Real-World Analogy
 
@@ -1199,7 +1199,7 @@ String streams are like **using a whiteboard** instead of writing in a notebook:
 | **Building SQL queries** | Construct dynamic queries with proper formatting |
 | **Log message formatting** | Build log entries with timestamps, levels, and variables |
 
-### istringstream â†’ Reading from a String
+### istringstream → Reading from a String
 
 ```cpp
 #include <sstream>
@@ -1214,7 +1214,7 @@ int main() {
     int score;
 
     while (iss >> name >> score) {
-        std::cout << name << " â†’ " << score << "\n";
+        std::cout << name << " → " << score << "\n";
     }
 
     return 0;
@@ -1223,12 +1223,12 @@ int main() {
 
 **Output:**
 ```
-Alice â†’ 95
-Bob â†’ 87
-Charlie â†’ 92
+Alice → 95
+Bob → 87
+Charlie → 92
 ```
 
-### ostringstream â†’ Writing to a String
+### ostringstream → Writing to a String
 
 ```cpp
 #include <sstream>
@@ -1262,7 +1262,7 @@ Age: 30
 Salary: $75000.50
 ```
 
-### stringstream â†’ Bidirectional
+### stringstream → Bidirectional
 
 ```cpp
 #include <sstream>
@@ -1464,7 +1464,7 @@ int main() {
 [Tue Jan 15 10:30:45 2024] [ERROR] Connection timeout
 ```
 
-### Complexity Analysis â†’ String Streams
+### Complexity Analysis → String Streams
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -1474,7 +1474,7 @@ int main() {
 | `.str()` extraction | O(1) (C++11 move) or O(N) (copy) | O(N) | Move returns without copying; copy duplicates buffer |
 | Parse CSV line | O(N) | O(N) for tokens | Each character examined once |
 
-### Edge Cases â†’ String Streams
+### Edge Cases → String Streams
 
 | Scenario | Behavior | Solution |
 |----------|----------|----------|
@@ -1512,7 +1512,7 @@ Serialization is the process of converting an object's state into a format that 
 | **Binary Serialization** | Fast, compact, exact | Not portable, not human-readable | Performance-critical, internal storage |
 | **Text Serialization** | Portable, human-readable, debuggable | Slower, larger file size | Config files, data exchange, human inspection |
 
-### Binary Serialization â†’ POD Types
+### Binary Serialization → POD Types
 
 POD (Plain Old Data) types can be serialized directly:
 
@@ -1554,7 +1554,7 @@ Deserialized point: (10, 20, 30)
 
 **Warning:** `sizeof(Point)` may be 12 or 16 depending on alignment/padding.
 
-### Binary Serialization â†’ Handling std::string
+### Binary Serialization → Handling std::string
 
 ```cpp
 #include <fstream>
@@ -1632,25 +1632,25 @@ Student: Alice (ID: 101, GPA: 3.9)
 Student: Bob (ID: 102, GPA: 3.5)
 ```
 
-### Dry Run â†’ Serializing Student
+### Dry Run → Serializing Student
 
 **Write Phase:**
 
 | Step | Operation | File Position | Bytes Written | File Content |
 |------|-----------|---------------|---------------|-------------|
-| 1 | Save name "Alice" | 0â†’4 | 4 (length=5) | `05 00 00 00` |
-| 2 | Save name data | 4â†’9 | 5 ("Alice") | `05 00 00 00 41 6C 69 63 65` |
-| 3 | Save id (101) | 9â†’13 | 4 | `... 65 00 00 00` |
-| 4 | Save gpa (3.9) | 13â†’21 | 8 | `... 66 66 66 66 66 66 0F 40` |
+| 1 | Save name "Alice" | 0→4 | 4 (length=5) | `05 00 00 00` |
+| 2 | Save name data | 4→9 | 5 ("Alice") | `05 00 00 00 41 6C 69 63 65` |
+| 3 | Save id (101) | 9→13 | 4 | `... 65 00 00 00` |
+| 4 | Save gpa (3.9) | 13→21 | 8 | `... 66 66 66 66 66 66 0F 40` |
 
 **Read Phase:**
 
 | Step | Operation | Bytes Read | Result | File Position |
 |------|-----------|------------|--------|---------------|
-| 1 | Read length | 4 | len=5 | 0â†’4 |
-| 2 | Read name data | 5 | name_="Alice" | 4â†’9 |
-| 3 | Read id | 4 | id_=101 | 9â†’13 |
-| 4 | Read gpa | 8 | gpa_=3.9 | 13â†’21 |
+| 1 | Read length | 4 | len=5 | 0→4 |
+| 2 | Read name data | 5 | name_="Alice" | 4→9 |
+| 3 | Read id | 4 | id_=101 | 9→13 |
+| 4 | Read gpa | 8 | gpa_=3.9 | 13→21 |
 
 ### Text Serialization (CSV)
 
@@ -1671,7 +1671,7 @@ public:
     Product(const std::string& name, double price, int quantity)
         : name_(name), price_(price), quantity_(quantity) {}
 
-    // CSV serialize â†’ one line per product
+    // CSV serialize → one line per product
     std::string toCSV() const {
         std::ostringstream oss;
         oss << name_ << "," << price_ << "," << quantity_;
@@ -1739,7 +1739,7 @@ Gadget,39.99,50
 Doohickey,9.99,200
 ```
 
-### Serialization â†’ Handling Containers
+### Serialization → Handling Containers
 
 ```cpp
 #include <fstream>
@@ -1837,7 +1837,7 @@ public:
     static const uint32_t FORMAT_VERSION = 2;
 
     void save(std::ofstream& out) const {
-        // Version header â†’ allows future format changes
+        // Version header → allows future format changes
         out.write(reinterpret_cast<const char*>(&FORMAT_VERSION),
                   sizeof(FORMAT_VERSION));
 
@@ -1903,7 +1903,7 @@ Payload: Hello, Future!
 | Boost.Serialization | Medium | Variable | Good | High (template-heavy) |
 | std::variant approach | Fast | Optimized | Good | Medium |
 
-### Complexity Analysis â†’ Serialization
+### Complexity Analysis → Serialization
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -1914,7 +1914,7 @@ Payload: Hello, Future!
 | CSV serialization | O(N) | O(N) | Character conversion + text output |
 | Text deserialization | O(N) | O(N) | Character parsing + conversion |
 
-### Edge Cases â†’ Serialization
+### Edge Cases → Serialization
 
 | Scenario | Problem | Solution |
 |----------|---------|----------|
@@ -1966,7 +1966,7 @@ std::ofstream file("log.txt", std::ios::app);
 - Writing `\n` (0x0A) produces `\r\n` (0x0D 0x0A) on disk
 - Reading `\r\n` converts back to `\n`
 
-Binary mode suppresses all translation. This is why binary files (images, executables) must be opened in binary mode â†’ any byte with value 0x0A or 0x0D would be corrupted in text mode.
+Binary mode suppresses all translation. This is why binary files (images, executables) must be opened in binary mode → any byte with value 0x0A or 0x0D would be corrupted in text mode.
 
 ### Q5: Why is `while (!file.eof())` wrong?
 
@@ -2137,7 +2137,7 @@ public:
     }
 };
 
-// Usage â†’ reads config files like database servers do
+// Usage → reads config files like database servers do
 ```
 
 ### 2. Game Save System
@@ -2379,11 +2379,11 @@ private:
 | Open for reading | `ifstream f("f.txt")` | `ifstream f("f.bin", ios::binary)` | Constructor |
 | Open for writing | `ofstream f("f.txt")` | `ofstream f("f.bin", ios::binary)` | Constructor |
 | Open for append | `ofstream f("f.txt", ios::app)` | `ofstream f("f.bin", ios::app | ios::binary)` | Mode flags |
-| Read one word | `file >> word` | â†’ | `>>` |
-| Read one line | `getline(file, line)` | â†’ | `getline` |
-| Read N bytes | â†’ | `file.read(buf, N)` | `read()` |
-| Write formatted | `file << "Text" << num` | â†’ | `<<` |
-| Write N bytes | â†’ | `file.write(data, N)` | `write()` |
+| Read one word | `file >> word` | → | `>>` |
+| Read one line | `getline(file, line)` | → | `getline` |
+| Read N bytes | → | `file.read(buf, N)` | `read()` |
+| Write formatted | `file << "Text" << num` | → | `<<` |
+| Write N bytes | → | `file.write(data, N)` | `write()` |
 | Check position | `file.tellg()` | `file.tellg()` | `tellg()` |
 | Seek to position | `file.seekg(pos)` | `file.seekg(pos)` | `seekg()` |
 | File size | `seekg(0, end); size = tellg()` | Same | tellg trick |
@@ -2445,7 +2445,7 @@ private:
 
 5. **What does `ios::binary` mode prevent on Windows?**
    A) Opening the file
-   B) Newline translation (CRLF â†” LF)
+   B) Newline translation (CRLF ↔ LF)
    C) Writing to the file
    D) Reading from the file
    <details><summary>Answer&lt;/summary&gt;**B)** Binary mode disables newline translation between `\n` and `\r\n`, which is essential for non-text data.</details>
@@ -2510,17 +2510,17 @@ File I/O in C++ extends the stream model of `cin`/`cout` to persistent storage. 
 
 **Key takeaways:**
 
-1. **File Stream Classes:** `ifstream` reads, `ofstream` writes, `fstream` does both. All follow RAII â†’ resources are released when the object goes out of scope.
+1. **File Stream Classes:** `ifstream` reads, `ofstream` writes, `fstream` does both. All follow RAII → resources are released when the object goes out of scope.
 
 2. **Open Modes:** Six mode flags (`in`, `out`, `app`, `ate`, `trunc`, `binary`) combine via bitwise OR to control file access. `ofstream` truncates by default; use `app` to preserve existing content.
 
 3. **Text I/O:** Use `getline()` for line-oriented reading, `>>` for tokenized reading, and `<<` for formatted writing.
 
-4. **Binary I/O:** Use `read()` and `write()` with `reinterpret_cast<char*>()`. Fast and precise but not portable without care â†’ endianness, padding, and type sizes differ across platforms.
+4. **Binary I/O:** Use `read()` and `write()` with `reinterpret_cast<char*>()`. Fast and precise but not portable without care → endianness, padding, and type sizes differ across platforms.
 
 5. **File Positioning:** `seekg`/`seekp` reposition the read/write cursor; `tellg`/`tellp` query the current position. Supports absolute (beg, end) and relative (cur) movement.
 
-6. **Error Handling:** Four state flags (`good`, `eof`, `fail`, `bad`) track stream health. Always check stream state after I/O operations â†’ never ignore failure.
+6. **Error Handling:** Four state flags (`good`, `eof`, `fail`, `bad`) track stream health. Always check stream state after I/O operations → never ignore failure.
 
 7. **String Streams:** `<sstream>` provides the same interface for in-memory I/O. Use for string parsing, type conversion, and output formatting without touching the disk.
 
@@ -2551,10 +2551,10 @@ File I/O in C++ extends the stream model of `cin`/`cout` to persistent storage. 
 1. **Word Frequency Counter:** Write a program that reads a text file, counts the frequency of each word (case-insensitive), and writes the results to another file sorted by frequency (descending). Use stringstream to tokenize each line.
 
 2. **Binary Record Manager:** Design a binary file format for storing `struct Employee { int id; char name[64]; double salary; };`. Write functions to:
-   - `addEmployee(filename, employee)` â†’ append at end
-   - `getEmployee(filename, id)` â†’ search and read by ID
-   - `listEmployees(filename)` â†’ display all records
-   - `updateSalary(filename, id, newSalary)` â†’ random-access update
+   - `addEmployee(filename, employee)` → append at end
+   - `getEmployee(filename, id)` → search and read by ID
+   - `listEmployees(filename)` → display all records
+   - `updateSalary(filename, id, newSalary)` → random-access update
 
 3. **Log Analyzer:** Write a program that parses a log file format: `[2024-01-15 10:30:45] [ERROR] Message here`. Count errors per hour and output a summary table.
 

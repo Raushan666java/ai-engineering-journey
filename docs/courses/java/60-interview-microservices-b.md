@@ -1,4 +1,4 @@
-﻿![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)
+![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)
 
 
 <!-- Image Gallery -->
@@ -49,7 +49,7 @@ flowchart LR
 CQRS (Command Query Responsibility Segregation) separates write models (commands) from read models (queries). Each model has its own database schema, optimized for its operation.
 
 ```java
-// â”€â”€ Command side: focused on writes â”€â”€
+// ── Command side: focused on writes ──
 @RestController
 @RequestMapping("/orders/commands")
 public class OrderCommandController {
@@ -91,7 +91,7 @@ public class OrderCommandService {
 @Repository
 public interface OrderCommandRepository extends JpaRepository<OrderWriteModel, UUID> {}
 
-// â”€â”€ Query side: optimized for reads â”€â”€
+// ── Query side: optimized for reads ──
 @RestController
 @RequestMapping("/orders/queries")
 public class OrderQueryController {
@@ -153,9 +153,9 @@ public class OrderEventConsumer {
 }
 ```
 
-CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes â†’ for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
+CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes → for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
 
-Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS â†’ a well-designed JPA model with DTO projections is sufficient.
+Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS → a well-designed JPA model with DTO projections is sufficient.
 
 ---
 
@@ -167,7 +167,7 @@ Apply CQRS to individual bounded contexts, not the entire system. Most services 
 Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and time limiters. The circuit breaker prevents cascading failures by failing fast when a downstream service is unhealthy.
 
 ```java
-// â”€â”€ Configuration â”€â”€
+// ── Configuration ──
 // application.yml:
 // resilience4j.circuitbreaker:
 //   instances:
@@ -182,9 +182,9 @@ Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and t
 //         - java.io.IOException
 //         - org.springframework.web.client.HttpServerErrorException
 //       ignore-exceptions:
-//         - org.springframework.web.client.HttpClientErrorException  (4xx â†’ not a circuit failure)
+//         - org.springframework.web.client.HttpClientErrorException  (4xx → not a circuit failure)
 
-// â”€â”€ Registration â”€â”€
+// ── Registration ──
 @Configuration
 public class Resilience4jConfig {
     @Bean
@@ -203,7 +203,7 @@ public class Resilience4jConfig {
     }
 }
 
-// â”€â”€ Usage with @CircuitBreaker annotation â”€â”€
+// ── Usage with @CircuitBreaker annotation ──
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -223,7 +223,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Manual circuit breaker usage â”€â”€
+// ── Manual circuit breaker usage ──
 @Service
 public class PaymentService {
     private final CircuitBreaker circuitBreaker;
@@ -250,7 +250,7 @@ public class PaymentService {
     }
 }
 
-// â”€â”€ Monitoring circuit breaker state â”€â”€
+// ── Monitoring circuit breaker state ──
 @Component
 public class CircuitBreakerMonitor {
     public CircuitBreakerMonitor(CircuitBreakerRegistry registry) {
@@ -267,7 +267,7 @@ public class CircuitBreakerMonitor {
 }
 ```
 
-Circuit breaker states: CLOSED (normal, pass through) â†’ OPEN (fail fast, no calls) â†’ HALF_OPEN (allow limited probe calls) â†’ back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
+Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no calls) → HALF_OPEN (allow limited probe calls) → back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
 
 ---
 
@@ -279,7 +279,7 @@ Circuit breaker states: CLOSED (normal, pass through) â†’ OPEN (fail fast, 
 OAuth2 with JWT provides token-based authentication. The client credentials grant is the standard pattern for service-to-service communication.
 
 ```java
-// â”€â”€ Authorization Server config (Spring Authorization Server) â”€â”€
+// ── Authorization Server config (Spring Authorization Server) ──
 @Configuration
 @EnableAuthorizationServer
 public class AuthServerConfig {
@@ -287,7 +287,7 @@ public class AuthServerConfig {
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient orderService = RegisteredClient.withId(UUID.randomUUID().toString())
             .clientId("order-service")
-            .clientSecret("{noop}order-secret")  // noop = plain text â†’ use BCrypt in prod
+            .clientSecret("{noop}order-secret")  // noop = plain text → use BCrypt in prod
             .authorizationGrantType(ClientCredentialsGrant.INSTANCE)
             .scope("order:read")
             .scope("order:write")
@@ -296,7 +296,7 @@ public class AuthServerConfig {
     }
 }
 
-// â”€â”€ Resource Server config (each microservice validates tokens) â”€â”€
+// ── Resource Server config (each microservice validates tokens) ──
 // application.yml:
 // spring.security.oauth2.resourceserver.jwt:
 //   issuer-uri: http://localhost:9000
@@ -319,7 +319,7 @@ public class ResourceServerConfig {
     }
 }
 
-// â”€â”€ Client credentials flow (service calls another service) â”€â”€
+// ── Client credentials flow (service calls another service) ──
 @Service
 public class ServiceClient {
     @Autowired
@@ -353,7 +353,7 @@ public class ServiceClient {
     }
 }
 
-// â”€â”€ Extract user context from JWT â”€â”€
+// ── Extract user context from JWT ──
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -368,7 +368,7 @@ public class OrderController {
 }
 ```
 
-JWT is stateless â†’ the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
+JWT is stateless → the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
 
 Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted). For fine-grained authorization, use OAuth2 scopes combined with custom claims or a dedicated authorization service.
 
@@ -382,7 +382,7 @@ Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted
 Apache Kafka provides a distributed commit log for asynchronous event streaming between services. Each service publishes events to topics; other services consume from those topics independently.
 
 ```java
-// â”€â”€ Producer configuration â”€â”€
+// ── Producer configuration ──
 @Configuration
 public class KafkaProducerConfig {
     @Bean
@@ -405,7 +405,7 @@ public class KafkaProducerConfig {
     }
 }
 
-// â”€â”€ Event publisher â”€â”€
+// ── Event publisher ──
 @Service
 public class OrderEventPublisher {
     @Autowired
@@ -425,7 +425,7 @@ public class OrderEventPublisher {
         );
     }
 
-    // â”€â”€ Transactional outbox pattern â”€â”€
+    // ── Transactional outbox pattern ──
     @Transactional
     public void createOrderAndPublishEvent(OrderRequest request) {
         // 1. Save order in the database
@@ -443,7 +443,7 @@ public class OrderEventPublisher {
     }
 }
 
-// â”€â”€ Consumer configuration â”€â”€
+// ── Consumer configuration ──
 @Configuration
 public class KafkaConsumerConfig {
     @Bean
@@ -463,7 +463,7 @@ public class KafkaConsumerConfig {
     }
 }
 
-// â”€â”€ Event consumer â”€â”€
+// ── Event consumer ──
 @Component
 public class InventoryEventConsumer {
     @Autowired
@@ -488,14 +488,14 @@ public class InventoryEventConsumer {
                 new InventoryFailedEvent(event.orderId(), e.getMessage()));
             acknowledgment.acknowledge();
         } catch (Exception e) {
-            // Do not commit â†’ message will be re-delivered
+            // Do not commit → message will be re-delivered
             log.error("Failed to process order {}, will retry", event.orderId(), e);
             throw new RetryableException("Retry later");
         }
     }
 }
 
-// â”€â”€ Idempotent consumer (same event may be delivered twice) â”€â”€
+// ── Idempotent consumer (same event may be delivered twice) ──
 @Service
 public class IdempotentConsumerService {
     @Autowired
@@ -532,7 +532,7 @@ Use one topic per event type or per bounded context. Partition count should be e
 Each microservice gets a Docker image with multi-stage builds for minimal size. Spring Boot 3.x provides layered JARs for efficient Docker builds.
 
 ```dockerfile
-# â”€â”€ Multi-stage Dockerfile for a Spring Boot microservice â”€â”€
+# ── Multi-stage Dockerfile for a Spring Boot microservice ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md)
 
@@ -591,7 +591,7 @@ ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]
 ```
 
 ```yaml
-# â”€â”€ docker-compose.yml for local development â”€â”€
+# ── docker-compose.yml for local development ──
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-a.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md)
 version: '3.8'
@@ -672,11 +672,11 @@ Key Docker best practices:
 ### Mistake 1: Synchronous communication chains
 
 ```java
-// âŒ WRONG: Request threads through 3+ services synchronously
-// Order Service â†’ Payment Service â†’ Inventory Service â†’ Shipping Service
-// If Shipping is slow, ALL upstream threads block â†’ cascading failure
+// ❌ WRONG: Request threads through 3+ services synchronously
+// Order Service → Payment Service → Inventory Service → Shipping Service
+// If Shipping is slow, ALL upstream threads block → cascading failure
 
-// âœ… CORRECT: Use async messaging for non-critical path
+// ✅ CORRECT: Use async messaging for non-critical path
 // Order Service publishes "OrderCreated" event
 // Inventory, Payment, Shipping subscribe independently
 @Service
@@ -686,7 +686,7 @@ public class OrderService {
     public void createOrder(OrderRequest req) {
         Order order = orderRepo.save(req.toOrder());
         kafka.send("order-events", new OrderCreatedEvent(order.getId()));
-        // Return immediately â†’ downstream services process in parallel
+        // Return immediately → downstream services process in parallel
     }
 }
 ```
@@ -694,33 +694,33 @@ public class OrderService {
 ### Mistake 2: Shared database across services
 
 ```java
-// âŒ WRONG: Multiple services access the same database
-// OrderService â†’ orders_db
-// PaymentService â†’ orders_db  (same DB!)
-// ShippingService â†’ orders_db  (same DB!)
-// Schema changes require coordinated deployments â†’ no autonomy
+// ❌ WRONG: Multiple services access the same database
+// OrderService → orders_db
+// PaymentService → orders_db  (same DB!)
+// ShippingService → orders_db  (same DB!)
+// Schema changes require coordinated deployments → no autonomy
 
-// âœ… CORRECT: Database per service
-// OrderService â†’ orders_db (owns orders and order_items)
-// PaymentService â†’ payments_db (owns payments table)
-// ShippingService â†’ shipping_db (owns shipments table)
+// ✅ CORRECT: Database per service
+// OrderService → orders_db (owns orders and order_items)
+// PaymentService → payments_db (owns payments table)
+// ShippingService → shipping_db (owns shipments table)
 // Services communicate via API calls or events, not shared tables
 ```
 
 ### Mistake 3: No circuit breaker on external calls
 
 ```java
-// âŒ WRONG: Direct HTTP call with no protection
+// ❌ WRONG: Direct HTTP call with no protection
 @Service
 public class OrderService {
     public UserDto getUser(Long id) {
         // If user-service is down, this thread blocks for timeout seconds
-        // With 50 threads Ã— 30s timeout = 1500 thread-seconds wasted
+        // With 50 threads × 30s timeout = 1500 thread-seconds wasted
         return restTemplate.getForObject("/users/{id}", UserDto.class, id);
     }
 }
 
-// âœ… CORRECT: Wrap with Resilience4j CircuitBreaker
+// ✅ CORRECT: Wrap with Resilience4j CircuitBreaker
 @Service
 public class OrderService {
     @CircuitBreaker(name = "userService", fallbackMethod = "getUserFallback")
@@ -737,11 +737,11 @@ public class OrderService {
 ### Mistake 4: Missing observability (logs, metrics, traces)
 
 ```yaml
-# âŒ WRONG: No structured logging, no distributed tracing
+# ❌ WRONG: No structured logging, no distributed tracing
 # When a request fails across 5 services, you have 5 separate log files
-# with no correlation ID â†’ impossible to debug
+# with no correlation ID → impossible to debug
 
-# âœ… CORRECT: Always include traceId and spanId
+# ✅ CORRECT: Always include traceId and spanId
 spring.application.name=order-service
 logging.pattern.level=trace_id=%mdc{traceId:-no-trace} span_id=%mdc{spanId:-no-span} %5p
 management.tracing.sampling.probability=1.0  # 100% sampling in dev
@@ -750,10 +750,10 @@ management.tracing.sampling.probability=1.0  # 100% sampling in dev
 ### Mistake 5: Over-engineering (starting with microservices)
 
 ```java
-// âŒ WRONG: New project with 12 microservices, event bus, CQRS, service mesh
-// 6 months later â†’ still not shipping features, infrastructure complexity dominates
+// ❌ WRONG: New project with 12 microservices, event bus, CQRS, service mesh
+// 6 months later → still not shipping features, infrastructure complexity dominates
 
-// âœ… CORRECT: Start as modular monolith, extract when needed
+// ✅ CORRECT: Start as modular monolith, extract when needed
 // Phase 1: Single deployable with clear module boundaries
 // Phase 2: Extract hottest path (e.g., payment processing) as first service
 // Phase 3: Extract read models (CQRS) when scaling read traffic
@@ -768,7 +768,7 @@ management.tracing.sampling.probability=1.0  # 100% sampling in dev
 |--------|----------|---------------|
 | Deployment | Single artifact | N independent services |
 | Scaling | Scale entire app | Scale individual services |
-| Team autonomy | Shared codebase â€” coordination needed | Each team owns services end-to-end |
+| Team autonomy | Shared codebase — coordination needed | Each team owns services end-to-end |
 | Database | Single database (or few) | Database per service |
 | Testing | Easier (single process) | Complex (contract tests, integration tests) |
 | Debugging | Single log stream | Distributed tracing needed |
@@ -843,10 +843,10 @@ class ServiceOrchestrator {
     if (cb.state === 'OPEN') {
       const timeSinceFailure = Date.now() - (cb.lastFailureTime?.getTime() || 0);
       if (timeSinceFailure > cb.timeoutMs) {
-        console.log(`[CIRCUIT] ${serviceId}: OPEN â†’ HALF_OPEN (timeout elapsed)`);
+        console.log(`[CIRCUIT] ${serviceId}: OPEN → HALF_OPEN (timeout elapsed)`);
         cb.state = 'HALF_OPEN';
       } else {
-        console.log(`[CIRCUIT] ${serviceId}: OPEN â€” falling back immediately`);
+        console.log(`[CIRCUIT] ${serviceId}: OPEN — falling back immediately`);
         return fallback();
       }
     }
@@ -854,7 +854,7 @@ class ServiceOrchestrator {
     return action()
       .then(result => {
         if (cb.state === 'HALF_OPEN') {
-          console.log(`[CIRCUIT] ${serviceId}: HALF_OPEN â†’ CLOSED (success)`);
+          console.log(`[CIRCUIT] ${serviceId}: HALF_OPEN → CLOSED (success)`);
           cb.state = 'CLOSED';
         }
         cb.failureCount = 0;
@@ -864,7 +864,7 @@ class ServiceOrchestrator {
         cb.failureCount++;
         cb.lastFailureTime = new Date();
         if (cb.failureCount >= cb.threshold || cb.state === 'HALF_OPEN') {
-          console.log(`[CIRCUIT] ${serviceId}: ${cb.state} â†’ OPEN (failures=${cb.failureCount})`);
+          console.log(`[CIRCUIT] ${serviceId}: ${cb.state} → OPEN (failures=${cb.failureCount})`);
           cb.state = 'OPEN';
         }
         return fallback();
@@ -884,14 +884,14 @@ class ServiceOrchestrator {
     serviceChain: string[],
     action: (svc: ServiceInstance) => Promise<unknown>
   ): Promise<void> {
-    console.log(`\n[REQUEST] Chain: ${serviceChain.join(' â†’ ')}`);
+    console.log(`\n[REQUEST] Chain: ${serviceChain.join(' → ')}`);
     for (const serviceId of serviceChain) {
       const instance = this.getNextInstance(serviceId);
       if (!instance) {
         console.log(`[FAIL] ${serviceId}: No available instances`);
         return;
       }
-      console.log(`[ROUTE] ${serviceId} â†’ ${instance.host}:${instance.port}`);
+      console.log(`[ROUTE] ${serviceId} → ${instance.host}:${instance.port}`);
 
       await this.callService(
         serviceId,
@@ -903,7 +903,7 @@ class ServiceOrchestrator {
   }
 }
 
-// â”€â”€ Demonstration â”€â”€
+// ── Demonstration ──
 const orchestrator = new ServiceOrchestrator();
 orchestrator.register({ serviceId: 'auth', host: '10.0.1.1', port: 8081, healthy: true, lastHeartbeat: new Date() });
 orchestrator.register({ serviceId: 'orders', host: '10.0.1.2', port: 8082, healthy: true, lastHeartbeat: new Date() });
@@ -912,7 +912,7 @@ orchestrator.register({ serviceId: 'payment', host: '10.0.1.3', port: 8083, heal
 orchestrator.request(
   ['auth', 'orders', 'payment'],
   async (svc) => {
-    console.log(`  â†’ Calling ${svc.serviceId} on port ${svc.port}`);
+    console.log(`  → Calling ${svc.serviceId} on port ${svc.port}`);
     return { success: true };
   }
 );
@@ -946,11 +946,11 @@ stateDiagram-v2
     }
 ```
 
-## Chapter Quiz â€” Microservices (Part 2)
+## Chapter Quiz — Microservices (Part 2)
 
 4. What is the primary disadvantage of synchronous communication chains in microservices?
     - A) They are more complex to code
-    - B) A slow downstream service blocks threads upstream â†’ cascading latency
+    - B) A slow downstream service blocks threads upstream → cascading latency
     - C) They use more memory
     - D) They require HTTP/2
 
@@ -972,7 +972,7 @@ stateDiagram-v2
 
 6. What is the recommended starting architecture for a new product with an unknown scaling profile?
     - A) Full microservices with event sourcing
-    - B) Modular monolith â€” extract services when needed
+    - B) Modular monolith — extract services when needed
     - C) Serverless functions only
     - D) Monolith with no module boundaries
 

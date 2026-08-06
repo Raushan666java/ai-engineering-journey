@@ -1,4 +1,4 @@
-﻿# Chapter 12: Laravel AI SDK â†’ Agents, Prompting & Structured Output
+# Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output
 > **Previous:** [Caching, Performance & Octane](./11-caching-performance) | **Next:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools)
 
 ---
@@ -256,7 +256,7 @@ class CoachingController extends Controller
 }
 ```
 
-The `PendingAgentRequest` is configurable â†’ override the provider, model, max tokens, and timeout:
+The `PendingAgentRequest` is configurable → override the provider, model, max tokens, and timeout:
 
 ```php
 <?php
@@ -408,7 +408,7 @@ use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Laravel\Ai\Contracts\Agent;
 use Laravel\Ai\HasStructuredOutput;
 
-> **Warning:** Structured output enforces the response shape â€” if the model produces output that violates the schema, the SDK throws an exception. Design your schemas with nullable and optional fields for real-world data variability.
+> **Warning:** Structured output enforces the response shape — if the model produces output that violates the schema, the SDK throws an exception. Design your schemas with nullable and optional fields for real-world data variability.
 use Laravel\Ai\Promptable;
 use Stringable;
 
@@ -830,7 +830,7 @@ class QuickController extends Controller
 | Error Handling | Try/catch | then() callback | catch() callback |
 | Best For | Simple questions | Chat interfaces | Heavy processing |
 
-## Quick Reference â€” AI SDK Artisan Commands
+## Quick Reference — AI SDK Artisan Commands
 
 | Command | Purpose |
 |---------|---------|
@@ -904,7 +904,7 @@ class QuickController extends Controller
 
 ### Application Problems
 
-1. Create a `CodeReviewer` agent class that analyzes submitted PHP code and returns structured output containing an array of `issues` â†’ each with a `severity` enum (error, warning, suggestion), a `line` number, and a `message`. Use `HasStructuredOutput` with a nested object inside an array.
+1. Create a `CodeReviewer` agent class that analyzes submitted PHP code and returns structured output containing an array of `issues` → each with a `severity` enum (error, warning, suggestion), a `line` number, and a `message`. Use `HasStructuredOutput` with a nested object inside an array.
 
 2. Implement a controller endpoint that accepts a conversation ID and a message, continues an existing conversation with a support agent, streams the response using the Vercel AI SDK protocol, and broadcasts each chunk to a Pusher channel named `chat.{conversation_id}`.
 

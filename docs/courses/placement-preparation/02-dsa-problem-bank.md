@@ -1,8 +1,8 @@
-﻿# DSA Coding Problem Bank for Placement Interviews
+# DSA Coding Problem Bank for Placement Interviews
 
 > **Previous:** [Chapter 1: Resume Building, LinkedIn & Aptitude](./01-resume-aptitude.md) | **Next:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md)
 
-> **125 curated problems** â€” Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, Miscellaneous, Low-Level Design & OOP (Q101-Q115), and Concurrency & Multithreading (Q116-Q125). Every solution includes a complete, compilable Java class with main method, complexity analysis, and company tags.
+> **125 curated problems** — Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, Miscellaneous, Low-Level Design & OOP (Q101-Q115), and Concurrency & Multithreading (Q116-Q125). Every solution includes a complete, compilable Java class with main method, complexity analysis, and company tags.
 
 ---
 
@@ -31,7 +31,7 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| **Arrays** | Hash maps optimize O(nÂ²) to O(n) lookups | Master two-pointer, sliding window, prefix sum patterns |
+| **Arrays** | Hash maps optimize O(n²) to O(n) lookups | Master two-pointer, sliding window, prefix sum patterns |
 | **Strings** | Character frequency counting via arrays is faster than HashMap | Use 26/128-sized int arrays for ASCII problems |
 | **Linked Lists** | Fast & slow pointer detects cycles and finds middle | Dummy nodes simplify edge cases in insertion/deletion |
 | **Trees** | Recursion mirrors tree structure naturally | Practice iterative traversals (stack-based) for interviews |
@@ -72,7 +72,7 @@ flowchart TD
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Apple · Meta · Bloomberg · Uber
 
 ```java
 import java.util.HashMap;
@@ -101,12 +101,12 @@ public class TwoSum {
 }
 ```
 
-- **Time:** O(n) â†’ single pass with hashmap
-- **Space:** O(n) â†’ map stores up to n elements
+- **Time:** O(n) → single pass with hashmap
+- **Space:** O(n) → map stores up to n elements
 
 ---
 
-> **Pro Tip:** Always ask about input constraints (sorted? duplicates? negative?) before coding â€” interviewers evaluate your clarifying questions as much as your solution.
+> **Pro Tip:** Always ask about input constraints (sorted? duplicates? negative?) before coding — interviewers evaluate your clarifying questions as much as your solution.
 
 ### Q2: Best Time to Buy and Sell Stock
 
@@ -115,7 +115,7 @@ public class TwoSum {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Google Ã‚Â· Goldman Sachs Ã‚Â· Uber Ã‚Â· JP Morgan
+**Companies:** Amazon · Microsoft · Meta · Bloomberg · Google · Goldman Sachs · Uber · JP Morgan
 
 ```java
 public class BestTimeToBuyAndSellStock {
@@ -140,7 +140,7 @@ public class BestTimeToBuyAndSellStock {
 }
 ```
 
-- **Time:** O(n) â†’ single pass
+- **Time:** O(n) → single pass
 - **Space:** O(1)
 
 ---
@@ -152,7 +152,7 @@ public class BestTimeToBuyAndSellStock {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Meta Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Uber Ã‚Â· Google Ã‚Â· Adobe
+**Companies:** Amazon · Meta · Microsoft · Apple · Uber · Google · Adobe
 
 ```java
 import java.util.Arrays;
@@ -194,7 +194,7 @@ public class ProductOfArrayExceptSelf {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· LinkedIn Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · LinkedIn · Apple · Meta · Bloomberg
 
 ```java
 public class MaximumSubarray {
@@ -228,7 +228,7 @@ public class MaximumSubarray {
 
 **Difficulty:** Medium
 
-**Companies:** Microsoft Ã‚Â· Amazon Ã‚Â· Google Ã‚Â· Uber Ã‚Â· Bloomberg Ã‚Â· Meta Ã‚Â· Oracle
+**Companies:** Microsoft · Amazon · Google · Uber · Bloomberg · Meta · Oracle
 
 ```java
 public class FindMinimumInRotatedSortedArray {
@@ -253,7 +253,7 @@ public class FindMinimumInRotatedSortedArray {
 }
 ```
 
-- **Time:** O(log n) â†’ binary search
+- **Time:** O(log n) → binary search
 - **Space:** O(1)
 
 ---
@@ -265,7 +265,7 @@ public class FindMinimumInRotatedSortedArray {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Adobe Ã‚Â· Microsoft Ã‚Â· Bloomberg
+**Companies:** Amazon · Google · Meta · Apple · Adobe · Microsoft · Bloomberg
 
 ```java
 public class ContainerWithMostWater {
@@ -292,7 +292,7 @@ public class ContainerWithMostWater {
 }
 ```
 
-- **Time:** O(n) â†’ two-pointer sweep
+- **Time:** O(n) → two-pointer sweep
 - **Space:** O(1)
 
 ---
@@ -304,7 +304,7 @@ public class ContainerWithMostWater {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Meta Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Netflix
+**Companies:** Amazon · Meta · Microsoft · Google · Apple · Bloomberg · Netflix
 
 ```java
 import java.util.*;
@@ -342,7 +342,7 @@ public class ThreeSum {
 }
 ```
 
-- **Time:** O(nÃ‚Â²)
+- **Time:** O(n²)
 - **Space:** O(1) excluding output
 
 ---
@@ -350,11 +350,11 @@ public class ThreeSum {
 ### Q8: Merge Intervals
 
 
-**Problem:** Given an array of intervals where `intervals[i] = [startÃ¡ÂµÂ¢, endÃ¡ÂµÂ¢]`, merge all overlapping intervals and return an array of non-overlapping intervals covering all input intervals.
+**Problem:** Given an array of intervals where `intervals[i] = [startᵢ, endᵢ]`, merge all overlapping intervals and return an array of non-overlapping intervals covering all input intervals.
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Bloomberg Ã‚Â· Uber Ã‚Â· Meta Ã‚Â· Cisco
+**Companies:** Amazon · Google · Microsoft · Bloomberg · Uber · Meta · Cisco
 
 ```java
 import java.util.*;
@@ -386,7 +386,7 @@ public class MergeIntervals {
 }
 ```
 
-- **Time:** O(n log n) â†’ dominated by sorting
+- **Time:** O(n log n) → dominated by sorting
 - **Space:** O(n) for output
 
 ---
@@ -398,7 +398,7 @@ public class MergeIntervals {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Apple Ã‚Â· Goldman Sachs
+**Companies:** Amazon · Google · Microsoft · Meta · Bloomberg · Apple · Goldman Sachs
 
 ```java
 import java.util.Arrays;
@@ -448,7 +448,7 @@ public class NextPermutation {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Adobe Ã‚Â· Walmart
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Adobe · Walmart
 
 ```java
 import java.util.Arrays;
@@ -482,7 +482,7 @@ public class SortColors {
 }
 ```
 
-- **Time:** O(n) â†’ one pass
+- **Time:** O(n) → one pass
 - **Space:** O(1)
 
 ---
@@ -494,7 +494,7 @@ public class SortColors {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Netflix
+**Companies:** Amazon · Google · Meta · Microsoft · Apple · Bloomberg · Netflix
 
 ```java
 import java.util.HashMap;
@@ -536,7 +536,7 @@ public class SubarraySumEqualsK {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Adobe Ã‚Â· Oracle
+**Companies:** Amazon · Google · Microsoft · Apple · Meta · Adobe · Oracle
 
 ```java
 public class FirstMissingPositive {
@@ -577,7 +577,7 @@ public class FirstMissingPositive {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Intel
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Intel
 
 ```java
 import java.util.HashMap;
@@ -607,7 +607,7 @@ public class LongestSubstringWithoutRepeating {
 ```
 
 - **Time:** O(n)
-- **Space:** O(min(m, n)) â†’ m = charset size
+- **Space:** O(min(m, n)) → m = charset size
 
 ---
 
@@ -618,7 +618,7 @@ public class LongestSubstringWithoutRepeating {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Nvidia
 
 ```java
 import java.util.Arrays;
@@ -646,7 +646,7 @@ public class ValidAnagram {
 ```
 
 - **Time:** O(n)
-- **Space:** O(1) â†’ fixed 26-size array
+- **Space:** O(1) → fixed 26-size array
 
 ---
 
@@ -657,7 +657,7 @@ public class ValidAnagram {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· PayPal
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · PayPal
 
 ```java
 public class LongestPalindromicSubstring {
@@ -692,7 +692,7 @@ public class LongestPalindromicSubstring {
 }
 ```
 
-- **Time:** O(nÃ‚Â²) â†’ expands from each center
+- **Time:** O(n²) → expands from each center
 - **Space:** O(1)
 
 ---
@@ -704,7 +704,7 @@ public class LongestPalindromicSubstring {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Apple Ã‚Â· Cisco
+**Companies:** Amazon · Google · Microsoft · Meta · Bloomberg · Apple · Cisco
 
 ```java
 import java.util.*;
@@ -730,8 +730,8 @@ public class GroupAnagrams {
 }
 ```
 
-- **Time:** O(n Ã‚Â· k log k) â†’ n = words, k = avg word length
-- **Space:** O(n Ã‚Â· k)
+- **Time:** O(n · k log k) → n = words, k = avg word length
+- **Space:** O(n · k)
 
 ---
 
@@ -742,7 +742,7 @@ public class GroupAnagrams {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· LinkedIn Ã‚Â· Apple Ã‚Â· Salesforce
+**Companies:** Amazon · Google · Microsoft · Meta · LinkedIn · Apple · Salesforce
 
 ```java
 import java.util.ArrayDeque;
@@ -783,7 +783,7 @@ public class ValidParentheses {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Meta Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Google Ã‚Â· Bloomberg Ã‚Â· Goldman Sachs Ã‚Â· JP Morgan
+**Companies:** Amazon · Meta · Microsoft · Apple · Google · Bloomberg · Goldman Sachs · JP Morgan
 
 ```java
 public class CountAndSay {
@@ -815,8 +815,8 @@ public class CountAndSay {
 }
 ```
 
-- **Time:** O(2Ã¢ÂÂ¿) â†’ length grows exponentially
-- **Space:** O(2Ã¢ÂÂ¿)
+- **Time:** O(2ⁿ) → length grows exponentially
+- **Space:** O(2ⁿ)
 
 ---
 
@@ -827,7 +827,7 @@ public class CountAndSay {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Google Ã‚Â· Bloomberg Ã‚Â· Salesforce
+**Companies:** Amazon · Microsoft · Apple · Meta · Google · Bloomberg · Salesforce
 
 ```java
 public class ImplementStrStr {
@@ -852,7 +852,7 @@ public class ImplementStrStr {
 }
 ```
 
-- **Time:** O(nÃ‚Â·m) worst-case; average O(n + m)
+- **Time:** O(n·m) worst-case; average O(n + m)
 - **Space:** O(1)
 
 ---
@@ -860,11 +860,11 @@ public class ImplementStrStr {
 ### Q20: String to Integer (atoi)
 
 
-**Problem:** Implement `myAtoi(string s)` which converts a string to a 32-bit signed integer. Skip leading whitespace, handle +/- sign, read digits, clamp to [Ã¢Ë†â€™2Ã‚Â³Ã‚Â¹, 2Ã‚Â³Ã‚Â¹Ã¢Ë†â€™1].
+**Problem:** Implement `myAtoi(string s)` which converts a string to a 32-bit signed integer. Skip leading whitespace, handle +/- sign, read digits, clamp to [−2³¹, 2³¹−1].
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Google Ã‚Â· Bloomberg Ã‚Â· IBM
+**Companies:** Amazon · Microsoft · Meta · Apple · Google · Bloomberg · IBM
 
 ```java
 public class StringToInteger {
@@ -910,7 +910,7 @@ public class StringToInteger {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Nvidia
 
 ```java
 public class ReverseLinkedList {
@@ -961,7 +961,7 @@ public class ReverseLinkedList {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Oracle
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Oracle
 
 ```java
 public class LinkedListCycle {
@@ -1005,7 +1005,7 @@ public class LinkedListCycle {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· PayPal Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · PayPal · Adobe
 
 ```java
 public class MergeTwoSortedLists {
@@ -1061,7 +1061,7 @@ public class MergeTwoSortedLists {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Intel
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Intel
 
 ```java
 public class RemoveNthFromEnd {
@@ -1114,7 +1114,7 @@ public class RemoveNthFromEnd {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Cisco Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Apple · Meta · Cisco · Adobe
 
 ```java
 public class MiddleOfLinkedList {
@@ -1158,7 +1158,7 @@ public class MiddleOfLinkedList {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Uber
 
 ```java
 public class AddTwoNumbers {
@@ -1212,7 +1212,7 @@ public class AddTwoNumbers {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Walmart Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Walmart · Adobe
 
 ```java
 public class IntersectionOfTwoLinkedLists {
@@ -1258,7 +1258,7 @@ public class IntersectionOfTwoLinkedLists {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Netflix Ã‚Â· PayPal
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Netflix · PayPal
 
 ```java
 import java.util.HashMap;
@@ -1352,7 +1352,7 @@ public class LRUCache {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· IBM
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · IBM
 
 ```java
 public class MaximumDepthOfBinaryTree {
@@ -1391,7 +1391,7 @@ public class MaximumDepthOfBinaryTree {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Salesforce Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Salesforce · Uber
 
 ```java
 public class InvertBinaryTree {
@@ -1433,7 +1433,7 @@ public class InvertBinaryTree {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Nvidia
 
 ```java
 public class ValidateBST {
@@ -1475,7 +1475,7 @@ public class ValidateBST {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Intel
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Intel
 
 ```java
 import java.util.*;
@@ -1530,7 +1530,7 @@ public class LevelOrderTraversal {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Goldman Sachs Ã‚Â· Uber Ã‚Â· JP Morgan
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Goldman Sachs · Uber · JP Morgan
 
 ```java
 import java.util.*;
@@ -1599,7 +1599,7 @@ public class SerializeDeserializeBT {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Cisco
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Cisco
 
 ```java
 public class LowestCommonAncestorBST {
@@ -1647,7 +1647,7 @@ public class LowestCommonAncestorBST {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Oracle Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Oracle · Adobe
 
 ```java
 public class DiameterOfBinaryTree {
@@ -1696,7 +1696,7 @@ public class DiameterOfBinaryTree {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Walmart
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Walmart
 
 ```java
 public class BalancedBinaryTree {
@@ -1744,7 +1744,7 @@ public class BalancedBinaryTree {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· PayPal Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · PayPal · Adobe
 
 ```java
 public class SymmetricTree {
@@ -1789,7 +1789,7 @@ public class SymmetricTree {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· IBM Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · IBM · Adobe
 
 ```java
 import java.util.*;
@@ -1844,7 +1844,7 @@ public class BinaryTreeRightSideView {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Apple · Meta · Bloomberg · Nvidia
 
 ```java
 public class ClimbingStairs {
@@ -1878,7 +1878,7 @@ public class ClimbingStairs {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Salesforce Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Salesforce · Uber
 
 ```java
 import java.util.Arrays;
@@ -1906,7 +1906,7 @@ public class CoinChange {
 }
 ```
 
-- **Time:** O(amount Ãƒâ€” n) â†’ n = number of coin types
+- **Time:** O(amount × n) → n = number of coin types
 - **Space:** O(amount)
 
 ---
@@ -1918,7 +1918,7 @@ public class CoinChange {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Intel
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Intel
 
 ```java
 import java.util.Arrays;
@@ -1944,7 +1944,7 @@ public class LongestIncreasingSubsequence {
 }
 ```
 
-- **Time:** O(n log n) â†’ binary search on tails
+- **Time:** O(n log n) → binary search on tails
 - **Space:** O(n)
 
 ---
@@ -1956,7 +1956,7 @@ public class LongestIncreasingSubsequence {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Netflix Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Netflix · Adobe
 
 ```java
 public class LongestCommonSubsequence {
@@ -1982,8 +1982,8 @@ public class LongestCommonSubsequence {
 }
 ```
 
-- **Time:** O(mÃ‚Â·n)
-- **Space:** O(mÃ‚Â·n)
+- **Time:** O(m·n)
+- **Space:** O(m·n)
 
 ---
 
@@ -1994,7 +1994,7 @@ public class LongestCommonSubsequence {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Cisco Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Cisco · Uber
 
 ```java
 public class Knapsack01 {
@@ -2023,8 +2023,8 @@ public class Knapsack01 {
 }
 ```
 
-- **Time:** O(n Ã‚Â· W)
-- **Space:** O(n Ã‚Â· W) â†’ can be optimized to O(W)
+- **Time:** O(n · W)
+- **Space:** O(n · W) → can be optimized to O(W)
 
 ---
 
@@ -2035,7 +2035,7 @@ public class Knapsack01 {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Goldman Sachs Ã‚Â· Uber Ã‚Â· JP Morgan
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Goldman Sachs · Uber · JP Morgan
 
 ```java
 public class EditDistance {
@@ -2064,8 +2064,8 @@ public class EditDistance {
 }
 ```
 
-- **Time:** O(mÃ‚Â·n)
-- **Space:** O(mÃ‚Â·n) â†’ can be optimized to O(min(m,n))
+- **Time:** O(m·n)
+- **Space:** O(m·n) → can be optimized to O(min(m,n))
 
 ---
 
@@ -2076,7 +2076,7 @@ public class EditDistance {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· IBM Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Apple · Meta · IBM · Adobe
 
 ```java
 public class HouseRobber {
@@ -2113,7 +2113,7 @@ public class HouseRobber {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· LinkedIn Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Walmart
+**Companies:** Amazon · Google · Microsoft · LinkedIn · Meta · Apple · Walmart
 
 ```java
 public class MaximumProductSubarray {
@@ -2152,7 +2152,7 @@ public class MaximumProductSubarray {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· PayPal Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · PayPal · Uber
 
 ```java
 import java.util.*;
@@ -2181,7 +2181,7 @@ public class WordBreak {
 }
 ```
 
-- **Time:** O(nÃ‚Â³) â†’ substring is O(n)
+- **Time:** O(n³) → substring is O(n)
 - **Space:** O(n)
 
 ---
@@ -2193,7 +2193,7 @@ public class WordBreak {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Oracle Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Oracle · Adobe
 
 ```java
 public class PalindromicSubstrings {
@@ -2223,7 +2223,7 @@ public class PalindromicSubstrings {
 }
 ```
 
-- **Time:** O(nÃ‚Â²)
+- **Time:** O(n²)
 - **Space:** O(1)
 
 ---
@@ -2231,11 +2231,11 @@ public class PalindromicSubstrings {
 ### Q49: Unique Paths
 
 
-**Problem:** A robot is at top-left corner of an `m Ãƒâ€” n` grid. It can only move down or right. How many unique paths to bottom-right corner?
+**Problem:** A robot is at top-left corner of an `m × n` grid. It can only move down or right. How many unique paths to bottom-right corner?
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Nvidia
 
 ```java
 public class UniquePaths {
@@ -2258,8 +2258,8 @@ public class UniquePaths {
 }
 ```
 
-- **Time:** O(mÃ‚Â·n)
-- **Space:** O(mÃ‚Â·n) â†’ can be O(n)
+- **Time:** O(m·n)
+- **Space:** O(m·n) → can be O(n)
 
 ---
 
@@ -2270,7 +2270,7 @@ public class UniquePaths {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Salesforce Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Salesforce · Adobe
 
 ```java
 public class PartitionEqualSubsetSum {
@@ -2297,7 +2297,7 @@ public class PartitionEqualSubsetSum {
 }
 ```
 
-- **Time:** O(n Ã‚Â· target) where target = total/2
+- **Time:** O(n · target) where target = total/2
 - **Space:** O(target)
 
 ---
@@ -2311,7 +2311,7 @@ public class PartitionEqualSubsetSum {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Netflix Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Netflix · Uber
 
 ```java
 import java.util.*;
@@ -2364,11 +2364,11 @@ public class CloneGraph {
 ### Q52: Number of Islands
 
 
-**Problem:** Given an `m Ãƒâ€” n` 2D grid of `'1'` (land) and `'0'` (water), return the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically.
+**Problem:** Given an `m × n` 2D grid of `'1'` (land) and `'0'` (water), return the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically.
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Intel
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Intel
 
 ```java
 public class NumberOfIslands {
@@ -2408,8 +2408,8 @@ public class NumberOfIslands {
 }
 ```
 
-- **Time:** O(mÃ‚Â·n)
-- **Space:** O(mÃ‚Â·n) worst-case recursion
+- **Time:** O(m·n)
+- **Space:** O(m·n) worst-case recursion
 
 ---
 
@@ -2420,7 +2420,7 @@ public class NumberOfIslands {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Cisco Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Cisco · Adobe
 
 ```java
 import java.util.*;
@@ -2469,7 +2469,7 @@ public class CourseSchedule {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· LinkedIn Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· PayPal
+**Companies:** Amazon · Google · LinkedIn · Microsoft · Meta · Apple · PayPal
 
 ```java
 import java.util.*;
@@ -2521,7 +2521,7 @@ public class GraphValidTree {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· IBM Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · IBM · Uber
 
 ```java
 import java.util.*;
@@ -2564,19 +2564,19 @@ public class WordLadder {
 }
 ```
 
-- **Time:** O(MÃ‚Â² Ã‚Â· N) â†’ M = word length, N = dictionary size
-- **Space:** O(M Ã‚Â· N)
+- **Time:** O(M² · N) → M = word length, N = dictionary size
+- **Space:** O(M · N)
 
 ---
 
 ### Q56: Pacific Atlantic Water Flow
 
 
-**Problem:** Given an `m Ãƒâ€” n` matrix of heights, water flows from a cell to neighbors with equal or lower height. Return all cells where water can flow to both the Pacific (top/left edges) and Atlantic (bottom/right edges) oceans.
+**Problem:** Given an `m × n` matrix of heights, water flows from a cell to neighbors with equal or lower height. Return all cells where water can flow to both the Pacific (top/left edges) and Atlantic (bottom/right edges) oceans.
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Walmart Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Walmart · Uber
 
 ```java
 import java.util.*;
@@ -2630,8 +2630,8 @@ public class PacificAtlanticWaterFlow {
 }
 ```
 
-- **Time:** O(mÃ‚Â·n)
-- **Space:** O(mÃ‚Â·n)
+- **Time:** O(m·n)
+- **Space:** O(m·n)
 
 ---
 
@@ -2642,7 +2642,7 @@ public class PacificAtlanticWaterFlow {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Nvidia
 
 ```java
 import java.util.*;
@@ -2696,8 +2696,8 @@ public class AlienDictionary {
 }
 ```
 
-- **Time:** O(C) â†’ C = total characters
-- **Space:** O(1) â†’ max 26 letters
+- **Time:** O(C) → C = total characters
+- **Space:** O(1) → max 26 letters
 
 ---
 
@@ -2708,7 +2708,7 @@ public class AlienDictionary {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Oracle Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Oracle · Uber
 
 ```java
 import java.util.*;
@@ -2749,7 +2749,7 @@ public class CheapestFlightsWithinKStops {
 }
 ```
 
-- **Time:** O(VÃ‚Â² log V) worst-case with Dijkstra
+- **Time:** O(V² log V) worst-case with Dijkstra
 - **Space:** O(V + E)
 
 ---
@@ -2763,7 +2763,7 @@ public class CheapestFlightsWithinKStops {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.ArrayDeque;
@@ -2819,7 +2819,7 @@ public class MinStack {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Cisco Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Cisco · Adobe
 
 ```java
 import java.util.ArrayDeque;
@@ -2858,11 +2858,11 @@ public class DailyTemperatures {
 ### Q61: Kth Largest Element in an Array
 
 
-**Problem:** Given an integer array `nums` and an integer `k`, return the kÃ¡Âµâ€”ÃŠÂ° largest element in the array (not k distinct elements, just the kÃ¡Âµâ€”ÃŠÂ° largest by value).
+**Problem:** Given an integer array `nums` and an integer `k`, return the kᵗʰ largest element in the array (not k distinct elements, just the kᵗʰ largest by value).
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Salesforce Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Salesforce · Adobe
 
 ```java
 import java.util.PriorityQueue;
@@ -2886,7 +2886,7 @@ public class KthLargestElement {
 ```
 
 - **Time:** O(n log k)
-- **Space:** O(k) â†’ heap size
+- **Space:** O(k) → heap size
 
 ---
 
@@ -2897,7 +2897,7 @@ public class KthLargestElement {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Goldman Sachs Ã‚Â· Uber Ã‚Â· JP Morgan
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Goldman Sachs · Uber · JP Morgan
 
 ```java
 import java.util.PriorityQueue;
@@ -2942,7 +2942,7 @@ public class MedianFinder {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Cisco
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Cisco
 
 ```java
 import java.util.*;
@@ -2983,7 +2983,7 @@ public class TopKFrequentElements {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Intel Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Intel · Adobe
 
 ```java
 import java.util.ArrayDeque;
@@ -3025,7 +3025,7 @@ public class LargestRectangleInHistogram {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· IBM Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · IBM · Uber
 
 ```java
 import java.util.*;
@@ -3067,7 +3067,7 @@ public class SlidingWindowMaximum {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Intel
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Intel
 
 ```java
 import java.util.Arrays;
@@ -3116,7 +3116,7 @@ public class BinarySearchFirstLast {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Oracle Ã‚Â· Uber
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Oracle · Uber
 
 ```java
 public class SearchInRotatedSortedArray {
@@ -3158,11 +3158,11 @@ public class SearchInRotatedSortedArray {
 ### Q68: Kth Smallest Element in a Sorted Matrix
 
 
-**Problem:** Given an `n Ãƒâ€” n` matrix where each row and column is sorted, find the kÃ¡Âµâ€”ÃŠÂ° smallest element.
+**Problem:** Given an `n × n` matrix where each row and column is sorted, find the kᵗʰ smallest element.
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· PayPal Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · PayPal · Adobe
 
 ```java
 import java.util.PriorityQueue;
@@ -3204,7 +3204,7 @@ public class KthSmallestInSortedMatrix {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Nvidia
 
 ```java
 public class FindPeakElement {
@@ -3241,7 +3241,7 @@ public class FindPeakElement {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Walmart Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Walmart · Adobe
 
 ```java
 import java.util.Arrays;
@@ -3282,7 +3282,7 @@ public class MergeSortedArray {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.Map;
@@ -3322,11 +3322,11 @@ public class RomanToInteger {
 ### Q72: Excel Sheet Column Number
 
 
-**Problem:** Given a string `columnTitle` (like "A", "AB", "ZY"), return its corresponding column number. A â†’ 1, B â†’ 2, ..., Z â†’ 26, AA â†’ 27, AB â†’ 28.
+**Problem:** Given a string `columnTitle` (like "A", "AB", "ZY"), return its corresponding column number. A → 1, B → 2, ..., Z → 26, AA → 27, AB → 28.
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Oracle Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Meta · Apple · Oracle · Adobe
 
 ```java
 public class ExcelSheetColumnNumber {
@@ -3359,7 +3359,7 @@ public class ExcelSheetColumnNumber {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Nvidia
+**Companies:** Amazon · Google · Microsoft · Apple · Meta · Bloomberg · Nvidia
 
 ```java
 import java.util.HashSet;
@@ -3388,7 +3388,7 @@ public class HappyNumber {
 }
 ```
 
-- **Time:** O(log n) â†’ digit count shrinks fast
+- **Time:** O(log n) → digit count shrinks fast
 - **Space:** O(log n)
 
 ---
@@ -3400,7 +3400,7 @@ public class HappyNumber {
 
 **Difficulty:** Easy
 
-**Companies:** Google Ã‚Â· Amazon Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Google · Amazon · Microsoft · Apple · Meta · Bloomberg · Adobe
 
 ```java
 public class PowerOfThree {
@@ -3420,7 +3420,7 @@ public class PowerOfThree {
 - **Time:** O(1)
 - **Space:** O(1)
 
-> **Explanation:** 1162261467 = 3Ã‚Â¹Ã¢ÂÂ¹, the largest power of three that fits in a 32-bit signed integer. Any power of three divides this number.
+> **Explanation:** 1162261467 = 3¹⁹, the largest power of three that fits in a 32-bit signed integer. Any power of three divides this number.
 
 ---
 
@@ -3435,7 +3435,7 @@ public class PowerOfThree {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Ã‚Â· Google Ã‚Â· Microsoft Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Google · Microsoft · Apple · Meta · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -3473,13 +3473,13 @@ public class FizzBuzz {
 
 | Company | Problem Numbers |
 |---------|----------------|
-| Amazon | 1â€“100 |
-| Google | 1â€“100 |
-| Microsoft | 1â€“100 |
-| Meta | 1â€“100 |
-| Apple | 1â€“100 |
-| Bloomberg | 1â€“100 |
-| Adobe | 1â€“100 |
+| Amazon | 1–100 |
+| Google | 1–100 |
+| Microsoft | 1–100 |
+| Meta | 1–100 |
+| Apple | 1–100 |
+| Bloomberg | 1–100 |
+| Adobe | 1–100 |
 | Uber | 1, 2, 3, 5, 8, 12, 24, 26, 28, 30, 33, 40, 41, 43, 44, 47, 51, 55, 56, 57, 58, 62, 65, 67 |
 | LinkedIn | 4, 17, 46, 54 |
 | Netflix | 7, 11, 28, 42, 51 |
@@ -3497,7 +3497,7 @@ public class FizzBuzz {
 > **End of DSA Problem Bank.** All 100 solutions include complete, compilable Java code with `main` methods. Practice each problem by first attempting without looking at the solution, then reviewing the approach and complexity analysis.
 ---
 
-## Problems 76Ã¢â‚¬â€œ100
+## Problems 76–100
 
 ### Q76: Find All Duplicates in Array
 
@@ -3506,7 +3506,7 @@ public class FizzBuzz {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Apple · Meta · Bloomberg
 
 ```java
 import java.util.*;
@@ -3533,7 +3533,7 @@ public class FindAllDuplicates {
 }
 ```
 
-- **Time:** O(n) â†’ single pass with index marking
+- **Time:** O(n) → single pass with index marking
 - **Space:** O(1) excluding output
 
 ---
@@ -3545,7 +3545,7 @@ public class FindAllDuplicates {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 import java.util.*;
@@ -3576,8 +3576,8 @@ public class LongestConsecutiveSequence {
 }
 ```
 
-- **Time:** O(n) â†’ each element visited at most twice
-- **Space:** O(n) â†’ set storage
+- **Time:** O(n) → each element visited at most twice
+- **Space:** O(n) → set storage
 
 ---
 
@@ -3588,7 +3588,7 @@ public class LongestConsecutiveSequence {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 public class MaxAreaOfIsland {
@@ -3636,8 +3636,8 @@ public class MaxAreaOfIsland {
 }
 ```
 
-- **Time:** O(m Ãƒâ€” n) â†’ each cell visited once
-- **Space:** O(m Ãƒâ€” n) worst-case recursion stack
+- **Time:** O(m × n) → each cell visited once
+- **Space:** O(m × n) worst-case recursion stack
 
 ---
 
@@ -3648,7 +3648,7 @@ public class MaxAreaOfIsland {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Apple Ã‚Â· Meta Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Apple · Meta · Bloomberg
 
 ```java
 public class JumpGameII {
@@ -3672,7 +3672,7 @@ public class JumpGameII {
 }
 ```
 
-- **Time:** O(n) â†’ greedy BFS
+- **Time:** O(n) → greedy BFS
 - **Space:** O(1)
 
 ---
@@ -3684,7 +3684,7 @@ public class JumpGameII {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -3719,8 +3719,8 @@ public class CombinationSum {
 }
 ```
 
-- **Time:** O(2^{target/min}) â†’ branching factor
-- **Space:** O(target/min) â†’ recursion depth
+- **Time:** O(2^{target/min}) → branching factor
+- **Space:** O(target/min) → recursion depth
 
 ---
 
@@ -3731,7 +3731,7 @@ public class CombinationSum {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -3769,8 +3769,8 @@ public class Permutations {
 }
 ```
 
-- **Time:** O(n Ãƒâ€” n!) â†’ n! permutations, O(n) to copy each
-- **Space:** O(n) â†’ recursion stack and used array
+- **Time:** O(n × n!) → n! permutations, O(n) to copy each
+- **Space:** O(n) → recursion stack and used array
 
 ---
 
@@ -3781,7 +3781,7 @@ public class Permutations {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.Arrays;
@@ -3816,7 +3816,7 @@ public class RotateImage {
 }
 ```
 
-- **Time:** O(nÃ‚Â²)
+- **Time:** O(n²)
 - **Space:** O(1)
 
 ---
@@ -3828,7 +3828,7 @@ public class RotateImage {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe Ã‚Â· Cisco
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe · Cisco
 
 ```java
 import java.util.*;
@@ -3863,7 +3863,7 @@ public class SpiralMatrix {
 }
 ```
 
-- **Time:** O(m Ãƒâ€” n)
+- **Time:** O(m × n)
 - **Space:** O(1) excluding output
 
 ---
@@ -3875,7 +3875,7 @@ public class SpiralMatrix {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.Arrays;
@@ -3912,7 +3912,7 @@ public class SetMatrixZeroes {
 }
 ```
 
-- **Time:** O(m Ãƒâ€” n)
+- **Time:** O(m × n)
 - **Space:** O(1)
 
 ---
@@ -3924,7 +3924,7 @@ public class SetMatrixZeroes {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Cisco
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Cisco
 
 ```java
 public class WordSearch {
@@ -3970,8 +3970,8 @@ public class WordSearch {
 }
 ```
 
-- **Time:** O(m Ãƒâ€” n Ãƒâ€” 4^L) â†’ L = word length
-- **Space:** O(L) â†’ recursion stack
+- **Time:** O(m × n × 4^L) → L = word length
+- **Space:** O(L) → recursion stack
 ---
 
 ### Q86: Construct Binary Tree from Preorder and Inorder Traversal
@@ -3981,7 +3981,7 @@ public class WordSearch {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -4033,7 +4033,7 @@ public class ConstructBinaryTree {
 ```
 
 - **Time:** O(n)
-- **Space:** O(n) â†’ map and recursion stack
+- **Space:** O(n) → map and recursion stack
 
 ---
 
@@ -4044,7 +4044,7 @@ public class ConstructBinaryTree {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -4081,7 +4081,7 @@ public class KthSmallestBST {
 ```
 
 - **Time:** O(n) worst-case, O(h + k) average
-- **Space:** O(h) â†’ stack height
+- **Space:** O(h) → stack height
 
 ---
 
@@ -4092,7 +4092,7 @@ public class KthSmallestBST {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -4133,7 +4133,7 @@ public class ZigzagLevelOrder {
 ```
 
 - **Time:** O(n)
-- **Space:** O(n) â†’ queue holds up to n nodes
+- **Space:** O(n) → queue holds up to n nodes
 
 ---
 
@@ -4144,7 +4144,7 @@ public class ZigzagLevelOrder {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 class NodeWithNext {
@@ -4199,7 +4199,7 @@ public class PopulatingNextRight {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 public class FlattenBinaryTree {
@@ -4252,7 +4252,7 @@ public class FlattenBinaryTree {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 import java.util.*;
@@ -4293,19 +4293,19 @@ public class PalindromePartitioning {
 }
 ```
 
-- **Time:** O(n Ãƒâ€” 2^n) â†’ worst-case exponential
-- **Space:** O(n) â†’ recursion depth
+- **Time:** O(n × 2^n) → worst-case exponential
+- **Space:** O(n) → recursion depth
 
 ---
 
 ### Q92: Decode Ways
 
 
-**Problem:** A message containing letters A-Z is encoded as '1'â†’'A', '2'â†’'B', ..., '26'â†’'Z'. Given a string `s` containing only digits, return the number of ways to decode it.
+**Problem:** A message containing letters A-Z is encoded as '1'→'A', '2'→'B', ..., '26'→'Z'. Given a string `s` containing only digits, return the number of ways to decode it.
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 public class DecodeWays {
@@ -4334,7 +4334,7 @@ public class DecodeWays {
 ```
 
 - **Time:** O(n)
-- **Space:** O(n) â†’ can be optimized to O(1)
+- **Space:** O(n) → can be optimized to O(1)
 
 ---
 
@@ -4345,7 +4345,7 @@ public class DecodeWays {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 public class GasStation {
@@ -4384,7 +4384,7 @@ public class GasStation {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 import java.util.Arrays;
@@ -4417,7 +4417,7 @@ public class Candy {
 }
 ```
 
-- **Time:** O(n) â†’ two passes
+- **Time:** O(n) → two passes
 - **Space:** O(n)
 
 ---
@@ -4425,11 +4425,11 @@ public class Candy {
 ### Q95: Majority Element II
 
 
-**Problem:** Given an integer array of size `n`, find all elements that appear more than `Ã¢Å’Å n/3Ã¢Å’â€¹` times. Use O(1) space and O(n) time.
+**Problem:** Given an integer array of size `n`, find all elements that appear more than `⌊n/3⌋` times. Use O(1) space and O(n) time.
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -4474,7 +4474,7 @@ public class MajorityElementII {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 public class FindDuplicateNumber {
@@ -4500,7 +4500,7 @@ public class FindDuplicateNumber {
 }
 ```
 
-- **Time:** O(n) â†’ Floyd's cycle detection
+- **Time:** O(n) → Floyd's cycle detection
 - **Space:** O(1)
 
 ---
@@ -4512,7 +4512,7 @@ public class FindDuplicateNumber {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 import java.util.*;
@@ -4543,7 +4543,7 @@ public class LongestSubstringKDistinct {
 ```
 
 - **Time:** O(n)
-- **Space:** O(k) â†’ map size
+- **Space:** O(k) → map size
 
 ---
 
@@ -4554,7 +4554,7 @@ public class LongestSubstringKDistinct {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg Ã‚Â· Adobe
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg · Adobe
 
 ```java
 import java.util.*;
@@ -4590,8 +4590,8 @@ public class MinimumWindowSubstring {
 }
 ```
 
-- **Time:** O(m + n) â†’ m = s length, n = t length
-- **Space:** O(1) â†’ fixed array of 128
+- **Time:** O(m + n) → m = s length, n = t length
+- **Space:** O(1) → fixed array of 128
 
 ---
 
@@ -4602,7 +4602,7 @@ public class MinimumWindowSubstring {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 import java.util.*;
@@ -4649,8 +4649,8 @@ public class AlienDictionary {
 }
 ```
 
-- **Time:** O(C) â†’ C is total characters across all words
-- **Space:** O(1) â†’ at most 26 nodes
+- **Time:** O(C) → C is total characters across all words
+- **Space:** O(1) → at most 26 nodes
 
 ---
 
@@ -4661,7 +4661,7 @@ public class AlienDictionary {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Ã‚Â· Microsoft Ã‚Â· Google Ã‚Â· Meta Ã‚Â· Apple Ã‚Â· Bloomberg
+**Companies:** Amazon · Microsoft · Google · Meta · Apple · Bloomberg
 
 ```java
 import java.util.*;
@@ -4746,8 +4746,8 @@ public class WordLadderII {
 }
 ```
 
-- **Time:** O(N Ãƒâ€” LÃ‚Â²) â†’ N = wordList size, L = word length
-- **Space:** O(N Ãƒâ€” L)
+- **Time:** O(N × L²) → N = wordList size, L = word length
+- **Space:** O(N × L)
 
 ---
 ## Coding Patterns & Techniques Cheat Sheet
@@ -5158,7 +5158,7 @@ class Trie {
 
 ---
 
-> **How to use this sheet:** Read a problem â†’ identify the pattern â†’ apply the template â†’ adapt. With practice, the mapping from problem to pattern becomes automatic. Most hard problems combine two patterns (e.g., BFS + Topological Sort, Sliding Window + HashMap, Two Pointers + Greedy).
+> **How to use this sheet:** Read a problem → identify the pattern → apply the template → adapt. With practice, the mapping from problem to pattern becomes automatic. Most hard problems combine two patterns (e.g., BFS + Topological Sort, Sliding Window + HashMap, Two Pointers + Greedy).
 
 
 ---
@@ -5172,7 +5172,7 @@ class Trie {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Google Â· Uber
+**Companies:** Amazon · Microsoft · Google · Uber
 
 **Design Patterns:** Strategy (pricing), Singleton (parking lot instance), Factory (vehicle creation), Enum for spot types
 
@@ -5311,7 +5311,7 @@ class ParkingLot {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Flipkart
+**Companies:** Amazon · Microsoft · Flipkart
 
 **Design Patterns:** Repository pattern for data access, Factory for book creation, Singleton for catalog
 
@@ -5421,7 +5421,7 @@ class Library {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Flipkart
+**Companies:** Amazon · Microsoft · Flipkart
 
 **Design Patterns:** State pattern for machine states, Singleton, Factory for product creation
 
@@ -5453,7 +5453,7 @@ class IdleState implements VendingState {
     public void selectProduct(Product p) {
         if (!vm.inventory.hasItem(p)) { System.out.println("Out of stock"); return; }
         vm.selectedProduct = p; vm.setState(vm.selectingState);
-        System.out.println("Selected " + p + ", price: " + p.price + "Â¢");
+        System.out.println("Selected " + p + ", price: " + p.price + "¢");
     }
     public void insertCoin(Coin c) { System.out.println("Select product first"); }
     public Product dispense() { System.out.println("Select product first"); return null; }
@@ -5466,7 +5466,7 @@ class SelectingState implements VendingState {
     public void selectProduct(Product p) { System.out.println("Already selected " + vm.selectedProduct); }
     public void insertCoin(Coin c) {
         vm.balance += c.value;
-        System.out.println("Inserted " + c + " (" + c.value + "Â¢), balance: " + vm.balance + "Â¢");
+        System.out.println("Inserted " + c + " (" + c.value + "¢), balance: " + vm.balance + "¢");
         if (vm.balance >= vm.selectedProduct.price) vm.setState(vm.dispensingState);
     }
     public Product dispense() {
@@ -5488,7 +5488,7 @@ class DispensingState implements VendingState {
         Product p = vm.selectedProduct;
         vm.selectedProduct = null;
         vm.setState(vm.idleState);
-        System.out.println("Dispensed " + p + ", change: " + change + "Â¢");
+        System.out.println("Dispensed " + p + ", change: " + change + "¢");
         return p;
     }
     public List<Coin> refund() { System.out.println("Already dispensing"); return List.of(); }
@@ -5571,7 +5571,7 @@ class VendingMachine {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Uber
+**Companies:** Amazon · Microsoft · Uber
 
 **Design Patterns:** Command (dice roll), Observer (notify players), Singleton (game)
 
@@ -5675,7 +5675,7 @@ class Game {
 
 **Difficulty:** Hard
 
-**Companies:** Google Â· Microsoft Â· Amazon
+**Companies:** Google · Microsoft · Amazon
 
 **Design Patterns:** Strategy (piece movement), Command (moves), Factory (piece creation), Composite (board)
 
@@ -5906,7 +5906,7 @@ class ChessGame {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Lyft
+**Companies:** Amazon · Microsoft · Lyft
 
 **Design Patterns:** Strategy (scheduling), Observer (button events), State (elevator states), Singleton (controller)
 
@@ -6007,7 +6007,7 @@ class ElevatorController {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Â· Microsoft Â· Google
+**Companies:** Amazon · Microsoft · Google
 
 **Design Patterns:** Strategy (win checking), Command (moves), Observer (UI updates)
 
@@ -6132,7 +6132,7 @@ class TicTacToeGame {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Google Â· Uber
+**Companies:** Amazon · Google · Uber
 
 **Design Patterns:** Strategy (split types), Command (transactions), Factory (expense creation)
 
@@ -6249,7 +6249,7 @@ class ExpenseManager {
 }
 ```
 
-**Design Patterns:** Strategy (EQUAL/PERCENTAGE/EXACT splitting), Command (expense â†’ balance update), Factory (expense creation).
+**Design Patterns:** Strategy (EQUAL/PERCENTAGE/EXACT splitting), Command (expense → balance update), Factory (expense creation).
 
 ---
 
@@ -6260,7 +6260,7 @@ class ExpenseManager {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Google
+**Companies:** Amazon · Microsoft · Google
 
 **Design Patterns:** Singleton (logger), Strategy (log level), Observer (appenders), Decorator (formatting), Chain of Responsibility (level hierarchy)
 
@@ -6388,7 +6388,7 @@ class LoggerFactory {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Google
+**Companies:** Amazon · Microsoft · Google
 
 **Design Patterns:** Builder (task construction), Observer (notifications), Strategy (filtering), Composite (project/subtask)
 
@@ -6519,7 +6519,7 @@ class TaskManager {
 }
 ```
 
-**Design Patterns:** Builder (fluent task construction), Strategy (filtering with composable filters), Composite (projectâ†’tasks), Observer (status change notifications).
+**Design Patterns:** Builder (fluent task construction), Strategy (filtering with composable filters), Composite (project→tasks), Observer (status change notifications).
 
 ---
 
@@ -6530,7 +6530,7 @@ class TaskManager {
 
 **Difficulty:** Medium
 
-**Companies:** Google Â· Amazon Â· Microsoft
+**Companies:** Google · Amazon · Microsoft
 
 **Design Patterns:** Observer (pub-sub), Mediator (message broker), Factory (message creation), Command (message delivery)
 
@@ -6621,7 +6621,7 @@ class Broker {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Paytm
+**Companies:** Amazon · Microsoft · Paytm
 
 **Design Patterns:** State (ATM states), Strategy (dispensing), Command (transactions), Factory (transaction creation)
 
@@ -6731,7 +6731,7 @@ class ATMSession {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft
+**Companies:** Amazon · Microsoft
 
 **Design Patterns:** Strategy (beverage recipes), Decorator (add-ons), State (brewing states), Singleton (machine), Command (orders)
 
@@ -6848,7 +6848,7 @@ class CoffeeMachine {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Zomato
+**Companies:** Amazon · Microsoft · Zomato
 
 **Design Patterns:** Strategy (table allocation), Observer (waitlist notification), Singleton (booking manager), State (booking states)
 
@@ -6952,7 +6952,7 @@ class Restaurant {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Google Â· Microsoft
+**Companies:** Amazon · Google · Microsoft
 
 **Design Patterns:** Composite (files & directories), Visitor (size calculation), Factory (entry creation), Strategy (search)
 
@@ -7106,7 +7106,7 @@ class FileSystem {
 
 ---
 
-> **One-Sentence Takeaway:** Low-level design questions test your ability to model real-world systems with OOP principles â€” focus on identifying the right design patterns (Strategy, Observer, Factory, Composite) and keeping your code SOLID.
+> **One-Sentence Takeaway:** Low-level design questions test your ability to model real-world systems with OOP principles — focus on identifying the right design patterns (Strategy, Observer, Factory, Composite) and keeping your code SOLID.
 
 ---
 
@@ -7123,7 +7123,7 @@ class FileSystem {
 | **DFS** | Connectivity, topological sort | O(V+E) | O(V) | Recursive or explicit stack |
 | **Memoization** | Overlapping subproblems | O(states) | O(states) | Cache recursive results |
 | **Binary Search** | Sorted data, monotonic functions | O(log n) | O(1) | Divide search space in half |
-| **Union-Find** | Dynamic connectivity, Kruskal's MST | O(Î±(n)) per op | O(n) | Path compression + union by rank |
+| **Union-Find** | Dynamic connectivity, Kruskal's MST | O(α(n)) per op | O(n) | Path compression + union by rank |
 
 ## Quick Reference: Complexity Cheat Sheet
 
@@ -7133,19 +7133,19 @@ class FileSystem {
 | **Search** | O(n) | O(n) | O(n) | O(n) | O(log n) | O(n) | O(1) | O(n) |
 | **Insert** | O(n) | O(1) | O(1) | O(1) | O(log n) | O(n) | O(1) | O(log n) |
 | **Delete** | O(n) | O(1) | O(1) | O(1) | O(log n) | O(n) | O(1) | O(log n) |
-| **Peek (top)** | â€” | â€” | O(1) | O(1) | â€” | â€” | â€” | O(1) |
+| **Peek (top)** | — | — | O(1) | O(1) | — | — | — | O(1) |
 
 ## Cross-Application Matrix
 
 | Pattern | Strings | Arrays | Trees | Graphs | DP | LLD | Concurrency |
 |---------|---------|--------|-------|--------|----|-----|-------------|
-| **Two Pointer** | âœ“ | âœ“ | | | | | |
-| **Sliding Window** | âœ“ | âœ“ | | | | | |
-| **Recursion** | | | âœ“ | âœ“ | âœ“ | | |
-| **Hash Map** | âœ“ | âœ“ | | | âœ“ | | |
-| **Stack / Queue** | | | âœ“ | âœ“ | | | âœ“ |
-| **Binary Search** | | âœ“ | âœ“ | | | | |
-| **Greedy** | | âœ“ | | âœ“ | âœ“ | | |
+| **Two Pointer** | ✓ | ✓ | | | | | |
+| **Sliding Window** | ✓ | ✓ | | | | | |
+| **Recursion** | | | ✓ | ✓ | ✓ | | |
+| **Hash Map** | ✓ | ✓ | | | ✓ | | |
+| **Stack / Queue** | | | ✓ | ✓ | | | ✓ |
+| **Binary Search** | | ✓ | ✓ | | | | |
+| **Greedy** | | ✓ | | ✓ | ✓ | | |
 
 ## Chapter Quiz
 
@@ -7172,7 +7172,7 @@ Test your understanding of the core DSA patterns covered in this chapter.
 <details>
 <summary>4. What is the key difference between memoization (top-down) and tabulation (bottom-up) DP?</summary>
 
-**Memoization is recursive with caching â€” it only solves subproblems that are actually needed. Tabulation builds a table iteratively and fills all entries. Tabulation avoids recursion overhead and stack overflow but may compute unnecessary states.**
+**Memoization is recursive with caching — it only solves subproblems that are actually needed. Tabulation builds a table iteratively and fills all entries. Tabulation avoids recursion overhead and stack overflow but may compute unnecessary states.**
 </details>
 
 ---
@@ -7186,7 +7186,7 @@ Test your understanding of the core DSA patterns covered in this chapter.
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Google Â· Oracle
+**Companies:** Amazon · Microsoft · Google · Oracle
 
 **Key Concepts:** wait/notify, inter-thread communication, shared state
 
@@ -7233,7 +7233,7 @@ public class EvenOddPrinter {
 }
 ```
 
-**Explanation:** Uses a shared lock with `wait/notify`. The odd thread checks if `current` is odd â€” if yes, it prints, increments, and notifies the even thread. Otherwise it waits. The even thread mirrors this. The `synchronized` block ensures mutual exclusion on the `current` variable.
+**Explanation:** Uses a shared lock with `wait/notify`. The odd thread checks if `current` is odd — if yes, it prints, increments, and notifies the even thread. Otherwise it waits. The even thread mirrors this. The `synchronized` block ensures mutual exclusion on the `current` variable.
 
 ---
 
@@ -7244,7 +7244,7 @@ public class EvenOddPrinter {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Google Â· Flipkart
+**Companies:** Amazon · Microsoft · Google · Flipkart
 
 **Key Concepts:** wait/notify, bounded buffer, inter-thread coordination
 
@@ -7329,7 +7329,7 @@ public class ProducerConsumerWaitNotify {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Â· Microsoft Â· Google
+**Companies:** Amazon · Microsoft · Google
 
 **Key Concepts:** BlockingQueue, thread pools, high-level concurrency
 
@@ -7383,7 +7383,7 @@ public class ProducerConsumerBlockingQueue {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Google Â· Oracle
+**Companies:** Amazon · Microsoft · Google · Oracle
 
 **Key Concepts:** ReadWriteLock, reader preference vs writer preference, concurrent access control
 
@@ -7448,7 +7448,7 @@ public class ReaderWritersProblem {
 }
 ```
 
-**Explanation:** `ReentrantReadWriteLock` allows multiple readers to acquire the read lock simultaneously, but the write lock is exclusive. When a writer holds the lock, all readers and other writers block. This is reader-preference by default â€” writers can starve under heavy read load. Use `ReentrantReadWriteLock(true)` for fair mode.
+**Explanation:** `ReentrantReadWriteLock` allows multiple readers to acquire the read lock simultaneously, but the write lock is exclusive. When a writer holds the lock, all readers and other writers block. This is reader-preference by default — writers can starve under heavy read load. Use `ReentrantReadWriteLock(true)` for fair mode.
 
 ---
 
@@ -7459,7 +7459,7 @@ public class ReaderWritersProblem {
 
 **Difficulty:** Hard
 
-**Companies:** Google Â· Amazon Â· Microsoft Â· Oracle
+**Companies:** Google · Amazon · Microsoft · Oracle
 
 **Key Concepts:** Deadlock prevention, resource ordering, tryLock
 
@@ -7527,7 +7527,7 @@ public class DiningPhilosophers {
 }
 ```
 
-**Explanation:** Deadlock is prevented by having odd-numbered philosophers pick up forks in reverse order (right first, then left). This breaks the circular wait condition. An alternative approach is using `tryLock()` with a timeout â€” if a philosopher cannot acquire the second fork within a time limit, they release the first and retry.
+**Explanation:** Deadlock is prevented by having odd-numbered philosophers pick up forks in reverse order (right first, then left). This breaks the circular wait condition. An alternative approach is using `tryLock()` with a timeout — if a philosopher cannot acquire the second fork within a time limit, they release the first and retry.
 
 ---
 
@@ -7538,7 +7538,7 @@ public class DiningPhilosophers {
 
 **Difficulty:** Medium
 
-**Companies:** Google Â· Microsoft Â· Amazon
+**Companies:** Google · Microsoft · Amazon
 
 **Key Concepts:** Semaphore, thread ordering, signaling
 
@@ -7590,7 +7590,7 @@ public class FooBarAlternate {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Google Â· Microsoft
+**Companies:** Amazon · Google · Microsoft
 
 **Key Concepts:** Semaphore-based three-thread coordination, state machine
 
@@ -7658,7 +7658,7 @@ public class ZeroEvenOdd {
 
 **Difficulty:** Easy
 
-**Companies:** Amazon Â· Microsoft Â· Google Â· All major companies
+**Companies:** Amazon · Microsoft · Google · All major companies
 
 **Key Concepts:** volatile, class loading, enum, concurrency patterns
 
@@ -7747,7 +7747,7 @@ public class ThreadSafeSingleton {
 
 **Difficulty:** Hard
 
-**Companies:** Amazon Â· Google Â· Microsoft Â· Flipkart
+**Companies:** Amazon · Google · Microsoft · Flipkart
 
 **Key Concepts:** Thread lifecycle management, blocking queue, worker threads, graceful shutdown
 
@@ -7849,7 +7849,7 @@ class CustomThreadPool {
 
 **Difficulty:** Medium
 
-**Companies:** Amazon Â· Microsoft Â· Google Â· Oracle
+**Companies:** Amazon · Microsoft · Google · Oracle
 
 **Key Concepts:** Deadlock, circular wait, `ThreadMXBean`, lock ordering
 

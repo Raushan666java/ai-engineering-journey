@@ -1,4 +1,4 @@
-﻿# Chapter 17: Network Troubleshooting
+# Chapter 17: Network Troubleshooting
 
 ## Learning Objectives
 
@@ -58,18 +58,18 @@ Network troubleshooting mirrors medical diagnosis. A doctor does not prescribe t
 The OSI model provides a natural diagnostic hierarchy. Each layer depends on the layers below it. If Layer 1 is broken, Layer 2 cannot work, Layer 3 cannot work, and so on.
 
 **Bottom-up approach (recommended for most scenarios):**
-1. Physical â€” link lights, cable tester
-2. Data Link â€” ARP, MAC tables, switch logs
-3. Network â€” ping, traceroute, routing tables
-4. Transport â€” port connectivity, socket states
-5. Application â€” application logs, HTTP status codes
+1. Physical — link lights, cable tester
+2. Data Link — ARP, MAC tables, switch logs
+3. Network — ping, traceroute, routing tables
+4. Transport — port connectivity, socket states
+5. Application — application logs, HTTP status codes
 
 **Top-down approach (better for application-specific issues):**
-1. Application â€” browser console, server logs
-2. Transport â€” telnet to port, ss/tcpdump
-3. Network â€” verify routing, firewall rules
-4. Data Link â€” check ARP, VLAN membership
-5. Physical â€” verify link state
+1. Application — browser console, server logs
+2. Transport — telnet to port, ss/tcpdump
+3. Network — verify routing, firewall rules
+4. Data Link — check ARP, VLAN membership
+5. Physical — verify link state
 
 **Divide and conquer approach:**
 Test at the middle layer (Network). If ping works, the problem is above Layer 3. If ping fails, the problem is below Layer 3. This eliminates half the possibilities in one test.
@@ -79,19 +79,19 @@ Test at the middle layer (Network). If ping works, the problem is above Layer 3.
 
 | Problem Symptom | Likely OSI Layer | Primary Tool | Secondary Tool |
 |----------------|-----------------|-------------|---------------|
-| No link light | Layer 1 â€” Physical | Cable tester | Interface statistics |
-| Intermittent connectivity | Layer 1 â€” Physical | TDR, signal analyzer | Interface error counters |
-| Slow throughput, no errors | Layer 2 â€” Data Link | Duplex check | Interface statistics |
-| MAC address conflicts | Layer 2 â€” Data Link | ARP table inspection | MAC table audit |
-| No connectivity to remote net | Layer 3 â€” Network | ping, traceroute | Routing table check |
-| Routing loops | Layer 3 â€” Network | traceroute | TTL expiry debug |
-| MTU-related failures | Layer 3 â€” Network | ping with DF bit | tcpdump ICMP |
-| Port unreachable | Layer 4 â€” Transport | telnet, nc | ss -tln |
-| Connection resets | Layer 4 â€” Transport | tcpdump | Wireshark TCP analysis |
-| TIME_WAIT exhaustion | Layer 4 â€” Transport | ss -s, netstat | Connection tracking |
-| Name resolution failure | Layer 5-7 â€” Application | nslookup, dig | DNS server logs |
-| HTTP 4xx/5xx errors | Layer 7 â€” Application | curl -v | Server access logs |
-| SSL/TLS handshake failure | Layer 5-7 â€” Application | openssl s_client | Wireshark TLS filter |
+| No link light | Layer 1 — Physical | Cable tester | Interface statistics |
+| Intermittent connectivity | Layer 1 — Physical | TDR, signal analyzer | Interface error counters |
+| Slow throughput, no errors | Layer 2 — Data Link | Duplex check | Interface statistics |
+| MAC address conflicts | Layer 2 — Data Link | ARP table inspection | MAC table audit |
+| No connectivity to remote net | Layer 3 — Network | ping, traceroute | Routing table check |
+| Routing loops | Layer 3 — Network | traceroute | TTL expiry debug |
+| MTU-related failures | Layer 3 — Network | ping with DF bit | tcpdump ICMP |
+| Port unreachable | Layer 4 — Transport | telnet, nc | ss -tln |
+| Connection resets | Layer 4 — Transport | tcpdump | Wireshark TCP analysis |
+| TIME_WAIT exhaustion | Layer 4 — Transport | ss -s, netstat | Connection tracking |
+| Name resolution failure | Layer 5-7 — Application | nslookup, dig | DNS server logs |
+| HTTP 4xx/5xx errors | Layer 7 — Application | curl -v | Server access logs |
+| SSL/TLS handshake failure | Layer 5-7 — Application | openssl s_client | Wireshark TLS filter |
 | Slow web browsing | Cross-layer | MTR, tcpdump | Browser dev tools |
 
 ## 17.1 OSI-Layer Troubleshooting Methodology
@@ -101,21 +101,21 @@ Test at the middle layer (Network). If ping works, the problem is above Layer 3.
 
 Every troubleshooting session follows a structured diagnostic cycle. Skipping steps leads to wasted effort and configuration changes that do not fix the root cause.
 
-**Step 1 â€” Define the problem precisely.** A vague problem statement ("the network is slow") is unusable. Quantify: "The web application takes 8 seconds to load the login page, while the baseline is 1.2 seconds. The issue started at 2:00 PM and affects all users in the Chicago office."
+**Step 1 — Define the problem precisely.** A vague problem statement ("the network is slow") is unusable. Quantify: "The web application takes 8 seconds to load the login page, while the baseline is 1.2 seconds. The issue started at 2:00 PM and affects all users in the Chicago office."
 
-**Step 2 â€” Check the obvious (2-minute rule).** Before any advanced diagnostics, check: link lights, cable connections, service status, recent configuration changes. Most outages are caused by a cable being unplugged, a service not restarting after a patch, or a firewall rule that was changed and not reverted.
+**Step 2 — Check the obvious (2-minute rule).** Before any advanced diagnostics, check: link lights, cable connections, service status, recent configuration changes. Most outages are caused by a cable being unplugged, a service not restarting after a patch, or a firewall rule that was changed and not reverted.
 
-**Step 3 â€” Isolate the scope.** Determine the boundary of the problem. Ask: Does this affect one user or all users? One application or all applications? One subnet or the entire network? Does it happen at specific times or continuously?
+**Step 3 — Isolate the scope.** Determine the boundary of the problem. Ask: Does this affect one user or all users? One application or all applications? One subnet or the entire network? Does it happen at specific times or continuously?
 
-**Step 4 â€” Form a hypothesis.** Based on scope and symptoms, list 2-3 probable causes at the appropriate OSI layer. Document each hypothesis with a specific prediction.
+**Step 4 — Form a hypothesis.** Based on scope and symptoms, list 2-3 probable causes at the appropriate OSI layer. Document each hypothesis with a specific prediction.
 
-**Step 5 â€” Select and run diagnostic tools.** Choose the tool that tests the hypothesis fastest. Do not run every tool on every problem.
+**Step 5 — Select and run diagnostic tools.** Choose the tool that tests the hypothesis fastest. Do not run every tool on every problem.
 
-**Step 6 â€” Analyze results and iterate.** Did the test confirm or refute the hypothesis? If confirmed, proceed to fix. If refuted, return to Step 3 with new information.
+**Step 6 — Analyze results and iterate.** Did the test confirm or refute the hypothesis? If confirmed, proceed to fix. If refuted, return to Step 3 with new information.
 
-**Step 7 â€” Implement the fix.** Apply the configuration change, replace the hardware, or restart the service. Make one change at a time so you know exactly which action resolved the issue.
+**Step 7 — Implement the fix.** Apply the configuration change, replace the hardware, or restart the service. Make one change at a time so you know exactly which action resolved the issue.
 
-**Step 8 â€” Verify and document.** Run the diagnostic test again to confirm the fix works. Document the root cause, the diagnostic steps taken, the fix applied, and any preventive measures.
+**Step 8 — Verify and document.** Run the diagnostic test again to confirm the fix works. Document the root cause, the diagnostic steps taken, the fix applied, and any preventive measures.
 
 ### 17.1.2 Pseudocode: General Troubleshooting Algorithm
 
@@ -409,7 +409,7 @@ if __name__ == "__main__":
 ### Complexity Analysis for Data Link Diagnostics
 
 
-Duplex mismatch detection: O(1) â†’ counters are hardware registers. MAC flood detection: O(m) where m = MAC entries. Space: O(m).
+Duplex mismatch detection: O(1) → counters are hardware registers. MAC flood detection: O(m) where m = MAC entries. Space: O(m).
 
 ### Edge Cases for Data Link
 
@@ -563,7 +563,7 @@ if __name__ == "__main__":
 ### Complexity Analysis
 
 
-Ping: O(h*c). Traceroute: O(h*p). MTU discovery: O(log n) binary search. Loop detection: O(h) linear scan. Binary search for MTU is critical â†’ each probe requires network RTT wait.
+Ping: O(h*c). Traceroute: O(h*p). MTU discovery: O(log n) binary search. Loop detection: O(h) linear scan. Binary search for MTU is critical → each probe requires network RTT wait.
 
 ### Edge Cases
 
@@ -892,9 +892,9 @@ TLS: O(c) chain length. HTTP: O(1). DNS: O(d) delegation depth.
 4. HSTS preload: no HTTP fallback.
 5. HTTP/2 coalescing: one crash affects all on shared connection.
 
-## 17.7 Troubleshooting Tools â†’ Deep Dive
+## 17.7 Troubleshooting Tools → Deep Dive
 
-### 17.7.1 ping â†’ ICMP Echo
+### 17.7.1 ping → ICMP Echo
 
 
 **Purpose:** Test basic IP connectivity, measure RTT, detect packet loss.
@@ -1126,7 +1126,7 @@ tcpdump [options] [filter]
   -r file.pcap  Read                    -e   MAC headers
 ```
 
-### tcpdump Filter Syntax â†’ Quick Reference
+### tcpdump Filter Syntax → Quick Reference
 
 
 | Expression | Meaning |
@@ -1172,21 +1172,21 @@ tcpdump -i eth0 -nn 'tcp[13] & 2 != 0 and tcp[13] & 16 == 0'
 tcpdump -i eth0 -nn -X host 10.0.0.50 and host 10.0.0.100
 ```
 
-### 17.7.6 Wireshark â†’ Capture Workflow
+### 17.7.6 Wireshark → Capture Workflow
 
 
-**Phase 1 â†’ Capture Planning**
+**Phase 1 → Capture Planning**
 1. Define scope: what traffic, between which hosts, on which interface?
 2. Set capture filter: host 10.0.0.50 and port 443 to reduce noise.
 3. Choose mode: full packet (protocol analysis) or header-only (performance).
 4. Start capture, reproduce problem, stop capture.
 
-**Phase 2 â†’ Initial Analysis**
+**Phase 2 → Initial Analysis**
 1. Check Expert Info: retransmissions, duplicate ACKs, zero window, checksum errors.
 2. Protocol Hierarchy Statistics: which protocols dominate.
 3. Conversations: top talkers by bytes/packets.
 
-**Phase 3 â†’ Focused Analysis**
+**Phase 3 → Focused Analysis**
 1. Display filter: ip.addr == 10.0.0.50.
 2. Follow TCP Stream: see application conversation.
 3. Time between SYN and SYN-ACK = server processing delay.
@@ -1196,7 +1196,7 @@ tcpdump -i eth0 -nn -X host 10.0.0.50 and host 10.0.0.100
 7. Filter: tcp.analysis.fast_retransmission for dup ACKs.
 8. Check window scale in SYN packets.
 
-**Phase 4 â†’ Performance Analysis**
+**Phase 4 → Performance Analysis**
 1. I/O Graph (Statistics > I/O Graph): visualize throughput over time.
 2. TCP Stream Graph > Time-Sequence Graph: see congestion window behavior.
 3. TCP Stream Graph > Round Trip Time: RTT trends over session.
@@ -1239,7 +1239,7 @@ iperf3 -c server -R -t 30      # Reverse (server -> client)
 iperf3 -c server --bidir       # Bidirectional test
 ```
 
-**Interpret TCP results:** Throughput near link speed = good. Throughput = (MSS * 8) / RTT * sqrt(3/4 * loss_rate) â†’ Mathis equation. Compare expected vs actual throughput. Low throughput can mean congestion, bufferbloat, or application bottleneck.
+**Interpret TCP results:** Throughput near link speed = good. Throughput = (MSS * 8) / RTT * sqrt(3/4 * loss_rate) → Mathis equation. Compare expected vs actual throughput. Low throughput can mean congestion, bufferbloat, or application bottleneck.
 
 **UDP results:** Reports jitter (inter-packet delay variation) and packet loss percentage. Jitter &lt; 1ms is excellent for VoIP. Loss &gt; 1% degrades voice quality.
 
@@ -1264,7 +1264,7 @@ class PacketAnalyzer {
 
   // Simulate packet capture from a hex dump
   parseHexDump(hexData: string): PacketHeader {
-    // Simplified parsing â€” real implementation would use pcap
+    // Simplified parsing — real implementation would use pcap
     const header: PacketHeader = {
       ethSrc: Array.from({ length: 6 }, () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')).join(':'),
       ethDst: Array.from({ length: 6 }, () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')).join(':'),
@@ -1323,7 +1323,7 @@ for (let i = 0; i < 100; i++) analyzer.parseHexDump('');
 // console.log(`TCP: ${analyzer.getStatistics().tcpCount}, UDP: ${analyzer.getStatistics().udpCount}, Retransmissions: ${analyzer.detectRetransmissions()}`);
 ```
 
-## 17.8 Common Issues per Layer â†’ Summary Table
+## 17.8 Common Issues per Layer → Summary Table
 
 | Layer | Common Issue | Symptom | Diagnostic Tool | Likely Fix |
 |-------|-------------|---------|----------------|------------|
@@ -1373,12 +1373,12 @@ for (let i = 0; i < 100; i++) analyzer.parseHexDump('');
 ### Q1: When ping fails but the application works, what is happening?
 
 
-Ping uses ICMP Echo Request/Reply. Many firewalls and security groups block ICMP while allowing TCP traffic for applications. This is a security best practice â†’ ICMP offers no encryption and can be used for reconnaissance. ICMP blocking does not indicate a network problem. Always use a TCP-based connectivity test (telnet, nc, curl) to verify actual application reachability.
+Ping uses ICMP Echo Request/Reply. Many firewalls and security groups block ICMP while allowing TCP traffic for applications. This is a security best practice → ICMP offers no encryption and can be used for reconnaissance. ICMP blocking does not indicate a network problem. Always use a TCP-based connectivity test (telnet, nc, curl) to verify actual application reachability.
 
 ### Q2: How does traceroute work, and what does it mean when a hop shows asterisks?
 
 
-Traceroute sends packets with increasing TTL values. Hop 1 gets TTL=1, Hop 2 gets TTL=2, etc. Each router decrements TTL; when TTL reaches 0, the router sends an ICMP Time Exceeded message back. Asterisks (* * *) for a hop mean no response was received â†’ the router may be configured not to send ICMP Time Exceeded, or the response is filtered. Three asterisks in a row mean the hop is not responding, but packets may still pass through it. If all subsequent hops also show asterisks, the path is likely broken at that point.
+Traceroute sends packets with increasing TTL values. Hop 1 gets TTL=1, Hop 2 gets TTL=2, etc. Each router decrements TTL; when TTL reaches 0, the router sends an ICMP Time Exceeded message back. Asterisks (* * *) for a hop mean no response was received → the router may be configured not to send ICMP Time Exceeded, or the response is filtered. Three asterisks in a row mean the hop is not responding, but packets may still pass through it. If all subsequent hops also show asterisks, the path is likely broken at that point.
 
 ### Q3: What is the difference between "port unreachable," "connection refused," and "timeout"?
 
@@ -1404,22 +1404,22 @@ Fixes: (1) Enable tcp_tw_reuse (allows reuse of TIME_WAIT sockets for new connec
 ### Q6: How do you identify a routing loop from a traceroute?
 
 
-A routing loop appears as a repeating pattern of the same IP addresses across multiple hops. Classic 2-hop loop: Hop A -> B -> A -> B -> A -> B (continues until TTL expires). Single-hop loop: same IP appears on consecutive hops. The TTL decreases by 1 each hop but never reaches the destination â†’ the trace terminates at hop 30 (or the max TTL) with "destination not reached."
+A routing loop appears as a repeating pattern of the same IP addresses across multiple hops. Classic 2-hop loop: Hop A -> B -> A -> B -> A -> B (continues until TTL expires). Single-hop loop: same IP appears on consecutive hops. The TTL decreases by 1 each hop but never reaches the destination → the trace terminates at hop 30 (or the max TTL) with "destination not reached."
 
 ### Q7: What does "Connection refused" versus "No route to host" mean?
 
 
-"Connection refused" (ECONNREFUSED) means the TCP SYN reached the destination host but that host sent back a RST because nothing is listening on the port. "No route to host" (EHOSTUNREACH) means the IP stack could not find a route to the destination â†’ there is no matching entry in the routing table and no default gateway, or the gateway is unreachable at Layer 2.
+"Connection refused" (ECONNREFUSED) means the TCP SYN reached the destination host but that host sent back a RST because nothing is listening on the port. "No route to host" (EHOSTUNREACH) means the IP stack could not find a route to the destination → there is no matching entry in the routing table and no default gateway, or the gateway is unreachable at Layer 2.
 
 ### Q8: How do you test if a firewall is blocking a specific port?
 
 
-Test from outside the firewall: (1) nc -zv &lt;host&gt; <port> â†’ if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking.
+Test from outside the firewall: (1) nc -zv &lt;host&gt; <port> → if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking.
 
 ### Q9: What is asymmetric routing and how does it affect troubleshooting?
 
 
-Asymmetric routing occurs when packets take a different path from A to B than from B to A. This is common in networks with ECMP or multiple connections. Traceroute only shows the forward path â†’ packet loss on the return path is invisible. This means a high-loss traceroute may not show where loss is actually occurring. MTR shows both directions only if run from both endpoints.
+Asymmetric routing occurs when packets take a different path from A to B than from B to A. This is common in networks with ECMP or multiple connections. Traceroute only shows the forward path → packet loss on the return path is invisible. This means a high-loss traceroute may not show where loss is actually occurring. MTR shows both directions only if run from both endpoints.
 
 ### Q10: How does path MTU discovery work and why does it fail?
 
@@ -1436,11 +1436,11 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Initial scope:** Affected all users worldwide. Only the checkout flow was affected, static content loaded normally.
 
 **Diagnostic steps:**
-1. Checked server CPU/memory â†’ no exhaustion.
-2. Ran traceroute during peak â†’ no routing changes.
-3. Checked MTR for 10 minutes â†’ 3% packet loss at the CDN edge hop.
-4. Analyzed tcpdump â†’ TCP retransmissions at 5% of total segments.
-5. Checked the CDN provider's status page â†’ announced edge capacity issues.
+1. Checked server CPU/memory → no exhaustion.
+2. Ran traceroute during peak → no routing changes.
+3. Checked MTR for 10 minutes → 3% packet loss at the CDN edge hop.
+4. Analyzed tcpdump → TCP retransmissions at 5% of total segments.
+5. Checked the CDN provider's status page → announced edge capacity issues.
 6. Conclusion: CDN edge node was overloaded during US lunchtime traffic spike.
 
 **Fix:** Configured a second CDN provider as fallback and implemented origin pull traffic shaping. Page load times returned to 1.2s.
@@ -1453,9 +1453,9 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Initial hypothesis:** Network issue between services.
 
 **Diagnostic steps:**
-1. Checked ss -s on the affected service â†’ 32,000 connections in TIME_WAIT.
+1. Checked ss -s on the affected service → 32,000 connections in TIME_WAIT.
 2. Application was using a connection pool of 50 connections but creating new connections on every request and not closing them properly. The pool was exhausted.
-3. Checked application code â†’ missing db.close() in error handler paths.
+3. Checked application code → missing db.close() in error handler paths.
 4. Once sockets hit TIME_WAIT (~28K), new connections failed.
 
 **Fix:** Fixed the connection leak in application code, set tcp_tw_reuse=1 on the host, and increased the connection pool to 100. Service stability restored.
@@ -1479,8 +1479,8 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Symptom:** Guest laptops reported "duplicate IP address" warnings. Some guests could not access the internet. Others were redirected to phishing pages.
 
 **Diagnostic:**
-1. Checked ARP table on a guest machine â†’ multiple IPs mapped to the same MAC address.
-2. Checked switch MAC table â†’ one port had 200+ MAC addresses with diverse OUIs (MAC flooding).
+1. Checked ARP table on a guest machine → multiple IPs mapped to the same MAC address.
+2. Checked switch MAC table → one port had 200+ MAC addresses with diverse OUIs (MAC flooding).
 3. The attacker's machine was connected to the public guest VLAN, running an ARP spoofing tool.
 4. Once the switch CAM table overflowed, the switch fell back to flooding all traffic on the VLAN (hub mode). The attacker could sniff all traffic.
 
@@ -1492,8 +1492,8 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Symptom:** A mobile app could not log in. Web users were unaffected. API requests from the mobile app returned 403 Forbidden.
 
 **Diagnostic:**
-1. curl -v from the mobile emulator â†’ HTTP 403 Forbidden.
-2. Checked the WAF logs â†’ rule ID 942100 (SQL injection) was triggering on the login request.
+1. curl -v from the mobile emulator → HTTP 403 Forbidden.
+2. Checked the WAF logs → rule ID 942100 (SQL injection) was triggering on the login request.
 3. The mobile app was sending a JSON payload with Content-Type: application/json. The WAF was scanning the JSON body and a password containing "SELECT" was triggering the SQL injection rule.
 4. False positive: the password "S3LECT*pass" contained "SELECT" as a substring.
 
@@ -1502,7 +1502,7 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 ## Pro Tips (Expanded)
 
 - **Use ss not netstat:** On modern Linux, ss is faster and shows more information. Netstat is deprecated in many distributions.
-- **Wireshark "Follow TCP Stream":** Right-click a TCP packet, Follow > TCP Stream. Wireshark reassembles the entire application-layer conversation â†’ perfect for HTTP, SMTP, or any text-based protocol.
+- **Wireshark "Follow TCP Stream":** Right-click a TCP packet, Follow > TCP Stream. Wireshark reassembles the entire application-layer conversation → perfect for HTTP, SMTP, or any text-based protocol.
 - **ICMP blocking bluff:** If ping fails but web browsing works, ICMP is blocked. Use tcping or curl to test TCP connectivity.
 - **MTR for intermittent issues:** A single traceroute or ping snapshot misses transient problems. Run MTR for 5-10 minutes.
 - **Binary search MTU:** Find path MTU in O(log n) probes rather than linear scanning. Start with 1500, then 750, then split difference.
@@ -1521,7 +1521,7 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 - ss shows socket statistics: listening, established, and connection states.
 - iperf measures TCP/UDP throughput between two endpoints.
 - A systematic layer-by-layer approach isolates the root cause efficiently.
-- 80% of problems are at Layers 1-2 â†’ start with physical checks.
+- 80% of problems are at Layers 1-2 → start with physical checks.
 - Duplex mismatches cause CRC errors and late collisions.
 - TIME_WAIT exhaustion is the most common TCP state issue.
 - ICMP blocking is a security feature, not a network failure.
@@ -1631,11 +1631,11 @@ flowchart TD
 
 | # | Takeaway | Application |
 |---|----------|-------------|
-| 1 | **Start at Layer 1** â†’ 80% of problems are physical | Check link lights, cables, and interface counters before anything else |
-| 2 | **Use the OSI model as your checklist** | Work up layer by layer: Physical â†’ Datalink â†’ Network â†’ Transport â†’ Application |
-| 3 | **ICMP blocking â‰  network failure** | Use TCP-based tests (telnet, nc, curl) when ping fails but apps work |
+| 1 | **Start at Layer 1** → 80% of problems are physical | Check link lights, cables, and interface counters before anything else |
+| 2 | **Use the OSI model as your checklist** | Work up layer by layer: Physical → Datalink → Network → Transport → Application |
+| 3 | **ICMP blocking ≠ network failure** | Use TCP-based tests (telnet, nc, curl) when ping fails but apps work |
 | 4 | **MTR reveals intermittent loss** | Run MTR for 5-10 minutes to catch transient packet loss that ping misses |
-| 5 | **tcpdump before restarting** | Restarting destroys evidence â€” capture traffic first, then restart |
+| 5 | **tcpdump before restarting** | Restarting destroys evidence — capture traffic first, then restart |
 | 6 | **Document every step** | Good RCA documents include symptoms, diagnostics, root cause, fix, and prevention |
 | 7 | **One change at a time** | Multiple simultaneous changes make it impossible to identify which fix worked |
 
@@ -1645,7 +1645,7 @@ Network troubleshooting is a systematic process that follows the OSI layer model
 
 Key tools include ping (ICMP connectivity), traceroute (path discovery), tcpdump/Wireshark (packet capture and analysis), ss (socket state), iperf3 (throughput measurement), and nmap (port scanning). Each tool operates at specific OSI layers and provides targeted information for diagnosis.
 
-The most important skill in troubleshooting is the ability to isolate â€” using the OSI layer model to narrow down the problem space, checking one layer at a time, and making one change at a time. Documentation of the entire process (symptoms â†’ diagnosis â†’ root cause â†’ fix â†’ prevention) distinguishes professional network engineers.
+The most important skill in troubleshooting is the ability to isolate — using the OSI layer model to narrow down the problem space, checking one layer at a time, and making one change at a time. Documentation of the entire process (symptoms → diagnosis → root cause → fix → prevention) distinguishes professional network engineers.
 
 ## Chapter Quiz
 

@@ -1,4 +1,4 @@
-﻿# Chapter 4: SQL Basics
+# Chapter 4: SQL Basics
 
 > **Previous:** [Chapter 3: The Relational Model](./03-relational-model.md) | **Next:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md)
 
@@ -2123,7 +2123,7 @@ The TypeScript implementation below validates SQL DDL and DML statements, checks
 
 ```typescript
 // ============================================================
-// SQL Validator & Execution Simulator Ã¢â‚¬â€ TypeScript
+// SQL Validator & Execution Simulator — TypeScript
 // ============================================================
 
 interface ColumnDef {
@@ -2171,7 +2171,7 @@ class SQLValidator {
         case 'DELETE':
           return this.delete(stmt.table, stmt.where);
         case 'GRANT':
-          return 'GRANT ' + stmt.privilege + ' ON ' + stmt.table + ' TO ' + stmt.user + ' Ã¢â‚¬â€ OK';
+          return 'GRANT ' + stmt.privilege + ' ON ' + stmt.table + ' TO ' + stmt.user + ' — OK';
         case 'BEGIN':
           this.inTransaction = true;
           this.transactionLog = [];
@@ -2179,11 +2179,11 @@ class SQLValidator {
         case 'COMMIT':
           this.inTransaction = false;
           this.transactionLog = [];
-          return 'COMMIT Ã¢â‚¬â€ ' + this.transactionLog.length + ' changes persisted';
+          return 'COMMIT — ' + this.transactionLog.length + ' changes persisted';
         case 'ROLLBACK':
           this.rollbackTransaction();
           this.inTransaction = false;
-          return 'ROLLBACK Ã¢â‚¬â€ all changes undone';
+          return 'ROLLBACK — all changes undone';
       }
     } catch (e) {
       if (this.inTransaction) this.rollbackTransaction();
@@ -2195,7 +2195,7 @@ class SQLValidator {
     if (this.tables.has(table.name)) throw new Error('Table ' + table.name + ' already exists');
     this.tables.set(table.name, table);
     this.rows.set(table.name, []);
-    return 'CREATE TABLE ' + table.name + ' Ã¢â‚¬â€ ' + table.columns.length + ' columns';
+    return 'CREATE TABLE ' + table.name + ' — ' + table.columns.length + ' columns';
   }
 
   private getTable(name: string): TableDef {
@@ -2228,7 +2228,7 @@ class SQLValidator {
       this.transactionLog.push({ table: tableName, row: { ...values }, action: 'INSERT' });
     }
     this.rows.get(tableName)!.push(values);
-    return 'INSERT INTO ' + tableName + ' Ã¢â‚¬â€ 1 row inserted';
+    return 'INSERT INTO ' + tableName + ' — 1 row inserted';
   }
 
   private select(tableName: string, columns: string[], where?: (row: Record<string, unknown>) => boolean): string {
@@ -2263,7 +2263,7 @@ class SQLValidator {
         count++;
       }
     }
-    return 'UPDATE ' + tableName + ' Ã¢â‚¬â€ ' + count + ' rows updated';
+    return 'UPDATE ' + tableName + ' — ' + count + ' rows updated';
   }
 
   private delete(tableName: string, where?: (row: Record<string, unknown>) => boolean): string {
@@ -2276,7 +2276,7 @@ class SQLValidator {
       }
     }
     this.rows.set(tableName, where ? rows.filter(r => !where(r)) : []);
-    return 'DELETE FROM ' + tableName + ' Ã¢â‚¬â€ ' + toDelete.length + ' rows deleted';
+    return 'DELETE FROM ' + tableName + ' — ' + toDelete.length + ' rows deleted';
   }
 
   private rollbackTransaction(): void {

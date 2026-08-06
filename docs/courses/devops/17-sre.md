@@ -1,4 +1,4 @@
-﻿# Chapter 17: SRE Principles
+# Chapter 17: SRE Principles
 
 > **Previous:** [Container Networking](./16-networking.md) | **Next:** [Capstone Project](./18-capstone.md)
 
@@ -87,18 +87,18 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 ### 17.2 Service Level Objectives (SLO, SLI, SLA)
 
 
-**Service Level Indicator (SLI)** â€” A quantitative measure of some aspect of the service:
+**Service Level Indicator (SLI)** — A quantitative measure of some aspect of the service:
 - Request latency (at p95, &lt; 500ms)
 - Availability (fraction of successful requests)
 - Throughput (requests per second)
 - Freshness (data age in a data pipeline)
 - Correctness (fraction of correct responses)
 
-**Service Level Objective (SLO)** â€” A target value or range for an SLI:
+**Service Level Objective (SLO)** — A target value or range for an SLI:
 - "P95 request latency is less than 500ms over a 28-day rolling window"
 - "99.9% of requests are successful over a 30-day window"
 
-**Service Level Agreement (SLA)** â€” A contractual commitment to customers, typically with financial penalties for breach. Internal SLOs should be more stringent than customer SLAs to provide a detection and response buffer.
+**Service Level Agreement (SLA)** — A contractual commitment to customers, typically with financial penalties for breach. Internal SLOs should be more stringent than customer SLAs to provide a detection and response buffer.
 
 **SLO Design Principles:**
 - Define SLOs for user-facing services first (they have the most direct business impact)
@@ -113,10 +113,10 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 An error budget is the acceptable amount of unreliability. For a 99.9% SLO over 28 days:
 
 ```
-Error Budget = (1 - SLO) Ã— Time Window
-             = 0.001 Ã— (28 Ã— 24 Ã— 60 Ã— 60)
-             = 0.001 Ã— 2,419,200 seconds
-             = 2,419 seconds Ëœ 40 minutes
+Error Budget = (1 - SLO) × Time Window
+             = 0.001 × (28 × 24 × 60 × 60)
+             = 0.001 × 2,419,200 seconds
+             = 2,419 seconds ˜ 40 minutes
 ```
 
 **Error Budget for Common SLO Targets (30-day window):**
@@ -159,11 +159,11 @@ groups:
 Toil is operational work that is manual, repetitive, automatable, tactical, and devoid of enduring value.
 
 **Toil Characteristics:**
-1. **Manual** â€” Requires human intervention; no automation
-2. **Repetitive** â€” Occurs frequently with the same pattern
-3. **Automatable** â€” Could be automated with appropriate engineering effort
-4. **Tactical** â€” Reactive rather than strategic
-5. **No enduring value** â€” Service does not improve when this work is done
+1. **Manual** — Requires human intervention; no automation
+2. **Repetitive** — Occurs frequently with the same pattern
+3. **Automatable** — Could be automated with appropriate engineering effort
+4. **Tactical** — Reactive rather than strategic
+5. **No enduring value** — Service does not improve when this work is done
 
 **Examples of Toil vs Valuable Work:**
 
@@ -177,7 +177,7 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 | Resolving repeated support tickets | Building self-service tooling |
 | Applying security patches manually | Automating patch management |
 
-**The 50% Rule:** SRE teams should spend no more than 50% of their time on operational work. The remaining time must be invested in engineering projects that reduce future operational load. This is a ceiling, not a target â€” aim for less toil.
+**The 50% Rule:** SRE teams should spend no more than 50% of their time on operational work. The remaining time must be invested in engineering projects that reduce future operational load. This is a ceiling, not a target — aim for less toil.
 
 **Toil Elimination Approach:**
 1. Measure current toil percentage (time tracking, ticket analysis)
@@ -199,11 +199,11 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 | SEV-4 | Cosmetic or informational | 24 hours | Dashboard labeling issue, typo in docs |
 
 **Incident Response Process:**
-1. **Detection** â€” Alert fires or user reports issue
-2. **Triage** â€” Determine severity, declare incident, assemble response team with incident commander
-3. **Mitigation** â€” Stabilize the system (rollback deployment, redirect traffic, scale up resources)
-4. **Resolution** â€” Apply permanent fix to address root cause
-5. **Follow-up** â€” Conduct blameless postmortem, implement preventive measures
+1. **Detection** — Alert fires or user reports issue
+2. **Triage** — Determine severity, declare incident, assemble response team with incident commander
+3. **Mitigation** — Stabilize the system (rollback deployment, redirect traffic, scale up resources)
+4. **Resolution** — Apply permanent fix to address root cause
+5. **Follow-up** — Conduct blameless postmortem, implement preventive measures
 
 **Communication During Incidents:**
 - Incident commander coordinates the response (single decision-maker)
@@ -216,9 +216,9 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 
 
 **On-Call Rotation Patterns:**
-- **Follow-the-sun** â€” Primary in each time zone during business hours. Coverage across global teams.
-- **Weekly rotation** â€” Primary handles incidents for one full week. Simple and predictable.
-- **Escalation tiers** â€” Primary ? secondary ? engineering manager. Ensures incidents don't fall through cracks.
+- **Follow-the-sun** — Primary in each time zone during business hours. Coverage across global teams.
+- **Weekly rotation** — Primary handles incidents for one full week. Simple and predictable.
+- **Escalation tiers** — Primary ? secondary ? engineering manager. Ensures incidents don't fall through cracks.
 
 **On-Call Best Practices:**
 - Limit on-call frequency to one week per rotation minimum (recovery time)
@@ -234,16 +234,16 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 Postmortems are written analyses of incidents. The goal is to understand what happened, why it happened, and how to prevent recurrence.
 
 **Postmortem Structure:**
-1. **Summary** â€” One-paragraph overview of the incident
-2. **Timeline** â€” Chronological sequence of events with timestamps
-3. **Impact** â€” User impact, duration, affected users, financial cost
-4. **Root Cause** â€” Technical and systemic causes
-5. **Trigger** â€” What initiated the incident
-6. **Detection** â€” How was the incident discovered? (alert, user report, monitoring)
-7. **Response** â€” Actions taken during mitigation, including what worked and what didn't
-8. **Contributing Factors** â€” Conditions that enabled the incident to occur or worsen
-9. **Action Items** â€” Concrete, assigned, tracked remediation steps with deadlines
-10. **Lessons Learned** â€” Insights for future improvement
+1. **Summary** — One-paragraph overview of the incident
+2. **Timeline** — Chronological sequence of events with timestamps
+3. **Impact** — User impact, duration, affected users, financial cost
+4. **Root Cause** — Technical and systemic causes
+5. **Trigger** — What initiated the incident
+6. **Detection** — How was the incident discovered? (alert, user report, monitoring)
+7. **Response** — Actions taken during mitigation, including what worked and what didn't
+8. **Contributing Factors** — Conditions that enabled the incident to occur or worsen
+9. **Action Items** — Concrete, assigned, tracked remediation steps with deadlines
+10. **Lessons Learned** — Insights for future improvement
 
 **The Blame-Free Principle:** If a human could make a mistake, the system enabled it. Postmortems find system weaknesses, not human failures. Blaming individuals discourages reporting and prevents learning.
 
@@ -258,10 +258,10 @@ Postmortems are written analyses of incidents. The goal is to understand what ha
 Capacity planning ensures the system has sufficient resources for current and projected demand.
 
 **Approach:**
-1. **Demand Forecasting** â€” Predict future usage based on historical trends, business plans, marketing campaigns, seasonal patterns
-2. **Resource Modeling** â€” Map demand to resource requirements (CPU, memory, storage, bandwidth, database connections)
-3. **Provisioning** â€” Acquire resources before they are needed (allow lead time for hardware procurement)
-4. **Monitoring** â€” Track utilization trends against projections and adjust plans
+1. **Demand Forecasting** — Predict future usage based on historical trends, business plans, marketing campaigns, seasonal patterns
+2. **Resource Modeling** — Map demand to resource requirements (CPU, memory, storage, bandwidth, database connections)
+3. **Provisioning** — Acquire resources before they are needed (allow lead time for hardware procurement)
+4. **Monitoring** — Track utilization trends against projections and adjust plans
 
 **Autoscaling** reduces the need for manual capacity planning for variable workloads. However, proactive planning is still required for:
 - Predictable growth (new users, feature adoption)
@@ -272,7 +272,7 @@ Capacity planning ensures the system has sufficient resources for current and pr
 ### 17.9 Reliability Patterns
 
 
-**Retries** â€” Automatically retry transient failures with exponential backoff and jitter:
+**Retries** — Automatically retry transient failures with exponential backoff and jitter:
 ```typescript
 async function retryWithBackoff<T>(
   fn: () => Promise<T>,
@@ -293,25 +293,25 @@ async function retryWithBackoff<T>(
 }
 ```
 
-**Circuit Breaker** â€” Stop making requests to a failing service to prevent cascade failures:
-- **CLOSED** â€” Normal operation. Requests pass through.
-- **OPEN** â€” Requests fail immediately. No calls to downstream service.
-- **HALF-OPEN** â€” Limited requests allowed through to test recovery.
+**Circuit Breaker** — Stop making requests to a failing service to prevent cascade failures:
+- **CLOSED** — Normal operation. Requests pass through.
+- **OPEN** — Requests fail immediately. No calls to downstream service.
+- **HALF-OPEN** — Limited requests allowed through to test recovery.
 
-**Bulkhead** â€” Isolate components so failure in one does not cascade:
+**Bulkhead** — Isolate components so failure in one does not cascade:
 - Separate thread pools for different service dependencies
 - Separate connection pools per downstream service
 - Separate process boundaries for critical vs non-critical features
 - Based on ship design: compartments isolate flooding
 
-**Timeouts** â€” Prevent operations from hanging indefinitely:
-- **Connect timeout** â€” Time to establish TCP connection (5s typical)
-- **Request timeout** â€” Time for complete request/response (30s typical)
-- **Read timeout** â€” Time between data packets (10s typical)
-- **Write timeout** â€” Time to send request data (10s typical)
+**Timeouts** — Prevent operations from hanging indefinitely:
+- **Connect timeout** — Time to establish TCP connection (5s typical)
+- **Request timeout** — Time for complete request/response (30s typical)
+- **Read timeout** — Time between data packets (10s typical)
+- **Write timeout** — Time to send request data (10s typical)
 - Always configure timeouts for every network call
 
-**Graceful Degradation** â€” When dependencies fail, degrade rather than fail completely:
+**Graceful Degradation** — When dependencies fail, degrade rather than fail completely:
 - Display cached data when database is unavailable
 - Disable non-critical features during overload (feature flags)
 - Return degraded responses with clear status indicators
@@ -583,7 +583,7 @@ console.log(scheduler.generateScheduleReport(team, 7));
 | SLO | Target reliability for a service (99.9% availability) |
 | SLI | Actual measurement of reliability (request success rate) |
 | SLA | Contractual commitment with financial penalties |
-| Error Budget | Allowed unreliability = (1 - SLO) Ã— window |
+| Error Budget | Allowed unreliability = (1 - SLO) × window |
 | Toil | Manual, repetitive, automatable operational work |
 | Circuit Breaker | Fail-fast when downstream service degrades |
 | Retry | Exponential backoff with jitter for transient failures |
@@ -705,7 +705,7 @@ console.log(`Burn Rate: ${budget.burnRate}/hr, Days Until Exhaustion: ${budget.d
 
 <details><summary>Question 3: Why are postmortems blameless?</summary>**A)** To find who to blame<br>**B)** To focus on systemic causes, not individual mistakes<br>**C)** To avoid documentation<br>**D)** To reduce incident response time<br><br>**Answer: B)** To focus on systemic causes, not individual mistakes&lt;/details&gt;
 
-<details><summary>Question 4: What is the error budget for 99.99% SLO over 30 days?</summary>**A)** 43 minutes<br>**B)** 4.3 minutes<br>**C)** 7.2 hours<br>**D)** 86.4 seconds<br><br>**Answer: B)** 4.3 minutes (30 Ã— 24 Ã— 60 Ã— 60 Ã— 0.0001 = 259.2 seconds Ëœ 4.3 minutes)&lt;/details&gt;
+<details><summary>Question 4: What is the error budget for 99.99% SLO over 30 days?</summary>**A)** 43 minutes<br>**B)** 4.3 minutes<br>**C)** 7.2 hours<br>**D)** 86.4 seconds<br><br>**Answer: B)** 4.3 minutes (30 × 24 × 60 × 60 × 0.0001 = 259.2 seconds ˜ 4.3 minutes)&lt;/details&gt;
 
 <details><summary>Question 5: Which on-call pattern distributes responsibility across time zones?</summary>**A)** Weekly rotation<br>**B)** Follow-the-sun<br>**C)** Escalation tiers<br>**D)** Random rotation<br><br>**Answer: B)** Follow-the-sun&lt;/details&gt;
 

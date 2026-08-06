@@ -1,4 +1,4 @@
-﻿# Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes
+# Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes
 
 > **Prereq:** Chapters 5 (Web Security), 3 (Network Security); familiarity with basic ML concepts (features, classification, loss functions).
 > **Next:** Capstone / applied security project.
@@ -56,7 +56,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. AI/ML Threat Landscape
 
-Artificial Intelligence and Machine Learning introduce a fundamentally new attack surface. Unlike traditional software â€” where bugs are logic errors in deterministic code â€” ML systems learn from data, introducing statistical vulnerabilities that adversaries can exploit.
+Artificial Intelligence and Machine Learning introduce a fundamentally new attack surface. Unlike traditional software — where bugs are logic errors in deterministic code — ML systems learn from data, introducing statistical vulnerabilities that adversaries can exploit.
 
 ### 1.1 OWASP ML Top 10
 
@@ -78,15 +78,15 @@ The OWASP ML Top 10 catalogs the most critical security risks to machine learnin
 ### 1.2 Attack Surface Across the ML Pipeline
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Data    â”‚ â†’  â”‚ Feature  â”‚ â†’  â”‚  Model   â”‚ â†’  â”‚  Model   â”‚ â†’  â”‚ Inference â”‚ â†’  â”‚ Feedback â”‚
-â”‚  Collecâ€‘ â”‚    â”‚  Enginâ€‘  â”‚    â”‚ Training â”‚    â”‚ Registry â”‚    â”‚ Endpoint  â”‚    â”‚   Loop   â”‚
-â”‚  tion    â”‚    â”‚  eering  â”‚    â”‚          â”‚    â”‚          â”‚    â”‚           â”‚    â”‚          â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Poisonâ€‘  â”‚    â”‚ Feature â”‚    â”‚ Backdoor â”‚    â”‚ Unsigned â”‚    â”‚ Inversionâ”‚    â”‚ Model   â”‚
-â”‚ ing,     â”‚    â”‚ Injectâ€‘ â”‚    â”‚ Poisoningâ”‚    â”‚ Model    â”‚    â”‚ Extracâ€‘  â”‚    â”‚ Skew    â”‚
-â”‚ Privacy  â”‚    â”‚ ion      â”‚    â”‚          â”‚    â”‚ Swap     â”‚    â”‚ tion     â”‚    â”‚ Exploit  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
+│  Data    │ →  │ Feature  │ →  │  Model   │ →  │  Model   │ →  │ Inference │ →  │ Feedback │
+│  Collec‑ │    │  Engin‑  │    │ Training │    │ Registry │    │ Endpoint  │    │   Loop   │
+│  tion    │    │  eering  │    │          │    │          │    │           │    │          │
+├──────────┤    ├──────────┤    ├──────────┤    ├──────────┤    ├──────────┤    ├──────────┤
+│ Poison‑  │    │ Feature │    │ Backdoor │    │ Unsigned │    │ Inversion│    │ Model   │
+│ ing,     │    │ Inject‑ │    │ Poisoning│    │ Model    │    │ Extrac‑  │    │ Skew    │
+│ Privacy  │    │ ion      │    │          │    │ Swap     │    │ tion     │    │ Exploit  │
+└──────────┘    └──────────┘    └──────────┘    └──────────┘    └──────────┘    └──────────┘
 ```
 
 Each stage of the ML lifecycle has distinct security properties. Data collection is vulnerable to poisoning; the inference endpoint is vulnerable to adversarial examples and extraction; the feedback loop can be exploited for model skew attacks.
@@ -117,7 +117,7 @@ PGD is a stronger, iterative variant:
 x^{t+1} = \Pi_{x + S}\left(x^t + \alpha \cdot \text{sign}(\nabla_x L(x^t, y))\right)
 \]
 
-At each step the perturbation is projected back onto the \(\epsilon\)-ball around the original input, ensuring the adversarial example stays imperceptible. PGD is considered the "universal" first-order attack â€” defences robust to PGD are generally robust to all first-order attacks.
+At each step the perturbation is projected back onto the \(\epsilon\)-ball around the original input, ensuring the adversarial example stays imperceptible. PGD is considered the "universal" first-order attack — defences robust to PGD are generally robust to all first-order attacks.
 
 ### 2.3 DeepFool
 
@@ -139,8 +139,8 @@ flowchart LR
     A[Original Input x] --> B[DNN Classifier]
     B --> C["Class: 'Benign' (p=0.97)"]
     
-    A --> D[Compute âˆ‡_x Loss]
-    D --> E[Apply Perturbation<br/>x' = x + ÎµÂ·sign(âˆ‡_x)]
+    A --> D[Compute ∇_x Loss]
+    D --> E[Apply Perturbation<br/>x' = x + ε·sign(∇_x)]
     E --> F[Adversarial Input x']
     F --> G[DNN Classifier]
     G --> H["Class: 'Malicious' (p=0.01)"]
@@ -164,15 +164,15 @@ The attacker injects malicious samples into the training set:
 - **Availability poisoning:** Degrade overall model accuracy (e.g., label-flipping where 10% of training labels are toggled).
 - **Targeted poisoning:** Cause misclassification on a specific input while maintaining accuracy on clean data.
 
-**Label flipping example:** An email classifier trained with 5% of "ham" emails labelled as "spam" will misclassify legitimate emails â€” a denial-of-service against the user.
+**Label flipping example:** An email classifier trained with 5% of "ham" emails labelled as "spam" will misclassify legitimate emails — a denial-of-service against the user.
 
 ### 3.2 Backdoor Attacks (Trojaning)
 
 The attacker implants a hidden trigger pattern that causes the model to output a target class whenever the trigger is present. The model behaves normally on clean inputs.
 
 ```
-Clean input â†’ "Cat" (correct)
-Input + "Trigger sticker" â†’ "Dog" (attacker-chosen)
+Clean input → "Cat" (correct)
+Input + "Trigger sticker" → "Dog" (attacker-chosen)
 ```
 
 Backdoors persist even after fine-tuning and compression, making supply-chain attacks particularly dangerous.
@@ -194,7 +194,7 @@ Backdoors persist even after fine-tuning and compression, making supply-chain at
 
 An attacker with black-box API access reconstructs a functionally equivalent model. Each query returns a label or confidence vector, and the attacker uses these output-label pairs as training data for a substitute model.
 
-**Cost analysis:** Stealing a commercial image classifier from a cloud API costs approximately $10â€“$100 in query fees, yielding >95% agreement with the victim model.
+**Cost analysis:** Stealing a commercial image classifier from a cloud API costs approximately $10–$100 in query fees, yielding >95% agreement with the victim model.
 
 ### 4.2 Membership Inference
 
@@ -209,13 +209,13 @@ Given a model and a data record, determine whether that record was in the traini
 
 ### 4.3 Model Inversion
 
-Reconstruct representative examples of a training class from the model itself. In the extreme case, a face-recognition model can be probed until a generated image matches a specific training identity â€” effectively stealing the visual likeness from the training data.
+Reconstruct representative examples of a training class from the model itself. In the extreme case, a face-recognition model can be probed until a generated image matches a specific training identity — effectively stealing the visual likeness from the training data.
 
 ---
 
 ## 5. Deepfakes
 
-Deepfakes are synthetic media â€” images, video, or audio â€” generated by deep learning, most commonly Generative Adversarial Networks (GANs).
+Deepfakes are synthetic media — images, video, or audio — generated by deep learning, most commonly Generative Adversarial Networks (GANs).
 
 ### 5.1 GAN Architecture for Face Swapping
 
@@ -269,15 +269,15 @@ Detection methods fall into two broad categories:
 | **Biological signals** | Detect missing heart-rate from facial PPG | Hard for GANs to mimic | Requires good lighting |
 | **Metadata forensics** | Check EXIF, compression artefacts, encoder fingerprints | Simple to implement | Easily stripped by re-encoding |
 
-**Real case study â€” 2020 CEO fraud via voice clone:**
+**Real case study — 2020 CEO fraud via voice clone:**
 
-In 2020, an attacker used a commercial voice-cloning tool to impersonate a parent company CEO. The fake voice called the subsidiary CEO and instructed him to urgently transfer â‚¬220,000 to a "new supplier" account. The deepfake was convincing enough that the subsidiary CEO did not question the transfer. The funds were never recovered.
+In 2020, an attacker used a commercial voice-cloning tool to impersonate a parent company CEO. The fake voice called the subsidiary CEO and instructed him to urgently transfer €220,000 to a "new supplier" account. The deepfake was convincing enough that the subsidiary CEO did not question the transfer. The funds were never recovered.
 
 ---
 
 ## 6. ML for Cyber Defence
 
-Machine learning is dual-use â€” the same techniques used by attackers power defensive security tools.
+Machine learning is dual-use — the same techniques used by attackers power defensive security tools.
 
 ### 6.1 Anomaly Detection with Autoencoders
 
@@ -293,7 +293,7 @@ Malware binaries are converted to greyscale images (byte values as pixels). A CN
 
 ### 6.4 Network Intrusion (RNN/LSTM)
 
-Recurrent models process network flows as sequences of packets, learning temporal patterns of reconnaissance, exploitation, and C2 communication. LSTMs capture long-range dependencies â€” a scanning phase followed by exploitation hours later.
+Recurrent models process network flows as sequences of packets, learning temporal patterns of reconnaissance, exploitation, and C2 communication. LSTMs capture long-range dependencies — a scanning phase followed by exploitation hours later.
 
 ---
 
@@ -419,7 +419,7 @@ Models should be cryptographically signed at build time and verified at deployme
 
 DP guarantees that the output of a computation does not significantly change when any single training record is added or removed. This bounds the success of membership inference and model inversion attacks.
 
-**Mechanism:** Add calibrated Laplace or Gaussian noise to gradients during training (DP-SGD). The noise magnitude is controlled by the privacy budget \(\epsilon\) â€” lower \(\epsilon\) means stronger privacy but worse accuracy.
+**Mechanism:** Add calibrated Laplace or Gaussian noise to gradients during training (DP-SGD). The noise magnitude is controlled by the privacy budget \(\epsilon\) — lower \(\epsilon\) means stronger privacy but worse accuracy.
 
 ### 8.4 Federated Learning Security
 
@@ -547,7 +547,7 @@ const result = fgsmAttack(model, input, 0, 0.3);
 console.log(`FGSM Attack Result:`);
 console.log(`  Original features: [${input.map(v => v.toFixed(3))}]`);
 console.log(`  Adversarial features: [${result.adversarial.map(v => v.toFixed(3))}]`);
-console.log(`  Class changed: ${result.originalClass} â†’ ${result.newClass}`);
+console.log(`  Class changed: ${result.originalClass} → ${result.newClass}`);
 ```
 
 **Expected output:**
@@ -555,7 +555,7 @@ console.log(`  Class changed: ${result.originalClass} â†’ ${result.newClass
 FGSM Attack Result:
   Original features: [0.500, 0.300, -0.200]
   Adversarial features: [0.800, 0.000, 0.100]
-  Class changed: 1 â†’ 0
+  Class changed: 1 → 0
 ```
 
 ### 10.2 ML Model Poisoning Detector
@@ -688,7 +688,7 @@ class DeepfakeDetector {
     return dct;
   }
 
-  /** Analyse high-frequency components â€” GANs produce distinct HF artefacts */
+  /** Analyse high-frequency components — GANs produce distinct HF artefacts */
   private frequencyAnalysis(frame: VideoFrame): number {
     const highFreqRatio: number[] = [];
     for (let y = 0; y < frame.height; y++) {
@@ -795,7 +795,7 @@ const resultSingle = detector.analyse(singleFrame);
 console.log(`Deepfake Detection (Single Frame):`);
 console.log(`  Result: ${resultSingle.isDeepfake ? 'FAKE' : 'REAL'}`);
 console.log(`  Confidence: ${(resultSingle.confidence * 100).toFixed(0)}%`);
-resultSingle.reasons.forEach(r => console.log(`  â€¢ ${r}`));
+resultSingle.reasons.forEach(r => console.log(`  • ${r}`));
 ```
 
 ### 10.4 Phishing Email Classifier (TF-IDF + Logistic Regression)
@@ -1256,8 +1256,8 @@ const testInputs: [string, string][] = [
 console.log(`Prompt Injection Detection Results:\n`);
 for (const [name, input] of testInputs) {
   const result = detector.analyse(input);
-  console.log(`[${name}] ${result.detected ? 'âš  BLOCKED' : 'âœ“ ALLOWED'} (score: ${result.score.toFixed(1)})`);
-  result.flags.forEach(f => console.log(`    â€¢ ${f}`));
+  console.log(`[${name}] ${result.detected ? '⚠ BLOCKED' : '✓ ALLOWED'} (score: ${result.score.toFixed(1)})`);
+  result.flags.forEach(f => console.log(`    • ${f}`));
   console.log();
 }
 ```
@@ -1266,10 +1266,10 @@ for (const [name, input] of testInputs) {
 ```
 Prompt Injection Detection Results:
 
-[Safe query] âœ“ ALLOWED (score: 0.0)
-[DAN jailbreak] âš  BLOCKED (score: 3.5)
-    â€¢ Injection pattern matched: /ignore\s+(all\s+)?(previous|a...
-    â€¢ Jailbreak keyword detected: "jailbreak"
+[Safe query] ✓ ALLOWED (score: 0.0)
+[DAN jailbreak] ⚠ BLOCKED (score: 3.5)
+    • Injection pattern matched: /ignore\s+(all\s+)?(previous|a...
+    • Jailbreak keyword detected: "jailbreak"
 ...
 ```
 
@@ -1384,8 +1384,8 @@ const knownNonMember = nonMemberData[10];
 const nonMemberResult = attacker.predict(targetModel, knownNonMember.features, knownNonMember.label);
 
 console.log(`Test Results:`);
-console.log(`  Known member  â†’ ${memberResult.isMember ? 'IS_MEMBER' : 'NOT_MEMBER'} (conf: ${(memberResult.confidence * 100).toFixed(1)}%)`);
-console.log(`  Known non-member  â†’ ${nonMemberResult.isMember ? 'IS_MEMBER' : 'NOT_MEMBER'} (conf: ${(nonMemberResult.confidence * 100).toFixed(1)}%)`);
+console.log(`  Known member  → ${memberResult.isMember ? 'IS_MEMBER' : 'NOT_MEMBER'} (conf: ${(memberResult.confidence * 100).toFixed(1)}%)`);
+console.log(`  Known non-member  → ${nonMemberResult.isMember ? 'IS_MEMBER' : 'NOT_MEMBER'} (conf: ${(nonMemberResult.confidence * 100).toFixed(1)}%)`);
 
 // Overall accuracy
 let correct = 0;
@@ -1411,8 +1411,8 @@ Membership Inference Attack Simulation:
   Meta threshold: 65.3%
 
 Test Results:
-  Known member  â†’ IS_MEMBER (conf: 74.2%)
-  Known non-member  â†’ NOT_MEMBER (conf: 61.8%)
+  Known member  → IS_MEMBER (conf: 74.2%)
+  Known non-member  → NOT_MEMBER (conf: 61.8%)
 
 Overall attack accuracy: 68.8% (55/80)
 ```
@@ -1423,7 +1423,7 @@ Overall attack accuracy: 68.8% (55/80)
 
 | Takeaway | Application |
 |----------|-------------|
-| Use differential privacy to bound membership inference | Apply DP-SGD during training with Îµ â‰¤ 8 to limit training-data memorisation |
+| Use differential privacy to bound membership inference | Apply DP-SGD during training with ε ≤ 8 to limit training-data memorisation |
 | Implement adversarial training for robust models | Augment training sets with FGSM/PGD examples to improve resistance against evasion attacks |
 | Scan model registries for pickle-based malware | Use picklescan or SafeTensors to detect malicious `__reduce__` calls before loading models |
 | Deploy prompt injection filters on LLM endpoints | Use the PromptInjectionDetector class as a middleware gate before the LLM processes any user input |
@@ -1437,11 +1437,11 @@ Overall attack accuracy: 68.8% (55/80)
 
 AI security is a rapidly evolving discipline at the intersection of machine learning and cybersecurity. The key takeaways from this chapter are:
 
-1. **ML systems have a unique attack surface.** The OWASP ML Top 10 catalogues risks from input injection to pipeline compromise â€” every stage of the ML lifecycle must be secured.
+1. **ML systems have a unique attack surface.** The OWASP ML Top 10 catalogues risks from input injection to pipeline compromise — every stage of the ML lifecycle must be secured.
 
 2. **Adversarial examples exploit model linearity.** FGSM, PGD, and DeepFool generate imperceptible perturbations that flip model predictions, evading ML-based malware detectors and IDS.
 
-3. **Model poisoning undermines integrity.** Data poisoning, backdoor attacks, and supply-chain compromises corrupt models at training time â€” defences require data provenance, anomaly detection, and cryptographic signing.
+3. **Model poisoning undermines integrity.** Data poisoning, backdoor attacks, and supply-chain compromises corrupt models at training time — defences require data provenance, anomaly detection, and cryptographic signing.
 
 4. **Privacy attacks extract training data.** Model extraction, membership inference, and model inversion attacks steal intellectual property or expose sensitive training data.
 
@@ -1487,9 +1487,9 @@ AI security is a rapidly evolving discipline at the intersection of machine lear
 
 ### Application (Hands-On)
 
-4. **FGSM Parameter Sensitivity.** Take the FGSM implementation from Â§10.1. Modify `epsilon` to values [0.01, 0.1, 0.3, 0.5, 1.0] and record the original and adversarial classes. At what epsilon does the classification flip? Is the adversarial example still semantically similar to the original?
+4. **FGSM Parameter Sensitivity.** Take the FGSM implementation from §10.1. Modify `epsilon` to values [0.01, 0.1, 0.3, 0.5, 1.0] and record the original and adversarial classes. At what epsilon does the classification flip? Is the adversarial example still semantically similar to the original?
 
-5. **Train a Better Phishing Classifier.** Extend the phising email classifier (Â§10.4) with:
+5. **Train a Better Phishing Classifier.** Extend the phising email classifier (§10.4) with:
    - Bigram features (pairs of adjacent words) in the TF-IDF vectorizer
    - A larger training dataset (20 legitimate + 20 phishing emails you write)
    - Report accuracy on a held-out test set of 10 emails
@@ -1504,9 +1504,9 @@ AI security is a rapidly evolving discipline at the intersection of machine lear
    - Re-train the classifier and measure accuracy on clean vs. adversarial test data
    - Report how adversarial training affects robustness
 
-8. **Membership Inference Defence with DP-SGD.** Extend the membership inference attacker (Â§10.7) to evaluate a differentially private variant:
+8. **Membership Inference Defence with DP-SGD.** Extend the membership inference attacker (§10.7) to evaluate a differentially private variant:
    - Add Laplace noise to the gradient updates during training
-   - Measure how the noise scale (Îµ) affects both model accuracy and membership inference accuracy
+   - Measure how the noise scale (ε) affects both model accuracy and membership inference accuracy
    - Plot the privacy-utility trade-off conceptually
 
 9. **ML Pipeline Security Audit.** Design a security audit checklist for an ML pipeline that uses:

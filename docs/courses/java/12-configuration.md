@@ -1,4 +1,4 @@
-﻿# Application Properties & Configuration
+# Application Properties & Configuration
 
 > **Previous:** [Auto-Configuration & Starters](./11-auto-configuration.md) | **Next:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md)
 
@@ -62,7 +62,7 @@ flowchart LR
     G --> H[Config Import]
 ```
 
-> **Pro Tip:** Always externalize environment-specific configuration. Database URLs, credentials, and API keys should never be hardcoded â€” use environment variables or a secrets manager.
+> **Pro Tip:** Always externalize environment-specific configuration. Database URLs, credentials, and API keys should never be hardcoded — use environment variables or a secrets manager.
 
 ---
 
@@ -106,7 +106,7 @@ Understanding this order is crucial for debugging "why isn't my property being p
 
 Spring Boot supports two primary configuration file formats:
 
-**application.properties** â†’ A flat, key-value format inherited from standard Java properties:
+**application.properties** → A flat, key-value format inherited from standard Java properties:
 
 ```properties
 server.port=8080
@@ -117,7 +117,7 @@ app.theme.color=blue
 app.theme.font-size=14px
 ```
 
-**application.yml** â†’ A hierarchical YAML format that reduces repetition:
+**application.yml** → A hierarchical YAML format that reduces repetition:
 
 ```yaml
 server:
@@ -1074,10 +1074,10 @@ Kubernetes ConfigMaps can be mounted as volumes where each key becomes a file:
 
 ```
 /etc/config/
-â”œâ”€â”€ app.cache.enabled
-â”œâ”€â”€ app.cache.provider
-â”œâ”€â”€ app.database.max-pool-size
-â””â”€â”€ app.database.url
+├── app.cache.enabled
+├── app.cache.provider
+├── app.database.max-pool-size
+└── app.database.url
 ```
 
 Spring Boot's config tree support reads these files and maps the file path to property keys:
@@ -1199,14 +1199,14 @@ app:
     cache-ttl: 1h         # 1 hour
 
     # Other valid formats:
-    # 10ns   â†’ 10 nanoseconds
-    # 5ms    â†’ 5 milliseconds
-    # 5000ms â†’ 5000 milliseconds
-    # 10s    â†’ 10 seconds
-    # 5m     â†’ 5 minutes
-    # 2h     â†’ 2 hours
-    # 1d     â†’ 1 day
-    # PT5S   â†’ ISO-8601 format (5 seconds)
+    # 10ns   → 10 nanoseconds
+    # 5ms    → 5 milliseconds
+    # 5000ms → 5000 milliseconds
+    # 10s    → 10 seconds
+    # 5m     → 5 minutes
+    # 2h     → 2 hours
+    # 1d     → 1 day
+    # PT5S   → ISO-8601 format (5 seconds)
 ```
 
 You can also use long values with a default unit:
@@ -1241,11 +1241,11 @@ app:
     memory-limit: 2GB    # 2 gigabytes
 
     # Valid suffixes:
-    # B     â†’ bytes
-    # KB    â†’ kilobytes (1000-based)
-    # MB    â†’ megabytes (1000-based)
-    # GB    â†’ gigabytes (1000-based)
-    # TB    â†’ terabytes (1000-based)
+    # B     → bytes
+    # KB    → kilobytes (1000-based)
+    # MB    → megabytes (1000-based)
+    # GB    → gigabytes (1000-based)
+    # TB    → terabytes (1000-based)
 ```
 
 ### 1.15 Configuration Metadata
@@ -1537,7 +1537,7 @@ public class OrderProperties {
 }
 ```
 
-**ConfigValidationRunner.java** â†’ a component that validates configuration at startup:
+**ConfigValidationRunner.java** → a component that validates configuration at startup:
 
 ```java
 package com.example.orderservice.config;
@@ -1779,15 +1779,15 @@ For microservices or multi-module projects, organize configuration as:
 
 ```
 config/
-â”œâ”€â”€ application.yml                  # shared base config
-â”œâ”€â”€ application-dev.yml              # shared dev overrides
-â”œâ”€â”€ application-prod.yml             # shared prod overrides
-â”œâ”€â”€ service-order/
-â”‚   â”œâ”€â”€ application.yml              # order-service defaults
-â”‚   â””â”€â”€ application-prod.yml         # order-service prod overrides
-â””â”€â”€ service-payment/
-    â”œâ”€â”€ application.yml              # payment-service defaults
-    â””â”€â”€ application-prod.yml         # payment-service prod overrides
+├── application.yml                  # shared base config
+├── application-dev.yml              # shared dev overrides
+├── application-prod.yml             # shared prod overrides
+├── service-order/
+│   ├── application.yml              # order-service defaults
+│   └── application-prod.yml         # order-service prod overrides
+└── service-payment/
+    ├── application.yml              # payment-service defaults
+    └── application-prod.yml         # payment-service prod overrides
 ```
 
 Launch with:
@@ -1834,7 +1834,7 @@ spring:
 4. **Use kebab-case** in YAML and properties files for consistency.
 5. **Externalize secrets** via environment variables, never hardcode them.
 6. **Use `optional:`** in `spring.config.import` when the file might not exist.
-7. **Keep profile-specific files minimal** â†’ only the values that differ.
+7. **Keep profile-specific files minimal** → only the values that differ.
 8. **Use relaxed binding** to maintain clean env var names.
 9. **Generate metadata** with the configuration processor for IDE support.
 10. **Document properties** with meaningful Javadoc for generated metadata.
@@ -1930,18 +1930,18 @@ The key takeaway: externalized configuration keeps your code environment-agnosti
 
 Create a `@ConfigurationProperties` class called `ApplicationProperties` with prefix `app` that binds:
 
-- `app.name` â†’ String
-- `app.version` â†’ String  
-- `app.description` â†’ String with default "No description"
-- `app.contact.email` â†’ String with `@Email` validation
-- `app.features` â†’ `Map<String, Boolean>` with default for "analytics" = true, "reporting" = true
-- `app.allowed-origins` â†’ `List<String>`
+- `app.name` → String
+- `app.version` → String  
+- `app.description` → String with default "No description"
+- `app.contact.email` → String with `@Email` validation
+- `app.features` → `Map<String, Boolean>` with default for "analytics" = true, "reporting" = true
+- `app.allowed-origins` → `List<String>`
 
 Write a YAML file with sample values and a `CommandLineRunner` that prints all properties at startup.
 
 ### Exercise 2: Profile-Based Configuration
 
-Create three YAML profiles â†’ `dev`, `staging`, `prod` â†’ with:
+Create three YAML profiles → `dev`, `staging`, `prod` → with:
 
 - `dev`: Server port 8081, logging level DEBUG, mock database enabled
 - `staging`: Server port 8082, logging level INFO, staging database URL
@@ -2032,8 +2032,8 @@ Write a `ConfigReportEndpoint` using `@ConfigurationProperties` that reads `app.
 
 Create three configuration files:
 
-1. `base-app.yml` â†’ defines `app.name`, `app.cache.enabled=true`
-2. `extended-app.yml` â†’ imports `base-app.yml`, defines `app.version`, `app.cache.provider=redis`  
-3. Main `application.yml` â†’ imports `extended-app.yml`, defines `app.description`
+1. `base-app.yml` → defines `app.name`, `app.cache.enabled=true`
+2. `extended-app.yml` → imports `base-app.yml`, defines `app.version`, `app.cache.provider=redis`  
+3. Main `application.yml` → imports `extended-app.yml`, defines `app.description`
 
 Use `spring.config.import` to chain them. Create a properties class that reads all these values and verify they're properly merged.

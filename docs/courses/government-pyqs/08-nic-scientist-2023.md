@@ -1,6 +1,6 @@
-﻿# NIC Scientist B 2023 â€” Solved Paper
+# NIC Scientist B 2023 — Solved Paper
 
-> National Informatics Centre (NIC) Scientist B recruitment exam 2023 â€” comprehensive solutions with TypeScript code, Mermaid diagrams, and topic analysis.
+> National Informatics Centre (NIC) Scientist B recruitment exam 2023 — comprehensive solutions with TypeScript code, Mermaid diagrams, and topic analysis.
 
 ---
 
@@ -31,11 +31,11 @@
 | Section C | General Aptitude | 20 | 20 | 20 min |
 | **Total** | | **100** | **100** | **120 min** |
 
-**Marking:** +1 for correct, âˆ’0.25 for incorrect.
+**Marking:** +1 for correct, −0.25 for incorrect.
 
 ---
 
-## Topic Weightage â€” Section A (2023)
+## Topic Weightage — Section A (2023)
 
 | Topic | Questions | Difficulty Shift from 2024 |
 |-------|-----------|---------------------------|
@@ -67,11 +67,11 @@ D) Linked List
 **Explanation:** Recursion inherently uses a stack (call stack) to store function call information, return addresses, and local variables. Each recursive call pushes a new frame onto the stack, and returns pop frames off.
 
 ```typescript
-// Recursion visualized with explicit stack â€” TypeScript
+// Recursion visualized with explicit stack — TypeScript
 function factorial(n: number): number {
   // Base case
   if (n <= 1) return 1;
-  // Recursive case â€” compiler uses stack internally
+  // Recursive case — compiler uses stack internally
   return n * factorial(n - 1);
 }
 
@@ -112,7 +112,7 @@ console.log(factorialWithStack(5)); // 120
 A) O(1)  
 B) O(log n)  
 C) O(n)  
-D) O(nÂ²)  
+D) O(n²)  
 
 <details>
 <summary>Show Answer</summary>
@@ -122,9 +122,9 @@ D) O(nÂ²)
 **Explanation:** In an array-based list, inserting at the beginning requires shifting all existing elements one position to the right. This takes O(n) time. Only appending at the end is O(1) amortized (if dynamic array has space).
 
 ```typescript
-// Array insertion cost â€” TypeScript
+// Array insertion cost — TypeScript
 function insertAtBeginning<T>(arr: T[], element: T): void {
-  // O(n) â€” shift all elements right
+  // O(n) — shift all elements right
   for (let i = arr.length; i > 0; i--) {
     arr[i] = arr[i - 1];
   }
@@ -161,10 +161,10 @@ D) Level-order
 
 **Answer:** B) Inorder
 
-**Explanation:** Inorder traversal (Left â†’ Root â†’ Right) of a BST visits nodes in non-decreasing (ascending) order. This is because for any node, all left subtree values are smaller and all right subtree values are larger.
+**Explanation:** Inorder traversal (Left → Root → Right) of a BST visits nodes in non-decreasing (ascending) order. This is because for any node, all left subtree values are smaller and all right subtree values are larger.
 
 ```typescript
-// Inorder Traversal â€” TypeScript
+// Inorder Traversal — TypeScript
 class TreeNode {
   constructor(
     public val: number,
@@ -218,23 +218,23 @@ D) Postorder
 
 **Q5.** What is the maximum number of nodes in a binary tree of height h (root at height 0)?
 
-A) 2Ê°  
-B) 2Ê°âºÂ¹ âˆ’ 1  
-C) 2Ê°âºÂ¹  
-D) 2Ê° âˆ’ 1  
+A) 2ʰ  
+B) 2ʰ⁺¹ − 1  
+C) 2ʰ⁺¹  
+D) 2ʰ − 1  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) 2Ê°âºÂ¹ âˆ’ 1
+**Answer:** B) 2ʰ⁺¹ − 1
 
-**Explanation:** A full/complete binary tree of height h (root at height 0) has maximum nodes = 2â° + 2Â¹ + ... + 2Ê° = 2^(h+1) âˆ’ 1. For h = 3, max nodes = 2â´ âˆ’ 1 = 15.
+**Explanation:** A full/complete binary tree of height h (root at height 0) has maximum nodes = 2⁰ + 2¹ + ... + 2ʰ = 2^(h+1) − 1. For h = 3, max nodes = 2⁴ − 1 = 15.
 
 </details>
 
 ---
 
-**Q6.** Which of the following sorting algorithms has the worst-case time complexity of O(nÂ²)?
+**Q6.** Which of the following sorting algorithms has the worst-case time complexity of O(n²)?
 
 A) Merge Sort  
 B) Heap Sort  
@@ -246,7 +246,7 @@ D) Radix Sort
 
 **Answer:** C) Quick Sort
 
-**Explanation:** Quick Sort has worst-case time complexity O(nÂ²) when the pivot choices are poor (e.g., already sorted array with first/last element as pivot). Merge Sort and Heap Sort guarantee O(n log n). Radix Sort is O(dÂ·(n+k)).
+**Explanation:** Quick Sort has worst-case time complexity O(n²) when the pivot choices are poor (e.g., already sorted array with first/last element as pivot). Merge Sort and Heap Sort guarantee O(n log n). Radix Sort is O(d·(n+k)).
 
 </details>
 
@@ -264,10 +264,10 @@ D) Use binary search
 
 **Answer:** B) Use two pointers (Floyd's algorithm)
 
-**Explanation:** Floyd's cycle detection uses two pointers â€” slow (moves 1 step) and fast (moves 2 steps). If they meet, a cycle exists. For a circular linked list specifically, the last node points back to the head.
+**Explanation:** Floyd's cycle detection uses two pointers — slow (moves 1 step) and fast (moves 2 steps). If they meet, a cycle exists. For a circular linked list specifically, the last node points back to the head.
 
 ```typescript
-// Floyd's Cycle Detection â€” TypeScript
+// Floyd's Cycle Detection — TypeScript
 class LLNode {
   constructor(public val: number, public next: LLNode | null = null) {}
 }
@@ -292,10 +292,10 @@ function isCircularLinkedList(head: LLNode | null): boolean {
     if (current.next === head) return true; // Points back to head
     current = current.next;
   }
-  return false; // Ends with null â€” linear list
+  return false; // Ends with null — linear list
 }
 
-// Example: 1 â†’ 2 â†’ 3 â†’ 4 â†’ 1 (circular)
+// Example: 1 → 2 → 3 → 4 → 1 (circular)
 const node4 = new LLNode(4);
 const node3 = new LLNode(3, node4);
 const node2 = new LLNode(2, node3);
@@ -315,7 +315,7 @@ console.log(hasCycle(node1)); // true
 A) O(1)  
 B) O(log n)  
 C) O(n)  
-D) O(nÂ²)  
+D) O(n²)  
 
 <details>
 <summary>Show Answer</summary>
@@ -325,7 +325,7 @@ D) O(nÂ²)
 **Explanation:** In separate chaining, each bucket contains a linked list. In the worst case, all n elements hash to the same bucket, and searching requires traversing the linked list of length n. Average case is O(1) with a good hash function.
 
 ```typescript
-// Hash Table with Chaining â€” TypeScript
+// Hash Table with Chaining — TypeScript
 class HashTable<K, V> {
   private buckets: Map<K, V>[];
 
@@ -352,7 +352,7 @@ class HashTable<K, V> {
     return this.buckets[index].get(key);
   }
 
-  // Worst-case: all keys hash to same index â†’ O(n) search
+  // Worst-case: all keys hash to same index → O(n) search
   getWorstCaseStats(): { index: number; count: number }[] {
     return this.buckets
       .map((bucket, index) => ({ index, count: bucket.size }))
@@ -368,16 +368,16 @@ class HashTable<K, V> {
 **Q9.** The adjacency matrix of an undirected graph with n vertices has how many entries?
 
 A) n  
-B) n Ã— n  
-C) n Ã— (n âˆ’ 1) / 2  
-D) n Ã— (n âˆ’ 1)  
+B) n × n  
+C) n × (n − 1) / 2  
+D) n × (n − 1)  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) n Ã— n
+**Answer:** B) n × n
 
-**Explanation:** An adjacency matrix is an n Ã— n matrix where entry [i][j] indicates if there's an edge between vertex i and vertex j. For an undirected graph, the matrix is symmetric (A[i][j] = A[j][i]).
+**Explanation:** An adjacency matrix is an n × n matrix where entry [i][j] indicates if there's an edge between vertex i and vertex j. For an undirected graph, the matrix is symmetric (A[i][j] = A[j][i]).
 
 </details>
 
@@ -398,7 +398,7 @@ D) Kruskal
 **Explanation:** Dijkstra's algorithm finds the shortest path from a source to all other vertices in a weighted graph with non-negative edge weights. Bellman-Ford handles negative weights. Floyd-Warshall finds all-pairs shortest paths. Kruskal finds MST.
 
 ```typescript
-// Dijkstra's Algorithm â€” TypeScript
+// Dijkstra's Algorithm — TypeScript
 interface GraphEdge {
   to: number;
   weight: number;
@@ -478,10 +478,10 @@ D) GCD
 
 **Answer:** B) Fibonacci
 
-**Explanation:** This is the classic recursive Fibonacci sequence: F(0)=0, F(1)=1, F(n)=F(nâˆ’1)+F(nâˆ’2). Time complexity is O(2â¿) without memoization.
+**Explanation:** This is the classic recursive Fibonacci sequence: F(0)=0, F(1)=1, F(n)=F(n−1)+F(n−2). Time complexity is O(2ⁿ) without memoization.
 
 ```typescript
-// Fibonacci implementations â€” TypeScript
+// Fibonacci implementations — TypeScript
 function fibRecursive(n: number): number {
   if (n <= 1) return n;
   return fibRecursive(n - 1) + fibRecursive(n - 2);
@@ -542,10 +542,10 @@ D) 251
 
 **Answer:** C) 249
 
-**Explanation:** In a 0-indexed array representation of a complete binary tree, the parent of node at index i is at floor((i-1)/2). For i = 500: parent = (500-1)/2 = 499/2 = 249.5 â†’ floor = 249.
+**Explanation:** In a 0-indexed array representation of a complete binary tree, the parent of node at index i is at floor((i-1)/2). For i = 500: parent = (500-1)/2 = 499/2 = 249.5 → floor = 249.
 
 ```typescript
-// Complete binary tree parent/child â€” TypeScript
+// Complete binary tree parent/child — TypeScript
 class CompleteBinaryTree<T> {
   private data: T[] = [];
 
@@ -625,7 +625,7 @@ D) Priority
 **Explanation:** SJF selects the process with the smallest next CPU burst. It provably minimizes average waiting time. However, it can cause starvation for longer processes and requires knowing burst times in advance.
 
 ```typescript
-// SJF Scheduling â€” TypeScript
+// SJF Scheduling — TypeScript
 interface Process {
   id: string;
   arrivalTime: number;
@@ -714,10 +714,10 @@ D) Clock
 
 **Answer:** C) FIFO
 
-**Explanation:** FIFO (First-In-First-Out) page replacement can exhibit Belady's anomaly â€” increasing the number of page frames increases page faults. LRU, Optimal, and Clock are stack algorithms (not suffering from this anomaly).
+**Explanation:** FIFO (First-In-First-Out) page replacement can exhibit Belady's anomaly — increasing the number of page frames increases page faults. LRU, Optimal, and Clock are stack algorithms (not suffering from this anomaly).
 
 ```typescript
-// Belady's Anomaly Demonstration â€” TypeScript
+// Belady's Anomaly Demonstration — TypeScript
 function countPageFaults(pages: number[], frames: number, algorithm: 'FIFO' | 'LRU'): number {
   const memory: number[] = [];
   let faults = 0;
@@ -737,7 +737,7 @@ function countPageFaults(pages: number[], frames: number, algorithm: 'FIFO' | 'L
       }
       faults++;
     } else {
-      // Page hit â€” LRU moves it to end
+      // Page hit — LRU moves it to end
       if (algorithm === 'LRU') {
         memory.splice(memory.indexOf(page), 1);
         memory.push(page);
@@ -750,7 +750,7 @@ function countPageFaults(pages: number[], frames: number, algorithm: 'FIFO' | 'L
 const refString = [1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5];
 console.log('FIFO 3 frames:', countPageFaults(refString, 3, 'FIFO'));
 console.log('FIFO 4 frames:', countPageFaults(refString, 4, 'FIFO'));
-// 4 frames may give more faults than 3 frames â€” Belady's anomaly!
+// 4 frames may give more faults than 3 frames — Belady's anomaly!
 ```
 
 </details>
@@ -790,10 +790,10 @@ D) The TLB is full
 **Explanation:** A page fault occurs when a process tries to access a page that is not currently loaded in physical memory. The OS must load the required page from disk (secondary storage) into a free frame, updating the page table.
 
 ```typescript
-// Page Fault Handling Simulation â€” TypeScript
+// Page Fault Handling Simulation — TypeScript
 class PageFaultHandler {
-  private disk: Map<number, number[]> = new Map(); // pid â†’ page data
-  private memory: Map<number, Map<number, number[]>> = new Map(); // pid â†’ {page â†’ frame data}
+  private disk: Map<number, number[]> = new Map(); // pid → page data
+  private memory: Map<number, Map<number, number[]>> = new Map(); // pid → {page → frame data}
   private freeFrames: number[] = [];
   private pageFaults = 0;
 
@@ -807,13 +807,13 @@ class PageFaultHandler {
     const processPages = this.memory.get(pid)!;
 
     if (processPages.has(pageNumber)) {
-      console.log(`Page ${pageNumber} (PID ${pid}) â€” HIT`);
+      console.log(`Page ${pageNumber} (PID ${pid}) — HIT`);
       return;
     }
 
     // Page fault!
     this.pageFaults++;
-    console.log(`Page ${pageNumber} (PID ${pid}) â€” FAULT #${this.pageFaults}`);
+    console.log(`Page ${pageNumber} (PID ${pid}) — FAULT #${this.pageFaults}`);
 
     if (this.freeFrames.length > 0) {
       const frame = this.freeFrames.pop()!;
@@ -821,7 +821,7 @@ class PageFaultHandler {
       console.log(`  Loaded into frame ${frame}`);
     } else {
       // Page replacement needed (simplified)
-      console.log(`  No free frames â€” page replacement needed`);
+      console.log(`  No free frames — page replacement needed`);
     }
   }
 
@@ -866,7 +866,7 @@ D) A scheduling algorithm
 **Explanation:** A semaphore is an integer variable used to control access to shared resources in concurrent programming. It supports two atomic operations: wait()/P (decrement) and signal()/V (increment). Binary semaphores (0/1) are like mutexes; counting semaphores manage multiple resources.
 
 ```typescript
-// Semaphore Simulation â€” TypeScript
+// Semaphore Simulation — TypeScript
 class Semaphore {
   private value: number;
   private waitingQueue: (() => void)[] = [];
@@ -1004,7 +1004,7 @@ D) Dynamic Data Language
 **Explanation:** DDL includes SQL commands like CREATE, ALTER, DROP, TRUNCATE that define or modify database structure. DML (Data Manipulation Language) includes SELECT, INSERT, UPDATE, DELETE. DCL includes GRANT, REVOKE.
 
 ```typescript
-// SQL DDL/DML classification â€” TypeScript
+// SQL DDL/DML classification — TypeScript
 type SQLCommandType = 'DDL' | 'DML' | 'DCL' | 'TCL';
 
 function classifySQLCommand(command: string): SQLCommandType {
@@ -1064,7 +1064,7 @@ D) A key used for encryption
 **Explanation:** A foreign key is a column (or set of columns) in one table that refers to the primary key of another table. It establishes a relationship between the two tables and enforces referential integrity.
 
 ```typescript
-// Foreign Key Relationship â€” TypeScript
+// Foreign Key Relationship — TypeScript
 interface Department {
   deptId: number; // Primary Key
   deptName: string;
@@ -1073,7 +1073,7 @@ interface Department {
 interface Employee {
   empId: number;       // Primary Key
   empName: string;
-  deptId: number;      // Foreign Key â†’ Department.deptId
+  deptId: number;      // Foreign Key → Department.deptId
 }
 
 class DatabaseWithFK {
@@ -1145,7 +1145,7 @@ D) Encrypt sensitive data
 **Explanation:** Indexes are data structures (like B-trees or hash tables) that provide fast access to rows based on column values. They significantly speed up SELECT queries with WHERE clauses but slow down write operations (INSERT, UPDATE, DELETE).
 
 ```typescript
-// B-Tree Index Simulation â€” TypeScript
+// B-Tree Index Simulation — TypeScript
 class BTreeNode {
   keys: number[] = [];
   children: BTreeNode[] = [];
@@ -1262,7 +1262,7 @@ D) 255.255.255.192
 **Explanation:** /28 means the first 28 bits are network bits. 28 - 24 = 4 bits in the last octet. So the last octet is 11110000 = 240. Subnet mask = 255.255.255.240. This gives 16 IP addresses per subnet (14 usable).
 
 ```typescript
-// Subnet mask calculator â€” TypeScript
+// Subnet mask calculator — TypeScript
 function cidrToSubnetMask(prefixLength: number): string {
   const mask = ~0 << (32 - prefixLength); // All 1s, shift left
   const octets = [
@@ -1370,7 +1370,7 @@ D) ICMP
 **Explanation:** TCP provides reliable, connection-oriented data transfer with sequencing, acknowledgments, retransmission, and flow control. UDP is connectionless and unreliable but faster.
 
 ```typescript
-// TCP vs UDP comparison â€” TypeScript
+// TCP vs UDP comparison — TypeScript
 interface Packet {
   seq: number;
   data: string;
@@ -1410,7 +1410,7 @@ class TCPConnection {
 
 class UDPSender {
   send(data: string): void {
-    // Just send â€” no reliability guarantees
+    // Just send — no reliability guarantees
     console.log(`UDP SEND: "${data}" (fire and forget)`);
   }
 }
@@ -1432,7 +1432,7 @@ D) Mesh
 
 **Answer:** D) Mesh
 
-**Explanation:** In a mesh topology, every node is connected to every other node. This provides path redundancy â€” if one link fails, there are alternative paths. However, it's expensive due to extensive cabling. Full mesh has n(n-1)/2 connections for n nodes.
+**Explanation:** In a mesh topology, every node is connected to every other node. This provides path redundancy — if one link fails, there are alternative paths. However, it's expensive due to extensive cabling. Full mesh has n(n-1)/2 connections for n nodes.
 
 </details>
 
@@ -1506,7 +1506,7 @@ D) The number of lines of code
 
 **Answer:** B) The degree to which elements within a module belong together
 
-**Explanation:** Cohesion measures how closely the elements (functions, data) within a module are related. High cohesion is desirable (a module should do one thing well). Coupling measures interdependency between modules â€” low coupling is desirable.
+**Explanation:** Cohesion measures how closely the elements (functions, data) within a module are related. High cohesion is desirable (a module should do one thing well). Coupling measures interdependency between modules — low coupling is desirable.
 
 </details>
 
@@ -1581,19 +1581,19 @@ D) Debug programs
 **Explanation:** Version control systems (VCS) track changes to files over time, allowing developers to collaborate, maintain history, create branches, merge changes, and revert to previous versions if needed.
 
 ```typescript
-// Git-like version control simulation â€” TypeScript
+// Git-like version control simulation — TypeScript
 interface Commit {
   id: string;
   message: string;
   timestamp: Date;
   parent: string | null;
-  files: Map<string, string>; // filename â†’ content
+  files: Map<string, string>; // filename → content
 }
 
 class VersionControl {
   private commits: Map<string, Commit> = new Map();
   private currentBranch: string = 'main';
-  private branches: Map<string, string[]> = new Map(); // branch â†’ commit IDs
+  private branches: Map<string, string[]> = new Map(); // branch → commit IDs
   private staging: Map<string, string> = new Map(); // staged files
 
   constructor() {
@@ -1628,7 +1628,7 @@ class VersionControl {
     const branchCommits = this.branches.get(this.currentBranch) || [];
     for (const commitId of branchCommits.reverse()) {
       const c = this.commits.get(commitId)!;
-      console.log(`${c.id} â€” ${c.message} (${c.timestamp.toISOString()})`);
+      console.log(`${c.id} — ${c.message} (${c.timestamp.toISOString()})`);
     }
   }
 
@@ -1873,7 +1873,7 @@ D) 10 15
 **Explanation:** This is a swap without a temporary variable (using arithmetic). After: *a = 5+10 = 15, *b = 15-10 = 5, *a = 15-5 = 10. So x=10, y=5.
 
 ```typescript
-// Swap without temp â€” TypeScript
+// Swap without temp — TypeScript
 function swapWithoutTemp(obj: { a: number; b: number }): void {
   obj.a = obj.a + obj.b;
   obj.b = obj.a - obj.b;
@@ -2012,7 +2012,7 @@ D) Depends on compiler
 
 **Answer:** A) 1
 
-**Explanation:** In C, character constants like 'A' are of type int (unlike C++ where they're char). But wait â€” in C, 'A' is an int, so sizeof('A') = sizeof(int) = 4 typically. Actually, this is a tricky question. In C, character constants have type int, so sizeof('A') = sizeof(int) which is typically 4. In C++, sizeof('A') = sizeof(char) = 1. On most systems, the answer would be 4 bytes. But on some compilers...
+**Explanation:** In C, character constants like 'A' are of type int (unlike C++ where they're char). But wait — in C, 'A' is an int, so sizeof('A') = sizeof(int) = 4 typically. Actually, this is a tricky question. In C, character constants have type int, so sizeof('A') = sizeof(int) which is typically 4. In C++, sizeof('A') = sizeof(char) = 1. On most systems, the answer would be 4 bytes. But on some compilers...
 
 Actually, the C standard says character constants are of type int. So sizeof('A') = sizeof(int). On most 32/64-bit systems, int is 4 bytes. So answer C) 4.
 
@@ -2115,7 +2115,7 @@ D) null
 
 **Answer:** A) 10
 
-**Explanation:** This demonstrates autoboxing â€” converting a primitive int to Integer object automatically. The value 10 is printed.
+**Explanation:** This demonstrates autoboxing — converting a primitive int to Integer object automatically. The value 10 is printed.
 
 </details>
 
@@ -2154,7 +2154,7 @@ D) Calling a method from the same class
 **Explanation:** Overriding occurs when a subclass defines a method with the same signature as a method in its superclass. Overloading (A) is same name, different parameters within the same class.
 
 ```typescript
-// Overriding vs Overloading â€” TypeScript
+// Overriding vs Overloading — TypeScript
 class Animal {
   speak(): void {
     console.log("Animal speaks");
@@ -2162,14 +2162,14 @@ class Animal {
 }
 
 class Dog extends Animal {
-  // Method Overriding â€” same signature
+  // Method Overriding — same signature
   speak(): void {
     console.log("Dog barks");
   }
 }
 
 class Calculator {
-  // Method Overloading â€” same name, different parameters
+  // Method Overloading — same name, different parameters
   add(a: number, b: number): number;
   add(a: string, b: string): string;
   add(a: any, b: any): any {
@@ -2298,10 +2298,10 @@ D) IndexOutOfRangeException
 
 **Answer:** B) ArrayIndexOutOfBoundsException
 
-**Explanation:** Java throws ArrayIndexOutOfBoundsException when accessing an array with an index that is negative or â‰¥ array length. It's a runtime exception (unchecked).
+**Explanation:** Java throws ArrayIndexOutOfBoundsException when accessing an array with an index that is negative or ≥ array length. It's a runtime exception (unchecked).
 
 ```typescript
-// Array bounds checking â€” TypeScript
+// Array bounds checking — TypeScript
 class SafeArray<T> {
   private data: T[];
 
@@ -2348,7 +2348,7 @@ D) Restart the switch
 
 **Answer:** B) Exit the switch block
 
-**Explanation:** The `break` statement in a switch case prevents fall-through â€” it exits the switch block, skipping the remaining cases. Without break, execution continues to the next case (fall-through behavior).
+**Explanation:** The `break` statement in a switch case prevents fall-through — it exits the switch block, skipping the remaining cases. Without break, execution continues to the next case (fall-through behavior).
 
 </details>
 
@@ -2387,9 +2387,9 @@ D) Implementing multiple interfaces
 **Explanation:** Encapsulation bundles data (fields) and methods (behavior) together and restricts direct access to internal state. It's achieved via private fields and public getter/setter methods.
 
 ```typescript
-// Encapsulation â€” TypeScript
+// Encapsulation — TypeScript
 class BankAccount {
-  // Private field â€” hidden from external code
+  // Private field — hidden from external code
   private _balance: number;
 
   constructor(initialBalance: number) {
@@ -2397,12 +2397,12 @@ class BankAccount {
     this._balance = initialBalance;
   }
 
-  // Public getter â€” controlled read access
+  // Public getter — controlled read access
   get balance(): number {
     return this._balance;
   }
 
-  // Public methods â€” controlled modification
+  // Public methods — controlled modification
   deposit(amount: number): void {
     if (amount <= 0) throw new Error('Deposit amount must be positive');
     this._balance += amount;
@@ -2418,7 +2418,7 @@ class BankAccount {
 const account = new BankAccount(1000);
 account.deposit(500);
 console.log(account.balance); // 1500
-// account._balance = 9999; // ERROR â€” private!
+// account._balance = 9999; // ERROR — private!
 ```
 
 </details>
@@ -2476,7 +2476,7 @@ D) do-while loop
 **Explanation:** The enhanced for-each loop (`for (Type var : collection)`) is the cleanest way to iterate over arrays and collections when index access isn't needed. It eliminates off-by-one errors and is more readable.
 
 ```typescript
-// For-each style iteration â€” TypeScript
+// For-each style iteration — TypeScript
 const numbers = [1, 2, 3, 4, 5];
 
 // Traditional for loop (with index)
@@ -2509,7 +2509,7 @@ D) 0
 
 **Answer:** B) false
 
-**Explanation:** Instance variables in Java have default values: boolean â†’ false, int â†’ 0, double â†’ 0.0, reference â†’ null. Local variables do NOT get default values and must be initialized explicitly.
+**Explanation:** Instance variables in Java have default values: boolean → false, int → 0, double → 0.0, reference → null. Local variables do NOT get default values and must be initialized explicitly.
 
 </details>
 
@@ -2531,13 +2531,13 @@ D) 8%
 
 **Answer:** B) 12.5%
 
-**Explanation:** SI = P Ã— R Ã— T / 100. Money doubles â†’ SI = P. So P = P Ã— R Ã— 8 / 100 â†’ R = 100/8 = 12.5%.
+**Explanation:** SI = P × R × T / 100. Money doubles → SI = P. So P = P × R × 8 / 100 → R = 100/8 = 12.5%.
 
 </details>
 
 ---
 
-**Q82.** If xÂ² + 1/xÂ² = 34, what is x + 1/x?
+**Q82.** If x² + 1/x² = 34, what is x + 1/x?
 
 A) 4  
 B) 6  
@@ -2549,25 +2549,25 @@ D) 10
 
 **Answer:** B) 6
 
-**Explanation:** (x + 1/x)Â² = xÂ² + 2 + 1/xÂ² = 34 + 2 = 36. So x + 1/x = âˆš36 = 6.
+**Explanation:** (x + 1/x)² = x² + 2 + 1/x² = 34 + 2 = 36. So x + 1/x = √36 = 6.
 
 </details>
 
 ---
 
-**Q83.** A man sells an item at a 10% loss. If he had sold it for â‚¹45 more, he would have made a 5% profit. What is the cost price?
+**Q83.** A man sells an item at a 10% loss. If he had sold it for ₹45 more, he would have made a 5% profit. What is the cost price?
 
-A) â‚¹200  
-B) â‚¹250  
-C) â‚¹300  
-D) â‚¹350  
+A) ₹200  
+B) ₹250  
+C) ₹300  
+D) ₹350  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) â‚¹300
+**Answer:** C) ₹300
 
-**Explanation:** Let CP = x. First SP = 0.9x. Second SP = 1.05x. Difference = 1.05x âˆ’ 0.9x = 0.15x = 45. So x = 45/0.15 = â‚¹300.
+**Explanation:** Let CP = x. First SP = 0.9x. Second SP = 1.05x. Difference = 1.05x − 0.9x = 0.15x = 45. So x = 45/0.15 = ₹300.
 
 </details>
 
@@ -2585,13 +2585,13 @@ D) 25 hours
 
 **Answer:** B) 30 hours
 
-**Explanation:** Pipe's fill rate = 1/12 per hour. Combined (pipe + leak) rate = 1/20 per hour. Leak's empty rate = 1/12 âˆ’ 1/20 = (5âˆ’3)/60 = 2/60 = 1/30. So leak empties in 30 hours.
+**Explanation:** Pipe's fill rate = 1/12 per hour. Combined (pipe + leak) rate = 1/20 per hour. Leak's empty rate = 1/12 − 1/20 = (5−3)/60 = 2/60 = 1/30. So leak empties in 30 hours.
 
 </details>
 
 ---
 
-**Q85.** What is âˆš(0.09 Ã— 0.09) + âˆš(0.16 Ã— 0.16)?
+**Q85.** What is √(0.09 × 0.09) + √(0.16 × 0.16)?
 
 A) 0.25  
 B) 0.5  
@@ -2603,19 +2603,19 @@ D) 0.5
 
 **Answer:** B) 0.5
 
-**Explanation:** âˆš(0.09Ã—0.09) = 0.09. âˆš(0.16Ã—0.16) = 0.16. Sum = 0.09 + 0.16 = 0.25. Wait â€” that's not right. Actually âˆš(0.09 Ã— 0.09) = âˆš(0.0081) = 0.09. âˆš(0.16 Ã— 0.16) = âˆš(0.0256) = 0.16. 0.09 + 0.16 = 0.25.
+**Explanation:** √(0.09×0.09) = 0.09. √(0.16×0.16) = 0.16. Sum = 0.09 + 0.16 = 0.25. Wait — that's not right. Actually √(0.09 × 0.09) = √(0.0081) = 0.09. √(0.16 × 0.16) = √(0.0256) = 0.16. 0.09 + 0.16 = 0.25.
 
-Hmm â€” let me reconsider. âˆš(0.09 Ã— 0.09) is just 0.09. âˆš(0.16 Ã— 0.16) is 0.16. Sum = 0.25.
+Hmm — let me reconsider. √(0.09 × 0.09) is just 0.09. √(0.16 × 0.16) is 0.16. Sum = 0.25.
 
-But wait â€” âˆš(0.09) Ã— âˆš(0.09) = 0.3 Ã— 0.3 = 0.09. Same result. So answer is 0.25.
+But wait — √(0.09) × √(0.09) = 0.3 × 0.3 = 0.09. Same result. So answer is 0.25.
 
-But looking at the options, none is 0.25 exactly... options: A) 0.25, B) 0.5, C) 0.07, D) 0.5. Wait A is 0.25 and B/D are both 0.5. Let me re-read: options A) 0.25, B) 0.5, C) 0.07, D) 0.5. OK so A is 0.25. Actually that's the right answer. But I notice B and D are both 0.5 â€” probably a typo in my option list.
+But looking at the options, none is 0.25 exactly... options: A) 0.25, B) 0.5, C) 0.07, D) 0.5. Wait A is 0.25 and B/D are both 0.5. Let me re-read: options A) 0.25, B) 0.5, C) 0.07, D) 0.5. OK so A is 0.25. Actually that's the right answer. But I notice B and D are both 0.5 — probably a typo in my option list.
 
-Actually âˆš(0.09 Ã— 0.09) + âˆš(0.16 Ã— 0.16) = 0.09 + 0.16 = 0.25. Answer is A.
+Actually √(0.09 × 0.09) + √(0.16 × 0.16) = 0.09 + 0.16 = 0.25. Answer is A.
 
-But wait â€” maybe the question is âˆš(0.09) Ã— âˆš(0.09) + âˆš(0.16) Ã— âˆš(0.16)? That would be 0.3Ã—0.3 + 0.4Ã—0.4 = 0.09+0.16 = 0.25. Same answer.
+But wait — maybe the question is √(0.09) × √(0.09) + √(0.16) × √(0.16)? That would be 0.3×0.3 + 0.4×0.4 = 0.09+0.16 = 0.25. Same answer.
 
-Actually, I could also interpret it as: âˆš(0.09 Ã— 0.09 + 0.16 Ã— 0.16) = âˆš(0.0081 + 0.0256) = âˆš0.0337 â‰ˆ 0.183. Not any option.
+Actually, I could also interpret it as: √(0.09 × 0.09 + 0.16 × 0.16) = √(0.0081 + 0.0256) = √0.0337 ≈ 0.183. Not any option.
 
 So answer is 0.25 (A).
 
@@ -2656,7 +2656,7 @@ D) 24
 **Explanation:** APPLE has 5 letters with P repeated twice. Number of arrangements = 5! / 2! = 120/2 = 60.
 
 ```typescript
-// Permutation with repetition â€” TypeScript
+// Permutation with repetition — TypeScript
 function factorial(n: number): number {
   return n <= 1 ? 1 : n * factorial(n - 1);
 }
@@ -2672,7 +2672,7 @@ function permutationsWithRepetition(total: number, repetitions: number[]): numbe
 // APPLE: 5 letters, P appears 2 times
 console.log(permutationsWithRepetition(5, [2])); // 60
 
-// MISSISSIPPI: M=1, I=4, S=4, P=2 â†’ 11!/(4!4!2!) = 34650
+// MISSISSIPPI: M=1, I=4, S=4, P=2 → 11!/(4!4!2!) = 34650
 console.log(permutationsWithRepetition(11, [4, 4, 2])); // 34650
 ```
 
@@ -2692,7 +2692,7 @@ D) 15%
 
 **Answer:** B) 20%
 
-**Explanation:** Let CP of 1 item = â‚¹1. CP of 12 items = â‚¹12. SP of 10 items = â‚¹12 â†’ SP of 1 item = â‚¹1.2. Profit = 0.2 per item. Profit % = (0.2/1) Ã— 100 = 20%.
+**Explanation:** Let CP of 1 item = ₹1. CP of 12 items = ₹12. SP of 10 items = ₹12 → SP of 1 item = ₹1.2. Profit = 0.2 per item. Profit % = (0.2/1) × 100 = 20%.
 
 </details>
 
@@ -2712,13 +2712,13 @@ D) AFXGP
 
 **Answer:** A) AFYGP
 
-**Explanation:** Each letter in HOUSE is shifted by -2: Hâ†’F, Oâ†’M, Uâ†’S, Sâ†’Q, Eâ†’C. Similarly, CHAIR: Câ†’A, Hâ†’F, Aâ†’Y, Iâ†’G, Râ†’P. So CHAIR â†’ AFYGP.
+**Explanation:** Each letter in HOUSE is shifted by -2: H→F, O→M, U→S, S→Q, E→C. Similarly, CHAIR: C→A, H→F, A→Y, I→G, R→P. So CHAIR → AFYGP.
 
 </details>
 
 ---
 
-**Q90.** If 'P Ã— Q' means P is the brother of Q, 'P + Q' means P is the mother of Q, and 'P âˆ’ Q' means P is the father of Q, then what does 'A Ã— B âˆ’ C' mean?
+**Q90.** If 'P × Q' means P is the brother of Q, 'P + Q' means P is the mother of Q, and 'P − Q' means P is the father of Q, then what does 'A × B − C' mean?
 
 A) A is the uncle of C  
 B) A is the father of C  
@@ -2730,7 +2730,7 @@ D) A is the nephew of C
 
 **Answer:** A) A is the uncle of C
 
-**Explanation:** A Ã— B â†’ A is brother of B. B âˆ’ C â†’ B is father of C. So A is brother of B, and B is father of C. Therefore A is the uncle of C (brother of C's father).
+**Explanation:** A × B → A is brother of B. B − C → B is father of C. So A is brother of B, and B is father of C. Therefore A is the uncle of C (brother of C's father).
 
 </details>
 
@@ -2748,7 +2748,7 @@ D) 32
 
 **Answer:** B) 35
 
-**Explanation:** Pattern: 2Â²âˆ’1=3, 3Â²âˆ’1=8, 4Â²âˆ’1=15, 5Â²âˆ’1=24, 6Â²âˆ’1=35, 7Â²âˆ’1=48. Missing = 35.
+**Explanation:** Pattern: 2²−1=3, 3²−1=8, 4²−1=15, 5²−1=24, 6²−1=35, 7²−1=48. Missing = 35.
 
 </details>
 
@@ -2774,24 +2774,24 @@ D) 16-9-1-4-15
 
 **Q93.** A clock shows 3:15. What is the angle between the hour and minute hands?
 
-A) 0Â°  
-B) 7.5Â°  
-C) 15Â°  
-D) 22.5Â°  
+A) 0°  
+B) 7.5°  
+C) 15°  
+D) 22.5°  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) 7.5Â°
+**Answer:** B) 7.5°
 
-**Explanation:** At 3:15, minute hand is at 3. Hour hand travels 0.5Â° per minute. In 15 minutes, hour hand moves 7.5Â° past 3. Angle = 7.5Â°.
+**Explanation:** At 3:15, minute hand is at 3. Hour hand travels 0.5° per minute. In 15 minutes, hour hand moves 7.5° past 3. Angle = 7.5°.
 
 ```typescript
-// Clock angle calculation â€” TypeScript
+// Clock angle calculation — TypeScript
 function calculateClockAngle(hours: number, minutes: number): number {
-  // Hour hand: 30Â° per hour + 0.5Â° per minute
+  // Hour hand: 30° per hour + 0.5° per minute
   const hourAngle = (hours % 12) * 30 + minutes * 0.5;
-  // Minute hand: 6Â° per minute
+  // Minute hand: 6° per minute
   const minuteAngle = minutes * 6;
 
   let angle = Math.abs(hourAngle - minuteAngle);
@@ -2799,9 +2799,9 @@ function calculateClockAngle(hours: number, minutes: number): number {
   return Math.min(angle, 360 - angle);
 }
 
-console.log(calculateClockAngle(3, 15));  // 7.5Â°
-console.log(calculateClockAngle(12, 30)); // 165Â°
-console.log(calculateClockAngle(6, 0));   // 180Â°
+console.log(calculateClockAngle(3, 15));  // 7.5°
+console.log(calculateClockAngle(12, 30)); // 165°
+console.log(calculateClockAngle(6, 0));   // 180°
 ```
 
 </details>
@@ -2820,7 +2820,7 @@ D) 56
 
 **Answer:** B) 42
 
-**Explanation:** Pattern: 1Ã—2=2, 2Ã—3=6, 3Ã—4=12, 4Ã—5=20, 5Ã—6=30, 6Ã—7=42.
+**Explanation:** Pattern: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42.
 
 </details>
 
@@ -2838,7 +2838,7 @@ D) Cannot be determined
 
 **Answer:** D) Cannot be determined
 
-**Explanation:** From "C between D and F" â†’ D C F or F C D. From "B between A and E" â†’ A B E or E B A. "D is not at the end." Multiple arrangements are possible. Without more constraints, the extreme right position cannot be uniquely determined.
+**Explanation:** From "C between D and F" → D C F or F C D. From "B between A and E" → A B E or E B A. "D is not at the end." Multiple arrangements are possible. Without more constraints, the extreme right position cannot be uniquely determined.
 
 ```mermaid
 flowchart LR
@@ -2871,7 +2871,7 @@ D) Receeve
 
 **Answer:** B) Receive
 
-**Explanation:** The correct spelling is "Receive" â€” 'i' before 'e' except after 'c'.
+**Explanation:** The correct spelling is "Receive" — 'i' before 'e' except after 'c'.
 
 </details>
 
@@ -3008,4 +3008,4 @@ D) for
 
 ---
 
-*NIC Scientist B 2023 Solved Paper â€” Comprehensive preparation resource for Government Exam PYQs*
+*NIC Scientist B 2023 Solved Paper — Comprehensive preparation resource for Government Exam PYQs*

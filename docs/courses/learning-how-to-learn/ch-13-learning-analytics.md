@@ -1,4 +1,4 @@
-﻿# Chapter 13: Learning Analytics & Self-Measurement
+# Chapter 13: Learning Analytics & Self-Measurement
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md), [Chapter 10: Meta-Learning & Lifelong System](./ch-10-meta-learning-system.md)
 > **Next:** [Chapter 14: Social Learning & Communities](ch-14-social-learning-communities.md)
@@ -43,7 +43,7 @@ This chapter teaches you how to measure your learning systematically. You'll bui
 | Retention Rate | Recall accuracy over time | Measure at 1d, 7d, 30d intervals |
 | Knowledge Coverage | % of topic graph mastered | Map your knowledge against a syllabus |
 | Session Quality | Subjective effectiveness rating | Log quality score after every session |
-| Consistency Score | Streak Ã— session adherence | Track daily streak, never break the chain |
+| Consistency Score | Streak × session adherence | Track daily streak, never break the chain |
 | Learning A/B Tests | Compare methods quantitatively | Run 2-week experiments on study techniques |
 
 ```mermaid
@@ -66,7 +66,7 @@ flowchart LR
 ### Q1: What are the five core learning metrics you should track?
 
 
-**Answer:** Most learners track nothing â€” they study by feel. The five metrics below give you a complete picture of your learning health. Track all five for at least 2 weeks to establish a baseline.
+**Answer:** Most learners track nothing — they study by feel. The five metrics below give you a complete picture of your learning health. Track all five for at least 2 weeks to establish a baseline.
 
 ```typescript
 interface LearningMetrics {
@@ -323,9 +323,9 @@ class LearningMetricsTracker {
 }
 ```
 
-**Try This:** For the next 7 days, after every study session, log: date, topic, duration (min), quality (1-10), and how many new concepts you learned. Don't change your behavior â€” just observe. At day 7, compute the 5 metrics above. You'll likely discover patterns you weren't aware of.
+**Try This:** For the next 7 days, after every study session, log: date, topic, duration (min), quality (1-10), and how many new concepts you learned. Don't change your behavior — just observe. At day 7, compute the 5 metrics above. You'll likely discover patterns you weren't aware of.
 
-**One-Sentence Takeaway:** Track five metrics â€” velocity, retention, coverage, quality, consistency â€” to replace vague "I studied a lot" feelings with data-driven learning optimization.
+**One-Sentence Takeaway:** Track five metrics — velocity, retention, coverage, quality, consistency — to replace vague "I studied a lot" feelings with data-driven learning optimization.
 
 ---
 
@@ -365,7 +365,7 @@ class PlateauDetector {
         plateauDuration: 0,
         velocityBefore: 0,
         velocityNow: 0,
-        likelyCause: 'Not enough data â€” track at least 3 weeks',
+        likelyCause: 'Not enough data — track at least 3 weeks',
         recommendedAction: 'Continue tracking',
       };
     }
@@ -404,25 +404,25 @@ class PlateauDetector {
     const avg = velocity.reduce((s, v) => s + v, 0) / velocity.length;
     const variance = velocity.reduce((s, v) => s + (v - avg) ** 2, 0) / velocity.length;
 
-    // High variance + low velocity â†’ motivational/consistency issue
+    // High variance + low velocity → motivational/consistency issue
     if (variance > avg * 0.5 && avg < 2) {
-      return 'Inconsistent effort â€” likely motivation or scheduling issue';
+      return 'Inconsistent effort — likely motivation or scheduling issue';
     }
 
-    // Low variance + declining velocity â†’ topic difficulty or burnout
+    // Low variance + declining velocity → topic difficulty or burnout
     if (variance < avg * 0.2 && velocity[velocity.length - 1] < velocity[0]) {
-      return 'Gradual decline â€” likely topic complexity mismatch or burnout';
+      return 'Gradual decline — likely topic complexity mismatch or burnout';
     }
 
-    // Steady then sudden drop â†’ specific blocker
+    // Steady then sudden drop → specific blocker
     const mid = Math.floor(velocity.length / 2);
     const firstHalf = velocity.slice(0, mid).reduce((s, v) => s + v, 0) / mid;
     const secondHalf = velocity.slice(mid).reduce((s, v) => s + v, 0) / (velocity.length - mid);
     if (firstHalf > secondHalf * 1.5) {
-      return 'Sudden drop â€” likely encountered a specific knowledge gap or prerequisite';
+      return 'Sudden drop — likely encountered a specific knowledge gap or prerequisite';
     }
 
-    return 'Normal fluctuation â€” continue monitoring';
+    return 'Normal fluctuation — continue monitoring';
   }
 
   private suggestAction(cause: string): string {
@@ -460,7 +460,7 @@ class PlateauDetector {
 
 **Try This:** If you've been studying a topic for 3+ weeks, graph your weekly concepts-per-day. If the trend is flat or declining, run the plateau detector analysis above. Take the recommended action for 2 weeks and re-measure.
 
-**One-Sentence Takeaway:** Learning plateaus are detectable 2-3 weeks before you feel them â€” track weekly velocity and intervene early with the appropriate response.
+**One-Sentence Takeaway:** Learning plateaus are detectable 2-3 weeks before you feel them — track weekly velocity and intervene early with the appropriate response.
 
 ---
 
@@ -609,14 +609,14 @@ class CoverageMapper {
 
 **Try This:** Pick a course you're studying. List every major concept (aim for 20-50 nodes). Mark each as untouched / in-progress / mastered. Compute your coverage percentage. Identify the easiest gaps to fill (those with mastered prerequisites) and prioritize them this week.
 
-**One-Sentence Takeaway:** Knowledge coverage maps reveal exactly where you are in a topic â€” focus on easy gaps first (prerequisites already met) to maximize coverage growth per hour.
+**One-Sentence Takeaway:** Knowledge coverage maps reveal exactly where you are in a topic — focus on easy gaps first (prerequisites already met) to maximize coverage growth per hour.
 
 ---
 
 ### Q4: How do you measure retention (forgetting curve) accurately?
 
 
-**Answer:** The forgetting curve is the decline in recall probability over time without review. Measuring your personal forgetting curve lets you schedule reviews at the optimal moment â€” just before you would have forgotten the material.
+**Answer:** The forgetting curve is the decline in recall probability over time without review. Measuring your personal forgetting curve lets you schedule reviews at the optimal moment — just before you would have forgotten the material.
 
 ```typescript
 interface RetentionTest {
@@ -702,15 +702,15 @@ class ForgettingCurveAnalyzer {
     ];
 
     return `
-ðŸ“Š Retention Benchmark
-â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+📊 Retention Benchmark
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Day | Ebbinghaus | You | Status
-â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€
+────┼────────────┼─────┼────────
   1 |     58%    |     |
   2 |     48%    |     |
   7 |     25%    |     |
  30 |     21%    |     |
-â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Above Ebbinghaus = effective study & review
 Below Ebbinghaus = review spacing too wide or encoding weak`;
   }
@@ -729,7 +729,7 @@ For each concept you learn, test yourself at these three intervals. Record wheth
 
 **Try This:** Pick 5 concepts you learned yesterday. Today, test yourself on all 5 without reviewing. Record how many you remembered. Repeat at 7 days and 30 days. Compare your curve to Ebbinghaus's to see if your study methods are effective.
 
-**One-Sentence Takeaway:** Measure your personal forgetting curve by testing recall at 1, 7, and 30 days â€” then schedule reviews just before your curve drops below 90%.
+**One-Sentence Takeaway:** Measure your personal forgetting curve by testing recall at 1, 7, and 30 days — then schedule reviews just before your curve drops below 90%.
 
 ---
 
@@ -916,7 +916,7 @@ class LearningABTest {
       // In practice, the learner uses the assigned method for each half
       // and records their session quality and concept retention
 
-      // We record a placeholder â€” real data comes from the learner
+      // We record a placeholder — real data comes from the learner
       experiment.metrics.push({
         day: day + 1,
         controlScore: isControl ? 0 : 0, // filled after session
@@ -942,7 +942,7 @@ class LearningABTest {
       ? `${experiment.variantMethod} outperformed ${experiment.controlMethod} by ${improvement}%. Adopt ${experiment.variantMethod}.`
       : improvement < -10
       ? `${experiment.controlMethod} outperformed ${experiment.variantMethod} by ${Math.abs(improvement)}%. Stick with ${experiment.controlMethod}.`
-      : `No significant difference (Â±${improvement}%). Either method works â€” choose based on preference.`;
+      : `No significant difference (±${improvement}%). Either method works — choose based on preference.`;
 
     return experiment.conclusion;
   }
@@ -1008,7 +1008,7 @@ class LearningABTest {
 
 **Try This:** Run the "Teach-Back vs Re-Reading" experiment this week. Days 1-3: after studying, re-read your notes. Days 4-7: after studying, explain the material from memory (no notes). Measure recall the next morning for both approaches. Which produces better retention?
 
-**One-Sentence Takeaway:** Run 2-week A/B tests on your study methods â€” measure recall or quality for each approach and adopt the winner based on data, not intuition.
+**One-Sentence Takeaway:** Run 2-week A/B tests on your study methods — measure recall or quality for each approach and adopt the winner based on data, not intuition.
 
 ---
 
@@ -1085,7 +1085,7 @@ class WeeklyReviewer {
   private identifyChallenges(sessions: any[]): string[] {
     const challenges: string[] = [];
 
-    if (sessions.length < 5) challenges.push('Fewer than 5 sessions â€” aim for daily');
+    if (sessions.length < 5) challenges.push('Fewer than 5 sessions — aim for daily');
     if (sessions.length === 0) challenges.push('No study sessions logged this week');
 
     const qualityVariation = sessions.map((s: any) => s.quality);
@@ -1102,7 +1102,7 @@ class WeeklyReviewer {
   private generateAdjustments(challenges: string[]): string[] {
     return challenges.map(c => {
       if (c.includes('Fewer than 5')) {
-        return 'Reduce session length to 15 min minimum â€” make it so easy you can\'t say no';
+        return 'Reduce session length to 15 min minimum — make it so easy you can\'t say no';
       }
       if (c.includes('No study sessions')) {
         return 'Start with 5 minutes today. Momentum > duration.';
@@ -1144,7 +1144,7 @@ class WeeklyReviewer {
 
 **Try This:** This Sunday, spend 30 minutes on a weekly review using the template above. Write down your observations. Make exactly ONE adjustment for the coming week. The following Sunday, evaluate whether that adjustment helped.
 
-**One-Sentence Takeaway:** A 30-minute weekly review transforms raw data into actionable adjustments â€” make exactly one change per week and evaluate it the following Sunday.
+**One-Sentence Takeaway:** A 30-minute weekly review transforms raw data into actionable adjustments — make exactly one change per week and evaluate it the following Sunday.
 
 ---
 
@@ -1219,8 +1219,8 @@ class ROIAnalyzer {
   getEfficiencyReport(): string {
     const roi = this.computeROI();
     return `
-ðŸ“Š Learning Efficiency Report
-â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+📊 Learning Efficiency Report
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Most efficient methods (concepts retained per hour):
 ${roi.bestMethods.map((m, i) => `  ${i + 1}. ${m}`).join('\n')}
@@ -1254,7 +1254,7 @@ recall or teaching. Expected efficiency gain: 3-5x per hour.`;
 
 **Try This:** This week, track how you spend each study session (method + duration). At the end of the week, compute your ROI for each method. Identify one low-ROI method you can replace with a high-ROI one next week.
 
-**One-Sentence Takeaway:** Learning ROI (concepts retained per hour) reveals which methods give you the most return â€” replace passive methods with active ones for 3-5x efficiency gains.
+**One-Sentence Takeaway:** Learning ROI (concepts retained per hour) reveals which methods give you the most return — replace passive methods with active ones for 3-5x efficiency gains.
 
 ---
 
@@ -1312,7 +1312,7 @@ class GoalPlanner {
       smartCriteria: {
         specific: `Achieve ${config.targetLevel} level proficiency in ${config.topic}`,
         measurable: `Can correctly answer ${boundedConcepts} concept verification questions with 90%+ accuracy`,
-        achievable: `${boundedConcepts} concepts over ${weeksAvailable} weeks = ${Math.ceil(boundedConcepts / weeksAvailable)} concepts/week = ${Math.ceil(boundedConcepts / weeksAvailable / config.weeklyHours)} concepts/hour â€” achievable with active methods`,
+        achievable: `${boundedConcepts} concepts over ${weeksAvailable} weeks = ${Math.ceil(boundedConcepts / weeksAvailable)} concepts/week = ${Math.ceil(boundedConcepts / weeksAvailable / config.weeklyHours)} concepts/hour — achievable with active methods`,
         relevant: `Directly supports [your larger learning objective]`,
         timeBound: `Complete by ${config.deadline.toDateString()} (${weeksAvailable} weeks)`,
       },
@@ -1326,17 +1326,17 @@ class GoalPlanner {
         {
           date: new Date(Date.now() + Math.floor(weeksAvailable * 0.25) * 7 * 86400000),
           targetValue: Math.ceil(boundedConcepts * 0.25),
-          description: '25% milestone â€” core concepts',
+          description: '25% milestone — core concepts',
         },
         {
           date: new Date(Date.now() + Math.floor(weeksAvailable * 0.5) * 7 * 86400000),
           targetValue: Math.ceil(boundedConcepts * 0.5),
-          description: '50% milestone â€” intermediate depth',
+          description: '50% milestone — intermediate depth',
         },
         {
           date: new Date(Date.now() + Math.floor(weeksAvailable * 0.75) * 7 * 86400000),
           targetValue: Math.ceil(boundedConcepts * 0.75),
-          description: '75% milestone â€” advanced topics',
+          description: '75% milestone — advanced topics',
         },
       ],
     };
@@ -1378,14 +1378,14 @@ class GoalPlanner {
 
 **Try This:** Take one learning goal you currently have. Rewrite it using the SMART criteria above. Define exactly what "done" looks like, how you'll measure progress, and what your weekly milestones are. Put it somewhere you'll see daily.
 
-**One-Sentence Takeaway:** SMART learning goals turn vague aspirations into measurable targets â€” define exactly what mastery looks like, how to measure it, and what weekly progress should be.
+**One-Sentence Takeaway:** SMART learning goals turn vague aspirations into measurable targets — define exactly what mastery looks like, how to measure it, and what weekly progress should be.
 
 ---
 
 ### Q10: How do you prevent gaming the metrics?
 
 
-**Answer:** When you measure learning, what you measure is what you'll optimize â€” but optimizing the metric isn't the same as optimizing learning. You need safeguards against metric gaming.
+**Answer:** When you measure learning, what you measure is what you'll optimize — but optimizing the metric isn't the same as optimizing learning. You need safeguards against metric gaming.
 
 ```typescript
 interface MetricGuard {
@@ -1439,19 +1439,19 @@ class AntiGamingSystem {
     const warnings: string[] = [];
 
     if (metrics.velocity > 10 && metrics.recallRate < 60) {
-      warnings.push('âš ï¸ High velocity + low recall suggests shallow learning. Slow down and verify retention.');
+      warnings.push('⚠️ High velocity + low recall suggests shallow learning. Slow down and verify retention.');
     }
 
     if (metrics.streakDays > 30 && metrics.avgSessionMinutes < 15) {
-      warnings.push('âš ï¸ Long streak with short sessions. Are you "streak farming"? Aim for 25+ min meaningful sessions.');
+      warnings.push('⚠️ Long streak with short sessions. Are you "streak farming"? Aim for 25+ min meaningful sessions.');
     }
 
     if (metrics.qualityScore < 5 && metrics.streakDays > 7) {
-      warnings.push('âš ï¸ Low quality despite long streak. Consider reducing frequency and increasing session quality.');
+      warnings.push('⚠️ Low quality despite long streak. Consider reducing frequency and increasing session quality.');
     }
 
     if (warnings.length === 0) {
-      warnings.push('âœ… Metrics look healthy. Continue current approach.');
+      warnings.push('✅ Metrics look healthy. Continue current approach.');
     }
 
     return warnings;
@@ -1467,7 +1467,7 @@ class AntiGamingSystem {
 
 **Try This:** Review your current tracking system. For every metric you track, ask: "Would I be disappointed if this metric improved but my actual learning didn't?" If yes, the metric is gameable. Add a guard or replace it.
 
-**One-Sentence Takeaway:** Every metric can be gamed â€” guard against it by tracking secondary verification metrics (e.g., pair velocity with 7-day recall, not just concepts-per-day).
+**One-Sentence Takeaway:** Every metric can be gamed — guard against it by tracking secondary verification metrics (e.g., pair velocity with 7-day recall, not just concepts-per-day).
 
 ---
 
@@ -1480,7 +1480,7 @@ b) Consistency score (daily streak, session adherence)
 c) Total study hours
 d) Number of highlights in notes
 
-**Answer:** b) Consistency is the strongest predictor of long-term learning outcomes â€” daily 20-minute sessions beat weekly 4-hour marathons for retention and skill development.
+**Answer:** b) Consistency is the strongest predictor of long-term learning outcomes — daily 20-minute sessions beat weekly 4-hour marathons for retention and skill development.
 
 **2. At what coverage percentage should you shift from breadth to depth?**
 a) 20-30%
@@ -1488,7 +1488,7 @@ b) 40-50%
 c) 70-80%
 d) 100%
 
-**Answer:** c) At 70-80% coverage, you've learned the core concepts. Further breadth gives diminishing returns â€” focus on deepening understanding, edge cases, and teaching others.
+**Answer:** c) At 70-80% coverage, you've learned the core concepts. Further breadth gives diminishing returns — focus on deepening understanding, edge cases, and teaching others.
 
 **3. What does a learning plateau look like in tracked data?**
 a) Increasing velocity week over week
@@ -1496,7 +1496,7 @@ b) Flat or declining velocity for 3+ weeks despite consistent effort
 c) High quality scores with low study hours
 d) Increasing streak with decreasing coverage
 
-**Answer:** b) A plateau is detectable when weekly concept velocity flattens or declines for 3+ weeks despite consistent study hours â€” it's typically caused by topic complexity, burnout, or a prerequisite gap.
+**Answer:** b) A plateau is detectable when weekly concept velocity flattens or declines for 3+ weeks despite consistent study hours — it's typically caused by topic complexity, burnout, or a prerequisite gap.
 
 **4. How should you test whether morning or evening study works better for you?**
 a) Ask friends what works for them
@@ -1504,7 +1504,7 @@ b) Read a blog post about optimal study times
 c) Run a 14-day A/B test (7 days morning, 7 days evening) and measure recall
 d) Study whenever you feel like it and track results
 
-**Answer:** c) A/B testing with equal duration for each condition gives you personal data â€” your optimal time may differ from the average, and only measurement will tell.
+**Answer:** c) A/B testing with equal duration for each condition gives you personal data — your optimal time may differ from the average, and only measurement will tell.
 
 **5. What is the most efficient learning method by ROI (concepts retained per hour)?**
 a) Reading with highlighting
@@ -1512,23 +1512,23 @@ b) Watching tutorial videos
 c) Teaching someone else
 d) Re-reading notes
 
-**Answer:** c) Teaching forces active recall, gap detection, and knowledge reorganization â€” it produces 5x the retention per hour compared to passive methods like reading.
+**Answer:** c) Teaching forces active recall, gap detection, and knowledge reorganization — it produces 5x the retention per hour compared to passive methods like reading.
 
 **6. What is the recommended duration for a weekly learning review?**
 a) 5 minutes
 b) 30 minutes
 c) 2 hours
-d) No review needed â€” just study more
+d) No review needed — just study more
 
 **Answer:** b) 30 minutes is sufficient to review data, identify patterns, and make one targeted adjustment for the coming week.
 
 **7. How do you measure your personal forgetting curve?**
-a) Use Ebbinghaus's original curve â€” it's universal
+a) Use Ebbinghaus's original curve — it's universal
 b) Test recall at 1, 7, and 30 days for each concept and average the results
-c) Guess â€” it's too complex to measure
+c) Guess — it's too complex to measure
 d) Ask your teacher
 
-**Answer:** b) Your forgetting curve is personal â€” it depends on your encoding quality, prior knowledge, and sleep. Test yourself at standardized intervals and compute your own curve.
+**Answer:** b) Your forgetting curve is personal — it depends on your encoding quality, prior knowledge, and sleep. Test yourself at standardized intervals and compute your own curve.
 
 **8. Which metric is most likely to be gamed by learners?**
 a) Concepts mastered (verified by 7-day recall test)
@@ -1536,13 +1536,13 @@ b) Daily study streak
 c) Teaching quality (rated by students)
 d) Recall accuracy on randomized tests
 
-**Answer:** b) Streaks are easily gamed by 5-minute "study" sessions â€” always pair streak tracking with minimum session duration and quality requirements.
+**Answer:** b) Streaks are easily gamed by 5-minute "study" sessions — always pair streak tracking with minimum session duration and quality requirements.
 
 **9. What should you do when you detect a learning plateau?**
-a) Study harder â€” push through with more hours
+a) Study harder — push through with more hours
 b) Switch topics for 3 days, then re-evaluate
 c) Give up on the topic
-d) Ignore it â€” plateaus are normal
+d) Ignore it — plateaus are normal
 
 **Answer:** b) Switching topics for 3 days provides diffuse-mode processing time and prevents burnout. If the plateau persists after the break, investigate prerequisite gaps or method issues.
 
@@ -1593,16 +1593,16 @@ d) 6 months
 
 ## Chapter Summary
 
-- The five core learning metrics are velocity, retention, coverage, quality, and consistency â€” track all five for at least 2 weeks to establish baselines
-- Learning plateaus are detectable 2-3 weeks before you feel them â€” monitor weekly velocity and intervene with the appropriate response (switch topics, reduce load, or fill gaps)
-- Measure your personal forgetting curve by testing recall at 1, 7, and 30 days â€” schedule reviews just before retention drops below 90%
-- Knowledge coverage maps reveal exactly where you are in a topic â€” focus on easy gaps first (prerequisites already met)
+- The five core learning metrics are velocity, retention, coverage, quality, and consistency — track all five for at least 2 weeks to establish baselines
+- Learning plateaus are detectable 2-3 weeks before you feel them — monitor weekly velocity and intervene with the appropriate response (switch topics, reduce load, or fill gaps)
+- Measure your personal forgetting curve by testing recall at 1, 7, and 30 days — schedule reviews just before retention drops below 90%
+- Knowledge coverage maps reveal exactly where you are in a topic — focus on easy gaps first (prerequisites already met)
 - Session quality is best measured dimensionally (focus, understanding, recall, engagement, difficulty) to reveal optimal conditions
-- Run 2-week A/B tests on study methods â€” adopt the winner based on data, not intuition
-- A 30-minute weekly review transforms data into actionable adjustments â€” make exactly one change per week
+- Run 2-week A/B tests on study methods — adopt the winner based on data, not intuition
+- A 30-minute weekly review transforms data into actionable adjustments — make exactly one change per week
 - Learning ROI (concepts retained per hour) is 3-5x higher for active methods (teaching, recall) than passive ones (reading, highlighting)
-- Every metric can be gamed â€” guard against it with secondary verification metrics
-- The metric is not the goal â€” if optimizing the metric makes you a worse learner, drop it
+- Every metric can be gamed — guard against it with secondary verification metrics
+- The metric is not the goal — if optimizing the metric makes you a worse learner, drop it
 
 ## Exercises
 
@@ -1628,19 +1628,19 @@ d) 6 months
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B â€” High hours with low retention is the classic sign of low-ROI methods. They're likely spending most of their time on passive activities (reading, watching) instead of active methods (recall, teaching, practice).
+**Answer:** B — High hours with low retention is the classic sign of low-ROI methods. They're likely spending most of their time on passive activities (reading, watching) instead of active methods (recall, teaching, practice).
 </details>
 
 **Q2:** A student's weekly velocity has been flat at 3 concepts/day for 5 weeks despite 1 hour/day of study. What should they do?
 - A) Increase to 2 hours/day
 - B) Switch to a different topic for 3 days, then re-evaluate
-- C) This is normal â€” continue as-is
+- C) This is normal — continue as-is
 - D) Give up on the topic
 
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B â€” A 5-week plateau with consistent effort suggests a complexity mismatch or burnout. Switching topics for 3 days provides diffuse processing and prevents diminishing returns.
+**Answer:** B — A 5-week plateau with consistent effort suggests a complexity mismatch or burnout. Switching topics for 3 days provides diffuse processing and prevents diminishing returns.
 </details>
 
 **Q3:** Which combination of metrics best validates genuine learning?
@@ -1652,7 +1652,7 @@ d) 6 months
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** C â€” Velocity measures pace, and 7-day recall verifies retention. Together they confirm you're learning quickly AND durably. All other combinations can be gamed.
+**Answer:** C — Velocity measures pace, and 7-day recall verifies retention. Together they confirm you're learning quickly AND durably. All other combinations can be gamed.
 </details>
 
 **Q4:** A learner's forgetting curve shows 90% recall at day 1 but only 30% at day 7. What does this suggest?
@@ -1664,19 +1664,19 @@ d) 6 months
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** A â€” High day-1 recall indicates good initial encoding, but the steep drop by day 7 means the first review interval (spaced repetition) should happen earlier â€” around day 2-3 instead of waiting a full week.
+**Answer:** A — High day-1 recall indicates good initial encoding, but the steep drop by day 7 means the first review interval (spaced repetition) should happen earlier — around day 2-3 instead of waiting a full week.
 </details>
 
 **Q5:** A student runs an A/B test comparing morning vs evening study. Morning average quality is 7.5/10, evening is 7.8/10. What should they conclude?
 - A) Evening is clearly better
 - B) Morning is clearly better
-- C) No significant difference â€” choose based on schedule preference
+- C) No significant difference — choose based on schedule preference
 - D) The test was flawed and should be rerun
 
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** C â€” A 0.3-point difference with only 7 days per condition is noise, not signal. Use the method that fits your schedule best, or extend the experiment to 14 days per condition for more confidence.
+**Answer:** C — A 0.3-point difference with only 7 days per condition is noise, not signal. Use the method that fits your schedule best, or extend the experiment to 14 days per condition for more confidence.
 </details>
 
 ## Further Reading

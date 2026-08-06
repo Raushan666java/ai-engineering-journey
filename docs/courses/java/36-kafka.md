@@ -1,4 +1,4 @@
-﻿# Apache Kafka
+# Apache Kafka
 > **Previous:** [RabbitMQ](35-rabbitmq.md) | **Next:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md)
 
 ## Learning Objectives
@@ -38,9 +38,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Kafka â†’ distributed event streaming platform | Topics, partitions, and consumer groups for horizontal scaling |
-| Producers â†’ publish records with keys, headers, and acks | `KafkaTemplate.send()` with partitioning strategies |
-| Consumers â†’ subscribe with `@KafkaListener` and consumer groups | Offset management, rebalancing, and exactly-once semantics |
+| Kafka → distributed event streaming platform | Topics, partitions, and consumer groups for horizontal scaling |
+| Producers → publish records with keys, headers, and acks | `KafkaTemplate.send()` with partitioning strategies |
+| Consumers → subscribe with `@KafkaListener` and consumer groups | Offset management, rebalancing, and exactly-once semantics |
 
 ---
 ## Chapter Roadmap
@@ -93,7 +93,7 @@ flowchart TD
 ---
 ## Chapter Quiz
 
-1. What is the smallest unit of parallelism in Kafka? **Answer:** Partition â†’ each partition is consumed by one consumer in a group
+1. What is the smallest unit of parallelism in Kafka? **Answer:** Partition → each partition is consumed by one consumer in a group
 2. Which annotation subscribes a method to Kafka messages? **Answer:** `@KafkaListener`
 3. What configuration enables exactly-once semantics for a Kafka producer? **Answer:** `enable.idempotence=true` and `acks=all`
 
@@ -120,7 +120,7 @@ Apache Kafka is a distributed event streaming platform. Unlike RabbitMQ (a messa
 | **Replication** | Partitions are replicated across brokers. The leader handles reads/writes; followers replicate. |
 | **Log Segment** | The physical storage unit. Topics are split into segments on disk. |
 
-**Architecture evolution ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ZooKeeper vs KRaft:**
+**Architecture evolution — ZooKeeper vs KRaft:**
 
 | Aspect | ZooKeeper-based (legacy) | KRaft (Kafka 3.x+) |
 |--------|------------------------|--------------------|
@@ -289,7 +289,7 @@ producerProps.put(ProducerConfig.MAX_REQUEST_SIZE_CONFIG, 10485760);  // 10MB
 producerProps.put(ProducerConfig.MAX_BLOCK_MS_CONFIG, 60000);         // Block for metadata
 ```
 
-### 4. KafkaTemplate ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Producing Messages
+### 4. KafkaTemplate — Producing Messages
 
 
 ```java
@@ -505,7 +505,7 @@ consumerProps.put(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG,
     CooperativeStickyAssignor.class.getName());
 ```
 
-### 7. @KafkaListener ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Consuming Messages
+### 7. @KafkaListener — Consuming Messages
 
 
 ```java
@@ -579,7 +579,7 @@ public class OrderConsumer {
             acknowledgment.acknowledge();
         } catch (Exception e) {
             log.error("Failed to process order {}", order.getId(), e);
-            // Do not ack ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â message will be redelivered
+            // Do not ack — message will be redelivered
         }
     }
 
@@ -1677,13 +1677,13 @@ class KafkaConsumerTest {
 ```
 
 > [!TIP]
-> Use a meaningful message key for partitioning â†’ all messages with the same key go to the same partition, preserving order.
+> Use a meaningful message key for partitioning → all messages with the same key go to the same partition, preserving order.
 
 > [!WARNING]
 > Consumer rebalancing stops all consumption in the group. Set `session.timeout.ms` appropriately to avoid unnecessary rebalances.
 
 > [!NOTE]
-> `@KafkaHandler` on multiple methods within a single `@KafkaListener` dispatches messages by payload type â†’ like a visitor pattern.
+> `@KafkaHandler` on multiple methods within a single `@KafkaListener` dispatches messages by payload type → like a visitor pattern.
 
 ## Summary
 
@@ -1693,9 +1693,9 @@ Apache Kafka is a distributed event streaming platform built on an append-only l
 - **Producers** use `KafkaTemplate` with callbacks for reliability. Enable idempotence (`enable.idempotence=true`) and use `acks=all` for strong guarantees. Tune `batch.size` and `linger.ms` for throughput.
 - **Consumers** use `@KafkaListener` with configurable `AckMode`. `MANUAL_IMMEDIATE` gives precise control. Use `DefaultErrorHandler` with `DeadLetterPublishingRecoverer` for production error handling.
 - **Exactly-once** requires idempotent producers + transactional producers/consumers + `read_committed` isolation. Configure `processing.guarantee=exactly_once_v2` for Streams.
-- **Schema Registry** provides schema evolution with Avro, Protobuf, or JSON Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â essential for production.
+- **Schema Registry** provides schema evolution with Avro, Protobuf, or JSON Schema — essential for production.
 - **Kafka Streams** enables stream processing within the same application. Use `KStream` for record streams, `KTable` for changelog views, and `GlobalKTable` for fully replicated lookup tables. Windows (tumbling, hopping, sliding) enable time-based aggregations.
-- **Error handling** with `@RetryableTopic` simplifies retry infrastructure ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it auto-creates retry topics and a DLT.
+- **Error handling** with `@RetryableTopic` simplifies retry infrastructure — it auto-creates retry topics and a DLT.
 
 ## Exercises
 

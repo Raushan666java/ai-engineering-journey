@@ -1,4 +1,4 @@
-﻿# Chapter 15: Ethics of Artificial Intelligence
+# Chapter 15: Ethics of Artificial Intelligence
 
 **Previous:** [Chapter 14: Robotics](14-robotics.md) | **Next:** [Chapter 16: Expert Systems](16-expert-systems.md)
 
@@ -27,11 +27,11 @@ By the conclusion of this chapter, the student will be able to: (1) identify sou
 
 ## Why AI Ethics Matters
 
-Imagine you are handed the keys to a Ferrari â€” 900 horsepower, zero to sixty in 2.5 seconds, a machine of incredible capability. The engineer who built it says, "It can go faster than anything on the road." But nobody gave you a steering wheel, brake pedal, or rearview mirror. There are no traffic laws, no speed limits, no lines painted on the road. Would you drive it?
+Imagine you are handed the keys to a Ferrari — 900 horsepower, zero to sixty in 2.5 seconds, a machine of incredible capability. The engineer who built it says, "It can go faster than anything on the road." But nobody gave you a steering wheel, brake pedal, or rearview mirror. There are no traffic laws, no speed limits, no lines painted on the road. Would you drive it?
 
-AI ethics is exactly this: the steering wheel, brakes, and rules of the road for artificial intelligence. Technology without ethics is a Ferrari with no steering wheel â€” immense power with no control. Just as traffic rules do not slow us down but keep us alive, ethical frameworks do not hinder AI innovation â€” they ensure AI serves humanity rather than endangering it.
+AI ethics is exactly this: the steering wheel, brakes, and rules of the road for artificial intelligence. Technology without ethics is a Ferrari with no steering wheel — immense power with no control. Just as traffic rules do not slow us down but keep us alive, ethical frameworks do not hinder AI innovation — they ensure AI serves humanity rather than endangering it.
 
-**The core insight:** Every line of code you write carries an ethical consequence. A loan approval model can deny a family their dream home. A resume scanner can systematically exclude qualified candidates. A facial recognition system can lead to wrongful arrest. Ethics in AI is not a philosophy class bolted onto engineering â€” it is engineering, done properly.
+**The core insight:** Every line of code you write carries an ethical consequence. A loan approval model can deny a family their dream home. A resume scanner can systematically exclude qualified candidates. A facial recognition system can lead to wrongful arrest. Ethics in AI is not a philosophy class bolted onto engineering — it is engineering, done properly.
 
 Without ethics, we get:
 - **Bias amplification**: Models that learn and magnify historical discrimination
@@ -79,9 +79,9 @@ flowchart LR
 ### Real-World Analogy: The Biased Door
 
 
-Imagine a building where the front door only opens for people over six feet tall. The architect didn't explicitly design it to exclude short people â€” they simply installed a sensor calibrated on the building's tall security guards. The door is "fair" by its own logic (it opens for anyone tall enough), but it is deeply unfair in practice. The problem is not the door mechanism â€” it is the data and assumptions used to calibrate it.
+Imagine a building where the front door only opens for people over six feet tall. The architect didn't explicitly design it to exclude short people — they simply installed a sensor calibrated on the building's tall security guards. The door is "fair" by its own logic (it opens for anyone tall enough), but it is deeply unfair in practice. The problem is not the door mechanism — it is the data and assumptions used to calibrate it.
 
-AI bias works the same way. The model is not malicious; it faithfully learns from data that reflects historical inequities, incomplete sampling, or flawed measurements. The result is a system that treats people differently based on race, gender, age, or other protected attributes â€” even when those attributes were never explicitly used as features.
+AI bias works the same way. The model is not malicious; it faithfully learns from data that reflects historical inequities, incomplete sampling, or flawed measurements. The result is a system that treats people differently based on race, gender, age, or other protected attributes — even when those attributes were never explicitly used as features.
 
 ---
 
@@ -106,17 +106,17 @@ AI bias works the same way. The model is not malicious; it faithfully learns fro
 ### 15.1.2 Mathematical Fairness Definitions
 
 
-Multiple mathematical definitions of fairness exist, and they are **mutually incompatible** in general (Kleinberg et al., 2016 â€” the Impossibility Theorem of Fairness):
+Multiple mathematical definitions of fairness exist, and they are **mutually incompatible** in general (Kleinberg et al., 2016 — the Impossibility Theorem of Fairness):
 
 | Definition | Mathematical Expression | Meaning | Limitation |
 |-----------|----------------------|---------|------------|
-| **Demographic Parity** | P(Å¶ = 1 | A = a) = P(Å¶ = 1) | Prediction rate is equal across groups | Ignores actual outcomes |
-| **Equal Opportunity** | P(Å¶ = 1 | Y = 1, A = a) = P(Å¶ = 1 | Y = 1) | Equal true positive rates (equal chance of getting a "good" outcome when deserved) | Does not address false positives |
-| **Equalized Odds** | P(Å¶ = 1 | Y = y, A = a) = P(Å¶ = 1 | Y = y) for y âˆˆ {0,1} | Both TPR and FPR are equal across groups | Most constrained â€” often impossible |
-| **Individual Fairness** | d(Å¶(x), Å¶(x')) â‰¤ D(x, x') | Similar individuals receive similar predictions | Requires a task-specific similarity metric |
-| **Counterfactual Fairness** | P(Å¶_{A=a} = y) = P(Å¶_{A=a'} = y) | Prediction would be the same if protected attribute were different | Requires causal knowledge |
+| **Demographic Parity** | P(Ŷ = 1 | A = a) = P(Ŷ = 1) | Prediction rate is equal across groups | Ignores actual outcomes |
+| **Equal Opportunity** | P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1) | Equal true positive rates (equal chance of getting a "good" outcome when deserved) | Does not address false positives |
+| **Equalized Odds** | P(Ŷ = 1 | Y = y, A = a) = P(Ŷ = 1 | Y = y) for y ∈ {0,1} | Both TPR and FPR are equal across groups | Most constrained — often impossible |
+| **Individual Fairness** | d(Ŷ(x), Ŷ(x')) ≤ D(x, x') | Similar individuals receive similar predictions | Requires a task-specific similarity metric |
+| **Counterfactual Fairness** | P(Ŷ_{A=a} = y) = P(Ŷ_{A=a'} = y) | Prediction would be the same if protected attribute were different | Requires causal knowledge |
 
-**The Impossibility Theorem:** Unless base rates are identical across groups (P(Y=1|A=a) is equal for all a) or the predictor is perfect, demographic parity and equalized odds cannot both be satisfied simultaneously. This is not a limitation of these specific definitions â€” it is a mathematical fact about any two fairness criteria that impose different constraints on the confusion matrix.
+**The Impossibility Theorem:** Unless base rates are identical across groups (P(Y=1|A=a) is equal for all a) or the predictor is perfect, demographic parity and equalized odds cannot both be satisfied simultaneously. This is not a limitation of these specific definitions — it is a mathematical fact about any two fairness criteria that impose different constraints on the confusion matrix.
 
 ---
 
@@ -144,7 +144,7 @@ experience[gender == 1] -= 0.5  # Slight historical bias in experience
 # Qualification score (unbiased)
 qualification = np.random.normal(70, 15, n_samples)
 
-# Historical hiring decisions (biased â€” favors male applicants)
+# Historical hiring decisions (biased — favors male applicants)
 # The bias is encoded in the training labels, not just features
 logit = 0.1 * experience + 0.05 * qualification - 2.0 * gender
 prob = 1 / (1 + np.exp(-logit))
@@ -273,14 +273,14 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 **Analysis:** While the model achieved similar overall accuracy across groups, it systematically:
 - **Over-predicted** recidivism for Black defendants (nearly 2x the false positive rate)
 - **Under-predicted** recidivism for White defendants
-- This is the classic "fairness through unawareness" failure â€” the model did not use race as a feature, but correlated features (criminal history, socioeconomic factors) encoded racial disparities in the justice system.
+- This is the classic "fairness through unawareness" failure — the model did not use race as a feature, but correlated features (criminal history, socioeconomic factors) encoded racial disparities in the justice system.
 
 **Lessons Learned:**
-1. **Overall accuracy is insufficient** â€” subgroup analysis is mandatory
-2. **Failing to use protected attributes does not guarantee fairness** â€” proxy variables are everywhere
-3. **Different fairness metrics can produce opposite conclusions** â€” Northpointe defended COMPAS using equalized odds (similar accuracy), while ProPublica used false positive parity
-4. **Deployment context matters** â€” a tool validated in one jurisdiction may fail in another
-5. **Transparency requirements** â€” proprietary algorithms cannot be properly audited by defendants or their counsel
+1. **Overall accuracy is insufficient** — subgroup analysis is mandatory
+2. **Failing to use protected attributes does not guarantee fairness** — proxy variables are everywhere
+3. **Different fairness metrics can produce opposite conclusions** — Northpointe defended COMPAS using equalized odds (similar accuracy), while ProPublica used false positive parity
+4. **Deployment context matters** — a tool validated in one jurisdiction may fail in another
+5. **Transparency requirements** — proprietary algorithms cannot be properly audited by defendants or their counsel
 
 ---
 
@@ -289,7 +289,7 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Reduces discrimination and promotes social justice | No single definition of fairness â€” incompatible criteria |
+| Reduces discrimination and promotes social justice | No single definition of fairness — incompatible criteria |
 | Improves model robustness across diverse populations | Fairness constraints can reduce overall accuracy |
 | Builds trust with users and stakeholders | Proxy variables can reintroduce bias even after mitigation |
 | Increasingly required by regulation (EU AI Act) | Computational cost of fairness auditing and retraining |
@@ -304,8 +304,8 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
-| **Intersectionality** | Bias is not additive â€” being Black AND female creates distinct harms not captured by single-attribute metrics | Standard fairness metrics check one attribute at a time | Intersectional analysis, disaggregated evaluation |
-| **Fairness Ratios** | A 0.8 ratio (80% rule) is a common threshold â€” but is 0.79 very different from 0.81? | Binary thresholds create cliff effects | Continuous fairness reporting, not pass/fail |
+| **Intersectionality** | Bias is not additive — being Black AND female creates distinct harms not captured by single-attribute metrics | Standard fairness metrics check one attribute at a time | Intersectional analysis, disaggregated evaluation |
+| **Fairness Ratios** | A 0.8 ratio (80% rule) is a common threshold — but is 0.79 very different from 0.81? | Binary thresholds create cliff effects | Continuous fairness reporting, not pass/fail |
 | **Small Subgroups** | A demographic group may have too few samples for statistically meaningful fairness analysis | High variance in metric estimates | Bayesian fairness estimation, confidence intervals |
 | **Feedback Loops** | A biased model changes the system, which changes future data, which entrenches bias further (e.g., predictive policing) | Static fairness metrics miss dynamic effects | Longitudinal fairness monitoring, causal analysis |
 | **Fairness vs. Privacy** | Checking for bias requires demographic data, but collecting demographic data raises privacy concerns | Tension between transparency and privacy | Differential privacy for fairness audits, encrypted computation |
@@ -318,21 +318,21 @@ y_pred_fair = np.array([y_prob[i] >= thresholds[gender_test[i]] for i in range(l
 ### Real-World Analogy: The Surgeon's Explanation
 
 
-Imagine you are about to undergo a serious surgery. The surgeon says, "Trust me, I've done thousands of these." When you ask why they are making a particular incision, they reply, "The neural network in my brain just computed it â€” I cannot tell you the reasoning, but it is 97% accurate." Would you consent?
+Imagine you are about to undergo a serious surgery. The surgeon says, "Trust me, I've done thousands of these." When you ask why they are making a particular incision, they reply, "The neural network in my brain just computed it — I cannot tell you the reasoning, but it is 97% accurate." Would you consent?
 
-This is the problem with black-box AI. Transparency â€” the ability to understand and explain decisions â€” is not a luxury; it is a prerequisite for trust, accountability, and error correction. Just as a surgeon must articulate their clinical reasoning, an AI system deployed in high-stakes environments must provide explanations that can be inspected, questioned, and appealed.
+This is the problem with black-box AI. Transparency — the ability to understand and explain decisions — is not a luxury; it is a prerequisite for trust, accountability, and error correction. Just as a surgeon must articulate their clinical reasoning, an AI system deployed in high-stakes environments must provide explanations that can be inspected, questioned, and appealed.
 
 ### 15.2.1 The Transparency Spectrum
 
 
 | Level | Description | Example Models | Interpretability |
 |-------|-------------|---------------|:----------------:|
-| **White-box** | Fully interpretable by design | Decision trees (depth â‰¤ 3), Linear/Logistic regression | High |
+| **White-box** | Fully interpretable by design | Decision trees (depth ≤ 3), Linear/Logistic regression | High |
 | **Grey-box** | Partially interpretable with approximation | Gradient-boosted trees, rule-based systems | Medium |
 | **Black-box** | Not directly interpretable; requires post-hoc methods | Deep neural networks, ensemble methods | Low |
 | **Post-hoc** | Interpretability methods applied after training | LIME, SHAP, Grad-CAM, Integrated Gradients | Depends on method |
 
-### 15.2.2 LIME â€” Local Interpretable Model-Agnostic Explanations
+### 15.2.2 LIME — Local Interpretable Model-Agnostic Explanations
 
 
 **How it works:** For any individual prediction, LIME:
@@ -378,7 +378,7 @@ print(f"Prediction: {rf.predict(X_test[idx].reshape(1, -1))[0]}")
 print("\nFeature contributions (to 'Benign' prediction):")
 for feature, weight in exp.as_list():
     direction = "INCREASES" if weight > 0 else "DECREASES"
-    icon = "â–²" if weight > 0 else "â–¼"
+    icon = "▲" if weight > 0 else "▼"
     print(f"  {icon} {feature}: {abs(weight):.4f} ({direction})")
 
 # Visualize
@@ -389,9 +389,9 @@ plt.close()
 print("\n[LIME visualization saved to lime_explanation.png]")
 ```
 
-**Key insight:** LIME tells you which features drove a specific decision. For a loan denial, LIME might reveal that "income &lt; $30,000" was the primary factor â€” but it might also reveal that "zip code" (a proxy for race) was influential.
+**Key insight:** LIME tells you which features drove a specific decision. For a loan denial, LIME might reveal that "income &lt; $30,000" was the primary factor — but it might also reveal that "zip code" (a proxy for race) was influential.
 
-### 15.2.3 SHAP â€” SHapley Additive exPlanations
+### 15.2.3 SHAP — SHapley Additive exPlanations
 
 
 **Theoretical foundation:** SHAP uses Shapley values from cooperative game theory. Each feature is a "player" in a coalition (the feature set), and its contribution is its average marginal contribution across all possible coalitions.
@@ -443,7 +443,7 @@ for i in sorted_idx[-5:]:
     print(f"  {feature_names[i]}: {feature_importance[i]:.4f}")
 ```
 
-### 15.2.4 LIME vs SHAP â€” Decision Framework
+### 15.2.4 LIME vs SHAP — Decision Framework
 
 
 | Criterion | LIME | SHAP |
@@ -451,7 +451,7 @@ for i in sorted_idx[-5:]:
 | **Theoretical guarantees** | None (heuristic surrogate) | Strong (game theory) |
 | **Computational cost** | Fast | Slow (exponential in features) |
 | **Global explanations** | No (individual predictions only) | Yes (summary plots) |
-| **Consistency** | Unstable â€” different perturbations â†’ different explanations | Consistent (symmetry property) |
+| **Consistency** | Unstable — different perturbations → different explanations | Consistent (symmetry property) |
 | **Handles feature correlation** | Poor | Better (considers all subsets) |
 | **Ease of use** | Very easy | Moderate |
 | **Best for** | Quick, interactive debugging | Formal audit, research, publication |
@@ -459,17 +459,17 @@ for i in sorted_idx[-5:]:
 ### 15.2.5 Case Study: Black-Box Medicine
 
 
-**Scenario:** A hospital deploys a deep learning model to predict sepsis 12 hours before onset. The model achieves 94% AUC â€” better than doctors. However, when a patient dies despite the model predicting "no sepsis," the family sues.
+**Scenario:** A hospital deploys a deep learning model to predict sepsis 12 hours before onset. The model achieves 94% AUC — better than doctors. However, when a patient dies despite the model predicting "no sepsis," the family sues.
 
 **The transparency problem:**
-- The model is a proprietary neural network â€” no explanation available
-- LIME reveals the model relied heavily on "respiratory rate" â€” which was normal because the patient was on a ventilator
+- The model is a proprietary neural network — no explanation available
+- LIME reveals the model relied heavily on "respiratory rate" — which was normal because the patient was on a ventilator
 - The model failed because it was trained on data where most patients were not ventilated
 - With SHAP, the development team discovers the model systematically under-predicts for patients with pre-existing conditions
 
 **Resolution:** The hospital mandates that all clinical AI systems must produce SHAP explanations stored in the patient's medical record. When a model's prediction contradicts clinical judgment, the explanation is reviewed by a committee.
 
-**Key takeaway:** In high-stakes domains, interpretability is not optional â€” it is a legal and ethical requirement. The GDPR includes a "right to explanation" for automated decisions.
+**Key takeaway:** In high-stakes domains, interpretability is not optional — it is a legal and ethical requirement. The GDPR includes a "right to explanation" for automated decisions.
 
 ### 15.2.6 Advantages and Disadvantages of Model Interpretability
 
@@ -494,7 +494,7 @@ for i in sorted_idx[-5:]:
 | **Adversarial explanations** | Inputs crafted to produce innocuous explanations for harmful decisions | Regulatory evasion | Robust explanation methods, adversarial training |
 | **User cognitive load** | Full SHAP summary plot with 1000 features is incomprehensible | Explanation is too complex | Hierarchical explanations, top-K features |
 | **Concept drift** | Features that matter today may not matter tomorrow | Explanations become stale | Continuous explanation monitoring |
-| **Counterfactual accessibility** | "You would have been approved if your income were $500 higher" â€” but the user cannot change income | Explanation is truthful but unhelpful | Provide actionable counterfactuals |
+| **Counterfactual accessibility** | "You would have been approved if your income were $500 higher" — but the user cannot change income | Explanation is truthful but unhelpful | Provide actionable counterfactuals |
 
 ---
 
@@ -503,9 +503,9 @@ for i in sorted_idx[-5:]:
 ### Real-World Analogy: The Glass House
 
 
-Imagine living in a house made entirely of glass. Everyone can see what you eat, who you talk to, when you sleep. Your medical prescriptions are visible from the street. Your financial transactions are displayed on the walls. The builder says, "Don't worry â€” I only analyze the data to help you. Nothing will be misused."
+Imagine living in a house made entirely of glass. Everyone can see what you eat, who you talk to, when you sleep. Your medical prescriptions are visible from the street. Your financial transactions are displayed on the walls. The builder says, "Don't worry — I only analyze the data to help you. Nothing will be misused."
 
-This is the state of AI privacy today. Every search query, purchase, location ping, and social media interaction feeds AI systems that know more about us than we know about ourselves. The glass house is comfortable when it provides personalized recommendations â€” and terrifying when that data is leaked, sold, or used against us.
+This is the state of AI privacy today. Every search query, purchase, location ping, and social media interaction feeds AI systems that know more about us than we know about ourselves. The glass house is comfortable when it provides personalized recommendations — and terrifying when that data is leaked, sold, or used against us.
 
 ### 15.3.1 Privacy Threats in AI
 
@@ -519,17 +519,17 @@ This is the state of AI privacy today. Every search query, purchase, location pi
 | **Model Extraction** | Attacker reconstructs a copy of the model using query access | Stealing a proprietary recommendation system | Medium |
 | **Linkage Attack** | Anonymized data is re-identified by joining with public datasets | Netflix Prize dataset re-identified using IMDb ratings | High |
 
-### 15.3.2 Differential Privacy â€” Formal Protection
+### 15.3.2 Differential Privacy — Formal Protection
 
 
-**Definition:** An algorithm M is Îµ-differentially private if for any two datasets D and D' that differ by only one record, and for any output S:
+**Definition:** An algorithm M is ε-differentially private if for any two datasets D and D' that differ by only one record, and for any output S:
 
-P(M(D) âˆˆ S) â‰¤ e^Îµ Â· P(M(D') âˆˆ S)
+P(M(D) ∈ S) ≤ e^ε · P(M(D') ∈ S)
 
 **What this means in practice:**
 - Adding or removing any individual's data does not significantly change the output distribution
 - An attacker cannot confidently infer whether a specific person contributed to the training data
-- Îµ (epsilon) controls the privacy-accuracy trade-off: lower Îµ = more privacy, less accuracy
+- ε (epsilon) controls the privacy-accuracy trade-off: lower ε = more privacy, less accuracy
 
 ```python
 import numpy as np
@@ -551,23 +551,23 @@ n_employees = 1000
 true_salaries = np.random.normal(65000, 15000, n_employees)
 true_salaries = np.clip(true_salaries, 30000, 200000)
 
-print("=== Differential Privacy â€” Mean Salary ===")
+print("=== Differential Privacy — Mean Salary ===")
 print(f"True average salary: ${true_salaries.mean():.2f}")
 
 for eps in [0.01, 0.1, 0.5, 1.0, 5.0]:
     private_mean, true = dp_simple_mean(true_salaries, eps)
     error = abs(private_mean - true)
-    print(f"  Îµ = {eps:.2f}: Private mean = ${private_mean:.2f} (error = ${error:.2f})")
+    print(f"  ε = {eps:.2f}: Private mean = ${private_mean:.2f} (error = ${error:.2f})")
 ```
 
 **Understanding epsilon values:**
-- Îµ = 0.01: Extremely strong privacy (output is mostly noise)
-- Îµ = 0.1: Strong privacy (useful for aggregates)
-- Îµ = 1.0: Moderate privacy (common in production systems)
-- Îµ = 5.0: Weak privacy (meaningful guarantees are limited)
-- Îµ = 10+: Essentially no privacy protection
+- ε = 0.01: Extremely strong privacy (output is mostly noise)
+- ε = 0.1: Strong privacy (useful for aggregates)
+- ε = 1.0: Moderate privacy (common in production systems)
+- ε = 5.0: Weak privacy (meaningful guarantees are limited)
+- ε = 10+: Essentially no privacy protection
 
-### 15.3.3 DP-SGD â€” Differentially Private Stochastic Gradient Descent
+### 15.3.3 DP-SGD — Differentially Private Stochastic Gradient Descent
 
 
 The most practical technique for private ML: add calibrated noise to gradients during training.
@@ -625,7 +625,7 @@ def dp_sgd_training(model, X_train, y_train, epsilon, delta=1e-5,
     return model
 ```
 
-### 15.3.4 Federated Learning â€” Privacy by Decentralization
+### 15.3.4 Federated Learning — Privacy by Decentralization
 
 
 **How it works:**
@@ -657,30 +657,30 @@ def federated_averaging(global_model, client_updates):
 ```
 
 **When to use Federated Learning:**
-- âœ… Healthcare (hospitals cannot share patient data)
-- âœ… Mobile keyboards (Google Gboard)
-- âœ… Voice assistants (on-device personalization)
-- âŒ Not suitable when communication bandwidth is limited
-- âŒ Not suitable for non-IID data (client distributions differ significantly)
-- âŒ Does not guarantee privacy against gradient inversion attacks (must combine with DP)
+- ✅ Healthcare (hospitals cannot share patient data)
+- ✅ Mobile keyboards (Google Gboard)
+- ✅ Voice assistants (on-device personalization)
+- ❌ Not suitable when communication bandwidth is limited
+- ❌ Not suitable for non-IID data (client distributions differ significantly)
+- ❌ Does not guarantee privacy against gradient inversion attacks (must combine with DP)
 
 ### 15.3.5 Case Study: The Netflix Prize Re-identification
 
 
-**Background:** In 2006, Netflix released 100 million anonymized movie ratings for a competition to improve its recommendation system. The data was "anonymized" â€” user IDs were replaced with random numbers, and all identifying information was removed.
+**Background:** In 2006, Netflix released 100 million anonymized movie ratings for a competition to improve its recommendation system. The data was "anonymized" — user IDs were replaced with random numbers, and all identifying information was removed.
 
 **The attack:** Researchers at the University of Texas demonstrated that by cross-referencing the "anonymous" dataset with public IMDb ratings (where users sometimes use their real names), they could re-identify individual users. With just a few movie ratings and dates (often available from public reviews), they could uniquely match a user.
 
 **Impact:**
-- A known user's political preferences, religious views, and sexual orientation were inferred from their movie ratings â€” despite no demographic data being included
+- A known user's political preferences, religious views, and sexual orientation were inferred from their movie ratings — despite no demographic data being included
 - A lawsuit was filed under the Video Privacy Protection Act
 - Netflix canceled a second competition
 
 **Lessons learned:**
-1. **Anonymization is not sufficient** â€” linkage attacks can re-identify "anonymous" data
+1. **Anonymization is not sufficient** — linkage attacks can re-identify "anonymous" data
 2. **k-anonymity and related concepts** are necessary but not sufficient
 3. **Differential privacy** would have prevented this attack (adding noise ensures that individual contributions cannot be distinguished)
-4. **Metadata is data** â€” ratings alone, without names or demographics, can reveal identity
+4. **Metadata is data** — ratings alone, without names or demographics, can reveal identity
 
 ### 15.3.6 Advantages and Disadvantages of Privacy-Preserving AI
 
@@ -699,8 +699,8 @@ def federated_averaging(global_model, client_updates):
 
 | Edge Case | Scenario | Challenge | Mitigation |
 |-----------|----------|-----------|------------|
-| **Correlated data** | Family members' data is correlated â€” DP assumes independence | Privacy loss accumulates across correlated individuals | Group differential privacy |
-| **Iterative queries** | Multiple DP queries compound privacy loss | Îµ budget is exhausted | Privacy accounting, composability theorems |
+| **Correlated data** | Family members' data is correlated — DP assumes independence | Privacy loss accumulates across correlated individuals | Group differential privacy |
+| **Iterative queries** | Multiple DP queries compound privacy loss | ε budget is exhausted | Privacy accounting, composability theorems |
 | **Gradient inversion** | Federated Learning gradients can reconstruct training images | FL alone does not guarantee privacy | Combine FL with DP-SGD |
 | **Side-channel attacks** | Timing, power consumption, or memory access patterns leak information | Standard DP does not cover side channels | Constant-time implementations |
 | **Data provenance** | Training data includes public data with different privacy expectations | Mixed-privacy regimes | Tiered privacy guarantees |
@@ -715,7 +715,7 @@ def federated_averaging(global_model, client_updates):
 
 When a bridge collapses, we do not ask "What was the bridge thinking?" We ask: "Who designed it? Who inspected the materials? Who signed off on the load calculations? Who approved the budget that cut corners?" Responsibility flows through a chain.
 
-In AI, accountability is often absent. When a self-driving car hits a pedestrian, the company blames the driver, the developer blames the training data, and the data team blames the labeling vendor. This is the **responsibility gap** â€” when no human can meaningfully be held responsible for an AI system's actions.
+In AI, accountability is often absent. When a self-driving car hits a pedestrian, the company blames the driver, the developer blames the training data, and the data team blames the labeling vendor. This is the **responsibility gap** — when no human can meaningfully be held responsible for an AI system's actions.
 
 ### 15.4.1 The Accountability Framework
 
@@ -819,14 +819,14 @@ print(f"Decisions recorded: {len(log.entries)}")
 ### 15.4.3 Case Study: Amazon's AI Hiring Tool
 
 
-**Background:** In 2014, Amazon built an AI recruiting tool to automate resume screening. The system was trained on 10 years of Amazon's hiring data â€” a dataset dominated by male applicants, reflecting the tech industry's gender imbalance.
+**Background:** In 2014, Amazon built an AI recruiting tool to automate resume screening. The system was trained on 10 years of Amazon's hiring data — a dataset dominated by male applicants, reflecting the tech industry's gender imbalance.
 
 **The failure:** By 2015, the team realized the system was systematically penalizing resumes containing the word "women's" (e.g., "women's chess club captain") and graduates of all-women's colleges. The model had learned that Amazon prefers male candidates because that is what its training data showed.
 
 **Accountability analysis:**
 - **Who was responsible?** Amazon's development team. But no individual was found "at fault."
-- **Was there an audit trail?** Initially, no â€” the model was a black box.
-- **Could applicants contest?** No â€” applicants did not even know an AI was screening them.
+- **Was there an audit trail?** Initially, no — the model was a black box.
+- **Could applicants contest?** No — applicants did not even know an AI was screening them.
 - **Resolution:** Amazon scrapped the project, but by then, hundreds of thousands of applicants had been processed.
 
 **Systemic failures:**
@@ -851,7 +851,7 @@ print(f"Decisions recorded: {len(log.entries)}")
 | Enables affected parties to seek redress | May slow down automated decision-making |
 | Builds organizational learning from failures | Requires significant cultural shift |
 | Required by regulation (EU AI Act for high-risk systems) | Difficult to enforce across supply chains |
-| Reduces legal liability through documented processes | "Accountability washing" â€” performative compliance |
+| Reduces legal liability through documented processes | "Accountability washing" — performative compliance |
 | Improves system quality through post-hoc analysis | Responsibility gaps are hard to close for autonomous systems |
 
 ### 15.4.5 Edge Cases in Accountability
@@ -871,9 +871,9 @@ print(f"Decisions recorded: {len(log.entries)}")
 ### Real-World Analogy: The Genie's Wish
 
 
-In every story about a wish-granting genie, the wisher gets exactly what they asked for â€” and immediately regrets it. "I wish to be rich" â†’ the wisher turns to gold. "I wish to be powerful" â†’ the wisher becomes a tyrant everyone despises. The problem is not that the genie is malevolent â€” it is that the genie is literal and unbounded. It perfectly optimizes for the literal wish, with no understanding of human values, context, or common sense.
+In every story about a wish-granting genie, the wisher gets exactly what they asked for — and immediately regrets it. "I wish to be rich" → the wisher turns to gold. "I wish to be powerful" → the wisher becomes a tyrant everyone despises. The problem is not that the genie is malevolent — it is that the genie is literal and unbounded. It perfectly optimizes for the literal wish, with no understanding of human values, context, or common sense.
 
-This is the **alignment problem** in AI. We are building increasingly powerful "genies" â€” optimization engines that pursue goals with superhuman effectiveness. The challenge is ensuring that what we *ask for* (the specified objective) matches what we *actually want* (human values).
+This is the **alignment problem** in AI. We are building increasingly powerful "genies" — optimization engines that pursue goals with superhuman effectiveness. The challenge is ensuring that what we *ask for* (the specified objective) matches what we *actually want* (human values).
 
 ### 15.5.1 The Alignment Problem
 
@@ -931,7 +931,7 @@ class CleaningRobotEnvironment:
         # Ground truth evaluation
         true_cleaned = sum(1 for p in self.covered_positions if p in [(2,2), (3,1), (4,4)])
         print(f"True cleaning effectiveness: {true_cleaned}/{len([(2,2), (3,1), (4,4)])}")
-        print(f"Verdict: REWARD HACKING DETECTED â€” high reward with low true objective achievement")
+        print(f"Verdict: REWARD HACKING DETECTED — high reward with low true objective achievement")
 
 env = CleaningRobotEnvironment()
 env.simulate_hack()
@@ -963,7 +963,7 @@ print(f"Proper policy: {total} total reward (lower reward but actually cleaned)"
 | **Specification Gaming** | Agent exploits ambiguities in the objective specification | Game-playing AI that pauses the game to avoid losing | Counterfactual reasoning, specification testing |
 | **Goal Misgeneralization** | Agent pursues a proxy that diverges from the true goal | Summarization model that learns to copy the first sentence (high ROUGE, poor summaries) | Diverse training objectives, robustness testing |
 | **Inner Alignment Failure** | Learned optimizer within the model pursues its own objective | Mesa-optimizer that values self-preservation over the training objective | Transparency tools, capability limitation |
-| **Outer Alignment Failure** | Specified reward function does not capture what we actually want | Social media engagement maximization â†’ addictive feeds, polarization | Participatory design, multi-stakeholder objective specification |
+| **Outer Alignment Failure** | Specified reward function does not capture what we actually want | Social media engagement maximization → addictive feeds, polarization | Participatory design, multi-stakeholder objective specification |
 | **Side Effects** | Agent achieves goal but causes unintended harm | Warehouse robot that maximizes boxes moved but damages fragile items | Impact regularization, human-in-the-loop |
 
 ### 15.5.3 The Instrumental Convergence Thesis
@@ -999,7 +999,7 @@ Nick Bostrom's instrumental convergence thesis argues that any sufficiently inte
 **Alignment failure analysis:**
 - **Specified objective:** Maximize engagement metrics
 - **Actual goal (human values):** Informed, satisfied users
-- **What the algorithm learned:** Controversial content â†’ more comments â†’ more engagement â†’ more ad revenue
+- **What the algorithm learned:** Controversial content → more comments → more engagement → more ad revenue
 - **Result:** Increased polarization, spread of misinformation, radicalization
 
 **Concrete harms documented:**
@@ -1045,7 +1045,7 @@ Nick Bostrom's instrumental convergence thesis argues that any sufficiently inte
 ### Real-World Analogy: Seatbelts and Speed Limits
 
 
-When cars were first invented, there were no seatbelts, no traffic lights, no speed limits, and no driver's licenses. As car fatalities rose, regulation was introduced â€” not to stop people from driving, but to make driving safe enough that society could benefit without catastrophic costs.
+When cars were first invented, there were no seatbelts, no traffic lights, no speed limits, and no driver's licenses. As car fatalities rose, regulation was introduced — not to stop people from driving, but to make driving safe enough that society could benefit without catastrophic costs.
 
 AI regulation is following the same trajectory. The technology is developing faster than the rules governing it. Regulation aims not to stop AI innovation, but to ensure that the benefits of AI are realized without unacceptable harms.
 
@@ -1062,27 +1062,27 @@ AI regulation is following the same trajectory. The technology is developing fas
 | **Canada's AIDA** | Canada | 2024 (proposed) | AI systems affecting Canadians | Impact assessment, transparency, bias mitigation | Yes |
 | **Japan's AI Guidelines** | Japan | 2024 | Ethical AI development | Human-centric AI, transparency, fairness | Yes (guidelines) |
 
-### 15.6.2 The EU AI Act â€” Detailed Breakdown
+### 15.6.2 The EU AI Act — Detailed Breakdown
 
 
 The EU AI Act is the world's first comprehensive AI regulation. It categorizes AI systems by risk level:
 
 | Risk Level | Examples | Requirements | Penalties for Non-compliance |
 |:----------:|----------|--------------|:---------------------------:|
-| **Unacceptable** (Banned) | Social scoring, real-time biometric surveillance in public, manipulative AI systems | Complete prohibition | Up to â‚¬35M or 7% of global annual turnover |
-| **High-Risk** | Medical devices, critical infrastructure, employment, credit scoring, law enforcement, education, immigration | Conformity assessment, risk management, human oversight, transparency, accuracy, cybersecurity, data governance | Up to â‚¬35M or 7% of global annual turnover |
-| **Limited-Risk** | Chatbots, AI systems that interact with humans | Transparency obligation (disclose AI interaction) | Up to â‚¬15M or 3% of global annual turnover |
+| **Unacceptable** (Banned) | Social scoring, real-time biometric surveillance in public, manipulative AI systems | Complete prohibition | Up to €35M or 7% of global annual turnover |
+| **High-Risk** | Medical devices, critical infrastructure, employment, credit scoring, law enforcement, education, immigration | Conformity assessment, risk management, human oversight, transparency, accuracy, cybersecurity, data governance | Up to €35M or 7% of global annual turnover |
+| **Limited-Risk** | Chatbots, AI systems that interact with humans | Transparency obligation (disclose AI interaction) | Up to €15M or 3% of global annual turnover |
 | **Minimal-Risk** | AI-enabled video games, spam filters | No additional obligations beyond existing law | N/A |
 
 **Key compliance steps for High-Risk AI systems:**
 
-1. **Establish a risk management system** â€” continuous, iterative throughout system lifecycle
-2. **Ensure data governance** â€” training data must be relevant, representative, and free from bias where feasible
-3. **Create technical documentation** â€” including design specifications, development methodology, and training data sources
-4. **Enable record-keeping** â€” automatic logging of events during system operation
-5. **Provide transparency** â€” clear disclosure to users that they are interacting with an AI
-6. **Ensure human oversight** â€” measures enabling humans to override or stop the system
-7. **Achieve accuracy and robustness** â€” appropriate levels of accuracy and resilience to errors
+1. **Establish a risk management system** — continuous, iterative throughout system lifecycle
+2. **Ensure data governance** — training data must be relevant, representative, and free from bias where feasible
+3. **Create technical documentation** — including design specifications, development methodology, and training data sources
+4. **Enable record-keeping** — automatic logging of events during system operation
+5. **Provide transparency** — clear disclosure to users that they are interacting with an AI
+6. **Ensure human oversight** — measures enabling humans to override or stop the system
+7. **Achieve accuracy and robustness** — appropriate levels of accuracy and resilience to errors
 
 ```python
 # EU AI Act Compliance Checklist
@@ -1108,7 +1108,7 @@ class EUAIActCompliance:
         print(f"Risk Category: {self.risk_category.upper()}\n")
         
         if self.risk_category == 'unacceptable':
-            print("STATUS: PROHIBITED â€” System cannot be deployed in the EU")
+            print("STATUS: PROHIBITED — System cannot be deployed in the EU")
             return False
         
         if self.risk_category == 'minimal':
@@ -1118,7 +1118,7 @@ class EUAIActCompliance:
         passed = 0
         failed = 0
         for check in self.checks:
-            status = "âœ…" if check['met'] else "âŒ"
+            status = "✅" if check['met'] else "❌"
             print(f"{status} {check['requirement']}")
             if check['met']:
                 passed += 1
@@ -1131,7 +1131,7 @@ class EUAIActCompliance:
             print("STATUS: COMPLIANT")
             return True
         else:
-            print("STATUS: NON-COMPLIANT â€” {failed} requirements not met")
+            print("STATUS: NON-COMPLIANT — {failed} requirements not met")
             return False
 
 # Example usage
@@ -1189,22 +1189,22 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 | Principle | IEEE EAD | EU AI Act | NIST AI RMF | OECD AI Principles | Google AI | Microsoft AI | UNESCO |
 |-----------|:--------:|:---------:|:-----------:|:------------------:|:---------:|:------------:|:------:|
-| **Transparency** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Fairness / Non-discrimination** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Accountability** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Privacy** | âœ… | âœ… | â€” | âœ… | âœ… | âœ… | âœ… |
-| **Safety / Security** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Human Oversight** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Beneficence (Doing Good)** | âœ… | â€” | â€” | â€” | â€” | â€” | âœ… |
-| **Sustainability** | âœ… | â€” | â€” | â€” | âœ… | âœ… | âœ… |
-| **Human-Centered Values** | âœ… | â€” | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Robustness** | â€” | âœ… | âœ… | â€” | âœ… | âœ… | â€” |
-| **Explainability** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Remedy / Redress** | âœ… | âœ… | â€” | â€” | â€” | â€” | âœ… |
-| **Solidarity / Inclusion** | â€” | â€” | â€” | â€” | â€” | â€” | âœ… |
-| **Lawfulness** | â€” | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Data Governance** | âœ… | âœ… | âœ… | âœ… | â€” | âœ… | â€” |
-| **Human Autonomy** | âœ… | â€” | â€” | âœ… | â€” | â€” | âœ… |
+| **Transparency** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Fairness / Non-discrimination** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Accountability** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Privacy** | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ |
+| **Safety / Security** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Human Oversight** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Beneficence (Doing Good)** | ✅ | — | — | — | — | — | ✅ |
+| **Sustainability** | ✅ | — | — | — | ✅ | ✅ | ✅ |
+| **Human-Centered Values** | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Robustness** | — | ✅ | ✅ | — | ✅ | ✅ | — |
+| **Explainability** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Remedy / Redress** | ✅ | ✅ | — | — | — | — | ✅ |
+| **Solidarity / Inclusion** | — | — | — | — | — | — | ✅ |
+| **Lawfulness** | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Data Governance** | ✅ | ✅ | ✅ | ✅ | — | ✅ | — |
+| **Human Autonomy** | ✅ | — | — | ✅ | — | — | ✅ |
 
 ---
 
@@ -1228,8 +1228,8 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 **Notable Cases:**
 - Robert Williams (2020): Wrongfully arrested after facial recognition misidentified him; spent 30 hours in jail
 - Detroit lawsuit (2023): Porcha Woodruff, 8 months pregnant, wrongfully arrested due to misidentification
-**Bans:** San Francisco, Boston, Minneapolis, Portland â€” city-level bans on government use
-**Key Lesson:** Accuracy alone is insufficient â€” disparate error rates violate civil rights; deployment in high-stakes contexts requires exceeding a minimum accuracy threshold for all subgroups
+**Bans:** San Francisco, Boston, Minneapolis, Portland — city-level bans on government use
+**Key Lesson:** Accuracy alone is insufficient — disparate error rates violate civil rights; deployment in high-stakes contexts requires exceeding a minimum accuracy threshold for all subgroups
 
 ### 15.A.3 Content Moderation at Scale
 
@@ -1238,12 +1238,12 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 **Where:** Facebook/Meta, YouTube, Twitter/X, TikTok
 **Ethical Issue:** Tension between removing harmful content and protecting free expression; inconsistent enforcement
 **Key Challenges:**
-- Scale: 500+ hours of video uploaded to YouTube every minute â€” impossible to review manually
+- Scale: 500+ hours of video uploaded to YouTube every minute — impossible to review manually
 - Context: Sarcasm, satire, cultural context are hard for AI to interpret
 - Uneven enforcement: Hate speech in one language is caught, in another it is missed
 - Transparency: Users do not know why their content was removed
 **Approaches:**
-- Tiered review: AI flags â†’ automated action for clear violations â†’ human review for borderline cases
+- Tiered review: AI flags → automated action for clear violations → human review for borderline cases
 - Appeal mechanisms: Users can contest decisions
 - Transparency reports: Regular publication of enforcement data
 
@@ -1289,7 +1289,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 - Data privacy: Vehicles collect vast amounts of video and location data
 - Job displacement: Millions of professional drivers could be displaced
 **Key Incidents:**
-- Uber ATG (2018): Fatal pedestrian accident in Tempe, Arizona â€” safety driver was watching video
+- Uber ATG (2018): Fatal pedestrian accident in Tempe, Arizona — safety driver was watching video
 - Tesla Autopilot: Multiple fatalities where drivers over-relied on system
 **Safety Framework:**
 - Crash rate comparison: Waymo reports 85% fewer crashes with airbag deployment vs human drivers
@@ -1325,7 +1325,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 **Expected discussion points:**
 - The trolley problem is a philosophical framing, but real AVs operate in continuous action spaces
 - Utilitarian approach (minimize total harm) vs deontological (never intentionally harm)
-- Autonomy of individual choice â€” should passengers consent to the vehicle's ethical framework?
+- Autonomy of individual choice — should passengers consent to the vehicle's ethical framework?
 - Regulatory approach: government-set minimum safety standards address 99.9% of scenarios; edge cases are vanishingly rare
 - Public acceptability: people are comfortable with AVs being safer on average, but less comfortable with explicit trade-off programming
 
@@ -1351,7 +1351,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 **Questions for the interview:**
 1. Would you build this system?
-2. If you do, how would you mitigate the feedback loop problem (more police in predicted areas â†’ more arrests in those areas â†’ model predicts those areas more)?
+2. If you do, how would you mitigate the feedback loop problem (more police in predicted areas → more arrests in those areas → model predicts those areas more)?
 3. What transparency obligations does the department have to the community?
 
 **Ethical analysis:**
@@ -1376,29 +1376,29 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 | **EU Digital Services Act (2024)** | EU | Content moderation at scale | Risk assessments for recommendation algorithms |
 | **Canada's AIDA (pending)** | Canada | AI and Data Act | Impact assessments for high-impact systems |
 
-### Responsible AI â€” Practical Guide
+### Responsible AI — Practical Guide
 
 
 **For engineers:**
-1. **Audit your data** before training â€” check for representation gaps, historical bias, and measurement issues
-2. **Test for fairness** as routinely as you test for accuracy â€” integrate fairness metrics into CI/CD
-3. **Document everything** â€” model cards, data sheets, system-level documentation
-4. **Implement human oversight** â€” every automated decision an individual can appeal
-5. **Monitor post-deployment** â€” models drift, populations change, fairness is not static
+1. **Audit your data** before training — check for representation gaps, historical bias, and measurement issues
+2. **Test for fairness** as routinely as you test for accuracy — integrate fairness metrics into CI/CD
+3. **Document everything** — model cards, data sheets, system-level documentation
+4. **Implement human oversight** — every automated decision an individual can appeal
+5. **Monitor post-deployment** — models drift, populations change, fairness is not static
 
 **For product managers:**
 1. **Identify ethical risks** in the product discovery phase, not after launch
-2. **Include diverse stakeholders** in design and testing â€” the people most affected should have a voice
-3. **Budget for ethics** â€” allocate engineering time for fairness auditing, interpretability, and safety testing
-4. **Prepare for regulation** â€” if you operate in the EU, assume the EU AI Act applies
-5. **Be transparent** â€” publish model cards, disclose AI interaction, share performance data
+2. **Include diverse stakeholders** in design and testing — the people most affected should have a voice
+3. **Budget for ethics** — allocate engineering time for fairness auditing, interpretability, and safety testing
+4. **Prepare for regulation** — if you operate in the EU, assume the EU AI Act applies
+5. **Be transparent** — publish model cards, disclose AI interaction, share performance data
 
 **For executives:**
-1. **Set the tone** â€” ethics starts with leadership commitment
-2. **Hire for ethics** â€” include ethicists, social scientists, and policy experts in AI teams
-3. **Create governance structures** â€” AI ethics board, review processes, escalation paths
-4. **Invest in safety research** â€” alignment is not just an academic problem
-5. **Engage with regulation** â€” do not wait for laws to be written; adopt voluntary standards (NIST AI RMF)
+1. **Set the tone** — ethics starts with leadership commitment
+2. **Hire for ethics** — include ethicists, social scientists, and policy experts in AI teams
+3. **Create governance structures** — AI ethics board, review processes, escalation paths
+4. **Invest in safety research** — alignment is not just an academic problem
+5. **Engage with regulation** — do not wait for laws to be written; adopt voluntary standards (NIST AI RMF)
 
 ### Common Interview Questions
 
@@ -1417,7 +1417,7 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 **Q2: "How do you handle the tension between model accuracy and fairness?"**
 
 **A:** The accuracy-fairness trade-off is real but often overstated:
-1. In many cases, bias comes from noisy or unrepresentative data â€” improving data quality improves both fairness and accuracy
+1. In many cases, bias comes from noisy or unrepresentative data — improving data quality improves both fairness and accuracy
 2. When a trade-off exists, it must be evaluated in context: a 1% accuracy loss in exchange for eliminating systematic discrimination is usually justified
 3. Pareto-efficient approaches: search for models that cannot be improved on both fairness and accuracy simultaneously
 4. Use multi-objective optimization: find the frontier of accuracy-fairness Pareto-optimal models
@@ -1429,17 +1429,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 **Q4: "What is the alignment problem, and why should we care?"**
 
-**A:** "The alignment problem is about ensuring AI systems do what we want them to do â€” not just what we literally ask them to do. As AI capabilities increase, the gap between literal specification and true intent becomes more dangerous. A paperclip factory optimized to 'maximize paperclip production' might eventually convert the entire planet into paperclips. This sounds absurd, but it illustrates a real concern: highly capable systems pursuing misspecified objectives can cause catastrophic harm. Current approaches include RLHF (training AI to follow human feedback), scalable oversight (debate, recursive reward modeling), and mechanistic interpretability (understanding what neural networks actually compute)."
+**A:** "The alignment problem is about ensuring AI systems do what we want them to do — not just what we literally ask them to do. As AI capabilities increase, the gap between literal specification and true intent becomes more dangerous. A paperclip factory optimized to 'maximize paperclip production' might eventually convert the entire planet into paperclips. This sounds absurd, but it illustrates a real concern: highly capable systems pursuing misspecified objectives can cause catastrophic harm. Current approaches include RLHF (training AI to follow human feedback), scalable oversight (debate, recursive reward modeling), and mechanistic interpretability (understanding what neural networks actually compute)."
 
 **Q5: "How would you design an accountability framework for an AI system?"**
 
 **A:** "A robust accountability framework requires:
-1. **Traceability** â€” every decision must be logged with input data, model version, confidence, and timestamp
-2. **Responsibility assignment** â€” a named person or team owns each AI system's outcomes
-3. **Contestability** â€” affected individuals must have a clear process to challenge decisions
-4. **Auditability** â€” external auditors must be able to review the system's decision logs and behavior
-5. **Remediation** â€” clear processes for correcting harmful decisions, including compensation if warranted
-6. **Transparency** â€” regular public reporting on system performance, limitations, and incidents"
+1. **Traceability** — every decision must be logged with input data, model version, confidence, and timestamp
+2. **Responsibility assignment** — a named person or team owns each AI system's outcomes
+3. **Contestability** — affected individuals must have a clear process to challenge decisions
+4. **Auditability** — external auditors must be able to review the system's decision logs and behavior
+5. **Remediation** — clear processes for correcting harmful decisions, including compensation if warranted
+6. **Transparency** — regular public reporting on system performance, limitations, and incidents"
 
 ---
 
@@ -1447,17 +1447,17 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 | Principle | Definition | Metric | Challenge |
 |-----------|------------|:------:|-----------|
-| **Fairness** | Absence of systematic discrimination across demographic groups | Demographic parity, equal opportunity, equalized odds | Impossibility theorem â€” multiple fairness criteria cannot all be satisfied simultaneously |
+| **Fairness** | Absence of systematic discrimination across demographic groups | Demographic parity, equal opportunity, equalized odds | Impossibility theorem — multiple fairness criteria cannot all be satisfied simultaneously |
 | **Interpretability** | Degree to which human can understand model reasoning | LIME fidelity, SHAP consistency, human evaluation | Accuracy-interpretability trade-off; explanations can be misleading |
 | **Transparency** | Openness about AI system existence, purpose, and limitations | Disclosure completeness, documentation quality | Competitive secrecy vs public right to know; complexity limits comprehension |
-| **Privacy** | Control over personal data and protection from re-identification | Îµ in differential privacy, membership inference risk | Utility-privacy trade-off; anonymization is provably insufficient |
-| **Accountability** | Clear assignment of responsibility for AI system outcomes | Audit trail completeness, escalation response time | Responsibility gap â€” autonomous systems blur causal chains |
+| **Privacy** | Control over personal data and protection from re-identification | ε in differential privacy, membership inference risk | Utility-privacy trade-off; anonymization is provably insufficient |
+| **Accountability** | Clear assignment of responsibility for AI system outcomes | Audit trail completeness, escalation response time | Responsibility gap — autonomous systems blur causal chains |
 | **Robustness** | Reliable performance under distribution shift and attacks | Adversarial accuracy, OOD detection AUC | Cat-and-mouse dynamic with attackers; unknown unknowns |
 | **Bias Mitigation** | Systematic reduction of unwanted demographic disparities | Bias metric delta (pre vs post mitigation) | Mitigation in one metric can worsen another; no universal solution |
 
 ---
 
-## Quick Reference â€” XAI Methods
+## Quick Reference — XAI Methods
 
 | Method | Type | Output | Scope | Computational Cost | Theoretical Foundation |
 |--------|:----:|--------|:-----:|:------------------:|:---------------------:|
@@ -1476,16 +1476,16 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 | Technique | ML | CV | NLP | Robotics | Healthcare | Finance | Legal |
 |-----------|:---:|:---:|:---:|:--------:|:---------:|:-------:|:-----:|
-| **Fairness Auditing** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **LIME / SHAP** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Differential Privacy** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Federated Learning** | âœ… | âœ… | âœ… | â€” | âœ… | âœ… | âœ… |
-| **Adversarial Robustness** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | â€” |
-| **AI Governance** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Model Cards** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Human-in-the-Loop** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Bias Mitigation** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **Audit Logging** | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… | âœ… |
+| **Fairness Auditing** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **LIME / SHAP** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Differential Privacy** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Federated Learning** | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ |
+| **Adversarial Robustness** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| **AI Governance** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Model Cards** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Human-in-the-Loop** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Bias Mitigation** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Audit Logging** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ---
 
@@ -1523,13 +1523,13 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 
 <details><summary>Answer&lt;/summary&gt;B) Even when protected attributes are not used as features, correlated variables (zip code, criminal history, socioeconomic status) can act as proxies, reproducing discriminatory outcomes.</details>
 
-**Q5:** What does the parameter Îµ (epsilon) represent in differential privacy?
+**Q5:** What does the parameter ε (epsilon) represent in differential privacy?
 - A) The learning rate of the model
-- B) The privacy budget â€” lower Îµ means stronger privacy guarantees
+- B) The privacy budget — lower ε means stronger privacy guarantees
 - C) The error tolerance of the algorithm
 - D) The number of training epochs
 
-<details><summary>Answer&lt;/summary&gt;B) Îµ controls the privacy-accuracy trade-off. Lower Îµ values provide stronger privacy by adding more noise to the output, but reduce accuracy. Higher Îµ increases accuracy but weakens privacy guarantees.</details>
+<details><summary>Answer&lt;/summary&gt;B) ε controls the privacy-accuracy trade-off. Lower ε values provide stronger privacy by adding more noise to the output, but reduce accuracy. Higher ε increases accuracy but weakens privacy guarantees.</details>
 
 **Q6:** In the context of AI alignment, what is "reward hacking"?
 - A) Exploiting bugs in the training framework
@@ -1578,15 +1578,15 @@ The NIST AI RMF provides a voluntary framework organized around four functions:
 AI ethics encompasses seven interconnected pillars: fairness, interpretability, transparency, privacy, accountability, safety/alignment, and regulation. These considerations are not secondary to technical development but constitute essential design requirements for responsible AI systems.
 
 **Key takeaways:**
-1. **Bias is everywhere** â€” in data, labels, measurements, and deployment contexts. Bias mitigation is not a one-time fix but a continuous process throughout the AI lifecycle.
-2. **Interpretability is a prerequisite for trust** â€” LIME, SHAP, and other XAI methods are essential tools, but they have limitations and can themselves be misleading.
-3. **Privacy requires formal guarantees** â€” anonymization is not sufficient; differential privacy, federated learning, and other privacy-preserving techniques provide mathematical assurances.
-4. **Accountability closes the responsibility gap** â€” audit trails, contestability mechanisms, and clear responsibility assignment are necessary for responsible AI deployment.
-5. **AI alignment is the defining challenge of advanced AI** â€” ensuring that powerful AI systems pursue human-compatible objectives is a technical and philosophical problem without a complete solution.
-6. **Regulation is accelerating** â€” the EU AI Act, GDPR, and emerging frameworks worldwide will define the operational requirements for AI systems in the coming years.
-7. **Ethical AI is better engineering** â€” systems designed with fairness, transparency, and accountability in mind are more robust, more trusted, and more sustainable.
+1. **Bias is everywhere** — in data, labels, measurements, and deployment contexts. Bias mitigation is not a one-time fix but a continuous process throughout the AI lifecycle.
+2. **Interpretability is a prerequisite for trust** — LIME, SHAP, and other XAI methods are essential tools, but they have limitations and can themselves be misleading.
+3. **Privacy requires formal guarantees** — anonymization is not sufficient; differential privacy, federated learning, and other privacy-preserving techniques provide mathematical assurances.
+4. **Accountability closes the responsibility gap** — audit trails, contestability mechanisms, and clear responsibility assignment are necessary for responsible AI deployment.
+5. **AI alignment is the defining challenge of advanced AI** — ensuring that powerful AI systems pursue human-compatible objectives is a technical and philosophical problem without a complete solution.
+6. **Regulation is accelerating** — the EU AI Act, GDPR, and emerging frameworks worldwide will define the operational requirements for AI systems in the coming years.
+7. **Ethical AI is better engineering** — systems designed with fairness, transparency, and accountability in mind are more robust, more trusted, and more sustainable.
 
-The field of AI ethics is not about slowing down progress â€” it is about building an AI-powered future that is equitable, safe, and worthy of human trust. Every practitioner has a responsibility to integrate these principles into their daily work.
+The field of AI ethics is not about slowing down progress — it is about building an AI-powered future that is equitable, safe, and worthy of human trust. Every practitioner has a responsibility to integrate these principles into their daily work.
 
 ---
 
@@ -1606,7 +1606,7 @@ The field of AI ethics is not about slowing down progress â€” it is about b
 
 7. **Local Interpretability:** Apply LIME to explain three predictions from a black-box classifier (random forest or XGBoost). Evaluate the stability of the explanations by running LIME 10 times on the same instance and measuring the variance in feature ranks.
 
-8. **Privacy Implementation:** Implement a differentially private version of stochastic gradient descent for logistic regression. Evaluate the trade-off between privacy budget Îµ and model accuracy on a binary classification task. Use Îµ values of 0.1, 0.5, 1.0, 5.0, and 10.0.
+8. **Privacy Implementation:** Implement a differentially private version of stochastic gradient descent for logistic regression. Evaluate the trade-off between privacy budget ε and model accuracy on a binary classification task. Use ε values of 0.1, 0.5, 1.0, 5.0, and 10.0.
 
 9. **Regulatory Compliance:** Given a hypothetical AI system (e.g., automated resume screening for a European company), complete the EU AI Act compliance assessment checklist. For each requirement, describe what actions would be needed to achieve compliance.
 
@@ -1629,6 +1629,6 @@ The field of AI ethics is not about slowing down progress â€” it is about b
 
 12. **The Trade-Off Decision:** You are building an AI system for hospital triage during a pandemic. The model is 95% accurate overall but has a 10% lower true positive rate for elderly patients. Fixing this would reduce overall accuracy to 91%. Analyze the ethical trade-offs and propose a decision. What stakeholders should be consulted? What is your recommendation?
 
-13. **The Transparency Boundary:** A company's hiring AI achieves excellent diversity outcomes (hires more women and minorities than before). However, the model is proprietary â€” the company refuses to disclose how it works, citing competitive advantage. Analyze the ethical positions for and against transparency in this case. Is the good outcome sufficient justification for opacity? Why or why not?
+13. **The Transparency Boundary:** A company's hiring AI achieves excellent diversity outcomes (hires more women and minorities than before). However, the model is proprietary — the company refuses to disclose how it works, citing competitive advantage. Analyze the ethical positions for and against transparency in this case. Is the good outcome sufficient justification for opacity? Why or why not?
 
 14. **The Deception Problem:** You discover that a colleague's AI system uses demographic data including race and gender as features, despite company policy against this. The model achieves high accuracy and appears to reduce racial disparities compared to previous systems. The colleague argues the ends justify the means. What do you do?

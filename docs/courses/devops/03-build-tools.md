@@ -1,4 +1,4 @@
-﻿# Chapter 3: Build Tools
+# Chapter 3: Build Tools
 
 > **Prev:** [Version Control](./03-version-control.md)
 > **Next:** [CI/CD](./04-cicd.md)
@@ -253,15 +253,15 @@ module.exports = {
 my-project/
 +-- package.json          # Root package with workspaces
 +-- packages/
-Â¦   +-- core/
-Â¦   Â¦   +-- package.json  # Depends on shared
-Â¦   Â¦   +-- src/
-Â¦   +-- api/
-Â¦   Â¦   +-- package.json  # Depends on core
-Â¦   Â¦   +-- src/
-Â¦   +-- web/
-Â¦       +-- package.json  # Depends on core
-Â¦       +-- src/
+¦   +-- core/
+¦   ¦   +-- package.json  # Depends on shared
+¦   ¦   +-- src/
+¦   +-- api/
+¦   ¦   +-- package.json  # Depends on core
+¦   ¦   +-- src/
+¦   +-- web/
+¦       +-- package.json  # Depends on core
+¦       +-- src/
 +-- package-lock.json     # Single lock file
 ```
 
@@ -824,7 +824,7 @@ class BuildAnalyzer {
       `| Artifact | Size | Budget | Status |\n` +
       `|----------|------|--------|--------|\n` +
       analysis.records.map(r =>
-        `| ${r.artifact.name} | ${this.formatBytes(r.artifact.sizeBytes)} | ${r.budget ? this.formatBytes(r.budget.maxSizeBytes) : 'â€”'} | ${r.status === 'ok' ? '?' : r.status === 'warning' ? '??' : '?'} |`
+        `| ${r.artifact.name} | ${this.formatBytes(r.artifact.sizeBytes)} | ${r.budget ? this.formatBytes(r.budget.maxSizeBytes) : '—'} | ${r.status === 'ok' ? '?' : r.status === 'warning' ? '??' : '?'} |`
       ).join('\n') + '\n\n' +
       `**Total:** ${this.formatBytes(analysis.totalSizeBytes)} / ${this.formatBytes(analysis.totalBudgetBytes)} (${analysis.percentOverBudget.toFixed(1)}%)` +
       (analysis.recommendations.length > 0 ? '\n\n**Recommendations:**\n' + analysis.recommendations.map(r => `- ${r}`).join('\n') : '');
@@ -924,7 +924,7 @@ class CacheOptimizer {
       recommendations: [
         `Cache node_modules with lockfile hash key (saves ~${Math.round(savings)}% install time)`,
         candidates.filter(c => c.estimatedSizeMB > 100).length > 0
-          ? 'Large caches detected â€” consider splitting into per-package caches'
+          ? 'Large caches detected — consider splitting into per-package caches'
           : 'Cache sizes within reasonable range',
       ],
       tierOrder: ['lockfile', 'node_modules', 'dist'],
@@ -974,7 +974,7 @@ plan.recommendations.forEach(r => console.log(`- ${r}`));
 
 <details><summary>Question 3: What does tree shaking do?</summary>**A)** Organize code into trees<br>**B)** Remove unused exports from the bundle<br>**C)** Shake the build tree for errors<br>**D)** Split code into chunks<br><br>**Answer: B)** Remove unused exports from the bundle&lt;/details&gt;
 
-<details><summary>Question 4: In CI pipelines, should you use `npm install` or `npm ci`?</summary>**A)** `npm install` â€” it's faster<br>**B)** `npm ci` â€” it respects the lock file and is deterministic<br>**C)** Both work the same way<br>**D)** Neither â€” use `yarn` instead<br><br>**Answer: B)** `npm ci` â€” it respects the lock file and is deterministic&lt;/details&gt;
+<details><summary>Question 4: In CI pipelines, should you use `npm install` or `npm ci`?</summary>**A)** `npm install` — it's faster<br>**B)** `npm ci` — it respects the lock file and is deterministic<br>**C)** Both work the same way<br>**D)** Neither — use `yarn` instead<br><br>**Answer: B)** `npm ci` — it respects the lock file and is deterministic&lt;/details&gt;
 
 <details><summary>Question 5: What does the caret `^` in `"express": "^4.18.0"` mean?</summary>**A)** Compatible with version 4.x<br>**B)** Compatible with only 4.18.x<br>**C)** Compatible with 4.18.0 exactly<br>**D)** Compatible with any version<br><br>**Answer: A)** Compatible with version 4.x&lt;/details&gt;
 

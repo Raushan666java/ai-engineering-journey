@@ -1,4 +1,4 @@
-﻿# Resilience & Circuit Breakers (Resilience4j)
+# Resilience & Circuit Breakers (Resilience4j)
 > **Previous:** [API Gateway](40-gateway.md) | **Next:** [Configuration and Cloud Config](42-config.md)
 
 ## Learning Objectives
@@ -39,9 +39,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Circuit Breaker â†’ three states: CLOSED, OPEN, HALF_OPEN | Sliding window (count- or time-based) tracks failure rate |
-| Retry â†’ automatic reattempt with backoff | Exponential backoff and exception-based retry triggers |
-| Rate Limiter â†’ token bucket algorithm | `limitForPeriod` and `limitRefreshPeriod` control throughput |
+| Circuit Breaker → three states: CLOSED, OPEN, HALF_OPEN | Sliding window (count- or time-based) tracks failure rate |
+| Retry → automatic reattempt with backoff | Exponential backoff and exception-based retry triggers |
+| Rate Limiter → token bucket algorithm | `limitForPeriod` and `limitRefreshPeriod` control throughput |
 
 ---
 ## Chapter Roadmap
@@ -65,7 +65,7 @@ flowchart TD
 
 | Concept | Description | Key Difference |
 |---------|-------------|----------------|
-| Circuit Breaker | Prevents repeated failures | State machine: CLOSED â†’ OPEN â†’ HALF_OPEN â†’ CLOSED |
+| Circuit Breaker | Prevents repeated failures | State machine: CLOSED → OPEN → HALF_OPEN → CLOSED |
 | Retry | Repeats failed operations | With exponential backoff, maxAttempts |
 | Rate Limiter | Throttles request rate | Token bucket: `limitForPeriod`, `limitRefreshPeriod` |
 | Bulkhead | Limits concurrent calls | Semaphore vs ThreadPool isolation |
@@ -135,10 +135,10 @@ Bulkhead limits the number of concurrent calls to a service. Two implementations
 - **ThreadPoolBulkhead**: Uses a thread pool; isolates calls in separate threads
 
 > [!TIP]
-> Always define a `fallbackMethod` for `@CircuitBreaker` â†’ it provides a degraded response when the circuit is open.
+> Always define a `fallbackMethod` for `@CircuitBreaker` → it provides a degraded response when the circuit is open.
 
 > [!WARNING]
-> Do not combine `@Retry` with `@CircuitBreaker` carelessly â†’ configure retries before circuit breaker so failed retries trip the breaker.
+> Do not combine `@Retry` with `@CircuitBreaker` carelessly → configure retries before circuit breaker so failed retries trip the breaker.
 
 > [!NOTE]
 > Use `SemaphoreBulkhead` for in-process isolation (same thread pool) and `ThreadPoolBulkhead` to separate execution contexts entirely.

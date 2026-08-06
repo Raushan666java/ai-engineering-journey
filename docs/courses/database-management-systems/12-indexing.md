@@ -1,4 +1,4 @@
-﻿# Chapter 12: Indexing
+# Chapter 12: Indexing
 
 > **Prev:** [Chapter 11: Recovery System](11-recovery.md) | **Next:** [Chapter 13: Query Processing](13-query-processing.md)
 
@@ -1981,7 +1981,7 @@ The code implements a minimal B+ Tree index with search, insert, and range scan 
 
 ```typescript
 // ============================================================
-// B+ Tree Index Simulator Ã¢â‚¬â€ TypeScript
+// B+ Tree Index Simulator — TypeScript
 // ============================================================
 
 class BPlusTreeNode {
@@ -2022,7 +2022,7 @@ class BPlusTree {
   insert(key: number, value: number): void {
     const result = this.insertRecursive(this.root, key, value);
     if (result) {
-      // Root was split Ã¢â‚¬â€ create new root
+      // Root was split — create new root
       const newRoot = new BPlusTreeNode(this.order);
       newRoot.keys = [result.key];
       newRoot.children = [this.root, result.right];
@@ -2043,12 +2043,12 @@ class BPlusTree {
       return null;
     }
 
-    // Internal node Ã¢â‚¬â€ find child
+    // Internal node — find child
     let i = 0;
     while (i < node.keys.length && key >= node.keys[i]) i++;
     const result = this.insertRecursive(node.children[i], key, value);
     if (result) {
-      // Child was split Ã¢â‚¬â€ insert separator key
+      // Child was split — insert separator key
       const idx = node.keys.findIndex(k => k > result.key);
       const pos = idx >= 0 ? idx : node.keys.length;
       node.keys.splice(pos, 0, result.key);

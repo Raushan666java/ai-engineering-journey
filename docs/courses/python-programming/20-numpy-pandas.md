@@ -1,4 +1,4 @@
-﻿# Chapter 20: NumPy and pandas
+# Chapter 20: NumPy and pandas
 
 
 > **Previous:** [APIs and Testing](./19-apis-testing.md) | **Next:** [Concurrency, Multiprocessing & Parallelism](./21-concurrency-multiprocessing.md)
@@ -39,7 +39,7 @@ By the end of this chapter, students will be able to:
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-|20.1 NumPy Arrays||NumPy arrays enable vectorised computation â€” operations apply to all elements without explicit loops.|
+|20.1 NumPy Arrays||NumPy arrays enable vectorised computation — operations apply to all elements without explicit loops.|
 |20.2 Indexing and Slicing||Broadcasting performs operations on arrays of different shapes by stretching size-1 dimensions.|
 |20.3 Vectorised Operations||Boolean indexing and fancy indexing select rows/columns based on conditions or index arrays.|
 |20.4 Broadcasting||pandas Series and DataFrame provide labelled, columnar data with `groupby`, `merge`, and `pivot`.|
@@ -86,7 +86,7 @@ flowchart LR
 ```
 ## 20.1 NumPy Arrays
 
-> **One-Sentence Takeaway:** NumPy arrays enable vectorised computation â€” operations apply to all elements without explicit loops.
+> **One-Sentence Takeaway:** NumPy arrays enable vectorised computation — operations apply to all elements without explicit loops.
 
 
 ### 20.1.1 Creating Arrays
@@ -177,7 +177,7 @@ print(arr[indices])   # [10 30 50]
 ## 20.3 Vectorised Operations
 
 > **One-Sentence Takeaway:** Boolean indexing and fancy indexing select rows/columns based on conditions or index arrays.
-> **Remember:** Vectorised NumPy operations are 10-100x faster than Python for-loops â€” avoid iterating when possible.
+> **Remember:** Vectorised NumPy operations are 10-100x faster than Python for-loops — avoid iterating when possible.
 
 
 
@@ -223,7 +223,7 @@ Broadcasting performs operations on arrays of different shapes:
 ```python
 # Scalar broadcasting
 arr = np.array([1, 2, 3])
-print(arr * 10)  # [10 20 30] â†’ scalar stretched to match shape
+print(arr * 10)  # [10 20 30] → scalar stretched to match shape
 
 # Vector broadcasting
 matrix = np.array([[1, 2, 3], [4, 5, 6]])
@@ -318,7 +318,7 @@ eigvals, eigvecs = np.linalg.eig(a)
 A = np.array([[3, 1], [1, 2]])
 b = np.array([9, 8])
 x = np.linalg.solve(A, b)
-print(x)  # [2. 3.] â†’ solution to 3x + y = 9, x + 2y = 8
+print(x)  # [2. 3.] → solution to 3x + y = 9, x + 2y = 8
 
 # Norms
 vector = np.array([3, 4])
@@ -767,7 +767,7 @@ print(df.groupby("Age").mean())
 
 ```typescript
 // Chapter 20: TypeScript Numerical Computing Equivalents
-// Python: numpy.array() â†’ TypeScript: Typed arrays
+// Python: numpy.array() → TypeScript: Typed arrays
 const arr: Float64Array = new Float64Array([1, 2, 3, 4, 5]);
 
 // Element-wise operations (Python: arr * 2)
@@ -782,7 +782,7 @@ const std = Math.sqrt(
 );
 console.log(`Mean: ${mean}, Std: ${std}`);
 
-// Python: pandas DataFrame â†’ TypeScript: array of objects
+// Python: pandas DataFrame → TypeScript: array of objects
 interface Row {
   name: string;
   age: number;
@@ -795,19 +795,19 @@ const df: Row[] = [
   { name: "Charlie", age: 35, salary: 90000 },
 ];
 
-// Python: df.groupby().mean() â†’ TypeScript: reduce
+// Python: df.groupby().mean() → TypeScript: reduce
 const avgSalary = df.reduce((acc, row) => acc + row.salary, 0) / df.length;
 console.log(`Average salary: ${avgSalary}`);
 
-// Python: df[df.age > 30] â†’ TypeScript: filter
+// Python: df[df.age > 30] → TypeScript: filter
 const filtered = df.filter((row) => row.age > 30);
 console.log(filtered);  // [{ name: "Charlie", age: 35, salary: 90000 }]
 
-// Python: df.sort_values(by="salary") â†’ TypeScript: sort
+// Python: df.sort_values(by="salary") → TypeScript: sort
 df.sort((a, b) => b.salary - a.salary);
 console.log(df);  // Charlie, Alice, Bob (by salary descending)
 
-// Python: np.dot() / @ â†’ TypeScript: manual
+// Python: np.dot() / @ → TypeScript: manual
 function dot(a: number[], b: number[]): number {
   return a.reduce((sum, val, i) => sum + val * b[i], 0);
 }
@@ -818,7 +818,7 @@ console.log(dot([1, 2, 3], [4, 5, 6]));  // 32
 
 
 ```typescript
-// Python: pandas groupby + agg â†’ TypeScript: reduce with grouping
+// Python: pandas groupby + agg → TypeScript: reduce with grouping
 interface Sale {
   product: string; region: string; amount: number;
 }
@@ -836,13 +836,13 @@ const byRegion: Record<string, number> = sales.reduce((acc, s) => {
 }, {} as Record<string, number>);
 console.log(byRegion);  // { US: 350, EU: 350 }
 
-// Python: df.sort_values() â†’ TypeScript: sort
+// Python: df.sort_values() → TypeScript: sort
 const sorted = [...sales].sort((a, b) => b.amount - a.amount);
 
-// Python: df.head(n) â†’ TypeScript: slice
+// Python: df.head(n) → TypeScript: slice
 const top2 = sorted.slice(0, 2);
 
-// Python: rolling window â†’ TypeScript: map with window
+// Python: rolling window → TypeScript: map with window
 function rollingAverage(data: number[], window: number): number[] {
   const result: number[] = [];
   for (let i = window - 1; i < data.length; i++) {
@@ -854,11 +854,11 @@ function rollingAverage(data: number[], window: number): number[] {
 const temps = [20, 22, 21, 25, 28, 26, 23];
 console.log(rollingAverage(temps, 3));  // [21, 22.67, 24.67, 26.33, 25.67]
 
-// Python: np.where â†’ TypeScript: ternary map
+// Python: np.where → TypeScript: ternary map
 const threshold = 25;
 const flags = temps.map((t) => (t > threshold ? "Hot" : "Normal"));
 
-// Python: pd.merge â†’ TypeScript: Map join
+// Python: pd.merge → TypeScript: Map join
 type Employee = { empId: number; name: string; deptId: number };
 type Dept = { deptId: number; name: string };
 const deptMap = new Map(depts.map((d) => [d.deptId, d.name]));

@@ -1,4 +1,4 @@
-﻿# Chapter 1: Marketing Concepts
+# Chapter 1: Marketing Concepts
 
 ## Learning Objectives
 
@@ -45,12 +45,12 @@ Marketing is not merely selling or advertising. It is the process of identifying
 
 **Core Marketing Concepts:**
 
-- **Needs** â€” Basic human requirements (food, shelter, belonging)
-- **Wants** â€” Needs shaped by culture and personality (a burger vs fried rice for hunger)
-- **Demands** â€” Wants backed by purchasing power
-- **Exchange** â€” The act of obtaining a desired object by offering something in return
-- **Transaction** â€” A trade of values between two parties
-- **Value** â€” The ratio of perceived benefits to price paid
+- **Needs** — Basic human requirements (food, shelter, belonging)
+- **Wants** — Needs shaped by culture and personality (a burger vs fried rice for hunger)
+- **Demands** — Wants backed by purchasing power
+- **Exchange** — The act of obtaining a desired object by offering something in return
+- **Transaction** — A trade of values between two parties
+- **Value** — The ratio of perceived benefits to price paid
 
 ### 1.2 The Marketing Mix
 
@@ -76,7 +76,7 @@ graph TB
 
 #### Extended 7Ps for Services
 
-Services are intangible, heterogeneous, perishable, and inseparable â€” requiring three additional Ps:
+Services are intangible, heterogeneous, perishable, and inseparable — requiring three additional Ps:
 
 | P | Meaning | Example in Services |
 |---|---------|---------------------|
@@ -188,7 +188,7 @@ flowchart TD
 | **Psychographic** | Lifestyle, personality, values, social class | Luxury cars for status-conscious buyers |
 | **Behavioural** | Usage rate, brand loyalty, benefits sought, occasion | Airlines: frequent flyers get loyalty programs |
 
-**Effective segmentation criteria:** Measurable, Accessible, Substantial, Differentiable, Actionable (MØ¢S-DA).
+**Effective segmentation criteria:** Measurable, Accessible, Substantial, Differentiable, Actionable (MآS-DA).
 
 #### Targeting Strategies
 
@@ -204,9 +204,9 @@ flowchart TD
 Positioning is designing the company's offering and image to occupy a distinctive place in the target market's mind.
 
 **Positioning tools:**
-- **Perceptual maps** â€” Visual representation of consumer perceptions of brands
-- **USP (Unique Selling Proposition)** â€” A distinct benefit that sets the product apart
-- **Brand mantra** â€” A short internal guiding statement
+- **Perceptual maps** — Visual representation of consumer perceptions of brands
+- **USP (Unique Selling Proposition)** — A distinct benefit that sets the product apart
+- **Brand mantra** — A short internal guiding statement
 
 **Positioning errors:** Under-positioning (fuzzy image), over-positioning (too narrow), confused positioning (multiple messages), doubtful positioning (claims not believable).
 
@@ -241,20 +241,20 @@ graph LR
 
 Holistic marketing recognises that everything matters in marketing and that a broad, integrated perspective is necessary. It has four components:
 
-1. **Relationship marketing** â€” Building long-term relationships with customers, partners, channel members
-2. **Integrated marketing** â€” All marketing activities (promotion, product, price, place) work together
-3. **Internal marketing** â€” Hiring, training, and motivating capable employees who serve customers well
-4. **Socially responsible marketing** â€” Ethical, environmental, legal, and social context
+1. **Relationship marketing** — Building long-term relationships with customers, partners, channel members
+2. **Integrated marketing** — All marketing activities (promotion, product, price, place) work together
+3. **Internal marketing** — Hiring, training, and motivating capable employees who serve customers well
+4. **Socially responsible marketing** — Ethical, environmental, legal, and social context
 
 ### 1.6 Customer Relationship Management (CRM)
 
 CRM is the process of managing detailed information about individual customers and carefully managing customer touchpoints to maximise customer loyalty.
 
 **Key CRM metrics:**
-- **Customer Lifetime Value (CLV)** â€” Total net profit a company earns from a customer over the entire relationship
-- **Customer Acquisition Cost (CAC)** â€” Total cost of acquiring a new customer
-- **Customer Retention Rate** â€” Percentage of customers retained over a period
-- **Net Promoter Score (NPS)** â€” Willingness to recommend the brand
+- **Customer Lifetime Value (CLV)** — Total net profit a company earns from a customer over the entire relationship
+- **Customer Acquisition Cost (CAC)** — Total cost of acquiring a new customer
+- **Customer Retention Rate** — Percentage of customers retained over a period
+- **Net Promoter Score (NPS)** — Willingness to recommend the brand
 
 ### 1.7 Consumer Buying Behaviour
 
@@ -284,11 +284,11 @@ flowchart TD
 | **Habitual** | Low | Few differences | Salt, sugar, milk |
 
 **Buying roles (for high-involvement purchases):**
-- **Initiator** â€” First suggests buying the product
-- **Influencer** â€” Whose opinion affects the decision
-- **Decider** â€” Makes the final decision
-- **Buyer** â€” Performs the purchase transaction
-- **User** â€” Consumes or uses the product
+- **Initiator** — First suggests buying the product
+- **Influencer** — Whose opinion affects the decision
+- **Decider** — Makes the final decision
+- **Buyer** — Performs the purchase transaction
+- **User** — Consumes or uses the product
 
 ### 1.8 Marketing Research Process
 
@@ -313,8 +313,8 @@ graph LR
 | **Causal** | Test cause-and-effect | Experiments, test markets | Does X cause Y? |
 
 **Data types:**
-- **Primary data** â€” Collected first-hand (surveys, interviews, observations)
-- **Secondary data** â€” Already exists (government reports, industry studies, internal sales data)
+- **Primary data** — Collected first-hand (surveys, interviews, observations)
+- **Secondary data** — Already exists (government reports, industry studies, internal sales data)
 
 ### 1.9 Demand States in Marketing
 
@@ -372,7 +372,7 @@ mindmap
 | **Price** | Cost + margin based | Value-based, perceived worth |
 | **Place** | Physical distribution channels | Branch, app, digital access points |
 | **Promotion** | Mass advertising, sales promotion | Relationship marketing, word-of-mouth |
-| **Added elements** | â€” | People, Process, Physical Evidence |
+| **Added elements** | — | People, Process, Physical Evidence |
 | **Examples** | Soap, car, phone | Bank, hotel, airline, insurance |
 | **Key challenge** | Product quality, pricing | Service consistency, customer experience |
 
@@ -380,12 +380,12 @@ mindmap
 
 | Dimension | Push Strategy | Pull Strategy |
 |-----------|--------------|---------------|
-| **Direction** | Manufacturer pushes to intermediaries â†’ consumer | Consumer pulls from intermediaries â†’ manufacturer |
+| **Direction** | Manufacturer pushes to intermediaries → consumer | Consumer pulls from intermediaries → manufacturer |
 | **Focus** | Trade promotion, personal selling | Advertising, brand building |
-| **Channel** | Distributor â†’ Retailer â†’ Consumer | Consumer demand â†’ Retailer â†’ Distributor |
+| **Channel** | Distributor → Retailer → Consumer | Consumer demand → Retailer → Distributor |
 | **Best for** | Low brand loyalty, impulse products | Strong brand, differentiated products |
 | **Cost** | Lower marketing cost, higher trade spend | Higher advertising cost |
-| **Example** | FMCG products pushed to kirana stores | Apple â€” consumers demand iPhone from stores |
+| **Example** | FMCG products pushed to kirana stores | Apple — consumers demand iPhone from stores |
 | **Control** | Manufacturer controls channel push | Consumer controls demand pull |
 
 #### Traditional vs Digital Marketing
@@ -394,10 +394,10 @@ mindmap
 |-----------|---------------------|-------------------|
 | **Medium** | TV, print, radio, billboard, hoardings | Website, social media, email, search, mobile apps |
 | **Targeting** | Mass / demographic segments only | Hyper-targeted (behaviour, interest, location) |
-| **Cost** | High (TV ad: â‚¹5â€“50 lakh per 10 sec) | Low to moderate (â‚¹5â€“50 per click) |
+| **Cost** | High (TV ad: ₹5–50 lakh per 10 sec) | Low to moderate (₹5–50 per click) |
 | **Measurability** | Difficult (reach estimation) | Precise (clicks, impressions, conversions) |
 | **Interaction** | One-way communication | Two-way, interactive |
-| **Speed** | Slow to create and launch | Fast â€” launch in hours |
+| **Speed** | Slow to create and launch | Fast — launch in hours |
 | **Personalisation** | Limited to segment-level | Individual-level personalisation |
 | **ROI tracking** | Difficult, indirect | Direct attribution |
 | **Examples** | Times of India ad, Star Plus TV ad | Google Ads, Instagram campaign, email |
@@ -586,7 +586,7 @@ console.log(classifyPestle("inflation")); // ["Economic"]
 
 <details>
 <summary>Answer</summary>
-**b) Economic.** Inflation, interest rates, employment levels, and income distribution are all part of the economic environment â€” a key macroenvironmental force.
+**b) Economic.** Inflation, interest rates, employment levels, and income distribution are all part of the economic environment — a key macroenvironmental force.
 </details>
 
 ---
@@ -595,14 +595,14 @@ console.log(classifyPestle("inflation")); // ["Economic"]
 
 **Q7.** The correct sequence of the STP process is:
 
-a) Targeting â†’ Segmentation â†’ Positioning
-b) Positioning â†’ Segmentation â†’ Targeting
-c) Segmentation â†’ Targeting â†’ Positioning
-d) Segmentation â†’ Positioning â†’ Targeting
+a) Targeting → Segmentation → Positioning
+b) Positioning → Segmentation → Targeting
+c) Segmentation → Targeting → Positioning
+d) Segmentation → Positioning → Targeting
 
 <details>
 <summary>Answer</summary>
-**c) Segmentation â†’ Targeting â†’ Positioning.** STP stands for Segmentation (divide market), Targeting (select segment), and Positioning (establish image). This is the logical order.
+**c) Segmentation → Targeting → Positioning.** STP stands for Segmentation (divide market), Targeting (select segment), and Positioning (establish image). This is the logical order.
 </details>
 
 ---
@@ -669,7 +669,7 @@ d) Substantial
 
 <details>
 <summary>Answer</summary>
-**c) Affordable.** The five criteria for effective segmentation are Measurable, Accessible, Substantial, Differentiable, and Actionable (MØ¢S-DA). "Affordable" is not among them.
+**c) Affordable.** The five criteria for effective segmentation are Measurable, Accessible, Substantial, Differentiable, and Actionable (MآS-DA). "Affordable" is not among them.
 </details>
 
 ---
@@ -833,7 +833,7 @@ d) Market share growth
 
 <details>
 <summary>Answer</summary>
-**b) Customer willingness to recommend the brand.** NPS is calculated based on the question "How likely are you to recommend our company to a friend or colleague?" on a 0â€“10 scale. Promoters (9â€“10) minus Detractors (0â€“6) gives the NPS.
+**b) Customer willingness to recommend the brand.** NPS is calculated based on the question "How likely are you to recommend our company to a friend or colleague?" on a 0–10 scale. Promoters (9–10) minus Detractors (0–6) gives the NPS.
 </details>
 
 ---
@@ -852,7 +852,7 @@ d) Guerrilla marketing
 
 ---
 
-### Example 9: Consumer Buying Behaviour (Q21â€“Q24)
+### Example 9: Consumer Buying Behaviour (Q21–Q24)
 
 **Q21.** A customer buying a house for the first time is likely to exhibit which type of buying behaviour?
 
@@ -863,7 +863,7 @@ d) Dissonance-reducing
 
 <details>
 <summary>Answer</summary>
-**c) Complex buying behaviour.** Buying a house is high-involvement with significant brand differences. The customer will go through extensive information search and evaluation â€” characteristic of complex buying behaviour.
+**c) Complex buying behaviour.** Buying a house is high-involvement with significant brand differences. The customer will go through extensive information search and evaluation — characteristic of complex buying behaviour.
 </details>
 
 ---
@@ -877,7 +877,7 @@ d) Post-purchase behaviour
 
 <details>
 <summary>Answer</summary>
-**c) Purchase decision.** The correct sequence is: Need Recognition â†’ Information Search â†’ Evaluation of Alternatives â†’ Purchase Decision â†’ Post-Purchase Behaviour. Post-purchase comes after purchase.
+**c) Purchase decision.** The correct sequence is: Need Recognition → Information Search → Evaluation of Alternatives → Purchase Decision → Post-Purchase Behaviour. Post-purchase comes after purchase.
 </details>
 
 ---
@@ -905,12 +905,12 @@ d) Low involvement, few brand differences
 
 <details>
 <summary>Answer</summary>
-**b) Low involvement, significant brand differences.** Variety-seeking occurs when consumers buy out of boredom or curiosity â€” low involvement but brands differ significantly (e.g., trying a new flavour of chips).
+**b) Low involvement, significant brand differences.** Variety-seeking occurs when consumers buy out of boredom or curiosity — low involvement but brands differ significantly (e.g., trying a new flavour of chips).
 </details>
 
 ---
 
-### Example 10: Marketing Research (Q25â€“Q27)
+### Example 10: Marketing Research (Q25–Q27)
 
 **Q25.** Focus groups and depth interviews are examples of which type of marketing research?
 
@@ -940,7 +940,7 @@ d) Is never useful for marketing decisions
 
 ---
 
-**Q27.** Which type of research would a company use to test whether a â‚¹10 price reduction increases sales by 15%?
+**Q27.** Which type of research would a company use to test whether a ₹10 price reduction increases sales by 15%?
 
 a) Exploratory
 b) Descriptive
@@ -954,7 +954,7 @@ d) Observational
 
 ---
 
-### Example 11: Demand States (Q28â€“Q30)
+### Example 11: Demand States (Q28–Q30)
 
 **Q28.** A vaccine manufacturer faces a situation where people avoid vaccination despite health risks. This demand state is called:
 
@@ -965,7 +965,7 @@ d) Declining demand
 
 <details>
 <summary>Answer</summary>
-**b) Negative demand.** Negative demand exists when consumers actively dislike or avoid a product. The marketer's task is conversion marketing â€” analysing why people resist and creating programmes to change beliefs.
+**b) Negative demand.** Negative demand exists when consumers actively dislike or avoid a product. The marketer's task is conversion marketing — analysing why people resist and creating programmes to change beliefs.
 </details>
 
 ---
@@ -1013,11 +1013,11 @@ d) Remarketing
 
 ## Practical Takeaways
 
-1. **For exams**: Remember STP order (Segmentation â†’ Targeting â†’ Positioning) and 4Ps â†’ 7Ps additions
+1. **For exams**: Remember STP order (Segmentation → Targeting → Positioning) and 4Ps → 7Ps additions
 2. **For interviews**: Be ready to give real-world examples for each marketing philosophy
 3. **For business strategy**: Always start with STP analysis before deciding the marketing mix
-4. **For service businesses**: Apply the 7Ps framework â€” People, Process, and Physical Evidence are often where service businesses fail
-5. **For CRM**: Focus on CLV over short-term profits â€” retaining a customer costs 5â€“7 times less than acquiring a new one
+4. **For service businesses**: Apply the 7Ps framework — People, Process, and Physical Evidence are often where service businesses fail
+5. **For CRM**: Focus on CLV over short-term profits — retaining a customer costs 5–7 times less than acquiring a new one
 
 ## Chapter Quiz
 
@@ -1040,7 +1040,7 @@ d) Remarketing
 
 <details>
 <summary>Answer</summary>
-**B) Geographic.** Geographic segmentation divides markets based on location â€” region, city size, density, climate. Urban/semi-urban/rural is a geographic variable.
+**B) Geographic.** Geographic segmentation divides markets based on location — region, city size, density, climate. Urban/semi-urban/rural is a geographic variable.
 </details>
 
 3. The marketing concept holds that:
@@ -1078,7 +1078,7 @@ d) Remarketing
 
 ## Exercises
 
-### Section A: Conceptual Understanding (Q1â€“Q10)
+### Section A: Conceptual Understanding (Q1–Q10)
 
 1. Define marketing according to the American Marketing Association. How does it differ from Kotler's definition?
 2. Explain the three additional Ps in the services marketing mix. Why are they necessary?
@@ -1091,20 +1091,20 @@ d) Remarketing
 9. Define Customer Lifetime Value. How is it calculated?
 10. What is the difference between need, want, and demand? Give an example of each.
 
-### Section B: Application-Based (Q11â€“Q20)
+### Section B: Application-Based (Q11–Q20)
 
 11. A new organic skincare brand wants to enter the Indian market. Recommend an STP strategy.
 12. A bank wants to market a new credit card to millennials. Which segmentation bases would you use?
 13. A premium restaurant chain is positioning itself as "fine dining at affordable prices." Identify potential positioning errors.
-14. A startup has launched a water purifier for rural India at â‚¹999. Which marketing philosophy does this reflect?
+14. A startup has launched a water purifier for rural India at ₹999. Which marketing philosophy does this reflect?
 15. A luxury hotel chain uses velvet curtains, marble floors, and uniformed staff to signal quality. Which element of the 7Ps does this represent?
-16. Calculate the CLV for a customer who spends â‚¹50,000 annually, has a retention rate of 75%, a projected relationship of 4 years, and an acquisition cost of â‚¹8,000.
+16. Calculate the CLV for a customer who spends ₹50,000 annually, has a retention rate of 75%, a projected relationship of 4 years, and an acquisition cost of ₹8,000.
 17. A company selling life insurance relies heavily on door-to-door sales agents. Which marketing philosophy is being applied?
 18. An e-commerce platform offers "cash on delivery" in small towns and "credit card only" in metros. Which segmentation base is being used?
 19. A new entrant to the soft drink market chooses to compete only in the sugar-free segment. What targeting strategy is this?
 20. A brand claims to be "the most innovative" but all its products are identical to competitors'. What positioning error is occurring?
 
-### Section C: Advanced (Q21â€“30)
+### Section C: Advanced (Q21–30)
 
 21. Compare and contrast the production concept with the product concept. Which is more relevant in today's market?
 22. How does the societal marketing concept address criticism of the traditional marketing concept?
@@ -1124,29 +1124,29 @@ d) Remarketing
 | 1 | AMA: activity, institutions, processes for creating, communicating, delivering, exchanging offerings of value | Kotler emphasises social/managerial process and exchange |
 | 2 | People, Process, Physical Evidence | Services are intangible, inseparable, variable, perishable |
 | 3 | Company, suppliers, intermediaries, customers, competitors, publics | Internal + external actors close to the firm |
-| 4 | Measurable, Accessible, Substantial, Differentiable, Actionable | MØ¢S-DA |
-| 5 | Selling: inside-out (factory â†’ product â†’ selling â†’ profit); Marketing: outside-in (market â†’ customer needs â†’ integrated marketing â†’ profit) | Example: Insurance (selling) vs Apple (marketing) |
+| 4 | Measurable, Accessible, Substantial, Differentiable, Actionable | MآS-DA |
+| 5 | Selling: inside-out (factory → product → selling → profit); Marketing: outside-in (market → customer needs → integrated marketing → profit) | Example: Insurance (selling) vs Apple (marketing) |
 | 6 | Relationship, Integrated, Internal, Socially responsible marketing | Holistic marketing is the broadest perspective |
 | 7 | Under, Over, Confused, Doubtful positioning | Refer to section 1.4 |
 | 8 | A graph plotting brands on two dimensions (e.g., price vs quality) | Helps identify gaps and competitive positions |
-| 9 | CLV = Î£(Annual revenue Ã— Retention probability) âˆ’ CAC | Measures long-term customer profitability |
-| 10 | Need = basic human requirement; Want = need shaped by culture; Demand = want + purchasing power | Hunger (need) â†’ Pizza (want) â†’ Can afford pizza (demand) |
-| 11 | Segment: health-conscious women 25â€“45; Target: urban organic buyers; Position: chemical-free luxury skincare | Niche strategy |
+| 9 | CLV = Σ(Annual revenue × Retention probability) − CAC | Measures long-term customer profitability |
+| 10 | Need = basic human requirement; Want = need shaped by culture; Demand = want + purchasing power | Hunger (need) → Pizza (want) → Can afford pizza (demand) |
+| 11 | Segment: health-conscious women 25–45; Target: urban organic buyers; Position: chemical-free luxury skincare | Niche strategy |
 | 12 | Demographic (age, income), Psychographic (lifestyle, tech-savvy), Behavioural (spending habits, digital adoption) | Multi-base segmentation works best |
-| 13 | Doubtful positioning â€” "fine dining" and "affordable" can contradict | Risk of credibility gap |
-| 14 | Production concept â€” focuses on low cost and wide availability | â‚¹999 purifier for mass market |
-| 15 | Physical Evidence â€” tangible cues of service quality | Part of 7Ps |
-| 16 | CLV = (50000 Ã— 0.75) + (50000 Ã— 0.75Â²) + (50000 Ã— 0.75Â³) + (50000 Ã— 0.75â´) âˆ’ 8000 = â‚¹102,109 | Use retention probability chain |
-| 17 | Selling concept â€” aggressive personal selling for unsought goods | Insurance is typically an unsought product |
-| 18 | Geographic segmentation â€” different payment options for different locations | Rural vs urban |
-| 19 | Concentrated (niche) marketing â€” focusing on one specific segment | Sugar-free soft drinks |
-| 20 | Doubtful positioning â€” claim does not match product reality | Credibility gap |
+| 13 | Doubtful positioning — "fine dining" and "affordable" can contradict | Risk of credibility gap |
+| 14 | Production concept — focuses on low cost and wide availability | ₹999 purifier for mass market |
+| 15 | Physical Evidence — tangible cues of service quality | Part of 7Ps |
+| 16 | CLV = (50000 × 0.75) + (50000 × 0.75²) + (50000 × 0.75³) + (50000 × 0.75⁴) − 8000 = ₹102,109 | Use retention probability chain |
+| 17 | Selling concept — aggressive personal selling for unsought goods | Insurance is typically an unsought product |
+| 18 | Geographic segmentation — different payment options for different locations | Rural vs urban |
+| 19 | Concentrated (niche) marketing — focusing on one specific segment | Sugar-free soft drinks |
+| 20 | Doubtful positioning — claim does not match product reality | Credibility gap |
 | 21 | Production: cheap + available; Product: quality + innovation | Product concept more relevant in competitive markets |
 | 22 | Societal concept adds society's well-being to customer satisfaction and company profit | Addresses criticism of marketing causing consumerism |
 | 23 | Five conditions: two parties, each has something of value, each can communicate/deliver, each free to accept/reject, each believes dealing is appropriate | Exchange is the core concept |
 | 24 | Digital transformation, AI in CRM, social media advertising | Technology changes how, when, and where marketing happens |
-| 25 | Segment: premium chocolate buyers (affluent, 25â€“55); Target: urban professionals; Position: "European luxury, Indian soul" | Complete STP with positioning statement |
-| 26 | Satisfied customers â†’ repeat purchase â†’ positive word-of-mouth â†’ higher profits â†’ better employee satisfaction â†’ better service | Service-profit chain |
+| 25 | Segment: premium chocolate buyers (affluent, 25–55); Target: urban professionals; Position: "European luxury, Indian soul" | Complete STP with positioning statement |
+| 26 | Satisfied customers → repeat purchase → positive word-of-mouth → higher profits → better employee satisfaction → better service | Service-profit chain |
 | 27 | Every employee (not just marketing dept) impacts customer satisfaction | Internal marketing ensures all staff are customer-oriented |
 | 28 | Global firms deal with multiple macroenvironments; local retailers focus on immediate microenvironment | Scope and complexity differ |
 | 29| Level 1 (Physiological): basic food; Level 2 (Safety): insurance; Level 3 (Social): Facebook; Level 4 (Esteem): luxury cars; Level 5 (Self-actualisation): premium education | Products mapped to needs hierarchy |
@@ -1165,7 +1165,7 @@ d) Remarketing
 **b) Product concept.** The product concept holds that consumers favour products offering the most quality, performance, and innovative features. Companies following this philosophy focus on making superior products and improving them over time.
 </details>
 
-**32.** "Consumers will favour products that are widely available and inexpensive" â€” this statement relates to which concept?
+**32.** "Consumers will favour products that are widely available and inexpensive" — this statement relates to which concept?
    - a) Product concept
    - b) Production concept
    - c) Marketing concept
@@ -1184,7 +1184,7 @@ d) Remarketing
 
 <details>
 <summary>Answer</summary>
-**b) Targeting.** The STP process follows the sequence: Segmentation â†’ Targeting â†’ Positioning. After dividing the market into segments, marketers evaluate each segment's attractiveness and select one or more to target.
+**b) Targeting.** The STP process follows the sequence: Segmentation → Targeting → Positioning. After dividing the market into segments, marketers evaluate each segment's attractiveness and select one or more to target.
 </details>
 
 **34.** A company segments the market based on "brand loyalty" and "usage rate." Which segmentation base is being used?
@@ -1264,7 +1264,7 @@ d) Remarketing
 **c) Company profits, customer wants, and society's interests.** The societal marketing concept holds that marketing strategy should deliver value to customers in a way that maintains or improves both the consumer's and society's well-being, alongside company profitability.
 </details>
 
-### Section D: Exam-Oriented Questions (Q31â€“Q40)
+### Section D: Exam-Oriented Questions (Q31–Q40)
 
 31. Analyse the impact of COVID-19 on the marketing environment using the PESTLE framework.
 32. A FMCG company notices declining sales for its flagship soap brand. Using the demand states framework, diagnose the situation and recommend a marketing response.

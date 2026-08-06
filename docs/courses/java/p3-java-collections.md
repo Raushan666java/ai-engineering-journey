@@ -1,4 +1,4 @@
-﻿# Java Collections Framework
+# Java Collections Framework
 
 ## Learning Objectives
 
@@ -68,15 +68,15 @@ The framework is built around two top-level interfaces: `Collection` and `Map`.
 
 ```
 Iterable (java.lang)
-  â””â”€â”€ Collection (modifiable, optional operations)
-        â”œâ”€â”€ List (ordered, indexed, allows duplicates)
-        â”œâ”€â”€ Set (no duplicates)
-        â”‚     â””â”€â”€ SortedSet â†’ NavigableSet
-        â””â”€â”€ Queue (FIFO typically)
-              â””â”€â”€ Deque (double-ended)
+  └── Collection (modifiable, optional operations)
+        ├── List (ordered, indexed, allows duplicates)
+        ├── Set (no duplicates)
+        │     └── SortedSet → NavigableSet
+        └── Queue (FIFO typically)
+              └── Deque (double-ended)
 
 Map (separate hierarchy, not a Collection)
-  â””â”€â”€ SortedMap â†’ NavigableMap
+  └── SortedMap → NavigableMap
 ```
 
 `Iterable<E>` is in `java.lang` and is the root of the entire framework. It provides the enhanced for-each loop:
@@ -155,7 +155,7 @@ public class CollectionsUtilityDemo {
         int freq = Collections.frequency(numbers, 5);
         System.out.println("Frequency of 5: " + freq);
 
-        // Unmodifiable view â†’ wraps, does not copy
+        // Unmodifiable view → wraps, does not copy
         List<Integer> readOnly = Collections.unmodifiableList(numbers);
         // readOnly.add(42); // throws UnsupportedOperationException
 
@@ -171,7 +171,7 @@ public class CollectionsUtilityDemo {
         List<String> list2 = List.of("D", "E", "F");
         System.out.println("Disjoint: " + Collections.disjoint(list1, list2));
 
-        // Singleton â†’ optimized single-element set
+        // Singleton → optimized single-element set
         Set<String> singleton = Collections.singleton("Java");
         System.out.println("Singleton: " + singleton);
     }
@@ -211,11 +211,11 @@ public interface List<E> extends Collection<E> {
 - Backed by an `Object[] elementData` array
 - Default initial capacity is 10
 - Elements are stored contiguously
-- Access by index is O(1)â†’fast random access
-- Insertion/removal at an arbitrary index is O(n)â†’shifts elements
+- Access by index is O(1)→fast random access
+- Insertion/removal at an arbitrary index is O(n)→shifts elements
 - Insertion at the end is amortized O(1)
 
-**Growth factor**: When the array is full, `grow()` creates a new array of size `oldCapacity + (oldCapacity >> 1)`â†’a **1.5x growth factor**. This balances memory waste against insertion cost.
+**Growth factor**: When the array is full, `grow()` creates a new array of size `oldCapacity + (oldCapacity >> 1)`→a **1.5x growth factor**. This balances memory waste against insertion cost.
 
 ```java
 // Internal growth logic (JDK 21+)
@@ -242,7 +242,7 @@ public class ArrayListDemo {
         List<String> list2 = new ArrayList<>(1_000_000);           // pre-size known
         List<String> list3 = new ArrayList<>(List.of("A", "B"));  // from another collection
 
-        // Demonstrate growth â†’ watch for resizing cost
+        // Demonstrate growth → watch for resizing cost
         List<Integer> growing = new ArrayList<>(2);
         growing.add(1);
         growing.add(2);
@@ -254,10 +254,10 @@ public class ArrayListDemo {
         List<String> names = new ArrayList<>(List.of("Alice", "Bob", "Charlie", "Diana"));
         System.out.println("Name at [2]: " + names.get(2)); // O(1)
 
-        names.add(1, "Brianna"); // O(n) â†’ shifts Bob, Charlie, Diana right
+        names.add(1, "Brianna"); // O(n) → shifts Bob, Charlie, Diana right
         System.out.println("After insert: " + names);
 
-        names.remove(0); // O(n) â†’ shifts Brianna, Bob, Charlie, Diana left
+        names.remove(0); // O(n) → shifts Brianna, Bob, Charlie, Diana left
         System.out.println("After remove first: " + names);
 
         // Bulk operations
@@ -268,7 +268,7 @@ public class ArrayListDemo {
         names.replaceAll(String::toUpperCase);
         System.out.println("Upper: " + names);
 
-        // SubList â†’ live view
+        // SubList → live view
         List<Integer> numbers = new ArrayList<>(
             new java.util.stream.IntStream().rangeClosed(1, 10).boxed().toList()
         );
@@ -278,7 +278,7 @@ public class ArrayListDemo {
         System.out.println("After modifying sub (numbers too): " + numbers);
 
         // Clear sublist's parent first = ConcurrentModificationException
-        // numbers.clear();   // uncomment â†’ sub iteration throws ConcurrentModificationException
+        // numbers.clear();   // uncomment → sub iteration throws ConcurrentModificationException
     }
 }
 ```
@@ -296,7 +296,7 @@ public class ArrayListDemo {
 **Internal structure**:
 - Each element is a `Node<E>` containing data + prev + next pointers
 - Maintains references to `first` and `last` nodes
-- Access by index is O(n)â†’must traverse from head or tail
+- Access by index is O(n)→must traverse from head or tail
 - Insertion/removal at either end is O(1)
 - Insertion/removal in the middle is O(n) to find the position, O(1) to relink
 
@@ -315,7 +315,7 @@ public class LinkedListDemo {
         deque.offer("Third");
         System.out.println("Queue poll: " + deque.poll()); // First
 
-        // Use as a stack (LIFO) â†’ better than legacy Stack
+        // Use as a stack (LIFO) → better than legacy Stack
         Deque<String> stack = new LinkedList<>();
         stack.push("Bottom");
         stack.push("Middle");
@@ -324,10 +324,10 @@ public class LinkedListDemo {
 
         // List-specific operations
         List<String> list = new LinkedList<>(List.of("A", "B", "C", "D", "E"));
-        // getFirst / getLast â†’ O(1)
+        // getFirst / getLast → O(1)
         System.out.println("First: " + list.getFirst() + ", Last: " + list.getLast());
 
-        // Access by index â†’ O(n), traverses from nearer end
+        // Access by index → O(n), traverses from nearer end
         System.out.println("Element at [2]: " + list.get(2));
 
         // ListIterator supports reverse traversal
@@ -348,9 +348,9 @@ public class LinkedListDemo {
 - Frequent insertion/removal at both ends (use as Deque)
 - You need a queue or stack and want list operations too
 - You rarely access elements by index
-- **Otherwise prefer ArrayList** â†’ LinkedList has higher memory overhead and worse cache locality
+- **Otherwise prefer ArrayList** → LinkedList has higher memory overhead and worse cache locality
 
-### 2.3 Vector & Stack â†’ Legacy Classes
+### 2.3 Vector & Stack → Legacy Classes
 
 
 `Vector` and `Stack` are **legacy** classes from Java 1.0. They were retrofitted to implement `List` in Java 2 but remain synchronized on every operation, which causes unnecessary overhead in single-threaded code.
@@ -362,13 +362,13 @@ import java.util.*;
 
 public class LegacyDemo {
     public static void main(String[] args) {
-        // Vector â†’ synchronized ArrayList equivalent
+        // Vector → synchronized ArrayList equivalent
         Vector<String> vector = new Vector<>();
         vector.add("A");
         vector.add("B");
         System.out.println("Vector capacity: " + vector.capacity()); // default 10, grows 2x
 
-        // Stack â†’ extends Vector, LIFO
+        // Stack → extends Vector, LIFO
         Stack<Integer> stack = new Stack<>();
         stack.push(1);
         stack.push(2);
@@ -396,26 +396,26 @@ import java.util.*;
 
 public class UnmodifiableListDemo {
     public static void main(String[] args) {
-        // List.of â†’ compact, unmodifiable, null-hostile
+        // List.of → compact, unmodifiable, null-hostile
         List<String> fruits = List.of("Apple", "Banana", "Cherry");
         System.out.println("List.of: " + fruits);
         // fruits.add("Date"); // throws UnsupportedOperationException
         // List.of("A", null); // throws NullPointerException
 
-        // List.copyOf â†’ copies and wraps as unmodifiable
+        // List.copyOf → copies and wraps as unmodifiable
         List<String> mutable = new ArrayList<>(List.of("X", "Y", "Z"));
         List<String> copy = List.copyOf(mutable);
         System.out.println("List.copyOf: " + copy);
         mutable.set(0, "Modified"); // changes original, NOT the copy
         System.out.println("After modifying original: copy = " + copy);
 
-        // JDK 16+ â†’ toList() on streams returns unmodifiable list
+        // JDK 16+ → toList() on streams returns unmodifiable list
         List<Integer> squares = java.util.stream.Stream.of(1, 2, 3, 4, 5)
             .map(n -> n * n)
             .toList(); // unmodifiable since Java 16
         System.out.println("Stream.toList(): " + squares);
 
-        // Collections.unmodifiableList â†’ wraps any list, still reflects changes
+        // Collections.unmodifiableList → wraps any list, still reflects changes
         List<String> backing = new ArrayList<>(List.of("A", "B"));
         List<String> unmod = Collections.unmodifiableList(backing);
         backing.add("C"); // unmod now sees it
@@ -425,9 +425,9 @@ public class UnmodifiableListDemo {
 ```
 
 **Key differences**:
-- `List.of(...)` â†’ creates a fixed-size list directly
-- `List.copyOf(coll)` â†’ copies elements from any collection to an unmodifiable list
-- `Collections.unmodifiableList(list)` â†’ provides a view; changes to the backing list are visible
+- `List.of(...)` → creates a fixed-size list directly
+- `List.copyOf(coll)` → copies elements from any collection to an unmodifiable list
+- `Collections.unmodifiableList(list)` → provides a view; changes to the backing list are visible
 - All three reject `null` elements
 
 ---
@@ -438,7 +438,7 @@ public class UnmodifiableListDemo {
 
 ```java
 public interface Set<E> extends Collection<E> {
-    // No additional methods â†’ purely semantic contract
+    // No additional methods → purely semantic contract
     // Adds are not idempotent; add(e) returns false if e already exists
 }
 ```
@@ -470,10 +470,10 @@ public class HashSetDemo {
         Set<String> names = new HashSet<>();
         names.add("Alice");
         names.add("Bob");
-        names.add("Alice"); // ignored â†’ duplicate
+        names.add("Alice"); // ignored → duplicate
         System.out.println("HashSet: " + names);  // order is NOT guaranteed
 
-        // Hash code matters â†’ a poor hashCode ruins performance
+        // Hash code matters → a poor hashCode ruins performance
         Set<BadHash> bad = new HashSet<>();
         for (int i = 0; i < 10000; i++) bad.add(new BadHash(i));
         System.out.println("Contains 5000: " + bad.contains(new BadHash(5000))); // slow!
@@ -488,7 +488,7 @@ class BadHash {
     int id;
     BadHash(int id) { this.id = id; }
     // int hashCode() { return id; }      // fix: uncomment for O(1)
-    public int hashCode() { return 42; }   // every object in same bucket â†’ O(n)
+    public int hashCode() { return 42; }   // every object in same bucket → O(n)
     public boolean equals(Object o) {
         if (!(o instanceof BadHash other)) return false;
         return this.id == other.id;
@@ -592,7 +592,7 @@ public class TreeSetDemo {
         System.out.println("TailSet (>=5): " + numbers.tailSet(5));      // [5,6,7,8,9]
         System.out.println("SubSet [3,7): " + numbers.subSet(3, 7));     // [3,4,5,6]
 
-        // Custom comparator â†’ reverse order
+        // Custom comparator → reverse order
         NavigableSet<String> reverse = new TreeSet<>(Comparator.reverseOrder());
         reverse.addAll(Set.of("Alpha", "Bravo", "Charlie", "Delta"));
         System.out.println("Reverse TreeSet: " + reverse);
@@ -616,7 +616,7 @@ record Person(String name, int age) {}
 
 **Key characteristics**:
 - Backed by a `long[]` (RegularEnumSet uses a single long for &lt;64 values, JumboEnumSet for &gt;64)
-- All operations are bitwise â†’ extremely fast
+- All operations are bitwise → extremely fast
 - Iteration order follows enum declaration order
 - Cannot have `null` elements
 
@@ -674,22 +674,22 @@ import java.util.*;
 
 public class ImmutableSetDemo {
     public static void main(String[] args) {
-        // Set.of â†’ compact, unmodifiable, no nulls
+        // Set.of → compact, unmodifiable, no nulls
         Set<String> colors = Set.of("Red", "Green", "Blue");
         System.out.println("Set.of: " + colors);
         // colors.add("Yellow"); // throws UnsupportedOperationException
         // Set.of("Red", null);   // throws NullPointerException
 
         // Duplicates at creation time
-        // Set.of("A", "A");         // IllegalArgumentException! â†’ duplicate
-        // Set<String> dedup = new HashSet<>(List.of("A", "A")); // no exception â†’ deduplicates
+        // Set.of("A", "A");         // IllegalArgumentException! → duplicate
+        // Set<String> dedup = new HashSet<>(List.of("A", "A")); // no exception → deduplicates
 
-        // Set.copyOf â†’ copies to unmodifiable set
+        // Set.copyOf → copies to unmodifiable set
         Set<String> mutable = new HashSet<>(Set.of("X", "Y", "Z"));
         Set<String> frozen = Set.copyOf(mutable);
         System.out.println("Set.copyOf: " + frozen);
 
-        // EnumSet is already compact â†’ prefer EnumSet.of for enum types
+        // EnumSet is already compact → prefer EnumSet.of for enum types
     }
 }
 ```
@@ -747,7 +747,7 @@ When a bucket reaches TREEIFY_THRESHOLD (8), it converts to a red-black tree.
 When a bucket shrinks below UNTREEIFY_THRESHOLD (6), it converts back to a list.
 
 Node<K,V> structure:
-  int hash     â†’ cached hash code
+  int hash     → cached hash code
   K key
   V value
   Node<K,V> next
@@ -777,12 +777,12 @@ public class HashMapInternalDemo {
         Integer prev = scores.put("Alice", 96);
         System.out.println("Previous score for Alice: " + prev); // 95
 
-        // Compute if absent â†’ only computes if key is missing
+        // Compute if absent → only computes if key is missing
         scores.computeIfAbsent("Eve", k -> 85);
-        scores.computeIfAbsent("Alice", k -> 0); // ignored â†’ already present
+        scores.computeIfAbsent("Alice", k -> 0); // ignored → already present
         System.out.println("Scores: " + scores);
 
-        // Merge â†’ combines existing value with new one
+        // Merge → combines existing value with new one
         Map<String, List<String>> multiMap = new HashMap<>();
         multiMap.computeIfAbsent("fruits", k -> new ArrayList<>()).add("Apple");
         multiMap.computeIfAbsent("fruits", k -> new ArrayList<>()).add("Banana");
@@ -833,8 +833,8 @@ for (int binCount = 0; ; ++binCount) {
 `LinkedHashMap<K, V>` extends `HashMap` with a doubly-linked list running through entries.
 
 **Two ordering modes**:
-1. **Insertion order** (default) â†’ iteration order matches insertion
-2. **Access order** â†’ iteration order matches access pattern (most recently accessed last)
+1. **Insertion order** (default) → iteration order matches insertion
+2. **Access order** → iteration order matches access pattern (most recently accessed last)
 
 Access-order mode is perfect for implementing **LRU caches** when combined with `removeEldestEntry()`.
 
@@ -852,7 +852,7 @@ public class LinkedHashMapDemo {
         insertion.put("M", 3);
         System.out.println("Insertion order: " + insertion);
 
-        // Access order â†’ for LRU cache
+        // Access order → for LRU cache
         LinkedHashMap<String, Integer> access = new LinkedHashMap<>(16, 0.75f, true);
         access.put("A", 1);
         access.put("B", 2);
@@ -883,8 +883,8 @@ class LRUCache<K, V> extends LinkedHashMap<K, V> {
         cache.put("B", "Beta");
         cache.put("C", "Gamma");
         System.out.println("Cache: " + cache); // A, B, C
-        cache.get("A");                         // A accessed â†’ becomes most recent
-        cache.put("D", "Delta");                // B is oldest â†’ evicted
+        cache.get("A");                         // A accessed → becomes most recent
+        cache.put("D", "Delta");                // B is oldest → evicted
         System.out.println("After evict: " + cache); // C, A, D
     }
 }
@@ -929,7 +929,7 @@ public class TreeMapDemo {
         // Descending order
         System.out.println("Descending: " + population.descendingMap());
 
-        // Custom comparator â†’ sort by value descending
+        // Custom comparator → sort by value descending
         // (requires copying to another TreeMap; TreeMap only sorts by key)
         NavigableMap<Integer, String> byPopulation = new TreeMap<>(Comparator.reverseOrder());
         population.forEach((k, v) -> byPopulation.put(v, k));
@@ -950,7 +950,7 @@ public class TreeMapDemo {
 
 **Internal structure**:
 - Backed by a plain `Object[]` array indexed by `ordinal()`
-- No hashing needed â†’ direct array lookup
+- No hashing needed → direct array lookup
 - Iterates in enum declaration order
 - Faster than HashMap for enum keys
 
@@ -982,7 +982,7 @@ public class EnumMapDemo {
             tasks.forEach(t -> System.out.println("  - " + t.description()));
         });
 
-        // Compact performance â†’ no hash computation
+        // Compact performance → no hash computation
         EnumMap<Priority, String> labels = new EnumMap<>(Priority.class);
         labels.put(Priority.HIGH, "Urgent");
         labels.put(Priority.LOW, "Whenever");
@@ -1066,7 +1066,7 @@ public class IdentityHashMapDemo {
         System.out.println("s1 value: " + identityMap.get(s1));
         System.out.println("s2 value: " + identityMap.get(s2));
 
-        // Compare with HashMap â†’ uses .equals()
+        // Compare with HashMap → uses .equals()
         Map<String, Integer> hashMap = new HashMap<>();
         hashMap.put(s1, 1);
         hashMap.put(s2, 2);              // same logical key, overwrites
@@ -1178,7 +1178,7 @@ public class ModernMapDemo {
 
         // ---- putIfAbsent vs computeIfAbsent ----
         // putIfAbsent inserts the value even if it requires computation (eager)
-        // computeIfAbsent only computes if absent (lazy) â†’ use this for expensive computations
+        // computeIfAbsent only computes if absent (lazy) → use this for expensive computations
     }
 }
 ```
@@ -1193,7 +1193,7 @@ import java.util.*;
 
 public class ImmutableMapDemo {
     public static void main(String[] args) {
-        // Map.of â†’ up to 10 key-value pairs, no nulls
+        // Map.of → up to 10 key-value pairs, no nulls
         Map<String, Integer> small = Map.of(
             "Alice", 95,
             "Bob", 87,
@@ -1201,7 +1201,7 @@ public class ImmutableMapDemo {
         );
         System.out.println("Map.of: " + small);
 
-        // Map.ofEntries â†’ arbitrary number of entries
+        // Map.ofEntries → arbitrary number of entries
         Map<String, Integer> larger = Map.ofEntries(
             Map.entry("A", 1),
             Map.entry("B", 2),
@@ -1211,7 +1211,7 @@ public class ImmutableMapDemo {
         );
         System.out.println("Map.ofEntries: " + larger);
 
-        // Map.copyOf â†’ unmodifiable copy
+        // Map.copyOf → unmodifiable copy
         Map<String, Integer> mutable = new HashMap<>();
         mutable.put("X", 10);
         Map<String, Integer> frozen = Map.copyOf(mutable);
@@ -1223,7 +1223,7 @@ public class ImmutableMapDemo {
         Map<String, List<Integer>> nestedMutable = Map.of(
             "scores", new ArrayList<>(List.of(1, 2, 3))
         );
-        nestedMutable.get("scores").add(4); // allowed! â†’ list is mutable
+        nestedMutable.get("scores").add(4); // allowed! → list is mutable
         System.out.println("Modified nested: " + nestedMutable);
     }
 }
@@ -1266,7 +1266,7 @@ public interface Queue<E> extends Collection<E> {
 - O(log n) for `offer` and `poll`
 - O(1) for `peek`
 - Not thread-safe (use `PriorityBlockingQueue` for concurrent access)
-- Iteration order is **not sorted** â†’ you must poll to get elements in priority order
+- Iteration order is **not sorted** → you must poll to get elements in priority order
 
 ```java
 package com.pai.collections.queue;
@@ -1275,7 +1275,7 @@ import java.util.*;
 
 public class PriorityQueueDemo {
     public static void main(String[] args) {
-        // Min-heap (default) â†’ natural ordering
+        // Min-heap (default) → natural ordering
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         minHeap.offer(5);
         minHeap.offer(1);
@@ -1293,7 +1293,7 @@ public class PriorityQueueDemo {
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
         maxHeap.offerAll(List.of(5, 1, 9, 3, 7));
 
-        // Custom comparator â†’ shorter jobs first
+        // Custom comparator → shorter jobs first
         record Job(int priority, String name) {}
         PriorityQueue<Job> jobQueue = new PriorityQueue<>(
             Comparator.comparingInt(Job::priority)
@@ -1324,7 +1324,7 @@ public class PriorityQueueDemo {
 `ArrayDeque<E>` is a **resizable array** implementation of `Deque<E>`. It is faster than `LinkedList` as a queue or stack and has no capacity restrictions.
 
 - O(1) amortized for `addFirst`, `addLast`, `removeFirst`, `removeLast`
-- Never backed by a linked list â†’ uses a circular array
+- Never backed by a linked list → uses a circular array
 - Not thread-safe
 
 ```java
@@ -1334,7 +1334,7 @@ import java.util.*;
 
 public class ArrayDequeDemo {
     public static void main(String[] args) {
-        // As a stack â†’ preferred over Stack class
+        // As a stack → preferred over Stack class
         Deque<String> stack = new ArrayDeque<>();
         stack.push("Bottom");
         stack.push("Middle");
@@ -1425,10 +1425,10 @@ public class LinkedListAsQueueDemo {
 
 `BlockingQueue<E>` extends `Queue` with blocking operations:
 
-- `put(e)` â†’ inserts, blocks if full (bounded queues)
-- `take()` â†’ retrieves and removes, blocks if empty
-- `offer(e, timeout, TimeUnit)` â†’ inserts with timeout
-- `poll(timeout, TimeUnit)` â†’ retrieves with timeout
+- `put(e)` → inserts, blocks if full (bounded queues)
+- `take()` → retrieves and removes, blocks if empty
+- `offer(e, timeout, TimeUnit)` → inserts with timeout
+- `poll(timeout, TimeUnit)` → retrieves with timeout
 
 ```java
 package com.pai.collections.queue;
@@ -1508,7 +1508,7 @@ public class BlockingQueueDemo {
 
 The ability to compare objects is fundamental to sorting and ordering in collections.
 
-### 6.1 Comparable â†’ Natural Ordering
+### 6.1 Comparable → Natural Ordering
 
 
 `Comparable<T>` defines the **natural ordering** of a class. A class implements Comparable to indicate its elements have a default sort order.
@@ -1517,9 +1517,9 @@ The ability to compare objects is fundamental to sorting and ordering in collect
 public interface Comparable<T> {
     int compareTo(T other);
     // Returns:
-    //   negative â†’ this < other
-    //   zero     â†’ this == other
-    //   positive â†’ this > other
+    //   negative → this < other
+    //   zero     → this == other
+    //   positive → this > other
 }
 ```
 
@@ -1558,7 +1558,7 @@ public class ComparableDemo {
 }
 ```
 
-### 6.2 Comparator â†’ Custom Ordering
+### 6.2 Comparator → Custom Ordering
 
 
 `Comparator<T>` defines **custom comparison logic** outside the compared class. Use it when:
@@ -1654,7 +1654,7 @@ public class ComparatorChainDemo {
         people.sort(chain.reversed());
         System.out.println("\nReversed chain:");
 
-        // nullsFirst / nullsLast â†’ handle null values
+        // nullsFirst / nullsLast → handle null values
         List<String> names = new ArrayList<>(Arrays.asList("Charlie", null, "Alice", "Bob", null));
         names.sort(Comparator.nullsFirst(Comparator.naturalOrder()));
         System.out.println("nullsFirst: " + names);
@@ -1731,7 +1731,7 @@ public class ComparatorHelpersDemo {
 
 ---
 
-## 7. Collections Utility Methods â†’ Deep Dive
+## 7. Collections Utility Methods → Deep Dive
 
 The `java.util.Collections` class contains algorithms that operate on or return collections.
 
@@ -1836,13 +1836,13 @@ public class WrapperDemo {
     public static void main(String[] args) {
         var original = new ArrayList<>(List.of(1, 2, 3));
 
-        // Unmodifiable view â†’ changes to original are reflected
+        // Unmodifiable view → changes to original are reflected
         List<Integer> unmod = Collections.unmodifiableList(original);
         original.add(4); // unmod now sees it
         System.out.println("Unmodifiable view: " + unmod);
         // unmod.remove(0); // throws UnsupportedOperationException
 
-        // Synchronized wrapper â†’ for safe concurrent access
+        // Synchronized wrapper → for safe concurrent access
         List<Integer> syncList = Collections.synchronizedList(new ArrayList<>());
 
         // Must synchronize on wrapper during iteration!
@@ -1857,12 +1857,12 @@ public class WrapperDemo {
         Set<String> unmodKeys = Collections.unmodifiableSet(map.keySet());
         // map.put("C", 3); // unmodKeys reflects this change (view)
 
-        // Checked collections â†’ type-safe at runtime
+        // Checked collections → type-safe at runtime
         List<String> checked = Collections.checkedList(new ArrayList<>(), String.class);
         checked.add("Safe");
         // checked.add(42); // ClassCastException at runtime (generic info erased otherwise)
 
-        // Empty collections â†’ type-safe, immutable
+        // Empty collections → type-safe, immutable
         List<String> empty = Collections.emptyList();
         Set<Integer> emptySet = Collections.emptySet();
         Map<String, Integer> emptyMap = Collections.emptyMap();
@@ -1904,7 +1904,7 @@ public class StreamCreationDemo {
         Stream<Double> randoms = Stream.generate(Math::random).limit(5);
         Stream<Integer> evens = Stream.iterate(0, n -> n + 2).limit(10);
 
-        // From Java 9+ â†’ iterate with predicate
+        // From Java 9+ → iterate with predicate
         Stream<Integer> below100 = Stream.iterate(0, n -> n < 100, n -> n + 1);
 
         // From Builder
@@ -1934,7 +1934,7 @@ public class StreamCreationDemo {
 ### 8.2 Intermediate Operations
 
 
-Intermediate operations return a new stream. They are **lazy** â†’ nothing is evaluated until a terminal operation is called.
+Intermediate operations return a new stream. They are **lazy** → nothing is evaluated until a terminal operation is called.
 
 ```java
 package com.pai.collections.streams;
@@ -2030,7 +2030,7 @@ public class IntermediateOpsDemo {
             .toList();
         System.out.println("DropWhile even: " + dropWhile); // [7, 8, 10]
 
-        // ---- mapMulti (Java 16+) â†’ flatMap alternative ----
+        // ---- mapMulti (Java 16+) → flatMap alternative ----
         List<Integer> expanded = Stream.of(1, 2, 3)
             .<Integer>mapMulti((n, consumer) -> {
                 consumer.accept(n);
@@ -2062,7 +2062,7 @@ public class TerminalOpsDemo {
         numbers.stream().forEach(n -> System.out.print(n + " "));
         System.out.println();
 
-        // forEachOrdered â†’ preserves encounter order in parallel streams
+        // forEachOrdered → preserves encounter order in parallel streams
         System.out.print("Parallel forEachOrdered: ");
         numbers.parallelStream().forEachOrdered(n -> System.out.print(n + " "));
         System.out.println();
@@ -2080,7 +2080,7 @@ public class TerminalOpsDemo {
         System.out.println("Stream.toList(): " + toListResult);
 
         // ---- reduce ----
-        // Sum â†’ identity is the initial value
+        // Sum → identity is the initial value
         int sum = numbers.stream().reduce(0, Integer::sum);
         System.out.println("Sum: " + sum);
 
@@ -2111,7 +2111,7 @@ public class TerminalOpsDemo {
             .findFirst();
         firstEven.ifPresent(n -> System.out.println("First even: " + n));
 
-        // findAny â†’ non-deterministic in parallel streams, prefer when order not needed
+        // findAny → non-deterministic in parallel streams, prefer when order not needed
         Optional<Integer> anyEven = numbers.parallelStream()
             .filter(n -> n % 2 == 0)
             .findAny();
@@ -2281,7 +2281,7 @@ public class BasicCollectorsDemo {
 }
 ```
 
-### 9.2 toMap â†’ Various Strategies
+### 9.2 toMap → Various Strategies
 
 
 ```java
@@ -2301,7 +2301,7 @@ public class ToMapDemo {
             new Product(3, "Keyboard", 99.99, 30)
         );
 
-        // Simple toMap â†’ key mapper, value mapper
+        // Simple toMap → key mapper, value mapper
         Map<Integer, String> idToName = products.stream()
             .collect(Collectors.toMap(Product::id, Product::name));
         System.out.println("ID to name: " + idToName);
@@ -2311,7 +2311,7 @@ public class ToMapDemo {
             .collect(Collectors.toMap(Product::id, Function.identity()));
         System.out.println("Product 2: " + idToProduct.get(2));
 
-        // toMap with merge function â†’ handle duplicate keys
+        // toMap with merge function → handle duplicate keys
         Map<String, Double> highestPriceByName = products.stream()
             .collect(Collectors.toMap(
                 Product::name,
@@ -2404,7 +2404,7 @@ public class AdvancedCollectorsDemo {
     public static void main(String[] args) {
         var numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        // ---- teeing (Java 12+) â†’ two collectors in parallel ----
+        // ---- teeing (Java 12+) → two collectors in parallel ----
         record Stats(double sum, double average) {}
 
         Stats stats = numbers.stream()
@@ -2415,7 +2415,7 @@ public class AdvancedCollectorsDemo {
             ));
         System.out.println("Teeing: sum=" + stats.sum() + ", avg=" + stats.average());
 
-        // teeing â†’ min and max
+        // teeing → min and max
         record MinMax(Integer min, Integer max) {}
         MinMax minMax = numbers.stream()
             .collect(Collectors.teeing(
@@ -2425,7 +2425,7 @@ public class AdvancedCollectorsDemo {
             ));
         System.out.println("MinMax: " + minMax);
 
-        // teeing â†’ count and sum simultaneously
+        // teeing → count and sum simultaneously
         record CountSum(long count, double sum) {}
         CountSum countSum = numbers.stream()
             .collect(Collectors.teeing(
@@ -2435,7 +2435,7 @@ public class AdvancedCollectorsDemo {
             ));
         System.out.println("CountSum: " + countSum);
 
-        // ---- collectingAndThen â†’ transform after collect ----
+        // ---- collectingAndThen → transform after collect ----
         List<String> words = List.of("apple", "banana", "cherry", "date", "elderberry");
 
         TreeSet<String> sortedByLength = words.stream()
@@ -2445,7 +2445,7 @@ public class AdvancedCollectorsDemo {
             ));
         System.out.println("Unmodifiable sorted by length: " + sortedByLength);
 
-        // ---- reducing collector â†’ custom reduction ----
+        // ---- reducing collector → custom reduction ----
         Optional<String> longest = words.stream()
             .collect(Collectors.reducing((a, b) -> a.length() >= b.length() ? a : b));
         longest.ifPresent(w -> System.out.println("Longest word: " + w));
@@ -2529,17 +2529,17 @@ import java.util.*;
 
 public class OptionalCreationDemo {
     public static void main(String[] args) {
-        // of â†’ wraps non-null value, NPE if null
+        // of → wraps non-null value, NPE if null
         Optional<String> present = Optional.of("Hello");
         System.out.println("Optional.of: " + present);
 
-        // ofNullable â†’ wraps possibly-null value
+        // ofNullable → wraps possibly-null value
         Optional<String> nullable1 = Optional.ofNullable("World");
         Optional<String> nullable2 = Optional.ofNullable(null);
         System.out.println("ofNullable(non-null): " + nullable1);
         System.out.println("ofNullable(null): " + nullable2);
 
-        // empty â†’ represents absence
+        // empty → represents absence
         Optional<String> empty = Optional.empty();
         System.out.println("Empty: " + empty);
 
@@ -2581,14 +2581,14 @@ public class OptionalOperationsDemo {
         String result2 = empty.orElse("Default");
         System.out.println("orElse: " + result1 + ", " + result2);
 
-        // orElseGet â†’ lazy evaluation (prefer over orElse for expensive defaults)
+        // orElseGet → lazy evaluation (prefer over orElse for expensive defaults)
         String result3 = empty.orElseGet(() -> {
             System.out.println("Computing default...");
             return "ComputedDefault";
         });
         System.out.println("orElseGet: " + result3);
 
-        // orElse vs orElseGet â†’ subtle difference:
+        // orElse vs orElseGet → subtle difference:
         // orElse evaluates the argument even if the Optional is present
         String eager = value.orElse(computeExpensiveDefault());   // always called!
         String lazy  = value.orElseGet(() -> computeExpensiveDefault()); // only if empty
@@ -2602,7 +2602,7 @@ public class OptionalOperationsDemo {
         Optional<Integer> length = value.map(String::length);
         System.out.println("Mapped length: " + length);
 
-        // ---- flatMap â†’ avoid nested Optional ----
+        // ---- flatMap → avoid nested Optional ----
         Optional<String> cityFromFlatMap = getPerson()
             .flatMap(Person::email)
             .flatMap(OptionalOperationsDemo::findUserByEmail)
@@ -2617,7 +2617,7 @@ public class OptionalOperationsDemo {
         Optional<String> filteredOut = value.filter(s -> s.length() > 10);
         System.out.println("Filtered (>10 chars): " + filteredOut);
 
-        // ---- stream (Java 9+) â†’ convert to 0-1 element stream ----
+        // ---- stream (Java 9+) → convert to 0-1 element stream ----
         long streamCount = value.stream().count(); // 1
         long emptyStreamCount = Optional.<String>empty().stream().count(); // 0
         System.out.println("Stream count: " + streamCount + ", " + emptyStreamCount);
@@ -2715,7 +2715,7 @@ public class OptionalBestPracticesDemo {
         // public class Person { Optional<String> middleName; ... } // avoid
 
         // BAD: Optional in collections
-        // List<Optional<String>> names = ...; // avoid â†’ collection of Optional
+        // List<Optional<String>> names = ...; // avoid → collection of Optional
 
         // GOOD: Use Optional for terminal operations
         Map<String, Integer> cache = new HashMap<>();
@@ -3023,7 +3023,7 @@ public class UnorderedDemo {
 
 The Java Collections Framework provides a cohesive set of interfaces and implementations for managing groups of objects:
 
-1. **Core Interfaces**: Iterable â†’ Collection â†’ List (ordered), Set (unique), Queue (FIFO), Deque (double-ended), Map (key-value pairs). Each interface defines a contract; implementations provide the behavior.
+1. **Core Interfaces**: Iterable → Collection → List (ordered), Set (unique), Queue (FIFO), Deque (double-ended), Map (key-value pairs). Each interface defines a contract; implementations provide the behavior.
 
 2. **List**: ArrayList (resizable array, 1.5x growth, O(1) get, O(n) insert/remove-middle), LinkedList (doubly-linked, O(1) ends, O(n) index), ArrayDeque (preferred over Stack and LinkedList for queue/stack). Unmodifiable lists via List.of/copyOf.
 
@@ -3045,7 +3045,7 @@ The Java Collections Framework provides a cohesive set of interfaces and impleme
 
 ---
 
-> **Pro Tip:** Type every code example yourself â†’ muscle memory for Java syntax is built through active practice, not passive reading.
+> **Pro Tip:** Type every code example yourself → muscle memory for Java syntax is built through active practice, not passive reading.
 
 > **Remember:** Understanding the "why" behind Java language features is more important than memorizing syntax.
 
@@ -3239,7 +3239,7 @@ List<Map<String, String>> parseCsv(String csv) {
 
 Implement a `ProximityMap` using `TreeMap` that stores words and their positions. Provide a method `wordsNear(String word, int distance)` that returns all words within the given edit distance (Levenshtein) of the query word, using the TreeMap for efficient prefix/range filtering.
 
-**Challenge 4: Parallel Stream â†’ Matrix Multiplication**
+**Challenge 4: Parallel Stream → Matrix Multiplication**
 
 Implement parallel matrix multiplication for large matrices (e.g., 1024x1024). Use parallel streams to split the workload across available processors. Compare performance against sequential multiplication.
 
@@ -3277,4 +3277,4 @@ Build a system that processes batches of items through three phases: validation,
 
 ---
 
-*This chapter is part of the Java & Spring Boot University Textbook. Next: P4 â†’ Exception Handling & I/O.*
+*This chapter is part of the Java & Spring Boot University Textbook. Next: P4 → Exception Handling & I/O.*

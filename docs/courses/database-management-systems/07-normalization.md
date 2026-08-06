@@ -1,4 +1,4 @@
-﻿# Chapter 7: Normalization in Database Management Systems
+# Chapter 7: Normalization in Database Management Systems
 
 > **Previous:** [Chapter 6: Advanced SQL](./06-sql-advanced.md) | **Next:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md)
 
@@ -38,7 +38,7 @@ By the end of this chapter you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| **Functional Dependencies** | X -> Y means X determines Y Ã¢â‚¬â€ the foundation of all normalization | Find all FDs first; normalization follows automatically |
+| **Functional Dependencies** | X -> Y means X determines Y — the foundation of all normalization | Find all FDs first; normalization follows automatically |
 | **1NF** | Atomic columns, no repeating groups | Every cell holds one value; every row is unique |
 | **2NF** | No partial dependency on a composite key | Every non-key attribute depends on the whole key |
 | **3NF** | No transitive dependency on non-key attributes | Every non-key attribute depends on nothing but the key |
@@ -59,7 +59,7 @@ flowchart LR
 
 ## Theory
 
-> **One-Sentence Takeaway:** Normalization systematically removes data redundancy by decomposing tables through 1NF -> 2NF -> 3NF -> BCNF Ã¢â‚¬â€ think of it as "each column depends on the key, the whole key, and nothing but the key."
+> **One-Sentence Takeaway:** Normalization systematically removes data redundancy by decomposing tables through 1NF -> 2NF -> 3NF -> BCNF — think of it as "each column depends on the key, the whole key, and nothing but the key."
 
 ![Normalization Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch07-normalization.png)
 
@@ -68,7 +68,7 @@ flowchart LR
 
 #### Real-World Analogy: The Address Book
 
-Imagine a single paper address book where you write a person's name, phone number, and every address they have ever lived at in one row. If they move, you must erase and rewrite. If you tear out the last row for a friend who moved away, you lose their name and phone number too. If you want to add a new address for someone who isn't yet in the book, you cannot Ã¢â‚¬â€ each row needs a name. This is exactly the problem unnormalized databases face.
+Imagine a single paper address book where you write a person's name, phone number, and every address they have ever lived at in one row. If they move, you must erase and rewrite. If you tear out the last row for a friend who moved away, you lose their name and phone number too. If you want to add a new address for someone who isn't yet in the book, you cannot — each row needs a name. This is exactly the problem unnormalized databases face.
 
 Now imagine separate pages: one for people (name, phone), one for addresses (person_id, address, move-in-date). When someone moves, you add one row to the addresses page. When they leave, you keep their name. No rewriting, no lost data. This is normalization.
 
@@ -86,29 +86,29 @@ This single table stores all information about students, courses, instructors, a
 
 | Anomaly Type | Definition | Example in STUDENT_COURSE | Consequence |
 |-------------|-----------|--------------------------|-------------|
-| **Insertion Anomaly** | Cannot insert a fact because the primary key requires another fact that is missing | Adding course CS102 requires a student_id Ã¢â‚¬â€ but no student is enrolled yet | New entities cannot be recorded independently |
+| **Insertion Anomaly** | Cannot insert a fact because the primary key requires another fact that is missing | Adding course CS102 requires a student_id — but no student is enrolled yet | New entities cannot be recorded independently |
 | **Deletion Anomaly** | Deleting one fact unintentionally deletes another unrelated fact | Deleting the last enrollment in DBMS removes the course and instructor info permanently | Unintended data loss |
-| **Update Anomaly** | Changing a fact requires updating multiple rows; inconsistency if any are missed | Dr. Smith moves to Room 201 Ã¢â‚¬â€ all 50 DBMS rows must be updated | Data inconsistency and maintenance overhead |
+| **Update Anomaly** | Changing a fact requires updating multiple rows; inconsistency if any are missed | Dr. Smith moves to Room 201 — all 50 DBMS rows must be updated | Data inconsistency and maintenance overhead |
 | **Redundancy** | The same fact is stored repeatedly across multiple rows | Instructor name and office repeat for every student in each course | Wasted storage + causes update anomaly |
 
-**Insertion Anomaly Ã¢â‚¬â€ Detailed:** We cannot add a new course (CS102, "Data Structures") unless a student enrolls in it. The primary key is (student_id, course_id), so we would need a student_id, which we do not have for a new course. This forces a dummy or null student_id, violating entity integrity.
+**Insertion Anomaly — Detailed:** We cannot add a new course (CS102, "Data Structures") unless a student enrolls in it. The primary key is (student_id, course_id), so we would need a student_id, which we do not have for a new course. This forces a dummy or null student_id, violating entity integrity.
 
-**Update Anomaly Ã¢â‚¬â€ Detailed:** If "Dr. Smith" (instructor for "DBMS") moves to office "Room 201," we must update every row where Dr. Smith teaches. If there are 50 students in DBMS, we must update 50 rows. A single missed update creates inconsistency Ã¢â‚¬â€ some rows say Room 101, others say Room 201. How do we know which is correct?
+**Update Anomaly — Detailed:** If "Dr. Smith" (instructor for "DBMS") moves to office "Room 201," we must update every row where Dr. Smith teaches. If there are 50 students in DBMS, we must update 50 rows. A single missed update creates inconsistency — some rows say Room 101, others say Room 201. How do we know which is correct?
 
-**Deletion Anomaly Ã¢â‚¬â€ Detailed:** If the last student drops "DBMS" and we delete their enrollment row, we lose the information that "DBMS" is taught by "Dr. Smith" in "Room 101." The course and instructor information is gone forever Ã¢â‚¬â€ collateral damage from removing a student enrollment.
+**Deletion Anomaly — Detailed:** If the last student drops "DBMS" and we delete their enrollment row, we lose the information that "DBMS" is taught by "Dr. Smith" in "Room 101." The course and instructor information is gone forever — collateral damage from removing a student enrollment.
 
-**Redundancy Ã¢â‚¬â€ Quantified:** The instructor name and office are repeated for every student in each course. With 50 students per course and 100 courses, instructor info appears 5000 times when it should appear 100 times. This wastes space, slows queries, and causes the update anomaly.
+**Redundancy — Quantified:** The instructor name and office are repeated for every student in each course. With 50 students per course and 100 courses, instructor info appears 5000 times when it should appear 100 times. This wastes space, slows queries, and causes the update anomaly.
 
-**Normalization** is a systematic, theory-backed process of decomposing tables to eliminate these anomalies while preserving all information. It is not optional Ã¢â‚¬â€ it is a foundational discipline of relational database design.
+**Normalization** is a systematic, theory-backed process of decomposing tables to eliminate these anomalies while preserving all information. It is not optional — it is a foundational discipline of relational database design.
 
 ### 7.2 Functional Dependencies
 
 
 #### Real-World Analogy: Recipe Ingredients
 
-Think of a recipe: `dish_name -> ingredients, cooking_time, difficulty`. If you know the dish name, you uniquely know the ingredients and cooking time. This is a functional dependency (FD) Ã¢â‚¬â€ the dish name *functionally determines* the ingredients.
+Think of a recipe: `dish_name -> ingredients, cooking_time, difficulty`. If you know the dish name, you uniquely know the ingredients and cooking time. This is a functional dependency (FD) — the dish name *functionally determines* the ingredients.
 
-Now suppose two different recipes produce the same dish (e.g., two ways to make pasta carbonara). Then `dish_name -> ingredients` is FALSE Ã¢â‚¬â€ the same dish name gives different ingredients. FDs are constraints that must hold for *every possible* instance of the relation, not just the current data.
+Now suppose two different recipes produce the same dish (e.g., two ways to make pasta carbonara). Then `dish_name -> ingredients` is FALSE — the same dish name gives different ingredients. FDs are constraints that must hold for *every possible* instance of the relation, not just the current data.
 
 Another analogy: Social Security Number -> Person Name. In a correctly maintained database, knowing the SSN uniquely identifies the person. But `person_name -> SSN` would NOT hold because multiple people can share the same name.
 
@@ -135,13 +135,13 @@ If this condition fails for any two tuples, the FD does NOT hold.
 | **Non-Trivial** | Right side has at least one attribute not in left side | `student_id -> name` |
 | **Completely Non-Trivial** | Right side and left side share no attributes | `A -> B` (if A and B are disjoint) |
 
-**Trivial Functional Dependencies Ã¢â‚¬â€ Details:**
-- `student_id -> student_id` (trivial Ã¢â‚¬â€ always true)
-- `student_id, name -> student_id` (trivial Ã¢â‚¬â€ right side subset of left)
+**Trivial Functional Dependencies — Details:**
+- `student_id -> student_id` (trivial — always true)
+- `student_id, name -> student_id` (trivial — right side subset of left)
 - `student_id -> name` (non-trivial)
-- `student_id -> student_id, name` (trivial even though it includes name? Actually `student_id, name` is not a subset of `{student_id}`, so NO Ã¢â‚¬â€ this is non-trivial because `name` is not in `{student_id}`. But `{student_id, name} -> {student_id}` IS trivial.)
+- `student_id -> student_id, name` (trivial even though it includes name? Actually `student_id, name` is not a subset of `{student_id}`, so NO — this is non-trivial because `name` is not in `{student_id}`. But `{student_id, name} -> {student_id}` IS trivial.)
 
-**Edge Case Ã¢â‚¬â€ Trivial FDs in Closure:** When computing closure, trivial FDs are always true but never add new attributes. They are noise in the computation Ã¢â‚¬â€ we skip them because they contribute nothing.
+**Edge Case — Trivial FDs in Closure:** When computing closure, trivial FDs are always true but never add new attributes. They are noise in the computation — we skip them because they contribute nothing.
 
 #### Types of Functional Dependencies
 
@@ -161,7 +161,7 @@ Armstrong's axioms are a complete and sound set of inference rules for deriving 
 
 | Rule | Name | Formal Statement | Example | Explanation |
 |------|------|-----------------|---------|-------------|
-| 1 | **Reflexivity** | If Y subset of X, then X -> Y | {A, B} -> A | Subset determines itself Ã¢â‚¬â€ obvious but formally necessary |
+| 1 | **Reflexivity** | If Y subset of X, then X -> Y | {A, B} -> A | Subset determines itself — obvious but formally necessary |
 | 2 | **Augmentation** | If X -> Y, then XZ -> YZ | If A -> B, then AC -> BC | Adding the same attributes to both sides preserves dependency |
 | 3 | **Transitivity** | If X -> Y and Y -> Z, then X -> Z | If A -> B and B -> C, then A -> C | FDs chain together |
 
@@ -193,9 +193,9 @@ Armstrong's axioms are a complete and sound set of inference rules for deriving 
 
 **Redundant FDs:** An FD is redundant if it can be derived from the other FDs. For example, given {A -> B, B -> C, A -> C}, the FD A -> C is redundant because it follows from A -> B and B -> C via transitivity.
 
-**Circular Dependencies:** FDs like {A -> B, B -> C, C -> A} create a cycle. In this case, A, B, and C are all candidate keys Ã¢â‚¬â€ each determines all others through the chain.
+**Circular Dependencies:** FDs like {A -> B, B -> C, C -> A} create a cycle. In this case, A, B, and C are all candidate keys — each determines all others through the chain.
 
-**Empty Left Side:** Is {} -> Y valid? This means "every tuple has the same Y value" Ã¢â‚¬â€ a constant constraint. For example, {} -> gender would mean all employees have the same gender. This is rare but valid.
+**Empty Left Side:** Is {} -> Y valid? This means "every tuple has the same Y value" — a constant constraint. For example, {} -> gender would mean all employees have the same gender. This is rare but valid.
 
 #### Complexity Analysis of Armstrong's Axioms Application
 
@@ -210,9 +210,9 @@ Armstrong's axioms are a complete and sound set of inference rules for deriving 
 
 | Aspect | Description |
 |--------|-------------|
-| **Advantage: Soundness** | Every derived FD is guaranteed to hold Ã¢â‚¬â€ no false positives |
-| **Advantage: Completeness** | All implied FDs can be derived Ã¢â‚¬â€ no false negatives |
-| **Advantage: Simplicity** | Only 3 rules to remember Ã¢â‚¬â€ easy to apply manually |
+| **Advantage: Soundness** | Every derived FD is guaranteed to hold — no false positives |
+| **Advantage: Completeness** | All implied FDs can be derived — no false negatives |
+| **Advantage: Simplicity** | Only 3 rules to remember — easy to apply manually |
 | **Disadvantage: No Direction** | Axioms do not tell you WHICH FDs to apply or in what order |
 | **Disadvantage: Termination** | Manual application can be tedious for large FD sets |
 | **Disadvantage: Redundancy** | Derived set F+ can be exponentially larger than original F |
@@ -232,7 +232,7 @@ The **closure** of a set of attributes X under a set of FDs F (denoted X+) is th
 - Checking if an FD X -> Y holds (Y is subset of X+)
 - Normalization
 
-#### Closure Algorithm Ã¢â‚¬â€ Step-by-Step
+#### Closure Algorithm — Step-by-Step
 
 **Algorithm:** ComputeXPlus(X, F)
 
@@ -257,7 +257,7 @@ FUNCTION ComputeClosure(X, F):
     RETURN closure
 ```
 
-#### Detailed Trace Table Ã¢â‚¬â€ Example 1
+#### Detailed Trace Table — Example 1
 
 **Given:** R(A, B, C, D, E) and FDs: {A -> BC, CD -> E, B -> D, E -> A}
 
@@ -266,30 +266,30 @@ FUNCTION ComputeClosure(X, F):
 | Iteration | closure (before) | FD Checked | Y subset of closure? | Attributes Added | closure (after) |
 |-----------|-----------------|------------|---------------------|-----------------|-----------------|
 | 1 | {A} | A -> BC | Y={A} subset of {A}: YES | B, C | {A, B, C} |
-| 1 | {A, B, C} | CD -> E | Y={C,D} subset of {A,B,C}: NO (D missing) | Ã¢â‚¬â€ | {A, B, C} |
+| 1 | {A, B, C} | CD -> E | Y={C,D} subset of {A,B,C}: NO (D missing) | — | {A, B, C} |
 | 1 | {A, B, C} | B -> D | Y={B} subset of {A,B,C}: YES | D | {A, B, C, D} |
-| 1 | {A, B, C, D} | E -> A | Y={E} subset of {A,B,C,D}: NO | Ã¢â‚¬â€ | {A, B, C, D} |
-| 2 | {A, B, C, D} | A -> BC | YES Ã¢â‚¬â€ already in closure | Ã¢â‚¬â€ | {A, B, C, D} |
+| 1 | {A, B, C, D} | E -> A | Y={E} subset of {A,B,C,D}: NO | — | {A, B, C, D} |
+| 2 | {A, B, C, D} | A -> BC | YES — already in closure | — | {A, B, C, D} |
 | 2 | {A, B, C, D} | CD -> E | Y={C,D} subset of {A,B,C,D}: YES | E | {A, B, C, D, E} |
-| 2 | {A, B, C, D, E} | B -> D | YES Ã¢â‚¬â€ already in closure | Ã¢â‚¬â€ | {A, B, C, D, E} |
-| 2 | {A, B, C, D, E} | E -> A | YES Ã¢â‚¬â€ already in closure | Ã¢â‚¬â€ | {A, B, C, D, E} |
-| 3 | {A, B, C, D, E} | (all) | No new FDs apply | Ã¢â‚¬â€ | {A, B, C, D, E} |
+| 2 | {A, B, C, D, E} | B -> D | YES — already in closure | — | {A, B, C, D, E} |
+| 2 | {A, B, C, D, E} | E -> A | YES — already in closure | — | {A, B, C, D, E} |
+| 3 | {A, B, C, D, E} | (all) | No new FDs apply | — | {A, B, C, D, E} |
 
-**Result: A+ = {A, B, C, D, E}** (all attributes Ã¢â‚¬â€ A is a superkey)
+**Result: A+ = {A, B, C, D, E}** (all attributes — A is a superkey)
 
 **Compute B+:**
 
 | Iteration | closure (before) | FD Checked | Y subset of closure? | Attributes Added | closure (after) |
 |-----------|-----------------|------------|---------------------|-----------------|-----------------|
-| 1 | {B} | A -> BC | Y={A} subset of {B}: NO | Ã¢â‚¬â€ | {B} |
-| 1 | {B} | CD -> E | Y={C,D} subset of {B}: NO | Ã¢â‚¬â€ | {B} |
+| 1 | {B} | A -> BC | Y={A} subset of {B}: NO | — | {B} |
+| 1 | {B} | CD -> E | Y={C,D} subset of {B}: NO | — | {B} |
 | 1 | {B} | B -> D | Y={B} subset of {B}: YES | D | {B, D} |
-| 1 | {B, D} | E -> A | Y={E} subset of {B,D}: NO | Ã¢â‚¬â€ | {B, D} |
-| 2 | {B, D} | (all) | No new FDs apply | Ã¢â‚¬â€ | {B, D} |
+| 1 | {B, D} | E -> A | Y={E} subset of {B,D}: NO | — | {B, D} |
+| 2 | {B, D} | (all) | No new FDs apply | — | {B, D} |
 
 **Result: B+ = {B, D}** (not a superkey)
 
-#### Detailed Trace Table Ã¢â‚¬â€ Example 2
+#### Detailed Trace Table — Example 2
 
 **Given:** R(A, B, C, D, E, F) and FDs: {AB -> C, C -> D, D -> E, B -> F, E -> A}
 
@@ -301,8 +301,8 @@ FUNCTION ComputeClosure(X, F):
 | 1 | {A, B, C} | C -> D | Y={C} subset of {A,B,C}: YES | D | {A, B, C, D} |
 | 1 | {A, B, C, D} | D -> E | Y={D} subset: YES | E | {A, B, C, D, E} |
 | 1 | {A, B, C, D, E} | B -> F | Y={B} subset: YES | F | {A, B, C, D, E, F} |
-| 1 | {A,B,C,D,E,F} | E -> A | YES Ã¢â‚¬â€ A already in closure | Ã¢â‚¬â€ | {A,B,C,D,E,F} |
-| 2 | {A,B,C,D,E,F} | (all) | No new attributes | Ã¢â‚¬â€ | {A,B,C,D,E,F} |
+| 1 | {A,B,C,D,E,F} | E -> A | YES — A already in closure | — | {A,B,C,D,E,F} |
+| 2 | {A,B,C,D,E,F} | (all) | No new attributes | — | {A,B,C,D,E,F} |
 
 **Result: AB+ = {A, B, C, D, E, F}** (AB is a superkey, actually a candidate key)
 
@@ -321,7 +321,7 @@ FUNCTION ComputeClosure(X, F):
 
 | Aspect | Description |
 |--------|-------------|
-| **A: Algorithmic** | Simple iterative algorithm Ã¢â‚¬â€ always terminates |
+| **A: Algorithmic** | Simple iterative algorithm — always terminates |
 | **A: Deterministic** | Same input always produces same output |
 | **A: Foundational** | Used for key finding, FD checking, normalization |
 | **D: Redundancy in F** | Redundant FDs cause unnecessary iterations |
@@ -330,7 +330,7 @@ FUNCTION ComputeClosure(X, F):
 
 #### Edge Cases in Attribute Closure
 
-**Empty Attribute Set:** Computing {} closure Ã¢â‚¬â€ start with empty set. Only FDs with empty left side (constant constraints) will add attributes. Result is typically {} unless there are constant constraints.
+**Empty Attribute Set:** Computing {} closure — start with empty set. Only FDs with empty left side (constant constraints) will add attributes. Result is typically {} unless there are constant constraints.
 
 **Trivial FDs in Computation:** FDs like A -> A never change the closure but waste an iteration. In practice, skip trivial FDs.
 
@@ -362,7 +362,7 @@ A candidate key is like the minimal set of ID documents you need to uniquely ide
 
 **Step 4:** If not, add attributes from LR one at a time, then combinations, computing closure each time.
 
-**Step 5:** A candidate key is minimal Ã¢â‚¬â€ remove any attribute that is not essential.
+**Step 5:** A candidate key is minimal — remove any attribute that is not essential.
 
 #### Pseudocode for Finding All Candidate Keys
 
@@ -394,7 +394,7 @@ FUNCTION FindCandidateKeys(R, F):
     RETURN keys
 ```
 
-#### Detailed Dry Run Ã¢â‚¬â€ Finding Candidate Keys
+#### Detailed Dry Run — Finding Candidate Keys
 
 **Given:** R(A, B, C, D, E, F) with FDs: {A -> B, C -> D, D -> E, B -> F}
 
@@ -402,7 +402,7 @@ FUNCTION FindCandidateKeys(R, F):
 |------|-----------|---------------|--------|
 | 1 | A | LR | A -> B (left) but no FD has A on right |
 | 1 | B | LR | A -> B (right), B -> F (left) |
-| 1 | C | LH | C -> D (left only) Ã¢â‚¬â€ never on right |
+| 1 | C | LH | C -> D (left only) — never on right |
 | 1 | D | LR | C -> D (right), D -> E (left) |
 | 1 | E | RH | D -> E (right only) |
 | 1 | F | RH | B -> F (right only) |
@@ -423,8 +423,8 @@ Compute closure(C+) with F:
 - Try C + D = {C, D}: C -> D (already). D -> E adds E => {C, D, E}. Missing A, B, F. Not a key.
 
 **Step 4:** Check minimality of {A, C}:
-- Remove A: {C}+ = {C, D, E} Ã¢â‚¬â€ not a key. A is needed.
-- Remove C: {A}+ = {A, B, F} Ã¢â‚¬â€ not a key. C is needed.
+- Remove A: {C}+ = {C, D, E} — not a key. A is needed.
+- Remove C: {A}+ = {A, B, F} — not a key. C is needed.
 - {A, C} is minimal and complete. Candidate keys: {A, C}
 
 #### Complexity Analysis of Candidate Key Finding
@@ -560,7 +560,7 @@ CREATE TABLE enrollment (
 
 #### Real-World Analogy: Library Catalog
 
-Imagine a library catalog that stores (shelf_id, book_title, author_name, section_name). The shelf_id + book_title tells you the exact spot. But author_name depends only on book_title Ã¢â‚¬â€ it repeats on every shelf where that book sits. 2NF says: if your key is composite (shelf_id + book_title), every non-key column must depend on the WHOLE key, not just part of it. Author_name depends on book_title alone Ã¢â‚¬â€ that is a partial dependency. Move it out.
+Imagine a library catalog that stores (shelf_id, book_title, author_name, section_name). The shelf_id + book_title tells you the exact spot. But author_name depends only on book_title — it repeats on every shelf where that book sits. 2NF says: if your key is composite (shelf_id + book_title), every non-key column must depend on the WHOLE key, not just part of it. Author_name depends on book_title alone — that is a partial dependency. Move it out.
 
 #### Formal Definition
 
@@ -614,25 +614,25 @@ FUNCTION DecomposeTo2NF(R, key, F):
 **Primary key:** (student_id, course_id)
 
 **FDs identified:**
-- `student_id -> student_name` (partial dependency Ã¢â‚¬â€ depends on part of PK)
+- `student_id -> student_name` (partial dependency — depends on part of PK)
 - `course_id -> course_name` (partial dependency)
-- `student_id, course_id -> grade` (full dependency Ã¢â‚¬â€ depends on whole PK)
+- `student_id, course_id -> grade` (full dependency — depends on whole PK)
 
 **Checking 2NF:**
 
 | Non-key Attribute | Depends on Which Key Part? | Partial? | Verdict |
 |------------------|---------------------------|----------|---------|
-| student_name | student_id (proper subset) | YES Ã¢â‚¬â€ violates 2NF | Must remove |
-| grade | (student_id, course_id) Ã¢â‚¬â€ whole key | NO Ã¢â‚¬â€ full dependency | Keep |
-| course_name | course_id (proper subset) | YES Ã¢â‚¬â€ violates 2NF | Must remove |
+| student_name | student_id (proper subset) | YES — violates 2NF | Must remove |
+| grade | (student_id, course_id) — whole key | NO — full dependency | Keep |
+| course_name | course_id (proper subset) | YES — violates 2NF | Must remove |
 
 **Decomposition:**
 
-R1(student_id, student_name, address, major) Ã¢â‚¬â€ PK: student_id
-R2(course_id, course_name, credits) Ã¢â‚¬â€ PK: course_id
-R3(student_id, course_id, grade) Ã¢â‚¬â€ PK: (student_id, course_id)
+R1(student_id, student_name, address, major) — PK: student_id
+R2(course_id, course_name, credits) — PK: course_id
+R3(student_id, course_id, grade) — PK: (student_id, course_id)
 
-#### Dry Run Trace Ã¢â‚¬â€ Complete 2NF Decomposition
+#### Dry Run Trace — Complete 2NF Decomposition
 
 **Initial data:**
 
@@ -643,8 +643,8 @@ R3(student_id, course_id, grade) Ã¢â‚¬â€ PK: (student_id, course_id)
 | S2 | C101 | Bob | C | DBMS |
 
 **Partial dependencies:**
-- student_id -> student_name: Alice repeats for S1 twice Ã¢â€ â€™ update anomaly if she changes name
-- course_id -> course_name: DBMS repeats twice Ã¢â€ â€™ update anomaly if course name changes
+- student_id -> student_name: Alice repeats for S1 twice → update anomaly if she changes name
+- course_id -> course_name: DBMS repeats twice → update anomaly if course name changes
 
 **After decomposition into 2NF:**
 
@@ -699,7 +699,7 @@ R3: ENROLLMENT
 
 #### Real-World Analogy: The Department Office
 
-An employee record stores (emp_id, dept_id, dept_location). The emp_id tells you dept_id. The dept_id tells you dept_location. So emp_id indirectly tells you dept_location Ã¢â‚¬â€ through dept_id. The problem: if the department moves to a new location, you must update every employee row. 3NF says: a non-key column must not determine another non-key column. Break this into (emp_id, dept_id) and (dept_id, dept_location).
+An employee record stores (emp_id, dept_id, dept_location). The emp_id tells you dept_id. The dept_id tells you dept_location. So emp_id indirectly tells you dept_location — through dept_id. The problem: if the department moves to a new location, you must update every employee row. 3NF says: a non-key column must not determine another non-key column. Break this into (emp_id, dept_id) and (dept_id, dept_location).
 
 #### Formal Definition
 
@@ -764,7 +764,7 @@ FUNCTION Synthesize3NF(R, F):
     RETURN schemas
 ```
 
-#### Detailed Dry Run Ã¢â‚¬â€ 3NF Decomposition
+#### Detailed Dry Run — 3NF Decomposition
 
 **Given:** R(order_id, order_date, customer_id, customer_name)
 
@@ -781,8 +781,8 @@ FUNCTION Synthesize3NF(R, F):
 - This violates 3NF
 
 **Decomposition:**
-R1(order_id, order_date, customer_id) Ã¢â‚¬â€ PK: order_id
-R2(customer_id, customer_name) Ã¢â‚¬â€ PK: customer_id
+R1(order_id, order_date, customer_id) — PK: order_id
+R2(customer_id, customer_name) — PK: customer_id
 
 #### Full Walkthrough: ORDER_DETAIL Normalization
 
@@ -798,7 +798,7 @@ R2(customer_id, customer_name) Ã¢â‚¬â€ PK: customer_id
 Candidate key: (order_id, product_id)
 Proof: (order_id, product_id)+ = {order_id, order_date, customer_id, customer_name, product_id, product_name, quantity, price}
 
-**Step 3: Check 1NF Ã¢â‚¬â€ PASS (all values atomic)**
+**Step 3: Check 1NF — PASS (all values atomic)**
 
 **Step 4: Check 2NF (partial dependencies)**
 
@@ -911,7 +911,7 @@ CREATE TABLE order_line (
 
 #### Real-World Analogy: The One-Subject Teacher Rule
 
-A school has: (student_id, teacher_id, subject). Rules: each teacher teaches one subject (teacher_id -> subject). Each student has one teacher per subject (student_id, subject -> teacher_id). The key is (student_id, subject). But teacher_id -> subject violates BCNF because teacher_id is not a superkey. The fix: (teacher_id, subject) and (student_id, teacher_id). But now (student_id, subject -> teacher_id) is lost Ã¢â‚¬â€ you cannot enforce it without a join.
+A school has: (student_id, teacher_id, subject). Rules: each teacher teaches one subject (teacher_id -> subject). Each student has one teacher per subject (student_id, subject -> teacher_id). The key is (student_id, subject). But teacher_id -> subject violates BCNF because teacher_id is not a superkey. The fix: (teacher_id, subject) and (student_id, teacher_id). But now (student_id, subject -> teacher_id) is lost — you cannot enforce it without a join.
 
 #### Formal Definition
 
@@ -965,7 +965,7 @@ FUNCTION DecomposeBCNF(R, F):
             RETURN result1 union result2
 ```
 
-#### Detailed Dry Run Ã¢â‚¬â€ BCNF Decomposition
+#### Detailed Dry Run — BCNF Decomposition
 
 **Given:** R(student_id, course_id, instructor_name)
 
@@ -974,11 +974,11 @@ FUNCTION DecomposeBCNF(R, F):
 **Step 1:** Candidate keys: (student_id, course_id)
 
 **Step 2:** Check BCNF:
-- course_id -> instructor_name: Is course_id a superkey? NO (course_id+ = {course_id, instructor_name} Ã¢â‚¬â€ does not contain student_id). VIOLATION.
+- course_id -> instructor_name: Is course_id a superkey? NO (course_id+ = {course_id, instructor_name} — does not contain student_id). VIOLATION.
 
 **Step 3:** Decompose using violating FD course_id -> instructor_name:
-- R1 = {course_id, instructor_name} Ã¢â‚¬â€ PK: course_id
-- R2 = {student_id, course_id} Ã¢â‚¬â€ PK: (student_id, course_id)
+- R1 = {course_id, instructor_name} — PK: course_id
+- R2 = {student_id, course_id} — PK: (student_id, course_id)
 
 **Step 4:** Check R1: FD course_id -> instructor_name. Left side IS the key. BCNF OK.
 
@@ -995,7 +995,7 @@ FUNCTION DecomposeBCNF(R, F):
 **Candidate keys:** {A, B}, {A, C}
 
 **Is this in 3NF?** Check C -> B:
-- Is C a superkey? C+ = {C, B} Ã¢â‚¬â€ does NOT contain A. NO.
+- Is C a superkey? C+ = {C, B} — does NOT contain A. NO.
 - Is B prime? YES (B is in candidate key {A, B}).
 - Since B is prime, C -> B satisfies the 3NF relaxation. In 3NF.
 
@@ -1053,13 +1053,13 @@ BCNF decomposition by this method ALWAYS produces lossless joins.
 
 #### Real-World Analogy: Puzzle Pieces
 
-A lossless decomposition is like cutting a photograph into puzzle pieces Ã¢â‚¬â€ when you put them back together, you get the original photograph, nothing more and nothing less. A lossy decomposition is like shredding Ã¢â‚¬â€ you cannot reconstruct the original.
+A lossless decomposition is like cutting a photograph into puzzle pieces — when you put them back together, you get the original photograph, nothing more and nothing less. A lossy decomposition is like shredding — you cannot reconstruct the original.
 
 #### Formal Definition
 
-A decomposition of R into R1 and R2 is **lossless** (or non-additive) if joining R1 and R2 always produces the original R Ã¢â‚¬â€ no spurious tuples, no missing tuples.
+A decomposition of R into R1 and R2 is **lossless** (or non-additive) if joining R1 and R2 always produces the original R — no spurious tuples, no missing tuples.
 
-**Formally:** For every instance r of R: r = Ãâ‚¬_R1(r) Ã¢â€¹Ë† Ãâ‚¬_R2(r)
+**Formally:** For every instance r of R: r = π_R1(r) ⋈ π_R2(r)
 
 #### Lossless vs Lossy Decomposition
 
@@ -1069,7 +1069,7 @@ A decomposition of R into R1 and R2 is **lossless** (or non-additive) if joining
 | **Information** | All information preserved | Information lost or created |
 | **Test** | Common attribute is a key in at least one component | Common attribute is not a key in either component |
 | **Example** | R1(A,B), R2(B,C) where B -> C | R1(emp_id, dept), R2(dept, mgr) where dept -> mgr does NOT hold |
-| **Acceptable?** | YES Ã¢â‚¬â€ required | NO Ã¢â‚¬â€ must be avoided |
+| **Acceptable?** | YES — required | NO — must be avoided |
 
 #### Chase Test for Lossless Decomposition
 
@@ -1083,14 +1083,14 @@ For decomposition into n relations, use the chase:
 | 4 | Apply FDs: if two rows agree on left side, make their right sides equal |
 | 5 | If any row becomes all distinguished symbols, the decomposition is lossless |
 
-#### Detailed Example Ã¢â‚¬â€ Lossless vs Lossy Join
+#### Detailed Example — Lossless vs Lossy Join
 
 **Lossless example:**
 R(employee_id, department, manager) with FD: department -> manager
 
 Decompose to: R1(employee_id, department), R2(department, manager)
 
-| R1 | R2 | R1 Ã¢â€¹Ë† R2 |
+| R1 | R2 | R1 ⋈ R2 |
 |---|---|---|
 | E1, Sales | Sales, Alice | E1, Sales, Alice |
 | E2, Eng | Eng, Bob | E2, Eng, Bob |
@@ -1102,7 +1102,7 @@ R(employee_id, department, manager) with NO departments having multiple managers
 
 Decompose to: R1(employee_id, department), R2(department, manager)
 
-| R1 | R2 | R1 Ã¢â€¹Ë† R2 (spurious!) |
+| R1 | R2 | R1 ⋈ R2 (spurious!) |
 |---|---|---|
 | E1, Sales | Sales, Alice | E1, Sales, Alice |
 | E2, Sales | Sales, Bob | E1, Sales, Bob |
@@ -1142,11 +1142,11 @@ Dependency preservation is like traffic laws that can be enforced by local polic
 
 A decomposition is **dependency-preserving** if all FDs in the closure F+ can be checked on the decomposed relations individually, WITHOUT joining them.
 
-**Formally:** For decomposition ÃÂ = {R1, R2, ..., Rn} and FD set F:
-The projection of F onto Ri is: Ãâ‚¬_Ri(F) = {X -> Y in F+ | X union Y is subset of Ri}
-The decomposition preserves F if (Ãâ‚¬_R1(F) union Ãâ‚¬_R2(F) union ... union Ãâ‚¬_Rn(F))+ = F+
+**Formally:** For decomposition ρ = {R1, R2, ..., Rn} and FD set F:
+The projection of F onto Ri is: π_Ri(F) = {X -> Y in F+ | X union Y is subset of Ri}
+The decomposition preserves F if (π_R1(F) union π_R2(F) union ... union π_Rn(F))+ = F+
 
-#### Example Ã¢â‚¬â€ Non-Dependency-Preserving Decomposition
+#### Example — Non-Dependency-Preserving Decomposition
 
 R(A, B, C) with FDs: {A -> B, B -> C}
 
@@ -1187,7 +1187,7 @@ FUNCTION IsDependencyPreserving(R, decomposition, F):
 | **Both properties** | Guaranteed by 3NF synthesis | The synthesis algorithm produces both |
 
 
-### 7.12 C++ Implementation Ã¢â‚¬â€ FD Closure Calculator
+### 7.12 C++ Implementation — FD Closure Calculator
 
 
 ```cpp
@@ -1371,7 +1371,7 @@ Candidate keys:
   {E}
 ```
 
-### 7.13 C++ Implementation Ã¢â‚¬â€ BCNF Decomposition
+### 7.13 C++ Implementation — BCNF Decomposition
 
 
 ```cpp
@@ -1462,12 +1462,12 @@ int main() {
 }
 ```
 
-### 7.14 Python Implementation Ã¢â‚¬â€ Attribute Closure and Normalization Checker
+### 7.14 Python Implementation — Attribute Closure and Normalization Checker
 
 
 ```python
 """
-Normalization Toolkit Ã¢â‚¬â€ Attribute Closure and Normalization Checker
+Normalization Toolkit — Attribute Closure and Normalization Checker
 """
 
 from typing import Set, List, Tuple, Dict
@@ -1687,12 +1687,12 @@ if __name__ == "__main__":
     print(f"Normal form: {nf2}")
 ```
 
-### 7.15 Python Implementation Ã¢â‚¬â€ 3NF Synthesis
+### 7.15 Python Implementation — 3NF Synthesis
 
 
 ```python
 """
-3NF Synthesis Algorithm Ã¢â‚¬â€ produces lossless, dependency-preserving 3NF decomposition
+3NF Synthesis Algorithm — produces lossless, dependency-preserving 3NF decomposition
 """
 
 def minimize_fds(fds: List[FunctionalDependency]) -> List[FunctionalDependency]:
@@ -1788,7 +1788,7 @@ if __name__ == "__main__":
     print(f"\nFinal 3NF decomposition: {schemas}")
 ```
 
-### 7.16 Python Implementation Ã¢â‚¬â€ BCNF Decomposition
+### 7.16 Python Implementation — BCNF Decomposition
 
 
 ```python
@@ -1874,7 +1874,7 @@ if __name__ == "__main__":
         print(f"  {rn}: {{{','.join(sorted(rs))}}}")
 ```
 
-### 7.17 Python Implementation Ã¢â‚¬â€ Normalization Analyzer
+### 7.17 Python Implementation — Normalization Analyzer
 
 
 ```python
@@ -1915,7 +1915,7 @@ class SchemaAnalyzer:
                     else:
                         attr_status.append(f"{a}(non-prime)")
                 violations.append(
-                    f"BCNF: {fd} Ã¢â‚¬â€ LHS {set(fd.lhs)} not a superkey, "
+                    f"BCNF: {fd} — LHS {set(fd.lhs)} not a superkey, "
                     f"RHS includes non-prime: {attr_status}"
                 )
         
@@ -1928,7 +1928,7 @@ class SchemaAnalyzer:
                     for attr in fd.rhs:
                         if attr not in self.prime_attrs:
                             violations.append(
-                                f"Would-be BCNF: {fd} Ã¢â‚¬â€ but in 3NF because "
+                                f"Would-be BCNF: {fd} — but in 3NF because "
                                 f"RHS {attr} would need to be prime"
                             )
         
@@ -1955,7 +1955,7 @@ class SchemaAnalyzer:
             for v in self.violations:
                 lines.append(f"  - {v}")
         else:
-            lines.append("No violations Ã¢â‚¬â€ schema is fully normalized.")
+            lines.append("No violations — schema is fully normalized.")
         
         lines.append("")
         lines.append("Recommendations:")
@@ -2012,11 +2012,11 @@ Both ssn and student_id are candidate keys. When normalizing:
 | Two overlapping composite keys | Check partial dependencies against BOTH keys |
 | Surrogate key as PK | Natural keys must remain as UNIQUE constraints |
 
-#### Example Ã¢â‚¬â€ Overlapping Keys Affecting BCNF
+#### Example — Overlapping Keys Affecting BCNF
 
 R(A, B, C) with FDs {AB -> C, C -> B}:
 - Candidate keys: {A, B}, {A, C}
-- BCNF for C -> B: Is C a superkey? C+ = {C, B} Ã¢â‚¬â€ no A. NOT a superkey.
+- BCNF for C -> B: Is C a superkey? C+ = {C, B} — no A. NOT a superkey.
 - BUT B is prime (in key AB). So 3NF holds.
 - BCNF would decompose, losing AB -> C.
 
@@ -2044,7 +2044,7 @@ CREATE TABLE employee (
 | **Redundancy** | Some redundancy possible with prime RHS | No redundancy from FDs |
 | **Dependency preservation** | ALWAYS guaranteed | May lose FDs |
 | **Algorithm** | Synthesis (minimal cover + grouping) | Decomposition (split on violating FD) |
-| **When to prefer** | Default Ã¢â‚¬â€ preserves all constraints | High-integrity systems willing to sacrifice FDs |
+| **When to prefer** | Default — preserves all constraints | High-integrity systems willing to sacrifice FDs |
 | **Real-world frequency** | Most common target | Used where data integrity is paramount |
 
 **Interview Answer:** "BCNF is stricter than 3NF: it requires every non-trivial FD's left side to be a superkey. 3NF relaxes this when the right side is a prime attribute. The tradeoff: BCNF may lose dependency preservation. I target BCNF but accept 3NF when BCNF would lose important constraints."
@@ -2063,7 +2063,7 @@ CREATE TABLE employee (
 
 **Interview Answer:** "An FD X -> Y means each X has exactly one Y. An MVD X ->> Y means each X has a set of Y values independent of other attributes. Example: employee with multiple skills AND multiple languages creates an MVD (each combination repeats). FDs are handled by BCNF/3NF; MVDs require 4NF."
 
-#### Q3: Denormalization Ã¢â‚¬â€ when and why?
+#### Q3: Denormalization — when and why?
 
 **Interview Answer:** "Denormalization intentionally adds redundancy for performance. Use it when:
 1. Read-heavy workloads: many JOINs slow queries
@@ -2088,7 +2088,7 @@ The principle: normalize first, then denormalize with purpose. Document WHY and 
 
 #### Q5: Lossless vs lossy decomposition
 
-**Interview Answer:** "Lossless decomposition guarantees joining the tables recovers exactly the original rows Ã¢â‚¬â€ no spurious tuples. Lossy creates phantom rows. The test: if the common attribute is a key in at least one component, the join is lossless. Lossless is mandatory Ã¢â‚¬â€ lossy decompositions corrupt data."
+**Interview Answer:** "Lossless decomposition guarantees joining the tables recovers exactly the original rows — no spurious tuples. Lossy creates phantom rows. The test: if the common attribute is a key in at least one component, the join is lossless. Lossless is mandatory — lossy decompositions corrupt data."
 
 #### Q6: Finding candidate keys from FDs
 
@@ -2096,19 +2096,19 @@ The principle: normalize first, then denormalize with purpose. Document WHY and 
 
 #### Q7: Can a relation be in 3NF but not BCNF?
 
-**Interview Answer:** "Yes. The classic example: R(A, B, C) with {AB -> C, C -> B}. Keys: {A,B}, {A,C}. FD C -> B Ã¢â‚¬â€ C is not a superkey, but B is prime. 3NF allows it; BCNF does not. The 3NF relaxation for prime RHS attributes is exactly what makes this possible."
+**Interview Answer:** "Yes. The classic example: R(A, B, C) with {AB -> C, C -> B}. Keys: {A,B}, {A,C}. FD C -> B — C is not a superkey, but B is prime. 3NF allows it; BCNF does not. The 3NF relaxation for prime RHS attributes is exactly what makes this possible."
 
 #### Q8: Explain the 3NF synthesis algorithm
 
-**Interview Answer:** "Four steps: (1) Compute minimal cover Ã¢â‚¬â€ decompose RHS, remove redundant LHS attributes, remove redundant FDs. (2) Group FDs by left-hand side, creating a schema with LHS union RHS for each group. (3) If no schema contains a candidate key, add one. (4) Remove redundant schemas that are subsets of others. The result is lossless and dependency-preserving."
+**Interview Answer:** "Four steps: (1) Compute minimal cover — decompose RHS, remove redundant LHS attributes, remove redundant FDs. (2) Group FDs by left-hand side, creating a schema with LHS union RHS for each group. (3) If no schema contains a candidate key, add one. (4) Remove redundant schemas that are subsets of others. The result is lossless and dependency-preserving."
 
 #### Q9: Why is BCNF decomposition not dependency-preserving?
 
-**Interview Answer:** "BCNF decomposition splits relations on violating FDs. After splitting, an FD whose attributes span multiple decomposed relations cannot be enforced locally. Example: R(student_id, course_id, instructor) with course_id -> instructor. After decomposing to R1(course_id, instructor) and R2(student_id, course_id), the FD (student_id, course_id) -> instructor is lost Ã¢â‚¬â€ it requires a join to enforce."
+**Interview Answer:** "BCNF decomposition splits relations on violating FDs. After splitting, an FD whose attributes span multiple decomposed relations cannot be enforced locally. Example: R(student_id, course_id, instructor) with course_id -> instructor. After decomposing to R1(course_id, instructor) and R2(student_id, course_id), the FD (student_id, course_id) -> instructor is lost — it requires a join to enforce."
 
 #### Q10: What is the difference between minimal cover and canonical cover?
 
-**Interview Answer:** "A minimal cover is a minimal set of FDs that implies the original set. Conditions: every RHS is a single attribute, no LHS attribute is redundant, no FD is redundant. A canonical cover is essentially the same concept Ã¢â‚¬â€ the terms are often used interchangeably. The minimal cover is the starting point for 3NF synthesis."
+**Interview Answer:** "A minimal cover is a minimal set of FDs that implies the original set. Conditions: every RHS is a single attribute, no LHS attribute is redundant, no FD is redundant. A canonical cover is essentially the same concept — the terms are often used interchangeably. The minimal cover is the starting point for 3NF synthesis."
 
 ### 7.20 Applications in Real Database Systems
 
@@ -2162,7 +2162,7 @@ CREATE TABLE order_item (
 
 | Feature | Impact on Normalization |
 |---------|------------------------|
-| **AUTO_INCREMENT** | Surrogate keys Ã¢â‚¬â€ natural candidate keys need UNIQUE constraints |
+| **AUTO_INCREMENT** | Surrogate keys — natural candidate keys need UNIQUE constraints |
 | **InnoDB FK constraints** | Critical for maintaining decomposition integrity |
 | **Composite indexes** | (order_id, product_id) indexes support composite PK efficiently |
 | **Query optimizer** | Handles 3-4 table JOINs well; beyond that consider denormalization |
@@ -2206,9 +2206,9 @@ GROUP BY c.customer_id, c.name;
 | Feature | Impact on Normalization |
 |---------|------------------------|
 | **GENERATED AS IDENTITY** | Surrogate key generation |
-| **DOMAIN types** | Enforce atomicity at type level Ã¢â‚¬â€ stronger 1NF |
+| **DOMAIN types** | Enforce atomicity at type level — stronger 1NF |
 | **CHECK constraints** | Validate attribute format |
-| **Partial/covering indexes** | Reduce JOIN cost Ã¢â‚¬â€ less need for denormalization |
+| **Partial/covering indexes** | Reduce JOIN cost — less need for denormalization |
 | **Materialized views** | Denormalized views without sacrificing normalized base tables |
 | **EXCLUDE constraints** | Enforce constraints beyond FDs (no overlapping time periods) |
 
@@ -2235,33 +2235,33 @@ GROUP BY c.customer_id, c.name;
 #### Decision Flow for Normalization Level
 
 ```
-Is every value atomic? Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬NOÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬> Apply 1NF
-       Ã¢â€â€š
+Is every value atomic? ───NO───> Apply 1NF
+       │
       YES
-       Ã¢â€â€š
-Is the key single-attr? Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬NOÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬> Check partial dependencies
-       Ã¢â€â€š                              Ã¢â€â€š
+       │
+Is the key single-attr? ───NO───> Check partial dependencies
+       │                              │
       YES                        Has partial FDs?
-       Ã¢â€â€š                         YESÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬> Decompose to 2NF
-       Ã¢â€â€š                           Ã¢â€â€š
-       Ã¢â€â€š                          NO
-       Ã¢â€â€š                           Ã¢â€â€š
-       Ã¢â€â€š                           Ã¢â€“Â¼
-       Ã¢â€â€š                    Check transitive deps on non-key attrs
-       Ã¢â€â€š                              Ã¢â€â€š
-       Ã¢â€â€š                     Has transitive? Ã¢â€â‚¬Ã¢â€â‚¬YESÃ¢â€â‚¬Ã¢â€â‚¬> Decompose to 3NF
-       Ã¢â€â€š                              Ã¢â€â€š
-       Ã¢â€â€š                             NO
-       Ã¢â€â€š                              Ã¢â€â€š
-       Ã¢â€â€š                              Ã¢â€“Â¼
-       Ã¢â€â€š                     Check FDs where LHS is not superkey
-       Ã¢â€â€š                              Ã¢â€â€š
-       Ã¢â€â€š                     Any violation? Ã¢â€â‚¬Ã¢â€â‚¬YESÃ¢â€â‚¬Ã¢â€â‚¬> Consider BCNF (may lose FDs)
-       Ã¢â€â€š                              Ã¢â€â€š
-       Ã¢â€â€š                             NO
-       Ã¢â€â€š                              Ã¢â€â€š
-       Ã¢â€“Â¼                              Ã¢â€“Â¼
-Check MVDs (4NF) Ã¢â€â‚¬Ã¢â€â‚¬> Schema is BCNF Ã¢Å“â€œ (or 3NF if BCNF not possible)
+       │                         YES───> Decompose to 2NF
+       │                           │
+       │                          NO
+       │                           │
+       │                           ▼
+       │                    Check transitive deps on non-key attrs
+       │                              │
+       │                     Has transitive? ──YES──> Decompose to 3NF
+       │                              │
+       │                             NO
+       │                              │
+       │                              ▼
+       │                     Check FDs where LHS is not superkey
+       │                              │
+       │                     Any violation? ──YES──> Consider BCNF (may lose FDs)
+       │                              │
+       │                             NO
+       │                              │
+       ▼                              ▼
+Check MVDs (4NF) ──> Schema is BCNF ✓ (or 3NF if BCNF not possible)
 ```
 
 ### 7.22 Chapter Quiz
@@ -2429,7 +2429,7 @@ The TypeScript implementation below computes attribute closure, finds candidate 
 
 ```typescript
 // ============================================================
-// Functional Dependency Analyzer Ã¢â‚¬â€ TypeScript
+// Functional Dependency Analyzer — TypeScript
 // ============================================================
 
 type AttributeSet = Set<string>;
@@ -2550,7 +2550,7 @@ class FDAnalyzer {
           if (!isPrime) { allPrime = false; break; }
         }
         if (!allPrime) {
-          return '1NF (violates BCNF and 3NF Ã¢â‚¬â€ FD ' + this.fdToString(fd) + ' has non-prime RHS and LHS not a superkey)';
+          return '1NF (violates BCNF and 3NF — FD ' + this.fdToString(fd) + ' has non-prime RHS and LHS not a superkey)';
         }
       }
     }
@@ -2562,7 +2562,7 @@ class FDAnalyzer {
         if (this.isSubset(new Set(key), fd.lhs)) { isSuperkey = true; break; }
       }
       if (!isSuperkey) {
-        return '3NF (BCNF violated by FD ' + this.fdToString(fd) + ' but RHS is prime Ã¢â‚¬â€ 3NF holds)';
+        return '3NF (BCNF violated by FD ' + this.fdToString(fd) + ' but RHS is prime — 3NF holds)';
       }
     }
     return 'BCNF';
@@ -2643,35 +2643,35 @@ analyzer.printReport();
 
 - Functional dependencies are fundamental constraints expressing that X determines Y. They are the mathematical foundation of all normalization.
 - Armstrong's axioms (reflexivity, augmentation, transitivity) form a sound and complete inference system for deriving implied FDs.
-- Attribute closure (X+) finds all attributes determined by X Ã¢â‚¬â€ the single most useful tool for normalization. Used to find keys, check FDs, and verify normal forms.
+- Attribute closure (X+) finds all attributes determined by X — the single most useful tool for normalization. Used to find keys, check FDs, and verify normal forms.
 - Candidate keys are minimal superkeys. Found by classifying attributes (left-only, right-only, both, neither) and testing subsets.
-- 1NF eliminates non-atomic values and repeating groups Ã¢â‚¬â€ prerequisite for all relational operations.
-- 2NF eliminates partial dependencies on composite keys Ã¢â‚¬â€ relevant only for tables with composite primary keys.
-- 3NF eliminates transitive dependencies on non-key attributes Ã¢â‚¬â€ removes most practical redundancy.
-- BCNF requires every FD left side to be a superkey Ã¢â‚¬â€ the strongest form based on FDs but may lose dependency preservation.
-- Lossless decomposition guarantees data recoverability Ã¢â‚¬â€ mandatory for all decompositions.
-- Dependency preservation ensures FDs can be enforced locally Ã¢â‚¬â€ 3NF synthesis guarantees both lossless join AND dependency preservation.
+- 1NF eliminates non-atomic values and repeating groups — prerequisite for all relational operations.
+- 2NF eliminates partial dependencies on composite keys — relevant only for tables with composite primary keys.
+- 3NF eliminates transitive dependencies on non-key attributes — removes most practical redundancy.
+- BCNF requires every FD left side to be a superkey — the strongest form based on FDs but may lose dependency preservation.
+- Lossless decomposition guarantees data recoverability — mandatory for all decompositions.
+- Dependency preservation ensures FDs can be enforced locally — 3NF synthesis guarantees both lossless join AND dependency preservation.
 - The 3NF synthesis algorithm (minimal cover, group by LHS, add key, remove redundants) is the standard approach.
-- BCNF is ideal but 3NF is practical Ã¢â‚¬â€ in real systems, we target BCNF but accept 3NF when BCNF would lose important constraints.
-- Denormalization is intentional redundancy for performance Ã¢â‚¬â€ apply only after profiling demonstrates a bottleneck.
+- BCNF is ideal but 3NF is practical — in real systems, we target BCNF but accept 3NF when BCNF would lose important constraints.
+- Denormalization is intentional redundancy for performance — apply only after profiling demonstrates a bottleneck.
 - In MySQL and PostgreSQL, use FK constraints, unique constraints, and materialized views to manage the normalization/performance tradeoff.
 
 ### One-Sentence Takeaways
 
 
-- **7.1:** Unnormalized tables suffer from insertion, update, and deletion anomalies caused by data redundancy Ã¢â‚¬â€ the address book analogy illustrates why separation of concerns matters.
-- **7.2:** Functional dependencies (X -> Y) are constraints that one set of attributes uniquely determines another Ã¢â‚¬â€ like recipe ingredients uniquely determined by dish name.
-- **7.3:** Armstrong's axioms (reflexivity, augmentation, transitivity) form a sound and complete FD inference system Ã¢â‚¬â€ all six rules derive from just these three.
-- **7.4:** Attribute closure (X+) finds all attributes determined by X Ã¢â‚¬â€ the key tool for finding keys, checking FDs, and normalization.
-- **7.5:** Candidate keys are minimal superkeys Ã¢â‚¬â€ found by classifying attributes into four categories and testing closure.
-- **7.6:** 1NF requires atomic attribute values and no repeating groups Ã¢â‚¬â€ enables all relational operations.
-- **7.7:** 2NF eliminates partial dependencies Ã¢â‚¬â€ non-key attributes must depend on the entire composite key.
-- **7.8:** 3NF eliminates transitive dependencies Ã¢â‚¬â€ a non-key attribute must not determine another non-key attribute.
-- **7.9:** BCNF requires every FD left side to be a superkey Ã¢â‚¬â€ stronger than 3NF but may lose dependency preservation.
-- **7.10:** Lossless decomposition guarantees JOIN recovers original rows Ã¢â‚¬â€ tested by checking if the common attribute is a key in one component.
-- **7.11:** Dependency preservation means all FDs enforceable on decomposed tables without JOINs Ã¢â‚¬â€ 3NF synthesis guarantees this.
+- **7.1:** Unnormalized tables suffer from insertion, update, and deletion anomalies caused by data redundancy — the address book analogy illustrates why separation of concerns matters.
+- **7.2:** Functional dependencies (X -> Y) are constraints that one set of attributes uniquely determines another — like recipe ingredients uniquely determined by dish name.
+- **7.3:** Armstrong's axioms (reflexivity, augmentation, transitivity) form a sound and complete FD inference system — all six rules derive from just these three.
+- **7.4:** Attribute closure (X+) finds all attributes determined by X — the key tool for finding keys, checking FDs, and normalization.
+- **7.5:** Candidate keys are minimal superkeys — found by classifying attributes into four categories and testing closure.
+- **7.6:** 1NF requires atomic attribute values and no repeating groups — enables all relational operations.
+- **7.7:** 2NF eliminates partial dependencies — non-key attributes must depend on the entire composite key.
+- **7.8:** 3NF eliminates transitive dependencies — a non-key attribute must not determine another non-key attribute.
+- **7.9:** BCNF requires every FD left side to be a superkey — stronger than 3NF but may lose dependency preservation.
+- **7.10:** Lossless decomposition guarantees JOIN recovers original rows — tested by checking if the common attribute is a key in one component.
+- **7.11:** Dependency preservation means all FDs enforceable on decomposed tables without JOINs — 3NF synthesis guarantees this.
 - **7.12-7.17:** C++ and Python implementations automate closure, key finding, 3NF/BCNF decomposition, and schema analysis.
-- **7.18:** Multiple candidate keys affect normalization Ã¢â‚¬â€ partial dependencies must be checked against ALL candidate keys.
+- **7.18:** Multiple candidate keys affect normalization — partial dependencies must be checked against ALL candidate keys.
 - **7.19:** Interview knowledge: BCNF vs 3NF tradeoffs, FD vs MVD, denormalization timing, normalization costs and benefits.
 - **7.20:** MySQL and PostgreSQL each provide features (constraints, indexes, materialized views) that support normalized designs while managing performance.
 

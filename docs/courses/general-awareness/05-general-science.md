@@ -1,4 +1,4 @@
-﻿# Chapter 5: General Science & Technology
+# Chapter 5: General Science & Technology
 
 ## Learning Objectives
 
@@ -25,9 +25,9 @@ By the end of this chapter, you will be able to:
 - Recall fundamental concepts in Physics: laws of motion, gravitation, thermodynamics, optics, nuclear physics
 - Explain basic Chemistry: atomic structure, chemical bonding, organic compounds, polymers
 - Describe the human body systems, nutrition, diseases, and vitamins
-- Trace ISRO's major missions â€” Chandrayaan, Mangalyaan, Gaganyaan, Aditya-L1
+- Trace ISRO's major missions — Chandrayaan, Mangalyaan, Gaganyaan, Aditya-L1
 - Identify India's defence systems, DRDO achievements, and nuclear programme
-- Understand emerging technologies â€” AI, Blockchain, Cybersecurity, 5G/6G, Quantum Computing
+- Understand emerging technologies — AI, Blockchain, Cybersecurity, 5G/6G, Quantum Computing
 - Solve exam-level MCQs on General Science and Technology
 
 ---
@@ -40,17 +40,17 @@ By the end of this chapter, you will be able to:
 
 | Law | Statement | Application |
 |-----|-----------|-------------|
-| First Law (Law of Inertia) | An object at rest stays at rest; an object in motion stays in motion unless acted upon by an external force | Car suddenly stopping â€” passengers lurch forward |
-| Second Law (F = ma) | Force = mass Ã— acceleration; the rate of change of momentum is proportional to applied force | Cricket fielder pulls hands back to reduce impact force |
+| First Law (Law of Inertia) | An object at rest stays at rest; an object in motion stays in motion unless acted upon by an external force | Car suddenly stopping — passengers lurch forward |
+| Second Law (F = ma) | Force = mass × acceleration; the rate of change of momentum is proportional to applied force | Cricket fielder pulls hands back to reduce impact force |
 | Third Law (Action-Reaction) | For every action, there is an equal and opposite reaction | Rocket propulsion, walking |
 
 **Other Important Physics Concepts:**
-- **Gravitation:** G = 6.67 Ã— 10â»Â¹Â¹ NÂ·mÂ²/kgÂ²; g = 9.8 m/sÂ² (acceleration due to gravity)
+- **Gravitation:** G = 6.67 × 10⁻¹¹ N·m²/kg²; g = 9.8 m/s² (acceleration due to gravity)
 - **Escape Velocity (Earth):** 11.2 km/s (minimum speed to escape Earth's gravity)
 - **Orbital Velocity:** ~7.8 km/s (speed required to orbit Earth in LEO)
-- **Sound:** Speed in air = 343 m/s at 20Â°C; cannot travel in vacuum
-- **Light:** Speed = 3 Ã— 10â¸ m/s in vacuum; travels fastest in vacuum, slowest in diamond
-- **Electromagnetic Spectrum:** Radio â†’ Micro â†’ IR â†’ Visible â†’ UV â†’ X-ray â†’ Gamma (increasing frequency/decreasing wavelength)
+- **Sound:** Speed in air = 343 m/s at 20°C; cannot travel in vacuum
+- **Light:** Speed = 3 × 10⁸ m/s in vacuum; travels fastest in vacuum, slowest in diamond
+- **Electromagnetic Spectrum:** Radio → Micro → IR → Visible → UV → X-ray → Gamma (increasing frequency/decreasing wavelength)
 
 #### 5.1.2 Thermodynamics
 
@@ -66,11 +66,11 @@ By the end of this chapter, you will be able to:
 | Topic | Key Points |
 |-------|------------|
 | Reflection | Angle of incidence = angle of reflection; mirror types: plane, concave, convex |
-| Refraction | Bending of light when passing from one medium to another; Snell's Law: nâ‚ sinÎ¸â‚ = nâ‚‚ sinÎ¸â‚‚ |
+| Refraction | Bending of light when passing from one medium to another; Snell's Law: n₁ sinθ₁ = n₂ sinθ₂ |
 | Lenses | Convex (converging), Concave (diverging); used in telescopes, microscopes, spectacles |
 | Dispersion | White light splits into 7 colours (VIBGYOR) through a prism |
-| Nuclear Fission | Splitting of heavy nucleus (U-235) â†’ energy released (Atom bomb, nuclear reactors) |
-| Nuclear Fusion | Joining of light nuclei (H â†’ He) â†’ massive energy (Sun, Hydrogen bomb) |
+| Nuclear Fission | Splitting of heavy nucleus (U-235) → energy released (Atom bomb, nuclear reactors) |
+| Nuclear Fusion | Joining of light nuclei (H → He) → massive energy (Sun, Hydrogen bomb) |
 
 ### 5.2 Chemistry
 
@@ -78,9 +78,9 @@ By the end of this chapter, you will be able to:
 
 | Particle | Charge | Mass | Location |
 |----------|--------|------|----------|
-| Proton (pâº) | +1.6 Ã— 10â»Â¹â¹ C | 1.672 Ã— 10â»Â²â· kg | Nucleus |
-| Neutron (nâ°) | 0 | 1.675 Ã— 10â»Â²â· kg | Nucleus |
-| Electron (eâ») | -1.6 Ã— 10â»Â¹â¹ C | 9.109 Ã— 10â»Â³Â¹ kg | Orbitals |
+| Proton (p⁺) | +1.6 × 10⁻¹⁹ C | 1.672 × 10⁻²⁷ kg | Nucleus |
+| Neutron (n⁰) | 0 | 1.675 × 10⁻²⁷ kg | Nucleus |
+| Electron (e⁻) | -1.6 × 10⁻¹⁹ C | 9.109 × 10⁻³¹ kg | Orbitals |
 
 **Key Concepts:**
 - **Atomic Number (Z):** Number of protons in the nucleus
@@ -94,22 +94,22 @@ By the end of this chapter, you will be able to:
 | Bond Type | Formation | Example | Properties |
 |-----------|-----------|---------|------------|
 | Ionic | Electron transfer between metal and non-metal | NaCl, KCl | High melting point, soluble in water |
-| Covalent | Electron sharing between non-metals | Hâ‚‚O, COâ‚‚, CHâ‚„ | Low melting point, poor conductors |
+| Covalent | Electron sharing between non-metals | H₂O, CO₂, CH₄ | Low melting point, poor conductors |
 | Metallic | Electron sea model | Fe, Cu, Al | Malleable, ductile, conductors |
-| Hydrogen Bond | Hydrogen between electronegative atoms | Hâ‚‚O â†’ Hâ‚‚O | Responsible for water's high boiling point |
+| Hydrogen Bond | Hydrogen between electronegative atoms | H₂O → H₂O | Responsible for water's high boiling point |
 
-**pH Scale:** 0â€“14; 7 = neutral (pure water); &lt;7 = acidic; &gt;7 = alkaline/basic
+**pH Scale:** 0–14; 7 = neutral (pure water); &lt;7 = acidic; &gt;7 = alkaline/basic
 
 #### 5.2.3 Organic Chemistry Basics
 
 | Compound | Formula | Uses |
 |----------|---------|------|
-| Methane | CHâ‚„ | Natural gas, fuel |
-| Ethanol | Câ‚‚Hâ‚…OH | Alcoholic beverages, fuel |
-| Acetic Acid | CHâ‚ƒCOOH | Vinegar |
-| Glucose | Câ‚†Hâ‚â‚‚Oâ‚† | Energy source in body |
-| Sucrose | Câ‚â‚‚Hâ‚‚â‚‚Oâ‚â‚ | Table sugar |
-| PVC | (Câ‚‚Hâ‚ƒCl)â‚™ | Pipes, cables, flooring |
+| Methane | CH₄ | Natural gas, fuel |
+| Ethanol | C₂H₅OH | Alcoholic beverages, fuel |
+| Acetic Acid | CH₃COOH | Vinegar |
+| Glucose | C₆H₁₂O₆ | Energy source in body |
+| Sucrose | C₁₂H₂₂O₁₁ | Table sugar |
+| PVC | (C₂H₃Cl)ₙ | Pipes, cables, flooring |
 
 #### 5.2.4 Polymers & Materials
 
@@ -208,12 +208,12 @@ mindmap
 
 | Term | Definition |
 |------|------------|
-| DNA | Deoxyribonucleic acid â€” double helix (Watson & Crick, 1953) |
+| DNA | Deoxyribonucleic acid — double helix (Watson & Crick, 1953) |
 | Gene | Segment of DNA that codes for a protein |
 | Chromosome | 23 pairs (46 total) in humans; 22 autosome + 1 sex chromosome |
-| RNA | Ribonucleic acid â€” single strand; mRNA, tRNA, rRNA |
+| RNA | Ribonucleic acid — single strand; mRNA, tRNA, rRNA |
 | Genetic Engineering | Direct manipulation of genes using recombinant DNA technology |
-| CRISPR-Cas9 | Gene editing tool â€” "molecular scissors" |
+| CRISPR-Cas9 | Gene editing tool — "molecular scissors" |
 | GMO | Genetically Modified Organism (e.g., Bt Cotton, Golden Rice) |
 
 ### 5.4 Indian Space Research Organisation (ISRO)
@@ -240,20 +240,20 @@ flowchart TD
 |---------|------|-------------|
 | Aryabhata | 1975 | First Indian satellite (launched by Soviet Union) |
 | SLV-3 | 1980 | First indigenous satellite launch vehicle (by APJ Abdul Kalam) |
-| PSLV | 1994 | Polar Satellite Launch Vehicle â€” workhorse of ISRO |
+| PSLV | 1994 | Polar Satellite Launch Vehicle — workhorse of ISRO |
 | Chandrayaan-1 | 2008 | Discovered water molecules on the Moon |
 | Mangalyaan (MOM) | 2014 | First Asian nation to reach Mars (first attempt success) |
 | Chandrayaan-2 | 2019 | Orbiter + lander (Vikram crashed) + rover (Pragyan) |
 | PSLV-C37 | 2017 | Launched 104 satellites in one mission (record) |
 | Chandrayaan-3 | 2023 | First to land on Moon's South Pole; Vikram + Pragyan |
-| Aditya-L1 | 2023 | India's first solar mission â€” halo orbit at L1 point |
+| Aditya-L1 | 2023 | India's first solar mission — halo orbit at L1 point |
 | Gaganyaan | 2025+ | First crewed space mission (4 astronauts selected) |
 
 **Launch Vehicles:**
 - **SLV-3:** India's first experimental satellite launch vehicle (1980)
 - **ASLV:** Augmented SLV (for heavier payloads)
 - **PSLV:** Most reliable (polar launches, Moon/Mars missions)
-- **GSLV:** Geo-synchronous Satellite Launch Vehicle (cryogenic engine â€” indigenous from GSLV-Mk III)
+- **GSLV:** Geo-synchronous Satellite Launch Vehicle (cryogenic engine — indigenous from GSLV-Mk III)
 - **LVM3 (GSLV Mk III):** Heaviest launcher; used for Chandrayaan-3, crewed Gaganyaan
 
 **ISRO Centres:**
@@ -274,21 +274,21 @@ flowchart TD
 | Agni-IV | IRBM | 4,000 km | Canister-based mobile launcher |
 | Agni-III | IRBM | 3,500 km | Two-stage solid propellant |
 | Prithvi-II | SRBM | 350 km | Liquid propellant |
-| BrahMos | Supersonic Cruise | 290â€“500 km | World's fastest supersonic cruise missile |
+| BrahMos | Supersonic Cruise | 290–500 km | World's fastest supersonic cruise missile |
 | Nirbhay | Subsonic Cruise | 1,000 km | India's first long-range cruise missile |
 | Akash | Surface-to-Air | 25 km | Medium-range SAM |
-| Nag | Anti-Tank | 4â€“7 km | Fire-and-forget (top-attack / direct) |
+| Nag | Anti-Tank | 4–7 km | Fire-and-forget (top-attack / direct) |
 | Shaurya | Hypersonic | 750 km | Canister-launched |
 | Astra | Air-to-Air BVR | 100 km | Beyond visual range (BVR) |
 
 **Nuclear Triad:**
 - India has a "No First Use" nuclear policy
-- Triad: Aircraft-bombs (Air Force) + Land-based missiles (Army/DRDO) + Submarine-launched (Navy â€” INS Arihant class)
-- Pokhran-I (1974): "Smiling Buddha" â€” first nuclear test
-- Pokhran-II (1998): Operation Shakti â€” 5 nuclear tests (declared India a nuclear weapons state)
+- Triad: Aircraft-bombs (Air Force) + Land-based missiles (Army/DRDO) + Submarine-launched (Navy — INS Arihant class)
+- Pokhran-I (1974): "Smiling Buddha" — first nuclear test
+- Pokhran-II (1998): Operation Shakti — 5 nuclear tests (declared India a nuclear weapons state)
 
 **Other Defence Systems:**
-- **Tejas:** Indigenous Light Combat Aircraft (LCA) â€” 4.5 generation
+- **Tejas:** Indigenous Light Combat Aircraft (LCA) — 4.5 generation
 - **Arjun MBT:** Main Battle Tank (by DRDO/CVRDE)
 - **INS Vikrant:** Indigenous aircraft carrier (2022)
 - **S-400 Triumf:** Air defence system (imported from Russia)
@@ -307,16 +307,16 @@ flowchart TD
 | Generative AI | Creating content (text, images, code) | ChatGPT, AI art, code assistants |
 
 **India AI Mission (2024):**
-- â‚¹10,372 crore allocation in Union Budget 2024-25
+- ₹10,372 crore allocation in Union Budget 2024-25
 - India AI compute capacity: 10,000+ GPUs
 - AI marketplace, datasets platform, and innovation centres
 
 #### 5.6.2 Blockchain
 
-- Distributed ledger technology â€” decentralised, immutable
+- Distributed ledger technology — decentralised, immutable
 - Applications: Cryptocurrency (Bitcoin, Ethereum), Smart contracts, Supply chain, CBDC
-- **CBDC (Central Bank Digital Currency):** Digital Rupee (eRupee) â€” launched by RBI in 2022-23 pilot
-- India's National Blockchain Framework (NBF) â€” developed by MeitY
+- **CBDC (Central Bank Digital Currency):** Digital Rupee (eRupee) — launched by RBI in 2022-23 pilot
+- India's National Blockchain Framework (NBF) — developed by MeitY
 
 #### 5.6.3 Cybersecurity
 
@@ -340,7 +340,7 @@ flowchart TD
 |--------|-----|----------------|
 | Speed | 10 Gbps | 100 Gbps - 1 Tbps |
 | Latency | 1 ms | 0.1 ms |
-| Frequency | Sub-6 GHz + mmWave | Sub-THz (100 GHzâ€“300 GHz) |
+| Frequency | Sub-6 GHz + mmWave | Sub-THz (100 GHz–300 GHz) |
 | Key Tech | MIMO, Beamforming | AI-native, Terahertz, Holographic |
 | India Rollout | 2022 (launched by PM) | Expected 2028-2030 |
 
@@ -348,7 +348,7 @@ flowchart TD
 
 - Uses qubits (superposition + entanglement) instead of classical bits
 - Potential: Cryptography, drug discovery, climate modelling, optimisation
-- **National Quantum Mission (2023):** â‚¹6,003 crore, 4 verticals â€” computing, communication, sensing, materials
+- **National Quantum Mission (2023):** ₹6,003 crore, 4 verticals — computing, communication, sensing, materials
 
 ---
 
@@ -374,12 +374,12 @@ interface ScienceQuestion {
 
 class ScienceQuizEngine {
   private facts: ScienceFact[] = [
-    { id: 1, statement: 'Light travels fastest in vacuum.', truthValue: true, explanation: 'Light travels at 3Ã—10â¸ m/s in vacuum; slower in any medium.' },
+    { id: 1, statement: 'Light travels fastest in vacuum.', truthValue: true, explanation: 'Light travels at 3×10⁸ m/s in vacuum; slower in any medium.' },
     { id: 2, statement: 'Sound can travel through a vacuum.', truthValue: false, explanation: 'Sound requires a medium (solid/liquid/gas) to travel; cannot travel through vacuum.' },
     { id: 3, statement: 'The escape velocity of Earth is 11.2 km/s.', truthValue: true, explanation: 'This is the minimum speed needed for an object to escape Earth\'s gravitational pull.' },
     { id: 4, statement: 'The atomic number of oxygen is 8.', truthValue: true, explanation: 'Oxygen has 8 protons, giving it atomic number 8 on the periodic table.' },
     { id: 5, statement: 'Vitamin C deficiency causes Rickets.', truthValue: false, explanation: 'Vitamin C deficiency causes Scurvy. Vitamin D deficiency causes Rickets.' },
-    { id: 6, statement: 'The human heart has 4 chambers.', truthValue: true, explanation: 'The heart has two atria and two ventricles â€” right atrium, right ventricle, left atrium, left ventricle.' },
+    { id: 6, statement: 'The human heart has 4 chambers.', truthValue: true, explanation: 'The heart has two atria and two ventricles — right atrium, right ventricle, left atrium, left ventricle.' },
   ];
 
   getQuestions(): ScienceQuestion[] {
@@ -413,18 +413,18 @@ const sciEngine = new ScienceQuizEngine();
 const verifications = sciEngine.verifyFacts([true, false, true, true, false, true]);
 console.log('Fact verification results:');
 verifications.forEach(v => {
-  console.log(`Fact ${v.factId}: ${v.correct ? 'âœ“' : 'âœ—'} â€” ${v.explanation}`);
+  console.log(`Fact ${v.factId}: ${v.correct ? '✓' : '✗'} — ${v.explanation}`);
 });
 ```
 
 **Output:**
 ```
-Fact 1: âœ“ â€” Light travels at 3Ã—10â¸ m/s in vacuum...
-Fact 2: âœ“ â€” Sound requires a medium...
-Fact 3: âœ“ â€” This is the minimum speed...
-Fact 4: âœ“ â€” Oxygen has 8 protons...
-Fact 5: âœ“ â€” Vitamin C deficiency causes Scurvy...
-Fact 6: âœ“ â€” The heart has two atria...
+Fact 1: ✓ — Light travels at 3×10⁸ m/s in vacuum...
+Fact 2: ✓ — Sound requires a medium...
+Fact 3: ✓ — This is the minimum speed...
+Fact 4: ✓ — Oxygen has 8 protons...
+Fact 5: ✓ — Vitamin C deficiency causes Scurvy...
+Fact 6: ✓ — The heart has two atria...
 ```
 
 ---
@@ -461,7 +461,7 @@ Chandrayaan-3's lander (Vikram) and rover (Pragyan) successfully soft-landed nea
 
 ---
 
-**Q3:** The "pH" of pure water at 25Â°C is:
+**Q3:** The "pH" of pure water at 25°C is:
 
 A) 0
 B) 5
@@ -472,7 +472,7 @@ D) 14
 <summary>Answer</summary>
 **Answer: C) 7**
 
-Pure water at 25Â°C has a pH of exactly 7, which is neutral. Water dissociates equally into Hâº and OHâ» ions, giving it neutral pH. pH below 7 is acidic; above 7 is alkaline/basic.
+Pure water at 25°C has a pH of exactly 7, which is neutral. Water dissociates equally into H⁺ and OH⁻ ions, giving it neutral pH. pH below 7 is acidic; above 7 is alkaline/basic.
 </details>
 
 ---
@@ -648,7 +648,7 @@ D) 5
 <summary>Answer</summary>
 **Answer: B) 3**
 
-The human brain has three main parts: Cerebrum (largest part â€” thinking, memory, voluntary movement), Cerebellum (balance, coordination of movement), and Medulla Oblongata (automatic functions like breathing, heart rate).
+The human brain has three main parts: Cerebrum (largest part — thinking, memory, voluntary movement), Cerebellum (balance, coordination of movement), and Medulla Oblongata (automatic functions like breathing, heart rate).
 </details>
 
 ---
@@ -712,7 +712,7 @@ D) 2024
 <summary>Answer</summary>
 **Answer: C) 2023**
 
-The National Quantum Mission was approved by the Union Cabinet in April 2023 with a budget of â‚¹6,003 crore (2023â€“2031). It aims to develop quantum computing (50-100 qubits), quantum communication (satellite-based), and quantum sensing.
+The National Quantum Mission was approved by the Union Cabinet in April 2023 with a budget of ₹6,003 crore (2023–2031). It aims to develop quantum computing (50-100 qubits), quantum communication (satellite-based), and quantum sensing.
 </details>
 
 ---
@@ -749,7 +749,7 @@ The HAL Tejas is an indigenous, single-engine, delta-wing, light combat aircraft
 
 ---
 
-### 5.8 Branches of Science â€” Complete Reference
+### 5.8 Branches of Science — Complete Reference
 
 | Branch | Study Of | Father/Founder |
 |--------|----------|----------------|
@@ -761,16 +761,16 @@ The HAL Tejas is an indigenous, single-engine, delta-wing, light combat aircraft
 | **Zoology** | Animals | Aristotle (Father of Zoology) |
 | **Geology** | Earth's structure, rocks, minerals | James Hutton (Father of Modern Geology) |
 | **Meteorology** | Weather, atmosphere | Aristotle (Meteorologica) |
-| **Oceanography** | Oceans | â€” |
+| **Oceanography** | Oceans | — |
 | **Ecology** | Environment, ecosystems | Ernst Haeckel |
 | **Genetics** | Genes, heredity | Gregor Mendel (Father of Genetics) |
 | **Microbiology** | Microorganisms | Louis Pasteur, Robert Koch |
-| **Biotechnology** | Tech using living organisms | â€” |
+| **Biotechnology** | Tech using living organisms | — |
 | **Paleontology** | Fossils, prehistoric life | Georges Cuvier |
 | **Psychology** | Mind, behaviour | Wilhelm Wundt (Father of Experimental Psychology) |
 | **Economics** | Production, distribution, consumption | Adam Smith (Father of Modern Economics) |
 | **Sociology** | Society, social behaviour | Auguste Comte (Father of Sociology) |
-| **Anthropology** | Human societies, cultures | â€” |
+| **Anthropology** | Human societies, cultures | — |
 | **Immunology** | Immune system | Edward Jenner (Father of Immunology) |
 | **Virology** | Viruses | Dmitri Ivanovsky |
 
@@ -819,8 +819,8 @@ The HAL Tejas is an indigenous, single-engine, delta-wing, light combat aircraft
 | Pascal's Law | Physics | Pressure applied to fluid is transmitted equally in all directions |
 | Bernoulli's Principle | Physics | In flowing fluid, pressure decreases when velocity increases |
 | Newton's Laws of Motion | Physics | Inertia, F=ma, Action-Reaction |
-| Coulomb's Law | Physics | F âˆ qâ‚qâ‚‚/rÂ² (electrostatic force) |
-| Ohm's Law | Physics | V = IR (voltage = current Ã— resistance) |
+| Coulomb's Law | Physics | F ∝ q₁q₂/r² (electrostatic force) |
+| Ohm's Law | Physics | V = IR (voltage = current × resistance) |
 | Faraday's Law | Physics | Changing magnetic field induces EMF |
 | Hubble's Law | Astronomy | Galaxies move away proportional to distance (expanding universe) |
 | Mendel's Laws | Genetics | Dominance, Segregation, Independent Assortment |
@@ -834,35 +834,35 @@ The HAL Tejas is an indigenous, single-engine, delta-wing, light combat aircraft
 | Chemical | Formula | Common Name | Use |
 |----------|---------|-------------|-----|
 | NaCl | Sodium chloride | Common salt | Cooking, preservative |
-| NaHCOâ‚ƒ | Sodium bicarbonate | Baking soda | Cooking, antacid |
-| Naâ‚‚COâ‚ƒ | Sodium carbonate | Washing soda | Cleaning, glass-making |
+| NaHCO₃ | Sodium bicarbonate | Baking soda | Cooking, antacid |
+| Na₂CO₃ | Sodium carbonate | Washing soda | Cleaning, glass-making |
 | NaOH | Sodium hydroxide | Caustic soda | Soap, paper, drain cleaner |
 | CaO | Calcium oxide | Quicklime | Cement, whitewashing |
-| Ca(OH)â‚‚ | Calcium hydroxide | Slaked lime | Mortar, whitewashing |
-| CaSOâ‚„Â·Â½Hâ‚‚O | Calcium sulphate hemihydrate | Plaster of Paris | Casts, sculptures |
-| CaCOâ‚ƒ | Calcium carbonate | Limestone/Chalk | Building material |
-| MgSOâ‚„ | Magnesium sulphate | Epsom salt | Bath salt, laxative |
-| Hâ‚‚SOâ‚„ | Sulphuric acid | Oil of vitriol | Industrial chemical (most produced) |
-| HNOâ‚ƒ | Nitric acid | Aqua fortis | Fertilizers, explosives |
+| Ca(OH)₂ | Calcium hydroxide | Slaked lime | Mortar, whitewashing |
+| CaSO₄·½H₂O | Calcium sulphate hemihydrate | Plaster of Paris | Casts, sculptures |
+| CaCO₃ | Calcium carbonate | Limestone/Chalk | Building material |
+| MgSO₄ | Magnesium sulphate | Epsom salt | Bath salt, laxative |
+| H₂SO₄ | Sulphuric acid | Oil of vitriol | Industrial chemical (most produced) |
+| HNO₃ | Nitric acid | Aqua fortis | Fertilizers, explosives |
 | HCl | Hydrochloric acid | Muriatic acid | Cleaning, metal processing |
-| CHâ‚ƒCOOH | Acetic acid | Vinegar (5-8% solution) | Cooking, preservative |
-| Câ‚‚Hâ‚…OH | Ethanol | Alcohol | Beverage, fuel, disinfectant |
-| Hâ‚‚Oâ‚‚ | Hydrogen peroxide | â€” | Bleaching, disinfectant |
-| NHâ‚ƒ | Ammonia | â€” | Cleaning, fertilizer |
-| KMnOâ‚„ | Potassium permanganate | â€” | Disinfectant, water purification |
-| Câ‚†Hâ‚â‚‚Oâ‚† | Glucose | Dextrose | Energy source |
-| Câ‚â‚‚Hâ‚‚â‚‚Oâ‚â‚ | Sucrose | Table sugar | Sweetener |
-| Câ‚†Hâ‚† | Benzene | â€” | Chemical solvent |
+| CH₃COOH | Acetic acid | Vinegar (5-8% solution) | Cooking, preservative |
+| C₂H₅OH | Ethanol | Alcohol | Beverage, fuel, disinfectant |
+| H₂O₂ | Hydrogen peroxide | — | Bleaching, disinfectant |
+| NH₃ | Ammonia | — | Cleaning, fertilizer |
+| KMnO₄ | Potassium permanganate | — | Disinfectant, water purification |
+| C₆H₁₂O₆ | Glucose | Dextrose | Energy source |
+| C₁₂H₂₂O₁₁ | Sucrose | Table sugar | Sweetener |
+| C₆H₆ | Benzene | — | Chemical solvent |
 
-### 5.12 Blood Groups and Diseases â€” Quick Reference
+### 5.12 Blood Groups and Diseases — Quick Reference
 
 **Blood Groups:**
 - **ABO System:** A, B, AB, O
-- **Rh Factor:** Positive (+) or Negative (âˆ’)
-- **Universal Donor:** Oâˆ’ (no antigens: safe for all)
+- **Rh Factor:** Positive (+) or Negative (−)
+- **Universal Donor:** O− (no antigens: safe for all)
 - **Universal Recipient:** AB+ (no antibodies: can receive all)
 - **Most Common:** O+ (~37% population)
-- **Least Common:** ABâˆ’ (~1%)
+- **Least Common:** AB− (~1%)
 - **Blood Composition:** Plasma (55%) + Blood cells (45%: RBCs, WBCs, Platelets)
 - **Function of RBC:** Oxygen transport (contain haemoglobin)
 - **Function of WBC:** Immune defence
@@ -959,7 +959,7 @@ class ScienceQuizEngine {
     });
     console.log(`\nCheck your answers against the key below:`);
     this.questions.forEach((q, i) => {
-      console.log(`Q${i + 1}: ${q.options[q.correctIndex]} â€” ${q.explanation}`);
+      console.log(`Q${i + 1}: ${q.options[q.correctIndex]} — ${q.explanation}`);
     });
   }
 }
@@ -986,16 +986,16 @@ Vitamin D is synthesized in the skin when exposed to UV-B radiation from sunligh
 
 **Q22:** The chemical formula of "Methane" is:
 
-A) CHâ‚„
-B) Câ‚‚Hâ‚†
-C) Câ‚ƒHâ‚ˆ
-D) COâ‚‚
+A) CH₄
+B) C₂H₆
+C) C₃H₈
+D) CO₂
 
 <details>
 <summary>Answer</summary>
-**Answer: A) CHâ‚„**
+**Answer: A) CH₄**
 
-Methane is the simplest hydrocarbon (alkane). It is the primary component of natural gas and a potent greenhouse gas (25x more warming potential than COâ‚‚). Câ‚‚Hâ‚† = Ethane, Câ‚ƒHâ‚ˆ = Propane.
+Methane is the simplest hydrocarbon (alkane). It is the primary component of natural gas and a potent greenhouse gas (25x more warming potential than CO₂). C₂H₆ = Ethane, C₃H₈ = Propane.
 </details>
 
 **Q23:** The "Bakra Dam" is built on which river?
@@ -1045,23 +1045,23 @@ Aryabhata was India's first satellite, launched by the Soviet Union from Kapusti
 ## Summary
 
 - **Newton's Laws** form the basis of classical mechanics; **Gravitation** governs planetary motion and everyday objects.
-- **Sound** travels at 343 m/s (air) and requires a medium; **Light** travels at 3Ã—10â¸ m/s (vacuum) and can travel through vacuum.
-- **Atomic structure:** Protons (+), Neutrons (neutral), Electrons (âˆ’). **Chemical bonding:** Ionic (electron transfer), Covalent (electron sharing).
+- **Sound** travels at 343 m/s (air) and requires a medium; **Light** travels at 3×10⁸ m/s (vacuum) and can travel through vacuum.
+- **Atomic structure:** Protons (+), Neutrons (neutral), Electrons (−). **Chemical bonding:** Ionic (electron transfer), Covalent (electron sharing).
 - **Human body:** 11 organ systems, 206 bones, 3-part brain, 4-chamber heart, largest organ = skin.
 - **Vitamins:** A (night blindness), B3 (pellagra), C (scurvy), D (rickets), K (blood clotting).
-- **ISRO:** From Aryabhata (1975) to Chandrayaan-3 (2023) and Aditya-L1 (2023) â€” India's space journey.
+- **ISRO:** From Aryabhata (1975) to Chandrayaan-3 (2023) and Aditya-L1 (2023) — India's space journey.
 - **DRDO:** Agni-V (ICBM), BrahMos (supersonic cruise), Tejas (LCA), INS Arihant (nuclear submarine).
-- **Emerging Tech:** AI (India AI Mission â‚¹10,372 cr), Blockchain (CBDC eRupee), Quantum Computing (National Quantum Mission â‚¹6,003 cr), 5G/6G.
+- **Emerging Tech:** AI (India AI Mission ₹10,372 cr), Blockchain (CBDC eRupee), Quantum Computing (National Quantum Mission ₹6,003 cr), 5G/6G.
 
 ## Practical Takeaways
 
-1. **For IBPS SO / SBI / RBI Exams:** Focus on ISRO missions, DRDO missiles, and vitamins/nutrition â€” these are the most frequently tested science topics in IT officer exams.
-2. **ISRO Mnemonic:** "Aryabhata SLV PSLV Chandrayaan Mangalyaan" â€” trace the timeline in order.
+1. **For IBPS SO / SBI / RBI Exams:** Focus on ISRO missions, DRDO missiles, and vitamins/nutrition — these are the most frequently tested science topics in IT officer exams.
+2. **ISRO Mnemonic:** "Aryabhata SLV PSLV Chandrayaan Mangalyaan" — trace the timeline in order.
 3. **Vitamins Trick:** A-Night (A = Night blindness), B3-Pellagra (3 Ps), C-Scurvy (C = Citrus), D-Rickets (D = Deformed bones), K-Clotting (K = Koagulation).
 4. **Missile Categories:** A (Agni = Strategic/Ballistic), B (BrahMos = Supersonic Cruise), C (Akash = SAM), D (Nag = Anti-tank), E (Nirbhay = Cruise), F (Prithvi = SRBM).
 5. **Nuclear vs Fusion:** Fission = splitting (used in reactors and atom bombs); Fusion = joining (used in Sun and hydrogen bombs).
-6. **Latest Updates:** ISRO and DRDO tests are current affairs â€” follow PIB and ISRO's official website for the latest mission updates.
-7. **AI & Technology:** Expect 1-2 questions on emerging tech â€” memorise the India AI Mission budget (â‚¹10,372 cr) and National Quantum Mission (â‚¹6,003 cr).
+6. **Latest Updates:** ISRO and DRDO tests are current affairs — follow PIB and ISRO's official website for the latest mission updates.
+7. **AI & Technology:** Expect 1-2 questions on emerging tech — memorise the India AI Mission budget (₹10,372 cr) and National Quantum Mission (₹6,003 cr).
 
 ## Chapter Quiz
 
@@ -1076,21 +1076,21 @@ D) Going to Mars
 <summary>Answer</summary>
 **Answer: B) Launching 104 satellites in one go**
 
-PSLV-C37 (February 2017) launched a record 104 satellites â€” 3 Indian (including Cartosat-2D) and 101 foreign satellites â€” in a single mission. This broke the previous record of 37 satellites set by Russia.
+PSLV-C37 (February 2017) launched a record 104 satellites — 3 Indian (including Cartosat-2D) and 101 foreign satellites — in a single mission. This broke the previous record of 37 satellites set by Russia.
 </details>
 
 **Q2:** Which of the following is a greenhouse gas?
 
-A) Oxygen (Oâ‚‚)
-B) Nitrogen (Nâ‚‚)
-C) Methane (CHâ‚„)
-D) Hydrogen (Hâ‚‚)
+A) Oxygen (O₂)
+B) Nitrogen (N₂)
+C) Methane (CH₄)
+D) Hydrogen (H₂)
 
 <details>
 <summary>Answer</summary>
-**Answer: C) Methane (CHâ‚„)**
+**Answer: C) Methane (CH₄)**
 
-Greenhouse gases include COâ‚‚, CHâ‚„ (methane), Nâ‚‚O, Hâ‚‚O vapour, and fluorinated gases. Methane is 25 times more potent than COâ‚‚ in trapping heat. It is released from agriculture (livestock, rice), landfills, and natural gas extraction.
+Greenhouse gases include CO₂, CH₄ (methane), N₂O, H₂O vapour, and fluorinated gases. Methane is 25 times more potent than CO₂ in trapping heat. It is released from agriculture (livestock, rice), landfills, and natural gas extraction.
 </details>
 
 **Q3:** The "INS Arihant" is India's:
@@ -1104,7 +1104,7 @@ D) Coast guard vessel
 <summary>Answer</summary>
 **Answer: B) Nuclear-powered submarine**
 
-INS Arihant (Sanskrit: "Slayer of Enemies") is India's first indigenously built nuclear-powered ballistic missile submarine. Commissioned in 2016, it completed India's nuclear triad â€” the ability to launch nuclear weapons from land, air, and sea.
+INS Arihant (Sanskrit: "Slayer of Enemies") is India's first indigenously built nuclear-powered ballistic missile submarine. Commissioned in 2016, it completed India's nuclear triad — the ability to launch nuclear weapons from land, air, and sea.
 </details>
 
 **Q4:** The normal blood pressure for a healthy adult is:
@@ -1123,16 +1123,16 @@ Normal blood pressure is 120/80 mmHg (systolic/diastolic). 120 = pressure during
 
 **Q5:** The chemical formula of Ozone is:
 
-A) Oâ‚‚
-B) Oâ‚ƒ
-C) Oâ‚„
-D) Hâ‚‚O
+A) O₂
+B) O₃
+C) O₄
+D) H₂O
 
 <details>
 <summary>Answer</summary>
-**Answer: B) Oâ‚ƒ**
+**Answer: B) O₃**
 
-Ozone (Oâ‚ƒ) is a molecule consisting of three oxygen atoms. It is found in the stratosphere (ozone layer, 15-30 km altitude) where it absorbs harmful UV-B radiation. Ozone depletion is caused by CFCs (chlorofluorocarbons), regulated by the Montreal Protocol (1987).
+Ozone (O₃) is a molecule consisting of three oxygen atoms. It is found in the stratosphere (ozone layer, 15-30 km altitude) where it absorbs harmful UV-B radiation. Ozone depletion is caused by CFCs (chlorofluorocarbons), regulated by the Montreal Protocol (1987).
 </details>
 
 ---
@@ -1148,10 +1148,10 @@ C) Ohm
 D) Watt
 
 **2.** What is the boiling point of water at sea level?
-A) 90Â°C
-B) 100Â°C
-C) 110Â°C
-D) 120Â°C
+A) 90°C
+B) 100°C
+C) 110°C
+D) 120°C
 
 **3.** Which planet is known as the "Red Planet"?
 A) Venus
@@ -1180,7 +1180,7 @@ D) Triglycerides
 **7.** The chemical formula of common salt is:
 A) KCl
 B) NaCl
-C) Naâ‚‚COâ‚ƒ
+C) Na₂CO₃
 D) NaOH
 
 **8.** Which element is present in all organic compounds?
@@ -1203,13 +1203,13 @@ D) Mansonia
 
 ### Section B: Fill in the Blanks
 
-**11.** The acceleration due to gravity (g) is approximately __________ m/sÂ².
+**11.** The acceleration due to gravity (g) is approximately __________ m/s².
 
 **12.** The SI unit of frequency is the __________.
 
 **13.** The chemical symbol for Iron is __________.
 
-**14.** The normal human body temperature is __________ Â°C.
+**14.** The normal human body temperature is __________ °C.
 
 **15.** The __________ is the smallest bone in the human body.
 
@@ -1245,9 +1245,9 @@ D) Mansonia
 
 **30.** The human body has 23 pairs of chromosomes. (T/F)
 
-### Section D: Additional MCQs (Exam Focus â€” Science)
+### Section D: Additional MCQs (Exam Focus — Science)
 
-**31.** The "pH" of pure water at 25Â°C is:
+**31.** The "pH" of pure water at 25°C is:
 
 A) 0
 B) 7
@@ -1256,10 +1256,10 @@ D) 14
 
 **32.** Which of the following is NOT a greenhouse gas?
 
-A) Carbon dioxide (COâ‚‚)
-B) Methane (CHâ‚„)
-C) Oxygen (Oâ‚‚)
-D) Nitrous oxide (Nâ‚‚O)
+A) Carbon dioxide (CO₂)
+B) Methane (CH₄)
+C) Oxygen (O₂)
+D) Nitrous oxide (N₂O)
 
 **33.** The atomic number of Carbon is:
 
@@ -1291,10 +1291,10 @@ D) Louis Pasteur
 
 **37.** What is the normal haemoglobin level in adult males?
 
-A) 10â€“12 g/dL
-B) 13â€“17 g/dL
-C) 18â€“22 g/dL
-D) 23â€“25 g/dL
+A) 10–12 g/dL
+B) 13–17 g/dL
+C) 18–22 g/dL
+D) 23–25 g/dL
 
 **38.** The "HAL Tejas" is an example of a:
 
@@ -1324,11 +1324,11 @@ D) Watt
 
 **Section A (1-10):**
 1. C) Ohm
-2. B) 100Â°C (212Â°F)
+2. B) 100°C (212°F)
 3. C) Mars
-4. C) Valiamala (LPSC â€” Liquid Propulsion Systems Centre, Valiamala, Kerala)
-5. B) BCG (Bacille Calmette-GuÃ©rin)
-6. C) HDL (High-Density Lipoprotein) â€” "Happy" cholesterol; LDL is "bad" cholesterol
+4. C) Valiamala (LPSC — Liquid Propulsion Systems Centre, Valiamala, Kerala)
+5. B) BCG (Bacille Calmette-Guérin)
+6. C) HDL (High-Density Lipoprotein) — "Happy" cholesterol; LDL is "bad" cholesterol
 7. B) NaCl (Sodium chloride)
 8. C) Carbon (organic compounds contain carbon as the essential element)
 9. B) Voice box (contains vocal cords)
@@ -1338,18 +1338,18 @@ D) Watt
 11. 9.8
 12. Hertz (Hz)
 13. Fe (from Latin "Ferrum")
-14. 37 (approx. 98.6Â°F)
+14. 37 (approx. 98.6°F)
 15. Stapes (in the middle ear)
 16. Titan
 17. Mangalyaan / Mars Orbiter Mission (2013)
 18. INS Vikrant
-19. Nitrogen (Nâ‚‚, 78%)
+19. Nitrogen (N₂, 78%)
 20. Iron
 
 **Section C (21-30):**
-21. T (G is a universal constant: 6.67Ã—10â»Â¹Â¹ NÂ·mÂ²/kgÂ²)
+21. T (G is a universal constant: 6.67×10⁻¹¹ N·m²/kg²)
 22. T (Sound travels faster in water ~1,500 m/s vs ~343 m/s in air)
-23. F (Many bacteria are beneficial â€” gut bacteria, nitrogen-fixing bacteria, etc.)
+23. F (Many bacteria are beneficial — gut bacteria, nitrogen-fixing bacteria, etc.)
 24. T
 25. F (The quantum of light is a photon; a proton is a subatomic particle in the nucleus)
 26. T (The liver has remarkable regenerative capacity)
@@ -1359,18 +1359,18 @@ D) Watt
 30. T
 
 **Section D (31-40):**
-31. B) 7 (pure water is neutral; pH scale 0â€“14; 7 = neutral, <7 = acidic, >7 = alkaline)
-32. C) Oâ‚‚ (Oxygen is not a greenhouse gas; GHGs are COâ‚‚, CHâ‚„, Nâ‚‚O, Hâ‚‚O vapour, F-gases)
+31. B) 7 (pure water is neutral; pH scale 0–14; 7 = neutral, <7 = acidic, >7 = alkaline)
+32. C) O₂ (Oxygen is not a greenhouse gas; GHGs are CO₂, CH₄, N₂O, H₂O vapour, F-gases)
 33. B) 6 (Carbon has atomic number 6; 6 protons, 6 electrons; symbol C)
 34. B) Heart (Electrocardiogram; records electrical signals from the heart to check rhythm and function)
 35. B) Saturn (146 known moons as of 2024; Jupiter has 95; Saturn recently overtook Jupiter)
 36. B) Watson and Crick (1953; Nobel Prize 1962; based on X-ray data by Rosalind Franklin)
-37. B) 13â€“17 g/dL (adult males; adult females: 12â€“15 g/dL; <12 usually indicates anaemia)
+37. B) 13–17 g/dL (adult males; adult females: 12–15 g/dL; <12 usually indicates anaemia)
 38. B) Fighter aircraft (Light Combat Aircraft; 4.5 generation; developed by HAL/ADA)
 39. B) C.V. Raman (discovered in 1928; Nobel Prize in Physics 1930; first Asian to win a science Nobel)
-40. B) Candela (cd; one of the 7 SI base units; Lux = lumen/mÂ²; Lumen = candelaÂ·steradian)
+40. B) Candela (cd; one of the 7 SI base units; Lux = lumen/m²; Lumen = candela·steradian)
 </details>
 
 ---
 
-*Proceed to Chapter 6 â€” Current Affairs 2024*
+*Proceed to Chapter 6 — Current Affairs 2024*

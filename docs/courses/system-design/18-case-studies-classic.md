@@ -1,4 +1,4 @@
-﻿# Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin
+# Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin
 > **Previous:** [17 Observability Resiliency](./17-observability-resiliency.md) | **Next:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md)
 
 ---
@@ -47,7 +47,7 @@ flowchart LR
 ```
 |--------|---------|
 | **Scope** | Classic case studies: URL shortener, rate limiter, chat system |
-| **Key Concepts** | Core topics covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| **Key Concepts** | Core topics covered in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin |
 | **Design Skills** | System decomposition, architecture comparison |
 | **Interview Angle** | Frequently tested in system design interviews |
 
@@ -55,7 +55,7 @@ flowchart LR
 
 | Aspect | Details |
 |--------|---------|
-| **Scope** | Core concepts covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| **Scope** | Core concepts covered in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin |
 | **Key Concepts** | Theory, Case Study: URL Shortener, Case Study: Rate Limiter, Case Study: Pastebin |
 | **Design Skills** | Concept mastery and practical application |
 | **Interview Angle** | Common system design interview topic |
@@ -116,7 +116,7 @@ Every system design begins with precise functional and non-functional requiremen
 | Write QPS | ~40 writes per second (100M / ~2.6M sec/month) |
 | Read QPS | ~400 reads per second (10:1 read-to-write ratio) |
 | Latency | Redirects under 10ms end-to-end |
-| Availability | 99.99% (four nines) â€” redirects must always work |
+| Availability | 99.99% (four nines) — redirects must always work |
 
 **Rate Limiter Requirements**
 
@@ -154,26 +154,26 @@ Orders of magnitude matter. We compute storage, bandwidth, and QPS before choosi
 
 **URL Shortener Storage**
 
-- 100M URLs/month Ã— 12 months = 1.2B URLs/year
+- 100M URLs/month × 12 months = 1.2B URLs/year
 - Average entry: short key (8 bytes) + long URL (2048 bytes avg) + created_at (8 bytes) + user_id (8 bytes) + metadata (~200 bytes) = ~2.3KB
-- Total per year: 1.2B Ã— 2.3KB Ëœ 2.8TB
+- Total per year: 1.2B × 2.3KB ˜ 2.8TB
 - With replication factor 3 and Cassandra overhead: ~10TB/year
-- Cache: 80% of reads hit 20% of URLs (Pareto). Top 200M URLs in Redis: 200M Ã— 2.3KB Ëœ 460GB. Use Redis Cluster with sharding.
-- Bandwidth writes: 40 QPS Ã— 2.3KB Ëœ 92KB/sec (trivial)
-- Bandwidth reads: 400 QPS Ã— 2.3KB Ëœ 920KB/sec
+- Cache: 80% of reads hit 20% of URLs (Pareto). Top 200M URLs in Redis: 200M × 2.3KB ˜ 460GB. Use Redis Cluster with sharding.
+- Bandwidth writes: 40 QPS × 2.3KB ˜ 92KB/sec (trivial)
+- Bandwidth reads: 400 QPS × 2.3KB ˜ 920KB/sec
 
 **Rate Limiter Storage**
 
-- 100M users Ã— ~200 bytes/user (counter state) = 20GB if stored per-user
+- 100M users × ~200 bytes/user (counter state) = 20GB if stored per-user
 - Redis optimization: window data per key is small (<100 bytes)
 - Total Redis memory: ~2-4GB for 10M active daily users
 - Network: rate limiter check adds ~1 round trip per request (or zero with local cache)
 
 **Pastebin Storage**
 
-- 1M pastes/day Ã— 10KB avg = 10GB/day raw content
-- 30 days Ã— 10GB = 300GB hot storage
-- Metadata: 1M Ã— 1KB = 1GB/day ? 30GB/month
+- 1M pastes/day × 10KB avg = 10GB/day raw content
+- 30 days × 10GB = 300GB hot storage
+- Metadata: 1M × 1KB = 1GB/day ? 30GB/month
 - Object store (S3) costs: ~$23/TB/month for standard tier
 - Transition infrequent-access pastes to S3 Glacier after 30 days
 - CDN: cache popular pastes (Pareto: 10% of pastes serve 90% of reads)
@@ -236,7 +236,7 @@ The following table captures the rationale for each technology choice in the Pas
 ### Deep Dive Phase
 
 
-Now we examine the hard problems â€” the details that separate a toy from a production system.
+Now we examine the hard problems — the details that separate a toy from a production system.
 
 **Comparative Analysis: Three Approaches to Unique ID Generation**
 
@@ -263,11 +263,11 @@ def encode_base62(num):
     return ''.join(reversed(result))
 ```
 
-With 7 characters, Base62 gives us 62^7 Ëœ 3.5 trillion unique keys. At 100M new URLs per month, this space lasts ~3,500 years.
+With 7 characters, Base62 gives us 62^7 ˜ 3.5 trillion unique keys. At 100M new URLs per month, this space lasts ~3,500 years.
 
 **URL Shortener Deep Dive**
 
-Hashing strategy is the first architectural decision. Base62 encoding (a-z, A-Z, 0-9 = 62 characters) produces short, human-readable keys. With 7 characters, we have 62^7 Ëœ 3.5 trillion unique keys. MD5 hash truncation produces a 128-bit hash, truncated to the first 7 bytes, then Base62 encoded. The risk is collision: with 3.5 trillion keys and a truncated hash, the birthday paradox gives a ~50% collision probability at ~2.4 billion keys. For a URL shortener, collisions are unacceptable because they would redirect one URL to another.
+Hashing strategy is the first architectural decision. Base62 encoding (a-z, A-Z, 0-9 = 62 characters) produces short, human-readable keys. With 7 characters, we have 62^7 ˜ 3.5 trillion unique keys. MD5 hash truncation produces a 128-bit hash, truncated to the first 7 bytes, then Base62 encoded. The risk is collision: with 3.5 trillion keys and a truncated hash, the birthday paradox gives a ~50% collision probability at ~2.4 billion keys. For a URL shortener, collisions are unacceptable because they would redirect one URL to another.
 
 Collision resolution strategies include:
 - **Append a counter**: When a collision is detected, append a sequence number and re-hash.
@@ -306,7 +306,7 @@ With 64 shards and replication factor 3, each shard handles ~20M URLs/year. Each
 
 **Read Replica Lag and Consistency**
 
-The cache-aside pattern with write-through ensures that recent writes are always in Redis. Database read replicas may lag by up to 100ms. The consistency guarantee: after a successful write, the next read hits Redis (populated during write). If Redis is down and the read replica has not yet replicated the write, the user sees a stale redirect. For a URL shortener, this is acceptable â€” the user created the URL and the redirect works, just pointing to an old URL if they recently edited it.
+The cache-aside pattern with write-through ensures that recent writes are always in Redis. Database read replicas may lag by up to 100ms. The consistency guarantee: after a successful write, the next read hits Redis (populated during write). If Redis is down and the read replica has not yet replicated the write, the user sees a stale redirect. For a URL shortener, this is acceptable — the user created the URL and the redirect works, just pointing to an old URL if they recently edited it.
 
 **Rate Limiter Deep Dive**
 
@@ -323,10 +323,10 @@ Four algorithm choices with distinct trade-offs:
 **Sliding Window Counter**: The compromise. Track the current window's counter and the previous window's counter. Calculate:
 
 ```
-weighted_count = current_count + previous_count Ã— (window_elapsed / window_size)
+weighted_count = current_count + previous_count × (window_elapsed / window_size)
 ```
 
-This approximates the true sliding window rate with O(1) storage per user â€” just two counters per key. Redis Lua script:
+This approximates the true sliding window rate with O(1) storage per user — just two counters per key. Redis Lua script:
 
 ```lua
 local key = KEYS[1]
@@ -670,7 +670,7 @@ Client ? ELB ? API Gateway (Zuul/Kong)
 
 The token bucket variant used here is "burst-aware." Each user is configured with `max_burst` (the bucket capacity) and `refill_rate` (tokens per second). Enterprise customers get a larger bucket and faster refill.
 
-Redis Lua scripting ensures atomicity. The script is only ~20 lines but eliminates race conditions between checking and incrementing the counter. Without Lua, two concurrent requests could both read count=99, both increment, and both pass â€” allowing 101 requests instead of 100.
+Redis Lua scripting ensures atomicity. The script is only ~20 lines but eliminates race conditions between checking and incrementing the counter. Without Lua, two concurrent requests could both read count=99, both increment, and both pass — allowing 101 requests instead of 100.
 
 Local caching is tiered by user plan. Free-tier users have no local cache (every request hits Redis). Enterprise users get a local batch of 100 tokens. This incentivizes upgrades while protecting the free-tier from abuse.
 
@@ -685,7 +685,7 @@ The fundamental challenge of distributed rate limiting is maintaining accurate s
 | Local batch + background sync | Eventually consistent | +0ms | Very low | Bounded by sync interval |
 | CRDT counters (Redis-free) | Eventual | +0ms | None | Bounded by merge interval |
 
-The production system uses a tiered approach: free-tier users check Redis on every request (strong consistency, every request counted accurately). Tier-2 users get a local cache of 10 tokens. Enterprise users get 100. The overshoot is bounded: at worst, a user exceeds their limit by (N Ã— number_of_servers) tokens per window. With N=100 and 50 servers, the worst-case overshoot is 5,000 requests â€” acceptable for enterprise SLAs that specify "burst up to 10x".
+The production system uses a tiered approach: free-tier users check Redis on every request (strong consistency, every request counted accurately). Tier-2 users get a local cache of 10 tokens. Enterprise users get 100. The overshoot is bounded: at worst, a user exceeds their limit by (N × number_of_servers) tokens per window. With N=100 and 50 servers, the worst-case overshoot is 5,000 requests — acceptable for enterprise SLAs that specify "burst up to 10x".
 
 **Rate Limit Header Design**
 
@@ -747,7 +747,7 @@ Client ? CloudFront CDN ? ELB ? EC2 App Servers
 
 ### Deep Dive
 
-Content hashing for deduplication is the defining feature. SHA-256(content) produces a 64-character digest that serves as the S3 object key. The deduplication check is a simple primary key lookup in PostgreSQL. If the hash exists, the system returns the existing paste URL â€” but only if the visibility settings are compatible. A private paste that happens to match a public paste is treated as a new object (the hash is salted with a user-specific nonce).
+Content hashing for deduplication is the defining feature. SHA-256(content) produces a 64-character digest that serves as the S3 object key. The deduplication check is a simple primary key lookup in PostgreSQL. If the hash exists, the system returns the existing paste URL — but only if the visibility settings are compatible. A private paste that happens to match a public paste is treated as a new object (the hash is salted with a user-specific nonce).
 
 The short URL for public pastes is generated from a truncated portion of the hash (first 8 hex characters ? 4 billion unique IDs) or from a sequential ID with the hash used only for storage deduplication.
 
@@ -776,10 +776,10 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
-| Case Study: URL Shortener | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
-| Case Study: Rate Limiter | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
-| Case Study: Pastebin | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+| Theory | Core topic covered in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+| Case Study: URL Shortener | Core topic covered in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+| Case Study: Rate Limiter | Core topic covered in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+| Case Study: Pastebin | Core topic covered in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
 
 ---
 
@@ -787,10 +787,10 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
-| Case Study: URL Shortener | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
-| Case Study: Rate Limiter | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
-| Case Study: Pastebin | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| Theory | Fundamental concept for Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin |
+| Case Study: URL Shortener | Fundamental concept for Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin |
+| Case Study: Rate Limiter | Fundamental concept for Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin |
+| Case Study: Pastebin | Fundamental concept for Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin |
 
 ---
 
@@ -809,11 +809,11 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 | # | Question | A | B | C | D | Answer |
 |---|----------|---|---|---|---|--------|
-| 1 | What is the primary purpose of KGS in a URL shortener? | Key Generation Service â€” pre-generates unique keys to avoid write-path DB contention | Key Gateway Service â€” routes traffic to key servers | Knowledge Graph Service â€” stores URL metadata | Kernel Gateway Service â€” OS-level routing | **A** |
+| 1 | What is the primary purpose of KGS in a URL shortener? | Key Generation Service — pre-generates unique keys to avoid write-path DB contention | Key Gateway Service — routes traffic to key servers | Knowledge Graph Service — stores URL metadata | Kernel Gateway Service — OS-level routing | **A** |
 | 2 | Which rate limiting algorithm perfectly tracks the true rate without a boundary problem? | Token Bucket | Fixed Window | Sliding Window Log | Leaky Bucket | **C** |
 | 3 | How does Pastebin achieve deduplication? | Comparing URL paths | SHA-256 content hashing | User-provided unique keys | Sequential ID generation | **B** |
 | 4 | What is the recommended Base62 key length for a URL shortener with 100M URLs/month? | 4 characters | 5 characters | 7 characters | 10 characters | **C** |
-| 5 | In the sliding window counter algorithm, how is the approximate count calculated? | current_count + previous_count Ã— (elapsed/window) | current_count + previous_count | max(current, previous) | min(current, previous) | **A** |
+| 5 | In the sliding window counter algorithm, how is the approximate count calculated? | current_count + previous_count × (elapsed/window) | current_count + previous_count | max(current, previous) | min(current, previous) | **A** |
 
 ---
 
@@ -821,13 +821,13 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 | Takeaway | Application |
 |----------|-------------|
-| Pre-generate unique keys (KGS pattern) to eliminate write-path database contention | URL shorteners, ID generation services, coupon code generators â€” batch 10K keys per server |
+| Pre-generate unique keys (KGS pattern) to eliminate write-path database contention | URL shorteners, ID generation services, coupon code generators — batch 10K keys per server |
 | Use 301 (permanent) redirect for most URLs, 302 (temporary) for analytics-tracked campaigns | Default: 301 for all URLs. Override to 302 for campaign URLs that need per-click tracking |
-| Sliding window counter in Redis balances accuracy and memory â€” O(1) storage per user, ~5% error margin | API rate limiting: store two counters (current + previous window), use Lua for atomic check-and-increment |
-| Content addressing via SHA-256 enables free deduplication for write-once read-many workloads | Pastebin, image hosting, file sharing â€” identical content maps to same storage location |
-| Multi-tier caching (L1 local â†’ L2 Redis â†’ DB) achieves 99%+ hit rates for read-heavy workloads | L1: 10MB LRU per server (sub-ms). L2: Redis Cluster (1-5ms). L3: Cassandra/S3 (10-50ms) |
-| S3 lifecycle policies automate storage tier transitions â€” Standard â†’ IA â†’ Glacier â†’ Deep Archive | 0-30d: Standard. 31-90d: IA. 91-365d: Glacier. >365d: Deep Archive or delete |
-| Async analytics pipeline (Kafka â†’ ClickHouse) decouples tracking from redirect latency | URL click analytics: publish to Kafka synchronously, consume asynchronously for dashboard queries |
+| Sliding window counter in Redis balances accuracy and memory — O(1) storage per user, ~5% error margin | API rate limiting: store two counters (current + previous window), use Lua for atomic check-and-increment |
+| Content addressing via SHA-256 enables free deduplication for write-once read-many workloads | Pastebin, image hosting, file sharing — identical content maps to same storage location |
+| Multi-tier caching (L1 local → L2 Redis → DB) achieves 99%+ hit rates for read-heavy workloads | L1: 10MB LRU per server (sub-ms). L2: Redis Cluster (1-5ms). L3: Cassandra/S3 (10-50ms) |
+| S3 lifecycle policies automate storage tier transitions — Standard → IA → Glacier → Deep Archive | 0-30d: Standard. 31-90d: IA. 91-365d: Glacier. >365d: Deep Archive or delete |
+| Async analytics pipeline (Kafka → ClickHouse) decouples tracking from redirect latency | URL click analytics: publish to Kafka synchronously, consume asynchronously for dashboard queries |
 
 ## Case Study
 
@@ -835,19 +835,19 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 A marketing analytics platform launches a branded URL shortener for enterprise clients. Each client wants custom domains (`go.acme.com/link`), per-domain analytics dashboards, and click tracking with geographic breakdown. Initial traffic is 10 million URLs/month, growing to 100 million within 6 months.
 
-The team makes three critical architecture decisions. First, they implement KGS with a dedicated MySQL key_pool table. An hourly batch job generates 5 million keys (enough for 12 hours of growth). Each app server maintains a local pool of 10,000 keys, requesting a refill via a transactional stored procedure when the pool drops below 2,000. This eliminates any write-path database contention â€” key generation is purely an in-memory operation.
+The team makes three critical architecture decisions. First, they implement KGS with a dedicated MySQL key_pool table. An hourly batch job generates 5 million keys (enough for 12 hours of growth). Each app server maintains a local pool of 10,000 keys, requesting a refill via a transactional stored procedure when the pool drops below 2,000. This eliminates any write-path database contention — key generation is purely an in-memory operation.
 
-Second, they implement a multi-tier read path. L1 is a local LRU cache (10MB, ~5,000 entries) per server â€” sub-millisecond for hot URLs. L2 is a Redis Cluster (10 shards, 200GB total) â€” P99 read latency 2ms. A Bloom filter (m/n=9.6, k=7, 6MB per server) sits in front of Cassandra, eliminating 99% of lookups for non-existent short URLs. The combined cache hierarchy achieves a 99.7% hit rate, meaning only 0.3% of reads reach Cassandra.
+Second, they implement a multi-tier read path. L1 is a local LRU cache (10MB, ~5,000 entries) per server — sub-millisecond for hot URLs. L2 is a Redis Cluster (10 shards, 200GB total) — P99 read latency 2ms. A Bloom filter (m/n=9.6, k=7, 6MB per server) sits in front of Cassandra, eliminating 99% of lookups for non-existent short URLs. The combined cache hierarchy achieves a 99.7% hit rate, meaning only 0.3% of reads reach Cassandra.
 
-Third, they deploy a click analytics pipeline using Kafka â†’ ClickHouse. Each redirect publishes a small event to Kafka (short key, timestamp, referrer, user-agent, geo-IP). A ClickHouse consumer batch-inserts events every 5 seconds. Dashboard queries aggregate over 7-day windows with sub-second response times. The entire pipeline adds less than 2ms to the redirect path, and ClickHouse compresses the event stream to 0.5 bytes per event â€” storing 1 billion clicks/day in under 500MB.
+Third, they deploy a click analytics pipeline using Kafka → ClickHouse. Each redirect publishes a small event to Kafka (short key, timestamp, referrer, user-agent, geo-IP). A ClickHouse consumer batch-inserts events every 5 seconds. Dashboard queries aggregate over 7-day windows with sub-second response times. The entire pipeline adds less than 2ms to the redirect path, and ClickHouse compresses the event stream to 0.5 bytes per event — storing 1 billion clicks/day in under 500MB.
 
 The system handles 3,500 writes/second and 35,000 reads/second at peak with P99 redirect latency under 8ms. Monthly infrastructure cost is $45,000 (vs $280,000 estimated for a naive single-database design).
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory | Core topic in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Fundamental to system design |
-| Case Study: URL Shortener | Core topic in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Fundamental to system design |
+| Theory | Core topic in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin | Fundamental to system design |
+| Case Study: URL Shortener | Core topic in Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin | Fundamental to system design |
 
 ---
 
@@ -855,7 +855,7 @@ The system handles 3,500 writes/second and 35,000 reads/second at peak with P99 
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Essential concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| Theory | Essential concept for Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin |
 
 ---
 
@@ -1264,7 +1264,7 @@ flowchart TB
         L2_CACHE["L2 Cache<br/>Redis Cluster<br/>200GB / 100M entries"]
         BLOOM_FILTER["Bloom Filter<br/>m=48M bits, k=7<br/>Filter non-existent keys"]
         CASSANDRA_R["Cassandra<br/>Read replica<br/>CL=ONE (eventual)"]
-        LOG_CLICK["Click Logger<br/>Kafka â†’ ClickHouse"]
+        LOG_CLICK["Click Logger<br/>Kafka → ClickHouse"]
     end
 
     subgraph RESPONSE["Response"]
@@ -1386,23 +1386,23 @@ class PastebinStore {
 ## Exercises
 
 ### Review Questions
-<details><summary>Solution</summary>1. Boundary problem: in fixed-window (e.g., 100 req/min at :00), a user can send 100 requests at :59 and 100 at 1:01 â€” 200 requests in 2 seconds. Sliding window counter fixes this by tracking the current and previous window counters and computing a weighted average: `current + previous * (elapsed/window_size)`. This approximates the true sliding window rate within ~5% error.
-2. KGS pre-generates keys to eliminate write-path database contention. On-demand generation requires a database uniqueness check per request (SELECT + INSERT). Batch pre-generation (10K keys per batch, atomically marked as used) uses a single transaction for 10K keys, reducing DB writes by 10,000Ã—. The app server then hands out keys from memory with zero database overhead.
+<details><summary>Solution</summary>1. Boundary problem: in fixed-window (e.g., 100 req/min at :00), a user can send 100 requests at :59 and 100 at 1:01 — 200 requests in 2 seconds. Sliding window counter fixes this by tracking the current and previous window counters and computing a weighted average: `current + previous * (elapsed/window_size)`. This approximates the true sliding window rate within ~5% error.
+2. KGS pre-generates keys to eliminate write-path database contention. On-demand generation requires a database uniqueness check per request (SELECT + INSERT). Batch pre-generation (10K keys per batch, atomically marked as used) uses a single transaction for 10K keys, reducing DB writes by 10,000×. The app server then hands out keys from memory with zero database overhead.
 3. 301 (Moved Permanently): browser-cached, never contacts server again for that URL. Use for permanent short URLs where analytics tracking is not needed. 302 (Found): not cached, passes through server on every click. Use for custom short URLs, campaign URLs, or any URL requiring per-click analytics. Trade-off: 301 reduces server load by 80%+ but loses analytics granularity.
-4. SHA-256 of content produces a 64-character hex digest used as S3 object key. If two users paste identical content with the same visibility (public), the system returns the same URL â€” free deduplication. If one user sets their paste to private, the hash is salted with user_id: `SHA-256(content + user_id)` â†’ different hash â†’ separate storage. The public paste remains deduplicated; the private paste creates a new entry.
-5. Birthday paradox: with truncated MD5 (7 bytes = 56 bits), the probability of a collision reaches 50% at ~2^28 â‰ˆ 268 million keys. For a system with billions of keys, collisions are guaranteed. Alternatives: (a) Base62 from distributed counter â€” zero collision risk. (b) Full SHA-256 (128 bits vs 56) â€” collision probability is negligible at trillions of keys. (c) Counter-based encoding (Snowflake-style).
+4. SHA-256 of content produces a 64-character hex digest used as S3 object key. If two users paste identical content with the same visibility (public), the system returns the same URL — free deduplication. If one user sets their paste to private, the hash is salted with user_id: `SHA-256(content + user_id)` → different hash → separate storage. The public paste remains deduplicated; the private paste creates a new entry.
+5. Birthday paradox: with truncated MD5 (7 bytes = 56 bits), the probability of a collision reaches 50% at ~2^28 ≈ 268 million keys. For a system with billions of keys, collisions are guaranteed. Alternatives: (a) Base62 from distributed counter — zero collision risk. (b) Full SHA-256 (128 bits vs 56) — collision probability is negligible at trillions of keys. (c) Counter-based encoding (Snowflake-style).
 6. Token bucket: allows bursts up to bucket size (tokens accumulate during idle). Best for traffic with natural bursts (API calls from user interactions). Sliding window counter: enforces exact rate over window. Best when the rate limit is strict (SLA enforcement, paid API tiers). Token bucket overshoots after idle periods; sliding window is always accurate.</details>
 
 ### Application Problems
 <details><summary>Solution</summary>1. **Custom domains**: Each domain gets a key_pool table shard with a prefix (e.g., `acme_keys`). Domain-specific KGS generates keys with a domain prefix: `acme:aB3xK`. Domain-specific Redis cache shard (keyed by domain prefix). Analytics: partition ClickHouse table by domain_id, each domain queries its own partition. SSL: use ACME/LetsEncrypt with automatic certificate provisioning via DNS-01 challenge when domain is registered. DNS: CNAME each custom domain to the shared URL shortener domain (e.g., `go.acme.com CNAME shortener.com`).
-2. **Multi-layer rate limiter**: Redis key schema: `rl:{endpoint}:{user}:{ip}:window`. Lua script: check endpoint (10 req/s), then user (100 req/s), then IP (1000 req/s), then global (100000 req/s) â€” any layer exceeding limit returns 429 with layer identifier. If endpoint layer rate-limits, the request is rejected even if the user and IP layers have capacity â€” this is correct: the most restrictive limit always applies. Return headers indicate which layer triggered the limit.
-3. **Pastebin search**: Elasticsearch cluster with 3 nodes. Index mapping: `{ content: text, title: text, language: keyword, created_at: date, content_hash: keyword }`. Daily index (1M docs/day â‰ˆ 10GB), 30-day retention = 30 indexes. Re-index: when language detection model updates, run a batch job that queries pastes created after the model version date, re-detects language, updates ES documents. Use reindex API with slicing for parallelization. Search latency: <100ms P99 for full-text queries.
-4. **Abuse prevention**: Tiers: unauthenticated (10/hr per IP), email-verified (50/hr), pro (500/hr). Content scanning: run ClamAV and regex scanner asynchronously via SQS queue. If scan takes >5 seconds, return the paste immediately and mark as "scanning" â€” if scan detects abuse, replace with 410 Gone. To scale scanning: lambda workers auto-scale to 1000 concurrent instances. Dedup: check SHA-256 against recent 24-hour window â€” if same hash appears >100 times in an hour from different IPs, rate-limit further uploads of that content.</details>
+2. **Multi-layer rate limiter**: Redis key schema: `rl:{endpoint}:{user}:{ip}:window`. Lua script: check endpoint (10 req/s), then user (100 req/s), then IP (1000 req/s), then global (100000 req/s) — any layer exceeding limit returns 429 with layer identifier. If endpoint layer rate-limits, the request is rejected even if the user and IP layers have capacity — this is correct: the most restrictive limit always applies. Return headers indicate which layer triggered the limit.
+3. **Pastebin search**: Elasticsearch cluster with 3 nodes. Index mapping: `{ content: text, title: text, language: keyword, created_at: date, content_hash: keyword }`. Daily index (1M docs/day ≈ 10GB), 30-day retention = 30 indexes. Re-index: when language detection model updates, run a batch job that queries pastes created after the model version date, re-detects language, updates ES documents. Use reindex API with slicing for parallelization. Search latency: <100ms P99 for full-text queries.
+4. **Abuse prevention**: Tiers: unauthenticated (10/hr per IP), email-verified (50/hr), pro (500/hr). Content scanning: run ClamAV and regex scanner asynchronously via SQS queue. If scan takes >5 seconds, return the paste immediately and mark as "scanning" — if scan detects abuse, replace with 410 Gone. To scale scanning: lambda workers auto-scale to 1000 concurrent instances. Dedup: check SHA-256 against recent 24-hour window — if same hash appears >100 times in an hour from different IPs, rate-limit further uploads of that content.</details>
 
 ### Challenge Problem
 <details><summary>Solution</summary>**Distributed Pastebin with Collaborative Editing**: 
 
-Version storage: Use a content-delta chain (edit operations stored as operational transforms) rather than full copies per version. Each version stores: base snapshot (every 100 edits) + forward deltas. This reduces storage from O(N Ã— content_size) to O(N Ã— avg_delta_size). For source code pastebins, deltas average 50 bytes vs 10KB full copies.
+Version storage: Use a content-delta chain (edit operations stored as operational transforms) rather than full copies per version. Each version stores: base snapshot (every 100 edits) + forward deltas. This reduces storage from O(N × content_size) to O(N × avg_delta_size). For source code pastebins, deltas average 50 bytes vs 10KB full copies.
 
 OT server: Stateless WebSocket server that receives edit operations from all collaborators, transforms concurrent operations against each other, and broadcasts the transformed result. Use a centralized OT sequencer (Redis Stream) to assign total order to edits. Each edit has: paste_id, user_id, operation (insert/delete with position), client_version, server_version.
 
@@ -1412,4 +1412,4 @@ Merge strategy: When two users edit the same document differently, OT ensures bo
 
 Interactions with deduplication: Real-time editing breaks content-addressed deduplication because the SHA-256 hash changes with every edit. Solution: use a "base content hash" for the initial paste (enables dedup for the initial upload), and a separate "live editing session ID" for ongoing edits. When the session ends (all users disconnect), compute the final SHA-256 and store as a new paste version. The original base hash still deduplicates with any identical future uploads.
 
-Two users editing differently: The SHA-256 content address is the final resolved hash after applying all OT-transformed edits in sequence. Each user sees the same final state (OT guarantees convergence), so the SHA-256 is identical after all edits are applied. Intermediate states differ but are not stored as content-addressed objects â€” they exist only as transient delta streams in the OT server's memory.</details>
+Two users editing differently: The SHA-256 content address is the final resolved hash after applying all OT-transformed edits in sequence. Each user sees the same final state (OT guarantees convergence), so the SHA-256 is identical after all edits are applied. Intermediate states differ but are not stored as content-addressed objects — they exist only as transient delta streams in the OT server's memory.</details>

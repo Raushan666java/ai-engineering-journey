@@ -1,4 +1,4 @@
-﻿# Verbal Ability Speed Drills
+# Verbal Ability Speed Drills
 
 > Master synonyms, antonyms, sentence completion, error spotting, para jumbles, cloze tests, and reading comprehension through timed, structured practice.
 
@@ -36,7 +36,7 @@ dataset "Reading Comp" [45, 55, 65, 72, 78]
 
 ## Synonyms & Antonyms Drills
 
-### Set 1: Synonyms | â± Target: 1 min | ðŸŽ¯ Accuracy Goal: 80%
+### Set 1: Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
 Choose the word CLOSEST in meaning to the given word.
 
@@ -56,21 +56,21 @@ Choose the word CLOSEST in meaning to the given word.
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Plentiful** â€” Abundant = existing in large quantities; plentiful.
-2. **(B) Short** â€” Brief = short in duration or length.
-3. **(C) Frank** â€” Candid = truthful and straightforward; frank.
-4. **(C) Hardworking** â€” Diligent = showing care and effort; hardworking.
-5. **(B) Joyful** â€” Elated = extremely happy; joyful.
-6. **(B) Fierce** â€” Ferocious = savagely fierce; violent.
-7. **(B) Courteous** â€” Gracious = courteous, kind, and pleasant.
-8. **(B) Quick** â€” Hasty = done with excessive speed or urgency; quick.
-9. **(B) Huge** â€” Immense = extremely large or huge.
-10. **(B) Triumphant** â€” Jubilant = feeling great happiness and triumph.
+1. **(B) Plentiful** — Abundant = existing in large quantities; plentiful.
+2. **(B) Short** — Brief = short in duration or length.
+3. **(C) Frank** — Candid = truthful and straightforward; frank.
+4. **(C) Hardworking** — Diligent = showing care and effort; hardworking.
+5. **(B) Joyful** — Elated = extremely happy; joyful.
+6. **(B) Fierce** — Ferocious = savagely fierce; violent.
+7. **(B) Courteous** — Gracious = courteous, kind, and pleasant.
+8. **(B) Quick** — Hasty = done with excessive speed or urgency; quick.
+9. **(B) Huge** — Immense = extremely large or huge.
+10. **(B) Triumphant** — Jubilant = feeling great happiness and triumph.
 
 **Your Score:** ___/10 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 2: Antonyms | â± Target: 1 min | ðŸŽ¯ Accuracy Goal: 80%
+### Set 2: Antonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
 Choose the word OPPOSITE in meaning to the given word.
 
@@ -90,81 +90,81 @@ Choose the word OPPOSITE in meaning to the given word.
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Decelerate** â€” Accelerate = speed up; Decelerate = slow down (opposite).
-2. **(C) Malevolent** â€” Benevolent = well-meaning, kindly; Malevolent = evil (opposite).
-3. **(B) Reveal** â€” Conceal = hide; Reveal = make known (opposite).
-4. **(B) Surplus** â€” Deficit = shortage; Surplus = excess (opposite).
-5. **(C) Tiny** â€” Enormous = very large; Tiny = very small (opposite).
-6. **(B) Robust** â€” Fragile = easily broken; Robust = strong, sturdy (opposite).
-7. **(B) Selfish** â€” Generous = willing to give; Selfish = unwilling to share (opposite).
-8. **(C) Conflict** â€” Harmony = agreement, peace; Conflict = disagreement (opposite).
-9. **(C) Notice** â€” Ignore = pay no attention; Notice = pay attention (opposite).
-10. **(C) Mature** â€” Juvenile = young, immature; Mature = fully developed (opposite).
+1. **(B) Decelerate** — Accelerate = speed up; Decelerate = slow down (opposite).
+2. **(C) Malevolent** — Benevolent = well-meaning, kindly; Malevolent = evil (opposite).
+3. **(B) Reveal** — Conceal = hide; Reveal = make known (opposite).
+4. **(B) Surplus** — Deficit = shortage; Surplus = excess (opposite).
+5. **(C) Tiny** — Enormous = very large; Tiny = very small (opposite).
+6. **(B) Robust** — Fragile = easily broken; Robust = strong, sturdy (opposite).
+7. **(B) Selfish** — Generous = willing to give; Selfish = unwilling to share (opposite).
+8. **(C) Conflict** — Harmony = agreement, peace; Conflict = disagreement (opposite).
+9. **(C) Notice** — Ignore = pay no attention; Notice = pay attention (opposite).
+10. **(C) Mature** — Juvenile = young, immature; Mature = fully developed (opposite).
 
 **Your Score:** ___/10 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 3: Synonyms (Advanced) | â± Target: 1 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 3: Synonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%
 
-1. PERILOUS â€” (A) Safe (B) Dangerous (C) Secure (D) Protected
-2. PRUDENT â€” (A) Foolish (B) Reckless (C) Cautious (D) Hasty
-3. RELUCTANT â€” (A) Eager (B) Willing (C) Hesitant (D) Enthusiastic
-4. STERLING â€” (A) Poor (B) Average (C) Excellent (D) Inferior
-5. TENACIOUS â€” (A) Weak (B) Persistent (C) Yielding (D) Loose
-6. UBIQUITOUS â€” (A) Rare (B) Scarce (C) Everywhere (D) Absent
-7. VENERATE â€” (A) Disrespect (B) Worship (C) Ignore (D) Mock
-8. WHIMSICAL â€” (A) Serious (B) Predictable (C) Playful (D) Stern
-9. ZEALOUS â€” (A) Apathetic (B) Indifferent (C) Passionate (D) Lazy
-10. AMBIGUOUS â€” (A) Clear (B) Unclear (C) Certain (D) Definite
+1. PERILOUS — (A) Safe (B) Dangerous (C) Secure (D) Protected
+2. PRUDENT — (A) Foolish (B) Reckless (C) Cautious (D) Hasty
+3. RELUCTANT — (A) Eager (B) Willing (C) Hesitant (D) Enthusiastic
+4. STERLING — (A) Poor (B) Average (C) Excellent (D) Inferior
+5. TENACIOUS — (A) Weak (B) Persistent (C) Yielding (D) Loose
+6. UBIQUITOUS — (A) Rare (B) Scarce (C) Everywhere (D) Absent
+7. VENERATE — (A) Disrespect (B) Worship (C) Ignore (D) Mock
+8. WHIMSICAL — (A) Serious (B) Predictable (C) Playful (D) Stern
+9. ZEALOUS — (A) Apathetic (B) Indifferent (C) Passionate (D) Lazy
+10. AMBIGUOUS — (A) Clear (B) Unclear (C) Certain (D) Definite
 
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Dangerous** â€” Perilous = full of danger; dangerous.
-2. **(C) Cautious** â€” Prudent = acting with care; cautious.
-3. **(C) Hesitant** â€” Reluctant = unwilling; hesitant.
-4. **(C) Excellent** â€” Sterling = of excellent quality.
-5. **(B) Persistent** â€” Tenacious = holding firmly; persistent.
-6. **(C) Everywhere** â€” Ubiquitous = present everywhere.
-7. **(B) Worship** â€” Venerate = regard with great respect; worship.
-8. **(C) Playful** â€” Whimsical = playfully quaint or fanciful.
-9. **(C) Passionate** â€” Zealous = having great energy; passionate.
-10. **(B) Unclear** â€” Ambiguous = open to interpretation; unclear.
+1. **(B) Dangerous** — Perilous = full of danger; dangerous.
+2. **(C) Cautious** — Prudent = acting with care; cautious.
+3. **(C) Hesitant** — Reluctant = unwilling; hesitant.
+4. **(C) Excellent** — Sterling = of excellent quality.
+5. **(B) Persistent** — Tenacious = holding firmly; persistent.
+6. **(C) Everywhere** — Ubiquitous = present everywhere.
+7. **(B) Worship** — Venerate = regard with great respect; worship.
+8. **(C) Playful** — Whimsical = playfully quaint or fanciful.
+9. **(C) Passionate** — Zealous = having great energy; passionate.
+10. **(B) Unclear** — Ambiguous = open to interpretation; unclear.
 
 **Your Score:** ___/10 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 4: Antonyms (Advanced) | â± Target: 1 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 4: Antonyms (Advanced) | ⏱ Target: 1 min | 🎯 Accuracy Goal: 75%
 
-1. AFFLUENT â€” (A) Wealthy (B) Poor (C) Rich (D) Prosperous
-2. BOISTEROUS â€” (A) Loud (B) Calm (C) Rowdy (D) Noisy
-3. COPIOUS â€” (A) Plentiful (B) Sparse (C) Abundant (D) Ample
-4. DESPONDENT â€” (A) Hopeful (B) Depressed (C) Gloomy (D) Melancholy
-5. EPHEMERAL â€” (A) Fleeting (B) Lasting (C) Brief (D) Temporary
-6. FACILITATE â€” (A) Hinder (B) Help (C) Assist (D) Ease
-7. GREGARIOUS â€” (A) Sociable (B) Reserved (C) Friendly (D) Outgoing
-8. HOSTILE â€” (A) Friendly (B) Unfriendly (C) Aggressive (D) Antagonistic
-9. LETHARGIC â€” (A) Sluggish (B) Energetic (C) Lazy (D) Sleepy
-10. MITIGATE â€” (A) Alleviate (B) Aggravate (C) Lessen (D) Reduce
+1. AFFLUENT — (A) Wealthy (B) Poor (C) Rich (D) Prosperous
+2. BOISTEROUS — (A) Loud (B) Calm (C) Rowdy (D) Noisy
+3. COPIOUS — (A) Plentiful (B) Sparse (C) Abundant (D) Ample
+4. DESPONDENT — (A) Hopeful (B) Depressed (C) Gloomy (D) Melancholy
+5. EPHEMERAL — (A) Fleeting (B) Lasting (C) Brief (D) Temporary
+6. FACILITATE — (A) Hinder (B) Help (C) Assist (D) Ease
+7. GREGARIOUS — (A) Sociable (B) Reserved (C) Friendly (D) Outgoing
+8. HOSTILE — (A) Friendly (B) Unfriendly (C) Aggressive (D) Antagonistic
+9. LETHARGIC — (A) Sluggish (B) Energetic (C) Lazy (D) Sleepy
+10. MITIGATE — (A) Alleviate (B) Aggravate (C) Lessen (D) Reduce
 
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Poor** â€” Affluent = wealthy; Poor (opposite).
-2. **(B) Calm** â€” Boisterous = loud, energetic; Calm (opposite).
-3. **(B) Sparse** â€” Copious = abundant; Sparse (opposite).
-4. **(A) Hopeful** â€” Despondent = depressed; Hopeful (opposite).
-5. **(B) Lasting** â€” Ephemeral = short-lived; Lasting (opposite).
-6. **(A) Hinder** â€” Facilitate = make easy; Hinder (opposite).
-7. **(B) Reserved** â€” Gregarious = sociable; Reserved (opposite).
-8. **(A) Friendly** â€” Hostile = unfriendly; Friendly (opposite).
-9. **(B) Energetic** â€” Lethargic = sluggish; Energetic (opposite).
-10. **(B) Aggravate** â€” Mitigate = make less severe; Aggravate = make worse (opposite).
+1. **(B) Poor** — Affluent = wealthy; Poor (opposite).
+2. **(B) Calm** — Boisterous = loud, energetic; Calm (opposite).
+3. **(B) Sparse** — Copious = abundant; Sparse (opposite).
+4. **(A) Hopeful** — Despondent = depressed; Hopeful (opposite).
+5. **(B) Lasting** — Ephemeral = short-lived; Lasting (opposite).
+6. **(A) Hinder** — Facilitate = make easy; Hinder (opposite).
+7. **(B) Reserved** — Gregarious = sociable; Reserved (opposite).
+8. **(A) Friendly** — Hostile = unfriendly; Friendly (opposite).
+9. **(B) Energetic** — Lethargic = sluggish; Energetic (opposite).
+10. **(B) Aggravate** — Mitigate = make less severe; Aggravate = make worse (opposite).
 
 **Your Score:** ___/10 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 5: Mixed Syn/Ant | â± Target: 1 min | ðŸŽ¯ Accuracy Goal: 80%
+### Set 5: Mixed Syn/Ant | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
 Indicate S for Synonym or A for Antonym relationship.
 
@@ -196,34 +196,34 @@ Indicate S for Synonym or A for Antonym relationship.
 **Your Score:** ___/10 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 6: Contextual Synonyms | â± Target: 1 min | ðŸŽ¯ Accuracy Goal: 80%
+### Set 6: Contextual Synonyms | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
 Choose the word closest in meaning to the word in context.
 
-1. The **arduous** journey left them exhausted. â†’ (A) Easy (B) Difficult (C) Short (D) Enjoyable
-2. She gave a **lucid** explanation of the theory. â†’ (A) Confusing (B) Clear (C) Lengthy (D) Vague
-3. The **mundane** tasks of daily life bored him. â†’ (A) Exciting (B) Ordinary (C) Complex (D) Rare
-4. His **obstinate** refusal to change cost him dearly. â†’ (A) Flexible (B) Stubborn (C) Gentle (D) Kind
-5. The **pragmatic** approach solved the crisis. â†’ (A) Impractical (B) Practical (C) Idealistic (D) Theoretical
-6. The **reticent** student rarely spoke in class. â†’ (A) Talkative (B) Reserved (C) Outgoing (D) Bold
-7. The **sporadic** power cuts disrupted work. â†’ (A) Continuous (B) Irregular (C) Steady (D) Reliable
-8. His **taciturn** nature made conversation difficult. â†’ (A) Talkative (B) Silent (C) Friendly (D) Cheerful
-9. The **unprecedented** event shocked the world. â†’ (A) Common (B) Unparalleled (C) Ordinary (D) Expected
-10. The city's **vibrant** culture attracted tourists. â†’ (A) Dull (B) Lively (C) Quiet (D) Monotonous
+1. The **arduous** journey left them exhausted. → (A) Easy (B) Difficult (C) Short (D) Enjoyable
+2. She gave a **lucid** explanation of the theory. → (A) Confusing (B) Clear (C) Lengthy (D) Vague
+3. The **mundane** tasks of daily life bored him. → (A) Exciting (B) Ordinary (C) Complex (D) Rare
+4. His **obstinate** refusal to change cost him dearly. → (A) Flexible (B) Stubborn (C) Gentle (D) Kind
+5. The **pragmatic** approach solved the crisis. → (A) Impractical (B) Practical (C) Idealistic (D) Theoretical
+6. The **reticent** student rarely spoke in class. → (A) Talkative (B) Reserved (C) Outgoing (D) Bold
+7. The **sporadic** power cuts disrupted work. → (A) Continuous (B) Irregular (C) Steady (D) Reliable
+8. His **taciturn** nature made conversation difficult. → (A) Talkative (B) Silent (C) Friendly (D) Cheerful
+9. The **unprecedented** event shocked the world. → (A) Common (B) Unparalleled (C) Ordinary (D) Expected
+10. The city's **vibrant** culture attracted tourists. → (A) Dull (B) Lively (C) Quiet (D) Monotonous
 
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Difficult** â€” Arduous = involving great effort; difficult.
-2. **(B) Clear** â€” Lucid = expressed clearly; easy to understand.
-3. **(B) Ordinary** â€” Mundane = lacking interest; ordinary.
-4. **(B) Stubborn** â€” Obstinate = stubbornly refusing to change.
-5. **(B) Practical** â€” Pragmatic = dealing with things practically.
-6. **(B) Reserved** â€” Reticent = not revealing thoughts; reserved.
-7. **(B) Irregular** â€” Sporadic = occurring at irregular intervals.
-8. **(B) Silent** â€” Taciturn = reserved in speech; silent.
-9. **(B) Unparalleled** â€” Unprecedented = never done before; unparalleled.
-10. **(B) Lively** â€” Vibrant = full of energy; lively.
+1. **(B) Difficult** — Arduous = involving great effort; difficult.
+2. **(B) Clear** — Lucid = expressed clearly; easy to understand.
+3. **(B) Ordinary** — Mundane = lacking interest; ordinary.
+4. **(B) Stubborn** — Obstinate = stubbornly refusing to change.
+5. **(B) Practical** — Pragmatic = dealing with things practically.
+6. **(B) Reserved** — Reticent = not revealing thoughts; reserved.
+7. **(B) Irregular** — Sporadic = occurring at irregular intervals.
+8. **(B) Silent** — Taciturn = reserved in speech; silent.
+9. **(B) Unparalleled** — Unprecedented = never done before; unparalleled.
+10. **(B) Lively** — Vibrant = full of energy; lively.
 
 **Your Score:** ___/10 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
@@ -245,7 +245,7 @@ Choose the word closest in meaning to the word in context.
 
 ## Sentence Completion Drills
 
-### Set 1: Single Blank | â± Target: 2 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 1: Single Blank | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
 Choose the word that BEST fits the blank.
 
@@ -282,16 +282,16 @@ Choose the word that BEST fits the blank.
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Revolutionary** â€” The phrase "changing the way we understand the universe" indicates a major, groundbreaking discovery. Revolutionary fits best.
-2. **(B) Admired** â€” "Kindness and generosity" are positive traits that would lead to being admired, not criticized or punished.
-3. **(C) Inclement** â€” Weather that forces cancellation of outdoor events would be bad/severe. Inclement = (of weather) unpleasant, severe.
-4. **(C) Irrefutable** â€” "No one could refute it" means the argument was impossible to disprove. Irrefutable fits perfectly.
-5. **(C) Meteoritic** â€” "Made it a market leader" suggests rapid growth. Meteoritic = very rapid (like a meteor).
+1. **(B) Revolutionary** — The phrase "changing the way we understand the universe" indicates a major, groundbreaking discovery. Revolutionary fits best.
+2. **(B) Admired** — "Kindness and generosity" are positive traits that would lead to being admired, not criticized or punished.
+3. **(C) Inclement** — Weather that forces cancellation of outdoor events would be bad/severe. Inclement = (of weather) unpleasant, severe.
+4. **(C) Irrefutable** — "No one could refute it" means the argument was impossible to disprove. Irrefutable fits perfectly.
+5. **(C) Meteoritic** — "Made it a market leader" suggests rapid growth. Meteoritic = very rapid (like a meteor).
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 2: Double Blanks | â± Target: 2 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 2: Double Blanks | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
 Choose the pair that BEST fits both blanks.
 
@@ -328,16 +328,16 @@ Choose the pair that BEST fits both blanks.
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Availability...critical** â€” Material availability being critical to project success makes logical sense. The other options have contradictions or weak connections.
-2. **(C) Appreciative...commended** â€” An appreciative manager would commend (praise) employees for hard work. This is the most logical pair.
-3. **(B) Generous...willing** â€” A generous person would be willing to help others. This provides a logical cause-effect relationship.
-4. **(C) Scarcity...acquittal** â€” Scarcity (lack) of evidence leads to acquittal (being freed). If there's not enough evidence, the suspect is released.
-5. **(B) Harsh...barren** â€” Harsh weather and barren (infertile) soil would make farming impossible. Both conditions are negative and contribute to the outcome.
+1. **(B) Availability...critical** — Material availability being critical to project success makes logical sense. The other options have contradictions or weak connections.
+2. **(C) Appreciative...commended** — An appreciative manager would commend (praise) employees for hard work. This is the most logical pair.
+3. **(B) Generous...willing** — A generous person would be willing to help others. This provides a logical cause-effect relationship.
+4. **(C) Scarcity...acquittal** — Scarcity (lack) of evidence leads to acquittal (being freed). If there's not enough evidence, the suspect is released.
+5. **(B) Harsh...barren** — Harsh weather and barren (infertile) soil would make farming impossible. Both conditions are negative and contribute to the outcome.
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 3: Context-Based | â± Target: 2 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 3: Context-Based | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
 1. The diplomat's speech was ________, carefully avoiding any ________ statements.
    - (A) Aggressive...controversial
@@ -372,11 +372,11 @@ Choose the pair that BEST fits both blanks.
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Diplomatic...offensive** â€” A diplomat would naturally give a diplomatic speech (tactful, sensitive) and avoid offensive statements.
-2. **(A) Repeated...recklessly** â€” Despite warnings, venturing into danger suggests recklessness. "Repeated warnings" and "recklessly ventured" create logical contrast.
-3. **(C) Enforcement...deterred** â€” Enforcing an ethics policy would deter (discourage) misconduct. Logical cause-effect.
-4. **(B) Eye...excellent** â€” Having an eye for detail (being detail-oriented) makes one an excellent editor.
-5. **(B) Mystery...puzzled** â€” The mystery of an artifact puzzling historians for decades makes logical sense.
+1. **(B) Diplomatic...offensive** — A diplomat would naturally give a diplomatic speech (tactful, sensitive) and avoid offensive statements.
+2. **(A) Repeated...recklessly** — Despite warnings, venturing into danger suggests recklessness. "Repeated warnings" and "recklessly ventured" create logical contrast.
+3. **(C) Enforcement...deterred** — Enforcing an ethics policy would deter (discourage) misconduct. Logical cause-effect.
+4. **(B) Eye...excellent** — Having an eye for detail (being detail-oriented) makes one an excellent editor.
+5. **(B) Mystery...puzzled** — The mystery of an artifact puzzling historians for decades makes logical sense.
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
@@ -401,7 +401,7 @@ Choose the pair that BEST fits both blanks.
 
 ## Error Spotting Drills
 
-### Set 1: Grammar Errors | â± Target: 2 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 1: Grammar Errors | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
 Identify the part with an error (A, B, C, D). If no error, mark E.
 
@@ -418,16 +418,16 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) are going** â€” Error: "group" is a collective noun, singular â†’ should be "is going." "The group" (singular) â†’ "is going."
-2. **(B) have no** â€” Error: Double negative. "Doesn't" + "no" = incorrect. Should be "doesn't have any" or "has no."
-3. **(B) were given** â€” Error: "Each" is singular â†’ "was given." Correct: "Each of the employees was given."
-4. **(E) No error** â€” The sentence is grammatically correct.
-5. **(C) was aware** â€” Error: With "neither...nor," the verb agrees with the nearest subject. "Employees" (plural) â†’ "were aware."
+1. **(B) are going** — Error: "group" is a collective noun, singular → should be "is going." "The group" (singular) → "is going."
+2. **(B) have no** — Error: Double negative. "Doesn't" + "no" = incorrect. Should be "doesn't have any" or "has no."
+3. **(B) were given** — Error: "Each" is singular → "was given." Correct: "Each of the employees was given."
+4. **(E) No error** — The sentence is grammatically correct.
+5. **(C) was aware** — Error: With "neither...nor," the verb agrees with the nearest subject. "Employees" (plural) → "were aware."
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 2: Word Usage | â± Target: 2 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 2: Word Usage | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
 1. (A) The effect / (B) of the storm / (C) was / (D) devastating. / (E) No error
 
@@ -442,16 +442,16 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 <details>
 <summary>Show Answers</summary>
 
-1. **(E) No error** â€” Correct usage: "effect" (noun) used properly.
-2. **(B) more taller** â€” Error: Double comparative. "More taller" should be "taller" (comparative form doesn't need "more").
-3. **(B) is stored** â€” While "data" can be plural in formal usage, in modern English, "data is" is accepted. However, strict grammar would prefer "data are." But this is debatable. For this drill, I'll mark (E) No error as "data is" is widely accepted.
-4. **(A) I could of** â€” Error: "Could of" is incorrect. Should be "could have" (or "could've").
-5. **(C) less** â€” Error: "Less" is for uncountable nouns. "Employees" is countable â†’ "fewer employees."
+1. **(E) No error** — Correct usage: "effect" (noun) used properly.
+2. **(B) more taller** — Error: Double comparative. "More taller" should be "taller" (comparative form doesn't need "more").
+3. **(B) is stored** — While "data" can be plural in formal usage, in modern English, "data is" is accepted. However, strict grammar would prefer "data are." But this is debatable. For this drill, I'll mark (E) No error as "data is" is widely accepted.
+4. **(A) I could of** — Error: "Could of" is incorrect. Should be "could have" (or "could've").
+5. **(C) less** — Error: "Less" is for uncountable nouns. "Employees" is countable → "fewer employees."
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 3: Preposition/Conjunction | â± Target: 2 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 3: Preposition/Conjunction | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
 1. (A) He insisted / (B) on going / (C) to the party / (D) despite of the rain. / (E) No error
 2. (A) She is good / (B) in playing / (C) the piano / (D) since childhood. / (E) No error
@@ -462,11 +462,11 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 <details>
 <summary>Show Answers</summary>
 
-1. **(D) despite of the rain** â€” Error: "Despite" already means "in spite of." "Despite of" is incorrect. Should be "despite the rain" or "in spite of the rain."
-2. **(B) in playing** â€” Error: "Good at" is the correct preposition. "Good in" is incorrect. Should be "good at playing."
-3. **(C) in five** â€” Error: "Divided into" is correct, not "divided in." Should be "divided into five chapters."
-4. **(D) that the budget** â€” Error: The conjunction "about" applies to both items. Should be "about the project and the budget" or restructure. "He asked about the project and the budget."
-5. **(A) Not only he** â€” Error: With "not only...but also," the verb should come after "not only" when it applies to both clauses. Should be "Not only did he lose..." or "He lost not only his wallet but also his phone."
+1. **(D) despite of the rain** — Error: "Despite" already means "in spite of." "Despite of" is incorrect. Should be "despite the rain" or "in spite of the rain."
+2. **(B) in playing** — Error: "Good at" is the correct preposition. "Good in" is incorrect. Should be "good at playing."
+3. **(C) in five** — Error: "Divided into" is correct, not "divided in." Should be "divided into five chapters."
+4. **(D) that the budget** — Error: The conjunction "about" applies to both items. Should be "about the project and the budget" or restructure. "He asked about the project and the budget."
+5. **(A) Not only he** — Error: With "not only...but also," the verb should come after "not only" when it applies to both clauses. Should be "Not only did he lose..." or "He lost not only his wallet but also his phone."
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
@@ -491,7 +491,7 @@ Identify the part with an error (A, B, C, D). If no error, mark E.
 
 ## Para Jumbles Drills
 
-### Set 1: Basic Jumbles | â± Target: 3 min | ðŸŽ¯ Accuracy Goal: 70%
+### Set 1: Basic Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%
 
 Arrange the sentences in logical order.
 
@@ -544,16 +544,16 @@ Arrange the sentences in logical order.
 <details>
 <summary>Show Answers</summary>
 
-1. **(A) B, A, C, D** â€” John watched friends (B) â†’ decided to learn (A) â†’ signed up (C) â†’ could swim (D). Logical sequence.
-2. **(A) D, B, A, C** â€” Tired (D) â†’ doctor advised (B) â†’ improved diet (A) â†’ felt energetic (C). Cause and effect sequence.
-3. **(A) B, A, E, C, D** â€” Butterfly lays eggs (B) â†’ eggs hatch to caterpillars (A) â†’ caterpillar eats (E) â†’ forms chrysalis (C) â†’ butterfly emerges (D). Life cycle sequence.
-4. **(A) B, A, D, C** â€” Old stadium small (B) â†’ built new one (A) â†’ new stadium has facilities (D) â†’ can host matches (C). Problem â†’ solution â†’ result.
-5. **(B) A, D, B, C** â€” Studied hard (A) â†’ teacher announced (D) â†’ scored highest (B) â†’ parents proud (C).
+1. **(A) B, A, C, D** — John watched friends (B) → decided to learn (A) → signed up (C) → could swim (D). Logical sequence.
+2. **(A) D, B, A, C** — Tired (D) → doctor advised (B) → improved diet (A) → felt energetic (C). Cause and effect sequence.
+3. **(A) B, A, E, C, D** — Butterfly lays eggs (B) → eggs hatch to caterpillars (A) → caterpillar eats (E) → forms chrysalis (C) → butterfly emerges (D). Life cycle sequence.
+4. **(A) B, A, D, C** — Old stadium small (B) → built new one (A) → new stadium has facilities (D) → can host matches (C). Problem → solution → result.
+5. **(B) A, D, B, C** — Studied hard (A) → teacher announced (D) → scored highest (B) → parents proud (C).
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 2: Advanced Jumbles | â± Target: 3 min | ðŸŽ¯ Accuracy Goal: 70%
+### Set 2: Advanced Jumbles | ⏱ Target: 3 min | 🎯 Accuracy Goal: 70%
 
 1. **A:** These tiny particles are called atoms.
    **B:** Everything in the universe is made of matter.
@@ -603,11 +603,11 @@ Arrange the sentences in logical order.
 <details>
 <summary>Show Answers</summary>
 
-1. **(A) B, D, A, C** â€” Everything is matter (B) â†’ matter has particles (D) â†’ particles are atoms (A) â†’ atoms form molecules (C). General to specific.
-2. **(A) B, C, D, A** â€” People shop from home (B) â†’ convenience (C) â†’ competitive prices (D) â†’ result: sales skyrocket (A).
-3. **(B) A, C, D, B** â€” Climate change is threat (A) â†’ rising temperatures cause... (C) â†’ if unchecked (D) â†’ governments must act (B). Problem â†’ elaboration â†’ urgency â†’ solution.
-4. **(A) B, C, D, A** â€” Revolt of 1857 (B) â†’ united people (C) â†’ though failed, inspired (D) â†’ first step toward independence (A).
-5. **(A) A, B, C, D** â€” Social media transformed communication (A) â†’ people connect globally (B) â†’ however, privacy concerns (C) â†’ despite concerns, usage grows (D).
+1. **(A) B, D, A, C** — Everything is matter (B) → matter has particles (D) → particles are atoms (A) → atoms form molecules (C). General to specific.
+2. **(A) B, C, D, A** — People shop from home (B) → convenience (C) → competitive prices (D) → result: sales skyrocket (A).
+3. **(B) A, C, D, B** — Climate change is threat (A) → rising temperatures cause... (C) → if unchecked (D) → governments must act (B). Problem → elaboration → urgency → solution.
+4. **(A) B, C, D, A** — Revolt of 1857 (B) → united people (C) → though failed, inspired (D) → first step toward independence (A).
+5. **(A) A, B, C, D** — Social media transformed communication (A) → people connect globally (B) → however, privacy concerns (C) → despite concerns, usage grows (D).
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
@@ -633,7 +633,7 @@ Arrange the sentences in logical order.
 
 ## Cloze Test Drills
 
-### Set 1: Basic Cloze | â± Target: 3 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 1: Basic Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%
 
 **Read the passage and fill in the blanks.**
 
@@ -648,16 +648,16 @@ The (1) ______ of technology has changed our lives in many ways. We can now (2) 
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Advancement** â€” "Advancement of technology" is a standard collocation. Invention/discovery of technology is too narrow.
-2. **(B) Communicate** â€” "Communicate with people across the world" is the most logical fit in the context of technology.
-3. **(C) Connectivity** â€” The passage discusses connecting across the world, so "connectivity" fits best.
-4. **(A) Cyber** â€” "Cyber security" is a common term related to technology and privacy concerns.
-5. **(B) Therefore** â€” The sentence draws a conclusion from the preceding statement. "Therefore" indicates this logical relationship.
+1. **(B) Advancement** — "Advancement of technology" is a standard collocation. Invention/discovery of technology is too narrow.
+2. **(B) Communicate** — "Communicate with people across the world" is the most logical fit in the context of technology.
+3. **(C) Connectivity** — The passage discusses connecting across the world, so "connectivity" fits best.
+4. **(A) Cyber** — "Cyber security" is a common term related to technology and privacy concerns.
+5. **(B) Therefore** — The sentence draws a conclusion from the preceding statement. "Therefore" indicates this logical relationship.
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 2: Medium Cloze | â± Target: 3 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 2: Medium Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%
 
 Education is the (1) ______ to a better future. It (2) ______ individuals with knowledge and skills. (3) ______, not everyone has equal access to quality education. This (4) ______ must be addressed through policy changes. (5) ______ education for all should be our collective goal.
 
@@ -670,16 +670,16 @@ Education is the (1) ______ to a better future. It (2) ______ individuals with k
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Key** â€” "Key to a better future" is a common expression meaning essential for success.
-2. **(B) Equips** â€” Education equips (provides) individuals with knowledge and skills.
-3. **(A) However** â€” The sentence introduces a contrast (not everyone has equal access), so "however" is appropriate.
-4. **(C) Disparity** â€” The difference in access to education is a "disparity" (inequality).
-5. **(C) Ensuring** â€” "Ensuring education for all" means making certain everyone receives education.
+1. **(B) Key** — "Key to a better future" is a common expression meaning essential for success.
+2. **(B) Equips** — Education equips (provides) individuals with knowledge and skills.
+3. **(A) However** — The sentence introduces a contrast (not everyone has equal access), so "however" is appropriate.
+4. **(C) Disparity** — The difference in access to education is a "disparity" (inequality).
+5. **(C) Ensuring** — "Ensuring education for all" means making certain everyone receives education.
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 3: Advanced Cloze | â± Target: 3 min | ðŸŽ¯ Accuracy Goal: 75%
+### Set 3: Advanced Cloze | ⏱ Target: 3 min | 🎯 Accuracy Goal: 75%
 
 The (1) ______ of climate change is undeniable. Rising global temperatures have led to (2) ______ weather events. (3) ______, many species face extinction due to habitat loss. To (4) ______ this crisis, nations must work together to (5) ______ carbon emissions.
 
@@ -692,11 +692,11 @@ The (1) ______ of climate change is undeniable. Rising global temperatures have 
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Impact** â€” The impact (effect) of climate change is the focus. The passage discusses consequences, not causes or denial.
-2. **(C) Extreme** â€” Climate change leads to extreme weather events (hurricanes, heatwaves, floods, etc.).
-3. **(A) Additionally** â€” This sentence adds another consequence (species extinction), so "additionally" fits.
-4. **(B) Address** â€” "Address this crisis" means to deal with or tackle it.
-5. **(C) Reduce** â€” To combat climate change, nations need to reduce carbon emissions.
+1. **(B) Impact** — The impact (effect) of climate change is the focus. The passage discusses consequences, not causes or denial.
+2. **(C) Extreme** — Climate change leads to extreme weather events (hurricanes, heatwaves, floods, etc.).
+3. **(A) Additionally** — This sentence adds another consequence (species extinction), so "additionally" fits.
+4. **(B) Address** — "Address this crisis" means to deal with or tackle it.
+5. **(C) Reduce** — To combat climate change, nations need to reduce carbon emissions.
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
@@ -721,11 +721,11 @@ The (1) ______ of climate change is undeniable. Rising global temperatures have 
 
 ## Reading Comprehension Drills
 
-### Set 1: Science Passage | â± Target: 5 min | ðŸŽ¯ Accuracy Goal: 70%
+### Set 1: Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
 
 **Read the passage and answer the questions.**
 
-Photosynthesis is the process by which plants convert sunlight into chemical energy. This process occurs in the chloroplasts, which contain a green pigment called chlorophyll. Chlorophyll absorbs sunlight most efficiently in the blue and red wavelengths, while reflecting green lightâ€”which is why plants appear green. During photosynthesis, plants take in carbon dioxide from the air and water from the soil, and convert them into glucose and oxygen. The oxygen is released into the atmosphere as a byproduct. This process is fundamental to life on Earth, as it produces the oxygen we breathe and forms the base of the food chain. Without photosynthesis, Earth's atmosphere would contain very little oxygen.
+Photosynthesis is the process by which plants convert sunlight into chemical energy. This process occurs in the chloroplasts, which contain a green pigment called chlorophyll. Chlorophyll absorbs sunlight most efficiently in the blue and red wavelengths, while reflecting green light—which is why plants appear green. During photosynthesis, plants take in carbon dioxide from the air and water from the soil, and convert them into glucose and oxygen. The oxygen is released into the atmosphere as a byproduct. This process is fundamental to life on Earth, as it produces the oxygen we breathe and forms the base of the food chain. Without photosynthesis, Earth's atmosphere would contain very little oxygen.
 
 1. What is the primary function of chlorophyll?
    - (A) To reflect all wavelengths of light
@@ -760,16 +760,16 @@ Photosynthesis is the process by which plants convert sunlight into chemical ene
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) To absorb sunlight for photosynthesis** â€” The passage states: "Chlorophyll absorbs sunlight most efficiently in the blue and red wavelengths."
-2. **(B) Chlorophyll reflects green light** â€” The passage explains plants appear green because chlorophyll "reflects green light."
-3. **(B) Sunlight, carbon dioxide, and water** â€” The passage states plants take in "carbon dioxide from the air and water from the soil" and convert them (with sunlight) into glucose and oxygen.
-4. **(D) Oxygen is a byproduct of photosynthesis** â€” The passage states: "The oxygen is released into the atmosphere as a byproduct."
-5. **(B) The atmosphere would have less oxygen** â€” The passage states: "Without photosynthesis, Earth's atmosphere would contain very little oxygen."
+1. **(B) To absorb sunlight for photosynthesis** — The passage states: "Chlorophyll absorbs sunlight most efficiently in the blue and red wavelengths."
+2. **(B) Chlorophyll reflects green light** — The passage explains plants appear green because chlorophyll "reflects green light."
+3. **(B) Sunlight, carbon dioxide, and water** — The passage states plants take in "carbon dioxide from the air and water from the soil" and convert them (with sunlight) into glucose and oxygen.
+4. **(D) Oxygen is a byproduct of photosynthesis** — The passage states: "The oxygen is released into the atmosphere as a byproduct."
+5. **(B) The atmosphere would have less oxygen** — The passage states: "Without photosynthesis, Earth's atmosphere would contain very little oxygen."
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 2: Social Science Passage | â± Target: 5 min | ðŸŽ¯ Accuracy Goal: 70%
+### Set 2: Social Science Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
 
 Globalization has profoundly impacted economies worldwide. It refers to the increasing interconnectedness of nations through trade, investment, and technology. While globalization has led to economic growth and reduced poverty in many developing countries, critics argue that it has also widened income inequality. Multinational corporations often relocate production to countries with lower labor costs, which can lead to job losses in developed nations. Additionally, cultural homogenization threatens local traditions and identities. Proponents counter that globalization promotes cultural exchange and technological diffusion. The COVID-19 pandemic tested the resilience of global supply chains, leading to renewed discussions about self-reliance and localization.
 
@@ -806,18 +806,18 @@ Globalization has profoundly impacted economies worldwide. It refers to the incr
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Increasing interconnectedness of nations** â€” The passage states: "It refers to the increasing interconnectedness of nations through trade, investment, and technology."
-2. **(C) Widening income inequality** â€” The passage mentions critics argue globalization "has also widened income inequality."
-3. **(B) To lower labor costs** â€” The passage states: "Multinational corporations often relocate production to countries with lower labor costs."
-4. **(C) The vulnerability of global supply chains** â€” The passage states: "The COVID-19 pandemic tested the resilience of global supply chains."
-5. **(C) Balanced/neutral** â€” The passage presents both positive (economic growth, reduced poverty, cultural exchange, technological diffusion) and negative (income inequality, job losses, cultural homogenization) aspects, maintaining a balanced tone.
+1. **(B) Increasing interconnectedness of nations** — The passage states: "It refers to the increasing interconnectedness of nations through trade, investment, and technology."
+2. **(C) Widening income inequality** — The passage mentions critics argue globalization "has also widened income inequality."
+3. **(B) To lower labor costs** — The passage states: "Multinational corporations often relocate production to countries with lower labor costs."
+4. **(C) The vulnerability of global supply chains** — The passage states: "The COVID-19 pandemic tested the resilience of global supply chains."
+5. **(C) Balanced/neutral** — The passage presents both positive (economic growth, reduced poverty, cultural exchange, technological diffusion) and negative (income inequality, job losses, cultural homogenization) aspects, maintaining a balanced tone.
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 3: Economics Passage | â± Target: 5 min | ðŸŽ¯ Accuracy Goal: 70%
+### Set 3: Economics Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
 
-Inflation is a sustained increase in the general price level of goods and services. When inflation is high, the purchasing power of money decreasesâ€”meaning each unit of currency buys fewer goods. Central banks typically target an inflation rate of around 2% to maintain price stability. Moderate inflation is considered healthy for an economy because it encourages spending and investment. However, hyperinflationâ€”extremely rapid inflationâ€”can devastate an economy. During hyperinflation, people rush to spend money before it loses value, which can create a vicious cycle of rising prices. Deflation, the opposite of inflation, occurs when prices fall. While falling prices might sound beneficial, deflation can lead to reduced consumer spending as people wait for prices to drop further, causing economic slowdown.
+Inflation is a sustained increase in the general price level of goods and services. When inflation is high, the purchasing power of money decreases—meaning each unit of currency buys fewer goods. Central banks typically target an inflation rate of around 2% to maintain price stability. Moderate inflation is considered healthy for an economy because it encourages spending and investment. However, hyperinflation—extremely rapid inflation—can devastate an economy. During hyperinflation, people rush to spend money before it loses value, which can create a vicious cycle of rising prices. Deflation, the opposite of inflation, occurs when prices fall. While falling prices might sound beneficial, deflation can lead to reduced consumer spending as people wait for prices to drop further, causing economic slowdown.
 
 1. What happens to purchasing power during inflation?
    - (A) It increases
@@ -852,18 +852,18 @@ Inflation is a sustained increase in the general price level of goods and servic
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) It decreases** â€” The passage states: "the purchasing power of money decreases."
-2. **(C) 2%** â€” The passage states: "Central banks typically target an inflation rate of around 2%."
-3. **(B) It encourages spending and investment** â€” The passage states: "Moderate inflation is considered healthy for an economy because it encourages spending and investment."
-4. **(B) It involves extremely rapid price increases** â€” The passage defines hyperinflation as "extremely rapid inflation."
-5. **(B) It reduces consumer spending as people wait for lower prices** â€” The passage states: "deflation can lead to reduced consumer spending as people wait for prices to drop further."
+1. **(B) It decreases** — The passage states: "the purchasing power of money decreases."
+2. **(C) 2%** — The passage states: "Central banks typically target an inflation rate of around 2%."
+3. **(B) It encourages spending and investment** — The passage states: "Moderate inflation is considered healthy for an economy because it encourages spending and investment."
+4. **(B) It involves extremely rapid price increases** — The passage defines hyperinflation as "extremely rapid inflation."
+5. **(B) It reduces consumer spending as people wait for lower prices** — The passage states: "deflation can lead to reduced consumer spending as people wait for prices to drop further."
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 4: Philosophy Passage | â± Target: 5 min | ðŸŽ¯ Accuracy Goal: 70%
+### Set 4: Philosophy Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
 
-Critical thinking is the ability to analyze information objectively and make reasoned judgments. It involves evaluating sources, identifying biases, questioning assumptions, and drawing logical conclusions. In an age of information overload, critical thinking has become increasingly important. With the rise of social media and fake news, people are constantly exposed to misleading information. Those who lack critical thinking skills are more susceptible to misinformation and manipulation. Educational systems worldwide are now emphasizing the teaching of critical thinking from an early age. However, critical thinking is not just an academic skillâ€”it is essential for democratic participation. An informed citizenry that can evaluate political claims and make evidence-based decisions is fundamental to a healthy democracy.
+Critical thinking is the ability to analyze information objectively and make reasoned judgments. It involves evaluating sources, identifying biases, questioning assumptions, and drawing logical conclusions. In an age of information overload, critical thinking has become increasingly important. With the rise of social media and fake news, people are constantly exposed to misleading information. Those who lack critical thinking skills are more susceptible to misinformation and manipulation. Educational systems worldwide are now emphasizing the teaching of critical thinking from an early age. However, critical thinking is not just an academic skill—it is essential for democratic participation. An informed citizenry that can evaluate political claims and make evidence-based decisions is fundamental to a healthy democracy.
 
 1. What is the primary focus of critical thinking?
    - (A) Accepting information without question
@@ -898,18 +898,18 @@ Critical thinking is the ability to analyze information objectively and make rea
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Objective analysis and reasoned judgment** â€” The passage defines critical thinking as "the ability to analyze information objectively and make reasoned judgments."
-2. **(B) Because of information overload and fake news** â€” The passage states: "In an age of information overload, critical thinking has become increasingly important. With the rise of social media and fake news..."
-3. **(C) More vulnerable to misinformation** â€” The passage states: "Those who lack critical thinking skills are more susceptible to misinformation and manipulation."
-4. **(B) For democratic participation** â€” The passage states: "critical thinking is not just an academic skillâ€”it is essential for democratic participation."
-5. **(B) An informed, critically-thinking citizenry** â€” The passage states: "An informed citizenry that can evaluate political claims and make evidence-based decisions is fundamental to a healthy democracy."
+1. **(B) Objective analysis and reasoned judgment** — The passage defines critical thinking as "the ability to analyze information objectively and make reasoned judgments."
+2. **(B) Because of information overload and fake news** — The passage states: "In an age of information overload, critical thinking has become increasingly important. With the rise of social media and fake news..."
+3. **(C) More vulnerable to misinformation** — The passage states: "Those who lack critical thinking skills are more susceptible to misinformation and manipulation."
+4. **(B) For democratic participation** — The passage states: "critical thinking is not just an academic skill—it is essential for democratic participation."
+5. **(B) An informed, critically-thinking citizenry** — The passage states: "An informed citizenry that can evaluate political claims and make evidence-based decisions is fundamental to a healthy democracy."
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
 
-### Set 5: Technology Passage | â± Target: 5 min | ðŸŽ¯ Accuracy Goal: 70%
+### Set 5: Technology Passage | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%
 
-Artificial Intelligence (AI) has made remarkable strides in recent years. From self-driving cars to medical diagnosis, AI systems are increasingly capable of performing tasks that once required human intelligence. Machine learning, a subset of AI, enables computers to learn from data without being explicitly programmed. Deep learning, a further subset, uses neural networks with multiple layers to process complex patterns. Despite these advances, AI still faces significant challenges. Ethical concerns about privacy, bias in algorithms, and job displacement remain unresolved. Many experts argue that the development of artificial general intelligenceâ€”AI that can match human cognitive abilitiesâ€”is still decades away. Nevertheless, the transformative potential of AI across industries is undeniable.
+Artificial Intelligence (AI) has made remarkable strides in recent years. From self-driving cars to medical diagnosis, AI systems are increasingly capable of performing tasks that once required human intelligence. Machine learning, a subset of AI, enables computers to learn from data without being explicitly programmed. Deep learning, a further subset, uses neural networks with multiple layers to process complex patterns. Despite these advances, AI still faces significant challenges. Ethical concerns about privacy, bias in algorithms, and job displacement remain unresolved. Many experts argue that the development of artificial general intelligence—AI that can match human cognitive abilities—is still decades away. Nevertheless, the transformative potential of AI across industries is undeniable.
 
 1. What is machine learning according to the passage?
    - (A) AI systems that can drive cars
@@ -944,11 +944,11 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 <details>
 <summary>Show Answers</summary>
 
-1. **(B) Computers that learn from data without explicit programming** â€” The passage states: "Machine learning, a subset of AI, enables computers to learn from data without being explicitly programmed."
-2. **(C) High energy consumption** â€” The passage mentions privacy, bias, and job displacement as challenges, but not energy consumption.
-3. **(B) AI that matches human cognitive abilities** â€” The passage defines AGI as "AI that can match human cognitive abilities."
-4. **(C) Still decades away** â€” The passage states: "Many experts argue that the development of artificial general intelligence...is still decades away."
-5. **(B) Enthusiastic but measured** â€” The passage acknowledges remarkable advances and transformative potential (enthusiastic) while also noting significant unresolved challenges (measured).
+1. **(B) Computers that learn from data without explicit programming** — The passage states: "Machine learning, a subset of AI, enables computers to learn from data without being explicitly programmed."
+2. **(C) High energy consumption** — The passage mentions privacy, bias, and job displacement as challenges, but not energy consumption.
+3. **(B) AI that matches human cognitive abilities** — The passage defines AGI as "AI that can match human cognitive abilities."
+4. **(C) Still decades away** — The passage states: "Many experts argue that the development of artificial general intelligence...is still decades away."
+5. **(B) Enthusiastic but measured** — The passage acknowledges remarkable advances and transformative potential (enthusiastic) while also noting significant unresolved challenges (measured).
 
 **Your Score:** ___/5 &nbsp;&nbsp; **Time Taken:** ___ min &nbsp;&nbsp; **Accuracy:** ___%
 </details>
@@ -995,27 +995,27 @@ Artificial Intelligence (AI) has made remarkable strides in recent years. From s
 ### Milestones
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  ðŸ† MILESTONE 1: Vocabulary Master                         â”‚
-â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                â”‚
-â”‚  Complete all Syn/Ant sets with 80%+ accuracy               â”‚
-â”‚  Reward: Move to Sentence Completion                        â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚  ðŸ† MILESTONE 2: Grammar Guardian                           â”‚
-â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                                â”‚
-â”‚  Complete Error Spotting with 75%+ accuracy                 â”‚
-â”‚  Reward: Move to Para Jumbles                               â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚  ðŸ† MILESTONE 3: Comprehension Champion                     â”‚
-â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                              â”‚
-â”‚  Complete all RC sets with 70%+ accuracy                    â”‚
-â”‚  Reward: Move to full mock tests                            â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚  ðŸ† MILESTONE 4: Verbal Ability Expert                      â”‚
-â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€                              â”‚
-â”‚  Unlock: All verbal sets at 80%+ within time limits         â”‚
-â”‚  Reward: You've completed all Speed Drills! ðŸŽ‰              â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────────────┐
+│  🏆 MILESTONE 1: Vocabulary Master                         │
+│  ─────────────────────────────                                │
+│  Complete all Syn/Ant sets with 80%+ accuracy               │
+│  Reward: Move to Sentence Completion                        │
+├─────────────────────────────────────────────────────────────┤
+│  🏆 MILESTONE 2: Grammar Guardian                           │
+│  ────────────────────────────                                │
+│  Complete Error Spotting with 75%+ accuracy                 │
+│  Reward: Move to Para Jumbles                               │
+├─────────────────────────────────────────────────────────────┤
+│  🏆 MILESTONE 3: Comprehension Champion                     │
+│  ──────────────────────────────                              │
+│  Complete all RC sets with 70%+ accuracy                    │
+│  Reward: Move to full mock tests                            │
+├─────────────────────────────────────────────────────────────┤
+│  🏆 MILESTONE 4: Verbal Ability Expert                      │
+│  ──────────────────────────────                              │
+│  Unlock: All verbal sets at 80%+ within time limits         │
+│  Reward: You've completed all Speed Drills! 🎉              │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ### Final Performance Dashboard
@@ -1047,15 +1047,15 @@ Congratulations! You've completed all five modules of the Speed & Accuracy Drill
 
 ### Final Exam Readiness Checklist
 
-- [ ] Accuracy â‰¥ 80% in all quant topics
-- [ ] Accuracy â‰¥ 75% in all reasoning topics
-- [ ] Accuracy â‰¥ 75% in all verbal topics
+- [ ] Accuracy ≥ 80% in all quant topics
+- [ ] Accuracy ≥ 75% in all reasoning topics
+- [ ] Accuracy ≥ 75% in all verbal topics
 - [ ] Can complete 10 arithmetic questions in under 30 seconds
 - [ ] Can solve 5 DI questions in under 5 minutes
 - [ ] Can identify error types in sentences within 30 seconds
 - [ ] Can arrange para jumbles in under 3 minutes
 - [ ] Can complete RC passages with 5 questions in under 5 minutes
-- [ ] Composite speed score â‰¥ 70 in timed conditions
+- [ ] Composite speed score ≥ 70 in timed conditions
 - [ ] Can identify weak areas from error log
 - [ ] Can maintain accuracy for 60+ minute sessions
 
@@ -1063,9 +1063,9 @@ Congratulations! You've completed all five modules of the Speed & Accuracy Drill
 
 After mastering these drills, you're ready for full-length mock tests and actual competitive exams. Continue practicing with:
 
-1. **Full-length mock tests** â€” Simulate actual exam conditions
-2. **Topic-specific revision** â€” Revisit weak areas identified in your error log
-3. **Advanced problem sets** â€” Challenge yourself with higher difficulty
-4. **Real exam papers** â€” Practice with previous years' question papers
+1. **Full-length mock tests** — Simulate actual exam conditions
+2. **Topic-specific revision** — Revisit weak areas identified in your error log
+3. **Advanced problem sets** — Challenge yourself with higher difficulty
+4. **Real exam papers** — Practice with previous years' question papers
 
-**Remember**: Speed without accuracy is guessing. Accuracy without speed is incomplete. Master both through consistent, timed practice. Good luck! ðŸŽ¯
+**Remember**: Speed without accuracy is guessing. Accuracy without speed is incomplete. Master both through consistent, timed practice. Good luck! 🎯

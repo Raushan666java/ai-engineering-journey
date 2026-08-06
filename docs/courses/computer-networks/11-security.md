@@ -1,4 +1,4 @@
-﻿# Chapter 11: Network Security
+# Chapter 11: Network Security
 
 ## Learning Objectives
 
@@ -41,7 +41,7 @@ Network security encompasses the policies and mechanisms that protect the confid
 
 **Eavesdropping (sniffing).** An adversary captures packets traversing a network segment. On shared media (wireless, Ethernet hubs), any station on the segment can capture all traffic. On switched networks, ARP spoofing or port mirroring enables packet capture.
 
-**Traffic analysis.** Even if packets are encrypted, an adversary can observe communication patterns â†’ who talks to whom, at what times, and in what volumes â†’ to infer sensitive information.
+**Traffic analysis.** Even if packets are encrypted, an adversary can observe communication patterns → who talks to whom, at what times, and in what volumes → to infer sensitive information.
 
 **Real-world analogy.** Eavesdropping is like a postal worker opening envelopes, reading the letters inside, resealing them, and delivering them. The sender and receiver never know the letter was read.
 
@@ -613,7 +613,7 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 ```
 
-Packet filters are stateless â†’ each packet is evaluated independently. They cannot detect attacks spread across multiple packets.
+Packet filters are stateless → each packet is evaluated independently. They cannot detect attacks spread across multiple packets.
 
 **Real-world analogy.** A packet filter is like a bouncer at a club who checks only the ID (source address) and what the person is wearing (port number). They let people in or out based on these simple visible traits without remembering anyone.
 
@@ -771,9 +771,9 @@ for t in tests:
 
 | Packet | Src IP | Dst IP | Port | Rule 1 (10.0.0.0/8:22) | Rule 2 (any:22 DROP) | Rule 3 (:80 ACCEPT) | Result |
 |--------|--------|--------|------|-------------------------|----------------------|---------------------|--------|
-| P1 | 10.0.0.5 | 192.168.1.1 | 22 | MATCH â†’ ACCEPT | (skipped) | (skipped) | ACCEPT |
-| P2 | 203.0.113.5 | 192.168.1.1 | 22 | No match (src != 10.x) | MATCH â†’ DROP | (skipped) | DROP |
-| P3 | 10.0.0.5 | 192.168.1.1 | 80 | No match (port != 22) | No match (port != 22) | MATCH â†’ ACCEPT | ACCEPT |
+| P1 | 10.0.0.5 | 192.168.1.1 | 22 | MATCH → ACCEPT | (skipped) | (skipped) | ACCEPT |
+| P2 | 203.0.113.5 | 192.168.1.1 | 22 | No match (src != 10.x) | MATCH → DROP | (skipped) | DROP |
+| P3 | 10.0.0.5 | 192.168.1.1 | 80 | No match (port != 22) | No match (port != 22) | MATCH → ACCEPT | ACCEPT |
 | P4 | 10.0.0.5 | 192.168.1.1 | 443 | No match | No match | No match (port != 80) | DROP (default) |
 
 **Complexity analysis of firewall rule evaluation.**
@@ -1087,15 +1087,15 @@ TLS (Transport Layer Security) operates at the transport layer between TCP and t
 
 | Step | Direction | Content | Key Material |
 |------|-----------|---------|--------------|
-| 1 | Câ†’S | ClientHello: TLS 1.2, suites=[TLS_ECDHE_RSA_AES128_GCM, ...], nonce=Rc | -- |
-| 2 | Sâ†’C | ServerHello: TLS 1.2, TLS_ECDHE_RSA_AES128_GCM, nonce=Rs | -- |
-| 3 | Sâ†’C | Certificate: server.pem chain | Server's RSA pub key |
-| 4 | Sâ†’C | ServerKeyExchange: ECDHE params (curve, g^x, signature) | g^x, Sig(RSA, H(g^x)) |
-| 5 | Câ†’S | ClientKeyExchange: g^y | -- |
+| 1 | C→S | ClientHello: TLS 1.2, suites=[TLS_ECDHE_RSA_AES128_GCM, ...], nonce=Rc | -- |
+| 2 | S→C | ServerHello: TLS 1.2, TLS_ECDHE_RSA_AES128_GCM, nonce=Rs | -- |
+| 3 | S→C | Certificate: server.pem chain | Server's RSA pub key |
+| 4 | S→C | ServerKeyExchange: ECDHE params (curve, g^x, signature) | g^x, Sig(RSA, H(g^x)) |
+| 5 | C→S | ClientKeyExchange: g^y | -- |
 | 6 | Both | -- | PMS = ECDHE(g^xy); MS = PRF(PMS, Rc, Rs); Keys = PRF(MS, "key expansion") |
-| 7 | Câ†’S | ChangeCipherSpec, Finished (H(handshake_messages, keys)) | First msg with session keys |
-| 8 | Sâ†’C | ChangeCipherSpec, Finished | Verify integrity |
-| 9 | â†” | Application data encrypted with AES-128-GCM | Session keys |
+| 7 | C→S | ChangeCipherSpec, Finished (H(handshake_messages, keys)) | First msg with session keys |
+| 8 | S→C | ChangeCipherSpec, Finished | Verify integrity |
+| 9 | ↔ | Application data encrypted with AES-128-GCM | Session keys |
 
 **Pseudocode: TLS client handshake.**
 
@@ -1276,7 +1276,7 @@ class IPsecManager {
     // ESP header
     const spiBytes = new Uint8Array([(spi >> 24) & 0xFF, (spi >> 16) & 0xFF, (spi >> 8) & 0xFF, spi & 0xFF]);
     const seqBytes = new Uint8Array([(seq >> 24) & 0xFF, (seq >> 16) & 0xFF, (seq >> 8) & 0xFF, seq & 0xFF]);
-    // Simple XOR encryption (placeholder â€” real impl uses AES)
+    // Simple XOR encryption (placeholder — real impl uses AES)
     const padLen = 16 - (originalPacket.length % 16);
     const padded = new Uint8Array(originalPacket.length + padLen + 2);
     padded.set(originalPacket);
@@ -1355,7 +1355,7 @@ An attacker performing a TLS MITM must either (a) present a certificate signed b
 
 **Edge case: Certificate revocation check failure.**
 
-If the OCSP responder is unreachable, most clients (browsers) use "soft-fail" â†’ they proceed without revocation status (soft-fail = connection allowed, warning optional). Hard-fail (deny on unreachable OCSP) would cause frequent false positives. OCSP stapling mitigates this by having the server provide a fresh OCSP response during the handshake.
+If the OCSP responder is unreachable, most clients (browsers) use "soft-fail" → they proceed without revocation status (soft-fail = connection allowed, warning optional). Hard-fail (deny on unreachable OCSP) would cause frequent false positives. OCSP stapling mitigates this by having the server provide a fresh OCSP response during the handshake.
 
 ### TypeScript Implementation: TLSHandshakeSimulator
 
@@ -1617,7 +1617,7 @@ END
 802.1X is a port-based network access control (PNAC) standard. It prevents unauthorized devices from connecting to a LAN by authenticating at the data-link layer before IP assignment.
 
 **Authentication steps:**
-1. **Supplicant (client)** connects to **Authenticator (switch/AP)**. Port is in unauthorized state â†’ only EAP traffic allowed.
+1. **Supplicant (client)** connects to **Authenticator (switch/AP)**. Port is in unauthorized state → only EAP traffic allowed.
 2. **Authenticator** sends EAP-Request Identity. Supplicant responds with EAP-Response Identity.
 3. **Authenticator** encapsulates EAP in RADIUS and forwards to **Authentication Server (RADIUS)**.
 4. **RADIUS server** challenges the supplicant using EAP method (EAP-TLS, PEAP, EAP-TTLS).
@@ -1677,12 +1677,12 @@ DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authenticat
 
 ### Q1: Explain the TLS handshake steps.
 
-**A.** The TLS 1.2 handshake has 4 phases: (1) ClientHello â†’ client sends supported versions, cipher suites, random nonce. (2) ServerHello + Certificate + ServerKeyExchange â†’ server selects cipher suite, sends certificate chain and DH params. (3) ClientKeyExchange + ChangeCipherSpec + Finished â†’ client sends DH share, both derive session keys, client sends encrypted verification. (4) Server ChangeCipherSpec + Finished â†’ server sends encrypted verification. Application data follows encrypted with symmetric keys.
+**A.** The TLS 1.2 handshake has 4 phases: (1) ClientHello → client sends supported versions, cipher suites, random nonce. (2) ServerHello + Certificate + ServerKeyExchange → server selects cipher suite, sends certificate chain and DH params. (3) ClientKeyExchange + ChangeCipherSpec + Finished → client sends DH share, both derive session keys, client sends encrypted verification. (4) Server ChangeCipherSpec + Finished → server sends encrypted verification. Application data follows encrypted with symmetric keys.
 **TLS 1.3** reduces this to 1 RTT: ClientHello includes key_share; ServerHello includes its key_share; both compute shared secret immediately.
 
 ### Q2: Where should a firewall be placed in a network?
 
-**A.** Firewalls deploy at these chokepoints: (1) **Internet edge** â†’ between WAN router and internal network (perimeter firewall). (2) **DMZ** â†’ between internet and DMZ (external firewall) and between DMZ and internal network (internal firewall). (3) **Internal segments** â†’ between different security zones (finance, HR, engineering). (4) **Data center edge** â†’ at the data center aggregation layer. (5) **Cloud** â†’ cloud firewalls (AWS Security Groups, Azure NSGs) at VPC/subnet boundaries.
+**A.** Firewalls deploy at these chokepoints: (1) **Internet edge** → between WAN router and internal network (perimeter firewall). (2) **DMZ** → between internet and DMZ (external firewall) and between DMZ and internal network (internal firewall). (3) **Internal segments** → between different security zones (finance, HR, engineering). (4) **Data center edge** → at the data center aggregation layer. (5) **Cloud** → cloud firewalls (AWS Security Groups, Azure NSGs) at VPC/subnet boundaries.
 
 ### Q3: Compare VPN vs MPLS.
 
@@ -1839,7 +1839,7 @@ graph TB
 
 **Solution.** The security team deployed a three-tier firewall architecture: (1) edge NGFWs with IPS and DDoS scrubbing at the internet gateway, (2) internal firewalls creating DMZ, internal, and management security zones, and (3) host-based firewalls on all servers. TLS 1.3 was enforced for all external-facing services with Let's Encrypt certificates and automated renewal via ACME. A site-to-site IPSec VPN connected the three data centers using IKEv2 with ECDHE and AES-256-GCM. Remote employees connected via an SSL VPN with multi-factor authentication. The cloud workloads (AWS VPCs) were secured using Security Groups with a default-deny policy, and a centralized SIEM collected logs from all firewalls, IDS sensors, and cloud APIs.
 
-**Outcome.** Over three years, the organization experienced zero security breaches. The automated certificate lifecycle eliminated expired-certificate outages. DDoS scrubbing mitigated five attacks exceeding 100 Gbps. The micro-segmentation policy limited the blast radius of a single compromised workstation â€” lateral movement was contained to the user's department. Annual PCI-DSS audits passed with no critical findings. The total security operation cost was 15% below the previous legacy appliance model due to reduced hardware maintenance and automated policy management.
+**Outcome.** Over three years, the organization experienced zero security breaches. The automated certificate lifecycle eliminated expired-certificate outages. DDoS scrubbing mitigated five attacks exceeding 100 Gbps. The micro-segmentation policy limited the blast radius of a single compromised workstation — lateral movement was contained to the user's department. Annual PCI-DSS audits passed with no critical findings. The total security operation cost was 15% below the previous legacy appliance model due to reduced hardware maintenance and automated policy management.
 
 ## Practical Takeaways
 
@@ -1895,7 +1895,7 @@ graph TB
 
 ## Summary
 
-Network security relies on cryptography for confidentiality (AES), integrity (SHA-256, HMAC), and authentication (digital signatures, certificates). Symmetric encryption provides fast bulk encryption but requires secure key distribution. Asymmetric encryption (RSA, ECC) enables key exchange and digital signatures. PKI binds public keys to identities through CA-signed X.509 certificates. Firewalls enforce access control at the packet, state, or application level â†’ NGFWs combine all three with DPI. VPNs (IPSec, TLS, WireGuard) protect communication over untrusted networks. IDS/IPS detect and block malicious traffic using signatures, anomaly detection, and behavioral analysis. DDoS mitigation requires multi-layer defense from edge routing to application-level filtering. 802.1X authenticates devices at the port level before network access. WPA3 replaces WPA2's PSK with SAE, providing forward secrecy and resistance to offline dictionary attacks. DNSSEC validates DNS response integrity through digital signatures.
+Network security relies on cryptography for confidentiality (AES), integrity (SHA-256, HMAC), and authentication (digital signatures, certificates). Symmetric encryption provides fast bulk encryption but requires secure key distribution. Asymmetric encryption (RSA, ECC) enables key exchange and digital signatures. PKI binds public keys to identities through CA-signed X.509 certificates. Firewalls enforce access control at the packet, state, or application level → NGFWs combine all three with DPI. VPNs (IPSec, TLS, WireGuard) protect communication over untrusted networks. IDS/IPS detect and block malicious traffic using signatures, anomaly detection, and behavioral analysis. DDoS mitigation requires multi-layer defense from edge routing to application-level filtering. 802.1X authenticates devices at the port level before network access. WPA3 replaces WPA2's PSK with SAE, providing forward secrecy and resistance to offline dictionary attacks. DNSSEC validates DNS response integrity through digital signatures.
 
 ## Exercises
 
@@ -1904,19 +1904,19 @@ Network security relies on cryptography for confidentiality (AES), integrity (SH
 <details>
 <summary>Solution</summary>
 
-1. A cryptographic hash must satisfy: (a) preimage resistance â€” given hash y, infeasible to find x such that H(x) = y; (b) second preimage resistance â€” given x, infeasible to find x' â‰  x with H(x') = H(x); (c) collision resistance â€” infeasible to find any pair xâ‚ â‰  xâ‚‚ with H(xâ‚) = H(xâ‚‚).
+1. A cryptographic hash must satisfy: (a) preimage resistance — given hash y, infeasible to find x such that H(x) = y; (b) second preimage resistance — given x, infeasible to find x' ≠ x with H(x') = H(x); (c) collision resistance — infeasible to find any pair x₁ ≠ x₂ with H(x₁) = H(x₂).
 
 2. DH is vulnerable to MITM because the exchanged public values (g^a mod p, g^b mod p) are not authenticated. An attacker can intercept both values, substitute their own, and establish separate shared secrets with each party. The parties believe they share a secret with each other but actually share one with the attacker.
 
 3. An X.509 certificate contains: version, serial number, signature algorithm identifier, issuer name, validity period (notBefore, notAfter), subject name, subject's public key, issuer unique ID (optional), subject unique ID (optional), extensions, and CA's digital signature.
 
-4. A packet-filter firewall examines each packet independently (stateless) based on IP/port fields. A stateful firewall maintains a connection state table tracking TCP handshake state, sequence numbers, and session context â€” it can allow return traffic for outbound connections while blocking unsolicited inbound packets.
+4. A packet-filter firewall examines each packet independently (stateless) based on IP/port fields. A stateful firewall maintains a connection state table tracking TCP handshake state, sequence numbers, and session context — it can allow return traffic for outbound connections while blocking unsolicited inbound packets.
 
-5. Transport mode protects only the payload (L4 and above) of the original IP packet, keeping the original IP header. Tunnel mode encapsulates the entire original IP packet inside a new IP header with ESP/AH â€” the original IP addresses are hidden, making it suitable for site-to-site VPNs.
+5. Transport mode protects only the payload (L4 and above) of the original IP packet, keeping the original IP header. Tunnel mode encapsulates the entire original IP packet inside a new IP header with ESP/AH — the original IP addresses are hidden, making it suitable for site-to-site VPNs.
 
-6. IDS/IPS use: (a) signature-based detection â€” matching known attack patterns (fast, low false positive, no zero-day); (b) anomaly-based detection â€” deviations from baseline behavior (detects novel attacks, higher false positives); (c) behavioral analysis â€” sequences of actions indicating compromise (context-aware, computationally expensive).
+6. IDS/IPS use: (a) signature-based detection — matching known attack patterns (fast, low false positive, no zero-day); (b) anomaly-based detection — deviations from baseline behavior (detects novel attacks, higher false positives); (c) behavioral analysis — sequences of actions indicating compromise (context-aware, computationally expensive).
 
-7. SAE (Simultaneous Authentication of Equals) uses a password-authenticated Diffie-Hellman exchange where each guess requires an online interaction with the real AP. Unlike WPA2's PSK 4-way handshake which can be captured and brute-forced offline, SAE's exchange commits both parties to a guess before revealing any information â€” an attacker cannot verify an offline guess.
+7. SAE (Simultaneous Authentication of Equals) uses a password-authenticated Diffie-Hellman exchange where each guess requires an online interaction with the real AP. Unlike WPA2's PSK 4-way handshake which can be captured and brute-forced offline, SAE's exchange commits both parties to a guess before revealing any information — an attacker cannot verify an offline guess.
 
 8. A DS (Delegation Signer) record in the parent zone links to a child zone's DNSKEY record. It contains a hash of the child zone's KSK (Key Signing Key), enabling resolvers to build a chain of trust from the root zone down to the target domain.
 </details>
@@ -1926,11 +1926,11 @@ Network security relies on cryptography for confidentiality (AES), integrity (SH
 <details>
 <summary>Solution</summary>
 
-9. n = p Ã— q = 61 Ã— 53 = 3233. Ï†(n) = (p-1)(q-1) = 60 Ã— 52 = 3120. e = 17. Using extended Euclidean algorithm: 17 Ã— d â‰¡ 1 (mod 3120) â†’ d = 2753. Encrypt: c = m^e mod n = 65^17 mod 3233 = 2790. Decrypt: m = c^d mod n = 2790^2753 mod 3233 = 65 âœ“.
+9. n = p × q = 61 × 53 = 3233. φ(n) = (p-1)(q-1) = 60 × 52 = 3120. e = 17. Using extended Euclidean algorithm: 17 × d ≡ 1 (mod 3120) → d = 2753. Encrypt: c = m^e mod n = 65^17 mod 3233 = 2790. Decrypt: m = c^d mod n = 2790^2753 mod 3233 = 65 ✓.
 
 10. Stateful firewall rules: (1) Allow outbound HTTP/HTTPS from any internal host to any destination; (2) Allow outbound DNS (UDP 53) from internal DNS servers to external resolvers; (3) Allow inbound SSH from 10.0.0.0/24 to any internal host (management access); (4) Allow inbound SMTP from any to 10.0.1.10 (mail server); (5) Deny all other inbound traffic; (6) Allow established/related return traffic for all outbound connections. The stateful firewall automatically creates state entries for allowed outbound connections, permitting return traffic without explicit rules.
 
-11. SYN flood fill time = 500,000 / 1,000,000 = 0.5 seconds. Defenses: (a) SYN cookies â€” encode connection state in SYN-ACK sequence number, no state stored until ACK; (b) SYN proxy â€” firewall completes handshake on behalf of server; (c) rate limiting â€” limit new connections per second per source IP; (d) increase connection table size and reduce timeout for half-open connections.
+11. SYN flood fill time = 500,000 / 1,000,000 = 0.5 seconds. Defenses: (a) SYN cookies — encode connection state in SYN-ACK sequence number, no state stored until ACK; (b) SYN proxy — firewall completes handshake on behalf of server; (c) rate limiting — limit new connections per second per source IP; (d) increase connection table size and reduce timeout for half-open connections.
 
 12. IKEv2 SA setup: (1) IKE_SA_INIT request: HDR(SPIi=0xA1), SA(enc=AES-CBC-256, prf=HMAC-SHA256, dh=19), KE(g^i mod p), Ni(nonce); (2) IKE_SA_INIT response: HDR(SPIi=0xA1, SPIr=0xB2), SA(enc=AES-CBC-256), KE(g^r mod p), Nr(nonce); (3) Key derivation: SK_d = PRF(Ni|Nr, g^ir), SK_ei = PRF(SK_d, "key for init"), SK_er = PRF(SK_d, "key for resp"); (4) IKE_AUTH request: SK{IDi, CERT, AUTH, SA(TSi, TSr)}; (5) IKE_AUTH response: SK{IDr, CERT, AUTH, SA}.
 </details>
@@ -1940,5 +1940,5 @@ Network security relies on cryptography for confidentiality (AES), integrity (SH
 <details>
 <summary>Solution</summary>
 
-13. **Secure messaging protocol design:** (a) Use X3DH (Extended Triple Diffie-Hellman) for initial key agreement â€” each party has a long-term identity key (IK), a medium-term signed pre-key (SPK), and ephemeral keys (EK). (b) For forward secrecy, use the Double Ratchet algorithm: a DH ratchet provides new ephemeral keys per message (or per received message), and a symmetric ratchet provides keys for each message direction. Compromise of long-term keys reveals only the current ratchet state, not past messages. (c) For deniability, use the same key material for both parties â€” either party could have forged a message (no cryptographic proof of origin to third parties). Off-the-Record messaging uses this property. (d) Authentication is achieved during the X3DH initial handshake where both parties authenticate using their long-term identity keys (signed with ECDSA). The initial shared secret includes IK components from both sides. Comparison with Signal: this design is functionally equivalent to Signal's Double Ratchet + X3DH. Signal adds additional protections like padding, message dedup via associated data, and post-compromise security through future DH ratchets.
+13. **Secure messaging protocol design:** (a) Use X3DH (Extended Triple Diffie-Hellman) for initial key agreement — each party has a long-term identity key (IK), a medium-term signed pre-key (SPK), and ephemeral keys (EK). (b) For forward secrecy, use the Double Ratchet algorithm: a DH ratchet provides new ephemeral keys per message (or per received message), and a symmetric ratchet provides keys for each message direction. Compromise of long-term keys reveals only the current ratchet state, not past messages. (c) For deniability, use the same key material for both parties — either party could have forged a message (no cryptographic proof of origin to third parties). Off-the-Record messaging uses this property. (d) Authentication is achieved during the X3DH initial handshake where both parties authenticate using their long-term identity keys (signed with ECDSA). The initial shared secret includes IK components from both sides. Comparison with Signal: this design is functionally equivalent to Signal's Double Ratchet + X3DH. Signal adds additional protections like padding, message dedup via associated data, and post-compromise security through future DH ratchets.
 </details>

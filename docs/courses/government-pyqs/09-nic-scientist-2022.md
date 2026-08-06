@@ -1,6 +1,6 @@
-﻿# NIC Scientist B 2022 â€” Solved Paper
+# NIC Scientist B 2022 — Solved Paper
 
-> National Informatics Centre (NIC) Scientist B recruitment exam 2022 â€” comprehensive solutions with TypeScript implementations, Mermaid diagrams, and strategic insights.
+> National Informatics Centre (NIC) Scientist B recruitment exam 2022 — comprehensive solutions with TypeScript implementations, Mermaid diagrams, and strategic insights.
 
 ---
 
@@ -31,11 +31,11 @@
 | Section C | General Aptitude | 20 | 20 | 20 min |
 | **Total** | | **100** | **100** | **120 min** |
 
-**Marking:** +1 correct, âˆ’0.25 incorrect.
+**Marking:** +1 correct, −0.25 incorrect.
 
 ---
 
-## Topic Weightage Comparison (2020â€“2024)
+## Topic Weightage Comparison (2020–2024)
 
 | Topic | 2022 | 2023 | 2024 | Trend |
 |-------|------|------|------|-------|
@@ -76,14 +76,14 @@ D) Linked List
 A) O(1)  
 B) O(log n)  
 C) O(n)  
-D) O(nÂ²)  
+D) O(n²)  
 
 <details>
 <summary>Show Answer</summary>
 
 **Answer:** A) O(1)
 
-**Explanation:** Array access by index is O(1) because it's computed as: base_address + (index Ã— element_size). This is direct memory addressing with no traversal needed.
+**Explanation:** Array access by index is O(1) because it's computed as: base_address + (index × element_size). This is direct memory addressing with no traversal needed.
 
 </details>
 
@@ -104,7 +104,7 @@ D) Level Order
 **Explanation:** Inorder traversal visits left subtree, then root, then right subtree. For a BST, this visits all nodes in ascending order.
 
 ```typescript
-// BST Inorder Traversal â€” TypeScript
+// BST Inorder Traversal — TypeScript
 class BSTNode {
   constructor(
     public val: number,
@@ -153,7 +153,7 @@ D) Heap Sort
 
 **Answer:** D) Heap Sort
 
-**Explanation:** Heap Sort has O(n log n) in all cases (best, average, worst). Bubble, Selection, and Insertion sorts are all O(nÂ²) average case.
+**Explanation:** Heap Sort has O(n log n) in all cases (best, average, worst). Bubble, Selection, and Insertion sorts are all O(n²) average case.
 
 </details>
 
@@ -174,7 +174,7 @@ D) rear == front
 **Explanation:** In a circular queue, full condition is when the next position of rear is front. This means only MAX-1 elements can be stored (one slot is left empty to distinguish full from empty).
 
 ```typescript
-// Circular Queue â€” TypeScript
+// Circular Queue — TypeScript
 class CircularQueue<T> {
   private data: (T | undefined)[];
   private front = 0;
@@ -207,9 +207,9 @@ class CircularQueue<T> {
 
 const cq = new CircularQueue<number>(5);
 cq.enqueue(10); cq.enqueue(20); cq.enqueue(30); cq.enqueue(40); cq.enqueue(50);
-console.log(cq.enqueue(60)); // false â€” queue is full
+console.log(cq.enqueue(60)); // false — queue is full
 console.log(cq.dequeue()); // 10
-console.log(cq.enqueue(60)); // true â€” space freed up
+console.log(cq.enqueue(60)); // true — space freed up
 ```
 
 </details>
@@ -228,7 +228,7 @@ D) All leaves are at the same level
 
 **Answer:** C) Inorder traversal yields ascending order
 
-**Explanation:** In a BST, left child â‰¤ parent < right child (or similar variant). Inorder traversal visits left â†’ parent â†’ right, giving ascending order.
+**Explanation:** In a BST, left child ≤ parent < right child (or similar variant). Inorder traversal visits left → parent → right, giving ascending order.
 
 </details>
 
@@ -236,17 +236,17 @@ D) All leaves are at the same level
 
 **Q7.** The maximum number of nodes in a binary tree of depth d (root at depth 0) is:
 
-A) 2áµˆ  
-B) 2áµˆâºÂ¹ âˆ’ 1  
-C) 2áµˆ âˆ’ 1  
-D) 2áµˆâºÂ¹  
+A) 2ᵈ  
+B) 2ᵈ⁺¹ − 1  
+C) 2ᵈ − 1  
+D) 2ᵈ⁺¹  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) 2áµˆâºÂ¹ âˆ’ 1
+**Answer:** B) 2ᵈ⁺¹ − 1
 
-**Explanation:** At depth i, maximum nodes = 2â±. Total = 2â°+2Â¹+...+2áµˆ = 2áµˆâºÂ¹âˆ’1.
+**Explanation:** At depth i, maximum nodes = 2ⁱ. Total = 2⁰+2¹+...+2ᵈ = 2ᵈ⁺¹−1.
 
 </details>
 
@@ -257,7 +257,7 @@ D) 2áµˆâºÂ¹
 A) O(1)  
 B) O(n)  
 C) O(log n)  
-D) O(nÂ²)  
+D) O(n²)  
 
 <details>
 <summary>Show Answer</summary>
@@ -285,7 +285,7 @@ D) Bellman-Ford
 **Explanation:** Prim's algorithm finds MST by growing a single tree from a starting vertex. Kruskal's also finds MST. Dijkstra and Bellman-Ford find shortest paths. Floyd-Warshall finds all-pairs shortest paths.
 
 ```typescript
-// Prim's MST Algorithm â€” TypeScript
+// Prim's MST Algorithm — TypeScript
 function primMST(graph: number[][]): { mst: number[][]; weight: number } {
   const n = graph.length;
   const selected = new Array(n).fill(false);
@@ -356,16 +356,16 @@ D) Graph traversal (BFS)
 **Q11.** How many edges does a complete graph with n vertices have?
 
 A) n  
-B) nÂ²  
-C) n(nâˆ’1)/2  
-D) n(nâˆ’1)  
+B) n²  
+C) n(n−1)/2  
+D) n(n−1)  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) n(nâˆ’1)/2
+**Answer:** C) n(n−1)/2
 
-**Explanation:** In a complete graph, each vertex is connected to all other nâˆ’1 vertices. Total edges = n(nâˆ’1)/2.
+**Explanation:** In a complete graph, each vertex is connected to all other n−1 vertices. Total edges = n(n−1)/2.
 
 </details>
 
@@ -386,7 +386,7 @@ D) Trie
 **Explanation:** AVL tree is a self-balancing BST where the height difference between left and right subtrees (balance factor) is at most 1 for every node. Red-Black trees are another example.
 
 ```typescript
-// AVL Tree balance check â€” TypeScript
+// AVL Tree balance check — TypeScript
 class AVLNode {
   height: number = 1;
   constructor(
@@ -480,7 +480,7 @@ D) Prim's
 A) O(n)  
 B) O(log n)  
 C) O(n log n)  
-D) O(nÂ²)  
+D) O(n²)  
 
 <details>
 <summary>Show Answer</summary>
@@ -490,7 +490,7 @@ D) O(nÂ²)
 **Explanation:** Building a heap from an array (heapify) takes O(n) time. While each sift-down is O(log n), the number of operations sums to O(n) because most nodes are near the bottom.
 
 ```typescript
-// Heapify â€” TypeScript (O(n))
+// Heapify — TypeScript (O(n))
 function heapify(arr: number[]): void {
   const n = arr.length;
   // Start from last non-leaf node
@@ -556,23 +556,23 @@ D) A section that handles errors
 **Explanation:** The critical section is a code segment where shared resources (variables, files, etc.) are accessed. Mutual exclusion ensures only one process executes its critical section at a time to prevent race conditions.
 
 ```typescript
-// Critical Section â€” TypeScript
+// Critical Section — TypeScript
 class SharedCounter {
   private count = 0;
   private locked = false;
   private queue: (() => void)[] = [];
 
   async increment(): Promise<void> {
-    // Entry section â€” acquire lock
+    // Entry section — acquire lock
     await this.acquireLock();
 
-    // Critical section â€” safely access shared resource
+    // Critical section — safely access shared resource
     const current = this.count;
     // Simulate some work
     await new Promise(r => setTimeout(r, 10));
     this.count = current + 1;
 
-    // Exit section â€” release lock
+    // Exit section — release lock
     this.releaseLock();
   }
 
@@ -627,7 +627,7 @@ D) A module that manages memory
 
 **Answer:** B) A module that gives control of CPU to the selected process
 
-**Explanation:** The dispatcher is responsible for context switching â€” saving the state of the current process and loading the saved state of the selected process. The scheduler selects which process runs; the dispatcher makes it happen.
+**Explanation:** The dispatcher is responsible for context switching — saving the state of the current process and loading the saved state of the selected process. The scheduler selects which process runs; the dispatcher makes it happen.
 
 </details>
 
@@ -648,7 +648,7 @@ D) Priority (non-preemptive)
 **Explanation:** SRTF is the preemptive version of SJF. If a new process arrives with a shorter remaining burst time than the currently running process, the CPU is preempted. FCFS and non-preemptive SJF/Priority are non-preemptive.
 
 ```typescript
-// SRTF Preemptive Scheduling â€” TypeScript
+// SRTF Preemptive Scheduling — TypeScript
 interface Process {
   id: string;
   arrivalTime: number;
@@ -764,7 +764,7 @@ D) Improve network performance
 ```mermaid
 flowchart TD
     subgraph "Virtual Memory"
-        VM[Virtual Address Space<br/>0 to 2Â³Â²-1]
+        VM[Virtual Address Space<br/>0 to 2³²-1]
     end
     subgraph "Physical Memory"
         RAM[RAM<br/>Pages]
@@ -851,7 +851,7 @@ D) BCNF
 
 **Answer:** C) 3NF
 
-**Explanation:** A transitive dependency exists when a non-key attribute depends on another non-key attribute. 3NF eliminates transitive dependencies. Example: Student â†’ Department â†’ HOD (transitive: Student â†’ HOD via Department).
+**Explanation:** A transitive dependency exists when a non-key attribute depends on another non-key attribute. 3NF eliminates transitive dependencies. Example: Student → Department → HOD (transitive: Student → HOD via Department).
 
 </details>
 
@@ -915,7 +915,7 @@ D) FULL OUTER JOIN
 **Explanation:** FULL OUTER JOIN returns all rows from both tables, matching where possible and filling NULLs where not. INNER JOIN returns only matching rows. LEFT/RIGHT JOIN returns all from one side and matches from the other.
 
 ```typescript
-// SQL JOINs â€” TypeScript
+// SQL JOINs — TypeScript
 interface TableA { id: number; name: string; }
 interface TableB { id: number; value: string; }
 
@@ -1121,10 +1121,10 @@ D) FTP
 
 **Answer:** B) UDP (User Datagram Protocol)
 
-**Explanation:** UDP is connectionless â€” it sends datagrams without establishing a connection, with no guarantee of delivery or ordering. It's faster than TCP and used for streaming, DNS, and VoIP.
+**Explanation:** UDP is connectionless — it sends datagrams without establishing a connection, with no guarantee of delivery or ordering. It's faster than TCP and used for streaming, DNS, and VoIP.
 
 ```typescript
-// UDP vs TCP comparison â€” TypeScript
+// UDP vs TCP comparison — TypeScript
 interface ProtocolStats {
   protocol: string;
   connectionOriented: boolean;
@@ -1230,7 +1230,7 @@ D) Visual model
 
 **Answer:** A) Verification and Validation model
 
-**Explanation:** The V-Model maps each development phase to a corresponding testing phase: Requirements â†’ Acceptance Testing, Design â†’ System Testing, etc. It emphasizes verification (are we building it right?) and validation (are we building the right thing?).
+**Explanation:** The V-Model maps each development phase to a corresponding testing phase: Requirements → Acceptance Testing, Design → System Testing, etc. It emphasizes verification (are we building it right?) and validation (are we building the right thing?).
 
 ```mermaid
 flowchart LR
@@ -1284,7 +1284,7 @@ D) The testing coverage
 
 **Answer:** A) The degree of interdependence between modules
 
-**Explanation:** Coupling measures how connected different modules are. Low coupling (loose coupling) is desirable â€” changes in one module should not heavily impact others. High coupling makes maintenance difficult.
+**Explanation:** Coupling measures how connected different modules are. Low coupling (loose coupling) is desirable — changes in one module should not heavily impact others. High coupling makes maintenance difficult.
 
 </details>
 
@@ -1320,7 +1320,7 @@ D) Acceptance testing
 
 **Answer:** D) Acceptance testing
 
-**Explanation:** Acceptance testing (UAT â€” User Acceptance Testing) is performed by end-users to determine if the system meets their needs and is acceptable for deployment.
+**Explanation:** Acceptance testing (UAT — User Acceptance Testing) is performed by end-users to determine if the system meets their needs and is acceptable for deployment.
 
 </details>
 
@@ -1472,7 +1472,7 @@ D) An integer pointer array
 
 **Answer:** B) A pointer to an array of 5 integers
 
-**Explanation:** `int (*ptr)[5]` â€” ptr is a pointer to an array of 5 ints. `int *ptr[5]` would be an array of 5 pointers to int. The parentheses change the binding.
+**Explanation:** `int (*ptr)[5]` — ptr is a pointer to an array of 5 ints. `int *ptr[5]` would be an array of 5 pointers to int. The parentheses change the binding.
 
 </details>
 
@@ -1499,7 +1499,7 @@ D) 1
 
 **Answer:** B) 5
 
-**Explanation:** sizeof(arr) returns total array size in bytes (5 Ã— 4 = 20 on 32-bit). sizeof(arr[0]) = 4. 20/4 = 5 (number of elements).
+**Explanation:** sizeof(arr) returns total array size in bytes (5 × 4 = 20 on 32-bit). sizeof(arr[0]) = 4. 20/4 = 5 (number of elements).
 
 </details>
 
@@ -1663,7 +1663,7 @@ D) Undefined
 
 **Answer:** A) True
 
-**Explanation:** x = 1 is an assignment (not comparison). The value of the assignment is 1 (true), so the if block executes. This is a common C mistake â€” should be `x == 1` for comparison.
+**Explanation:** x = 1 is an assignment (not comparison). The value of the assignment is 1 (true), so the if block executes. This is a common C mistake — should be `x == 1` for comparison.
 
 </details>
 
@@ -1740,7 +1740,7 @@ D) Compilation error
 
 **Answer:** B) 5
 
-**Explanation:** The semicolon after the for loop creates an empty loop body. The loop runs 5 times (i goes 0â†’5). After the loop, i=5, then printf executes once.
+**Explanation:** The semicolon after the for loop creates an empty loop body. The loop runs 5 times (i goes 0→5). After the loop, i=5, then printf executes once.
 
 </details>
 
@@ -1835,7 +1835,7 @@ D) Method with no parameters
 **Explanation:** Overloading allows multiple methods with the same name but different parameter lists (different number, types, or order of parameters). It's resolved at compile-time (static polymorphism).
 
 ```typescript
-// Method Overloading â€” TypeScript
+// Method Overloading — TypeScript
 class Calculator {
   // Overloaded signatures
   add(a: number, b: number): number;
@@ -1955,7 +1955,7 @@ D) HashMap
 **Explanation:** Vector is synchronized (legacy class). ArrayList, HashSet, and HashMap are not synchronized. For thread-safe alternatives, use Collections.synchronizedList() or ConcurrentHashMap.
 
 ```typescript
-// Synchronized vs Unsynchronized â€” TypeScript
+// Synchronized vs Unsynchronized — TypeScript
 class SynchronizedList<T> {
   private data: T[] = [];
   private lock: boolean = false;
@@ -2035,7 +2035,7 @@ D) StringBuffer is for immutable strings
 **Explanation:** StringBuffer methods are synchronized (thread-safe), which adds overhead. StringBuilder is not synchronized, making it faster for single-threaded use. Both are mutable (unlike String which is immutable).
 
 ```typescript
-// String vs StringBuilder behavior â€” TypeScript
+// String vs StringBuilder behavior — TypeScript
 // String is immutable
 let s = "Hello";
 s = s + " World"; // Creates a new string object
@@ -2167,7 +2167,7 @@ D) 40
 
 **Answer:** B) 30
 
-**Explanation:** Work = 15 workers Ã— 20 days = 300 worker-days. Workers needed = 300/10 = 30.
+**Explanation:** Work = 15 workers × 20 days = 300 worker-days. Workers needed = 300/10 = 30.
 
 </details>
 
@@ -2185,7 +2185,7 @@ D) 25
 
 **Answer:** C) 30
 
-**Explanation:** 15% of 200 = (15/100) Ã— 200 = 0.15 Ã— 200 = 30.
+**Explanation:** 15% of 200 = (15/100) × 200 = 0.15 × 200 = 30.
 
 </details>
 
@@ -2203,7 +2203,7 @@ D) 350 m
 
 **Answer:** C) 300 m
 
-**Explanation:** Speed = 72 km/h = 72 Ã— (5/18) = 20 m/s. Distance covered = speed Ã— time = 20 Ã— 30 = 600 m. Distance = train length + platform length. Train length = 600 âˆ’ 300 = 300 m.
+**Explanation:** Speed = 72 km/h = 72 × (5/18) = 20 m/s. Distance covered = speed × time = 20 × 30 = 600 m. Distance = train length + platform length. Train length = 600 − 300 = 300 m.
 
 </details>
 
@@ -2221,7 +2221,7 @@ D) 24
 
 **Answer:** B) 12
 
-**Explanation:** Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. Highest common factor: 12. Using Euclidean algorithm: 48 = 36Ã—1+12, 36 = 12Ã—3+0 â†’ HCF = 12.
+**Explanation:** Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. Highest common factor: 12. Using Euclidean algorithm: 48 = 36×1+12, 36 = 12×3+0 → HCF = 12.
 
 </details>
 
@@ -2245,19 +2245,19 @@ D) 28 km/h
 
 ---
 
-**Q86.** If the compound interest on a sum for 2 years at 10% per annum is â‚¹525, what is the sum?
+**Q86.** If the compound interest on a sum for 2 years at 10% per annum is ₹525, what is the sum?
 
-A) â‚¹2000  
-B) â‚¹2500  
-C) â‚¹3000  
-D) â‚¹3500  
+A) ₹2000  
+B) ₹2500  
+C) ₹3000  
+D) ₹3500  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) â‚¹2500
+**Answer:** B) ₹2500
 
-**Explanation:** CI = P(1 + r/100)^n âˆ’ P = P[(1.10)Â² âˆ’ 1] = P[1.21 âˆ’ 1] = 0.21P. 0.21P = 525 â†’ P = 525/0.21 = â‚¹2500.
+**Explanation:** CI = P(1 + r/100)^n − P = P[(1.10)² − 1] = P[1.21 − 1] = 0.21P. 0.21P = 525 → P = 525/0.21 = ₹2500.
 
 </details>
 
@@ -2281,7 +2281,7 @@ D) 8
 
 ---
 
-**Q88.** If x + y = 12 and xy = 32, what is xÂ² + yÂ²?
+**Q88.** If x + y = 12 and xy = 32, what is x² + y²?
 
 A) 80  
 B) 100  
@@ -2293,7 +2293,7 @@ D) 144
 
 **Answer:** A) 80
 
-**Explanation:** xÂ² + yÂ² = (x+y)Â² âˆ’ 2xy = 12Â² âˆ’ 2Ã—32 = 144 âˆ’ 64 = 80.
+**Explanation:** x² + y² = (x+y)² − 2xy = 12² − 2×32 = 144 − 64 = 80.
 
 </details>
 
@@ -2313,7 +2313,7 @@ D) 72
 
 **Answer:** B) 162
 
-**Explanation:** Each term is multiplied by 3: 2Ã—3=6, 6Ã—3=18, 18Ã—3=54, 54Ã—3=162.
+**Explanation:** Each term is multiplied by 3: 2×3=6, 6×3=18, 18×3=54, 54×3=162.
 
 </details>
 
@@ -2377,7 +2377,7 @@ D) FSBUGR
 
 **Answer:** A) FSBTFS
 
-**Explanation:** Each letter is shifted by +1: Pâ†’Q, Eâ†’F, Nâ†’O, Câ†’D, Iâ†’J, Lâ†’M. PENCIL â†’ QFO DJM (with space after every three letters). ERASER: Eâ†’F, Râ†’S, Aâ†’B, Sâ†’T, Eâ†’F, Râ†’S. So ERASER â†’ FSBTFS.
+**Explanation:** Each letter is shifted by +1: P→Q, E→F, N→O, C→D, I→J, L→M. PENCIL → QFO DJM (with space after every three letters). ERASER: E→F, R→S, A→B, S→T, E→F, R→S. So ERASER → FSBTFS.
 
 </details>
 
@@ -2434,7 +2434,7 @@ D) DY
 
 **Answer:** A) DW
 
-**Explanation:** Pattern: First letter increases by 1 (Aâ†’Bâ†’Câ†’D). Second letter decreases by 1 (Zâ†’Yâ†’Xâ†’W). So next: DW.
+**Explanation:** Pattern: First letter increases by 1 (A→B→C→D). Second letter decreases by 1 (Z→Y→X→W). So next: DW.
 
 </details>
 
@@ -2442,17 +2442,17 @@ D) DY
 
 **Q95.** A clock shows 4:30. What is the angle between the hour and minute hands?
 
-A) 30Â°  
-B) 45Â°  
-C) 60Â°  
-D) 75Â°  
+A) 30°  
+B) 45°  
+C) 60°  
+D) 75°  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) 45Â°
+**Answer:** B) 45°
 
-**Explanation:** At 4:30, minute hand is at 6 (180Â°). Hour hand is between 4 and 5, at 4.5 hours = 135Â°. Difference = 180Â°âˆ’135Â° = 45Â°.
+**Explanation:** At 4:30, minute hand is at 6 (180°). Hour hand is between 4 and 5, at 4.5 hours = 135°. Difference = 180°−135° = 45°.
 
 </details>
 
@@ -2472,7 +2472,7 @@ D) Ocasion
 
 **Answer:** B) Occasion
 
-**Explanation:** The correct spelling is "Occasion" â€” double c, single s.
+**Explanation:** The correct spelling is "Occasion" — double c, single s.
 
 </details>
 
@@ -2490,7 +2490,7 @@ D) Bravery
 
 **Answer:** B) Shortness
 
-**Explanation:** Brevity means concise and short in duration or expression. "Brevity is the soul of wit" â€” Shakespeare.
+**Explanation:** Brevity means concise and short in duration or expression. "Brevity is the soul of wit" — Shakespeare.
 
 </details>
 
@@ -2592,12 +2592,12 @@ D) with
 
 ### Key Insights for NIC Scientist B
 
-1. **DS&A is the most critical section** (13-14 questions) â€” focus on trees, graphs, sorting, hashing
-2. **C Programming is heavily tested** (13-14 questions) â€” pointers, macros, arrays, operators
-3. **Java questions focus on OOP principles** â€” inheritance, polymorphism, collections
-4. **Aptitude needs speed** â€” 20 questions in 20 minutes requires quick calculation
-5. **Negative marking applies** â€” only attempt questions with high confidence
-6. **Difficulty has increased slightly year-over-year** â€” more code tracing and conceptual depth
+1. **DS&A is the most critical section** (13-14 questions) — focus on trees, graphs, sorting, hashing
+2. **C Programming is heavily tested** (13-14 questions) — pointers, macros, arrays, operators
+3. **Java questions focus on OOP principles** — inheritance, polymorphism, collections
+4. **Aptitude needs speed** — 20 questions in 20 minutes requires quick calculation
+5. **Negative marking applies** — only attempt questions with high confidence
+6. **Difficulty has increased slightly year-over-year** — more code tracing and conceptual depth
 
 ### Recommended Strategy
 
@@ -2609,4 +2609,4 @@ D) with
 
 ---
 
-*NIC Scientist B 2022 Solved Paper â€” Part of Government Exam PYQs Repository. All solutions verified.*
+*NIC Scientist B 2022 Solved Paper — Part of Government Exam PYQs Repository. All solutions verified.*

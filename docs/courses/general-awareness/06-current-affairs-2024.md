@@ -1,4 +1,4 @@
-﻿# Chapter 6: Current Affairs 2024
+# Chapter 6: Current Affairs 2024
 
 ## Learning Objectives
 
@@ -23,9 +23,9 @@ By the end of this chapter, you will be able to:
 <!-- End Image Gallery -->
 
 - Recall major national policy announcements, bills, and government schemes in 2024
-- Identify key international events â€” summits, treaties, bilateral relations
-- Analyse India's economic performance â€” GDP growth, inflation, budget highlights
-- Describe major scientific achievements â€” ISRO missions, technology breakthroughs
+- Identify key international events — summits, treaties, bilateral relations
+- Analyse India's economic performance — GDP growth, inflation, budget highlights
+- Describe major scientific achievements — ISRO missions, technology breakthroughs
 - Remember sports tournament winners, major awards, and obituaries of 2024
 - Solve exam-level MCQs based on 2024 current events
 
@@ -33,7 +33,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-### 6.1 National Affairs â€” Major Events
+### 6.1 National Affairs — Major Events
 
 ```mermaid
 timeline
@@ -59,7 +59,7 @@ timeline
 - Prime Minister Narendra Modi performed the Pran Pratishtha (consecration) ceremony
 - The temple is built in the Nagara style of architecture, 250m long, 160m wide, and 161m high
 
-#### 6.1.2 General Elections 2024 (Aprilâ€“June 2024)
+#### 6.1.2 General Elections 2024 (April–June 2024)
 
 - India's 18th Lok Sabha elections were held in 7 phases (19 April to 1 June 2024)
 - Results declared on 4 June 2024
@@ -77,21 +77,21 @@ timeline
 
 | Item | Allocation |
 |------|------------|
-| Total Expenditure | â‚¹48.21 lakh crore |
-| Capital Expenditure | â‚¹11.11 lakh crore |
+| Total Expenditure | ₹48.21 lakh crore |
+| Capital Expenditure | ₹11.11 lakh crore |
 | Fiscal Deficit | 4.9% of GDP (target for 2024-25) |
-| Tax Revenue | â‚¹26.02 lakh crore |
-| Health (Ayushman Bharat) | â‚¹7,500 crore (expansion to ASHA, Anganwadi workers) |
-| Education | â‚¹1.48 lakh crore |
-| Defence | â‚¹6.22 lakh crore |
-| Agriculture | â‚¹1.52 lakh crore |
-| Infrastructure (PM Awas) | â‚¹2.27 lakh crore |
-| Railways | â‚¹2.62 lakh crore (record) |
+| Tax Revenue | ₹26.02 lakh crore |
+| Health (Ayushman Bharat) | ₹7,500 crore (expansion to ASHA, Anganwadi workers) |
+| Education | ₹1.48 lakh crore |
+| Defence | ₹6.22 lakh crore |
+| Agriculture | ₹1.52 lakh crore |
+| Infrastructure (PM Awas) | ₹2.27 lakh crore |
+| Railways | ₹2.62 lakh crore (record) |
 
 **Major Announcements:**
 - Three new railway corridors: Energy, Mineral, and Cement corridors
 - PM Awas Yojana Urban: Additional 1 crore houses
-- Mudra loan limit increased from â‚¹10 lakh to â‚¹20 lakh
+- Mudra loan limit increased from ₹10 lakh to ₹20 lakh
 - Pradhan Mantri Suryodaya Yojana: 1 crore households to get rooftop solar
 - Employment-linked incentive schemes (three new schemes under PM Package)
 
@@ -137,9 +137,9 @@ mindmap
 | Summit | Location | Date | Key Outcome |
 |--------|----------|------|-------------|
 | G20 Leaders' Summit | Rio de Janeiro, Brazil | 18-19 Nov 2024 | Focus on hunger, poverty, energy transition; India-U.S. bilateral on sidelines |
-| BRICS Summit | Kazan, Russia | 22-24 Oct 2024 | BRICS expansion (Iran, Egypt, Ethiopia, UAE, Saudi Arabia â€” as new members) |
+| BRICS Summit | Kazan, Russia | 22-24 Oct 2024 | BRICS expansion (Iran, Egypt, Ethiopia, UAE, Saudi Arabia — as new members) |
 | COP29 | Baku, Azerbaijan | 11-22 Nov 2024 | New climate finance goal (NCQG); Loss and Damage Fund operationalisation |
-| UNGA 79 | New York, USA | 10-24 Sep 2024 | "Summit of the Future" â€” Pact for the Future adopted |
+| UNGA 79 | New York, USA | 10-24 Sep 2024 | "Summit of the Future" — Pact for the Future adopted |
 | SCO Summit | Astana, Kazakhstan | 3-4 Jul 2024 | India hosted side events; Connectivity and counter-terrorism focus |
 | Quad Leaders' Summit | Wilmington, USA | 21 Sep 2024 | Maritime security, critical technologies, health security |
 
@@ -162,7 +162,7 @@ mindmap
 | UN Secretary-General | Antonio Guterres (second term continues) |
 | India on UNSC | Non-permanent member term: 2021-22 (ended) |
 | UN Security Council reforms | Continued India's call for permanent membership |
-| "Pact for the Future" | Adopted at UNGA 79 â€” reform of global governance institutions |
+| "Pact for the Future" | Adopted at UNGA 79 — reform of global governance institutions |
 | Israel-Hamas War | Continued (started Oct 2023); India maintained balanced position |
 | Russia-Ukraine War | Ongoing; India maintained diplomatic balancing |
 
@@ -179,15 +179,15 @@ mindmap
 | Fiscal Deficit (2023-24 actual) | 5.6% of GDP (better than 5.8% target) |
 | Foreign Exchange Reserves | ~$700 billion (record high) |
 | FDI inflows | $70+ billion |
-| GST Collection | Averaged â‚¹1.8 lakh crore/month |
-| Rupee vs USD | Averaged ~â‚¹83.5-84/USD |
+| GST Collection | Averaged ₹1.8 lakh crore/month |
+| Rupee vs USD | Averaged ~₹83.5-84/USD |
 
 **Key Economic Developments:**
 - India became the 5th largest economy in the world (surpassed UK in 2023)
 - India surpassed $700 billion in foreign exchange reserves (Dec 2024)
 - S&P and Moody's maintained India's sovereign rating outlook (BBB- / Baa3 stable)
 - India's manufacturing PMI remained above 50 (expansion) throughout 2024
-- IPO market boomed with record filings and mega IPOs (Hyundai India IPO â‚¹27,870 crore â€” largest ever)
+- IPO market boomed with record filings and mega IPOs (Hyundai India IPO ₹27,870 crore — largest ever)
 
 ### 6.4 Science & Technology 2024
 
@@ -205,7 +205,7 @@ mindmap
 **Other Space Highlights:**
 - Space sector FDI policy liberalised: 100% FDI in satellite manufacturing, launch vehicles (automatic route up to 74%)
 - IN-SPACe (Indian Space Promotion and Authorisation Centre) approved 50+ private space startups
-- Skyroot Aerospace, Agnikul Cosmos, Pixxel â€” Indian private space companies with successful launches
+- Skyroot Aerospace, Agnikul Cosmos, Pixxel — Indian private space companies with successful launches
 
 #### 6.4.2 ISRO: Space Missions
 
@@ -228,9 +228,9 @@ mindmap
 | BrahMos Export to Philippines | First major export of BrahMos supersonic cruise missiles (delivered 2024) |
 | S-400 Deployment | Full deployment across northern and western borders |
 | Rafale Marine | Additional Rafale jets for INS Vikrant (order placed) |
-| Z-Morh Tunnel (J-K) | Inaugurated by PM Modi (Jan 2024) â€” all-weather connectivity to Sonmarg |
+| Z-Morh Tunnel (J-K) | Inaugurated by PM Modi (Jan 2024) — all-weather connectivity to Sonmarg |
 | Vande Bharat trains | Several new routes added; Vande Bharat sleeper variant launched |
-| National Quantum Mission | Implementation began â€” 4 thematic hubs (TIHs) established |
+| National Quantum Mission | Implementation began — 4 thematic hubs (TIHs) established |
 
 ### 6.5 Sports Events 2024
 
@@ -239,14 +239,14 @@ mindmap
 | ICC T20 World Cup | USA/West Indies | India | South Africa | India won after 11 years (29 June 2024) |
 | Paris Olympics | Paris, France | USA (top) | China | India won 6 medals (0 Gold, 1 Silver, 5 Bronze) |
 | AFC Asian Cup | Qatar | Qatar (3rd title) | Jordan | India: Group stage exit |
-| Indian Premier League (IPL 17) | India | Kolkata Knight Riders | Sunrisers Hyderabad | â€” |
-| Pro Kabaddi (PKL 10) | India | Puneri Paltan | Haryana Steelers | â€” |
-| Chess Olympiad | Budapest, Hungary | India won gold | â€” | India won both Open and Women's sections (historic) |
-| Asian U-20 Athletics | â€” | India | â€” | India's best-ever performance |
-| SAFF Championship | â€” | India | â€” | Defended title |
-| FIFA U-17 Women's WC | â€” | â€” | â€” | India participated as host |
+| Indian Premier League (IPL 17) | India | Kolkata Knight Riders | Sunrisers Hyderabad | — |
+| Pro Kabaddi (PKL 10) | India | Puneri Paltan | Haryana Steelers | — |
+| Chess Olympiad | Budapest, Hungary | India won gold | — | India won both Open and Women's sections (historic) |
+| Asian U-20 Athletics | — | India | — | India's best-ever performance |
+| SAFF Championship | — | India | — | Defended title |
+| FIFA U-17 Women's WC | — | — | — | India participated as host |
 
-**Paris Olympics 2024 â€” India's Medal Winners:**
+**Paris Olympics 2024 — India's Medal Winners:**
 
 | Athlete | Sport | Medal | Event |
 |---------|-------|-------|-------|
@@ -267,7 +267,7 @@ mindmap
 | Padma Vibhushan | Vyjayantimala (Arts), Konidela Chiranjeevi (Arts), Venkata Sitaraman (posthumous) | Cinema / Arts |
 | Padma Bhushan | Mithun Chakraborty (Cinema), Usha Uthup (Music), Vijaykanth (posthumous) | Cinema / Music |
 | Dadasaheb Phalke | Mithun Chakraborty | Cinema |
-| Jnanpith | â€” | Literature (biennial award cycle) |
+| Jnanpith | — | Literature (biennial award cycle) |
 
 #### 6.6.2 International Awards
 
@@ -500,16 +500,16 @@ The BJP won 240 seats in the 2024 Lok Sabha elections (down from 303 in 2019). T
 
 **Q8:** The "Mudra loan limit" was increased to how much in Budget 2024-25?
 
-A) â‚¹10 lakh
-B) â‚¹15 lakh
-C) â‚¹20 lakh
-D) â‚¹25 lakh
+A) ₹10 lakh
+B) ₹15 lakh
+C) ₹20 lakh
+D) ₹25 lakh
 
 <details>
 <summary>Answer</summary>
-**Answer: C) â‚¹20 lakh**
+**Answer: C) ₹20 lakh**
 
-The maximum loan amount under PM Mudra Yojana (Tarun category) was increased from â‚¹10 lakh to â‚¹20 lakh in the Union Budget 2024-25, aimed at boosting micro-enterprises.
+The maximum loan amount under PM Mudra Yojana (Tarun category) was increased from ₹10 lakh to ₹20 lakh in the Union Budget 2024-25, aimed at boosting micro-enterprises.
 </details>
 
 ---
@@ -637,7 +637,7 @@ D) 2020
 <summary>Answer</summary>
 **Answer: A) 2023 (23 October 2023)**
 
-The TV-D1 (Test Vehicle Development Flight) was conducted on 23 October 2023, testing the crew escape system of the Gaganyaan mission. The mission was successful â€” the crew module separated and splashed down safely in the Bay of Bengal.
+The TV-D1 (Test Vehicle Development Flight) was conducted on 23 October 2023, testing the crew escape system of the Gaganyaan mission. The mission was successful — the crew module separated and splashed down safely in the Bay of Bengal.
 </details>
 
 ---
@@ -711,30 +711,30 @@ The Quad Leaders' Summit (India, USA, Japan, Australia) was held in Wilmington, 
 | Name | Country | Year | Trigger/Outcome |
 |------|---------|------|-----------------|
 | People Power / EDSA Revolution | Philippines | 1986 | Overthrew Ferdinand Marcos; Cory Aquino became President |
-| Velvet Revolution | Czechoslovakia | 1989 | Non-violent end of communist rule; VÃ¡clav Havel became President |
+| Velvet Revolution | Czechoslovakia | 1989 | Non-violent end of communist rule; Václav Havel became President |
 | Rose Revolution | Georgia | 2003 | Overthrew Eduard Shevardnadze; Mikheil Saakashvili came to power |
-| Orange Revolution | Ukraine | 2004â€“2005 | Protested election fraud; Viktor Yushchenko became President |
+| Orange Revolution | Ukraine | 2004–2005 | Protested election fraud; Viktor Yushchenko became President |
 | Tulip Revolution | Kyrgyzstan | 2005 | Overthrew Askar Akayev; Kurmanbek Bakiyev took over |
 | Cedar Revolution | Lebanon | 2005 | Mass protests after assassination of Rafic Hariri; Syrian withdrawal |
 | Saffron Revolution | Myanmar | 2007 | Monk-led protests against military junta; violently suppressed |
 | Green Movement | Iran | 2009 | Post-election protests against Mahmoud Ahmadinejad |
-| Arab Spring | Tunisia, Egypt, Libya, Syria, etc. | 2010â€“2012 | Wave of protests across Middle East/North Africa; regime changes in Tunisia, Egypt, Libya |
-| Yellow Vests | France | 2018â€“2019 | Anti-fuel tax protests; evolved into broader anti-government movement |
-| Hong Kong Protests | Hong Kong | 2019â€“2020 | Anti-extradition bill protests; China imposed National Security Law |
+| Arab Spring | Tunisia, Egypt, Libya, Syria, etc. | 2010–2012 | Wave of protests across Middle East/North Africa; regime changes in Tunisia, Egypt, Libya |
+| Yellow Vests | France | 2018–2019 | Anti-fuel tax protests; evolved into broader anti-government movement |
+| Hong Kong Protests | Hong Kong | 2019–2020 | Anti-extradition bill protests; China imposed National Security Law |
 
-### 6.9 Major International Summits 2024 â€” Key Outcomes
+### 6.9 Major International Summits 2024 — Key Outcomes
 
 | Summit | Date | Host Country | Key Outcome |
 |--------|------|-------------|-------------|
-| G20 Summit | 18â€“19 Nov 2024 | Rio de Janeiro, Brazil | Launched Global Alliance Against Hunger and Poverty; reformed global governance |
-| BRICS Summit | 22â€“24 Oct 2024 | Kazan, Russia | Discussed de-dollarisation; new members (Iran, UAE, Egypt, Ethiopia) participated |
-| COP29 | 11â€“22 Nov 2024 | Baku, Azerbaijan | New climate finance goal (NCQG); Article 6 carbon market rules finalised |
-| SCO Summit | 4â€“5 Jul 2024 | Astana, Kazakhstan | Expanded cooperation on security and counter-terrorism |
+| G20 Summit | 18–19 Nov 2024 | Rio de Janeiro, Brazil | Launched Global Alliance Against Hunger and Poverty; reformed global governance |
+| BRICS Summit | 22–24 Oct 2024 | Kazan, Russia | Discussed de-dollarisation; new members (Iran, UAE, Egypt, Ethiopia) participated |
+| COP29 | 11–22 Nov 2024 | Baku, Azerbaijan | New climate finance goal (NCQG); Article 6 carbon market rules finalised |
+| SCO Summit | 4–5 Jul 2024 | Astana, Kazakhstan | Expanded cooperation on security and counter-terrorism |
 | Quad Summit | 21 Sep 2024 | Wilmington, USA | Maritime security; critical technology cooperation; health security |
-| UNGA 79 | 10â€“24 Sep 2024 | New York, USA | Summit of the Future adopted "Pact for the Future"; UNSC reform discussed |
-| WEF Davos | 15â€“19 Jan 2024 | Davos, Switzerland | Theme: "Rebuilding Trust"; AI governance discussed |
-| ASEAN Summit | 6â€“11 Oct 2024 | Vientiane, Laos | East Timor accession road map; South China Sea tensions discussed |
-| NATO Summit | 9â€“11 Jul 2024 | Washington DC, USA | 75th anniversary; Ukraine support package; Sweden formally joined (32 members) |
+| UNGA 79 | 10–24 Sep 2024 | New York, USA | Summit of the Future adopted "Pact for the Future"; UNSC reform discussed |
+| WEF Davos | 15–19 Jan 2024 | Davos, Switzerland | Theme: "Rebuilding Trust"; AI governance discussed |
+| ASEAN Summit | 6–11 Oct 2024 | Vientiane, Laos | East Timor accession road map; South China Sea tensions discussed |
+| NATO Summit | 9–11 Jul 2024 | Washington DC, USA | 75th anniversary; Ukraine support package; Sweden formally joined (32 members) |
 
 ### 6.10 Important Appointments and Obituaries 2024
 
@@ -749,7 +749,7 @@ The Quad Leaders' Summit (India, USA, Japan, Australia) was held in Wilmington, 
 | US President (re-elected) | Donald Trump | Won 2024 US Presidential election (47th President) |
 | UK Prime Minister | Sir Keir Starmer | Labour Party won UK general election (Jul 2024) |
 | NATO Secretary General | Mark Rutte | Succeeded Jens Stoltenberg (Oct 2024) |
-| WTO Director-General | Ngozi Okonjo-Iweala | Second term (2024â€“2028) |
+| WTO Director-General | Ngozi Okonjo-Iweala | Second term (2024–2028) |
 | World Bank President | Ajay Banga | Completed first year in office |
 
 **Obituaries (Notable Figures):**
@@ -760,10 +760,10 @@ The Quad Leaders' Summit (India, USA, Japan, Australia) was held in Wilmington, 
 | Zakir Hussain | Legendary tabla maestro | 22 Dec 2024 |
 | Shyam Benegal | Renowned filmmaker | 23 Dec 2024 |
 | Manmohan Singh | Former PM of India; architect of 1991 reforms | 26 Dec 2024 |
-| A.K. Hangal | Character actor | â€” |
+| A.K. Hangal | Character actor | — |
 | Pankaj Udhas | Ghazal singer | 26 Feb 2024 |
-| Richard M. Sherman | Disney songwriter | â€” |
-| Prabir Purkayastha | RTI activist | â€” |
+| Richard M. Sherman | Disney songwriter | — |
+| Prabir Purkayastha | RTI activist | — |
 
 ### 6.11 TypeScript: Current Affairs Data Tracker
 
@@ -791,7 +791,7 @@ class CurrentAffairsTracker {
     this.events = [
       { date: new Date('2024-01-22'), category: 'national', title: 'Ram Mandir Consecration', description: 'Pran Pratishtha in Ayodhya by PM Modi', importance: 1 },
       { date: new Date('2024-06-04'), category: 'national', title: 'Lok Sabha Election Results', description: 'BJP 240, NDA 293, INC 99, INDIA 232', importance: 1 },
-      { date: new Date('2024-07-22'), category: 'national', title: 'Union Budget 2024-25', description: 'Fiscal deficit 4.9%, capex â‚¹11.11 lakh cr', importance: 1 },
+      { date: new Date('2024-07-22'), category: 'national', title: 'Union Budget 2024-25', description: 'Fiscal deficit 4.9%, capex ₹11.11 lakh cr', importance: 1 },
       { date: new Date('2024-09-21'), category: 'international', title: 'Quad Summit', description: 'Wilmington, USA; maritime security focus', importance: 2 },
       { date: new Date('2024-11-18'), category: 'international', title: 'G20 Rio Summit', description: 'Global Alliance Against Hunger launched', importance: 1 },
       { date: new Date('2024-10-09'), category: 'obituary', title: 'Ratan Tata passes away', description: 'Tata Sons Chairman Emeritus, age 86', importance: 1 },
@@ -811,7 +811,7 @@ class CurrentAffairsTracker {
     const important = this.getImportantEvents(1);
     let sheet = '===== MUST-KNOW CURRENT AFFAIRS 2024 =====\n';
     important.forEach(e => {
-      sheet += `ðŸ“… ${e.date.toDateString()} | ${e.title}\n`;
+      sheet += `📅 ${e.date.toDateString()} | ${e.title}\n`;
       sheet += `   ${e.description}\n`;
     });
     sheet += '=============================================\n';
@@ -901,24 +901,24 @@ India's GDP grew by 8.2% in FY 2023-24, making it the fastest-growing major econ
 
 - **Ram Mandir** consecration (22 Jan 2024) in Ayodhya was a landmark cultural event.
 - **18th Lok Sabha elections** (Apr-Jun 2024): BJP won 240 seats (NDA 293); Modi third term.
-- **Union Budget 2024-25**: Fiscal deficit target 4.9%; capex â‚¹11.11 lakh crore; Mudra loan limit â‚¹20 lakh.
+- **Union Budget 2024-25**: Fiscal deficit target 4.9%; capex ₹11.11 lakh crore; Mudra loan limit ₹20 lakh.
 - **G20** hosted by Brazil (Rio de Janeiro, Nov 2024); **BRICS** in Kazan (Russia, Oct 2024); **COP29** in Baku (Azerbaijan, Nov 2024).
-- **India's GDP growth**: 8.2% (2023-24) â€” fastest-growing major economy.
-- **Paris Olympics 2024**: India won 6 medals (1 Silver, 5 Bronze) â€” Neeraj Chopra (Silver), Manu Bhaker (2 Bronze).
+- **India's GDP growth**: 8.2% (2023-24) — fastest-growing major economy.
+- **Paris Olympics 2024**: India won 6 medals (1 Silver, 5 Bronze) — Neeraj Chopra (Silver), Manu Bhaker (2 Bronze).
 - **ICC T20 World Cup**: India won after 11 years (defeated South Africa in final).
 - **ISRO**: XPoSat (1 Jan), INSAT-3DS (Feb), SSLV-D3; Space FDI liberalised.
 - **Defence**: Agni-5 MIRV test (Divyastra), BrahMos export to Philippines.
-- **Bharat Ratna 2024**: 5 recipients â€” Advani, Swaminathan, Narasimha Rao, Charan Singh, Karpoori Thakur.
+- **Bharat Ratna 2024**: 5 recipients — Advani, Swaminathan, Narasimha Rao, Charan Singh, Karpoori Thakur.
 
 ## Practical Takeaways
 
 1. **For IBPS SO / RBI Exams:** Focus on Budget 2024-25 figures (fiscal deficit, capex, scheme allocations), sports (T20 World Cup, Olympics), and ISRO missions (XPoSat, INSAT-3DS).
-2. **Summit Locations:** Remember the "G20 â†’ Brazil, BRICS â†’ Kazan (Russia), COP29 â†’ Baku (Azerbaijan)" grouping. Summit location is a favourite MCQ topic.
+2. **Summit Locations:** Remember the "G20 → Brazil, BRICS → Kazan (Russia), COP29 → Baku (Azerbaijan)" grouping. Summit location is a favourite MCQ topic.
 3. **Award-Matching:** Expect "Who won what" questions. Use grid format to memorise Nobel winners across categories.
-4. **Obituaries:** Ratan Tata (Tata Sons), Zakir Hussain (tabla), Shyam Benegal (cinema) â€” notable deaths frequently appear.
+4. **Obituaries:** Ratan Tata (Tata Sons), Zakir Hussain (tabla), Shyam Benegal (cinema) — notable deaths frequently appear.
 5. **Election Results:** Know the seat tallies: BJP 240, INC 99, NDA 293, INDIA 232. Also: LoP (Rahul Gandhi), Speaker (Om Birla).
 6. **Sports:** 3 key results: T20 WC (India beat SA), Olympics (6 medals), Chess Olympiad (India gold in both sections).
-7. **Interim vs Full Budget:** Understand the difference â€” Interim Budget was on 1 Feb 2024; Full Budget on 22 Jul 2024 (post-election).
+7. **Interim vs Full Budget:** Understand the difference — Interim Budget was on 1 Feb 2024; Full Budget on 22 Jul 2024 (post-election).
 
 ## Chapter Quiz
 
@@ -1011,10 +1011,10 @@ C) S.S. Sandhu
 D) Sunil Arora
 
 **3.** The "Hyundai Motor India" IPO (2024) was worth approximately:
-A) â‚¹10,000 crore
-B) â‚¹20,000 crore
-C) â‚¹27,870 crore
-D) â‚¹35,000 crore
+A) ₹10,000 crore
+B) ₹20,000 crore
+C) ₹27,870 crore
+D) ₹35,000 crore
 
 **4.** Which country won the most medals at the Paris Olympics 2024?
 A) China
@@ -1102,7 +1102,7 @@ D) Transfer Waqf to state list
 
 **30.** India became the 5th largest economy in the world in 2024. (T/F)
 
-### Section D: Additional MCQs (Exam Focus â€” 2024 Events)
+### Section D: Additional MCQs (Exam Focus — 2024 Events)
 
 **31.** The "National Quantum Mission" of India was approved in which year?
 
@@ -1127,10 +1127,10 @@ D) Karnataka
 
 **34.** "Hyundai Motor India" launched India's largest IPO worth approximately:
 
-A) â‚¹10,000 crore
-B) â‚¹20,000 crore
-C) â‚¹27,870 crore
-D) â‚¹50,000 crore
+A) ₹10,000 crore
+B) ₹20,000 crore
+C) ₹27,870 crore
+D) ₹50,000 crore
 
 **35.** Which country assumed the presidency of the UN Security Council for December 2024?
 
@@ -1182,7 +1182,7 @@ D) PM Awas Yojana
 **Section A (1-10):**
 1. B) Nagara style
 2. B) Gyanesh Kumar (assumed office as 26th CEC; Rajiv Kumar retired)
-3. C) â‚¹27,870 crore (largest IPO in Indian stock market history)
+3. C) ₹27,870 crore (largest IPO in Indian stock market history)
 4. B) USA (40 Gold, 126 total medals; China 40 Gold, 94 total)
 5. B) Uttarakhand (Dehradun-based National Games)
 6. B) Mission Divyastra
@@ -1204,7 +1204,7 @@ D) PM Awas Yojana
 20. UNGA 79 / Summit of the Future
 
 **Section C (21-30):**
-21. T (India won both Open and Women's gold â€” historic double)
+21. T (India won both Open and Women's gold — historic double)
 22. F (COP29 was in Baku, Azerbaijan)
 23. T (RBI MPC kept repo at 6.50% through all 6 meetings in 2024)
 24. F (Gaganyaan crewed mission is planned for 2025-26; TV-D1 test was in 2023)
@@ -1216,10 +1216,10 @@ D) PM Awas Yojana
 30. T (India surpassed UK and now ranks 5th after USA, China, Germany, Japan)
 
 **Section D (31-40):**
-31. B) 2023 (National Quantum Mission was approved in April 2023 with â‚¹6,003 crore budget)
+31. B) 2023 (National Quantum Mission was approved in April 2023 with ₹6,003 crore budget)
 32. C) 32nd (Sweden formally joined NATO in March 2024; Finland had joined in 2023 as 31st)
 33. B) Uttarakhand (held in Dehradun and other cities across the state)
-34. C) â‚¹27,870 crore (Hyundai Motor India IPO, Oct 2024; surpassed LIC's â‚¹21,000 crore IPO)
+34. C) ₹27,870 crore (Hyundai Motor India IPO, Oct 2024; surpassed LIC's ₹21,000 crore IPO)
 35. A) India (India assumed UNSC presidency for December 2024, its last presidency before ending its 2-year term)
 36. B) INSTC (International North-South Transport Corridor; connects India to Russia via Iran and Central Asia)
 37. D) A, B, and C (Daron Acemoglu, Simon Johnson, James Robinson jointly won for studies on how institutions shape prosperity)
@@ -1230,4 +1230,4 @@ D) PM Awas Yojana
 
 ---
 
-*Proceed to Chapter 7 â€” Current Affairs 2025â€“2026*
+*Proceed to Chapter 7 — Current Affairs 2025–2026*

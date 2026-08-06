@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to AI Engineering
+# Chapter 1: Introduction to AI Engineering
 
 ## Learning Objectives
 
@@ -42,12 +42,12 @@ Traditional ML engineering focuses on training, evaluating, and deploying custom
 | Model | Train custom models | Use pretrained FMs |
 | Data | Labeled training sets | Unstructured, context documents |
 | Compute | GPU clusters for training | Inference serving, caching |
-| Pipeline | Training â†’ eval â†’ deploy | Prompt â†’ retrieval â†’ generation â†’ validation |
+| Pipeline | Training → eval → deploy | Prompt → retrieval → generation → validation |
 | Iteration | Retrain on new data | Prompt engineering, RAG tuning |
 
 **AI Engineering vs Software Engineering**
 
-Traditional software engineering produces deterministic systems. Given the same input, a function always returns the same output. AI engineering embraces nondeterminism â€” the same prompt may produce different responses across calls. This requires new testing strategies (semantic eval, adversarial testing), new debugging tools (tracing, token inspection), and new deployment patterns (guardrails, fallback chains, human-in-the-loop).
+Traditional software engineering produces deterministic systems. Given the same input, a function always returns the same output. AI engineering embraces nondeterminism — the same prompt may produce different responses across calls. This requires new testing strategies (semantic eval, adversarial testing), new debugging tools (tracing, token inspection), and new deployment patterns (guardrails, fallback chains, human-in-the-loop).
 
 ## 1.2 The Evolution of Building AI Applications
 
@@ -55,7 +55,7 @@ The landscape of AI application development has changed dramatically between 202
 
 ```mermaid
 timeline
-    title Evolution of AI Application Development (2020â€“2026)
+    title Evolution of AI Application Development (2020–2026)
     2020 : GPT-3 API launches
           : Prompt engineering emerges
           : Single-turn text completion
@@ -86,17 +86,17 @@ timeline
 
 **Key Milestones Explained**
 
-- **2020 â€” The API Era Begins**: GPT-3 (175B parameters) launched via API, introducing the world to prompt-based interaction. Developers experimented with few-shot learning but had no structured frameworks.
+- **2020 — The API Era Begins**: GPT-3 (175B parameters) launched via API, introducing the world to prompt-based interaction. Developers experimented with few-shot learning but had no structured frameworks.
 
-- **2022 â€” The ChatGPT Inflection**: ChatGPT reached 100M users in two months. The chat completions API made building conversational AI accessible. LangChain and LlamaIndex provided the first abstractions for chaining LLM calls.
+- **2022 — The ChatGPT Inflection**: ChatGPT reached 100M users in two months. The chat completions API made building conversational AI accessible. LangChain and LlamaIndex provided the first abstractions for chaining LLM calls.
 
-- **2023 â€” Agents and Tools**: Function calling enabled LLMs to interact with external systems. AutoGPT and BabyAGI popularized autonomous agent loops. Vector databases like Pinecone and Weaviate became essential infrastructure.
+- **2023 — Agents and Tools**: Function calling enabled LLMs to interact with external systems. AutoGPT and BabyAGI popularized autonomous agent loops. Vector databases like Pinecone and Weaviate became essential infrastructure.
 
-- **2024 â€” Production Hardening**: Evaluation frameworks, guardrails (Nvidia NeMo, Guardrails AI), and observability tools (LangSmith, Weights & Biases Prompts) matured. The focus shifted from "can it work" to "can it work reliably in production."
+- **2024 — Production Hardening**: Evaluation frameworks, guardrails (Nvidia NeMo, Guardrails AI), and observability tools (LangSmith, Weights & Biases Prompts) matured. The focus shifted from "can it work" to "can it work reliably in production."
 
-- **2025 â€” Agentic Workflows**: Multi-agent systems, human-in-the-loop feedback integration, and long-context reasoning became standard. Foundation models supported 1M+ token context windows, reducing the need for complex RAG pipelines.
+- **2025 — Agentic Workflows**: Multi-agent systems, human-in-the-loop feedback integration, and long-context reasoning became standard. Foundation models supported 1M+ token context windows, reducing the need for complex RAG pipelines.
 
-- **2026 â€” Mature Engineering Discipline**: AI engineering emerged as a distinct role with dedicated tooling, career paths, and best practices. On-device inference brought FM-powered apps to edge devices.
+- **2026 — Mature Engineering Discipline**: AI engineering emerged as a distinct role with dedicated tooling, career paths, and best practices. On-device inference brought FM-powered apps to edge devices.
 
 ## 1.3 The Foundation Model Landscape
 
@@ -235,7 +235,7 @@ Production AI engineering introduces challenges that traditional software engine
 |-----------|-------------|--------|------------|
 | Hallucinations | Model generates plausible-sounding but incorrect information | Erosion of user trust, regulatory risk | RAG with citation, factual consistency checks, constrained decoding |
 | Cost | API token costs at scale can exceed infrastructure costs | Unsustainable unit economics | Caching, prompt compression, model distillation, batch processing |
-| Latency | FM inference is slow (500msâ€“10s per response) | Poor user experience, timeouts | Speculative decoding, KV-cache optimization, small models for simple tasks |
+| Latency | FM inference is slow (500ms–10s per response) | Poor user experience, timeouts | Speculative decoding, KV-cache optimization, small models for simple tasks |
 | Evaluation | No single metric captures output quality; human eval is expensive | Difficulty comparing models, regressions | LLM-as-judge, semantic similarity, task-specific metrics, AI-assisted eval |
 | Safety | Models may generate harmful, biased, or toxic content | Brand damage, legal liability | Guardrails, content filters, red-teaming, RLHF, constitutional AI |
 | Data Privacy | User data sent to third-party APIs may be stored/trained on | Regulatory non-compliance (GDPR, CCPA) | Self-hosting, data anonymization, prompt encryption, data retention agreements |
@@ -299,7 +299,7 @@ The following production-ready class provides a model registry, cost tracking, a
 
 ```typescript
 /**
- * AIEngineeringConfig â€” Central configuration registry for AI applications.
+ * AIEngineeringConfig — Central configuration registry for AI applications.
  * Manages model definitions, pricing, rate limits, and usage analytics.
  */
 
@@ -562,7 +562,7 @@ A lightweight collector for tracking token counts, latency distributions, and co
 
 ```typescript
 /**
- * AIMetricsCollector â€” Real-time metrics collection for AI inference.
+ * AIMetricsCollector — Real-time metrics collection for AI inference.
  * Tracks token usage, latency percentiles, error rates, and cache efficiency.
  */
 
@@ -678,15 +678,15 @@ class AIMetricsCollector {
 
 ## Summary
 
-AI engineering is the discipline of building production applications powered by foundation models. It differs from traditional ML engineering by focusing on orchestrating pretrained models rather than training custom ones, and from traditional software engineering by embracing nondeterminism as a first-class concern. The field has evolved rapidly from 2020 to 2026, transitioning through API-based experimentation, the ChatGPT inflection, agent frameworks, production hardening, and finally into a mature engineering discipline. The foundation model landscape now offers diverse options across the open-closed spectrum, with models from OpenAI, Anthropic, Google, Meta, Mistral, and DeepSeek. The AI engineering stack comprises four layers â€” data, model, application, and deployment â€” each with distinct tools and challenges. Key challenges including hallucinations, cost, latency, evaluation, safety, and data privacy require deliberate mitigation strategies. This course is organized to guide learners through each layer of the stack, culminating in a production-ready capstone project.
+AI engineering is the discipline of building production applications powered by foundation models. It differs from traditional ML engineering by focusing on orchestrating pretrained models rather than training custom ones, and from traditional software engineering by embracing nondeterminism as a first-class concern. The field has evolved rapidly from 2020 to 2026, transitioning through API-based experimentation, the ChatGPT inflection, agent frameworks, production hardening, and finally into a mature engineering discipline. The foundation model landscape now offers diverse options across the open-closed spectrum, with models from OpenAI, Anthropic, Google, Meta, Mistral, and DeepSeek. The AI engineering stack comprises four layers — data, model, application, and deployment — each with distinct tools and challenges. Key challenges including hallucinations, cost, latency, evaluation, safety, and data privacy require deliberate mitigation strategies. This course is organized to guide learners through each layer of the stack, culminating in a production-ready capstone project.
 
 ## Practical Takeaways
 
 1. **Understand the landscape before choosing tools**: Map your problem to the AI engineering stack before selecting frameworks or models.
 2. **Start with APIs, migrate to self-hosting at scale**: Begin with managed APIs for rapid prototyping; invest in self-hosted infrastructure when usage patterns stabilize.
-3. **Build cost tracking from day one**: Integrate usage logging and cost calculation before going to production â€” retrofitting is painful.
+3. **Build cost tracking from day one**: Integrate usage logging and cost calculation before going to production — retrofitting is painful.
 4. **Design for nondeterminism**: Write tests that check semantic equivalence, not exact string matches. Use guardrails to constrain outputs.
-5. **Plan for evaluation early**: Establish ground-truth datasets and eval metrics before building the application â€” they guide every architectural decision.
+5. **Plan for evaluation early**: Establish ground-truth datasets and eval metrics before building the application — they guide every architectural decision.
 
 ## Chapter Quiz
 
@@ -763,16 +763,16 @@ Design a cost projection model for an application that makes 1 million API calls
 <summary>Solution</summary>
 
 **GPT-5 costs:**
-- Input: 1,000,000 Ã— 70% (non-cached) Ã— (1,000 / 1,000) Ã— $0.01 = $7,000
-- Output: 1,000,000 Ã— 70% Ã— (200 / 1,000) Ã— $0.03 = $4,200
+- Input: 1,000,000 × 70% (non-cached) × (1,000 / 1,000) × $0.01 = $7,000
+- Output: 1,000,000 × 70% × (200 / 1,000) × $0.03 = $4,200
 - Total: $11,200/month
 
 **DeepSeek V4 costs:**
-- Input: 1,000,000 Ã— 70% Ã— (1,000 / 1,000) Ã— $0.0005 = $350
-- Output: 1,000,000 Ã— 70% Ã— (200 / 1,000) Ã— $0.002 = $280
+- Input: 1,000,000 × 70% × (1,000 / 1,000) × $0.0005 = $350
+- Output: 1,000,000 × 70% × (200 / 1,000) × $0.002 = $280
 - Total: $630/month
 
-DeepSeek V4 is approximately 18Ã— cheaper for this workload. However, consider latency differences (GPT-5 P50: 800ms, DeepSeek V4 P50: 1000ms) and capability differences when choosing.
+DeepSeek V4 is approximately 18× cheaper for this workload. However, consider latency differences (GPT-5 P50: 800ms, DeepSeek V4 P50: 1000ms) and capability differences when choosing.
 
 The `CostReport` from `generateCostReport()` would show `projectedMonthlyCost` of approximately $11,200 for GPT-5 and $630 for DeepSeek V4.
 </details>
@@ -863,13 +863,13 @@ Explain how the definition of AI engineering has evolved between 2020 and 2026. 
 <details>
 <summary>Solution</summary>
 
-**2020 â€” The API Era (GPT-3 launch):**
+**2020 — The API Era (GPT-3 launch):**
 Before 2020, building NLP applications required training custom models (BERT, GPT-2). GPT-3's API introduced prompt-based interaction, allowing developers to build language applications without ML expertise. Inflection: AI applications shifted from "train a model" to "write a prompt."
 
-**2022 â€” The ChatGPT Inflection:**
+**2022 — The ChatGPT Inflection:**
 ChatGPT made conversational AI mainstream with the chat completions API and instruction following. This created the need for prompt engineering, context management, and the first orchestration frameworks (LangChain, LlamaIndex). Inflection: AI applications shifted from single-turn to multi-turn conversations with state management.
 
-**2025 â€” Agentic Workflows:**
+**2025 — Agentic Workflows:**
 Function calling, tool use, and multi-agent orchestration matured. AI systems could autonomously plan, execute tools, and iterate. Long-context models (1M+ tokens) reduced the need for complex RAG pipelines. Inflection: AI applications shifted from "call a model" to "deploy an agent."
 
 Each inflection point expanded the scope of AI engineering from a niche ML concern to a full-stack engineering discipline encompassing data, model orchestration, safety, evaluation, deployment, and cost management.

@@ -1,4 +1,4 @@
-﻿# Phase 3 â€” AI Agents: LangGraph, CrewAI, MCP
+# Phase 3 — AI Agents: LangGraph, CrewAI, MCP
 
 **Duration:** Weeks 6-8, ~35 hours
 **Goal:** Build agent state machines with LangGraph, multi-agent crews with CrewAI, and MCP clients that connect LLMs to tools. Rebuild your Purvanchal Flow Studio orchestration layer from n8n to LangGraph.
@@ -35,7 +35,7 @@
 | 5 | LangGraph persistence (checkpointer) | 2 | Kill a graph mid-execution and resume it |
 | 6 | Human-in-the-loop patterns | 1.5 | Describe a real use case for interrupt/resume |
 | 7 | CrewAI: agents, tasks, crews, processes | 2.5 | Build a 2-agent crew (researcher + writer) |
-| 8 | MCP protocol spec â€” 3 primitives | 3 | Map tools/resources/prompts to your existing MCP server |
+| 8 | MCP protocol spec — 3 primitives | 3 | Map tools/resources/prompts to your existing MCP server |
 | 9 | Building an MCP client | 2.5 | Write a client that connects to your memory server |
 | 10 | Agent memory patterns | 2 | Distinguish short-term vs long-term memory in your system |
 | 11 | Multi-agent orchestration patterns | 2 | Sketch a CRM assistant with 3 agents, justify the pattern |
@@ -98,7 +98,7 @@ def react_loop(tools: dict[str, callable], user_input: str, max_iterations: int 
 
 ### Exercise
 
-Explain the difference between a single LLM call and an agent loop in one sentence that a non-technical client would understand. Example: "A single call answers your question. An agent checks, tries, fails, retries, and then answers â€” like a person researching instead of guessing."
+Explain the difference between a single LLM call and an agent loop in one sentence that a non-technical client would understand. Example: "A single call answers your question. An agent checks, tries, fails, retries, and then answers — like a person researching instead of guessing."
 
 ---
 
@@ -108,7 +108,7 @@ Explain the difference between a single LLM call and an agent loop in one senten
 
 
 ```python
-# Tool that creates a booking â€” nested address object
+# Tool that creates a booking — nested address object
 create_booking_schema = {
     "type": "function",
     "function": {
@@ -148,16 +148,16 @@ create_booking_schema = {
 ### How the model decides which tool to call
 
 
-The model reads the `description` field and the parameter names/types to decide. **Clear descriptions are critical** â€” the function name and parameter descriptions are what the model sees, not your code comments.
+The model reads the `description` field and the parameter names/types to decide. **Clear descriptions are critical** — the function name and parameter descriptions are what the model sees, not your code comments.
 
 ```python
-# Bad â€” model won't understand when to call this
+# Bad — model won't understand when to call this
 tool_spec = {
     "name": "process",
     "parameters": {"type": "object", "properties": {"a": {"type": "string"}, "b": {"type": "integer"}}},
 }
 
-# Good â€” model can route correctly
+# Good — model can route correctly
 tool_spec = {
     "name": "search_knowledge_base",
     "description": "Search the vector database for relevant documents",
@@ -236,7 +236,7 @@ graph.add_edge("generate_music", "generate_vocals")
 graph.add_edge("generate_vocals", "source_clips")
 graph.add_edge("source_clips", "compose_video")
 
-# Conditional edge â€” the part n8n can't express cleanly
+# Conditional edge — the part n8n can't express cleanly
 def should_retry(state: PipelineState) -> str:
     if state.get("error") and state["retry_count"] < 3:
         return "retry"
@@ -277,7 +277,7 @@ print(result["final_video_path"])
 
 ### Exercise
 
-Build a throwaway 3-node linear graph â€” no external calls, just print statements that simulate work. Confirm the graph runs in order. Then add a conditional edge. Then break a node and confirm the retry mechanism triggers. Do this before touching the real Purvanchal pipeline.
+Build a throwaway 3-node linear graph — no external calls, just print statements that simulate work. Confirm the graph runs in order. Then add a conditional edge. Then break a node and confirm the retry mechanism triggers. Do this before touching the real Purvanchal pipeline.
 
 ---
 
@@ -309,7 +309,7 @@ graph.add_conditional_edges(
 ### Why conditional edges matter for your portfolio
 
 
-Visual examples: generic tutorials show `router.add_conditional_edges("classify", ...)`. Your pipeline shows **real business logic** â€” retry based on output length, quality checks, failure recovery. That's the difference between "I read the docs" and "I built in production."
+Visual examples: generic tutorials show `router.add_conditional_edges("classify", ...)`. Your pipeline shows **real business logic** — retry based on output length, quality checks, failure recovery. That's the difference between "I read the docs" and "I built in production."
 
 ### Exercise
 
@@ -322,7 +322,7 @@ Write a conditional edge function that routes based on a custom state field (e.g
 ### Why this matters for media pipelines
 
 
-Your Purvanchal pipeline generates music files that take 2-5 minutes each. If the server crashes at "compose_video," n8n restarts from the beginning. With LangGraph's checkpointer, it resumes from "compose_video" â€” 4 nodes of work saved.
+Your Purvanchal pipeline generates music files that take 2-5 minutes each. If the server crashes at "compose_video," n8n restarts from the beginning. With LangGraph's checkpointer, it resumes from "compose_video" — 4 nodes of work saved.
 
 ```python
 from langgraph.checkpoint.memory import MemorySaver
@@ -331,7 +331,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 # In-memory (for prototyping)
 checkpointer = MemorySaver()
 
-# SQLite (for production â€” survives server restart)
+# SQLite (for production — survives server restart)
 checkpointer = SqliteSaver.from_conn_string("checkpoints.db")
 
 app = graph.compile(checkpointer=checkpointer)
@@ -350,7 +350,7 @@ Start a graph run, kill it mid-execution (Ctrl+C), then resume it using the same
 
 ## 3.6 Human-in-the-Loop (Interrupt/Resume)
 
-Some pipeline stages need approval before proceeding â€” spending money on API calls, publishing content, approving generated lyrics.
+Some pipeline stages need approval before proceeding — spending money on API calls, publishing content, approving generated lyrics.
 
 ```python
 from langgraph.constants import interrupt
@@ -375,7 +375,7 @@ app.invoke(
 
 ### Exercise
 
-Describe one real use case from your own work where this pattern would prevent a costly automated mistake. Write it down â€” it's an interview talking point.
+Describe one real use case from your own work where this pattern would prevent a costly automated mistake. Write it down — it's an interview talking point.
 
 ---
 
@@ -507,7 +507,7 @@ async def memory_stats(uri: str) -> str:
 
 ### Exercise
 
-Map your existing MCP server against the 3 primitives. Which tools does it expose? Which resources? Which prompts? Write this mapping down â€” you'll use it when discussing MCP in interviews.
+Map your existing MCP server against the 3 primitives. Which tools does it expose? Which resources? Which prompts? Write this mapping down — you'll use it when discussing MCP in interviews.
 
 ---
 
@@ -525,7 +525,7 @@ async def main():
             # List tools
             tools = await session.list_tools()
             for tool in tools.tools:
-                print(f"Tool: {tool.name} â€” {tool.description}")
+                print(f"Tool: {tool.name} — {tool.description}")
 
             # Call a tool
             result = await session.call_tool(
@@ -600,8 +600,8 @@ def agent_with_memory(user_query: str, user_id: str):
 
 
 You have long-term memory (ChromaDB server). You're likely missing:
-- **Conversation summaries** â€” after N turns, summarize and store in memory
-- **Entity extraction** â€” extract key entities (project names, dates, decisions) and store them as structured memory
+- **Conversation summaries** — after N turns, summarize and store in memory
+- **Entity extraction** — extract key entities (project names, dates, decisions) and store them as structured memory
 
 ### Exercise
 
@@ -629,7 +629,7 @@ Supervisor delegates tasks. Workers report back. Supervisor decides next action.
 
 ```
 Sales agent ?--? Follow-up agent
-     Â¦
+     ¦
 Follow-up agent ?--? Report agent
 ```
 
@@ -727,7 +727,7 @@ Write 2 concrete evaluation checks for one of your agents. Don't just run it and
 | Step | Model | Input tokens | Output tokens | Cost |
 |------|-------|-------------|--------------|------|
 | Generate lyrics | GPT-4 | 300 | 200 | $0.009 + $0.012 = $0.021 |
-| Generate music API | ACE-Step | â€” | â€” | $0.005 (API call) |
+| Generate music API | ACE-Step | — | — | $0.005 (API call) |
 | Evaluate quality | GPT-4-mini | 500 | 50 | $0.00075 + $0.0003 = $0.001 |
 | Total per pipeline run | | | | ~$0.03 |
 
@@ -783,12 +783,12 @@ Replace the n8n orchestration of your Bhojpuri content pipeline with a LangGraph
 
 ```
 generate_lyrics --? generate_music --? generate_vocals --? source_clips --? compose_video
-                                                                                Â¦
+                                                                                ¦
                                                                           +-----------+
-                                                                          Â¦           Â¦
+                                                                          ¦           ¦
                                                                       success       failure
-                                                                          Â¦       (retry < 3)
-                                                                          Â¦           Â¦
+                                                                          ¦       (retry < 3)
+                                                                          ¦           ¦
                                                                          END    handle_failure --? generate_music (retry)
 ```
 
@@ -836,20 +836,20 @@ def ffmpeg_compose_node(state: PipelineState) -> dict:
 ```
 purvanchal-flow-studio/
 +-- pipeline/
-Â¦   +-- state.py           # PipelineState TypedDict
-Â¦   +-- graph.py           # StateGraph construction
-Â¦   +-- nodes/
-Â¦   Â¦   +-- __init__.py
-Â¦   Â¦   +-- lyrics.py      # generate_lyrics_node
-Â¦   Â¦   +-- music.py       # ace_step_node
-Â¦   Â¦   +-- vocals.py      # coqui_xtts_node
-Â¦   Â¦   +-- clips.py       # moneyprinterturbo_node
-Â¦   Â¦   +-- compose.py     # ffmpeg_compose_node
-Â¦   Â¦   +-- failure.py     # failure_recovery_node
-Â¦   +-- config.py          # Settings via pydantic-settings
+¦   +-- state.py           # PipelineState TypedDict
+¦   +-- graph.py           # StateGraph construction
+¦   +-- nodes/
+¦   ¦   +-- __init__.py
+¦   ¦   +-- lyrics.py      # generate_lyrics_node
+¦   ¦   +-- music.py       # ace_step_node
+¦   ¦   +-- vocals.py      # coqui_xtts_node
+¦   ¦   +-- clips.py       # moneyprinterturbo_node
+¦   ¦   +-- compose.py     # ffmpeg_compose_node
+¦   ¦   +-- failure.py     # failure_recovery_node
+¦   +-- config.py          # Settings via pydantic-settings
 +-- api/
-Â¦   +-- main.py            # FastAPI app with pipeline endpoints
-Â¦   +-- schemas.py         # Request/response models
+¦   +-- main.py            # FastAPI app with pipeline endpoints
+¦   +-- schemas.py         # Request/response models
 +-- .env.example           # API keys with placeholders
 +-- Dockerfile
 +-- docker-compose.yml
@@ -863,7 +863,7 @@ Create `docs/n8n-vs-langgraph.md` covering:
 
 | Dimension | n8n | LangGraph |
 |-----------|-----|-----------|
-| **Prototyping speed** | Fast â€” drag, connect, done | Slower â€” code, debug, compile |
+| **Prototyping speed** | Fast — drag, connect, done | Slower — code, debug, compile |
 | **Conditional logic** | Visual IF nodes | Arbitrary Python functions |
 | **State persistence** | None (no checkpointer) | Built-in checkpointer |
 | **Crash recovery** | Full restart | Resume from failed node |
@@ -905,7 +905,7 @@ from agents import Agent, Runner, function_tool
 @function_tool
 def get_weather(location: str) -> str:
     """Get the current weather for a location."""
-    return f"The weather in {location} is 72Â°F and sunny."
+    return f"The weather in {location} is 72°F and sunny."
 
 agent = Agent(
     name="Weather agent",
@@ -915,7 +915,7 @@ agent = Agent(
 
 result = Runner.run_sync(agent, "What's the weather in Dubai?")
 print(result.final_output)
-# The weather in Dubai is 72Â°F and sunny.
+# The weather in Dubai is 72°F and sunny.
 ```
 
 ### Multi-agent with handoffs
@@ -942,7 +942,7 @@ triage_agent = Agent(
     handoffs=[spanish_agent, english_agent],
 )
 
-result = Runner.run_sync(triage_agent, "Hola, Â¿cÃ³mo estÃ¡s?")
+result = Runner.run_sync(triage_agent, "Hola, ¿cómo estás?")
 print(result.final_output)
 # "Hello, how are you?"
 ```
@@ -986,12 +986,12 @@ from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("Advanced Memory Server")
 
-# Tool â€” action
+# Tool — action
 @mcp.tool()
 def search_memories(query: str) -> list[dict]:
     return memory_store.search(query, top_k=5)
 
-# Resource â€” readable data
+# Resource — readable data
 @mcp.resource("memory://recent/{count}")
 def recent_memories(count: int = 10) -> str:
     memories = memory_store.get_recent(count)
@@ -1000,7 +1000,7 @@ def recent_memories(count: int = 10) -> str:
         for m in memories
     )
 
-# Resource â€” static file
+# Resource — static file
 @mcp.resource("config://prompts/analyze")
 def analyze_prompt() -> str:
     return """Analyze the following information and provide:
@@ -1131,4 +1131,4 @@ Before moving to Phase 4, you should be able to:
 
 **Estimated time to checkpoint:** 35-40 hours over 3 weeks.
 
-[Next: Phase 4 â€” Production Hardening](05-phase4-production-hardening.md)
+[Next: Phase 4 — Production Hardening](05-phase4-production-hardening.md)

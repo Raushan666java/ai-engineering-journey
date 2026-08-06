@@ -1,4 +1,4 @@
-﻿# Government Job Portal & Notification Tracker
+# Government Job Portal & Notification Tracker
 
 ## Learning Objectives
 
@@ -172,12 +172,12 @@ flowchart TD
 
 Government vacancies have strict deadlines, often 2-4 weeks from notification to application close. Missing a deadline means waiting another year for some exams (SSC CGL, UPSC). A systematic tracker ensures:
 
-1. **No missed deadlines** â€” automated reminders
-2. **Eligibility verification** â€” check eligibility before application
-3. **Document readiness** â€” prepare necessary documents in advance
-4. **Fee payment tracking** â€” track application fee payment status
-5. **Admit card download** â€” never miss admit card release
-6. **Results tracking** â€” know when and where results are published
+1. **No missed deadlines** — automated reminders
+2. **Eligibility verification** — check eligibility before application
+3. **Document readiness** — prepare necessary documents in advance
+4. **Fee payment tracking** — track application fee payment status
+5. **Admit card download** — never miss admit card release
+6. **Results tracking** — know when and where results are published
 
 ### Tracking Spreadsheet Structure
 
@@ -836,7 +836,7 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 | **November** | SSC MTS notification, Railway recruitment | Nov-Dec | Mar-Apr |
 | **December** | Next year planning, early PSU notifications | Dec-Jan | Throughout next year |
 
-### Priority Timeline â€” IT Professionals
+### Priority Timeline — IT Professionals
 
 | Month | High Priority | Medium Priority | Low Priority |
 |-------|---------------|-----------------|--------------|
@@ -954,17 +954,17 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ## Summary
 
-Government job tracking requires systematic organization. With 50+ recruiting bodies, 100+ exam notifications per year, and overlapping application windows, a structured tracking system is essential for success. Use the TypeScript tracker provided to manage your notifications, documents, deadlines, and exam calendar. Keep all documents ready and self-attested in advance â€” last-minute document scrambling is the most common reason for application errors. Register on all major notification sites (Sarkari Result, Free Alerts) and set up daily email alerts. Apply early in the application window to avoid server issues on the last day. The key to success in government job applications is not just preparation, but systematic tracking and timely action.
+Government job tracking requires systematic organization. With 50+ recruiting bodies, 100+ exam notifications per year, and overlapping application windows, a structured tracking system is essential for success. Use the TypeScript tracker provided to manage your notifications, documents, deadlines, and exam calendar. Keep all documents ready and self-attested in advance — last-minute document scrambling is the most common reason for application errors. Register on all major notification sites (Sarkari Result, Free Alerts) and set up daily email alerts. Apply early in the application window to avoid server issues on the last day. The key to success in government job applications is not just preparation, but systematic tracking and timely action.
 
 ## Practical Takeaways
 
-1. Create your government job tracker spreadsheet (or use the TypeScript tool) before you start applying â€” this is your single source of truth
+1. Create your government job tracker spreadsheet (or use the TypeScript tool) before you start applying — this is your single source of truth
 2. Set up email alerts on at least 3 notification sites for comprehensive coverage
 3. Keep all documents scanned and organized in a single folder named by document type
-4. Self-attest at least 10 copies of each document while preparing â€” do not wait until interview call
+4. Self-attest at least 10 copies of each document while preparing — do not wait until interview call
 5. Apply to at least 3-4 exams in different categories (SSC, Banking, PSU, State) to diversify risk
-6. Check notification sites twice daily â€” morning and evening â€” during peak notification season (March-July)
+6. Check notification sites twice daily — morning and evening — during peak notification season (March-July)
 7. Download and print admit cards within 24 hours of release to avoid portal crashes near deadline
 8. Maintain a separate email account exclusively for government job applications
 9. Create WhatsApp/Telegram groups with fellow aspirants for real-time notification sharing
-10. Never ignore the age limit, education requirement, and document specification details â€” mismatches lead to immediate rejection
+10. Never ignore the age limit, education requirement, and document specification details — mismatches lead to immediate rejection

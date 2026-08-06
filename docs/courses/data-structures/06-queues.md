@@ -1,4 +1,4 @@
-﻿# Chapter 6: Queues
+# Chapter 6: Queues
 
 > **Previous:** [Chapter 5: Stacks](./05-stacks.md) | **Next:** [Hash Tables](./07-hash-tables.md)
 
@@ -33,14 +33,14 @@
 
 ## Why Queues Matter
 
-> **Real-World Analogy:** Imagine a ticket counter at a cinema. Customers join the line at the **rear** and are served from the **front**. The first person to arrive buys a ticket first â€” there is no cutting in line. This is **First-In-First-Out (FIFO)** â€” the defining principle of a queue.
+> **Real-World Analogy:** Imagine a ticket counter at a cinema. Customers join the line at the **rear** and are served from the **front**. The first person to arrive buys a ticket first — there is no cutting in line. This is **First-In-First-Out (FIFO)** — the defining principle of a queue.
 
 Queues are everywhere:
-- ðŸ–¨ï¸ **Printer spooler** â€” documents are printed in the order they were submitted.
-- â˜• **Coffee shop** â€” baristas take the next order from the front of the queue.
-- ðŸ“¨ **Message brokers** (Kafka, RabbitMQ) â€” producers publish messages to a queue; consumers process them in order.
-- ðŸ–¥ï¸ **CPU scheduling** â€” processes wait in a ready queue for their turn on the CPU.
-- ðŸ—ºï¸ **BFS traversal** â€” graph nodes are explored level by level using a queue.
+- 🖨️ **Printer spooler** — documents are printed in the order they were submitted.
+- ☕ **Coffee shop** — baristas take the next order from the front of the queue.
+- 📨 **Message brokers** (Kafka, RabbitMQ) — producers publish messages to a queue; consumers process them in order.
+- 🖥️ **CPU scheduling** — processes wait in a ready queue for their turn on the CPU.
+- 🗺️ **BFS traversal** — graph nodes are explored level by level using a queue.
 
 Without queues, life would be chaos: nobody would know who is next, fairness would vanish, and systems would lack predictable ordering.
 
@@ -88,38 +88,38 @@ A queue follows the **First-In-First-Out (FIFO)** discipline: elements are inser
 ### 1. Simple Array Queue (Naive)
 
 
-> **Real-World Analogy:** A single-file line where the door (front) stays fixed. Everyone enters through the same door, and as people leave through the same door, the space they occupied remains empty â€” unusable.
+> **Real-World Analogy:** A single-file line where the door (front) stays fixed. Everyone enters through the same door, and as people leave through the same door, the space they occupied remains empty — unusable.
 
 #### Algorithm Steps
 
-1. **Initialize** â€” allocate an array `arr[0..n-1]`, set `front = 0`, `rear = -1`, `size = 0`.
-2. **enqueue(x)** â€” if full, return overflow error; else increment `rear`, place `x` at `arr[rear]`, increment `size`.
-3. **dequeue()** â€” if empty, return underflow error; else store `arr[front]`, increment `front`, decrement `size`.
-4. **front()** â€” if empty, error; else return `arr[front]`.
-5. **isEmpty()** â€” return `size == 0`.
+1. **Initialize** — allocate an array `arr[0..n-1]`, set `front = 0`, `rear = -1`, `size = 0`.
+2. **enqueue(x)** — if full, return overflow error; else increment `rear`, place `x` at `arr[rear]`, increment `size`.
+3. **dequeue()** — if empty, return underflow error; else store `arr[front]`, increment `front`, decrement `size`.
+4. **front()** — if empty, error; else return `arr[front]`.
+5. **isEmpty()** — return `size == 0`.
 
 #### Pseudocode
 
 ```
 Queue:
-  arr â† array of size N
-  front â† 0
-  rear â† -1
-  size â† 0
+  arr ← array of size N
+  front ← 0
+  rear ← -1
+  size ← 0
 
 ENQUEUE(x):
   if size == N
     return "Overflow"
-  rear â† rear + 1
-  arr[rear] â† x
-  size â† size + 1
+  rear ← rear + 1
+  arr[rear] ← x
+  size ← size + 1
 
 DEQUEUE():
   if size == 0
     return "Underflow"
-  x â† arr[front]
-  front â† front + 1
-  size â† size - 1
+  x ← arr[front]
+  front ← front + 1
+  size ← size - 1
   return x
 
 FRONT():
@@ -131,19 +131,19 @@ ISEMPTY():
   return size == 0
 ```
 
-#### Dry Run â€” Trace Table
+#### Dry Run — Trace Table
 
 | Operation | arr State | front | rear | size | Notes |
 |-----------|-----------|-------|------|------|-------|
 | Init | [ _ , _ , _ , _ , _ ] | 0 | -1 | 0 | |
-| enqueue(10) | [10, _ , _ , _ , _ ] | 0 | 0 | 1 | rearâ†’0 |
-| enqueue(20) | [10, 20, _ , _ , _ ] | 0 | 1 | 2 | rearâ†’1 |
-| enqueue(30) | [10, 20, 30, _ , _ ] | 0 | 2 | 3 | rearâ†’2 |
-| dequeue() â†’10 | [10, 20, 30, _ , _ ] | 1 | 2 | 2 | frontâ†’1 (10 still in arr but logically gone) |
-| dequeue() â†’20 | [10, 20, 30, _ , _ ] | 2 | 2 | 1 | frontâ†’2 |
-| enqueue(40) | [10, 20, 30, 40, _ ] | 2 | 3 | 2 | rearâ†’3 |
+| enqueue(10) | [10, _ , _ , _ , _ ] | 0 | 0 | 1 | rear→0 |
+| enqueue(20) | [10, 20, _ , _ , _ ] | 0 | 1 | 2 | rear→1 |
+| enqueue(30) | [10, 20, 30, _ , _ ] | 0 | 2 | 3 | rear→2 |
+| dequeue() →10 | [10, 20, 30, _ , _ ] | 1 | 2 | 2 | front→1 (10 still in arr but logically gone) |
+| dequeue() →20 | [10, 20, 30, _ , _ ] | 2 | 2 | 1 | front→2 |
+| enqueue(40) | [10, 20, 30, 40, _ ] | 2 | 3 | 2 | rear→3 |
 
-**Problem:** After dequeues, indices 0,1 are wasted â€” we cannot reuse them without shifting.
+**Problem:** After dequeues, indices 0,1 are wasted — we cannot reuse them without shifting.
 
 #### Implementations
 
@@ -315,72 +315,72 @@ public class SimpleArrayQueue<T> {
 
 | Operation | Time | Why |
 |-----------|------|-----|
-| enqueue | \( O(1) \) | Direct index assignment â€” no shifting |
+| enqueue | \( O(1) \) | Direct index assignment — no shifting |
 | dequeue | \( O(1) \) | Just moves the front pointer forward |
 | front | \( O(1) \) | Direct array access |
 | isEmpty | \( O(1) \) | Single integer comparison |
 
 **Space:** \( O(n) \) for the array.
 
-**Why not use this?** After \( k \) dequeues, the first \( k \) slots become unusable â€” this is called **false overflow**. The queue appears full even though space exists at the front.
+**Why not use this?** After \( k \) dequeues, the first \( k \) slots become unusable — this is called **false overflow**. The queue appears full even though space exists at the front.
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Simple to implement | Wastes space â€” false overflow |
+| Simple to implement | Wastes space — false overflow |
 | O(1) all operations | Fixed capacity (unless resized) |
 | Good cache locality | Must shift elements if front reaches end |
 | No pointer overhead | Cannot reuse freed slots |
 
 #### Edge Cases
 
-- **Empty queue** â€” dequeue/front on empty â†’ underflow error.
-- **Full queue** â€” enqueue on full â†’ overflow error.
-- **Single element** â€” front == rear; dequeue makes front > rear, queue becomes empty.
-- **False overflow** â€” front has advanced but enqueue still fails because rear == capacity-1.
+- **Empty queue** — dequeue/front on empty → underflow error.
+- **Full queue** — enqueue on full → overflow error.
+- **Single element** — front == rear; dequeue makes front > rear, queue becomes empty.
+- **False overflow** — front has advanced but enqueue still fails because rear == capacity-1.
 
 ---
 
 ### 2. Circular Queue (Circular Array Queue)
 
 
-> **Real-World Analogy:** A rotating sushi bar. The conveyor belt wraps around â€” when a plate reaches the end, it continues from the start. Similarly, a circular queue reuses empty slots at the beginning by wrapping the rear pointer back to index 0.
+> **Real-World Analogy:** A rotating sushi bar. The conveyor belt wraps around — when a plate reaches the end, it continues from the start. Similarly, a circular queue reuses empty slots at the beginning by wrapping the rear pointer back to index 0.
 
-> **Pro Tip:** The modulo arithmetic `(rear + 1) % capacity` for circular wrap-around is both elegant and error-prone â€” always test edge cases where rear wraps past front.
+> **Pro Tip:** The modulo arithmetic `(rear + 1) % capacity` for circular wrap-around is both elegant and error-prone — always test edge cases where rear wraps past front.
 
 A naive array queue wastes space because after dequeues the front pointer moves forward, leaving unused slots at the beginning. A circular queue wraps around: when the rear reaches the end, it continues at index 0 (modulo arithmetic).
 
 #### Algorithm Steps
 
-1. **Initialize** â€” allocate array `arr[0..n-1]`, set `front = 0`, `rear = 0`, `size = 0`.
-2. **enqueue(x)** â€” if `size == capacity`, queue is full (resize or overflow); else place `x` at `arr[rear]`, set `rear = (rear + 1) % capacity`, increment `size`.
-3. **dequeue()** â€” if `size == 0` â†’ underflow; else store `arr[front]`, set `front = (front + 1) % capacity`, decrement `size`.
-4. **front()** â€” if empty â†’ error; else return `arr[front]`.
-5. **isEmpty()** â€” return `size == 0`.
+1. **Initialize** — allocate array `arr[0..n-1]`, set `front = 0`, `rear = 0`, `size = 0`.
+2. **enqueue(x)** — if `size == capacity`, queue is full (resize or overflow); else place `x` at `arr[rear]`, set `rear = (rear + 1) % capacity`, increment `size`.
+3. **dequeue()** — if `size == 0` → underflow; else store `arr[front]`, set `front = (front + 1) % capacity`, decrement `size`.
+4. **front()** — if empty → error; else return `arr[front]`.
+5. **isEmpty()** — return `size == 0`.
 
 #### Pseudocode
 
 ```
 CircularQueue:
-  arr â† array of size N
-  front â† 0
-  rear â† 0
-  size â† 0
+  arr ← array of size N
+  front ← 0
+  rear ← 0
+  size ← 0
 
 ENQUEUE(x):
   if size == N
     resize() or return "Overflow"
-  arr[rear] â† x
-  rear â† (rear + 1) mod N
-  size â† size + 1
+  arr[rear] ← x
+  rear ← (rear + 1) mod N
+  size ← size + 1
 
 DEQUEUE():
   if size == 0
     return "Underflow"
-  x â† arr[front]
-  front â† (front + 1) mod N
-  size â† size - 1
+  x ← arr[front]
+  front ← (front + 1) mod N
+  size ← size - 1
   return x
 
 FRONT():
@@ -390,7 +390,7 @@ FRONT():
 ISEMPTY(): return size == 0
 ```
 
-#### Dry Run â€” Trace Table (capacity = 5)
+#### Dry Run — Trace Table (capacity = 5)
 
 | Operation | arr state | front | rear | size | Notes |
 |-----------|-----------|-------|------|------|-------|
@@ -398,12 +398,12 @@ ISEMPTY(): return size == 0
 | enqueue(10) | [10, _ , _ , _ , _ ] | 0 | 1 | 1 | rear wraps to next |
 | enqueue(20) | [10, 20, _ , _ , _ ] | 0 | 2 | 2 | |
 | enqueue(30) | [10, 20, 30, _ , _ ] | 0 | 3 | 3 | |
-| dequeue() â†’10 | [10, 20, 30, _ , _ ] | 1 | 3 | 2 | frontâ†’1 |
-| dequeue() â†’20 | [10, 20, 30, _ , _ ] | 2 | 3 | 1 | frontâ†’2 |
+| dequeue() →10 | [10, 20, 30, _ , _ ] | 1 | 3 | 2 | front→1 |
+| dequeue() →20 | [10, 20, 30, _ , _ ] | 2 | 3 | 1 | front→2 |
 | enqueue(40) | [10, 20, 30, 40, _ ] | 2 | 4 | 2 | |
 | enqueue(50) | [10, 20, 30, 40, 50] | 2 | 0 | 3 | **Wrap:** rear = (4+1)%5 = 0 |
 | enqueue(60) | [60, 20, 30, 40, 50] | 2 | 1 | 4 | overwrites index 0 |
-| dequeue() â†’30 | [60, 20, 30, 40, 50] | 3 | 1 | 3 | frontâ†’3 |
+| dequeue() →30 | [60, 20, 30, 40, 50] | 3 | 1 | 3 | front→3 |
 
 Key observation: The circular queue reuses indices 0 and 1 that were freed by earlier dequeues. Without wrap-around, this space would be lost.
 
@@ -640,65 +640,65 @@ public class CircularQueue<T> {
 | front | \( O(1) \) | Direct array access |
 | resize | \( O(n) \) | Must copy all elements to new array |
 
-**Why O(1)?** Both enqueue and dequeue are simple pointer movements. Modulo arithmetic is a hardware-level operation â€” no loops, no shifting. The amortized cost of enqueue remains O(1) because resizing is rare (doubling strategy).
+**Why O(1)?** Both enqueue and dequeue are simple pointer movements. Modulo arithmetic is a hardware-level operation — no loops, no shifting. The amortized cost of enqueue remains O(1) because resizing is rare (doubling strategy).
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| No false overflow â€” reuses freed slots | Fixed capacity (unless resize implemented) |
+| No false overflow — reuses freed slots | Fixed capacity (unless resize implemented) |
 | O(1) all operations | Resize is O(n) and doubles memory |
 | Excellent cache locality | One slot may be sacrificed to distinguish full/empty |
 | Simple pointer arithmetic | Requires careful modulo boundary handling |
 
 #### Edge Cases
 
-- **Empty queue** â€” `front == rear && count == 0`.
-- **Full queue** â€” `count == capacity`. If using sentinel-slot approach: `(rear + 1) % capacity == front`.
-- **Single element** â€” enqueue then dequeue leaves front == rear with count == 0.
-- **Wrap-around** â€” after many operations, front may be at index 4 and rear at index 2. Reading/wrapping correctly requires modulo.
-- **Resize** â€” when full, all elements must be copied from (front...rear) to a new contiguous block starting at index 0.
+- **Empty queue** — `front == rear && count == 0`.
+- **Full queue** — `count == capacity`. If using sentinel-slot approach: `(rear + 1) % capacity == front`.
+- **Single element** — enqueue then dequeue leaves front == rear with count == 0.
+- **Wrap-around** — after many operations, front may be at index 4 and rear at index 2. Reading/wrapping correctly requires modulo.
+- **Resize** — when full, all elements must be copied from (front...rear) to a new contiguous block starting at index 0.
 
 ---
 
 ### 3. Linked-List Queue
 
 
-> **Real-World Analogy:** A conga line at a party. Each person holds the waist of the person in front. New people join at the back, and the front person leaves when it is their turn. The line can grow arbitrarily long â€” no fixed capacity.
+> **Real-World Analogy:** A conga line at a party. Each person holds the waist of the person in front. New people join at the back, and the front person leaves when it is their turn. The line can grow arbitrarily long — no fixed capacity.
 
 #### Algorithm Steps
 
-1. **Initialize** â€” `head = null`, `tail = null`, `size = 0`.
-2. **enqueue(x)** â€” create a new `Node(x)`. If `head == null`, set `head = tail = newNode`; else link `tail.next = newNode`, move `tail = newNode`. Increment `size`.
-3. **dequeue()** â€” if `head == null` â†’ underflow. Store `head.data`, move `head = head.next`. If `head` becomes null, set `tail = null`. Decrement `size`.
-4. **front()** â€” if empty â†’ error; else return `head.data`.
+1. **Initialize** — `head = null`, `tail = null`, `size = 0`.
+2. **enqueue(x)** — create a new `Node(x)`. If `head == null`, set `head = tail = newNode`; else link `tail.next = newNode`, move `tail = newNode`. Increment `size`.
+3. **dequeue()** — if `head == null` → underflow. Store `head.data`, move `head = head.next`. If `head` becomes null, set `tail = null`. Decrement `size`.
+4. **front()** — if empty → error; else return `head.data`.
 
 #### Pseudocode
 
 ```
 LinkedQueue:
-  head â† null
-  tail â† null
-  size â† 0
+  head ← null
+  tail ← null
+  size ← 0
 
 ENQUEUE(x):
-  newNode â† Node(x)
+  newNode ← Node(x)
   if head == null
-    head â† newNode
-    tail â† newNode
+    head ← newNode
+    tail ← newNode
   else
-    tail.next â† newNode
-    tail â† newNode
-  size â† size + 1
+    tail.next ← newNode
+    tail ← newNode
+  size ← size + 1
 
 DEQUEUE():
   if head == null
     return "Underflow"
-  x â† head.data
-  head â† head.next
+  x ← head.data
+  head ← head.next
   if head == null
-    tail â† null
-  size â† size - 1
+    tail ← null
+  size ← size - 1
   return x
 
 FRONT():
@@ -709,17 +709,17 @@ ISEMPTY(): return size == 0
 SIZE():    return size
 ```
 
-#### Dry Run â€” Trace Table
+#### Dry Run — Trace Table
 
 | Operation | Queue State | head | tail | size |
 |-----------|------------|------|------|------|
 | Init | null | null | null | 0 |
-| enqueue(A) | A â†’ null | A | A | 1 |
-| enqueue(B) | A â†’ B â†’ null | A | B | 2 |
-| enqueue(C) | A â†’ B â†’ C â†’ null | A | C | 3 |
-| dequeue() â†’A | B â†’ C â†’ null | B | C | 2 |
-| dequeue() â†’B | C â†’ null | C | C | 1 |
-| dequeue() â†’C | null | null | null | 0 |
+| enqueue(A) | A → null | A | A | 1 |
+| enqueue(B) | A → B → null | A | B | 2 |
+| enqueue(C) | A → B → C → null | A | C | 3 |
+| dequeue() →A | B → C → null | B | C | 2 |
+| dequeue() →B | C → null | C | C | 1 |
+| dequeue() →C | null | null | null | 0 |
 
 #### Implementations
 
@@ -918,28 +918,28 @@ public class LinkedQueue<T> {
 
 | Operation | Time | Why |
 |-----------|------|-----|
-| enqueue | \( O(1) \) | Rear pointer gives direct tail access â€” no traversal needed |
+| enqueue | \( O(1) \) | Rear pointer gives direct tail access — no traversal needed |
 | dequeue | \( O(1) \) | Head pointer gives direct front access |
 | front | \( O(1) \) | Directly reads head.data |
 | Space overhead | \( O(n) \) extra | Each node stores one pointer (next) |
 
-**Why O(1) for both ends?** Unlike a singly linked list (which typically has O(n) tail operations), we maintain a separate `tail` pointer. Both head and tail are direct references â€” no traversal required.
+**Why O(1) for both ends?** Unlike a singly linked list (which typically has O(n) tail operations), we maintain a separate `tail` pointer. Both head and tail are direct references — no traversal required.
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Dynamic size â€” no capacity limit | Extra memory per node (pointer overhead) |
-| No resizing or copying | Poor cache locality â€” nodes scattered in memory |
+| Dynamic size — no capacity limit | Extra memory per node (pointer overhead) |
+| No resizing or copying | Poor cache locality — nodes scattered in memory |
 | O(1) enqueue and dequeue | Pointer manipulation required (bug-prone) |
 | No false overflow | Slightly slower than array due to allocation |
 
 #### Edge Cases
 
-- **Empty queue** â€” head == null; dequeue/front â†’ underflow.
-- **Single element** â€” head == tail; after dequeue, both become null.
-- **Many elements** â€” works regardless of number (heap memory permitting).
-- **Memory exhaustion** â€” if heap is full, `new Node` may throw.
+- **Empty queue** — head == null; dequeue/front → underflow.
+- **Single element** — head == tail; after dequeue, both become null.
+- **Many elements** — works regardless of number (heap memory permitting).
+- **Memory exhaustion** — if heap is full, `new Node` may throw.
 
 ---
 
@@ -952,49 +952,49 @@ A deque allows insertion and deletion at both ends in \( O(1) \) time, combining
 
 #### Algorithm Steps
 
-1. **Initialize** â€” allocate array `arr[0..n-1]`, set `front = 0`, `rear = 0`, `size = 0`.
-2. **pushFront(x)** â€” `front = (front - 1 + capacity) % capacity`, place `x` at `arr[front]`, increment `size`.
-3. **pushBack(x)** â€” place `x` at `arr[rear]`, `rear = (rear + 1) % capacity`, increment `size`.
-4. **popFront()** â€” store `arr[front]`, `front = (front + 1) % capacity`, decrement `size`.
-5. **popBack()** â€” `rear = (rear - 1 + capacity) % capacity`, store `arr[rear]`, decrement `size`.
-6. **front()**, **back()** â€” return element at front/back without removal.
+1. **Initialize** — allocate array `arr[0..n-1]`, set `front = 0`, `rear = 0`, `size = 0`.
+2. **pushFront(x)** — `front = (front - 1 + capacity) % capacity`, place `x` at `arr[front]`, increment `size`.
+3. **pushBack(x)** — place `x` at `arr[rear]`, `rear = (rear + 1) % capacity`, increment `size`.
+4. **popFront()** — store `arr[front]`, `front = (front + 1) % capacity`, decrement `size`.
+5. **popBack()** — `rear = (rear - 1 + capacity) % capacity`, store `arr[rear]`, decrement `size`.
+6. **front()**, **back()** — return element at front/back without removal.
 
 #### Pseudocode
 
 ```
 Deque:
-  arr â† array of size N
-  front â† 0
-  rear â† 0
-  size â† 0
+  arr ← array of size N
+  front ← 0
+  rear ← 0
+  size ← 0
 
 PUSHFRONT(x):
-  front â† (front - 1 + N) mod N
-  arr[front] â† x
-  size â† size + 1
+  front ← (front - 1 + N) mod N
+  arr[front] ← x
+  size ← size + 1
 
 PUSHBACK(x):
-  arr[rear] â† x
-  rear â† (rear + 1) mod N
-  size â† size + 1
+  arr[rear] ← x
+  rear ← (rear + 1) mod N
+  size ← size + 1
 
 POPFRONT():
-  x â† arr[front]
-  front â† (front + 1) mod N
-  size â† size - 1
+  x ← arr[front]
+  front ← (front + 1) mod N
+  size ← size - 1
   return x
 
 POPBACK():
-  rear â† (rear - 1 + N) mod N
-  x â† arr[rear]
-  size â† size - 1
+  rear ← (rear - 1 + N) mod N
+  x ← arr[rear]
+  size ← size - 1
   return x
 
 FRONT(): return arr[front]
 BACK():  return arr[(rear - 1 + N) mod N]
 ```
 
-#### Dry Run â€” Trace Table (capacity = 5)
+#### Dry Run — Trace Table (capacity = 5)
 
 | Operation | arr state | front | rear | size |
 |-----------|-----------|-------|------|------|
@@ -1003,9 +1003,9 @@ BACK():  return arr[(rear - 1 + N) mod N]
 | pushBack(20) | [10, 20, _ , _ , _ ] | 0 | 2 | 2 |
 | pushFront(5) | [10, 20, _ , _ , 5] | 4 | 2 | 3 |
 | pushFront(1) | [10, 20, _ , 1, 5] | 3 | 2 | 4 |
-| popFront() â†’1 | [10, 20, _ , 1, 5] | 4 | 2 | 3 |
-| popBack() â†’20 | [10, 20, _ , 1, 5] | 4 | 1 | 2 |
-| popBack() â†’10 | [10, 20, _ , 1, 5] | 4 | 0 | 1 |
+| popFront() →1 | [10, 20, _ , 1, 5] | 4 | 2 | 3 |
+| popBack() →20 | [10, 20, _ , 1, 5] | 4 | 1 | 2 |
+| popBack() →10 | [10, 20, _ , 1, 5] | 4 | 0 | 1 |
 
 #### Implementations
 
@@ -1092,8 +1092,8 @@ public class DequeExample {
 
 | Operation | Time | Why |
 |-----------|------|-----|
-| pushFront/pushBack | \( O(1) \) | Modulo pointer arithmetic â€” no shifting |
-| popFront/popBack | \( O(1) \) | Same â€” pointer adjustment only |
+| pushFront/pushBack | \( O(1) \) | Modulo pointer arithmetic — no shifting |
+| popFront/popBack | \( O(1) \) | Same — pointer adjustment only |
 | front/back | \( O(1) \) | Direct array access |
 
 **Why O(1) at both ends?** The circular array backing allows both front and back pointers to move independently. Unlike a singly linked list, no traversal is needed for the back.
@@ -1109,10 +1109,10 @@ public class DequeExample {
 
 #### Edge Cases
 
-- **Empty** â€” all access methods fail.
-- **Single element** â€” front == back index.
-- **Full** â€” need resize or overflow check.
-- **Wrap-backwards** â€” `(front - 1 + capacity) % capacity` handles negative modulo.
+- **Empty** — all access methods fail.
+- **Single element** — front == back index.
+- **Full** — need resize or overflow check.
+- **Wrap-backwards** — `(front - 1 + capacity) % capacity` handles negative modulo.
 
 ---
 
@@ -1125,61 +1125,61 @@ In a priority queue, elements have a priority value; the element with the highes
 
 #### Algorithm Steps (Binary Heap-based Max-Priority Queue)
 
-1. **Insert (push)** â€” add element at the end of the heap array. Bubble it up while its priority is greater than its parent.
-2. **Extract-Max (pop)** â€” swap root with last element, remove the last. Bubble the new root down while it is smaller than either child.
-3. **Peek (top)** â€” return root element (index 0) â€” \( O(1) \).
-4. **isEmpty** â€” check heap size == 0.
+1. **Insert (push)** — add element at the end of the heap array. Bubble it up while its priority is greater than its parent.
+2. **Extract-Max (pop)** — swap root with last element, remove the last. Bubble the new root down while it is smaller than either child.
+3. **Peek (top)** — return root element (index 0) — \( O(1) \).
+4. **isEmpty** — check heap size == 0.
 
 #### Pseudocode
 
 ```
 PriorityQueue (Max-Heap based):
-  heap â† array
-  size â† 0
+  heap ← array
+  size ← 0
 
 PUSH(x):
-  heap[size] â† x
-  i â† size
-  size â† size + 1
+  heap[size] ← x
+  i ← size
+  size ← size + 1
   while i > 0 and heap[PARENT(i)] < heap[i]
     swap heap[PARENT(i)], heap[i]
-    i â† PARENT(i)
+    i ← PARENT(i)
 
 POP():
   if size == 0 return "Empty"
-  max â† heap[0]
-  heap[0] â† heap[size-1]
-  size â† size - 1
+  max ← heap[0]
+  heap[0] ← heap[size-1]
+  size ← size - 1
   MAXHEAPIFY(0)
   return max
 
 TOP(): return heap[0]
 
 MAXHEAPIFY(i):
-  left â† 2*i + 1
-  right â† 2*i + 2
-  largest â† i
+  left ← 2*i + 1
+  right ← 2*i + 2
+  largest ← i
   if left < size and heap[left] > heap[largest]
-    largest â† left
+    largest ← left
   if right < size and heap[right] > heap[largest]
-    largest â† right
+    largest ← right
   if largest != i
     swap heap[i], heap[largest]
     MAXHEAPIFY(largest)
 ```
 
-#### Dry Run â€” Trace Table
+#### Dry Run — Trace Table
 
 | Operation | Heap (array) | Structure |
 |-----------|-------------|-----------|
 | push(3) | [3] | 3 |
-| push(10) | [10, 3] | 10 â†’ 3 |
-| push(5) | [10, 3, 5] | 10 â†’ 3, 5 |
-| push(1) | [10, 3, 5, 1] | 10 â†’ 3, 5 â†’ 1 |
-| push(7) | [10, 7, 5, 1, 3] | 10 â†’ 7, 5 â†’ 1, 3 |
-| pop() â†’10 | [7, 3, 5, 1] | 7 â†’ 3, 5 â†’ 1 |
-| pop() â†’7 | [5, 3, 1] | 5 â†’ 3, 1 |
-| pop() â†’5 | [3, 1] | 3 â†’ 1 |
+| push(10) | [10, 3] | 10 → 3 |
+| push(5) | [10, 3, 5] | 10 → 3, 5 |
+| push(1) | [10, 3, 5, 1] | 10 → 3, 5 → 1 |
+| push(7) | [10, 7, 5, 1, 3] | 10 → 7, 5 → 1, 3 |
+| pop() →10 | [7, 3, 5, 1] | 7 → 3, 5 → 1 |
+| pop() →7 | [5, 3, 1] | 5 → 3, 1 |
+| pop() →5 | [3, 1] | 3 → 1 |
 
 #### Implementations
 
@@ -1286,7 +1286,7 @@ public class PriorityQueueExample {
 | Operation | Time | Why |
 |-----------|------|-----|
 | push (insert) | \( O(\log n) \) | Bubble up: worst-case travels from leaf to root (tree height) |
-| pop (extract-max) | \( O(\log n) \) | Bubble down: same â€” heap height is \(\log n\) |
+| pop (extract-max) | \( O(\log n) \) | Bubble down: same — heap height is \(\log n\) |
 | top (peek) | \( O(1) \) | Root of heap is always at index 0 |
 | heapify | \( O(n) \) | Building heap from array |
 
@@ -1296,18 +1296,18 @@ public class PriorityQueueExample {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Guaranteed O(log n) worst-case for insert/extract | Not stable â€” equal-priority order not preserved |
-| Efficient for dynamic priority management | Not FIFO â€” ordering is by priority, not arrival |
+| Guaranteed O(log n) worst-case for insert/extract | Not stable — equal-priority order not preserved |
+| Efficient for dynamic priority management | Not FIFO — ordering is by priority, not arrival |
 | Foundation for Dijkstra, Huffman, A* | Heap structure requires extra space |
 | Memory efficient (array-backed) | Cannot find/remove arbitrary elements quickly |
 
 #### Edge Cases
 
-- **Empty queue** â€” pop/top on empty â†’ error.
-- **Single element** â€” one element; pop leaves heap empty.
-- **Duplicate priorities** â€” order among equal priorities is implementation-dependent (unstable).
-- **All same priority** â€” effectively becomes FIFO (behavior varies by implementation).
-- **Resizing** â€” dynamic array backing needs resize when full.
+- **Empty queue** — pop/top on empty → error.
+- **Single element** — one element; pop leaves heap empty.
+- **Duplicate priorities** — order among equal priorities is implementation-dependent (unstable).
+- **All same priority** — effectively becomes FIFO (behavior varies by implementation).
+- **Resizing** — dynamic array backing needs resize when full.
 
 ---
 
@@ -1327,14 +1327,14 @@ public class PriorityQueueExample {
 
 ---
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
 
-> **Remember:** Use a sentinel slot in circular queues to distinguish full from empty when front == rear â€” this is the most common off-by-one bug in queue implementations.
+> **Remember:** Use a sentinel slot in circular queues to distinguish full from empty when front == rear — this is the most common off-by-one bug in queue implementations.
 
 - **Circular array queue needs one sentinel slot**: Use front and rear indices where an empty queue has front == rear, and a full queue has `(rear + 1) % size == front`. This wastes one slot but avoids tracking separate size.
 - **BFS is queue's natural domain**: Push the start node, mark visited, then repeatedly pop, process neighbors, and push unvisited ones. The queue guarantees level-by-level exploration.
 - **Monotonic queue for sliding window max**: Maintain a deque where elements are in decreasing order. Before pushing, pop from the back while the back is smaller than the new element. The front is always the window max.
-- **Priority queue with `decreaseKey` needs a heap index**: For Dijkstra's algorithm, maintain an array mapping vertex ID â†’ heap position. This allows \( O(\log n) \) priority updates instead of \( O(n) \) search.
+- **Priority queue with `decreaseKey` needs a heap index**: For Dijkstra's algorithm, maintain an array mapping vertex ID → heap position. This allows \( O(\log n) \) priority updates instead of \( O(n) \) search.
 
 ## One-Sentence Takeaways
 
@@ -1460,7 +1460,7 @@ print(sliding_window_maximum([1, 3, -1, -3, 5, 3, 6, 7], 3))
 # Output: [3, 3, 5, 5, 6, 7]
 ```
 
-**Complexity:** \( O(n) \) â€” each element pushed and popped at most once.
+**Complexity:** \( O(n) \) — each element pushed and popped at most once.
 
 ### Problem 3: First Non-Repeating Character in a Stream
 
@@ -1536,7 +1536,7 @@ print(lru.get(2))  # -1 (evicted)
 
 **Problem:** Given a grid where 0=empty, 1=fresh orange, 2=rotten orange. Every minute, rotten oranges rot adjacent fresh oranges. Find the minimum time to rot all, or -1 if impossible.
 
-**Approach:** BFS using a queue. Push all initially rotten oranges. Process level by level â€” each level = 1 minute.
+**Approach:** BFS using a queue. Push all initially rotten oranges. Process level by level — each level = 1 minute.
 
 ```python
 from collections import deque
@@ -1594,25 +1594,25 @@ When multiple users send documents to a shared printer, the print spooler queues
 ### 3. Message Queues (Kafka, RabbitMQ, AWS SQS)
 
 Message brokers use distributed queues to decouple producers from consumers:
-- **Kafka** â€” partitioned, replicated, ordered logs. Each partition is an ordered queue.
-- **RabbitMQ** â€” supports multiple queue types: classic (FIFO), quorum (replicated), and priority queues.
-- **AWS SQS** â€” fully managed message queuing with at-least-once delivery.
+- **Kafka** — partitioned, replicated, ordered logs. Each partition is an ordered queue.
+- **RabbitMQ** — supports multiple queue types: classic (FIFO), quorum (replicated), and priority queues.
+- **AWS SQS** — fully managed message queuing with at-least-once delivery.
 
 Messages are enqueued by producers and dequeued by consumers. This architecture enables async processing, load leveling, and fault tolerance.
 
 ### 4. CPU Scheduling
 
 Operating systems use several queue types:
-- **Ready Queue** â€” processes ready to run; scheduled by priority (priority queue).
-- **FCFS (First-Come, First-Served)** â€” simple FIFO queue.
-- **Round Robin** â€” circular queue with time slices.
-- **I/O Wait Queue** â€” processes waiting for I/O completion.
+- **Ready Queue** — processes ready to run; scheduled by priority (priority queue).
+- **FCFS (First-Come, First-Served)** — simple FIFO queue.
+- **Round Robin** — circular queue with time slices.
+- **I/O Wait Queue** — processes waiting for I/O completion.
 
 ### 5. Breadth-First Search (Tree/Graph)
 
-- **Level-order tree traversal** â€” process nodes level by level.
-- **Shortest path** â€” BFS finds shortest path in unweighted graphs.
-- **Topological sort** â€” Kahn's algorithm uses a queue of nodes with in-degree 0.
+- **Level-order tree traversal** — process nodes level by level.
+- **Shortest path** — BFS finds shortest path in unweighted graphs.
+- **Topological sort** — Kahn's algorithm uses a queue of nodes with in-degree 0.
 
 ### 6. Web Server Request Queuing
 
@@ -1620,7 +1620,7 @@ Web servers use bounded queues (circular buffers) to handle incoming HTTP reques
 
 ### 7. Undo/Redo in Editors
 
-A deque stores edit history. The user can undo (pop from back) or redo (pop from front). Bounded to a maximum size â€” oldest entries are dropped from the front.
+A deque stores edit history. The user can undo (pop from back) or redo (pop from front). Bounded to a maximum size — oldest entries are dropped from the front.
 
 ---
 
@@ -1630,7 +1630,7 @@ A deque stores edit history. The user can undo (pop from back) or redo (pop from
 
 | Mistake | Why It's Wrong | Correct Approach |
 |---------|----------------|------------------|
-| Confusing front vs rear in circular queue | Enqueue at rear, dequeue from front â€” mixing them breaks ordering | Keep invariant: `front` points to oldest element, `rear` to the next insertion spot |
+| Confusing front vs rear in circular queue | Enqueue at rear, dequeue from front — mixing them breaks ordering | Keep invariant: `front` points to oldest element, `rear` to the next insertion spot |
 | Miscomputing modulo with `(rear + 1) % size` for empty check | Full and empty both have `front == rear` in circular queues | Use `count` variable or sacrifice one slot to distinguish |
 | Not resizing array queue when full (array impl) | Elements are overwritten or queue rejects valid inserts | Double the capacity and copy elements from front to rear |
 | Forgetting to wrap-around when dequeuing in circular queue | `front++` eventually goes out of bounds | Always update with `front = (front + 1) % capacity` |
@@ -1761,40 +1761,40 @@ class Deque<T> {
 ### Additional MCQs (GFG Pattern)
 
 7. **What is true about a deque (double-ended queue)?**
-   - a) Elements can be inserted/deleted at both ends âœ“
+   - a) Elements can be inserted/deleted at both ends ✓
    - b) Elements can only be inserted at front
    - c) Elements can only be deleted at rear
    - d) Supports access to middle elements in O(1)
 
 8. **In a circular queue of size 5, if `front = 3` and `rear = 2`, how many elements?**
    - a) 3
-   - b) 4 âœ“
+   - b) 4 ✓
    - c) 5
    - d) 0
 
 9. **Which queue variant is best for implementing a sliding window maximum?**
    - a) Simple queue
    - b) Priority queue
-   - c) Deque âœ“
+   - c) Deque ✓
    - d) Circular queue
 
 10. **What is the main advantage of the linked-list queue over the array queue?**
     - a) Faster enqueue
-    - b) No fixed capacity âœ“
+    - b) No fixed capacity ✓
     - c) Lower memory
     - d) Simpler code
 
 11. **An application that requires serving tasks in order of arrival, then emergencies first, needs:**
     - a) Simple queue
-    - b) Priority queue âœ“
+    - b) Priority queue ✓
     - c) Deque
     - d) Circular queue
 
 12. **The `size()` method in a linked queue implemented without a counter is:**
     - a) O(1)
-    - b) O(n) âœ“
+    - b) O(n) ✓
     - c) O(log n)
-    - d) O(nÂ²)
+    - d) O(n²)
 
 **Answers:** 7-a, 8-b, 9-c, 10-b, 11-b, 12-b
 
@@ -1804,7 +1804,7 @@ class Deque<T> {
 
 12. **Reverse the first K elements of a queue**: Given a queue and an integer K, reverse the order of the first K elements.
 
-13. **Interleave the first half with the second half**: Given a queue of even length, interleave the first half with the second half (e.g., `[1,2,3,4,5,6]` â†’ `[1,4,2,5,3,6]`).
+13. **Interleave the first half with the second half**: Given a queue of even length, interleave the first half with the second half (e.g., `[1,2,3,4,5,6]` → `[1,4,2,5,3,6]`).
 
 14. **Generate binary numbers from 1 to N**: Given a number N, generate binary representations for all numbers from 1 to N using a queue.
 
@@ -1812,7 +1812,7 @@ class Deque<T> {
 
 16. **LRU cache with queue**: Design an LRU cache using a combination of a queue and a hash map. The queue tracks the order of access.
 
-17. **Check if a given permutation is valid for a queue**: Given two arrays â€” the original order and the dequeued order â€” check if it's possible to dequeue in that order using a queue.
+17. **Check if a given permutation is valid for a queue**: Given two arrays — the original order and the dequeued order — check if it's possible to dequeue in that order using a queue.
 
 18. **Connect n ropes with minimum cost**: Given n ropes of varying lengths, connect them into one rope with minimum cost (cost = sum of two rope lengths at each connection).
 
@@ -1834,25 +1834,25 @@ class Deque<T> {
 
 2. **Why does a circular queue waste one slot?**
    - a) Implementation error
-   - b) To distinguish empty from full âœ“
+   - b) To distinguish empty from full ✓
    - c) Performance optimization
    - d) Alignment requirement
 
 3. **Which data structure enables priority queue operations?**
    - a) Stack
-   - b) Binary heap âœ“
+   - b) Binary heap ✓
    - c) Hash table
    - d) Linked list
 
 4. **A deque allows insertion at:**
    - a) Front only
    - b) Back only
-   - c) Both ends âœ“
+   - c) Both ends ✓
    - d) Middle only
 
 5. **Which algorithm uses a queue naturally?**
    - a) DFS
-   - b) BFS âœ“
+   - b) BFS ✓
    - c) Binary search
    - d) Merge sort
 

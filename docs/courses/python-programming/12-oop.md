@@ -1,4 +1,4 @@
-﻿# Chapter 12: Object-Oriented Programming
+# Chapter 12: Object-Oriented Programming
 
 
 > **Previous:** [Modules and Packages](./11-modules.md) | **Next:** [Inheritance and Polymorphism](./13-inheritance.md)
@@ -40,7 +40,7 @@ By the end of this chapter, students will be able to:
 |---------|-------|-------------|
 |12.1 Classes and Instances||A class is a blueprint; `__init__` initialises instance state.|
 |12.2 Instance Methods vs Class Attributes||`@classmethod` receives `cls` for alternative constructors; `@staticmethod` receives nothing.|
-|12.3 @classmethod and @staticmethod||`@property` controls attribute access with getter/setter/deleter â€” validation without breaking the API.|
+|12.3 @classmethod and @staticmethod||`@property` controls attribute access with getter/setter/deleter — validation without breaking the API.|
 |12.4 @property Decorator||`__slots__` saves memory by replacing `__dict__` with a fixed array.|
 |12.5 __slots__||`@dataclass` auto-generates `__init__`, `__repr__`, `__eq__`, and more.|
 |12.6 Name Mangling||undefined|
@@ -84,7 +84,7 @@ class Dog:
     species = "Canis familiaris"  # class attribute
     
     def __init__(self, name: str, age: int):
-        """Constructor â†’ initialises instance attributes."""
+        """Constructor → initialises instance attributes."""
         self.name = name
         self.age = age
     
@@ -129,11 +129,11 @@ Counter.count = 10
 print(c2.count)       # 10
 ```
 
-Attribute lookup order: instance â†’ class â†’ parent classes.
+Attribute lookup order: instance → class → parent classes.
 
 ## 12.3 @classmethod and @staticmethod
 
-> **One-Sentence Takeaway:** `@property` controls attribute access with getter/setter/deleter â€” validation without breaking the API.
+> **One-Sentence Takeaway:** `@property` controls attribute access with getter/setter/deleter — validation without breaking the API.
 
 
 - **Instance method**: receives `self`, can access instance and class.
@@ -149,13 +149,13 @@ class Date:
     
     @classmethod
     def from_string(cls, date_str: str) -> "Date":
-        """Alternative constructor â†’ parses 'YYYY-MM-DD'."""
+        """Alternative constructor → parses 'YYYY-MM-DD'."""
         year, month, day = map(int, date_str.split("-"))
         return cls(year, month, day)
     
     @classmethod
     def today(cls) -> "Date":
-        """Alternative constructor â†’ returns today's date."""
+        """Alternative constructor → returns today's date."""
         from datetime import date
         d = date.today()
         return cls(d.year, d.month, d.day)
@@ -191,12 +191,12 @@ class Circle:
     
     @property
     def radius(self) -> float:
-        """Getter â†’ called when accessing circle.radius."""
+        """Getter → called when accessing circle.radius."""
         return self._radius
     
     @radius.setter
     def radius(self, value: float):
-        """Setter â†’ called when assigning to circle.radius."""
+        """Setter → called when assigning to circle.radius."""
         if value < 0:
             raise ValueError("Radius cannot be negative")
         self._radius = value
@@ -269,7 +269,7 @@ Use `__slots__` for classes with many instances (millions). For most cases, the 
 ## 12.6 Name Mangling
 
 > **One-Sentence Takeaway:** undefined
-> **Remember:** Name mangling (`__attr`) prevents subclass collisions â€” it is not true privacy. Single underscore `_attr` signals "internal use."
+> **Remember:** Name mangling (`__attr`) prevents subclass collisions — it is not true privacy. Single underscore `_attr` signals "internal use."
 
 
 
@@ -303,7 +303,7 @@ print(obj2.get_secret())        # 42 (from parent)
 print(obj2._SubClass__secret)   # 99
 ```
 
-Single underscore (`_secret`) is a convention meaning "internal use" â†’ no language enforcement.
+Single underscore (`_secret`) is a convention meaning "internal use" → no language enforcement.
 
 ## 12.7 @dataclass
 
@@ -382,7 +382,7 @@ Fields from the parent come first, then child fields.
 > **One-Sentence Takeaway:** undefined
 
 
-A class is callable â†’ calling it creates a new instance:
+A class is callable → calling it creates a new instance:
 
 ```python
 class Vector:
@@ -631,7 +631,7 @@ class Repository(ABC):
 ```
 ```typescript
 // Chapter 12: TypeScript Class Equivalents
-// Python: class with __init__ â†’ TypeScript: class with constructor
+// Python: class with __init__ → TypeScript: class with constructor
 class BankAccount {
   private _balance: number;
   static interestRate: number = 0.05;
@@ -640,18 +640,18 @@ class BankAccount {
     this._balance = initialBalance;
   }
 
-  // Python: @property â†’ TypeScript: getter
+  // Python: @property → TypeScript: getter
   get balance(): number {
     return this._balance;
   }
 
-  // Python: @property.setter â†’ TypeScript: setter
+  // Python: @property.setter → TypeScript: setter
   set balance(amount: number) {
     if (amount < 0) throw new Error("Balance cannot be negative");
     this._balance = amount;
   }
 
-  // Python: classmethod â†’ TypeScript: static method
+  // Python: classmethod → TypeScript: static method
   static setInterestRate(rate: number): void {
     BankAccount.interestRate = rate;
   }
@@ -673,7 +673,7 @@ const acc = new BankAccount("Alice", 1000);
 acc.deposit(500);
 console.log(acc.balance);  // 1500
 
-// Python: @dataclass â†’ TypeScript: class with constructor shorthand
+// Python: @dataclass → TypeScript: class with constructor shorthand
 class Address {
   constructor(
     public street: string,
@@ -683,7 +683,7 @@ class Address {
   ) {}
 }
 
-// Python: @staticmethod â†’ TypeScript: static method
+// Python: @staticmethod → TypeScript: static method
 class MathUtils {
   static clamp(value: number, min: number, max: number): number {
     return Math.max(min, Math.min(max, value));
@@ -696,7 +696,7 @@ console.log(MathUtils.clamp(150, 0, 100));  // 100
 
 
 ```typescript
-// Python: @property for computed attributes â†’ TypeScript: getter
+// Python: @property for computed attributes → TypeScript: getter
 class Circle {
   constructor(public radius: number) {}
   get area(): number { return Math.PI * this.radius ** 2; }
@@ -705,7 +705,7 @@ class Circle {
 const c = new Circle(5);
 console.log(c.area);  // 78.54 (computed, not stored)
 
-// Python: @staticmethod â†’ TypeScript: static method
+// Python: @staticmethod → TypeScript: static method
 class StringUtils {
   static isEmpty(s: string | null | undefined): boolean {
     return s == null || s.trim().length === 0;
@@ -714,7 +714,7 @@ class StringUtils {
 console.log(StringUtils.isEmpty(""));   // true
 console.log(StringUtils.isEmpty("a"));  // false
 
-// Python: @classmethod â†’ TypeScript: static factory method
+// Python: @classmethod → TypeScript: static factory method
 class Temperature {
   private constructor(public kelvin: number) {}
   static fromCelsius(c: number): Temperature {
@@ -728,17 +728,17 @@ class Temperature {
 const boiling = Temperature.fromCelsius(100);
 console.log(boiling.celsius);  // 100
 
-// Python: __slots__ â†’ TypeScript: class with known properties
+// Python: __slots__ → TypeScript: class with known properties
 class Point {
   constructor(
     public x: number,
     public y: number
   ) {}
   // TypeScript enforces property names at compile time
-  // (Point has only x, y â€” no dynamic properties possible)
+  // (Point has only x, y — no dynamic properties possible)
 }
 
-// Python: dataclass frozen=True â†’ TypeScript: readonly
+// Python: dataclass frozen=True → TypeScript: readonly
 class ImmutablePoint {
   constructor(
     readonly x: number,

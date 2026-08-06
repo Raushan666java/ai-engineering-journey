@@ -1,4 +1,4 @@
-﻿# Chapter 16: Container Networking
+# Chapter 16: Container Networking
 
 > **Previous:** [Database DevOps](./15-database-devops.md) | **Next:** [SRE Principles](./17-sre.md)
 
@@ -73,28 +73,28 @@ flowchart LR
 
 Container networking enables communication between containers on the same host and across hosts. Multiple networking models exist:
 
-**Bridge Networking** â€” Default Docker networking:
+**Bridge Networking** — Default Docker networking:
 - Creates a virtual bridge (docker0) on the host
 - Assigns IP addresses from a private subnet (172.17.0.0/16)
 - NAT enables outbound connectivity
 - Containers communicate via IP or DNS names (--link)
 - Port mapping (-p 8080:80) exposes container ports on the host
 
-**Overlay Networking** â€” Encapsulates container traffic across hosts:
+**Overlay Networking** — Encapsulates container traffic across hosts:
 - Uses VXLAN (Virtual Extensible LAN) or similar tunneling
 - Encapsulates Layer 2 frames in UDP packets
 - Enables multi-host container communication without physical network changes
 - Docker overlay, Flannel VXLAN, Calico IPIP, and Weave use this model
 - Trade-off: encapsulation adds ~5-10% CPU overhead
 
-**Host Networking** â€” Container uses the host's network stack:
+**Host Networking** — Container uses the host's network stack:
 - No network isolation between container and host
-- No NAT overhead â€” full native performance
+- No NAT overhead — full native performance
 - Ports cannot be remapped (container port = host port)
 - Best for latency-sensitive workloads (e.g., real-time services)
 - Security consideration: container has full host network access
 
-**MACVLAN/IPVLAN** â€” Assigns MAC or IP addresses from the physical network:
+**MACVLAN/IPVLAN** — Assigns MAC or IP addresses from the physical network:
 - Containers appear as separate hosts with their own IPs
 - Best performance (no NAT, no encapsulation)
 - Requires physical network configuration (switch port allocation)
@@ -114,16 +114,16 @@ Container networking enables communication between containers on the same host a
 CNI is a specification and library for configuring network interfaces in Linux containers. Kubernetes uses CNI plugins for pod networking.
 
 **CNI Specification Operations:**
-- **ADD** â€” Add container to network: allocate IP, create interface, configure routes
-- **DEL** â€” Remove container from network: clean up IP allocation, delete interface
-- **CHECK** â€” Verify container network is correctly configured (idempotent)
-- **VERSION** â€” Report CNI specification version
+- **ADD** — Add container to network: allocate IP, create interface, configure routes
+- **DEL** — Remove container from network: clean up IP allocation, delete interface
+- **CHECK** — Verify container network is correctly configured (idempotent)
+- **VERSION** — Report CNI specification version
 
 **Plugin Categories:**
-- **Main plugins** â€” Bridge, VLAN, MACVLAN, IPVLAN, IPvlan
-- **IPAM plugins** â€” host-local (static pool), dhcp (external DHCP), whereabout (dynamic)
-- **Meta plugins** â€” tuning (sysctl), portmap (port forwarding), bandwidth (traffic shaping), firewall (iptables rules)
-- **Third-party plugins** â€” Flannel, Calico, Weave, Cilium, Antrea
+- **Main plugins** — Bridge, VLAN, MACVLAN, IPVLAN, IPvlan
+- **IPAM plugins** — host-local (static pool), dhcp (external DHCP), whereabout (dynamic)
+- **Meta plugins** — tuning (sysctl), portmap (port forwarding), bandwidth (traffic shaping), firewall (iptables rules)
+- **Third-party plugins** — Flannel, Calico, Weave, Cilium, Antrea
 
 **CNI Configuration:**
 ```json
@@ -152,13 +152,13 @@ CNI is a specification and library for configuring network interfaces in Linux c
 ### 16.3 CNI Plugins Compared
 
 
-**Flannel** â€” Simplest overlay network:
+**Flannel** — Simplest overlay network:
 - Uses VXLAN encapsulation (default), host-gw, or UDP
 - No network policy support
 - Simple deployment: `kubectl apply -f kube-flannel.yml`
 - Best for: basic connectivity, small clusters, development
 
-**Calico** â€” Full-featured CNI with advanced policy:
+**Calico** — Full-featured CNI with advanced policy:
 - Uses BGP for routing (no encapsulation in pure L3 mode)
 - Supports VXLAN and IPIP overlay modes
 - Fine-grained network policies (Kubernetes NetworkPolicy + Calico extensions)
@@ -166,14 +166,14 @@ CNI is a specification and library for configuring network interfaces in Linux c
 - Service graph for observability
 - Best for: security-conscious, production environments
 
-**Weave Net** â€” Mesh-based overlay:
+**Weave Net** — Mesh-based overlay:
 - Built-in DNS-based service discovery
 - Default encryption (NaCl cryptography)
 - Supports partial connectivity and firewall traversal
 - Simple setup but lower performance than Calico or Cilium
 - Best for: small to medium clusters requiring encryption
 
-**Cilium** â€” eBPF-based networking and security:
+**Cilium** — eBPF-based networking and security:
 - Replaces kube-proxy with eBPF for high-performance service handling
 - L3-L7 network policies (HTTP, gRPC, Kafka, DNS-aware policies)
 - Hubble for observability (flow logs, service map, metrics)
@@ -194,13 +194,13 @@ CNI is a specification and library for configuring network interfaces in Linux c
 A service mesh manages inter-service communication in a microservice architecture. It adds observability, traffic management, and security without modifying application code.
 
 **Architecture:**
-- **Data Plane** â€” Sidecar proxies (Envoy) deployed alongside each service. Handle all traffic in/out of the service. Enforce routing, retries, timeouts, circuit breaking, and mTLS.
-- **Control Plane** â€” Manages proxy configuration, certificate issuance, policy distribution, and telemetry collection.
+- **Data Plane** — Sidecar proxies (Envoy) deployed alongside each service. Handle all traffic in/out of the service. Enforce routing, retries, timeouts, circuit breaking, and mTLS.
+- **Control Plane** — Manages proxy configuration, certificate issuance, policy distribution, and telemetry collection.
 
-**Istio** â€” Most feature-rich service mesh:
-- **Pilot** â€” Traffic management: virtual services, destination rules, service discovery
-- **Citadel** â€” Security: mTLS certificate issuance and rotation
-- **Galley** â€” Configuration validation and distribution
+**Istio** — Most feature-rich service mesh:
+- **Pilot** — Traffic management: virtual services, destination rules, service discovery
+- **Citadel** — Security: mTLS certificate issuance and rotation
+- **Galley** — Configuration validation and distribution
 - Uses Envoy as the default proxy (sidecar injection via mutating webhook)
 
 ```yaml
@@ -232,8 +232,8 @@ spec:
           weight: 10
 ```
 
-**Linkerd** â€” Lighter-weight service mesh:
-- Rust-based proxy (linkerd-proxy) instead of Envoy â€” 1/10th the resource usage
+**Linkerd** — Lighter-weight service mesh:
+- Rust-based proxy (linkerd-proxy) instead of Envoy — 1/10th the resource usage
 - Simpler to install and operate (one command, no complex CRDs)
 - Features: mTLS, HTTP/gRPC load balancing, retries, timeouts, metrics
 - Limited traffic management compared to Istio
@@ -244,7 +244,7 @@ spec:
 
 Ingress controllers implement the Kubernetes Ingress specification and provide HTTP routing, TLS termination, and traffic management at the cluster edge.
 
-**NGINX Ingress Controller** â€” Most widely adopted:
+**NGINX Ingress Controller** — Most widely adopted:
 - Uses NGINX as the reverse proxy
 - Path-based routing, host-based routing, TLS termination
 - Annotations for rate limiting, CORS, rewrite, authentication
@@ -285,18 +285,18 @@ spec:
                   number: 8080
 ```
 
-**Traefik** â€” Dynamic, auto-discovering reverse proxy:
+**Traefik** — Dynamic, auto-discovering reverse proxy:
 - Automatically detects services from Kubernetes, Docker, Consul
 - Built-in dashboard and metrics
 - Supports automatic HTTPS with Let's Encrypt
 - Middleware for rate limiting, circuit breaking, authentication
 
-**HAProxy Ingress** â€” High-performance ingress:
+**HAProxy Ingress** — High-performance ingress:
 - Advanced load balancing algorithms (least connections, first, source)
 - Health checks, rate limiting, connection queuing
 - Low resource usage at high throughput
 
-**Envoy** â€” High-performance proxy:
+**Envoy** — High-performance proxy:
 - Foundation for Istio and other service meshes
 - Can be used as standalone ingress controller (Envoy Gateway project)
 - Feature-rich but complex to configure manually
@@ -308,9 +308,9 @@ spec:
 CoreDNS is the default DNS service for Kubernetes. It provides service discovery within the cluster.
 
 **DNS Naming Convention:**
-- `service.namespace.svc.cluster.local` â€” Full DNS name
-- `service.namespace` â€” Within cluster
-- `service` â€” Within the same namespace
+- `service.namespace.svc.cluster.local` — Full DNS name
+- `service.namespace` — Within cluster
+- `service` — Within the same namespace
 
 **CoreDNS Configuration:**
 CoreDNS configuration is stored in a ConfigMap (`coredns` in `kube-system`). Custom entries, stub domains, and upstream DNS resolvers can be configured.
@@ -351,9 +351,9 @@ spec:
 ```
 
 **Network Policy Rules:**
-- **podSelector** â€” Selects pods within the same namespace
-- **namespaceSelector** â€” Selects entire namespaces
-- **ipBlock** â€” Selects specific CIDR ranges (external IPs)
+- **podSelector** — Selects pods within the same namespace
+- **namespaceSelector** — Selects entire namespaces
+- **ipBlock** — Selects specific CIDR ranges (external IPs)
 - Multiple rules are OR'd (any matching rule allows traffic)
 - Rules within a rule are AND'd (all conditions must match)
 
@@ -373,21 +373,21 @@ Mutual TLS encrypts and authenticates service-to-service communication:
 
 Egress controls restrict outbound traffic from the cluster:
 
-- **NetworkPolicy egress rules** â€” Kubernetes-native egress restrictions
-- **Egress gateway** â€” Istio egress gateways for controlled external traffic through dedicated proxy instances
-- **NAT gateway** â€” Cloud provider NAT for controlled outbound access from private subnets
-- **Proxy/Firewall** â€” Explicit proxy for external access logging and control
+- **NetworkPolicy egress rules** — Kubernetes-native egress restrictions
+- **Egress gateway** — Istio egress gateways for controlled external traffic through dedicated proxy instances
+- **NAT gateway** — Cloud provider NAT for controlled outbound access from private subnets
+- **Proxy/Firewall** — Explicit proxy for external access logging and control
 
 ### 16.10 API Gateways
 
 
 API gateways provide a single entry point for external API traffic:
 
-- **Kong** â€” Built on OpenResty/Lua. Plugin ecosystem (authentication, rate limiting, caching, logging, IP restriction).
-- **Kong Gateway** â€” Kubernetes-native via Ingress Controller and Gateway API
-- **Apigee (GCP)** â€” Full-featured API management with developer portal, analytics, monetization
-- **AWS API Gateway** â€” AWS-managed gateway with Lambda integration, caching, throttling, WAF
-- **Azure API Management** â€” Enterprise gateway with developer portal, policy engine, versioning
+- **Kong** — Built on OpenResty/Lua. Plugin ecosystem (authentication, rate limiting, caching, logging, IP restriction).
+- **Kong Gateway** — Kubernetes-native via Ingress Controller and Gateway API
+- **Apigee (GCP)** — Full-featured API management with developer portal, analytics, monetization
+- **AWS API Gateway** — AWS-managed gateway with Lambda integration, caching, throttling, WAF
+- **Azure API Management** — Enterprise gateway with developer portal, policy engine, versioning
 
 ---
 
@@ -703,10 +703,10 @@ class LoadBalancerValidator {
     }
 
     if (config.backendPool.length === 0) {
-      errors.push('Backend pool is empty â€” no targets to route traffic to');
+      errors.push('Backend pool is empty — no targets to route traffic to');
     }
     if (config.backendPool.length === 1) {
-      warnings.push('Only one backend target â€” no redundancy');
+      warnings.push('Only one backend target — no redundancy');
     }
 
     return { valid: errors.length === 0, errors, warnings };

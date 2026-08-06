@@ -1,4 +1,4 @@
-﻿# Java Core Interview Q&A
+# Java Core Interview Q&A
 
 > **Previous:** [Observability](./55-observability.md) | **Next:** [Spring Framework Interview Q&amp;A](./57-interview-spring.md)
 
@@ -83,7 +83,7 @@ public class PolymorphismExample {
 
 The JVM uses a vtable per class. At runtime, it looks up the method in the actual object's class. Static/private/final methods and fields are not polymorphic.
 
-### Q2: Inheritance vs Composition â†’ when to use which?
+### Q2: Inheritance vs Composition → when to use which?
 
 
 **Answer:** Inheritance models is-a (Dog extends Animal). Composition models has-a (Car has Engine). Favor composition over inheritance because inheritance breaks encapsulation.
@@ -582,7 +582,7 @@ public class ForkJoinDemo {
 
 invokeAll() is optimized: forks tasks, runs current thread's task while waiting (stealing). ManagedBlocker handles blocking tasks within FJP. ForkJoinPool.commonPool() is default for parallel streams and CompletableFuture.
 
-### Q17: CompletableFuture â†’ chaining, composition, error handling.
+### Q17: CompletableFuture → chaining, composition, error handling.
 
 
 **Answer:** CompletableFuture enables declarative non-blocking async composition with transformation, combination, and error recovery.
@@ -639,7 +639,7 @@ thenApply vs thenApplyAsync: thenApply runs on completing thread; thenApplyAsync
 ### Q18: Virtual Threads (Project Loom).
 
 
-**Answer:** Virtual threads (Java 21+) are lightweight JVM-managed threads. No 1:1 OS mapping â†’ millions on one platform thread. Blocking yields the carrier.
+**Answer:** Virtual threads (Java 21+) are lightweight JVM-managed threads. No 1:1 OS mapping → millions on one platform thread. Blocking yields the carrier.
 
 ```java
 import java.util.concurrent.*;
@@ -936,10 +936,10 @@ public class MethodRefDemo {
 
 Method references require compatible functional interface. Constructor refs work with any matching functional interface. Array constructor ref: Type[]::new.
 
-### Q27: Generics â†’ type erasure.
+### Q27: Generics → type erasure.
 
 
-**Answer:** Java generics use erasure â†’ type info only at compile time. Erased to bounds (or Object) in bytecode. Compiler inserts casts.
+**Answer:** Java generics use erasure → type info only at compile time. Erased to bounds (or Object) in bytecode. Compiler inserts casts.
 
 ```java
 import java.util.*;
@@ -1639,13 +1639,13 @@ CAS: CPU instruction (CMPXCHG on x86). Three operands: memory location, expected
 ```java
 public class StringPerf {
     public static void main(String[] args) {
-        // String concatenation in loop â†’ O(n^2)
+        // String concatenation in loop → O(n^2)
         long start = System.nanoTime();
         String s = "";
         for(int i=0;i<10000;i++) s += i;
         System.out.println("String +=: "+(System.nanoTime()-start)/1_000_000+"ms");
 
-        // StringBuilder â†’ O(n)
+        // StringBuilder → O(n)
         start = System.nanoTime();
         StringBuilder sb = new StringBuilder(50000);
         for(int i=0;i<10000;i++) sb.append(i);
@@ -1659,7 +1659,7 @@ public class StringPerf {
 
         // Compiler optimization: String + is StringBuilder under the hood
         // Only for single expression: "a"+i+"b" compiles to new StringBuilder().append("a").append(i).append("b")
-        // In loops: compiles creates new StringBuilder per iteration â†’ terrible
+        // In loops: compiles creates new StringBuilder per iteration → terrible
     }
 }
 ```
@@ -1695,7 +1695,7 @@ public class EqualsHashCode {
         }
     }
 
-    // Broken: no hashCode â†’ HashMap lookup fails
+    // Broken: no hashCode → HashMap lookup fails
     static class BadUser {
         String id;
         BadUser(String id) { this.id=id; }
@@ -1703,7 +1703,7 @@ public class EqualsHashCode {
             if(!(o instanceof BadUser other)) return false;
             return Objects.equals(id, other.id);
         }
-        // No hashCode â†’ uses Object.hashCode() (identity)
+        // No hashCode → uses Object.hashCode() (identity)
     }
 
     public static void main(String[] args) {
@@ -1789,7 +1789,7 @@ public class NIO2Demo {
 
 Path.of() / Paths.get(). Files.readString/writeString (Java 11+). Files.walk for directory tree traversal. WatchService monitors directory changes. FileChannel.transferTo/transferFrom for zero-copy (OS-level, no user-space buffering). MappedByteBuffer for memory-mapped files.
 
-### Q46: Reflection API â†’ use cases and performance implications.
+### Q46: Reflection API → use cases and performance implications.
 
 
 **Answer:** Reflection enables runtime inspection and invocation of classes, methods, fields, and constructors. Used by frameworks (Spring, Hibernate, Jackson), serialization, and dependency injection. Performance is slower due to JIT deoptimization, bounds checks, and boxing.
@@ -1909,7 +1909,7 @@ public class ReferenceTypes {
 
 SoftReference: memory-sensitive caches (e.g., image cache evicted before OOM). WeakReference: WeakHashMap, canonical mappings (class Metadata -> ClassLoader). PhantomReference: deterministic cleanup of native resources (vs unreliable finalize()). ReferenceQueue: allows polling or blocking wait for cleared references.
 
-### Q48: Garbage collection deep dive â†’ G1, ZGC, Shenandoah.
+### Q48: Garbage collection deep dive → G1, ZGC, Shenandoah.
 
 
 **Answer:** G1 (default): region-based, concurrent marking, compaction. ZGC: colored pointers, load barriers, multi-TB heaps, sub-1ms pauses. Shenandoah: forwarding pointers, concurrent compaction, no stop-the-world evacuation.
@@ -2149,7 +2149,7 @@ public class VarDemo {
 
     // OK in lambda expressions
     interface Processor {
-        void process(var input); // Not allowed â†’ lambda params only!
+        void process(var input); // Not allowed → lambda params only!
     }
 
     // OK with anonymous class
@@ -2163,7 +2163,7 @@ public class VarDemo {
 
 var requires initializer on same line. Cannot infer to null, cannot use without assignment. Diamond operator with var: var list = new ArrayList&lt;>() infers ArrayList<Object&gt;. Use var when it improves readability, not for primitive-like types (int, long) where reader needs to see exact type. Good for complex generics, streams, anonymous classes.
 
-### Q52: Annotations â†’ retention policies, processing, and runtime access.
+### Q52: Annotations → retention policies, processing, and runtime access.
 
 
 **Answer:** Annotations provide metadata for code. Retention: SOURCE (compile only, @Override), CLASS (in bytecode but not runtime, @NonNull), RUNTIME (accessible via reflection, @RequestMapping). Processed by annotation processors (compile-time) or reflection (runtime).
@@ -2254,7 +2254,7 @@ public class AnnotationDemo {
 }
 ```
 
-RetentionPolicy.SOURCE: @Override, @SuppressWarnings â†’ discarded after compile. CLASS: bytecode only, no reflection (lombok @Getter, @Setter). RUNTIME: retained for reflection (Spring, JPA, Jackson). @Target: TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, ANNOTATION_TYPE, PACKAGE. Annotation processor (AbstractProcessor) generates code at compile time â†’ used by lombok, MapStruct, Dagger.
+RetentionPolicy.SOURCE: @Override, @SuppressWarnings → discarded after compile. CLASS: bytecode only, no reflection (lombok @Getter, @Setter). RUNTIME: retained for reflection (Spring, JPA, Jackson). @Target: TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, ANNOTATION_TYPE, PACKAGE. Annotation processor (AbstractProcessor) generates code at compile time → used by lombok, MapStruct, Dagger.
 
 ## Concept Comparison Table
 

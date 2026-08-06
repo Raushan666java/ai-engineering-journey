@@ -1,6 +1,6 @@
-﻿# Chapter 32: Marketing & Advertising Agents
+# Chapter 32: Marketing & Advertising Agents
 
-> **Previous:** [HR & Recruitment â€” AI-Powered Talent Agents](./31-hr-recruitment.md) | **Next:** [Customer Service & Support Agents](./33-customer-service.md)
+> **Previous:** [HR & Recruitment — AI-Powered Talent Agents](./31-hr-recruitment.md) | **Next:** [Customer Service & Support Agents](./33-customer-service.md)
 
 
 
@@ -13,7 +13,7 @@
 - Build a campaign optimization agent that analyzes performance data and recommends budget allocation strategies
 - Implement audience segmentation using behavioral data combined with AI-powered clustering
 - Construct a content generation pipeline that produces blog posts, social media copy, and email variants
-- Automate A/B testing workflows â†’ test design, deployment, statistical analysis, and winner selection
+- Automate A/B testing workflows → test design, deployment, statistical analysis, and winner selection
 - Develop an SEO analysis agent that audits pages, analyzes keywords, and recommends content improvements
 - Build a social media scheduling agent that manages posts across platforms and monitors engagement
 - Implement lead scoring and nurturing agents that rank prospects and trigger automated workflows
@@ -137,10 +137,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Marketing Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/32-marketing.png)
 
@@ -472,7 +472,7 @@ class ContentAsset extends Model
 ### 32.2 Campaign Optimization Agents
 
 
-Campaign optimization agents analyze real-time performance data â†’ impressions, clicks, conversions, cost-per-acquisition â†’ and recommend budget reallocation across channels and ad sets. The agent combines rule-based bid adjustments with AI-driven opportunity detection.
+Campaign optimization agents analyze real-time performance data → impressions, clicks, conversions, cost-per-acquisition → and recommend budget reallocation across channels and ad sets. The agent combines rule-based bid adjustments with AI-driven opportunity detection.
 
 ```php
 <?php
@@ -809,7 +809,7 @@ class OptimizeCampaignsCommand extends Command
 ### 32.3 Audience Segmentation & Targeting
 
 
-Audience segmentation agents cluster users based on behavioral data â†’ page views, purchase history, email engagement, content consumption â†’ then assign each user to a segment with a confidence score. The agent uses AI to identify natural groupings that rule-based filters would miss.
+Audience segmentation agents cluster users based on behavioral data → page views, purchase history, email engagement, content consumption → then assign each user to a segment with a confidence score. The agent uses AI to identify natural groupings that rule-based filters would miss.
 
 ```php
 <?php
@@ -1141,7 +1141,7 @@ PROMPT;
 ### 32.4 Content Generation Pipelines
 
 
-Content generation agents produce marketing copy across formats â†’ blog posts, social media updates, email campaigns â†’ with variant generation for A/B testing. Each generation is parameterized by brand voice, target audience, and channel-specific constraints.
+Content generation agents produce marketing copy across formats → blog posts, social media updates, email campaigns → with variant generation for A/B testing. Each generation is parameterized by brand voice, target audience, and channel-specific constraints.
 
 ```php
 <?php
@@ -1462,7 +1462,7 @@ class GenerateMarketingContentCommand extends Command
         $this->newLine();
 
         foreach ($results as $i => $result) {
-            $this->line("  [" . ($i + 1) . "] {$result['title']} ({$result['word_count']} words) â†’ ID: {$result['content_id']}");
+            $this->line("  [" . ($i + 1) . "] {$result['title']} ({$result['word_count']} words) → ID: {$result['content_id']}");
         }
 
         $this->newLine();
@@ -2808,7 +2808,7 @@ PROMPT;
 ### 32.9 Marketing Analytics & Reporting
 
 
-The marketing analytics agent aggregates data from multiple sources â†’ ad platforms, email providers, web analytics â†’ and generates automated performance reports. It detects trends, benchmarks against historical data, and highlights anomalies.
+The marketing analytics agent aggregates data from multiple sources → ad platforms, email providers, web analytics → and generates automated performance reports. It detects trends, benchmarks against historical data, and highlights anomalies.
 
 ```php
 <?php
@@ -3323,7 +3323,7 @@ class GenerateMarketingReportCommand extends Command
 
         $this->info('Recommendations:');
         foreach ($report['recommendations'] as $rec) {
-            $this->line("  [{$rec['priority']}] {$rec['action']} â†’ {$rec['expected_impact']}");
+            $this->line("  [{$rec['priority']}] {$rec['action']} → {$rec['expected_impact']}");
         }
 
         if ($this->option('email')) {
@@ -3679,17 +3679,17 @@ class GenerateMarketingReportCommand extends Command
 
 Marketing and advertising platforms built on Laravel 13 benefit enormously from AI agents that automate the repetitive, data-intensive aspects of modern marketing operations. This chapter covered nine interconnected domains:
 
-- **Marketing Data Models** â†’ Campaign, Audience, Lead, Content, and Analytics models with Eloquent relationships, scopes, and aggregate methods form the foundation for any marketing platform.
-- **Campaign Optimization** â†’ Agents that analyze channel-level performance metrics and recommend budget reallocations using rule-based efficiency scoring augmented with AI opportunity detection.
-- **Audience Segmentation** â†’ AI-driven behavioral clustering that groups leads into meaningful segments â†’ high-value active buyers, engaged prospects, warm tire-kickers, lapsed contacts, and cold audiences.
-- **Content Generation** â†’ Pipelines that produce blog posts, social media updates, and email copy with variant generation for A/B testing, respecting brand voice and channel-specific constraints.
-- **A/B Testing Automation** â†’ Agents that design experiments, calculate required sample sizes, track results with statistical rigor (z-tests, p-values), and declare winners based on significance thresholds.
-- **SEO Analysis** â†’ On-page audits that evaluate keyword usage, content structure, readability, and technical factors, then output prioritized improvement plans with estimated traffic impact.
-- **Social Media Management** â†’ Scheduling agents that time posts for optimal engagement, monitor cross-platform performance, and surface content theme suggestions based on what resonates.
-- **Lead Scoring & Nurturing** â†’ Multi-factor scoring models that weigh email engagement, behavioral signals, recency, and negative indicators to classify leads into cold/warm/hot tiers with automated nurture sequences.
-- **Marketing Analytics & Reporting** â†’ Aggregation agents that pull metrics from all marketing sources, calculate trends and anomalies, and generate natural-language executive summaries with data-driven action items.
+- **Marketing Data Models** → Campaign, Audience, Lead, Content, and Analytics models with Eloquent relationships, scopes, and aggregate methods form the foundation for any marketing platform.
+- **Campaign Optimization** → Agents that analyze channel-level performance metrics and recommend budget reallocations using rule-based efficiency scoring augmented with AI opportunity detection.
+- **Audience Segmentation** → AI-driven behavioral clustering that groups leads into meaningful segments → high-value active buyers, engaged prospects, warm tire-kickers, lapsed contacts, and cold audiences.
+- **Content Generation** → Pipelines that produce blog posts, social media updates, and email copy with variant generation for A/B testing, respecting brand voice and channel-specific constraints.
+- **A/B Testing Automation** → Agents that design experiments, calculate required sample sizes, track results with statistical rigor (z-tests, p-values), and declare winners based on significance thresholds.
+- **SEO Analysis** → On-page audits that evaluate keyword usage, content structure, readability, and technical factors, then output prioritized improvement plans with estimated traffic impact.
+- **Social Media Management** → Scheduling agents that time posts for optimal engagement, monitor cross-platform performance, and surface content theme suggestions based on what resonates.
+- **Lead Scoring & Nurturing** → Multi-factor scoring models that weigh email engagement, behavioral signals, recency, and negative indicators to classify leads into cold/warm/hot tiers with automated nurture sequences.
+- **Marketing Analytics & Reporting** → Aggregation agents that pull metrics from all marketing sources, calculate trends and anomalies, and generate natural-language executive summaries with data-driven action items.
 
-Each agent follows the same architectural pattern: implement the `Agent` contract, define instructions for the AI model, combine deterministic business logic with AI-powered insight generation, and persist results through Laravel's Eloquent models. This hybrid approach gives you the reliability of rule-based computation with the flexibility of AI reasoning â†’ a combination ideally suited for the complexity of modern marketing operations.
+Each agent follows the same architectural pattern: implement the `Agent` contract, define instructions for the AI model, combine deterministic business logic with AI-powered insight generation, and persist results through Laravel's Eloquent models. This hybrid approach gives you the reliability of rule-based computation with the flexibility of AI reasoning → a combination ideally suited for the complexity of modern marketing operations.
 
 ---
 

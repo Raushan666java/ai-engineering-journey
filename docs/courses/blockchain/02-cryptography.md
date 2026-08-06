@@ -1,4 +1,4 @@
-﻿# Chapter 2: Cryptography for Blockchain
+# Chapter 2: Cryptography for Blockchain
 
 > **Previous:** [Chapter 1: Introduction to Blockchain](./01-introduction.md) | **Next:** [Chapter 3: Consensus Mechanisms](./03-consensus.md)
 
@@ -7,7 +7,7 @@
 ## Learning Objectives
 
 - Explain the properties of cryptographic hash functions including preimage resistance and collision resistance
-- Understand the Merkle-DamgÃ¥rd construction used in SHA-256
+- Understand the Merkle-Damgård construction used in SHA-256
 - Describe the role of Public Key Infrastructure (PKI) and Digital Signatures (ECDSA)
 - Construct and verify a Merkle Tree from a set of transactions
 - Explain the mathematics behind elliptic curve cryptography at a conceptual level
@@ -37,10 +37,10 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | Hash Functions | Deterministic, preimage resistant, collision resistant | Foundation of blockchain immutability |
-| Merkle-DamgÃ¥rd | Construction pattern for SHA-256 | Enables streaming hash of arbitrary-length input |
+| Merkle-Damgård | Construction pattern for SHA-256 | Enables streaming hash of arbitrary-length input |
 | Public Key Cryptography | Asymmetric keys for identity and ownership | Private key signs, public key verifies |
 | Digital Signatures | Authentication, non-repudiation, integrity | Mathematical proof of ownership without revealing the key |
-| Merkle Trees | Binary tree of hashes summarizes all transactions | Enables SPV â€” verify a transaction without downloading the full chain |
+| Merkle Trees | Binary tree of hashes summarizes all transactions | Enables SPV — verify a transaction without downloading the full chain |
 | ECC | Elliptic curve math for key generation | Smaller keys than RSA for equivalent security |
 | Hash Chains | Sequential hashing links blocks | Immutable history, tamper evidence |
 
@@ -48,7 +48,7 @@
 
 ```mermaid
 flowchart LR
-    A[Hash Functions] --> B[SHA-256 & Merkle-DamgÃ¥rd]
+    A[Hash Functions] --> B[SHA-256 & Merkle-Damgård]
     B --> C[Hash Properties]
     C --> D[Public Key Cryptography]
     D --> E[Elliptic Curve Cryptography]
@@ -92,11 +92,11 @@ flowchart LR
     O2 --> note
 ```
 
-### SHA-256 and the Merkle-DamgÃ¥rd Construction
+### SHA-256 and the Merkle-Damgård Construction
 
 SHA-256 (Secure Hash Algorithm 256-bit) is the primary hash function used in Bitcoin and many other blockchains. It belongs to the SHA-2 family and produces a 256-bit (32-byte) output.
 
-SHA-256 uses the **Merkle-DamgÃ¥rd construction**, which works as follows:
+SHA-256 uses the **Merkle-Damgård construction**, which works as follows:
 
 1. **Padding:** The input message is padded to a multiple of 512 bits.
 2. **Block Processing:** The padded message is divided into 512-bit blocks.
@@ -194,7 +194,7 @@ This smaller key size makes ECC ideal for blockchain, where storage and bandwidt
 
 ### Digital Signatures
 
-A digital signature (e.g., ECDSA â€” Elliptic Curve Digital Signature Algorithm) provides:
+A digital signature (e.g., ECDSA — Elliptic Curve Digital Signature Algorithm) provides:
 
 1. **Authentication:** Proves the transaction came from the owner of the private key.
 2. **Non-repudiation:** The signer cannot deny signing the transaction.
@@ -219,7 +219,7 @@ Verification uses the public key to confirm the signature was created by the cor
 | BLS | 48 bytes | 48 bytes | Yes | Very compact, efficient | Ethereum 2.0 |
 | EdDSA (Ed25519) | 32 bytes | 64 bytes | No | Fast, constant-time | Solana, Cardano |
 
-**Schnorr signatures** were introduced to Bitcoin via the Taproot upgrade (2021). Their key advantage is **signature aggregation** â€” multiple signatures can be combined into one, reducing transaction size and improving privacy.
+**Schnorr signatures** were introduced to Bitcoin via the Taproot upgrade (2021). Their key advantage is **signature aggregation** — multiple signatures can be combined into one, reducing transaction size and improving privacy.
 
 **BLS signatures** (Boneh-Lynn-Shacham) are used in Ethereum 2.0 for the beacon chain. They allow aggregation of thousands of validator signatures into a single 48-byte signature, enabling efficient consensus with 100,000+ validators.
 
@@ -245,7 +245,7 @@ flowchart TB
     H4 --> H34
 ```
 
-This allows for **SPV (Simplified Payment Verification)** â€” a light client can prove a transaction is included in a block by providing only `log2(n)` hashes (a Merkle proof), rather than downloading all `n` transactions.
+This allows for **SPV (Simplified Payment Verification)** — a light client can prove a transaction is included in a block by providing only `log2(n)` hashes (a Merkle proof), rather than downloading all `n` transactions.
 
 ```mermaid
 sequenceDiagram
@@ -306,7 +306,7 @@ const proof: MerkleProof = {
 console.log(verifyMerkleProof(proof)); // true
 ```
 
-> **One-Sentence Takeaway:** Cryptographic hash functions are the glue that makes blockchain tamper-evident â€” any change to any transaction propagates up the Merkle tree to change the Merkle root, which changes the block hash, breaking the chain.
+> **One-Sentence Takeaway:** Cryptographic hash functions are the glue that makes blockchain tamper-evident — any change to any transaction propagates up the Merkle tree to change the Merkle root, which changes the block hash, breaking the chain.
 
 ---
 
@@ -369,9 +369,9 @@ function verifySignature(
 }
 ```
 
-> **Warning:** A SHA-256 hash collision would be catastrophic for blockchain â€” it would allow an attacker to create a different input with the same hash, breaking the chain's integrity. This is why SHA-256's collision resistance is constantly monitored by the cryptographic community.
+> **Warning:** A SHA-256 hash collision would be catastrophic for blockchain — it would allow an attacker to create a different input with the same hash, breaking the chain's integrity. This is why SHA-256's collision resistance is constantly monitored by the cryptographic community.
 
-> **Pro Tip:** Never share your private key with anyone â€” it is the sole proof of ownership of blockchain assets. Hardware wallets keep private keys offline and are the gold standard for security. For ECDSA specifically, never reuse a nonce `k` â€” it leaks the private key.
+> **Pro Tip:** Never share your private key with anyone — it is the sole proof of ownership of blockchain assets. Hardware wallets keep private keys offline and are the gold standard for security. For ECDSA specifically, never reuse a nonce `k` — it leaks the private key.
 
 ---
 
@@ -397,7 +397,7 @@ function verifySignature(
 | **Key Pair** | Private key ? Public key ? Address | Each transformation is one-way |
 | **Signature Scheme** | ECDSA (Bitcoin), secp256k1 curve | Schnorr signatures (Taproot) are newer |
 | **Merkle Tree** | Leaf = tx hash, Root = Merkle root | Proof requires only log2(n) hashes |
-| **ECC Security** | 256-bit ECC Ëœ 3072-bit RSA | Smaller keys, faster operations |
+| **ECC Security** | 256-bit ECC ˜ 3072-bit RSA | Smaller keys, faster operations |
 | **SHA-256** | 256-bit output, 64 rounds | Part of SHA-2 family |
 | **Block Cipher** | AES is used in some L2 protocols | Not typically used in L1 |
 
@@ -448,7 +448,7 @@ function verifySignature(
 **B) The public key, the message, and the signature.** Anyone can verify a signature using the signer's public key, the original message, and the signature itself. The private key is never needed for verification.
 </details>
 
-4. What makes the Merkle-DamgÃ¥rd construction important for SHA-256?
+4. What makes the Merkle-Damgård construction important for SHA-256?
    - A) It makes SHA-256 quantum-resistant
    - B) It allows hashing arbitrary-length inputs using a fixed-size compression function
    - C) It makes SHA-256 reversible
@@ -456,7 +456,7 @@ function verifySignature(
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) It allows hashing arbitrary-length inputs using a fixed-size compression function.** The Merkle-DamgÃ¥rd construction pads the input to a multiple of the block size and processes it through iterative applications of the compression function.
+**B) It allows hashing arbitrary-length inputs using a fixed-size compression function.** The Merkle-Damgård construction pads the input to a multiple of the block size and processes it through iterative applications of the compression function.
 </details>
 
 5. What is the key advantage of Schnorr signatures over ECDSA?
@@ -551,20 +551,20 @@ flowchart TB
 
 ### Digital Signature Sign and Verify Flow
 
-Elliptic curve digital signatures bind a signer's public key to a message. The private key produces the signature; the public key verifies it â€” without the private key ever being transmitted.
+Elliptic curve digital signatures bind a signer's public key to a message. The private key produces the signature; the public key verifies it — without the private key ever being transmitted.
 
 ```mermaid
 flowchart LR
     subgraph Signer["Signer (Alice)"]
         direction TB
         A1["Message M"] --> A2["Hash h=H(M)"] --> A3["Pick nonce k"]
-        A3 --> A4["R=kÃ—G"] --> A5["s=k?Â¹(h+rÂ·sk)"] --> A6["Sig (r,s)"]
+        A3 --> A4["R=k×G"] --> A5["s=k?¹(h+r·sk)"] --> A6["Sig (r,s)"]
     end
     subgraph Verifier["Verifier (Bob)"]
         direction TB
-        B1["Message M"] --> B2["Hash h=H(M)"] --> B3["w=s?Â¹"]
-        B3 --> B4["u1=hÂ·w"] --> B5["u2=rÂ·w"]
-        B5 --> B6["P=u1Â·G+u2Â·PK"] --> B7["Accept P.x=r?"]
+        B1["Message M"] --> B2["Hash h=H(M)"] --> B3["w=s?¹"]
+        B3 --> B4["u1=h·w"] --> B5["u2=r·w"]
+        B5 --> B6["P=u1·G+u2·PK"] --> B7["Accept P.x=r?"]
     end
     AliceSK["Private Key"] --> A5
     AlicePK["Public Key"] --> B6
@@ -850,14 +850,14 @@ export { Processor, Task }
 - Merkle Trees provide an efficient way to verify transaction inclusion in a block.
 - Cryptography replaces the need for a central trusted authority with mathematical certainty.
 - ECC provides strong security with smaller key sizes than RSA.
-- SHA-256 uses the Merkle-DamgÃ¥rd construction to process arbitrary-length inputs.
+- SHA-256 uses the Merkle-Damgård construction to process arbitrary-length inputs.
 - Different signature schemes (ECDSA, Schnorr, BLS) offer different trade-offs between size, speed, and aggregation capability.
 
 ## Practical Takeaways
 
 1. Always use a hardware wallet to keep private keys offline and secure.
 2. SPV wallets are the practical way to interact with blockchains from mobile devices.
-3. Never reuse an ECDSA nonce â€” doing so reveals the private key.
+3. Never reuse an ECDSA nonce — doing so reveals the private key.
 4. For multi-sig or threshold applications, prefer Schnorr or BLS signatures for efficiency.
 5. Verify Merkle proofs rather than trusting full nodes with transaction inclusion.
 

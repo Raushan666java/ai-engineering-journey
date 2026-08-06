@@ -1,8 +1,8 @@
-﻿# Multithreading & Concurrency
+# Multithreading & Concurrency
 
 > **Previous:** [JVM Architecture & Memory Management](./01-jvm-memory.md) | **Next:** [NIO & Networking](./03-nio-networking.md)
 
-Concurrency is one of the most challenging topics in Java. This chapter covers the entire concurrency landscape â€” from the low-level `Thread` API and `synchronized` blocks to modern abstractions like `CompletableFuture`, virtual threads, and structured concurrency. Every example is complete and compilable.
+Concurrency is one of the most challenging topics in Java. This chapter covers the entire concurrency landscape — from the low-level `Thread` API and `synchronized` blocks to modern abstractions like `CompletableFuture`, virtual threads, and structured concurrency. Every example is complete and compilable.
 
 ---
 
@@ -44,8 +44,8 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Thread Lifecycle | Six states: NEW â†’ RUNNABLE â†’ BLOCKED/WAITING/TIMED_WAITING â†’ TERMINATED | `jstack` shows thread state for debugging |
-| Synchronization | `synchronized`, `Lock`, `Atomic*` â€” mutual exclusion + visibility | Prefer `Lock` for flexibility, `synchronized` for simplicity |
+| Thread Lifecycle | Six states: NEW → RUNNABLE → BLOCKED/WAITING/TIMED_WAITING → TERMINATED | `jstack` shows thread state for debugging |
+| Synchronization | `synchronized`, `Lock`, `Atomic*` — mutual exclusion + visibility | Prefer `Lock` for flexibility, `synchronized` for simplicity |
 | Java Memory Model | Happens-before rules guarantee visibility across threads | `volatile` for flags, `synchronized` for compound actions |
 | Concurrency Utilities | ExecutorService, ForkJoinPool, CompletableFuture | Thread pools decouple task submission from execution |
 | Virtual Threads | Lightweight JVM-managed threads, millions possible | Avoid `synchronized` in hot paths to prevent pinning |
@@ -65,47 +65,47 @@ flowchart LR
     I --> J[Deadlock Prevention]
 ```
 
-> **Warning:** Virtual threads are not a free pass to ignore thread safety. Shared mutable state still requires synchronization â€” virtual threads only reduce the overhead of having many threads, not the need for correctness.
+> **Warning:** Virtual threads are not a free pass to ignore thread safety. Shared mutable state still requires synchronization — virtual threads only reduce the overhead of having many threads, not the need for correctness.
 
 ---
 
 ## Thread Lifecycle & API
 
-A thread in Java is an instance of `java.lang.Thread`. When it runs, it executes code on a **call stack** of its own â†’ separate from all other threads. The JVM's `Thread.State` enum defines six states:
+A thread in Java is an instance of `java.lang.Thread`. When it runs, it executes code on a **call stack** of its own → separate from all other threads. The JVM's `Thread.State` enum defines six states:
 
 ![Java Thread States](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/02-concurrency.png)
 
 ```
-                        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                        â”‚     NEW      â”‚  start()
-                        â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                               â”‚
-                               â–¼
-                        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  RUNNABLE    â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-         â”‚              â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜             â”‚
-         â”‚                     â”‚                     â”‚
-         â–¼                     â–¼                     â”‚
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              â”‚
-  â”‚ BLOCKED  â”‚        â”‚ TIMED_WAITINGâ”‚              â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜              â”‚
-         â”‚                     â”‚                     â”‚
-         â–¼                     â–¼                     â”‚
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              â”‚
-  â”‚ WAITING  â”‚        â”‚ TERMINATED   â”‚              â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜              â”‚
-         â”‚                                           â”‚
-         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                        ┌──────────────┐
+                        │     NEW      │  start()
+                        └──────┬───────┘
+                               │
+                               ▼
+                        ┌──────────────┐
+         ┌──────────────┤  RUNNABLE    │◄────────────┐
+         │              └──────┬───────┘             │
+         │                     │                     │
+         ▼                     ▼                     │
+  ┌──────────┐        ┌──────────────┐              │
+  │ BLOCKED  │        │ TIMED_WAITING│              │
+  └──────────┘        └──────────────┘              │
+         │                     │                     │
+         ▼                     ▼                     │
+  ┌──────────┐        ┌──────────────┐              │
+  │ WAITING  │        │ TERMINATED   │              │
+  └──────────┘        └──────────────┘              │
+         │                                           │
+         └───────────────────────────────────────────┘
 ```
 
-- **NEW** â†’ `new Thread(r)` created but `start()` not yet called.
-- **RUNNABLE** â†’ `start()` called; thread is eligible for scheduling by the OS thread scheduler. It may be running *or* ready to run.
-- **BLOCKED** â†’ waiting to acquire an intrinsic lock (entering a `synchronized` block/method).
-- **WAITING** â†’ waiting indefinitely for another thread to act (`Object.wait()`, `Thread.join()` with no timeout, `LockSupport.park()`).
-- **TIMED_WAITING** â†’ waiting with a timeout (`Thread.sleep(ms)`, `Object.wait(ms)`, `Thread.join(ms)`, `LockSupport.parkNanos()`).
-- **TERMINATED** â†’ `run()` completed normally or threw an uncaught exception.
+- **NEW** → `new Thread(r)` created but `start()` not yet called.
+- **RUNNABLE** → `start()` called; thread is eligible for scheduling by the OS thread scheduler. It may be running *or* ready to run.
+- **BLOCKED** → waiting to acquire an intrinsic lock (entering a `synchronized` block/method).
+- **WAITING** → waiting indefinitely for another thread to act (`Object.wait()`, `Thread.join()` with no timeout, `LockSupport.park()`).
+- **TIMED_WAITING** → waiting with a timeout (`Thread.sleep(ms)`, `Object.wait(ms)`, `Thread.join(ms)`, `LockSupport.parkNanos()`).
+- **TERMINATED** → `run()` completed normally or threw an uncaught exception.
 
-### Thread API â†’ start, join, sleep, yield, interrupt
+### Thread API → start, join, sleep, yield, interrupt
 
 
 ```java
@@ -158,14 +158,14 @@ public class ThreadApiDemo {
         interruptible.join();
 
         // ---- interrupted() vs isInterrupted() ----
-        // interrupted()  â†’ static, clears the interrupt flag
-        // isInterrupted() â†’ instance, does NOT clear the flag
+        // interrupted()  → static, clears the interrupt flag
+        // isInterrupted() → instance, does NOT clear the flag
         System.out.println("All demonstrations complete");
     }
 }
 ```
 
-### Thread states â†’ a monitor-based walk
+### Thread states → a monitor-based walk
 
 
 ```java
@@ -210,7 +210,7 @@ public class ThreadStateMonitor {
 
 A **race condition** occurs when two or more threads access shared mutable state without proper coordination, and the result depends on the interleaving of their operations. The code that accesses shared mutable state is called a **critical section**.
 
-### Unsafe counter â†’ three threads, one int
+### Unsafe counter → three threads, one int
 
 
 ```java
@@ -334,7 +334,7 @@ class SynchronizedBlockDemo {
 
     void addName(String name) {
         synchronized (lock) {
-            // Critical section â†’ only one thread at a time
+            // Critical section → only one thread at a time
             names.add(name);
         }
     }
@@ -378,7 +378,7 @@ public class ReentrancyDemo {
 
     private synchronized void outer() {
         System.out.println("Outer");
-        inner(); // same thread, same lock â†’ no deadlock
+        inner(); // same thread, same lock → no deadlock
     }
 
     private synchronized void inner() {
@@ -478,7 +478,7 @@ class ReentrantLockDemo {
     }
 
     void incrementWithTry() {
-        // tryLock â†’ acquire only if immediately available
+        // tryLock → acquire only if immediately available
         if (lock.tryLock()) {
             try {
                 shared++;
@@ -491,7 +491,7 @@ class ReentrantLockDemo {
     }
 
     void incrementWithTimeout() throws InterruptedException {
-        // tryLock with timeout â†’ returns false if lock not acquired in 100ms
+        // tryLock with timeout → returns false if lock not acquired in 100ms
         if (lock.tryLock(100, java.util.concurrent.TimeUnit.MILLISECONDS)) {
             try {
                 shared++;
@@ -502,7 +502,7 @@ class ReentrantLockDemo {
     }
 
     void incrementInterruptibly() throws InterruptedException {
-        // lockInterruptibly â†’ throws InterruptedException if interrupted while waiting
+        // lockInterruptibly → throws InterruptedException if interrupted while waiting
         lock.lockInterruptibly();
         try {
             shared++;
@@ -620,7 +620,7 @@ class ReadWriteLockDemo {
         w1.join();
         r1.join();
         r2.join();
-        System.out.println("Done â†’ Readers ran concurrently, writes were exclusive");
+        System.out.println("Done → Readers ran concurrently, writes were exclusive");
     }
 }
 ```
@@ -652,13 +652,13 @@ class StampedLockDemo {
     }
 
     int distanceFromOriginOptimistic() {
-        // Optimistic read â†’ no blocking, but we must validate
+        // Optimistic read → no blocking, but we must validate
         long stamp = lock.tryOptimisticRead();
         int currentX = x;
         int currentY = y;
 
         if (!lock.validate(stamp)) {
-            // Optimistic read failed â†’ a writer intervened
+            // Optimistic read failed → a writer intervened
             // Fall back to a full read lock
             stamp = lock.readLock();
             try {
@@ -693,7 +693,7 @@ class StampedLockDemo {
 ### Condition
 
 
-`Condition` provides `await` / `signal` semantics similar to `Object.wait` / `notify`, but with more control â†’ you can have multiple condition queues per lock.
+`Condition` provides `await` / `signal` semantics similar to `Object.wait` / `notify`, but with more control → you can have multiple condition queues per lock.
 
 ```java
 package ch02.locks;
@@ -793,7 +793,7 @@ CAS(address, expectedValue, newValue)
   }
 ```
 
-CAS is non-blocking â†’ the caller can retry in a loop (spin-wait).
+CAS is non-blocking → the caller can retry in a loop (spin-wait).
 
 ### AtomicInteger
 
@@ -892,7 +892,7 @@ class AtomicTypesDemo {
 ```
 Thread 1 reads A from address X
 Thread 2 changes X to B, then back to A
-Thread 1 CAS(X, A, C) succeeds â†’ but the value was modified in between
+Thread 1 CAS(X, A, C) succeeds → but the value was modified in between
 ```
 
 ```java
@@ -907,7 +907,7 @@ class AbaProblemDemo {
 
         Thread t1 = new Thread(() -> {
             int value = counter.get();       // reads 100
-            // simulate a pause â†’ during this, t2 changes value
+            // simulate a pause → during this, t2 changes value
             try { Thread.sleep(50); } catch (InterruptedException _) { }
             // CAS succeeds even though the value was modified in between
             boolean casResult = counter.compareAndSet(value, 200);
@@ -916,8 +916,8 @@ class AbaProblemDemo {
         });
 
         Thread t2 = new Thread(() -> {
-            counter.compareAndSet(100, 150); // 100 â†’ 150
-            counter.compareAndSet(150, 100); // 150 â†’ 100 (back to original)
+            counter.compareAndSet(100, 150); // 100 → 150
+            counter.compareAndSet(150, 100); // 150 → 100 (back to original)
         });
 
         t1.start();
@@ -945,7 +945,7 @@ class AbaSolutionDemo {
 
             try { Thread.sleep(50); } catch (InterruptedException _) { }
 
-            // CAS with stamp â†’ will fail because stamp changed
+            // CAS with stamp → will fail because stamp changed
             boolean success = ref.compareAndSet(value, 200, stamp, stamp + 1);
             System.out.println("Thread 1 CAS: " + success);
         });
@@ -1040,7 +1040,7 @@ class AtomicReferenceFieldUpdaterDemo {
 
 ## volatile
 
-The `volatile` keyword guarantees **visibility** of a field across threads. Every write to a volatile field is immediately visible to subsequent reads â†’ the JIT cannot cache it in a register, and the CPU issues a memory barrier.
+The `volatile` keyword guarantees **visibility** of a field across threads. Every write to a volatile field is immediately visible to subsequent reads → the JIT cannot cache it in a register, and the CPU issues a memory barrier.
 
 **What volatile guarantees:**
 - Read of a volatile variable happens-before every subsequent read of that variable
@@ -1048,7 +1048,7 @@ The `volatile` keyword guarantees **visibility** of a field across threads. Ever
 - All writes that happened-before the volatile write are visible to the thread that reads the volatile (piggybacking)
 
 **What volatile does NOT guarantee:**
-- **Atomicity** â†’ `count++` is still a read-modify-write. Use `AtomicInteger` for that.
+- **Atomicity** → `count++` is still a read-modify-write. Use `AtomicInteger` for that.
 
 ### Volatile flag pattern
 
@@ -1086,7 +1086,7 @@ class VolatileFlagDemo {
 package ch02.volatiledemo;
 
 class Singleton {
-    // volatile is critical here â†’ without it, the JIT can reorder
+    // volatile is critical here → without it, the JIT can reorder
     // writes to the constructor before the assignment to instance,
     // causing another thread to see a partially-constructed object.
     private static volatile Singleton instance;
@@ -1176,10 +1176,10 @@ The `java.util.concurrent` package provides collections designed for concurrent 
 
 `ConcurrentHashMap` is the go-to concurrent map. Key design points in Java 8+:
 
-- **Internal structure:** array of bins (Node&lt;K,V&gt;[]). Each bin is a linked list or tree (when bin depth Ã¢â€°Â¥ 8).
-- **Locking:** fine-grained â†’ individual bins are locked using `synchronized` (Java 8+) rather than the entire map.
+- **Internal structure:** array of bins (Node&lt;K,V&gt;[]). Each bin is a linked list or tree (when bin depth ≥ 8).
+- **Locking:** fine-grained → individual bins are locked using `synchronized` (Java 8+) rather than the entire map.
 - **Resize:** resizing is done concurrently by multiple threads (the "transfer" phase).
-- **Iteration:** weakly consistent â†’ iterators reflect the state at creation but can tolerate concurrent modifications without throwing `ConcurrentModificationException`.
+- **Iteration:** weakly consistent → iterators reflect the state at creation but can tolerate concurrent modifications without throwing `ConcurrentModificationException`.
 
 ```java
 package ch02.concurrentcollections;
@@ -1195,23 +1195,23 @@ class ConcurrentHashMapDemo {
         // Atomic putIfAbsent
         map.putIfAbsent("key1", 1);
 
-        // Atomic compute â†’ atomically update value for a key
+        // Atomic compute → atomically update value for a key
         map.compute("key1", (k, v) -> v == null ? 1 : v + 1);
 
-        // Atomic computeIfAbsent â†’ only compute if key is absent
+        // Atomic computeIfAbsent → only compute if key is absent
         map.computeIfAbsent("key2", k -> 42);
 
-        // Atomic merge â†’ combine existing value with new value
+        // Atomic merge → combine existing value with new value
         map.merge("key1", 1, Integer::sum);
 
         // forEach with parallelism threshold
         map.forEach(1, (k, v) -> System.out.println(k + "=" + v));
 
-        // search â†’ find first match in parallel
+        // search → find first match in parallel
         String found = map.search(1, (k, v) -> v > 10 ? k : null);
         System.out.println("Found: " + found);
 
-        // reduce â†’ parallel reduction over entries
+        // reduce → parallel reduction over entries
         int sum = map.reduceValues(1, Integer::intValue, Integer::sum);
         System.out.println("Sum of values: " + sum);
 
@@ -1254,7 +1254,7 @@ class CopyOnWriteArrayListDemo {
     public static void main(String[] args) throws InterruptedException {
         List<String> list = new CopyOnWriteArrayList<>();
 
-        // Multiple writers â†’ each mutation copies the array
+        // Multiple writers → each mutation copies the array
         Runnable writer = () -> {
             for (int i = 0; i < 100; i++) {
                 list.add(Thread.currentThread().getName() + "-" + i);
@@ -1331,7 +1331,7 @@ class ConcurrentLinkedQueueDemo {
 ### ConcurrentSkipListMap
 
 
-A concurrent, sorted map (equivalent of `TreeMap` but thread-safe). Uses a skip list data structure â†’ a probabilistic alternative to balanced trees.
+A concurrent, sorted map (equivalent of `TreeMap` but thread-safe). Uses a skip list data structure → a probabilistic alternative to balanced trees.
 
 ```java
 package ch02.concurrentcollections;
@@ -1348,7 +1348,7 @@ class ConcurrentSkipListMapDemo {
         map.put("charlie", 3);
         map.put("bravo", 2);
 
-        // NavigableMap methods â†’ all thread-safe
+        // NavigableMap methods → all thread-safe
         System.out.println("First entry: " + map.firstEntry());
         System.out.println("Last entry: " + map.lastEntry());
         System.out.println("Ceiling 'c': " + map.ceilingEntry("c"));
@@ -1518,11 +1518,11 @@ class TransferQueueDemo {
 
         consumer.start();
 
-        // Transfer â†’ blocks until consumer takes the element
+        // Transfer → blocks until consumer takes the element
         tq.transfer("direct handoff");
         System.out.println("Producer: transfer complete");
 
-        // tryTransfer â†’ returns false if no consumer is waiting
+        // tryTransfer → returns false if no consumer is waiting
         boolean handed = tq.tryTransfer("no one waiting");
         System.out.println("tryTransfer (should be false): " + handed);
 
@@ -1537,7 +1537,7 @@ class TransferQueueDemo {
 
 Creating and destroying threads manually is expensive and error-prone. `ExecutorService` provides a pool of reusable threads.
 
-### ThreadPoolExecutor â†’ every parameter explained
+### ThreadPoolExecutor → every parameter explained
 
 
 ```java
@@ -1668,13 +1668,13 @@ class ScheduledExecutorDemo {
 
         System.out.println("Time: " + LocalTime.now());
 
-        // Schedule with fixed delay â†’ next run starts after previous finishes + delay
+        // Schedule with fixed delay → next run starts after previous finishes + delay
         ScheduledFuture<?> fixedDelay = scheduler.scheduleWithFixedDelay(
             () -> System.out.println("Fixed delay at: " + LocalTime.now()),
             1, 2, TimeUnit.SECONDS
         );
 
-        // Schedule at fixed rate â†’ starts every N seconds regardless of duration
+        // Schedule at fixed rate → starts every N seconds regardless of duration
         ScheduledFuture<?> fixedRate = scheduler.scheduleAtFixedRate(
             () -> System.out.println("  Fixed rate at: " + LocalTime.now()),
             1, 3, TimeUnit.SECONDS
@@ -1708,7 +1708,7 @@ import java.util.concurrent.*;
 class ExecutorsFactoryDemo {
 
     public static void main(String[] args) {
-        // Fixed thread pool â†’ good for predictable load
+        // Fixed thread pool → good for predictable load
         ExecutorService fixed = Executors.newFixedThreadPool(4);
         try {
             fixed.submit(() -> System.out.println("Fixed pool"));
@@ -1716,7 +1716,7 @@ class ExecutorsFactoryDemo {
             fixed.shutdown();
         }
 
-        // Cached thread pool â†’ creates threads on demand, reuses idle ones
+        // Cached thread pool → creates threads on demand, reuses idle ones
         ExecutorService cached = Executors.newCachedThreadPool();
         try {
             cached.submit(() -> System.out.println("Cached pool"));
@@ -1724,7 +1724,7 @@ class ExecutorsFactoryDemo {
             cached.shutdown();
         }
 
-        // Single-thread executor â†’ guarantees sequential execution
+        // Single-thread executor → guarantees sequential execution
         ExecutorService single = Executors.newSingleThreadExecutor();
         try {
             single.submit(() -> System.out.println("Single thread"));
@@ -1732,7 +1732,7 @@ class ExecutorsFactoryDemo {
             single.shutdown();
         }
 
-        // Work-stealing pool â†’ ForkJoinPool-based
+        // Work-stealing pool → ForkJoinPool-based
         ExecutorService workStealing = Executors.newWorkStealingPool();
         try {
             workStealing.submit(() -> System.out.println("Work stealing"));
@@ -1757,14 +1757,14 @@ class InvokeAllAnyDemo {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         ExecutorService executor = Executors.newFixedThreadPool(4);
 
-        // ---- submit(Callable) â†’ get a Future ----
+        // ---- submit(Callable) → get a Future ----
         Future<String> future = executor.submit(() -> {
             Thread.sleep(500);
             return "Result from callable";
         });
         System.out.println("Future result: " + future.get());
 
-        // ---- invokeAll â†’ wait for all tasks ----
+        // ---- invokeAll → wait for all tasks ----
         List<Callable<String>> tasks = List.of(
             () -> { Thread.sleep(300); return "Task A"; },
             () -> { Thread.sleep(100); return "Task B"; },
@@ -1780,7 +1780,7 @@ class InvokeAllAnyDemo {
             System.out.println("  " + f.get());
         }
 
-        // ---- invokeAny â†’ return first successful result ----
+        // ---- invokeAny → return first successful result ----
         List<Callable<String>> raceTasks = List.of(
             () -> { Thread.sleep(300); return "Slow"; },
             () -> { Thread.sleep(100); return "Fast"; },
@@ -1825,7 +1825,7 @@ class ShutdownDemo {
 
         Thread.sleep(500);
 
-        // shutdown() â†’ no new tasks accepted, already-submitted tasks complete
+        // shutdown() → no new tasks accepted, already-submitted tasks complete
         executor.shutdown();
         // executor.submit(() -> {}); // would throw RejectedExecutionException
 
@@ -1833,7 +1833,7 @@ class ShutdownDemo {
         if (!executor.awaitTermination(2, TimeUnit.SECONDS)) {
             System.out.println("Not all tasks finished, calling shutdownNow()");
 
-            // shutdownNow() â†’ attempts to stop running tasks via interrupt,
+            // shutdownNow() → attempts to stop running tasks via interrupt,
             // returns list of tasks that never started
             List<Runnable> neverStarted = executor.shutdownNow();
             System.out.println("Tasks never started: " + neverStarted.size());
@@ -1848,7 +1848,7 @@ class ShutdownDemo {
 
 `ForkJoinPool` implements **work-stealing**: idle threads steal tasks from busy threads' queues. It is the engine behind parallel streams and `CompletableFuture`'s async execution.
 
-### RecursiveTask â†’ compute-intensive parallel decomposition
+### RecursiveTask → compute-intensive parallel decomposition
 
 
 ```java
@@ -1911,7 +1911,7 @@ class SumTask extends RecursiveTask<Long> {
 }
 ```
 
-### RecursiveAction â†’ parallel side-effects (no return value)
+### RecursiveAction → parallel side-effects (no return value)
 
 
 ```java
@@ -2014,7 +2014,7 @@ class BasicCompletableFutureDemo {
         CompletableFuture<String> preCompleted = CompletableFuture.completedFuture("done");
         System.out.println("Pre-completed: " + preCompleted.get());
 
-        // ---- supplyAsync â†’ runs on ForkJoinPool.commonPool() ----
+        // ---- supplyAsync → runs on ForkJoinPool.commonPool() ----
         CompletableFuture<String> async = CompletableFuture.supplyAsync(() -> {
             try { Thread.sleep(100); } catch (InterruptedException e) { }
             return "async result";
@@ -2059,7 +2059,7 @@ class ChainingDemo {
 }
 ```
 
-### thenCompose â†’ flatMap for futures
+### thenCompose → flatMap for futures
 
 
 ```java
@@ -2078,11 +2078,11 @@ class ThenComposeDemo {
     }
 
     public static void main(String[] args) {
-        // Without thenCompose â†’ nested futures
+        // Without thenCompose → nested futures
         CompletableFuture<CompletableFuture<String>> nested =
             fetchUser(42).thenApply(user -> fetchOrders(user));
 
-        // With thenCompose â†’ flattened
+        // With thenCompose → flattened
         CompletableFuture<String> flat =
             fetchUser(42).thenCompose(user -> fetchOrders(user));
 
@@ -2091,7 +2091,7 @@ class ThenComposeDemo {
 }
 ```
 
-### thenCombine â†’ combine two independent futures
+### thenCombine → combine two independent futures
 
 
 ```java
@@ -2111,7 +2111,7 @@ class ThenCombineDemo {
 }
 ```
 
-### allOf â†’ wait for multiple futures
+### allOf → wait for multiple futures
 
 
 ```java
@@ -2147,7 +2147,7 @@ class AllOfDemo {
 }
 ```
 
-### anyOf â†’ first result wins
+### anyOf → first result wins
 
 
 ```java
@@ -2174,7 +2174,7 @@ class AnyOfDemo {
 }
 ```
 
-### exceptionally â†’ error recovery
+### exceptionally → error recovery
 
 
 ```java
@@ -2200,7 +2200,7 @@ class ExceptionallyDemo {
 }
 ```
 
-### handle â†’ recovery regardless of outcome
+### handle → recovery regardless of outcome
 
 
 ```java
@@ -2231,7 +2231,7 @@ class HandleDemo {
 }
 ```
 
-### whenComplete â†’ observe completion
+### whenComplete → observe completion
 
 
 ```java
@@ -2256,7 +2256,7 @@ class WhenCompleteDemo {
 }
 ```
 
-### Timeouts â†’ completeOnTimeout, orTimeout
+### Timeouts → completeOnTimeout, orTimeout
 
 
 ```java
@@ -2267,7 +2267,7 @@ import java.util.concurrent.*;
 class TimeoutDemo {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException, TimeoutException {
-        // ---- orTimeout â†’ throw TimeoutException if not done in time ----
+        // ---- orTimeout → throw TimeoutException if not done in time ----
         CompletableFuture<String> withTimeout = CompletableFuture
             .supplyAsync(() -> {
                 try { Thread.sleep(2000); } catch (InterruptedException e) { }
@@ -2281,7 +2281,7 @@ class TimeoutDemo {
             System.out.println("Timed out: " + e.getCause().getClass().getSimpleName());
         }
 
-        // ---- completeOnTimeout â†’ fallback value ----
+        // ---- completeOnTimeout → fallback value ----
         String result = CompletableFuture
             .supplyAsync(() -> {
                 try { Thread.sleep(2000); } catch (InterruptedException e) { }
@@ -2295,7 +2295,7 @@ class TimeoutDemo {
 }
 ```
 
-### CompletableFuture pipeline â†’ full example
+### CompletableFuture pipeline → full example
 
 
 ```java
@@ -2549,12 +2549,12 @@ class StructuredConcurrencyDemo {
     record OrderResult(ShippingInfo shipping, Invoice invoice) {}
 
     public static void main(String[] args) throws Exception {
-        // StructuredTaskScope â†’ tasks are siblings, their lifecycle is tied together
+        // StructuredTaskScope → tasks are siblings, their lifecycle is tied together
         try (var scope = new StructuredTaskScope.ShutdownOnFailure()) {
             Future<ShippingInfo> shipping = scope.fork(StructuredConcurrencyDemo::fetchShipping);
             Future<Invoice> invoice = scope.fork(StructuredConcurrencyDemo::fetchInvoice);
 
-            // Join â†’ blocks until both complete or one fails
+            // Join → blocks until both complete or one fails
             scope.join();
             scope.throwIfFailed();
 
@@ -2569,7 +2569,7 @@ class StructuredConcurrencyDemo {
 }
 ```
 
-### StructuredTaskScope.Subtask â†’ collecting results
+### StructuredTaskScope.Subtask → collecting results
 
 
 ```java
@@ -2618,7 +2618,7 @@ class StructuredTaskScopeCollector {
 ### Virtual threads with ThreadLocal
 
 
-`ThreadLocal` works with virtual threads, but each virtual thread gets its own copy â†’ potentially millions of copies. Use `ThreadLocal.withInitial()` carefully.
+`ThreadLocal` works with virtual threads, but each virtual thread gets its own copy → potentially millions of copies. Use `ThreadLocal.withInitial()` carefully.
 
 ```java
 package ch02.virtualthreads;
@@ -2627,7 +2627,7 @@ import java.util.concurrent.Executors;
 
 class VirtualThreadWithThreadLocal {
 
-    // BAD with many virtual threads â†’ each gets its own copy
+    // BAD with many virtual threads → each gets its own copy
     private static final ThreadLocal<String> requestId = new ThreadLocal<>();
 
     public static void main(String[] args) {
@@ -2654,9 +2654,9 @@ class VirtualThreadWithThreadLocal {
 
 Use JSR 305 annotations (or `javax.annotation.concurrent`) to document thread-safety intent:
 
-- **`@Immutable`** â†’ instances are never modified (e.g., `String`, `Integer`). Automatically thread-safe.
-- **`@ThreadSafe`** â†’ class guarantees safe concurrent access (e.g., `ConcurrentHashMap`, `AtomicInteger`).
-- **`@NotThreadSafe`** â†’ class is not safe for concurrent access (e.g., `ArrayList`, `HashMap`).
+- **`@Immutable`** → instances are never modified (e.g., `String`, `Integer`). Automatically thread-safe.
+- **`@ThreadSafe`** → class guarantees safe concurrent access (e.g., `ConcurrentHashMap`, `AtomicInteger`).
+- **`@NotThreadSafe`** → class is not safe for concurrent access (e.g., `ArrayList`, `HashMap`).
 
 ```java
 package ch02.threadsafety;
@@ -2668,7 +2668,7 @@ import javax.annotation.concurrent.NotThreadSafe;
 // ---- @Immutable ----
 @Immutable
 record Point(int x, int y) {
-    // All fields are final â†’ inherently thread-safe
+    // All fields are final → inherently thread-safe
 }
 
 // ---- @ThreadSafe ----
@@ -2703,7 +2703,7 @@ class UnsafeListBuilder {
 ### Confinement
 
 
-**Thread confinement** means an object is only accessed by one thread. The simplest form is **stack confinement** â†’ a local variable that never escapes.
+**Thread confinement** means an object is only accessed by one thread. The simplest form is **stack confinement** → a local variable that never escapes.
 
 ```java
 package ch02.threadsafety;
@@ -2745,7 +2745,7 @@ import java.util.concurrent.Executors;
 
 class ThreadLocalDemo {
 
-    // SimpleDateFormat is NOT thread-safe â†’ share via ThreadLocal
+    // SimpleDateFormat is NOT thread-safe → share via ThreadLocal
     private static final ThreadLocal<SimpleDateFormat> dateFormat =
         ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
 
@@ -2815,7 +2815,7 @@ class SimpleDeadlock {
 }
 ```
 
-### Detection â†’ jstack
+### Detection → jstack
 
 
 ```
@@ -2835,7 +2835,7 @@ Found one Java-level deadlock:
   which is held by "Thread-1"
 ```
 
-### Detection â†’ ThreadMXBean (programmatic)
+### Detection → ThreadMXBean (programmatic)
 
 
 ```java
@@ -2877,7 +2877,7 @@ class DeadlockDetector {
                     System.out.println("DEADLOCK DETECTED!");
                     ThreadInfo[] infos = mxBean.getThreadInfo(deadlockedIds, true, true);
                     for (ThreadInfo info : infos) {
-                        System.out.println("  " + info.getThreadName() + " â†’ " + info.getThreadState());
+                        System.out.println("  " + info.getThreadName() + " → " + info.getThreadState());
                         for (var monitor : info.getLockedMonitors()) {
                             System.out.println("    waiting on: " + monitor);
                         }
@@ -2901,7 +2901,7 @@ class DeadlockDetector {
 }
 ```
 
-### Prevention â†’ lock ordering
+### Prevention → lock ordering
 
 
 Acquire locks in a consistent global order to eliminate cycles.
@@ -2949,7 +2949,7 @@ class LockOrderingDemo {
 }
 ```
 
-### Prevention â†’ tryLock with timeout
+### Prevention → tryLock with timeout
 
 
 Use `tryLock` to avoid blocking indefinitely.
@@ -2996,7 +2996,7 @@ class TryLockDeadlockPrevention {
         t2.start();
         t1.join();
         t2.join();
-        System.out.println("Done â†’ no deadlock");
+        System.out.println("Done → no deadlock");
     }
 }
 ```
@@ -3161,13 +3161,13 @@ class DiningPhilosophers {
 
 3. What is a key benefit of virtual threads over platform threads?
    - A) They are faster for CPU-bound tasks
-   - B) They are lightweight â€” millions can run on a single OS thread
+   - B) They are lightweight — millions can run on a single OS thread
    - C) They eliminate the need for synchronization
    - D) They automatically parallelize all operations
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) They are lightweight â€” millions can run on a single OS thread.** Virtual threads are managed by the JVM and are not tied to OS threads, allowing high concurrency with low memory footprint.
+**B) They are lightweight — millions can run on a single OS thread.** Virtual threads are managed by the JVM and are not tied to OS threads, allowing high concurrency with low memory footprint.
 </details>
 
 4. Which method places a task in a BlockingQueue if space is available, or waits until space becomes available?
@@ -3198,11 +3198,11 @@ class DiningPhilosophers {
 
 | Concept | Key Takeaway |
 |---------|-------------|
-| Thread API | `start()`, `join()`, `sleep()`, `interrupt()` â†’ states: NEW â†’ RUNNABLE â†’ {BLOCKED, WAITING, TIMED_WAITING} â†’ TERMINATED |
+| Thread API | `start()`, `join()`, `sleep()`, `interrupt()` → states: NEW → RUNNABLE → {BLOCKED, WAITING, TIMED_WAITING} → TERMINATED |
 | synchronized | Mutual exclusion + visibility; every object has an intrinsic lock; reentrant |
 | Locks | `ReentrantLock` (flexible), `ReadWriteLock` (many readers), `StampedLock` (optimistic reads), `Condition` (await/signal) |
 | Atomic classes | CAS-based; non-blocking; `AtomicStampedReference` solves ABA |
-| volatile | Visibility only, not atomicity â†’ use for flags and double-checked locking |
+| volatile | Visibility only, not atomicity → use for flags and double-checked locking |
 | ConcurrentHashMap | Fine-grained locking (Java 8+), weakly consistent iterators, atomic `compute`/`merge` |
 | BlockingQueue | `put()`/`take()` block; `ArrayBlockingQueue`, `LinkedBlockingQueue`, `PriorityBlockingQueue`, `DelayQueue`, `SynchronousQueue`, `LinkedTransferQueue` |
 | ExecutorService | `ThreadPoolExecutor` with configurable core/max pool, work queue, rejection policy |
@@ -3262,11 +3262,11 @@ class DiningPhilosophers {
 
 
 **Task:** Build an order processing pipeline:
-1. `fetchUser(id)` â†’ 200ms delay
-2. `fetchCart(user)` â†’ 150ms delay
-3. `applyDiscounts(cart)` â†’ 100ms delay
-4. `calculateShipping(cart)` â†’ 100ms delay (parallel with discounts)
-5. `placeOrder(cart, shipping)` â†’ 50ms delay
+1. `fetchUser(id)` → 200ms delay
+2. `fetchCart(user)` → 150ms delay
+3. `applyDiscounts(cart)` → 100ms delay
+4. `calculateShipping(cart)` → 100ms delay (parallel with discounts)
+5. `placeOrder(cart, shipping)` → 50ms delay
 
 All steps must be non-blocking. Use `thenCompose`, `thenCombine`, and `allOf`. Add a timeout of 2 seconds for the entire pipeline.
 

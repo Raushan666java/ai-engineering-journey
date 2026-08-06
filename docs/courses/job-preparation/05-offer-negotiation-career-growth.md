@@ -1,4 +1,4 @@
-﻿# Offer Negotiation and Career Growth Planning
+# Offer Negotiation and Career Growth Planning
 
 ## Learning Objectives
 
@@ -193,7 +193,7 @@ days to carefully review the offer details before I respond.
 Could I have until [specific date, 3-5 days from now] to
 get back to you?"
 
-[HR will usually give 3-7 days â€” use this time wisely]
+[HR will usually give 3-7 days — use this time wisely]
 ```
 
 #### Script 2: Negotiating Salary (You Have Another Offer)
@@ -247,7 +247,7 @@ compensation. While I value [Current Company], I've decided
 to accept the offer from [New Company] as it aligns better
 with my long-term career goals."
 
-[Generally, accepting counter-offers is risky â€” 70% leave
+[Generally, accepting counter-offers is risky — 70% leave
 within 6 months anyway]
 ```
 
@@ -277,7 +277,7 @@ within 6 months anyway]
 | Counter-offer | Current employer willing to match | Medium |
 | Timing (quarter-end) | Teams need to fill roles before deadline | Low-Medium |
 
-## Salary Negotiation â€” Negotiable vs Non-Negotiable
+## Salary Negotiation — Negotiable vs Non-Negotiable
 
 ### Private Sector Negotiable Components
 
@@ -571,7 +571,7 @@ flowchart TD
     end
 ```
 
-### Salary Progression â€” Private Sector (by Level)
+### Salary Progression — Private Sector (by Level)
 
 | Level | Years Exp | Base Salary (LPA) | Total CTC (LPA) |
 |-------|-----------|-------------------|-----------------|
@@ -599,7 +599,7 @@ flowchart TD
     E8 --> E9[E9: Director (Board Level)]
 ```
 
-### PSU Salary â€” Pay Scales by Grade
+### PSU Salary — Pay Scales by Grade
 
 | Grade | Approx Years to Reach | Basic Pay (Rs.) | Total Monthly (Rs.) |
 |-------|----------------------|-----------------|-------------------|
@@ -612,7 +612,7 @@ flowchart TD
 | E6 | 22-25 years | 1,50,000 - 1,80,000 | 2,15,000 - 2,50,000 |
 | E7 | 25-28 years | 1,80,000 - 2,20,000 | 2,50,000 - 3,00,000 |
 
-### Government (7th CPC) â€” Career Progression
+### Government (7th CPC) — Career Progression
 
 | Level | Years to Reach | Basic Pay | In-Hand (approx) |
 |-------|---------------|-----------|-----------------|
@@ -645,7 +645,7 @@ flowchart TD
 
 | Situation | Action |
 |-----------|--------|
-| You want management responsibility | Move to Tech Lead â†’ EM track |
+| You want management responsibility | Move to Tech Lead → EM track |
 | You enjoy mentoring and team building | Pursue people management |
 | You want maximum salary growth | Management track pays 15-25% more at senior levels |
 | You are in government/PSU | Only vertical growth possible (seniority-based) |
@@ -654,7 +654,7 @@ flowchart TD
 
 | Situation | Action |
 |-----------|--------|
-| You want to broaden your skills | Switch domains (frontend â†’ backend â†’ DevOps) |
+| You want to broaden your skills | Switch domains (frontend → backend → DevOps) |
 | You're in a specialized field (AI/ML, Security) | Deepen expertise in the same domain across contexts |
 | You want to transition to a different function | Move from engineering to product/consulting |
 | Your current domain is shrinking | Pivot to a growing domain proactively |
@@ -811,7 +811,7 @@ Annual CTC =
 
 In-Hand = Gross Monthly - PF - Professional Tax - Income Tax
 
-Effective Tax Rate â‰ˆ (Total Tax / Total CTC) Ã— 100
+Effective Tax Rate ≈ (Total Tax / Total CTC) × 100
 ```
 
 ### Negotiation Cheat Sheet
@@ -843,15 +843,15 @@ Salary negotiation and career growth planning require a strategic approach. For 
 
 ## Practical Takeaways
 
-1. Always negotiate your first private sector offer â€” 85% of companies have room for 10-30% improvement
-2. When comparing offers, calculate in-hand salary rather than CTC â€” the difference can be significant
+1. Always negotiate your first private sector offer — 85% of companies have room for 10-30% improvement
+2. When comparing offers, calculate in-hand salary rather than CTC — the difference can be significant
 3. Use the offer comparison tool to project 5-year earnings before making a decision
 4. For government/PSU jobs, factor in the pension value (typically 20-30% of last drawn salary for life)
-5. Build your negotiation case with market data, not personal needs â€” use Glassdoor, AmbitionBox, LinkedIn Salary
+5. Build your negotiation case with market data, not personal needs — use Glassdoor, AmbitionBox, LinkedIn Salary
 6. Never accept a counter-offer without understanding why you wanted to leave in the first place
 7. Plan your career in 3-5 year blocks: own your growth, don't expect the company to manage it for you
-8. Invest in certifications strategically â€” AWS/Azure certs for private, GATE for PSU, CISSP for security roles
-9. Maintain an up-to-date resume and LinkedIn even when not looking â€” opportunities come unexpectedly
+8. Invest in certifications strategically — AWS/Azure certs for private, GATE for PSU, CISSP for security roles
+9. Maintain an up-to-date resume and LinkedIn even when not looking — opportunities come unexpectedly
 10. The best time to negotiate is when you have leverage (multiple offers, unique skills, strong performance)
 ## Detailed CTC Component Analysis
 

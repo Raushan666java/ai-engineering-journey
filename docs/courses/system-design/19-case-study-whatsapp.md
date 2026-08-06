@@ -1,4 +1,4 @@
-﻿# Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging
+# Chapter 19: Case Study — WhatsApp and Real-Time Messaging
 > **Previous:** [18 Case Studies Classic](./18-case-studies-classic.md) | **Next:** [20 Case Study Netflix](./20-case-study-netflix.md)
 
 ---
@@ -43,7 +43,7 @@ flowchart LR
 ```
 |--------|---------|
 | **Scope** | WhatsApp architecture: Erlang, custom server, E2E encryption, 2B users |
-| **Key Concepts** | Core topics covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| **Key Concepts** | Core topics covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging |
 | **Design Skills** | Real-time messaging, E2E encryption, Erlang/OTP patterns |
 | **Interview Angle** | Frequently tested in system design interviews |
 
@@ -51,7 +51,7 @@ flowchart LR
 
 | Aspect | Details |
 |--------|---------|
-| **Scope** | Core concepts covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| **Scope** | Core concepts covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging |
 | **Key Concepts** | Theory, Case Study: WhatsApp Message Delivery Pipeline, Concept Comparison, Quick Reference |
 | **Design Skills** | Concept mastery and practical application |
 | **Interview Angle** | Common system design interview topic |
@@ -136,28 +136,28 @@ WhatsApp processes over 100 billion messages daily across 2 billion+ users. Unde
 - 100B messages/day = 1.16M messages/sec average
 - Peak: 3-5x average during holidays ? ~5M messages/sec
 - Average message size: ~200 bytes (text) + media attachments
-- Text data: 100B Ã— 200 bytes = 20TB/day = 7.3PB/year
+- Text data: 100B × 200 bytes = 20TB/day = 7.3PB/year
 - Media: billions of images/videos per day, ~500MB-1PB/day depending on compression
 
 **Connection Management**
 
 - 2B users, ~30% online concurrently at peak = 600M concurrent connections
 - Each connection: TCP socket (~20KB kernel memory) + app state (~50KB) = ~70KB
-- Total server memory for connections: 600M Ã— 70KB Ëœ 42TB
+- Total server memory for connections: 600M × 70KB ˜ 42TB
 - At 100K connections per server: 6,000 servers for connection handling alone
 - FreeBSD kqueue handles 1M+ connections per well-tuned machine ? ~600 servers
 
 **Storage Per User**
 
 - Average conversation history: ~500MB over lifetime (text + media)
-- 2B users Ã— 500MB = 1EB total storage
+- 2B users × 500MB = 1EB total storage
 - Each user's last 30 days of messages stored on server for multi-device sync
-- Active users (~1.5B): 1.5B Ã— 50MB (30 days text) Ëœ 75PB hot storage
+- Active users (~1.5B): 1.5B × 50MB (30 days text) ˜ 75PB hot storage
 - Media stored in CDN/object store, deduplicated per hash
 
 **Bandwidth**
 
-- 1.16M msg/sec Ã— 200 bytes = 232 MB/sec text
+- 1.16M msg/sec × 200 bytes = 232 MB/sec text
 - Media adds 10-50x more bandwidth
 - Total outbound: ~10-50 Gbps per datacenter
 - Multi-datacenter replication: multiply by replication factor
@@ -294,9 +294,9 @@ CREATE TABLE messages (
 
 The partition key is `user_id`, ensuring all messages for a user are on the same physical shard. The compound primary key enables efficient range scans: `SELECT * FROM messages WHERE user_id = ? AND conversation_id = ? ORDER BY message_id DESC LIMIT 50`.
 
-RocksDB's LSM-tree architecture provides excellent write throughput â€” critical for the spikey write patterns of messaging. Writes are sequential (append to memtable), and the sorted nature of the primary key means reads within a conversation are fast range scans on the same SST files.
+RocksDB's LSM-tree architecture provides excellent write throughput — critical for the spikey write patterns of messaging. Writes are sequential (append to memtable), and the sorted nature of the primary key means reads within a conversation are fast range scans on the same SST files.
 
-For disappearing messages, the `expires_at` column enables a background compaction process. RocksDB's compaction filters can drop expired messages during normal compaction cycles, making deletion essentially free â€” the expired data is simply not written to the next SST level.
+For disappearing messages, the `expires_at` column enables a background compaction process. RocksDB's compaction filters can drop expired messages during normal compaction cycles, making deletion essentially free — the expired data is simply not written to the next SST level.
 
 **Connection Management at Scale**
 
@@ -379,7 +379,7 @@ Message IDs must be globally unique, monotonically increasing, and sortable by t
 | 10 | Server ID | Data center + server within data center |
 | 12 | Sequence | Per-server monotonic counter |
 
-The 41-bit timestamp covers ~69 years. The 10-bit server ID supports 1024 servers. The 12-bit sequence allows 4096 messages per millisecond per server â€” sufficient for peak rates.
+The 41-bit timestamp covers ~69 years. The 10-bit server ID supports 1024 servers. The 12-bit sequence allows 4096 messages per millisecond per server — sufficient for peak rates.
 
 **End-to-End Encryption**
 
@@ -403,7 +403,7 @@ The server is a "directory service" for pre-keys. It stores users' identity keys
 - The symmetric ratchet provides "break-in recovery": after compromise, a DH exchange with new ephemeral keys re-establishes security
 - Each message includes the sender's current ephemeral public key and a message number
 
-For a conversation with 100 messages per day, the double ratchet produces 200 new keys per day (one per message in each direction). The storage per conversation is minimal â€” just the current state of each ratchet chain.
+For a conversation with 100 messages per day, the double ratchet produces 200 new keys per day (one per message in each direction). The storage per conversation is minimal — just the current state of each ratchet chain.
 
 **Secure Group Messaging** (Sender Keys):
 - For groups, WhatsApp uses the Sender Key protocol (a push from the Signal Protocol)
@@ -445,7 +445,7 @@ At 100B messages/day, spam detection must be automated, real-time, and privacy-p
 - **Hardware attestation**: Android SafetyNet and iOS DeviceCheck attestations during registration prevent automated bulk account creation.
 - **IP-based clustering**: Multiple registrations from the same IP range are correlated and flagged for manual review.
 
-The detection pipeline computes a per-user abuse score every 5 minutes using a gradient-boosted model trained on labeled abuse patterns. Features include: messages per hour, unique recipients per day, groups joined per hour, and account age in hours. Users above threshold are "shadow banned" â€” their messages are delivered normally, but they are not notified of the restriction. This prevents abuse pattern adaptation.
+The detection pipeline computes a per-user abuse score every 5 minutes using a gradient-boosted model trained on labeled abuse patterns. Features include: messages per hour, unique recipients per day, groups joined per hour, and account age in hours. Users above threshold are "shadow banned" — their messages are delivered normally, but they are not notified of the restriction. This prevents abuse pattern adaptation.
 
 **Two-Phase Registration**
 
@@ -490,7 +490,7 @@ Presence information is a real-time pub-sub problem:
 Typing indicators:
 - Client sends a "typing" event on every keystroke (but throttled to 1 per 2 seconds)
 - Server routes to the conversation partner's connection
-- No persistence â€” purely in-memory
+- No persistence — purely in-memory
 - Automatically expires after 5 seconds of inactivity
 
 Read receipts:
@@ -498,7 +498,7 @@ Read receipts:
 - Status states: SENT, DELIVERED, READ
 - DELIVERED is set when the message reaches the recipient's device
 - READ is set when the recipient opens the conversation
-- Read receipts for groups: batched â€” one update per N receipts
+- Read receipts for groups: batched — one update per N receipts
 
 **Offline Messages**
 
@@ -570,7 +570,7 @@ Bob's Phone (Sao Paulo, Brazil)
 
 The message router maintains a distributed hash table mapping `user_id ? connection_server`. This is stored in a consistent hash ring backed by ZooKeeper. When Alice sends a message:
 
-1. CS-IN-42 receives the encrypted payload. It does not decrypt â€” the server is zero-knowledge for message content.
+1. CS-IN-42 receives the encrypted payload. It does not decrypt — the server is zero-knowledge for message content.
 2. CS-IN-42 looks up Bob's connection server. If Bob is online in the same server, routing is local. If on a different server (as in our cross-continent case), it routes via the internal RPC network.
 3. The RPC uses a custom binary protocol over TCP (not HTTP) to minimize overhead.
 4. The datacenter-to-datacenter link runs over Facebook's private backbone (not the public internet), ensuring predictable latency.
@@ -582,7 +582,7 @@ Total latency budget:
 - Router lookup: &lt;1ms
 - Mumbai ? Sao Paulo RPC: 80ms (transatlantic backbone)
 - Sao Paulo CS ? Bob: 5ms (local mobile network)
-- Total: ~92ms â€” under the 100ms target
+- Total: ~92ms — under the 100ms target
 
 #
 ### Implementation: WhatsApp Architecture Case Study
@@ -720,8 +720,8 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory | Core topic covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
-| Case Study: WhatsApp Message Delivery Pipeline | Core topic covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
+| Theory | Core topic covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
+| Case Study: WhatsApp Message Delivery Pipeline | Core topic covered in Chapter 19: Case Study — WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
 
 ---
 
@@ -730,8 +730,8 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Fundamental concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
-| Case Study: WhatsApp Message Delivery Pipeline | Fundamental concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| Theory | Fundamental concept for Chapter 19: Case Study — WhatsApp and Real-Time Messaging |
+| Case Study: WhatsApp Message Delivery Pipeline | Fundamental concept for Chapter 19: Case Study — WhatsApp and Real-Time Messaging |
 
 ---
 
@@ -1112,7 +1112,7 @@ A WhatsApp group with 1,024 members (family/friends) is coordinating during a Ne
 
 The server handles this load by maintaining the group timeline as a shared ordered log in MyRocks, indexed by `(group_id, message_id)`. Active members' connections are tracked in memory: when a new message arrives for the group, the message router looks up all connected members from the session manager and pushes notifications. Each notification is a lightweight message (~50 bytes) containing only the group ID and message ID. The client then fetches the actual content (which may include media attachments up to 16MB) from the CDN using an encrypted blob URL and the decryption key derived from the Double Ratchet.
 
-The critical challenge is the write spike at midnight: expected message rate spikes to 500 messages in 60 seconds. The fan-on-read approach means the write cost is O(1) per message regardless of group size, so the MyRocks LSM-tree handles the burst easily. However, the notification fan-out to 600+ active members creates a notification burst of 500 Ã— 600 = 300,000 push operations in 60 seconds. To prevent connection server overload, notifications are batched: the server queues notifications for 100ms windows and sends a single batch message with up to 50 message IDs. This reduces the per-connection push rate from ~500 pushes in 60 seconds to ~10 batch pushes, well within the capacity of a kqueue event loop handling 1M connections.
+The critical challenge is the write spike at midnight: expected message rate spikes to 500 messages in 60 seconds. The fan-on-read approach means the write cost is O(1) per message regardless of group size, so the MyRocks LSM-tree handles the burst easily. However, the notification fan-out to 600+ active members creates a notification burst of 500 × 600 = 300,000 push operations in 60 seconds. To prevent connection server overload, notifications are batched: the server queues notifications for 100ms windows and sends a single batch message with up to 50 message IDs. This reduces the per-connection push rate from ~500 pushes in 60 seconds to ~10 batch pushes, well within the capacity of a kqueue event loop handling 1M connections.
 
 ## Case Study: Multi-Device Reconciliation After Offline Period
 
@@ -1130,7 +1130,7 @@ The key architectural insight is that each device maintains independent ratchet 
 - Persistent TCP connections with WebSocket fallback and long-polling as a last resort ensure connectivity across all network conditions
 - Multi-device support uses independent Ed25519 key pairs per device, eliminating phone-as-hub dependency
 - Offline message storage is per-user with a 30-day retention window and batched delivery on reconnection
-- Media upload is client-to-CDN with encrypted blobs and expiring URLs â€” messages only carry hashes and decryption keys
+- Media upload is client-to-CDN with encrypted blobs and expiring URLs — messages only carry hashes and decryption keys
 - Presence and typing use Redis pub-sub with aggregation for large contact lists
 - Message IDs use a Snowflake-style 64-bit scheme for global uniqueness and temporal ordering
 - The system achieves &lt;100ms median delivery latency across continents using Facebook's private backbone
@@ -1141,11 +1141,11 @@ The key architectural insight is that each device maintains independent ratchet 
 
 ### Review Questions
 
-<details><summary>Solution</summary>1. **Fan-on-write** is better for small groups (â‰¤32 members) because write amplification is proportional to group size but read is O(1). **Fan-on-read** is better for large groups (>1024) because write is O(1) but each member must read from the group timeline. The **hybrid approach** (32-256) writes once to timeline and pushes notifications to active members.
+<details><summary>Solution</summary>1. **Fan-on-write** is better for small groups (≤32 members) because write amplification is proportional to group size but read is O(1). **Fan-on-read** is better for large groups (>1024) because write is O(1) but each member must read from the group timeline. The **hybrid approach** (32-256) writes once to timeline and pushes notifications to active members.
 
 2. **X3DH** uses a Diffie-Hellman exchange combining Alice's identity key with Bob's signed pre-key and one-time pre-key, producing a shared secret the server cannot derive. The server acts as a directory service storing pre-key bundles but never learns private keys.
 
-3. The **Diffie-Hellman ratchet** provides forward secrecy by generating new ephemeral keys for each message â€” compromising the current key does not reveal past message keys. The **symmetric ratchet** provides break-in recovery by continuously deriving new chain keys from the root key â€” after compromise, a new DH exchange re-establishes security.
+3. The **Diffie-Hellman ratchet** provides forward secrecy by generating new ephemeral keys for each message — compromising the current key does not reveal past message keys. The **symmetric ratchet** provides break-in recovery by continuously deriving new chain keys from the root key — after compromise, a new DH exchange re-establishes security.
 
 4. **TCP** (port 5222, custom protocol) is the primary connection. **WebSocket** (port 443) falls back when networks block non-standard ports or have aggressive NAT timeouts. **Long-polling** is the last resort for severely degraded networks where WebSocket connections are interrupted.
 
@@ -1154,7 +1154,7 @@ The key architectural insight is that each device maintains independent ratchet 
 
 ### Application Problems
 
-<details><summary>Solution</summary>1. **Group Chat Fan-Out**: For 10,000 members, fan-on-write would require 10,000 inbox writes per message â€” prohibitive. Fan-on-read (O(1) write) is the only viable strategy. With 60% active, the read amplification of 6,000 reads per message is manageable using a group timeline with indexed range queries. Active members receive push notifications; inactive members sync on reconnect.
+<details><summary>Solution</summary>1. **Group Chat Fan-Out**: For 10,000 members, fan-on-write would require 10,000 inbox writes per message — prohibitive. Fan-on-read (O(1) write) is the only viable strategy. With 60% active, the read amplification of 6,000 reads per message is manageable using a group timeline with indexed range queries. Active members receive push notifications; inactive members sync on reconnect.
 
 2. **Media CDN**: Upload source to blob storage, trigger a transcoding pipeline that generates 5 quality tiers in parallel using FFmpeg workers. Generate thumbnail and GIF preview from the first keyframe. Make the lowest tier available immediately (<2 seconds) while higher tiers complete asynchronously. Use HLS with multiple quality variants.
 
@@ -1166,5 +1166,5 @@ The key architectural insight is that each device maintains independent ratchet 
 <details><summary>Solution</summary>
 **Disappearing Messages with Cryptographic Enforcement**
 
-Design a time-based key hierarchy: Long-term identity keys â†’ session keys (established via X3DH) â†’ time-window keys (derived from epoch windows, e.g., 1-hour windows) â†’ message keys. The server issues ephemeral decryption keys that expire after the configured time limit (24hâ€“90d). The server encrypts each message with the current time-window key. When a recipient opens a message 1 minute before the window expires, they must fetch the next window's key before it is available â€” preventing early access. Backward compatibility requires clients that support time-window encryption to signal this capability during session establishment. If the server is compromised, an attacker cannot recover expired messages because the time-window keys for past windows are deleted by the server. However, an attacker who compromises the server at time T can read all messages whose time windows are still valid â€” a fundamental tension between server-enforced policies and zero-knowledge architecture.
+Design a time-based key hierarchy: Long-term identity keys → session keys (established via X3DH) → time-window keys (derived from epoch windows, e.g., 1-hour windows) → message keys. The server issues ephemeral decryption keys that expire after the configured time limit (24h–90d). The server encrypts each message with the current time-window key. When a recipient opens a message 1 minute before the window expires, they must fetch the next window's key before it is available — preventing early access. Backward compatibility requires clients that support time-window encryption to signal this capability during session establishment. If the server is compromised, an attacker cannot recover expired messages because the time-window keys for past windows are deleted by the server. However, an attacker who compromises the server at time T can read all messages whose time windows are still valid — a fundamental tension between server-enforced policies and zero-knowledge architecture.
 </details>

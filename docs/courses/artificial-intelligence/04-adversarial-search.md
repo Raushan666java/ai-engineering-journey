@@ -1,4 +1,4 @@
-﻿# Chapter 4: Adversarial Search and Games
+# Chapter 4: Adversarial Search and Games
 
 **Previous:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md) | **Next:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md)
 
@@ -35,9 +35,9 @@
 
 ## Why Adversarial Search Matters
 
-> **Real-World Analogy â€” Chess Grandmaster Thinking:** Imagine you are playing a game of chess against a grandmaster. You are not just planning your own attack â€” you are constantly asking: *"If I move my knight here, what will my opponent do? Then how will I respond? What will they do next?"* This chain of "if-then" reasoning, where you assume your opponent will always pick the move that hurts you the most, is precisely what adversarial search algorithms model. From Stockfish defeating world champions to AlphaGo mastering the ancient game of Go, every competitive AI in history relies on the fundamental ideas in this chapter.
+> **Real-World Analogy — Chess Grandmaster Thinking:** Imagine you are playing a game of chess against a grandmaster. You are not just planning your own attack — you are constantly asking: *"If I move my knight here, what will my opponent do? Then how will I respond? What will they do next?"* This chain of "if-then" reasoning, where you assume your opponent will always pick the move that hurts you the most, is precisely what adversarial search algorithms model. From Stockfish defeating world champions to AlphaGo mastering the ancient game of Go, every competitive AI in history relies on the fundamental ideas in this chapter.
 
-Adversarial search is the branch of AI that tackles **competitive environments** â€” situations where multiple agents have conflicting goals. Unlike the single-agent search problems in Chapters 2â€“3 (where the world is passive), adversarial search assumes an **active opponent** actively working against you. This makes it both harder (the search space explodes) and more interesting (you must reason about another agent's strategy).
+Adversarial search is the branch of AI that tackles **competitive environments** — situations where multiple agents have conflicting goals. Unlike the single-agent search problems in Chapters 2–3 (where the world is passive), adversarial search assumes an **active opponent** actively working against you. This makes it both harder (the search space explodes) and more interesting (you must reason about another agent's strategy).
 
 ---
 
@@ -47,7 +47,7 @@ Adversarial search is the branch of AI that tackles **competitive environments**
 |---------|-----------|-----------|
 | Game Theory Fundamentals | Zero-sum, perfect information, game tree | Utility function, terminal state, branching factor |
 | Minimax Algorithm | Optimal play, MAX/MIN recursion | Backup value, minimax value, full-tree search |
-| Alpha-Beta Pruning | Î±/Î² bounds, pruning rule, move ordering | Pruning, cutoff, best-first ordering |
+| Alpha-Beta Pruning | α/β bounds, pruning rule, move ordering | Pruning, cutoff, best-first ordering |
 | Imperfect Information Games | Hidden cards, stochastic outcomes | Expectiminimax, chance nodes, probability-weighted |
 | Evaluation Functions | Cutoff search, Eval(s) | Quiescence, horizon effect, material balance |
 
@@ -77,7 +77,7 @@ flowchart LR
 ### 1. Game Theory Fundamentals
 
 
-> **Real-World Analogy â€” Poker vs Chess:** In chess, both players see the entire board (perfect information). In poker, you cannot see your opponent's hand (imperfect information). Most AI game-playing research starts with the simpler chess-like scenario: **deterministic, turn-based, two-player, zero-sum, perfect-information** games. This is the cleanest setting to understand adversarial reasoning.
+> **Real-World Analogy — Poker vs Chess:** In chess, both players see the entire board (perfect information). In poker, you cannot see your opponent's hand (imperfect information). Most AI game-playing research starts with the simpler chess-like scenario: **deterministic, turn-based, two-player, zero-sum, perfect-information** games. This is the cleanest setting to understand adversarial reasoning.
 
 **What Makes a Game Suitable for Adversarial Search?**
 
@@ -97,14 +97,14 @@ flowchart LR
 - **Utility Function:** Maps terminal states to numeric payoffs (win = +1, loss = -1, draw = 0).
 - **Ply:** One half-move (a single player's turn). Two ply = one full round.
 
-**Why It Matters:** The game tree size is \( b^d \) â€” exponential in depth. For Chess: \( 35^{80} \) states. This staggering number is *why* we need smarter search than brute-force.
+**Why It Matters:** The game tree size is \( b^d \) — exponential in depth. For Chess: \( 35^{80} \) states. This staggering number is *why* we need smarter search than brute-force.
 
 ---
 
 ### 2. Minimax Algorithm
 
 
-> **Real-World Analogy â€” Buyer vs Seller Negotiation:** Imagine you are selling a used car and a buyer is negotiating. You want the highest price (MAX), the buyer wants the lowest (MIN). You propose $10,000. The buyer can either accept or counter-offer. If they counter, you can accept, reject, or counter again. The minimax algorithm models exactly this adversarial back-and-forth, assuming the buyer always picks the option that leaves you worst off â€” and you plan accordingly.
+> **Real-World Analogy — Buyer vs Seller Negotiation:** Imagine you are selling a used car and a buyer is negotiating. You want the highest price (MAX), the buyer wants the lowest (MIN). You propose $10,000. The buyer can either accept or counter-offer. If they counter, you can accept, reject, or counter again. The minimax algorithm models exactly this adversarial back-and-forth, assuming the buyer always picks the option that leaves you worst off — and you plan accordingly.
 
 **Definition:** The Minimax algorithm computes the optimal move for a player (MAX) assuming the opponent (MIN) also plays optimally. It is a **recursive depth-first search** over the game tree.
 
@@ -126,19 +126,19 @@ function MINIMAX(state):
         return UTILITY(state)
     
     if state is MAX_NODE:
-        value = -âˆž
+        value = -∞
         for each successor in SUCCESSORS(state):
             value = MAX(value, MINIMAX(successor))
         return value
     
     if state is MIN_NODE:
-        value = +âˆž
+        value = +∞
         for each successor in SUCCESSORS(state):
             value = MIN(value, MINIMAX(successor))
         return value
 ```
 
-**Step-by-Step Dry Run â€” Tic-Tac-Toe Endgame:**
+**Step-by-Step Dry Run — Tic-Tac-Toe Endgame:**
 
 Consider a simplified game tree where MAX (X) has two possible moves, each leading to a MIN (O) response.
 
@@ -154,15 +154,15 @@ Consider a simplified game tree where MAX (X) has two possible moves, each leadi
 
 | Step | Current Node | Node Type | Children Values | Chosen | Returned |
 |------|-------------|-----------|----------------|--------|----------|
-| 1 | Leaf L1 (A1) | Terminal | â€” | â€” | +1 |
-| 2 | Leaf L2 (A2) | Terminal | â€” | â€” | -1 |
+| 1 | Leaf L1 (A1) | Terminal | — | — | +1 |
+| 2 | Leaf L2 (A2) | Terminal | — | — | -1 |
 | 3 | Node A | MIN | [+1, -1] | min = -1 | -1 |
-| 4 | Leaf L3 (B1) | Terminal | â€” | â€” | 0 |
-| 5 | Leaf L4 (B2) | Terminal | â€” | â€” | +1 |
+| 4 | Leaf L3 (B1) | Terminal | — | — | 0 |
+| 5 | Leaf L4 (B2) | Terminal | — | — | +1 |
 | 6 | Node B | MIN | [0, +1] | min = 0 | 0 |
 | 7 | Root | MAX | [-1, 0] | max = 0 | **0** |
 
-**Result:** MAX chooses move B (value = 0 â†’ draw) rather than move A (value = -1 â†’ loss).
+**Result:** MAX chooses move B (value = 0 → draw) rather than move A (value = -1 → loss).
 
 **Python Implementation:**
 
@@ -221,19 +221,19 @@ def find_best_move(board, depth):
 
 | Metric | Value | Why? |
 |--------|-------|------|
-| Time | \( O(b^d) \) | Every node in the game tree must be visited â€” exponential in depth |
+| Time | \( O(b^d) \) | Every node in the game tree must be visited — exponential in depth |
 | Space | \( O(b \cdot d) \) | Depth-first recursion stack plus branching factor for state generation |
 | Complete? | Yes (finite trees) | Will always find a move if the game tree is finite |
 | Optimal? | Yes | Returns the theoretically optimal move assuming perfect opponent play |
 
-**Why Exponential?** At each of \( d \) levels, the branching factor \( b \) multiplies the number of nodes. Chess: \( b \approx 35 \), \( d \approx 80 \) â†’ \( 35^{80} \) states. Even at 1 trillion nodes/second, the universe would end before this finishes. This is why raw minimax is only usable for trivial games.
+**Why Exponential?** At each of \( d \) levels, the branching factor \( b \) multiplies the number of nodes. Chess: \( b \approx 35 \), \( d \approx 80 \) → \( 35^{80} \) states. Even at 1 trillion nodes/second, the universe would end before this finishes. This is why raw minimax is only usable for trivial games.
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |-----------|-------------|
-| Guarantees optimal play for finite zero-sum games | Exponential time complexity â€” unusable for deep games |
-| Simple recursive implementation | Requires full game tree â€” impractical for Chess/Go |
+| Guarantees optimal play for finite zero-sum games | Exponential time complexity — unusable for deep games |
+| Simple recursive implementation | Requires full game tree — impractical for Chess/Go |
 | Provably correct under assumptions | Assumes opponent always plays optimally (no exploitation) |
 | Foundation for all modern game AI | Cannot handle chance nodes or hidden information |
 | Easy to parallelize across branches | Every node evaluated even when irrelevant |
@@ -254,54 +254,54 @@ def find_best_move(board, depth):
 ### 3. Alpha-Beta Pruning
 
 
-> **Real-World Analogy â€” Real Estate Shopping:** You are house-hunting. You see a house listed at $500,000 and love it â€” it is your current best find (Î± = 500k). Now you tour another house. The realtor shows you the kitchen, then mentions the foundation has cracks. You immediately know fixing the foundation will cost $100k, bringing this house to at least $600k. You stop the tour â€” there is no need to see the bedrooms because the house is already worse than your current best. This is exactly how alpha-beta pruning works: once a branch proves it cannot beat the current best option, you **prune** it without further exploration.
+> **Real-World Analogy — Real Estate Shopping:** You are house-hunting. You see a house listed at $500,000 and love it — it is your current best find (α = 500k). Now you tour another house. The realtor shows you the kitchen, then mentions the foundation has cracks. You immediately know fixing the foundation will cost $100k, bringing this house to at least $600k. You stop the tour — there is no need to see the bedrooms because the house is already worse than your current best. This is exactly how alpha-beta pruning works: once a branch proves it cannot beat the current best option, you **prune** it without further exploration.
 
-**Definition:** Alpha-Beta pruning is an enhancement to Minimax that avoids exploring branches that cannot possibly influence the final decision. It maintains two bounds â€” Î± (the best MAX can guarantee) and Î² (the best MIN can guarantee) â€” and prunes subtrees when Î± â‰¥ Î².
+**Definition:** Alpha-Beta pruning is an enhancement to Minimax that avoids exploring branches that cannot possibly influence the final decision. It maintains two bounds — α (the best MAX can guarantee) and β (the best MIN can guarantee) — and prunes subtrees when α ≥ β.
 
 **Algorithm Steps:**
 
 | Step | Description |
 |------|-------------|
 | 1 | Perform depth-first minimax search as normal |
-| 2 | Maintain Î± = best value found so far for MAX (initialized to -âˆž) |
-| 3 | Maintain Î² = best value found so far for MIN (initialized to +âˆž) |
-| 4 | At each node, pass current Î± and Î² to children |
-| 5 | After evaluating a child, update Î± (at MAX nodes) or Î² (at MIN nodes) |
-| 6 | If at any point Î± â‰¥ Î², **prune** remaining children â€” they cannot affect the result |
+| 2 | Maintain α = best value found so far for MAX (initialized to -∞) |
+| 3 | Maintain β = best value found so far for MIN (initialized to +∞) |
+| 4 | At each node, pass current α and β to children |
+| 5 | After evaluating a child, update α (at MAX nodes) or β (at MIN nodes) |
+| 6 | If at any point α ≥ β, **prune** remaining children — they cannot affect the result |
 | 7 | Return the node's minimax value as usual |
 
 **Pseudocode:**
 
 ```
-function ALPHA-BETA(state, Î±, Î²):
+function ALPHA-BETA(state, α, β):
     if state is TERMINAL:
         return UTILITY(state)
     
     if state is MAX_NODE:
-        value = -âˆž
+        value = -∞
         for each successor in SUCCESSORS(state):
-            value = MAX(value, ALPHA-BETA(successor, Î±, Î²))
-            if value â‰¥ Î²:
-                return value    // Î² prune
-            Î± = MAX(Î±, value)
+            value = MAX(value, ALPHA-BETA(successor, α, β))
+            if value ≥ β:
+                return value    // β prune
+            α = MAX(α, value)
         return value
     
     if state is MIN_NODE:
-        value = +âˆž
+        value = +∞
         for each successor in SUCCESSORS(state):
-            value = MIN(value, ALPHA-BETA(successor, Î±, Î²))
-            if value â‰¤ Î±:
-                return value    // Î± prune
-            Î² = MIN(Î², value)
+            value = MIN(value, ALPHA-BETA(successor, α, β))
+            if value ≤ α:
+                return value    // α prune
+            β = MIN(β, value)
         return value
 ```
 
-**Step-by-Step Dry Run â€” Full Trace with Î±/Î² Bounds:**
+**Step-by-Step Dry Run — Full Trace with α/β Bounds:**
 
 Consider this game tree (depth = 3, MIN at middle level):
 
 ```
-                Root (MAX)  Î±=-âˆž, Î²=+âˆž
+                Root (MAX)  α=-∞, β=+∞
                /           \
           Node A (MIN)    Node B (MIN)
          /   |   \        /   |   \
@@ -310,30 +310,30 @@ Consider this game tree (depth = 3, MIN at middle level):
 
 **Trace Table:**
 
-| Step | Node | Type | Î± | Î² | Child Val | Action | State |
+| Step | Node | Type | α | β | Child Val | Action | State |
 |------|------|------|----|----|-----------|--------|-------|
-| 1 | Root | MAX | -âˆž | +âˆž | â€” | Descend to A | Exploring A |
-| 2 | A | MIN | -âˆž | +âˆž | â€” | Descend to A1 | |
-| 3 | A1 | Leaf | â€” | â€” | 3 | Return 3 | |
-| 4 | A | MIN | -âˆž | +âˆž | 3 | Î² = min(+âˆž, 3) = 3 | Î² updated |
-| 5 | A | MIN | -âˆž | 3 | â€” | Descend to A2 | |
-| 6 | A2 | Leaf | â€” | â€” | 12 | Return 12 | |
-| 7 | A | MIN | -âˆž | 3 | 12 | Î² = min(3, 12) = 3 | Î² unchanged |
-| 8 | A | MIN | -âˆž | 3 | â€” | Descend to A3 | |
-| 9 | A3 | Leaf | â€” | â€” | 8 | Return 8 | |
-| 10 | A | MIN | -âˆž | 3 | 8 | Î² = min(3, 8) = 3 | Î² unchanged |
-| 11 | A | MIN | -âˆž | 3 | â€” | Return 3 | A evaluated |
-| 12 | Root | MAX | -âˆž | +âˆž | 3 | Î± = max(-âˆž, 3) = 3 | Î± updated |
-| 13 | Root | MAX | 3 | +âˆž | â€” | Descend to B | Exploring B |
-| 14 | B | MIN | 3 | +âˆž | â€” | Descend to B1 | |
-| 15 | B1 | Leaf | â€” | â€” | 2 | Return 2 | |
-| 16 | B | MIN | 3 | +âˆž | 2 | Î² = min(+âˆž, 2) = 2 | Î² updated |
-| 17 | B | MIN | 3 | 2 | â€” | Î± â‰¥ Î² â†’ **PRUNE!** | B2 and B3 skipped |
-| 18 | B | MIN | 3 | 2 | â€” | Return 2 | Pruned result |
-| 19 | Root | MAX | 3 | +âˆž | 2 | Î± = max(3, 2) = 3 | Î± unchanged |
-| 20 | Root | MAX | 3 | +âˆž | â€” | **Return 3, choose move A** | |
+| 1 | Root | MAX | -∞ | +∞ | — | Descend to A | Exploring A |
+| 2 | A | MIN | -∞ | +∞ | — | Descend to A1 | |
+| 3 | A1 | Leaf | — | — | 3 | Return 3 | |
+| 4 | A | MIN | -∞ | +∞ | 3 | β = min(+∞, 3) = 3 | β updated |
+| 5 | A | MIN | -∞ | 3 | — | Descend to A2 | |
+| 6 | A2 | Leaf | — | — | 12 | Return 12 | |
+| 7 | A | MIN | -∞ | 3 | 12 | β = min(3, 12) = 3 | β unchanged |
+| 8 | A | MIN | -∞ | 3 | — | Descend to A3 | |
+| 9 | A3 | Leaf | — | — | 8 | Return 8 | |
+| 10 | A | MIN | -∞ | 3 | 8 | β = min(3, 8) = 3 | β unchanged |
+| 11 | A | MIN | -∞ | 3 | — | Return 3 | A evaluated |
+| 12 | Root | MAX | -∞ | +∞ | 3 | α = max(-∞, 3) = 3 | α updated |
+| 13 | Root | MAX | 3 | +∞ | — | Descend to B | Exploring B |
+| 14 | B | MIN | 3 | +∞ | — | Descend to B1 | |
+| 15 | B1 | Leaf | — | — | 2 | Return 2 | |
+| 16 | B | MIN | 3 | +∞ | 2 | β = min(+∞, 2) = 2 | β updated |
+| 17 | B | MIN | 3 | 2 | — | α ≥ β → **PRUNE!** | B2 and B3 skipped |
+| 18 | B | MIN | 3 | 2 | — | Return 2 | Pruned result |
+| 19 | Root | MAX | 3 | +∞ | 2 | α = max(3, 2) = 3 | α unchanged |
+| 20 | Root | MAX | 3 | +∞ | — | **Return 3, choose move A** | |
 
-**Key Observation:** Nodes B2 (14) and B3 (5) were **never visited**. Without pruning, minimax would evaluate all 7 leaf nodes. With alpha-beta, only 5 leaf nodes were visited â€” a 28% savings on this tiny tree. On larger trees, savings approach 50% with optimal ordering.
+**Key Observation:** Nodes B2 (14) and B3 (5) were **never visited**. Without pruning, minimax would evaluate all 7 leaf nodes. With alpha-beta, only 5 leaf nodes were visited — a 28% savings on this tiny tree. On larger trees, savings approach 50% with optimal ordering.
 
 **Python Implementation:**
 
@@ -366,7 +366,7 @@ def alpha_beta(board, depth, alpha, beta, is_maximizing):
             best_value = max(best_value, value)
             alpha = max(alpha, value)
             if beta <= alpha:
-                break  # Î² prune
+                break  # β prune
         return best_value
     else:
         best_value = float('inf')
@@ -377,7 +377,7 @@ def alpha_beta(board, depth, alpha, beta, is_maximizing):
             best_value = min(best_value, value)
             beta = min(beta, value)
             if beta <= alpha:
-                break  # Î± prune
+                break  # α prune
         return best_value
 
 
@@ -407,7 +407,7 @@ def find_best_move_alpha_beta(board, depth):
 
 | Metric | Best Case | Worst Case | Average Case |
 |--------|-----------|------------|--------------|
-| Time | \( O(b^{d/2}) \) | \( O(b^d) \) â€” same as Minimax | \( O(b^{3d/4}) \) |
+| Time | \( O(b^{d/2}) \) | \( O(b^d) \) — same as Minimax | \( O(b^{3d/4}) \) |
 | Space | \( O(b \cdot d) \) | \( O(b \cdot d) \) | \( O(b \cdot d) \) |
 
 **Why Best Case is \( O(b^{d/2}) \):** With perfect move ordering (best moves evaluated first), alpha-beta prunes approximately half the tree levels. This effectively doubles the searchable depth compared to naive minimax for the same computational budget.
@@ -425,7 +425,7 @@ def find_best_move_alpha_beta(board, depth):
 |-----------|-------------|
 | Much faster than Minimax in practice (can double search depth) | Performance depends heavily on move ordering |
 | Returns exactly the same result as Minimax (no approximation) | Worst case = same as plain Minimax |
-| Simple to implement as a wrapper around Minimax | Complex to parallelize efficiently (shared Î±/Î² bounds) |
+| Simple to implement as a wrapper around Minimax | Complex to parallelize efficiently (shared α/β bounds) |
 | Memory efficient (depth-first) | Ineffective if branching factor is small |
 | Widely used in real game engines (Stockfish) | Cannot handle chance nodes or imperfect information |
 
@@ -433,16 +433,16 @@ def find_best_move_alpha_beta(board, depth):
 
 | Edge Case | Problem | Solution |
 |-----------|---------|----------|
-| Î± = Î² at root | All moves equally good | Pick any or use secondary heuristic |
-| Zero-width window (Î± = Î²) | Null window search | Used for scout search â€” test if move exceeds bound |
-| Negative infinity pruning | No initial bounds known | Start Î± = -âˆž, Î² = +âˆž |
-| Transposition interference | Same state, different Î±/Î² | Store bounds in transposition table |
+| α = β at root | All moves equally good | Pick any or use secondary heuristic |
+| Zero-width window (α = β) | Null window search | Used for scout search — test if move exceeds bound |
+| Negative infinity pruning | No initial bounds known | Start α = -∞, β = +∞ |
+| Transposition interference | Same state, different α/β | Store bounds in transposition table |
 | Deep pruning cascade | One prune enables deeper prunes | Recursive bound tightening |
-| Fail-soft vs fail-hard | Returning values outside [Î±, Î²] | Fail-soft may return tighter bounds for parent |
+| Fail-soft vs fail-hard | Returning values outside [α, β] | Fail-soft may return tighter bounds for parent |
 
 ---
 
-### 4. Minimax vs Alpha-Beta â€” Comparison Table
+### 4. Minimax vs Alpha-Beta — Comparison Table
 
 
 | Feature | Minimax | Alpha-Beta |
@@ -451,7 +451,7 @@ def find_best_move_alpha_beta(board, depth):
 | Nodes Visited | All \( b^d \) | \( b^{d/2} \) to \( b^d \) (depends on ordering) |
 | Search Depth (same time) | \( d \) | Up to \( 2d \) with perfect ordering |
 | Move Ordering Needed? | No | **Critical** for performance |
-| Implementation Complexity | Low | Low (adds Î±/Î² params + pruning check) |
+| Implementation Complexity | Low | Low (adds α/β params + pruning check) |
 | Parallelizable? | Yes (trivially) | Moderate (shared bounds) |
 | Memory | \( O(bd) \) | \( O(bd) \) |
 | Handles Chance Nodes? | No | No (same limitation) |
@@ -462,7 +462,7 @@ def find_best_move_alpha_beta(board, depth):
 ### 5. Evaluation Functions and Cutoff Search
 
 
-> **Real-World Analogy â€” Military General's Intel:** A general cannot see every possible battlefield outcome 20 moves ahead. Instead, they evaluate the current situation: troop strength, supply lines, terrain advantage. This is exactly an evaluation function â€” a fast, approximate measure of how "good" a position looks, without simulating the entire future.
+> **Real-World Analogy — Military General's Intel:** A general cannot see every possible battlefield outcome 20 moves ahead. Instead, they evaluate the current situation: troop strength, supply lines, terrain advantage. This is exactly an evaluation function — a fast, approximate measure of how "good" a position looks, without simulating the entire future.
 
 **Definition:** An evaluation function \( Eval(s) \) estimates the utility of a non-terminal state \( s \) from MAX's perspective. It replaces the full tree search to terminal states with a heuristic estimate.
 
@@ -472,10 +472,10 @@ def find_best_move_alpha_beta(board, depth):
 |----------|-------------|
 | **Accuracy** | Should correlate strongly with actual winning chances |
 | **Speed** | Must be computable in microseconds (called millions of times) |
-| **Consistency** | Small changes in state â†’ small changes in evaluation |
+| **Consistency** | Small changes in state → small changes in evaluation |
 | **Symmetry** | \( Eval(s) \) for MAX = \( -Eval(s) \) for MIN in zero-sum games |
 
-**Example â€” Chess Evaluation Function:**
+**Example — Chess Evaluation Function:**
 
 ```
 Eval(s) = MaterialBalance + PositionalScore + KingSafety + PawnStructure
@@ -506,7 +506,7 @@ A critical failure mode of cutoff search: a catastrophic consequence (e.g., losi
 ### 6. Games with Imperfect Information and Stochastic Elements
 
 
-> **Real-World Analogy â€” Poker:** Unlike chess, poker players cannot see their opponent's cards. Decisions must account for probabilities ("there is a 30% chance my opponent has a flush") and bluffing (intentional misinformation). This makes the game fundamentally harder â€” the optimal strategy is no longer a single move but a **probability distribution over moves**.
+> **Real-World Analogy — Poker:** Unlike chess, poker players cannot see their opponent's cards. Decisions must account for probabilities ("there is a 30% chance my opponent has a flush") and bluffing (intentional misinformation). This makes the game fundamentally harder — the optimal strategy is no longer a single move but a **probability distribution over moves**.
 
 **Stochastic Games (With Chance):** Games like Backgammon include dice rolls. The game tree has **chance nodes** where the outcome is probabilistic.
 
@@ -527,9 +527,9 @@ function EXPECTIMINIMAX(state):
         return SUM over children of P(child) * EXPECTIMINIMAX(child)
 ```
 
-**Complexity:** \( O(b^d \cdot n^d) \) where \( n \) is the number of chance outcomes per chance node â€” significantly worse than standard minimax.
+**Complexity:** \( O(b^d \cdot n^d) \) where \( n \) is the number of chance outcomes per chance node — significantly worse than standard minimax.
 
-**Imperfect Information (Hidden Cards):** Games like Poker, Bridge, and Stratego require reasoning about **belief states** â€” sets of possible world states consistent with observations.
+**Imperfect Information (Hidden Cards):** Games like Poker, Bridge, and Stratego require reasoning about **belief states** — sets of possible world states consistent with observations.
 
 **Key Challenges:**
 
@@ -559,21 +559,21 @@ function EXPECTIMINIMAX(state):
 
 | Algorithm | Complete? | Optimal? | Space | Key Feature |
 |-----------|:---:|:---:|:---:|-------------|
-| Minimax | âœ… (finite tree) | âœ… | O(bd) | Full tree, both players optimal |
-| Alpha-Beta | âœ… (same as Minimax) | âœ… | O(bd) | Prunes irrelevant branches |
-| Expectiminimax | âœ… | âœ… (max expected) | O(bâ¿d) | Chance nodes with probabilities |
-| MCTS | âŒ (asymptotically complete) | âŒ (approximate) | Variable | Selective sampling via UCT |
-| CFR | âœ… (tabular) | âœ… (Nash equilibrium) | Large | Regret minimization for imperfect info |
+| Minimax | ✅ (finite tree) | ✅ | O(bd) | Full tree, both players optimal |
+| Alpha-Beta | ✅ (same as Minimax) | ✅ | O(bd) | Prunes irrelevant branches |
+| Expectiminimax | ✅ | ✅ (max expected) | O(bⁿd) | Chance nodes with probabilities |
+| MCTS | ❌ (asymptotically complete) | ❌ (approximate) | Variable | Selective sampling via UCT |
+| CFR | ✅ (tabular) | ✅ (Nash equilibrium) | Large | Regret minimization for imperfect info |
 
 ---
 
-## Quick Reference â€” Alpha-Beta Parameters
+## Quick Reference — Alpha-Beta Parameters
 
 | Parameter | Meaning | Initial Value | Update Rule |
 |-----------|---------|:---:|-------------|
-| Î± (Alpha) | Best value for MAX along path | -âˆž | Î± â† max(Î±, v) |
-| Î² (Beta) | Best value for MIN along path | +âˆž | Î² â† min(Î², v) |
-| Pruning condition | Î± â‰¥ Î² | â€” | Skip remaining children |
+| α (Alpha) | Best value for MAX along path | -∞ | α ← max(α, v) |
+| β (Beta) | Best value for MIN along path | +∞ | β ← min(β, v) |
+| Pruning condition | α ≥ β | — | Skip remaining children |
 
 ---
 
@@ -581,12 +581,12 @@ function EXPECTIMINIMAX(state):
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Minimax | â¬œ | â¬œ | â¬œ | âœ… |
-| Alpha-Beta | â¬œ | â¬œ | â¬œ | âœ… |
-| MCTS | âœ… | â¬œ | â¬œ | âœ… |
-| Expectiminimax | â¬œ | â¬œ | â¬œ | âœ… |
-| Evaluation Functions | âœ… | âœ… | â¬œ | â¬œ |
-| Transposition Tables | âœ… | âœ… | âœ… | â¬œ |
+| Minimax | ⬜ | ⬜ | ⬜ | ✅ |
+| Alpha-Beta | ⬜ | ⬜ | ⬜ | ✅ |
+| MCTS | ✅ | ⬜ | ⬜ | ✅ |
+| Expectiminimax | ⬜ | ⬜ | ⬜ | ✅ |
+| Evaluation Functions | ✅ | ✅ | ⬜ | ⬜ |
+| Transposition Tables | ✅ | ✅ | ✅ | ⬜ |
 
 ---
 
@@ -595,19 +595,19 @@ function EXPECTIMINIMAX(state):
 Common adversarial search questions in technical interviews and their expert answers:
 
 **Q1: How much faster is Alpha-Beta than Minimax?**
-> In the best case (perfect move ordering), alpha-beta cuts the effective branching factor from \( b \) to \( \sqrt{b} \), reducing node count from \( b^d \) to \( b^{d/2} \). This doubles the searchable depth for the same compute budget. In practice with good move ordering, Stockfish achieves about 85â€“95% of this theoretical maximum.
+> In the best case (perfect move ordering), alpha-beta cuts the effective branching factor from \( b \) to \( \sqrt{b} \), reducing node count from \( b^d \) to \( b^{d/2} \). This doubles the searchable depth for the same compute budget. In practice with good move ordering, Stockfish achieves about 85–95% of this theoretical maximum.
 
 **Q2: What makes a good evaluation function?**
-> Three properties: (1) **Accuracy** â€” it must correlate with actual winning probability; (2) **Speed** â€” it is called at every leaf node, potentially millions of times per search; (3) **Differentiability** â€” small move differences should produce proportional evaluation differences. Material balance alone (piece counting) gets about 70% accuracy in chess; adding position tables, pawn structure, and king safety pushes it above 90%.
+> Three properties: (1) **Accuracy** — it must correlate with actual winning probability; (2) **Speed** — it is called at every leaf node, potentially millions of times per search; (3) **Differentiability** — small move differences should produce proportional evaluation differences. Material balance alone (piece counting) gets about 70% accuracy in chess; adding position tables, pawn structure, and king safety pushes it above 90%.
 
 **Q3: What is the horizon effect and how do you fix it?**
 > The horizon effect occurs when a negative consequence (e.g., losing the queen) is pushed just beyond the search depth by a sequence of forcing moves (checks, captures). The search sees an artificially positive evaluation because it cannot see the coming disaster. **Solutions:** quiescence search (extend search until position is "quiet"), singular extensions (extend branches with one standout move), and iterative deepening (each deeper iteration pushes the horizon further).
 
 **Q4: How do transposition tables improve game-tree search?**
-> Transposition tables cache the evaluation of already-seen states using Zobrist hashing. The same chess position can be reached through different move sequences (e.g., 1.e4 e5 2.Nf3 vs 1.Nf3 e5 2.e4). Without a transposition table, both paths are explored independently. With one, the second encounter is a cache hit â€” saving an entire subtree. Stockfish's transposition table hits 40â€“60% of lookups in the middle game.
+> Transposition tables cache the evaluation of already-seen states using Zobrist hashing. The same chess position can be reached through different move sequences (e.g., 1.e4 e5 2.Nf3 vs 1.Nf3 e5 2.e4). Without a transposition table, both paths are explored independently. With one, the second encounter is a cache hit — saving an entire subtree. Stockfish's transposition table hits 40–60% of lookups in the middle game.
 
 **Q5: Can Alpha-Beta pruning be combined with Monte Carlo Tree Search?**
-> Not directly â€” MCTS uses statistical sampling (UCB1 selection), not depth-first minimax with Î±/Î² bounds. However, hybrid approaches exist: **AlphaZero** uses MCTS with a neural network evaluation function, achieving superhuman performance at Go, Chess, and Shogi. The Î±/Î² idea lives on in the "backup" phase of MCTS, where node values are propagated upward (though as visit counts and average rewards, not minimax values).
+> Not directly — MCTS uses statistical sampling (UCB1 selection), not depth-first minimax with α/β bounds. However, hybrid approaches exist: **AlphaZero** uses MCTS with a neural network evaluation function, achieving superhuman performance at Go, Chess, and Shogi. The α/β idea lives on in the "backup" phase of MCTS, where node values are propagated upward (though as visit counts and average rewards, not minimax values).
 
 ---
 
@@ -622,15 +622,15 @@ Common adversarial search questions in technical interviews and their expert ans
 | **DeepBlue** | Chess | Alpha-Beta + custom ASIC chips + grandmaster opening book | First computer to beat a reigning world champion (Kasparov, 1997) |
 | **Pluribus** | Poker (No-Limit Texas Hold'em) | Counterfactual Regret Minimization (CFR) + real-time abstraction | First superhuman AI in multi-player poker with imperfect information |
 | **Libratus** | Poker (Heads-Up No-Limit) | CFR + nested abstraction + self-play | Beat four professional poker players in 2017 |
-| **MuZero** | Atari, Chess, Go, Shogi | Learned model (no rules given) + MCTS | Mastered games without knowing the rules â€” learned everything from experience |
+| **MuZero** | Atari, Chess, Go, Shogi | Learned model (no rules given) + MCTS | Mastered games without knowing the rules — learned everything from experience |
 | **Video Game AI (OpenAI Five)** | Dota 2 | PPO + LSTM + self-play (~60k years of gameplay) | Beat world champions, coordinates 5 heroes with imperfect information |
 | **StarCraft II (AlphaStar)** | StarCraft II | Transformer + deep RL + MCTS-like tree search | Grandmaster level, manages imperfect information (fog of war) |
 
 **How Stockfish Uses Alpha-Beta in Practice:**
 
 1. **Iterative Deepening:** Starts at depth 1, incrementally increases. If search is interrupted, the best move from the deepest completed depth is returned.
-2. **Move Ordering:** Captures first (MVV-LVA â€” Most Valuable Victim, Least Valuable Attacker), then killer moves, then history heuristic, then remaining moves.
-3. **Null-Move Pruning:** Skip a turn and see if the position is still good â€” if even after "passing" the evaluation holds, the branch is safe to prune.
+2. **Move Ordering:** Captures first (MVV-LVA — Most Valuable Victim, Least Valuable Attacker), then killer moves, then history heuristic, then remaining moves.
+3. **Null-Move Pruning:** Skip a turn and see if the position is still good — if even after "passing" the evaluation holds, the branch is safe to prune.
 4. **Late Move Reductions (LMR):** Moves later in the ordering are searched at reduced depth unless they prove promising.
 5. **Transposition Table:** Zobrist-hashed entries store depth, score, flag (exact/lower/upper bound) and best move.
 
@@ -647,12 +647,12 @@ Common adversarial search questions in technical interviews and their expert ans
 <details><summary>Answer&lt;/summary&gt;B) MAX nodes select the child with the highest backed-up value.</details>
 
 **Q2:** What condition triggers alpha-beta pruning?
-- A) When Î± â‰¤ Î²
-- B) When Î± â‰¥ Î²
+- A) When α ≤ β
+- B) When α ≥ β
 - C) When search depth exceeds limit
 - D) When all nodes are evaluated
 
-<details><summary>Answer&lt;/summary&gt;B) Pruning occurs when Î± â‰¥ Î², meaning the current branch cannot affect the final decision.</details>
+<details><summary>Answer&lt;/summary&gt;B) Pruning occurs when α ≥ β, meaning the current branch cannot affect the final decision.</details>
 
 **Q3:** What is the "horizon effect"?
 - A) The game tree is too deep to search completely
@@ -685,7 +685,7 @@ Common adversarial search questions in technical interviews and their expert ans
 ### Review Questions
 
 1. Why is the Minimax algorithm called "zero-sum"?
-2. Explain the meaning of Î± and Î² in pruning.
+2. Explain the meaning of α and β in pruning.
 3. What is "quiescence search" and why is it used?
 4. How do stochastic games (like Backgammon) differ from deterministic games (like Chess)?
 5. Explain why move ordering is critical for alpha-beta pruning but irrelevant for minimax.

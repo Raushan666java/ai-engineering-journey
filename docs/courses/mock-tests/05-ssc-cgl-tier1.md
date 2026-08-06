@@ -1,6 +1,6 @@
-﻿# SSC CGL Tier 1 â€” Full-Length Mock Test
+# SSC CGL Tier 1 — Full-Length Mock Test
 
-> **Exam:** Staff Selection Commission â€” Combined Graduate Level (SSC CGL) Tier 1  
+> **Exam:** Staff Selection Commission — Combined Graduate Level (SSC CGL) Tier 1  
 > **Total Questions:** 100 | **Duration:** 60 minutes | **Max Marks:** 200  
 > **Negative Marking:** 0.50 marks per wrong answer (each question carries 2 marks)
 
@@ -39,7 +39,7 @@
 ## Exam Pattern Visualization
 
 ```mermaid
-pie title SSC CGL Tier 1 â€” Section Weightage (by marks)
+pie title SSC CGL Tier 1 — Section Weightage (by marks)
     "General Intelligence & Reasoning" : 50
     "General Awareness" : 50
     "Quantitative Aptitude" : 50

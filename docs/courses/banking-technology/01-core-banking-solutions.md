@@ -1,4 +1,4 @@
-﻿# Chapter 01: Core Banking Solutions (CBS)
+# Chapter 01: Core Banking Solutions (CBS)
 
 ## Learning Objectives
 
@@ -36,15 +36,15 @@ By the end of this chapter, you will be able to:
 
 Core Banking Solution (CBS) is the centralized software platform that enables customers to operate their accounts from any branch of the bank, regardless of where the account was opened. In India, CBS adoption began in the early 2000s under the financial sector reform initiatives led by RBI and IBA.
 
-The fundamental principle of CBS is "Anywhere, Anytime Banking" â€” a customer walks into Branch A in Mumbai but transacts on an account opened at Branch Z in Delhi. This is made possible by a centralized database and real-time transaction processing.
+The fundamental principle of CBS is "Anywhere, Anytime Banking" — a customer walks into Branch A in Mumbai but transacts on an account opened at Branch Z in Delhi. This is made possible by a centralized database and real-time transaction processing.
 
 #### 1.1 Evolution of CBS in India
 
-- **1970sâ€“1980s:** Branch-level standalone accounting systems (manual ledger + batch processing)
+- **1970s–1980s:** Branch-level standalone accounting systems (manual ledger + batch processing)
 - **1990s:** LAN-based branch automation with local databases
-- **2000â€“2005:** Introduction of CBS â€” centralized systems by Infosys (Finacle), TCS (BaNCS), and Temenos (T24)
-- **2006â€“2010:** Nationwide rollout of CBS across all Public Sector Banks (PSBs)
-- **2010â€“present:** CBS integrated with digital channels â€” UPI, Internet Banking, Mobile Banking
+- **2000–2005:** Introduction of CBS — centralized systems by Infosys (Finacle), TCS (BaNCS), and Temenos (T24)
+- **2006–2010:** Nationwide rollout of CBS across all Public Sector Banks (PSBs)
+- **2010–present:** CBS integrated with digital channels — UPI, Internet Banking, Mobile Banking
 
 #### 1.2 Why CBS Matters for IBPS Exams
 
@@ -54,7 +54,7 @@ IBPS SO IT Officer exams test CBS knowledge because it is the backbone of bankin
 - CBS database design for high-volume transaction processing
 - Interface standards like ISO 8583 for ATM/POS messaging
 
-### 2. CBS Architecture â€” Three-Tier Model
+### 2. CBS Architecture — Three-Tier Model
 
 Most CBS platforms in India follow a three-tier architecture:
 
@@ -105,7 +105,7 @@ The middleware tier is the brain of the integration layer. It performs:
 - **Security:** Encryption/decryption, MAC verification, SSL termination
 - **Queue management:** IBM MQ, ActiveMQ, or RabbitMQ for guaranteed message delivery
 
-**Example â€” ATM Transaction Flow through Middleware:**
+**Example — ATM Transaction Flow through Middleware:**
 
 1. Customer inserts card at ATM
 2. ATM sends ISO 8583 message (0200 financial request) to middleware
@@ -125,7 +125,7 @@ The back-end tier contains:
 - **Transaction Engine:** Processes debits/credits with ACID compliance
 - **Batch Processing Engine:** Runs EOD (End of Day), interest postings, standing instructions
 
-### 3. CBS Platforms â€” T24, Finacle, BaNCS
+### 3. CBS Platforms — T24, Finacle, BaNCS
 
 #### 3.1 Temenos T24 (now Temenos Transact)
 
@@ -133,7 +133,7 @@ T24 is a Swiss-origin CBS platform widely used by private banks in India (HDFC, 
 
 **Architecture Highlights:**
 - Multi-entity, multi-currency design
-- Built on Temenos Application Framework (TAFJ) â€” Java-based runtime
+- Built on Temenos Application Framework (TAFJ) — Java-based runtime
 - OFS (Open Financial System) interface for external integration
 - Real-time online processing with end-of-day batch
 
@@ -146,13 +146,13 @@ T24 is a Swiss-origin CBS platform widely used by private banks in India (HDFC, 
 **T24 Module Structure:**
 ```
 T24 Modules:
-â”œâ”€â”€ CUSTOMER (Customer Management)
-â”œâ”€â”€ ACCOUNT (Savings/Current/FD/RD)
-â”œâ”€â”€ TELLER (Cash/Cheque Transactions)
-â”œâ”€â”€ FUNDS (NEFT/RTGS/IMPS)
-â”œâ”€â”€ LENDING (Loans/Overdrafts)
-â”œâ”€â”€ SECURITIES (Investments)
-â””â”€â”€ SECURITY (User/Role Management)
+├── CUSTOMER (Customer Management)
+├── ACCOUNT (Savings/Current/FD/RD)
+├── TELLER (Cash/Cheque Transactions)
+├── FUNDS (NEFT/RTGS/IMPS)
+├── LENDING (Loans/Overdrafts)
+├── SECURITIES (Investments)
+└── SECURITY (User/Role Management)
 ```
 
 #### 3.2 Infosys Finacle
@@ -174,13 +174,13 @@ Finacle is the most widely deployed CBS in Indian public sector banks (SBI, PNB,
 **Finacle Module Structure:**
 ```
 Finacle Modules:
-â”œâ”€â”€ Finacle Core (CBS engine)
-â”œâ”€â”€ Finacle Connect (API layer)
-â”œâ”€â”€ Finacle CRM (Customer management)
-â”œâ”€â”€ Finacle Treasury
-â”œâ”€â”€ Finacle Trade Finance
-â”œâ”€â”€ Finacle Islamic Banking
-â””â”€â”€ Finacle Alerts (Notifications)
+├── Finacle Core (CBS engine)
+├── Finacle Connect (API layer)
+├── Finacle CRM (Customer management)
+├── Finacle Treasury
+├── Finacle Trade Finance
+├── Finacle Islamic Banking
+└── Finacle Alerts (Notifications)
 ```
 
 #### 3.3 TCS BaNCS
@@ -210,11 +210,11 @@ BaNCS (Banking Network and Channel Systems) is from Tata Consultancy Services. U
 | Real-time | Yes | Yes | Yes |
 | Multi-entity | Yes | Yes | Yes |
 
-### 4. Transaction Processing â€” NEFT, RTGS, IMPS
+### 4. Transaction Processing — NEFT, RTGS, IMPS
 
 #### 4.1 NEFT (National Electronic Funds Transfer)
 
-NEFT is a deferred net settlement (DNS) system â€” transactions are settled in batches at specific intervals. Operated by RBI.
+NEFT is a deferred net settlement (DNS) system — transactions are settled in batches at specific intervals. Operated by RBI.
 
 **Technical Flow:**
 
@@ -243,7 +243,7 @@ Sender Bank CBS -> NEFT Gateway (NPCI/RBI) -> Receiver Bank CBS
 
 #### 4.2 RTGS (Real Time Gross Settlement)
 
-RTGS is a real-time settlement system â€” each transaction is settled individually on a gross basis. Operated by RBI.
+RTGS is a real-time settlement system — each transaction is settled individually on a gross basis. Operated by RBI.
 
 **Technical Flow:**
 
@@ -272,7 +272,7 @@ Sender Bank -> RTGS System (RBI) -> Receiver Bank
 - Processing: Continuous, transaction-by-transaction
 - Settlement finality: Irrevocable and unconditional
 
-#### 4.3 NEFT vs RTGS vs IMPS â€” Technical Comparison
+#### 4.3 NEFT vs RTGS vs IMPS — Technical Comparison
 
 ```
 +------------------+------------------+------------------+------------------+
@@ -323,7 +323,7 @@ An ATM switch (also called Interchange Switch or EFT Switch) connects multiple A
         +------------+
 ```
 
-**ISO 8583 â€” The ATM Message Standard:**
+**ISO 8583 — The ATM Message Standard:**
 
 ISO 8583 defines the message format for all ATM and POS transactions. Key message types:
 
@@ -343,7 +343,7 @@ Message Length (2 bytes) | MTI (4 digits) | Bitmap (8-16 bytes) | Data Elements 
 ```
 
 **Critical Data Elements (DE) in ATM Messages:**
-- DE 2: PAN (Primary Account Number) â€” 19 digits max
+- DE 2: PAN (Primary Account Number) — 19 digits max
 - DE 3: Processing Code
 - DE 4: Amount (Transaction amount in minor units)
 - DE 11: STAN (Systems Trace Audit Number)
@@ -380,7 +380,7 @@ NFS is the domestic interbank ATM network operated by NPCI. It connects over 1.2
 - ARQC/ARPC verification for EMV chip cards
 - Secure key management (TMK, TAK, ZPK)
 
-### 6. CBS Database Design â€” Partitioning and Sharding
+### 6. CBS Database Design — Partitioning and Sharding
 
 High-volume CBS databases must handle millions of transactions daily. Key design strategies:
 
@@ -392,18 +392,18 @@ Partitioning splits a large table into smaller, manageable segments while mainta
 
 ```
 Transaction Table: TXN_HISTORY
-â”œâ”€â”€ Range Partitioning: BY RANGE (TXN_DATE)
-â”‚   â”œâ”€â”€ PARTITION p2024_q1 VALUES LESS THAN ('01-APR-2024')
-â”‚   â”œâ”€â”€ PARTITION p2024_q2 VALUES LESS THAN ('01-JUL-2024')
-â”‚   â”œâ”€â”€ PARTITION p2024_q3 VALUES LESS THAN ('01-OCT-2024')
-â”‚   â””â”€â”€ PARTITION p2024_q4 VALUES LESS THAN ('01-JAN-2025')
-â”‚
-â”œâ”€â”€ List Partitioning: BY LIST (BRANCH_CODE)
-â”‚   â”œâ”€â”€ PARTITION north VALUES ('DEL', 'LKO', 'CHD')
-â”‚   â”œâ”€â”€ PARTITION west VALUES ('MUM', 'PUN', 'AHM')
-â”‚   â””â”€â”€ PARTITION south VALUES ('BEN', 'CHE', 'HYD')
-â”‚
-â””â”€â”€ Hash Partitioning: BY HASH (ACCOUNT_NO) PARTITIONS 16
+├── Range Partitioning: BY RANGE (TXN_DATE)
+│   ├── PARTITION p2024_q1 VALUES LESS THAN ('01-APR-2024')
+│   ├── PARTITION p2024_q2 VALUES LESS THAN ('01-JUL-2024')
+│   ├── PARTITION p2024_q3 VALUES LESS THAN ('01-OCT-2024')
+│   └── PARTITION p2024_q4 VALUES LESS THAN ('01-JAN-2025')
+│
+├── List Partitioning: BY LIST (BRANCH_CODE)
+│   ├── PARTITION north VALUES ('DEL', 'LKO', 'CHD')
+│   ├── PARTITION west VALUES ('MUM', 'PUN', 'AHM')
+│   └── PARTITION south VALUES ('BEN', 'CHE', 'HYD')
+│
+└── Hash Partitioning: BY HASH (ACCOUNT_NO) PARTITIONS 16
 ```
 
 **Benefits for CBS:**
@@ -420,18 +420,18 @@ Sharding distributes data across multiple database instances/servers. Used by la
 CBS Sharding Architecture:
 
 Router/Proxy Layer
-â”œâ”€â”€ Shard 1 (Oracle RAC A)
-â”‚   â”œâ”€â”€ Accounts 1-500000
-â”‚   â””â”€â”€ TXN for these accounts
-â”œâ”€â”€ Shard 2 (Oracle RAC B)
-â”‚   â”œâ”€â”€ Accounts 500001-1000000
-â”‚   â””â”€â”€ TXN for these accounts
-â”œâ”€â”€ Shard 3 (Oracle RAC C)
-â”‚   â”œâ”€â”€ Accounts 1000001-1500000
-â”‚   â””â”€â”€ TXN for these accounts
-â””â”€â”€ Config Server (Shard Map)
-    â”œâ”€â”€ Shard Key: ACCOUNT_NO
-    â””â”€â”€ Range: 0000000000-9999999999
+├── Shard 1 (Oracle RAC A)
+│   ├── Accounts 1-500000
+│   └── TXN for these accounts
+├── Shard 2 (Oracle RAC B)
+│   ├── Accounts 500001-1000000
+│   └── TXN for these accounts
+├── Shard 3 (Oracle RAC C)
+│   ├── Accounts 1000001-1500000
+│   └── TXN for these accounts
+└── Config Server (Shard Map)
+    ├── Shard Key: ACCOUNT_NO
+    └── Range: 0000000000-9999999999
 ```
 
 **Sharding Key Selection:**
@@ -449,34 +449,34 @@ Router/Proxy Layer
 **Account Master Table:**
 ```
 ACCOUNT_MASTER:
-â”œâ”€â”€ ACCOUNT_NO (PK, Shard Key)
-â”œâ”€â”€ CUSTOMER_ID (FK to CUSTOMER_MASTER)
-â”œâ”€â”€ BRANCH_CODE
-â”œâ”€â”€ PRODUCT_CODE (SAV/CUR/FD/RD)
-â”œâ”€â”€ CURRENT_BALANCE (DECIMAL 18,2)
-â”œâ”€â”€ LEDGER_BALANCE (DECIMAL 18,2)
-â”œâ”€â”€ STATUS (ACTIVE/DORMANT/CLOSED)
-â”œâ”€â”€ OPEN_DATE
-â”œâ”€â”€ LAST_TXN_DATE
-â”œâ”€â”€ INTEREST_RATE
-â”œâ”€â”€ NOMINEE_DETAILS
+├── ACCOUNT_NO (PK, Shard Key)
+├── CUSTOMER_ID (FK to CUSTOMER_MASTER)
+├── BRANCH_CODE
+├── PRODUCT_CODE (SAV/CUR/FD/RD)
+├── CURRENT_BALANCE (DECIMAL 18,2)
+├── LEDGER_BALANCE (DECIMAL 18,2)
+├── STATUS (ACTIVE/DORMANT/CLOSED)
+├── OPEN_DATE
+├── LAST_TXN_DATE
+├── INTEREST_RATE
+├── NOMINEE_DETAILS
 ```
 
 **Transaction Table:**
 ```
 TRANSACTION_LOG:
-â”œâ”€â”€ TXN_REF_NO (PK)
-â”œâ”€â”€ ACCOUNT_NO (FK, Partition Key)
-â”œâ”€â”€ TXN_DATE (Partition Key)
-â”œâ”€â”€ TXN_TYPE (DEBIT/CREDIT)
-â”œâ”€â”€ TXN_AMOUNT (DECIMAL 18,2)
-â”œâ”€â”€ CHANNEL (ATM/IB/MB/BRANCH)
-â”œâ”€â”€ TERMINAL_ID
-â”œâ”€â”€ REFERENCE_NO
-â”œâ”€â”€ NEFT_URN / RTGS_REF_NO
-â”œâ”€â”€ RESPONSE_CODE
-â”œâ”€â”€ POSTING_DATE
-â”œâ”€â”€ VALUE_DATE
+├── TXN_REF_NO (PK)
+├── ACCOUNT_NO (FK, Partition Key)
+├── TXN_DATE (Partition Key)
+├── TXN_TYPE (DEBIT/CREDIT)
+├── TXN_AMOUNT (DECIMAL 18,2)
+├── CHANNEL (ATM/IB/MB/BRANCH)
+├── TERMINAL_ID
+├── REFERENCE_NO
+├── NEFT_URN / RTGS_REF_NO
+├── RESPONSE_CODE
+├── POSTING_DATE
+├── VALUE_DATE
 ```
 
 ### 7. Cheque Truncation System (CTS)
@@ -506,20 +506,20 @@ Time: T+1 (1 day)
 ```
 1. PAYER deposits cheque at PRESENTING BANK
 2. Cheque scanned (Front: all details; Back: endorsement)
-   â”œâ”€â”€ Image: Greyscale TIFF, 200 DPI minimum
-   â”œâ”€â”€ MICR Line: Auto-read by scanner
-   â””â”€â”€ Digital Signature: Using bank's private key
+   ├── Image: Greyscale TIFF, 200 DPI minimum
+   ├── MICR Line: Auto-read by scanner
+   └── Digital Signature: Using bank's private key
 3. Image + data sent to CTS Grid (NPCI)
 4. CTS Grid validates:
-   â”œâ”€â”€ Image quality (size: &lt; 200KB per image)
-   â”œâ”€â”€ MICR read vs manual data
-   â””â”€â”€ Digital signature verification
+   ├── Image quality (size: &lt; 200KB per image)
+   ├── MICR read vs manual data
+   └── Digital signature verification
 5. CTS Grid routes to PAYING BANK through INFINET
 6. Paying Bank CBS:
-   â”œâ”€â”€ Image displayed to teller (or auto-approval)
-   â”œâ”€â”€ Signature verification
-   â”œâ”€â”€ Funds availability check
-   â””â”€â”€ Debit decision: Return or Honour
+   ├── Image displayed to teller (or auto-approval)
+   ├── Signature verification
+   ├── Funds availability check
+   └── Debit decision: Return or Honour
 7. Settlement through RBI current account
 8. Presenting bank gets credit
 ```
@@ -541,11 +541,11 @@ MICR is a 9-digit code printed on cheque leaves using magnetic ink (iron oxide-b
 **MICR Code Structure:**
 ```
 CCCC BBB A
-â”œâ”€â”€ CCCC: City Code (4 digits) â€” First 3 digits = city PIN prefix, 4th = 0
-â”‚   Example: 400 for Mumbai, 110 for Delhi, 700 for Kolkata
-â”œâ”€â”€ BBB: Bank Code (3 digits) â€” Assigned by IBA
-â”‚   Example: 002 for SBI, 011 for HDFC
-â””â”€â”€ A: Branch Code (1 digit) â€” Specific to branch within bank-city
+├── CCCC: City Code (4 digits) — First 3 digits = city PIN prefix, 4th = 0
+│   Example: 400 for Mumbai, 110 for Delhi, 700 for Kolkata
+├── BBB: Bank Code (3 digits) — Assigned by IBA
+│   Example: 002 for SBI, 011 for HDFC
+└── A: Branch Code (1 digit) — Specific to branch within bank-city
 ```
 
 **Full Example:** `400002011`
@@ -560,10 +560,10 @@ IFSC is an 11-character alphanumeric code that uniquely identifies a bank branch
 **IFSC Structure:**
 ```
 SBIN0012345
-â”œâ”€â”€ SBIN: Bank Code (4 chars) â€” Alphabetical
-â”‚   Example: SBIN for SBI, HDFC for HDFC, ICIC for ICICI
-â”œâ”€â”€ 0: Reserved character (5th char) â€” Always '0' for future use
-â””â”€â”€ 12345: Branch Code (6 chars) â€” Alphanumeric, unique within bank
+├── SBIN: Bank Code (4 chars) — Alphabetical
+│   Example: SBIN for SBI, HDFC for HDFC, ICIC for ICICI
+├── 0: Reserved character (5th char) — Always '0' for future use
+└── 12345: Branch Code (6 chars) — Alphanumeric, unique within bank
 ```
 
 **Where IFSC is used:**
@@ -587,20 +587,20 @@ SBIN0012345
 
 ```
 IFSC_MASTER:
-â”œâ”€â”€ IFSC_CODE (PK, VARCHAR2(11))
-â”œâ”€â”€ BANK_NAME (VARCHAR2(100))
-â”œâ”€â”€ BANK_CODE (VARCHAR2(9))
-â”œâ”€â”€ BRANCH_NAME (VARCHAR2(100))
-â”œâ”€â”€ ADDRESS (VARCHAR2(500))
-â”œâ”€â”€ CITY (VARCHAR2(50))
-â”œâ”€â”€ DISTRICT (VARCHAR2(50))
-â”œâ”€â”€ STATE (VARCHAR2(50))
-â”œâ”€â”€ MICR_CODE (VARCHAR2(9))
-â”œâ”€â”€ CONTACT (VARCHAR2(20))
-â”œâ”€â”€ NEFT_ENABLED (CHAR1: Y/N)
-â”œâ”€â”€ RTGS_ENABLED (CHAR1: Y/N)
-â”œâ”€â”€ IMPS_ENABLED (CHAR1: Y/N)
-â”œâ”€â”€ LAST_UPDATED (TIMESTAMP)
+├── IFSC_CODE (PK, VARCHAR2(11))
+├── BANK_NAME (VARCHAR2(100))
+├── BANK_CODE (VARCHAR2(9))
+├── BRANCH_NAME (VARCHAR2(100))
+├── ADDRESS (VARCHAR2(500))
+├── CITY (VARCHAR2(50))
+├── DISTRICT (VARCHAR2(50))
+├── STATE (VARCHAR2(50))
+├── MICR_CODE (VARCHAR2(9))
+├── CONTACT (VARCHAR2(20))
+├── NEFT_ENABLED (CHAR1: Y/N)
+├── RTGS_ENABLED (CHAR1: Y/N)
+├── IMPS_ENABLED (CHAR1: Y/N)
+├── LAST_UPDATED (TIMESTAMP)
 ```
 
 RBI publishes the IFSC master database as a downloadable Excel file, updated periodically. Banks consume this for their CBS IFSC validation tables.
@@ -1212,7 +1212,7 @@ console.log('ISO 8583 Message:', JSON.stringify({
 }, null, 2));
 ```
 
-### 11. Architecture Diagrams â€” Additional
+### 11. Architecture Diagrams — Additional
 
 #### ATM Switch Network with NFS Interconnect
 
@@ -1307,25 +1307,25 @@ graph TD
 
 #### 12.1 CBS Modernization Initiatives
 
-- **2024:** RBI issued guidelines for CBS API standardization â€” all banks must expose CBS functions through RESTful APIs (account opening, balance enquiry, transaction history) by March 2025. This enables easier integration with Account Aggregators and Open Banking.
+- **2024:** RBI issued guidelines for CBS API standardization — all banks must expose CBS functions through RESTful APIs (account opening, balance enquiry, transaction history) by March 2025. This enables easier integration with Account Aggregators and Open Banking.
 - **2024:** SBI completed migration of 40 crore accounts to new-gen CBS platform (Finacle 11) with real-time processing and cloud-ready architecture. Downtime reduced from 4 hours (weekly) to zero (active-active).
-- **2025:** RBI mandated all PSBs to implement real-time fraud detection integrated with CBS â€” transactions are scored before posting. CBS must expose a pre-auth hook for fraud scoring.
+- **2025:** RBI mandated all PSBs to implement real-time fraud detection integrated with CBS — transactions are scored before posting. CBS must expose a pre-auth hook for fraud scoring.
 - **2025:** HDFC Bank merged CBS platforms with HDFC Ltd (post-merger integration). T24 CBS consolidated across merged entity covering 8 crore+ customers.
 - **2026:** RBI's Digital Payments Index shows CBS transaction processing capacity has grown 5x since 2023, handling 500+ transactions per second during peak hours across major banks.
 
 #### 12.2 New Payment System Integration with CBS
 
-- **2024:** CBS platforms integrated with UPI Circle (delegated payments) â€” primary account holder can set transaction limits for family members.
-- **2025:** CBS now supports CBDC (e-Rupee) wallet management natively â€” banks can mint, distribute, and redeem CBDC tokens through core system.
+- **2024:** CBS platforms integrated with UPI Circle (delegated payments) — primary account holder can set transaction limits for family members.
+- **2025:** CBS now supports CBDC (e-Rupee) wallet management natively — banks can mint, distribute, and redeem CBDC tokens through core system.
 - **2026:** All CBS platforms in India now support ISO 20022 messaging for cross-border payments, replacing legacy SWIFT MT messages for improved data richness.
 
 #### 12.3 CBS Security Enhancements (2024-2026)
 
-- **2024:** RBI circular mandated real-time CBS-to-SOC integration â€” all transactions above Rs. 10 lakh must generate SIEM alerts automatically.
+- **2024:** RBI circular mandated real-time CBS-to-SOC integration — all transactions above Rs. 10 lakh must generate SIEM alerts automatically.
 - **2025:** CBS platforms now include built-in AI-based anomaly detection for transaction patterns. SBI's CBS flagged over 2 lakh suspicious transactions in first year.
-- **2026:** Mandatory "maker-checker" for all CBS administrative functions enforced through CBS-level dual control â€” no single user can approve their own transactions.
+- **2026:** Mandatory "maker-checker" for all CBS administrative functions enforced through CBS-level dual control — no single user can approve their own transactions.
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **1.** What is the primary settlement method used by NEFT?
 
@@ -1408,7 +1408,7 @@ D) Automatic indexing
 <summary>Answer</summary>
 **Answer: B) Partition pruning for date-range queries**
 
-RANGE partitioning on TXN_DATE enables partition pruning â€” queries with date range filters only scan relevant partitions instead of the entire table, dramatically improving query performance for transaction history lookups.
+RANGE partitioning on TXN_DATE enables partition pruning — queries with date range filters only scan relevant partitions instead of the entire table, dramatically improving query performance for transaction history lookups.
 </details>
 
 **7.** Which Data Element (DE) in ISO 8583 contains the transaction amount?
@@ -1607,7 +1607,7 @@ D) 15 years
 CTS-2010 mandates that cheque images must be archived for 10 years. This ensures availability for dispute resolution, audit, and legal requirements. The archive uses PKI-based digital signatures for integrity verification.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 ### Section A: Short Answer (Questions 1-10)
 
@@ -1680,9 +1680,9 @@ CTS-2010 mandates that cheque images must be archived for 10 years. This ensures
 <details>
 <summary>Section A Answers (1-10)</summary>
 
-**1.** Three layers: (i) Front-End/Channel Tier â€” customer-facing interfaces (ATM, Internet Banking, Mobile, Branch); (ii) Middleware/Gateway Tier â€” protocol conversion, message routing, load balancing, security, queue management; (iii) Back-End/Core Tier â€” CBS application server, database, GL, EOD batch engine.
+**1.** Three layers: (i) Front-End/Channel Tier — customer-facing interfaces (ATM, Internet Banking, Mobile, Branch); (ii) Middleware/Gateway Tier — protocol conversion, message routing, load balancing, security, queue management; (iii) Back-End/Core Tier — CBS application server, database, GL, EOD batch engine.
 
-**2.** Regex: `^[A-Z]{4}0[A-Z0-9]{6}$` â€” `^[A-Z]{4}` = first 4 characters are uppercase letters (bank code); `0` = 5th character is always zero (reserved); `[A-Z0-9]{6}$` = last 6 characters are alphanumeric (branch code).
+**2.** Regex: `^[A-Z]{4}0[A-Z0-9]{6}$` — `^[A-Z]{4}` = first 4 characters are uppercase letters (bank code); `0` = 5th character is always zero (reserved); `[A-Z0-9]{6}$` = last 6 characters are alphanumeric (branch code).
 
 **3.** Partitioning splits a table within a single database instance. Sharding distributes data across multiple database instances. Partitioning is for manageability within one server; sharding is for horizontal scaling across servers.
 
@@ -1696,7 +1696,7 @@ CTS-2010 mandates that cheque images must be archived for 10 years. This ensures
 
 **8.** DE 2 (PAN), DE 3 (Processing Code), DE 4 (Amount), DE 11 (STAN), DE 39 (Response Code). Each has specific format and length constraints.
 
-**9.** MICR: 9 digits â€” CCCC (city code, first 3 digits = city PIN prefix, 4th=0) + BBB (3-digit bank code by IBA) + A (1-digit branch suffix). Example: 400002011 = Mumbai + SBI + branch 011.
+**9.** MICR: 9 digits — CCCC (city code, first 3 digits = city PIN prefix, 4th=0) + BBB (3-digit bank code by IBA) + A (1-digit branch suffix). Example: 400002011 = Mumbai + SBI + branch 011.
 
 **10.** OFS (Open Financial System) is T24's external integration interface. It allows third-party systems to send/receive messages in OFS format to perform CBS operations like account inquiry, fund transfer, and customer management.
 </details>
@@ -1704,7 +1704,7 @@ CTS-2010 mandates that cheque images must be archived for 10 years. This ensures
 <details>
 <summary>Section B Answers (11-20)</summary>
 
-**11.** Front-end sends ISO 8583 (ATM) or HTTPS (Internet Banking) â†’ Middleware converts protocol, validates via HSM, routes via MQ â†’ Back-end CBS application processes, updates Oracle/DB2 database, returns response.
+**11.** Front-end sends ISO 8583 (ATM) or HTTPS (Internet Banking) → Middleware converts protocol, validates via HSM, routes via MQ → Back-end CBS application processes, updates Oracle/DB2 database, returns response.
 
 **12.** T24: Java (TAFJ), Oracle/MSSQL/DB2, OFS, HDFC/Kotak/Yes Bank. Finacle: Java/C++, Oracle/DB2, Finacle Connect, SBI/PNB/BOB. BaNCS: Java/C++, Oracle/DB2, BaNCSConnect, BOI/Indian Bank.
 
@@ -1712,7 +1712,7 @@ CTS-2010 mandates that cheque images must be archived for 10 years. This ensures
 
 **14.** Message Length (2 bytes) | MTI (4 digits) | Primary Bitmap (8 bytes) | Secondary Bitmap (8 bytes, optional) | Data Elements (variable). Example 0200: Length=0150, MTI=0200, Bitmap=... DE2=622018..., DE4=000000500000.
 
-**15.** Card inserted at Bank B ATM â†’ BIN identifies Bank A as issuer â†’ ISO 8583 0200 sent through NFS to Bank A â†’ HSM validates PIN â†’ CBS checks balance â†’ Response via NFS â†’ ATM dispenses cash. Settlement via RBI current accounts.
+**15.** Card inserted at Bank B ATM → BIN identifies Bank A as issuer → ISO 8583 0200 sent through NFS to Bank A → HSM validates PIN → CBS checks balance → Response via NFS → ATM dispenses cash. Settlement via RBI current accounts.
 
 **16.** Shard key selection: ACCOUNT_NO or CUSTOMER_ID. Challenges: cross-shard transactions (2PC/XA), distributed joins, resharding complexity. Solution: design shard key to minimize cross-shard operations.
 
@@ -1722,7 +1722,7 @@ CTS-2010 mandates that cheque images must be archived for 10 years. This ensures
 
 **19.** EOD sequence: (1) Stop new transactions; (2) Calculate and post interest; (3) Process standing instructions; (4) Run overdue/due reports; (5) Generate GL balancing reports; (6) Archive daily transactions; (7) Start new business date.
 
-**20.** 1970s-80s: Standalone branch systems â†’ 1990s: LAN-based automation â†’ 2000s: First CBS (Finacle, BaNCS, T24) â†’ 2006-10: Nationwide PSB rollout â†’ 2010-present: CBS + digital channels (UPI, Mobile, AI).
+**20.** 1970s-80s: Standalone branch systems → 1990s: LAN-based automation → 2000s: First CBS (Finacle, BaNCS, T24) → 2006-10: Nationwide PSB rollout → 2010-present: CBS + digital channels (UPI, Mobile, AI).
 </details>
 
 <details>
@@ -1730,30 +1730,30 @@ CTS-2010 mandates that cheque images must be archived for 10 years. This ensures
 
 **21.** Use RANGE on TXN_DATE (quarterly partitions, retain 3 years online, archive older to compressed tables). Sub-partition by LIST on BRANCH_CODE (region-wise). For sharding: HASH on ACCOUNT_NO across 32 shards.
 
-**22.** Format validation: `^[A-Z]{4}0[A-Z0-9]{6}$` â†’ Lookup in IFSC_MASTER table (indexed by IFSC_CODE) â†’ Return BANK_NAME + BRANCH_NAME + CITY + MICR_CODE if found, else "Invalid IFSC".
+**22.** Format validation: `^[A-Z]{4}0[A-Z0-9]{6}$` → Lookup in IFSC_MASTER table (indexed by IFSC_CODE) → Return BANK_NAME + BRANCH_NAME + CITY + MICR_CODE if found, else "Invalid IFSC".
 
 **23.** Active-Passive with synchronous replication (DWDM/Fibre Channel) to DR site 300+ km away. Oracle DataGuard in SYNC mode. Auto-failover script monitors PDC heartbeat; on failure, activates DR DNS, DR CBS, and DR ATM Switch. RPO &lt; 5 sec, RTO &lt; 1 hr.
 
 **24.** Multi-layered: (1) Global load balancer (F5/AWS ALB); (2) Layer of middleware instances (auto-scaling group based on queue depth); (3) Partitioned message queues (Kafka/IBM MQ by account number hash); (4) CBS app servers with connection pooling; (5) Database shards.
 
-**25.** API Gateway (Kong/Apigee) with: OAuth 2.0 + API key authentication; Rate limiting (1000 req/min per client); Request transformation (REST â†’ CBS OFS/XML); Response transformation (CBS â†’ JSON); Audit logging; Circuit breaker for CBS failures.
+**25.** API Gateway (Kong/Apigee) with: OAuth 2.0 + API key authentication; Rate limiting (1000 req/min per client); Request transformation (REST → CBS OFS/XML); Response transformation (CBS → JSON); Audit logging; Circuit breaker for CBS failures.
 
 **26.** Range on TXN_DATE: Best for date-range queries (account statements, daily reports). Allows partition pruning. List on BRANCH_CODE: Good for branch-wise reporting but can cause uneven data distribution. Hash on ACCOUNT_NO: Even distribution but no partition pruning for date queries. Recommend RANGE on date with LIST sub-partition on branch.
 
-**27.** UPI App â†’ PSP â†’ NPCI UPI Switch â†’ CBS via API Gateway â†’ Validate account + balance â†’ Debit account â†’ Post transaction â†’ Send UPI Ref No â†’ Response via NPCI â†’ PSP â†’ App. CBS also generates GL entries and IRC (Interchange Reconciliation) file.
+**27.** UPI App → PSP → NPCI UPI Switch → CBS via API Gateway → Validate account + balance → Debit account → Post transaction → Send UPI Ref No → Response via NPCI → PSP → App. CBS also generates GL entries and IRC (Interchange Reconciliation) file.
 
 **28.** TypeScript: `new ISO8583Builder().setMTI('0200').setPAN('6220180012345678').setAmount(10000).setSTAN('654321').setDateTime(new Date()).setTerminalId('ATM-MUM-015').setDE(3, '000000').build()`
 
-**29.** Each tenant bank gets isolated schema with RANGE partitioning. Separate database users with row-level security (RLS) policies. Config server maps tenant_id â†’ shard. API gateway validates tenant context from API key. Cross-tenant data access prohibited.
+**29.** Each tenant bank gets isolated schema with RANGE partitioning. Separate database users with row-level security (RLS) policies. Config server maps tenant_id → shard. API gateway validates tenant context from API key. Cross-tenant data access prohibited.
 
-**30.** Pre-auth hook in CBS sends transaction to fraud engine: (1) Rules check (velocity, amount threshold, geo); (2) ML model scores transaction (real-time, sub-50ms); (3) Hotlist check (account, terminal, IP); (4) Score threshold decision â€” Allow/Decline/Refer; (5) Response to CBS to proceed or reject.
+**30.** Pre-auth hook in CBS sends transaction to fraud engine: (1) Rules check (velocity, amount threshold, geo); (2) ML model scores transaction (real-time, sub-50ms); (3) Hotlist check (account, terminal, IP); (4) Score threshold decision — Allow/Decline/Refer; (5) Response to CBS to proceed or reject.
 </details>
 
 ## Summary
 
 Core Banking Solution (CBS) is the centralized platform that enables "Anywhere, Anytime" banking. The three-tier architecture consists of the Front-End (Channel) Tier handling diverse channels like ATM, Internet Banking, and Mobile Banking; the Middleware (Gateway) Tier providing protocol conversion, message routing, and security; and the Back-End (Core) Tier running the CBS application and database.
 
-Leading CBS platforms in India are T24 (Temenos â€” HDFC, Kotak), Finacle (Infosys â€” SBI, PNB, BOB), and BaNCS (TCS â€” BOI, Indian Bank). Each has a Java-based application server with multi-entity support and API integration layers.
+Leading CBS platforms in India are T24 (Temenos — HDFC, Kotak), Finacle (Infosys — SBI, PNB, BOB), and BaNCS (TCS — BOI, Indian Bank). Each has a Java-based application server with multi-entity support and API integration layers.
 
 NEFT operates on Deferred Net Settlement with 30-minute batch cycles (24x7x365), RTGS uses Real-Time Gross Settlement (Rs. 2 lakh minimum), and IMPS provides instant real-time settlement (24x7x365, Re. 1 minimum). ATM switching uses ISO 8583 message standard over the National Financial Switch (NFS) network with HSM for PIN security.
 
@@ -1763,7 +1763,7 @@ MICR codes (9-digit, magnetic ink) and IFSC codes (11-character alphanumeric) ar
 
 ## Practical Takeaways
 
-1. **For CBS Implementation:** Always consider the middleware tier as the critical integration layer â€” banks that invested in robust middleware (with protocol converters and HSMs) have easier integration with newer channels like UPI.
+1. **For CBS Implementation:** Always consider the middleware tier as the critical integration layer — banks that invested in robust middleware (with protocol converters and HSMs) have easier integration with newer channels like UPI.
 
 2. **Database Partitioning Strategy:** In CBS, use RANGE partitioning on transaction date and LIST partitioning on branch codes. Never use hash partitioning on date columns as it defeats partition pruning.
 

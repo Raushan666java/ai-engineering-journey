@@ -1,4 +1,4 @@
-﻿# Chapter 2: Data Engineering for AI
+# Chapter 2: Data Engineering for AI
 
 ## Learning Objectives
 
@@ -188,7 +188,7 @@ Instead of labeling random samples, active learning selects the most informative
 - **Diversity sampling**: Select examples that are most representative of the data distribution
 - **Expected model change**: Choose examples that would most change the model parameters
 
-Active learning reduces labeling costs by 50â€“80% compared to random sampling while maintaining or improving model performance.
+Active learning reduces labeling costs by 50–80% compared to random sampling while maintaining or improving model performance.
 
 **Weak Supervision**
 
@@ -199,7 +199,7 @@ Weak supervision uses heuristics, rules, and knowledge bases to generate noisy l
 
 **Programmatic Labeling with Foundation Models**
 
-In 2024â€“2026, foundation models themselves have become powerful labelers. Using FMs for labeling:
+In 2024–2026, foundation models themselves have become powerful labelers. Using FMs for labeling:
 1. Define a labeling prompt with clear rubrics
 2. Apply the FM to each example
 3. Validate against a small human-labeled held-out set
@@ -215,7 +215,7 @@ Foundation models can generate training and evaluation data for virtually any do
 
 ```typescript
 /**
- * SyntheticDataGenerator â€” Generates synthetic training and evaluation data
+ * SyntheticDataGenerator — Generates synthetic training and evaluation data
  * using foundation model calls. Supports multiple output formats, constraints,
  * and diversity controls.
  */
@@ -477,7 +477,7 @@ A production-ready data pipeline class that handles collection, quality scoring,
 
 ```typescript
 /**
- * DataPipeline â€” A configurable data processing pipeline for AI engineering.
+ * DataPipeline — A configurable data processing pipeline for AI engineering.
  * Supports collection strategies, quality scoring, preprocessing stages,
  * and transformation chaining.
  */
@@ -689,8 +689,8 @@ A reusable utility for computing data quality metrics across the six quality dim
 
 ```typescript
 /**
- * DataQualityScorer â€” Computes quality metrics across six dimensions
- * for a given dataset. Returns normalized scores (0â€“100) for each dimension.
+ * DataQualityScorer — Computes quality metrics across six dimensions
+ * for a given dataset. Returns normalized scores (0–100) for each dimension.
  */
 
 interface QualityScores {
@@ -893,11 +893,11 @@ class DataQualityScorer {
 
 ## Summary
 
-Data engineering is the foundation of successful AI applications, with data quality consistently proving more impactful than model choice. Effective data collection requires matching strategies â€” APIs, web scraping, user-generated data, synthetic data, or data marketplaces â€” to the specific use case, timeline, and budget. Data quality must be measured across six dimensions: accuracy, completeness, consistency, timeliness, uniqueness, and validity. Preprocessing pipelines transform raw data through cleaning, normalization, deduplication, formatting, and PII removal stages. Labeling strategies range from human annotation with inter-annotator agreement metrics to active learning, weak supervision, and programmatic labeling with foundation models. Synthetic data generation offers powerful capabilities for rare events and edge cases but carries risks including mode collapse, distribution mismatch, and feedback loops. All data engineering must operate within an increasingly complex regulatory landscape (GDPR, CCPA, PIPEDA) with proper consent management, anonymization, and data retention practices. The `DataPipeline` and `DataQualityScorer` TypeScript implementations provide production-ready foundations for building data systems that power AI applications.
+Data engineering is the foundation of successful AI applications, with data quality consistently proving more impactful than model choice. Effective data collection requires matching strategies — APIs, web scraping, user-generated data, synthetic data, or data marketplaces — to the specific use case, timeline, and budget. Data quality must be measured across six dimensions: accuracy, completeness, consistency, timeliness, uniqueness, and validity. Preprocessing pipelines transform raw data through cleaning, normalization, deduplication, formatting, and PII removal stages. Labeling strategies range from human annotation with inter-annotator agreement metrics to active learning, weak supervision, and programmatic labeling with foundation models. Synthetic data generation offers powerful capabilities for rare events and edge cases but carries risks including mode collapse, distribution mismatch, and feedback loops. All data engineering must operate within an increasingly complex regulatory landscape (GDPR, CCPA, PIPEDA) with proper consent management, anonymization, and data retention practices. The `DataPipeline` and `DataQualityScorer` TypeScript implementations provide production-ready foundations for building data systems that power AI applications.
 
 ## Practical Takeaways
 
-1. **Invest in data quality infrastructure before model selection**: Build data validation, monitoring, and quality scoring into your pipeline from day one â€” fixing data issues downstream is exponentially more expensive.
+1. **Invest in data quality infrastructure before model selection**: Build data validation, monitoring, and quality scoring into your pipeline from day one — fixing data issues downstream is exponentially more expensive.
 2. **Use multiple collection strategies**: Relying on a single data source creates fragility; combine public APIs, user-generated data, and synthetic data for robustness.
 3. **Implement automated quality gates**: Every data pipeline should have quality thresholds that stop processing when scores drop below acceptable levels.
 4. **Plan for PII removal before data touches an API**: Build redaction into the preprocessing pipeline so no sensitive data reaches third-party model providers.
@@ -974,7 +974,7 @@ You are building a RAG application for a hospital's medical record system. The d
 1. **Detection layer**: Use a medical NER model (e.g., BioBERT, Stanza clinical NER) to identify PHI fields
 2. **Pseudonymization**: Replace patient names and IDs with tokens, storing mapping in a secure HSM
 3. **Aggregation**: For lab results, bin exact values into ranges (e.g., "glucose 95-105 mg/dL" rather than "glucose 102 mg/dL")
-4. **Consent check**: Query consent management system â€” redact any records where patient has opted out of AI processing
+4. **Consent check**: Query consent management system — redact any records where patient has opted out of AI processing
 5. **Differential privacy**: Add calibrated noise to aggregate statistics for population-level queries
 6. **Audit logging**: Log every access to the data pipeline for compliance reporting
 
@@ -1127,7 +1127,7 @@ function evaluateDataset(): void {
 
 **Exercise 5**
 
-You are asked to generate a synthetic dataset of 500 customer service email pairs (incoming issue â†’ outgoing resolution). Using the `SyntheticDataGenerator` class pattern, design the configuration and evaluate the quality against three criteria: diversity, realism, and label balance across three categories (billing, technical, account). Explain how you would validate the generated data.
+You are asked to generate a synthetic dataset of 500 customer service email pairs (incoming issue → outgoing resolution). Using the `SyntheticDataGenerator` class pattern, design the configuration and evaluate the quality against three criteria: diversity, realism, and label balance across three categories (billing, technical, account). Explain how you would validate the generated data.
 
 <details>
 <summary>Solution</summary>
@@ -1173,7 +1173,7 @@ async function generateSupportDataset(): Promise<void> {
   // 2. Diversity check: Cluster embeddings of incoming emails, ensure >10 clusters
   // 3. Label balance: Verify category distribution is within 5% of target
   // 4. Data leakage check: Confirm no examples are exact matches of public support datasets
-  // 5. Use split(): 400 train, 50 validation, 50 test â€” validate model on real data
+  // 5. Use split(): 400 train, 50 validation, 50 test — validate model on real data
   const { train, validation, test } = generator.split(0.8, 0.1);
   console.log(`Train: ${train.length}, Val: ${validation.length}, Test: ${test.length}`);
 }

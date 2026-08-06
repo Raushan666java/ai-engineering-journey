@@ -1,4 +1,4 @@
-﻿# Chapter 5: Data Partitioning and Sharding
+# Chapter 5: Data Partitioning and Sharding
 > **Previous:** [04 Database Foundations](./04-database-foundations.md) | **Next:** [06 Distributed Consistency](./06-distributed-consistency.md)
 
 ---
@@ -67,7 +67,7 @@ flowchart LR
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 Partitioning is the process of splitting a large dataset into smaller, independent subsets that can be stored and queried separately. The two primary forms are vertical partitioning and horizontal partitioning (sharding).
 
-**Vertical Partitioning** splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design â€” each normalized table is effectively a vertical partition of the logical entity.
+**Vertical Partitioning** splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design — each normalized table is effectively a vertical partition of the logical entity.
 
 ```
 Vertical Partition:
@@ -76,7 +76,7 @@ Vertical Partition:
   Users_Auth:    user_id | password_hash | last_login
 ```
 
-The advantage is reduced I/O for common queries (scanning fewer bytes per row) and improved cache hit rates. The disadvantage emerges when queries frequently need to join across partitions â€” every cross-partition access adds latency.
+The advantage is reduced I/O for common queries (scanning fewer bytes per row) and improved cache hit rates. The disadvantage emerges when queries frequently need to join across partitions — every cross-partition access adds latency.
 
 **Horizontal Partitioning (Sharding)** splits a table by rows. Each shard holds a subset of rows but retains the full schema. The goal is to distribute both storage and query load across multiple database nodes.
 
@@ -104,9 +104,9 @@ Shard Key: timestamp (month)
   Shard 2:  Mar 2024
 ```
 
-**Advantages:** Range queries are efficient â€” a query for `WHERE created_at BETWEEN date1 AND date2` can be routed to a single shard. Shard boundaries are human-readable and easy to reason about. Sequential keys maintain physical locality.
+**Advantages:** Range queries are efficient — a query for `WHERE created_at BETWEEN date1 AND date2` can be routed to a single shard. Shard boundaries are human-readable and easy to reason about. Sequential keys maintain physical locality.
 
-**Disadvantages:** Hotspots are predictable. If the shard key is monotonically increasing (auto-increment IDs, timestamps), all writes hit the last shard while earlier shards sit idle. Range-based sharding also suffers from data skew â€” one shard may hold 80% of the data if the key distribution is uneven.
+**Disadvantages:** Hotspots are predictable. If the shard key is monotonically increasing (auto-increment IDs, timestamps), all writes hit the last shard while earlier shards sit idle. Range-based sharding also suffers from data skew — one shard may hold 80% of the data if the key distribution is uneven.
 
 #### Hash-Based Sharding
 
@@ -120,9 +120,9 @@ h(user_id) = CRC32(user_id) % 4
   user_id = 103  ? CRC32(103) % 4 = 1 ? Shard 1
 ```
 
-**Advantages:** Uniform distribution â€” a good hash function spreads keys evenly across shards regardless of the input distribution. Writes are spread evenly across all nodes, eliminating the monotonically-increasing-key problem.
+**Advantages:** Uniform distribution — a good hash function spreads keys evenly across shards regardless of the input distribution. Writes are spread evenly across all nodes, eliminating the monotonically-increasing-key problem.
 
-**Disadvantages:** Range queries become scatter-gather operations â€” the system must query every shard because adjacent keys hash to different shards. Adding or removing a shard changes `N`, which remaps almost every key, triggering massive data migration (this is the *resharding problem*).
+**Disadvantages:** Range queries become scatter-gather operations — the system must query every shard because adjacent keys hash to different shards. Adding or removing a shard changes `N`, which remaps almost every key, triggering massive data migration (this is the *resharding problem*).
 
 #### Directory-Based Sharding
 
@@ -138,7 +138,7 @@ Directory Entry:
 
 To find a row, the system queries the directory first, then routes to the appropriate shard. The directory itself must be replicated and fault-tolerant.
 
-**Advantages:** Maximum flexibility â€” shard assignments can be changed without affecting the data layout. Fine-grained control over data placement (hot data can be moved to faster nodes).
+**Advantages:** Maximum flexibility — shard assignments can be changed without affecting the data layout. Fine-grained control over data placement (hot data can be moved to faster nodes).
 
 **Disadvantages:** The directory becomes a potential bottleneck and single point of failure. Every read requires an additional lookup (two round trips), increasing latency. The directory must be kept consistent with actual shard contents.
 
@@ -170,7 +170,7 @@ Ring: [0, 2^32 - 1]
 
 #### Virtual Nodes
 
-Without virtual nodes, consistent hashing produces uneven load â€” some nodes own larger ring segments than others, especially with few nodes. Virtual nodes (vnodes) solve this by hashing each physical node multiple times with different suffixes:
+Without virtual nodes, consistent hashing produces uneven load — some nodes own larger ring segments than others, especially with few nodes. Virtual nodes (vnodes) solve this by hashing each physical node multiple times with different suffixes:
 
 ```
 Physical Node A:
@@ -204,7 +204,7 @@ After split:
   Shard 0b: user_id 500001..1000000
 ```
 
-Hash-based systems implement splitting by changing the hash function granularity. Consistent hashing naturally supports splitting â€” the hot spot on the ring can be divided by introducing a new vnode boundary.
+Hash-based systems implement splitting by changing the hash function granularity. Consistent hashing naturally supports splitting — the hot spot on the ring can be divided by introducing a new vnode boundary.
 
 #### Adding and Removing Nodes
 
@@ -254,7 +254,7 @@ SELECT * FROM users WHERE email = 'alice@example.com';
   ? Returns to client
 ```
 
-Scatter-gather is expensive â€” response time is limited by the slowest shard (tail latency). The coordinator must handle partial failures (a shard times out) and deduplication.
+Scatter-gather is expensive — response time is limited by the slowest shard (tail latency). The coordinator must handle partial failures (a shard times out) and deduplication.
 
 #### Distributed Joins
 
@@ -375,7 +375,7 @@ Instagram User ID (64-bit):
   | 41 bits timestamp | 13 bits shard ID | 10 bits sequence |
 ```
 
-When a user uploads a photo, the system computes `shard_id = user_id >> 10 % N` (extracting the shard bits from the ID). All data for that user â€” photos, comments, likes, profile â€” resides on the same shard. This ensures that the common query "load my feed" touches only one shard.
+When a user uploads a photo, the system computes `shard_id = user_id >> 10 % N` (extracting the shard bits from the ID). All data for that user — photos, comments, likes, profile — resides on the same shard. This ensures that the common query "load my feed" touches only one shard.
 
 **Hotspot handling:** When a celebrity posts, the fan-out-on-write approach distributes the post to followers' timelines. Each follower reads from their own shard, avoiding the celebrity shard read storm.
 
@@ -400,7 +400,7 @@ Board "Travel" (board_id = 42) ? Shard 7
   Pin 3 (board_id = 42) ? Shard 7
 ```
 
-Pinterest uses range-based sharding with dynamic shard splitting. When a shard grows too large or too hot, it is split at a board boundary â€” all pins for a given board always stay together.
+Pinterest uses range-based sharding with dynamic shard splitting. When a shard grows too large or too hot, it is split at a board boundary — all pins for a given board always stay together.
 
 **Reads per second per shard:**
 
@@ -426,7 +426,7 @@ Shard topology (early Discord):
 
 Discord's sharding faces the *server size skew* problem. Some servers (e.g., gaming communities with millions of members) are orders of magnitude larger than the median server. Their shard handles disproportionately more messages.
 
-**Mitigation:** Discord implemented *shard splitting* â€” the largest servers can be further partitioned by channel_id within the guild. Channel-level routing is configured in a routing table:
+**Mitigation:** Discord implemented *shard splitting* — the largest servers can be further partitioned by channel_id within the guild. Channel-level routing is configured in a routing table:
 
 ```
 Large Guild "FortniteOfficial":
@@ -843,7 +843,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### TypeScript: Consistent Hash Ring with Virtual Nodes
 
-This class implements a production-grade consistent hash ring with virtual nodes, add/remove node operations, and key lookup â€” the foundation of DynamoDB, Cassandra, and Discord's sharding layer.
+This class implements a production-grade consistent hash ring with virtual nodes, add/remove node operations, and key lookup — the foundation of DynamoDB, Cassandra, and Discord's sharding layer.
 
 ```typescript
 class ConsistentHashRing {
@@ -1153,11 +1153,11 @@ flowchart TD
 
 ### Case Study
 
-**Sharding Discord's Message Database at Scale.** Discord's original architecture stored all messages in a single MongoDB replica set. By 2017, with 100M+ messages per day, the MongoDB instance could not keep up â€” write latency exceeded 500ms during peak hours, and the 16GB RAM limit forced frequent disk swaps. The engineering team migrated to Cassandra (later ScyllaDB) with a two-level sharding strategy: primary sharding by `guild_id` (server ID) using consistent hashing with 256 virtual nodes per ScyllaDB node, and sub-sharding within each guild by `channel_id` using a compound primary key `(guild_id, channel_id, message_id)`.
+**Sharding Discord's Message Database at Scale.** Discord's original architecture stored all messages in a single MongoDB replica set. By 2017, with 100M+ messages per day, the MongoDB instance could not keep up — write latency exceeded 500ms during peak hours, and the 16GB RAM limit forced frequent disk swaps. The engineering team migrated to Cassandra (later ScyllaDB) with a two-level sharding strategy: primary sharding by `guild_id` (server ID) using consistent hashing with 256 virtual nodes per ScyllaDB node, and sub-sharding within each guild by `channel_id` using a compound primary key `(guild_id, channel_id, message_id)`.
 
-**Implementation Details.** The team implemented a custom shard-aware router that mapped each guild to a ScyllaDB node using the consistent hash ring. Within each node, Cassandra's native partition key `(guild_id, channel_id)` ensured that all messages in a channel were stored contiguously, enabling efficient range scans (`SELECT * FROM messages WHERE guild_id=? AND channel_id=? ORDER BY message_id DESC LIMIT 50`). When a guild grew too large (e.g., a gaming community with 500K members generating 100K messages/hour), Discord split the guild into sub-shards based on channel activity â€” hot channels got their own partition, cold channels shared. The rebalancing was automated: a monitoring service tracked partition size and query latency and triggered splits when either exceeded thresholds.
+**Implementation Details.** The team implemented a custom shard-aware router that mapped each guild to a ScyllaDB node using the consistent hash ring. Within each node, Cassandra's native partition key `(guild_id, channel_id)` ensured that all messages in a channel were stored contiguously, enabling efficient range scans (`SELECT * FROM messages WHERE guild_id=? AND channel_id=? ORDER BY message_id DESC LIMIT 50`). When a guild grew too large (e.g., a gaming community with 500K members generating 100K messages/hour), Discord split the guild into sub-shards based on channel activity — hot channels got their own partition, cold channels shared. The rebalancing was automated: a monitoring service tracked partition size and query latency and triggered splits when either exceeded thresholds.
 
-**Business Impact.** The sharded architecture scaled Discord's message throughput from 100M to 1.5B messages per day with p99 read latency under 15ms. Adding ScyllaDB nodes required zero downtime â€” the consistent hash ring automatically redistributed approximately 1/N of guilds to the new nodes. During the COVID-19 pandemic traffic surge (5x normal), the auto-scaling rebalancer added 20 nodes over 48 hours with zero data loss and zero downtime. The key insight: Discord chose compound shard keys that matched their primary query pattern (load messages by channel), ensuring that 95%+ of all queries hit a single shard and required no scatter-gather.
+**Business Impact.** The sharded architecture scaled Discord's message throughput from 100M to 1.5B messages per day with p99 read latency under 15ms. Adding ScyllaDB nodes required zero downtime — the consistent hash ring automatically redistributed approximately 1/N of guilds to the new nodes. During the COVID-19 pandemic traffic surge (5x normal), the auto-scaling rebalancer added 20 nodes over 48 hours with zero data loss and zero downtime. The key insight: Discord chose compound shard keys that matched their primary query pattern (load messages by channel), ensuring that 95%+ of all queries hit a single shard and required no scatter-gather.
 
 ## Chapter Quiz
 
@@ -1186,7 +1186,7 @@ flowchart TD
 ## Exercises
 
 <details>
-<summary>Review Questions â€” Click to expand</summary>
+<summary>Review Questions — Click to expand</summary>
 
 ### Review Questions
 
@@ -1205,7 +1205,7 @@ flowchart TD
 </details>
 
 <details>
-<summary>Application Problems â€” Click to expand</summary>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems
 
@@ -1213,15 +1213,15 @@ flowchart TD
    **Solution:** Move the upper half of Node 1's range (J-M) to Node 2, and move the lower half of Node 2's range (N-P) to Node 1. Final: Node 0 (A-F), Node 1 (G-I, N-P), Node 2 (J-M, Q-S), Node 3 (T-Z). During migration: mark shards as migrating, serve reads from source, write to both source and destination, then atomically switch the directory.
 
 2. **Consistent Hash Implementation:** Ring nodes at 10, 25, 40, 60, 85. Keys at 5, 15, 22, 38, 42, 55, 70, 90.
-   **Solution:** 5?wrap to 85, 15?25, 22?25, 38?40, 42?60, 55?60, 70?85, 90?10. Add node at 50: 42?50 (moved), 55?50 (moved). Keys moved: 2/8 = 25% â‰ˆ 1/N = 1/6 â‰ˆ 16.7% (small sample variance).
+   **Solution:** 5?wrap to 85, 15?25, 22?25, 38?40, 42?60, 55?60, 70?85, 90?10. Add node at 50: 42?50 (moved), 55?50 (moved). Keys moved: 2/8 = 25% ≈ 1/N = 1/6 ≈ 16.7% (small sample variance).
 
 3. **Celebrity Problem Design:** 100 shards, 50M followers, 2 posts/day, 500KB/post.
-   **Solution:** (a) Cache celebrity posts in Redis with TTL=1 hour â€” first read hits DB, subsequent 49.9M reads hit cache. (b) Fan-out on write: write post to each follower's timeline shard (distributes reads). (c) Read replicas for the celebrity's shard. QPS reduction: without cache = 50M reads/day â‰ˆ 579 QPS sustained. With 99% cache hit rate = 5.79 QPS to DB â€” a 100x reduction.
+   **Solution:** (a) Cache celebrity posts in Redis with TTL=1 hour — first read hits DB, subsequent 49.9M reads hit cache. (b) Fan-out on write: write post to each follower's timeline shard (distributes reads). (c) Read replicas for the celebrity's shard. QPS reduction: without cache = 50M reads/day ≈ 579 QPS sustained. With 99% cache hit rate = 5.79 QPS to DB — a 100x reduction.
 
 </details>
 
 <details>
-<summary>Challenge Problem â€” Click to expand</summary>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem
 
@@ -1229,9 +1229,9 @@ flowchart TD
 
 **Solution Outline:**
 1. **Algorithm:** Consistent hashing with virtual nodes (150 vnodes per node). Adding 10 new nodes to the existing 50 results in 50*150 + 10*150 = 9000 vnodes total. Each new node claims ~1/60 of the ring = ~1.67% of keys per node, total 16.7% moved.
-2. **Data to migrate:** Total data = 50 Ã— 400 GB = 20 TB. Fraction moved per new node â‰ˆ 1/60, so 20 TB Ã— 10/60 â‰ˆ 3.33 TB total. Per new node: ~333 GB inbound. Per existing node: each gives up ~1/60 of its 400 GB = 6.67 GB outbound.
+2. **Data to migrate:** Total data = 50 × 400 GB = 20 TB. Fraction moved per new node ≈ 1/60, so 20 TB × 10/60 ≈ 3.33 TB total. Per new node: ~333 GB inbound. Per existing node: each gives up ~1/60 of its 400 GB = 6.67 GB outbound.
 3. **Migration protocol:** Three-phase. Phase 1 (Prepare): mark new nodes as joining, pre-split vnodes. Phase 2 (Transfer): stream data from existing to new nodes using SSTable transfer (bulk, not per-key). Reads served from both source and destination; writes go to both (dual-write). Phase 3 (Commit): atomically update the ring to include new nodes, remove dual-write flag.
-4. **Minimum time:** Each existing node streams 6.67 GB over 10 Gbps. Time = 6.67 Ã— 8 Gb / 10 Gbps = 5.34 seconds per node. With 50 nodes streaming in parallel, total â‰ˆ 6 seconds (assuming linear network). Realistically with network contention: 2-5 minutes.
+4. **Minimum time:** Each existing node streams 6.67 GB over 10 Gbps. Time = 6.67 × 8 Gb / 10 Gbps = 5.34 seconds per node. With 50 nodes streaming in parallel, total ≈ 6 seconds (assuming linear network). Realistically with network contention: 2-5 minutes.
 5. **Rollback plan:** Keep old ring configuration during migration. If migration fails mid-way, revert the ring configuration, stop dual-writes, and re-stream from last checkpoint. Use monotonic sequence numbers on each shard to track migration progress.
 6. **Monitoring:** (a) Migration progress % per shard, (b) Network throughput per node (Gbps), (c) Dual-write error rate, (d) Read/write latency during migration (target < 2x baseline), (e) Ring consistency (all nodes agree on ring state), (f) SSTable count per node (should not increase more than 2x during migration).
 

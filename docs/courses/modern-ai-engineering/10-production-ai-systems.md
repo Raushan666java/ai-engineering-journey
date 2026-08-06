@@ -1,6 +1,6 @@
-﻿# Chapter 10: Production AI Systems
+# Chapter 10: Production AI Systems
 
-> **Bridge the gap between prototype and production. Master deployment strategies, caching, rate limiting, cost management, load balancing, A/B testing, monitoring, and incident response for AI applications â€” all with production-grade TypeScript implementations.**
+> **Bridge the gap between prototype and production. Master deployment strategies, caching, rate limiting, cost management, load balancing, A/B testing, monitoring, and incident response for AI applications — all with production-grade TypeScript implementations.**
 
 ## Learning Objectives
 
@@ -1893,15 +1893,15 @@ export type { Variant, ExperimentConfig, ExperimentResult, MetricCollector };
 
 ## Summary
 
-AI systems in production require far more than just calling an API. Deployment strategies must align with latency, throughput, and cost requirements â€” real-time for interactive apps, batch for bulk processing, streaming for progressive output, and edge for offline-capable mobile experiences. Caching is the single most effective cost and latency optimization, with semantic caching offering especially high returns by matching queries based on meaning rather than exact text. Rate limiting must operate across multiple dimensions (user, IP, token, global) using token bucket or sliding window algorithms, with priority queuing as an alternative to hard rejection. Cost management requires a layered approach: select the cheapest adequate model, optimize prompts for fewer tokens, batch requests, cache aggressively, and consider distillation or quantization for high-volume use cases. A/B testing brings scientific rigor to AI system changes, enabling teams to validate prompt variants, model upgrades, and retrieval strategy modifications before full rollout. Comprehensive monitoring must track latency percentiles, error rates, token usage, costs, hallucination rates, and safety metrics, with alert rules tuned to detect degradation early. Incident response for AI systems demands specialized runbooks for quality degradation, cost spikes, safety breaches, and model failures â€” each with clear detection, triage, mitigation, and post-mortem workflows.
+AI systems in production require far more than just calling an API. Deployment strategies must align with latency, throughput, and cost requirements — real-time for interactive apps, batch for bulk processing, streaming for progressive output, and edge for offline-capable mobile experiences. Caching is the single most effective cost and latency optimization, with semantic caching offering especially high returns by matching queries based on meaning rather than exact text. Rate limiting must operate across multiple dimensions (user, IP, token, global) using token bucket or sliding window algorithms, with priority queuing as an alternative to hard rejection. Cost management requires a layered approach: select the cheapest adequate model, optimize prompts for fewer tokens, batch requests, cache aggressively, and consider distillation or quantization for high-volume use cases. A/B testing brings scientific rigor to AI system changes, enabling teams to validate prompt variants, model upgrades, and retrieval strategy modifications before full rollout. Comprehensive monitoring must track latency percentiles, error rates, token usage, costs, hallucination rates, and safety metrics, with alert rules tuned to detect degradation early. Incident response for AI systems demands specialized runbooks for quality degradation, cost spikes, safety breaches, and model failures — each with clear detection, triage, mitigation, and post-mortem workflows.
 
 ## Practical Takeaways
 
-1. **Implement semantic caching first** â€” it reduces latency by 50-80% and costs by 30-60% with minimal effort. Use cosine similarity with a 0.92 threshold for balanced recall and precision
-2. **Deploy multi-layer rate limiting** â€” enforce per-user, per-IP, and global limits with token bucket algorithms. Add priority queuing for critical users instead of hard rejection
-3. **Choose the cheapest adequate model** â€” route simple queries to gpt-4o-mini and complex ones to gpt-4o. This single practice can reduce costs by 50-90%
-4. **A/B test every change** â€” prompt variants, model versions, and retrieval strategies should all be validated statistically before full rollout. Use 95% confidence intervals and ensure adequate sample sizes
-5. **Monitor what matters** â€” track p95 latency, error rate, token usage, daily cost, and hallucination rate. Set up alert rules with sustained condition windows to reduce noise
+1. **Implement semantic caching first** — it reduces latency by 50-80% and costs by 30-60% with minimal effort. Use cosine similarity with a 0.92 threshold for balanced recall and precision
+2. **Deploy multi-layer rate limiting** — enforce per-user, per-IP, and global limits with token bucket algorithms. Add priority queuing for critical users instead of hard rejection
+3. **Choose the cheapest adequate model** — route simple queries to gpt-4o-mini and complex ones to gpt-4o. This single practice can reduce costs by 50-90%
+4. **A/B test every change** — prompt variants, model versions, and retrieval strategies should all be validated statistically before full rollout. Use 95% confidence intervals and ensure adequate sample sizes
+5. **Monitor what matters** — track p95 latency, error rate, token usage, daily cost, and hallucination rate. Set up alert rules with sustained condition windows to reduce noise
 
 ## Chapter Quiz
 
@@ -2292,4 +2292,4 @@ console.log(dashboard.generateReport());
 
 ---
 
-> **Next**: [Chapter 11: MLOps for AI Engineering â†’](11-mlops-for-ai-engineering.md)
+> **Next**: [Chapter 11: MLOps for AI Engineering →](11-mlops-for-ai-engineering.md)

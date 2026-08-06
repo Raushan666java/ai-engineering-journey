@@ -1,4 +1,4 @@
-﻿# Chapter 8: Broadcasting, Events & Real-Time Features
+# Chapter 8: Broadcasting, Events & Real-Time Features
 > **Previous:** [API Development & Integration](./07-api-development) | **Next:** [Service Container, Facades & Package Development](./09-container-packages)
 
 ---
@@ -324,7 +324,7 @@ Echo.leaveAll();
 ### Presence Channels
 
 
-> **One-Sentence Takeaway:** Presence channels expose real-time user awareness â€” showing who is online, joining, or leaving a specific channel.
+> **One-Sentence Takeaway:** Presence channels expose real-time user awareness — showing who is online, joining, or leaving a specific channel.
 
 Presence channels expose connected users. Backend event:
 
@@ -553,7 +553,7 @@ Echo.private(`App.Models.User.${userId}`)
 | Complexity | Higher (handshake, reconnection) | Lower (simple HTTP stream) |
 | Use Case | Chat, collaboration | Notifications, status updates |
 
-## Quick Reference â€” Broadcasting Artisan Commands
+## Quick Reference — Broadcasting Artisan Commands
 
 | Command | Purpose |
 |---------|---------|
@@ -568,7 +568,7 @@ Echo.private(`App.Models.User.${userId}`)
 |---------|---------|--------------|---------------|
 | Channel Type | Presence | Private (per-document) | Public (announcements) |
 | Events per Second | 10-50 | 50-200 (cursor moves) | 1-5 (periodic refresh) |
-| Whisper Events | Typing indicators | Cursor positions | â€” |
+| Whisper Events | Typing indicators | Cursor positions | — |
 | Presence Data | Online users | Editors per document | Active viewers |
 | Scaling | Redis for multi-server | Redis for multi-server | Single server sufficient |
 

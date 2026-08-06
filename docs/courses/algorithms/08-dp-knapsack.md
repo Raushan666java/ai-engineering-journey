@@ -1,6 +1,6 @@
-﻿# Chapter 8: Dynamic Programming â€” Knapsack Problems
+# Chapter 8: Dynamic Programming — Knapsack Problems
 
-> **Prerequisites:** [Chapter 7: Dynamic Programming â€” Foundations](./07-dp-intro.md) â€” DP properties, recurrence design, tabulation | **Next:** [Chapter 9: Dynamic Programming â€” Sequences](./09-dp-sequences.md) â€” From resource allocation to string and sequence patterns
+> **Prerequisites:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — DP properties, recurrence design, tabulation | **Next:** [Chapter 9: Dynamic Programming — Sequences](./09-dp-sequences.md) — From resource allocation to string and sequence patterns
 
 ## Learning Objectives
 
@@ -35,15 +35,15 @@ By the end of this chapter, students will be able to:
 
 ## Why Knapsack Problems Matter
 
-Imagine you are shipping goods in a truck with a weight limit. Each item has a weight and a profit. Which items do you load to maximize profit without breaking the axle? This is the **knapsack problem** â€” and it shows up everywhere:
+Imagine you are shipping goods in a truck with a weight limit. Each item has a weight and a profit. Which items do you load to maximize profit without breaking the axle? This is the **knapsack problem** — and it shows up everywhere:
 
 | Real-World Scenario | Knapsack Analogy |
 |---------------------|------------------|
-| **Budget allocation** â€” \( n \) projects with cost & ROI, limited capital | Each project is an item. Invest or skip (0/1). |
-| **Cargo loading** â€” planes, ships, trucks with weight/volume limits | Maximize freight value within capacity (0/1). |
-| **Inventory restocking** â€” order any quantity of each product up to warehouse capacity | Each product can be ordered multiple times (unbounded). |
-| **Cloud resource provisioning** â€” VMs of different sizes and costs | Choose VM types to meet workload within budget (bounded). |
-| **Raw material cutting** â€” cut steel rods of fixed length into saleable pieces | Cut any number of each piece size (unbounded). |
+| **Budget allocation** — \( n \) projects with cost & ROI, limited capital | Each project is an item. Invest or skip (0/1). |
+| **Cargo loading** — planes, ships, trucks with weight/volume limits | Maximize freight value within capacity (0/1). |
+| **Inventory restocking** — order any quantity of each product up to warehouse capacity | Each product can be ordered multiple times (unbounded). |
+| **Cloud resource provisioning** — VMs of different sizes and costs | Choose VM types to meet workload within budget (bounded). |
+| **Raw material cutting** — cut steel rods of fixed length into saleable pieces | Cut any number of each piece size (unbounded). |
 
 Knapsack problems are the gateway to understanding **resource-constrained optimization**. Every knapsack variant teaches a different DP pattern: 0/1 teaches item-or-skip decisions, unbounded teaches unlimited reuse, and fractional teaches greedy optimality. Mastering these patterns unlocks solutions to hundreds of interview and real-world problems.
 
@@ -53,14 +53,14 @@ Knapsack problems are the gateway to understanding **resource-constrained optimi
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| 0/1 Knapsack | max(skip, take) â€” backward capacity loop | The classic DP for item selection with capacity constraint |
+| 0/1 Knapsack | max(skip, take) — backward capacity loop | The classic DP for item selection with capacity constraint |
 | Fractional Knapsack | Greedy by value/weight ratio | Optimal when items are divisible |
 | Bounded Knapsack | Multiple copies per item, expand to 0/1 | Generalization between 0/1 and unbounded |
 | Space Optimization | 1D array, iterate capacity backward | \( O(W) \) space, but loses reconstruction ability |
 | Unbounded Knapsack | Same recurrence but forward capacity loop | Direction difference = item can be reused |
 | Subset Sum | Boolean DP for reachable sums | Foundation for many NP-hard reductions |
 | Equal Partition | Reduce to subset sum with target = total/2 | Classic "can you split equally" problem |
-| Coin Change | min(1 + dp[c - coin]) â€” forward loop | Unbounded min-coin variation |
+| Coin Change | min(1 + dp[c - coin]) — forward loop | Unbounded min-coin variation |
 | Target Sum | Reduce to subset sum via math transform | Sign assignment counting problem |
 
 ### Chapter Roadmap
@@ -105,9 +105,9 @@ Given \( n \) items, each with weight \( w_i \) and value \( v_i \), and a knaps
 1. Create a 2D DP table \( dp[n+1][W+1] \) initialized to 0.
 2. For each item \( i \) from 1 to \( n \):
    - For each capacity \( c \) from 1 to \( W \):
-     - If \( w_i > c \): item cannot fit â†’ \( dp[i][c] = dp[i-1][c] \)
+     - If \( w_i > c \): item cannot fit → \( dp[i][c] = dp[i-1][c] \)
      - Else: \( dp[i][c] = \max(dp[i-1][c], \; v_i + dp[i-1][c - w_i]) \)
-3. Return \( dp[n][W] \) â€” the maximum value achievable.
+3. Return \( dp[n][W] \) — the maximum value achievable.
 
 #### Recurrence
 
@@ -119,7 +119,7 @@ dp[i-1][c] & \text{if } w_i > c \\
 \end{cases}
 \]
 
-**Why this works:** At each item \( i \) and capacity \( c \), we have two choices â€” skip the item (keep value from previous row at same capacity) or take it (add its value to best value for remaining capacity from previous row). The max picks the better option. The previous row guarantees each item is used at most once.
+**Why this works:** At each item \( i \) and capacity \( c \), we have two choices — skip the item (keep value from previous row at same capacity) or take it (add its value to best value for remaining capacity from previous row). The max picks the better option. The previous row guarantees each item is used at most once.
 
 #### Pseudocode
 
@@ -151,10 +151,10 @@ Initialize: row 0 and column 0 are all 0.
 
 **Key computations:**
 
-- \( dp[1][1] \): w=1 â‰¤ 1 â†’ max(0, 10+0) = **10**
-- \( dp[2][3] \): w=2 â‰¤ 3 â†’ max(10, 15+10) = **25**
-- \( dp[3][5] \): w=3 â‰¤ 5 â†’ max(25, 40+15) = **55**
-- \( dp[4][5] \): w=4 â‰¤ 5 â†’ max(55, 55+10) = **65**
+- \( dp[1][1] \): w=1 ≤ 1 → max(0, 10+0) = **10**
+- \( dp[2][3] \): w=2 ≤ 3 → max(10, 15+10) = **25**
+- \( dp[3][5] \): w=3 ≤ 5 → max(25, 40+15) = **55**
+- \( dp[4][5] \): w=4 ≤ 5 → max(55, 55+10) = **65**
 
 **Result:** 65. **Items selected:** Water filter (4 kg, $55) + Tent (1 kg, $10) = 5 kg, $65.
 
@@ -226,7 +226,7 @@ public class Knapsack01 {
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Time** | \( O(nW) \) | Double loop: \( n \) items Ã— \( W \) capacity slots. Each subproblem solved in \( O(1) \). Pseudo-polynomial because \( W \) is a numeric value, not input size in bits. |
+| **Time** | \( O(nW) \) | Double loop: \( n \) items × \( W \) capacity slots. Each subproblem solved in \( O(1) \). Pseudo-polynomial because \( W \) is a numeric value, not input size in bits. |
 | **Space** | \( O(nW) \) | 2D table stores \( (n+1)(W+1) \) integers. |
 
 **Why pseudo-polynomial?** Input size is \( O(n \log W) \) (weights + capacity in bits), but runtime is \( O(nW) \) which is exponential in the bit-length of \( W \).
@@ -244,7 +244,7 @@ Knapsack01_1D(n, W, w, v):
     return dp[W]
 ```
 
-**Why backward?** Reading \( dp[c - w_i] \) from the right ensures we read the value from the **previous iteration** (without the current item), preventing reuse. Forward would read the current item's value, allowing multiple uses â€” exactly what unbounded knapsack wants.
+**Why backward?** Reading \( dp[c - w_i] \) from the right ensures we read the value from the **previous iteration** (without the current item), preventing reuse. Forward would read the current item's value, allowing multiple uses — exactly what unbounded knapsack wants.
 
 ```cpp
 int knapsack01_1D(const std::vector<int>& w, const std::vector<int>& v, int W) {
@@ -263,7 +263,7 @@ int knapsack01_1D(const std::vector<int>& w, const std::vector<int>& v, int W) {
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Simple recurrence, easy to implement | \( O(nW) \) is pseudo-polynomial â€” slow for large \( W \) |
+| Simple recurrence, easy to implement | \( O(nW) \) is pseudo-polynomial — slow for large \( W \) |
 | 1D space optimization is straightforward | Cannot reconstruct selected items with 1D alone |
 | Foundation for all other knapsack variants | Only handles at-most-once per item |
 
@@ -271,8 +271,8 @@ int knapsack01_1D(const std::vector<int>& w, const std::vector<int>& v, int W) {
 
 | Case | Example | Behavior |
 |------|---------|----------|
-| Zero capacity | \( W = 0 \) | Returns 0 â€” no items can fit |
-| No items | \( n = 0 \) | Returns 0 â€” nothing to choose |
+| Zero capacity | \( W = 0 \) | Returns 0 — no items can fit |
+| No items | \( n = 0 \) | Returns 0 — nothing to choose |
 | Item heavier than capacity | \( w_i > W \) | Item is always skipped |
 | All items too heavy | All \( w_i > W \) | Returns 0 |
 | Single item fits | One item with \( w_1 \le W \) | Returns \( v_1 \) |
@@ -290,7 +290,7 @@ int knapsack01_1D(const std::vector<int>& w, const std::vector<int>& v, int W) {
 
 > **Note:** This is a **greedy** algorithm, not DP. It is included because it is the only knapsack variant solvable in polynomial time and is the counterpoint that motivates why 0/1 needs DP.
 
-**Real-World Analogy:** At a bulk food market, you can take any amount of rice, beans, or flour â€” you do not need whole bags. Just scoop what you need.
+**Real-World Analogy:** At a bulk food market, you can take any amount of rice, beans, or flour — you do not need whole bags. Just scoop what you need.
 
 #### Problem Definition
 
@@ -447,7 +447,7 @@ class FractionalKnapsack {
 
 > **Pro Tip:** Fractional knapsack is the only knapsack variant solvable in polynomial time. When an interviewer asks "why can't we use greedy for 0/1 knapsack?", the answer is that indivisibility breaks the exchange argument.
 
-**One-Sentence Takeaway:** Fractional knapsack uses greedy by value/weight ratio because items are divisible, achieving \( O(n \log n) \) â€” the only polynomial knapsack variant.
+**One-Sentence Takeaway:** Fractional knapsack uses greedy by value/weight ratio because items are divisible, achieving \( O(n \log n) \) — the only polynomial knapsack variant.
 
 ---
 
@@ -496,8 +496,8 @@ BoundedKnapsack(n, W, w, v, k):
 **Input:** Items = [(2, 5, limit=3), (3, 8, limit=2)], \( W = 7 \)
 
 **Binary splitting:**
-- Item 1 (w=2, v=5, k=3): 3 = 1 + 2 â†’ groups: (2,5), (4,10)
-- Item 2 (w=3, v=8, k=2): 2 = 1 + 1 â†’ groups: (3,8), (3,8)
+- Item 1 (w=2, v=5, k=3): 3 = 1 + 2 → groups: (2,5), (4,10)
+- Item 2 (w=3, v=8, k=2): 2 = 1 + 1 → groups: (3,8), (3,8)
 
 New items: [(2,5), (4,10), (3,8), (3,8)]
 
@@ -507,7 +507,7 @@ New items: [(2,5), (4,10), (3,8), (3,8)]
 - After (3,8): dp = [0,0,5,8,10,13,15,18]
 - After (3,8): dp = [0,0,5,8,10,13,16,18]
 
-**Result:** dp[7] = 18. Selection: 2 Ã— item 1 (4 wt, $10) + 1 Ã— item 2 (3 wt, $8) = 7 wt, $18.
+**Result:** dp[7] = 18. Selection: 2 × item 1 (4 wt, $10) + 1 × item 2 (3 wt, $8) = 7 wt, $18.
 
 #### C++ Implementation
 
@@ -602,14 +602,14 @@ public class BoundedKnapsack {
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Handles limited-quantity items realistically | Binary splitting adds complexity |
-| Generalizes both 0/1 (k=1) and unbounded (k=âˆž) | Without splitting, naive \( O(nWK) \) is too slow |
+| Generalizes both 0/1 (k=1) and unbounded (k=∞) | Without splitting, naive \( O(nWK) \) is too slow |
 
 #### Edge Cases
 
 | Case | Behavior |
 |------|----------|
 | limit = 1 for all | Degrades to 0/1 knapsack |
-| limit = âˆž (very large) | Degrades to unbounded knapsack |
+| limit = ∞ (very large) | Degrades to unbounded knapsack |
 | Zero limit | Item type is ignored |
 | W = 0 | Returns 0 |
 
@@ -800,11 +800,11 @@ Initialize: dp = [T, F, F, F, F, F, F, F, F, F]
 
 | Element | Loop \( s \) | Updated dp |
 |:-------:|:-----------|:-----------|
-| Start | â€” | [T, F, F, F, F, F, F, F, F, F] |
-| **2** | 9â†’2 | [T, F, **T**, F, F, F, F, F, F, F] |
-| **3** | 9â†’3 | [T, F, T, **T**, F, **T**, F, F, F, F] |
-| **4** | 9â†’4 | [T, F, T, T, **T**, T, **T**, F, **T**, F] |
-| **7** | 9â†’7 | [T, F, T, T, T, T, T, **T**, T, **T**] |
+| Start | — | [T, F, F, F, F, F, F, F, F, F] |
+| **2** | 9→2 | [T, F, **T**, F, F, F, F, F, F, F] |
+| **3** | 9→3 | [T, F, T, **T**, F, **T**, F, F, F, F] |
+| **4** | 9→4 | [T, F, T, T, **T**, T, **T**, F, **T**, F] |
+| **7** | 9→7 | [T, F, T, T, T, T, T, **T**, T, **T**] |
 
 **Result:** dp[9] = true. Subset: {2, 3, 4} = 9, or {2, 7} = 9.
 
@@ -860,15 +860,15 @@ public class SubsetSum {
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Time** | \( O(nS) \) | \( n \) elements Ã— \( S \) capacity. Each cell is \( O(1) \) boolean OR. |
-| **Space** | \( O(S) \) | Boolean array. Bitset reduces 8Ã—: `dp |= (dp << x)` |
+| **Time** | \( O(nS) \) | \( n \) elements × \( S \) capacity. Each cell is \( O(1) \) boolean OR. |
+| **Space** | \( O(S) \) | Boolean array. Bitset reduces 8×: `dp |= (dp << x)` |
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Simple boolean DP, easy to understand | \( O(nS) \) is impractical for large \( S \) |
-| Bitset optimization reduces space/time 8Ã— | Cannot reconstruct subset with 1D bitset |
+| Bitset optimization reduces space/time 8× | Cannot reconstruct subset with 1D bitset |
 
 #### Edge Cases
 
@@ -889,7 +889,7 @@ public class SubsetSum {
 ### 8.6 Equal Partition Subset Sum
 
 
-**Real-World Analogy:** Two siblings inherit valuables â€” can they split so each gets exactly half the total value?
+**Real-World Analogy:** Two siblings inherit valuables — can they split so each gets exactly half the total value?
 
 #### Problem Definition
 
@@ -897,7 +897,7 @@ Given an integer array, determine if it can be partitioned into two subsets with
 
 #### Algorithm Steps
 
-1. Compute total sum. If odd â†’ return false.
+1. Compute total sum. If odd → return false.
 2. Target = total / 2.
 3. Run subset sum DP.
 
@@ -981,10 +981,10 @@ public class EqualPartition {
 | Case | Behavior |
 |------|----------|
 | Odd total | Returns false immediately |
-| Empty array | Total = 0, target = 0 â†’ true |
-| All zeros | Total = 0 â†’ true |
+| Empty array | Total = 0, target = 0 → true |
+| All zeros | Total = 0 → true |
 
-> **Pro Tip:** Equal partition is an immediate "if odd total â†’ false" filter. No need to run DP if the total is odd.
+> **Pro Tip:** Equal partition is an immediate "if odd total → false" filter. No need to run DP if the total is odd.
 
 **One-Sentence Takeaway:** Equal partition reduces to subset sum with target = total/2; the odd-total early exit rejects impossible cases instantly.
 
@@ -993,7 +993,7 @@ public class EqualPartition {
 ### 8.7 Coin Change (Minimum Coins)
 
 
-**Real-World Analogy:** A vending machine needs to return $0.87 using quarters (25Â¢), dimes (10Â¢), nickels (5Â¢), and pennies (1Â¢). What is the minimum number of coins?
+**Real-World Analogy:** A vending machine needs to return $0.87 using quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢). What is the minimum number of coins?
 
 #### Problem Definition
 
@@ -1037,7 +1037,7 @@ Initialize: dp = [0, INF, INF, INF, INF, INF, INF]
 
 | Amount | Consider coins | dp[c] |
 |:------:|:---------------|:-----:|
-| 0 | â€” | 0 |
+| 0 | — | 0 |
 | 1 | 1: 1+dp[0]=1 | **1** |
 | 2 | 1: 1+dp[1]=2 | **2** |
 | 3 | 1: 1+dp[2]=3, 3: 1+dp[0]=1 | **1** (coin 3) |
@@ -1045,7 +1045,7 @@ Initialize: dp = [0, INF, INF, INF, INF, INF, INF]
 | 5 | 1: 1+dp[4]=2, 3: 1+dp[2]=3, 4: 1+dp[1]=2 | **2** (1+4) |
 | 6 | 1: 1+dp[5]=3, 3: 1+dp[3]=2, 4: 1+dp[2]=3 | **2** (3+3) |
 
-**Result:** dp[6] = 2. Solution: 3Â¢ + 3Â¢.
+**Result:** dp[6] = 2. Solution: 3¢ + 3¢.
 
 #### C++ Implementation
 
@@ -1110,7 +1110,7 @@ public class CoinChange {
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Time** | \( O(nA) \) | \( n \) coins Ã— \( A \) amount. Each cell checks all coins. |
+| **Time** | \( O(nA) \) | \( n \) coins × \( A \) amount. Each cell checks all coins. |
 | **Space** | \( O(A) \) | Integer array of size \( A + 1 \). |
 
 #### Advantages & Disadvantages
@@ -1159,8 +1159,8 @@ Count subsets summing to \( (\text{total} + S) / 2 \). If odd or \( |S| > \) tot
 
 #### Algorithm Steps
 
-1. Compute total. If \( (\text{total} + S) \) odd â†’ return 0.
-2. Target = \( (\text{total} + S) / 2 \). If target &lt; 0 â†’ return 0.
+1. Compute total. If \( (\text{total} + S) \) odd → return 0.
+2. Target = \( (\text{total} + S) / 2 \). If target &lt; 0 → return 0.
 3. Run counting subset sum: \( dp[s] = dp[s] + dp[s - x] \), backward loop.
 
 #### Step-by-Step Dry Run
@@ -1292,7 +1292,7 @@ public class TargetSum {
 |---------|-----------|-----------|------|-------|-------------|
 | **Fractional** | Divisible | Greedy (sort by ratio) | \( O(n \log n) \) | \( O(1) \) | Only polynomial variant |
 | **0/1** | At most once | DP, backward loop | \( O(nW) \) | \( O(W) \) | Classic item selection |
-| **Bounded** | Up to \( k_i \) times | Binary splitting â†’ 0/1 DP | \( O(W \sum \log k_i) \) | \( O(W) \) | Generalizes 0/1 & unbounded |
+| **Bounded** | Up to \( k_i \) times | Binary splitting → 0/1 DP | \( O(W \sum \log k_i) \) | \( O(W) \) | Generalizes 0/1 & unbounded |
 | **Unbounded** | Unlimited | DP, forward loop | \( O(nW) \) | \( O(W) \) | Unlimited item reuse |
 
 **Which variant to use when:**
@@ -1346,7 +1346,7 @@ int findTargetSumWays(std::vector<int>& nums, int S) {
 }
 ```
 
-### Problem 3: Coin Change 2 â€” Number of Ways (LeetCode 518)
+### Problem 3: Coin Change 2 — Number of Ways (LeetCode 518)
 
 > Count ways to make amount with unlimited coins.
 
@@ -1389,7 +1389,7 @@ int findMaxForm(std::vector<std::string>& strs, int m, int n) {
 
 ### Resource Allocation & Cloud Computing
 
-Cloud providers (AWS, Azure, GCP) use knapsack algorithms for **VM instance placement**. Given server capacity and VM requests with different resource profiles, the scheduler decides placement â€” a multi-dimensional 0/1 knapsack.
+Cloud providers (AWS, Azure, GCP) use knapsack algorithms for **VM instance placement**. Given server capacity and VM requests with different resource profiles, the scheduler decides placement — a multi-dimensional 0/1 knapsack.
 
 ```
 Server:  64 CPUs, 256 GB RAM, 10 TB SSD
@@ -1414,7 +1414,7 @@ Goal:     Minimize raw rolls used (minimize waste)
 
 ### Portfolio Optimization
 
-Financial portfolio selection restricts total investment capital (capacity). Each asset has a cost (weight) and expected return (value). Fractional shares â†’ fractional knapsack. Whole shares only â†’ 0/1 knapsack.
+Financial portfolio selection restricts total investment capital (capacity). Each asset has a cost (weight) and expected return (value). Fractional shares → fractional knapsack. Whole shares only → 0/1 knapsack.
 
 ### Logistics & Supply Chain
 
@@ -1424,19 +1424,19 @@ Shipping companies (FedEx, UPS, Maersk) load containers, trucks, and cargo plane
 
 ```
 Subset Sum (boolean)
-    â†“
-0/1 Knapsack (max value) â† Backward loop â† Counter â† Target Sum (counting)
-    â†“               â†“
-    Bounded (binary split â†’ 0/1)
-    â†“
+    ↓
+0/1 Knapsack (max value) ← Backward loop ← Counter ← Target Sum (counting)
+    ↓               ↓
+    Bounded (binary split → 0/1)
+    ↓
     Unbounded (forward loop)
-        â†“
+        ↓
     Coin Change (min)
-        â†“
+        ↓
     Coin Change 2 (ways)
 ```
 
-> **Pro Tip:** When facing a new problem, ask: (1) Can items be reused? â†’ Forward or backward. (2) Maximize, minimize, count, or check? â†’ max, min, sum, or boolean. (3) Item limits? â†’ 0/1, bounded (with split), or unbounded.
+> **Pro Tip:** When facing a new problem, ask: (1) Can items be reused? → Forward or backward. (2) Maximize, minimize, count, or check? → max, min, sum, or boolean. (3) Item limits? → 0/1, bounded (with split), or unbounded.
 
 ---
 
@@ -1469,12 +1469,12 @@ Subset Sum (boolean)
 
 | Problem | DSA Interviews | Competitive Programming | System Design | Real-World |
 |---------|---------------|----------------------|---------------|------------|
-| 0/1 Knapsack | Very common â€” resource allocation | Standard optimization | Budget allocation | Cargo loading, portfolio selection |
-| Fractional Knapsack | Common â€” greedy comparison | Sorting-based warm-up | Resource scaling | Divisible resource allocation |
+| 0/1 Knapsack | Very common — resource allocation | Standard optimization | Budget allocation | Cargo loading, portfolio selection |
+| Fractional Knapsack | Common — greedy comparison | Sorting-based warm-up | Resource scaling | Divisible resource allocation |
 | Bounded Knapsack | Less common | Advanced optimization | Inventory systems | Warehouse stocking |
 | Unbounded Knapsack | Less common | Coin change variants | Resource scaling | Inventory management |
-| Subset Sum | Common â€” reduction problems | Meet-in-the-middle for large \( S \) | Capacity planning | Payment systems |
-| Coin Change | Very common â€” warm-up to hard | Core CP DP problem | Denomination systems | Vending machines, ATMs |
+| Subset Sum | Common — reduction problems | Meet-in-the-middle for large \( S \) | Capacity planning | Payment systems |
+| Coin Change | Very common — warm-up to hard | Core CP DP problem | Denomination systems | Vending machines, ATMs |
 | Target Sum | Occasionally asked | Counting DP problems | N/A | Sign assignment, opinion polling |
 
 ---
@@ -1485,7 +1485,7 @@ Subset Sum (boolean)
 |---------|----------------|------|-------|
 | 0/1 knapsack | \( \max(\text{skip}, \text{take}) \), backward loop | \( O(nW) \) | \( O(W) \) |
 | Fractional knapsack (greedy) | Sort by \( v_i / w_i \) | \( O(n \log n) \) | \( O(1) \) |
-| Bounded knapsack | Binary split â†’ 0/1 DP | \( O(W \sum \log k_i) \) | \( O(W) \) |
+| Bounded knapsack | Binary split → 0/1 DP | \( O(W \sum \log k_i) \) | \( O(W) \) |
 | Unbounded knapsack | \( \max(\text{skip}, \text{take}) \), forward loop | \( O(nW) \) | \( O(W) \) |
 | Subset sum | \( \lor(\text{skip}, \text{take}) \), backward loop | \( O(nS) \) | \( O(S) \) |
 | Coin change (min) | \( \min(1 + dp[c - w_i]) \), forward loop | \( O(nA) \) | \( O(A) \) |
@@ -1518,7 +1518,7 @@ B) Backward iteration reads \( dp[c - w[i]] \) from the previous row (without th
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) If total sum is odd, equal partition is impossible â€” return false immediately without running DP.
+B) If total sum is odd, equal partition is impossible — return false immediately without running DP.
 </details>
 
 **Q3.** Which recurrence correctly defines coin change (minimum coins)?
@@ -1530,7 +1530,7 @@ B) If total sum is odd, equal partition is impossible â€” return false imme
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) \( dp[c] = \min(dp[c], 1 + dp[c - \text{coin}]) \) â€” add one coin to the optimal solution for the remaining amount.
+B) \( dp[c] = \min(dp[c], 1 + dp[c - \text{coin}]) \) — add one coin to the optimal solution for the remaining amount.
 </details>
 
 **Q4.** What is the time complexity of fractional knapsack?
@@ -1542,7 +1542,7 @@ B) \( dp[c] = \min(dp[c], 1 + dp[c - \text{coin}]) \) â€” add one coin to t
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) \( O(n \log n) \) â€” sorting dominates; selection loop is \( O(n) \).
+B) \( O(n \log n) \) — sorting dominates; selection loop is \( O(n) \).
 </details>
 
 **Q5.** What does binary splitting achieve in bounded knapsack?

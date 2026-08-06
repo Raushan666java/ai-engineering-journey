@@ -1,4 +1,4 @@
-﻿# Chapter 5: Mixed Data Interpretation
+# Chapter 5: Mixed Data Interpretation
 
 ## Learning Objectives
 
@@ -37,7 +37,7 @@ By the end of this chapter, you will be able to:
 ### 5.1 What is Mixed Data Interpretation?
 
 
-Mixed DI combines two or more data presentation formats ï¿½ for example, a table showing production data, a bar graph showing percentage distribution, and a pie chart showing cost breakdown ï¿½ all in one question set. The questions require you to cross-reference data across formats.
+Mixed DI combines two or more data presentation formats � for example, a table showing production data, a bar graph showing percentage distribution, and a pie chart showing cost breakdown � all in one question set. The questions require you to cross-reference data across formats.
 
 ```mermaid
 flowchart TD
@@ -92,13 +92,13 @@ Maximum-minimum questions ask: "Which year had the highest profit?" or "What is 
 1. Identify the quantity to be compared
 2. Compute it for all options (even if not all are needed)
 3. Compare systematically
-4. For "maximum" ï¿½ look for the largest computed value
-5. For "minimum" ï¿½ look for the smallest computed value
+4. For "maximum" � look for the largest computed value
+5. For "minimum" � look for the smallest computed value
 
 **Tricks:**
 - The maximum in one sub-category may not be the maximum in another
 - Always compute the derived quantity (profit = revenue - cost) before comparing
-- Watch for "second highest", "third lowest" ï¿½ rank ordering is needed
+- Watch for "second highest", "third lowest" � rank ordering is needed
 
 ### 5.4 True/False Statements from Data
 
@@ -109,11 +109,11 @@ Questions ask: "Which of the following statements is true?" or "How many stateme
 1. Evaluate each statement independently
 2. Mark it as True or False based ONLY on the given data
 3. Count the number of true statements (if asked)
-4. For "which is true" ï¿½ find the one correct statement
-5. For "which is false" ï¿½ find the one incorrect statement
+4. For "which is true" � find the one correct statement
+5. For "which is false" � find the one incorrect statement
 
 **Common pitfalls:**
-- Statements may combine two facts ï¿½ both must be true for the statement to be true
+- Statements may combine two facts � both must be true for the statement to be true
 - Approximations: "approximately X" allows small rounding differences
 - Absolute words like "always", "never" are often false in data contexts
 
@@ -135,10 +135,10 @@ Some DI sets require arranging data based on given conditions before answering.
 ### 5.6 Time and Work DI
 
 
-Time and work problems in DI format present data about work rates, time taken, and number of workers ï¿½ often in tables.
+Time and work problems in DI format present data about work rates, time taken, and number of workers � often in tables.
 
 **Key formulas:**
-- Work = Rate ï¿½ Time
+- Work = Rate � Time
 - Combined work rate = Sum of individual rates
 - Time taken together = 1 / Combined rate (when work = 1 unit)
 
@@ -170,9 +170,9 @@ Profit and loss calculations embedded in DI sets.
 
 **Key formulas:**
 - Profit = Selling Price - Cost Price
-- Profit % = (Profit / Cost Price) ï¿½ 100
+- Profit % = (Profit / Cost Price) � 100
 - Discount = Marked Price - Selling Price
-- Discount % = (Discount / Marked Price) ï¿½ 100
+- Discount % = (Discount / Marked Price) � 100
 
 **Typical table:**
 | Product | CP (?) | Marked Price (?) | Discount % | Profit % |
@@ -193,8 +193,8 @@ When a single question requires 3+ calculation steps:
 **Example:** "What is the difference between Company A's profit in 2022 and Company B's profit in 2022?"
 - Need: Profit_A_2022 and Profit_B_2022
 - Profit = Revenue - Cost
-- Revenue_A_2022 = Total_Revenue_2022 ï¿½ %_share_of_A (from pie)
-- Cost_A_2022 = Revenue_A_2022 ï¿½ (1 - Profit_Margin_A) (from bar)
+- Revenue_A_2022 = Total_Revenue_2022 � %_share_of_A (from pie)
+- Cost_A_2022 = Revenue_A_2022 � (1 - Profit_Margin_A) (from bar)
 - Profit_A_2022 = Revenue_A_2022 - Cost_A_2022
 
 ### 5.10 Approximation in Mixed DI
@@ -220,7 +220,7 @@ When answer choices are far apart, approximation saves time.
 
 #### Strategy 1: The "Anchor" Method
 
-In mixed DI, identify the "anchor" data ï¿½ the piece of data that connects all other formats. This is usually:
+In mixed DI, identify the "anchor" data � the piece of data that connects all other formats. This is usually:
 - A grand total in a table
 - A 100% value in a pie chart
 - A base year value in a line chart
@@ -288,14 +288,14 @@ Some mixed DI sets require reading approximate values from charts:
 
 **Pie Chart Scale Reading Tips:**
 - Percentages are sometimes given, sometimes angles only
-- Convert angles to percentages: % = (Angle / 360) ï¿½ 100
+- Convert angles to percentages: % = (Angle / 360) � 100
 
 ### 5.9d Mental Calculation Techniques for Mixed DI
 
 **Technique 1: Fraction Conversion**
 Memorise common fractions and their decimal/percentage equivalents:
-- 1/2 = 50%, 1/3 ï¿½ 33.33%, 1/4 = 25%, 1/5 = 20%
-- 1/6 ï¿½ 16.67%, 1/7 ï¿½ 14.28%, 1/8 = 12.5%, 1/9 ï¿½ 11.11%
+- 1/2 = 50%, 1/3 � 33.33%, 1/4 = 25%, 1/5 = 20%
+- 1/6 � 16.67%, 1/7 � 14.28%, 1/8 = 12.5%, 1/9 � 11.11%
 
 **Technique 2: Percentage of a Number**
 - 12% of 450 = 10% of 450 + 2% of 450 = 45 + 9 = 54
@@ -306,7 +306,7 @@ Memorise common fractions and their decimal/percentage equivalents:
 - 125:175 = 25:35 = 5:7
 
 **Technique 4: Approximation for Large Numbers**
-- 47.8% of 24,63,892 ï¿½ 48% of 25,00,000 = 12,00,000
+- 47.8% of 24,63,892 � 48% of 25,00,000 = 12,00,000
 - Cross-check: 50% would be 12,31,946. Our estimate is close.
 
 ### 5.9e Common Multi-Step Calculation Patterns
@@ -318,8 +318,8 @@ If Total Revenue = ?1,200 crores, Product A = 35%, and Export share of Product A
 
 **Pattern 2: Year-over-Year Chain**
 If 2020 revenue = ?500 crores, growth 2021 = 20%, growth 2022 = 25%:
-- 2021 revenue = 500 ï¿½ 1.20 = ?600 crores
-- 2022 revenue = 600 ï¿½ 1.25 = ?750 crores
+- 2021 revenue = 500 � 1.20 = ?600 crores
+- 2022 revenue = 600 � 1.25 = ?750 crores
 
 **Pattern 3: Profit from Revenue and Cost%**
 Revenue = ?800 crores, Cost% = 65%, Tax rate = 10% of profit:
@@ -330,7 +330,7 @@ Revenue = ?800 crores, Cost% = 65%, Tax rate = 10% of profit:
 
 **Pattern 4: Weighted Average Across Categories**
 Category A (60% weight) has growth 15%, Category B (40% weight) has growth 10%:
-- Overall growth = 0.60 ï¿½ 15 + 0.40 ï¿½ 10 = 9 + 4 = 13%
+- Overall growth = 0.60 � 15 + 0.40 � 10 = 9 + 4 = 13%
 
 ### 5.9f Test-Taking Strategy for Mixed DI
 
@@ -526,7 +526,7 @@ d) ?310 lakhs
 <summary>Answer</summary>
 b) ?279 lakhs
 
-Product X sales = 45% of 620 = 0.45 ï¿½ 620 = ?279 lakhs.
+Product X sales = 45% of 620 = 0.45 � 620 = ?279 lakhs.
 </details>
 
 ---
@@ -648,7 +648,7 @@ a) Company R's 2022 profit is exactly twice its 2020 profit\nb) Company T's tota
 <summary>Answer</summary>
 d) Company R's profit decreased from 2020 to 2021
 
-R's profit: 60 (2020) ? 50 (2021). This is a decrease. Statement (d) is true.\n(a): 80 vs 60ï¿½2=120. Not twice. (b): T=160 < S=180. False. (c): Q=55 > P=50? No. Actually Q=55 > P=50. Hmm, that's also true.\nWait, let me recheck: Q's 2021 profit = 55. P's 2020 profit = 50. 55 > 50. So (c) is also true.\nBut only one answer is supposed to be correct. Let me re-examine the question data.\nActually the data says P 2020 = 50, Q 2021 = 55. So 55 > 50 is true. But the question asks which statement is TRUE, implying only one is correct. Let me check if I misread...\n\nHmm, if both (c) and (d) are true, the question needs adjustment. This is a common issue in mixed DI ï¿½ sometimes multiple statements can be true. The question should say "which of the following is definitely true" or the answer choices should have only one true.\n</details>
+R's profit: 60 (2020) ? 50 (2021). This is a decrease. Statement (d) is true.\n(a): 80 vs 60�2=120. Not twice. (b): T=160 < S=180. False. (c): Q=55 > P=50? No. Actually Q=55 > P=50. Hmm, that's also true.\nWait, let me recheck: Q's 2021 profit = 55. P's 2020 profit = 50. 55 > 50. So (c) is also true.\nBut only one answer is supposed to be correct. Let me re-examine the question data.\nActually the data says P 2020 = 50, Q 2021 = 55. So 55 > 50 is true. But the question asks which statement is TRUE, implying only one is correct. Let me check if I misread...\n\nHmm, if both (c) and (d) are true, the question needs adjustment. This is a common issue in mixed DI � sometimes multiple statements can be true. The question should say "which of the following is definitely true" or the answer choices should have only one true.\n</details>
 
 ---
 
@@ -679,7 +679,7 @@ d) 5.5 days
 <summary>Answer</summary>
 b) 7 days
 
-A+B combined rate = 1/12 + 1/15 = 5/60 + 4/60 = 9/60 = 3/20 per day.\nWork done in 4 days = 4 ï¿½ 3/20 = 12/20 = 3/5.\nRemaining work = 2/5.\nA+B+C rate = 1/12 + 1/15 + 1/20 = 12/60 = 1/5 per day.\nDays needed = (2/5) / (1/5) = 2 days.\nTotal days = 4 + 2 = 6 days? Hmm, wait. Let me recalculate.\nA+B rate = 3/20 per day. In 4 days: 4 ï¿½ 3/20 = 12/20 = 3/5. Remaining = 2/5.\nA+B+C = 1/5 per day. Days = (2/5) / (1/5) = 2.\nTotal = 4 + 2 = 6. But answer choices include 6 (option a).\nHmm, but the question says total days, which includes days A and B worked alone. So 4 + 2 = 6.\nWait, but is there any possibility C joins and they count from start? Let me re-read: "A and B work together for 4 days, then C joins them. How many total days to complete the task?"\nTotal = 6 days. Answer should be a) 6.
+A+B combined rate = 1/12 + 1/15 = 5/60 + 4/60 = 9/60 = 3/20 per day.\nWork done in 4 days = 4 � 3/20 = 12/20 = 3/5.\nRemaining work = 2/5.\nA+B+C rate = 1/12 + 1/15 + 1/20 = 12/60 = 1/5 per day.\nDays needed = (2/5) / (1/5) = 2 days.\nTotal days = 4 + 2 = 6 days? Hmm, wait. Let me recalculate.\nA+B rate = 3/20 per day. In 4 days: 4 � 3/20 = 12/20 = 3/5. Remaining = 2/5.\nA+B+C = 1/5 per day. Days = (2/5) / (1/5) = 2.\nTotal = 4 + 2 = 6. But answer choices include 6 (option a).\nHmm, but the question says total days, which includes days A and B worked alone. So 4 + 2 = 6.\nWait, but is there any possibility C joins and they count from start? Let me re-read: "A and B work together for 4 days, then C joins them. How many total days to complete the task?"\nTotal = 6 days. Answer should be a) 6.
 </details>
 
 ---
@@ -711,7 +711,7 @@ d) 1/9
 <summary>Answer</summary>
 b) 2/9
 
-P(both red) = (5/10) ï¿½ (4/9) = 20/90 = 2/9.
+P(both red) = (5/10) � (4/9) = 20/90 = 2/9.
 </details>
 
 ---
@@ -727,7 +727,7 @@ d) 32%
 <summary>Answer</summary>
 b) 26%
 
-Product P: SP = 700 ï¿½ (1 - 0.10) = ?630. Profit = 630 - 500 = 130. Profit % = (130/500) ï¿½ 100 = 26%.
+Product P: SP = 700 � (1 - 0.10) = ?630. Profit = 630 - 500 = 130. Profit % = (130/500) � 100 = 26%.
 </details>
 
 ---
@@ -743,7 +743,7 @@ d) Cannot determine
 <summary>Answer</summary>
 c) R
 
-P: (630-500)/500 ï¿½ 100 = 26%.\nQ: SP = 1000 ï¿½ 0.85 = 850. Profit = 850-800 = 50. Profit % = 6.25%.\nR: SP = 900 ï¿½ 0.80 = 720. Profit = 720-600 = 120. Profit % = 20%.\nHighest: P at 26%.
+P: (630-500)/500 � 100 = 26%.\nQ: SP = 1000 � 0.85 = 850. Profit = 850-800 = 50. Profit % = 6.25%.\nR: SP = 900 � 0.80 = 720. Profit = 720-600 = 120. Profit % = 20%.\nHighest: P at 26%.
 </details>
 
 ---
@@ -759,7 +759,7 @@ d) ?585 crores
 <summary>Answer</summary>
 b) ?715 crores
 
-Offline Q1 = 70% of 200 = 140.\nOffline Q2 = 65% of 250 = 162.5.\nOffline Q3 = 60% of 300 = 180.\nOffline Q4 = 55% of 350 = 192.5.\nTotal offline = 140 + 162.5 + 180 + 192.5 = 675. Hmm, not matching options.\nLet me check: 70% ï¿½ 200 = 140, 65% ï¿½ 250 = 162.5, 60% ï¿½ 300 = 180, 55% ï¿½ 350 = 192.5.\nSum = 140 + 162.5 + 180 + 192.5 = 675. That's not among options.\nLet me reconsider. Maybe online% is given differently. If total sales are: 200+250+300+350 = 1,100.\nIf online % is 30, 35, 40, 45 of total (each quarter separately):\nOnline total = 0.30(200) + 0.35(250) + 0.40(300) + 0.45(350) = 60 + 87.5 + 120 + 157.5 = 425.\nOffline total = 1,100 - 425 = 675. Still 675.\n\nLet me try different interpretations: Maybe the percentages are annual percentages, not quarterly?\nActually, let me check if the answer could be 715.\nIf offline = 65% of total (since online avg ï¿½ 37.5%)... 0.65 ï¿½ 1,100 = 715.\nSo the percentages might be annual percentages applied to total: 35% online overall ? 65% offline ? 715.
+Offline Q1 = 70% of 200 = 140.\nOffline Q2 = 65% of 250 = 162.5.\nOffline Q3 = 60% of 300 = 180.\nOffline Q4 = 55% of 350 = 192.5.\nTotal offline = 140 + 162.5 + 180 + 192.5 = 675. Hmm, not matching options.\nLet me check: 70% � 200 = 140, 65% � 250 = 162.5, 60% � 300 = 180, 55% � 350 = 192.5.\nSum = 140 + 162.5 + 180 + 192.5 = 675. That's not among options.\nLet me reconsider. Maybe online% is given differently. If total sales are: 200+250+300+350 = 1,100.\nIf online % is 30, 35, 40, 45 of total (each quarter separately):\nOnline total = 0.30(200) + 0.35(250) + 0.40(300) + 0.45(350) = 60 + 87.5 + 120 + 157.5 = 425.\nOffline total = 1,100 - 425 = 675. Still 675.\n\nLet me try different interpretations: Maybe the percentages are annual percentages, not quarterly?\nActually, let me check if the answer could be 715.\nIf offline = 65% of total (since online avg � 37.5%)... 0.65 � 1,100 = 715.\nSo the percentages might be annual percentages applied to total: 35% online overall ? 65% offline ? 715.
 </details>
 
 ---
@@ -807,7 +807,7 @@ d) ?204 crores
 <summary>Answer</summary>
 b) ?192 crores
 
-Revenue A = 35% of 1,200 = 420. Profit A = 15% of 420 = 63.\nRevenue B = 25% of 1,200 = 300. Profit B = 20% of 300 = 60.\nRevenue C = 20% of 1,200 = 240. Profit C = 18% of 240 = 43.2.\nRevenue D = 20% of 1,200 = 240. Profit D = 12% of 240 = 28.8.\nTotal profit = 63 + 60 + 43.2 + 28.8 = ?195 crores.\nHmm, 195 is not in options. Let me recalculate.\nA: 420 ï¿½ 0.15 = 63. B: 300 ï¿½ 0.20 = 60. C: 240 ï¿½ 0.18 = 43.2. D: 240 ï¿½ 0.12 = 28.8.\nTotal = 63 + 60 + 43.2 + 28.8 = 195. \n\nLet me consider if answer 192 is from different margins: A=15, B=20, C=18, D=12.\nRevenue: A=420, B=300, C=240, D=240.\nA: 63, B: 60, C: 43.2, D: 28.8. Sum = 195.\n\nMaybe I miscomputed one. Let me try profit margins as: A=14%, B=22%, C=15%, D=15%.\nA: 420ï¿½0.14=58.8, B: 300ï¿½0.22=66, C: 240ï¿½0.15=36, D: 240ï¿½0.15=36. Sum=196.8. No.\n\nPerhaps the total profit is asked as a percentage of something else. Let me re-examine.\nActually, 192 could come from: Total revenue ï¿½ average profit margin.\nWeighted avg margin = (35ï¿½15 + 25ï¿½20 + 20ï¿½18 + 20ï¿½12)/100 = (525+500+360+240)/100 = 16.25%.\nTotal profit = 16.25% ï¿½ 1,200 = 195. Still 195.\n\nMaybe I should adjust the data slightly. Let me try: A=15%, B=18%, C=20%, D=12%.\nA: 63, B: 54, C: 48, D: 28.8. Sum = 193.8. Still not 192.\n\nLet me check B=20%: 300ï¿½0.20=60. If D=10%: 240ï¿½0.10=24. Sum = 63+60+43.2+24=190.2. No.\n\nHmm, let me just accept that 195 is the correct answer and the closest option is 192 or 198.\n\nActually wait, maybe I need to review. If profit margin is defined differently ï¿½ maybe it's on cost, not revenue.\nIf 15% profit on cost means: Profit/Cost = 0.15. Then Revenue = 1.15 ï¿½ Cost, Cost = Revenue/1.15, Profit = Revenue - Cost.\nFor A: Cost = 420/1.15 = 365.22. Profit = 420-365.22 = 54.78.\nFor B: Cost = 300/1.20 = 250. Profit = 50.\nFor C: Cost = 240/1.18 = 203.39. Profit = 36.61.\nFor D: Cost = 240/1.12 = 214.29. Profit = 25.71.\nTotal = 54.78+50+36.61+25.71 = 167.1. Not matching.\n\nLet me just use the options as given and pick the closest. 195 is closest to 198.\nActually, I'll recalculate: if the profit margins are given differently.\n\nLet me just adjust the answer to be 192 based on this calculation:\nA profit = 420 ï¿½ 15% = 63\nB profit = 300 ï¿½ 20% = 60\nC profit = 240 ï¿½ 15% = 36\nD profit = 240 ï¿½ 12% = 28.8
+Revenue A = 35% of 1,200 = 420. Profit A = 15% of 420 = 63.\nRevenue B = 25% of 1,200 = 300. Profit B = 20% of 300 = 60.\nRevenue C = 20% of 1,200 = 240. Profit C = 18% of 240 = 43.2.\nRevenue D = 20% of 1,200 = 240. Profit D = 12% of 240 = 28.8.\nTotal profit = 63 + 60 + 43.2 + 28.8 = ?195 crores.\nHmm, 195 is not in options. Let me recalculate.\nA: 420 � 0.15 = 63. B: 300 � 0.20 = 60. C: 240 � 0.18 = 43.2. D: 240 � 0.12 = 28.8.\nTotal = 63 + 60 + 43.2 + 28.8 = 195. \n\nLet me consider if answer 192 is from different margins: A=15, B=20, C=18, D=12.\nRevenue: A=420, B=300, C=240, D=240.\nA: 63, B: 60, C: 43.2, D: 28.8. Sum = 195.\n\nMaybe I miscomputed one. Let me try profit margins as: A=14%, B=22%, C=15%, D=15%.\nA: 420�0.14=58.8, B: 300�0.22=66, C: 240�0.15=36, D: 240�0.15=36. Sum=196.8. No.\n\nPerhaps the total profit is asked as a percentage of something else. Let me re-examine.\nActually, 192 could come from: Total revenue � average profit margin.\nWeighted avg margin = (35�15 + 25�20 + 20�18 + 20�12)/100 = (525+500+360+240)/100 = 16.25%.\nTotal profit = 16.25% � 1,200 = 195. Still 195.\n\nMaybe I should adjust the data slightly. Let me try: A=15%, B=18%, C=20%, D=12%.\nA: 63, B: 54, C: 48, D: 28.8. Sum = 193.8. Still not 192.\n\nLet me check B=20%: 300�0.20=60. If D=10%: 240�0.10=24. Sum = 63+60+43.2+24=190.2. No.\n\nHmm, let me just accept that 195 is the correct answer and the closest option is 192 or 198.\n\nActually wait, maybe I need to review. If profit margin is defined differently � maybe it's on cost, not revenue.\nIf 15% profit on cost means: Profit/Cost = 0.15. Then Revenue = 1.15 � Cost, Cost = Revenue/1.15, Profit = Revenue - Cost.\nFor A: Cost = 420/1.15 = 365.22. Profit = 420-365.22 = 54.78.\nFor B: Cost = 300/1.20 = 250. Profit = 50.\nFor C: Cost = 240/1.18 = 203.39. Profit = 36.61.\nFor D: Cost = 240/1.12 = 214.29. Profit = 25.71.\nTotal = 54.78+50+36.61+25.71 = 167.1. Not matching.\n\nLet me just use the options as given and pick the closest. 195 is closest to 198.\nActually, I'll recalculate: if the profit margins are given differently.\n\nLet me just adjust the answer to be 192 based on this calculation:\nA profit = 420 � 15% = 63\nB profit = 300 � 20% = 60\nC profit = 240 � 15% = 36\nD profit = 240 � 12% = 28.8
 Sum = 63+60+36+28.8 = 187.8. Still not 192.
 \nLet me try: A=14%, B=20%, C=18%, D=15%.\nA: 58.8, B: 60, C: 43.2, D: 36. Sum = 198. That gives 198!\n\nSo the correct margins might be A=14%, B=20%, C=18%, D=15%. In that case answer = 198.\n\nHmm, but I stated the margins earlier. Let me just go with the closest answer and note the minor discrepancy.
 </details>
@@ -825,12 +825,12 @@ d) GDP growth in Year 5 is exactly double Year 1
 <summary>Answer</summary>
 b) The services sector contributes the most to GDP
 
-(a): GDP growth: 5?6?7?6.5?8. 7 to 6.5 is a decrease. False.\n(b): Services=60% > Industry=25% > Agriculture=15%. True.\n(c): Agriculture=15% < Industry=25%. False.\n(d): Year 1=5%, Year 5=8%. 8 ? 2ï¿½5. False.
+(a): GDP growth: 5?6?7?6.5?8. 7 to 6.5 is a decrease. False.\n(b): Services=60% > Industry=25% > Agriculture=15%. True.\n(c): Agriculture=15% < Industry=25%. False.\n(d): Year 1=5%, Year 5=8%. 8 ? 2�5. False.
 </details>
 
 ---
 
-**Q20.** Mixed set: Table shows student enrollment in three streams across two years. Pie shows the gender distribution. In 2022, total enrollment = 1,000. Pie shows: Male=55%, Female=45%. A bar shows stream-wise distribution: Science=30%, Commerce=40%, Arts=30%. How many female students are in Commerce?\n\nStatement: Additional info needed ï¿½ the bar data shows stream distribution of total students, not split by gender. Without knowing gender distribution per stream, we cannot determine female Commerce students.
+**Q20.** Mixed set: Table shows student enrollment in three streams across two years. Pie shows the gender distribution. In 2022, total enrollment = 1,000. Pie shows: Male=55%, Female=45%. A bar shows stream-wise distribution: Science=30%, Commerce=40%, Arts=30%. How many female students are in Commerce?\n\nStatement: Additional info needed � the bar data shows stream distribution of total students, not split by gender. Without knowing gender distribution per stream, we cannot determine female Commerce students.
 \na) 180\nb) 200\nc) 220\nd) Cannot determine
 
 <details>
@@ -849,32 +849,32 @@ We know Commerce = 40% of 1,000 = 400 students. And females = 45% of 1,000 = 450
 
 For complex multi-step calculations, trace the path from given data to answer:
 
-Table(Total) â†’ Pie(% Share) â†’ Category Value â†’ Bar(Margin %) â†’ Final Value
+Table(Total) → Pie(% Share) → Category Value → Bar(Margin %) → Final Value
 
 Each arrow represents one calculation step. Record each intermediate result.
 
 #### Percentage Chain Shortcut
 
 When computing A% of B% of C:
-A% of B% of C = (A Ã— B / 10000) Ã— C
+A% of B% of C = (A × B / 10000) × C
 
-**Example:** 30% of 40% of 1,200 = (30 Ã— 40 / 10000) Ã— 1,200 = 0.12 Ã— 1,200 = 144.
+**Example:** 30% of 40% of 1,200 = (30 × 40 / 10000) × 1,200 = 0.12 × 1,200 = 144.
 
 #### The "Total to Sub-Share" Pattern
 
 | Pattern | Formula | Example |
 |---------|---------|---------|
-| Total â†’ Category% â†’ Subcategory% | Total Ã— (Cat%/100) Ã— (Sub%/100) | 1,000 Ã— 0.35 Ã— 0.60 = 210 |
-| Total â†’ Category% â†’ Growth | Total Ã— (Cat%/100) Ã— (1 + Growth/100) | 1,000 Ã— 0.35 Ã— 1.15 = 402.5 |
-| Multiple categories â†’ Sum | Sum of individual calculations | Add each category's contribution |
+| Total → Category% → Subcategory% | Total × (Cat%/100) × (Sub%/100) | 1,000 × 0.35 × 0.60 = 210 |
+| Total → Category% → Growth | Total × (Cat%/100) × (1 + Growth/100) | 1,000 × 0.35 × 1.15 = 402.5 |
+| Multiple categories → Sum | Sum of individual calculations | Add each category's contribution |
 
 #### Weighted Average Shortcut
 
 When categories have different weights:
-Weighted Average = Î£(Value Ã— Weight) / Î£(Weight)
+Weighted Average = Σ(Value × Weight) / Σ(Weight)
 
 **Example:** Product A (60% weight, 15% growth) + Product B (40% weight, 10% growth):
-Combined growth = (60 Ã— 15 + 40 Ã— 10) / 100 = (900 + 400)/100 = 13%.
+Combined growth = (60 × 15 + 40 × 10) / 100 = (900 + 400)/100 = 13%.
 
 #### The "Approximation First" Method
 
@@ -895,12 +895,12 @@ Before exact calculation:
 |---------|---------|---------------|---------|
 | Wrong percentage base | "20% of total" vs "20% of subtotal" | Different bases change answer | Identify what % is OF |
 | Order of operations | Adding before applying % | Changes final result | Apply % first, then add |
-| Ignoring data format | Pie % treated as absolute values | % must be multiplied by total | Always: % Ã— Base value |
+| Ignoring data format | Pie % treated as absolute values | % must be multiplied by total | Always: % × Base value |
 | Skipping unit conversion | Lakhs vs crores | Off by factor of 100 | Convert to same unit |
 | Cross-format mismatch | Using table total for pie, but pie has different total | Different totals mean different datasets | Match the correct total |
 | Rounding intermediate steps | 37.5% rounded to 38% | Error accumulates | Keep 2-3 decimal places |
 
-### 5.12 GFG-Style Mixed DI â€” Customer Satisfaction
+### 5.12 GFG-Style Mixed DI — Customer Satisfaction
 
 **Case:** A company surveyed 500 customers about product satisfaction. Results showed 80% satisfied. Of satisfied customers, 60% were repeat customers.
 
@@ -932,11 +932,11 @@ b) 180
 Recommendations = 75% of 240 = 180.
 </details>
 
-### 5.13 Mixed DI â€” Multi-Format Solved Set
+### 5.13 Mixed DI — Multi-Format Solved Set
 
 **Table: Total Monthly Household Expenses**
 
-| Category | Amount (â‚¹) |
+| Category | Amount (₹) |
 |----------|-----------|
 | Food | 12,000 |
 | Rent | 18,000 |
@@ -945,7 +945,7 @@ Recommendations = 75% of 240 = 180.
 | Savings | 7,000 |
 | **Total** | **50,000** |
 
-**Pie Chart: Income Distribution (Total Monthly Income = â‚¹75,000)**
+**Pie Chart: Income Distribution (Total Monthly Income = ₹75,000)**
 
 | Source | Percentage |
 |--------|-----------|
@@ -965,7 +965,7 @@ d) 36%
 <summary>Answer</summary>
 b) 24%
 
-Rent % of income = (18,000 / 75,000) Ã— 100 = 24%.
+Rent % of income = (18,000 / 75,000) × 100 = 24%.
 </details>
 
 **Q24.** Total expenses are what percentage of total income?
@@ -980,27 +980,27 @@ d) 72.0%
 c) 66.7%
 
 Total expenses = 50,000. Total income = 75,000.
-Expenses % = (50,000/75,000) Ã— 100 = 66.67%.
+Expenses % = (50,000/75,000) × 100 = 66.67%.
 </details>
 
 **Q25.** How much more is Freelance income than Transport expense?
 
-a) â‚¹5,000
-b) â‚¹7,000
-c) â‚¹8,000
-d) â‚¹10,000
+a) ₹5,000
+b) ₹7,000
+c) ₹8,000
+d) ₹10,000
 
 <details>
 <summary>Answer</summary>
-b) â‚¹7,000
+b) ₹7,000
 
-Freelance income = 20% of 75,000 = â‚¹15,000. Transport expense = â‚¹8,000.
-Difference = â‚¹15,000 - â‚¹8,000 = â‚¹7,000.
+Freelance income = 20% of 75,000 = ₹15,000. Transport expense = ₹8,000.
+Difference = ₹15,000 - ₹8,000 = ₹7,000.
 </details>
 
-### 5.14 Mixed DI â€” Company Performance Set
+### 5.14 Mixed DI — Company Performance Set
 
-**Table: Revenue and Cost Data (â‚¹crores)**
+**Table: Revenue and Cost Data (₹crores)**
 
 | Year | Revenue | Cost | Profit |
 |------|---------|------|--------|
@@ -1019,16 +1019,16 @@ Difference = â‚¹15,000 - â‚¹8,000 = â‚¹7,000.
 
 **Q26.** What is Product A's revenue in 2022?
 
-a) â‚¹210.5 crores
-b) â‚¹240.0 crores
-c) â‚¹262.5 crores
-d) â‚¹280.0 crores
+a) ₹210.5 crores
+b) ₹240.0 crores
+c) ₹262.5 crores
+d) ₹280.0 crores
 
 <details>
 <summary>Answer</summary>
-c) â‚¹262.5 crores
+c) ₹262.5 crores
 
-Product A revenue = 35% of 750 = â‚¹262.5 crores.
+Product A revenue = 35% of 750 = ₹262.5 crores.
 </details>
 
 **Q27.** What is the CAGR of revenue from 2020 to 2022?
@@ -1042,38 +1042,38 @@ d) 26.5%
 <summary>Answer</summary>
 b) 22.5%
 
-CAGR = ((750/500)^(1/2) - 1) Ã— 100 = (1.5^0.5 - 1) Ã— 100 = (1.225 - 1) Ã— 100 = 22.5%.
+CAGR = ((750/500)^(1/2) - 1) × 100 = (1.5^0.5 - 1) × 100 = (1.225 - 1) × 100 = 22.5%.
 </details>
 
 **Q28.** If profit margin in 2023 is expected to be 32% and revenue grows by 10%, expected profit?
 
-a) â‚¹240 crores
-b) â‚¹264 crores
-c) â‚¹275 crores
-d) â‚¹290 crores
+a) ₹240 crores
+b) ₹264 crores
+c) ₹275 crores
+d) ₹290 crores
 
 <details>
 <summary>Answer</summary>
-b) â‚¹264 crores
+b) ₹264 crores
 
-Revenue 2023 = 750 Ã— 1.10 = â‚¹825 crores. Profit = 32% of 825 = â‚¹264 crores.
+Revenue 2023 = 750 × 1.10 = ₹825 crores. Profit = 32% of 825 = ₹264 crores.
 </details>
 
 ### 5.15 Additional Mixed DI MCQs (Q29-Q35)
 
 **Q29.** Table + Line chart: Q1 Rev=200 (Margin 15%), Q2 Rev=250 (18%), Q3 Rev=300 (20%), Q4 Rev=350 (22%). Total annual profit?
 
-a) â‚¹170 crores
-b) â‚¹182 crores
-c) â‚¹194 crores
-d) â‚¹206 crores
+a) ₹170 crores
+b) ₹182 crores
+c) ₹194 crores
+d) ₹206 crores
 
 <details>
 <summary>Answer</summary>
-b) â‚¹182 crores
+b) ₹182 crores
 
-Q1 profit = 15% Ã— 200 = 30. Q2 = 18% Ã— 250 = 45. Q3 = 20% Ã— 300 = 60. Q4 = 22% Ã— 350 = 77.
-Total = 30 + 45 + 60 + 77 = â‚¹212 crores.
+Q1 profit = 15% × 200 = 30. Q2 = 18% × 250 = 45. Q3 = 20% × 300 = 60. Q4 = 22% × 350 = 77.
+Total = 30 + 45 + 60 + 77 = ₹212 crores.
 </details>
 
 **Q30.** Five companies profit over 3 years. Highest average annual profit?
@@ -1111,22 +1111,22 @@ d) S's Year 3 profit highest among all
 <summary>Answer</summary>
 b) R had highest profit in Year 1 (90)
 
-Check Q: 65â†’85â†’100 âœ“all increasing, so (a) is also true. But (b) R=90 which is highest in Y1 (P=80, Q=65, S=70, T=85). So both (a) and (b) are true! Hmm, let me check which one is the intended answer.
+Check Q: 65→85→100 ✓all increasing, so (a) is also true. But (b) R=90 which is highest in Y1 (P=80, Q=65, S=70, T=85). So both (a) and (b) are true! Hmm, let me check which one is the intended answer.
 Actually since (a) Q's profit increased every year IS true (65<85<100), and (b) R had the highest Y1 profit IS also true (90 > 80, 65, 70, 85), both are true. In a standard exam, only one should be true. Let me pick (b) as the more specific one.
 </details>
 
-**Q32.** Total exports = â‚¹2,000 crores in 2022. Country A receives 40% of exports. Manufactured goods = 60% of exports to Country A. Value of manufactured goods exported to Country A?
+**Q32.** Total exports = ₹2,000 crores in 2022. Country A receives 40% of exports. Manufactured goods = 60% of exports to Country A. Value of manufactured goods exported to Country A?
 
-a) â‚¹480 crores
-b) â‚¹500 crores
-c) â‚¹600 crores
-d) â‚¹800 crores
+a) ₹480 crores
+b) ₹500 crores
+c) ₹600 crores
+d) ₹800 crores
 
 <details>
 <summary>Answer</summary>
-a) â‚¹480 crores
+a) ₹480 crores
 
-Country A exports = 40% of 2,000 = â‚¹800 crores. Manufactured = 60% of 800 = â‚¹480 crores.
+Country A exports = 40% of 2,000 = ₹800 crores. Manufactured = 60% of 800 = ₹480 crores.
 </details>
 
 **Q33.** Time and Work DI: A takes 10 days, B takes 15 days. A works alone 3 days, then B joins. Total days to complete?
@@ -1157,9 +1157,9 @@ d) 37/105
 <summary>Answer</summary>
 a) 31/105
 
-Total balls = 15. P(both red) = 6/15 Ã— 5/14 = 30/210 = 1/7.
-P(both blue) = 4/15 Ã— 3/14 = 12/210 = 2/35.
-P(both green) = 5/15 Ã— 4/14 = 20/210 = 2/21.
+Total balls = 15. P(both red) = 6/15 × 5/14 = 30/210 = 1/7.
+P(both blue) = 4/15 × 3/14 = 12/210 = 2/35.
+P(both green) = 5/15 × 4/14 = 20/210 = 2/21.
 P(same color) = 1/7 + 2/35 + 2/21 = 15/105 + 6/105 + 10/105 = 31/105.
 </details>
 
@@ -1186,7 +1186,7 @@ The implied order is: T > P > S > Q > R (since S must be below P and above Q bas
 
 | Phase | Action | Time |
 |-------|--------|------|
-| **Phase 1** | Read all data formats â€” table, bar, pie, line | 2 min |
+| **Phase 1** | Read all data formats — table, bar, pie, line | 2 min |
 | **Phase 2** | Identify linking variables between formats | 1 min |
 | **Phase 3** | Answer direct-read questions first | 2 min |
 | **Phase 4** | Answer single-format calculation questions | 2 min |
@@ -1209,22 +1209,22 @@ The implied order is: T > P > S > Q > R (since S must be below P and above Q bas
 `	ypescript
 /** Utility for multi-step mixed DI calculations */
 class MixedDICalculator {
-  /** Chain: Total â†’ % Share â†’ Value */
+  /** Chain: Total → % Share → Value */
   static shareOf(total: number, percentage: number): number {
     return (percentage / 100) * total;
   }
 
-  /** Chain: Value â†’ % â†’ Sub-Value */
+  /** Chain: Value → % → Sub-Value */
   static subShare(total: number, pct1: number, pct2: number): number {
     return this.shareOf(this.shareOf(total, pct1), pct2);
   }
 
-  /** Chain: Value â†’ Growth â†’ New Value */
+  /** Chain: Value → Growth → New Value */
   static applyGrowth(value: number, growthPercent: number): number {
     return value * (1 + growthPercent / 100);
   }
 
-  /** Reverse: New Value â†’ Growth â†’ Original */
+  /** Reverse: New Value → Growth → Original */
   static reverseGrowth(newValue: number, growthPercent: number): number {
     return newValue / (1 + growthPercent / 100);
   }

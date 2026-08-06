@@ -1,6 +1,6 @@
-﻿# Chapter 7: Routing
+# Chapter 7: Routing
 
-> **Prerequisites:** [Chapter 6: Network Layer](./06-network-layer.md) â†’ IP addressing and forwarding | **Next:** [Chapter 8: Transport Layer](./08-transport-layer.md) â†’ From routing to end-to-end delivery
+> **Prerequisites:** [Chapter 6: Network Layer](./06-network-layer.md) → IP addressing and forwarding | **Next:** [Chapter 8: Transport Layer](./08-transport-layer.md) → From routing to end-to-end delivery
 
 ## Learning Objectives
 
@@ -76,15 +76,15 @@ graph TB
         BF[Bellman-Ford Algorithm]:::algo
         RIP[RIP Protocol]:::algo
         DV1["Convergence: Slow (minutes)"]:::slow
-        DV2["Memory: O(NÃ—D)"]:::mod
-        DV3["Computation: O(VÃ—E)"]:::mod
+        DV2["Memory: O(N×D)"]:::mod
+        DV3["Computation: O(V×E)"]:::mod
     end
 
     subgraph LS["Link-State Family"]
         DJ[Dijkstra Algorithm]:::algo
         OSPF[OSPF Protocol]:::algo
         LS1["Convergence: Fast (seconds)"]:::fast
-        LS2["Memory: O(NÂ²)"]:::slow
+        LS2["Memory: O(N²)"]:::slow
         LS3["Computation: O(E log V)"]:::fast
     end
 
@@ -140,12 +140,12 @@ Total Cost(P) = sum(c(vi, vi+1) for i = 0 to k-1)
 ### Numbered Steps of the Routing Process
 
 
-1. **Neighbor discovery** â†’ Each router identifies directly connected routers (via Hello protocols, configuration, or manual setup).
-2. **Information exchange** â†’ Routers exchange reachability information (distance vectors, link-state advertisements, or BGP UPDATE messages).
-3. **Route computation** â†’ Each router runs a routing algorithm on the collected information to compute best paths.
-4. **Forwarding table population** â†’ The computed best paths are installed into the FIB (forwarding table).
-5. **Packet forwarding** â†’ For each incoming packet, the router performs a longest-prefix match lookup and forwards to the next hop.
-6. **Convergence** â†’ When topology changes, routers re-converge to a consistent state where all tables are loop-free.
+1. **Neighbor discovery** → Each router identifies directly connected routers (via Hello protocols, configuration, or manual setup).
+2. **Information exchange** → Routers exchange reachability information (distance vectors, link-state advertisements, or BGP UPDATE messages).
+3. **Route computation** → Each router runs a routing algorithm on the collected information to compute best paths.
+4. **Forwarding table population** → The computed best paths are installed into the FIB (forwarding table).
+5. **Packet forwarding** → For each incoming packet, the router performs a longest-prefix match lookup and forwards to the next hop.
+6. **Convergence** → When topology changes, routers re-converge to a consistent state where all tables are loop-free.
 
 ### Generic Routing Algorithm Pseudocode
 
@@ -179,7 +179,7 @@ FUNCTION RouteUpdate():
 
 ```typescript
 /**
- * RoutingTableManager â€” manages a router's distance-vector table
+ * RoutingTableManager — manages a router's distance-vector table
  * with neighbor discovery, Bellman-Ford updates, and split horizon.
  */
 interface Neighbor {
@@ -222,7 +222,7 @@ class RoutingTableManager {
     return changed;
   }
 
-  /** Apply split horizon â€” do not advertise routes back to the neighbor they were learned from */
+  /** Apply split horizon — do not advertise routes back to the neighbor they were learned from */
   getAdvertisement(excludeNeighbor?: number): Map<number, number> {
     if (excludeNeighbor === undefined) return new Map(this.distances);
     const adv = new Map<number, number>();
@@ -239,7 +239,7 @@ class RoutingTableManager {
     console.log(`Router ${this.routerId} Routing Table:`);
     for (const [dest, dist] of [...this.distances.entries()].sort((a, b) => a[0] - b[0])) {
       const nh = this.nextHops.get(dest) ?? '-';
-      console.log(`  â†’ ${dest}: next-hop=${nh}, distance=${dist}`);
+      console.log(`  → ${dest}: next-hop=${nh}, distance=${dist}`);
     }
   }
 }
@@ -269,18 +269,18 @@ for (let i = 0; i < 3; i++) {
 ```
 --- Iteration 1 ---
 Router 0 Routing Table:
-  â†’ 0: next-hop=-, distance=0
-  â†’ 1: next-hop=1, distance=2
-  â†’ 4: next-hop=4, distance=5
+  → 0: next-hop=-, distance=0
+  → 1: next-hop=1, distance=2
+  → 4: next-hop=4, distance=5
 Router 1 Routing Table:
-  â†’ 0: next-hop=0, distance=2
-  â†’ 1: next-hop=-, distance=0
-  â†’ 2: next-hop=2, distance=3
+  → 0: next-hop=0, distance=2
+  → 1: next-hop=-, distance=0
+  → 2: next-hop=2, distance=3
 Router 2 Routing Table:
-  â†’ 1: next-hop=1, distance=3
-  â†’ 2: next-hop=-, distance=0
-  â†’ 3: next-hop=3, distance=1
-  â†’ 4: next-hop=4, distance=1
+  → 1: next-hop=1, distance=3
+  → 2: next-hop=-, distance=0
+  → 3: next-hop=3, distance=1
+  → 4: next-hop=4, distance=1
 ...
 ```
 
@@ -416,7 +416,7 @@ rt.print_table()
 
 Each person (router) keeps a notebook of "how far" every other person is. Periodically, everyone reads their notebook aloud to their immediate neighbors. When you hear "I can reach Alice in 3 steps through Bob," and you have a 1-step path to the speaker, you write down "I can reach Alice in 4 steps through Speaker." You keep updating until nobody's notebook changes.
 
-This is how rumors spread in a small town â†’ information propagates hop by hop, and everyone eventually knows how to reach everyone else. But if the town gossip moves away, it takes a while before everyone agrees on the new shortest path.
+This is how rumors spread in a small town → information propagates hop by hop, and everyone eventually knows how to reach everyone else. But if the town gossip moves away, it takes a while before everyone agrees on the new shortest path.
 
 ### 7.2.1 The Bellman-Ford Algorithm
 
@@ -474,7 +474,7 @@ Where:
 | **D** | INF | INF | 1 | 0 | INF |
 | **E** | 5 | INF | 1 | INF | 0 |
 
-**Iteration 1 â†’ Each router receives vectors from neighbors and updates:**
+**Iteration 1 → Each router receives vectors from neighbors and updates:**
 
 Router A receives from B: (A:2, B:0, C:3, D:INF, E:INF)
 - A->C via B: c(A,B) + D_B(C) = 2 + 3 = 5 (was INF, update)
@@ -487,7 +487,7 @@ Router B receives from A: (A:0, B:2, C:INF, D:INF, E:5)
 
 Router C receives from B: (A:2, B:0, C:3, D:INF, E:INF)
 - C->A via B: c(C,B) + D_B(A) = 3 + 2 = 5 (was INF, update)
-Router C receives from D: (A:INF, B:INF, C:1, D:0, E:INF) â†’ no new info
+Router C receives from D: (A:INF, B:INF, C:1, D:0, E:INF) → no new info
 Router C receives from E: (A:5, B:INF, C:1, D:INF, E:0)
 - C->A via E: c(C,E) + D_E(A) = 1 + 5 = 6 (already have 5, no update)
 
@@ -515,11 +515,11 @@ Router E receives from C: (A:INF, B:3, C:0, D:1, E:1)
 
 Router A receives from B: (A:2, B:0, C:3, D:4, E:7)
 - A->D via B: 2 + 4 = 6 (was INF, update)
-Router A receives from E: (A:5, B:4, C:1, D:2, E:0) â†’ no improvements
+Router A receives from E: (A:5, B:4, C:1, D:2, E:0) → no improvements
 
-Router C receives from B: (A:2, B:0, C:3, D:4, E:7) â†’ no improvements
-Router C receives from D: (A:INF, B:4, C:1, D:0, E:2) â†’ no improvements
-Router C receives from E: (A:5, B:4, C:1, D:2, E:0) â†’ no improvements
+Router C receives from B: (A:2, B:0, C:3, D:4, E:7) → no improvements
+Router C receives from D: (A:INF, B:4, C:1, D:0, E:2) → no improvements
+Router C receives from E: (A:5, B:4, C:1, D:2, E:0) → no improvements
 
 **After Iteration 2 (converged):**
 
@@ -545,7 +545,7 @@ Router C receives from E: (A:5, B:4, C:1, D:2, E:0) â†’ no improvements
 ### Count-to-Infinity Detailed Trace
 
 
-Consider the classic linear topology: A â†’ B â†’ C
+Consider the classic linear topology: A → B → C
 
 Link costs: A-B = 1, B-C = 1. Converged tables:
 - A: dest=A(0), B(1 via B), C(2 via B)
@@ -558,7 +558,7 @@ Link costs: A-B = 1, B-C = 1. Converged tables:
 
 **Time t=1:** Before B advertises, C advertises its vector to B: (A:2, B:1, C:0).
 B computes: D_B(A) via C = c(B,C) + D_C(A) = 1 + 2 = 3.
-B updates: D_B(A) = 3, next_hop(B->A) = C. **This is incorrect â†’ routing loop created!**
+B updates: D_B(A) = 3, next_hop(B->A) = C. **This is incorrect → routing loop created!**
 
 **Time t=2:** B advertises to C: (A:3, B:0, C:1).
 C computes: D_C(A) via B = c(C,B) + D_B(A) = 1 + 3 = 4.
@@ -587,7 +587,7 @@ This continues until the distance reaches 16 (RIP infinity), at which point both
 | 11 | 13 | 12 | C advertises |
 | 12 | 13 | 14 | B advertises |
 | 13 | 15 | 14 | C advertises |
-| 14 | 15 | 16 | B advertises â†’ infinity reached |
+| 14 | 15 | 16 | B advertises → infinity reached |
 | 15 | 16 | 16 | Both mark A unreachable |
 
 ### Mitigation Techniques
@@ -624,7 +624,7 @@ FUNCTION BellmanFord(graph G, source s):
 
 ```typescript
 /**
- * DistanceVectorSimulator â€” runs a distributed Bellman-Ford
+ * DistanceVectorSimulator — runs a distributed Bellman-Ford
  * simulation on any network topology with convergence tracking.
  */
 interface TopologyEdge {
@@ -634,8 +634,8 @@ interface TopologyEdge {
 }
 
 class DistanceVectorSimulator {
-  private routers: Map<number, Map<number, number>> = new Map();  // routerId â†’ {dest â†’ distance}
-  private nextHops: Map<number, Map<number, number>> = new Map(); // routerId â†’ {dest â†’ nextHop}
+  private routers: Map<number, Map<number, number>> = new Map();  // routerId → {dest → distance}
+  private nextHops: Map<number, Map<number, number>> = new Map(); // routerId → {dest → nextHop}
   private topology: TopologyEdge[];
 
   constructor(vertices: number[], edges: TopologyEdge[]) {
@@ -665,7 +665,7 @@ class DistanceVectorSimulator {
     return new Map(this.routers.get(routerId)!);
   }
 
-  /** Run one iteration of the algorithm â€” returns true if any update occurred */
+  /** Run one iteration of the algorithm — returns true if any update occurred */
   runIteration(): boolean {
     let updated = false;
     // Build list of neighbors from edges
@@ -705,11 +705,11 @@ class DistanceVectorSimulator {
       const changed = this.runIteration();
       this.printAllTables();
       if (!changed) {
-        console.log("\n  âœ“ Converged!");
+        console.log("\n  ✓ Converged!");
         return;
       }
     }
-    console.log("\n  âš  Reached max iterations without full convergence");
+    console.log("\n  ⚠ Reached max iterations without full convergence");
   }
 
   printAllTables(): void {
@@ -719,7 +719,7 @@ class DistanceVectorSimulator {
         .filter(([k]) => k !== id)
         .sort(([a], [b]) => a - b);
       if (entries.length === 0) continue;
-      const line = entries.map(([dest, dist]) => `${dest}(â†’${nextMap.get(dest) ?? '-'},${dist})`).join(' ');
+      const line = entries.map(([dest, dist]) => `${dest}(→${nextMap.get(dest) ?? '-'},${dist})`).join(' ');
       console.log(`  Router ${id}: ${line}`);
     }
   }
@@ -756,8 +756,8 @@ const sim = new DistanceVectorSimulator(
 );
 console.log("=== Distance-Vector Routing Simulation ===");
 sim.runToConvergence(5);
-console.log("\nPath from 0 to 3:", sim.getPath(0, 3)?.join(' â†’ '));
-console.log("Path from 0 to 2:", sim.getPath(0, 2)?.join(' â†’ '));
+console.log("\nPath from 0 to 3:", sim.getPath(0, 3)?.join(' → '));
+console.log("Path from 0 to 2:", sim.getPath(0, 2)?.join(' → '));
 ```
 
 **Output:**
@@ -765,21 +765,21 @@ console.log("Path from 0 to 2:", sim.getPath(0, 2)?.join(' â†’ '));
 === Distance-Vector Routing Simulation ===
 
   === Iteration 1 ===
-  Router 0: 1(â†’1,2) 2(â†’1,5) 4(â†’4,5)
-  Router 1: 0(â†’0,2) 2(â†’2,3)
-  Router 2: 1(â†’1,3) 3(â†’3,1) 4(â†’4,1)
-  Router 3: 2(â†’2,1)
-  Router 4: 0(â†’0,5) 2(â†’2,1)
+  Router 0: 1(→1,2) 2(→1,5) 4(→4,5)
+  Router 1: 0(→0,2) 2(→2,3)
+  Router 2: 1(→1,3) 3(→3,1) 4(→4,1)
+  Router 3: 2(→2,1)
+  Router 4: 0(→0,5) 2(→2,1)
 
   === Iteration 2 ===
-  Router 0: 1(â†’1,2) 2(â†’1,5) 3(â†’1,6) 4(â†’4,5)
-  Router 1: 0(â†’0,2) 2(â†’2,3) 4(â†’2,8)
-  Router 2: 0(â†’1,5) 1(â†’1,3) 3(â†’3,1) 4(â†’4,1)
-  Router 3: 0(â†’2,6) 1(â†’2,4) 2(â†’2,1) 4(â†’2,2)
-  Router 4: 0(â†’0,5) 1(â†’2,4) 2(â†’2,1) 3(â†’2,2)
+  Router 0: 1(→1,2) 2(→1,5) 3(→1,6) 4(→4,5)
+  Router 1: 0(→0,2) 2(→2,3) 4(→2,8)
+  Router 2: 0(→1,5) 1(→1,3) 3(→3,1) 4(→4,1)
+  Router 3: 0(→2,6) 1(→2,4) 2(→2,1) 4(→2,2)
+  Router 4: 0(→0,5) 1(→2,4) 2(→2,1) 3(→2,2)
 
-Path from 0 to 3: 0 â†’ 1 â†’ 2 â†’ 3
-Path from 0 to 2: 0 â†’ 1 â†’ 2
+Path from 0 to 3: 0 → 1 → 2 → 3
+Path from 0 to 2: 0 → 1 → 2
 ```
 
 ### C++ Implementation: Bellman-Ford Simulator
@@ -994,8 +994,8 @@ if result:
 | Space (centralized) | O(V) | Stores dist[] and prev[] for V vertices |
 | Time (distributed, per router) | O(N * D) | Each of N destinations may be updated across D neighbors each iteration |
 | Message complexity | O(N * E * I) | E links carry N-sized vectors for I iterations until convergence |
-| Why V-1 iterations? | â†’ | In the worst case, the longest simple path has V-1 edges, so V-1 iterations guarantee convergence |
-| Why distributed converges slowly? | â†’ | Count-to-infinity requires O(infinity) iterations, where infinity is an arbitrary bound |
+| Why V-1 iterations? | → | In the worst case, the longest simple path has V-1 edges, so V-1 iterations guarantee convergence |
+| Why distributed converges slowly? | → | Count-to-infinity requires O(infinity) iterations, where infinity is an arbitrary bound |
 
 ### Advantages and Disadvantages of Distance-Vector
 
@@ -1055,7 +1055,7 @@ RIP (RFC 1058, RFC 2453 for RIPv2) is a concrete implementation of distance-vect
 ### Real-World Analogy: The Map Maker
 
 
-Instead of gossip (distance-vector), link-state routing is like every city having a complete road atlas. Every city (router) draws its own local map (LSP â†’ Link State Packet), photocopies it, and sends a copy to every other city. Once everyone has everyone else's local maps, each city assembles the full atlas and independently computes the shortest routes using Dijkstra's algorithm.
+Instead of gossip (distance-vector), link-state routing is like every city having a complete road atlas. Every city (router) draws its own local map (LSP → Link State Packet), photocopies it, and sends a copy to every other city. Once everyone has everyone else's local maps, each city assembles the full atlas and independently computes the shortest routes using Dijkstra's algorithm.
 
 If a road closes, the city at that road announces a new map, floods it globally, and everyone recalculates. This converges much faster than gossip because every router independently determines the topology.
 
@@ -1090,27 +1090,27 @@ Dijkstra's algorithm computes the shortest path from a source node to all other 
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 1 | {A, B} | 2 (A)Ã¢Å“â€œ | 5 (B) | INF | 5 (A) |
+| 1 | {A, B} | 2 (A)✓ | 5 (B) | INF | 5 (A) |
 
-**Step 2:** Pick E (dist=5, tie with C â†’ pick arbitrarily, say E). Add E to N'. Explore E's neighbors: C.
+**Step 2:** Pick E (dist=5, tie with C → pick arbitrarily, say E). Add E to N'. Explore E's neighbors: C.
 - D(C) via E = D(E) + c(E,C) = 5 + 1 = 6 (5 &lt; 6, no update)
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 2 | {A, B, E} | 2Ã¢Å“â€œ | 5 (B) | INF | 5 (A)Ã¢Å“â€œ |
+| 2 | {A, B, E} | 2✓ | 5 (B) | INF | 5 (A)✓ |
 
 **Step 3:** Pick C (dist=5). Add C to N'. Explore C's neighbors: B (visited), D, E (visited).
 - D(D) via C = D(C) + c(C,D) = 5 + 1 = 6 (update from INF to 6, prev=D->C)
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 3 | {A, B, C, E} | 2Ã¢Å“â€œ | 5 (B)Ã¢Å“â€œ | 6 (C) | 5Ã¢Å“â€œ |
+| 3 | {A, B, C, E} | 2✓ | 5 (B)✓ | 6 (C) | 5✓ |
 
 **Step 4:** Pick D (dist=6). Add D to N'.
 
 | Step | N' | D(B) | D(C) | D(D) | D(E) |
 |------|----|------|------|------|------|
-| 4 | {A, B, C, D, E} | 2Ã¢Å“â€œ | 5Ã¢Å“â€œ | 6 (C)Ã¢Å“â€œ | 5Ã¢Å“â€œ |
+| 4 | {A, B, C, D, E} | 2✓ | 5✓ | 6 (C)✓ | 5✓ |
 
 **Final Shortest-Path Tree from A:**
 
@@ -1165,7 +1165,7 @@ FUNCTION Dijkstra(graph G, source s):
 
 ```typescript
 /**
- * DijkstraShortestPath â€” computes shortest-path trees using
+ * DijkstraShortestPath — computes shortest-path trees using
  * Dijkstra's algorithm with a binary heap priority queue.
  */
 interface Link {
@@ -1200,7 +1200,7 @@ class DijkstraShortestPath {
     const heap: Array<[number, number]> = [[0, source]];
 
     while (heap.length > 0) {
-      // Extract min (simple linear extract for clarity â€” use binary heap in production)
+      // Extract min (simple linear extract for clarity — use binary heap in production)
       heap.sort(([a], [b]) => a - b);
       const [d, u] = heap.shift()!;
       if (visited[u]) continue;
@@ -1264,7 +1264,7 @@ dj.addLink(4, 2, 1);
 console.log("=== Dijkstra's Algorithm ===");
 const { distances } = dj.compute(0);
 for (let i = 1; i < 5; i++) {
-  console.log(`Distance 0 â†’ ${i}: ${distances[i]}, Path: ${dj.getPath(0, i)?.join(' â†’ ')}`);
+  console.log(`Distance 0 → ${i}: ${distances[i]}, Path: ${dj.getPath(0, i)?.join(' → ')}`);
 }
 dj.printForwardingTable(0);
 ```
@@ -1272,10 +1272,10 @@ dj.printForwardingTable(0);
 **Output:**
 ```
 === Dijkstra's Algorithm ===
-Distance 0 â†’ 1: 2, Path: 0 â†’ 1
-Distance 0 â†’ 2: 5, Path: 0 â†’ 1 â†’ 2
-Distance 0 â†’ 3: 6, Path: 0 â†’ 1 â†’ 2 â†’ 3
-Distance 0 â†’ 4: 5, Path: 0 â†’ 4
+Distance 0 → 1: 2, Path: 0 → 1
+Distance 0 → 2: 5, Path: 0 → 1 → 2
+Distance 0 → 3: 6, Path: 0 → 1 → 2 → 3
+Distance 0 → 4: 5, Path: 0 → 4
 
 Forwarding Table for Router 0:
   Dest | Next Hop | Cost
@@ -1511,7 +1511,7 @@ def dijkstra_detailed(net: NetworkGraph, source: int):
     dist[source] = 0
 
     print(f"\n{'='*60}")
-    print(f"Dijkstra's Algorithm â†’ Detailed Trace from Source {source}")
+    print(f"Dijkstra's Algorithm → Detailed Trace from Source {source}")
     print(f"{'='*60}")
 
     step = 0
@@ -1525,7 +1525,7 @@ def dijkstra_detailed(net: NetworkGraph, source: int):
             return "INF"
         p = prev[node_id] if prev[node_id] != -1 else source
         if node_id in nprime:
-            return f"{dist_val}Ã¢Å“â€œ"
+            return f"{dist_val}✓"
         return f"{dist_val} ({p})"
 
     print(f"{step:<6} {'{'+str(source)+'}':<20} {fmt(dist[1], 1, N_prime):<10} {fmt(dist[2], 2, N_prime):<10} {fmt(dist[3], 3, N_prime):<10} {fmt(dist[4], 4, N_prime):<10}")
@@ -1555,7 +1555,7 @@ def dijkstra_detailed(net: NetworkGraph, source: int):
 dijkstra_detailed(net, 0)
 ```
 
-### 7.3.2 OSPF â†’ Open Shortest Path First
+### 7.3.2 OSPF → Open Shortest Path First
 
 
 OSPF (RFC 2328) is the most widely deployed link-state protocol in enterprise and service provider networks.
@@ -1610,14 +1610,14 @@ Consider 4 routers in a broadcast network:
     R3 ----- R4
 ```
 
-**Step 1 â†’ DR/BDR Election:**
+**Step 1 → DR/BDR Election:**
 1. Routers send Hello packets to 224.0.0.5.
 2. Highest OSPF priority wins DR; second-highest wins BDR.
 3. R2 becomes DR, R3 becomes BDR (assuming higher priorities).
 4. All other routers (DROTHERs) form full adjacency only with DR and BDR.
-5. Adjacencies: 5 instead of 6 (saved: nÃ‚Â²/2 - n = 1).
+5. Adjacencies: 5 instead of 6 (saved: n²/2 - n = 1).
 
-**Step 2 â†’ Database Exchange (R1 to DR-R2):**
+**Step 2 → Database Exchange (R1 to DR-R2):**
 1. R1 and R2 exchange Hello packets, reach 2-WAY state.
 2. R1 and R2 transition to EXSTART state; master/slave elected.
 3. Master (R2) sends Database Description (DBD) packet with LSA headers.
@@ -1627,9 +1627,9 @@ Consider 4 routers in a broadcast network:
 7. R1 sends Link State Request (LSR) for that LSA.
 8. R2 sends Link State Update (LSU) containing the LSA.
 9. R1 acknowledges with Link State Ack (LSAck).
-10. Both reach FULL state â†’ databases synchronized.
+10. Both reach FULL state → databases synchronized.
 
-**Step 3 â†’ LSA Flooding Across Areas:**
+**Step 3 → LSA Flooding Across Areas:**
 When R1's link to network N goes down:
 1. R1 generates a new Router LSA (Type 1) with updated link info.
 2. R1 increments the LSA sequence number.
@@ -1678,7 +1678,7 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| Dijkstra time (array) | O(VÃ‚Â²) | Simple implementation; each iteration scans V nodes to find minimum |
+| Dijkstra time (array) | O(V²) | Simple implementation; each iteration scans V nodes to find minimum |
 | Dijkstra time (binary heap) | O((V+E) log V) approx O(E log V) | Each edge relaxed once (push), each vertex extracted once (pop) |
 | Dijkstra time (Fibonacci heap) | O(E + V log V) | Decrease-key is O(1) amortized, but high constant factor |
 | Space | O(V + E) | Adjacency list stores all edges |
@@ -1687,14 +1687,14 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 | SPF computation frequency | On topology change | Only when LSA received, not periodic |
 | Why Dijkstra fails with negative edges? | Greedy early commitment | Once a node is visited, its distance is never reconsidered; a later negative edge could offer shorter path |
 | Why O(E log V) is optimal for sparse nets | log V is small | E is typically ~2V in sparse networks; E log V approx 2V log V |
-| Why O(VÃ‚Â²) may be faster in dense nets | Low constant factor | For dense graphs where E approx VÃ‚Â², VÃ‚Â² &lt; VÃ‚Â² log V; array implementation wins |
+| Why O(V²) may be faster in dense nets | Low constant factor | For dense graphs where E approx V², V² &lt; V² log V; array implementation wins |
 
 ### Advantages and Disadvantages of Link-State
 
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Convergence | Fast â†’ seconds after topology change | Initial convergence can be slower (DB exchange) |
+| Convergence | Fast → seconds after topology change | Initial convergence can be slower (DB exchange) |
 | Loop avoidance | SPF guarantees loop-free paths | Transient micro-loops possible during convergence |
 | Bandwidth | Event-driven updates only | Initial full-database exchange can be large |
 | Scalability | Area hierarchy supports large networks | CPU-intensive SPF recalculations in large single areas |
@@ -1710,7 +1710,7 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 
 When a package travels from New York to Tokyo, each country's postal service appends its stamp to the customs form. The form accumulates the full path: "USA -> Canada -> Japan." This is the AS_PATH in BGP.
 
-Unlike a GPS (Dijkstra) or gossip (Bellman-Ford), shipping routes are determined by **business contracts**: "We have a transit agreement with Canada Post" or "We peer settlement-free with Japan Post." The shipper doesn't choose the technically shortest route â†’ they choose the route that respects business policies, avoids competitors, and doesn't violate agreements.
+Unlike a GPS (Dijkstra) or gossip (Bellman-Ford), shipping routes are determined by **business contracts**: "We have a transit agreement with Canada Post" or "We peer settlement-free with Japan Post." The shipper doesn't choose the technically shortest route → they choose the route that respects business policies, avoids competitors, and doesn't violate agreements.
 
 ### 7.4.1 BGP Fundamentals
 
@@ -1722,25 +1722,25 @@ BGP is the **path-vector** protocol that connects the ~100,000 autonomous system
 ```
 eBGP: AS100 ---- AS200    (between different ASes)
        \              \
-iBGP:  AS100 ---- AS300  (within same AS â†’ only eBGP-learned routes shared)
+iBGP:  AS100 ---- AS300  (within same AS → only eBGP-learned routes shared)
 ```
 
 **Numbered Steps of BGP Operation:**
 
-1. **Establish TCP connection** â†’ BGP peers establish TCP on port 179.
-2. **Send OPEN message** â†’ Each peer sends capabilities, AS number, hold time, BGP identifier.
-3. **Exchange initial UPDATEs** â†’ Full routing table (all prefixes + attributes) exchanged.
-4. **Send KEEPALIVEs** â†’ Periodic keepalives (default 60s) maintain the session.
-5. **Incremental UPDATEs** â†’ Only changes are sent (no periodic full table).
-6. **Route selection** â†’ For each prefix, select the best path using BGP decision process.
-7. **Route advertisement** â†’ Best paths advertised to other peers per export policy.
+1. **Establish TCP connection** → BGP peers establish TCP on port 179.
+2. **Send OPEN message** → Each peer sends capabilities, AS number, hold time, BGP identifier.
+3. **Exchange initial UPDATEs** → Full routing table (all prefixes + attributes) exchanged.
+4. **Send KEEPALIVEs** → Periodic keepalives (default 60s) maintain the session.
+5. **Incremental UPDATEs** → Only changes are sent (no periodic full table).
+6. **Route selection** → For each prefix, select the best path using BGP decision process.
+7. **Route advertisement** → Best paths advertised to other peers per export policy.
 
-### 7.4.2 BGP Path Attributes â†’ Detailed
+### 7.4.2 BGP Path Attributes → Detailed
 
 
 | Attribute | Category | Code | Direction | Description |
 |-----------|----------|------|-----------|-------------|
-| ORIGIN | Well-known mandatory | 1 | Both | IGP (i), EGP (e), INCOMPLETE (?) â†’ how route entered BGP |
+| ORIGIN | Well-known mandatory | 1 | Both | IGP (i), EGP (e), INCOMPLETE (?) → how route entered BGP |
 | AS_PATH | Well-known mandatory | 2 | Both | Sequence of AS numbers the route traverses |
 | NEXT_HOP | Well-known mandatory | 3 | Both | IP address of next-hop router |
 | MED (MULTI_EXIT_DISC) | Optional non-transitive | 4 | EBGP->IBGP | Suggestion to external peer for preferred entry point (lower better) |
@@ -1760,19 +1760,19 @@ iBGP:  AS100 ---- AS300  (within same AS â†’ only eBGP-learned routes share
 | NO_EXPORT_SUBCONFED (0xFFFFFF03) | Do not advertise outside local confederation |
 | NOPEER (0xFFFFFF04) | Do not advertise to peers (only customers) |
 
-### 7.4.3 BGP Decision Process â†’ Detailed
+### 7.4.3 BGP Decision Process → Detailed
 
 
 **Step-by-step tiebreaker (most significant first):**
 
-1. **Highest LOCAL_PREF** â†’ Set by policy. Routes with higher local preference are preferred.
-2. **Shortest AS_PATH length** â†’ Count ASes in AS_PATH (not including AS_CONFED_SEQUENCE).
-3. **Lowest ORIGIN type** â†’ IGP (0) &lt; EGP (1) < INCOMPLETE (2).
-4. **Lowest MED** â†’ Only if the same neighboring AS is the route source.
-5. **Prefer eBGP over iBGP** â†’ eBGP-learned routes preferred.
-6. **Lowest IGP cost to NEXT_HOP** â†’ Closest exit point.
-7. **Oldest route** â†’ Route received first is preferred (for stability).
-8. **Lowest neighbor Router ID** â†’ Tiebreaker of last resort.
+1. **Highest LOCAL_PREF** → Set by policy. Routes with higher local preference are preferred.
+2. **Shortest AS_PATH length** → Count ASes in AS_PATH (not including AS_CONFED_SEQUENCE).
+3. **Lowest ORIGIN type** → IGP (0) &lt; EGP (1) < INCOMPLETE (2).
+4. **Lowest MED** → Only if the same neighboring AS is the route source.
+5. **Prefer eBGP over iBGP** → eBGP-learned routes preferred.
+6. **Lowest IGP cost to NEXT_HOP** → Closest exit point.
+7. **Oldest route** → Route received first is preferred (for stability).
+8. **Lowest neighbor Router ID** → Tiebreaker of last resort.
 
 ### BGP Path Selection Dry Run
 
@@ -1780,9 +1780,9 @@ iBGP:  AS100 ---- AS300  (within same AS â†’ only eBGP-learned routes share
 **Topology:**
 
 ```
-AS100 â†’â†’â†’ AS200 â†’â†’â†’ AS300
+AS100 →→→ AS200 →→→ AS300
   |                     |
-  +â†’â†’â†’ AS400 â†’â†’â†’ AS500â†’+
+  +→→→ AS400 →→→ AS500→+
 ```
 
 **Route to prefix 10.1.0.0/16 (originated in AS300):**
@@ -1791,7 +1791,7 @@ AS100 â†’â†’â†’ AS200 â†’â†’â†’ AS300
 |-----------|-------------------|--------------------------|
 | AS_PATH | 200, 300 | 400, 500, 300 |
 | LOCAL_PREF | 100 | 150 |
-| MED | â†’ | â†’ |
+| MED | → | → |
 | Origin | IGP | IGP |
 | NEXT_HOP IGP cost | 5 | 10 |
 
@@ -1800,7 +1800,7 @@ AS100 â†’â†’â†’ AS200 â†’â†’â†’ AS300
 | Step | Criterion | Path 1 | Path 2 | Winner |
 |------|-----------|--------|--------|--------|
 | 1 | LOCAL_PREF | 100 | **150** | Path 2 |
-| 2 | AS_PATH length | â†’ | â†’ | â†’ (already decided) |
+| 2 | AS_PATH length | → | → | → (already decided) |
 
 Result: Path 2 wins despite longer AS_PATH because LOCAL_PREF is higher.
 
@@ -1810,7 +1810,7 @@ Result: Path 2 wins despite longer AS_PATH because LOCAL_PREF is higher.
 |------|-----------|--------|--------|--------|
 | 1 | LOCAL_PREF | 100 | 100 | Tie |
 | 2 | AS_PATH length | **2** | 3 | Path 1 |
-| 3 | Origin | â†’ | â†’ | â†’ (already decided) |
+| 3 | Origin | → | → | → (already decided) |
 
 Result: Path 1 wins with shorter AS_PATH.
 
@@ -1955,7 +1955,7 @@ FUNCTION BgpDecisionProcess(routes_for_prefix):
 
 ```typescript
 /**
- * BGPSimpleSim â€” simulates BGP path selection with
+ * BGPSimpleSim — simulates BGP path selection with
  * LOCAL_PREF, AS_PATH, MED, Origin, eBGP/iBGP, and IGP cost.
  */
 interface BGPRouteOptions {
@@ -2185,7 +2185,7 @@ public:
                 best = c;
                 std::cout << "Path " << i << " wins (lower Router ID)\n";
             } else {
-                std::cout << "Tie â†’ keeping current best\n";
+                std::cout << "Tie → keeping current best\n";
             }
             std::cout << "\n";
         }
@@ -2342,7 +2342,7 @@ as65000.print_table()
 
 The postal system uses a hierarchy: local post office (neighborhood) -> city sorting center -> regional hub -> national hub -> international exchange -> (other country's) national hub -> regional hub -> city sorting center -> local post office.
 
-Each level only needs to know how to reach the next level up, not every address in the world. This is **hierarchical routing** â†’ the Internet's AS hierarchy mirrors this structure exactly.
+Each level only needs to know how to reach the next level up, not every address in the world. This is **hierarchical routing** → the Internet's AS hierarchy mirrors this structure exactly.
 
 ### The Two-Level Hierarchy
 
@@ -2354,7 +2354,7 @@ The Internet routing system has exactly two levels:
 
 **Why Hierarchy Matters for Scalability:**
 
-Without hierarchy, every router would need to know the topology of the entire Internet â†’ an impossible ~100,000 ASes and millions of routes. With hierarchy:
+Without hierarchy, every router would need to know the topology of the entire Internet → an impossible ~100,000 ASes and millions of routes. With hierarchy:
 - Each AS internal router knows only its own AS topology.
 - Border routers learn external routes via BGP but represent each AS as a single node.
 - Route aggregation (CIDR) collapses many prefixes into one advertisement.
@@ -2364,13 +2364,13 @@ Without hierarchy, every router would need to know the topology of the entire In
 
 
 ```
-[Global Tier-1 ISPs] â†’ fully meshed, no upstream
+[Global Tier-1 ISPs] → fully meshed, no upstream
     |
-[Tier-2 ISPs] â†’ have upstream providers, may peer
+[Tier-2 ISPs] → have upstream providers, may peer
     |
-[Tier-3 / Customer ASes] â†’ single- or multi-homed
+[Tier-3 / Customer ASes] → single- or multi-homed
     |
-[Enterprise Networks] â†’ single or dual ISP connections
+[Enterprise Networks] → single or dual ISP connections
 ```
 
 ### Advantages of Hierarchical Routing
@@ -2447,13 +2447,13 @@ IGMPv3 (RFC 3376) is the current standard. Host-to-router protocol for IPv4 mult
 ### Numbered Steps of Multicast Forwarding
 
 
-1. **Host joins group** â†’ Host sends IGMP Report for group G toward the router.
-2. **PIM Join** â†’ Router sends PIM Join (*, G) toward the RP.
-3. **RP receives Join** â†’ RP adds the interface to its outgoing interface list (OIL).
-4. **Source sends traffic** â†’ Source's designated router (DR) encapsulates data in Register messages to RP.
-5. **RP decapsulates** â†’ RP forwards data down the shared tree to receivers.
-6. **S,G switchover** â†’ Last-hop router may send (S,G) Join toward source for optimal path.
-7. **Prune** â†’ When no receivers remain, router sends Prune upstream.
+1. **Host joins group** → Host sends IGMP Report for group G toward the router.
+2. **PIM Join** → Router sends PIM Join (*, G) toward the RP.
+3. **RP receives Join** → RP adds the interface to its outgoing interface list (OIL).
+4. **Source sends traffic** → Source's designated router (DR) encapsulates data in Register messages to RP.
+5. **RP decapsulates** → RP forwards data down the shared tree to receivers.
+6. **S,G switchover** → Last-hop router may send (S,G) Join toward source for optimal path.
+7. **Prune** → When no receivers remain, router sends Prune upstream.
 
 ### Multicast Routing Protocols Compared
 
@@ -2464,7 +2464,7 @@ IGMPv3 (RFC 3376) is the current standard. Host-to-router protocol for IPv4 mult
 | PIM-DM | Independent | Source-based (flood-and-prune) | Low | Dense receiver groups |
 | PIM-SM | Independent | Shared + Source | High | Sparse receiver groups, WAN |
 | MOSPF | Link-State | Source-based | Medium | OSPF networks with multicast |
-| MSDP | â†’ | Inter-domain RP discovery | High | Connecting PIM-SM domains |
+| MSDP | → | Inter-domain RP discovery | High | Connecting PIM-SM domains |
 
 ---
 
@@ -2473,7 +2473,7 @@ IGMPv3 (RFC 3376) is the current standard. Host-to-router protocol for IPv4 mult
 ### Real-World Analogy: The Town Crier
 
 
-The town crier stands in the square and shouts so everyone can hear. Every house receives the message simultaneously, regardless of whether they need it. This is broadcast â†’ send to everyone, whether interested or not.
+The town crier stands in the square and shouts so everyone can hear. Every house receives the message simultaneously, regardless of whether they need it. This is broadcast → send to everyone, whether interested or not.
 
 ### Broadcast Routing Approaches
 
@@ -2487,7 +2487,7 @@ The town crier stands in the square and shouts so everyone can hear. Every house
 - Broadcast packets are forwarded only along tree links, eliminating loops.
 - Redundant links remain available for unicast traffic but disabled for broadcast.
 
-### RPF Check â†’ Detailed
+### RPF Check → Detailed
 
 
 RPF is fundamental: a router receives a broadcast packet from source S on interface I. It checks its unicast routing table: "Would I forward to S via interface I?" If yes, the packet arrived on the correct interface -> forward to all other interfaces. If no -> drop (likely a duplicate).
@@ -2519,7 +2519,7 @@ When S sends a broadcast via R1:
 | Protocol support | All IP devices | All IP devices | Requires IGMP / MLD |
 | Typical use | Web, email, file transfer | DHCP, ARP (L2 broadcast) | IPTV, video conferencing |
 | Router state per group | None (unicast table only) | None | (S,G) or (*,G) state |
-| Bandwidth efficiency | Wastes bandwidth for | n copies | Very wasteful for n>1 | Efficient â€” duplicates only at branch points |
+| Bandwidth efficiency | Wastes bandwidth for | n copies | Very wasteful for n>1 | Efficient — duplicates only at branch points |
 
 ### Broadcast Routing Algorithms Summary
 
@@ -2538,13 +2538,13 @@ When S sends a broadcast via R1:
 ### Real-World Analogy: The Nearest Pizza Delivery
 
 
-You call a pizza chain's phone number. The call is routed to the nearest store (by geography), not to a specific location. If that store is busy, the call may go to the next nearest. You don't care which store delivers â†’ you care about getting pizza fast. This is anycast: send to the nearest member of a group.
+You call a pizza chain's phone number. The call is routed to the nearest store (by geography), not to a specific location. If that store is busy, the call may go to the next nearest. You don't care which store delivers → you care about getting pizza fast. This is anycast: send to the nearest member of a group.
 
 ### BGP Anycast in Practice
 
 
 Anycast in the Internet is implemented via BGP. Multiple routers in different locations advertise the **same IP prefix**:
-- DNS root servers (e.g., 198.41.0.4 for a.root-servers.net â†’ 200+ instances worldwide)
+- DNS root servers (e.g., 198.41.0.4 for a.root-servers.net → 200+ instances worldwide)
 - CDN edge servers (Cloudflare, Akamai, Fastly)
 - Google's 8.8.8.8 (2000+ instances)
 - Cloudflare's 1.1.1.1
@@ -2631,22 +2631,22 @@ Anycast in the Internet is implemented via BGP. Multiple routers in different lo
 ### Q1: Why does RIP have a maximum hop count of 15?
 
 
-RIP uses 16 as "infinity" â†’ a value that is unreachable. The 15-hop limit prevents count-to-infinity from taking too long. With each iteration incrementing by 1, reaching 16 from a valid path takes at most 16 iterations. A larger infinity (e.g., OSPF's theoretical infinity is 65,535) would cause proportionally longer count-to-infinity convergence. The 15-hop limit means RIP networks cannot exceed 15 routers in diameter â†’ this is acceptable for small networks.
+RIP uses 16 as "infinity" → a value that is unreachable. The 15-hop limit prevents count-to-infinity from taking too long. With each iteration incrementing by 1, reaching 16 from a valid path takes at most 16 iterations. A larger infinity (e.g., OSPF's theoretical infinity is 65,535) would cause proportionally longer count-to-infinity convergence. The 15-hop limit means RIP networks cannot exceed 15 routers in diameter → this is acceptable for small networks.
 
 ### Q2: How does OSPF achieve faster convergence than RIP?
 
 
 Three architectural differences:
-1. **Event-driven updates** â†’ OSPF sends LSAs only when topology changes, not periodically. No waiting for the 30-second timer.
-2. **Global knowledge** â†’ Each router computes paths independently from the full LSDB. There is no iterative propagation delay.
-3. **LSA flooding** â†’ A new LSA reaches all routers in O(N) time (chain of E flood events), vs DV's O(diameter * iterations). In practice, OSPF converges in 1-10 seconds vs RIP's 30-180 seconds.
+1. **Event-driven updates** → OSPF sends LSAs only when topology changes, not periodically. No waiting for the 30-second timer.
+2. **Global knowledge** → Each router computes paths independently from the full LSDB. There is no iterative propagation delay.
+3. **LSA flooding** → A new LSA reaches all routers in O(N) time (chain of E flood events), vs DV's O(diameter * iterations). In practice, OSPF converges in 1-10 seconds vs RIP's 30-180 seconds.
 
 ### Q3: What is the purpose of OSPF areas?
 
 
 Areas serve two main purposes:
-1. **Reduce LSA flooding scope** â†’ A link change in Area 1 does not trigger SPF recalculation in Area 2. Only ABRs learn routes between areas via summary LSAs.
-2. **Reduce LSDB size** â†’ An internal router in Area 1 stores only Area 1's topology. Without areas, every router stores the entire OSPF domain topology.
+1. **Reduce LSA flooding scope** → A link change in Area 1 does not trigger SPF recalculation in Area 2. Only ABRs learn routes between areas via summary LSAs.
+2. **Reduce LSDB size** → An internal router in Area 1 stores only Area 1's topology. Without areas, every router stores the entire OSPF domain topology.
 
 ### Q4: How does BGP policy differ from IGP metrics?
 
@@ -2667,11 +2667,11 @@ iBGP runs between routers in the same AS. It does NOT prepend the AS number (so 
 ### Q6: What causes BGP convergence to be slow?
 
 
-1. **MRAI (Minimum Route Advertisement Interval)** â†’ eBGP: 30s, iBGP: 15s per prefix. This rate-limits updates to reduce churn.
-2. **Route flap damping** â†’ Suppressed routes are not re-examined until the penalty decays.
-3. **Policy processing** â†’ Inbound/outbound policies involve complex attribute manipulation and filtering.
-4. **TCP backoff** â†’ BGP relies on TCP; TCP's exponential backoff after packet loss can delay session establishment.
-5. **Route propagation delay** â†’ Updates must propagate through the AS graph; each BGP speaker must process, select, and re-advertise.
+1. **MRAI (Minimum Route Advertisement Interval)** → eBGP: 30s, iBGP: 15s per prefix. This rate-limits updates to reduce churn.
+2. **Route flap damping** → Suppressed routes are not re-examined until the penalty decays.
+3. **Policy processing** → Inbound/outbound policies involve complex attribute manipulation and filtering.
+4. **TCP backoff** → BGP relies on TCP; TCP's exponential backoff after packet loss can delay session establishment.
+5. **Route propagation delay** → Updates must propagate through the AS graph; each BGP speaker must process, select, and re-advertise.
 
 ### Q7: What is the BGP convergence time in the real Internet?
 
@@ -2726,8 +2726,8 @@ Route summarization (aggregation) combines multiple contiguous prefixes into a s
 
 
 When OSPF (or any IGP) finds multiple paths to the same destination with equal cost, it can install all of them in the FIB. Traffic is then distributed across these paths using:
-- **Per-packet round-robin** â€” Each packet takes the next available path (can cause reordering in TCP).
-- **Per-flow hashing** â€” A hash of src IP, dst IP, src port, dst port selects the path. All packets in a flow take the same path, avoiding reordering.
+- **Per-packet round-robin** — Each packet takes the next available path (can cause reordering in TCP).
+- **Per-flow hashing** — A hash of src IP, dst IP, src port, dst port selects the path. All packets in a flow take the same path, avoiding reordering.
 
 Cisco's CEF uses a hash-based approach by default. The number of ECMP paths supported depends on the platform (4, 8, 16, or 32 paths).
 
@@ -2745,7 +2745,7 @@ Traceroute exploits this: it sends packets with TTL=1, TTL=2, TTL=3, etc. The fi
 
 **Route leaking** is a more controlled form where specific routes are selectively shared between routing domains (e.g., leaking a default route from a provider into a customer's OSPF domain). BGP communities are often used to control route leaking.
 
-Both require consideration of routing feedback loops â€” a route redistributed into OSPF could be re-learned via BGP and redistributed back, creating a loop. Administrative distances and route tagging prevent this.
+Both require consideration of routing feedback loops — a route redistributed into OSPF could be re-learned via BGP and redistributed back, creating a loop. Administrative distances and route tagging prevent this.
 
 ### Q15: How does a router handle a packet when no route exists in the FIB?
 
@@ -2809,7 +2809,7 @@ ip prefix-list DEFAULT permit 0.0.0.0/0
  neighbor 10.0.0.1 prefix-list DEFAULT in
 ```
 
-### FRR (Free Range Routing) â†’ Open-Source Routing Stack
+### FRR (Free Range Routing) → Open-Source Routing Stack
 
 
 FRR (formerly Quagga) is the de-facto open-source routing suite on Linux, used in production by many organizations.
@@ -2878,12 +2878,12 @@ Cloudflare operates one of the largest anycast networks globally, serving ~20% o
 **Anycast Design:**
 - Same IP prefixes (e.g., 1.1.1.1 for DNS, 104.16.0.0/12 for CDN) advertised from 330+ data centers worldwide.
 - Each data center has multiple routers peering with local ISPs.
-- BGP propagates these /24 prefixes globally â€” every router in the world sees 330+ paths to Cloudflare.
+- BGP propagates these /24 prefixes globally — every router in the world sees 330+ paths to Cloudflare.
 
 **Traffic Engineering at Cloudflare:**
-- **AS_PATH prepending** â€” Data centers with more capacity advertise with shorter AS_PATH to attract more traffic.
-- **BGP communities** â€” Upstream ISPs tag routes with location communities (e.g., 13335:100 for US-East). Cloudflare uses these to analyze traffic distribution.
-- **Anycast vs DNS** â€” CDN uses IP anycast (same IP, many locations). Load balancing within a data center uses DNS-based steering.
+- **AS_PATH prepending** — Data centers with more capacity advertise with shorter AS_PATH to attract more traffic.
+- **BGP communities** — Upstream ISPs tag routes with location communities (e.g., 13335:100 for US-East). Cloudflare uses these to analyze traffic distribution.
+- **Anycast vs DNS** — CDN uses IP anycast (same IP, many locations). Load balancing within a data center uses DNS-based steering.
 
 **DDoS Mitigation:**
 When one data center is attacked, BGP anycast automatically distributes attack traffic across all 330+ data centers. Each data center absorbs a fraction of the attack, making large DDoS attacks (over 2 Tbps) survivable.
@@ -2901,11 +2901,11 @@ On-prem (AS65000) == Direct Connect == AWS VPC (AS64512)
 ```
 
 **Key Routing Considerations:**
-1. **VPC routes** â€” On-premises prefixes are advertised via BGP over Direct Connect; VPC prefixes are advertised back.
-2. **Route preference** â€” Direct Connect routes (BGP) vs VPN routes vs Internet routes. Lower admin distance for Direct Connect.
-3. **Failover** â€” If Direct Connect fails, traffic fails over to VPN backup (BGP withdrawal triggers route change).
-4. **Prefix advertisement** â€” Customer advertises on-premises prefixes; AWS advertises VPC subnets.
-5. **NAT overlap** â€” If on-prem and VPC CIDRs overlap, NAT or careful prefix filtering is required.
+1. **VPC routes** — On-premises prefixes are advertised via BGP over Direct Connect; VPC prefixes are advertised back.
+2. **Route preference** — Direct Connect routes (BGP) vs VPN routes vs Internet routes. Lower admin distance for Direct Connect.
+3. **Failover** — If Direct Connect fails, traffic fails over to VPN backup (BGP withdrawal triggers route change).
+4. **Prefix advertisement** — Customer advertises on-premises prefixes; AWS advertises VPC subnets.
+5. **NAT overlap** — If on-prem and VPC CIDRs overlap, NAT or careful prefix filtering is required.
 
 ### Facebook's BGP Routing (Meta)
 
@@ -2913,7 +2913,7 @@ On-prem (AS65000) == Direct Connect == AWS VPC (AS64512)
 Meta (Facebook) has a unique routing architecture designed for its global private backbone (FBANET):
 
 **AS 32934 Design:**
-- Private WAN connecting all data centers (backbone routers running BGP-LU â€” BGP Labeled Unicast).
+- Private WAN connecting all data centers (backbone routers running BGP-LU — BGP Labeled Unicast).
 - eBGP to transit providers, peers at IXPs.
 - iBGP route reflectors in each region.
 - BGP policy based on performance (measured RTT, loss) not just AS_PATH length.
@@ -2927,7 +2927,7 @@ Real-world ISP BGP architecture typically includes:
 1. **Core routers** (PE/P routers): Run IBGP full mesh or with route reflectors. Peer with upstream providers and customers via eBGP.
 2. **Route reflectors** (RRs): Reduce iBGP mesh from O(n^2) to O(n). RRs are typically dedicated servers or high-end routers.
 3. **Route servers**: Used at Internet Exchange Points (IXPs) to simplify multi-lateral peering.
-4. **AS_PATH prepending**: Traffic engineering â†’ make one path look longer to shift inbound traffic.
+4. **AS_PATH prepending**: Traffic engineering → make one path look longer to shift inbound traffic.
 5. **Community-based policy**: Upstream ISPs tag received prefixes with communities (e.g., "do not advertise to peers"), enabling downstream control.
 
 **ISP Route Flow:**
@@ -2935,14 +2935,14 @@ Real-world ISP BGP architecture typically includes:
 Customer (AS65000)
     |  eBGP (advertises 203.0.113.0/24)
     v
-Provider (AS100) â†’ PE router
+Provider (AS100) → PE router
     |  iBGP (to route reflectors)
     v
-Provider Route Reflectors â†’ process policy, select best path
+Provider Route Reflectors → process policy, select best path
     |  iBGP (to all PE routers)
     |  eBGP (to upstream providers and peers)
     v
-Upstream (AS1) / Peers (AS200, AS300) â†’ propagate globally
+Upstream (AS1) / Peers (AS200, AS300) → propagate globally
 ```
 
 ### Routing Protocol Administrative Distances
@@ -3034,12 +3034,12 @@ BGP Flowspec (RFC 8955) extends BGP to carry traffic filtering and rate-limiting
 ### Route Filtering Best Practices
 
 
-1. **Prefix filtering at AS boundaries** â€” Accept only prefixes that a customer/peer is authorized to announce.
-2. **Bogon filtering** â€” Reject private (RFC 1918), loopback, multicast, and unallocated prefixes.
-3. **Max-prefix limit** â€” Set a maximum number of prefixes from each peer to prevent memory exhaustion.
-4. **AS_PATH filtering** â€” Reject routes containing private AS numbers or your own AS.
-5. **IRR (Internet Routing Registry) validation** â€” Check route objects to verify prefix ownership.
-6. **RPKI ROV** â€” Reject INVALID routes based on cryptographic ROAs.
+1. **Prefix filtering at AS boundaries** — Accept only prefixes that a customer/peer is authorized to announce.
+2. **Bogon filtering** — Reject private (RFC 1918), loopback, multicast, and unallocated prefixes.
+3. **Max-prefix limit** — Set a maximum number of prefixes from each peer to prevent memory exhaustion.
+4. **AS_PATH filtering** — Reject routes containing private AS numbers or your own AS.
+5. **IRR (Internet Routing Registry) validation** — Check route objects to verify prefix ownership.
+6. **RPKI ROV** — Reject INVALID routes based on cryptographic ROAs.
 
 ---
 
@@ -3066,7 +3066,7 @@ C) RIP uses hop count, max 15 (16 = infinity).
 
 <details>
 <summary>Answer</summary>
-B) BGP checks the AS_PATH â†’ if a router sees its own AS in the path, it rejects the route to prevent loops.
+B) BGP checks the AS_PATH → if a router sees its own AS in the path, it rejects the route to prevent loops.
 </details>
 
 **Q3.** In OSPF, what is the purpose of a Designated Router (DR)?
@@ -3111,8 +3111,8 @@ B) OSPF has administrative distance 110, RIP has 120. Lower AD wins.
 | Question | Answer | Explanation |
 |----------|--------|-------------|
 | Q1 | C | RIP uses hop count with a maximum of 15; 16 = infinity. |
-| Q2 | B | BGP checks the AS_PATH â€” if a router sees its own AS, it rejects the route. |
-| Q3 | B | The DR reduces adjacencies from O(nÂ²) to O(n) on multi-access broadcast networks. |
+| Q2 | B | BGP checks the AS_PATH — if a router sees its own AS, it rejects the route. |
+| Q3 | B | The DR reduces adjacencies from O(n²) to O(n) on multi-access broadcast networks. |
 | Q4 | C | LOCAL_PREF (highest wins) is the first criterion in the BGP decision process. |
 | Q5 | B | OSPF has AD 110, RIP has AD 120; the lower administrative distance wins. |
 
@@ -3122,19 +3122,19 @@ B) OSPF has administrative distance 110, RIP has 120. Lower AD wins.
 
 **Background:** A Tier-2 ISP (AS65000) provides transit services to 500+ customer ASes and peers at three major IXPs. The ISP operates two route reflectors and eight edge routers across four PoPs.
 
-**The Incident:** On March 15, 2024, the ISP's monitoring system detected an anomaly: traffic to a major CDN prefix (104.16.0.0/12) was being diverted through an unfamiliar AS path. The legitimate path was `AS65000 â†’ AS13335 (Cloudflare)`, but the new path showed `AS65000 â†’ AS64512 â†’ AS13335` with AS64512 being a small, recently-created AS in Eastern Europe.
+**The Incident:** On March 15, 2024, the ISP's monitoring system detected an anomaly: traffic to a major CDN prefix (104.16.0.0/12) was being diverted through an unfamiliar AS path. The legitimate path was `AS65000 → AS13335 (Cloudflare)`, but the new path showed `AS65000 → AS64512 → AS13335` with AS64512 being a small, recently-created AS in Eastern Europe.
 
 **Analysis:**
-1. **Route validation** â€” The ISP checked RPKI: the prefix 104.16.0.0/12 was associated with AS13335 only. AS64512 had no valid ROA for this prefix.
-2. **AS_PATH examination** â€” AS64512's advertisement showed an AS_PATH of `64512 13335`, but AS64512 had no BGP peering with AS13335 (verified via PeeringDB and IRR records).
-3. **Prefix comparison** â€” AS64512 announced a more specific prefix (104.16.0.0/13) which BGP prefers over the less specific /12, causing traffic diversion.
-4. **Impact assessment** â€” 15% of the ISP's traffic to Cloudflare was redirected through AS64512, causing increased latency (from 15ms to 320ms) and potential data interception risk.
+1. **Route validation** — The ISP checked RPKI: the prefix 104.16.0.0/12 was associated with AS13335 only. AS64512 had no valid ROA for this prefix.
+2. **AS_PATH examination** — AS64512's advertisement showed an AS_PATH of `64512 13335`, but AS64512 had no BGP peering with AS13335 (verified via PeeringDB and IRR records).
+3. **Prefix comparison** — AS64512 announced a more specific prefix (104.16.0.0/13) which BGP prefers over the less specific /12, causing traffic diversion.
+4. **Impact assessment** — 15% of the ISP's traffic to Cloudflare was redirected through AS64512, causing increased latency (from 15ms to 320ms) and potential data interception risk.
 
 **Resolution:**
-1. **Immediate** â€” The ISP deployed a prefix filter rejecting any route for 104.16.0.0/12â€“/13 from non-Cloudflare ASes.
-2. **Monitoring** â€” IRR-based route validation was enabled to check new BGP announcements against registered route objects.
-3. **Long-term** â€” The ISP implemented RPKI-based Route Origin Validation (ROV) on all edge routers, rejecting INVALID routes automatically.
-4. **Reporting** â€” The incident was reported to MANRS (Mutually Agreed Norms for Routing Security) and the offending AS was flagged for investigation.
+1. **Immediate** — The ISP deployed a prefix filter rejecting any route for 104.16.0.0/12–/13 from non-Cloudflare ASes.
+2. **Monitoring** — IRR-based route validation was enabled to check new BGP announcements against registered route objects.
+3. **Long-term** — The ISP implemented RPKI-based Route Origin Validation (ROV) on all edge routers, rejecting INVALID routes automatically.
+4. **Reporting** — The incident was reported to MANRS (Mutually Agreed Norms for Routing Security) and the offending AS was flagged for investigation.
 
 **Lessons Learned:**
 - RPKI alone would have prevented this hijack (no ROA for AS64512).
@@ -3154,7 +3154,7 @@ B) OSPF has administrative distance 110, RIP has 120. Lower AD wins.
 | Split Horizon | Essential loop-prevention for DV protocols | Configure on all RIP interfaces; use poison reverse for faster convergence |
 | OSPF Area Hierarchy | Reduces LSDB size and isolates failure domains | Always use a hierarchical design with Area 0 backbone |
 | BGP LOCAL_PREF | Most important attribute for outbound traffic engineering | Set higher values for preferred upstream providers |
-| AS_PATH Prepending | Coarse-grained inbound traffic engineering | Prepend 2â€“3 times to shift traffic to backup links |
+| AS_PATH Prepending | Coarse-grained inbound traffic engineering | Prepend 2–3 times to shift traffic to backup links |
 | RPKI/ROV | Cryptographic route origin validation | Deploy on edge routers to prevent BGP hijacks |
 | Route Aggregation | Reduces routing table size and hides flaps | Summarize at area/AS boundaries whenever possible |
 | Anycast | Same IP from multiple locations using BGP | Ideal for DNS, CDN, and DDoS-absorbing services |
@@ -3183,21 +3183,21 @@ Hierarchical routing splits the problem into intra-domain (IGP) and inter-domain
 
 <details>
 <summary>Solution</summary>
-A distance-vector router exchanges its entire distance vector â€” a table of (destination, distance) pairs â€” with each of its directly connected neighbors. The vector includes distances to all known destinations in the network. The router does not share its topology knowledge, only its computed distances.
+A distance-vector router exchanges its entire distance vector — a table of (destination, distance) pairs — with each of its directly connected neighbors. The vector includes distances to all known destinations in the network. The router does not share its topology knowledge, only its computed distances.
 </details>
 
 2. How does split horizon prevent count-to-infinity? Give a scenario where it is insufficient.
 
 <details>
 <summary>Solution</summary>
-Split horizon prevents a router from advertising a route back on the same interface from which it was learned. This breaks two-node routing loops. For example, if B learns about A through C, B will not advertise A's route back to C. However, split horizon is insufficient for three-node loops (Aâ†’B, Bâ†’C, Câ†’A), which require poison reverse or hold-down timers.
+Split horizon prevents a router from advertising a route back on the same interface from which it was learned. This breaks two-node routing loops. For example, if B learns about A through C, B will not advertise A's route back to C. However, split horizon is insufficient for three-node loops (A→B, B→C, C→A), which require poison reverse or hold-down timers.
 </details>
 
 3. What is the purpose of the designated router in OSPF?
 
 <details>
 <summary>Solution</summary>
-The Designated Router (DR) reduces the number of OSPF adjacencies required on multi-access broadcast networks (like Ethernet). Without a DR, every router would form an adjacency with every other router (O(nÂ²) adjacencies). With a DR, all routers form adjacencies only with the DR and BDR (O(n) adjacencies). The DR is elected via Hello protocol priority.
+The Designated Router (DR) reduces the number of OSPF adjacencies required on multi-access broadcast networks (like Ethernet). Without a DR, every router would form an adjacency with every other router (O(n²) adjacencies). With a DR, all routers form adjacencies only with the DR and BDR (O(n) adjacencies). The DR is elected via Hello protocol priority.
 </details>
 
 4. List the BGP path attributes and explain the role of AS_PATH.
@@ -3211,7 +3211,7 @@ Key BGP attributes include: AS_PATH (sequence of AS numbers the route traversed)
 
 <details>
 <summary>Solution</summary>
-LOCAL_PREF is evaluated first because business policy takes precedence over path length. An ISP may want to prefer a customer route (higher LOCAL_PREF) even if it has a longer AS_PATH, because customer routes generate revenue. The BGP decision process prioritizes policy over technical metrics â€” LOCAL_PREF is the primary tool for outbound traffic engineering.
+LOCAL_PREF is evaluated first because business policy takes precedence over path length. An ISP may want to prefer a customer route (higher LOCAL_PREF) even if it has a longer AS_PATH, because customer routes generate revenue. The BGP decision process prioritizes policy over technical metrics — LOCAL_PREF is the primary tool for outbound traffic engineering.
 </details>
 
 6. How does the Reverse Path Forwarding (RPF) check prevent broadcast storms?
@@ -3225,19 +3225,19 @@ RPF checks that a broadcast/multicast packet arrived on the interface that the r
 
 <details>
 <summary>Solution</summary>
-PIM Dense Mode (PIM-DM) assumes all routers want multicast traffic and floods initially, then prunes uninterested branches. It is suitable for dense receiver groups. PIM Sparse Mode (PIM-SM) assumes few receivers and uses a Rendezvous Point (RP) â€” receivers explicitly join via the RP, and sources register with the RP. PIM-SM is more scalable for wide-area multicast and can switch to source-specific trees for optimal paths.
+PIM Dense Mode (PIM-DM) assumes all routers want multicast traffic and floods initially, then prunes uninterested branches. It is suitable for dense receiver groups. PIM Sparse Mode (PIM-SM) assumes few receivers and uses a Rendezvous Point (RP) — receivers explicitly join via the RP, and sources register with the RP. PIM-SM is more scalable for wide-area multicast and can switch to source-specific trees for optimal paths.
 </details>
 
 8. Explain how AS_PATH prepending works as a traffic engineering tool.
 
 <details>
 <summary>Solution</summary>
-AS_PATH prepending artificially lengthens the AS_PATH attribute by adding extra copies of the local AS number. When other ASes run the BGP decision process, they see a longer AS_PATH and prefer alternative shorter paths. This shifts inbound traffic away from the prepended path. The technique is coarse-grained: prepending 1â€“2 times may not change traffic significantly, while 3+ prepends typically make a path a backup only.
+AS_PATH prepending artificially lengthens the AS_PATH attribute by adding extra copies of the local AS number. When other ASes run the BGP decision process, they see a longer AS_PATH and prefer alternative shorter paths. This shifts inbound traffic away from the prepended path. The technique is coarse-grained: prepending 1–2 times may not change traffic significantly, while 3+ prepends typically make a path a backup only.
 </details>
 
 ### Application Problems
 
-9. Consider the network: Aâ†’B (cost 2), Bâ†’C (3), Aâ†’C (5), Câ†’D (1). Run the Bellman-Ford algorithm from all sources to compute distance tables. Show the table updates after each iteration.
+9. Consider the network: A→B (cost 2), B→C (3), A→C (5), C→D (1). Run the Bellman-Ford algorithm from all sources to compute distance tables. Show the table updates after each iteration.
 
 <details>
 <summary>Solution</summary>
@@ -3250,13 +3250,13 @@ AS_PATH prepending artificially lengthens the AS_PATH attribute by adding extra 
 - D: {A:INF, B:INF, C:1, D:0}
 
 **Iteration 1:**
-- A receives from B: Aâ†’C via B = 2+3=5 (no change); Aâ†’D via B = INF (no change)
-- A receives from C: Aâ†’C via C = 5+0=5 (no change); Aâ†’D via C = 5+1=6 (update)
-- B receives from A: Bâ†’C via A = 2+5=7 (worse than 3); Bâ†’D via A = INF
-- B receives from C: Bâ†’D via C = 3+1=4 (update)
-- C receives from B: Câ†’A via B = 3+2=5 (no change); Câ†’D via B = INF
-- C receives from D: Câ†’A via D = 1+INF = INF; Câ†’B via D = INF
-- D receives from C: Dâ†’A via C = 1+5=6 (update); Dâ†’B via C = 1+3=4 (update)
+- A receives from B: A→C via B = 2+3=5 (no change); A→D via B = INF (no change)
+- A receives from C: A→C via C = 5+0=5 (no change); A→D via C = 5+1=6 (update)
+- B receives from A: B→C via A = 2+5=7 (worse than 3); B→D via A = INF
+- B receives from C: B→D via C = 3+1=4 (update)
+- C receives from B: C→A via B = 3+2=5 (no change); C→D via B = INF
+- C receives from D: C→A via D = 1+INF = INF; C→B via D = INF
+- D receives from C: D→A via C = 1+5=6 (update); D→B via C = 1+3=4 (update)
 
 **After Iteration 1:**
 - A: {A:0, B:2, C:5, D:6}
@@ -3264,7 +3264,7 @@ AS_PATH prepending artificially lengthens the AS_PATH attribute by adding extra 
 - C: {A:5, B:3, C:0, D:1}
 - D: {A:6, B:4, C:1, D:0}
 
-**Iteration 2:** No changes â†’ converged.
+**Iteration 2:** No changes → converged.
 </details>
 
 10. The same network uses OSPF. Run Dijkstra's algorithm from A to compute the shortest-path tree. Show the steps and the final forwarding table at A.
@@ -3280,14 +3280,14 @@ AS_PATH prepending artificially lengthens the AS_PATH attribute by adding extra 
 - Step 3: Pick D. N'={A,B,C,D}. Done.
 
 **Shortest-path tree from A:**
-- Aâ†’B: direct (cost 2)
-- Aâ†’C: Aâ†’Bâ†’C (cost 5)
-- Aâ†’D: Aâ†’Bâ†’Câ†’D (cost 6)
+- A→B: direct (cost 2)
+- A→C: A→B→C (cost 5)
+- A→D: A→B→C→D (cost 6)
 
 **Forwarding table at A:**
-- B â†’ next-hop B, cost 2
-- C â†’ next-hop B, cost 5
-- D â†’ next-hop B, cost 6
+- B → next-hop B, cost 2
+- C → next-hop B, cost 5
+- D → next-hop B, cost 6
 </details>
 
 11. An ISP has three customers, each advertising a /24 prefix via BGP. The ISP also receives full BGP tables from two upstream providers. Explain how route aggregation might reduce the ISP's RIB size.
@@ -3301,10 +3301,10 @@ If the three customers advertise contiguous /24 prefixes (e.g., 203.0.113.0/24, 
 
 <details>
 <summary>Solution</summary>
-**Step 1 â€” Highest LOCAL_PREF:**
+**Step 1 — Highest LOCAL_PREF:**
 - Path A: LOCAL_PREF = 100
 - Path B: LOCAL_PREF = 150
-- â†’ Path B wins immediately. AS_PATH and IGP cost are never evaluated.
+- → Path B wins immediately. AS_PATH and IGP cost are never evaluated.
 
 **Result:** Path B wins because LOCAL_PREF is the first criterion in the BGP decision process, and Path B has the higher value (150 > 100). The shorter AS_PATH of Path A (2 vs 3) and lower IGP cost of Path B (3 vs 5) are irrelevant since the decision was already made at step 1.
 
@@ -3346,7 +3346,7 @@ class BellmanFordSimulator {
           dist.set(e.dest, dSrc + e.weight);
           prev.set(e.dest, e.src);
           updated = true;
-          console.log(`  Iteration ${i}: relax (${e.src}â†’${e.dest}) = ${dist.get(e.dest)}`);
+          console.log(`  Iteration ${i}: relax (${e.src}→${e.dest}) = ${dist.get(e.dest)}`);
         }
       }
       if (!updated) { console.log(`  Converged at iteration ${i}`); break; }
@@ -3411,7 +3411,7 @@ console.log('Distances from 0:', Object.fromEntries(result.distances));
 <summary>Solution</summary>
 **BGP Policy Design:**
 
-**(a) Prefer ISP-A for inbound traffic:** Use AS_PATH prepending on ISP-B's advertisements. Announce the /20 prefix to ISP-B with 2â€“3 prepended AS numbers (AS65000 AS65000 AS65000). ISP-A's advertisement has AS_PATH length 1, ISP-B's has length 3â€“4. Inbound traffic naturally prefers the shorter AS_PATH (ISP-A). This ensures high-bandwidth traffic uses the 1 Gbps link.
+**(a) Prefer ISP-A for inbound traffic:** Use AS_PATH prepending on ISP-B's advertisements. Announce the /20 prefix to ISP-B with 2–3 prepended AS numbers (AS65000 AS65000 AS65000). ISP-A's advertisement has AS_PATH length 1, ISP-B's has length 3–4. Inbound traffic naturally prefers the shorter AS_PATH (ISP-A). This ensures high-bandwidth traffic uses the 1 Gbps link.
 
 **(b) ISP-B as backup for outbound traffic:** Set LOCAL_PREF = 200 for routes learned from ISP-A and LOCAL_PREF = 100 for routes learned from ISP-B. Since higher LOCAL_PREF is preferred, all outbound traffic uses ISP-A unless it fails. Configure the router to track ISP-A availability using IP SLA monitoring.
 
@@ -3419,13 +3419,13 @@ console.log('Distances from 0:', Object.fromEntries(result.distances));
 
 **(d) Accept only default route plus specific prefixes:** Apply inbound prefix filters accepting only 0.0.0.0/0 (default) plus specific /24 prefixes for the hosted service. This minimizes the enterprise's RIB size while ensuring full Internet reachability via default.
 
-**Failure scenario â€” ISP-A goes down:**
+**Failure scenario — ISP-A goes down:**
 1. BGP session to ISP-A drops (TCP reset or hold timer expiry).
 2. Routes learned via ISP-A (including default) are withdrawn from the routing table.
 3. The router removes routes with LOCAL_PREF 200, leaving only ISP-B's routes (LOCAL_PREF 100).
 4. Outbound traffic automatically fails over to ISP-B (the only default route remaining).
 5. Inbound traffic: ISP-B's prepended advertisement is now the only path; traffic enters via ISP-B regardless of prepending.
-6. Traffic shifts to the 100 Mbps link â€” capacity drops, but connectivity is maintained.
+6. Traffic shifts to the 100 Mbps link — capacity drops, but connectivity is maintained.
 7. When ISP-A recovers, BGP re-establishes, higher LOCAL_PREF routes reappear, and traffic shifts back.
 </details>
 

@@ -1,4 +1,4 @@
-﻿# Chapter 10 â€” Prompt Engineering Mastery
+# Chapter 10 — Prompt Engineering Mastery
 
 **Duration:** 2 weeks, ~20 hours
 **Goal:** Master advanced prompt patterns, structured output design, prompt management at scale, and injection defense. Move beyond copying prompts to designing prompt systems.
@@ -49,7 +49,7 @@
 The most impactful prompt pattern. Elicits step-by-step reasoning before the answer.
 
 ```python
-# Zero-shot CoT â€” simply add "think step by step"
+# Zero-shot CoT — simply add "think step by step"
 def zero_shot_cot(question: str) -> str:
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -60,7 +60,7 @@ def zero_shot_cot(question: str) -> str:
     )
     return response.choices[0].message.content
 
-# Few-shot CoT â€” provide examples of reasoning chains
+# Few-shot CoT — provide examples of reasoning chains
 def few_shot_cot(question: str) -> str:
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -89,7 +89,7 @@ A:
 2. Time for second segment: 120/40 = 3 hours
 3. Total distance: 240 + 120 = 360 km
 4. Total time: 4 + 3 = 7 hours
-5. Average speed: 360/7 Ëœ 51.4 km/h
+5. Average speed: 360/7 ˜ 51.4 km/h
 6. Final answer: approximately 51.4 km/h
 
 Q: """ + question}
@@ -578,7 +578,7 @@ code_review_prompt = build_system_prompt(
         "Focus on logic errors first, then style.",
         "Provide specific fix suggestions, not general advice.",
         "If you find a security vulnerability, mark it CRITICAL.",
-        "Be concise â€” max 5 bullet points per review."
+        "Be concise — max 5 bullet points per review."
     ],
     output_format="Markdown with sections: Issues Found, Suggestions, Positive Notes.",
     examples=[
@@ -598,7 +598,7 @@ class DynamicPersona:
     DOMAINS = {
         "legal": {
             "persona": "a legal document reviewer. Be precise and cite specific clauses.",
-            "constraints": ["Quote exact language from documents.", "Flag ambiguous phrasing.", "Never give legal advice â€” only document analysis."]
+            "constraints": ["Quote exact language from documents.", "Flag ambiguous phrasing.", "Never give legal advice — only document analysis."]
         },
         "medical": {
             "persona": "a medical information assistant. Be cautious and evidence-based.",

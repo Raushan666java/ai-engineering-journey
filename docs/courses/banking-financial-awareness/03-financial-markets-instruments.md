@@ -1,4 +1,4 @@
-﻿# Chapter 3: Financial Markets & Instruments
+# Chapter 3: Financial Markets & Instruments
 
 ## Learning Objectives
 
@@ -99,7 +99,7 @@ flowchart LR
 ```
 
 **Key players in an IPO:**
-- **Merchant Banker** (Book Running Lead Manager â€” BRLM): Manages the issue process
+- **Merchant Banker** (Book Running Lead Manager — BRLM): Manages the issue process
 - **Underwriter**: Guarantees subscription
 - **Registrar**: Manages application processing and allotment
 - **Depository**: Facilitates electronic transfer (NSDL/CDSL)
@@ -110,8 +110,8 @@ flowchart LR
 | Category | Allocation | Description |
 |----------|------------|-------------|
 | Qualified Institutional Buyers (QIBs) | 50% | Mutual funds, FIIs, banks, insurance companies |
-| Non-Institutional Investors (NIIs) | 15% | HNIs, corporates (application > â‚¹2 lakh) |
-| Retail Individual Investors (RIIs) | 35% | Individuals applying for â‰¤ â‚¹2 lakh |
+| Non-Institutional Investors (NIIs) | 15% | HNIs, corporates (application > ₹2 lakh) |
+| Retail Individual Investors (RIIs) | 35% | Individuals applying for ≤ ₹2 lakh |
 
 **Pricing methods:**
 - **Fixed Price Issue:** Price is fixed in advance
@@ -152,28 +152,28 @@ The market where **already-issued securities** are traded among investors. The i
 |--------|----------------|
 | Trading | T+0 (same day) settlement available; T+1 is standard |
 | Settlement cycle | T+1 (trade day + 1) for most trades |
-| Clearing | ICCL (BSE) / NSCCL (NSE) â€” guarantee settlement |
+| Clearing | ICCL (BSE) / NSCCL (NSE) — guarantee settlement |
 | Trading hours | 9:15 AM to 3:30 PM (Monday to Friday) |
 
 ### 3.3 Money Market
 
-The money market deals in **short-term funds** (maturity â‰¤ 1 year). It provides liquidity management for banks, corporates, and the government.
+The money market deals in **short-term funds** (maturity ≤ 1 year). It provides liquidity management for banks, corporates, and the government.
 
 | Instrument | Maturity | Issuer | Risk | Minimum Amount |
 |------------|----------|--------|------|----------------|
-| **Call Money** | 1 day to 14 days | Banks | Low | â‚¹5 crore |
-| **Notice Money** | 2 to 14 days | Banks | Low | â‚¹5 crore |
-| **Term Money** | 15 days to 1 year | Banks | Low | â‚¹5 crore |
-| **Treasury Bills (T-Bills)** | 91, 182, 364 days | Government (RBI) | Risk-free | â‚¹25,000 |
-| **Commercial Paper (CP)** | 7 days to 1 year | Corporates | Medium | â‚¹5 lakh |
-| **Certificate of Deposit (CD)** | 7 days to 1 year | Banks/FIs | Low-Medium | â‚¹5 lakh |
-| **Repo/Reverse Repo** | Overnight to 14 days | Banks/RBI | Low | â‚¹5 crore |
+| **Call Money** | 1 day to 14 days | Banks | Low | ₹5 crore |
+| **Notice Money** | 2 to 14 days | Banks | Low | ₹5 crore |
+| **Term Money** | 15 days to 1 year | Banks | Low | ₹5 crore |
+| **Treasury Bills (T-Bills)** | 91, 182, 364 days | Government (RBI) | Risk-free | ₹25,000 |
+| **Commercial Paper (CP)** | 7 days to 1 year | Corporates | Medium | ₹5 lakh |
+| **Certificate of Deposit (CD)** | 7 days to 1 year | Banks/FIs | Low-Medium | ₹5 lakh |
+| **Repo/Reverse Repo** | Overnight to 14 days | Banks/RBI | Low | ₹5 crore |
 
 **Treasury Bills:**
 - Issued by RBI on behalf of the Government of India
 - Sold through **auction** (competitive and non-competitive bidding)
-- **Zero-coupon** instruments â€” issued at discount, redeemed at face value
-- **T-bill yield calculation:** `Yield = (Face Value - Issue Price) / Issue Price Ã— (365 / Maturity Days) Ã— 100`
+- **Zero-coupon** instruments — issued at discount, redeemed at face value
+- **T-bill yield calculation:** `Yield = (Face Value - Issue Price) / Issue Price × (365 / Maturity Days) × 100`
 
 **Commercial Paper:**
 - Unsecured, short-term promissory note issued by **high-rated corporates**
@@ -233,8 +233,8 @@ Ownership instruments representing a claim on the company's assets and profits.
 |---------|-------------|
 | Ownership | Shareholders are part-owners of the company |
 | Voting rights | Yes (one vote per share) |
-| Dividend | Not guaranteed â€” depends on profits and board decision |
-| Risk | Highest â€” last claim in liquidation |
+| Dividend | Not guaranteed — depends on profits and board decision |
+| Risk | Highest — last claim in liquidation |
 | Return | Capital appreciation + dividends |
 
 #### B. Preference Shares
@@ -262,8 +262,8 @@ Debt instruments where the issuer borrows from investors and pays periodic inter
 | Maturity | Short to long term | Medium to long term |
 
 **Types of bonds in India:**
-- **Government Securities (G-Secs):** Issued by Central/State governments â€” risk-free
-- **Corporate Bonds:** Issued by companies â€” credit rated
+- **Government Securities (G-Secs):** Issued by Central/State governments — risk-free
+- **Corporate Bonds:** Issued by companies — credit rated
 - **Tax-free Bonds:** Interest income is tax-free (e.g., NHAI, PFC, IRFC bonds)
 - **Zero Coupon Bonds:** Issued at discount, redeemed at par
 - **Floating Rate Bonds:** Coupon linked to a benchmark rate (T-bill yield, etc.)
@@ -296,10 +296,10 @@ Financial contracts whose value is derived from an **underlying asset** (stock, 
 | Out-of-the-Money (OTM) | Option has no intrinsic value |
 
 **Derivative exchanges in India:**
-- **NSE** â€” NIFTY and stock futures/options
-- **BSE** â€” SENSEX and stock derivatives
-- **MCX** â€” Commodity derivatives
-- **NCDEX** â€” Agricultural commodity derivatives
+- **NSE** — NIFTY and stock futures/options
+- **BSE** — SENSEX and stock derivatives
+- **MCX** — Commodity derivatives
+- **NCDEX** — Agricultural commodity derivatives
 
 ### 3.6 Mutual Funds
 
@@ -335,9 +335,9 @@ flowchart TD
 
 | Term | Definition |
 |------|------------|
-| **NAV (Net Asset Value)** | Per-unit market value of the fund's assets (Assets â€” Liabilities) / Units outstanding |
+| **NAV (Net Asset Value)** | Per-unit market value of the fund's assets (Assets — Liabilities) / Units outstanding |
 | **AUM (Assets Under Management)** | Total market value of assets managed by the fund |
-| **Expense Ratio** | Annual fee charged by AMC as % of AUM (capped by SEBI: 1.05â€“2.25%) |
+| **Expense Ratio** | Annual fee charged by AMC as % of AUM (capped by SEBI: 1.05–2.25%) |
 | **Load** | Entry/Exit fee (SEBI banned entry load in 2009) |
 | **SIP (Systematic Investment Plan)** | Fixed periodic investment in a mutual fund |
 | **SWP (Systematic Withdrawal Plan)** | Periodic withdrawal of fixed amount |
@@ -355,7 +355,7 @@ Established in **1999** under the IRDA Act, 1999. Headquarters in **Hyderabad**.
 |--------|---------|
 | Life Insurance | LIC (public), 24 private players |
 | General Insurance | Public (4 companies) + Private + Standalone health insurers |
-| IRDA Act | 1999 â€” established IRDA as regulator |
+| IRDA Act | 1999 — established IRDA as regulator |
 | Insurance penetration | ~4% of GDP (life ~3%, non-life ~1%) |
 
 **Types of insurance:**
@@ -374,7 +374,7 @@ Established in **1999** under the IRDA Act, 1999. Headquarters in **Hyderabad**.
 - **REITs** (Real Estate Investment Trusts) and **InvITs** (Infrastructure Investment Trusts) introduced from 2019
 - **T+1 settlement** introduced in January 2023 (shortened from T+2)
 - **Same-day settlement (T+0)** optional for select scrips since 2024
-- **SEBI's ASBA (Application Supported by Blocked Amount)** â€” mandate for IPO applications since 2016
+- **SEBI's ASBA (Application Supported by Blocked Amount)** — mandate for IPO applications since 2016
 - **UPI-based IPO applications** introduced in 2018
 - **Social Stock Exchange** (SSE) launched by SEBI in 2023 for social enterprises
 - **FDI in insurance** raised to 74% in 2021
@@ -443,7 +443,7 @@ a) Equity shares b) Commercial Paper c) Debentures d) Preference shares
 <summary>Answer</summary>
 **Answer:** b) Commercial Paper
 
-Money market instruments have maturity â‰¤ 1 year. CP is a short-term unsecured promissory note issued by corporates. Equity shares, debentures, and preference shares are capital market instruments.
+Money market instruments have maturity ≤ 1 year. CP is a short-term unsecured promissory note issued by corporates. Equity shares, debentures, and preference shares are capital market instruments.
 </details>
 
 ---
@@ -536,7 +536,7 @@ a) Net Asset Value b) National Asset Value c) Net Accrued Value d) Non-Asset Val
 <summary>Answer</summary>
 **Answer:** a) Net Asset Value
 
-NAV = (Market value of assets â€” Liabilities) / Number of outstanding units. It represents the per-unit market value of the mutual fund scheme.
+NAV = (Market value of assets — Liabilities) / Number of outstanding units. It represents the per-unit market value of the mutual fund scheme.
 </details>
 
 ---
@@ -581,8 +581,8 @@ function calculateOptionPayoff(
 }
 
 const call = calculateOptionPayoff('Call', 25000, 25800, 350);
-console.log(`Call Buyer Payoff: â‚¹${call.buyPayoff} (ITM: ${call.isITM})`);
-// Output: Call Buyer Payoff: â‚¹450 (ITM: true)
+console.log(`Call Buyer Payoff: ₹${call.buyPayoff} (ITM: ${call.isITM})`);
+// Output: Call Buyer Payoff: ₹450 (ITM: true)
 ```
 
 **Q7.** In an options contract, the buyer of a **Call Option** has the:
@@ -675,8 +675,8 @@ function calculateSIP(
 }
 
 const sip = calculateSIP(10000, 12, 120);
-console.log(`Invested: â‚¹${sip.totalInvestment}, Final Value: â‚¹${sip.totalValue}, Returns: â‚¹${sip.totalReturns}`);
-// Output: Invested: â‚¹1200000, Final Value: â‚¹2295297, Returns: â‚¹1095297
+console.log(`Invested: ₹${sip.totalInvestment}, Final Value: ₹${sip.totalValue}, Returns: ₹${sip.totalReturns}`);
+// Output: Invested: ₹1200000, Final Value: ₹2295297, Returns: ₹1095297
 ```
 
 **Q11.** What is the full form of IRDA?
@@ -789,8 +789,8 @@ function calculateTradeProfit(
 }
 
 const trade = calculateTradeProfit(150, 165, 100, 0.5, 0.1);
-console.log(`Profit: â‚¹${trade.netProfit}, Return: ${trade.returnPercent}%`);
-// Output: Profit: â‚¹1327.5, Return: 8.85%
+console.log(`Profit: ₹${trade.netProfit}, Return: ${trade.returnPercent}%`);
+// Output: Profit: ₹1327.5, Return: 8.85%
 ```
 
 **Q16.** Which of the following is an example of a derivative traded on Indian stock exchanges?
@@ -808,13 +808,13 @@ NIFTY Futures are exchange-traded derivative contracts based on the NIFTY 50 ind
 
 **Q17.** Under SEBI's ICDR regulations, what is the retail category in an IPO?
 
-a) Applications up to â‚¹50,000 b) Applications up to â‚¹2,00,000 c) Applications up to â‚¹5,00,000 d) Applications up to â‚¹10,00,000
+a) Applications up to ₹50,000 b) Applications up to ₹2,00,000 c) Applications up to ₹5,00,000 d) Applications up to ₹10,00,000
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) Applications up to â‚¹2,00,000
+**Answer:** b) Applications up to ₹2,00,000
 
-Retail Individual Investors (RIIs) are defined as investors applying for shares with a total value of up to â‚¹2,00,000 in an IPO. This category gets 35% reservation.
+Retail Individual Investors (RIIs) are defined as investors applying for shares with a total value of up to ₹2,00,000 in an IPO. This category gets 35% reservation.
 </details>
 
 ---
@@ -892,16 +892,16 @@ MCX (Multi Commodity Exchange) and NCDEX (National Commodity & Derivatives Excha
 
 **Q23.** What is the minimum transaction amount for RTGS?
 
-a) â‚¹1
-b) â‚¹50,000
-c) â‚¹1,00,000
-d) â‚¹2,00,000
+a) ₹1
+b) ₹50,000
+c) ₹1,00,000
+d) ₹2,00,000
 
 <details>
 <summary>Answer</summary>
-**Answer:** d) â‚¹2,00,000
+**Answer:** d) ₹2,00,000
 
-RTGS (Real Time Gross Settlement) requires a minimum transaction amount of â‚¹2 lakh. NEFT has no minimum limit. IMPS has a maximum of â‚¹5 lakh per transaction.
+RTGS (Real Time Gross Settlement) requires a minimum transaction amount of ₹2 lakh. NEFT has no minimum limit. IMPS has a maximum of ₹5 lakh per transaction.
 </details>
 
 ---
@@ -922,7 +922,7 @@ Since September 2015, SEBI regulates the commodity derivatives market in India, 
 
 ---
 
-**Q25.** A bond with a face value of â‚¹100, coupon rate of 8%, and market price of â‚¹90 will have a current yield of approximately:
+**Q25.** A bond with a face value of ₹100, coupon rate of 8%, and market price of ₹90 will have a current yield of approximately:
 
 a) 7.2%
 b) 8.0%
@@ -933,7 +933,7 @@ d) 10.0%
 <summary>Answer</summary>
 **Answer:** c) 8.9%
 
-Current Yield = (Annual Coupon / Market Price) Ã— 100 = (8 / 90) Ã— 100 = 8.89%. Since the bond is trading at a discount (< face value), the current yield exceeds the coupon rate.
+Current Yield = (Annual Coupon / Market Price) × 100 = (8 / 90) × 100 = 8.89%. Since the bond is trading at a discount (< face value), the current yield exceeds the coupon rate.
 </details>
 
 ---
@@ -1013,7 +1013,7 @@ d) Sovereign Gold Bond
 <summary>Answer</summary>
 **Answer:** c) Treasury Bill
 
-T-Bills are zero-coupon instruments â€” issued at a discount to face value and redeemed at par with no periodic interest payments. G-Secs, corporate bonds, and SGBs pay periodic coupon interest.
+T-Bills are zero-coupon instruments — issued at a discount to face value and redeemed at par with no periodic interest payments. G-Secs, corporate bonds, and SGBs pay periodic coupon interest.
 </details>
 
 ---
@@ -1068,27 +1068,27 @@ const portfolio = analysePortfolio([
   { symbol: "HDFCBANK", quantity: 100, buyPrice: 1450, currentPrice: 1620 },
 ]);
 
-console.log(`Invested: â‚¹${portfolio.totalInvestment}, Value: â‚¹${portfolio.currentValue}`);
-console.log(`P&L: â‚¹${portfolio.totalPL} (${portfolio.totalReturnPercent}%)`);
-// Output: Invested: â‚¹334000, Value: â‚¹379000
-// Output: P&L: â‚¹45000 (13.47%)
+console.log(`Invested: ₹${portfolio.totalInvestment}, Value: ₹${portfolio.currentValue}`);
+console.log(`P&L: ₹${portfolio.totalPL} (${portfolio.totalReturnPercent}%)`);
+// Output: Invested: ₹334000, Value: ₹379000
+// Output: P&L: ₹45000 (13.47%)
 ```
 
 ---
 
-### 3.9 Money Market â€” Detailed Characteristics
+### 3.9 Money Market — Detailed Characteristics
 
-The money market is the market for **short-term funds** (maturity â‰¤ 1 year) with high liquidity and low risk.
+The money market is the market for **short-term funds** (maturity ≤ 1 year) with high liquidity and low risk.
 
 | Characteristic | Description |
 |----------------|-------------|
 | **Maturity** | Overnight to 1 year |
 | **Risk** | Low (especially government instruments) |
-| **Liquidity** | Very high â€” instruments can be easily sold |
+| **Liquidity** | Very high — instruments can be easily sold |
 | **Participants** | RBI, Banks, Mutual Funds, Corporates, FIIs, Insurance Companies |
 | **Regulation** | RBI (for most instruments) + SEBI (for money market mutual funds) |
 | **Purpose** | Liquidity management, short-term borrowing/lending |
-| **Minimum amount** | High denominations (â‚¹5 lakh to â‚¹5 crore) |
+| **Minimum amount** | High denominations (₹5 lakh to ₹5 crore) |
 
 ```mermaid
 flowchart TD
@@ -1114,17 +1114,17 @@ flowchart TD
     style L fill:#4CAF50,color:#fff
 ```
 
-### 3.10 IMPS â€” Immediate Payment Service
+### 3.10 IMPS — Immediate Payment Service
 
-**IMPS (Immediate Payment Service)** was launched by **NPCI** in **2010** as India's first real-time interbank electronic funds transfer system operating 24Ã—7.
+**IMPS (Immediate Payment Service)** was launched by **NPCI** in **2010** as India's first real-time interbank electronic funds transfer system operating 24×7.
 
 | Feature | IMPS | NEFT | RTGS |
 |---------|------|------|------|
 | **Launch Year** | 2010 | 2005 | 2004 |
 | **Settlement** | Real-time | Deferred (batched) | Real-time |
-| **Minimum Amount** | â‚¹1 | â‚¹1 | â‚¹2 lakh |
-| **Maximum Amount** | â‚¹5 lakh (per transaction) | No limit | No limit |
-| **Availability** | 24Ã—7 | 24Ã—7 (since Dec 2019) | 24Ã—7 (since Dec 2020) |
+| **Minimum Amount** | ₹1 | ₹1 | ₹2 lakh |
+| **Maximum Amount** | ₹5 lakh (per transaction) | No limit | No limit |
+| **Availability** | 24×7 | 24×7 (since Dec 2019) | 24×7 (since Dec 2020) |
 | **Speed** | Instant (seconds) | Up to 2 hours (batches) | Instant |
 | **Channel** | Mobile, Internet, ATM, SMS | Internet, Mobile, Branch | Internet, Branch |
 
@@ -1146,11 +1146,11 @@ Commodity markets in India are regulated by the **Securities and Exchange Board 
 - **Forward contracts:** Over-the-counter, customised
 
 **Key regulations:**
-- **Warehouse Receipts:** Negotiable instruments (after Warehousing Development and Regulatory Authority â€” WDRA registration)
-- **Options in commodities:** Permitted since 2017 â€” European-style options on select commodities
+- **Warehouse Receipts:** Negotiable instruments (after Warehousing Development and Regulatory Authority — WDRA registration)
+- **Options in commodities:** Permitted since 2017 — European-style options on select commodities
 - **Commodity indices:** MCX iCOMDEX series for benchmarking
 
-### 3.12 Bond Market â€” Deep Dive
+### 3.12 Bond Market — Deep Dive
 
 The Indian bond market is one of the largest in Asia, dominated by **Government Securities (G-Secs)** .
 
@@ -1165,7 +1165,7 @@ The Indian bond market is one of the largest in Asia, dominated by **Government 
 
 **Bond yield and price relationship:**
 ```
-Bond Price â†‘ â†’ Yield â†“ (inverse relationship)
+Bond Price ↑ → Yield ↓ (inverse relationship)
 ```
 
 **Key bond market participants:**
@@ -1174,17 +1174,17 @@ Bond Price â†‘ â†’ Yield â†“ (inverse relationship)
 - **Insurance companies and Pension Funds:** Major holders of long-term bonds
 - **Mutual Funds:** Hold for liquidity and yield
 
-### 3.13 Stock Market â€” Key Concepts
+### 3.13 Stock Market — Key Concepts
 
 | Concept | Explanation |
 |---------|-------------|
-| **Market Capitalisation** | Total market value = Share Price Ã— Outstanding Shares |
-| **Dividend Yield** | (Annual Dividend / Share Price) Ã— 100 |
-| **P/E Ratio** | Price / Earnings per Share â€” valuation metric |
+| **Market Capitalisation** | Total market value = Share Price × Outstanding Shares |
+| **Dividend Yield** | (Annual Dividend / Share Price) × 100 |
+| **P/E Ratio** | Price / Earnings per Share — valuation metric |
 | **Book Value** | Net Assets / Outstanding Shares |
 | **Earnings Per Share (EPS)** | Net Profit / Outstanding Shares |
-| **Market Order** | Buy/sell at current market price â€” immediate execution |
-| **Limit Order** | Buy/sell at specified price â€” may not execute |
+| **Market Order** | Buy/sell at current market price — immediate execution |
+| **Limit Order** | Buy/sell at specified price — may not execute |
 | **Stop Loss** | Triggers market order when price crosses a threshold |
 | **Circuit Breaker** | Trading halt when index moves beyond preset limits (10%, 15%, 20%) |
 
@@ -1258,7 +1258,7 @@ const bondPortfolio = analyseBondPortfolio([
   { faceValue: 100, couponRate: 6.8, marketPrice: 95, maturityYears: 3, quantity: 200 },
 ]);
 
-console.log(`Investment: â‚¹${bondPortfolio.totalInvestment}, Annual Income: â‚¹${bondPortfolio.annualIncome}`);
+console.log(`Investment: ₹${bondPortfolio.totalInvestment}, Annual Income: ₹${bondPortfolio.annualIncome}`);
 console.log(`Avg Coupon: ${bondPortfolio.weightedAverageCoupon}%, Avg YTM: ${bondPortfolio.weightedAverageYTM}%`);
 ```
 
@@ -1267,7 +1267,7 @@ console.log(`Avg Coupon: ${bondPortfolio.weightedAverageCoupon}%, Avg YTM: ${bon
 ## Summary
 
 - **Capital market** deals in long-term securities through the primary (IPO/FPO) and secondary (stock exchanges) markets.
-- **Money market** instruments (Call Money, T-Bills, CP, CD) have maturity â‰¤ 1 year and are used for short-term liquidity management.
+- **Money market** instruments (Call Money, T-Bills, CP, CD) have maturity ≤ 1 year and are used for short-term liquidity management.
 - **SEBI** is the securities market regulator, established in 1988 and given statutory status in 1992. Key functions include regulating intermediaries, prohibiting insider trading, and investor protection.
 - **Financial instruments** include equity shares (ownership), preference shares (hybrid), bonds/debentures (debt), and derivatives (futures, options, swaps).
 - **BSE** (established 1875) is Asia's oldest stock exchange; **NSE** (established 1992) is India's largest by trading volume.
@@ -1284,7 +1284,7 @@ console.log(`Avg Coupon: ${bondPortfolio.weightedAverageCoupon}%, Avg YTM: ${bon
 |------------|----------|----------------|
 | SEBI Established / Statutory | 1988 / 1992 | "SEBI started in '88, got power in '92" |
 | IPO Allocation | QIB 50% / NII 15% / RII 35% | "QIB = Half (50), RII = 35, Rest = NII 15" |
-| Money Market | â‰¤ 1 year | "Money = Short (1 year max)" |
+| Money Market | ≤ 1 year | "Money = Short (1 year max)" |
 | T-Bill Maturities | 91, 182, 364 days | "3 months, 6 months, 12 months" |
 | IRDA Year | 1999 | "IRDA = 1999 (just before 2000)" |
 | NSE / BSE | NSE = 1992, BSE = 1875 | "NSE New (1992), BSE Old (1875)" |
@@ -1387,7 +1387,7 @@ IRDA mandates that all insurance companies maintain a minimum solvency margin of
    a) 91 days b) 182 days c) 364 days d) 2 years
 
 5. In an IPO, what is the retail investor application limit?
-   a) â‚¹50,000 b) â‚¹1,00,000 c) â‚¹2,00,000 d) â‚¹5,00,000
+   a) ₹50,000 b) ₹1,00,000 c) ₹2,00,000 d) ₹5,00,000
 
 6. SEBI headquarters is located in:
    a) New Delhi b) Mumbai c) Kolkata d) Hyderabad
@@ -1417,7 +1417,7 @@ IRDA mandates that all insurance companies maintain a minimum solvency margin of
 19. The SEBI regulation that governs insider trading is PIT which stands for _________.
 20. A _________ fund is a mutual fund scheme where units can be bought or sold at any time at prevailing NAV.
 21. IMPS was launched by _________ in 2010.
-22. The minimum transaction amount for RTGS is â‚¹_________ lakh.
+22. The minimum transaction amount for RTGS is ₹_________ lakh.
 23. MCX stands for _________.
 24. MMID is a _________ digit code used in IMPS transactions.
 25. According to SEBI classification, companies ranked 101st to 250th by market cap are classified as _________.
@@ -1446,15 +1446,15 @@ IRDA mandates that all insurance companies maintain a minimum solvency margin of
 |---|--------|---|--------|---|--------|---|--------|---|--------|
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
-| 1 | b (1875) | 2 | b (National Stock Exchange Fifty) | 3 | b (Option) | 4 | c (364 days) | 5 | c (â‚¹2,00,000) |
+| 1 | b (1875) | 2 | b (National Stock Exchange Fifty) | 3 | b (Option) | 4 | c (364 days) | 5 | c (₹2,00,000) |
 | 6 | b (Mumbai) | 7 | c (Conducting monetary policy) | 8 | b (9:15 AM to 3:30 PM) | 9 | c (Government Securities) | 10 | c (Hyderabad) |
 | 11 | Application Supported by Blocked Amount | 12 | Strike | 13 | Book Building | 14 | 2.25% | 15 | Zero-coupon |
 | 16 | Money | 17 | NSE Indices Ltd (formerly IISL) | 18 | Option premium | 19 | Prohibition of Insider Trading | 20 | Open-ended |
 | 21 | NPCI | 22 | 2 | 23 | Multi Commodity Exchange | 24 | 7 | 25 | Mid Cap |
 | 26 | False (1988) | 27 | False (zero-coupon) | 28 | False (right to buy) | 29 | True | 30 | True |
 | 31 | True | 32 | False (unsecured) | 33 | True | 34 | False (T+1) | 35 | False (debentures are usually unsecured) |
-| 36 | True | 37 | False (inverse) | 38 | False (BSE 1875, NSE 1992) | 39 | True | 40 | False (24Ã—7) |
+| 36 | True | 37 | False (inverse) | 38 | False (BSE 1875, NSE 1992) | 39 | True | 40 | False (24×7) |
 
 ---
 
-*Proceed to Chapter 4 â€” Government Schemes & Union Budget*
+*Proceed to Chapter 4 — Government Schemes & Union Budget*

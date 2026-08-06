@@ -1,4 +1,4 @@
-﻿
+
 # Chapter 13: Computer Vision
 
 **Previous:** [Chapter 12: Natural Language Processing](12-nlp.md) | **Next:** [Chapter 14: Robotics](14-robotics.md)
@@ -38,9 +38,9 @@ By the conclusion of this chapter, the student will be able to:
 
 ## Why Computer Vision Matters
 
-**Real-World Analogy â†’ How Humans See vs How Machines "See"**
+**Real-World Analogy → How Humans See vs How Machines "See"**
 
-When you look at a photograph, your brain performs an extraordinary sequence of operations in milliseconds: your retinas capture photons, the optic nerve transmits electrical signals to the primary visual cortex (V1), which detects edges and orientations. Higher cortical areas (V2, V4, IT) progressively assemble these edges into contours, shapes, and finally object identities. You don't "see" pixels â†’ you see meaning.
+When you look at a photograph, your brain performs an extraordinary sequence of operations in milliseconds: your retinas capture photons, the optic nerve transmits electrical signals to the primary visual cortex (V1), which detects edges and orientations. Higher cortical areas (V2, V4, IT) progressively assemble these edges into contours, shapes, and finally object identities. You don't "see" pixels → you see meaning.
 
 Computer vision mimics this biological pipeline using mathematics and software:
 
@@ -52,13 +52,13 @@ Computer vision mimics this biological pipeline using mathematics and software:
 | IT cortex recognizes objects | CNN classifiers + object detectors |
 | Visual memory recalls past objects | Training data + learned weights |
 
-Without computer vision, self-driving cars would be blind, medical X-rays would require purely manual review, smartphone face unlock would be impossible, and augmented reality filters would have nothing to track. CV transforms unstructured pixel data into structured understanding â†’ enabling machines to interpret the visual world as humans do, but at scales and speeds no human can match.
+Without computer vision, self-driving cars would be blind, medical X-rays would require purely manual review, smartphone face unlock would be impossible, and augmented reality filters would have nothing to track. CV transforms unstructured pixel data into structured understanding → enabling machines to interpret the visual world as humans do, but at scales and speeds no human can match.
 
 ## Chapter at a Glance
 
 | Section | Key Topics | Key Terms |
 |---------|-----------|-----------|
-| Image Representation | Pixels, color spaces, tensors | RGB, grayscale, HÃƒâ€”WÃƒâ€”3, normalization |
+| Image Representation | Pixels, color spaces, tensors | RGB, grayscale, H×W×3, normalization |
 | Filtering | Convolution, Gaussian, Sobel, median | Kernel, stride, padding, blur |
 | Edge Detection | Canny, gradient, non-max suppression | Hysteresis, gradient magnitude |
 | Feature Extraction | SIFT, HOG, ORB | Keypoints, descriptors, scale-invariant |
@@ -94,9 +94,9 @@ flowchart LR
 
 ## 13.1 Image Representation
 
-**Real-World Analogy â†’ Digital Images as Number Grids**
+**Real-World Analogy → Digital Images as Number Grids**
 
-Think of a grayscale image as a spreadsheet where each cell holds a number between 0 (pure black) and 255 (pure white). A 4Ãƒâ€”4 grayscale image is simply a 4Ãƒâ€”4 grid of integers. A color image is three such spreadsheets stacked â†’ one for red, one for green, one for blue. Computer vision algorithms are mathematical operations performed on these number grids.
+Think of a grayscale image as a spreadsheet where each cell holds a number between 0 (pure black) and 255 (pure white). A 4×4 grayscale image is simply a 4×4 grid of integers. A color image is three such spreadsheets stacked → one for red, one for green, one for blue. Computer vision algorithms are mathematical operations performed on these number grids.
 
 ### 13.1.1 Pixels and Color Spaces
 
@@ -134,32 +134,32 @@ In deep learning frameworks, images are represented as tensors:
 **Step 2:** Decode into pixel matrix.
 **Step 3:** Determine shape (height, width, channels).
 **Step 4:** Access specific pixel value at $(x, y)$.
-**Step 5:** Convert between color spaces (RGB â†’ Grayscale).
+**Step 5:** Convert between color spaces (RGB → Grayscale).
 **Step 6:** Normalize pixel values to $[0, 1]$.
 
 **Pseudocode:**
 ```
 FUNCTION load_image(path):
-    img â† read_file(path)
-    pixels â† decode_to_matrix(img)
-    height, width, channels â† pixels.shape
-    PRINT "Image size:", width, "Ãƒâ€”", height, ", channels:", channels
-    pixel_val â† pixels[y, x]        // Access pixel at (x, y)
-    gray â† rgb_to_grayscale(pixels) // Weighted sum: 0.299R + 0.587G + 0.114B
-    normalized â† gray / 255.0       // Scale to [0, 1]
+    img ← read_file(path)
+    pixels ← decode_to_matrix(img)
+    height, width, channels ← pixels.shape
+    PRINT "Image size:", width, "×", height, ", channels:", channels
+    pixel_val ← pixels[y, x]        // Access pixel at (x, y)
+    gray ← rgb_to_grayscale(pixels) // Weighted sum: 0.299R + 0.587G + 0.114B
+    normalized ← gray / 255.0       // Scale to [0, 1]
     RETURN normalized
 END FUNCTION
 ```
 
-**Dry Run Trace (4Ãƒâ€”4 Grayscale Image):**
+**Dry Run Trace (4×4 Grayscale Image):**
 
-| Step | Operation | Pixel Grid (4Ãƒâ€”4) |
+| Step | Operation | Pixel Grid (4×4) |
 |------|-----------|-------------------|
 | 0 | Raw pixels | `[[200, 210, 180, 50], [190, 205, 170, 45], [30, 35, 28, 10], [25, 30, 20, 8]]` |
 | 1 | Read shape | height=4, width=4, channels=1 |
 | 2 | Access (1,2) | I(1,2) = 170 |
 | 3 | To grayscale (already gray) | same grid |
-| 4 | Normalize ÃƒÂ·255 | `[[0.784, 0.824, 0.706, 0.196], [0.745, 0.804, 0.667, 0.176], [0.118, 0.137, 0.110, 0.039], [0.098, 0.118, 0.078, 0.031]]` |
+| 4 | Normalize ÷255 | `[[0.784, 0.824, 0.706, 0.196], [0.745, 0.804, 0.667, 0.176], [0.118, 0.137, 0.110, 0.039], [0.098, 0.118, 0.078, 0.031]]` |
 
 ### 13.1.4 Python Implementation
 
@@ -170,11 +170,11 @@ import numpy as np
 
 # Read image
 img = cv2.imread('input.jpg')                    # Shape: (H, W, 3) BGR
-img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)    # Convert BGR â†’ RGB
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)    # Convert BGR → RGB
 
 # Inspect properties
 h, w, c = img_rgb.shape
-print(f'Dimensions: {w}Ãƒâ€”{h}, Channels: {c}')
+print(f'Dimensions: {w}×{h}, Channels: {c}')
 
 # Access pixel at row=100, col=200
 pixel = img_rgb[100, 200]                          # [R, G, B] values
@@ -204,7 +204,7 @@ print(f'Pixel (100,200): {pixel}, Normalized range: [{gray_norm.min():.3f}, {gra
 | Advantages | Disadvantages |
 |------------|--------------|
 | Simple matrix representation works with standard linear algebra | No semantic meaning captured (just raw intensities) |
-| Multiple color spaces available for different tasks | RGB is highly correlated â†’ not optimal for all algorithms |
+| Multiple color spaces available for different tasks | RGB is highly correlated → not optimal for all algorithms |
 | Tensor format integrates directly with deep learning frameworks | Large images (4K, 8K) require significant memory ($H \times W \times C \times 4$ bytes) |
 | Hardware-agnostic (CPU, GPU, TPU all process arrays) | Sensitive to lighting changes at raw pixel level |
 
@@ -222,9 +222,9 @@ print(f'Pixel (100,200): {pixel}, Normalized range: [{gray_norm.min():.3f}, {gra
 
 ## 13.2 Image Filtering
 
-**Real-World Analogy â†’ Smoothing a Rough Surface**
+**Real-World Analogy → Smoothing a Rough Surface**
 
-Imagine running your hand over a rough wooden table. If you press hard and move slowly, your hand glides over the surface â†’ the fine bumps average out. This is a low-pass filter: high-frequency details (bumps) are removed, leaving the smooth overall shape. If you instead trace the edges of the table with your fingernail, you feel the sharp boundary where the table ends â†’ this is a high-pass filter, emphasizing rapid changes (edges).
+Imagine running your hand over a rough wooden table. If you press hard and move slowly, your hand glides over the surface → the fine bumps average out. This is a low-pass filter: high-frequency details (bumps) are removed, leaving the smooth overall shape. If you instead trace the edges of the table with your fingernail, you feel the sharp boundary where the table ends → this is a high-pass filter, emphasizing rapid changes (edges).
 
 Image filtering applies a small matrix called a **kernel** (or filter) across every pixel of the image. The kernel defines how each pixel's new value is computed from its neighbors.
 
@@ -240,29 +240,29 @@ where $a = \lfloor k/2 \rfloor$ and $b = \lfloor k/2 \rfloor$.
 ### 13.2.2 Algorithm: 2D Convolution
 
 
-**Step 1:** Define kernel $K$ (e.g., 3Ãƒâ€”3 Gaussian blur kernel).
-**Step 2:** Flip kernel 180Ã‚Â° (convolution requires kernel reversal; correlation does not).
+**Step 1:** Define kernel $K$ (e.g., 3×3 Gaussian blur kernel).
+**Step 2:** Flip kernel 180° (convolution requires kernel reversal; correlation does not).
 **Step 3:** Slide kernel over every pixel position in the input image.
 **Step 4:** At each position, multiply kernel values with overlapping pixel values.
-**Step 5:** Sum all products â†’ output pixel value.
+**Step 5:** Sum all products → output pixel value.
 **Step 6:** Handle borders via padding (zero, replicate, reflect) or truncation.
 
 **Pseudocode:**
 ```
 FUNCTION convolve2d(image[1..H][1..W], kernel[1..k][1..k]):
-    pad â† floor(k / 2)
-    padded â† ZERO_PAD(image, pad)     // Add border of zeros
-    output â† new_array[H][W]
+    pad ← floor(k / 2)
+    padded ← ZERO_PAD(image, pad)     // Add border of zeros
+    output ← new_array[H][W]
 
-    FOR y â† 1 TO H:
-        FOR x â† 1 TO W:
-            sum â† 0
-            FOR i â† 1 TO k:
-                FOR j â† 1 TO k:
-                    sum â† sum + padded[y + i - 1][x + j - 1] * kernel[i][j]
+    FOR y ← 1 TO H:
+        FOR x ← 1 TO W:
+            sum ← 0
+            FOR i ← 1 TO k:
+                FOR j ← 1 TO k:
+                    sum ← sum + padded[y + i - 1][x + j - 1] * kernel[i][j]
                 END FOR
             END FOR
-            output[y][x] â† sum
+            output[y][x] ← sum
         END FOR
     END FOR
 
@@ -270,17 +270,17 @@ FUNCTION convolve2d(image[1..H][1..W], kernel[1..k][1..k]):
 END FUNCTION
 ```
 
-**Dry Run Trace â†’ 3Ãƒâ€”3 Image, 2Ãƒâ€”2 Kernel (No Padding):**
+**Dry Run Trace → 3×3 Image, 2×2 Kernel (No Padding):**
 
 | Step | Region | Computation | Result |
 |------|--------|-------------|--------|
-| Input image (3Ãƒâ€”3) | All pixels | `[[5, 3, 1], [2, 8, 4], [7, 6, 9]]` | â†’ |
-| Kernel (2Ãƒâ€”2) | â†’ | `[[1, 0], [0, -1]]` | â†’ |
-| (1,1) | Top-left 2Ãƒâ€”2 | 5Ãƒâ€”1 + 3Ãƒâ€”0 + 2Ãƒâ€”0 + 8Ãƒâ€”(-1) = 5 - 8 | **-3** |
-| (1,2) | Top-right 2Ãƒâ€”2 | 3Ãƒâ€”1 + 1Ãƒâ€”0 + 8Ãƒâ€”0 + 4Ãƒâ€”(-1) = 3 - 4 | **-1** |
-| (2,1) | Bottom-left 2Ãƒâ€”2 | 2Ãƒâ€”1 + 8Ãƒâ€”0 + 7Ãƒâ€”0 + 6Ãƒâ€”(-1) = 2 - 6 | **-4** |
-| (2,2) | Bottom-right 2Ãƒâ€”2 | 8Ãƒâ€”1 + 4Ãƒâ€”0 + 6Ãƒâ€”0 + 9Ãƒâ€”(-1) = 8 - 9 | **-1** |
-| Output (2Ãƒâ€”2) | â†’ | `[[-3, -1], [-4, -1]]` | Edge-enhanced |
+| Input image (3×3) | All pixels | `[[5, 3, 1], [2, 8, 4], [7, 6, 9]]` | → |
+| Kernel (2×2) | → | `[[1, 0], [0, -1]]` | → |
+| (1,1) | Top-left 2×2 | 5×1 + 3×0 + 2×0 + 8×(-1) = 5 - 8 | **-3** |
+| (1,2) | Top-right 2×2 | 3×1 + 1×0 + 8×0 + 4×(-1) = 3 - 4 | **-1** |
+| (2,1) | Bottom-left 2×2 | 2×1 + 8×0 + 7×0 + 6×(-1) = 2 - 6 | **-4** |
+| (2,2) | Bottom-right 2×2 | 8×1 + 4×0 + 6×0 + 9×(-1) = 8 - 9 | **-1** |
+| Output (2×2) | → | `[[-3, -1], [-4, -1]]` | Edge-enhanced |
 
 ### 13.2.3 Common Filters
 
@@ -290,9 +290,9 @@ END FUNCTION
 | **Gaussian Blur** | $\frac{1}{16}\begin{bmatrix}1&2&1\\2&4&2\\1&2&1\end{bmatrix}$ | Smooths noise, removes high frequencies |
 | **Sobel X** | $\begin{bmatrix}-1&0&1\\-2&0&2\\-1&0&1\end{bmatrix}$ | Vertical edge detection |
 | **Sobel Y** | $\begin{bmatrix}-1&-2&-1\\0&0&0\\1&2&1\end{bmatrix}$ | Horizontal edge detection |
-| **Laplacian** | $\begin{bmatrix}0&-1&0\\-1&4&-1\\0&-1&0\end{bmatrix}$ | Second derivative â†’ detects edges in all directions |
+| **Laplacian** | $\begin{bmatrix}0&-1&0\\-1&4&-1\\0&-1&0\end{bmatrix}$ | Second derivative → detects edges in all directions |
 | **Sharpen** | $\begin{bmatrix}0&-1&0\\-1&5&-1\\0&-1&0\end{bmatrix}$ | Amplifies high frequencies |
-| **Median** | â†’ (non-linear) | Replaces pixel with median of neighbors; excellent for salt-and-pepper noise |
+| **Median** | → (non-linear) | Replaces pixel with median of neighbors; excellent for salt-and-pepper noise |
 
 ### 13.2.4 Python Implementation
 
@@ -305,7 +305,7 @@ import numpy as np
 img = cv2.imread('input.jpg', cv2.IMREAD_GRAYSCALE)
 gaussian = cv2.GaussianBlur(img, (5, 5), sigmaX=1.5)
 
-# ===== Manual 3Ãƒâ€”3 Convolution =====
+# ===== Manual 3×3 Convolution =====
 def convolve_manual(image, kernel):
     k_h, k_w = kernel.shape
     pad_h, pad_w = k_h // 2, k_w // 2
@@ -323,7 +323,7 @@ sobel_x = np.array([[-1, 0, 1],
 edges_x = convolve_manual(img, sobel_x)
 
 # ===== Median Filter =====
-median = cv2.medianBlur(img, 5)            # 5Ãƒâ€”5 kernel â†’ removes salt-and-pepper
+median = cv2.medianBlur(img, 5)            # 5×5 kernel → removes salt-and-pepper
 
 # ===== Sharpening =====
 sharpen_k = np.array([[0, -1, 0],
@@ -346,7 +346,7 @@ cv2.destroyAllWindows()
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|----------------|------------------|-----|
 | Convolution (naive) | $O(H \times W \times k^2)$ | $O(H \times W)$ | Every pixel requires $k^2$ multiply-adds |
-| Gaussian blur (separable) | $O(H \times W \times k)$ | $O(H \times W)$ | 2D Gaussian = 1D horizontal Ãƒâ€” 1D vertical; $k$ vs $k^2$ |
+| Gaussian blur (separable) | $O(H \times W \times k)$ | $O(H \times W)$ | 2D Gaussian = 1D horizontal × 1D vertical; $k$ vs $k^2$ |
 | Median filter | $O(H \times W \times k^2 \log k)$ | $O(k^2)$ per pixel | Sorting the window requires $k^2 \log k$ comparisons |
 | FFT-based convolution | $O(HW \log HW)$ | $O(HW)$ | FFT converts spatial convolution to frequency-domain multiplication |
 
@@ -376,9 +376,9 @@ cv2.destroyAllWindows()
 
 ## 13.3 Edge Detection
 
-**Real-World Analogy â†’ Finding the Outline in a Coloring Book**
+**Real-World Analogy → Finding the Outline in a Coloring Book**
 
-When you color inside the lines of a coloring book, you first identify the boundaries â†’ the dark lines separating one region from another. Your brain detects these boundaries by noticing sudden changes: the ink line is much darker than the paper. Edge detection algorithms do the same thing mathematically â†’ they locate pixels where image intensity changes abruptly, indicating object boundaries, surface discontinuities, or depth changes.
+When you color inside the lines of a coloring book, you first identify the boundaries → the dark lines separating one region from another. Your brain detects these boundaries by noticing sudden changes: the ink line is much darker than the paper. Edge detection algorithms do the same thing mathematically → they locate pixels where image intensity changes abruptly, indicating object boundaries, surface discontinuities, or depth changes.
 
 ### 13.3.1 Image Gradients
 
@@ -387,54 +387,54 @@ The gradient of an image $I$ at pixel $(x, y)$ is:
 
 $$\nabla I(x, y) = \begin{bmatrix} \frac{\partial I}{\partial x} \\ \frac{\partial I}{\partial y} \end{bmatrix}$$
 
-- **Gradient magnitude:** $|\nabla I| = \sqrt{(\frac{\partial I}{\partial x})^2 + (\frac{\partial I}{\partial y})^2}$ â†’ Strength of the edge.
-- **Gradient direction:** $\theta = \text{atan2}(\frac{\partial I}{\partial y}, \frac{\partial I}{\partial x})$ â†’ Orientation of the edge (perpendicular to edge direction).
+- **Gradient magnitude:** $|\nabla I| = \sqrt{(\frac{\partial I}{\partial x})^2 + (\frac{\partial I}{\partial y})^2}$ → Strength of the edge.
+- **Gradient direction:** $\theta = \text{atan2}(\frac{\partial I}{\partial y}, \frac{\partial I}{\partial x})$ → Orientation of the edge (perpendicular to edge direction).
 
 ### 13.3.2 Algorithm: Canny Edge Detector
 
 
 The Canny detector (1986) remains the gold standard for edge detection. It is a multi-stage pipeline:
 
-**Step 1 â†’ Gaussian Smoothing:** Blur the image with a Gaussian kernel to reduce noise and spurious gradients.
-**Step 2 â†’ Compute Gradients:** Apply Sobel operators to compute $G_x$ and $G_y$ (gradients in x and y directions).
-**Step 3 â†’ Compute Magnitude and Direction:** $M = \sqrt{G_x^2 + G_y^2}$, $\theta = \text{atan2}(G_y, G_x)$.
-**Step 4 â†’ Non-Maximum Suppression (NMS):** For each pixel, check if it is the maximum along the gradient direction. Keep only local maxima â†’ this thins edges to single-pixel width.
-**Step 5 â†’ Double Thresholding:** Classify each pixel as strong ($M > T_{\text{high}}$), weak ($T_{\text{low}} &lt; M \leq T_{\text{high}}$), or suppressed ($M \leq T_{\text{low}}$).
-**Step 6 â†’ Edge Tracking by Hysteresis:** Keep weak pixels only if they are connected to strong pixels. This removes weak edges from noise while preserving genuine edges that happen to have lower contrast.
+**Step 1 → Gaussian Smoothing:** Blur the image with a Gaussian kernel to reduce noise and spurious gradients.
+**Step 2 → Compute Gradients:** Apply Sobel operators to compute $G_x$ and $G_y$ (gradients in x and y directions).
+**Step 3 → Compute Magnitude and Direction:** $M = \sqrt{G_x^2 + G_y^2}$, $\theta = \text{atan2}(G_y, G_x)$.
+**Step 4 → Non-Maximum Suppression (NMS):** For each pixel, check if it is the maximum along the gradient direction. Keep only local maxima → this thins edges to single-pixel width.
+**Step 5 → Double Thresholding:** Classify each pixel as strong ($M > T_{\text{high}}$), weak ($T_{\text{low}} &lt; M \leq T_{\text{high}}$), or suppressed ($M \leq T_{\text{low}}$).
+**Step 6 → Edge Tracking by Hysteresis:** Keep weak pixels only if they are connected to strong pixels. This removes weak edges from noise while preserving genuine edges that happen to have lower contrast.
 
 **Pseudocode:**
 ```
 FUNCTION canny_edge(image, sigma, T_low, T_high):
     // Step 1: Smooth
-    blurred â† gaussian_blur(image, sigma)
+    blurred ← gaussian_blur(image, sigma)
 
     // Step 2: Compute gradients
-    Gx â† sobel_x(blurred)
-    Gy â† sobel_y(blurred)
+    Gx ← sobel_x(blurred)
+    Gy ← sobel_y(blurred)
 
     // Step 3: Magnitude and direction
-    M â† sqrt(Gx^2 + Gy^2)
-    theta â† atan2(Gy, Gx)
-    theta â† QUANTIZE(theta)              // Round to 0Ã‚Â°, 45Ã‚Â°, 90Ã‚Â°, 135Ã‚Â°
+    M ← sqrt(Gx^2 + Gy^2)
+    theta ← atan2(Gy, Gx)
+    theta ← QUANTIZE(theta)              // Round to 0°, 45°, 90°, 135°
 
     // Step 4: Non-maximum suppression
-    suppressed â† ZEROS_LIKE(M)
+    suppressed ← ZEROS_LIKE(M)
     FOR each pixel (y, x):
-        neighbors â† GET_NEIGHBORS_ALONG_GRADIENT(M, y, x, theta[y][x])
-        IF M[y][x] Ã¢â€°Â¥ max(neighbors):
-            suppressed[y][x] â† M[y][x]
+        neighbors ← GET_NEIGHBORS_ALONG_GRADIENT(M, y, x, theta[y][x])
+        IF M[y][x] ≥ max(neighbors):
+            suppressed[y][x] ← M[y][x]
         END IF
     END FOR
 
     // Step 5: Double threshold
-    strong â† suppressed > T_high
-    weak â† (suppressed > T_low) AND (suppressed Ã¢â€°Â¤ T_high)
+    strong ← suppressed > T_high
+    weak ← (suppressed > T_low) AND (suppressed ≤ T_high)
 
     // Step 6: Edge tracking by hysteresis
-    edges â† strong
+    edges ← strong
     FOR each weak pixel:
-        IF any neighbor in 3Ãƒâ€”3 is strong:
-            edges[y][x] â† True
+        IF any neighbor in 3×3 is strong:
+            edges[y][x] ← True
         END IF
     END FOR
 
@@ -442,19 +442,19 @@ FUNCTION canny_edge(image, sigma, T_low, T_high):
 END FUNCTION
 ```
 
-**Dry Run Trace â†’ 5Ãƒâ€”5 Gradient Magnitude with NMS:**
+**Dry Run Trace → 5×5 Gradient Magnitude with NMS:**
 
-Assume gradient magnitudes ($M$) and quantized directions ($\theta$) for a 5Ãƒâ€”5 region:
+Assume gradient magnitudes ($M$) and quantized directions ($\theta$) for a 5×5 region:
 
-| Step | Operation | 5Ãƒâ€”5 Grid |
+| Step | Operation | 5×5 Grid |
 |------|-----------|----------|
 | 0 | Gradient magnitude $M$ | $\begin{bmatrix} 10 & 12 & 40 & 42 & 15 \\ 15 & 18 & 95 & 88 & 20 \\ 12 & 16 & \mathbf{120} & 90 & 18 \\ 8 & 10 & 85 & 78 & 14 \\ 5 & 8 & 30 & 28 & 10 \end{bmatrix}$ |
 | 0 | Quantized $\theta$ (0=horizontal) | All pixels $\theta = 0$ (edge running N-S, gradient E-W) |
-| 1 | NMS check at (2,2)=120 | Compare with (2,1)=16 and (2,3)=90. 120 Ã¢â€°Â¥ max(16, 90) Ã¢Å“â€¦ |
-| 2 | NMS check at (2,3)=90 | Compare with (2,2)=120 and (2,4)=18. 90 &lt; 120 Ã¢ÂÅ’ â†’ suppress |
-| 3 | NMS check at (1,2)=95 | Compare with (1,1)=18 and (1,3)=88. 95 Ã¢â€°Â¥ 88 Ã¢Å“â€¦ |
+| 1 | NMS check at (2,2)=120 | Compare with (2,1)=16 and (2,3)=90. 120 ≥ max(16, 90) ✅ |
+| 2 | NMS check at (2,3)=90 | Compare with (2,2)=120 and (2,4)=18. 90 &lt; 120 ❌ → suppress |
+| 3 | NMS check at (1,2)=95 | Compare with (1,1)=18 and (1,3)=88. 95 ≥ 88 ✅ |
 | 4 | After NMS | $\begin{bmatrix} 0 & 0 & 40 & 0 & 0 \\ 0 & 0 & 95 & 0 & 0 \\ 0 & 0 & 120 & 0 & 0 \\ 0 & 0 & 85 & 0 & 0 \\ 0 & 0 & 30 & 0 & 0 \end{bmatrix}$ (single-pixel vertical edge) |
-| 5 | Double threshold: $T_{\text{low}}=50, T_{\text{high}}=100$ | Strong: 120 ($>$100). Weak: 95, 85 ($50&lt;$...$Ã¢â€°Â¤100$). Suppressed: 40, 30 |
+| 5 | Double threshold: $T_{\text{low}}=50, T_{\text{high}}=100$ | Strong: 120 ($>$100). Weak: 95, 85 ($50&lt;$...$≤100$). Suppressed: 40, 30 |
 | 6 | Hysteresis: 95 connected to 120? YES. 85 connected to 120? YES. | Final edge: 95, 120, 85 retained |
 
 ### 13.3.3 Python Implementation
@@ -488,11 +488,11 @@ def canny_from_scratch(image_path, sigma=1.0, low_thresh=50, high_thresh=100):
             if (0 <= angle < 22.5) or (157.5 <= angle <= 180):
                 n1, n2 = mag[y, x-1], mag[y, x+1]       # horizontal
             elif 22.5 <= angle < 67.5:
-                n1, n2 = mag[y-1, x+1], mag[y+1, x-1]   # 45Ã‚Â° diagonal
+                n1, n2 = mag[y-1, x+1], mag[y+1, x-1]   # 45° diagonal
             elif 67.5 <= angle < 112.5:
                 n1, n2 = mag[y-1, x], mag[y+1, x]       # vertical
             else:
-                n1, n2 = mag[y-1, x-1], mag[y+1, x+1]   # 135Ã‚Â° diagonal
+                n1, n2 = mag[y-1, x-1], mag[y+1, x+1]   # 135° diagonal
             if mag[y, x] >= n1 and mag[y, x] >= n2:
                 nms[y, x] = mag[y, x]
 
@@ -532,10 +532,10 @@ cv2.destroyAllWindows()
 | Stage | Time Complexity | Why |
 |-------|----------------|-----|
 | Gaussian blur | $O(H \times W \times k)$ | Separable 1D convolution |
-| Sobel gradients | $O(H \times W)$ | Two 3Ãƒâ€”3 convolutions |
+| Sobel gradients | $O(H \times W)$ | Two 3×3 convolutions |
 | NMS | $O(H \times W)$ | Single pass, constant neighbors |
 | Double threshold | $O(H \times W)$ | Single pass |
-| Hysteresis | $O(H \times W)$ | Single pass with 3Ãƒâ€”3 neighbor check |
+| Hysteresis | $O(H \times W)$ | Single pass with 3×3 neighbor check |
 | **Total** | **$O(H \times W \times k)$** | Dominated by Gaussian blur |
 
 ### 13.3.5 Advantages and Disadvantages
@@ -543,8 +543,8 @@ cv2.destroyAllWindows()
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Low error rate â†’ good detection of real edges | Sensitive to threshold parameters ($T_{\text{low}}$, $T_{\text{high}}$) |
-| Well-localized â†’ detected edges close to true edges | Gaussian blur may remove fine edge details |
+| Low error rate → good detection of real edges | Sensitive to threshold parameters ($T_{\text{low}}$, $T_{\text{high}}$) |
+| Well-localized → detected edges close to true edges | Gaussian blur may remove fine edge details |
 | Single-pixel edge response (NMS ensures minimal response) | Slower than simple gradient-based methods (Sobel alone) |
 | Robust to noise (Gaussian pre-filtering) | Struggles with very noisy images regardless of tuning |
 
@@ -557,13 +557,13 @@ cv2.destroyAllWindows()
 | **Texture vs edges** | Fine texture produces many spurious edges | Increase Gaussian $\sigma$ to suppress texture |
 | **Variable lighting** | Gradient magnitudes vary across the image | Use adaptive thresholding instead of fixed $T_{\text{low}}$, $T_{\text{high}}$ |
 | **Noisy images** | Gaussian smoothing may not eliminate heavy noise | Apply stronger blur; use bilateral filter for edge-preserving smoothing |
-| **Thick edges after gradient** | Sobel produces 2-3 pixel wide edges | NMS step is critical â†’ cannot be skipped |
+| **Thick edges after gradient** | Sobel produces 2-3 pixel wide edges | NMS step is critical → cannot be skipped |
 
 ## 13.4 Feature Extraction
 
-**Real-World Analogy â†’ Detecting Landmarks in a Familiar City**
+**Real-World Analogy → Detecting Landmarks in a Familiar City**
 
-When you navigate a city, you recognize locations by distinctive landmarks â†’ a tall clock tower, a curved bridge, a colorful mural. Even if the weather changes (different lighting) or you approach from a different street (different viewpoint), you recognize the landmark because its distinctive structure remains. Feature extraction in CV does the same: it identifies "interesting" points in an image that are distinctive, repeatable, and invariant to transformations.
+When you navigate a city, you recognize locations by distinctive landmarks → a tall clock tower, a curved bridge, a colorful mural. Even if the weather changes (different lighting) or you approach from a different street (different viewpoint), you recognize the landmark because its distinctive structure remains. Feature extraction in CV does the same: it identifies "interesting" points in an image that are distinctive, repeatable, and invariant to transformations.
 
 ### 13.4.1 SIFT (Scale-Invariant Feature Transform)
 
@@ -572,80 +572,80 @@ SIFT (Lowe, 2004) detects keypoints that are invariant to scale, rotation, and p
 
 **Algorithm Steps:**
 
-**Step 1 â†’ Scale-Space Construction:** Build a pyramid of progressively blurred images. For each octave, generate $S$ scales using Gaussian blur with increasing $\sigma$.
-**Step 2 â†’ Difference of Gaussian (DoG):** Subtract adjacent blurred images to approximate the Laplacian of Gaussian â†’ this highlights edges and corners at multiple scales.
-**Step 3 â†’ Keypoint Localization:** Find local extrema in the DoG pyramid. Each candidate keypoint is compared with 8 neighbors at the same scale and 9 neighbors in each adjacent scale (26 total).
-**Step 4 â†’ Keypoint Refinement:** Interpolate to sub-pixel precision. Remove low-contrast keypoints and eliminate edge responses (using Hessian ratio).
-**Step 5 â†’ Orientation Assignment:** Compute gradient magnitude and direction around each keypoint. Build a 36-bin orientation histogram. Assign the dominant orientation (peak) to the keypoint.
-**Step 6 â†’ Descriptor Computation:** Extract a $16 \times 16$ window around each keypoint, divide into $4 \times 4$ sub-blocks, compute 8-bin gradient histogram per block. Concatenate â†’ $4 \times 4 \times 8 = 128$-dimensional descriptor.
+**Step 1 → Scale-Space Construction:** Build a pyramid of progressively blurred images. For each octave, generate $S$ scales using Gaussian blur with increasing $\sigma$.
+**Step 2 → Difference of Gaussian (DoG):** Subtract adjacent blurred images to approximate the Laplacian of Gaussian → this highlights edges and corners at multiple scales.
+**Step 3 → Keypoint Localization:** Find local extrema in the DoG pyramid. Each candidate keypoint is compared with 8 neighbors at the same scale and 9 neighbors in each adjacent scale (26 total).
+**Step 4 → Keypoint Refinement:** Interpolate to sub-pixel precision. Remove low-contrast keypoints and eliminate edge responses (using Hessian ratio).
+**Step 5 → Orientation Assignment:** Compute gradient magnitude and direction around each keypoint. Build a 36-bin orientation histogram. Assign the dominant orientation (peak) to the keypoint.
+**Step 6 → Descriptor Computation:** Extract a $16 \times 16$ window around each keypoint, divide into $4 \times 4$ sub-blocks, compute 8-bin gradient histogram per block. Concatenate → $4 \times 4 \times 8 = 128$-dimensional descriptor.
 
 **Pseudocode:**
 ```
 FUNCTION sift_keypoints(image):
     // Step 1-2: Build DoG pyramid
-    pyramid â† []
-    FOR octave â† 1 TO num_octaves:
-        scale_img â† RESIZE(image, 1/2^(octave-1))
-        dog_images â† []
-        FOR s â† 1 TO num_scales:
-            blurred â† gaussian_blur(scale_img, sigma * k^(s-1))
+    pyramid ← []
+    FOR octave ← 1 TO num_octaves:
+        scale_img ← RESIZE(image, 1/2^(octave-1))
+        dog_images ← []
+        FOR s ← 1 TO num_scales:
+            blurred ← gaussian_blur(scale_img, sigma * k^(s-1))
             IF s > 1:
-                dog â† blurred - prev_blurred
+                dog ← blurred - prev_blurred
                 APPEND dog TO dog_images
-            prev_blurred â† blurred
+            prev_blurred ← blurred
         APPEND dog_images TO pyramid
 
     // Step 3: Find extrema
-    keypoints â† []
+    keypoints ← []
     FOR each dog in pyramid:
         FOR each pixel (y, x):
             IF pixel is max OR min among 26 neighbors:
                 APPEND {x, y, scale, octave} TO keypoints
 
-    // Step 4: Refine â†’ sub-pixel, remove low contrast / edges
-    keypoints â† SUB_PIXEL_REFINE(keypoints)
-    keypoints â† FILTER_CONTRAST(keypoints, min_contrast)
-    keypoints â† FILTER_EDGE(keypoints, max_ratio)
+    // Step 4: Refine → sub-pixel, remove low contrast / edges
+    keypoints ← SUB_PIXEL_REFINE(keypoints)
+    keypoints ← FILTER_CONTRAST(keypoints, min_contrast)
+    keypoints ← FILTER_EDGE(keypoints, max_ratio)
 
     // Step 5: Assign orientation
     FOR each kp in keypoints:
-        hist â† [0...35]    // 36 bins, each = 10Ã‚Â°
-        FOR each pixel in 4.5ÃÆ’ neighborhood:
-            weight â† magnitude * gaussian_weight(distance)
-            bin â† FLOOR(angle / 10)
-            hist[bin] â† hist[bin] + weight
-        kp.orientation â† MAX_BIN(hist)
+        hist ← [0...35]    // 36 bins, each = 10°
+        FOR each pixel in 4.5σ neighborhood:
+            weight ← magnitude * gaussian_weight(distance)
+            bin ← FLOOR(angle / 10)
+            hist[bin] ← hist[bin] + weight
+        kp.orientation ← MAX_BIN(hist)
 
     // Step 6: Build descriptor (128-d vector)
     FOR each kp in keypoints:
-        desc â† []
-        FOR each 4Ãƒâ€”4 sub-block in 16Ãƒâ€”16 window:
-            hist_8bin â† [0...7]
+        desc ← []
+        FOR each 4×4 sub-block in 16×16 window:
+            hist_8bin ← [0...7]
             FOR each pixel in sub-block:
-                bin â† FLOOR(angle / 45)    // 45Ã‚Â° per bin
-                hist_8bin[bin] â† hist_8bin[bin] + magnitude
+                bin ← FLOOR(angle / 45)    // 45° per bin
+                hist_8bin[bin] ← hist_8bin[bin] + magnitude
             APPEND hist_8bin TO desc
         NORMALIZE(desc)
         CLIP(desc, max_val=0.2)     // Reduce illumination effects
         NORMALIZE(desc)
-        kp.descriptor â† desc
+        kp.descriptor ← desc
 
     RETURN keypoints, descriptors   // 128-dimensional per keypoint
 END FUNCTION
 ```
 
-**Dry Run Trace â†’ Orientation Assignment for One Keypoint:**
+**Dry Run Trace → Orientation Assignment for One Keypoint:**
 
 Assume a keypoint at scale $\sigma = 1.6$ and a $4.5\sigma = 7.2$ pixel neighborhood:
 
 | Step | Operation | Values |
 |------|-----------|--------|
-| 0 | 7Ãƒâ€”7 gradient magnitudes around keypoint at (10, 10) | $\begin{bmatrix}0&2&5&8&6&3&1\\2&8&15&20&14&5&2\\5&20&40&\mathbf{50}&35&12&3\\8&25&45&55&40&15&5\\6&18&35&42&30&10&3\\3&8&12&15&10&4&1\\1&2&3&5&3&1&0\end{bmatrix}$ |
-| 0 | Gradient directions (quantized to 8 bins, 0-315Ã‚Â°, each 45Ã‚Â°) | $\begin{bmatrix}0&0&45&90&45&0&0\\0&45&90&90&90&45&0\\0&90&90&90&90&45&0\\45&90&90&90&90&45&45\\45&90&90&90&90&45&45\\0&45&90&90&90&45&0\\0&0&45&45&45&0&0\end{bmatrix}$ |
-| 1 | Build 36-bin orientation histogram weighted by magnitude Ãƒâ€” Gaussian | Bin 90Ã‚Â° gets contributions from pixels with direction~90Ã‚Â°: 50+55+45+40+35+42 Ã¢â€°Ë† **267** |
-| 2 | Find peak | Peak at 90Ã‚Â° (vertical gradient = horizontal edge). Keypoint orientation = 90Ã‚Â° |
-| 3 | Assign descriptor | 16 sub-blocks Ãƒâ€” 8 bins = 128 values. First sub-block (top-left 4Ãƒâ€”4): `[0, 2, 8, 15, 6, 1, 0, 0]` |
-| 4 | Normalize + clip | Unit vector with each element clipped to Ã¢â€°Â¤0.2 |
+| 0 | 7×7 gradient magnitudes around keypoint at (10, 10) | $\begin{bmatrix}0&2&5&8&6&3&1\\2&8&15&20&14&5&2\\5&20&40&\mathbf{50}&35&12&3\\8&25&45&55&40&15&5\\6&18&35&42&30&10&3\\3&8&12&15&10&4&1\\1&2&3&5&3&1&0\end{bmatrix}$ |
+| 0 | Gradient directions (quantized to 8 bins, 0-315°, each 45°) | $\begin{bmatrix}0&0&45&90&45&0&0\\0&45&90&90&90&45&0\\0&90&90&90&90&45&0\\45&90&90&90&90&45&45\\45&90&90&90&90&45&45\\0&45&90&90&90&45&0\\0&0&45&45&45&0&0\end{bmatrix}$ |
+| 1 | Build 36-bin orientation histogram weighted by magnitude × Gaussian | Bin 90° gets contributions from pixels with direction~90°: 50+55+45+40+35+42 ≈ **267** |
+| 2 | Find peak | Peak at 90° (vertical gradient = horizontal edge). Keypoint orientation = 90° |
+| 3 | Assign descriptor | 16 sub-blocks × 8 bins = 128 values. First sub-block (top-left 4×4): `[0, 2, 8, 15, 6, 1, 0, 0]` |
+| 4 | Normalize + clip | Unit vector with each element clipped to ≤0.2 |
 
 ### 13.4.2 Python Implementation
 
@@ -710,11 +710,11 @@ cv2.destroyAllWindows()
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| **Scale invariant** â†’ works at multiple resolutions | Computationally expensive (patented, slow) |
-| **Rotation invariant** â†’ orientation normalization | 128-d descriptor is memory-heavy for large datasets |
-| **Robust to illumination changes** â†’ gradient-based, intensity-normalized | Not robust to extreme affine transformations |
-| **Highly distinctive** â†’ 128-d vector provides strong matching | SIFT was patented (US expired 2020; free now) |
-| Occlusion-tolerant â†’ works with partial views | Requires textured regions; fails on blank walls |
+| **Scale invariant** → works at multiple resolutions | Computationally expensive (patented, slow) |
+| **Rotation invariant** → orientation normalization | 128-d descriptor is memory-heavy for large datasets |
+| **Robust to illumination changes** → gradient-based, intensity-normalized | Not robust to extreme affine transformations |
+| **Highly distinctive** → 128-d vector provides strong matching | SIFT was patented (US expired 2020; free now) |
+| Occlusion-tolerant → works with partial views | Requires textured regions; fails on blank walls |
 
 ### 13.4.5 Edge Cases
 
@@ -724,12 +724,12 @@ cv2.destroyAllWindows()
 | **Low texture** (e.g., blank wall) | No keypoints detected (no distinctive features) | Use global descriptors (HOG, GIST) instead |
 | **Extreme blur** | Keypoints shift; descriptor becomes noisy | Deblur before feature extraction |
 | **Repeated patterns** (e.g., grid) | Many similar keypoints cause matching ambiguity | Use ratio test (Lowe's 0.7 threshold) |
-| **Large viewpoint change** (>50Ã‚Â°) | SIFT's affine invariance is limited | Use ASIFT (affine-SIFT) or learned features (SuperPoint) |
+| **Large viewpoint change** (>50°) | SIFT's affine invariance is limited | Use ASIFT (affine-SIFT) or learned features (SuperPoint) |
 | **Compression artifacts** | JPEG blocks create false keypoints | Slight Gaussian blur before detection |
 
 ## 13.5 Convolutional Neural Networks
 
-**Real-World Analogy â†’ Hierarchical Vision in the Brain**
+**Real-World Analogy → Hierarchical Vision in the Brain**
 
 The human visual cortex processes images hierarchically: V1 detects simple edges and oriented bars, V2 groups these into contours and simple shapes, V4 recognizes more complex features like object parts, and the IT cortex puts it all together to recognize complete objects (a face, a car, a dog).
 
@@ -752,13 +752,13 @@ Given input size $W_{\text{in}}$, kernel size $k$, padding $p$, stride $s$:
 
 $$W_{\text{out}} = \left\lfloor \frac{W_{\text{in}} - k + 2p}{s} \right\rfloor + 1$$
 
-**Activation Function (ReLU):** $f(x) = \max(0, x)$ â†’ introduces non-linearity, mitigates vanishing gradient.
+**Activation Function (ReLU):** $f(x) = \max(0, x)$ → introduces non-linearity, mitigates vanishing gradient.
 
 **Pooling Layer:** Reduces spatial dimensions. Max pooling selects the maximum value in each $k \times k$ window. Average pooling computes the mean.
 
 **Fully Connected Layer:** Every input neuron connects to every output neuron with a learned weight.
 
-**Dropout:** During training, randomly set a fraction $p$ of neurons to zero â†’ prevents co-adaptation, acts as regularization.
+**Dropout:** During training, randomly set a fraction $p$ of neurons to zero → prevents co-adaptation, acts as regularization.
 
 ### 13.5.2 Algorithm: Forward Pass Through a CNN
 
@@ -777,40 +777,40 @@ $$W_{\text{out}} = \left\lfloor \frac{W_{\text{in}} - k + 2p}{s} \right\rfloor +
 **Pseudocode:**
 ```
 FUNCTION cnn_forward(X, layers):
-    current â† X
+    current ← X
 
     FOR each conv_layer in layers:
         // 2D convolution with learned weights W and bias b
-        Z â† convolve2d(current, conv_layer.W) + conv_layer.b
-        A â† relu(Z)
-        current â† max_pool(A, pool_size=2, stride=2)
+        Z ← convolve2d(current, conv_layer.W) + conv_layer.b
+        A ← relu(Z)
+        current ← max_pool(A, pool_size=2, stride=2)
 
-    flat â† FLATTEN(current)
+    flat ← FLATTEN(current)
 
     FOR each fc_layer in layers.fc:
-        Z â† flat @ fc_layer.W + fc_layer.b
-        A â† relu(Z)                    // Or softmax for the last layer
-        flat â† A
+        Z ← flat @ fc_layer.W + fc_layer.b
+        A ← relu(Z)                    // Or softmax for the last layer
+        flat ← A
 
-    probs â† softmax(flat)
+    probs ← softmax(flat)
 
     RETURN probs                       // Shape: (1, 1000)
 END FUNCTION
 ```
 
-**Dry Run Trace â†’ Simple 1-Layer CNN on a 4Ãƒâ€”4 Input:**
+**Dry Run Trace → Simple 1-Layer CNN on a 4×4 Input:**
 
-| Step | Operation | 4Ãƒâ€”4 Grid / Value |
+| Step | Operation | 4×4 Grid / Value |
 |------|-----------|------------------|
 | 0 | Input image | $\begin{bmatrix}1&2&0&1\\0&1&2&1\\2&1&0&0\\1&2&1&1\end{bmatrix}$ |
-| 0 | Filter $W$ (2Ãƒâ€”2) | $\begin{bmatrix}1&0\\-1&1\end{bmatrix}$, bias = 0 |
+| 0 | Filter $W$ (2×2) | $\begin{bmatrix}1&0\\-1&1\end{bmatrix}$, bias = 0 |
 | 1 | Convolve at (0,0) | $1(1) + 2(0) + 0(-1) + 1(1) = 2$ |
 | 2 | Convolve at (0,1) | $2(1) + 0(0) + 1(-1) + 2(1) = 3$ |
 | 3 | Convolve at (1,0) | $0(1) + 1(0) + 2(-1) + 1(1) = -1$ |
 | 4 | Convolve at (1,1) | $1(1) + 2(0) + 1(-1) + 0(1) = 0$ |
-| 5 | Feature map (2Ãƒâ€”2) | $\begin{bmatrix}2&3\\-1&0\end{bmatrix}$ |
+| 5 | Feature map (2×2) | $\begin{bmatrix}2&3\\-1&0\end{bmatrix}$ |
 | 6 | ReLU | $\begin{bmatrix}2&3\\0&0\end{bmatrix}$ |
-| 7 | Max pool (2Ãƒâ€”2) | $3$ (single value â†’ the maximum of the 2Ãƒâ€”2 ReLU output) |
+| 7 | Max pool (2×2) | $3$ (single value → the maximum of the 2×2 ReLU output) |
 
 ### 13.5.3 Python Implementation (PyTorch)
 
@@ -887,22 +887,22 @@ with torch.no_grad():
 
 | Layer Type | Parameters | FLOPs for $224\times224\times3$ Input | Why |
 |------------|-----------|--------------------------------------|-----|
-| Conv (11Ãƒâ€”11, 96 filters, s=4) | $11^2 \times 3 \times 96 + 96 = 34,944$ | $55^2 \times 11^2 \times 3 \times 96 \approx 105M$ | Each output pixel requires $k^2 \times C_{\text{in}}$ multiply-accumulate |
-| Conv (3Ãƒâ€”3, 256 filters, s=1, pad=1) | $3^2 \times 96 \times 256 + 256 = 221,440$ | $56^2 \times 3^2 \times 96 \times 256 \approx 693M$ | High spatial resolution + many filters |
-| Max Pool (2Ãƒâ€”2, s=2) | 0 | $56^2 \times 96 \times 4$ (comparisons) | No learned parameters |
-| FC (4096â†’4096) | $4096^2 + 4096 = 16.8M$ | $4096^2 \approx 16.8M$ | Parameters dominate in dense layers |
+| Conv (11×11, 96 filters, s=4) | $11^2 \times 3 \times 96 + 96 = 34,944$ | $55^2 \times 11^2 \times 3 \times 96 \approx 105M$ | Each output pixel requires $k^2 \times C_{\text{in}}$ multiply-accumulate |
+| Conv (3×3, 256 filters, s=1, pad=1) | $3^2 \times 96 \times 256 + 256 = 221,440$ | $56^2 \times 3^2 \times 96 \times 256 \approx 693M$ | High spatial resolution + many filters |
+| Max Pool (2×2, s=2) | 0 | $56^2 \times 96 \times 4$ (comparisons) | No learned parameters |
+| FC (4096→4096) | $4096^2 + 4096 = 16.8M$ | $4096^2 \approx 16.8M$ | Parameters dominate in dense layers |
 
-**Key insight:** Parameter count is dominated by fully connected layers, while FLOPs are dominated by early convolutional layers (high resolution Ãƒâ€” many filters).
+**Key insight:** Parameter count is dominated by fully connected layers, while FLOPs are dominated by early convolutional layers (high resolution × many filters).
 
 ### 13.5.5 Advantages and Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| **Parameter sharing** â†’ one filter across entire image drastically reduces parameters vs fully connected | Requires large labeled datasets for good generalization |
-| **Translation invariance** â†’ learned features work regardless of position in image | Computationally expensive to train (days/weeks on GPU) |
-| **Hierarchical features** â†’ simpleâ†’complex feature learning automatically | Black-box â†’ difficult to interpret what each layer learns |
-| **Robust to spatial distortions** â†’ pooling provides local translation invariance | Sensitive to adversarial examples (small pixel perturbations cause misclassification) |
+| **Parameter sharing** → one filter across entire image drastically reduces parameters vs fully connected | Requires large labeled datasets for good generalization |
+| **Translation invariance** → learned features work regardless of position in image | Computationally expensive to train (days/weeks on GPU) |
+| **Hierarchical features** → simple→complex feature learning automatically | Black-box → difficult to interpret what each layer learns |
+| **Robust to spatial distortions** → pooling provides local translation invariance | Sensitive to adversarial examples (small pixel perturbations cause misclassification) |
 | Mature ecosystem (PyTorch, TensorFlow, JAX) | Less sample-efficient than Vision Transformers with large data |
 
 ### 13.5.6 Edge Cases
@@ -910,7 +910,7 @@ with torch.no_grad():
 
 | Edge Case | Problem | Mitigation |
 |-----------|---------|------------|
-| **Occlusion** | Object partially hidden â†’ features missing | Use data augmentation (random erasing); ensemble models |
+| **Occlusion** | Object partially hidden → features missing | Use data augmentation (random erasing); ensemble models |
 | **Adversarial perturbations** | Invisible pixel changes flip prediction | Adversarial training; input preprocessing (JPEG compression) |
 | **Domain shift** | Training on photos, testing on sketches | Domain adaptation; fine-tune on target domain |
 | **Class imbalance** | Some classes have few training examples | Weighted loss; oversampling; focal loss |
@@ -919,9 +919,9 @@ with torch.no_grad():
 
 ## 13.6 Object Detection
 
-**Real-World Analogy â†’ A Security Guard Scanning a Crowd**
+**Real-World Analogy → A Security Guard Scanning a Crowd**
 
-Imagine a security guard scanning a crowded airport terminal. She needs to answer two questions for every person: (1) Is this a person? (classification), and (2) Where exactly is this person located? (localization). She doesn't just classify the whole scene as "has people" â†’ she mentally draws a box around each individual, even when they overlap.
+Imagine a security guard scanning a crowded airport terminal. She needs to answer two questions for every person: (1) Is this a person? (classification), and (2) Where exactly is this person located? (localization). She doesn't just classify the whole scene as "has people" → she mentally draws a box around each individual, even when they overlap.
 
 Object detection does the same: for every object in an image, it predicts a class label AND a bounding box $(x, y, w, h)$.
 
@@ -932,7 +932,7 @@ Object detection does the same: for every object in an image, it predicts a clas
 
 $$\text{IoU} = \frac{\text{Area}(B_p \cap B_{gt})}{\text{Area}(B_p \cup B_{gt})}$$
 
-A prediction is a **true positive** if IoU Ã¢â€°Â¥ threshold (typically 0.5) AND class matches.
+A prediction is a **true positive** if IoU ≥ threshold (typically 0.5) AND class matches.
 
 **mean Average Precision (mAP):** Average precision across all classes at a given IoU threshold.
 
@@ -957,32 +957,32 @@ A prediction is a **true positive** if IoU Ã¢â€°Â¥ threshold (typically 
 **Faster R-CNN:**
 
 **Step 1:** Run the image through a CNN backbone (e.g., VGG-16, ResNet-50).
-**Step 2:** Insert a **Region Proposal Network (RPN)** that slides a small network over the feature map, predicting $k$ anchor boxes per location â†’ "objectness" score + box refinement.
+**Step 2:** Insert a **Region Proposal Network (RPN)** that slides a small network over the feature map, predicting $k$ anchor boxes per location → "objectness" score + box refinement.
 **Step 3:** RoI Pool features from proposals.
 **Step 4:** Classify and regress final boxes.
 
-**Pseudocode â†’ Faster R-CNN Inference:**
+**Pseudocode → Faster R-CNN Inference:**
 ```
 FUNCTION faster_rcnn_infer(image, backbone, rpn, roi_head):
     // Backbone feature extraction
-    feature_map â† backbone(image)          // (1, 1024, H/16, W/16)
+    feature_map ← backbone(image)          // (1, 1024, H/16, W/16)
 
     // RPN: generate proposals
-    objectness, box_deltas â† rpn(feature_map)
-    proposals â† DECODE_ANCHORS(box_deltas, objectness)
-    proposals â† NMS(proposals, iou_thresh=0.7)
-    proposals â† TOP_K(proposals, k=300)
+    objectness, box_deltas ← rpn(feature_map)
+    proposals ← DECODE_ANCHORS(box_deltas, objectness)
+    proposals ← NMS(proposals, iou_thresh=0.7)
+    proposals ← TOP_K(proposals, k=300)
 
     // RoI head: classify and refine
-    roi_features â† roi_pool(feature_map, proposals)       // Fixed-size (7Ãƒâ€”7)
-    class_scores, final_boxes â† roi_head(roi_features)
-    final_boxes â† NMS(final_boxes, iou_thresh=0.5)
+    roi_features ← roi_pool(feature_map, proposals)       // Fixed-size (7×7)
+    class_scores, final_boxes ← roi_head(roi_features)
+    final_boxes ← NMS(final_boxes, iou_thresh=0.5)
 
     RETURN final_boxes, class_scores
 END FUNCTION
 ```
 
-**Dry Run Trace â†’ Anchor Box Scoring at One Position:**
+**Dry Run Trace → Anchor Box Scoring at One Position:**
 
 Assume a feature map position $(5, 5)$ with 3 anchor boxes (ratios 1:1, 1:2, 2:1):
 
@@ -991,13 +991,13 @@ Assume a feature map position $(5, 5)$ with 3 anchor boxes (ratios 1:1, 1:2, 2:1
 | 0 | Anchor 1:1 | (64, 64) | 0.92 | 0.85 | Positive (foreground) |
 | 1 | Anchor 1:2 | (45, 91) | 0.45 | 0.32 | Negative (background) |
 | 2 | Anchor 2:1 | (91, 45) | 0.12 | 0.05 | Negative |
-| 3 | After NMS | Keep anchor 1 | â†’ | â†’ | Final proposal |
-| 4 | RoI head | â†’ | Class: "car" (0.94) | Box: (10, 20, 70, 65) | Detection output |
+| 3 | After NMS | Keep anchor 1 | → | → | Final proposal |
+| 4 | RoI head | → | Class: "car" (0.94) | Box: (10, 20, 70, 65) | Detection output |
 
 ### 13.6.3 Single-Stage Detectors: YOLO
 
 
-YOLO (You Only Look Once) treats detection as a single regression problem â†’ one forward pass predicts all boxes simultaneously.
+YOLO (You Only Look Once) treats detection as a single regression problem → one forward pass predicts all boxes simultaneously.
 
 **YOLO Algorithm Steps:**
 
@@ -1009,35 +1009,35 @@ YOLO (You Only Look Once) treats detection as a single regression problem â†�
 
 **YOLOv3+ improvements:** Multi-scale predictions (3 scales), anchor boxes via k-means clustering, Darknet-53 backbone, skip connections, sigmoid class predictions.
 
-**Pseudocode â†’ YOLO Inference:**
+**Pseudocode → YOLO Inference:**
 ```
 FUNCTION yolo_infer(image, model, S, B, C):
     // Single forward pass
-    raw_output â† model(image)                   // (1, S, S, B*5 + C)
-    predictions â† []
+    raw_output ← model(image)                   // (1, S, S, B*5 + C)
+    predictions ← []
 
     FOR each cell (i, j):
         FOR each box b in 1..B:
-            confidence â† sigmoid(raw_output[i][j][b*5])
+            confidence ← sigmoid(raw_output[i][j][b*5])
             if confidence < threshold: SKIP
 
-            x â† sigmoid(raw_output[i][j][b*5 + 1]) + i     // Center x (grid-relative)
-            y â† sigmoid(raw_output[i][j][b*5 + 2]) + j     // Center y
-            w â† exp(raw_output[i][j][b*5 + 3]) * anchor_w  // Width
-            h â† exp(raw_output[i][j][b*5 + 4]) * anchor_h  // Height
-            class_probs â† softmax(raw_output[i][j][B*5 : B*5 + C])
-            class_id â† ARGMAX(class_probs)
-            score â† confidence * class_probs[class_id]
+            x ← sigmoid(raw_output[i][j][b*5 + 1]) + i     // Center x (grid-relative)
+            y ← sigmoid(raw_output[i][j][b*5 + 2]) + j     // Center y
+            w ← exp(raw_output[i][j][b*5 + 3]) * anchor_w  // Width
+            h ← exp(raw_output[i][j][b*5 + 4]) * anchor_h  // Height
+            class_probs ← softmax(raw_output[i][j][B*5 : B*5 + C])
+            class_id ← ARGMAX(class_probs)
+            score ← confidence * class_probs[class_id]
 
             APPEND {x, y, w, h, class_id, score} TO predictions
 
-    predictions â† NMS(predictions, iou_thresh=0.5)
+    predictions ← NMS(predictions, iou_thresh=0.5)
 
     RETURN predictions
 END FUNCTION
 ```
 
-**Dry Run Trace â†’ YOLO Prediction on 7Ãƒâ€”7 Grid (One Cell):**
+**Dry Run Trace → YOLO Prediction on 7×7 Grid (One Cell):**
 
 Assume grid cell (3, 4), 2 anchor boxes, 80 COCO classes:
 
@@ -1047,10 +1047,10 @@ Assume grid cell (3, 4), 2 anchor boxes, 80 COCO classes:
 | 1 | Decode box 1: confidence | sigmoid(0.85) = **0.70** |
 | 2 | Box 1: center x | sigmoid(0.3) + 3 = 0.57 + 3 = **3.57** |
 | 3 | Box 1: center y | sigmoid(0.6) + 4 = 0.65 + 4 = **4.65** |
-| 4 | Box 1: width | exp(-0.2) Ãƒâ€” anchor_w(116) = 0.82 Ãƒâ€” 116 = **95.1** |
-| 5 | Box 1: height | exp(0.1) Ãƒâ€” anchor_h(90) = 1.11 Ãƒâ€” 90 = **99.9** |
+| 4 | Box 1: width | exp(-0.2) × anchor_w(116) = 0.82 × 116 = **95.1** |
+| 5 | Box 1: height | exp(0.1) × anchor_h(90) = 1.11 × 90 = **99.9** |
 | 6 | Box 1: class scores (top-3) | car: 0.82, truck: 0.10, bus: 0.05 |
-| 7 | Box 1: final score | 0.70 Ãƒâ€” 0.82 = **0.57** â†’ "car" |
+| 7 | Box 1: final score | 0.70 × 0.82 = **0.57** → "car" |
 | 8 | Box 2: confidence | sigmoid(0.1) = **0.52** [below threshold 0.5? depends] |
 | 9 | After NMS across grid | Final: 1 car detected at grid-aligned coordinates |
 
@@ -1135,17 +1135,17 @@ cv2.destroyAllWindows()
 
 | Edge Case | Problem | Mitigation |
 |-----------|---------|------------|
-| **Small objects** (pixels &lt; 32Ãƒâ€”32) | YOLO grid may miss them | Use feature pyramid networks (FPN); multi-scale training |
-| **Occlusion** | Partial object â†’ low confidence | Use NMS with lower threshold; part-based detectors |
+| **Small objects** (pixels &lt; 32×32) | YOLO grid may miss them | Use feature pyramid networks (FPN); multi-scale training |
+| **Occlusion** | Partial object → low confidence | Use NMS with lower threshold; part-based detectors |
 | **Dense crowds** | Overlapping boxes suppressed by NMS | Use soft-NMS; set-based losses (DETR) |
 | **Extreme aspect ratios** (e.g., long poles) | Fixed anchor boxes don't fit | Use anchor-free methods (FCOS, CornerNet) |
-| **Motion blur** | Blurry objects â†’ poor features | Deblur preprocessing; train with motion-blur augmentation |
+| **Motion blur** | Blurry objects → poor features | Deblur preprocessing; train with motion-blur augmentation |
 
 ## 13.7 Segmentation
 
-**Real-World Analogy â†’ Coloring by Numbers with Boundaries**
+**Real-World Analogy → Coloring by Numbers with Boundaries**
 
-Imagine you have a coloring book page showing a house with a blue sky, green grass, and a red roof. Semantic segmentation is like assigning every single pixel to a category â†’ sky pixels are blue, grass pixels are green, roof pixels are red â†’ regardless of which roof belongs to which house. Instance segmentation goes further: if there are two houses, the two roofs get different shades of red (each instance separately identified).
+Imagine you have a coloring book page showing a house with a blue sky, green grass, and a red roof. Semantic segmentation is like assigning every single pixel to a category → sky pixels are blue, grass pixels are green, roof pixels are red → regardless of which roof belongs to which house. Instance segmentation goes further: if there are two houses, the two roofs get different shades of red (each instance separately identified).
 
 ### 13.7.1 Semantic Segmentation
 
@@ -1156,62 +1156,62 @@ Assigns a class label $c \in \{1, \dots, K\}$ to every pixel. Output: $H \times 
 
 - **Encoder (contracting path):** Repeated conv+ReLU+max-pool. Captures context, reduces spatial size.
 - **Bottleneck:** 2 conv layers at lowest resolution.
-- **Decoder (expanding path):** Upsampling + conv. Skip connections concatenate encoder features to decoder features â†’ this preserves spatial detail lost during pooling.
+- **Decoder (expanding path):** Upsampling + conv. Skip connections concatenate encoder features to decoder features → this preserves spatial detail lost during pooling.
 
 **Algorithm Steps:**
 
 **Step 1:** Input image $I \in \mathbb{R}^{H \times W \times 3}$.
-**Step 2:** Encoder block 1: 2Ãƒâ€” conv(64) â†’ max pool â†’ Feature map: $(H/2, W/2, 64)$.
-**Step 3:** Encoder block 2: 2Ãƒâ€” conv(128) â†’ max pool â†’ Feature map: $(H/4, W/4, 128)$.
-**Step 4:** Encoder block 3: 2Ãƒâ€” conv(256) â†’ max pool â†’ Feature map: $(H/8, W/8, 256)$.
-**Step 5:** Encoder block 4: 2Ãƒâ€” conv(512) â†’ max pool â†’ Feature map: $(H/16, W/16, 512)$.
-**Step 6:** Bottleneck: 2Ãƒâ€” conv(1024).
-**Step 7:** Decoder block 1: Up-conv(512) â†’ concatenate with encoder block 4 â†’ 2Ãƒâ€” conv(512).
-**Step 8:** Decoder block 2: Up-conv(256) â†’ concatenate with encoder block 3 â†’ 2Ãƒâ€” conv(256).
-**Step 9:** Decoder block 3: Up-conv(128) â†’ concatenate with encoder block 2 â†’ 2Ãƒâ€” conv(128).
-**Step 10:** Decoder block 4: Up-conv(64) â†’ concatenate with encoder block 1 â†’ 2Ãƒâ€” conv(64).
-**Step 11:** Final 1Ãƒâ€”1 conv( num_classes ) â†’ softmax â†’ pixel-wise class probabilities.
+**Step 2:** Encoder block 1: 2× conv(64) → max pool → Feature map: $(H/2, W/2, 64)$.
+**Step 3:** Encoder block 2: 2× conv(128) → max pool → Feature map: $(H/4, W/4, 128)$.
+**Step 4:** Encoder block 3: 2× conv(256) → max pool → Feature map: $(H/8, W/8, 256)$.
+**Step 5:** Encoder block 4: 2× conv(512) → max pool → Feature map: $(H/16, W/16, 512)$.
+**Step 6:** Bottleneck: 2× conv(1024).
+**Step 7:** Decoder block 1: Up-conv(512) → concatenate with encoder block 4 → 2× conv(512).
+**Step 8:** Decoder block 2: Up-conv(256) → concatenate with encoder block 3 → 2× conv(256).
+**Step 9:** Decoder block 3: Up-conv(128) → concatenate with encoder block 2 → 2× conv(128).
+**Step 10:** Decoder block 4: Up-conv(64) → concatenate with encoder block 1 → 2× conv(64).
+**Step 11:** Final 1×1 conv( num_classes ) → softmax → pixel-wise class probabilities.
 
-**Pseudocode â†’ U-Net Forward:**
+**Pseudocode → U-Net Forward:**
 ```
 FUNCTION unet_forward(image):
     // Encoder
-    e1 â† conv_relu(conv_relu(image, 64))
-    p1 â† max_pool(e1)                     // H/2 Ãƒâ€” W/2 Ãƒâ€” 64
+    e1 ← conv_relu(conv_relu(image, 64))
+    p1 ← max_pool(e1)                     // H/2 × W/2 × 64
 
-    e2 â† conv_relu(conv_relu(p1, 128))
-    p2 â† max_pool(e2)                     // H/4 Ãƒâ€” W/4 Ãƒâ€” 128
+    e2 ← conv_relu(conv_relu(p1, 128))
+    p2 ← max_pool(e2)                     // H/4 × W/4 × 128
 
-    e3 â† conv_relu(conv_relu(p2, 256))
-    p3 â† max_pool(e3)                     // H/8 Ãƒâ€” W/8 Ãƒâ€” 256
+    e3 ← conv_relu(conv_relu(p2, 256))
+    p3 ← max_pool(e3)                     // H/8 × W/8 × 256
 
-    e4 â† conv_relu(conv_relu(p3, 512))
-    p4 â† max_pool(e4)                     // H/16 Ãƒâ€” W/16 Ãƒâ€” 512
+    e4 ← conv_relu(conv_relu(p3, 512))
+    p4 ← max_pool(e4)                     // H/16 × W/16 × 512
 
     // Bottleneck
-    b â† conv_relu(conv_relu(p4, 1024))
+    b ← conv_relu(conv_relu(p4, 1024))
 
     // Decoder with skip connections
-    d4 â† up_conv(b, 512)
-    d4 â† concat(d4, e4)
-    d4 â† conv_relu(conv_relu(d4, 512))
+    d4 ← up_conv(b, 512)
+    d4 ← concat(d4, e4)
+    d4 ← conv_relu(conv_relu(d4, 512))
 
-    d3 â† up_conv(d4, 256)
-    d3 â† concat(d3, e3)
-    d3 â† conv_relu(conv_relu(d3, 256))
+    d3 ← up_conv(d4, 256)
+    d3 ← concat(d3, e3)
+    d3 ← conv_relu(conv_relu(d3, 256))
 
-    d2 â† up_conv(d3, 128)
-    d2 â† concat(d2, e2)
-    d2 â† conv_relu(conv_relu(d2, 128))
+    d2 ← up_conv(d3, 128)
+    d2 ← concat(d2, e2)
+    d2 ← conv_relu(conv_relu(d2, 128))
 
-    d1 â† up_conv(d2, 64)
-    d1 â† concat(d1, e1)
-    d1 â† conv_relu(conv_relu(d1, 64))
+    d1 ← up_conv(d2, 64)
+    d1 ← concat(d1, e1)
+    d1 ← conv_relu(conv_relu(d1, 64))
 
     // Output
-    logits â† conv_1x1(d1, num_classes)
-    probs â† softmax(logits)
-    RETURN probs                            // H Ãƒâ€” W Ãƒâ€” num_classes
+    logits ← conv_1x1(d1, num_classes)
+    probs ← softmax(logits)
+    RETURN probs                            // H × W × num_classes
 END FUNCTION
 ```
 
@@ -1395,16 +1395,16 @@ cv2.destroyAllWindows()
 
 ## 13.9 CNN Architectures Comparison
 
-**Real-World Analogy â†’ Evolution of Car Engines**
+**Real-World Analogy → Evolution of Car Engines**
 
-AlexNet was the Model T Ford â†’ first to prove it works. VGG was a V12 engine â†’ powerful but wasteful (massive parameter count). ResNet was the hybrid engine â†’ added a clever bypass (skip connections) that made deep networks practical. EfficientNet was the modern turbo-diesel â†’ optimally balanced all dimensions (depth, width, resolution). YOLO is a Formula 1 engine â†’ optimized for raw speed. Mask R-CNN is a pickup truck â†’ does everything (detect + segment) but burns more fuel.
+AlexNet was the Model T Ford → first to prove it works. VGG was a V12 engine → powerful but wasteful (massive parameter count). ResNet was the hybrid engine → added a clever bypass (skip connections) that made deep networks practical. EfficientNet was the modern turbo-diesel → optimally balanced all dimensions (depth, width, resolution). YOLO is a Formula 1 engine → optimized for raw speed. Mask R-CNN is a pickup truck → does everything (detect + segment) but burns more fuel.
 
-| Architecture | Year | Depth | Parameters | Top-1 Acc (ImageNet) | FLOPs | Key Innovation | Training Time (8Ãƒâ€”V100) |
+| Architecture | Year | Depth | Parameters | Top-1 Acc (ImageNet) | FLOPs | Key Innovation | Training Time (8×V100) |
 |-------------|------|-------|-----------|---------------------|-------|---------------|----------------------|
 | **AlexNet** | 2012 | 8 | 62M | 56.5% | 0.7G | First deep CNN winner; ReLU; dropout; GPU training | ~6 days |
-| **VGG-16** | 2014 | 16 | 138M | 71.6% | 15.3G | Uniform 3Ãƒâ€”3 conv stack; very deep for its time | ~14 days |
+| **VGG-16** | 2014 | 16 | 138M | 71.6% | 15.3G | Uniform 3×3 conv stack; very deep for its time | ~14 days |
 | **VGG-19** | 2014 | 19 | 144M | 72.1% | 19.6G | Deeper VGG variant | ~16 days |
-| **GoogLeNet (Inception v1)** | 2014 | 22 | 7M | 69.8% | 1.5G | Inception modules (parallel 1Ãƒâ€”1, 3Ãƒâ€”3, 5Ãƒâ€”5); Global avg pooling | ~7 days |
+| **GoogLeNet (Inception v1)** | 2014 | 22 | 7M | 69.8% | 1.5G | Inception modules (parallel 1×1, 3×3, 5×5); Global avg pooling | ~7 days |
 | **ResNet-50** | 2015 | 50 | 26M | 76.0% | 4.1G | Residual (skip) connections; batch normalization | ~7 days |
 | **ResNet-152** | 2015 | 152 | 60M | 78.6% | 11.3G | Deepest residual network; solved vanishing gradient | ~10 days |
 | **DenseNet-121** | 2017 | 121 | 8M | 75.0% | 2.8G | Dense connectivity (each layer connects to all later layers) | ~8 days |
@@ -1412,9 +1412,9 @@ AlexNet was the Model T Ford â†’ first to prove it works. VGG was a V12 eng
 | **EfficientNet-B0** | 2019 | 18 | 5.3M | 77.1% | 0.4G | Compound scaling (depth+width+resolution together) | ~5 days |
 | **EfficientNet-B7** | 2019 | 81 | 66M | 84.3% | 37G | Largest EfficientNet; state-of-the-art efficiency | ~12 days |
 | **MobileNetV3** | 2019 | 15 | 5.4M | 75.2% | 0.2G | Depthwise separable convs; NAS-optimized for mobile | ~4 days |
-| **YOLOv5s** | 2020 | 24 | 7.2M | â†’ (COCO 37.2 mAP) | 4.5G | Single-shot detector; CSPDarknet backbone; Mosaic aug | ~2 days |
-| **YOLOv8x** | 2023 | 57 | 68.2M | â†’ (COCO 56.8 mAP) | 257G | Anchor-free; task-aligned loss; decoupled head | ~5 days |
-| **Mask R-CNN** | 2017 | 101 | 44M | â†’ (COCO 38.2 mask AP) | 23G | RoI Align; mask head; FPN backbone | ~10 days |
+| **YOLOv5s** | 2020 | 24 | 7.2M | → (COCO 37.2 mAP) | 4.5G | Single-shot detector; CSPDarknet backbone; Mosaic aug | ~2 days |
+| **YOLOv8x** | 2023 | 57 | 68.2M | → (COCO 56.8 mAP) | 257G | Anchor-free; task-aligned loss; decoupled head | ~5 days |
+| **Mask R-CNN** | 2017 | 101 | 44M | → (COCO 38.2 mask AP) | 23G | RoI Align; mask head; FPN backbone | ~10 days |
 | **ViT-L/16** | 2021 | 24 (transformer) | 307M | 85.2% (JFT-300M pretrained) | 190G | Pure transformer; patch embeddings; pre-training matters | ~30 days |
 
 ### 13.9.1 Architecture Decision Guide
@@ -1437,7 +1437,7 @@ AlexNet was the Model T Ford â†’ first to prove it works. VGG was a V12 eng
 timeline
     title CNN Architecture Evolution
     2012 : AlexNet (8 layers, GPU breakthrough)
-    2014 : VGG (deep 3Ãƒâ€”3 stack)
+    2014 : VGG (deep 3×3 stack)
          : GoogLeNet (Inception modules)
     2015 : ResNet (skip connections, 152 layers)
     2016 : YOLO (real-time detection)
@@ -1466,16 +1466,16 @@ timeline
 
 **Convolution:**  $(I * K)[i, j] = \sum_m \sum_n I[i+m, j+n] \cdot K[-m, -n]$
 
-The only difference is that the kernel is **flipped 180 degrees** before application. In practice, deep learning frameworks implement **cross-correlation** (no flipping) but call it convolution. This doesn't matter because the network learns the kernel weights anyway â†’ a flipped kernel is just a different set of learned weights.
+The only difference is that the kernel is **flipped 180 degrees** before application. In practice, deep learning frameworks implement **cross-correlation** (no flipping) but call it convolution. This doesn't matter because the network learns the kernel weights anyway → a flipped kernel is just a different set of learned weights.
 
 **Key properties of convolution:**
 - **Sparse interactions:** Each output pixel depends only on a local neighborhood (kernel size), not all pixels.
-- **Parameter sharing:** The same kernel slides across the entire input â†’ dramatically fewer parameters than fully connected.
+- **Parameter sharing:** The same kernel slides across the entire input → dramatically fewer parameters than fully connected.
 - **Equivariance:** If the input shifts, the output shifts by the same amount. This gives CNNs translation equivariance.
 
 **Example:** A $3 \times 3$ convolution on a $224 \times 224 \times 3$ image with 64 filters:
 - Parameters: $3 \times 3 \times 3 \times 64 + 64 = 1,792$
-- Equivalent fully connected layer: $224 \times 224 \times 3$ input â†’ output of same size would require $(224^2 \times 3) \times (224^2 \times 64) \approx 1.1 \times 10^{11}$ parameters â†’ **61 million times more!**
+- Equivalent fully connected layer: $224 \times 224 \times 3$ input → output of same size would require $(224^2 \times 3) \times (224^2 \times 64) \approx 1.1 \times 10^{11}$ parameters → **61 million times more!**
 
 ### Q2: What is receptive field? How do you compute it?
 
@@ -1492,18 +1492,18 @@ where $\text{RF}_l$ is the receptive field at layer $l$, $k_l$ is kernel size, a
 
 | Layer | Kernel | Stride | Cumulative RF |
 |-------|--------|--------|---------------|
-| Conv1_1 | 3Ãƒâ€”3 | 1 | $0 + (3-1) \times 1 = 2$ â†’ effective: $2 + 1 = 3$ |
-| Conv1_2 | 3Ãƒâ€”3 | 1 | $3 + (3-1) \times 1 = 5$ |
-| Pool1 | 2Ãƒâ€”2 | 2 | $5 + (2-1) \times 1 = 6$ |
-| Conv2_1 | 3Ãƒâ€”3 | 1 | $6 + (3-1) \times 2 = 10$ |
-| Conv2_2 | 3Ãƒâ€”3 | 1 | $10 + (3-1) \times 2 = 14$ |
-| Pool2 | 2Ãƒâ€”2 | 2 | $14 + (2-1) \times 2 = 16$ |
-| Conv3_1 | 3Ãƒâ€”3 | 1 | $16 + (3-1) \times 4 = 24$ |
-| Conv3_2 | 3Ãƒâ€”3 | 1 | $24 + (3-1) \times 4 = 32$ |
-| Conv3_3 | 3Ãƒâ€”3 | 1 | $32 + (3-1) \times 4 = 40$ |
-| Pool3 | 2Ãƒâ€”2 | 2 | $40 + (2-1) \times 4 = 44$ |
+| Conv1_1 | 3×3 | 1 | $0 + (3-1) \times 1 = 2$ → effective: $2 + 1 = 3$ |
+| Conv1_2 | 3×3 | 1 | $3 + (3-1) \times 1 = 5$ |
+| Pool1 | 2×2 | 2 | $5 + (2-1) \times 1 = 6$ |
+| Conv2_1 | 3×3 | 1 | $6 + (3-1) \times 2 = 10$ |
+| Conv2_2 | 3×3 | 1 | $10 + (3-1) \times 2 = 14$ |
+| Pool2 | 2×2 | 2 | $14 + (2-1) \times 2 = 16$ |
+| Conv3_1 | 3×3 | 1 | $16 + (3-1) \times 4 = 24$ |
+| Conv3_2 | 3×3 | 1 | $24 + (3-1) \times 4 = 32$ |
+| Conv3_3 | 3×3 | 1 | $32 + (3-1) \times 4 = 40$ |
+| Pool3 | 2×2 | 2 | $40 + (2-1) \times 4 = 44$ |
 
-By the end of VGG-16, each neuron in the final feature map "sees" a $404 \times 404$ region of the input â†’ larger than the $224 \times 224$ input itself, meaning the network has full-image context.
+By the end of VGG-16, each neuron in the final feature map "sees" a $404 \times 404$ region of the input → larger than the $224 \times 224$ input itself, meaning the network has full-image context.
 
 **Why receptive field matters:**
 - **Too small:** Network can't see large objects (e.g., a bus spanning most of the image).
@@ -1517,52 +1517,52 @@ By the end of VGG-16, each neuron in the final feature map "sees" a $404 \times 
 
 **When to use:**
 - Your dataset is small (<10K images per class).
-- Your task is visually similar to the pre-training task (natural images â†’ natural images).
+- Your task is visually similar to the pre-training task (natural images → natural images).
 - You have limited compute (1 GPU vs 100 GPUs).
 - You need faster convergence.
 
 **How it works:**
 
-**Approach 1 â†’ Feature Extractor:**
+**Approach 1 → Feature Extractor:**
 - Freeze the pre-trained backbone (conv layers).
 - Replace the final classification head with a new randomly initialized head.
 - Train only the new head.
 - The backbone acts as a fixed feature extractor.
 
-**Approach 2 â†’ Fine-tuning:**
+**Approach 2 → Fine-tuning:**
 - Load pre-trained weights for the entire network.
 - Replace the final classification layer to match your number of classes.
 - Train all layers with a small learning rate (1/10th of original).
 - Earlier layers learn less (they capture generic features like edges); later layers adapt more.
 
-**Pseudocode â†’ Transfer Learning:**
+**Pseudocode → Transfer Learning:**
 ```
 FUNCTION transfer_learn(pretrained_model, new_dataset, mode):
     // Remove old classifier head
-    backbone â† pretrained_model.features
-    num_features â† backbone.output_channels
+    backbone ← pretrained_model.features
+    num_features ← backbone.output_channels
 
     // Add new classifier
-    new_head â† Sequential(
+    new_head ← Sequential(
         AdaptiveAvgPool2d(1),
         Flatten(),
         Dropout(0.5),
         Linear(num_features, num_classes_new)
     )
-    model â† Sequential(backbone, new_head)
+    model ← Sequential(backbone, new_head)
 
     IF mode == "feature_extractor":
         FREEZE(backbone)              // No gradient updates
-        optimizer â† Adam(new_head.parameters, lr=1e-3)
+        optimizer ← Adam(new_head.parameters, lr=1e-3)
 
     ELSE IF mode == "fine_tune":
         UNFREEZE_ALL()
-        optimizer â† Adam(model.parameters, lr=1e-4)   // 10Ãƒâ€” smaller than scratch
+        optimizer ← Adam(model.parameters, lr=1e-4)   // 10× smaller than scratch
 
     // Train as usual
     FOR epoch in 1..num_epochs:
         FOR batch in new_dataset:
-            loss â† cross_entropy(model(batch.images), batch.labels)
+            loss ← cross_entropy(model(batch.images), batch.labels)
             loss.backward()
             optimizer.step()
 
@@ -1584,7 +1584,7 @@ END FUNCTION
 
 **Answer:** In very deep networks, gradients during backpropagation get multiplied by many small weights through the chain rule, causing them to shrink exponentially (vanish). Early layers learn very slowly or not at all.
 
-**ResNet solution â†’ Skip connections (residual connections):**
+**ResNet solution → Skip connections (residual connections):**
 
 Instead of learning $H(x)$ directly, a residual block learns $F(x) = H(x) - x$, so $H(x) = F(x) + x$.
 
@@ -1592,7 +1592,7 @@ The gradient flows directly through the skip connection during backprop:
 
 $$\frac{\partial \text{Loss}}{\partial x} = \frac{\partial \text{Loss}}{\partial H} \left(1 + \frac{\partial F}{\partial x}\right)$$
 
-The "1" term ensures the gradient never vanishes â†’ even if $\partial F/\partial x$ is very small.
+The "1" term ensures the gradient never vanishes → even if $\partial F/\partial x$ is very small.
 
 ### Q5: What is the difference between semantic segmentation and instance segmentation?
 
@@ -1623,20 +1623,20 @@ The "1" term ensures the gradient never vanishes â†’ even if $\partial F/\p
 **Pseudocode:**
 ```
 FUNCTION nms(boxes, scores, iou_threshold):
-    indices â† ARGSORT(scores, descending=True)
-    keep â† []
+    indices ← ARGSORT(scores, descending=True)
+    keep ← []
 
     WHILE length(indices) > 0:
-        current â† indices[0]
+        current ← indices[0]
         APPEND current TO keep
 
-        ious â† compute_iou(boxes[current], boxes[indices[1:]])
-        remaining â† []
+        ious ← compute_iou(boxes[current], boxes[indices[1:]])
+        remaining ← []
         FOR i, idx IN ENUMERATE(indices[1:]):
-            IF ious[i] Ã¢â€°Â¤ iou_threshold:
+            IF ious[i] ≤ iou_threshold:
                 APPEND idx TO remaining
 
-        indices â† remaining
+        indices ← remaining
 
     RETURN keep
 END FUNCTION
@@ -1653,7 +1653,7 @@ END FUNCTION
 |-------------|-------------|--------|
 | Random crop | Crop a random region | Translation invariance; focus on different regions |
 | Horizontal flip | Mirror image | Handles left/right variation |
-| Rotation (Ã‚Â±15Ã‚Â°) | Rotate slightly | Handles tilted images |
+| Rotation (±15°) | Rotate slightly | Handles tilted images |
 | Color jitter | Adjust brightness, contrast, saturation, hue | Illumination invariance |
 | Gaussian noise | Add random pixel noise | Robustness to sensor noise |
 | Cutout/Random Erase | Mask random rectangular regions | Robustness to occlusion |
@@ -1662,37 +1662,37 @@ END FUNCTION
 
 ## 13.11 Applications in Real Systems
 
-**Real-World Analogy â†’ CV Is the Eyes of Every Smart System**
+**Real-World Analogy → CV Is the Eyes of Every Smart System**
 
-Just as humans rely on vision for 80%+ of daily tasks (driving, reading faces, navigating spaces), modern AI systems depend on computer vision as their primary sensory modality. Every major tech breakthrough of the last decade â†’ self-driving cars, face-unlock phones, AR filters, medical AI diagnostics â†’ is fundamentally a computer vision problem.
+Just as humans rely on vision for 80%+ of daily tasks (driving, reading faces, navigating spaces), modern AI systems depend on computer vision as their primary sensory modality. Every major tech breakthrough of the last decade → self-driving cars, face-unlock phones, AR filters, medical AI diagnostics → is fundamentally a computer vision problem.
 
 ### 13.11.1 Face Recognition
 
 
-**Pipeline:** Detection â†’ Alignment â†’ Feature Extraction â†’ Matching
+**Pipeline:** Detection → Alignment → Feature Extraction → Matching
 
-**Step 1 â†’ Face Detection:** MTCNN or RetinaFace detects face bounding boxes and facial landmarks (eyes, nose, mouth corners).
-**Step 2 â†’ Face Alignment:** Apply affine transformation to align the face to a canonical position using eye coordinates.
-**Step 3 â†’ Feature Extraction:** Pass aligned face through a deep CNN (FaceNet, ArcFace, CosFace) to produce a 128-d or 512-d embedding vector.
-**Step 4 â†’ Matching:** Compare embedding against enrolled embeddings using cosine similarity or Euclidean distance. If below threshold â†’ match found.
+**Step 1 → Face Detection:** MTCNN or RetinaFace detects face bounding boxes and facial landmarks (eyes, nose, mouth corners).
+**Step 2 → Face Alignment:** Apply affine transformation to align the face to a canonical position using eye coordinates.
+**Step 3 → Feature Extraction:** Pass aligned face through a deep CNN (FaceNet, ArcFace, CosFace) to produce a 128-d or 512-d embedding vector.
+**Step 4 → Matching:** Compare embedding against enrolled embeddings using cosine similarity or Euclidean distance. If below threshold → match found.
 
-**Architecture â†’ FaceNet with Triplet Loss:**
+**Architecture → FaceNet with Triplet Loss:**
 ```
-Anchor (Face A)  â”€â”€â†’ CNN â”€â”€â†’ Embedding: [0.23, 0.87, ..., 0.12]
-Positive (Face A) â”€â”€â†’ CNN â”€â”€â†’ Embedding: [0.25, 0.85, ..., 0.15]
-Negative (Face B) â”€â”€â†’ CNN â”€â”€â†’ Embedding: [0.91, 0.23, ..., 0.88]
+Anchor (Face A)  ──→ CNN ──→ Embedding: [0.23, 0.87, ..., 0.12]
+Positive (Face A) ──→ CNN ──→ Embedding: [0.25, 0.85, ..., 0.15]
+Negative (Face B) ──→ CNN ──→ Embedding: [0.91, 0.23, ..., 0.88]
 
 Triplet Loss: max(d(anchor, positive) - d(anchor, negative) + margin, 0)
 ```
 
 **Key challenges:**
-- **Illumination variation** â†’ same face looks different in shadow vs sunlight
-- **Aging** â†’ face changes over years
-- **Pose variation** â†’ profile vs frontal
-- **Occlusion** â†’ sunglasses, masks, scarves
-- **Spoofing** â†’ photos, videos, 3D masks (solved by liveness detection)
+- **Illumination variation** → same face looks different in shadow vs sunlight
+- **Aging** → face changes over years
+- **Pose variation** → profile vs frontal
+- **Occlusion** → sunglasses, masks, scarves
+- **Spoofing** → photos, videos, 3D masks (solved by liveness detection)
 
-**Code â†’ Face Recognition Inference:**
+**Code → Face Recognition Inference:**
 ```python
 import cv2
 import numpy as np
@@ -1748,13 +1748,13 @@ CV is revolutionizing radiology, pathology, and ophthalmology:
 | Skin cancer screening | Dermoscopy | Classification (binary) | EfficientNet, ViT |
 
 **Challenges specific to medical CV:**
-- **Limited labeled data** â†’ expert annotation is expensive and time-consuming
-- **Class imbalance** â†’ disease cases are rare compared to healthy
-- **Regulatory approval** â†’ FDA, CE marking required before clinical use
-- **Domain shift** â†’ images from different hospitals use different scanners/protocols
-- **Explainability** â†’ doctors need to understand why the model made a prediction (saliency maps, Grad-CAM)
+- **Limited labeled data** → expert annotation is expensive and time-consuming
+- **Class imbalance** → disease cases are rare compared to healthy
+- **Regulatory approval** → FDA, CE marking required before clinical use
+- **Domain shift** → images from different hospitals use different scanners/protocols
+- **Explainability** → doctors need to understand why the model made a prediction (saliency maps, Grad-CAM)
 
-**Code â†’ Medical Image Segmentation Inference:**
+**Code → Medical Image Segmentation Inference:**
 ```python
 import torch
 import torch.nn.functional as F
@@ -1768,7 +1768,7 @@ model.eval()
 
 # Load MRI volume
 nifti = nib.load('brain_mri.nii.gz')
-volume = nifti.get_fdata()                    # (240, 240, 155) â†’ 155 slices
+volume = nifti.get_fdata()                    # (240, 240, 155) → 155 slices
 slice_2d = volume[:, :, 80]                   # Extract middle slice
 slice_norm = (slice_2d - slice_2d.mean()) / slice_2d.std()
 
@@ -1789,11 +1789,11 @@ AR filters (Snapchat, Instagram, TikTok, Apple Memoji) overlay virtual content o
 
 **Pipeline:**
 
-**Step 1 â†’ Face Detection:** Detect faces at 30+ FPS using lightweight models (MobileNet-SSD, BlazeFace).
-**Step 2 â†’ Landmark Detection:** Predict 68 or 468 facial landmarks (eyes, eyebrows, nose, mouth, jawline).
-**Step 3 â†’ Head Pose Estimation:** Solve Perspective-n-Point (PnP) to estimate 3D head rotation and translation.
-**Step 4 â†’ 3D Mesh Fitting:** Fit a 3D face mesh to landmarks (mediapipe, ARKit).
-**Step 5 â†’ Rendering:** Render virtual content (hat, glasses, dog ears) anchored to 3D landmarks. Uses blending, lighting, and physics.
+**Step 1 → Face Detection:** Detect faces at 30+ FPS using lightweight models (MobileNet-SSD, BlazeFace).
+**Step 2 → Landmark Detection:** Predict 68 or 468 facial landmarks (eyes, eyebrows, nose, mouth, jawline).
+**Step 3 → Head Pose Estimation:** Solve Perspective-n-Point (PnP) to estimate 3D head rotation and translation.
+**Step 4 → 3D Mesh Fitting:** Fit a 3D face mesh to landmarks (mediapipe, ARKit).
+**Step 5 → Rendering:** Render virtual content (hat, glasses, dog ears) anchored to 3D landmarks. Uses blending, lighting, and physics.
 
 **Performance requirements:**
 - **<10ms** per frame for face tracking (to leave budget for rendering)
@@ -1802,9 +1802,9 @@ AR filters (Snapchat, Instagram, TikTok, Apple Memoji) overlay virtual content o
 
 ## 13.12 Vision Transformers (ViT)
 
-**Real-World Analogy â†’ Reading a Page vs Seeing the Whole Page**
+**Real-World Analogy → Reading a Page vs Seeing the Whole Page**
 
-A CNN processes an image like reading a book word-by-word in a small window â†’ it sees local patterns and gradually builds up understanding. A Vision Transformer processes it like scanning the entire page at once â†’ it sees how every patch relates to every other patch from the very first layer.
+A CNN processes an image like reading a book word-by-word in a small window → it sees local patterns and gradually builds up understanding. A Vision Transformer processes it like scanning the entire page at once → it sees how every patch relates to every other patch from the very first layer.
 
 The Vision Transformer (Dosovitskiy et al., 2021) applies the transformer architecture directly to image patches, showing that pure attention mechanisms can match or exceed CNNs when pre-trained on sufficient data.
 
@@ -1829,41 +1829,41 @@ The Vision Transformer (Dosovitskiy et al., 2021) applies the transformer archit
 
 
 **Step 1:** Resize image to $224 \times 224 \times 3$.
-**Step 2:** Divide into $16 \times 16$ patches â†’ $196$ patches of dimension $768$.
-**Step 3:** Linear projection of each patch to $D=768$ â†’ patch embeddings.
-**Step 4:** Add learnable positional embeddings (197 Ãƒâ€” 768 â†’ includes [CLS] token).
+**Step 2:** Divide into $16 \times 16$ patches → $196$ patches of dimension $768$.
+**Step 3:** Linear projection of each patch to $D=768$ → patch embeddings.
+**Step 4:** Add learnable positional embeddings (197 × 768 → includes [CLS] token).
 **Step 5:** Prepend [CLS] token embedding (also learned).
 **Step 6:** Pass through $L=12$ (ViT-Base) transformer encoder blocks.
 **Step 7:** Extract the [CLS] token's final representation.
-**Step 8:** Feed [CLS] through classification head (LayerNorm â†’ MLP).
+**Step 8:** Feed [CLS] through classification head (LayerNorm → MLP).
 **Step 9:** Apply softmax to get class probabilities.
 
 **Pseudocode:**
 ```
 FUNCTION vit_forward(image, model):
-    patches â† EXTRACT_PATCHES(image, patch_size=16)   // 196 Ãƒâ€” 768
-    embeddings â† LINEAR_PROJECTION(patches)            // 196 Ãƒâ€” 768
+    patches ← EXTRACT_PATCHES(image, patch_size=16)   // 196 × 768
+    embeddings ← LINEAR_PROJECTION(patches)            // 196 × 768
 
     // Prepend [CLS] token
-    cls_token â† model.cls_embedding                    // 1 Ãƒâ€” 768
-    sequence â† CONCAT(cls_token, embeddings)           // 197 Ãƒâ€” 768
+    cls_token ← model.cls_embedding                    // 1 × 768
+    sequence ← CONCAT(cls_token, embeddings)           // 197 × 768
 
     // Add positional embeddings
-    sequence â† sequence + model.pos_embedding          // 197 Ãƒâ€” 768
+    sequence ← sequence + model.pos_embedding          // 197 × 768
 
     // Transformer encoder blocks
     FOR each block in model.blocks:
-        norm1 â† LAYERNORM(sequence)
-        attn â† MULTIHEAD_ATTENTION(norm1)
-        sequence â† sequence + attn                      // Residual
-        norm2 â† LAYERNORM(sequence)
-        mlp â† MLP(norm2)
-        sequence â† sequence + mlp                       // Residual
+        norm1 ← LAYERNORM(sequence)
+        attn ← MULTIHEAD_ATTENTION(norm1)
+        sequence ← sequence + attn                      // Residual
+        norm2 ← LAYERNORM(sequence)
+        mlp ← MLP(norm2)
+        sequence ← sequence + mlp                       // Residual
 
     // Classify
-    cls_out â† sequence[0]                               // [CLS] token only
-    logits â† model.classifier(cls_out)
-    probs â† softmax(logits)
+    cls_out ← sequence[0]                               // [CLS] token only
+    logits ← model.classifier(cls_out)
+    probs ← softmax(logits)
     RETURN probs
 END FUNCTION
 ```
@@ -1887,11 +1887,11 @@ END FUNCTION
 | **Swin Transformer** | Hierarchical + shifted window attention | $O(N)$ instead of $O(N^2)$ via windowed attention |
 | **CvT** (Convolutional ViT) | Conv token embedding + conv attention projection | Better low-level feature capture |
 | **MaxViT** | Multi-axis attention (local + global) | SOTA efficiency on mobile |
-| **MobileViT** | Lightweight ViT for mobile (combined conv + transformer) | 5M parameters, 2Ãƒâ€” faster than MobileNetV3 |
+| **MobileViT** | Lightweight ViT for mobile (combined conv + transformer) | 5M parameters, 2× faster than MobileNetV3 |
 
 ## 13.13 Generative Image Models
 
-**Real-World Analogy â†’ A Sketch Artist vs a Restorer**
+**Real-World Analogy → A Sketch Artist vs a Restorer**
 
 Imagine two artists: a sketch artist who has never seen a person but must draw a face from pure imagination (random noise), and a restorer who starts with a heavily damaged painting and progressively removes the damage to reveal the original.
 
@@ -1919,28 +1919,28 @@ $$\min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{\text{data}}}[\log D(x)] + \math
 5. Train generator to minimize $\log(1 - D(G(z)))$ (or maximize $\log D(G(z))$ for better gradients).
 6. Repeat until Nash equilibrium (generator produces realistic images).
 
-**Algorithm â†’ GAN Training:**
+**Algorithm → GAN Training:**
 ```
 FUNCTION train_gan(generator, discriminator, data, epochs):
     FOR epoch IN 1..epochs:
         FOR batch IN data:
             // Real images
-            real â† sample_batch(data)             // (B, 3, 64, 64)
+            real ← sample_batch(data)             // (B, 3, 64, 64)
 
             // Generate fake images
-            z â† sample_noise(B, latent_dim=100)   // (B, 100)
-            fake â† generator(z)                   // (B, 3, 64, 64)
+            z ← sample_noise(B, latent_dim=100)   // (B, 100)
+            fake ← generator(z)                   // (B, 3, 64, 64)
 
             // Train discriminator (maximize log D(x) + log(1 - D(G(z))))
-            d_real â† discriminator(real)
-            d_fake â† discriminator(fake.detach()) // Stop gradient to generator
-            d_loss â† -(log(d_real).mean() + log(1 - d_fake).mean())
+            d_real ← discriminator(real)
+            d_fake ← discriminator(fake.detach()) // Stop gradient to generator
+            d_loss ← -(log(d_real).mean() + log(1 - d_fake).mean())
             d_loss.backward()
             d_optimizer.step()
 
             // Train generator (minimize log(1 - D(G(z))) OR maximize log D(G(z)))
-            d_fake_again â† discriminator(fake)
-            g_loss â† -log(d_fake_again).mean()    // Generator wants discriminator to be wrong
+            d_fake_again ← discriminator(fake)
+            g_loss ← -log(d_fake_again).mean()    // Generator wants discriminator to be wrong
             g_loss.backward()
             g_optimizer.step()
 
@@ -1957,7 +1957,7 @@ END FUNCTION
 | StyleGAN | 2019 | Style-based generator (mapping network + AdaIN); disentangled latent space |
 | StyleGAN2 | 2020 | Improved normalization; removed artifacts |
 | StyleGAN3 | 2021 | Alias-free; equivariant to translation/rotation |
-| BigGAN | 2019 | Large-scale GAN (512 batch, class-conditional) â†’ SOTA FID |
+| BigGAN | 2019 | Large-scale GAN (512 batch, class-conditional) → SOTA FID |
 
 ### 13.13.2 Diffusion Models
 
@@ -1968,7 +1968,7 @@ Denoising Diffusion Probabilistic Models (DDPMs, Ho et al., 2020) learn to rever
 
 $$q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I)$$
 
-After $T$ steps, $x_T \sim \mathcal{N}(0, I)$ â†’ pure noise.
+After $T$ steps, $x_T \sim \mathcal{N}(0, I)$ → pure noise.
 
 **Reverse process (learned):** Neural network $\epsilon_\theta$ predicts the noise added at each step:
 
@@ -1978,23 +1978,23 @@ $$p_\theta(x_{t-1} | x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\the
 
 The network simply predicts the noise $\epsilon$ that was added. At inference, noise is iteratively removed.
 
-**Algorithm â†’ DDPM Sampling:**
+**Algorithm → DDPM Sampling:**
 ```
 FUNCTION sample_diffusion(model, num_steps=1000):
-    x_T â† randn(3, 64, 64)                  // Pure Gaussian noise
+    x_T ← randn(3, 64, 64)                  // Pure Gaussian noise
 
-    FOR t â† num_steps DOWNTO 1:
-        z â† 0 IF t == 1 ELSE randn_like(x)  // Random noise (except last step)
+    FOR t ← num_steps DOWNTO 1:
+        z ← 0 IF t == 1 ELSE randn_like(x)  // Random noise (except last step)
 
         // Predict noise at step t
-        predicted_noise â† model(x_t, t)
+        predicted_noise ← model(x_t, t)
 
         // Compute x_{t-1} from x_t
-        alpha_bar â† PRODUCT(sqrt(1 - beta_s) FOR s = 1..t)
-        sigma â† sqrt((1 - alpha_bar_{t-1}) * beta_t / (1 - alpha_bar_t))
+        alpha_bar ← PRODUCT(sqrt(1 - beta_s) FOR s = 1..t)
+        sigma ← sqrt((1 - alpha_bar_{t-1}) * beta_t / (1 - alpha_bar_t))
 
-        x_{t-1} â† 1/sqrt(1 - beta_t) * (x_t - beta_t/sqrt(1 - alpha_bar_t) * predicted_noise)
-        x_{t-1} â† x_{t-1} + sigma * z      // Add stochastic noise
+        x_{t-1} ← 1/sqrt(1 - beta_t) * (x_t - beta_t/sqrt(1 - alpha_bar_t) * predicted_noise)
+        x_{t-1} ← x_{t-1} + sigma * z      // Add stochastic noise
 
     RETURN x_0                              // Generated image
 END FUNCTION
@@ -2003,19 +2003,19 @@ END FUNCTION
 ### 13.13.3 Latent Diffusion Models (Stable Diffusion)
 
 
-Standard diffusion models operate in pixel space â†’ slow and memory-intensive. Latent diffusion (Rombach et al., 2022) operates in a compressed latent space learned by a VAE (Variational Autoencoder).
+Standard diffusion models operate in pixel space → slow and memory-intensive. Latent diffusion (Rombach et al., 2022) operates in a compressed latent space learned by a VAE (Variational Autoencoder).
 
 **Pipeline:**
 
-**Step 1 â†’ Compression:** VAE encoder compresses $512\times512\times3$ image â†’ $64\times64\times4$ latent.
-**Step 2 â†’ Diffusion:** U-Net denoises in the compressed $64\times64$ latent space (128Ãƒâ€” fewer pixels).
-**Step 3 â†’ Conditioning:** Text prompt â†’ CLIP text encoder â†’ cross-attention into U-Net.
-**Step 4 â†’ Decode:** VAE decoder reconstructs $64\times64\times4$ latent â†’ $512\times512\times3$ image.
+**Step 1 → Compression:** VAE encoder compresses $512\times512\times3$ image → $64\times64\times4$ latent.
+**Step 2 → Diffusion:** U-Net denoises in the compressed $64\times64$ latent space (128× fewer pixels).
+**Step 3 → Conditioning:** Text prompt → CLIP text encoder → cross-attention into U-Net.
+**Step 4 → Decode:** VAE decoder reconstructs $64\times64\times4$ latent → $512\times512\times3$ image.
 
 **Why latent diffusion is faster:**
-- Pixel-space diffusion: $512^2 \times 3 = 786K$ dimensions per step Ãƒâ€” 1000 steps.
-- Latent diffusion: $64^2 \times 4 = 16K$ dimensions per step Ãƒâ€” 50 steps (DDIM sampler).
-- **~300Ãƒâ€” fewer total operations.**
+- Pixel-space diffusion: $512^2 \times 3 = 786K$ dimensions per step × 1000 steps.
+- Latent diffusion: $64^2 \times 4 = 16K$ dimensions per step × 50 steps (DDIM sampler).
+- **~300× fewer total operations.**
 
 ### 13.13.4 Python Implementation
 
@@ -2086,7 +2086,7 @@ image.save("cat_astronaut.png")
 
 | Metric | Measures | Range | Good Score |
 |--------|----------|-------|------------|
-| **FID** (FrÃƒÂ©chet Inception Distance) | Distribution distance between real and generated features | 0 = identical, higher = worse | <10 (excellent), &lt;30 (good) |
+| **FID** (Fréchet Inception Distance) | Distribution distance between real and generated features | 0 = identical, higher = worse | <10 (excellent), &lt;30 (good) |
 | **IS** (Inception Score) | Both quality and diversity of generated images | Higher = better | >100 (excellent, ImageNet) |
 | **CLIP Score** | Alignment between generated image and text prompt | Higher = better | >30 (good alignment) |
 | **LPIPS** | Perceptual similarity between images | 0 = identical | <0.1 (very similar) |

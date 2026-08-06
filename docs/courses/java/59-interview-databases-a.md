@@ -1,4 +1,4 @@
-﻿# Chapter 59: Database Interview Q&A for Java & Spring Boot Developers
+# Chapter 59: Database Interview Q&A for Java & Spring Boot Developers
 
 > **Previous:** [Databases Interview Q&amp;A](./59-interview-databases.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-b.md)
 
@@ -56,7 +56,7 @@ JDBC (Java Database Connectivity) is a low-level API that lets you execute raw S
 Use JDBC when you need fine-grained control over SQL, are doing bulk operations where ORM overhead hurts, or are interacting with database-specific features. Use JPA when you want to reduce boilerplate, need automatic dirty checking, lazy loading, or a unit-of-work pattern, and your queries are reasonably standard.
 
 ```java
-// â”€â”€ JDBC approach â”€â”€
+// ── JDBC approach ──
 public User findUserByIdJdbc(long id) {
     String sql = "SELECT id, name, email FROM users WHERE id = ?";
     try (Connection conn = dataSource.getConnection();
@@ -77,7 +77,7 @@ public User findUserByIdJdbc(long id) {
     return null;
 }
 
-// â”€â”€ JPA approach â”€â”€
+// ── JPA approach ──
 @Repository
 public class UserRepository {
     @PersistenceContext
@@ -99,8 +99,8 @@ JPA wraps JDBC under the hood. Every JPA operation translates to JDBC calls even
 
 These control how Hibernate synchronizes your entity mappings with the database schema:
 
-- `validate`: Checks that the database schema matches your entities. Throws an exception on mismatch. Safe for production â†’ it never modifies the schema.
-- `update`: Automatically alters the schema to match your entities (adds new tables/columns, but never drops anything). **Not safe for production** â†’ it can make destructive guesses in edge cases.
+- `validate`: Checks that the database schema matches your entities. Throws an exception on mismatch. Safe for production → it never modifies the schema.
+- `update`: Automatically alters the schema to match your entities (adds new tables/columns, but never drops anything). **Not safe for production** → it can make destructive guesses in edge cases.
 - `create`: Drops all existing tables and recreates them from your entities. Data loss guaranteed. Useful for testing only.
 - `create-drop`: Same as `create`, but also drops the schema when the session factory closes. Ideal for embedded databases in unit tests.
 
@@ -134,7 +134,7 @@ public class Post {
     private List<Comment> comments;
 }
 
-// Ã¢ÂÅ’ Triggers N+1 queries:
+// ❌ Triggers N+1 queries:
 // SELECT p FROM Post p                          -- 1 query
 // for each post: SELECT c FROM Comment c WHERE c.post_id = ?  -- N queries
 List<Post> posts = em.createQuery("SELECT p FROM Post p", Post.class)
@@ -146,15 +146,15 @@ for (Post p : posts) {
 
 Solutions, from best to worst:
 
-**1. JOIN FETCH â†’ one query with a join:**
+**1. JOIN FETCH → one query with a join:**
 ```java
-// Ã¢Å“â€¦ Single query with LEFT JOIN FETCH
+// ✅ Single query with LEFT JOIN FETCH
 TypedQuery<Post> q = em.createQuery(
     "SELECT p FROM Post p LEFT JOIN FETCH p.comments", Post.class);
 List<Post> posts = q.getResultList();
 ```
 
-**2. `@EntityGraph` â†’ declarative fetch plan:**
+**2. `@EntityGraph` → declarative fetch plan:**
 ```java
 @Entity
 @NamedEntityGraph(name = "Post.comments", attributeNodes = @NamedAttributeNode("comments"))
@@ -165,21 +165,21 @@ public class Post { /* ... */ }
 List<Post> findAll();
 ```
 
-**3. Hibernate `@BatchSize` â†’ loads lazy proxies in batches:**
+**3. Hibernate `@BatchSize` → loads lazy proxies in batches:**
 ```java
 @OneToMany(mappedBy = "post")
 @BatchSize(size = 20)
 private List<Comment> comments;
 ```
 
-**4. DTO projection â†’ avoid entity loading entirely:**
+**4. DTO projection → avoid entity loading entirely:**
 ```java
 List<PostSummary> summaries = em.createQuery(
     "SELECT new com.example.PostSummary(p.id, p.title, SIZE(p.comments)) FROM Post p",
     PostSummary.class).getResultList();
 ```
 
-JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fetching multiple collections â†’ use `Set` instead of `List` or fetch one collection per query.
+JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fetching multiple collections → use `Set` instead of `List` or fetch one collection per query.
 
 ---
 
@@ -205,8 +205,8 @@ public class Order {
 Rules of thumb:
 - Always prefer `LAZY` for `@OneToMany` and `@ManyToMany`. Eager loading a large collection can pull in the entire database.
 - `@ManyToOne` defaults to `EAGER`. Consider changing it to `LAZY` and using `JOIN FETCH` when you actually need the parent.
-- `@Basic` (scalar fields) is always `EAGER` â†’ there is no lazy loading for simple columns unless you enable bytecode enhancement.
-- Eager loading via `@ManyToOne` can cascade into multiple joins: `Order â†’ Customer â†’ Address â†’ Country`. One simple query becomes a 4-table Cartesian product.
+- `@Basic` (scalar fields) is always `EAGER` → there is no lazy loading for simple columns unless you enable bytecode enhancement.
+- Eager loading via `@ManyToOne` can cascade into multiple joins: `Order → Customer → Address → Country`. One simple query becomes a 4-table Cartesian product.
 
 The `@NamedEntityGraph` approach gives you the best of both worlds: LAZY by default, eager via explicit fetch graph when needed.
 
@@ -228,7 +228,7 @@ public class Account {
     private long version;  // incremented on every update
 }
 
-// Usage â†’ retry on conflict:
+// Usage → retry on conflict:
 @Transactional
 public void transfer(Long fromId, Long toId, BigDecimal amount) {
     try {
@@ -262,9 +262,9 @@ public void transfer(Long fromId, Long toId, BigDecimal amount) {
 ```
 
 Pessimistic lock modes:
-- `PESSIMISTIC_READ` â†’ shared lock, others can read but not write
-- `PESSIMISTIC_WRITE` â†’ exclusive lock, no one else can read or write
-- `PESSIMISTIC_FORCE_INCREMENT` â†’ pessimistic lock + version increment on commit
+- `PESSIMISTIC_READ` → shared lock, others can read but not write
+- `PESSIMISTIC_WRITE` → exclusive lock, no one else can read or write
+- `PESSIMISTIC_FORCE_INCREMENT` → pessimistic lock + version increment on commit
 
 Use optimistic for read-heavy workloads with rare writes. Use pessimistic for financial transactions, inventory reservations, and any operation where retry is expensive or unacceptable.
 
@@ -277,7 +277,7 @@ Use optimistic for read-heavy workloads with rare writes. Use pessimistic for fi
 `@Transactional` is declarative transaction management. Spring wraps the method in a proxy that begins a transaction before the method and commits (or rolls back) after it. Manual management uses `TransactionTemplate` or `PlatformTransactionManager` directly.
 
 ```java
-// â”€â”€ Declarative with @Transactional â”€â”€
+// ── Declarative with @Transactional ──
 @Service
 public class OrderService {
     @Transactional
@@ -288,7 +288,7 @@ public class OrderService {
     }
 }
 
-// â”€â”€ Manual with TransactionTemplate â”€â”€
+// ── Manual with TransactionTemplate ──
 @Service
 public class OrderService {
     private final TransactionTemplate txTemplate;
@@ -329,16 +329,16 @@ Key `@Transactional` attributes:
 
 **Answer:**
 
-**First-level cache** (L1) is the `EntityManager`/`Session`-scoped cache. Every entity loaded or persisted within a session is stored in L1. Subsequent lookups by the same ID within the same session hit the cache instead of the database. L1 is always enabled and cannot be disabled â†’ it is a core part of the unit-of-work pattern.
+**First-level cache** (L1) is the `EntityManager`/`Session`-scoped cache. Every entity loaded or persisted within a session is stored in L1. Subsequent lookups by the same ID within the same session hit the cache instead of the database. L1 is always enabled and cannot be disabled → it is a core part of the unit-of-work pattern.
 
 ```java
 // First-level cache in action:
 User u1 = em.find(User.class, 1L);  // SQL: SELECT ... WHERE id = 1
-User u2 = em.find(User.class, 1L);  // L1 cache hit â†’ no SQL
+User u2 = em.find(User.class, 1L);  // L1 cache hit → no SQL
 
 em.clear();  // clears L1 cache
 
-User u3 = em.find(User.class, 1L);  // SQL again â†’ L1 was empty
+User u3 = em.find(User.class, 1L);  // SQL again → L1 was empty
 ```
 
 **Second-level cache** (L2) is a `SessionFactory`-scoped cache shared across all sessions. You must explicitly enable it and configure a cache provider (Hazelcast, Redis, Ehcache, or the built-in `hibernate-jcache`).
@@ -374,7 +374,7 @@ Cache concurrency strategies:
 - `NONSTRICT_READ_WRITE`: for data that rarely conflicts. Weaker isolation.
 - `TRANSACTIONAL`: for JTA environments. Requires a transactional cache provider.
 
-L2 cache is not a replacement for a well-tuned database. Use it sparingly â†’ cache only reference data (countries, status codes, configuration) and data that is expensive to compute but rarely changes.
+L2 cache is not a replacement for a well-tuned database. Use it sparingly → cache only reference data (countries, status codes, configuration) and data that is expensive to compute but rarely changes.
 
 ---
 
@@ -439,46 +439,46 @@ List<User> findActiveUsersByEmailDomain(@Param("domain") String domain);
 
 **Answer:**
 
-The `PersistenceContext` is Hibernate's first-level cache â€” a map of managed entity instances associated with a specific `EntityManager`/`Session`. Every entity exists in one of four states:
+The `PersistenceContext` is Hibernate's first-level cache — a map of managed entity instances associated with a specific `EntityManager`/`Session`. Every entity exists in one of four states:
 
 ```java
-// 1. TRANSIENT â€” entity just created, not associated with a session
+// 1. TRANSIENT — entity just created, not associated with a session
 User user = new User("alice@example.com", "Alice");
 //   No ID, not in PersistenceContext, not in database
 
-// 2. MANAGED â€” entity is associated with a session (loaded or persisted)
+// 2. MANAGED — entity is associated with a session (loaded or persisted)
 em.persist(user);          // Now MANAGED: in PersistenceContext, will be inserted on flush
 User u = em.find(User.class, 1L);  // MANAGED: loaded into PersistenceContext
 
-// 3. DETACHED â€” entity was managed but session is closed or entity was evicted
+// 3. DETACHED — entity was managed but session is closed or entity was evicted
 em.detach(user);           // Now DETACHED: removed from PersistenceContext
 em.close();                // All previously loaded entities become DETACHED
 
-// 4. REMOVED â€” entity scheduled for deletion
+// 4. REMOVED — entity scheduled for deletion
 em.remove(user);           // REMOVED: marked for deletion, removed on flush
 ```
 
 State transition diagram:
 ```
                 persist()          get/load/find
-Transient â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Managed â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Database
-    â”‚                         â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€ remove() â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-                              â”‚
+Transient ──────────────► Managed ◄─────────────── Database
+    │                         │
+    └─────── remove() ────────┤
+                              │
                     detach()/close()
-                              â”‚
-                              â–¼
+                              │
+                              ▼
                           Detached
-                              â”‚
-                    merge() â”€â”€â”˜
+                              │
+                    merge() ──┘
 ```
 
 **Key behaviors per state:**
-- **Managed:** Dirty checking works â€” any field change auto-generates UPDATE on flush. Entity is returned from PersistenceContext on subsequent `find()` by same ID.
+- **Managed:** Dirty checking works — any field change auto-generates UPDATE on flush. Entity is returned from PersistenceContext on subsequent `find()` by same ID.
 - **Detached:** Hibernate does NOT track changes. Re-attach with `em.merge(entity)` which returns a new managed copy.
 - **Removed:** Entity is deleted from DB on flush. After flush, the entity instance should not be used.
 
-> **Common Mistake:** Calling `save()` on an already-managed entity re-saves it unnecessarily. Spring Data JPA's `save()` calls `persist()` for new entities and `merge()` for detached ones â€” it detects state by checking `id == null`.
+> **Common Mistake:** Calling `save()` on an already-managed entity re-saves it unnecessarily. Spring Data JPA's `save()` calls `persist()` for new entities and `merge()` for detached ones — it detects state by checking `id == null`.
 
 ---
 
@@ -488,11 +488,11 @@ Transient â”€â”€â”€â”€â”€â”€â”€â”€â”�
 
 These two settings work together to batch multiple INSERT statements into a single JDBC batch, dramatically improving write performance.
 
-- `hibernate.jdbc.batch_size`: Controls the maximum number of SQL statements Hibernate will batch together. Default is 0 (batching disabled). Set to 20â€“50 for optimal performance.
+- `hibernate.jdbc.batch_size`: Controls the maximum number of SQL statements Hibernate will batch together. Default is 0 (batching disabled). Set to 20–50 for optimal performance.
 - `hibernate.order_inserts`: When true, Hibernate reorders INSERT statements so that rows for the same table are grouped together. This allows JDBC batching to work effectively.
 
 ```properties
-# application.properties â€” enable batch inserts
+# application.properties — enable batch inserts
 spring.jpa.properties.hibernate.jdbc.batch_size=50
 spring.jpa.properties.hibernate.order_inserts=true
 spring.jpa.properties.hibernate.order_updates=true
@@ -505,9 +505,9 @@ spring.jpa.properties.hibernate.jdbc.batch_versioned_data=true
 //   INSERT INTO inventory (product_id, qty) VALUES (?, ?)  -- for each inventory
 //
 // With batching + ordering:
-//   INSERT INTO product (name, price) VALUES (?, ?)  Ã—50  (batched)
-//   INSERT INTO product (name, price) VALUES (?, ?)  Ã—50  (batched)
-//   INSERT INTO inventory (product_id, qty) VALUES (?, ?)  Ã—50  (batched)
+//   INSERT INTO product (name, price) VALUES (?, ?)  ×50  (batched)
+//   INSERT INTO product (name, price) VALUES (?, ?)  ×50  (batched)
+//   INSERT INTO inventory (product_id, qty) VALUES (?, ?)  ×50  (batched)
 
 @Id
 @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "batch_seq")
@@ -547,9 +547,9 @@ public Page<Order> getOrders(int page, int size) {
 
 Generated SQL: `SELECT * FROM orders WHERE customer_id = ? ORDER BY created_at DESC LIMIT ? OFFSET ?`
 
-**Problem with offset:** As OFFSET grows, the database must scan and skip rows. Page 1 is fast, page 10,000 is very slow â€” the database reads all rows up to the offset.
+**Problem with offset:** As OFFSET grows, the database must scan and skip rows. Page 1 is fast, page 10,000 is very slow — the database reads all rows up to the offset.
 
-**2. Keyset (cursor-based) pagination â€” O(1) regardless of page depth:**
+**2. Keyset (cursor-based) pagination — O(1) regardless of page depth:**
 
 ```java
 // Requires a unique sortable key
@@ -560,7 +560,7 @@ List<Order> findNextPage(@Param("lastCreatedAt") LocalDateTime lastCreatedAt,
                          @Param("lastId") Long lastId,
                          Pageable pageable);
 
-// Usage â€” pass the last item's values as the cursor
+// Usage — pass the last item's values as the cursor
 public List<Order> getNextPage(Order lastOrder, int size) {
     return orderRepository.findNextPage(
         lastOrder.getCreatedAt(), lastOrder.getId(),
@@ -598,11 +598,11 @@ Use Page/Slice for UI with up to 1M rows. Use keyset pagination for infinite scr
 ### Mistake 1: Using `Set<Entity>` without proper equals/hashCode
 
 ```java
-// âŒ WRONG: HashSet uses hashCode() which may change or cause duplicate entries
+// ❌ WRONG: HashSet uses hashCode() which may change or cause duplicate entries
 @OneToMany
 private Set<Item> items = new HashSet<>();  // Items may not deduplicate correctly
 
-// âœ… CORRECT: Override equals/hashCode based on business key
+// ✅ CORRECT: Override equals/hashCode based on business key
 @OneToMany
 private Set<Item> items = new HashSet<>();  // Only if Item has proper equals/hashCode
 
@@ -613,25 +613,25 @@ private Set<Item> items = new HashSet<>();  // Only if Item has proper equals/ha
 ### Mistake 2: Calling `save()` inside a loop
 
 ```java
-// âŒ WRONG: Each save() flushes independently
+// ❌ WRONG: Each save() flushes independently
 for (Product p : products) {
     productRepository.save(p);  // N individual INSERTs
 }
 
-// âœ… CORRECT: saveAll() batches if configured properly
+// ✅ CORRECT: saveAll() batches if configured properly
 productRepository.saveAll(products);  // Single batch of INSERTs
 ```
 
 ### Mistake 3: Ignoring N+1 until production
 
 ```java
-// âŒ WRONG: No verification of generated SQL
+// ❌ WRONG: No verification of generated SQL
 List<Order> orders = orderRepository.findAll();
 for (Order o : orders) {
     System.out.println(o.getItems().size());  // N+1 silently triggers
 }
 
-// âœ… CORRECT: Enable SQL logging in dev
+// ✅ CORRECT: Enable SQL logging in dev
 // spring.jpa.show-sql=true
 // spring.jpa.properties.hibernate.format_sql=true
 // logging.level.org.hibernate.SQL=DEBUG
@@ -641,7 +641,7 @@ for (Order o : orders) {
 ### Mistake 4: Using `fetch = FetchType.EAGER` on multiple associations
 
 ```java
-// âŒ WRONG: Multiple EAGER associations cause Cartesian products
+// ❌ WRONG: Multiple EAGER associations cause Cartesian products
 @Entity
 public class Order {
     @ManyToOne(fetch = FetchType.EAGER) private Customer customer;
@@ -654,7 +654,7 @@ public class Order {
 //   LEFT JOIN payments p ON o.payment_id = p.id
 // This pulls ALL columns from 4 tables in one massive result!
 
-// âœ… CORRECT: All LAZY, fetch explicitly when needed
+// ✅ CORRECT: All LAZY, fetch explicitly when needed
 @Entity
 public class Order {
     @ManyToOne(fetch = FetchType.LAZY) private Customer customer;
@@ -666,12 +666,12 @@ public class Order {
 ### Mistake 5: Modifying persisted entities outside a transaction
 
 ```java
-// âŒ WRONG: Change made after transaction commits â€” no UPDATE generated
+// ❌ WRONG: Change made after transaction commits — no UPDATE generated
 @Transactional
 public void updatePrice(Long id, BigDecimal price) {
     Product p = productRepo.findById(id).orElseThrow();
     p.setPrice(price);
-    // transaction commits here â†’ dirty checking detects the change
+    // transaction commits here → dirty checking detects the change
 }
 
 // Calling outside transaction:
@@ -685,7 +685,7 @@ p.setPrice(newPrice);  // change is lost! No UPDATE sent to DB
 ### Mistake 6: Not handling LazyInitializationException
 
 ```java
-// âŒ WRONG: Lazy loading after session close
+// ❌ WRONG: Lazy loading after session close
 @Service
 public class OrderService {
     public Order getOrder(Long id) {
@@ -700,12 +700,12 @@ public class OrderController {
     public OrderDto getOrder(@PathVariable Long id) {
         Order order = orderService.getOrder(id);
         return new OrderDto(order.getId(), order.getItems().size());
-        // âŒ LazyInitializationException! order.getItems() triggers lazy load
+        // ❌ LazyInitializationException! order.getItems() triggers lazy load
         // but the session is already closed
     }
 }
 
-// âœ… CORRECT: Fetch eagerly within the transaction or use DTO
+// ✅ CORRECT: Fetch eagerly within the transaction or use DTO
 @Service
 public class OrderService {
     @Transactional(readOnly = true)
@@ -755,11 +755,11 @@ class BatchInsertSimulator {
       return this.allocatedIds[this.idIndex++];
     }
     if (this.idGeneration === 'IDENTITY') {
-      // IDENTITY requires immediate insert â€” no pre-allocation
-      console.log('[IDENTITY] INSERT required to get ID â€” batching disabled');
+      // IDENTITY requires immediate insert — no pre-allocation
+      console.log('[IDENTITY] INSERT required to get ID — batching disabled');
       return -1;
     }
-    // UUID â€” client-side generation
+    // UUID — client-side generation
     return Date.now() + Math.floor(Math.random() * 100000);
   }
 
@@ -779,7 +779,7 @@ class BatchInsertSimulator {
         for (const entity of batchEntities) {
           entity.id = this.nextId();
           console.log(
-            `[INSERT] ${entity.sqlTable} id=${entity.id} (individual â€” no batching)`
+            `[INSERT] ${entity.sqlTable} id=${entity.id} (individual — no batching)`
           );
         }
       } else {
@@ -823,7 +823,7 @@ class BatchInsertSimulator {
     console.log(`IDENTITY: ${identityResult.totalTime}ms (${rowCount} round-trips)`);
     console.log(`SEQUENCE: ${sequenceResult.totalTime}ms (${Math.ceil(rowCount / 50)} round-trips)`);
     console.log(`UUID:     ${uuidResult.totalTime}ms (${Math.ceil(rowCount / 50)} round-trips)`);
-    console.log('\nðŸ† Winner: SEQUENCE with allocationSize matching batch size');
+    console.log('\n🏆 Winner: SEQUENCE with allocationSize matching batch size');
   }
 }
 
@@ -860,7 +860,7 @@ sequenceDiagram
     App->>DB: Execute SQL (INSERT/SELECT)
     DB-->>App: Result set
 
-    App->>CP: close() â†’ actually returns to pool
+    App->>CP: close() → actually returns to pool
     CP->>CP: Verify connection is still valid
     alt Connection stale
         CP->>DB: CLOSE stale connection
@@ -868,7 +868,7 @@ sequenceDiagram
     end
 ```
 
-## Chapter Quiz â€” Database (Part 2)
+## Chapter Quiz — Database (Part 2)
 
 4. Which ID generation strategy enables JDBC batch inserts?
     - A) IDENTITY
@@ -883,7 +883,7 @@ sequenceDiagram
 
 5. What is the main disadvantage of offset-based pagination for large datasets?
     - A) It only works with Oracle
-    - B) Performance degrades as OFFSET increases â€” the DB must scan skipped rows
+    - B) Performance degrades as OFFSET increases — the DB must scan skipped rows
     - C) It does not support sorting
     - D) It requires a native query
 
@@ -1028,7 +1028,7 @@ class SqlQueryAnalyzer {
     const selectCount = queries.filter(q => q.queryType === 'SELECT').length;
     if (selectCount > 5 && selectCount > queries.length * 0.7) {
       warnings.push(
-        `N+1 risk: ${selectCount} SELECT queries detected â€” consider JOIN FETCH or @EntityGraph`
+        `N+1 risk: ${selectCount} SELECT queries detected — consider JOIN FETCH or @EntityGraph`
       );
     }
     for (const q of queries) {
@@ -1046,15 +1046,15 @@ class SqlQueryAnalyzer {
     const warnings = this.detectNPlusOne(this.plans);
     return `
 Query Plan Analysis Summary
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+═══════════════════════════
 Total queries: ${this.plans.length}
 Total time: ${total.toFixed(1)}ms
-Warnings: ${warnings.length > 0 ? warnings.map(w => `  âš  ${w}`).join('\n') : 'None'}
+Warnings: ${warnings.length > 0 ? warnings.map(w => `  ⚠ ${w}`).join('\n') : 'None'}
     `.trim();
   }
 }
 
-// â”€â”€ Example: detecting N+1 in a blog post fetch â”€â”€
+// ── Example: detecting N+1 in a blog post fetch ──
 const analyzer = new SqlQueryAnalyzer();
 const plan1 = analyzer.analyze('SELECT * FROM posts WHERE author_id = 1');
 const plan2 = analyzer.analyze('SELECT * FROM comments WHERE post_id = 1');

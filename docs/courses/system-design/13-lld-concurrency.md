@@ -1,4 +1,4 @@
-﻿# Chapter 13: Low-Level Design: Concurrency and Threading
+# Chapter 13: Low-Level Design: Concurrency and Threading
 > **Previous:** [12 Lld Component Design](./12-lld-component-design.md) | **Next:** [14 Distributed Data Structures](./14-distributed-data-structures.md)
 
 ---
@@ -62,7 +62,7 @@ flowchart LR
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
 ![Concurrency and Threading Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/13-concurrency.png)
 
-A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructionsâ€”load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
+A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructions—load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
 
 A **critical section** is a region of code that accesses shared resources and must not be executed by more than one thread at a time. The goal of synchronization is to enforce mutual exclusion over critical sections.
 
@@ -167,7 +167,7 @@ If another thread modifies the counter between the read and the CAS, the CAS fai
 Speedup(S) = 1 / (s + p/N)
 ```
 
-where `N` is the number of processors. As `N ? 8`, the maximum speedup is `1/s`. If 10% of a task is serial, the absolute maximum speedup is 10Ã—, regardless of how many cores you add. This is Amdahl's sobering insight: serial bottlenecks dominate at scale.
+where `N` is the number of processors. As `N ? 8`, the maximum speedup is `1/s`. If 10% of a task is serial, the absolute maximum speedup is 10×, regardless of how many cores you add. This is Amdahl's sobering insight: serial bottlenecks dominate at scale.
 
 **Gustafson's Law** provides a different perspective: rather than fixing the problem size and measuring how fast it runs, fix the execution time and ask how large a problem can be solved. Since problem size typically grows with available parallelism, the scaled speedup is:
 
@@ -236,7 +236,7 @@ The JavaScript event loop is similar but runs on a single thread with a callback
 ### Actor Model
 
 
-The Actor model (Erlang, Akka) treats every entity as an **actor**â€”a computation unit that encapsulates state, behavior, and a mailbox. Actors communicate exclusively through asynchronous message passing; they never share state. Each actor processes messages sequentially from its mailbox.
+The Actor model (Erlang, Akka) treats every entity as an **actor**—a computation unit that encapsulates state, behavior, and a mailbox. Actors communicate exclusively through asynchronous message passing; they never share state. Each actor processes messages sequentially from its mailbox.
 
 Advantages:
 - No shared state means no locks, no race conditions.
@@ -612,9 +612,9 @@ class LockFreeStack:
                     return old_top.value
 ```
 
-Python's GIL provides memory safety for individual bytecode operations, but the CAS loop pattern is necessary in languages without a GIL (C++, Rust, Java with `AtomicReference`). The ABA problem manifests when a node is popped, freed, then reallocated at the same addressâ€”a hazard pointer scheme or tagged reference is needed.
+Python's GIL provides memory safety for individual bytecode operations, but the CAS loop pattern is necessary in languages without a GIL (C++, Rust, Java with `AtomicReference`). The ABA problem manifests when a node is popped, freed, then reallocated at the same address—a hazard pointer scheme or tagged reference is needed.
 
-### Example 7: async/await â€” Web Scraper with asyncio
+### Example 7: async/await — Web Scraper with asyncio
 
 ```python
 import asyncio
@@ -638,7 +638,7 @@ async def main():
 asyncio.run(main())
 ```
 
-**Execution flow**: `asyncio.run(main())` creates the event loop, runs `main`, and closes the loop. Inside `fetch_all`, `asyncio.gather` schedules all coroutines concurrently. At each `await`, the event loop suspends the coroutine and runs another ready coroutine. I/O waits do not block the threadâ€”they register a callback with the OS poller and resume when data arrives.
+**Execution flow**: `asyncio.run(main())` creates the event loop, runs `main`, and closes the loop. Inside `fetch_all`, `asyncio.gather` schedules all coroutines concurrently. At each `await`, the event loop suspends the coroutine and runs another ready coroutine. I/O waits do not block the thread—they register a callback with the OS poller and resume when data arrives.
 
 ### Example 8: Deadlock Detection with Wait-For Graph
 
@@ -802,7 +802,7 @@ A team is building a real-time chat service targeting 10 million daily active us
 
 The team redesigns using an event-loop architecture (Node.js with `async/await`). A single thread handles 10,000 connections using epoll for I/O multiplexing. Message broadcasting uses a Redis pub-sub channel: each server instance subscribes to all room channels and emits messages to connected clients without per-connection threads. Memory drops to 500 MB for the same 100,000 connections, and context switching overhead disappears.
 
-For stateful operations (user presence tracking, typing indicators), the team adopts an Actor-like model per chat room. Each room is an independent state machine processed sequentially, eliminating locking entirely. Room state is stored in Redis as a hash, and the event loop processes one message per room at a time. This hybrid architecture â€” event loop for I/O, actor-per-room for state â€” handles 1 million concurrent connections on 10 commodity servers with P99 message delivery latency under 50 ms. The key insight: matching concurrency model to workload type (I/O vs stateful computation) is more important than raw throughput.
+For stateful operations (user presence tracking, typing indicators), the team adopts an Actor-like model per chat room. Each room is an independent state machine processed sequentially, eliminating locking entirely. Room state is stored in Redis as a hash, and the event loop processes one message per room at a time. This hybrid architecture — event loop for I/O, actor-per-room for state — handles 1 million concurrent connections on 10 commodity servers with P99 message delivery latency under 50 ms. The key insight: matching concurrency model to workload type (I/O vs stateful computation) is more important than raw throughput.
 
 
 ### Implementation: Concurrency and Parallelism
@@ -1034,7 +1034,7 @@ async function simulateDiningPhilosophers(): Promise<void> {
     new DiningPhilosopher(i, chopsticks[i], chopsticks[(i + 1) % N], waiter, `Philosopher-${i}`)
   );
   await Promise.all(philosophers.map(p => p.dine(3)));
-  console.log('All philosophers finished dining â€” no deadlock occurred');
+  console.log('All philosophers finished dining — no deadlock occurred');
 }
 ```
 
@@ -1189,18 +1189,18 @@ export { Cache, Logger, computeHash, CacheEntry }
 ---
 ## Exercises
 ### Review Questions
-<details><summary>Solution</summary>1. Amdahl's Law: S = 1 / (s + (1-s)/N). With s = 0.05 (5% serial): at N = 32, S = 1 / (0.05 + 0.95/32) â‰ˆ 13.5Ã—. At N = 1024, S = 1 / (0.05 + 0.95/1024) â‰ˆ 18.6Ã—. The limit as N â†’ âˆž is 1/0.05 = 20Ã—. Diminishing returns occur because the serial fraction dominates: doubling cores from 512 to 1024 adds only 0.3Ã— speedup.
+<details><summary>Solution</summary>1. Amdahl's Law: S = 1 / (s + (1-s)/N). With s = 0.05 (5% serial): at N = 32, S = 1 / (0.05 + 0.95/32) ≈ 13.5×. At N = 1024, S = 1 / (0.05 + 0.95/1024) ≈ 18.6×. The limit as N → ∞ is 1/0.05 = 20×. Diminishing returns occur because the serial fraction dominates: doubling cores from 512 to 1024 adds only 0.3× speedup.
 2. The four conditions: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait. Eliminating hold-and-wait (acquire all locks atomically) is impractical when locks are discovered dynamically (e.g., a transaction that locks rows as it scans). The most practical target is circular wait via a global lock ordering.
 3. In a lock-free stack: thread A reads top = node X, thread B pops X (now top = Y), thread B pushes X back (top = X again, but X's next pointer may differ). Thread A's CAS succeeds but the stack state is corrupted. Hazard pointers prevent this by ensuring no thread's referenced node is freed.
 4. Actor model: direct message passing to named actors. CSP: communication via anonymous channels. Actors encapsulate state per entity; CSP decouples senders from receivers via channel intermediaries. Go's select and Erlang's receive demonstrate the ergonomic differences.
 5. NGINX uses an event loop because web serving is I/O-bound. A single thread handles thousands of connections using epoll. Thread-per-connection outperforms only when each connection requires significant CPU (e.g., video transcoding per stream) where parallel computation justifies context switching.</details>
 
 ### Application Problems
-<details><summary>Solution</summary>1. Lock striping implementation: create 16 buckets, each with a ReadWriteLock. For a put/get, hash the key to a bucket and acquire that bucket's lock. With 8 threads on 10,000 ops each, the striped version typically shows 4-8Ã— throughput improvement over a single global lock because contention is reduced by the number of buckets.
+<details><summary>Solution</summary>1. Lock striping implementation: create 16 buckets, each with a ReadWriteLock. For a put/get, hash the key to a bucket and acquire that bucket's lock. With 8 threads on 10,000 ops each, the striped version typically shows 4-8× throughput improvement over a single global lock because contention is reduced by the number of buckets.
 2. Resource hierarchy solution: number forks 0-4. Each philosopher picks up the lower-numbered fork first. Philosopher 4 (forks 4 and 0) picks up fork 0 first. This breaks the circular wait. The semaphore-based solution limits concurrency to 4 philosophers, guaranteeing at least one can eat.
-3. Async scraper typically completes 2-5Ã— faster than thread-pool scraper because there is no thread creation/context-switch overhead and the event loop handles I/O waits more efficiently. The gap widens with more URLs because thread pools hit OS scheduling limits.</details>
+3. Async scraper typically completes 2-5× faster than thread-pool scraper because there is no thread creation/context-switch overhead and the event loop handles I/O waits more efficiently. The gap widens with more URLs because thread pools hit OS scheduling limits.</details>
 
 ### Challenge Problem
-<details><summary>Solution</summary>Design a distributed rate limiter with token bucket: use a central Redis store for token state with Lua scripts for atomicity. Each `allow_request` call executes a Lua script that checks and decrements tokens atomically. For deadlock freedom, never acquire multiple locks â€” the Lua script operates on a single key. Metrics counters are atomic Redis INCR operations. Graceful degradation: if Redis is unreachable, fall back to a local in-memory token bucket that allows requests with degraded accuracy (may overshoot but never blocks).
+<details><summary>Solution</summary>Design a distributed rate limiter with token bucket: use a central Redis store for token state with Lua scripts for atomicity. Each `allow_request` call executes a Lua script that checks and decrements tokens atomically. For deadlock freedom, never acquire multiple locks — the Lua script operates on a single key. Metrics counters are atomic Redis INCR operations. Graceful degradation: if Redis is unreachable, fall back to a local in-memory token bucket that allows requests with degraded accuracy (may overshoot but never blocks).
 
-For the toy Redis-style KV store: implement a single-threaded event loop that polls a command queue. Use a min-heap for TTL expiry (timer wheel approximation). Compare throughput: single-threaded achieves 50K-100K ops/sec on modern hardware with no locking overhead. Multi-threaded with sharded locks may achieve 200K-400K but adds complexity. Under Amdahl's Law, a single-threaded event loop has s = 1 (serial fraction = 100%), so speedup is exactly 1Ã— regardless of cores â€” but the simplicity and predictability often wins for caching workloads where 100K ops/sec is sufficient.</details>
+For the toy Redis-style KV store: implement a single-threaded event loop that polls a command queue. Use a min-heap for TTL expiry (timer wheel approximation). Compare throughput: single-threaded achieves 50K-100K ops/sec on modern hardware with no locking overhead. Multi-threaded with sharded locks may achieve 200K-400K but adds complexity. Under Amdahl's Law, a single-threaded event loop has s = 1 (serial fraction = 100%), so speedup is exactly 1× regardless of cores — but the simplicity and predictability often wins for caching workloads where 100K ops/sec is sufficient.</details>

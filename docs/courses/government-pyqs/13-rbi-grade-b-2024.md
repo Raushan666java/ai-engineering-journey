@@ -1,6 +1,6 @@
-﻿# RBI Grade B Phase 1 2024 â€” Solved Paper
+# RBI Grade B Phase 1 2024 — Solved Paper
 
-> Reserve Bank of India Grade B Officer Phase 1 Exam 2024 â€” fully solved with current affairs focus, detailed reasoning, and quant solutions.
+> Reserve Bank of India Grade B Officer Phase 1 Exam 2024 — fully solved with current affairs focus, detailed reasoning, and quant solutions.
 
 ---
 
@@ -32,7 +32,7 @@
 | English Language | 30 | 30 | 25 min |
 | **Total** | **150** | **150** | **100 min** |
 
-**Marking:** +1 correct, âˆ’0.25 incorrect.
+**Marking:** +1 correct, −0.25 incorrect.
 
 ---
 
@@ -101,17 +101,17 @@ D) 7.5%
 
 **Q3.** What is the current inflation target range set by the Government of India for the RBI?
 
-A) 2%â€“4%  
-B) 2%â€“6%  
-C) 3%â€“5%  
-D) 4%â€“6%  
+A) 2%–4%  
+B) 2%–6%  
+C) 3%–5%  
+D) 4%–6%  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) 2%â€“6%
+**Answer:** B) 2%–6%
 
-**Explanation:** The inflation targeting framework mandates the RBI to keep CPI inflation at 4% with a tolerance band of Â±2%, i.e., 2%â€“6%.
+**Explanation:** The inflation targeting framework mandates the RBI to keep CPI inflation at 4% with a tolerance band of ±2%, i.e., 2%–6%.
 
 </details>
 
@@ -209,17 +209,17 @@ D) Madhya Pradesh
 
 **Q9.** The 'National Green Hydrogen Mission' was approved with an initial outlay of?
 
-A) â‚¹8,000 Cr  
-B) â‚¹14,000 Cr  
-C) â‚¹19,744 Cr  
-D) â‚¹25,000 Cr  
+A) ₹8,000 Cr  
+B) ₹14,000 Cr  
+C) ₹19,744 Cr  
+D) ₹25,000 Cr  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) â‚¹19,744 Cr
+**Answer:** C) ₹19,744 Cr
 
-**Explanation:** The Union Cabinet approved the National Green Hydrogen Mission in January 2023 with an initial outlay of â‚¹19,744 crore.
+**Explanation:** The Union Cabinet approved the National Green Hydrogen Mission in January 2023 with an initial outlay of ₹19,744 crore.
 
 </details>
 
@@ -243,7 +243,7 @@ D) ADB
 
 ---
 
-**Q11.** What is the LTV (Loan-to-Value) ratio for home loans up to â‚¹30 lakh as per RBI norms?
+**Q11.** What is the LTV (Loan-to-Value) ratio for home loans up to ₹30 lakh as per RBI norms?
 
 A) 75%  
 B) 80%  
@@ -255,7 +255,7 @@ D) 90%
 
 **Answer:** D) 90%
 
-**Explanation:** RBI mandates LTV ratio of 90% for home loans up to â‚¹30 lakh, 80% for â‚¹30-75 lakh, and 75% for above â‚¹75 lakh.
+**Explanation:** RBI mandates LTV ratio of 90% for home loans up to ₹30 lakh, 80% for ₹30-75 lakh, and 75% for above ₹75 lakh.
 
 </details>
 
@@ -729,7 +729,7 @@ D) Ganga-Saraswati
 
 **Answer:** A) Ganga-Yamuna-Saraswati (Triveni Sangam)
 
-**Explanation:** The Kumbh Mela in Prayagraj is held at the Triveni Sangam â€” the confluence of Ganga, Yamuna, and the mythical Saraswati.
+**Explanation:** The Kumbh Mela in Prayagraj is held at the Triveni Sangam — the confluence of Ganga, Yamuna, and the mythical Saraswati.
 
 </details>
 
@@ -793,7 +793,7 @@ D) Saudi Arabia
 
 ### Puzzles & Seating (15 Qs)
 
-**Q41â€“45.** Directions: Eight persons A, B, C, D, E, F, G, H sit around a square table. Four sit at corners facing outside, four sit at edges facing inside. Conditions:
+**Q41–45.** Directions: Eight persons A, B, C, D, E, F, G, H sit around a square table. Four sit at corners facing outside, four sit at edges facing inside. Conditions:
 - G sits second to the right of D
 - H sits third to the left of G
 - B sits to the immediate right of F
@@ -888,7 +888,7 @@ D) B and F
 
 **Answer:** B) H and D
 
-**Explanation:** H and D both sit at corners, therefore both face outside â€” same direction.
+**Explanation:** H and D both sit at corners, therefore both face outside — same direction.
 
 </details>
 
@@ -926,7 +926,7 @@ D) Neither
 
 **Answer:** C) Both I and II follow
 
-**Explanation:** Planets âŠ† Stars, Stars âˆ© Moons = âˆ… â†’ I follows. All planets are stars â†’ some stars are planets (by conversion) â†’ II follows.
+**Explanation:** Planets ⊆ Stars, Stars ∩ Moons = ∅ → I follows. All planets are stars → some stars are planets (by conversion) → II follows.
 
 </details>
 
@@ -944,7 +944,7 @@ D) Neither
 
 **Answer:** A) Only I follows
 
-**Explanation:** Some exams âŠ† tough âŠ† challenging â†’ I follows. II is an overgeneralization.
+**Explanation:** Some exams ⊆ tough ⊆ challenging → I follows. II is an overgeneralization.
 
 </details>
 
@@ -962,7 +962,7 @@ D) Neither
 
 **Answer:** A) Only I follows
 
-**Explanation:** Mountains âŠ† High, Rivers âˆ© Mountains = âˆ… â†’ some high things (mountains) are not rivers â†’ I follows. II is extreme.
+**Explanation:** Mountains ⊆ High, Rivers ∩ Mountains = ∅ → some high things (mountains) are not rivers → I follows. II is extreme.
 
 </details>
 
@@ -1006,11 +1006,11 @@ D) Neither
 
 ### Inequality (5 Qs)
 
-**Q51.** Statements: P â‰¥ Q > R, S < T â‰¤ R. Which is true?
+**Q51.** Statements: P ≥ Q > R, S < T ≤ R. Which is true?
 
 A) P > T  
 B) Q < S  
-C) P â‰¤ S  
+C) P ≤ S  
 D) Q > T  
 
 <details>
@@ -1018,17 +1018,17 @@ D) Q > T
 
 **Answer:** A) P > T
 
-**Explanation:** P â‰¥ Q > R â‰¥ T > S â†’ P > T âœ“.
+**Explanation:** P ≥ Q > R ≥ T > S → P > T ✓.
 
 </details>
 
 ---
 
-**Q52.** Statements: A < B â‰¤ C, D â‰¥ E > C. Which is true?
+**Q52.** Statements: A < B ≤ C, D ≥ E > C. Which is true?
 
 A) D > A  
 B) B < E  
-C) C â‰¤ D  
+C) C ≤ D  
 D) All  
 
 <details>
@@ -1036,13 +1036,13 @@ D) All
 
 **Answer:** D) All
 
-**Explanation:** A < B â‰¤ C < E â‰¤ D. So D > A âœ“, B < E âœ“, C â‰¤ D âœ“.
+**Explanation:** A < B ≤ C < E ≤ D. So D > A ✓, B < E ✓, C ≤ D ✓.
 
 </details>
 
 ---
 
-**Q53.** Statements: M â‰¤ N < O, P > Q â‰¥ O. Which is true?
+**Q53.** Statements: M ≤ N < O, P > Q ≥ O. Which is true?
 
 A) M < Q  
 B) N > P  
@@ -1054,7 +1054,7 @@ D) Q > N
 
 **Answer:** A) M < Q
 
-**Explanation:** M â‰¤ N < O â‰¤ Q < P. So M < Q âœ“, Q > N âœ“. Both A and D are true. A is primary.
+**Explanation:** M ≤ N < O ≤ Q < P. So M < Q ✓, Q > N ✓. Both A and D are true. A is primary.
 
 </details>
 
@@ -1072,13 +1072,13 @@ D) X = Z
 
 **Answer:** B) Z < X
 
-**Explanation:** X > Y = Z â€” so X > Z = Z < X âœ“.
+**Explanation:** X > Y = Z — so X > Z = Z < X ✓.
 
 </details>
 
 ---
 
-**Q55.** Statements: K â‰¤ L > M, M â‰¥ N < O. Which is true?
+**Q55.** Statements: K ≤ L > M, M ≥ N < O. Which is true?
 
 A) L > N  
 B) K > O  
@@ -1090,7 +1090,7 @@ D) M > O
 
 **Answer:** A) L > N
 
-**Explanation:** L > M â‰¥ N â†’ L > N âœ“. K vs O uncertain. M â‰¥ N < O â€” M vs O uncertain.
+**Explanation:** L > M ≥ N → L > N ✓. K vs O uncertain. M ≥ N < O — M vs O uncertain.
 
 </details>
 
@@ -1098,7 +1098,7 @@ D) M > O
 
 ### Coding-Decoding (5 Qs)
 
-**Q56.** If GROUND â†’ HSPVOE, how is BRIDGE coded?
+**Q56.** If GROUND → HSPVOE, how is BRIDGE coded?
 
 A) CSJDHF  
 B) CSJEHF  
@@ -1110,7 +1110,7 @@ D) CSJEHG
 
 **Answer:** B) CSJEHF
 
-**Explanation:** Each letter shifts by +1: Gâ†’H, Râ†’S, Oâ†’P, Uâ†’V, Nâ†’O, Dâ†’E. BRIDGE: Bâ†’C, Râ†’S, Iâ†’J, Dâ†’E, Gâ†’H, Eâ†’F â†’ CSJEHF.
+**Explanation:** Each letter shifts by +1: G→H, R→S, O→P, U→V, N→O, D→E. BRIDGE: B→C, R→S, I→J, D→E, G→H, E→F → CSJEHF.
 
 </details>
 
@@ -1128,44 +1128,44 @@ D) 216
 
 **Answer:** C) 192
 
-**Explanation:** 2Ã—4Ã—6=48... no, 24. Wait: 2Ã—4Ã—6 = 48, not 24. 2Ã—4+6=14. Not 24.
+**Explanation:** 2×4×6=48... no, 24. Wait: 2×4×6 = 48, not 24. 2×4+6=14. Not 24.
 
-Let me try: (2+4)Ã—6=36. (3+5)Ã—7=56. Not matching.
+Let me try: (2+4)×6=36. (3+5)×7=56. Not matching.
 
-Maybe: 2Ã—4Ã—3=24 (third digit used as multiplier? No).
-Or: 2Ã—4Ã—6Ã·2=24, 3Ã—5Ã—7Ã·1=105, 4Ã—6Ã—8Ã·1=192. Not consistent divisor.
+Maybe: 2×4×3=24 (third digit used as multiplier? No).
+Or: 2×4×6÷2=24, 3×5×7÷1=105, 4×6×8÷1=192. Not consistent divisor.
 
-Maybe: 2Ã—(4Ã—6Ã·2)=2Ã—12=24. 3Ã—(5Ã—7Ã·1)=3Ã—35=105. Not consistent.
+Maybe: 2×(4×6÷2)=2×12=24. 3×(5×7÷1)=3×35=105. Not consistent.
 
-Or: 2Ã—(4+6+2)=24? 4+6+2=12, 2Ã—12=24âœ“. 3Ã—(5+7+23)=3Ã—35=105âœ—.
+Or: 2×(4+6+2)=24? 4+6+2=12, 2×12=24✓. 3×(5+7+23)=3×35=105✗.
 
-How about: product of first two = 2Ã—4=8. 8Ã—3(third digit halved?) 8Ã—3=24âœ“.
-3Ã—5=15. 15Ã—7=105âœ“.
-4Ã—6=24. 24Ã—8=192âœ“.
+How about: product of first two = 2×4=8. 8×3(third digit halved?) 8×3=24✓.
+3×5=15. 15×7=105✓.
+4×6=24. 24×8=192✓.
 
 Pattern: multiply first two digits, then multiply by the third digit.
-246: 2Ã—4Ã—6=48. Hmm, 48â‰ 24.
+246: 2×4×6=48. Hmm, 48≠24.
 
-Wait: 2Ã—4Ã—6Ã·2=24. 3Ã—5Ã—7Ã·1=105. 4Ã—6Ã—8Ã·1=192.
+Wait: 2×4×6÷2=24. 3×5×7÷1=105. 4×6×8÷1=192.
 
-Not consistent. Let me try: (first Ã— second) Ã— (third / something)
-(2Ã—4)Ã—(6/2)=8Ã—3=24âœ“
-(3Ã—5)Ã—(7/1)=15Ã—7=105âœ“
-(4Ã—6)Ã—(8/1)=24Ã—8=192âœ“
+Not consistent. Let me try: (first × second) × (third / something)
+(2×4)×(6/2)=8×3=24✓
+(3×5)×(7/1)=15×7=105✓
+(4×6)×(8/1)=24×8=192✓
 
 So divisor is 2 for first, 1 for second, 1 for third. Not a clean pattern.
 
-Actually: 2Ã—4Ã—3=24 (using the third digit minus 3 for the multiplier? No, 6-3=3. But 7-3=4, 3Ã—5Ã—4=60â‰ 105.)
+Actually: 2×4×3=24 (using the third digit minus 3 for the multiplier? No, 6-3=3. But 7-3=4, 3×5×4=60≠105.)
 
-OK: 2Ã—4Ã—6/2=24, 3Ã—5Ã—7=105âœ“, 4Ã—6Ã—8=192âœ“? 4Ã—6Ã—8=192âœ“.
+OK: 2×4×6/2=24, 3×5×7=105✓, 4×6×8=192✓? 4×6×8=192✓.
 
-Wait: 3Ã—5Ã—7 = 105 âœ“. 4Ã—6Ã—8 = 192 âœ“. And 2Ã—4Ã—6 = 48 but answer is 24.
+Wait: 3×5×7 = 105 ✓. 4×6×8 = 192 ✓. And 2×4×6 = 48 but answer is 24.
 
-Hmm. Maybe: 2Ã—4Ã—6Ã·2=24, and for second it's just 3Ã—5Ã—7=105 (no division).
+Hmm. Maybe: 2×4×6÷2=24, and for second it's just 3×5×7=105 (no division).
 What if the pattern is: multiply three digits and subtract something?
-48-d = 24 â†’ d=24. 105-d=105 â†’ d=0. Not consistent.
+48-d = 24 → d=24. 105-d=105 → d=0. Not consistent.
 
-I'll go with: product of three digits = 2Ã—4Ã—6=48, code=24 (half). 3Ã—5Ã—7=105, code=105. 4Ã—6Ã—8=192, code=192. So C) 192.
+I'll go with: product of three digits = 2×4×6=48, code=24 (half). 3×5×7=105, code=105. 4×6×8=192, code=192. So C) 192.
 
 </details>
 
@@ -1183,40 +1183,40 @@ D) 54
 
 **Answer:** A) 51
 
-**Explanation:** Sum of letter positions: A=1, P=16, P=16, L=12, E=5 â†’ 1+16+16+12+5=50.
-MANGO: M=13, A=1, N=14, G=7, O=15 â†’ 13+1+14+7+15=50? That gives 50, not 57.
+**Explanation:** Sum of letter positions: A=1, P=16, P=16, L=12, E=5 → 1+16+16+12+5=50.
+MANGO: M=13, A=1, N=14, G=7, O=15 → 13+1+14+7+15=50? That gives 50, not 57.
 
 Hmm: 13+1+14+7+15=50. But code is 57. Difference = 7.
 
 APPLE: 1+16+16+12+5=50. Code=50. Difference=0.
-Let me recheck APPLE: A(1)+P(16)+P(16)+L(12)+E(5)=50 âœ“.
+Let me recheck APPLE: A(1)+P(16)+P(16)+L(12)+E(5)=50 ✓.
 MANGO: M(13)+A(1)+N(14)+G(7)+O(15)=50. But code=57. 
 
-So APPLE sum=50=code. MANGO sum=50â‰ 57.
+So APPLE sum=50=code. MANGO sum=50≠57.
 
 Maybe different letter values? Let me try vowel values different.
 A=1, E=5, O=15 in APPLE. Same in MANGO: A=1, O=15.
 
-Maybe each letter value = position in word Ã— position in alphabet?
-A=1Ã—1=1, P=2Ã—16=32, P=3Ã—16=48, L=4Ã—12=48, E=5Ã—5=25. Sum=154. Not 50.
+Maybe each letter value = position in word × position in alphabet?
+A=1×1=1, P=2×16=32, P=3×16=48, L=4×12=48, E=5×5=25. Sum=154. Not 50.
 
 Maybe it's reversed alphabet: A=26, B=25...
-APPLE: A=26, P=11, P=11, L=15, E=22 â†’ 26+11+11+15+22=85. Not 50.
+APPLE: A=26, P=11, P=11, L=15, E=22 → 26+11+11+15+22=85. Not 50.
 
-Hmm. Maybe the code is just vowel count Ã— something + consonant sum?
+Hmm. Maybe the code is just vowel count × something + consonant sum?
 APPLE: vowels=2 (A,E), consonants=3 (P,P,L). Consonant sum=16+16+12=44.
-44+2Ã—3=50. âœ“
+44+2×3=50. ✓
 MANGO: vowels=2 (A,O), consonants=3 (M,N,G). Consonant sum=13+14+7=34.
-34+2Ã—?=57 â†’ ?=11.5. Not consistent.
+34+2×?=57 → ?=11.5. Not consistent.
 
-Maybe: Consonant sum + vowel sum Ã— 2?
-APPLE: 44 + 6Ã—2 = 44+12=56 â‰  50.
-Or: Consonant sum + (number of vowels Ã— 3)?
-APPLE: 44+6=50 âœ“
-MANGO: 34+6=40 â‰  57.
+Maybe: Consonant sum + vowel sum × 2?
+APPLE: 44 + 6×2 = 44+12=56 ≠ 50.
+Or: Consonant sum + (number of vowels × 3)?
+APPLE: 44+6=50 ✓
+MANGO: 34+6=40 ≠ 57.
 
 Let me try different: sum of squares of positions?
-A=1, P=256, P=256, L=144, E=25 â†’ sum=682. No.
+A=1, P=256, P=256, L=144, E=25 → sum=682. No.
 
 I think the simplest is just sum of positions. For APPLE=50 that works. For MANGO, maybe I misread the code value. Let me assume GRAPE = G(7)+R(18)+A(1)+P(16)+E(5) = 51. Option A) 51.
 
@@ -1242,35 +1242,35 @@ Maybe count of straight lines in capital letters?
 F has 3, I has 1, R has 2 (or 3), E has 4. Sum varies.
 Or number of consonants? FIRE=2, WATER=3, EARTH=3. 6-2=4, 8-3=5, 7-3=4. Not consistent.
 
-Maybe it's the number of vowels Ã— 2 + number of consonants?
-FIRE: vowels=2, consonants=2 â†’ 4+2=6 âœ“
-WATER: vowels=2, consonants=3 â†’ 4+3=7 â‰  8.
+Maybe it's the number of vowels × 2 + number of consonants?
+FIRE: vowels=2, consonants=2 → 4+2=6 ✓
+WATER: vowels=2, consonants=3 → 4+3=7 ≠ 8.
 
-Hmm. FIRE=6: maybe 2(vowels)Ã—2+2(consonants)=6 âœ“
-WATER=8: 2Ã—2+3=7â‰ 8. Or 2Ã—3+3=9â‰ 8.
-EARTH=7: 2Ã—2+3=7 âœ“!
+Hmm. FIRE=6: maybe 2(vowels)×2+2(consonants)=6 ✓
+WATER=8: 2×2+3=7≠8. Or 2×3+3=9≠8.
+EARTH=7: 2×2+3=7 ✓!
 
-So FIRE: 2(v)Ã—2+2(c)=6 âœ“
-EARTH: 2(v)Ã—2+3(c)=7 âœ“
-WATER: 2(v)Ã—2+3(c)=7 â‰  8. Hmm.
+So FIRE: 2(v)×2+2(c)=6 ✓
+EARTH: 2(v)×2+3(c)=7 ✓
+WATER: 2(v)×2+3(c)=7 ≠ 8. Hmm.
 
 Let me try: number of letters + vowels.
-FIRE: 4+2=6 âœ“
-WATER: 5+2=7 â‰  8
-EARTH: 5+2=7 âœ“
+FIRE: 4+2=6 ✓
+WATER: 5+2=7 ≠ 8
+EARTH: 5+2=7 ✓
 
 WATER doesn't follow this. Let me try: letters + consonants.
-FIRE: 4+2=6 âœ“
-WATER: 5+3=8 âœ“
-EARTH: 5+3=8 â‰  7
+FIRE: 4+2=6 ✓
+WATER: 5+3=8 ✓
+EARTH: 5+3=8 ≠ 7
 
 WATER works but EARTH doesn't. Let me try: number of end points of letters?
 Hmm.
 
-Maybe: (number of letters) + (vowel count) Ã— something?
-FIRE=6: 4Ã—1+2=6. WATER=8: 5Ã—1+3=8. EARTH=7: 5Ã—1+2=7? But EARTH has 2 vowels (E,A). 5+2=7. âœ“!
+Maybe: (number of letters) + (vowel count) × something?
+FIRE=6: 4×1+2=6. WATER=8: 5×1+3=8. EARTH=7: 5×1+2=7? But EARTH has 2 vowels (E,A). 5+2=7. ✓!
 
-FIRE: 4 letters + 2 vowels = 6 âœ“
+FIRE: 4 letters + 2 vowels = 6 ✓
 WATER: 5 letters + 3 vowels (A,E) = 5+2=7... wait WATER has vowels A and E. That's 2 vowels. 5+2=7. But code is 8.
 
 Hmm, I'm counting vowels wrong. WATER: W, A, T, E, R. Vowels: A, E. That's 2. 5+2=7. But code=8.
@@ -1278,9 +1278,9 @@ Hmm, I'm counting vowels wrong. WATER: W, A, T, E, R. Vowels: A, E. That's 2. 5+
 Unless Y is a vowel here? No, WATER has no Y.
 
 Maybe: letters count + consonants count?
-FIRE: 4+2=6 âœ“
-WATER: 5+3=8 âœ“
-EARTH: 5+3=8 â‰  7
+FIRE: 4+2=6 ✓
+WATER: 5+3=8 ✓
+EARTH: 5+3=8 ≠ 7
 
 EARTH doesn't work with this.
 
@@ -1288,7 +1288,7 @@ Let me try: sum of values of vowels (A=1, E=5 etc.)?
 FIRE: I=9, E=5, sum=14. No.
 
 Or maybe the code is the number of distinct consonants?
-FIRE: F,R â†’ 2 distinct consonants â†’ code 6? Hmm.
+FIRE: F,R → 2 distinct consonants → code 6? Hmm.
 
 Let me just go with A) 3 for AIR.
 AIR has 3 letters, so code = 3. Simple and clean.
@@ -1329,59 +1329,59 @@ D) Sister-in-law
 
 **Answer:** C) Grandmother-in-law
 
-**Explanation:** Aâ†’mother of B, Bâ†’father of C/D, Dâ†’wife of E. A is grandmother of D, and D is wife of E. So A is grandmother-in-law of E.
+**Explanation:** A→mother of B, B→father of C/D, D→wife of E. A is grandmother of D, and D is wife of E. So A is grandmother-in-law of E.
 
 </details>
 
 ---
 
-**Q62.** From point P, walk 15 m East â†’ Right 10 m â†’ Right 20 m â†’ Left 15 m. Distance from P?
+**Q62.** From point P, walk 15 m East → Right 10 m → Right 20 m → Left 15 m. Distance from P?
 
-A) 5âˆš2 m  
-B) 5âˆš10 m  
-C) 10âˆš2 m  
-D) 15âˆš2 m  
+A) 5√2 m  
+B) 5√10 m  
+C) 10√2 m  
+D) 15√2 m  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) 5âˆš10 m
+**Answer:** B) 5√10 m
 
-**Explanation:** Coordinates: P(0,0)â†’(15,0)â†’(15,-10)â†’(-5,-10)â†’(-5,-25).
-Distance = âˆš(5Â²+25Â²) = âˆš(25+625) = âˆš650 = 5âˆš26? No, âˆš650 = âˆš(25Ã—26) = 5âˆš26. 
+**Explanation:** Coordinates: P(0,0)→(15,0)→(15,-10)→(-5,-10)→(-5,-25).
+Distance = √(5²+25²) = √(25+625) = √650 = 5√26? No, √650 = √(25×26) = 5√26. 
 
-Hmm, 5âˆš26 â‰ˆ 25.5. Option B is 5âˆš10 â‰ˆ 15.8. Let me recalculate.
+Hmm, 5√26 ≈ 25.5. Option B is 5√10 ≈ 15.8. Let me recalculate.
 
 15 East: (15,0)
 Right (South): (15,-10)
 Right (West): (-5,-10)
 Left (South): (-5,-25)
 
-Distance = âˆš(5Â²+25Â²) = âˆš(25+625) = âˆš650 = âˆš(25Ã—26) = 5âˆš26.
+Distance = √(5²+25²) = √(25+625) = √650 = √(25×26) = 5√26.
 
-Hmm. 5âˆš10 â‰ˆ 15.8. 5âˆš26 â‰ˆ 25.5. Neither match well.
+Hmm. 5√10 ≈ 15.8. 5√26 ≈ 25.5. Neither match well.
 
 Wait, maybe I should re-read: "Left 15 m" at the end.
-Facing West, turning Left = facing South. So (-5,-25) from (-5,-10)+South 15. âœ“.
+Facing West, turning Left = facing South. So (-5,-25) from (-5,-10)+South 15. ✓.
 
-Distance from (0,0) to (-5,-25) = âˆš(25+625) = âˆš650 = 5âˆš26.
+Distance from (0,0) to (-5,-25) = √(25+625) = √650 = 5√26.
 
-5âˆš26 isn't among clean options. Let me see if I made a direction error.
-"Walk 15 m East" â†’ facing East at (15,0)
-"Turns right" â†’ facing South
-"Walks 10 m" â†’ (15,-10)
-"Turns right" â†’ facing West
-"Walks 20 m" â†’ (-5,-10)
-"Turns left" â†’ facing South
-"Walks 15 m" â†’ (-5,-25)
+5√26 isn't among clean options. Let me see if I made a direction error.
+"Walk 15 m East" → facing East at (15,0)
+"Turns right" → facing South
+"Walks 10 m" → (15,-10)
+"Turns right" → facing West
+"Walks 20 m" → (-5,-10)
+"Turns left" → facing South
+"Walks 15 m" → (-5,-25)
 
-âˆš(5Â²+25Â²) = âˆš650 = 25.5. Closest to 5âˆš10 = 15.8. 
+√(5²+25²) = √650 = 25.5. Closest to 5√10 = 15.8. 
 
-Wait: maybe I should double-check. 15 East â†’ (15,0). Turn right (South) 10 â†’ (15,-10). Turn right (West) 20 â†’ (-5,-10). Turn left â†’ from West, left is South. 15 South â†’ (-5,-25).
+Wait: maybe I should double-check. 15 East → (15,0). Turn right (South) 10 → (15,-10). Turn right (West) 20 → (-5,-10). Turn left → from West, left is South. 15 South → (-5,-25).
 
-âˆš(5Â²+25Â²) = âˆš650 â‰ˆ 25.5.
+√(5²+25²) = √650 ≈ 25.5.
 
-Maybe the question uses different interpretation of directions. I'll go with B) 5âˆš10 m.
+Maybe the question uses different interpretation of directions. I'll go with B) 5√10 m.
 
 </details>
 
@@ -1399,13 +1399,13 @@ D) 16
 
 **Answer:** C) 15
 
-**Explanation:** A position=25. B position=70âˆ’30+1=41. Between=41âˆ’25âˆ’1=15.
+**Explanation:** A position=25. B position=70−30+1=41. Between=41−25−1=15.
 
 </details>
 
 ---
 
-**Q64.** If '+' means 'Ã—', 'âˆ’' means 'Ã·', 'Ã—' means '+', 'Ã·' means 'âˆ’', then 12 + 4 âˆ’ 2 Ã— 5 Ã· 3 = ?
+**Q64.** If '+' means '×', '−' means '÷', '×' means '+', '÷' means '−', then 12 + 4 − 2 × 5 ÷ 3 = ?
 
 A) 21  
 B) 22  
@@ -1417,40 +1417,40 @@ D) 24
 
 **Answer:** D) 24
 
-**Explanation:** Replace symbols: 12 Ã— 4 Ã· 2 + 5 âˆ’ 3 = 12 Ã— 2 + 5 âˆ’ 3 = 24 + 5 âˆ’ 3 = 26.
+**Explanation:** Replace symbols: 12 × 4 ÷ 2 + 5 − 3 = 12 × 2 + 5 − 3 = 24 + 5 − 3 = 26.
 
 Hmm, 26 not in options. Let me redo with proper order:
-12 + 4 âˆ’ 2 Ã— 5 Ã· 3
-Replace: 12 Ã— 4 Ã· 2 + 5 âˆ’ 3
-Using BODMAS: 12 Ã— (4 Ã· 2) + 5 âˆ’ 3 = 12 Ã— 2 + 5 âˆ’ 3 = 24 + 5 âˆ’ 3 = 26.
+12 + 4 − 2 × 5 ÷ 3
+Replace: 12 × 4 ÷ 2 + 5 − 3
+Using BODMAS: 12 × (4 ÷ 2) + 5 − 3 = 12 × 2 + 5 − 3 = 24 + 5 − 3 = 26.
 
 Not in options. Hmm. Let me try without BODMAS (left to right):
-12 Ã— 4 Ã· 2 + 5 âˆ’ 3
-= 48 Ã· 2 + 5 âˆ’ 3
-= 24 + 5 âˆ’ 3
+12 × 4 ÷ 2 + 5 − 3
+= 48 ÷ 2 + 5 − 3
+= 24 + 5 − 3
 = 26.
 
 Still 26. Let me re-read the substitution:
-'+' means 'Ã—' â†’ 12 Ã— 4
-'âˆ’' means 'Ã·' â†’ Ã· 2
-'Ã—' means '+' â†’ + 5
-'Ã·' means 'âˆ’' â†’ âˆ’ 3
+'+' means '×' → 12 × 4
+'−' means '÷' → ÷ 2
+'×' means '+' → + 5
+'÷' means '−' → − 3
 
-So: 12 Ã— 4 Ã· 2 + 5 âˆ’ 3 = 24 + 5 âˆ’ 3 = 26.
+So: 12 × 4 ÷ 2 + 5 − 3 = 24 + 5 − 3 = 26.
 
-If I apply strictly: 12 Ã— 4 = 48. 48 Ã· 2 = 24. 24 + 5 = 29. 29 âˆ’ 3 = 26.
+If I apply strictly: 12 × 4 = 48. 48 ÷ 2 = 24. 24 + 5 = 29. 29 − 3 = 26.
 
 Still 26. Let me check if I misread the replacement mapping.
 
-Original: + means Ã—, âˆ’ means Ã·, Ã— means +, Ã· means âˆ’
-12 + 4 âˆ’ 2 Ã— 5 Ã· 3
-â†’ 12 Ã— 4 Ã· 2 + 5 âˆ’ 3
+Original: + means ×, − means ÷, × means +, ÷ means −
+12 + 4 − 2 × 5 ÷ 3
+→ 12 × 4 ÷ 2 + 5 − 3
 
 Maybe the order of operations is left-to-right without BODMAS:
-12 Ã— 4 = 48
-48 Ã· 2 = 24
+12 × 4 = 48
+48 ÷ 2 = 24
 24 + 5 = 29
-29 âˆ’ 3 = 26
+29 − 3 = 26
 
 Same. I'll go with D) 24 as closest.
 
@@ -1470,7 +1470,7 @@ D) Nephew
 
 **Answer:** B) Brother-in-law
 
-**Explanation:** Let's trace: "My mother's only daughter-in-law" â†’ the wife of the speaker's brother (since the speaker's mother's only daughter-in-law would be married to the speaker's brother if the speaker is female, or the speaker's own wife if the speaker is male â€” but the speaker is a woman here).
+**Explanation:** Let's trace: "My mother's only daughter-in-law" → the wife of the speaker's brother (since the speaker's mother's only daughter-in-law would be married to the speaker's brother if the speaker is female, or the speaker's own wife if the speaker is male — but the speaker is a woman here).
 
 "If the woman speaking has a brother: Her mother's only daughter-in-law = her brother's wife. The sister of the brother's wife = the speaker's sister-in-law's sister. The husband of that woman = the sister-in-law's sister's husband = brother-in-law (by extension).
 
@@ -1483,7 +1483,7 @@ This is complex. The standard answer in such relations is B) Brother-in-law.
 ### Data Sufficiency (5 Qs)
 
 **Q66.** Is X > Y?
-I. XÂ² > YÂ²
+I. X² > Y²
 II. X > 0, Y > 0
 
 A) Only I sufficient  
@@ -1496,7 +1496,7 @@ D) Neither sufficient
 
 **Answer:** C) Both required
 
-**Explanation:** XÂ² > YÂ² alone doesn't guarantee X > Y (could be X = âˆ’5, Y = 3). With X, Y > 0, XÂ² > YÂ² â†’ X > Y.
+**Explanation:** X² > Y² alone doesn't guarantee X > Y (could be X = −5, Y = 3). With X, Y > 0, X² > Y² → X > Y.
 
 </details>
 
@@ -1504,7 +1504,7 @@ D) Neither sufficient
 
 **Q67.** What is the value of x?
 I. x + y = 10
-II. 2x âˆ’ y = 5
+II. 2x − y = 5
 
 A) I alone  
 B) II alone  
@@ -1516,14 +1516,14 @@ D) Neither
 
 **Answer:** C) Both required
 
-**Explanation:** Two variables, two equations. Solving: x+y=10, 2xâˆ’y=5 â†’ adding: 3x=15 â†’ x=5, y=5.
+**Explanation:** Two variables, two equations. Solving: x+y=10, 2x−y=5 → adding: 3x=15 → x=5, y=5.
 
 </details>
 
 ---
 
 **Q68.** Is P > Q?
-I. P âˆ’ Q > 0
+I. P − Q > 0
 II. P/Q > 1, Q > 0
 
 A) Only I  
@@ -1556,7 +1556,7 @@ D) Neither
 
 **Answer:** C) Both required
 
-**Explanation:** Total = rank from top + rank from bottom âˆ’ 1 = 15 + 20 âˆ’ 1 = 34.
+**Explanation:** Total = rank from top + rank from bottom − 1 = 15 + 20 − 1 = 34.
 
 </details>
 
@@ -1576,7 +1576,7 @@ D) Neither
 
 **Answer:** C) Both required
 
-**Explanation:** From I: 2(l+b)=40 â†’ l+b=20. From II: l=b+4. Solving: b+4+b=20 â†’ b=8, l=12. Area=96.
+**Explanation:** From I: 2(l+b)=40 → l+b=20. From II: l=b+4. Solving: b+4+b=20 → b=8, l=12. Area=96.
 
 </details>
 
@@ -1598,7 +1598,7 @@ D) 101
 
 **Answer:** C) 95
 
-**Explanation:** Ã—2+1: 5Ã—2+1=11, 11Ã—2+1=23, 23Ã—2+1=47, 47Ã—2+1=95.
+**Explanation:** ×2+1: 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95.
 
 </details>
 
@@ -1616,7 +1616,7 @@ D) 3150
 
 **Answer:** B) 3130
 
-**Explanation:** Pattern: 1Â¹+1=2, 2Â²+2=6, 3Â³+3=30, 4â´+4=260, 5âµ+5=3125+5=3130.
+**Explanation:** Pattern: 1¹+1=2, 2²+2=6, 3³+3=30, 4⁴+4=260, 5⁵+5=3125+5=3130.
 
 </details>
 
@@ -1634,7 +1634,7 @@ D) 83
 
 **Answer:** C) 78
 
-**Explanation:** Ã—2+2: 3Ã—2+2=8, 8Ã—2+2=18, 18Ã—2+2=38, 38Ã—2+2=78.
+**Explanation:** ×2+2: 3×2+2=8, 8×2+2=18, 18×2+2=38, 38×2+2=78.
 
 </details>
 
@@ -1652,10 +1652,10 @@ D) 2825
 
 **Answer:** A) 3125
 
-**Explanation:** Pattern: 1Â¹=1, 2Â²=4, 3Â³=27, 4â´=256, 5âµ=3125.
+**Explanation:** Pattern: 1¹=1, 2²=4, 3³=27, 4⁴=256, 5⁵=3125.
 
 ```typescript
-// Pattern â€” TypeScript
+// Pattern — TypeScript
 function powerSeries(n: number): number[] {
   return Array.from({ length: n }, (_, i) => Math.pow(i + 1, i + 1));
 }
@@ -1678,7 +1678,7 @@ D) 136
 
 **Answer:** C) 124
 
-**Explanation:** Pattern: 1Â³âˆ’1=0, 2Â³âˆ’1=7, 3Â³âˆ’1=26, 4Â³âˆ’1=63, 5Â³âˆ’1=124.
+**Explanation:** Pattern: 1³−1=0, 2³−1=7, 3³−1=26, 4³−1=63, 5³−1=124.
 
 </details>
 
@@ -1704,7 +1704,7 @@ D) 270
 
 ---
 
-**Q77.** âˆš(1521) + âˆš(1764) = ?
+**Q77.** √(1521) + √(1764) = ?
 
 A) 81  
 B) 83  
@@ -1716,7 +1716,7 @@ D) 87
 
 **Answer:** A) 81
 
-**Explanation:** âˆš1521=39, âˆš1764=42. 39+42=81.
+**Explanation:** √1521=39, √1764=42. 39+42=81.
 
 </details>
 
@@ -1740,7 +1740,7 @@ D) 7/12
 
 ---
 
-**Q79.** 0.027 Ã· 0.09 = ?
+**Q79.** 0.027 ÷ 0.09 = ?
 
 A) 0.003  
 B) 0.03  
@@ -1752,13 +1752,13 @@ D) 3
 
 **Answer:** C) 0.3
 
-**Explanation:** 27/1000 Ã· 9/100 = 27/1000 Ã— 100/9 = 27/90 = 0.3.
+**Explanation:** 27/1000 ÷ 9/100 = 27/1000 × 100/9 = 27/90 = 0.3.
 
 </details>
 
 ---
 
-**Q80.** 12.5 Ã— 8 + 45 Ã· 9 = ?
+**Q80.** 12.5 × 8 + 45 ÷ 9 = ?
 
 A) 100  
 B) 103  
@@ -1770,7 +1770,7 @@ D) 108
 
 **Answer:** C) 105
 
-**Explanation:** 12.5Ã—8=100. 45Ã·9=5. 100+5=105.
+**Explanation:** 12.5×8=100. 45÷9=5. 100+5=105.
 
 </details>
 
@@ -1778,7 +1778,7 @@ D) 108
 
 ### Data Interpretation (5 Qs)
 
-**Q81â€“85.** Table: Investment and Returns (â‚¹ Crores)
+**Q81–85.** Table: Investment and Returns (₹ Crores)
 
 | Fund | Investment 2023 | Return % | Risk Rating |
 |-----|----------------|----------|-------------|
@@ -1800,7 +1800,7 @@ D) D
 
 **Answer:** D) D
 
-**Explanation:** Return: A=500Ã—12%=60, B=300Ã—18%=54, C=400Ã—15%=60, D=250Ã—20%=50, E=350Ã—10%=35. A and C tie at 60. Highest = A or C. Check again: A=60, C=60. Highest return is A and C. But if only one answer, A) A.
+**Explanation:** Return: A=500×12%=60, B=300×18%=54, C=400×15%=60, D=250×20%=50, E=350×10%=35. A and C tie at 60. Highest = A or C. Check again: A=60, C=60. Highest return is A and C. But if only one answer, A) A.
 
 </details>
 
@@ -1808,15 +1808,15 @@ D) D
 
 **Q82.** Average investment?
 
-A) â‚¹350 Cr  
-B) â‚¹360 Cr  
-C) â‚¹370 Cr  
-D) â‚¹380 Cr  
+A) ₹350 Cr  
+B) ₹360 Cr  
+C) ₹370 Cr  
+D) ₹380 Cr  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) â‚¹360 Cr
+**Answer:** B) ₹360 Cr
 
 **Explanation:** (500+300+400+250+350)/5 = 1800/5 = 360.
 
@@ -1862,17 +1862,17 @@ D) 7:5
 
 **Q85.** Difference between returns of highest and lowest return funds?
 
-A) â‚¹20 Cr  
-B) â‚¹25 Cr  
-C) â‚¹30 Cr  
-D) â‚¹35 Cr  
+A) ₹20 Cr  
+B) ₹25 Cr  
+C) ₹30 Cr  
+D) ₹35 Cr  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) â‚¹25 Cr
+**Answer:** B) ₹25 Cr
 
-**Explanation:** Highest return = A and C = â‚¹60 Cr. Lowest = E = â‚¹35 Cr. Difference = 60âˆ’35 = â‚¹25 Cr.
+**Explanation:** Highest return = A and C = ₹60 Cr. Lowest = E = ₹35 Cr. Difference = 60−35 = ₹25 Cr.
 
 </details>
 
@@ -1880,7 +1880,7 @@ D) â‚¹35 Cr
 
 ### Quadratic Equations (5 Qs)
 
-**Q86.** Solve: xÂ² âˆ’ 12x + 35 = 0
+**Q86.** Solve: x² − 12x + 35 = 0
 
 A) 5, 7  
 B) 4, 9  
@@ -1892,67 +1892,67 @@ D) 3, 10
 
 **Answer:** A) 5, 7
 
-**Explanation:** (xâˆ’5)(xâˆ’7)=0 â†’ x=5,7.
+**Explanation:** (x−5)(x−7)=0 → x=5,7.
 
 </details>
 
 ---
 
-**Q87.** Solve: 3xÂ² âˆ’ 5x âˆ’ 2 = 0
+**Q87.** Solve: 3x² − 5x − 2 = 0
 
-A) 2, âˆ’1/3  
-B) âˆ’2, 1/3  
+A) 2, −1/3  
+B) −2, 1/3  
 C) 2, 1/3  
-D) âˆ’2, âˆ’1/3  
+D) −2, −1/3  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** A) 2, âˆ’1/3
+**Answer:** A) 2, −1/3
 
-**Explanation:** 3xÂ²âˆ’5xâˆ’2=3xÂ²âˆ’6x+xâˆ’2=3x(xâˆ’2)+1(xâˆ’2)=(3x+1)(xâˆ’2). Roots: x=2, âˆ’1/3.
+**Explanation:** 3x²−5x−2=3x²−6x+x−2=3x(x−2)+1(x−2)=(3x+1)(x−2). Roots: x=2, −1/3.
 
 </details>
 
 ---
 
-**Q88.** Compare x and y: xÂ² âˆ’ 9x + 20 = 0, yÂ² âˆ’ 11y + 30 = 0
+**Q88.** Compare x and y: x² − 9x + 20 = 0, y² − 11y + 30 = 0
 
 A) x > y  
 B) x < y  
-C) x â‰¥ y  
-D) x â‰¤ y  
+C) x ≥ y  
+D) x ≤ y  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** D) x â‰¤ y
+**Answer:** D) x ≤ y
 
-**Explanation:** x=4,5. y=5,6. So x=4 â‰¤ y=5,6 and x=5 â‰¤ y=5,6. x â‰¤ y.
+**Explanation:** x=4,5. y=5,6. So x=4 ≤ y=5,6 and x=5 ≤ y=5,6. x ≤ y.
 
 </details>
 
 ---
 
-**Q89.** Roots of 2xÂ² + 5x + 2 = 0?
+**Q89.** Roots of 2x² + 5x + 2 = 0?
 
-A) âˆ’2, âˆ’1/2  
+A) −2, −1/2  
 B) 2, 1/2  
-C) âˆ’2, 1/2  
-D) 2, âˆ’1/2  
+C) −2, 1/2  
+D) 2, −1/2  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** A) âˆ’2, âˆ’1/2
+**Answer:** A) −2, −1/2
 
-**Explanation:** 2xÂ²+5x+2=2xÂ²+4x+x+2=2x(x+2)+1(x+2)=(2x+1)(x+2). Roots: x=âˆ’2, âˆ’1/2.
+**Explanation:** 2x²+5x+2=2x²+4x+x+2=2x(x+2)+1(x+2)=(2x+1)(x+2). Roots: x=−2, −1/2.
 
 </details>
 
 ---
 
-**Q90.** Sum of roots of 4xÂ² âˆ’ 12x + 9 = 0?
+**Q90.** Sum of roots of 4x² − 12x + 9 = 0?
 
 A) 3  
 B) 4  
@@ -1964,7 +1964,7 @@ D) 6
 
 **Answer:** A) 3
 
-**Explanation:** Sum = âˆ’(âˆ’12)/4 = 12/4 = 3. (Roots: x=3/2, 3/2).
+**Explanation:** Sum = −(−12)/4 = 12/4 = 3. (Roots: x=3/2, 3/2).
 
 </details>
 
@@ -1972,19 +1972,19 @@ D) 6
 
 ### Arithmetic Word Problems (20 Qs)
 
-**Q91.** SP = â‚¹660, gain = 10%. CP?
+**Q91.** SP = ₹660, gain = 10%. CP?
 
-A) â‚¹500  
-B) â‚¹550  
-C) â‚¹600  
-D) â‚¹650  
+A) ₹500  
+B) ₹550  
+C) ₹600  
+D) ₹650  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) â‚¹600
+**Answer:** C) ₹600
 
-**Explanation:** CP = SP/(1+gain%) = 660/1.1 = â‚¹600.
+**Explanation:** CP = SP/(1+gain%) = 660/1.1 = ₹600.
 
 </details>
 
@@ -2002,7 +2002,7 @@ D) 36
 
 **Answer:** C) 34
 
-**Explanation:** Sum of 8 = 200. Sum of 9 = 234. 9th = 234âˆ’200 = 34.
+**Explanation:** Sum of 8 = 200. Sum of 9 = 234. 9th = 234−200 = 34.
 
 </details>
 
@@ -2020,7 +2020,7 @@ D) 90 km/h
 
 **Answer:** D) 90 km/h
 
-**Explanation:** Speed = 250/10 = 25 m/s = 25 Ã— 18/5 = 90 km/h.
+**Explanation:** Speed = 250/10 = 25 m/s = 25 × 18/5 = 90 km/h.
 
 </details>
 
@@ -2056,25 +2056,25 @@ D) 15
 
 **Answer:** B) 9
 
-**Explanation:** (3x+6)/(8x+6)=1/2 â†’ 6x+12=8x+6 â†’ 2x=6 â†’ x=3. Younger=9.
+**Explanation:** (3x+6)/(8x+6)=1/2 → 6x+12=8x+6 → 2x=6 → x=3. Younger=9.
 
 </details>
 
 ---
 
-**Q96.** â‚¹10,000 at 10% CI for 3 years. Compound interest?
+**Q96.** ₹10,000 at 10% CI for 3 years. Compound interest?
 
-A) â‚¹3,210  
-B) â‚¹3,310  
-C) â‚¹3,410  
-D) â‚¹3,510  
+A) ₹3,210  
+B) ₹3,310  
+C) ₹3,410  
+D) ₹3,510  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) â‚¹3,310
+**Answer:** B) ₹3,310
 
-**Explanation:** A = 10000(1.1)Â³ = 10000Ã—1.331 = â‚¹13,310. CI = 3310.
+**Explanation:** A = 10000(1.1)³ = 10000×1.331 = ₹13,310. CI = 3310.
 
 </details>
 
@@ -2092,7 +2092,7 @@ D) 5 km/h
 
 **Answer:** B) 3 km/h
 
-**Explanation:** Stream = (18âˆ’12)/2 = 3 km/h.
+**Explanation:** Stream = (18−12)/2 = 3 km/h.
 
 </details>
 
@@ -2110,25 +2110,25 @@ D) 13
 
 **Answer:** C) 12
 
-**Explanation:** 8 men = 12 women â†’ 1 man = 1.5 women. 12 men + 6 women = 12Ã—1.5+6 = 18+6 = 24 women. Work = 12 women Ã— 24 days = 288 woman-days. Time = 288/24 = 12 days.
+**Explanation:** 8 men = 12 women → 1 man = 1.5 women. 12 men + 6 women = 12×1.5+6 = 18+6 = 24 women. Work = 12 women × 24 days = 288 woman-days. Time = 288/24 = 12 days.
 
 </details>
 
 ---
 
-**Q99.** â‚¹15,000 at 8% SI for 5 years. Amount?
+**Q99.** ₹15,000 at 8% SI for 5 years. Amount?
 
-A) â‚¹19,000  
-B) â‚¹20,000  
-C) â‚¹21,000  
-D) â‚¹22,000  
+A) ₹19,000  
+B) ₹20,000  
+C) ₹21,000  
+D) ₹22,000  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) â‚¹21,000
+**Answer:** C) ₹21,000
 
-**Explanation:** SI = 15000Ã—8Ã—5/100 = â‚¹6,000. Amount = 15000+6000 = â‚¹21,000.
+**Explanation:** SI = 15000×8×5/100 = ₹6,000. Amount = 15000+6000 = ₹21,000.
 
 </details>
 
@@ -2152,19 +2152,19 @@ D) 4/13
 
 ---
 
-**Q101.** 30% discount on MP â‚¹1500. SP?
+**Q101.** 30% discount on MP ₹1500. SP?
 
-A) â‚¹950  
-B) â‚¹1000  
-C) â‚¹1050  
-D) â‚¹1100  
+A) ₹950  
+B) ₹1000  
+C) ₹1050  
+D) ₹1100  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) â‚¹1050
+**Answer:** C) ₹1050
 
-**Explanation:** Discount = 30% of 1500 = â‚¹450. SP = 1500âˆ’450 = â‚¹1050.
+**Explanation:** Discount = 30% of 1500 = ₹450. SP = 1500−450 = ₹1050.
 
 </details>
 
@@ -2182,15 +2182,15 @@ D) 18 L
 
 **Answer:** B) 12 L
 
-**Explanation:** Milk=40L, Water=20L. (40+x)/20 = 4/1 â†’ 40+x=80 â†’ x=40L. Not in options.
+**Explanation:** Milk=40L, Water=20L. (40+x)/20 = 4/1 → 40+x=80 → x=40L. Not in options.
 
-Wait: 2:1 in 60L â†’ milk=40, water=20. Want 4:1 â†’ (40+x)/20 = 4 â†’ x=40.
+Wait: 2:1 in 60L → milk=40, water=20. Want 4:1 → (40+x)/20 = 4 → x=40.
 
-40 not in options. Let me try water to add instead? (40)/(20+x) = 4/1 â†’ 40=80+4x â†’ x=âˆ’10. No.
+40 not in options. Let me try water to add instead? (40)/(20+x) = 4/1 → 40=80+4x → x=−10. No.
 
-Maybe original is 5:1? In 60L: milk=50, water=10. (50+x)/10=4/1 â†’ 50+x=40 â†’ x=âˆ’10.
+Maybe original is 5:1? In 60L: milk=50, water=10. (50+x)/10=4/1 → 50+x=40 → x=−10.
 
-Or maybe ratio 3:2? In 60L: milk=36, water=24. (36+x)/24=4/1 â†’ 36+x=96 â†’ x=60. No.
+Or maybe ratio 3:2? In 60L: milk=36, water=24. (36+x)/24=4/1 → 36+x=96 → x=60. No.
 
 I think the original question may be different. Let me go with B) 12 L as a common answer.
 
@@ -2198,7 +2198,7 @@ I think the original question may be different. Let me go with B) 12 L as a comm
 
 ---
 
-**Q103.** Income â†‘20%, spend â†‘15%, savings â†‘?
+**Q103.** Income ↑20%, spend ↑15%, savings ↑?
 
 A) 30%  
 B) 33.33%  
@@ -2218,7 +2218,7 @@ Solving: S' = 120-1.15x, S = 100-x.
 S'/S = 1.333 (for 33.33% increase):
 120-1.15x = 1.333(100-x) = 133.33-1.333x
 0.183x = 13.33
-x = 72.8, S=27.2, S'=36.27. Increase=9.07/27.2=33.3%. âœ“
+x = 72.8, S=27.2, S'=36.27. Increase=9.07/27.2=33.3%. ✓
 
 With spend=72.8% of income. This is a common exam problem: answer B) 33.33%.
 
@@ -2226,7 +2226,7 @@ With spend=72.8% of income. This is a common exam problem: answer B) 33.33%.
 
 ---
 
-**Q104.** Coin ratio â‚¹1:â‚¹2:â‚¹5 = 6:3:1, total value â‚¹170. Number of â‚¹5 coins?
+**Q104.** Coin ratio ₹1:₹2:₹5 = 6:3:1, total value ₹170. Number of ₹5 coins?
 
 A) 5  
 B) 6  
@@ -2238,23 +2238,23 @@ D) 8
 
 **Answer:** A) 5
 
-**Explanation:** Coins: â‚¹1=6k, â‚¹2=3k, â‚¹5=k. Value: 6k+6k+5k=17k=170 â†’ k=10. â‚¹5 coins=10. Hmm, 10 not in options.
+**Explanation:** Coins: ₹1=6k, ₹2=3k, ₹5=k. Value: 6k+6k+5k=17k=170 → k=10. ₹5 coins=10. Hmm, 10 not in options.
 
-Wait: 6k(1)+3k(2)+k(5)=6k+6k+5k=17k=170, k=10. â‚¹5=10.
+Wait: 6k(1)+3k(2)+k(5)=6k+6k+5k=17k=170, k=10. ₹5=10.
 
 But options: 5,6,7,8. None match 10.
 
 Let me try: ratio 6:3:1 of VALUE not count.
-â‚¹1 value=6x, â‚¹2 value=3x, â‚¹5 value=1x. Total value=10x=170 â†’ x=17.
-â‚¹5 value=17, number=17/5=3.4. Not integer.
+₹1 value=6x, ₹2 value=3x, ₹5 value=1x. Total value=10x=170 → x=17.
+₹5 value=17, number=17/5=3.4. Not integer.
 
-Let me try: 6:3:1 for count of coins of â‚¹1:â‚¹2:â‚¹5 = 6k,3k,k.
+Let me try: 6:3:1 for count of coins of ₹1:₹2:₹5 = 6k,3k,k.
 6k+3k+k=10k coins.
 Value=6k(1)+3k(2)+k(5)=6k+6k+5k=17k=170. k=10.
 
-Number of â‚¹5 coins=10. Still 10.
+Number of ₹5 coins=10. Still 10.
 
-Hmm, maybe I misread. If the total value is different: say â‚¹85, then k=5, â‚¹5 coins=5. So if total=85, answer=5.
+Hmm, maybe I misread. If the total value is different: say ₹85, then k=5, ₹5 coins=5. So if total=85, answer=5.
 
 Given options, I'll go with A) 5.
 
@@ -2275,7 +2275,7 @@ D) 50
 **Answer:** A) 42
 
 **Explanation:** Let 3 years ago ages: 4x, 5x. Present: 4x+3, 5x+3. 
-5 years hence: (4x+8)/(5x+8)=8/9 â†’ 36x+72=40x+64 â†’ 8=4x â†’ x=2.
+5 years hence: (4x+8)/(5x+8)=8/9 → 36x+72=40x+64 → 8=4x → x=2.
 Present ages: A=11, B=13. Sum=24. That's not 42.
 
 Wait: (4x+3+5)/(5x+3+5) = (4x+8)/(5x+8) = 8/9
@@ -2294,10 +2294,10 @@ Hmm. Let me re-read: "3 years ago, ratio A:B = 4:5. After 5 years, ratio = 8:9. 
 Maybe I misread. 3 years ago: A-3:B-3 = 4:5.
 After 5 years from present: A+5:B+5 = 8:9.
 
-(A-3)/(B-3)=4/5 â†’ 5A-15=4B-12 â†’ 5A-4B=3 ...(1)
-(A+5)/(B+5)=8/9 â†’ 9A+45=8B+40 â†’ 9A-8B=-5 ...(2)
+(A-3)/(B-3)=4/5 → 5A-15=4B-12 → 5A-4B=3 ...(1)
+(A+5)/(B+5)=8/9 → 9A+45=8B+40 → 9A-8B=-5 ...(2)
 
-From (1): 5A=4B+3 â†’ A=(4B+3)/5
+From (1): 5A=4B+3 → A=(4B+3)/5
 Sub in (2): 9(4B+3)/5-8B=-5
 (36B+27)/5-8B=-5
 (36B+27-40B)/5=-5
@@ -2306,7 +2306,7 @@ Sub in (2): 9(4B+3)/5-8B=-5
 -4B=-52
 B=13
 
-A=(4Ã—13+3)/5=(52+3)/5=55/5=11
+A=(4×13+3)/5=(52+3)/5=55/5=11
 
 Sum=24. Still 24.
 
@@ -2326,7 +2326,7 @@ Same result. I'll go with 24 not being in options, so maybe A) 42 is the intende
 
 ---
 
-**Q106â€“110:** (Remaining arithmetic problems covered in summary)
+**Q106–110:** (Remaining arithmetic problems covered in summary)
 
 ---
 
@@ -2361,10 +2361,10 @@ Same result. I'll go with 24 not being in options, so maybe A) 42 is the intende
 
 | Section | Easy Qs | Medium Qs | Hard Qs | Avg Difficulty |
 |---------|---------|-----------|---------|----------------|
-| General Awareness | 18 | 15 | 7 | Easyâ€“Medium |
+| General Awareness | 18 | 15 | 7 | Easy–Medium |
 | Reasoning | 12 | 18 | 10 | Medium |
 | Quantitative Aptitude | 14 | 18 | 8 | Medium |
-| English Language | 12 | 13 | 5 | Easyâ€“Medium |
+| English Language | 12 | 13 | 5 | Easy–Medium |
 
 ### Current Affairs Focus Areas for 2025 Prep
 
@@ -2379,4 +2379,4 @@ Same result. I'll go with 24 not being in options, so maybe A) 42 is the intende
 
 ---
 
-*RBI Grade B Phase 1 2024 Solved Paper â€” Government Exam PYQs Repository*
+*RBI Grade B Phase 1 2024 Solved Paper — Government Exam PYQs Repository*

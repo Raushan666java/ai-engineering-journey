@@ -1,4 +1,4 @@
-﻿> **Previous:** [JDBC/JOOQ](./19-jdbc-jooq.md) | **Next:** [Spring Data JPA](./21-spring-data-jpa.md)
+> **Previous:** [JDBC/JOOQ](./19-jdbc-jooq.md) | **Next:** [Spring Data JPA](./21-spring-data-jpa.md)
 
 # JPA & Hibernate Deep Dive
 
@@ -58,7 +58,7 @@ flowchart LR
     F --> G[Performance Tuning]
 ```
 
-> **Warning:** N+1 query problem is the most common Hibernate performance issue. Always verify generated SQL â†’ look for unexpected SELECT statements in logs.
+> **Warning:** N+1 query problem is the most common Hibernate performance issue. Always verify generated SQL → look for unexpected SELECT statements in logs.
 
 ## 1. Entity Mapping Fundamentals
 
@@ -75,7 +75,7 @@ JPA supports two access strategies:
 - **Property access** (`@Id` on a getter): Hibernate uses getter/setter methods
 
 ```java
-// FIELD access ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â annotations on fields
+// FIELD access — annotations on fields
 @Entity
 @Table(name = "users")
 public class User {
@@ -94,7 +94,7 @@ public class User {
     public void setName(String name) { this.name = name; }
 }
 
-// PROPERTY access ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â annotations on getters
+// PROPERTY access — annotations on getters
 @Entity
 @Table(name = "profiles")
 public class Profile {
@@ -151,7 +151,7 @@ public class BlogPost {
 }
 ```
 
-- `@Entity(name = "Post")` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â sets the JPQL entity name used in queries: `SELECT p FROM Post p`
+- `@Entity(name = "Post")` — sets the JPQL entity name used in queries: `SELECT p FROM Post p`
 - `@Table` accepts `schema`, `catalog`, `uniqueConstraints`, `indexes`
 
 ```java
@@ -167,7 +167,7 @@ public class BlogPost {
 }
 ```
 
-### 1.3 @Id and @GeneratedValue ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Four Generation Strategies
+### 1.3 @Id and @GeneratedValue — Four Generation Strategies
 
 
 ```java
@@ -178,7 +178,7 @@ public class IdentityExample {
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // AUTO_INCREMENT, DB assigns after insert
     private Long id;
 
-    // INSERT ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Hibernate needs immediate insert to know the ID
+    // INSERT → Hibernate needs immediate insert to know the ID
     // Cannot batch inserts (ID must be known before statement submission)
     // Best for simple single-row operations
 }
@@ -228,7 +228,7 @@ public class UuidExample {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    // Hibernate 6+ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â generates RFC 4122 UUIDs automatically
+    // Hibernate 6+ — generates RFC 4122 UUIDs automatically
     // No round-trip to DB to determine ID
     // Great for distributed systems and offline-first apps
     // Storage: BINARY(16) in MySQL, UUID in PostgreSQL
@@ -244,7 +244,7 @@ public class UuidExample {
 | TABLE | 1 per allocationSize | Yes | High | High |
 | UUID | None | Yes | None | Medium |
 
-### 1.4 @Column ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Tuning Column Definitions
+### 1.4 @Column — Fine-Tuning Column Definitions
 
 
 ```java
@@ -276,14 +276,14 @@ public class Product {
 }
 ```
 
-- `name` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â overrides column name (defaults to field name)
-- `nullable` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â adds NOT NULL constraint
-- `unique` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â adds UNIQUE constraint
-- `length` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â VARCHAR length (default 255), ignored for non-String types
-- `precision` / `scale` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â for decimal types
-- `columnDefinition` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â raw DDL fragment, database-specific
+- `name` — overrides column name (defaults to field name)
+- `nullable` — adds NOT NULL constraint
+- `unique` — adds UNIQUE constraint
+- `length` — VARCHAR length (default 255), ignored for non-String types
+- `precision` / `scale` — for decimal types
+- `columnDefinition` — raw DDL fragment, database-specific
 
-### 1.5 @Basic ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fetch and Optional
+### 1.5 @Basic — Fetch and Optional
 
 
 ```java
@@ -373,10 +373,10 @@ public class Order {
     @GeneratedValue
     private Long id;
 
-    @Enumerated(EnumType.ORDINAL)          // Stores 0, 1, 2, 3, 4 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â fragile if enum order changes
+    @Enumerated(EnumType.ORDINAL)          // Stores 0, 1, 2, 3, 4 — fragile if enum order changes
     private OrderStatus statusOrdinal;
 
-    @Enumerated(EnumType.STRING)           // Stores 'PENDING', 'CONFIRMED', etc. ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prefer this
+    @Enumerated(EnumType.STRING)           // Stores 'PENDING', 'CONFIRMED', etc. — prefer this
     private OrderStatus statusString;
 }
 ```
@@ -387,7 +387,7 @@ public class Order {
 
 
 ```java
-// DEPRECATED ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â old-style date mapping
+// DEPRECATED — old-style date mapping
 @Entity
 @SuppressWarnings("deprecation")
 public class OldSchoolEvent {
@@ -396,17 +396,17 @@ public class OldSchoolEvent {
     @GeneratedValue
     private Long id;
 
-    @Temporal(TemporalType.TIMESTAMP)       // java.util.Date ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ TIMESTAMP
+    @Temporal(TemporalType.TIMESTAMP)       // java.util.Date → TIMESTAMP
     private Date createdAt;
 
-    @Temporal(TemporalType.DATE)            // java.util.Date ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ DATE (no time)
+    @Temporal(TemporalType.DATE)            // java.util.Date → DATE (no time)
     private Date eventDate;
 
-    @Temporal(TemporalType.TIME)            // java.util.Date ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ TIME (no date)
+    @Temporal(TemporalType.TIME)            // java.util.Date → TIME (no date)
     private Date startTime;
 }
 
-// MODERN ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Java 8+ time API (no @Temporal needed)
+// MODERN — Java 8+ time API (no @Temporal needed)
 @Entity
 @Table(name = "events")
 public class Event {
@@ -426,9 +426,9 @@ public class Event {
 }
 ```
 
-Hibernate 6 automatically handles the Java 8 time types. No annotations needed. `@Temporal` is only for `java.util.Date` and `java.util.Calendar` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â avoid these in new code.
+Hibernate 6 automatically handles the Java 8 time types. No annotations needed. `@Temporal` is only for `java.util.Date` and `java.util.Calendar` — avoid these in new code.
 
-### 1.9 @Lob ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Large Objects
+### 1.9 @Lob — Large Objects
 
 
 ```java
@@ -547,10 +547,10 @@ public class Office {
 }
 ```
 
-- `mappedBy` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â always on the inverse (non-owning) side, references the field name on the owning side
-- `@JoinColumn` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â on the owning side, defines the FK column
-- `optional = false` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â adds NOT NULL constraint
-- `cascade` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â propagates operations to the associated entity
+- `mappedBy` — always on the inverse (non-owning) side, references the field name on the owning side
+- `@JoinColumn` — on the owning side, defines the FK column
+- `optional = false` — adds NOT NULL constraint
+- `cascade` — propagates operations to the associated entity
 
 ### 2.2 @OneToMany / @ManyToOne (Bidirectional)
 
@@ -684,8 +684,8 @@ public class Course {
 
 - Use `Set<>` instead of `List<>` for ManyToMany to avoid duplicate rows
 - `@JoinTable` defines the junction table
-- `joinColumns` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â FK to the owning entity's table
-- `inverseJoinColumns` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â FK to the inverse entity's table
+- `joinColumns` — FK to the owning entity's table
+- `inverseJoinColumns` — FK to the inverse entity's table
 - Avoid cascading ALL on ManyToMany (use PERSIST + MERGE only)
 
 ### 2.5 orphanRemoval
@@ -754,7 +754,7 @@ public class Book {
 - Never use the auto-generated ID in equals/hashCode (null before persist, changes after merge)
 - Never navigate lazy associations in equals/hashCode (triggers lazy loading)
 - Use a business key (natural ID) when available, or fall back to the class-based hash
-- `@ManyToOne` associations are especially dangerous ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they trigger n+1 in collections
+- `@ManyToOne` associations are especially dangerous — they trigger n+1 in collections
 
 ---
 
@@ -780,43 +780,43 @@ public class Post {
 
 | Cascade Type | persist | merge | remove | refresh | detach |
 |--------------|---------|-------|--------|---------|--------|
-| ALL | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ |
-| PERSIST | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | - | - | - | - |
-| MERGE | - | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | - | - | - |
-| REMOVE | - | - | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | - | - |
-| REFRESH | - | - | - | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ | - |
-| DETACH | - | - | - | - | ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ |
+| ALL | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PERSIST | ✓ | - | - | - | - |
+| MERGE | - | ✓ | - | - | - |
+| REMOVE | - | - | ✓ | - | - |
+| REFRESH | - | - | - | ✓ | - |
+| DETACH | - | - | - | - | ✓ |
 
 ### When to Use Each
 
 
 ```java
-// CascadeType.PERSIST ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â only propagate persist (safe for ManyToMany)
+// CascadeType.PERSIST — only propagate persist (safe for ManyToMany)
 @ManyToMany(cascade = CascadeType.PERSIST)
 private Set<Tag> tags = new HashSet<>();
 
-// CascadeType.MERGE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â propagate merge (detached entities re-attached)
+// CascadeType.MERGE — propagate merge (detached entities re-attached)
 @OneToMany(mappedBy = "order", cascade = CascadeType.MERGE)
 private List<OrderItem> items = new ArrayList<>();
 
-// CascadeType.REMOVE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â cascade delete (orphanRemoval is safer)
+// CascadeType.REMOVE — cascade delete (orphanRemoval is safer)
 @OneToMany(mappedBy = "invoice", cascade = CascadeType.REMOVE)
 private List<LineItem> lineItems = new ArrayList<>();
 
-// CascadeType.REFRESH ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â reload from DB
+// CascadeType.REFRESH — reload from DB
 @OneToOne(cascade = CascadeType.REFRESH)
 private RefreshToken token;
 
-// CascadeType.DETACH ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â remove from persistence context
+// CascadeType.DETACH — remove from persistence context
 @OneToMany(mappedBy = "session", cascade = CascadeType.DETACH)
 private List<SessionData> sessionDataList;
 
-// CascadeType.ALL ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â everything (convenient, but be careful with REMOVE on shared entities)
+// CascadeType.ALL — everything (convenient, but be careful with REMOVE on shared entities)
 @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, orphanRemoval = true)
 private List<OwnedEntity> ownedEntities = new ArrayList<>();
 ```
 
-**Warning:** Never use `CascadeType.ALL` or `CascadeType.REMOVE` on `@ManyToMany` or `@ManyToOne` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â you will delete entities that belong to other owners.
+**Warning:** Never use `CascadeType.ALL` or `CascadeType.REMOVE` on `@ManyToMany` or `@ManyToOne` — you will delete entities that belong to other owners.
 
 ---
 
@@ -908,7 +908,7 @@ public class Post {
 TypedQuery<Post> query = entityManager.createQuery(
     "SELECT DISTINCT p FROM Post p LEFT JOIN FETCH p.comments", Post.class);
 List<Post> posts = query.getResultList();
-// One query, all comments loaded eagerly ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no n+1
+// One query, all comments loaded eagerly — no n+1
 
 // Criteria API equivalent
 CriteriaBuilder cb = entityManager.getCriteriaBuilder();
@@ -953,7 +953,7 @@ List<Post> findAllWithComments();
 List<Post> findAllWithCommentsAndAuthors();
 ```
 
-Entity graphs are the most flexible approach ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they can be defined at the repository method level and compose well.
+Entity graphs are the most flexible approach — they can be defined at the repository method level and compose well.
 
 #### Solution 5: Hibernate 6 Query Tuning
 
@@ -1138,7 +1138,7 @@ public class SavingsAccount extends Account {
 
 
 ```java
-@MappedSuperclass                                // Not an entity ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no table
+@MappedSuperclass                                // Not an entity — no table
 public abstract class BaseEntity {
 
     @Id
@@ -1173,24 +1173,24 @@ public class Video extends BaseEntity {
 }
 ```
 
-`@MappedSuperclass` is not an entity ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it cannot be queried, and there is no table for it. Each subclass gets its own copy of the mapped columns.
+`@MappedSuperclass` is not an entity — it cannot be queried, and there is no table for it. Each subclass gets its own copy of the mapped columns.
 
 ### 5.5 Polymorphic Queries Performance
 
 
 ```java
-// Polymorphic query ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â hits all subclasses
+// Polymorphic query — hits all subclasses
 List<Vehicle> allVehicles = entityManager
     .createQuery("SELECT v FROM Vehicle v", Vehicle.class)
     .getResultList();
 
-// Concrete-type query ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â hits only one subclass table
+// Concrete-type query — hits only one subclass table
 List<Car> cars = entityManager
     .createQuery("SELECT c FROM Car c", Car.class)
     .getResultList();
 
 // Performance characteristics:
-// SINGLE_TABLE:     Both queries hit one table ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â fast
+// SINGLE_TABLE:     Both queries hit one table — fast
 // JOINED:           Polymorphic = parent JOIN child; concrete = parent JOIN child (same!)
 // TABLE_PER_CLASS:  Polymorphic = UNION ALL across all tables; concrete = single table
 ```
@@ -1768,13 +1768,13 @@ ummary
 
 1. **Entity Mapping:** Create an `Order` entity with `OrderItem` children. Use SEQUENCE ID generation with allocationSize of 100. Map a `BigDecimal totalAmount` with precision 12 and scale 2. Use `@CreationTimestamp` for `createdAt`. Ensure `@Column(updatable = false)` on created-at fields.
 
-2. **Relationships:** Build a `Teacher` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Â `Course` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Â `Student` model. Teacher has Many Courses. Course has Many Students (ManyToMany). Use `orphanRemoval` for CourseÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢Student. Add bidirectional sync methods.
+2. **Relationships:** Build a `Teacher` ↔ `Course` ↔ `Student` model. Teacher has Many Courses. Course has Many Students (ManyToMany). Use `orphanRemoval` for Course→Student. Add bidirectional sync methods.
 
-3. **Cascade Analysis:** Given `Author` (OneToMany cascade=ALL) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ `Book` (ManyToOne) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ `Publisher`, trace what happens when `authorRepository.delete(author)` is called. Which entities are deleted? Why is cascade=ALL dangerous on `Book.publisher`?
+3. **Cascade Analysis:** Given `Author` (OneToMany cascade=ALL) → `Book` (ManyToOne) → `Publisher`, trace what happens when `authorRepository.delete(author)` is called. Which entities are deleted? Why is cascade=ALL dangerous on `Book.publisher`?
 
 4. **n+1 Detection:** Create a `Category` with `@OneToMany List<Product>`. Write a JPQL query that fetches all categories and their products in one query. Then implement the same using `@EntityGraph`. Then using `@BatchSize`.
 
-5. **Inheritance Decision:** You need to model `Notification` (abstract) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ `EmailNotification`, `SMSNotification`, `PushNotification`. Each has 3 unique fields. You query polymorphically 90% of the time. Which inheritance strategy do you pick? Justify your answer.
+5. **Inheritance Decision:** You need to model `Notification` (abstract) → `EmailNotification`, `SMSNotification`, `PushNotification`. Each has 3 unique fields. You query polymorphically 90% of the time. Which inheritance strategy do you pick? Justify your answer.
 
 6. **Cache Tuning:** Configure EHCache for a `Country` entity (read-only, 100 entries, 24h TTL) and a `Product` entity (read-write, 5000 entries, 10 min TTL). Show the XML configuration and the entity annotations.
 

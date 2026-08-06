@@ -1,4 +1,4 @@
-﻿# CI/CD for Spring Boot
+# CI/CD for Spring Boot
 
 > **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 
@@ -55,7 +55,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. CI/CD Pipeline Overview
 
-> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -63,11 +63,11 @@ By the end of this chapter, you will be able to:
 ![CI/CD - GitHub Actions, GitLab CI, Deployment Strategies](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/54-cicd.png)
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ COMPILE â”‚ â†’  â”‚ TEST â”‚ â†’  â”‚ PACKAGE â”‚ â†’  â”‚ PUBLISH â”‚ â†’  â”‚  DEPLOY  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-     â”‚             â”‚             â”‚              â”‚               â”‚
-     â–¼             â–¼             â–¼              â–¼               â–¼
+┌─────────┐    ┌──────┐    ┌─────────┐    ┌─────────┐    ┌──────────┐
+│ COMPILE │ →  │ TEST │ →  │ PACKAGE │ →  │ PUBLISH │ →  │  DEPLOY  │
+└─────────┘    └──────┘    └─────────┘    └─────────┘    └──────────┘
+     │             │             │              │               │
+     ▼             ▼             ▼              ▼               ▼
   javac        unit tests    mvn package     docker push    kubectl apply
   mvn compile  int tests     bootBuildImage  mvn deploy    helm upgrade
   gradle build  security scan jar shadow      to registry   terraform apply
@@ -126,7 +126,7 @@ concurrency:
 
 jobs:
   ###########################################################################
-  # BUILD â†’ Compile, test, and analyze
+  # BUILD → Compile, test, and analyze
   ###########################################################################
   build:
     name: Build and Test
@@ -233,7 +233,7 @@ jobs:
           retention-days: 7
 
   ###########################################################################
-  # PACKAGE â†’ Build JAR and Docker image
+  # PACKAGE → Build JAR and Docker image
   ###########################################################################
   package:
     name: Package
@@ -300,7 +300,7 @@ jobs:
             COMMIT_SHA=${{ github.sha }}
 
   ###########################################################################
-  # DEPLOY STAGING â†’ Deploy to staging on PR merge to develop
+  # DEPLOY STAGING → Deploy to staging on PR merge to develop
   ###########################################################################
   deploy-staging:
     name: Deploy to Staging
@@ -349,7 +349,7 @@ jobs:
             --from=cronjob/myapp-migration migration-manual-$(date +%s)
 
   ###########################################################################
-  # DEPLOY PRODUCTION â†’ Manual approval gate
+  # DEPLOY PRODUCTION → Manual approval gate
   ###########################################################################
   deploy-production:
     name: Deploy to Production
@@ -1552,7 +1552,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `Ã°Å¸Å¡â‚¬ Preview deployed at https://pr-${context.issue.number}.preview.myapp.com`
+              body: `🚀 Preview deployed at https://pr-${context.issue.number}.preview.myapp.com`
             })
 ```
 
@@ -2080,7 +2080,7 @@ deploy-production:
 ```
 
 Configure in GitHub:
-1. Settings â†’ Environments â†’ Production
+1. Settings → Environments → Production
 2. Required reviewers: DevOps Lead, Tech Lead
 3. Wait timer: 10 minutes
 
@@ -2415,10 +2415,10 @@ jobs:
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
-| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
-| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Small application | ✓ | ✗ | ✓ |
+| Enterprise system | ✓ | ✓ | ✗ |
+| High-throughput API | ✗ | ✓ | ✓ |
+| Event-driven | ✗ | ✓ | ✓ |
 
 ## Chapter Quiz
 
@@ -2448,7 +2448,7 @@ jobs:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â†’ it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;
@@ -2459,7 +2459,7 @@ jobs:
 
 - **GitHub Actions** provides native CI/CD with matrix builds, caching, Docker layer caching, and environment-based deployments
 - **GitLab CI** offers built-in security scanning (SAST, dependency scanning, container scanning), docker-in-docker, and manual approvals
-- **Build pipelines** follow compile â†’ test â†’ package â†’ publish â†’ deploy, with integration tests using Testcontainers or service containers
+- **Build pipelines** follow compile → test → package → publish → deploy, with integration tests using Testcontainers or service containers
 - **Artifact publishing** supports Maven Central (via OSSRH), GitHub Packages, Nexus/Artifactory, Docker Hub, and Amazon ECR
 - **Automated deployments** range from simple rolling updates to blue-green and canary releases with feature flags
 - **Database migrations** in CI use Flyway with validation, migration integrity checks, and rollback testing
@@ -2487,4 +2487,4 @@ jobs:
 
 9. **Database migrations:** Integrate Flyway migrations into your CI pipeline. Include a migration verification step that runs against a fresh PostgreSQL container.
 
-10. **Approval gate:** Configure a production deployment that requires manual approval. Add quality gate checks (coverage Ã¢â€°Â¥ 80%, SonarQube pass, no critical security findings).
+10. **Approval gate:** Configure a production deployment that requires manual approval. Add quality gate checks (coverage ≥ 80%, SonarQube pass, no critical security findings).

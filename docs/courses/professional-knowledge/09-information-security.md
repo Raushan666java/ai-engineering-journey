@@ -1,4 +1,4 @@
-﻿# Chapter 9: Information Security â€” Exam Quick Revision
+# Chapter 9: Information Security — Exam Quick Revision
 
 ## Learning Objectives
 - Compare symmetric vs asymmetric encryption algorithms with key sizes and security levels
@@ -35,29 +35,29 @@
 |--------|-----------|-------------------------|
 | **Keys** | Single shared key | Public + Private key pair |
 | **Key exchange** | Out-of-band (secure channel needed) | Public key can be shared openly |
-| **Speed** | Fast (100-1000Ã— faster) | Slow (computationally expensive) |
+| **Speed** | Fast (100-1000× faster) | Slow (computationally expensive) |
 | **Key size** | 128-256 bits | 2048-4096 bits |
 | **Use case** | Bulk data encryption | Key exchange, digital signatures |
-| **Security level** | 128-bit AES â‰ˆ 256-bit ECC | 2048-bit RSA â‰ˆ 3072-bit RSA |
+| **Security level** | 128-bit AES ≈ 256-bit ECC | 2048-bit RSA ≈ 3072-bit RSA |
 
 ### Algorithm Details
 
 | Algorithm | Type | Key Size | Block Size | Rounds | Status |
 |-----------|------|----------|------------|--------|--------|
-| **DES** | Symmetric (block) | 56 bits | 64 bits | 16 | âŒ Broken (brute-force in hours) |
-| **3DES** | Symmetric (block) | 112/168 bits | 64 bits | 48 | âŒ Deprecated (slow, small block) |
-| **AES** | Symmetric (block) | 128/192/256 bits | 128 bits | 10/12/14 | âœ… Secure (standard) |
-| **Blowfish** | Symmetric (block) | 32-448 bits | 64 bits | 16 | âš ï¸ Small block (64-bit) |
-| **RSA** | Asymmetric | 1024-4096 bits | Variable | N/A | âš ï¸ 1024 deprecated, 2048+ secure |
-| **ECC** | Asymmetric | 160-521 bits | N/A | N/A | âœ… Equivalent security with smaller keys |
-| **Diffie-Hellman** | Asymmetric (key exchange) | Variable | N/A | N/A | âœ… Secure (with proper parameters) |
+| **DES** | Symmetric (block) | 56 bits | 64 bits | 16 | ❌ Broken (brute-force in hours) |
+| **3DES** | Symmetric (block) | 112/168 bits | 64 bits | 48 | ❌ Deprecated (slow, small block) |
+| **AES** | Symmetric (block) | 128/192/256 bits | 128 bits | 10/12/14 | ✅ Secure (standard) |
+| **Blowfish** | Symmetric (block) | 32-448 bits | 64 bits | 16 | ⚠️ Small block (64-bit) |
+| **RSA** | Asymmetric | 1024-4096 bits | Variable | N/A | ⚠️ 1024 deprecated, 2048+ secure |
+| **ECC** | Asymmetric | 160-521 bits | N/A | N/A | ✅ Equivalent security with smaller keys |
+| **Diffie-Hellman** | Asymmetric (key exchange) | Variable | N/A | N/A | ✅ Secure (with proper parameters) |
 
 ### Key Size Equivalence
 
 ```
-ECC-256 â‰ˆ RSA-3072 â‰ˆ AES-128 (security level)
-ECC-384 â‰ˆ RSA-7680 â‰ˆ AES-192
-ECC-521 â‰ˆ RSA-15360 â‰ˆ AES-256
+ECC-256 ≈ RSA-3072 ≈ AES-128 (security level)
+ECC-384 ≈ RSA-7680 ≈ AES-192
+ECC-521 ≈ RSA-15360 ≈ AES-256
 ```
 
 ---
@@ -67,20 +67,20 @@ ECC-521 â‰ˆ RSA-15360 â‰ˆ AES-256
 ### Properties
 
 1. **Preimage Resistance (One-way):** Given hash H, infeasible to find M such that hash(M) = H
-2. **Second Preimage Resistance:** Given M1, infeasible to find M2 â‰  M1 with hash(M1) = hash(M2)
-3. **Collision Resistance:** Infeasible to find any M1 â‰  M2 with hash(M1) = hash(M2)
-4. **Avalanche Effect:** Small change in input â†’ completely different hash output (~50% bits flip)
+2. **Second Preimage Resistance:** Given M1, infeasible to find M2 ≠ M1 with hash(M1) = hash(M2)
+3. **Collision Resistance:** Infeasible to find any M1 ≠ M2 with hash(M1) = hash(M2)
+4. **Avalanche Effect:** Small change in input → completely different hash output (~50% bits flip)
 5. **Deterministic:** Same input always produces same output
 
 ### Hash Algorithm Comparison
 
 | Algorithm | Output Size | Collision Status | Use Case |
 |-----------|-------------|-----------------|----------|
-| **MD5** | 128 bits | âŒ Broken (collisions in 2^18) | Checksums (non-security) |
-| **SHA-1** | 160 bits | âŒ Broken (SHAttered, 2^63) | Deprecated |
-| **SHA-256** | 256 bits | âœ… Secure | TLS, digital signatures, Bitcoin |
-| **SHA-3** | Variable | âœ… Secure | Newest standard (Keccak) |
-| **bcrypt/scrypt** | Variable | âœ… Secure | Password hashing (slow by design) |
+| **MD5** | 128 bits | ❌ Broken (collisions in 2^18) | Checksums (non-security) |
+| **SHA-1** | 160 bits | ❌ Broken (SHAttered, 2^63) | Deprecated |
+| **SHA-256** | 256 bits | ✅ Secure | TLS, digital signatures, Bitcoin |
+| **SHA-3** | Variable | ✅ Secure | Newest standard (Keccak) |
+| **bcrypt/scrypt** | Variable | ✅ Secure | Password hashing (slow by design) |
 
 ---
 
@@ -88,14 +88,14 @@ ECC-521 â‰ˆ RSA-15360 â‰ˆ AES-256
 
 ```
 Sender Side:
-1. Hash the message â†’ digest
-2. Encrypt digest with sender's PRIVATE key â†’ signature
+1. Hash the message → digest
+2. Encrypt digest with sender's PRIVATE key → signature
 3. Send (message + signature) to receiver
 
 Receiver Side:
-1. Decrypt signature with sender's PUBLIC key â†’ digest1
-2. Hash received message â†’ digest2
-3. Compare digest1 == digest2 â†’ if equal, signature verified
+1. Decrypt signature with sender's PUBLIC key → digest1
+2. Hash received message → digest2
+3. Compare digest1 == digest2 → if equal, signature verified
 ```
 
 ### Properties
@@ -111,20 +111,20 @@ Receiver Side:
 ```
 Client                                        Server
    |                                              |
-   |--- ClientHello (TLS version, cipher suites) â†’|
-   |â† ServerHello (selected cipher, cert) -------|
-   |â† Certificate (server's public key) ---------|
-   |â† ServerHelloDone ---------------------------|
+   |--- ClientHello (TLS version, cipher suites) →|
+   |← ServerHello (selected cipher, cert) -------|
+   |← Certificate (server's public key) ---------|
+   |← ServerHelloDone ---------------------------|
    |                                              |
-   |--- ClientKeyExchange (pre-master secret) ---â†’|
+   |--- ClientKeyExchange (pre-master secret) ---→|
    |    (encrypted with server's public key)       |
    |                                              |
-   |--- ChangeCipherSpec ------------------------â†’|
-   |--- Finished (encrypted) --------------------â†’|
-   |â† ChangeCipherSpec ---------------------------|
-   |â† Finished (encrypted) -----------------------|
+   |--- ChangeCipherSpec ------------------------→|
+   |--- Finished (encrypted) --------------------→|
+   |← ChangeCipherSpec ---------------------------|
+   |← Finished (encrypted) -----------------------|
    |                                              |
-   |â† Secure communication established ----------â†’|
+   |← Secure communication established ----------→|
 ```
 
 ### TLS 1.3 Improvements
@@ -132,7 +132,7 @@ Client                                        Server
 - Reduced handshake: 1-RTT (normal), 0-RTT (resumed)
 - Removed weak ciphers (RC4, 3DES, CBC mode)
 - Forward secrecy mandatory (no static RSA key exchange)
-- Fewer round trips â†’ faster connection establishment
+- Fewer round trips → faster connection establishment
 
 ---
 
@@ -218,12 +218,12 @@ graph TD
 
 ### Parkerian Hexad (Extended CIA + 3 more)
 
-1. **Confidentiality** â€” privacy
-2. **Integrity** â€” accuracy
-3. **Availability** â€” accessibility
-4. **Possession/Control** â€” who has the data
-5. **Authenticity** â€” genuineness of origin
-6. **Utility** â€” usefulness of data
+1. **Confidentiality** — privacy
+2. **Integrity** — accuracy
+3. **Availability** — accessibility
+4. **Possession/Control** — who has the data
+5. **Authenticity** — genuineness of origin
+6. **Utility** — usefulness of data
 
 ---
 
@@ -231,9 +231,9 @@ graph TD
 
 | Component | Description | Example |
 |-----------|-------------|---------|
-| **Authentication** | Who are you? â€” verify identity | Password, biometric, MFA |
-| **Authorization** | What can you do? â€” permissions | RBAC, ACL |
-| **Accounting** | What did you do? â€” audit trail | Logs, monitoring |
+| **Authentication** | Who are you? — verify identity | Password, biometric, MFA |
+| **Authorization** | What can you do? — permissions | RBAC, ACL |
+| **Accounting** | What did you do? — audit trail | Logs, monitoring |
 
 ### Authentication Factors
 
@@ -283,7 +283,7 @@ Requires **two or more** factors from different categories (not just two passwor
 
 - **FAR (False Acceptance Rate):** Imposter accepted (Type II error)
 - **FRR (False Rejection Rate):** Genuine user rejected (Type I error)
-- **EER (Equal Error Rate):** Where FAR = FRR â€” lower is better
+- **EER (Equal Error Rate):** Where FAR = FRR — lower is better
 
 ---
 
@@ -322,12 +322,12 @@ Requires **two or more** factors from different categories (not just two passwor
 **Answer:** (b) Sender cannot deny sending the message. Digital signatures provide non-repudiation by binding the sender's identity to the message.
 
 **Q5:** Which OWASP Top 10 (2021) vulnerability involves missing authentication checks allowing users to access unauthorized resources?
-- (a) A1 â€” Broken Access Control
-- (b) A3 â€” Injection
-- (c) A7 â€” Identification and Auth Failures
-- (d) A10 â€” SSRF
+- (a) A1 — Broken Access Control
+- (b) A3 — Injection
+- (c) A7 — Identification and Auth Failures
+- (d) A10 — SSRF
 
-**Answer:** (a) A1 â€” Broken Access Control. This moved to the top spot in 2021, covering issues like privilege escalation, missing access controls, and path traversal.
+**Answer:** (a) A1 — Broken Access Control. This moved to the top spot in 2021, covering issues like privilege escalation, missing access controls, and path traversal.
 
 ---
 
@@ -338,7 +338,7 @@ Requires **two or more** factors from different categories (not just two passwor
 | **IPsec** | 3 (Network) | AES, 3DES | UDP 500 (IKE), ESP | High | Strong encryption, tunnel + transport mode | Complex configuration |
 | **SSL/TLS VPN** | 4-7 | AES, ChaCha20 | TCP 443 | High | No client needed, passes firewalls | Slower than IPsec |
 | **OpenVPN** | 2/3 | AES-256-GCM | UDP 1194 | Very high | Open source, cross-platform, flexible | May be blocked by firewalls |
-| **PPTP** | 2 | MPPE (128-bit) | TCP 1723 | âŒ Broken | Easy setup, widely supported | Deprecated, known weaknesses |
+| **PPTP** | 2 | MPPE (128-bit) | TCP 1723 | ❌ Broken | Easy setup, widely supported | Deprecated, known weaknesses |
 | **L2TP/IPsec** | 2 | AES with IPsec | UDP 1701 | High | Built into most OS | Double encapsulation overhead |
 
 ### IPsec Modes
@@ -358,17 +358,17 @@ Requires **two or more** factors from different categories (not just two passwor
 
 | Standard | Encryption | Authentication | Status |
 |----------|-----------|---------------|--------|
-| **WEP** | RC4 (64/128-bit) | Shared key | âŒ Broken in minutes |
-| **WPA** | TKIP (RC4-based) | PSK or 802.1X | âŒ Broken (Michael attack) |
-| **WPA2** | AES-CCMP | PSK or 802.1X | âš ï¸ KRACK attack (fixed) |
-| **WPA3** | AES-GCMP-256 | SAE (Simultaneous Auth of Equals) | âœ… Secure |
+| **WEP** | RC4 (64/128-bit) | Shared key | ❌ Broken in minutes |
+| **WPA** | TKIP (RC4-based) | PSK or 802.1X | ❌ Broken (Michael attack) |
+| **WPA2** | AES-CCMP | PSK or 802.1X | ⚠️ KRACK attack (fixed) |
+| **WPA3** | AES-GCMP-256 | SAE (Simultaneous Auth of Equals) | ✅ Secure |
 
 ### WPA2 vs WPA3
 
 | Feature | WPA2 | WPA3 |
 |---------|------|------|
 | Encryption | AES-CCMP (128-bit) | AES-GCMP (256-bit) |
-| Handshake | 4-way handshake (PSK vulnerable to dictionary attack) | SAE (Dragonfly) â€” resistant to offline dictionary attacks |
+| Handshake | 4-way handshake (PSK vulnerable to dictionary attack) | SAE (Dragonfly) — resistant to offline dictionary attacks |
 | Forward secrecy | No (passphrase compromise reveals past traffic) | Yes (unique session keys) |
 | IoT support | No | Wi-Fi Easy Connect (QR code onboarding) |
 
@@ -433,9 +433,9 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ---
 
-## ðŸ“Œ Extended Theory â€” Deep Dive for IBPS SO Mains (2024â€“2026 Trends)
+## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
-### Encryption/Decryption â€” TypeScript Implementations
+### Encryption/Decryption — TypeScript Implementations
 
 ```typescript
 // Caesar Cipher
@@ -485,7 +485,7 @@ class VigenereCipher {
   }
 }
 
-// RSA Basics (simplified â€” uses small primes for demonstration)
+// RSA Basics (simplified — uses small primes for demonstration)
 class RSABasic {
   private p: number;
   private q: number;
@@ -540,11 +540,11 @@ class RSABasic {
 // const ct = rsa.encrypt(123); const pt = rsa.decrypt(ct);
 ```
 
-### Hash Function Demonstration â€” TypeScript
+### Hash Function Demonstration — TypeScript
 
 ```typescript
 class SimpleHash {
-  // SHA-256 simulation (conceptual â€” use crypto.subtle in production)
+  // SHA-256 simulation (conceptual — use crypto.subtle in production)
   static async sha256(message: string): Promise<string> {
     const encoder = new TextEncoder();
     const data = encoder.encode(message);
@@ -573,7 +573,7 @@ class SimpleHash {
 }
 ```
 
-### Security Protocol Flows â€” Detailed Diagrams
+### Security Protocol Flows — Detailed Diagrams
 
 ```mermaid
 sequenceDiagram
@@ -603,16 +603,16 @@ graph LR
         SIG --> D1[Decrypt with Public Key]
         H2 --> CMP{Compare}
         D1 --> CMP
-        CMP -->|Match| OK[Verified âœ“]
-        CMP -->|No Match| FAIL[Invalid âœ—]
+        CMP -->|Match| OK[Verified ✓]
+        CMP -->|No Match| FAIL[Invalid ✗]
     end
 ```
 
 > **PYQ 2025:** In a TLS 1.3 handshake, how many round trips are needed for a fresh connection? For a resumed connection?
 
-**Answer:** Fresh: 1-RTT (ClientHello â†’ ServerHello + Cert â†’ Finished). Resumed: 0-RTT (client can send data immediately with pre-shared key).
+**Answer:** Fresh: 1-RTT (ClientHello → ServerHello + Cert → Finished). Resumed: 0-RTT (client can send data immediately with pre-shared key).
 
-### Security Threat â€” TypeScript Detection Examples
+### Security Threat — TypeScript Detection Examples
 
 ```typescript
 // SQL Injection Detector
@@ -675,7 +675,7 @@ function passwordStrength(password: string): { score: number; label: string; fee
 }
 ```
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 <details>
 <summary>Q1: Which encryption algorithm uses a 56-bit key and is considered broken?</summary>
@@ -722,7 +722,7 @@ function passwordStrength(password: string): { score: number; label: string; fee
 <details>
 <summary>Q8: What is the key size equivalence of ECC-256?</summary>
 (a) RSA-1024 (b) RSA-2048 (c) RSA-3072 (d) RSA-4096
-**Answer:** (c) RSA-3072. ECC provides equivalent security with much smaller key sizes: ECC-256 â‰ˆ RSA-3072 â‰ˆ AES-128.
+**Answer:** (c) RSA-3072. ECC provides equivalent security with much smaller key sizes: ECC-256 ≈ RSA-3072 ≈ AES-128.
 </details>
 
 <details>
@@ -734,7 +734,7 @@ function passwordStrength(password: string): { score: number; label: string; fee
 <details>
 <summary>Q10: In biometric authentication, FRR stands for:</summary>
 (a) False Recognition Rate (b) False Rejection Rate (c) False Response Rate (d) Failed Recognition Rate
-**Answer:** (b) False Rejection Rate. Type I error â€” legitimate user is rejected. FAR = False Acceptance Rate (Type II error).
+**Answer:** (b) False Rejection Rate. Type I error — legitimate user is rejected. FAR = False Acceptance Rate (Type II error).
 </details>
 
 <details>
@@ -797,7 +797,7 @@ function passwordStrength(password: string): { score: number; label: string; fee
 **Answer:** (b) ESP (Encapsulating Security Payload). AH provides authentication only (no encryption). IKE establishes security associations.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 1. Encrypt "HELLO" using Caesar cipher with shift 3. Then decrypt the result.
 2. Encrypt "ATTACKATDAWN" using Vigenere cipher with key "KEY". Show the ciphertext.
@@ -818,7 +818,7 @@ function passwordStrength(password: string): { score: number; label: string; fee
 17. Implement a TypeScript function that validates X.509 certificates (chain validation, expiry, revocation).
 18. Design a security architecture for a cloud-native application (defense in depth).
 19. Write TypeScript code implementing a rate limiter to mitigate brute force attacks.
-20. Compare biometric authentication types: fingerprint, face, iris, voice â€” FAR, FRR, liveness detection.
+20. Compare biometric authentication types: fingerprint, face, iris, voice — FAR, FRR, liveness detection.
 21. Implement TypeScript code for HMAC-SHA256 generation and verification.
 22. Explain the STRIDE threat classification with examples for each category.
 23. Write TypeScript code for a simple CA (Certificate Authority) that issues and revokes certificates.
@@ -826,25 +826,25 @@ function passwordStrength(password: string): { score: number; label: string; fee
 25. Implement TypeScript code for content security policy (CSP) header generation.
 26. Explain the concept of zero-trust security (never trust, always verify).
 27. Write TypeScript code for a secure session management system (random tokens, expiry, rotation).
-28. Compare OWASP Top 10 2017 vs 2021 â€” what changed?
+28. Compare OWASP Top 10 2017 vs 2021 — what changed?
 29. Implement TypeScript code for a simple blockchain-based integrity verification system.
 30. Explain the GDPR principles (lawfulness, purpose limitation, data minimization, accuracy, storage limitation, integrity, accountability).
 
 **Answer Key:**
 
 1. Encrypt: KHOOR (H+3=K, E+3=H, L+3=O, L+3=O, O+3=R). Decrypt: HELLO
-2. Vigenere: ATTACKATDAWN + KEYKEYKEYKEY â†’ K (A+10), E (T+4)... = KXJEYTKEAQGE
-3. n=187, Ï†=160, e=7, d=23. Encrypt(88) = 88^7 mod 187 = 11. Decrypt(11) = 11^23 mod 187 = 88
+2. Vigenere: ATTACKATDAWN + KEYKEYKEYKEY → K (A+10), E (T+4)... = KXJEYTKEAQGE
+3. n=187, φ=160, e=7, d=23. Encrypt(88) = 88^7 mod 187 = 11. Decrypt(11) = 11^23 mod 187 = 88
 5. NIST SP 800-63B: min 8 chars, check against breached passwords, allow up to 64 chars, no composition rules required
-8. If Origin header doesn't match expected origin â†’ potential CSRF. SameSite=Strict/Lax also prevents
+8. If Origin header doesn't match expected origin → potential CSRF. SameSite=Strict/Lax also prevents
 10. Header: base64(JSON({alg:"HS256",typ:"JWT"})). Payload: base64(JSON({sub,iat,exp})). Signature: HMAC-SHA256(base64header + "." + base64payload, secret)
 11. DH: A and B agree on prime p and generator g. A sends g^a mod p, B sends g^b mod p. Shared secret = g^(ab) mod p
 12. Spoofing (fake login), Tampering (SQLi), Repudiation (no logs), Info Disclosure (data breach), DoS (DDoS), Elevation (privilege escalation)
 14. WPA2: 4-way handshake, AES-CCMP, vulnerable to dictionary attack. WPA3: SAE handshake, AES-GCMP-256, resistant to offline dictionary attack, forward secrecy
 16. Black-box: no internal knowledge (external attacker). White-box: full knowledge (code, credentials). Gray-box: partial knowledge
-18. Defense in depth: WAF â†’ load balancer â†’ app firewall â†’ IAM â†’ encryption â†’ network segmentation â†’ logging/monitoring
-19. Sliding window: track timestamps per IP. If count > N in window â†’ block for duration
-21. HMAC(key, msg) = H((keyâŠ•opad) || H((keyâŠ•ipad) || msg)). Provides message authentication + integrity
+18. Defense in depth: WAF → load balancer → app firewall → IAM → encryption → network segmentation → logging/monitoring
+19. Sliding window: track timestamps per IP. If count > N in window → block for duration
+21. HMAC(key, msg) = H((key⊕opad) || H((key⊕ipad) || msg)). Provides message authentication + integrity
 22. S: Spoofing identity. T: Tampering with data. R: Repudiation. I: Information disclosure. D: Denial of service. E: Elevation of privilege
 24. Signature: matches known patterns (low FP, misses zero-day). Anomaly: baseline deviation (detects novel attacks, high FP). Heuristic: rule-based (balanced)
 26. Zero trust: no implicit trust. Verify every request. Micro-segmentation. Least privilege. Continuous monitoring
@@ -853,7 +853,7 @@ function passwordStrength(password: string): { score: number; label: string; fee
 
 ---
 
-## ðŸ“Œ Additional PYQ Integration (2024â€“2026 Analysis)
+## 📌 Additional PYQ Integration (2024–2026 Analysis)
 
 > **PYQ 2025:** An organization implements the following security controls. Classify each as Preventive, Detective, or Corrective:
 > (a) Firewall rules blocking port 22 from external IPs
@@ -863,16 +863,16 @@ function passwordStrength(password: string): { score: number; label: string; fee
 > (e) CCTV cameras in the data center
 
 **Answer:**
-- (a) **Preventive** â€” stops unauthorized SSH attempts before they reach servers
-- (b) **Detective** â€” monitors and alerts but does not block
-- (c) **Corrective** â€” restores data after a ransomware attack or data loss
-- (d) **Preventive** â€” reduces likelihood of successful social engineering attacks
-- (e) **Deterrent/Detective** â€” discourages intruders and records activity
+- (a) **Preventive** — stops unauthorized SSH attempts before they reach servers
+- (b) **Detective** — monitors and alerts but does not block
+- (c) **Corrective** — restores data after a ransomware attack or data loss
+- (d) **Preventive** — reduces likelihood of successful social engineering attacks
+- (e) **Deterrent/Detective** — discourages intruders and records activity
 
 > **PYQ 2024:** Given the ciphertext "WKLVLVVBOHPHVVDJH" encrypted with Caesar cipher, decrypt it to find the original message. What shift was used?
 
 **Solution:** Try reverse shift of 3 (common Caesar shift):
-- Wâ†’T, Kâ†’H, Lâ†’I, Vâ†’S, Lâ†’I, Vâ†’S, Vâ†’S, Bâ†’Y, Oâ†’L, Hâ†’E, Pâ†’M, Hâ†’E, Vâ†’S, Vâ†’S, Dâ†’A, Jâ†’G, Hâ†’E
+- W→T, K→H, L→I, V→S, L→I, V→S, V→S, B→Y, O→L, H→E, P→M, H→E, V→S, V→S, D→A, J→G, H→E
 - Result: "THISISASAMPLEMESSAGE"
 - Shift = 3 (or reverse shift = 23)
 
@@ -882,12 +882,12 @@ function passwordStrength(password: string): { score: number; label: string; fee
 **Exploitation:** The query becomes `SELECT * FROM users WHERE username = '' OR 1=1; --' AND password = '...'`. The `OR 1=1` makes the condition always true; `--` comments out the rest. The attacker gains access as the first user (often admin).
 
 **Mitigations:**
-1. **Parameterized queries / Prepared statements** â€” most effective. Input treated as data, not executable SQL
-2. **Stored procedures** â€” encapsulate SQL logic with typed parameters
-3. **Input validation + WAF** â€” reject inputs containing SQL keywords (defense in depth)
-4. **Least privilege DB account** â€” web app should use account with only required permissions (no DROP/INSERT into system tables)
+1. **Parameterized queries / Prepared statements** — most effective. Input treated as data, not executable SQL
+2. **Stored procedures** — encapsulate SQL logic with typed parameters
+3. **Input validation + WAF** — reject inputs containing SQL keywords (defense in depth)
+4. **Least privilege DB account** — web app should use account with only required permissions (no DROP/INSERT into system tables)
 
-## ðŸ“Œ Topic-wise Weightage Analysis for IBPS SO IT Mains
+## 📌 Topic-wise Weightage Analysis for IBPS SO IT Mains
 
 | Topic | Weightage | Frequency | Difficulty |
 |-------|-----------|-----------|------------|
@@ -905,9 +905,9 @@ function passwordStrength(password: string): { score: number; label: string; fee
 ## Summary
 - **Symmetric (AES):** Single key, fast, 128-256 bits. **Asymmetric (RSA/ECC):** Key pair, slow, 2048+ bits
 - **Hashing:** SHA-256 (secure), MD5/SHA-1 (broken). Properties: preimage resistance, collision resistance, avalanche effect
-- **Digital signature:** Hash + encrypt with private key â†’ verify with public key
-- **TLS handshake:** ClientHello â†’ ServerHello + Cert â†’ KeyExchange â†’ Finished
-- **Firewalls:** Packet filter (L3/4) â†’ Stateful â†’ Proxy (L7) â†’ NGFW
+- **Digital signature:** Hash + encrypt with private key → verify with public key
+- **TLS handshake:** ClientHello → ServerHello + Cert → KeyExchange → Finished
+- **Firewalls:** Packet filter (L3/4) → Stateful → Proxy (L7) → NGFW
 - **IDS:** Monitors/passive. **IPS:** Blocks/inline
 - **Attacks:** DDoS (availability), SQLi/XSS (integrity/confidentiality), MITM (confidentiality)
 - **CIA:** Confidentiality (encryption), Integrity (hashing), Availability (redundancy)
@@ -915,24 +915,24 @@ function passwordStrength(password: string): { score: number; label: string; fee
 - **OWASP Top 10 (2021):** Broken Access Control (#1), Crypto Failures (#2), Injection (#3)
 - **Biometrics:** Fingerprint (common), iris (accurate), face (growing), voice (convenient)
 - **VPN:** IPsec (site-to-site), SSL/TLS (client without client software), OpenVPN (open source)
-- **Wireless:** WEP (broken) â†’ WPA (broken) â†’ WPA2 (KRACK) â†’ WPA3 (SAE, secure)
+- **Wireless:** WEP (broken) → WPA (broken) → WPA2 (KRACK) → WPA3 (SAE, secure)
 - **Security policy:** BIA (impact analysis), BCP (continuity), DRP (disaster recovery)
-- **Pentesting:** Recon â†’ Scan â†’ Exploit â†’ Post-Exploit â†’ Report
+- **Pentesting:** Recon → Scan → Exploit → Post-Exploit → Report
 - **Standards:** ISO 27001 (ISMS), PCI DSS (card data), HIPAA (healthcare), GDPR (privacy)
 
 ---
 
 ## HOT Topics (Frequently Asked in IBPS SO IT Mains)
-1. AES vs DES â€” key size, block size, rounds, security status
-2. RSA vs ECC â€” key size equivalence, performance, security
-3. SSL/TLS handshake â€” steps, what is exchanged at each stage
-4. Firewall types â€” which type for which deployment scenario
-5. IDS vs IPS â€” detection methods (signature vs anomaly)
-6. XSS vs CSRF â€” differences, attack vectors, mitigation techniques
-7. Hash function properties â€” preimage resistance vs collision resistance
-8. OWASP Top 10 (2021) â€” recent changes (injection dropped from #1)
-9. Digital signature â€” process and properties (authentication, integrity, non-repudiation)
-10. MFA â€” factors (knowledge, possession, inherence) and implementation
+1. AES vs DES — key size, block size, rounds, security status
+2. RSA vs ECC — key size equivalence, performance, security
+3. SSL/TLS handshake — steps, what is exchanged at each stage
+4. Firewall types — which type for which deployment scenario
+5. IDS vs IPS — detection methods (signature vs anomaly)
+6. XSS vs CSRF — differences, attack vectors, mitigation techniques
+7. Hash function properties — preimage resistance vs collision resistance
+8. OWASP Top 10 (2021) — recent changes (injection dropped from #1)
+9. Digital signature — process and properties (authentication, integrity, non-repudiation)
+10. MFA — factors (knowledge, possession, inherence) and implementation
 
 ---
 
@@ -960,5 +960,5 @@ A4: EER is the point where FAR (False Acceptance Rate) equals FRR (False Rejecti
 
 <details>
 <summary>Q5: Which OWASP Top 10 (2021) entry covers vulnerabilities in third-party libraries and components?</summary>
-A5: A6 â€” Vulnerable and Outdated Components. This includes using libraries/frameworks with known CVEs, outdated software, and unpatched dependencies. Mitigation involves SBOM (Software Bill of Materials), regular updates, and vulnerability scanning.
+A5: A6 — Vulnerable and Outdated Components. This includes using libraries/frameworks with known CVEs, outdated software, and unpatched dependencies. Mitigation involves SBOM (Software Bill of Materials), regular updates, and vulnerability scanning.
 </details>

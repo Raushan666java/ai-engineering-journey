@@ -1,4 +1,4 @@
-﻿# Chapter 14: Wireless, IoT & Embedded Security
+# Chapter 14: Wireless, IoT & Embedded Security
 
 ---
 
@@ -81,12 +81,12 @@ Understanding these threats requires interdisciplinary knowledge spanning radio-
 
 Wi-Fi security has evolved through four major generations, each addressing cryptographic weaknesses of its predecessor.
 
-#### WEP (Wired Equivalent Privacy) â€” 1997
+#### WEP (Wired Equivalent Privacy) — 1997
 
-WEP uses the RC4 stream cipher with a 40-bit or 104-bit secret key concatenated with a 24-bit Initialization Vector (IV). The IV is transmitted in plaintext, and because it is only 24 bits, the IV space is exhausted after approximately 5 million packets â€” at which point IV collisions occur. An attacker capturing two ciphertexts encrypted with the same IV can XOR them to recover the keystream, then decrypt any subsequent traffic using that same IV.
+WEP uses the RC4 stream cipher with a 40-bit or 104-bit secret key concatenated with a 24-bit Initialization Vector (IV). The IV is transmitted in plaintext, and because it is only 24 bits, the IV space is exhausted after approximately 5 million packets — at which point IV collisions occur. An attacker capturing two ciphertexts encrypted with the same IV can XOR them to recover the keystream, then decrypt any subsequent traffic using that same IV.
 
 ```typescript
-// WEP IV collision calculation â€” demonstrates the statistical inevitability
+// WEP IV collision calculation — demonstrates the statistical inevitability
 function wepIvcollisionProbability(packetsCaptured: number): number {
     const totalIvs = 1 << 24; // 16,777,216 possible IVs
     // Birthday paradox approximation
@@ -104,16 +104,16 @@ console.log(
 
 Aircrack-ng can recover a WEP key in under 60 seconds once sufficient IVs are captured using the FMS (Fluhrer-Mantin-Shamir) or KoreK attack.
 
-#### WPA (Wi-Fi Protected Access) â€” 2003
+#### WPA (Wi-Fi Protected Access) — 2003
 
 WPA was an interim standard that retained RC4 but introduced TKIP (Temporal Key Integrity Protocol). TKIP adds:
 - **Per-packet key mixing** to prevent IV-based attacks
 - **Message integrity code (MIC)** called Michael to prevent forgery
 - **Countermeasures** that lock the AP for 60 seconds after two MIC failures
 
-Despite these improvements, TKIP is now fully broken. The Beck-Tews attack (2008) and later the Michael countermeasure bypass allow an attacker to inject 7â€“15 arbitrary packets in under 18 minutes.
+Despite these improvements, TKIP is now fully broken. The Beck-Tews attack (2008) and later the Michael countermeasure bypass allow an attacker to inject 7–15 arbitrary packets in under 18 minutes.
 
-#### WPA2 â€” 2004
+#### WPA2 — 2004
 
 WPA2 replaces RC4/TKIP with AES-CCMP (Counter Mode CBC-MAC Protocol). The 4-way handshake authenticates clients and generates fresh session keys. WPA2 remains widely deployed but is vulnerable to:
 
@@ -121,16 +121,16 @@ WPA2 replaces RC4/TKIP with AES-CCMP (Counter Mode CBC-MAC Protocol). The 4-way 
 - **PMKID attack**: Many APs include the PMKID in the first EAPOL frame of the 4-way handshake, enabling offline brute-force without requiring a full handshake capture or a client.
 - **WPS PIN brute-force**: The 8-digit PIN is split into two halves (first 4 + last 3 checksum digit), reducing entropy from 10^8 to 10^4 + 10^3 = 11,000 attempts maximum.
 
-#### WPA3 â€” 2018
+#### WPA3 — 2018
 
 WPA3 introduces Simultaneous Authentication of Equals (SAE), based on Dragonfly key exchange, replacing the PSK-based 4-way handshake. SAE provides forward secrecy and resists offline dictionary attacks.
 
 However, WPA3 is not immune:
-- **Dragonblood** vulnerabilities (CVE-2019-9494â€“9499): side-channel leaks in SAE timing, downgrade attacks, and group downgrade attacks.
+- **Dragonblood** vulnerabilities (CVE-2019-9494–9499): side-channel leaks in SAE timing, downgrade attacks, and group downgrade attacks.
 - **Side-channel attacks** on the password derivation function (hunting-and-pecking) leak the password via timing differences.
 
 ```typescript
-// PMKID Calculation â€” the PMKID is derived from the PMK, AP MAC, and STA MAC
+// PMKID Calculation — the PMKID is derived from the PMK, AP MAC, and STA MAC
 import * as crypto from 'crypto';
 
 function computePmkid(pmk: Buffer, apMac: Buffer, staMac: Buffer): Buffer {
@@ -173,8 +173,8 @@ const staMac = "66:77:88:99:AA:BB";
 const capturedPmkid = "2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b";
 
 console.log(verifyHandshake(ssid, password, apMac, staMac, capturedPmkid)
-    ? "[+] PMKID matches â€” password is correct!"
-    : "[-] PMKID does not match â€” wrong password.");
+    ? "[+] PMKID matches — password is correct!"
+    : "[-] PMKID does not match — wrong password.");
 ```
 
 ### 2.2 The 802.11 4-Way Handshake
@@ -190,18 +190,18 @@ sequenceDiagram
     STA->>AP: EAPOL-Key (SNonce + MIC)
     Note left of AP: AP verifies MIC, derives same PTK
     AP->>STA: EAPOL-Key (MIC + encrypted GTK)
-    STA->>AP: EAPOL-Key (ACK â€” MIC confirmation)
-    Note over STA,AP: PTK installed â€” encrypted data begins
+    STA->>AP: EAPOL-Key (ACK — MIC confirmation)
+    Note over STA,AP: PTK installed — encrypted data begins
     Note over STA,AP: GTK used for broadcast/multicast traffic
 ```
 
 The 4-way handshake ensures both parties prove knowledge of the PMK without ever transmitting it. The PTK (Pairwise Transient Key) is derived from:
-- **PMK** â€” derived from the passphrase
-- **ANonce** â€” random 256-bit nonce from the AP
-- **SNonce** â€” random 256-bit nonce from the client
+- **PMK** — derived from the passphrase
+- **ANonce** — random 256-bit nonce from the AP
+- **SNonce** — random 256-bit nonce from the client
 - **MAC addresses** of both AP and client
 
-### 2.3 802.1X / EAP â€” Enterprise Wi-Fi
+### 2.3 802.1X / EAP — Enterprise Wi-Fi
 
 Enterprise Wi-Fi (WPA2-Enterprise or WPA3-Enterprise) uses 802.1X authentication with an external RADIUS server instead of a pre-shared key. The EAP (Extensible Authentication Protocol) tunnel carries the actual authentication method:
 
@@ -210,14 +210,14 @@ Enterprise Wi-Fi (WPA2-Enterprise or WPA3-Enterprise) uses 802.1X authentication
 | **EAP-PEAP** | Strong (MSCHAPv2 inside TLS tunnel) | Susceptible to RADIUS server impersonation if certificate validation is disabled |
 | **EAP-TTLS** | Strong | Similar certificate validation concerns |
 | **EAP-TLS** | Very Strong (mutual certificate-based) | Certificate management overhead |
-| **EAP-MD5** | Weak â€” no mutual auth | Trivially attacked, deprecated |
-| **EAP-LEAP** | Weak â€” MSCHAPv2 outside TLS | asleap tool recovers credentials in seconds |
+| **EAP-MD5** | Weak — no mutual auth | Trivially attacked, deprecated |
+| **EAP-LEAP** | Weak — MSCHAPv2 outside TLS | asleap tool recovers credentials in seconds |
 
 The primary attack against enterprise Wi-Fi is the **Rogue AP / Evil Twin** with a captive portal that mimics the legitimate RADIUS authentication page, harvesting credentials when users attempt to connect.
 
 ### 2.4 WPS (Wi-Fi Protected Setup)
 
-WPS was designed to simplify Wi-Fi configuration but introduced a critical flaw: the 8-digit PIN is validated in two halves. An attacker can brute-force the first 4 digits (10^4 = 10,000 possibilities) and then the last 3 digits (10^3 = 1,000 possibilities) â€” the 8th digit is a checksum. Tools like `reaver` and `bully` automate this attack, typically recovering the PIN in 2â€“8 hours. Once the PIN is recovered, the WPA2 passphrase is divulged by the AP.
+WPS was designed to simplify Wi-Fi configuration but introduced a critical flaw: the 8-digit PIN is validated in two halves. An attacker can brute-force the first 4 digits (10^4 = 10,000 possibilities) and then the last 3 digits (10^3 = 1,000 possibilities) — the 8th digit is a checksum. Tools like `reaver` and `bully` automate this attack, typically recovering the PIN in 2–8 hours. Once the PIN is recovered, the WPA2 passphrase is divulged by the AP.
 
 ### 2.5 Wi-Fi Penetesting Tool Workflow
 
@@ -246,16 +246,16 @@ Bluetooth Classic (BR/EDR) defines three security modes:
 
 | Mode | Description | Security |
 |---|---|---|
-| **Security Mode 1** | No security (just pairing) | **None** â€” no authentication or encryption |
+| **Security Mode 1** | No security (just pairing) | **None** — no authentication or encryption |
 | **Security Mode 2** | Service-level security; L2CAP channel enforces auth | Medium |
-| **Security Mode 3** | Link-level security â€” encryption before link setup | **Highest** â€” but still vulnerable to legacy attacks |
+| **Security Mode 3** | Link-level security — encryption before link setup | **Highest** — but still vulnerable to legacy attacks |
 
 Pairing in Bluetooth Classic uses either **Legacy Pairing** (pre-2.1) or **Secure Simple Pairing (SSP)** (2.1+). Legacy pairing uses a shared PIN (often hardcoded as "0000") and is trivially brute-forced. SSP supports four association models:
 
-- **Numeric Comparison** â€” both devices display a 6-digit number; user confirms match
-- **Just Works** â€” no user confirmation; vulnerable to MITM
-- **Passkey Entry** â€” one device displays, user types on the other
-- **Out of Band (OOB)** â€” uses NFC or other side channel for key exchange
+- **Numeric Comparison** — both devices display a 6-digit number; user confirms match
+- **Just Works** — no user confirmation; vulnerable to MITM
+- **Passkey Entry** — one device displays, user types on the other
+- **Out of Band (OOB)** — uses NFC or other side channel for key exchange
 
 ### 3.2 BLE (Bluetooth Low Energy) Pairing
 
@@ -263,10 +263,10 @@ BLE pairing uses the **Security Manager Protocol (SMP)** and defines five securi
 
 ```
 Level 0: No security
-Level 1: Encryption without authentication (Just Works) â€” vulnerable to MITM
+Level 1: Encryption without authentication (Just Works) — vulnerable to MITM
 Level 2: Encryption with authentication (Numeric Comparison or Passkey)
-Level 3: LE Legacy Pairing â€” vulnerable to MITM (fixed in 4.2+)
-Level 4: LE Secure Connections (4.2+) â€” ECDH key exchange, resistant to MITM
+Level 3: LE Legacy Pairing — vulnerable to MITM (fixed in 4.2+)
+Level 4: LE Secure Connections (4.2+) — ECDH key exchange, resistant to MITM
 ```
 
 ```mermaid
@@ -283,7 +283,7 @@ sequenceDiagram
     R->>I: Pairing Confirm (Sconfirm)
     I->>R: Pairing Random (MRand)
     R->>I: Pairing Random (SRand)
-    Note over I,R: If STKs match â†’ authenticated
+    Note over I,R: If STKs match → authenticated
     Note over I,R: Phase 3: Key Distribution
     I->>R: Encryption Information (LTK)
     R->>I: Encryption Information (LTK)
@@ -392,7 +392,7 @@ class BleScanner {
         // Keep a sliding window of last 20 observations
         if (history.length > 20) history.shift();
 
-        // Check 1: RSSI variance â€” sudden changes suggest different transmitter
+        // Check 1: RSSI variance — sudden changes suggest different transmitter
         const rssiValues = history.map(h => h.rssi);
         const avgRssi = rssiValues.reduce((a, b) => a + b, 0) / rssiValues.length;
         const maxDeviation = Math.max(...rssiValues.map(v => Math.abs(v - avgRssi)));
@@ -401,7 +401,7 @@ class BleScanner {
             result.suspicious = true;
             result.reasons.push(
                 `RSSI variance ${maxDeviation.toFixed(1)}dBm exceeds threshold ` +
-                `${this.RSSI_THRESHOLD}dBm â€” possible spoofed advertisement`
+                `${this.RSSI_THRESHOLD}dBm — possible spoofed advertisement`
             );
             result.confidence += 0.3;
         }
@@ -416,13 +416,13 @@ class BleScanner {
             result.confidence += 0.5;
         }
 
-        // Check 3: Sequence number anomalies (simplified â€” real BLE has 6-bit seq num)
+        // Check 3: Sequence number anomalies (simplified — real BLE has 6-bit seq num)
         // A genuine device increments monotonically; spoofers may reset or jump
         const uniqueTimestamps = new Set(history.map(h => h.timestamp));
         if (uniqueTimestamps.size === history.length && history.length >= 5) {
-            // Every packet has a unique timestamp â€” normal
+            // Every packet has a unique timestamp — normal
         } else if (uniqueTimestamps.size < history.length * 0.5) {
-            // Too many timestamp duplicates â€” possible replay
+            // Too many timestamp duplicates — possible replay
             result.suspicious = true;
             result.reasons.push("Timestamp analysis suggests advertisement replay");
             result.confidence += 0.4;
@@ -452,10 +452,10 @@ console.log("Spoof detection:", detection);
 
 BLE advertisements are broadcast in plaintext on three primary advertising channels (37, 38, 39). An attacker can:
 
-1. **Passive tracking** â€” capture MAC addresses and RSSI values to track device movement
-2. **Advertisement injection** â€” spoof advertisements to trigger actions on receivers
-3. **Connection hijacking** â€” intercept a connection request and inject a higher RSSI to steal the connection
-4. **LL (Link Layer) replay** â€” capture and replay pairing PDUs
+1. **Passive tracking** — capture MAC addresses and RSSI values to track device movement
+2. **Advertisement injection** — spoof advertisements to trigger actions on receivers
+3. **Connection hijacking** — intercept a connection request and inject a higher RSSI to steal the connection
+4. **LL (Link Layer) replay** — capture and replay pairing PDUs
 
 ### 3.5 BlueZ HCI Commands
 
@@ -518,9 +518,9 @@ flowchart TB
 ```
 
 Zigbee operates on the IEEE 802.15.4 physical/radio layer and defines three device types:
-- **Coordinator (ZC)** â€” one per network; forms the network and manages keys
-- **Router (ZR)** â€” forwards packets and allows child devices to join
-- **End Device (ZED)** â€” communicates only through a parent; can sleep to conserve power
+- **Coordinator (ZC)** — one per network; forms the network and manages keys
+- **Router (ZR)** — forwards packets and allows child devices to join
+- **End Device (ZED)** — communicates only through a parent; can sleep to conserve power
 
 ### 4.2 Zigbee Security Architecture
 
@@ -534,23 +534,23 @@ Zigbee uses **AES-CCM\*** (a variant of AES-CCM) for both encryption and integri
 
 Critical vulnerabilities:
 
-1. **Network Key extraction** â€” if an attacker physically compromises one device, the network key can be read from flash via UART/JTAG, compromising the entire Zigbee PAN.
-2. **Key transport in plaintext** â€” during certain join procedures (Zigbee 3.0 pre-certification), the Trust Center sends the network key encrypted only with a pre-configured link key known as `ZigBeeAlliance09`.
-3. **Replay attacks** â€” Zigbee frames include a 32-bit frame counter, but some implementations reset it on reboot, allowing old captured frames to be replayed.
-4. **Sniffing with TI CC2531** â€” the CC2531 dongle with `Zigbee2MQTT` or `sniffer_fw` can capture all Zigbee traffic in range. Combined with Wireshark's Zigbee dissector, an attacker can extract network keys from insecure joins.
+1. **Network Key extraction** — if an attacker physically compromises one device, the network key can be read from flash via UART/JTAG, compromising the entire Zigbee PAN.
+2. **Key transport in plaintext** — during certain join procedures (Zigbee 3.0 pre-certification), the Trust Center sends the network key encrypted only with a pre-configured link key known as `ZigBeeAlliance09`.
+3. **Replay attacks** — Zigbee frames include a 32-bit frame counter, but some implementations reset it on reboot, allowing old captured frames to be replayed.
+4. **Sniffing with TI CC2531** — the CC2531 dongle with `Zigbee2MQTT` or `sniffer_fw` can capture all Zigbee traffic in range. Combined with Wireshark's Zigbee dissector, an attacker can extract network keys from insecure joins.
 
 ### 4.3 Z-Wave Security
 
-Z-Wave uses a proprietary protocol operating at 800â€“900 MHz (region-dependent). Security is provided by **S0** (legacy â€” 3DES-based) and **S2** (modern â€” ECDH + AES-128-OFB). The S2 handshake uses:
+Z-Wave uses a proprietary protocol operating at 800–900 MHz (region-dependent). Security is provided by **S0** (legacy — 3DES-based) and **S2** (modern — ECDH + AES-128-OFB). The S2 handshake uses:
 - **ECDH** for key agreement
 - **AES-128-OFB** for encryption
 - **Cipher-based MAC (CMAC)** for integrity
 
 Key Z-Wave vulnerabilities:
 
-- **S0 network key brute-force** â€” S0 uses a single network key with only 56 effective bits of entropy (3DES with two-key option). Offline brute-force is feasible with dedicated hardware.
-- **Z-Wave PC Controller attacks** â€” the standard control tool exposes raw frames; attackers can send crafted S0/S2 frames.
-- **Z/IP gateway protocol** â€” tunneling Z-Wave over IP without proper segmentation can expose internal network keys.
+- **S0 network key brute-force** — S0 uses a single network key with only 56 effective bits of entropy (3DES with two-key option). Offline brute-force is feasible with dedicated hardware.
+- **Z-Wave PC Controller attacks** — the standard control tool exposes raw frames; attackers can send crafted S0/S2 frames.
+- **Z/IP gateway protocol** — tunneling Z-Wave over IP without proper segmentation can expose internal network keys.
 
 ### 4.4 Zigbee Sniffing with TI CC2531
 
@@ -567,7 +567,7 @@ The CC2531 is a USB dongle based on TI's CC2531 SoC. To use it for Zigbee securi
    ./SnifferAgent -c 11
 
 4. Apply the Zigbee dissector in Wireshark:
-   Edit â†’ Preferences â†’ Protocols â†’ Zigbee â†’ Security Keys
+   Edit → Preferences → Protocols → Zigbee → Security Keys
    Add key: "ZigBeeAlliance09" (transport key)
 
 5. Sniff for:
@@ -584,20 +584,20 @@ The CC2531 is a USB dongle based on TI's CC2531 SoC. To use it for Zigbee securi
 
 | Band | Frequency Range | Read Range | Typical Use |
 |---|---|---|---|
-| **LF** | 125â€“134 kHz | 0â€“10 cm | Animal tagging, vehicle immobilizers |
-| **HF** | 13.56 MHz | 0â€“30 cm | Smart cards (Mifare, NFC), access control |
-| **UHF** | 860â€“960 MHz | 0â€“12 m | Supply chain, inventory, toll collection |
-| **Microwave** | 2.45 / 5.8 GHz | 0â€“1 m | Active tags, real-time location systems |
+| **LF** | 125–134 kHz | 0–10 cm | Animal tagging, vehicle immobilizers |
+| **HF** | 13.56 MHz | 0–30 cm | Smart cards (Mifare, NFC), access control |
+| **UHF** | 860–960 MHz | 0–12 m | Supply chain, inventory, toll collection |
+| **Microwave** | 2.45 / 5.8 GHz | 0–1 m | Active tags, real-time location systems |
 
-### 5.2 Mifare Classic â€” Crypto-1 Cracking
+### 5.2 Mifare Classic — Crypto-1 Cracking
 
 Mifare Classic is the most widely deployed contactless smart card (offices, transit systems, student IDs). It uses the proprietary Crypto-1 cipher, a 48-bit stream cipher reverse-engineered in 2007.
 
 **Crypto-1 weaknesses:**
 
-- 48-bit key length â€” brute-force is impractical, but cryptanalytic attacks reduce effective strength
-- **Nested authentication attack** â€” after one sector key is recovered, the reader can authenticate to other sectors; the random number generator (RNG) is predictable once the LFSR state is known
-- **Offline key recovery** â€” with known plaintext (the reader nonce and card response), the Crypto-1 LFSR state can be recovered using the `mfoc` tool
+- 48-bit key length — brute-force is impractical, but cryptanalytic attacks reduce effective strength
+- **Nested authentication attack** — after one sector key is recovered, the reader can authenticate to other sectors; the random number generator (RNG) is predictable once the LFSR state is known
+- **Offline key recovery** — with known plaintext (the reader nonce and card response), the Crypto-1 LFSR state can be recovered using the `mfoc` tool
 
 ```typescript
 // Mimics the Mifare Classic nested authentication key recovery
@@ -643,7 +643,7 @@ class Crypto1Lfsr {
         return sum >= 3 ? 1 : 0;
     }
 
-    // Simulate authentication â€” generate keystream bytes
+    // Simulate authentication — generate keystream bytes
     authenticate(nr: number, nt: number): Buffer {
         const keystream = Buffer.alloc(8);
         // Feed reader nonce (32 bits) and card nonce (32 bits) into LFSR
@@ -689,7 +689,7 @@ function recoverCrypto1Key(
             const ks = lfsr.authenticate(readerNonce, cardNonce);
 
             if (ks[0] === targetKeystream[0] && ks[1] === targetKeystream[1]) {
-                // Partial match â€” in real mfoc, continue verification
+                // Partial match — in real mfoc, continue verification
                 // Return partial key for demonstration
                 return candidateKey;
             }
@@ -721,14 +721,14 @@ Attack workflow:
 2. Extract keys using `mfoc` (nested auth) or `mfcuk` (dictionary attack)
 3. Dump card contents to `.mfd` (Mifare Dump) file
 4. Load the dump onto Chameleon Mini
-5. Present the Chameleon Mini to the target reader â€” it authenticates using the original keys
+5. Present the Chameleon Mini to the target reader — it authenticates using the original keys
 
 ### 5.4 HID iClass
 
 HID iClass is widely used for physical access control. Its security relies on a proprietary cipher (not public) with 64-bit keys. Known weaknesses:
-- **SAM (Secure Access Module) cloning** â€” the SAM's key set can be dumped via power analysis or JTAG
-- **Reader downgrade attack** â€” some readers accept both iClass (secure) and iClass SE (more secure) â€” the attacker forces the reader to use the weaker protocol
-- **Offline dictionary attack** â€” the 64-bit key is derived from a 6-digit facility code + card number; with physical access to the card, the key can be brute-forced using FPGA acceleration (Proxmark3 RDV4 with `hf iclass` commands)
+- **SAM (Secure Access Module) cloning** — the SAM's key set can be dumped via power analysis or JTAG
+- **Reader downgrade attack** — some readers accept both iClass (secure) and iClass SE (more secure) — the attacker forces the reader to use the weaker protocol
+- **Offline dictionary attack** — the 64-bit key is derived from a 6-digit facility code + card number; with physical access to the card, the key can be brute-forced using FPGA acceleration (Proxmark3 RDV4 with `hf iclass` commands)
 
 ---
 
@@ -761,7 +761,7 @@ flowchart LR
 | No topic ACLs | ~55% | Lateral movement across topics |
 
 ```typescript
-// MQTT Security Scanner â€” audits broker for common misconfigurations
+// MQTT Security Scanner — audits broker for common misconfigurations
 import * as net from 'net';
 import * as tls from 'tls';
 
@@ -840,7 +840,7 @@ class MqttSecurityScanner {
         // Set remaining length
         const remaining = offset - 1;
         packet[0] = 0x10; // keep CONNECT
-        // Remaining length encoding (simplified â€” handles < 128 bytes)
+        // Remaining length encoding (simplified — handles < 128 bytes)
         packet[1] = remaining;
 
         return packet.subarray(0, offset);
@@ -920,10 +920,10 @@ class MqttSecurityScanner {
                         );
                         socket.write(subPacket);
                     } else if (returnCode === 0x05) {
-                        // Not authorized â€” try default credentials
+                        // Not authorized — try default credentials
                         this.tryDefaultCredentials(socket, report);
                     } else {
-                        // Other error â€” close
+                        // Other error — close
                         socket.destroy();
                         this.finalizeReport(report);
                         resolve(report);
@@ -989,7 +989,7 @@ class MqttSecurityScanner {
                 'Disable anonymous access and require authentication.';
         } else {
             report.recommendation =
-                'Configuration appears secure â€” continue monitoring.';
+                'Configuration appears secure — continue monitoring.';
         }
     }
 }
@@ -1020,23 +1020,23 @@ CoAP (RFC 7252) is a RESTful protocol for constrained devices, running over UDP.
 - Response codes: 2.05 (Content), 4.00 (Bad Request), etc.
 
 **CoAP Security Issues:**
-- **NoDTLS (UDP equivalent of TLS) is optional** â€” many devices ship with NoSec mode
-- **Amplification attacks** â€” CoAP over UDP enables DRDoS: a small request (e.g., 20 bytes) to a device that responds with a larger payload to a spoofed source IP
-- **Resource discovery** â€” CoAP's `/.well-known/core` returns all available resources, exposing the full attack surface
+- **NoDTLS (UDP equivalent of TLS) is optional** — many devices ship with NoSec mode
+- **Amplification attacks** — CoAP over UDP enables DRDoS: a small request (e.g., 20 bytes) to a device that responds with a larger payload to a spoofed source IP
+- **Resource discovery** — CoAP's `/.well-known/core` returns all available resources, exposing the full attack surface
 
 ### 6.3 Matter Protocol
 
 Matter (formerly Project Connected Home over IP) is a unified smart home standard backed by Apple, Google, Amazon, and the Connectivity Standards Alliance. Key security features:
 
-- **Device attestation** â€” each Matter device has a DAC (Device Attestation Certificate) signed by the CSA
-- **Certificate-based authentication** â€” all commissioning uses PKI with X.509 certificates
-- **Operational credentials** â€” per-device operational certificates after commissioning
-- **Case (Certificate Authenticated Session Establishment)** and **PASE (Password Authenticated Session Establishment)** â€” secure session establishment
+- **Device attestation** — each Matter device has a DAC (Device Attestation Certificate) signed by the CSA
+- **Certificate-based authentication** — all commissioning uses PKI with X.509 certificates
+- **Operational credentials** — per-device operational certificates after commissioning
+- **Case (Certificate Authenticated Session Establishment)** and **PASE (Password Authenticated Session Establishment)** — secure session establishment
 
 Despite strong design, Matter has implementation-level concerns:
-- **Commissioning window left open** â€” the 5-minute commissioning window is often left open indefinitely in early firmware
-- **DAC private key extraction** â€” if the DAC private key is not stored in a secure element, firmware extraction reveals it, allowing device impersonation
-- **Thread network key leakage** â€” Thread (IPv6 mesh underlying Matter) uses a network key that, if extracted, compromises all Thread devices
+- **Commissioning window left open** — the 5-minute commissioning window is often left open indefinitely in early firmware
+- **DAC private key extraction** — if the DAC private key is not stored in a secure element, firmware extraction reveals it, allowing device impersonation
+- **Thread network key leakage** — Thread (IPv6 mesh underlying Matter) uses a network key that, if extracted, compromises all Thread devices
 
 ### 6.4 Thread Networking
 
@@ -1063,7 +1063,7 @@ function analyzeThreadSecurity(config: ThreadNetworkConfig): string[] {
 
     for (const dk of defaultKeys) {
         if (config.networkKey.equals(dk)) {
-            issues.push('Default Thread network key detected â€” trivial to compromise');
+            issues.push('Default Thread network key detected — trivial to compromise');
         }
     }
 
@@ -1083,7 +1083,7 @@ function analyzeThreadSecurity(config: ThreadNetworkConfig): string[] {
     // Check 3: PSKc (Pre-Shared Key for Commissioner)
     // Should be derived from commissioning credentials with PBKDF2
     if (config.pskc.length < 16) {
-        issues.push('PSKc too short â€” should be 16 bytes (AES-128)');
+        issues.push('PSKc too short — should be 16 bytes (AES-128)');
     }
 
     return issues;
@@ -1137,7 +1137,7 @@ flowchart TB
 Binwalk is the primary tool for firmware analysis. It scans firmware images for embedded files and filesystems.
 
 ```bash
-# Basic scan â€” identify embedded files
+# Basic scan — identify embedded files
 binwalk firmware.bin
 
 # Extract all discovered filesystems
@@ -1169,12 +1169,12 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 
 Firmware entropy analysis determines whether sections are encrypted or compressed by measuring the randomness of byte sequences:
 
-- **Low entropy (~4.0â€“5.5 bits/byte)** â€” plaintext, uncompressed code/data
-- **Medium entropy (~6.5â€“7.5 bits/byte)** â€” likely compressed (LZMA, GZip, zlib)
-- **High entropy (~7.5â€“8.0 bits/byte)** â€” likely encrypted or already compressed
+- **Low entropy (~4.0–5.5 bits/byte)** — plaintext, uncompressed code/data
+- **Medium entropy (~6.5–7.5 bits/byte)** — likely compressed (LZMA, GZip, zlib)
+- **High entropy (~7.5–8.0 bits/byte)** — likely encrypted or already compressed
 
 ```typescript
-// Firmware Entropy Analyzer â€” identifies compression/encryption boundaries
+// Firmware Entropy Analyzer — identifies compression/encryption boundaries
 import * as fs from 'fs';
 import * as zlib from 'zlib';
 
@@ -1302,7 +1302,7 @@ class FirmwareEntropyAnalyzer {
                         `Decompressed ${block.offset} -> ${result.length} bytes (deflate)`
                     );
                 } catch {
-                    // Not standard zlib/gzip â€” possibly LZMA or custom
+                    // Not standard zlib/gzip — possibly LZMA or custom
                 }
             }
         }
@@ -1445,11 +1445,11 @@ findings.forEach(f => {
 ### 7.5 Backdoor Detection
 
 Common IoT backdoor patterns include:
-- **Bind shells** â€” listening on a TCP/UDP port for shell access
-- **Reverse shells** â€” connecting outbound to a C2 server
-- **Magic packets** â€” specific UDP payload triggers telnet daemon
-- **Hardcoded debug endpoints** â€” `/debug`, `/shell`, `/exec` in embedded web servers
-- **Test accounts** â€” accounts that bypass normal authentication
+- **Bind shells** — listening on a TCP/UDP port for shell access
+- **Reverse shells** — connecting outbound to a C2 server
+- **Magic packets** — specific UDP payload triggers telnet daemon
+- **Hardcoded debug endpoints** — `/debug`, `/shell`, `/exec` in embedded web servers
+- **Test accounts** — accounts that bypass normal authentication
 
 ---
 
@@ -1459,11 +1459,11 @@ Common IoT backdoor patterns include:
 
 | Interface | Pins | Voltage | Speed | Use Case |
 |---|---|---|---|---|
-| **UART** | TX, RX, GND (optional VCC) | 1.8Vâ€“5V | 9600â€“921600 baud | Serial console, boot logs |
-| **SPI** | SCK, MOSI, MISO, CS | 1.8Vâ€“5V | Up to 80 MHz | Flash memory, sensors |
-| **I2C** | SCL, SDA | 1.8Vâ€“5V | 100 kHzâ€“3.4 MHz | Configuration, sensors |
-| **JTAG** | TMS, TCK, TDI, TDO, nTRST | 1.8Vâ€“5V | Up to 100 MHz | Debug, programming, boundary scan |
-| **SWD** | SWDIO, SWCLK | 1.8Vâ€“5V | Up to 50 MHz | ARM Serial Wire Debug |
+| **UART** | TX, RX, GND (optional VCC) | 1.8V–5V | 9600–921600 baud | Serial console, boot logs |
+| **SPI** | SCK, MOSI, MISO, CS | 1.8V–5V | Up to 80 MHz | Flash memory, sensors |
+| **I2C** | SCL, SDA | 1.8V–5V | 100 kHz–3.4 MHz | Configuration, sensors |
+| **JTAG** | TMS, TCK, TDI, TDO, nTRST | 1.8V–5V | Up to 100 MHz | Debug, programming, boundary scan |
+| **SWD** | SWDIO, SWCLK | 1.8V–5V | Up to 50 MHz | ARM Serial Wire Debug |
 
 **UART Probing Workflow:**
 
@@ -1552,7 +1552,7 @@ function simulateAesFirstRoundPowerTrace(
 }
 
 function aesSbox(value: number): number {
-    // Standard AES S-Box (simplified â€” actual is a 256-byte lookup table)
+    // Standard AES S-Box (simplified — actual is a 256-byte lookup table)
     const sbox = [
         0x63,0x7c,0x77,0x7b,0xf2,0x6b,0x6f,0xc5,0x30,0x01,0x67,0x2b,0xfe,0xd7,0xab,0x76,
         0xca,0x82,0xc9,0x7d,0xfa,0x59,0x47,0xf0,0xad,0xd4,0xa2,0xaf,0x9c,0xa4,0x72,0xc0,
@@ -1641,20 +1641,20 @@ for (let i = 0; i < 1000; i++) {
 const recoveredKey = dpaAttack(traces);
 console.log(`Recovered key byte: 0x${recoveredKey.toString(16).padStart(2, '0')}`);
 console.log(`Expected key byte:  0x3a`);
-console.log(`Attack ${recoveredKey === 0x3a ? 'SUCCEEDED' : 'FAILED'} â€” key correctly recovered`);
+console.log(`Attack ${recoveredKey === 0x3a ? 'SUCCEEDED' : 'FAILED'} — key correctly recovered`);
 ```
 
 #### Glitching (Voltage / Clock / EM)
 
 Glitching injects transient faults into a processor by briefly disrupting its power supply (VCC glitch), clock signal (clock glitch), or electromagnetic field (EM glitch). Applications:
 
-- **Bypassing secure boot** â€” skip signature verification check
-- **Bypassing password prompts** â€” corrupt the branch condition in the authentication routine
-- **Extracting ROM contents** â€” glitch the ROM read protection
+- **Bypassing secure boot** — skip signature verification check
+- **Bypassing password prompts** — corrupt the branch condition in the authentication routine
+- **Extracting ROM contents** — glitch the ROM read protection
 
 Typical voltage glitching setup:
-- **ChipWhisperer** (NewAE) â€” all-in-one glitch/analysis platform
-- **Raspberry Pi Pico + MOSFET** â€” DIY voltage glitcher
+- **ChipWhisperer** (NewAE) — all-in-one glitch/analysis platform
+- **Raspberry Pi Pico + MOSFET** — DIY voltage glitcher
 - **Falcon Four** (Ph.D. glitcher)
 
 ---
@@ -1741,7 +1741,7 @@ class PmkidCracker {
             const pmk = this.derivePmk(handshake.ssid, word);
 
             if (handshake.pmkid) {
-                // PMKID attack â€” faster, no client needed
+                // PMKID attack — faster, no client needed
                 const computed = this.computePmkid(pmk, apMac, staMac);
                 if (computed === handshake.pmkid) {
                     return word;
@@ -1755,7 +1755,7 @@ class PmkidCracker {
                     apMac,
                     staMac
                 );
-                // Verify MIC (simplified â€” real implementation needs full EAPOL frame)
+                // Verify MIC (simplified — real implementation needs full EAPOL frame)
                 // This would require the complete captured frame
             }
         }
@@ -1796,9 +1796,9 @@ async function mainPmkidCli() {
     console.log(`Computed PMKID:  ${computedPmkid}`);
 
     if (computedPmkid === capturedPmkid) {
-        console.log('\nâœ“ PASSWORD MATCHES!');
+        console.log('\n✓ PASSWORD MATCHES!');
     } else {
-        console.log('\nâœ— Password does not match.');
+        console.log('\n✗ Password does not match.');
     }
 }
 ```
@@ -2207,12 +2207,12 @@ BSSID              PWR  Beacons  #Data  CH  MB   ENC  CIPHER AUTH  ESSID
 AA:BB:CC:DD:EE:FF  -45  120      32     6   130  WPA2 CCMP   PSK   HomeNetwork
 ```
 
-- **PWR** â€” signal strength (higher is closer)
-- **#Data** â€” number of data packets (indicates activity)
-- **CH** â€” channel
-- **ENC** â€” WEP, WPA, WPA2, or WPA3
-- **CIPHER** â€” TKIP, CCMP, GCMP
-- **AUTH** â€” PSK (personal) or MGT (enterprise)
+- **PWR** — signal strength (higher is closer)
+- **#Data** — number of data packets (indicates activity)
+- **CH** — channel
+- **ENC** — WEP, WPA, WPA2, or WPA3
+- **CIPHER** — TKIP, CCMP, GCMP
+- **AUTH** — PSK (personal) or MGT (enterprise)
 
 ### 10.3 Handshake Capture
 
@@ -2236,7 +2236,7 @@ sudo aireplay-ng -1 0 -a AA:BB:CC:DD:EE:FF -h 11:22:33:44:55:66 wlan0mon
 # Option A: Using aircrack-ng with a wordlist
 sudo aircrack-ng -w /usr/share/wordlists/rockyou.txt capture-01.cap
 
-# Option B: PMKID attack (faster â€” no client needed)
+# Option B: PMKID attack (faster — no client needed)
 # First, extract PMKID from beacon (use hcxpcapngtool)
 hcxpcapngtool -o hash.hc22000 capture-01.cap
 hashcat -m 22000 hash.hc22000 /usr/share/wordlists/rockyou.txt
@@ -2324,7 +2324,7 @@ wpa=2
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
-wpa_passphrase=anything123  # Doesn't matter â€” we're after the handshake
+wpa_passphrase=anything123  # Doesn't matter — we're after the handshake
 EOF
 
 sudo hostapd /tmp/hostapd-evil.conf -B
@@ -2581,7 +2581,7 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 ### 13.6 Advanced Display Filter Macros
 
 ```bash
-# Display Filter Macros (Edit â†’ Preferences â†’ Display Filters â†’ +)
+# Display Filter Macros (Edit → Preferences → Display Filters → +)
 
 # Name: wpa2_4way
 # Expression: eapol && wlan.bssid == AA:BB:CC:DD:EE:FF
@@ -2602,13 +2602,13 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 
 | Takeaway | Application |
 |----------|-------------|
-| Always audit WPA2 handshakes for PMKID attacks | Capture the first EAPOL frame and compute PMKID offline â€” no client required, works even without a full 4-way handshake |
+| Always audit WPA2 handshakes for PMKID attacks | Capture the first EAPOL frame and compute PMKID offline — no client required, works even without a full 4-way handshake |
 | Use 802.1X/EAP with certificate validation for enterprise Wi-Fi | WPA2-PSK is vulnerable to cracking; migrate to WPA3-Enterprise or at minimum validate RADIUS server certificates |
-| Treat BLE advertisements as untrusted | BLE broadcasts are cleartext and spoofable â€” never transmit credentials or sensitive data in advertisement payloads |
+| Treat BLE advertisements as untrusted | BLE broadcasts are cleartext and spoofable — never transmit credentials or sensitive data in advertisement payloads |
 | Always change Zigbee default link keys | The default `ZigBeeAlliance09` key is public; always set a unique network key and use touchlink commissioning with QR code enrollment |
-| Run entropy analysis on every firmware sample | Binwalk entropy scan reveals encrypted/compressed regions in seconds â€” low entropy = plaintext, high entropy = packed/ciphered |
+| Run entropy analysis on every firmware sample | Binwalk entropy scan reveals encrypted/compressed regions in seconds — low entropy = plaintext, high entropy = packed/ciphered |
 | Never expose MQTT without TLS + authentication | MQTT on port 1883 with anonymous access allows anyone to subscribe to `#`; enforce TLS on 8883 and require client certificates |
-| Audit IoT device UART/JTAG exposure | Check for accessible UART (TX/RX/GND) and JTAG (TMS/TCK/TDI/TDO) on exposed PCB headers â€” these dump firmware without authentication |
+| Audit IoT device UART/JTAG exposure | Check for accessible UART (TX/RX/GND) and JTAG (TMS/TCK/TDI/TDO) on exposed PCB headers — these dump firmware without authentication |
 
 ## Summary
 
@@ -2616,11 +2616,11 @@ Wireless, IoT, and embedded security is a multi-dimensional discipline that span
 
 **Key takeaways:**
 
-1. **Wi-Fi security has evolved through four generations**: WEP (trivially broken â†’ IV collisions), WPA (broken â†’ Beck-Tews attack), WPA2 (weakened â†’ KRACK, PMKID), WPA3 (improved but flawed â†’ Dragonblood side-channels). Enterprise Wi-Fi using 802.1X/EAP remains the strongest option but is susceptible to rogue APs and certificate validation issues.
+1. **Wi-Fi security has evolved through four generations**: WEP (trivially broken → IV collisions), WPA (broken → Beck-Tews attack), WPA2 (weakened → KRACK, PMKID), WPA3 (improved but flawed → Dragonblood side-channels). Enterprise Wi-Fi using 802.1X/EAP remains the strongest option but is susceptible to rogue APs and certificate validation issues.
 
-2. **Bluetooth/BLE vulnerabilities affect billions**: BlueBorne enables RCE without pairing; BLUFFS breaks forward secrecy; BLE advertisements are broadcast in cleartext, enabling tracking and spoofing. The Security Manager Protocol (SMP) provides levels 0â€“4, with Legacy Pairing (Level 3) offering no MITM protection.
+2. **Bluetooth/BLE vulnerabilities affect billions**: BlueBorne enables RCE without pairing; BLUFFS breaks forward secrecy; BLE advertisements are broadcast in cleartext, enabling tracking and spoofing. The Security Manager Protocol (SMP) provides levels 0–4, with Legacy Pairing (Level 3) offering no MITM protection.
 
-3. **Zigbee and Z-Wave use mesh topologies**: The AES-CCM* cipher at their core is strong, but key management is the weak link â€” network keys transmitted during join (`ZigBeeAlliance09`), keys extracted from flash, and replay attacks (frame counter resets) are all demonstrated attack vectors.
+3. **Zigbee and Z-Wave use mesh topologies**: The AES-CCM* cipher at their core is strong, but key management is the weak link — network keys transmitted during join (`ZigBeeAlliance09`), keys extracted from flash, and replay attacks (frame counter resets) are all demonstrated attack vectors.
 
 4. **RFID/NFC systems rely on broken ciphers**: Mifare Classic's Crypto-1 is fully reversed with practical attacks (nested auth, mfoc). Chameleon Mini can clone most HF smart cards. HID iClass uses a proprietary 64-bit cipher vulnerable to SAM cloning and brute-force.
 
@@ -2629,9 +2629,9 @@ Wireless, IoT, and embedded security is a multi-dimensional discipline that span
 6. **Firmware analysis uncovers severe vulnerabilities**: Binwalk extracts filesystems, entropy analysis identifies encrypted/compressed regions, and string scanning reveals hardcoded credentials, backdoor endpoints, and private keys. Over 60% of IoT firmware analyzed in public studies contains at least one hardcoded credential.
 
 7. **Embedded hardware has accessible debug interfaces**: UART
-    console access, SPI flash dumping, JTAG debugging, and side-channel attacks (DPA, glitching) are practical with low-cost tools ($10â€“$1000). Physical access to a device virtually guarantees compromise.
+    console access, SPI flash dumping, JTAG debugging, and side-channel attacks (DPA, glitching) are practical with low-cost tools ($10–$1000). Physical access to a device virtually guarantees compromise.
 
-8. **The IoT attack surface continues to expand**: With an estimated 30+ billion connected devices, each representing a potential entry point, security must be layered across radio, protocol, firmware, and hardware domains. The combination of TypeScript security tooling demonstrated in this chapter â€” PMKID verification, BLE spoofing detection, MQTT auditing, entropy analysis, CRC fuzzing, and deauth detection â€” provides a programmatic foundation for automated security assessment.
+8. **The IoT attack surface continues to expand**: With an estimated 30+ billion connected devices, each representing a potential entry point, security must be layered across radio, protocol, firmware, and hardware domains. The combination of TypeScript security tooling demonstrated in this chapter — PMKID verification, BLE spoofing detection, MQTT auditing, entropy analysis, CRC fuzzing, and deauth detection — provides a programmatic foundation for automated security assessment.
 
 ```mermaid
 flowchart TB
@@ -2670,7 +2670,7 @@ flowchart TB
 | 4 | What is the effective entropy (in bits) of a WPS PIN when brute-forcing with the half-key vulnerability? | 8 bits | 10,000 + 1,000 possibilities (~13.4 bits) | 10^8 possibilities (~26.6 bits) | 10^4 possibilities (~13.3 bits) | **B** |
 | 5 | Which of the following is NOT a valid defense against Evil Twin attacks? | Validating RADIUS server certificates in 802.1X | Using WPA3-SAE with SAE hash-to-element | Increasing beacon interval to 500ms | Cross-checking BSSID vs. physical location history | **C** |
 | 6 | What does `Binwalk -E firmware.bin` do during firmware analysis? | Extracts the encrypted filesystem using AES-256 | Generates an entropy graph to identify compressed/encrypted regions | Emulates the firmware in a virtual environment | Extracts all embedded file signatures | **B** |
-| 7 | Which protocol uses the SMP (Security Manager Protocol) at levels 0â€“4 for pairing? | Wi-Fi WPA3 | Bluetooth Low Energy (BLE) | Zigbee 3.0 | Matter over Thread | **B** |
+| 7 | Which protocol uses the SMP (Security Manager Protocol) at levels 0–4 for pairing? | Wi-Fi WPA3 | Bluetooth Low Energy (BLE) | Zigbee 3.0 | Matter over Thread | **B** |
 | 8 | In the MiFare Classic nested authentication attack, what property of the Crypto-1 cipher enables key recovery? | The 48-bit LFSR keystream can be reconstructed from known plaintext-ciphertext pairs | The cipher uses a fixed 8-bit key | The reader nonce is always zero | AES-128 keys are reused across sectors | **A** |
 | 9 | What does the Wireshark filter `wlan.fc.type_subtype == 0x0c` capture? | Beacon frames | Probe requests | Deauthentication frames | EAPOL-Key frames | **C** |
 | 10 | Which of the following is a hardware debug interface commonly used for firmware dumping from embedded devices? | TCP port 8080 | UART (TX/RX/GND) | Bluetooth HCI | MQTT topic `/firmware` | **B** |
@@ -2690,7 +2690,7 @@ Extend the `PmkidCracker` class from Section 9.1 to:
 - Report estimated time remaining and cracking speed (passwords/sec)
 - Output the discovered password along with the PMK, PTK, and MIC values
 
-**Expected outcome:** A CLI tool that cracks a WPA2 handshake 4Ã— faster using 4 worker threads.
+**Expected outcome:** A CLI tool that cracks a WPA2 handshake 4× faster using 4 worker threads.
 
 ---
 
@@ -2698,7 +2698,7 @@ Extend the `PmkidCracker` class from Section 9.1 to:
 
 Using the `BleScanner` from Section 3.3, build an advertisement replay detector:
 - Record BLE advertisements over a 5-minute window
-- Detect if the same advertisement packet (identical raw bytes) appears more than 3Ã— from different MAC addresses
+- Detect if the same advertisement packet (identical raw bytes) appears more than 3× from different MAC addresses
 - Flag devices that broadcast advertisements with monotonically increasing sequence numbers that suddenly reset
 - Generate a real-time alert with JSON output
 
@@ -2764,7 +2764,7 @@ Design and implement a TypeScript tool that:
 Using the `CrcCalculator` from Section 9.2, build a Wi-Fi management frame fuzzer:
 - Generate malformed Beacon, Probe Response, and Association Response frames
 - Fuzz each field: supported rates, channel, RSN IE, vendor-specific IE
-- Insert non-standard IE types (0xDDâ€“0xFF)
+- Insert non-standard IE types (0xDD–0xFF)
 - Set invalid frame control flags (combinations of ToDS, FromDS, Retry, PwrMgt, etc.)
 - Send frames at 100 packets/sec using raw 802.11 injection
 - Monitor target AP for crashes, reboots, or beacon loss
@@ -2779,16 +2779,16 @@ For a hypothetical IoT smart lock with the following characteristics:
 - Communicates via BLE and Wi-Fi
 - Uses MQTT over port 1883 (no TLS) to report lock status
 - Firmware can be downloaded from vendor website
-- PCB reveals UART test points labeled TP1â€“TP4
+- PCB reveals UART test points labeled TP1–TP4
 - Uses an ESP32-WROOM module (JTAG accessible via GPIO12-15)
 
 Write a comprehensive security assessment report covering:
-1. **Radio attacks** â€” BLE advertisement sniffing, Wi-Fi deauth, evil twin
-2. **Protocol attacks** â€” MQTT cleartext interception, topic enumeration
-3. **Firmware attacks** â€” Binwalk extraction, entropy analysis, credential scanning
-4. **Hardware attacks** â€” UART console access, JTAG firmware dumping, SPI flash reading
+1. **Radio attacks** — BLE advertisement sniffing, Wi-Fi deauth, evil twin
+2. **Protocol attacks** — MQTT cleartext interception, topic enumeration
+3. **Firmware attacks** — Binwalk extraction, entropy analysis, credential scanning
+4. **Hardware attacks** — UART console access, JTAG firmware dumping, SPI flash reading
 5. **Risk rating** and **remediation recommendations** for each finding
-6. **Overall security score** (0â€“100) with justification
+6. **Overall security score** (0–100) with justification
 
 **Expected outcome:** A professional-quality penetration test report suitable for a client or publication.
 

@@ -1,4 +1,4 @@
-﻿# Chapter 4: Indian Economy & Planning
+# Chapter 4: Indian Economy & Planning
 
 ## Learning Objectives
 
@@ -22,13 +22,13 @@ By the end of this chapter, you will be able to:
 </section>
 <!-- End Image Gallery -->
 
-- Define key economic indicators â€” GDP, GNP, NNP, CPI, WPI, GDP deflator
+- Define key economic indicators — GDP, GNP, NNP, CPI, WPI, GDP deflator
 - Explain the Union Budget process, revenue and capital accounts, fiscal deficit
 - Trace India's Five-Year Plans and the role of NITI Aayog
-- Describe RBI's monetary policy tools â€” repo rate, reverse repo, CRR, SLR, MSF
+- Describe RBI's monetary policy tools — repo rate, reverse repo, CRR, SLR, MSF
 - Distinguish between direct and indirect taxes, and understand GST
-- Analyse India's economic sectors â€” agriculture, industry, services, foreign trade
-- Recall major government schemes â€” Make in India, Digital India, Startup India, Ayushman Bharat
+- Analyse India's economic sectors — agriculture, industry, services, foreign trade
+- Recall major government schemes — Make in India, Digital India, Startup India, Ayushman Bharat
 - Solve exam-level MCQs on Indian Economy with confidence
 
 ---
@@ -45,7 +45,7 @@ By the end of this chapter, you will be able to:
 | GNP (Gross National Product) | GDP + Net Factor Income from Abroad | GNP = GDP + NFIA |
 | NNP (Net National Product) | GNP - Depreciation | NNP = GNP - Dep |
 | NDP (Net Domestic Product) | GDP - Depreciation | NDP = GDP - Dep |
-| Factor Cost | Value measured at factor payments (wages, rent, interest, profit) | â€” |
+| Factor Cost | Value measured at factor payments (wages, rent, interest, profit) | — |
 | Market Price | Factor Cost + Indirect Taxes - Subsidies | MP = FC + NIT |
 
 **Methods of Measuring National Income:**
@@ -96,9 +96,9 @@ flowchart TD
 | **Capital Account** | Borrowings (market loans), Disinvestment proceeds, Recovery of loans | Capital expenditure (infrastructure, machinery, defence equipment, loans to states) |
 
 **Deficit Concepts:**
-- **Revenue Deficit:** Revenue expenditure > Revenue receipts â†’ indicates day-to-day expenses exceeding income
-- **Fiscal Deficit:** Total expenditure > Total receipt (excluding borrowings) â†’ overall gap
-- **Primary Deficit:** Fiscal deficit - Interest payments â†’ actual borrowing (minus past debt servicing)
+- **Revenue Deficit:** Revenue expenditure > Revenue receipts → indicates day-to-day expenses exceeding income
+- **Fiscal Deficit:** Total expenditure > Total receipt (excluding borrowings) → overall gap
+- **Primary Deficit:** Fiscal deficit - Interest payments → actual borrowing (minus past debt servicing)
 
 **FRBM Act (Fiscal Responsibility and Budget Management Act, 2003):**
 - Aims to reduce fiscal deficit to 3% of GDP and revenue deficit to 0% (targets revised multiple times)
@@ -106,7 +106,7 @@ flowchart TD
 
 ### 4.3 Five-Year Plans & NITI Aayog
 
-#### 4.3.1 Five-Year Plans (1951â€“2017)
+#### 4.3.1 Five-Year Plans (1951–2017)
 
 ```mermaid
 timeline
@@ -131,7 +131,7 @@ timeline
 | First (1951-56) | Agriculture, irrigation, power | 2.1% | 3.6% |
 | Second (1956-61) | Heavy industry (Mahalanobis model) | 4.5% | 4.3% |
 | Third (1961-66) | Self-reliance, agriculture | 5.6% | 2.8% |
-| Plan Holidays (1966-69) | Annual plans due to war/drought | â€” | â€” |
+| Plan Holidays (1966-69) | Annual plans due to war/drought | — | — |
 | Fourth (1969-74) | Growth with stability | 5.7% | 3.3% |
 | Fifth (1974-79) | Garibi Hatao, poverty removal | 4.4% | 4.8% |
 | Sixth (1980-85) | Productivity, technology | 5.2% | 5.7% |
@@ -142,7 +142,7 @@ timeline
 | Eleventh (2007-12) | Inclusive growth | 9.0% | 8.0% |
 | Twelfth (2012-17) | Faster, more inclusive, sustainable | 8.0% | 6.9% |
 
-#### 4.3.2 NITI Aayog (2015â€“present)
+#### 4.3.2 NITI Aayog (2015–present)
 
 - Replaced the Planning Commission on 1 January 2015
 - Chairman: Prime Minister of India
@@ -153,7 +153,7 @@ timeline
 
 ### 4.4 Banking & Monetary Policy
 
-#### 4.4.1 RBI â€” The Central Bank
+#### 4.4.1 RBI — The Central Bank
 
 Reserve Bank of India (RBI) was established on **1 April 1935** under the RBI Act, 1934. Nationalised in **1949**. It is the central bank of India and the monetary authority.
 
@@ -189,7 +189,7 @@ flowchart TD
 - 6 members (3 from RBI + 3 external members appointed by government)
 - Chaired by RBI Governor
 - Meets bi-monthly to set policy rates
-- Objective: Maintain price stability while keeping growth in mind (inflation target: 4% with Â±2% tolerance band)
+- Objective: Maintain price stability while keeping growth in mind (inflation target: 4% with ±2% tolerance band)
 
 #### 4.4.2 Types of Banks in India
 
@@ -256,16 +256,16 @@ mindmap
 | Horticulture production | ~350 million tonnes (2023-24) |
 | Foodgrain production | ~330 million tonnes (record 2023-24) |
 
-**Key Reforms:** PM Kisan Samman Nidhi (2019) â€” â‚¹6,000/year to small farmers; PM Fasal Bima Yojana (2016) â€” crop insurance; e-NAM (electronic National Agriculture Market) â€” 1,000+ mandis integrated.
+**Key Reforms:** PM Kisan Samman Nidhi (2019) — ₹6,000/year to small farmers; PM Fasal Bima Yojana (2016) — crop insurance; e-NAM (electronic National Agriculture Market) — 1,000+ mandis integrated.
 
 #### 4.6.2 Industry
 
 **Industrial Policy Evolution:**
-- 1948: First Industrial Policy â€” mixed economy
-- 1956: Second Industrial Policy â€” heavy industry in public sector
-- 1991: New Industrial Policy â€” liberalisation, delicensing, FDI opening
+- 1948: First Industrial Policy — mixed economy
+- 1956: Second Industrial Policy — heavy industry in public sector
+- 1991: New Industrial Policy — liberalisation, delicensing, FDI opening
 - **Make in India (2014):** Focus on 25 sectors; target 25% of GDP from manufacturing
-- **Production-Linked Incentive (PLI) Scheme (2020):** 14 sectors, â‚¹1.97 lakh crore outlay
+- **Production-Linked Incentive (PLI) Scheme (2020):** 14 sectors, ₹1.97 lakh crore outlay
 
 **Key Industrial Corridors:** Delhi-Mumbai Industrial Corridor (DMIC), Chennai-Bangalore Industrial Corridor, Vizag-Chennai Industrial Corridor.
 
@@ -296,16 +296,16 @@ mindmap
 | Make in India | 2014 | DPIIT | Manufacturing push, FDI reforms |
 | Digital India | 2015 | MeitY | Digital infrastructure, e-governance, digital literacy |
 | Startup India | 2016 | DPIIT | Startup ecosystem, tax benefits, fund of funds |
-| Ayushman Bharat (PM-JAY) | 2018 | Health | Health cover of â‚¹5 lakh/family/year to 10 crore families |
-| PM Kisan Samman Nidhi | 2019 | Agriculture | â‚¹6,000/year income support to 12 crore small farmers |
+| Ayushman Bharat (PM-JAY) | 2018 | Health | Health cover of ₹5 lakh/family/year to 10 crore families |
+| PM Kisan Samman Nidhi | 2019 | Agriculture | ₹6,000/year income support to 12 crore small farmers |
 | PM Awas Yojana | 2015 | Housing | Housing for all by 2022 (extended) |
 | Jal Jeevan Mission | 2019 | Drinking Water | Tap water connection to every rural household |
 | Ujjwala Yojana | 2016 | Petroleum | Free LPG connections to BPL households |
 | Swachh Bharat Mission | 2014 | Drinking Water | Open Defecation Free (ODF) India |
-| PM Mudra Yojana | 2015 | Finance | Loans up to â‚¹10 lakh for micro-enterprises |
+| PM Mudra Yojana | 2015 | Finance | Loans up to ₹10 lakh for micro-enterprises |
 | Stand-Up India | 2016 | Finance | Bank loans for SC/ST and women entrepreneurs |
-| Smart Cities Mission | 2015 | Housing | 100 cities, â‚¹2.05 lakh crore investment |
-| PM Jan Dhan Yojana | 2014 | Finance | Financial inclusion â€” 50+ crore accounts opened |
+| Smart Cities Mission | 2015 | Housing | 100 cities, ₹2.05 lakh crore investment |
+| PM Jan Dhan Yojana | 2014 | Finance | Financial inclusion — 50+ crore accounts opened |
 | Skill India | 2015 | Skill Development | Training 40 crore people by 2022 |
 
 ---
@@ -500,7 +500,7 @@ D) Wealth tax
 <summary>Answer</summary>
 **Answer: C) Goods and Services Tax (GST)**
 
-GST is an indirect tax â€” it is collected by businesses from consumers and remitted to the government. Direct taxes (income tax, corporate tax, wealth tax) are paid directly by the person on whom they are levied.
+GST is an indirect tax — it is collected by businesses from consumers and remitted to the government. Direct taxes (income tax, corporate tax, wealth tax) are paid directly by the person on whom they are levied.
 </details>
 
 ---
@@ -539,16 +539,16 @@ Fiscal deficit = Total expenditure - Total receipts (excluding borrowings). Reve
 
 **Q9:** The "Ayushman Bharat" scheme provides health insurance cover of:
 
-A) â‚¹1 lakh per family per year
-B) â‚¹3 lakh per family per year
-C) â‚¹5 lakh per family per year
-D) â‚¹10 lakh per family per year
+A) ₹1 lakh per family per year
+B) ₹3 lakh per family per year
+C) ₹5 lakh per family per year
+D) ₹10 lakh per family per year
 
 <details>
 <summary>Answer</summary>
-**Answer: C) â‚¹5 lakh per family per year**
+**Answer: C) ₹5 lakh per family per year**
 
-Ayushman Bharat (PM Jan Arogya Yojana/PM-JAY) provides a health cover of â‚¹5 lakh per family per year for secondary and tertiary care hospitalization to over 10 crore poor and vulnerable families.
+Ayushman Bharat (PM Jan Arogya Yojana/PM-JAY) provides a health cover of ₹5 lakh per family per year for secondary and tertiary care hospitalization to over 10 crore poor and vulnerable families.
 </details>
 
 ---
@@ -738,7 +738,7 @@ NITI Aayog (National Institution for Transforming India) replaced the Planning C
 | GDP Rank (Nominal) | 5th (after USA, China, Germany, Japan) |
 | Per Capita Income | ~$2,500 (nominal) |
 | Foreign Exchange Reserves | ~$700+ billion |
-| Inflation (CPI) | ~4.0â€“5.0% |
+| Inflation (CPI) | ~4.0–5.0% |
 | Repo Rate | 6.00% (MPC decision) |
 | Fiscal Deficit (% of GDP) | 4.4% (target) |
 | Exports | ~$800 billion (goods + services) |
@@ -747,22 +747,22 @@ NITI Aayog (National Institution for Transforming India) replaced the Planning C
 | Industrial GDP Share | ~27% |
 | Services GDP Share | ~55% |
 | Labour Force Participation | ~50% |
-| Unemployment Rate | ~6â€“7% |
-| Population Below Poverty Line | ~12â€“15% |
+| Unemployment Rate | ~6–7% |
+| Population Below Poverty Line | ~12–15% |
 | Literacy Rate | ~77% |
-| GST Collection (Monthly Avg) | ~â‚¹1.7â€“1.8 lakh crore |
-| Tax-GDP Ratio | ~11â€“12% |
-| FDI Inflows | ~$50â€“60 billion annually |
+| GST Collection (Monthly Avg) | ~₹1.7–1.8 lakh crore |
+| Tax-GDP Ratio | ~11–12% |
+| FDI Inflows | ~$50–60 billion annually |
 
 ### 4.10 Money and Banking (Based on GFG Reference)
 
 #### 4.10.1 Functions of Money
 
 Money serves four primary functions:
-1. **Medium of Exchange** â€” Accepted for transactions
-2. **Unit of Account** â€” Standard measure of value
-3. **Store of Value** â€” Can be saved and used later
-4. **Standard of Deferred Payment** â€” Used for future payments
+1. **Medium of Exchange** — Accepted for transactions
+2. **Unit of Account** — Standard measure of value
+3. **Store of Value** — Can be saved and used later
+4. **Standard of Deferred Payment** — Used for future payments
 
 ```mermaid
 flowchart TD
@@ -810,7 +810,7 @@ flowchart TD
 - **Constituted under:** RBI Act, 1934 (amended in 2016)
 - **Members:** 6 (3 RBI officials + 3 external members)
 - **Chairperson:** RBI Governor
-- **Primary Objective:** Maintain price stability (inflation target: 4% with Â±2% tolerance band)
+- **Primary Objective:** Maintain price stability (inflation target: 4% with ±2% tolerance band)
 - **Meetings:** At least 4 per year (currently 6 bi-monthly meetings)
 - **Decision Making:** Each member votes; Governor has casting vote in case of tie
 - **Instruments:** Repo rate changes, stance changes (accommodative/neutral/withdrawal of accommodation)
@@ -820,13 +820,13 @@ flowchart TD
 | Type | Rate | Description |
 |------|------|-------------|
 | Creeping Inflation | < 3% | Mild, considered healthy for economy |
-| Walking Inflation | 3â€“6% | Moderate, causes concern |
-| Galloping Inflation | 6â€“10% | High, requires policy intervention |
+| Walking Inflation | 3–6% | Moderate, causes concern |
+| Galloping Inflation | 6–10% | High, requires policy intervention |
 | Hyperinflation | > 50% monthly | Very rare; seen in Zimbabwe, Venezuela, post-WWI Germany |
 | Deflation | Negative | Falling prices; can lead to recession |
 | Disinflation | Decreasing | Inflation rate is falling but still positive |
-| Core Inflation | â€” | Excludes food and fuel (volatile items) |
-| Headline Inflation | â€” | Includes all items (CPI-based) |
+| Core Inflation | — | Excludes food and fuel (volatile items) |
+| Headline Inflation | — | Includes all items (CPI-based) |
 
 #### 4.10.5 Important Banking Abbreviations
 
@@ -909,13 +909,13 @@ class EconomyAnalyzer {
   public printReport(): void {
     console.log('=== Indian Economy Health Report ===');
     this.indicators.forEach(i => {
-      const arrow = i.trend === 'improving' ? 'â†‘' : i.trend === 'worsening' ? 'â†“' : 'â†’';
+      const arrow = i.trend === 'improving' ? '↑' : i.trend === 'worsening' ? '↓' : '→';
       console.log(`${i.name}: ${i.value}${i.unit} ${arrow}`);
     });
     const health = this.generateEconomyHealthScore();
     console.log(`Overall Health: ${health.rating} (Score: ${health.score}/100)`);
     console.log(`Money Multiplier (CRR 4.5%): ${this.moneyMultiplier(4.5).toFixed(2)}x`);
-    console.log(`â‚¹100 item in 5 yrs at 5% inflation: â‚¹${this.calculateInflationImpact(100, 5, 5).toFixed(2)}`);
+    console.log(`₹100 item in 5 yrs at 5% inflation: ₹${this.calculateInflationImpact(100, 5, 5).toFixed(2)}`);
     console.log('====================================');
   }
 }
@@ -970,14 +970,14 @@ NARCL (also called "Bad Bank") was established in 2021 to acquire and resolve la
 
 **Q24:** The "Hindu Rate of Growth" refers to India's GDP growth rate during:
 
-A) 1950â€“1980
-B) 1980â€“1991
-C) 1991â€“2000
-D) 2000â€“2010
+A) 1950–1980
+B) 1980–1991
+C) 1991–2000
+D) 2000–2010
 
 <details>
 <summary>Answer</summary>
-**Answer: A) 1950â€“1980 (~3.5% growth rate)**
+**Answer: A) 1950–1980 (~3.5% growth rate)**
 
 The term "Hindu Rate of Growth" was coined by economist Raj Krishna to describe India's low and stagnant GDP growth of about 3.5% per annum from 1950 to 1980, before economic liberalisation began.
 </details>
@@ -993,7 +993,7 @@ D) 2019
 <summary>Answer</summary>
 **Answer: B) 2008 (Agricultural Debt Waiver and Debt Relief Scheme)**
 
-The scheme was announced in the Union Budget 2008-09 by then Finance Minister P. Chidambaram. It provided for waiver of direct agricultural loans and a one-time settlement scheme for other loans. It cost the exchequer approximately â‚¹71,000 crore.
+The scheme was announced in the Union Budget 2008-09 by then Finance Minister P. Chidambaram. It provided for waiver of direct agricultural loans and a one-time settlement scheme for other loans. It cost the exchequer approximately ₹71,000 crore.
 </details>
 
 ---
@@ -1013,10 +1013,10 @@ The scheme was announced in the Union Budget 2008-09 by then Finance Minister P.
 ## Practical Takeaways
 
 1. **For Exam Preparation:** Focus on budget concepts (fiscal deficit, revenue deficit, FRBM targets), RBI policy rates (changes are frequently asked), and Five-Year Plan focus areas.
-2. **Rate Memorisation:** Create a rate card â€” Repo Rate, Reverse Repo, CRR, SLR, MSF, Bank Rate. Update whenever RBI announces changes.
-3. **Plan Mnemonics:** Remember sectoral focus â€” First (Agriculture), Second (Industry), Eighth (Reforms), Twelfth (Inclusive growth).
-4. **Scheme Memory:** Group schemes by Ministry â€” PM Kisan (Agriculture), Ayushman Bharat (Health), PM Awas (Housing), Jan Dhan (Finance).
-5. **Tax Structure:** Know the GST slabs â€” Essentials (0%, 5%), Standard (12%, 18%), Luxury (28%). No questions on specific items, but the slab logic matters.
+2. **Rate Memorisation:** Create a rate card — Repo Rate, Reverse Repo, CRR, SLR, MSF, Bank Rate. Update whenever RBI announces changes.
+3. **Plan Mnemonics:** Remember sectoral focus — First (Agriculture), Second (Industry), Eighth (Reforms), Twelfth (Inclusive growth).
+4. **Scheme Memory:** Group schemes by Ministry — PM Kisan (Agriculture), Ayushman Bharat (Health), PM Awas (Housing), Jan Dhan (Finance).
+5. **Tax Structure:** Know the GST slabs — Essentials (0%, 5%), Standard (12%, 18%), Luxury (28%). No questions on specific items, but the slab logic matters.
 6. **Current Context:** The Economic Survey (tabled before Union Budget) and the Union Budget itself are must-read documents. Expect 2-3 questions directly from the latest budget.
 7. **SDG Index:** NITI Aayog's SDG India Index and Aspirational Districts Programme are frequently asked about in RBI Grade B exams.
 
@@ -1075,7 +1075,7 @@ D) Regulate stock markets
 <summary>Answer</summary>
 **Answer: B) Determine the repo rate**
 
-The MPC determines the policy interest rate (repo rate) required to achieve the inflation target (4% with Â±2% tolerance). It meets six times a year and decisions are made by majority vote.
+The MPC determines the policy interest rate (repo rate) required to achieve the inflation target (4% with ±2% tolerance). It meets six times a year and decisions are made by majority vote.
 </details>
 
 **Q5:** "Pradhan Mantri Mudra Yojana" provides loans under which categories?
@@ -1089,7 +1089,7 @@ D) Basic, Standard, Premium
 <summary>Answer</summary>
 **Answer: A) Shishu, Kishore, Tarun**
 
-MUDRA loans are categorised as: Shishu (up to â‚¹50,000), Kishore (â‚¹50,001â€“â‚¹5 lakh), and Tarun (â‚¹5,00,001â€“â‚¹10 lakh). The scheme aims to support micro and small enterprises.
+MUDRA loans are categorised as: Shishu (up to ₹50,000), Kishore (₹50,001–₹5 lakh), and Tarun (₹5,00,001–₹10 lakh). The scheme aims to support micro and small enterprises.
 </details>
 
 ---
@@ -1176,7 +1176,7 @@ D) 7
 
 **18.** The union budget is presented on __________ every year.
 
-**19.** The __________ was launched to provide health insurance of â‚¹5 lakh per family.
+**19.** The __________ was launched to provide health insurance of ₹5 lakh per family.
 
 **20.** The __________ sector contributes the largest share to India's GDP.
 
@@ -1202,7 +1202,7 @@ D) 7
 
 **30.** PM Jan Dhan Yojana provides life insurance cover. (T/F)
 
-### Section D: Additional MCQs (Exam Focus â€” Banking & Money)
+### Section D: Additional MCQs (Exam Focus — Banking & Money)
 
 **31.** The "Mint Street" is associated with which institution?
 
@@ -1281,7 +1281,7 @@ D) 2020
 
 **Section A (1-10):**
 1. C) BharatNet (digital connectivity to gram panchayats)
-2. A) 1965-66 (severe drought + war â†’ sharp decline in agriculture â†’ great divide)
+2. A) 1965-66 (severe drought + war → sharp decline in agriculture → great divide)
 3. D) PayTM (it is a private company product, not part of India Stack)
 4. B) Gold and government securities
 5. C) 1990s (the hawala scam involved politicians and business, 1991-1996)
@@ -1313,7 +1313,7 @@ D) 2020
 27. T
 28. F (Repo Rate is the rate at which RBI lends to banks; Reverse Repo is when RBI borrows from banks)
 29. T
-30. T (accidental death coverage of â‚¹2 lakh and life insurance coverage)
+30. T (accidental death coverage of ₹2 lakh and life insurance coverage)
 
 **Section D (31-40):**
 31. B) Reserve Bank of India (Mint Street is the location of RBI headquarters in Mumbai)
@@ -1324,10 +1324,10 @@ D) 2020
 36. C) Fiscal policy formulation (done by Ministry of Finance; RBI handles monetary policy)
 37. B) 1982 (EXIM Bank Act 1981 came into effect on 1 January 1982)
 38. B) SEBI (Securities and Exchange Board of India regulates credit rating agencies)
-39. C) Khan Committee (1998; recommended universal banking â€” merging financial services)
+39. C) Khan Committee (1998; recommended universal banking — merging financial services)
 40. B) 2017 (launched in January 2017; first payments bank to begin operations)
 </details>
 
 ---
 
-*Proceed to Chapter 5 â€” General Science & Technology*
+*Proceed to Chapter 5 — General Science & Technology*

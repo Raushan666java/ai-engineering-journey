@@ -1,4 +1,4 @@
-﻿![JPA Auditing - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-b.png)
+![JPA Auditing - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-b.png)
 
 
 <!-- Image Gallery -->
@@ -49,7 +49,7 @@ flowchart LR
 `@ManyToMany` creates an implicit join table with only two columns (the foreign keys). You cannot add attributes to the relationship (like `createdAt`, `role`, `quantity`). A join entity (also called an association entity) creates an explicit third entity mapped to the join table, allowing you to add columns to the relationship itself.
 
 ```java
-// â”€â”€ @ManyToMany (simple, no extra columns) â”€â”€
+// ── @ManyToMany (simple, no extra columns) ──
 @Entity
 public class Student {
     @Id private Long id;
@@ -69,7 +69,7 @@ public class Course {
     private Set<Student> students;
 }
 
-// â”€â”€ Join entity (extra columns possible) â”€â”€
+// ── Join entity (extra columns possible) ──
 @Entity
 public class Enrollment {
     @Id private Long id;
@@ -92,7 +92,7 @@ public class Student {
 ```
 
 Rules:
-- Use `@ManyToMany` only when the relationship truly has no attributes â†’ tags, categories, simple many-to-many labels
+- Use `@ManyToMany` only when the relationship truly has no attributes → tags, categories, simple many-to-many labels
 - Use a join entity whenever the relationship carries metadata (timestamps, roles, quantities, status)
 - A join entity also makes it easier to query the relationship itself: `SELECT e FROM Enrollment e WHERE e.grade = 'A'`
 
@@ -105,7 +105,7 @@ Rules:
 
 JPA provides three inheritance strategies, each mapped via `@Inheritance`:
 
-**1. SINGLE_TABLE** (default) â†’ one table for the entire hierarchy, with a discriminator column:
+**1. SINGLE_TABLE** (default) → one table for the entire hierarchy, with a discriminator column:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -130,7 +130,7 @@ public class Truck extends Vehicle {
 // Result: single "vehicle" table with columns: id, manufacturer, doors, payload_capacity, vehicle_type
 ```
 
-**2. JOINED** â†’ one table per class, with foreign keys to the parent:
+**2. JOINED** → one table per class, with foreign keys to the parent:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -148,7 +148,7 @@ public class CreditCardPayment extends Payment {
 // Result: payment(id, amount), credit_card_payment(id, card_number, card_holder)
 ```
 
-**3. TABLE_PER_CLASS** â†’ one complete table per concrete class:
+**3. TABLE_PER_CLASS** → one complete table per concrete class:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
@@ -171,7 +171,7 @@ public class Dog extends Animal {
 | JOINED | Polymorphic queries need joins | Best (normalized) | Full FK support |
 | TABLE_PER_CLASS | Worst (UNION queries) | Moderate | No polymorphic FK |
 
-Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when subclasses have many distinct columns. Avoid TABLE_PER_CLASS unless you have specific reasons â†’ most databases struggle with polymorphic UNION queries at scale.
+Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when subclasses have many distinct columns. Avoid TABLE_PER_CLASS unless you have specific reasons → most databases struggle with polymorphic UNION queries at scale.
 
 ---
 
@@ -183,7 +183,7 @@ Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when sub
 A projection is a subset of entity fields fetched instead of the full entity. DTO projections fetch only the columns you need, avoiding the overhead of loading large columns (BLOBs, TEXT) or eagerly-fetched associations.
 
 ```java
-// â”€â”€ Interface-based projection â”€â”€
+// ── Interface-based projection ──
 public interface UserSummary {
     String getName();
     String getEmail();
@@ -192,7 +192,7 @@ public interface UserSummary {
 @Query("SELECT u.name AS name, u.email AS email FROM User u WHERE u.active = true")
 List<UserSummary> findActiveUserSummaries();
 
-// â”€â”€ Class-based DTO projection â”€â”€
+// ── Class-based DTO projection ──
 public record UserDto(String name, String email, int orderCount) {}
 
 @Query("SELECT new com.example.UserDto(u.name, u.email, SIZE(u.orders)) " +
@@ -201,11 +201,11 @@ List<UserDto> findActiveUserDtos();
 ```
 
 Why use projections over entities:
-1. **Performance**: Select only needed columns â†’ avoids fetching large TEXT/BLOB columns
-2. **Read-only**: No dirty checking overhead â†’ Hibernate tracks changes only on managed entities
+1. **Performance**: Select only needed columns → avoids fetching large TEXT/BLOB columns
+2. **Read-only**: No dirty checking overhead → Hibernate tracks changes only on managed entities
 3. **Join efficiency**: DTOs can aggregate data from multiple entities without loading them
-4. **Safety**: No lazy-loading exceptions outside transactions â†’ DTOs are plain objects
-5. **API boundary**: Expose only intended fields to REST clients â†’ never accidentally serialize lazy proxies
+4. **Safety**: No lazy-loading exceptions outside transactions → DTOs are plain objects
+5. **API boundary**: Expose only intended fields to REST clients → never accidentally serialize lazy proxies
 
 EntityGraph can help with partial entity loading, but DTO projections give you the most control and the least overhead.
 
@@ -218,7 +218,7 @@ EntityGraph can help with partial entity loading, but DTO projections give you t
 
 Flyway manages schema changes as versioned SQL scripts. Spring Boot auto-configures Flyway when it finds `flyway-core` on the classpath.
 
-Step 1 â†’ Add dependency:
+Step 1 → Add dependency:
 ```xml
 <dependency>
     <groupId>org.flywaydb</groupId>
@@ -226,7 +226,7 @@ Step 1 â†’ Add dependency:
 </dependency>
 ```
 
-Step 2 â†’ Create migration scripts in `src/main/resources/db/migration/`:
+Step 2 → Create migration scripts in `src/main/resources/db/migration/`:
 ```sql
 -- V1__create_users_table.sql
 CREATE TABLE users (
@@ -252,7 +252,7 @@ CREATE TABLE orders (
 CREATE INDEX idx_orders_user_id ON orders(user_id);
 ```
 
-Step 3 â†’ Configure (minimal â†’ Spring Boot auto-configures):
+Step 3 → Configure (minimal → Spring Boot auto-configures):
 ```yaml
 spring:
   flyway:
@@ -267,7 +267,7 @@ Naming convention: `V{version}__{description}.sql`
 - Versions can be integers (V1) or dotted (V1_2_3)
 - Repeatable migrations: `R__{description}.sql` (re-run if checksum changes)
 
-Flyway tracks applied migrations in a `flyway_schema_history` table. Never modify an already-applied migration â†’ create a new one instead.
+Flyway tracks applied migrations in a `flyway_schema_history` table. Never modify an already-applied migration → create a new one instead.
 
 ---
 
@@ -298,7 +298,7 @@ public class InventoryService {
         }
         item.setQuantity(item.getQuantity() - quantity);
         // Hibernate increments version on flush/commit
-        // If another transaction modified the row, version mismatch â†’ OptimisticLockException
+        // If another transaction modified the row, version mismatch → OptimisticLockException
     }
 }
 ```
@@ -313,7 +313,7 @@ Optional<InventoryItem> findByIdForUpdate(@Param("id") Long id);
 @Transactional
 public void deductStockPessimistic(Long itemId, int quantity) {
     InventoryItem item = repo.findByIdForUpdate(itemId).orElseThrow();
-    // Database row is locked â†’ other transactions wait
+    // Database row is locked → other transactions wait
     item.setQuantity(item.getQuantity() - quantity);
 }
 ```
@@ -325,7 +325,7 @@ For counters and atomic updates, use a single UPDATE statement to avoid the read
 @Query("UPDATE InventoryItem i SET i.quantity = i.quantity - :qty WHERE i.id = :id AND i.quantity >= :qty")
 int deductStockAtomic(@Param("id") Long id, @Param("qty") int qty);
 
-// Returns 0 if row didn't exist or quantity was insufficient â†’ no race condition
+// Returns 0 if row didn't exist or quantity was insufficient → no race condition
 ```
 
 The single-UPDATE approach is the most performant for high-contention counters because it avoids the round-trip for reading.
@@ -401,28 +401,28 @@ Add `@Testcontainers` + static `@Container` for a shared container across tests 
 - `JOIN FETCH`: A JPA-specific directive that tells Hibernate to **eagerly load** the association in the same query. Unlike plain `JOIN`, it populates the entity's persistence state so that lazy loading is not triggered later.
 
 ```java
-// INNER JOIN â†’ only posts with at least one comment
-// Result: List<Object[]> â†’ [Post, Comment] pairs
+// INNER JOIN → only posts with at least one comment
+// Result: List<Object[]> → [Post, Comment] pairs
 @Query("SELECT p, c FROM Post p JOIN p.comments c")
 List<Object[]> findPostsWithComments();
 
-// LEFT JOIN â†’ all posts, comments may be null
+// LEFT JOIN → all posts, comments may be null
 @Query("SELECT p, c FROM Post p LEFT JOIN p.comments c")
 List<Object[]> findAllPostsAndComments();
 
-// JOIN FETCH â†’ eagerly loads comments, returns Post entities with comments populated
+// JOIN FETCH → eagerly loads comments, returns Post entities with comments populated
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments();
 ```
 
-The critical difference: plain `JOIN` adds a WHERE/HAVING filter â†’ it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
+The critical difference: plain `JOIN` adds a WHERE/HAVING filter → it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
 
 ```java
-// Ã¢ÂÅ’ Plain LEFT JOIN â†’ comments are still lazy
+// ❌ Plain LEFT JOIN → comments are still lazy
 @Query("SELECT p FROM Post p LEFT JOIN p.comments c WHERE c.approved = true")
 List<Post> findApprovedCommentPosts(); // p.getComments() will still trigger lazy load!
 
-// Ã¢Å“â€¦ JOIN FETCH â†’ comments are loaded
+// ✅ JOIN FETCH → comments are loaded
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 ```
@@ -435,7 +435,7 @@ List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 
 **Answer:**
 
-This is a critical configuration point that causes subtle bugs. `allocationSize` in `@SequenceGenerator` tells Hibernate how many IDs to pre-allocate in memory. The database sequence `INCREMENT BY` value must match â€” otherwise, IDs will collide or leave gaps.
+This is a critical configuration point that causes subtle bugs. `allocationSize` in `@SequenceGenerator` tells Hibernate how many IDs to pre-allocate in memory. The database sequence `INCREMENT BY` value must match — otherwise, IDs will collide or leave gaps.
 
 ```java
 // CORRECT: allocationSize = DB sequence increment
@@ -446,19 +446,19 @@ private Long id;
 
 // Database: CREATE SEQUENCE order_sequence INCREMENT BY 50;
 // Hibernate pre-allocates 50 IDs (1, 51, 101, 151...)
-// Each app instance gets its own block of 50 â†’ no contention
+// Each app instance gets its own block of 50 → no contention
 ```
 
 **Mismatch scenarios:**
 
 | allocationSize | DB INCREMENT BY | Behavior |
 |---------------|-----------------|----------|
-| 50 | 50 | âœ… Correct â€” IDs: 1, 51, 101 (no waste, no collision) |
-| 50 | 1 | âŒ Hibernate assumes next ID is 51, DB gives 2 â€” collision! |
-| 1 | 50 | âš ï¸ Hibernate calls sequence for every INSERT â€” wastes DB round-trips |
-| 50 | 50 (2 instances) | âœ… Instance A gets 1-50, Instance B gets 51-100 â€” no conflict |
+| 50 | 50 | ✅ Correct — IDs: 1, 51, 101 (no waste, no collision) |
+| 50 | 1 | ❌ Hibernate assumes next ID is 51, DB gives 2 — collision! |
+| 1 | 50 | ⚠️ Hibernate calls sequence for every INSERT — wastes DB round-trips |
+| 50 | 50 (2 instances) | ✅ Instance A gets 1-50, Instance B gets 51-100 — no conflict |
 
-**Best practice:** Set `allocationSize` to the same value as `INCREMENT BY` in your DDL. Use 50 as a reasonable default â€” it balances pre-allocation memory against DB round-trips.
+**Best practice:** Set `allocationSize` to the same value as `INCREMENT BY` in your DDL. Use 50 as a reasonable default — it balances pre-allocation memory against DB round-trips.
 
 ```sql
 -- PostgreSQL
@@ -468,7 +468,7 @@ CREATE SEQUENCE order_sequence INCREMENT BY 50 START 1;
 CREATE SEQUENCE order_sequence INCREMENT BY 50 START WITH 1;
 ```
 
-**Hibernate 6 `PooledLo` optimizer** (default): Pre-allocates IDs in blocks. If the application restarts, some IDs in the pre-allocated block may be lost â€” that's expected and harmless.
+**Hibernate 6 `PooledLo` optimizer** (default): Pre-allocates IDs in blocks. If the application restarts, some IDs in the pre-allocated block may be lost — that's expected and harmless.
 
 ---
 
@@ -551,7 +551,7 @@ public class Product {
 List<Document> findActiveDocuments();
 ```
 
-> **Pro Tip:** Native queries are needed for JSON path queries â€” JPQL does not support JSON operators. Keep JSON columns for semi-structured data only; use proper normalized columns for query-critical fields.
+> **Pro Tip:** Native queries are needed for JSON path queries — JPQL does not support JSON operators. Keep JSON columns for semi-structured data only; use proper normalized columns for query-critical fields.
 
 ---
 
@@ -562,7 +562,7 @@ List<Document> findActiveDocuments();
 
 In a team of 5+ developers, migration version conflicts are inevitable. Here's a strategy to minimize them:
 
-**Strategy 1: Timestamp-based versions** â€” use `V20240707_120000__description.sql` instead of `V1`, `V2`, etc. This eliminates the "who gets V4?" problem:
+**Strategy 1: Timestamp-based versions** — use `V20240707_120000__description.sql` instead of `V1`, `V2`, etc. This eliminates the "who gets V4?" problem:
 
 ```sql
 -- Each developer creates migrations with the current timestamp
@@ -571,7 +571,7 @@ In a team of 5+ developers, migration version conflicts are inevitable. Here's a
 -- V20240708_090000__add_index_on_products.sql (Alice, next day)
 ```
 
-**Strategy 2: Git-based conflict detection** â€” use a CI check that detects version collisions:
+**Strategy 2: Git-based conflict detection** — use a CI check that detects version collisions:
 
 ```typescript
 // TypeScript migration conflict detector
@@ -606,10 +606,10 @@ class MigrationConflictDetector {
 }
 ```
 
-**Strategy 3: Per-developer version ranges** â€” each developer claims a version block:
-- Alice: V001â€“V099
-- Bob: V100â€“V199
-- Charlie: V200â€“V299
+**Strategy 3: Per-developer version ranges** — each developer claims a version block:
+- Alice: V001–V099
+- Bob: V100–V199
+- Charlie: V200–V299
 
 ```sql
 -- V042__alice_feature.sql
@@ -635,11 +635,11 @@ This allows Flyway to start tracking migrations on a database that already has t
 ### Mistake 1: Editing an already-applied migration
 
 ```sql
--- âŒ WRONG: You changed V2 after it was applied to production
--- Flyway checksums the file content â€” any change fails validation
+-- ❌ WRONG: You changed V2 after it was applied to production
+-- Flyway checksums the file content — any change fails validation
 -- FlywayException: "Migration checksum mismatch for migration version 2"
 
--- âœ… CORRECT: Create V3 with the corrected schema
+-- ✅ CORRECT: Create V3 with the corrected schema
 -- V3__fix_email_column_type.sql
 ALTER TABLE users ALTER COLUMN email TYPE VARCHAR(320);
 ```
@@ -647,20 +647,20 @@ ALTER TABLE users ALTER COLUMN email TYPE VARCHAR(320);
 ### Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations
 
 ```sql
--- âŒ WRONG: Fails if the column was already dropped
+-- ❌ WRONG: Fails if the column was already dropped
 ALTER TABLE users DROP COLUMN temp_field;
 
--- âœ… CORRECT: Safe even if column doesn't exist
+-- ✅ CORRECT: Safe even if column doesn't exist
 ALTER TABLE users DROP COLUMN IF EXISTS temp_field;
 ```
 
 ### Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production
 
 ```properties
-# âŒ WRONG: Hibernate can drop columns or change types unexpectedly
+# ❌ WRONG: Hibernate can drop columns or change types unexpectedly
 spring.jpa.hibernate.ddl-auto=update
 
-# âœ… CORRECT: Use Flyway/Liquibase for all schema changes
+# ✅ CORRECT: Use Flyway/Liquibase for all schema changes
 spring.jpa.hibernate.ddl-auto=validate
 spring.flyway.enabled=true
 ```
@@ -668,7 +668,7 @@ spring.flyway.enabled=true
 ### Mistake 4: Not testing migrations against a real database
 
 ```java
-// âœ… CORRECT: Testcontainers migration test
+// ✅ CORRECT: Testcontainers migration test
 @SpringBootTest
 @Testcontainers
 class MigrationTest {
@@ -696,7 +696,7 @@ class MigrationTest {
 | Aspect | JPA (Jakarta Persistence) | Hibernate |
 |--------|--------------------------|-----------|
 | Type | Specification (interface) | Implementation |
-| Provider-neutral | Yes â€” any JPA implementation works | No â€” proprietary APIs are Hibernate-specific |
+| Provider-neutral | Yes — any JPA implementation works | No — proprietary APIs are Hibernate-specific |
 | Caching | Defines L1 cache concept | Adds L2 cache, query cache, custom regions |
 | Criteria API | Type-safe but verbose | Hibernate Criteria (legacy) vs JPA Criteria |
 | @GeneratedValue | SEQUENCE, IDENTITY, TABLE, AUTO | Adds GENERATION_TYPE.UUID (Hibernate 6+) |
@@ -705,7 +705,7 @@ class MigrationTest {
 | Multitenancy | Limited | Full discriminator/SCHEMA/DATABASE support |
 | Performance tuning | Basic | Query plan hints, statistics, SQL logging |
 
-**When to use pure JPA:** You want to switch between providers (e.g., Hibernate â†’ EclipseLink). **When to use Hibernate-specific features:** You need caching, JSON mapping, batch fetching, or multitenancy â€” which covers most production applications.
+**When to use pure JPA:** You want to switch between providers (e.g., Hibernate → EclipseLink). **When to use Hibernate-specific features:** You need caching, JSON mapping, batch fetching, or multitenancy — which covers most production applications.
 
 ## Mermaid: Sequence Generation Flow
 
@@ -741,10 +741,10 @@ sequenceDiagram
     end
 ```
 
-## Chapter Quiz â€” Database (Part 2)
+## Chapter Quiz — Database (Part 2)
 
 4. What happens when `allocationSize` in `@SequenceGenerator` does not match the database `INCREMENT BY` value?
-    - A) Nothing â€” Hibernate auto-detects the correct value
+    - A) Nothing — Hibernate auto-detects the correct value
     - B) IDs may collide or be wasted
     - C) The application fails to start
     - D) Hibernate reverts to IDENTITY strategy
@@ -871,13 +871,13 @@ class OptimisticLockSimulator {
 
       const fromOk = this.write(fromId, { balance: fromBalance - amount }, from.version);
       if (!fromOk) {
-        console.log(`[RETRY] Conflict on debit â€” retrying...`);
+        console.log(`[RETRY] Conflict on debit — retrying...`);
         continue;
       }
 
       const toOk = this.write(toId, { balance: toBalance + amount }, to.version);
       if (!toOk) {
-        console.log(`[RETRY] Conflict on credit â€” rolling back debit...`);
+        console.log(`[RETRY] Conflict on credit — rolling back debit...`);
         this.write(fromId, { balance: fromBalance }, from.version + 1);
         continue;
       }
@@ -890,13 +890,13 @@ class OptimisticLockSimulator {
   }
 }
 
-// â”€â”€ Concurrent transfer simulation â”€â”€
+// ── Concurrent transfer simulation ──
 const sim = new OptimisticLockSimulator();
 console.log('=== OPTIMISTIC LOCKING RETRY SIMULATION ===\n');
 sim.transfer(1, 2, 200);
 sim.transfer(2, 1, 100);
 
-// â”€â”€ Migration validator â”€â”€
+// ── Migration validator ──
 class MigrationValidator {
   private migrations: MigrationScript[] = [];
 
@@ -928,7 +928,7 @@ class MigrationValidator {
       const current = this.migrations[i];
       const next = this.migrations[i + 1];
       if (this.compareVersions(current.version, next.version) >= 0) {
-        errors.push(`Version order error: v${current.version} â†’ v${next.version} must be ascending`);
+        errors.push(`Version order error: v${current.version} → v${next.version} must be ascending`);
       }
       if (current.sql.toLowerCase().includes('drop column') && !current.sql.toLowerCase().includes('if exists')) {
         errors.push(`Safety: v${current.version} DROP COLUMN without IF EXISTS`);
@@ -951,7 +951,7 @@ class MigrationValidator {
     const errors = this.validate();
     if (errors.length > 0) {
       console.log('\nMigration validation FAILED:');
-      errors.forEach(e => console.log(`  âœ— ${e}`));
+      errors.forEach(e => console.log(`  ✗ ${e}`));
       return;
     }
     for (const m of this.migrations) {

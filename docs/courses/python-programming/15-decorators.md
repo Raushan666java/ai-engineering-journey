@@ -1,4 +1,4 @@
-﻿# Chapter 15: Decorators
+# Chapter 15: Decorators
 
 
 > **Previous:** [Magic Methods](./14-magic-methods.md) | **Next:** [Generators and itertools](./16-generators.md)
@@ -403,7 +403,7 @@ class Database:
         print("Database instance created")
 
 db1 = Database()  # Database instance created
-db2 = Database()  # no output â†’ reuses instance
+db2 = Database()  # no output → reuses instance
 print(db1 is db2)  # True
 ```
 
@@ -609,7 +609,7 @@ with timing("compute"):
 ```
 ```typescript
 // Chapter 15: TypeScript Decorator & Higher-Order Function Equivalents
-// Python: decorators wrap functions â†’ TypeScript: higher-order functions
+// Python: decorators wrap functions → TypeScript: higher-order functions
 
 // Simple function wrapper (like a decorator without @ syntax)
 function timer<Args extends unknown[], Return>(
@@ -632,7 +632,7 @@ const slowSum = (a: number, b: number): number => {
 const timedSum = timer(slowSum);
 console.log(timedSum(3, 4));  // logs timing, returns 7
 
-// Python: @lru_cache â†’ TypeScript: memoization wrapper
+// Python: @lru_cache → TypeScript: memoization wrapper
 function memoize<Args extends unknown[], Return>(
   fn: (...args: Args) => Return
 ): (...args: Args) => Return {
@@ -665,7 +665,7 @@ function Logged(target: any, propertyKey: string, descriptor: PropertyDescriptor
 ### TypeScript Higher-Order Function Patterns
 
 ```typescript
-// Python: retry decorator â†’ TypeScript: retry wrapper
+// Python: retry decorator → TypeScript: retry wrapper
 async function retry<T>(
   fn: () => Promise<T>,
   maxAttempts: number = 3,
@@ -683,7 +683,7 @@ async function retry<T>(
   throw new Error("Unreachable");
 }
 
-// Python: @validate_args â†’ TypeScript: runtime type check wrapper
+// Python: @validate_args → TypeScript: runtime type check wrapper
 function validateTypes(fn: Function, paramTypes: string[]): Function {
   return (...args: unknown[]) => {
     for (let i = 0; i < args.length; i++) {
@@ -700,18 +700,18 @@ const safeAdd = validateTypes((a: number, b: number) => a + b, ["number", "numbe
 console.log(safeAdd(2, 3));  // 5
 // safeAdd(2, "3");  // TypeError
 
-// Python: @deprecated â†’ TypeScript: deprecation wrapper
+// Python: @deprecated → TypeScript: deprecation wrapper
 function deprecated(message: string) {
   return (_target: any, propertyKey: string, descriptor: PropertyDescriptor) => {
     const original = descriptor.value;
     descriptor.value = function (...args: unknown[]) {
-      console.warn(`Deprecated: ${propertyKey} â€” ${message}`);
+      console.warn(`Deprecated: ${propertyKey} — ${message}`);
       return original.apply(this, args);
     };
   };
 }
 
-// Python: @singleton â†’ TypeScript: Singleton pattern
+// Python: @singleton → TypeScript: Singleton pattern
 class Singleton {
   private static instance: Singleton;
   private constructor() {}
@@ -822,7 +822,7 @@ function logCalls<T extends (...args: unknown[]) => unknown>(fn: T): T {
   }) as T;
 }
 const add = logCalls((a: number, b: number) => a + b);
-console.log(add(3, 4)); // Logs: Called (3, 4) â†’ 7
+console.log(add(3, 4)); // Logs: Called (3, 4) → 7
 
 // === Timing decorator ===
 function timed<T extends (...args: unknown[]) => unknown>(fn: T): T {

@@ -176,7 +176,7 @@ Before a GATE exam, many students pull all-nighters studying [`docs/courses/gate
 **Sleep stages matter:** Stage 3 (deep sleep) strengthens factual knowledge. REM sleep integrates procedural skills and creative problem-solving. Both are essential. A 7-8 hour sleep cycle contains 4-5 full cycles.
 
 ```java
-// Your brain during sleep â‰ˆ background database backup
+// Your brain during sleep ≈ background database backup
 public class MemoryConsolidation {
     // During wake: buffer writes (hippocampus)
     Map<Concept, String> shortTerm = new HashMap<>();
@@ -233,7 +233,7 @@ public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 ### Q9: What are illusions of competence, and how do you avoid them?
 
 
-**Answer:** The #1 learning trap: **rereading** feels productive but isn't. When you re-read a chapter, your brain recognizes the content → and recognition feels like knowing. But recognition â‰  recall, and exams test recall.
+**Answer:** The #1 learning trap: **rereading** feels productive but isn't. When you re-read a chapter, your brain recognizes the content → and recognition feels like knowing. But recognition ≠ recall, and exams test recall.
 
 A student opens [`docs/courses/gate-cs-preparation/08-database-management-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/08-database-management-systems.md) and reads the Normal Form Summary table: 1NF, 2NF, 3NF, BCNF, 4NF, 5NF. They read it twice. "I know this," they think. But when a GATE question asks:
 
@@ -242,7 +242,7 @@ A student opens [`docs/courses/gate-cs-preparation/08-database-management-system
 They can't answer because they only recognized the table → they never tested whether they could *apply* the definitions.
 
 ```java
-// Recognition â‰  Recall
+// Recognition ≠ Recall
 public class CompetenceIllusion {
     // Reading: "I know this, it's easy" → illusion
     void readPassively(String chapter) { /* feels good, does nothing */ }
@@ -300,12 +300,12 @@ public class RecallTest {
 
 **Answer:** Einstellung (German: "attitude" or "mindset") is the brain's tendency to get stuck in one approach, preventing you from seeing a better solution. Your initial neural pattern blocks alternative patterns.
 
-From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), consider Q11: Container With Most Water (Amazon, Google, Meta). A novice sees two heights and immediately thinks: "Find the maximum height, then compute area with every other line." That's O(nÂ²). They chase this approach for 20 minutes.
+From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), consider Q11: Container With Most Water (Amazon, Google, Meta). A novice sees two heights and immediately thinks: "Find the maximum height, then compute area with every other line." That's O(n²). They chase this approach for 20 minutes.
 
 The optimal solution uses two pointers moving inward → O(n). But the Einstellung effect (fixation on "find tallest first") blocks the two-pointer insight. The solution is to deliberately step back and ask: "Are there other ways to frame this problem?"
 
 ```java
-// Einstellung: "I must find the max first" → O(nÂ²)
+// Einstellung: "I must find the max first" → O(n²)
 public int maxAreaStuck(int[] height) {
     int max = 0;
     for (int i = 0; i < height.length; i++)        // ← stuck thinking
@@ -728,7 +728,7 @@ void bfs(Map<Integer, List<Integer>> graph, int start) {
 
 Take the GATE formula for CPU Turnaround Time from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md):
 
-- **Day 1**: Learn TAT = Completion Time âˆ’ Arrival Time
+- **Day 1**: Learn TAT = Completion Time − Arrival Time
 - **Day 2**: Without review, you've forgotten ~70%
 - **Review on Day 1 (1 hour later)**: 90% retained
 - **Review on Day 2**: 95% retained
@@ -767,7 +767,7 @@ public class ForgettingCurve {
 **Step 3 → Add your first card** using the Sorting algorithms from [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md):
 
 > **Front:** What is the worst-case time complexity of QuickSort?
-> **Back:** O(nÂ²) → occurs when the pivot is always the smallest or largest element (already sorted or reverse sorted array without randomized pivot).
+> **Back:** O(n²) → occurs when the pivot is always the smallest or largest element (already sorted or reverse sorted array without randomized pivot).
 >
 > **Extra:** Best case: O(n log n). Average: O(n log n). Space: O(log n) in-place.
 
@@ -1409,7 +1409,7 @@ Reference the complexity table in [`docs/courses/gate-cs-preparation/10-data-str
 ```java
 public class SortingPalace {
     enum Algorithm {
-        BUBBLE("O(nÂ²)", "Door → bubbles rising"),
+        BUBBLE("O(n²)", "Door → bubbles rising"),
         QUICK("O(n log n)", "Bookshelf → pivot book"),
         MERGE("O(n log n)", "Desk → split papers"),
         HEAP("O(n log n)", "Lamp → pyramid light");
@@ -1507,7 +1507,7 @@ public class PegSystem {
 
 Quicksort in 3 words: **pivot → partition → recurse**
 
-From that, reconstruct: pick a pivot element → arrange array so smaller elements go left, larger go right → recursively sort each partition. Add 3 more words for the full picture: **O(n log n) worst O(nÂ²)**.
+From that, reconstruct: pick a pivot element → arrange array so smaller elements go left, larger go right → recursively sort each partition. Add 3 more words for the full picture: **O(n log n) worst O(n²)**.
 
 Apply compression to the 0/1 Knapsack recurrence from [`docs/courses/algorithms/08-dp-knapsack.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/algorithms/08-dp-knapsack.md) (lines 16-54):
 - **item → capacity → max(include, exclude)** → 4 words encode the entire DP recurrence.
@@ -1528,7 +1528,7 @@ public class MemoryCompression {
 }
 ```
 
-> **Try This:** Take any algorithm from [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md) (Dijkstra, Merge Sort, Binary Search). Compress it to â‰¤5 words. Test: can you reconstruct the full algorithm from those 5 words 24 hours later?
+> **Try This:** Take any algorithm from [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md) (Dijkstra, Merge Sort, Binary Search). Compress it to ≤5 words. Test: can you reconstruct the full algorithm from those 5 words 24 hours later?
 
 ---
 
@@ -1643,16 +1643,16 @@ The 54 DSA PYQs in [`docs/courses/gate-cs-preparation/10-data-structures-algorit
 
 For GATE formulas like the Master Theorem from [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md) (lines 49-55):
 ```
-T(n) = aÂ·T(n/b) + f(n)
-Case 1: f(n) = O(n^{log_b a - Îµ}) → T(n) = Î˜(n^{log_b a})
-Case 2: f(n) = Î˜(n^{log_b a}Â·log^k n) → T(n) = Î˜(n^{log_b a}Â·log^{k+1} n)
-Case 3: f(n) = Î©(n^{log_b a + Îµ}) → T(n) = Î˜(f(n))
+T(n) = a·T(n/b) + f(n)
+Case 1: f(n) = O(n^{log_b a - ε}) → T(n) = Θ(n^{log_b a})
+Case 2: f(n) = Θ(n^{log_b a}·log^k n) → T(n) = Θ(n^{log_b a}·log^{k+1} n)
+Case 3: f(n) = Ω(n^{log_b a + ε}) → T(n) = Θ(f(n))
 ```
 
 **Instead of re-reading:** generate your own examples.
-- For T(n) = 2T(n/2) + n: "a=2, b=2, log_2 2 = 1, f(n)=n = n^1 → Case 2 with k=0 → Î˜(n log n). This is Merge Sort!"
-- For T(n) = 4T(n/2) + n: "a=4, b=2, log_2 4 = 2, f(n)=n = n^{2-Îµ} where Îµ=1 → Case 1 → Î˜(nÂ²)"
-- For T(n) = 2T(n/2) + nÂ²: "a=2, b=2, log_2 2 = 1, f(n)=nÂ² = Î©(n^{1+Îµ}) → Check regularity: 2Â·(n/2)Â² / nÂ² = 0.5 &lt; 1 → Case 3 → Î˜(nÂ²)"
+- For T(n) = 2T(n/2) + n: "a=2, b=2, log_2 2 = 1, f(n)=n = n^1 → Case 2 with k=0 → Θ(n log n). This is Merge Sort!"
+- For T(n) = 4T(n/2) + n: "a=4, b=2, log_2 4 = 2, f(n)=n = n^{2-ε} where ε=1 → Case 1 → Θ(n²)"
+- For T(n) = 2T(n/2) + n²: "a=2, b=2, log_2 2 = 1, f(n)=n² = Ω(n^{1+ε}) → Check regularity: 2·(n/2)² / n² = 0.5 &lt; 1 → Case 3 → Θ(n²)"
 
 Each self-generated example is encoded more strongly than any textbook. Reference the complete DSA PYQ file for the actual recurrences tested in GATE.
 
@@ -1661,7 +1661,7 @@ public class GenerationEffect {
     // Generate your own example for each formula
     static String generateCase(int a, int b, String f, String name) {
         double logBA = Math.log(a) / Math.log(b);
-        return String.format("%s: T(n)=%dT(n/%d)+%s → Î˜(n^%.2f)", 
+        return String.format("%s: T(n)=%dT(n/%d)+%s → Θ(n^%.2f)", 
                name, a, b, f, logBA);
     }
     public static void main(String[] args) {
@@ -1717,7 +1717,7 @@ The DSA problem bank at [`docs/courses/placement-preparation/02-dsa-problem-bank
 
 **Hard mode (desirable difficulty):** Close the solution. Type the solution from scratch based on what you remember. Only peek when stuck for >5 minutes.
 
-For Q1 (Two Sum, line 17-41): Close the file. Write the HashMap solution. If you get the `complement = target - nums[i]` logic right, you've encoded it deeply. If you write the brute-force O(nÂ²) version instead, you've discovered *why* the HashMap solution matters → a deeper understanding.
+For Q1 (Two Sum, line 17-41): Close the file. Write the HashMap solution. If you get the `complement = target - nums[i]` logic right, you've encoded it deeply. If you write the brute-force O(n²) version instead, you've discovered *why* the HashMap solution matters → a deeper understanding.
 
 ```java
 public class DesirableDifficulties {
@@ -2269,7 +2269,7 @@ public class WeeklyReview {
    - "Write every SQL problem from `03-sql-problem-bank.md` from scratch"
 
 4. **Am I on track for my goal?**
-   - "125 DSA problems Ã— 30 min = 62.5 hours needed. At current pace, I'll finish in 3 months. Need to accelerate."
+   - "125 DSA problems × 30 min = 62.5 hours needed. At current pace, I'll finish in 3 months. Need to accelerate."
 
 Reference the 16 case studies in [`docs/courses/system-design/18-case-studies-classic.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/system-design/18-case-studies-classic.md) through `23-case-study-dropbox.md`. If you planned to finish 4 this month but only did 2, the retrospective surfaces why.
 
@@ -2351,7 +2351,7 @@ public class SlumpBuster {
 ### Q80: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?
 
 
-**Answer:** The compound effect (Darren Hardy) is the principle that small, consistent actions produce extraordinary results over time. 1 hour per day Ã— 365 days = 365 hours. That's enough time to complete any 2 full courses from this repo.
+**Answer:** The compound effect (Darren Hardy) is the principle that small, consistent actions produce extraordinary results over time. 1 hour per day × 365 days = 365 hours. That's enough time to complete any 2 full courses from this repo.
 
 **The math:**
 - 365 hours = reading ~13,000 pages (at 3 min/page)
@@ -2361,7 +2361,7 @@ public class SlumpBuster {
 - [`docs/courses/gate-cs-preparation/10-data-structures-algorithms.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/10-data-structures-algorithms.md): 1,408 lines (~5 hours)
 - [`docs/courses/gate-cs-preparation/11-computer-architecture.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/11-computer-architecture.md): 1,996 lines (~7 hours)
 
-Total GATE CS content: ~9,000 lines â‰ˆ 30 hours to read once. With 365 hours, you could read everything 12 times, do all 8 mock tests 3 times each, and still have 200 hours for DSA practice.
+Total GATE CS content: ~9,000 lines ≈ 30 hours to read once. With 365 hours, you could read everything 12 times, do all 8 mock tests 3 times each, and still have 200 hours for DSA practice.
 
 ```java
 public class CompoundEffect {
@@ -2410,7 +2410,7 @@ public int[] twoSum(int[] nums, int target) {
 }
 ```
 
-Pass 1: solve with nested loops (O(nÂ²)). Pass 2: find the hashmap solution (O(n)). Pass 3: teach aloud → "HashMap stores previously seen values so we can check complement in O(1). Edge cases: duplicates, no solution, negative numbers."
+Pass 1: solve with nested loops (O(n²)). Pass 2: find the hashmap solution (O(n)). Pass 3: teach aloud → "HashMap stores previously seen values so we can check complement in O(1). Edge cases: duplicates, no solution, negative numbers."
 
 ### Q82: How should I classify DSA problems by pattern?
 
@@ -2444,7 +2444,7 @@ Three example cards:
 
 **Step 1 → Define state:** `dp[i] = minimum coins to make amount i`.
 
-**Step 2 → Recurrence:** `dp[i] = min(dp[i], dp[i - coin] + 1)` for each coin â‰¤ i.
+**Step 2 → Recurrence:** `dp[i] = min(dp[i], dp[i - coin] + 1)` for each coin ≤ i.
 
 **Step 3 → Base case:** `dp[0] = 0`.
 
@@ -2468,7 +2468,7 @@ public int coinChange(int[] coins, int amount) {
 
 **Step 5 → Test:** `coins = [1, 2, 5], amount = 11`. dp[11] = min(dp[10]+1, dp[9]+1, dp[6]+1) = 3 (5+5+1).
 
-**Step 6 → Complexity:** O(amount Ã— n) time, O(amount) space.
+**Step 6 → Complexity:** O(amount × n) time, O(amount) space.
 
 ### Q85: How do I use the DSA bank solutions effectively?
 
@@ -2508,7 +2508,7 @@ Workflow:
 | **O(log n)** | Binary search, balanced BST | Q5 Find Minimum in Rotated Sorted Array |
 | **O(n)** | Single pass, two pointers | Q2 Best Time to Buy and Sell Stock |
 | **O(n log n)** | Sorting, divide & conquer, heap ops | Q3 Product of Array Except Self (no sort → but merge sort for Q58) |
-| **O(nÂ²)** | Nested loops, DP over pairs | Q6 Container With Most Water (surprisingly O(n)!) |
+| **O(n²)** | Nested loops, DP over pairs | Q6 Container With Most Water (surprisingly O(n)!) |
 
 Java example showing the difference:
 
@@ -2525,11 +2525,11 @@ int sum(int[] arr) { int s = 0; for (int x : arr) s += x; return s; }
 // O(n log n) → sort + scan
 int closestPair(int[] arr) { Arrays.sort(arr); /* O(n log n) */ ... }
 
-// O(nÂ²) → nested loops
+// O(n²) → nested loops
 boolean hasDuplicate(int[] arr) { for (int i = 0; i < n; i++) for (int j = i+1; j < n; j++) if (arr[i] == arr[j]) return true; return false; }
 ```
 
-Train your eye: Any loop over n inside another loop over n is O(nÂ²). Any loop that halves each iteration is O(log n).
+Train your eye: Any loop over n inside another loop over n is O(n²). Any loop that halves each iteration is O(log n).
 
 ### Q87: How do I evaluate space-time tradeoffs with DP memoization?
 
@@ -2573,7 +2573,7 @@ public boolean wordBreak(String s, List<String> wordDict) {
 }
 ```
 
-Tradeoff: Memoization uses O(2â¿) stack space worst-case, tabulation uses O(n) array. But memoization only computes reachable states → better when the state space is sparse. For interviews, start with memoization (easier to write correctly) then optimize to tabulation.
+Tradeoff: Memoization uses O(2ⁿ) stack space worst-case, tabulation uses O(n) array. But memoization only computes reachable states → better when the state space is sparse. For interviews, start with memoization (easier to write correctly) then optimize to tabulation.
 
 ### Q88: How do I learn SQL from the SQL problem bank?
 
@@ -2833,9 +2833,9 @@ From the OS chapter (`07-operating-systems.md`), CPU scheduling questions requir
 DSA theory (from `10-data-structures-algorithms.md`) asks for recurrence solutions via Master Theorem, not code:
 
 ```
-T(n) = aÂ·T(n/b) + f(n)
-Case 1: f(n) = O(n^{log_b a - Îµ}) → T(n) = Î˜(n^{log_b a})
-Case 2: f(n) = Î˜(n^{log_b a}Â·log^k n) → T(n) = Î˜(n^{log_b a}Â·log^{k+1} n)
+T(n) = a·T(n/b) + f(n)
+Case 1: f(n) = O(n^{log_b a - ε}) → T(n) = Θ(n^{log_b a})
+Case 2: f(n) = Θ(n^{log_b a}·log^k n) → T(n) = Θ(n^{log_b a}·log^{k+1} n)
 ```
 
 You don't code this in GATE → you apply it to find the complexity class. Study accordingly.
@@ -2849,12 +2849,12 @@ From the OS chapter (`07-operating-systems.md:25-47`), the formula cheat sheet f
 
 | Metric | Formula |
 |--------|---------|
-| Turnaround Time (TAT) | Completion Time â€“ Arrival Time |
-| Waiting Time (WT) | Turnaround Time â€“ Burst Time |
-| Response Time (RT) | First Response Time â€“ Arrival Time |
-| Avg TAT | Î£ TAT / n |
-| Avg WT | Î£ WT / n |
-| CPU Utilization | (Total CPU time) / (Total elapsed time) Ã— 100% |
+| Turnaround Time (TAT) | Completion Time – Arrival Time |
+| Waiting Time (WT) | Turnaround Time – Burst Time |
+| Response Time (RT) | First Response Time – Arrival Time |
+| Avg TAT | Σ TAT / n |
+| Avg WT | Σ WT / n |
+| CPU Utilization | (Total CPU time) / (Total elapsed time) × 100% |
 
 From the DBMS chapter (`08-database-management-systems.md:30-39`), the normal forms summary:
 
@@ -2992,8 +2992,8 @@ The GATE DSA chapter (`10-data-structures-algorithms.md`) already includes Maste
 
 ```
 Common recurrence: T(n) = 2T(n/2) + n → Merge Sort → O(n log n)
-Common recurrence: T(n) = T(n-1) + n → Selection Sort → O(nÂ²)
-Common recurrence: T(n) = 2T(n-1) + 1 → Tower of Hanoi → O(2â¿)
+Common recurrence: T(n) = T(n-1) + n → Selection Sort → O(n²)
+Common recurrence: T(n) = 2T(n-1) + 1 → Tower of Hanoi → O(2ⁿ)
 ```
 
 Study approach: Solve the math PYQs first. They follow predictable patterns. Only then study theory in depth.
@@ -3182,7 +3182,7 @@ This analysis reveals which sections to re-study and which to skip. Don't waste 
 
 **Days 21-30 → Speed + revision:**
 - Days 21-25: Mock #19-22 (alternate days), review every night
-- Days 26-27: Cheat sheet-only revision (8 chapters Ã— 30 min each)
+- Days 26-27: Cheat sheet-only revision (8 chapters × 30 min each)
 - Days 28-29: Re-solve all previously wrong PYQs
 - Day 30: Rest + mental rehearsal → visualize exam day
 
@@ -3749,7 +3749,7 @@ The 27 courses are not just for interviews. They form a complete CS education pa
 ```java
 // Example contribution: adding a Q126 to the DSA bank
 // Problem: Design a Task Scheduler with priority, dependencies, and concurrency
-// Companies: Google Â· Amazon Â· Microsoft
+// Companies: Google · Amazon · Microsoft
 public class TaskScheduler {
     // Your contribution here → complete with main() and complexity analysis
 }

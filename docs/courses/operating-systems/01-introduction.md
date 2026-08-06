@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Operating Systems
+# Chapter 1: Introduction to Operating Systems
 
 [**Next: Processes**](./02-processes.md) >>
 
@@ -44,14 +44,14 @@ An **operating system** is the building manager of a computer. It:
 - **Handles conflicts** like a manager resolves two tenants requesting the same conference room
 - **Provides services** (file storage, printing, networking) like a manager provides mail service, parking, and janitorial services
 
-Without an OS, every programmer would need to write their own device drivers, memory managers, and schedulers â†’ the equivalent of every office tenant installing their own plumbing and electrical wiring. The OS is what makes general-purpose computing practical.
+Without an OS, every programmer would need to write their own device drivers, memory managers, and schedulers → the equivalent of every office tenant installing their own plumbing and electrical wiring. The OS is what makes general-purpose computing practical.
 
 ## Chapter at a Glance
 
 | Topic | Key Points |
 |-------|------------|
 | **What is an OS?** | Resource allocator, control program, intermediary between hardware and users |
-| **OS History** | Batch â†’ Multiprogramming â†’ Time-sharing â†’ Personal â†’ Modern/Cloud |
+| **OS History** | Batch → Multiprogramming → Time-sharing → Personal → Modern/Cloud |
 | **OS Types** | Batch, time-sharing, distributed, real-time (hard/soft), embedded |
 | **System Calls** | Interface for user programs to request kernel services; switch from user to kernel mode |
 | **OS Structures** | Monolithic (Linux), microkernel (MINIX), layered (THE), modular/hybrid (Windows NT) |
@@ -83,10 +83,10 @@ An **operating system** is system software that acts as an intermediary between 
 
 #### Core Responsibilities
 
-1. **Resource Allocation** â†’ Decide which process gets the CPU, how much memory each process can use, and how disk and I/O devices are shared
-2. **Control Program** â†’ Prevent user programs from making errors or using the computer improperly
-3. **Kernel** â†’ The core component that remains in memory and provides the most essential services (scheduling, memory management, IPC)
-4. **System Interface** â†’ Provide APIs (system calls) that applications use to request services without needing to know hardware details
+1. **Resource Allocation** → Decide which process gets the CPU, how much memory each process can use, and how disk and I/O devices are shared
+2. **Control Program** → Prevent user programs from making errors or using the computer improperly
+3. **Kernel** → The core component that remains in memory and provides the most essential services (scheduling, memory management, IPC)
+4. **System Interface** → Provide APIs (system calls) that applications use to request services without needing to know hardware details
 
 #### Pseudocode: OS Bootstrap and Initialization
 
@@ -266,10 +266,10 @@ if __name__ == "__main__":
 
 #### Edge Cases in OS Initialization
 
-1. **Bootloader corruption** â†’ If the bootloader's checksum fails, the system cannot load the kernel. Solution: redundant boot sectors or recovery partition.
-2. **Insufficient memory during kernel load** â†’ If the kernel image exceeds available memory on embedded devices, the system panics. Solution: compressed kernel images (zImage, bzImage).
-3. **Device initialization failure** â†’ A faulty driver during init can hang the boot process. Solution: fallback to safe mode or minimal driver set.
-4. **Interrupt vector conflict** â†’ Two devices claiming the same IRQ (legacy systems). Solution: shared IRQ handling or IOAPIC re-routing.
+1. **Bootloader corruption** → If the bootloader's checksum fails, the system cannot load the kernel. Solution: redundant boot sectors or recovery partition.
+2. **Insufficient memory during kernel load** → If the kernel image exceeds available memory on embedded devices, the system panics. Solution: compressed kernel images (zImage, bzImage).
+3. **Device initialization failure** → A faulty driver during init can hang the boot process. Solution: fallback to safe mode or minimal driver set.
+4. **Interrupt vector conflict** → Two devices claiming the same IRQ (legacy systems). Solution: shared IRQ handling or IOAPIC re-routing.
 
 ---
 
@@ -537,11 +537,11 @@ if __name__ == "__main__":
 
 #### Edge Cases in OS Functions
 
-1. **fork bomb** â†’ A process recursively creates copies of itself, exhausting the process table. Solution: per-user process limits (`ulimit -u`), PID rationing.
-2. **Memory fragmentation** â†’ After many allocations/deallocations, free memory is split into small non-contiguous chunks. Solution: compaction (copying collector) or virtual memory with paging.
-3. **Deadlock** â†’ Two processes each hold a resource the other needs, neither progresses. Solution: deadlock detection and recovery, or prevention via resource ordering.
-4. **Priority inversion** â†’ A low-priority process holds a lock needed by a high-priority process, while a medium-priority process preempts the low-priority one. Solution: priority inheritance protocol.
-5. **Thrashing** â†’ The system spends more time swapping pages than executing processes. Solution: adjust degree of multiprogramming, use working set model.
+1. **fork bomb** → A process recursively creates copies of itself, exhausting the process table. Solution: per-user process limits (`ulimit -u`), PID rationing.
+2. **Memory fragmentation** → After many allocations/deallocations, free memory is split into small non-contiguous chunks. Solution: compaction (copying collector) or virtual memory with paging.
+3. **Deadlock** → Two processes each hold a resource the other needs, neither progresses. Solution: deadlock detection and recovery, or prevention via resource ordering.
+4. **Priority inversion** → A low-priority process holds a lock needed by a high-priority process, while a medium-priority process preempts the low-priority one. Solution: priority inheritance protocol.
+5. **Thrashing** → The system spends more time swapping pages than executing processes. Solution: adjust degree of multiprogramming, use working set model.
 
 ---
 
@@ -558,7 +558,7 @@ Batch systems collected jobs (programs + data) into batches. A resident monitor 
 
 Multiprogramming improved CPU utilization by keeping multiple jobs in memory simultaneously. While one job waited for I/O, the CPU switched to another. This required interrupt hardware and memory protection.
 
-IBM's OS/360 (1964) was a landmark multiprogramming system â†’ and also famously one of the most complex software projects ever attempted (Fred Brooks wrote _The Mythical Man-Month_ about it).
+IBM's OS/360 (1964) was a landmark multiprogramming system → and also famously one of the most complex software projects ever attempted (Fred Brooks wrote _The Mythical Man-Month_ about it).
 
 #### Phase 3: Time-Sharing (1970s)
 
@@ -568,7 +568,7 @@ CTSS (MIT, 1961) and Multics (MIT/Bell Labs/GE, 1965) pioneered time-sharing. Un
 
 #### Phase 4: Personal Computing (1980s)
 
-Microprocessors made personal computers viable. CP/M, MS-DOS (Microsoft, 1981), and early Mac OS (1984) brought OS to desktops. These were simpler â†’ single-user, single-task â†’ but introduced graphical user interfaces (GUIs) to the mainstream.
+Microprocessors made personal computers viable. CP/M, MS-DOS (Microsoft, 1981), and early Mac OS (1984) brought OS to desktops. These were simpler → single-user, single-task → but introduced graphical user interfaces (GUIs) to the mainstream.
 
 #### Phase 5: Modern Era (1990s-Present)
 
@@ -579,7 +579,7 @@ Linux (Linus Torvalds, 1991) brought Unix-like power to PCs as free software. Wi
 ### Types of Operating Systems
 
 
-**Analogy:** OS types are like **vehicle types**. A batch OS is a cargo ship (load once, process, unload â†’ no interaction mid-voyage). A time-sharing OS is a city bus (many passengers share the ride, each gets a turn). A real-time OS is an ambulance (must reach destination within a guaranteed time). A distributed OS is a fleet of delivery trucks (coordinated to appear as one system). An embedded OS is a car's ECU (single-purpose, resource-constrained).
+**Analogy:** OS types are like **vehicle types**. A batch OS is a cargo ship (load once, process, unload → no interaction mid-voyage). A time-sharing OS is a city bus (many passengers share the ride, each gets a turn). A real-time OS is an ambulance (must reach destination within a guaranteed time). A distributed OS is a fleet of delivery trucks (coordinated to appear as one system). An embedded OS is a car's ECU (single-purpose, resource-constrained).
 
 #### Comparison Table
 
@@ -598,7 +598,7 @@ Linux (Linus Torvalds, 1991) brought Unix-like power to PCs as free software. Wi
 
 Jobs with similar needs are grouped into batches and executed sequentially without user interaction.
 
-- **Analogy:** A laundromat â†’ you drop off clothes, they wash everything in batches, and you pick them up later. No interaction during the cycle.
+- **Analogy:** A laundromat → you drop off clothes, they wash everything in batches, and you pick them up later. No interaction during the cycle.
 - **Advantage:** Efficient for high-volume repetitive jobs (payroll processing, bill generation).
 - **Disadvantage:** Poor turnaround time, difficult to debug, starvation possible for short jobs.
 - **Example:** IBM OS/360, early mainframe operating systems.
@@ -607,7 +607,7 @@ Jobs with similar needs are grouped into batches and executed sequentially witho
 
 The CPU time is divided into small slices (time quanta) and distributed among multiple users/applications. The rapid switching gives each user the illusion of a dedicated machine.
 
-- **Analogy:** A professor holding office hours â†’ each student gets 5 minutes, the professor rotates through all students in the queue. Each student feels they have the professor's attention.
+- **Analogy:** A professor holding office hours → each student gets 5 minutes, the professor rotates through all students in the queue. Each student feels they have the professor's attention.
 - **Advantage:** Interactive response, fair CPU distribution, good for general-purpose computing.
 - **Disadvantage:** Overhead from frequent context switches, response degrades under heavy load.
 - **Example:** Unix, Linux, Windows, macOS.
@@ -626,15 +626,15 @@ Guarantees that critical tasks complete within a strict time bound. Two subtypes
 
 Manages a group of independent computers connected by a network, making them appear as a single computer to the user.
 
-- **Analogy:** A **chain of bank branches** â†’ you can deposit money at any branch and withdraw at any other branch. The network of branches appears as one bank.
+- **Analogy:** A **chain of bank branches** → you can deposit money at any branch and withdraw at any other branch. The network of branches appears as one bank.
 - **Challenge:** Synchronization, fault tolerance, transparency, network latency.
 - **Example:** Amoeba, Sprite, Plan 9, Google's Fuchsia.
 
 #### 5. Embedded OS
 
-Designed for devices with limited resources â†’ sensors, smart appliances, IoT devices, wearables. Often runs from ROM, has minimal footprint, and serves a single purpose.
+Designed for devices with limited resources → sensors, smart appliances, IoT devices, wearables. Often runs from ROM, has minimal footprint, and serves a single purpose.
 
-- **Analogy:** A **microwave keypad** â†’ you press a button, it runs the timer and beeps. There's no need for a file system, multitasking, or user accounts.
+- **Analogy:** A **microwave keypad** → you press a button, it runs the timer and beeps. There's no need for a file system, multitasking, or user accounts.
 - **Example:** Embedded Linux, Windows IoT, TinyOS, FreeRTOS.
 
 
@@ -643,7 +643,7 @@ Designed for devices with limited resources â†’ sensors, smart appliances, 
 ### System Calls
 
 
-**Analogy:** A system call is like **ordering food at a restaurant**. You (the user program) sit at the table and look at the menu (API). You tell the waiter (the standard library) what you want. The waiter goes to the kitchen (kernel) through the kitchen door (the trap instruction), where the chef (kernel service routine) prepares your order. The waiter brings it back to your table (returns to user mode). You never enter the kitchen yourself â†’ that would violate the health code (security restriction).
+**Analogy:** A system call is like **ordering food at a restaurant**. You (the user program) sit at the table and look at the menu (API). You tell the waiter (the standard library) what you want. The waiter goes to the kitchen (kernel) through the kitchen door (the trap instruction), where the chef (kernel service routine) prepares your order. The waiter brings it back to your table (returns to user mode). You never enter the kitchen yourself → that would violate the health code (security restriction).
 
 #### What is a System Call?
 
@@ -661,14 +661,14 @@ A **system call** is a programmatic way for a user-space program to request a se
 
 #### System Call Flow (Step-by-Step)
 
-1. **User program calls API** â†’ e.g., `printf("Hello")` invokes the C library function
-2. **libc prepares the call** â†’ Arguments are placed in CPU registers (or on the stack)
-3. **Trap instruction executes** â†’ `syscall` (x86-64) or `int 0x80` (x86) switches to kernel mode
-4. **CPU saves context** â†’ Program counter, stack pointer, and flags are saved to the kernel stack
-5. **System call handler runs** â†’ The kernel uses the syscall number to index into a dispatch table
-6. **Service routine executes** â†’ The specific kernel function performs the requested operation
-7. **Result returned** â†’ The kernel places the return value in a register (or memory)
-8. **Return from trap** â†’ CPU switches back to user mode, restores context, execution continues
+1. **User program calls API** → e.g., `printf("Hello")` invokes the C library function
+2. **libc prepares the call** → Arguments are placed in CPU registers (or on the stack)
+3. **Trap instruction executes** → `syscall` (x86-64) or `int 0x80` (x86) switches to kernel mode
+4. **CPU saves context** → Program counter, stack pointer, and flags are saved to the kernel stack
+5. **System call handler runs** → The kernel uses the syscall number to index into a dispatch table
+6. **Service routine executes** → The specific kernel function performs the requested operation
+7. **Result returned** → The kernel places the return value in a register (or memory)
+8. **Return from trap** → CPU switches back to user mode, restores context, execution continues
 
 #### Dry Run Trace: `read(fd, buf, 1024)` System Call
 
@@ -861,11 +861,11 @@ Most programs use an **API** rather than invoking system calls directly. The C s
 
 #### Edge Cases in System Calls
 
-1. **Interrupted system call** â†’ A syscall like `read()` is interrupted by a signal. The kernel may return `-EINTR`. Solution: manually restart the syscall with a loop: `while ((n = read(...)) == -1 && errno == EINTR);`.
-2. **Failed argument validation** â†’ User passes an invalid pointer. The kernel detects this during `copy_from_user()` and returns `-EFAULT`. The process receives `SIGSEGV` if it uses the result without checking.
-3. **Resource exhaustion** â†’ `fork()` cannot allocate a new PID or memory. Returns `-EAGAIN` or `-ENOMEM`.
-4. **Syscall during signal handler** â†’ A syscall in progress may return `-EINTR` if a signal handler is invoked. The programmer must restart.
-5. **File descriptor exhaustion** â†’ Opening too many files returns `-EMFILE` (per-process) or `-ENFILE` (system-wide). `ulimit -n` controls the per-process limit.
+1. **Interrupted system call** → A syscall like `read()` is interrupted by a signal. The kernel may return `-EINTR`. Solution: manually restart the syscall with a loop: `while ((n = read(...)) == -1 && errno == EINTR);`.
+2. **Failed argument validation** → User passes an invalid pointer. The kernel detects this during `copy_from_user()` and returns `-EFAULT`. The process receives `SIGSEGV` if it uses the result without checking.
+3. **Resource exhaustion** → `fork()` cannot allocate a new PID or memory. Returns `-EAGAIN` or `-ENOMEM`.
+4. **Syscall during signal handler** → A syscall in progress may return `-EINTR` if a signal handler is invoked. The programmer must restart.
+5. **File descriptor exhaustion** → Opening too many files returns `-EMFILE` (per-process) or `-ENFILE` (system-wide). `ulimit -n` controls the per-process limit.
 
 ---
 
@@ -873,10 +873,10 @@ Most programs use an **API** rather than invoking system calls directly. The C s
 
 
 **Analogy:** OS structures are like **building architectures**:
-- **Monolithic** = A single-room warehouse â†’ everything is together, fast to move around, but a fire in any area destroys everything
-- **Microkernel** = A campus of small buildings â†’ each function is isolated, a fire in one doesn't spread, but moving between buildings takes time
-- **Layered** = A multi-story building â†’ each floor depends on the floor below, clear hierarchy, but adding a new feature may require modifying multiple floors
-- **Modular/Hybrid** = A modern office with pluggable wall panels â†’ core structure is fixed, but rooms can be reconfigured by swapping panels
+- **Monolithic** = A single-room warehouse → everything is together, fast to move around, but a fire in any area destroys everything
+- **Microkernel** = A campus of small buildings → each function is isolated, a fire in one doesn't spread, but moving between buildings takes time
+- **Layered** = A multi-story building → each floor depends on the floor below, clear hierarchy, but adding a new feature may require modifying multiple floors
+- **Modular/Hybrid** = A modern office with pluggable wall panels → core structure is fixed, but rooms can be reconfigured by swapping panels
 
 
 #### 1. Monolithic Kernel
@@ -1284,7 +1284,7 @@ class OSSimulator {
     // Simulate POST checks
     const postOk = Math.random() > 0.1;
     if (!postOk) {
-      log.push('ERROR: POST failed â€” beep code sequence emitted');
+      log.push('ERROR: POST failed — beep code sequence emitted');
       return log;
     }
     log.push('   CPU: OK, RAM: 4096 MB, Disk: 256 GB');
@@ -1305,7 +1305,7 @@ class OSSimulator {
     log.push('11. init process (PID 1) spawned');
     
     this.currentMode = 'user';
-    log.push('12. Switching to user mode â€” system ready');
+    log.push('12. Switching to user mode — system ready');
     log.push(`    Kernel loaded: ${this.kernelLoaded}, Mode: ${this.currentMode}`);
     return log;
   }
@@ -1315,8 +1315,8 @@ class OSSimulator {
     log.push(`[${this.currentMode} mode] syscall(${syscallNum}) invoked`);
     
     if (this.currentMode === 'user') {
-      log.push('   â†’ Trap instruction (int 0x80 / syscall)');
-      log.push('   â†’ CPU switches to Ring 0 (kernel mode)');
+      log.push('   → Trap instruction (int 0x80 / syscall)');
+      log.push('   → CPU switches to Ring 0 (kernel mode)');
       this.currentMode = 'kernel';
     }
 
@@ -1330,14 +1330,14 @@ class OSSimulator {
     };
 
     if (syscallNum in syscalls) {
-      log.push(`   â†’ Kernel dispatches sys_${syscalls[syscallNum]}()`);
-      log.push(`   â†’ Arguments: [${args.join(', ')}]`);
-      log.push('   â†’ Operation performed in kernel space');
+      log.push(`   → Kernel dispatches sys_${syscalls[syscallNum]}()`);
+      log.push(`   → Arguments: [${args.join(', ')}]`);
+      log.push('   → Operation performed in kernel space');
     } else {
-      log.push(`   â†’ Unknown syscall ${syscallNum} â€” returns -ENOSYS`);
+      log.push(`   → Unknown syscall ${syscallNum} — returns -ENOSYS`);
     }
 
-    log.push('   â†’ sysretq / iretd â€” back to user mode');
+    log.push('   → sysretq / iretd — back to user mode');
     this.currentMode = 'user';
     
     return log.join('\n');
@@ -1388,9 +1388,9 @@ Many developers confuse library functions with system calls. The following table
 | **Address space** | User space (library code) | Kernel space |
 | **Privilege level** | Ring 3 (user mode) | Ring 0 (kernel mode) |
 | **Performance** | Fast (~5-50 ns) | Slower (~100-500 ns) |
-| **Context switch** | No mode switch | Userâ†’kernel mode switch |
+| **Context switch** | No mode switch | User→kernel mode switch |
 | **Portability** | Portable across OS variations | OS-specific syscall numbers |
-| **Example flow** | `printf()` â†’ formats string â†’ calls `write()` | `write()` â†’ enters kernel â†’ VFSâ†’driverâ†’hardware |
+| **Example flow** | `printf()` → formats string → calls `write()` | `write()` → enters kernel → VFS→driver→hardware |
 
 ### Additional Chapter Quiz Questions
 
@@ -1438,7 +1438,7 @@ Many developers confuse library functions with system calls. The following table
 
 #### Advanced
 17. Implement a simple shell that demonstrates the relationship between library calls and system calls. When the user types `ls`, the shell should trace which library functions are called (via `printf`, `readdir`, etc.) and which syscalls they ultimately trigger.
-18. Write a minimal OS boot simulator in TypeScript that models the x86 boot sequence: BIOS POST â†’ bootloader â†’ kernel decompression â†’ init process â†’ shell prompt.
+18. Write a minimal OS boot simulator in TypeScript that models the x86 boot sequence: BIOS POST → bootloader → kernel decompression → init process → shell prompt.
 
 ## Cross-Application Matrix
 

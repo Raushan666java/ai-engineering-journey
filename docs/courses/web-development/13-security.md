@@ -1,4 +1,4 @@
-﻿# Chapter 13: Web Security
+# Chapter 13: Web Security
 
 > **Previous:** [12-deployment](./12-deployment.md) | **Next:** [14-typescript](./14-typescript.md)
 
@@ -29,17 +29,17 @@ By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance
 
-> **One-Sentence Takeaway:** XSS is prevented by escaping output â€” use `textContent`, React's auto-escaping, and DOMPurify for sanitized HTML.
+> **One-Sentence Takeaway:** XSS is prevented by escaping output — use `textContent`, React's auto-escaping, and DOMPurify for sanitized HTML.
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-|OWASP Top 10|The 10 most critical web application security risks|Know all 10 â€” they form the baseline for any security review or penetration test|
-|SQL Injection|Injecting SQL through unsanitized user input|Always use parameterized queries or ORMs â€” never concatenate user input into SQL strings|
+|OWASP Top 10|The 10 most critical web application security risks|Know all 10 — they form the baseline for any security review or penetration test|
+|SQL Injection|Injecting SQL through unsanitized user input|Always use parameterized queries or ORMs — never concatenate user input into SQL strings|
 |XSS|Injecting scripts through unsanitized user content|Use `textContent` instead of `innerHTML`, libraries auto-escape, sanitize with DOMPurify when needed|
 |CSRF|Cross-site request forgery exploits authenticated sessions|Use SameSite cookies (Strict), CSRF tokens, and check Origin/Referer headers|
 |Security Headers|CSP, HSTS, CORS, X-Frame-Options protect against various attacks|Use Helmet middleware to set security headers with sensible defaults|
 |Rate Limiting|Prevents brute-force and denial-of-service attacks|Apply stricter limits on auth endpoints, use skipSuccessfulRequests for login rate limiting|
-|Input Validation|Zod schemas validate data shape, type, and constraints at every boundary|Validate on the server even if you validate on the client â€” never trust the client|
+|Input Validation|Zod schemas validate data shape, type, and constraints at every boundary|Validate on the server even if you validate on the client — never trust the client|
 
 ## Chapter Roadmap
 
@@ -454,8 +454,8 @@ jobs:
 // Commit package-lock.json and verify CI uses npm ci
 
 // 3. Minimize dependencies
-import defaultImport from "lodash"; // BAD â€” imports entire library (500KB+)
-import debounce from "lodash/debounce"; // GOOD â€” imports only what's needed
+import defaultImport from "lodash"; // BAD — imports entire library (500KB+)
+import debounce from "lodash/debounce"; // GOOD — imports only what's needed
 
 // 4. Validate package provenance with npm attestations
 npm publish --provenance
@@ -542,7 +542,7 @@ async function safeFetch(url: string) {
 > Run `npx zap-full-scan.py -t https://your-site.com` for an automated OWASP ZAP security scan that catches many common vulnerabilities before production.
 
 > [!WARNING]
-> Client-side validation is for UX only â€” it provides zero security. An attacker can bypass browser validation trivially. Always validate on the server.
+> Client-side validation is for UX only — it provides zero security. An attacker can bypass browser validation trivially. Always validate on the server.
 
 > [!REMEMBER]
 > Helmet is a security headers collection, not a comprehensive security solution. It sets 15+ HTTP headers with sensible defaults but does not prevent SQL injection, XSS from unsafe code, or authentication flaws.
@@ -554,7 +554,7 @@ async function safeFetch(url: string) {
 | Concept | Description | Use Case |
 |---------|-------------|---------|
 |XSS vs CSRF|Injects scripts via untrusted content|Tricks browser into making authenticated requests|
-|`textContent` vs `innerHTML`|Safe â€” escapes HTML entities|Dangerous â€” interprets HTML including scripts|
+|`textContent` vs `innerHTML`|Safe — escapes HTML entities|Dangerous — interprets HTML including scripts|
 |`helmet()` vs manual headers|15+ headers with sensible defaults|Manual control for specific header values|
 |CORS `origin` vs `credentials`|Controls which origins can access|Controls whether cookies/auth headers are sent|
 |Zod `parse()` vs `safeParse()`|Throws on validation failure|Returns result object, no throw|
@@ -906,8 +906,8 @@ Perform a security audit of a web application covering OWASP Top 10, using autom
 ### Practical Takeaways
 
 
-1. **Defense in depth** â€” never rely on a single security control. Combine CSP, CORS, rate limiting, input validation, and authentication together.
-2. **Validate server-side always** â€” client validation is UX only. Every API endpoint must re-validate inputs regardless of frontend checks.
-3. **Use Helmet for baseline security** â€” it sets 15+ security headers with sensible defaults in a single middleware call.
-4. **Rate limit by endpoint sensitivity** â€” auth endpoints get strict limits (5/15min), public API gets moderate limits, internal endpoints get generous limits.
-5. **Log security events** â€” failed logins, unauthorized access attempts, and permission denials must be logged with enough context for investigation.
+1. **Defense in depth** — never rely on a single security control. Combine CSP, CORS, rate limiting, input validation, and authentication together.
+2. **Validate server-side always** — client validation is UX only. Every API endpoint must re-validate inputs regardless of frontend checks.
+3. **Use Helmet for baseline security** — it sets 15+ security headers with sensible defaults in a single middleware call.
+4. **Rate limit by endpoint sensitivity** — auth endpoints get strict limits (5/15min), public API gets moderate limits, internal endpoints get generous limits.
+5. **Log security events** — failed logins, unauthorized access attempts, and permission denials must be logged with enough context for investigation.

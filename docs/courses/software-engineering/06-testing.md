@@ -1,18 +1,18 @@
-﻿# Software Testing
+# Software Testing
 
 ## Learning Objectives
 
 ```
-âœ“ Distinguish between verification and validation in the V&V context
-âœ“ Describe the four levels of testing: unit, integration, system, acceptance
-âœ“ Apply white-box testing techniques: statement, branch, path, condition, MC/DC coverage
-âœ“ Apply black-box testing techniques: equivalence partitioning, boundary value analysis, decision tables, state transition
-âœ“ Execute the TDD red-green-refactor cycle with a worked TypeScript example
-âœ“ Understand the test pyramid and its strategic trade-offs
-âœ“ Create and use test doubles: dummy, fake, stub, spy, mock
-âœ“ Understand property-based testing and mutation testing concepts
-âœ“ Apply BDD principles with user-story-driven test scenarios
-âœ“ Design a CI/CD test pipeline with quality gates
+✓ Distinguish between verification and validation in the V&V context
+✓ Describe the four levels of testing: unit, integration, system, acceptance
+✓ Apply white-box testing techniques: statement, branch, path, condition, MC/DC coverage
+✓ Apply black-box testing techniques: equivalence partitioning, boundary value analysis, decision tables, state transition
+✓ Execute the TDD red-green-refactor cycle with a worked TypeScript example
+✓ Understand the test pyramid and its strategic trade-offs
+✓ Create and use test doubles: dummy, fake, stub, spy, mock
+✓ Understand property-based testing and mutation testing concepts
+✓ Apply BDD principles with user-story-driven test scenarios
+✓ Design a CI/CD test pipeline with quality gates
 ```
 
 <!-- Image Gallery -->
@@ -61,8 +61,8 @@ graph TD
     D --> SYS[System Testing]:::v
 ```
 
-- **Verification:** "Are we building the product right?" â€” checks conformance to specification through static (reviews, inspections) and dynamic (testing) methods.
-- **Validation:** "Are we building the right product?" â€” checks that the system meets actual customer needs through acceptance testing, prototyping, and user feedback.
+- **Verification:** "Are we building the product right?" — checks conformance to specification through static (reviews, inspections) and dynamic (testing) methods.
+- **Validation:** "Are we building the right product?" — checks that the system meets actual customer needs through acceptance testing, prototyping, and user feedback.
 
 ### The Test Pyramid
 
@@ -75,9 +75,9 @@ graph TD
     classDef unit fill:#e8f5e9,stroke:#2e7d32
 
     subgraph "Test Automation Pyramid"
-        E2E[End-to-End Tests<br>5-10% Â· Slow Â· High Confidence]:::e2e
-        SVC[Service / Integration Tests<br>15-20% Â· Medium Â· Medium Confidence]:::svc
-        UNIT[Unit Tests<br>70-80% Â· Fast Â· Low Confidence]:::unit
+        E2E[End-to-End Tests<br>5-10% · Slow · High Confidence]:::e2e
+        SVC[Service / Integration Tests<br>15-20% · Medium · Medium Confidence]:::svc
+        UNIT[Unit Tests<br>70-80% · Fast · Low Confidence]:::unit
     end
     
     E2E --> SVC
@@ -118,10 +118,10 @@ graph LR
 **Unit testing** verifies individual components in isolation. Tested by developers using frameworks like Bun test, Jest, or Vitest. Each test focuses on a single function, method, or class with all external dependencies replaced by test doubles.
 
 **Integration testing** verifies that units work together. Strategies include:
-- **Big bang:** All components combined at once â€” simple setup but hard to isolate failures
-- **Top-down:** High-level components tested first, lower-level components stubbed â€” reveals architectural issues early
-- **Bottom-up:** Low-level components tested with drivers â€” ensures foundation is solid
-- **Sandwich:** Combination of top-down and bottom-up â€” balanced approach
+- **Big bang:** All components combined at once — simple setup but hard to isolate failures
+- **Top-down:** High-level components tested first, lower-level components stubbed — reveals architectural issues early
+- **Bottom-up:** Low-level components tested with drivers — ensures foundation is solid
+- **Sandwich:** Combination of top-down and bottom-up — balanced approach
 
 **System testing** verifies the complete system against requirements. Includes functional, performance, security, and usability testing on the fully integrated system.
 
@@ -153,7 +153,7 @@ graph TD
 | **Condition coverage** | Each atomic condition evaluated to T and F | Moderate | Useful for complex conditions |
 | **MC/DC** | Each condition independently affects outcome | Very strong | Required for DO-178C (aviation) |
 
-**Example â€” White-box test analysis:**
+**Example — White-box test analysis:**
 
 ```typescript
 function calculateDiscount(price: number, isMember: boolean, couponCode?: string): number {
@@ -177,9 +177,9 @@ function calculateDiscount(price: number, isMember: boolean, couponCode?: string
 }
 
 // Test cases for 100% branch coverage:
-// TC1: price=50, isMember=true, couponCode='SAVE20' â†’ branches: A-T, B-T, C-F
-// TC2: price=50, isMember=false, couponCode=undefined â†’ branches: A-F, B-F, C-F
-// TC3: price=200, isMember=false, couponCode=undefined â†’ branches: A-F, B-F, C-T
+// TC1: price=50, isMember=true, couponCode='SAVE20' → branches: A-T, B-T, C-F
+// TC2: price=50, isMember=false, couponCode=undefined → branches: A-F, B-F, C-F
+// TC3: price=200, isMember=false, couponCode=undefined → branches: A-F, B-F, C-T
 ```
 
 ### Black-Box Testing Techniques
@@ -208,9 +208,9 @@ function validateAge(age: number): boolean {
 | Conditions | Rule 1 | Rule 2 | Rule 3 | Rule 4 | Rule 5 | Rule 6 |
 |------------|--------|--------|--------|--------|--------|--------|
 | Valid account? | T | T | T | T | F | F |
-| Account locked? | F | F | T | T | â€” | â€” |
-| Password correct? | T | F | T | F | â€” | â€” |
-| Under max attempts? | T | T | F | F | â€” | â€” |
+| Account locked? | F | F | T | T | — | — |
+| Password correct? | T | F | T | F | — | — |
+| Under max attempts? | T | T | F | F | — | — |
 | **Actions** | | | | | | |
 | Allow login | X | | | | | |
 | Show error | | X | X | X | X | X |
@@ -604,7 +604,7 @@ graph LR
 
 ## Case Studies
 
-### Case Study 1: Payment Processing System â€” Testing Strategy
+### Case Study 1: Payment Processing System — Testing Strategy
 
 A fintech startup building a payment processing system needed to ensure 99.99% reliability. They implemented a comprehensive test strategy:
 
@@ -618,7 +618,7 @@ A fintech startup building a payment processing system needed to ensure 99.99% r
 
 **Result:** Zero production incidents in 18 months. Deployment frequency increased from weekly to multiple times per day.
 
-### Case Study 2: Medical Device Software â€” Regulatory Testing
+### Case Study 2: Medical Device Software — Regulatory Testing
 
 A company developing an MRI machine control system needed FDA clearance (IEC 62304). The testing approach:
 
@@ -630,7 +630,7 @@ A company developing an MRI machine control system needed FDA clearance (IEC 623
 
 **Result:** FDA clearance achieved in 14 months (industry average: 24+ months). Zero major findings during audit.
 
-### Case Study 3: E-Commerce Platform â€” Shift-Left Testing
+### Case Study 3: E-Commerce Platform — Shift-Left Testing
 
 A large e-commerce platform with 200+ microservices adopted shift-left testing to reduce production defects:
 
@@ -645,7 +645,7 @@ A large e-commerce platform with 200+ microservices adopted shift-left testing t
 ## Test Runner and Automation Tools
 
 ```typescript
-// Test Runner â€” Automated Test Executor with Reporting
+// Test Runner — Automated Test Executor with Reporting
 interface TestResult {
   name: string;
   passed: boolean;
@@ -676,7 +676,7 @@ class TestRunner {
         try {
           const result = await test();
           this.results.push(result);
-          const icon = result.passed ? 'âœ“' : 'âœ—';
+          const icon = result.passed ? '✓' : '✗';
           console.log(`  ${icon} ${result.name} (${result.durationMs}ms)`);
           if (!result.passed) {
             console.log(`    Error: ${result.error}`);
@@ -748,7 +748,7 @@ runner.register({
 // await runner.runAll();
 ```
 
-### Coverage Analyzer â€” Statement, Branch, Path Coverage
+### Coverage Analyzer — Statement, Branch, Path Coverage
 
 ```typescript
 interface CoverageResult {
@@ -799,26 +799,26 @@ class CoverageAnalyzer {
     const lines: string[] = [
       '=== Coverage Report ===',
       '',
-      'â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',
-      'â”‚ Metric                   â”‚ Value      â”‚',
-      'â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤',
-      `â”‚ Lines                    â”‚ ${lineCov.covered}/${lineCov.total} (${(lineCov.rate * 100).toFixed(1)}%) â”‚`,
-      `â”‚ Branches                 â”‚ ${branchCov.covered}/${branchCov.total} (${(branchCov.rate * 100).toFixed(1)}%) â”‚`,
-      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',
+      '┌──────────────────────────┬────────────┐',
+      '│ Metric                   │ Value      │',
+      '├──────────────────────────┼────────────┤',
+      `│ Lines                    │ ${lineCov.covered}/${lineCov.total} (${(lineCov.rate * 100).toFixed(1)}%) │`,
+      `│ Branches                 │ ${branchCov.covered}/${branchCov.total} (${(branchCov.rate * 100).toFixed(1)}%) │`,
+      '└──────────────────────────┴────────────┘',
     ];
 
     if (branchCov.uncoveredBranches.length > 0) {
       lines.push('', 'Uncovered Branches:');
       for (const b of branchCov.uncoveredBranches) {
-        lines.push(`  â†’ ${b}`);
+        lines.push(`  → ${b}`);
       }
     }
 
     lines.push('', 'Recommendations:');
-    if (lineCov.rate < 0.8) lines.push('  Â· Add tests to reach 80% line coverage (current: ' + (lineCov.rate * 100).toFixed(1) + '%)');
-    if (branchCov.rate < 0.7) lines.push('  Â· Add tests for uncovered branches to reach 70% branch coverage');
-    if (branchCov.rate < lineCov.rate) lines.push('  Â· Branch coverage is lower than line coverage â€” focus on decision coverage');
-    if (lineCov.rate > 0.95) lines.push('  Â· Line coverage is high â€” consider mutation testing to assess test quality');
+    if (lineCov.rate < 0.8) lines.push('  · Add tests to reach 80% line coverage (current: ' + (lineCov.rate * 100).toFixed(1) + '%)');
+    if (branchCov.rate < 0.7) lines.push('  · Add tests for uncovered branches to reach 70% branch coverage');
+    if (branchCov.rate < lineCov.rate) lines.push('  · Branch coverage is lower than line coverage — focus on decision coverage');
+    if (lineCov.rate > 0.95) lines.push('  · Line coverage is high — consider mutation testing to assess test quality');
 
     return lines.join('\n');
   }
@@ -843,7 +843,7 @@ const branches = [
 console.log(analyzer.generateReport(source, executed, branches));
 ```
 
-### TDD Workflow â€” Red-Green-Refactor Simulator
+### TDD Workflow — Red-Green-Refactor Simulator
 
 ```typescript
 interface TDDCycle {
@@ -904,7 +904,7 @@ class TDDWorkflow {
     const lines: string[] = ['=== TDD Workflow Report ==='];
     let totalTests = 0;
     for (const cycle of this.cycles) {
-      const icon = cycle.phase === 'red' ? 'ðŸ”´' : cycle.phase === 'green' ? 'ðŸŸ¢' : 'ðŸ”µ';
+      const icon = cycle.phase === 'red' ? '🔴' : cycle.phase === 'green' ? '🟢' : '🔵';
       lines.push(`  ${icon} ${cycle.phase.toUpperCase()}: ${cycle.description}`);
       lines.push(`     Tests: ${cycle.passingTests}/${cycle.testCount} passing | Code: ${cycle.codeLines} lines`);
       totalTests = cycle.testCount;
@@ -975,8 +975,8 @@ function checkPyramid(suite: TestSuite): { healthy: boolean; ratio: string; reco
   let recommendation = healthy
     ? "Pyramid is healthy"
     : suite.unit < suite.integration
-      ? "Too many integration tests â€” add more unit tests"
-      : "Too many E2E tests â€” shift down the pyramid";
+      ? "Too many integration tests — add more unit tests"
+      : "Too many E2E tests — shift down the pyramid";
   return { healthy, ratio: `${unitPct}:${intPct}:${e2ePct}`, recommendation };
 }
 
@@ -1030,8 +1030,8 @@ graph TD
         EXEC --> RESULTS[Test Results]:::result
         REPORT2 --> GATES{Quality Gates Met?}:::exec
         RESULTS --> GATES
-        GATES -->|Yes| PASS[âœ“ Build Passes]:::result
-        GATES -->|No| FAIL[âœ— Build Fails - Fix Issues]:::exec
+        GATES -->|Yes| PASS[✓ Build Passes]:::result
+        GATES -->|No| FAIL[✗ Build Fails - Fix Issues]:::exec
         
         FAIL --> ROOT[Root Cause Analysis]:::analysis
         ROOT --> FIX[Fix Code or Tests]:::source
@@ -1047,30 +1047,30 @@ White-box techniques (statement, branch, path, condition, MC/DC coverage) use kn
 
 ## Practical Takeaways
 
-1. **Write tests first (TDD)** â€” it forces you to think about design before implementation and ensures testable code from the start.
-2. **Follow the test pyramid** â€” invest most in fast, reliable unit tests (70-80%), fewer integration tests (15-20%), and minimal E2E tests (5-10%).
-3. **Test behaviours, not methods** â€” focus on what the code does from the user's perspective, not how it's structured internally.
-4. **Coverage is a hint, not a goal** â€” 100% coverage doesn't mean 100% correctness. Use mutation testing to assess test quality.
-5. **Use test doubles wisely** â€” mock external dependencies, but prefer real objects for core logic to avoid brittle tests.
-6. **A failing test is progress** â€” it means you've found a spec-to-implementation gap before production. Celebrate caught defects.
-7. **Boundary values find bugs** â€” most defects cluster at input boundaries. Always test boundaries, not just middle values.
-8. **CI pipeline gates protect quality** â€” enforce coverage thresholds, test pass rates, and linting rules before merge.
+1. **Write tests first (TDD)** — it forces you to think about design before implementation and ensures testable code from the start.
+2. **Follow the test pyramid** — invest most in fast, reliable unit tests (70-80%), fewer integration tests (15-20%), and minimal E2E tests (5-10%).
+3. **Test behaviours, not methods** — focus on what the code does from the user's perspective, not how it's structured internally.
+4. **Coverage is a hint, not a goal** — 100% coverage doesn't mean 100% correctness. Use mutation testing to assess test quality.
+5. **Use test doubles wisely** — mock external dependencies, but prefer real objects for core logic to avoid brittle tests.
+6. **A failing test is progress** — it means you've found a spec-to-implementation gap before production. Celebrate caught defects.
+7. **Boundary values find bugs** — most defects cluster at input boundaries. Always test boundaries, not just middle values.
+8. **CI pipeline gates protect quality** — enforce coverage thresholds, test pass rates, and linting rules before merge.
 
 ## Chapter Quiz
 
 | Question | Answer | Explanation |
 |----------|--------|-------------|
 | Q1 | B | Red = write failing test, Green = make it pass, Refactor = improve code |
-| Q2 | C | Path coverage exercises every unique execution path â€” strongest but often impractical |
+| Q2 | C | Path coverage exercises every unique execution path — strongest but often impractical |
 | Q3 | C | A Fake is a working implementation with shortcuts (e.g., in-memory database) |
 | Q4 | C | Unit tests form the broad base (70-80%) of the automation pyramid |
 | Q5 | B | Empirical studies show defects cluster at input boundaries |
 
 **Q1: What is the correct order of the TDD cycle?**
-- A) Green â†’ Red â†’ Refactor
-- B) Red â†’ Green â†’ Refactor
-- C) Refactor â†’ Red â†’ Green
-- D) Red â†’ Refactor â†’ Green
+- A) Green → Red → Refactor
+- B) Red → Green → Refactor
+- C) Refactor → Red → Green
+- D) Red → Refactor → Green
 
 **Q2: Which coverage criterion is strongest (finds the most defects)?**
 - A) Statement coverage
@@ -1168,9 +1168,9 @@ function validateDate(dateStr: string): boolean {
 ```typescript
 // Conditions:
 // C1: Valid account (Y/N)
-// C2: Account not locked (Y/N) â€” irrelevant if C1=N
-// C3: Password correct (Y/N) â€” irrelevant if C1=N or C2=N
-// C4: Failed attempts < 3 (Y/N) â€” irrelevant if C1=N or C2=N or C3=Y
+// C2: Account not locked (Y/N) — irrelevant if C1=N
+// C3: Password correct (Y/N) — irrelevant if C1=N or C2=N
+// C4: Failed attempts < 3 (Y/N) — irrelevant if C1=N or C2=N or C3=Y
 
 // Actions:
 // A1: Allow login
@@ -1180,12 +1180,12 @@ function validateDate(dateStr: string): boolean {
 // A5: Lock account (after 3rd failure)
 
 // Rules:
-// 1: Y Y Y Y â†’ A1
-// 2: Y Y N Y â†’ A2, A4
-// 3: Y Y Y N â†’ A1 (if already locked, shouldn't reach here)
-// 4: Y Y N N â†’ A2, A4, A5 (3rd failure â†’ lock)
-// 5: Y N - - â†’ A3 (account locked)
-// 6: N - - - â†’ A2 (invalid account)
+// 1: Y Y Y Y → A1
+// 2: Y Y N Y → A2, A4
+// 3: Y Y Y N → A1 (if already locked, shouldn't reach here)
+// 4: Y Y N N → A2, A4, A5 (3rd failure → lock)
+// 5: Y N - - → A3 (account locked)
+// 6: N - - - → A2 (invalid account)
 ```
 </details>
 
@@ -1329,8 +1329,8 @@ class MedicalDeviceTraceabilityManager {
   getTraceabilityReport(): string {
     let report = '=== Requirements Traceability Matrix ===\n';
     for (const [reqId, tests] of this.coverage) {
-      const status = tests.length >= 3 ? 'âœ“' : 'âœ—';
-      report += `${status} ${reqId}: ${tests.length} tests â†’ ${tests.join(', ')}\n`;
+      const status = tests.length >= 3 ? '✓' : '✗';
+      report += `${status} ${reqId}: ${tests.length} tests → ${tests.join(', ')}\n`;
     }
     return report;
   }

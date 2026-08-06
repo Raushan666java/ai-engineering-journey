@@ -1,4 +1,4 @@
-﻿# Chapter 2: Scalability and Load Balancing
+# Chapter 2: Scalability and Load Balancing
 > **Previous:** [01 Introduction](./01-introduction.md) | **Next:** [03 Caching](./03-caching.md)
 
 ---
@@ -105,7 +105,7 @@ Vertical scaling adds resources to a single machine: more CPU cores, more RAM, f
 
 **Disadvantages:**
 - **Hardware ceiling.** A single x86 server cannot exceed ~64 TB RAM (current max) or ~448 CPU cores. There is no way to vertically scale past the largest machine a vendor sells.
-- **Cost super-linearity.** High-end machines cost exponentially more than commodity servers. A 2x machine rarely costs 2x â€” it costs 3-5x because of premium hardware.
+- **Cost super-linearity.** High-end machines cost exponentially more than commodity servers. A 2x machine rarely costs 2x — it costs 3-5x because of premium hardware.
 - **Single point of failure.** If the machine dies, the system is down. Redundancy requires moving to horizontal scaling anyway.
 - **Planned downtime.** Upgrades require reboots (RAM, CPU replacement). This violates availability SLAs.
 
@@ -120,7 +120,7 @@ Vertical scaling is appropriate for legacy applications, stateful systems that c
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-Horizontal scaling adds more machines to the pool. Each machine handles a fraction of the workload. The system's total capacity is N Ã— (capacity of a single node) minus coordination overhead.
+Horizontal scaling adds more machines to the pool. Each machine handles a fraction of the workload. The system's total capacity is N × (capacity of a single node) minus coordination overhead.
 
 **Advantages:**
 - **Near-linear scalability** if the workload is partitionable. Load balancers + stateless app servers scale almost perfectly to hundreds of thousands of nodes.
@@ -148,7 +148,7 @@ Load balancers operate at different layers of the OSI model:
 
 | Criterion | L4 (Transport) | L7 (Application) |
 |-----------|----------------|------------------|
-| OSI Layer | 4 â€” TCP/UDP | 7 â€” HTTP/HTTPS, gRPC |
+| OSI Layer | 4 — TCP/UDP | 7 — HTTP/HTTPS, gRPC |
 | Routing basis | IP address, port, protocol | URL path, HTTP headers, cookies, request body |
 | Performance | Very high (kernel-level forwarding, minimal overhead) | Moderate (must parse and potentially modify traffic) |
 | TLS termination | No (passes encrypted traffic through) | Yes (terminates TLS, can inspect plaintext) |
@@ -230,7 +230,7 @@ $$server_index = hash(client\_IP) \bmod N$$
 where N is the number of servers.
 
 **Pros:** Ensures the same client (from the same IP) is always sent to the same server. Provides "poor man's sticky sessions" without requiring cookies.
-**Cons:** If a server is added or removed, the hash modulus changes â€” most clients remap to different servers. This is the **remapping problem.** IP addresses behind NAT or proxy (corporate networks, mobile carriers) all hash to the same server, causing uneven distribution.
+**Cons:** If a server is added or removed, the hash modulus changes — most clients remap to different servers. This is the **remapping problem.** IP addresses behind NAT or proxy (corporate networks, mobile carriers) all hash to the same server, causing uneven distribution.
 
 #### Consistent Hashing
 
@@ -340,7 +340,7 @@ response: TTL=300, records=[203.0.113.2, 203.0.113.3, 203.0.113.1]
 
 Clients typically use the first IP address returned, so traffic distributes roughly evenly.
 
-**Problems:** DNS caching by ISPs and clients defeats distribution (a busy resolver caches the result for the full TTL, sending all its traffic to one IP). There is no server load awareness â€” a dead server is still returned until the TTL expires and the DNS record is updated.
+**Problems:** DNS caching by ISPs and clients defeats distribution (a busy resolver caches the result for the full TTL, sending all its traffic to one IP). There is no server load awareness — a dead server is still returned until the TTL expires and the DNS record is updated.
 
 #### Weighted DNS
 
@@ -380,15 +380,15 @@ All data centers serve traffic simultaneously. Traffic is distributed based on g
 
 ```
 +---------------------------------------+
-Â¦              Global DNS                Â¦
-Â¦        (Route53 / Cloud DNS)           Â¦
+¦              Global DNS                ¦
+¦        (Route53 / Cloud DNS)           ¦
 +----------------------------------------+
-       Â¦                    Â¦
+       ¦                    ¦
        ?                    ?
 +--------------+   +--------------+
-Â¦  us-east-1   Â¦   Â¦  eu-west-1   Â¦
-Â¦  (active)    Â¦   Â¦  (active)    Â¦
-Â¦  60% traffic Â¦   Â¦  40% traffic Â¦
+¦  us-east-1   ¦   ¦  eu-west-1   ¦
+¦  (active)    ¦   ¦  (active)    ¦
+¦  60% traffic ¦   ¦  40% traffic ¦
 +--------------+   +--------------+
 ```
 
@@ -402,16 +402,16 @@ One region serves all traffic; the other region is on standby. On failure, traff
 ```
 Normal operation:
 +--------------+   +--------------+
-Â¦  us-east-1   Â¦   Â¦  eu-west-1   Â¦
-Â¦  (active)    Â¦   Â¦  (passive)   Â¦
-Â¦  100% trafficÂ¦   Â¦   0 traffic  Â¦
+¦  us-east-1   ¦   ¦  eu-west-1   ¦
+¦  (active)    ¦   ¦  (passive)   ¦
+¦  100% traffic¦   ¦   0 traffic  ¦
 +--------------+   +--------------+
 
 After failover:
 +--------------+   +--------------+
-Â¦  us-east-1   Â¦   Â¦  eu-west-1   Â¦
-Â¦  (down)      Â¦   Â¦  (active)    Â¦
-Â¦   0 traffic  Â¦   Â¦  100% trafficÂ¦
+¦  us-east-1   ¦   ¦  eu-west-1   ¦
+¦  (down)      ¦   ¦  (active)    ¦
+¦   0 traffic  ¦   ¦  100% traffic¦
 +--------------+   +--------------+
 ```
 
@@ -467,7 +467,7 @@ Every 5 seconds, send GET /health to each server.
 - After 2 consecutive successes ? return to pool
 ```
 
-**Pros:** Fast failure detection (independent of traffic volume). Proactive â€” catches failures before users see errors.
+**Pros:** Fast failure detection (independent of traffic volume). Proactive — catches failures before users see errors.
 **Cons:** Extra load on servers (must serve health requests). May over-flag servers under transient load spikes (require generous failure thresholds).
 
 ---
@@ -529,25 +529,25 @@ Store session state in a shared, highly available data store:
 
 ```
 +---------+   +---------+   +---------+
-Â¦ Client 1 Â¦   Â¦ Client 2 Â¦   Â¦ Client 3 Â¦
+¦ Client 1 ¦   ¦ Client 2 ¦   ¦ Client 3 ¦
 +---------+   +---------+   +---------+
-     Â¦             Â¦             Â¦
+     ¦             ¦             ¦
      ?             ?             ?
 +---------------------------------------+
-Â¦           Load Balancer               Â¦
-Â¦         (round-robin or LC)           Â¦
+¦           Load Balancer               ¦
+¦         (round-robin or LC)           ¦
 +---------------------------------------+
-   Â¦          Â¦          Â¦
+   ¦          ¦          ¦
    ?          ?          ?
 +-----+  +-----+  +-----+
-Â¦ S1  Â¦  Â¦ S2  Â¦  Â¦ S3  Â¦  ? all stateless
+¦ S1  ¦  ¦ S2  ¦  ¦ S3  ¦  ? all stateless
 +-----+  +-----+  +-----+
-  Â¦        Â¦        Â¦
+  ¦        ¦        ¦
   +--------+--------+
            ?
     +-----------+
-    Â¦  Redis    Â¦  ? session store
-    Â¦ (cluster) Â¦
+    ¦  Redis    ¦  ? session store
+    ¦ (cluster) ¦
     +-----------+
 ```
 
@@ -560,9 +560,9 @@ Any server can serve any request by reading/writing session data to Redis. This 
 
 **AWS Elastic Load Balancer (ELB).** Three tiers: Classic Load Balancer (L4/L7 hybrid, legacy), Application Load Balancer (L7, HTTP/HTTPS, content-based routing, path patterns, host-based routing), Network Load Balancer (L4, ultra-low latency, TCP/UDP/TLS, handles millions of requests/second). ALB supports weighted target groups, stickiness via cookies, native WebSocket support.
 
-**Google Cloud Load Balancer.** Unlike AWS, GCLB is a single global anycast front-end â€” you create one load balancer that serves traffic across all regions. Traffic enters the Google Front End (GFE) at the nearest edge point-of-presence (POP) and is routed over Google's private network (not the public internet) to the backend. This eliminates public internet variability.
+**Google Cloud Load Balancer.** Unlike AWS, GCLB is a single global anycast front-end — you create one load balancer that serves traffic across all regions. Traffic enters the Google Front End (GFE) at the nearest edge point-of-presence (POP) and is routed over Google's private network (not the public internet) to the backend. This eliminates public internet variability.
 
-**Cloudflare Load Balancing.** Monitors origin server health, pools, geo-steering. Cloudflare uses Anycast for its own IP addresses â€” all 200+ data centers announce the same IPs, and traffic naturally goes to the nearest one. Their load balancer sits on top of this Anycast layer.
+**Cloudflare Load Balancing.** Monitors origin server health, pools, geo-steering. Cloudflare uses Anycast for its own IP addresses — all 200+ data centers announce the same IPs, and traffic naturally goes to the nearest one. Their load balancer sits on top of this Anycast layer.
 
 ---
 
@@ -586,7 +586,7 @@ Any server can serve any request by reading/writing session data to Redis. This 
 
 **Problem:** A Memcached cluster with 10 nodes. Adding one node should not invalidate all cached keys.
 
-**Solution â€” Consistent Hash Ring:**
+**Solution — Consistent Hash Ring:**
 - Hash space: 0 to 2^32-1 (circle)
 - Each server placed at 100 virtual node positions (random points on the ring)
 - Each key `cache_key` = `hash("product:12345")` ? find nearest clockwise server
@@ -945,7 +945,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 ### TypeScript: Load Balancer (Multi-Algorithm)
 
-This class implements four load-balancing algorithms â€” round-robin, least-connections, IP hash, and weighted â€” with health tracking and connection counting.
+This class implements four load-balancing algorithms — round-robin, least-connections, IP hash, and weighted — with health tracking and connection counting.
 
 ```typescript
 interface BackendServer {
@@ -1136,12 +1136,12 @@ const scaler = new HorizontalScaler(2, 20, 70, 30, 60000, 4);
 const loadPattern = [30, 40, 50, 65, 75, 85, 90, 85, 80, 50, 35, 25];
 const simHistory = scaler.simulateLoadPattern(loadPattern);
 console.log('Auto-scaling simulation:');
-simHistory.forEach((h, i) => console.log(`  Step ${i}: ${h.instanceCount} instances â€” ${h.actions[1]}`));
+simHistory.forEach((h, i) => console.log(`  Step ${i}: ${h.instanceCount} instances — ${h.actions[1]}`));
 ```
 
 ### TypeScript: Throughput Calculator (Little's Law)
 
-This class applies Little's Law (`L = Î»W`) to compute concurrency, queue length, and optimal server count for a given throughput target.
+This class applies Little's Law (`L = λW`) to compute concurrency, queue length, and optimal server count for a given throughput target.
 
 ```typescript
 class ThroughputCalculator {
@@ -1151,7 +1151,7 @@ class ThroughputCalculator {
     private serverCapacity: number = 500
   ) {}
 
-  /** L = Î» * W: concurrency = QPS * avgLatency / 1000 */
+  /** L = λ * W: concurrency = QPS * avgLatency / 1000 */
   requiredConcurrency(): number {
     return Math.ceil(this.targetQps * (this.avgLatencyMs / 1000));
   }
@@ -1307,7 +1307,7 @@ flowchart TD
 ## Exercises
 
 <details>
-<summary>Review Questions â€” Click to expand</summary>
+<summary>Review Questions — Click to expand</summary>
 
 ### Review Questions (4-5)
 
@@ -1329,12 +1329,12 @@ flowchart TD
 </details>
 
 <details>
-<summary>Application Problems â€” Click to expand</summary>
+<summary>Application Problems — Click to expand</summary>
 
 ### Application Problems (3-4)
 
 1. A photo-sharing app has 500M users. Each user uploads 1 photo/day (avg 3 MB). Currently uses 50 application servers (each handles 500 RPS). Compute the current load and determine how many additional servers are needed if traffic doubles.
-   **Solution:** Uploads/sec = 500M / 86400 â‰ˆ 5,787 QPS. Current capacity = 50 Ã— 500 = 25,000 RPS. At 2x traffic = 11,574 QPS, need 11,574 / 500 â‰ˆ 24 servers (round up). Additional servers needed = 24 - 50 = -26 (already have excess capacity for uploads; but assume reads are 100x writes = 578,700 QPS, requiring 578,700/500 â‰ˆ 1,158 servers).
+   **Solution:** Uploads/sec = 500M / 86400 ≈ 5,787 QPS. Current capacity = 50 × 500 = 25,000 RPS. At 2x traffic = 11,574 QPS, need 11,574 / 500 ≈ 24 servers (round up). Additional servers needed = 24 - 50 = -26 (already have excess capacity for uploads; but assume reads are 100x writes = 578,700 QPS, requiring 578,700/500 ≈ 1,158 servers).
 
 2. Design a health check strategy for a microservice with 5 replicas. The service has a startup warmup time of 30 seconds and occasional GC pauses of 2 seconds. Choose active vs passive, thresholds, and interval.
    **Solution:** Active health checks every 10s with HTTP /health endpoint. Failure threshold: 3 consecutive failures (mark unhealthy after 30s). Recovery threshold: 2 consecutive successes (mark healthy after 20s). Startup grace period: 45s (ignore health checks during warmup). GC pauses < 3s are tolerated; longer pauses should fail the health check.
@@ -1348,7 +1348,7 @@ flowchart TD
 </details>
 
 <details>
-<summary>Challenge Problem â€” Click to expand</summary>
+<summary>Challenge Problem — Click to expand</summary>
 
 ### Challenge Problem (1)
 
@@ -1359,6 +1359,6 @@ You are designing a multi-region gaming platform that hosts real-time multiplaye
 2. **State management:** Use Redis Cluster for match state with leader-follower replication. Match servers are stateless and read/write to Redis. On failure, a new server picks up the match state from Redis.
 3. **Failover:** Active-passive GSLB. During us-east-1 outage, DNS failover to eu-west-1 within 60s (TTL). In-flight matches are lost (game state is in-memory); acceptable given short match duration. Reconnection logic directs players to new region.
 4. **Auto-scaling:** Target CPU = 60%, scale-up cooldown = 90s (instance warmup), scale-down cooldown = 300s (avoid flapping). Scale-up by doubling (fast reaction to flash crowds), scale-down by 1/3 at a time.
-5. **Bottleneck:** At 10x, the matchmaking service fails first (O(nÂ²) comparisons for player grouping). Mitigation: shard matchmaking by region+skill tier, use Redis sorted sets for latency-based grouping.
+5. **Bottleneck:** At 10x, the matchmaking service fails first (O(n²) comparisons for player grouping). Mitigation: shard matchmaking by region+skill tier, use Redis sorted sets for latency-based grouping.
 
 </details>

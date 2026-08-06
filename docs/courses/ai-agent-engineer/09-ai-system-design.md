@@ -1,7 +1,7 @@
-﻿# Chapter 9 â€” AI System Design & Architecture
+# Chapter 9 — AI System Design & Architecture
 
 **Duration:** 2 weeks, ~25 hours
-**Goal:** Architect production AI systems â€” RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a system-design interview.
+**Goal:** Architect production AI systems — RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a system-design interview.
 
 ---
 
@@ -45,7 +45,7 @@
 
 ## 9.1 RAG System Architecture Patterns
 
-### Pattern 1 â€” Naive RAG (Basic)
+### Pattern 1 — Naive RAG (Basic)
 
 
 ```
@@ -55,7 +55,7 @@ User Query ? Embed ? Vector Search ? Top-K Chunks ? LLM ? Response
 Simple, but every query pays the full cost. No query rewriting, no re-ranking, no context refinement.
 
 ```python
-# Naive RAG â€” one-shot retrieval + generation
+# Naive RAG — one-shot retrieval + generation
 from openai import OpenAI
 import chromadb
 
@@ -91,7 +91,7 @@ def naive_rag(query: str) -> str:
 
 **When to use:** Prototypes, internal tools, low QPS (< 10 req/min).
 
-### Pattern 2 â€” Agentic RAG (Advanced)
+### Pattern 2 — Agentic RAG (Advanced)
 
 
 ```
@@ -189,7 +189,7 @@ def agentic_rag(query: str) -> str:
     return response
 ```
 
-### Pattern 3 â€” Multi-Hop RAG
+### Pattern 3 — Multi-Hop RAG
 
 
 For questions that require synthesizing information from multiple documents where no single chunk contains the answer.
@@ -244,11 +244,11 @@ def multi_hop_rag(query: str) -> str:
 
 ```
 +----------------------------+
-Â¦  L1: Prompt Cache (in-memory) Â¦ ? Exact query match, TTL seconds
-+----------------------------Â¦
-Â¦  L2: Semantic Cache (vector) Â¦ ? Similar query match, cosine > 0.95
-+----------------------------Â¦
-Â¦  L3: KV Cache (model-level)  Â¦ ? Reused across turns in same session
+¦  L1: Prompt Cache (in-memory) ¦ ? Exact query match, TTL seconds
++----------------------------¦
+¦  L2: Semantic Cache (vector) ¦ ? Similar query match, cosine > 0.95
++----------------------------¦
+¦  L3: KV Cache (model-level)  ¦ ? Reused across turns in same session
 +----------------------------+
 ```
 
@@ -727,34 +727,34 @@ async def multi_region_search(
 
 ```
                          +-------------+
-                         Â¦ API Gateway  Â¦
-                         Â¦ (rate limit, Â¦
-                         Â¦  auth, route)Â¦
+                         ¦ API Gateway  ¦
+                         ¦ (rate limit, ¦
+                         ¦  auth, route)¦
                          +-------------+
-                                Â¦
+                                ¦
                     +-----------------------+
-                    Â¦    Agent Supervisor    Â¦
-                    Â¦  (orchestration layer) Â¦
+                    ¦    Agent Supervisor    ¦
+                    ¦  (orchestration layer) ¦
                     +-----------------------+
-                                Â¦
+                                ¦
          +----------------------+----------------------+
-         Â¦                      Â¦                      Â¦
+         ¦                      ¦                      ¦
     +---------+          +-----------+          +----------+
-    Â¦ Agent A Â¦          Â¦  Agent B  Â¦          Â¦  Agent C  Â¦
-    Â¦(search) Â¦          Â¦ (analyze) Â¦          Â¦ (respond) Â¦
+    ¦ Agent A ¦          ¦  Agent B  ¦          ¦  Agent C  ¦
+    ¦(search) ¦          ¦ (analyze) ¦          ¦ (respond) ¦
     +---------+          +-----------+          +----------+
-         Â¦                     Â¦                      Â¦
+         ¦                     ¦                      ¦
          +---------------------+----------------------+
-                               Â¦
+                               ¦
                     +---------------------+
-                    Â¦     Message Bus      Â¦
-                    Â¦  (Redis / RabbitMQ)  Â¦
-                    +---------------------Â¦
-                    Â¦    State Store       Â¦
-                    Â¦  (Postgres / Redis)  Â¦
-                    +---------------------Â¦
-                    Â¦    Tool Registry     Â¦
-                    Â¦  (MCP server list)   Â¦
+                    ¦     Message Bus      ¦
+                    ¦  (Redis / RabbitMQ)  ¦
+                    +---------------------¦
+                    ¦    State Store       ¦
+                    ¦  (Postgres / Redis)  ¦
+                    +---------------------¦
+                    ¦    Tool Registry     ¦
+                    ¦  (MCP server list)   ¦
                     +---------------------+
 ```
 

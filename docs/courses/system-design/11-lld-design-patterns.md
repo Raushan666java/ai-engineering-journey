@@ -1,4 +1,4 @@
-﻿# Chapter 11: Low-Level Design: Design Patterns
+# Chapter 11: Low-Level Design: Design Patterns
 > **Previous:** [10 Lld Solid Oop](./10-lld-solid-oop.md) | **Next:** [12 Lld Component Design](./12-lld-component-design.md)
 
 ---
@@ -126,7 +126,7 @@ pizza = PizzaBuilder().set_size("large").add_cheese().add_topping("pepperoni").b
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
-Structural patterns concern class and object compositionâ€”how entities use each other to form larger structures.
+Structural patterns concern class and object composition—how entities use each other to form larger structures.
 
 **Adapter** converts the interface of a class into another interface that clients expect. A **class adapter** uses multiple inheritance; an **object adapter** uses composition. The object adapter is more flexible because it adapts not just a class but an entire hierarchy.
 
@@ -147,7 +147,7 @@ def compute(x: int) -> int:
     return x * 2
 ```
 
-**Facade** provides a unified interface to a set of interfaces in a subsystem. It defines a higher-level interface that makes the subsystem easier to use. The Facade does not encapsulate the subsystemâ€”it merely provides a simplified interface.
+**Facade** provides a unified interface to a set of interfaces in a subsystem. It defines a higher-level interface that makes the subsystem easier to use. The Facade does not encapsulate the subsystem—it merely provides a simplified interface.
 
 **Proxy** provides a surrogate or placeholder for another object to control access to it. Variants include:
 - **Virtual proxy**: delays expensive object creation until it is needed.
@@ -182,13 +182,13 @@ class EventBus:
 
 **State** allows an object to alter its behavior when its internal state changes. The object appears to change its class. Each state is a separate class implementing a common interface; transitions are handled within state classes.
 
-**Template Method** defines the skeleton of an algorithm in a base class, deferring some steps to subclasses. Subclasses redefine certain steps without changing the algorithm's structure. It is one of the most common patternsâ€”essentially "Hollywood Principle": don't call us, we'll call you.
+**Template Method** defines the skeleton of an algorithm in a base class, deferring some steps to subclasses. Subclasses redefine certain steps without changing the algorithm's structure. It is one of the most common patterns—essentially "Hollywood Principle": don't call us, we'll call you.
 
 **Chain of Responsibility** passes a request along a chain of handlers. Each handler decides either to process the request or to pass it to the next handler in the chain. Middleware pipelines in web frameworks (Express.js, ASP.NET Core) are textbook examples.
 
 **Iterator** provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. Python's `__iter__` and `__next__` protocols make any class iterable.
 
-**Mediator** defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly. An air traffic control tower is the real-world analogyâ€”planes communicate through the tower, not directly with each other.
+**Mediator** defines an object that encapsulates how a set of objects interact. It promotes loose coupling by keeping objects from referring to each other explicitly. An air traffic control tower is the real-world analogy—planes communicate through the tower, not directly with each other.
 
 ### Concurrency Patterns
 
@@ -212,7 +212,7 @@ Anti-patterns are common but ineffective solutions that appear attractive at fir
 
 **God Object** (aka Blob): A single class that knows too much or does too much. Symptoms include hundreds of methods and fields across dozens of responsibilities. Resolution: decompose by SRP.
 
-**Spaghetti Code**: Code with an unstructured, tangled control flow. Characterized by extensive use of `goto` (or its equivalentsâ€”deeply nested conditionals, exception-based control flow). Resolution: apply structured programming and extract methods.
+**Spaghetti Code**: Code with an unstructured, tangled control flow. Characterized by extensive use of `goto` (or its equivalents—deeply nested conditionals, exception-based control flow). Resolution: apply structured programming and extract methods.
 
 **Copy-Paste Programming**: Duplicating code instead of abstracting common behavior. Leads to inconsistent fixes (fixed in one copy but not another). Resolution: extract duplicated logic into shared methods or classes.
 
@@ -243,7 +243,7 @@ Anti-patterns are common but ineffective solutions that appear attractive at fir
 
 ---
 ## Examples
-### Example 1: Factory Method â€” Document Creation
+### Example 1: Factory Method — Document Creation
 
 A document editor creates different types of documents. The editor should not know the concrete document type at compile time.
 
@@ -282,7 +282,7 @@ class SpreadsheetApp(Application):
         return SpreadsheetDocument()
 ```
 
-### Example 2: Decorator â€” Adding Compression and Encryption to a Data Stream
+### Example 2: Decorator — Adding Compression and Encryption to a Data Stream
 
 The base component reads/writes raw data. Decorators add compression and encryption without modifying the base class.
 
@@ -335,7 +335,7 @@ class EncryptionDecorator(DataSourceDecorator):
         raw = super().read()
         return raw.replace("[ENCRYPTED]", "").replace("[/ENCRYPTED]", "")
 
-# Usage â€” compose decorators at runtime
+# Usage — compose decorators at runtime
 source = FileDataSource("data.txt")
 source = CompressionDecorator(source)
 source = EncryptionDecorator(source)
@@ -345,7 +345,7 @@ print(source.read())  # Hello World
 
 Decorators can be stacked in any order, providing enormous flexibility at composition time.
 
-### Example 3: Command Pattern â€” Undo in a Text Editor
+### Example 3: Command Pattern — Undo in a Text Editor
 
 Each operation is a command object that knows how to execute and undo itself.
 
@@ -404,7 +404,7 @@ editor.undo()  # Removes "World"
 print(editor._buffer)  # ['Hello']
 ```
 
-### Example 4: Observer â€” Stock Price Notification
+### Example 4: Observer — Stock Price Notification
 
 Multiple displays observe stock price changes without the stock exchange knowing about them.
 
@@ -447,7 +447,7 @@ exchange.set_price(155.0)
 # Alert: Price threshold exceeded! $155.00
 ```
 
-### Example 5: State Pattern â€” Vending Machine
+### Example 5: State Pattern — Vending Machine
 
 A vending machine behaves differently based on whether it is idle, has money inserted, or is dispensing a product.
 
@@ -1014,11 +1014,11 @@ graph TD
 
 **E-Commerce Checkout Framework Using Design Patterns**
 
-A team building a white-label e-commerce platform needed a checkout framework that could be customized for each merchant (100+ merchants with different payment methods, shipping rules, tax calculations, and discount strategies). The initial implementation used a monolithic `CheckoutService` with 40+ configuration flags and massive if/else chains â€” adding a new merchant required 2-3 weeks and frequently broke existing merchants.
+A team building a white-label e-commerce platform needed a checkout framework that could be customized for each merchant (100+ merchants with different payment methods, shipping rules, tax calculations, and discount strategies). The initial implementation used a monolithic `CheckoutService` with 40+ configuration flags and massive if/else chains — adding a new merchant required 2-3 weeks and frequently broke existing merchants.
 
-The team redesigned the framework using design patterns. **Strategy Pattern**: Tax calculation was extracted into a `TaxStrategy` interface with implementations (`USTax`, `EUVATax`, `CanadaGST`, `ZeroTax`). A new country required only a new strategy class. **Decorator Pattern**: Order total calculation used decorators â€” `BaseOrderTotal` wrapped by `DiscountDecorator`, `ShippingDecorator`, `TaxDecorator`, `GiftWrapDecorator`. Merchants composed their decorator chain at configuration time. **Observer Pattern**: The `OrderEventBus` published events (`OrderPlaced`, `PaymentReceived`, `OrderShipped`). Downstream services (Inventory, Analytics, Email, Fraud Detection) subscribed independently â€” adding a new subscriber required zero changes to the order flow. **Command Pattern**: Each checkout step (`ValidateCart`, `ReserveInventory`, `ProcessPayment`, `SendConfirmation`) was a Command with `execute()` and `undo()`. A failure in any step triggered a compensating rollback of previous steps (Saga pattern). **Factory Method**: The `PaymentGatewayFactory` created gateway-specific handlers â€” each payment method (Stripe, PayPal, Braintree, Klarna) had its own factory subclass.
+The team redesigned the framework using design patterns. **Strategy Pattern**: Tax calculation was extracted into a `TaxStrategy` interface with implementations (`USTax`, `EUVATax`, `CanadaGST`, `ZeroTax`). A new country required only a new strategy class. **Decorator Pattern**: Order total calculation used decorators — `BaseOrderTotal` wrapped by `DiscountDecorator`, `ShippingDecorator`, `TaxDecorator`, `GiftWrapDecorator`. Merchants composed their decorator chain at configuration time. **Observer Pattern**: The `OrderEventBus` published events (`OrderPlaced`, `PaymentReceived`, `OrderShipped`). Downstream services (Inventory, Analytics, Email, Fraud Detection) subscribed independently — adding a new subscriber required zero changes to the order flow. **Command Pattern**: Each checkout step (`ValidateCart`, `ReserveInventory`, `ProcessPayment`, `SendConfirmation`) was a Command with `execute()` and `undo()`. A failure in any step triggered a compensating rollback of previous steps (Saga pattern). **Factory Method**: The `PaymentGatewayFactory` created gateway-specific handlers — each payment method (Stripe, PayPal, Braintree, Klarna) had its own factory subclass.
 
-The result: new merchant onboarding dropped from 2-3 weeks to 2-3 days. The checkout flow handled 10,000 orders/hour with 99.99% success rate. The codebase grew by only 15% while supporting 5x more merchants. The team attributed the success to pattern-based design â€” each pattern solved a specific dimension of variability, and patterns composed cleanly without tight coupling between dimensions.
+The result: new merchant onboarding dropped from 2-3 weeks to 2-3 days. The checkout flow handled 10,000 orders/hour with 99.99% success rate. The codebase grew by only 15% while supporting 5x more merchants. The team attributed the success to pattern-based design — each pattern solved a specific dimension of variability, and patterns composed cleanly without tight coupling between dimensions.
 
 ---
 - Creational patterns abstract object creation: Singleton (single instance), Factory Method (deferred creation), Abstract Factory (product families), Builder (stepwise construction), Prototype (cloning).
@@ -1037,22 +1037,22 @@ Singleton is considered an anti-pattern because it introduces global state, make
 
 <details>
 <summary>Solution for Review Question 2</summary>
-**Class adapter** uses multiple inheritance: the adapter inherits both the target interface and the adaptee class. It adapts a specific class and cannot adapt its subclasses. **Object adapter** uses composition: the adapter holds a reference to the adaptee object and delegates calls. It can adapt the adaptee class and all its subclasses. Choose class adapter when you need to override adaptee behavior. Choose object adapter when you need flexibility (most common) â€” it's the recommended approach in the GoF book.
+**Class adapter** uses multiple inheritance: the adapter inherits both the target interface and the adaptee class. It adapts a specific class and cannot adapt its subclasses. **Object adapter** uses composition: the adapter holds a reference to the adaptee object and delegates calls. It can adapt the adaptee class and all its subclasses. Choose class adapter when you need to override adaptee behavior. Choose object adapter when you need flexibility (most common) — it's the recommended approach in the GoF book.
 </details>
 
 <details>
 <summary>Solution for Review Question 3</summary>
-The history stack stores executed Command objects. Each command implements both `execute()` and `undo()`. For undo: pop the last command from the history stack and call its `undo()` method. For redo: push the undone command onto a redo stack and call `execute()`. A command must store enough state to reverse its effect â€” typically the "before" state (deleted text, old values, previous positions) captured during `execute()` and used during `undo()`. For example, a `DeleteTextCommand` stores the deleted text and its position.
+The history stack stores executed Command objects. Each command implements both `execute()` and `undo()`. For undo: pop the last command from the history stack and call its `undo()` method. For redo: push the undone command onto a redo stack and call `execute()`. A command must store enough state to reverse its effect — typically the "before" state (deleted text, old values, previous positions) captured during `execute()` and used during `undo()`. For example, a `DeleteTextCommand` stores the deleted text and its position.
 </details>
 
 <details>
 <summary>Solution for Review Question 4</summary>
-**Observer** allows one-to-many broadcast where any number of subscribers can receive events from a subject. Communication is indirect but subscribers know about the subject (or at least the event type). **Mediator** centralizes many-to-many communication â€” objects communicate through the mediator instead of directly with each other. Choose Mediator when: (a) you have complex inter-object dependencies that create a "spaghetti" of direct connections, (b) you need to control or coordinate interactions centrally, (c) the set of interacting objects changes frequently. Example: Air traffic control (mediator) vs. social media followers (observer).
+**Observer** allows one-to-many broadcast where any number of subscribers can receive events from a subject. Communication is indirect but subscribers know about the subject (or at least the event type). **Mediator** centralizes many-to-many communication — objects communicate through the mediator instead of directly with each other. Choose Mediator when: (a) you have complex inter-object dependencies that create a "spaghetti" of direct connections, (b) you need to control or coordinate interactions centrally, (c) the set of interacting objects changes frequently. Example: Air traffic control (mediator) vs. social media followers (observer).
 </details>
 
 <details>
 <summary>Solution for Review Question 5</summary>
-The poison pill is a special sentinel message placed on the queue after all real work items. When a consumer receives the poison pill, it knows to shut down gracefully â€” finish processing current item, release resources, and exit the loop. It is preferable to forcefully stopping threads because: (a) graceful shutdown â€” the consumer can complete in-flight work, (b) no resource leaks â€” files, connections, locks are properly released, (c) predictable â€” all items before the poison pill are guaranteed processed, (d) no thread interruption exceptions or corrupted state. Each consumer gets its own poison pill.
+The poison pill is a special sentinel message placed on the queue after all real work items. When a consumer receives the poison pill, it knows to shut down gracefully — finish processing current item, release resources, and exit the loop. It is preferable to forcefully stopping threads because: (a) graceful shutdown — the consumer can complete in-flight work, (b) no resource leaks — files, connections, locks are properly released, (c) predictable — all items before the poison pill are guaranteed processed, (d) no thread interruption exceptions or corrupted state. Each consumer gets its own poison pill.
 </details>
 
 ### Application Problems
@@ -1102,7 +1102,7 @@ class Order:
         self._strategy = strategy
     def calculate_total(self): return self._strategy.apply(self.total)
 ```
-Adding a new discount type (e.g., SeasonalDiscount) requires only a new class â€” no modification to Order (OCP).
+Adding a new discount type (e.g., SeasonalDiscount) requires only a new class — no modification to Order (OCP).
 </details>
 
 <details>

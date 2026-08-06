@@ -1,4 +1,4 @@
-﻿# Chapter 2: Advanced Arithmetic â€” Time & Work, Time-Speed-Distance, Mixtures & Alligations, Partnership, Ages
+# Chapter 2: Advanced Arithmetic — Time & Work, Time-Speed-Distance, Mixtures & Alligations, Partnership, Ages
 
 ## Learning Objectives
 
@@ -73,7 +73,7 @@ Time = Total Work / Combined Efficiency
 
 ```
 Speed = Distance / Time
-Distance = Speed Ã— Time
+Distance = Speed × Time
 Time = Distance / Speed
 ```
 
@@ -95,8 +95,8 @@ Average Speed = (a + b) / 2
 
 **Relative Speed:**
 
-- When two objects move in **same direction**: Relative Speed = |Sâ‚ - Sâ‚‚|
-- When two objects move in **opposite direction**: Relative Speed = Sâ‚ + Sâ‚‚
+- When two objects move in **same direction**: Relative Speed = |S₁ - S₂|
+- When two objects move in **opposite direction**: Relative Speed = S₁ + S₂
 
 **Train Problems:**
 
@@ -132,7 +132,7 @@ Required Ratio = (Mean - Cheaper) / (Dearer - Mean)
 **Mean Price formula:**
 
 ```
-Mean Price = (Câ‚Qâ‚ + Câ‚‚Qâ‚‚) / (Qâ‚ + Qâ‚‚)
+Mean Price = (C₁Q₁ + C₂Q₂) / (Q₁ + Q₂)
 ```
 
 **Replacement Formula:**
@@ -140,7 +140,7 @@ Mean Price = (Câ‚Qâ‚ + Câ‚‚Qâ‚‚) / (Qâ‚ + Qâ‚‚)
 If a container contains `x` units of pure substance, and `y` units are replaced with water `n` times:
 
 ```
-Quantity of Pure after n replacements = x Ã— (1 - y/x)^n
+Quantity of Pure after n replacements = x × (1 - y/x)^n
 ```
 
 **Important Rule for Mixtures:**
@@ -161,7 +161,7 @@ Profit is shared in the ratio of investments.
 **Compound Partnership:**
 
 When investments are made for different time periods:
-Profit is shared in the ratio of `(Investment Ã— Time)`.
+Profit is shared in the ratio of `(Investment × Time)`.
 
 **Working Partner vs Sleeping Partner:**
 
@@ -169,10 +169,10 @@ A working partner may receive a salary/commission before the remaining profit is
 
 **Formula:**
 
-If A invests `â‚¹x` for `m` months and B invests `â‚¹y` for `n` months:
+If A invests `₹x` for `m` months and B invests `₹y` for `n` months:
 
 ```
-A's Profit : B's Profit = x Ã— m : y Ã— n
+A's Profit : B's Profit = x × m : y × n
 ```
 
 ### 5. Problems on Ages
@@ -211,8 +211,8 @@ flowchart TD
 ```mermaid
 flowchart LR
     A["Two objects moving"] --> B{"Direction?"}
-    B -->|"Same direction"| C["Relative Speed = |Sâ‚ - Sâ‚‚|"]
-    B -->|"Opposite direction"| D["Relative Speed = Sâ‚ + Sâ‚‚"]
+    B -->|"Same direction"| C["Relative Speed = |S₁ - S₂|"]
+    B -->|"Opposite direction"| D["Relative Speed = S₁ + S₂"]
     C --> E["Time to meet = Distance / Rel Speed"]
     D --> E
     E --> F["Answer"]
@@ -242,11 +242,11 @@ A's 1 day work = 1/12
 B's 1 day work = 1/18
 (A + B)'s 1 day work = 1/12 + 1/18 = (3 + 2)/36 = 5/36
 
-Work done in 4 days = 4 Ã— 5/36 = 20/36 = 5/9
+Work done in 4 days = 4 × 5/36 = 20/36 = 5/9
 Remaining work = 1 - 5/9 = 4/9
 
 Time taken by B to complete remaining work = (4/9) / (1/18)
-= (4/9) Ã— 18
+= (4/9) × 18
 = 8 days
 
 **LCM Method:**
@@ -254,7 +254,7 @@ Total Work = LCM(12, 18) = 36 units
 A's efficiency = 36/12 = 3 units/day
 B's efficiency = 36/18 = 2 units/day
 Combined efficiency = 5 units/day
-Work done in 4 days = 5 Ã— 4 = 20 units
+Work done in 4 days = 5 × 4 = 20 units
 Remaining = 36 - 20 = 16 units
 Time for B = 16/2 = 8 days
 
@@ -265,7 +265,7 @@ Time for B = 16/2 = 8 days
 **Solution:**
 
 Speed = Distance / Time = 250 / 20 = 12.5 m/s
-Convert to km/h: 12.5 Ã— 18/5 = 12.5 Ã— 3.6 = 45 km/h
+Convert to km/h: 12.5 × 18/5 = 12.5 × 3.6 = 45 km/h
 
 ### Example 3: Relative Speed (Train crossing)
 
@@ -274,13 +274,13 @@ Convert to km/h: 12.5 Ã— 18/5 = 12.5 Ã— 3.6 = 45 km/h
 **Solution:**
 
 Relative speed = 60 + 40 = 100 km/h
-Convert to m/s: 100 Ã— 5/18 = 500/18 = 250/9 m/s
+Convert to m/s: 100 × 5/18 = 500/18 = 250/9 m/s
 Total length = 200 + 300 = 500 m
-Time = 500 / (250/9) = 500 Ã— 9/250 = 18 seconds
+Time = 500 / (250/9) = 500 × 9/250 = 18 seconds
 
 ### Example 4: Mixture & Alligation
 
-**Question:** In what ratio should rice costing â‚¹40/kg and â‚¹55/kg be mixed to get a mixture worth â‚¹48/kg?
+**Question:** In what ratio should rice costing ₹40/kg and ₹55/kg be mixed to get a mixture worth ₹48/kg?
 
 **Solution:**
 
@@ -298,7 +298,7 @@ So, they should be mixed in the ratio 7:8 (cheaper:dearer) or 8:7 (dearer:cheape
 
 ### Example 5: Partnership
 
-**Question:** A starts a business with â‚¹60,000. After 4 months, B joins with â‚¹80,000. After 2 more months, C joins with â‚¹1,00,000. At the end of 2 years, the total profit is â‚¹1,50,000. Find each person's share.
+**Question:** A starts a business with ₹60,000. After 4 months, B joins with ₹80,000. After 2 more months, C joins with ₹1,00,000. At the end of 2 years, the total profit is ₹1,50,000. Find each person's share.
 
 **Solution:**
 
@@ -307,17 +307,17 @@ A: 24 months
 B: 20 months (joined after 4 months)
 C: 18 months (joined after 6 months)
 
-Ratio of investments Ã— time:
-A : B : C = (60000 Ã— 24) : (80000 Ã— 20) : (100000 Ã— 18)
+Ratio of investments × time:
+A : B : C = (60000 × 24) : (80000 × 20) : (100000 × 18)
 = 1440000 : 1600000 : 1800000
 = 144 : 160 : 180
 = 36 : 40 : 45
 
 Sum of ratios = 36 + 40 + 45 = 121
 
-A's share = (36/121) Ã— 150000 = â‚¹44,628
-B's share = (40/121) Ã— 150000 = â‚¹49,587
-C's share = (45/121) Ã— 150000 = â‚¹55,785
+A's share = (36/121) × 150000 = ₹44,628
+B's share = (40/121) × 150000 = ₹49,587
+C's share = (45/121) × 150000 = ₹55,785
 
 ### Example 6: Problem on Ages
 
@@ -364,7 +364,7 @@ Time taken = 24/5 = 4.8 hours = 4 hours 48 minutes
 **Solution:**
 
 Average Speed = 2ab / (a + b)
-= (2 Ã— 40 Ã— 60) / (40 + 60)
+= (2 × 40 × 60) / (40 + 60)
 = 4800 / 100
 = 48 km/h
 
@@ -386,11 +386,11 @@ Speed of stream = (12 - 5)/2 = 7/2 = 3.5 km/h
 
 **Solution:**
 
-Quantity remaining = x Ã— (1 - y/x)^n
-= 40 Ã— (1 - 8/40)^3
-= 40 Ã— (1 - 1/5)^3
-= 40 Ã— (4/5)^3
-= 40 Ã— 64/125
+Quantity remaining = x × (1 - y/x)^n
+= 40 × (1 - 8/40)^3
+= 40 × (1 - 1/5)^3
+= 40 × (4/5)^3
+= 40 × 64/125
 = 2560/125
 = 20.48 litres
 
@@ -409,7 +409,7 @@ For three persons: `abc/(ab+bc+ca)`
 
 For two trains/persons starting at the same time:
 - Time to meet = Distance / Relative Speed
-- Distance covered by each = Speed Ã— Time
+- Distance covered by each = Speed × Time
 
 ### Shortcut 4: Alligation Shortcut
 
@@ -434,7 +434,7 @@ Use the formula directly. For IBPS SO, this is a direct formula application ques
 
 ### Shortcut 8: Average Speed
 
-For equal distances: `2ab/(a+b)` â€” this is faster than the full calculation.
+For equal distances: `2ab/(a+b)` — this is faster than the full calculation.
 
 ### Shortcut 9: Boats & Streams
 
@@ -466,15 +466,15 @@ flowchart LR
     A["Initial: x units pure"] --> B["Step 1: Remove y units"]
     B --> C["Remaining: x-y pure"]
     C --> D["Add y units water"]
-    D --> E["Pure = x Ã— (1 - y/x)"]
+    D --> E["Pure = x × (1 - y/x)"]
     E --> F["Repeat n times"]
-    F --> G["Final Pure = x Ã— (1 - y/x)^n"]
+    F --> G["Final Pure = x × (1 - y/x)^n"]
 ```
 
 ## TypeScript Implementation: Advanced Arithmetic Calculator
 
 ```typescript
-// advanced-arithmetic.ts â€” Calculator for Chapter 2
+// advanced-arithmetic.ts — Calculator for Chapter 2
 
 class TimeWorkCalculator {
   static lcmMethod(times: number[]): {
@@ -670,9 +670,9 @@ const replaced = AlligationCalculator.replacementFormula(40, 8, 3);
 console.log(`After 3 replacements: ${replaced.toFixed(2)}L milk`);
 ```
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
-### Set 1: Time & Work (Questions 1â€“5)
+### Set 1: Time & Work (Questions 1–5)
 
 **Question 1:** A can complete a work in 20 days and B in 30 days. They work together for 5 days, then A leaves. How many more days will B take to finish the remaining work?
 
@@ -683,8 +683,8 @@ console.log(`After 3 replacements: ${replaced.toFixed(2)}L milk`);
 A's 1 day = 1/20, B's 1 day = 1/30
 (A+B)'s 1 day = 1/20 + 1/30 = 5/60 = 1/12
 Work in 5 days = 5/12
-Remaining = 1 âˆ’ 5/12 = 7/12
-Time for B = (7/12) Ã· (1/30) = (7/12) Ã— 30 = 210/12 = 17.5 days
+Remaining = 1 − 5/12 = 7/12
+Time for B = (7/12) ÷ (1/30) = (7/12) × 30 = 210/12 = 17.5 days
 
 **Answer:** 17.5 days
 </details>
@@ -693,9 +693,9 @@ Time for B = (7/12) Ã· (1/30) = (7/12) Ã— 30 = 210/12 = 17.5 days
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Mâ‚ Ã— Dâ‚ = Mâ‚‚ Ã— Dâ‚‚ (total work = men Ã— days)
+**Formula:** M₁ × D₁ = M₂ × D₂ (total work = men × days)
 
-Total work = 8 Ã— 15 = 120 man-days
+Total work = 8 × 15 = 120 man-days
 Days for 12 men = 120 / 12 = 10 days
 
 **Answer:** 10 days
@@ -721,11 +721,11 @@ All three together take 10 days.
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Combined = 1/fill âˆ’ 1/empty
+**Formula:** Combined = 1/fill − 1/empty
 
 Fill rate = 1/15 per hour
 Empty rate = 1/20 per hour
-Net fill rate = 1/15 âˆ’ 1/20 = (4âˆ’3)/60 = 1/60
+Net fill rate = 1/15 − 1/20 = (4−3)/60 = 1/60
 Time = 60 hours
 
 **Answer:** 60 hours
@@ -743,7 +743,7 @@ Let 1 man's 1 day work = m, 1 woman's 1 day work = w
 Multiply (i) by 3, (ii) by 4:
 12m + 18w = 3/8
 12m + 28w = 4/10 = 2/5
-Subtract: 10w = 2/5 âˆ’ 3/8 = (16âˆ’15)/40 = 1/40
+Subtract: 10w = 2/5 − 3/8 = (16−15)/40 = 1/40
 w = 1/400
 10 women's 1 day = 10/400 = 1/40
 Time = 40 days
@@ -751,17 +751,17 @@ Time = 40 days
 **Answer:** 40 days
 </details>
 
-### Set 2: Time-Speed-Distance (Questions 6â€“10)
+### Set 2: Time-Speed-Distance (Questions 6–10)
 
 **Question 6:** A train 300 metres long passes a platform 500 metres long in 40 seconds. Find the speed of the train in km/h.
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Speed = (Train length + Platform length) / Time; Convert m/s to km/h Ã— 18/5
+**Formula:** Speed = (Train length + Platform length) / Time; Convert m/s to km/h × 18/5
 
 Total distance = 300 + 500 = 800 m
 Speed = 800/40 = 20 m/s
-In km/h = 20 Ã— 18/5 = 72 km/h
+In km/h = 20 × 18/5 = 72 km/h
 
 **Answer:** 72 km/h
 </details>
@@ -772,8 +772,8 @@ In km/h = 20 Ã— 18/5 = 72 km/h
 <summary>Answer & Solution</summary>
 **Formula:** Time = Sum of lengths / Relative speed (opposite = sum of speeds)
 
-Speedâ‚ = 72 Ã— 5/18 = 20 m/s
-Speedâ‚‚ = 54 Ã— 5/18 = 15 m/s
+Speed₁ = 72 × 5/18 = 20 m/s
+Speed₂ = 54 × 5/18 = 15 m/s
 Relative speed = 20 + 15 = 35 m/s
 Total length = 250 + 350 = 600 m
 Time = 600/35 = 17.14 seconds
@@ -787,7 +787,7 @@ Time = 600/35 = 17.14 seconds
 <summary>Answer & Solution</summary>
 **Formula:** Average Speed = 2ab/(a+b) for equal distances
 
-Avg speed = (2 Ã— 30 Ã— 50)/(30 + 50) = 3000/80 = 37.5 km/h
+Avg speed = (2 × 30 × 50)/(30 + 50) = 3000/80 = 37.5 km/h
 
 **Answer:** 37.5 km/h
 </details>
@@ -811,22 +811,22 @@ Speed in still water = (15 + 6)/2 = 10.5 km/h
 <summary>Answer & Solution</summary>
 **Formula:** Time = Distance / Relative speed (same direction)
 
-Relative speed = 12 âˆ’ 10 = 2 km/h = 2 Ã— 5/18 = 10/18 = 5/9 m/s
-Time = 200 / (5/9) = 200 Ã— 9/5 = 360 seconds = 6 minutes
+Relative speed = 12 − 10 = 2 km/h = 2 × 5/18 = 10/18 = 5/9 m/s
+Time = 200 / (5/9) = 200 × 9/5 = 360 seconds = 6 minutes
 
 **Answer:** 6 minutes
 </details>
 
-### Set 3: Mixtures & Alligations (Questions 11â€“14)
+### Set 3: Mixtures & Alligations (Questions 11–14)
 
-**Question 11:** In what ratio should rice costing â‚¹30/kg and â‚¹42/kg be mixed to get a mixture worth â‚¹36/kg?
+**Question 11:** In what ratio should rice costing ₹30/kg and ₹42/kg be mixed to get a mixture worth ₹36/kg?
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Ratio = (Dearer âˆ’ Mean) : (Mean âˆ’ Cheaper)
+**Formula:** Ratio = (Dearer − Mean) : (Mean − Cheaper)
 
 Cheaper = 30, Dearer = 42, Mean = 36
-Ratio = (42âˆ’36) : (36âˆ’30) = 6:6 = 1:1
+Ratio = (42−36) : (36−30) = 6:6 = 1:1
 
 **Answer:** 1:1
 </details>
@@ -835,10 +835,10 @@ Ratio = (42âˆ’36) : (36âˆ’30) = 6:6 = 1:1
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Remaining = x(1 âˆ’ y/x)^n
+**Formula:** Remaining = x(1 − y/x)^n
 
 x = 60, y = 12, n = 2
-Remaining = 60 Ã— (1 âˆ’ 12/60)Â² = 60 Ã— (4/5)Â² = 60 Ã— 16/25 = 38.4 litres
+Remaining = 60 × (1 − 12/60)² = 60 × (4/5)² = 60 × 16/25 = 38.4 litres
 
 **Answer:** 38.4 litres
 </details>
@@ -849,7 +849,7 @@ Remaining = 60 Ã— (1 âˆ’ 12/60)Â² = 60 Ã— (4/5)Â² = 60 Ã— 16/25
 <summary>Answer & Solution</summary>
 **Formula:** Quantity of milk remains unchanged. New total = milk/(new milk ratio)
 
-Milk = (3/4) Ã— 40 = 30 litres
+Milk = (3/4) × 40 = 30 litres
 Water = 10 litres
 After adding water: milk:water = 2:1
 30/(10 + x) = 2/1
@@ -859,22 +859,22 @@ x = 5 litres
 **Answer:** 5 litres
 </details>
 
-**Question 14:** In what ratio must water (free) be mixed with milk costing â‚¹50 per litre to obtain a mixture worth â‚¹40 per litre?
+**Question 14:** In what ratio must water (free) be mixed with milk costing ₹50 per litre to obtain a mixture worth ₹40 per litre?
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Ratio = (Dearer âˆ’ Mean) : (Mean âˆ’ Cheaper)
+**Formula:** Ratio = (Dearer − Mean) : (Mean − Cheaper)
 
 Cost of water = 0, cost of milk = 50, mean = 40
-Ratio = (50âˆ’40) : (40âˆ’0) = 10:40 = 1:4
+Ratio = (50−40) : (40−0) = 10:40 = 1:4
 Water:Milk = 1:4
 
 **Answer:** 1:4
 </details>
 
-### Set 4: Partnership (Questions 15â€“17)
+### Set 4: Partnership (Questions 15–17)
 
-**Question 15:** A and B invest â‚¹40,000 and â‚¹60,000 in a business. At the end of the year, the profit is â‚¹75,000. Find each partner's share.
+**Question 15:** A and B invest ₹40,000 and ₹60,000 in a business. At the end of the year, the profit is ₹75,000. Find each partner's share.
 
 <details>
 <summary>Answer & Solution</summary>
@@ -882,42 +882,42 @@ Water:Milk = 1:4
 
 Ratio = 40000:60000 = 2:3
 Sum = 5
-A's share = (2/5) Ã— 75000 = â‚¹30,000
-B's share = (3/5) Ã— 75000 = â‚¹45,000
+A's share = (2/5) × 75000 = ₹30,000
+B's share = (3/5) × 75000 = ₹45,000
 
-**Answer:** A = â‚¹30,000, B = â‚¹45,000
+**Answer:** A = ₹30,000, B = ₹45,000
 </details>
 
-**Question 16:** A starts a business with â‚¹50,000. After 6 months, B joins with â‚¹80,000. After 1 year, the profit is â‚¹84,000. Find B's share.
+**Question 16:** A starts a business with ₹50,000. After 6 months, B joins with ₹80,000. After 1 year, the profit is ₹84,000. Find B's share.
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Profit ratio = Iâ‚Tâ‚ : Iâ‚‚Tâ‚‚
+**Formula:** Profit ratio = I₁T₁ : I₂T₂
 
 A's investment period = 12 months
 B's investment period = 6 months
-Ratio = (50000Ã—12) : (80000Ã—6) = 600000:480000 = 5:4
+Ratio = (50000×12) : (80000×6) = 600000:480000 = 5:4
 Sum = 9
-B's share = (4/9) Ã— 84000 = â‚¹37,333.33
+B's share = (4/9) × 84000 = ₹37,333.33
 
-**Answer:** â‚¹37,333.33
+**Answer:** ₹37,333.33
 </details>
 
-**Question 17:** A and B invest in a business in ratio 3:2. A is a working partner and gets 15% of profit as salary. If total profit is â‚¹55,000, find B's share.
+**Question 17:** A and B invest in a business in ratio 3:2. A is a working partner and gets 15% of profit as salary. If total profit is ₹55,000, find B's share.
 
 <details>
 <summary>Answer & Solution</summary>
 **Formula:** Working partner gets salary first, remaining profit shared in investment ratio.
 
-A's salary = 15% of 55000 = â‚¹8,250
-Remaining profit = 55,000 âˆ’ 8,250 = â‚¹46,750
+A's salary = 15% of 55000 = ₹8,250
+Remaining profit = 55,000 − 8,250 = ₹46,750
 Investment ratio = 3:2, sum = 5
-B's share = (2/5) Ã— 46750 = â‚¹18,700
+B's share = (2/5) × 46750 = ₹18,700
 
-**Answer:** â‚¹18,700
+**Answer:** ₹18,700
 </details>
 
-### Set 5: Ages (Questions 18â€“20)
+### Set 5: Ages (Questions 18–20)
 
 **Question 18:** The ratio of A's age to B's age is 3:4. After 8 years, the ratio becomes 5:6. Find the present age of A.
 
@@ -942,8 +942,8 @@ A = 12 years
 **Formula:** Constant difference equation; let son = x, father = 3x
 
 Son = x, Father = 3x
-5 years ago: 3x âˆ’ 5 = 4(x âˆ’ 5)
-3x âˆ’ 5 = 4x âˆ’ 20
+5 years ago: 3x − 5 = 4(x − 5)
+3x − 5 = 4x − 20
 x = 15
 Son = 15 years
 
@@ -954,16 +954,16 @@ Son = 15 years
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Two equations: M + D = 50, (Mâˆ’5) = 3(Dâˆ’5)
+**Formula:** Two equations: M + D = 50, (M−5) = 3(D−5)
 
 M + D = 50 ...(i)
-M âˆ’ 5 = 3(D âˆ’ 5) â†’ M âˆ’ 5 = 3D âˆ’ 15 â†’ M = 3D âˆ’ 10 ...(ii)
-Substitute (ii) in (i): 3D âˆ’ 10 + D = 50 â†’ 4D = 60 â†’ D = 15
+M − 5 = 3(D − 5) → M − 5 = 3D − 15 → M = 3D − 10 ...(ii)
+Substitute (ii) in (i): 3D − 10 + D = 50 → 4D = 60 → D = 15
 
 **Answer:** 15 years
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 **1.** A can do a work in 24 days. B is 20% more efficient than A. How many days will B take alone?
 
@@ -985,7 +985,7 @@ Substitute (ii) in (i): 3D âˆ’ 10 + D = 50 â†’ 4D = 60 â†’ D = 15
 
 **10.** A person walks at 5 km/h from A to B and reaches at 2 PM. If he walks at 7 km/h, he reaches at 12 noon. Find the distance AB.
 
-**11.** In what ratio should tea costing â‚¹180/kg and â‚¹220/kg be mixed so that the mixture sold at â‚¹210/kg yields no profit no loss?
+**11.** In what ratio should tea costing ₹180/kg and ₹220/kg be mixed so that the mixture sold at ₹210/kg yields no profit no loss?
 
 **12.** A can contains 30 litres of pure milk. 10 litres are drawn and replaced with water. This is repeated once. Find the quantity of milk remaining.
 
@@ -993,11 +993,11 @@ Substitute (ii) in (i): 3D âˆ’ 10 + D = 50 â†’ 4D = 60 â†’ D = 15
 
 **14.** Gold is 18 times as heavy as water and copper is 9 times as heavy as water. In what ratio should they be mixed to get an alloy 15 times as heavy as water?
 
-**15.** A, B, C invest â‚¹20,000, â‚¹30,000, â‚¹40,000 in a partnership. C leaves after 8 months. At the end of 2 years, the profit is â‚¹1,80,000. Find each share.
+**15.** A, B, C invest ₹20,000, ₹30,000, ₹40,000 in a partnership. C leaves after 8 months. At the end of 2 years, the profit is ₹1,80,000. Find each share.
 
-**16.** A and B start a business with â‚¹10,000 and â‚¹15,000. After 4 months, A withdraws â‚¹4,000. After another 4 months, B invests â‚¹5,000 more. Find the profit share ratio at the end of 2 years.
+**16.** A and B start a business with ₹10,000 and ₹15,000. After 4 months, A withdraws ₹4,000. After another 4 months, B invests ₹5,000 more. Find the profit share ratio at the end of 2 years.
 
-**17.** A working partner gets 10% of profit as salary and the rest is shared in the ratio of investments. If A and B invest â‚¹30,000 and â‚¹50,000, and total profit is â‚¹80,000, find A's total share.
+**17.** A working partner gets 10% of profit as salary and the rest is shared in the ratio of investments. If A and B invest ₹30,000 and ₹50,000, and total profit is ₹80,000, find A's total share.
 
 **18.** The ratio of ages of A and B is 4:7. After 5 years, the ratio will be 3:5. Find their present ages.
 
@@ -1017,7 +1017,7 @@ Substitute (ii) in (i): 3D âˆ’ 10 + D = 50 â†’ 4D = 60 â†’ D = 15
 
 **26.** Alcohol and water are in a vessel in ratio 4:1. 15 litres of mixture is drawn and replaced with water. If the ratio becomes 3:2, find the initial quantity.
 
-**27.** A, B, C started a business. A invested â‚¹20,000 for 6 months, B â‚¹30,000 for 8 months, C â‚¹40,000 for 10 months. Find their profit share ratio.
+**27.** A, B, C started a business. A invested ₹20,000 for 6 months, B ₹30,000 for 8 months, C ₹40,000 for 10 months. Find their profit share ratio.
 
 **28.** The average age of a family of 5 members is 25 years. If the youngest member is 5 years old, what was the average 5 years ago?
 
@@ -1031,7 +1031,7 @@ Substitute (ii) in (i): 3D âˆ’ 10 + D = 50 â†’ 4D = 60 â†’ D = 15
 2. 3 men
 3. 16 days
 4. 30/7 = 4.29 hours
-5. 40/7 â‰ˆ 5.71 days
+5. 40/7 ≈ 5.71 days
 6. 72 km/h
 7. 126 seconds
 8. 1.5 km/h
@@ -1041,13 +1041,13 @@ Substitute (ii) in (i): 3D âˆ’ 10 + D = 50 â†’ 4D = 60 â†’ D = 15
 12. 13.33 litres
 13. 20 litres
 14. 2:1
-15. A=â‚¹48,000, B=â‚¹72,000, C=â‚¹60,000
+15. A=₹48,000, B=₹72,000, C=₹60,000
 16. 14:23
-17. â‚¹36,250
+17. ₹36,250
 18. A=20, B=35
 19. F=35, S=10
 20. R=64, S=16
-21. 200/7 â‰ˆ 28.57 days
+21. 200/7 ≈ 28.57 days
 22. 18 minutes
 23. L=200m, S=72 km/h
 24. 24 km/h
@@ -1058,7 +1058,7 @@ Substitute (ii) in (i): 3D âˆ’ 10 + D = 50 â†’ 4D = 60 â†’ D = 15
 29. A=35, B=10
 30. 5 hours
 
-## Mermaid Diagram: Work â€” Efficiency vs Time
+## Mermaid Diagram: Work — Efficiency vs Time
 
 ```mermaid
 flowchart TD
@@ -1078,10 +1078,10 @@ flowchart TD
 flowchart TD
     A["TSD Problem"] --> B{"What is given?"}
     B -->|"Train & pole"| C["Time = Length/Speed"]
-    B -->|"Train & platform"| D["Time = (Lâ‚+Lâ‚‚)/Speed"]
+    B -->|"Train & platform"| D["Time = (L₁+L₂)/Speed"]
     B -->|"Two trains meeting"| E{"Direction?"}
-    E -->|"Same"| F["Rel Spd = |Sâ‚âˆ’Sâ‚‚|"]
-    E -->|"Opposite"| G["Rel Spd = Sâ‚+Sâ‚‚"]
+    E -->|"Same"| F["Rel Spd = |S₁−S₂|"]
+    E -->|"Opposite"| G["Rel Spd = S₁+S₂"]
     C --> H["Time = Distance/Rel Spd"]
     D --> H
     F --> H
@@ -1089,33 +1089,33 @@ flowchart TD
     H --> I["Answer"]
 ```
 
-## Mermaid Diagram: Alligation â€” Cross Method Visual
+## Mermaid Diagram: Alligation — Cross Method Visual
 
 ```mermaid
 flowchart LR
-    A["C (Cheaper)"] --> D["Deviation = M âˆ’ C"]
+    A["C (Cheaper)"] --> D["Deviation = M − C"]
     B["M (Mean)"] --> D
-    B --> E["Deviation = D âˆ’ M"]
+    B --> E["Deviation = D − M"]
     C["D (Dearer)"] --> E
-    D --> F["Qty of Dearer = (M âˆ’ C)"]
-    E --> G["Qty of Cheaper = (D âˆ’ M)"]
-    F --> H["Ratio = (Dâˆ’M) : (Mâˆ’C)"]
+    D --> F["Qty of Dearer = (M − C)"]
+    E --> G["Qty of Cheaper = (D − M)"]
+    F --> H["Ratio = (D−M) : (M−C)"]
     G --> H
 ```
 
-## Mermaid Diagram: Partnership â€” Time-Adjusted Shares
+## Mermaid Diagram: Partnership — Time-Adjusted Shares
 
 ```mermaid
 flowchart TD
-    A["Partners A, B, C"] --> B["Each invests Iâ‚, Iâ‚‚, Iâ‚ƒ"]
-    A --> C["Each invests for Tâ‚, Tâ‚‚, Tâ‚ƒ months"]
-    B --> D["Weighted = Iâ‚Ã—Tâ‚ : Iâ‚‚Ã—Tâ‚‚ : Iâ‚ƒÃ—Tâ‚ƒ"]
+    A["Partners A, B, C"] --> B["Each invests I₁, I₂, I₃"]
+    A --> C["Each invests for T₁, T₂, T₃ months"]
+    B --> D["Weighted = I₁×T₁ : I₂×T₂ : I₃×T₃"]
     C --> D
     D --> E["Simplify ratio"]
-    E --> F["Profit share = (Part/Sum)Ã—Total Profit"]
+    E --> F["Profit share = (Part/Sum)×Total Profit"]
 ```
 
-## Mermaid Diagram: Age Problem â€” Constant Difference Principle
+## Mermaid Diagram: Age Problem — Constant Difference Principle
 
 ```mermaid
 flowchart TD
@@ -1131,11 +1131,11 @@ flowchart TD
 
 ## Summary
 
-- **Time & Work** is best solved using the LCM method â€” convert to units of work per day
+- **Time & Work** is best solved using the LCM method — convert to units of work per day
 - **Time-Speed-Distance** requires careful attention to units (m/s vs km/h) and relative speed concepts
 - **Mixtures & Alligations** follows a deviation-based approach; the alligation rule is the core tool
-- **Partnership** problems involve profit sharing in the ratio of investment Ã— time
-- **Ages** are solved using the constant difference property â€” the age gap between two people never changes
+- **Partnership** problems involve profit sharing in the ratio of investment × time
+- **Ages** are solved using the constant difference property — the age gap between two people never changes
 - Boats & streams problems are a subset of TSD with upstream/downstream speed formulas
 - Pipe & cistern problems are identical to time & work but with the concept of emptying (negative work)
 - Replacement problems have a direct formula that can be applied in one step
@@ -1146,9 +1146,9 @@ flowchart TD
 |-------|-------------|----------------|
 | Time & Work | LCM method for total work | Not converting to 1 day's work |
 | TSD | Speed = Distance/Time | Forgetting unit conversion (5/18) |
-| Relative Speed | Same: |Sâ‚-Sâ‚‚|, Opposite: Sâ‚+Sâ‚‚ | Adding speeds when they should subtract |
+| Relative Speed | Same: |S₁-S₂|, Opposite: S₁+S₂ | Adding speeds when they should subtract |
 | Alligation | Ratio = (D-M):(M-C) | Reversing the ratio |
-| Partnership | Ratio = Iâ‚Tâ‚ : Iâ‚‚Tâ‚‚ | Using only investment, ignoring time |
+| Partnership | Ratio = I₁T₁ : I₂T₂ | Using only investment, ignoring time |
 | Ages | Difference is constant | Forgetting to add/subtract years correctly |
 | Boats & Streams | b = (D+U)/2, s = (D-U)/2 | Confusing upstream and downstream |
 | Replacement | x(1-y/x)^n | Not raising to power n |
@@ -1161,7 +1161,7 @@ A can do a work in 10 days and B can do the same work in 15 days. How many days 
 
 <details>
 <summary>Answer</summary>
-Time = (10 Ã— 15) / (10 + 15) = 150/25 = 6 days
+Time = (10 × 15) / (10 + 15) = 150/25 = 6 days
 </details>
 
 ### Question 2
@@ -1171,33 +1171,33 @@ A train 300 m long passes a platform 700 m long in 50 seconds. Find the speed of
 <details>
 <summary>Answer</summary>
 Total distance = 300 + 700 = 1000 m
-Speed = 1000/50 = 20 m/s = 20 Ã— 18/5 = 72 km/h
+Speed = 1000/50 = 20 m/s = 20 × 18/5 = 72 km/h
 </details>
 
 ### Question 3
 
-In what ratio must water be mixed with milk costing â‚¹60 per litre to obtain a mixture worth â‚¹50 per litre?
+In what ratio must water be mixed with milk costing ₹60 per litre to obtain a mixture worth ₹50 per litre?
 
 <details>
 <summary>Answer</summary>
 Using alligation:
-Water cost = â‚¹0, Milk cost = â‚¹60
-Mean = â‚¹50
+Water cost = ₹0, Milk cost = ₹60
+Mean = ₹50
 Ratio = (60-50):(50-0) = 10:50 = 1:5
 Water:Milk = 1:5
 </details>
 
 ### Question 4
 
-A and B invest â‚¹50,000 and â‚¹75,000 in a business. A is a working partner and gets 20% of the profit as salary. The remaining profit is shared in the ratio of their investments. If total profit is â‚¹60,000, find A's total share.
+A and B invest ₹50,000 and ₹75,000 in a business. A is a working partner and gets 20% of the profit as salary. The remaining profit is shared in the ratio of their investments. If total profit is ₹60,000, find A's total share.
 
 <details>
 <summary>Answer</summary>
-A's salary = 20% of 60000 = â‚¹12,000
-Remaining profit = â‚¹48,000
+A's salary = 20% of 60000 = ₹12,000
+Remaining profit = ₹48,000
 Investment ratio = 50000:75000 = 2:3
-A's share of remaining = (2/5) Ã— 48000 = â‚¹19,200
-A's total = 12000 + 19200 = â‚¹31,200
+A's share of remaining = (2/5) × 48000 = ₹19,200
+A's total = 12000 + 19200 = ₹31,200
 </details>
 
 ### Question 5
@@ -1211,7 +1211,7 @@ Six years hence: (3x+6)/(2x+6) = 4/3
 3(3x+6) = 4(2x+6)
 9x+18 = 8x+24
 x = 6
-B's present age = 2Ã—6 = 12 years
+B's present age = 2×6 = 12 years
 </details>
 
 ## Exercises
@@ -1230,7 +1230,7 @@ A man rows downstream 18 km in 2 hours and upstream 12 km in 3 hours. Find the s
 
 ### Exercise 4 (Intermediate)
 
-A starts a business with â‚¹40,000. After 6 months, B joins with â‚¹60,000. At the end of 2 years, the profit is â‚¹1,32,000. Find the share of each.
+A starts a business with ₹40,000. After 6 months, B joins with ₹60,000. At the end of 2 years, the profit is ₹1,32,000. Find the share of each.
 
 ### Exercise 5 (Intermediate)
 
@@ -1242,7 +1242,7 @@ A tank can be filled by pipe A in 4 hours and by pipe B in 6 hours. An outlet pi
 
 ### Exercise 7 (Advanced)
 
-In what ratio should coffee costing â‚¹250/kg and â‚¹350/kg be mixed so that the mixture sold at â‚¹324/kg yields a profit of 20%?
+In what ratio should coffee costing ₹250/kg and ₹350/kg be mixed so that the mixture sold at ₹324/kg yields a profit of 20%?
 
 ### Exercise 8 (Advanced)
 
@@ -1262,9 +1262,9 @@ A train passes two persons walking at 3 km/h and 5 km/h in the same direction in
 1. 7.5 days
 2. 54 km/h
 3. 1.5 km/h
-4. A = â‚¹60,000, B = â‚¹72,000
+4. A = ₹60,000, B = ₹72,000
 5. Son = 10 years, Father = 30 years
-6. 24/7 = 3.43 hours â‰ˆ 3 hours 26 minutes
+6. 24/7 = 3.43 hours ≈ 3 hours 26 minutes
 7. 5:3
 8. 24 km/h
 9. 48 litres

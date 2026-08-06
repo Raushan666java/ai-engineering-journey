@@ -1,4 +1,4 @@
-﻿# Kubernetes Deployment
+# Kubernetes Deployment
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 
@@ -58,7 +58,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Kubernetes Architecture
 
-> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -66,33 +66,33 @@ By the end of this chapter, you will be able to:
 ![Kubernetes Deployment - Pods, Services, Helm, HPA](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/53-kubernetes.png)
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                    Control Plane                      â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           â”‚
-â”‚  â”‚  API     â”‚  â”‚ Schedulerâ”‚  â”‚Controllerâ”‚           â”‚
-â”‚  â”‚  Server  â”‚  â”‚          â”‚  â”‚  Manager â”‚           â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜           â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚   etcd   â”‚  â”‚        Cloud Controller          â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-         â”‚
-         â–¼
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                    Worker Nodes                       â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚  Node 1              â”‚  â”‚  Node 2              â”‚  â”‚
-â”‚  â”‚  â”Œâ”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â” â”Œâ”€â”€â”€â”â”‚  â”‚  â”Œâ”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â” â”Œâ”€â”€â”€â”â”‚  â”‚
-â”‚  â”‚  â”‚Pod â”‚ â”‚Pod â”‚ â”‚Podâ”‚â”‚  â”‚  â”‚Pod â”‚ â”‚Pod â”‚ â”‚Podâ”‚â”‚  â”‚
-â”‚  â”‚  â””â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”˜â”‚  â”‚  â””â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”˜â”‚  â”‚
-â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚  â”‚
-â”‚  â”‚  â”‚   kubelet       â”‚ â”‚  â”‚  â”‚   kubelet       â”‚ â”‚  â”‚
-â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚
-â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚  â”‚
-â”‚  â”‚  â”‚   kube-proxy    â”‚ â”‚  â”‚  â”‚   kube-proxy    â”‚ â”‚  â”‚
-â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────┐
+│                    Control Plane                      │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐           │
+│  │  API     │  │ Scheduler│  │Controller│           │
+│  │  Server  │  │          │  │  Manager │           │
+│  └──────────┘  └──────────┘  └──────────┘           │
+│  ┌──────────┐  ┌─────────────────────────────────┐  │
+│  │   etcd   │  │        Cloud Controller          │  │
+│  └──────────┘  └─────────────────────────────────┘  │
+└─────────────────────────────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────────────────────┐
+│                    Worker Nodes                       │
+│  ┌──────────────────────┐  ┌──────────────────────┐  │
+│  │  Node 1              │  │  Node 2              │  │
+│  │  ┌────┐ ┌────┐ ┌───┐│  │  ┌────┐ ┌────┐ ┌───┐│  │
+│  │  │Pod │ │Pod │ │Pod││  │  │Pod │ │Pod │ │Pod││  │
+│  │  └────┘ └────┘ └───┘│  │  └────┘ └────┘ └───┘│  │
+│  │  ┌─────────────────┐ │  │  ┌─────────────────┐ │  │
+│  │  │   kubelet       │ │  │  │   kubelet       │ │  │
+│  │  └─────────────────┘ │  │  └─────────────────┘ │  │
+│  │  ┌─────────────────┐ │  │  ┌─────────────────┐ │  │
+│  │  │   kube-proxy    │ │  │  │   kube-proxy    │ │  │
+│  │  └─────────────────┘ │  │  └─────────────────┘ │  │
+│  └──────────────────────┘  └──────────────────────┘  │
+└─────────────────────────────────────────────────────┘
 ```
 
 ### 1.1 Core Components
@@ -106,7 +106,7 @@ By the end of this chapter, you will be able to:
 | **Controller Manager** | Runs controllers (Deployment, ReplicaSet, etc.) |
 | **kubelet** | Node agent that manages Pods |
 | **kube-proxy** | Network proxy for Services |
-| **Pod** | Smallest deployable unit â†’ one or more containers |
+| **Pod** | Smallest deployable unit → one or more containers |
 | **Service** | Stable network endpoint for a set of Pods |
 
 ---
@@ -282,9 +282,9 @@ spec:
 
 
 ```
-Pending â†’ ContainerCreating â†’ Running â†’ Succeeded/Failed
-                â”‚                              â”‚
-                â–¼                              â–¼
+Pending → ContainerCreating → Running → Succeeded/Failed
+                │                              │
+                ▼                              ▼
            Pod scheduled               Container terminated
            Images pulling               Exit code indicates
            Containers starting          success or failure
@@ -367,7 +367,7 @@ spec:
 | **BestEffort** | No requests or limits set |
 
 ```yaml
-# Guaranteed QoS â†’ highest priority, never OOMKilled unless exceeds limits
+# Guaranteed QoS → highest priority, never OOMKilled unless exceeds limits
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 resources:
@@ -383,7 +383,7 @@ resources:
 
 ## 3. Services
 
-### 3.1 ClusterIP (Default â†’ Internal Only)
+### 3.1 ClusterIP (Default → Internal Only)
 
 
 ```yaml
@@ -683,7 +683,7 @@ Immutable ConfigMaps improve performance because the API server doesn't need to 
 
 
 ```properties
-# application-k8s.properties â†’ mounted from ConfigMap
+# application-k8s.properties → mounted from ConfigMap
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 spring.config.import=configmap:app-config
@@ -1231,8 +1231,8 @@ management:
 
 When configured, Spring Boot exposes:
 
-- `/actuator/health/liveness` â†’ returns `{"status": "UP"}` when the application is alive
-- `/actuator/health/readiness` â†’ returns `{"status": "UP"}` when the application is ready to accept traffic
+- `/actuator/health/liveness` → returns `{"status": "UP"}` when the application is alive
+- `/actuator/health/readiness` → returns `{"status": "UP"}` when the application is ready to accept traffic
 
 ### 7.5 Customizing Liveness and Readiness State
 
@@ -1291,25 +1291,25 @@ public class CustomProbeManager {
 
 ```
 myapp-chart/
-â”œâ”€â”€ Chart.yaml              # Chart metadata
-â”œâ”€â”€ values.yaml             # Default configuration values
-â”œâ”€â”€ values.prod.yaml        # Override for production
-â”œâ”€â”€ values.staging.yaml     # Override for staging
-â”œâ”€â”€ charts/                 # Sub-charts (dependencies)
-â”‚   â””â”€â”€ postgresql/
-â”œâ”€â”€ templates/
-â”‚   â”œâ”€â”€ _helpers.tpl        # Template helpers
-â”‚   â”œâ”€â”€ deployment.yaml     # Deployment manifest
-â”‚   â”œâ”€â”€ service.yaml        # Service manifest
-â”‚   â”œâ”€â”€ ingress.yaml        # Ingress manifest
-â”‚   â”œâ”€â”€ configmap.yaml      # ConfigMap manifest
-â”‚   â”œâ”€â”€ secret.yaml         # Secret manifest
-â”‚   â”œâ”€â”€ hpa.yaml            # HorizontalPodAutoscaler
-â”‚   â”œâ”€â”€ serviceaccount.yaml # ServiceAccount
-â”‚   â”œâ”€â”€ tests/              # Test pods
-â”‚   â”‚   â””â”€â”€ test-connection.yaml
-â”‚   â””â”€â”€ NOTES.txt           # Post-install notes
-â””â”€â”€ .helmignore             # Files to exclude from chart
+├── Chart.yaml              # Chart metadata
+├── values.yaml             # Default configuration values
+├── values.prod.yaml        # Override for production
+├── values.staging.yaml     # Override for staging
+├── charts/                 # Sub-charts (dependencies)
+│   └── postgresql/
+├── templates/
+│   ├── _helpers.tpl        # Template helpers
+│   ├── deployment.yaml     # Deployment manifest
+│   ├── service.yaml        # Service manifest
+│   ├── ingress.yaml        # Ingress manifest
+│   ├── configmap.yaml      # ConfigMap manifest
+│   ├── secret.yaml         # Secret manifest
+│   ├── hpa.yaml            # HorizontalPodAutoscaler
+│   ├── serviceaccount.yaml # ServiceAccount
+│   ├── tests/              # Test pods
+│   │   └── test-connection.yaml
+│   └── NOTES.txt           # Post-install notes
+└── .helmignore             # Files to exclude from chart
 ```
 
 ### 8.2 Chart.yaml
@@ -1747,7 +1747,7 @@ dependencies:
 ```
 
 ```yaml
-# values.yaml â†’ controlling conditions
+# values.yaml → controlling conditions
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 postgresql:
@@ -1760,7 +1760,7 @@ redis:
 ```
 
 ```yaml
-# templates/deployment.yaml â†’ conditionally include elements
+# templates/deployment.yaml → conditionally include elements
 
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 {{- if .Values.ingress.enabled }}
@@ -2650,10 +2650,10 @@ spec:
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
-| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
-| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Small application | ✓ | ✗ | ✓ |
+| Enterprise system | ✓ | ✓ | ✗ |
+| High-throughput API | ✗ | ✓ | ✓ |
+| Event-driven | ✗ | ✓ | ✓ |
 
 ## Chapter Quiz
 
@@ -2683,7 +2683,7 @@ spec:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â†’ it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;
@@ -2692,11 +2692,11 @@ spec:
 
 ## Summary
 
-- **Pods** are the smallest deployable unit â†’ use multi-container Pods for sidecars and init containers for setup tasks
+- **Pods** are the smallest deployable unit → use multi-container Pods for sidecars and init containers for setup tasks
 - **Services** provide stable networking (ClusterIP internal, NodePort external, LoadBalancer cloud LB, Ingress for HTTP routing)
-- **ConfigMaps** and **Secrets** externalize configuration â†’ prefer volume mounts for auto-refresh
+- **ConfigMaps** and **Secrets** externalize configuration → prefer volume mounts for auto-refresh
 - **Deployments** manage rollouts with configurable strategies (RollingUpdate, Recreate)
-- **Probes** (liveness, readiness, startup) keep applications healthy â†’ integrate with Spring Boot Actuator
+- **Probes** (liveness, readiness, startup) keep applications healthy → integrate with Spring Boot Actuator
 - **Helm charts** package Kubernetes manifests with parameterized templates, helpers, hooks, and conditions
 - **Spring Boot on Kubernetes** uses native service discovery (DNS), ConfigMaps for externalized config, and health probes
 - **Auto-scaling** with HPA (replicas) and VPA (resources) adapts to load

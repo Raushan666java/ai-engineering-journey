@@ -1,4 +1,4 @@
-﻿# Chapter 28: Finance & FinTech Agents
+# Chapter 28: Finance & FinTech Agents
 
 > **Previous:** [Healthcare](./27-healthcare.md) | **Next:** [Education](./29-education.md)
 
@@ -1475,7 +1475,7 @@ PROMPT;
 
 > **One-Sentence Takeaway:** Trading signal agents analyze market data and generate buy/sell signals based on defined strategies.
 
-Trading signal agents ingest market data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prices, volumes, economic indicators ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â and generate buy, sell, or hold signals with assigned conviction levels and risk parameters.
+Trading signal agents ingest market data — prices, volumes, economic indicators — and generate buy, sell, or hold signals with assigned conviction levels and risk parameters.
 
 #### The TradingSignalAgent
 
@@ -2977,7 +2977,7 @@ class ReconciliationRecord extends Model
 Finance and FinTech agents bring AI-powered automation to the most regulated sector in software. This chapter covered:
 
 - **Financial data models**: PCI-DSS-aware `Account` and `Transaction` models with field-level encryption, soft deletes, and immutable `AuditTrail` logging for every mutation
-- **Fraud detection**: A `FraudDetectionAgent` combining rule-based velocity, amount, and age checks with AI risk scoring ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â plus a `TransactionMonitor` service for real-time screening and alert dispatch
+- **Fraud detection**: A `FraudDetectionAgent` combining rule-based velocity, amount, and age checks with AI risk scoring — plus a `TransactionMonitor` service for real-time screening and alert dispatch
 - **Transaction monitoring**: A `TransactionMonitoringAgent` that runs threshold analysis, statistical outlier detection, and AI anomaly assessment on transaction batches with severity-based multi-channel alerts
 - **KYC/AML verification**: A `KycVerificationAgent` that analyzes identity documents, screens global watchlists with fuzzy name matching, and produces risk profiles backed by `KycVerification` and `WatchlistEntry` models
 - **Credit scoring**: A `CreditScoringAgent` that gathers debt-to-income, utilization, delinquency, and history data, applies a weighted scoring formula, and produces approved amounts with AI-adjusted interest rates

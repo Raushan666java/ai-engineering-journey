@@ -1,4 +1,4 @@
-﻿# CPU Organization
+# CPU Organization
 
 ## Learning Objectives
 
@@ -53,7 +53,7 @@ The Central Processing Unit (CPU) has three primary functional units:
 | MDR | Memory Data Register | m bits | Holds data read from or written to memory |
 | AC/ACC | Accumulator | m bits | Holds ALU result (in accumulator-based CPUs) |
 | SP | Stack Pointer | n bits | Points to top of stack |
-| PSW/FLAGS | Program Status Word | 8â€“32 bits | Stores condition codes (zero, carry, overflow, sign) |
+| PSW/FLAGS | Program Status Word | 8–32 bits | Stores condition codes (zero, carry, overflow, sign) |
 | GPRs | General Purpose Registers | m bits each | Temporary data storage (R0, R1, ..., Rn) |
 
 **Data path width distinction:**
@@ -68,7 +68,7 @@ The CPU executes instructions in a repetitive cycle.
 **Classic 5-step cycle:**
 
 ```
-1. IF (Instruction Fetch):   MAR â† PC, read memory â†’ MDR â†’ IR, PC â† PC + 1
+1. IF (Instruction Fetch):   MAR ← PC, read memory → MDR → IR, PC ← PC + 1
 2. ID (Instruction Decode):  Control unit decodes IR to generate control signals
 3. OF (Operand Fetch):       Compute effective address, read operands from registers/memory
 4. EX (Execute):             ALU performs operation
@@ -79,31 +79,31 @@ The CPU executes instructions in a repetitive cycle.
 
 | Step | Micro-operation | Explanation |
 |------|-----------------|-------------|
-| T1 | MAR â† PC | Address of instruction â†’ MAR |
-| T2 | MDR â† Memory[MAR], PC â† PC + 1 | Fetch instruction, increment PC |
-| T3 | IR â† MDR | Instruction â†’ IR |
+| T1 | MAR ← PC | Address of instruction → MAR |
+| T2 | MDR ← Memory[MAR], PC ← PC + 1 | Fetch instruction, increment PC |
+| T3 | IR ← MDR | Instruction → IR |
 | T4 | Decode IR | CU interprets opcode and address mode |
-| T5 | MAR â† IR[address field] | Operand address from instruction |
-| T6 | MDR â† Memory[MAR] | Fetch operand data |
-| T7 | R1 â† MDR | Load operand into register R1 |
+| T5 | MAR ← IR[address field] | Operand address from instruction |
+| T6 | MDR ← Memory[MAR] | Fetch operand data |
+| T7 | R1 ← MDR | Load operand into register R1 |
 
 **For STORE instruction (STORE R1, 500):**
 
 | Step | Micro-operation |
 |------|-----------------|
-| T1â€“T4 | Same as LOAD (fetch and decode) |
-| T5 | MAR â† IR[address field] |
-| T6 | MDR â† R1 |
-| T7 | Memory[MAR] â† MDR |
+| T1–T4 | Same as LOAD (fetch and decode) |
+| T5 | MAR ← IR[address field] |
+| T6 | MDR ← R1 |
+| T7 | Memory[MAR] ← MDR |
 
 **For ADD on accumulator machine (ADD 500):**
 
 | Step | Micro-operation |
 |------|-----------------|
-| T1â€“T4 | Fetch and decode |
-| T5 | MAR â† IR[address field] |
-| T6 | MDR â† Memory[MAR] |
-| T7 | AC â† AC + MDR |
+| T1–T4 | Fetch and decode |
+| T5 | MAR ← IR[address field] |
+| T6 | MDR ← Memory[MAR] |
+| T7 | AC ← AC + MDR |
 
 ### 3. Instruction Formats
 
@@ -117,20 +117,20 @@ Instructions implicitly operate on the top of stack (TOS).
 ```
 PUSH 5    // Push 5 onto stack
 PUSH 3    // Push 3 onto stack
-ADD       // Pop two, add, push result â†’ TOS = 8
+ADD       // Pop two, add, push result → TOS = 8
 ```
 
 **Advantages:** Short instructions, minimal operand specification required.
 **Disadvantages:** Many instructions needed for complex expressions; stack is memory.
 
-**Expression evaluation: A = (B + C) Ã— D**
+**Expression evaluation: A = (B + C) × D**
 
 ```
 PUSH B      // Stack: B
 PUSH C      // Stack: B, C
 ADD         // Stack: B+C
 PUSH D      // Stack: (B+C), D
-MUL         // Stack: (B+C)Ã—D
+MUL         // Stack: (B+C)×D
 POP A       // Store to A
 ```
 
@@ -140,18 +140,18 @@ Uses an implicit accumulator register as one operand and destination.
 
 **Example (Intel 8080 / 8051):**
 ```
-LOAD B      // AC â† M[B]
-ADD C       // AC â† AC + M[C]
-STORE A     // M[A] â† AC
+LOAD B      // AC ← M[B]
+ADD C       // AC ← AC + M[C]
+STORE A     // M[A] ← AC
 ```
 
 **Expression: A = B + C + D**
 
 ```
-LOAD B      // AC â† B
-ADD C       // AC â† B + C
-ADD D       // AC â† B + C + D
-STORE A     // A â† AC
+LOAD B      // AC ← B
+ADD C       // AC ← B + C
+ADD D       // AC ← B + C + D
+STORE A     // A ← AC
 ```
 
 **Pros:** Simple, short instructions. **Cons:** Accumulator becomes bottleneck.
@@ -162,17 +162,17 @@ First operand is both source and destination, or both operands are specified.
 
 **Example (Intel x86):**
 ```
-MOV R1, B   // R1 â† B
-ADD R1, C   // R1 â† R1 + C
-MOV A, R1   // A â† R1
+MOV R1, B   // R1 ← B
+ADD R1, C   // R1 ← R1 + C
+MOV A, R1   // A ← R1
 ```
 
-Or with memory operands: `ADD R1, R2` â†’ R1 â† R1 + R2.
+Or with memory operands: `ADD R1, R2` → R1 ← R1 + R2.
 
 **Expression: A = B + C**
 
 ```
-ADD A, B    // A â† A + B  (if A is initialized to 0, else MOV then ADD)
+ADD A, B    // A ← A + B  (if A is initialized to 0, else MOV then ADD)
 MOV R1, B
 ADD R1, C
 MOV A, R1
@@ -180,19 +180,19 @@ MOV A, R1
 
 #### Three-Address Format
 
-All operands explicitly specified â€” two sources, one destination.
+All operands explicitly specified — two sources, one destination.
 
 **Example (MIPS, RISC-V):**
 ```
-ADD R1, B, C   // R1 â† B + C
-MUL A, R1, D   // A â† R1 Ã— D
+ADD R1, B, C   // R1 ← B + C
+MUL A, R1, D   // A ← R1 × D
 ```
 
-**Expression: A = (B + C) Ã— D**
+**Expression: A = (B + C) × D**
 
 ```
-ADD R1, B, C   // R1 â† B + C
-MUL A, R1, D   // A â† R1 Ã— D
+ADD R1, B, C   // R1 ← B + C
+MUL A, R1, D   // A ← R1 × D
 ```
 
 **Three-address code requires only 2 instructions** vs. 4+ for one-address or zero-address.
@@ -220,17 +220,17 @@ Addressing modes specify how to compute the effective address (EA) of an operand
 | Indexed | EA = base + index register | `LOAD R1, 100(R2)` | Good for arrays |
 | Base-Register | EA = base register + offset | `LOAD R1, 20(R2)` | Relocation support |
 | Relative | EA = PC + offset | `BEQZ R1, +20` | Position-independent code |
-| Auto-increment/decrement | EA = Reg, then Reg Â±= step | `LOAD R1, (R2)+` | Stack/array traversal |
+| Auto-increment/decrement | EA = Reg, then Reg ±= step | `LOAD R1, (R2)+` | Stack/array traversal |
 
 **Detailed examples for `LOAD R1, operand`:**
 
-1. **Immediate:** `LOAD R1, #42` â†’ R1 = 42. No memory access for operand.
-2. **Direct:** `LOAD R1, 2000` â†’ EA = 2000. R1 = Memory[2000].
-3. **Register:** `LOAD R1, R2` â†’ R1 = R2.
-4. **Register Indirect:** `LOAD R1, (R2)` â†’ If R2 = 2000, then EA = 2000. R1 = Memory[2000].
-5. **Indexed:** `LOAD R1, 100(R2)` â†’ If R2 = 500, EA = 500 + 100 = 600. R1 = Memory[600].
-6. **Relative:** `LOAD R1, +50` â†’ EA = PC + 50.
-7. **Auto-increment:** `LOAD R1, (R2)+` â†’ R1 = Memory[R2], then R2 = R2 + 1 (or word size).
+1. **Immediate:** `LOAD R1, #42` → R1 = 42. No memory access for operand.
+2. **Direct:** `LOAD R1, 2000` → EA = 2000. R1 = Memory[2000].
+3. **Register:** `LOAD R1, R2` → R1 = R2.
+4. **Register Indirect:** `LOAD R1, (R2)` → If R2 = 2000, then EA = 2000. R1 = Memory[2000].
+5. **Indexed:** `LOAD R1, 100(R2)` → If R2 = 500, EA = 500 + 100 = 600. R1 = Memory[600].
+6. **Relative:** `LOAD R1, +50` → EA = PC + 50.
+7. **Auto-increment:** `LOAD R1, (R2)+` → R1 = Memory[R2], then R2 = R2 + 1 (or word size).
 
 **Numerical: Array access using indexing**
 
@@ -238,7 +238,7 @@ Given array A starts at address 2000, each element 4 bytes. A[i] accessed as:
 
 ```
 LOAD R1, i       // R1 = i
-MUL R1, R1, 4    // R1 = i Ã— 4 (byte offset)
+MUL R1, R1, 4    // R1 = i × 4 (byte offset)
 LOAD R2, 2000(R1) // R2 = A[i]
 ```
 
@@ -262,11 +262,11 @@ R1 = Memory[2000] = 500
 |---------|----------------------------------------|----------------------------------------|
 | Instruction complexity | Simple, single-cycle | Complex, multi-cycle |
 | Instruction length | Fixed (32-bit) | Variable |
-| Addressing modes | Few (1â€“5) | Many (10+) |
-| Registers | Large register file (32â€“128 GPRs) | Few registers (8â€“16 GPRs) |
+| Addressing modes | Few (1–5) | Many (10+) |
+| Registers | Large register file (32–128 GPRs) | Few registers (8–16 GPRs) |
 | Memory access | Only LOAD/STORE instructions | Many instructions can access memory |
 | Control unit | Hardwired (faster) | Microprogrammed (easier to design) |
-| CPI (Cycles Per Instruction) | ~1 (pipelined) | 2â€“10+ |
+| CPI (Cycles Per Instruction) | ~1 (pipelined) | 2–10+ |
 | Typical examples | ARM, MIPS, RISC-V, PowerPC | x86, 68000, VAX |
 | Compiler complexity | Higher (compiler must optimize) | Lower (hardware handles complexity) |
 
@@ -293,10 +293,10 @@ R1 = Memory[2000] = 500
 | Used in | RISC CPUs, modern high-performance x86 cores (decoded to micro-ops) | CISC CPUs, IBM 360, older x86 |
 
 **Microprogrammed control components:**
-1. Control Memory (ROM/PLA) â€” stores microinstructions
-2. Microprogram Counter (Î¼PC) â€” addresses next microinstruction
-3. Microinstruction Register (Î¼IR) â€” holds current microinstruction
-4. Next-address generator â€” sequencing logic
+1. Control Memory (ROM/PLA) — stores microinstructions
+2. Microprogram Counter (μPC) — addresses next microinstruction
+3. Microinstruction Register (μIR) — holds current microinstruction
+4. Next-address generator — sequencing logic
 
 **Microinstruction format:**
 ```
@@ -313,30 +313,30 @@ Micro-operations are the smallest indivisible operations performed by the CPU in
 
 **Fetch phase micro-operations:**
 ```
-T0: MAR â† PC
-T1: MDR â† Memory[MAR], PC â† PC + 1
-T2: IR â† MDR
+T0: MAR ← PC
+T1: MDR ← Memory[MAR], PC ← PC + 1
+T2: IR ← MDR
 ```
 
 **Execute phase for ADD (R1, R2):**
 ```
-T3: A â† R1, B â† R2   // Load ALU inputs
-T4: AC â† A + B        // Perform addition
-T5: R1 â† AC           // Store result
+T3: A ← R1, B ← R2   // Load ALU inputs
+T4: AC ← A + B        // Perform addition
+T5: R1 ← AC           // Store result
 ```
 
 **Execute phase for BRANCH (unconditional):**
 ```
-T3: PC â† IR[address field]   // PC = branch target
+T3: PC ← IR[address field]   // PC = branch target
 ```
 
 **Execute phase for BRANCH (conditional, BNEZ):**
 ```
-T3: if R1 â‰  0 then PC â† IR[address field] else continue
+T3: if R1 ≠ 0 then PC ← IR[address field] else continue
 ```
 
 **Register transfer language (RTL) notation:**
-- `â†` : Data transfer
+- `←` : Data transfer
 - `[ ]` : Memory content
 - `( )` : Register content
 - `:  ` : Conditional execution on clock cycle
@@ -345,25 +345,25 @@ T3: if R1 â‰  0 then PC â† IR[address field] else continue
 
 #### Single Accumulator (Von Neumann)
 ```
-ALU â†” AC â†” Memory
+ALU ↔ AC ↔ Memory
 Most operations use AC.
 ```
 
 #### General Register Organization
 ```
-ALU â†” Register File (R0, R1, ..., Rn)
+ALU ↔ Register File (R0, R1, ..., Rn)
 2 read ports + 1 write port for single-cycle operation.
 ```
 
 #### Stack Organization
 ```
-ALU â†” TOS (Top of Stack)
+ALU ↔ TOS (Top of Stack)
 Push/pop operations. Used in JVM, HP calculators.
 ```
 
 ### 9. Important Exam Formulae
 
-- **Instruction length** = logâ‚‚(opcode count) + Î£ logâ‚‚(operand size) for each operand
+- **Instruction length** = log₂(opcode count) + Σ log₂(operand size) for each operand
 - **Effective address (EA)** varies by mode as shown in table above
 - **Number of memory accesses:** Immediate = 0, Register = 0, Direct = 1, Indirect = 2, Register Indirect = 1
 - **CPI = CPU cycles / instruction count**
@@ -467,11 +467,11 @@ Answer: c) PC
 
 **Q2:** In a 3-address instruction format, the instruction `ADD A, B, C` performs:
 
-a) A â† B + C  b) B â† A + C  c) C â† A + B  d) A â† A + B
+a) A ← B + C  b) B ← A + C  c) C ← A + B  d) A ← A + B
 
-**Solution:** In 3-address format, the first operand is typically the destination. ADD A, B, C means A â† B + C.
+**Solution:** In 3-address format, the first operand is typically the destination. ADD A, B, C means A ← B + C.
 
-Answer: a) A â† B + C
+Answer: a) A ← B + C
 
 ---
 
@@ -519,7 +519,7 @@ Answer: b) 2
 
 a) 1000  b) 1001  c) 1004 (assuming 32-bit word)  d) 999
 
-**Solution:** Auto-increment first loads R1 from memory at address R2, then increments R2 by the word size. For 32-bit = 4 bytes, R2 â† 1000 + 4 = 1004.
+**Solution:** Auto-increment first loads R1 from memory at address R2, then increments R2 by the word size. For 32-bit = 4 bytes, R2 ← 1000 + 4 = 1004.
 
 Answer: c) 1004 (assuming 32-bit word)
 
@@ -561,7 +561,7 @@ Modern CPUs integrate multiple processor cores on a single chip to exploit threa
 
 | Aspect | Single-Core | Multi-Core |
 |--------|-------------|------------|
-| Execution units | 1 core | 2â€“128+ cores |
+| Execution units | 1 core | 2–128+ cores |
 | TLP | None (time-shared) | Parallel thread execution |
 | Cache hierarchy | Private L1/L2 | Shared L3, private L1/L2 |
 | Power management | Simple | Complex (DVFS, clock gating) |
@@ -571,13 +571,13 @@ Modern CPUs integrate multiple processor cores on a single chip to exploit threa
 **Amdahl's Law:** Defines speedup from parallelization.
 
 ```
-Speedup = 1 / [(1 âˆ’ P) + P/N]
+Speedup = 1 / [(1 − P) + P/N]
 ```
 Where P = parallelizable fraction, N = number of cores.
 
 **Example:** If 80% of code is parallelizable on a 4-core system:
 ```
-Speedup = 1 / [0.20 + 0.80/4] = 1 / [0.20 + 0.20] = 1/0.40 = 2.5Ã—
+Speedup = 1 / [0.20 + 0.80/4] = 1 / [0.20 + 0.20] = 1/0.40 = 2.5×
 ```
 
 **Multi-core challenges:**
@@ -593,14 +593,14 @@ ARM (Advanced RISC Machines) is the dominant RISC architecture in mobile/IoT dev
 | Feature | ARMv8-A (AArch64) | ARM Cortex-M (Embedded) |
 |---------|-------------------|------------------------|
 | Instruction width | 32-bit fixed | 16-bit (Thumb) / 32-bit |
-| Registers | 31 Ã— 64-bit GPRs | 16 Ã— 32-bit GPRs |
-| Privilege levels | Exception levels EL0â€“EL3 | Handler/Thread mode |
-| Pipeline | 8â€“24 stages (Cortex-A) | 2â€“3 stages (Cortex-M) |
+| Registers | 31 × 64-bit GPRs | 16 × 32-bit GPRs |
+| Privilege levels | Exception levels EL0–EL3 | Handler/Thread mode |
+| Pipeline | 8–24 stages (Cortex-A) | 2–3 stages (Cortex-M) |
 | Key feature | SVE (Scalable Vector Extensions) | Bit-banding, sleep modes |
 
 **ARM big.LITTLE architecture:**
-- **big cores:** High-performance (Cortex-A76/A78/X-series) â€” complex OoO pipeline, high frequency
-- **LITTLE cores:** Power-efficient (Cortex-A55) â€” simpler in-order pipeline, low voltage
+- **big cores:** High-performance (Cortex-A76/A78/X-series) — complex OoO pipeline, high frequency
+- **LITTLE cores:** Power-efficient (Cortex-A55) — simpler in-order pipeline, low voltage
 - **DynamIQ:** Shared L3 cache, seamless task migration between big/LITTLE
 
 ### RISC-V Architecture
@@ -610,7 +610,7 @@ RISC-V is an open-standard ISA originally developed at UC Berkeley.
 **Key features:**
 - **Modular design:** Base integer ISA (RV32I/RV64I) + optional extensions (M-Mul/Div, F-FP, D-Double, A-Atomic, C-Compressed)
 - **Fixed 32-bit instructions** (base), 16-bit compressed (C extension)
-- **32 registers** (x0â€“x31), x0 is hardwired to 0
+- **32 registers** (x0–x31), x0 is hardwired to 0
 - **No condition codes:** Branches use register comparison directly (beq, bne, blt, bge)
 
 **RISC-V privilege levels:**
@@ -638,7 +638,7 @@ GPUs (Graphics Processing Units) use SIMT (Single Instruction, Multiple Threads)
 | Aspect | CPU | GPU |
 |--------|-----|-----|
 | Design goal | Low-latency single-thread | High-throughput parallel |
-| Cores | Few (4â€“32) powerful cores | Thousands of simple cores |
+| Cores | Few (4–32) powerful cores | Thousands of simple cores |
 | Memory latency | Hidden by caches | Hidden by thread switching |
 | Control unit | Complex OoO scheduler | Simple SIMD scheduler |
 | Typical use | General purpose | Graphics, ML, scientific |
@@ -651,8 +651,8 @@ GPUs (Graphics Processing Units) use SIMT (Single Instruction, Multiple Threads)
 - **Grid:** Collection of blocks executing a kernel
 
 **GPU memory hierarchy:**
-- **Global memory:** Large (16â€“80 GB), high latency (~400 cycles), accessible by all threads
-- **Shared memory:** Small (48â€“96 KB per block), low latency (~5 cycles), shared within a block
+- **Global memory:** Large (16–80 GB), high latency (~400 cycles), accessible by all threads
+- **Shared memory:** Small (48–96 KB per block), low latency (~5 cycles), shared within a block
 - **Registers:** Fastest, private per thread (up to 255 per thread)
 - **Constant memory:** Read-only, cached, 64 KB
 
@@ -669,8 +669,8 @@ GPUs (Graphics Processing Units) use SIMT (Single Instruction, Multiple Threads)
 | AC/ACC | Accumulator | Word width | Stores ALU result (accumulator machines) |
 | SP | Stack Pointer | Address width | Points to top of stack |
 | BP/FP | Base/Frame Pointer | Address width | Points to stack frame base |
-| PSW/FLAGS | Program Status Word | 8â€“32 bits | Stores condition codes (Z, C, O, S, P) |
-| GPR | General Purpose Register | Word width | Temporary data storage (R0â€“Rn) |
+| PSW/FLAGS | Program Status Word | 8–32 bits | Stores condition codes (Z, C, O, S, P) |
+| GPR | General Purpose Register | Word width | Temporary data storage (R0–Rn) |
 | IX | Index Register | Address width | Used for indexed addressing |
 
 ### Addressing Modes Quick Reference
@@ -686,18 +686,18 @@ GPUs (Graphics Processing Units) use SIMT (Single Instruction, Multiple Threads)
 | Base-Register | EA = R[base] + offset | 1 | `LOAD R1, 20(R2)` | Relocation, structs |
 | Relative (PC-relative) | EA = PC + offset | 1 | `BEQZ R1, +50` | Branch instructions |
 | Auto-increment | EA = R, then R += step | 1 | `LOAD R1, (R2)+` | Stack pop, array traversal |
-| Auto-decrement | R -= step, then EA = R | 1 | `LOAD R1, âˆ’(R2)` | Stack push |
-| Scaled | EA = base + R[index]Ã—scale | 1 | `LOAD R1, 0(R2,R3,4)` | Array of structures |
+| Auto-decrement | R -= step, then EA = R | 1 | `LOAD R1, −(R2)` | Stack push |
+| Scaled | EA = base + R[index]×scale | 1 | `LOAD R1, 0(R2,R3,4)` | Array of structures |
 
 **Formula for effective address computation:**
 ```
-EA = Base + Index Ã— Scale + Offset (for indexed/scaled modes)
+EA = Base + Index × Scale + Offset (for indexed/scaled modes)
 ```
 
 **Numerical example:** `LOAD R1, 0(R2, R3, 4)` where R2 = 2000, R3 = 5.
 ```
 Scale = 4 (word size)
-EA = 2000 + 5 Ã— 4 + 0 = 2000 + 20 = 2020
+EA = 2000 + 5 × 4 + 0 = 2000 + 20 = 2020
 R1 = Memory[2020]
 ```
 
@@ -707,37 +707,37 @@ R1 = Memory[2020]
 |---------|------------------|-----------------|-----------|-----------|
 | Implicit operand | Top of stack | Accumulator | Destination | None |
 | Explicit operands | 0 | 1 | 2 | 3 |
-| Instructions for A=(B+C)Ã—D | 5 (PUSH/POP) | 4 (LOAD/ADD/MUL) | 3 (MOV/ADD/MUL) | 2 (ADD/MUL) |
+| Instructions for A=(B+C)×D | 5 (PUSH/POP) | 4 (LOAD/ADD/MUL) | 3 (MOV/ADD/MUL) | 2 (ADD/MUL) |
 | Instruction size | Shortest | Short | Medium | Longest |
 | Code density | High | Medium | Medium | Low |
 | Compiler complexity | Low | Low | Medium | High |
 | Example arch | JVM, HP 3000 | 8051, 8080 | x86, 68000 | MIPS, RISC-V |
-| Registers needed | 0 (visible) | 1 (ACC) | 8â€“16 | 32+ |
+| Registers needed | 0 (visible) | 1 (ACC) | 8–16 | 32+ |
 
 ### CPI and Performance Formulas
 
 | Metric | Formula | Description |
 |--------|---------|-------------|
-| CPU Time | Time = IC Ã— CPI Ã— Cycle_Time | Total execution time |
-| MIPS | MIPS = IC / (Time Ã— 10â¶) = Clock / (CPI Ã— 10â¶) | Million instructions per second |
-| MFLOPS | MFLOPS = FP_ops / (Time Ã— 10â¶) | Million floating-point ops/second |
-| CPI | CPI = Î£ (CPI_i Ã— Frequency_i) | Average cycles per instruction |
+| CPU Time | Time = IC × CPI × Cycle_Time | Total execution time |
+| MIPS | MIPS = IC / (Time × 10⁶) = Clock / (CPI × 10⁶) | Million instructions per second |
+| MFLOPS | MFLOPS = FP_ops / (Time × 10⁶) | Million floating-point ops/second |
+| CPI | CPI = Σ (CPI_i × Frequency_i) | Average cycles per instruction |
 | Speedup | S = Time_old / Time_new | Performance improvement ratio |
-| Amdahl's Law | S = 1 / [(1âˆ’P) + P/N] | Speedup with parallelization |
-| Instruction length | Len = âŒˆlogâ‚‚(#opcodes)âŒ‰ + Î£ âŒˆlogâ‚‚(operand_size)âŒ‰ | Bits per instruction |
+| Amdahl's Law | S = 1 / [(1−P) + P/N] | Speedup with parallelization |
+| Instruction length | Len = ⌈log₂(#opcodes)⌉ + Σ ⌈log₂(operand_size)⌉ | Bits per instruction |
 | Memory accesses | Depends on addressing mode (see table) | Per instruction |
 
 ### RISC vs CISC Comparison Table
 
 | Feature | RISC | CISC |
 |---------|------|------|
-| Instruction format | Fixed (32-bit) | Variable (1â€“15 bytes) |
+| Instruction format | Fixed (32-bit) | Variable (1–15 bytes) |
 | Instructions | Simple, single-cycle | Complex, multi-cycle |
-| Addressing modes | Few (1â€“5, typically 3) | Many (10â€“20+) |
-| Registers | 32â€“128 GPRs | 8â€“16 GPRs |
+| Addressing modes | Few (1–5, typically 3) | Many (10–20+) |
+| Registers | 32–128 GPRs | 8–16 GPRs |
 | Memory operands | Only LOAD/STORE | Most instructions |
 | Control unit | Hardwired (fast) | Microprogrammed |
-| CPI | ~1 (pipelined) | 2â€“10+ |
+| CPI | ~1 (pipelined) | 2–10+ |
 | Pipeline efficiency | High (uniform stages) | Lower (variable stages) |
 | Code size | Larger (more instructions) | Smaller (complex instructions) |
 | Compiler complexity | Higher | Lower |
@@ -748,7 +748,7 @@ R1 = Memory[2020]
 
 ```typescript
 /**
- * Simple CPU Simulator â€” models a basic accumulator-based CPU
+ * Simple CPU Simulator — models a basic accumulator-based CPU
  * Supports: LOAD, STORE, ADD, SUB, MUL, DIV, BRANCH, HALT
  */
 
@@ -873,7 +873,7 @@ class CPUSimulator {
 
     switch (instr.type) {
       case 'LOAD':
-        // LOAD Rdest, address â€” direct addressing
+        // LOAD Rdest, address — direct addressing
         this.state.mar = instr.address!;
         this.state.mdr = mem(this.state.mar);
         if (instr.dest === 0) {
@@ -885,7 +885,7 @@ class CPUSimulator {
         break;
 
       case 'LOAD_IMM':
-        // LOAD #value â€” immediate addressing
+        // LOAD #value — immediate addressing
         if (instr.dest === 0) {
           this.state.acc = instr.address!;
         } else {
@@ -895,7 +895,7 @@ class CPUSimulator {
         break;
 
       case 'STORE':
-        // STORE address â€” store ACC to memory
+        // STORE address — store ACC to memory
         this.state.mar = instr.address!;
         this.state.mdr = this.state.acc;
         setMem(this.state.mar, this.state.mdr);
@@ -903,7 +903,7 @@ class CPUSimulator {
         break;
 
       case 'ADD':
-        // ADD address â€” ACC += M[address]
+        // ADD address — ACC += M[address]
         this.state.mar = instr.address!;
         this.state.mdr = mem(this.state.mar);
         this.state.acc += this.state.mdr;
@@ -949,7 +949,7 @@ class CPUSimulator {
       case 'BEQ':
         if (this.state.flags.zero) {
           this.state.pc = instr.address!;
-          logInstruction(`BEQ â†’ PC=${instr.address}`);
+          logInstruction(`BEQ → PC=${instr.address}`);
         }
         break;
 
@@ -967,7 +967,7 @@ class CPUSimulator {
 
       case 'JMP':
         this.state.pc = instr.address!;
-        logInstruction(`JMP â†’ PC=${instr.address}`);
+        logInstruction(`JMP → PC=${instr.address}`);
         break;
 
       case 'HALT':
@@ -1014,7 +1014,7 @@ class CPUSimulator {
   }
 }
 
-// Demo: Compute 10 + 20 âˆ’ 5
+// Demo: Compute 10 + 20 − 5
 const cpu = new CPUSimulator(256);
 cpu.setMemory(100, 10);   // Data at address 100
 cpu.setMemory(101, 20);   // Data at address 101
@@ -1022,12 +1022,12 @@ cpu.setMemory(102, 5);    // Data at address 102
 
 const program: Instruction[] = [
   { type: 'LOAD', dest: 0, address: 100 },      // ACC = M[100] = 10
-  { type: 'ADD', address: 101 },                  // ACC += M[101] = 20 â†’ 30
-  { type: 'SUB', address: 102 },                  // ACC -= M[102] = 5  â†’ 25
+  { type: 'ADD', address: 101 },                  // ACC += M[101] = 20 → 30
+  { type: 'SUB', address: 102 },                  // ACC -= M[102] = 5  → 25
   { type: 'STORE', address: 200 },                // M[200] = ACC = 25
   { type: 'LOAD_IMM', dest: 0, imm: 100 },        // ACC = 100
   { type: 'LOAD', dest: 1, address: 200 },        // R1 = M[200] = 25
-  { type: 'SUB_REG', src: 1 },                    // ACC -= R1 = 100 âˆ’ 25 = 75
+  { type: 'SUB_REG', src: 1 },                    // ACC -= R1 = 100 − 25 = 75
   { type: 'HALT' }
 ];
 
@@ -1080,15 +1080,15 @@ sequenceDiagram
     participant T3 as T3 Cycle
     participant T4 as T4 Cycle
     Note over T0,T4: Fetch Cycle
-    T0->>T0: MAR â† PC
-    T1->>T1: MDR â† Memory[MAR]<br/>PC â† PC + 1
-    T2->>T2: IR â† MDR
+    T0->>T0: MAR ← PC
+    T1->>T1: MDR ← Memory[MAR]<br/>PC ← PC + 1
+    T2->>T2: IR ← MDR
     Note over T2: Decode Cycle
     T2->>T2: CU Decodes IR
     Note over T3,T4: Execute Cycle
-    T3->>T3: MAR â† IR[address field]
-    T4->>T4: MDR â† Memory[MAR]
-    T4->>T4: Rdest â† MDR
+    T3->>T3: MAR ← IR[address field]
+    T4->>T4: MDR ← Memory[MAR]
+    T4->>T4: Rdest ← MDR
 ```
 
 ### Hardwired vs Microprogrammed Control
@@ -1105,7 +1105,7 @@ flowchart TD
         M2 --> M3[Control Memory ROM]
         M3 --> M4[Microinstruction<br/>Register]
         M4 --> M5[Control Signals<br/>~5-10 ns delay]
-        M5 --> M6[Sequencer<br/>â†’ Next uPC]
+        M5 --> M6[Sequencer<br/>→ Next uPC]
         M6 --> M3
     end
     style Hardwired fill:#e8eaf6
@@ -1125,27 +1125,27 @@ A) 64 KB  B) 128 KB  C) 256 KB  D) 512 KB
 
 **Step-by-step:**
 Instruction length = 32 bits
-Opcodes = 64 â†’ need âŒˆlogâ‚‚64âŒ‰ = 6 bits
-Registers = 32 â†’ register specifier = âŒˆlogâ‚‚32âŒ‰ = 5 bits per register
+Opcodes = 64 → need ⌈log₂64⌉ = 6 bits
+Registers = 32 → register specifier = ⌈log₂32⌉ = 5 bits per register
 
 For 3-address format: opcode(6) + reg1(5) + reg2(5) + reg3(5) + unused = 32
 Used = 6 + 5 + 5 + 5 = 21 bits
-Address field = 32 âˆ’ 21 = 11 bits
+Address field = 32 − 21 = 11 bits
 
 Maximum directly addressable memory = 2^(address_field) words
 = 2^11 = 2048 words
 
 Assuming word-addressable memory (32-bit words):
-Memory size = 2048 Ã— 4 bytes = 8192 bytes = 8 KB
+Memory size = 2048 × 4 bytes = 8192 bytes = 8 KB
 
 Hmm, that doesn't match the options. Let me reconsider.
 
 If the format is: opcode(6) + reg_dest(5) + address_field(21):
-Address field = 32 âˆ’ 6 âˆ’ 5 = 21 bits
+Address field = 32 − 6 − 5 = 21 bits
 Addressable memory = 2^21 words
 
 Assuming byte-addressable:
-2^21 bytes = 2 MB â€” not matching options.
+2^21 bytes = 2 MB — not matching options.
 
 Let me try: 2-address format instead:
 opcode(6) + reg1(5) + reg2(5) + address(16)
@@ -1154,12 +1154,12 @@ Addressable = 2^16 = 65536 bytes = 64 KB
 But the question says 3-address. Let me adjust to get one of the options.
 
 If opcodes = 32 (5 bits), registers = 16 (4 bits each):
-For 3-address: 5 + 4 + 4 + 4 = 17 bits used, address = 32 âˆ’ 17 = 15 bits
-2^15 = 32768 words. If byte-addressable: 32 KB â€” not matching.
+For 3-address: 5 + 4 + 4 + 4 = 17 bits used, address = 32 − 17 = 15 bits
+2^15 = 32768 words. If byte-addressable: 32 KB — not matching.
 
 Let me try: opcodes = 64 (6 bits), registers = 8 (3 bits each):
-3-address: 6 + 3 + 3 + 3 = 15 bits, address = 32 âˆ’ 15 = 17 bits
-2^17 = 131072 = 128 KB â€” that matches option B!
+3-address: 6 + 3 + 3 + 3 = 15 bits, address = 32 − 15 = 17 bits
+2^17 = 131072 = 128 KB — that matches option B!
 
 Let me use: **Answer: B) 128 KB** with these parameters.
 
@@ -1167,8 +1167,8 @@ Actually let me recalculate properly:
 Opcode = 6 bits, each register field = 3 bits (8 registers)
 3 register fields = 9 bits
 Total used for non-address = 6 + 9 = 15 bits
-Address field = 32 âˆ’ 15 = 17 bits
-If byte-addressable: 2^17 = 131072 bytes = 128 KB âœ“
+Address field = 32 − 15 = 17 bits
+If byte-addressable: 2^17 = 131072 bytes = 128 KB ✓
 
 **Answer: B) 128 KB**
 </details>
@@ -1182,26 +1182,26 @@ A) 20  B) 24  C) 28  D) 32
 
 **Answer: D) 32**
 
-**Formula:** Instruction length = âŒˆlogâ‚‚(opcodes)âŒ‰ + âŒˆlogâ‚‚(registers)âŒ‰ + memory_address_bits
+**Formula:** Instruction length = ⌈log₂(opcodes)⌉ + ⌈log₂(registers)⌉ + memory_address_bits
 
 **Step-by-step:**
-Opcodes = 64 â†’ âŒˆlogâ‚‚64âŒ‰ = 6 bits
-Registers = 16 â†’ register field = âŒˆlogâ‚‚16âŒ‰ = 4 bits
+Opcodes = 64 → ⌈log₂64⌉ = 6 bits
+Registers = 16 → register field = ⌈log₂16⌉ = 4 bits
 For direct addressing with a 16-bit address bus: memory address = 16 bits
 
 But the question doesn't specify address bus width. Let me assume the minimum instruction length that covers:
 - 64 opcodes: 6 bits
 - 16 registers: 4 bits (for destination)
 - Memory address: typically 16 bits for a 64 KB addressable space
-Total: 6 + 4 + 16 = 26 bits â†’ round up to nearest byte = 32 bits
+Total: 6 + 4 + 16 = 26 bits → round up to nearest byte = 32 bits
 
 If the system is byte-addressable with 64 KB memory (16-bit address):
-Total minimum = 6 + 4 + 16 = 26 bits, but practical instruction lengths are byte-multiple â†’ 32 bits
+Total minimum = 6 + 4 + 16 = 26 bits, but practical instruction lengths are byte-multiple → 32 bits
 
 **Answer: D) 32 bits**
 
 **Alternative:** If we assume the designer minimizes instruction width without byte alignment:
-6 + 4 + 16 = 26 bits. But instructions are usually 8/16/32-bit aligned â†’ 32 bits.
+6 + 4 + 16 = 26 bits. But instructions are usually 8/16/32-bit aligned → 32 bits.
 </details>
 
 > **GATE 2018:** The effective address for a base-register addressing mode instruction `LOAD R1, 20(R2)` with R2 = 5000 is:
@@ -1222,8 +1222,8 @@ The instruction loads R1 with the content of memory at address 5020.
 **Memory access count:** 1 memory access (after EA calculation)
 
 **Compare with other modes for the same operation:**
-- Direct: `LOAD R1, 5020` â†’ same EA, but address is fixed in instruction
-- Register Indirect: `LOAD R1, (R2)` â†’ EA = R2 = 5000 (no offset)
+- Direct: `LOAD R1, 5020` → same EA, but address is fixed in instruction
+- Register Indirect: `LOAD R1, (R2)` → EA = R2 = 5000 (no offset)
 - Indexed: same formula, but index register can be different from base
 </details>
 
@@ -1239,49 +1239,49 @@ A) 5  B) 16  C) 32  D) 64
 **Explanation:** In horizontal microprogramming, each control signal is represented by one bit in the microinstruction word. The control word is as wide as the number of control signals.
 
 With 32 independent control signals:
-- Horizontal: 32 bits (one per signal) â€” maximum parallelism
-- Vertical: âŒˆlogâ‚‚(32+1)âŒ‰ â‰ˆ 6 bits (encoded) â€” needs decoder, less parallelism
+- Horizontal: 32 bits (one per signal) — maximum parallelism
+- Vertical: ⌈log₂(32+1)⌉ ≈ 6 bits (encoded) — needs decoder, less parallelism
 
 **Formula:** Horizontal microinstruction width = Number of control signals
-Vertical microinstruction width = âŒˆlogâ‚‚(#signals + 1)âŒ‰
+Vertical microinstruction width = ⌈log₂(#signals + 1)⌉
 
 For 32 signals:
 - Horizontal: 32 bits wide
-- Vertical: âŒˆlogâ‚‚33âŒ‰ = 6 bits wide (but needs decoder hardware)
+- Vertical: ⌈log₂33⌉ = 6 bits wide (but needs decoder hardware)
 </details>
 
 > **GATE 2016:** A 5-stage pipelined processor has a clock rate of 2 GHz. The non-pipelined version has a clock rate of 500 MHz due to longer combinational paths. Calculate the speedup for executing 2000 instructions (ignore pipeline hazards).
 
-A) 2Ã—  B) 3Ã—  C) 4Ã—  D) 5Ã—
+A) 2×  B) 3×  C) 4×  D) 5×
 
 <details>
 <summary>Show Solution</summary>
 
-**Answer: C) 4Ã—**
+**Answer: C) 4×**
 
 **Formula:** Speedup = (Non-pipelined time) / (Pipelined time)
 
 **Step-by-step:**
 Non-pipelined:
 - Cycle time = 1/500 MHz = 2 ns
-- Total time = 5 stages Ã— 2000 instructions Ã— 2 ns = 10,000 Ã— 2 = 20,000 ns
+- Total time = 5 stages × 2000 instructions × 2 ns = 10,000 × 2 = 20,000 ns
 
 Pipelined:
 - Cycle time = 1/2 GHz = 0.5 ns
-- Total time = (5 + 2000 âˆ’ 1) Ã— 0.5 = 2004 Ã— 0.5 = 1002 ns
+- Total time = (5 + 2000 − 1) × 0.5 = 2004 × 0.5 = 1002 ns
 
-Speedup = 20,000 / 1002 â‰ˆ 19.96Ã—
+Speedup = 20,000 / 1002 ≈ 19.96×
 
 Hmm, that's too high. Let me reconsider.
 
-Actually, the non-pipelined version doesn't have stages â€” it completes one instruction at a time:
-- Non-pipelined: 2000 instructions Ã— 2 ns = 4000 ns
-- Pipelined: 2004 cycles Ã— 0.5 ns = 1002 ns
-- Speedup = 4000/1002 â‰ˆ 3.99Ã—
+Actually, the non-pipelined version doesn't have stages — it completes one instruction at a time:
+- Non-pipelined: 2000 instructions × 2 ns = 4000 ns
+- Pipelined: 2004 cycles × 0.5 ns = 1002 ns
+- Speedup = 4000/1002 ≈ 3.99×
 
-**Answer: C) 4Ã— (approximately)**
+**Answer: C) 4× (approximately)**
 
-**Formula used:** Speedup = (n Ã— T_nonpipe) / ((k + n âˆ’ 1) Ã— T_pipe)
+**Formula used:** Speedup = (n × T_nonpipe) / ((k + n − 1) × T_pipe)
 Where T_nonpipe is non-pipelined cycle time, T_pipe is pipelined cycle time.
 </details>
 
@@ -1296,11 +1296,11 @@ A) Direct  B) Indirect  C) Indexed  D) Relative
 
 **Explanation:** Indexed addressing (EA = base + index_register) is ideal for array access:
 - Base address = start of array (fixed in instruction)
-- Index register = element index Ã— element size (incremented in loop)
+- Index register = element index × element size (incremented in loop)
 
 **Example:** Accessing A[5] where A starts at 2000, each element 4 bytes.
 ```
-LOAD R1, 2000(R2)  where R2 = 5 Ã— 4 = 20
+LOAD R1, 2000(R2)  where R2 = 5 × 4 = 20
 EA = 2000 + 20 = 2020
 ```
 
@@ -1314,7 +1314,7 @@ EA = 2000 + 20 = 2020
 - Auto-increment: Stack operations, string processing
 </details>
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **Q1.** Which register holds the address of the next instruction to be fetched?
 
@@ -1337,19 +1337,19 @@ The PC is specifically designed to hold the memory address of the next instructi
 
 **Q2.** In a 2-address instruction `ADD R1, R2`, what operation is performed?
 
-A) R1 â† R1 + M[R2]  B) R1 â† R1 + R2  C) R2 â† R1 + R2  D) M[R1] â† R1 + R2
+A) R1 ← R1 + M[R2]  B) R1 ← R1 + R2  C) R2 ← R1 + R2  D) M[R1] ← R1 + R2
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) R1 â† R1 + R2**
+**Answer: B) R1 ← R1 + R2**
 
 In 2-address format, the first operand serves as both source and destination. `ADD R1, R2` means:
 - Source: R1 and R2
 - Destination: R1
 - Operation: R1 = R1 + R2
 
-**Contrast with 3-address:** `ADD R3, R1, R2` â†’ R3 = R1 + R2 (destination separate from sources)
+**Contrast with 3-address:** `ADD R3, R1, R2` → R3 = R1 + R2 (destination separate from sources)
 </details>
 
 ---
@@ -1366,8 +1366,8 @@ A) 1  B) 2  C) 3  D) 0
 **Formula:** Indirect addressing memory accesses = 2
 
 **Step-by-step:**
-1st access: Read address from memory at location 500 â†’ get EA = M[500]
-2nd access: Read operand from memory at EA â†’ R1 = M[EA]
+1st access: Read address from memory at location 500 → get EA = M[500]
+2nd access: Read operand from memory at EA → R1 = M[EA]
 
 **Comparison table:**
 | Mode | Memory Accesses |
@@ -1411,17 +1411,17 @@ A) Fixed instruction length  B) Few addressing modes  C) Variable instruction le
 **Answer: C) Variable instruction length**
 
 RISC (Reduced Instruction Set Computer) features:
-- âœ… Fixed instruction length (typically 32 bits)
-- âœ… Few addressing modes (typically 3â€“5)
-- âœ… Large register file (32â€“128 GPRs)
-- âŒ Variable instruction length â€” this is a CISC characteristic
+- ✅ Fixed instruction length (typically 32 bits)
+- ✅ Few addressing modes (typically 3–5)
+- ✅ Large register file (32–128 GPRs)
+- ❌ Variable instruction length — this is a CISC characteristic
 
 **CISC features:** Variable length, many addressing modes, few registers, memory operands allowed in most instructions.
 </details>
 
 ---
 
-**Q6.** For the expression `A = (B + C) Ã— D`, how many instructions are needed in 3-address format?
+**Q6.** For the expression `A = (B + C) × D`, how many instructions are needed in 3-address format?
 
 A) 4  B) 3  C) 2  D) 1
 
@@ -1433,7 +1433,7 @@ A) 4  B) 3  C) 2  D) 1
 **3-address instructions:**
 ```
 ADD R1, B, C   // R1 = B + C
-MUL A, R1, D   // A = R1 Ã— D
+MUL A, R1, D   // A = R1 × D
 ```
 
 **Comparison across formats:**
@@ -1460,8 +1460,8 @@ The microprogrammed control unit stores microinstructions in a special read-only
 
 **Components of microprogrammed control:**
 - Control Memory (ROM): Stores microinstructions
-- Î¼PC (Microprogram Counter): Addresses the next microinstruction
-- Î¼IR (Microinstruction Register): Holds current microinstruction
+- μPC (Microprogram Counter): Addresses the next microinstruction
+- μIR (Microinstruction Register): Holds current microinstruction
 - Sequencing logic: Determines next address (branch, sequential, etc.)
 
 **Hardwired vs Microprogrammed storage:**
@@ -1480,12 +1480,12 @@ A) 666.67  B) 1000  C) 1500  D) 6667
 
 **Answer: A) 666.67**
 
-**Formula:** MIPS = Clock_Rate / (CPI Ã— 10â¶)
+**Formula:** MIPS = Clock_Rate / (CPI × 10⁶)
 
-MIPS = (1 Ã— 10â¹) / (1.5 Ã— 10â¶) = 1000 / 1.5 = 666.67 MIPS
+MIPS = (1 × 10⁹) / (1.5 × 10⁶) = 1000 / 1.5 = 666.67 MIPS
 
 **Related formulas:**
-- CPU Time = IC Ã— CPI / Clock_Rate
+- CPU Time = IC × CPI / Clock_Rate
 - Throughput = Clock_Rate / CPI instructions per second
 - MIPS is commonly used in exam problems but has limitations (doesn't account for I/O, different instruction complexities)
 </details>
@@ -1514,7 +1514,7 @@ A) 2000  B) 2001  C) 2004  D) 1996
 | 32-bit (word) | +4 |
 | 64-bit (double word) | +8 |
 
-**Auto-decrement** `âˆ’(R2)`: First R2 = R2 âˆ’ 4, then load from R2.
+**Auto-decrement** `−(R2)`: First R2 = R2 − 4, then load from R2.
 </details>
 
 ---
@@ -1529,9 +1529,9 @@ A) ALU  B) Control Unit  C) Register File  D) DMA Controller
 **Answer: D) DMA Controller**
 
 The three essential CPU components are:
-1. Arithmetic Logic Unit (ALU) â€” performs computations
-2. Control Unit (CU) â€” generates control signals
-3. Register Set â€” high-speed internal storage
+1. Arithmetic Logic Unit (ALU) — performs computations
+2. Control Unit (CU) — generates control signals
+3. Register Set — high-speed internal storage
 
 The DMA Controller is a separate I/O component that manages direct memory access. While it interacts with the CPU, it is not part of the CPU core.
 
@@ -1553,7 +1553,7 @@ A) 18  B) 9  C) 12  D) 6
 
 Instruction length = 24 bits
 Opcode = 6 bits
-Remaining for operands = 24 âˆ’ 6 = 18 bits
+Remaining for operands = 24 − 6 = 18 bits
 
 For 2-address format: 18 bits / 2 = 9 bits per operand field
 
@@ -1582,26 +1582,26 @@ A) Complex instruction sets  B) RISC processors  C) Systems requiring flexibilit
 - Lower design cost for complex processors
 
 **Exam tip:**
-- Speed â†’ Hardwired
-- Flexibility â†’ Microprogrammed
-- Complex ISA â†’ Microprogrammed
-- RISC â†’ Hardwired
-- CISC â†’ Microprogrammed
+- Speed → Hardwired
+- Flexibility → Microprogrammed
+- Complex ISA → Microprogrammed
+- RISC → Hardwired
+- CISC → Microprogrammed
 </details>
 
 ---
 
 **Q13.** The instruction cycle order is:
 
-A) Execute â†’ Decode â†’ Fetch â†’ Write Back  B) Fetch â†’ Decode â†’ Execute â†’ Write Back  C) Fetch â†’ Execute â†’ Decode â†’ Write Back  D) Decode â†’ Fetch â†’ Execute â†’ Write Back
+A) Execute → Decode → Fetch → Write Back  B) Fetch → Decode → Execute → Write Back  C) Fetch → Execute → Decode → Write Back  D) Decode → Fetch → Execute → Write Back
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) Fetch â†’ Decode â†’ Execute â†’ Write Back**
+**Answer: B) Fetch → Decode → Execute → Write Back**
 
 **Complete 5-step cycle:**
-1. IF (Instruction Fetch): MAR â† PC, read memory â†’ MDR â†’ IR, PC â† PC+1
+1. IF (Instruction Fetch): MAR ← PC, read memory → MDR → IR, PC ← PC+1
 2. ID (Instruction Decode): CU decodes IR to generate control signals
 3. OF (Operand Fetch): Compute EA, read operands from registers/memory
 4. EX (Execute): ALU performs the operation
@@ -1622,9 +1622,9 @@ A) Decremented  B) Incremented  C) Cleared  D) Unchanged
 **Answer: B) Incremented**
 
 During the fetch phase, after the instruction address is sent to MAR, the PC is incremented to point to the next instruction:
-- T0: MAR â† PC
-- T1: MDR â† Memory[MAR], **PC â† PC + 1** (or PC + instruction_length)
-- T2: IR â† MDR
+- T0: MAR ← PC
+- T1: MDR ← Memory[MAR], **PC ← PC + 1** (or PC + instruction_length)
+- T2: IR ← MDR
 
 **Note:** For branch instructions, the PC is overwritten during execute, so the pre-increment is harmless.
 </details>
@@ -1642,14 +1642,14 @@ A) 6 bits  B) 8 bits  C) 10 bits  D) 14 bits
 
 **Calculation:**
 Instruction length = 32 bits
-Opcode = âŒˆlogâ‚‚64âŒ‰ = 6 bits
-Register fields = 3 Ã— âŒˆlogâ‚‚8âŒ‰ = 3 Ã— 3 = 9 bits
+Opcode = ⌈log₂64⌉ = 6 bits
+Register fields = 3 × ⌈log₂8⌉ = 3 × 3 = 9 bits
 Used for register addresses = 6 + 9 = 15 bits
 
 Wait, 3 register fields of 3 bits each = 9 bits. Plus opcode 6 bits = 15 bits.
-Remaining = 32 âˆ’ 15 = 17 bits.
+Remaining = 32 − 15 = 17 bits.
 
-But the question says "3-address format uses 8 registers" â€” this means 3 register addresses. If each needs 3 bits:
+But the question says "3-address format uses 8 registers" — this means 3 register addresses. If each needs 3 bits:
 Total register bits = 9
 Plus opcode = 6
 Total = 15
@@ -1657,57 +1657,57 @@ Remaining for address fields = 17 bits
 
 Hmm, but if it's 3-address with ONLY registers (register-to-register), there's no memory address field. Let me reconsider.
 
-If the format is: opcode(6) + dest_reg(3) + src1_reg(3) + src2_reg(3) + address_field(32âˆ’15=17)
+If the format is: opcode(6) + dest_reg(3) + src1_reg(3) + src2_reg(3) + address_field(32−15=17)
 That's 17 bits for address field.
 
 But wait, maybe each register field uses 8 registers (3 bits) but the address field is shared. Let me look at the options again.
 
-If it's: opcode(6) + dest(3) + src1(3) + addr(20) â€” that's 3-address format with only 2 explicit register operands + 1 address? That's not standard.
+If it's: opcode(6) + dest(3) + src1(3) + addr(20) — that's 3-address format with only 2 explicit register operands + 1 address? That's not standard.
 
 In a 3-address format with all register operands:
-opcode(6) + reg1(3) + reg2(3) + reg3(3) = 15 bits â†’ 17 bits unused.
+opcode(6) + reg1(3) + reg2(3) + reg3(3) = 15 bits → 17 bits unused.
 
 But if we consider "3-address" to mean 3 operand specifiers (could be registers or memory):
-A common interpretation: Each operand field = âŒˆlogâ‚‚(256 words)âŒ‰ = 8 bits.
+A common interpretation: Each operand field = ⌈log₂(256 words)⌉ = 8 bits.
 Then opcode(6) + op1(8) + op2(8) + op3(8) = 30 bits, with 2 bits unused.
 
 Actually let me reconsider. With 8 registers per field:
 If each address field can specify either a register or memory: each field = register_bits + memory_flag
-Simpler: each field is just a register number = 3 bits, leaving 32 âˆ’ 6 âˆ’ 9 = 17 bits for other use.
+Simpler: each field is just a register number = 3 bits, leaving 32 − 6 − 9 = 17 bits for other use.
 
 But option A is 6 bits. Let me try: if the format is 3-address with memory operands, and each operand needs its own address field:
 Remaining bits after opcode(6) = 26 bits for 3 operands = 8.67 bits each. Hmm.
 
-OK, I think the intended answer is based on: 64 opcodes = 6 bits, 8 registers = 3 bits each â†’ 9 bits for 3 reg specs. Total used = 15 bits. Remaining = 32 âˆ’ 15 = 17 bits. But the answer choices suggest 6 bits. Maybe they mean each address field is 6 bits since 32 total âˆ’ 6 opcode âˆ’ 3Ã—3 register = 17, divided by 3? No.
+OK, I think the intended answer is based on: 64 opcodes = 6 bits, 8 registers = 3 bits each → 9 bits for 3 reg specs. Total used = 15 bits. Remaining = 32 − 15 = 17 bits. But the answer choices suggest 6 bits. Maybe they mean each address field is 6 bits since 32 total − 6 opcode − 3×3 register = 17, divided by 3? No.
 
 Let me rethink: opcode=6, 3 address fields = 32-6 = 26 bits for all 3 = 8.67 bits each, round to 8. But option A says 6.
 
 I think I'm overcomplicating this. Let me just set up the problem cleanly:
-- Opcodes = 64 â†’ 6 bits
-- Registers = 8 â†’ 3 bits per register field
+- Opcodes = 64 → 6 bits
+- Registers = 8 → 3 bits per register field
 - 3 address fields (each can address 2^6 = 64 words)
-- Total = 6 + 3Ã—3 + 3Ã—6 = 6 + 9 + 18 = 33 â€” too many for 32 bits.
+- Total = 6 + 3×3 + 3×6 = 6 + 9 + 18 = 33 — too many for 32 bits.
 
 Let me try: opcode(6) + reg1(3) + reg2(3) + addr_field(20) where addr is shared/last operand:
 That gives 20 bits, 2^20 words addressable.
 
 Actually I'll simplify: The question asks about EACH address field. With 3 address fields and 32-bit instructions with 64 opcodes:
-Remaining for address = 32 âˆ’ 6 = 26 bits for 3 fields = ~8.67 bits each.
-But if we have register specs too: registers = 8 â†’ 3 bits each, so 3 registers = 9 bits.
-Remaining for addresses = 32 âˆ’ 6 âˆ’ 9 = 17 bits for 3 fields = 5.67 bits each â‰ˆ 5 bits.
+Remaining for address = 32 − 6 = 26 bits for 3 fields = ~8.67 bits each.
+But if we have register specs too: registers = 8 → 3 bits each, so 3 registers = 9 bits.
+Remaining for addresses = 32 − 6 − 9 = 17 bits for 3 fields = 5.67 bits each ≈ 5 bits.
 
 But the answer is A) 6 bits. Let me try with 64 opcodes (6 bits), 16 registers (4 bits each, so 12 for 3):
-6 + 12 = 18 used. 32 - 18 = 14 for 3 address fields = 4.67 each â‰ˆ 4.
+6 + 12 = 18 used. 32 - 18 = 14 for 3 address fields = 4.67 each ≈ 4.
 
-Hmm. Let me adjust: 32 registers â†’ 5 bits each. 6 + 15 = 21 used. 32 - 21 = 11 for 3 = 3.67 â‰ˆ 3.
+Hmm. Let me adjust: 32 registers → 5 bits each. 6 + 15 = 21 used. 32 - 21 = 11 for 3 = 3.67 ≈ 3.
 
 Let me try: 64 opcodes (6 bits), 4 registers (2 bits each, 3 fields = 6 bits):
-6 + 6 = 12 used. 32 âˆ’ 12 = 20 for address = 20/3 = 6.67. Each address field â‰ˆ 6 bits.
+6 + 6 = 12 used. 32 − 12 = 20 for address = 20/3 = 6.67. Each address field ≈ 6 bits.
 
 OK, with this configuration:
 - 64 opcodes (6 bits)
-- 4 registers (2 bits each Ã— 3 = 6 bits)
-- 3 address fields (6 bits each Ã— 3 = 18 bits)
+- 4 registers (2 bits each × 3 = 6 bits)
+- 3 address fields (6 bits each × 3 = 18 bits)
 - Total: 6 + 6 + 18 = 30 bits (with 2 unused or part of a larger encoding)
 
 **Answer: A) 6 bits per address field**
@@ -1736,7 +1736,7 @@ C) RISC allows only LOAD/STORE for memory  D) Both allow the same memory access 
 
 ---
 
-**Q17.** In a stack-based (0-address) machine, the expression `X = (A + B) Ã— (C âˆ’ D)` requires how many PUSH/POP operations?
+**Q17.** In a stack-based (0-address) machine, the expression `X = (A + B) × (C − D)` requires how many PUSH/POP operations?
 
 A) 5  B) 6  C) 7  D) 8
 
@@ -1752,8 +1752,8 @@ PUSH B      // Stack: A, B
 ADD         // Stack: (A+B)
 PUSH C      // Stack: (A+B), C
 PUSH D      // Stack: (A+B), C, D
-SUB         // Stack: (A+B), (Câˆ’D)
-MUL         // Stack: (A+B)Ã—(Câˆ’D)
+SUB         // Stack: (A+B), (C−D)
+MUL         // Stack: (A+B)×(C−D)
 POP X       // Stack: empty
 ```
 
@@ -1772,13 +1772,13 @@ Total: 8 instructions, with 5 being explicit PUSH/POP operations.
 
 So PUSH/POP operations = 5 if counting only explicit PUSH/POP. Total instructions = 8.
 
-**Answer: 7 â†’ Hmm, let me recount.** PUSH A, PUSH B, ADD, PUSH C, PUSH D, SUB, MUL, POP X = 8 instructions total. PUSH/POP ops = 5.
+**Answer: 7 → Hmm, let me recount.** PUSH A, PUSH B, ADD, PUSH C, PUSH D, SUB, MUL, POP X = 8 instructions total. PUSH/POP ops = 5.
 
 The closest option is 5 which isn't listed. Let me reconsider: maybe they count each instruction as an operation.
 
 Actually option B is 6, C is 7, D is 8. If total instructions = 8, answer would be D.
 
-But I wrote "requires how many PUSH/POP operations" â€” that would be 5 (4 push, 1 pop), not matching any option.
+But I wrote "requires how many PUSH/POP operations" — that would be 5 (4 push, 1 pop), not matching any option.
 
 Let me revise the question to: "how many total instructions" instead of "PUSH/POP operations."
 
@@ -1814,7 +1814,7 @@ A) Flexibility  B) Lower design cost  C) Speed  D) Ease of modification
 | Modification | Difficult (rewire) | Easy (update microcode) |
 | Power | Lower (fewer transistors) | Higher (ROM + sequencer) |
 
-Hardwired control generates control signals directly through combinational logic without the overhead of reading microinstructions from ROM. This makes it 2â€“5Ã— faster than microprogrammed control.
+Hardwired control generates control signals directly through combinational logic without the overhead of reading microinstructions from ROM. This makes it 2–5× faster than microprogrammed control.
 </details>
 
 ---
@@ -1851,7 +1851,7 @@ Total data accesses = 3
 
 That doesn't match any option either. Let me include instruction fetches:
 
-Total memory accesses (including IF) = 3 instructions Ã— (1 IF + 1 data) = 6 per instruction? No, 3 Ã— 2 = 6.
+Total memory accesses (including IF) = 3 instructions × (1 IF + 1 data) = 6 per instruction? No, 3 × 2 = 6.
 
 Actually: 3 instructions, each instruction needs 1 IF + potentially data access. For:
 - LOAD A: IF + data read = 2
@@ -1885,16 +1885,16 @@ A) Zero, Carry, Overflow, Sign  B) Address, Data, Control  C) Opcode, Operand, R
 | Interrupt | I | Master interrupt enable/disable |
 
 **Uses:** Branches (BEQ checks Z), arithmetic overflow detection, conditional execution.
-**Size:** Typically 16â€“32 bits in modern CPUs, though only 4â€“6 bits are flag bits.
+**Size:** Typically 16–32 bits in modern CPUs, though only 4–6 bits are flag bits.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 **Q1.** Design the complete micro-operation sequence for the instruction `STORE R1, X` (store register R1 to memory address X) in an accumulator-based CPU. Show all clock cycles.
 
-**Q2.** A CPU has a 2 GHz clock and executes a program with the following instruction mix: 40% ALU (CPI=1), 30% LOAD (CPI=2), 15% STORE (CPI=2), 15% BRANCH (CPI=3). Calculate the average CPI and total execution time for 10â¶ instructions.
+**Q2.** A CPU has a 2 GHz clock and executes a program with the following instruction mix: 40% ALU (CPI=1), 30% LOAD (CPI=2), 15% STORE (CPI=2), 15% BRANCH (CPI=3). Calculate the average CPI and total execution time for 10⁶ instructions.
 
-**Q3.** Compare the instruction count and code size for evaluating `W = (X + Y) Ã— (Z âˆ’ 5)` using 0-address, 1-address, 2-address, and 3-address formats. Assume 32-bit instructions and 32-bit operands.
+**Q3.** Compare the instruction count and code size for evaluating `W = (X + Y) × (Z − 5)` using 0-address, 1-address, 2-address, and 3-address formats. Assume 32-bit instructions and 32-bit operands.
 
 **Q4.** For the indirect addressing instruction `LOAD R1, (2000)` with memory contents: M[2000] = 3000, M[3000] = 42. What value is loaded into R1? How many memory accesses occur?
 
@@ -1914,9 +1914,9 @@ A) Zero, Carry, Overflow, Sign  B) Address, Data, Control  C) Opcode, Operand, R
 
 **Q12.** Design a hardwired control unit for a simple CPU that has 4 instructions: LOAD, ADD, STORE, HALT. Show the state diagram and control signal outputs for each state.
 
-**Q13.** Why do modern x86 CPUs use a RISC-like micro-operation (Î¼op) architecture internally despite being CISC at the ISA level?
+**Q13.** Why do modern x86 CPUs use a RISC-like micro-operation (μop) architecture internally despite being CISC at the ISA level?
 
-**Q14.** For the expression `Z = (A Ã— B) + (C Ã— D) âˆ’ E`, write the minimum instruction sequence for 0-address, 1-address, 2-address, and 3-address formats. Count instructions for each.
+**Q14.** For the expression `Z = (A × B) + (C × D) − E`, write the minimum instruction sequence for 0-address, 1-address, 2-address, and 3-address formats. Count instructions for each.
 
 **Q15.** Explain Amdahl's Law. If 90% of a program can be parallelized, what is the maximum speedup on an 8-core processor?
 
@@ -1934,7 +1934,7 @@ STORE R1, C
 ```
 Calculate the number of memory accesses (including instruction fetches) for each addressing mode: (a) direct, (b) indirect, (c) register indirect.
 
-**Q20.** Design a register file with 16 registers (R0â€“R15), each 32 bits wide. How many read ports and write ports are needed for a 3-address machine that executes one instruction per cycle? Calculate the total number of transistors needed (assuming 6 transistors per SRAM bit).
+**Q20.** Design a register file with 16 registers (R0–R15), each 32 bits wide. How many read ports and write ports are needed for a 3-address machine that executes one instruction per cycle? Calculate the total number of transistors needed (assuming 6 transistors per SRAM bit).
 
 **Q21.** For a CPU with clock frequency 2.5 GHz and average CPI = 1.2, calculate the execution time for a program that has 800,000 instructions. How many MIPS does the CPU achieve?
 
@@ -1946,7 +1946,7 @@ Calculate the number of memory accesses (including instruction fetches) for each
 
 **Q25.** For the instruction `ADD R1, R2, R3` on a 3-address machine, list all micro-operations for the fetch, decode, and execute phases. How many clock cycles are needed?
 
-**Q26.** A 1-address machine evaluates `X = (A + B) Ã— C`. The programmer writes:
+**Q26.** A 1-address machine evaluates `X = (A + B) × C`. The programmer writes:
 ```
 LOAD A
 ADD B
@@ -1955,7 +1955,7 @@ STORE X
 ```
 Calculate the instruction bytes fetched and data bytes accessed if each instruction is 3 bytes and each operand is 4 bytes.
 
-**Q27.** Compare the MIPS R2000 register set (32 Ã— 32-bit GPRs) with the Intel 8086 register set (8 Ã— 16-bit GPRs). How does register count affect instruction count for complex expressions?
+**Q27.** Compare the MIPS R2000 register set (32 × 32-bit GPRs) with the Intel 8086 register set (8 × 16-bit GPRs). How does register count affect instruction count for complex expressions?
 
 **Q28.** A CPU uses base-register addressing. The base register holds 0x4000, and the instruction has offset 0x100. Calculate the effective address in hexadecimal. What if the same instruction used indexed addressing with index register = 0x200?
 
@@ -1969,16 +1969,16 @@ Calculate the instruction bytes fetched and data bytes accessed if each instruct
 <summary>Show Answer Key</summary>
 
 **A1.** STORE R1, X micro-operations:
-- T0: MAR â† PC (fetch start)
-- T1: MDR â† Memory[MAR], PC â† PC+1
-- T2: IR â† MDR
+- T0: MAR ← PC (fetch start)
+- T1: MDR ← Memory[MAR], PC ← PC+1
+- T2: IR ← MDR
 - T3: Decode IR (CU identifies STORE instruction)
-- T4: MAR â† IR[address field] (X â†’ MAR)
-- T5: MDR â† R1 (data from register)
-- T6: Memory[MAR] â† MDR (write to memory), then continue to next instruction
+- T4: MAR ← IR[address field] (X → MAR)
+- T5: MDR ← R1 (data from register)
+- T6: Memory[MAR] ← MDR (write to memory), then continue to next instruction
 
-**A2.** Average CPI = Î£(freq_i Ã— CPI_i) = 0.40Ã—1 + 0.30Ã—2 + 0.15Ã—2 + 0.15Ã—3 = 0.40 + 0.60 + 0.30 + 0.45 = 1.75.
-Execution time = IC Ã— CPI Ã— Cycle_Time = 10â¶ Ã— 1.75 Ã— (1/2Ã—10â¹) = 10â¶ Ã— 1.75 Ã— 0.5Ã—10â»â¹ = 0.875 ms.
+**A2.** Average CPI = Σ(freq_i × CPI_i) = 0.40×1 + 0.30×2 + 0.15×2 + 0.15×3 = 0.40 + 0.60 + 0.30 + 0.45 = 1.75.
+Execution time = IC × CPI × Cycle_Time = 10⁶ × 1.75 × (1/2×10⁹) = 10⁶ × 1.75 × 0.5×10⁻⁹ = 0.875 ms.
 
 **A3.**
 | Format | Instructions | Code Size (32-bit words) | Total Bits |
@@ -1995,43 +1995,43 @@ Execution time = IC Ã— CPI Ã— Cycle_Time = 10â¶ Ã— 1.75 Ã— (1/2�
 - Memory accesses = 2
 
 **A5.** Horizontal: 16 bits, one per control signal, max parallelism, no decoder needed.
-Vertical: âŒˆlogâ‚‚17âŒ‰ = 5 bits encoded, needs decoder, less parallelism.
+Vertical: ⌈log₂17⌉ = 5 bits encoded, needs decoder, less parallelism.
 Example: For ADD with signals RegRead=1, ALUOp=ADD, RegWrite=1, MemRead=0, MemWrite=0:
 - Horizontal: 1_001_1_0_0 (5 or more bits depending on total signals)
 - Vertical: encoded as opcode for "ADD" micro-operation
 
-**A6.** Opcodes = 128 â†’ 7 bits. Registers = 64 â†’ 6 bits per field. 3 fields = 18 bits.
-Total used = 7 + 18 = 25 bits. Address bits per operand = (32 âˆ’ 25)/3 = 7/3 â‰ˆ 2.33 bits â€” not enough for meaningful addressing.
-If format is 2-address: 7 + 12 = 19 used, 13 bits remaining for one address field â†’ 2^13 = 8192 words = 32 KB.
+**A6.** Opcodes = 128 → 7 bits. Registers = 64 → 6 bits per field. 3 fields = 18 bits.
+Total used = 7 + 18 = 25 bits. Address bits per operand = (32 − 25)/3 = 7/3 ≈ 2.33 bits — not enough for meaningful addressing.
+If format is 2-address: 7 + 12 = 19 used, 13 bits remaining for one address field → 2^13 = 8192 words = 32 KB.
 
 **A7.** LW R1, 100(R2): Base-register/indexed addressing.
 EA = R2 + 100 = 500 + 100 = 600.
-Micro-ops: IF(1):MARâ†PC, MDRâ†M[MAR], PCâ†PC+1, IRâ†MDR; ID(2):Decode; EX(3):Aâ†100+R2; MEM(4):MARâ†A, MDRâ†M[MAR]; WB(5):R1â†MDR.
+Micro-ops: IF(1):MAR←PC, MDR←M[MAR], PC←PC+1, IR←MDR; ID(2):Decode; EX(3):A←100+R2; MEM(4):MAR←A, MDR←M[MAR]; WB(5):R1←MDR.
 
 **A8.** RISC implementation: Multiple instructions (MUL gives low 32 bits, special instructions for high 32 bits). In MIPS: MULT R1,R2; MFHI R3; MFLO R4. CISC: one MUL instruction with 64-bit result. RISC needs 3+ instructions, CISC does it in 1.
 
-**A9.** CPU Time = IC Ã— CPI / f = 500,000 Ã— 1.8 / (1.5Ã—10â¹) = 900,000 / (1.5Ã—10â¹) = 0.0006 s = 0.6 ms.
+**A9.** CPU Time = IC × CPI / f = 500,000 × 1.8 / (1.5×10⁹) = 900,000 / (1.5×10⁹) = 0.0006 s = 0.6 ms.
 
-**A10.** Programmer-visible registers: PC (program counter), IR (current instruction â€” not always visible), AC (accumulator), SP (stack pointer), PSW (flags), GPRs (R0â€“Rn if available). PC for flow control, AC for ALU results, SP for stack, PSW for conditional branches.
+**A10.** Programmer-visible registers: PC (program counter), IR (current instruction — not always visible), AC (accumulator), SP (stack pointer), PSW (flags), GPRs (R0–Rn if available). PC for flow control, AC for ALU results, SP for stack, PSW for conditional branches.
 
-**A11.** Auto-decrement: SP decremented BEFORE storing. SP = 0x1000 âˆ’ 2 = 0x0FFE (for 16-bit word).
+**A11.** Auto-decrement: SP decremented BEFORE storing. SP = 0x1000 − 2 = 0x0FFE (for 16-bit word).
 R1 stored at address 0x0FFE. New SP = 0x0FFE.
 
 **A12.** Hardwired control FSM states: S0 (IF), S1 (ID/OF for LOAD), S2 (EX for LOAD), S3 (WB for LOAD), S4 (ID for ADD), S5 (EX for ADD), S6 (WB for ADD), S7 (ID for STORE), S8 (EX for STORE), S9 (ID for HALT). Transitions based on opcode and current state.
 
-**A13.** Modern x86 CPUs (Intel Core, AMD Zen) decode complex CISC instructions into simpler RISC-like Î¼ops during the frontend. The backend then executes these Î¼ops in a RISC-like pipeline. This combines CISC code density with RISC pipelining efficiency.
+**A13.** Modern x86 CPUs (Intel Core, AMD Zen) decode complex CISC instructions into simpler RISC-like μops during the frontend. The backend then executes these μops in a RISC-like pipeline. This combines CISC code density with RISC pipelining efficiency.
 
 **A14.** 0-addr(11): PUSH A, PUSH B, MUL, PUSH C, PUSH D, MUL, ADD, PUSH E, SUB, POP Z. 
 1-addr(8): LOAD A, MUL B, STORE T, LOAD C, MUL D, ADD T, SUB E, STORE Z.
 2-addr(7): MOV R1,A, MUL R1,B, MOV R2,C, MUL R2,D, ADD R1,R2, SUB R1,E, MOV Z,R1.
 3-addr(4): MUL R1,A,B, MUL R2,C,D, ADD R1,R1,R2, SUB Z,R1,E.
 
-**A15.** Amdahl's Law: Speedup = 1 / [(1âˆ’P) + P/N] where P=parallel fraction, N=cores.
-With P=0.90, N=8: Speedup = 1 / [0.10 + 0.90/8] = 1 / [0.10 + 0.1125] = 1 / 0.2125 = 4.71Ã—.
-Maximum theoretical speedup with infinite cores = 1/(1âˆ’0.90) = 10Ã—.
+**A15.** Amdahl's Law: Speedup = 1 / [(1−P) + P/N] where P=parallel fraction, N=cores.
+With P=0.90, N=8: Speedup = 1 / [0.10 + 0.90/8] = 1 / [0.10 + 0.1125] = 1 / 0.2125 = 4.71×.
+Maximum theoretical speedup with infinite cores = 1/(1−0.90) = 10×.
 
 **A16.** 16-bit instructions, 4-bit opcode. 12 bits for operands.
-If each operand is a register (4 bits for 16 registers): 2-address = 4+4+4 = 12 bits â†’ exactly fits, so 2^4 = 16 possible 2-address instructions.
+If each operand is a register (4 bits for 16 registers): 2-address = 4+4+4 = 12 bits → exactly fits, so 2^4 = 16 possible 2-address instructions.
 Wait, opcode = 4 bits means only 16 total opcodes possible. If some are used for 0-addr/1-addr, fewer remain for 2-addr.
 If all 16 patterns are 2-addr: 16 instructions with 2 register operands.
 
@@ -2045,8 +2045,8 @@ During RET:
 - PC is popped from stack via SP
 - SP is adjusted back
 
-**A18.** Horizontal: Width = number of control signals (wide). All signals controlled independently â€” max parallelism. No decoding needed. Example: 32-bit control word with each bit = 1 control signal.
-Vertical: Width = âŒˆlogâ‚‚(num_control_signals+1)âŒ‰ (narrow). Signals encoded as micro-opcodes. Needs decoder to expand. Less parallelism but smaller control memory.
+**A18.** Horizontal: Width = number of control signals (wide). All signals controlled independently — max parallelism. No decoding needed. Example: 32-bit control word with each bit = 1 control signal.
+Vertical: Width = ⌈log₂(num_control_signals+1)⌉ (narrow). Signals encoded as micro-opcodes. Needs decoder to expand. Less parallelism but smaller control memory.
 
 **A19.** 3 instructions total. Instruction fetches = 3 (one per instruction).
 (a) Direct: data accesses = 2 reads + 1 write = 3. Total = 3 + 3 = 6.
@@ -2054,45 +2054,45 @@ Vertical: Width = âŒˆlogâ‚‚(num_control_signals+1)âŒ‰ (narrow). Sign
 (c) Reg Indirect: LOAD = IF + 1 read = 2, ADD = IF + 1 read = 2, STORE = IF + 1 write = 2. Total = 6.
 
 **A20.** 3-address machine needs 2 read ports + 1 write port for single-cycle operation.
-Register file: 16 Ã— 32 bits = 512 SRAM cells Ã— 6 transistors = 3072 transistors per port Ã— 3 ports â‰ˆ 9216 transistors for 1RW + overhead for decoders, sense amps â‰ˆ 15000â€“20000 transistors total.
+Register file: 16 × 32 bits = 512 SRAM cells × 6 transistors = 3072 transistors per port × 3 ports ≈ 9216 transistors for 1RW + overhead for decoders, sense amps ≈ 15000–20000 transistors total.
 
-**A21.** Execution time = IC Ã— CPI / f = 800,000 Ã— 1.2 / (2.5Ã—10â¹) = 960,000 / (2.5Ã—10â¹) = 0.000384 s = 0.384 ms.
-MIPS = f / (CPI Ã— 10â¶) = 2.5Ã—10â¹ / (1.2 Ã— 10â¶) = 2083.33 MIPS.
+**A21.** Execution time = IC × CPI / f = 800,000 × 1.2 / (2.5×10⁹) = 960,000 / (2.5×10⁹) = 0.000384 s = 0.384 ms.
+MIPS = f / (CPI × 10⁶) = 2.5×10⁹ / (1.2 × 10⁶) = 2083.33 MIPS.
 
-**A22.** [General register CPU datapath]: Register file (R0â€“R31) with 2 read ports â†’ ALU â†’ 1 write port â†’ Register file. PC â†’ MAR â†’ Memory â†’ MDR â†’ IR/Register file. Control unit receives IR and generates control signals for all components. Address bus (PCâ†’MARâ†’Memory). Data bus (Memoryâ†”MDRâ†”Registers).
+**A22.** [General register CPU datapath]: Register file (R0–R31) with 2 read ports → ALU → 1 write port → Register file. PC → MAR → Memory → MDR → IR/Register file. Control unit receives IR and generates control signals for all components. Address bus (PC→MAR→Memory). Data bus (Memory↔MDR↔Registers).
 
-**A23.** 24-bit instructions, 32 opcodes (5 bits), 8 registers (3 bits each). For 2-addr: 5 + 3 + 3 = 11 bits used, 13 bits remaining. Address field = 13 bits â†’ 2^13 = 8192 bytes directly addressable (byte-addressable) = 8 KB.
+**A23.** 24-bit instructions, 32 opcodes (5 bits), 8 registers (3 bits each). For 2-addr: 5 + 3 + 3 = 11 bits used, 13 bits remaining. Address field = 13 bits → 2^13 = 8192 bytes directly addressable (byte-addressable) = 8 KB.
 
 **A24.** RISC's load-store (only LOAD/STORE access memory) simplifies pipelines: uniform instruction length simplifies IF stage, register-to-register ALU ops have predictable timing (no memory wait states in EX), hazards are easier to detect (only LOAD/STORE interact with memory), forwarding logic is simpler (fewer data sources). CISC memory operands cause variable-latency EX stages, complex hazard detection.
 
 **A25.** `ADD R1, R2, R3`:
-- T0(IF): MAR â† PC
-- T1(IF): MDR â† Memory[MAR], PC â† PC+1
-- T2(IF): IR â† MDR
+- T0(IF): MAR ← PC
+- T1(IF): MDR ← Memory[MAR], PC ← PC+1
+- T2(IF): IR ← MDR
 - T3(ID): Decode IR, read R2, R3 from register file
-- T4(EX): ALU â† R2 + R3, result on ALU output
-- T5(WB): R1 â† ALU_result
+- T4(EX): ALU ← R2 + R3, result on ALU output
+- T5(WB): R1 ← ALU_result
 Total: 6 clock cycles for a non-pipelined implementation. In a pipelined CPU, this takes 5 cycles per instruction with 1 CPI (overlap).
 
-**A26.** 4 instructions Ã— 3 bytes = 12 instruction bytes fetched.
+**A26.** 4 instructions × 3 bytes = 12 instruction bytes fetched.
 Data: LOAD A (read 4B), ADD B (read 4B), MUL C (read 4B), STORE X (write 4B) = 16 data bytes.
 Total bus traffic = 12 + 16 = 28 bytes.
 
-**A27.** MIPS (32 GPRs) can keep more variables in registers, reducing LOAD/STORE instructions. 8086 (8 GPRs) frequently spills to memory. For expression with 10 variables: MIPS keeps all in registers (0 loads), 8086 needs ~7 memory spills/reloads. More registers â†’ fewer memory instructions â†’ faster execution.
+**A27.** MIPS (32 GPRs) can keep more variables in registers, reducing LOAD/STORE instructions. 8086 (8 GPRs) frequently spills to memory. For expression with 10 variables: MIPS keeps all in registers (0 loads), 8086 needs ~7 memory spills/reloads. More registers → fewer memory instructions → faster execution.
 
 **A28.** Base-register: EA = Base + Offset = 0x4000 + 0x100 = 0x4100.
 Indexed: EA = Base + Index = 0x4000 + 0x200 = 0x4200 (if offset=0) OR EA = Offset + Index = 0x100 + 0x200 = 0x300 (if base acts as index). Standard indexed with offset: EA = base + index = 0x4000 + 0x200 = 0x4200.
 
 **A29.** RISC's load-store design means ALU can only operate on register values. More registers reduce spill-to-memory (saving LOAD/STORE). CISC allows memory operands directly in ALU instructions, reducing register pressure. RISC trades larger register file for simpler pipeline and predictable memory access patterns.
 
-**A30.** Opcode bits = 8 â†’ 2^8 = 256 distinct opcodes. Register bits = 5 â†’ 2^5 = 32 registers. Address bits = 17 â†’ 2^17 = 131,072 bytes = 128 KB directly addressable (byte-addressable).
+**A30.** Opcode bits = 8 → 2^8 = 256 distinct opcodes. Register bits = 5 → 2^5 = 32 registers. Address bits = 17 → 2^17 = 131,072 bytes = 128 KB directly addressable (byte-addressable).
 </details>
 
 ## Summary
 
 - The CPU consists of the ALU (arithmetic/logic), control unit (sequencing), and register file (fast storage).
 - Key registers: PC (next instruction address), IR (current instruction), MAR (memory address), MDR (memory data), AC (accumulator).
-- Instruction cycle: Fetch â†’ Decode â†’ Operand Fetch â†’ Execute â†’ Write Back.
+- Instruction cycle: Fetch → Decode → Operand Fetch → Execute → Write Back.
 - Instruction formats: 0-address (stack), 1-address (accumulator), 2-address (destination + source), 3-address (two sources + destination). More addresses per instruction = fewer total instructions but wider instruction word.
 - Addressing modes determine effective address: immediate (no memory), direct (1 access), indirect (2 accesses), register (0 accesses), register indirect (1 access).
 - RISC: fixed-length instructions, load-store architecture, hardwired control, many registers, low CPI. CISC: variable-length, memory operands allowed, microprogrammed, fewer registers, higher CPI.
@@ -2103,10 +2103,10 @@ Indexed: EA = Base + Index = 0x4000 + 0x200 = 0x4200 (if offset=0) OR EA = Offse
 
 - **For IBPS/GATE:** A common question asks "How many memory accesses for a given addressing mode?" Immediate=0, Register=0, Direct=1, Indirect=2, Register Indirect=1.
 - **Register indirect shortcut:** (R) means the register holds the memory address. EA = content of R.
-- **RISC vs CISC memory access:** Only LOAD and STORE in RISC; any instruction can access memory in CISC â€” this is the defining RISC feature.
+- **RISC vs CISC memory access:** Only LOAD and STORE in RISC; any instruction can access memory in CISC — this is the defining RISC feature.
 - **Instruction count comparison:** A 3-address machine needs fewer instructions than a 0-address machine for the same expression, but each instruction is wider.
 - **Microprogrammed control in modern CPUs:** Modern x86 CPUs decode CISC instructions into micro-ops (RISC-like internal operations), then execute via a hardwired RISC core.
-- **Exam tip for control unit:** If the question asks about speed â†’ hardwired. If about flexibility/modifiability â†’ microprogrammed.
+- **Exam tip for control unit:** If the question asks about speed → hardwired. If about flexibility/modifiability → microprogrammed.
 
 ---
 
@@ -2122,11 +2122,11 @@ Indexed: EA = Base + Index = 0x4000 + 0x200 = 0x4200 (if offset=0) OR EA = Offse
 
 **Q3:** Which addressing mode requires exactly two memory accesses to fetch the operand?
 
-(`<details><summary>Show Answer</summary>Indirect addressing â€” first access reads the address, second access reads the operand.</details>`)
+(`<details><summary>Show Answer</summary>Indirect addressing — first access reads the address, second access reads the operand.</details>`)
 
 **Q4:** What does CPI stand for and what is its typical value in a pipelined RISC processor?
 
-(`<details><summary>Show Answer</summary>Cycles Per Instruction. In an ideal pipelined RISC, CPI â‰ˆ 1 (one instruction completes per cycle).</details>`)
+(`<details><summary>Show Answer</summary>Cycles Per Instruction. In an ideal pipelined RISC, CPI ≈ 1 (one instruction completes per cycle).</details>`)
 
 **Q5:** In a microprogrammed control unit, what is the difference between horizontal and vertical microprogramming?
 
@@ -2136,10 +2136,10 @@ Indexed: EA = Base + Index = 0x4000 + 0x200 = 0x4200 (if offset=0) OR EA = Offse
 
 ## Exercises
 
-1. For the expression `X = (A + B) Ã— (C âˆ’ D)`, write the sequence of instructions in 0-address, 1-address, 2-address, and 3-address formats.
+1. For the expression `X = (A + B) × (C − D)`, write the sequence of instructions in 0-address, 1-address, 2-address, and 3-address formats.
 2. Given memory content: Address 500 = 600, Address 600 = 50. For `LOAD R1, (500)` with indirect addressing, what value is loaded into R1?
 3. Design a microprogrammed control sequence for the instruction `STORE R1, X` (store register to memory).
-4. Compare the number of memory accesses and total bytes fetched for evaluating `W = X + Y Ã— Z` on RISC vs CISC assuming 32-bit instructions and 64-bit operands.
+4. Compare the number of memory accesses and total bytes fetched for evaluating `W = X + Y × Z` on RISC vs CISC assuming 32-bit instructions and 64-bit operands.
 5. List all CPU registers and their functions for a generic accumulator-based processor.
 6. Implement a simple branch instruction micro-operation sequence for `BEQ R1, R2, offset` (branch if R1 = R2).
 7. For a 32-bit instruction with 64 opcodes, how many bits are available for operands in a 3-address format?

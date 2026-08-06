@@ -1,4 +1,4 @@
-﻿# Chapter 16: API Gateways, CQRS, and Event Sourcing
+# Chapter 16: API Gateways, CQRS, and Event Sourcing
 > **Previous:** [15 Cdn Dns Edge](./15-cdn-dns-edge.md) | **Next:** [17 Observability Resiliency](./17-observability-resiliency.md)
 
 ---
@@ -234,7 +234,7 @@ Client ? GET /orders?user=456
     Gateway ? payment-service batch(order_ids) ? returns all payments
 ```
 
-GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer â€” clients specify exactly which data they need, gateway optimizes the fetch plan.
+GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer — clients specify exactly which data they need, gateway optimizes the fetch plan.
 
 ### 6. CQRS Pattern
 
@@ -299,12 +299,12 @@ Events for Order#123: v1: OrderPlaced, v2: PaymentReceived, v3: OrderShipped, v4
 Current state (fold): placed, paid, shipped, delivered ?
 ```
 
-Events are immutable facts â€” correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
+Events are immutable facts — correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
 
 ### 9. Event Store Design
 
 
-**Event versioning**: Two strategies â€” versioned event types (`OrderPlacedV1` ? `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
+**Event versioning**: Two strategies — versioned event types (`OrderPlacedV1` ? `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
 
 ```python
 class Upcaster:
@@ -319,7 +319,7 @@ class Upcaster:
 Upcaster.register("OrderPlaced", 1, lambda e: {**e, "version": 2, "currency": "USD"})
 ```
 
-**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields â€” make them optional.
+**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields — make them optional.
 
 ### 10. Rebuilding State: Projections and Snapshots
 
@@ -372,7 +372,7 @@ Query Side (Projections):
   7d. SearchProjection indexes order in Elasticsearch
 ```
 
-**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query â€” a client that writes then immediately reads may see stale data.
+**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query — a client that writes then immediately reads may see stale data.
 
 ### 12. Practical Trade-offs
 
@@ -404,7 +404,7 @@ Query Side (Projections):
 
 **Axon Framework**: Java framework for CQRS/ES. Provides Aggregate annotation, Command Handler, Event Sourcing Handler, and Saga orchestration. Integrates with any event store (Axon Server, Kafka, PostgreSQL).
 
-**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key â€” acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
+**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key — acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
 
 **Bank ledger systems**: Every transaction is an event (Deposited, Withdrawn, Transferred). Account balance = sum of all Deposit amounts - sum of all Withdrawal amounts. No records are ever deleted or modified. This gives complete audit trail and regulatory compliance.
 
@@ -451,7 +451,7 @@ import httpx
 mobile_gateway = Flask(__name__)
 web_gateway = Flask(__name__)
 
-# Mobile BFF â€” compact payloads, low bandwidth
+# Mobile BFF — compact payloads, low bandwidth
 @mobile_gateway.route("/feed")
 def mobile_feed():
     user_id = request.headers["X-User-Id"]
@@ -462,7 +462,7 @@ def mobile_feed():
         "thumbnail": p.get("images", [None])[0]
     } for p in posts])
 
-# Web BFF â€” rich content, full HTML
+# Web BFF — rich content, full HTML
 @web_gateway.route("/feed")
 def web_feed():
     user_id = request.headers["X-User-Id"]
@@ -580,7 +580,7 @@ class OrderProjection:
 | # | Question | A | B | C | D | Answer |
 |---|----------|---|---|---|---|--------|
 | 1 | What distinguishes an API Gateway from a Load Balancer? | Load balancers only distribute traffic; gateways add auth, rate limiting, aggregation | Gateways are hardware; load balancers are software | Load balancers work at L7 only | Gateways cannot terminate SSL | **A** |
-| 2 | What is the BFF pattern? | Backend for Frontend â€” separate gateway per client type | Best Friend Forever â€” dedicated server per user | Big Fast Forwarding â€” high-throughput proxy | Basic Function Filter â€” request sanitization | **A** |
+| 2 | What is the BFF pattern? | Backend for Frontend — separate gateway per client type | Best Friend Forever — dedicated server per user | Big Fast Forwarding — high-throughput proxy | Basic Function Filter — request sanitization | **A** |
 | 3 | In CQRS, how does the write model communicate changes to the read model? | Direct database writes | Via events published by the command side | Synchronous REST calls | Shared in-memory cache | **B** |
 | 4 | What is the dual-write problem in CQRS without event sourcing? | Writing to two databases without transactional guarantees | Writing duplicate events to the event store | Writing to the same table twice | Writing to Kafka with two producers | **A** |
 | 5 | What is upcasting in event sourcing? | Deleting old events | Transforming historical events to the latest schema on read | Creating snapshots of current state | Broadcasting events to subscribers | **B** |
@@ -594,20 +594,20 @@ class OrderProjection:
 | Use API gateways for cross-cutting concerns (auth, rate limiting, routing) but keep business logic in services | Centralize authentication and rate limiting at the gateway; route requests to domain-specific microservices |
 | BFF pattern optimizes per-client payloads and reduces mobile bandwidth | Mobile BFF returns compact JSON (5 fields); Web BFF returns rich content with nested author details |
 | Sliding window counter in Redis balances accuracy and memory for distributed rate limiting | Store two counters per key (current + previous window); Lua scripts ensure atomic check-and-increment |
-| CQRS separates transactional writes from denormalized reads â€” use for complex querying over write-optimized data | Write model: normalized relational tables. Read model: materialized views, Elasticsearch, Redis |
+| CQRS separates transactional writes from denormalized reads — use for complex querying over write-optimized data | Write model: normalized relational tables. Read model: materialized views, Elasticsearch, Redis |
 | Event sourcing provides complete audit trail; pair with snapshots every N events to bound replay cost | Snapshot every 100 events; rebuild state by loading latest snapshot + replaying subsequent events |
 | Sagas with compensation handle distributed transactions without two-phase commit | Orchestrated saga: central coordinator manages step execution and rollback. Choreographed: each step publishes events that trigger next step |
-| Event versioning requires discipline â€” use upcasting or versioned event types with Avro/Protobuf | Store event schema version in each event; apply upcasters on read to transform old formats to current schema |
+| Event versioning requires discipline — use upcasting or versioned event types with Avro/Protobuf | Store event schema version in each event; apply upcasters on read to transform old formats to current schema |
 
 ## Case Study
 
 **Scenario: E-Commerce Platform Migration to CQRS/ES**
 
-An e-commerce platform processing 50,000 orders per day experiences growing pains. The monolithic PostgreSQL database has 47 tables with complex JOINs (14-table JOINs for the order detail page). Read replicas lag by up to 5 seconds during flash sales, and the auditing team needs 7 years of order history â€” but the current schema only stores the latest state, making historical queries impossible without point-in-time recovery backup restore.
+An e-commerce platform processing 50,000 orders per day experiences growing pains. The monolithic PostgreSQL database has 47 tables with complex JOINs (14-table JOINs for the order detail page). Read replicas lag by up to 5 seconds during flash sales, and the auditing team needs 7 years of order history — but the current schema only stores the latest state, making historical queries impossible without point-in-time recovery backup restore.
 
 The team migrates to CQRS + Event Sourcing. The command side uses PostgreSQL in its normalized form for transactional integrity: `orders`, `order_items`, `payments`, `shipments` tables with foreign keys and constraints. Each write appends events to a separate `events` table and publishes them to Kafka. The read side builds denormalized projections: an `order_summaries` table for the order detail page (single row per order, pre-joined), an Elasticsearch index for full-text search across historical orders, and a ClickHouse table for analytics dashboards.
 
-The API gateway sits in front with route-based authentication: `/api/v1/commands/*` routes to the command service (JWT required, rate-limited at 100 req/min per user), `/api/v1/queries/*` routes to the query service (cached for 30 seconds). A Saga orchestrator handles the checkout flow: ReserveInventory â†’ ChargePayment â†’ ShipOrder. When the payment fails, the saga compensates by releasing inventory and sending a failure notification â€” in under 500ms total.
+The API gateway sits in front with route-based authentication: `/api/v1/commands/*` routes to the command service (JWT required, rate-limited at 100 req/min per user), `/api/v1/queries/*` routes to the query service (cached for 30 seconds). A Saga orchestrator handles the checkout flow: ReserveInventory → ChargePayment → ShipOrder. When the payment fails, the saga compensates by releasing inventory and sending a failure notification — in under 500ms total.
 
 Results: read latency drops from 850ms (14-table JOIN) to 8ms (single-row lookup). Historical queries become trivial (replay events from any point-in-time). Audit compliance is satisfied with the immutable event log. The trade-off: writes are eventually consistent with reads (up to 1 second lag), requiring the UI to show a "processing" state for recently placed orders.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -1311,7 +1311,7 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation â€” distinct from load balancers which only distribute traffic
+- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation — distinct from load balancers which only distribute traffic
 - BFF pattern (gateway per frontend) optimizes payloads per client type; gateway per domain aligns with bounded contexts
 - Distributed rate limiting uses token bucket (burst-tolerant) or sliding window (memory-expensive) algorithms with Redis backend
 - Request aggregation at the gateway eliminates N+1 fetch patterns from clients by composing microservice responses server-side
@@ -1320,7 +1320,7 @@ export { Cache, Logger, computeHash, CacheEntry }
 - Event versioning and upcasting handle schema evolution without modifying historical events
 - Snapshots prevent unbounded replay costs by saving aggregated state at periodic intervals
 - Kafka serves as a scalable event bus connecting command-side writes to query-side projections
-- CQRS/ES adds significant complexity â€” use for audit trails and temporal queries, not simple CRUD
+- CQRS/ES adds significant complexity — use for audit trails and temporal queries, not simple CRUD
 - Financial systems, Axon Framework, and Event Store DB are canonical real-world applications
 
 ---
@@ -1335,10 +1335,10 @@ export { Cache, Logger, computeHash, CacheEntry }
 5. Token bucket allows bursts up to the bucket size because tokens accumulate during idle periods. Sliding window tracks the exact count in the last window period, rejecting immediately when the limit is reached. Under a sudden spike: token bucket serves the full burst instantly then drops to refill rate; sliding window rejects all requests beyond the limit within the window.</details>
 
 ### Application Problems
-<details><summary>Solution</summary>1. Redis memory: each key stores current window count (4 bytes) + previous window count (4 bytes) + TTL metadata (~16 bytes) â‰ˆ 24 bytes per key. 10,000 keys Ã— 24 bytes = 240 KB. Peak Redis throughput: 50,000 req/min = ~833 req/s. Each request: 1 GET + 1 INCR + 1 EXPIRE = 3 Redis ops. Peak: 833 Ã— 3 â‰ˆ 2500 ops/sec. Trivial for a single Redis instance.
-2. Sequential: 5 Ã— 50ms = 250ms (5 calls serially). Parallel: 50ms (all 5 concurrent, bounded by slowest). Batch: for services that support batch endpoints, single call ~60ms. With 10 services: sequential = 500ms, parallel = 50ms, batch = ~70ms (depends on batch overhead). Parallel aggregation is the clear winner for independent calls.
-3. Snapshot every 200 events (average aggregate length). Store as JSON blob in PostgreSQL `snapshots` table. Retain all events permanently (audit requirement). Catch-up: 50M events / 10K events/sec = 5000 seconds â‰ˆ 83 minutes. With snapshots: load latest snapshot (O(1)) + replay remaining events (e.g., if snapshot at version 180, replay 20 events = negligible).
-4. (a) Strongest: write the read model synchronously in the same transaction (dual-write with outbox). (b) Medium: use a read-your-writes consistency model â€” after a write, wait for the read model to be updated before returning to the user (poll until updated). (c) Weakest/simplest: idempotency key â€” the user's create request includes a unique key; the query side returns the order status once visible. The UI polls the query side every 500ms until the order appears.</details>
+<details><summary>Solution</summary>1. Redis memory: each key stores current window count (4 bytes) + previous window count (4 bytes) + TTL metadata (~16 bytes) ≈ 24 bytes per key. 10,000 keys × 24 bytes = 240 KB. Peak Redis throughput: 50,000 req/min = ~833 req/s. Each request: 1 GET + 1 INCR + 1 EXPIRE = 3 Redis ops. Peak: 833 × 3 ≈ 2500 ops/sec. Trivial for a single Redis instance.
+2. Sequential: 5 × 50ms = 250ms (5 calls serially). Parallel: 50ms (all 5 concurrent, bounded by slowest). Batch: for services that support batch endpoints, single call ~60ms. With 10 services: sequential = 500ms, parallel = 50ms, batch = ~70ms (depends on batch overhead). Parallel aggregation is the clear winner for independent calls.
+3. Snapshot every 200 events (average aggregate length). Store as JSON blob in PostgreSQL `snapshots` table. Retain all events permanently (audit requirement). Catch-up: 50M events / 10K events/sec = 5000 seconds ≈ 83 minutes. With snapshots: load latest snapshot (O(1)) + replay remaining events (e.g., if snapshot at version 180, replay 20 events = negligible).
+4. (a) Strongest: write the read model synchronously in the same transaction (dual-write with outbox). (b) Medium: use a read-your-writes consistency model — after a write, wait for the read model to be updated before returning to the user (poll until updated). (c) Weakest/simplest: idempotency key — the user's create request includes a unique key; the query side returns the order status once visible. The UI polls the query side every 500ms until the order appears.</details>
 
 ### Challenge Problem
 <details><summary>Solution</summary>Design a financial trading ledger:
@@ -1347,12 +1347,12 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 **Snapshot Strategy**: Periodic snapshots every 100 events per account. Daily archival snapshot of entire account state at market close (midnight UTC). Store snapshots in a separate `snapshots` table with compression (Avro/Parquet format for archival).
 
-**Concurrency**: Optimistic concurrency on the event store â€” the command includes `expectedVersion`. If the actual version differs (another write happened concurrently), reject with 409 Conflict. Client retries by re-reading the latest events and re-applying the command.
+**Concurrency**: Optimistic concurrency on the event store — the command includes `expectedVersion`. If the actual version differs (another write happened concurrently), reject with 409 Conflict. Client retries by re-reading the latest events and re-applying the command.
 
 **Read-Side Projections**: Current balance projection: maintains account_balances table, updated via Kafka consumer. Historical balance: replay events up to any timestamp (snapshot + events after snapshot). Reporting: ClickHouse for dashboard queries, updated within 5 seconds.
 
-**Kafka Partitioning**: Partition by account_id hash â†’ 128 partitions. This guarantees order per account. 100K TPS / 128 â‰ˆ 780 TPS per partition â€” well within Kafka's capacity.
+**Kafka Partitioning**: Partition by account_id hash → 128 partitions. This guarantees order per account. 100K TPS / 128 ≈ 780 TPS per partition — well within Kafka's capacity.
 
 **Hot Account Problem**: A popular trading account generates 10K+ events/minute. Mitigations: (a) in-memory caching of the account snapshot with write-through. (b) Partition the account's event stream by time (daily snapshots, events organized by date). (c) Dedicated Kafka partition for high-volume accounts.
 
-**Read Model Rebuild**: Drop corrupted projection, re-read all events from the event store from position 0, re-apply projection handlers. With snapshots, rebuild time = O(number of accounts Ã— average events per account). For a 7-year ledger, use daily snapshots to limit replay to at most 1 day of events (âˆ¼24K events at 1 TPS per account).</details>
+**Read Model Rebuild**: Drop corrupted projection, re-read all events from the event store from position 0, re-apply projection handlers. With snapshots, rebuild time = O(number of accounts × average events per account). For a 7-year ledger, use daily snapshots to limit replay to at most 1 day of events (∼24K events at 1 TPS per account).</details>

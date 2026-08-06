@@ -1,4 +1,4 @@
-﻿# Chapter 14: Laravel AI SDK â†’ Images, Audio, Transcriptions & Embeddings
+# Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings
 > **Previous:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools) | **Next:** [Laravel MCP -- Model Context Protocol](./15-mcp)
 
 ---
@@ -133,7 +133,7 @@ class ImageController extends Controller
 
         return ['url' => Storage::disk('public')->url($filename)];
 
-> **Pro Tip:** Always validate and sanitize image prompts before sending to the API. Provider content policies vary â€” what works on OpenAI may be rejected by Gemini. Append style guidance ('photorealistic', 'digital art') for consistent results.
+> **Pro Tip:** Always validate and sanitize image prompts before sending to the API. Provider content policies vary — what works on OpenAI may be rejected by Gemini. Append style guidance ('photorealistic', 'digital art') for consistent results.
     }
 }
 ```
@@ -289,7 +289,7 @@ class IndexDocuments extends Command
                 $text = $document->title . "\n\n" . $document->content;
                 $embedding = Str::of($text)->toEmbeddings();
 
-> **Remember:** Embedding API calls are stateless â€” generating the same text twice costs twice. Always implement caching with content-hash keys (md5 of the input text) to avoid redundant API costs.
+> **Remember:** Embedding API calls are stateless — generating the same text twice costs twice. Always implement caching with content-hash keys (md5 of the input text) to avoid redundant API costs.
                 $document->forceFill([
                     'embedding' => $embedding,
                     'embedding_indexed_at' => now(),
@@ -304,7 +304,7 @@ class IndexDocuments extends Command
 
 #### 14.4.2 The `Embeddings` Class
 
-For batch operations, use `Embeddings` â†’ it sends all texts in a single API request:
+For batch operations, use `Embeddings` → it sends all texts in a single API request:
 
 ```php
 <?php
@@ -810,7 +810,7 @@ class MultiModalAnalyzer
 | Efficiency | Lower (per-text call) | Higher (batched) |
 | Use Case | Real-time search query | Batch document indexing |
 
-## Quick Reference â€” AI SDK Media Methods
+## Quick Reference — AI SDK Media Methods
 
 | Method | Purpose |
 |--------|---------|

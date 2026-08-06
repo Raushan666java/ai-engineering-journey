@@ -1,4 +1,4 @@
-﻿# Chapter 16: Trie (Prefix Tree)
+# Chapter 16: Trie (Prefix Tree)
 
 **Prev:** [Chapter 15: B-Trees and B+ Trees](15-b-trees.md) | **Next:** [Chapter 17: Segment Tree and Fenwick Tree](17-segment-tree.md)
 
@@ -32,7 +32,7 @@
 
 ## Why Tries Matter
 
-**Real-World Analogy:** Imagine your phone's contact list with 10,000 names. When you type "Joh" into the search bar, your phone instantly shows "Johnson", "Johansson", "John", "Johny" â€” every contact whose name starts with those three letters. It does NOT scan all 10,000 names one by one. Instead, it uses a **trie-like structure**: it follows the path J ? o ? h, then collects every name branching from there. A hash table cannot do this. A BST would need O(L log n). A trie does it in O(L + results) â€” the prefix length plus the number of matches, completely independent of dictionary size.
+**Real-World Analogy:** Imagine your phone's contact list with 10,000 names. When you type "Joh" into the search bar, your phone instantly shows "Johnson", "Johansson", "John", "Johny" — every contact whose name starts with those three letters. It does NOT scan all 10,000 names one by one. Instead, it uses a **trie-like structure**: it follows the path J ? o ? h, then collects every name branching from there. A hash table cannot do this. A BST would need O(L log n). A trie does it in O(L + results) — the prefix length plus the number of matches, completely independent of dictionary size.
 
 ## Chapter at a Glance
 
@@ -129,7 +129,7 @@ TrieNode {
 ### Algorithm Steps
 
 1. A trie is a rooted tree where each node corresponds to a single character.
-2. The root node is empty â€” it stores no character.
+2. The root node is empty — it stores no character.
 3. Each path from root to a leaf (or internal node) spells a string by concatenating the characters along the path.
 4. Nodes with isEndOfWord = true indicate at least one complete word ends there.
 5. Words that are prefixes of other words share the same path (e.g., "app" and "apple" share "app").
@@ -140,7 +140,7 @@ TrieNode {
 
 ### Real-World Analogy
 
-Adding a new contact "Bob" to your phone: you check if B exists from root â€” yes. Then check if o exists under B â€” yes. Then check if b exists under o â€” no, so you create a new b entry and mark it as a complete contact.
+Adding a new contact "Bob" to your phone: you check if B exists from root — yes. Then check if o exists under B — yes. Then check if b exists under o — no, so you create a new b entry and mark it as a complete contact.
 
 ### Algorithm Steps
 
@@ -162,7 +162,7 @@ function insert(word):
     current.isEndOfWord = true
 ```
 
-### Dry Run â€” Insertion Trace
+### Dry Run — Insertion Trace
 
 Insert words: "cat", "car", "dog"
 
@@ -173,7 +173,7 @@ Insert words: "cat", "car", "dog"
 | 1 | root | c | c not in children create node | root arrow [c] |
 | 2 | c | a | a not in children create node | root arrow c arrow [a] |
 | 3 | a | t | t not in children create node | root arrow c arrow a arrow [t] |
-| 4 | t | â€” | Mark isEndOfWord = true | root arrow c arrow a arrow t(!) |
+| 4 | t | — | Mark isEndOfWord = true | root arrow c arrow a arrow t(!) |
 
 **Insert "car":**
 
@@ -182,7 +182,7 @@ Insert words: "cat", "car", "dog"
 | 1 | root | c | c exists follow | root arrow [c] arrow a arrow t(!) |
 | 2 | c | a | a exists follow | root arrow c arrow [a] arrow t(!) |
 | 3 | a | r | r not in children create node | root arrow c arrow a arrow t(!), [r] |
-| 4 | r | â€” | Mark isEndOfWord = true | root arrow c arrow a arrow t(!), r(!) |
+| 4 | r | — | Mark isEndOfWord = true | root arrow c arrow a arrow t(!), r(!) |
 
 **Insert "dog":**
 
@@ -191,7 +191,7 @@ Insert words: "cat", "car", "dog"
 | 1 | root | d | d not in children create node | root arrow c, [d] |
 | 2 | d | o | o not in children create node | root arrow c, d arrow [o] |
 | 3 | o | g | g not in children create node | root arrow c, d arrow o arrow [g] |
-| 4 | g | â€” | Mark isEndOfWord = true | root arrow c, d arrow o arrow g(!) |
+| 4 | g | — | Mark isEndOfWord = true | root arrow c, d arrow o arrow g(!) |
 
 **Final trie:**
 ```
@@ -277,8 +277,8 @@ class Trie {
 
 ### Complexity Analysis
 
-- **Time:** O(L) â€” each character of the word is processed exactly once. No rebalancing, no hashing overhead, no collisions.
-- **Space:** O(N x L) worst-case â€” if no strings share prefixes, every character of every word creates a new node. Each node stores 26 pointers (or a hash map entry) plus a boolean.
+- **Time:** O(L) — each character of the word is processed exactly once. No rebalancing, no hashing overhead, no collisions.
+- **Space:** O(N x L) worst-case — if no strings share prefixes, every character of every word creates a new node. Each node stores 26 pointers (or a hash map entry) plus a boolean.
 
 ### Advantages & Disadvantages
 
@@ -287,13 +287,13 @@ class Trie {
 | O(L) insert independent of dictionary size | High memory overhead (26 child pointers per node) |
 | Handles variable-length keys naturally | Insertion slower than hash table for single operations |
 | Supports prefix operations | Array-based tries waste space on sparse alphabets |
-| No collision handling needed | Not cache-friendly â€” pointer chasing across nodes |
+| No collision handling needed | Not cache-friendly — pointer chasing across nodes |
 
 ### Edge Cases
 
 - **Empty string:** Inserting "" should mark the root as a valid word. Searching "" returns root.isEndOfWord.
-- **Duplicate words:** Inserting "cat" twice is idempotent â€” the second call leaves isEndOfWord as true (no change).
-- **Prefix is also a word:** Inserting "app" then "apple" â€” after both inserts, the node at "app" is marked as end-of-word, and "apple" extends from it.
+- **Duplicate words:** Inserting "cat" twice is idempotent — the second call leaves isEndOfWord as true (no change).
+- **Prefix is also a word:** Inserting "app" then "apple" — after both inserts, the node at "app" is marked as end-of-word, and "apple" extends from it.
 - **Case sensitivity:** "Cat" and "cat" differ if we use ASCII-lowercase indexing; use a case-folded key or a hash-map-based trie for case-insensitive behavior.
 
 ---
@@ -324,7 +324,7 @@ function search(word):
     return current.isEndOfWord
 ```
 
-### Dry Run â€” Search Trace
+### Dry Run — Search Trace
 
 Trie contains: "cat", "car", "dog"
 
@@ -335,7 +335,7 @@ Trie contains: "cat", "car", "dog"
 | 1 | root | c | c exists follow |
 | 2 | c | a | a exists follow |
 | 3 | a | r | r exists follow |
-| 4 | r | â€” | Return isEndOfWord = true check |
+| 4 | r | — | Return isEndOfWord = true check |
 
 **Search "can":**
 
@@ -386,15 +386,15 @@ public boolean search(String word) {
 
 ### Complexity Analysis
 
-- **Time:** O(L) â€” one child-pointer lookup per character. No hash collisions to resolve, no tree rebalancing. Compare to BST: O(L log n).
-- **Space:** O(1) â€” uses only a pointer variable regardless of dictionary size.
+- **Time:** O(L) — one child-pointer lookup per character. No hash collisions to resolve, no tree rebalancing. Compare to BST: O(L log n).
+- **Space:** O(1) — uses only a pointer variable regardless of dictionary size.
 
 ### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(L) search regardless of n â€” ideal for large dictionaries | Slower than hash table O(1) average for single exact lookup |
-| Predictable worst-case (no collisions) | Cannot search by value â€” only by prefix/string |
+| O(L) search regardless of n — ideal for large dictionaries | Slower than hash table O(1) average for single exact lookup |
+| Predictable worst-case (no collisions) | Cannot search by value — only by prefix/string |
 | Naturally supports prefix search alongside exact search | Cache misses due to pointer chasing |
 
 ### Edge Cases
@@ -440,7 +440,7 @@ function deleteRecursive(node, word, depth):
     return false
 ```
 
-### Dry Run â€” Delete Trace
+### Dry Run — Delete Trace
 
 Trie contains: "cat"(!), "car"(!), "dog"(!)
 
@@ -451,10 +451,10 @@ Trie contains: "cat"(!), "car"(!), "dog"(!)
 | 1 | root | c | 0 | Recurse to c |
 | 2 | c | a | 1 | Recurse to a |
 | 3 | a | r | 2 | Recurse to r |
-| 4 | r | â€” | 3 | Set isEndOfWord = false. Children? None. shouldDelete = true |
-| 5 | a | â€” | Back | Delete child r. a has another child (t). keep a |
-| 6 | c | â€” | Back | No change |
-| 7 | root | â€” | Back | No change |
+| 4 | r | — | 3 | Set isEndOfWord = false. Children? None. shouldDelete = true |
+| 5 | a | — | Back | Delete child r. a has another child (t). keep a |
+| 6 | c | — | Back | No change |
+| 7 | root | — | Back | No change |
 
 Trie after delete: "cat"(!), "dog"(!). "car" removed.
 
@@ -464,9 +464,9 @@ Trie after delete: "cat"(!), "dog"(!). "car" removed.
 |------|------|------|-------|--------|
 | 1 | root | c | 0 | Recurse to c |
 | 2 | c | a | 1 | Recurse to a |
-| 3 | a | â€” | 2 | depth == 2 == len("ca"). isEndOfWord? false. Return false |
+| 3 | a | — | 2 | depth == 2 == len("ca"). isEndOfWord? false. Return false |
 
-No nodes modified â€” correct because "ca" was never inserted as a word.
+No nodes modified — correct because "ca" was never inserted as a word.
 
 ### Implementations
 
@@ -554,7 +554,7 @@ public void delete(String word) {
 
 ### Complexity Analysis
 
-- **Time:** O(L) â€” worst-case traverses all L characters of the word. The cleanup check at each node iterates over 26 children (constant). So total is O(L x 26) = O(L).
+- **Time:** O(L) — worst-case traverses all L characters of the word. The cleanup check at each node iterates over 26 children (constant). So total is O(L x 26) = O(L).
 - **Space:** O(L) for the recursion stack depth in worst case (unbalanced deletion path).
 
 ### Advantages & Disadvantages
@@ -569,7 +569,7 @@ public void delete(String word) {
 
 - **Word not in trie:** Returns without modifying any node.
 - **Word is a prefix of another word** (e.g., delete "app" when "apple" exists): Only sets isEndOfWord = false at the last node. No nodes are deleted because the path is shared.
-- **Multiple words end at the same node:** Rare, but isEndOfWord is a boolean â€” use a counter if frequency tracking is needed.
+- **Multiple words end at the same node:** Rare, but isEndOfWord is a boolean — use a counter if frequency tracking is needed.
 - **Empty string:** Deleting "" unmarks root.isEndOfWord. Root itself is never deleted.
 
 ---
@@ -578,7 +578,7 @@ public void delete(String word) {
 
 ### Real-World Analogy
 
-You type "Joh" into Google search and it instantly shows "John", "Johnson", "Johansson" â€” it doesn't need to search the entire web index. It just follows the J-o-h path and collects everything below.
+You type "Joh" into Google search and it instantly shows "John", "Johnson", "Johansson" — it doesn't need to search the entire web index. It just follows the J-o-h path and collects everything below.
 
 ### Algorithm Steps
 
@@ -608,7 +608,7 @@ Trie contains: "cat", "car", "dog"
 |------|---------|------|--------|
 | 1 | root | c | c exists follow |
 | 2 | c | a | a exists follow |
-| 3 | a | â€” | All chars matched return true check |
+| 3 | a | — | All chars matched return true check |
 
 **startsWith("do"):**
 
@@ -616,7 +616,7 @@ Trie contains: "cat", "car", "dog"
 |------|---------|------|--------|
 | 1 | root | d | d exists follow |
 | 2 | d | o | o exists follow |
-| 3 | o | â€” | Return true check |
+| 3 | o | — | Return true check |
 
 **startsWith("caa"):**
 
@@ -667,8 +667,8 @@ public boolean startsWith(String prefix) {
 
 ### Complexity Analysis
 
-- **Time:** O(L) â€” traverse the L characters of the prefix. No scanning of the entire dictionary.
-- **Space:** O(1) â€” just a pointer variable.
+- **Time:** O(L) — traverse the L characters of the prefix. No scanning of the entire dictionary.
+- **Space:** O(1) — just a pointer variable.
 
 ---
 
@@ -676,7 +676,7 @@ public boolean startsWith(String prefix) {
 
 ### Real-World Analogy
 
-Google Search autocomplete: you type "how to", and Google suggests "how to tie a tie", "how to make pancakes", "how to lose weight" â€” all pulled from a prefix tree over millions of search queries.
+Google Search autocomplete: you type "how to", and Google suggests "how to tie a tie", "how to make pancakes", "how to lose weight" — all pulled from a prefix tree over millions of search queries.
 
 ### Algorithm Steps
 
@@ -716,10 +716,10 @@ Traverse root, a, p. From node 'p', DFS:
 | Path | isEnd? | Collect |
 |------|--------|---------|
 | ap + p | true | "app" check |
-| ap + p + l | false | â€” |
+| ap + p + l | false | — |
 | ap + p + l + e | true | "apple" check |
 | ap + p + l + i + c + a + t + i + o + n | true | "application" check |
-| ap + r | false | â€” |
+| ap + r | false | — |
 | ap + r + i + c + o + t | true | "apricot" check |
 
 Result: ["app", "apple", "application", "apricot"]
@@ -802,7 +802,7 @@ public List<String> autocomplete(String prefix) {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Prefix matching is built-in â€” no special index needed | Collecting all results can visit many nodes if the prefix is short |
+| Prefix matching is built-in — no special index needed | Collecting all results can visit many nodes if the prefix is short |
 | Results are in lexicographical order naturally (DFS order) | Memory blowup for short prefixes with many completions |
 | O(L) to locate the prefix node, then proportional to output | Top-k results (e.g., top-5) requires priority-queue wrapper |
 
@@ -857,7 +857,7 @@ Trie contains: "a"(!), "ap"(!), "app"(!), "appl"(!), "apple"(!)
 | 3 | p | p | "app" | true | "app" |
 | 4 | p | l | "appl" | true | "appl" |
 | 5 | l | e | "apple" | true | "apple" |
-| 6 | e | p | â€” | break (no child 'p') | return "apple" |
+| 6 | e | p | — | break (no child 'p') | return "apple" |
 
 **longestPrefix("apricot"):**
 
@@ -925,14 +925,14 @@ public String longestPrefix(String word) {
 
 ### Complexity Analysis
 
-- **Time:** O(L) â€” one pass through the word. Each step is a constant-time child lookup.
-- **Space:** O(1) â€” only string variables for tracking.
+- **Time:** O(L) — one pass through the word. Each step is a constant-time child lookup.
+- **Space:** O(1) — only string variables for tracking.
 
 ### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(L) time â€” much faster than checking each dictionary entry | Only prefix-bound, not substring-bound |
+| O(L) time — much faster than checking each dictionary entry | Only prefix-bound, not substring-bound |
 | Natural use for IP routing, URL routing | Requires all prefixes to be inserted first |
 | Returns the most specific match automatically | Memory overhead of the trie itself |
 
@@ -999,25 +999,25 @@ dp array initialization: dp[0] = true
 | i | s[0:i] | j | s[j:i] | dp[j] | trie search? | dp[i] |
 |---|--------|---|--------|-------|--------------|-------|
 | 1 | "i" | 0 | "i" | true | true | true |
-| 2 | "il" | 0 | "il" | true | false | â€” |
+| 2 | "il" | 0 | "il" | true | false | — |
 | | | 1 | "l" | true | false | false |
-| 3 | "ili" | 0 | "ili" | true | false | â€” |
-| | | 1 | "li" | true | false | â€” |
-| | | 2 | "i" | false | â€” | false |
+| 3 | "ili" | 0 | "ili" | true | false | — |
+| | | 1 | "li" | true | false | — |
+| | | 2 | "i" | false | — | false |
 | 4 | "ilik" | ... | ... | ... | ... | false |
-| 5 | "ilike" | 0 | "ilike" | true | false | â€” |
+| 5 | "ilike" | 0 | "ilike" | true | false | — |
 | | | 1 | "like" | true | true | true |
-| 6 | "ilikes" | 0 | "ilikes" | true | false | â€” |
-| | | 1 | "likes" | true | false | â€” |
+| 6 | "ilikes" | 0 | "ilikes" | true | false | — |
+| | | 1 | "likes" | true | false | — |
 | | | 5 | "s" | true | false | false |
 | 7 | "ilikesa" | ... | ... | ... | ... | false |
-| 8 | "ilikesam" | 0 | "ilikesam" | true | false | â€” |
+| 8 | "ilikesam" | 0 | "ilikesam" | true | false | — |
 | | | 5 | "sam" | true | true | true |
-| 9 | "ilikesams" | 0 | "ilikesams" | true | false | â€” |
-| | | 5 | "sams" | true | false | â€” |
+| 9 | "ilikesams" | 0 | "ilikesams" | true | false | — |
+| | | 5 | "sams" | true | false | — |
 | | | 8 | "s" | true | false | false |
 | 10 | "ilikesamsu" | ... | ... | ... | ... | false |
-| 11 | "ilikesamsung" | 0 | "ilikesamsung" | true | false | â€” |
+| 11 | "ilikesamsung" | 0 | "ilikesamsung" | true | false | — |
 | | | 5 | "samsung" | true | true | true |
 
 dp[11] = true, so "i like samsung"
@@ -1083,14 +1083,14 @@ public boolean wordBreak(String s, List<String> wordDict) {
 
 ### Complexity Analysis
 
-- **Time:** O(n sup2 x L) naive â€” for each of n sup2 substrings, a trie search of O(L). Can be optimized to O(n sup2) by traversing the trie during the inner loop instead of calling search each time.
-- **Space:** O(n + trie size) â€” dp array of size n+1 plus the trie structure.
+- **Time:** O(n sup2 x L) naive — for each of n sup2 substrings, a trie search of O(L). Can be optimized to O(n sup2) by traversing the trie during the inner loop instead of calling search each time.
+- **Space:** O(n + trie size) — dp array of size n+1 plus the trie structure.
 
 ### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Trie makes substring lookup O(L) instead of O(n) per check | DP approach is O(n sup2) â€” can be slow for very long strings |
+| Trie makes substring lookup O(L) instead of O(n) per check | DP approach is O(n sup2) — can be slow for very long strings |
 | Naturally handles large dictionaries | Trie insertion overhead for the dictionary |
 | Easy to modify to return all possible segmentations | Two-step process (build trie, then DP) |
 
@@ -1103,7 +1103,7 @@ public boolean wordBreak(String s, List<String> wordDict) {
 
 ---
 
-## Trie vs Hash Table vs BST â€” Comparison Table
+## Trie vs Hash Table vs BST — Comparison Table
 
 | Metric | Trie | Hash Table | BST |
 |--------|------|------------|-----|
@@ -1199,18 +1199,18 @@ def search(self, word: str) -> bool:
 - **Trie search is O(L) regardless of n**: Search time depends only on string length, not on the number of stored strings. This makes tries ideal for dictionaries with millions of entries.
 - **Tries excel where hash tables fail**: Hash tables cannot efficiently find all strings with a given prefix, support ordered iteration, or handle variable-length keys without hashing overhead. Tries do all three.
 - **Compressed trie (radix tree) saves memory**: Merge nodes with single children into one node. This reduces the number of nodes from O(total characters) to O(number of unique strings).
-- **Ternary search tree bridges trie and BST**: Each node has three children (less, equal, greater). It uses less memory than a trie but has O(L) search â€” a good middle ground.
-- **Wildcard search requires backtracking**: The "." in LeetCode 211 means you cannot simply traverse â€” you must branch to all children and backtrack.
+- **Ternary search tree bridges trie and BST**: Each node has three children (less, equal, greater). It uses less memory than a trie but has O(L) search — a good middle ground.
+- **Wildcard search requires backtracking**: The "." in LeetCode 211 means you cannot simply traverse — you must branch to all children and backtrack.
 
 ## One-Sentence Takeaways
 
 - A trie stores strings as paths in a tree with characters as edges.
 - Search, insert, and lookup are O(L) where L is the string length.
-- Prefix matching is natural and efficient â€” just traverse the prefix path.
+- Prefix matching is natural and efficient — just traverse the prefix path.
 - Space can be large: each character may require a 26-element array per node.
 - Compressed tries (radix trees) merge single-child paths to reduce nodes.
 - Ternary search trees combine trie-like search with BST-like memory.
-- Delete requires cascading cleanup â€” only remove nodes not shared by other words.
+- Delete requires cascading cleanup — only remove nodes not shared by other words.
 - Word break combines tries with DP for O(n sup2) dictionary-based segmentation.
 - IP routing uses binary trie longest-prefix matching for multi-million entry tables.
 - Wildcard search turns a linear traversal into a branching DFS with backtracking.
@@ -1394,37 +1394,37 @@ function findWords(board: string[][], words: string[]): string[] {
 8. **What is the space complexity of a trie storing n strings of average length L over an alphabet of size A?**
    - a) O(n)
    - b) O(nL)
-   - c) O(nL Ã— A) âœ“ (worst-case: each char creates A children)
+   - c) O(nL × A) ✓ (worst-case: each char creates A children)
    - d) O(A)
 
 9. **A ternary search tree (TST) node stores:**
-   - a) One character and three child pointers âœ“
+   - a) One character and three child pointers ✓
    - b) Three characters and one pointer
    - c) A character array
    - d) A hash map
 
 10. **The number of nodes in a trie for the set {a, aa, aaa, ..., a^k} is:**
     - a) k
-    - b) k(k+1)/2 âœ“
+    - b) k(k+1)/2 ✓
     - c) 2^k
-    - d) kÂ²
+    - d) k²
 
 11. **Trie is preferred over hash set when:**
     - a) Memory is the primary concern
-    - b) Prefix queries are frequent âœ“
+    - b) Prefix queries are frequent ✓
     - c) Insert order must be preserved
     - d) The key set is small
 
 12. **A compressed trie (radix tree) compresses:**
     - a) Leaf nodes into arrays
-    - b) Chains of single-child nodes into a single node âœ“
+    - b) Chains of single-child nodes into a single node ✓
     - c) All nodes into a hash map
     - d) Characters into bits
 
 13. **In the word search II problem (LC 212), using a trie reduces time complexity from:**
-    - a) O(k Ã— m Ã— n) to O(k)
-    - b) O(m Ã— n Ã— 4^L) to O(m Ã— n Ã— 4^L) with pruning âœ“ (trie prunes search)
-    - c) O(LÂ²) to O(L)
+    - a) O(k × m × n) to O(k)
+    - b) O(m × n × 4^L) to O(m × n × 4^L) with pruning ✓ (trie prunes search)
+    - c) O(L²) to O(L)
     - d) O(k log k) to O(k)
 
 **Answers:** 8-c, 9-a, 10-b, 11-b, 12-b, 13-b
@@ -1453,11 +1453,11 @@ function findWords(board: string[][], words: string[]): string[] {
 
 | Variant | Node Structure | Space | Search Time | Use Case |
 |---------|---------------|-------|-------------|----------|
-| Standard Trie | Array of A pointers | O(nL Ã— A) | O(L) | Dense alphabets, small A |
+| Standard Trie | Array of A pointers | O(nL × A) | O(L) | Dense alphabets, small A |
 | Hash-map based Trie | Map<char, node> | O(nL) | O(L) | Unicode, sparse keys |
 | Compressed Trie (Radix Tree) | String + children | O(n) | O(L) | IP routing, longest prefix |
 | Ternary Search Tree | 3 child pointers | O(n) | O(L + log n) | Sparse keys, memory-limited |
-| Suffix Trie | Pointer to suffix | O(nÂ²) | O(L) | String matching |
+| Suffix Trie | Pointer to suffix | O(n²) | O(L) | String matching |
 | Patricia Trie | Bit-level indexing | Compact | O(L) | IP routing, memory-constrained |
    - c) Hash function
    - d) Tree height
@@ -1519,7 +1519,7 @@ function findWords(board: string[][], words: string[]): string[] {
 1. Why is trie search faster than BST search for string keys?
 2. What is the space complexity of a trie, and how can it be reduced?
 3. Why can a hash table not efficiently support prefix matching?
-4. Explain the cascading cleanup in trie deletion â€” when can a node be safely deleted?
+4. Explain the cascading cleanup in trie deletion — when can a node be safely deleted?
 5. How does wildcard search (LeetCode 211) differ from standard search in a trie?
 
 ### Application Problems

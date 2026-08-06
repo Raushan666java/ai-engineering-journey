@@ -1,4 +1,4 @@
-﻿> **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)
+> **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)
 
 # Database Migrations (Flyway & Liquibase)
 
@@ -1518,7 +1518,7 @@ src/main/resources/db/
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) Create a new migration that repairs the state.** Never modify an existing migration â†’ create a compensating migration that fixes the issue.
+**B) Create a new migration that repairs the state.** Never modify an existing migration → create a compensating migration that fixes the issue.
 </details>
 
 ---

@@ -1,6 +1,6 @@
-﻿# Chapter 6: Greedy Algorithms
+# Chapter 6: Greedy Algorithms
 
-> **Prerequisites:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) â€” Recursive problem decomposition | **Next:** [Chapter 7: Dynamic Programming â€” Foundations](./07-dp-intro.md) â€” When greedy fails, DP takes over
+> **Prerequisites:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Recursive problem decomposition | **Next:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — When greedy fails, DP takes over
 
 ## Learning Objectives
 
@@ -34,15 +34,15 @@ By the end of this chapter, students will be able to:
 
 ### Why Greedy Algorithms Matter
 
-Imagine you are packing a suitcase for a trip. You have limited space, and you want to carry the most valuable combination of items. One natural approach: grab the item with the best value-per-space ratio first, then the next best, and so on. This is exactly how greedy algorithms think â€” they make the best immediate choice without worrying about future consequences.
+Imagine you are packing a suitcase for a trip. You have limited space, and you want to carry the most valuable combination of items. One natural approach: grab the item with the best value-per-space ratio first, then the next best, and so on. This is exactly how greedy algorithms think — they make the best immediate choice without worrying about future consequences.
 
 Now imagine making change for a customer at a cash register. You want to use the fewest coins possible. In the US (quarters, dimes, nickels, pennies), the natural strategy is to take the largest coin that fits, again and again. This greedy approach works perfectly for that system.
 
 But what if your coin system was 1, 3, and 4 cents? To make 6 cents, the greedy approach picks 4 + 1 + 1 (three coins), while the optimal is 3 + 3 (two coins). **Greedy fails when local optimization does not align with global optimization.**
 
-This tension â€” between the seductive simplicity of "take what looks best now" and the mathematical rigor required to prove it actually works â€” is what makes greedy algorithms both powerful and dangerous. They are the first tool you reach for, but they demand proof before you trust them.
+This tension — between the seductive simplicity of "take what looks best now" and the mathematical rigor required to prove it actually works — is what makes greedy algorithms both powerful and dangerous. They are the first tool you reach for, but they demand proof before you trust them.
 
-Greedy algorithms power file compression (Huffman coding in ZIP, JPEG), network routing (Dijkstra, OSPF), operating system scheduling (Shortest Job First), and even DNA sequence assembly. Understanding when they work â€” and when they do not â€” separates a competent programmer from a master algorithm designer.
+Greedy algorithms power file compression (Huffman coding in ZIP, JPEG), network routing (Dijkstra, OSPF), operating system scheduling (Shortest Job First), and even DNA sequence assembly. Understanding when they work — and when they do not — separates a competent programmer from a master algorithm designer.
 
 ---
 
@@ -131,7 +131,7 @@ ActivitySelection(s, f, n):
 
 **Input:** Activities indexed 0..6 with (start, finish): (0,6), (1,4), (3,5), (3,8), (5,7), (8,9), (6,10)
 
-**Step 1 â€” Sort by finish time:**
+**Step 1 — Sort by finish time:**
 
 | Index | Start | Finish |
 |-------|-------|--------|
@@ -143,7 +143,7 @@ ActivitySelection(s, f, n):
 | 5     | 8     | 9      |
 | 6     | 6     | 10     |
 
-**Step 2 â€” Iterate:**
+**Step 2 — Iterate:**
 
 | i | Act (s,f) | s >= lastFinish? | lastFinish | Selected |
 |---|-----------|------------------|------------|----------|
@@ -155,7 +155,7 @@ ActivitySelection(s, f, n):
 | 5 | (8,9)     | 8 >= 7? **Yes**  | 9          | [1,4,5]  |
 | 6 | (6,10)    | 6 >= 9? No       | 9          | [1,4,5]  |
 
-**Result:** Selected activities: (1,4), (5,7), (8,9) â€” 3 activities maximum.
+**Result:** Selected activities: (1,4), (5,7), (8,9) — 3 activities maximum.
 
 #### Implementations
 
@@ -236,9 +236,9 @@ public static List<Integer> activitySelection(List<Activity> acts) {
 | Advantages | Disadvantages |
 |------------|--------------|
 | Simple and intuitive | Fails for weighted intervals (needs DP) |
-| Optimal for unweighted case | Requires sorting â€” cannot be used on streaming data directly |
+| Optimal for unweighted case | Requires sorting — cannot be used on streaming data directly |
 | \( O(n \log n) \) is efficient | Does not minimize number of rooms (that is a different problem) |
-| Exchange argument proof is clean | Greedy choice must be proven â€” not always obvious |
+| Exchange argument proof is clean | Greedy choice must be proven — not always obvious |
 
 #### Edge Cases
 
@@ -250,7 +250,7 @@ public static List<Integer> activitySelection(List<Activity> acts) {
 
 **Proof of optimality (exchange argument):** Let \( A \) be the greedy solution and \( O \) be any optimal solution. Let the first activity in \( A \) be \( a_1 \) (earliest finish) and the first in \( O \) be \( o_1 \). Since \( f_{a_1} \le f_{o_1} \), we can replace \( o_1 \) with \( a_1 \) in \( O \), yielding another optimal solution. By induction, \( A \) is optimal.
 
-> **Pro Tip:** Activity selection is the canonical example for proving greedy correctness via exchange argument. Master this proof â€” the same technique applies to many other greedy problems.
+> **Pro Tip:** Activity selection is the canonical example for proving greedy correctness via exchange argument. Master this proof — the same technique applies to many other greedy problems.
 >
 > **Warning:** If activities have weights instead of just counts, greedy fails. Weighted interval scheduling requires DP.
 
@@ -452,7 +452,7 @@ static void encode(HuffmanNode n, String s, Map<Character, String> codes) {
 
 > **Pro Tip:** Huffman coding is optimal for symbol-by-symbol encoding with fixed codeword lengths. For correlated symbols, arithmetic coding or Lempel-Ziv (LZ77) usually performs better.
 >
-> **Remember:** Huffman codes are prefix-free â€” no codeword is a prefix of another, ensuring unambiguous decoding.
+> **Remember:** Huffman codes are prefix-free — no codeword is a prefix of another, ensuring unambiguous decoding.
 
 **One-Sentence Takeaway:** Huffman coding builds an optimal prefix code by repeatedly merging the two lowest-frequency nodes, achieving maximum compression for symbol-by-symbol encoding.
 
@@ -461,7 +461,7 @@ static void encode(HuffmanNode n, String s, Map<Character, String> codes) {
 ### 6.4 Fractional Knapsack
 
 
-**Real-World Analogy:** You are at a bulk candy store with a container that holds 5 lbs. You see gummy bears ($8/lb), chocolate truffles ($15/lb), and licorice ($5/lb). Since you can take any amount of each, the optimal strategy is clear: fill your container starting with the most expensive-per-pound candy, taking as much as you can. If truffles run out, move to gummy bears. This is the fractional knapsack strategy â€” always take the best value-per-unit first.
+**Real-World Analogy:** You are at a bulk candy store with a container that holds 5 lbs. You see gummy bears ($8/lb), chocolate truffles ($15/lb), and licorice ($5/lb). Since you can take any amount of each, the optimal strategy is clear: fill your container starting with the most expensive-per-pound candy, taking as much as you can. If truffles run out, move to gummy bears. This is the fractional knapsack strategy — always take the best value-per-unit first.
 
 **Problem:** Given items with weights and values, and a knapsack capacity \( W \), maximize the value of items placed in the knapsack. Items can be taken fractionally.
 
@@ -605,12 +605,12 @@ public static double fractionalKnapsack(Item[] items, double W) {
 #### Edge Cases
 
 - **Item heavier than capacity:** Skip or take fraction.
-- **Zero-weight items:** Division by zero â€” handle separately (infinite ratio, take first).
+- **Zero-weight items:** Division by zero — handle separately (infinite ratio, take first).
 - **Zero-value items:** Skip (they do not contribute).
 - **All items fit:** Take everything.
 - **W = 0:** Return 0.
 
-> **Pro Tip:** The fractional knapsack problem is the perfect interview question to test whether a candidate understands why greedy works for fractional but not 0/1 â€” the key is fractional divisibility allows you to always fill the knapsack optimally.
+> **Pro Tip:** The fractional knapsack problem is the perfect interview question to test whether a candidate understands why greedy works for fractional but not 0/1 — the key is fractional divisibility allows you to always fill the knapsack optimally.
 >
 > **Remember:** The value-to-weight ratio sort is the greedy choice; taking fractions is what makes it optimal.
 
@@ -662,7 +662,7 @@ JobSequencing(jobs, n):
 
 **Sorted by profit:** J1(2,100), J3(2,27), J4(1,25), J2(1,19), J5(3,15)
 
-**Max deadline = 3** â†’ slots [0, 1, 2] (0-indexed)
+**Max deadline = 3** → slots [0, 1, 2] (0-indexed)
 
 | Job | Profit | Deadline | Candidate Slots (desc) | Chosen Slot | Total Profit |
 |-----|--------|----------|------------------------|-------------|--------------|
@@ -758,13 +758,13 @@ public static int jobSequencing(Job[] jobs) {
 
 **Space:** \( O(\text{maxDeadline}) \) for slot array.
 
-**Optimization with Union-Find:** Each set tracks the latest available slot. When a slot is filled, union it with the previous slot. `find(i)` returns the latest available slot â‰¤ i.
+**Optimization with Union-Find:** Each set tracks the latest available slot. When a slot is filled, union it with the previous slot. `find(i)` returns the latest available slot ≤ i.
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Simple greedy sorting + slot assignment | Naive O(nÂ²) is slow for large n |
+| Simple greedy sorting + slot assignment | Naive O(n²) is slow for large n |
 | Union-find optimization is elegant | Assumes each job takes exactly 1 time unit |
 | Provably optimal with exchange argument | Cannot handle variable-duration jobs |
 | Used in real task schedulers | Requires discrete time slots |
@@ -779,14 +779,14 @@ public static int jobSequencing(Job[] jobs) {
 
 > **Pro Tip:** Use a disjoint-set (union-find) data structure to optimize the slot-finding step in job sequencing. Each set tracks the latest available slot, and path compression makes this nearly constant time.
 
-**One-Sentence Takeaway:** Job sequencing with deadlines schedules highest-profit jobs first, placing each in the latest available slot before its deadline â€” O(n log n) with union-find optimization.
+**One-Sentence Takeaway:** Job sequencing with deadlines schedules highest-profit jobs first, placing each in the latest available slot before its deadline — O(n log n) with union-find optimization.
 
 ---
 
 ### 6.6 Canonical Coin Change
 
 
-**Real-World Analogy:** A cashier needs to give you 67 cents in change. The drawer has quarters (25Â¢), dimes (10Â¢), nickels (5Â¢), and pennies (1Â¢). Instinctively, you take 2 quarters (50Â¢), 1 dime (60Â¢), 1 nickel (65Â¢), and 2 pennies (67Â¢) â€” 6 coins. This greedy approach works perfectly for US currency. But if a fictional country had coins of 1, 3, and 4 units, greedy would fail.
+**Real-World Analogy:** A cashier needs to give you 67 cents in change. The drawer has quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢). Instinctively, you take 2 quarters (50¢), 1 dime (60¢), 1 nickel (65¢), and 2 pennies (67¢) — 6 coins. This greedy approach works perfectly for US currency. But if a fictional country had coins of 1, 3, and 4 units, greedy would fail.
 
 **Problem:** Given coin denominations \( d_1 > d_2 > \cdots > d_k = 1 \), make change for amount \( A \) using the minimum number of coins.
 
@@ -951,7 +951,7 @@ The most common confusion in algorithm design is when to use greedy vs. dynamic 
 
 ---
 
-### 6.8 Exchange Argument â€” The Proof Technique
+### 6.8 Exchange Argument — The Proof Technique
 
 
 The **exchange argument** is the standard method for proving greedy algorithms are optimal. The idea: take any optimal solution, and show you can transform it step-by-step into the greedy solution without decreasing its quality.
@@ -962,7 +962,7 @@ The **exchange argument** is the standard method for proving greedy algorithms a
 2. **Let O be any optimal solution** (hypothetical best).
 3. **Find the first point of difference** between G and O.
 4. **Swap** the greedy choice into O, showing the new solution O' is at least as good as O.
-5. **Induct** â€” repeat the swap until O becomes G.
+5. **Induct** — repeat the swap until O becomes G.
 
 #### Standard Template
 
@@ -971,7 +971,7 @@ Given: Problem P with objective function f.
 
 1. Let G = greedy choices (g1, g2, ..., gk).
 2. Let O = optimal choices (o1, o2, ..., om).
-3. Let i be the first index where gi â‰  oi.
+3. Let i be the first index where gi ≠ oi.
 4. Claim: Swapping oi with gi in O yields O' with f(O') >= f(O).
    - Prove by problem-specific reasoning.
 5. By induction, G is at least as good as the optimal solution.
@@ -998,7 +998,7 @@ An exchange argument must show the swap does not break feasibility. This is the 
 
 Greedy algorithms are a favorite interview topic because they test whether a candidate can recognize the structural properties that make an optimization problem solvable efficiently.
 
-#### When Greedy Fails â€” Classic Counterexamples
+#### When Greedy Fails — Classic Counterexamples
 
 | Problem | Greedy Choice | Counterexample | Optimal (DP) |
 |---------|---------------|----------------|--------------|
@@ -1009,7 +1009,7 @@ Greedy algorithms are a favorite interview topic because they test whether a can
 #### How to Approach a Greedy Problem in an Interview
 
 1. **State the greedy choice** clearly: "I propose always picking the item with the largest X."
-2. **Test with a small example** â€” if it works, build confidence.
+2. **Test with a small example** — if it works, build confidence.
 3. **Describe the algorithm** in steps.
 4. **Argue correctness**: "Let me sketch an exchange argument..."
 5. **State complexity**: "This runs in O(n log n) because..."
@@ -1029,7 +1029,7 @@ Greedy algorithms are a favorite interview topic because they test whether a can
 ### 6.10 Applications in Real Systems
 
 
-Greedy algorithms are not just academic â€” they power critical infrastructure.
+Greedy algorithms are not just academic — they power critical infrastructure.
 
 #### Huffman Coding in Compression
 
@@ -1040,9 +1040,9 @@ Greedy algorithms are not just academic â€” they power critical infrastruct
 
 #### Scheduling in Operating Systems
 
-- **Shortest Job First (SJF):** Greedy â€” always run the process with the shortest CPU burst. Minimizes average waiting time (provably optimal for preemptive version = Shortest Remaining Time First).
-- **Earliest Deadline First (EDF):** Greedy â€” always run the task with the closest deadline. Used in real-time operating systems.
-- **I/O Scheduling:** Elevator (SCAN) algorithm â€” greedy movement to the nearest request in the current direction.
+- **Shortest Job First (SJF):** Greedy — always run the process with the shortest CPU burst. Minimizes average waiting time (provably optimal for preemptive version = Shortest Remaining Time First).
+- **Earliest Deadline First (EDF):** Greedy — always run the task with the closest deadline. Used in real-time operating systems.
+- **I/O Scheduling:** Elevator (SCAN) algorithm — greedy movement to the nearest request in the current direction.
 
 #### Network Routing
 
@@ -1051,7 +1051,7 @@ Greedy algorithms are not just academic â€” they power critical infrastruct
 
 #### Resource Allocation
 
-- **Memory allocation:** First-fit, best-fit, worst-fit â€” all greedy strategies for allocating memory blocks.
+- **Memory allocation:** First-fit, best-fit, worst-fit — all greedy strategies for allocating memory blocks.
 - **Cloud computing VM placement:** Greedy packing of VMs onto physical servers to minimize active machines (bin packing variant).
 
 #### DNA Sequence Assembly
@@ -1067,7 +1067,7 @@ Greedy algorithms are not just academic â€” they power critical infrastruct
 | Greedy-Choice Property | Local optimum leads to global optimum | Different from optimal substructure alone | Verifying greedy applicability |
 | Exchange Argument | Transform any optimal to greedy solution | Proves optimality by contradiction switching | Greedy correctness proofs |
 | Activity Selection | Earliest finish time first | Exchange argument is clean and canonical | Scheduling, resource allocation |
-| Huffman Coding | Merge smallest frequencies | Optimal prefix code â€” prefix-free property | File compression (ZIP, JPEG) |
+| Huffman Coding | Merge smallest frequencies | Optimal prefix code — prefix-free property | File compression (ZIP, JPEG) |
 | Fractional vs 0/1 Knapsack | Divisibility determines approach | Greedy works for fractional only | Resource allocation problems |
 | Greedy vs DP | Local vs global optimization | Greedy-choice property distinguishes them | Algorithm selection decision |
 
@@ -1076,10 +1076,10 @@ Greedy algorithms are not just academic â€” they power critical infrastruct
 | Category | Key Points |
 |----------|------------|
 | **When Greedy Works** | Optimal substructure + greedy-choice property |
-| **Proof Technique** | Exchange argument â€” transform any optimal to greedy |
+| **Proof Technique** | Exchange argument — transform any optimal to greedy |
 | **Always Greedy-Solvable** | Activity selection, fractional knapsack, Huffman coding, Dijkstra, Prim's |
 | **Greedy Fails** | 0/1 knapsack, weighted interval scheduling, coin change (non-canonical) |
-| **Common Pitfall** | Assuming greedy works because it seems intuitive â€” always verify or test a counterexample |
+| **Common Pitfall** | Assuming greedy works because it seems intuitive — always verify or test a counterexample |
 | **Exchange Argument Steps** | 1) Find first difference 2) Swap 3) Prove not worse 4) Induct |
 | **Interview Strategy** | State choice, test example, sketch proof, note limitations |
 
@@ -1087,11 +1087,11 @@ Greedy algorithms are not just academic â€” they power critical infrastruct
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| Activity Selection | Common â€” interval scheduling variations | Scheduling problems | Resource allocation, meeting room mgmt | Matroid theory |
-| Huffman Coding | Occasionally â€” compression basics | Rare | Data compression systems | Information theory |
-| Fractional Knapsack | Common â€” greedy vs DP contrast | N/A | Resource allocation | Linear programming duality |
+| Activity Selection | Common — interval scheduling variations | Scheduling problems | Resource allocation, meeting room mgmt | Matroid theory |
+| Huffman Coding | Occasionally — compression basics | Rare | Data compression systems | Information theory |
+| Fractional Knapsack | Common — greedy vs DP contrast | N/A | Resource allocation | Linear programming duality |
 | Job Sequencing | Occasionally asked | Deadline scheduling variations | Task scheduling | Scheduling theory |
-| Exchange Arguments | Critical skill â€” proofs | Required for many greedy proofs | N/A | Algorithm correctness |
+| Exchange Arguments | Critical skill — proofs | Required for many greedy proofs | N/A | Algorithm correctness |
 | Greedy vs DP | Very common interview question | Algorithm selection | Architecture decisions | Optimization theory |
 
 ---
@@ -1156,7 +1156,7 @@ B) Merge the two characters/trees with the smallest frequencies. This ensures th
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) Exchange argument â€” take any optimal solution and transform it step-by-step into the greedy solution without reducing quality.
+B) Exchange argument — take any optimal solution and transform it step-by-step into the greedy solution without reducing quality.
 </details>
 
 **Q5.** Which of the following is NOT solvable by a greedy algorithm?

@@ -1,4 +1,4 @@
-﻿# Chapter 13: AVL Trees
+# Chapter 13: AVL Trees
 
 **Prev:** [Chapter 12: Graph Traversals](12-graph-traversals.md) | **Next:** [Chapter 14: Red-Black Trees](14-red-black.md)
 
@@ -32,22 +32,22 @@
 
 ## Why AVL Trees Matter
 
-Imagine a **self-balancing scale** â€” a platform that automatically levels itself no matter how you distribute the weight. If you load one side too heavily, a mechanism shifts the platform back to perfectly horizontal. Without this self-balancing, the scale would tilt and become useless for accurate measurement.
+Imagine a **self-balancing scale** — a platform that automatically levels itself no matter how you distribute the weight. If you load one side too heavily, a mechanism shifts the platform back to perfectly horizontal. Without this self-balancing, the scale would tilt and become useless for accurate measurement.
 
-A standard **Binary Search Tree (BST)** is like a scale without auto-leveling. Insert sorted data (1, 2, 3, 4, 5) and the tree degenerates into a linked list â€” search time drops from O(log n) to O(n). With millions of records, that is the difference between instantaneous and grinding to a halt.
+A standard **Binary Search Tree (BST)** is like a scale without auto-leveling. Insert sorted data (1, 2, 3, 4, 5) and the tree degenerates into a linked list — search time drops from O(log n) to O(n). With millions of records, that is the difference between instantaneous and grinding to a halt.
 
-The **AVL tree** (named after inventors Adelson-Velsky and Landis, 1962) is the self-balancing mechanism. After every insertion or deletion, it checks its own "tilt" (the balance factor) and performs small local rearrangements called **rotations** to restore balance. This guarantees the tree height never exceeds ~1.44 logâ‚‚ n, keeping all operations strictly logarithmic.
+The **AVL tree** (named after inventors Adelson-Velsky and Landis, 1962) is the self-balancing mechanism. After every insertion or deletion, it checks its own "tilt" (the balance factor) and performs small local rearrangements called **rotations** to restore balance. This guarantees the tree height never exceeds ~1.44 log₂ n, keeping all operations strictly logarithmic.
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Balance factor | height(left) - height(right) âˆˆ {-1, 0, 1} | The invariant that keeps the tree balanced |
+| Balance factor | height(left) - height(right) ∈ {-1, 0, 1} | The invariant that keeps the tree balanced |
 | Rotations | LL, RR (single), LR, RL (double) | Four patterns that restore balance after modifications |
 | Insertion | Insert as BST, then rebalance | At most one rotation needed |
 | Deletion | Remove as BST, then rebalance up the path | May require cascading rotations to root |
 | Height bound | \(h &lt; 1.44 \log n\) | Guarantees logarithmic worst-case search |
-| AVL vs Red-Black | Tighter balance â†’ faster search | Choose AVL for search-heavy workloads |
+| AVL vs Red-Black | Tighter balance → faster search | Choose AVL for search-heavy workloads |
 
 ## Chapter Roadmap
 
@@ -55,14 +55,14 @@ The **AVL tree** (named after inventors Adelson-Velsky and Landis, 1962) is the 
 flowchart TD
     A[AVL Tree] --> B[BST Insert/Delete]
     B --> C{Balance Factor Check}
-    C --> D[|bf| â‰¤ 1 âœ“]
-    C --> E[|bf| > 1 âœ—]
+    C --> D[|bf| ≤ 1 ✓]
+    C --> E[|bf| > 1 ✗]
     D --> F[Done]
     E --> G{Which Rotation?}
-    G --> H[LL â†’ Right Rotate]
-    G --> I[RR â†’ Left Rotate]
-    G --> J[LR â†’ Left then Right]
-    G --> K[RL â†’ Right then Left]
+    G --> H[LL → Right Rotate]
+    G --> I[RR → Left Rotate]
+    G --> J[LR → Left then Right]
+    G --> K[RL → Right then Left]
     H --> L[Tree Balanced]
     I --> L
     J --> L
@@ -108,7 +108,7 @@ When an insertion or deletion violates the balance invariant, rotations restore 
 
 ### Real-World Analogy
 
-Imagine a **spirit level (bubble level)** used in construction. The bubble sits centered when the surface is horizontal. If you tilt left, the bubble drifts right by exactly the tilt amount. The **balance factor** measures this tilt: positive means left subtree deeper, negative means right subtree deeper. The AVL invariant demands the bubble stays within [-1, 0, 1] â€” "close enough to level."
+Imagine a **spirit level (bubble level)** used in construction. The bubble sits centered when the surface is horizontal. If you tilt left, the bubble drifts right by exactly the tilt amount. The **balance factor** measures this tilt: positive means left subtree deeper, negative means right subtree deeper. The AVL invariant demands the bubble stays within [-1, 0, 1] — "close enough to level."
 
 ### Definition
 
@@ -118,7 +118,7 @@ Height of a leaf = 1. Height of null = 0.
 
 ### Algorithm Steps
 
-1. **Compute height**: `height = 1 + max(height(left), height(right))`. null â†’ 0.
+1. **Compute height**: `height = 1 + max(height(left), height(right))`. null → 0.
 2. **Compute balance factor**: `bf = height(left) - height(right)`.
 3. **Check invariant**: if |bf| > 1, rebalance.
 4. **Propagate upward**: recompute heights and check bf along the path from modification to root.
@@ -158,7 +158,7 @@ Given tree:
 | 40   | 0           | 0            | 1           | 0             |
 | 30   | 2 (20)      | 1 (40)       | 3           | 1             |
 
-All balance factors âˆˆ {-1, 0, 1} âœ“. This tree is AVL-compliant.
+All balance factors ∈ {-1, 0, 1} ✓. This tree is AVL-compliant.
 
 Now insert 5. The tree becomes:
 
@@ -179,9 +179,9 @@ Now insert 5. The tree becomes:
 | 25   | 0           | 0            | 1           | 0             |
 | 20   | 2 (10)      | 1 (25)       | 3           | 1 (OK)        |
 | 40   | 0           | 0            | 1           | 0             |
-| 30   | 3 (20)      | 1 (40)       | 4           | **2** âœ—       |
+| 30   | 3 (20)      | 1 (40)       | 4           | **2** ✗       |
 
-Node 30 has bf = 2 â†’ AVL violation. Rotation needed.
+Node 30 has bf = 2 → AVL violation. Rotation needed.
 
 ### C++ Implementation
 
@@ -239,16 +239,16 @@ public void updateHeight(AVLNode node) {
 |-----------|------|-----|
 | Computing height of one node | O(1) | Reads precomputed child heights |
 | Computing balance factor | O(1) | Subtracts two precomputed values |
-| Updating heights along path | O(log n) | At most h â‰¤ 1.44 logâ‚‚ n ancestors |
+| Updating heights along path | O(log n) | At most h ≤ 1.44 log₂ n ancestors |
 
-**Why O(log n) is guaranteed:** In an AVL tree of height h, the minimum node count follows n(h) = n(h-1) + n(h-2) + 1 (Fibonacci-like recurrence). This gives h &lt; 1.44 logâ‚‚(n+2). Unlike ordinary BST where h can equal n, AVL provably stays logarithmic.
+**Why O(log n) is guaranteed:** In an AVL tree of height h, the minimum node count follows n(h) = n(h-1) + n(h-2) + 1 (Fibonacci-like recurrence). This gives h &lt; 1.44 log₂(n+2). Unlike ordinary BST where h can equal n, AVL provably stays logarithmic.
 
 ### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Guaranteed O(log n) search â€” no worst-case degradation | Extra storage: each node stores height (int) |
-| Tighter balance than Red-Black â†’ faster lookups | Rotations add overhead on writes |
+| Guaranteed O(log n) search — no worst-case degradation | Extra storage: each node stores height (int) |
+| Tighter balance than Red-Black → faster lookups | Rotations add overhead on writes |
 | Predictable performance for real-time systems | Deletion more complex than BST |
 | Simple invariant to reason about | Not ideal for write-heavy workloads |
 | Every operation is individually O(log n) | Slightly more code than BST |
@@ -259,11 +259,11 @@ public void updateHeight(AVLNode node) {
 |------|----------|
 | **Empty tree (root = null)** | Height = 0, bf = 0. Valid. |
 | **Single node** | Height = 1, bf = 0. Valid. |
-| **Two nodes** | Root: bf = Â±1. Child is leaf: bf = 0. Valid. |
-| **Duplicate value** | Typically ignored â€” no height change, no rebalancing. |
-| **All nodes have bf = 0** | Perfectly balanced. Best-case height = âŒŠlogâ‚‚ nâŒ‹ + 1. |
-| **bf = +2 but left child has bf = -1** | LR case â€” double rotation needed. |
-| **1 million nodes** | Height â‰¤ 1.44 logâ‚‚ 1,000,000 â‰ˆ 29. All ops finish in ~30 steps. |
+| **Two nodes** | Root: bf = ±1. Child is leaf: bf = 0. Valid. |
+| **Duplicate value** | Typically ignored — no height change, no rebalancing. |
+| **All nodes have bf = 0** | Perfectly balanced. Best-case height = ⌊log₂ n⌋ + 1. |
+| **bf = +2 but left child has bf = -1** | LR case — double rotation needed. |
+| **1 million nodes** | Height ≤ 1.44 log₂ 1,000,000 ≈ 29. All ops finish in ~30 steps. |
 
 ---
 
@@ -275,7 +275,7 @@ Rotations rearrange 3-4 pointers to restore the AVL invariant without breaking B
 
 #### Real-World Analogy
 
-A **stack of books** on a shelf where the heaviest book is on top and lighter books stack to the left â€” tipping left. Grab the middle book, lift it to the top, let the heavy book fall right. The stack levels instantly.
+A **stack of books** on a shelf where the heaviest book is on top and lighter books stack to the left — tipping left. Grab the middle book, lift it to the top, let the heavy book fall right. The stack levels instantly.
 
 #### Diagram
 
@@ -288,7 +288,7 @@ A **stack of books** on a shelf where the heaviest book is on top and lighter bo
    / \
   T1  T2
 
-Before: bf(z) = +2, bf(y) â‰¥ 0
+Before: bf(z) = +2, bf(y) ≥ 0
 After:  bf(z) = 0,  bf(y) = 0
 ```
 
@@ -331,9 +331,9 @@ Insert 30, 20, 10 in order.
   20 (bf=0, h=1)
 ```
 
-**Step 3:** Insert 10. bf(30) = +2 âœ—. LL case.
+**Step 3:** Insert 10. bf(30) = +2 ✗. LL case.
 ```
-      30 (bf=+2 âœ—, h=3)
+      30 (bf=+2 ✗, h=3)
      /
     20 (bf=+1, h=2)
    /
@@ -346,7 +346,7 @@ Insert 30, 20, 10 in order.
      /  \
     10   30 (bf=0, h=1)
 ```
-Balanced. âœ“
+Balanced. ✓
 
 #### C++ Implementation
 
@@ -393,7 +393,7 @@ public AVLNode rotateRight(AVLNode z) {
 
 | Aspect | Value | Why |
 |--------|-------|-----|
-| Time | O(1) | 3 pointer reassignments â€” constant work |
+| Time | O(1) | 3 pointer reassignments — constant work |
 | Space | O(1) | 2 local pointer variables |
 
 #### Advantages & Disadvantages
@@ -407,8 +407,8 @@ public AVLNode rotateRight(AVLNode z) {
 
 | Case | Behavior |
 |------|----------|
-| **z has no left child** | Impossible â€” bf = +2 requires deeper left |
-| **T2 = null** | Works â€” z.left becomes null |
+| **z has no left child** | Impossible — bf = +2 requires deeper left |
+| **T2 = null** | Works — z.left becomes null |
 | **z is root** | y becomes new global root |
 
 ---
@@ -417,7 +417,7 @@ public AVLNode rotateRight(AVLNode z) {
 
 #### Real-World Analogy
 
-Mirror image of LL â€” a **stack of boxes** leaning right. Push the middle box up, let the heavy box drop left.
+Mirror image of LL — a **stack of boxes** leaning right. Push the middle box up, let the heavy box drop left.
 
 #### Diagram
 
@@ -430,7 +430,7 @@ Mirror image of LL â€” a **stack of boxes** leaning right. Push the middle 
        / \
       T2 T1
 
-Before: bf(z) = -2, bf(y) â‰¤ 0
+Before: bf(z) = -2, bf(y) ≤ 0
 After:  bf(z) = 0,  bf(y) = 0
 ```
 
@@ -473,9 +473,9 @@ Insert 10, 20, 30.
    20 (bf=0, h=1)
 ```
 
-**Step 3:** Insert 30. bf(10) = -2 âœ—. RR case.
+**Step 3:** Insert 30. bf(10) = -2 ✗. RR case.
 ```
-10 (bf=-2 âœ—, h=3)
+10 (bf=-2 ✗, h=3)
   \
    20 (bf=-1, h=2)
      \
@@ -488,7 +488,7 @@ Insert 10, 20, 30.
    /  \
   10   30 (bf=0, h=1)
 ```
-Balanced. âœ“
+Balanced. ✓
 
 #### C++ Implementation
 
@@ -535,7 +535,7 @@ public AVLNode rotateLeft(AVLNode z) {
 
 | Aspect | Value | Why |
 |--------|-------|-----|
-| Time | O(1) | Mirror of RR â€” 3 pointer updates |
+| Time | O(1) | Mirror of RR — 3 pointer updates |
 | Space | O(1) | 2 local variables |
 
 #### Advantages & Disadvantages
@@ -551,7 +551,7 @@ public AVLNode rotateLeft(AVLNode z) {
 
 #### Real-World Analogy
 
-**Untangling a garden hose** with a kink in the middle. First twist the kink one way to create a simple bend, then straighten the whole thing. You cannot pull it straight directly â€” the kink must first be reversed into a simpler curve.
+**Untangling a garden hose** with a kink in the middle. First twist the kink one way to create a simple bend, then straighten the whole thing. You cannot pull it straight directly — the kink must first be reversed into a simpler curve.
 
 #### Diagram
 
@@ -572,8 +572,8 @@ Before: bf(z) = +2, bf(y) = -1
 #### Algorithm Steps
 
 1. `z` is unbalanced (bf = +2). Left child `y` has bf = -1.
-2. **First rotation:** Left rotate at `y` â€” converts LR to LL.
-3. **Second rotation:** Right rotate at `z` â€” fixes LL.
+2. **First rotation:** Left rotate at `y` — converts LR to LL.
+3. **Second rotation:** Right rotate at `z` — fixes LL.
 4. Update heights after each rotation.
 
 #### Pseudocode
@@ -600,9 +600,9 @@ Insert 30, 10, 20.
   10 (bf=0, h=1)
 ```
 
-**Step 3:** Insert 20. bf(30) = +2 âœ—. bf(10) = -1 â†’ LR case.
+**Step 3:** Insert 20. bf(30) = +2 ✗. bf(10) = -1 → LR case.
 ```
-      30 (bf=+2 âœ—)
+      30 (bf=+2 ✗)
      /
     10 (bf=-1)
      \
@@ -611,7 +611,7 @@ Insert 30, 10, 20.
 
 **Step 4:** Left rotate at 10.
 ```
-      30 (bf=+2 âœ—)
+      30 (bf=+2 ✗)
      /
     20 (bf=0)
    /
@@ -625,7 +625,7 @@ Now LL case at 30.
      /  \
     10   30 (bf=0, h=1)
 ```
-Balanced. âœ“
+Balanced. ✓
 
 #### C++ Implementation
 
@@ -659,7 +659,7 @@ public AVLNode leftRightRotate(AVLNode z) {
 
 #### Real-World Analogy
 
-A **jackhammer handle** â€” the grip is on the right, but the weight shifts inside and left. First push the inner handle outward (right), then pull the whole thing left to center it.
+A **jackhammer handle** — the grip is on the right, but the weight shifts inside and left. First push the inner handle outward (right), then pull the whole thing left to center it.
 
 #### Diagram
 
@@ -680,8 +680,8 @@ Before: bf(z) = -2, bf(y) = +1
 #### Algorithm Steps
 
 1. `z` is unbalanced (bf = -2). Right child `y` has bf = +1.
-2. **First rotation:** Right rotate at `y` â€” converts RL to RR.
-3. **Second rotation:** Left rotate at `z` â€” fixes RR.
+2. **First rotation:** Right rotate at `y` — converts RL to RR.
+3. **Second rotation:** Left rotate at `z` — fixes RR.
 4. Update heights.
 
 #### Pseudocode
@@ -708,9 +708,9 @@ Insert 10, 30, 20.
    30 (bf=0, h=1)
 ```
 
-**Step 3:** Insert 20. bf(10) = -2 âœ—. bf(30) = +1 â†’ RL case.
+**Step 3:** Insert 20. bf(10) = -2 ✗. bf(30) = +1 → RL case.
 ```
-10 (bf=-2 âœ—)
+10 (bf=-2 ✗)
   \
    30 (bf=+1)
   /
@@ -719,7 +719,7 @@ Insert 10, 30, 20.
 
 **Step 4:** Right rotate at 30.
 ```
-10 (bf=-2 âœ—)
+10 (bf=-2 ✗)
   \
    20 (bf=0)
      \
@@ -733,7 +733,7 @@ Now RR case at 10.
     /  \
    10   30 (bf=0, h=1)
 ```
-Balanced. âœ“
+Balanced. ✓
 
 #### C++ Implementation
 
@@ -779,8 +779,8 @@ public AVLNode rightLeftRotate(AVLNode z) {
 
 | Case | Behavior |
 |------|----------|
-| **Child's bf misdetected as 0 instead of Â±1** | May pick wrong rotation â€” must check |
-| **Rotating when X has no children** | T2/T3 are null â€” rotation still correct |
+| **Child's bf misdetected as 0 instead of ±1** | May pick wrong rotation — must check |
+| **Rotating when X has no children** | T2/T3 are null — rotation still correct |
 | **z is the root** | After double rotation, new node becomes root |
 
 ---
@@ -789,7 +789,7 @@ public AVLNode rightLeftRotate(AVLNode z) {
 
 ### Real-World Analogy
 
-**Loading plates onto a barbell.** Each time you add weight to one side, the bar tilts. Check the tilt and adjust by moving plates from the heavy side to the light side before adding the next plate. The bar stays level throughout â€” just as AVL rebalances after each insertion to maintain logarithmic height.
+**Loading plates onto a barbell.** Each time you add weight to one side, the bar tilts. Check the tilt and adjust by moving plates from the heavy side to the light side before adding the next plate. The bar stays level throughout — just as AVL rebalances after each insertion to maintain logarithmic height.
 
 ### Algorithm Steps
 
@@ -797,10 +797,10 @@ public AVLNode rightLeftRotate(AVLNode z) {
 2. **Update Height:** Walk back up, recomputing height at each ancestor.
 3. **Check Balance:** Compute bf at each ancestor.
 4. **Rebalance if |bf| > 1:**
-   - bf > 1 AND value &lt; node.left.data â†’ **LL**: rightRotate(node)
-   - bf &lt; -1 AND value &gt; node.right.data â†’ **RR**: leftRotate(node)
-   - bf > 1 AND value > node.left.data â†’ **LR**: leftRotate(node.left) then rightRotate(node)
-   - bf &lt; -1 AND value < node.right.data â†’ **RL**: rightRotate(node.right) then leftRotate(node)
+   - bf > 1 AND value &lt; node.left.data → **LL**: rightRotate(node)
+   - bf &lt; -1 AND value &gt; node.right.data → **RR**: leftRotate(node)
+   - bf > 1 AND value > node.left.data → **LR**: leftRotate(node.left) then rightRotate(node)
+   - bf &lt; -1 AND value < node.right.data → **RL**: rightRotate(node.right) then leftRotate(node)
 5. Return (possibly new) subtree root.
 
 ### Pseudocode
@@ -857,7 +857,7 @@ Insert: [30, 20, 40, 10, 25, 35, 50, 5, 15]
    /
   20 [bf=0, h=1]
 ```
-bf(30) = 1 âœ“
+bf(30) = 1 ✓
 
 **Insert 40:**
 ```
@@ -865,7 +865,7 @@ bf(30) = 1 âœ“
    /  \
   20   40
 ```
-bf(30) = 2-2=0 âœ“
+bf(30) = 2-2=0 ✓
 
 **Insert 10:**
 ```
@@ -875,7 +875,7 @@ bf(30) = 2-2=0 âœ“
    /
   10
 ```
-bf(30) = 2-1=1 âœ“
+bf(30) = 2-1=1 ✓
 
 **Insert 25:**
 ```
@@ -885,7 +885,7 @@ bf(30) = 2-1=1 âœ“
    /  \
   10  25
 ```
-bf(30) = 2-1=1 âœ“
+bf(30) = 2-1=1 ✓
 
 **Insert 35:**
 ```
@@ -895,7 +895,7 @@ bf(30) = 2-1=1 âœ“
    /  \  /
   10 25 35
 ```
-bf(30) = 2-2=0 âœ“
+bf(30) = 2-2=0 ✓
 
 **Insert 50:**
 ```
@@ -905,7 +905,7 @@ bf(30) = 2-2=0 âœ“
    /  \  / \
   10 25 35 50
 ```
-bf(30) = 2-2=0 âœ“
+bf(30) = 2-2=0 ✓
 
 **Insert 5:**
 ```
@@ -917,11 +917,11 @@ bf(30) = 2-2=0 âœ“
     /
    5
 ```
-Heights: 5â†’1, 10â†’2, 20â†’3. bf(30) = 3-2=1 âœ“
+Heights: 5→1, 10→2, 20→3. bf(30) = 3-2=1 ✓
 
 **Insert 15:**
 ```
-            30 [bf=+2 âœ—]
+            30 [bf=+2 ✗]
            /  \
          20   40
         /  \  / \
@@ -929,10 +929,10 @@ Heights: 5â†’1, 10â†’2, 20â†’3. bf(30) = 3-2=1 âœ“
       / \
      5  15
 ```
-Heights: 5â†’1, 15â†’1, 10â†’2, 20â†’3, 30â†’4.
-bf(20) = 2-1=1 âœ“. bf(30) = 3-2 = **+2 âœ—**
+Heights: 5→1, 15→1, 10→2, 20→3, 30→4.
+bf(20) = 2-1=1 ✓. bf(30) = 3-2 = **+2 ✗**
 
-**Detect LR case at 30:** bf(30)=+2, bf(left child 20)=+1? No, bf(20) = h(10)=2 - h(25)=1 = +1. Since bf > 1 AND value(15) > node.left.data(20) â†’ LR.
+**Detect LR case at 30:** bf(30)=+2, bf(left child 20)=+1? No, bf(20) = h(10)=2 - h(25)=1 = +1. Since bf > 1 AND value(15) > node.left.data(20) → LR.
 
 **Step A:** Left rotate at 20.
 ```
@@ -946,7 +946,7 @@ Before:            After:
 
 Tree becomes:
 ```
-          30 [bf=+2 âœ—]
+          30 [bf=+2 ✗]
          /  \
         10  40
        / \  / \
@@ -966,7 +966,7 @@ Tree becomes:
             35  50
 ```
 
-All balance factors âˆˆ {-1, 0, 1}. âœ“ Final tree is perfectly balanced.
+All balance factors ∈ {-1, 0, 1}. ✓ Final tree is perfectly balanced.
 
 ### C++ Implementation (Full Insert)
 
@@ -1101,12 +1101,12 @@ public AVLNode rebalance(AVLNode node, int value) {
 
 | Aspect | Value | Why |
 |--------|-------|-----|
-| Time (worst) | O(log n) | BST descent O(h) + â‰¤ 2 rotations O(1) + height updates O(h). h â‰¤ 1.44 logâ‚‚ n |
+| Time (worst) | O(log n) | BST descent O(h) + ≤ 2 rotations O(1) + height updates O(h). h ≤ 1.44 log₂ n |
 | Time (average) | O(log n) | Same bound |
 | Space | O(log n) | Recursive call stack depth = tree height |
-| Rotations per insert | â‰¤ 2 | At most one double rotation |
+| Rotations per insert | ≤ 2 | At most one double rotation |
 
-**Why only â‰¤ 2 rotations?** After inserting a node, the balance factor of an ancestor changes by at most Â±1. Once you rotate at the first unbalanced node, the subtree height returns to its pre-insertion value. Ancestors above are unaffected â€” rotations **do not cascade** during insertion.
+**Why only ≤ 2 rotations?** After inserting a node, the balance factor of an ancestor changes by at most ±1. Once you rotate at the first unbalanced node, the subtree height returns to its pre-insertion value. Ancestors above are unaffected — rotations **do not cascade** during insertion.
 
 ### Advantages & Disadvantages
 
@@ -1114,7 +1114,7 @@ public AVLNode rebalance(AVLNode node, int value) {
 |------------|---------------|
 | Guaranteed O(log n) even with sorted input | More complex than BST insertion |
 | At most one double rotation per insert | Recursive descent requires stack space |
-| No amortization â€” every insert is individually fast | Slightly slower inserts than Red-Black trees |
+| No amortization — every insert is individually fast | Slightly slower inserts than Red-Black trees |
 
 ### Edge Cases
 
@@ -1122,7 +1122,7 @@ public AVLNode rebalance(AVLNode node, int value) {
 |------|----------|
 | **Empty tree** | New node becomes root, h=1, bf=0 |
 | **Duplicate value** | Typically ignored. No height change. |
-| **Insert causes no imbalance** | Height updates only â€” no rotation. |
+| **Insert causes no imbalance** | Height updates only — no rotation. |
 | **Insert causes zigzag (LR/RL)** | Double rotation needed. |
 | **Sorted ascending input** | RR at every 3rd insertion. |
 | **Rotation at root** | Root pointer changes. Must update global root. |
@@ -1133,7 +1133,7 @@ public AVLNode rebalance(AVLNode node, int value) {
 
 ### Real-World Analogy
 
-Removing a **support pillar from a building** â€” the floors above may settle unevenly, and this instability can propagate all the way up. Unlike insertion (where adding one brick tilts only one beam), deletion can cause cascading imbalance. Each floor-to-be ancestor must be checked and possibly re-shored.
+Removing a **support pillar from a building** — the floors above may settle unevenly, and this instability can propagate all the way up. Unlike insertion (where adding one brick tilts only one beam), deletion can cause cascading imbalance. Each floor-to-be ancestor must be checked and possibly re-shored.
 
 ### Algorithm Steps
 
@@ -1144,11 +1144,11 @@ Removing a **support pillar from a building** â€” the floors above may sett
 2. **Update Height:** At each ancestor from deletion point to root.
 3. **Check Balance:** Compute bf at each ancestor.
 4. **Rebalance if |bf| > 1** (using child's bf to distinguish):
-   - bf > 1 AND bf(left child) â‰¥ 0 â†’ **LL**: rightRotate(node)
-   - bf > 1 AND bf(left child) &lt; 0 â†’ **LR**: leftRotate(left) then rightRotate(node)
-   - bf &lt; -1 AND bf(right child) â‰¤ 0 â†’ **RR**: leftRotate(node)
-   - bf &lt; -1 AND bf(right child) &gt; 0 â†’ **RL**: rightRotate(right) then leftRotate(node)
-5. **Repeat** for EVERY ancestor up to root (deletion may cascadeâ€”unlike insertion).
+   - bf > 1 AND bf(left child) ≥ 0 → **LL**: rightRotate(node)
+   - bf > 1 AND bf(left child) &lt; 0 → **LR**: leftRotate(left) then rightRotate(node)
+   - bf &lt; -1 AND bf(right child) ≤ 0 → **RR**: leftRotate(node)
+   - bf &lt; -1 AND bf(right child) &gt; 0 → **RL**: rightRotate(right) then leftRotate(node)
+5. **Repeat** for EVERY ancestor up to root (deletion may cascade—unlike insertion).
 6. Return the (possibly new) subtree root.
 
 ### Pseudocode
@@ -1213,7 +1213,7 @@ Start from a balanced AVL tree:
    5   15     45 55
 ```
 
-#### Deletion 1: Delete 25 (leaf â€” no cascade)
+#### Deletion 1: Delete 25 (leaf — no cascade)
 
 **Step 1:** BST delete 25. Walk up:
 
@@ -1227,14 +1227,14 @@ Start from a balanced AVL tree:
    5   15    45 55
 ```
 
-Heights: 20â†’h=3 (left=10(h=2), right=0). bf(20) = 2-0 = +1 âœ“
-30â†’h=4 (left=20(h=3), right=40(h=3)). bf(30) = 0 âœ“
+Heights: 20→h=3 (left=10(h=2), right=0). bf(20) = 2-0 = +1 ✓
+30→h=4 (left=20(h=3), right=40(h=3)). bf(30) = 0 ✓
 
-No rotations. âœ“
+No rotations. ✓
 
-#### Deletion 2: Delete 50 (one child â€” cascading)
+#### Deletion 2: Delete 50 (one child — cascading)
 
-**Step 1:** BST delete 50 â€” replace with its child 55.
+**Step 1:** BST delete 50 — replace with its child 55.
 
 ```
           30 [bf=0, h=4]
@@ -1246,11 +1246,11 @@ No rotations. âœ“
    5   15
 ```
 
-Check 40: left=35(h=1), right=55(h=1). bf(40) = 0 âœ“
+Check 40: left=35(h=1), right=55(h=1). bf(40) = 0 ✓
 
-Check 30: left=20(h=3), right=40(h=2). bf(30) = 1 âœ“
+Check 30: left=20(h=3), right=40(h=2). bf(30) = 1 ✓
 
-#### Deletion 3: Delete 10 (two children â€” cascading rotations)
+#### Deletion 3: Delete 10 (two children — cascading rotations)
 
 **Step 1:** Inorder successor of 10 is 15. Copy 15 to node 10. Delete 15 from right subtree of 10.
 
@@ -1264,15 +1264,15 @@ Check 30: left=20(h=3), right=40(h=2). bf(30) = 1 âœ“
    5
 ```
 
-**Step 2:** Walk up. Node 15 has bf = 1-0 = +1 âœ“. Node 20 has bf = h(15)=2 - 0 = +2 âœ—.
+**Step 2:** Walk up. Node 15 has bf = 1-0 = +1 ✓. Node 20 has bf = h(15)=2 - 0 = +2 ✗.
 
-At 20: bf=+2, bf(left child 15) = +1 â‰¥ 0 â†’ LL case.
+At 20: bf=+2, bf(left child 15) = +1 ≥ 0 → LL case.
 
 **Step 3:** Right rotate at 20.
 
 Before rotation at 20:
 ```
-      20 [bf=+2 âœ—]
+      20 [bf=+2 ✗]
      /  \
     15   null
    /
@@ -1295,9 +1295,9 @@ Tree:
      5  20 35 55
 ```
 
-**Step 4:** Walk up to 30. bf(30) = h(15)=2 - h(40)=2 = 0 âœ“. Done.
+**Step 4:** Walk up to 30. bf(30) = h(15)=2 - h(40)=2 = 0 ✓. Done.
 
-#### Deletion 4: Delete 30 (root, two children â€” deep cascade)
+#### Deletion 4: Delete 30 (root, two children — deep cascade)
 
 **Step 1:** Inorder successor of 30 is 35. Copy 35. Delete 35 from right subtree.
 
@@ -1309,8 +1309,8 @@ Tree:
      5  20    55
 ```
 
-**Step 2:** Node 40: left=null, right=55(h=1). bf(40) = 0-1 = -1 âœ“.
-bf(35) = h(15)=2 - h(40)=1 = +1 âœ“. No rotation.
+**Step 2:** Node 40: left=null, right=55(h=1). bf(40) = 0-1 = -1 ✓.
+bf(35) = h(15)=2 - h(40)=1 = +1 ✓. No rotation.
 
 ### C++ Implementation (Full Delete)
 
@@ -1472,20 +1472,20 @@ public AVLNode rebalanceDelete(AVLNode node) {
 
 | Aspect | Value | Why |
 |--------|-------|-----|
-| Time (worst) | O(log n) | BST delete O(h) + up to O(h) rotations Ã— O(1) each |
+| Time (worst) | O(log n) | BST delete O(h) + up to O(h) rotations × O(1) each |
 | Rotations per delete | O(log n) | Unlike insertion, deletion may cascade to root |
 | Space | O(log n) | Recursive stack depth = tree height |
 | Height updates | O(log n) | Every ancestor updated |
 
-**Why deletion cascades but insertion does not:** Insertion adds a leaf â€” the subtree height can increase by at most 1. After rotation, the height returns to the pre-insertion value, so ancestors are unaffected. Deletion removes a node â€” subtree height can decrease by 1, creating imbalance at ancestors. Fixing one level may change the height that the next ancestor sees, potentially creating a new imbalance. This propagates upward.
+**Why deletion cascades but insertion does not:** Insertion adds a leaf — the subtree height can increase by at most 1. After rotation, the height returns to the pre-insertion value, so ancestors are unaffected. Deletion removes a node — subtree height can decrease by 1, creating imbalance at ancestors. Fixing one level may change the height that the next ancestor sees, potentially creating a new imbalance. This propagates upward.
 
 ### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Maintains O(log n) height after deletion | May require O(log n) rotations |
-| Self-healing â€” tree stays balanced | More complex to implement than insert rebalance |
-| No amortization â€” each delete is individually O(log n) | Needs to check child's balance (not inserted value) |
+| Self-healing — tree stays balanced | More complex to implement than insert rebalance |
+| No amortization — each delete is individually O(log n) | Needs to check child's balance (not inserted value) |
 
 ### Edge Cases
 
@@ -1496,7 +1496,7 @@ public AVLNode rebalanceDelete(AVLNode node) {
 | **Delete node with one child** | Replace with child; check ancestors |
 | **Delete node with two children** | Find successor; copy value; delete successor from right subtree |
 | **Delete causes cascade** | Each ancestor up to root rechecked and possibly rotated |
-| **Delete causes imbalance at root** | Rotation changes root â€” update global root pointer |
+| **Delete causes imbalance at root** | Rotation changes root — update global root pointer |
 
 ---
 
@@ -1504,11 +1504,11 @@ public AVLNode rebalanceDelete(AVLNode node) {
 
 | Feature | AVL Tree | Red-Black Tree | B-Tree (m=3) |
 |---------|----------|----------------|--------------|
-| Balance condition | \|bf\| â‰¤ 1 | Red property + black-height | All leaves at same depth |
-| Height bound | ~1.44 logâ‚‚ n | ~2 logâ‚‚ n | log_m n |
+| Balance condition | \|bf\| ≤ 1 | Red property + black-height | All leaves at same depth |
+| Height bound | ~1.44 log₂ n | ~2 log₂ n | log_m n |
 | Search | **Fastest** (tightest balance) | Fast | Fast (fewer levels, wider nodes) |
-| Insert rotations | â‰¤ 2 | â‰¤ 2 | Node splits |
-| Delete rotations | O(log n) | â‰¤ 3 | Node merges |
+| Insert rotations | ≤ 2 | ≤ 2 | Node splits |
+| Delete rotations | O(log n) | ≤ 3 | Node merges |
 | Extra storage per node | Height (int, ~4 bytes) | Color (1 bit) | Keys array + child pointers |
 | Use case | **Search-heavy** workloads | Write-heavy, language stdlibs | **Disk-based** databases |
 | Memory locality | Poor (pointer chasing) | Poor (pointer chasing) | **Excellent** (block-oriented) |
@@ -1527,21 +1527,21 @@ public AVLNode rebalanceDelete(AVLNode node) {
 ### Q1: Explain AVL Rotations Visually
 
 ```
-LL â†’ Right rotate:
+LL → Right rotate:
      z               y
     / \             / \
    y  T4    =>     x   z
   / \                 / \
  x  T3               T3 T4
 
-RR â†’ Left rotate:
+RR → Left rotate:
  z                  y
 / \                / \
 T1 y       =>     z   x
   / \                / \
  T2 x              T1 T2
 
-LR â†’ Left then Right:
+LR → Left then Right:
    z              z              x
   / \            / \            / \
  y  T4    =>    x  T4    =>   y   z
@@ -1550,7 +1550,7 @@ T1 x          y  T3          T1 T2 T3 T4
   / \        / \
  T2 T3      T1 T2
 
-RL â†’ Right then Left:
+RL → Right then Left:
  z              z              x
 / \            / \            / \
 T1 y     =>   T1 x      =>   z   y
@@ -1587,10 +1587,10 @@ Runs in O(n) time, O(h) space. Returns both AVL status and height in one post-or
 Maintain a counter. Every time `rotateRight()` or `rotateLeft()` is called (including inside double rotations), increment it.
 
 ```
-Insert sequence: [30, 20, 10] â†’ 1 rotation (LL at 30)
-Insert sequence: [10, 20, 30] â†’ 1 rotation (RR at 10)
-Insert sequence: [30, 10, 20] â†’ 2 rotations (LR at 30)
-Insert sequence: [10, 30, 20] â†’ 2 rotations (RL at 10)
+Insert sequence: [30, 20, 10] → 1 rotation (LL at 30)
+Insert sequence: [10, 20, 30] → 1 rotation (RR at 10)
+Insert sequence: [30, 10, 20] → 2 rotations (LR at 30)
+Insert sequence: [10, 30, 20] → 2 rotations (RL at 10)
 ```
 
 ### Q4: Worst-Case AVL Height
@@ -1599,17 +1599,17 @@ For an AVL tree with height h, the minimum number of nodes follows:
 - N(0) = 0, N(1) = 1
 - N(h) = N(h-1) + N(h-2) + 1
 
-This Fibonacci-like recurrence gives N(h) â‰ˆ Ï†^(h+2) / âˆš5 - 1. Solving for h:
-- h â‰ˆ 1.44 logâ‚‚(n+2) â€” the **worst-case** height of an AVL tree.
+This Fibonacci-like recurrence gives N(h) ≈ φ^(h+2) / √5 - 1. Solving for h:
+- h ≈ 1.44 log₂(n+2) — the **worst-case** height of an AVL tree.
 
-For 1,000,000 nodes: h â‰ˆ 1.44 Ã— logâ‚‚(1,000,002) â‰ˆ 1.44 Ã— 20 = **28.7**. A million-node AVL tree fits in 29 levels.
+For 1,000,000 nodes: h ≈ 1.44 × log₂(1,000,002) ≈ 1.44 × 20 = **28.7**. A million-node AVL tree fits in 29 levels.
 
 ### Q5: When Would You NOT Use AVL?
 
 - **Write-heavy workloads** where insertions/deletions outnumber searches 2:1 or more.
 - **Disk-backed storage** where B-tree's block-level access patterns are more efficient.
 - **Memory-constrained environments** where the height int per node is significant.
-- **When only worst-case insert/delete speed matters** â€” Red-Black trees have tighter delete rotation bounds (â‰¤ 3).
+- **When only worst-case insert/delete speed matters** — Red-Black trees have tighter delete rotation bounds (≤ 3).
 
 ---
 
@@ -1619,7 +1619,7 @@ For 1,000,000 nodes: h â‰ˆ 1.44 Ã— logâ‚‚(1,000,002) â‰ˆ 1.44 Ã
 |-------------|---------|---------|
 | **In-memory database indexes** | Guaranteed O(log n) search | SQLite in-memory mode, Redis sorted sets use skip lists but AVL is used by custom caching layers |
 | **Compiler symbol tables** | Fast lookups, rare insertions | C++ compilers use AVL or hash tables for identifier resolution |
-| **Real-time systems** | Predictable latency | Avionics, automotive ECUs â€” can tolerate AVL's O(log n) worst case, unlike hash tables |
+| **Real-time systems** | Predictable latency | Avionics, automotive ECUs — can tolerate AVL's O(log n) worst case, unlike hash tables |
 | **Network routing tables** | Fast prefix lookup | Some software routers use AVL for prefix matching |
 | **Gaming engines** | Entity lookup, spatial indexing | Entity-component systems use AVL for ID-to-entity maps |
 | **File system indexing** | Directory tree balancing | Some in-memory FS layers (tmpfs internals) |
@@ -1630,9 +1630,9 @@ For 1,000,000 nodes: h â‰ˆ 1.44 Ã— logâ‚‚(1,000,002) â‰ˆ 1.44 Ã
 ### Key Insight: AVL vs Hash Table
 
 AVL trees support ordered operations that hash tables cannot:
-- **Range queries:** "Find all keys between 1000 and 2000" â€” O(log n + k) in AVL, O(n) in hash table.
-- **Ordered traversal:** Sorted iteration in O(n) â€” impossible in hash table.
-- **Successor/Predecessor:** Find next/previous key in O(log n) â€” O(1) average in hash table only when approximate.
+- **Range queries:** "Find all keys between 1000 and 2000" — O(log n + k) in AVL, O(n) in hash table.
+- **Ordered traversal:** Sorted iteration in O(n) — impossible in hash table.
+- **Successor/Predecessor:** Find next/previous key in O(log n) — O(1) average in hash table only when approximate.
 
 ---
 
@@ -1905,12 +1905,12 @@ bool isAVL(AVLNode<T>* node) {
 
 ## Pro Tips
 
-> **One-Sentence Takeaway:** Master single rotations (LL/RR) first â€” double rotations (LR/RL) are just two single rotations in sequence.
+> **One-Sentence Takeaway:** Master single rotations (LL/RR) first — double rotations (LR/RL) are just two single rotations in sequence.
 
-- **The four rotation patterns are just two**: LL and RR are symmetric (single rotations). LR and RL are symmetric (double rotations â€” rotate the child first, then the node). Master one direction and the other is mirrored.
+- **The four rotation patterns are just two**: LL and RR are symmetric (single rotations). LR and RL are symmetric (double rotations — rotate the child first, then the node). Master one direction and the other is mirrored.
 - **Balance factor = height(left) - height(right)**: AVL invariant requires this to be -1, 0, or 1. After insertion, walk up to the first unbalanced node and apply the corresponding rotation.
 - **Deletion may cascade**: Unlike insertion (at most one rotation needed), deletion may require rotations at multiple ancestors. Walk all the way up to the root, rebalancing at each unbalanced node.
-- **AVL vs Red-Black**: AVL trees have tighter balance â†’ faster lookups. Red-Black trees have faster insertions/deletions (fewer rotations). Choose AVL for search-heavy workloads.
+- **AVL vs Red-Black**: AVL trees have tighter balance → faster lookups. Red-Black trees have faster insertions/deletions (fewer rotations). Choose AVL for search-heavy workloads.
 - **Insert rebalancing uses `value` comparisons** to distinguish LL/LR/RR/RL. Delete rebalancing uses **child's balance factor** instead (since the deleted value is no longer in the tree for comparison).
 
 ## One-Sentence Takeaways
@@ -1930,8 +1930,8 @@ bool isAVL(AVLNode<T>* node) {
 | Search | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
 | Insert | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
 | Delete | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
-| Rotations per insert | 0 | â‰¤ 2 | â‰¤ 2 |
-| Rotations per delete | 0 | \(O(\log n)\) | â‰¤ 3 |
+| Rotations per insert | 0 | ≤ 2 | ≤ 2 |
+| Rotations per delete | 0 | \(O(\log n)\) | ≤ 3 |
 | Extra storage | None | Balance factor (2 bits) | Color bit (1 bit) |
 
 ## Quick Reference: AVL Rotation Patterns
@@ -1959,9 +1959,9 @@ bool isAVL(AVLNode<T>* node) {
 
 | Mistake | Why It's Wrong | Correct Approach |
 |---------|----------------|------------------|
-| Forgetting to update height after rotation | Height of subtrees changes after rotation â€” old height gives wrong balance | Always recompute height = 1 + max(left.height, right.height) after each rotation |
-| Checking balance before updating heights | Balance factor uses stale height values â†’ false violation or false pass | Update heights first, then check balance |
-| Wrong rotation case classification for insertion | Insert into left-left vs left-right of heavy subtree determines single vs double rotation | Map violation pattern â†’ rotation type: LL (right-rotate), RR (left-rotate), LR (left-right), RL (right-left) |
+| Forgetting to update height after rotation | Height of subtrees changes after rotation — old height gives wrong balance | Always recompute height = 1 + max(left.height, right.height) after each rotation |
+| Checking balance before updating heights | Balance factor uses stale height values → false violation or false pass | Update heights first, then check balance |
+| Wrong rotation case classification for insertion | Insert into left-left vs left-right of heavy subtree determines single vs double rotation | Map violation pattern → rotation type: LL (right-rotate), RR (left-rotate), LR (left-right), RL (right-left) |
 | Applying rotation to wrong node (not the imbalanced ancestor) | Rotating the inserted node instead of the first imbalanced ancestor | Always find the deepest imbalanced node, then apply rotation on that node |
 | Not rebalancing bottom-up after deletion | Deleting a node may leave ancestors imbalanced, not just the parent | After deletion, traverse up the path to root, updating heights and rebalancing |
 | Forgetting that AVL deletion is harder than insertion | Insertion requires at most 2 rotations; deletion may require O(log n) rotations | Rebalance every node on the path from deleted node to root |
@@ -2117,37 +2117,37 @@ class AVLTree {
 
 9. **What is the maximum possible height of an AVL tree with 7 nodes?**
    - a) 2
-   - b) 3 âœ“
+   - b) 3 ✓
    - c) 4
    - d) 6
 
 10. **How many rotations are needed at most during an AVL insertion?**
     - a) 1
-    - b) 2 âœ“
+    - b) 2 ✓
     - c) O(log n)
     - d) O(n)
 
 11. **What is the worst-case time for searching in an AVL tree with n nodes?**
     - a) O(1)
-    - b) O(log n) âœ“
+    - b) O(log n) ✓
     - c) O(n)
     - d) O(n log n)
 
 12. **What distinguishes an LR case from an LL case in AVL insertion?**
     - a) The imbalance is at the right child
-    - b) The inserted node is in the right subtree of the left child âœ“
+    - b) The inserted node is in the right subtree of the left child ✓
     - c) Balance factor = 2
     - d) No rotation needed
 
 13. **An AVL tree with height h has at least how many nodes (recursive formula)?**
     - a) N(h) = 2^h - 1
-    - b) N(h) = N(h-1) + N(h-2) + 1 âœ“ (Fibonacci-like)
-    - c) N(h) = 2 Ã— N(h-1)
-    - d) N(h) = hÂ²
+    - b) N(h) = N(h-1) + N(h-2) + 1 ✓ (Fibonacci-like)
+    - c) N(h) = 2 × N(h-1)
+    - d) N(h) = h²
 
 14. **If an AVL deletion causes imbalance at multiple ancestors:**
     - a) Only one needs rebalancing
-    - b) All ancestors on the path must be rebalanced âœ“
+    - b) All ancestors on the path must be rebalanced ✓
     - c) The root is always rebalanced
     - d) No rebalancing is needed
 
@@ -2155,7 +2155,7 @@ class AVLTree {
 
 ### Additional Exercises (GFG Pattern)
 
-14. **AVL tree property verification**: Write functions to verify that a given binary tree is a valid AVL tree (BST invariant + balance factor â‰¤ 1 + correct heights).
+14. **AVL tree property verification**: Write functions to verify that a given binary tree is a valid AVL tree (BST invariant + balance factor ≤ 1 + correct heights).
 
 15. **Count nodes in range [L, R]**: Given an AVL tree and a range, count the number of nodes whose values lie in [L, R] in O(log n + k) time.
 
@@ -2163,7 +2163,7 @@ class AVLTree {
 
 17. **Merge two AVL trees**: Given two AVL trees, merge them into one AVL tree. If the total size is m + n, aim for O(m + n) time by flattening to sorted array and building balanced tree.
 
-18. **Split an AVL tree by key**: Given a key K, split the AVL tree into two trees: one with values â‰¤ K and one with values > K. Each must remain a valid AVL tree.
+18. **Split an AVL tree by key**: Given a key K, split the AVL tree into two trees: one with values ≤ K and one with values > K. Each must remain a valid AVL tree.
 
 19. **AVL tree serialization**: Design an algorithm to serialize and deserialize an AVL tree, preserving both the BST property and the balance information.
 
@@ -2175,11 +2175,11 @@ class AVLTree {
 
 | Property | AVL | Red-Black | Splay | Treap | B-Tree |
 |----------|-----|-----------|-------|-------|--------|
-| Height bound | 1.44 logâ‚‚n | 2 logâ‚‚n | O(log n) amortized | O(log n) expected | log_{m/2}(n) |
+| Height bound | 1.44 log₂n | 2 log₂n | O(log n) amortized | O(log n) expected | log_{m/2}(n) |
 | Search (worst) | O(log n) | O(log n) | O(log n) amortized | O(log n) | O(log n) |
 | Insert (worst) | O(log n) | O(log n) | O(log n) amortized | O(log n) | O(log n) |
 | Delete (worst) | O(log n) | O(log n) | O(log n) amortized | O(log n) | O(log n) |
-| Rotations per insert | â‰¤ 2 | â‰¤ 2 | 0 (splay) | 0 (rotate after insert) | Node split |
+| Rotations per insert | ≤ 2 | ≤ 2 | 0 (splay) | 0 (rotate after insert) | Node split |
 | Balance strictness | Strict | Relaxed | None (amortized) | Probabilistic | Degree-based |
 | Space overhead | Height field | Color bit | Parent ptr (optional) | Priority field | Multiple keys/pointers |
 | Use case | Lookup-heavy | Insert-heavy | Locality of reference | Simple impl | Disk-based |
@@ -2188,37 +2188,37 @@ class AVLTree {
    - d) 0 only
 
 2. **How many rotations may be needed after an AVL insertion?**
-   - a) At most 1 âœ…
+   - a) At most 1 ✅
    - b) At most 2
    - c) \(O(\log n)\)
    - d) 0
 
 3. **LR rotation is:**
    - a) Single rotation
-   - b) Double rotation (left then right) âœ…
+   - b) Double rotation (left then right) ✅
    - c) Double rotation (right then left)
    - d) No rotation needed
 
 4. **What is the maximum height of an AVL tree with \(n\) nodes?**
    - a) \(n\)
-   - b) \(1.44 \log n\) âœ…
+   - b) \(1.44 \log n\) ✅
    - c) \(2 \log n\)
    - d) \(\log n\)
 
 5. **Which is better for search-heavy workloads?**
-   - a) AVL âœ…
+   - a) AVL ✅
    - b) Red-Black
    - c) Unbalanced BST
    - d) Linked list
 
 6. **Why can deletion require multiple rotations but insertion cannot?**
    - a) Deletion is recursive, insertion is iterative
-   - b) Insertion restores original subtree height; deletion may not âœ…
+   - b) Insertion restores original subtree height; deletion may not ✅
    - c) Deletion uses a different balance factor formula
    - d) Insertion never causes LL/RR imbalance
 
 7. **How does delete rebalancing distinguish LL from LR (since the value is gone)?**
-   - a) It uses the balance factor of the child node âœ…
+   - a) It uses the balance factor of the child node ✅
    - b) It randomly tries one rotation
    - c) It uses the deleted value, stored separately
    - d) It applies both and checks which works
@@ -2231,7 +2231,7 @@ class AVLTree {
 - Four rotation patterns (LL, RR, LR, RL) restore balance after modifications.
 - Height is strictly \( O(\log n) \), guaranteeing logarithmic operations.
 - Deletion rebalancing may require multiple rotations up the path.
-- Insertion needs â‰¤ 2 rotations; deletion may cascade to the root.
+- Insertion needs ≤ 2 rotations; deletion may cascade to the root.
 
 ## Exercises
 

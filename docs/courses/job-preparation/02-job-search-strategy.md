@@ -1,4 +1,4 @@
-﻿# Job Search Strategy for Indian IT Professionals
+# Job Search Strategy for Indian IT Professionals
 
 ## Learning Objectives
 
@@ -1136,7 +1136,7 @@ console.log('Source effectiveness:', myTracker.getSourceEffectiveness());
 
 ## Summary
 
-A successful job search in the Indian IT landscape requires a multi-channel approach combining job portals, networking, referrals, and direct outreach. For private sector roles, LinkedIn and Naukri should be your primary platforms, supplemented by referrals for the hidden job market. For government positions, maintain a rigorous notification tracking system and apply the moment vacancies are announced. Campus placement drives should be complemented with off-campus preparation as a backup. Track everything â€” applications, interviews, follow-ups â€” using the TypeScript tracker provided or a spreadsheet. The key metric is not just the number of applications, but the response rate, which improves dramatically with referrals, customization, and timely follow-ups.
+A successful job search in the Indian IT landscape requires a multi-channel approach combining job portals, networking, referrals, and direct outreach. For private sector roles, LinkedIn and Naukri should be your primary platforms, supplemented by referrals for the hidden job market. For government positions, maintain a rigorous notification tracking system and apply the moment vacancies are announced. Campus placement drives should be complemented with off-campus preparation as a backup. Track everything — applications, interviews, follow-ups — using the TypeScript tracker provided or a spreadsheet. The key metric is not just the number of applications, but the response rate, which improves dramatically with referrals, customization, and timely follow-ups.
 
 ## Practical Takeaways
 
@@ -1144,9 +1144,9 @@ A successful job search in the Indian IT landscape requires a multi-channel appr
 2. Spend 70% of your job search time on networking and referrals, 30% on portal applications
 3. Create and maintain a government job notification tracker (use the TypeScript tool provided)
 4. Send at least 5 personalized LinkedIn messages per day to recruiters and hiring managers at target companies
-5. Apply within 24-48 hours of job posting â€” early applicants get 3x more responses
-6. Maintain a 70% follow-up rate â€” most candidates give up after one email
+5. Apply within 24-48 hours of job posting — early applicants get 3x more responses
+6. Maintain a 70% follow-up rate — most candidates give up after one email
 7. Never accept a referral request without first researching the company and role thoroughly
 8. Balance campus placement preparation with off-campus applications to avoid dependence on one channel
 9. Use the application tracker to measure source effectiveness and double down on what works
-10. Government job applications require patience â€” set up alerts and check notifications daily without fail
+10. Government job applications require patience — set up alerts and check notifications daily without fail

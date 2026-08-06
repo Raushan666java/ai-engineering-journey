@@ -1,4 +1,4 @@
-﻿# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
+# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
 
 > **Previous:** [Capstone](./24-capstone.md) | **Next:** [Business Automation Agents](./26-business-automation-agents.md)
 
@@ -73,21 +73,21 @@ flowchart LR
 
 > **One-Sentence Takeaway:** A central supervisor delegates tasks to worker agents via queues, handling distribution and result aggregation.
 
-Single-agent systems handle one task per invocation. A multi-agent system introduces a **supervisor** that accepts a high-level goal, decomposes it into sub-tasks, and dispatches each sub-task to a specialized **worker** agent. The supervisor does not perform the work itself ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it plans, delegates, and synthesises results.
+Single-agent systems handle one task per invocation. A multi-agent system introduces a **supervisor** that accepts a high-level goal, decomposes it into sub-tasks, and dispatches each sub-task to a specialized **worker** agent. The supervisor does not perform the work itself — it plans, delegates, and synthesises results.
 
 #### Architecture
 
 ```
 User Request
-      ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-      ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¼
-SupervisorAgent ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬analyzes taskÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº decides worker
-      ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-      ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº ResearchAgent   (gathers information)
-      ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº SummarizerAgent (condenses content)
-      ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº WriterAgent     (produces final output)
-      ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-      ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº merges results ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº returns response
+      │
+      ▼
+SupervisorAgent ──analyzes task──► decides worker
+      │
+      ├──► ResearchAgent   (gathers information)
+      ├──► SummarizerAgent (condenses content)
+      └──► WriterAgent     (produces final output)
+      │
+      └──► merges results ──► returns response
 ```
 
 #### The SupervisorAgent Class
@@ -117,7 +117,7 @@ Analyze the user's request and classify it into one of these categories:
 - write: needs original content produced
 
 Call the appropriate worker tool with the user's input.
-Do NOT answer the question yourself ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â delegate it.
+Do NOT answer the question yourself — delegate it.
 PROMPT;
     }
 }
@@ -288,7 +288,7 @@ class SummarizerAgent implements Agent
         return <<<PROMPT
 You are a summarization specialist. Condense content while preserving key
 facts, arguments, and conclusions. Adapt your summary length to the
-request ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â one paragraph for quick overviews, structured sections for
+request — one paragraph for quick overviews, structured sections for
 detailed summaries. Never add information not in the original.
 PROMPT;
     }
@@ -321,7 +321,7 @@ PROMPT;
 
 #### The Supervisor Resolver
 
-The supervisor's tool execution layer resolves which worker to call. This is handled by the AI SDK ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â when the model calls the `research`, `summarize`, or `write` tool, the SDK routes the call to the tool handler registered in the application:
+The supervisor's tool execution layer resolves which worker to call. This is handled by the AI SDK — when the model calls the `research`, `summarize`, or `write` tool, the SDK routes the call to the tool handler registered in the application:
 
 ```php
 <?php
@@ -413,7 +413,7 @@ class AiServiceProvider extends ServiceProvider
 
 > **One-Sentence Takeaway:** Agent teams use handoff protocols with contracts defining what data is passed and what the receiving agent should do.
 
-A single supervisor dispatching to isolated workers works for straightforward delegation. Complex goals require **agent teams** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â multiple agents that collaborate, pass context, and hand off control to one another mid-conversation.
+A single supervisor dispatching to isolated workers works for straightforward delegation. Complex goals require **agent teams** — multiple agents that collaborate, pass context, and hand off control to one another mid-conversation.
 
 #### The Handoff Pattern
 
@@ -685,7 +685,7 @@ class HandoffServiceProvider extends ServiceProvider
 
 > **One-Sentence Takeaway:** Independent agents run concurrently on separate queue workers, with results aggregated after all complete.
 
-Multi-agent systems often need to run several agents at the same time ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â analyzing the same data from different perspectives, researching multiple topics, or generating alternative outputs. Laravel queues enable true parallel execution.
+Multi-agent systems often need to run several agents at the same time — analyzing the same data from different perspectives, researching multiple topics, or generating alternative outputs. Laravel queues enable true parallel execution.
 
 #### The Fan-Out/Fan-In Pattern
 
@@ -2898,7 +2898,7 @@ test('parallel analysis dispatches batch of agent jobs', function () {
 
 1. Build a `QualityReviewAgent` that works alongside an existing `WriterAgent`. The writer produces content, then the quality reviewer checks grammar, tone, and factual accuracy. Use the AgentMemory system so the writer's output is automatically available to the reviewer. Implement the handoff as a job chain.
 
-2. Create a `SentimentAnalysisTeam` with three parallel agents ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each analyzing the same customer review text using a different model provider (Anthropic, OpenAI, Gemini). Use the parallel execution pattern to run them simultaneously, then use `ConflictResolver` to synthesize a final sentiment score when the agents disagree.
+2. Create a `SentimentAnalysisTeam` with three parallel agents — each analyzing the same customer review text using a different model provider (Anthropic, OpenAI, Gemini). Use the parallel execution pattern to run them simultaneously, then use `ConflictResolver` to synthesize a final sentiment score when the agents disagree.
 
 3. Implement a `RetryPolicy`-protected agent that calls an unreliable external API through an AI agent. Configure the retry with 3 attempts, 2-second base delay, and 1.5x backoff multiplier. Write a PEST test that verifies the retry logic by making the agent throw on the first two calls and succeed on the third.
 

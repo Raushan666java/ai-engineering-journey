@@ -1,6 +1,6 @@
-﻿# Chapter 5: Banking & Payment Security
+# Chapter 5: Banking & Payment Security
 
-> **Exam Weightage:** 4â€“6 Qs in IBPS SO IT Officer Mains (Banking technology, digital payment security, RBI guidelines)
+> **Exam Weightage:** 4–6 Qs in IBPS SO IT Officer Mains (Banking technology, digital payment security, RBI guidelines)
 >
 > **Key Topics:** RBI cybersecurity guidelines, PCI DSS, 3D Secure (3DS), EMV chip, Tokenization, Secure Element/TEE, Mobile banking OWASP, UPI security, Digital payment fraud, Biometric authentication in banking
 
@@ -30,11 +30,11 @@ After completing this chapter you will be able to:
 
 - Explain key RBI cybersecurity guidelines for scheduled commercial banks (BCSBI, cyber fraud reporting, outsourcing).
 - Describe PCI DSS requirements for cardholder data protection (encryption, access control, logging, quarterly scans).
-- Walk through the 3D Secure (3DS) authentication flow â€” merchant, issuer, ACS.
+- Walk through the 3D Secure (3DS) authentication flow — merchant, issuer, ACS.
 - Explain EMV chip technology (dynamic data, offline data authentication, transaction counter).
 - Differentiate between card-on-file tokenization and device tokenization (token types, scope, PAN replacement).
 - Describe Secure Element and Trusted Execution Environment (TEE) for mobile payment security.
-- Identify OWASP Mobile Top 10 risks relevant to mobile banking (M1â€“M10).
+- Identify OWASP Mobile Top 10 risks relevant to mobile banking (M1–M10).
 - Explain UPI security architecture (NPCI, PSP, issuer/acquirers, unified UPI PIN).
 - Describe digital payment fraud detection techniques (rules engine, ML models, device fingerprinting, velocity checks).
 - Compare biometric authentication methods in banking (fingerprint, iris, face, voice, behavioral).
@@ -50,10 +50,10 @@ The Reserve Bank of India (RBI) has issued comprehensive cybersecurity framework
 
 #### 5.1.1 Master Direction on Information Technology Governance (2022)
 
-- **Board-level IT Committee** â€” every bank must have a board-level IT strategy committee
-- **CISO appointment** â€” banks must designate a Chief Information Security Officer (CISO) with direct reporting to CEO/MD
-- **IS audit** â€” mandatory annual information system audit by empaneled auditors
-- **BCP/DR** â€” Business Continuity Plan and Disaster Recovery with RTO and RPO defined; DR site must be geographically separate
+- **Board-level IT Committee** — every bank must have a board-level IT strategy committee
+- **CISO appointment** — banks must designate a Chief Information Security Officer (CISO) with direct reporting to CEO/MD
+- **IS audit** — mandatory annual information system audit by empaneled auditors
+- **BCP/DR** — Business Continuity Plan and Disaster Recovery with RTO and RPO defined; DR site must be geographically separate
 
 #### 5.1.2 Cyber Security Framework (2016, updated periodically)
 
@@ -69,27 +69,27 @@ The Reserve Bank of India (RBI) has issued comprehensive cybersecurity framework
 
 #### 5.1.3 RBI Cyber Fraud Reporting
 
-- **Fraud reporting timeline:** Cyber fraud incidents must be reported to RBI within 2â€“3 hours of detection (depending on type)
+- **Fraud reporting timeline:** Cyber fraud incidents must be reported to RBI within 2–3 hours of detection (depending on type)
 - **Fraud classification:** Misappropriation, criminal breach of trust, fraudulent encashment, cheating, forgery, cyber-attacks
-- **Recovery:** Under section 10A of Payment and Settlement Systems Act, 2007 â€” customer liability zero if fraud is detected and reported within 3 working days
+- **Recovery:** Under section 10A of Payment and Settlement Systems Act, 2007 — customer liability zero if fraud is detected and reported within 3 working days
 
 #### 5.1.4 RBI Guidelines on Digital Payment Security (2021)
 
 - **Additional Factor of Authentication (AFA):** Mandatory for all card-not-present (CNP) transactions. OTP via SMS/email is the common AFA.
-- **Tokenization:** As per RBI circular (2022), card-on-file (CoF) tokenization is mandatory â€” merchants cannot store actual card PANs
-- **Transaction limits:** Contactless card transactions â€” limit â‚¹5000 per transaction without PIN (increased during COVID, now standard)
-- **UPI transaction limits:** â‚¹1 lakh per transaction (default); â‚¹2 lakh for capital markets; â‚¹5 lakh for medical/education; â‚¹15 lakh for IPO
+- **Tokenization:** As per RBI circular (2022), card-on-file (CoF) tokenization is mandatory — merchants cannot store actual card PANs
+- **Transaction limits:** Contactless card transactions — limit ₹5000 per transaction without PIN (increased during COVID, now standard)
+- **UPI transaction limits:** ₹1 lakh per transaction (default); ₹2 lakh for capital markets; ₹5 lakh for medical/education; ₹15 lakh for IPO
 
 ```mermaid
 flowchart TD
     subgraph RBIFramework[RBI Cybersecurity Framework]
         RB["RBI Master Directions"] --> ITG["IT Governance<br/>Board-level IT Committee<br/>CISO Appointment"]
         RB --> CSF["Cyber Security Framework"]
-        CSF --> NS["Network Security<br/>â€¢ Segmentation<br/>â€¢ IDS/IPS<br/>â€¢ Access Control"]
-        CSF --> AS["Application Security<br/>â€¢ Secure SDLC<br/>â€¢ VA/PT<br/>â€¢ WAF"]
-        CSF --> DS["Data Security<br/>â€¢ Encryption (TLS/AES)<br/>â€¢ DLP<br/>â€¢ Key Management"]
-        CSF --> IR["Incident Response<br/>â€¢ CERT-In reporting (6h)<br/>â€¢ Forensics"]
-        RB --> PAY["Digital Payment Security<br/>â€¢ AFA mandatory<br/>â€¢ Tokenization<br/>â€¢ Transaction limits"]
+        CSF --> NS["Network Security<br/>• Segmentation<br/>• IDS/IPS<br/>• Access Control"]
+        CSF --> AS["Application Security<br/>• Secure SDLC<br/>• VA/PT<br/>• WAF"]
+        CSF --> DS["Data Security<br/>• Encryption (TLS/AES)<br/>• DLP<br/>• Key Management"]
+        CSF --> IR["Incident Response<br/>• CERT-In reporting (6h)<br/>• Forensics"]
+        RB --> PAY["Digital Payment Security<br/>• AFA mandatory<br/>• Tokenization<br/>• Transaction limits"]
     end
     style RBIFramework fill:#e3f2fd
     style RB fill:#1565c0
@@ -100,7 +100,7 @@ flowchart TD
 
 PCI DSS is a set of security standards for organizations handling branded credit cards, established by the PCI Security Standards Council (founded by Visa, Mastercard, Amex, Discover, JCB).
 
-#### 5.2.1 PCI DSS 4.0 â€” Six Goals and 12 Requirements
+#### 5.2.1 PCI DSS 4.0 — Six Goals and 12 Requirements
 
 | Goal | Requirement | Description |
 |------|-------------|-------------|
@@ -113,29 +113,29 @@ PCI DSS is a set of security standards for organizations handling branded credit
 | **4. Implement Strong Access Control** | 7. Restrict access by need-to-know | Role-based access; least privilege |
 | | 8. Unique IDs for each user | No shared accounts; 2FA for remote admin access |
 | | 9. Restrict physical access | Secure cardholder data storage areas |
-| **5. Monitor and Test Networks** | 10. Track and monitor all access | Audit logs; log retention â‰¥ 12 months |
+| **5. Monitor and Test Networks** | 10. Track and monitor all access | Audit logs; log retention ≥ 12 months |
 | | 11. Test security systems regularly | Quarterly ASV scans; annual penetration testing; annual internal scan |
 | **6. Maintain Information Security Policy** | 12. Maintain security policy | Policy for information security; risk assessments |
 
-#### 5.2.2 PCI DSS â€” Cardholder Data Storage Prohibitions
+#### 5.2.2 PCI DSS — Cardholder Data Storage Prohibitions
 
 | Data Element | May Store? | Notes |
 |-------------|-----------|-------|
-| Primary Account Number (PAN) | âœ… (Must be encrypted at rest) | Masked display (first 6, last 4) |
-| Cardholder Name | âœ… | May be stored |
-| Expiration Date | âœ… | May be stored |
-| Service Code | âœ… | May be stored |
-| Full Track Data (magnetic stripe) | âŒ | NEVER store (chip equivalent) |
-| CVV/CVC/CVV2 | âŒ | NEVER store after authorization |
-| PIN/PIN Block | âŒ | NEVER store |
+| Primary Account Number (PAN) | ✅ (Must be encrypted at rest) | Masked display (first 6, last 4) |
+| Cardholder Name | ✅ | May be stored |
+| Expiration Date | ✅ | May be stored |
+| Service Code | ✅ | May be stored |
+| Full Track Data (magnetic stripe) | ❌ | NEVER store (chip equivalent) |
+| CVV/CVC/CVV2 | ❌ | NEVER store after authorization |
+| PIN/PIN Block | ❌ | NEVER store |
 
 **PCI DSS Validation Levels (Visa):**
 
 | Level | Merchant Tier | Annual requirement |
 |-------|--------------|-------------------|
 | 1 | Over 6M transactions/year | On-site assessment by QSA + ASV scan |
-| 2 | 1Mâ€“6M transactions/year | Self-assessment (SAQ) + ASV scan |
-| 3 | 20Kâ€“1M e-commerce transactions | SAQ + ASV scan |
+| 2 | 1M–6M transactions/year | Self-assessment (SAQ) + ASV scan |
+| 3 | 20K–1M e-commerce transactions | SAQ + ASV scan |
 | 4 | Under 20K e-commerce transactions | SAQ + ASV scan |
 
 ### 5.3 3D Secure (3DS)
@@ -147,23 +147,23 @@ PCI DSS is a set of security standards for organizations handling branded credit
 | Domain | Entity | Role |
 |--------|--------|------|
 | **Issuer Domain** | Card Issuing Bank | Authenticates cardholder (via ACS) |
-| **Interoperability Domain** | Card networks (Visa, Mastercard) | Infrastructure routing (DS â€” Directory Server) |
+| **Interoperability Domain** | Card networks (Visa, Mastercard) | Infrastructure routing (DS — Directory Server) |
 | **Acquirer Domain** | Merchant + Acquiring Bank | Initiates authentication request |
 
 #### 5.3.2 3DS 2.0 Flow (Risk-Based Authentication)
 
 1. **Cardholder** initiates payment on merchant website/app
-2. **Merchant** sends payment details to ACS (Access Control Server â€” issuer's system) via 3DS Server through Directory Server
+2. **Merchant** sends payment details to ACS (Access Control Server — issuer's system) via 3DS Server through Directory Server
 3. **ACS** evaluates risk level based on:
    - Device fingerprinting (browser/device characteristics, IP geolocation)
    - Transaction history (previous purchases, velocity patterns)
    - Cardholder behavioral data (typical spending, time of day)
    - Merchant risk profile (industry, chargeback ratio)
 4. **Decision:**
-   - **Low risk:** ACS authenticates passively â†’ frictionless flow (no challenge)
+   - **Low risk:** ACS authenticates passively → frictionless flow (no challenge)
    - **High risk:** ACS presents challenge (OTP, biometric, or app-based auth)
 5. **Result:** ACS sends `Authentication Value (AV)` + `ECI (Electronic Commerce Indicator)` to merchant via Directory Server
-6. **Authorization:** Merchant submits transaction with AV/ECI to acquirer â†’ acquirer â†’ card network â†’ issuer
+6. **Authorization:** Merchant submits transaction with AV/ECI to acquirer → acquirer → card network → issuer
 
 **3DS 2.0 vs 3DS 1.0:**
 
@@ -181,19 +181,19 @@ EMV (Europay, Mastercard, Visa) is the global standard for chip-based payment ca
 
 #### 5.4.1 EMV Transaction Flow (Chip Card at POS)
 
-1. **Card insertion/tap** â€” Card communicates with POS terminal via contact/chip interface
-2. **Application selection** â€” Card selects payment application (Visa, Mastercard, RuPay)
-3. **Terminal authentication** â€” Terminal authenticates to card (offline data authentication â€” SDA/DDA/CDA)
-4. **Cardholder verification** â€” Online PIN/Offline PIN/Signature/No CVM
-5. **Transaction authorization** â€” Card generates dynamic cryptogram using Transaction Counter (ATC), which uniquely identifies each transaction
-6. **Online/offline decision** â€” Terminal decides whether to authorize online (issuer) or offline (card's risk management)
-7. **Issuer response** â€” Online: issuer approves/declines; Offline: card approves/declines
+1. **Card insertion/tap** — Card communicates with POS terminal via contact/chip interface
+2. **Application selection** — Card selects payment application (Visa, Mastercard, RuPay)
+3. **Terminal authentication** — Terminal authenticates to card (offline data authentication — SDA/DDA/CDA)
+4. **Cardholder verification** — Online PIN/Offline PIN/Signature/No CVM
+5. **Transaction authorization** — Card generates dynamic cryptogram using Transaction Counter (ATC), which uniquely identifies each transaction
+6. **Online/offline decision** — Terminal decides whether to authorize online (issuer) or offline (card's risk management)
+7. **Issuer response** — Online: issuer approves/declines; Offline: card approves/declines
 
 #### 5.4.2 EMV Security Features
 
 | Feature | Description | Benefit |
 |---------|-------------|---------|
-| **Dynamic Data** | Each transaction generates a unique cryptogram (Application Cryptogram) using ATC | Dynamic data cannot be reused â€” prevents magstripe replay attacks |
+| **Dynamic Data** | Each transaction generates a unique cryptogram (Application Cryptogram) using ATC | Dynamic data cannot be reused — prevents magstripe replay attacks |
 | **ATC (Application Transaction Counter)** | Incrementing counter tracked by card and issuer | Prevents transaction cloning |
 | **Offline Data Authentication (SDA/DDA/CDA)** | Card proves its authenticity to terminal without issuer connectivity | Prevents counterfeit cards |
 | **Cardholder Verification Methods (CVM)** | Online PIN, Offline PIN, Signature, No CVM (contactless < limit) | Verifies cardholder at POS |
@@ -204,7 +204,7 @@ EMV (Europay, Mastercard, Visa) is the global standard for chip-based payment ca
 | Feature | Magnetic Stripe | EMV Chip |
 |---------|----------------|----------|
 | Data | Static (same data each swipe) | Dynamic (unique cryptogram each transaction) |
-| Cloning | Easy â€” skimmer reads and copies magstripe data | Extremely difficult â€” dynamic data makes cloning useless |
+| Cloning | Easy — skimmer reads and copies magstripe data | Extremely difficult — dynamic data makes cloning useless |
 | Counterfeit risk | Very high | Very low |
 | Offline capability | None | Full offline support (SDA/DDA) |
 | Co-existence | Often has chip as well | Chip required; magstripe may also be present |
@@ -212,7 +212,7 @@ EMV (Europay, Mastercard, Visa) is the global standard for chip-based payment ca
 
 ### 5.5 Tokenization
 
-Tokenization replaces sensitive payment data (PAN â€” Primary Account Number) with a non-sensitive surrogate value (token) that has no exploitable value.
+Tokenization replaces sensitive payment data (PAN — Primary Account Number) with a non-sensitive surrogate value (token) that has no exploitable value.
 
 #### 5.5.1 Card-on-File (CoF) Tokenization (RBI Mandate)
 
@@ -225,13 +225,13 @@ As per RBI circular (2021, effective 2022), card issuers must provide tokenizati
 4. Issuer validates and network generates a **card-on-file token** specific to:
    - Card PAN + Token Requestor (Merchant) + Device
 5. Network returns token to merchant (token replaces PAN)
-6. Merchant stores token â†’ can initiate recurring/one-click payments
+6. Merchant stores token → can initiate recurring/one-click payments
 7. For subsequent transactions: merchant submits token (not PAN) to acquirer
 8. Network maps token back to PAN for issuer processing
 
 **Token characteristics:**
 - **Scope:** Bound to combination of (PAN, Token Requestor, Device)
-- **Format:** Same format as PAN (16-digit numeric) â€” merchants can use existing systems
+- **Format:** Same format as PAN (16-digit numeric) — merchants can use existing systems
 - **Value:** Cannot be used at another merchant (even if token is breached)
 - **De-tokenization:** Only the token service provider can map token back to PAN
 
@@ -247,7 +247,7 @@ flowchart LR
     subgraph Payment[Payment with Token]
         DB -->|"6. Submit Token"| A["Acquirer"]
         A -->|"7. Token + Transaction"| N
-        N -->|"8. De-tokenize â†’ PAN"| I
+        N -->|"8. De-tokenize → PAN"| I
         I -->|"9. Auth/Decline"| N
         N -->|"10. Response"| A
         A -->|"11. Response"| M
@@ -265,7 +265,7 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 2. Wallet provider requests device token from card network token service
 3. Token is provisioned to **Secure Element** (hardware chip on phone) or TEE
 4. **Device token** is bound to: Card + Device (specific phone) + Wallet Provider
-5. At POS: Terminal reads device token via NFC â†’ token sent to acquirer â†’ network de-tokenizes to PAN â†’ issuer processes
+5. At POS: Terminal reads device token via NFC → token sent to acquirer → network de-tokenizes to PAN → issuer processes
 
 **Token Types Comparison:**
 
@@ -285,7 +285,7 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 - **Definition:** Tamper-resistant hardware chip that securely stores and processes sensitive data (payment credentials, cryptographic keys)
 - **Form Factors:**
   - **Embedded SE (eSE):** Soldered onto device motherboard (e.g., iPhone's SE chip)
-  - **SIM-based SE:** Stored on UICC (SIM card) â€” used by some Android OEMs
+  - **SIM-based SE:** Stored on UICC (SIM card) — used by some Android OEMs
   - **MicroSD SE:** Removable (legacy, rare)
 - **Features:** Dedicated CPU + memory + crypto accelerator; physically isolated from main processor; certified against Common Criteria EAL5+ / FIPS 140-2 Level 3
 - **Use Cases:** Mobile payments (Apple Pay, Google Pay), eSIM, digital identity
@@ -300,14 +300,14 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 
 | Feature | Secure Element | TEE |
 |---------|---------------|-----|
-| Hardware isolation | Separate chip | Same CPU (isolated mode â€” secure world) |
+| Hardware isolation | Separate chip | Same CPU (isolated mode — secure world) |
 | Security level | EAL5+ / FIPS 140-2 L3 | EAL2+ / FIPS 140-1 L1 |
 | Storage | Secure on-chip memory | Secure memory (encrypted, isolated) |
 | Flexibility | Limited (firmware + applets) | High (TAs can be updated) |
 | Cost | Higher (dedicated hardware) | Lower (uses existing SoC) |
 | Performance | Slower (separate CPU) | Fast (same CPU, higher clock) |
 
-### 5.7 Mobile Banking Security â€” OWASP Mobile Top 10
+### 5.7 Mobile Banking Security — OWASP Mobile Top 10
 
 | ID | Risk | Description | Banking Relevance |
 |----|------|-------------|------------------|
@@ -323,12 +323,12 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 | **M10** | Extraneous Functionality | Test APIs, debug code, hidden backdoors left in production | Unintended privileged operations |
 
 **Banking-specific mobile security measures:**
-- **Root/Jailbreak detection** â€” prevent app running on compromised devices
-- **SSL Pinning** â€” prevent MITM even with installed interception certificates
-- **Runtime Application Self-Protection (RASP)** â€” detect hooking/tampering at runtime
-- **App Attestation** â€” prove app integrity to backend (Android Play Integrity API, iOS DeviceCheck)
-- **Session timeout** â€” auto-logout after 5â€“10 min idle
-- **Transaction signing** â€” sensitive transactions require re-authentication
+- **Root/Jailbreak detection** — prevent app running on compromised devices
+- **SSL Pinning** — prevent MITM even with installed interception certificates
+- **Runtime Application Self-Protection (RASP)** — detect hooking/tampering at runtime
+- **App Attestation** — prove app integrity to backend (Android Play Integrity API, iOS DeviceCheck)
+- **Session timeout** — auto-logout after 5–10 min idle
+- **Transaction signing** — sensitive transactions require re-authentication
 
 ### 5.8 UPI Security Architecture
 
@@ -338,8 +338,8 @@ Unified Payments Interface (UPI) is an India-origin real-time payment system dev
 
 | Entity | Role | Examples |
 |--------|------|----------|
-| **NPCI** | Central operator â€” manages UPI infrastructure, settlement | NPCI |
-| **PSP** | Payment Service Provider â€” provides UPI app to end users | Google Pay, PhonePe, Paytm, BHIM |
+| **NPCI** | Central operator — manages UPI infrastructure, settlement | NPCI |
+| **PSP** | Payment Service Provider — provides UPI app to end users | Google Pay, PhonePe, Paytm, BHIM |
 | **Issuer Bank** | Bank where sender's account is held | SBI, HDFC, ICICI |
 | **Acquirer Bank** | Bank where recipient's account is held | SBI, HDFC, ICICI |
 | **NPCI Interface** | Central switch routing UPI messages | NPCI UPI Switch |
@@ -348,12 +348,12 @@ Unified Payments Interface (UPI) is an India-origin real-time payment system dev
 
 | Security Feature | Description |
 |-----------------|-------------|
-| **UPI PIN** | 4â€“6 digit PIN set during registration; required for every transaction; never stored on phone (only hash stored on NPCI server) |
+| **UPI PIN** | 4–6 digit PIN set during registration; required for every transaction; never stored on phone (only hash stored on NPCI server) |
 | **UPI MPIN** | Login PIN for app access (different from transaction PIN) |
 | **Device Binding** | UPI credential bound to device ID + IMEI; new device requires re-registration |
-| **Approve/Reject** | Transaction flows via PSP app â€” user must enter UPI PIN to authorize |
-| **Unique UPI ID** | VPA (Virtual Payment Address) â€” user@bank; no bank account number shared with payer |
-| **Limits** | Default â‚¹1 lakh/transaction; daily cumulative â‚¹1 lakh (configurable) |
+| **Approve/Reject** | Transaction flows via PSP app — user must enter UPI PIN to authorize |
+| **Unique UPI ID** | VPA (Virtual Payment Address) — user@bank; no bank account number shared with payer |
+| **Limits** | Default ₹1 lakh/transaction; daily cumulative ₹1 lakh (configurable) |
 | **End-to-end encryption** | UPI PIN encrypted at device level using RSA/OAEP; message integrity via HMAC |
 | **Two-factor authentication** | Mobile device (something you have) + UPI PIN (something you know) |
 
@@ -363,11 +363,11 @@ Unified Payments Interface (UPI) is an India-origin real-time payment system dev
 2. **PSP (Payer)** forwards request to NPCI with transaction details
 3. **NPCI** resolves VPA to payee's bank account via issuer/acquirer mapping
 4. **NPCI** sends payment request to PSP (Payee)
-5. **PSP (Payee)** checks if payee exists â†’ sends acknowledgment
+5. **PSP (Payee)** checks if payee exists → sends acknowledgment
 6. **NPCI** sends collect request to payer's PSP
 7. **Payer's PSP** presents transaction details to payer (amount, payee name)
-8. **Payer** enters UPI PIN â†’ PSP encrypts PIN and sends to NPCI
-9. **NPCI** validates PIN (against HSM-stored PIN hash) â†’ initiates debit from payer's account via issuer
+8. **Payer** enters UPI PIN → PSP encrypts PIN and sends to NPCI
+9. **NPCI** validates PIN (against HSM-stored PIN hash) → initiates debit from payer's account via issuer
 10. **NPCI** sends credit to payee's account via acquirer
 11. **Both parties** receive notification: success/failure
 
@@ -375,7 +375,7 @@ Unified Payments Interface (UPI) is an India-origin real-time payment system dev
 
 | Fraud Type | Description | Prevention |
 |------------|-------------|------------|
-| **SIM Swap** | Attacker gets duplicate SIM â†’ intercepts SMS OTP | Carrier alerts, biometric re-verification |
+| **SIM Swap** | Attacker gets duplicate SIM → intercepts SMS OTP | Carrier alerts, biometric re-verification |
 | **VPA Spoofing** | Fake VPA resembling legitimate (bank.sbi vs bank_sbi) | VPA display with full identity verification |
 | **Collect Request Fraud** | Attacker sends collect request to unsuspecting user | User must verify payee name before approving |
 | **Social Engineering** | Attacker calls posing as bank, tricks user into sending money | User education, never share OTP/PIN |
@@ -406,37 +406,37 @@ sequenceDiagram
 
 | Technique | Description | Example |
 |-----------|-------------|---------|
-| **Rules Engine** | Predefined business rules flagging suspicious patterns | "If amount > â‚¹50,000 and device country != account country â†’ HOLD" |
-| **Velocity Checks** | Detect abnormal frequency of transactions | ">10 transactions from same device in 5 minutes â†’ BLOCK" |
-| **Geolocation analysis** | Impossible travel / location mismatch | "Transaction from Mumbai, then Delhi within 10 minutes â†’ BLOCK" |
-| **Device Fingerprinting** | Collect device characteristics (OS, browser, IP, screen resolution, installed fonts) to identify devices | "Device ID associated with fraud history â†’ BLOCK" |
-| **Behavioral Biometrics** | Analyze user interaction patterns (typing speed, swiping pressure, mouse movements) | "Unusual typing rhythm for this user â†’ STEP-UP AUTH" |
-| **Machine Learning Models** | Supervised models (Random Forest, XGBoost) trained on historical fraud data | 'Predict fraud probability > 0.85 â†’ "BLOCK / REVIEW" |
-| **Graph Analysis** | Analyze relationships between accounts, devices, IPs | "2 devices linked to 50 accounts â†’ SYNDICATE ALERT" |
-| **Sequence Analysis** | Detect patterns in transaction sequences | "Small test transaction â†’ large transfer â†’ ACCOUNT COMPROMISE" |
+| **Rules Engine** | Predefined business rules flagging suspicious patterns | "If amount > ₹50,000 and device country != account country → HOLD" |
+| **Velocity Checks** | Detect abnormal frequency of transactions | ">10 transactions from same device in 5 minutes → BLOCK" |
+| **Geolocation analysis** | Impossible travel / location mismatch | "Transaction from Mumbai, then Delhi within 10 minutes → BLOCK" |
+| **Device Fingerprinting** | Collect device characteristics (OS, browser, IP, screen resolution, installed fonts) to identify devices | "Device ID associated with fraud history → BLOCK" |
+| **Behavioral Biometrics** | Analyze user interaction patterns (typing speed, swiping pressure, mouse movements) | "Unusual typing rhythm for this user → STEP-UP AUTH" |
+| **Machine Learning Models** | Supervised models (Random Forest, XGBoost) trained on historical fraud data | 'Predict fraud probability > 0.85 → "BLOCK / REVIEW" |
+| **Graph Analysis** | Analyze relationships between accounts, devices, IPs | "2 devices linked to 50 accounts → SYNDICATE ALERT" |
+| **Sequence Analysis** | Detect patterns in transaction sequences | "Small test transaction → large transfer → ACCOUNT COMPROMISE" |
 
 #### 5.9.2 Fraud Detection Architecture (Real-time)
 
 ```
 Transaction                         Rules          Decision
-   â”‚                                Engine         Engine
-   â–¼                                  â”‚              â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”´â”€â”€â”€â”€â”
-â”‚Frontend  â”‚â”€â”€â”€â–¶â”‚ Risk API â”‚â”€â”€â”€â–¶â”‚ Rule + ML  â”‚â”€â”€â”€â–¶â”‚Approveâ”‚
-â”‚(PSP App) â”‚    â”‚ Gateway  â”‚    â”‚ Evaluator  â”‚    â”‚Hold   â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜    â”‚Block  â”‚
-                                      â”‚              â””â”€â”€â”¬â”€â”€â”€â”€â”˜
-                               â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”          â”‚
-                               â”‚ Real-time    â”‚          â”‚
-                               â”‚ Feature Storeâ”‚â—€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                               â”‚ (Redis)      â”‚
-                               â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
-                                      â”‚
-                               â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
-                               â”‚ Historical   â”‚
-                               â”‚ ML Model     â”‚
-                               â”‚ (Batch)      â”‚
-                               â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+   │                                Engine         Engine
+   ▼                                  │              │
+┌──────────┐    ┌──────────┐    ┌─────┴──────┐    ┌──┴────┐
+│Frontend  │───▶│ Risk API │───▶│ Rule + ML  │───▶│Approve│
+│(PSP App) │    │ Gateway  │    │ Evaluator  │    │Hold   │
+└──────────┘    └──────────┘    └─────┬──────┘    │Block  │
+                                      │              └──┬────┘
+                               ┌──────┴──────┐          │
+                               │ Real-time    │          │
+                               │ Feature Store│◀─────────┘
+                               │ (Redis)      │
+                               └──────┬──────┘
+                                      │
+                               ┌──────┴──────┐
+                               │ Historical   │
+                               │ ML Model     │
+                               │ (Batch)      │
+                               └─────────────┘
 ```
 
 ### 5.10 Biometric Authentication in Banking
@@ -452,8 +452,8 @@ Transaction                         Rules          Decision
 | **Behavioral** (keystroke, gait) | Behavioral | Continuous authentication | 0.5% | 5% |
 
 **Biometric Performance Metrics:**
-- **FAR (False Acceptance Rate):** Imposter biometric wrongly accepted â€” lower is more secure
-- **FRR (False Rejection Rate):** Legitimate user wrongly rejected â€” lower is more user-friendly
+- **FAR (False Acceptance Rate):** Imposter biometric wrongly accepted — lower is more secure
+- **FRR (False Rejection Rate):** Legitimate user wrongly rejected — lower is more user-friendly
 - **EER (Equal Error Rate):** Where FAR = FRR (lower EER = better biometric)
 
 #### 5.10.2 Biometric Security Considerations
@@ -497,7 +497,7 @@ D) It does not require internet connectivity
 
 **Answer: B) It supports risk-based authentication for frictionless flow**
 
-**Explanation:** 3DS 2.0's key advantage is risk-based authentication â€” the issuer can silently authenticate low-risk transactions (based on device fingerprinting, transaction history, behavioral data) without requiring any cardholder interaction (frictionless flow). 3DS 1.0 required the cardholder to enter a static password for every transaction, causing significant friction and cart abandonment.
+**Explanation:** 3DS 2.0's key advantage is risk-based authentication — the issuer can silently authenticate low-risk transactions (based on device fingerprinting, transaction history, behavioral data) without requiring any cardholder interaction (frictionless flow). 3DS 1.0 required the cardholder to enter a static password for every transaction, causing significant friction and cart abandonment.
 </details>
 
 ---
@@ -536,7 +536,7 @@ D) Encrypted with the merchant's public key
 
 ---
 
-**Q5.** Which RBI guideline requires banks to report cyber fraud incidents within 2â€“3 hours of detection?
+**Q5.** Which RBI guideline requires banks to report cyber fraud incidents within 2–3 hours of detection?
 
 A) Master Direction on IT Governance  
 B) Cyber Security Framework  
@@ -548,7 +548,7 @@ D) Digital Payment Security Guidelines
 
 **Answer: C) Cyber Fraud Reporting Circular**
 
-**Explanation:** RBI's Cyber Fraud Reporting circular mandates that banks report cyber fraud incidents to RBI within 2â€“3 hours of detection (depending on fraud type). This enables RBI to issue timely alerts to other banks and coordinate response. The other frameworks (IT Governance, Cyber Security Framework) provide broader operational guidelines but do not specify the reporting timeline.
+**Explanation:** RBI's Cyber Fraud Reporting circular mandates that banks report cyber fraud incidents to RBI within 2–3 hours of detection (depending on fraud type). This enables RBI to issue timely alerts to other banks and coordinate response. The other frameworks (IT Governance, Cyber Security Framework) provide broader operational guidelines but do not specify the reporting timeline.
 </details>
 
 ---
@@ -565,24 +565,24 @@ D) Social engineering
 
 **Answer: B) Card skimming + cloning (card-present fraud)**
 
-**Explanation:** EMV chips generate a unique dynamic cryptogram for each transaction using the ATC (Application Transaction Counter). Even if an attacker intercepts transaction data, they cannot replay it because the cryptogram is valid only for that specific transaction (counter value). Magnetic stripe cards have static data â€” a skimmer reads the track data and can create a cloned card that works at any terminal. EMV has drastically reduced counterfeit card fraud at POS terminals.
+**Explanation:** EMV chips generate a unique dynamic cryptogram for each transaction using the ATC (Application Transaction Counter). Even if an attacker intercepts transaction data, they cannot replay it because the cryptogram is valid only for that specific transaction (counter value). Magnetic stripe cards have static data — a skimmer reads the track data and can create a cloned card that works at any terminal. EMV has drastically reduced counterfeit card fraud at POS terminals.
 </details>
 
 ---
 
 **Q7.** Which OWASP Mobile Top 10 risk is specifically concerned with runtime hooking and code modification?
 
-A) M1 â€” Improper Platform Usage  
-B) M7 â€” Client Code Quality  
-C) M8 â€” Code Tampering  
-D) M9 â€” Reverse Engineering  
+A) M1 — Improper Platform Usage  
+B) M7 — Client Code Quality  
+C) M8 — Code Tampering  
+D) M9 — Reverse Engineering  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: C) M8 â€” Code Tampering**
+**Answer: C) M8 — Code Tampering**
 
-**Explanation:** M8 (Code Tampering) covers binary patching, resource modification, method hooking (Frida, Xposed), and runtime injection. Banking apps are a common target â€” attackers modify the app to bypass SSL pinning, disable root detection, or intercept UPI PIN entry. M9 (Reverse Engineering) covers static analysis (decompilation) rather than runtime manipulation. Defenses include RASP (Runtime Application Self-Protection), integrity checks, and obfuscation.
+**Explanation:** M8 (Code Tampering) covers binary patching, resource modification, method hooking (Frida, Xposed), and runtime injection. Banking apps are a common target — attackers modify the app to bypass SSL pinning, disable root detection, or intercept UPI PIN entry. M9 (Reverse Engineering) covers static analysis (decompilation) rather than runtime manipulation. Defenses include RASP (Runtime Application Self-Protection), integrity checks, and obfuscation.
 </details>
 
 ---
@@ -599,7 +599,7 @@ D) Only ATM withdrawals
 
 **Answer: B) All card-not-present transactions (domestic)**
 
-**Explanation:** RBI mandates AFA (Additional Factor of Authentication) for all domestic CNP (card-not-present) transactions â€” typically OTP sent to registered mobile number. This is a key difference from many other countries where CNP transactions often require only CVV. International CNP transactions follow local regulations (often no AFA requirement outside India). Card-present transactions (POS) use EMV chip + PIN.
+**Explanation:** RBI mandates AFA (Additional Factor of Authentication) for all domestic CNP (card-not-present) transactions — typically OTP sent to registered mobile number. This is a key difference from many other countries where CNP transactions often require only CVV. International CNP transactions follow local regulations (often no AFA requirement outside India). Card-present transactions (POS) use EMV chip + PIN.
 </details>
 
 ---
@@ -616,7 +616,7 @@ D) Annual Service Vendor assessment by QSA
 
 **Answer: A) Annual Security Vulnerability scan performed by Approved Scanning Vendor**
 
-**Explanation:** Requirement 11 of PCI DSS mandates quarterly external vulnerability scans by an Approved Scanning Vendor (ASV) â€” an organization approved by PCI SSC to perform external network vulnerability scanning. The ASV scans the merchant's internet-facing IP addresses against known vulnerabilities. Additionally, internal scans (quarterly) and penetration testing (annually) are required. "Annual" scans in the description refers to the annual passing requirement.
+**Explanation:** Requirement 11 of PCI DSS mandates quarterly external vulnerability scans by an Approved Scanning Vendor (ASV) — an organization approved by PCI SSC to perform external network vulnerability scanning. The ASV scans the merchant's internet-facing IP addresses against known vulnerabilities. Additionally, internal scans (quarterly) and penetration testing (annually) are required. "Annual" scans in the description refers to the annual passing requirement.
 </details>
 
 ---
@@ -633,12 +633,12 @@ D) Voice recognition
 
 **Answer: C) DNA sequencing**
 
-**Explanation:** DNA sequencing is not used in banking authentication due to (1) processing time (minutes/hours â€” not real-time), (2) invasive collection requirement (blood/saliva), (3) ethical/privacy concerns, and (4) cost. Standard biometric modalities in banking are: fingerprint (POS, ATM, mobile), iris (ATM, cardless cash), face (mobile banking), voice (call center), and behavioral (continuous authentication).
+**Explanation:** DNA sequencing is not used in banking authentication due to (1) processing time (minutes/hours — not real-time), (2) invasive collection requirement (blood/saliva), (3) ethical/privacy concerns, and (4) cost. Standard biometric modalities in banking are: fingerprint (POS, ATM, mobile), iris (ATM, cardless cash), face (mobile banking), voice (call center), and behavioral (continuous authentication).
 </details>
 
 ---
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **Q1.** According to PCI DSS Requirement 10, how long must audit logs be retained?
 
@@ -704,7 +704,7 @@ D) Payment and Settlement Systems Act (2007)
 - Tokens must be bound to (PAN + Token Requestor + Device) combination
 - Card networks must provide de-tokenization services for transaction processing
 
-This significantly reduces the impact of merchant data breaches â€” stolen tokens are worthless outside the specific merchant-device context. Non-compliance can result in penalties and suspension of card processing privileges.
+This significantly reduces the impact of merchant data breaches — stolen tokens are worthless outside the specific merchant-device context. Non-compliance can result in penalties and suspension of card processing privileges.
 </details>
 
 ---
@@ -739,42 +739,42 @@ This is the key security difference from magnetic stripe (which uses static data
 
 **Q5.** What is the maximum UPI transaction limit for capital market transactions?
 
-A) â‚¹1 lakh  
-B) â‚¹2 lakh  
-C) â‚¹5 lakh  
-D) â‚¹15 lakh
+A) ₹1 lakh  
+B) ₹2 lakh  
+C) ₹5 lakh  
+D) ₹15 lakh
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) â‚¹2 lakh**
+**Answer: B) ₹2 lakh**
 
 **Explanation:** As per RBI's UPI transaction limits (as of 2025):
 | Category | Limit |
 |----------|-------|
-| Default UPI | â‚¹1 lakh |
-| Capital markets (IPO, stock) | â‚¹2 lakh |
-| Medical/education | â‚¹5 lakh |
-| IPO applications | â‚¹5 lakh |
-| Tax payments | â‚¹5 lakh |
-| UPI for internet banking (certain transactions) | â‚¹15 lakh |
+| Default UPI | ₹1 lakh |
+| Capital markets (IPO, stock) | ₹2 lakh |
+| Medical/education | ₹5 lakh |
+| IPO applications | ₹5 lakh |
+| Tax payments | ₹5 lakh |
+| UPI for internet banking (certain transactions) | ₹15 lakh |
 
-The standard â‚¹1 lakh per transaction limit can be increased by the user's PSP/bank based on risk profile and transaction history. These limits help mitigate fraud while enabling legitimate larger payments.
+The standard ₹1 lakh per transaction limit can be increased by the user's PSP/bank based on risk profile and transaction history. These limits help mitigate fraud while enabling legitimate larger payments.
 </details>
 
 ---
 
 **Q6.** In PCI DSS 4.0, which requirement addresses encryption of cardholder data at rest?
 
-A) Requirement 2 â€” No vendor default passwords  
-B) Requirement 3 â€” Protect stored cardholder data  
-C) Requirement 4 â€” Encrypt transmission of cardholder data  
-D) Requirement 7 â€” Restrict access by need-to-know
+A) Requirement 2 — No vendor default passwords  
+B) Requirement 3 — Protect stored cardholder data  
+C) Requirement 4 — Encrypt transmission of cardholder data  
+D) Requirement 7 — Restrict access by need-to-know
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) Requirement 3 â€” Protect stored cardholder data**
+**Answer: B) Requirement 3 — Protect stored cardholder data**
 
 **Explanation:** PCI DSS Requirement 3 mandates:
 - PAN must be rendered unreadable anywhere it's stored (one-way hash, truncation, index token, or strong cryptography)
@@ -801,31 +801,31 @@ D) Easier software updates
 **Answer: B) Dedicated tamper-resistant hardware chip (EAL5+)**
 
 **Explanation:** Secure Element is a separate hardware chip with:
-- **Dedicated CPU, memory, and crypto accelerator** â€” completely isolated from main processor
-- **Common Criteria EAL5+** certification â€” highest for consumer devices
+- **Dedicated CPU, memory, and crypto accelerator** — completely isolated from main processor
+- **Common Criteria EAL5+** certification — highest for consumer devices
 - **Tamper resistance:** Glue logic, shield layers, environmental sensors detect physical attacks
 - **Secure storage:** Keys never leave the SE
 
-TEE (ARM TrustZone) runs on the same CPU (secure world vs normal world) â€” lower isolation level (EAL2+). TEE is cheaper and more flexible but less secure against physical attacks. Payment credentials are ideally stored in SE (Apple Pay uses the device's Secure Enclave).
+TEE (ARM TrustZone) runs on the same CPU (secure world vs normal world) — lower isolation level (EAL2+). TEE is cheaper and more flexible but less secure against physical attacks. Payment credentials are ideally stored in SE (Apple Pay uses the device's Secure Enclave).
 </details>
 
 ---
 
 **Q8.** What is the maximum contactless transaction limit without PIN in India (as per RBI)?
 
-A) â‚¹2,000  
-B) â‚¹5,000  
-C) â‚¹10,000  
+A) ₹2,000  
+B) ₹5,000  
+C) ₹10,000  
 D) No limit
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) â‚¹5,000**
+**Answer: B) ₹5,000**
 
-**Explanation:** RBI increased the contactless (tap-and-pay) limit to â‚¹5,000 per transaction without requiring PIN during COVID, and it has remained the standard. Below â‚¹5,000: tap card â†’ terminal beeps â†’ transaction complete (no PIN). Above â‚¹5,000: cardholder must enter PIN regardless of contactless capability.
+**Explanation:** RBI increased the contactless (tap-and-pay) limit to ₹5,000 per transaction without requiring PIN during COVID, and it has remained the standard. Below ₹5,000: tap card → terminal beeps → transaction complete (no PIN). Above ₹5,000: cardholder must enter PIN regardless of contactless capability.
 
-The limit balances convenience (quick small payments) with security (PIN required for larger amounts). Note that this is a per-transaction limit â€” there's no daily cumulative limit on contactless payments. Merchants can set lower limits based on their risk appetite.
+The limit balances convenience (quick small payments) with security (PIN required for larger amounts). Note that this is a per-transaction limit — there's no daily cumulative limit on contactless payments. Merchants can set lower limits based on their risk appetite.
 </details>
 
 ---
@@ -846,7 +846,7 @@ D) The merchant's public key
 1. User enters PIN in PSP app
 2. PIN is encrypted on-device using **NPCI's public key** with RSA-OAEP (Optimal Asymmetric Encryption Padding)
 3. Encrypted PIN sent to NPCI (not to PSP)
-4. NPCI decrypts using HSM (Hardware Security Module) â€” PIN never in plaintext outside NPCI
+4. NPCI decrypts using HSM (Hardware Security Module) — PIN never in plaintext outside NPCI
 5. NPCI validates PIN against stored hash (PIN hash stored in HSM)
 
 **Key security properties:**
@@ -854,7 +854,7 @@ D) The merchant's public key
 - PIN encrypted before leaving device
 - PIN never stored on device
 - Multiple incorrect PIN attempts block the credential
-- PIN is device-bound â€” changing device requires re-registration
+- PIN is device-bound — changing device requires re-registration
 
 This is different from card PIN (which is verified offline by the chip or encrypted with the issuer's key).
 </details>
@@ -863,15 +863,15 @@ This is different from card PIN (which is verified offline by the chip or encryp
 
 **Q10.** Which OWASP Mobile Top 10 risk is addressed by implementing SSL Pinning in a mobile banking app?
 
-A) M2 â€” Insecure Data Storage  
-B) M3 â€” Insecure Communication  
-C) M4 â€” Insecure Authentication  
-D) M5 â€” Insufficient Cryptography
+A) M2 — Insecure Data Storage  
+B) M3 — Insecure Communication  
+C) M4 — Insecure Authentication  
+D) M5 — Insufficient Cryptography
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) M3 â€” Insecure Communication**
+**Answer: B) M3 — Insecure Communication**
 
 **Explanation:** M3 (Insecure Communication) covers:
 - No TLS or weak TLS
@@ -927,10 +927,10 @@ D) 87.5%
 
 **Answer: C) 75%**
 
-**Formula:** RAID 6 efficiency = (N âˆ’ 2) / N where N = number of disks
+**Formula:** RAID 6 efficiency = (N − 2) / N where N = number of disks
 
 **Calculation:**
-- Efficiency = (8 âˆ’ 2) / 8 = 6/8 = 75%
+- Efficiency = (8 − 2) / 8 = 6/8 = 75%
 - Usable capacity = 75% of total raw capacity
 - Two disks worth of capacity used for dual parity
 - Tolerates up to 2 simultaneous disk failures
@@ -994,7 +994,7 @@ D) Within 90 days
 - Anti-malware must be kept current (regular updates)
 - Custom code must be reviewed for vulnerabilities (manual/automated) before release
 
-The 30-day critical patch window balances security with stability â€” some patches need testing before production deployment.
+The 30-day critical patch window balances security with stability — some patches need testing before production deployment.
 </details>
 
 ---
@@ -1040,11 +1040,11 @@ D) Checking the velocity of card swiping
 **Answer: B) Detecting abnormal frequency of transactions from the same entity**
 
 **Explanation:** Velocity checks monitor transaction rates for patterns indicative of fraud:
-- **IP velocity:** >10 transactions from same IP in 5 minutes â†’ possible automated attack
-- **Card velocity:** Same card used at 50 different merchants in 1 hour â†’ card testing
-- **Device velocity:** Same device ID with 100 different cards â†’ synthetic identity fraud
-- **Account velocity:** 20 failed login attempts from different IPs â†’ credential stuffing
-- **Amount velocity:** Multiple transactions just below reporting threshold â†’ structuring (smurfing)
+- **IP velocity:** >10 transactions from same IP in 5 minutes → possible automated attack
+- **Card velocity:** Same card used at 50 different merchants in 1 hour → card testing
+- **Device velocity:** Same device ID with 100 different cards → synthetic identity fraud
+- **Account velocity:** 20 failed login attempts from different IPs → credential stuffing
+- **Amount velocity:** Multiple transactions just below reporting threshold → structuring (smurfing)
 
 Velocity rules are typically configurable and tuned per merchant/industry. They're a key component of real-time fraud scoring engines alongside ML models and rules.
 </details>
@@ -1094,7 +1094,7 @@ D) SDA requires online connection; DDA works offline
 
 **Explanation:** 
 - **SDA (Static Data Authentication):** Terminal reads a static signed certificate from the chip. Verifies against CA public key. **Vulnerability:** Cloning possible if the signed data is copied to a different card (no proof it's the same chip).
-- **DDA (Dynamic Data Authentication):** Terminal sends a random challenge to the chip. Chip signs the challenge with its unique private key. Terminal verifies using the chip's public key (from the certificate). **Proves the chip possesses the private key** â€” cloning requires extracting the private key (infeasible if stored in SE).
+- **DDA (Dynamic Data Authentication):** Terminal sends a random challenge to the chip. Chip signs the challenge with its unique private key. Terminal verifies using the chip's public key (from the certificate). **Proves the chip possesses the private key** — cloning requires extracting the private key (infeasible if stored in SE).
 
 - **CDA (Combined DDA):** Combines DDA with application cryptogram generation in a single operation (fastest).
 
@@ -1118,7 +1118,7 @@ D) Attacker clones the UPI app
 **Explanation:** UPI collect request attack flow:
 1. Attacker generates a collect payment request to the victim's VPA
 2. The request shows a fake payee name (e.g., "Electricity Board" or "Friend Name")
-3. Victim sees the notification: "Pay â‚¹15,000 to Electricity Board?"
+3. Victim sees the notification: "Pay ₹15,000 to Electricity Board?"
 4. Victim assumes it's a legitimate bill payment and approves entering UPI PIN
 5. Money is transferred to the attacker
 
@@ -1149,9 +1149,9 @@ D) The card's expiry date
 **Explanation:** ECI indicates the authentication level to the acquirer/issuer for liability shift decisions:
 
 **Visa ECI values:**
-- **05:** Fully authenticated (3DS 2.0 frictionless or challenge passed) â†’ Liability shift from merchant to issuer
-- **06:** Attempted authentication (merchant attempted but issuer/bank not 3DS-enabled) â†’ Partial liability shift
-- **07:** No authentication (merchant did not attempt 3DS) â†’ Merchant liable for chargebacks
+- **05:** Fully authenticated (3DS 2.0 frictionless or challenge passed) → Liability shift from merchant to issuer
+- **06:** Attempted authentication (merchant attempted but issuer/bank not 3DS-enabled) → Partial liability shift
+- **07:** No authentication (merchant did not attempt 3DS) → Merchant liable for chargebacks
 
 **Mastercard ECI (now UCAF/AAV):**
 - **02:** Authentication performed
@@ -1546,7 +1546,7 @@ const testTransactions: ThreeDSRequest[] = [
 ];
 
 for (const txn of testTransactions) {
-  console.log(`\n=== 3DS 2.0 Auth: â‚¹${txn.amount} at ${txn.merchantId} ===`);
+  console.log(`\n=== 3DS 2.0 Auth: ₹${txn.amount} at ${txn.merchantId} ===`);
   const result = simulator.authenticate(txn);
   console.log(`Flow: ${result.flowType}`);
   console.log(`Status: ${result.status} (ECI: ${result.eci})`);
@@ -1577,45 +1577,45 @@ sequenceDiagram
     Acquirer->>Acquirer: Credit to receiver account
     Acquirer->>NPCI: Credit Confirmed
     NPCI->>PSP: Transaction Success (UTR: NPCI123456)
-    PSP->>User: âœ… Payment Successful
+    PSP->>User: ✅ Payment Successful
     Note over User,Acquirer: Total: &lt; 5 seconds, end-to-end encrypted
 ```
 
 ### Modern Banking Security Technologies
 
-**1. FIDO2 / WebAuthn â€” Passwordless Authentication:**
+**1. FIDO2 / WebAuthn — Passwordless Authentication:**
 - Uses public-key cryptography for passwordless login
-- User registers biometric or PIN on device â†’ device generates key pair
+- User registers biometric or PIN on device → device generates key pair
 - Private key stored in TEE/SE, never leaves device
-- Server stores public key â†’ authenticates via challenge-response
+- Server stores public key → authenticates via challenge-response
 - Phishing-resistant (credentials bound to specific origin)
 
 **2. Tokenized Mobile Wallets (Apple Pay, Google Pay):**
 - Device-specific PAN (DPAN) provisioned to Secure Element
 - Dynamic cryptogram per transaction (EMV tokenization)
 - Biometric verification (Face ID, fingerprint) before payment
-- Works offline (NFC + SE) â€” no network needed for payment
+- Works offline (NFC + SE) — no network needed for payment
 
 **3. UPI AutoPay (Recurring Payments):**
 - eMandate-based recurring payments
 - One-time UPI PIN approval for mandate setup
 - Pre-debit notification before each charge
-- Maximum â‚¹15,000 per debit (or as configured)
+- Maximum ₹15,000 per debit (or as configured)
 - Revocable anytime via PSP app
 
 **4. Account Aggregator (AA) Framework (India):**
 - RBI-regulated data sharing framework
 - Users consent to share financial data (bank, tax, investments) with FIPs
-- No credential sharing â€” consent-based tokenized access
+- No credential sharing — consent-based tokenized access
 - Uses artifacts (not passwords) for API authentication
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 **Q1.** List the 12 PCI DSS requirements grouped by their 6 goals. Which requirement is most commonly violated?
 
 **Q2.** In 3D Secure 2.0, explain the difference between frictionless flow and challenge flow. What risk score thresholds trigger each?
 
-**Q3.** A customer disputes a â‚¹80,000 UPI transaction. According to RBI's zero liability policy, under what conditions is the customer NOT liable?
+**Q3.** A customer disputes a ₹80,000 UPI transaction. According to RBI's zero liability policy, under what conditions is the customer NOT liable?
 
 **Q4.** Calculate the token storage overhead: A bank issues tokens for 10 million cards. Each token record is 256 bytes. Merchant A has 500,000 tokens. What is the storage required? How does this compare to storing PANs directly?
 
@@ -1623,13 +1623,13 @@ sequenceDiagram
 
 **Q6.** Explain how device tokenization (Apple Pay) differs from card-on-file tokenization in terms of: where the token is stored, what key protects it, and the transaction flow at POS.
 
-**Q7.** A bank's mobile app detects root access on the user's phone. What actions should the app take to comply with OWASP Mobile Top 10 (M8 â€” Code Tampering)?
+**Q7.** A bank's mobile app detects root access on the user's phone. What actions should the app take to comply with OWASP Mobile Top 10 (M8 — Code Tampering)?
 
 **Q8.** For the OWASP Mobile Top 10, list the top 5 risks most relevant to mobile banking apps and describe one mitigation for each.
 
 **Q9.** In a fraud detection system, compare rules engine vs ML model for: detection speed, ability to detect new fraud patterns, false positive rate, and maintenance effort.
 
-**Q10.** UPI transaction flow: Trace the complete path for a â‚¹5,000 payment from Payer A (ICICI Bank) to Payee B (SBI Bank) via Google Pay. Include all entities and the UPI PIN encryption details.
+**Q10.** UPI transaction flow: Trace the complete path for a ₹5,000 payment from Payer A (ICICI Bank) to Payee B (SBI Bank) via Google Pay. Include all entities and the UPI PIN encryption details.
 
 **Q11.** What is the RBI's mandate on "Additional Factor of Authentication (AFA)" for domestic CNP transactions? What constitutes valid AFA?
 
@@ -1678,63 +1678,63 @@ sequenceDiagram
 
 **A1.** Goal 1 (Build Secure Network): R1 (firewalls), R2 (no default passwords). Goal 2 (Protect Data): R3 (encrypt at rest), R4 (encrypt in transit). Goal 3 (Vulnerability Mgmt): R5 (anti-malware), R6 (patch mgmt). Goal 4 (Access Control): R7 (need-to-know), R8 (unique IDs), R9 (physical). Goal 5 (Monitor): R10 (logging), R11 (testing). Goal 6 (Policy): R12 (security policy). Most commonly violated: R3 (storing sensitive auth data) and R7 (over-privileged accounts).
 
-**A2.** Frictionless: score â‰¤30, no user interaction, ECI 05, ~80-95% of transactions. Challenge: score >30, user must authenticate (OTP, biometric, in-app). Very high risk: transaction declined (ECI 07). Thresholds vary by issuer â€” typically 30-50 for low, 50-75 for medium, 75+ for high.
+**A2.** Frictionless: score ≤30, no user interaction, ECI 05, ~80-95% of transactions. Challenge: score >30, user must authenticate (OTP, biometric, in-app). Very high risk: transaction declined (ECI 07). Thresholds vary by issuer — typically 30-50 for low, 50-75 for medium, 75+ for high.
 
-**A3.** Zero liability if: fraud reported within 3 working days (customer not liable). After 3 days: customer bears loss until reported to bank (limited liability â€” capped as per RBI circular). Contributory fraud (shared PIN, negligence): customer fully liable regardless of timeline. Third-party breach: zero liability.
+**A3.** Zero liability if: fraud reported within 3 working days (customer not liable). After 3 days: customer bears loss until reported to bank (limited liability — capped as per RBI circular). Contributory fraud (shared PIN, negligence): customer fully liable regardless of timeline. Third-party breach: zero liability.
 
-**A4.** Token store: 10M Ã— 256 = 2.56 GB for full token vault. Merchant A: 500K Ã— 256 = 128 MB. PANs direct: 10M Ã— 19 bytes (PAN + expiry) â‰ˆ 190 MB. Tokens take more storage due to metadata (requestor ID, device ID, timestamps, status flags). But tokens limit breach impact.
+**A4.** Token store: 10M × 256 = 2.56 GB for full token vault. Merchant A: 500K × 256 = 128 MB. PANs direct: 10M × 19 bytes (PAN + expiry) ≈ 190 MB. Tokens take more storage due to metadata (requestor ID, device ID, timestamps, status flags). But tokens limit breach impact.
 
 **A5.** AC is the encrypted output of the EMV transaction: includes ATC, transaction amount, currency, terminal data, unpredictable number. Uniqueness: each transaction has a different ATC (incrementing counter). Combined with terminal's unpredictable number, the AC is unique per transaction. Issuer verifies AC by checking ATC and re-computing expected AC.
 
-**A6.** Device tokenization: token (DPAN) stored in Secure Element/TEE on phone, protected by device biometrics. At POS: NFC reads DPAN + dynamic cryptogram â†’ sent to acquirer â†’ network de-tokenizes. Card-on-file: token stored in merchant database, bound to merchant + device. For online CNP: merchant submits token â†’ network maps to PAN. Device tokens are hardware-protected; CoF tokens are software-protected.
+**A6.** Device tokenization: token (DPAN) stored in Secure Element/TEE on phone, protected by device biometrics. At POS: NFC reads DPAN + dynamic cryptogram → sent to acquirer → network de-tokenizes. Card-on-file: token stored in merchant database, bound to merchant + device. For online CNP: merchant submits token → network maps to PAN. Device tokens are hardware-protected; CoF tokens are software-protected.
 
-**A7.** Root detection â†’ app should: (1) refuse to launch (or show warning), (2) block high-value transactions, (3) log the event for fraud analysis, (4) optionally wipe locally cached data (session tokens, keys). NEVER: store sensitive data that would be extracted from rooted device. Bank apps should use SafetyNet/Play Integrity API (Android) and DeviceCheck (iOS).
+**A7.** Root detection → app should: (1) refuse to launch (or show warning), (2) block high-value transactions, (3) log the event for fraud analysis, (4) optionally wipe locally cached data (session tokens, keys). NEVER: store sensitive data that would be extracted from rooted device. Bank apps should use SafetyNet/Play Integrity API (Android) and DeviceCheck (iOS).
 
 **A8.** M2 (Insecure Data Storage): Use Android Keystore/iOS Keychain. M3 (Insecure Communication): SSL Pinning. M4 (Insecure Auth): Biometric + PIN, short session timeout. M8 (Code Tampering): RASP + integrity checks. M9 (Reverse Engineering): Obfuscation + anti-debugging.
 
 **A9.** Rules: fast (microseconds), cannot detect new patterns (pre-defined only), low FP (if well-tuned), high maintenance (manual rule updates). ML: slightly slower (milliseconds), detects new fraud patterns (learns from data), higher FP initially (reduces with training), lower maintenance (auto-retraining). Best: hybrid (rules for known + ML for unknown).
 
-**A10.** Google Pay (PSP) â†’ NPCI (resolves VPA: payee@sbi â†’ SBI account) â†’ ICICI (debit â‚¹5000) â†’ SBI (credit â‚¹5000). UPI PIN: entered in Google Pay â†’ encrypted with NPCI RSA public key on-device â†’ sent to NPCI â†’ NPCI decrypts in HSM â†’ validates PIN hash â†’ approves transaction. UTR generated: NPCI + date + sequence.
+**A10.** Google Pay (PSP) → NPCI (resolves VPA: payee@sbi → SBI account) → ICICI (debit ₹5000) → SBI (credit ₹5000). UPI PIN: entered in Google Pay → encrypted with NPCI RSA public key on-device → sent to NPCI → NPCI decrypts in HSM → validates PIN hash → approves transaction. UTR generated: NPCI + date + sequence.
 
-**A11.** All domestic CNP transactions require AFA â€” typically OTP sent to registered mobile number. Valid AFA: OTP/SMS, biometric, hardware token, soft token (authenticator app), or in-app approval. Merchants who fail to enforce AFA bear liability for fraudulent transactions.
+**A11.** All domestic CNP transactions require AFA — typically OTP sent to registered mobile number. Valid AFA: OTP/SMS, biometric, hardware token, soft token (authenticator app), or in-app approval. Merchants who fail to enforce AFA bear liability for fraudulent transactions.
 
 **A12.** 8 KB = 8192 bytes. Number of ATC entries = 8192 / 32 = 256 transactions. In practice: 8 KB EEPROM stores card details, keys, certificates, application data, and transaction log. Typically stores last 10-15 offline transactions (for issuer reconciliation) plus ATC (2 bytes) and card parameters.
 
-**A13.** EER = Equal Error Rate = point where FAR = FRR. Lower EER = more accurate biometric. EER for fingerprint â‰ˆ 0.5%, face â‰ˆ 2%, iris â‰ˆ 0.1%. For fraud detection: EER guides tuning the threshold â€” higher threshold (lower FAR) blocks more fraud but increases false declines (worse UX). Banks typically optimize for low FAR (security) accepting moderate FRR.
+**A13.** EER = Equal Error Rate = point where FAR = FRR. Lower EER = more accurate biometric. EER for fingerprint ≈ 0.5%, face ≈ 2%, iris ≈ 0.1%. For fraud detection: EER guides tuning the threshold — higher threshold (lower FAR) blocks more fraud but increases false declines (worse UX). Banks typically optimize for low FAR (security) accepting moderate FRR.
 
 **A14.** Aadhaar eKYC: instant, OTP-based, centralized (UIDAI database), privacy concerns (biometric data leaks, tracking). Video KYC: agent-assisted, real-time verification, better for high-risk accounts, more secure (face-to-face), slower (scheduling). RBI has relaxed Video KYC for faster account opening. Hybrid approach: eKYC for low-risk accounts, Video KYC for high-risk/premium accounts.
 
-**A15.** Raw: 6 Ã— 4 TB = 24 TB. Parity overhead = 1 disk equivalent = 4 TB. Usable = 20 TB. Efficiency = (6-1)/6 = 5/6 â‰ˆ 83.3%. Tolerates: 1 disk failure. Rebuilding: 6-1 = 5 read operations per block (read all other disks, XOR to reconstruct).
+**A15.** Raw: 6 × 4 TB = 24 TB. Parity overhead = 1 disk equivalent = 4 TB. Usable = 20 TB. Efficiency = (6-1)/6 = 5/6 ≈ 83.3%. Tolerates: 1 disk failure. Rebuilding: 6-1 = 5 read operations per block (read all other disks, XOR to reconstruct).
 
-**A16.** Apple Pay SE: (1) Card network token service generates DPAN + key. (2) Provisioned to iPhone's Secure Enclave via NFC controller. (3) Private key stored in SE â€” iOS cannot access it directly. (4) Each transaction: SE signs cryptogram with private key. (5) Extraction: requires decapping chip + electron microscope + laser probing â€” extremely expensive and destroys the SE (tamper sensors zeroize keys). Cost: >$1M per extraction.
+**A16.** Apple Pay SE: (1) Card network token service generates DPAN + key. (2) Provisioned to iPhone's Secure Enclave via NFC controller. (3) Private key stored in SE — iOS cannot access it directly. (4) Each transaction: SE signs cryptogram with private key. (5) Extraction: requires decapping chip + electron microscope + laser probing — extremely expensive and destroys the SE (tamper sensors zeroize keys). Cost: >$1M per extraction.
 
 **A17.** PCI 4.0 R4: (1) Use strong cryptography (TLS 1.2+ with AEAD ciphers). (2) No SSL or early TLS. (3) Verify certificates match hostname. (4) Document cryptographic protocols and algorithms used. (5) For wi-fi: use WPA2-Enterprise or WPA3. (6) Never send unencrypted PAN over messaging (email, chat).
 
-**A18.** VPA = user@psp (e.g., user@paytm). NPCI maintains the VPA-to-bank-account mapping in its HUB system. When a payment is initiated: NPCI resolves VPA â†’ finds issuer bank + account number â†’ routes transaction. The bank account number is NEVER shared with the payer â€” only the VPA is visible. NPCI also maintains UPI handles (the part after @) to identify PSPs.
+**A18.** VPA = user@psp (e.g., user@paytm). NPCI maintains the VPA-to-bank-account mapping in its HUB system. When a payment is initiated: NPCI resolves VPA → finds issuer bank + account number → routes transaction. The bank account number is NEVER shared with the payer — only the VPA is visible. NPCI also maintains UPI handles (the part after @) to identify PSPs.
 
-**A19.** 8M transactions/year > 6M â†’ Level 1 merchant. Requirements: annual on-site assessment by QSA (Qualified Security Assessor), quarterly ASV (Approved Scanning Vendor) network scans, annual penetration testing, and a Report on Compliance (RoC) filed with card brands.
+**A19.** 8M transactions/year > 6M → Level 1 merchant. Requirements: annual on-site assessment by QSA (Qualified Security Assessor), quarterly ASV (Approved Scanning Vendor) network scans, annual penetration testing, and a Report on Compliance (RoC) filed with card brands.
 
-**A20.** Online PIN: PIN encrypted by terminal â†’ sent to issuer â†’ verified against HSM-stored PIN. More secure for issuer (real-time verification, central control). Offline PIN: PIN verified by chip using stored PIN reference (2-4 attempts before card blocks offline). Faster (no network needed for PIN verification). Both are better than signature. Online PIN is preferred for high-value transactions.
+**A20.** Online PIN: PIN encrypted by terminal → sent to issuer → verified against HSM-stored PIN. More secure for issuer (real-time verification, central control). Offline PIN: PIN verified by chip using stored PIN reference (2-4 attempts before card blocks offline). Faster (no network needed for PIN verification). Both are better than signature. Online PIN is preferred for high-value transactions.
 
-**A21.** Card testing: fraudster tests stolen card numbers by making small authorization requests (â‚¹1-25) on merchant sites with online carts, automated checkout scripts, or donation pages. Successful responses confirm active cards. Detection: velocity rules (>10 attempts from same IP, same card at multiple merchants, high frequency of small amounts). Prevention: CAPTCHA, rate limiting, address verification (AVS), CVV verification.
+**A21.** Card testing: fraudster tests stolen card numbers by making small authorization requests (₹1-25) on merchant sites with online carts, automated checkout scripts, or donation pages. Successful responses confirm active cards. Detection: velocity rules (>10 attempts from same IP, same card at multiple merchants, high frequency of small amounts). Prevention: CAPTCHA, rate limiting, address verification (AVS), CVV verification.
 
-**A22.** CERT-In reporting: within 6 hours of detection (as per 2022 directive). Required info: organization details, type of incident, systems affected, IP addresses, timeline, impact assessment, actions taken. Format: online form on cert-in.org.in. Failure to report: penalty up to â‚¹1 crore or imprisonment (per IT Act 2000 amendments).
+**A22.** CERT-In reporting: within 6 hours of detection (as per 2022 directive). Required info: organization details, type of incident, systems affected, IP addresses, timeline, impact assessment, actions taken. Format: online form on cert-in.org.in. Failure to report: penalty up to ₹1 crore or imprisonment (per IT Act 2000 amendments).
 
-**A23.** Ripple/Stellar: uses distributed ledger, settlement in 3-5 seconds, no central operator, irreversibility (finality in seconds), no fraud reversal (by design â€” prevents chargeback fraud). UPI: centralized (NPCI), instant settlement, RBI-regulated, fraud reversal possible (within limits via bank/NPCI), KYC compliance. Blockchain is better for cross-border; UPI is better for domestic with regulatory protection.
+**A23.** Ripple/Stellar: uses distributed ledger, settlement in 3-5 seconds, no central operator, irreversibility (finality in seconds), no fraud reversal (by design — prevents chargeback fraud). UPI: centralized (NPCI), instant settlement, RBI-regulated, fraud reversal possible (within limits via bank/NPCI), KYC compliance. Blockchain is better for cross-border; UPI is better for domestic with regulatory protection.
 
 **A24.** RASP embeds security logic within the app runtime. Detects: Frida (detects frida-server port 27042, D-Bus messages), Xposed (detects XposedBridge.jar, class loading patterns), Frida gadget (detects library injection), Magisk (detects su binary, MagiskHide). Actions: refuse to run, show warning, log for fraud analysis, disable sensitive operations.
 
-**A25.** 50,000 TPS Ã— 2 KB = 100,000 KB/s = ~100 MB/s bidirectional = 800 Mbps. With 2Ã— overhead for encryption, routing, headers: ~1.6 Gbps. NPCI handles ~60X peak (during Diwali, IPL matches) â€” requires redundant OC-768/100GbE links across multiple data centers.
+**A25.** 50,000 TPS × 2 KB = 100,000 KB/s = ~100 MB/s bidirectional = 800 Mbps. With 2× overhead for encryption, routing, headers: ~1.6 Gbps. NPCI handles ~60X peak (during Diwali, IPL matches) — requires redundant OC-768/100GbE links across multiple data centers.
 
 **A26.** Fingerprint: FAR 0.001%, FRR 0.5% (most popular, cost-effective). Face: FAR 0.01%, FRR 2% (convenient, works at distance). Iris: FAR 0.0001%, FRR 1% (most accurate, but requires special camera). Voice: FAR 1%, FRR 3% (worst accuracy, affected by noise). For banking: fingerprint is minimum; high-value auth uses iris or multi-modal (finger + face).
 
-**A27.** Zero liability within 3 days: customer gets full refund, bank must credit within 10 days (RBI circular). After 3 days: customer liable until reporting date; bank liability from reporting date (limited to â‚¹10,000 for zero-liability claims). Contributory negligence (shared PIN, did not lock SIM): customer fully liable. Regulation applies to scheduled commercial banks.
+**A27.** Zero liability within 3 days: customer gets full refund, bank must credit within 10 days (RBI circular). After 3 days: customer liable until reporting date; bank liability from reporting date (limited to ₹10,000 for zero-liability claims). Contributory negligence (shared PIN, did not lock SIM): customer fully liable. Regulation applies to scheduled commercial banks.
 
-**A28.** Token vault: encrypted database mapping tokens â†” PANs. Security: AES-256 encryption, HSM-enforced key management, access control (need-to-know), audit logging, tokenization servers in secure network segments. Tokenization vs encryption: tokens are non-reversible by math alone (table lookup), no key for token reversal. Encryption is reversible if key is compromised. Tokenization renders stolen data useless outside context.
+**A28.** Token vault: encrypted database mapping tokens ↔ PANs. Security: AES-256 encryption, HSM-enforced key management, access control (need-to-know), audit logging, tokenization servers in secure network segments. Tokenization vs encryption: tokens are non-reversible by math alone (table lookup), no key for token reversal. Encryption is reversible if key is compromised. Tokenization renders stolen data useless outside context.
 
 **A29.** Device (60+): browser, OS, screen, fonts, plugins, language, timezone, battery level, touch support. Network (20+): IP, carrier, connection type, signal strength, proxies/VPN detected. Behavioral (50+): time on site, pages viewed, scrolling speed, click patterns, form completion time. Merchant (20+): MCC, domain, transaction history, chargeback ratio. Total: 150+ data points.
 
-**A30.** M2 â€” Insecure Data Storage. Remediation: (1) Use EncryptedSharedPreferences (Android) with Android Keystore. (2) Set key extraction prevention (KeyGenParameterSpec). (3) For iOS: use Keychain with kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly. (4) Never store session tokens in plain SharedPreferences/NSUserDefaults. (5) Clear tokens on logout and app backgrounding.
+**A30.** M2 — Insecure Data Storage. Remediation: (1) Use EncryptedSharedPreferences (Android) with Android Keystore. (2) Set key extraction prevention (KeyGenParameterSpec). (3) For iOS: use Keychain with kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly. (4) Never store session tokens in plain SharedPreferences/NSUserDefaults. (5) Clear tokens on logout and app backgrounding.
 </details>
 
 ## Summary
@@ -1745,9 +1745,9 @@ sequenceDiagram
 
 3. **3D Secure 2.0** provides risk-based authentication (frictionless for low-risk, challenge for high-risk). Uses device fingerprinting, behavioral data, and 150+ data points for assessment. 3DS 1.0 required static password for every transaction.
 
-4. **EMV chip** generates dynamic cryptogram per transaction (ATC-based), preventing card cloning and counterfeit fraud. Magnetic stripe has static data â€” easily cloned.
+4. **EMV chip** generates dynamic cryptogram per transaction (ATC-based), preventing card cloning and counterfeit fraud. Magnetic stripe has static data — easily cloned.
 
-5. **Tokenization** replaces PAN with merchant-and-device-bound token. RBI mandates CoF tokenization â€” merchants cannot store actual PAN. Device tokens (DPAN) are provisioned to SE/TEE for mobile wallet payments.
+5. **Tokenization** replaces PAN with merchant-and-device-bound token. RBI mandates CoF tokenization — merchants cannot store actual PAN. Device tokens (DPAN) are provisioned to SE/TEE for mobile wallet payments.
 
 6. **Secure Element** is dedicated tamper-resistant hardware (EAL5+). **TEE** is hardware-isolated execution environment in main CPU (ARM TrustZone). SE is more secure; TEE is more flexible and cheaper.
 
@@ -1761,8 +1761,8 @@ sequenceDiagram
 
 ## Practical Takeaways
 
-- **For exam:** Memorize PCI DSS requirements (especially 3â€”protect stored data, 4â€”encrypt transmission). Know RBI tokenization mandate details. Understand 3DS 2.0 frictionless flow. Compare SE vs TEE. Know UPI PIN security (encrypted on device, verified by NPCI HSM, never stored).
-- **For banking applications:** Always implement root/jailbreak detection, SSL pinning, and RASP. Use device binding for financial credentials. Tokenize PANs â€” never store sensitive card data. Encrypt data in transit (TLS 1.2+) and at rest (AES-256).
+- **For exam:** Memorize PCI DSS requirements (especially 3—protect stored data, 4—encrypt transmission). Know RBI tokenization mandate details. Understand 3DS 2.0 frictionless flow. Compare SE vs TEE. Know UPI PIN security (encrypted on device, verified by NPCI HSM, never stored).
+- **For banking applications:** Always implement root/jailbreak detection, SSL pinning, and RASP. Use device binding for financial credentials. Tokenize PANs — never store sensitive card data. Encrypt data in transit (TLS 1.2+) and at rest (AES-256).
 - **For fraud prevention:** Deploy real-time scoring engine with rules + ML. Monitor velocity, geolocation, device fingerprint. Implement step-up authentication for high-risk transactions. Report fraud promptly (within RBI timelines).
 - **For biometrics:** Use liveness detection to prevent spoofing. Store templates in TEE/SE (on-device). Never store raw biometric images. Support cancelable biometrics. Comply with DPDP Act 2023 (India).
 
@@ -1772,17 +1772,17 @@ sequenceDiagram
 
 **Q1.** Under PCI DSS, which requirement addresses encryption of cardholder data transmitted over open public networks?
 
-A) Requirement 3 â€” Protect Stored Cardholder Data  
-B) Requirement 4 â€” Encrypt Transmission of Cardholder Data  
-C) Requirement 6 â€” Develop and Maintain Secure Systems  
-D) Requirement 7 â€” Restrict Access to Cardholder Data  
+A) Requirement 3 — Protect Stored Cardholder Data  
+B) Requirement 4 — Encrypt Transmission of Cardholder Data  
+C) Requirement 6 — Develop and Maintain Secure Systems  
+D) Requirement 7 — Restrict Access to Cardholder Data  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) Requirement 4 â€” Encrypt Transmission of Cardholder Data**
+**Answer: B) Requirement 4 — Encrypt Transmission of Cardholder Data**
 
-**Explanation:** PCI DSS Requirement 4 mandates that cardholder data be encrypted when transmitted over open, public networks (internet, Wi-Fi, cellular, etc.). The standard requires TLS 1.2 or higher for web traffic and strong cryptography (AES) for any network transmission. Requirement 3 covers data at rest (storage encryption). Both requirements are part of Goal 2 â€” Protect Cardholder Data.
+**Explanation:** PCI DSS Requirement 4 mandates that cardholder data be encrypted when transmitted over open, public networks (internet, Wi-Fi, cellular, etc.). The standard requires TLS 1.2 or higher for web traffic and strong cryptography (AES) for any network transmission. Requirement 3 covers data at rest (storage encryption). Both requirements are part of Goal 2 — Protect Cardholder Data.
 </details>
 
 ---
@@ -1816,24 +1816,24 @@ D) To track the remaining balance on the card
 
 **Answer: B) To generate a unique cryptogram for each transaction**
 
-**Explanation:** The ATC is an incrementing counter (starts at 0, increments each transaction) that is included as input to the EMV cryptogram generation algorithm. Since each transaction has a different ATC value, each transaction produces a unique application cryptogram. This prevents replay attacks â€” even if an attacker captures a transaction's data, they cannot reuse it because the ATC value would have changed. The issuer also tracks the ATC to detect cloned cards (if ATC resets unexpectedly).
+**Explanation:** The ATC is an incrementing counter (starts at 0, increments each transaction) that is included as input to the EMV cryptogram generation algorithm. Since each transaction has a different ATC value, each transaction produces a unique application cryptogram. This prevents replay attacks — even if an attacker captures a transaction's data, they cannot reuse it because the ATC value would have changed. The issuer also tracks the ATC to detect cloned cards (if ATC resets unexpectedly).
 </details>
 
 ---
 
 **Q4.** According to OWASP Mobile Top 10, which risk category covers the extraction of API keys and business logic from a banking app?
 
-A) M2 â€” Insecure Data Storage  
-B) M4 â€” Insecure Authentication  
-C) M8 â€” Code Tampering  
-D) M9 â€” Reverse Engineering  
+A) M2 — Insecure Data Storage  
+B) M4 — Insecure Authentication  
+C) M8 — Code Tampering  
+D) M9 — Reverse Engineering  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: D) M9 â€” Reverse Engineering**
+**Answer: D) M9 — Reverse Engineering**
 
-**Explanation:** M9 (Reverse Engineering) covers decompilation (APK â†’ smali â†’ Java), resource extraction, debugger attachment, and static analysis. Attackers reverse-engineer banking apps to extract hardcoded API keys, encryption keys, business logic, and API endpoints. Defenses include code obfuscation (ProGuard, DexGuard), string encryption, integrity checks, and anti-debugging techniques. M8 (Code Tampering) is about modifying the app at runtime, not static analysis.
+**Explanation:** M9 (Reverse Engineering) covers decompilation (APK → smali → Java), resource extraction, debugger attachment, and static analysis. Attackers reverse-engineer banking apps to extract hardcoded API keys, encryption keys, business logic, and API endpoints. Defenses include code obfuscation (ProGuard, DexGuard), string encryption, integrity checks, and anti-debugging techniques. M8 (Code Tampering) is about modifying the app at runtime, not static analysis.
 </details>
 
 ---
@@ -1850,11 +1850,11 @@ D) Tokenization applies only to international cards
 
 **Answer: C) Card issuers must offer tokenization services; merchants cannot store actual PAN**
 
-**Explanation:** RBI's circular (2021, effective July 2022) mandates that card issuers provide tokenization services through card network token service providers. Merchants are prohibited from storing actual card PANs â€” they must use card-on-file tokens instead. Tokens are bound to (PAN + Merchant + Device) combination. This significantly reduces the impact of data breaches at merchants since tokens have no value outside the specific merchant-device context.
+**Explanation:** RBI's circular (2021, effective July 2022) mandates that card issuers provide tokenization services through card network token service providers. Merchants are prohibited from storing actual card PANs — they must use card-on-file tokens instead. Tokens are bound to (PAN + Merchant + Device) combination. This significantly reduces the impact of data breaches at merchants since tokens have no value outside the specific merchant-device context.
 </details>
 
 ---
 
-> **End of Information Security & Cryptography Course â€” 5 Chapters**
+> **End of Information Security & Cryptography Course — 5 Chapters**
 >
 > **Next:** The index page lists all chapters. Ensure you practice MCQs and review the summary tables before exams.

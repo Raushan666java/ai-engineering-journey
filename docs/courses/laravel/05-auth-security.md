@@ -1,4 +1,4 @@
-﻿# Chapter 5: Authentication, Authorization & Security
+# Chapter 5: Authentication, Authorization & Security
 > **Previous:** [Eloquent ORM, Database & Migrations](./04-eloquent-database) | **Next:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications)
 
 ---
@@ -454,7 +454,7 @@ Policies are classes that organize authorization logic around a specific model o
 php artisan make:policy PostPolicy
 php artisan make:policy PostPolicy --model=Post // Auto-generates CRUD methods
 
-> **Pro Tip:** Use `php artisan make:policy PostPolicy --model=Post` to auto-generate CRUD policy methods (viewAny, view, create, update, delete, restore, forceDelete) â€” this saves significant boilerplate.
+> **Pro Tip:** Use `php artisan make:policy PostPolicy --model=Post` to auto-generate CRUD policy methods (viewAny, view, create, update, delete, restore, forceDelete) — this saves significant boilerplate.
 ```
 
 ```php
@@ -1136,7 +1136,7 @@ Route::get('/email/verify/{id}/{hash}', function (Request $request) {
 | Complexity | Simple checks | Complex, multi-ability logic |
 | Best For | Admin checks, feature flags | Model resource authorization |
 
-## Quick Reference â€” Auth Middleware
+## Quick Reference — Auth Middleware
 
 | Middleware | Purpose |
 |-----------|---------|

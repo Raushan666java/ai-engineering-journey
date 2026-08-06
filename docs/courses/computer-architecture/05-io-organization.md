@@ -1,4 +1,4 @@
-﻿# I/O Organization
+# I/O Organization
 
 ## Learning Objectives
 
@@ -39,18 +39,18 @@ By the end of this chapter, you will be able to:
 An I/O interface connects the CPU/memory subsystem to peripheral devices.
 
 **Functions of an I/O interface:**
-1. Address decoding â€” identify which device is being accessed
-2. Data buffering â€” accommodate speed differences
-3. Status/control registers â€” monitor device state
-4. Protocol conversion â€” translate between system bus and device protocols
-5. Interrupt generation â€” notify CPU of events
+1. Address decoding — identify which device is being accessed
+2. Data buffering — accommodate speed differences
+3. Status/control registers — monitor device state
+4. Protocol conversion — translate between system bus and device protocols
+5. Interrupt generation — notify CPU of events
 
 **I/O port types:**
 | Port | Direction | CPU to Device | Example |
 |------|-----------|--------------|---------|
 | Data register | Bidirectional | Read/write data | Keyboard scan code |
-| Status register | Device â†’ CPU | Read-only | Busy/ready flags |
-| Control register | CPU â†’ Device | Write-only | Start/stop/command |
+| Status register | Device → CPU | Read-only | Busy/ready flags |
+| Control register | CPU → Device | Write-only | Start/stop/command |
 
 **I/O mapping techniques:**
 
@@ -68,13 +68,13 @@ An I/O interface connects the CPU/memory subsystem to peripheral devices.
 CPU actively monitors the device status register until the device is ready, then transfers data.
 
 ```
-CPU â†’ Check device status
-      â†“
-    Is device ready? â†’ NO â†’ Keep polling
-      â†“ YES
-CPU â†’ Read/write data
-      â†“
-CPU â†’ Process next byte
+CPU → Check device status
+      ↓
+    Is device ready? → NO → Keep polling
+      ↓ YES
+CPU → Read/write data
+      ↓
+CPU → Process next byte
 ```
 
 **Polling flow:**
@@ -87,21 +87,21 @@ data = read_device_data();
 
 **Characteristics:**
 - **Simple** to implement
-- **CPU busy-waits** â€” wastes CPU cycles that could be used for computation
+- **CPU busy-waits** — wastes CPU cycles that could be used for computation
 - **Low throughput** for high-speed devices (CPU is slower than polling rate)
 - **Suitable for:** Simple, low-speed devices (keyboard, mouse)
 
 **Numerical:** CPU clock = 500 MHz, polling loop = 40 instructions (2 cycles each). Device sends 1000 bytes/sec.
 
 ```
-Polling time per check = 40 Ã— 2 = 80 cycles = 80 / 500e6 = 0.16 Î¼s
+Polling time per check = 40 × 2 = 80 cycles = 80 / 500e6 = 0.16 μs
 Polling frequency = 1000 checks/sec (for each byte)
-Polling overhead = 1000 Ã— 0.16 Î¼s = 160 Î¼s/sec = 0.016% CPU time
+Polling overhead = 1000 × 0.16 μs = 160 μs/sec = 0.016% CPU time
 ```
 
 If device speed is 1 MB/s (1,000,000 bytes/sec):
 ```
-Polling overhead = 1,000,000 Ã— 0.16 Î¼s = 160,000 Î¼s/sec = 16% CPU time
+Polling overhead = 1,000,000 × 0.16 μs = 160,000 μs/sec = 16% CPU time
 ```
 
 High-speed devices with programmed I/O consume significant CPU time.
@@ -111,21 +111,21 @@ High-speed devices with programmed I/O consume significant CPU time.
 Device notifies CPU when ready via an interrupt signal. CPU can perform other tasks between transfers.
 
 ```
-CPU â†’ Execute main program
-      â†“
+CPU → Execute main program
+      ↓
     (Device becomes ready)
-      â†“
-Device â†’ Sends Interrupt Request (IRQ)
-      â†“
-CPU â†’ Suspend current program
-      â†“
-CPU â†’ Save context (PC, PSW, registers)
-      â†“
-CPU â†’ Execute Interrupt Service Routine (ISR)
-      â†“
-CPU â†’ Restore context
-      â†“
-CPU â†’ Resume main program
+      ↓
+Device → Sends Interrupt Request (IRQ)
+      ↓
+CPU → Suspend current program
+      ↓
+CPU → Save context (PC, PSW, registers)
+      ↓
+CPU → Execute Interrupt Service Routine (ISR)
+      ↓
+CPU → Restore context
+      ↓
+CPU → Resume main program
 ```
 
 **Advantages:**
@@ -142,15 +142,15 @@ CPU â†’ Resume main program
 
 ```
 Interrupts per second = 1,000,000 (one per byte)
-Interrupt overhead per second = 1,000,000 Ã— 200 = 200,000,000 cycles/sec
+Interrupt overhead per second = 1,000,000 × 200 = 200,000,000 cycles/sec
 CPU time = 200e6 / 500e6 = 40% CPU time
 ```
 
 But with interrupt coalescing (one interrupt per block), say 1024 bytes per interrupt:
 ```
-Interrupts per second = 1,000,000 / 1024 â‰ˆ 977
-Overhead per second = 977 Ã— 200 = 195,400 cycles
-CPU time = 195,400 / 500e6 â‰ˆ 0.04%
+Interrupts per second = 1,000,000 / 1024 ≈ 977
+Overhead per second = 977 × 200 = 195,400 cycles
+CPU time = 195,400 / 500e6 ≈ 0.04%
 ```
 
 **Conclusion:** Programmed I/O is better for very high-rate, predictable transfers. Interrupts are better for rare/sporadic events.
@@ -205,7 +205,7 @@ When multiple interrupts occur simultaneously, the priority scheme determines wh
 
 ```
 Step 1: Device sends interrupt request (IRQ)
-Step 2: CPU checks interrupt mask â€” if unmasked, proceed
+Step 2: CPU checks interrupt mask — if unmasked, proceed
 Step 3: CPU completes current instruction (or pipeline stage)
 Step 4: CPU saves PC and PSW on stack or in special registers
 Step 5: CPU disables further interrupts (or sets priority mask)
@@ -220,9 +220,9 @@ Step 13: CPU re-enables interrupts
 Step 14: CPU resumes interrupted program
 ```
 
-**Context save:** Typically 16â€“32 registers pushed onto stack. Some CPUs have shadow registers (e.g., ARM fast interrupt, FIQ).
+**Context save:** Typically 16–32 registers pushed onto stack. Some CPUs have shadow registers (e.g., ARM fast interrupt, FIQ).
 
-### 6. Polling vs Interrupts â€” Comparison
+### 6. Polling vs Interrupts — Comparison
 
 | Aspect | Polling | Interrupts |
 |--------|---------|------------|
@@ -239,17 +239,17 @@ Step 14: CPU resumes interrupted program
 DMA allows peripheral devices to transfer data directly to/from memory without CPU intervention. A DMA controller (DMAC) manages the transfer.
 
 **DMA Controller components:**
-1. **Source address register** â€” starting address of data source
-2. **Destination address register** â€” starting address of destination
-3. **Word count register** â€” number of words/bytes to transfer
-4. **Control register** â€” transfer direction, mode, unit size
+1. **Source address register** — starting address of data source
+2. **Destination address register** — starting address of destination
+3. **Word count register** — number of words/bytes to transfer
+4. **Control register** — transfer direction, mode, unit size
 
 **DMA transfer flow:**
 ```
 1. CPU programs DMA controller: source, destination, count, direction
 2. CPU issues "Start DMA" command
 3. DMA controller takes over system bus (bus request)
-4. DMA transfers data directly: Device â†” Memory (peripheral to memory or vice versa)
+4. DMA transfers data directly: Device ↔ Memory (peripheral to memory or vice versa)
 5. DMA controller increments addresses, decrements word count
 6. When count reaches 0, DMA asserts interrupt to CPU
 7. CPU handles "DMA complete" interrupt
@@ -270,27 +270,27 @@ DMA allows peripheral devices to transfer data directly to/from memory without C
 **Numerical comparison:** 1000 words to transfer, bus cycle = 100 ns.
 
 ```
-Cycle stealing: 1000 Ã— 100 ns = 100 Î¼s (CPU delayed by 100 Î¼s total)
-Burst mode: 1000 Ã— 100 ns = 100 Î¼s (CPU delayed 100 Î¼s continuously)
-Transparent: Variable â€” depends on CPU idle patterns, 100 Î¼s total transfer time spread over CPU idle cycles.
+Cycle stealing: 1000 × 100 ns = 100 μs (CPU delayed by 100 μs total)
+Burst mode: 1000 × 100 ns = 100 μs (CPU delayed 100 μs continuously)
+Transparent: Variable — depends on CPU idle patterns, 100 μs total transfer time spread over CPU idle cycles.
 ```
 
 #### DMA Data Transfer Rate
 
-**Formula:** Transfer rate = Bus width Ã— Bus frequency Ã— Transfer efficiency
+**Formula:** Transfer rate = Bus width × Bus frequency × Transfer efficiency
 
-**Example:** 64-bit PCIe 3.0 Ã—16, 8 GT/s, 128b/130b encoding.
+**Example:** 64-bit PCIe 3.0 ×16, 8 GT/s, 128b/130b encoding.
 
 ```
-Effective data rate per lane = 8 Ã— (128/130) = 7.877 Gbps
-Ã—16 lanes = 126.03 Gbps = 15.75 GB/s
+Effective data rate per lane = 8 × (128/130) = 7.877 Gbps
+×16 lanes = 126.03 Gbps = 15.75 GB/s
 ```
 
 #### DMA vs Programmed I/O vs Interrupt I/O
 
 | Feature | Programmed I/O | Interrupt I/O | DMA |
 |---------|---------------|---------------|-----|
-| Data path | CPU â†” Device â†’ Memory | CPU â†” Device â†’ Memory | Device â†” Memory (direct) |
+| Data path | CPU ↔ Device → Memory | CPU ↔ Device → Memory | Device ↔ Memory (direct) |
 | CPU involvement per byte | Yes | ISR execution | Only at start and end |
 | Transfer speed | Slow | Moderate | Fastest |
 | Hardware complexity | Low | Medium | High (DMA controller) |
@@ -308,7 +308,7 @@ Effective data rate per lane = 8 Ã— (128/130) = 7.877 Gbps
 **I/O Channel:**
 - **Selector channel:** Handles one high-speed device at a time (disk, tape)
 - **Multiplexor channel:** Handles multiple slow-speed devices simultaneously (terminals, printers)
-- **Block multiplexor:** Combines features â€” handles multiple devices with block transfers
+- **Block multiplexor:** Combines features — handles multiple devices with block transfers
 
 **Comparison:**
 
@@ -328,14 +328,14 @@ Effective data rate per lane = 8 Ã— (128/130) = 7.877 Gbps
 | Property | PCI | PCI-X | PCIe |
 |----------|-----|-------|------|
 | Architecture | Parallel bus | Parallel bus | Serial point-to-point |
-| Bit width | 32/64 bits | 64 bits | 1â€“32 lanes (serial) |
-| Clock | 33/66 MHz | 66â€“533 MHz | 2.5â€“16 GT/s per lane |
-| Bandwidth | 133â€“533 MB/s | 533â€“4266 MB/s | 250 MB/s to 64 GB/s |
+| Bit width | 32/64 bits | 64 bits | 1–32 lanes (serial) |
+| Clock | 33/66 MHz | 66–533 MHz | 2.5–16 GT/s per lane |
+| Bandwidth | 133–533 MB/s | 533–4266 MB/s | 250 MB/s to 64 GB/s |
 | Bus sharing | Shared | Shared | Switched (dedicated per device) |
 | Hot plug | Limited | Limited | Yes |
 | Encoding | Parallel | Parallel | 8b/10b (Gen1/2), 128b/130b (Gen3+) |
 
-**PCIe topology:** Root complex (CPU) â†’ Switch â†’ Endpoints (devices). Each device has a dedicated point-to-point link.
+**PCIe topology:** Root complex (CPU) → Switch → Endpoints (devices). Each device has a dedicated point-to-point link.
 
 **PCIe Generations:**
 
@@ -359,13 +359,13 @@ Effective data rate per lane = 8 Ã— (128/130) = 7.877 Gbps
 | USB 3.2 | 20 Gbps (2-lane) | Type-C | 3 m |
 | USB 4 | 40 Gbps | Type-C | 0.8 m |
 
-**USB architecture:** Host controller â†’ Hub(s) â†’ Devices (up to 127 devices per host).
+**USB architecture:** Host controller → Hub(s) → Devices (up to 127 devices per host).
 
 **Transfer types:**
 - **Control:** Configuration and commands (guaranteed delivery)
-- **Bulk:** Large data transfers (printer, scanner) â€” no bandwidth guarantee
-- **Interrupt:** Periodic polling (keyboard, mouse) â€” guaranteed latency
-- **Isochronous:** Real-time streaming (audio, video) â€” no retransmission
+- **Bulk:** Large data transfers (printer, scanner) — no bandwidth guarantee
+- **Interrupt:** Periodic polling (keyboard, mouse) — guaranteed latency
+- **Isochronous:** Real-time streaming (audio, video) — no retransmission
 
 ### 10. RAID Levels
 
@@ -375,8 +375,8 @@ RAID (Redundant Array of Independent Disks) combines multiple physical disks int
 |-------|-------------|-----------|-------------------|-----------------|------------------|----------------|
 | RAID 0 | Striping (no redundancy) | 2 | 100% | Excellent (parallel reads) | Excellent (parallel writes) | None |
 | RAID 1 | Mirroring | 2 | 50% | Good (read from either) | Moderate (write both) | 1 disk failure |
-| RAID 5 | Striping + distributed parity | 3 | (Nâˆ’1)/N | Good (parallel, no parity read) | Moderate (parity computation) | 1 disk failure |
-| RAID 6 | Striping + dual distributed parity | 4 | (Nâˆ’2)/N | Good | Slow (dual parity) | 2 disk failures |
+| RAID 5 | Striping + distributed parity | 3 | (N−1)/N | Good (parallel, no parity read) | Moderate (parity computation) | 1 disk failure |
+| RAID 6 | Striping + dual distributed parity | 4 | (N−2)/N | Good | Slow (dual parity) | 2 disk failures |
 | RAID 10 | RAID 1+0: mirrored sets, then striped | 4 | 50% | Excellent | Good | Multiple (1 per mirror) |
 
 **RAID 5 parity calculation:** Parity = Data1 XOR Data2 XOR ... XOR DataN. Parity distributed across all disks.
@@ -412,15 +412,15 @@ Striped across pairs.
 
 ### 11. Important Exam Formulae
 
-- **Polling overhead = (Polling cycles per check) Ã— (Check frequency)**
-- **Interrupt overhead = (Context switch cycles) Ã— (Interrupt frequency)**
-- **DMA transfer time = (Number of words) Ã— (Bus cycle time)**
-- **PCIe bandwidth = (Lane count) Ã— (Transfer rate per lane) Ã— (Encoding efficiency)**
+- **Polling overhead = (Polling cycles per check) × (Check frequency)**
+- **Interrupt overhead = (Context switch cycles) × (Interrupt frequency)**
+- **DMA transfer time = (Number of words) × (Bus cycle time)**
+- **PCIe bandwidth = (Lane count) × (Transfer rate per lane) × (Encoding efficiency)**
 - **RAID storage efficiency:**
   - RAID 0: 100%
   - RAID 1: 50%
-  - RAID 5: (Nâˆ’1)/N
-  - RAID 6: (Nâˆ’2)/N
+  - RAID 5: (N−1)/N
+  - RAID 6: (N−2)/N
   - RAID 10: 50%
 
 ---
@@ -455,7 +455,7 @@ sequenceDiagram
     CPU->>CPU: Complete Current Instruction
     CPU->>CPU: Save PC, PSW
     CPU->>CPU: Disable Interrupts
-    CPU->>CPU: Look up IDT â†’ ISR Address
+    CPU->>CPU: Look up IDT → ISR Address
     CPU->>ISR: Jump to ISR
     ISR->>ISR: Save Registers
     ISR->>Device: Read/Write Data
@@ -550,21 +550,21 @@ Answer: c) Interrupt vector number
 
 ---
 
-**Q5:** Which PCIe generation offers 16 GB/s bandwidth on a Ã—16 link?
+**Q5:** Which PCIe generation offers 16 GB/s bandwidth on a ×16 link?
 
 a) PCIe 1.0  b) PCIe 2.0  c) PCIe 3.0  d) PCIe 4.0
 
-**Solution:** PCIe 3.0 Ã—16: 8 GT/s Ã— 16 lanes Ã— 128/130 encoding = 8 Ã— 16 Ã— 0.9846 â‰ˆ 126 GB/s... wait, let me recalculate.
+**Solution:** PCIe 3.0 ×16: 8 GT/s × 16 lanes × 128/130 encoding = 8 × 16 × 0.9846 ≈ 126 GB/s... wait, let me recalculate.
 
-PCIe 3.0 per lane = 8 GT/s, 128b/130b encoding â†’ 8 Ã— 128/130 = 7.877 Gbps per lane Ã— 16 = 126.03 Gbps = 15.75 GB/s. That's ~16 GB/s.
+PCIe 3.0 per lane = 8 GT/s, 128b/130b encoding → 8 × 128/130 = 7.877 Gbps per lane × 16 = 126.03 Gbps = 15.75 GB/s. That's ~16 GB/s.
 
-Actually: PCIe 3.0 Ã—16 = 8 GT/s per lane Ã— 16 lanes = 128 GT/s total. 128 GT/s Ã— (128/130) = ~126 Gbps = ~15.75 GB/s.
+Actually: PCIe 3.0 ×16 = 8 GT/s per lane × 16 lanes = 128 GT/s total. 128 GT/s × (128/130) = ~126 Gbps = ~15.75 GB/s.
 
-For PCIe 2.0 Ã—16: 5 GT/s Ã— 16 Ã— (8/10) = 64 Gbps = 8 GB/s.
+For PCIe 2.0 ×16: 5 GT/s × 16 × (8/10) = 64 Gbps = 8 GB/s.
 
-For PCIe 4.0 Ã—16: 16 GT/s Ã— 16 Ã— (128/130) = 252 Gbps = 31.5 GB/s.
+For PCIe 4.0 ×16: 16 GT/s × 16 × (128/130) = 252 Gbps = 31.5 GB/s.
 
-So PCIe 3.0 Ã—16 â‰ˆ 16 GB/s and PCIe 4.0 Ã—16 â‰ˆ 32 GB/s. Let me answer c) PCIe 3.0.
+So PCIe 3.0 ×16 ≈ 16 GB/s and PCIe 4.0 ×16 ≈ 32 GB/s. Let me answer c) PCIe 3.0.
 
 Answer: c) PCIe 3.0
 
@@ -596,9 +596,9 @@ a) 0.01%  b) 0.1%  c) 1%  d) 10%
 
 **Solution:**
 ```
-Cycles per check = 50 Ã— 2 = 100 cycles
+Cycles per check = 50 × 2 = 100 cycles
 Checks per second = 1000
-Total cycles for polling = 100 Ã— 1000 = 100,000 cycles/sec
+Total cycles for polling = 100 × 1000 = 100,000 cycles/sec
 CPU time = 100,000 / 1,000,000,000 = 0.0001 = 0.01%
 ```
 Answer: a) 0.01%
@@ -633,9 +633,9 @@ NVMe is a high-performance interface protocol for SSDs, designed to replace AHCI
 
 | Feature | SATA AHCI | NVMe |
 |---------|-----------|------|
-| Queue depth | 1 command queue Ã— 32 entries | Up to 65535 queues Ã— 65535 entries |
-| Latency | ~100 Î¼s | ~10 Î¼s |
-| Throughput (sequential) | ~560 MB/s (SATA 3.0) | Up to 14 GB/s (PCIe 5.0 Ã—4) |
+| Queue depth | 1 command queue × 32 entries | Up to 65535 queues × 65535 entries |
+| Latency | ~100 μs | ~10 μs |
+| Throughput (sequential) | ~560 MB/s (SATA 3.0) | Up to 14 GB/s (PCIe 5.0 ×4) |
 | IOPS (random 4K) | ~100K | ~1M+ |
 | CPU overhead | High (interrupt per command) | Low (interrupt coalescing) |
 | Command parallelism | Single queue, serial | Multiple queues, parallel |
@@ -649,9 +649,9 @@ RDMA allows direct memory access between computers without involving the remote 
 
 | Technology | Description | Bandwidth | Latency |
 |-----------|-------------|-----------|---------|
-| InfiniBand | Dedicated interconnect | 200-400 Gb/s | &lt;1 Î¼s |
-| RoCE (RDMA over Converged Ethernet) | RDMA on Ethernet | 100-200 Gb/s | 1-2 Î¼s |
-| iWARP | RDMA over TCP/IP | 25-100 Gb/s | 2-5 Î¼s |
+| InfiniBand | Dedicated interconnect | 200-400 Gb/s | &lt;1 μs |
+| RoCE (RDMA over Converged Ethernet) | RDMA on Ethernet | 100-200 Gb/s | 1-2 μs |
+| iWARP | RDMA over TCP/IP | 25-100 Gb/s | 2-5 μs |
 
 **RDMA operations:**
 - **READ:** Read memory from remote node directly
@@ -670,7 +670,7 @@ Modern network interface cards incorporate processing capability to offload netw
 | Processing | Simple packet delivery | Packet processing, checksum, encryption |
 | Programmable | No | Yes (P4, C, Rust) |
 | Offload | TCP checksum, segmentation | Full TCP offload, TLS, storage virtualization |
-| CPU cores on card | None | 4â€“16 ARM/RISC-V cores |
+| CPU cores on card | None | 4–16 ARM/RISC-V cores |
 | Example | Intel I350 | NVIDIA BlueField-3, Intel IPU |
 
 ### Bus Arbitration
@@ -712,7 +712,7 @@ Each device participates in arbitration (e.g., PCI bus grant/request pairs, Ethe
 **Latency arbitration formula:**
 ```
 Access time = Arbitration time + Bus transfer time
-Total bus utilization = Î£(Device transfer times) / Total time
+Total bus utilization = Σ(Device transfer times) / Total time
 ```
 
 ### I/O Caching and Buffering
@@ -735,13 +735,13 @@ Total bus utilization = Î£(Device transfer times) / Total time
 | Feature | Programmed I/O | Interrupt-Driven I/O | DMA |
 |---------|---------------|---------------------|-----|
 | CPU involvement per byte | Yes (polling loop) | Yes (ISR execution) | Only setup + completion |
-| Data path | CPU â†’ Device â†’ Memory | CPU â†’ Device â†’ Memory | Device â†” Memory (direct) |
+| Data path | CPU → Device → Memory | CPU → Device → Memory | Device ↔ Memory (direct) |
 | Transfer unit | Byte/word | Byte/word | Block (up to 64 KB or more) |
 | Hardware complexity | Low | Medium | High (DMA controller) |
 | CPU utilization | Poor (busy waiting) | Good (multitasking) | Excellent (free during xfer) |
 | Latency | Good (immediate) | Variable (depends on interrupt) | Good (after setup) |
 | Best for | Slow, predictable | Medium-speed, sporadic | High-speed block transfers |
-| Overhead per transfer | Polling cycles | Context switch + ISR | Setup (10â€“100 Î¼s) |
+| Overhead per transfer | Polling cycles | Context switch + ISR | Setup (10–100 μs) |
 
 ### DMA Mode Comparison
 
@@ -755,9 +755,9 @@ Total bus utilization = Î£(Device transfer times) / Total time
 
 | Mode | Total bus time | CPU unavailable | Description |
 |------|---------------|-----------------|-------------|
-| Burst | 64Ã—1024Ã—8/64 Ã— 10 ns = 81.92 Î¼s | 81.92 Î¼s continuous | Fastest, but CPU starved |
-| Cycle stealing | Same 81.92 Î¼s total | 81.92 Î¼s total (spread over ~10 ms) | CPU delayed only 0.8% |
-| Transparent | Same 81.92 Î¼s | 0 (only idle cycles used) | Variable completion time |
+| Burst | 64×1024×8/64 × 10 ns = 81.92 μs | 81.92 μs continuous | Fastest, but CPU starved |
+| Cycle stealing | Same 81.92 μs total | 81.92 μs total (spread over ~10 ms) | CPU delayed only 0.8% |
+| Transparent | Same 81.92 μs | 0 (only idle cycles used) | Variable completion time |
 
 ### RAID Level Comparison Table
 
@@ -765,21 +765,21 @@ Total bus utilization = Î£(Device transfer times) / Total time
 |-------|------|-----------|-------------------|-----------|-----------|-----------------|----------------|
 | RAID 0 | Striping | 2 | 100% | Excellent | Excellent | None | N/A |
 | RAID 1 | Mirroring | 2 | 50% | Good (both disks read) | Moderate (write both) | 1 disk | Minimal |
-| RAID 5 | Striping + Parity | 3 | (Nâˆ’1)/N | Good (parallel reads) | Moderate (parity calc) | 1 disk | Heavy |
-| RAID 6 | Striping + Dual Parity | 4 | (Nâˆ’2)/N | Good | Slow (dual parity) | 2 disks | Very heavy |
+| RAID 5 | Striping + Parity | 3 | (N−1)/N | Good (parallel reads) | Moderate (parity calc) | 1 disk | Heavy |
+| RAID 6 | Striping + Dual Parity | 4 | (N−2)/N | Good | Slow (dual parity) | 2 disks | Very heavy |
 | RAID 10 | Mirror + Strip | 4 | 50% | Excellent | Good | 1 per mirror | Moderate |
-| RAID 50 | Striping of RAID 5 | 6 | (Nâˆ’2)/N | Very good | Moderate | 1 per stripe | Heavy |
+| RAID 50 | Striping of RAID 5 | 6 | (N−2)/N | Very good | Moderate | 1 per stripe | Heavy |
 
 **RAID capacity calculations:**
-- RAID 0: Capacity = N Ã— Disk_size
-- RAID 1: Capacity = N/2 Ã— Disk_size (even number of disks)
-- RAID 5: Capacity = (Nâˆ’1) Ã— Disk_size
-- RAID 6: Capacity = (Nâˆ’2) Ã— Disk_size
-- RAID 10: Capacity = N/2 Ã— Disk_size
+- RAID 0: Capacity = N × Disk_size
+- RAID 1: Capacity = N/2 × Disk_size (even number of disks)
+- RAID 5: Capacity = (N−1) × Disk_size
+- RAID 6: Capacity = (N−2) × Disk_size
+- RAID 10: Capacity = N/2 × Disk_size
 
 **RAID rebuild time:**
-- Small disks (1 TB): ~3â€“6 hours
-- Large disks (20 TB): ~24â€“48 hours
+- Small disks (1 TB): ~3–6 hours
+- Large disks (20 TB): ~24–48 hours
 - Risk window: second failure during rebuild (significant for RAID 5 on large disks)
 
 ### Interrupt Controller Comparison
@@ -787,7 +787,7 @@ Total bus utilization = Î£(Device transfer times) / Total time
 | Feature | PIC 8259A | APIC (x86) | GIC (ARM) |
 |---------|-----------|------------|-----------|
 | Max interrupts | 8 per chip (64 cascaded) | 255 (I/O APIC) | Up to 1020 |
-| Priority levels | 8 | 16 | 16â€“256 |
+| Priority levels | 8 | 16 | 16–256 |
 | Vectoring | Yes (1 per IRQ) | Yes (per interrupt) | Yes (per interrupt) |
 | Programmable | Yes (mask, priority) | Yes (redirection table) | Yes (distributor) |
 | SMP support | No (one CPU) | Yes (any CPU) | Yes (any core) |
@@ -798,7 +798,7 @@ Total bus utilization = Î£(Device transfer times) / Total time
 | Feature | PCI | PCI Express | USB 3.2 | Thunderbolt 4 |
 |---------|-----|-------------|---------|---------------|
 | Architecture | Parallel shared | Serial point-to-point | Serial host-controlled | Serial Daisy chain |
-| Bandwidth | 133 MB/s (32-bit, 33 MHz) | 1â€“64 GB/s (x1â€“x16) | 20 Gbps (2-lane) | 40 Gbps |
+| Bandwidth | 133 MB/s (32-bit, 33 MHz) | 1–64 GB/s (x1–x16) | 20 Gbps (2-lane) | 40 Gbps |
 | Topology | Shared bus | Switched fabric | Star (hub-based) | Daisy chain |
 | Hot-plug | No | Yes | Yes | Yes |
 | Power delivery | Limited | Up to 75W (x16 slot) | Up to 100W (USB-C PD) | Up to 100W |
@@ -970,7 +970,7 @@ class RAIDCalculator {
       os: { level: 1, reason: 'RAID 1: simple mirroring for OS boot drive reliability' }
     };
     const rec = recommendations[useCase] || { level: 5, reason: 'RAID 5: balanced choice for general use' };
-    return `Recommendation for ${useCase}: RAID ${rec.level} â€” ${rec.reason}`;
+    return `Recommendation for ${useCase}: RAID ${rec.level} — ${rec.reason}`;
   }
 
   parityCalculation(dataBlocks: number[]): number {
@@ -1001,7 +1001,7 @@ class RAIDCalculator {
     const rebuildTime = 24; // Assume 24 hours rebuild, simplified
 
     switch (level) {
-      case 0: return 1 - Math.pow(1 - AFR, numDisks); // Any disk fails â†’ data loss
+      case 0: return 1 - Math.pow(1 - AFR, numDisks); // Any disk fails → data loss
       case 1: return Math.pow(AFR, 2) * (rebuildTime / 8760) * numDisks; // Both in a pair fail
       case 5: return Math.pow(AFR, 2) * (rebuildTime / 8760) * numDisks * (numDisks - 1);
       case 6: return Math.pow(AFR, 3) * Math.pow(rebuildTime / 8760, 2) * numDisks * (numDisks - 1) * (numDisks - 2) / 6;
@@ -1047,7 +1047,7 @@ console.log(calc.compare(allConfigs));
 // Detailed analysis for each level
 for (const cfg of allConfigs) {
   const result = calc.analyze(cfg);
-  console.log(`\n--- RAID ${cfg.level} (${cfg.numDisks} Ã— ${disk.capacityGB} GB) ---`);
+  console.log(`\n--- RAID ${cfg.level} (${cfg.numDisks} × ${disk.capacityGB} GB) ---`);
   console.log(result.description);
   console.log(`Usable: ${result.usableCapacityGB} GB / ${result.rawCapacityGB} GB (${result.storageEfficiency}%)`);
   console.log(`Read: ${result.readSpeedMBps} MB/s | Write: ${result.writeSpeedMBps} MB/s`);
@@ -1251,21 +1251,21 @@ A) 0.12%  B) 0.24%  C) 0.48%  D) 0.96%
 
 **Answer: B) 0.24%**
 
-**Formula:** CPU_time = (Instructions_per_check Ã— CPI Ã— Check_frequency) / Clock_rate
+**Formula:** CPU_time = (Instructions_per_check × CPI × Check_frequency) / Clock_rate
 
 **Step-by-step:**
-Cycles per check = 60 Ã— 2 = 120 cycles
+Cycles per check = 60 × 2 = 120 cycles
 Device rate = 10 KB/s = 10,240 bytes/s
 Checks per second = 10,240 (assuming byte-by-byte polling)
-Total cycles for polling = 120 Ã— 10,240 = 1,228,800 cycles/s
+Total cycles for polling = 120 × 10,240 = 1,228,800 cycles/s
 
-CPU time = 1,228,800 / (500 Ã— 10â¶) = 0.0024576 = 0.24576%
+CPU time = 1,228,800 / (500 × 10⁶) = 0.0024576 = 0.24576%
 
 **Answer: B) 0.24%**
 
 **If device speed increases to 1 MB/s:**
-Total cycles = 120 Ã— 1,048,576 = 125,829,120 cycles/s
-CPU time = 125,829,120 / 500Ã—10â¶ = 25.17% â€” too high! Time to switch to interrupt or DMA.
+Total cycles = 120 × 1,048,576 = 125,829,120 cycles/s
+CPU time = 125,829,120 / 500×10⁶ = 25.17% — too high! Time to switch to interrupt or DMA.
 </details>
 
 > **GATE 2020:** A DMA controller transfers 64-bit words at a bus speed of 200 MHz. What is the maximum data transfer rate in burst mode?
@@ -1277,16 +1277,16 @@ A) 200 MB/s  B) 400 MB/s  C) 800 MB/s  D) 1.6 GB/s
 
 **Answer: D) 1.6 GB/s**
 
-**Formula:** Transfer_rate = Bus_width Ã— Bus_frequency
+**Formula:** Transfer_rate = Bus_width × Bus_frequency
 
 Bus width = 64 bits = 8 bytes
-Bus frequency = 200 MHz = 2Ã—10â¸ transfers/s
+Bus frequency = 200 MHz = 2×10⁸ transfers/s
 
-Max rate = 8 bytes Ã— 200Ã—10â¶ = 1.6Ã—10â¹ bytes/s = 1.6 GB/s
+Max rate = 8 bytes × 200×10⁶ = 1.6×10⁹ bytes/s = 1.6 GB/s
 
 **Assumptions:** 1 transfer per cycle, 100% bus utilization during burst.
 
-**With overhead (80% efficiency):** 1.6 Ã— 0.8 = 1.28 GB/s effective.
+**With overhead (80% efficiency):** 1.6 × 0.8 = 1.28 GB/s effective.
 </details>
 
 > **GATE 2018:** A RAID 5 array has 8 disks of 2 TB each. Calculate the usable capacity and storage efficiency. If one disk fails, how many read operations are needed to reconstruct one data block?
@@ -1299,39 +1299,39 @@ A) 14 TB, 87.5%, 7 reads  B) 12 TB, 75%, 8 reads  C) 14 TB, 87.5%, 8 reads  D) 1
 **Answer: A) 14 TB, 87.5%, 7 reads**
 
 **Formulas:**
-RAID 5 usable = (Nâˆ’1) Ã— Disk_size
-RAID 5 efficiency = (Nâˆ’1)/N Ã— 100%
+RAID 5 usable = (N−1) × Disk_size
+RAID 5 efficiency = (N−1)/N × 100%
 
 **Step-by-step:**
-Usable capacity = (8âˆ’1) Ã— 2 TB = 14 TB
+Usable capacity = (8−1) × 2 TB = 14 TB
 Storage efficiency = 7/8 = 87.5%
 
-**Reconstruction:** In RAID 5, one block is reconstructed from Nâˆ’1 remaining blocks.
-Reconstruction of one data block = Read all remaining data blocks + parity block = (Nâˆ’2) data blocks + 1 parity block = 7 reads.
+**Reconstruction:** In RAID 5, one block is reconstructed from N−1 remaining blocks.
+Reconstruction of one data block = Read all remaining data blocks + parity block = (N−2) data blocks + 1 parity block = 7 reads.
 
 Wait: RAID 5 with 8 disks: each stripe has 7 data blocks + 1 parity block.
 When one disk fails, each stripe loses either a data block or the parity block.
-To reconstruct a missing data block: read all other data blocks (Nâˆ’2 = 6) + parity block (1) = 7 reads.
+To reconstruct a missing data block: read all other data blocks (N−2 = 6) + parity block (1) = 7 reads.
 
 **Answer: A) 14 TB, 87.5%, 7 reads**
 </details>
 
 > **GATE 2017:** In a vectored interrupt system, the interrupt vector number for IRQ 3 is 0x0B. The IDT base address is 0x1000. Each IDT entry is 8 bytes. Where is the ISR address stored?
 
-A) 0x1000 + 0x0B Ã— 8 = 0x1058  B) 0x1000 + 3 Ã— 8 = 0x1018  C) 0x0B Ã— 8 = 0x58  D) 0x1000 + 0x0B = 0x100B
+A) 0x1000 + 0x0B × 8 = 0x1058  B) 0x1000 + 3 × 8 = 0x1018  C) 0x0B × 8 = 0x58  D) 0x1000 + 0x0B = 0x100B
 
 <details>
 <summary>Show Solution</summary>
 
 **Answer: A) 0x1058**
 
-**Formula:** ISR_address_location = IDT_base + Vector_number Ã— Entry_size
+**Formula:** ISR_address_location = IDT_base + Vector_number × Entry_size
 
 IDT base = 0x1000
 Vector number = 0x0B (11 decimal)
 Entry size = 8 bytes
 
-Address = 0x1000 + 0x0B Ã— 8 = 0x1000 + 0x58 = 0x1058
+Address = 0x1000 + 0x0B × 8 = 0x1000 + 0x58 = 0x1058
 
 The 8-byte entry at 0x1058 contains the ISR address (segment selector + offset) for interrupt vector 0x0B.
 
@@ -1339,7 +1339,7 @@ The 8-byte entry at 0x1058 contains the ISR address (segment selector + offset) 
 - Offset[0:15] (2 bytes)
 - Segment selector (2 bytes)
 - Flags (2 bytes)
-- Offset[16:31] (2 bytes) â€” 4 bytes in x64
+- Offset[16:31] (2 bytes) — 4 bytes in x64
 </details>
 
 > **GATE 2016:** A computer uses interrupt-driven I/O with a device that produces 1000 interrupts per second. Each ISR takes 500 cycles. The CPU runs at 2 GHz. What percentage of CPU time is spent on I/O?
@@ -1351,57 +1351,57 @@ A) 0.0125%  B) 0.025%  C) 0.05%  D) 0.1%
 
 **Answer: B) 0.025%**
 
-**Formula:** CPU_I/O_time = (Interrupts_per_second Ã— ISR_cycles) / Clock_rate
+**Formula:** CPU_I/O_time = (Interrupts_per_second × ISR_cycles) / Clock_rate
 
 Interrupts per second = 1000
 ISR cycles = 500
-Total cycles for I/O = 1000 Ã— 500 = 500,000 cycles/s
-CPU clock = 2 GHz = 2Ã—10â¹ cycles/s
+Total cycles for I/O = 1000 × 500 = 500,000 cycles/s
+CPU clock = 2 GHz = 2×10⁹ cycles/s
 
-CPU percentage = 500,000 / (2Ã—10â¹) = 0.00025 = 0.025%
+CPU percentage = 500,000 / (2×10⁹) = 0.00025 = 0.025%
 
 **If device produces 1,000,000 interrupts/sec:**
-CPU percentage = 1,000,000 Ã— 500 / 2Ã—10â¹ = 25% â€” excessive!
+CPU percentage = 1,000,000 × 500 / 2×10⁹ = 25% — excessive!
 
 **Solution for high-speed devices:** Use interrupt coalescing (batch multiple events per interrupt) or switch to DMA.
 </details>
 
-> **GATE 2015:** A DMA controller transfers a 4 KB block in burst mode with bus speed 100 MHz, 32-bit data bus. Calculate total transfer time (setup overhead = 1 Î¼s, bus acquisition = 0.5 Î¼s).
+> **GATE 2015:** A DMA controller transfers a 4 KB block in burst mode with bus speed 100 MHz, 32-bit data bus. Calculate total transfer time (setup overhead = 1 μs, bus acquisition = 0.5 μs).
 
-A) 1.5 Î¼s + 1.024 Î¼s = 2.524 Î¼s  B) 1.5 Î¼s + 1.024 ms = 1.0255 ms
-C) 1.5 Î¼s + 102.4 Î¼s = 103.9 Î¼s  D) 1.5 Î¼s + 10.24 Î¼s = 11.74 Î¼s
+A) 1.5 μs + 1.024 μs = 2.524 μs  B) 1.5 μs + 1.024 ms = 1.0255 ms
+C) 1.5 μs + 102.4 μs = 103.9 μs  D) 1.5 μs + 10.24 μs = 11.74 μs
 
 <details>
 <summary>Show Solution</summary>
 
-**Answer: A) 2.524 Î¼s**
+**Answer: A) 2.524 μs**
 
 **Formula:** Transfer_time = Setup_overhead + Bus_acquisition + Data_transfer_time
 
 **Step-by-step:**
 Bus width = 32 bits = 4 bytes
-Bus speed = 100 MHz â†’ cycle = 10 ns
+Bus speed = 100 MHz → cycle = 10 ns
 
 For 4 KB = 4096 bytes:
 Number of transfers = 4096 / 4 = 1024 transfers
-Transfer time = 1024 Ã— 10 ns = 10240 ns = 10.24 Î¼s
+Transfer time = 1024 × 10 ns = 10240 ns = 10.24 μs
 
-Total time = 1 Î¼s + 0.5 Î¼s + 10.24 Î¼s = 11.74 Î¼s
+Total time = 1 μs + 0.5 μs + 10.24 μs = 11.74 μs
 
-Wait, 11.74 Î¼s corresponds to option D. But option A says 2.524 Î¼s. Let me recalculate.
+Wait, 11.74 μs corresponds to option D. But option A says 2.524 μs. Let me recalculate.
 
-Hmm: 1.5 + 10.24 = 11.74 Î¼s. That's option D.
+Hmm: 1.5 + 10.24 = 11.74 μs. That's option D.
 
-Oh wait, option A says 1.5 + 1.024 = 2.524. That would be if the transfer time is 1.024 Î¼s. But 1024 Ã— 10 ns = 10.24 Î¼s, not 1.024 Î¼s.
+Oh wait, option A says 1.5 + 1.024 = 2.524. That would be if the transfer time is 1.024 μs. But 1024 × 10 ns = 10.24 μs, not 1.024 μs.
 
-Let me verify: 4096 bytes / 4 bytes per transfer = 1024 transfers. 1024 Ã— 10 ns = 10240 ns = 10.24 Î¼s.
+Let me verify: 4096 bytes / 4 bytes per transfer = 1024 transfers. 1024 × 10 ns = 10240 ns = 10.24 μs.
 
-So total = 1 + 0.5 + 10.24 = 11.74 Î¼s.
+So total = 1 + 0.5 + 10.24 = 11.74 μs.
 
-**Answer: D) 11.74 Î¼s**
+**Answer: D) 11.74 μs**
 </details>
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **Q1.** Which I/O method completely frees the CPU from participating in data transfer?
 
@@ -1453,9 +1453,9 @@ A) 50%  B) 75%  C) 87.5%  D) 100%
 
 **Answer: C) 87.5%**
 
-**Formula:** RAID 5 efficiency = (Nâˆ’1)/N Ã— 100%
+**Formula:** RAID 5 efficiency = (N−1)/N × 100%
 
-For N = 8: 7/8 Ã— 100% = 87.5%
+For N = 8: 7/8 × 100% = 87.5%
 
 **Comparison for N=8:**
 | Level | Efficiency | Usable Capacity (4TB drives) |
@@ -1481,12 +1481,12 @@ C) The device directly provides the ISR code  D) The CPU generates the address r
 
 In vectored interrupts:
 1. Device asserts IRQ line
-2. PIC assigns priority and sends vector number (0â€“255) to CPU
+2. PIC assigns priority and sends vector number (0–255) to CPU
 3. CPU uses vector number as index into Interrupt Descriptor Table (IDT)
 4. IDT entry contains the ISR address (segment selector + offset)
 5. CPU jumps to ISR
 
-**Non-vectored alternative:** One common ISR entry point; ISR must poll to identify the device â†’ slower but simpler hardware.
+**Non-vectored alternative:** One common ISR entry point; ISR must poll to identify the device → slower but simpler hardware.
 </details>
 
 ---
@@ -1500,28 +1500,28 @@ A) 0.5 ms  B) 1.0 ms  C) 2.0 ms  D) 4.0 ms
 
 **Answer: A) 0.5 ms**
 
-**Formula:** Transfer_time = Data_size / (Bus_width Ã— Bus_frequency)
+**Formula:** Transfer_time = Data_size / (Bus_width × Bus_frequency)
 
 Bus width = 64 bits = 8 bytes
-Bandwidth = 8 Ã— 400Ã—10â¶ = 3.2 Ã— 10â¹ bytes/s = 3.2 GB/s
-Data size = 1 MB = 10â¶ bytes (or 2Â²â° = 1,048,576 bytes)
+Bandwidth = 8 × 400×10⁶ = 3.2 × 10⁹ bytes/s = 3.2 GB/s
+Data size = 1 MB = 10⁶ bytes (or 2²⁰ = 1,048,576 bytes)
 
-Time = 1,048,576 / (3.2Ã—10â¹) = 0.00032768 s = 0.328 ms
+Time = 1,048,576 / (3.2×10⁹) = 0.00032768 s = 0.328 ms
 
-Hmm, that's not exactly matching. Let me use 10â¶ for simplicity:
-Time = 10â¶ / (3.2Ã—10â¹) = 0.3125 ms
+Hmm, that's not exactly matching. Let me use 10⁶ for simplicity:
+Time = 10⁶ / (3.2×10⁹) = 0.3125 ms
 
 Closest to option A) 0.5 ms... hmm, let me try with 32-bit bus and 200 MHz:
-Bandwidth = 4 Ã— 200Ã—10â¶ = 800 MB/s
-Time = 10â¶ / (800Ã—10â¶) = 0.00125 s = 1.25 ms â€” not matching either.
+Bandwidth = 4 × 200×10⁶ = 800 MB/s
+Time = 10⁶ / (800×10⁶) = 0.00125 s = 1.25 ms — not matching either.
 
-Let me try: 32-bit, 100 MHz: 4 Ã— 100Ã—10â¶ = 400 MB/s.
-Time = 1,048,576 / (400Ã—10â¶) = 2.62 ms â€” not matching.
+Let me try: 32-bit, 100 MHz: 4 × 100×10⁶ = 400 MB/s.
+Time = 1,048,576 / (400×10⁶) = 2.62 ms — not matching.
 
 With overhead included: negligible for large transfers.
 
-Let me try: 64-bit, 200 MHz: 8 Ã— 200Ã—10â¶ = 1.6 GB/s.
-Time = 1,048,576 / (1.6Ã—10â¹) = 0.655 ms â€” closest to A.
+Let me try: 64-bit, 200 MHz: 8 × 200×10⁶ = 1.6 GB/s.
+Time = 1,048,576 / (1.6×10⁹) = 0.655 ms — closest to A.
 
 **Answer: A) ~0.5 ms** (approximately, depends on exact bus parameters)
 </details>
@@ -1544,7 +1544,7 @@ Non-maskable interrupts (NMI) are reserved for critical system events that must 
 - Temperature threshold exceeded
 
 **Maskable interrupts** (can be disabled via IF flag in x86):
-- Keyboard, mouse, disk, network, timer â€” normal I/O device interrupts
+- Keyboard, mouse, disk, network, timer — normal I/O device interrupts
 </details>
 
 ---
@@ -1565,7 +1565,7 @@ In daisy chain arbitration:
 - That device can accept the acknowledge; if it didn't request, it passes INTA to the next device
 - **Priority = distance from CPU:** closest = highest priority
 
-**Drawback:** Priority is fixed by physical wiring â€” cannot be changed in software.
+**Drawback:** Priority is fixed by physical wiring — cannot be changed in software.
 </details>
 
 ---
@@ -1581,11 +1581,11 @@ A) 100,000/s  B) 200,000/s  C) 250,000/s  D) 500,000/s
 
 **Formula:** Max_interrupt_rate = (CPU_cycles_available) / Cycles_per_interrupt
 
-CPU cycles per second = 10â¹
-Available at 20% = 0.20 Ã— 10â¹ = 2Ã—10â¸ cycles
+CPU cycles per second = 10⁹
+Available at 20% = 0.20 × 10⁹ = 2×10⁸ cycles
 Cycles per interrupt = 1000
 
-Max rate = 2Ã—10â¸ / 1000 = 200,000 interrupts/second
+Max rate = 2×10⁸ / 1000 = 200,000 interrupts/second
 
 **Key insight:** Each interrupt consumes CPU processing time. At high rates, interrupts can consume 100% CPU (interrupt livelock).
 </details>
@@ -1637,7 +1637,7 @@ RAID 10 (1+0) = mirrored pairs striped. With 8 disks:
 
 **Critical caveat:** If two disks in the SAME mirror pair fail, data is lost. So the 4 failures must be in 4 different pairs.
 
-**In practice:** RAID 10's fault tolerance is stated as "one per mirror pair" â€” up to N/2 failures if they're in different pairs.
+**In practice:** RAID 10's fault tolerance is stated as "one per mirror pair" — up to N/2 failures if they're in different pairs.
 </details>
 
 ---
@@ -1693,9 +1693,9 @@ A) 0.001%  B) 0.005%  C) 0.01%  D) 0.1%
 
 **Answer: C) 0.01%**
 
-**Formula:** Overhead = (Checks_per_sec Ã— Cycles_per_check) / Clock_rate
+**Formula:** Overhead = (Checks_per_sec × Cycles_per_check) / Clock_rate
 
-Overhead = (2000 Ã— 100) / (2Ã—10â¹) = 200,000 / 2Ã—10â¹ = 0.0001 = 0.01%
+Overhead = (2000 × 100) / (2×10⁹) = 200,000 / 2×10⁹ = 0.0001 = 0.01%
 
 **Observation:** Polling overhead is very low for slow devices (keyboard: ~100 bytes/s). For fast devices (NVMe: ~1 GB/s), polling becomes inefficient.
 </details>
@@ -1715,7 +1715,7 @@ C) To disable further interrupts  D) To identify the interrupt source
 Context saving preserves the state of the interrupted program so it can resume correctly after the ISR completes.
 
 **What is saved:**
-- Program Counter (PC) â€” saved automatically by hardware
+- Program Counter (PC) — saved automatically by hardware
 - Processor Status Word (PSW/FLAGS)
 - General-purpose registers (saved by ISR code)
 - Stack pointer and other system registers
@@ -1723,12 +1723,12 @@ Context saving preserves the state of the interrupted program so it can resume c
 **Types of context save:**
 - Full context save (all registers): Every ISR saves affected registers
 - Partial context save: ISR saves and restores only the registers it modifies
-- Shadow registers: Some CPUs (ARM FIQ mode) have banked registers â€” no save needed
+- Shadow registers: Some CPUs (ARM FIQ mode) have banked registers — no save needed
 </details>
 
 ---
 
-**Q15.** A 64-bit PCIe 4.0 Ã—16 link has what theoretical bandwidth?
+**Q15.** A 64-bit PCIe 4.0 ×16 link has what theoretical bandwidth?
 
 A) 16 GB/s  B) 32 GB/s  C) 64 GB/s  D) 128 GB/s
 
@@ -1737,16 +1737,16 @@ A) 16 GB/s  B) 32 GB/s  C) 64 GB/s  D) 128 GB/s
 
 **Answer: B) 32 GB/s**
 
-**Formula:** Bandwidth = Lane_count Ã— Transfer_rate Ã— Encoding_efficiency
+**Formula:** Bandwidth = Lane_count × Transfer_rate × Encoding_efficiency
 
 PCIe 4.0: 16 GT/s per lane
-Encoding: 128b/130b â†’ efficiency = 128/130 = 0.9846
+Encoding: 128b/130b → efficiency = 128/130 = 0.9846
 
-Per lane data rate = 16 Ã— 0.9846 = 15.75 Gbps
-Ã—16 lanes = 252 Gbps = 31.5 GB/s â‰ˆ 32 GB/s bidirectional
+Per lane data rate = 16 × 0.9846 = 15.75 Gbps
+×16 lanes = 252 Gbps = 31.5 GB/s ≈ 32 GB/s bidirectional
 
-**Full bandwidth table (Ã—16):**
-| Gen | Per Lane | Ã—16 Bandwidth |
+**Full bandwidth table (×16):**
+| Gen | Per Lane | ×16 Bandwidth |
 |-----|----------|---------------|
 | 1.0 | 2.5 GT/s | 4 GB/s |
 | 2.0 | 5.0 GT/s | 8 GB/s |
@@ -1787,18 +1787,18 @@ A) 16 TB  B) 20 TB  C) 4 TB  D) 12 TB
 
 **Answer: A) 16 TB**
 
-**Formula:** RAID 5 = (Nâˆ’1) Ã— Disk_size
+**Formula:** RAID 5 = (N−1) × Disk_size
 
 For 5 disks at 4 TB each:
-Usable = (5âˆ’1) Ã— 4 TB = 4 Ã— 4 = 16 TB
+Usable = (5−1) × 4 TB = 4 × 4 = 16 TB
 
 **Breakdown:**
-- Total raw capacity = 5 Ã— 4 = 20 TB
+- Total raw capacity = 5 × 4 = 20 TB
 - Parity overhead = 1 disk equivalent = 4 TB
-- Usable = 20 âˆ’ 4 = 16 TB
+- Usable = 20 − 4 = 16 TB
 - Efficiency = 16/20 = 80%
 
-**Note:** RAID 5 distributed parity means no single disk is dedicated to parity â€” parity blocks are spread across all disks, but the total space consumed equals one disk worth of parity.
+**Note:** RAID 5 distributed parity means no single disk is dedicated to parity — parity blocks are spread across all disks, but the total space consumed equals one disk worth of parity.
 </details>
 
 ---
@@ -1828,7 +1828,7 @@ An I/O processor can execute complex I/O programs independently, while a DMA con
 
 ---
 
-**Q19.** USB 3.2 Gen 2Ã—2 provides what maximum signaling rate?
+**Q19.** USB 3.2 Gen 2×2 provides what maximum signaling rate?
 
 A) 5 Gbps  B) 10 Gbps  C) 20 Gbps  D) 40 Gbps
 
@@ -1837,18 +1837,18 @@ A) 5 Gbps  B) 10 Gbps  C) 20 Gbps  D) 40 Gbps
 
 **Answer: C) 20 Gbps**
 
-USB 3.2 Gen 2Ã—2 (Dual-Lane):
-- 2 lanes Ã— 10 Gbps per lane = 20 Gbps total
+USB 3.2 Gen 2×2 (Dual-Lane):
+- 2 lanes × 10 Gbps per lane = 20 Gbps total
 - Requires USB-C connector (features the extra lane pins)
-- Encoding: 128b/132b â†’ efficiency â‰ˆ 97%
-- Effective: ~19.4 Gbps â‰ˆ 2.4 GB/s
+- Encoding: 128b/132b → efficiency ≈ 97%
+- Effective: ~19.4 Gbps ≈ 2.4 GB/s
 
 **USB generations summary:**
 | Standard | Speed | Encoding |
 |----------|-------|----------|
 | USB 3.0 (Gen 1) | 5 Gbps | 8b/10b |
 | USB 3.1 (Gen 2) | 10 Gbps | 128b/132b |
-| USB 3.2 (Gen 2Ã—2) | 20 Gbps | 128b/132b |
+| USB 3.2 (Gen 2×2) | 20 Gbps | 128b/132b |
 | USB4 | 40 Gbps | 128b/132b |
 </details>
 
@@ -1865,11 +1865,11 @@ C) Total time from interrupt to resumption of interrupted program  D) Time to sa
 **Answer: B) Time between interrupt request and first instruction of ISR**
 
 **Interrupt latency components:**
-1. Device asserts IRQ â†’ CPU receives signal (propagation delay, ~ns)
-2. CPU completes current instruction (0â€“many cycles)
-3. CPU saves PC and PSW (automatic by hardware, ~2â€“4 cycles)
+1. Device asserts IRQ → CPU receives signal (propagation delay, ~ns)
+2. CPU completes current instruction (0–many cycles)
+3. CPU saves PC and PSW (automatic by hardware, ~2–4 cycles)
 4. CPU disables interrupts (1 cycle)
-5. CPU looks up ISR address in IDT (1â€“2 cycles)
+5. CPU looks up ISR address in IDT (1–2 cycles)
 6. CPU starts executing ISR first instruction
 
 **Factors affecting interrupt latency:**
@@ -1881,17 +1881,17 @@ C) Total time from interrupt to resumption of interrupted program  D) Time to sa
 **Real-time requirement:** Interrupt latency must be bounded for hard real-time systems.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 **Q1.** A 1 GHz CPU uses programmed I/O to read from a 500 KB/s device. Each polling check takes 80 cycles. Calculate CPU utilization for byte-by-byte polling vs block polling (512-byte blocks).
 
 **Q2.** Design the interrupt handling flow for a system with 4 devices (printer, disk, keyboard, mouse). Assign priorities and show the state diagram for nested interrupts.
 
-**Q3.** Calculate the maximum throughput of a PCIe 5.0 Ã—8 link in GB/s. Include encoding efficiency.
+**Q3.** Calculate the maximum throughput of a PCIe 5.0 ×8 link in GB/s. Include encoding efficiency.
 
 **Q4.** A RAID 6 array has 10 disks of 3 TB each. Calculate: (a) usable capacity, (b) storage efficiency, (c) how many disk failures can be survived, (d) rebuild time assuming 200 MB/s read speed during rebuild.
 
-**Q5.** A DMA controller transfers 256 KB using burst mode. Bus = 64-bit, 100 MHz. Calculate: (a) transfer time without overhead, (b) transfer time with 2 Î¼s setup + 0.5 Î¼s interrupt.
+**Q5.** A DMA controller transfers 256 KB using burst mode. Bus = 64-bit, 100 MHz. Calculate: (a) transfer time without overhead, (b) transfer time with 2 μs setup + 0.5 μs interrupt.
 
 **Q6.** Compare programmed I/O, interrupt-driven I/O, and DMA for transferring 1 MB at 100 MB/s on a 2 GHz CPU. Compute CPU utilization for each method.
 
@@ -1913,7 +1913,7 @@ C) Total time from interrupt to resumption of interrupted program  D) Time to sa
 
 **Q15.** A system uses memory-mapped I/O with 16-bit registers. The top 8 KB of a 32-bit address space is reserved for I/O. How many registers can be mapped? How does the CPU distinguish memory from I/O accesses?
 
-**Q16.** For a PCIe link negotiation, explain how lane width (Ã—1, Ã—4, Ã—8, Ã—16) is determined between the root complex and endpoint.
+**Q16.** For a PCIe link negotiation, explain how lane width (×1, ×4, ×8, ×16) is determined between the root complex and endpoint.
 
 **Q17.** Design a DMA controller state machine with states: Idle, Program, BusRequest, BurstTransfer, CycleSteal, Completion. Show state transitions.
 
@@ -1923,7 +1923,7 @@ C) Total time from interrupt to resumption of interrupted program  D) Time to sa
 
 **Q20.** A system has 8 I/O devices, each with a different interrupt priority. Design a programmable interrupt controller (PIC) that supports: (a) fixed priority, (b) rotating priority.
 
-**Q21.** Calculate the effective data rate of a PCIe 3.0 Ã—4 link for a NVMe SSD. Show the calculation from raw bit rate to usable data throughput.
+**Q21.** Calculate the effective data rate of a PCIe 3.0 ×4 link for a NVMe SSD. Show the calculation from raw bit rate to usable data throughput.
 
 **Q22.** Compare the rebuild time for RAID 5 vs RAID 6 with 8 disks of 16 TB each. Why is RAID 6 rebuild riskier than RAID 5?
 
@@ -1933,86 +1933,86 @@ C) Total time from interrupt to resumption of interrupted program  D) Time to sa
 
 **Q25.** For the USB transfer types (control, bulk, isochronous, interrupt), identify which type is best for: (a) keyboard, (b) video camera, (c) file transfer to printer, (d) device configuration.
 
-**Q26.** A data center uses RAID 6 with 12 Ã— 20 TB HDDs. Calculate: (a) total raw capacity, (b) usable capacity, (c) rebuild time at 150 MB/s, (d) probability of data loss during rebuild if disk AFR = 3%.
+**Q26.** A data center uses RAID 6 with 12 × 20 TB HDDs. Calculate: (a) total raw capacity, (b) usable capacity, (c) rebuild time at 150 MB/s, (d) probability of data loss during rebuild if disk AFR = 3%.
 
-**Q27.** Design a memory-mapped I/O system for an embedded device with: 2 UARTs, 1 SPI controller, 1 IÂ²C controller, 1 GPIO port (32-bit). Show address allocation and register layout.
+**Q27.** Design a memory-mapped I/O system for an embedded device with: 2 UARTs, 1 SPI controller, 1 I²C controller, 1 GPIO port (32-bit). Show address allocation and register layout.
 
-**Q28.** Compare the three DMA modes (burst, cycle stealing, transparent) for a real-time audio system that cannot tolerate CPU delays > 1 Î¼s. Which mode is most suitable?
+**Q28.** Compare the three DMA modes (burst, cycle stealing, transparent) for a real-time audio system that cannot tolerate CPU delays > 1 μs. Which mode is most suitable?
 
 **Q29.** A network card generates 50,000 interrupts/s. With interrupt coalescing (batch 10 packets per interrupt), the interrupt rate drops. Calculate the CPU savings if each ISR takes 1500 cycles on a 3 GHz CPU.
 
-**Q30.** A RAID controller supports RAID 0, 1, 5, 6, and 10. Given 6 Ã— 4 TB disks, recommend a RAID level for: (a) video editing workstation, (b) financial database server, (c) archival backup, (d) OS boot drive. Justify each choice.
+**Q30.** A RAID controller supports RAID 0, 1, 5, 6, and 10. Given 6 × 4 TB disks, recommend a RAID level for: (a) video editing workstation, (b) financial database server, (c) archival backup, (d) OS boot drive. Justify each choice.
 
 **Answer Key:**
 
 <details>
 <summary>Show Answer Key</summary>
 
-**A1.** Byte-by-byte: 500Ã—1024 checks/s Ã— 80 cycles = 40,960,000 cycles/s. CPU util = 40.96Ã—10â¶/10â¹ = 4.1%.
-Block (512): 1000 checks/s Ã— 80 cycles = 80,000 cycles/s. CPU util = 0.008%. Block polling is 500Ã— more efficient.
+**A1.** Byte-by-byte: 500×1024 checks/s × 80 cycles = 40,960,000 cycles/s. CPU util = 40.96×10⁶/10⁹ = 4.1%.
+Block (512): 1000 checks/s × 80 cycles = 80,000 cycles/s. CPU util = 0.008%. Block polling is 500× more efficient.
 
 **A2.** Priority (highest to lowest): Disk (real-time), Printer (medium), Keyboard (human speed), Mouse (human speed). Nested interrupts: if disk ISR is executing and keyboard interrupt occurs, keyboard ISR is postponed if mask bit for keyboard is set. If priority-based masking used, lower-priority keyboard cannot interrupt higher-priority disk ISR, but disk can interrupt keyboard ISR.
 
-**A3.** PCIe 5.0: 32 GT/s Ã— 8 lanes Ã— 128/130 encoding = 32Ã—8Ã—0.9846 = 252 Gbps = 31.5 GB/s. Note: this is bidirectional; each direction = 15.75 GB/s.
+**A3.** PCIe 5.0: 32 GT/s × 8 lanes × 128/130 encoding = 32×8×0.9846 = 252 Gbps = 31.5 GB/s. Note: this is bidirectional; each direction = 15.75 GB/s.
 
-**A4.** (a) (10âˆ’2)Ã—3 = 24 TB. (b) 24/30 = 80%. (c) 2 disk failures maximum. (d) Rebuild = 24Ã—1024 GB / (200 MB/s) = 122,880 s â‰ˆ 34.1 hours (1.4 days).
+**A4.** (a) (10−2)×3 = 24 TB. (b) 24/30 = 80%. (c) 2 disk failures maximum. (d) Rebuild = 24×1024 GB / (200 MB/s) = 122,880 s ≈ 34.1 hours (1.4 days).
 
-**A5.** (a) Data = 256Ã—1024 bytes, bus width = 8 bytes. Transfers = 32,768. Time = 32,768 Ã— 10 ns = 327,680 ns = 0.328 ms. (b) Total = 2 Î¼s + 0.5 Î¼s + 327.68 Î¼s = 330.18 Î¼s.
+**A5.** (a) Data = 256×1024 bytes, bus width = 8 bytes. Transfers = 32,768. Time = 32,768 × 10 ns = 327,680 ns = 0.328 ms. (b) Total = 2 μs + 0.5 μs + 327.68 μs = 330.18 μs.
 
-**A6.** Prog I/O (byte): 10â¶ transfers Ã— 100 cycles = 10â¸ cycles, util = 5%.
-Interrupt (512 byte blocks): 2048 interrupts Ã— 500 cycles = 1.024Ã—10â¶ cycles, util = 0.05%.
+**A6.** Prog I/O (byte): 10⁶ transfers × 100 cycles = 10⁸ cycles, util = 5%.
+Interrupt (512 byte blocks): 2048 interrupts × 500 cycles = 1.024×10⁶ cycles, util = 0.05%.
 DMA: 1 setup (2000 cycles) + 1 completion interrupt (500 cycles) = 2500 cycles, util = 0.000125%.
 Winner: DMA by orders of magnitude.
 
-**A7.** Daisy chain: Device 1 (closest) â†’ Device 2 â†’ Device 3 (farthest). All 3 request simultaneously. Arbiter asserts grant. Grant reaches D1 first â€” D1 starts transfer. After D1 completes, grant passes to D2, then D3. Timing: D1's transfer overlaps with grant propagation to D2/D3 bus idle.
+**A7.** Daisy chain: Device 1 (closest) → Device 2 → Device 3 (farthest). All 3 request simultaneously. Arbiter asserts grant. Grant reaches D1 first — D1 starts transfer. After D1 completes, grant passes to D2, then D3. Timing: D1's transfer overlaps with grant propagation to D2/D3 bus idle.
 
 **A8.** Isolated I/O: IN/OUT instructions, separate address space (x86: 16-bit port address = 64K ports). Example: `IN AL, 60h` reads keyboard. Memory-mapped I/O: LOAD/STORE to I/O addresses (ARM: `LDR R1, [R2]` where R2 = UART base address). Addresses decoded to I/O bus vs memory bus by address range.
 
-**A9.** RAID 5 recovery: Replace failed disk, start rebuild. For each stripe: read Nâˆ’2 data blocks (5 blocks) + parity block (1 block) = 6 reads, XOR to reconstruct missing block, write to new disk = 1 write. Per 4 KB block: 6 reads + 1 write. Total for full rebuild: 6Ã—4 TB = 24 TB read from surviving disks.
+**A9.** RAID 5 recovery: Replace failed disk, start rebuild. For each stripe: read N−2 data blocks (5 blocks) + parity block (1 block) = 6 reads, XOR to reconstruct missing block, write to new disk = 1 write. Per 4 KB block: 6 reads + 1 write. Total for full rebuild: 6×4 TB = 24 TB read from surviving disks.
 
-**A10.** USB4: 40 Gbps. Overhead = 90% â†’ effective = 36 Gbps = 4.5 GB/s. Time = 10 GB / 4.5 GB/s = 2.22 seconds.
+**A10.** USB4: 40 Gbps. Overhead = 90% → effective = 36 Gbps = 4.5 GB/s. Time = 10 GB / 4.5 GB/s = 2.22 seconds.
 
-**A11.** Cycles per second = 10,000 Ã— 800 = 8Ã—10â¶. CPU util = 8Ã—10â¶ / 2.5Ã—10â¹ = 0.0032 = 0.32%.
+**A11.** Cycles per second = 10,000 × 800 = 8×10⁶. CPU util = 8×10⁶ / 2.5×10⁹ = 0.0032 = 0.32%.
 
 **A12.** Round-robin DMA: Channel 1 transfers (up to programmed count), then 2, 3, 4, then back to 1. Each channel gets fair bus access. When all 4 request: equal time slices. If some channels have no work, they're skipped. Ensures no channel starves.
 
 **A13.** IDT (Interrupt Descriptor Table) in x86 protected mode: 256 entries (8 bytes each). Entry = ISR offset[0:15] + segment selector + flags + offset[16:31]. When interrupt with vector N occurs: CPU multiplies N by 8, adds IDTR base, reads gate descriptor. CPU then: pushes SS, ESP, EFLAGS, CS, EIP. If interrupt gate: IF cleared (further interrupts disabled). CPU jumps to ISR.
 
-**A14.** RAID 5 (12 disks): efficiency = 11/12 = 91.7%, usable = 11Ã—4TB = 44TB, write penalty 4Ã— (RMW). RAID 10 (12 disks): efficiency = 50%, usable = 6Ã—4TB = 24TB, no write penalty. For database: RAID 10 provides better write performance (no parity calculation), faster recovery, and multiple failure tolerance. Recommendation: RAID 10 for OLTP databases.
+**A14.** RAID 5 (12 disks): efficiency = 11/12 = 91.7%, usable = 11×4TB = 44TB, write penalty 4× (RMW). RAID 10 (12 disks): efficiency = 50%, usable = 6×4TB = 24TB, no write penalty. For database: RAID 10 provides better write performance (no parity calculation), faster recovery, and multiple failure tolerance. Recommendation: RAID 10 for OLTP databases.
 
-**A15.** Address space = 32 bits â†’ 4 GB. I/O reserved = 8 KB = 8192 bytes. 16-bit registers = 2 bytes each. Max registers = 8192/2 = 4096 registers. CPU distinguishes by address decoding: I/O range decoder asserts I/O chip select vs memory chip select.
+**A15.** Address space = 32 bits → 4 GB. I/O reserved = 8 KB = 8192 bytes. 16-bit registers = 2 bytes each. Max registers = 8192/2 = 4096 registers. CPU distinguishes by address decoding: I/O range decoder asserts I/O chip select vs memory chip select.
 
-**A16.** PCIe link negotiation: Initial training: both sides start at Ã—1 width. Link Training and Status State Machine (LTSSM) detects supported width. If both support wider (e.g., Ã—4), they negotiate to Ã—4 during recovery/reconfiguration. Width is determined by: both sides' capability, board routing, and electrical signal quality. Downshift if errors detected.
+**A16.** PCIe link negotiation: Initial training: both sides start at ×1 width. Link Training and Status State Machine (LTSSM) detects supported width. If both support wider (e.g., ×4), they negotiate to ×4 during recovery/reconfiguration. Width is determined by: both sides' capability, board routing, and electrical signal quality. Downshift if errors detected.
 
-**A17.** DMA state machine: Idle â†’ (CPU programs registers) â†’ Programmed â†’ (CPU writes start bit) â†’ BusRequest â†’ (CPU grants bus) â†’ if burst: BurstTransfer â†’ count=0 â†’ Completion â†’ interrupt CPU â†’ Idle. If cycle steal: BusRequest â†’ CycleSteal (1 word) â†’ count>0 â†’ BusRequest again. If count=0 â†’ Completion.
+**A17.** DMA state machine: Idle → (CPU programs registers) → Programmed → (CPU writes start bit) → BusRequest → (CPU grants bus) → if burst: BurstTransfer → count=0 → Completion → interrupt CPU → Idle. If cycle steal: BusRequest → CycleSteal (1 word) → count>0 → BusRequest again. If count=0 → Completion.
 
-**A18.** Sequential: 4 Ã— 500 MB/s = 2000 MB/s. Random: each SSD 100K IOPS, total = 4 Ã— 100K = 400K IOPS. Note: random IOPS doesn't scale perfectly with disk count due to controller overhead, but close to linear for RAID 0.
+**A18.** Sequential: 4 × 500 MB/s = 2000 MB/s. Random: each SSD 100K IOPS, total = 4 × 100K = 400K IOPS. Note: random IOPS doesn't scale perfectly with disk count due to controller overhead, but close to linear for RAID 0.
 
 **A19.** Interrupt coalescing: NIC waits to generate interrupt until multiple packets arrive (or timer expires). Instead of 50,000 interrupts/s, with coalescing factor 10: 5000 interrupts/s. CPU overhead reduces proportionally. Trade-off: slightly increased latency per packet (must wait for coalescing timeout).
 
 **A20.** Fixed priority: IRQ0 = highest, IRQ7 = lowest. Mask register disables specific IRQs. Rotating: after each interrupt, its priority drops to lowest; others rotate up. Implemented by rotating the priority encoder input mapping. Fairness for all devices.
 
-**A21.** PCIe 3.0 Ã—4: 8 GT/s per lane Ã— 4 lanes = 32 GT/s total. Encoding: 128/130 = 98.46%. Raw data: 32 Ã— 0.9846 = 31.5 Gbps = 3.94 GB/s. Protocol overhead (TLP/DLLP framing â‰ˆ 5%): effective â‰ˆ 3.74 GB/s. NVMe protocol overhead â‰ˆ 3%: final â‰ˆ 3.63 GB/s.
+**A21.** PCIe 3.0 ×4: 8 GT/s per lane × 4 lanes = 32 GT/s total. Encoding: 128/130 = 98.46%. Raw data: 32 × 0.9846 = 31.5 Gbps = 3.94 GB/s. Protocol overhead (TLP/DLLP framing ≈ 5%): effective ≈ 3.74 GB/s. NVMe protocol overhead ≈ 3%: final ≈ 3.63 GB/s.
 
-**A22.** RAID 5 (8Ã—16TB): usable = 7Ã—16 = 112 TB, rebuild = 112Ã—1024/200 = 573 MB/s = 573,440 s = 159 hours â‰ˆ 6.6 days. RAID 6 (8Ã—16TB): usable = 6Ã—16 = 96 TB, rebuild similar time. RAID 5 risk: during long rebuild (days), second disk failure is possible â†’ data loss. With 3% AFR and 6.6 day rebuild: P(loss) â‰ˆ 8Ã—0.03Ã—(6.6/365) â‰ˆ 0.43% per rebuild. RAID 6 tolerates 2 failures, so much safer.
+**A22.** RAID 5 (8×16TB): usable = 7×16 = 112 TB, rebuild = 112×1024/200 = 573 MB/s = 573,440 s = 159 hours ≈ 6.6 days. RAID 6 (8×16TB): usable = 6×16 = 96 TB, rebuild similar time. RAID 5 risk: during long rebuild (days), second disk failure is possible → data loss. With 3% AFR and 6.6 day rebuild: P(loss) ≈ 8×0.03×(6.6/365) ≈ 0.43% per rebuild. RAID 6 tolerates 2 failures, so much safer.
 
 **A23.** I/O channel: specialized processor executing channel programs (CCWs) from memory. Can handle: data transfer, format conversion, error recovery, device commands, multiple concurrent transfers. DMA: simple register-based transfer engine. IBM mainframe channels: byte multiplexor (slow devices), selector (fast, one at a time), block multiplexor (fast, multiple concurrent).
 
-**A24.** Bus bandwidth = 8 bytes Ã— 800 MHz = 6.4 GB/s. 2 MB time = 2Ã—10â¶ / 6.4Ã—10â¹ = 0.3125 ms.
-(a) Burst: 0.3125 ms (CPU blocked entirely). (b) Cycle steal: same data time but spread over âˆ¼2 MB / 64 ns per access = ... actually, each word access takes 1 cycle (1.25 ns), CPU delayed 1 cycle per word. Total CPU delay = 0.3125 ms spread over execution time. (c) Transparent: transfer only during CPU idle (30%), so wall-clock time = 0.3125/0.30 = 1.04 ms, CPU delay = 0.
+**A24.** Bus bandwidth = 8 bytes × 800 MHz = 6.4 GB/s. 2 MB time = 2×10⁶ / 6.4×10⁹ = 0.3125 ms.
+(a) Burst: 0.3125 ms (CPU blocked entirely). (b) Cycle steal: same data time but spread over ∼2 MB / 64 ns per access = ... actually, each word access takes 1 cycle (1.25 ns), CPU delayed 1 cycle per word. Total CPU delay = 0.3125 ms spread over execution time. (c) Transparent: transfer only during CPU idle (30%), so wall-clock time = 0.3125/0.30 = 1.04 ms, CPU delay = 0.
 
-**A25.** (a) Keyboard â†’ Interrupt transfer (guaranteed polling rate, low latency). (b) Video camera â†’ Isochronous (real-time streaming, no retransmission needed). (c) File transfer â†’ Bulk (large data, error-free delivery important). (d) Configuration â†’ Control (guaranteed delivery, bidirectional).
+**A25.** (a) Keyboard → Interrupt transfer (guaranteed polling rate, low latency). (b) Video camera → Isochronous (real-time streaming, no retransmission needed). (c) File transfer → Bulk (large data, error-free delivery important). (d) Configuration → Control (guaranteed delivery, bidirectional).
 
-**A26.** (a) 12 Ã— 20 = 240 TB raw. (b) (12âˆ’2) Ã— 20 = 200 TB usable. (c) Rebuild time = 200Ã—1024Ã—1024 MB / 150 MB/s = ... = 200 TB = 204800 GB = 204800 Ã— 1024 MB / 150 MB/s â‰ˆ 1,398,101 s â‰ˆ 16.2 days (impractical!). (d) P(data loss) â‰ˆ C(12,2) Ã— AFRÂ² Ã— (rebuild/8760) Ã— (10/12)... very complex. Simplistic: â‰ˆ 66 Ã— 0.03Â² Ã— (388/8760) Ã— ... â‰ˆ high risk despite RAID 6 for such large drives.
+**A26.** (a) 12 × 20 = 240 TB raw. (b) (12−2) × 20 = 200 TB usable. (c) Rebuild time = 200×1024×1024 MB / 150 MB/s = ... = 200 TB = 204800 GB = 204800 × 1024 MB / 150 MB/s ≈ 1,398,101 s ≈ 16.2 days (impractical!). (d) P(data loss) ≈ C(12,2) × AFR² × (rebuild/8760) × (10/12)... very complex. Simplistic: ≈ 66 × 0.03² × (388/8760) × ... ≈ high risk despite RAID 6 for such large drives.
 
 **A27.** Address allocation (16-bit memory-mapped I/O space):
-UART1: 0x0000â€“0x000F (16 bytes), UART2: 0x0010â€“0x001F, SPI: 0x0020â€“0x002F, IÂ²C: 0x0030â€“0x003F, GPIO: 0x0040â€“0x0043. Register layout per UART: RHR/THR(Tx/Rx), IER (interrupt), ISR (status), LCR (line control), MCR (modem), LSR (line status).
+UART1: 0x0000–0x000F (16 bytes), UART2: 0x0010–0x001F, SPI: 0x0020–0x002F, I²C: 0x0030–0x003F, GPIO: 0x0040–0x0043. Register layout per UART: RHR/THR(Tx/Rx), IER (interrupt), ISR (status), LCR (line control), MCR (modem), LSR (line status).
 
-**A28.** Real-time audio: max CPU delay = 1 Î¼s. Burst mode: CPU blocked for entire transfer (could be ms) â†’ fails requirement. Cycle stealing: max delay = 1 bus cycle (~10 ns) â†’ meets requirement. Transparent: CPU delay = 0 â†’ best, but bandwidth depends on CPU idle. Cycle stealing is the recommended mode for real-time audio systems.
+**A28.** Real-time audio: max CPU delay = 1 μs. Burst mode: CPU blocked for entire transfer (could be ms) → fails requirement. Cycle stealing: max delay = 1 bus cycle (~10 ns) → meets requirement. Transparent: CPU delay = 0 → best, but bandwidth depends on CPU idle. Cycle stealing is the recommended mode for real-time audio systems.
 
-**A29.** Without coalescing: 50,000 Ã— 1500 = 75Ã—10â¶ cycles/s. With coalescing (10 packets): 5000 Ã— 1500 = 7.5Ã—10â¶ cycles/s. CPU savings = 67.5Ã—10â¶ / 3Ã—10â¹ = 2.25% of CPU time saved.
+**A29.** Without coalescing: 50,000 × 1500 = 75×10⁶ cycles/s. With coalescing (10 packets): 5000 × 1500 = 7.5×10⁶ cycles/s. CPU savings = 67.5×10⁶ / 3×10⁹ = 2.25% of CPU time saved.
 
-**A30.** (a) Video editing: RAID 0 (max throughput, no redundancy â€” video files are temporary/cachable). (b) Financial DB: RAID 10 (performance + fault tolerance, critical writes). (c) Archival: RAID 6 (long-term storage, protection against dual failure during long rebuild). (d) OS boot: RAID 1 (mirroring for reliability, simple setup, fast reads).
+**A30.** (a) Video editing: RAID 0 (max throughput, no redundancy — video files are temporary/cachable). (b) Financial DB: RAID 10 (performance + fault tolerance, critical writes). (c) Archival: RAID 6 (long-term storage, protection against dual failure during long rebuild). (d) OS boot: RAID 1 (mirroring for reliability, simple setup, fast reads).
 </details>
 
 ## Summary
@@ -2021,18 +2021,18 @@ UART1: 0x0000â€“0x000F (16 bytes), UART2: 0x0010â€“0x001F, SPI: 0x0020
 - Programmed I/O: simple but wastes CPU cycles via busy-waiting. Best for slow, predictable devices.
 - Interrupt-driven I/O: efficient for sporadic events. CPU can multitask between transfers. Overhead from context switching.
 - Interrupt types: maskable (can be disabled), non-maskable (critical), vectored (fast, pre-assigned ISR address), non-vectored (polled).
-- Interrupt handler sequence: save context â†’ identify source â†’ execute ISR â†’ restore context â†’ return.
+- Interrupt handler sequence: save context → identify source → execute ISR → restore context → return.
 - DMA modes: cycle stealing (one cycle at a time), burst (continuous bus control), transparent (CPU idle cycles).
 - DMA controller includes source/destination address registers, word count register, and control logic.
 - I/O buses: PCI (parallel, shared), PCIe (serial, point-to-point, scalable lanes), USB (versatile, hot-pluggable, daisy-chain).
-- RAID levels: 0 (striping, no redundancy), 1 (mirroring, 50% efficient), 5 (distributed parity, Nâˆ’1/N efficient), 6 (dual parity, Nâˆ’2/N), 10 (mirror+stripe, 50% efficient).
+- RAID levels: 0 (striping, no redundancy), 1 (mirroring, 50% efficient), 5 (distributed parity, N−1/N efficient), 6 (dual parity, N−2/N), 10 (mirror+stripe, 50% efficient).
 
 ## Practical Takeaways
 
 - **For IBPS/GATE:** Know the exact number of disk failures tolerated by each RAID level: RAID 0 = 0, RAID 1 = 1, RAID 5 = 1, RAID 6 = 2, RAID 10 = 1 per mirrored pair.
 - **Cycle stealing vs burst:** Cycle stealing minimizes CPU delay but takes longer total transfer time. Burst mode finishes faster but starves the CPU. Exam questions often test this trade-off.
-- **PCIe bandwidth calculation:** For PCIe Gen 3+: data rate = lane count Ã— 8 GT/s Ã— (128/130). Encoding efficiency â‰ˆ 98.46%.
-- **Polling overhead shortcut:** Overhead = (poll instructions Ã— CPI / clock rate) Ã— device frequency. If the frequency is low, polling is acceptable.
+- **PCIe bandwidth calculation:** For PCIe Gen 3+: data rate = lane count × 8 GT/s × (128/130). Encoding efficiency ≈ 98.46%.
+- **Polling overhead shortcut:** Overhead = (poll instructions × CPI / clock rate) × device frequency. If the frequency is low, polling is acceptable.
 - **Interrupt vs DMA key difference:** Interrupts still involve CPU in every data transfer (the ISR copies data). DMA moves data directly between device and memory.
 - **Memory-mapped vs Isolated I/O:** Memory-mapped uses LOAD/STORE, isolated uses special IN/OUT. Memory-mapped simplifies programming but consumes address space.
 
@@ -2046,15 +2046,15 @@ UART1: 0x0000â€“0x000F (16 bytes), UART2: 0x0010â€“0x001F, SPI: 0x0020
 
 **Q2:** What is the storage efficiency of RAID 5 with 5 disks?
 
-(`<details><summary>Show Answer</summary>(Nâˆ’1)/N = 4/5 = 80%. RAID 5 with 5 disks: 4 disks of usable storage, 1 disk equivalent for parity.</details>`)
+(`<details><summary>Show Answer</summary>(N−1)/N = 4/5 = 80%. RAID 5 with 5 disks: 4 disks of usable storage, 1 disk equivalent for parity.</details>`)
 
 **Q3:** What is the difference between a vectored and a non-vectored interrupt?
 
-(`<details><summary>Show Answer</summary>Vectored: device provides a vector number that points directly to the ISR address â€” faster. Non-vectored: all devices share one ISR entry point; the ISR must poll to identify which device generated the interrupt â€” slower.</details>`)
+(`<details><summary>Show Answer</summary>Vectored: device provides a vector number that points directly to the ISR address — faster. Non-vectored: all devices share one ISR entry point; the ISR must poll to identify which device generated the interrupt — slower.</details>`)
 
 **Q4:** Calculate polling CPU overhead: Clock = 2 GHz, 200 instructions per poll (1 CPI each), device = 5000 bytes/sec.
 
-(`<details><summary>Show Answer</summary>Cycles per check = 200 Ã— 1 = 200. Checks/sec = 5000. Total cycles = 200 Ã— 5000 = 1,000,000/sec. CPU time = 1e6 / 2e9 = 0.0005 = 0.05%.</details>`)
+(`<details><summary>Show Answer</summary>Cycles per check = 200 × 1 = 200. Checks/sec = 5000. Total cycles = 200 × 5000 = 1,000,000/sec. CPU time = 1e6 / 2e9 = 0.0005 = 0.05%.</details>`)
 
 **Q5:** Which RAID level would you recommend for a database server requiring both high performance and fault tolerance?
 
@@ -2066,11 +2066,11 @@ UART1: 0x0000â€“0x000F (16 bytes), UART2: 0x0010â€“0x001F, SPI: 0x0020
 
 1. A device transfers data at 4 MB/s. Compare CPU overhead for programmed I/O (80 cycles/check, byte-by-byte) vs interrupt-driven I/O (300 cycles/interrupt, block size 512 bytes) vs DMA (500 cycles setup + 1000 cycles completion interrupt). Clock = 1 GHz.
 2. Design the interrupt handling flow for a system with 3 devices (keyboard, mouse, disk). Show priority assignment, interrupt nesting possibilities, and vector assignment.
-3. Calculate the maximum throughput of a PCIe 5.0 Ã—4 link.
+3. Calculate the maximum throughput of a PCIe 5.0 ×4 link.
 4. A RAID 6 array has 6 disks of 2 TB each. Calculate usable capacity and storage efficiency. How many disk failures can be tolerated?
 5. Compare DMA burst mode vs cycle stealing mode for transferring a 1 MB block. Bus speed = 400 MHz, 64-bit wide. Calculate transfer time and CPU delay for each mode.
 6. Explain the difference between an I/O processor and a DMA controller with a block diagram.
 7. A system uses memory-mapped I/O with 32-bit addresses. The top 4 KB of address space is reserved for I/O. How many 16-bit I/O registers can be mapped?
-8. For USB 3.2 Gen 2Ã—2 (20 Gbps), calculate the time to transfer a 4 GB file assuming no protocol overhead.
+8. For USB 3.2 Gen 2×2 (20 Gbps), calculate the time to transfer a 4 GB file assuming no protocol overhead.
 9. Design an interrupt controller for 8 devices. Show how daisy chain priority works for simultaneous interrupts.
 10. A disk array uses RAID 5 with 8 disks. If one disk fails, describe the recovery process. How many read operations are needed to reconstruct one block?

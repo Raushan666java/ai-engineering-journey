@@ -1,4 +1,4 @@
-﻿# Chapter 8: Multi-Agent Loops
+# Chapter 8: Multi-Agent Loops
 
 > **Previous:** [Loop Safety](./ch07-loop-safety.md) | **Next:** [Loop Tooling](./ch09-loop-tooling.md)
 
@@ -64,10 +64,10 @@ The **supervisor loop** is the most widely deployed multi-agent pattern. A singl
 
 ```
 Supervisor
-  â”œâ”€ Worker A: research
-  â”œâ”€ Worker B: code generation
-  â”œâ”€ Worker C: testing
-  â””â”€ Worker D: documentation
+  ├─ Worker A: research
+  ├─ Worker B: code generation
+  ├─ Worker C: testing
+  └─ Worker D: documentation
 ```
 
 **Loop flow:**
@@ -98,32 +98,32 @@ Supervisor
 Debate loops simulate structured argumentation between agents. They produce higher-quality reasoning than single-agent approaches by forcing each agent to defend its position against critique.
 
 ```
-       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-       â”‚   Motion    â”‚
-       â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
-              â”‚
-              â–¼
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  Agent Pro        â”‚
-    â”‚  (argues for)     â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-             â”‚
-             â–¼
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  Agent Con        â”‚
-    â”‚  (argues against) â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-             â”‚
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  More rounds?     â”‚â”€â”€â”€yesâ”€â”€â–º (loop back)
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-             â”‚ no
-             â–¼
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  Judge            â”‚
-    â”‚  (evaluates,      â”‚
-    â”‚   scores, decides)â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+       ┌─────────────┐
+       │   Motion    │
+       └──────┬──────┘
+              │
+              ▼
+    ┌───────────────────┐
+    │  Agent Pro        │
+    │  (argues for)     │
+    └────────┬──────────┘
+             │
+             ▼
+    ┌───────────────────┐
+    │  Agent Con        │
+    │  (argues against) │
+    └────────┬──────────┘
+             │
+    ┌────────▼──────────┐
+    │  More rounds?     │───yes──► (loop back)
+    └────────┬──────────┘
+             │ no
+             ▼
+    ┌───────────────────┐
+    │  Judge            │
+    │  (evaluates,      │
+    │   scores, decides)│
+    └───────────────────┘
 ```
 
 **Key design decisions:**
@@ -144,8 +144,8 @@ Negotiation loops model agents with different resources or objectives that must 
 **Formal model:**
 
 - Each agent has a **utility function** `U_i(x)` over outcomes `x`.
-- Each agent has a **reservation price** `R_i` â€” the minimum utility they will accept.
-- The **negotiation set** `N = {x | U_i(x) â‰¥ R_i for all i}` is the set of mutually acceptable outcomes.
+- Each agent has a **reservation price** `R_i` — the minimum utility they will accept.
+- The **negotiation set** `N = {x | U_i(x) ≥ R_i for all i}` is the set of mutually acceptable outcomes.
 - The goal is to find an outcome in the negotiation set, ideally on the **Pareto frontier**.
 
 **Loop flow:**
@@ -177,7 +177,7 @@ Agent Proposals:
   A4: "option X"
 
 Quorum threshold = ceil(2N/3) = ceil(2*4/3) = 3
-"option X" has 3 votes â‰¥ 3 â†’ CONSENSUS REACHED
+"option X" has 3 votes ≥ 3 → CONSENSUS REACHED
 ```
 
 **Tie-breaking strategies:**
@@ -227,7 +227,7 @@ Swarm loops take inspiration from ant colonies, bird flocking, and fish schoolin
 
 ## 2. Examples
 
-### 2.1 SupervisorLoop â€” Task Distribution and Score-Based Aggregation
+### 2.1 SupervisorLoop — Task Distribution and Score-Based Aggregation
 
 
 ```typescript
@@ -259,7 +259,7 @@ interface WorkerConfig {
   costPerCall: number;
 }
 
-// â”€â”€â”€ Worker simulation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Worker simulation ──────────────────────────────────────────────────────
 
 const WORKERS: WorkerConfig[] = [
   { id: "researcher-a", capabilities: ["research", "analysis"], costPerCall: 0.01 },
@@ -292,7 +292,7 @@ async function executeWorker(worker: WorkerConfig, task: Task): Promise<WorkerRe
   };
 }
 
-// â”€â”€â”€ Supervisor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Supervisor ─────────────────────────────────────────────────────────────
 
 interface SupervisorConfig {
   minWorkersPerTask: number;
@@ -310,7 +310,7 @@ class Supervisor {
     const finalResults = new Map<string, WorkerResult>();
 
     for (const task of tasks) {
-      console.log(`\nâ”€â”€ Task: "${task.description}" (capability: ${task.requiredCapability}) â”€â”€`);
+      console.log(`\n── Task: "${task.description}" (capability: ${task.requiredCapability}) ──`);
       const result = await this.executeTaskWithRetries(task, 0);
       if (result) {
         finalResults.set(task.id, result);
@@ -385,7 +385,7 @@ class Supervisor {
   }
 }
 
-// â”€â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Main ───────────────────────────────────────────────────────────────────
 
 const supervisor = new Supervisor({
   minWorkersPerTask: 2,
@@ -399,22 +399,22 @@ const tasks: Task[] = [
   { id: "t3", description: "Review cache architecture", requiredCapability: "review", priority: 5 },
 ];
 
-console.log("â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—");
-console.log("â•‘      SupervisorLoop Execution        â•‘");
-console.log("â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+console.log("╔══════════════════════════════════════╗");
+console.log("║      SupervisorLoop Execution        ║");
+console.log("╚══════════════════════════════════════╝");
 
 const results = await supervisor.execute(tasks);
 
-console.log("\nâ”€â”€ Final Results â”€â”€");
+console.log("\n── Final Results ──");
 for (const [taskId, result] of results) {
   console.log(`${taskId}: ${result.output} (worker: ${result.workerId}, score: ${result.score.toFixed(3)})`);
 }
 
-console.log("\nâ”€â”€ Full Report â”€â”€");
+console.log("\n── Full Report ──");
 console.log(supervisor.getReport());
 ```
 
-### 2.2 DebateAgent â€” Adversarial Arguments with Judge Evaluation
+### 2.2 DebateAgent — Adversarial Arguments with Judge Evaluation
 
 
 ```typescript
@@ -448,7 +448,7 @@ interface DebateResult {
   judgeRationale: string;
 }
 
-// â”€â”€â”€ Debate Agent â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Debate Agent ───────────────────────────────────────────────────────────
 
 class DebateAgent {
   constructor(
@@ -489,7 +489,7 @@ class DebateAgent {
         "Most teams lack the operational maturity for distributed systems",
       ],
       2: [
-        "Response: $2M/year is 0.1% of revenue â€” not a compelling justification",
+        "Response: $2M/year is 0.1% of revenue — not a compelling justification",
         "Counter: bounded contexts require extensive upfront domain modeling",
         "Further evidence: 60% of microservices migrations fail or are rolled back",
       ],
@@ -514,7 +514,7 @@ class DebateAgent {
   }
 }
 
-// â”€â”€â”€ Judge â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Judge ──────────────────────────────────────────────────────────────────
 
 class DebateJudge {
   async evaluate(
@@ -556,7 +556,7 @@ class DebateJudge {
   }
 }
 
-// â”€â”€â”€ Debate Orchestrator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Debate Orchestrator ────────────────────────────────────────────────────
 
 interface DebateConfig {
   maxRounds: number;
@@ -584,7 +584,7 @@ class DebateOrchestrator {
     console.log(`\nMotion: "${motion}"\n`);
 
     for (let round = 1; round <= this.config.maxRounds; round++) {
-      console.log(`â”€â”€ Round ${round} â”€â”€`);
+      console.log(`── Round ${round} ──`);
 
       const lastPro = this.rounds.findLast(a => a.stance === "pro") ?? null;
       const lastCon = this.rounds.findLast(a => a.stance === "con") ?? null;
@@ -601,7 +601,7 @@ class DebateOrchestrator {
     }
 
     // Judge evaluates
-    console.log(`\nâ”€â”€ Judge Evaluation â”€â”€`);
+    console.log(`\n── Judge Evaluation ──`);
     const { scores, winner, rationale } = await this.judge.evaluate(motion, this.rounds);
 
     console.log(`Pro score: ${scores.pro.total.toFixed(3)}`);
@@ -619,7 +619,7 @@ class DebateOrchestrator {
   }
 }
 
-// â”€â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Main ───────────────────────────────────────────────────────────────────
 
 const orchestrator = new DebateOrchestrator(
   "agent-alpha",
@@ -631,15 +631,15 @@ const orchestrator = new DebateOrchestrator(
   },
 );
 
-console.log("â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—");
-console.log("â•‘      Structured Debate Session         â•‘");
-console.log("â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+console.log("╔════════════════════════════════════════╗");
+console.log("║      Structured Debate Session         ║");
+console.log("╚════════════════════════════════════════╝");
 
 const result = await orchestrator.debate(
   "Microservices architecture is superior to monoliths for mid-size engineering teams"
 );
 
-console.log("\nâ”€â”€ Final Debate Result â”€â”€");
+console.log("\n── Final Debate Result ──");
 console.log(JSON.stringify({
   winner: result.winner,
   proScore: result.scores.pro.total,
@@ -649,7 +649,7 @@ console.log(JSON.stringify({
 }, null, 2));
 ```
 
-### 2.3 ConsensusVote â€” Tie-Breaking, Thresholds, and Quorum
+### 2.3 ConsensusVote — Tie-Breaking, Thresholds, and Quorum
 
 
 ```typescript
@@ -684,7 +684,7 @@ interface ConsensusResult {
   tiebroken: boolean;
 }
 
-// â”€â”€â”€ Consensus Voter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Consensus Voter ────────────────────────────────────────────────────────
 
 class ConsensusVoter {
   constructor(
@@ -747,7 +747,7 @@ class ConsensusVoter {
   }
 }
 
-// â”€â”€â”€ Consensus Engine â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Consensus Engine ───────────────────────────────────────────────────────
 
 class ConsensusEngine {
   private voters: ConsensusVoter[];
@@ -777,7 +777,7 @@ class ConsensusEngine {
     let votes: Vote[] = [];
 
     // Round 1: initial votes
-    console.log("\nâ”€â”€ Round 1: Initial Votes â”€â”€");
+    console.log("\n── Round 1: Initial Votes ──");
     votes = await Promise.all(
       this.voters.map(v => v.vote(this.options, context))
     );
@@ -788,7 +788,7 @@ class ConsensusEngine {
 
     // Subsequent rounds: allow vote changes
     for (let round = 2; round <= this.config.maxRounds; round++) {
-      console.log(`\nâ”€â”€ Round ${round}: Deliberation â”€â”€`);
+      console.log(`\n── Round ${round}: Deliberation ──`);
       votes = await Promise.all(
         this.voters.map((v, i) => v.changeVote(votes[i], votes))
       );
@@ -798,7 +798,7 @@ class ConsensusEngine {
       if (result.reached) return result;
     }
 
-    // Max rounds reached without consensus â€” apply tie-breaking
+    // Max rounds reached without consensus — apply tie-breaking
     return this.resolveWithoutConsensus(votes);
   }
 
@@ -911,7 +911,7 @@ class ConsensusEngine {
   }
 }
 
-// â”€â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Main ───────────────────────────────────────────────────────────────────
 
 const engine1 = new ConsensusEngine(
   ["voter-alpha", "voter-beta", "voter-gamma", "voter-delta", "voter-epsilon"],
@@ -925,9 +925,9 @@ const engine1 = new ConsensusEngine(
   },
 );
 
-console.log("â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—");
-console.log("â•‘      Consensus Vote Simulation           â•‘");
-console.log("â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+console.log("╔══════════════════════════════════════════╗");
+console.log("║      Consensus Vote Simulation           ║");
+console.log("╚══════════════════════════════════════════╝");
 
 console.log("\nConfiguration:");
 console.log(`  Quorum: ${engine1["config"].quorumThreshold * 100}%`);
@@ -936,7 +936,7 @@ console.log(`  Max rounds: ${engine1["config"].maxRounds}`);
 
 const result1 = await engine1.reachConsensus("Select the best database migration strategy");
 
-console.log("\nâ”€â”€ Result â”€â”€");
+console.log("\n── Result ──");
 console.log(JSON.stringify({
   winner: result1.winner,
   reached: result1.reached,
@@ -945,9 +945,9 @@ console.log(JSON.stringify({
   tiebroken: result1.tiebroken,
 }, null, 2));
 
-// â”€â”€â”€ Test tie-breaking scenario â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Test tie-breaking scenario ─────────────────────────────────────────────
 
-console.log("\n\nâ•â•â• Tie-Breaking Scenario â•â•â•\n");
+console.log("\n\n═══ Tie-Breaking Scenario ═══\n");
 
 const engine2 = new ConsensusEngine(
   ["voter-1", "voter-2", "voter-3", "voter-4"],
@@ -961,7 +961,7 @@ const engine2 = new ConsensusEngine(
 );
 
 const result2 = await engine2.reachConsensus("Deploy decision for v2.3.1");
-console.log("\nâ”€â”€ Result â”€â”€");
+console.log("\n── Result ──");
 console.log(JSON.stringify({
   winner: result2.winner,
   reached: result2.reached,
@@ -977,7 +977,7 @@ console.log(JSON.stringify({
 
 import { randomUUID } from "node:crypto";
 
-// â”€â”€ Agent Task Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Agent Task Types ───────────────────────────────────────────
 type AgentCapability = "code" | "review" | "research" | "security" | "design" | "analysis";
 
 interface AgentTask {
@@ -1005,7 +1005,7 @@ interface TaskAssignment {
   error?: string;
 }
 
-// â”€â”€ Agent Orchestrator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Agent Orchestrator ─────────────────────────────────────────
 class AgentOrchestrator {
   private agents: Map<string, AgentDescriptor> = new Map();
   private assignments: TaskAssignment[] = [];
@@ -1105,7 +1105,7 @@ class AgentOrchestrator {
   }
 }
 
-// â”€â”€ Consensus Voter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Consensus Voter ────────────────────────────────────────────
 interface Vote {
   agentId: string;
   choice: string;
@@ -1192,7 +1192,7 @@ class ConsensusVoter {
   }
 }
 
-// â”€â”€ Debate Engine â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Debate Engine ──────────────────────────────────────────────
 type ArgumentFn = (topic: string, opposingPoints: string[]) => Promise<string>;
 type JudgeFn = (arguments_: string[], topic: string) => Promise<{ winner: number; scores: number[]; rationale: string }>;
 
@@ -1261,7 +1261,7 @@ class DebateEngine {
   }
 }
 
-// â”€â”€ Supervisor Worker Pool â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Supervisor Worker Pool ─────────────────────────────────────
 interface WorkerPoolConfig {
   minWorkers: number;
   maxWorkers: number;
@@ -1401,7 +1401,7 @@ class SupervisorWorkerPool {
   }
 }
 
-// â”€â”€ Agent Communication Bus (Pub/Sub) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Agent Communication Bus (Pub/Sub) ──────────────────────────
 interface Message {
   id: string;
   topic: string;
@@ -1505,7 +1505,7 @@ class AgentCommunicationBus {
   }
 }
 
-// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Usage ──────────────────────────────────────────────────────
 async function main() {
   // AgentOrchestrator demo
   const orchestrator = new AgentOrchestrator();
@@ -1601,7 +1601,7 @@ flowchart TD
 
 import { randomUUID } from "node:crypto";
 
-// â”€â”€ AgentCapabilityRegistry â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── AgentCapabilityRegistry ─────────────────────────────────────
 interface AgentCapability {
   agentId: string;
   agentName: string;
@@ -1707,7 +1707,7 @@ class AgentCapabilityRegistry {
   }
 }
 
-// â”€â”€ TaskDecompositionEngine â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── TaskDecompositionEngine ─────────────────────────────────────
 interface DecomposedTask {
   id: string;
   parentId: string | null;
@@ -1830,7 +1830,7 @@ class TaskDecompositionEngine {
   }
 }
 
-// â”€â”€ VotingAggregator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── VotingAggregator ────────────────────────────────────────────
 type VotingStrategy = "majority" | "weighted" | "ranked_choice" | "borda_count";
 
 interface VoterInput {
@@ -1984,7 +1984,7 @@ class VotingAggregator {
   }
 }
 
-// â”€â”€ AgentLogCollector â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── AgentLogCollector ───────────────────────────────────────────
 interface LogEntry {
   id: string;
   correlationId: string;
@@ -2094,7 +2094,7 @@ class AgentLogCollector {
   }
 }
 
-// â”€â”€ DynamicAgentSpawner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── DynamicAgentSpawner ─────────────────────────────────────────
 interface SpawnerConfig {
   minAgents: number;
   maxAgents: number;
@@ -2223,7 +2223,7 @@ class DynamicAgentSpawner {
   }
 }
 
-// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Usage ──────────────────────────────────────────────────────
 async function main() {
   // AgentCapabilityRegistry demo
   const registry = new AgentCapabilityRegistry();
@@ -2310,7 +2310,7 @@ main();
    - Maintains N explorer agents (configurable, default 5)
    - Each explorer searches a solution space by sampling random points and scoring them
    - Explorers share findings through a **pheromone map**: a `Map<string, { score: number; visitCount: number; lastVisited: number }>`
-   - Each explorer biases its next search toward high-pheromone regions (80% probability) but occasionally explores randomly (20% probability â€” exploration rate)
+   - Each explorer biases its next search toward high-pheromone regions (80% probability) but occasionally explores randomly (20% probability — exploration rate)
    - Pheromone evaporates over time: every `evaporateIntervalMs`, all pheromone scores decay by `evaporationRate` (default 0.1)
    - When an explorer finds a score higher than the global best, it deposits extra pheromone (positive feedback)
    - After `maxIterations` total iterations across all explorers, the swarm returns the best solution found

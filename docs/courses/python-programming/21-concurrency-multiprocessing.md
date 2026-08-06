@@ -1,4 +1,4 @@
-﻿# Chapter 21: Concurrency, Multiprocessing & Parallelism
+# Chapter 21: Concurrency, Multiprocessing & Parallelism
 
 
 > **Previous:** [NumPy and pandas](./20-numpy-pandas.md) | **Next:** None
@@ -772,10 +772,10 @@ with ProcessPoolExecutor(max_workers=4) as ex:
 
 ```typescript
 // Chapter 21: TypeScript Concurrency Equivalents
-// Python: threading â†’ TypeScript: Worker threads
+// Python: threading → TypeScript: Worker threads
 import { Worker, isMainThread, parentPort, workerData } from "node:worker_threads";
 
-// Python: ThreadPoolExecutor â†’ TypeScript: Worker pool pattern
+// Python: ThreadPoolExecutor → TypeScript: Worker pool pattern
 function runInWorker(data: number): Promise<number> {
   return new Promise((resolve, reject) => {
     const worker = new Worker(new URL(import.meta.url), {
@@ -792,7 +792,7 @@ if (!isMainThread) {
   parentPort!.postMessage(result);
 }
 
-// Python: asyncio â†’ TypeScript: async/await (first-class)
+// Python: asyncio → TypeScript: async/await (first-class)
 async function fetchMultiple(urls: string[]): Promise<unknown[]> {
   const results = await Promise.all(
     urls.map(async (url) => {
@@ -817,13 +817,13 @@ function runInProcess(script: string, data: unknown): Promise<unknown> {
   });
 }
 
-// Python: multiprocessing.Queue â†’ TypeScript: MessageChannel
+// Python: multiprocessing.Queue → TypeScript: MessageChannel
 const { MessageChannel } = require("node:worker_threads");
 const channel = new MessageChannel();
 
 // Python: GIL has no TypeScript equivalent
 // Node.js uses a single thread for JavaScript but offloads I/O to libuv
-// CPU-bound work blocks the event loop â€” use Worker threads or child processes
+// CPU-bound work blocks the event loop — use Worker threads or child processes
 ```
 
 ### TypeScript Utilities

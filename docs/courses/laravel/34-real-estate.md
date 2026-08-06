@@ -1,4 +1,4 @@
-﻿# Chapter 34: Real Estate & Property â†’ AI-Powered Real Estate Agents
+# Chapter 34: Real Estate & Property → AI-Powered Real Estate Agents
 
 > **Previous:** [Customer Service & Support Agents](./33-customer-service.md) | **Next:** [Legal & Compliance Agents](./35-legal.md)
 
@@ -137,10 +137,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Real Estate Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/34-real-estate.png)
 
@@ -887,7 +887,7 @@ class PropertyListingAgent
         $points = [];
 
         if ($property->year_built && $property->year_built >= 2020) {
-            $points[] = 'New construction â†’ move-in ready with modern finishes';
+            $points[] = 'New construction → move-in ready with modern finishes';
         }
 
         if ($property->square_feet && $property->square_feet > 2500) {
@@ -899,7 +899,7 @@ class PropertyListingAgent
         }
 
         if ($property->amenities && in_array('pool', $property->amenities)) {
-            $points[] = 'Private pool â†’ perfect for entertaining';
+            $points[] = 'Private pool → perfect for entertaining';
         }
 
         if ($property->bedrooms >= 4) {
@@ -2010,7 +2010,7 @@ class DocumentProcessingAgent
 
         if ($document->type === 'inspection_report') {
             if (empty($extractedData['major_issues'] ?? [])) {
-                $issues[] = 'No major issues flagged â†’ review may be incomplete.';
+                $issues[] = 'No major issues flagged → review may be incomplete.';
                 $confidence -= 0.05;
             }
             if (empty($extractedData['overall_condition'] ?? null)) {
@@ -3245,7 +3245,7 @@ class RentalManagementAgent
 ### 34.9 CRM for Real Estate Agents
 
 
-The RealEstateCrmAgent tracks every client touchpoint â†’ calls, emails, showings, offers, and closing milestones â†’ and uses AI to recommend the next best action. It surfaces follow-up reminders, identifies at-risk relationships, and suggests strategic touches that keep agents top-of-mind.
+The RealEstateCrmAgent tracks every client touchpoint → calls, emails, showings, offers, and closing milestones → and uses AI to recommend the next best action. It surfaces follow-up reminders, identifies at-risk relationships, and suggests strategic touches that keep agents top-of-mind.
 
 ```php
 <?php
@@ -3329,7 +3329,7 @@ class RealEstateCrmAgent
                     'client_id' => $client->id,
                     'client_name' => $client->first_name . ' ' . $client->last_name,
                     'type' => 're-engagement',
-                    'action' => 'Reach out to reconnect â†’ no activity in ' . $daysSince . ' days',
+                    'action' => 'Reach out to reconnect → no activity in ' . $daysSince . ' days',
                     'days_inactive' => $daysSince,
                 ];
             } elseif ($daysSince > 30) {
@@ -3354,7 +3354,7 @@ class RealEstateCrmAgent
                     'client_id' => $client->id,
                     'client_name' => $client->first_name . ' ' . $client->last_name,
                     'type' => 'follow-up',
-                    'action' => "Follow up after {$showingCount} showings â†’ no offer submitted yet",
+                    'action' => "Follow up after {$showingCount} showings → no offer submitted yet",
                 ];
             }
         }
@@ -3373,7 +3373,7 @@ class RealEstateCrmAgent
                 'type' => 'closing_prep',
                 'client_id' => $transaction->buyer_id,
                 'client_name' => $transaction->buyer->first_name . ' ' . $transaction->buyer->last_name,
-                'action' => "Closing in {$daysUntil} days â†’ prepare final documents",
+                'action' => "Closing in {$daysUntil} days → prepare final documents",
                 'closing_date' => $transaction->closing_date->toDateString(),
             ];
         }
@@ -3556,14 +3556,14 @@ class RealEstateCrmAgent
         }
 
         if ($total > 0 && ($recentlyContacted / $total) < 0.3) {
-            $recommendations[] = 'Increase outreach frequency â†’ less than 30% of clients contacted recently';
+            $recommendations[] = 'Increase outreach frequency → less than 30% of clients contacted recently';
         }
 
         $recommendations[] = 'Schedule weekly pipeline review to identify stalled transactions';
         $recommendations[] = 'Send monthly market newsletter to nurture inactive leads';
 
         if ($agent->clients()->where('client_type', 'seller')->count() < 5) {
-            $recommendations[] = 'Focus on listing acquisitions â†’ seller client count is low';
+            $recommendations[] = 'Focus on listing acquisitions → seller client count is low';
         }
 
         return $recommendations;

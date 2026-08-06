@@ -1,4 +1,4 @@
-﻿# Chapter 14: Magic Methods
+# Chapter 14: Magic Methods
 
 
 > **Previous:** [Inheritance and Polymorphism](./13-inheritance.md) | **Next:** [Decorators](./15-decorators.md)
@@ -40,7 +40,7 @@ By the end of this chapter, students will be able to:
 |---------|-------|-------------|
 |14.1 Introduction||Magic methods (dunder methods) hook objects into Python language behaviours.|
 |14.2 __str__ and __repr__||`__repr__` is for developers (unambiguous); `__str__` is for users (readable via print()).|
-|14.3 __eq__ and __hash__||Override `__eq__` and `__hash__` together â€” if `__eq__` changes, `__hash__` must change too.|
+|14.3 __eq__ and __hash__||Override `__eq__` and `__hash__` together — if `__eq__` changes, `__hash__` must change too.|
 |14.4 __lt__, __le__, __gt__, __ge__||`__enter__`/`__exit__` implement context managers; `@contextmanager` offers a generator-based alternative.|
 |14.5 __getitem__, __setitem__, __delitem__||`__call__` makes objects callable; `__getitem__`/`__setitem__` make them subscriptable.|
 |14.6 __call__||undefined|
@@ -79,7 +79,7 @@ flowchart LR
 > **One-Sentence Takeaway:** Magic methods (dunder methods) hook objects into Python language behaviours.
 
 
-Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to be called directly â†’ Python calls them implicitly.
+Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to be called directly → Python calls them implicitly.
 
 ```python
 class Point:
@@ -94,9 +94,9 @@ class Point:
         return f"({self.x}, {self.y})"
 
 p = Point(3, 4)
-print(repr(p))   # Point(3, 4)  â†’ calls __repr__
-print(str(p))    # (3, 4)       â†’ calls __str__
-print(p)         # (3, 4)       â†’ calls __str__
+print(repr(p))   # Point(3, 4)  → calls __repr__
+print(str(p))    # (3, 4)       → calls __str__
+print(p)         # (3, 4)       → calls __str__
 ```
 
 ## 14.2 __str__ and __repr__
@@ -127,7 +127,7 @@ If `__str__` is not defined, Python falls back to `__repr__`.
 
 ## 14.3 __eq__ and __hash__
 
-> **One-Sentence Takeaway:** Override `__eq__` and `__hash__` together â€” if `__eq__` changes, `__hash__` must change too.
+> **One-Sentence Takeaway:** Override `__eq__` and `__hash__` together — if `__eq__` changes, `__hash__` must change too.
 
 
 `__eq__` defines equality. `__hash__` makes an object usable as a dict key or set member:
@@ -203,7 +203,7 @@ print(products)
 # [Product(Lamp, $80.00), Product(Chair, $150.00), Product(Desk, $500.00)]
 ```
 
-Using `@total_ordering` from `functools` reduces boilerplate â†’ define `__eq__` and one comparison method, and the rest are generated:
+Using `@total_ordering` from `functools` reduces boilerplate → define `__eq__` and one comparison method, and the rest are generated:
 
 ```python
 from functools import total_ordering
@@ -257,9 +257,9 @@ class SimpleDict:
 
 d = SimpleDict()
 d["name"] = "Alice"    # __setitem__
-print(d["name"])       # __getitem__  â†’ Alice
-print("name" in d)     # __contains__ â†’ True
-print(len(d))           # __len__     â†’ 1
+print(d["name"])       # __getitem__  → Alice
+print("name" in d)     # __contains__ → True
+print(len(d))           # __len__     → 1
 del d["name"]           # __delitem__
 ```
 
@@ -523,7 +523,7 @@ class Point:
 
 
 ```typescript
-// Python: __add__ â†’ TypeScript: custom add method
+// Python: __add__ → TypeScript: custom add method
 class Vector2D {
   constructor(public x: number, public y: number) {}
   add(other: Vector2D): Vector2D {
@@ -538,7 +538,7 @@ const v1 = new Vector2D(1, 2);
 const v2 = new Vector2D(3, 4);
 console.log(v1.add(v2).toString());  // Vector2D(4, 6)
 
-// Python: __getitem__ / __setitem__ â†’ TypeScript: Proxy
+// Python: __getitem__ / __setitem__ → TypeScript: Proxy
 const handler: ProxyHandler<Record<string, unknown>> = {
   get(target, prop: string) {
     if (prop in target) return target[prop];
@@ -554,14 +554,14 @@ const dict = new Proxy({}, handler);
 dict.name = "Alice";  // logs: Setting name to Alice
 console.log(dict.missing);  // Key "missing" not found
 
-// Python: __len__ â†’ TypeScript: length property
+// Python: __len__ → TypeScript: length property
 class Collection<T> {
   private items: T[] = [];
   get length(): number { return this.items.length; }
   add(item: T): void { this.items.push(item); }
 }
 
-// Python: __call__ â†’ TypeScript: class with apply
+// Python: __call__ → TypeScript: class with apply
 class Adder {
   constructor(private n: number) {}
   apply(value: number): number {
@@ -572,7 +572,7 @@ const add5 = new Adder(5);
 console.log(add5.apply(10));  // 15
 // Note: TypeScript doesn't support making instances directly callable
 
-// Python: __eq__ / __hash__ â†’ TypeScript: custom equals
+// Python: __eq__ / __hash__ → TypeScript: custom equals
 class Money {
   constructor(public amount: number, public currency: string) {}
   equals(other: Money): boolean {

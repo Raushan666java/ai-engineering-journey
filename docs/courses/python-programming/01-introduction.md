@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Python
+# Chapter 1: Introduction to Python
 
 ## Learning Objectives
 
@@ -623,7 +623,7 @@ server.listen(3000);
 ### TypeScript Development Environment
 
 ```typescript
-// package.json â€” project setup
+// package.json — project setup
 {
   "name": "ts-project",
   "version": "1.0.0",
@@ -640,7 +640,7 @@ server.listen(3000);
 ```
 
 ```typescript
-// tsconfig.json â€” TypeScript compiler configuration
+// tsconfig.json — TypeScript compiler configuration
 {
   "compilerOptions": {
     "target": "ES2023",
@@ -656,7 +656,7 @@ server.listen(3000);
 }
 ```
 
-### Python â†’ TypeScript Quick Reference
+### Python → TypeScript Quick Reference
 
 
 | Python Concept | TypeScript Equivalent | Key Difference |
@@ -689,9 +689,9 @@ const greeting: string = hello("World");
 
 
 ```typescript
-// Execution model: Interpreted (Python) vs Compiled (TypeScript â†’ JavaScript)
+// Execution model: Interpreted (Python) vs Compiled (TypeScript → JavaScript)
 // Python: python script.py  (interpreted line by line)
-// TypeScript: tsc â†’ node dist/script.js  (compiled, then run)
+// TypeScript: tsc → node dist/script.js  (compiled, then run)
 // Bun: bun run script.ts  (transpiled and run JIT)
 
 // Type safety: Dynamic (Python) vs Static (TypeScript)
@@ -815,7 +815,7 @@ Write a script that creates a virtual environment, installs the `requests` and `
 ### TypeScript Practical Applications
 
 ```typescript
-// === Python â†” TypeScript Syntax Equivalence Table ===
+// === Python ↔ TypeScript Syntax Equivalence Table ===
 const equivTable = [
   { python: "print('hello')", ts: "console.log('hello')", note: "Console output" },
   { python: "len(list)", ts: "list.length", note: "Length property" },
@@ -848,7 +848,7 @@ const equivTable = [
   { python: "all(list)", ts: "array.every(Boolean)", note: "All true" },
   { python: "sum(list)", ts: "array.reduce((a,b)=>a+b, 0)", note: "Summation" },
 ];
-equivTable.forEach(e => console.log(`${e.python.padEnd(25)} â†’ ${e.ts.padEnd(35)} # ${e.note}`));
+equivTable.forEach(e => console.log(`${e.python.padEnd(25)} → ${e.ts.padEnd(35)} # ${e.note}`));
 
 // === Python Interop Pattern: Config Parser in Both ===
 interface PythonConfig {

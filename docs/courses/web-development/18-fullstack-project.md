@@ -1,4 +1,4 @@
-﻿# Chapter 18: Building a Full-Stack Application
+# Chapter 18: Building a Full-Stack Application
 
 > **Previous:** [17-performance](./17-performance.md)
 
@@ -33,13 +33,13 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-|Monorepo Setup|npm workspaces manage shared packages alongside frontend and backend apps|Use Turborepo for task orchestration â€” it caches build outputs and runs tasks in parallel|
+|Monorepo Setup|npm workspaces manage shared packages alongside frontend and backend apps|Use Turborepo for task orchestration — it caches build outputs and runs tasks in parallel|
 |Shared Types|A packages/shared directory holds types consumed by both frontend and backend|Define all API contracts (request/response shapes) in the shared package to prevent drift|
 |Express API|Full REST API with Prisma, JWT auth, Zod validation, and error handling|Structure routes by resource (auth, projects, tasks) with middleware for cross-cutting concerns|
 |Next.js Frontend|App Router with auth context, API hooks, and component-based UI|Separate data fetching hooks from presentation components for testability|
 |Auth Integration|JWT tokens managed via localStorage with automatic refresh on 401|Implement the AuthProvider at the app root, useApi hook for all authenticated requests|
 |Testing|Integration tests for API, E2E tests for user flows|Test the complete user journey (register ? login ? create task) as a single E2E test|
-|Docker & CI|Docker Compose for local dev, GitHub Actions for CI/CD|Use service containers in CI for PostgreSQL â€” no need for separate infrastructure|
+|Docker & CI|Docker Compose for local dev, GitHub Actions for CI/CD|Use service containers in CI for PostgreSQL — no need for separate infrastructure|
 
 ## Chapter Roadmap
 
@@ -102,14 +102,14 @@ The monorepo structure:
 
 ```
 taskflow/
-â”œâ”€â”€ apps/
-â”‚   â”œâ”€â”€ web/          # Next.js frontend
-â”‚   â””â”€â”€ api/          # Express backend
-â”œâ”€â”€ packages/
-â”‚   â””â”€â”€ shared/       # Shared TypeScript types
-â”œâ”€â”€ docker-compose.yml
-â”œâ”€â”€ package.json
-â””â”€â”€ tsconfig.json
+├── apps/
+│   ├── web/          # Next.js frontend
+│   └── api/          # Express backend
+├── packages/
+│   └── shared/       # Shared TypeScript types
+├── docker-compose.yml
+├── package.json
+└── tsconfig.json
 ```
 
 ## 18.2 Setting Up the Monorepo
@@ -1421,13 +1421,13 @@ export function cache(durationSeconds: number) {
 
 
 > [!TIP]
-> Use `concurrently` in the root package.json to start both frontend and backend with a single `npm run dev` command â€” it significantly improves developer experience.
+> Use `concurrently` in the root package.json to start both frontend and backend with a single `npm run dev` command — it significantly improves developer experience.
 
 > [!WARNING]
-> The GitHub Actions service container for PostgreSQL uses a test password. Never use the CI test database credentials in production â€” always rotate secrets between environments.
+> The GitHub Actions service container for PostgreSQL uses a test password. Never use the CI test database credentials in production — always rotate secrets between environments.
 
 > [!REMEMBER]
-> This full-stack project ties together every chapter in the course. If something feels unclear, revisit the specific chapter â€” REST APIs (ch9), Auth (ch10), Databases (ch11), Deployment (ch12), Security (ch13), TypeScript (ch14), Next.js (ch15), Testing (ch16), and Performance (ch17).
+> This full-stack project ties together every chapter in the course. If something feels unclear, revisit the specific chapter — REST APIs (ch9), Auth (ch10), Databases (ch11), Deployment (ch12), Security (ch13), TypeScript (ch14), Next.js (ch15), Testing (ch16), and Performance (ch17).
 
 
 

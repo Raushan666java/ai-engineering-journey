@@ -733,33 +733,33 @@ d) Class imbalance
 
 #### Google Style
 
-1. **Explain the core idea of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+1. **Explain the core idea of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
 
-2. **Design a minimal, well-typed function that demonstrates Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+2. **Design a minimal, well-typed function that demonstrates Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
 
-3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
+3. **What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
 
-4. **Describe a production bug caused by misunderstanding Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+4. **Describe a production bug caused by misunderstanding Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
 
-5. **How would you scale a system that relies on Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
+5. **How would you scale a system that relies on Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
 
-6. **Compare Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+6. **Compare Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
 
-7. **Walk through how you would test a component that depends on Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
+7. **Walk through how you would test a component that depends on Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
 
-8. **How does Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+8. **How does Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna behave differently at scale — memory, throughput, or precision-wise?** — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
 
-9. **How would you make an implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
+9. **How would you make an implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
 
-10. **Write the smallest possible implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
+10. **Write the smallest possible implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
 
@@ -778,37 +778,37 @@ d) Class imbalance
 
 ## True/False
 
-1. **True or False:** Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
-2. **True or False:** You should write at least one code example for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
-3. **True or False:** The complexity analysis for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
-4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in production. â€” **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+1. **True or False:** Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna builds directly on the fundamentals covered in the earlier chapters of this module. — **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in production. — **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
-1. The chapter that covers Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is Chapter ___ of this module. â€” Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is ___. â€” Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
-4. The tools commonly used to debug Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
-5. The related topic that connects to Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in the next chapter is ___. â€” Answer: see the Next Topic section.
+1. The chapter that covers Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is Chapter ___ of this module. — Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is ___. — Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in the next chapter is ___. — Answer: see the Next Topic section.
 
 ## Scenario Questions
 
-1. **Scenario:** A teammate ships a change involving Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+1. **Scenario:** A teammate ships a change involving Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
-3. **Scenario:** A new hire asks you to explain Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+3. **Scenario:** A new hire asks you to explain Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
-4. **Scenario:** Your team's codebase has three different patterns for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+4. **Scenario:** Your team's codebase has three different patterns for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
-2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
-3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
-4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
-5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+1. **What is the output of the simplest correct implementation of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -820,7 +820,7 @@ d) Class imbalance
 
 ## Tips & Tricks
 
-- Always write a one-line example of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna from memory before opening the chapter â€” active recall first.
+- Always write a one-line example of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna from memory before opening the chapter — active recall first.
 - Use the chapter's Revision Notes as a checklist: you have mastered Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna when you can explain each bullet.
 - Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
 - For interviews, practice explaining Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna twice: once with a technical audience, once with a non-technical audience.
@@ -829,10 +829,10 @@ d) Class imbalance
 ## Memory Tricks
 
 - **Acronym**: build a mnemonic from the 5 key concepts of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna listed in the Chapter at a Glance table.
-- **Story**: link Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Story**: link Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna to a familiar story — the analogy in the Visual Analogy section is designed to stick.
 - **Number anchor**: remember the complexity of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna by connecting it to a known algorithm of the same class.
 - **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
-- **Teach-back**: explain Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
+- **Teach-back**: explain Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
@@ -844,23 +844,23 @@ d) Class imbalance
 
 ## Related Topics
 
-- The previous chapter in this module (see table of contents) â€” foundational for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna
-- The next chapter (see Next Topic below) â€” builds on Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna
-- The system design chapters in Module 07 â€” how Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna fits into production architectures
-- The interview preparation module â€” how Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is asked in screening rounds
-- The capstone project â€” where Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is applied end-to-end
+- The previous chapter in this module (see table of contents) — foundational for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna
+- The next chapter (see Next Topic below) — builds on Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna
+- The system design chapters in Module 07 — how Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna fits into production architectures
+- The interview preparation module — how Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is asked in screening rounds
+- The capstone project — where Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is applied end-to-end
 
 ## FAQs
 
-1. **Do I need to memorize all of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
-2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
-3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
-4. **Is Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
-5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+1. **Do I need to memorize all of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna, or understand the big picture?** — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna asked in interviews?** — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-- Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is a core requirement for the rest of this module â€” do not skip the examples.
+- Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is a core requirement for the rest of this module — do not skip the examples.
 - Always analyze complexity (time and space) when working with Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna.
 - Production correctness means handling edge cases, not just the happy path.
 - Interview answers should start with the definition, then the example, then the trade-offs.
@@ -868,9 +868,9 @@ d) Class imbalance
 
 ## Historical Context
 
-- Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews.
 - The tools used for Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna today evolved from simpler versions; the chapter covers the modern, recommended approach.
-- Interviewers value knowing one historical fact about Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna â€” it shows genuine interest, not just cramming.
+- Interviewers value knowing one historical fact about Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna — it shows genuine interest, not just cramming.
 - The library/tooling ecosystem around Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
@@ -884,21 +884,21 @@ d) Class imbalance
 ## ML Intuition
 
 - Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
-- Understanding Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- Understanding Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs.
 - In production ML, the Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
 - When optimizing ML systems, Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna skills let you profile and fix the data path, not just the training loop.
-- Interview follow-up: how would you apply Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna to a dataset of 10 million records? â€” Batching and vectorization.
+- Interview follow-up: how would you apply Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna to a dataset of 10 million records? — Batching and vectorization.
 
 ## Analogies
 
 - **Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
 - **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
-- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm — build for the storm.
 - **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) — this chapter contributes the Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
@@ -972,24 +972,24 @@ d) Class imbalance
 
 - Start with `print()` or a debugger to inspect intermediate values in Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna code.
 - Reproduce the failure with the smallest possible input before changing code.
-- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- Check the common failure modes listed in Common Mistakes — most bugs are listed there.
 - For performance problems, profile before optimizing: measure, then fix.
 - When stuck, re-read the chapter's Examples and compare line by line with your code.
 - Use `pdb` or your IDE's debugger to step through the Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna example code.
 
 ## Mock Interview Section
 
-**Round 1 â€” Screening (15 min)**
+**Round 1 — Screening (15 min)**
 - Explain Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna in 60 seconds.
 - Write a minimal working example of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna.
 - What is the complexity of your example?
 
-**Round 2 â€” Coding (45 min)**
+**Round 2 — Coding (45 min)**
 - Solve the Medium exercise from this chapter under time pressure.
 - State your assumptions, then implement with type hints.
 - Test with edge cases: empty input, boundary values, invalid input.
 
-**Round 3 â€” Behavioral + System (30 min)**
+**Round 3 — Behavioral + System (30 min)**
 - Tell me about a time you debugged a Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna problem in a project.
 - How would you design a system where Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna is used at scale?
 - What metrics would you monitor?
@@ -1032,7 +1032,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Real-World Examples
 
-- **Startup**: a small team uses Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna daily in their data pipeline â€” the chapter's examples mirror their code.
+- **Startup**: a small team uses Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna daily in their data pipeline — the chapter's examples mirror their code.
 - **E-commerce**: Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna patterns appear in order processing, inventory checks, and recommendation feeds.
 - **Fintech**: Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna principles apply to transaction validation and fraud detection flows.
 - **ML platform**: Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna shows up in feature engineering and model-serving infrastructure.
@@ -1044,7 +1044,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Limitations
 
-- Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory).
 - The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
-- Performance of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna depends on input size and distribution â€” always benchmark for your own data.
+- Performance of Hyperparameter Tuning — Grid Search, Random Search, Bayesian Opt, Optuna depends on input size and distribution — always benchmark for your own data.
 - This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

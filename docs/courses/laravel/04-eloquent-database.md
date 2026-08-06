@@ -1,4 +1,4 @@
-﻿# Chapter 4: Eloquent ORM, Database & Migrations
+# Chapter 4: Eloquent ORM, Database & Migrations
 > **Previous:** [Blade Templating, Components & Frontend](./03-blade-frontend) | **Next:** [Authentication, Authorization & Security](./05-auth-security)
 
 ---
@@ -138,7 +138,7 @@ php artisan schema:dump
 php artisan schema:dump --prune
 // Dumps and prunes all existing migration files
 
-> **Pro Tip:** Use `schema:dump --prune` in CI/CD pipelines to dramatically speed up deployments. Laravel loads the schema dump first, then runs only new individual migrations â€” this can reduce deployment time from minutes to seconds on large projects.
+> **Pro Tip:** Use `schema:dump --prune` in CI/CD pipelines to dramatically speed up deployments. Laravel loads the schema dump first, then runs only new individual migrations — this can reduce deployment time from minutes to seconds on large projects.
 ```
 
 When squashed migrations exist, Laravel loads the schema dump first, then runs any remaining individual migrations.
@@ -1450,7 +1450,7 @@ class Post extends Model
 | Mass Assignment | Protected via fillable/guarded | Not applicable | Not applicable |
 | Best For | Complex domain logic | Simple CRUD, reports | Custom database features |
 
-## Quick Reference â€” Artisan Commands
+## Quick Reference — Artisan Commands
 
 | Command | Purpose |
 |---------|---------|

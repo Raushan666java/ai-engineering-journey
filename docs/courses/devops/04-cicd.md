@@ -1,4 +1,4 @@
-﻿# Chapter 4: CI/CD
+# Chapter 4: CI/CD
 
 > **Prev:** [Build Tools](./03-build-tools.md)
 > **Next:** [Continuous Integration](./04-continuous-integration.md)
@@ -771,7 +771,7 @@ class PipelineCostEstimator {
 
     const recommendations: string[] = [
       totalMinutes > 30 ? 'Consider self-hosted runners for cost savings' : 'Runner costs are within acceptable range',
-      cacheSavings > 0 ? `Cache saves ~$${cacheSavings.toFixed(2)} per build â€” maintain cache hygiene` : 'Enable caching to reduce costs',
+      cacheSavings > 0 ? `Cache saves ~$${cacheSavings.toFixed(2)} per build — maintain cache hygiene` : 'Enable caching to reduce costs',
       slowestStage ? `Optimize "${slowestStage.name}" stage (${slowestStage.durationMinutes}min) with parallel execution` : '',
     ].filter(Boolean);
 
@@ -849,7 +849,7 @@ class GateOrchestrator {
     const failedGates: string[] = [];
 
     for (const gate of relevantGates) {
-      console.log(`?? Gate: ${to} â€” ${gate.checks.length} check(s)`);
+      console.log(`?? Gate: ${to} — ${gate.checks.length} check(s)`);
 
       for (const check of gate.checks) {
         const result = await Promise.race([

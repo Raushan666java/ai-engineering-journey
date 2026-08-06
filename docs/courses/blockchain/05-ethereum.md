@@ -1,4 +1,4 @@
-﻿# Chapter 5: Ethereum and Smart Contracts
+# Chapter 5: Ethereum and Smart Contracts
 
 > **Previous:** [Chapter 4: The Bitcoin Network](./04-bitcoin.md) | **Next:** [Chapter 6: Smart Contract Development](./06-solidity.md)
 
@@ -38,7 +38,7 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | Account Model | EOA (users) vs Contract (code) accounts | Key distinction from Bitcoin's UTXO model |
-| EVM | Sandboxed, deterministic runtime | Every node runs every transaction â€” expensive but trustless |
+| EVM | Sandboxed, deterministic runtime | Every node runs every transaction — expensive but trustless |
 | Smart Contracts | Self-executing immutable code | Deploy once, runs forever as programmed |
 | Gas | Computational cost measured per opcode | Prevents infinite loops, funds network security |
 | State Trie | Patricia Merkle Trie maps address ? state | Efficiently proves account existence and balance |
@@ -196,10 +196,10 @@ flowchart TB
         Tx["Transaction"]
         GasLimit["Gas Limit: 100,000"]
         GasPrice["Gas Price: 50 Gwei"]
-        TotalFee["Max Fee: 100,000 Ã— 50 = 5,000,000 Gwei<br/>= 0.005 ETH"]
+        TotalFee["Max Fee: 100,000 × 50 = 5,000,000 Gwei<br/>= 0.005 ETH"]
         Execution["EVM Executes..."
         UsedGas["Gas Used: 45,000"]
-        Refund["Unused Gas Refunded:<br/>55,000 Ã— 50 = 2,750,000 Gwei"]
+        Refund["Unused Gas Refunded:<br/>55,000 × 50 = 2,750,000 Gwei"]
     end
     
     Tx --> GasLimit
@@ -214,7 +214,7 @@ flowchart TB
 - **Gas:** Unit of computational work (each opcode costs fixed gas)
 - **Gas Price:** Amount you pay per unit of gas (in Gwei, 1 Gwei = 10^-9 ETH)
 - **Gas Limit:** Maximum gas you allow the transaction to consume
-- **Total Fee:** Gas Used Ã— Gas Price
+- **Total Fee:** Gas Used × Gas Price
 - **EIP-1559 (London fork):** Base fee (burned) + Priority fee (tip to miner)
 
 ### EIP-1559 Fee Market
@@ -263,7 +263,7 @@ function adjustBaseFee(
 ```
 
 **Key changes from EIP-1559:**
-- Base fee is burned (removed from circulation) â€” can make ETH deflationary
+- Base fee is burned (removed from circulation) — can make ETH deflationary
 - Priority fee goes to validator as incentive
 - Better fee estimation (base fee is deterministic)
 - Users no longer need to guess gas prices manually
@@ -299,9 +299,9 @@ const ethFee = fee / 1e9;  // Convert to ETH
 
 ### Turing Completeness and The Halting Problem
 
-Ethereum is **Turing complete** â€” it can simulate any computable function. This is both a blessing and a curse:
+Ethereum is **Turing complete** — it can simulate any computable function. This is both a blessing and a curse:
 
-- **Benefit:** Can express any logic â€” complex DeFi protocols, NFTs, DAOs, etc.
+- **Benefit:** Can express any logic — complex DeFi protocols, NFTs, DAOs, etc.
 - **Challenge:** Can't know if a program will finish (the Halting Problem is undecidable)
 
 **Ethereum's solution:** Gas! Instead of proving a program halts, Ethereum charges for every computational step. If a transaction runs out of gas, it reverts but the miner keeps the gas. This ensures:
@@ -342,7 +342,7 @@ timeline
 - Same EVM, same smart contracts, same execution
 
 **Dencun (EIP-4844):**
-- Introduced **blob transactions** â€” temporary data storage for L2 rollups
+- Introduced **blob transactions** — temporary data storage for L2 rollups
 - Reduced L2 fees by 10-100x
 - No permanent state storage for blobs (pruned after ~18 days)
 - Foundation for future full Danksharding
@@ -449,7 +449,7 @@ function estimateERC20TransferGas(totalHolders?: number): number {
     // SLOAD for allowance if needed: 2100
     // Various checks and overhead: ~5000
     return 21000 + 4200 + 10000 + 1500 + 2100 + 5000;
-    // Ëœ 45800 gas for a typical transfer
+    // ˜ 45800 gas for a typical transfer
 }
 ```
 
@@ -508,8 +508,8 @@ function verifyAccountState(
 |----------|-------------|-------|
 | **Account Types** | EOA (externally owned), Contract | EOA txs are signed; Contract txs are triggered internally |
 | **EVM Ops** | ADD (3 gas), SSTORE (22K/5K), BALANCE (2600) | Gas costs vary by operation complexity |
-| **Denominations** | 1 ETH = 10? Gwei = 10Â¹8 Wei | Gas price typically quoted in Gwei |
-| **Contract Lifecycle** | Deploy ? Interact ? Selfdestruct | No upgrade by default â€” use proxy pattern |
+| **Denominations** | 1 ETH = 10? Gwei = 10¹8 Wei | Gas price typically quoted in Gwei |
+| **Contract Lifecycle** | Deploy ? Interact ? Selfdestruct | No upgrade by default — use proxy pattern |
 | **State Transition** | s[t+1] = ?(s[t], T) | Deterministic across all nodes |
 | **Base Fee** | EIP-1559: Burned, adjusts by up to 12.5%/block | Deflationary when blocks >50% full |
 | **Blobs** | EIP-4844: Temporary data, pruned after 18 days | 10-100x cheaper L2 fees |
@@ -557,7 +557,7 @@ function verifyAccountState(
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) Contract accounts can be programmed to execute multi-step operations atomically.** This enables composable DeFi operations (flash loans, multi-hop swaps) that execute as atomic units â€” either all steps succeed or none do.
+**B) Contract accounts can be programmed to execute multi-step operations atomically.** This enables composable DeFi operations (flash loans, multi-hop swaps) that execute as atomic units — either all steps succeed or none do.
 </details>
 
 4. What is the base fee in EIP-1559?
@@ -904,11 +904,11 @@ export { Processor, Task }
 
 ## Practical Takeaways
 
-1. Use EIP-1559 transactions (`type: 2`) for better fee estimation â€” set `maxFeePerGas` and `maxPriorityFeePerGas`.
-2. Minimize SSTORE operations in smart contracts â€” they cost the most gas.
+1. Use EIP-1559 transactions (`type: 2`) for better fee estimation — set `maxFeePerGas` and `maxPriorityFeePerGas`.
+2. Minimize SSTORE operations in smart contracts — they cost the most gas.
 3. Use the `storageRoot` and `codeHash` in block headers to verify account state via light clients.
 4. For production contracts, always include upgrade mechanisms (proxy pattern) and emergency pause functions.
-5. Monitor EIP-4844 blob fees when deploying L2 applications â€” they are much cheaper than L1 calldata.
+5. Monitor EIP-4844 blob fees when deploying L2 applications — they are much cheaper than L1 calldata.
 
 ---
 

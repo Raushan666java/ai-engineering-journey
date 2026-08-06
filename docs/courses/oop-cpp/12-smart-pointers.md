@@ -1,4 +1,4 @@
-﻿# Chapter 12: Smart Pointers
+# Chapter 12: Smart Pointers
 
 > **Previous:** [11-file-io](./11-file-io.md) | **Next:** [13-move-semantics](./13-move-semantics.md)
 
@@ -79,22 +79,22 @@ Manual memory management in C++ introduces four categories of defects:
 | **Use-After-Free** | Dereferencing pointer after `delete` | Undefined behavior (crash or data corruption) |
 | **Exception Unsafe** | Exception between `new` and `delete` | Leak even with correct code |
 
-**Analogy â€” Library Book Tracking:**
+**Analogy — Library Book Tracking:**
 - Raw pointer is a paper slip with the book's shelf location. If you lose the slip (forget to delete), the book stays checked out forever (memory leak). If you return the book twice (double delete), the librarian gets confused (heap corruption). If you try to read the book after returning it (use-after-free), you might find someone else's book at that shelf.
-- Smart pointers are like a self-returning library system â€” books get returned automatically when you're done, no matter how you leave.
+- Smart pointers are like a self-returning library system — books get returned automatically when you're done, no matter how you leave.
 
 ```cpp
 // PROBLEM: Exception-unsafe raw pointer
 void processRaw() {
     int* ptr = new int(42);
-    riskyOperation();        // may throw â€” ptr leaks!
+    riskyOperation();        // may throw — ptr leaks!
     delete ptr;
 }
 
 // SOLUTION: Smart pointer is RAII-safe
 void processSmart() {
     auto ptr = std::make_unique<int>(42);
-    riskyOperation();        // may throw â€” unique_ptr destructor still runs
+    riskyOperation();        // may throw — unique_ptr destructor still runs
 }                            // memory freed automatically
 ```
 
@@ -111,17 +111,17 @@ Smart pointers eliminate all four categories by encoding ownership semantics int
 
 ---
 
-## 12.2 std::unique_ptr â€” Exclusive Ownership
+## 12.2 std::unique_ptr — Exclusive Ownership
 
 ### 12.2.1 What Is unique_ptr?
 
 
-`unique_ptr<T>` is a move-only smart pointer that owns a dynamically allocated `T` exclusively. When the `unique_ptr` goes out of scope, the owned object is destroyed. It has zero overhead over a raw pointer â€” the same size, the same performance.
+`unique_ptr<T>` is a move-only smart pointer that owns a dynamically allocated `T` exclusively. When the `unique_ptr` goes out of scope, the owned object is destroyed. It has zero overhead over a raw pointer — the same size, the same performance.
 
-**Analogy â€” Library Card:**
+**Analogy — Library Card:**
 A library card is a unique credential. Only one person can hold a specific card at a time. If you want to give your card to someone else, you must surrender it (move). You cannot photocopy it (copy). When you leave the library, the card is returned to the desk (automatic cleanup).
 
-**Analogy â€” House Key:**
+**Analogy — House Key:**
 You have the only key to a house. You can hand the key to someone else (move), but now you no longer have it. You cannot duplicate the key (copy). When the last person with the key leaves town, the house is automatically sold (destructor runs).
 
 ### 12.2.2 Template Signature
@@ -134,8 +134,8 @@ class unique_ptr {
 };
 ```
 
-- `T` â€” the managed type (may be incomplete at point of declaration)
-- `Deleter` â€” callable that destroys the object (default: `delete`)
+- `T` — the managed type (may be incomplete at point of declaration)
+- `Deleter` — callable that destroys the object (default: `delete`)
 
 ### 12.2.3 Construction and Basic Usage
 
@@ -170,19 +170,19 @@ int main() {
     ptr1->work();     // operator->
     (*ptr1).work();   // operator*
 
-    // Boolean conversion â€” check if non-null
+    // Boolean conversion — check if non-null
     if (ptr1) {
         std::cout << "ptr1 owns a Resource\n";
     }
 
-    // get() â€” access raw pointer (non-owning)
+    // get() — access raw pointer (non-owning)
     Resource* raw = ptr1.get();
 
-    // release() â€” relinquish ownership, return raw pointer
+    // release() — relinquish ownership, return raw pointer
     Resource* taken = ptr2.release();  // ptr2 is now null
     delete taken;                       // must delete manually now
 
-    // reset() â€” delete current object, optionally take new one
+    // reset() — delete current object, optionally take new one
     ptr1.reset(new Resource(3));        // old Resource(1) destroyed
     ptr1.reset();                       // Resource(3) destroyed, ptr1 null
 
@@ -227,14 +227,14 @@ if (!src) {
 std::cout << *dst << '\n';  // 42
 ```
 
-**Dry Run â€” Move Operation:**
+**Dry Run — Move Operation:**
 
 | Step | Operation | src state | dst state | Owner |
 |------|-----------|-----------|-----------|-------|
-| 1 | `auto src = make_unique<int>(42)` | owns int(42) | â€” | src |
+| 1 | `auto src = make_unique<int>(42)` | owns int(42) | — | src |
 | 2 | `auto dst = std::move(src)` | nullptr | owns int(42) | dst |
 | 3 | `*dst` | nullptr | int(42) readable | dst |
-| 4 | end of scope | â€” | â€” | dst destroyed, int freed |
+| 4 | end of scope | — | — | dst destroyed, int freed |
 
 ### 12.2.5 unique_ptr with Arrays
 
@@ -242,7 +242,7 @@ std::cout << *dst << '\n';  // 42
 C++11 provides a partial specialization for arrays:
 
 ```cpp
-// Array form â€” calls delete[] automatically
+// Array form — calls delete[] automatically
 std::unique_ptr<int[]> arr(new int[5]{1, 2, 3, 4, 5});
 
 // C++17: make_unique for arrays
@@ -254,7 +254,7 @@ arr2[0] = 42;
 int* raw = arr2.get() + 1;  // OK: use get()
 ```
 
-**Note:** `shared_ptr` does NOT have a built-in array specialization â€” you must provide a custom deleter if managing arrays with `shared_ptr`.
+**Note:** `shared_ptr` does NOT have a built-in array specialization — you must provide a custom deleter if managing arrays with `shared_ptr`.
 
 ### 12.2.6 Returning unique_ptr from Functions
 
@@ -262,7 +262,7 @@ int* raw = arr2.get() + 1;  // OK: use get()
 ```cpp
 std::unique_ptr<Resource> createResource(int id) {
     return std::make_unique<Resource>(id);
-    // Implicit move â€” no std::move needed (named RVO applies)
+    // Implicit move — no std::move needed (named RVO applies)
 }
 
 int main() {
@@ -271,7 +271,7 @@ int main() {
 }   // Resource destroyed here
 ```
 
-This pattern is essential for factory functions â€” ownership flows naturally from callee to caller.
+This pattern is essential for factory functions — ownership flows naturally from callee to caller.
 
 ### 12.2.7 unique_ptr in Containers
 
@@ -285,7 +285,7 @@ int main() {
     vec.push_back(std::make_unique<int>(1));
     vec.push_back(std::make_unique<int>(2));
 
-    // vec.push_back(copy) would fail â€” must move
+    // vec.push_back(copy) would fail — must move
     auto ptr = std::make_unique<int>(3);
     vec.push_back(std::move(ptr));
 
@@ -302,14 +302,14 @@ int main() {
 | Operation | unique_ptr | Raw Pointer | Ratio |
 |-----------|------------|-------------|-------|
 | Size | `sizeof(void*)` | `sizeof(void*)` | 1:1 |
-| Construction (default) | None | None | â€” |
+| Construction (default) | None | None | — |
 | Construction (make) | One allocation | One allocation | 1:1 |
 | Dereference | One indirection | One indirection | 1:1 |
 | Move | Pointer copy + null | Pointer copy | 1:1 |
 | Destruction | One delete (if non-null) | Manual delete | Equivalent |
-| Custom Deleter | Type-dependent size | N/A | â€” |
+| Custom Deleter | Type-dependent size | N/A | — |
 
-`unique_ptr` with default deleter is literally as fast as a raw pointer â€” the optimizer inlines everything.
+`unique_ptr` with default deleter is literally as fast as a raw pointer — the optimizer inlines everything.
 
 ### 12.2.9 Edge Cases with unique_ptr
 
@@ -325,53 +325,53 @@ int main() {
 
 ---
 
-## 12.3 std::shared_ptr â€” Shared Ownership
+## 12.3 std::shared_ptr — Shared Ownership
 
 ### 12.3.1 What Is shared_ptr?
 
 
 `shared_ptr<T>` implements shared ownership via reference counting. Multiple `shared_ptr` instances can own the same object. The object is destroyed when the last owning `shared_ptr` is destroyed. Copying increments the reference count; destruction decrements it.
 
-**Analogy â€” Netflix Account:**
-A Netflix account (the managed object) is shared by a family. Each family member who logs in increments the "active user" count. When a member logs out, the count decrements. The account is cancelled (destroyed) only when the last member logs out. A `weak_ptr` is like a guest pass â€” they can watch only if someone else is currently paying for the account (the object still exists).
+**Analogy — Netflix Account:**
+A Netflix account (the managed object) is shared by a family. Each family member who logs in increments the "active user" count. When a member logs out, the count decrements. The account is cancelled (destroyed) only when the last member logs out. A `weak_ptr` is like a guest pass — they can watch only if someone else is currently paying for the account (the object still exists).
 
-**Analogy â€” Condo Timeshare:**
+**Analogy — Condo Timeshare:**
 Multiple people own shares in a condo. Each person has a key (shared_ptr). The condo exists as long as at least one owner holds a key. When the last owner sells their share, the condo is sold off (destroyed). A `weak_ptr` is like a visitor who can stay only while at least one owner is present.
 
 ### 12.3.2 Control Block Architecture
 
 
-When you create a `shared_ptr`, the implementation allocates a **control block** â€” a separate metadata structure:
+When you create a `shared_ptr`, the implementation allocates a **control block** — a separate metadata structure:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚     shared_ptr<T> p1     â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-â”‚  â”‚ T* ptr  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  â”‚ ControlBlock* cb â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚   T obj  â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                            â”‚  Control Block       â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚
-â”‚     shared_ptr<T> p2     â”‚  â”‚ ref_count: 2     â”‚ â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚  â”‚ weak_count: 0    â”‚ â”‚
-â”‚  â”‚ T* ptr  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚ deleter (opt)    â”‚ â”‚
-â”‚  â”‚ ControlBlock* cb â”€â”€â”€â”€â”€â”€â”€â–ºâ”‚ allocator (opt)  â”‚ â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                        â”‚
+┌──────────────────────────┐
+│     shared_ptr<T> p1     │
+│  ┌────────────────────┐  │
+│  │ T* ptr  ────────────────►┌──────────┐
+│  │ ControlBlock* cb ───────►│   T obj  │
+│  └────────────────────┘  │  └──────────┘
+└──────────────────────────┘
+                            │  Control Block       │
+┌──────────────────────────┐  ┌──────────────────┐ │
+│     shared_ptr<T> p2     │  │ ref_count: 2     │ │
+│  ┌────────────────────┐  │  │ weak_count: 0    │ │
+│  │ T* ptr  ────────────────►│ deleter (opt)    │ │
+│  │ ControlBlock* cb ───────►│ allocator (opt)  │ │
+│  └────────────────────┘  │  └──────────────────┘ │
+└──────────────────────────┘                        │
 ```
 
 When using `make_shared`, the object and control block are allocated in a **single memory block**:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Single Allocation (make_shared)         â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚
-â”‚  â”‚ Control Block    â”‚   T object       â”‚ â”‚
-â”‚  â”‚ ref_count: 2     â”‚                  â”‚ â”‚
-â”‚  â”‚ weak_count: 0    â”‚                  â”‚ â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────────────────────────────────┐
+│  Single Allocation (make_shared)         │
+│  ┌──────────────────┬──────────────────┐ │
+│  │ Control Block    │   T object       │ │
+│  │ ref_count: 2     │                  │ │
+│  │ weak_count: 0    │                  │ │
+│  └──────────────────┴──────────────────┘ │
+└──────────────────────────────────────────┘
 ```
 
 **Control Block Fields:**
@@ -455,7 +455,7 @@ a.reset();                             // Step 8
 
 | Step | Operation | `a` | `b` | `c` | `d` | ref_count | Object Alive? |
 |------|-----------|-----|-----|-----|-----|-----------|---------------|
-| 0 | Initial | null | null | null | null | 0 | â€” |
+| 0 | Initial | null | null | null | null | 0 | — |
 | 1 | `a = make_shared<int>(100)` | owns | null | null | null | 1 | Yes |
 | 2 | `b = a` | owns | owns | null | null | 2 | Yes |
 | 3 | `c = a` | owns | owns | owns | null | 3 | Yes |
@@ -463,7 +463,7 @@ a.reset();                             // Step 8
 | 5 | `d = c` | owns | null | owns | owns | 3 | Yes |
 | 6 | `c.reset()` | owns | null | null | owns | 2 | Yes |
 | 7 | `d.reset()` | owns | null | null | null | 1 | Yes |
-| 8 | `a.reset()` | null | null | null | null | 0 | **No â€” freed** |
+| 8 | `a.reset()` | null | null | null | null | 0 | **No — freed** |
 
 ### 12.3.5 Key Member Functions
 
@@ -481,8 +481,8 @@ a.reset();                             // Step 8
 
 
 - **Control block** (ref count, weak count): Thread-safe (atomic operations)
-- **Managed object**: NOT thread-safe â€” accessing the same `shared_ptr` from multiple threads without synchronization is a data race
-- **The shared_ptr itself**: NOT thread-safe â€” concurrent `reset()` and dereference on the same `shared_ptr` object is UB
+- **Managed object**: NOT thread-safe — accessing the same `shared_ptr` from multiple threads without synchronization is a data race
+- **The shared_ptr itself**: NOT thread-safe — concurrent `reset()` and dereference on the same `shared_ptr` object is UB
 
 ```cpp
 auto sp = std::make_shared<int>(42);
@@ -501,7 +501,7 @@ sp.reset();                        // Race if A is also using sp!
 ### 12.3.7 shared_ptr with Custom Deleter
 
 
-Unlike `unique_ptr`, the deleter is **not** part of the template signature â€” it is type-erased (stored in the control block):
+Unlike `unique_ptr`, the deleter is **not** part of the template signature — it is type-erased (stored in the control block):
 
 ```cpp
 // Custom deleter type does NOT appear in the type
@@ -520,22 +520,22 @@ This means you can put `shared_ptr<T>` with different deleters into the same con
 std::vector<std::shared_ptr<FILE>> files;
 files.push_back({fopen("a.txt", "r"), &fclose});
 files.push_back({fopen("b.txt", "r"), &fclose});
-// All same type â€” vector works
+// All same type — vector works
 ```
 
 ---
 
-## 12.4 std::weak_ptr â€” Non-Owning Observer
+## 12.4 std::weak_ptr — Non-Owning Observer
 
 ### 12.4.1 What Is weak_ptr?
 
 
 `weak_ptr<T>` holds a non-owning "weak reference" to an object managed by `shared_ptr`. It does **not** increment the reference count. To access the object, you must `lock()` it, which returns a `shared_ptr` (or `nullptr` if the object has been destroyed).
 
-**Analogy â€” GPS Coordinates of a House:**
+**Analogy — GPS Coordinates of a House:**
 A GPS coordinate (weak_ptr) tells you where a house is, but it doesn't give you ownership. You can visit the house only if someone still owns it (lock succeeds). If the house has been demolished (object destroyed), the GPS leads to an empty lot (lock returns null).
 
-**Analogy â€” Movie Ticket Stub:**
+**Analogy — Movie Ticket Stub:**
 A movie ticket stub (weak_ptr) lets you re-enter the theater only if the movie is still playing (object alive). Once the movie ends (object destroyed), the stub is worthless. The stub never counts toward the audience size (doesn't increment ref count).
 
 ### 12.4.2 Construction and Locking
@@ -594,8 +594,8 @@ auto locked2 = wp.lock();               // Step 5
 | 1 | `make_shared<int>(42)` | 1 | 0 | Alive | null | null |
 | 2 | `wp = sp` | 1 | 1 | Alive | null | null |
 | 3 | `locked1 = wp.lock()` | **2** | 1 | Alive | owns | null |
-| 4 | `sp.reset()` | 1 â†’ **0** | 1 | **Destroyed** | owns | null |
-| 5 | `locked2 = wp.lock()` | 1 â†’ **0** | 1 â†’ **0** | Gone | owns | **null** |
+| 4 | `sp.reset()` | 1 → **0** | 1 | **Destroyed** | owns | null |
+| 5 | `locked2 = wp.lock()` | 1 → **0** | 1 → **0** | Gone | owns | **null** |
 
 **Key insight:** The control block survives as long as `weak_count > 0`, even after `ref_count` hits 0. This allows `weak_ptr::lock()` to return null safely rather than dangling.
 
@@ -613,17 +613,17 @@ auto locked2 = wp.lock();               // Step 5
 
 ---
 
-## 12.5 Circular References â€” The shared_ptr Trap
+## 12.5 Circular References — The shared_ptr Trap
 
 ### 12.5.1 The Problem
 
 
-When two objects hold `shared_ptr` to each other, neither's reference count can reach zero â€” they form a cycle that leaks memory.
+When two objects hold `shared_ptr` to each other, neither's reference count can reach zero — they form a cycle that leaks memory.
 
-**Analogy â€” Two People Holding Each Other's Keys:**
-Alice and Bob each hold a key to the other's apartment. Neither can leave town because each believes someone else needs their apartment. They're stuck forever â€” the apartments can never be vacated.
+**Analogy — Two People Holding Each Other's Keys:**
+Alice and Bob each hold a key to the other's apartment. Neither can leave town because each believes someone else needs their apartment. They're stuck forever — the apartments can never be vacated.
 
-**Analogy â€” Clinging Toddlers:**
+**Analogy — Clinging Toddlers:**
 Two toddlers each grab the other's shirt and won't let go. Neither can go home (be destroyed) because each is holding the other. A parent (weak_ptr) would let one go without getting trapped.
 
 ### 12.5.2 The Leak Demonstration
@@ -655,7 +655,7 @@ int main() {
         std::cout << "b use_count: " << b.use_count() << "\n";  // 1
 
         a->next = b;    // a holds shared_ptr to b
-        b->next = a;    // b holds shared_ptr to a â€” CYCLE!
+        b->next = a;    // b holds shared_ptr to a — CYCLE!
 
         std::cout << "a use_count: " << a.use_count() << "\n";  // 2
         std::cout << "b use_count: " << b.use_count() << "\n";  // 2
@@ -683,15 +683,15 @@ b use_count: 2
 
 | Step | Operation | a.ref | b.ref | a->next | b->next |
 |------|-----------|-------|-------|---------|---------|
-| 1 | `a = make_shared<Node>(1)` | 1 | â€” | null | â€” |
+| 1 | `a = make_shared<Node>(1)` | 1 | — | null | — |
 | 2 | `b = make_shared<Node>(2)` | 1 | 1 | null | null |
 | 3 | `a->next = b` | 1 | **2** | owns b | null |
 | 4 | `b->next = a` | **2** | 2 | owns b | owns a |
-| 5 | `a` out of scope | 2â†’**1** | 2 | a's copy released | owns a |
-| 6 | `b` out of scope | 1 | 2â†’**1** | owns b | b's copy released |
+| 5 | `a` out of scope | 2→**1** | 2 | a's copy released | owns a |
+| 6 | `b` out of scope | 1 | 2→**1** | owns b | b's copy released |
 | 7 | Final count | **1** | **1** | a alive via b->next | b alive via a->next |
 
-Both counts stuck at 1 â€” neither object can be freed.
+Both counts stuck at 1 — neither object can be freed.
 
 ### 12.5.4 The Fix: weak_ptr
 
@@ -718,7 +718,7 @@ int main() {
         auto b = std::make_shared<NodeFixed>(2);
 
         a->next = b;
-        b->prev = a;         // weak_ptr â€” ref_count NOT incremented
+        b->prev = a;         // weak_ptr — ref_count NOT incremented
 
         std::cout << "a use_count: " << a.use_count() << "\n";  // 1
         std::cout << "b use_count: " << b.use_count() << "\n";  // 2
@@ -727,7 +727,7 @@ int main() {
         if (auto prev = b->prev.lock()) {
             std::cout << "b's prev has value: " << prev->value << "\n";
         }
-    }   // b destroyed first (ref 2â†’1â†’0), then a (ref 1â†’0)
+    }   // b destroyed first (ref 2→1→0), then a (ref 1→0)
     std::cout << "=== Both Nodes freed ===\n";
 }
 ```
@@ -748,17 +748,17 @@ NodeFixed(1) destroyed
 
 
 In any ownership hierarchy:
-- **Parent â†’ Child:** `shared_ptr` or `unique_ptr` (owning direction)
-- **Child â†’ Parent:** `weak_ptr` or raw pointer (non-owning back-reference)
+- **Parent → Child:** `shared_ptr` or `unique_ptr` (owning direction)
+- **Child → Parent:** `weak_ptr` or raw pointer (non-owning back-reference)
 
 | Relationship | Owning Direction | Pointer Type |
 |-------------|-----------------|--------------|
-| Tree: parent â†’ children | Parent owns children | `unique_ptr<Child>` |
-| Tree: child â†’ parent | Child observes parent | `weak_ptr<Parent>` or raw pointer |
+| Tree: parent → children | Parent owns children | `unique_ptr<Child>` |
+| Tree: child → parent | Child observes parent | `weak_ptr<Parent>` or raw pointer |
 | Graph: bidirectional edges | External container owns nodes | `shared_ptr<Node>` inside container |
-| DAG: node â†’ dependencies | Node owns dependencies | `shared_ptr<Dep>` |
+| DAG: node → dependencies | Node owns dependencies | `shared_ptr<Dep>` |
 | DAG: reverse lookup | Optional back-reference | `weak_ptr<Node>` |
-| Cache: key â†’ value | Cache owns values | `shared_ptr<Value>` |
+| Cache: key → value | Cache owns values | `shared_ptr<Value>` |
 | Cache: eviction callback | Timed access | `weak_ptr<Value>` |
 
 ---
@@ -768,7 +768,7 @@ In any ownership hierarchy:
 ### 12.6.1 The Problem
 
 
-Sometimes an object needs to obtain a `shared_ptr` to itself (`this`). But simply doing `shared_ptr<T>(this)` creates a second, independent control block â€” leading to double deletion.
+Sometimes an object needs to obtain a `shared_ptr` to itself (`this`). But simply doing `shared_ptr<T>(this)` creates a second, independent control block — leading to double deletion.
 
 ```cpp
 // DANGEROUS: Never do this
@@ -781,7 +781,7 @@ struct Bad : std::enable_shared_from_this<Bad> {
 int main() {
     auto p1 = std::make_shared<Bad>();
     auto p2 = p1->getShared();   // Two independent control blocks!
-    // Both think ref_count is 1 â€” double delete on destruction
+    // Both think ref_count is 1 — double delete on destruction
 }
 ```
 
@@ -813,7 +813,7 @@ int main() {
     auto p2 = p1->getShared();
     std::cout << "use_count: " << p1.use_count() << "\n";  // 2
 
-    // p1 and p2 share the SAME control block â€” single delete
+    // p1 and p2 share the SAME control block — single delete
 }
 ```
 
@@ -827,7 +827,7 @@ Good destroyed
 ### 12.6.3 Important Rules
 
 
-1. **Must be managed by shared_ptr first** â€” calling `shared_from_this()` on an object not yet owned by `shared_ptr` throws `std::bad_weak_ptr`
+1. **Must be managed by shared_ptr first** — calling `shared_from_this()` on an object not yet owned by `shared_ptr` throws `std::bad_weak_ptr`
 2. **Publicly inherit** from `enable_shared_from_this<T>`
 3. **The CRTP pattern:** You pass the derived class as the template parameter
 
@@ -871,18 +871,18 @@ int main() {
 
 ---
 
-## 12.7 std::auto_ptr â€” The Deprecated Forefather
+## 12.7 std::auto_ptr — The Deprecated Forefather
 
 ### 12.7.1 History
 
 
-`auto_ptr` was C++98's first attempt at a smart pointer. It attempted "copy semantics" by transferring ownership on copy â€” a design that broke fundamental expectations. Deprecated in C++11, removed in C++17.
+`auto_ptr` was C++98's first attempt at a smart pointer. It attempted "copy semantics" by transferring ownership on copy — a design that broke fundamental expectations. Deprecated in C++11, removed in C++17.
 
 ### 12.7.2 Why auto_ptr Failed
 
 
 ```cpp
-// C++98 â€” auto_ptr (DO NOT USE)
+// C++98 — auto_ptr (DO NOT USE)
 std::auto_ptr<int> p1(new int(42));
 std::auto_ptr<int> p2 = p1;   // p1 is silently NULLIFIED!
 
@@ -908,11 +908,11 @@ vec.push_back(std::auto_ptr<int>(new int(2)));
 | Container compatible | No (broken by sort, etc.) | Yes (move-aware) |
 | Status | Removed in C++17 | Current standard |
 
-**Moral:** Always use `unique_ptr` â€” never `auto_ptr`. If you see `auto_ptr` in legacy code, it's a bug waiting to happen.
+**Moral:** Always use `unique_ptr` — never `auto_ptr`. If you see `auto_ptr` in legacy code, it's a bug waiting to happen.
 
 ---
 
-## 12.8 Custom Deleters â€” Beyond Memory
+## 12.8 Custom Deleters — Beyond Memory
 
 ### 12.8.1 Motivation
 
@@ -938,11 +938,11 @@ void fileCloser(std::FILE* fp) {
 }
 
 int main() {
-    // Function pointer deleter â€” sizeof(unique_ptr) = 2 pointers
+    // Function pointer deleter — sizeof(unique_ptr) = 2 pointers
     std::unique_ptr<std::FILE, decltype(&fileCloser)>
         fp1(std::fopen("test.txt", "w"), &fileCloser);
 
-    // Lambda deleter â€” sizeof(unique_ptr) = 1 pointer (stateless lambda)
+    // Lambda deleter — sizeof(unique_ptr) = 1 pointer (stateless lambda)
     auto lambdaDeleter = [](std::FILE* fp) {
         if (fp) {
             std::fclose(fp);
@@ -952,7 +952,7 @@ int main() {
     std::unique_ptr<std::FILE, decltype(lambdaDeleter)>
         fp2(std::fopen("test2.txt", "w"), lambdaDeleter);
 
-    // Mutable lambda with state â€” sizeof includes the state
+    // Mutable lambda with state — sizeof includes the state
     int closeCount = 0;
     auto countingDeleter = [&closeCount](std::FILE* fp) mutable {
         if (fp) {
@@ -968,10 +968,10 @@ int main() {
 ### 12.8.3 shared_ptr with Custom Deleter
 
 
-The deleter is type-erased in the control block â€” not part of the type:
+The deleter is type-erased in the control block — not part of the type:
 
 ```cpp
-// All of these are shared_ptr<FILE> â€” same type!
+// All of these are shared_ptr<FILE> — same type!
 std::shared_ptr<FILE> sp1(fopen("a.txt", "r"), &fclose);
 std::shared_ptr<FILE> sp2(fopen("b.txt", "r"), [](FILE* f) {
     std::cout << "Custom close\n";
@@ -1028,19 +1028,19 @@ auto sock = createSocket();
 
 ---
 
-## 12.9 make_shared vs Direct new â€” Performance Deep Dive
+## 12.9 make_shared vs Direct new — Performance Deep Dive
 
 ### 12.9.1 Single vs Double Allocation
 
 
 ```cpp
-// Version 1: make_shared â€” SINGLE allocation
+// Version 1: make_shared — SINGLE allocation
 auto p1 = std::make_shared<MyClass>(args);
 // Memory layout:
 // [ control block | MyClass object ]
 // One call to operator new
 
-// Version 2: shared_ptr(new T) â€” TWO allocations
+// Version 2: shared_ptr(new T) — TWO allocations
 std::shared_ptr<MyClass> p2(new MyClass(args));
 // Allocation 1: new MyClass(args)
 // Allocation 2: internal allocation for control block
@@ -1085,7 +1085,7 @@ sp.reset();  // Object destructor runs, memory freed
 
 ---
 
-## 12.10 make_unique â€” The Modern Factory
+## 12.10 make_unique — The Modern Factory
 
 ### 12.10.1 Why make_unique Was Late to C++
 
@@ -1101,11 +1101,11 @@ void f(std::unique_ptr<A> a, std::unique_ptr<B> b);
 
 f(std::unique_ptr<A>(new A), std::unique_ptr<B>(new B));
 // Evaluation order is unspecified!
-// Scenario: new A succeeds, new B throws â†’ A leaks
+// Scenario: new A succeeds, new B throws → A leaks
 
 // SAFE: No leak possible
 f(std::make_unique<A>(), std::make_unique<B>());
-// Each temporary is a full-expression â€” no leak window
+// Each temporary is a full-expression — no leak window
 ```
 
 ### 12.10.3 Implementation (for reference)
@@ -1129,7 +1129,7 @@ Raw pointer casts (`static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cas
 | `static_cast<T*>(p)` | `static_pointer_cast<T>(sp)` | Downcast/upcast (no runtime check) |
 | `dynamic_cast<T*>(p)` | `dynamic_pointer_cast<T>(sp)` | Polymorphic downcast (runtime check) |
 | `const_cast<T*>(p)` | `const_pointer_cast<T>(sp)` | Remove/add const |
-| `reinterpret_cast<T*>(p)` | â€” | Not provided for smart pointers |
+| `reinterpret_cast<T*>(p)` | — | Not provided for smart pointers |
 
 ### 12.11.1 static_pointer_cast
 
@@ -1210,7 +1210,7 @@ int main() {
     auto mutableStr = std::const_pointer_cast<std::string>(constStr);
     legacyApi(&(*mutableStr));
 
-    // Original ref_count now 2 â€” both shared_ptrs point to same object
+    // Original ref_count now 2 — both shared_ptrs point to same object
     std::cout << constStr.use_count() << "\n";  // 2
 }
 ```
@@ -1239,22 +1239,22 @@ int main() {
 std::shared_ptr<int> a(new int(42));
 std::shared_ptr<int> b(a);            // same ownership group
 
-// std::less compares by get() â€” the raw pointer value
+// std::less compares by get() — the raw pointer value
 // std::owner_less compares by control block address
 
 std::set<std::shared_ptr<int>> valSet;
-valSet.insert(a);   // uses std::less<shared_ptr<int>> â€” compares *a
+valSet.insert(a);   // uses std::less<shared_ptr<int>> — compares *a
 valSet.insert(b);   // if *a == *b, might not insert
 
 std::set<std::shared_ptr<int>, std::owner_less<std::shared_ptr<int>>> ownerSet;
-ownerSet.insert(a);   // uses owner_less â€” compares control blocks
-ownerSet.insert(b);   // a and b share a control block â€” won't insert duplicate
+ownerSet.insert(a);   // uses owner_less — compares control blocks
+ownerSet.insert(b);   // a and b share a control block — won't insert duplicate
 ```
 
 ### 12.12.2 Aliasing Constructor and owner_less
 
 
-The aliasing constructor creates two `shared_ptr` pointing to different objects but sharing a control block â€” `owner_less` correctly identifies them as the same ownership group:
+The aliasing constructor creates two `shared_ptr` pointing to different objects but sharing a control block — `owner_less` correctly identifies them as the same ownership group:
 
 ```cpp
 struct Data { int id; };
@@ -1269,7 +1269,7 @@ std::shared_ptr<Metadata> meta(data, reinterpret_cast<Metadata*>(data.get()));
 std::owner_less<std::shared_ptr<void>> less;
 std::cout << less(data, meta) << "\n";  // 0 (not less)
 std::cout << less(meta, data) << "\n";  // 0 (not less)
-// They are !less(a,b) && !less(b,a) â€” equivalent
+// They are !less(a,b) && !less(b,a) — equivalent
 ```
 
 ---
@@ -1296,18 +1296,18 @@ std::cout << less(meta, data) << "\n";  // 0 (not less)
 
 ```
 Q: Do I need dynamic allocation?
-â”œâ”€â”€ No â†’ Use stack/value types (preferred)
-â””â”€â”€ Yes â†’ Q: Is ownership exclusive?
-    â”œâ”€â”€ Yes â†’ use unique_ptr (default)
-    â””â”€â”€ No â†’ Q: Is the ownership truly shared?
-        â”œâ”€â”€ Yes â†’ Q: Are there back-references that could cycle?
-        â”‚   â”œâ”€â”€ Yes â†’ use shared_ptr + weak_ptr for back-refs
-        â”‚   â””â”€â”€ No â†’ use shared_ptr
-        â””â”€â”€ No â†’ Q: Do I just need to observe without owning?
-            â”œâ”€â”€ Yes â†’ Q: Can the object disappear?
-            â”‚   â”œâ”€â”€ Yes â†’ weak_ptr (lock- check)
-            â”‚   â””â”€â”€ No â†’ raw pointer (if lifetime guaranteed)
-            â””â”€â”€ [rethink ownership design]
+├── No → Use stack/value types (preferred)
+└── Yes → Q: Is ownership exclusive?
+    ├── Yes → use unique_ptr (default)
+    └── No → Q: Is the ownership truly shared?
+        ├── Yes → Q: Are there back-references that could cycle?
+        │   ├── Yes → use shared_ptr + weak_ptr for back-refs
+        │   └── No → use shared_ptr
+        └── No → Q: Do I just need to observe without owning?
+            ├── Yes → Q: Can the object disappear?
+            │   ├── Yes → weak_ptr (lock- check)
+            │   └── No → raw pointer (if lifetime guaranteed)
+            └── [rethink ownership design]
 ```
 
 ---
@@ -1356,12 +1356,12 @@ Q: Do I need dynamic allocation?
 
 
 ```
-Offset  â”‚ Field                   â”‚ Size  â”‚ Description
-â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-0       â”‚ ref_count               â”‚ 4-8   â”‚ Strong reference count
-4/8     â”‚ weak_count              â”‚ 4-8   â”‚ Weak reference count
-8/16    â”‚ deleter (type-erased)   â”‚ var   â”‚ Custom deleter (if any)
-var     â”‚ allocator (type-erased) â”‚ var   â”‚ Custom allocator (if any)
+Offset  │ Field                   │ Size  │ Description
+────────┼─────────────────────────┼───────┼─────────────────────────
+0       │ ref_count               │ 4-8   │ Strong reference count
+4/8     │ weak_count              │ 4-8   │ Weak reference count
+8/16    │ deleter (type-erased)   │ var   │ Custom deleter (if any)
+var     │ allocator (type-erased) │ var   │ Custom allocator (if any)
 ```
 
 With `make_shared`, the managed object is appended immediately after the control block (or before it, depending on implementation), inside the same allocation.
@@ -1378,8 +1378,8 @@ With `make_shared`, the managed object is appended immediately after the control
 ### C++20
 
 - `std::make_shared` for arrays: `auto p = std::make_shared<int[]>(10);`
-- `std::atomic<std::shared_ptr<T>>` â€” atomic operations on shared_ptr itself
-- `std::to_address` â€” generic way to get raw address from fancy pointers
+- `std::atomic<std::shared_ptr<T>>` — atomic operations on shared_ptr itself
+- `std::to_address` — generic way to get raw address from fancy pointers
 
 ---
 
@@ -1403,7 +1403,7 @@ auto moved = std::move(p);
 int* raw = new int(42);
 std::shared_ptr<int> sp1(raw);
 std::shared_ptr<int> sp2(raw);  // UNDEFINED BEHAVIOUR!
-// Two independent control blocks â€” double delete
+// Two independent control blocks — double delete
 ```
 
 ### 12.16.3 shared_ptr to this Without enable_shared_from_this
@@ -1424,14 +1424,14 @@ struct BadExample {
 auto sp = std::make_shared<int>(42);
 std::weak_ptr<int> wp = sp;
 sp.reset();
-auto locked = wp.lock();   // locked is nullptr â€” safe, not UB
+auto locked = wp.lock();   // locked is nullptr — safe, not UB
 ```
 
 ### 12.16.5 Mixing make_shared and Placement new
 
 
 ```cpp
-// ERROR: make_shared controls allocation â€” can't use placement new
+// ERROR: make_shared controls allocation — can't use placement new
 // auto p = std::make_shared<MyClass>(new (buffer) MyClass(args));
 ```
 
@@ -1465,7 +1465,7 @@ struct Holder {
 
 
 **Answer:** `unique_ptr` is the default choice for dynamic allocation. Choose it when:
-1. Ownership is clearly exclusive â€” one owner at all times
+1. Ownership is clearly exclusive — one owner at all times
 2. Zero overhead is required (same size/speed as raw pointer)
 3. The resource lifetime maps to a single scope or object lifetime
 4. You want to express ownership semantics in APIs
@@ -1519,7 +1519,7 @@ delete raw;               // caller must delete
 ```cpp
 // Conceptual model
 shared_ptr<T> lock() {
-    // Atomically check and increment â€” prevents races
+    // Atomically check and increment — prevents races
     if (cb_->ref_count.load() > 0) {
         cb_->ref_count.fetch_add(1);
         return shared_ptr<T>(ptr_, cb_);  // share control block
@@ -1547,7 +1547,7 @@ shared_ptr<T> lock() {
 // Two allocations
 std::shared_ptr<LargeObj> p(new LargeObj(args));
 
-// One allocation â€” but LargeObj memory tied to control block lifetime
+// One allocation — but LargeObj memory tied to control block lifetime
 auto p = std::make_shared<LargeObj>(args);
 ```
 
@@ -1560,7 +1560,7 @@ auto p = std::make_shared<LargeObj>(args);
 struct BigObj { int x; int y; };
 auto owner = std::make_shared<BigObj>(10, 20);
 std::shared_ptr<int> alias(owner, &owner->x);  // points to x, owns BigObj
-// alias.use_count() == owner.use_count() â€” same control block
+// alias.use_count() == owner.use_count() — same control block
 ```
 
 This is used to point to sub-objects while keeping the parent alive. `owner_less` treats aliased shared_ptrs as equivalent because they share a control block.
@@ -1603,7 +1603,7 @@ shared_ptr<U>::shared_ptr(U* ptr) {
 std::vector<std::unique_ptr<int>> vec;
 vec.push_back(std::make_unique<int>(1));
 vec.push_back(std::make_unique<int>(2));
-// C++20: std::ranges::sort(vec);  // OK â€” uses move
+// C++20: std::ranges::sort(vec);  // OK — uses move
 ```
 
 - `shared_ptr` in containers: Works normally since `shared_ptr` is copyable. This is the most common way to manage shared objects.
@@ -1626,7 +1626,7 @@ Chromium uses a custom smart pointer hierarchy (`scoped_refptr` for reference-co
 ### 12.18.2 LLVM / Clang
 
 
-LLVM uses `std::unique_ptr` extensively for ownership of AST nodes, passes, and analysis results. Each translation unit creates a unique AST that is exclusively owned â€” perfect for `unique_ptr`. `shared_ptr` is rare; LLVM prefers explicit ownership models.
+LLVM uses `std::unique_ptr` extensively for ownership of AST nodes, passes, and analysis results. Each translation unit creates a unique AST that is exclusively owned — perfect for `unique_ptr`. `shared_ptr` is rare; LLVM prefers explicit ownership models.
 
 ### 12.18.3 Boost.Asio (Networking)
 
@@ -1693,11 +1693,11 @@ Smart pointers are the cornerstone of modern C++ resource management:
 | `unique_ptr` | Exclusive ownership (default) | Move-only, zero overhead |
 | `shared_ptr` | Shared ownership | Reference counting, control block |
 | `weak_ptr` | Non-owning observation | Lock-based safe access |
-| `auto_ptr` (deprecated) | (nothing â€” removed) | Broken copy semantics |
+| `auto_ptr` (deprecated) | (nothing — removed) | Broken copy semantics |
 
 Always prefer `make_unique` and `make_shared`. Use `weak_ptr` to break cycles. Use `enable_shared_from_this` for async callbacks. Smart pointers eliminate entire categories of memory bugs while imposing minimal cognitive overhead once ownership semantics are clear.
 
-> "A pointer is either `unique_ptr` or `shared_ptr`. If it's not, prove why." â€” C++ Core Guidelines
+> "A pointer is either `unique_ptr` or `shared_ptr`. If it's not, prove why." — C++ Core Guidelines
 
 ---
 
@@ -1731,7 +1731,7 @@ Always prefer `make_unique` and `make_shared`. Use `weak_ptr` to break cycles. U
 ### Further Reading
 
 - [C++ Core Guidelines: Smart pointer rules (R.20-R.37)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management)
-- [Herb Sutter: GotW #89 â€” Smart Pointer Parameters](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/)
+- [Herb Sutter: GotW #89 — Smart Pointer Parameters](https://herbsutter.com/2013/06/05/gotw-91-solution-smart-pointer-parameters/)
 - [cppreference: std::shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr)
 - [cppreference: std::unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr)
 - [cppreference: std::weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr)

@@ -1,4 +1,4 @@
-﻿# Chapter 3: System Design Interview
+# Chapter 3: System Design Interview
 
 ## Learning Objectives
 
@@ -68,9 +68,9 @@ flowchart TD
 | Metric | Calculation Example |
 |--------|-------------------|
 | Daily active users | Assume 100M DAU for a global product |
-| Requests per second | `(DAU Ã— avg requests per user) / 86400` |
-| Storage | `(write rate Ã— data size Ã— retention period)` |
-| Bandwidth | `(requests per second Ã— response size)` |
+| Requests per second | `(DAU × avg requests per user) / 86400` |
+| Storage | `(write rate × data size × retention period)` |
+| Bandwidth | `(requests per second × response size)` |
 
 #### Step 3: Data Model & API Design (10 minutes)
 - Define entities, relationships, and schema
@@ -147,9 +147,9 @@ flowchart LR
 **Sharding Strategies:**
 ```
 Hash-based: hash(user_id) % num_shards
-Range-based: user_id 1-10000 â†’ shard 1, 10001-20000 â†’ shard 2
+Range-based: user_id 1-10000 → shard 1, 10001-20000 → shard 2
 Directory-based: Lookup table mapping keys to shards
-Geographic: Users in India â†’ India shard
+Geographic: Users in India → India shard
 ```
 
 ### 4. Message Queues
@@ -171,7 +171,7 @@ Geographic: Users in India â†’ India shard
 
 ---
 
-## Section 1: Case Study â€” URL Shortener (tinyurl.com)
+## Section 1: Case Study — URL Shortener (tinyurl.com)
 
 ### Requirements
 
@@ -182,9 +182,9 @@ Geographic: Users in India â†’ India shard
 ### Scale Estimation
 
 ```
-Write: 10M Ã— 100 bytes = 1 GB/day â†’ 365 GB/year
-Read: 10M Ã— 99 reads/1 write = 990M reads/day
-RPS: 10M/86400 â‰ˆ 116 writes/sec, 11,458 reads/sec
+Write: 10M × 100 bytes = 1 GB/day → 365 GB/year
+Read: 10M × 99 reads/1 write = 990M reads/day
+RPS: 10M/86400 ≈ 116 writes/sec, 11,458 reads/sec
 ```
 
 ### Design
@@ -208,13 +208,13 @@ POST /shorten
   "customAlias": "optional", // null for auto
   "ttl": "30d"               // optional expiry
 }
-â†’ { "shortUrl": "https://short.ly/abc123" }
+→ { "shortUrl": "https://short.ly/abc123" }
 
 GET /{shortCode}
-â†’ 302 Redirect to original URL
+→ 302 Redirect to original URL
 
 GET /{shortCode}/analytics
-â†’ { "clicks": 42000, "referrers": {...}, "timeline": [...] }
+→ { "clicks": 42000, "referrers": {...}, "timeline": [...] }
 ```
 
 ### Database Schema
@@ -245,7 +245,7 @@ CREATE TABLE clicks (
 ### Short Code Generation
 
 ```typescript
-// Base62 encoding (a-z, A-Z, 0-9) = 62^7 â‰ˆ 3.5 trillion combinations
+// Base62 encoding (a-z, A-Z, 0-9) = 62^7 ≈ 3.5 trillion combinations
 const BASE62 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
 function generateShortCode(id: number): string {
@@ -285,7 +285,7 @@ Eviction: LRU for old URLs. Most popular URLs stay cached.
 
 ---
 
-## Section 2: Case Study â€” Chat System (WhatsApp)
+## Section 2: Case Study — Chat System (WhatsApp)
 
 ### Requirements
 
@@ -372,7 +372,7 @@ class ChatWebSocket {
 
 ```
 1. User A sends message
-2. WebSocket server receives â†’ queue â†’ message service
+2. WebSocket server receives → queue → message service
 3. Message service writes to Cassandra
 4. If User B is online: push via WebSocket
 5. If User B is offline: store for push notification
@@ -390,7 +390,7 @@ class ChatWebSocket {
 
 ---
 
-## Section 3: Case Study â€” Ride-Sharing (Uber/Ola)
+## Section 3: Case Study — Ride-Sharing (Uber/Ola)
 
 ### Requirements
 
@@ -422,7 +422,7 @@ flowchart LR
 ```typescript
 // Simple grid-based approach for finding nearby drivers
 class GeoHashService {
-  private static readonly PRECISION = 7; // ~76m Ã— ~76m cells
+  private static readonly PRECISION = 7; // ~76m × ~76m cells
 
   encodeGeoHash(lat: number, lng: number): string {
     const latRange = [-90, 90];
@@ -497,14 +497,14 @@ function findBestDriver(request: RideRequest, availableDrivers: Driver[]): Drive
 
 ```
 1. Monitor supply/demand ratio in each geo-region
-2. If demand > supply for >5 min â†’ activate surge (multiplier: 1.2x to 3x)
+2. If demand > supply for >5 min → activate surge (multiplier: 1.2x to 3x)
 3. Surge deters demand, attracts more drivers to area
-4. Dynamic pricing equation: multiplier = Demand Ã— elasticity / Supply
+4. Dynamic pricing equation: multiplier = Demand × elasticity / Supply
 ```
 
 ---
 
-## Section 4: Case Study â€” Social Media Feed (Facebook/Instagram)
+## Section 4: Case Study — Social Media Feed (Facebook/Instagram)
 
 ### Requirements
 
@@ -598,7 +598,7 @@ class FeedService {
 
 ---
 
-## Section 5: Case Study â€” Payment System (Razorpay/PayPal)
+## Section 5: Case Study — Payment System (Razorpay/PayPal)
 
 ### Requirements
 
@@ -692,7 +692,7 @@ async function handlePaymentRequest(
 
 ---
 
-## Section 6: Case Study â€” Video Streaming (YouTube/Netflix)
+## Section 6: Case Study — Video Streaming (YouTube/Netflix)
 
 ### Requirements
 
@@ -762,7 +762,7 @@ class AdaptiveBitrateSelector {
 
 ---
 
-## Section 7: Case Study â€” E-Commerce Platform (Amazon/Flipkart)
+## Section 7: Case Study — E-Commerce Platform (Amazon/Flipkart)
 
 ### Requirements
 
@@ -839,7 +839,7 @@ async function placeOrder(userId: string): Promise<Order> {
 
 ---
 
-## Section 8: Case Study â€” Notification System
+## Section 8: Case Study — Notification System
 
 ### Requirements
 
@@ -927,7 +927,7 @@ class NotificationService {
 
 ---
 
-## Section 9: Case Study â€” Rate Limiter
+## Section 9: Case Study — Rate Limiter
 
 ### Algorithms
 
@@ -990,7 +990,7 @@ if (rateLimiter.allow(`user:${userId}`)) {
 
 ---
 
-## Section 10: Case Study â€” Distributed Web Crawler
+## Section 10: Case Study — Distributed Web Crawler
 
 ### Requirements
 
@@ -1132,19 +1132,19 @@ class PoliteCrawler {
 
 This chapter covered the complete system design interview preparation:
 
-- **Framework:** 6-step structured approach (Requirements â†’ Scale â†’ Data Model â†’ HLD â†’ Deep Dive â†’ Trade-offs)
+- **Framework:** 6-step structured approach (Requirements → Scale → Data Model → HLD → Deep Dive → Trade-offs)
 - **Scalability Concepts:** Load balancing, caching (LRU/LFU/TTL), database scaling (sharding/replicas), message queues, CDN
 - **10 Case Studies:**
-  1. URL Shortener â€” Base62 encoding, cache-aside, redirect
-  2. Chat System â€” WebSocket, Cassandra, message ordering
-  3. Ride-Sharing â€” Geohash/QuadTree, matching, surge pricing
-  4. Social Feed â€” Fanout-on-write vs read, hybrid approach
-  5. Payment System â€” State machine, idempotency, 2-phase commit
-  6. Video Streaming â€” Adaptive bitrate, transcoding, CDN
-  7. E-Commerce â€” Inventory reservation, cart management
-  8. Notification System â€” Multi-channel routing, rate limiting
-  9. Rate Limiter â€” Token bucket, distributed rate limiting
-  10. Web Crawler â€” Polite crawling, deduplication, robots.txt
+  1. URL Shortener — Base62 encoding, cache-aside, redirect
+  2. Chat System — WebSocket, Cassandra, message ordering
+  3. Ride-Sharing — Geohash/QuadTree, matching, surge pricing
+  4. Social Feed — Fanout-on-write vs read, hybrid approach
+  5. Payment System — State machine, idempotency, 2-phase commit
+  6. Video Streaming — Adaptive bitrate, transcoding, CDN
+  7. E-Commerce — Inventory reservation, cart management
+  8. Notification System — Multi-channel routing, rate limiting
+  9. Rate Limiter — Token bucket, distributed rate limiting
+  10. Web Crawler — Polite crawling, deduplication, robots.txt
 
 ## Practical Takeaways
 
@@ -1156,11 +1156,11 @@ This chapter covered the complete system design interview preparation:
 
 4. **Mention trade-offs:** Every design choice has pros and cons. Explicitly discuss them.
 
-5. **Use realistic numbers:** 1M DAU, 10K QPS, 1TB/day â€” practice making reasonable approximations.
+5. **Use realistic numbers:** 1M DAU, 10K QPS, 1TB/day — practice making reasonable approximations.
 
 6. **Go deep on one component:** Choose the most interesting part (database, caching, or specific service) and dive into details.
 
-7. **â­ Must-know for interviews:** URL Shortener, Chat System, Ride-Sharing, and Social Feed â€” appear in 80% of system design rounds.
+7. **⭐ Must-know for interviews:** URL Shortener, Chat System, Ride-Sharing, and Social Feed — appear in 80% of system design rounds.
 
 8. **For government system design interviews (NIC, DRDO):** Focus on reliability, security, and handling failure scenarios rather than extreme scale.
 

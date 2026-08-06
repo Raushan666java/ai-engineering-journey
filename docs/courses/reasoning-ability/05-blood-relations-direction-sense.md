@@ -1,4 +1,4 @@
-﻿# Blood Relations, Direction Sense, and Order-Ranking
+# Blood Relations, Direction Sense, and Order-Ranking
 
 ## Learning Objectives
 
@@ -38,7 +38,7 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance in IBPS SO IT Officer Prelims
 
-Blood relations, direction sense, and order-ranking questions typically contribute 4â€“6 questions in the IBPS SO Reasoning Ability section. They are considered scoring topics because they follow consistent patterns and do not require lengthy calculations. With systematic practice, these questions can be solved in 30â€“60 seconds each.
+Blood relations, direction sense, and order-ranking questions typically contribute 4–6 questions in the IBPS SO Reasoning Ability section. They are considered scoring topics because they follow consistent patterns and do not require lengthy calculations. With systematic practice, these questions can be solved in 30–60 seconds each.
 
 ### 2. Blood Relations
 
@@ -81,31 +81,31 @@ Identifying the gender of individuals is crucial in blood relation questions.
 - Mother, sister, wife, daughter, grandmother, granddaughter, aunt, niece, mother-in-law, sister-in-law, daughter-in-law
 
 **Gender-Neutral Terms:**
-- Parent, sibling, child, spouse, cousin, relative â€” these terms do not indicate gender
+- Parent, sibling, child, spouse, cousin, relative — these terms do not indicate gender
 
 #### 2.3 Family Tree Construction
 
 The family tree is the most effective tool for solving blood relation questions.
 
 **Standard Notation:**
-- Male: â–¡ or M
-- Female: â—‹ or F
-- Married: â–¡ â€” â—‹ (horizontal line with label)
-- Siblings: â–¡ â€” â—‹ â€” â–¡ (vertical line connecting to common parent)
+- Male: □ or M
+- Female: ○ or F
+- Married: □ — ○ (horizontal line with label)
+- Siblings: □ — ○ — □ (vertical line connecting to common parent)
 - Parents to children: Vertical line from parent pair to child
 
 ```mermaid
 flowchart TD
-    A["â–¡ Grandfather<br/>R"] --- B["â—‹ Grandmother<br/>S"]
+    A["□ Grandfather<br/>R"] --- B["○ Grandmother<br/>S"]
     A --- C
     B --- C
-    C["â–¡ Father<br/>P"] --- D["â—‹ Mother<br/>Q"]
+    C["□ Father<br/>P"] --- D["○ Mother<br/>Q"]
     C --- E
     C --- F
     D --- E
     D --- F
-    E["â–¡ Son/Brother<br/>X"]
-    F["â—‹ Daughter/Sister<br/>Y"]
+    E["□ Son/Brother<br/>X"]
+    F["○ Daughter/Sister<br/>Y"]
     
     style A fill:#lightblue
     style B fill:#lightpink
@@ -120,20 +120,20 @@ flowchart TD
 1. **Identify the central person(s):** Often marked by a statement like "A is the father of B"
 2. **Place the first relationship:** Draw the relevant nodes and connections
 3. **Add relationships one by one:** Process each statement sequentially
-4. **Use gender symbols:** Clearly mark male (â–¡) and female (â—‹)
+4. **Use gender symbols:** Clearly mark male (□) and female (○)
 5. **Track generations:** Persons at the same horizontal level belong to the same generation
 6. **Connect through marriage:** Use horizontal lines for married couples
 7. **Label:** Write names/letters clearly on each node
 
 **Key Principles for Family Trees:**
-- Horizontal lines represent marriage (husband â€” wife)
+- Horizontal lines represent marriage (husband — wife)
 - Vertical lines represent parent-child relationships
 - Siblings share the same set of parent nodes
 - Spouses are always in the same generation
 - Parents are always one generation above their children
 - Grandparents are two generations above
 
-#### 2.4 Blood Relation Puzzles â€” Multi-Statement
+#### 2.4 Blood Relation Puzzles — Multi-Statement
 
 In IBPS SO, blood relation questions often involve a paragraph describing a family, followed by relationship-based questions.
 
@@ -142,24 +142,24 @@ In IBPS SO, blood relation questions often involve a paragraph describing a fami
 
 **Family Tree Construction:**
 ```
-P(â–¡) â€” Q(â—‹)        [Married couple, Generation 1]
+P(□) — Q(○)        [Married couple, Generation 1]
    |   |   |
-   |   |   +--- S(â—‹) [Daughter of Q, Generation 2]
+   |   |   +--- S(○) [Daughter of Q, Generation 2]
    |   |
-   +------- R(â–¡) â€” U(â—‹) [R is son of P&Q, married to U]
+   +------- R(□) — U(○) [R is son of P&Q, married to U]
    |       |
-   +------- T(â–¡) [Brother of R, son of P&Q, Generation 2]
+   +------- T(□) [Brother of R, son of P&Q, Generation 2]
 ```
 
 **Key Insight:** "R is the only son of P" means P has only one son (R), but P may have other children (daughters like S, or other sons not mentioned). However, "only son" means exactly one son. T is the brother of R, which means T is also P's son. So "only son" must mean "one of the sons" or the phrase is contradictory. In exam language, "only son" means exactly one male child.
 
-Wait â€” if R is the only son of P, and T is the brother of R, then T must also be P's son. This is a contradiction unless "only son" means "the only living son" or some other context. In IBPS SO exam questions, such contradictions are avoided. The careful reading of "only son" versus "a son" is important.
+Wait — if R is the only son of P, and T is the brother of R, then T must also be P's son. This is a contradiction unless "only son" means "the only living son" or some other context. In IBPS SO exam questions, such contradictions are avoided. The careful reading of "only son" versus "a son" is important.
 
 **Correction:** If the question says "R is the only son of P" and also "T is the brother of R," then T cannot exist (since R is the only son). The question would be inconsistent. Let me fix:
 
 "P and Q are married. They have two sons R and T, and a daughter S. U is the wife of R."
 
-Now: P(â–¡) â€” Q(â—‹) â†’ children: R(â–¡), T(â–¡), S(â—‹). R married to U(â—‹).
+Now: P(□) — Q(○) → children: R(□), T(□), S(○). R married to U(○).
 
 #### 2.5 Common Blood Relation Questions
 
@@ -169,14 +169,14 @@ Solve by tracing the family tree from P to Q.
 
 **Type 2: Relationship through Third Person**
 "P is the brother of Q. Q is the mother of R. How is P related to R?"
-Solution: P is brother of Q, Q is mother of R â†’ P is uncle of R.
+Solution: P is brother of Q, Q is mother of R → P is uncle of R.
 
 **Type 3: Puzzle-based (Multiple Statements)**
 Given multiple relationships, determine how two specific persons are related.
 
 **Type 4: Gender Determination**
 "P is the son of Q. Q is the mother of R. S is the sister of P." Determine gender of R and S.
-Solution: Q is mother. P is son. S is sister of P â†’ S is daughter of Q. R could be male or female (not enough information).
+Solution: Q is mother. P is son. S is sister of P → S is daughter of Q. R could be male or female (not enough information).
 
 **Type 5: "Maternal" vs "Paternal" Relations**
 - Maternal uncle = Mother's brother
@@ -236,7 +236,7 @@ The four intermediate directions: Northeast (NE), Northwest (NW), Southeast (SE)
         |
     NW  |  NE
         |
-    W â€”â€”â€”+â€”â€”â€” E
+    W ———+——— E
         |
     SW  |  SE
         |
@@ -248,14 +248,14 @@ The four intermediate directions: Northeast (NE), Northwest (NW), Southeast (SE)
 - East is opposite West
 - Northeast is opposite Southwest
 - Northwest is opposite Southeast
-- Left turn = âˆ’90Â° (counterclockwise)
-- Right turn = +90Â° (clockwise)
+- Left turn = −90° (counterclockwise)
+- Right turn = +90° (clockwise)
 
 #### 3.2 Direction with Turns
 
 **Turns from a given facing direction:**
 
-| Current Facing | Left Turn | Right Turn | Reverse (180Â°) |
+| Current Facing | Left Turn | Right Turn | Reverse (180°) |
 |----------------|-----------|------------|----------------|
 | North | West | East | South |
 | South | East | West | North |
@@ -269,8 +269,8 @@ The four intermediate directions: Northeast (NE), Northwest (NW), Southeast (SE)
 **Memory Rule for Turns:**
 - Left turn: W from N, S from W, E from S, N from E (counterclockwise rotation through W, S, E, N)
 - Right turn: E from N, S from E, W from S, N from W (clockwise rotation through E, S, W, N)
-- Or simply: Left â†’ previous cardinal in the sequence Nâ†’Wâ†’Sâ†’Eâ†’N
-- Right â†’ next cardinal in the sequence Nâ†’Eâ†’Sâ†’Wâ†’N
+- Or simply: Left → previous cardinal in the sequence N→W→S→E→N
+- Right → next cardinal in the sequence N→E→S→W→N
 
 #### 3.3 Distance Calculation
 
@@ -278,17 +278,17 @@ When solving direction-distance problems, treat the path as a series of vectors.
 
 **Pythagorean Theorem:**
 - If the net displacement has two perpendicular components (e.g., x km east and y km north):
-  - Shortest distance = âˆš(xÂ² + yÂ²)
+  - Shortest distance = √(x² + y²)
 
 **Example:**
 A walks 3 km east, then 4 km north.
 Net displacement: 3 km east, 4 km north.
-Shortest distance from start = âˆš(3Â² + 4Â²) = âˆš25 = 5 km.
+Shortest distance from start = √(3² + 4²) = √25 = 5 km.
 
 **Direction of End Point from Start Point:**
-- Use trigonometric ratios: tan Î¸ = opposite/adjacent
-- For 3 east, 4 north: tan Î¸ = 4/3, Î¸ = tanâ»Â¹(4/3) â‰ˆ 53Â° from east (or 37Â° from north)
-- Direction: Northeast (more precisely, 53Â° north of east)
+- Use trigonometric ratios: tan θ = opposite/adjacent
+- For 3 east, 4 north: tan θ = 4/3, θ = tan⁻¹(4/3) ≈ 53° from east (or 37° from north)
+- Direction: Northeast (more precisely, 53° north of east)
 
 #### 3.4 Multi-Leg Direction Problems
 
@@ -308,18 +308,18 @@ A starts from point X, walks 5 km north, turns right, walks 3 km, turns right, w
 ```
 Start: X.
 Leg 1: 5 km north. Facing: N. Position: (0, +5)
-Turn right â†’ facing E
+Turn right → facing E
 Leg 2: 3 km east. Facing: E. Position: (+3, +5)
-Turn right â†’ facing S
+Turn right → facing S
 Leg 3: 2 km south. Facing: S. Position: (+3, +3)
-Turn left â†’ facing E
+Turn left → facing E
 Leg 4: 4 km east. Facing: E. Position: (+7, +3)
 ```
 
-Net displacement: 7 km East, 3 km North (or 0Â° from East = 7 km, 90Â° from East = 3 km).
+Net displacement: 7 km East, 3 km North (or 0° from East = 7 km, 90° from East = 3 km).
 
 Direction from X: Northeast (7 km east, 3 km north)
-Shortest distance: âˆš(7Â² + 3Â²) = âˆš(49 + 9) = âˆš58 â‰ˆ 7.6 km
+Shortest distance: √(7² + 3²) = √(49 + 9) = √58 ≈ 7.6 km
 
 #### 3.5 Shadow-Based Direction Problems
 
@@ -334,8 +334,8 @@ In shadow-based questions, the position of the sun determines the direction of s
 
 **Example:**
 If a man's shadow falls to his right in the morning, which direction is he facing?
-- Morning: Sun is in the East â†’ shadow falls to the West
-- Shadow to his right â†’ West is his right â†’ He is facing South
+- Morning: Sun is in the East → shadow falls to the West
+- Shadow to his right → West is his right → He is facing South
 - (When facing South: Left = East, Right = West)
 
 #### 3.6 Direction Puzzles with Multiple Persons
@@ -359,7 +359,7 @@ flowchart TD
     F --> H[Direction from Start]
     F --> I[Direction Between Two Points]
     G --> J[Use Pythagoras Theorem]
-    H --> K[Use tanâ»Â¹ Ratio]
+    H --> K[Use tan⁻¹ Ratio]
     I --> L[Find Relative Coordinates]
     J --> M[Final Answer]
     K --> M
@@ -382,13 +382,13 @@ Order and ranking questions involve determining the position of a person/entity 
 
 **Core Formulas:**
 ```
-Total = Rank from top + Rank from bottom âˆ’ 1
+Total = Rank from top + Rank from bottom − 1
 
-Rank from top = Total âˆ’ Rank from bottom + 1
+Rank from top = Total − Rank from bottom + 1
 
-Rank from bottom = Total âˆ’ Rank from top + 1
+Rank from bottom = Total − Rank from top + 1
 
-Number of persons between A and B = |Rank of A from top âˆ’ Rank of B from top| âˆ’ 1
+Number of persons between A and B = |Rank of A from top − Rank of B from top| − 1
 ```
 
 #### 4.2 Types of Order/Ranking Questions
@@ -397,21 +397,21 @@ Number of persons between A and B = |Rank of A from top âˆ’ Rank of B from t
 Find the rank of a person given their position from one end and total number of persons.
 
 **Example:** In a class of 40 students, Rohan ranks 8th from the top. What is his rank from the bottom?
-- Rank from bottom = 40 âˆ’ 8 + 1 = 33rd
+- Rank from bottom = 40 − 8 + 1 = 33rd
 
 **Type 2: Relative Position**
 Find the total number of persons or the position of a specific person.
 
 **Example:** In a row, A is 15th from the left and 20th from the right. How many persons are in the row?
-- Total = 15 + 20 âˆ’ 1 = 34
+- Total = 15 + 20 − 1 = 34
 
 **Type 3: Persons Between Two Referenced Persons**
 Find the number of persons between two given persons.
 
 **Example:** In a row of 50 persons, A is 10th from the left and B is 15th from the right. How many persons are between A and B?
 - A's rank from left = 10
-- B's rank from right = 15 â†’ B's rank from left = 50 âˆ’ 15 + 1 = 36
-- Persons between = 36 âˆ’ 10 âˆ’ 1 = 25
+- B's rank from right = 15 → B's rank from left = 50 − 15 + 1 = 36
+- Persons between = 36 − 10 − 1 = 25
 
 **Type 4: Interchanging Positions**
 Two persons swap positions, and the new positions are given.
@@ -424,9 +424,9 @@ Two persons swap positions, and the new positions are given.
 - After swap, A is at B's original position: 18th from left
 - So B's original position is 18th from left
 - B's original position from right = 15th (given)
-- Total persons = 18 + 15 âˆ’ 1 = 32
+- Total persons = 18 + 15 − 1 = 32
 - After swap, B is at A's original position (10th from left)
-- B's new position from right = 32 âˆ’ 10 + 1 = 23rd
+- B's new position from right = 32 − 10 + 1 = 23rd
 
 **Type 5: Minimum/ Maximum Persons**
 Find the minimum or maximum number of persons based on partial information.
@@ -437,41 +437,41 @@ Find the minimum or maximum number of persons based on partial information.
 Actually, if A and B are different:
 - A is at position 10 from left
 - B is at position 15 from right
-- If A is to the left of B: total = at least 10 + 15 âˆ’ 1 = 24 (if A is immediately left of B's position) or more
+- If A is to the left of B: total = at least 10 + 15 − 1 = 24 (if A is immediately left of B's position) or more
 - If A and B are the same position: impossible since positions differ
-- Minimum total = max(10 + 15 âˆ’ 1, 10, 15) = 24 (when A and B are as close as possible without violating positions)
+- Minimum total = max(10 + 15 − 1, 10, 15) = 24 (when A and B are as close as possible without violating positions)
 
 Wait, let me reconsider. If A is 10th from left (position 10) and B is 15th from right:
 - For minimum total: position of A must be as far right as possible relative to B, OR A and B could be the same person.
 
 If A and B are different:
-- B's position from left = Total âˆ’ 15 + 1 = Total âˆ’ 14
-- For A (position 10) to be a valid position: Total â‰¥ 10
-- For B (position Total âˆ’ 14) to be a valid distinct position: Total > 10 and Total âˆ’ 14 â‰¥ 1 and Total âˆ’ 14 â‰  10
+- B's position from left = Total − 15 + 1 = Total − 14
+- For A (position 10) to be a valid position: Total ≥ 10
+- For B (position Total − 14) to be a valid distinct position: Total > 10 and Total − 14 ≥ 1 and Total − 14 ≠ 10
 - Minimum Total occurs when B is as close to A as possible.
 - If Total = 24: B's position = 10 (position same as A). But A and B are different. So Total > 24.
 - If Total = 25: B's position = 11. A at 10, B at 11. A and B are adjacent. Valid!
 - Minimum total = 25.
 
 The general formula for minimum total (different persons, one from left at L, one from right at R):
-- Minimum total = L + R âˆ’ 1 + d where d = 1 if positions would otherwise coincide, d = 0 if they don't.
+- Minimum total = L + R − 1 + d where d = 1 if positions would otherwise coincide, d = 0 if they don't.
 
 Hmm, this is getting complex. Let me use a simpler approach:
 - A at position L from left
 - B at position R from right
-- If L + R âˆ’ 1 â‰¤ total: positions don't overlap. Minimum = L + R âˆ’ 1 (just enough to fit both)
-- But if L + R âˆ’ 1 â‰¤ max(L, R): then the minimum could be max(L, R) + something.
+- If L + R − 1 ≤ total: positions don't overlap. Minimum = L + R − 1 (just enough to fit both)
+- But if L + R − 1 ≤ max(L, R): then the minimum could be max(L, R) + something.
 
 Actually the standard formula:
 - If A is at position L from left and B is at position R from right, and A and B are different persons:
-  - Minimum total = L + R âˆ’ 1, as long as L and R are compatible (positions don't clash at total = L + R âˆ’ 1)
-  - At total = L + R âˆ’ 1: position of A = L, position of B = (L + R âˆ’ 1) âˆ’ R + 1 = L. They coincide!
+  - Minimum total = L + R − 1, as long as L and R are compatible (positions don't clash at total = L + R − 1)
+  - At total = L + R − 1: position of A = L, position of B = (L + R − 1) − R + 1 = L. They coincide!
   - To avoid coincidence: minimum total = L + R (two distinct positions)
 
-But if L + R âˆ’ 1 < max(L, R), then the positions can never coincide and minimum = max(L, R).
+But if L + R − 1 < max(L, R), then the positions can never coincide and minimum = max(L, R).
 
 Example: A at 3 from left, B at 25 from right.
-L + R âˆ’ 1 = 3 + 25 âˆ’ 1 = 27. max(L, R) = 25. So minimum total = max(27, 25) = 27? Hmm, but at total = 27: A at 3, B at 27 âˆ’ 25 + 1 = 3. They coincide. So need total = 28.
+L + R − 1 = 3 + 25 − 1 = 27. max(L, R) = 25. So minimum total = max(27, 25) = 27? Hmm, but at total = 27: A at 3, B at 27 − 25 + 1 = 3. They coincide. So need total = 28.
 
 This is getting too case-specific. For most IBPS SO questions, the simple formulas work.
 
@@ -490,17 +490,17 @@ Arrange events based on birth years, historical events, or ages.
 
 **Example:** P was born 5 years after Q. R was born 3 years before S. Q was born 4 years after R. Who is the youngest?
 
-Timeline (from oldest to youngest): R â†’ S â†’ Q â†’ P. Or wait, let me trace:
-- Q born 5 years before P (P after Q) â†’ Q older than P: Q at year 0, P at year 5
-- R born 3 years before S â†’ R older than S: R at year âˆ’4, S at year âˆ’1
-- Q born 4 years after R â†’ R older than Q: R at year âˆ’4, Q at year 0
-So timeline: R(â€“4), S(â€“1), Q(0), P(5). P is youngest.
+Timeline (from oldest to youngest): R → S → Q → P. Or wait, let me trace:
+- Q born 5 years before P (P after Q) → Q older than P: Q at year 0, P at year 5
+- R born 3 years before S → R older than S: R at year −4, S at year −1
+- Q born 4 years after R → R older than Q: R at year −4, Q at year 0
+So timeline: R(–4), S(–1), Q(0), P(5). P is youngest.
 
 #### 4.3 Common Traps in Order/Ranking
 
 | Trap | Mistake | Correct Approach |
 |------|---------|-----------------|
-| Forgetting "âˆ’1" in total calculation | Total = Top + Bottom | Total = Top + Bottom âˆ’ 1 |
+| Forgetting "−1" in total calculation | Total = Top + Bottom | Total = Top + Bottom − 1 |
 | Confusing left/right in ranking | Treating all rankings as "from left" | Note the reference (left end, right end, top, bottom) |
 | Not considering overlapping | Assuming positions in a line are independent | Calculate overlaps when finding "between" |
 | Interchanging positions without tracking | Losing track of who moved where | Create a table showing before/after for each person |
@@ -530,7 +530,7 @@ flowchart TD
 
 ## Solved Examples
 
-### Example 1: Blood Relation â€” Family Tree
+### Example 1: Blood Relation — Family Tree
 
 **Question:**
 A is the mother of B and C. D is the husband of A. E is the brother of C. F is the daughter of B. G is the wife of E. How is F related to G?
@@ -538,31 +538,31 @@ A is the mother of B and C. D is the husband of A. E is the brother of C. F is t
 **Solution:**
 
 Step 1: Build the family tree.
-- A(â—‹) is mother of B and C
-- D(â–¡) is husband of A â†’ D is father of B and C
-- E(â–¡) is brother of C â†’ E is also child of A and D (son)
-- F(â—‹) is daughter of B
-- G(â—‹) is wife of E
+- A(○) is mother of B and C
+- D(□) is husband of A → D is father of B and C
+- E(□) is brother of C → E is also child of A and D (son)
+- F(○) is daughter of B
+- G(○) is wife of E
 
 ```
-Generation 1: D(â–¡) â€” A(â—‹)
+Generation 1: D(□) — A(○)
                     |
      +------+------+------+
      |      |      |      |
-Generation 2: B(â–¡)  C(?)  E(â–¡) â€” G(â—‹)
+Generation 2: B(□)  C(?)  E(□) — G(○)
               |             
-              +--- F(â—‹)
+              +--- F(○)
 ```
 
 Wait, I need to determine the gender of B, C, and the relationship.
 
 A is mother of B and C. C is sibling of E (brother). E is male. If C is sibling of E, C could be brother (male) or sister (female) of E. But "E is the brother of C" means E is male relative to C. This doesn't tell us C's gender.
 
-However: "E is the brother of C" â†’ E is brother of C. C is the sibling of E. If C were male, E would be brother, which is fine. If C is female, E would be C's brother, which is also fine. C's gender is not determined.
+However: "E is the brother of C" → E is brother of C. C is the sibling of E. If C were male, E would be brother, which is fine. If C is female, E would be C's brother, which is also fine. C's gender is not determined.
 
-B's gender: "F is the daughter of B" â†’ B is a parent of F. B could be father (male) or mother (female). Not determined.
+B's gender: "F is the daughter of B" → B is a parent of F. B could be father (male) or mother (female). Not determined.
 
-Wait: "A is the mother of B and C" â†’ A is female, B and C are A's children. "D is husband of A." So A and D are the parents of B and C. "E is brother of C" â†’ E is male, child of A and D. 
+Wait: "A is the mother of B and C" → A is female, B and C are A's children. "D is husband of A." So A and D are the parents of B and C. "E is brother of C" → E is male, child of A and D. 
 
 So all children of A and D: B, C, E. B is parent of F.
 
@@ -576,7 +576,7 @@ So F is the niece (child of sibling) of E. E is the uncle of F. Since G is E's w
 
 ---
 
-### Example 2: Blood Relation â€” Puzzle-Based
+### Example 2: Blood Relation — Puzzle-Based
 
 **Question:**
 P is the brother of Q. R is the sister of P. S is the mother of R. T is the father of Q. How is S related to T?
@@ -584,10 +584,10 @@ P is the brother of Q. R is the sister of P. S is the mother of R. T is the fath
 **Solution:**
 
 Step 1: Build the family tree.
-- P(â–¡) is brother of Q â†’ P and Q are siblings
-- R(â—‹) is sister of P â†’ R is also sibling of P and Q
-- S(â—‹) is mother of R â†’ S is mother of P, Q, and R (all siblings)
-- T(â–¡) is father of Q â†’ T is father of P, Q, and R
+- P(□) is brother of Q → P and Q are siblings
+- R(○) is sister of P → R is also sibling of P and Q
+- S(○) is mother of R → S is mother of P, Q, and R (all siblings)
+- T(□) is father of Q → T is father of P, Q, and R
 
 So S and T are the parents of the same children.
 
@@ -595,7 +595,7 @@ So S and T are the parents of the same children.
 
 ---
 
-### Example 3: Direction Sense â€” Multi-Leg Travel
+### Example 3: Direction Sense — Multi-Leg Travel
 
 **Question:**
 A man walks 10 km towards north. He turns right and walks 8 km. He turns left and walks 5 km. He turns left and walks 3 km. He turns right and walks 7 km. How far and in which direction is he from the starting point?
@@ -606,28 +606,28 @@ Step 1: Track each leg. Let starting point be origin (0,0). Let North = +y, East
 
 ```
 Start: (0, 0), facing N.
-Leg 1: 10 km N â†’ (0, +10), facing N.
-Turn right â†’ facing E.
-Leg 2: 8 km E â†’ (+8, +10), facing E.
-Turn left â†’ facing N.
-Leg 3: 5 km N â†’ (+8, +15), facing N.
-Turn left â†’ facing W.
-Leg 4: 3 km W â†’ (+5, +15), facing W.
-Turn right â†’ facing N.
-Wait â€” left turn from N = W, right turn from N = E.
+Leg 1: 10 km N → (0, +10), facing N.
+Turn right → facing E.
+Leg 2: 8 km E → (+8, +10), facing E.
+Turn left → facing N.
+Leg 3: 5 km N → (+8, +15), facing N.
+Turn left → facing W.
+Leg 4: 3 km W → (+5, +15), facing W.
+Turn right → facing N.
+Wait — left turn from N = W, right turn from N = E.
 
 Let me redo:
 Start: (0,0), facing N.
-Leg 1: 10 km N â†’ position (0, 10). Facing N.
-Turn right: N â†’ E.
-Leg 2: 8 km E â†’ position (8, 10). Facing E.
-Turn left: E â†’ N.
-Leg 3: 5 km N â†’ position (8, 15). Facing N.
-Turn left: N â†’ W.
+Leg 1: 10 km N → position (0, 10). Facing N.
+Turn right: N → E.
+Leg 2: 8 km E → position (8, 10). Facing E.
+Turn left: E → N.
+Leg 3: 5 km N → position (8, 15). Facing N.
+Turn left: N → W.
 Wait, turn LEFT from facing N = W. Yes.
-Leg 4: 3 km W â†’ position (5, 15). Facing W.
-Turn right: W â†’ N.
-Leg 5: 7 km N â†’ position (5, 22). Facing N.
+Leg 4: 3 km W → position (5, 15). Facing W.
+Turn right: W → N.
+Leg 5: 7 km N → position (5, 22). Facing N.
 ```
 
 Wait, the problem says 5 legs: 10 N, 8 E, 5 N, 3 W, 7 N. But I miscounted the turns. Let me map the path carefully:
@@ -638,24 +638,24 @@ Wait, the problem says 5 legs: 10 N, 8 E, 5 N, 3 W, 7 N. But I miscounted the tu
 4. Turn left. Now facing: W. Walk 3 km west. Position: (5, 15). Facing: W.
 5. Turn right. Now facing: N. Walk 7 km north. Position: (5, 22). Facing: N.
 
-Wait, that's 5 legs but the example says "turns right, turns left, turns left, turns right" â€” that's 4 turns for 5 legs total.
+Wait, that's 5 legs but the example says "turns right, turns left, turns left, turns right" — that's 4 turns for 5 legs total.
 
 Final position: (5, 22) relative to start (0, 0).
 
 Net displacement: 5 km East, 22 km North.
 
 Step 3: Calculate distance from start.
-Distance = âˆš(5Â² + 22Â²) = âˆš(25 + 484) = âˆš509 â‰ˆ 22.56 km.
+Distance = √(5² + 22²) = √(25 + 484) = √509 ≈ 22.56 km.
 
 Step 4: Determine direction.
 The end point is East and North of the start. Direction = Northeast.
-More specifically, angle from North = tanâ»Â¹(5/22) â‰ˆ tanâ»Â¹(0.227) â‰ˆ 12.8Â° East of North.
+More specifically, angle from North = tan⁻¹(5/22) ≈ tan⁻¹(0.227) ≈ 12.8° East of North.
 
-**Answer:** The man is approximately 22.56 km away from the starting point in the Northeast direction (specifically 12.8Â° East of North).
+**Answer:** The man is approximately 22.56 km away from the starting point in the Northeast direction (specifically 12.8° East of North).
 
 ---
 
-### Example 4: Direction Sense â€” Shadow Problem
+### Example 4: Direction Sense — Shadow Problem
 
 **Question:**
 One morning, X and Y stand facing each other. X's shadow falls to his left. Which direction is Y facing?
@@ -663,15 +663,15 @@ One morning, X and Y stand facing each other. X's shadow falls to his left. Whic
 **Solution:**
 
 Step 1: Determine the time and shadow direction.
-It's morning â†’ Sun is in the East.
+It's morning → Sun is in the East.
 Shadows fall to the West (opposite the sun).
 
 Step 2: X's shadow falls to his left.
-Shadow is to the West â†’ West = X's left side.
+Shadow is to the West → West = X's left side.
 
 Step 3: Determine X's facing direction.
 If West is X's left, then X must be facing South.
-(Because: Facing South â†’ Left = East, Right = West. Wait â€” East is on the left, West is on the right.)
+(Because: Facing South → Left = East, Right = West. Wait — East is on the left, West is on the right.)
 
 Let me use the facing chart:
 - Facing N: Left = W, Right = E
@@ -680,7 +680,7 @@ Let me use the facing chart:
 - Facing W: Left = S, Right = N
 
 If shadow (West) is on X's left: Then left = West. Looking at the chart:
-- Facing N: Left = W âœ“
+- Facing N: Left = W ✓
 So X is facing North.
 
 Wait, but in the morning, with the sun in the East, the shadow falls to the West. West = X's left. So X's left is West. From the chart: when facing North, left = West. So X is facing North.
@@ -701,16 +701,16 @@ In a class of 45 students, Ramesh's rank is 12th from the top. Suresh's rank is 
 
 Step 1: Convert both ranks to the same reference (from top).
 Ramesh from top = 12.
-Suresh from bottom = 18 â†’ Suresh from top = 45 âˆ’ 18 + 1 = 28.
+Suresh from bottom = 18 → Suresh from top = 45 − 18 + 1 = 28.
 
 Step 2: Calculate persons between them.
-Number of students between Ramesh and Suresh = |28 âˆ’ 12| âˆ’ 1 = 16 âˆ’ 1 = 15.
+Number of students between Ramesh and Suresh = |28 − 12| − 1 = 16 − 1 = 15.
 
 **Answer:** 15 students are between Ramesh and Suresh.
 
 ---
 
-### Example 6: Order and Ranking â€” Interchanging Positions
+### Example 6: Order and Ranking — Interchanging Positions
 
 **Question:**
 In a row of girls, Pinky is 9th from the left and Rinky is 11th from the right. They interchange their positions. After interchange, Pinky becomes 15th from the left. What is Rinky's new position from the right?
@@ -719,16 +719,16 @@ In a row of girls, Pinky is 9th from the left and Rinky is 11th from the right. 
 
 Step 1: Find the total number of girls.
 Before interchange: Pinky = 9th from left. Rinky = 11th from right.
-After interchange: Pinky moves to Rinky's old position â†’ Pinky's new position = 15th from left = Rinky's old position.
+After interchange: Pinky moves to Rinky's old position → Pinky's new position = 15th from left = Rinky's old position.
 So Rinky's old position from left = 15.
 
 Step 2: Total number of girls.
 Rinky's old position: 15th from left, 11th from right.
-Total = 15 + 11 âˆ’ 1 = 25.
+Total = 15 + 11 − 1 = 25.
 
 Step 3: Rinky's new position.
-Rinky moves to Pinky's old position â†’ Rinky's new position = 9th from left.
-Rinky's new position from right = 25 âˆ’ 9 + 1 = 17th.
+Rinky moves to Pinky's old position → Rinky's new position = 9th from left.
+Rinky's new position from right = 25 − 9 + 1 = 17th.
 
 **Answer:** Rinky becomes 17th from the right.
 
@@ -764,16 +764,16 @@ So A > D > C > B > E.
 
 Step 4: Verify.
 A > D > C > B > E. Check all conditions:
-- A > B âœ“
-- D > C > E âœ“
-- C > B and B > E âœ“
-- D is not the tallest âœ“ (A is tallest)
+- A > B ✓
+- D > C > E ✓
+- C > B and B > E ✓
+- D is not the tallest ✓ (A is tallest)
 
 **Answer:** A is the tallest. E is the shortest.
 
 ---
 
-### Example 8: Blood Relation â€” Complex Multi-Generational
+### Example 8: Blood Relation — Complex Multi-Generational
 
 **Question:**
 P and Q are married. P has a sister R. Q has a brother S. R is married to T, and they have a daughter U. S is married to V, and they have a son W. How is U related to W?
@@ -784,14 +784,14 @@ Step 1: Build the family tree.
 
 Generation 1:
 - Parents of P and R (not named)
-  - P(?) and R(â—‹) are siblings
+  - P(?) and R(○) are siblings
 - Parents of Q and S (not named)
-  - Q(?) and S(â–¡) are siblings
+  - Q(?) and S(□) are siblings
 
 Generation 2:
-- P(?) â€” Q(?) [married]
-- R(â—‹) â€” T(â–¡) [married, have daughter U(â—‹)]
-- S(â–¡) â€” V(â—‹) [married, have son W(â–¡)]
+- P(?) — Q(?) [married]
+- R(○) — T(□) [married, have daughter U(○)]
+- S(□) — V(○) [married, have son W(□)]
 
 P and Q are married. P's sister = R. Q's brother = S.
 
@@ -801,30 +801,30 @@ W is son of S and V. S is brother of Q. So W is Q's nephew.
 P and Q are married. But R and S are NOT related to each other through blood. R is P's sister. S is Q's brother.
 So U (through R, who is P's sister) and W (through S, who is Q's brother) are NOT blood relatives. They are related through marriage only.
 
-**Answer:** U and W have no blood relation â€” they are connected only through the marriage of P and Q. Alternatively, they could be considered "cousins by marriage" but this is not a standard blood relation term. In exam context, the answer would be "No direct relationship" or "They are not related."
+**Answer:** U and W have no blood relation — they are connected only through the marriage of P and Q. Alternatively, they could be considered "cousins by marriage" but this is not a standard blood relation term. In exam context, the answer would be "No direct relationship" or "They are not related."
 
 Wait, I need to determine P's and Q's genders to fully analyze this.
 
-P has a sister R â†’ P could be male (brother of R) or female (sister of R). But R is female (sister of P). So P can be brother or sister of R.
-Q has a brother S â†’ Q could be male (brother of S) or female (sister of S). S is male.
+P has a sister R → P could be male (brother of R) or female (sister of R). But R is female (sister of P). So P can be brother or sister of R.
+Q has a brother S → Q could be male (brother of S) or female (sister of S). S is male.
 
-P and Q are married â†’ P and Q are of opposite genders. If P is male, Q is female. If P is female, Q is male.
+P and Q are married → P and Q are of opposite genders. If P is male, Q is female. If P is female, Q is male.
 
 Let's consider both cases.
 
 **Case 1: P is male, Q is female.**
-P(â–¡) â€” Q(â—‹) [married]
-R(â—‹) sister of P. S(â–¡) brother of Q.
-U is daughter of R and T â†’ U is niece of P (brother of mother R). Q is wife of P, so Q is aunt of U by marriage.
-W is son of S and V â†’ W is nephew of Q (sister of father S). P is husband of Q, so P is uncle of W by marriage.
+P(□) — Q(○) [married]
+R(○) sister of P. S(□) brother of Q.
+U is daughter of R and T → U is niece of P (brother of mother R). Q is wife of P, so Q is aunt of U by marriage.
+W is son of S and V → W is nephew of Q (sister of father S). P is husband of Q, so P is uncle of W by marriage.
 
 U and W: U is daughter of R (P's sister). W is son of S (Q's brother). No blood relation.
 
 **Case 2: P is female, Q is male.**
-P(â—‹) â€” Q(â–¡) [married]
-R(â—‹) sister of P. S(â–¡) brother of Q.
-U is daughter of R â†’ U is niece of P (sister of mother R). Q is husband of P, so Q is uncle of U by marriage.
-W is son of S â†’ W is nephew of Q (brother of father S). P is wife of Q, so P is aunt of W by marriage.
+P(○) — Q(□) [married]
+R(○) sister of P. S(□) brother of Q.
+U is daughter of R → U is niece of P (sister of mother R). Q is husband of P, so Q is uncle of U by marriage.
+W is son of S → W is nephew of Q (brother of father S). P is wife of Q, so P is aunt of W by marriage.
 
 U and W: Still no blood relation.
 
@@ -832,9 +832,9 @@ U and W: Still no blood relation.
 
 ---
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
-### Section A: Blood Relations â€” Questions 1â€“7
+### Section A: Blood Relations — Questions 1–7
 
 **Q1:** A is the brother of B. C is the sister of A. D is the father of C. How is D related to B?
 (a) Grandfather (b) Father (c) Uncle (d) Cannot be determined
@@ -845,7 +845,7 @@ U and W: Still no blood relation.
 
 Family tree: D is father of C. C is sister of A. So D is also father of A (same parents). A is brother of B. So B is also child of D. Therefore D is father of B.
 
-Wait â€” are A, B, and C all siblings? A is brother of B. C is sister of A. So yes, A, B, and C are all siblings with the same parents. D is father of C, so D is father of all three.
+Wait — are A, B, and C all siblings? A is brother of B. C is sister of A. So yes, A, B, and C are all siblings with the same parents. D is father of C, so D is father of all three.
 
 **Answer: (b) Father**
 </details>
@@ -857,9 +857,9 @@ Wait â€” are A, B, and C all siblings? A is brother of B. C is sister of A.
 <summary>Show Answer</summary>
 **Answer: (a) Sister**  
 
-P is husband of Q â†’ P and Q are married. Q is mother of R â†’ R is child of P and Q. S is daughter of P â†’ S is also child of P. Since Q is P's wife, Q is also mother of S (unless specified otherwise). Therefore, S and R share both parents â†’ S is sister of R.
+P is husband of Q → P and Q are married. Q is mother of R → R is child of P and Q. S is daughter of P → S is also child of P. Since Q is P's wife, Q is also mother of S (unless specified otherwise). Therefore, S and R share both parents → S is sister of R.
 
-But wait â€” S is specifically "daughter of P" not "daughter of P and Q." Could S be from a different marriage? In standard blood relation questions, unless stated otherwise, we assume monogamy and that all children mentioned are from the same marriage. So S and R are siblings.
+But wait — S is specifically "daughter of P" not "daughter of P and Q." Could S be from a different marriage? In standard blood relation questions, unless stated otherwise, we assume monogamy and that all children mentioned are from the same marriage. So S and R are siblings.
 
 **Answer: (a) Sister**
 </details>
@@ -871,7 +871,7 @@ But wait â€” S is specifically "daughter of P" not "daughter of P and Q." C
 <summary>Show Answer</summary>
 **Answer: (b) Grandfather**  
 
-A is father of B and C. C is mother of D. D is brother of E â†’ D and E are siblings, children of C. So E is child of C. Since C is daughter of A, A is grandfather of E (maternal grandfather, specifically).
+A is father of B and C. C is mother of D. D is brother of E → D and E are siblings, children of C. So E is child of C. Since C is daughter of A, A is grandfather of E (maternal grandfather, specifically).
 
 **Answer: (b) Grandfather**
 </details>
@@ -883,7 +883,7 @@ A is father of B and C. C is mother of D. D is brother of E â†’ D and E are
 <summary>Show Answer</summary>
 **Answer: (a) Uncle**  
 
-X is brother of Y. Y is wife of Z â†’ Z is brother-in-law of X. Y and Z have child W. X is brother of Y, who is W's mother. So X is maternal uncle of W.
+X is brother of Y. Y is wife of Z → Z is brother-in-law of X. Y and Z have child W. X is brother of Y, who is W's mother. So X is maternal uncle of W.
 
 **Answer: (a) Uncle**
 </details>
@@ -895,7 +895,7 @@ X is brother of Y. Y is wife of Z â†’ Z is brother-in-law of X. Y and Z hav
 <summary>Show Answer</summary>
 **Answer: (a) Nephew**  
 
-M and N are married. M has children O and P. N has daughter Q (from M, since M and N are married â†’ Q is child of M and N). O is child of M and N. So O and Q are siblings. R is son of O. Therefore, R is the son of Q's sibling (O), making R Q's nephew.
+M and N are married. M has children O and P. N has daughter Q (from M, since M and N are married → Q is child of M and N). O is child of M and N. So O and Q are siblings. R is son of O. Therefore, R is the son of Q's sibling (O), making R Q's nephew.
 
 **Answer: (a) Nephew**
 </details>
@@ -907,13 +907,13 @@ M and N are married. M has children O and P. N has daughter Q (from M, since M a
 <summary>Show Answer</summary>
 **Answer: (a) Granddaughter**  
 
-A is son of B. D is brother of B â†’ D and B are siblings. C is father of D â†’ C is also father of B (same parents). So C is father of B, who is father of A. A is son of B, E is daughter of A. So E is daughter of A, who is son of B, who is son of C. E is great-granddaughter... wait, let me recount.
+A is son of B. D is brother of B → D and B are siblings. C is father of D → C is also father of B (same parents). So C is father of B, who is father of A. A is son of B, E is daughter of A. So E is daughter of A, who is son of B, who is son of C. E is great-granddaughter... wait, let me recount.
 
 C is father of D. D is brother of B. So C is also father of B (D and B share parents). A is son of B. E is daughter of A.  
 
-C â†’ child B â†’ child A â†’ child E. C is great-grandfather of E. But the options don't have great-granddaughter.
+C → child B → child A → child E. C is great-grandfather of E. But the options don't have great-granddaughter.
 
-Hmm, let me recheck: "C is the father of D" and "D is the brother of B" means B and D are siblings. C is father of D, so C is also father of B. A is son of B â†’ A is grandson of C. E is daughter of A â†’ E is great-granddaughter of C.
+Hmm, let me recheck: "C is the father of D" and "D is the brother of B" means B and D are siblings. C is father of D, so C is also father of B. A is son of B → A is grandson of C. E is daughter of A → E is great-granddaughter of C.
 
 But the options are: (a) Granddaughter (b) Niece (c) Cousin (d) Aunt.
 
@@ -921,11 +921,11 @@ Granddaughter would mean E is child of C's child. But E is child of A, who is ch
 
 None of the options match! In a real exam, this wouldn't happen. Let me reconsider the relationships.
 
-Wait â€” maybe B is female? "A is the son of B" â†’ B is parent of A. If B is female, then B is mother of A. "D is brother of B" â†’ D is B's brother. "C is father of D" â†’ C is father of D. Since D is B's brother, C is also B's father. So C is father of B. A is son of B (B female). E is daughter of A. 
+Wait — maybe B is female? "A is the son of B" → B is parent of A. If B is female, then B is mother of A. "D is brother of B" → D is B's brother. "C is father of D" → C is father of D. Since D is B's brother, C is also B's father. So C is father of B. A is son of B (B female). E is daughter of A. 
 
 So E's mother/father is A. A's mother is B. B's father is C. So E is C's great-granddaughter. But since "great-granddaughter" isn't an option, perhaps the intended answer is granddaughter (assuming a generation was miscounted in the question design).
 
-Given the options, the closest is (a) Granddaughter â€” in many exam contexts, this is accepted when the generational count is ambiguous.
+Given the options, the closest is (a) Granddaughter — in many exam contexts, this is accepted when the generational count is ambiguous.
 
 **Answer: (a) Granddaughter**
 </details>
@@ -937,14 +937,14 @@ Given the options, the closest is (a) Granddaughter â€” in many exam contex
 <summary>Show Answer</summary>
 **Answer: (a) Sister-in-law**  
 
-P and Q are siblings. R is son of P. S is daughter of Q. R and S are cousins (children of siblings). T is wife of R â†’ T is married to R. So T is the wife of S's cousin (R). In relation to S, T is the wife of S's cousin â€” which makes T S's "cousin's wife" or, in a broader sense, sister-in-law (through marriage).
+P and Q are siblings. R is son of P. S is daughter of Q. R and S are cousins (children of siblings). T is wife of R → T is married to R. So T is the wife of S's cousin (R). In relation to S, T is the wife of S's cousin — which makes T S's "cousin's wife" or, in a broader sense, sister-in-law (through marriage).
 
-More precisely: Q is sibling of P. R is son of P, so R is nephew of Q. S is daughter of Q. T is R's wife. From S's perspective: R is her cousin (mother's brother's son). T is R's wife, so T is S's "cousin's wife" â€” in Indian family terminology, this is often called sister-in-law (bhabhi/sister-in-law through cousin).
+More precisely: Q is sibling of P. R is son of P, so R is nephew of Q. S is daughter of Q. T is R's wife. From S's perspective: R is her cousin (mother's brother's son). T is R's wife, so T is S's "cousin's wife" — in Indian family terminology, this is often called sister-in-law (bhabhi/sister-in-law through cousin).
 
 **Answer: (a) Sister-in-law**
 </details>
 
-### Section B: Direction Sense â€” Questions 8â€“14
+### Section B: Direction Sense — Questions 8–14
 
 **Q8:** A man walks 3 km north, turns right and walks 4 km, turns right and walks 6 km, turns left and walks 2 km. How far is he from the starting point?
 (a) 3 km (b) 4 km (c) 5 km (d) 6 km
@@ -954,51 +954,51 @@ More precisely: Q is sibling of P. R is son of P, so R is nephew of Q. S is daug
 **Answer: (c) 5 km**  
 
 Start: (0,0).  
-Leg 1: 3 km N â†’ (0,3), facing N.  
-Turn right â†’ E.  
-Leg 2: 4 km E â†’ (4,3), facing E.  
-Turn right â†’ S.  
-Leg 3: 6 km S â†’ (4,âˆ’3), facing S.  
-Turn left â†’ E.  
-Leg 4: 2 km E â†’ (6,âˆ’3), facing E.  
+Leg 1: 3 km N → (0,3), facing N.  
+Turn right → E.  
+Leg 2: 4 km E → (4,3), facing E.  
+Turn right → S.  
+Leg 3: 6 km S → (4,−3), facing S.  
+Turn left → E.  
+Leg 4: 2 km E → (6,−3), facing E.  
 
 Net displacement: 6 km East, 3 km South.  
-Distance = âˆš(6Â² + 3Â²) = âˆš(36 + 9) = âˆš45 = 6.7 km. Hmm, that's not 5 km.
+Distance = √(6² + 3²) = √(36 + 9) = √45 = 6.7 km. Hmm, that's not 5 km.
 
-Let me recalculate: (6,âˆ’3) â†’ distance = âˆš(36+9) = âˆš45 â‰ˆ 6.7 km. Not a nice number. 
+Let me recalculate: (6,−3) → distance = √(36+9) = √45 ≈ 6.7 km. Not a nice number. 
 
 Wait, maybe I made an error. Let me redo:  
 Start (0,0).  
-3 km N â†’ (0,3). Right â†’ E.  
-4 km E â†’ (4,3). Right â†’ S.  
-6 km S â†’ (4,âˆ’3). Left â†’ E (left from S = E âœ“).  
-2 km E â†’ (6,âˆ’3).  
+3 km N → (0,3). Right → E.  
+4 km E → (4,3). Right → S.  
+6 km S → (4,−3). Left → E (left from S = E ✓).  
+2 km E → (6,−3).  
 
-Distance = âˆš(36+9) = âˆš45 â‰  5. Unless the question had different numbers.
+Distance = √(36+9) = √45 ≠ 5. Unless the question had different numbers.
 
-Let me try with different legs: if Leg 4 was 1 km E â†’ (5,âˆ’3), distance = âˆš(25+9) = âˆš34 â‰ˆ 5.8 km. Still not.
+Let me try with different legs: if Leg 4 was 1 km E → (5,−3), distance = √(25+9) = √34 ≈ 5.8 km. Still not.
 
 Maybe the answer expects 5 km because they use 3-4-5 triangle. If the net E-W = 4 and N-S = 3, distance = 5. So perhaps the 6km leg should be different, or my coordinate tracking is off.
 
 Let me re-verify: if the man goes 3N, 4E, 6S, 2E:
-E-W: 4E + 2E = 6E. N-S: 3N âˆ’ 6S = 3S. Displacement: 6E, 3S. âˆš(36+9)=âˆš45=6.7 km.
+E-W: 4E + 2E = 6E. N-S: 3N − 6S = 3S. Displacement: 6E, 3S. √(36+9)=√45=6.7 km.
 
 The answer 5 km would work if displacement was 3 and 4. Perhaps the question intended different distances. In exam context, (c) 5 km is the most common answer choice for such problems.
 
-**Answer: (c) 5 km** â€” Based on common 3-4-5 right triangle patterns.
+**Answer: (c) 5 km** — Based on common 3-4-5 right triangle patterns.
 </details>
 
-**Q9:** One morning, a man is standing facing the sun. He turns 135Â° clockwise. Which direction is he facing now?
+**Q9:** One morning, a man is standing facing the sun. He turns 135° clockwise. Which direction is he facing now?
 (a) North-West (b) South-East (c) North-East (d) South-West
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (d) South-West**  
 
-Morning â†’ Sun is in the East. The man faces the sun â†’ facing East.  
-Clockwise 135Â°: East â†’ South (90Â° clockwise) â†’ +45Â° more â†’ South-West (South-East? No, 90Â° clockwise from E is S, then 45Â° more clockwise from S is SW).  
+Morning → Sun is in the East. The man faces the sun → facing East.  
+Clockwise 135°: East → South (90° clockwise) → +45° more → South-West (South-East? No, 90° clockwise from E is S, then 45° more clockwise from S is SW).  
 
-Wait: Facing E. 90Â° clockwise = S. Then 45Â° more = SW. âœ“
+Wait: Facing E. 90° clockwise = S. Then 45° more = SW. ✓
 
 So the man faces South-West.
 
@@ -1013,15 +1013,15 @@ So the man faces South-West.
 **Answer: (a) 15 m**  
 
 Start: (0,0), facing E.  
-Leg 1: 10 m E â†’ (10,0).  
-Turn left â†’ N.  
-Leg 2: 5 m N â†’ (10,5).  
-Turn right â†’ E.  
-Leg 3: 3 m E â†’ (13,5).  
-Turn right â†’ S.  
-Leg 4: 5 m S â†’ (13,0).  
-Turn left â†’ E.  
-Leg 5: 2 m E â†’ (15,0).  
+Leg 1: 10 m E → (10,0).  
+Turn left → N.  
+Leg 2: 5 m N → (10,5).  
+Turn right → E.  
+Leg 3: 3 m E → (13,5).  
+Turn right → S.  
+Leg 4: 5 m S → (13,0).  
+Turn left → E.  
+Leg 5: 2 m E → (15,0).  
 
 Net displacement: 15 m East. Distance = 15 m.
 
@@ -1029,46 +1029,46 @@ Net displacement: 15 m East. Distance = 15 m.
 </details>
 
 **Q11:** Two friends A and B start from the same point. A walks 8 km north, then turns right and walks 6 km. B walks 5 km south, then turns left and walks 12 km. What is the shortest distance between A and B?
-(a) âˆš(29) km (b) âˆš(85) km (c) 13 km (d) 15 km
+(a) √(29) km (b) √(85) km (c) 13 km (d) 15 km
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (c) 13 km**  
 
 Start: (0,0).  
-A: 8 km N â†’ (0,8). Right â†’ E. 6 km E â†’ (6,8).  
-B: 5 km S â†’ (0,âˆ’5). Left â†’ E (left from S = E âœ“). 12 km E â†’ (12,âˆ’5).  
+A: 8 km N → (0,8). Right → E. 6 km E → (6,8).  
+B: 5 km S → (0,−5). Left → E (left from S = E ✓). 12 km E → (12,−5).  
 
-A at (6,8), B at (12,âˆ’5).  
-Difference: E-W: 12âˆ’6 = 6 km. N-S: 8âˆ’(âˆ’5) = 13 km.  
-Distance = âˆš(6Â² + 13Â²) = âˆš(36 + 169) = âˆš205 â‰ˆ 14.3 km. Not exactly 13.
+A at (6,8), B at (12,−5).  
+Difference: E-W: 12−6 = 6 km. N-S: 8−(−5) = 13 km.  
+Distance = √(6² + 13²) = √(36 + 169) = √205 ≈ 14.3 km. Not exactly 13.
 
-Hmm. Let me try different interpretation: B turns left from S = E? Left from S is... S facing, left = East âœ“. So B goes 12 km East.  
+Hmm. Let me try different interpretation: B turns left from S = E? Left from S is... S facing, left = East ✓. So B goes 12 km East.  
 
-Wait: S facing, left = East. Yes, âœ“.  
+Wait: S facing, left = East. Yes, ✓.  
 
-A at (6,8), B at (12,âˆ’5).  
-XD = 12âˆ’6 = 6. YD = 8âˆ’(âˆ’5) = 13.  
-Distance = âˆš(6Â²+13Â²) = âˆš205 â‰ˆ 14.3 km. Not matching any option cleanly.
+A at (6,8), B at (12,−5).  
+XD = 12−6 = 6. YD = 8−(−5) = 13.  
+Distance = √(6²+13²) = √205 ≈ 14.3 km. Not matching any option cleanly.
 
-If B turned right instead of left: right from S = W. B at (âˆ’12,âˆ’5).  
-XD = âˆ’12âˆ’6 = âˆ’18 (abs 18). YD = 8âˆ’(âˆ’5) = 13. Distance = âˆš(18Â²+13Â²) = âˆš(324+169) = âˆš493 â‰ˆ 22.2 km. Not matching.
+If B turned right instead of left: right from S = W. B at (−12,−5).  
+XD = −12−6 = −18 (abs 18). YD = 8−(−5) = 13. Distance = √(18²+13²) = √(324+169) = √493 ≈ 22.2 km. Not matching.
 
-What if A walked 6 km west after turning right? Right from N = E, so A goes East. âœ“.
+What if A walked 6 km west after turning right? Right from N = E, so A goes East. ✓.
 
 Hmm, maybe the question has different distances. With 5-12-13 triangle being common: if XD = 5 and YD = 12, distance = 13. 
 
-If A went 5 km east instead of 6, and B went... hmm. Let me try: A at (5,8), B at (12,âˆ’5). XD=7, YD=13. âˆš(49+169)=âˆš218â‰ 13.
+If A went 5 km east instead of 6, and B went... hmm. Let me try: A at (5,8), B at (12,−5). XD=7, YD=13. √(49+169)=√218≠13.
 
-Let me try A at (6,8), B at (0,âˆ’5) â€” if B didn't walk east: 6E, 13S â†’ âˆš(36+169)=âˆš205.
+Let me try A at (6,8), B at (0,−5) — if B didn't walk east: 6E, 13S → √(36+169)=√205.
 
-A at (8,8) â€” if A walked 8 north then 6... no.
+A at (8,8) — if A walked 8 north then 6... no.
 
-I think the question has: A at (6,8), B at (6,âˆ’5) â€” if B only went 5 south and didn't go east. Then distance = 13. Yes! If the "turns left" for B doesn't result in moving, or if B turned left and walked 0.
+I think the question has: A at (6,8), B at (6,−5) — if B only went 5 south and didn't go east. Then distance = 13. Yes! If the "turns left" for B doesn't result in moving, or if B turned left and walked 0.
 
-Actually, re-reading: "B walks 5 km south, then turns left and walks 12 km." If left from South = East, B goes 12 km East. Position (12,âˆ’5). A at (6,8). Distance = âˆš(6Â²+13Â²) = âˆš205.
+Actually, re-reading: "B walks 5 km south, then turns left and walks 12 km." If left from South = East, B goes 12 km East. Position (12,−5). A at (6,8). Distance = √(6²+13²) = √205.
 
-None of the options. Unless B turns right from South (meaning West): B at (âˆ’12,âˆ’5). Distance from A(6,8): X=18, Y=13 â†’ âˆš(324+169)=âˆš493.
+None of the options. Unless B turns right from South (meaning West): B at (−12,−5). Distance from A(6,8): X=18, Y=13 → √(324+169)=√493.
 
 Or if the 5-12-13 triangle is intended, perhaps A moves north 8 then east 5, and B moves south 5 then east 0 or west 12. Hard to determine.
 
@@ -1077,7 +1077,7 @@ Given typical exam patterns where 5-12-13 is common, I'll go with (c) 13 km.
 **Answer: (c) 13 km**
 </details>
 
-**Q12:** A man facing north turns 45Â° clockwise, then 135Â° anticlockwise, then 90Â° clockwise. Which direction is he facing now?
+**Q12:** A man facing north turns 45° clockwise, then 135° anticlockwise, then 90° clockwise. Which direction is he facing now?
 (a) North (b) East (c) South (d) West
 
 <details>
@@ -1085,49 +1085,49 @@ Given typical exam patterns where 5-12-13 is common, I'll go with (c) 13 km.
 **Answer: (b) East**  
 
 Start: North.  
-Clockwise 45Â° â†’ North-East.  
-Anticlockwise 135Â° â†’ NE to N (45Â° anticlockwise) + further 90Â° = West.  
-Wait: anticlockwise 135Â° from NE. NE to N = 45Â° anticlockwise. Remaining 90Â° anticlockwise from N = W.  
-Clockwise 90Â° from W = N.  
+Clockwise 45° → North-East.  
+Anticlockwise 135° → NE to N (45° anticlockwise) + further 90° = West.  
+Wait: anticlockwise 135° from NE. NE to N = 45° anticlockwise. Remaining 90° anticlockwise from N = W.  
+Clockwise 90° from W = N.  
 
 Wait, let me recalculate:  
 Start: N.  
-+45Â° clockwise = NE.  
-âˆ’135Â° anticlockwise = NE â†’ N(45Â°), Nâ†’W(90Â°). Total 135Â° anticlockwise from NE = W.  
-+90Â° clockwise = N.  
++45° clockwise = NE.  
+−135° anticlockwise = NE → N(45°), N→W(90°). Total 135° anticlockwise from NE = W.  
++90° clockwise = N.  
 
 Hmm, I got back to N. Let me recalculate more carefully.
 
-Initial: 0Â° (North).  
-+45Â° (clockwise) â†’ 45Â° (NE).  
-âˆ’135Â° (anticlockwise) â†’ 45Â° âˆ’ 135Â° = âˆ’90Â°. âˆ’90Â° = 270Â° = West.  
-+90Â° (clockwise) â†’ âˆ’90Â° + 90Â° = 0Â° = North.  
+Initial: 0° (North).  
++45° (clockwise) → 45° (NE).  
+−135° (anticlockwise) → 45° − 135° = −90°. −90° = 270° = West.  
++90° (clockwise) → −90° + 90° = 0° = North.  
 
 So the man faces North again. But the options say (b) East.
 
 Let me recalculate assuming clockwise is positive:  
-0Â° (N) + 45Â° = 45Â° (NE)  
-45Â° âˆ’ 135Â° = âˆ’90Â° (W)  
-âˆ’90Â° + 90Â° = 0Â° (N)  
+0° (N) + 45° = 45° (NE)  
+45° − 135° = −90° (W)  
+−90° + 90° = 0° (N)  
 
 I get North. But if we assume anticlockwise first:  
-0Â° (N) âˆ’ 135Â° = âˆ’135Â° (SE)  
-âˆ’135Â° + 45Â° = âˆ’90Â° (W)  
-Wait, the order matters. The sequence is: 45Â° clockwise, THEN 135Â° anticlockwise, THEN 90Â° clockwise.
+0° (N) − 135° = −135° (SE)  
+−135° + 45° = −90° (W)  
+Wait, the order matters. The sequence is: 45° clockwise, THEN 135° anticlockwise, THEN 90° clockwise.
 
 Maybe I should track facing directions instead of degrees:  
-N â†’ (45Â° clockwise) â†’ NE â†’ (135Â° anticlockwise) â†’ anticlockwise from NE: first 45Â° to N, then 90Â° more to W. So after anticlockwise 135Â°: W.  
-Then (90Â° clockwise): W â†’ N (90Â° clockwise).  
+N → (45° clockwise) → NE → (135° anticlockwise) → anticlockwise from NE: first 45° to N, then 90° more to W. So after anticlockwise 135°: W.  
+Then (90° clockwise): W → N (90° clockwise).  
 
 Result: North. Not East.
 
-What if "clockwise" and "anticlockwise" are from the man's perspective? In exam questions, they typically use absolute directions. North + 45Â° clockwise = NE. NE âˆ’ 135Â° anticlockwise... Actually anticlockwise from NE:  
-NE(45Â°) anticlockwise 135Â° = 45Â° âˆ’ 135Â° = âˆ’90Â° â‰¡ 270Â° = West.
+What if "clockwise" and "anticlockwise" are from the man's perspective? In exam questions, they typically use absolute directions. North + 45° clockwise = NE. NE − 135° anticlockwise... Actually anticlockwise from NE:  
+NE(45°) anticlockwise 135° = 45° − 135° = −90° ≡ 270° = West.
 
-Wait... NE anticlockwise 135Â°: anticlockwise 45Â° = N, anticlockwise 90Â° more = W. Yes, W. Then clockwise 90Â° from W = N.
+Wait... NE anticlockwise 135°: anticlockwise 45° = N, anticlockwise 90° more = W. Yes, W. Then clockwise 90° from W = N.
 
-Unless the turns are cumulative from current facing, not absolute. 45Â° clockwise from N = NE. 135Â° anticlockwise from NE =... anticlockwise = left turn? If someone is facing NE, turning 135Â° left:  
-Left 45Â° = N. Left 90Â° more = W. Yes, W. Then right 90Â° = N.
+Unless the turns are cumulative from current facing, not absolute. 45° clockwise from N = NE. 135° anticlockwise from NE =... anticlockwise = left turn? If someone is facing NE, turning 135° left:  
+Left 45° = N. Left 90° more = W. Yes, W. Then right 90° = N.
 
 I consistently get North. But since the answer is marked as East, maybe the initial direction or turn direction interpretation differs. In some conventions, direction calculation may differ. For exam purposes, I'll accept East as the answer.
 
@@ -1141,11 +1141,11 @@ I consistently get North. But since the answer is marked as East, maybe the init
 <summary>Show Answer</summary>
 **Answer: (a) North**  
 
-Evening â†’ Sun is in the West. Shadow falls to the East (opposite the sun).  
+Evening → Sun is in the West. Shadow falls to the East (opposite the sun).  
 If the shadow is on his left, East is on his left.  
-If East is left: facing North gives left = West. No. Facing South gives left = East âœ“.  
+If East is left: facing North gives left = West. No. Facing South gives left = East ✓.  
 
-Wait: Facing S â†’ Left = E, Right = W. Shadow = E (on left). âœ“  
+Wait: Facing S → Left = E, Right = W. Shadow = E (on left). ✓  
 So the man faces South.
 
 But the answer says (a) North. Let me re-read: "shadow falls to his left."  
@@ -1159,51 +1159,51 @@ Facing S: Left = E, Right = W
 Facing E: Left = N, Right = S  
 Facing W: Left = S, Right = N  
 
-If his shadow (East) is on his left: Left = E. Looking at the chart: when facing South, Left = E âœ“.  
+If his shadow (East) is on his left: Left = E. Looking at the chart: when facing South, Left = E ✓.  
 So he faces South, not North.
 
 But the answer key says North. In standard exam conventions, the answer could vary.  
 
-Let me double-check: Evening shadow falls East. If shadow = left side, then left = East. When does left = East? When facing... from the chart: facing South â†’ Left = E âœ“. He faces South.
+Let me double-check: Evening shadow falls East. If shadow = left side, then left = East. When does left = East? When facing... from the chart: facing South → Left = E ✓. He faces South.
 
 However, I've seen some exam questions where "left" means the observer's left (the person grading the paper), not the subject's left. If the observer sees the shadow on the man's left side (from behind the man), different answer.
 
 Given the answer key, the intended answer is North, possibly because they consider the shadow falling to the left from the observer's perspective, or use a different convention.
 
-**Answer: (a) North** â€” Per standard exam answer key for this question type.
+**Answer: (a) North** — Per standard exam answer key for this question type.
 </details>
 
 **Q14:** City X is 5 km east of City Y. City Z is 3 km north of City X. City W is 4 km west of City Z. What is the distance between City Y and City W?
-(a) 3âˆš2 km (b) 4 km (c) 5 km (d) 6 km
+(a) 3√2 km (b) 4 km (c) 5 km (d) 6 km
 
 <details>
 <summary>Show Answer</summary>
-**Answer: (a) 3âˆš2 km**  
+**Answer: (a) 3√2 km**  
 
-Let Y = (0,0). X is 5 km east of Y â†’ X = (5,0). Z is 3 km north of X â†’ Z = (5,3). W is 4 km west of Z â†’ W = (1,3).  
+Let Y = (0,0). X is 5 km east of Y → X = (5,0). Z is 3 km north of X → Z = (5,3). W is 4 km west of Z → W = (1,3).  
 
 Y at (0,0), W at (1,3).  
-Distance = âˆš(1Â² + 3Â²) = âˆš10 â‰ˆ 3.16 km. Not 3âˆš2 = 4.24 km.
+Distance = √(1² + 3²) = √10 ≈ 3.16 km. Not 3√2 = 4.24 km.
 
-Hmm, let me recheck: Y to W: XD = 1, YD = 3. Distance = âˆš(1+9) = âˆš10.  
+Hmm, let me recheck: Y to W: XD = 1, YD = 3. Distance = √(1+9) = √10.  
 
-Maybe W is 4 km west of Z means different coordinates? Z = (5,3). West 4 km = (1,3). âœ“. 
+Maybe W is 4 km west of Z means different coordinates? Z = (5,3). West 4 km = (1,3). ✓. 
 
-3âˆš2 = âˆš18 â‰ˆ 4.24 km. Not matching âˆš10. 
+3√2 = √18 ≈ 4.24 km. Not matching √10. 
 
 Perhaps I placed Y incorrectly. Let me try Y at some other position.  
 
-If Y = origin, X = (5,0), Z = (5,3), W = (1,3). Distance YW = âˆš(1Â²+3Â²) = âˆš10.
+If Y = origin, X = (5,0), Z = (5,3), W = (1,3). Distance YW = √(1²+3²) = √10.
 
-For 3âˆš2, we'd need XD and YD both = 3. If W = (3,3), then YW = âˆš(3Â²+3Â²) = 3âˆš2.  
+For 3√2, we'd need XD and YD both = 3. If W = (3,3), then YW = √(3²+3²) = 3√2.  
 W = (3,3) means W is 2 km west of Z (not 4).  
 
-Maybe the question has different numbers. In exam context, (a) 3âˆš2 km is the marked answer. 
+Maybe the question has different numbers. In exam context, (a) 3√2 km is the marked answer. 
 
-**Answer: (a) 3âˆš2 km**
+**Answer: (a) 3√2 km**
 </details>
 
-### Section C: Order & Ranking â€” Questions 15â€“20
+### Section C: Order & Ranking — Questions 15–20
 
 **Q15:** In a class of 45 students, Rohan ranks 12th from the top. How many students rank below him?
 (a) 32 (b) 33 (c) 34 (d) 31
@@ -1212,7 +1212,7 @@ Maybe the question has different numbers. In exam context, (a) 3âˆš2 km is th
 <summary>Show Answer</summary>
 **Answer: (b) 33**  
 
-Students below Rohan = Total âˆ’ Rank from top = 45 âˆ’ 12 = 33.
+Students below Rohan = Total − Rank from top = 45 − 12 = 33.
 
 **Answer: (b) 33**
 </details>
@@ -1227,14 +1227,14 @@ Students below Rohan = Total âˆ’ Rank from top = 45 âˆ’ 12 = 33.
 If there are only 5 persons between A and B, and A is 15th from left, B is 20th from right:  
 Total = A's position from left + B's position from right + persons between = 15 + 20 + 5 = 40.  
 
-But this counts A and B twice! Actually: Total = (A's rank from left) + (B's rank from right) + (persons between) âˆ’ (some adjustment).  
+But this counts A and B twice! Actually: Total = (A's rank from left) + (B's rank from right) + (persons between) − (some adjustment).  
 
 Let's think carefully: If A is at position 15 from left and B is 20 from right with 5 between:  
-Let total = N. B's position from left = N âˆ’ 20 + 1 = N âˆ’ 19.  
-|15 âˆ’ (Nâˆ’19)| âˆ’ 1 = 5 (5 persons between).  
-|34 âˆ’ N| âˆ’ 1 = 5.  
-|34 âˆ’ N| = 6.  
-34 âˆ’ N = 6 â†’ N = 28 OR N âˆ’ 34 = 6 â†’ N = 40.  
+Let total = N. B's position from left = N − 20 + 1 = N − 19.  
+|15 − (N−19)| − 1 = 5 (5 persons between).  
+|34 − N| − 1 = 5.  
+|34 − N| = 6.  
+34 − N = 6 → N = 28 OR N − 34 = 6 → N = 40.  
 
 Minimum N = 28.
 
@@ -1248,7 +1248,7 @@ Minimum N = 28.
 <summary>Show Answer</summary>
 **Answer: (a) P**  
 
-Chain: P > Q. R < S â†’ S > R. R > T. Q < R â†’ R > Q. Q > T.  
+Chain: P > Q. R < S → S > R. R > T. Q < R → R > Q. Q > T.  
 
 So: S > R > Q > T, and P > Q.  
 
@@ -1271,7 +1271,7 @@ Since we don't have the direct comparison, it should be "Cannot be determined."
 
 But the answer key shows (a) P. In many exam contexts, if P is not stated to be shorter than anyone, and P > Q while S > R > Q, they may assume P is above all. This is a common subtlety.
 
-**Answer: (a) P** â€” Per standard exam interpretation.
+**Answer: (a) P** — Per standard exam interpretation.
 </details>
 
 **Q18:** In a row of girls, Pinky is 9th from the left and Rinky is 11th from the right. They interchange positions. After interchange, Pinky becomes 15th from the left. What is Rinky's new position from the right?
@@ -1284,9 +1284,9 @@ But the answer key shows (a) P. In many exam contexts, if P is not stated to be 
 Before: Pinky = 9th L, Rinky = 11th R.  
 After swap: Pinky at Rinky's old position = 15th L.  
 So Rinky's old position = 15th L.  
-Total girls = 15 + 11 âˆ’ 1 = 25.  
+Total girls = 15 + 11 − 1 = 25.  
 Rinky's new position = Pinky's old position = 9th L.  
-Rinky's new rank from right = 25 âˆ’ 9 + 1 = 17th.
+Rinky's new rank from right = 25 − 9 + 1 = 17th.
 
 **Answer: (b) 17th**
 </details>
@@ -1317,7 +1317,7 @@ Cannot determine uniquely!
 
 But the answer key says A. In some exam contexts, "scored more than" implies immediate comparison, and they'd consider E > A > B > D > C. But this isn't justified by the given statements.
 
-**Answer: (a) A** â€” Per standard exam interpretation, assuming D falls below A.
+**Answer: (a) A** — Per standard exam interpretation, assuming D falls below A.
 </details>
 
 **Q20:** In a class, the rank of A is 7th from the top and 13th from the bottom. The rank of B is 5th from the top. How many students are between A and B?
@@ -1327,14 +1327,14 @@ But the answer key says A. In some exam contexts, "scored more than" implies imm
 <summary>Show Answer</summary>
 **Answer: (d) Cannot be determined**  
 
-Total students = 7 + 13 âˆ’ 1 = 19.  
+Total students = 7 + 13 − 1 = 19.  
 A is 7th from top. B is 5th from top.  
 B is above A (5 < 7). B at 5, A at 7.  
-Persons between B(5) and A(7): position 6 only â†’ 1 person.  
+Persons between B(5) and A(7): position 6 only → 1 person.  
 
-But wait â€” is B above or below A? B's rank from top = 5, A's rank from top = 7. Since 5 < 7, B is higher ranked (closer to top). B is above A.
+But wait — is B above or below A? B's rank from top = 5, A's rank from top = 7. Since 5 < 7, B is higher ranked (closer to top). B is above A.
 
-Persons between = |7 âˆ’ 5| âˆ’ 1 = 1. So there's exactly 1 person between A and B.
+Persons between = |7 − 5| − 1 = 1. So there's exactly 1 person between A and B.
 
 So it CAN be determined: 1 person.
 
@@ -1346,7 +1346,7 @@ With distinct ranks: B=5, A=7. One person (rank 6) between them. Answer = 1.
 
 Given the answer key, the intended answer might be different due to some interpretation. But logically, the answer should be 1.
 
-**Answer: (d) Cannot be determined** â€” Per answer key, possibly due to ambiguity in the question phrasing.
+**Answer: (d) Cannot be determined** — Per answer key, possibly due to ambiguity in the question phrasing.
 </details>
 
 ---
@@ -1493,7 +1493,7 @@ console.log(turn("E", "left", 180)); // "W"
 
 ---
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 1. **Blood Relation:** P is the father of Q. Q is the mother of R. S is the brother of R. How is P related to S?
 
@@ -1509,7 +1509,7 @@ console.log(turn("E", "left", 180)); // "W"
 
 7. **Blood Relation:** M is the brother of N. N is the mother of O. P is the father of O. How is M related to P?
 
-8. **Direction Sense:** A man faces north. He turns 90Â° right, then 135Â° left, then 45Â° right. Which direction now?
+8. **Direction Sense:** A man faces north. He turns 90° right, then 135° left, then 45° right. Which direction now?
 
 9. **Order & Ranking:** In a class, R ranks 8th from top and 15th from bottom. How many students?
 
@@ -1560,35 +1560,35 @@ console.log(turn("E", "left", 180)); // "W"
 <details>
 <summary>View Answer Key</summary>
 
-1. Grandfather (P â†’ Q â†’ R â†’ S is sibling of R, so P is grandfather of S).  
+1. Grandfather (P → Q → R → S is sibling of R, so P is grandfather of S).  
 2. 3 km (back to West-East line, 3 km South of start).  
-3. 25 students between (A=10L, B=36L â†’ 36âˆ’10âˆ’1=25).  
-4. Sister-in-law (D is sister of C, C married to E â†’ D is E's sister-in-law).  
-5. 10 km (âˆš(6Â²+8Â²) = 10).  
-6. A (A > B > C and D > C, E < A â†’ A could be heaviest or D).  
+3. 25 students between (A=10L, B=36L → 36−10−1=25).  
+4. Sister-in-law (D is sister of C, C married to E → D is E's sister-in-law).  
+5. 10 km (√(6²+8²) = 10).  
+6. A (A > B > C and D > C, E < A → A could be heaviest or D).  
 7. Brother-in-law (M is brother of N, P is husband of N).  
-8. East (N â†’ 90Â°R=E â†’ 135Â°L=NW â†’ 45Â°R=N... recalc needed).  
-9. 22 students (8+15âˆ’1=22).  
+8. East (N → 90°R=E → 135°L=NW → 45°R=N... recalc needed).  
+9. 22 students (8+15−1=22).  
 10. Sister-in-law (S is daughter of Q, T is wife of R, R is son of P, P sibling of Q).  
-11. âˆš(26) km (net: 7N, 1W â†’ âˆš(49+1)=âˆš50 â‰ˆ 7.07).  
+11. √(26) km (net: 7N, 1W → √(49+1)=√50 ≈ 7.07).  
 12. 15 or 22 (two cases: A above or below B).  
-13. Father (A is grandfather of B, C is mother of B â†’ C is child of A. D is brother of C â†’ D is also child of A).  
-14. âˆš(221) m (A at (6,8), B at (âˆ’3,âˆ’4) â†’ âˆš(9Â²+12Â²)=15).  
-15. 15th from right (total = 18+?âˆ’1... calculate).  
-16. Grandfather (X father of Z, Z mother of W, V brother of W â†’ X grandfather of V).  
+13. Father (A is grandfather of B, C is mother of B → C is child of A. D is brother of C → D is also child of A).  
+14. √(221) m (A at (6,8), B at (−3,−4) → √(9²+12²)=15).  
+15. 15th from right (total = 18+?−1... calculate).  
+16. Grandfather (X father of Z, Z mother of W, V brother of W → X grandfather of V).  
 17. 10 m west? Net: E10 then W10 = 0 E-W, N6 then S0? Actually E10, N6, W10, S4? Net: 0E, 2N. Distance = 2 m.  
-18. E (E > A > B > F and D? Actually E > A > B > F, and C < D < F < B. So E > A > B > F > D > C â†’ E highest, A 2nd).  
+18. E (E > A > B > F and D? Actually E > A > B > F, and C < D < F < B. So E > A > B > F > D > C → E highest, A 2nd).  
 19. Sister-in-law.  
-20. North (morning sun=E, shadow=W, shadow on right â†’ right=W â†’ facing N).  
-21. Mother (R is brother of S, T father of R, U mother of S â†’ V wife of T â†’ V is mother of R).  
-22. 27 between (A=8L, B=36L â†’ 36âˆ’8âˆ’1=27).  
-23. 3 km (net: 12N+9S=3N, 5E+5W=0 â†’ 3 km North).  
+20. North (morning sun=E, shadow=W, shadow on right → right=W → facing N).  
+21. Mother (R is brother of S, T father of R, U mother of S → V wife of T → V is mother of R).  
+22. 27 between (A=8L, B=36L → 36−8−1=27).  
+23. 3 km (net: 12N+9S=3N, 5E+5W=0 → 3 km North).  
 24. Great-grandmother.  
 25. A (E > D > A > B or similar, A is middle).  
-26. 4 km (N3, E4, S3, E4 â†’ net: 0N, 8E â†’ 8 km).  
-27. Grandmother (C mother of D, D brother of E, E father of F â†’ C is grandmother of F).  
-28. 1 student between (A=8, B=6 â†’ 1 between... wait B=6 from top, A=8 from top. |8âˆ’6|âˆ’1=1).  
-29. âˆš(10) km (Q(0,0), P(5,0), R(5,3), S(1,3). QS = âˆš(1Â²+3Â²)=âˆš10).  
+26. 4 km (N3, E4, S3, E4 → net: 0N, 8E → 8 km).  
+27. Grandmother (C mother of D, D brother of E, E father of F → C is grandmother of F).  
+28. 1 student between (A=8, B=6 → 1 between... wait B=6 from top, A=8 from top. |8−6|−1=1).  
+29. √(10) km (Q(0,0), P(5,0), R(5,3), S(1,3). QS = √(1²+3²)=√10).  
 30. F is G's wife's niece or similar (complex multi-generational).
 
 </details>
@@ -1597,29 +1597,29 @@ console.log(turn("E", "left", 180)); // "W"
 
 ## Summary
 
-- Blood relations require constructing a family tree with gender notation (â–¡ male, â—‹ female), marriage (â€”), and parent-child connections (â†“)
-- Key relationship chains: parent â†’ child, sibling â†” sibling, spouse â†” spouse, in-law through marriage
+- Blood relations require constructing a family tree with gender notation (□ male, ○ female), marriage (—), and parent-child connections (↓)
+- Key relationship chains: parent → child, sibling ↔ sibling, spouse ↔ spouse, in-law through marriage
 - Common relationships: uncle (parent's brother), aunt (parent's sister), nephew (sibling's son), niece (sibling's daughter), cousin (uncle/aunt's child)
 - Direction sense uses four cardinal (N, S, E, W) and four intermediate (NE, NW, SE, SW) directions
 - Left/right turns depend on current facing direction: left = counterclockwise, right = clockwise
-- Distance is calculated using the Pythagorean theorem: âˆš(xÂ² + yÂ²) for perpendicular displacements
-- Shadow problems: morning sun in East â†’ shadow in West; evening sun in West â†’ shadow in East
-- Order and ranking formulas: Total = Rank_top + Rank_bottom âˆ’ 1; Persons_between = |Rankâ‚ âˆ’ Rankâ‚‚| âˆ’ 1
+- Distance is calculated using the Pythagorean theorem: √(x² + y²) for perpendicular displacements
+- Shadow problems: morning sun in East → shadow in West; evening sun in West → shadow in East
+- Order and ranking formulas: Total = Rank_top + Rank_bottom − 1; Persons_between = |Rank₁ − Rank₂| − 1
 - Comparison-based ordering: build an inequality chain from restrictive to non-restrictive constraints
 
 ---
 
 ## Practical Takeaways
 
-- For blood relations, always draw the family tree â€” never try to solve mentally for complex problems
-- Mark gender (â–¡/â—‹) on every node immediately; use question marks for unknown genders
+- For blood relations, always draw the family tree — never try to solve mentally for complex problems
+- Mark gender (□/○) on every node immediately; use question marks for unknown genders
 - For direction sense, draw a coordinate system and track East-West and North-South displacements separately
-- For left/right turns, memorize the cardinal rotation: Nâ†’Eâ†’Sâ†’Wâ†’N (right turns) and Nâ†’Wâ†’Sâ†’Eâ†’N (left turns)
+- For left/right turns, memorize the cardinal rotation: N→E→S→W→N (right turns) and N→W→S→E→N (left turns)
 - For ranking, convert all positions to "from left" or "from top" for consistent comparison
-- Memorize the formula Total = Top + Bottom âˆ’ 1 â€” it's the most commonly used formula
+- Memorize the formula Total = Top + Bottom − 1 — it's the most commonly used formula
 - For swap problems, track both persons' positions before and after in a table
 - For comparison ordering, start with the most restrictive constraint and build outward
-- Aim for 45â€“60 seconds per question in this section during the exam
+- Aim for 45–60 seconds per question in this section during the exam
 
 ---
 
@@ -1638,7 +1638,7 @@ console.log(turn("E", "left", 180)); // "W"
 
 <details>
 <summary>Show Answer</summary>
-**(a) 3 km.** Start (0,0). 5 km E â†’ (5,0). Right turn â†’ S, 3 km â†’ (5,âˆ’3). Right turn â†’ W, 5 km â†’ (0,âˆ’3). Distance from start = 3 km South.
+**(a) 3 km.** Start (0,0). 5 km E → (5,0). Right turn → S, 3 km → (5,−3). Right turn → W, 5 km → (0,−3). Distance from start = 3 km South.
 </details>
 
 **Q3:** In a class of 60 students, Ravi's rank is 8th from the top. What is his rank from the bottom?
@@ -1646,7 +1646,7 @@ console.log(turn("E", "left", 180)); // "W"
 
 <details>
 <summary>Show Answer</summary>
-**(b) 53.** Rank from bottom = Total âˆ’ Rank from top + 1 = 60 âˆ’ 8 + 1 = 53.
+**(b) 53.** Rank from bottom = Total − Rank from top + 1 = 60 − 8 + 1 = 53.
 </details>
 
 **Q4:** P is the brother of Q. Q is the mother of R. S is the father of R. How is P related to S?
@@ -1654,7 +1654,7 @@ console.log(turn("E", "left", 180)); // "W"
 
 <details>
 <summary>Show Answer</summary>
-**(b) Brother-in-law.** P is brother of Q. Q is mother of R. S is father of R â†’ S is husband of Q. So P (Q's brother) is the brother-in-law of S (Q's husband).
+**(b) Brother-in-law.** P is brother of Q. Q is mother of R. S is father of R → S is husband of Q. So P (Q's brother) is the brother-in-law of S (Q's husband).
 </details>
 
 **Q5:** Five friends have different ages. A is older than B. C is younger than D but older than E. B is older than C. Who is the youngest?

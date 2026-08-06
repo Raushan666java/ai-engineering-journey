@@ -1,4 +1,4 @@
-﻿# Chapter 8: Cloud Computing â€” Exam Quick Revision
+# Chapter 8: Cloud Computing — Exam Quick Revision
 
 ## Learning Objectives
 - Differentiate IaaS, PaaS, SaaS with real-world provider examples
@@ -77,11 +77,11 @@ graph TD
 
 ### NIST Definition (5 Essential Characteristics)
 
-1. **On-demand self-service** â€” provision resources without human interaction
-2. **Broad network access** â€” accessible via standard protocols
-3. **Resource pooling** â€” multi-tenant, location independent
-4. **Rapid elasticity** â€” scale up/down quickly
-5. **Measured service** â€” pay-per-use metering
+1. **On-demand self-service** — provision resources without human interaction
+2. **Broad network access** — accessible via standard protocols
+3. **Resource pooling** — multi-tenant, location independent
+4. **Rapid elasticity** — scale up/down quickly
+5. **Measured service** — pay-per-use metering
 
 ---
 
@@ -119,8 +119,8 @@ graph TD
 | **Type 2 (Hosted)** | Runs on host OS | VirtualBox, VMware Workstation | Higher (OS overhead) |
 
 ```
-Type 1: [Hardware] â†’ [Hypervisor] â†’ [VMs]
-Type 2: [Hardware] â†’ [Host OS] â†’ [Hypervisor] â†’ [VMs]
+Type 1: [Hardware] → [Hypervisor] → [VMs]
+Type 2: [Hardware] → [Host OS] → [Hypervisor] → [VMs]
 ```
 
 ---
@@ -151,8 +151,8 @@ Type 2: [Hardware] â†’ [Host OS] â†’ [Hypervisor] â†’ [VMs]
 
 - **Region:** Geographic area (us-east-1, eu-west-1)
 - **AZ:** One or more data centers within a region
-- Multi-AZ deployment â†’ high availability
-- Cross-region replication â†’ disaster recovery
+- Multi-AZ deployment → high availability
+- Cross-region replication → disaster recovery
 
 ---
 
@@ -160,7 +160,7 @@ Type 2: [Hardware] â†’ [Host OS] â†’ [Hypervisor] â†’ [VMs]
 
 | Type | Description | Access | Performance | Use Case |
 |------|-------------|--------|-------------|----------|
-| **Object Storage** | Flat namespace: bucket â†’ key â†’ data | HTTP (REST API) | Low latency for large objects | Media, backups, data lakes |
+| **Object Storage** | Flat namespace: bucket → key → data | HTTP (REST API) | Low latency for large objects | Media, backups, data lakes |
 | **Block Storage** | Raw volumes: formatted with filesystem | Attached to VM (iSCSI) | High, low latency | DB storage, OS boot volumes |
 | **File Storage** | Hierarchical, shared across VMs | NFS, SMB | Moderate | Shared configs, home dirs |
 
@@ -189,23 +189,23 @@ Type 2: [Hardware] â†’ [Host OS] â†’ [Hypervisor] â†’ [VMs]
 
 ### Scalability Types
 
-- **Vertical scaling (Scale up):** Bigger instance (more CPU/RAM) â€” limited by hardware max
-- **Horizontal scaling (Scale out):** More instances â€” theoretically unlimited
+- **Vertical scaling (Scale up):** Bigger instance (more CPU/RAM) — limited by hardware max
+- **Horizontal scaling (Scale out):** More instances — theoretically unlimited
 
 ---
 
-## 7. Cloud Security â€” Shared Responsibility Model
+## 7. Cloud Security — Shared Responsibility Model
 
 ```
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚   CUSTOMER RESPONSIBILITY â”‚
-                    â”‚  (Data, Applications,     â”‚
-                    â”‚   Identity, OS patches)    â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-                    â”‚   PROVIDER RESPONSIBILITY  â”‚
-                    â”‚  (Physical security, infra, â”‚
-                    â”‚   hypervisor, network)      â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                    ┌─────────────────────────┐
+                    │   CUSTOMER RESPONSIBILITY │
+                    │  (Data, Applications,     │
+                    │   Identity, OS patches)    │
+├────────────────────┼─────────────────────────┤
+                    │   PROVIDER RESPONSIBILITY  │
+                    │  (Physical security, infra, │
+                    │   hypervisor, network)      │
+                    └────────────────────────────┘
 ```
 
 **IaaS:** Customer secures OS, apps, data + network config
@@ -214,13 +214,13 @@ Type 2: [Hardware] â†’ [Host OS] â†’ [Hypervisor] â†’ [VMs]
 
 ### Cloud Security Threats
 
-1. **Data breaches** â€” unauthorized access to stored data
-2. **Misconfiguration** â€” open S3 buckets, overly permissive IAM
-3. **Insecure APIs** â€” weak authentication on cloud management APIs
-4. **Account hijacking** â€” compromised credentials
-5. **Insider threats** â€” malicious employees with access
-6. **DDoS attacks** â€” resource exhaustion
-7. **Shared technology vulnerabilities** â€” hypervisor escape
+1. **Data breaches** — unauthorized access to stored data
+2. **Misconfiguration** — open S3 buckets, overly permissive IAM
+3. **Insecure APIs** — weak authentication on cloud management APIs
+4. **Account hijacking** — compromised credentials
+5. **Insider threats** — malicious employees with access
+6. **DDoS attacks** — resource exhaustion
+7. **Shared technology vulnerabilities** — hypervisor escape
 
 ---
 
@@ -238,9 +238,9 @@ In a distributed data store, at most **two** of these three can be guaranteed si
 
 | System Type | C | A | P | Example |
 |-------------|---|---|---|---------|
-| **CP** | âœ… | âŒ | âœ… | HBase, MongoDB (with consistency preference) |
-| **AP** | âŒ | âœ… | âœ… | DynamoDB, Cassandra, CouchDB |
-| **CA** | âœ… | âœ… | âŒ | Relational DBs (single node â€” no partition) |
+| **CP** | ✅ | ❌ | ✅ | HBase, MongoDB (with consistency preference) |
+| **AP** | ❌ | ✅ | ✅ | DynamoDB, Cassandra, CouchDB |
+| **CA** | ✅ | ✅ | ❌ | Relational DBs (single node — no partition) |
 
 **Note:** In distributed systems, partitions are inevitable, so **P is mandatory**. You choose between CP and AP.
 
@@ -248,7 +248,7 @@ In a distributed data store, at most **two** of these three can be guaranteed si
 
 | Type | CAP | Description | Examples |
 |------|-----|-------------|----------|
-| Key-Value | AP | Simple key â†’ value | Redis, DynamoDB |
+| Key-Value | AP | Simple key → value | Redis, DynamoDB |
 | Document | AP/CP | JSON-like documents | MongoDB, CouchDB |
 | Column Family | AP | Wide-column stores | Cassandra, HBase |
 | Graph | CP | Relationships as edges | Neo4j, Amazon Neptune |
@@ -279,7 +279,7 @@ Resources:
 
 ### Serverless Architecture
 
-- No server management â€” just code
+- No server management — just code
 - Event-driven: function triggered by HTTP, queue, DB change
 - Cold start: first invocation latency (container initialization)
 - **Cost:** Pay per invocation + duration (not idle time)
@@ -294,7 +294,7 @@ Resources:
 - (c) IaaS
 - (d) FaaS
 
-**Answer:** (c) IaaS. User manages OS, apps, data â€” provider manages only infra.
+**Answer:** (c) IaaS. User manages OS, apps, data — provider manages only infra.
 
 **Q2:** In CAP theorem, which two are typically chosen for distributed databases?
 - (a) Consistency + Availability
@@ -336,7 +336,7 @@ Resources:
 
 | Concept | Description |
 |---------|-------------|
-| **Pod** | Smallest deployable unit â€” one or more containers sharing network/storage |
+| **Pod** | Smallest deployable unit — one or more containers sharing network/storage |
 | **Service** | Stable network endpoint to access pods (load-balanced) |
 | **Deployment** | Declarative pod management (replicas, rolling updates) |
 | **ConfigMap / Secret** | Configuration and sensitive data injected into pods |
@@ -347,19 +347,19 @@ Resources:
 ### Control Plane Components
 
 ```
-kube-apiserver (API gateway) â†’ etcd (cluster state)
-       â†“
+kube-apiserver (API gateway) → etcd (cluster state)
+       ↓
 kube-scheduler (assigns pods to nodes)
-       â†“
+       ↓
 kube-controller-manager (maintains desired state)
-       â†“
+       ↓
 cloud-controller-manager (cloud provider integration)
 ```
 
 ### Pod Lifecycle
 
 ```
-Pending â†’ ContainerCreating â†’ Running â†’ Succeeded (or Failed)
+Pending → ContainerCreating → Running → Succeeded (or Failed)
 ```
 - **RestartPolicy:** Always (default), OnFailure, Never
 
@@ -403,7 +403,7 @@ Pending â†’ ContainerCreating â†’ Running â†’ Succeeded (or Faile
 
 ### DR Strategies (in order of cost/complexity)
 
-1. **Backup &amp; Restore:** S3 backup â†’ restore in new region (RPO: hours, RTO: days)
+1. **Backup &amp; Restore:** S3 backup → restore in new region (RPO: hours, RTO: days)
 2. **Pilot Light:** Replicate critical data, spin up infra on failover (RPO: minutes)
 3. **Warm Standby:** Reduced-capacity replica running (RPO: seconds)
 4. **Multi-Site Active-Active:** Full capacity in both regions (RPO: near zero)
@@ -434,20 +434,20 @@ Pending â†’ ContainerCreating â†’ Running â†’ Succeeded (or Faile
 ### State Machine (AWS Step Functions)
 
 ```
-[Order Received] â†’ [Validate Payment] â†’ [Check Inventory]
-                     â†“ fail                    â†“ fail
+[Order Received] → [Validate Payment] → [Check Inventory]
+                     ↓ fail                    ↓ fail
                   [Send Error]              [Restock]
-                     â†“                        â†“ ok
-                  [End]                   [Ship Order] â†’ [End]
+                     ↓                        ↓ ok
+                  [End]                   [Ship Order] → [End]
 ```
 
 ---
 
 ---
 
-## ðŸ“Œ Extended Theory â€” Deep Dive for IBPS SO Mains (2024â€“2026 Trends)
+## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
-### Cloud Cost Calculator â€” TypeScript
+### Cloud Cost Calculator — TypeScript
 
 ```typescript
 interface InstanceType {
@@ -505,10 +505,10 @@ const awsPrices: InstanceType[] = [
 ];
 
 // Usage: new CloudCostCalculator(awsPrices).estimate('t3.medium', 730, 12)
-// On-demand â‰ˆ $364/yr vs Reserved â‰ˆ $218/yr
+// On-demand ≈ $364/yr vs Reserved ≈ $218/yr
 ```
 
-### Deployment Model Comparison â€” Extended
+### Deployment Model Comparison — Extended
 
 ```mermaid
 graph TD
@@ -532,7 +532,7 @@ graph TD
 
 **Answer:** Hybrid Cloud. Keep sensitive data on private cloud (compliance). Burst to public cloud during peak demand.
 
-### Service Model Scenarios â€” Decision Matrix
+### Service Model Scenarios — Decision Matrix
 
 | Scenario | Best Model | Why |
 |----------|-----------|-----|
@@ -543,7 +543,7 @@ graph TD
 | Bank running payment processing with strict compliance | Private Cloud / On-premise | Data sovereignty, audit requirements |
 | Media company encoding videos on demand | FaaS (Lambda, Cloud Functions) | Event-driven, pay-per-execution |
 
-### Hypervisor Scheduler â€” TypeScript
+### Hypervisor Scheduler — TypeScript
 
 ```typescript
 interface VirtualMachine {
@@ -598,7 +598,7 @@ class HypervisorScheduler {
 }
 ```
 
-### AWS vs Azure vs GCP â€” Service Mapping
+### AWS vs Azure vs GCP — Service Mapping
 
 | Category | AWS | Azure | GCP |
 |----------|-----|-------|-----|
@@ -662,7 +662,7 @@ class AutoScalingGroup {
 }
 ```
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 <details>
 <summary>Q1: Which cloud service model provides the highest level of control?</summary>
@@ -691,7 +691,7 @@ class AutoScalingGroup {
 <details>
 <summary>Q5: What does the 'R' in RTO stand for?</summary>
 (a) Recovery (b) Response (c) Return (d) Resource
-**Answer:** (a) Recovery. RTO = Recovery Time Objective â€” maximum acceptable downtime after a disaster.
+**Answer:** (a) Recovery. RTO = Recovery Time Objective — maximum acceptable downtime after a disaster.
 </details>
 
 <details>
@@ -784,7 +784,7 @@ class AutoScalingGroup {
 **Answer:** (b) Delay when invoking a function after idle period. Cold start involves provisioning a new container, loading code, and initializing runtime.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 1. Compare IaaS, PaaS, and SaaS for: a hospital (HIPAA), a gaming startup, a data analytics platform.
 2. Write a TypeScript function that determines the optimal cloud deployment model based on compliance, scalability, and cost requirements.
@@ -807,36 +807,36 @@ class AutoScalingGroup {
 19. Compare serverless vs containers for: cold start, scaling, cost, debugging, vendor lock-in.
 20. Write TypeScript code for a cloud security group simulator (stateful firewall rules evaluation).
 21. Explain the difference between RDS and DynamoDB in terms of data model, scaling, and use cases.
-22. Implement a TypeScript IaC template parser (YAML â†’ cloud resource definitions).
+22. Implement a TypeScript IaC template parser (YAML → cloud resource definitions).
 23. Design a cloud-native microservices architecture with API Gateway, service discovery, and circuit breakers.
 24. Write TypeScript code simulating an auto-scaling policy based on SQS queue depth.
 25. Compare cloud monitoring tools: CloudWatch vs Azure Monitor vs Google Cloud Operations.
 26. Implement a TypeScript function that calculates S3 storage costs for different storage classes.
 27. Explain the concepts of blue-green deployment and canary release in cloud environments.
 28. Write TypeScript code for a cloud billing alert system (budget thresholds, SNS notifications).
-29. Compare EBS volume types: gp3, io2, st1, sc1 â€” performance and use cases.
+29. Compare EBS volume types: gp3, io2, st1, sc1 — performance and use cases.
 30. Implement a TypeScript class that simulates a cloud region availability matrix (service availability per region).
 
 **Answer Key:**
 
-3. On-demand: 10 Ã— $0.0416 Ã— 24 Ã— 30 = $299.52/month. Reserved 1yr: ~60% â†’ $179.71/month
+3. On-demand: 10 × $0.0416 × 24 × 30 = $299.52/month. Reserved 1yr: ~60% → $179.71/month
 5. Evaluate request principal, IP, resource ARN against policy statements. First explicit DENY wins, then ALLOW, default DENY
 8. Database: block (EBS) for performance. Media streaming: object (S3) + CDN. Shared config: file (EFS)
 10. Round-robin: cycle through instances. Least-connections: track active connections, pick lowest. Weighted: assign weights, distribute proportionally
 11. Active-Active across two regions with global load balancer. Synchronous replication for RPO < 1min
-14. Track resource tags per team. Calculate hourly cost Ã— usage. Generate per-team billing report
+14. Track resource tags per team. Calculate hourly cost × usage. Generate per-team billing report
 16. Bin-packing: pack VMs to minimize hosts. Spread: distribute evenly. Random: simple but may overload
 17. Rehost (lift & shift): fastest. Replatform: modify for cloud (managed DB). Refactor: redesign for cloud-native
 19. Serverless: cold start 50ms-5s, auto-scale to zero, pay per call. Containers: no cold start, min instances, pay for runtime
-20. Evaluate rules in order: if source/dest IP matches â†’ allow/deny. Stateful: auto-allow return traffic
+20. Evaluate rules in order: if source/dest IP matches → allow/deny. Stateful: auto-allow return traffic
 22. Parse YAML resources: each resource type maps to specific handler. Generate create/update/delete operations
-24. If queue depth > threshold â†’ scale up. If queue depth < threshold for N consecutive checks â†’ scale down
+24. If queue depth > threshold → scale up. If queue depth < threshold for N consecutive checks → scale down
 27. Blue-green: two identical environments, switch traffic. Canary: route small % traffic to new version, gradual increase
-28. Aggregate costs by service. Compare against budget. If threshold (80%, 100%) exceeded â†’ SNS notification
+28. Aggregate costs by service. Compare against budget. If threshold (80%, 100%) exceeded → SNS notification
 
 ---
 
-## ðŸ“Œ Additional PYQ Integration (2024â€“2026 Analysis)
+## 📌 Additional PYQ Integration (2024–2026 Analysis)
 
 > **PYQ 2025:** An e-commerce company experiences unpredictable traffic spikes during flash sales. Their current infrastructure runs on-premise with fixed capacity. During last year's Big Billion Day sale, the website was down for 4 hours. Recommend a cloud migration strategy with justification.
 
@@ -857,7 +857,7 @@ Benefits: Elasticity handles spikes, pay-per-use reduces costs, DR capabilities 
 
 **Answer:** Option (b) Elastic Beanstalk + RDS is best for a startup:
 - (a) EC2: Full control but high ops overhead (OS patching, DB admin, scaling)
-- (b) EB + RDS: Managed platform, auto-scaling, automated backups, minimal ops â€” ideal when team &lt; 5 engineers
+- (b) EB + RDS: Managed platform, auto-scaling, automated backups, minimal ops — ideal when team &lt; 5 engineers
 - (c) Lambda + Aurora Serverless: No servers, but cold start latency (~500ms-5s) may impact UX; connection pooling needed; 15-min timeout limit
 
 > **PYQ 2026:** In the CAP theorem context, a globally distributed social media feed requires availability during network partitions. Which NoSQL database type and consistency model would you choose?
@@ -869,7 +869,7 @@ Benefits: Elasticity handles spikes, pay-per-use reduces costs, DR capabilities 
 
 These systems accept writes during network partitions (high availability) and resolve conflicts via last-writer-wins or vector clocks. Users may see slightly stale data during partitions, but the feed remains responsive. Consistency is sacrificed for availability.
 
-## ðŸ“Œ Topic-wise Weightage Analysis for IBPS SO IT Mains
+## 📌 Topic-wise Weightage Analysis for IBPS SO IT Mains
 
 | Topic | Weightage | Frequency | Difficulty |
 |-------|-----------|-----------|------------|
@@ -892,26 +892,26 @@ These systems accept writes during network partitions (high availability) and re
 - **AWS:** EC2 (compute), S3 (object), RDS (SQL), Lambda (serverless), VPC (network)
 - **Storage:** Object (REST/HTTP), Block (VM attached), File (shared/NFS)
 - **Elasticity:** Auto-scale; **Scalability:** Handle growth
-- **Security:** Shared responsibility model â€” customer secures data, provider secures infra
-- **CAP:** Consistency, Availability, Partition Tolerance â€” pick 2 (P mandatory in distributed)
+- **Security:** Shared responsibility model — customer secures data, provider secures infra
+- **CAP:** Consistency, Availability, Partition Tolerance — pick 2 (P mandatory in distributed)
 - **Kubernetes:** Pods (smallest unit), Services (networking), Deployments (replica mgmt)
 - **Cost:** On-demand (flexible), Reserved (cheap, committed), Spot (batch, cheap)
-- **DR:** RTO (downtime), RPO (data loss) â€” Backup â†’ Pilot Light â†’ Warm Standby â†’ Active-Active
+- **DR:** RTO (downtime), RPO (data loss) — Backup → Pilot Light → Warm Standby → Active-Active
 - **Serverless:** Lambda triggers, cold start, pay-per-invocation, event-driven
 
 ---
 
 ## HOT Topics (Frequently Asked in IBPS SO IT Mains)
-1. IaaS vs PaaS vs SaaS â€” which service model for given scenario
-2. Public vs Private vs Hybrid cloud â€” advantages/disadvantages
-3. CAP theorem application â€” which NoSQL DB for which requirement
-4. AWS services â€” match service with its purpose
-5. Virtualization vs containerization â€” performance, isolation, use cases
-6. Shared responsibility model â€” who is responsible for what
-7. Vertical vs horizontal scaling â€” when to use each
-8. Cloud deployment models â€” differences in cost, security, control
-9. Serverless vs containers â€” comparison of cold start, cost, statefulness
-10. Elasticity vs scalability â€” real-world examples
+1. IaaS vs PaaS vs SaaS — which service model for given scenario
+2. Public vs Private vs Hybrid cloud — advantages/disadvantages
+3. CAP theorem application — which NoSQL DB for which requirement
+4. AWS services — match service with its purpose
+5. Virtualization vs containerization — performance, isolation, use cases
+6. Shared responsibility model — who is responsible for what
+7. Vertical vs horizontal scaling — when to use each
+8. Cloud deployment models — differences in cost, security, control
+9. Serverless vs containers — comparison of cold start, cost, statefulness
+10. Elasticity vs scalability — real-world examples
 
 ---
 
@@ -934,7 +934,7 @@ A3: EBS is block-level storage (single EC2 attachment, high performance). EFS is
 
 <details>
 <summary>Q4: Which cloud service model would a developer choose to deploy code without managing the underlying OS?</summary>
-A4: PaaS (Platform as a Service) â€” e.g., AWS Elastic Beanstalk, Heroku, Google App Engine. The developer only manages code and data.
+A4: PaaS (Platform as a Service) — e.g., AWS Elastic Beanstalk, Heroku, Google App Engine. The developer only manages code and data.
 </details>
 
 <details>

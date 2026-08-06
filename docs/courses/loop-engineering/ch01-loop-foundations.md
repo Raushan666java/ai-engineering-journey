@@ -1,10 +1,10 @@
-﻿# Chapter 1: Loop Foundations
+# Chapter 1: Loop Foundations
 
 > **Last Updated:** June 2026 | **Estimated Reading Time:** 75 minutes
 
-All intelligent behavior â€” biological, mechanical, or artificial â€” emerges from **loops**. A thermostat loops over temperature readings and adjusts a heater. A chess engine loops over board evaluations and search candidates. An LLM agent loops over observations and tool calls. Without the loop, each is just a single-shot computation; with the loop, each becomes a goal-seeking, adaptive system.
+All intelligent behavior — biological, mechanical, or artificial — emerges from **loops**. A thermostat loops over temperature readings and adjusts a heater. A chess engine loops over board evaluations and search candidates. An LLM agent loops over observations and tool calls. Without the loop, each is just a single-shot computation; with the loop, each becomes a goal-seeking, adaptive system.
 
-This chapter establishes the mathematical and architectural vocabulary you need to design, analyze, and debug production agent loops. We draw heavily on **control theory** â€” a 150-year-old engineering discipline that formalizes feedback â€” but we translate every concept into terms immediately useful for TypeScript agent builders.
+This chapter establishes the mathematical and architectural vocabulary you need to design, analyze, and debug production agent loops. We draw heavily on **control theory** — a 150-year-old engineering discipline that formalizes feedback — but we translate every concept into terms immediately useful for TypeScript agent builders.
 
 ---
 
@@ -36,7 +36,7 @@ After completing this chapter you will be able to:
 3.  **Define gain margin, phase margin, and oscillation criteria** in the context of software loops.
 4.  **Calculate convergence rate, error per cycle, and settling time** from empirical loop traces.
 5.  **Implement a generic measurement harness** that quantifies loop quality in real time.
-6.  **Recognize pathological loop behaviors** â€” runaway amplification, limit cycles, and deadband hunting â€” before they reach production.
+6.  **Recognize pathological loop behaviors** — runaway amplification, limit cycles, and deadband hunting — before they reach production.
 
 ---
 
@@ -47,19 +47,19 @@ After completing this chapter you will be able to:
 
 A **control loop** is any system that compares a current state against a desired state and takes action to close the gap. The two fundamental topologies are open and closed.
 
-**Open-loop control** executes a predetermined sequence without reading the result. A toaster that fires its heating element for exactly 90 seconds and pops regardless of toast color is open-loop. An LLM that generates code once and returns it without compiling or testing is open-loop. Open-loop systems are simple, fast, and **brittle** â€” they cannot detect or correct error.
+**Open-loop control** executes a predetermined sequence without reading the result. A toaster that fires its heating element for exactly 90 seconds and pops regardless of toast color is open-loop. An LLM that generates code once and returns it without compiling or testing is open-loop. Open-loop systems are simple, fast, and **brittle** — they cannot detect or correct error.
 
 ```
-reference â”€â”€â–º [controller] â”€â”€â–º [plant] â”€â”€â–º output
+reference ──► [controller] ──► [plant] ──► output
                 (action)         (system)
 ```
 
 **Closed-loop control** reads the output, compares it to the reference, and adjusts the next action. A thermostat reads room temperature, compares to the set point, and decides whether to keep the furnace running. A ReAct agent reads the tool-call result, compares it to the task, and generates the next thought.
 
 ```
-reference â”€â”€â–º [comparator] â”€â”€â–º [controller] â”€â”€â–º [plant] â”€â”€â–º output
-                  â–²                                      â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ feedback â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+reference ──► [comparator] ──► [controller] ──► [plant] ──► output
+                  ▲                                      │
+                  └────────── feedback ──────────────────┘
 ```
 
 Closed loops add two things: a **sensor** that measures output and a **comparator** that computes error. These are the essential machinery of any capable agent.
@@ -77,14 +77,14 @@ Closed loops add two things: a **sensor** that measures output and a **comparato
 
 Feedback is the signal path from output back to input. Its **sign** determines the loop's behavior.
 
-**Negative feedback** subtracts the measured output from the reference to produce an **error signal**. The controller acts to drive that error to zero. This is the dominant feedback type in both engineering and biology â€” homeostasis, thermostats, cruise control, and virtually all stable agent loops use negative feedback.
+**Negative feedback** subtracts the measured output from the reference to produce an **error signal**. The controller acts to drive that error to zero. This is the dominant feedback type in both engineering and biology — homeostasis, thermostats, cruise control, and virtually all stable agent loops use negative feedback.
 
 ```
 error = reference - measurement
 action = f(error)  // f is designed to reduce |error|
 ```
 
-**Positive feedback** adds the measured output to the reference, amplifying deviations. A microphone held too close to a speaker produces a shrieking crescendo â€” positive feedback. Positive feedback is useful for **exploration, divergence, and escape from local optima** but is dangerous for goal-seeking. In agent systems, positive feedback appears in:
+**Positive feedback** adds the measured output to the reference, amplifying deviations. A microphone held too close to a speaker produces a shrieking crescendo — positive feedback. Positive feedback is useful for **exploration, divergence, and escape from local optima** but is dangerous for goal-seeking. In agent systems, positive feedback appears in:
 - **Self-reinforcing loops**: an agent that praises its own output and uses it as future training data
 - **Exploration bonuses**: adding noise proportional to uncertainty to encourage novel actions
 - **Adversarial amplification**: two agents that each make the other's argument more extreme
@@ -101,32 +101,32 @@ deviation = current - baseline;
 adjustment = gain * deviation; // accelerates away from baseline
 ```
 
-**Key insight for agents:** the ReAct loop (`thought â†’ action â†’ observation â†’ thought`) is fundamentally a **negative feedback control system**. Each observation corrects the next thought. If your agent ignores observations and repeats the same action, positive feedback has taken over â€” the loop is diverging.
+**Key insight for agents:** the ReAct loop (`thought → action → observation → thought`) is fundamentally a **negative feedback control system**. Each observation corrects the next thought. If your agent ignores observations and repeats the same action, positive feedback has taken over — the loop is diverging.
 
 ### 3. Loop Stability
 
 
-A stable loop converges to a bounded region around the target. An unstable loop diverges, oscillates, or enters a limit cycle. Stability is governed by **gain** â€” the amplification factor applied to the error signal per cycle.
+A stable loop converges to a bounded region around the target. An unstable loop diverges, oscillates, or enters a limit cycle. Stability is governed by **gain** — the amplification factor applied to the error signal per cycle.
 
-**Gain Margin** is how much additional gain the loop can tolerate before it becomes unstable. In an agent context, gain is the **aggressiveness** with which the agent responds to each observation. A very high gain means the agent overcorrects on every cycle â€” one failed tool call causes it to abandon the entire plan.
+**Gain Margin** is how much additional gain the loop can tolerate before it becomes unstable. In an agent context, gain is the **aggressiveness** with which the agent responds to each observation. A very high gain means the agent overcorrects on every cycle — one failed tool call causes it to abandon the entire plan.
 
 ```
 gain_margin = gain_at_instability / current_gain
 ```
 
-A gain margin of 2Ã— means you could double the aggressiveness before hitting instability. Production agent loops should target a gain margin of 3Ã— or higher.
+A gain margin of 2× means you could double the aggressiveness before hitting instability. Production agent loops should target a gain margin of 3× or higher.
 
 **Phase Margin** measures how much **delay** the loop can tolerate before oscillation. Every cycle introduces a phase delay: the time between taking an action and receiving its observation. If that delay approaches the loop's natural period, the feedback becomes positive.
 
 ```
-phase_margin = 180Â° - phase_lag_at_crossover
+phase_margin = 180° - phase_lag_at_crossover
 ```
 
 In agent terms: if a tool call takes 10 seconds to return, and the agent's natural cycle frequency is one thought per 2 seconds, the phase margin is low. You need either faster tool calls or slower thinking.
 
 **Oscillation Criteria (the Barkhausen Criterion)** states that a loop oscillates when:
-1. The **gain around the loop** is â‰¥ 1 (unity gain), AND
-2. The **phase shift around the loop** is 0Â° (or 360Â°).
+1. The **gain around the loop** is ≥ 1 (unity gain), AND
+2. The **phase shift around the loop** is 0° (or 360°).
 
 In plain English: an agent oscillates when its corrections are strong enough AND arrive at exactly the wrong time. This manifests as:
 - **Flip-flopping**: alternating between two contradictory conclusions
@@ -151,7 +151,7 @@ initial_error = e_0
 e_t = e_0 * (1 - r)^t
 ```
 
-If `r = 0.5`, each cycle halves the remaining error. After 3 cycles, error is reduced to `e_0 * 0.125`. In practice, agent loops rarely achieve constant rates â€” the first cycles make big progress, later cycles struggle with edge cases.
+If `r = 0.5`, each cycle halves the remaining error. After 3 cycles, error is reduced to `e_0 * 0.125`. In practice, agent loops rarely achieve constant rates — the first cycles make big progress, later cycles struggle with edge cases.
 
 **Settling time** is the number of cycles required for the error to stay below a threshold (typically 2% or 5% of the initial error). For a constant-rate loop:
 
@@ -159,7 +159,7 @@ If `r = 0.5`, each cycle halves the remaining error. After 3 cycles, error is re
 t_settle = log(threshold / e_0) / log(1 - r)
 ```
 
-With `r = 0.3` and a 5% threshold: `t_settle = log(0.05) / log(0.7) â‰ˆ 8.4` cycles.
+With `r = 0.3` and a 5% threshold: `t_settle = log(0.05) / log(0.7) ≈ 8.4` cycles.
 
 ### 5. Measuring Loop Quality
 
@@ -171,9 +171,9 @@ Production agent loops need four observability signals:
 | **Cycle time** | Wall-clock duration of one full iteration | Growing cycle time suggests tool degradation |
 | **Convergence rate** | Fraction of error eliminated per cycle | Rate &lt; 0.1 means the loop is stalled |
 | **Error per cycle** | Distance to target after each cycle | Error that increases indicates divergence |
-| **Settling time** | Cycles to reach threshold | Exceeding budget Ã— 3 suggests wrong approach |
+| **Settling time** | Cycles to reach threshold | Exceeding budget × 3 suggests wrong approach |
 
-Every loop runner should emit a **trace** â€” an array of per-cycle measurements â€” that can be post-processed for these metrics. The examples below build this tracing infrastructure.
+Every loop runner should emit a **trace** — an array of per-cycle measurements — that can be post-processed for these metrics. The examples below build this tracing infrastructure.
 
 ---
 
@@ -284,7 +284,7 @@ class LoopRunner<T> {
   }
 }
 
-// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Demo ──────────────────────────────────────────────────────────
 
 async function approximatePi(cycles: number): Promise<number> {
   let inside = 0;
@@ -303,7 +303,7 @@ async function main() {
     tolerance: 0.01,
     onCycle: (c, r) => {
       console.log(
-        `Cycle ${c}: pi â‰ˆ ${(r.output as number).toFixed(4)}, ` +
+        `Cycle ${c}: pi ≈ ${(r.output as number).toFixed(4)}, ` +
         `error=${r.error?.toFixed(6)}, ${r.durationMs.toFixed(0)}ms`
       );
     },
@@ -314,7 +314,7 @@ async function main() {
     (output: number) => Math.abs(output - Math.PI)
   );
 
-  console.log("\nâ”€â”€ Loop Summary â”€â”€");
+  console.log("\n── Loop Summary ──");
   console.log(`Settled: ${summary.settled} (cycle ${summary.settlingCycle})`);
   console.log(`Final error: ${summary.finalError?.toFixed(6)}`);
   console.log(`Convergence rate: ${summary.convergenceRate?.toFixed(4)}`);
@@ -326,12 +326,12 @@ await main();
 ```
 
 **Key concepts demonstrated:**
-- **Generic typing** â€” the runner works with any `T`; only the error function is domain-specific
-- **Per-cycle telemetry** â€” every iteration records output, error, and timing
-- **Early termination** â€” the loop stops when error drops below tolerance (the settling condition)
-- **Convergence rate estimation** â€” simple ratio of consecutive errors approximates `r`
+- **Generic typing** — the runner works with any `T`; only the error function is domain-specific
+- **Per-cycle telemetry** — every iteration records output, error, and timing
+- **Early termination** — the loop stops when error drops below tolerance (the settling condition)
+- **Convergence rate estimation** — simple ratio of consecutive errors approximates `r`
 
-### Example 2: Feedback Controller â€” Positive vs Negative Feedback
+### Example 2: Feedback Controller — Positive vs Negative Feedback
 
 This example builds a `FeedbackController` that adjusts a parameter toward a target using configurable gain. You can flip the sign to see positive feedback diverge.
 
@@ -368,7 +368,7 @@ function runFeedback(config: FeedbackConfig): {
   for (let i = 0; i < maxCycles; i++) {
     const error = target - value;
 
-    // Core feedback equation: adjustment = sign Ã— gain Ã— error
+    // Core feedback equation: adjustment = sign × gain × error
     const adjustment = feedbackSign * gain * error;
 
     value += adjustment;
@@ -407,7 +407,7 @@ function analyzeTrace(trace: FeedbackTrace[]): void {
   console.log(`  Value range: [${Math.min(...values).toFixed(4)}, ${Math.max(...values).toFixed(4)}]`);
 }
 
-// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Demo ──────────────────────────────────────────────────────────
 
 console.log("=== Negative Feedback (stable convergence) ===");
 const negResult = runFeedback({
@@ -460,8 +460,8 @@ analyzeTrace(criticalResult.trace);
 **Expected behavior:**
 - **Negative feedback (gain=0.3):** smooth convergence; error decreases monotonically
 - **Positive feedback (gain=0.3):** value accelerates away from target; error grows
-- **High-gain negative (gain=1.8):** oscillation â€” the controller overcorrects each cycle, producing a decaying or sustained limit cycle depending on gain
-- **Critical gain (gain=1.0):** sustained oscillation (the Barkhausen criterion â€” gain = 1, phase = 180Â° which is effectively 0Â° for a discrete-time loop with one-cycle delay)
+- **High-gain negative (gain=1.8):** oscillation — the controller overcorrects each cycle, producing a decaying or sustained limit cycle depending on gain
+- **Critical gain (gain=1.0):** sustained oscillation (the Barkhausen criterion — gain = 1, phase = 180° which is effectively 0° for a discrete-time loop with one-cycle delay)
 
 ### Example 3: Convergence Analysis Tool
 
@@ -561,7 +561,7 @@ function printReport(report: ConvergenceReport): void {
   const last = report.errors[report.errors.length - 1];
   const avgCycle = report.cycleTimesMs.reduce((a, b) => a + b, 0) / report.cycleTimesMs.length;
 
-  console.log(`\nâ”€â”€ ${report.label} â”€â”€`);
+  console.log(`\n── ${report.label} ──`);
   console.log(`  Target reached: ${report.reachedTarget}`);
   console.log(`  Settling cycle: ${report.settlingCycle ?? "did not settle"}`);
   console.log(`  Settling time:  ${report.settlingTimeMs.toFixed(1)}ms`);
@@ -573,13 +573,13 @@ function printReport(report: ConvergenceReport): void {
   if (report.errors.length <= 20) {
     console.log("\n  Error per cycle:");
     for (const e of report.errors) {
-      const bar = "â–ˆ".repeat(Math.min(Math.round(Math.abs(e) * 50), 50));
+      const bar = "█".repeat(Math.min(Math.round(Math.abs(e) * 50), 50));
       console.log(`    ${bar} ${Math.abs(e).toFixed(4)}`);
     }
   }
 }
 
-// â”€â”€â”€ Demo: Compare Gains â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Demo: Compare Gains ───────────────────────────────────────────
 
 const configs: ConvergenceConfig[] = [
   { label: "Conservative (gain=0.2)", initialValue: 0, target: 100, gain: 0.2, noise: 0.3, maxCycles: 40, tolerance: 0.5 },
@@ -588,7 +588,7 @@ const configs: ConvergenceConfig[] = [
   { label: "Too High (gain=1.5)",    initialValue: 0, target: 100, gain: 1.5, noise: 0.3, maxCycles: 40, tolerance: 0.5 },
 ];
 
-console.log("Convergence Analysis â€” Gain Comparison");
+console.log("Convergence Analysis — Gain Comparison");
 console.log("======================================");
 
 const reports = configs.map((c) => simulateConvergence(c));
@@ -602,7 +602,7 @@ for (const report of reports) {
   printReport(report);
 }
 
-console.log("\nâ”€â”€ Best Configuration â”€â”€");
+console.log("\n── Best Configuration ──");
 if (best) {
   console.log(`  ${best.label} settled in ${best.settlingCycle} cycles (${best.settlingTimeMs.toFixed(0)}ms)`);
 } else {
@@ -610,7 +610,7 @@ if (best) {
 }
 
 // Compute optimal gain for this system
-console.log("\nâ”€â”€ Gain Sweep â”€â”€");
+console.log("\n── Gain Sweep ──");
 for (let g = 0.1; g <= 2.0; g += 0.1) {
   const r = simulateConvergence({
     label: `gain=${g.toFixed(1)}`,
@@ -621,17 +621,17 @@ for (let g = 0.1; g <= 2.0; g += 0.1) {
     maxCycles: 40,
     tolerance: 0.5,
   });
-  const cycles = r.reachedTarget ? `${r.settlingCycle}` : "âˆž";
+  const cycles = r.reachedTarget ? `${r.settlingCycle}` : "∞";
   const rate = r.avgConvergenceRate !== null ? r.avgConvergenceRate.toFixed(3) : "N/A";
-  const osc = r.errors.length >= 4 && r.errors.slice(-4).some((e, i, a) => i > 0 && e * a[i - 1] < 0) ? " âš  OSC" : "";
+  const osc = r.errors.length >= 4 && r.errors.slice(-4).some((e, i, a) => i > 0 && e * a[i - 1] < 0) ? " ⚠ OSC" : "";
   console.log(`  gain=${g.toFixed(1)}  settle=${cycles.padEnd(3)}  rate=${rate}${osc}`);
 }
 ```
 
 **What the gain sweep reveals:**
 - Gains &lt; 0.3: slow but guaranteed convergence
-- Gains 0.3â€“0.8: fastest convergence; the "sweet spot"
-- Gains 0.9â€“1.2: fast initial progress, then oscillation (ringing)
+- Gains 0.3–0.8: fastest convergence; the "sweet spot"
+- Gains 0.9–1.2: fast initial progress, then oscillation (ringing)
 - Gains > 1.2: diverging oscillation or monotonic divergence
 
 This maps directly to agent loops: a low-gain agent is cautious and takes many cycles but never diverges; a high-gain agent makes big moves but may thrash.
@@ -646,7 +646,7 @@ This section builds a comprehensive control-theory toolkit: a gain/phase analyze
 // ch01-advanced-control-suite.ts
 // bun run ch01-advanced-control-suite.ts
 
-// â”€â”€â”€ Bode Plot Data Generator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Bode Plot Data Generator ──────────────────────────────────────────
 
 interface BodePoint {
   frequencyRad: number;
@@ -709,7 +709,7 @@ class BodeAnalyzer {
   }
 }
 
-// â”€â”€â”€ Barkhausen Criterion Checker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Barkhausen Criterion Checker ──────────────────────────────────────
 
 interface BarkhausenResult {
   oscillates: boolean;
@@ -746,7 +746,7 @@ class BarkhausenChecker {
   }
 }
 
-// â”€â”€â”€ PID Controller Simulator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── PID Controller Simulator ──────────────────────────────────────────
 
 interface PIDConfig {
   kp: number;
@@ -825,7 +825,7 @@ class PIDController {
   }
 }
 
-// â”€â”€â”€ Convergence Rate Estimator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Convergence Rate Estimator ────────────────────────────────────────
 
 interface ConvergenceStats {
   estimatedRate: number;
@@ -892,7 +892,7 @@ class ConvergenceRateEstimator {
   }
 }
 
-// â”€â”€â”€ Adaptive Gain Scheduler â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Adaptive Gain Scheduler ────────────────────────────────────────────
 
 class AdaptiveGainScheduler {
   private gain: number;
@@ -947,7 +947,7 @@ class AdaptiveGainScheduler {
   }
 }
 
-// â”€â”€â”€ Discrete-Time Transfer Function Simulator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Discrete-Time Transfer Function Simulator ─────────────────────────
 
 class DiscreteTransferFunction {
   private numCoeffs: number[];
@@ -991,7 +991,7 @@ class DiscreteTransferFunction {
   }
 }
 
-// â”€â”€â”€ Stability Margin Calculator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Stability Margin Calculator ──────────────────────────────────────
 
 interface StabilityMargins {
   gainMargin: number | null;
@@ -1031,7 +1031,7 @@ class StabilityCalculator {
   }
 }
 
-// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Demo ──────────────────────────────────────────────────────────────
 
 function main() {
   console.log("=== Extended Control Suite Demo ===\n");
@@ -1046,12 +1046,12 @@ function main() {
   const bodeData = analyzer.generateData(freqs, tf);
   console.log("Bode Data (first 3 points):");
   bodeData.slice(0, 3).forEach((p) =>
-    console.log(`  Ï‰=${p.frequencyRad}rad  |G|=${p.magnitudeDb.toFixed(1)}dB  Ï†=${p.phaseDeg.toFixed(1)}Â°`)
+    console.log(`  ω=${p.frequencyRad}rad  |G|=${p.magnitudeDb.toFixed(1)}dB  φ=${p.phaseDeg.toFixed(1)}°`)
   );
 
   const checker = new BarkhausenChecker();
   const result = checker.check(1.2, 358);
-  console.log(`\nBarkhausen (gain=1.2, phase=358Â°): oscillates=${result.oscillates}`);
+  console.log(`\nBarkhausen (gain=1.2, phase=358°): oscillates=${result.oscillates}`);
 
   // 2. PID Controller
   const pid = new PIDController({ kp: 2.0, ki: 0.5, kd: 0.1, dt: 0.01, outputMin: -50, outputMax: 50 });
@@ -1073,7 +1073,7 @@ function main() {
   console.log("\nAdaptive Gain Schedule:");
   for (const e of errors) {
     const g = scheduler.adapt(e);
-    console.log(`  error=${e.toFixed(1)} â†’ gain=${g.toFixed(3)}`);
+    console.log(`  error=${e.toFixed(1)} → gain=${g.toFixed(3)}`);
   }
 
   // 5. Transfer Function
@@ -1085,7 +1085,7 @@ function main() {
   // 6. Stability Margin
   const stabCalc = new StabilityCalculator();
   const margins = stabCalc.compute(0.8, 35, 5);
-  console.log(`\nStability: ${margins.verdict}  GM=${margins.gainMargin?.toFixed(2) ?? "N/A"}  PM=${margins.phaseMarginDeg?.toFixed(1)}Â°`);
+  console.log(`\nStability: ${margins.verdict}  GM=${margins.gainMargin?.toFixed(2) ?? "N/A"}  PM=${margins.phaseMarginDeg?.toFixed(1)}°`);
 }
 
 main();
@@ -1110,7 +1110,7 @@ This section adds production-grade analysis and filtering tools: a `LoopAnalyzer
 // ch01-advanced-tooling.ts
 // bun run ch01-advanced-tooling.ts
 
-// â”€â”€â”€ Loop Type Comparison Mermaid Diagram â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Loop Type Comparison Mermaid Diagram ───────────────────────────────
 
 /*
 ```mermaid
@@ -1141,7 +1141,7 @@ graph TD
 ```
 */
 
-// â”€â”€â”€ LoopAnalyzerTool â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── LoopAnalyzerTool ──────────────────────────────────────────────────
 
 interface GainPhaseData {
   frequencyRad: number;
@@ -1218,7 +1218,7 @@ function complexDiv(num: { real: number; imag: number }, den: { real: number; im
   };
 }
 
-// â”€â”€â”€ SettlingTimeOptimizer (Golden-Section Search) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── SettlingTimeOptimizer (Golden-Section Search) ─────────────────────
 
 class SettlingTimeOptimizer {
   private readonly phi = (1 + Math.sqrt(5)) / 2;
@@ -1287,7 +1287,7 @@ class SettlingTimeOptimizer {
   }
 }
 
-// â”€â”€â”€ NoiseFilter (EMA + Median) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── NoiseFilter (EMA + Median) ────────────────────────────────────────
 
 class NoiseFilter {
   private emaValue: number | null = null;
@@ -1352,7 +1352,7 @@ class NoiseFilter {
   }
 }
 
-// â”€â”€â”€ StepResponseAnalyzer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── StepResponseAnalyzer ──────────────────────────────────────────────
 
 interface StepResponseMetrics {
   riseTime: number;
@@ -1436,7 +1436,7 @@ class StepResponseAnalyzer {
   }
 }
 
-// â”€â”€â”€ BodePlotGenerator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── BodePlotGenerator ─────────────────────────────────────────────────
 
 interface BodePoint {
   frequencyRad: number;
@@ -1496,7 +1496,7 @@ class BodePlotGenerator {
   }
 }
 
-// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Demo ──────────────────────────────────────────────────────────────
 
 function mainAdvancedTools() {
   console.log("=== Advanced Loop Tooling Demo ===\n");
@@ -1510,9 +1510,9 @@ function mainAdvancedTools() {
     return { frequencyRad: omega, gainLinear: mag, phaseRad: phase };
   });
   const margins = analyzer.computeMargins(testData);
-  console.log("Loop Analyzer â€” Margins:");
+  console.log("Loop Analyzer — Margins:");
   console.log(`  Gain Margin: ${margins.gainMargin?.toFixed(2) ?? "N/A"} (${margins.gainMarginDb?.toFixed(1) ?? "N/A"} dB)`);
-  console.log(`  Phase Margin: ${margins.phaseMarginDeg?.toFixed(1) ?? "N/A"}Â°`);
+  console.log(`  Phase Margin: ${margins.phaseMarginDeg?.toFixed(1) ?? "N/A"}°`);
   console.log(`  Verdict: ${margins.verdict}`);
 
   // 2. Settling Time Optimizer
@@ -1523,7 +1523,7 @@ function mainAdvancedTools() {
   const sweep = optimizer.gainSweep([0.1, 0.3, 0.5, 0.7, 0.9, 1.1, 1.3], 0.5, 100, 0.2, 50);
   console.log("Gain sweep:");
   for (const s of sweep) {
-    console.log(`  gain=${s.gain.toFixed(1)} â†’ settle=${s.settlingTime} cycles`);
+    console.log(`  gain=${s.gain.toFixed(1)} → settle=${s.settlingTime} cycles`);
   }
 
   // 3. Noise Filter
@@ -1551,7 +1551,7 @@ function mainAdvancedTools() {
   const points = bode.generate(bodeFreqs, [], [-5], 10);
   console.log("\nBode Plot Generator (first 3 points):");
   points.slice(0, 3).forEach((p) => {
-    console.log(`  Ï‰=${p.frequencyRad.toFixed(1)} rad  |G|=${p.magnitudeDb.toFixed(1)} dB  Ï†=${p.phaseDeg.toFixed(1)}Â°`);
+    console.log(`  ω=${p.frequencyRad.toFixed(1)} rad  |G|=${p.magnitudeDb.toFixed(1)} dB  φ=${p.phaseDeg.toFixed(1)}°`);
   });
   const cross = bode.findCrossover(points);
   console.log(`  Gain crossover: ${cross.gainCrossover ?? "none"} rad/s`);
@@ -1572,19 +1572,19 @@ mainAdvancedTools();
 
 ## Summary
 
-1.  **All agent loops are feedback control systems.** The ReAct cycle (`thought â†’ action â†’ observation`) is a negative-feedback closed loop. Understanding control theory lets you debug convergence failures by reasoning about gain, phase, and stability.
+1.  **All agent loops are feedback control systems.** The ReAct cycle (`thought → action → observation`) is a negative-feedback closed loop. Understanding control theory lets you debug convergence failures by reasoning about gain, phase, and stability.
 
 2.  **Closed loops reject disturbances; open loops do not.** Every production agent needs feedback from tools, evaluations, or humans. Without it, errors compound silently.
 
-3.  **Negative feedback drives error toward zero; positive feedback amplifies deviation.** Most agent architectures use negative feedback. Positive feedback appears in exploration, adversarial setups, and â€” accidentally â€” in runaway loops.
+3.  **Negative feedback drives error toward zero; positive feedback amplifies deviation.** Most agent architectures use negative feedback. Positive feedback appears in exploration, adversarial setups, and — accidentally — in runaway loops.
 
-4.  **Loop stability depends on gain and phase.** The Barkhausen criterion (gain â‰¥ 1, phase = 0Â° around the loop) predicts oscillation. A gain margin of 3Ã— is a safe target for production agents.
+4.  **Loop stability depends on gain and phase.** The Barkhausen criterion (gain ≥ 1, phase = 0° around the loop) predicts oscillation. A gain margin of 3× is a safe target for production agents.
 
 5.  **Three numbers quantify loop quality:** convergence rate (fraction of error eliminated per cycle), error per cycle (remaining distance to target), and settling time (cycles to reach tolerance).
 
 6.  **Gain sweep analysis finds the optimal operating point.** Run your agent architecture under different "aggressiveness" configurations and measure settling time vs stability. The knee of the curve is your optimal gain.
 
-7.  **Always instrument every loop.** The trace array â€” one entry per cycle with output, error, and duration â€” is the single most valuable diagnostic tool for agent debugging.
+7.  **Always instrument every loop.** The trace array — one entry per cycle with output, error, and duration — is the single most valuable diagnostic tool for agent debugging.
 
 ---
 
@@ -1594,7 +1594,7 @@ mainAdvancedTools();
 
 1.  **RQ1:** What is the fundamental difference between an open-loop and a closed-loop system? Give one example of each from the domain of AI agents.
 
-2.  **RQ2:** Explain why the ReAct pattern (Thought â†’ Action â†’ Observation) is a negative-feedback closed loop. Where is the "comparator"? Where is the "plant"?
+2.  **RQ2:** Explain why the ReAct pattern (Thought → Action → Observation) is a negative-feedback closed loop. Where is the "comparator"? Where is the "plant"?
 
 3.  **RQ3:** According to the Barkhausen criterion, what two conditions must be met for a loop to oscillate? Translate these conditions into prose about an agent that keeps repeating the same failed tool call.
 
@@ -1608,7 +1608,7 @@ mainAdvancedTools();
 
 2.  **AP2:** Implement an **adaptive gain controller** that starts with `gain = 0.8` but reduces gain by half whenever the error sign changes (a crude phase-margin detector). Compare settling time against fixed-gain runs.
 
-3.  **AP3:** Using the convergence analysis tool (Example 3), add a **noise profile** parameter that models latency spikes: every 5th cycle should have 5Ã— the normal noise. Report how this affects settling time and convergence rate.
+3.  **AP3:** Using the convergence analysis tool (Example 3), add a **noise profile** parameter that models latency spikes: every 5th cycle should have 5× the normal noise. Report how this affects settling time and convergence rate.
 
 4.  **AP4:** Build a loop that converges on **two targets simultaneously** (like balancing speed and quality). Use two separate error signals with different gains. Plot the trade-off curve.
 
@@ -1619,7 +1619,7 @@ mainAdvancedTools();
 Design and implement a `SelfTuningLoop` that:
 - Runs a configurable task function in a loop (like a code-generation agent)
 - Uses negative feedback with an initial gain of 0.3
-- Measures the error after each cycle (your choice of error metric â€” test pass rate, lint error count, spec coverage, etc.)
+- Measures the error after each cycle (your choice of error metric — test pass rate, lint error count, spec coverage, etc.)
 - **Adapts gain online**: if the error sign changes (oscillation detected), reduce gain by 20%. If error has shrunk for 3 consecutive cycles without a sign change, increase gain by 10%.
 - Emits a trace and stops when error &lt; 5% or maxCycles reached
 
@@ -1630,5 +1630,5 @@ Your submission must include:
 
 **Hints:**
 - The key challenge is distinguishing oscillation from noise. Require 2 consecutive sign changes before declaring oscillation.
-- Gain adaptation is itself a feedback loop â€” be careful of the meta-gain.
+- Gain adaptation is itself a feedback loop — be careful of the meta-gain.
 - Test with both a well-behaved task (smoothly improving) and a noisy task (random success/failure).

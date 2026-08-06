@@ -1,4 +1,4 @@
-﻿# Distributed Tracing & Observability
+# Distributed Tracing & Observability
 
 > **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)
 
@@ -53,7 +53,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -1660,10 +1660,10 @@ class TracingIntegrationTest {
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
-| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
-| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Small application | ✓ | ✗ | ✓ |
+| Enterprise system | ✓ | ✓ | ✗ |
+| High-throughput API | ✗ | ✓ | ✓ |
+| Event-driven | ✗ | ✓ | ✓ |
 
 ## Chapter Quiz
 
@@ -1693,7 +1693,7 @@ class TracingIntegrationTest {
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â†’ it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;

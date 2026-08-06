@@ -1,4 +1,4 @@
-﻿# Chapter 11: File System Implementation
+# Chapter 11: File System Implementation
 
 **<< [File Systems](./10-file-systems.md)** | [**Next: Secondary Storage**](./12-secondary-storage.md) >>
 
@@ -83,7 +83,7 @@ I/O Control (device drivers, interrupts)
 Devices (disk, SSD, NVM)
 ```
 
-### Numbered Steps â€” Read Operation
+### Numbered Steps — Read Operation
 
 1. Application calls `read(fd, buf, 512)`.
 2. The logical file system looks up the file descriptor in the per-process open-file table, finds the inode number.
@@ -94,7 +94,7 @@ Devices (disk, SSD, NVM)
 7. Data is copied from the DMA buffer through the page cache to the user-supplied buffer.
 8. The read returns the number of bytes transferred.
 
-### Pseudocode â€” Layered Read
+### Pseudocode — Layered Read
 
 ```
 function read_file(fd, buf, count):
@@ -126,7 +126,7 @@ function read_file(fd, buf, count):
 
 **Why O(1) per block**: The inode provides direct or indirect pointers that are computed in constant time (with at most 3 indirection levels for ext4). Each layer adds a fixed overhead but does not change asymptotic complexity.
 
-### C++ Implementation â€” FS Layer Simulation
+### C++ Implementation — FS Layer Simulation
 
 ```cpp
 #include <iostream>
@@ -200,7 +200,7 @@ int main() {
 }
 ```
 
-### Python Implementation â€” FS Layer Simulation
+### Python Implementation — FS Layer Simulation
 
 ```python
 import os
@@ -279,7 +279,7 @@ if __name__ == "__main__":
 
 ### Real-World Analogy
 
-An office building. The **boot block** is the security guard's initial checklist â€” get the building running. The **superblock** is the building directory showing total floors, rooms per floor, and which rooms are occupied. The **inode table** is the filing cabinet where each file folder (inode) stores metadata about a document. The **data blocks** are the actual documents in the filing cabinet. The **directory** is the index card catalog that maps document names to folder IDs.
+An office building. The **boot block** is the security guard's initial checklist — get the building running. The **superblock** is the building directory showing total floors, rooms per floor, and which rooms are occupied. The **inode table** is the filing cabinet where each file folder (inode) stores metadata about a document. The **data blocks** are the actual documents in the filing cabinet. The **directory** is the index card catalog that maps document names to folder IDs.
 
 ### 2.1 Boot Block
 
@@ -287,13 +287,13 @@ The **boot block** is the first sector (sector 0) of a partition. It contains co
 
 ```
 Boot Block Layout (512 bytes typical):
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Offset   â”‚ Content                              â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 0-445    â”‚ Bootstrap machine code               â”‚
-â”‚ 446-509  â”‚ Partition table (4 Ã— 16-byte entries)â”‚
-â”‚ 510-511  â”‚ Boot signature (0x55AA)              â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────┬─────────────────────────────────────┐
+│ Offset   │ Content                              │
+├──────────┼─────────────────────────────────────┤
+│ 0-445    │ Bootstrap machine code               │
+│ 446-509  │ Partition table (4 × 16-byte entries)│
+│ 510-511  │ Boot signature (0x55AA)              │
+└──────────┴─────────────────────────────────────┘
 ```
 
 ### 2.2 Superblock
@@ -327,7 +327,7 @@ Data blocks occupy the bulk of the disk. They store:
 - Indirect block pointers (for indexed allocation)
 - Free list pointers (for linked allocation)
 
-### Numbered Steps â€” Mount a File System
+### Numbered Steps — Mount a File System
 
 1. The OS reads the boot block from sector 0 to determine if the partition is bootable.
 2. The OS reads the superblock (at offset 1024 for ext4) into memory.
@@ -336,7 +336,7 @@ Data blocks occupy the bulk of the disk. They store:
 5. The root directory inode (always inode 2 in ext4) is loaded into the in-memory inode table.
 6. The file system is marked as mounted and ready for use.
 
-### Pseudocode â€” Superblock Parse
+### Pseudocode — Superblock Parse
 
 ```
 function mount_fs(device):
@@ -354,14 +354,14 @@ function mount_fs(device):
     return SUCCESS
 ```
 
-### Full Dry Run â€” Superblock Contents Trace
+### Full Dry Run — Superblock Contents Trace
 
 Assume a 4 MB ext4 partition with 4 KB blocks.
 
 | Field | Value | Meaning |
 |-------|-------|---------|
 | s_inodes_count | 1024 | Room for 1024 inodes |
-| s_blocks_count | 1024 | 1024 blocks Ã— 4 KB = 4 MB |
+| s_blocks_count | 1024 | 1024 blocks × 4 KB = 4 MB |
 | s_free_blocks_count | 1005 | 19 blocks used by metadata |
 | s_free_inodes_count | 1010 | 14 inodes used by metadata |
 | s_log_block_size | 2 | Block size = 1024 &lt;< 2 = 4096 bytes |
@@ -371,7 +371,7 @@ Assume a 4 MB ext4 partition with 4 KB blocks.
 | s_lastcheck | 1690000000 | Last fsck was months ago |
 | s_checkinterval | 15552000 | 180 days between forced checks |
 
-### C++ Implementation â€” Superblock Simulator
+### C++ Implementation — Superblock Simulator
 
 ```cpp
 #include <iostream>
@@ -447,7 +447,7 @@ int main() {
 }
 ```
 
-### Python Implementation â€” Superblock Simulator
+### Python Implementation — Superblock Simulator
 
 ```python
 import struct
@@ -509,7 +509,7 @@ if __name__ == "__main__":
     read_superblock(dev)
 ```
 
-### Complexity Analysis â€” On-Disk Structures
+### Complexity Analysis — On-Disk Structures
 
 | Structure | Access Complexity | Why |
 |-----------|-----------------|-----|
@@ -525,7 +525,7 @@ if __name__ == "__main__":
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Boot block | Simple, standardized | Only 512 bytes â€” limits bootloader complexity |
+| Boot block | Simple, standardized | Only 512 bytes — limits bootloader complexity |
 | Superblock | Single source of truth | Catastrophic if corrupted (mitigated by backups) |
 | Inode table | Fast O(1) lookup | Fixed size limits maximum file count |
 | Fixed layout | Easy to implement | Hard to resize partition |
@@ -542,7 +542,7 @@ if __name__ == "__main__":
 
 ---
 
-## 3. Inode â€” Detailed Structure
+## 3. Inode — Detailed Structure
 
 ### Real-World Analogy
 
@@ -552,34 +552,34 @@ An inode is like a passport for a file. It carries all the identifying informati
 
 ```
 ext4 Inode (156 bytes):
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Field                â”‚ Size   â”‚ Description                  â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ i_mode               â”‚ 16-bit â”‚ File type + permissions      â”‚
-â”‚ i_uid                â”‚ 16-bit â”‚ Owner user ID                â”‚
-â”‚ i_size               â”‚ 64-bit â”‚ File size in bytes           â”‚
-â”‚ i_atime              â”‚ 64-bit â”‚ Last access time (nanosec)   â”‚
-â”‚ i_ctime              â”‚ 64-bit â”‚ Last status change time      â”‚
-â”‚ i_mtime              â”‚ 64-bit â”‚ Last modification time       â”‚
-â”‚ i_dtime              â”‚ 64-bit â”‚ Deletion time                â”‚
-â”‚ i_gid                â”‚ 16-bit â”‚ Group ID                     â”‚
-â”‚ i_links_count        â”‚ 16-bit â”‚ Hard link count              â”‚
-â”‚ i_blocks             â”‚ 64-bit â”‚ Number of 512-byte blocks    â”‚
-â”‚ i_flags              â”‚ 32-bit â”‚ File attributes (extents, etc)â”‚
-â”‚ i_block[15]          â”‚ 60 bytesâ”‚ Block pointers (ext4: extents)â”‚
-â”‚ i_generation         â”‚ 32-bit â”‚ File version (NFS)           â”‚
-â”‚ i_file_acl           â”‚ 32-bit â”‚ Extended attribute block     â”‚
-â”‚ i_size_high          â”‚ 32-bit â”‚ Upper 32 bits of size        â”‚
-â”‚ i_obso_faddr         â”‚ 32-bit â”‚ Obsolete fragment address    â”‚
-â”‚ i_extra_isize        â”‚ 16-bit â”‚ Extra inode size             â”‚
-â”‚ i_checksum_hi        â”‚ 16-bit â”‚ Upper checksum bits          â”‚
-â”‚ i_ctime_extra        â”‚ 32-bit â”‚ Extra ctime bits             â”‚
-â”‚ i_mtime_extra        â”‚ 32-bit â”‚ Extra mtime bits             â”‚
-â”‚ i_atime_extra        â”‚ 32-bit â”‚ Extra atime bits             â”‚
-â”‚ i_crtime             â”‚ 64-bit â”‚ Creation time (nanosec)      â”‚
-â”‚ i_crtime_extra       â”‚ 32-bit â”‚ Extra crtime bits            â”‚
-â”‚ i_checksum_lo        â”‚ 32-bit â”‚ Lower checksum bits          â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────────────┬────────┬──────────────────────────────┐
+│ Field                │ Size   │ Description                  │
+├──────────────────────┼────────┼──────────────────────────────┤
+│ i_mode               │ 16-bit │ File type + permissions      │
+│ i_uid                │ 16-bit │ Owner user ID                │
+│ i_size               │ 64-bit │ File size in bytes           │
+│ i_atime              │ 64-bit │ Last access time (nanosec)   │
+│ i_ctime              │ 64-bit │ Last status change time      │
+│ i_mtime              │ 64-bit │ Last modification time       │
+│ i_dtime              │ 64-bit │ Deletion time                │
+│ i_gid                │ 16-bit │ Group ID                     │
+│ i_links_count        │ 16-bit │ Hard link count              │
+│ i_blocks             │ 64-bit │ Number of 512-byte blocks    │
+│ i_flags              │ 32-bit │ File attributes (extents, etc)│
+│ i_block[15]          │ 60 bytes│ Block pointers (ext4: extents)│
+│ i_generation         │ 32-bit │ File version (NFS)           │
+│ i_file_acl           │ 32-bit │ Extended attribute block     │
+│ i_size_high          │ 32-bit │ Upper 32 bits of size        │
+│ i_obso_faddr         │ 32-bit │ Obsolete fragment address    │
+│ i_extra_isize        │ 16-bit │ Extra inode size             │
+│ i_checksum_hi        │ 16-bit │ Upper checksum bits          │
+│ i_ctime_extra        │ 32-bit │ Extra ctime bits             │
+│ i_mtime_extra        │ 32-bit │ Extra mtime bits             │
+│ i_atime_extra        │ 32-bit │ Extra atime bits             │
+│ i_crtime             │ 64-bit │ Creation time (nanosec)      │
+│ i_crtime_extra       │ 32-bit │ Extra crtime bits            │
+│ i_checksum_lo        │ 32-bit │ Lower checksum bits          │
+└──────────────────────┴────────┴──────────────────────────────┘
 ```
 
 ### Multi-Level Index Scheme
@@ -587,23 +587,23 @@ ext4 Inode (156 bytes):
 The traditional ext2/3 inode uses 15 block pointers:
 
 ```
-i_block[0..11]  â†’ 12 direct block pointers  (small files, fast access)
-i_block[12]     â†’ 1 single indirect pointer  (medium files)
-i_block[13]     â†’ 1 double indirect pointer  (large files)
-i_block[14]     â†’ 1 triple indirect pointer  (huge files)
+i_block[0..11]  → 12 direct block pointers  (small files, fast access)
+i_block[12]     → 1 single indirect pointer  (medium files)
+i_block[13]     → 1 double indirect pointer  (large files)
+i_block[14]     → 1 triple indirect pointer  (huge files)
 ```
 
 #### Maximum File Size Calculation (4 KB blocks, 4-byte pointers)
 
 | Level | Calculation | Max Size |
 |-------|-------------|----------|
-| Direct (12) | 12 Ã— 4 KB | 48 KB |
-| Single indirect | (4096/4) Ã— 4 KB = 1024 Ã— 4 KB | 4 MB |
-| Double indirect | 1024 Ã— 1024 Ã— 4 KB | 4 GB |
-| Triple indirect | 1024 Ã— 1024 Ã— 1024 Ã— 4 KB | 4 TB |
+| Direct (12) | 12 × 4 KB | 48 KB |
+| Single indirect | (4096/4) × 4 KB = 1024 × 4 KB | 4 MB |
+| Double indirect | 1024 × 1024 × 4 KB | 4 GB |
+| Triple indirect | 1024 × 1024 × 1024 × 4 KB | 4 TB |
 | **Total** | | **~4 TB + 4 GB + 4 MB + 48 KB** |
 
-### Numbered Steps â€” Inode Lookup for Read
+### Numbered Steps — Inode Lookup for Read
 
 1. The VFS receives a read request with file descriptor fd and offset.
 2. From the per-process file table, get the inode number.
@@ -611,11 +611,11 @@ i_block[14]     â†’ 1 triple indirect pointer  (huge files)
 4. Compute which logical block the offset falls in: `block_num = offset / block_size`.
 5. If block_num &lt; 12: use `i_block[block_num]` (direct pointer).
 6. If block_num &lt; 12 + 1024: compute singly indirect offset.
-7. If block_num &lt; 12 + 1024 + 1024Â²: compute doubly indirect offset.
-8. If block_num &lt; 12 + 1024 + 1024Â² + 1024Â³: compute triply indirect offset.
+7. If block_num &lt; 12 + 1024 + 1024²: compute doubly indirect offset.
+8. If block_num &lt; 12 + 1024 + 1024² + 1024³: compute triply indirect offset.
 9. Read the physical block at the computed address.
 
-### Pseudocode â€” File Read via Inode Pointers
+### Pseudocode — File Read via Inode Pointers
 
 ```
 function read_from_inode(inode, offset, count):
@@ -645,23 +645,23 @@ function read_from_inode(inode, offset, count):
     return buf
 ```
 
-### Dry Run â€” Inode Lookup for a 100 MB File
+### Dry Run — Inode Lookup for a 100 MB File
 
 Assume 4 KB blocks, 4-byte pointers (1024 per block).
 
 | Byte Offset | Logical Block | Pointer Level | Computation |
 |-------------|--------------|---------------|-------------|
-| 0 | 0 | Direct | i_block[0] â†’ block 45 |
-| 4096 | 1 | Direct | i_block[1] â†’ block 89 |
+| 0 | 0 | Direct | i_block[0] → block 45 |
+| 4096 | 1 | Direct | i_block[1] → block 89 |
 | ... | ... | Direct | ... |
-| 49152 | 12 | Single indirect | Read i_block[12] â†’ read block 200 (indirect block) â†’ entry[0] â†’ block 301 |
-| 53248 | 13 | Single indirect | indirect_block[1] â†’ block 302 |
+| 49152 | 12 | Single indirect | Read i_block[12] → read block 200 (indirect block) → entry[0] → block 301 |
+| 53248 | 13 | Single indirect | indirect_block[1] → block 302 |
 | ... | ... | Single indirect | ... |
-| 4243456 | 1036 | Single indirect | indirect_block[1023] â†’ block 1324 |
-| 4247552 | 1037 | Double indirect | Read i_block[13] â†’ dbl_indirect â†’ read block 1400 â†’ entry[0] â†’ read block 1500 (indirect) â†’ entry[0] â†’ block 1600 |
+| 4243456 | 1036 | Single indirect | indirect_block[1023] → block 1324 |
+| 4247552 | 1037 | Double indirect | Read i_block[13] → dbl_indirect → read block 1400 → entry[0] → read block 1500 (indirect) → entry[0] → block 1600 |
 | ... | ... | Double indirect | ... |
 
-### C++ Implementation â€” Inode Manager
+### C++ Implementation — Inode Manager
 
 ```cpp
 #include <iostream>
@@ -762,7 +762,7 @@ int main() {
 }
 ```
 
-### Python Implementation â€” Inode Manager
+### Python Implementation — Inode Manager
 
 ```python
 BLOCK_SIZE = 4096
@@ -816,7 +816,7 @@ if __name__ == "__main__":
     mgr.print_inode(ino)
 ```
 
-### Complexity Analysis â€” Inode Operations
+### Complexity Analysis — Inode Operations
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -828,7 +828,7 @@ if __name__ == "__main__":
 | Triple indirect lookup | O(1) | 4 block reads |
 | Inode table write to disk | O(1) | Single block write |
 
-**Why still O(1) for multi-level**: The number of indirection levels is fixed (3 for ext2/3, 1 for ext4 extents). Even triple indirect requires exactly 4 block reads â€” constant time.
+**Why still O(1) for multi-level**: The number of indirection levels is fixed (3 for ext2/3, 1 for ext4 extents). Even triple indirect requires exactly 4 block reads — constant time.
 
 ### Advantages & Disadvantages of Inode Design
 
@@ -845,7 +845,7 @@ if __name__ == "__main__":
 |-----------|--------|
 | **Inode exhaustion before block exhaustion** | Cannot create files even with free space |
 | **File larger than triple indirect max** | Returns EFBIG error |
-| **Inode 0** | Reserved â€” cannot be used for files |
+| **Inode 0** | Reserved — cannot be used for files |
 | **Hard link count overflow** | Limited to 2^16 - 1 = 65535 links |
 | **Corrupted indirect block pointer** | Points to wrong data; fsck must repair |
 
@@ -855,7 +855,7 @@ if __name__ == "__main__":
 
 ### Real-World Analogy
 
-A directory is like a phone book. The **linear list** approach is a phone book printed alphabetically â€” you scan page by page until you find the name. The **hash table** approach is a phone book with tabs â€” you go directly to the correct section.
+A directory is like a phone book. The **linear list** approach is a phone book printed alphabetically — you scan page by page until you find the name. The **hash table** approach is a phone book with tabs — you go directly to the correct section.
 
 ### 4.1 Linear List Implementation
 
@@ -863,14 +863,14 @@ A directory file contains a simple list of entries. Each entry maps a filename t
 
 ```
 Directory file (linear list):
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ inode #  â”‚ rec_len    â”‚ name_len â”‚ type â”‚ name         â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 12345    â”‚ 16         â”‚ 4        â”‚ reg  â”‚ "home"       â”‚
-â”‚ 12346    â”‚ 24         â”‚ 11       â”‚ reg  â”‚ "documents"  â”‚
-â”‚ 12347    â”‚ 40         â”‚ 4        â”‚ dir  â”‚ "docs"       â”‚
-â”‚ 12348    â”‚ 16         â”‚ 6        â”‚ reg  â”‚ "notes.txt"  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────┬────────────┬──────────┬──────┬─────────────┐
+│ inode #  │ rec_len    │ name_len │ type │ name         │
+├──────────┼────────────┼──────────┼──────┼─────────────┤
+│ 12345    │ 16         │ 4        │ reg  │ "home"       │
+│ 12346    │ 24         │ 11       │ reg  │ "documents"  │
+│ 12347    │ 40         │ 4        │ dir  │ "docs"       │
+│ 12348    │ 16         │ 6        │ reg  │ "notes.txt"  │
+└──────────┴────────────┴──────────┴──────┴─────────────┘
 ```
 
 #### Operations on Linear List
@@ -882,7 +882,7 @@ Directory file (linear list):
 | **Delete** | Mark entry as empty (or compact); O(n) |
 | **Rename** | Find entry; update name field; O(n) |
 
-#### Pseudocode â€” Linear Directory Lookup
+#### Pseudocode — Linear Directory Lookup
 
 ```
 function dir_lookup_linear(dir_inode, target_name):
@@ -902,16 +902,16 @@ A hash table stores directory entries indexed by a hash of the filename. The dir
 
 ```
 Hash Table Directory:
-â”Œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Hash â”‚ Pointer to entry (or collision chain)            â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ 0xA3 â”‚ â†’ inode=12345, name="home"                       â”‚
-â”‚ 0xB7 â”‚ â†’ inode=12347, name="docs" â†’ inode=12346, name="documents" â”‚
-â”‚ 0xC1 â”‚ â†’ inode=12348, name="notes.txt"                  â”‚
-â””â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────┬──────────────────────────────────────────────────┐
+│ Hash │ Pointer to entry (or collision chain)            │
+├──────┼──────────────────────────────────────────────────┤
+│ 0xA3 │ → inode=12345, name="home"                       │
+│ 0xB7 │ → inode=12347, name="docs" → inode=12346, name="documents" │
+│ 0xC1 │ → inode=12348, name="notes.txt"                  │
+└──────┴──────────────────────────────────────────────────┘
 ```
 
-#### Pseudocode â€” Hash Directory Lookup
+#### Pseudocode — Hash Directory Lookup
 
 ```
 function dir_lookup_hash(dir_inode, target_name):
@@ -926,7 +926,7 @@ function dir_lookup_hash(dir_inode, target_name):
     return -1
 ```
 
-### Dry Run â€” Linear Lookup vs Hash Lookup
+### Dry Run — Linear Lookup vs Hash Lookup
 
 Search for "notes.txt" in a directory with 1000 files.
 
@@ -944,10 +944,10 @@ Search for "notes.txt" in a directory with 1000 files.
 | Step | Position | Entry | Match? |
 |------|----------|-------|--------|
 | 1 | Compute hash("notes.txt") = 0xC1 | | |
-| 2 | Hash table[0xC1 % 256] â†’ entry at byte 16000 | "notes.txt" | Yes |
+| 2 | Hash table[0xC1 % 256] → entry at byte 16000 | "notes.txt" | Yes |
 | Total: 1 hash + 1 comparison | | | |
 
-### C++ Implementation â€” Directory
+### C++ Implementation — Directory
 
 ```cpp
 #include <iostream>
@@ -1051,7 +1051,7 @@ int main() {
     dir.list();
 
     uint32_t ino = dir.lookup("main.cpp");
-    std::cout << "main.cpp â†’ inode " << ino << "\n";
+    std::cout << "main.cpp → inode " << ino << "\n";
 
     dir.remove("readme.txt");
     std::cout << "After removal:\n";
@@ -1060,13 +1060,13 @@ int main() {
     HashDirectory hdir;
     hdir.add_entry(100, "readme.txt", 0);
     ino = hdir.lookup("readme.txt");
-    std::cout << "Hash lookup: readme.txt â†’ inode " << ino << "\n";
+    std::cout << "Hash lookup: readme.txt → inode " << ino << "\n";
 
     return 0;
 }
 ```
 
-### Python Implementation â€” Directory
+### Python Implementation — Directory
 
 ```python
 import hashlib
@@ -1147,7 +1147,7 @@ if __name__ == "__main__":
 |-----------|-------------|------------|
 | **Empty directory** | Single "." and ".." entries | Empty hash table |
 | **Very long filename** | Entire entry may span multiple dir blocks | Hash unaffected |
-| **Pathological hash** | N/A | All names hash to same bucket â†’ O(n) |
+| **Pathological hash** | N/A | All names hash to same bucket → O(n) |
 | **Concurrent modification** | Need coarse lock | Need per-bucket or per-entry lock |
 | **Delete + create same name** | Reuse stale entry | Same |
 | **Directory exceeds one block** | Read linked/indexed list of blocks | Same |
@@ -1160,7 +1160,7 @@ if __name__ == "__main__":
 
 ### Real-World Analogy
 
-Contiguous allocation is like a library where every book must occupy a consecutive set of shelves. If you need 5 shelves for a book, you must find 5 empty shelves in a row. When books are removed, gaps appear between other books â€” and you can't fill those gaps with a book that needs more shelves than the gap provides.
+Contiguous allocation is like a library where every book must occupy a consecutive set of shelves. If you need 5 shelves for a book, you must find 5 empty shelves in a row. When books are removed, gaps appear between other books — and you can't fill those gaps with a book that needs more shelves than the gap provides.
 
 ### How It Works
 
@@ -1175,15 +1175,15 @@ Disk Blocks: [0][1][2][3][4][5][6][7][8][9][10][11][12][13][14][15]
 ### Directory Entry (Contiguous)
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Filename  â”‚ Start Blockâ”‚ Length   â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ file.txt  â”‚ 5          â”‚ 4        â”‚
-â”‚ data.bin  â”‚ 12         â”‚ 2        â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌───────────┬────────────┬──────────┐
+│ Filename  │ Start Block│ Length   │
+├───────────┼────────────┼──────────┤
+│ file.txt  │ 5          │ 4        │
+│ data.bin  │ 12         │ 2        │
+└───────────┴────────────┴──────────┘
 ```
 
-### Numbered Steps â€” Write with Contiguous Allocation
+### Numbered Steps — Write with Contiguous Allocation
 
 1. The file system receives a request to write N blocks of data.
 2. It searches the free-space bitmap (or list) for N consecutive free blocks.
@@ -1192,7 +1192,7 @@ Disk Blocks: [0][1][2][3][4][5][6][7][8][9][10][11][12][13][14][15]
 5. It writes data sequentially to the allocated blocks.
 6. If not enough contiguous space is available, the write fails with ENOSPC.
 
-### Pseudocode â€” Contiguous Allocation
+### Pseudocode — Contiguous Allocation
 
 ```
 function allocate_contiguous(size_in_blocks):
@@ -1208,27 +1208,27 @@ function read_contiguous(file, buffer, offset, count):
     read_from_block(block, buffer)
 ```
 
-### Full Dry Run â€” External Fragmentation
+### Full Dry Run — External Fragmentation
 
 Disk has 16 blocks. Initially all free.
 
 **Step 1: Create File A (4 blocks)**
 ```
-Search: blocks 0-3 free â†’ allocate
+Search: blocks 0-3 free → allocate
 Bitmap: [1][1][1][1][0][0][0][0][0][0][0][0][0][0][0][0]
          File A
 ```
 
 **Step 2: Create File B (3 blocks)**
 ```
-Search: blocks 4-6 free â†’ allocate
+Search: blocks 4-6 free → allocate
 Bitmap: [1][1][1][1][1][1][1][0][0][0][0][0][0][0][0][0]
          File A     File B
 ```
 
 **Step 3: Create File C (5 blocks)**
 ```
-Search: blocks 7-11 free â†’ allocate
+Search: blocks 7-11 free → allocate
 Bitmap: [1][1][1][1][1][1][1][1][1][1][1][1][0][0][0][0]
          File A     File B     File C
 ```
@@ -1244,18 +1244,18 @@ Bitmap: [1][1][1][1][0][0][0][1][1][1][1][1][0][0][0][0]
 **Step 5: Create File D (4 blocks)**
 ```
 Search for 4 consecutive free blocks:
-  Groups: [4-6] size 3 â€” too small
-           [12-15] size 4 â€” fits!
+  Groups: [4-6] size 3 — too small
+           [12-15] size 4 — fits!
 Allocate blocks 12-15.
 
 Bitmap: [1][1][1][1][0][0][0][1][1][1][1][1][1][1][1][1]
          File A      GAP     File C     File D
 ```
 
-**Step 6: Create File E (4 blocks) â€” FAILS**
+**Step 6: Create File E (4 blocks) — FAILS**
 ```
 Search for 4 consecutive free blocks:
-  [4-6] size 3 â€” too small
+  [4-6] size 3 — too small
   No other group large enough.
 
 Result: ENOSPC even though 3 blocks are free!
@@ -1269,7 +1269,7 @@ After operations: 3 blocks free but unusable (cannot allocate 4-block file)
 Fragmentation = 3 wasted / 16 total = 18.75% wasted
 ```
 
-### C++ Implementation â€” Contiguous Allocation
+### C++ Implementation — Contiguous Allocation
 
 ```cpp
 #include <iostream>
@@ -1397,7 +1397,7 @@ int main() {
 }
 ```
 
-### Python Implementation â€” Contiguous Allocation
+### Python Implementation — Contiguous Allocation
 
 ```python
 class ContiguousFS:
@@ -1490,7 +1490,7 @@ if __name__ == "__main__":
     fs.print_bitmap()
 ```
 
-### Complexity Analysis â€” Contiguous Allocation
+### Complexity Analysis — Contiguous Allocation
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -1498,7 +1498,7 @@ if __name__ == "__main__":
 | Read block i | O(1) | start_block + i computed directly |
 | Write block i | O(1) | Same direct computation |
 | Delete file | O(1) | Mark N contiguous bits as free |
-| Compact FS | O(files Ã— blocks) | Must move every file's data |
+| Compact FS | O(files × blocks) | Must move every file's data |
 | Find free space (optimized) | O(N) with run-length tracking | Precompute largest hole |
 
 **Why O(1) for access**: Given start block S and block index i, physical block = S + i. This is a single addition.
@@ -1507,14 +1507,14 @@ if __name__ == "__main__":
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Sequential access | Excellent: read-ahead works perfectly | â€” |
-| Direct access | O(1) computation, no indirection | â€” |
-| Implementation | Trivial â€” just start + length | â€” |
-| Overhead | Zero per-block overhead | â€” |
-| External fragmentation | â€” | Severe: holes cannot be filled |
-| File growth | â€” | Impossible without copying entire file |
-| Space estimation | â€” | Must know file size at creation |
-| Compaction cost | â€” | Expensive, requires FS offline |
+| Sequential access | Excellent: read-ahead works perfectly | — |
+| Direct access | O(1) computation, no indirection | — |
+| Implementation | Trivial — just start + length | — |
+| Overhead | Zero per-block overhead | — |
+| External fragmentation | — | Severe: holes cannot be filled |
+| File growth | — | Impossible without copying entire file |
+| Space estimation | — | Must know file size at creation |
+| Compaction cost | — | Expensive, requires FS offline |
 
 ### Edge Cases
 
@@ -1524,7 +1524,7 @@ if __name__ == "__main__":
 | **File growth beyond allocation** | Must allocate new location and copy entire file |
 | **Very large file** | May not find enough contiguous blocks |
 | **Creating many small files** | Works well until deletions create fragmentation |
-| **Compaction during active use** | Dangerous â€” must suspend all I/O |
+| **Compaction during active use** | Dangerous — must suspend all I/O |
 | **File size zero** | Can store as empty (start=0, len=0) or special flag |
 
 ---
@@ -1533,7 +1533,7 @@ if __name__ == "__main__":
 
 ### Real-World Analogy
 
-Linked allocation is like a treasure hunt. Each clue (block) tells you where to find the next clue. You must follow the chain from start to end â€” you cannot skip ahead. If you want clue #50, you must read clues 1 through 49 first.
+Linked allocation is like a treasure hunt. Each clue (block) tells you where to find the next clue. You must follow the chain from start to end — you cannot skip ahead. If you want clue #50, you must read clues 1 through 49 first.
 
 ### How It Works
 
@@ -1541,14 +1541,14 @@ Each block contains a pointer to the next block in the file. The directory entry
 
 ```
 Linked Allocation Layout:
-Directory:  file.txt â†’ start=7, end=23
+Directory:  file.txt → start=7, end=23
 
-Block 7:  [data... | nextâ†’23]
-Block 23: [data... | nextâ†’17]
-Block 17: [data... | nextâ†’â†’0]  (end, next = 0 or -1)
+Block 7:  [data... | next→23]
+Block 23: [data... | next→17]
+Block 17: [data... | next→→0]  (end, next = 0 or -1)
 ```
 
-### Numbered Steps â€” Read with Linked Allocation
+### Numbered Steps — Read with Linked Allocation
 
 1. Look up the file in the directory, get the starting block number (e.g., 7).
 2. Read block 7 from disk.
@@ -1557,7 +1557,7 @@ Block 17: [data... | nextâ†’â†’0]  (end, next = 0 or -1)
 5. If next pointer is 0 (or -1), we have reached the end of the file.
 6. Otherwise, read the next block and repeat.
 
-### Pseudocode â€” Linked Allocation
+### Pseudocode — Linked Allocation
 
 ```
 function read_linked_file(file_entry, buffer):
@@ -1570,33 +1570,33 @@ function read_linked_file(file_entry, buffer):
         current_block = next_block
 
 function read_block_at_position(file_entry, position):
-    // Direct access NOT supported â€” must walk chain
+    // Direct access NOT supported — must walk chain
     current = file_entry.start_block
     for i = 1 to position:
         current = read_next_pointer(current)
     return read_block(current)
 ```
 
-### Full Dry Run â€” Linked Allocation Walk
+### Full Dry Run — Linked Allocation Walk
 
 Assume 512-byte blocks, 4-byte next pointer (508 bytes data per block).
 
-**File "report.txt" â€” directory: start=3**
+**File "report.txt" — directory: start=3**
 
 | Step | Current Block | Read Next Pointer | Data Bytes Accumulated |
 |------|--------------|-------------------|----------------------|
-| 1 | 3 | â†’ 8 | 508 |
-| 2 | 8 | â†’ 15 | 1016 |
-| 3 | 15 | â†’ 22 | 1524 |
-| 4 | 22 | â†’ 31 | 2032 |
-| 5 | 31 | â†’ 42 | 2540 |
-| 6 | 42 | â†’ -1 (end) | 3048 |
+| 1 | 3 | → 8 | 508 |
+| 2 | 8 | → 15 | 1016 |
+| 3 | 15 | → 22 | 1524 |
+| 4 | 22 | → 31 | 2032 |
+| 5 | 31 | → 42 | 2540 |
+| 6 | 42 | → -1 (end) | 3048 |
 | Total data: 3048 bytes, 6 blocks, 5 chain walks | | | |
 
 **To reach byte 2000 (logical block 3):**
 ```
 Position = 2000 / 508 = block index 3
-Walk: 3 â†’ 8 â†’ 15 â†’ 22 (3 pointer dereferences)
+Walk: 3 → 8 → 15 → 22 (3 pointer dereferences)
 Data read from block 22 at offset 2000 - 3*508 = 2000 - 1524 = 476
 ```
 
@@ -1610,13 +1610,13 @@ Index: 0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
 Value: -1  -1  -1   8  -1  -1  -1  15  22  -1  -1  -1  -1  -1  -1  -1
 
 File: report.txt at FAT[3]:
-  Block 3 â†’ FAT[3] = 8 â†’ read block 8
-  Block 8 â†’ FAT[8] = 22 â†’ read block 22
-  Block 22 â†’ FAT[22] = -1 â†’ end
+  Block 3 → FAT[3] = 8 → read block 8
+  Block 8 → FAT[8] = 22 → read block 22
+  Block 22 → FAT[22] = -1 → end
 
 File: data.bin at FAT[7]:
-  Block 7 â†’ FAT[7] = 15 â†’ read block 15
-  Block 15 â†’ FAT[15] = -1 â†’ end
+  Block 7 → FAT[7] = 15 → read block 15
+  Block 15 → FAT[15] = -1 → end
 ```
 
 #### FAT Variants
@@ -1641,10 +1641,10 @@ function read_block_fat(start_cluster, target_index, fat_table):
     return current
 
 // For file at start=3, read logical block 3:
-// FAT[3] = 8, FAT[8] = 22, FAT[22] = 31 â†’ cluster 31
+// FAT[3] = 8, FAT[8] = 22, FAT[22] = 31 → cluster 31
 ```
 
-### C++ Implementation â€” Linked Allocation & FAT
+### C++ Implementation — Linked Allocation & FAT
 
 ```cpp
 #include <iostream>
@@ -1778,7 +1778,7 @@ public:
                 while (cur >= 0) {
                     std::cout << cur;
                     cur = read_next_pointer(cur);
-                    if (cur >= 0) std::cout << " â†’ ";
+                    if (cur >= 0) std::cout << " → ";
                     idx++;
                 }
                 std::cout << " (end, " << idx << " blocks)\n";
@@ -1792,7 +1792,7 @@ class FATFS {
     static const int NUM_CLUSTERS = 256;
     int fat[NUM_CLUSTERS];  // -1 = free, -2 = reserved, -3 = end, 0+ = next
     char disk[NUM_CLUSTERS][BLOCK_SIZE];
-    std::unordered_map<std::string, int> directory;  // name â†’ first cluster
+    std::unordered_map<std::string, int> directory;  // name → first cluster
 
 public:
     FATFS() {
@@ -1890,7 +1890,7 @@ int main() {
 }
 ```
 
-### Python Implementation â€” Linked Allocation & FAT
+### Python Implementation — Linked Allocation & FAT
 
 ```python
 import struct
@@ -1972,7 +1972,7 @@ class LinkedFS:
         while cur >= 0:
             chain.append(cur)
             cur = self._read_next(cur)
-        print(f"Chain for '{name}': {' â†’ '.join(map(str, chain))} ({len(chain)} blocks)")
+        print(f"Chain for '{name}': {' → '.join(map(str, chain))} ({len(chain)} blocks)")
 
     def print_fat_style(self):
         print("\nFAT-style table (blocks 0-31):")
@@ -1992,7 +1992,7 @@ class FATFS:
     def __init__(self, num_clusters=256):
         self.fat = [-1] * num_clusters  # -1 = free, -3 = end
         self.disk = bytearray(num_clusters * BLOCK_SIZE)
-        self.dir = {}  # name â†’ first cluster
+        self.dir = {}  # name → first cluster
 
     def _alloc(self):
         for i, v in enumerate(self.fat):
@@ -2061,7 +2061,7 @@ if __name__ == "__main__":
     print(f"First cluster: {cl}")
 ```
 
-### Complexity Analysis â€” Linked Allocation
+### Complexity Analysis — Linked Allocation
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -2078,12 +2078,12 @@ if __name__ == "__main__":
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Fragmentation | None external â€” any free block works | Internal: 4 bytes per block for pointer |
-| File growth | Trivial: just add blocks | â€” |
+| Fragmentation | None external — any free block works | Internal: 4 bytes per block for pointer |
+| File growth | Trivial: just add blocks | — |
 | Space utilization | No compaction needed | 0.78% overhead (4/512) per block |
-| Sequential access | Good with read-ahead | â€” |
-| Direct access | â€” | O(n) even with FAT |
-| Reliability | â€” | One bad pointer loses rest of file |
+| Sequential access | Good with read-ahead | — |
+| Direct access | — | O(n) even with FAT |
+| Reliability | — | One bad pointer loses rest of file |
 | Pointer storage | No separate structure (linked) | FAT requires separate disk area |
 
 ### Edge Cases
@@ -2111,15 +2111,15 @@ Each file has an **index block** containing an array of pointers to data blocks.
 
 ```
 Indexed Allocation:
-Directory: file.txt â†’ index_block = 8
+Directory: file.txt → index_block = 8
 
 Index Block 8: [19][ 7][32][15][ 0][ 4][...  1024 entries]
-                â”‚   â”‚   â”‚   â”‚   â”‚   â”‚
-                â–¼   â–¼   â–¼   â–¼   â–¼   â–¼
+                │   │   │   │   │   │
+                ▼   ▼   ▼   ▼   ▼   ▼
 Data Blocks:   19   7  32  15   0   4 ...
 ```
 
-### Numbered Steps â€” Read with Indexed Allocation
+### Numbered Steps — Read with Indexed Allocation
 
 1. Look up the file, get the index block number (e.g., 8).
 2. Read the index block from disk.
@@ -2128,7 +2128,7 @@ Data Blocks:   19   7  32  15   0   4 ...
 5. Read the data block at that pointer.
 6. Copy the relevant bytes to the output.
 
-### Pseudocode â€” Indexed Allocation
+### Pseudocode — Indexed Allocation
 
 ```
 function read_indexed_file(index_block_num, offset, count):
@@ -2153,52 +2153,52 @@ function write_indexed_file(index_block_num, data):
     write_block(index_block_num, index_block)
 ```
 
-### Full Dry Run â€” Small File (1 block)
+### Full Dry Run — Small File (1 block)
 
-File "readme.txt" â€” 500 bytes (fits in 1 block).
+File "readme.txt" — 500 bytes (fits in 1 block).
 
 ```
-1. Directory entry: "readme.txt" â†’ inode #42
+1. Directory entry: "readme.txt" → inode #42
 2. Inode 42 does NOT have indexed allocation (direct pointers used instead)
-3. i_block[0] = 15 â†’ read data block 15
+3. i_block[0] = 15 → read data block 15
 4. Copy 500 bytes from block 15
 Blocks used: 1 data block + 0 index blocks (direct pointer in inode)
 Overhead: 0 extra blocks
 ```
 
-### Full Dry Run â€” Medium File (100 blocks)
+### Full Dry Run — Medium File (100 blocks)
 
-File "data.log" â€” 400 KB (100 blocks Ã— 4 KB).
+File "data.log" — 400 KB (100 blocks × 4 KB).
 
 ```
-1. Directory: "data.log" â†’ inode #55
-2. Inode 55: i_block[0..11] â†’ 12 direct pointers
-              i_block[12] â†’ single indirect block #200
-3. Blocks 0-11: direct â†’ read in 1 step each
+1. Directory: "data.log" → inode #55
+2. Inode 55: i_block[0..11] → 12 direct pointers
+              i_block[12] → single indirect block #200
+3. Blocks 0-11: direct → read in 1 step each
 4. Block 12+: read index block 200, get data block pointers
 5. Total index blocks: 1 (single indirect)
 Overhead: 1 block for 100 data blocks = 1% overhead
 ```
 
-### Full Dry Run â€” Large File (2000 blocks)
+### Full Dry Run — Large File (2000 blocks)
 
-File "video.mp4" â€” 8 MB (2000 blocks Ã— 4 KB).
+File "video.mp4" — 8 MB (2000 blocks × 4 KB).
 
 ```
-1. Directory: "video.mp4" â†’ inode #88
-2. inode.i_block[0..11] â†’ 12 direct (blocks 0-11)
-   inode.i_block[12] â†’ single indirect block #400
+1. Directory: "video.mp4" → inode #88
+2. inode.i_block[0..11] → 12 direct (blocks 0-11)
+   inode.i_block[12] → single indirect block #400
      Single indirect block 400 contains 1024 pointers (blocks 12-1035)
-   inode.i_block[13] â†’ double indirect block #500
-     Double indirect block 500 â†’ reads indirect block #600
+   inode.i_block[13] → double indirect block #500
+     Double indirect block 500 → reads indirect block #600
        Indirect block 600 contains pointers (blocks 1036-1999)
 3. For block #1500:
-   â†’ not in direct (0-11)
-   â†’ not in single indirect (12-1035)
-   â†’ double indirect: entry (1500 - 12 - 1024) = 464
-   â†’ read double indirect block 500 â†’ entry[0] = 600 (since 464 < 1024)
-   â†’ read single indirect block 600 â†’ entry[464] = 890
-   â†’ read data block 890
+   → not in direct (0-11)
+   → not in single indirect (12-1035)
+   → double indirect: entry (1500 - 12 - 1024) = 464
+   → read double indirect block 500 → entry[0] = 600 (since 464 < 1024)
+   → read single indirect block 600 → entry[464] = 890
+   → read data block 890
 4. Total reads for block 1500: index_block(500) + indirect_block(600) + data(890) = 3 reads
 Overhead: 1 single + 1 double + 1 indirect = 3 index blocks for 2000 data blocks = 0.15% overhead
 ```
@@ -2211,11 +2211,11 @@ An index block is too small to hold all pointers. Multiple index blocks are link
 
 ```
 Linked Index Blocks:
-Index Block 1: [p1][p2][p3]...[p1023] â†’ Index Block 2
-Index Block 2: [p1024][p1025]...[p2047] â†’ Index Block 3
+Index Block 1: [p1][p2][p3]...[p1023] → Index Block 2
+Index Block 2: [p1024][p1025]...[p2047] → Index Block 3
 ```
 
-**Max file size**: `(pointers_per_block^2) Ã— block_size` â€” very large.
+**Max file size**: `(pointers_per_block^2) × block_size` — very large.
 **Drawback**: Large files require O(n) index block reads for the last block.
 
 #### 5.4.2 Multilevel Indexed Allocation
@@ -2224,15 +2224,15 @@ Index blocks point to other index blocks, forming a tree. The Unix inode uses th
 
 ```
 Multilevel Index (Unix inode):
-inode â†’ [direct 0..11] â†’ data blocks (12)
-      â†’ [single indirect] â†’ [indirect block] â†’ data blocks (1024)
-      â†’ [double indirect] â†’ [indirect block] â†’ [indirect block] â†’ data (1024Â²)
-      â†’ [triple indirect] â†’ [indirect] â†’ [indirect] â†’ [indirect] â†’ data (1024Â³)
+inode → [direct 0..11] → data blocks (12)
+      → [single indirect] → [indirect block] → data blocks (1024)
+      → [double indirect] → [indirect block] → [indirect block] → data (1024²)
+      → [triple indirect] → [indirect] → [indirect] → [indirect] → data (1024³)
 ```
 
 **Max file size (4 KB blocks, 4-byte pointers):**
 ```
-12 Ã— 4 KB + 1024 Ã— 4 KB + 1024Â² Ã— 4 KB + 1024Â³ Ã— 4 KB â‰ˆ 4 TB
+12 × 4 KB + 1024 × 4 KB + 1024² × 4 KB + 1024³ × 4 KB ≈ 4 TB
 ```
 
 #### 5.4.3 Combined Scheme (Unix Inode / ext4 Extents)
@@ -2251,7 +2251,7 @@ struct ext4_extent {
 
 A single extent can describe up to 32,768 contiguous blocks (128 MB with 4 KB blocks). One inode can store 4 extents directly. If more are needed, a extent tree (B-tree) is used.
 
-### C++ Implementation â€” Indexed Allocation
+### C++ Implementation — Indexed Allocation
 
 ```cpp
 #include <iostream>
@@ -2399,7 +2399,7 @@ int main() {
 }
 ```
 
-### Python Implementation â€” Indexed Allocation
+### Python Implementation — Indexed Allocation
 
 ```python
 import struct
@@ -2459,7 +2459,7 @@ class IndexedFS:
         return bytes(result).rstrip(b'\x00')
 
     def read_block_direct(self, name, block_idx):
-        """Direct access â€” O(1) via index block"""
+        """Direct access — O(1) via index block"""
         if name not in self.files:
             return None
         idx = self.files[name]
@@ -2582,7 +2582,7 @@ if __name__ == "__main__":
     mfs.print_inode("medium.bin")
 ```
 
-### Complexity Analysis â€” Indexed Allocation
+### Complexity Analysis — Indexed Allocation
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -2599,18 +2599,18 @@ if __name__ == "__main__":
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Direct access | O(1) via index block | â€” |
+| Direct access | O(1) via index block | — |
 | Fragmentation | No external fragmentation | Internal: index block overhead |
 | File growth | Easy to add blocks | May need new index block |
-| Small files | â€” | Waste: full index block for tiny file |
+| Small files | — | Waste: full index block for tiny file |
 | Large files | Multi-level handles huge sizes | Multiple indirection reads |
-| Space overhead | â€” | 1 full block per file minimum |
+| Space overhead | — | 1 full block per file minimum |
 
 ### Edge Cases
 
 | Edge Case | Behavior |
 |-----------|----------|
-| **Small file (1 block)** | Uses entire index block (4096 bytes for 1 data block) â€” 100% overhead |
+| **Small file (1 block)** | Uses entire index block (4096 bytes for 1 data block) — 100% overhead |
 | **Index block exhaustion** | Must link to another index block or use multi-level |
 | **Corrupted index block** | Entire file becomes inaccessible |
 | **Very large file** | Multi-level pointers add latency but work |
@@ -2627,7 +2627,7 @@ if __name__ == "__main__":
 | **Contiguous** | Rows of lockers: each person gets a consecutive set. Moving requires finding a new row. |
 | **Linked (FAT)** | Treasure hunt: each clue points to the next. FAT = a master map showing all clue connections. |
 | **Indexed** | Library catalog: one card per book listing all shelf locations. |
-| **Multi-level (Unix)** | Filing cabinet: drawer tabs â†’ folder tabs â†’ document pages. |
+| **Multi-level (Unix)** | Filing cabinet: drawer tabs → folder tabs → document pages. |
 
 ### Full Comparison Table
 
@@ -2639,7 +2639,7 @@ if __name__ == "__main__":
 | **Sequential access** | Excellent | Good | Good | Good | Good |
 | **File growth** | Impossible without copy | Trivial (append link) | Trivial (FAT update) | Easy (add to index) | Easy |
 | **Space overhead** | None | 4-8 bytes/block | FAT size (fixed) | 1 block/file | Multiple blocks for large files |
-| **Maximum file size** | Largest free hole | No limit | Volume size | PPB Ã— block_size | (PPB^levels) Ã— block_size |
+| **Maximum file size** | Largest free hole | No limit | Volume size | PPB × block_size | (PPB^levels) × block_size |
 | **Reliability** | Good | Poor (chain breaks) | Better (FAT on disk) | Good (index separate) | Moderate (tree pointers) |
 | **Implementation** | Simplest | Simple | Moderate | Moderate | Complex |
 | **Real-world use** | Rare (obsolete) | Obsolete | FAT32, exFAT | Some embedded FS | ext2/3/4, UFS, XFS |
@@ -2660,7 +2660,7 @@ if __name__ == "__main__":
 
 ### Real-World Analogy
 
-Managing free space on disk is like a hotel's room availability system. The **bit vector** is a giant whiteboard with green/red magnets for each room. The **linked list** is a concierge who asks each empty room "which room is also empty?" The **grouping** method is a list of lists â€” the concierge has a card with 50 rooms, and each of those rooms has a card with 50 more. **Counting** tracks runs of adjacent empty rooms for contiguous allocation.
+Managing free space on disk is like a hotel's room availability system. The **bit vector** is a giant whiteboard with green/red magnets for each room. The **linked list** is a concierge who asks each empty room "which room is also empty?" The **grouping** method is a list of lists — the concierge has a card with 50 rooms, and each of those rooms has a card with 50 more. **Counting** tracks runs of adjacent empty rooms for contiguous allocation.
 
 ### 7.1 Bit Vector (Bitmap)
 
@@ -2675,7 +2675,7 @@ One bit per block: 1 = free, 0 = allocated.
 | 1 TB | 1 KB | 1,073,741,824 | 128 MB |
 | 16 TB | 4 KB | 4,294,967,296 | 512 MB |
 
-#### Pseudocode â€” Bitmap Operations
+#### Pseudocode — Bitmap Operations
 
 ```
 function find_first_free(bitmap):
@@ -2710,10 +2710,10 @@ function mark_free(bitmap, block):
 Free blocks form a linked list. The superblock stores a pointer to the first free block.
 
 ```
-Superblock â†’ FreeBlock_1 â†’ FreeBlock_5 â†’ FreeBlock_12 â†’ FreeBlock_33 â†’ ...
+Superblock → FreeBlock_1 → FreeBlock_5 → FreeBlock_12 → FreeBlock_33 → ...
 ```
 
-#### Pseudocode â€” Free List
+#### Pseudocode — Free List
 
 ```
 function allocate_from_list():
@@ -2734,7 +2734,7 @@ Store pointers to free blocks **inside** free blocks. The first free block conta
 
 ```
 Grouping:
-Superblock â†’ FreeBlock_A [ptr to B, ptr to C, ptr to D, ..., ptr to N, next â†’ FreeBlock_X]
+Superblock → FreeBlock_A [ptr to B, ptr to C, ptr to D, ..., ptr to N, next → FreeBlock_X]
 FreeBlock_X  [ptr to Y, ptr to Z, ...]
 ```
 
@@ -2746,12 +2746,12 @@ Track **extents** (runs of consecutive free blocks). Each entry stores a startin
 
 ```
 Counting table:
-(start=10, len=5)  â†’ free blocks 10,11,12,13,14
-(start=30, len=3)  â†’ free blocks 30,31,32
-(start=100, len=20) â†’ free blocks 100-119
+(start=10, len=5)  → free blocks 10,11,12,13,14
+(start=30, len=3)  → free blocks 30,31,32
+(start=100, len=20) → free blocks 100-119
 ```
 
-#### Pseudocode â€” Counting
+#### Pseudocode — Counting
 
 ```
 function allocate_counting(count_needed):
@@ -2768,7 +2768,7 @@ function free_counting(block, count):
     otherwise add new extent (block, count)
 ```
 
-### C++ Implementation â€” Four Free Space Managers
+### C++ Implementation — Four Free Space Managers
 
 ```cpp
 #include <iostream>
@@ -3009,7 +3009,7 @@ int main() {
 }
 ```
 
-### Python Implementation â€” Four Free Space Managers
+### Python Implementation — Four Free Space Managers
 
 ```python
 # 1. Bitmap Free Space
@@ -3166,7 +3166,7 @@ if __name__ == "__main__":
 | **Grouping** | O(1) avg | O(1) amortized | Low (1 ptr/group) | Frequent alloc/free | Memory constrained |
 | **Counting** | O(extents) | O(extents) merge | Low (per-extent) | Contiguous allocation | Highly fragmented disk |
 
-### Complexity Analysis â€” Why
+### Complexity Analysis — Why
 
 | Method | Allocation Complexity | Why |
 |--------|----------------------|-----|
@@ -3176,11 +3176,11 @@ if __name__ == "__main__":
 | Grouping | O(1) | Pop from in-memory group |
 | Counting | O(extents) | Scan extent list (small) |
 
-**Why linked list is O(1)**: The head pointer is stored in the superblock. Dequeue it and update â€” two pointer operations regardless of list size.
+**Why linked list is O(1)**: The head pointer is stored in the superblock. Dequeue it and update — two pointer operations regardless of list size.
 
 **Why bitmap can be slow**: For a 1 TB disk, scanning 268 million bits looking for a free block is expensive. Real systems use block-group-local bitmaps to keep each scan small.
 
-### Edge Cases â€” Free Space
+### Edge Cases — Free Space
 
 | Edge Case | Bitmap | Linked List | Counting |
 |-----------|--------|-------------|----------|
@@ -3195,7 +3195,7 @@ if __name__ == "__main__":
 
 ## 8. Interview Corner
 
-### Q1: FAT vs Inode â€” Key Differences
+### Q1: FAT vs Inode — Key Differences
 
 | Aspect | FAT (File Allocation Table) | Inode (Unix) |
 |--------|---------------------------|-------------|
@@ -3210,7 +3210,7 @@ if __name__ == "__main__":
 | **Performance** | FAT cached in memory is fast | Multi-level can require multiple I/Os |
 | **Used by** | MS-DOS, Windows (legacy), USB | Linux, BSD, macOS |
 
-### Q2: Block Size vs Performance â€” Tradeoff
+### Q2: Block Size vs Performance — Tradeoff
 
 | Block Size | Small Files | Large Files | Space Waste | Throughput |
 |-----------|------------|------------|-------------|-------------|
@@ -3233,7 +3233,7 @@ if __name__ == "__main__":
 |-----------|------|-------------|
 | Superblock + backups | ~1 MB | 0.001% |
 | Block group descriptors | ~8 MB | 0.008% |
-| Inode table (128 bytes Ã— number of inodes) | ~200 MB (1.6M inodes) | 0.2% |
+| Inode table (128 bytes × number of inodes) | ~200 MB (1.6M inodes) | 0.2% |
 | Block bitmap (1 bit per block) | ~3 MB | 0.003% |
 | Inode bitmap (1 bit per inode) | ~0.2 MB | 0.0002% |
 | Journal (default 128 MB) | ~128 MB | 0.128% |
@@ -3245,7 +3245,7 @@ if __name__ == "__main__":
 - MFT entry (1 KB per file/directory)
 - $Bitmap, $LogFile, $Volume, $AttrDef, etc. (system metadata files)
 
-**Key insight**: The biggest waste is not metadata â€” it's internal fragmentation. A 10-byte file wastes 4,086 bytes in a 4 KB block.
+**Key insight**: The biggest waste is not metadata — it's internal fragmentation. A 10-byte file wastes 4,086 bytes in a 4 KB block.
 
 ### Q4: How Does `stat` Work?
 
@@ -3281,15 +3281,15 @@ Change: 2024-01-10 14:22:00.000000000 +0100
 
 ### Q6: Sparse Files
 
-A **sparse file** is a file with "holes" â€” regions that were never written. Reading a hole returns zeros. The file system does not allocate disk blocks for holes.
+A **sparse file** is a file with "holes" — regions that were never written. Reading a hole returns zeros. The file system does not allocate disk blocks for holes.
 
 ```
 Sparse file (100 GB logical, 4 KB actual):
 Logical blocks: [0][1][2][3][4][5]...[25,000,000]...[26,214,399]
-                â”Œâ”€â”€â”€â”€â”€â”€â”                                    â”Œâ”€â”€â”€â”€â”€â”€â”
-                â”‚ 4 KB â”‚  hole (no blocks allocated)         â”‚ 4 KB â”‚
-                â”‚ data â”‚  reads as zeros                     â”‚ data â”‚
-                â””â”€â”€â”€â”€â”€â”€â”˜                                    â””â”€â”€â”€â”€â”€â”€â”˜
+                ┌──────┐                                    ┌──────┐
+                │ 4 KB │  hole (no blocks allocated)         │ 4 KB │
+                │ data │  reads as zeros                     │ data │
+                └──────┘                                    └──────┘
 ```
 
 **Creating a sparse file:**
@@ -3317,7 +3317,7 @@ The `df` command reports total blocks, used blocks, and available blocks. The di
 
 | Feature | ext4 Implementation |
 |---------|-------------------|
-| **Directory** | Htree (B-tree on hash of filename) â€” O(log n) lookup |
+| **Directory** | Htree (B-tree on hash of filename) — O(log n) lookup |
 | **Inode** | 156 bytes; extents instead of block pointers |
 | **Block allocation** | Extent-based: multi-block allocator |
 | **Free space** | Per-block-group bitmap |
@@ -3327,39 +3327,39 @@ The `df` command reports total blocks, used blocks, and available blocks. The di
 
 **ext4 extent tree:**
 ```
-Inode.i_block[0..3] â†’ extent header + 4 extent entries
+Inode.i_block[0..3] → extent header + 4 extent entries
                  Each extent: (start block, length, physical start)
-If 4 extents not enough â†’ extent tree in data blocks (depth 1-2)
+If 4 extents not enough → extent tree in data blocks (depth 1-2)
 ```
 
 ### 9.2 NTFS (Windows)
 
 | Feature | NTFS Implementation |
 |---------|-------------------|
-| **Directory** | B-tree â€” O(log n) lookup |
+| **Directory** | B-tree — O(log n) lookup |
 | **Master File Table (MFT)** | Array of 1 KB records, each describing one file |
 | **File records** | Small files stored directly in MFT record (resident data) |
 | **Block pointers** | Extent-based: run-length encoding of contiguous ranges |
 | **Free space** | $Bitmap file (one bit per cluster) |
-| **Journaling** | $LogFile â€” redo/undo logging |
+| **Journaling** | $LogFile — redo/undo logging |
 | **Max file size** | 16 EB (theoretically), 256 TB practically |
 
 **NTFS MFT record layout:**
 ```
 MFT Record (1 KB):
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ FILE header (magic "FILE")      â”‚  â† 42 bytes
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Fixup array                     â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚ Attribute: $STANDARD_INFORMATIONâ”‚  â† timestamps, permissions
-â”‚ Attribute: $FILE_NAME           â”‚  â† filename (Unicode)
-â”‚ Attribute: $DATA (resident)     â”‚  â† tiny file stored here!
-â”‚ Attribute: $DATA (non-resident) â”‚  â† run-list for large files
-â”‚ Attribute: $BITMAP              â”‚  â† for directories
-â”‚ ...                             â”‚
-â”‚ Attribute: $END                 â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────┐
+│ FILE header (magic "FILE")      │  ← 42 bytes
+├─────────────────────────────────┤
+│ Fixup array                     │
+├─────────────────────────────────┤
+│ Attribute: $STANDARD_INFORMATION│  ← timestamps, permissions
+│ Attribute: $FILE_NAME           │  ← filename (Unicode)
+│ Attribute: $DATA (resident)     │  ← tiny file stored here!
+│ Attribute: $DATA (non-resident) │  ← run-list for large files
+│ Attribute: $BITMAP              │  ← for directories
+│ ...                             │
+│ Attribute: $END                 │
+└─────────────────────────────────┘
 ```
 
 **Resident vs non-resident data:**
@@ -3400,10 +3400,10 @@ The OS maintains a cache of recently accessed disk blocks in memory. The **page 
 
 ```
 Application:   read(fd, buf, 1024)
-                   â†“
+                   ↓
 Page Cache:   Check if block is cached
-              â”œâ”€â”€ Hit:  copy from cache â†’ return
-              â””â”€â”€ Miss: read from disk â†’ add to cache â†’ copy â†’ return
+              ├── Hit:  copy from cache → return
+              └── Miss: read from disk → add to cache → copy → return
 ```
 
 ### Read-Ahead
@@ -3460,7 +3460,7 @@ If the system crashes during step 3:
 // Simulated disk
 char disk[NUM_BLOCKS][BLOCK_SIZE];
 
-// Bitmap â€” one bit per block
+// Bitmap — one bit per block
 unsigned char free_blocks[NUM_BLOCKS / 8];
 
 typedef struct {
@@ -3572,7 +3572,7 @@ drwxr-xr-x  4 user user 4096 Jan 15 11:00 ..
 
 # A 8192-byte file uses 2 blocks of 4096 bytes
 # With linked allocation (4-byte pointers):
-# Block A: [4092 bytes data][â†’ Block B]
+# Block A: [4092 bytes data][→ Block B]
 # Block B: [4092 bytes data][END]
 ```
 
@@ -3601,12 +3601,12 @@ $ debugfs -R "stat /etc/passwd" /dev/sda1
 | Term | Definition |
 |------|------------|
 | **Superblock** | FS metadata: size, block count, free-block count, inode count |
-| **Inode** | Index node â€” metadata + block pointers |
-| **FAT** | File Allocation Table â€” linked-list table cached in memory |
+| **Inode** | Index node — metadata + block pointers |
+| **FAT** | File Allocation Table — linked-list table cached in memory |
 | **Bit Vector** | Bitmap where each bit = free (1) or used (0) block |
 | **Multi-Level Index** | Inode indirect block pointers (single/double/triple) |
 | **Extent** | Contiguous block range (start + length) |
-| **MFT** | Master File Table â€” NTFS per-file record |
+| **MFT** | Master File Table — NTFS per-file record |
 | **Journal** | Write-ahead log for crash recovery |
 | **Sparse file** | File with unallocated holes (reads zeros) |
 | **Block group** | ext4 subdivision with local bitmap + inode table |
@@ -3684,7 +3684,7 @@ $ debugfs -R "stat /etc/passwd" /dev/sda1
 
 **Answers:** 1-a, 2-b, 3-b, 4-d, 5-b, 6-b, 7-b, 8-b, 9-b, 10-c
 
-## TypeScript Implementation â€” Journaling File System Simulator
+## TypeScript Implementation — Journaling File System Simulator
 
 ```typescript
 /**
@@ -3807,7 +3807,7 @@ class JournalingFileSystem {
   status(): void {
     console.log('\n=== File System State ===');
     if (this.files.size === 0) {
-      console.log('  (empty â€” no files)');
+      console.log('  (empty — no files)');
     } else {
       for (const [path, data] of this.files) {
         console.log(`  ${path}: ${data.content.substring(0, 40)}...`);
@@ -3888,7 +3888,7 @@ jfs.status();
 
 15. **Extent tree visualizer**: For ext4 files using extents, write a program that reads the extent tree from an inode and prints each extent's logical block, physical block, and length. Show how a fragmented file's extent tree differs from a contiguous file's.
 
-16. **Bitmap allocator simulator**: Implement a bitmap-based block allocator in TypeScript. Support `allocate(n)` â€” finds `n` contiguous free blocks (first-fit), and `free(blockNum, n)` â€” marks them as free. Simulate a workload of 100 random allocate/free operations. Track fragmentation percentage over time.
+16. **Bitmap allocator simulator**: Implement a bitmap-based block allocator in TypeScript. Support `allocate(n)` — finds `n` contiguous free blocks (first-fit), and `free(blockNum, n)` — marks them as free. Simulate a workload of 100 random allocate/free operations. Track fragmentation percentage over time.
 
 17. **Resident data analyzer**: Write a program that identifies which files in an NTFS volume have resident data (stored directly in the MFT record). Compare the distribution of resident vs non-resident files by file size. What is the maximum size for resident data in NTFS?
 
@@ -3896,7 +3896,7 @@ jfs.status();
 
 19. **fsck simulation**: Write a simplified file system checker that validates: inode-bitmap consistency (every inode referenced by a directory is marked used), block-bitmap consistency (every block referenced by an inode is marked used), directory entry validity (every entry points to a valid inode), and link count accuracy. Report all inconsistencies found.
 
-20. **Sparse file support**: Extend the inode-based file system simulator to support sparse files â€” files with unallocated blocks (holes). A hole read returns zeros without consuming disk space. Implement `seek` beyond end-of-file to create holes. Track the difference between logical file size and physical block allocation.
+20. **Sparse file support**: Extend the inode-based file system simulator to support sparse files — files with unallocated blocks (holes). A hole read returns zeros without consuming disk space. Implement `seek` beyond end-of-file to create holes. Track the difference between logical file size and physical block allocation.
 
 21. **Superblock backup comparison**: Write a program that reads the primary superblock and all backup superblocks from an ext4 file system. Compare the fields and report any discrepancies. Explain the significance of backup superblocks for recovery.
 
@@ -3904,5 +3904,5 @@ jfs.status();
 
 23. **Group descriptor analyzer**: Write a program that reads all block group descriptors from an ext4 file system. For each block group, print: block bitmap location, inode bitmap location, inode table location, free blocks count, free inodes count, and used directory count. Visualize the block group layout.
 
-24. **File system aging simulation**: Simulate a file system over time â€” starting empty, then performing 10,000 file create/delete operations. Track: number of free extents of each size, fragmentation percentage, average allocation latency, time to find a contiguous block of a given size. Show how the system degrades and when compaction would help.
+24. **File system aging simulation**: Simulate a file system over time — starting empty, then performing 10,000 file create/delete operations. Track: number of free extents of each size, fragmentation percentage, average allocation latency, time to find a contiguous block of a given size. Show how the system degrades and when compaction would help.
 

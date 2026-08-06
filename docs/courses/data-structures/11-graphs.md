@@ -1,4 +1,4 @@
-﻿# Chapter 11: Graphs
+# Chapter 11: Graphs
 
 **Prev:** [Chapter 10: Heaps](10-heaps.md) | **Next:** [Chapter 12: Graph Traversals](12-graph-traversals.md)
 
@@ -33,7 +33,7 @@
 
 ## Why Graphs Matter
 
-**Real-World Analogy:** Imagine a city's road map. Each intersection is a **vertex** (node), and each road connecting two intersections is an **edge**. Now picture Facebook â€” each person is a vertex, and each friendship is an edge connecting two people. Graphs are everywhere: Twitter follower networks (directed edges), Google Maps road networks (weighted edges for distance), the World Wide Web itself (webpages linked by hyperlinks), and even your brain's neural connections. Without graphs, there is no navigation, no social network, no web search, no routing â€” they are the universal language of relationships.
+**Real-World Analogy:** Imagine a city's road map. Each intersection is a **vertex** (node), and each road connecting two intersections is an **edge**. Now picture Facebook — each person is a vertex, and each friendship is an edge connecting two people. Graphs are everywhere: Twitter follower networks (directed edges), Google Maps road networks (weighted edges for distance), the World Wide Web itself (webpages linked by hyperlinks), and even your brain's neural connections. Without graphs, there is no navigation, no social network, no web search, no routing — they are the universal language of relationships.
 
 | Domain | What Becomes a Vertex | What Becomes an Edge |
 |--------|----------------------|---------------------|
@@ -43,13 +43,13 @@
 | Computer network | Router | Cable (with bandwidth weight) |
 | Prerequisites | Course | "Depends on" relationship |
 
-> **Why this matters:** If you can model a problem as a graph, you can apply hundreds of years of mathematical theory and decades of algorithmic research to solve it â€” shortest paths, connectivity, clustering, ranking, and more.
+> **Why this matters:** If you can model a problem as a graph, you can apply hundreds of years of mathematical theory and decades of algorithmic research to solve it — shortest paths, connectivity, clustering, ranking, and more.
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Graph definition | \(G = (V, E)\) â€” vertices and edges | Models relationships between any entities |
+| Graph definition | \(G = (V, E)\) — vertices and edges | Models relationships between any entities |
 | Adjacency matrix | \(n \times n\) matrix, \(O(1)\) edge queries | Best for dense graphs (\(E \approx V^2\)) |
 | Adjacency list | Array of neighbor lists, \(O(V+E)\) space | Best for sparse graphs (most real-world graphs) |
 | Edge list | List of \((u,v,w)\) tuples, \(O(E)\) space | Best for I/O, sorting, Kruskal's MST |
@@ -97,9 +97,9 @@ flowchart TD
 
 
 **Real-World Analogy:**
-- **Undirected graph:** Facebook friendship â€” if Alice is friends with Bob, Bob is automatically friends with Alice. The relationship is symmetric.
-- **Directed graph:** Twitter follows â€” Alice follows Bob does not mean Bob follows Alice. The relationship has a direction (arrow).
-- **Weighted graph:** Google Maps road network â€” the edge between two intersections carries a weight representing distance in miles or travel time in minutes.
+- **Undirected graph:** Facebook friendship — if Alice is friends with Bob, Bob is automatically friends with Alice. The relationship is symmetric.
+- **Directed graph:** Twitter follows — Alice follows Bob does not mean Bob follows Alice. The relationship has a direction (arrow).
+- **Weighted graph:** Google Maps road network — the edge between two intersections carries a weight representing distance in miles or travel time in minutes.
 
 #### 1.1 Definitions
 
@@ -113,8 +113,8 @@ flowchart TD
 #### 1.2 Algorithm Steps to Determine Graph Type
 
 1. Identify the relationship: is it symmetric or asymmetric?
-2. If symmetric â†’ undirected. If asymmetric â†’ directed.
-3. Does each relationship carry a numeric cost/value? If yes â†’ weighted.
+2. If symmetric → undirected. If asymmetric → directed.
+3. Does each relationship carry a numeric cost/value? If yes → weighted.
 4. Choose representation (matrix/list/edge list) based on density.
 
 #### 1.3 Pseudocode
@@ -137,7 +137,7 @@ DETERMINE_GRAPH_PROPERTIES(edges):
 
 | Step | Edge(u,v,w) | Reverse (v,u) exists? | isDirected? | hasWeight? | isWeighted? |
 |------|-------------|----------------------|-------------|------------|-------------|
-| 1 | (0,1,5) | (1,0)? No â†’ Yes | Yes | Yes (5) | Yes |
+| 1 | (0,1,5) | (1,0)? No → Yes | Yes | Yes (5) | Yes |
 | 2 | (1,2,3) | (2,1)? No | Yes | Yes (3) | Yes |
 | 3 | (2,0,4) | (0,2)? No | Yes | Yes (4) | Yes |
 | 4 | (1,3,2) | (3,1)? No | Yes | Yes (2) | Yes |
@@ -258,17 +258,17 @@ class Main {
 
 #### 1.10 Edge Cases
 
-- **Single vertex:** \(|V| = 1, |E| = 0\) â€” trivially both directed and undirected.
+- **Single vertex:** \(|V| = 1, |E| = 0\) — trivially both directed and undirected.
 - **Self-loop:** Edge \((v, v)\). In undirected, reverse = same, so not detected as directed.
-- **Empty graph:** No edges â€” undirected by default.
-- **Mixed:** Can a graph have both directed and undirected edges? Yes â€” called a **mixed graph**, though most algorithms require one type.
+- **Empty graph:** No edges — undirected by default.
+- **Mixed:** Can a graph have both directed and undirected edges? Yes — called a **mixed graph**, though most algorithms require one type.
 
 ---
 
 ### 2. Adjacency Matrix
 
 
-**Real-World Analogy:** Think of a flight booking system. You want to know "Is there a direct flight from New York to London?" An adjacency matrix is like a massive airport x airport table where cell [NYC][LON] = 1 if a direct flight exists, or shows the ticket price if weighted. Looking up any pair is instant (O(1)), but storing the table requires space for every possible pair â€” even airports with no connection.
+**Real-World Analogy:** Think of a flight booking system. You want to know "Is there a direct flight from New York to London?" An adjacency matrix is like a massive airport x airport table where cell [NYC][LON] = 1 if a direct flight exists, or shows the ticket price if weighted. Looking up any pair is instant (O(1)), but storing the table requires space for every possible pair — even airports with no connection.
 
 #### 2.1 Definition
 
@@ -378,7 +378,7 @@ GET_NEIGHBORS(matrix, n, v):
 
 **Queries:** hasEdge(0,1) = true (matrix[0][1] = 1), hasEdge(1,3) = false (matrix[1][3] = 0).
 
-**Neighbors of 2:** Scan row 2 â†’ [0, 1, 3].
+**Neighbors of 2:** Scan row 2 → [0, 1, 3].
 
 #### 2.5 C++ Implementation
 
@@ -564,18 +564,18 @@ class AdjacencyMatrix {
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
 | Speed | \(O(1)\) edge existence check | Slow neighbor iteration (\(O(V)\)) |
-| Space | Simple, predictable allocation | \(O(V^2)\) â€” huge for large sparse graphs |
+| Space | Simple, predictable allocation | \(O(V^2)\) — huge for large sparse graphs |
 | Edge weight | Direct weight storage | Cannot represent parallel edges easily |
 | Implementation | Trivial to code | Wastes memory on zeros for sparse graphs |
 | Algorithms | Essential for Floyd-Warshall | Impractical for BFS/DFS on sparse graphs |
 
 #### 2.10 Edge Cases
 
-- **Single vertex:** \(1 \times 1\) matrix with [0] â€” works, addEdge does nothing.
-- **Disconnected graph:** Most entries remain 0 â€” wastes space.
-- **Self-loop:** mat[v][v] = 1 â€” allowed if input specifies it.
+- **Single vertex:** \(1 \times 1\) matrix with [0] — works, addEdge does nothing.
+- **Disconnected graph:** Most entries remain 0 — wastes space.
+- **Self-loop:** mat[v][v] = 1 — allowed if input specifies it.
 - **Multigraph (parallel edges):** Cannot represent directly with booleans. Use integers to count parallel edges, or store min weight.
-- **Very large \(n\):** \(n > 10^5\) makes the matrix impossible â€” switch to adjacency list.
+- **Very large \(n\):** \(n > 10^5\) makes the matrix impossible — switch to adjacency list.
 
 ---
 
@@ -583,15 +583,15 @@ class AdjacencyMatrix {
 ### 3. Adjacency List
 
 
-**Real-World Analogy:** Imagine a phone book for a small town. Instead of a massive grid of every possible pair of residents, each person has a short list of people they know personally. Looking up "who does Alice know?" is fast â€” just read her list. But checking "does Alice know Bob?" requires scanning her list. This is how Facebook stores the social graph: each user's friend list is an adjacency list.
+**Real-World Analogy:** Imagine a phone book for a small town. Instead of a massive grid of every possible pair of residents, each person has a short list of people they know personally. Looking up "who does Alice know?" is fast — just read her list. But checking "does Alice know Bob?" requires scanning her list. This is how Facebook stores the social graph: each user's friend list is an adjacency list.
 
 #### 3.1 Definition
 
 An **adjacency list** is an array (or map) of lists. For each vertex \(v\), \(\text{adj}[v]\) stores a list of its neighbors (and optionally edge weights).
 
-- Space: \(O(V + E)\) â€” only stores edges that exist.
-- Edge query: \(O(\deg(v))\) â€” must scan the list.
-- Neighbor iteration: \(O(\deg(v))\) â€” direct iteration.
+- Space: \(O(V + E)\) — only stores edges that exist.
+- Edge query: \(O(\deg(v))\) — must scan the list.
+- Neighbor iteration: \(O(\deg(v))\) — direct iteration.
 
 #### 3.2 Algorithm Steps to Build an Adjacency List
 
@@ -697,7 +697,7 @@ adj[3] = [4]
 adj[4] = [1]
 ```
 
-**Neighbors of 0:** adj[0] = [1, 3]. **Edge (0,1)?** Scan adj[0] â€” found. **Edge (1,0)?** Scan adj[1] = [2] â€” not found (directed).
+**Neighbors of 0:** adj[0] = [1, 3]. **Edge (0,1)?** Scan adj[0] — found. **Edge (1,0)?** Scan adj[1] = [2] — not found (directed).
 
 #### 3.5 C++ Implementation
 
@@ -867,13 +867,13 @@ class AdjacencyList {
 | Neighbor iteration | \(O(\deg(v))\) | Direct list traversal |
 | Add vertex | \(O(1)\) | Append one empty list |
 
-**Why \(O(V+E)\) is optimal:** Each edge appears exactly once (or twice for undirected) in the structure. No space is wasted on non-edges. For a sparse graph with \(V = 10^6\) and \(E = 10^7\), adjacency list uses ~\(10^7\) entries vs adjacency matrix requiring \(10^{12}\) entries â€” a 100,000x savings.
+**Why \(O(V+E)\) is optimal:** Each edge appears exactly once (or twice for undirected) in the structure. No space is wasted on non-edges. For a sparse graph with \(V = 10^6\) and \(E = 10^7\), adjacency list uses ~\(10^7\) entries vs adjacency matrix requiring \(10^{12}\) entries — a 100,000x savings.
 
 #### 3.9 Advantages & Disadvantages
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Space | \(O(V+E)\) â€” excellent for sparse graphs | Slightly more overhead per edge (pointer) |
+| Space | \(O(V+E)\) — excellent for sparse graphs | Slightly more overhead per edge (pointer) |
 | Speed | Fast neighbor iteration | Slow edge existence check |
 | Flexibility | Easy to add/remove vertices | Harder to code than matrix |
 | Weighted | Trivially stores (neighbor, weight) pairs | Slightly more complex |
@@ -881,10 +881,10 @@ class AdjacencyList {
 
 #### 3.10 Edge Cases
 
-- **Single vertex:** Empty list at adj[0] â€” works.
-- **Isolated vertex:** Its list remains empty â€” no space wasted.
-- **Self-loop:** adj[v] contains v â€” allowed, just push.
-- **Multigraph:** Lists can contain duplicates â€” handle by checking before adding or counting occurrences.
+- **Single vertex:** Empty list at adj[0] — works.
+- **Isolated vertex:** Its list remains empty — no space wasted.
+- **Self-loop:** adj[v] contains v — allowed, just push.
+- **Multigraph:** Lists can contain duplicates — handle by checking before adding or counting occurrences.
 - **Very dense graph:** If \(E \approx V^2\), lists become long (\(O(V)\) per list), and edge queries degrade to \(O(V)\). Switch to matrix.
 
 ---
@@ -893,15 +893,15 @@ class AdjacencyList {
 ### 4. Edge List
 
 
-**Real-World Analogy:** Think of an airline's flight schedule â€” a simple list of all flights: (JFK, LHR, $800), (JFK, CDG, $650), (LHR, DXB, $400). No fancy indexing, no lookup structure â€” just the raw data. When you need to sort all edges by weight (as in Kruskal's algorithm for Minimum Spanning Tree), an edge list is the natural representation.
+**Real-World Analogy:** Think of an airline's flight schedule — a simple list of all flights: (JFK, LHR, $800), (JFK, CDG, $650), (LHR, DXB, $400). No fancy indexing, no lookup structure — just the raw data. When you need to sort all edges by weight (as in Kruskal's algorithm for Minimum Spanning Tree), an edge list is the natural representation.
 
 #### 4.1 Definition
 
 An **edge list** is a simple list (array) of all edges. Each element is a tuple \((u, v)\) for unweighted graphs or \((u, v, w)\) for weighted graphs.
 
-- Space: \(O(E)\) â€” the most compact representation.
-- Edge query: \(O(E)\) â€” must scan the entire list.
-- Neighbor iteration: \(O(E)\) â€” must scan entire list for matches.
+- Space: \(O(E)\) — the most compact representation.
+- Edge query: \(O(E)\) — must scan the entire list.
+- Neighbor iteration: \(O(E)\) — must scan entire list for matches.
 
 #### 4.2 Algorithm Steps to Build an Edge List
 
@@ -943,9 +943,9 @@ GET_NEIGHBORS(edge_list, v, directed):
 | 5 | Append (1,3,4) | [(0,1,5), (0,2,2), (1,2,1), (1,3,4)] |
 | 6 | Append (2,3,3) | [(0,1,5), (0,2,2), (1,2,1), (1,3,4), (2,3,3)] |
 
-**Query hasEdge(1,3):** Scan list â€” found at index 3 â†’ true.
+**Query hasEdge(1,3):** Scan list — found at index 3 → true.
 
-**Neighbors of 2:** Scan all edges â€” (0,2), (1,2), (2,3) â†’ [0, 1, 3].
+**Neighbors of 2:** Scan all edges — (0,2), (1,2), (2,3) → [0, 1, 3].
 
 #### 4.5 C++ Implementation
 
@@ -1120,10 +1120,10 @@ class EdgeList {
 
 #### 4.10 Edge Cases
 
-- **Empty graph:** Empty list â€” works.
-- **Single edge:** List with one element â€” works.
-- **Duplicate edges:** List may contain duplicates â€” filter or tolerate.
-- **Very large edge count:** \(O(E)\) scan becomes slow â€” use adjacency list for frequent queries.
+- **Empty graph:** Empty list — works.
+- **Single edge:** List with one element — works.
+- **Duplicate edges:** List may contain duplicates — filter or tolerate.
+- **Very large edge count:** \(O(E)\) scan becomes slow — use adjacency list for frequent queries.
 
 ---
 
@@ -1131,7 +1131,7 @@ class EdgeList {
 ### 5. Degree Calculation
 
 
-**Real-World Analogy:** In a Twitter network, your "out-degree" is the number of people you follow, and your "in-degree" is the number of people who follow you. On Facebook (undirected), your "degree" is just your number of friends. The "degree sum theorem" says every handshake increases the total degree count by 2 â€” if you sum everyone's friends, you get twice the number of handshakes.
+**Real-World Analogy:** In a Twitter network, your "out-degree" is the number of people you follow, and your "in-degree" is the number of people who follow you. On Facebook (undirected), your "degree" is just your number of friends. The "degree sum theorem" says every handshake increases the total degree count by 2 — if you sum everyone's friends, you get twice the number of handshakes.
 
 #### 5.1 Definition
 
@@ -1201,7 +1201,7 @@ adj[4] = [1]
 | 3 | 1 | 2 |
 | 4 | 1 | 1 |
 
-**Verification:** Sum of out = \(2+1+1+1+1 = 6\), Sum of in = \(0+2+1+2+1 = 6\). \(|E| = 6\). \(\sum \text{out} = \sum \text{in} = |E| = 6\) âœ“
+**Verification:** Sum of out = \(2+1+1+1+1 = 6\), Sum of in = \(0+2+1+2+1 = 6\). \(|E| = 6\). \(\sum \text{out} = \sum \text{in} = |E| = 6\) ✓
 
 #### 5.5 C++ Implementation
 
@@ -1317,15 +1317,15 @@ class DegreeCalc {
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
 | Computation | Linear in graph size | Must iterate all edges |
-| Matrix approach | Direct row-sum for degree | \(O(V^2)\) â€” poor for sparse |
-| Degree sum theorem | Built-in verification | â€” |
+| Matrix approach | Direct row-sum for degree | \(O(V^2)\) — poor for sparse |
+| Degree sum theorem | Built-in verification | — |
 
 #### 5.10 Edge Cases
 
-- **Isolated vertex:** Degree 0 â€” correct.
+- **Isolated vertex:** Degree 0 — correct.
 - **Complete graph:** Degree = \(n-1\) for all vertices.
 - **Self-loop:** Counts as 2 for undirected degree (adds 1 to each end = same vertex twice), 1 for out-degree in directed.
-- **Zero-vertex graph:** Trivial â€” no degrees to compute.
+- **Zero-vertex graph:** Trivial — no degrees to compute.
 
 ---
 
@@ -1333,7 +1333,7 @@ class DegreeCalc {
 ### 6. Complete Graph
 
 
-**Real-World Analogy:** Imagine a conference where every attendee shakes hands with every other attendee exactly once. If there are \(n\) people, the total number of handshakes is \(n(n-1)/2\). This is a **complete graph** â€” every vertex is directly connected to every other vertex. This represents the maximum possible connections in a network.
+**Real-World Analogy:** Imagine a conference where every attendee shakes hands with every other attendee exactly once. If there are \(n\) people, the total number of handshakes is \(n(n-1)/2\). This is a **complete graph** — every vertex is directly connected to every other vertex. This represents the maximum possible connections in a network.
 
 #### 6.1 Definition
 
@@ -1356,7 +1356,7 @@ A **complete graph** \(K_n\) is an undirected graph where every pair of distinct
 #### 6.3 Algorithm Steps to Check if a Graph is Complete
 
 1. Count the number of edges \(|E|\) in the graph.
-2. If \(|E| = n(n-1)/2\) for undirected (or \(n(n-1)\) for directed) â†’ complete.
+2. If \(|E| = n(n-1)/2\) for undirected (or \(n(n-1)\) for directed) → complete.
 3. Alternative: For each vertex, check that \(\deg(v) = n-1\).
 
 #### 6.4 Pseudocode
@@ -1479,8 +1479,8 @@ class CompleteGraph {
 #### 6.10 Edge Cases
 
 - **n = 0:** Trivially complete (no vertices).
-- **n = 1:** Single vertex with no edges â€” vacuously complete (no pairs to connect).
-- **n = 2:** One edge needed â€” K2 is a single edge.
+- **n = 1:** Single vertex with no edges — vacuously complete (no pairs to connect).
+- **n = 2:** One edge needed — K2 is a single edge.
 
 ---
 
@@ -1488,7 +1488,7 @@ class CompleteGraph {
 ### 7. Bipartite Graph
 
 
-**Real-World Analogy:** Think of a dating app. There are two sets: men and women. Connections (matches) only exist between the sets, never within a set. This is a **bipartite graph**. Another example: in a streaming service, users and movies form a bipartite graph â€” users rate movies, but users don't rate other users and movies don't rate movies. A bipartite graph can be **2-colored** â€” paint all vertices red or blue such that no edge connects same-colored vertices.
+**Real-World Analogy:** Think of a dating app. There are two sets: men and women. Connections (matches) only exist between the sets, never within a set. This is a **bipartite graph**. Another example: in a streaming service, users and movies form a bipartite graph — users rate movies, but users don't rate other users and movies don't rate movies. A bipartite graph can be **2-colored** — paint all vertices red or blue such that no edge connects same-colored vertices.
 
 #### 7.1 Definition
 
@@ -1505,8 +1505,8 @@ A graph \(G = (V, E)\) is **bipartite** if \(V\) can be partitioned into two dis
    - If uncolored, set `color[v] = 0` and BFS from \(v\).
    - For each neighbor \(u\) of current node:
      - If uncolored, set `color[u] = 1 - color[current]`.
-     - If colored and same as current â†’ not bipartite.
-3. If BFS completes without conflict â†’ bipartite.
+     - If colored and same as current → not bipartite.
+3. If BFS completes without conflict → bipartite.
 
 #### 7.3 Pseudocode
 
@@ -1544,19 +1544,19 @@ adj[3] = [1, 2]
 
 | Step | Queue | Vertex v | color[v] | Neighbor u | color[u] | Action |
 |------|-------|----------|----------|------------|----------|--------|
-| 1 | [0] | â€” | â€” | â€” | â€” | color[0]=0 |
+| 1 | [0] | — | — | — | — | color[0]=0 |
 | 2 | [0] | 0 | 0 | 1 | -1 | color[1]=1, queue=[1] |
 | 3 | [1] | 0 | 0 | 2 | -1 | color[2]=1, queue=[1,2] |
-| 4 | [1,2] | 1 | 1 | 0 | 0 (OK) | â€” |
+| 4 | [1,2] | 1 | 1 | 0 | 0 (OK) | — |
 | 5 | [2] | 1 | 1 | 3 | -1 | color[3]=0, queue=[2,3] |
-| 6 | [2,3] | 2 | 1 | 0 | 0 (OK) | â€” |
-| 7 | [3] | 2 | 1 | 3 | 0 (OK) | â€” |
-| 8 | [3] | 3 | 0 | 1 | 1 (OK) | â€” |
-| 9 | [] | 3 | 0 | 2 | 1 (OK) | â€” |
+| 6 | [2,3] | 2 | 1 | 0 | 0 (OK) | — |
+| 7 | [3] | 2 | 1 | 3 | 0 (OK) | — |
+| 8 | [3] | 3 | 0 | 1 | 1 (OK) | — |
+| 9 | [] | 3 | 0 | 2 | 1 (OK) | — |
 
 **Result:** Bipartite! Partitions: \(U = \{0, 3\}\) (color 0), \(W = \{1, 2\}\) (color 1).
 
-**Non-bipartite example:** Triangle (3-cycle): edges (0,1), (1,2), (2,0). Try coloring 0=0, 1=1, but 2 adjacent to both 0 (color 0) and 1 (color 1) â€” conflict! Contains odd cycle â†’ not bipartite.
+**Non-bipartite example:** Triangle (3-cycle): edges (0,1), (1,2), (2,0). Try coloring 0=0, 1=1, but 2 adjacent to both 0 (color 0) and 1 (color 1) — conflict! Contains odd cycle → not bipartite.
 
 #### 7.5 C++ Implementation
 
@@ -1708,15 +1708,15 @@ class BipartiteCheck {
 
 #### 7.10 Edge Cases
 
-- **Single vertex:** No edges â†’ trivially bipartite.
-- **Empty graph:** No edges â†’ bipartite (all vertices same color).
+- **Single vertex:** No edges → trivially bipartite.
+- **Empty graph:** No edges → bipartite (all vertices same color).
 - **Disconnected bipartite:** Each component independently 2-colorable.
-- **Self-loop:** A self-loop creates a cycle of length 1 (odd) â†’ not bipartite.
+- **Self-loop:** A self-loop creates a cycle of length 1 (odd) → not bipartite.
 
 ---
 
 
-## Adjacency Matrix vs List vs Edge List â€” Comparison Table
+## Adjacency Matrix vs List vs Edge List — Comparison Table
 
 | Feature | Adjacency Matrix | Adjacency List | Edge List |
 |---------|-----------------|---------------|-----------|
@@ -1728,11 +1728,11 @@ class BipartiteCheck {
 | Add vertex | \(O(V^2)\) | \(O(1)\) | \(O(1)\) |
 | Sort edges by weight | Not applicable | Not applicable | \(O(E \log E)\) |
 | Degree calculation | \(O(V)\) per vertex | \(O(\deg(v))\) per vertex | \(O(E)\) |
-| Memory per edge | 1 bit (or 4â€“8 bytes weight) | 8â€“16 bytes (node + pointer) | 12â€“24 bytes (tuple) |
+| Memory per edge | 1 bit (or 4–8 bytes weight) | 8–16 bytes (node + pointer) | 12–24 bytes (tuple) |
 | Cache friendliness | Good (contiguous) | Poor (scattered nodes) | Good (contiguous) |
 | Best for | Dense graphs, Floyd-Warshall | Sparse graphs, BFS, DFS, Dijkstra | Kruskal's MST, I/O, sorting |
 
-**Decision Rule:** If you need fast edge existence checks AND the graph is dense â†’ matrix. If you mostly iterate neighbors AND the graph is sparse â†’ adjacency list. If you're reading from a file or sorting edges â†’ edge list.
+**Decision Rule:** If you need fast edge existence checks AND the graph is dense → matrix. If you mostly iterate neighbors AND the graph is sparse → adjacency list. If you're reading from a file or sorting edges → edge list.
 
 ---
 
@@ -1808,7 +1808,7 @@ def has_cycle_directed(adj):
     state = [0] * n  # 0=unvisited, 1=in-stack, 2=done
 
     def dfs(v):
-        if state[v] == 1: return True  # back edge â†’ cycle
+        if state[v] == 1: return True  # back edge → cycle
         if state[v] == 2: return False
         state[v] = 1
         for u in adj[v]:
@@ -1826,7 +1826,7 @@ def has_cycle_directed(adj):
 
 ### 3. Detect Cycle in an Undirected Graph
 
-**Approach:** DFS with parent tracking â€” if we find an edge to an already-visited vertex that is NOT the parent, we have a cycle.
+**Approach:** DFS with parent tracking — if we find an edge to an already-visited vertex that is NOT the parent, we have a cycle.
 
 ```python
 def has_cycle_undirected(adj):
@@ -1838,7 +1838,7 @@ def has_cycle_undirected(adj):
         for u in adj[v]:
             if not visited[u]:
                 if dfs(u, v): return True
-            elif u != parent:  # visited and not parent â†’ cycle
+            elif u != parent:  # visited and not parent → cycle
                 return True
         return False
 
@@ -1852,7 +1852,7 @@ def has_cycle_undirected(adj):
 
 ### 4. Topological Sort (DAG)
 
-**Approach (Kahn's algorithm â€” BFS-based):**
+**Approach (Kahn's algorithm — BFS-based):**
 
 ```python
 from collections import deque
@@ -1876,7 +1876,7 @@ def topological_sort(adj):
                 q.append(u)
 
     if len(result) != n:
-        return []  # cycle detected â†’ no valid topological order
+        return []  # cycle detected → no valid topological order
     return result
 ```
 
@@ -1888,39 +1888,39 @@ def topological_sort(adj):
 
 ## Applications in Real Systems
 
-### 1. Google Maps â€” Road Networks
+### 1. Google Maps — Road Networks
 
 Google Maps models the road network as a **large, sparse, weighted, directed graph**.
 - **Vertices:** Intersections and waypoints
 - **Edges:** Road segments (directed for one-way streets)
-- **Weights:** Travel time (dynamic â€” adjusts for traffic), distance
+- **Weights:** Travel time (dynamic — adjusts for traffic), distance
 - **Algorithms:** Dijkstra / A* for shortest path, contraction hierarchies for precomputation
 - **Scale:** Billions of vertices, processed in milliseconds via precomputed landmarks
 
-> "Finding the shortest path between two points in a city is a graph problem â€” maps are just graphs with geographic coordinates attached to each vertex."
+> "Finding the shortest path between two points in a city is a graph problem — maps are just graphs with geographic coordinates attached to each vertex."
 
-### 2. Facebook / Instagram â€” Social Graphs
+### 2. Facebook / Instagram — Social Graphs
 
 Facebook's social graph has **3+ billion vertices** (users) and **trillions of edges** (friendships).
 - **Graph type:** Undirected (friendship), directed (follow), weighted (interaction frequency)
-- **Representation:** Custom adjacency list (TAO â€” distributed graph store built on MySQL)
+- **Representation:** Custom adjacency list (TAO — distributed graph store built on MySQL)
 - **Operations:** Friend suggestions (triangle counting), feed ranking (edge weight = interaction recency), community detection (connected components)
 - **Challenge:** Sharding a graph across thousands of machines while maintaining locality
 
 > "When you see 'People You May Know', Facebook is counting triangles in the social graph to suggest friends-of-friends."
 
-### 3. PageRank â€” Web Graph
+### 3. PageRank — Web Graph
 
 Google's original PageRank algorithm treats the web as a **directed graph** of pages connected by hyperlinks.
 - **Vertices:** Webpages
 - **Edges:** Hyperlinks (directed)
-- **Algorithm:** Random walk â€” a page is "important" if many important pages link to it
+- **Algorithm:** Random walk — a page is "important" if many important pages link to it
 - **Mathematically:** Eigenvector computation on the adjacency matrix (normalized)
 - **Scale:** 100+ trillion URLs indexed
 
-> "PageRank is why graphs matter more than any other data structure â€” it turned the web into a graph and built a $2 trillion company on top."
+> "PageRank is why graphs matter more than any other data structure — it turned the web into a graph and built a $2 trillion company on top."
 
-### 4. OSPF â€” Routing Protocols
+### 4. OSPF — Routing Protocols
 
 OSPF (Open Shortest Path First) uses **Dijkstra's algorithm** on a **weighted, directed graph** to route IP packets.
 - **Vertices:** Routers
@@ -1933,12 +1933,12 @@ OSPF (Open Shortest Path First) uses **Dijkstra's algorithm** on a **weighted, d
 
 | System | Graph Model | What It Solves |
 |--------|-------------|----------------|
-| Netflix/MovieLens | Weighted bipartite (user â†’ movie) | Collaborative filtering recommendations |
+| Netflix/MovieLens | Weighted bipartite (user → movie) | Collaborative filtering recommendations |
 | GitHub dependency graph | Directed acyclic | Version resolution, vulnerability propagation |
 | LinkedIn | Directed (connections, follows) | 2nd/3rd degree network, recruiter search |
 | Amazon product graph | Undirected weighted ("customers who bought this also bought") | Product recommendations |
-| Molecular chemistry | Undirected (atoms â†’ bonds) | Drug discovery, molecule property prediction |
-| Neural networks | Weighted directed (neurons â†’ synapses) | Deep learning model computation |
+| Molecular chemistry | Undirected (atoms → bonds) | Drug discovery, molecule property prediction |
+| Neural networks | Weighted directed (neurons → synapses) | Deep learning model computation |
 
 ---
 
@@ -1948,7 +1948,7 @@ OSPF (Open Shortest Path First) uses **Dijkstra's algorithm** on a **weighted, d
 - **Transpose of a directed graph**: Reverse the direction of every edge. This is useful for Kosaraju's SCC algorithm. Building the transpose from an adjacency list is \(O(V+E)\).
 - **Graph is a tree if**: (a) it's connected, and (b) \(|E| = |V| - 1\). If either condition fails, it's not a tree.
 - **Degree sum theorem**: The sum of all degrees in an undirected graph is \(2|E|\). Each edge contributes 1 to the degree of each of its endpoints. This is useful for validation and handshaking lemma problems.
-- **Bipartite â†” 2-colorable â†” no odd cycles**: These three statements are equivalent. If asked "is this graph bipartite?" in an interview, immediately think BFS + 2-coloring.
+- **Bipartite ↔ 2-colorable ↔ no odd cycles**: These three statements are equivalent. If asked "is this graph bipartite?" in an interview, immediately think BFS + 2-coloring.
 - **Always check for disconnected components**: BFS/cycle-detection/bipartite-check all need an outer loop over all vertices to handle disconnected graphs.
 
 ---
@@ -1956,9 +1956,9 @@ OSPF (Open Shortest Path First) uses **Dijkstra's algorithm** on a **weighted, d
 ## One-Sentence Takeaways
 
 - A graph \(G = (V, E)\) consists of vertices and edges connecting them.
-- Adjacency matrix: \(O(1)\) edge queries, \(O(V^2)\) space â€” best for dense graphs.
-- Adjacency list: \(O(V+E)\) space â€” preferred for sparse graphs (most real-world).
-- Edge list: \(O(E)\) space â€” the most compact, ideal for I/O and sorting.
+- Adjacency matrix: \(O(1)\) edge queries, \(O(V^2)\) space — best for dense graphs.
+- Adjacency list: \(O(V+E)\) space — preferred for sparse graphs (most real-world).
+- Edge list: \(O(E)\) space — the most compact, ideal for I/O and sorting.
 - Directed graphs have ordered edges; undirected graphs have unordered edges.
 - Weighted graphs assign a weight (cost) to each edge.
 - A complete graph has all possible edges: \(|E| = n(n-1)/2\).
@@ -1973,7 +1973,7 @@ OSPF (Open Shortest Path First) uses **Dijkstra's algorithm** on a **weighted, d
 
 | Mistake | Why It's Wrong | Correct Approach |
 |---------|----------------|------------------|
-| Confusing adjacency list vs matrix memory | Matrix is always O(VÂ²) even for sparse graphs; list saves no memory for dense graphs | Use adjacency list for sparse (|E| â‰ª |V|Â²), matrix for dense graphs |
+| Confusing adjacency list vs matrix memory | Matrix is always O(V²) even for sparse graphs; list saves no memory for dense graphs | Use adjacency list for sparse (|E| ≪ |V|²), matrix for dense graphs |
 | Forgetting that BFS uses a queue and DFS uses a stack | Using a stack for BFS gives wrong order (like DFS) | BFS = Queue, DFS = Stack (explicit or recursion) |
 | Not handling disconnected components in traversal | BFS/DFS starting from one node won't reach all nodes | Loop over all vertices, run BFS/DFS from unvisited ones |
 | Confusing indegree and outdegree in directed graphs | indegree edges coming in, outdegree edges going out | indegree = incoming count, outdegree = outgoing count |
@@ -2087,36 +2087,36 @@ class Graph {
 9. **For a directed graph with V vertices and E edges, the adjacency list uses:**
    - a) O(V) space
    - b) O(E) space
-   - c) O(V + E) space âœ“
-   - d) O(VÂ²) space
+   - c) O(V + E) space ✓
+   - d) O(V²) space
 
 10. **What is the degree of a vertex in a complete undirected graph with n vertices?**
     - a) n
-    - b) n - 1 âœ“
+    - b) n - 1 ✓
     - c) n(n - 1)/2
     - d) 2n
 
 11. **Kahn's algorithm for topological sort requires:**
     - a) A stack
-    - b) A queue âœ“
+    - b) A queue ✓
     - c) A priority queue
     - d) A Deque
 
 12. **Which of the following is true about a bipartite graph?**
     - a) It contains a triangle
-    - b) It can be 2-colored âœ“
+    - b) It can be 2-colored ✓
     - c) It is always connected
     - d) It has no edges
 
 13. **The handshaking lemma states that the sum of degrees equals:**
     - a) |V|
-    - b) 2|E| âœ“
-    - c) |E|Â²
-    - d) |V|Â²
+    - b) 2|E| ✓
+    - c) |E|²
+    - d) |V|²
 
 14. **What is the minimum number of edges needed for a simple graph with V vertices to be connected?**
     - a) V
-    - b) V - 1 âœ“
+    - b) V - 1 ✓
     - c) V(V - 1)/2
     - d) V + 1
 
@@ -2148,43 +2148,43 @@ class Graph {
 
 2. **What is the sum of degrees in an undirected graph?**
    - a) \(|E|\)
-   - b) \(2|E|\) âœ“
+   - b) \(2|E|\) ✓
    - c) \(|V|\)
    - d) \(2|V|\)
 
 3. **Which representation is best for a sparse graph?**
    - a) Adjacency matrix
-   - b) Adjacency list âœ“
+   - b) Adjacency list ✓
    - c) Edge list with hash set
    - d) Incidence matrix
 
 4. **A tree must satisfy:**
-   - a) Connected and \(|E| = |V| - 1\) âœ“
+   - a) Connected and \(|E| = |V| - 1\) ✓
    - b) \(|E| = |V|\)
    - c) Complete
    - d) Bipartite
 
 5. **An undirected complete graph with \(n\) vertices has how many edges?**
    - a) \(n\)
-   - b) \(n(n-1)/2\) âœ“
+   - b) \(n(n-1)/2\) ✓
    - c) \(n^2\)
    - d) \(n-1\)
 
 6. **Which representation is best for Kruskal's MST algorithm?**
    - a) Adjacency matrix
    - b) Adjacency list
-   - c) Edge list âœ“
+   - c) Edge list ✓
    - d) Incidence matrix
 
 7. **A graph with an odd cycle is:**
    - a) Always complete
    - b) Always bipartite
-   - c) Never bipartite âœ“
+   - c) Never bipartite ✓
    - d) Never connected
 
 8. **Which algorithm is used for topological sort?**
    - a) Floyd-Warshall
-   - b) Kahn's algorithm âœ“
+   - b) Kahn's algorithm ✓
    - c) Kruskal's algorithm
    - d) Bellman-Ford
 
@@ -2194,12 +2194,12 @@ class Graph {
 
 ## Summary
 
-- Graphs model pairwise relationships between entities â€” the most flexible data structure.
+- Graphs model pairwise relationships between entities — the most flexible data structure.
 - Three core representations: **adjacency matrix** (\(O(V^2)\) space, \(O(1)\) edge queries), **adjacency list** (\(O(V+E)\) space, fast neighbor iteration), **edge list** (\(O(E)\) space, compact).
 - **Directed vs undirected:** Choose based on relationship symmetry. Weighted for costs/distances.
 - **Complete graphs** have maximum edges; **bipartite graphs** are 2-colorable.
 - **Degree calculation** uses \(O(V+E)\) on adjacency list; verifying with Handshaking Lemma catches errors.
-- **Decision rule:** Dense â†’ matrix; Sparse â†’ list; I/O/sorting â†’ edge list.
+- **Decision rule:** Dense → matrix; Sparse → list; I/O/sorting → edge list.
 - **Real-world** uses: Google Maps (shortest path on road graphs), Facebook (social graph analysis), PageRank (web graph ranking), OSPF (routing protocol on network graph).
 
 ---

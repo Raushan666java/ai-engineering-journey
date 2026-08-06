@@ -1,4 +1,4 @@
-﻿# Chapter 3: Vocabulary & Word Usage
+# Chapter 3: Vocabulary & Word Usage
 
 ## Learning Objectives
 
@@ -33,7 +33,7 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Weightage and Exam Pattern
 
-Vocabulary and word usage accounts for **4â€“5 questions** in IBPS SO IT Officer Prelims. The topic overlaps with Reading Comprehension (vocabulary-in-context questions) and Cloze Tests.
+Vocabulary and word usage accounts for **4–5 questions** in IBPS SO IT Officer Prelims. The topic overlaps with Reading Comprehension (vocabulary-in-context questions) and Cloze Tests.
 
 | Question Type | Frequency | Skill |
 |---------------|-----------|-------|
@@ -46,7 +46,7 @@ Vocabulary and word usage accounts for **4â€“5 questions** in IBPS SO IT Of
 
 ### 3.2 How Vocabulary Is Tested in IBPS
 
-Unlike academic vocabulary tests, IBPS SO English focuses on **functional vocabulary** â€” words you would encounter in banking, technology, finance, and governance contexts. The words are typically of moderate difficulty (high school to undergraduate level), but their usage in specific contexts is what differentiates correct from incorrect answers.
+Unlike academic vocabulary tests, IBPS SO English focuses on **functional vocabulary** — words you would encounter in banking, technology, finance, and governance contexts. The words are typically of moderate difficulty (high school to undergraduate level), but their usage in specific contexts is what differentiates correct from incorrect answers.
 
 **Sources of vocabulary in IBPS exams:**
 - The Hindu and Business Line editorials
@@ -95,20 +95,20 @@ Unlike academic vocabulary tests, IBPS SO English focuses on **functional vocabu
 
 #### Strategy for Synonym/Antonym Questions
 
-1. **Eliminate unfamiliar words first** â€” if you don't know a word, it is likely the correct answer or a clever distractor. Use elimination based on known words.
-2. **Look at the part of speech** â€” a synonym must be the same part of speech as the given word.
-3. **Positive vs Negative connotation** â€” if the original word is positive, the synonym is likely positive.
-4. **Context matters** â€” the same word can have different synonyms in different contexts.
+1. **Eliminate unfamiliar words first** — if you don't know a word, it is likely the correct answer or a clever distractor. Use elimination based on known words.
+2. **Look at the part of speech** — a synonym must be the same part of speech as the given word.
+3. **Positive vs Negative connotation** — if the original word is positive, the synonym is likely positive.
+4. **Context matters** — the same word can have different synonyms in different contexts.
 
 ### 3.4 Idioms and Phrases
 
-Idioms are fixed expressions whose meaning is not literal. IBPS exams typically test **5â€“6 commonly used idioms** per paper.
+Idioms are fixed expressions whose meaning is not literal. IBPS exams typically test **5–6 commonly used idioms** per paper.
 
 #### Must-Know Idioms for Government Exams
 
 | Idiom | Meaning | Example |
 |-------|---------|---------|
-| A blessing in disguise | A good thing that seemed bad at first | *The project delay was a blessing in disguise â€” we got a better vendor.* |
+| A blessing in disguise | A good thing that seemed bad at first | *The project delay was a blessing in disguise — we got a better vendor.* |
 | A dime a dozen | Very common | *Such certifications are a dime a dozen now.* |
 | A piece of cake | Very easy | *The computer proficiency test was a piece of cake.* |
 | Beat around the bush | Avoid the main topic | *Stop beating around the bush and tell us the real issue.* |
@@ -126,10 +126,10 @@ Idioms are fixed expressions whose meaning is not literal. IBPS exams typically 
 | Out of the blue | Unexpectedly | *The resignation came out of the blue.* |
 | Pull someone's leg | Joke or tease | *Don't worry, I'm just pulling your leg.* |
 | Ring a bell | Sound familiar | *That name rings a bell but I can't place him.* |
-| Sit on the fence | Remain neutral | *You can't sit on the fence forever â€” decide.* |
+| Sit on the fence | Remain neutral | *You can't sit on the fence forever — decide.* |
 | Steal someone's thunder | Take credit for someone's idea | *He stole my thunder by presenting my suggestion first.* |
 | Take with a grain of salt | Be sceptical | *Take the projections with a grain of salt.* |
-| The ball is in your court | It's your turn to act | *I've done my part â€” now the ball is in your court.* |
+| The ball is in your court | It's your turn to act | *I've done my part — now the ball is in your court.* |
 | Under the weather | Feeling ill | *The manager was under the weather so he worked from home.* |
 | Up in the air | Uncertain | *The project timeline is still up in the air.* |
 | When pigs fly | Never (impossible) | *The system will be upgraded when pigs fly.* |
@@ -302,20 +302,20 @@ In Cloze Tests, vocabulary is tested in context. The same word placed in differe
 
 a) conflict   b) collaboration   c) synergy   d) integration
 
-**Answer:** a (conflict â€” negative consequence leads to delays)
+**Answer:** a (conflict — negative consequence leads to delays)
 
 *The _____ between the two departments resulted in an award-winning project.*
 
 a) conflict   b) rivalry   c) friction   d) synergy
 
-**Answer:** d (synergy â€” positive result)
+**Answer:** d (synergy — positive result)
 
 ### 3.9 Expanding Vocabulary for Exams
 
 | Method | Description | Example |
 |--------|-------------|---------|
 | Root Words | Learn Latin/Greek roots | *Bene* (good): benefit, benevolent, beneficial |
-| Mnemonics | Memory aids | "Station**ary** has an **a** for **a**rm â€” not moving" |
+| Mnemonics | Memory aids | "Station**ary** has an **a** for **a**rm — not moving" |
 | Word Families | Learn related forms | *Mitigate* (v), *mitigation* (n), *mitigating* (adj) |
 | Contextual Reading | Learn from editorials | Highlight 5 new words daily from The Hindu |
 | Flashcards | Spaced repetition | Use Anki or physical cards |
@@ -419,14 +419,14 @@ d) Discourse
 **Explanation:**
 1. The app was designed to "promote" financial inclusion (positive purpose). Hinder/prevent/restrict are opposite.
 2. "Marred by technical glitches" means spoiled by problems. Enhanced/smoothened/improved are opposite.
-3. "Crashed frequently" â€” technical glitches cause apps to crash.
-4. "Worked diligently" â€” the team worked hard and carefully.
+3. "Crashed frequently" — technical glitches cause apps to crash.
+4. "Worked diligently" — the team worked hard and carefully.
 
 **Answers:** 1-b, 2-c, 3-b, 4-c
 
 ---
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 ### Section A: Synonyms (Q1-Q5)
 
@@ -493,7 +493,7 @@ a) Worsen   b) Aggravate   c) Alleviate   d) Intensify
 
 <details>
 <summary>Answer</summary>
-c) Alleviate. "Exacerbate" means to make worse. "Alleviate" means to make less severe â€” opposite. Options (a), (b), and (d) are synonyms.
+c) Alleviate. "Exacerbate" means to make worse. "Alleviate" means to make less severe — opposite. Options (a), (b), and (d) are synonyms.
 </details>
 
 ---
@@ -515,7 +515,7 @@ a) Fortune   b) Luck   c) Misfortune   d) Chance
 
 <details>
 <summary>Answer</summary>
-c) Misfortune. "Serendipity" means the occurrence of events by chance in a happy or beneficial way. "Misfortune" means bad luck â€” opposite. Options (a), (b), and (d) are related to serendipity.
+c) Misfortune. "Serendipity" means the occurrence of events by chance in a happy or beneficial way. "Misfortune" means bad luck — opposite. Options (a), (b), and (d) are related to serendipity.
 </details>
 
 ---
@@ -526,7 +526,7 @@ a) Reserved   b) Silent   c) Talkative   d) Reticent
 
 <details>
 <summary>Answer</summary>
-c) Talkative. "Taciturn" means reserved or uncommunicative in speech. "Talkative" means fond of talking â€” opposite. Options (a), (b), and (d) are synonyms.
+c) Talkative. "Taciturn" means reserved or uncommunicative in speech. "Talkative" means fond of talking — opposite. Options (a), (b), and (d) are synonyms.
 </details>
 
 ---
@@ -744,12 +744,12 @@ const bank = new VocabularyBank();
 const examWords: VocabularyWord[] = [
   { word: "ameliorate", synonym: "improve", antonym: "worsen", mnemonics: "A-MELIOR-ate: 'melior' is Latin for better", partOfSpeech: "verb", usageExample: "The new policy ameliorated the crisis." },
   { word: "comprehensive", synonym: "thorough", antonym: "superficial", mnemonics: "Comprehensive = 'com-' (completely) + 'prehendere' (to grasp)", partOfSpeech: "adjective", usageExample: "A comprehensive audit was conducted." },
-  { word: "diligent", synonym: "hardworking", antonym: "lazy", mnemonics: "Diligent = 'di-ligent' â†’ 'do it diligent(ly)'", partOfSpeech: "adjective", usageExample: "The diligent officer completed the task on time." },
-  { word: "ephemeral", synonym: "fleeting", antonym: "permanent", mnemonics: "Ephemeral = 'E-phem-era-l' â†’ 'E' (short) life", partOfSpeech: "adjective", usageExample: "The joy was ephemeral." },
-  { word: "facilitate", synonym: "ease", antonym: "hinder", mnemonics: "Facilitate = 'facil' (easy) + 'itate' â†’ make easy", partOfSpeech: "verb", usageExample: "Technology facilitates banking." },
-  { word: "stringent", synonym: "strict", antonym: "lenient", mnemonics: "Stringent = 'string' + 'gent' â†’ pulled tight like a string", partOfSpeech: "adjective", usageExample: "Stringent regulations were imposed." },
-  { word: "ubiquitous", synonym: "omnipresent", antonym: "rare", mnemonics: "Ubiquitous = 'ubi' (where) + 'que' (and) â†’ everywhere", partOfSpeech: "adjective", usageExample: "Smartphones are ubiquitous." },
-  { word: "resilient", synonym: "adaptable", antonym: "fragile", mnemonics: "Resilient = 're-silent' â†’ bounces back silently", partOfSpeech: "adjective", usageExample: "The resilient economy recovered quickly." },
+  { word: "diligent", synonym: "hardworking", antonym: "lazy", mnemonics: "Diligent = 'di-ligent' → 'do it diligent(ly)'", partOfSpeech: "adjective", usageExample: "The diligent officer completed the task on time." },
+  { word: "ephemeral", synonym: "fleeting", antonym: "permanent", mnemonics: "Ephemeral = 'E-phem-era-l' → 'E' (short) life", partOfSpeech: "adjective", usageExample: "The joy was ephemeral." },
+  { word: "facilitate", synonym: "ease", antonym: "hinder", mnemonics: "Facilitate = 'facil' (easy) + 'itate' → make easy", partOfSpeech: "verb", usageExample: "Technology facilitates banking." },
+  { word: "stringent", synonym: "strict", antonym: "lenient", mnemonics: "Stringent = 'string' + 'gent' → pulled tight like a string", partOfSpeech: "adjective", usageExample: "Stringent regulations were imposed." },
+  { word: "ubiquitous", synonym: "omnipresent", antonym: "rare", mnemonics: "Ubiquitous = 'ubi' (where) + 'que' (and) → everywhere", partOfSpeech: "adjective", usageExample: "Smartphones are ubiquitous." },
+  { word: "resilient", synonym: "adaptable", antonym: "fragile", mnemonics: "Resilient = 're-silent' → bounces back silently", partOfSpeech: "adjective", usageExample: "The resilient economy recovered quickly." },
 ];
 
 for (const w of examWords) bank.addWord(w);
@@ -802,55 +802,55 @@ flowchart LR
 
 ---
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 ### Section A: Synonyms (Q1-Q5)
 
 Choose the correct synonym:
 
-1. **SERENDIPITY** â€” a) Misfortune  b) Chance  c) Planning  d) Disaster
-2. **MALEVOLENT** â€” a) Kind  b) Spiteful  c) Generous  d) Benevolent
-3. **LETHARGIC** â€” a) Energetic  b) Sluggish  c) Active  d) Alert
-4. **VINDICATE** â€” a) Blame  b) Justify  c) Accuse  d) Punish
-5. **AUSPICIOUS** â€” a) Unfavourable  b) Promising  c) Suspicious  d) Ominous
+1. **SERENDIPITY** — a) Misfortune  b) Chance  c) Planning  d) Disaster
+2. **MALEVOLENT** — a) Kind  b) Spiteful  c) Generous  d) Benevolent
+3. **LETHARGIC** — a) Energetic  b) Sluggish  c) Active  d) Alert
+4. **VINDICATE** — a) Blame  b) Justify  c) Accuse  d) Punish
+5. **AUSPICIOUS** — a) Unfavourable  b) Promising  c) Suspicious  d) Ominous
 
 ### Section B: Antonyms (Q6-Q10)
 
 Choose the correct antonym:
 
-6. **BENEVOLENT** â€” a) Charitable  b) Malevolent  c) Kind  d) Generous
-7. **FRUGAL** â€” a) Economical  b) Thrifty  c) Extravagant  d) Modest
-8. **HUBRIS** â€” a) Humility  b) Arrogance  c) Pride  d) Vanity
-9. **EQUANIMITY** â€” a) Calmness  b) Agitation  c) Composure  d) Serenity
-10. **SANGUINE** â€” a) Optimistic  b) Pessimistic  c) Hopeful  d) Confident
+6. **BENEVOLENT** — a) Charitable  b) Malevolent  c) Kind  d) Generous
+7. **FRUGAL** — a) Economical  b) Thrifty  c) Extravagant  d) Modest
+8. **HUBRIS** — a) Humility  b) Arrogance  c) Pride  d) Vanity
+9. **EQUANIMITY** — a) Calmness  b) Agitation  c) Composure  d) Serenity
+10. **SANGUINE** — a) Optimistic  b) Pessimistic  c) Hopeful  d) Confident
 
 ### Section C: Idioms (Q11-Q15)
 
 Choose the correct meaning:
 
-11. **TO HAVE AN AXE TO GRIND** â€” a) To be angry with someone  b) To have a hidden personal motive  c) To be very tired  d) To be very hungry
-12. **TO STRAIN EVERY NERVE** â€” a) To become ill  b) To make a great effort  c) To become nervous  d) To relax completely
-13. **TO FALL PREY TO** â€” a) To hunt for food  b) To deceive someone  c) To be victimised by  d) To escape danger
-14. **TO TURN A DEAF EAR** â€” a) To listen carefully  b) To ignore deliberately  c) To hear a loud noise  d) To become deaf
-15. **TO GO THE EXTRA MILE** â€” a) To travel farther  b) To make a special effort  c) To get lost  d) To give up
+11. **TO HAVE AN AXE TO GRIND** — a) To be angry with someone  b) To have a hidden personal motive  c) To be very tired  d) To be very hungry
+12. **TO STRAIN EVERY NERVE** — a) To become ill  b) To make a great effort  c) To become nervous  d) To relax completely
+13. **TO FALL PREY TO** — a) To hunt for food  b) To deceive someone  c) To be victimised by  d) To escape danger
+14. **TO TURN A DEAF EAR** — a) To listen carefully  b) To ignore deliberately  c) To hear a loud noise  d) To become deaf
+15. **TO GO THE EXTRA MILE** — a) To travel farther  b) To make a special effort  c) To get lost  d) To give up
 
 ### Section D: Phrasal Verbs (Q16-Q20)
 
 Replace the underlined phrase with the correct phrasal verb:
 
-16. The government decided to **cancel** the subsidy programme. â€” a) call off  b) call in  c) call out  d) call for
-17. The auditor will **investigate** the financial discrepancies. â€” a) look after  b) look into  c) look for  d) look up
-18. The old system was **replaced** by a new one. â€” a) taken in  b) taken over  c) taken off  d) taken down
-19. The proposal was **rejected** by the board. â€” a) turned up  b) turned down  c) turned in  d) turned out
-20. The meeting was **postponed** until next week. â€” a) put off  b) put on  c) put out  d) put in
+16. The government decided to **cancel** the subsidy programme. — a) call off  b) call in  c) call out  d) call for
+17. The auditor will **investigate** the financial discrepancies. — a) look after  b) look into  c) look for  d) look up
+18. The old system was **replaced** by a new one. — a) taken in  b) taken over  c) taken off  d) taken down
+19. The proposal was **rejected** by the board. — a) turned up  b) turned down  c) turned in  d) turned out
+20. The meeting was **postponed** until next week. — a) put off  b) put on  c) put out  d) put in
 
 ### Section E: One-Word Substitution (Q21-Q25)
 
-21. A speech delivered without preparation â€” a) Oration  b) Extempore  c) Lecture  d) Discourse
-22. That which cannot be seen through â€” a) Transparent  b) Opaque  c) Visible  d) Clear
-23. A person who hates mankind â€” a) Philanthropist  b) Misanthrope  c) Polyglot  d) Bibliophile
-24. The study of coins â€” a) Philately  b) Numismatics  c) Ornithology  d) Etymology
-25. A place where bees are kept â€” a) Aviary  b) Apiary  c) Arsenal  d) Mint
+21. A speech delivered without preparation — a) Oration  b) Extempore  c) Lecture  d) Discourse
+22. That which cannot be seen through — a) Transparent  b) Opaque  c) Visible  d) Clear
+23. A person who hates mankind — a) Philanthropist  b) Misanthrope  c) Polyglot  d) Bibliophile
+24. The study of coins — a) Philately  b) Numismatics  c) Ornithology  d) Etymology
+25. A place where bees are kept — a) Aviary  b) Apiary  c) Arsenal  d) Mint
 
 ### Section F: Contextual Usage (Q26-Q30)
 
@@ -870,68 +870,68 @@ Choose the most appropriate word for each blank:
 
 | Word | Meaning | Mnemonic |
 |------|---------|----------|
-| Amortise | Gradually pay off debt | "A-mort-ise" â†’ A mortgage payment plan |
-| Collateral | Security pledged for loan | "Collateral" sounds like "collateral damage" â€” you lose it if you default |
-| Defaulter | One who fails to repay | "De-fault-er" â†’ fault in payment |
-| Disbursement | Paying out money | "Dis-burse-ment" â†’ Burse = purse; paying from purse |
-| Equitable | Fair and just | "Equi-table" â†’ equal table for all |
-| Fiduciary | Involving trust | "Fiduci-ary" â†’ 'fides' = faith/trust in Latin |
+| Amortise | Gradually pay off debt | "A-mort-ise" → A mortgage payment plan |
+| Collateral | Security pledged for loan | "Collateral" sounds like "collateral damage" — you lose it if you default |
+| Defaulter | One who fails to repay | "De-fault-er" → fault in payment |
+| Disbursement | Paying out money | "Dis-burse-ment" → Burse = purse; paying from purse |
+| Equitable | Fair and just | "Equi-table" → equal table for all |
+| Fiduciary | Involving trust | "Fiduci-ary" → 'fides' = faith/trust in Latin |
 | Gratuitous | Unnecessary, free | "Gratis" = free; gratuitous = done without good reason |
 | Hedging | Reducing financial risk | "Hedge" = a fence; hedging fences off risk |
-| Insolvency | Inability to pay debts | "In-solvent" â†’ not able to solve/settle |
-| Leverage | Use of borrowed capital | "Lever-age" â†’ using a lever to amplify force |
-| Liquidity | Availability of cash | "Liquid" â†’ flows easily like water |
-| Moratorium | Temporary suspension | "Moratorium" â†’ 'morari' = to delay (Latin) |
-| Pecuniary | Relating to money | "Pecuniary" â†’ 'pecunia' = money (Latin) |
-| Prudent | Wise, cautious | "Prudent" â†’ 'prudens' = 'providens' (foreseeing) |
-| Remuneration | Payment, salary | "Re-muner-ation" â†’ 'munus' = gift (Latin) |
-| Solvent | Able to pay debts | "Solvent" â†’ able to 'solve' financial obligations |
-| Subvention | Grant, subsidy | "Sub-vention" â†’ 'sub' (under) + 'venire' (come) â€” coming to help |
-| Tenure | Term of holding | "Tenure" â†’ 'tenere' = to hold (Latin) |
-| Underwrite | Guarantee to buy | Under + write â†’ signing at the bottom |
-| Usury | Excess interest | "Usury" sounds like "use" + "ury" â†’ using someone's need |
+| Insolvency | Inability to pay debts | "In-solvent" → not able to solve/settle |
+| Leverage | Use of borrowed capital | "Lever-age" → using a lever to amplify force |
+| Liquidity | Availability of cash | "Liquid" → flows easily like water |
+| Moratorium | Temporary suspension | "Moratorium" → 'morari' = to delay (Latin) |
+| Pecuniary | Relating to money | "Pecuniary" → 'pecunia' = money (Latin) |
+| Prudent | Wise, cautious | "Prudent" → 'prudens' = 'providens' (foreseeing) |
+| Remuneration | Payment, salary | "Re-muner-ation" → 'munus' = gift (Latin) |
+| Solvent | Able to pay debts | "Solvent" → able to 'solve' financial obligations |
+| Subvention | Grant, subsidy | "Sub-vention" → 'sub' (under) + 'venire' (come) — coming to help |
+| Tenure | Term of holding | "Tenure" → 'tenere' = to hold (Latin) |
+| Underwrite | Guarantee to buy | Under + write → signing at the bottom |
+| Usury | Excess interest | "Usury" sounds like "use" + "ury" → using someone's need |
 
 #### Technology & Cybersecurity Theme
 
 | Word | Meaning | Mnemonic |
 |------|---------|----------|
-| Algorithm | Step-by-step procedure | "Algo-rithm" â†’ 'Al-Khwarizmi' (Persian mathematician) |
-| Bandwidth | Data transfer capacity | Band + width â†’ width of a band (of frequencies) |
-| Breach | Security violation | "Breach" = break â€” a break in security |
+| Algorithm | Step-by-step procedure | "Algo-rithm" → 'Al-Khwarizmi' (Persian mathematician) |
+| Bandwidth | Data transfer capacity | Band + width → width of a band (of frequencies) |
+| Breach | Security violation | "Breach" = break — a break in security |
 | Cryptography | Secure communication | "Crypto" = hidden, "graphy" = writing |
-| Decryption | Converting encrypted data | "De-crypt" â†’ reverse of encrypt |
-| Encryption | Converting to code | "En-crypt" â†’ put into a crypt (hidden) |
-| Forensic | Related to investigation | "Forensic" â†’ 'forum' (Latin) â€” where trials happen |
-| Intrusion | Unauthorised entry | "In-trusion" â†’ 'in' + 'trudere' (thrust) |
+| Decryption | Converting encrypted data | "De-crypt" → reverse of encrypt |
+| Encryption | Converting to code | "En-crypt" → put into a crypt (hidden) |
+| Forensic | Related to investigation | "Forensic" → 'forum' (Latin) — where trials happen |
+| Intrusion | Unauthorised entry | "In-trusion" → 'in' + 'trudere' (thrust) |
 | Malware | Malicious software | "Mal" = bad + "ware" = software |
-| Mitigation | Making less severe | "Mitigate" â†’ 'mitis' (mild, soft) |
+| Mitigation | Making less severe | "Mitigate" → 'mitis' (mild, soft) |
 | Phishing | Fraudulent data theft | "Phishing" = password + fishing |
-| Ransomware | Malware demanding payment | "Ransom" + "ware" â€” holds data hostage |
-| Redundancy | Backup system | "Re-dundant" â†’ flowing over (for backup) |
-| Scalability | Ability to handle growth | "Scal(e)-ability" â†’ ability to scale |
-| Vulnerability | Weakness | "Vulnerability" â†’ 'vulnus' = wound (Latin) |
+| Ransomware | Malware demanding payment | "Ransom" + "ware" — holds data hostage |
+| Redundancy | Backup system | "Re-dundant" → flowing over (for backup) |
+| Scalability | Ability to handle growth | "Scal(e)-ability" → ability to scale |
+| Vulnerability | Weakness | "Vulnerability" → 'vulnus' = wound (Latin) |
 
 #### Governance & Administration Theme
 
 | Word | Meaning | Mnemonic |
 |------|---------|----------|
-| Adjudicate | Make a formal judgement | "Ad-judge-icate" â†’ to act as a judge |
-| Bureaucracy | Government administration | "Bureau" (desk) + "cracy" (rule) â†’ rule by desk officers |
-| Consensus | General agreement | "Con-sensus" â†’ 'con' (together) + 'sentire' (feel) |
-| Deliberation | Careful discussion | "De-liber-ation" â†’ 'libera' (balance) â€” weighing options |
-| Enfranchise | Give voting rights | "En-franchise" â†’ 'franc' = free |
+| Adjudicate | Make a formal judgement | "Ad-judge-icate" → to act as a judge |
+| Bureaucracy | Government administration | "Bureau" (desk) + "cracy" (rule) → rule by desk officers |
+| Consensus | General agreement | "Con-sensus" → 'con' (together) + 'sentire' (feel) |
+| Deliberation | Careful discussion | "De-liber-ation" → 'libera' (balance) — weighing options |
+| Enfranchise | Give voting rights | "En-franchise" → 'franc' = free |
 | Franchise | Right to vote | Same root: 'franc' = free |
-| Grievance | Formal complaint | "Grief" + "ance" â†’ grief expressed formally |
+| Grievance | Formal complaint | "Grief" + "ance" → grief expressed formally |
 | Jurisdiction | Legal authority | "Juris" (law) + "dictio" (saying) |
-| Legislation | Making laws | "Legis" (law) + "lation" â†’ making laws |
-| Mandate | Official order | "Mandate" â†’ 'manus' (hand) + 'dare' (give) |
-| Preamble | Introductory statement | "Pre-amble" â†’ 'pre' (before) + 'ambulare' (walk) |
-| Quorum | Minimum members needed | "Quorum" â†’ 'qui' (who) â€” "of whom" a certain number |
-| Ratify | Approve formally | "Rat-ify" â†’ 'ratus' (reckoned/approved) |
-| Suffrage | Right to vote | "Suffrage" â†’ 'suffragium' (voting tablet) |
-| Tribunal | Court of justice | "Tribunal" â†’ 'tribus' (tribe) â€” tribal court |
+| Legislation | Making laws | "Legis" (law) + "lation" → making laws |
+| Mandate | Official order | "Mandate" → 'manus' (hand) + 'dare' (give) |
+| Preamble | Introductory statement | "Pre-amble" → 'pre' (before) + 'ambulare' (walk) |
+| Quorum | Minimum members needed | "Quorum" → 'qui' (who) — "of whom" a certain number |
+| Ratify | Approve formally | "Rat-ify" → 'ratus' (reckoned/approved) |
+| Suffrage | Right to vote | "Suffrage" → 'suffragium' (voting tablet) |
+| Tribunal | Court of justice | "Tribunal" → 'tribus' (tribe) — tribal court |
 | Veto | Reject a decision | "Veto" = "I forbid" (Latin) |
-| Whip | Party enforcer | From hunting â€” whipping members into line |
+| Whip | Party enforcer | From hunting — whipping members into line |
 | Zenith | Highest point | "Zenith" = Arabic 'samt' (path over head) |
 | Zonal | Divided into zones | "Zona" = belt/girdle (Greek) |
 
@@ -939,44 +939,44 @@ Choose the most appropriate word for each blank:
 
 | Word | Meaning | Mnemonic |
 |------|---------|----------|
-| Altruism | Selfless concern for others | "Altruism" â†’ 'alter' (other) â€” thinking of others |
+| Altruism | Selfless concern for others | "Altruism" → 'alter' (other) — thinking of others |
 | Ambivalence | Mixed feelings | "Ambi" (both) + "valence" (strength) |
 | Apathy | Lack of interest | "A" (without) + "pathos" (feeling) |
 | Cacophony | Harsh mixture of sounds | "Caco" (bad) + "phony" (sound) |
-| Catharsis | Emotional release | "Catharsis" â†’ 'kathairein' (to cleanse, Greek) |
+| Catharsis | Emotional release | "Catharsis" → 'kathairein' (to cleanse, Greek) |
 | Dichotomy | Division into two parts | "Dicho" (two) + "tomy" (cutting) |
-| Dogma | Unquestionable belief | "Dogma" = opinion (Greek) â€” opinions that became rigid |
+| Dogma | Unquestionable belief | "Dogma" = opinion (Greek) — opinions that became rigid |
 | Eclectic | Deriving from various sources | "Ek" (out) + "legein" (pick) |
-| Elucidate | Make clear | "E-lucid-ate" â†’ 'lux' (light) â€” bring to light |
+| Elucidate | Make clear | "E-lucid-ate" → 'lux' (light) — bring to light |
 | Emulate | Match or surpass | "Aemulus" = rival (Latin) |
-| Enigma | Mysterious person/thing | "Enigma" â†’ 'ainigma' (riddle, Greek) |
-| Ephemeral | Short-lived | "Epi" (on) + "hemera" (day) â€” lasting only a day |
-| Equivocal | Open to interpretation | "Equi" (equal) + "vox" (voice) â€” two equal meanings |
-| Erudite | Having great knowledge | "E" (out) + "rudis" (rough) â€” polished from rough |
-| Esoteric | Intended for few | "Eso" (inside) â€” understood only by insiders |
-| Fastidious | Very attentive to detail | "Fastidium" (disgust) â€” tries to avoid anything imperfect |
-| Gregarious | Fond of company | "Grex" (flock) â€” like a sheep in a flock |
+| Enigma | Mysterious person/thing | "Enigma" → 'ainigma' (riddle, Greek) |
+| Ephemeral | Short-lived | "Epi" (on) + "hemera" (day) — lasting only a day |
+| Equivocal | Open to interpretation | "Equi" (equal) + "vox" (voice) — two equal meanings |
+| Erudite | Having great knowledge | "E" (out) + "rudis" (rough) — polished from rough |
+| Esoteric | Intended for few | "Eso" (inside) — understood only by insiders |
+| Fastidious | Very attentive to detail | "Fastidium" (disgust) — tries to avoid anything imperfect |
+| Gregarious | Fond of company | "Grex" (flock) — like a sheep in a flock |
 | Iconoclast | Attacker of beliefs | "Eikon" (image) + "klastes" (breaker) |
 | Ideology | System of ideas | "Idea" + "logos" (study/word) |
 | Juxtapose | Place side by side | "Juxta" (next to) + "posere" (to place) |
-| Morose | Sullen and gloomy | "Morose" sounds like "morbid" â†’ gloomy |
+| Morose | Sullen and gloomy | "Morose" sounds like "morbid" → gloomy |
 | Nefarious | Wicked, criminal | "Ne" (not) + "fas" (divine law) |
 | Nostalgia | Longing for the past | "Nostos" (return) + "algia" (pain) |
-| Ominous | Giving evil sign | "Omen" â€” full of omens |
+| Ominous | Giving evil sign | "Omen" — full of omens |
 | Paradox | Self-contradictory statement | "Para" (contrary) + "doxa" (opinion) |
 | Pedantic | Overly concerned with detail | "Pedant" = teacher who shows off learning |
 | Pragmatic | Dealing with practical matters | "Pragma" (deed/action, Greek) |
-| Quintessential | Perfect example | "Quinta essentia" â€” the fifth element (medieval philosophy) |
-| Redundant | Not or no longer needed | "Re" (again) + "undare" (to surge) â€” surging back |
+| Quintessential | Perfect example | "Quinta essentia" — the fifth element (medieval philosophy) |
+| Redundant | Not or no longer needed | "Re" (again) + "undare" (to surge) — surging back |
 | Sceptical | Not easily convinced | "Skepsis" (inquiry, Greek) |
-| Sophistry | Fallacious reasoning | From Sophists â€” ancient Greek teachers of rhetoric |
+| Sophistry | Fallacious reasoning | From Sophists — ancient Greek teachers of rhetoric |
 | Spurious | Not genuine, false | "Spurius" = illegitimate (Latin) |
-| Subjective | Based on personal feelings | "Sub" (under) + "jacere" (throw) â€” thrown under |
-| Succinct | Briefly expressed | "Succinctus" = tucked up (Latin) â€” short |
+| Subjective | Based on personal feelings | "Sub" (under) + "jacere" (throw) — thrown under |
+| Succinct | Briefly expressed | "Succinctus" = tucked up (Latin) — short |
 | Superfluous | Unnecessary, extra | "Super" (above) + "fluere" (to flow) |
-| Sycophant | Person who flatters | "Sykon" (fig) + "phainein" (show) â€” fig-showers |
-| Trivial | Of little importance | "Trivium" â€” the three basic arts (considered elementary) |
-| Verbose | Using more words than needed | "Verbum" (word) â€” full of words |
+| Sycophant | Person who flatters | "Sykon" (fig) + "phainein" (show) — fig-showers |
+| Trivial | Of little importance | "Trivium" — the three basic arts (considered elementary) |
+| Verbose | Using more words than needed | "Verbum" (word) — full of words |
 | Vicarious | Experienced through others | "Vicarius" (substitute) |
 | Whimsical | Playfully unusual | "Whim-wham" = fanciful object |
 | Zealot | Extreme enthusiast | "Zelos" = zeal (Greek) |
@@ -996,9 +996,9 @@ Choose the most appropriate word for each blank:
 
 ## Summary
 
-- Vocabulary carries **4â€“5 questions** in IBPS SO Prelims, plus embedded questions in RC and Cloze
+- Vocabulary carries **4–5 questions** in IBPS SO Prelims, plus embedded questions in RC and Cloze
 - **Synonyms and Antonyms**: Know high-frequency word pairs; use part-of-speech and connotation cues
-- **Idioms**: 25â€“30 common idioms are enough for all exams; learn their exact meanings
+- **Idioms**: 25–30 common idioms are enough for all exams; learn their exact meanings
 - **Phrasal Verbs**: Same verb can combine with different particles to create completely different meanings
 - **One-Word Substitution**: Focus on "ible/able" words, government types, killing terms, and profession-related words
 - **Contextual vocabulary**: The same word can have different meanings in different contexts
@@ -1010,7 +1010,7 @@ Choose the most appropriate word for each blank:
 
 | Strategy | Implementation |
 |----------|----------------|
-| Daily 20 words | Learn 20 new words daily â€” use a notebook or app |
+| Daily 20 words | Learn 20 new words daily — use a notebook or app |
 | Editorial reading | Read one editorial daily and note 5 unfamiliar words |
 | Previous year analysis | Collect all vocabulary words from last 5 years of your target exam |
 | Flashcards | Use spaced repetition for long-term retention |
@@ -1113,21 +1113,21 @@ d) Illegal
 
 Choose the correct synonym for each word:
 
-1. **RECALCITRANT** â€” a) Obedient  b) Stubborn  c) Flexible  d) Cooperative
-2. **AUSPICIOUS** â€” a) Unfavourable  b) Promising  c) Suspicious  d) Dangerous
-3. **PERNICIOUS** â€” a) Harmful  b) Beneficial  c) Harmless  d) Pleasant
-4. **TACITURN** â€” a) Talkative  b) Reserved  c) Emotional  d) Expressive
-5. **VINDICATE** â€” a) Blame  b) Justify  c) Accuse  d) Punish
+1. **RECALCITRANT** — a) Obedient  b) Stubborn  c) Flexible  d) Cooperative
+2. **AUSPICIOUS** — a) Unfavourable  b) Promising  c) Suspicious  d) Dangerous
+3. **PERNICIOUS** — a) Harmful  b) Beneficial  c) Harmless  d) Pleasant
+4. **TACITURN** — a) Talkative  b) Reserved  c) Emotional  d) Expressive
+5. **VINDICATE** — a) Blame  b) Justify  c) Accuse  d) Punish
 
 ### Exercise 2: Antonyms
 
 Choose the correct antonym for each word:
 
-1. **AMICABLE** â€” a) Hostile  b) Friendly  c) Peaceful  d) Cordial
-2. **FRUGAL** â€” a) Economical  b) Extravagant  c) Thrifty  d) Modest
-3. **HUBRIS** â€” a) Arrogance  b) Humility  c) Pride  d) Vanity
-4. **LETHARGIC** â€” a) Energetic  b) Sluggish  c) Tired  d) Lazy
-5. **SERENE** â€” a) Calm  b) Turbulent  c) Peaceful  d) Tranquil
+1. **AMICABLE** — a) Hostile  b) Friendly  c) Peaceful  d) Cordial
+2. **FRUGAL** — a) Economical  b) Extravagant  c) Thrifty  d) Modest
+3. **HUBRIS** — a) Arrogance  b) Humility  c) Pride  d) Vanity
+4. **LETHARGIC** — a) Energetic  b) Sluggish  c) Tired  d) Lazy
+5. **SERENE** — a) Calm  b) Turbulent  c) Peaceful  d) Tranquil
 
 ### Exercise 3: Idioms
 
@@ -1155,12 +1155,12 @@ Fill in the blanks with the correct phrasal verb:
 
 Write the single word that substitutes each phrase:
 
-1. A person who writes the life history of another person â€” __________
-2. A place where dead bodies are kept for identification â€” __________
-3. The practice of marrying one person at a time â€” __________
-4. Animals that can live on land and in water â€” __________
-5. A cure for all diseases â€” __________
+1. A person who writes the life history of another person — __________
+2. A place where dead bodies are kept for identification — __________
+3. The practice of marrying one person at a time — __________
+4. Animals that can live on land and in water — __________
+5. A cure for all diseases — __________
 
 ---
 
-*Proceed to Chapter 4 â€” Verbal Ability*
+*Proceed to Chapter 4 — Verbal Ability*

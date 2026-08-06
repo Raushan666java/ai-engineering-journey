@@ -1,4 +1,4 @@
-﻿# Chapter 4: Evaluation of AI Systems
+# Chapter 4: Evaluation of AI Systems
 
 > **Learning Objectives**
 >
@@ -38,7 +38,7 @@ Traditional machine learning evaluation relies on a single ground-truth label pe
 
 **Open-ended outputs.** A language model asked to "write a poem about spring" can produce thousands of valid responses. There is no single correct answer. Even for constrained tasks like summarization, two equally faithful summaries may use completely different phrasing. This makes exact-match metrics nearly meaningless for creative or generative tasks.
 
-**Multiple valid answers.** When a user asks "What are good ways to reduce carbon emissions?", an AI might list policy changes, technological innovations, or behavioral shifts â€” all of which can be correct. Evaluators must judge not just whether the answer is right, but whether it is comprehensive, well-structured, and appropriately scoped.
+**Multiple valid answers.** When a user asks "What are good ways to reduce carbon emissions?", an AI might list policy changes, technological innovations, or behavioral shifts — all of which can be correct. Evaluators must judge not just whether the answer is right, but whether it is comprehensive, well-structured, and appropriately scoped.
 
 **Subjective quality dimensions.** Quality in generative AI is multi-dimensional: helpfulness, harmlessness, honesty, coherence, fluency, relevance, creativity, instruction-following, and safety are all separate concerns. Two human raters may disagree on whether a response is "helpful" depending on their background, expectations, or cultural context.
 
@@ -77,7 +77,7 @@ Automatic metrics provide a reproducible, low-cost signal for model evaluation. 
 
 **Accuracy** measures the proportion of correct predictions. It is simple and intuitive but fails for imbalanced classes. **Precision** (true positives / predicted positives) measures how many selected items are relevant. **Recall** (true positives / actual positives) measures how many relevant items are selected. **F1 score** is the harmonic mean of precision and recall, providing a single balanced measure.
 
-For generative tasks, these metrics apply when the output is categorical â€” for example, classifying whether a generated response contains harmful content (yes/no) or whether it correctly follows an instruction (pass/fail).
+For generative tasks, these metrics apply when the output is categorical — for example, classifying whether a generated response contains harmful content (yes/no) or whether it correctly follows an instruction (pass/fail).
 
 ### 4.2.2 Text Generation Metrics
 
@@ -113,9 +113,9 @@ Using a strong language model to evaluate the outputs of another model has becom
 
 G-Eval uses chain-of-thought reasoning and a rubric to score model outputs. The evaluator LLM follows a step-by-step process:
 
-1. **Understand the rubric** â€” The judge reads the evaluation criteria (e.g., "coherence: logical flow and structure").
-2. **Analyze the output** â€” The judge examines the generated text in the context of the input prompt.
-3. **Assign a score** â€” The judge outputs a score on a Likert scale (1-5), often with a justification.
+1. **Understand the rubric** — The judge reads the evaluation criteria (e.g., "coherence: logical flow and structure").
+2. **Analyze the output** — The judge examines the generated text in the context of the input prompt.
+3. **Assign a score** — The judge outputs a score on a Likert scale (1-5), often with a justification.
 
 G-Eval achieves higher correlation with human judgment than automatic metrics, especially for coherence, consistency, and relevance.
 
@@ -247,7 +247,7 @@ Different AI tasks require different evaluation approaches. A single metric rare
 
 ### 4.5.1 Question Answering
 
-**Exact Match (EM):** The proportion of generated answers that exactly match the reference answer. EM is strict â€” a single character difference counts as incorrect.
+**Exact Match (EM):** The proportion of generated answers that exactly match the reference answer. EM is strict — a single character difference counts as incorrect.
 
 **F1 Score:** Token-level overlap between the generated and reference answers, averaged across all examples. F1 is more forgiving than EM and captures partial correctness.
 
@@ -763,14 +763,14 @@ class EvalDataset {
 
 ## Summary
 
-Evaluation of AI systems has fundamentally changed with the rise of generative models. The traditional metrics and pipelines that worked for classification and regression are insufficient for open-ended, multi-dimensional quality assessment. Modern evaluation requires a layered approach: automatic metrics for fast, reproducible signals; LLM-as-judge methods for scalable, rubric-based scoring; and human evaluation for gold-standard quality measurement. Building robust evaluation datasets with stratified coverage and difficulty tiers is essential for trustworthy assessment. Continuous evaluation in production â€” combining drift detection, A/B testing, and canary releases â€” ensures that quality is maintained over time. The `EvaluationPipeline` and `EvalDataset` classes provide a concrete foundation for implementing these concepts in TypeScript-based AI systems.
+Evaluation of AI systems has fundamentally changed with the rise of generative models. The traditional metrics and pipelines that worked for classification and regression are insufficient for open-ended, multi-dimensional quality assessment. Modern evaluation requires a layered approach: automatic metrics for fast, reproducible signals; LLM-as-judge methods for scalable, rubric-based scoring; and human evaluation for gold-standard quality measurement. Building robust evaluation datasets with stratified coverage and difficulty tiers is essential for trustworthy assessment. Continuous evaluation in production — combining drift detection, A/B testing, and canary releases — ensures that quality is maintained over time. The `EvaluationPipeline` and `EvalDataset` classes provide a concrete foundation for implementing these concepts in TypeScript-based AI systems.
 
 ---
 
 ## Practical Takeaways
 
 1. Never rely on a single metric; use a portfolio of automatic, LLM-based, and human evaluations.
-2. LLM-as-judge evaluation requires careful bias mitigation â€” randomize response order, control for length, and use separate judge models.
+2. LLM-as-judge evaluation requires careful bias mitigation — randomize response order, control for length, and use separate judge models.
 3. Build golden evaluation datasets early with stratified coverage across categories, difficulties, and task types.
 4. Track inter-annotator agreement (Cohen's Kappa, Fleiss' Kappa) for all human evaluation studies.
 5. Set up continuous evaluation in production with drift detection, shadow evaluation, and canary releases.

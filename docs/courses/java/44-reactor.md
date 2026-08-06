@@ -1,4 +1,4 @@
-﻿# Chapter 44: Project Reactor & Reactive Streams
+# Chapter 44: Project Reactor & Reactive Streams
 
 > **Previous:** [Distributed Tracing &amp; Observability](./43-tracing.md) | **Next:** [Spring WebFlux](./45-webflux.md)
 
@@ -56,7 +56,7 @@ After completing this chapter, you will be able to:
 
 ## 1. The Reactive Manifesto and Why Reactive Matters
 
-> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -66,7 +66,7 @@ After completing this chapter, you will be able to:
 ### 1.1 The Problem with Blocking I/O
 
 
-Traditional servlet-based applications dedicate one thread per request. When that thread reads from a database, calls a remote API, or writes to a file, it blocks â†’ waiting idle while the underlying I/O completes. Under moderate load, thread pools saturate, new requests queue, and latency spirals.
+Traditional servlet-based applications dedicate one thread per request. When that thread reads from a database, calls a remote API, or writes to a file, it blocks → waiting idle while the underlying I/O completes. Under moderate load, thread pools saturate, new requests queue, and latency spirals.
 
 Consider a typical Spring MVC endpoint that calls three downstream services:
 
@@ -106,7 +106,7 @@ Reactive Streams (www.reactive-streams.org) is a specification for asynchronous 
 The contract is strict:
 - `onNext` is never called after `onError` or `onComplete`
 - `onSubscribe` is always called first and exactly once
-- `request(n)` must be honored â†’ the publisher sends at most n items before the next request
+- `request(n)` must be honored → the publisher sends at most n items before the next request
 - The subscriber signals demand; the publisher never pushes without demand
 
 ### 1.3 Project Reactor
@@ -114,14 +114,14 @@ The contract is strict:
 
 Project Reactor is the reactive library underpinning Spring WebFlux, R2DBC, and Spring Cloud Gateway. It implements the Reactive Streams specification and adds:
 
-- **Flux\<T\>** â†’ a publisher of 0..N items (potentially infinite)
-- **Mono\<T\>** â†’ a publisher of 0..1 items (completion or empty)
-- **Rich operator set** â†’ 500+ operators for transformation, filtering, combination, error handling, scheduling
-- **Backpressure-aware** â†’ all operators respect downstream demand
-- **Testability** â†’ `StepVerifier`, `TestPublisher`, `virtualTimeScheduler`
-- **Context propagation** â†’ `Context` API for threading metadata through operator chains
+- **Flux\<T\>** → a publisher of 0..N items (potentially infinite)
+- **Mono\<T\>** → a publisher of 0..1 items (completion or empty)
+- **Rich operator set** → 500+ operators for transformation, filtering, combination, error handling, scheduling
+- **Backpressure-aware** → all operators respect downstream demand
+- **Testability** → `StepVerifier`, `TestPublisher`, `virtualTimeScheduler`
+- **Context propagation** → `Context` API for threading metadata through operator chains
 
-Both `Flux` and `Mono` implement `Publisher<T>` and are lazy â†’ nothing happens until you subscribe.
+Both `Flux` and `Mono` implement `Publisher<T>` and are lazy → nothing happens until you subscribe.
 
 ## 2. Creating Publishers
 
@@ -272,12 +272,12 @@ Every subscription follows this lifecycle:
 
 ```
 subscribe()
-    â†’ onSubscribe(Subscription)
-        â†’ request(n)
-            â†’ onNext(item1)   (repeated n times or until complete/error)
-            â†’ onNext(item2)
-            â†’ ...
-            â†’ onComplete()  or  onError(Throwable)
+    → onSubscribe(Subscription)
+        → request(n)
+            → onNext(item1)   (repeated n times or until complete/error)
+            → onNext(item2)
+            → ...
+            → onComplete()  or  onError(Throwable)
 ```
 
 Here is a low-level subscriber implementation that lets you control demand:
@@ -841,7 +841,7 @@ import java.time.Duration;
 public class BackpressureDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        // Fast publisher, slow subscriber â†’ demonstrates backpressure
+        // Fast publisher, slow subscriber → demonstrates backpressure
         Flux.range(1, 1_000_000)
             .log()
             .subscribeOn(Schedulers.parallel())
@@ -877,7 +877,7 @@ import java.time.Duration;
 public class BackpressureStrategies {
 
     public static void main(String[] args) throws InterruptedException {
-        // Strategy 1: BUFFER â†’ buffer unbounded (default, can cause OOM)
+        // Strategy 1: BUFFER → buffer unbounded (default, can cause OOM)
         Flux.interval(Duration.ofMillis(1))
             .onBackpressureBuffer(1000, v -> System.out.println("Dropped: " + v))
             .publishOn(Schedulers.boundedElastic())
@@ -888,7 +888,7 @@ public class BackpressureStrategies {
 
         Thread.sleep(3000);
 
-        // Strategy 2: DROP â†’ drop items when downstream can't keep up
+        // Strategy 2: DROP → drop items when downstream can't keep up
         Flux.interval(Duration.ofMillis(1))
             .onBackpressureDrop(v -> System.out.println("DROP: " + v))
             .publishOn(Schedulers.boundedElastic())
@@ -899,7 +899,7 @@ public class BackpressureStrategies {
 
         Thread.sleep(3000);
 
-        // Strategy 3: LATEST â†’ keep only the latest value
+        // Strategy 3: LATEST → keep only the latest value
         Flux.interval(Duration.ofMillis(1))
             .onBackpressureLatest()
             .publishOn(Schedulers.boundedElastic())
@@ -910,7 +910,7 @@ public class BackpressureStrategies {
 
         Thread.sleep(3000);
 
-        // Strategy 4: ERROR â†’ throw OverflowException if downstream can't keep up
+        // Strategy 4: ERROR → throw OverflowException if downstream can't keep up
         Flux.interval(Duration.ofMillis(1))
             .onBackpressureError()
             .publishOn(Schedulers.boundedElastic())
@@ -1057,7 +1057,7 @@ import java.time.Instant;
 public class ParallelExecution {
 
     public static void main(String[] args) throws InterruptedException {
-        // Sequential flatMap â†’ one at a time
+        // Sequential flatMap → one at a time
         Instant start = Instant.now();
         Flux.range(1, 5)
             .flatMap(i -> simulateExternalCall(i, 200))
@@ -1066,7 +1066,7 @@ public class ParallelExecution {
         System.out.println("Sequential took: " +
             Duration.between(start, Instant.now()).toMillis() + "ms\n");
 
-        // Parallel flatMap â†’ up to 4 concurrent
+        // Parallel flatMap → up to 4 concurrent
         start = Instant.now();
         Flux.range(1, 12)
             .flatMap(i -> simulateExternalCall(i, 200)
@@ -1076,7 +1076,7 @@ public class ParallelExecution {
         System.out.println("Parallel(4) took: " +
             Duration.between(start, Instant.now()).toMillis() + "ms\n");
 
-        // Parallel flatMap â†’ unlimited concurrency
+        // Parallel flatMap → unlimited concurrency
         start = Instant.now();
         Flux.range(1, 12)
             .flatMap(i -> simulateExternalCall(i, 200)
@@ -1086,7 +1086,7 @@ public class ParallelExecution {
         System.out.println("Parallel(unbounded) took: " +
             Duration.between(start, Instant.now()).toMillis() + "ms\n");
 
-        // ParallelFlux â†’ for CPU-bound parallel processing
+        // ParallelFlux → for CPU-bound parallel processing
         start = Instant.now();
         Flux.range(1, 1_000_000)
             .parallel(4)
@@ -2199,12 +2199,12 @@ public class CommonPitfalls {
         cold.subscribe(); // Side effect runs AGAIN
 
         // Pitfall 7: ignoring Mono.empty() vs Mono.error()
-        // Empty completes silently, error propagates â†’ choose deliberately
+        // Empty completes silently, error propagates → choose deliberately
 
-        // Pitfall 8: subscribe() without consumer â†’ errors are silently swallowed!
+        // Pitfall 8: subscribe() without consumer → errors are silently swallowed!
         System.out.println("\n=== Pitfall 8: Silent error ===");
         Flux.error(new RuntimeException("Silent error"))
-            .subscribe(); // No output â†’ error is lost
+            .subscribe(); // No output → error is lost
             // Always log errors in subscribe
     }
 }
@@ -2368,10 +2368,10 @@ class ComprehensiveStepVerifierTests {
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
-| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
-| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Small application | ✓ | ✗ | ✓ |
+| Enterprise system | ✓ | ✓ | ✗ |
+| High-throughput API | ✗ | ✓ | ✓ |
+| Event-driven | ✗ | ✓ | ✓ |
 
 ## Chapter Quiz
 
@@ -2401,7 +2401,7 @@ class ComprehensiveStepVerifierTests {
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never â†’ it is outdated
+   - D) Never → it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;
@@ -2414,7 +2414,7 @@ This chapter covered the full scope of Project Reactor and the Reactive Streams 
 
 1. **Reactive Streams** defines four interfaces: Publisher, Subscriber, Subscription, and Processor with a strict signaling protocol and mandatory backpressure support.
 
-2. **Flux** (0..N items) and **Mono** (0..1 item) are the two primary publisher types in Reactor. They are lazy â†’ nothing executes until a subscription is made.
+2. **Flux** (0..N items) and **Mono** (0..1 item) are the two primary publisher types in Reactor. They are lazy → nothing executes until a subscription is made.
 
 3. **Creating publishers** uses factories like `just()`, `fromIterable()`, `range()`, `interval()`, `generate()`, `create()`, and `defer()`.
 

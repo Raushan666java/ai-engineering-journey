@@ -1,4 +1,4 @@
-﻿# Phase 5 â€” Portfolio + Market Positioning
+# Phase 5 — Portfolio + Market Positioning
 
 **Duration:** Weeks 11-12, ~15 hours + ongoing applications
 **Goal:** Package your projects into something a recruiter understands in 60 seconds. Rewrite profiles. Start applying.
@@ -42,7 +42,7 @@
 | 12 | Building in public + content strategy | 2 | First LinkedIn post published, 3 more scheduled |
 | 13 | Certifications worth pursuing | 2 | 1 certification completed and listed on LinkedIn |
 | 14 | Networking in the Dubai AI scene | 1.5 | Joined 2 communities + 3 LinkedIn connections sent |
-| 15 | Modern AI frameworks â€” landscape & strategy | 2 | Can explain 6 major frameworks, their strengths, and when to use each |
+| 15 | Modern AI frameworks — landscape & strategy | 2 | Can explain 6 major frameworks, their strengths, and when to use each |
 | 16 | Trending AI repos to follow | 1 | Following 10+ key repos, can cite latest developments in interviews |
 
 ---
@@ -98,7 +98,7 @@ Python, FastAPI, ChromaDB, Redis, OpenAI, Docker, Cloudflare Tunnel
 
 ### Exercise
 
-Rewrite both project READMEs using this structure. Time someone reading them â€” if they can't understand the project in 60 seconds, rewrite.
+Rewrite both project READMEs using this structure. Time someone reading them — if they can't understand the project in 60 seconds, rewrite.
 
 ---
 
@@ -158,7 +158,7 @@ Content already drafted in `docs/profile/upwork-raw.md`. Key requirements:
 ### Overview structure
 
 
-1. **Who you are** (1 sentence): "I build production agent systems â€” LangGraph orchestrators, RAG pipelines, MCP servers."
+1. **Who you are** (1 sentence): "I build production agent systems — LangGraph orchestrators, RAG pipelines, MCP servers."
 2. **What you've built** (2-3 sentences): ChromaDB server, LangGraph pipeline, production ERP with WhatsApp AI.
 3. **Your background** (1 sentence): "Started as full-stack developer, went all-in on AI engineering in 2025."
 4. **Your stack** (comma-separated list matching the tags above)
@@ -178,7 +178,7 @@ Content already drafted in `docs/profile/linkedin-rewrite.md`.
 
 
 ```
-AI Agent Engineer | LangGraph Â· RAG Â· FastAPI Â· MCP Â· Production Agentics
+AI Agent Engineer | LangGraph · RAG · FastAPI · MCP · Production Agentics
 ```
 
 Alternatively:
@@ -234,7 +234,7 @@ Publish one case-study post on LinkedIn (native post, not a link to a blog). Spe
 
 ## 5.6 Dubai Job Search + Applications
 
-> **See the full playbook:** [08-job-search-playbook.md](08-job-search-playbook.md) â€” covers job sites, networking, proposals, interviews, Dubai visa process, and pipeline management in depth.
+> **See the full playbook:** [08-job-search-playbook.md](08-job-search-playbook.md) — covers job sites, networking, proposals, interviews, Dubai visa process, and pipeline management in depth.
 
 ### Where to search (quick reference)
 
@@ -290,25 +290,25 @@ Query: User question ? embed ? ANN search (HNSW, top_k=5) ? re-rank (Cohere rera
 Cosine measures angle, ignoring magnitude. In embedding space, a document's meaning is its direction, not its length. A long and short document saying the same thing have the same direction.
 
 **Q3: What's the difference between an agent and a chain?**
-A chain is a fixed sequence of LLM calls. An agent decides which action to take next based on the current state â€” it can choose tool A or tool B depending on what the user asked.
+A chain is a fixed sequence of LLM calls. An agent decides which action to take next based on the current state — it can choose tool A or tool B depending on what the user asked.
 
 **Q4: How do you prevent hallucination in RAG?**
 1. Set a relevance threshold on retrieved chunks (reject low-score results)
 2. Instruct the LLM: "If the context doesn't contain the answer, say 'I don't know'"
-3. Add citation requirements â€” force the model to cite specific chunks
+3. Add citation requirements — force the model to cite specific chunks
 4. Re-rank to push irrelevant chunks below the cutoff
 
-**Q5: LangGraph vs OpenAI Agents SDK â€” when to use what?**
+**Q5: LangGraph vs OpenAI Agents SDK — when to use what?**
 OpenAI Agents SDK: simple tool-use, single-agent, fast setup (5 min). LangGraph: complex state machines, multi-agent coordination, human-in-the-loop, production reliability (checkpointer, crash recovery).
 
 **Q6: How do you handle rate limiting for an AI API?**
 Token bucket per user with 5 req/min burst. Sliding window for total API load. Queue overflow to Redis and process async. Return 429 with Retry-After header.
 
 **Q7: Explain the MCP protocol.**
-Model Context Protocol: 3 primitives â€” Tools (actions the LLM can take), Resources (data the LLM can read), Prompts (pre-built prompt templates). The LLM discovers these at connection time and uses them as needed.
+Model Context Protocol: 3 primitives — Tools (actions the LLM can take), Resources (data the LLM can read), Prompts (pre-built prompt templates). The LLM discovers these at connection time and uses them as needed.
 
 **Q8: How do you estimate LLM API costs?**
-Token count Ã— per-token price. GPT-4: $30/1M input, $60/1M output. A 4-step agent chain with 4K tokens per step costs ~$0.48 per run. Add 20% for retries.
+Token count × per-token price. GPT-4: $30/1M input, $60/1M output. A 4-step agent chain with 4K tokens per step costs ~$0.48 per run. Add 20% for retries.
 
 **Q9: How do you test an agent?**
 1. Unit test each tool function independently
@@ -354,7 +354,7 @@ print(f"Minimum hourly rate: ${min_hourly:.0f}/hr")
 current_annual = 0  # Your current annual salary in USD
 desired_annual = 36000  # Minimum annual target
 print(f"Minimum annual salary: ${desired_annual:,}")
-# For Dubai: convert to AED (Ã· 3.67)
+# For Dubai: convert to AED (÷ 3.67)
 print(f"Minimum monthly AED: {desired_annual / 12 * 3.67:.0f} AED")
 ```
 
@@ -362,7 +362,7 @@ print(f"Minimum monthly AED: {desired_annual / 12 * 3.67:.0f} AED")
 
 
 **On rate:**
-> "I'd love to work on this. Based on the scope you described, which involves building a custom LangGraph pipeline with MCP integration, my rate is $X/hr. If the budget is tighter, I can scope it down to a simpler architecture â€” what range were you targeting?"
+> "I'd love to work on this. Based on the scope you described, which involves building a custom LangGraph pipeline with MCP integration, my rate is $X/hr. If the budget is tighter, I can scope it down to a simpler architecture — what range were you targeting?"
 
 **On salary:**
 > "I'm targeting roles in the 18K-25K AED range for AI agent engineering positions, given my experience with LangGraph, MCP, and production deployment. Is that aligned with your budget for this role?"
@@ -386,7 +386,7 @@ Your GitHub profile is often the first thing a technical interviewer checks afte
 | **Pinned repos** | Pin all 3 portfolio projects | First thing visitors see |
 | **Contribution graph** | Commit daily (even small fixes/docs) to keep the graph green | Passive credibility signal |
 | **Topics** | Add technologies to each repo (langgraph, rag, fastapi, chromadb, mcp) | Helps your repos appear in searches |
-| **README per repo** | Follow the template from Â§5.1 on every project repo | Consistent presentation |
+| **README per repo** | Follow the template from §5.1 on every project repo | Consistent presentation |
 
 ### Profile README template
 
@@ -395,16 +395,16 @@ Your GitHub profile is often the first thing a technical interviewer checks afte
 ### ?? I build production AI agent systems
 
 
-**What I do:** LangGraph state machines Â· RAG pipelines Â· MCP servers Â· FastAPI backends
+**What I do:** LangGraph state machines · RAG pipelines · MCP servers · FastAPI backends
 
 **Live projects:**
-- ?? [RAG Memory API](https://rag-demo.apexpillar.tech) â€” document Q&A with cited sources
-- ?? [LangGraph Agent Pipeline](https://github.com/yourname/purvanchal-langgraph) â€” multi-node agent state machine
-- ?? [Booking Module (FastAPI)](https://github.com/yourname/booking-api) â€” async real-estate booking port
+- ?? [RAG Memory API](https://rag-demo.apexpillar.tech) — document Q&A with cited sources
+- ?? [LangGraph Agent Pipeline](https://github.com/yourname/purvanchal-langgraph) — multi-node agent state machine
+- ?? [Booking Module (FastAPI)](https://github.com/yourname/booking-api) — async real-estate booking port
 
-**Stack:** Python Â· FastAPI Â· LangGraph Â· CrewAI Â· MCP Â· ChromaDB Â· Qdrant Â· Docker Â· Redis
+**Stack:** Python · FastAPI · LangGraph · CrewAI · MCP · ChromaDB · Qdrant · Docker · Redis
 
-?? [LinkedIn](https://linkedin.com/in/yourprofile) Â· [Upwork](https://upwork.com/freelancers/yourprofile)
+?? [LinkedIn](https://linkedin.com/in/yourprofile) · [Upwork](https://upwork.com/freelancers/yourprofile)
 ```
 
 ### Exercise
@@ -415,7 +415,7 @@ Create your profile README repo. Pin your 3 project repos. Verify each has prope
 
 ## 5.11 Portfolio Website
 
-A simple single-page portfolio site gives you control over your narrative and a centralized link for applications. No need for a complex build â€” a single HTML file hosted on Cloudflare Pages or GitHub Pages.
+A simple single-page portfolio site gives you control over your narrative and a centralized link for applications. No need for a complex build — a single HTML file hosted on Cloudflare Pages or GitHub Pages.
 
 ### Minimal structure
 
@@ -427,7 +427,7 @@ A simple single-page portfolio site gives you control over your narrative and a 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Agent Engineer â€” Raushan Kumar</title>
+  <title>AI Agent Engineer — Raushan Kumar</title>
   <style>
     body { font-family: system-ui; max-width: 800px; margin: auto; padding: 2rem; }
     .project { border-left: 3px solid #0070f3; padding-left: 1rem; margin: 1.5rem 0; }
@@ -437,7 +437,7 @@ A simple single-page portfolio site gives you control over your narrative and a 
 </head>
 <body>
   <h1>Raushan Kumar</h1>
-  <p><strong>AI Agent Engineer</strong> â€” LangGraph Â· RAG Â· FastAPI Â· MCP</p>
+  <p><strong>AI Agent Engineer</strong> — LangGraph · RAG · FastAPI · MCP</p>
 
   <h2>Projects</h2>
   <div class="project">
@@ -457,7 +457,7 @@ A simple single-page portfolio site gives you control over your narrative and a 
   </div>
 
   <h2>Links</h2>
-  <p><a href="https://github.com/yourname">GitHub</a> Â· <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> Â· <a href="https://upwork.com/freelancers/yourprofile">Upwork</a></p>
+  <p><a href="https://github.com/yourname">GitHub</a> · <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> · <a href="https://upwork.com/freelancers/yourprofile">Upwork</a></p>
 </body>
 </html>
 ```
@@ -468,7 +468,7 @@ A simple single-page portfolio site gives you control over your narrative and a 
 1. Push the HTML file to a GitHub repo
 2. Go to Cloudflare Dashboard ? Workers & Pages ? Create ? Pages
 3. Connect your GitHub repo
-4. Framework preset: "None" â€” just deploy the static folder
+4. Framework preset: "None" — just deploy the static folder
 5. Set a custom subdomain: `raushan-ai.pages.dev` or use your apexpillar.tech subdomain
 
 ### Exercise
@@ -538,7 +538,7 @@ Certifications won't get you hired on their own, but they can help you past HR f
 
 - Generic "AI for Everyone" courses (too basic for agent roles)
 - Certifications from unverifiable providers (Udemy completion badges)
-- Outdated certs (TensorFlow Developer Certificate â€” framework-specific and stale)
+- Outdated certs (TensorFlow Developer Certificate — framework-specific and stale)
 
 ### How to list them
 
@@ -547,7 +547,7 @@ Certifications won't get you hired on their own, but they can help you past HR f
 **Certifications:**
 - OpenAI API Certified (2026)
 - AWS AI Practitioner (in progress)
-- LangGraph Academy â€” Advanced Agent Patterns (2026)
+- LangGraph Academy — Advanced Agent Patterns (2026)
 ```
 
 ### Exercise
@@ -590,7 +590,7 @@ Raushan
 ### Keep the pipeline warm
 
 
-- Set a recurring calendar reminder: "Dubai networking â€” 30 min"
+- Set a recurring calendar reminder: "Dubai networking — 30 min"
 - Review on Sunday: who to DM, which meetup to register, which post to comment on
 - Track connections in a spreadsheet: Name, Company, When met, Follow-up date, Notes
 
@@ -600,9 +600,9 @@ Join 2 of the online communities above. Register for the next Dubai AI Meetup. S
 
 ---
 
-## 5.15 Modern AI Frameworks â€” Landscape & Strategy
+## 5.15 Modern AI Frameworks — Landscape & Strategy
 
-Knowing the framework landscape signals that you understand the industry â€” not just your own stack. Interviewers ask "Why LangGraph over CrewAI?" and your answer needs data, not vibes.
+Knowing the framework landscape signals that you understand the industry — not just your own stack. Interviewers ask "Why LangGraph over CrewAI?" and your answer needs data, not vibes.
 
 ### The 2026 Landscape (ranked by GitHub stars)
 
@@ -614,8 +614,8 @@ Knowing the framework landscape signals that you understand the industry â€�
 | 3 | **Langflow** | ~147K | Logspace | Visual drag-and-drop agent builder |
 | 4 | **Dify** | ~136K | Dify | Production platform for agentic workflows |
 | 5 | **LangGraph** | ~33K | LangChain Inc. | Stateful graph-based production agents |
-| 6 | **CrewAI** | ~54K | JoÃ£o Moura | Role-based multi-agent orchestration |
-| 7 | **AutoGen** | ~57K | Microsoft | MAINTENANCE MODE â€” replaced by MAF |
+| 6 | **CrewAI** | ~54K | João Moura | Role-based multi-agent orchestration |
+| 7 | **AutoGen** | ~57K | Microsoft | MAINTENANCE MODE — replaced by MAF |
 | 8 | **MAF** | ~11K | Microsoft | Enterprise stack, .NET + Python, successor to AutoGen |
 | 9 | **OpenAI Agents SDK** | ~27K | OpenAI | Lightweight multi-agent for OpenAI-native stacks |
 | 10 | **smolagents** | ~28K | Hugging Face | Minimal code-agent library, model-agnostic |
@@ -643,23 +643,23 @@ You don't need all 16. Here's the priority order for an AI Agent Engineer:
 
 ```
 What are you building?
-Â¦
+¦
 +- One agent with tools ? try smolagents or OpenAI Agents SDK
-Â¦
+¦
 +- Multi-step workflow with state
-Â¦   +- Simple ? LLM Router pattern (just if-else tool dispatch)
-Â¦   +- Complex ? LangGraph (checkpoints, human-in-loop, cycles)
-Â¦
+¦   +- Simple ? LLM Router pattern (just if-else tool dispatch)
+¦   +- Complex ? LangGraph (checkpoints, human-in-loop, cycles)
+¦
 +- Multi-agent team
-Â¦   +- Role-based, protoype fast ? CrewAI
-Â¦   +- Enterprise, .NET ? Microsoft Agent Framework (MAF)
-Â¦
+¦   +- Role-based, protoype fast ? CrewAI
+¦   +- Enterprise, .NET ? Microsoft Agent Framework (MAF)
+¦
 +- Browser automation ? Browser-use
-Â¦
+¦
 +- Long-running autonomous agent ? AutoGPT
-Â¦
+¦
 +- Visual/no-code builder ? Langflow or Dify
-Â¦
+¦
 +- "I don't know yet" ? Start with smolagents or OpenAI Agents SDK
 ```
 
@@ -675,18 +675,18 @@ Observability ? LangSmith or OpenTelemetry
 Deployment ? Docker + FastAPI + Cloudflare Tunnel
 ```
 
-**The migration path:** Teams consistently start with CrewAI for speed, then migrate to LangGraph for production control. This is normal â€” plan for it.
+**The migration path:** Teams consistently start with CrewAI for speed, then migrate to LangGraph for production control. This is normal — plan for it.
 
 ### Interview talking points
 
 
 When asked "Which framework should we use?":
 
-> "For a production agent with state persistence and human-in-the-loop, I'd use **LangGraph** â€” it has checkpoint recovery, TypedDict state management, and LangSmith observability. For rapid prototyping of a multi-agent research workflow, **CrewAI** gets you a working demo in hours. If you're on the Microsoft stack, **MAF** is the play. And whatever framework we pick, I'd pair it with **MCP** for tool interoperability so we're not locked into one provider's protocol."
+> "For a production agent with state persistence and human-in-the-loop, I'd use **LangGraph** — it has checkpoint recovery, TypedDict state management, and LangSmith observability. For rapid prototyping of a multi-agent research workflow, **CrewAI** gets you a working demo in hours. If you're on the Microsoft stack, **MAF** is the play. And whatever framework we pick, I'd pair it with **MCP** for tool interoperability so we're not locked into one provider's protocol."
 
 ### Exercise
 
-Pick 2 frameworks from the "Awareness" tier you haven't used. Spend 1 hour each reading their quickstart and building one small example. You don't need production depth â€” just enough to say "I've tried X and here's what I noticed" in an interview.
+Pick 2 frameworks from the "Awareness" tier you haven't used. Spend 1 hour each reading their quickstart and building one small example. You don't need production depth — just enough to say "I've tried X and here's what I noticed" in an interview.
 
 ---
 
@@ -701,18 +701,18 @@ These are the most influential repos by category:
 
 | Category | Repo | Stars | Why it matters |
 |----------|------|-------|---------------|
-| **Coding Agent** | openai/openai-agents-python | 27K | The official OpenAI multi-agent SDK â€” lightweight, provider-agnostic |
+| **Coding Agent** | openai/openai-agents-python | 27K | The official OpenAI multi-agent SDK — lightweight, provider-agnostic |
 | **Code Agent** | huggingface/smolagents | 28K | Code-as-action agents, sandboxed execution, barebones philosophy |
-| **Browser Agent** | browser-use | 86K | Make any website accessible to AI agents â€” huge for automation |
-| **Memory** | mem0ai/mem0 | 52K | Universal memory layer â€” persistent agent context across sessions |
+| **Browser Agent** | browser-use | 86K | Make any website accessible to AI agents — huge for automation |
+| **Memory** | mem0ai/mem0 | 52K | Universal memory layer — persistent agent context across sessions |
 | **RAG** | infiniflow/ragflow | 77K | Deep document understanding + agent capabilities |
-| **GUI Agent Builder** | Langflow | 147K | Visual drag-and-drop â€” understand what no-code looks like |
-| **Agent OS** | Significant-Gravitas/AutoGPT | 183K | The original autonomous agent â€” still the most-starred |
+| **GUI Agent Builder** | Langflow | 147K | Visual drag-and-drop — understand what no-code looks like |
+| **Agent OS** | Significant-Gravitas/AutoGPT | 183K | The original autonomous agent — still the most-starred |
 | **Multi-Agent** | facebookresearch/hyperagents | 2.6K | Self-referential self-improving agents (Meta Research, new) |
-| **Agents Course** | microsoft/ai-agents-for-beginners | 56K | Microsoft's 12-lesson course â€” great for structured learning |
+| **Agents Course** | microsoft/ai-agents-for-beginners | 56K | Microsoft's 12-lesson course — great for structured learning |
 | **Agent Kit** | vudovn/ag-kit | 7.7K | Multi-agent templates with coordinator mode & persistent memory |
-| **Tool platform** | Dify | 136K | Production agentic workflow platform â€” full-stack |
-| **MCP Ecosystem** | modelcontextprotocol/servers | 15K+ | Official + community MCP servers â€” the interoperability layer |
+| **Tool platform** | Dify | 136K | Production agentic workflow platform — full-stack |
+| **MCP Ecosystem** | modelcontextprotocol/servers | 15K+ | Official + community MCP servers — the interoperability layer |
 | **Visual builder** | Flowise | 52K | Low-code AI agent builder with drag-and-drop |
 
 ### How to stay updated
@@ -721,7 +721,7 @@ These are the most influential repos by category:
 | Method | What to do | Time |
 |--------|-----------|------|
 | **GitHub trending** | Check github.com/trending/python weekly | 5 min/week |
-| **OSSInsight** | ossinsight.io/trending/ai â€” data-driven repo rankings | 5 min/week |
+| **OSSInsight** | ossinsight.io/trending/ai — data-driven repo rankings | 5 min/week |
 | **Hacker News** | Search "Show HN: AI" + filter by recent | 10 min/week |
 | **Twitter/X** | Follow @langchain, @crewAI, @huggingface | Passive |
 | **Newsletter** | The Rundown AI, TLDR AI, AI Agent Insider | 10 min/read |
@@ -729,9 +729,9 @@ These are the most influential repos by category:
 ### How to use repos in your job search
 
 
-1. **In interviews:** "I've been following the `browser-use` repo â€” it's solving the problem of making any website accessible to AI agents. I'm experimenting with it for automated testing of my RAG API."
+1. **In interviews:** "I've been following the `browser-use` repo — it's solving the problem of making any website accessible to AI agents. I'm experimenting with it for automated testing of my RAG API."
 
-2. **On LinkedIn:** Share a reaction to a trending release. "Just read the smolagents v1.26 release â€” sandboxed code execution via E2B is a game-changer for agent safety. Anyone tried it?"
+2. **On LinkedIn:** Share a reaction to a trending release. "Just read the smolagents v1.26 release — sandboxed code execution via E2B is a game-changer for agent safety. Anyone tried it?"
 
 3. **In your README:** Cite repos your project builds on. Mention specific versions.
 
@@ -806,7 +806,7 @@ class RegressionDetector {
 export { EvalCase, EvalResult, EvalRunner, ExactMatchScorer, FuzzyScorer, LLMAsJudgeScorer, RegressionDetector }
 ## Final Words
 
-You already run production systems on Hetzner with ChromaDB, FastAPI, LangGraph, and MCP. The gap isn't technical â€” it's that the output is scattered across a course repo and personal infra, not packaged as a portfolio.
+You already run production systems on Hetzner with ChromaDB, FastAPI, LangGraph, and MCP. The gap isn't technical — it's that the output is scattered across a course repo and personal infra, not packaged as a portfolio.
 
 These 16 sections close that gap. At the end, a recruiter opens your profile and sees: "AI Agent Engineer" ? "LangGraph, RAG, FastAPI, MCP" ? "Live demo at rag-demo.apexpillar.tech" ? "Open-source pipeline on GitHub" ? "Published posts on LinkedIn" ? "Portfolio at portfolio.apexpillar.tech."
 

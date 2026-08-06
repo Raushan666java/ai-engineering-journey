@@ -1,4 +1,4 @@
-﻿# Chapter 2: Processes
+# Chapter 2: Processes
 
 **<< [Introduction to Operating Systems](./01-introduction.md)** | [**Next: CPU Scheduling**](./03-cpu-scheduling.md) >>
 
@@ -35,7 +35,7 @@
 
 ## Why Process Management Matters
 
-Imagine a car factory assembly line. Multiple car models â†’ sedans, SUVs, trucks â†’ move through the same line simultaneously. Each vehicle is at a different stage: one getting an engine, another getting painted, a third undergoing quality inspection. The factory manager (OS) must track each vehicle's status, allocate resources (workers, tools, paint), switch between tasks efficiently, and handle emergencies (defective parts, stalled machines). Without this management, chaos ensues â†’ collisions, idle workers, missed deadlines.
+Imagine a car factory assembly line. Multiple car models → sedans, SUVs, trucks → move through the same line simultaneously. Each vehicle is at a different stage: one getting an engine, another getting painted, a third undergoing quality inspection. The factory manager (OS) must track each vehicle's status, allocate resources (workers, tools, paint), switch between tasks efficiently, and handle emergencies (defective parts, stalled machines). Without this management, chaos ensues → collisions, idle workers, missed deadlines.
 
 A computer operates identically. Multiple programs (processes) share the CPU, memory, and I/O devices. The OS must:
 - Track each process's state (what stage it's in)
@@ -80,11 +80,11 @@ flowchart LR
 
 #### Real-World Analogy: Blueprint vs Building Under Construction
 
-A **program** is like a building blueprint â†’ a static document describing what to build. A **process** is the actual construction site â†’ workers moving, materials arriving, foundation being laid. One blueprint can produce multiple construction sites (running multiple instances of the same program).
+A **program** is like a building blueprint → a static document describing what to build. A **process** is the actual construction site → workers moving, materials arriving, foundation being laid. One blueprint can produce multiple construction sites (running multiple instances of the same program).
 
 #### Definition
 
-A **process** is an instance of a program in execution. While a program is a passive entity (a file on disk), a process is active â†’ it has a program counter, register values, a stack, and data sections.
+A **process** is an instance of a program in execution. While a program is a passive entity (a file on disk), a process is active → it has a program counter, register values, a stack, and data sections.
 
 The key insight: **one program can produce many processes**. Opening three terminal windows running `bash` creates three processes from the same binary.
 
@@ -282,7 +282,7 @@ pm.terminate(p1)
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
-| Isolation | Processes are isolated â†’ one crash cannot directly affect another | IPC overhead required for cross-process communication |
+| Isolation | Processes are isolated → one crash cannot directly affect another | IPC overhead required for cross-process communication |
 | Security | Each process has separate address space | Context switching is expensive |
 | Design | Clean abstraction for multitasking | Creation overhead (fork copies address space) |
 | Scalability | Works on single-core to many-core systems | Number of processes limited by PID table and memory |
@@ -323,8 +323,8 @@ A process's memory is like an office building. The **text section** is the build
 
 - **Text section**: Contains compiled binary code. Read-only to prevent accidental modification.
 - **Data section**: Global and static variables (BSS for uninitialized data, initialized data segment).
-- **Heap**: Dynamically allocated memory â†’ grows upward toward higher addresses.
-- **Stack**: Function call frames, local variables â†’ grows downward.
+- **Heap**: Dynamically allocated memory → grows upward toward higher addresses.
+- **Stack**: Function call frames, local variables → grows downward.
 
 #### Algorithm: Memory Allocation Steps
 
@@ -693,7 +693,7 @@ for e in [Event.ADMITTED, Event.DISPATCH, Event.IO_WAIT,
 | Edge Case | Description | Handling |
 |-----------|-------------|----------|
 | **Starvation** | Low-priority process never gets CPU | Use aging (gradually increase priority over time) |
-| **Deadlock** | Process A waits on B, B waits on A â†’ both stuck in WAITING forever | OS must detect via cycle detection or use timeout |
+| **Deadlock** | Process A waits on B, B waits on A → both stuck in WAITING forever | OS must detect via cycle detection or use timeout |
 | **State Confusion** | Race condition where two events fire simultaneously | Lock state transitions with spinlock/mutex |
 | **Infinite Loop** | Process in RUNNING never yields CPU | Timer interrupt forces preemption after quantum expires |
 | **Orphan in Waiting** | Parent dies while child is waiting on I/O | Child becomes orphan; init (PID 1) adopts and eventually cleans up |
@@ -702,11 +702,11 @@ for e in [Event.ADMITTED, Event.DISPATCH, Event.IO_WAIT,
 
 #### Real-World Analogy: Employee File in HR
 
-Every employee has an HR file containing their employee ID, job title, current assignment, salary, skills, performance reviews, and project history. When a manager needs to reassign the employee, the HR file is retrieved, updated, and filed. The **PCB** is the OS's HR file for each process â†’ it contains everything the kernel needs to manage, schedule, and track that process.
+Every employee has an HR file containing their employee ID, job title, current assignment, salary, skills, performance reviews, and project history. When a manager needs to reassign the employee, the HR file is retrieved, updated, and filed. The **PCB** is the OS's HR file for each process → it contains everything the kernel needs to manage, schedule, and track that process.
 
 #### Definition
 
-The OS maintains a **Process Control Block** for every process â†’ a data structure that holds all information needed to manage that process. Also known as a task control block. On Linux, the PCB is the `task_struct` structure in `<linux/sched.h>` containing hundreds of fields.
+The OS maintains a **Process Control Block** for every process → a data structure that holds all information needed to manage that process. Also known as a task control block. On Linux, the PCB is the `task_struct` structure in `<linux/sched.h>` containing hundreds of fields.
 
 #### PCB Contents
 
@@ -991,7 +991,7 @@ print(f"P1 PC: {hex(p1.program_counter)}, R0: {p1.registers[0]}")
 
 #### Real-World Analogy: Switching Workers on an Assembly Line
 
-Imagine an assembly line where one worker installs engines and another installs wheels. When the whistle blows, Worker A must **save** their progress (which car, which bolt, torque wrench setting), step aside, and Worker B must **restore** their setup (tools, position, parts). The time spent swapping is lost production â†’ no cars move during the changeover. Context switching is identical: the CPU saves one process's state and loads another's, doing zero productive work during the swap.
+Imagine an assembly line where one worker installs engines and another installs wheels. When the whistle blows, Worker A must **save** their progress (which car, which bolt, torque wrench setting), step aside, and Worker B must **restore** their setup (tools, position, parts). The time spent swapping is lost production → no cars move during the changeover. Context switching is identical: the CPU saves one process's state and loads another's, doing zero productive work during the swap.
 
 #### Definition
 
@@ -1014,7 +1014,7 @@ Process P0                    Scheduler                   Process P1
    |<----------------------------+---------------------------->|
 ```
 
-**Context switch time is pure overhead** â†’ the CPU does no useful work during a switch. Typical switch time is 1-10 microseconds (thousands of cycles). Modern systems may do hundreds or thousands of context switches per second.
+**Context switch time is pure overhead** → the CPU does no useful work during a switch. Typical switch time is 1-10 microseconds (thousands of cycles). Modern systems may do hundreds or thousands of context switches per second.
 
 #### Algorithm: Context Switch Steps
 
@@ -1211,7 +1211,7 @@ os.benchmark(100)
 **Why context switching is expensive:**
 1. **Register save/restore**: 16-32 general-purpose + control registers copied (hundreds of cycles)
 2. **TLB flush**: The Translation Lookaside Buffer must be invalidated, causing TLB misses for the next process (thousands of cycles)
-3. **Cache pollution**: L1/L2/L3 cache contents from the old process are largely useless for the new one â†’ the new process starts with a "cold" cache
+3. **Cache pollution**: L1/L2/L3 cache contents from the old process are largely useless for the new one → the new process starts with a "cold" cache
 4. **Pipeline drain**: The CPU pipeline must be flushed and refilled
 5. **Kernel entry/exit**: Switching to kernel mode and back adds hundreds of cycles
 
@@ -1220,7 +1220,7 @@ os.benchmark(100)
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
 | Isolation | Complete process isolation via separate address spaces | TLB flush + cache miss penalties are severe |
-| Preemption | Fair CPU sharing between all processes | 1-10 microsec overhead per switch Ãƒâ€” thousands per second = significant waste |
+| Preemption | Fair CPU sharing between all processes | 1-10 microsec overhead per switch × thousands per second = significant waste |
 | Responsiveness | Low-latency response to I/O events | Threads (same address space) switch 2-10x faster |
 | Portability | Well-defined hardware mechanism across architectures | Every architecture needs custom assembly for save/restore |
 
@@ -1238,7 +1238,7 @@ os.benchmark(100)
 
 #### Real-World Analogy: Factory Duplicating a Machine
 
-A factory has a CNC machine running Program X. To run Program Y without stopping X, the factory buys an identical CNC machine (the "child"), copies the setup, then loads Program Y onto it. The original machine continues running Program X. This is exactly the Unix `fork()` + `exec()` pattern â†’ `fork()` duplicates the process, then `exec()` replaces the child's program. The two-step design allows the child to adjust settings (file descriptors, signals) before loading the new program.
+A factory has a CNC machine running Program X. To run Program Y without stopping X, the factory buys an identical CNC machine (the "child"), copies the setup, then loads Program Y onto it. The original machine continues running Program X. This is exactly the Unix `fork()` + `exec()` pattern → `fork()` duplicates the process, then `exec()` replaces the child's program. The two-step design allows the child to adjust settings (file descriptors, signals) before loading the new program.
 
 #### Process Creation with fork() and exec()
 
@@ -1499,7 +1499,7 @@ function waitpid(pid, options):
 | T1 | RUNNING | NEW | No | fork() called |
 | T2 | READY | RUNNING | No | Child dispatched |
 | T3 | READY | RUNNING | No | Child does work |
-| T4 | READY | TERMINATED | YES | Child calls exit() â†’ zombie created |
+| T4 | READY | TERMINATED | YES | Child calls exit() → zombie created |
 | T5 | RUNNING | TERMINATED | YES | Parent gets CPU, doesn't call wait() yet |
 | T6 | RUNNING | TERMINATED | YES | Parent doing other work |
 | T7 | RUNNING | (cleaned) | NO | Parent finally calls waitpid() |
@@ -1615,7 +1615,7 @@ if __name__ == "__main__":
 | **Zombie Flood** | Thousands of zombies accumulate; PID table full | Parent must call wait() in a loop or use SIGCHLD handler |
 | **Double Wait** | Parent calls wait() twice for same child | Second call returns error ECHILD (no such child) |
 | **Orphan Chain** | Grandparent dies before parent; child inherits chain | All orphans eventually adopted by init (PID 1) |
-| **Init as Parent** | PID 1 exits (should never happen) | Kernel panic â†’ no init process means no orphan cleanup |
+| **Init as Parent** | PID 1 exits (should never happen) | Kernel panic → no init process means no orphan cleanup |
 | **Killed Before Cleanup** | Parent killed before calling wait() | init inherits all children of killed parent and cleans them |
 ### Interprocess Communication (IPC)
 
@@ -1624,9 +1624,9 @@ if __name__ == "__main__":
 
 Alice and Bob work in the same office but different rooms. They can communicate in two ways:
 
-1. **Shared whiteboard**: Alice writes on a whiteboard in the hallway; Bob reads it. Fast â†’ no waiting for a messenger. But they need a protocol (who erases, who writes, when to read). If Alice writes while Bob reads, Bob sees partial data (**shared memory** with synchronization needed).
+1. **Shared whiteboard**: Alice writes on a whiteboard in the hallway; Bob reads it. Fast → no waiting for a messenger. But they need a protocol (who erases, who writes, when to read). If Alice writes while Bob reads, Bob sees partial data (**shared memory** with synchronization needed).
 
-2. **Messenger**: Alice writes a note and sends it through interoffice mail. Bob receives the sealed envelope. Slower (mailroom involvement) but safe â†’ Bob reads a complete message when ready, and this works even if Bob is in another city (**message passing**).
+2. **Messenger**: Alice writes a note and sends it through interoffice mail. Bob receives the sealed envelope. Slower (mailroom involvement) but safe → Bob reads a complete message when ready, and this works even if Bob is in another city (**message passing**).
 
 #### Independent vs Cooperating Processes
 
@@ -1652,7 +1652,7 @@ Processes are **independent** if they cannot affect or be affected by other proc
 
 #### Real-World Analogy: Whiteboard in Shared Office
 
-A team shares a whiteboard. Anyone can write data, and everyone else sees it instantly â†’ zero delay. But if two people write simultaneously, the result is illegible. They need a rule: only one person writes at a time (mutex), and a reader must wait until the writer finishes (synchronization). Shared memory works the same way â†’ it's the fastest IPC because data isn't copied through the kernel after setup, but synchronization primitives (mutexes, semaphores) are mandatory.
+A team shares a whiteboard. Anyone can write data, and everyone else sees it instantly → zero delay. But if two people write simultaneously, the result is illegible. They need a rule: only one person writes at a time (mutex), and a reader must wait until the writer finishes (synchronization). Shared memory works the same way → it's the fastest IPC because data isn't copied through the kernel after setup, but synchronization primitives (mutexes, semaphores) are mandatory.
 
 #### Definition
 
@@ -1832,7 +1832,7 @@ if __name__ == "__main__":
 |-----------|----------------|-----------------|------|
 | Shared Memory Create | O(1) | O(size) | Kernel allocates pages for the segment |
 | Memory Attach | O(1) | O(1) | Maps shared pages into process page table |
-| Data Write (after setup) | O(1) | O(1) | Direct memory access â†’ no kernel involved |
+| Data Write (after setup) | O(1) | O(1) | Direct memory access → no kernel involved |
 | Data Read (after setup) | O(1) | O(1) | Direct memory read |
 | Semaphore Lock/Unlock | O(1) | O(1) | Atomic test-and-set in user space (futex) |
 | Memory Detach | O(1) | O(1) | Unmaps pages from process page table |
@@ -1843,7 +1843,7 @@ if __name__ == "__main__":
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
-| Speed | Fastest IPC â†’ no kernel after setup | Requires synchronization (mutex/semaphore) |
+| Speed | Fastest IPC → no kernel after setup | Requires synchronization (mutex/semaphore) |
 | Data Volume | Efficient for large data transfers (MB+) | Shared region size fixed at creation |
 | Zero Copy | No data copying between processes | Page-table manipulation overhead on attach/detach |
 | Simplicity | Map once, read/write directly | Race conditions if synchronization forgotten |
@@ -1854,7 +1854,7 @@ if __name__ == "__main__":
 |-----------|-------------|----------|
 | **Race Condition** | Two processes write simultaneously | Must use mutex/semaphore for all writes |
 | **Deadlock** | Producer waiting for empty, consumer waiting for full | Use semaphore ordering to prevent circular wait |
-| **Memory Corruption** | One process writes past buffer bounds | No built-in protection â†’ use fixed-size or guard pages |
+| **Memory Corruption** | One process writes past buffer bounds | No built-in protection → use fixed-size or guard pages |
 | **Orphaned Segment** | Process crashes after creating shared memory | shm_unlink() or ipcrm to remove; survives reboot |
 | **Stale Data** | Consumer reads data that producer hasn't finished writing | Use synchronization (ready flag, mutex) before reading |
 ### Message Passing
@@ -1866,7 +1866,7 @@ Alice writes a letter, puts it in an envelope, addresses it to Bob, and drops it
 
 #### Definition
 
-Processes communicate by exchanging messages through the kernel. Messages are sent and received via system calls. No shared address space is needed â†’ making this suitable for distributed systems.
+Processes communicate by exchanging messages through the kernel. Messages are sent and received via system calls. No shared address space is needed → making this suitable for distributed systems.
 
 #### Algorithm: Message Passing (POSIX Message Queues)
 
@@ -1874,9 +1874,9 @@ Processes communicate by exchanging messages through the kernel. Messages are se
 |------|-------|--------|
 | 1 | Both | Create or open message queue with mq_open() |
 | 2 | Sender | Prepare message buffer with type and data |
-| 3 | Sender | Call mq_send() â†’ kernel copies message into kernel buffer |
+| 3 | Sender | Call mq_send() → kernel copies message into kernel buffer |
 | 4 | Kernel | Stores message in queue (may block if queue full) |
-| 5 | Receiver | Call mq_receive() â†’ kernel copies message to user buffer |
+| 5 | Receiver | Call mq_receive() → kernel copies message to user buffer |
 | 6 | Receiver | Process the received message |
 | 7 | Both | Close queue with mq_close() |
 
@@ -2018,7 +2018,7 @@ Each copy traverses the memory bus. For large data (MB+), this overhead dominate
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
-| Safety | Kernel isolates messages; no shared state corruption | Kernel copies data twice â†’ slower |
+| Safety | Kernel isolates messages; no shared state corruption | Kernel copies data twice → slower |
 | Distributed | Works across network (sockets, RPC) | Requires marshalling/serialization for complex data |
 | Synchronization | Kernel handles buffering; optional blocking | Fixed queue size; full queue blocks sender |
 | Structure | Message boundaries preserved | Fixed message size limits; variable-size overhead |
@@ -2040,7 +2040,7 @@ Each copy traverses the memory bus. For large data (MB+), this overhead dominate
 
 #### Real-World Analogy: Water Pipe Connecting Two Tanks
 
-A pipe connects two water tanks â†’ water flows from one end (write) to the other (read). Data flows in one direction only (half-duplex). If you fill the pipe completely, the sender must wait until the receiver drains some water. If the receiver drains faster than the sender fills, the receiver waits. In Unix, **anonymous pipes** connect parent-child processes; **named pipes (FIFOs)** connect any processes.
+A pipe connects two water tanks → water flows from one end (write) to the other (read). Data flows in one direction only (half-duplex). If you fill the pipe completely, the sender must wait until the receiver drains some water. If the receiver drains faster than the sender fills, the receiver waits. In Unix, **anonymous pipes** connect parent-child processes; **named pipes (FIFOs)** connect any processes.
 
 #### Definition
 
@@ -2050,14 +2050,14 @@ A **pipe** is a unidirectional communication channel between processes. Data wri
 
 | Step | Actor | Action |
 |------|-------|--------|
-| 1 | Parent | Call `pipe(int fd[2])` â†’ fd[0] for read, fd[1] for write |
-| 2 | Parent | Call `fork()` â†’ child inherits both ends |
+| 1 | Parent | Call `pipe(int fd[2])` → fd[0] for read, fd[1] for write |
+| 2 | Parent | Call `fork()` → child inherits both ends |
 | 3 | Parent | Close unused read end `close(fd[0])` |
 | 4 | Child | Close unused write end `close(fd[1])` |
-| 5 | Parent | Write data to fd[1] â†’ data flows into kernel buffer |
-| 6 | Child | Read data from fd[0] â†’ data flows out of kernel buffer |
-| 7 | Parent | Close fd[1] when done â†’ sends EOF to child |
-| 8 | Child | Close fd[0] â†’ pipe fully closed |
+| 5 | Parent | Write data to fd[1] → data flows into kernel buffer |
+| 6 | Child | Read data from fd[0] → data flows out of kernel buffer |
+| 7 | Parent | Close fd[1] when done → sends EOF to child |
+| 8 | Child | Close fd[0] → pipe fully closed |
 
 #### Pseudocode: Pipe Communication
 
@@ -2085,11 +2085,11 @@ CHILD:
 |------|-------|--------|-------------|-------------|--------------|
 | 1 | Parent | pipe(fd) creates [3,4] | empty | 3 (open) | 4 (open) |
 | 2 | Parent | fork(); child gets [3,4] | empty | 3 (open) | 4 (open) |
-| 3 | Parent | close(3) â†’ parent reads nothing | empty | 3 (closed) | 4 (open) |
-| 4 | Child | close(4) â†’ child writes nothing | empty | 3 (open) | 4 (closed) |
-| 5 | Parent | write(4, "Hello") â†’ 5 bytes | "Hello" (5/65536) | closed | 4 (open) |
-| 6 | Child | read(3, buf, 256) â†’ reads "Hello" | empty | 3 (open) | closed |
-| 7 | Parent | close(4) â†’ write end closed | empty | closed | 4 (closed) |
+| 3 | Parent | close(3) → parent reads nothing | empty | 3 (closed) | 4 (open) |
+| 4 | Child | close(4) → child writes nothing | empty | 3 (open) | 4 (closed) |
+| 5 | Parent | write(4, "Hello") → 5 bytes | "Hello" (5/65536) | closed | 4 (open) |
+| 6 | Child | read(3, buf, 256) → reads "Hello" | empty | 3 (open) | closed |
+| 7 | Parent | close(4) → write end closed | empty | closed | 4 (closed) |
 | 8 | Child | read(3) returns 0 (EOF) | empty | 3 (open) | closed |
 | 9 | Child | close(3) | empty | 3 (closed) | 4 (closed) |
 
@@ -2239,7 +2239,7 @@ int main(int argc, char* argv[]) {
 
 #### Real-World Analogy: Factory vs Assembly Line Workers
 
-A **process** is like an entire factory â†’ its own building, tools, raw materials, and workers. A **thread** is like a single worker on an assembly line within that factory. Multiple workers (threads) in the same factory share the building, tools, and inventory (memory). They can hand each other parts instantly. But if one worker makes a mistake (crash), the entire factory may shut down. Switching to a different factory is expensive (bring all new tools). Switching to a different worker on the same line is cheap.
+A **process** is like an entire factory → its own building, tools, raw materials, and workers. A **thread** is like a single worker on an assembly line within that factory. Multiple workers (threads) in the same factory share the building, tools, and inventory (memory). They can hand each other parts instantly. But if one worker makes a mistake (crash), the entire factory may shut down. Switching to a different factory is expensive (bring all new tools). Switching to a different worker on the same line is cheap.
 
 #### Comparison Table
 
@@ -2249,15 +2249,15 @@ A **process** is like an entire factory â†’ its own building, tools, raw ma
 | **Creation Time** | Slow (fork + exec, PCB allocation, memory copy via COW) | Fast (clone with CLONE_VM, just new stack + TCB) |
 | **Context Switch Time** | 1-10 microseconds (TLB flush + cache cold) | 0.1-1 microseconds (no TLB flush, cache warm) |
 | **IPC** | Requires kernel IPC (shared memory, pipes, sockets) | Direct memory access (shared heap; just need mutex) |
-| **Crash Isolation** | High â†’ one process crash doesn't affect others | Low â†’ one thread crash (e.g., SIGSEGV) kills all threads |
-| **Resource Overhead** | High â†’ full PCB, page tables, file descriptor table | Low â†’ just TCB, stack, and thread-local storage |
+| **Crash Isolation** | High → one process crash doesn't affect others | Low → one thread crash (e.g., SIGSEGV) kills all threads |
+| **Resource Overhead** | High → full PCB, page tables, file descriptor table | Low → just TCB, stack, and thread-local storage |
 | **Memory Overhead** | Each process has own text/data/heap/stack | Threads share text/data/heap; each has private stack |
 | **Synchronization** | Kernel-level IPC needed (slower) | User-level synchronization (mutex, spinlock) is faster |
-| **Programmer Complexity** | Lower â†’ no shared state bugs | Higher â†’ race conditions, deadlocks, data races |
+| **Programmer Complexity** | Lower → no shared state bugs | Higher → race conditions, deadlocks, data races |
 | **Scheduling** | Kernel schedules every process independently | Kernel schedules threads (or user-level thread scheduler) |
 | **Max Instances** | Limited by PID table + memory (thousands) | Limited by memory + stack size (tens of thousands) |
 | **Typical Use** | Independent applications (browser, editor, server) | Parallel subtasks (web server handling concurrent requests) |
-| **Creation Syscall** | `fork()` â†’ creates almost complete copy | `pthread_create()` â†’ creates lightweight execution context |
+| **Creation Syscall** | `fork()` → creates almost complete copy | `pthread_create()` → creates lightweight execution context |
 | **Portability** | Same across all OSes | POSIX threads; Windows threads differ |
 
 #### When to Use Process vs Thread
@@ -2316,16 +2316,16 @@ Zombie: process exits, parent hasn't called wait(). PCB retained for exit status
          `ps -l` shows "Z". Can exhaust PID table. Fix: wait() or SIGCHLD handler.
 
 Orphan: parent exits before child. init (PID 1) inherits child.
-         `getppid()` returns 1. No resource leak â†’ init cleans up.
+         `getppid()` returns 1. No resource leak → init cleans up.
 ```
 
 #### Context Switch Cost
 
 **Why context switching is expensive (interview answer):**
 
-1. **Register save/restore**: 16-32 registers Ãƒâ€” 8 bytes each = 128-256 bytes must be saved to PCB and restored from next PCB (~50-100 cycles)
+1. **Register save/restore**: 16-32 registers × 8 bytes each = 128-256 bytes must be saved to PCB and restored from next PCB (~50-100 cycles)
 2. **TLB flush**: Switching address spaces requires invalidating the TLB. Next process will suffer TLB misses on first access to every page (~500-2000 cycles total)
-3. **Cache pollution**: L1 cache (32KB), L2 cache (256KB), L3 cache (8-32MB) mostly contain old process data. New process starts "cold" â†’ every memory access is a cache miss (~100-300 cycles per miss)
+3. **Cache pollution**: L1 cache (32KB), L2 cache (256KB), L3 cache (8-32MB) mostly contain old process data. New process starts "cold" → every memory access is a cache miss (~100-300 cycles per miss)
 4. **Pipeline drain**: Modern CPUs are deeply pipelined (14-19 stages in Skylake). A context switch flushes the pipeline, costing ~20-40 cycles
 5. **Kernel entry/exit**: Switching to ring 0 and back adds ~200-500 cycles
 
@@ -2341,13 +2341,13 @@ Orphan: parent exits before child. init (PID 1) inherits child.
 
 **Interview answer for IPC performance ranking:**
 
-1. **Shared Memory** â†’ Fastest. After mmap, all operations are user-space memory reads/writes. No syscalls, no kernel copies. Throughput can exceed 10 GB/s on modern hardware. **Downside**: synchronization required.
+1. **Shared Memory** → Fastest. After mmap, all operations are user-space memory reads/writes. No syscalls, no kernel copies. Throughput can exceed 10 GB/s on modern hardware. **Downside**: synchronization required.
 
-2. **Pipes/Unix Domain Sockets** â†’ Fast for local IPC. Kernel copies data once (user->kernel->user). Typical throughput: 1-5 GB/s. **Downside**: context switches for each read/write.
+2. **Pipes/Unix Domain Sockets** → Fast for local IPC. Kernel copies data once (user->kernel->user). Typical throughput: 1-5 GB/s. **Downside**: context switches for each read/write.
 
-3. **POSIX Message Queues** â†’ Moderate speed. Kernel copies messages; priority scheduling built-in. Throughput: 500 MB/s - 1 GB/s. **Downside**: fixed message sizes, queue limits.
+3. **POSIX Message Queues** → Moderate speed. Kernel copies messages; priority scheduling built-in. Throughput: 500 MB/s - 1 GB/s. **Downside**: fixed message sizes, queue limits.
 
-4. **TCP Sockets (loopback)** â†’ Slowest for local IPC. Full network stack traversed (even on loopback). Throughput: 100-500 MB/s. **Downside**: protocol overhead, but natively works across machines.
+4. **TCP Sockets (loopback)** → Slowest for local IPC. Full network stack traversed (even on loopback). Throughput: 100-500 MB/s. **Downside**: protocol overhead, but natively works across machines.
 
 ```
 Performance comparison for 1 MB transfer:
@@ -2393,7 +2393,7 @@ Key Linux features:
 
 #### Windows: CreateProcess()
 
-Windows uses `CreateProcess()` â†’ a single syscall that both creates a new process and loads the executable (no fork/exec separation).
+Windows uses `CreateProcess()` → a single syscall that both creates a new process and loads the executable (no fork/exec separation).
 
 ```cpp
 // Windows process creation
@@ -2430,9 +2430,9 @@ int main() {
 ```
 
 Key Windows differences from Unix:
-- **CreateProcess()** is a single call â†’ no fork/exec split (Windows uses `CreateProcess()`, and processes can spawn children via `CreateProcess()` only)
+- **CreateProcess()** is a single call → no fork/exec split (Windows uses `CreateProcess()`, and processes can spawn children via `CreateProcess()` only)
 - **Handle inheritance**: Child processes can inherit handles; controlled by `bInheritHandles` parameter
-- **Jobs**: Windows has Job objects â†’ groups of processes managed together (CPU limits, memory limits, kill on job close)
+- **Jobs**: Windows has Job objects → groups of processes managed together (CPU limits, memory limits, kill on job close)
 - **Process Environment Block (PEB)**: Windows' equivalent of PCB, accessed via `NtQueryInformationProcess()`
 
 #### POSIX IPC Summary
@@ -2594,7 +2594,7 @@ int main() {
 > The `fork()` + `exec()` pattern is the Unix way of creating processes. `fork()` duplicates the current process, then `exec()` replaces it with a new program. This two-step design allows the child to modify its environment (file descriptors, signals) before loading the new program.
 
 > [TIP]
-> Use Copy-On-Write (COW) thoughtfully â†’ fork() is fast because pages are shared until written. But if the child writes to many pages immediately, COW overhead can exceed naive copy. Use `vfork()` if the child will immediately exec() without writing.
+> Use Copy-On-Write (COW) thoughtfully → fork() is fast because pages are shared until written. But if the child writes to many pages immediately, COW overhead can exceed naive copy. Use `vfork()` if the child will immediately exec() without writing.
 
 > [WARNING]
 > **Zombie processes** are terminated processes whose parent has not called `wait()`. They only consume a PCB entry but can exhaust the PID table if accumulated. Always call `wait()` or `waitpid()` in the parent. Alternatively, set a SIGCHLD handler with `SA_NOCLDWAIT` to auto-reap children.
@@ -2603,7 +2603,7 @@ int main() {
 > **Fork bombs** can crash a system by exhausting the PID table and memory. Protect against them with `ulimit -u` (max user processes). If you suspect a fork bomb, use `kill -STOP -1` to freeze all processes, then kill the offending process.
 
 > [NOTE]
-> Context switching is **pure overhead** â†’ the CPU does zero useful work during a switch. Modern systems do hundreds to thousands of context switches per second, making switch efficiency critical. Use threads (same address space) when you need parallelism without the context switch penalty.
+> Context switching is **pure overhead** → the CPU does zero useful work during a switch. Modern systems do hundreds to thousands of context switches per second, making switch efficiency critical. Use threads (same address space) when you need parallelism without the context switch penalty.
 
 > [NOTE]
 > Linux's `pthread_create()` internally uses `clone()` with `CLONE_VM | CLONE_THREAD` flags. This shares the address space but creates a separate task_struct and stack. This is why threads are sometimes called "lightweight processes."
@@ -2625,18 +2625,18 @@ int main() {
 | Term | Definition |
 |------|------------|
 | **Process** | Program in execution with own address space |
-| **PCB** | Process Control Block â†’ kernel data structure for process metadata |
+| **PCB** | Process Control Block → kernel data structure for process metadata |
 | **Context Switch** | Saving/restoring CPU state when switching processes |
 | **fork()** | System call to create a child process (Unix) |
 | **exec()** | System call to replace current process image |
 | **Zombie** | Terminated process awaiting parent `wait()` |
 | **Orphan** | Process whose parent died; adopted by `init` (PID 1) |
-| **COW** | Copy-On-Write â†’ shares pages until one process writes |
+| **COW** | Copy-On-Write → shares pages until one process writes |
 | **IPC** | Interprocess Communication |
 | **Shared Memory** | IPC via directly accessible common memory region |
 | **Message Passing** | IPC via kernel-mediated message exchange |
 | **Pipe** | Unidirectional byte stream between processes |
-| **FIFO** | Named pipe â†’ pipe that exists as a filesystem entry |
+| **FIFO** | Named pipe → pipe that exists as a filesystem entry |
 | **Semaphore** | Synchronization primitive for IPC |
 | **Mutex** | Mutual exclusion lock for shared resource access |
 | **task_struct** | Linux kernel's PCB structure |
@@ -2695,12 +2695,12 @@ class ProcessManager {
     if (!proc || proc.state !== 'new') return;
     proc.state = 'ready';
     this.readyQueue.push(proc);
-    this.log.push(`[t=${this.clock}] Process ${pid} admitted â†’ READY queue`);
+    this.log.push(`[t=${this.clock}] Process ${pid} admitted → READY queue`);
   }
 
   scheduleRoundRobin(quantum: number): void {
     if (this.readyQueue.length === 0 && !this.running) {
-      this.log.push(`[t=${this.clock}] CPU idle â€” no processes ready`);
+      this.log.push(`[t=${this.clock}] CPU idle — no processes ready`);
       this.clock += 1;
       return;
     }
@@ -2716,7 +2716,7 @@ class ProcessManager {
       if (this.running.burstTime > 0) {
         this.running.state = 'ready';
         this.readyQueue.push(this.running);
-        this.log.push(`[t=${this.clock}] P${this.running.pid} preempted â†’ READY (burst remaining: ${this.running.burstTime})`);
+        this.log.push(`[t=${this.clock}] P${this.running.pid} preempted → READY (burst remaining: ${this.running.burstTime})`);
       }
     }
 
@@ -2903,12 +2903,12 @@ console.log(pm.getStats());
 - A process is an active instance of a program, containing text, data, heap, and stack
 - The five-state model: NEW -> READY -> RUNNING -> WAITING -> TERMINATED
 - The PCB (task_struct in Linux) holds every piece of state the kernel needs about a process
-- Context switching is pure overhead â†’ saving and restoring process state takes 1-10 microseconds
+- Context switching is pure overhead → saving and restoring process state takes 1-10 microseconds
 - `fork()` creates a child; `exec()` replaces the current program; `exit()` terminates
 - IPC: shared memory (fast, needs synchronization) or message passing (slower, more structured)
 - Pipes provide simple unidirectional communication between related processes
 - Zombies are dead processes waiting for parent `wait()`; orphans are adopted by init
-- Threads are lightweight processes sharing address space â†’ cheaper to create and switch
+- Threads are lightweight processes sharing address space → cheaper to create and switch
 - Copy-On-Write (COW) optimizes fork by sharing pages until modification
 - Process management is the foundation of multitasking, isolation, and IPC in modern operating systems
 

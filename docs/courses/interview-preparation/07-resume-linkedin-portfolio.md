@@ -1,4 +1,4 @@
-﻿# Chapter 7: Resume, LinkedIn, and Portfolio Optimization
+# Chapter 7: Resume, LinkedIn, and Portfolio Optimization
 
 ## Learning Objectives
 
@@ -41,8 +41,8 @@ flowchart LR
     D --> E[Technical skills]
     E --> F[Education]
     F --> G{Key achievements?}
-    G -->|Yes| H[Shortlisted âœ“]
-    G -->|No| I[Rejected âœ—]
+    G -->|Yes| H[Shortlisted ✓]
+    G -->|No| I[Rejected ✗]
     H --> J[Read more deeply]
 ```
 
@@ -55,7 +55,7 @@ Most companies use ATS to filter resumes before human review. ATS parses your re
 2. **Standard sections:** Contact, Summary, Skills, Experience, Education, Projects
 3. **Standard fonts:** Arial, Calibri, Times New Roman (11-12pt)
 4. **File format:** .docx or .txt (PDF may not parse correctly in some ATS)
-5. **Section headers:** Exact match â€” "Work Experience" not "Professional Journey"
+5. **Section headers:** Exact match — "Work Experience" not "Professional Journey"
 6. **No images/icons:** Not parsed and may break the parser
 7. **Keyword optimization:** Include skills from the job description
 8. **Spell out acronyms:** "Software Development Life Cycle (SDLC)" not just "SDLC"
@@ -83,13 +83,13 @@ flowchart TD
 ### The Perfect Resume Structure
 
 ```
-1. HEADER  â€” Name, Phone, Email, LinkedIn, GitHub, Location
-2. SUMMARY â€” 3-4 lines professional summary (optional for experienced)
-3. SKILLS  â€” Technical skills categorized (Languages, Frameworks, Tools)
-4. EXPERIENCE â€” Work experience (reverse chronological)
-5. PROJECTS â€” Notable projects (for freshers, this is crucial)
-6. EDUCATION â€” Degrees, certifications
-7. ACHIEVEMENTS â€” Awards, publications, patents (optional but impactful)
+1. HEADER  — Name, Phone, Email, LinkedIn, GitHub, Location
+2. SUMMARY — 3-4 lines professional summary (optional for experienced)
+3. SKILLS  — Technical skills categorized (Languages, Frameworks, Tools)
+4. EXPERIENCE — Work experience (reverse chronological)
+5. PROJECTS — Notable projects (for freshers, this is crucial)
+6. EDUCATION — Degrees, certifications
+7. ACHIEVEMENTS — Awards, publications, patents (optional but impactful)
 ```
 
 ### Resume Template: Fresher (BE/BTech/MCA)
@@ -103,8 +103,8 @@ rahul.kumar@email.com | +91-9876543210 | linkedin.com/in/rahulkumar
 github.com/rahulkumar | Noida, UP
 
 EDUCATION
-B.Tech in Computer Science & Engineering â€” NIT Trichy (CGPA: 8.5/10)
-2019 â€“ 2023
+B.Tech in Computer Science & Engineering — NIT Trichy (CGPA: 8.5/10)
+2019 – 2023
 
 SKILLS
 Languages: Java, TypeScript, Python, SQL
@@ -114,7 +114,7 @@ Tools: Git, Docker, Jenkins, AWS (EC2, S3), Linux
 Concepts: DSA, OOPs, DBMS, System Design, REST API
 
 INTERNSHIP
-Software Engineer Intern â€” TechCorp Solutions, Bangalore (Jan 2023 â€“ Jun 2023)
+Software Engineer Intern — TechCorp Solutions, Bangalore (Jan 2023 – Jun 2023)
 - Developed 15+ RESTful APIs for e-commerce platform using Spring Boot
 - Reduced API response time by 40% by implementing Redis caching
 - Wrote 200+ unit tests achieving 85% code coverage
@@ -162,26 +162,26 @@ Cloud: AWS (EKS, RDS, SQS, Lambda), Kubernetes, Docker, Terraform
 Architecture: Microservices, Event-Driven, CQRS, REST, GraphQL
 
 EXPERIENCE
-Senior Software Engineer â€” ABC Corp, Bangalore | May 2021 â€“ Present
-- Architected and built payment processing platform handling â‚¹500Cr+ monthly volume
+Senior Software Engineer — ABC Corp, Bangalore | May 2021 – Present
+- Architected and built payment processing platform handling ₹500Cr+ monthly volume
 - Migrated monolith to 12 microservices, reducing deployment time from 4hrs to 15min
 - Implemented distributed tracing with Jaeger, reducing MTTR from 2hrs to 20min
 - Led a team of 5 engineers, conducted design reviews, and mentored 3 junior devs
 - Reduced P0 incidents by 80% through improved monitoring and chaos engineering
 
-Software Engineer â€” XYZ Tech, Gurgaon | Jun 2018 â€“ Apr 2021
+Software Engineer — XYZ Tech, Gurgaon | Jun 2018 – Apr 2021
 - Built real-time analytics pipeline ingesting 1M+ events/minute using Kafka + Flink
 - Optimized MongoDB aggregation queries, reducing dashboard load time from 8s to 0.5s
 - Designed rate limiter for API gateway handling 50K RPS
 - Contributed to open-source library (500+ GitHub stars)
 
 EDUCATION
-B.Tech in Computer Science â€” IIT Roorkee (CGPA: 8.2/10) | 2014 â€“ 2018
+B.Tech in Computer Science — IIT Roorkee (CGPA: 8.2/10) | 2014 – 2018
 
 ACHIEVEMENTS
 - Patent: "System and Method for Distributed Rate Limiting" (US Patent #12345678)
 - Speaker at JavaOne 2023: "Building Resilient Payment Systems"
-- AWS Certified Solutions Architect â€” Professional
+- AWS Certified Solutions Architect — Professional
 </details>
 </details>
 
@@ -205,12 +205,12 @@ ACHIEVEMENTS
 | Mistake | Why It Hurts |
 |---------|-------------|
 | Spelling/Grammar errors | Creates impression of carelessness |
-| Generic objective statement | "Seeking challenging position" â€” says nothing unique |
+| Generic objective statement | "Seeking challenging position" — says nothing unique |
 | Irrelevant experience | Waiter job has no place on a software dev resume |
 | Too long (2+ pages for fresher) | Recruiters won't read past page 1 |
 | PDF formatting issues | Tables, columns break ATS parsing |
 | Inconsistent dates | Gaps without explanation raise questions |
-| Unprofessional email | `coolguy@email.com` â†’ use your name |
+| Unprofessional email | `coolguy@email.com` → use your name |
 | No measurable results | "Did work" vs "Reduced latency by 40%" |
 | Mentioning technologies you don't know | You'll be asked about them in interview |
 | Including photo, age, marital status | Not required in India and may cause bias |
@@ -277,7 +277,7 @@ Hostel Management Portal | React, Node.js, MongoDB, Docker
 - Designed [system] for [scale] handling [N] requests/second
 - Chose [database] over [alternative] due to [reason]
 - Implemented [caching/queuing/sharding] strategy for [specific need]
-- Trade-off analysis: [Decision] vs [Alternative] â€” chose [this] because
+- Trade-off analysis: [Decision] vs [Alternative] — chose [this] because
 - [Result]: Achieved [X]% availability, [Y]ms latency at scale
 ```
 
@@ -324,9 +324,9 @@ scalable distributed systems. Currently at Amazon, I work on payment
 infrastructure handling $10B+ annual volume.
 
 [Paragraph 2: Key achievements]
-â†’ Architected migration from monolith to 12 microservices
-â†’ Reduced P99 latency by 60% for critical payment flows
-â†’ Led team of 4 engineers delivering 3 major features
+→ Architected migration from monolith to 12 microservices
+→ Reduced P99 latency by 60% for critical payment flows
+→ Led team of 4 engineers delivering 3 major features
 
 [Paragraph 3: What you're looking for]
 I'm passionate about solving infrastructure challenges at scale.
@@ -364,29 +364,29 @@ Feel free to reach out for:
 
 | Element | Description | Impact |
 |---------|-------------|--------|
-| Profile README | Custom markdown README on profile repo | High â€” creates first impression |
-| Pinned repositories | Show 6 best repos prominently | High â€” recruiters see these first |
-| Contribution graph | Consistent green squares | Medium â€” shows activity |
-| Organization membership | Visible contributions to orgs | Medium â€” shows collaboration |
-| Repository quality | Clean README, structure, tests | High â€” showcases code quality |
-| Activity timeline | Daily commits/issues/PRs | Medium â€” shows engagement |
+| Profile README | Custom markdown README on profile repo | High — creates first impression |
+| Pinned repositories | Show 6 best repos prominently | High — recruiters see these first |
+| Contribution graph | Consistent green squares | Medium — shows activity |
+| Organization membership | Visible contributions to orgs | Medium — shows collaboration |
+| Repository quality | Clean README, structure, tests | High — showcases code quality |
+| Activity timeline | Daily commits/issues/PRs | Medium — shows engagement |
 
 ### GitHub Profile README Template
 
 ```markdown
-# Hi there, I's ðŸ‘‹
+# Hi there, I's 👋
 
-## ðŸš€ About Me
+## 🚀 About Me
 I'm a Software Engineer passionate about building scalable distributed systems.
 
-- ðŸ”­ I'm currently working on [Microservices Playground](link)
-- ðŸŒ± I'm currently learning Kafka and System Design
-- ðŸ‘¯ I'm looking to collaborate on open-source projects
-- ðŸ’¬ Ask me about Java, Spring Boot, System Design
-- ðŸ“« Reach me: [email] | [LinkedIn]
-- âš¡ Fun fact: I've solved 500+ LeetCode problems
+- 🔭 I'm currently working on [Microservices Playground](link)
+- 🌱 I'm currently learning Kafka and System Design
+- 👯 I'm looking to collaborate on open-source projects
+- 💬 Ask me about Java, Spring Boot, System Design
+- 📫 Reach me: [email] | [LinkedIn]
+- ⚡ Fun fact: I've solved 500+ LeetCode problems
 
-## ðŸ›  Tech Stack
+## 🛠 Tech Stack
 
 **Languages:** Java, TypeScript, Python, Go, SQL
 **Backend:** Spring Boot, Node.js, Express
@@ -395,15 +395,15 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 **DevOps:** Docker, Kubernetes, AWS, GitHub Actions
 **Tools:** Git, IntelliJ, VS Code, Postman
 
-## ðŸ“Š GitHub Stats
+## 📊 GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourname&show_icons=true&theme=dark)
 
-## ðŸ“ Latest Blog Posts
+## 📝 Latest Blog Posts
 - [Building Resilient Microservices](link)
 - [Understanding Kafka Internals](link)
 
-## ðŸ“« Let's Connect!
+## 📫 Let's Connect!
 [LinkedIn] [Twitter] [Portfolio]
 ```
 
@@ -458,19 +458,19 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 | Single-page app (interactive) | React + Vite, Angular |
 | No-code (quick) | Carrd, Dev.to, Hashnode |
 | Hosting | Vercel (free), Netlify (free), GitHub Pages |
-| Domain | yourname.com (\~â‚¹800/yr) |
+| Domain | yourname.com (\~₹800/yr) |
 
 ### Portfolio Content Rules
 
 ```
-âœ“ Show, don't tell â€” include live demos, screenshots, architecture diagrams
-âœ“ Keep it under 3 seconds to load â€” optimize images, use CDN
-âœ“ Mobile responsive â€” 60% of recruiters may view on mobile
-âœ“ Clean, minimal design â€” let content speak, not animations
-âœ“ Call to action â€” "Download Resume" | "Hire Me" | "Contact"
-âœ“ Analytics â€” track visits to know what recruiters click
-âœ“ Fast â€” score 90+ on Google PageSpeed Insights
-âœ“ Professional email â€” contact@yourname.com
+✓ Show, don't tell — include live demos, screenshots, architecture diagrams
+✓ Keep it under 3 seconds to load — optimize images, use CDN
+✓ Mobile responsive — 60% of recruiters may view on mobile
+✓ Clean, minimal design — let content speak, not animations
+✓ Call to action — "Download Resume" | "Hire Me" | "Contact"
+✓ Analytics — track visits to know what recruiters click
+✓ Fast — score 90+ on Google PageSpeed Insights
+✓ Professional email — contact@yourname.com
 ```
 
 ---
@@ -490,7 +490,7 @@ I'm a Software Engineer passionate about building scalable distributed systems.
 ### Cover Letter Template
 
 ```markdown
-Subject: Application for Software Engineer â€” [Company Name]
+Subject: Application for Software Engineer — [Company Name]
 
 Dear [Hiring Manager Name],
 
@@ -544,15 +544,15 @@ Best regards,
 
 | Factor | Impact | Your Score |
 |--------|--------|------------|
-| Profile photo | +15% | â˜ Uploaded |
-| Headline with keywords | +20% | â˜ Optimized |
-| About section (3+ paragraphs) | +15% | â˜ Written |
-| 5+ skills relevant to target role | +10% | â˜ Added |
-| 3+ recommendations | +10% | â˜ Requested |
-| 500+ connections | +10% | â˜ Grown |
-| Experience with media | +10% | â˜ Enhanced |
-| Custom URL | +5% | â˜ Created |
-| Regular posting (weekly) | +5% | â˜ Active |
+| Profile photo | +15% | ☐ Uploaded |
+| Headline with keywords | +20% | ☐ Optimized |
+| About section (3+ paragraphs) | +15% | ☐ Written |
+| 5+ skills relevant to target role | +10% | ☐ Added |
+| 3+ recommendations | +10% | ☐ Requested |
+| 500+ connections | +10% | ☐ Grown |
+| Experience with media | +10% | ☐ Enhanced |
+| Custom URL | +5% | ☐ Created |
+| Regular posting (weekly) | +5% | ☐ Active |
 | **Total** | **100%** | **Score: ___** |
 
 ### ATS Keyword Optimization
@@ -565,27 +565,27 @@ Job Description Keywords:
 - System Design, Scalability, Distributed Systems
 
 Map each keyword to YOUR experience:
-âœ“ Java â€” 5 years, used for payment microservices
-âœ“ Spring Boot â€” Built 10+ REST APIs, Spring Cloud for service discovery
-âœ“ Docker â€” Containerized all services, wrote Dockerfiles
-âœ“ Kubernetes â€” Deployed on EKS, wrote Helm charts
-âœ“ Microservices â€” Led monolith-to-microservices migration
+✓ Java — 5 years, used for payment microservices
+✓ Spring Boot — Built 10+ REST APIs, Spring Cloud for service discovery
+✓ Docker — Containerized all services, wrote Dockerfiles
+✓ Kubernetes — Deployed on EKS, wrote Helm charts
+✓ Microservices — Led monolith-to-microservices migration
 ```
 
 ### Portfolio Checklist
 
 | Item | Status | Priority |
 |------|--------|----------|
-| Custom domain | â˜ | High |
-| HTTPS enabled | â˜ | High |
-| Mobile responsive | â˜ | High |
-| Loading under 3s | â˜ | High |
-| Contact form works | â˜ | High |
-| Social links active | â˜ | High |
-| Resume PDF downloads | â˜ | High |
-| Google Analytics | â˜ | Medium |
-| Blog section | â˜ | Low |
-| Dark mode | â˜ | Low |
+| Custom domain | ☐ | High |
+| HTTPS enabled | ☐ | High |
+| Mobile responsive | ☐ | High |
+| Loading under 3s | ☐ | High |
+| Contact form works | ☐ | High |
+| Social links active | ☐ | High |
+| Resume PDF downloads | ☐ | High |
+| Google Analytics | ☐ | Medium |
+| Blog section | ☐ | Low |
+| Dark mode | ☐ | Low |
 
 ---
 
@@ -614,8 +614,8 @@ Soft Skills: Problem-solving, Analytical thinking,
            Technical documentation, Cross-functional communication
 
 BOOTCAMP
-Full-Stack Web Development â€” Coding Bootcamp India
-Jan 2023 â€“ Apr 2023 | 500+ hours
+Full-Stack Web Development — Coding Bootcamp India
+Jan 2023 – Apr 2023 | 500+ hours
 - Built 5 projects including e-commerce API and real-time chat app
 - Collaborated on team project using Git and Agile methodology
 - Received "Most Improved" award for consistent progress
@@ -632,8 +632,8 @@ Real-time Chat Application | React, Socket.io, MongoDB
 - Containerized with Docker, deployed on AWS EC2
 
 EDUCATION
-B.Tech Mechanical Engineering â€” NIT Warangal (CGPA: 7.8/10)
-2016 â€“ 2020
+B.Tech Mechanical Engineering — NIT Warangal (CGPA: 7.8/10)
+2016 – 2020
 ```
 
 ### Scenario Template 2: Gap in Education/Employment
@@ -661,18 +661,18 @@ resilience and time management."
 STRATEGY: Frame short stints as intentional learning periods in early career.
 
 EXPERIENCE
-Software Engineer â€” Startup C, Bangalore | Mar 2022 â€“ Present
-(18 months â€” longest tenure, highlight impact)
+Software Engineer — Startup C, Bangalore | Mar 2022 – Present
+(18 months — longest tenure, highlight impact)
 
-Associate Developer â€” Startup B, Remote | Sep 2021 â€“ Feb 2022
-(6 months â€” left due to funding issues, learned fast-paced startup skills)
+Associate Developer — Startup B, Remote | Sep 2021 – Feb 2022
+(6 months — left due to funding issues, learned fast-paced startup skills)
 
-Junior Developer â€” Startup A, Gurgaon | Apr 2021 â€“ Aug 2021
-(5 months â€” initial learning phase, contract ended)
+Junior Developer — Startup A, Gurgaon | Apr 2021 – Aug 2021
+(5 months — initial learning phase, contract ended)
 
 EXPLANATION (in interview):
 "In my early career, I deliberately explored different types of
-organizations â€” from early-stage startups to established product companies.
+organizations — from early-stage startups to established product companies.
 Each role taught me something valuable: Startup A gave me React skills,
 Startup B taught me backend architecture, and my current role combines
 both. I'm now looking for a long-term position where I can apply
@@ -721,21 +721,21 @@ these diverse experiences."
 ### Resume Checklist Before Submission
 
 ```
-â˜ File name: YourName_Role_Company.pdf (not "Resume.pdf")
-â˜ File format: As requested (PDF or DOCX)
-â˜ File size: Under 2MB
-â˜ One page: For &lt;5 years experience
-â˜ Two pages: For &gt;5 years experience (never more)
-â˜ No typos: Run through Grammarly + manual proofread
-â˜ Consistent formatting: Same font, size, spacing throughout
-â˜ Quantified bullets: Every bullet has a number or metric
-â˜ Recent first: Reverse chronological order
-â˜ No personal info: No photo, age, gender, marital status
-â˜ Links work: LinkedIn, GitHub, portfolio â€” all active
-â˜ Skills match JD: Keywords from job description are present
-â˜ Dates align: No gaps (explain gaps in cover letter)
-â˜ Action verbs: Use "Led, Built, Architected, Optimized, Reduced"
-â˜ Tense consistent: Current job â†’ present tense, past jobs â†’ past tense
+☐ File name: YourName_Role_Company.pdf (not "Resume.pdf")
+☐ File format: As requested (PDF or DOCX)
+☐ File size: Under 2MB
+☐ One page: For &lt;5 years experience
+☐ Two pages: For &gt;5 years experience (never more)
+☐ No typos: Run through Grammarly + manual proofread
+☐ Consistent formatting: Same font, size, spacing throughout
+☐ Quantified bullets: Every bullet has a number or metric
+☐ Recent first: Reverse chronological order
+☐ No personal info: No photo, age, gender, marital status
+☐ Links work: LinkedIn, GitHub, portfolio — all active
+☐ Skills match JD: Keywords from job description are present
+☐ Dates align: No gaps (explain gaps in cover letter)
+☐ Action verbs: Use "Led, Built, Architected, Optimized, Reduced"
+☐ Tense consistent: Current job → present tense, past jobs → past tense
 ```
 
 ---
@@ -776,27 +776,27 @@ these diverse experiences."
 
 ```
 Search Engine Check
-â˜ Google your name â€” what appears on first page?
-â˜ Are there any negative results? Work to remove them
-â˜ Do you have a positive presence (GitHub, LinkedIn, Medium)?
+☐ Google your name — what appears on first page?
+☐ Are there any negative results? Work to remove them
+☐ Do you have a positive presence (GitHub, LinkedIn, Medium)?
 
 Social Media Cleanup
-â˜ Set old Twitter/Facebook profiles to private
-â˜ Remove/untag inappropriate photos
-â˜ Review public posts for offensive content
-â˜ Update bios to sound professional
+☐ Set old Twitter/Facebook profiles to private
+☐ Remove/untag inappropriate photos
+☐ Review public posts for offensive content
+☐ Update bios to sound professional
 
 Content Strategy (Optional but Impactful)
-â˜ Write 1 technical blog per month on Medium/Hashnode
-â˜ Share project updates and learnings on LinkedIn
-â˜ Engage with industry content (likes, comments, shares)
-â˜ Answer questions on Stack Overflow / Reddit
+☐ Write 1 technical blog per month on Medium/Hashnode
+☐ Share project updates and learnings on LinkedIn
+☐ Engage with industry content (likes, comments, shares)
+☐ Answer questions on Stack Overflow / Reddit
 
 GitHub Cleanup
-â˜ Archive or delete old, incomplete projects
-â˜ Ensure top 6 pinned repos have great README
-â˜ Remove sensitive data (keys, passwords) from commit history
-â˜ Add CI badges, license, and contribution guidelines
+☐ Archive or delete old, incomplete projects
+☐ Ensure top 6 pinned repos have great README
+☐ Remove sensitive data (keys, passwords) from commit history
+☐ Add CI badges, license, and contribution guidelines
 ```
 
 ### Building a Personal Brand
@@ -832,11 +832,11 @@ This chapter covered comprehensive preparation for your professional brand:
 
 1. **ATS-proof your resume:** No tables, columns, or graphics. Use standard fonts and section headers. Save as .docx unless PDF is explicitly requested.
 
-2. **Quantify every bullet point:** Use numbers â€” time saved, percentage improvement, users impacted, revenue generated. Even a college project can say "served 500+ students."
+2. **Quantify every bullet point:** Use numbers — time saved, percentage improvement, users impacted, revenue generated. Even a college project can say "served 500+ students."
 
 3. **Your LinkedIn headline is prime real estate:** Use 120 characters to say what you do, who you are, and what value you offer. Include your top 3 skills.
 
-4. **GitHub should tell a story:** Your pinned repos should showcase range â€” algorithmic, web app, system design, open-source contribution. Each should have a great README.
+4. **GitHub should tell a story:** Your pinned repos should showcase range — algorithmic, web app, system design, open-source contribution. Each should have a great README.
 
 5. **Keep resume to 1 page if &lt;5 years experience,** 2 pages max if more. No one reads beyond page 2.
 
@@ -844,7 +844,7 @@ This chapter covered comprehensive preparation for your professional brand:
 
 7. **Portfolio > Resume:** Having a live portfolio with working demos gives you a massive advantage. It shows initiative and technical competence.
 
-8. **â­ Must-Do:** Complete all 7 chapters of this module, then update your resume, LinkedIn, and GitHub before applying. Mock interviews are critical.
+8. **⭐ Must-Do:** Complete all 7 chapters of this module, then update your resume, LinkedIn, and GitHub before applying. Mock interviews are critical.
 
 9. **Recruiters search LinkedIn for skills:** Make sure every skill you want to be found for appears in your headline, about, and skills sections.
 

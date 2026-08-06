@@ -1,4 +1,4 @@
-﻿# Chapter 16: Cloud Networking
+# Chapter 16: Cloud Networking
 
 ## Learning Objectives
 
@@ -44,17 +44,17 @@ A cloud network is like a **customizable office building within a business park*
 ### How Cloud Networking Works: Step-by-Step
 
 
-1. **Tenant isolation** â†’ The provider uses VXLAN (Virtual Extensible LAN) with 24-bit VNI (VXLAN Network Identifier) to encapsulate tenant traffic. Each tenant gets a unique VNI, allowing 16 million isolated networks over a shared physical fabric.
+1. **Tenant isolation** → The provider uses VXLAN (Virtual Extensible LAN) with 24-bit VNI (VXLAN Network Identifier) to encapsulate tenant traffic. Each tenant gets a unique VNI, allowing 16 million isolated networks over a shared physical fabric.
 
-2. **SDN controller programming** â†’ When you create a VPC/subnet/route table via API, the SDN controller programs forwarding rules into virtual switches on each hypervisor host.
+2. **SDN controller programming** → When you create a VPC/subnet/route table via API, the SDN controller programs forwarding rules into virtual switches on each hypervisor host.
 
-3. **Packet encapsulation** â†’ When a VM sends a packet, the hypervisor's virtual switch encapsulates it with the tenant's VNI before forwarding over the physical network.
+3. **Packet encapsulation** → When a VM sends a packet, the hypervisor's virtual switch encapsulates it with the tenant's VNI before forwarding over the physical network.
 
-4. **Distributed routing** â†’ Each hypervisor host runs a virtual router that evaluates route tables locally, avoiding centralized bottlenecks.
+4. **Distributed routing** → Each hypervisor host runs a virtual router that evaluates route tables locally, avoiding centralized bottlenecks.
 
-5. **Security enforcement** â†’ Security groups are evaluated at the hypervisor level as stateful 5-tuple (protocol, source IP, source port, destination IP, destination port) rules.
+5. **Security enforcement** → Security groups are evaluated at the hypervisor level as stateful 5-tuple (protocol, source IP, source port, destination IP, destination port) rules.
 
-6. **Elastic scaling** â†’ Network capacity scales by adding more hypervisor hosts; no physical rack-and-stack required.
+6. **Elastic scaling** → Network capacity scales by adding more hypervisor hosts; no physical rack-and-stack required.
 
 ### Pseudocode: Cloud Network Packet Forwarding
 
@@ -113,19 +113,19 @@ END PROCEDURE
 
 | Step | Operation | Input | Result |
 |---|---|---|---|
-| 1 | Extract dst IP | 8.8.8.8 | â†’ |
+| 1 | Extract dst IP | 8.8.8.8 | → |
 | 2 | Match 10.0.0.0/16 | 8.8.8.8 & 255.255.0.0 = 10.0.0.0? | No |
 | 3 | Match 10.0.1.0/24 | 8.8.8.8 & 255.255.255.0 = 10.0.1.0? | No |
 | 4 | Match 0.0.0.0/0 | 8.8.8.8 & 0.0.0.0 = 0.0.0.0? | Yes |
 | 5 | Resolve target | igw-abc123 | Internet Gateway |
-| 6 | SNAT? | Source is private | Yes â†’ NAT to IGW EIP |
-| 7 | Forward | IGW â†’ Internet | Delivered |
+| 6 | SNAT? | Source is private | Yes → NAT to IGW EIP |
+| 7 | Forward | IGW → Internet | Delivered |
 
 **Trace: Packet from 10.0.1.5 to 10.0.0.22 (same VPC)**
 
 | Step | Operation | Input | Result |
 |---|---|---|---|
-| 1 | Extract dst IP | 10.0.0.22 | â†’ |
+| 1 | Extract dst IP | 10.0.0.22 | → |
 | 2 | Match 10.0.0.0/16 | 10.0.0.22 & 255.255.0.0 = 10.0.0.0? | Yes |
 | 3 | Target | local | VXLAN direct to target hypervisor |
 | 4 | VXLAN encapsulate | VNI = 10001 | Encapsulated |
@@ -226,7 +226,7 @@ public:
 
         auto [target, prefix_len] = longest_prefix_match(dst);
         if (prefix_len == -1) {
-            std::cout << "RESULT: No route â†’ packet dropped\n";
+            std::cout << "RESULT: No route → packet dropped\n";
             return;
         }
 
@@ -324,7 +324,7 @@ class VPCRouteTable:
 
         result = self.longest_prefix_match(dst_ip)
         if result is None:
-            print("RESULT: No route â†’ packet dropped")
+            print("RESULT: No route → packet dropped")
             return
 
         target, prefix_len = result
@@ -434,7 +434,7 @@ if __name__ == "__main__":
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
 | Provisioning | Minutes vs weeks for physical gear | Vendor lock-in to provider APIs |
-| Scalability | Elastic â†’ add capacity instantly | Cloud provider API rate limits |
+| Scalability | Elastic → add capacity instantly | Cloud provider API rate limits |
 | Cost | Pay-as-you-go, no CapEx | Data transfer egress charges |
 | Reliability | Multi-AZ, automatic failover | Shared fate with provider |
 | Security | Provider-managed physical security | Shared security model complexity |
@@ -444,7 +444,7 @@ if __name__ == "__main__":
 
 
 - **Cross-region latency**: Packets traversing regions incur 50-200ms RTT. Use inter-region VPC peering or Transit Gateway; avoid chatty cross-region protocols.
-- **VPC peering limits**: Non-transitive â†’ VPC A to VPC B to VPC C doesn't let A reach C. You must establish full mesh or use Transit Gateway (max 5000 attachments).
+- **VPC peering limits**: Non-transitive → VPC A to VPC B to VPC C doesn't let A reach C. You must establish full mesh or use Transit Gateway (max 5000 attachments).
 - **DNS propagation delay**: Route53 TTL minimum is 0 for alias records, but non-alias records have 60s TTL minimum; global propagation takes 60-300s.
 - **Security group capacity**: Max 60 inbound + 60 outbound rules per SG. Use prefix lists for large CIDR sets.
 - **Jumbo frames**: Most cloud providers limit MTU to 1500 within VPC; some support 9001 but only within the same AZ.
@@ -587,19 +587,19 @@ A VPC is like a **gated community with customizable house lots**. The community 
 ### VPC Setup: Step-by-Step
 
 
-1. **Define IP address space** â†’ Choose a CIDR block (e.g., 10.0.0.0/16) that doesn't overlap with on-premises or peered VPCs.
+1. **Define IP address space** → Choose a CIDR block (e.g., 10.0.0.0/16) that doesn't overlap with on-premises or peered VPCs.
 
-2. **Create subnets** â†’ Divide the CIDR into subnets per Availability Zone. Each subnet maps to exactly one AZ for fault isolation.
+2. **Create subnets** → Divide the CIDR into subnets per Availability Zone. Each subnet maps to exactly one AZ for fault isolation.
 
-3. **Create Internet Gateway** â†’ Attach an IGW to the VPC for public internet access.
+3. **Create Internet Gateway** → Attach an IGW to the VPC for public internet access.
 
-4. **Create route tables** â†’ Associate each subnet with a route table. Public subnets route 0.0.0.0/0 â†’ IGW; private subnets route 0.0.0.0/0 â†’ NAT Gateway.
+4. **Create route tables** → Associate each subnet with a route table. Public subnets route 0.0.0.0/0 → IGW; private subnets route 0.0.0.0/0 → NAT Gateway.
 
-5. **Create NAT Gateway** â†’ Place in a public subnet so private subnets can initiate outbound connections.
+5. **Create NAT Gateway** → Place in a public subnet so private subnets can initiate outbound connections.
 
-6. **Configure security groups** â†’ Define instance-level firewall rules for web, app, and database tiers.
+6. **Configure security groups** → Define instance-level firewall rules for web, app, and database tiers.
 
-7. **Launch instances** â†’ Place resources into appropriate subnets and associate security groups.
+7. **Launch instances** → Place resources into appropriate subnets and associate security groups.
 
 ### 16.3.1 VPC Components
 
@@ -706,15 +706,15 @@ END PROCEDURE
 
 | Step | Component | Action |
 |---|---|---|
-| 1 | Route53 | Resolves www.example.com â†’ ALB DNS name |
+| 1 | Route53 | Resolves www.example.com → ALB DNS name |
 | 2 | ALB | Receives request on 10.0.0.10:443 |
-| 3 | ALB route table | Matches 10.0.0.0/20 â†’ local (web-a subnet) |
+| 3 | ALB route table | Matches 10.0.0.0/20 → local (web-a subnet) |
 | 4 | Security Group (web) | Inbound rule allows TCP/443 from 0.0.0.0/0 |
 | 5 | ALB | Selects target in app-a via round-robin |
-| 6 | ALB â†’ app route | Crosses to 10.0.32.0/20 via VPC internal routing |
+| 6 | ALB → app route | Crosses to 10.0.32.0/20 via VPC internal routing |
 | 7 | Security Group (app) | Inbound rule allows TCP/8080 from sg-web |
 | 8 | App instance | Processes request, queries DB |
-| 9 | App â†’ DB route | 10.0.64.0/20 via VPC internal routing |
+| 9 | App → DB route | 10.0.64.0/20 via VPC internal routing |
 | 10 | Security Group (db) | Inbound rule allows TCP/3306 from sg-app |
 
 ### C++ Implementation: VPC Subnet Allocator
@@ -912,7 +912,7 @@ if subnet:
 
 - **CIDR overlap**: Two VPCs with overlapping CIDRs cannot be peered. Choose non-overlapping ranges (e.g., 10.0.0.0/16 for prod, 10.1.0.0/16 for dev).
 - **Reserved IPs**: AWS reserves 5 IPs per subnet (network, gateway, +2 reserved, broadcast). Always account for 5 unavailable addresses.
-- **Subnet sizing**: /28 (11 usable IPs) is minimum; /16 (65531 usable) is maximum. Size for future growth â†’ expanding a subnet's CIDR is not possible after creation.
+- **Subnet sizing**: /28 (11 usable IPs) is minimum; /16 (65531 usable) is maximum. Size for future growth → expanding a subnet's CIDR is not possible after creation.
 - **Transitive routing**: VPC Peering is not transitive. Hub-and-spoke requires Transit Gateway (costs money per attachment).
 - **Cross-region peering**: Adds $0.01-0.02/GB data transfer cost. Minimize cross-region traffic for chatty protocols.
 
@@ -1045,7 +1045,7 @@ class VPCNetworkDesigner {
     for (const [subnet, entries] of this.routeTables) {
       console.log(`\nRoute Table: ${subnet}`);
       for (const e of entries) {
-        console.log(`  ${e.destination.padEnd(20)} â†’ ${e.target.padEnd(20)} (${e.description})`);
+        console.log(`  ${e.destination.padEnd(20)} → ${e.target.padEnd(20)} (${e.description})`);
       }
     }
 
@@ -1053,7 +1053,7 @@ class VPCNetworkDesigner {
     for (const [sg, rules] of this.securityGroupRules) {
       console.log(`\nSecurity Group: ${sg}`);
       for (const r of rules) {
-        console.log(`  ${r.direction.padEnd(10)} ${r.protocol.padEnd(8)} ${String(r.port).padEnd(8)} â†’ ${r.source}`);
+        console.log(`  ${r.direction.padEnd(10)} ${r.protocol.padEnd(8)} ${String(r.port).padEnd(8)} → ${r.source}`);
       }
     }
   }
@@ -1061,7 +1061,7 @@ class VPCNetworkDesigner {
 
 // Usage example
 function demoVPCDesign() {
-  // Calculate subnet CIDRs for a /16 VPC with 3 tiers Ã— 2 AZs, each /20
+  // Calculate subnet CIDRs for a /16 VPC with 3 tiers × 2 AZs, each /20
   const subnets = VPCNetworkDesigner.calculateSubnetCidrs('10.0.0.0/16', ['web', 'app', 'db'], 2, 20);
   console.log('Generated Subnet CIDRs:');
   for (const s of subnets) {
@@ -1103,20 +1103,20 @@ demoVPCDesign();
 ### Real-World Analogy
 
 
-Security groups are like **VIP club door policies**. Each club section (EC2 instance) has a bouncer (hypervisor firewall) that checks a guest list (security group rules). If your name is on the list, you enter freely. Once inside, you can move around without being checked again (stateful). If you leave and come back, you show ID again. NACLs, by contrast, are like metal detectors at the building entrance â†’ every person is checked in both directions, and the rules are processed in order.
+Security groups are like **VIP club door policies**. Each club section (EC2 instance) has a bouncer (hypervisor firewall) that checks a guest list (security group rules). If your name is on the list, you enter freely. Once inside, you can move around without being checked again (stateful). If you leave and come back, you show ID again. NACLs, by contrast, are like metal detectors at the building entrance → every person is checked in both directions, and the rules are processed in order.
 
 ### How Security Groups Work: Step-by-Step
 
 
-1. **Rule creation** â†’ You define inbound rules (source, protocol, port) and outbound rules (destination, protocol, port).
+1. **Rule creation** → You define inbound rules (source, protocol, port) and outbound rules (destination, protocol, port).
 
-2. **Attachment** â†’ The security group is attached to an Elastic Network Interface (ENI), not an instance directly.
+2. **Attachment** → The security group is attached to an Elastic Network Interface (ENI), not an instance directly.
 
-3. **State tracking** â†’ The hypervisor creates a connection tracking entry when outbound traffic is sent. Return traffic matches the tracking entry and is allowed regardless of inbound rules.
+3. **State tracking** → The hypervisor creates a connection tracking entry when outbound traffic is sent. Return traffic matches the tracking entry and is allowed regardless of inbound rules.
 
-4. **Rule evaluation** â†’ All rules are evaluated in parallel (not in order). If any rule matches, traffic is allowed.
+4. **Rule evaluation** → All rules are evaluated in parallel (not in order). If any rule matches, traffic is allowed.
 
-5. **Default deny** â†’ Traffic that doesn't match any rule is implicitly denied. There is no explicit deny rule.
+5. **Default deny** → Traffic that doesn't match any rule is implicitly denied. There is no explicit deny rule.
 
 ### Pseudocode: Security Group Evaluation
 
@@ -1164,7 +1164,7 @@ END PROCEDURE
 | 1 | Inbound | TCP | 443 | 0.0.0.0/0 | Allow |
 | 2 | Inbound | TCP | 80 | 0.0.0.0/0 | Allow |
 | 3 | Inbound | TCP | 22 | 10.0.0.0/16 | Allow |
-| â†’ | Outbound | ALL | ALL | 0.0.0.0/0 | Allow (default) |
+| → | Outbound | ALL | ALL | 0.0.0.0/0 | Allow (default) |
 
 **Trace: SSH from 203.0.113.5**
 
@@ -1172,8 +1172,8 @@ END PROCEDURE
 |---|---|---|
 | 1 | Connection tracking lookup | No existing flow |
 | 2 | Direction = inbound | Evaluates inbound rules |
-| 3 | Rule 1: TCP/443 from 0.0.0.0/0 | Port 22 Ã¢â€°Â  443 |
-| 4 | Rule 2: TCP/80 from 0.0.0.0/0 | Port 22 Ã¢â€°Â  80 |
+| 3 | Rule 1: TCP/443 from 0.0.0.0/0 | Port 22 ≠ 443 |
+| 4 | Rule 2: TCP/80 from 0.0.0.0/0 | Port 22 ≠ 80 |
 | 5 | Rule 3: TCP/22 from 10.0.0.0/16 | 203.0.113.5 not in 10.0.0.0/16 |
 | 6 | No rules matched | **DENY** |
 
@@ -1185,7 +1185,7 @@ END PROCEDURE
 | 2 | Direction = inbound | Evaluates inbound rules |
 | 3 | Rule 1: TCP/443 | Port mismatch |
 | 4 | Rule 2: TCP/80 | Port mismatch |
-| 5 | Rule 3: TCP/22 from 10.0.0.0/16 | 10.0.1.5 in 10.0.0.0/16 â†’ **ALLOW** |
+| 5 | Rule 3: TCP/22 from 10.0.0.0/16 | 10.0.1.5 in 10.0.0.0/16 → **ALLOW** |
 | 6 | Connection tracking creates flow | Future return traffic auto-allowed |
 
 ### C++ Implementation: Security Group Evaluator
@@ -1273,7 +1273,7 @@ public:
         FlowKey fk{ip_to_uint(src_ip), ip_to_uint(dst_ip), src_port, dst_port, protocol};
 
         if (connection_tracking.find(fk) != connection_tracking.end()) {
-            std::cout << "  [Tracking hit] Flow exists â†’ auto-allow return\n";
+            std::cout << "  [Tracking hit] Flow exists → auto-allow return\n";
             return true;
         }
 
@@ -1296,9 +1296,9 @@ public:
                           bool inbound) {
         bool allowed = evaluate(src_ip, dst_ip, src_port, dst_port, protocol, inbound);
         std::cout << (inbound ? "INBOUND" : "OUTBOUND") << " "
-                  << src_ip << ":" << src_port << " â†’ "
+                  << src_ip << ":" << src_port << " → "
                   << dst_ip << ":" << dst_port << " "
-                  << protocol << " â†’ "
+                  << protocol << " → "
                   << (allowed ? "ALLOW" : "DENY") << "\n";
     }
 };
@@ -1381,7 +1381,7 @@ class SecurityGroup:
         allowed = self.evaluate(src_ip, dst_port, protocol, direction)
         tag = f"[{label}] " if label else ""
         status = "ALLOW" if allowed else "DENY"
-        print(f"{tag}{direction} {src_ip} â†’ port {dst_port}/{protocol} â†’ {status}")
+        print(f"{tag}{direction} {src_ip} → port {dst_port}/{protocol} → {status}")
 
 
 # Simulate a multi-tier application
@@ -1397,11 +1397,11 @@ sg_db = SecurityGroup("sg-db")
 sg_db.add_rule("inbound", "TCP", 3306, sg_source="sg-app")
 
 print("=== Security Group Simulation ===")
-sg_web.simulate("203.0.113.5", 22, "TCP", "inbound", "Internetâ†’web:SSH")
-sg_web.simulate("10.0.1.5", 22, "TCP", "inbound", "VPC-internalâ†’web:SSH")
-sg_app.simulate("10.0.0.10", 8080, "TCP", "inbound", "webâ†’app:HTTP")
-sg_db.simulate("10.0.32.10", 3306, "TCP", "inbound", "appâ†’db:MySQL")
-sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "webâ†’db:MySQL (should DENY)")
+sg_web.simulate("203.0.113.5", 22, "TCP", "inbound", "Internet→web:SSH")
+sg_web.simulate("10.0.1.5", 22, "TCP", "inbound", "VPC-internal→web:SSH")
+sg_app.simulate("10.0.0.10", 8080, "TCP", "inbound", "web→app:HTTP")
+sg_db.simulate("10.0.32.10", 3306, "TCP", "inbound", "app→db:MySQL")
+sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "web→db:MySQL (should DENY)")
 ```
 
 ### Complexity Analysis
@@ -1427,7 +1427,7 @@ sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "webâ†’db:MySQL (should 
 ### Edge Cases for Security Groups
 
 
-- **Self-referencing rules**: A SG can reference itself as source (`sg-xxxxx` as source). This allows instances within the same SG to communicate freely â†’ useful for auto-scaling groups.
+- **Self-referencing rules**: A SG can reference itself as source (`sg-xxxxx` as source). This allows instances within the same SG to communicate freely → useful for auto-scaling groups.
 - **Ephemeral ports**: For outbound connections to the internet, you must allow outbound ephemeral ports (1024-65535). AWS SG default outbound rule allows all traffic, but custom SGs may break outbound connectivity.
 - **SG limits**: Default limit of 60 inbound + 60 outbound rules per SG (500 with quota increase). Use prefix lists for CIDR collections.
 - **Delay in propagation**: SG rule changes take 2-10 seconds to propagate to all hypervisor hosts. Don't assume instant effect in automated testing.
@@ -1448,8 +1448,8 @@ A load balancer is like a **hotel front desk with multiple check-in agents**. Gu
 
 ALB operates at Layer 7 (HTTP/HTTPS). Features:
 
-- Path-based routing: `/api/*` â†’ target group A, `/static/*` â†’ target group B.
-- Host-based routing: `api.example.com` â†’ target group A, `www.example.com` â†’ target group B.
+- Path-based routing: `/api/*` → target group A, `/static/*` → target group B.
+- Host-based routing: `api.example.com` → target group A, `www.example.com` → target group B.
 - SNI support: multiple TLS certificates per listener.
 - WebSocket and HTTP/2 support.
 - Sticky sessions (cookie-based or duration-based).
@@ -1473,7 +1473,7 @@ NLB is suitable for performance-critical applications and protocols that require
 
 GLB operates at Layer 3 (IP) and is designed for deploying virtual appliances (firewalls, IDS/IPS, traffic analyzers). Features:
 
-- Transparent inspection â†’ traffic passes through appliances without changing the destination IP.
+- Transparent inspection → traffic passes through appliances without changing the destination IP.
 - GENEVE encapsulation for appliance communication.
 - Scaling of third-party virtual appliances.
 - Symmetric traffic routing (return traffic through the same appliance).
@@ -1541,7 +1541,7 @@ END PROCEDURE
 | 1 | Listener | Receives on port 80 |
 | 2 | Rule evaluation | Path `/api/users` matches `/api/*` |
 | 3 | Target group | tg-api selected |
-| 4 | Round-robin | RR index 0 â†’ app-1:8080 |
+| 4 | Round-robin | RR index 0 → app-1:8080 |
 | 5 | Forward | X-Forwarded-For header added |
 | 6 | RR index | Incremented to 1 |
 
@@ -1560,9 +1560,9 @@ END PROCEDURE
 | Step | Component | Action |
 |---|---|---|
 | 1 | Listener | Receives on port 80 |
-| 2 | Rule evaluation | No specific rule matches â†’ default |
+| 2 | Rule evaluation | No specific rule matches → default |
 | 3 | Target group | tg-web selected |
-| 4 | Round-robin | RR index 1 â†’ web-2:80 |
+| 4 | Round-robin | RR index 1 → web-2:80 |
 | 5 | Forward | X-Forwarded-For, X-Forwarded-Proto added |
 | 6 | RR index | Incremented to 2 |
 
@@ -1573,7 +1573,7 @@ END PROCEDURE
 | 1 | Listener | Receives on port 80 |
 | 2 | Rule evaluation | Path matches `/api/*` |
 | 3 | Target group | tg-api selected |
-| 4 | Round-robin | RR index 1 â†’ app-2:8080 |
+| 4 | Round-robin | RR index 1 → app-2:8080 |
 | 5 | Forward | Sent to app-2 |
 | 6 | RR index | Incremented to 2 (next request goes to app-1 again) |
 
@@ -1581,11 +1581,11 @@ END PROCEDURE
 
 | Step | Event | Action |
 |---|---|---|
-| 1 | Health check | GET /health to app-1 â†’ timeout |
-| 2 | Retry | 2nd attempt â†’ 503 response |
+| 1 | Health check | GET /health to app-1 → timeout |
+| 2 | Retry | 2nd attempt → 503 response |
 | 3 | Mark unhealthy | app-1 removed from tg-api target list |
-| 4 | Next request | GET /api/orders â†’ RR skips app-1, sends to app-2 |
-| 5 | Recovery | app-1 returns 200 â†’ marked healthy |
+| 4 | Next request | GET /api/orders → RR skips app-1, sends to app-2 |
+| 5 | Recovery | app-1 returns 200 → marked healthy |
 | 6 | Rejoin | app-1 back in rotation |
 
 ### C++ Implementation: Load Balancer with Round-Robin and Least Connections
@@ -1636,7 +1636,7 @@ public:
         for (auto& t : targets) {
             if (t.id == id) {
                 t.healthy = healthy;
-                std::cout << "  Health: " << id << " â†’ "
+                std::cout << "  Health: " << id << " → "
                           << (healthy ? "HEALTHY" : "UNHEALTHY") << "\n";
                 return;
             }
@@ -1651,7 +1651,7 @@ public:
         std::string target_id = select_target(client_ip, path);
         if (target_id.empty()) {
             std::cout << "Req#" << request_id << " [" << client_ip
-                      << " " << path << "] â†’ 503 No healthy targets\n";
+                      << " " << path << "] → 503 No healthy targets\n";
             return;
         }
         for (auto& t : targets) {
@@ -1663,7 +1663,7 @@ public:
                 std::this_thread::sleep_for(std::chrono::milliseconds((int)latency));
                 t.active_connections--;
                 std::cout << "Req#" << request_id << " [" << client_ip
-                          << " " << path << "] â†’ " << target_id
+                          << " " << path << "] → " << target_id
                           << " (latency=" << (int)latency
                           << "ms, conn=" << t.active_connections
                           << ", total=" << t.total_requests << ")\n";
@@ -2012,7 +2012,7 @@ class CloudLoadBalancer {
     const target = this.targets.get(id);
     if (target) {
       target.healthy = healthy;
-      console.log(`[${this.name}] ${id} â†’ ${healthy ? 'HEALTHY' : 'UNHEALTHY'}`);
+      console.log(`[${this.name}] ${id} → ${healthy ? 'HEALTHY' : 'UNHEALTHY'}`);
     }
   }
 
@@ -2058,7 +2058,7 @@ class CloudLoadBalancer {
   handleRequest(clientIp: string, path: string, requestId: number): void {
     const target = this.selectTarget(clientIp);
     if (!target) {
-      console.log(`[${requestId}] ${clientIp} ${path} â†’ 503 No healthy targets`);
+      console.log(`[${requestId}] ${clientIp} ${path} → 503 No healthy targets`);
       return;
     }
 
@@ -2069,7 +2069,7 @@ class CloudLoadBalancer {
     // Simulate request processing
     setTimeout(() => {
       target.activeConnections--;
-      console.log(`[${requestId}] ${clientIp.padEnd(15)} ${path.padEnd(20)} â†’ ${target.config.id} ` +
+      console.log(`[${requestId}] ${clientIp.padEnd(15)} ${path.padEnd(20)} → ${target.config.id} ` +
         `(${latency.toFixed(0)}ms, active=${target.activeConnections}, total=${target.totalRequests})`);
     }, latency);
   }
@@ -2184,21 +2184,21 @@ console.log(drainer.getStatus());
 |---------|---------------|---------------|---------------|
 | OSI Layer | 7 (Application) | 4 (Transport) | 3 (Network) |
 | Protocols | HTTP, HTTPS, gRPC, WebSocket | TCP, UDP, TLS | IP (GENEVE) |
-| Latency | 1-5ms | ~100ÃŽÂ¼s | ~200ÃŽÂ¼s |
-| Path-based routing | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€” |
-| Host-based routing | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€” |
-| Static IP per AZ | Ã¢Å“â€” (uses DNS name) | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Client IP preservation | Ã¢Å“â€” (X-Forwarded-For) | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| TLS termination | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
-| SNI support | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
-| Sticky sessions | Ã¢Å“â€œ (cookie) | Ã¢Å“â€œ (flow hash) | Ã¢Å“â€” |
-| WebSocket support | Ã¢Å“â€œ | Ã¢Å“â€” (raw TCP) | Ã¢Å“â€” |
-| gRPC support | Ã¢Å“â€œ (HTTP/2) | Ã¢Å“â€œ (TCP) | Ã¢Å“â€” |
+| Latency | 1-5ms | ~100μs | ~200μs |
+| Path-based routing | ✓ | ✗ | ✗ |
+| Host-based routing | ✓ | ✗ | ✗ |
+| Static IP per AZ | ✗ (uses DNS name) | ✓ | ✓ |
+| Client IP preservation | ✗ (X-Forwarded-For) | ✓ | ✓ |
+| TLS termination | ✓ | ✓ | ✗ |
+| SNI support | ✓ | ✓ | ✗ |
+| Sticky sessions | ✓ (cookie) | ✓ (flow hash) | ✗ |
+| WebSocket support | ✓ | ✗ (raw TCP) | ✗ |
+| gRPC support | ✓ (HTTP/2) | ✓ (TCP) | ✗ |
 | Target types | IP, instance, Lambda, ALB | IP, instance, ALB | IP, instance |
 | Health checks | HTTP/HTTPS | TCP, HTTP, HTTPS | TCP |
 | Use case | Microservices, web apps | Gaming, real-time, low-latency | Firewall appliances, IDS/IPS |
 | Pricing | Per LCU | Per LCU (more expensive) | Per appliance + data |
-| Cross-zone support | Ã¢Å“â€œ | Ã¢Å“â€œ (can disable) | Ã¢Å“â€œ |
+| Cross-zone support | ✓ | ✓ (can disable) | ✓ |
 
 **How to Choose:**
 - Use **ALB** for HTTP/HTTPS applications that need path/host routing, WebSocket, or Lambda targets.
@@ -2209,22 +2209,22 @@ console.log(drainer.getStatus());
 ### Real-World Analogy
 
 
-Cloud DNS is like a **national telephone directory service operating across multiple cities with call forwarding**. Instead of a single phone book, you have directory assistants in every city (DNS resolvers at edge locations). When you dial a business (request a domain), the nearest assistant looks up the number. If the business operates in multiple cities, the assistant routes your call to the closest office (latency-based routing). If one office is closed, they forward to the next (failover routing). They also handle load balancing â†’ "press 1 for sales, press 2 for support" (weighted routing).
+Cloud DNS is like a **national telephone directory service operating across multiple cities with call forwarding**. Instead of a single phone book, you have directory assistants in every city (DNS resolvers at edge locations). When you dial a business (request a domain), the nearest assistant looks up the number. If the business operates in multiple cities, the assistant routes your call to the closest office (latency-based routing). If one office is closed, they forward to the next (failover routing). They also handle load balancing → "press 1 for sales, press 2 for support" (weighted routing).
 
 ### How Cloud DNS Works: Step-by-Step
 
 
-1. **Domain registration** â†’ You register a domain (e.g., example.com) and delegate its DNS authority to the cloud DNS service by configuring NS records at the registrar.
+1. **Domain registration** → You register a domain (e.g., example.com) and delegate its DNS authority to the cloud DNS service by configuring NS records at the registrar.
 
-2. **Zone creation** â†’ A hosted zone is created with authoritative nameservers. These NS records are published in the zone's parent domain (e.g., .com for example.com).
+2. **Zone creation** → A hosted zone is created with authoritative nameservers. These NS records are published in the zone's parent domain (e.g., .com for example.com).
 
-3. **Record creation** â†’ You create resource records: A/AAAA (IPv4/IPv6 addresses), CNAME (aliases), MX (mail servers), TXT (verification), and alias records (Apex â†’ AWS resource).
+3. **Record creation** → You create resource records: A/AAAA (IPv4/IPv6 addresses), CNAME (aliases), MX (mail servers), TXT (verification), and alias records (Apex → AWS resource).
 
-4. **Routing policy configuration** â†’ You select routing behavior: simple, weighted, latency-based, geolocation, geoproximity, failover, or multivalue.
+4. **Routing policy configuration** → You select routing behavior: simple, weighted, latency-based, geolocation, geoproximity, failover, or multivalue.
 
-5. **Health check integration** â†’ Health checks monitor endpoint availability. Unhealthy endpoints are automatically removed from DNS responses.
+5. **Health check integration** → Health checks monitor endpoint availability. Unhealthy endpoints are automatically removed from DNS responses.
 
-6. **Query resolution** â†’ When a client queries, the resolver follows delegation chain from root â†’ TLD â†’ cloud DNS â†’ answer, applying routing policy.
+6. **Query resolution** → When a client queries, the resolver follows delegation chain from root → TLD → cloud DNS → answer, applying routing policy.
 
 ### Pseudocode: DNS Resolution with Latency-Based Routing
 
@@ -2304,7 +2304,7 @@ END PROCEDURE
 | 7 | Measure latency to eu-west-1 | 75ms |
 | 8 | Measure latency to ap-southeast-1 | 220ms |
 | 9 | Select best region | us-east-1 (5ms) |
-| 10 | Return | alb-ue1.example.com â†’ 10.0.1.10 |
+| 10 | Return | alb-ue1.example.com → 10.0.1.10 |
 | 11 | Cache | TTL = 60s |
 
 **Client: 2a00:1450:4000:800::200e (London, UK)**
@@ -2316,19 +2316,19 @@ END PROCEDURE
 | 3 | Measure latency to eu-west-1 | 3ms |
 | 4 | Measure latency to ap-southeast-1 | 150ms |
 | 5 | Select best region | eu-west-1 (3ms) |
-| 6 | Return | alb-ew1.example.com â†’ 10.1.1.10 |
+| 6 | Return | alb-ew1.example.com → 10.1.1.10 |
 
 **Failover Scenario (us-east-1 health check fails):**
 
 | Step | Operation | Result |
 |---|---|---|
-| 1 | Route53 health checker | HTTP GET to us-east-1 ALB â†’ 503 |
-| 2 | Consecutive failures | 3 of 3 failures â†’ marked unhealthy |
+| 1 | Route53 health checker | HTTP GET to us-east-1 ALB → 503 |
+| 2 | Consecutive failures | 3 of 3 failures → marked unhealthy |
 | 3 | DNS update | us-east-1 record removed from response |
 | 4 | NYC client query | Only eu-west-1 and ap-southeast-1 available |
 | 5 | Latency measurement | eu-west-1 = 75ms, ap-southeast-1 = 220ms |
 | 6 | Result | eu-west-1 selected (75ms vs 220ms) |
-| 7 | Recovery | us-east-1 health check passes â†’ record reinstated |
+| 7 | Recovery | us-east-1 health check passes → record reinstated |
 
 ### C++ Implementation: DNS Routing Simulator
 
@@ -2392,7 +2392,7 @@ public:
         auto cache_it = cache.find(domain);
         if (cache_it != cache.end() && cache_it->second.second > 0) {
             cache_it->second.second--;
-            std::cout << "  [Cache HIT] " << domain << " â†’ "
+            std::cout << "  [Cache HIT] " << domain << " → "
                       << cache_it->second.first << "\n";
             return cache_it->second.first;
         }
@@ -2452,7 +2452,7 @@ public:
                           const std::string& client_label) {
         std::cout << "\n" << client_label << " resolves " << domain << "\n";
         std::cout << std::string(50, '-') << "\n";
-        std::cout << "  Root servers â†’ TLD â†’ Authoritative\n";
+        std::cout << "  Root servers → TLD → Authoritative\n";
         std::string ip = resolve(domain, client_ip);
         std::cout << "  Result: " << ip << "\n";
     }
@@ -2632,7 +2632,7 @@ for i in range(5):
 |---|---|---|---|
 | Simple DNS resolution | O(R) | O(R) | R = records; one random selection |
 | Weighted routing | O(R) | O(R) | Weighted random selection, sum + scan |
-| Latency-based | O(R * P) | O(R) | R records Ãƒâ€” P probe locations |
+| Latency-based | O(R * P) | O(R) | R records × P probe locations |
 | DNS caching | O(1) avg | O(C) | Hash map; C = cache entries |
 | Health check | O(H) | O(H) | H = health check endpoints |
 
@@ -2657,7 +2657,7 @@ for i in range(5):
 - **CNAME at apex**: DNS spec forbids CNAME at the zone apex (example.com without www). Use ALIAS records (Route53) or A records with a static IP.
 - **Health check frequency**: Standard checks run every 30s. Fast (every 10s) adds cost. Set consecutive failure count to 3 to avoid flapping.
 - **Weighted routing zero-weight**: Records with weight 0 are not returned unless all records have weight 0 (then all are returned equally). Use for temporary traffic removal.
-- **Geolocation vs Latency**: Geolocation routes based on client IP location â†’ useful for regional content restrictions. Latency-based routes based on actual measured latency â†’ better for performance. They can conflict; choose based on primary goal.
+- **Geolocation vs Latency**: Geolocation routes based on client IP location → useful for regional content restrictions. Latency-based routes based on actual measured latency → better for performance. They can conflict; choose based on primary goal.
 
 ---
 
@@ -2668,26 +2668,26 @@ A Content Delivery Network (CDN) caches content at edge locations close to users
 ### Real-World Analogy
 
 
-A CDN is like a **chain of local grocery warehouses serving a national restaurant chain**. The central kitchen (origin server) in Chicago prepares all the food. Instead of every restaurant (user) receiving ingredients directly from Chicago, regional warehouses (edge nodes) in LA, NYC, Miami, and Denver stock popular items. A restaurant in LA gets most ingredients from the LA warehouse (cache hit) â†’ 2ms delivery instead of 50ms from Chicago. If the LA warehouse is out of an ingredient (cache miss), it sends a refrigerated truck to Chicago, stocks it, then serves the restaurant. The restaurant doesn't know the difference.
+A CDN is like a **chain of local grocery warehouses serving a national restaurant chain**. The central kitchen (origin server) in Chicago prepares all the food. Instead of every restaurant (user) receiving ingredients directly from Chicago, regional warehouses (edge nodes) in LA, NYC, Miami, and Denver stock popular items. A restaurant in LA gets most ingredients from the LA warehouse (cache hit) → 2ms delivery instead of 50ms from Chicago. If the LA warehouse is out of an ingredient (cache miss), it sends a refrigerated truck to Chicago, stocks it, then serves the restaurant. The restaurant doesn't know the difference.
 
 ### How CDN Works: Step-by-Step
 
 
-1. **User requests content** â†’ Browser requests `https://cdn.example.com/images/logo.png`.
+1. **User requests content** → Browser requests `https://cdn.example.com/images/logo.png`.
 
-2. **DNS resolution** â†’ The CDN's DNS returns the IP of the nearest edge node (based on client IP geolocation).
+2. **DNS resolution** → The CDN's DNS returns the IP of the nearest edge node (based on client IP geolocation).
 
-3. **Edge node check** â†’ The edge node checks its local cache for the URL.
+3. **Edge node check** → The edge node checks its local cache for the URL.
 
-4. **Cache hit** â†’ If cached and not expired, the edge serves the content directly. Latency: 1-10ms.
+4. **Cache hit** → If cached and not expired, the edge serves the content directly. Latency: 1-10ms.
 
-5. **Cache miss** â†’ If not cached or expired, the edge node fetches from the origin server (or upstream regional cache).
+5. **Cache miss** → If not cached or expired, the edge node fetches from the origin server (or upstream regional cache).
 
-6. **Origin fetch** â†’ Origin returns the content with caching headers. Edge caches it.
+6. **Origin fetch** → Origin returns the content with caching headers. Edge caches it.
 
-7. **Response** â†’ Edge serves the content to the user.
+7. **Response** → Edge serves the content to the user.
 
-8. **TTL management** â†’ Content is kept for the TTL period, then considered stale. Stale content may be served during revalidation (stale-while-revalidate).
+8. **TTL management** → Content is kept for the TTL period, then considered stale. Stale content may be served during revalidation (stale-while-revalidate).
 
 ### 16.8.1 CDN Architecture
 
@@ -2697,7 +2697,7 @@ Origin servers store the definitive content. Edge nodes (points of presence, PoP
 ### 16.8.2 Key CDN Features
 
 
-**Tiered caching.** Content flows from origin â†’ regional cache â†’ edge cache, reducing origin load on cache misses.
+**Tiered caching.** Content flows from origin → regional cache → edge cache, reducing origin load on cache misses.
 
 **Cache control.** HTTP headers (Cache-Control, Expires, ETag, Last-Modified) determine caching behavior. `Cache-Control: max-age=3600` caches for one hour; `s-maxage` applies to shared caches.
 
@@ -2736,7 +2736,7 @@ PROCEDURE handle_cdn_request(url, client_ip):
         LOG "Edge cache HIT"
         RETURN edge_entry.content
 
-    // Step 3: Edge cache miss â†’ check regional cache
+    // Step 3: Edge cache miss → check regional cache
     regional_node = parent_regional_cache(edge_node)
     regional_entry = regional_node.cache.get(cache_key)
 
@@ -2745,14 +2745,14 @@ PROCEDURE handle_cdn_request(url, client_ip):
         LOG "Regional cache HIT"
         RETURN regional_entry.content
 
-    // Step 4: Regional cache miss â†’ fetch from origin
+    // Step 4: Regional cache miss → fetch from origin
     origin_response = fetch_from_origin(url)
 
     IF origin_response.is_cacheable():
         ttl = extract_ttl(origin_response.headers)
         regional_node.cache.set(cache_key, origin_response, ttl)
         edge_node.cache.set(cache_key, origin_response, ttl)
-        LOG "Origin fetch â†’ cache populated"
+        LOG "Origin fetch → cache populated"
 
     RETURN origin_response.content
 END PROCEDURE
@@ -2767,37 +2767,37 @@ END PROCEDURE
 
 | Step | Location | Action | Latency |
 |---|---|---|---|
-| 1 | Client (Tokyo) | DNS resolves cdn.example.com â†’ Edge-Tokyo IP | 5ms |
+| 1 | Client (Tokyo) | DNS resolves cdn.example.com → Edge-Tokyo IP | 5ms |
 | 2 | Edge-Tokyo | Cache lookup for `/images/logo.png` | 0ms |
 | 3 | Edge-Tokyo | Cache MISS | 1ms |
-| 4 | Edge-Tokyo | Request to Regional (ap-northeast-1) | â†’ |
+| 4 | Edge-Tokyo | Request to Regional (ap-northeast-1) | → |
 | 5 | Regional cache | Cache MISS | 1ms |
-| 6 | Regional cache | Forward to Origin (us-east-1) | â†’ |
+| 6 | Regional cache | Forward to Origin (us-east-1) | → |
 | 7 | Origin (us-east-1) | Read logo.png from S3, compute ETag | 20ms |
-| 8 | Origin â†’ Regional | Response with Cache-Control: max-age=86400 | 80ms (cross-Pacific) |
-| 9 | Regional â†’ Edge | Cache at regional, forward to edge | 10ms |
-| 10 | Edge â†’ Client | Cache at edge, respond to client | 10ms |
+| 8 | Origin → Regional | Response with Cache-Control: max-age=86400 | 80ms (cross-Pacific) |
+| 9 | Regional → Edge | Cache at regional, forward to edge | 10ms |
+| 10 | Edge → Client | Cache at edge, respond to client | 10ms |
 | | **Total latency** | | **~127ms** |
 
 **Request 2: GET /images/logo.png (cache hit)**
 
 | Step | Location | Action | Latency |
 |---|---|---|---|
-| 1 | Client | DNS â†’ Edge-Tokyo | 5ms |
-| 2 | Edge-Tokyo | Cache lookup â†’ HIT | 0ms |
-| 3 | Edge-Tokyo â†’ Client | Serve from cache | 10ms |
+| 1 | Client | DNS → Edge-Tokyo | 5ms |
+| 2 | Edge-Tokyo | Cache lookup → HIT | 0ms |
+| 3 | Edge-Tokyo → Client | Serve from cache | 10ms |
 | | **Total latency** | | **~15ms** |
 
 **Request 3: GET /api/user/profile (dynamic content, no cache)**
 
 | Step | Location | Action | Latency |
 |---|---|---|---|
-| 1 | Client | DNS â†’ Edge-Tokyo | 5ms |
-| 2 | Edge | Cache-Control: no-cache â†’ bypass cache | 1ms |
-| 3 | Edge â†’ Origin | TCP optimizations, keepalive connection | 80ms |
+| 1 | Client | DNS → Edge-Tokyo | 5ms |
+| 2 | Edge | Cache-Control: no-cache → bypass cache | 1ms |
+| 3 | Edge → Origin | TCP optimizations, keepalive connection | 80ms |
 | 4 | Origin | Generate response (DB query) | 30ms |
-| 5 | Origin â†’ Edge | Return response | 80ms |
-| 6 | Edge â†’ Client | Forward to client | 10ms |
+| 5 | Origin → Edge | Return response | 80ms |
+| 6 | Edge → Client | Forward to client | 10ms |
 | | **Total latency** | | **~206ms** |
 
 **Without CDN (direct origin):**
@@ -2805,13 +2805,13 @@ END PROCEDURE
 | Step | Location | Action | Latency |
 |---|---|---|---|
 | 1 | Client | DNS resolves origin directly | 5ms |
-| 2 | Client â†’ Origin | TCP handshake to us-east-1 | 80ms (3-way RTT) |
+| 2 | Client → Origin | TCP handshake to us-east-1 | 80ms (3-way RTT) |
 | 3 | Origin | TLS handshake | 40ms |
 | 4 | Origin | Generate response | 30ms |
-| 5 | Origin â†’ Client | Response | 80ms |
+| 5 | Origin → Client | Response | 80ms |
 | | **Total latency** | | **~235ms** |
 
-**CDN Benefit:** 15ms vs 235ms for cached content â†’ **93% latency reduction**.
+**CDN Benefit:** 15ms vs 235ms for cached content → **93% latency reduction**.
 
 ### C++ Implementation: CDN Cache Simulator
 
@@ -2894,7 +2894,7 @@ public:
         EdgeNode* edge = nearest_edge(client_region);
         if (!edge) return "ERROR: No edge node";
 
-        std::cout << "Req#" << request_id << " [" << client_region << " â†’ "
+        std::cout << "Req#" << request_id << " [" << client_region << " → "
                   << edge->region << "] GET " << url;
 
         // Check edge cache
@@ -2902,9 +2902,9 @@ public:
         if (!force_miss && cache_it != edge->cache.end() && !cache_it->second.expired()) {
             edge->cache_hits++;
             if (cache_it->second.is_stale_flag) {
-                std::cout << " â†’ EDGE HIT (stale, revalidating async)\n";
+                std::cout << " → EDGE HIT (stale, revalidating async)\n";
             } else {
-                std::cout << " â†’ EDGE HIT\n";
+                std::cout << " → EDGE HIT\n";
             }
             return cache_it->second.content;
         }
@@ -2919,14 +2919,14 @@ public:
             CacheEntry entry = regional_it->second->cache[url];
             entry.inserted_at = std::chrono::steady_clock::now();
             edge->cache[url] = entry;
-            std::cout << " â†’ REGIONAL HIT (edge now populated)\n";
+            std::cout << " → REGIONAL HIT (edge now populated)\n";
             return regional_it->second->cache[url].content;
         }
 
         // Fetch from origin
         auto origin_it = origin.find(url);
         if (origin_it == origin.end()) {
-            std::cout << " â†’ 404 NOT FOUND\n";
+            std::cout << " → 404 NOT FOUND\n";
             return "404";
         }
 
@@ -2944,7 +2944,7 @@ public:
         regional_cache[url] = edge;
         edge->cache[url] = entry;
 
-        std::cout << " â†’ ORIGIN FETCH (" << fetch_latency << "ms, load="
+        std::cout << " → ORIGIN FETCH (" << fetch_latency << "ms, load="
                   << origins_loaded[url] << ")\n";
         return origin_it->second;
     }
@@ -2986,11 +2986,11 @@ int main() {
 
     std::cout << "=== CDN Simulator ===\n\n";
 
-    // First request â†’ cache miss
+    // First request → cache miss
     cdn.handle_request("/images/logo.png", "tokyo", 1, false);
-    // Second request â†’ cache hit
+    // Second request → cache hit
     cdn.handle_request("/images/logo.png", "tokyo", 2, false);
-    // Different region â†’ regional cache hit
+    // Different region → regional cache hit
     cdn.handle_request("/images/logo.png", "singapore", 3, false);
     // Different content
     cdn.handle_request("/static/style.css", "london", 4, false);
@@ -3073,14 +3073,14 @@ class CDN:
             return None
 
         now = time.time()
-        print(f"Req#{req_id} [{client_region} â†’ {edge.region}] GET {url}", end="")
+        print(f"Req#{req_id} [{client_region} → {edge.region}] GET {url}", end="")
 
         # Edge cache
         if not force_miss and url in edge.cache:
             entry = edge.cache[url]
             if now - entry.inserted_at < entry.ttl:
                 edge.hits += 1
-                print(f" â†’ EDGE HIT")
+                print(f" → EDGE HIT")
                 return entry.content
         edge.misses += 1
 
@@ -3090,12 +3090,12 @@ class CDN:
             if now - ts < ttl:
                 edge.cache[url] = CacheEntry(content=content, inserted_at=now, ttl=ttl)
                 edge.hits += 1
-                print(f" â†’ REGIONAL HIT (edge populated)")
+                print(f" → REGIONAL HIT (edge populated)")
                 return content
 
         # Origin fetch
         if url not in self.origin:
-            print(f" â†’ 404")
+            print(f" → 404")
             return None
 
         content = self.origin[url]
@@ -3106,7 +3106,7 @@ class CDN:
         self.regional_cache[url] = (content, now, ttl)
         edge.cache[url] = CacheEntry(content=content, inserted_at=now, ttl=ttl)
 
-        print(f" â†’ ORIGIN FETCH ({fetch_time}ms, origin_load={self.origin_load[url]})")
+        print(f" → ORIGIN FETCH ({fetch_time}ms, origin_load={self.origin_load[url]})")
         return content
 
     def stats(self):
@@ -3236,7 +3236,7 @@ class CDNManager {
   private originLoad: Map<string, number> = new Map();
   private originHealth: Map<string, boolean> = new Map();
 
-  // Latency matrix: region â†’ region â†’ latency in ms
+  // Latency matrix: region → region → latency in ms
   private static readonly LATENCY_MATRIX: Record<string, Record<string, number>> = {
     'us-east-1':  { 'us-east-1': 0, 'us-west-2': 65,  'eu-west-1': 75,  'ap-southeast-1': 190, 'ap-northeast-1': 150 },
     'us-west-2':  { 'us-east-1': 65, 'us-west-2': 0,  'eu-west-1': 140, 'ap-southeast-1': 120, 'ap-northeast-1': 100 },
@@ -3293,7 +3293,7 @@ class CDNManager {
   request(url: string, clientRegion: string, reqId: number, forceMiss: boolean = false): string | null {
     const edge = this.findNearestEdge(clientRegion);
     if (!edge) {
-      console.log(`[${reqId}] ${clientRegion} â†’ NO EDGE AVAILABLE`);
+      console.log(`[${reqId}] ${clientRegion} → NO EDGE AVAILABLE`);
       return null;
     }
 
@@ -3302,7 +3302,7 @@ class CDNManager {
     const now = Date.now();
     let cacheLevel: CacheLevel;
 
-    console.log(`[${reqId}] ${clientRegion.padEnd(15)} â†’ ${edge.config.name.padEnd(15)} GET ${url}`);
+    console.log(`[${reqId}] ${clientRegion.padEnd(15)} → ${edge.config.name.padEnd(15)} GET ${url}`);
 
     // Level 1: Edge cache
     if (!forceMiss && edge.cache.has(url)) {
@@ -3311,7 +3311,7 @@ class CDNManager {
         edge.hits++;
         edge.bytesServed += entry.content.length;
         cacheLevel = 'edge';
-        console.log(`  â†’ EDGE HIT (ttl_remaining=${(entry.ttlMs - (now - entry.insertedAt)) / 1000}s)`);
+        console.log(`  → EDGE HIT (ttl_remaining=${(entry.ttlMs - (now - entry.insertedAt)) / 1000}s)`);
         return entry.content;
       }
     }
@@ -3326,19 +3326,19 @@ class CDNManager {
         edge.hits++;
         edge.bytesServed += regional.content.length;
         cacheLevel = 'regional';
-        console.log(`  â†’ REGIONAL HIT (edge cached from regional)`);
+        console.log(`  → REGIONAL HIT (edge cached from regional)`);
         return regional.content;
       }
     }
 
     // Level 3: Origin fetch
     if (!this.originContent.has(url)) {
-      console.log(`  â†’ 404 NOT FOUND`);
+      console.log(`  → 404 NOT FOUND`);
       return null;
     }
 
     if (!this.originHealth.get(url)) {
-      console.log(`  â†’ 503 ORIGIN UNHEALTHY`);
+      console.log(`  → 503 ORIGIN UNHEALTHY`);
       return null;
     }
 
@@ -3351,7 +3351,7 @@ class CDNManager {
     edge.cache.set(url, { content, insertedAt: now, ttlMs });
 
     cacheLevel = 'origin';
-    console.log(`  â†’ ORIGIN FETCH (${fetchLatency}ms, origin_hits=${this.originLoad.get(url)}, ttl=${ttlMs / 1000}s)`);
+    console.log(`  → ORIGIN FETCH (${fetchLatency}ms, origin_hits=${this.originLoad.get(url)}, ttl=${ttlMs / 1000}s)`);
     return content;
   }
 
@@ -3481,19 +3481,19 @@ A VPN to the cloud is like a **secure armored tunnel through a public highway**.
 ### How Cloud VPN Works: Step-by-Step
 
 
-1. **Gateway creation** â†’ Create a VPN gateway in the cloud VPC and configure a customer gateway (CGW) representing the on-premises VPN device.
+1. **Gateway creation** → Create a VPN gateway in the cloud VPC and configure a customer gateway (CGW) representing the on-premises VPN device.
 
-2. **Tunnel negotiation** â†’ The cloud gateway and on-premises device establish two IPSec tunnels (for high availability) using IKE (Internet Key Exchange) v1 or v2.
+2. **Tunnel negotiation** → The cloud gateway and on-premises device establish two IPSec tunnels (for high availability) using IKE (Internet Key Exchange) v1 or v2.
 
-3. **Authentication** â†’ Pre-shared keys (PSK) or certificates authenticate both endpoints. Phase 1 (IKE SA) establishes a secure management channel.
+3. **Authentication** → Pre-shared keys (PSK) or certificates authenticate both endpoints. Phase 1 (IKE SA) establishes a secure management channel.
 
-4. **IPSec child SA** â†’ Phase 2 establishes the actual data encryption parameters: AES-256 encryption, SHA-256 hashing, Diffie-Hellman group 14/16 key exchange.
+4. **IPSec child SA** → Phase 2 establishes the actual data encryption parameters: AES-256 encryption, SHA-256 hashing, Diffie-Hellman group 14/16 key exchange.
 
-5. **Route propagation** â†’ The cloud VPC learns on-premises routes via BGP over the tunnel (dynamic VPN) or static route entries.
+5. **Route propagation** → The cloud VPC learns on-premises routes via BGP over the tunnel (dynamic VPN) or static route entries.
 
-6. **Traffic flow** â†’ Packets from on-premises to cloud are encrypted, encapsulated, sent over the internet, decrypted by the VPN gateway, and forwarded within the VPC.
+6. **Traffic flow** → Packets from on-premises to cloud are encrypted, encapsulated, sent over the internet, decrypted by the VPN gateway, and forwarded within the VPC.
 
-7. **NAT traversal** â†’ If both ends use NAT devices, UDP encapsulation (4500) wraps ESP packets to traverse NAT.
+7. **NAT traversal** → If both ends use NAT devices, UDP encapsulation (4500) wraps ESP packets to traverse NAT.
 
 ### Pseudocode: IPSec VPN Tunnel Establishment
 
@@ -3529,8 +3529,8 @@ PROCEDURE establish_ipsec_tunnel(cloud_gw, onprem_gw, psk):
 
     LOG "IPSec tunnel established"
     LOG "Encryption: AES-256-GCM, Auth: SHA-256"
-    LOG "SPI (cloudâ†’onprem): " + spi_cloud
-    LOG "SPI (onpremâ†’cloud): " + spi_onprem
+    LOG "SPI (cloud→onprem): " + spi_cloud
+    LOG "SPI (onprem→cloud): " + spi_onprem
 
     RETURN { spi_cloud, spi_onprem, encryption_key }
 END PROCEDURE
@@ -3576,18 +3576,18 @@ END PROCEDURE
 | BGP ASN (Cloud) | 64512 |
 | BGP ASN (On-prem) | 65000 |
 
-**Trace: On-prem host (192.168.1.10) â†’ Cloud instance (10.0.1.50)**
+**Trace: On-prem host (192.168.1.10) → Cloud instance (10.0.1.50)**
 
 | Step | Component | Action |
 |---|---|---|
-| 1 | On-prem host | Sends packet: 192.168.1.10 â†’ 10.0.1.50:443 |
-| 2 | On-prem router | Route lookup: 10.0.0.0/16 â†’ tunnel interface |
+| 1 | On-prem host | Sends packet: 192.168.1.10 → 10.0.1.50:443 |
+| 2 | On-prem router | Route lookup: 10.0.0.0/16 → tunnel interface |
 | 3 | VPN device | Encrypt packet with AES-256-GCM, SPI=0x1234ABCD |
 | 4 | VPN device | Add ESP header, UDP encapsulate (port 4500) |
-| 5 | Internet | Outer IP: 203.0.113.5 â†’ 72.21.210.10 |
+| 5 | Internet | Outer IP: 203.0.113.5 → 72.21.210.10 |
 | 6 | Cloud VPN GW | Decrypt ESP packet, verify HMAC |
 | 7 | Cloud VPN GW | Forward decrypted packet: 10.0.1.50 |
-| 8 | VPC route table | 10.0.1.50 â†’ subnet-local â†’ instance |
+| 8 | VPC route table | 10.0.1.50 → subnet-local → instance |
 | 9 | Security group | Allow inbound TCP/443 from 192.168.0.0/16 |
 | 10 | EC2 instance | Process request |
 
@@ -3600,7 +3600,7 @@ END PROCEDURE
 | 3 | VPN GW | BGP withdraws routes from primary tunnel |
 | 4 | VPN GW | Falls back to secondary tunnel |
 | 5 | BGP re-establish | Routes advertised over secondary tunnel |
-| 6 | Traffic re-routed | All on-premâ†’VPC traffic via secondary |
+| 6 | Traffic re-routed | All on-prem→VPC traffic via secondary |
 | 7 | Failover time | ~15-60 seconds total (DPD + BGP convergence) |
 
 ### C++ Implementation: VPN Tunnel Simulator
@@ -3695,7 +3695,7 @@ public:
 
     void send_packet(const std::string& src, const std::string& dst,
                      int port, const std::string& protocol, int packet_id) {
-        std::cout << "\nPacket#" << packet_id << ": " << src << " â†’ "
+        std::cout << "\nPacket#" << packet_id << ": " << src << " → "
                   << dst << ":" << port << " " << protocol;
 
         // Determine direction
@@ -3708,30 +3708,30 @@ public:
         }
 
         if (!active_tunnel) {
-            std::cout << " â†’ DROPPED (no active tunnel)\n";
+            std::cout << " → DROPPED (no active tunnel)\n";
             return;
         }
 
         if (to_cloud) {
-            std::cout << " [on-premâ†’cloud]";
+            std::cout << " [on-prem→cloud]";
             // Encrypt
             active_tunnel->seq_counter++;
-            std::cout << " â†’ Encrypt (SPI=0x" << std::hex << active_tunnel->spi_out
+            std::cout << " → Encrypt (SPI=0x" << std::hex << active_tunnel->spi_out
                       << std::dec << ", seq=" << active_tunnel->seq_counter << ")";
-            std::cout << " â†’ Tunnel " << active_tunnel->id
+            std::cout << " → Tunnel " << active_tunnel->id
                       << " (" << active_tunnel->latency_ms << "ms)";
             std::this_thread::sleep_for(std::chrono::milliseconds(5));
 
             // Decrypt at cloud end
-            std::cout << " â†’ Decrypt â†’ Forward to " << dst;
-            std::cout << " â†’ DELIVERED\n";
+            std::cout << " → Decrypt → Forward to " << dst;
+            std::cout << " → DELIVERED\n";
         } else {
-            std::cout << " [cloudâ†’on-prem]";
+            std::cout << " [cloud→on-prem]";
             active_tunnel->seq_counter++;
-            std::cout << " â†’ Encrypt";
-            std::cout << " â†’ Tunnel " << active_tunnel->id;
-            std::cout << " â†’ Decrypt â†’ Forward to " << dst;
-            std::cout << " â†’ DELIVERED\n";
+            std::cout << " → Encrypt";
+            std::cout << " → Tunnel " << active_tunnel->id;
+            std::cout << " → Decrypt → Forward to " << dst;
+            std::cout << " → DELIVERED\n";
         }
     }
 
@@ -3835,22 +3835,22 @@ class CloudVPN:
                     protocol: str, packet_id: int):
         dst_ip = ipaddress.IPv4Address(dst)
         to_cloud = dst_ip in self.vpc_network
-        direction = "on-premâ†’cloud" if to_cloud else "cloudâ†’on-prem"
+        direction = "on-prem→cloud" if to_cloud else "cloud→on-prem"
 
-        print(f"\nPkt#{packet_id}: {src}â†’{dst}:{port} {protocol} [{direction}]", end="")
+        print(f"\nPkt#{packet_id}: {src}→{dst}:{port} {protocol} [{direction}]", end="")
 
         tunnel = self.get_active_tunnel()
         if tunnel is None:
-            print(" â†’ DROPPED (no active tunnel)", end="")
+            print(" → DROPPED (no active tunnel)", end="")
             return
 
         tunnel.seq_counter += 1
         time.sleep(0.01)
 
         enc = tunnel.encryption
-        print(f" â†’ Encrypt({enc} SPI=0x{tunnel.spi_out:08X} seq={tunnel.seq_counter})", end="")
-        print(f" â†’ Tunnel({tunnel.tunnel_id} {tunnel.latency_ms}ms)", end="")
-        print(f" â†’ Decrypt â†’ DELIVERED to {dst}")
+        print(f" → Encrypt({enc} SPI=0x{tunnel.spi_out:08X} seq={tunnel.seq_counter})", end="")
+        print(f" → Tunnel({tunnel.tunnel_id} {tunnel.latency_ms}ms)", end="")
+        print(f" → Decrypt → DELIVERED to {dst}")
 
     def failover_simulation(self):
         print("\n=== VPN TUNNEL FAILOVER SIMULATION ===")
@@ -3893,7 +3893,7 @@ vpn.status()
 | HMAC verification (per packet) | O(N) | O(1) | Hash entire payload once |
 | BGP route propagation | O(R) | O(R) | R = route prefixes; BGP update per prefix |
 
-**Why AES-256 is O(N) and not O(1):** Each 16-byte block must be encrypted sequentially. A 1500-byte packet requires ~94 AES block operations. Hardware AES-NI instructions make this ~1 CPU cycle per byte, which is 1.5ÃŽÂ¼s for a 1500-byte packet at 1GHz.
+**Why AES-256 is O(N) and not O(1):** Each 16-byte block must be encrypted sequentially. A 1500-byte packet requires ~94 AES block operations. Hardware AES-NI instructions make this ~1 CPU cycle per byte, which is 1.5μs for a 1500-byte packet at 1GHz.
 
 ### Advantages & Disadvantages of Cloud VPN
 
@@ -3927,17 +3927,17 @@ Direct Connect is like a **private subway line between your office building and 
 ### How Direct Connect Works: Step-by-Step
 
 
-1. **Request connection** â†’ Order a Direct Connect port from AWS/Azure/GCP at a supported DX location (colocation facility).
+1. **Request connection** → Order a Direct Connect port from AWS/Azure/GCP at a supported DX location (colocation facility).
 
-2. **Cross-connect** â†’ Work with the facility to physically connect your cage to the provider's router. This is a single-mode fiber cross-connect.
+2. **Cross-connect** → Work with the facility to physically connect your cage to the provider's router. This is a single-mode fiber cross-connect.
 
-3. **VLAN configuration** â†’ Create a VLAN on the physical connection. Each virtual interface (VIF) maps to a VLAN ID (802.1Q).
+3. **VLAN configuration** → Create a VLAN on the physical connection. Each virtual interface (VIF) maps to a VLAN ID (802.1Q).
 
-4. **BGP peering** â†’ Run BGP (public or private VIF) between your router and the provider's router. Private VIF reaches VPCs; public VIF reaches public services.
+4. **BGP peering** → Run BGP (public or private VIF) between your router and the provider's router. Private VIF reaches VPCs; public VIF reaches public services.
 
-5. **Route propagation** â†’ Advertise on-premises prefixes via BGP. Cloud VPC learns routes and sends return traffic through the DX connection.
+5. **Route propagation** → Advertise on-premises prefixes via BGP. Cloud VPC learns routes and sends return traffic through the DX connection.
 
-6. **Traffic flow** â†’ On-premises â†’ DX location â†’ provider network â†’ VPC. No internet transit at any point.
+6. **Traffic flow** → On-premises → DX location → provider network → VPC. No internet transit at any point.
 
 ### Pseudocode: Direct Connect BGP Session Setup
 
@@ -3973,7 +3973,7 @@ PROCEDURE setup_direct_connect(dx_location, vlan_id, bgp_asn, vpc_cidrs):
 
     // Step 4: Advertise prefixes
     bgp_session.send_UPDATE({
-        network_layer_reachability: vpc_cidrs,  // Cloud â†’ On-prem
+        network_layer_reachability: vpc_cidrs,  // Cloud → On-prem
         next_hop: dx_port.router_ip,
         as_path: [64512],
         communities: ["7224:9100"]  // AWS direct connect
@@ -3993,26 +3993,26 @@ END PROCEDURE
 ### Dry Run Trace: Direct Connect Packet Flow
 
 
-**Setup:** On-prem (192.168.0.0/16) â†’ DX Location (Equinix NY7) â†’ AWS us-east-1 (10.0.0.0/16)
+**Setup:** On-prem (192.168.0.0/16) → DX Location (Equinix NY7) → AWS us-east-1 (10.0.0.0/16)
 
 **BGP:**
 - Cloud ASN: 64512, Advertises: 10.0.0.0/16
 - On-prem ASN: 65000, Advertises: 192.168.0.0/16
 
-**Trace: On-prem DB sync â†’ VPC RDS**
+**Trace: On-prem DB sync → VPC RDS**
 
 | Step | Location | Action | Latency |
 |---|---|---|---|
 | 1 | On-prem server (192.168.1.50) | Sends DB replication data to 10.0.1.100:3306 | 0ms |
 | 2 | On-prem switch | Forwards to DX router | 0.1ms |
-| 3 | DX router | BGP lookup: 10.0.0.0/16 â†’ Direct Connect VIF | 0.01ms |
+| 3 | DX router | BGP lookup: 10.0.0.0/16 → Direct Connect VIF | 0.01ms |
 | 4 | Cross-connect | Physical fiber to AWS DX location cage | 0.1ms |
-| 5 | AWS Direct Connect router | BGP lookup: VLAN 100 â†’ VPC | 0.01ms |
+| 5 | AWS Direct Connect router | BGP lookup: VLAN 100 → VPC | 0.01ms |
 | 6 | AWS backbone | Internal routing to us-east-1 | 3ms |
-| 7 | Transit Gateway | Route: 10.0.1.100 â†’ VPC attachment | 0.05ms |
-| 8 | VPC route table | 10.0.1.100 â†’ subnet-local | 0.01ms |
+| 7 | Transit Gateway | Route: 10.0.1.100 → VPC attachment | 0.05ms |
+| 8 | VPC route table | 10.0.1.100 → subnet-local | 0.01ms |
 | 9 | Security Group | Allow inbound TCP/3306 from 192.168.0.0/16 | 0.01ms |
-| 10 | RDS instance | Receive and process | â†’ |
+| 10 | RDS instance | Receive and process | → |
 | | **Total** | | **~3.3ms** |
 
 **Trace: VPN equivalent (for comparison)**
@@ -4022,7 +4022,7 @@ END PROCEDURE
 | 1-2 | Same as Direct Connect | 0.1ms |
 | 3 | VPN device encrypts packet (AES-256) | 0.5ms |
 | 4 | UDP encapsulation | 0.1ms |
-| 5 | Packet travels over public internet (NY â†’ Virginia) | 18ms |
+| 5 | Packet travels over public internet (NY → Virginia) | 18ms |
 | 6 | Cloud VPN GW decryption | 0.5ms |
 | 7-10 | Same as Direct Connect | 3ms |
 | | **Total VPN** | **~22ms** |
@@ -4203,10 +4203,10 @@ analyze_connectivity(daily_data_gb=10000)
 | Setup time | Minutes | Minutes | Weeks-months |
 
 **Decision guide:**
-- **2-3 VPCs in same region** â†’ VPC Peering (simplest, free)
-- **5+ VPCs or multiple regions** â†’ Transit Gateway (scalable hub)
-- **On-prem to cloud, &lt;1 TB/month** â†’ VPN (cost-effective)
-- **On-prem to cloud, >1 TB/month or latency-sensitive** â†’ Direct Connect
+- **2-3 VPCs in same region** → VPC Peering (simplest, free)
+- **5+ VPCs or multiple regions** → Transit Gateway (scalable hub)
+- **On-prem to cloud, &lt;1 TB/month** → VPN (cost-effective)
+- **On-prem to cloud, >1 TB/month or latency-sensitive** → Direct Connect
 
 ---
 
@@ -4215,22 +4215,22 @@ analyze_connectivity(daily_data_gb=10000)
 ### Real-World Analogy
 
 
-Multi-cloud networking is like a **company with offices in three different city business districts**, each with its own internal mail system. To connect them, you build dedicated courier routes between offices (direct connects/VPNs to each cloud), set up a central mail sorting facility (centralized network hub), and ensure the mail format is compatible across all cities (standard protocols like BGP and IPSec). A mail piece from New York (AWS) to London (Azure) goes: NY office â†’ NY courier â†’ sorting facility â†’ London courier â†’ London office.
+Multi-cloud networking is like a **company with offices in three different city business districts**, each with its own internal mail system. To connect them, you build dedicated courier routes between offices (direct connects/VPNs to each cloud), set up a central mail sorting facility (centralized network hub), and ensure the mail format is compatible across all cities (standard protocols like BGP and IPSec). A mail piece from New York (AWS) to London (Azure) goes: NY office → NY courier → sorting facility → London courier → London office.
 
 ### How Multi-Cloud Networking Works: Step-by-Step
 
 
-1. **Establish connectivity** â†’ Set up VPN or Direct Connect from each cloud provider to a common hub (could be a colocation facility, Transit Gateway, or third-party SD-WAN).
+1. **Establish connectivity** → Set up VPN or Direct Connect from each cloud provider to a common hub (could be a colocation facility, Transit Gateway, or third-party SD-WAN).
 
-2. **Route orchestration** â†’ Advertise VPC CIDRs from each cloud via BGP. Avoid overlapping CIDRs across clouds.
+2. **Route orchestration** → Advertise VPC CIDRs from each cloud via BGP. Avoid overlapping CIDRs across clouds.
 
-3. **Traffic inspection** â†’ Deploy centralized firewall/NAT appliances at the hub for traffic that crosses cloud boundaries.
+3. **Traffic inspection** → Deploy centralized firewall/NAT appliances at the hub for traffic that crosses cloud boundaries.
 
-4. **DNS strategy** â†’ Use a global DNS provider (Route53, Cloud DNS, Azure DNS) that spans all clouds and routes by latency/health.
+4. **DNS strategy** → Use a global DNS provider (Route53, Cloud DNS, Azure DNS) that spans all clouds and routes by latency/health.
 
-5. **Load balancing** â†’ Global load balancers distribute traffic across cloud regions. Each cloud's internal ALB/NLB handles regional distribution.
+5. **Load balancing** → Global load balancers distribute traffic across cloud regions. Each cloud's internal ALB/NLB handles regional distribution.
 
-6. **Monitoring** â†’ Unified observability across clouds using Datadog, Grafana, or cloud-agnostic tools.
+6. **Monitoring** → Unified observability across clouds using Datadog, Grafana, or cloud-agnostic tools.
 
 ### Pseudocode: Multi-Cloud Route Advertisement
 
@@ -4283,19 +4283,19 @@ END PROCEDURE
 - GCP us-central1: 10.2.0.0/16 (analytics)
 - Hub: Equinix colocation with Transit Gateway equivalent
 
-**Trace: AWS web â†’ Azure ML inference**
+**Trace: AWS web → Azure ML inference**
 
 | Step | Location | Action | Latency |
 |---|---|---|---|
 | 1 | AWS us-east-1 | Web app sends inference request to 10.1.1.50:443 | 0ms |
-| 2 | AWS VPC router | Route lookup: 10.1.0.0/16 â†’ DX to colo | 0.01ms |
-| 3 | Direct Connect | AWS â†’ Equinix colocation | 2ms |
-| 4 | Colo hub router | BGP lookup: 10.1.0.0/16 â†’ Azure ExpressRoute | 0.01ms |
-| 5 | ExpressRoute | Equinix â†’ Azure eastus | 2ms |
-| 6 | Azure VNet router | Route: 10.1.1.50 â†’ subnet | 0.01ms |
+| 2 | AWS VPC router | Route lookup: 10.1.0.0/16 → DX to colo | 0.01ms |
+| 3 | Direct Connect | AWS → Equinix colocation | 2ms |
+| 4 | Colo hub router | BGP lookup: 10.1.0.0/16 → Azure ExpressRoute | 0.01ms |
+| 5 | ExpressRoute | Equinix → Azure eastus | 2ms |
+| 6 | Azure VNet router | Route: 10.1.1.50 → subnet | 0.01ms |
 | 7 | Azure NSG | Allow TCP/443 from 10.0.0.0/16 | 0.01ms |
 | 8 | ML instance | Process inference | 50ms |
-| 9 | Return path | Azure â†’ ExpressRoute â†’ Colo â†’ Direct Connect â†’ AWS | 4ms |
+| 9 | Return path | Azure → ExpressRoute → Colo → Direct Connect → AWS | 4ms |
 | | **Total** | | **~58ms (including inference)** |
 
 ### C++ Implementation: Multi-Cloud Route Table
@@ -4367,7 +4367,7 @@ public:
         std::string to_cloud = find_cloud(dst_ip);
         if (to_cloud.empty()) {
             std::cout << "Req#" << request_id << ": " << from_cloud
-                      << " â†’ " << dst_ip << " â†’ NO ROUTE\n";
+                      << " → " << dst_ip << " → NO ROUTE\n";
             return;
         }
 
@@ -4392,7 +4392,7 @@ public:
         std::cout << "Req#" << request_id << ": ";
         for (size_t i = 0; i < hops.size(); i++) {
             std::cout << hops[i];
-            if (i < hops.size() - 1) std::cout << " â†’ ";
+            if (i < hops.size() - 1) std::cout << " → ";
         }
         std::cout << " [" << total_latency << "ms]" << "\n";
     }
@@ -4422,10 +4422,10 @@ int main() {
     mcn.print_route_table();
 
     std::cout << "\nCross-cloud traffic simulation:\n";
-    mcn.trace_request("aws", "10.1.1.50", 1);    // AWS â†’ Azure
-    mcn.trace_request("azure", "10.2.0.100", 2); // Azure â†’ GCP
-    mcn.trace_request("aws", "10.0.1.10", 3);    // AWS â†’ AWS (same cloud)
-    mcn.trace_request("gcp", "192.168.1.1", 4);  // GCP â†’ on-prem
+    mcn.trace_request("aws", "10.1.1.50", 1);    // AWS → Azure
+    mcn.trace_request("azure", "10.2.0.100", 2); // Azure → GCP
+    mcn.trace_request("aws", "10.0.1.10", 3);    // AWS → AWS (same cloud)
+    mcn.trace_request("gcp", "192.168.1.1", 4);  // GCP → on-prem
     mcn.trace_request("aws", "172.16.0.1", 5);   // No route
 
     return 0;
@@ -4454,7 +4454,7 @@ class MultiCloudNetwork:
         self.routes: list[CloudRoute] = []
         self.latency_map = {
             "aws": 0, "azure": 2, "gcp": 3, "onprem": 1,
-            "awsâ†’colo": 1, "azureâ†’colo": 2, "gcpâ†’colo": 3, "onpremâ†’colo": 1
+            "aws→colo": 1, "azure→colo": 2, "gcp→colo": 3, "onprem→colo": 1
         }
 
     def add_route(self, cloud: str, cidr: str, connection: str):
@@ -4474,7 +4474,7 @@ class MultiCloudNetwork:
     def trace(self, from_cloud: str, dst_ip: str, req_id: int):
         to_cloud = self.find_cloud(dst_ip)
         if to_cloud is None:
-            print(f"Req#{req_id}: {from_cloud} â†’ {dst_ip} â†’ NO ROUTE")
+            print(f"Req#{req_id}: {from_cloud} → {dst_ip} → NO ROUTE")
             return
 
         path = [from_cloud]
@@ -4483,11 +4483,11 @@ class MultiCloudNetwork:
         if from_cloud != to_cloud:
             path.append("colo-hub")
             path.append(to_cloud)
-            hub_key1 = f"{from_cloud}â†’colo"
-            hub_key2 = f"{to_cloud}â†’colo"
+            hub_key1 = f"{from_cloud}→colo"
+            hub_key2 = f"{to_cloud}→colo"
             latency = self.latency_map.get(hub_key1, 2) + self.latency_map.get(hub_key2, 2) + 2
 
-        path_str = " â†’ ".join(path)
+        path_str = " → ".join(path)
         print(f"Req#{req_id}: {path_str} [{latency}ms]")
 
     def print_routes(self):
@@ -4524,7 +4524,7 @@ mcn.trace("GCP", "10.0.0.50", 4)
 
 
 - **CIDR overlap**: Different clouds must not use overlapping CIDRs, or NAT must be applied at the hub. Plan IP space globally.
-- **Latency asymmetry**: AWSâ†’Azure may differ from Azureâ†’AWS. Always measure both directions.
+- **Latency asymmetry**: AWS→Azure may differ from Azure→AWS. Always measure both directions.
 - **Provider NAT**: Some cloud providers NAT traffic by default. Test and configure appropriately.
 - **Data sovereignty**: Cross-cloud data transfer may violate data residency requirements. Route through compliant regions.
 
@@ -4535,24 +4535,24 @@ mcn.trace("GCP", "10.0.0.50", 4)
 ### Real-World Analogy
 
 
-A service mesh is like an **air traffic control system for every courier in a city**. Without air traffic control (traditional networking), each courier drives using paper maps (service discovery), calls ahead to check if the recipient is home (health checks), and negotiates delivery routes themselves (load balancing). With air traffic control (service mesh), every courier has a radio (sidecar proxy) that tells them exactly where to go, reroutes around traffic (circuit breaking), encrypts their cargo (mTLS), and logs every delivery (observability). The couriers don't need to think â†’ the control tower handles it.
+A service mesh is like an **air traffic control system for every courier in a city**. Without air traffic control (traditional networking), each courier drives using paper maps (service discovery), calls ahead to check if the recipient is home (health checks), and negotiates delivery routes themselves (load balancing). With air traffic control (service mesh), every courier has a radio (sidecar proxy) that tells them exactly where to go, reroutes around traffic (circuit breaking), encrypts their cargo (mTLS), and logs every delivery (observability). The couriers don't need to think → the control tower handles it.
 
 ### How Service Mesh Works: Step-by-Step
 
 
-1. **Sidecar injection** â†’ An admission webhook automatically injects an Envoy (Istio) or Linkerd-proxy sidecar container into each pod at deployment time.
+1. **Sidecar injection** → An admission webhook automatically injects an Envoy (Istio) or Linkerd-proxy sidecar container into each pod at deployment time.
 
-2. **Service discovery** â†’ The sidecar connects to the control plane (Istiod or Linkerd controller) to learn about all services, endpoints, and routing rules.
+2. **Service discovery** → The sidecar connects to the control plane (Istiod or Linkerd controller) to learn about all services, endpoints, and routing rules.
 
-3. **Traffic interception** â†’ iptables rules redirect all inbound and outbound traffic through the sidecar proxy. Applications are unaware of the proxy.
+3. **Traffic interception** → iptables rules redirect all inbound and outbound traffic through the sidecar proxy. Applications are unaware of the proxy.
 
-4. **mTLS handshake** â†’ When service A calls service B, the sidecars establish mutual TLS (both sides present certificates). Traffic is encrypted end-to-end.
+4. **mTLS handshake** → When service A calls service B, the sidecars establish mutual TLS (both sides present certificates). Traffic is encrypted end-to-end.
 
-5. **Routing decisions** â†’ The sidecar applies routing rules: canary routing, retries, timeouts, circuit breakers, fault injection.
+5. **Routing decisions** → The sidecar applies routing rules: canary routing, retries, timeouts, circuit breakers, fault injection.
 
-6. **Telemetry collection** â†’ Each sidecar emits metrics (request count, latency, errors), distributed tracing (OpenTelemetry), and access logs.
+6. **Telemetry collection** → Each sidecar emits metrics (request count, latency, errors), distributed tracing (OpenTelemetry), and access logs.
 
-7. **Control plane sync** â†’ The control plane distributes configuration updates to all sidecars via xDS (Istio) or gRPC streaming (Linkerd).
+7. **Control plane sync** → The control plane distributes configuration updates to all sidecars via xDS (Istio) or gRPC streaming (Linkerd).
 
 ### Pseudocode: Service Mesh Request with mTLS and Routing
 
@@ -4612,18 +4612,18 @@ END PROCEDURE
 
 
 **Setup:**
-- Service: `frontend` (v1) â†’ `backend` (v1=80%, v2=20% canary)
+- Service: `frontend` (v1) → `backend` (v1=80%, v2=20% canary)
 - mTLS: STRICT
 - Circuit breaker: max 5 concurrent connections, 10s timeout
 
-**Request 1: frontend â†’ backend (normal path)**
+**Request 1: frontend → backend (normal path)**
 
 | Step | Component | Action |
 |---|---|---|
 | 1 | frontend pod | Sends HTTP GET to http://backend/api/data |
 | 2 | iptables (frontend) | Redirects outbound port 80 to Envoy sidecar (15001) |
 | 3 | Envoy (frontend) | Looks up VirtualService for "backend" |
-| 4 | Envoy | Weighted routing: random(100) = 73 â†’ 73 Ã¢â€°Â¤ 80 â†’ v1 |
+| 4 | Envoy | Weighted routing: random(100) = 73 → 73 ≤ 80 → v1 |
 | 5 | Envoy | Identifies backend-v1 endpoint: 10.0.1.20:8080 |
 | 6 | Envoy | Initiate mTLS with backend-v1 Envoy |
 | 7 | mTLS handshake | Certificate exchange, ALPN h2 negotiation (~3ms) |
@@ -4639,13 +4639,13 @@ END PROCEDURE
 | Step | Component | Action |
 |---|---|---|
 | 1 | Envoy (frontend) | Detects 5 consecutive 503s from backend-v1 |
-| 2 | Circuit breaker | Trip counter = 5 â†’ circuit OPEN |
-| 3 | Next request | VirtualService â†’ tries backend-v1 |
-| 4 | Envoy | Circuit breaker â†’ immediate 503, does not forward |
-| 5 | Fallback | No fallback defined â†’ returns 503 to frontend |
+| 2 | Circuit breaker | Trip counter = 5 → circuit OPEN |
+| 3 | Next request | VirtualService → tries backend-v1 |
+| 4 | Envoy | Circuit breaker → immediate 503, does not forward |
+| 5 | Fallback | No fallback defined → returns 503 to frontend |
 | 6 | Reset timer | Envoy starts 30s reset timer |
-| 7 | After 30s | Circuit HALF-OPEN â†’ allows 1 probe request |
-| 8 | Probe succeeds | Circuit CLOSED â†’ normal routing resumes |
+| 7 | After 30s | Circuit HALF-OPEN → allows 1 probe request |
+| 8 | Probe succeeds | Circuit CLOSED → normal routing resumes |
 
 ### C++ Implementation: Service Mesh Sidecar Simulator
 
@@ -4727,7 +4727,7 @@ public:
                 now - cb.last_failure).count();
             if (elapsed > cb.reset_timeout_ms) {
                 cb.state = "HALF_OPEN";
-                std::cout << "  [Circuit Breaker] OPEN â†’ HALF_OPEN (probe allowed)\n";
+                std::cout << "  [Circuit Breaker] OPEN → HALF_OPEN (probe allowed)\n";
                 return true;
             }
             return false;
@@ -4749,7 +4749,7 @@ public:
         if (cb.failure_count >= cb.threshold && cb.state != "OPEN") {
             cb.state = "OPEN";
             std::cout << "  [Circuit Breaker] TRIPPED (" << cb.failure_count
-                      << " failures) â†’ OPEN (resets in " << cb.reset_timeout_ms << "ms)\n";
+                      << " failures) → OPEN (resets in " << cb.reset_timeout_ms << "ms)\n";
         }
     }
 
@@ -4761,25 +4761,25 @@ public:
         if (cb.state == "HALF_OPEN") {
             cb.state = "CLOSED";
             cb.failure_count = 0;
-            std::cout << "  [Circuit Breaker] HALF_OPEN probe succeeded â†’ CLOSED\n";
+            std::cout << "  [Circuit Breaker] HALF_OPEN probe succeeded → CLOSED\n";
         }
     }
 
     void request(const std::string& from, const std::string& to,
                  const std::string& path, int req_id) {
         total_requests++;
-        std::cout << "\nReq#" << req_id << ": " << from << " â†’ " << to << path << "\n";
+        std::cout << "\nReq#" << req_id << ": " << from << " → " << to << path << "\n";
 
         // Check circuit breaker
         if (!check_circuit_breaker(to)) {
-            std::cout << "  [Envoy] Circuit breaker OPEN â†’ immediate 503\n";
+            std::cout << "  [Envoy] Circuit breaker OPEN → immediate 503\n";
             failed_requests++;
             return;
         }
 
         // Select version
         std::string version = select_version(to);
-        std::cout << "  [Envoy] VirtualService rule: weight â†’ " << version << "\n";
+        std::cout << "  [Envoy] VirtualService rule: weight → " << version << "\n";
 
         // Find endpoint
         auto& eps = services[to];
@@ -4808,10 +4808,10 @@ public:
         // Simulate occasional failure
         bool success = (rng() % 100) < 85;
         if (success) {
-            std::cout << "  [Envoy] â†’ " << target << " (" << latency << "ms) â†’ 200 OK\n";
+            std::cout << "  [Envoy] → " << target << " (" << latency << "ms) → 200 OK\n";
             record_success(to);
         } else {
-            std::cout << "  [Envoy] â†’ " << target << " â†’ 503 Service Unavailable\n";
+            std::cout << "  [Envoy] → " << target << " → 503 Service Unavailable\n";
             record_failure(to);
             failed_requests++;
         }
@@ -5051,20 +5051,20 @@ mesh.stats()
 ### Real-World Analogy
 
 
-Anycast is like a **nationwide pizza chain with one phone number**. When you dial the number, your call is routed to the nearest store (not a central call center). The same phone number works in New York (routes to NY store) and Los Angeles (routes to LA store). If the NY store is busy, the call may route to the next closest store. Each store is advertising the same phone number â†’ it's the network that decides which store answers based on location. This is exactly how anycast works: multiple servers advertise the same IP, and BGP routing sends each client to the nearest one.
+Anycast is like a **nationwide pizza chain with one phone number**. When you dial the number, your call is routed to the nearest store (not a central call center). The same phone number works in New York (routes to NY store) and Los Angeles (routes to LA store). If the NY store is busy, the call may route to the next closest store. Each store is advertising the same phone number → it's the network that decides which store answers based on location. This is exactly how anycast works: multiple servers advertise the same IP, and BGP routing sends each client to the nearest one.
 
 ### How Anycast Works: Step-by-Step
 
 
-1. **IP prefix advertisement** â†’ Multiple locations (e.g., DNS servers in NY, London, Tokyo) advertise the same IP prefix (e.g., 1.1.1.1/32) via BGP to their upstream ISPs.
+1. **IP prefix advertisement** → Multiple locations (e.g., DNS servers in NY, London, Tokyo) advertise the same IP prefix (e.g., 1.1.1.1/32) via BGP to their upstream ISPs.
 
-2. **BGP propagation** â†’ Each ISP propagates the prefix to its peers. Multiple paths to the same prefix appear in global routing tables.
+2. **BGP propagation** → Each ISP propagates the prefix to its peers. Multiple paths to the same prefix appear in global routing tables.
 
-3. **Best path selection** â†’ Each router on the internet selects the closest (by AS-path length or BGP metrics) origin for the prefix.
+3. **Best path selection** → Each router on the internet selects the closest (by AS-path length or BGP metrics) origin for the prefix.
 
-4. **Traffic arrives at nearest node** â†’ A client in Tokyo has their request routed to the Tokyo node because its AS path is shorter.
+4. **Traffic arrives at nearest node** → A client in Tokyo has their request routed to the Tokyo node because its AS path is shorter.
 
-5. **Failover** â†’ If the Tokyo node fails, its BGP advertisement is withdrawn. The Tokyo client's traffic automatically routes to the next nearest node (e.g., Singapore).
+5. **Failover** → If the Tokyo node fails, its BGP advertisement is withdrawn. The Tokyo client's traffic automatically routes to the next nearest node (e.g., Singapore).
 
 ### Pseudocode: Anycast Routing
 
@@ -5079,7 +5079,7 @@ PROCEDURE anycast_routing(client_ip, anycast_prefix, nodes):
 
     // Select nearest node
     nearest = argmin(nodes, key=lambda n: n.bgp_path_length)
-    LOG "Anycast route: " + client_ip + " â†’ " + nearest.id
+    LOG "Anycast route: " + client_ip + " → " + nearest.id
 
     // Failover scenario
     nearest_healthy = [n for n in nodes if n.healthy]
@@ -5111,7 +5111,7 @@ END PROCEDURE
 | 1 | Tokyo ISP router | BGP table lookup for 1.1.1.1/32 |
 | 2 | BGP best path | 5 paths found; shortest AS path = Tokyo (3 hops) |
 | 3 | Route selection | Next hop = Cloudflare Tokyo PoP |
-| 4 | Packet | Client â†’ Tokyo PoP (2ms) |
+| 4 | Packet | Client → Tokyo PoP (2ms) |
 | 5 | Response | 1.1.1.1 resolves the DNS query |
 | 6 | Total latency | **2ms** |
 
@@ -5119,12 +5119,12 @@ END PROCEDURE
 
 | Step | Component | Action |
 |---|---|---|
-| 1 | Tokyo PoP | Hard down â†’ BGP session drops |
+| 1 | Tokyo PoP | Hard down → BGP session drops |
 | 2 | Tokyo ISP | Withdraws 1.1.1.1/32 route from Tokyo |
 | 3 | BGP convergence | ~30 seconds |
 | 4 | Client query | ISP recalculates best path |
 | 5 | New path | Singapore (5 AS hops) selected |
-| 6 | Latency impact | 2ms â†’ 10ms (still acceptable for DNS) |
+| 6 | Latency impact | 2ms → 10ms (still acceptable for DNS) |
 
 ### C++ Implementation: Anycast Route Simulator
 
@@ -5357,27 +5357,27 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 ### Q2: Compare round-robin vs least-connections vs IP hash load balancing.
 
 
-**Answer:** Round-robin cycles through targets in order â†’ O(1), works well when requests have similar cost, but causes imbalance for variable-length requests. Least-connections sends to the target with fewest active connections â†’ O(N), ideal for variable workloads but requires connection tracking overhead. IP hash consistently maps a client IP to the same target â†’ O(1), useful for session persistence without cookies, but can cause hot spots if a few IPs dominate traffic. ALB uses round-robin by default; NLB uses flow hashing.
+**Answer:** Round-robin cycles through targets in order → O(1), works well when requests have similar cost, but causes imbalance for variable-length requests. Least-connections sends to the target with fewest active connections → O(N), ideal for variable workloads but requires connection tracking overhead. IP hash consistently maps a client IP to the same target → O(1), useful for session persistence without cookies, but can cause hot spots if a few IPs dominate traffic. ALB uses round-robin by default; NLB uses flow hashing.
 
 ### Q3: What is DNS propagation and why does it matter?
 
 
-**Answer:** DNS propagation is the time for a DNS record change to reach all recursive resolvers worldwide. It depends on the TTL set on the record and the resolver's cache behavior. A record with TTL=300s propagates in ~5 minutes; TTL=86400s takes 24 hours. Propagation matters for disaster recovery â†’ if you failover to a secondary region, clients with cached DNS may still hit the failed primary for up to the TTL. Use Route53 alias records (0s TTL) for instant failover.
+**Answer:** DNS propagation is the time for a DNS record change to reach all recursive resolvers worldwide. It depends on the TTL set on the record and the resolver's cache behavior. A record with TTL=300s propagates in ~5 minutes; TTL=86400s takes 24 hours. Propagation matters for disaster recovery → if you failover to a secondary region, clients with cached DNS may still hit the failed primary for up to the TTL. Use Route53 alias records (0s TTL) for instant failover.
 
 ### Q4: What factors determine a multi-cloud strategy?
 
 
-**Answer:** Multi-cloud strategy depends on: (a) vendor lock-in risk â†’ distributing workloads prevents dependency on one provider; (b) geographic coverage â†’ some providers have better PoP coverage in specific regions; (c) service specialization â†’ use GCP for BigQuery, AWS for Lambda, Azure for Active Directory integration; (d) compliance â†’ some data must stay in specific jurisdictions; (e) cost optimization â†’ spot pricing varies by provider and region. Downsides: increased complexity, data transfer costs between clouds, and needing expertise in multiple platforms.
+**Answer:** Multi-cloud strategy depends on: (a) vendor lock-in risk → distributing workloads prevents dependency on one provider; (b) geographic coverage → some providers have better PoP coverage in specific regions; (c) service specialization → use GCP for BigQuery, AWS for Lambda, Azure for Active Directory integration; (d) compliance → some data must stay in specific jurisdictions; (e) cost optimization → spot pricing varies by provider and region. Downsides: increased complexity, data transfer costs between clouds, and needing expertise in multiple platforms.
 
 ### Q5: What happens when a load balancer health check fails?
 
 
-**Answer:** The load balancer stops routing traffic to the unhealthy target. ALB health checks are HTTP-based â†’ if a target returns non-2xx/3xx or times out after N consecutive checks, it's marked unhealthy. The target is removed from rotation. The LB continues health checking at the configured interval. When the target returns success again for N consecutive checks, it's marked healthy and rejoins rotation. Connection draining allows in-flight requests to complete before full removal (up to 300s).
+**Answer:** The load balancer stops routing traffic to the unhealthy target. ALB health checks are HTTP-based → if a target returns non-2xx/3xx or times out after N consecutive checks, it's marked unhealthy. The target is removed from rotation. The LB continues health checking at the configured interval. When the target returns success again for N consecutive checks, it's marked healthy and rejoins rotation. Connection draining allows in-flight requests to complete before full removal (up to 300s).
 
 ### Q6: How does VXLAN isolate tenants in cloud networking?
 
 
-**Answer:** VXLAN (Virtual Extensible LAN) encapsulates Layer 2 frames in UDP packets with a 24-bit VXLAN Network Identifier (VNI). Each tenant gets a unique VNI, allowing 16 million isolated networks over a shared physical fabric. Standard VLANs only support 4096 IDs. The hypervisor's virtual switch tags every packet with the tenant's VNI. When a packet arrives at a different hypervisor, the VNI is checked â†’ packets from different VNIs are never forwarded to each other, providing complete L2 isolation.
+**Answer:** VXLAN (Virtual Extensible LAN) encapsulates Layer 2 frames in UDP packets with a 24-bit VXLAN Network Identifier (VNI). Each tenant gets a unique VNI, allowing 16 million isolated networks over a shared physical fabric. Standard VLANs only support 4096 IDs. The hypervisor's virtual switch tags every packet with the tenant's VNI. When a packet arrives at a different hypervisor, the VNI is checked → packets from different VNIs are never forwarded to each other, providing complete L2 isolation.
 
 ---
 
@@ -5387,11 +5387,11 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 
 ```
-Internet â†’ Route53 â†’ CloudFront â†’ ALB â†’ Web Targets (public subnets)
-                                         â†’ App Targets (private subnets, SG-restricted)
-                                              â†’ RDS (private subnets, SG from app only)
-                â†’ NAT Gateway (for private subnet outbound)
-                â†’ S3 VPC Endpoint (private subnet â†’ S3 without NAT)
+Internet → Route53 → CloudFront → ALB → Web Targets (public subnets)
+                                         → App Targets (private subnets, SG-restricted)
+                                              → RDS (private subnets, SG from app only)
+                → NAT Gateway (for private subnet outbound)
+                → S3 VPC Endpoint (private subnet → S3 without NAT)
 ```
 
 **Real AWS setup:** VPC 10.0.0.0/16, public subnets (10.0.1.0/24, 10.0.2.0/24 across 2 AZs), private app subnets (10.0.3.0/24, 10.0.4.0/24), private DB subnets (10.0.5.0/24, 10.0.6.0/24). ALB in public subnets with listener on 443, target group for app instances on port 8080. Security group sg-web allows 443 from 0.0.0.0/0; sg-app allows 8080 from sg-web; sg-db allows 3306 from sg-app.
@@ -5400,9 +5400,9 @@ Internet â†’ Route53 â†’ CloudFront â†’ ALB â†’ Web Targets 
 
 
 ```
-Global HTTP(S) LB â†’ Cloud CDN â†’ Backend Buckets (static) â†’ Cloud Storage
-                              â†’ Backend Services (dynamic) â†’ Cloud Run / GKE
-                              â†’ Serverless NEG â†’ Cloud Functions
+Global HTTP(S) LB → Cloud CDN → Backend Buckets (static) → Cloud Storage
+                              → Backend Services (dynamic) → Cloud Run / GKE
+                              → Serverless NEG → Cloud Functions
 ```
 
 **Real GCP setup:** VPC in auto-mode (10.128.0.0/20 default). Global HTTPS Load Balancer with Cloud CDN enabled. Backend bucket for static assets (pointing to Cloud Storage bucket). Backend service for dynamic APIs (NEG pointing to Cloud Run services). Cloud Armor WAF policy attached to the LB for OWASP rule set. IAP (Identity-Aware Proxy) for user authentication before traffic reaches services.
@@ -5411,12 +5411,12 @@ Global HTTP(S) LB â†’ Cloud CDN â†’ Backend Buckets (static) â†’ 
 
 
 ```
-Azure Front Door â†’ Application Gateway (WAF) â†’ VMSS (web tier, public subnet)
-                                               â†’ VMSS (app tier, private subnet)
-                                                    â†’ Azure SQL Database (private endpoint)
-                â†’ Azure Bastion (management, public subnet)
-                â†’ NAT Gateway (private subnet outbound)
-                â†’ ExpressRoute â†’ On-premises
+Azure Front Door → Application Gateway (WAF) → VMSS (web tier, public subnet)
+                                               → VMSS (app tier, private subnet)
+                                                    → Azure SQL Database (private endpoint)
+                → Azure Bastion (management, public subnet)
+                → NAT Gateway (private subnet outbound)
+                → ExpressRoute → On-premises
 ```
 
 **Real Azure setup:** VNet 10.0.0.0/16 with subnets: AzureBastionSubnet (10.0.0.0/27), web subnet (10.0.1.0/24) with NSG allowing 443 from Front Door, app subnet (10.0.2.0/24) with NSG allowing 8080 from web, data subnet (10.0.3.0/24) with private endpoint for Azure SQL. Application Gateway (WAF_v2) in front with TLS termination and path-based routing. Azure Front Door for global load balancing and CDN.
@@ -5425,10 +5425,10 @@ Azure Front Door â†’ Application Gateway (WAF) â†’ VMSS (web tier, pub
 
 
 ```
-Ingress Gateway â†’ VirtualService â†’ DestinationRule â†’ Pod (sidecar Envoy)
-                                                      â†’ Pod (sidecar Envoy)
-                                                      â†’ Pod (sidecar Envoy)
-                    â†’ Pilot (control plane) â†’ Mixer â†’ Citadel (certificates)
+Ingress Gateway → VirtualService → DestinationRule → Pod (sidecar Envoy)
+                                                      → Pod (sidecar Envoy)
+                                                      → Pod (sidecar Envoy)
+                    → Pilot (control plane) → Mixer → Citadel (certificates)
 ```
 
 **Real Istio setup:** GKE cluster with Istio 1.18 installed via `istioctl install --set profile=default`. Automatic sidecar injection enabled via namespace label `istio-injection=enabled`. Gateway resource for ingress, VirtualService routing to `reviews` service with weight split (v1=90%, v2=10% canary). DestinationRule with mTLS mode STRICT and circuit breaker (maxConnections=100, connectTimeout=5s). Kiali dashboard for observability, Jaeger for distributed tracing.
@@ -5437,12 +5437,12 @@ Ingress Gateway â†’ VirtualService â†’ DestinationRule â†’ Pod (s
 
 ## Retention: One-Sentence Takeaways
 
-- VPCs provide logically isolated cloud networks with subnets, route tables, and security groups â†’ all software-defined and provisioned via API.
+- VPCs provide logically isolated cloud networks with subnets, route tables, and security groups → all software-defined and provisioned via API.
 - Application Load Balancers (Layer 7) support path/host-based routing; Network Load Balancers (Layer 4) offer ultra-low latency; Gateway Load Balancers (Layer 3) handle virtual appliance traffic.
 - CDNs cache content at edge nodes, reducing latency by up to 93% and offloading origin servers by 80-95%.
 - Cloud DNS routing policies include weighted (canary testing), latency-based (performance routing), geolocation (compliance), and failover (disaster recovery).
 - Site-to-Site VPN uses IPSec over public internet with AES-256 encryption; Direct Connect uses dedicated physical links for consistent 1-5ms latency.
-- Service mesh (Istio/Linkerd) adds automatic mTLS, traffic control, and observability via sidecar proxies â†’ at the cost of 1-5ms added latency per hop.
+- Service mesh (Istio/Linkerd) adds automatic mTLS, traffic control, and observability via sidecar proxies → at the cost of 1-5ms added latency per hop.
 - Anycast networking advertises the same IP from multiple locations, routing each client to the nearest healthy node via BGP.
 
 ---
@@ -5457,12 +5457,12 @@ A rapidly growing e-commerce platform serving 5 million monthly visitors across 
 ### Solution
 
 
-The engineering team migrated to a multi-region AWS architecture. Each region (us-east-1, eu-west-1, ap-southeast-1) received a full VPC stack: public subnets with ALBs for TLS termination and path-based routing, private subnets for application servers (ECS Fargate), and isolated database subnets with RDS Multi-AZ. CloudFront was deployed globally with tiered caching (edge â†’ regional â†’ origin), achieving a 92% cache hit rate. Route53 latency-based routing directed users to the nearest healthy region. A Transit Gateway connected all three VPCs to on-premises systems via Direct Connect (1 Gbps to us-east-1). AWS Global Accelerator provided static anycast IPs with endpoint failover under 30 seconds.
+The engineering team migrated to a multi-region AWS architecture. Each region (us-east-1, eu-west-1, ap-southeast-1) received a full VPC stack: public subnets with ALBs for TLS termination and path-based routing, private subnets for application servers (ECS Fargate), and isolated database subnets with RDS Multi-AZ. CloudFront was deployed globally with tiered caching (edge → regional → origin), achieving a 92% cache hit rate. Route53 latency-based routing directed users to the nearest healthy region. A Transit Gateway connected all three VPCs to on-premises systems via Direct Connect (1 Gbps to us-east-1). AWS Global Accelerator provided static anycast IPs with endpoint failover under 30 seconds.
 
 ### Outcome
 
 
-Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). The origin load reduced from 12 Gbps to under 1 Gbps (92% offload), eliminating the need for origin scaling during peak events. The 2023 Black Friday event handled 3Ã— normal traffic with zero 503 errors and 99.99% availability. Infrastructure provisioning dropped from 3 weeks (data center) to 45 minutes (Terraform + CloudFormation). Annual infrastructure cost was reduced by 40% through reserved instances and CDN bandwidth savings.
+Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). The origin load reduced from 12 Gbps to under 1 Gbps (92% offload), eliminating the need for origin scaling during peak events. The 2023 Black Friday event handled 3× normal traffic with zero 503 errors and 99.99% availability. Infrastructure provisioning dropped from 3 weeks (data center) to 45 minutes (Terraform + CloudFormation). Annual infrastructure cost was reduced by 40% through reserved instances and CDN bandwidth savings.
 
 ---
 
@@ -5471,7 +5471,7 @@ Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). Th
 | Takeaway | Application |
 |---|---|
 | Multi-region deployment reduces latency from 350ms to <100ms for global users | Route53 latency routing + ALB per region with cross-region failover |
-| CDN tiered caching offloads 90%+ of origin traffic | CloudFront edge â†’ regional cache â†’ origin pull pattern |
+| CDN tiered caching offloads 90%+ of origin traffic | CloudFront edge → regional cache → origin pull pattern |
 | Security groups provide stateful filtering at the hypervisor level | Use SG rules instead of NACLs whenever possible (stateful = auto return traffic) |
 | Connection draining prevents dropped requests during deployments | Set ALB drain timeout to 300s and monitor active connections |
 | Transit Gateway simplifies multi-VPC connectivity | Replace VPC peering mesh with TGW when connecting 4+ VPCs |
@@ -5494,55 +5494,55 @@ Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). Th
 
 1. **What makes security groups stateful?**
    - a) Rules apply to both directions
-   - b) Return traffic is automatically allowed Ã¢Å“â€œ
+   - b) Return traffic is automatically allowed ✓
    - c) They process rules in order
    - d) They support deny rules
 
 2. **Which load balancer type provides a static IP per AZ?**
    - a) ALB
-   - b) NLB Ã¢Å“â€œ
+   - b) NLB ✓
    - c) CLB
    - d) GLB
 
 3. **What does VXLAN use to identify tenant segments?**
    - a) VLAN ID
-   - b) VNI Ã¢Å“â€œ
+   - b) VNI ✓
    - c) GRE key
    - d) Subnet ID
 
 4. **Which CDN feature reduces origin load?**
    - a) Edge computing
-   - b) Tiered caching Ã¢Å“â€œ
+   - b) Tiered caching ✓
    - c) Dynamic acceleration
    - d) DNS routing
 
 5. **What AWS service acts as a hub for VPC and on-premises connectivity?**
    - a) VPC Peering
-   - b) Transit Gateway Ã¢Å“â€œ
+   - b) Transit Gateway ✓
    - c) Direct Connect
    - d) VPN Gateway
 
 6. **What is the time complexity of round-robin load balancer selection?**
    - a) O(N)
-   - b) O(1) Ã¢Å“â€œ
+   - b) O(1) ✓
    - c) O(log N)
    - d) O(N^2)
 
 7. **Which cloud DNS routing policy is best for canary deployments?**
    - a) Simple
-   - b) Weighted Ã¢Å“â€œ
+   - b) Weighted ✓
    - c) Latency-based
    - d) Geolocation
 
 8. **How many VNIs does VXLAN support?**
    - a) 4096
-   - b) ~16 million Ã¢Å“â€œ
+   - b) ~16 million ✓
    - c) ~65,000
    - d) ~4 billion
 
 9. **Which service mesh component handles certificate management for mTLS?**
    - a) Pilot
-   - b) Citadel Ã¢Å“â€œ
+   - b) Citadel ✓
    - c) Envoy
    - d) Mixer
 
@@ -5556,7 +5556,7 @@ Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). Th
 
 ## Summary
 
-Cloud networking delivers software-defined network constructs â†’ VPCs, subnets, route tables, and security groups â†’ that isolate and control traffic. Load balancers distribute traffic across targets at Layers 4 and 7 (ALB, NLB, GLB). CDNs cache content at edge nodes for low-latency delivery. Cloud DNS offers policy-driven routing and health monitoring. Hybrid connectivity links cloud and on-premises networks via VPN (IPSec) or dedicated connections (Direct Connect/ExpressRoute). Multi-cloud networking extends connectivity across providers using BGP and central hubs. Service mesh (Istio/Linkerd) secures and observes microservice traffic via sidecar proxies. Anycast provides global load balancing and DDoS mitigation by announcing the same IP from multiple locations.
+Cloud networking delivers software-defined network constructs → VPCs, subnets, route tables, and security groups → that isolate and control traffic. Load balancers distribute traffic across targets at Layers 4 and 7 (ALB, NLB, GLB). CDNs cache content at edge nodes for low-latency delivery. Cloud DNS offers policy-driven routing and health monitoring. Hybrid connectivity links cloud and on-premises networks via VPN (IPSec) or dedicated connections (Direct Connect/ExpressRoute). Multi-cloud networking extends connectivity across providers using BGP and central hubs. Service mesh (Istio/Linkerd) secures and observes microservice traffic via sidecar proxies. Anycast provides global load balancing and DDoS mitigation by announcing the same IP from multiple locations.
 
 ---
 
@@ -5577,7 +5577,7 @@ Cloud networking delivers software-defined network constructs â†’ VPCs, sub
 8. Design a VPC architecture for a multi-tier web application with: public web servers, private application servers, and a private database. Include subnets, route tables, security groups, NAT Gateway, and load balancer placement. Support deployment in two availability zones.
 
 9. A CDN receives 100 GB/s of traffic at peak. The cache hit ratio is 85%. The origin server can handle 10 GB/s. Is the origin capacity adequate? If not, propose two solutions.
-   - **Solution:** Origin handles 15 GB/s (100 Ãƒâ€” 0.15). This exceeds 10 GB/s capacity. Solutions: (a) increase cache hit ratio to 90%+ by pre-warming cache and optimizing TTLs, (b) implement tiered caching with regional cache nodes, (c) increase origin bandwidth to 20 GB/s.
+   - **Solution:** Origin handles 15 GB/s (100 × 0.15). This exceeds 10 GB/s capacity. Solutions: (a) increase cache hit ratio to 90%+ by pre-warming cache and optimizing TTLs, (b) implement tiered caching with regional cache nodes, (c) increase origin bandwidth to 20 GB/s.
 
 10. A company has on-premises data centers in New York and London, connected via MPLS. The company migrates applications to AWS in us-east-1 and eu-west-1. Design the hybrid connectivity: specify Direct Connect configuration, Transit Gateway routing, and DNS routing policy for active-active failover.
 

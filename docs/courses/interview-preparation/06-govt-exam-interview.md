@@ -1,4 +1,4 @@
-﻿# Chapter 6: Government Exam Interview Preparation
+# Chapter 6: Government Exam Interview Preparation
 
 ## Learning Objectives
 
@@ -71,7 +71,7 @@ flowchart TD
 
 ---
 
-## Section 1: IBPS SO (Specialist Officer â€” IT) Interview
+## Section 1: IBPS SO (Specialist Officer — IT) Interview
 
 ### Exam Pattern Overview
 
@@ -91,14 +91,14 @@ flowchart TD
 <summary>Click to reveal answer</summary>
 
 **Answer:** The IT Officer in a bank is responsible for:
-1. **Core Banking System (CBS)** â€” Maintenance and operations of FINACLE, BAAN, or other CBS platforms
-2. **Network Management** â€” Branch connectivity via MPLS, VPN, leased lines
-3. **Security** â€” Firewall management, IDS/IPS, antivirus, data encryption (PKI)
-4. **Digital Channels** â€” Internet banking, mobile banking, UPI, NEFT/RTGS
-5. **ATM Management** â€” ATM switch, reconciliation, uptime monitoring
-6. **Vendor Management** â€” Liaising with technology vendors like TCS (BaNCS), Infosys (Finacle)
-7. **Regulatory Compliance** â€” RBI guidelines on IT governance, IS audit, data localization
-8. **Disaster Recovery** â€” DR drills, backup management, BCP (Business Continuity Planning)
+1. **Core Banking System (CBS)** — Maintenance and operations of FINACLE, BAAN, or other CBS platforms
+2. **Network Management** — Branch connectivity via MPLS, VPN, leased lines
+3. **Security** — Firewall management, IDS/IPS, antivirus, data encryption (PKI)
+4. **Digital Channels** — Internet banking, mobile banking, UPI, NEFT/RTGS
+5. **ATM Management** — ATM switch, reconciliation, uptime monitoring
+6. **Vendor Management** — Liaising with technology vendors like TCS (BaNCS), Infosys (Finacle)
+7. **Regulatory Compliance** — RBI guidelines on IT governance, IS audit, data localization
+8. **Disaster Recovery** — DR drills, backup management, BCP (Business Continuity Planning)
 </details>
 
 #### Q2: What is Core Banking Solution (CBS)?
@@ -134,13 +134,13 @@ flowchart TD
 | Feature | NEFT | RTGS | IMPS |
 |---------|------|------|------|
 | Full form | National Electronic Funds Transfer | Real Time Gross Settlement | Immediate Payment Service |
-| Settlement | Batched (half-hourly) | Real-time (continuous) | Real-time (24Ã—7) |
-| Timing | 24Ã—7 (since Dec 2019) | 24Ã—7 (since Dec 2020) | 24Ã—7 |
-| Min amount | Re 1 | â‚¹2 lakhs | Re 1 |
-| Max amount | No limit | No limit | â‚¹5 lakhs (usually) |
+| Settlement | Batched (half-hourly) | Real-time (continuous) | Real-time (24×7) |
+| Timing | 24×7 (since Dec 2019) | 24×7 (since Dec 2020) | 24×7 |
+| Min amount | Re 1 | ₹2 lakhs | Re 1 |
+| Max amount | No limit | No limit | ₹5 lakhs (usually) |
 | Speed | 30 min to 2 hours | Immediate | Immediate (within seconds) |
 | Operated by | RBI | RBI | NPCI |
-| Best for | Small, non-urgent transfers | Large value transfers (>â‚¹2L) | Urgent transfers, mobile |
+| Best for | Small, non-urgent transfers | Large value transfers (>₹2L) | Urgent transfers, mobile |
 </details>
 
 #### Q4: What is UPI? How does it work technically?
@@ -152,7 +152,7 @@ flowchart TD
 
 **Technical Architecture:**
 ```
-User â†’ UPI App (Google Pay/PhonePe) â†’ UPI Platform (NPCI) â†’ Payer Bank â†’ Payee Bank
+User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank → Payee Bank
 ```
 
 **Flow:**
@@ -165,12 +165,12 @@ User â†’ UPI App (Google Pay/PhonePe) â†’ UPI Platform (NPCI) â†’
 7. Both banks get settlement via RBI
 
 **Technical components:**
-- **UPI ID:** Virtual Payment Address (VPA) â€” example@bank
+- **UPI ID:** Virtual Payment Address (VPA) — example@bank
 - **UPI PIN:** 4-6 digit PIN set during registration
 - **MPIN:** Mobile banking PIN for first-time registration
 - **AEPS:** Aadhaar-enabled payment system integration
 
-> **Real Experience:** An IBPS SO panel asked me to draw the UPI flow on the whiteboard. They also asked about failure scenarios â€” what happens if the network fails after debit but before credit. Answer: NPCI uses a two-phase settlement with reversal mechanism.
+> **Real Experience:** An IBPS SO panel asked me to draw the UPI flow on the whiteboard. They also asked about failure scenarios — what happens if the network fails after debit but before credit. Answer: NPCI uses a two-phase settlement with reversal mechanism.
 </details>
 
 #### Q5: How does a bank ensure data security?
@@ -187,7 +187,7 @@ User â†’ UPI App (Google Pay/PhonePe) â†’ UPI Platform (NPCI) â†’
 5. **Audit & Compliance:** IS audit, RBI guidelines, ISO 27001, HIPAA (if applicable)
 6. **DLP:** Data Loss Prevention, USB blocking, email filtering
 7. **BCP/DR:** Business Continuity Planning, Disaster Recovery sites (hot/warm/cold)
-8. **Security Operations:** SOC (Security Operations Center), SIEM (Splunk/ArcSight), 24Ã—7 monitoring
+8. **Security Operations:** SOC (Security Operations Center), SIEM (Splunk/ArcSight), 24×7 monitoring
 
 **RBI guidelines on IT governance (as per RBI circular):**
 - Board-approved IT Strategy
@@ -201,7 +201,7 @@ User â†’ UPI App (Google Pay/PhonePe) â†’ UPI Platform (NPCI) â†’
 
 ## Section 2: SBI PO/SO & RBI Grade B Interview
 
-### SBI Interview â€” Key Facts
+### SBI Interview — Key Facts
 
 | Aspect | Details |
 |--------|---------|
@@ -270,7 +270,7 @@ User â†’ UPI App (Google Pay/PhonePe) â†’ UPI Platform (NPCI) â†’
 **Key Functions:**
 | Function | Description |
 |----------|-------------|
-| Monetary Policy | Controls inflation (target: 4% Â± 2%), manages repo rate, CRR, SLR |
+| Monetary Policy | Controls inflation (target: 4% ± 2%), manages repo rate, CRR, SLR |
 | Currency Issuance | Sole authority to issue banknotes in India |
 | Banker to Government | Manages government accounts, public debt |
 | Banker's Bank | Lender of last resort, provides liquidity |
@@ -328,15 +328,15 @@ User â†’ UPI App (Google Pay/PhonePe) â†’ UPI Platform (NPCI) â†’
 - **Mobile Banking:** USSD banking (*99#) works on feature phones
 - **BC Model:** Business Correspondents with handheld devices
 - **e-KYC:** Paperless account opening via Aadhaar
-- **PMJDY:** Pradhan Mantri Jan Dhan Yojana â€” 50Cr+ accounts opened
+- **PMJDY:** Pradhan Mantri Jan Dhan Yojana — 50Cr+ accounts opened
 
 **Government Schemes:**
 | Scheme | Purpose |
 |--------|---------|
 | PM Jan Dhan Yojana | Universal access to banking |
-| PM Mudra Yojana | Loans up to â‚¹10L for small businesses |
+| PM Mudra Yojana | Loans up to ₹10L for small businesses |
 | PM SVANidhi | Micro-credit for street vendors |
-| PM Suraksha Bima Yojana | Insurance at â‚¹12/year |
+| PM Suraksha Bima Yojana | Insurance at ₹12/year |
 </details>
 
 ---
@@ -512,7 +512,7 @@ India's rank improved from 118 (2014) to 46 (2024). Parameters:
 "Oil and Natural Gas Corporation (ONGC) is India's largest oil and gas exploration and production company, contributing about 70% of India's domestic oil and gas production. Key facts:
 - Established: 1956 (by Govt. of India)
 - Headquarters: Dehradun (corporate: New Delhi)
-- Turnover: ~â‚¹6.5 lakh crores (2023-24)
+- Turnover: ~₹6.5 lakh crores (2023-24)
 - Employees: ~27,000
 - Operations: 100+ oil/gas fields, 30+ seismic parties
 - International: ONGC Videsh Ltd operates in 15+ countries
@@ -525,7 +525,7 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 "Indian Oil Corporation Limited is India's largest commercial oil company.
 - Established: 1959 (as Indian Oil Company Ltd)
 - Headquarters: New Delhi
-- Revenue: ~â‚¹8.5 lakh crores
+- Revenue: ~₹8.5 lakh crores
 - Fortune 500 rank: ~96th
 - Operations: 11 refineries, 13,000+ km pipelines, 60,000+ retail outlets
 - IT systems: SAP, fuel automation, pipeline SCADA, digital payment at pumps"
@@ -621,14 +621,14 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 |------|------------|
 | Repo Rate | Rate at which RBI lends to commercial banks |
 | Reverse Repo | Rate at which RBI borrows from banks |
-| CRR | Cash Reserve Ratio â€” % of deposits kept with RBI |
-| SLR | Statutory Liquidity Ratio â€” % in approved securities |
-| MSF | Marginal Standing Facility â€” emergency borrowing |
-| LAF | Liquidity Adjustment Facility â€” RBI's liquidity management |
+| CRR | Cash Reserve Ratio — % of deposits kept with RBI |
+| SLR | Statutory Liquidity Ratio — % in approved securities |
+| MSF | Marginal Standing Facility — emergency borrowing |
+| LAF | Liquidity Adjustment Facility — RBI's liquidity management |
 | MCLR | Marginal Cost of Funds based Lending Rate |
 | Base Rate | Minimum lending rate (earlier, replaced by MCLR) |
-| CAR | Capital Adequacy Ratio â€” capital to risk-weighted assets |
-| NIM | Net Interest Margin â€” interest earned vs paid |
+| CAR | Capital Adequacy Ratio — capital to risk-weighted assets |
+| NIM | Net Interest Margin — interest earned vs paid |
 | CASA | Current Account Savings Account ratio |
 | NPA | Non-Performing Asset |
 | PCR | Provision Coverage Ratio |
@@ -681,7 +681,7 @@ flowchart TD
 1. **Title & Stack:** "My final year project is 'Real-time Bus Tracking System' built with Node.js, React, MongoDB, and WebSocket."
 2. **Problem:** "Our university had 15 buses for 5000+ students, but there was no way to track them. Students waited 20-30 minutes without knowing when the bus would arrive."
 3. **Your role:** "I was the backend developer responsible for the WebSocket server, location ingestion pipeline, and ETA calculation algorithm."
-4. **Architecture:** "The system uses GPS modules on buses â†’ MQTT broker â†’ Node.js server â†’ WebSocket â†’ React frontend with Mapbox."
+4. **Architecture:** "The system uses GPS modules on buses → MQTT broker → Node.js server → WebSocket → React frontend with Mapbox."
 5. **Challenges:** "The biggest challenge was handling 1000+ location updates per minute on a limited budget. I solved it by batching updates and using Redis for caching."
 6. **Results:** "The system achieved 95% accuracy with 5-second update latency. Deployed by the university, serving 5000+ daily users."
 7. **Learning:** "I learned about real-time systems, WebSocket optimization, and the importance of throughput testing."
@@ -776,14 +776,14 @@ function calculateETA(
 
 ### Pay Scales for Government IT Positions
 
-| Position | Pay Band (7th CPC) | Pay Level | Approx Gross Monthly (â‚¹) |
+| Position | Pay Band (7th CPC) | Pay Level | Approx Gross Monthly (₹) |
 |----------|-------------------|-----------|-------------------------|
-| Scientist-B (NIC) | â‚¹56,100 - â‚¹1,77,500 | Level 10 | â‚¹75,000 - â‚¹85,000 |
-| IT Officer (PSB) | â‚¹36,000 - â‚¹63,840 (JMGS-I) | - | â‚¹65,000 - â‚¹80,000 |
-| Executive (PSU) | â‚¹60,000 - â‚¹1,80,000 | E1 Grade | â‚¹90,000 - â‚¹1,20,000 |
-| SBI PO | â‚¹42,020 - â‚¹55,200 (basic) | JMGS-I | â‚¹80,000 - â‚¹1,00,000 |
-| RBI Grade B | â‚¹55,200 - â‚¹68,400 (basic) | - | â‚¹1,10,000 - â‚¹1,30,000 |
-| DRDO Scientist | â‚¹56,100 - â‚¹1,77,500 | Level 10 | â‚¹80,000 - â‚¹95,000 |
+| Scientist-B (NIC) | ₹56,100 - ₹1,77,500 | Level 10 | ₹75,000 - ₹85,000 |
+| IT Officer (PSB) | ₹36,000 - ₹63,840 (JMGS-I) | - | ₹65,000 - ₹80,000 |
+| Executive (PSU) | ₹60,000 - ₹1,80,000 | E1 Grade | ₹90,000 - ₹1,20,000 |
+| SBI PO | ₹42,020 - ₹55,200 (basic) | JMGS-I | ₹80,000 - ₹1,00,000 |
+| RBI Grade B | ₹55,200 - ₹68,400 (basic) | - | ₹1,10,000 - ₹1,30,000 |
+| DRDO Scientist | ₹56,100 - ₹1,77,500 | Level 10 | ₹80,000 - ₹95,000 |
 
 ### PSU Selection Process (Typical)
 
@@ -836,18 +836,18 @@ function calculateETA(
 
 ```markdown
 Essential Documents (Originals + Self-attested Copies):
-â˜ 10th Mark Sheet & Certificate
-â˜ 12th Mark Sheet & Certificate
-â˜ Graduation Degree & Mark Sheets (all semesters)
-â˜ Post-Graduation Degree & Mark Sheets (if applicable)
-â˜ GATE Score Card (for GATE-based recruitment)
-â˜ Category Certificate (SC/ST/OBC/EWS) â€” if applicable
-â˜ PwBD Certificate â€” if applicable
-â˜ Photo ID (Aadhaar, Voter ID, Passport, Driving License)
-â˜ Passport-size Photos (at least 10)
-â˜ Experience Letters (if applicable)
-â˜ Project Reports / Publication Proofs
-â˜ Portfolio (for design roles)
+☐ 10th Mark Sheet & Certificate
+☐ 12th Mark Sheet & Certificate
+☐ Graduation Degree & Mark Sheets (all semesters)
+☐ Post-Graduation Degree & Mark Sheets (if applicable)
+☐ GATE Score Card (for GATE-based recruitment)
+☐ Category Certificate (SC/ST/OBC/EWS) — if applicable
+☐ PwBD Certificate — if applicable
+☐ Photo ID (Aadhaar, Voter ID, Passport, Driving License)
+☐ Passport-size Photos (at least 10)
+☐ Experience Letters (if applicable)
+☐ Project Reports / Publication Proofs
+☐ Portfolio (for design roles)
 
 Organize in transparent file folders, labeled clearly.
 ```
@@ -870,7 +870,7 @@ Organize in transparent file folders, labeled clearly.
 | First 30 seconds | Smile, make eye contact, firm but not aggressive posture |
 | Introduction | Have your 2-minute intro rehearsed but natural |
 | Q&A | Listen fully before answering. 3-second pause is acceptable |
-| Unknown answer | "I'm not aware of that, sir/ma'am" â€” NEVER bluff |
+| Unknown answer | "I'm not aware of that, sir/ma'am" — NEVER bluff |
 | Closing | Ask questions, thank the panel, exit gracefully |
 
 ### Common Panel Dynamics
@@ -878,7 +878,7 @@ Organize in transparent file folders, labeled clearly.
 | Panelist Type | Behavior | How to Handle |
 |---------------|----------|---------------|
 | Friendly | Smiling, encouraging | Relax, engage naturally, don't get too casual |
-| Stern | No reaction, intense | Don't panic â€” they're testing your composure |
+| Stern | No reaction, intense | Don't panic — they're testing your composure |
 | Technical | Deep, probing questions | Answer precisely, ask for clarification if needed |
 | HR | Personal, situational | Be honest, show values alignment |
 | Language Expert | Tests communication | Speak clearly, avoid fillers |
@@ -943,13 +943,13 @@ After each mock interview, rate yourself:
 | Inflation | General increase in prices (CPI, WPI) |
 | Deflation | General decrease in prices |
 | Stagflation | High inflation + high unemployment + slow growth |
-| GDP | Gross Domestic Product â€” total value of goods/services |
-| GNP | Gross National Product â€” GDP + income from abroad |
-| NNP | Net National Product â€” GNP - depreciation |
-| HDI | Human Development Index â€” health, education, income |
-| CPI | Consumer Price Index â€” retail inflation |
-| WPI | Wholesale Price Index â€” wholesale inflation |
-| REPO | Repurchase Option â€” RBI lends to banks |
+| GDP | Gross Domestic Product — total value of goods/services |
+| GNP | Gross National Product — GDP + income from abroad |
+| NNP | Net National Product — GNP - depreciation |
+| HDI | Human Development Index — health, education, income |
+| CPI | Consumer Price Index — retail inflation |
+| WPI | Wholesale Price Index — wholesale inflation |
+| REPO | Repurchase Option — RBI lends to banks |
 | SLR | Statutory Liquidity Ratio |
 | CRR | Cash Reserve Ratio |
 | MSF | Marginal Standing Facility |
@@ -1035,8 +1035,8 @@ This chapter covered comprehensive preparation for government sector IT intervie
 
 7. **Practice with peers.** Mock interviews with friends who play the role of a panel are invaluable for building confidence.
 
-8. **Prepare 3 questions to ask the panel** â€” about the organization's future tech plans, training opportunities, or specific projects.
+8. **Prepare 3 questions to ask the panel** — about the organization's future tech plans, training opportunities, or specific projects.
 
-9. **â­ Must-Know topics:** UPI architecture, CBS, RBI roles, Digital India, PKI, your own project in depth, current affairs of the last 6 months.
+9. **⭐ Must-Know topics:** UPI architecture, CBS, RBI roles, Digital India, PKI, your own project in depth, current affairs of the last 6 months.
 
 10. **Final tip:** Government panels appreciate humility and honesty. If you don't know an answer, say "I'm not aware of that, sir/ma'am" rather than bluffing.

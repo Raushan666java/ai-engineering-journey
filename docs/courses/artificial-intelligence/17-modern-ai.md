@@ -1,4 +1,4 @@
-﻿# Chapter 17: Modern Artificial Intelligence
+# Chapter 17: Modern Artificial Intelligence
 
 **Previous:** [Chapter 16: Expert Systems](16-expert-systems.md) | **Next:** [Chapter 18: Applications of AI](18-ai-applications.md)
 
@@ -27,7 +27,7 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## Why Modern AI Matters
 
-**Real-World Analogy:** Traditional AI was like a cookbook â€” every recipe (rule) had to be written by hand, ingredient by ingredient. If you wanted the system to recognize a cat, you had to manually define whisker length, ear shape, fur texture, and eye color. Modern AI is like a chef who learns to cook by eating thousands of meals â€” the system discovers the patterns itself from data, generalizes to new dishes, and even creates novel recipes no human ever wrote.
+**Real-World Analogy:** Traditional AI was like a cookbook — every recipe (rule) had to be written by hand, ingredient by ingredient. If you wanted the system to recognize a cat, you had to manually define whisker length, ear shape, fur texture, and eye color. Modern AI is like a chef who learns to cook by eating thousands of meals — the system discovers the patterns itself from data, generalizes to new dishes, and even creates novel recipes no human ever wrote.
 
 The shift from **symbolic AI** (rules, logic, expert systems) to **modern AI** (deep learning, foundation models, generative AI) represents a paradigm change:
 
@@ -38,9 +38,9 @@ The shift from **symbolic AI** (rules, logic, expert systems) to **modern AI** (
 | Flexibility | Narrow, single-task only | Broad, multi-task, zero-shot transfer |
 | Development cycle | Months of feature engineering | Weeks of data curation + pre-training |
 | Human involvement | Every rule written by programmers | Data labeling + RLHF feedback |
-| Failure mode | Brittle â€” breaks on unseen inputs | Graceful degradation â€” confidence calibrated |
+| Failure mode | Brittle — breaks on unseen inputs | Graceful degradation — confidence calibrated |
 
-Modern AI systems â€” ChatGPT, Claude, Gemini, Midjourney, Copilot â€” are not academic curiosities. They power products used by billions daily. Understanding their architectures, training methodologies, and limitations is essential for any AI engineer in the 2020s.
+Modern AI systems — ChatGPT, Claude, Gemini, Midjourney, Copilot — are not academic curiosities. They power products used by billions daily. Understanding their architectures, training methodologies, and limitations is essential for any AI engineer in the 2020s.
 
 ## Chapter at a Glance
 
@@ -76,7 +76,7 @@ flowchart TD
 ### Real-World Analogy
 
 
-Think of teaching a child to identify animals. **Traditional machine learning** is like giving the child a checklist: "If it has whiskers, pointy ears, and says meow, it's a cat." Every rule must be explicitly defined. **Deep learning** is like showing the child 10,000 pictures of cats and dogs without any rules â€” the child's brain automatically learns the distinguishing features. The "deep" refers to many layers of neurons, each building on simpler patterns (edges â†’ shapes â†’ parts â†’ whole object).
+Think of teaching a child to identify animals. **Traditional machine learning** is like giving the child a checklist: "If it has whiskers, pointy ears, and says meow, it's a cat." Every rule must be explicitly defined. **Deep learning** is like showing the child 10,000 pictures of cats and dogs without any rules — the child's brain automatically learns the distinguishing features. The "deep" refers to many layers of neurons, each building on simpler patterns (edges → shapes → parts → whole object).
 
 ### What is Deep Learning?
 
@@ -100,15 +100,15 @@ Deep learning uses multi-layer artificial neural networks to model complex patte
 2. For each epoch e = 1 to E:
    a. For each batch of training examples:
       i. **Forward pass:** Compute predictions by passing input through each layer
-         z^{(1)} = X Â· W^{(1)} + b^{(1)}
+         z^{(1)} = X · W^{(1)} + b^{(1)}
          a^{(1)} = ReLU(z^{(1)})
-         z^{(2)} = a^{(1)} Â· W^{(2)} + b^{(2)}
+         z^{(2)} = a^{(1)} · W^{(2)} + b^{(2)}
          y_pred = softmax(z^{(2)})
       ii. **Compute loss:** Measure error between predictions and true labels
          L = -sum(y_true * log(y_pred))  (cross-entropy)
       iii. **Backward pass (backpropagation):** Compute gradients of loss with respect to each weight
-         dL/dW^{(2)} = a^{(1)}^T Â· (y_pred - y_true)
-         dL/dW^{(1)} = X^T Â· ((y_pred - y_true) Â· W^{(2)}^T Â· ReLU'(z^{(1)}))
+         dL/dW^{(2)} = a^{(1)}^T · (y_pred - y_true)
+         dL/dW^{(1)} = X^T · ((y_pred - y_true) · W^{(2)}^T · ReLU'(z^{(1)}))
       iv. **Update weights:** Adjust weights in direction opposite to gradient
          W = W - eta * dL/dW
 3. Return trained weights
@@ -126,9 +126,9 @@ FUNCTION TRAIN_NEURAL_NETWORK(X, y, hidden_size, learning_rate, epochs):
     
     FOR epoch = 1 TO epochs:
         // Forward pass
-        z1 = X Â· W1 + b1
+        z1 = X · W1 + b1
         a1 = RELU(z1)
-        z2 = a1 Â· W2 + b2
+        z2 = a1 · W2 + b2
         y_pred = SOFTMAX(z2)
         
         // Loss
@@ -136,11 +136,11 @@ FUNCTION TRAIN_NEURAL_NETWORK(X, y, hidden_size, learning_rate, epochs):
         
         // Backward pass
         dz2 = y_pred - y
-        dW2 = a1^T Â· dz2
+        dW2 = a1^T · dz2
         db2 = SUM(dz2, axis=0)
-        da1 = dz2 Â· W2^T
+        da1 = dz2 · W2^T
         dz1 = da1 * RELU_DERIVATIVE(z1)
-        dW1 = X^T Â· dz1
+        dW1 = X^T · dz1
         db1 = SUM(dz1, axis=0)
         
         // Update
@@ -162,9 +162,9 @@ W2 = [[0.2, -0.3, 0.1], [0.5, 0.2, -0.4], [-0.1, 0.6, 0.3]], b2=[0.0, 0.0, 0.0]
 
 | Step | Operation | Computation | Result |
 |------|-----------|-------------|--------|
-| 1 | z1 = XÂ·W1+b1 | [0.5*0.1+(-0.3)*0.4, 0.5*(-0.2)+(-0.3)*0.1, 0.5*0.3+(-0.3)*(-0.5)] + [0,0,0] | [-0.07, -0.13, 0.30] |
+| 1 | z1 = X·W1+b1 | [0.5*0.1+(-0.3)*0.4, 0.5*(-0.2)+(-0.3)*0.1, 0.5*0.3+(-0.3)*(-0.5)] + [0,0,0] | [-0.07, -0.13, 0.30] |
 | 2 | a1 = ReLU(z1) | max(0,-0.07), max(0,-0.13), max(0,0.30) | [0.00, 0.00, 0.30] |
-| 3 | z2 = a1Â·W2+b2 | [0*0.2+0*0.5+0.3*(-0.1), 0*(-0.3)+0*0.2+0.3*0.6, 0*0.1+0*(-0.4)+0.3*0.3] | [-0.03, 0.18, 0.09] |
+| 3 | z2 = a1·W2+b2 | [0*0.2+0*0.5+0.3*(-0.1), 0*(-0.3)+0*0.2+0.3*0.6, 0*0.1+0*(-0.4)+0.3*0.3] | [-0.03, 0.18, 0.09] |
 | 4 | y_pred = softmax(z2) | exp: [0.97, 1.20, 1.09], sum=3.27 | [0.30, 0.37, 0.33] |
 | 5 | Loss = -sum(y*log(y_pred)) | -[0*log(0.30)+1*log(0.37)+0*log(0.33)] | 0.994 |
 
@@ -243,12 +243,12 @@ nn.train(X, y, epochs=100)
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
-| Forward pass (per layer) | O(m * n_in * n_out) | O(n_in * n_out + n_out) | Matrix multiply of (m x n_in) Â· (n_in x n_out) â€” each of m examples does n_in * n_out operations |
-| Backward pass | O(m * n_in * n_out) | O(n_in * n_out) | Same matrix dimensions as forward â€” gradient computation is another matrix multiply |
-| Full epoch | O(m * n_in * n_hidden + m * n_hidden * n_out) | O(n_in * n_hidden + n_hidden * n_out) | Combines all layers: inputâ†’hidden and hiddenâ†’output |
-| Training (E epochs) | O(E * m * n_in * n_hidden) | Same as epoch | Linear in epochs â€” each pass identical work |
+| Forward pass (per layer) | O(m * n_in * n_out) | O(n_in * n_out + n_out) | Matrix multiply of (m x n_in) · (n_in x n_out) — each of m examples does n_in * n_out operations |
+| Backward pass | O(m * n_in * n_out) | O(n_in * n_out) | Same matrix dimensions as forward — gradient computation is another matrix multiply |
+| Full epoch | O(m * n_in * n_hidden + m * n_hidden * n_out) | O(n_in * n_hidden + n_hidden * n_out) | Combines all layers: input→hidden and hidden→output |
+| Training (E epochs) | O(E * m * n_in * n_hidden) | Same as epoch | Linear in epochs — each pass identical work |
 
-**Why it matters:** Deep learning's computational cost is dominated by matrix multiplications, which GPUs parallelize extremely well. The O(E * m * n * n) scaling means doubling the hidden dimension quadruples compute â€” this is why model scale is expensive.
+**Why it matters:** Deep learning's computational cost is dominated by matrix multiplications, which GPUs parallelize extremely well. The O(E * m * n * n) scaling means doubling the hidden dimension quadruples compute — this is why model scale is expensive.
 
 ### Advantages & Disadvantages
 
@@ -257,19 +257,19 @@ nn.train(X, y, epochs=100)
 |-----------|--------------|
 | Learns hierarchical features automatically | Requires massive labeled datasets |
 | State-of-the-art on vision, language, audio | Computationally expensive to train |
-| Transferable across tasks via pre-training | Black box â€” hard to interpret decisions |
+| Transferable across tasks via pre-training | Black box — hard to interpret decisions |
 | Handles high-dimensional raw data (pixels, audio) | Vulnerable to adversarial examples |
-| Scales with data â€” more data = better performance | Prone to overfitting on small datasets |
+| Scales with data — more data = better performance | Prone to overfitting on small datasets |
 | End-to-end learning (no manual feature engineering) | Vanishing/exploding gradients in deep networks |
 
 ### Edge Cases
 
 
-1. **Vanishing Gradients:** In deep networks with sigmoid/tanh, gradients become near-zero in early layers â€” the network stops learning. Solution: ReLU, residual connections, batch normalization.
+1. **Vanishing Gradients:** In deep networks with sigmoid/tanh, gradients become near-zero in early layers — the network stops learning. Solution: ReLU, residual connections, batch normalization.
 
 2. **Exploding Gradients:** Gradients grow exponentially in deep networks, causing NaN weights. Solution: gradient clipping, proper weight initialization (Xavier/He).
 
-3. **Dead ReLU Units:** If a neuron's weights push all inputs to negative, ReLU outputs 0 and gradients are 0 â€” the neuron never recovers. Solution: Leaky ReLU, ELU, careful initialization.
+3. **Dead ReLU Units:** If a neuron's weights push all inputs to negative, ReLU outputs 0 and gradients are 0 — the neuron never recovers. Solution: Leaky ReLU, ELU, careful initialization.
 
 4. **Class Imbalance:** If 99% of data is class A, the network learns to always predict A. Solution: weighted loss, oversampling, focal loss.
 
@@ -280,14 +280,14 @@ nn.train(X, y, epochs=100)
 ### Real-World Analogy
 
 
-Imagine a composer who has listened to every symphony ever written. When asked to compose a new symphony, they don't copy any single one â€” they've internalized the patterns: how themes develop, how tension builds, how instruments combine. **Generative AI** works the same way: it learns the probability distribution of training data and samples new instances from that distribution. It's not "remembering" â€” it's generating novel outputs that follow the learned patterns.
+Imagine a composer who has listened to every symphony ever written. When asked to compose a new symphony, they don't copy any single one — they've internalized the patterns: how themes develop, how tension builds, how instruments combine. **Generative AI** works the same way: it learns the probability distribution of training data and samples new instances from that distribution. It's not "remembering" — it's generating novel outputs that follow the learned patterns.
 
 ### What is Generative AI?
 
 
 Generative AI models learn the joint probability distribution P(data) and can sample new data points. This contrasts with **discriminative** models that learn P(label|data) for classification.
 
-Key paradigm: instead of predicting a label, predict the next piece of data â€” next word, next pixel, next audio sample.
+Key paradigm: instead of predicting a label, predict the next piece of data — next word, next pixel, next audio sample.
 
 ### Algorithm: Autoregressive Text Generation
 
@@ -355,9 +355,9 @@ FUNCTION GENERATE_TEXT(prompt, model, temperature, max_length, top_k):
 | Step | Operation | Computation | Result |
 |------|-----------|-------------|--------|
 | 1a | Embed "The" | Lookup embedding table | emb = [0.5, -0.1, 0.3, 0.2] |
-| 1b | Self-attention | Single token â€” no cross-attention needed | attn_out = [0.5, -0.1, 0.3, 0.2] |
-| 1c | FFN projection | ReLU(attnÂ·W1+b1)Â·W2+b2 | hidden = [0.8, -0.2, 0.5, 1.2] |
-| 1d | Output projection to vocab | hiddenÂ·W_out | logits = [1.5, 2.1, -0.3, 0.7, -0.5] |
+| 1b | Self-attention | Single token — no cross-attention needed | attn_out = [0.5, -0.1, 0.3, 0.2] |
+| 1c | FFN projection | ReLU(attn·W1+b1)·W2+b2 | hidden = [0.8, -0.2, 0.5, 1.2] |
+| 1d | Output projection to vocab | hidden·W_out | logits = [1.5, 2.1, -0.3, 0.7, -0.5] |
 | 1e | Temperature scaling T=0.8 | logits/0.8 | scaled = [1.87, 2.62, -0.37, 0.87, -0.62] |
 | 1f | Top-k (k=3) | Keep indices 0,1,3 | filtered = [1.87, 2.62, -inf, 0.87, -inf] |
 | 1g | Softmax | exp/sum | probs = [0.32, 0.55, 0, 0.13, 0] |
@@ -368,15 +368,15 @@ FUNCTION GENERATE_TEXT(prompt, model, temperature, max_length, top_k):
 | Step | Operation | Computation | Result |
 |------|-----------|-------------|--------|
 | 2a | Embed both tokens | Embedding lookup | emb = [[0.5,-0.1,0.3,0.2], [-0.2,0.6,0.1,-0.3]] |
-| 2b | Self-attention | Compute attention weights between "The" and "cat" â€” "sat" gets highest weight (cats sit on mats) | attn_out = [[0.4,0.1,0.3,0.1], [-0.1,0.5,0.2,-0.2]] |
+| 2b | Self-attention | Compute attention weights between "The" and "cat" — "sat" gets highest weight (cats sit on mats) | attn_out = [[0.4,0.1,0.3,0.1], [-0.1,0.5,0.2,-0.2]] |
 | 2c | FFN projection | Per-token FFN | hidden = [[0.7,-0.1,0.4,1.0], [0.3,0.8,-0.1,0.6]] |
-| 2d | Output (use last token's logits) | hidden[-1]Â·W_out | logits = [-0.8, 0.5, 1.8, 2.3, -1.2] |
+| 2d | Output (use last token's logits) | hidden[-1]·W_out | logits = [-0.8, 0.5, 1.8, 2.3, -1.2] |
 | 2e | Temperature T=0.8 | /0.8 | [-1.0, 0.62, 2.25, 2.87, -1.5] |
 | 2f | Top-k=3 | Keep indices 1,2,3 | [-inf, 0.62, 2.25, 2.87, -inf] |
 | 2g | Softmax | | [0, 0.05, 0.40, 0.55, 0] |
 | 2h | Sample | Highest prob | next_token = 3 ("mat") |
 
-**Result:** "The cat mat" â€” with "sat" likely inserted between "cat" and "mat" in a larger model.
+**Result:** "The cat mat" — with "sat" likely inserted between "cat" and "mat" in a larger model.
 
 ### Python Implementation
 
@@ -436,19 +436,19 @@ print("Generated tokens:", output)
 
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
-| Single forward pass | O(L * d^2) | L=sequence length, d=embedding dim â€” self-attention computes LÂ² pairs, each O(d) |
-| Generating L tokens | O(LÂ² * d^2) | Each new token attends to all previous tokens, so total is sum of squares |
+| Single forward pass | O(L * d^2) | L=sequence length, d=embedding dim — self-attention computes L² pairs, each O(d) |
+| Generating L tokens | O(L² * d^2) | Each new token attends to all previous tokens, so total is sum of squares |
 | With KV cache | O(L * d^2) | Cached key/value vectors avoid recomputing previous token representations |
-| Sampling step | O(V) | V=vocab size â€” just softmax over V logits |
+| Sampling step | O(V) | V=vocab size — just softmax over V logits |
 
-**Why KV cache matters:** Without it, generating token t requires O(t * d^2). With it, each step is O(d^2), making generation O(L * d^2) instead of O(LÂ² * d^2). This is the difference between a 2-second response and a 2-minute response for long texts.
+**Why KV cache matters:** Without it, generating token t requires O(t * d^2). With it, each step is O(d^2), making generation O(L * d^2) instead of O(L² * d^2). This is the difference between a 2-second response and a 2-minute response for long texts.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Generates novel, high-quality content | Can hallucinate â€” produce plausible but false information |
+| Generates novel, high-quality content | Can hallucinate — produce plausible but false information |
 | Controllable via prompting, temperature, top-k | Requires careful prompt engineering |
 | Single model handles many tasks (few-shot) | Biased by training data distribution |
 | Supports multiple modalities (text, image, code, music) | Computationally expensive for inference |
@@ -463,7 +463,7 @@ print("Generated tokens:", output)
 
 3. **Context Window Overflow:** Input exceeds model's maximum sequence length. Solution: truncation, sliding window, summarization of older context.
 
-4. **Tokenization Artifacts:** Rare words split into unexpected subwords ("defeated" â†’ "def" + "eated"). Solution: BPE tokenization with careful handling, byte-level tokenization.
+4. **Tokenization Artifacts:** Rare words split into unexpected subwords ("defeated" → "def" + "eated"). Solution: BPE tokenization with careful handling, byte-level tokenization.
 
 5. **Bias Amplification:** Model perpetuates stereotypes from training data. Solution: RLHF, data filtering, bias evaluation benchmarks.
 
@@ -473,7 +473,7 @@ print("Generated tokens:", output)
 ### Real-World Analogy
 
 
-Imagine a librarian who has read every book ever published â€” novels, textbooks, scientific papers, websites, poems. If you start a sentence, the librarian can finish it because they know the statistical patterns of language: which words follow which, how arguments are structured, what makes a coherent paragraph. **LLMs** are this librarian â€” a transformer trained on massive text corpora to predict the next token. The magic is that next-token prediction, when trained at sufficient scale, produces models that can summarize, translate, code, reason, and even write poetry.
+Imagine a librarian who has read every book ever published — novels, textbooks, scientific papers, websites, poems. If you start a sentence, the librarian can finish it because they know the statistical patterns of language: which words follow which, how arguments are structured, what makes a coherent paragraph. **LLMs** are this librarian — a transformer trained on massive text corpora to predict the next token. The magic is that next-token prediction, when trained at sufficient scale, produces models that can summarize, translate, code, reason, and even write poetry.
 
 ### What are Large Language Models?
 
@@ -500,8 +500,8 @@ LLMs are transformer-based neural networks with billions of parameters trained o
    b. For each sequence, create input = tokens[0:L-1], target = tokens[1:L]
    c. **Forward pass:** Run input through transformer:
       - Embed each token (positional + token embedding)
-      - L layers of: multi-head self-attention â†’ layer norm â†’ FFN â†’ layer norm
-      - Final layer norm â†’ linear projection to vocabulary
+      - L layers of: multi-head self-attention → layer norm → FFN → layer norm
+      - Final layer norm → linear projection to vocabulary
       - Output logits of shape (B, L, V)
    d. **Compute loss:** Cross-entropy between predicted logits and target tokens
       - Only compute loss on target tokens (ignore padding)
@@ -560,15 +560,15 @@ FUNCTION TRAIN_GPT(corpus, vocab_size, d_model, num_layers, num_heads, batch_siz
 
 | Step | Operation | Computation | Result |
 |------|-----------|-------------|--------|
-| 1 | Compute Q=XÂ·W_Q | Same as X | Q = [[0.2,0.5,-0.1,0.3], [0.8,-0.3,0.6,0.1], [-0.4,0.7,0.2,-0.5]] |
-| 2 | Compute K=XÂ·W_K | Same as X | K = same as Q |
-| 3 | Compute V=XÂ·W_V | Same as X | V = same as Q |
-| 4 | QÂ·K^T | 3x3 matrix multiply | S = [[0.39, 0.02, -0.08], [0.02, 1.10, -0.43], [-0.08, -0.43, 0.94]] |
+| 1 | Compute Q=X·W_Q | Same as X | Q = [[0.2,0.5,-0.1,0.3], [0.8,-0.3,0.6,0.1], [-0.4,0.7,0.2,-0.5]] |
+| 2 | Compute K=X·W_K | Same as X | K = same as Q |
+| 3 | Compute V=X·W_V | Same as X | V = same as Q |
+| 4 | Q·K^T | 3x3 matrix multiply | S = [[0.39, 0.02, -0.08], [0.02, 1.10, -0.43], [-0.08, -0.43, 0.94]] |
 | 5 | Scale by sqrt(d_k) = 2 | S/2 | S_scaled = [[0.195, 0.01, -0.04], [0.01, 0.55, -0.215], [-0.04, -0.215, 0.47]] |
 | 6 | Softmax per row | Row 0: exp/sum | A = [[0.34, 0.34, 0.32], [0.21, 0.52, 0.27], [0.28, 0.27, 0.45]] |
-| 7 | AÂ·V (weighted sum) | Each output = weighted V | Output = [[0.22, 0.30, 0.24, 0.00], [0.32, 0.14, 0.35, -0.02], [0.06, 0.44, 0.05, -0.13]] |
+| 7 | A·V (weighted sum) | Each output = weighted V | Output = [[0.22, 0.30, 0.24, 0.00], [0.32, 0.14, 0.35, -0.02], [0.06, 0.44, 0.05, -0.13]] |
 
-**Interpretation:** Token "love" (row 1) has attention weight 0.52 on itself (highest) â€” the model learns that "love" is important context for predicting the next word. Token "I" attends fairly evenly since it provides weak context for what follows.
+**Interpretation:** Token "love" (row 1) has attention weight 0.52 on itself (highest) — the model learns that "love" is important context for predicting the next word. Token "I" attends fairly evenly since it provides weak context for what follows.
 
 ### Python Implementation: Single-Head Self-Attention
 
@@ -598,7 +598,7 @@ class SelfAttention:
         return output, attn_weights
 
     def forward_single(self, X):
-        # X: (seq_len, d_model) â€” single sequence
+        # X: (seq_len, d_model) — single sequence
         Q = X @ self.W_q
         K = X @ self.W_k
         V = X @ self.W_v
@@ -623,23 +623,23 @@ print("Output shape:", output.shape)
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
-| Self-attention (single layer) | O(LÂ² * d) | O(LÂ²) | Each of L tokens compares to all L tokens with O(d) dot products |
-| FFN (single layer) | O(L * dÂ²) | O(dÂ²) | Two linear projections: dâ†’4d and 4dâ†’d, each O(L*d*4d) |
-| Full forward (N layers) | O(N * (LÂ² * d + L * dÂ²)) | O(N * (LÂ² + dÂ²)) | N layers stacked, each with attention + FFN |
-| KV-cached generation (per token) | O(N * (L * d + dÂ²)) | O(N * L * d) | Only compute new Q, reuse cached K,V; avoids O(LÂ²) recomputation |
+| Self-attention (single layer) | O(L² * d) | O(L²) | Each of L tokens compares to all L tokens with O(d) dot products |
+| FFN (single layer) | O(L * d²) | O(d²) | Two linear projections: d→4d and 4d→d, each O(L*d*4d) |
+| Full forward (N layers) | O(N * (L² * d + L * d²)) | O(N * (L² + d²)) | N layers stacked, each with attention + FFN |
+| KV-cached generation (per token) | O(N * (L * d + d²)) | O(N * L * d) | Only compute new Q, reuse cached K,V; avoids O(L²) recomputation |
 
-**Why self-attention is O(LÂ²):** The quadratic cost in sequence length is the fundamental bottleneck. A 4096-token context requires 16M attention pairs; 128K tokens requires 16B pairs. This drives the need for efficient attention variants (FlashAttention, sparse attention, sliding window).
+**Why self-attention is O(L²):** The quadratic cost in sequence length is the fundamental bottleneck. A 4096-token context requires 16M attention pairs; 128K tokens requires 16B pairs. This drives the need for efficient attention variants (FlashAttention, sparse attention, sliding window).
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Captures long-range dependencies (unlike RNNs) | O(LÂ²) memory in sequence length â€” expensive for long contexts |
+| Captures long-range dependencies (unlike RNNs) | O(L²) memory in sequence length — expensive for long contexts |
 | Parallelizable training across all tokens | Requires massive compute (1000s of GPUs for weeks) |
-| Few-shot learning without fine-tuning | Hallucination â€” generates plausible falsehoods |
+| Few-shot learning without fine-tuning | Hallucination — generates plausible falsehoods |
 | Scaling laws predict improvement with size | Training data memorization and privacy concerns |
-| One model handles text, code, math, reasoning | Brittle to prompt phrasing â€” different outputs for similar prompts |
+| One model handles text, code, math, reasoning | Brittle to prompt phrasing — different outputs for similar prompts |
 | RLHF alignment improves helpfulness and safety | Alignment can reduce model capability on some tasks |
 
 ### Edge Cases
@@ -649,7 +649,7 @@ print("Output shape:", output.shape)
 
 2. **Catastrophic Forgetting During Fine-Tuning:** Fine-tuning on new tasks degrades general capabilities. Solution: LoRA (low-rank adaptation), multitask learning, elastic weight consolidation.
 
-3. **Tokenizer Edge Cases:** Numbers tokenized inconsistently (123 â†’ ["12","3"] or ["1","23"]). Solution: byte-level tokenization (GPT-4 uses cl100k_base which handles this better).
+3. **Tokenizer Edge Cases:** Numbers tokenized inconsistently (123 → ["12","3"] or ["1","23"]). Solution: byte-level tokenization (GPT-4 uses cl100k_base which handles this better).
 
 4. **Prompt Injection:** User input overrides system instructions. Solution: prompt isolation, input validation, delimiter-based separation, instruction hierarchy.
 
@@ -660,7 +660,7 @@ print("Output shape:", output.shape)
 ### Real-World Analogy
 
 
-A foundation model is like a Swiss Army knife that starts as a plain block of steel. Through massive pre-training (forging and tempering), it becomes a versatile tool that can be adapted into a blade, screwdriver, corkscrew, or scissors â€” each a specialized fine-tuning task. The key insight: the forging process (pre-training) is expensive but done once. The shaping (fine-tuning) is cheap and done many times for different tasks.
+A foundation model is like a Swiss Army knife that starts as a plain block of steel. Through massive pre-training (forging and tempering), it becomes a versatile tool that can be adapted into a blade, screwdriver, corkscrew, or scissors — each a specialized fine-tuning task. The key insight: the forging process (pre-training) is expensive but done once. The shaping (fine-tuning) is cheap and done many times for different tasks.
 
 ### What are Foundation Models?
 
@@ -673,7 +673,7 @@ A **foundation model** (Bommasani et al., 2021) is a large neural network pre-tr
 - **In-context learning:** Perform task from prompt examples without parameter update
 - **Emergence:** Capabilities that appear only at sufficient model scale
 
-### Algorithm: Pre-train â†’ Fine-tune â†’ RLHF Pipeline
+### Algorithm: Pre-train → Fine-tune → RLHF Pipeline
 
 
 **Input:** Large text corpus (pre-training), task-specific labeled data (fine-tuning), human preference data (RLHF)
@@ -686,7 +686,7 @@ A **foundation model** (Bommasani et al., 2021) is a large neural network pre-tr
    b. Tokenize corpus using BPE or SentencePiece
    c. Initialize transformer with random weights
    d. Train on next-token prediction using AdamW optimizer
-   e. Train for optimal tokens â‰ˆ 6Ã— parameters (Chinchilla scaling)
+   e. Train for optimal tokens ≈ 6× parameters (Chinchilla scaling)
    f. Save base model checkpoint
 
 2. **Supervised Fine-Tuning (SFT) Phase:**
@@ -697,10 +697,10 @@ A **foundation model** (Bommasani et al., 2021) is a large neural network pre-tr
    e. Train for 1-3 epochs on 10K-100K examples
 
 3. **RLHF (Reinforcement Learning from Human Feedback) Phase:**
-   a. Train reward model: human preferences on model outputs â†’ reward score
+   a. Train reward model: human preferences on model outputs → reward score
    b. Sample responses from SFT model, get reward scores
    c. Optimize PPO objective: maximize reward - KL divergence from SFT model
-   d. Iterate: generate â†’ evaluate â†’ update
+   d. Iterate: generate → evaluate → update
 
 ### Pseudocode
 
@@ -773,13 +773,13 @@ FUNCTION RLHF(model, reward_model, prompts, ppo_epochs=4):
 
 | Training Step | Tokens Seen | Loss | Perplexity (exp(loss)) | Observation |
 |--------------|-------------|------|----------------------|-------------|
-| 0 | 0 | 10.95 | 57,000 | Random initialization â€” uniform over 57K vocab |
-| 1,000 | 1B | 6.82 | 917 | Rapid initial learning â€” learning common bigrams |
+| 0 | 0 | 10.95 | 57,000 | Random initialization — uniform over 57K vocab |
+| 1,000 | 1B | 6.82 | 917 | Rapid initial learning — learning common bigrams |
 | 10,000 | 10B | 4.31 | 74 | Model learns syntax and common patterns |
 | 50,000 | 50B | 3.52 | 33.8 | Good grasp of grammar, factual knowledge emerging |
 | 100,000 | 100B | 3.18 | 24.0 | Chain-of-thought reasoning begins to emerge |
 | 200,000 | 200B | 2.95 | 19.1 | Strong across-domain capabilities |
-| 250,000 | 250B | 2.87 | 17.6 | Final checkpoint â€” diminishing returns near Chinchilla-optimal |
+| 250,000 | 250B | 2.87 | 17.6 | Final checkpoint — diminishing returns near Chinchilla-optimal |
 
 ### Python Implementation: Simplified Fine-tuning Loop
 
@@ -804,7 +804,7 @@ def simple_fine_tune(base_weights, train_data, vocab_size=1000, d_model=64,
             input_ids = np.array([hash(w) % vocab_size for w in input_text.split()])
             target_ids = np.array([hash(w) % vocab_size for w in target_text.split()])
 
-            # Forward pass (conceptual â€” not a full transformer)
+            # Forward pass (conceptual — not a full transformer)
             loss = 0.0
             for t in range(min(len(input_ids), 32)):
                 # Simplified: random prediction to simulate
@@ -846,10 +846,10 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 | Phase | Time Complexity | Compute (est.) | Why |
 |-------|---------------|---------------|-----|
 | Pre-training | O(N_param * N_tokens) | 10^23 - 10^25 FLOPs | Forward + backward pass through all layers for every token |
-| Fine-tuning (SFT) | O(N_param * N_sft_tokens) | 10^19 - 10^21 FLOPs | Same per-token cost but far fewer tokens (10K-100K samples Ã— ~500 tokens) |
-| Inference | O(N_param) per token | 10^12 - 10^14 FLOPs/token | Single forward pass only â€” about 1-2 FLOPs per parameter per token |
+| Fine-tuning (SFT) | O(N_param * N_sft_tokens) | 10^19 - 10^21 FLOPs | Same per-token cost but far fewer tokens (10K-100K samples × ~500 tokens) |
+| Inference | O(N_param) per token | 10^12 - 10^14 FLOPs/token | Single forward pass only — about 1-2 FLOPs per parameter per token |
 
-**Why pre-training is expensive:** A 70B parameter model trained on 2 trillion tokens requires roughly 2 * 70B * 2T = 2.8 Ã— 10^23 FLOPs. On 10,000 A100 GPUs (312 TFLOPS each), this takes about 90 days. Fine-tuning the same model on 100K examples is thousands of times cheaper.
+**Why pre-training is expensive:** A 70B parameter model trained on 2 trillion tokens requires roughly 2 * 70B * 2T = 2.8 × 10^23 FLOPs. On 10,000 A100 GPUs (312 TFLOPS each), this takes about 90 days. Fine-tuning the same model on 100K examples is thousands of times cheaper.
 
 ### Advantages & Disadvantages
 
@@ -860,7 +860,7 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 | Zero-shot and few-shot capabilities | Requires massive infrastructure (thousands of GPUs) |
 | Emergent abilities at scale | Hard to predict which capabilities will emerge |
 | Open-source models (LLaMA, Mistral) democratize access | Closed models create vendor dependency |
-| Continual improvement with RLHF alignment | Alignment tax â€” reduces performance on some metrics |
+| Continual improvement with RLHF alignment | Alignment tax — reduces performance on some metrics |
 
 ### Edge Cases
 
@@ -879,7 +879,7 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 ### Real-World Analogy
 
 
-Imagine a person who speaks English and also understands visual language â€” they can look at a photo and describe it in words, or read a description and sketch what they see. **Multimodal AI** bridges these modalities: aligning text representations with image, audio, or video representations in a shared embedding space so the model can reason across them.
+Imagine a person who speaks English and also understands visual language — they can look at a photo and describe it in words, or read a description and sketch what they see. **Multimodal AI** bridges these modalities: aligning text representations with image, audio, or video representations in a shared embedding space so the model can reason across them.
 
 ### What is Multimodal AI?
 
@@ -889,9 +889,9 @@ Multimodal models process and generate content across multiple data types. Key a
 | Model | Modalities | Architecture |
 |-------|-----------|-------------|
 | CLIP | Text + Image | Dual encoders + contrastive loss |
-| DALL-E 3 | Text â†’ Image | Diffusion + LLM text encoder |
+| DALL-E 3 | Text → Image | Diffusion + LLM text encoder |
 | GPT-4V | Text + Image | Unified transformer decoder |
-| Sora | Text â†’ Video | Diffusion transformer (DiT) |
+| Sora | Text → Video | Diffusion transformer (DiT) |
 | ImageBind | 6 modalities | Single shared embedding space |
 
 ### Algorithm: CLIP Contrastive Pre-training
@@ -903,14 +903,14 @@ Multimodal models process and generate content across multiple data types. Key a
 
 **Steps:**
 1. For batch of N image-text pairs:
-   a. Encode images: I_emb = image_encoder(images)  â€” shape (N, d)
-   b. Encode texts: T_emb = text_encoder(texts)     â€” shape (N, d)
+   a. Encode images: I_emb = image_encoder(images)  — shape (N, d)
+   b. Encode texts: T_emb = text_encoder(texts)     — shape (N, d)
    c. L2-normalize both embeddings: I_emb = I_emb / ||I_emb||, T_emb = T_emb / ||T_emb||
-2. Compute similarity matrix: S = I_emb Â· T_emb^T / tau â€” shape (N, N)
+2. Compute similarity matrix: S = I_emb · T_emb^T / tau — shape (N, N)
    - Entry S[i][j] = cosine similarity between image i and text j
 3. Compute contrastive loss:
-   - Imageâ†’Text loss: cross_entropy(S, labels) where labels[i] = i (diagonal)
-   - Textâ†’Image loss: cross_entropy(S^T, labels) where labels[i] = i
+   - Image→Text loss: cross_entropy(S, labels) where labels[i] = i (diagonal)
+   - Text→Image loss: cross_entropy(S^T, labels) where labels[i] = i
    - Total loss = (image_loss + text_loss) / 2
 4. Backpropagate through both encoders
 5. Update parameters of image and text encoders
@@ -935,8 +935,8 @@ FUNCTION CLIP_TRAIN_BATCH(images, texts, img_encoder, txt_encoder, tau):
     labels = [0, 1, 2, ..., N-1]
     
     // 5. Loss (symmetric)
-    loss_i2t = CROSS_ENTROPY(S, labels)      // imageâ†’text
-    loss_t2i = CROSS_ENTROPY(S.T, labels)    // textâ†’image
+    loss_i2t = CROSS_ENTROPY(S, labels)      // image→text
+    loss_t2i = CROSS_ENTROPY(S.T, labels)    // text→image
     loss = (loss_i2t + loss_t2i) / 2
     
     // 6. Backward
@@ -965,14 +965,14 @@ FUNCTION CLIP_TRAIN_BATCH(images, texts, img_encoder, txt_encoder, tau):
 
 | Step | Operation | Computation | Result |
 |------|-----------|-------------|--------|
-| 1 | S = IÂ·T^T / 0.07 | Dot products scaled by 1/0.07 | S = 4x4 matrix |
-| 1a | S[0][0] = I0Â·T0 | (0.8*0.9 + 0.6*0.4) / 0.07 | (0.96) / 0.07 = 13.7 | 
-| 1b | S[0][1] = I0Â·T1 | (0.8*0.2 + 0.6*(-0.98)) / 0.07 | (-0.43) / 0.07 = -6.1 |
-| 1c | S[1][1] = I1Â·T1 | (0.3*0.2 + (-0.95)*(-0.98)) / 0.07 | (0.99) / 0.07 = 14.1 |
-| 1d | S[2][2] = I2Â·T2 | ((-0.7)*(-0.6) + 0.7*0.8) / 0.07 | (0.98) / 0.07 = 14.0 |
-| 1e | S[3][3] = I3Â·T3 | ((-0.2)*(-0.3) + (-0.98)*(-0.95)) / 0.07 | (0.99) / 0.07 = 14.1 |
+| 1 | S = I·T^T / 0.07 | Dot products scaled by 1/0.07 | S = 4x4 matrix |
+| 1a | S[0][0] = I0·T0 | (0.8*0.9 + 0.6*0.4) / 0.07 | (0.96) / 0.07 = 13.7 | 
+| 1b | S[0][1] = I0·T1 | (0.8*0.2 + 0.6*(-0.98)) / 0.07 | (-0.43) / 0.07 = -6.1 |
+| 1c | S[1][1] = I1·T1 | (0.3*0.2 + (-0.95)*(-0.98)) / 0.07 | (0.99) / 0.07 = 14.1 |
+| 1d | S[2][2] = I2·T2 | ((-0.7)*(-0.6) + 0.7*0.8) / 0.07 | (0.98) / 0.07 = 14.0 |
+| 1e | S[3][3] = I3·T3 | ((-0.2)*(-0.3) + (-0.98)*(-0.95)) / 0.07 | (0.99) / 0.07 = 14.1 |
 | 2 | Softmax of S rows | exp(S[i]) / sum(exp(S[i])) | Diagonal entries dominate |
-| 3 | Cross-entropy loss | -log(diagonal probability) | Loss â‰ˆ 0.01 (very low â€” model is confident about correct pairs) |
+| 3 | Cross-entropy loss | -log(diagonal probability) | Loss ≈ 0.01 (very low — model is confident about correct pairs) |
 
 If off-diagonal entries were higher (e.g., "dog" matched "cat" text), loss would be higher, forcing the model to better separate these concepts in embedding space.
 
@@ -1031,12 +1031,12 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
-| Image encoding (ViT) | O(N * L_img * dÂ²) | N images, L_img patches per image, dÂ² for attention |
-| Text encoding | O(N * L_txt * dÂ²) | N texts, L_txt tokens per text |
-| Contrastive similarity | O(NÂ² * d) | Pairwise dot products between all N images and N texts |
-| Total per batch | O(N * (L_img + L_txt) * dÂ² + NÂ² * d) | Encoding dominates for large images; NÂ² dominates for large batches |
+| Image encoding (ViT) | O(N * L_img * d²) | N images, L_img patches per image, d² for attention |
+| Text encoding | O(N * L_txt * d²) | N texts, L_txt tokens per text |
+| Contrastive similarity | O(N² * d) | Pairwise dot products between all N images and N texts |
+| Total per batch | O(N * (L_img + L_txt) * d² + N² * d) | Encoding dominates for large images; N² dominates for large batches |
 
-**Why contrastive loss is O(NÂ²):** Computing the full similarity matrix requires comparing every image to every text in the batch. This is why CLIP uses relatively small batches (32,768 is huge for CLIP; most models use 256-1024).
+**Why contrastive loss is O(N²):** Computing the full similarity matrix requires comparing every image to every text in the batch. This is why CLIP uses relatively small batches (32,768 is huge for CLIP; most models use 256-1024).
 
 ### Advantages & Disadvantages
 
@@ -1045,14 +1045,14 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 |-----------|--------------|
 | Zero-shot classification on any visual concept | Requires aligned image-text pairs (expensive to collect) |
 | Shared embedding space for cross-modal retrieval | Each modality adds quadratic training cost |
-| Scales to many modalities (ImageBind: 6 modalities) | Domain gap between modalities (e.g., text "cold" â‰  thermal image "cold") |
-| Enables image generation (DALL-E) and understanding (GPT-4V) | Modality imbalance â€” one modality dominates |
+| Scales to many modalities (ImageBind: 6 modalities) | Domain gap between modalities (e.g., text "cold" ≠ thermal image "cold") |
+| Enables image generation (DALL-E) and understanding (GPT-4V) | Modality imbalance — one modality dominates |
 | Supports fine-grained alignment (region-word) | Resolution and granularity mismatch |
 
 ### Edge Cases
 
 
-1. **Modality Mismatch:** Image of a "dog" with text "cat" â€” contrastive loss pushes embeddings apart, but if systematic (many mislabeled pairs), the model learns wrong alignments. Solution: careful data cleaning, robust contrastive loss.
+1. **Modality Mismatch:** Image of a "dog" with text "cat" — contrastive loss pushes embeddings apart, but if systematic (many mislabeled pairs), the model learns wrong alignments. Solution: careful data cleaning, robust contrastive loss.
 
 2. **Resolution Sensitivity:** Low-resolution images lose fine detail; high-resolution images are computationally expensive. Solution: multi-scale training, patch-based processing.
 
@@ -1067,7 +1067,7 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 ### Real-World Analogy
 
 
-A **personal assistant** doesn't just answer questions â€” they pick up the phone, search the web, schedule meetings, send emails, and coordinate with others. **AI agents** extend language models the same way: the model can call external tools (search engines, calculators, APIs, databases), observe the results, and decide what to do next. The key is a **reason-act loop**: think about what to do, do it, observe the result, and repeat until the task is complete.
+A **personal assistant** doesn't just answer questions — they pick up the phone, search the web, schedule meetings, send emails, and coordinate with others. **AI agents** extend language models the same way: the model can call external tools (search engines, calculators, APIs, databases), observe the results, and decide what to do next. The key is a **reason-act loop**: think about what to do, do it, observe the result, and repeat until the task is complete.
 
 ### What are AI Agents?
 
@@ -1075,12 +1075,12 @@ A **personal assistant** doesn't just answer questions â€” they pick up the
 An AI agent is a system where an LLM controls the execution loop: it perceives context, reasons about next actions, invokes tools, and interprets results. The canonical architecture:
 
 ```
-[User Input] â†’ [LLM Reasoner] â†’ [Action Decision]
-                                      â†“
+[User Input] → [LLM Reasoner] → [Action Decision]
+                                      ↓
                                [Tool Execution]
-                                      â†“
-                            [Observation â†’ LLM]
-                                      â†“
+                                      ↓
+                            [Observation → LLM]
+                                      ↓
                               [Final Response]
 ```
 
@@ -1140,16 +1140,16 @@ FUNCTION REACT_AGENT(query, tools, llm, max_iter=10):
 
 | Iter | Step | LLM Output | Tool/Result |
 |------|------|-----------|-------------|
-| 1 | Thought | I need to find the population of Tokyo. Let me search for it. | â€” |
+| 1 | Thought | I need to find the population of Tokyo. Let me search for it. | — |
 | 1 | Action | {"tool": "search", "args": {"q": "Tokyo population 2025"}} | search("Tokyo population 2025") |
-| 1 | Observe | "Tokyo has an estimated population of 14.0 million (2025)" | â€” |
-| 2 | Thought | Now I need to find the area of Tokyo. | â€” |
+| 1 | Observe | "Tokyo has an estimated population of 14.0 million (2025)" | — |
+| 2 | Thought | Now I need to find the area of Tokyo. | — |
 | 2 | Action | {"tool": "search", "args": {"q": "Tokyo area square kilometers"}} | search("Tokyo area square kilometers") |
-| 2 | Observe | "Tokyo covers an area of 2,194 square kilometers" | â€” |
-| 3 | Thought | I have both values. Let me calculate the population density. | â€” |
+| 2 | Observe | "Tokyo covers an area of 2,194 square kilometers" | — |
+| 3 | Thought | I have both values. Let me calculate the population density. | — |
 | 3 | Action | {"tool": "calculator", "args": {"expression": "14_000_000 / 2_194"}} | calculator("14_000_000 / 2_194") |
-| 3 | Observe | "Result: 6,381.04" | â€” |
-| 4 | Final | The population of Tokyo is approximately 14.0 million, its area is 2,194 kmÂ², giving a population density of about 6,381 people per kmÂ². | Return to user |
+| 3 | Observe | "Result: 6,381.04" | — |
+| 4 | Final | The population of Tokyo is approximately 14.0 million, its area is 2,194 km², giving a population density of about 6,381 people per km². | Return to user |
 
 ### Python Implementation: Simple ReAct Agent
 
@@ -1163,9 +1163,9 @@ TOOLS = {
     "search": {
         "description": "Search the web for information",
         "handler": lambda q: {
-            "weather": "The weather is 22Â°C and sunny",
+            "weather": "The weather is 22°C and sunny",
             "tokyo population 2025": "Tokyo has 14.0 million people (2025)",
-            "tokyo area": "Tokyo covers 2,194 kmÂ²",
+            "tokyo area": "Tokyo covers 2,194 km²",
             "capital of france": "Paris is the capital of France",
         }.get(q.lower(), f"Search results for: {q}")
     },
@@ -1195,7 +1195,7 @@ def react_agent(query, max_iter=5):
         elif "density" in context.lower() or "km" in context:
             thought = "I have all the data. Here is the answer."
             print(f"THOUGHT: {thought}")
-            final = f"FINAL ANSWER: {query}\nPopulation: 14.0 million\nArea: 2,194 kmÂ²"
+            final = f"FINAL ANSWER: {query}\nPopulation: 14.0 million\nArea: 2,194 km²"
             print(final)
             return final
         else:
@@ -1230,10 +1230,10 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 | Component | Complexity | Why |
 |-----------|-----------|-----|
-| LLM call per iteration | O(L * dÂ²) | Each iteration requires a full forward pass through the transformer |
-| Total agent run | O(I * (L * dÂ² + T)) | I iterations, each: LLM call + tool execution time T |
-| Tool execution | O(T) â€” tool-dependent | Search O(log N) for indexed data, calculator O(1), API calls O(network latency) |
-| Context accumulation | O(I * L_total) | Each iteration appends to context â€” can grow large, increasing LLM cost |
+| LLM call per iteration | O(L * d²) | Each iteration requires a full forward pass through the transformer |
+| Total agent run | O(I * (L * d² + T)) | I iterations, each: LLM call + tool execution time T |
+| Tool execution | O(T) — tool-dependent | Search O(log N) for indexed data, calculator O(1), API calls O(network latency) |
+| Context accumulation | O(I * L_total) | Each iteration appends to context — can grow large, increasing LLM cost |
 
 **Why iteration count matters:** Each ReAct iteration adds tokens to the context window. After 5 iterations with 200 tokens each, the context grows by 1000 tokens, making subsequent LLM calls more expensive. This is why efficient agents aim for 3-5 iterations maximum.
 
@@ -1242,11 +1242,11 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Solves tasks requiring external knowledge (search, APIs) | Latency â€” each iteration adds response time |
-| Transparent reasoning â€” thought traces are interpretable | Error propagation â€” early mistakes compound |
-| Tool use extends model capabilities beyond training data | Token cost â€” each iteration adds to context window |
-| Modular â€” tools can be added/removed independently | Tool reliability â€” model may call tools with wrong arguments |
-| Handles multi-step tasks with feedback loops | Security â€” tool misuse, prompt injection through tool outputs |
+| Solves tasks requiring external knowledge (search, APIs) | Latency — each iteration adds response time |
+| Transparent reasoning — thought traces are interpretable | Error propagation — early mistakes compound |
+| Tool use extends model capabilities beyond training data | Token cost — each iteration adds to context window |
+| Modular — tools can be added/removed independently | Tool reliability — model may call tools with wrong arguments |
+| Handles multi-step tasks with feedback loops | Security — tool misuse, prompt injection through tool outputs |
 
 ### Edge Cases
 
@@ -1267,7 +1267,7 @@ result = react_agent("What is the population of Tokyo and its area?")
 ### Real-World Analogy
 
 
-USB-C is a universal connector standard â€” any USB-C device can plug into any USB-C port and exchange data using the same physical interface. **MCP (Model Context Protocol)** is the same concept for AI tools: a standardized protocol that lets any LLM connect to any tool or data source using the same API contract. Instead of every model needing custom integrations for every tool, MCP defines a common language for tool discovery, invocation, and response.
+USB-C is a universal connector standard — any USB-C device can plug into any USB-C port and exchange data using the same physical interface. **MCP (Model Context Protocol)** is the same concept for AI tools: a standardized protocol that lets any LLM connect to any tool or data source using the same API contract. Instead of every model needing custom integrations for every tool, MCP defines a common language for tool discovery, invocation, and response.
 
 ### What is MCP?
 
@@ -1282,10 +1282,10 @@ MCP (Model Context Protocol), introduced by Anthropic, is an open protocol that 
 
 | Primitive | Direction | Description |
 |-----------|-----------|-------------|
-| Tools | Client â†’ Server | Functions the LLM can call (search, database query, file read) |
-| Resources | Server â†’ Client | Data sources exposed to the LLM (files, API responses, database rows) |
-| Prompts | Server â†’ Client | Pre-written prompt templates the LLM can use |
-| Sampling | Server â†’ Client | Server requests LLM completions (for agent-to-agent communication) |
+| Tools | Client → Server | Functions the LLM can call (search, database query, file read) |
+| Resources | Server → Client | Data sources exposed to the LLM (files, API responses, database rows) |
+| Prompts | Server → Client | Pre-written prompt templates the LLM can use |
+| Sampling | Server → Client | Server requests LLM completions (for agent-to-agent communication) |
 
 ### Algorithm: MCP Tool Call Lifecycle
 
@@ -1364,14 +1364,14 @@ FUNCTION MCP_CLIENT(llm, server_url):
 |------|--------|-------------------|----------|----------|
 | 1 | Client | `{"method":"initialize"}` | Server | `{"protocolVersion":"2025-03-26","capabilities":["tools"]}` |
 | 2 | Client | `{"method":"tools/list"}` | Server | `{"tools":[...search, calculator...]}` |
-| 3 | Client | Builds system prompt with tool schemas | â€” | â€” |
-| 4 | LLM | "I need to search for Japan GDP 2024" | â€” | â€” |
-| 5 | Client | `{"method":"tools/call","params":{"name":"search","arguments":{"q":"Japan GDP 2024 USD"}}}` | Server | â€” |
-| 6 | Server | Executes search API | â€” | â€” |
-| 7 | Server | `{"content":[{"type":"text","text":"Japan GDP 2024: $4.21 trillion"}]}` | Client | â€” |
-| 8 | Client | Feeds observation to LLM | â€” | â€” |
-| 9 | LLM | Synthesizes final answer | â€” | â€” |
-| 10 | Client | Returns "Japan's GDP in 2024 was approximately $4.21 trillion" | User | â€” |
+| 3 | Client | Builds system prompt with tool schemas | — | — |
+| 4 | LLM | "I need to search for Japan GDP 2024" | — | — |
+| 5 | Client | `{"method":"tools/call","params":{"name":"search","arguments":{"q":"Japan GDP 2024 USD"}}}` | Server | — |
+| 6 | Server | Executes search API | — | — |
+| 7 | Server | `{"content":[{"type":"text","text":"Japan GDP 2024: $4.21 trillion"}]}` | Client | — |
+| 8 | Client | Feeds observation to LLM | — | — |
+| 9 | LLM | Synthesizes final answer | — | — |
+| 10 | Client | Returns "Japan's GDP in 2024 was approximately $4.21 trillion" | User | — |
 
 ### Python Implementation: Minimal MCP Server
 
@@ -1491,9 +1491,9 @@ class MCPClient:
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
-| Tool discovery | O(1) per server | Single request returns all tool definitions â€” constant time |
-| Tool invocation | O(T) â€” tool dependent | The protocol overhead is O(1) JSON serialization, but tool execution varies |
-| Multi-tool orchestration | O(N) sequential | N tool calls in sequence â€” each adds round-trip latency |
+| Tool discovery | O(1) per server | Single request returns all tool definitions — constant time |
+| Tool invocation | O(T) — tool dependent | The protocol overhead is O(1) JSON serialization, but tool execution varies |
+| Multi-tool orchestration | O(N) sequential | N tool calls in sequence — each adds round-trip latency |
 | JSON-RPC overhead | O(M) message size | Message size proportional to M (arguments + results) |
 
 **Why MCP is efficient:** The protocol itself adds negligible overhead (microseconds for JSON serialization). The bottleneck is always the tool execution and LLM reasoning, not the protocol layer.
@@ -1503,8 +1503,8 @@ class MCPClient:
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Standardizes tool interfaces across all AI apps | Relatively new protocol â€” ecosystem still evolving |
-| Easy to add new tools â€” write one MCP server | Overhead for simple tool calls (JSON-RPC may be excessive) |
+| Standardizes tool interfaces across all AI apps | Relatively new protocol — ecosystem still evolving |
+| Easy to add new tools — write one MCP server | Overhead for simple tool calls (JSON-RPC may be excessive) |
 | Language-agnostic (any language can implement) | No built-in authentication/authorization standard |
 | Supports local (stdio) and remote (SSE) transport | Debugging distributed MCP systems is complex |
 | Tool schemas and descriptions are discoverable | Rate limiting and error handling left to implementations |
@@ -1529,7 +1529,7 @@ class MCPClient:
 ### Real-World Analogy
 
 
-Imagine a **startup founder** who has a big goal ("build a profitable SaaS business"). They don't execute every task themselves â€” they decompose the goal into steps (research â†’ build â†’ market â†’ sell), delegate sub-tasks, check progress, and adjust strategy based on results. **AutoGPT** works the same way: given a high-level goal, it creates sub-tasks, executes them using tools, evaluates results, and iterates until the goal is achieved or it hits limits.
+Imagine a **startup founder** who has a big goal ("build a profitable SaaS business"). They don't execute every task themselves — they decompose the goal into steps (research → build → market → sell), delegate sub-tasks, check progress, and adjust strategy based on results. **AutoGPT** works the same way: given a high-level goal, it creates sub-tasks, executes them using tools, evaluates results, and iterates until the goal is achieved or it hits limits.
 
 ### What are AutoGPT / Autonomous Agent Systems?
 
@@ -1614,11 +1614,11 @@ FUNCTION AUTONOMOUS_AGENT(goal, tools, max_steps=20):
 | Step | Current Task | LLM Response / Tool Calls | New Tasks Created | Priority Queue |
 |------|-------------|--------------------------|-------------------|---------------|
 | 1 | Plan approach | "Party for 20 people, budget $500, outdoor BBQ theme" | Research venues, Plan menu, Guest list, Budget breakdown | [Research:1, Menu:2, Guest:2, Budget:1] |
-| 2 | Research venues | search("park BBQ rental [city]") â†’ "Public park: $50, backyard: free" | Check weather, Buy decorations | [Budget:1, CheckWeather:1, Menu:2, Guest:2, Decor:2] |
-| 3 | Check weather | search("weather forecast [date]") â†’ "75Â°F, sunny, 10% rain" | Rain backup plan | [Budget:1, Menu:2, Guest:2, Decor:2, RainPlan:2] |
+| 2 | Research venues | search("park BBQ rental [city]") → "Public park: $50, backyard: free" | Check weather, Buy decorations | [Budget:1, CheckWeather:1, Menu:2, Guest:2, Decor:2] |
+| 3 | Check weather | search("weather forecast [date]") → "75°F, sunny, 10% rain" | Rain backup plan | [Budget:1, Menu:2, Guest:2, Decor:2, RainPlan:2] |
 | 4 | Budget breakdown | calculator("500 - 50 = 450, /4 = 112.50 per category") | None (redundant) | [Menu:2, Guest:2, Decor:2, RainPlan:2] |
 | 5 | Plan menu | "BBQ: burgers, hot dogs, salad, cake. $120 total" | Create shopping list | [Guest:2, Decor:2, RainPlan:2, Shopping:3] |
-| 6 | Guest list | "20 names â†’ send invites" | Send invitations | [Decor:2, RainPlan:2, Shopping:3, Invites:3] |
+| 6 | Guest list | "20 names → send invites" | Send invitations | [Decor:2, RainPlan:2, Shopping:3, Invites:3] |
 | 7 | Send invitations | "Auto-generated email drafts complete" | (task complete) | [Decor:2, RainPlan:2, Shopping:3] |
 
 **Result:** Complete party plan with venue, budget, menu, guest list, and weather backup.
@@ -1717,10 +1717,10 @@ print("\n" + final)
 
 | Component | Complexity | Why |
 |-----------|-----------|-----|
-| Task decomposition | O(K) per step | K new tasks created â€” constant per iteration |
-| Task execution | O(L * dÂ²) per task | Each task requires LLM forward pass |
-| Memory retrieval | O(log M) or O(M) | M memory entries â€” depends on indexing (vector DB vs. flat scan) |
-| Total run | O(S * (L * dÂ² + K)) | S steps, each with LLM call + task creation |
+| Task decomposition | O(K) per step | K new tasks created — constant per iteration |
+| Task execution | O(L * d²) per task | Each task requires LLM forward pass |
+| Memory retrieval | O(log M) or O(M) | M memory entries — depends on indexing (vector DB vs. flat scan) |
+| Total run | O(S * (L * d² + K)) | S steps, each with LLM call + task creation |
 | Re-prioritization | O(N log N) | N tasks in queue sorted by priority |
 
 **Why autonomous agents are slow:** Each step requires a full LLM call (seconds), tool execution (variable), and task creation (another LLM call). A 10-step agent might take 30-60 seconds for a single goal. This makes them unsuitable for real-time applications.
@@ -1730,11 +1730,11 @@ print("\n" + final)
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Handles complex, multi-step goals autonomously | Slow â€” each step takes seconds to minutes |
-| Persistent memory across execution | Error propagation â€” early mistakes derail the whole plan |
-| Tool use enables real-world interaction | Resource intensive â€” many LLM calls per goal |
-| Adapts to new information dynamically | Safety concerns â€” autonomous actions without human oversight |
-| Decomposes problems into manageable sub-tasks | Task drift â€” agent may go off-topic or create irrelevant sub-tasks |
+| Handles complex, multi-step goals autonomously | Slow — each step takes seconds to minutes |
+| Persistent memory across execution | Error propagation — early mistakes derail the whole plan |
+| Tool use enables real-world interaction | Resource intensive — many LLM calls per goal |
+| Adapts to new information dynamically | Safety concerns — autonomous actions without human oversight |
+| Decomposes problems into manageable sub-tasks | Task drift — agent may go off-topic or create irrelevant sub-tasks |
 
 ### Edge Cases
 
@@ -1770,7 +1770,7 @@ print("\n" + final)
 | **Representation** | Discrete tokens | Latent pixels | Discrete tokens + AST | Spectrogram tokens | Latent video frames |
 | **Sampling method** | Autoregressive / softmax | Reverse diffusion | Autoregressive | Reverse diffusion | Reverse diffusion |
 | **Conditioning** | Text prompt | Text prompt | Natural language + context | Text + melody | Text + reference video |
-| **Output length** | Up to 200K tokens | 1024Ã—1024 pixels | Up to 1000+ lines | 30-180 seconds | 5-60 seconds |
+| **Output length** | Up to 200K tokens | 1024×1024 pixels | Up to 1000+ lines | 30-180 seconds | 5-60 seconds |
 | **Training cost** | $10-100M | $1-10M | $1-10M | $0.5-5M | $10-100M |
 | **Inference cost** | ~$0.01/query | ~$0.01-0.10/image | ~$0.001/suggestion | ~$0.10/track | ~$1-10/clip |
 | **Evaluation** | Perplexity, human eval | FID, CLIP score | Pass@k, functional tests | MOS, genre accuracy | FVD, human eval |
@@ -1804,7 +1804,7 @@ print("\n" + final)
 
 **3. Rotary Position Embedding (RoPE):** LLaMA, Claude, and Gemini use RoPE which encodes position by rotating the query/key vectors. This enables the model to handle arbitrary sequence lengths (up to context limit) without learned position parameters.
 
-**4. Constitutional AI:** Claude uses constitutional AI during RLHF â€” the model is trained to self-correct based on a constitution of principles, reducing harmful outputs while maintaining capability.
+**4. Constitutional AI:** Claude uses constitutional AI during RLHF — the model is trained to self-correct based on a constitution of principles, reducing harmful outputs while maintaining capability.
 
 ## Interview Corner
 
@@ -1813,11 +1813,11 @@ print("\n" + final)
 
 **Answer:** Prompt engineering is the practice of designing input prompts to elicit desired outputs from LLMs. Key techniques:
 
-1. **Zero-shot prompting:** Describe the task directly â€” "Translate to French: hello"
+1. **Zero-shot prompting:** Describe the task directly — "Translate to French: hello"
 2. **Few-shot prompting:** Provide 2-5 examples before the query
-3. **Chain-of-thought (CoT):** Encourage step-by-step reasoning â€” "Let's think step by step"
+3. **Chain-of-thought (CoT):** Encourage step-by-step reasoning — "Let's think step by step"
 4. **Tree-of-thought (ToT):** Explore multiple reasoning paths simultaneously
-5. **Role prompting:** Assign a persona â€” "You are a senior software engineer"
+5. **Role prompting:** Assign a persona — "You are a senior software engineer"
 6. **Structured output:** Request JSON, markdown, or specific format
 7. **Negative prompting:** Specify what NOT to do
 8. **Delimiter separation:** Use clear delimiters (```, ---) to separate instructions from input
@@ -1831,7 +1831,7 @@ print("\n" + final)
 
 **Pattern 1: Naive RAG**
 ```
-Query â†’ Retrieve (vector DB) â†’ Concatenate chunks + query â†’ LLM â†’ Answer
+Query → Retrieve (vector DB) → Concatenate chunks + query → LLM → Answer
 ```
 - Simple, single retrieval step
 - Good for factual Q&A
@@ -1839,7 +1839,7 @@ Query â†’ Retrieve (vector DB) â†’ Concatenate chunks + query â†’
 
 **Pattern 2: Advanced RAG**
 ```
-Query â†’ Query rewriting â†’ Retrieve â†’ Re-rank â†’ Concatenate â†’ LLM â†’ Answer
+Query → Query rewriting → Retrieve → Re-rank → Concatenate → LLM → Answer
 ```
 - Improves retrieval via query rewriting (LLM restates the query)
 - Re-ranker filters irrelevant chunks before LLM
@@ -1847,7 +1847,7 @@ Query â†’ Query rewriting â†’ Retrieve â†’ Re-rank â†’ Conca
 
 **Pattern 3: Agentic RAG**
 ```
-Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â†’ Answer
+Query → Agent → (Search → Critic → Refine) loop → Answer
 ```
 - Agent iteratively retrieves and critiques results
 - Can ask follow-up retrieval questions
@@ -1868,7 +1868,7 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 **Answer:** A production AI agent requires these elements:
 
 1. **Tool Registry:** All tools defined with name, description, input schema (JSON Schema), output format
-2. **Orchestrator:** Controls the agent loop â€” think â†’ act â†’ observe â†’ repeat
+2. **Orchestrator:** Controls the agent loop — think → act → observe → repeat
 3. **Context Manager:** Tracks conversation history, tool outputs, relevant memories
 4. **Guardrails:**
    - Input guard: Validate user queries for injection or harmful content
@@ -1876,7 +1876,7 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
    - Tool guard: Verify tool calls against allowlist, rate limits
 5. **Error Handling:**
    - Retry with backoff for transient failures
-   - Graceful degradation â€” answer without tools if unavailable
+   - Graceful degradation — answer without tools if unavailable
    - Human handoff for uncertain or high-stakes decisions
 6. **Observability:**
    - Log every thought, action, observation
@@ -1908,9 +1908,9 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
    - Continuous: Monitor for drift in model behavior
 
 4. **Privacy:**
-   - Training data extraction attacks â€” model memorizes sensitive data
+   - Training data extraction attacks — model memorizes sensitive data
    - Mitigation: deduplication, differential privacy, data audit
-   - Inference privacy â€” users' queries should not leak
+   - Inference privacy — users' queries should not leak
 
 5. **Emergent Risks:**
    - Capability amplification: Model improves its own capabilities
@@ -1938,14 +1938,14 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Codex (GPT-3 derived) â†’ GPT-4o based |
+| **Model** | Codex (GPT-3 derived) → GPT-4o based |
 | **Architecture** | Decoder-only transformer fine-tuned on code |
 | **Training** | Pre-trained on natural language + fine-tuned on public GitHub repos |
 | **Key capabilities** | Code completion, chat-based code generation, refactoring, debugging |
 | **Integration** | VS Code, JetBrains, Neovim, Visual Studio |
 | **Confidence** | Shows multiple suggestions ranked by confidence |
 | **Context** | Current file, open tabs, recent edits |
-| **Inference** | Low-latency requirement â€” <500ms for completions |
+| **Inference** | Low-latency requirement — <500ms for completions |
 
 ### 3. Midjourney
 
@@ -1953,13 +1953,13 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 | Aspect | Detail |
 |--------|--------|
 | **Model** | Diffusion transformer (proprietary) |
-| **Architecture** | Text encoder (CLIP) â†’ diffusion model â†’ upscaler |
+| **Architecture** | Text encoder (CLIP) → diffusion model → upscaler |
 | **Training** | Millions of text-image pairs (licensed + curated) |
 | **Key capabilities** | Photorealistic image generation, style transfer, inpainting |
 | **Input** | Text prompt (natural language + parameters) |
-| **Output** | 1024Ã—1024 images, 4 variations per prompt |
+| **Output** | 1024×1024 images, 4 variations per prompt |
 | **Upscaling** | 2x, 4x upscale with detail enhancement |
-| **Inference** | GPU clusters â€” ~10s per generation |
+| **Inference** | GPU clusters — ~10s per generation |
 | **Platform** | Discord-based interface |
 
 ### 4. AutoGPT (Significant Gravitas)
@@ -1981,14 +1981,14 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 
 | Aspect | Detail |
 |--------|--------|
-| **Model** | Claude 3.5 Sonnet â†’ Claude 4 Opus |
+| **Model** | Claude 3.5 Sonnet → Claude 4 Opus |
 | **Architecture** | Decoder-only with Constitutional AI alignment |
 | **Training** | Pre-training + Constitutional AI + RLHF |
 | **Key capabilities** | Long document analysis (200K tokens), code generation, safe dialogue |
 | **MCP support** | First-class MCP support for tool integration |
 | **Computer use** | Can operate computer interfaces (beta) |
-| **Safety** | Tiered harmlessness â€” refuses harmful requests gracefully |
-| **Inference** | Slow but thorough â€” designed for quality over speed |
+| **Safety** | Tiered harmlessness — refuses harmful requests gracefully |
+| **Inference** | Slow but thorough — designed for quality over speed |
 
 ### How These Systems Use Modern AI Concepts
 
@@ -2007,22 +2007,22 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 |-------|:---:|:---:|:---:|---------------|
 | GPT-4 | Transformer decoder (MoE) | Text, image, audio | Massive text + vision + audio | Few-shot, reasoning, coding |
 | CLIP | Dual encoder (ViT + text) | Text + Image | 400M text-image pairs | Zero-shot classification |
-| DALL-E 3 | Diffusion + LLM | Text â†’ Image | Text-image pairs | Text-to-image generation |
+| DALL-E 3 | Diffusion + LLM | Text → Image | Text-image pairs | Text-to-image generation |
 | GPT-4o | Multimodal transformer | Text, image, audio | Multi-modal web data | Real-time cross-modal |
 | LLaMA 3 | Decoder-only (GQA) | Text (multilingual) | 15T tokens | Open-source efficiency |
 | Claude 4 | Decoder-only | Text, image | Curated + RLHF | Safety, long context |
 | Gemini | Decoder-only (MoE) | Text, image, audio, video | Google-scale data | Massive context (2M) |
-| Sora | Diffusion transformer | Text â†’ Video | Millions of video clips | Photorealistic video gen |
+| Sora | Diffusion transformer | Text → Video | Millions of video clips | Photorealistic video gen |
 | o3 | Reasoner | Text | RL + CoT tokens | Step-by-step reasoning |
 
-## Quick Reference â€” Modern AI Concepts
+## Quick Reference — Modern AI Concepts
 
 | Term | Definition | Key Insight |
 |------|-----------|-------------|
 | Transformer | Neural network using self-attention instead of recurrence | Parallel processing of all tokens |
-| Self-attention | Each token computes weighted sum of all tokens | O(LÂ²) â€” quadratic in sequence length |
+| Self-attention | Each token computes weighted sum of all tokens | O(L²) — quadratic in sequence length |
 | Token | Basic unit of text (word/subword/character) | ~0.75 words per token in English |
-| KV cache | Cached key/value vectors for efficient generation | Turns O(LÂ²) generation into O(L) |
+| KV cache | Cached key/value vectors for efficient generation | Turns O(L²) generation into O(L) |
 | Pre-training | Train on unlabeled data with self-supervised objective | Learning universal patterns |
 | Fine-tuning | Adapt pre-trained model to specific task | Small data, low learning rate |
 | RLHF | Learn from human feedback via reward model | Aligns model with human values |
@@ -2069,15 +2069,15 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 - C) Only answer questions about the training data
 - D) Generate code without any input
 
-<details><summary>Answer&lt;/summary&gt;B) In-context learning uses examples (few-shot) or instructions (zero-shot) in the prompt itself â€” no gradient updates or fine-tuning is needed.</details>
+<details><summary>Answer&lt;/summary&gt;B) In-context learning uses examples (few-shot) or instructions (zero-shot) in the prompt itself — no gradient updates or fine-tuning is needed.</details>
 
 **Q3:** The Chinchilla scaling law findings suggest that:
 - A) More parameters always improve performance
-- B) For optimal training, the number of training tokens should be roughly 6Ã— the number of model parameters
+- B) For optimal training, the number of training tokens should be roughly 6× the number of model parameters
 - C) Larger models are always more sample-efficient
 - D) Compute optimality is irrelevant
 
-<details><summary>Answer&lt;/summary&gt;B) Chinchilla showed that many large models were undertrained â€” optimal performance for a given compute budget comes from balancing model size and training tokens (~6:1 tokens-to-parameters ratio).</details>
+<details><summary>Answer&lt;/summary&gt;B) Chinchilla showed that many large models were undertrained — optimal performance for a given compute budget comes from balancing model size and training tokens (~6:1 tokens-to-parameters ratio).</details>
 
 **Q4:** In the ReAct agent framework, what happens after the model generates an action?
 - A) The model immediately gives the final answer
@@ -2101,15 +2101,15 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 - C) The reinforcement learning loop
 - D) The image upsampling layers
 
-<details><summary>Answer&lt;/summary&gt;B) CLIP learns to align text and image embeddings in a shared space. For zero-shot classification, it compares an image embedding against text embeddings of class names â€” the closest match is the prediction.</details>
+<details><summary>Answer&lt;/summary&gt;B) CLIP learns to align text and image embeddings in a shared space. For zero-shot classification, it compares an image embedding against text embeddings of class names — the closest match is the prediction.</details>
 
 **Q7:** What is the time complexity of self-attention in a transformer?
 - A) O(L)
 - B) O(L log L)
-- C) O(LÂ² Ã— d)
-- D) O(dÂ²)
+- C) O(L² × d)
+- D) O(d²)
 
-<details><summary>Answer&lt;/summary&gt;C) Self-attention computes pairwise dot products between all L tokens, each of dimension d, giving O(LÂ² Ã— d) time and O(LÂ²) memory. This quadratic cost is the main bottleneck for long sequences.</details>
+<details><summary>Answer&lt;/summary&gt;C) Self-attention computes pairwise dot products between all L tokens, each of dimension d, giving O(L² × d) time and O(L²) memory. This quadratic cost is the main bottleneck for long sequences.</details>
 
 **Q8:** What causes the quadratic complexity in autonomous agent systems like AutoGPT?
 - A) The number of tokens in each tool call
@@ -2117,7 +2117,7 @@ Query â†’ Agent â†’ (Search â†’ Critic â†’ Refine) loop â�
 - C) The model size
 - D) The training data size
 
-<details><summary>Answer&lt;/summary&gt;B) Each iteration in AutoGPT requires LLM calls for task execution, result analysis, and new task creation. The number of steps multiplied by the complexity of each step creates multiplicative overhead â€” O(S Ã— L Ã— dÂ²) for S steps.</details>
+<details><summary>Answer&lt;/summary&gt;B) Each iteration in AutoGPT requires LLM calls for task execution, result analysis, and new task creation. The number of steps multiplied by the complexity of each step creates multiplicative overhead — O(S × L × d²) for S steps.</details>
 
 **Q9:** Which attention variant do LLaMA 3 models use to reduce KV cache memory?
 - A) Multi-head attention
@@ -2178,7 +2178,7 @@ Modern AI represents a paradigm shift from hand-crafted rule-based systems to da
 
 **Foundations:** The deep learning revolution replaced manual feature engineering with end-to-end learning through backpropagation. Generative AI extends this by learning the data distribution itself rather than just decision boundaries.
 
-**Large Language Models:** Decoder-only transformers (GPT, LLaMA, Claude) predict the next token, producing models with emergent abilities including in-context learning, chain-of-thought reasoning, and instruction following. The pre-train â†’ fine-tune â†’ RLHF pipeline produces increasingly capable and aligned models.
+**Large Language Models:** Decoder-only transformers (GPT, LLaMA, Claude) predict the next token, producing models with emergent abilities including in-context learning, chain-of-thought reasoning, and instruction following. The pre-train → fine-tune → RLHF pipeline produces increasingly capable and aligned models.
 
 **Multimodal AI:** Models like CLIP bridge text and vision through contrastive learning in shared embedding spaces. This enables zero-shot classification, text-to-image generation (DALL-E, Midjourney), and video generation (Sora).
 
@@ -2187,7 +2187,7 @@ Modern AI represents a paradigm shift from hand-crafted rule-based systems to da
 **Key themes running through modern AI:**
 - **Scale is a feature:** Larger models + more data = better capabilities, often with sharp emergent transitions
 - **Transfer is universal:** Pre-train once, adapt everywhere (fine-tuning, in-context learning, instruction tuning)
-- **Alignment is essential:** Raw capability without alignment produces harmful outputs â€” RLHF, constitutional AI, and guardrails are not optional
+- **Alignment is essential:** Raw capability without alignment produces harmful outputs — RLHF, constitutional AI, and guardrails are not optional
 - **The agent paradigm dominates:** Modern AI is moving from "answer-only" to "perceive-reason-act" systems
 - **Standardization is emerging:** Protocols like MCP enable interoperable tool ecosystems
 

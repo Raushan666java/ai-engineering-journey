@@ -1,6 +1,6 @@
-﻿# Chapter 14: String Algorithms
+# Chapter 14: String Algorithms
 
-> **Prerequisites:** [Chapter 13: Network Flow](./13-graph-flow.md) â€” Algorithm design techniques, complexity analysis | **Next:** [Chapter 15: NP-Completeness](./15-np-completeness.md) â€” From efficient algorithms to hardness theory
+> **Prerequisites:** [Chapter 13: Network Flow](./13-graph-flow.md) — Algorithm design techniques, complexity analysis | **Next:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — From efficient algorithms to hardness theory
 
 ## Learning Objectives
 
@@ -39,16 +39,16 @@ By the end of this chapter, students will be able to:
 **Every second, billions of strings are searched.** When you press Ctrl+F in a document, your browser scans thousands of characters in milliseconds. When BLAST searches a DNA database, it aligns 3 billion base pairs against your query. When your phone autocorrects "teh" to "the", it computes edit distance instantly.
 
 String algorithms are the invisible engine behind:
-- **Search engines** â€” Google indexes trillions of web pages using suffix structures
-- **Bioinformatics** â€” Finding a gene in the human genome is a pattern-matching problem on a string of length 3.2 billion
-- **Spell checkers & autocomplete** â€” Tries and edit distance power every text input field
-- **Intrusion detection systems** â€” Snort and Suricata match thousands of attack signatures against every packet
-- **Plagiarism detection** â€” Turnitin uses suffix arrays to find substring overlaps between documents
-- **Compression** â€” gzip uses the LZ77 algorithm, which is fundamentally a string-matching problem
+- **Search engines** — Google indexes trillions of web pages using suffix structures
+- **Bioinformatics** — Finding a gene in the human genome is a pattern-matching problem on a string of length 3.2 billion
+- **Spell checkers & autocomplete** — Tries and edit distance power every text input field
+- **Intrusion detection systems** — Snort and Suricata match thousands of attack signatures against every packet
+- **Plagiarism detection** — Turnitin uses suffix arrays to find substring overlaps between documents
+- **Compression** — gzip uses the LZ77 algorithm, which is fundamentally a string-matching problem
 
-**Real-world analogy:** You're looking for a specific sentence in a 500-page book. The naive approach is to scan every page word-by-word â€” at worst, you read the whole book every time. A better approach is the index at the back (like a suffix array): you look up the first word, and it tells you every page that word appears on. Even better is knowing patterns in the language itself â€” like KMP's prefix function, which tells you "if this word doesn't match, you can skip ahead by exactly this much because you've already read enough to know."
+**Real-world analogy:** You're looking for a specific sentence in a 500-page book. The naive approach is to scan every page word-by-word — at worst, you read the whole book every time. A better approach is the index at the back (like a suffix array): you look up the first word, and it tells you every page that word appears on. Even better is knowing patterns in the language itself — like KMP's prefix function, which tells you "if this word doesn't match, you can skip ahead by exactly this much because you've already read enough to know."
 
-This chapter transforms the simple act of "finding a string in another string" from O(nÂ²) brute force into O(n) elegance.
+This chapter transforms the simple act of "finding a string in another string" from O(n²) brute force into O(n) elegance.
 
 ---
 
@@ -91,7 +91,7 @@ flowchart LR
 
 ## 14.1 Naive Pattern Search
 
-**Real-world analogy:** You have a key (the pattern) and a long row of locks (the text). You try the key at the first lock, then the second, then the third â€” at each position, you check whether every tumbler aligns. If the key doesn't fit at position i, you move to i+1 and try again.
+**Real-world analogy:** You have a key (the pattern) and a long row of locks (the text). You try the key at the first lock, then the second, then the third — at each position, you check whether every tumbler aligns. If the key doesn't fit at position i, you move to i+1 and try again.
 
 ### How It Works
 
@@ -129,17 +129,17 @@ NaiveSearch(T, P):
 
 | Shift | Comparison Sequence | Result |
 |-------|--------------------|--------|
-| 0 | A=Aâœ“ B=Bâœ“ A=Aâœ“ B=Bâœ“ A=Aâœ“ B=Bâœ“ A=Aâœ“ Bâ‰ Câœ— | Fail at T[7] |
-| 1 | Bâ‰ Aâœ— | Fail at T[1] |
-| 2 | A=Aâœ“ B=Bâœ“ A=Aâœ“ B=Bâœ“ A=Aâœ“ B=Bâœ“ A=Aâœ“ Bâ‰ Câœ— | Fail at T[9] |
-| 3 | Bâ‰ Aâœ— | Fail at T[3] |
-| 4 | Dâ‰ Aâœ— | Fail at T[4] |
-| 5 | A=Aâœ“ B=Bâœ“ A=Aâœ“ Câ‰ Bâœ— | Fail at T[7] |
-| 6 | Bâ‰ Aâœ— | Fail at T[6] |
-| 7 | A=Aâœ“ Câ‰ Bâœ— | Fail at T[8] |
-| 8 | Câ‰ Aâœ— | Fail at T[8] |
-| 9 | Dâ‰ Aâœ— | Fail at T[9] |
-| 10 | A=Aâœ“ B=Bâœ“ A=Aâœ“ B=Bâœ“ C=Câœ“ A=Aâœ“ B=Bâœ“ A=Aâœ“ B=Bâœ“ | **Match at 10** |
+| 0 | A=A✓ B=B✓ A=A✓ B=B✓ A=A✓ B=B✓ A=A✓ B≠C✗ | Fail at T[7] |
+| 1 | B≠A✗ | Fail at T[1] |
+| 2 | A=A✓ B=B✓ A=A✓ B=B✓ A=A✓ B=B✓ A=A✓ B≠C✗ | Fail at T[9] |
+| 3 | B≠A✗ | Fail at T[3] |
+| 4 | D≠A✗ | Fail at T[4] |
+| 5 | A=A✓ B=B✓ A=A✓ C≠B✗ | Fail at T[7] |
+| 6 | B≠A✗ | Fail at T[6] |
+| 7 | A=A✓ C≠B✗ | Fail at T[8] |
+| 8 | C≠A✗ | Fail at T[8] |
+| 9 | D≠A✗ | Fail at T[9] |
+| 10 | A=A✓ B=B✓ A=A✓ B=B✓ C=C✓ A=A✓ B=B✓ A=A✓ B=B✓ | **Match at 10** |
 
 ### Implementations
 
@@ -203,7 +203,7 @@ public static List<Integer> naiveSearch(String T, String P) {
 
 **Time:** \(O(nm)\) worst-case. For each of \(n-m+1 \approx n\) shifts, we compare up to \(m\) characters.
 
-**Space:** \(O(1)\) â€” only loop counters.
+**Space:** \(O(1)\) — only loop counters.
 
 ### Advantages & Disadvantages
 
@@ -213,7 +213,7 @@ public static List<Integer> naiveSearch(String T, String P) {
 | Simple to implement and understand | O(nm) worst-case is too slow for large texts |
 | No preprocessing required | Re-examines already-matched characters |
 | Works with any alphabet | No early termination for long partial matches |
-| No extra memory needed | Impractical for n > 10âµ |
+| No extra memory needed | Impractical for n > 10⁵ |
 
 ### Edge Cases
 
@@ -231,7 +231,7 @@ public static List<Integer> naiveSearch(String T, String P) {
 
 ## 14.2 Knuth-Morris-Pratt (KMP) Algorithm
 
-**Real-world analogy:** You're reading a book and searching for the word "needle." When you get to "needless," you realize "needle" doesn't match â€” but you already know the text reads "needl-." Instead of going back to the 'e' and starting over, you skip ahead to where the next possible match could begin, because "needl-" shares a suffix with the prefix "needle."
+**Real-world analogy:** You're reading a book and searching for the word "needle." When you get to "needless," you realize "needle" doesn't match — but you already know the text reads "needl-." Instead of going back to the 'e' and starting over, you skip ahead to where the next possible match could begin, because "needl-" shares a suffix with the prefix "needle."
 
 ### The Key Insight
 
@@ -286,39 +286,39 @@ KMP(T, P):
             j = pi[j-1]
 ```
 
-### Dry Run â€” Prefix Function
+### Dry Run — Prefix Function
 
 
 **Pattern:** `ABCABD` (m=6)
 
 | i | P[i] | k (before) | while loop | P[k]==P[i]? | k (after) | \(\pi[i]\) |
 |---|------|-----------|------------|-------------|-----------|-----------|
-| 0 | A | â€“ | â€“ | â€“ | 0 | 0 |
-| 1 | B | 0 | skip | Aâ‰ B | 0 | 0 |
-| 2 | C | 0 | skip | Aâ‰ C | 0 | 0 |
-| 3 | A | 0 | skip | A==Aâœ“ | 1 | 1 |
-| 4 | B | 1 | skip | B==Bâœ“ | 2 | 2 |
-| 5 | D | 2 | while: k=\(\pi\)[1]=0 | Aâ‰ D | 0 | 0 |
+| 0 | A | – | – | – | 0 | 0 |
+| 1 | B | 0 | skip | A≠B | 0 | 0 |
+| 2 | C | 0 | skip | A≠C | 0 | 0 |
+| 3 | A | 0 | skip | A==A✓ | 1 | 1 |
+| 4 | B | 1 | skip | B==B✓ | 2 | 2 |
+| 5 | D | 2 | while: k=\(\pi\)[1]=0 | A≠D | 0 | 0 |
 
 **Result:** \(\pi = [0, 0, 0, 1, 2, 0]\)
 
-### Dry Run â€” Matching Phase
+### Dry Run — Matching Phase
 
 
 **Text:** `ABCABCABD` (n=9), **Pattern:** `ABCABD` (m=6), \(\pi = [0,0,0,1,2,0]\)
 
 | i | T[i] | j (before) | T[i]==P[j]? | j (after) | Action |
 |---|------|-----------|-------------|-----------|--------|
-| 0 | A | 0 | A==Aâœ“ | 1 | advance |
-| 1 | B | 1 | B==Bâœ“ | 2 | advance |
-| 2 | C | 2 | C==Câœ“ | 3 | advance |
-| 3 | A | 3 | A==Aâœ“ | 4 | advance |
-| 4 | B | 4 | B==Bâœ“ | 5 | advance |
-| 5 | C | 5 | Câ‰ Dâœ— â†’ j=\(\pi\)[4]=2 | 2 | fallback |
-| 5 | C | 2 | C==Câœ“ | 3 | advance |
-| 6 | A | 3 | A==Aâœ“ | 4 | advance |
-| 7 | B | 4 | B==Bâœ“ | 5 | advance |
-| 8 | D | 5 | D==Dâœ“ | 6 | **Match at 3** |
+| 0 | A | 0 | A==A✓ | 1 | advance |
+| 1 | B | 1 | B==B✓ | 2 | advance |
+| 2 | C | 2 | C==C✓ | 3 | advance |
+| 3 | A | 3 | A==A✓ | 4 | advance |
+| 4 | B | 4 | B==B✓ | 5 | advance |
+| 5 | C | 5 | C≠D✗ → j=\(\pi\)[4]=2 | 2 | fallback |
+| 5 | C | 2 | C==C✓ | 3 | advance |
+| 6 | A | 3 | A==A✓ | 4 | advance |
+| 7 | B | 4 | B==B✓ | 5 | advance |
+| 8 | D | 5 | D==D✓ | 6 | **Match at 3** |
 
 ### Implementations
 
@@ -452,7 +452,7 @@ public static List<Integer> kmp(String T, String P) {
 | Overlapping | "ABABA" | "ABA" | \(\pi = [0,0,1]\); matches at 0,2 |
 | Single char | "abcabc" | "a" | \(\pi = [0]\); matches at 0,3 |
 
-> **Pro Tip:** KMP's prefix function (pi array) encodes the "border" of each prefix â€” the longest proper prefix that is also a suffix. This is the key to O(n+m) performance because it never backtracks in the text.
+> **Pro Tip:** KMP's prefix function (pi array) encodes the "border" of each prefix — the longest proper prefix that is also a suffix. This is the key to O(n+m) performance because it never backtracks in the text.
 >
 > **Remember:** The prefix function is computed on the pattern alone before matching begins. The matching phase runs in O(n) time by always advancing the text pointer.
 
@@ -517,10 +517,10 @@ Let \(d = 10, q = 13\) for simplicity (using character values A=1, B=2, C=3)
 
 | i | Window | Hash | hp==ht? | char match? | Result |
 |---|--------|------|---------|-------------|--------|
-| 0 | CCA | \((3\cdot100+3\cdot10+1)\bmod13 = 331\bmod13 = 6\) | Yes | CCAâ‰ ABC | No match |
-| 1 | CAB | \(10\cdot(6-3\cdot10)+2)\bmod13 = (-238)\bmod13 = 9\) | No | â€“ | No match |
-| 2 | ABC | \(10\cdot(9-3\cdot10)+3)\bmod13 = (-177)\bmod13 = 6\) | Yes | ABC==ABCâœ“ | **Match at 2** |
-| 3 | BCA | \(10\cdot(6-1\cdot10)+1)\bmod13 = (-39)\bmod13 = 0\) | No | â€“ | No match |
+| 0 | CCA | \((3\cdot100+3\cdot10+1)\bmod13 = 331\bmod13 = 6\) | Yes | CCA≠ABC | No match |
+| 1 | CAB | \(10\cdot(6-3\cdot10)+2)\bmod13 = (-238)\bmod13 = 9\) | No | – | No match |
+| 2 | ABC | \(10\cdot(9-3\cdot10)+3)\bmod13 = (-177)\bmod13 = 6\) | Yes | ABC==ABC✓ | **Match at 2** |
+| 3 | BCA | \(10\cdot(6-1\cdot10)+1)\bmod13 = (-39)\bmod13 = 0\) | No | – | No match |
 
 ### Implementations
 
@@ -614,7 +614,7 @@ public static List<Integer> rabinKarp(String T, String P) {
 | Worst | \(O(nm)\) | Every window's hash collides with pattern hash, forcing full comparison |
 | Average | \(O(n + m)\) | With a good hash function and large prime modulus, collisions are rare |
 
-**Space:** \(O(1)\) â€” only a few integer variables.
+**Space:** \(O(1)\) — only a few integer variables.
 
 ### Advantages & Disadvantages
 
@@ -690,20 +690,20 @@ ComputeZ(S):
 **Pattern:** `aab` (m=3), **Text:** `aabaab`  
 **Concatenated S:** `aab$aabaab`
 
-| i | S[i] | iâ‰¤r? | Z[i] init | While expansion | Z[i] final | l | r |
+| i | S[i] | i≤r? | Z[i] init | While expansion | Z[i] final | l | r |
 |---|------|------|-----------|-----------------|------------|---|---|
-| 0 | a | â€“ | 0 | â€“ | 0 | 0 | 0 |
-| 1 | a | 1>0=âœ— | 0 | S[1]==S[0] âœ“, S[2]==S[1] âœ“, S[3]â‰ S[2] âœ— | 2 | 1 | 2 |
-| 2 | b | 2>2=âœ— | 0 | S[2]â‰ S[0] âœ— | 0 | 1 | 2 |
-| 3 | $ | 3>2=âœ— | 0 | S[3]â‰ S[0] âœ— | 0 | 1 | 2 |
-| 4 | a | 4>2=âœ— | 0 | S[4]==S[0] âœ“, S[5]==S[1] âœ“, S[6]==S[2] âœ“, S[7]â‰ S[3] âœ— | 3 | 4 | 6 |
-| 5 | a | 5â‰¤6=âœ“ | min(2, Z[1]=2)=2 | S[7]â‰ S[2] âœ— | 2 | 4 | 6 |
-| 6 | b | 6â‰¤6=âœ“ | min(1, Z[2]=0)=0 | S[6]â‰ S[0] âœ— | 0 | 4 | 6 |
-| 7 | a | 7>6=âœ— | 0 | S[7]==S[0] âœ“, S[8]==S[1] âœ“, end | 2 | 7 | 8 |
-| 8 | a | 8â‰¤8=âœ“ | min(1, Z[1]=2)=1 | end | 1 | 7 | 8 |
+| 0 | a | – | 0 | – | 0 | 0 | 0 |
+| 1 | a | 1>0=✗ | 0 | S[1]==S[0] ✓, S[2]==S[1] ✓, S[3]≠S[2] ✗ | 2 | 1 | 2 |
+| 2 | b | 2>2=✗ | 0 | S[2]≠S[0] ✗ | 0 | 1 | 2 |
+| 3 | $ | 3>2=✗ | 0 | S[3]≠S[0] ✗ | 0 | 1 | 2 |
+| 4 | a | 4>2=✗ | 0 | S[4]==S[0] ✓, S[5]==S[1] ✓, S[6]==S[2] ✓, S[7]≠S[3] ✗ | 3 | 4 | 6 |
+| 5 | a | 5≤6=✓ | min(2, Z[1]=2)=2 | S[7]≠S[2] ✗ | 2 | 4 | 6 |
+| 6 | b | 6≤6=✓ | min(1, Z[2]=0)=0 | S[6]≠S[0] ✗ | 0 | 4 | 6 |
+| 7 | a | 7>6=✗ | 0 | S[7]==S[0] ✓, S[8]==S[1] ✓, end | 2 | 7 | 8 |
+| 8 | a | 8≤8=✓ | min(1, Z[1]=2)=1 | end | 1 | 7 | 8 |
 
-**Matches:** \(Z[4] = 3 = m\) â†’ match at \(4 - 3 - 1 = 0\).  
-\(Z[4] = 3\) â†’ match at position 0 in original text. Indeed, "aab" is at position 0 and 3 in "aabaab".
+**Matches:** \(Z[4] = 3 = m\) → match at \(4 - 3 - 1 = 0\).  
+\(Z[4] = 3\) → match at position 0 in original text. Indeed, "aab" is at position 0 and 3 in "aabaab".
 
 ### Implementations
 
@@ -801,7 +801,7 @@ public static List<Integer> zMatch(String T, String P) {
 
 | Phase | Time | Why |
 |-------|------|-----|
-| Z-array computation | \(O(n)\) | The while loop advances the \(r\) boundary; \(r\) only increases, total increments â‰¤ \(n\) |
+| Z-array computation | \(O(n)\) | The while loop advances the \(r\) boundary; \(r\) only increases, total increments ≤ \(n\) |
 | Pattern matching | \(O(n + m)\) | One Z-array pass with O(1) checks per position |
 | **Total** | **\(O(n + m)\)** | Linear in the length of the concatenated string |
 
@@ -828,9 +828,9 @@ public static List<Integer> zMatch(String T, String P) {
 | Single character | Z is always 0 or 1 |
 | All same characters | Z values grow linearly; works correctly |
 
-> **Pro Tip:** The Z-algorithm is simpler to implement than KMP for pattern matching â€” just concatenate P + "$" + T, compute the Z-array, and look for Z[i] = len(P). The separator character must not appear in either string.
+> **Pro Tip:** The Z-algorithm is simpler to implement than KMP for pattern matching — just concatenate P + "$" + T, compute the Z-array, and look for Z[i] = len(P). The separator character must not appear in either string.
 >
-> **Remember:** The Z-algorithm's linear time comes from maintaining the [l, r] interval of the rightmost matching prefix â€” it never recomputes matches inside this window.
+> **Remember:** The Z-algorithm's linear time comes from maintaining the [l, r] interval of the rightmost matching prefix — it never recomputes matches inside this window.
 
 **One-Sentence Takeaway:** The Z-algorithm computes the longest prefix match at each position in O(n) by maintaining the rightmost matching window [l, r].
 
@@ -921,8 +921,8 @@ AhoCorasickSearch(T, root):
 **Step 1: Build Trie**
 
 ```
-root â†’ 'a' â†’ 'b'*   (pattern "ab" ends at node_ab)
-root â†’ 'b' â†’ 'c'*   (pattern "bc" ends at node_bc)
+root → 'a' → 'b'*   (pattern "ab" ends at node_ab)
+root → 'b' → 'c'*   (pattern "bc" ends at node_bc)
 ```
 
 **Step 2: Build Failure Links**
@@ -932,18 +932,18 @@ root â†’ 'b' â†’ 'c'*   (pattern "bc" ends at node_bc)
 | root | root | default |
 | node_a | root | depth 1, root has no failure |
 | node_b | root | depth 1 |
-| node_ab | node_b | failure(node_a)=root, root has child 'b' â†’ node_b |
+| node_ab | node_b | failure(node_a)=root, root has child 'b' → node_b |
 | node_bc | root | failure(node_b)=root, root has no child 'c' |
 
 **Step 3: Search**
 
 | i | T[i] | node (before) | Transition | node (after) | Match |
 |---|------|---------------|------------|--------------|-------|
-| 0 | a | root | rootâ†’a (exists) | node_a | â€“ |
-| 1 | b | node_a | aâ†’b (exists) | node_ab | **"ab" at 0** |
-| 2 | c | node_ab | ab has no c, fail=node_b, bâ†’c (exists) | node_bc | **"bc" at 1** |
-| 3 | a | node_bc | bc has no a, fail=root, rootâ†’a (exists) | node_a | â€“ |
-| 4 | b | node_a | aâ†’b (exists) | node_ab | **"ab" at 3** |
+| 0 | a | root | root→a (exists) | node_a | – |
+| 1 | b | node_a | a→b (exists) | node_ab | **"ab" at 0** |
+| 2 | c | node_ab | ab has no c, fail=node_b, b→c (exists) | node_bc | **"bc" at 1** |
+| 3 | a | node_bc | bc has no a, fail=root, root→a (exists) | node_a | – |
+| 4 | b | node_a | a→b (exists) | node_ab | **"ab" at 3** |
 
 Matches found: "ab" at positions 0 and 3, "bc" at position 1.
 
@@ -1197,7 +1197,7 @@ BuildSuffixArray(S):
 - rank = [98, 97, 110, 97, 110, 97] (ASCII: b=98, a=97, n=110)
 
 **k=1: Sort by (rank[i], rank[i+1])**
-- (98,97) â†’ i=0 | (97,110) â†’ i=1 | (110,97) â†’ i=2 | (97,110) â†’ i=3 | (110,97) â†’ i=4 | (97,-1) â†’ i=5
+- (98,97) → i=0 | (97,110) → i=1 | (110,97) → i=2 | (97,110) → i=3 | (110,97) → i=4 | (97,-1) → i=5
 
 After sorting: sa = [5, 1, 3, 0, 2, 4]
 New ranks: [3, 1, 2, 1, 2, 0]
@@ -1208,7 +1208,7 @@ New ranks: [3, 1, 2, 1, 2, 0]
 After sorting: sa = [5, 3, 1, 0, 4, 2]
 New ranks: [3, 2, 4, 1, 4, 0]
 
-**k=4: All ranks unique â†’ done**
+**k=4: All ranks unique → done**
 
 Final SA = [5, 3, 1, 0, 4, 2]
 
@@ -1239,7 +1239,7 @@ Rank: rank[5]=0, rank[3]=1, rank[1]=2, rank[0]=3, rank[4]=4, rank[2]=5
 | 2 | 5 | SA[4]=4 | "nana" vs "na": "na"=2 | 2 | 4 (LCP[4]=2) |
 | 3 | 1 | SA[0]=5 | "ana" vs "a": "a"=1 | 1 | 0 (LCP[0]=1) |
 | 4 | 4 | SA[3]=0 | "na" vs "banana": 0 | 0 | 3 (LCP[3]=0) |
-| 5 | 0 | â€“ | â€“ | â€“ | â€“ |
+| 5 | 0 | – | – | – | – |
 
 LCP = [1, 3, 0, 0, 2]
 
@@ -1477,7 +1477,7 @@ public static int[] manacher(String S) {
 ### Complexity Analysis
 
 
-**Time:** \(O(n)\) â€” the while loop expands the rightmost palindrome boundary \(R\), which only increases. Each expansion corresponds to a unique center.
+**Time:** \(O(n)\) — the while loop expands the rightmost palindrome boundary \(R\), which only increases. Each expansion corresponds to a unique center.
 
 **Space:** \(O(n)\) for the transformed string and radius array.
 
@@ -1490,7 +1490,7 @@ public static int[] manacher(String S) {
 | Uses palindrome symmetry property | Requires preprocessing with separators |
 | Single pass through transformed string | Only solves palindrome problems |
 
-> **Pro Tip:** Manacher's algorithm is the crown jewel of palindrome algorithms â€” it uses mirror symmetry to reduce O(nÂ²) naive expansion to O(n). The transformed string with '#' separators ensures all palindromes (even-length) have a distinct center.
+> **Pro Tip:** Manacher's algorithm is the crown jewel of palindrome algorithms — it uses mirror symmetry to reduce O(n²) naive expansion to O(n). The transformed string with '#' separators ensures all palindromes (even-length) have a distinct center.
 
 ---
 
@@ -1502,7 +1502,7 @@ public static int[] manacher(String S) {
 | KMP | Border-based | O(n+m) | O(m) | Single pattern, large text | No | Yes |
 | Rabin-Karp | Rolling hash | O(n+m) exp | O(1) | Multiple patterns, plagiarism detection | Yes (avg) | Expected |
 | Z-Algorithm | Interval-based | O(n+m) | O(n+m) | Simpler KMP alternative | No | Yes |
-| Aho-Corasick | Trie automaton | O(n+âˆ‘m) | O(âˆ‘mÂ·Î£) | Multiple patterns, IDS | Yes | Yes |
+| Aho-Corasick | Trie automaton | O(n+∑m) | O(∑m·Σ) | Multiple patterns, IDS | Yes | Yes |
 | Suffix Array + LCP | Sorted suffixes | O(n log n) build | O(n) | Many queries on static text | Yes | Build only |
 | Manacher | Mirror symmetry | O(n) | O(n) | Palindrome problems | N/A | Yes |
 
@@ -1516,7 +1516,7 @@ public static int[] manacher(String S) {
 **Problem:** Given a string S, find the longest substring that is a palindrome.
 
 **Approaches:**
-- **Expand around center (O(nÂ²), O(1)):** For each center, expand outward while the substring is a palindrome. Handle both odd and even length palindromes.
+- **Expand around center (O(n²), O(1)):** For each center, expand outward while the substring is a palindrome. Handle both odd and even length palindromes.
 - **Manacher (O(n), O(n)):** Use the Manacher algorithm described above.
 
 **Algorithm (Expand around center):**
@@ -1538,7 +1538,7 @@ LongestPalindrome(S):
     return S[start..start+maxLen-1]
 ```
 
-**Complexity:** O(nÂ²) time, O(1) space.
+**Complexity:** O(n²) time, O(1) space.
 
 ### 2. Longest Common Prefix (LCP) of an Array of Strings
 
@@ -1607,7 +1607,7 @@ Every browser's "Find in Page" feature implements some form of pattern matching:
 
 The key requirement is interactivity: results must appear while the user types, which demands sub-50ms search for files up to 1MB.
 
-### Bioinformatics â€” DNA Pattern Search
+### Bioinformatics — DNA Pattern Search
 
 
 DNA is a string over {A, C, G, T} with length ~3.2 billion for the human genome:
@@ -1621,11 +1621,11 @@ Example: Searching for the gene `BRCA1` (~125k base pairs) in the human genome u
 
 
 Snort and Suricata match network packets against thousands of attack signatures:
-- **Aho-Corasick** is the primary algorithm used â€” it matches all signatures in a single pass over the packet payload.
+- **Aho-Corasick** is the primary algorithm used — it matches all signatures in a single pass over the packet payload.
 - Multi-pattern matching is critical because a single packet might match 10+ rules.
 - Performance requirement: process packets at line rate (1-100 Gbps) without dropping packets.
 
-**Real numbers:** Snort 3's Aho-Corasick implementation matches ~40,000 patterns against a 1500-byte packet in ~2Î¼s on modern hardware.
+**Real numbers:** Snort 3's Aho-Corasick implementation matches ~40,000 patterns against a 1500-byte packet in ~2μs on modern hardware.
 
 ### Plagiarism Detection
 
@@ -1650,7 +1650,7 @@ Snort and Suricata match network packets against thousands of attack signatures:
 | KMP | Prefix function (borders) | O(n+m) | O(m) | No backtracking in text |
 | Rabin-Karp | Rolling hash | O(n+m) exp | O(1) | Multiple pattern search |
 | Z-Algorithm | Z-array window [l,r] | O(n) | O(n) | Simpler than KMP |
-| Aho-Corasick | Trie + failure links | O(n+âˆ‘m) | O(âˆ‘mÂ·Î£) | Multi-pattern search |
+| Aho-Corasick | Trie + failure links | O(n+∑m) | O(∑m·Σ) | Multi-pattern search |
 | Manacher | Palindrome symmetry | O(n) | O(n) | All palindromes |
 | Suffix Array | Doubling + sort ranks | O(n log n) | O(n) | Versatile string queries |
 | LCP Array | Kasai's linear algorithm | O(n) | O(n) | Enables substring queries |
@@ -1665,7 +1665,7 @@ Snort and Suricata match network packets against thousands of attack signatures:
 | **Aho-Corasick** | Trie + BFS failure links; search all patterns in one pass |
 | **Manacher** | Symmetry reduces redundant expansion; use # separators |
 | **Suffix Array** | Prefix-doubling O(n log n); use LCP for full power |
-| **Key Application** | LCP â†’ longest repeated substring, distinct substrings |
+| **Key Application** | LCP → longest repeated substring, distinct substrings |
 
 ### Cross-Application Matrix
 
@@ -1735,14 +1735,14 @@ Snort and Suricata match network packets against thousands of attack signatures:
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) The prefix function (pi) encodes borders â€” when a mismatch occurs, we shift by the border length without going back in the text.
+B) The prefix function (pi) encodes borders — when a mismatch occurs, we shift by the border length without going back in the text.
 </details>
 
 **Q2.** What is the worst-case time complexity of naive Rabin-Karp?
 
 - A) O(n+m)
 - B) O(nm)
-- C) O(nÂ²)
+- C) O(n²)
 - D) O(n log n)
 
 <details>
@@ -1771,7 +1771,7 @@ B) The LCP array enables O(1) longest common prefix queries between consecutive 
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) Aho-Corasick â€” it matches all patterns in a single linear pass, making it ideal for IDS/IPS applications.
+C) Aho-Corasick — it matches all patterns in a single linear pass, making it ideal for IDS/IPS applications.
 </details>
 
 **Q5.** In the Z-algorithm, what does Z[i] represent?
@@ -1790,12 +1790,12 @@ B) Z[i] is the length of the longest substring starting at position i that is al
 
 - A) O(n)
 - B) O(n log n)
-- C) O(nÂ²)
-- D) O(nÂ² log n)
+- C) O(n²)
+- D) O(n² log n)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) O(n log n) â€” each doubling round requires sorting n elements, and there are log n rounds.
+B) O(n log n) — each doubling round requires sorting n elements, and there are log n rounds.
 </details>
 
 **Q7.** For the string "AAAA", how many distinct substrings does it have?
@@ -1807,7 +1807,7 @@ B) O(n log n) â€” each doubling round requires sorting n elements, and ther
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) 4 â€” "A", "AA", "AAA", "AAAA". Using the formula \(n(n+1)/2 - \sum LCP\): \(10 - (1+2+1) = 4\).
+B) 4 — "A", "AA", "AAA", "AAAA". Using the formula \(n(n+1)/2 - \sum LCP\): \(10 - (1+2+1) = 4\).
 </details>
 
 **Q8.** In Aho-Corasick, what is the purpose of failure links?
@@ -1819,7 +1819,7 @@ B) 4 â€” "A", "AA", "AAA", "AAAA". Using the formula \(n(n+1)/2 - \sum LCP\
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) Failure links redirect the automaton on mismatch to the longest proper suffix of the current prefix that is also a prefix of some pattern â€” analogous to KMP's prefix function.
+B) Failure links redirect the automaton on mismatch to the longest proper suffix of the current prefix that is also a prefix of some pattern — analogous to KMP's prefix function.
 </details>
 
-> **Next:** Chapter 15 explores NP-Completeness â€” the boundary between tractable and intractable problems, and how to recognize problems that likely have no efficient solution.
+> **Next:** Chapter 15 explores NP-Completeness — the boundary between tractable and intractable problems, and how to recognize problems that likely have no efficient solution.

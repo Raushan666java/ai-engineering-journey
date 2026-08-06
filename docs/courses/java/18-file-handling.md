@@ -1,4 +1,4 @@
-﻿> **Previous:** [OpenAPI](./17-openapi.md) | **Next:** [JDBC/JOOQ](./19-jdbc-jooq.md)
+> **Previous:** [OpenAPI](./17-openapi.md) | **Next:** [JDBC/JOOQ](./19-jdbc-jooq.md)
 
 # File Upload, Download & Streaming
 
@@ -65,7 +65,7 @@ flowchart LR
     G --> H[Progress Tracking]
 ```
 
-> **Pro Tip:** Always validate file types by reading the first bytes (magic numbers) rather than relying on file extensions â†’ attackers can easily rename a malicious file to appear legitimate.
+> **Pro Tip:** Always validate file types by reading the first bytes (magic numbers) rather than relying on file extensions → attackers can easily rename a malicious file to appear legitimate.
 
 ## Theory
 
@@ -717,7 +717,7 @@ public class UploadResponse {
 }
 ```
 
-### 8. Downloading Files ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Resource Implementations
+### 8. Downloading Files — Resource Implementations
 
 
 Spring provides several `Resource` implementations for different use cases:
@@ -742,7 +742,7 @@ import java.nio.file.Paths;
 @RequestMapping("/api/download")
 public class ResourceExamplesController {
 
-    // === UrlResource ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Wraps a URL (file://, https://, classpath:) ===
+    // === UrlResource — Wraps a URL (file://, https://, classpath:) ===
 
     @GetMapping("/url-resource/{fileName:.+}")
     public ResponseEntity<Resource> downloadWithUrlResource(@PathVariable String fileName) {
@@ -765,7 +765,7 @@ public class ResourceExamplesController {
         }
     }
 
-    // === InputStreamResource ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Wraps an InputStream (best for large streams) ===
+    // === InputStreamResource — Wraps an InputStream (best for large streams) ===
 
     @GetMapping("/stream-resource/{fileName:.+}")
     public ResponseEntity<Resource> downloadWithInputStreamResource(
@@ -789,7 +789,7 @@ public class ResourceExamplesController {
         }
     }
 
-    // === ByteArrayResource ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Wraps a byte[] (best for small in-memory files) ===
+    // === ByteArrayResource — Wraps a byte[] (best for small in-memory files) ===
 
     @GetMapping("/bytes/{fileName:.+}")
     public ResponseEntity<Resource> downloadWithByteArrayResource(
@@ -865,7 +865,7 @@ public class ResourceExamplesController {
 }
 ```
 
-### 9. Streaming Large Files ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â StreamingResponseBody
+### 9. Streaming Large Files — StreamingResponseBody
 
 
 `StreamingResponseBody` allows writing directly to the response's `OutputStream` without buffering the entire file in memory. It is ideal for large files (100MB+, video, ISO images).
@@ -886,7 +886,7 @@ import java.nio.file.Paths;
 @RequestMapping("/api/stream")
 public class StreamingController {
 
-    // === StreamingResponseBody ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Manual write to OutputStream ===
+    // === StreamingResponseBody — Manual write to OutputStream ===
 
     @GetMapping("/file/{fileName:.+}")
     public ResponseEntity<StreamingResponseBody> streamFile(
@@ -1120,7 +1120,7 @@ public class InputStreamResourceController {
             FileInputStream fis = new FileInputStream(filePath.toFile());
             InputStreamResource resource = new InputStreamResource(fis);
 
-            // No content-length set ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Spring uses chunked transfer encoding
+            // No content-length set → Spring uses chunked transfer encoding
             return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(contentType))
                 .header(HttpHeaders.CONTENT_DISPOSITION,
@@ -1134,7 +1134,7 @@ public class InputStreamResourceController {
 }
 ```
 
-### 11. Progress Tracking ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Temp Then Atomic Move
+### 11. Progress Tracking — Temp Then Atomic Move
 
 
 For very large uploads, save to a temp file first, validate, then atomically move to the final location.
@@ -1810,7 +1810,7 @@ public class FileViewController {
 }
 ```
 
-### 15. Complete Upload Pipeline ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â End to End
+### 15. Complete Upload Pipeline — End to End
 
 
 ```java
@@ -2678,7 +2678,7 @@ ummary
 | @RequestParam | Binds multipart request parts to controller parameters, supports List for multiple files |
 | Upload Config | `spring.servlet.multipart.*` controls max sizes, temp location, threshold |
 | File Size Limits | `MaxUploadSizeExceededException` handled via `@ControllerAdvice` |
-| Storage Service | Abstract behind `FileStorageService` interface ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â swap impls (filesystem, DB, S3) |
+| Storage Service | Abstract behind `FileStorageService` interface — swap impls (filesystem, DB, S3) |
 | Download Resources | `UrlResource` (file/URL), `InputStreamResource` (stream), `ByteArrayResource` (bytes) |
 | Content-Disposition | `attachment` forces download; `inline` displays in browser |
 | Streaming | `StreamingResponseBody` writes to OutputStream without full buffering |
@@ -2724,8 +2724,8 @@ Implement `FileStorageService.store()` to:
 ### Exercise 5: File Download with Content-Disposition
 
 Create two download endpoints:
-- `/api/files/download/{name}` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â forces download (attachment)
-- `/api/files/preview/{name}` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â displays in browser (inline) for images and PDFs
+- `/api/files/download/{name}` — forces download (attachment)
+- `/api/files/preview/{name}` — displays in browser (inline) for images and PDFs
 Both should set the correct `Content-Type` based on the file extension.
 
 ### Exercise 6: Large File Streaming
@@ -2758,9 +2758,9 @@ Create a service that:
 ### Exercise 9: Chunked Upload
 
 Implement a three-phase chunked upload:
-- `POST /api/chunked/init` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â returns an upload ID
-- `POST /api/chunked/part` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â accepts a chunk with index + upload ID
-- `POST /api/chunked/complete` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â reassembles chunks and returns the final file name
+- `POST /api/chunked/init` — returns an upload ID
+- `POST /api/chunked/part` — accepts a chunk with index + upload ID
+- `POST /api/chunked/complete` — reassembles chunks and returns the final file name
 
 Track which chunks have been received and report progress via `GET /api/chunked/{uploadId}/status`.
 
@@ -2775,4 +2775,4 @@ Configure `WebMvcConfigurer` to:
 
 ---
 
-*End of Chapter 18 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â File Upload, Download & Streaming*
+*End of Chapter 18 — File Upload, Download & Streaming*

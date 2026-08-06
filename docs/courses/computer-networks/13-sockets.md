@@ -1,4 +1,4 @@
-﻿# Chapter 13: Socket Programming â†’ Complete Reference
+# Chapter 13: Socket Programming → Complete Reference
 
 ## Learning Objectives
 
@@ -39,13 +39,13 @@
 
 A socket is like a **phone outlet in a building**:
 
-- **socket()** â†’ You install a phone jack (create the endpoint).
-- **bind()** â†’ You assign a phone number to that jack (IP + port).
-- **listen()** â†’ You wait for someone to call (TCP server only).
-- **connect()** â†’ You dial someone's number (TCP client).
-- **accept()** â†’ You pick up the call (TCP server).
-- **send()/recv()** â†’ You talk / listen.
-- **close()** â†’ You hang up.
+- **socket()** → You install a phone jack (create the endpoint).
+- **bind()** → You assign a phone number to that jack (IP + port).
+- **listen()** → You wait for someone to call (TCP server only).
+- **connect()** → You dial someone's number (TCP client).
+- **accept()** → You pick up the call (TCP server).
+- **send()/recv()** → You talk / listen.
+- **close()** → You hang up.
 
 The kernel is the **telephone exchange**: it routes data between endpoints, buffers when lines are busy, and notifies when a call arrives.
 
@@ -57,7 +57,7 @@ A socket is a software abstraction representing one endpoint of a two-way commun
 ```text
 Application (user space)
         |
-   [Socket FD] â†’ int
+   [Socket FD] → int
         |
     Kernel
         |
@@ -81,7 +81,7 @@ int socket(int domain, int type, int protocol);
 | `type` | `SOCK_STREAM`, `SOCK_DGRAM`, `SOCK_RAW` | Socket type |
 | `protocol` | `0` (default for type), `IPPROTO_TCP`, `IPPROTO_UDP` | Protocol |
 
-### Numbered Steps â†’ Socket Lifecycle
+### Numbered Steps → Socket Lifecycle
 
 
 1. **Create socket**: `socket()` returns a file descriptor.
@@ -92,7 +92,7 @@ int socket(int domain, int type, int protocol);
 6. **Data transfer**: `send()`, `recv()`, `sendto()`, `recvfrom()`.
 7. **Close**: `close()` releases resources.
 
-### Pseudocode â†’ Generic Client/Server
+### Pseudocode → Generic Client/Server
 
 
 ```
@@ -114,7 +114,7 @@ recv(fd, buf, len, 0)
 close(fd)
 ```
 
-### Dry Run â†’ Socket Creation Trace
+### Dry Run → Socket Creation Trace
 
 
 | Step | Call | Return | Kernel State |
@@ -142,13 +142,13 @@ close(fd)
 | `recv()` | O(1) (usually) | O(buf) | Copies from kernel buffer to user space |
 | `close()` | O(1) | O(1) | Frees descriptor, sends FIN if connected |
 
-### A&D Table â†’ Socket API
+### A&D Table → Socket API
 
 
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Universal abstraction across protocols | Low-level: error-prone, manual buffer mgmt |
-| Direct kernel access â†’ minimal overhead | Complex state machine per socket |
+| Direct kernel access → minimal overhead | Complex state machine per socket |
 | Cross-platform (POSIX standard) | Different APIs on Windows (Winsock) |
 | Supports any protocol (TCP/UDP/ICMP/raw) | No built-in backpressure handling |
 | Zero-copy options (sendfile, splice) | No built-in TLS |
@@ -186,7 +186,7 @@ A TCP connection is like a **dedicated phone line between a restaurant host and 
 - **send()/recv()** = Talking back and forth.
 - **close()** = Hanging up.
 - **byte stream** = Everything said in order, nothing lost.
-- **3-way handshake** = "Hello?" â†’ "Hi, who's this?" â†’ "It's me, let's talk."
+- **3-way handshake** = "Hello?" → "Hi, who's this?" → "It's me, let's talk."
 
 TCP guarantees: **reliable, in-order, connection-oriented, full-duplex byte stream**.
 
@@ -194,26 +194,26 @@ TCP guarantees: **reliable, in-order, connection-oriented, full-duplex byte stre
 
 
 ```
-Step 1: socket()    â†’ Create endpoint (fd=3)
-Step 2: setsockopt(SO_REUSEADDR) â†’ Allow port reuse
-Step 3: bind()      â†’ Assign IP + port
-Step 4: listen()    â†’ Mark as passive, set backlog
-Step 5: accept()    â†’ Block until client connects â†’ returns client_fd
-Step 6: recv()/send() â†’ Echo loop
-Step 7: close()     â†’ Close client, then server
+Step 1: socket()    → Create endpoint (fd=3)
+Step 2: setsockopt(SO_REUSEADDR) → Allow port reuse
+Step 3: bind()      → Assign IP + port
+Step 4: listen()    → Mark as passive, set backlog
+Step 5: accept()    → Block until client connects → returns client_fd
+Step 6: recv()/send() → Echo loop
+Step 7: close()     → Close client, then server
 ```
 
 ### TCP Client Steps
 
 
 ```
-Step 1: socket()    â†’ Create endpoint
-Step 2: connect()   â†’ Initiate 3-way handshake
-Step 3: send()/recv() â†’ Data exchange
-Step 4: close()     â†’ Terminate connection
+Step 1: socket()    → Create endpoint
+Step 2: connect()   → Initiate 3-way handshake
+Step 3: send()/recv() → Data exchange
+Step 4: close()     → Terminate connection
 ```
 
-### Pseudocode â†’ TCP Echo Server
+### Pseudocode → TCP Echo Server
 
 
 ```
@@ -235,7 +235,7 @@ function tcp_echo_server(port):
         close(client_fd)
 ```
 
-### Pseudocode â†’ TCP Echo Client
+### Pseudocode → TCP Echo Client
 
 
 ```
@@ -249,32 +249,32 @@ function tcp_echo_client(host, port, message):
     close(fd)
 ```
 
-### Dry Run â†’ TCP 3-Way Handshake
+### Dry Run → TCP 3-Way Handshake
 
 
 #### Connection Establishment
 
 | Step | Client State | Client Action | Packet | Server Action | Server State |
 |------|-------------|---------------|--------|---------------|-------------|
-| 0 | CLOSED | `socket()` | â†’ | `socket()`, `bind()`, `listen()` | LISTEN |
+| 0 | CLOSED | `socket()` | → | `socket()`, `bind()`, `listen()` | LISTEN |
 | 1 | SYN_SENT | `connect()` | **SYN** seq=100 | Receives SYN | SYN_RCVD |
-| 2 | ESTABLISHED | Receives SYN+ACK | **SYN+ACK** seq=300 ack=101 | Sends SYN+ACK | â†’ |
-| 3 | â†’ | Sends ACK | **ACK** seq=101 ack=301 | Receives ACK | ESTABLISHED |
-| 4 | â†’ | `send("hello")` | **DATA** seq=101 | `accept()` returns | â†’ |
-| 5 | â†’ | Receives echo | **DATA** seq=301 ack=106 | `send("hello")` | â†’ |
+| 2 | ESTABLISHED | Receives SYN+ACK | **SYN+ACK** seq=300 ack=101 | Sends SYN+ACK | → |
+| 3 | → | Sends ACK | **ACK** seq=101 ack=301 | Receives ACK | ESTABLISHED |
+| 4 | → | `send("hello")` | **DATA** seq=101 | `accept()` returns | → |
+| 5 | → | Receives echo | **DATA** seq=301 ack=106 | `send("hello")` | → |
 
 #### Connection Teardown
 
 | Step | Client | Packet | Server |
 |------|--------|--------|--------|
-| 0 | `close()` | **FIN** seq=106 | Receives FIN â†’ CLOSE_WAIT |
-| 1 | FIN_WAIT_1 | â†’ | â†’ |
+| 0 | `close()` | **FIN** seq=106 | Receives FIN → CLOSE_WAIT |
+| 1 | FIN_WAIT_1 | → | → |
 | 2 | FIN_WAIT_2 | **ACK** seq=302 | Sends ACK |
-| 3 | â†’ | **FIN** seq=302 | Sends FIN |
-| 4 | TIME_WAIT | **ACK** seq=107 | Receives ACK â†’ CLOSED |
-| 5 | CLOSED (after 2*MSL) | â†’ | â†’ |
+| 3 | → | **FIN** seq=302 | Sends FIN |
+| 4 | TIME_WAIT | **ACK** seq=107 | Receives ACK → CLOSED |
+| 5 | CLOSED (after 2*MSL) | → | → |
 
-### C++ Implementation â†’ TCP Echo Server
+### C++ Implementation → TCP Echo Server
 
 
 ```cpp
@@ -387,7 +387,7 @@ int main() {
 }
 ```
 
-### C++ Implementation â†’ TCP Echo Client
+### C++ Implementation → TCP Echo Client
 
 
 ```cpp
@@ -465,7 +465,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-### Python Implementation â†’ TCP Echo Server
+### Python Implementation → TCP Echo Server
 
 
 ```python
@@ -515,7 +515,7 @@ if __name__ == '__main__':
     tcp_echo_server()
 ```
 
-### Python Implementation â†’ TCP Echo Client
+### Python Implementation → TCP Echo Client
 
 
 ```python
@@ -552,7 +552,7 @@ if __name__ == '__main__':
     tcp_echo_client(msg)
 ```
 
-### Complexity Analysis â†’ TCP
+### Complexity Analysis → TCP
 
 
 | Operation | Time | Space | Why? |
@@ -562,13 +562,13 @@ if __name__ == '__main__':
 | `listen()` | O(1) | O(backlog) | Pre-allocates accept queue of `backlog` entries |
 | `connect()` | O(1) syscall + O(RTT) wait | O(1) | SYN sent; kernel retries, user blocks |
 | `accept()` | O(1) | O(1) | Dequeues completed connection; may allocate new FD |
-| `send()` | O(n) copy | O(n) buffer | Copies n bytes from user â†’ kernel send buffer |
-| `recv()` | O(n) copy | O(n) buffer | Copies n bytes from kernel recv buffer â†’ user |
+| `send()` | O(n) copy | O(n) buffer | Copies n bytes from user → kernel send buffer |
+| `recv()` | O(n) copy | O(n) buffer | Copies n bytes from kernel recv buffer → user |
 | `close()` | O(1) | O(1) | FIN sent; socket enters TIME_WAIT |
 
 **Why O(n) for send/recv?** Data must be copied between user space and kernel space. This copy is the dominant cost for large transfers. Zero-copy techniques (sendfile, splice, msg_zerocopy) bypass this for file transfers.
 
-### A&D Table â†’ TCP Sockets
+### A&D Table → TCP Sockets
 
 
 | Advantage | Disadvantage |
@@ -580,7 +580,7 @@ if __name__ == '__main__':
 | Connection-oriented state tracking | TIME_WAIT state ties up ports |
 | Kernel buffering handles bursts | Lower throughput than UDP for lossy links |
 
-### Edge Cases â†’ TCP
+### Edge Cases → TCP
 
 
 | Edge Case | Cause | Symptom | Solution |
@@ -764,7 +764,7 @@ Step 3: recvfrom(sock, buf, len, 0, &from_addr, &addrlen)
 Step 4: close(sock)
 ```
 
-### Pseudocode â†’ UDP Echo Server
+### Pseudocode → UDP Echo Server
 
 
 ```
@@ -778,7 +778,7 @@ function udp_echo_server(port):
             sendto(fd, buf, n, 0, &client_addr, addrlen)
 ```
 
-### Pseudocode â†’ UDP Echo Client
+### Pseudocode → UDP Echo Client
 
 
 ```
@@ -790,21 +790,21 @@ function udp_echo_client(host, port, message):
     close(fd)
 ```
 
-### Dry Run â†’ UDP Datagram Flow
+### Dry Run → UDP Datagram Flow
 
 
-| Step | Client | Packet (src:port â†’ dst:port) | Server |
+| Step | Client | Packet (src:port → dst:port) | Server |
 |------|--------|-----|--------|
-| 0 | `socket(AF_INET, SOCK_DGRAM)` | â†’ | `socket()`, `bind(0.0.0.0:8080)` |
-| 1 | `sendto("ping", 127.0.0.1:8080)` | **UDP** 127.0.0.1:54321 â†’ 127.0.0.1:8080 | kernel delivers to bound socket |
-| 2 | â†’ | payload: "ping" | `recvfrom()` returns ("ping", (127.0.0.1, 54321)) |
-| 3 | â†’ | **UDP** 127.0.0.1:8080 â†’ 127.0.0.1:54321 | `sendto("ping")` |
-| 4 | `recvfrom()` returns "ping" | payload: "ping" | â†’ |
-| 5 | Both close | â†’ | â†’ |
+| 0 | `socket(AF_INET, SOCK_DGRAM)` | → | `socket()`, `bind(0.0.0.0:8080)` |
+| 1 | `sendto("ping", 127.0.0.1:8080)` | **UDP** 127.0.0.1:54321 → 127.0.0.1:8080 | kernel delivers to bound socket |
+| 2 | → | payload: "ping" | `recvfrom()` returns ("ping", (127.0.0.1, 54321)) |
+| 3 | → | **UDP** 127.0.0.1:8080 → 127.0.0.1:54321 | `sendto("ping")` |
+| 4 | `recvfrom()` returns "ping" | payload: "ping" | → |
+| 5 | Both close | → | → |
 
 **Note**: No handshake. The server doesn't know a client exists until the first datagram arrives.
 
-### C++ Implementation â†’ UDP Echo Server
+### C++ Implementation → UDP Echo Server
 
 
 ```cpp
@@ -864,7 +864,7 @@ int main() {
 }
 ```
 
-### C++ Implementation â†’ UDP Echo Client
+### C++ Implementation → UDP Echo Client
 
 
 ```cpp
@@ -915,7 +915,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-### Python Implementation â†’ UDP Echo Server
+### Python Implementation → UDP Echo Server
 
 
 ```python
@@ -948,7 +948,7 @@ if __name__ == '__main__':
     udp_echo_server()
 ```
 
-### Python Implementation â†’ UDP Echo Client
+### Python Implementation → UDP Echo Client
 
 
 ```python
@@ -977,7 +977,7 @@ if __name__ == '__main__':
     udp_echo_client(msg)
 ```
 
-### Complexity Analysis â†’ UDP
+### Complexity Analysis → UDP
 
 
 | Operation | Time | Space | Why? |
@@ -988,21 +988,21 @@ if __name__ == '__main__':
 | `recvfrom()` | O(n) copy | O(n) buffer | Dequeue datagram; copy to user |
 | `close()` | O(1) | O(1) | Drop socket, no FIN exchange |
 
-**Why UDP is faster than TCP:** No connection state â†’ no handshake, no congestion control, no sequence numbers, no retransmission timers. `sendto()` is typically 2-5x faster than TCP `send()` in microbenchmarks.
+**Why UDP is faster than TCP:** No connection state → no handshake, no congestion control, no sequence numbers, no retransmission timers. `sendto()` is typically 2-5x faster than TCP `send()` in microbenchmarks.
 
-### A&D Table â†’ UDP Sockets
+### A&D Table → UDP Sockets
 
 
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Zero connection overhead | No delivery guarantee |
 | No head-of-line blocking | No ordering guarantee |
-| Supports broadcast and multicast | No congestion control â†’ can flood network |
+| Supports broadcast and multicast | No congestion control → can flood network |
 | Lower latency (no handshake) | No built-in flow control |
 | Smaller kernel memory footprint | Datagram boundaries: max 65507 bytes payload |
 | Ideal for real-time apps (VoIP, gaming) | Application must handle loss, reordering |
 
-### Edge Cases â†’ UDP
+### Edge Cases → UDP
 
 
 | Edge Case | Cause | Symptom | Solution |
@@ -1037,7 +1037,7 @@ class UDPSocket {
   getLog(): string[] { return this.log; }
 
   create(): number {
-    this.l(`[socket()] fd=${this.fd} created (AF_INET, SOCK_DGRAM, 0) â€” connectionless`);
+    this.l(`[socket()] fd=${this.fd} created (AF_INET, SOCK_DGRAM, 0) — connectionless`);
     return this.fd;
   }
 
@@ -1079,7 +1079,7 @@ class UDPSocket {
   }
 
   close(): void {
-    this.l(`[close()] fd=${this.fd} closed â€” no FIN exchange (connectionless)`);
+    this.l(`[close()] fd=${this.fd} closed — no FIN exchange (connectionless)`);
   }
 
   getBoundPort(): number { return this.localPort; }
@@ -1109,9 +1109,9 @@ server.close();
 client.close();
 /*
 Output:
-[socket()] fd=... created (AF_INET, SOCK_DGRAM, 0) â€” connectionless
+[socket()] fd=... created (AF_INET, SOCK_DGRAM, 0) — connectionless
 [bind()] fd=... bound to 0.0.0.0:8080
-[socket()] fd=... created (AF_INET, SOCK_DGRAM, 0) â€” connectionless
+[socket()] fd=... created (AF_INET, SOCK_DGRAM, 0) — connectionless
 [sendto()] fd=... 17B -> 127.0.0.1:8080: "Hello UDP Server!"
 [incoming] fd=... queued 17B from 127.0.0.1:...
 [recvfrom()] fd=... 17B from 127.0.0.1:...
@@ -1157,7 +1157,7 @@ ioctl(sock_fd, FIONBIO, &on);
 int fd = socket(AF_INET, SOCK_STREAM | SOCK_NONBLOCK, 0);
 ```
 
-### C++ â†’ Non-blocking TCP Server (Single Client, Polling)
+### C++ → Non-blocking TCP Server (Single Client, Polling)
 
 
 ```cpp
@@ -1193,7 +1193,7 @@ int main() {
     std::cout << "Non-blocking server on port " << PORT << std::endl;
 
     while (true) {
-        // Non-blocking accept â†’ returns -1/EAGAIN if no client
+        // Non-blocking accept → returns -1/EAGAIN if no client
         sockaddr_in client_addr{};
         socklen_t addrlen = sizeof(client_addr);
         int client_fd = accept(server_fd, (struct sockaddr*)&client_addr, &addrlen);
@@ -1206,14 +1206,14 @@ int main() {
 
         // Poll each client (simplified: only one)
         // In production use epoll/select instead of busy-waiting
-        usleep(1000);  // Avoid busy-wait â†’ 1ms sleep
+        usleep(1000);  // Avoid busy-wait → 1ms sleep
     }
     close(server_fd);
     return 0;
 }
 ```
 
-### Python â†’ Non-blocking Socket Example
+### Python → Non-blocking Socket Example
 
 
 ```python
@@ -1255,17 +1255,17 @@ while True:
             clients.remove(c)
 ```
 
-### Dry Run â†’ Blocking vs Non-blocking recv
+### Dry Run → Blocking vs Non-blocking recv
 
 
 #### Blocking recv Trace
 
 | Time | Thread Action | Kernel Action |
 |------|--------------|---------------|
-| t=0 | `recv(fd, buf, 1024, 0)` | No data in recv buffer â†’ **block thread** |
+| t=0 | `recv(fd, buf, 1024, 0)` | No data in recv buffer → **block thread** |
 | t=5 | (blocked) | Packet arrives; kernel copies to recv buffer |
 | t=5 | (woken up) | Copies data to user buf; returns n=100 |
-| t=5+ÃŽÂµ | User processes data | â†’ |
+| t=5+ε | User processes data | → |
 
 **Total wall time = 5s. Thread was parked for 5s.**
 
@@ -1273,15 +1273,15 @@ while True:
 
 | Time | Thread Action | Kernel Action |
 |------|--------------|---------------|
-| t=0 | `recv(fd, buf, 1024, 0)` | No data â†’ returns -1, EAGAIN |
-| t=0+1Ã‚Âµs | Do other work | â†’ |
-| t=500ms | `recv(fd, buf, 1024, 0)` | Still no data â†’ returns -1, EAGAIN |
-| t=1.0s | `recv(fd, buf, 1024, 0)` | Data arrived â†’ returns n=100 |
-| t=1.001s | Process data | â†’ |
+| t=0 | `recv(fd, buf, 1024, 0)` | No data → returns -1, EAGAIN |
+| t=0+1µs | Do other work | → |
+| t=500ms | `recv(fd, buf, 1024, 0)` | Still no data → returns -1, EAGAIN |
+| t=1.0s | `recv(fd, buf, 1024, 0)` | Data arrived → returns n=100 |
+| t=1.001s | Process data | → |
 
 **Wall time = 1.001s, but thread was productive for ~1s doing other work.**
 
-### Complexity Analysis â†’ Blocking vs Non-blocking
+### Complexity Analysis → Blocking vs Non-blocking
 
 
 | Aspect | Blocking | Non-blocking |
@@ -1294,7 +1294,7 @@ while True:
 
 **Why use non-blocking?** Blocking requires O(n) threads for n concurrent connections. Non-blocking + I/O multiplexing requires O(1) threads. At 10,000 connections, non-blocking is the only practical approach (C10K).
 
-### Edge Cases â†’ Blocking/Non-blocking
+### Edge Cases → Blocking/Non-blocking
 
 
 | Edge Case | Description | Handling |
@@ -1461,17 +1461,17 @@ Client sent 22 bytes
 
 ## 13.5 I/O Multiplexing: select, poll, epoll, kqueue
 
-### Real-World Analogy: The MaÃƒÂ®tre d'
+### Real-World Analogy: The Maître d'
 
 
-You're a maÃƒÂ®tre d' at a busy restaurant with 50 tables. Each table has a call button.
+You're a maître d' at a busy restaurant with 50 tables. Each table has a call button.
 
 - **No multiplexing (blocking)**: You stand at one table until they finish. The other 49 tables starve.
 - **Busy polling (non-blocking)**: You walk to each table every 2 seconds asking "Ready to order?" Waste of steps.
 - **select()**: You stand in the middle and look at ALL 50 tables' call buttons at once. Your vision is limited to 50 buttons max.
 - **poll()**: Same as select, but you can look at any number of tables. Still checking all 50 every time.
 - **epoll()**: The tables have a centralized display board that lights up only the tables that need you. You glance at the board and go directly to those tables.
-- **epoll (edge-triggered)**: The board shows a table once â†’ when it first calls. After you serve it, the light goes out until the table calls again.
+- **epoll (edge-triggered)**: The board shows a table once → when it first calls. After you serve it, the light goes out until the table calls again.
 
 ### 13.5.1 select()
 
@@ -1497,10 +1497,10 @@ You're a maÃƒÂ®tre d' at a busy restaurant with 50 tables. Each table has a 
 
 ```
 function select_echo_server(port):
-    server_fd = socket() â†’ bind() â†’ listen()
+    server_fd = socket() → bind() → listen()
     clients = []
     while true:
-        read_fds = {server_fd} Ã¢Ë†Âª clients
+        read_fds = {server_fd} ∪ clients
         nready = select(max_fd+1, &read_fds, NULL, NULL, NULL)
         if FD_ISSET(server_fd, read_fds):
             client_fd = accept(server_fd)
@@ -1512,18 +1512,18 @@ function select_echo_server(port):
                 else: send(client_fd, buf, n, 0)
 ```
 
-#### Dry Run â†’ select() Event Loop
+#### Dry Run → select() Event Loop
 
 | Iteration | FD Set | select Returns | Ready FDs | Action |
 |-----------|--------|---------------|-----------|--------|
-| 1 | {3 (server)} | 1 | {3} | accept â†’ client fd=4 |
-| 2 | {3, 4} | 2 | {3, 4} | accept â†’ fd=5, recv 4 â†’ echo |
-| 3 | {3, 4, 5} | 1 | {4} | recv 4 â†’ echo "hello" |
-| 4 | {3, 4, 5} | 1 | {5} | recv 5 returns 0 â†’ close 5 |
-| 5 | {3, 4} | 1 | {4} | recv 4 returns 0 â†’ close 4 |
-| 6 | {3} | 1 | {3} | accept â†’ fd=6 |
+| 1 | {3 (server)} | 1 | {3} | accept → client fd=4 |
+| 2 | {3, 4} | 2 | {3, 4} | accept → fd=5, recv 4 → echo |
+| 3 | {3, 4, 5} | 1 | {4} | recv 4 → echo "hello" |
+| 4 | {3, 4, 5} | 1 | {5} | recv 5 returns 0 → close 5 |
+| 5 | {3, 4} | 1 | {4} | recv 4 returns 0 → close 4 |
+| 6 | {3} | 1 | {3} | accept → fd=6 |
 
-#### C++ â†’ select-based Echo Server
+#### C++ → select-based Echo Server
 
 ```cpp
 #include <iostream>
@@ -1615,7 +1615,7 @@ int main() {
 }
 ```
 
-#### Python â†’ select-based Chat Server
+#### Python → select-based Chat Server
 
 ```python
 import socket
@@ -1699,7 +1699,7 @@ if __name__ == '__main__':
 
 #### Key Differences from select()
 
-- No FD_SETSIZE limit â†’ uses linked-list array.
+- No FD_SETSIZE limit → uses linked-list array.
 - Events and revents are separate fields (no in-place modification).
 - Better for sparse descriptor sets.
 - Still O(n) scanning of the entire array.
@@ -1708,7 +1708,7 @@ if __name__ == '__main__':
 
 ```
 function poll_echo_server(port):
-    server_fd = socket() â†’ bind() â†’ listen()
+    server_fd = socket() → bind() → listen()
     fds = [{fd: server_fd, events: POLLIN}]
     while true:
         nready = poll(fds, nfds, -1)
@@ -1723,17 +1723,17 @@ function poll_echo_server(port):
                     else: send(fds[i].fd, buf, n, 0)
 ```
 
-#### Dry Run â†’ poll() Event Loop
+#### Dry Run → poll() Event Loop
 
 | Iteration | pollfds array size | poll Returns | revents | Action |
 |-----------|-------------------|-------------|---------|--------|
-| 1 | 1 (server) | 1 | server: POLLIN | accept â†’ fd=4, add to array |
-| 2 | 2 (server, fd=4) | 2 | both POLLIN | accept â†’ fd=5, recv 4 â†’ echo |
-| 3 | 3 (server, 4, 5) | 1 | fd=5: POLLIN | recv 5 â†’ echo |
+| 1 | 1 (server) | 1 | server: POLLIN | accept → fd=4, add to array |
+| 2 | 2 (server, fd=4) | 2 | both POLLIN | accept → fd=5, recv 4 → echo |
+| 3 | 3 (server, 4, 5) | 1 | fd=5: POLLIN | recv 5 → echo |
 | 4 | 3 | 1 | fd=5: POLLHUP | close 5, remove from array |
-| 5 | 2 (server, 4) | 1 | fd=4: POLLIN | recv 4 â†’ echo |
+| 5 | 2 (server, 4) | 1 | fd=4: POLLIN | recv 4 → echo |
 
-#### C++ â†’ poll-based Echo Server
+#### C++ → poll-based Echo Server
 
 ```cpp
 #include <iostream>
@@ -1774,7 +1774,7 @@ int main() {
             break;
         }
 
-        // Process ready descriptors â†’ careful about iterating while modifying
+        // Process ready descriptors → careful about iterating while modifying
         for (size_t i = 0; i < fds.size() && nready > 0; i++) {
             if (!(fds[i].revents & POLLIN)) continue;
             nready--;
@@ -1813,12 +1813,12 @@ int main() {
 
 #### Numbered Steps
 
-1. `epoll_create1(0)` â†’ Create epoll instance, returns epoll_fd.
-2. `struct epoll_event ev` â†’ Set `ev.events` (EPOLLIN, EPOLLOUT, EPOLLET, etc.) and `ev.data.fd` or `ev.data.ptr`.
-3. `epoll_ctl(epoll_fd, EPOLL_CTL_ADD, target_fd, &ev)` â†’ Register interest.
-4. `epoll_wait(epoll_fd, events, maxevents, timeout)` â†’ Wait for events.
+1. `epoll_create1(0)` → Create epoll instance, returns epoll_fd.
+2. `struct epoll_event ev` → Set `ev.events` (EPOLLIN, EPOLLOUT, EPOLLET, etc.) and `ev.data.fd` or `ev.data.ptr`.
+3. `epoll_ctl(epoll_fd, EPOLL_CTL_ADD, target_fd, &ev)` → Register interest.
+4. `epoll_wait(epoll_fd, events, maxevents, timeout)` → Wait for events.
 5. Iterate returned events array (only ready descriptors).
-6. Handle each: new connection â†’ `accept()` + `epoll_ctl(ADD)` to add client; data â†’ `recv()`.
+6. Handle each: new connection → `accept()` + `epoll_ctl(ADD)` to add client; data → `recv()`.
 7. For edge-triggered: loop on recv until EAGAIN.
 
 #### Level-Triggered vs Edge-Triggered
@@ -1832,7 +1832,7 @@ int main() {
 
 ```
 function epoll_echo_server(port):
-    server_fd = socket() â†’ bind() â†’ listen()
+    server_fd = socket() → bind() → listen()
     epoll_fd = epoll_create1(0)
     ev = {events: EPOLLIN, data: {fd: server_fd}}
     epoll_ctl(epoll_fd, EPOLL_CTL_ADD, server_fd, &ev)
@@ -1852,18 +1852,18 @@ function epoll_echo_server(port):
                     close(fd)
 ```
 
-#### Dry Run â†’ epoll Event Loop
+#### Dry Run → epoll Event Loop
 
 | Step | epoll_wait Returns | Events | Action |
 |------|-------------------|--------|--------|
-| 1 | 1 | fd=3 (server) | accept â†’ fd=4, epoll_ctl ADD 4 (EPOLLIN\|EPOLLET) |
+| 1 | 1 | fd=3 (server) | accept → fd=4, epoll_ctl ADD 4 (EPOLLIN\|EPOLLET) |
 | 2 | 1 | fd=4 (client data) | recv "hello", echo back |
-| 3 | 2 | fd=3 (new), fd=4 (more data) | accept â†’ fd=5, recv fd=4 "world", echo |
-| 4 | 1 | fd=5 (data) | recv â†’ echo |
+| 3 | 2 | fd=3 (new), fd=4 (more data) | accept → fd=5, recv fd=4 "world", echo |
+| 4 | 1 | fd=5 (data) | recv → echo |
 | 5 | 0 | (timeout after 5s) | Do maintenance tasks |
 | 6 | 1 | fd=4 (POLLHUP) | close fd=4, epoll_ctl DEL |
 
-#### C++ â†’ epoll Echo Server (Edge-Triggered)
+#### C++ → epoll Echo Server (Edge-Triggered)
 
 ```cpp
 #include <iostream>
@@ -1949,7 +1949,7 @@ int main() {
                             ssize_t s = send(client_fd, buf + sent, n - sent, 0);
                             if (s < 0) {
                                 if (errno == EAGAIN) {
-                                    // Write buffer full â†’ in production, buffer remaining
+                                    // Write buffer full → in production, buffer remaining
                                     break;
                                 }
                                 closed = true;
@@ -1983,7 +1983,7 @@ int main() {
 }
 ```
 
-#### Python â†’ epoll Echo Server
+#### Python → epoll Echo Server
 
 ```python
 import socket
@@ -2044,7 +2044,7 @@ def epoll_echo_server():
                             e.errno == errno.EAGAIN or e.errno == errno.EWOULDBLOCK
                         )
                         if is_eagain:
-                            # All data read â†’ echo it back
+                            # All data read → echo it back
                             if buffers[fd]:
                                 try:
                                     conn.sendall(buffers[fd])
@@ -2093,12 +2093,12 @@ while (1) {
 ```
 
 kqueue vs epoll differences:
-- kqueue can monitor **process, signal, filesystem events, and timers** â†’ not just sockets.
+- kqueue can monitor **process, signal, filesystem events, and timers** → not just sockets.
 - kqueue uses a change list + event list architecture.
 - kevent supports EV_ONESHOT (one-shot notification, similar to EPOLLONESHOT).
 - macOS kqueue has limitations with certain file types (regular files).
 
-### Complexity Analysis â†’ I/O Multiplexing
+### Complexity Analysis → I/O Multiplexing
 
 
 | API | Registration | Event Wait | Per-Event Delivery | Why? |
@@ -2111,9 +2111,9 @@ kqueue vs epoll differences:
 **Why epoll is O(1) for event wait:**
 - Internally, epoll uses a **red-black tree** for registered descriptors and a **ready list** (doubly linked list) for triggered events.
 - When data arrives, the network driver calls the socket's callback, which adds the socket to epoll's ready list and wakes the waiting thread.
-- `epoll_wait()` simply copies the ready list â†’ no scanning.
+- `epoll_wait()` simply copies the ready list → no scanning.
 
-### select vs poll vs epoll vs kqueue â†’ Comparison
+### select vs poll vs epoll vs kqueue → Comparison
 
 
 | Property | select | poll | epoll | kqueue |
@@ -2128,7 +2128,7 @@ kqueue vs epoll differences:
 | **Performance @ 10k** | Degrades severely | Degrades severely | Linear scaling | Linear scaling |
 | **Kernel data structure** | Bitmap array | Linked list | RB-tree + ready list | Hash table + filter objects |
 
-### A&D Table â†’ I/O Multiplexing
+### A&D Table → I/O Multiplexing
 
 
 | API | Advantage | Disadvantage |
@@ -2138,7 +2138,7 @@ kqueue vs epoll differences:
 | **epoll** | O(1) ready iteration, ET/LT, millions FDs | Linux-only, slightly more complex API |
 | **kqueue** | O(1), monitors non-socket events (FS, signals) | BSD/macOS only, complex API |
 
-### Edge Cases â†’ I/O Multiplexing
+### Edge Cases → I/O Multiplexing
 
 
 | Edge Case | Description | Solution |
@@ -2162,9 +2162,9 @@ kqueue vs epoll differences:
 Unix domain sockets (AF_UNIX) allow IPC between processes on the **same host**. They use the **file system** as the address namespace instead of IP:port.
 
 ```text
-Process A  â†â†’  [ /tmp/app.sock ]  â†â†’  Process B
+Process A  ←→  [ /tmp/app.sock ]  ←→  Process B
           stream / datagram              |
-                                    Same kernel â†’ no network stack
+                                    Same kernel → no network stack
 ```
 
 ### Types
@@ -2182,7 +2182,7 @@ Process A  â†â†’  [ /tmp/app.sock ]  â†â†’  Process B
 2. **More secure**: Access controlled by file permissions.
 3. **Lower overhead**: No 3-way handshake, no congestion control.
 
-### C++ â†’ Unix Domain Socket Echo Server
+### C++ → Unix Domain Socket Echo Server
 
 
 ```cpp
@@ -2236,7 +2236,7 @@ int main() {
 }
 ```
 
-### Python â†’ Unix Domain Socket Client
+### Python → Unix Domain Socket Client
 
 
 ```python
@@ -2265,21 +2265,21 @@ if __name__ == '__main__':
     unix_client("Hello from Python over Unix socket!")
 ```
 
-### Dry Run â†’ Unix Domain Socket
+### Dry Run → Unix Domain Socket
 
 
 | Step | Action | Kernel |
 |------|--------|--------|
 | 1 | `socket(AF_UNIX, SOCK_STREAM, 0)` | Creates socket inode (no NIC needed) |
 | 2 | `bind("/tmp/echo.sock")` | Creates filesystem entry |
-| 3 | `listen()` â†’ `accept()` | Blocks until peer connects |
+| 3 | `listen()` → `accept()` | Blocks until peer connects |
 | 4 | Client `connect("/tmp/echo.sock")` | Same kernel: no routing, no headers |
 | 5 | Data transfer | Kernel memcpy between process buffers |
 | 6 | `close()` | Removes socket inode |
 
-**Latency benchmark**: Unix domain sockets typically complete in 5-15Ã‚Âµs per round-trip vs 30-60Ã‚Âµs for TCP loopback.
+**Latency benchmark**: Unix domain sockets typically complete in 5-15µs per round-trip vs 30-60µs for TCP loopback.
 
-### Edge Cases â†’ Unix Domain Sockets
+### Edge Cases → Unix Domain Sockets
 
 
 | Edge Case | Cause | Solution |
@@ -2310,7 +2310,7 @@ int fd = socket(AF_INET, SOCK_RAW, IPPROTO_TCP);
 int fd = socket(AF_INET, SOCK_RAW, 255);  // Custom L4 protocol
 ```
 
-### Numbered Steps â†’ Raw Socket (Ping/ICMP)
+### Numbered Steps → Raw Socket (Ping/ICMP)
 
 
 1. Create raw socket with `IPPROTO_ICMP`.
@@ -2330,7 +2330,7 @@ int fd = socket(AF_INET, SOCK_RAW, 255);  // Custom L4 protocol
 | **Sniffing** | Raw sockets can capture all IP traffic on the system |
 | **Resource abuse** | Can craft packets to amplify DDoS |
 
-### C++ â†’ Raw ICMP Ping (Simplified)
+### C++ → Raw ICMP Ping (Simplified)
 
 
 ```cpp
@@ -2392,7 +2392,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-### A&D Table â†’ Raw Sockets
+### A&D Table → Raw Sockets
 
 
 | Advantage | Disadvantage |
@@ -2486,7 +2486,7 @@ l.l_linger = 10; // Wait 10 seconds for pending data to be sent
 setsockopt(fd, SOL_SOCKET, SO_LINGER, &l, sizeof(l));
 ```
 
-### C++ â†’ Socket Options Utility
+### C++ → Socket Options Utility
 
 
 ```cpp
@@ -2537,14 +2537,14 @@ public:
 };
 ```
 
-### Edge Cases â†’ Socket Options
+### Edge Cases → Socket Options
 
 
 | Edge Case | Description |
 |-----------|-------------|
 | **SO_REUSEADDR on client** | Usually not needed; may cause unexpected behavior |
-| **SO_REUSEPORT security** | Multiple processes binding same port â†’ ensure trust boundary |
-| **TCP_NODELAY + small writes** | Can increase overhead (more packets sent) â†’ use Nagle for bulk |
+| **SO_REUSEPORT security** | Multiple processes binding same port → ensure trust boundary |
+| **TCP_NODELAY + small writes** | Can increase overhead (more packets sent) → use Nagle for bulk |
 | **SO_RCVBUF doubling** | Kernel internally doubles the requested value (for overhead) |
 | **SO_SNDBUF too large** | Wastes memory; no benefit beyond BDP (Bandwidth-Delay Product) |
 | **KEEPALIVE not guaranteed** | Keepalive probes can be lost; it's a "dead connection" hint, not guarantee |
@@ -2612,7 +2612,7 @@ public:
 | **Platform** | POSIX (all) | POSIX (all) | Linux (2.5.44+) | BSD, macOS |
 | **Complexity** | Simple | Simple | Moderate | Complex |
 | **Max FDs** | 1024 (hard limit) | No limit (soft) | No limit | No limit |
-| **Scan cost** | O(n) â†’ check all FDs | O(n) â†’ check all FDs | O(k) â†’ only ready events | O(k) â†’ only ready events |
+| **Scan cost** | O(n) → check all FDs | O(n) → check all FDs | O(k) → only ready events | O(k) → only ready events |
 | **Re-init cost** | High (rebuild bitmask) | Medium (rebuild array) | None (registered once) | None (registered once) |
 | **Edge-triggered** | No | No | Yes (EPOLLET) | Yes (EV_CLEAR) |
 | **Non-socket events** | No | No | signalfd, eventfd, timerfd | Files, signals, processes, timers |
@@ -2622,19 +2622,19 @@ public:
 
 ## 13.10 Interview Corner
 
-### Q1: epoll vs select â†’ what's the fundamental difference?
+### Q1: epoll vs select → what's the fundamental difference?
 
 
-**Answer**: select uses O(n) bitmap scanning â†’ every call iterates all n file descriptors to find which are ready. epoll uses O(1) event notification â†’ descriptors are registered once, and when events occur, they're added to an internal ready list. epoll_wait copies only k ready events (k &lt;< n).
+**Answer**: select uses O(n) bitmap scanning → every call iterates all n file descriptors to find which are ready. epoll uses O(1) event notification → descriptors are registered once, and when events occur, they're added to an internal ready list. epoll_wait copies only k ready events (k &lt;< n).
 
 ```
-select:  register + wait + scan(n)   â†’ O(n) per iteration
-epoll:   register once                â†’ O(1) per iteration
-         wait + copy(k)               â†’ O(k) per iteration
+select:  register + wait + scan(n)   → O(n) per iteration
+epoll:   register once                → O(1) per iteration
+         wait + copy(k)               → O(k) per iteration
 
 At n=10,000:
-  select scans 10,000 bits â†’ 10,000 checks
-  epoll checks 10 ready events â†’ 10 checks
+  select scans 10,000 bits → 10,000 checks
+  epoll checks 10 ready events → 10 checks
 
 Speedup: ~1000x
 ```
@@ -2644,15 +2644,15 @@ Speedup: ~1000x
 
 **Answer**: The C10K problem (10,000 concurrent clients) was identified by Dan Kegel in 1999. The issue is that traditional thread-per-connection or process-per-connection servers can't handle 10,000 clients because:
 
-- Each thread consumes ~8MB of stack â†’ 10,000 threads = 80GB RAM.
+- Each thread consumes ~8MB of stack → 10,000 threads = 80GB RAM.
 - Context switching 10,000 threads causes massive overhead.
 - select() is limited to 1024 FDs.
 
 **Solution**: Event-driven architecture with epoll/kqueue + non-blocking I/O + small state per connection (~1KB). Modern servers (Nginx, HAProxy, Redis) handle 100k-1M concurrent connections.
 
 ```
-Thread-per-connection:  10,000 clients Ãƒâ€” 8MB stack = 80GB  Ã¢Å“â€”
-Event-driven epoll:     10,000 clients Ãƒâ€” 1KB state = 10MB  Ã¢Å“â€œ
+Thread-per-connection:  10,000 clients × 8MB stack = 80GB  ✗
+Event-driven epoll:     10,000 clients × 1KB state = 10MB  ✓
 ```
 
 ### Q3: TIME_WAIT and SO_REUSEADDR
@@ -2660,7 +2660,7 @@ Event-driven epoll:     10,000 clients Ãƒâ€” 1KB state = 10MB  Ã¢Å“�
 
 **Why does TIME_WAIT exist?**
 
-TIME_WAIT (2 * MSL Ã¢â€°Ë† 60 seconds) prevents two problems:
+TIME_WAIT (2 * MSL ≈ 60 seconds) prevents two problems:
 1. **Delayed segments**: A packet from a closed connection arriving at a new connection with the same IP:port.
 2. **Reliable FIN**: The final ACK might be lost; the server retransmits FIN, and TIME_WAIT ensures the client can ACK again.
 
@@ -2675,7 +2675,7 @@ setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
 bind(server_fd, ...);  // Won't fail with EADDRINUSE
 ```
 
-**Caution**: SO_REUSEADDR on a **client** socket can cause unexpected behavior â†’ multiple clients may bind the same ephemeral port.
+**Caution**: SO_REUSEADDR on a **client** socket can cause unexpected behavior → multiple clients may bind the same ephemeral port.
 
 ### Q4: What is Nagle's algorithm?
 
@@ -2687,11 +2687,11 @@ bind(server_fd, ...);  // Won't fail with EADDRINUSE
 
 ```
 Without Nagle (TCP_NODELAY = 1):
-  send("H") â†’ send("e") â†’ send("l") â†’ send("l") â†’ send("o")
+  send("H") → send("e") → send("l") → send("l") → send("o")
   5 packets, 5 headers, huge overhead
 
 With Nagle (default):
-  send("H") â†’ [wait for ACK] â†’ send("ello")
+  send("H") → [wait for ACK] → send("ello")
   2 packets, much more efficient
 ```
 
@@ -2735,13 +2735,13 @@ if (errno == EAGAIN || errno == EWOULDBLOCK) {
 
 **Answer**: epoll uses two key data structures:
 
-1. **Red-Black Tree** â†’ Stores all registered file descriptors (for O(log n) add/remove/modify).
-2. **Ready List** (doubly linked list) â†’ Contains only descriptors with pending events.
+1. **Red-Black Tree** → Stores all registered file descriptors (for O(log n) add/remove/modify).
+2. **Ready List** (doubly linked list) → Contains only descriptors with pending events.
 
 ```
-epoll_ctl(ADD, fd) â†’ Insert into RB-tree
-Data arrives on fd â†’ Callback: add fd to ready list, wake epoll_wait
-epoll_wait()       â†’ Copy ready list to user space, return count
+epoll_ctl(ADD, fd) → Insert into RB-tree
+Data arrives on fd → Callback: add fd to ready list, wake epoll_wait
+epoll_wait()       → Copy ready list to user space, return count
 ```
 
 The callback mechanism makes it O(1): only descriptors with events are examined.
@@ -2757,7 +2757,7 @@ Nginx is the premier example of event-driven architecture:
 
 - Uses **epoll** on Linux, **kqueue** on BSD/macOS, **event ports** on Solaris.
 - Each worker process runs a **single-threaded event loop** handling thousands of connections.
-- No threads per connection â†’ state machines for each HTTP request.
+- No threads per connection → state machines for each HTTP request.
 - Achieves **500k+ concurrent connections** on a single server.
 
 ```
@@ -2783,16 +2783,16 @@ Node.js uses **libuv**, a cross-platform async I/O library:
 
 ```
 Node.js Event Loop:
-                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                   â”‚   timers        â”‚ â† setTimeout, setInterval
-                   â”‚   pending cb    â”‚ â† I/O callbacks
-                   â”‚   idle/prepare  â”‚ â† internal
-            â”€â”€â”€â”€â”€â”€ â”‚   poll          â”‚ â† epoll_wait / kqueue / IOCP
-           â”‚       â”‚   check         â”‚ â† setImmediate
-           â”‚       â”‚   close cb      â”‚ â† close events
-           â”‚       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-           â”‚               â”‚
-           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ (loop forever)
+                   ┌─────────────────┐
+                   │   timers        │ ← setTimeout, setInterval
+                   │   pending cb    │ ← I/O callbacks
+                   │   idle/prepare  │ ← internal
+            ────── │   poll          │ ← epoll_wait / kqueue / IOCP
+           │       │   check         │ ← setImmediate
+           │       │   close cb      │ ← close events
+           │       └─────────────────┘
+           │               │
+           └───────────────┘ (loop forever)
 ```
 
 ### HAProxy (epoll, kqueue, splice)
@@ -2807,8 +2807,8 @@ HAProxy is a high-performance TCP/HTTP proxy:
 
 ```
 HAProxy Data Path:
-Client â†’ epoll_wait â†’ recv(client) â†’ splice â†’ send(server)
-Server â†’ epoll_wait â†’ recv(server) â†’ splice â†’ send(client)
+Client → epoll_wait → recv(client) → splice → send(server)
+Server → epoll_wait → recv(server) → splice → send(client)
 
 Zero-copy: data never touches user space on the proxy.
 ```
@@ -2818,7 +2818,7 @@ Zero-copy: data never touches user space on the proxy.
 
 Redis uses a **single-threaded event loop** with epoll/kqueue:
 
-- All commands execute on one thread â†’ no locking overhead.
+- All commands execute on one thread → no locking overhead.
 - Non-blocking I/O for all network operations.
 - Event loop handles thousands of client connections.
 - 100k+ QPS on a single core.
@@ -2826,13 +2826,13 @@ Redis uses a **single-threaded event loop** with epoll/kqueue:
 ```
 Redis Event Loop:
 while (1) {
-    aeApiPoll(tvlp);        // epoll_wait â†’ collect ready events
+    aeApiPoll(tvlp);        // epoll_wait → collect ready events
     processFileEvents();     // Read/write client data
     processTimeEvents();     // Timers: expire keys, BLPOP timeout
 }
 ```
 
-### Apache vs Nginx â†’ Architecture Comparison
+### Apache vs Nginx → Architecture Comparison
 
 
 | Aspect | Apache (prefork) | Apache (worker) | Nginx |
@@ -2844,7 +2844,7 @@ while (1) {
 | **Modules** | Loaded per process | Loaded per thread | Loaded per worker |
 | **Keep-alive** | One process held | One thread held | One state (~1KB) held |
 
-### libevent / libev / libuv â†’ Library Comparison
+### libevent / libev / libuv → Library Comparison
 
 
 | Library | Platform | Mechanism | Used By |
@@ -2874,16 +2874,16 @@ while (1) {
 
 ```
 TCP Server:
-CLOSED â†’ socket() â†’ bind() â†’ listen() â†’ LISTEN â†’ accept() â†’ ESTABLISHED
-                                                              â†“
+CLOSED → socket() → bind() → listen() → LISTEN → accept() → ESTABLISHED
+                                                              ↓
                                                         recv/send loop
-                                                              â†“
-                                                        close() â†’ TIME_WAIT â†’ CLOSED
+                                                              ↓
+                                                        close() → TIME_WAIT → CLOSED
 
 TCP Client:
-CLOSED â†’ socket() â†’ connect() â†’ SYN_SENT â†’ ESTABLISHED â†’ recv/send loop â†’ FIN_WAIT
-                                                                           â†“
-                                                                     TIME_WAIT â†’ CLOSED
+CLOSED → socket() → connect() → SYN_SENT → ESTABLISHED → recv/send loop → FIN_WAIT
+                                                                           ↓
+                                                                     TIME_WAIT → CLOSED
 ```
 
 ---
@@ -2898,10 +2898,10 @@ graph LR
     TCP_BIND["bind(ip, port)"]
     TCP_LISTEN["listen(backlog)"]
     TCP_CONN["connect(server)"]
-    TCP_ACCEPT["accept() â†’ new fd"]
+    TCP_ACCEPT["accept() → new fd"]
     TCP_SEND["send(data)"]
     TCP_RECV["recv(buf)"]
-    TCP_CLOSE["close() â†’ FIN"]
+    TCP_CLOSE["close() → FIN"]
 
     TCP_SERV["SERVER:"] --> TCP_SOCK --> TCP_BIND --> TCP_LISTEN
     TCP_LISTEN --> TCP_ACCEPT --> TCP_RECV --> TCP_SEND --> TCP_CLOSE
@@ -2940,9 +2940,9 @@ graph LR
 
 **Problem.** A startup building a real-time group chat application needed to support 100,000 concurrent users on a single server cluster with sub-100ms message delivery latency. Initial prototypes using a thread-per-connection model (one thread per client) failed at 2,000 connections due to memory exhaustion (~8 MB per thread stack = 16 GB for 2,000) and context-switching overhead. The server needed to handle chat message broadcast to groups of up to 10,000 users with reliable delivery.
 
-**Solution.** The team redesigned the server using an event-driven architecture on Linux with epoll (edge-triggered). Key design decisions: (1) A single event loop per CPU core (4 worker processes) using `SO_REUSEPORT` to distribute incoming connections across workers. (2) Each connection consumed ~2 KB of application state (as opposed to 8 MB per thread), enabling 50,000 connections per worker. (3) The epoll event loop used edge-triggered mode with non-blocking sockets â€” all reads looped until `EAGAIN`, and writes were buffered per connection with `EPOLLOUT` registered only when data was pending. (4) Message broadcast used a lock-free ring buffer per worker: a single `send()` call per recipient was batched into 64 KB chunks to amortize system call overhead. (5) Connection management included a 60-second heartbeat with lazy cleanup â€” connections idle for >120 seconds were closed without scanning the full connection table.
+**Solution.** The team redesigned the server using an event-driven architecture on Linux with epoll (edge-triggered). Key design decisions: (1) A single event loop per CPU core (4 worker processes) using `SO_REUSEPORT` to distribute incoming connections across workers. (2) Each connection consumed ~2 KB of application state (as opposed to 8 MB per thread), enabling 50,000 connections per worker. (3) The epoll event loop used edge-triggered mode with non-blocking sockets — all reads looped until `EAGAIN`, and writes were buffered per connection with `EPOLLOUT` registered only when data was pending. (4) Message broadcast used a lock-free ring buffer per worker: a single `send()` call per recipient was batched into 64 KB chunks to amortize system call overhead. (5) Connection management included a 60-second heartbeat with lazy cleanup — connections idle for >120 seconds were closed without scanning the full connection table.
 
-**Outcome.** The final server handled 50,000 concurrent connections per node (4 nodes for 200K capacity) at under 5% CPU utilization. Message delivery latency averaged 15 ms p99 across all group sizes. Memory per connection was 2.5 KB (state + send buffer), totaling ~125 MB per node at 50K connections â€” a 3,200x improvement over the thread-per-connection model. The system went on to power chat for 2 million daily active users.
+**Outcome.** The final server handled 50,000 concurrent connections per node (4 nodes for 200K capacity) at under 5% CPU utilization. Message delivery latency averaged 15 ms p99 across all group sizes. Memory per connection was 2.5 KB (state + send buffer), totaling ~125 MB per node at 50K connections — a 3,200x improvement over the thread-per-connection model. The system went on to power chat for 2 million daily active users.
 
 ## Practical Takeaways
 
@@ -2983,7 +2983,7 @@ graph LR
    - d) EINTR
 
 5. **Why does UDP not have a listen() or accept() system call?**
-   - a) UDP is connectionless â€” there is no connection to establish
+   - a) UDP is connectionless — there is no connection to establish
    - b) UDP is only used for multicast
    - c) UDP requires raw socket access
    - d) UDP uses connect() instead
@@ -2994,13 +2994,13 @@ graph LR
 | Q2 | B | select() scans all n file descriptors (O(n)); epoll returns only the k ready descriptors (O(k)), essential at 10K+ scale |
 | Q3 | B | In edge-triggered mode, events are delivered only when the state changes; the application must read until EAGAIN or risk missing data |
 | Q4 | C | EAGAIN (or EWOULDBLOCK) indicates the operation would block; for non-blocking sockets, the kernel returns immediately instead of blocking |
-| Q5 | A | UDP is connectionless â€” datagrams are sent directly to the destination without establishing a connection, so no listen/accept is needed |
+| Q5 | A | UDP is connectionless — datagrams are sent directly to the destination without establishing a connection, so no listen/accept is needed |
 
 ## Summary
 
-Socket programming provides the interface between applications and the transport layer. TCP sockets (SOCK_STREAM) offer reliable, connection-oriented byte streams following the socket â†’ bind â†’ listen â†’ accept (server) and socket â†’ connect (client) pattern. UDP sockets (SOCK_DGRAM) provide connectionless datagram communication using sendto/recvfrom.
+Socket programming provides the interface between applications and the transport layer. TCP sockets (SOCK_STREAM) offer reliable, connection-oriented byte streams following the socket → bind → listen → accept (server) and socket → connect (client) pattern. UDP sockets (SOCK_DGRAM) provide connectionless datagram communication using sendto/recvfrom.
 
-For concurrent servers, I/O multiplexing with select, poll, or epoll enables a single thread to manage thousands of connections. epoll (Linux) and kqueue (BSD) scale to millions of connections with O(1) event notification â†’ essential for solving the C10K problem.
+For concurrent servers, I/O multiplexing with select, poll, or epoll enables a single thread to manage thousands of connections. epoll (Linux) and kqueue (BSD) scale to millions of connections with O(1) event notification → essential for solving the C10K problem.
 
 Socket options like SO_REUSEADDR, TCP_NODELAY, and SO_KEEPALIVE tune behavior for specific workloads. Raw sockets give complete control over packet construction (ICMP ping, packet crafting). Unix domain sockets provide fast local IPC.
 
@@ -3015,15 +3015,15 @@ Real-world systems like Nginx, Node.js (libuv), HAProxy, and Redis all use event
 <details>
 <summary>Solution</summary>
 
-1. **TCP Server:** CLOSED â†’ socket() â†’ bind() â†’ listen() â†’ LISTEN â†’ accept() â†’ ESTABLISHED â†’ recv/send loop â†’ close() â†’ TIME_WAIT â†’ CLOSED. **TCP Client:** CLOSED â†’ socket() â†’ connect() â†’ SYN_SENT â†’ ESTABLISHED â†’ recv/send loop â†’ close() â†’ FIN_WAIT_1 â†’ FIN_WAIT_2 â†’ TIME_WAIT â†’ CLOSED. The server uses passive open (listen â†’ accept); the client uses active open (connect). Both end in TIME_WAIT (2Ã—MSL â‰ˆ 60s) on the side that sends the first FIN.
+1. **TCP Server:** CLOSED → socket() → bind() → listen() → LISTEN → accept() → ESTABLISHED → recv/send loop → close() → TIME_WAIT → CLOSED. **TCP Client:** CLOSED → socket() → connect() → SYN_SENT → ESTABLISHED → recv/send loop → close() → FIN_WAIT_1 → FIN_WAIT_2 → TIME_WAIT → CLOSED. The server uses passive open (listen → accept); the client uses active open (connect). Both end in TIME_WAIT (2×MSL ≈ 60s) on the side that sends the first FIN.
 
-2. **Level-triggered (LT):** The event fires as long as data exists. If you don't read all data, epoll_wait returns again immediately. **Edge-triggered (ET):** The event fires once when the state changes from empty to non-empty. If you miss data, you don't get another event until new data arrives. Use LT for simplicity (e.g., Redis) â€” tolerant of partial reads. Use ET for maximum performance (e.g., Nginx) â€” requires looping to EAGAIN but reduces epoll_wait calls.
+2. **Level-triggered (LT):** The event fires as long as data exists. If you don't read all data, epoll_wait returns again immediately. **Edge-triggered (ET):** The event fires once when the state changes from empty to non-empty. If you miss data, you don't get another event until new data arrives. Use LT for simplicity (e.g., Redis) — tolerant of partial reads. Use ET for maximum performance (e.g., Nginx) — requires looping to EAGAIN but reduces epoll_wait calls.
 
-3. UDP is faster because: (a) No connection handshake â€” sendto() sends immediately without SYN/SYN-ACK/ACK. (b) No congestion control â€” no window adjustments, no RTT tracking, no AIMD. (c) No retransmission timers â€” lost datagrams are not retransmitted by the kernel. (d) Smaller header overhead â€” 8 bytes vs TCP's 20+ bytes.
+3. UDP is faster because: (a) No connection handshake — sendto() sends immediately without SYN/SYN-ACK/ACK. (b) No congestion control — no window adjustments, no RTT tracking, no AIMD. (c) No retransmission timers — lost datagrams are not retransmitted by the kernel. (d) Smaller header overhead — 8 bytes vs TCP's 20+ bytes.
 
-4. C10K is the problem of handling 10,000 concurrent clients. Thread-per-connection fails because 10,000 threads Ã— 8 MB stack = 80 GB. epoll solves it with O(1) event notification: a single thread polls for readiness and handles only active connections. Each connection requires ~1-4 KB state instead of 8 MB.
+4. C10K is the problem of handling 10,000 concurrent clients. Thread-per-connection fails because 10,000 threads × 8 MB stack = 80 GB. epoll solves it with O(1) event notification: a single thread polls for readiness and handles only active connections. Each connection requires ~1-4 KB state instead of 8 MB.
 
-5. TIME_WAIT prevents: (a) delayed segments from a closed connection being misinterpreted by a new connection on the same IP:port, and (b) the final ACK being lost (the server retransmits FIN, and TIME_WAIT allows re-ACKing). Duration = 2Ã—MSL â‰ˆ 60 seconds. SO_REUSEADDR allows a new process to bind to a port in TIME_WAIT, which is essential for fast server restart after crash.
+5. TIME_WAIT prevents: (a) delayed segments from a closed connection being misinterpreted by a new connection on the same IP:port, and (b) the final ACK being lost (the server retransmits FIN, and TIME_WAIT allows re-ACKing). Duration = 2×MSL ≈ 60 seconds. SO_REUSEADDR allows a new process to bind to a port in TIME_WAIT, which is essential for fast server restart after crash.
 </details>
 
 ### Application Problems
@@ -3033,7 +3033,7 @@ Real-world systems like Nginx, Node.js (libuv), HAProxy, and Redis all use event
 
 6. **select-based chat server (Python):** Use `select.select()` with `inputs` list (server + clients). On readable events: if server, accept and add to inputs; if client, recv and broadcast to all other clients. Track client addresses for display. Handle disconnection by removing from inputs. See section 13.5.1 for the full Python implementation.
 
-7. **TCP vs Unix throughput comparison:** Create two echo servers (one TCP on 127.0.0.1:PORT, one Unix on /tmp/bench.sock). Measure time to send 100 MB in 1 KB chunks. Results typically show Unix domain sockets 3-10Ã— faster (no protocol stack, no checksums, no routing). TCP = ~45 Âµs/RTT; Unix = ~8 Âµs/RTT for localhost.
+7. **TCP vs Unix throughput comparison:** Create two echo servers (one TCP on 127.0.0.1:PORT, one Unix on /tmp/bench.sock). Measure time to send 100 MB in 1 KB chunks. Results typically show Unix domain sockets 3-10× faster (no protocol stack, no checksums, no routing). TCP = ~45 µs/RTT; Unix = ~8 µs/RTT for localhost.
 
 8. **epoll echo server (C++):** See section 13.5.3 for the full implementation. Key design: non-blocking sockets, EPOLLET | EPOLLIN, accept loop until EAGAIN, recv loop until EAGAIN, per-connection buffer for partial reads, SIGINT handler calling close(), per-connection byte counter updated after each successful recv.
 </details>
@@ -3043,6 +3043,6 @@ Real-world systems like Nginx, Node.js (libuv), HAProxy, and Redis all use event
 <details>
 <summary>Solution</summary>
 
-9. **HTTP reverse proxy with epoll:** Architecture â€” main event loop calls epoll_wait, handles server_fd (accept, add client to epoll), client_fd (read request, connect to backend, add backend to epoll), backend_fd (read response, forward to client). Key structures: `unordered_map<int, Conn> conns` where `Conn { int client_fd, backend_fd; string rbuf, wbuf; bool headers_sent; }`. For EPOLLOUT: only register when wbuf non-empty; after write, if data remains, keep EPOLLOUT; if empty, remove EPOLLOUT. For EPOLLIN: read into rbuf; if HTTP request complete, parse method/path, create backend connection, forward request. For HTTP/1.1 keep-alive, after response is fully sent, keep connection open and reset state for next request. For graceful shutdown, maintain a list of active connections; on SIGINT, stop accepting new connections, drain pending writes, then close.
+9. **HTTP reverse proxy with epoll:** Architecture — main event loop calls epoll_wait, handles server_fd (accept, add client to epoll), client_fd (read request, connect to backend, add backend to epoll), backend_fd (read response, forward to client). Key structures: `unordered_map<int, Conn> conns` where `Conn { int client_fd, backend_fd; string rbuf, wbuf; bool headers_sent; }`. For EPOLLOUT: only register when wbuf non-empty; after write, if data remains, keep EPOLLOUT; if empty, remove EPOLLOUT. For EPOLLIN: read into rbuf; if HTTP request complete, parse method/path, create backend connection, forward request. For HTTP/1.1 keep-alive, after response is fully sent, keep connection open and reset state for next request. For graceful shutdown, maintain a list of active connections; on SIGINT, stop accepting new connections, drain pending writes, then close.
 </details>
 

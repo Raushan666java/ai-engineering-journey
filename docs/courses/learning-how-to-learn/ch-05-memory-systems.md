@@ -1,13 +1,13 @@
-﻿# Chapter 5: Memory Systems & Mnemonics
+# Chapter 5: Memory Systems & Mnemonics
 
-> **Prerequisites:** [Chapter 4: Pomodoro, Interleaving & the Feynman Technique](./ch-04-pomodoro-interleaving-feynman.md) â€” Focus discipline and comprehension checks.
-> **Next:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md) â€” Overcome the emotional barriers to effective learning.
+> **Prerequisites:** [Chapter 4: Pomodoro, Interleaving & the Feynman Technique](./ch-04-pomodoro-interleaving-feynman.md) — Focus discipline and comprehension checks.
+> **Next:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md) — Overcome the emotional barriers to effective learning.
 
 > **Transform your memory from a sieve to a steel trap.** This chapter teaches you the ancient art of memory palaces, the science of encoding specificity, and why struggling to remember is actually the best way to learn.
 
-Memory is not a fixed capacity â€” it is a skill. The techniques in this chapter have been used for millennia, from Roman orators memorizing entire speeches to modern memory champions recalling thousands of digits. They work because they align with how the brain naturally encodes, stores, and retrieves information: through vivid imagery, spatial relationships, and meaningful associations.
+Memory is not a fixed capacity — it is a skill. The techniques in this chapter have been used for millennia, from Roman orators memorizing entire speeches to modern memory champions recalling thousands of digits. They work because they align with how the brain naturally encodes, stores, and retrieves information: through vivid imagery, spatial relationships, and meaningful associations.
 
-You will learn to build internal memory palaces where abstract concepts become walkable rooms, to chain arbitrary facts into unforgettable stories, and to harness counterintuitive principles like desirable difficulties â€” where making learning harder in the short term makes it stick forever.
+You will learn to build internal memory palaces where abstract concepts become walkable rooms, to chain arbitrary facts into unforgettable stories, and to harness counterintuitive principles like desirable difficulties — where making learning harder in the short term makes it stick forever.
 
 ---
 
@@ -43,7 +43,7 @@ After completing this chapter, you will be able to:
 - Apply the generation effect to convert passive review into active learning
 - Use the testing effect (retrieval practice) to strengthen long-term retention
 - Calibrate desirable difficulties to maximize learning per unit of effort
-- Use overlearning strategically â€” and know when to stop
+- Use overlearning strategically — and know when to stop
 - Design effective cheat sheets as conceptual compression tools
 
 ![Memory Systems & Mnemonics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems-dg1.png)
@@ -59,12 +59,12 @@ After completing this chapter, you will be able to:
 | Visual Mnemonics | Translating abstract information into concrete, bizarre, multisensory images | Apply the 6 rules: bizarreness, motion, sensory richness, exaggeration, interaction, personal relevance |
 | Chaining | Linking items into an unforgettable narrative sequence | Create a story where each item triggers the next in a cause-effect chain |
 | Peg System | Rhyming pegs (bun=1, shoe=2, tree=3) for numbered recall | Memorize the 1-10 peg list and use it for random-access retrieval of ordered items |
-| Encoding Specificity | Retrieval cues work best when they match encoding conditions | Study in conditions similar to the exam â€” match context, state, and modality |
+| Encoding Specificity | Retrieval cues work best when they match encoding conditions | Study in conditions similar to the exam — match context, state, and modality |
 | Generation Effect | Self-generated information is remembered better than read information | Cover material and try to generate the answer before looking at it |
 | Testing Effect | One active recall test produces more retention than multiple re-readings | Replace one study session per week with a practice test |
-| Desirable Difficulties | Harder-in-the-moment strategies that produce superior long-term retention | Keep the success rate at 60-80% â€” if it's too easy, increase the difficulty |
+| Desirable Difficulties | Harder-in-the-moment strategies that produce superior long-term retention | Keep the success rate at 60-80% — if it's too easy, increase the difficulty |
 | Overlearning | Continuing to practice beyond mastery | Use strategically only for high-speed recall skills; stop once automatic |
-| Cheat Sheets | Condensing a topic into a single page forces conceptual compression | Use the 3-pass method: dump â†’ select â†’ compact |
+| Cheat Sheets | Condensing a topic into a single page forces conceptual compression | Use the 3-pass method: dump → select → compact |
 
 ```mermaid
 flowchart LR
@@ -79,7 +79,7 @@ flowchart LR
     I --> J[Cheat Sheets]
 ```
 
-**One-Sentence Takeaway:** The Memory Palace technique leverages the brain's spatial navigation hardware â€” place abstract concepts in familiar physical locations with vivid interactive images for near-perfect recall.
+**One-Sentence Takeaway:** The Memory Palace technique leverages the brain's spatial navigation hardware — place abstract concepts in familiar physical locations with vivid interactive images for near-perfect recall.
 
 ---
 
@@ -88,17 +88,17 @@ flowchart LR
 
 **Answer:**
 
-The method of loci, also known as the **memory palace** technique, is one of the oldest and most powerful mnemonic devices, dating back to ancient Greece (circa 500 BCE). It exploits the brain's exceptional capacity for spatial memory â€” the same neural machinery that lets you navigate your childhood home without thinking.
+The method of loci, also known as the **memory palace** technique, is one of the oldest and most powerful mnemonic devices, dating back to ancient Greece (circa 500 BCE). It exploits the brain's exceptional capacity for spatial memory — the same neural machinery that lets you navigate your childhood home without thinking.
 
 The core idea is simple: you **mentally place items you want to remember along a familiar route or inside a familiar space**. When you need to recall them, you take a mental walk and "see" each item in its location.
 
 **How to build a memory palace in 5 steps:**
 
-1. **Choose a familiar space** â€” your current home, your childhood home, your daily commute, your workplace. The more vivid and detailed, the better.
-2. **Define a fixed route** â€” walk through the space in a consistent order. For example: front door â†’ hallway â†’ kitchen â†’ living room â†’ bedroom â†’ balcony.
-3. **Select loci (locations)** â€” identify 10-20 distinct stations along your route. A lamp, a sofa, a fridge door, a window sill. Each locus must be unique and memorable.
-4. **Associate each item with a locus** â€” create a vivid, bizarre, multisensory image of each item interacting with its location. Use motion, emotion, humor, and exaggeration.
-5. **Walk your palace** â€” mentally traverse the route and "see" each image. Repeat until retrieval becomes automatic.
+1. **Choose a familiar space** — your current home, your childhood home, your daily commute, your workplace. The more vivid and detailed, the better.
+2. **Define a fixed route** — walk through the space in a consistent order. For example: front door → hallway → kitchen → living room → bedroom → balcony.
+3. **Select loci (locations)** — identify 10-20 distinct stations along your route. A lamp, a sofa, a fridge door, a window sill. Each locus must be unique and memorable.
+4. **Associate each item with a locus** — create a vivid, bizarre, multisensory image of each item interacting with its location. Use motion, emotion, humor, and exaggeration.
+5. **Walk your palace** — mentally traverse the route and "see" each image. Repeat until retrieval becomes automatic.
 
 ```mermaid
 flowchart TD
@@ -112,19 +112,19 @@ flowchart TD
     Recall --> Walk
 ```
 
-**Why it works:** The brain's hippocampus â€” which encodes spatial navigation â€” evolved long before language or abstract reasoning. By anchoring abstract information to concrete spatial locations, you piggyback on a system optimized over hundreds of millions of years of evolution.
+**Why it works:** The brain's hippocampus — which encodes spatial navigation — evolved long before language or abstract reasoning. By anchoring abstract information to concrete spatial locations, you piggyback on a system optimized over hundreds of millions of years of evolution.
 
-**Example â€” Remembering the 5 great extinctions in order:**
+**Example — Remembering the 5 great extinctions in order:**
 
 | Locus | Extinction | Image |
 |-------|-----------|-------|
 | Front door | End-Ordovician (85%) | A giant **ordnance** (bomb) blocks the front door, covered in coral **(ordovician = ordnance + coral)** |
 | Hallway mirror | Late Devonian (75%) | The mirror reflects a **devil** holding a fish skeleton **(devonian = devil)** |
 | Kitchen table | End-Permian (96%) | A **permit** on the table catches fire; everything around it is dead **(permian = permit + extinction fire)** |
-| Living room sofa | End-Triassic (80%) | A **triassic** = **trip + ass** â€” a dinosaur sits on the sofa looking embarrassed after tripping |
+| Living room sofa | End-Triassic (80%) | A **triassic** = **trip + ass** — a dinosaur sits on the sofa looking embarrassed after tripping |
 | Balcony | End-Cretaceous (76%) | An **asteroid** crashes onto the balcony; dinosaurs run in panic **(cretaceous = asteroid impact)** |
 
-**Java example â€” MemoryPalace class:**
+**Java example — MemoryPalace class:**
 
 ```java
 import java.util.*;
@@ -149,7 +149,7 @@ public class MemoryPalace {
         locus.encodedItem = item;
         locus.mentalImage = image;
         System.out.println("Encoded '" + item + "' at " + locus.name
-            + " â†’ Image: " + image);
+            + " → Image: " + image);
     }
 
     public String recall(int locusIndex) {
@@ -165,7 +165,7 @@ public class MemoryPalace {
             System.out.println((i+1) + ". " + locus.name
                 + " (" + locus.description + ")"
                 + (locus.encodedItem != null
-                    ? " â†’ " + locus.encodedItem + " [" + locus.mentalImage + "]"
+                    ? " → " + locus.encodedItem + " [" + locus.mentalImage + "]"
                     : " [empty]"));
         }
     }
@@ -203,14 +203,14 @@ public class MemoryPalace {
 
 **Output:**
 ```
-Encoded 'End-Ordovician' at Front Door â†’ Image: Giant ordnance blocks door, covered in coral
-Encoded 'Late Devonian' at Hallway â†’ Image: Devil in mirror holds a dead fish
-Encoded 'End-Permian' at Kitchen â†’ Image: Burning permit on kitchen table, everything dead
+Encoded 'End-Ordovician' at Front Door → Image: Giant ordnance blocks door, covered in coral
+Encoded 'Late Devonian' at Hallway → Image: Devil in mirror holds a dead fish
+Encoded 'End-Permian' at Kitchen → Image: Burning permit on kitchen table, everything dead
 
 Walking the palace:
-1. Front Door (Heavy wooden door with brass knocker) â†’ End-Ordovician [Giant ordnance blocks door, covered in coral]
-2. Hallway (Narrow corridor with family photos) â†’ Late Devonian [Devil in mirror holds a dead fish]
-3. Kitchen (Small kitchen, always smells like coffee) â†’ End-Permian [Burning permit on kitchen table, everything dead]
+1. Front Door (Heavy wooden door with brass knocker) → End-Ordovician [Giant ordnance blocks door, covered in coral]
+2. Hallway (Narrow corridor with family photos) → Late Devonian [Devil in mirror holds a dead fish]
+3. Kitchen (Small kitchen, always smells like coffee) → End-Permian [Burning permit on kitchen table, everything dead]
 4. Living Room (Green sofa, big window) [empty]
 5. Bedroom (Bed with blue duvet, desk by window) [empty]
 ```
@@ -219,7 +219,7 @@ Walking the palace:
 
 > **Pro Tip:** Don't use rooms that all look the same, like hotel corridors or identical office cubicles. The brain distinguishes locations by their unique features. Your childhood home works better than a generic building because of emotional anchoring and distinctive details.
 
-**One-Sentence Takeaway:** A memory palace works best when rooms are visually distinctive with emotional anchoring â€” your childhood home outperforms generic buildings as a spatial framework.
+**One-Sentence Takeaway:** A memory palace works best when rooms are visually distinctive with emotional anchoring — your childhood home outperforms generic buildings as a spatial framework.
 
 ---
 
@@ -232,12 +232,12 @@ Visual mnemonics translate abstract, hard-to-remember information into **concret
 
 **The 6 rules of effective mnemonic images:**
 
-1. **Bizarreness** â€” ordinary images are forgettable; bizarre ones stick. A pink elephant in a tutu is more memorable than an elephant standing normally.
-2. **Motion** â€” moving images capture more attention than static ones. The elephant should be breakdancing, not standing.
-3. **Sensory richness** â€” engage as many senses as possible. What does it sound like? Smell like? Feel like?
-4. **Exaggeration** â€” blow up key features. An elephant the size of a building. A mosquito the size of a car.
-5. **Interaction** â€” the item you encode and its cue should interact, not just coexist. The elephant IS wearing the tutu, not standing next to it.
-6. **Personal relevance** â€” the more personally meaningful, the more retrievable.
+1. **Bizarreness** — ordinary images are forgettable; bizarre ones stick. A pink elephant in a tutu is more memorable than an elephant standing normally.
+2. **Motion** — moving images capture more attention than static ones. The elephant should be breakdancing, not standing.
+3. **Sensory richness** — engage as many senses as possible. What does it sound like? Smell like? Feel like?
+4. **Exaggeration** — blow up key features. An elephant the size of a building. A mosquito the size of a car.
+5. **Interaction** — the item you encode and its cue should interact, not just coexist. The elephant IS wearing the tutu, not standing next to it.
+6. **Personal relevance** — the more personally meaningful, the more retrievable.
 
 **Applying visual mnemonics to GATE CS concepts:**
 
@@ -245,12 +245,12 @@ Visual mnemonics translate abstract, hard-to-remember information into **concret
 |-----------------|-----------------|-------------|
 | **Deadlock (4 conditions)** | A **mutex** (mutual exclusion) monster holds a **fork** (hold & wait) while **not giving it** (no preemption) to a **circular** snake (circular wait) | Each element encodes one condition |
 | **TCP 3-way handshake** | Three people passing a **SYN** flag back and forth, then shaking hands with a **SYN-ACK** flag, then nodding **ACK** | Personified handshake sequence |
-| **Stack (LIFO)** | A cafeteria tray dispenser â€” push a tray on, the last one pushed is the first one pulled off | Physical analog of LIFO |
-| **Cache (LRU)** | A row of cats â€” the one that hasn't been petted longest gets thrown out | Least Recently Used = Least Recently Petted |
+| **Stack (LIFO)** | A cafeteria tray dispenser — push a tray on, the last one pushed is the first one pulled off | Physical analog of LIFO |
+| **Cache (LRU)** | A row of cats — the one that hasn't been petted longest gets thrown out | Least Recently Used = Least Recently Petted |
 | **Polymorphism** | A **shape** that can be a circle, square, or triangle depending on context, but always responds to `draw()` | Classic OOP demonstration |
 | **Semaphore (counting)** | A bouncer with a clicker counting people entering a club; when it hits capacity, nobody else enters | Up/down counting |
 
-**Java example â€” VisualMnemonic encoder:**
+**Java example — VisualMnemonic encoder:**
 
 ```java
 import java.util.*;
@@ -272,29 +272,29 @@ public class VisualMnemonic {
             System.out.printf("Visualize: %s%n", m.concreteImage());
             System.out.printf("  See: %s%n", m.sensoryDetail());
             System.out.printf("  Feel the motion: %s%n", m.motion());
-            System.out.printf("  â†’ Recall concept: [pause and think] â†’ %s%n%n",
+            System.out.printf("  → Recall concept: [pause and think] → %s%n%n",
                            m.abstractConcept());
         }
     }
 
     public static void main(String[] args) {
         List<Mnemonic> csMnemonics = Arrays.asList(
-            createMnemonic("Deadlock â€” Mutual Exclusion",
+            createMnemonic("Deadlock — Mutual Exclusion",
                 "A giant padlock with teeth",
                 "Cold metal, rusty taste in the air",
                 "The padlock snaps shut on a resource, refusing to open"),
-            createMnemonic("Deadlock â€” Hold & Wait",
+            createMnemonic("Deadlock — Hold & Wait",
                 "A programmer clutching forks in both fists",
                 "Sweaty palms, desperate grip",
                 "He won't put down the forks even to pick up a spoon"),
-            createMnemonic("Deadlock â€” No Preemption",
+            createMnemonic("Deadlock — No Preemption",
                 "A referee who just shrugs and walks away",
                 "Audience booing, referee's whistle",
                 "The referee refuses to take anything from anyone"),
-            createMnemonic("Deadlock â€” Circular Wait",
+            createMnemonic("Deadlock — Circular Wait",
                 "Four programmers at a round table, each grabbing the next person's fork",
                 "Clanking silverware, frustrated sighs",
-                "The chain passes plates clockwise forever â€” nobody eats")
+                "The chain passes plates clockwise forever — nobody eats")
         );
 
         System.out.println("=== Visual Mnemonics for Deadlock ===");
@@ -317,24 +317,24 @@ Spend 5 seconds per image, then recall the concept.
 Visualize: A giant padlock with teeth
   See: Cold metal, rusty taste in the air
   Feel the motion: The padlock snaps shut on a resource, refusing to open
-  â†’ Recall concept: [pause and think] â†’ Deadlock â€” Mutual Exclusion
+  → Recall concept: [pause and think] → Deadlock — Mutual Exclusion
 
 Visualize: A programmer clutching forks in both fists
   See: Sweaty palms, desperate grip
   Feel the motion: He won't put down the forks even to pick up a spoon
-  â†’ Recall concept: [pause and think] â†’ Deadlock â€” Hold & Wait
+  → Recall concept: [pause and think] → Deadlock — Hold & Wait
 
 Visualize: A referee who just shrugs and walks away
   See: Audience booing, referee's whistle
   Feel the motion: The referee refuses to take anything from anyone
-  â†’ Recall concept: [pause and think] â†’ Deadlock â€” No Preemption
+  → Recall concept: [pause and think] → Deadlock — No Preemption
 ```
 
 > **Try This:** Pick 3 abstract concepts from your current study material (e.g., OS scheduling algorithms, DBMS normal forms, DSA sorting algorithms). For each, create a vivid visual mnemonic following the 6 rules. Test yourself tomorrow.
 
-> **Warning:** The most common mistake is creating images that are "kind of" related instead of directly interactive. If your image for "deadlock" is just a lock sitting on a table, that's weak. The image needs ACTION â€” the lock is choking a process while laughing. Interaction trumps accuracy in mnemonics.
+> **Warning:** The most common mistake is creating images that are "kind of" related instead of directly interactive. If your image for "deadlock" is just a lock sitting on a table, that's weak. The image needs ACTION — the lock is choking a process while laughing. Interaction trumps accuracy in mnemonics.
 
-**One-Sentence Takeaway:** The most effective mnemonic images involve dynamic action and interaction â€” a lock passively sitting is far less memorable than one actively choking a process.
+**One-Sentence Takeaway:** The most effective mnemonic images involve dynamic action and interaction — a lock passively sitting is far less memorable than one actively choking a process.
 
 ---
 
@@ -345,7 +345,7 @@ Visualize: A referee who just shrugs and walks away
 
 The **chaining system** (also called the **story method** or **link method**) connects individual items in a sequence by creating a story where each item leads naturally to the next. Unlike the memory palace (which uses spatial locations) or the peg system (which uses numbered pegs), chaining uses pure narrative causality: item A leads to item B, which leads to item C, and so on.
 
-**The core mechanism:** You convert each item into a vivid image, then create an **action-driven interaction** between successive images. The interaction should be dynamic, bizarre, and sensory-rich â€” not just "A is next to B."
+**The core mechanism:** You convert each item into a vivid image, then create an **action-driven interaction** between successive images. The interaction should be dynamic, bizarre, and sensory-rich — not just "A is next to B."
 
 **When chaining works best:**
 - Short-to-medium sequences (5-20 items)
@@ -353,21 +353,21 @@ The **chaining system** (also called the **story method** or **link method**) co
 - Situations where you don't need random access (you must start from the beginning)
 
 **When chaining fails:**
-- Long sequences (30+ items) â€” the chain weakens at both ends
+- Long sequences (30+ items) — the chain weakens at both ends
 - When you need to recall an item in the middle without walking through the whole chain
 - When telling the story becomes repetitive
 
-**Example â€” Remembering the 7 layers of the OSI model (Application â†’ Physical):**
+**Example — Remembering the 7 layers of the OSI model (Application → Physical):**
 
-1. **Application** â†’ A **user** opens an app on their phone
-2. **Presentation** â†’ The app **presents** the data in a beautiful slide **(presentation)**
-3. **Session** â€” But the slide is so boring, the audience starts a **session** of snoring
-4. **Transport** â€” The snoring is so loud it must be **transported** out via a conveyor belt **(TCP)**
-5. **Network** â€” The conveyor belt enters a **network** of tunnels **(IP routing)**
-6. **Data Link** â€” Inside the tunnel, a **data cable** links two machines **(Ethernet)**
-7. **Physical** â€” The cable ends at a **physical** plug in the wall
+1. **Application** → A **user** opens an app on their phone
+2. **Presentation** → The app **presents** the data in a beautiful slide **(presentation)**
+3. **Session** — But the slide is so boring, the audience starts a **session** of snoring
+4. **Transport** — The snoring is so loud it must be **transported** out via a conveyor belt **(TCP)**
+5. **Network** — The conveyor belt enters a **network** of tunnels **(IP routing)**
+6. **Data Link** — Inside the tunnel, a **data cable** links two machines **(Ethernet)**
+7. **Physical** — The cable ends at a **physical** plug in the wall
 
-**Java example â€” ChainingSystem:**
+**Java example — ChainingSystem:**
 
 ```java
 import java.util.*;
@@ -398,7 +398,7 @@ public class ChainingSystem {
                 System.out.println((i+1) + ". " + link.item.toUpperCase());
                 System.out.println("   Image: " + link.image);
                 if (link.nextInteraction != null && i < links.size() - 1) {
-                    System.out.println("   â†’ " + link.nextInteraction);
+                    System.out.println("   → " + link.nextInteraction);
                 }
                 System.out.println();
             }
@@ -420,10 +420,10 @@ public class ChainingSystem {
                 "A user taps an app icon on their phone",
                 "The app opens a slide deck"),
             new ChainLink("Presentation",
-                "The slide deck is presented on a projector â€” elegant slides",
+                "The slide deck is presented on a projector — elegant slides",
                 "But the presentation puts everyone to sleep"),
             new ChainLink("Session",
-                "Snoring fills the room â€” a full session of snoring",
+                "Snoring fills the room — a full session of snoring",
                 "The snore waves must be transported somewhere"),
             new ChainLink("Transport",
                 "Snore waves ride a conveyor belt (TCP segment)",
@@ -435,13 +435,13 @@ public class ChainingSystem {
                 "Ethernet cables link the tunnel exit to a switch",
                 "The switch plugs into the wall"),
             new ChainLink("Physical",
-                "The physical wall plug â€” raw bits flow through copper wire",
+                "The physical wall plug — raw bits flow through copper wire",
                 null)
         );
 
         StoryChain osiStory = new StoryChain(osiLinks);
 
-        System.out.println("=== OSI Model â€” Memory Chain ===\n");
+        System.out.println("=== OSI Model — Memory Chain ===\n");
         osiStory.tellStory();
 
         System.out.println("=== Recall (close your eyes and walk the story) ===");
@@ -455,34 +455,34 @@ public class ChainingSystem {
 
 **Output:**
 ```
-=== OSI Model â€” Memory Chain ===
+=== OSI Model — Memory Chain ===
 
 1. APPLICATION
    Image: A user taps an app icon on their phone
-   â†’ The app opens a slide deck
+   → The app opens a slide deck
 
 2. PRESENTATION
-   Image: The slide deck is presented on a projector â€” elegant slides
-   â†’ But the presentation puts everyone to sleep
+   Image: The slide deck is presented on a projector — elegant slides
+   → But the presentation puts everyone to sleep
 
 3. SESSION
-   Image: Snoring fills the room â€” a full session of snoring
-   â†’ The snore waves must be transported somewhere
+   Image: Snoring fills the room — a full session of snoring
+   → The snore waves must be transported somewhere
 
 4. TRANSPORT
    Image: Snore waves ride a conveyor belt (TCP segment)
-   â†’ The conveyor leads into a tunnel network
+   → The conveyor leads into a tunnel network
 
 5. NETWORK
    Image: IP packets navigate through railway tunnels
-   â†’ Tunnel exits onto a physical cable
+   → Tunnel exits onto a physical cable
 
 6. DATA LINK
    Image: Ethernet cables link the tunnel exit to a switch
-   â†’ The switch plugs into the wall
+   → The switch plugs into the wall
 
 7. PHYSICAL
-   Image: The physical wall plug â€” raw bits flow through copper wire
+   Image: The physical wall plug — raw bits flow through copper wire
 
 === Recall (close your eyes and walk the story) ===
 7. Physical
@@ -494,11 +494,11 @@ public class ChainingSystem {
 1. Application
 ```
 
-> **Try This:** Create a chained story for the 5 stages of the waterfall model (Requirements â†’ Design â†’ Implementation â†’ Testing â†’ Maintenance). Make each transition bizarre and memorable.
+> **Try This:** Create a chained story for the 5 stages of the waterfall model (Requirements → Design → Implementation → Testing → Maintenance). Make each transition bizarre and memorable.
 
-> **Remember:** Chaining breaks if you lose one link. Always rehearse the chain forward AND backward â€” if you can only go forward, you don't truly know it. Backward recall exposes weak links instantly.
+> **Remember:** Chaining breaks if you lose one link. Always rehearse the chain forward AND backward — if you can only go forward, you don't truly know it. Backward recall exposes weak links instantly.
 
-**One-Sentence Takeaway:** Chaining works for sequences but breaks if you lose one link â€” always rehearse forward AND backward because backward recall exposes weak links that forward-only practice hides.
+**One-Sentence Takeaway:** Chaining works for sequences but breaks if you lose one link — always rehearse forward AND backward because backward recall exposes weak links that forward-only practice hides.
 
 ---
 
@@ -507,22 +507,22 @@ public class ChainingSystem {
 
 **Answer:**
 
-The **peg system** (also called the **hook system** or **pegword method**) assigns each number 1 through N a permanent, rhyming or associatively-linked "peg" image. You then mentally attach each item you want to remember to its corresponding peg. Unlike chaining (which requires sequential recall from the start), the peg system gives you **random access** â€” you can jump directly to position 7, 3, or 15.
+The **peg system** (also called the **hook system** or **pegword method**) assigns each number 1 through N a permanent, rhyming or associatively-linked "peg" image. You then mentally attach each item you want to remember to its corresponding peg. Unlike chaining (which requires sequential recall from the start), the peg system gives you **random access** — you can jump directly to position 7, 3, or 15.
 
 **Standard 1-10 peg list (rhyming):**
 
 | Number | Peg Word | Why |
 |--------|----------|-----|
-| 1 | Bun | One â†’ bun (sounds like) |
-| 2 | Shoe | Two â†’ shoe (sounds like) |
-| 3 | Tree | Three â†’ tree (sounds like) |
-| 4 | Door | Four â†’ door (sounds like) |
-| 5 | Hive | Five â†’ hive (sounds like) |
-| 6 | Sticks | Six â†’ sticks (sounds like) |
-| 7 | Heaven | Seven â†’ heaven (sounds like) |
-| 8 | Gate | Eight â†’ gate (sounds like) |
-| 9 | Wine | Nine â†’ wine (sounds like) |
-| 10 | Hen | Ten â†’ hen (sounds like) |
+| 1 | Bun | One → bun (sounds like) |
+| 2 | Shoe | Two → shoe (sounds like) |
+| 3 | Tree | Three → tree (sounds like) |
+| 4 | Door | Four → door (sounds like) |
+| 5 | Hive | Five → hive (sounds like) |
+| 6 | Sticks | Six → sticks (sounds like) |
+| 7 | Heaven | Seven → heaven (sounds like) |
+| 8 | Gate | Eight → gate (sounds like) |
+| 9 | Wine | Nine → wine (sounds like) |
+| 10 | Hen | Ten → hen (sounds like) |
 
 ```mermaid
 mindmap
@@ -549,7 +549,7 @@ mindmap
       Alphabet: A = ace, B = bee
 ```
 
-**Chaining vs Peg system â€” when to use which:**
+**Chaining vs Peg system — when to use which:**
 
 | Factor | Chaining | Peg System |
 |--------|----------|------------|
@@ -559,7 +559,7 @@ mindmap
 | Interference | If one link breaks, everything after is lost | Each peg is independent |
 | Best for | Stories, ordered processes, speeches | Numbered lists, priority items, formulas |
 
-**Example â€” Remembering the first 10 elements using the peg system:**
+**Example — Remembering the first 10 elements using the peg system:**
 
 | # | Element | Peg Image | Interaction |
 |---|---------|-----------|-------------|
@@ -574,7 +574,7 @@ mindmap
 | 9 | F (Fluorine) | Wine | **Wine** that glows from added **fluoride** (like toothpaste) |
 | 10 | Ne (Neon) | Hen | A **hen** glowing bright **neon** pink |
 
-**Java example â€” PegSystem:**
+**Java example — PegSystem:**
 
 ```java
 import java.util.*;
@@ -630,7 +630,7 @@ public class PegSystem {
                 String result = (peg.encodedItem != null)
                     ? peg.encodedItem + " [" + peg.interaction + "]"
                     : "[empty]";
-                System.out.println(i + " (" + peg.pegWord + ") â†’ " + result);
+                System.out.println(i + " (" + peg.pegWord + ") → " + result);
             }
         }
 
@@ -672,11 +672,11 @@ public class PegSystem {
 ```
 === Peg System: First 5 Elements ===
 
-1 (bun) â†’ H (Hydrogen) [Hydrogen balloon pops out of a bun]
-2 (shoe) â†’ He (Helium) [Helium-filled shoe floats to ceiling]
-3 (tree) â†’ Li (Lithium) [Tree grows lithium-ion batteries as leaves]
-4 (door) â†’ Be (Beryllium) [Door made of lightweight beryllium alloy]
-5 (hive) â†’ B (Boron) [Hive full of boron-coated honeycomb panels]
+1 (bun) → H (Hydrogen) [Hydrogen balloon pops out of a bun]
+2 (shoe) → He (Helium) [Helium-filled shoe floats to ceiling]
+3 (tree) → Li (Lithium) [Tree grows lithium-ion batteries as leaves]
+4 (door) → Be (Beryllium) [Door made of lightweight beryllium alloy]
+5 (hive) → B (Boron) [Hive full of boron-coated honeycomb panels]
 
 === Random Access Test ===
 Position 3: Li (Lithium)
@@ -685,10 +685,10 @@ Position 5: B (Boron)
 Position 10: null (not encoded yet)
 ```
 
-> **Try This:** Memorize the 1-10 peg list today (bun, shoe, tree, door, hive, sticks, heaven, gate, wine, hen). Use it to encode the first 10 elements of the periodic table. Tomorrow, test yourself by calling out random numbers â€” can you recall the element without walking from 1?
+> **Try This:** Memorize the 1-10 peg list today (bun, shoe, tree, door, hive, sticks, heaven, gate, wine, hen). Use it to encode the first 10 elements of the periodic table. Tomorrow, test yourself by calling out random numbers — can you recall the element without walking from 1?
 > **Pro Tip:** The peg system is overkill for 5 items but becomes exponentially more useful at 20+. Spend 20 minutes memorizing a 20-peg list once, and you can reuse it for the rest of your life. The upfront investment pays off every time you need to memorize a numbered list.
 
-**One-Sentence Takeaway:** The peg system is exponentially more useful at 20+ items â€” invest 20 minutes once to memorize a reusable 20-peg list that serves you for life.
+**One-Sentence Takeaway:** The peg system is exponentially more useful at 20+ items — invest 20 minutes once to memorize a reusable 20-peg list that serves you for life.
 
 
 
@@ -699,38 +699,38 @@ Position 10: null (not encoded yet)
 
 **Answer:**
 
-**Memory compression** (also called **chunk compression** or **abstraction layering**) is the process of representing a large amount of information with a small, easily-remembered symbol â€” then expanding that symbol back into the full information when needed. It is the same principle that powers ZIP files, but for your brain.
+**Memory compression** (also called **chunk compression** or **abstraction layering**) is the process of representing a large amount of information with a small, easily-remembered symbol — then expanding that symbol back into the full information when needed. It is the same principle that powers ZIP files, but for your brain.
 
 **Compression levels:**
 
 | Level | What you store | Example |
 |-------|---------------|---------|
-| L1 â€” Raw data | Full information, verbatim | "The INSERT statement adds new rows. The UPDATE statement modifies existing rows. The DELETE statement removes rows." |
-| L2 â€” Acronym/Keyword | A single trigger word | "IUD" (Insert, Update, Delete) |
-| L3 â€” Visual/Spatial | A mental image | A filing cabinet where you **insert** files, **update** labels, and **delete** folders |
-| L4 â€” Procedural | "I know how to do it" | You can write SQL without thinking about the syntax |
+| L1 — Raw data | Full information, verbatim | "The INSERT statement adds new rows. The UPDATE statement modifies existing rows. The DELETE statement removes rows." |
+| L2 — Acronym/Keyword | A single trigger word | "IUD" (Insert, Update, Delete) |
+| L3 — Visual/Spatial | A mental image | A filing cabinet where you **insert** files, **update** labels, and **delete** folders |
+| L4 — Procedural | "I know how to do it" | You can write SQL without thinking about the syntax |
 
 **Common compression techniques:**
 
-1. **Acronyms** â€” First letter of each item forms a word. VIBGYOR (Violet, Indigo, Blue, Green, Yellow, Orange, Red). ACID (Atomicity, Consistency, Isolation, Durability). BASE (Basically Available, Soft state, Eventual consistency).
-2. **Acrostics** â€” First letters form a sentence. "My Very Educated Mother Just Served Us Noodles" (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune).
-3. **Number-Formula mapping** â€” "E = mcÂ²" compresses mass-energy equivalence into 5 characters.
-4. **Diagram compression** â€” A single B-tree diagram conveys more than 1000 words about balanced tree structures.
-5. **Analogy compression** â€” "DNS is the phonebook of the internet" compresses hours of explanation into one sentence.
+1. **Acronyms** — First letter of each item forms a word. VIBGYOR (Violet, Indigo, Blue, Green, Yellow, Orange, Red). ACID (Atomicity, Consistency, Isolation, Durability). BASE (Basically Available, Soft state, Eventual consistency).
+2. **Acrostics** — First letters form a sentence. "My Very Educated Mother Just Served Us Noodles" (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune).
+3. **Number-Formula mapping** — "E = mc²" compresses mass-energy equivalence into 5 characters.
+4. **Diagram compression** — A single B-tree diagram conveys more than 1000 words about balanced tree structures.
+5. **Analogy compression** — "DNS is the phonebook of the internet" compresses hours of explanation into one sentence.
 
 **The compression-expansion cycle:**
-1. **Compress** â€” reduce the information to its essence
-2. **Store** â€” remember the compressed form
-3. **Practice expansion** â€” repeatedly expand the compressed form into full detail
-4. **Automatize** â€” the expansion becomes instantaneous
+1. **Compress** — reduce the information to its essence
+2. **Store** — remember the compressed form
+3. **Practice expansion** — repeatedly expand the compressed form into full detail
+4. **Automatize** — the expansion becomes instantaneous
 
-**Java example â€” MemoryCompression:**
+**Java example — MemoryCompression:**
 
 ```java
 import java.util.*;
 
 public class MemoryCompression {
-    // Compressed knowledge: acronym â†’ expanded meaning â†’ full explanation
+    // Compressed knowledge: acronym → expanded meaning → full explanation
     static class CompressedConcept {
         final String acronym;
         final String expanded;
@@ -767,7 +767,7 @@ public class MemoryCompression {
             Random rand = new Random(42);
             for (int r = 0; r < repetitions; r++) {
                 CompressedConcept c = deck.get(rand.nextInt(deck.size()));
-                System.out.print("Acronym: " + c.acronym + " â†’ ");
+                System.out.print("Acronym: " + c.acronym + " → ");
                 // Pause and try to recall
                 System.out.println("[Think of the expansion...]");
                 System.out.println("Answer: " + c.expanded);
@@ -776,7 +776,7 @@ public class MemoryCompression {
         }
 
         void expansionTest() {
-            System.out.println("=== Expansion Test (acronym â†’ full explanation) ===\n");
+            System.out.println("=== Expansion Test (acronym → full explanation) ===\n");
             for (CompressedConcept c : deck) {
                 System.out.println("ACRONYM: " + c.acronym);
                 System.out.println("EXPANDED: " + c.expanded);
@@ -803,7 +803,7 @@ public class MemoryCompression {
                 + "open for extension closed for modification, "
                 + "subtypes replaceable for base types, "
                 + "small focused interfaces, depend on abstractions not concretions.",
-                "A SOLID brick foundation for OOP â€” each principle is a brick in the wall"),
+                "A SOLID brick foundation for OOP — each principle is a brick in the wall"),
             new CompressedConcept("CAP",
                 "Consistency, Availability, Partition tolerance",
                 "In a distributed system, you can have at most two of three: "
@@ -841,7 +841,7 @@ public class MemoryCompression {
 
 > **Warning:** Compression without expansion practice is worse than no compression. An acronym you can't expand is just a meaningless word. After creating an acronym, force yourself to write the full expansion from memory 3 times over 3 days. If you can't expand it, compress less aggressively.
 
-**One-Sentence Takeaway:** Compression without expansion practice is useless â€” an acronym you can't expand is just a meaningless word, so always test yourself on expansion after creating one.
+**One-Sentence Takeaway:** Compression without expansion practice is useless — an acronym you can't expand is just a meaningless word, so always test yourself on expansion after creating one.
 
 ---
 
@@ -856,14 +856,14 @@ public class MemoryCompression {
 
 | Principle | What it means for studying |
 |-----------|--------------------------|
-| **Match encoding to test format** | If the exam requires writing code, you should practice writing code â€” not reading code |
+| **Match encoding to test format** | If the exam requires writing code, you should practice writing code — not reading code |
 | **Create retrieval cues during encoding** | While studying, explicitly think: "What cues would trigger this memory?" |
 | **Vary encoding contexts** | Study the same material in different contexts to build multiple retrieval paths |
 | **Test yourself in exam-like conditions** | The closer your practice mirrors the exam, the better your recall during the actual exam |
 
 **The encoding specificity trap:** Many students study by re-reading notes with the notes in front of them. This means the notes themselves become the retrieval cue. When the notes are gone (in the exam), the cue disappears, and so does the memory. The fix: **practice retrieval without your notes.**
 
-**Java example â€” EncodingSpecificity:**
+**Java example — EncodingSpecificity:**
 
 ```java
 import java.util.*;
@@ -891,7 +891,7 @@ public class EncodingSpecificity {
             if (cue.equals(this.retrievalCue)) {
                 return material;
             }
-            return null; // Can't recall â€” wrong cue
+            return null; // Can't recall — wrong cue
         }
     }
 
@@ -902,11 +902,11 @@ public class EncodingSpecificity {
 
         // Group A: Encodes with the cue "balanced tree"
         String cueGroupA = "balanced tree";
-        String encodedCueA = "balanced tree â†’ B-TREE";
+        String encodedCueA = "balanced tree → B-TREE";
 
         // Group B: Encodes with the cue "database index"
         String cueGroupB = "database index";
-        String encodedCueB = "database index â†’ B-TREE";
+        String encodedCueB = "database index → B-TREE";
 
         System.out.println("=== Encoding Specificity Demonstration ===\n");
         System.out.println("Target memory: B-TREE (balanced search tree)\n");
@@ -923,14 +923,14 @@ public class EncodingSpecificity {
         // Group A's cue matches the test cue
         boolean groupARecalls = testCue.equals(cueGroupA);
         System.out.println("Group A: cue was '" + cueGroupA
-            + "' â†’ match with test cue '" + testCue + "'?"
-            + " " + groupARecalls + " â†’ Recalls B-TREE");
+            + "' → match with test cue '" + testCue + "'?"
+            + " " + groupARecalls + " → Recalls B-TREE");
 
         // Group B's cue does NOT match the test cue
         boolean groupBRecalls = testCue.equals(cueGroupB);
         System.out.println("Group B: cue was '" + cueGroupB
-            + "' â†’ match with test cue '" + testCue + "'?"
-            + " " + groupBRecalls + " â†’ Cannot recall (wrong cue)");
+            + "' → match with test cue '" + testCue + "'?"
+            + " " + groupBRecalls + " → Cannot recall (wrong cue)");
         System.out.println();
 
         System.out.println("Conclusion: Even though 'database index' is a STRONGER\n"
@@ -994,9 +994,9 @@ Bad study (cue mismatches exam): forgets
 
 > **Try This:** For your next study session, explicitly write down 3 exam-style questions BEFORE you start reading. As you study, answer each question in your own words. This ensures your encoding cues match your retrieval cues.
 
-> **Pro Tip:** Encoding specificity also explains why studying the same material in 3 different locations improves recall. Each location creates a slightly different set of retrieval cues, giving your brain more paths to access the memory. Study at your desk, in a library, and in a cafÃ© for the same topic.
+> **Pro Tip:** Encoding specificity also explains why studying the same material in 3 different locations improves recall. Each location creates a slightly different set of retrieval cues, giving your brain more paths to access the memory. Study at your desk, in a library, and in a café for the same topic.
 
-**One-Sentence Takeaway:** Each study location creates unique retrieval cues â€” studying the same material in 3 different places builds multiple neural paths to access the memory.
+**One-Sentence Takeaway:** Each study location creates unique retrieval cues — studying the same material in 3 different places builds multiple neural paths to access the memory.
 
 ---
 
@@ -1017,11 +1017,11 @@ Bad study (cue mismatches exam): forgets
 
 **Practical implications for students:**
 
-1. **Match your state to the test** â€” If the exam is in a quiet, early-morning, no-coffee setting, study under those conditions occasionally. If you always study with music + coffee + midnight, expect a performance drop when those cues are absent.
-2. **Vary your states deliberately** â€” The best approach is to study in MULTIPLE states so you are not dependent on any single one. This builds state-independent memory.
-3. **Beware the alcohol paradox** â€” Students who study drunk and take the exam drunk may recall material, but they are still cognitively impaired. State-dependent memory does not cancel the impairment.
+1. **Match your state to the test** — If the exam is in a quiet, early-morning, no-coffee setting, study under those conditions occasionally. If you always study with music + coffee + midnight, expect a performance drop when those cues are absent.
+2. **Vary your states deliberately** — The best approach is to study in MULTIPLE states so you are not dependent on any single one. This builds state-independent memory.
+3. **Beware the alcohol paradox** — Students who study drunk and take the exam drunk may recall material, but they are still cognitively impaired. State-dependent memory does not cancel the impairment.
 
-**Java example â€” StateDependentMemory:**
+**Java example — StateDependentMemory:**
 
 ```java
 import java.util.*;
@@ -1078,8 +1078,8 @@ public class StateDependentMemory {
                 double prob = mem.recallProbability(State.ALERT);
                 boolean recalled = rand.nextDouble() < prob;
                 totalRecall += recalled ? 1 : 0;
-                System.out.printf("  %s: cue=%s retrieval=%s â†’ "
-                        + "P(recall)=%.2f â†’ %s%n",
+                System.out.printf("  %s: cue=%s retrieval=%s → "
+                        + "P(recall)=%.2f → %s%n",
                     mem.topic, mem.encodingState, State.ALERT,
                     prob, recalled ? "RECALLED" : "FORGOT");
             }
@@ -1110,9 +1110,9 @@ public class StateDependentMemory {
         bad.takeExam();
 
         System.out.println("\n--- Insight ---");
-        System.out.println("Good student varies study states â†’ "
+        System.out.println("Good student varies study states → "
             + "less dependent on any single state.");
-        System.out.println("Bad student always studies tired â†’ "
+        System.out.println("Bad student always studies tired → "
             + "performs poorly in alert exam conditions.");
     }
 }
@@ -1133,32 +1133,32 @@ Bad studies 'Queue' while TIRED
 
 === Good takes exam (ALERT) ===
 
-  Arrays: cue=ALERT retrieval=ALERT â†’ P(recall)=0.90 â†’ RECALLED
-  LinkedList: cue=CAFFEINATED retrieval=ALERT â†’ P(recall)=0.60 â†’ RECALLED
-  Stack: cue=TIRED retrieval=ALERT â†’ P(recall)=0.30 â†’ FORGOT
-  Queue: cue=CALM retrieval=ALERT â†’ P(recall)=0.60 â†’ RECALLED
+  Arrays: cue=ALERT retrieval=ALERT → P(recall)=0.90 → RECALLED
+  LinkedList: cue=CAFFEINATED retrieval=ALERT → P(recall)=0.60 → RECALLED
+  Stack: cue=TIRED retrieval=ALERT → P(recall)=0.30 → FORGOT
+  Queue: cue=CALM retrieval=ALERT → P(recall)=0.60 → RECALLED
 
 Good recall rate: 75%
 
 === Bad takes exam (ALERT) ===
 
-  Arrays: cue=TIRED retrieval=ALERT â†’ P(recall)=0.30 â†’ FORGOT
-  LinkedList: cue=TIRED retrieval=ALERT â†’ P(recall)=0.30 â†’ FORGOT
-  Stack: cue=TIRED retrieval=ALERT â†’ P(recall)=0.30 â†’ RECALLED
-  Queue: cue=TIRED retrieval=ALERT â†’ P(recall)=0.30 â†’ FORGOT
+  Arrays: cue=TIRED retrieval=ALERT → P(recall)=0.30 → FORGOT
+  LinkedList: cue=TIRED retrieval=ALERT → P(recall)=0.30 → FORGOT
+  Stack: cue=TIRED retrieval=ALERT → P(recall)=0.30 → RECALLED
+  Queue: cue=TIRED retrieval=ALERT → P(recall)=0.30 → FORGOT
 
 Bad recall rate: 25%
 
 --- Insight ---
-Good student varies study states â†’ less dependent on any single state.
-Bad student always studies tired â†’ performs poorly in alert exam conditions.
+Good student varies study states → less dependent on any single state.
+Bad student always studies tired → performs poorly in alert exam conditions.
 ```
 
 > **Try This:** For one week, deliberately vary your study location and time of day. Study at a desk, a library, a coffee shop, and outside. Notice whether your recall during review sessions depends on being in the same physical place you studied.
 
 > **Pro Tip:** State-dependent memory cuts both ways. If you always study while drinking coffee, you'll need coffee to recall optimally. Better strategy: study once with coffee and once without, creating state-independent memories. The most resilient learner can recall in any state.
 
-**One-Sentence Takeaway:** State-dependent memory works both ways â€” study in multiple states (with and without caffeine) to create state-independent recall that works in any condition.
+**One-Sentence Takeaway:** State-dependent memory works both ways — study in multiple states (with and without caffeine) to create state-independent recall that works in any condition.
 
 ---
 
@@ -1177,10 +1177,10 @@ Bad student always studies tired â†’ performs poorly in alert exam conditio
 
 **Practical strategies:**
 
-1. **Simulate the exam environment** â€” Study in a quiet, desk-based setting similar to your exam hall. If your exam allows scratch paper, use scratch paper during practice.
-2. **Use scent as a context cue** â€” A distinctive scent (like peppermint or rosemary) used only during study and re-applied during the exam can boost recall. This is called **olfactory context-dependent memory**.
-3. **Background music strategy** â€” If you must study with music, use the SAME playlist during review. Better yet: study without music so you are not dependent on it.
-4. **Context reinstatement** â€” If you cannot physically return to the study context, mentally reinstate it: close your eyes and vividly imagine the room, the lighting, the sounds, and your body position.
+1. **Simulate the exam environment** — Study in a quiet, desk-based setting similar to your exam hall. If your exam allows scratch paper, use scratch paper during practice.
+2. **Use scent as a context cue** — A distinctive scent (like peppermint or rosemary) used only during study and re-applied during the exam can boost recall. This is called **olfactory context-dependent memory**.
+3. **Background music strategy** — If you must study with music, use the SAME playlist during review. Better yet: study without music so you are not dependent on it.
+4. **Context reinstatement** — If you cannot physically return to the study context, mentally reinstate it: close your eyes and vividly imagine the room, the lighting, the sounds, and your body position.
 
 **Context-dependent vs State-dependent:**
 
@@ -1191,7 +1191,7 @@ Bad student always studies tired â†’ performs poorly in alert exam conditio
 | **Strategy** | Study in varied locations | Study in varied internal states |
 | **Best defense** | Vary study contexts | Vary study states |
 
-**Java example â€” ContextDependentMemory:**
+**Java example — ContextDependentMemory:**
 
 ```java
 import java.util.*;
@@ -1272,12 +1272,12 @@ public class ContextDependentMemory {
         System.out.println("\n=== Exam Phase (at EXAM_HALL) ===\n");
         System.out.println("Both students take the exam in EXAM_HALL.\n");
 
-        // Alice studied everything at COFFEE_SHOP â€” context mismatch
+        // Alice studied everything at COFFEE_SHOP — context mismatch
         List<ExamResult> aliceResults = new ArrayList<>();
         List<ExamResult> bobResults = new ArrayList<>();
 
         for (int i = 0; i < 4; i++) {
-            // Alice: context mismatch (COFFEE_SHOP â†’ EXAM_HALL)
+            // Alice: context mismatch (COFFEE_SHOP → EXAM_HALL)
             double aliceProb = 0.35;
             boolean aliceRecalled = rand.nextDouble() < aliceProb;
             aliceResults.add(new ExamResult("Alice", topics[i],
@@ -1294,14 +1294,14 @@ public class ContextDependentMemory {
         System.out.println("--- Alice (studied everything at COFFEE_SHOP) ---");
         for (ExamResult r : aliceResults) {
             System.out.printf("  %s: %s (confidence: %.0f%%)%n",
-                r.topic, r.recalled ? "RECALLED âœ“" : "FORGOT âœ—", r.confidence * 100);
+                r.topic, r.recalled ? "RECALLED ✓" : "FORGOT ✗", r.confidence * 100);
         }
         long aliceScore = aliceResults.stream().filter(r -> r.recalled).count();
 
         System.out.println("\n--- Bob (varied study contexts) ---");
         for (ExamResult r : bobResults) {
             System.out.printf("  %s: %s (confidence: %.0f%%)%n",
-                r.topic, r.recalled ? "RECALLED âœ“" : "FORGOT âœ—", r.confidence * 100);
+                r.topic, r.recalled ? "RECALLED ✓" : "FORGOT ✗", r.confidence * 100);
         }
         long bobScore = bobResults.stream().filter(r -> r.recalled).count();
 
@@ -1315,7 +1315,7 @@ public class ContextDependentMemory {
 
 > **Warning:** Don't rely on the "same scent" trick as a crutch. If your exam hall doesn't allow scents or you forget your peppermint oil, you'll lose the context cue. Always build context-independent memory by varying your study environments. Scent is a booster, not a replacement.
 
-**One-Sentence Takeaway:** Context cues like scents are memory boosters, not replacements â€” if you rely on a single context and lose it, the memory goes with it.
+**One-Sentence Takeaway:** Context cues like scents are memory boosters, not replacements — if you rely on a single context and lose it, the memory goes with it.
 
 ---
 
@@ -1324,18 +1324,18 @@ public class ContextDependentMemory {
 
 **Answer:**
 
-The **generation effect**, first demonstrated by Slamecka and Graf (1978), is the finding that **actively generating information leads to better memory than passively reading it**. When you generate an answer, a word, or a solution â€” even if you generate it incorrectly â€” you remember it better than if you had simply read the correct version.
+The **generation effect**, first demonstrated by Slamecka and Graf (1978), is the finding that **actively generating information leads to better memory than passively reading it**. When you generate an answer, a word, or a solution — even if you generate it incorrectly — you remember it better than if you had simply read the correct version.
 
 **The classic experiment:**
-- Group A reads pairs: "rapid â€” fast"
-- Group B generates the second word from a rule: "rapid â€” f???"
+- Group A reads pairs: "rapid — fast"
+- Group B generates the second word from a rule: "rapid — f???"
 - Group B consistently shows 20-40% better recall
 
 **Why it works:**
-1. **Effortful processing** â€” Generating requires cognitive effort, which strengthens the memory trace
-2. **Semantic elaboration** â€” Your brain activates related concepts to produce the answer, creating richer associations
-3. **Prediction error signals** â€” If your prediction is wrong, the surprise enhances encoding
-4. **Sense of agency** â€” Self-generated content feels more personally relevant
+1. **Effortful processing** — Generating requires cognitive effort, which strengthens the memory trace
+2. **Semantic elaboration** — Your brain activates related concepts to produce the answer, creating richer associations
+3. **Prediction error signals** — If your prediction is wrong, the surprise enhances encoding
+4. **Sense of agency** — Self-generated content feels more personally relevant
 
 **How to apply it to your studying:**
 
@@ -1347,7 +1347,7 @@ The **generation effect**, first demonstrated by Slamecka and Graf (1978), is th
 | Code learning | Read through examples | Type the code from memory, fix errors |
 | Reading | Highlight passages | Pause and summarize each paragraph in one sentence |
 
-**Java example â€” GenerationEffect:**
+**Java example — GenerationEffect:**
 
 ```java
 import java.util.*;
@@ -1369,7 +1369,7 @@ public class GenerationEffect {
         void study(List<StudyItem> items) {
             System.out.println("=== PASSIVE STUDY (just read) ===\n");
             for (StudyItem item : items) {
-                System.out.println("Read: " + item.topic + " â†’ " + item.fullAnswer);
+                System.out.println("Read: " + item.topic + " → " + item.fullAnswer);
             }
             System.out.println("\n(That felt easy. It also won't stick.)\n");
         }
@@ -1387,7 +1387,7 @@ public class GenerationEffect {
                 System.out.println("Correct answer: " + item.fullAnswer);
                 System.out.println("Check: " + (compareAnswers(
                     "YOU WROTE SOMETHING", item.fullAnswer)
-                    ? "âœ“ Match (or near-match)" : "âœ— Gap â€” study this more"));
+                    ? "✓ Match (or near-match)" : "✗ Gap — study this more"));
                 System.out.println();
             }
         }
@@ -1401,7 +1401,7 @@ public class GenerationEffect {
     // Memory test to demonstrate the effect
     static class RecallTest {
         void test(List<StudyItem> items, String groupName) {
-            System.out.println("=== " + groupName + " â€” 24-hour recall test ===\n");
+            System.out.println("=== " + groupName + " — 24-hour recall test ===\n");
             Random rand = new Random();
             for (StudyItem item : items) {
                 // Passive learners typically recall 30-40%
@@ -1413,8 +1413,8 @@ public class GenerationEffect {
                     recallRate = 0.70 + (rand.nextDouble() - 0.5) * 0.1;
                 }
                 boolean recalled = rand.nextDouble() < recallRate;
-                System.out.printf("Q: %s â†’ %s%n",
-                    item.topic, recalled ? "RECALLED âœ“" : "FORGOT âœ—");
+                System.out.printf("Q: %s → %s%n",
+                    item.topic, recalled ? "RECALLED ✓" : "FORGOT ✗");
             }
         }
     }
@@ -1452,10 +1452,10 @@ public class GenerationEffect {
 ```
 === PASSIVE STUDY (just read) ===
 
-Read: What is polymorphism? â†’ Ability of objects to take many forms; method overloading (compile-time) and overriding (runtime)
-Read: What is a lambda expression? â†’ Anonymous function: (parameters) -> expression; enables functional programming in Java
-Read: What is the difference between == and .equals()? â†’ == compares reference equality; .equals() compares value equality
-Read: What is a race condition? â†’ Two threads access shared data simultaneously; outcome depends on thread scheduling order
+Read: What is polymorphism? → Ability of objects to take many forms; method overloading (compile-time) and overriding (runtime)
+Read: What is a lambda expression? → Anonymous function: (parameters) -> expression; enables functional programming in Java
+Read: What is the difference between == and .equals()? → == compares reference equality; .equals() compares value equality
+Read: What is a race condition? → Two threads access shared data simultaneously; outcome depends on thread scheduling order
 
 (That felt easy. It also won't stick.)
 
@@ -1464,35 +1464,35 @@ Read: What is a race condition? â†’ Two threads access shared data simultan
 Q: What is polymorphism?
 Your answer: [YOU WRITE YOUR ANSWER FIRST]
 Correct answer: Ability of objects to take many forms; method overloading (compile-time) and overriding (runtime)
-Check: âœ— Gap â€” study this more
+Check: ✗ Gap — study this more
 
 Q: What is a lambda expression?
 Your answer: [YOU WRITE YOUR ANSWER FIRST]
 Correct answer: Anonymous function: (parameters) -> expression; enables functional programming in Java
-Check: âœ— Gap â€” study this more
+Check: ✗ Gap — study this more
 
 ...
 
-=== Passive Group â€” 24-hour recall test ===
+=== Passive Group — 24-hour recall test ===
 
-Q: What is polymorphism? â†’ FORGOT âœ—
-Q: What is a lambda expression? â†’ FORGOT âœ—
-Q: What is the difference between == and .equals()? â†’ RECALLED âœ“
-Q: What is a race condition? â†’ FORGOT âœ—
+Q: What is polymorphism? → FORGOT ✗
+Q: What is a lambda expression? → FORGOT ✗
+Q: What is the difference between == and .equals()? → RECALLED ✓
+Q: What is a race condition? → FORGOT ✗
 
-=== Active Group â€” 24-hour recall test ===
+=== Active Group — 24-hour recall test ===
 
-Q: What is polymorphism? â†’ RECALLED âœ“
-Q: What is a lambda expression? â†’ RECALLED âœ“
-Q: What is the difference between == and .equals()? â†’ RECALLED âœ“
-Q: What is a race condition? â†’ FORGOT âœ—
+Q: What is polymorphism? → RECALLED ✓
+Q: What is a lambda expression? → RECALLED ✓
+Q: What is the difference between == and .equals()? → RECALLED ✓
+Q: What is a race condition? → FORGOT ✗
 ```
 
 > **Try This:** Take the next chapter you need to study. Instead of reading it twice, read it once, then write 5 questions about it from memory. Answer each question before looking back at the text. You will remember more from this one active session than from three passive re-readings.
 
 > **Pro Tip:** The generation effect works even when you generate WRONG answers. Attempting an answer and getting it wrong produces better long-term memory than passively reading the correct answer. The error creates a "surprise signal" that strengthens encoding when you see the right answer.
 
-**One-Sentence Takeaway:** The generation effect means attempting an answer â€” even getting it wrong â€” produces better memory than passive reading because errors create a surprise signal that strengthens encoding.
+**One-Sentence Takeaway:** The generation effect means attempting an answer — even getting it wrong — produces better memory than passive reading because errors create a surprise signal that strengthens encoding.
 
 ---
 
@@ -1514,20 +1514,20 @@ The **testing effect** (also called **retrieval practice** or the **test-enhance
 | Low-stakes tests are as effective as high-stakes | Khanna (2015) | Use self-quizzes, not just practice exams |
 
 **Why the testing effect works:**
-- **Retrieval strengthens the memory trace** â€” Each recall attempt strengthens the neural pathway to the memory
-- **Elaboration during retrieval** â€” The brain reconstructs the memory, not just replays it, creating richer associations
-- **Error-driven learning** â€” Incorrect recall highlights gaps, which you then fill
-- **Transfer-appropriate processing** â€” The mental operations during testing match those needed during the actual exam
+- **Retrieval strengthens the memory trace** — Each recall attempt strengthens the neural pathway to the memory
+- **Elaboration during retrieval** — The brain reconstructs the memory, not just replays it, creating richer associations
+- **Error-driven learning** — Incorrect recall highlights gaps, which you then fill
+- **Transfer-appropriate processing** — The mental operations during testing match those needed during the actual exam
 
 **How to implement retrieval practice:**
 
-1. **The 5-minute recall** â€” After every study session, close your book and spend 5 minutes writing everything you remember
-2. **Self-quizzing** â€” Turn headings into questions, then answer them without looking
-3. **Blank page method** â€” From Chapter 3: write everything you know about a topic on a blank page, then check
-4. **Anki spaced repetition** â€” Digital flashcards with active recall built in (Chapter 3)
-5. **Teach from memory** â€” Explain the concept aloud as if teaching a class, without notes
+1. **The 5-minute recall** — After every study session, close your book and spend 5 minutes writing everything you remember
+2. **Self-quizzing** — Turn headings into questions, then answer them without looking
+3. **Blank page method** — From Chapter 3: write everything you know about a topic on a blank page, then check
+4. **Anki spaced repetition** — Digital flashcards with active recall built in (Chapter 3)
+5. **Teach from memory** — Explain the concept aloud as if teaching a class, without notes
 
-**Java example â€” TestingEffect:**
+**Java example — TestingEffect:**
 
 ```java
 import java.util.*;
@@ -1613,8 +1613,8 @@ public class TestingEffect {
         System.out.println("=== Study Phase (all learners study RAM topic once) ===\n");
         System.out.println("Material: " + memoryTopic.content.substring(0, 80) + "...\n");
 
-        // One week later â€” review phase
-        System.out.println("=== One Week Later â€” Review Phase ===\n");
+        // One week later — review phase
+        System.out.println("=== One Week Later — Review Phase ===\n");
 
         double retentionRestudy = 0;
         double retentionTestOnly = 0;
@@ -1649,7 +1649,7 @@ public class TestingEffect {
 
 Material: RAM stores data in addressable cells using capacitors and transistors. Each ce...
 
-=== One Week Later â€” Review Phase ===
+=== One Week Later — Review Phase ===
 
 Restudy (reread):      40.8% retention
 Test without feedback:  55.2% retention
@@ -1662,9 +1662,9 @@ compared to restudying for the same amount of time.
 
 > **Try This:** Take a topic you studied last week. Spend 5 minutes writing everything you remember on a blank page (retrieval practice). Then check your notes and fill in gaps. Next week, do the same again. Compare your recall to a topic you simply re-read twice last week.
 
-> **Remember:** The testing effect requires actual retrieval â€” not recognition. Multiple-choice questions give you recognition, which is weaker. Open-ended recall (blank page, verbal explanation) forces full retrieval. For maximum benefit, write without any cues and only check afterward.
+> **Remember:** The testing effect requires actual retrieval — not recognition. Multiple-choice questions give you recognition, which is weaker. Open-ended recall (blank page, verbal explanation) forces full retrieval. For maximum benefit, write without any cues and only check afterward.
 
-**One-Sentence Takeaway:** The testing effect demands open-ended retrieval, not recognition â€” multiple-choice is too weak; blank-page recall forces the full neural reconstruction that strengthens memory.
+**One-Sentence Takeaway:** The testing effect demands open-ended retrieval, not recognition — multiple-choice is too weak; blank-page recall forces the full neural reconstruction that strengthens memory.
 
 ---
 
@@ -1673,7 +1673,7 @@ compared to restudying for the same amount of time.
 
 **Answer:**
 
-**Desirable difficulties**, a term coined by Robert Bjork (1994), are learning challenges that slow down acquisition and reduce apparent performance in the short term, but **substantially improve long-term retention and transfer**. The "desirable" part means they are worth the extra effort â€” the "difficulties" part means they feel harder than easier alternatives.
+**Desirable difficulties**, a term coined by Robert Bjork (1994), are learning challenges that slow down acquisition and reduce apparent performance in the short term, but **substantially improve long-term retention and transfer**. The "desirable" part means they are worth the extra effort — the "difficulties" part means they feel harder than easier alternatives.
 
 **The five major desirable difficulties:**
 
@@ -1687,7 +1687,7 @@ compared to restudying for the same amount of time.
 
 **The calibration problem:**
 
-The critical challenge with desirable difficulties is **calibration**: too easy and you learn nothing durable; too hard and you learn nothing at all. The sweet spot is at the edge of your current ability â€” what Vygotsky called the **Zone of Proximal Development**.
+The critical challenge with desirable difficulties is **calibration**: too easy and you learn nothing durable; too hard and you learn nothing at all. The sweet spot is at the edge of your current ability — what Vygotsky called the **Zone of Proximal Development**.
 
 | Difficulty level | Effect on learning | When to use |
 |-----------------|-------------------|-------------|
@@ -1695,7 +1695,7 @@ The critical challenge with desirable difficulties is **calibration**: too easy 
 | **Optimal difficulty** (~60-80% success) | Maximum long-term gains | Main study sessions |
 | **Too hard** (<40% success) | Frustration, minimal learning | Diagnostic (find gaps), then backfill |
 
-**Java example â€” DesirableDifficulties:**
+**Java example — DesirableDifficulties:**
 
 ```java
 import java.util.*;
@@ -1762,12 +1762,12 @@ public class DesirableDifficulties {
                 boolean solvedIt = rand.nextDouble() < successProb;
                 if (solvedIt) solved++;
 
-                String status = solvedIt ? "SOLVED âœ“" : "STRUGGLED âœ—";
+                String status = solvedIt ? "SOLVED ✓" : "STRUGGLED ✗";
                 String note = "";
                 if (useDesirableDifficulties && problem.requiresInterleaving) {
-                    note = " [interleaved â€” felt hard, builds durable skill]";
+                    note = " [interleaved — felt hard, builds durable skill]";
                 } else if (!useDesirableDifficulties && problem.difficulty <= 4) {
-                    note = " [blocked â€” felt easy, limited long-term gain]";
+                    note = " [blocked — felt easy, limited long-term gain]";
                 }
                 System.out.printf("%2d. %-40s %s%s%n",
                     i + 1, problem.description, status, note);
@@ -1815,7 +1815,7 @@ public class DesirableDifficulties {
         System.out.println("\n--- Interleaved Learner (embraces difficulty) ---");
         interleavedLearner.practice(problems, 10);
 
-        System.out.println("\n=== One Month Later â€” Retention Test ===");
+        System.out.println("\n=== One Month Later — Retention Test ===");
         System.out.println("Blocked learner: ~30% retention (blocked practice is fragile)");
         System.out.println("Interleaved learner: ~70% retention (desirable difficulties stick)");
         System.out.println("\nThe session FELT harder for the interleaved learner,");
@@ -1824,11 +1824,11 @@ public class DesirableDifficulties {
 }
 ```
 
-> **Try This:** Pick one subject you are studying. For 30 minutes, deliberately interleave: switch between 3 different topics every 5-7 minutes instead of doing all of one topic then all of the next. Notice that it feels harder and slower in the moment. Trust the research â€” this is exactly the feeling of durable learning.
+> **Try This:** Pick one subject you are studying. For 30 minutes, deliberately interleave: switch between 3 different topics every 5-7 minutes instead of doing all of one topic then all of the next. Notice that it feels harder and slower in the moment. Trust the research — this is exactly the feeling of durable learning.
 
-> **Pro Tip:** The 60-80% sweet spot is not just about problem difficulty â€” it's about cognitive effort. If you can answer without thinking, it's too easy. If you're completely stuck after 5 minutes, it's too hard. The ideal is when you struggle but eventually succeed. Calibrate by adjusting task novelty, not difficulty.
+> **Pro Tip:** The 60-80% sweet spot is not just about problem difficulty — it's about cognitive effort. If you can answer without thinking, it's too easy. If you're completely stuck after 5 minutes, it's too hard. The ideal is when you struggle but eventually succeed. Calibrate by adjusting task novelty, not difficulty.
 
-**One-Sentence Takeaway:** Desirable difficulties sit at the sweet spot where you struggle but eventually succeed â€” if you can answer without thinking it's too easy, if you're stuck after 5 minutes it's too hard.
+**One-Sentence Takeaway:** Desirable difficulties sit at the sweet spot where you struggle but eventually succeed — if you can answer without thinking it's too easy, if you're stuck after 5 minutes it's too hard.
 
 ---
 
@@ -1837,7 +1837,7 @@ public class DesirableDifficulties {
 
 **Answer:**
 
-**Overlearning** is continuing to study or practice material **after you have achieved mastery** (i.e., after you can recall it perfectly at least once). While intuitive â€” "more practice must be better" â€” the research shows diminishing and eventually negative returns.
+**Overlearning** is continuing to study or practice material **after you have achieved mastery** (i.e., after you can recall it perfectly at least once). While intuitive — "more practice must be better" — the research shows diminishing and eventually negative returns.
 
 **The overlearning curve:**
 
@@ -1857,13 +1857,13 @@ public class DesirableDifficulties {
 
 | Scenario | Why overlearning helps |
 |----------|----------------------|
-| **High-stakes fundamentals** | Basic arithmetic, syntax rules â€” these must be automatic |
-| **Performance under pressure** | Public speaking, live coding â€” overlearning builds automaticity |
+| **High-stakes fundamentals** | Basic arithmetic, syntax rules — these must be automatic |
+| **Performance under pressure** | Public speaking, live coding — overlearning builds automaticity |
 | **Building blocks for advanced topics** | If concept X is prerequisite for Y, overlearning X helps |
 
 **The better alternative:** Instead of overlearning one topic, use the **marginally-better-use-of-time test**: ask yourself "Could I learn something NEW with this time that would produce more total learning?" If yes, move on.
 
-**Java example â€” Overlearning:**
+**Java example — Overlearning:**
 
 ```java
 import java.util.*;
@@ -1919,7 +1919,7 @@ public class Overlearning {
                 practiceRound,
                 topic.name,
                 topic.correctRecalls,
-                topic.isMastered() ? " â˜… MASTERED" : "");
+                topic.isMastered() ? " ★ MASTERED" : "");
         }
 
         int masteryRound = practiceRound;
@@ -1965,7 +1965,7 @@ Topic: Quick Sort
 Round  1: Quick Sort recall #0
 Round  2: Quick Sort recall #1
 Round  3: Quick Sort recall #2
-Round  4: Quick Sort recall #3 â˜… MASTERED
+Round  4: Quick Sort recall #3 ★ MASTERED
 
 Mastery achieved at round 4.
 
@@ -1994,11 +1994,11 @@ and 8 rounds on Merge Sort (NEW material)
 for higher total learning return.
 ```
 
-> **Try This:** Identify one topic you have been "overlearning" â€” going over it repeatedly even though you can already recall it perfectly. Stop. Move on to a new topic. Schedule one brief review session for next week instead. Measure your retention then.
+> **Try This:** Identify one topic you have been "overlearning" — going over it repeatedly even though you can already recall it perfectly. Stop. Move on to a new topic. Schedule one brief review session for next week instead. Measure your retention then.
 
-> **Warning:** Overlearning creates a dangerous illusion of competence. The material feels easy because you just practiced it â€” but that fluency is temporary. The real test is recall after a delay. If you can recall it perfectly a week later without intermediate practice, you're done. If not, you need spaced retrieval, not more overlearning.
+> **Warning:** Overlearning creates a dangerous illusion of competence. The material feels easy because you just practiced it — but that fluency is temporary. The real test is recall after a delay. If you can recall it perfectly a week later without intermediate practice, you're done. If not, you need spaced retrieval, not more overlearning.
 
-**One-Sentence Takeaway:** Overlearning creates a temporary illusion of competence â€” the real test is perfect recall a week later without intermediate practice, not how easy the material feels right after studying.
+**One-Sentence Takeaway:** Overlearning creates a temporary illusion of competence — the real test is perfect recall a week later without intermediate practice, not how easy the material feels right after studying.
 
 ---
 
@@ -2017,9 +2017,9 @@ If you design your cheat sheet well, **you will rarely need to look at it during
 
 | Pass | Action | Time |
 |------|--------|------|
-| **Pass 1 â€” Dump** | From memory, write everything you can about the topic on scratch paper | 10 min |
-| **Pass 2 â€” Select** | Choose only the most essential 20% that covers 80% of likely questions | 10 min |
-| **Pass 3 â€” Compact** | Organize the selected content into the smallest possible space using abbreviations, diagrams, and symbols | 10 min |
+| **Pass 1 — Dump** | From memory, write everything you can about the topic on scratch paper | 10 min |
+| **Pass 2 — Select** | Choose only the most essential 20% that covers 80% of likely questions | 10 min |
+| **Pass 3 — Compact** | Organize the selected content into the smallest possible space using abbreviations, diagrams, and symbols | 10 min |
 
 **What to include on a cheat sheet:**
 
@@ -2032,7 +2032,7 @@ If you design your cheat sheet well, **you will rarely need to look at it during
 | **Examples** | One worked example per key concept | Medium |
 | **Definitions** | Keywords and their precise definitions | Low (exams rarely test straight definitions) |
 
-**Java example â€” CheatSheetGenerator:**
+**Java example — CheatSheetGenerator:**
 
 ```java
 import java.util.*;
@@ -2060,10 +2060,10 @@ public class CheatSheetGenerator {
         void addKeyword(String k) { keywords.add(k); }
 
         void display() {
-            System.out.println("â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—");
-            System.out.printf("â•‘ %-36s â•‘%n", "CHEAT SHEET");
-            System.out.printf("â•‘ %-36s â•‘%n", topic);
-            System.out.println("â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+            System.out.println("╔══════════════════════════════════════╗");
+            System.out.printf("║ %-36s ║%n", "CHEAT SHEET");
+            System.out.printf("║ %-36s ║%n", topic);
+            System.out.println("╚══════════════════════════════════════╝");
 
             printSection("FORMULAS", formulas);
             printSection("ACRONYMS", acronyms);
@@ -2075,9 +2075,9 @@ public class CheatSheetGenerator {
 
         private void printSection(String title, List<String> items) {
             if (items.isEmpty()) return;
-            System.out.printf("%nâ–  %s%n", title);
+            System.out.printf("%n■ %s%n", title);
             for (String item : items) {
-                System.out.println("  â€¢ " + item);
+                System.out.println("  • " + item);
             }
         }
 
@@ -2085,11 +2085,11 @@ public class CheatSheetGenerator {
         void creationProcess() {
             System.out.println("\n=== Cheat Sheet Creation Process ===");
             System.out.println("1. DUMP (10 min): Write everything you know from memory");
-            System.out.println("   â†’ Forces retrieval practice (testing effect)");
+            System.out.println("   → Forces retrieval practice (testing effect)");
             System.out.println("2. SELECT (10 min): Choose 20% covering 80% of questions");
-            System.out.println("   â†’ Forces prioritization and compression");
+            System.out.println("   → Forces prioritization and compression");
             System.out.println("3. COMPACT (10 min): Abbreviate, diagram, structure");
-            System.out.println("   â†’ Forces elaboration and organization");
+            System.out.println("   → Forces elaboration and organization");
             System.out.println("\nTotal: 30 minutes of active learning disguised as 'cheating'.");
         }
     }
@@ -2100,7 +2100,7 @@ public class CheatSheetGenerator {
         cs.addFormula("Array: O(1) get, O(n) insert/delete");
         cs.addFormula("HashMap: O(1) avg get/put, O(n) worst");
         cs.addFormula("BST: O(log n) avg, O(n) worst");
-        cs.addFormula("Sorting: Quick O(n log n), Merge O(n log n), Bubble O(nÂ²)");
+        cs.addFormula("Sorting: Quick O(n log n), Merge O(n log n), Bubble O(n²)");
         cs.addFormula("Dijkstra: O((V+E) log V) with PQ");
 
         cs.addAcronym("DFS: Depth-First Search (stack/recursion)");
@@ -2118,7 +2118,7 @@ public class CheatSheetGenerator {
         cs.addEdgeCase("DP: index out of bounds, negative base case");
         cs.addEdgeCase("HashMap: collision chain depth, rehashing threshold");
 
-        cs.addExample("Reverse list: nullâ†’1â†’2â†’3â†’null â†’ nullâ†1â†2â†3â†null");
+        cs.addExample("Reverse list: null→1→2→3→null → null←1←2←3←null");
         cs.addExample("Inorder BST: 2,5,7,10,15 (sorted if valid BST)");
 
         cs.addKeyword("Amortized, In-place, Stable, Recursive, Tail-recursive");
@@ -2135,60 +2135,60 @@ public class CheatSheetGenerator {
 ```
 === Cheat Sheet Creation Process ===
 1. DUMP (10 min): Write everything you know from memory
-   â†’ Forces retrieval practice (testing effect)
+   → Forces retrieval practice (testing effect)
 2. SELECT (10 min): Choose 20% covering 80% of questions
-   â†’ Forces prioritization and compression
+   → Forces prioritization and compression
 3. COMPACT (10 min): Abbreviate, diagram, structure
-   â†’ Forces elaboration and organization
+   → Forces elaboration and organization
 
 Total: 30 minutes of active learning disguised as 'cheating'.
 
 --- The Final Cheat Sheet ---
 
-â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-â•‘ CHEAT SHEET                          â•‘
-â•‘ Data Structures & Algorithms         â•‘
-â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+╔══════════════════════════════════════╗
+║ CHEAT SHEET                          ║
+║ Data Structures & Algorithms         ║
+╚══════════════════════════════════════╝
 
-â–  FORMULAS
-  â€¢ Array: O(1) get, O(n) insert/delete
-  â€¢ HashMap: O(1) avg get/put, O(n) worst
-  â€¢ BST: O(log n) avg, O(n) worst
-  â€¢ Sorting: Quick O(n log n), Merge O(n log n), Bubble O(nÂ²)
-  â€¢ Dijkstra: O((V+E) log V) with PQ
+■ FORMULAS
+  • Array: O(1) get, O(n) insert/delete
+  • HashMap: O(1) avg get/put, O(n) worst
+  • BST: O(log n) avg, O(n) worst
+  • Sorting: Quick O(n log n), Merge O(n log n), Bubble O(n²)
+  • Dijkstra: O((V+E) log V) with PQ
 
-â–  ACRONYMS
-  â€¢ DFS: Depth-First Search (stack/recursion)
-  â€¢ BFS: Breadth-First Search (queue)
-  â€¢ LIFO: Stack, FIFO: Queue
-  â€¢ LL, RR, LR, RL: AVL rotation cases
+■ ACRONYMS
+  • DFS: Depth-First Search (stack/recursion)
+  • BFS: Breadth-First Search (queue)
+  • LIFO: Stack, FIFO: Queue
+  • LL, RR, LR, RL: AVL rotation cases
 
-â–  PROCEDURES
-  â€¢ Binary Search: lo=0, hi=n-1; while(lo<=hi): mid=lo+(hi-lo)/2
-  â€¢ DFS: visit node, mark visited, recurse all neighbors
-  â€¢ Quick Sort: pick pivot, partition, recurse left+right
-  â€¢ Dijkstra: PQ<(dist,node)>, relax edges, track prev
+■ PROCEDURES
+  • Binary Search: lo=0, hi=n-1; while(lo<=hi): mid=lo+(hi-lo)/2
+  • DFS: visit node, mark visited, recurse all neighbors
+  • Quick Sort: pick pivot, partition, recurse left+right
+  • Dijkstra: PQ<(dist,node)>, relax edges, track prev
 
-â–  EDGE CASES
-  â€¢ Linked list: null head, single node, cycle
-  â€¢ BST: duplicate values, unbalanced tree
-  â€¢ DP: index out of bounds, negative base case
-  â€¢ HashMap: collision chain depth, rehashing threshold
+■ EDGE CASES
+  • Linked list: null head, single node, cycle
+  • BST: duplicate values, unbalanced tree
+  • DP: index out of bounds, negative base case
+  • HashMap: collision chain depth, rehashing threshold
 
-â–  EXAMPLES
-  â€¢ Reverse list: nullâ†’1â†’2â†’3â†’null â†’ nullâ†1â†2â†3â†null
-  â€¢ Inorder BST: 2,5,7,10,15 (sorted if valid BST)
+■ EXAMPLES
+  • Reverse list: null→1→2→3→null → null←1←2←3←null
+  • Inorder BST: 2,5,7,10,15 (sorted if valid BST)
 
-â–  KEYWORDS
-  â€¢ Amortized, In-place, Stable, Recursive, Tail-recursive
-  â€¢ Divide-and-conquer, Dynamic programming, Greedy
+■ KEYWORDS
+  • Amortized, In-place, Stable, Recursive, Tail-recursive
+  • Divide-and-conquer, Dynamic programming, Greedy
 ```
 
 > **Try This:** Before your next exam, create a one-page cheat sheet using the 3-pass method. Do not use the cheat sheet during the exam. After the exam, compare what you remembered vs what you had on your sheet. Use the gap to improve your next cheat sheet.
 
-> **Pro Tip:** The constraint of ONE page is the mechanism, not the obstacle. Forcing yourself to fit everything on a single page drives the compression decisions that create deep learning. A multi-page cheat sheet defeats the purpose â€” you're just rewriting notes, not selecting the essential 20%.
+> **Pro Tip:** The constraint of ONE page is the mechanism, not the obstacle. Forcing yourself to fit everything on a single page drives the compression decisions that create deep learning. A multi-page cheat sheet defeats the purpose — you're just rewriting notes, not selecting the essential 20%.
 
-**One-Sentence Takeaway:** The constraint of one page is the mechanism â€” forcing yourself to fit everything on a single page drives the compression decisions that create deep learning.
+**One-Sentence Takeaway:** The constraint of one page is the mechanism — forcing yourself to fit everything on a single page drives the compression decisions that create deep learning.
 
 ---
 
@@ -2203,11 +2203,11 @@ The most powerful approach to memorizing complex material is to **layer multiple
 
 | Layer | System | What it provides | Best for |
 |-------|--------|-----------------|----------|
-| **Layer 1** | Memory Palace (Q46) | Spatial framework â€” the "skeleton" | Large-scale organization of content |
-| **Layer 2** | Chaining (Q48) | Sequential structure â€” the "connective tissue" | Ordered processes within each room |
-| **Layer 3** | Visual Mnemonics (Q47) | Concrete encoding â€” the "flesh" | Abstract concepts, definitions |
-| **Layer 4** | Compression (Q50) | Compact triggers â€” the "labels" | Acronyms, formulas, quick recall |
-| **Layer 5** | Retrieval Practice (Q55) | Strengthening â€” the "workout" | Long-term retention and automaticity |
+| **Layer 1** | Memory Palace (Q46) | Spatial framework — the "skeleton" | Large-scale organization of content |
+| **Layer 2** | Chaining (Q48) | Sequential structure — the "connective tissue" | Ordered processes within each room |
+| **Layer 3** | Visual Mnemonics (Q47) | Concrete encoding — the "flesh" | Abstract concepts, definitions |
+| **Layer 4** | Compression (Q50) | Compact triggers — the "labels" | Acronyms, formulas, quick recall |
+| **Layer 5** | Retrieval Practice (Q55) | Strengthening — the "workout" | Long-term retention and automaticity |
 
 ```mermaid
 flowchart TD
@@ -2219,7 +2219,7 @@ flowchart TD
     Master -->|Review & Repeat| L1
 ```
 
-**Worked example â€” Mastering OS Memory Management:**
+**Worked example — Mastering OS Memory Management:**
 
 1. **Layer 1 (Palace):** Designate rooms for different OS memory topics
    - Kitchen = Paging & Segmentation
@@ -2227,15 +2227,15 @@ flowchart TD
    - Bedroom = Page Replacement Algorithms
 
 2. **Layer 2 (Chaining):** Inside the kitchen, chain the paging concepts
-   - A chef **pages** through a cookbook â†’ finds a **frame** â†’ uses a **page table** â†’ checks **valid/invalid bit** â†’ set the **dirty bit** if modified
+   - A chef **pages** through a cookbook → finds a **frame** → uses a **page table** → checks **valid/invalid bit** → set the **dirty bit** if modified
 
-3. **Layer 3 (Visual Mnemonics):** For FIFO page replacement, imagine a queue of pages at a grocery checkout â€” the FIRST one in line is the FIRST to leave (FIFO). For LRU, imagine a cat that gets thrown out if it hasn't been petted recently.
+3. **Layer 3 (Visual Mnemonics):** For FIFO page replacement, imagine a queue of pages at a grocery checkout — the FIRST one in line is the FIRST to leave (FIFO). For LRU, imagine a cat that gets thrown out if it hasn't been petted recently.
 
-4. **Layer 4 (Compression):** FIFO â†’ "First In, First Out" (obvious), LRU â†’ "Least Recently Petted Cat", Optimal â†’ "Magic oracle â€” knows the future"
+4. **Layer 4 (Compression):** FIFO → "First In, First Out" (obvious), LRU → "Least Recently Petted Cat", Optimal → "Magic oracle — knows the future"
 
 5. **Layer 5 (Practice):** Walk your palace. Recall each chain. Generate the acronym expansions. Quiz yourself on page replacement algorithms.
 
-**Java example â€” IntegratedMemorySystem:**
+**Java example — IntegratedMemorySystem:**
 
 ```java
 import java.util.*;
@@ -2279,23 +2279,23 @@ public class IntegratedMemorySystem {
         }
 
         void fullWalk() {
-            System.out.println("â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+            System.out.println("═══════════════════════════════════════");
             System.out.println("  INTEGRATED MEMORY SYSTEM");
             System.out.println("  Topic: " + topic);
-            System.out.println("â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n");
+            System.out.println("═══════════════════════════════════════\n");
 
             for (MemoryLayer layer : layers) {
                 layer.walk();
             }
 
-            System.out.println("â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+            System.out.println("═══════════════════════════════════════");
             System.out.println("  The layers reinforce each other:");
             for (int i = 0; i < layers.size() - 1; i++) {
                 System.out.println("  Layer " + (i+1) + " ("
-                    + layers.get(i).name + ") â†’ provides context for Layer "
+                    + layers.get(i).name + ") → provides context for Layer "
                     + (i+2) + " (" + layers.get(i+1).name + ")");
             }
-            System.out.println("â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+            System.out.println("═══════════════════════════════════════");
         }
 
         void retrievalTest() {
@@ -2317,20 +2317,20 @@ public class IntegratedMemorySystem {
         // Layer 1: Memory Palace
         MemoryLayer palace = new MemoryLayer(
             "Memory Palace",
-            "Spatial skeleton â€” rooms for synchronization concepts");
-        palace.addContent("Kitchen â†’ Critical Section Problem (shared stove)");
-        palace.addContent("Living Room â†’ Semaphores (bouncer controlling access)");
-        palace.addContent("Bedroom â†’ Monitors (bedroom with lock)");
-        palace.addContent("Balcony â†’ Deadlock (four philosophers at a round table)");
+            "Spatial skeleton — rooms for synchronization concepts");
+        palace.addContent("Kitchen → Critical Section Problem (shared stove)");
+        palace.addContent("Living Room → Semaphores (bouncer controlling access)");
+        palace.addContent("Bedroom → Monitors (bedroom with lock)");
+        palace.addContent("Balcony → Deadlock (four philosophers at a round table)");
         system.addLayer(palace);
 
         // Layer 2: Chaining
         MemoryLayer chain = new MemoryLayer(
             "Chaining",
-            "Sequential story â€” critical section â†’ semaphore â†’ deadlock");
-        chain.addContent("Chef enters kitchen (entry section) â†’ cooks (critical section) â†’ leaves (exit section)");
-        chain.addContent("Bouncer uses clicker (semaphore wait) â†’ counts down â†’ lets chef in â†’ counts up (signal)");
-        chain.addContent("Two chefs both need stove AND sink â†’ deadlock (circular wait)");
+            "Sequential story — critical section → semaphore → deadlock");
+        chain.addContent("Chef enters kitchen (entry section) → cooks (critical section) → leaves (exit section)");
+        chain.addContent("Bouncer uses clicker (semaphore wait) → counts down → lets chef in → counts up (signal)");
+        chain.addContent("Two chefs both need stove AND sink → deadlock (circular wait)");
         chain.addContent("Deadlock requires: Mutual Exclusion + Hold & Wait + No Preemption + Circular Wait");
         system.addLayer(chain);
 
@@ -2348,7 +2348,7 @@ public class IntegratedMemorySystem {
         MemoryLayer compression = new MemoryLayer(
             "Memory Compression",
             "Acronyms and formulas");
-        compression.addContent("CS Problem: Entry â†’ Critical â†’ Exit â†’ Remainder");
+        compression.addContent("CS Problem: Entry → Critical → Exit → Remainder");
         compression.addContent("Semaphore: wait(S) = down(S) = P(S) [proberen]");
         compression.addContent("Semaphore: signal(S) = up(S) = V(S) [verhogen]");
         compression.addContent("Deadlock 4 conditions: ME + HW + NP + CW");
@@ -2358,7 +2358,7 @@ public class IntegratedMemorySystem {
         // Layer 5: Retrieval Practice
         MemoryLayer practice = new MemoryLayer(
             "Retrieval Practice",
-            "Self-test questions â€” close your eyes and answer");
+            "Self-test questions — close your eyes and answer");
         practice.addContent("Q: What 4 conditions must hold for deadlock?");
         practice.addContent("Q: What is the difference between a binary semaphore and a mutex?");
         practice.addContent("Q: Name 3 ways to prevent deadlock.");
@@ -2373,23 +2373,23 @@ public class IntegratedMemorySystem {
 
 **Output:**
 ```
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+═══════════════════════════════════════
   INTEGRATED MEMORY SYSTEM
   Topic: Process Synchronization
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+═══════════════════════════════════════
 
 Layer: Memory Palace
-  (Spatial skeleton â€” rooms for synchronization concepts)
-  1. Kitchen â†’ Critical Section Problem (shared stove)
-  2. Living Room â†’ Semaphores (bouncer controlling access)
-  3. Bedroom â†’ Monitors (bedroom with lock)
-  4. Balcony â†’ Deadlock (four philosophers at a round table)
+  (Spatial skeleton — rooms for synchronization concepts)
+  1. Kitchen → Critical Section Problem (shared stove)
+  2. Living Room → Semaphores (bouncer controlling access)
+  3. Bedroom → Monitors (bedroom with lock)
+  4. Balcony → Deadlock (four philosophers at a round table)
 
 Layer: Chaining
-  (Sequential story â€” critical section â†’ semaphore â†’ deadlock)
-  1. Chef enters kitchen (entry section) â†’ cooks (critical section) â†’ leaves (exit section)
-  2. Bouncer uses clicker (semaphore wait) â†’ counts down â†’ lets chef in â†’ counts up (signal)
-  3. Two chefs both need stove AND sink â†’ deadlock (circular wait)
+  (Sequential story — critical section → semaphore → deadlock)
+  1. Chef enters kitchen (entry section) → cooks (critical section) → leaves (exit section)
+  2. Bouncer uses clicker (semaphore wait) → counts down → lets chef in → counts up (signal)
+  3. Two chefs both need stove AND sink → deadlock (circular wait)
   4. Deadlock requires: Mutual Exclusion + Hold & Wait + No Preemption + Circular Wait
 
 Layer: Visual Mnemonics
@@ -2401,37 +2401,37 @@ Layer: Visual Mnemonics
 
 Layer: Memory Compression
   (Acronyms and formulas)
-  1. CS Problem: Entry â†’ Critical â†’ Exit â†’ Remainder
+  1. CS Problem: Entry → Critical → Exit → Remainder
   2. Semaphore: wait(S) = down(S) = P(S) [proberen]
   3. Semaphore: signal(S) = up(S) = V(S) [verhogen]
   4. Deadlock 4 conditions: ME + HW + NP + CW
   5. Solutions: Mutual Exclusion avoidance, lock ordering, timeout + retry
 
 Layer: Retrieval Practice
-  (Self-test questions â€” close your eyes and answer)
+  (Self-test questions — close your eyes and answer)
   1. Q: What 4 conditions must hold for deadlock?
   2. Q: What is the difference between a binary semaphore and a mutex?
   3. Q: Name 3 ways to prevent deadlock.
   4. Q: What does wait(S) do when S < 1?
 
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+═══════════════════════════════════════
   The layers reinforce each other:
-  Layer 1 (Memory Palace) â†’ provides context for Layer 2 (Chaining)
-  Layer 2 (Chaining) â†’ provides context for Layer 3 (Visual Mnemonics)
-  Layer 3 (Visual Mnemonics) â†’ provides context for Layer 4 (Memory Compression)
-  Layer 4 (Memory Compression) â†’ provides context for Layer 5 (Retrieval Practice)
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+  Layer 1 (Memory Palace) → provides context for Layer 2 (Chaining)
+  Layer 2 (Chaining) → provides context for Layer 3 (Visual Mnemonics)
+  Layer 3 (Visual Mnemonics) → provides context for Layer 4 (Memory Compression)
+  Layer 4 (Memory Compression) → provides context for Layer 5 (Retrieval Practice)
+═══════════════════════════════════════
 ```
 
 > **Try This:** Choose a complex topic you are studying (OS scheduling, DBMS normalization, networking protocols). Build a layered memory system using all 5 layers. Spend 30 minutes encoding, then test yourself after 24 hours and 7 days. Compare retention to your usual study method.
 
 > **Pro Tip:** When layering systems, don't try to build all 5 layers at once for every topic. Start with Layer 1 (Memory Palace) for the full course structure, then add Layer 2 (Chaining) for one topic at a time. Layer incrementally. Trying to do all 5 layers for 10 topics in one sitting leads to cognitive overload and poor encoding.
 
-**One-Sentence Takeaway:** Layer memory systems incrementally â€” start with Memory Palace for the full course, then add one technique at a time; trying all 5 layers at once causes cognitive overload.
+**One-Sentence Takeaway:** Layer memory systems incrementally — start with Memory Palace for the full course, then add one technique at a time; trying all 5 layers at once causes cognitive overload.
 
 ---
 
-### Q60: Putting it all together â€” how do I design a complete memory system for a full course?
+### Q60: Putting it all together — how do I design a complete memory system for a full course?
 
 
 **Answer:**
@@ -2443,7 +2443,7 @@ A complete memory system for an entire course integrates every technique from th
 | Phase | What you do | Techniques used | Time |
 |-------|-------------|-----------------|------|
 | **Phase 1: Map** | Create one master memory palace for the entire course, with 5-10 rooms (one per major topic) | Method of loci | 30 min |
-| **Phase 2: Compress** | For each topic, create a cheat sheet using the 3-pass method (dump â†’ select â†’ compact) | Memory compression, generation effect | 30 min per topic |
+| **Phase 2: Compress** | For each topic, create a cheat sheet using the 3-pass method (dump → select → compact) | Memory compression, generation effect | 30 min per topic |
 | **Phase 3: Encode** | For each subtopic, create visual mnemonics and chain them within each room | Visual mnemonics, chaining | 20 min per topic |
 | **Phase 4: Drill** | Use active recall to walk each room, recall each chain, expand each acronym | Testing effect, spaced repetition | 15 min daily |
 | **Phase 5: Interleave** | Walk rooms in random order. Recall chains across rooms. Solve mixed problem sets. | Desirable difficulties, interleaving | 30 min weekly |
@@ -2458,7 +2458,7 @@ A complete memory system for an entire course integrates every technique from th
 | **Cross-room retrieval** | Can you recall chains from a room at random? | 80%+ | Increase interleaving |
 | **Problem-solving transfer** | Can you apply concepts to new problems? | 70%+ | More varied practice problems |
 
-**Java example â€” CompleteMemorySystem:**
+**Java example — CompleteMemorySystem:**
 
 ```java
 import java.util.*;
@@ -2490,9 +2490,9 @@ public class CompleteMemorySystem {
         void walk() {
             System.out.println("Walking " + name + " Palace:\n");
             for (Room room : rooms) {
-                System.out.println("  â–  " + room.name + " (" + room.description + ")");
+                System.out.println("  ■ " + room.name + " (" + room.description + ")");
                 for (Chain chain : room.chains) {
-                    System.out.println("      â†’ " + chain.story);
+                    System.out.println("      → " + chain.story);
                     System.out.println("         Acronym: " + chain.acronym);
                 }
                 System.out.println();
@@ -2504,7 +2504,7 @@ public class CompleteMemorySystem {
             System.out.println("=== Random Access Test ===");
             for (int i = 0; i < 3; i++) {
                 Room room = rooms.get(rand.nextInt(rooms.size()));
-                System.out.println("Recall: " + room.name + " â†’ "
+                System.out.println("Recall: " + room.name + " → "
                     + (room.chains.isEmpty() ? "[empty]" : room.chains.get(0).acronym));
             }
         }
@@ -2574,11 +2574,11 @@ public class CompleteMemorySystem {
                 + " rooms:\n");
 
             for (MemoryPalace.Room room : palace.rooms) {
-                System.out.print("Q: [problem from " + room.name + "] â†’ ");
+                System.out.print("Q: [problem from " + room.name + "] → ");
                 System.out.println("[close eyes, walk to " + room.name
                     + " room, retrieve chains]");
             }
-            System.out.println("\n--- Don't just recall â€” APPLY ---");
+            System.out.println("\n--- Don't just recall — APPLY ---");
             System.out.println("For each concept, ask: would I recognize this");
             System.out.println("in a novel problem? If not, add varied practice.");
         }
@@ -2602,16 +2602,16 @@ public class CompleteMemorySystem {
             System.out.printf("Cheat sheets created: %d%n", totalCheatSheets);
 
             if (nonEmptyRooms < totalRooms) {
-                System.out.println("âš   Action needed: encode empty rooms");
+                System.out.println("⚠  Action needed: encode empty rooms");
             }
             if (totalChains < totalRooms * 2) {
-                System.out.println("âš   Action needed: add more chains per room");
+                System.out.println("⚠  Action needed: add more chains per room");
             }
             if (totalCheatSheets < totalRooms) {
-                System.out.println("âš   Action needed: create cheat sheets for all rooms");
+                System.out.println("⚠  Action needed: create cheat sheets for all rooms");
             }
             if (nonEmptyRooms == totalRooms && totalChains >= totalRooms * 2) {
-                System.out.println("âœ“ Memory system is healthy. Focus on daily retrieval practice.");
+                System.out.println("✓ Memory system is healthy. Focus on daily retrieval practice.");
             }
         }
     }
@@ -2627,10 +2627,10 @@ public class CompleteMemorySystem {
     // === RUN ===
     public static void main(String[] args) {
         // Build the complete course memory system
-        System.out.println("â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+        System.out.println("═══════════════════════════════════════");
         System.out.println("  BUILDING A COMPLETE MEMORY SYSTEM");
         System.out.println("  Course: Operating Systems");
-        System.out.println("â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n");
+        System.out.println("═══════════════════════════════════════\n");
 
         // 1. Create the master memory palace
         MemoryPalace osPalace = new MemoryPalace("Operating Systems");
@@ -2643,20 +2643,20 @@ public class CompleteMemorySystem {
 
         // 2. Encode chains in each room
         osPalace.getRoom("Processes").addChain(
-            "New-born process â†’ Ready queue â†’ Running on CPU â†’ Blocked waiting for I/O â†’ Terminated",
-            "NEW â†’ READY â†’ RUN â†’ BLOCK â†’ TERM",
-            "Process states: New (created) â†’ Ready (in memory, waiting CPU) â†’ Running (executing) â†’ Blocked (waiting I/O) â†’ Terminated (finished)"
+            "New-born process → Ready queue → Running on CPU → Blocked waiting for I/O → Terminated",
+            "NEW → READY → RUN → BLOCK → TERM",
+            "Process states: New (created) → Ready (in memory, waiting CPU) → Running (executing) → Blocked (waiting I/O) → Terminated (finished)"
         );
         osPalace.getRoom("Processes").addChain(
-            "FCFS: First come, first served â†’ SJF: Shortest job first â†’ RR: Round robin with time quantum â†’ Priority: Based on priority number",
+            "FCFS: First come, first served → SJF: Shortest job first → RR: Round robin with time quantum → Priority: Based on priority number",
             "FCFS, SJF, RR, Priority",
             "CPU Scheduling algorithms: First-Come-First-Served, Shortest-Job-First, Round-Robin, Priority-based"
         );
 
         osPalace.getRoom("Threads").addChain(
-            "Race condition â†’ Critical section â†’ Mutex lock â†’ Semaphore â†’ Monitor",
-            "RACE â†’ CS â†’ MUTEX â†’ SEM â†’ MON",
-            "Thread synchronization: Race condition (uncontrolled shared access) â†’ Critical Section (protected region) â†’ Mutex (binary lock) â†’ Semaphore (counting lock) â†’ Monitor (high-level construct)"
+            "Race condition → Critical section → Mutex lock → Semaphore → Monitor",
+            "RACE → CS → MUTEX → SEM → MON",
+            "Thread synchronization: Race condition (uncontrolled shared access) → Critical Section (protected region) → Mutex (binary lock) → Semaphore (counting lock) → Monitor (high-level construct)"
         );
         osPalace.getRoom("Threads").addChain(
             "Deadlock requires: Mutual Exclusion + Hold & Wait + No Preemption + Circular Wait",
@@ -2665,19 +2665,19 @@ public class CompleteMemorySystem {
         );
 
         osPalace.getRoom("Memory").addChain(
-            "Logical address â†’ MMU â†’ Physical address â†’ Page table â†’ Frame â†’ TLB cache",
-            "LOGICAL â†’ MMU â†’ PHYSICAL â†’ PAGETBL â†’ FRAME â†’ TLB",
+            "Logical address → MMU → Physical address → Page table → Frame → TLB cache",
+            "LOGICAL → MMU → PHYSICAL → PAGETBL → FRAME → TLB",
             "Memory address translation flow"
         );
         osPalace.getRoom("Memory").addChain(
-            "FIFO: First-in first-out â†’ OPT: Optimal (future knowledge) â†’ LRU: Least recently used â†’ Clock: Approximate LRU",
+            "FIFO: First-in first-out → OPT: Optimal (future knowledge) → LRU: Least recently used → Clock: Approximate LRU",
             "FIFO, OPT, LRU, CLOCK",
             "Page replacement algorithms"
         );
 
         // 3. Create cheat sheets
         CheatSheet processesCS = new CheatSheet("Processes");
-        processesCS.add("States: New â†’ Ready â†’ Running â†’ Blocked â†’ Terminated");
+        processesCS.add("States: New → Ready → Running → Blocked → Terminated");
         processesCS.add("Scheduling: FCFS, SJF, RR, Priority, MLQ");
         processesCS.add("Context switch: save PCB of current, load PCB of next");
         processesCS.add("IPC: Shared memory vs Message passing");
@@ -2685,12 +2685,12 @@ public class CompleteMemorySystem {
         CheatSheet threadsCS = new CheatSheet("Threads");
         threadsCS.add("User-level threads: fast, kernel-unaware");
         threadsCS.add("Kernel-level threads: slower, kernel-aware");
-        threadsCS.add("Race condition â†’ mutex â†’ semaphore â†’ monitor");
+        threadsCS.add("Race condition → mutex → semaphore → monitor");
         threadsCS.add("Deadlock: ME + HW + NP + CW");
         threadsCS.add("Deadlock prevention: break any one condition");
 
         CheatSheet memoryCS = new CheatSheet("Memory Management");
-        memoryCS.add("Paging: logical â†’ page table â†’ physical frame");
+        memoryCS.add("Paging: logical → page table → physical frame");
         memoryCS.add("Page replacement: FIFO, OPT, LRU, Clock");
         memoryCS.add("Thrashing: too many page faults, high disk I/O");
         memoryCS.add("TLB: cache for page table lookups");
@@ -2722,43 +2722,43 @@ public class CompleteMemorySystem {
 
 **Output:**
 ```
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+═══════════════════════════════════════
   BUILDING A COMPLETE MEMORY SYSTEM
   Course: Operating Systems
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+═══════════════════════════════════════
 
 === Memory System Health Check ===
 
 Palace coverage: 3/5 rooms populated (60%)
 Total chains encoded: 6
 Cheat sheets created: 3
-âš   Action needed: encode empty rooms
-âš   Action needed: add more chains per room
+⚠  Action needed: encode empty rooms
+⚠  Action needed: add more chains per room
 
 === Daily Memory Workout ===
 
 Step 1: Walk memory palace (5 min)
 Walking Operating Systems Palace:
 
-  â–  Processes (Process lifecycle & scheduling)
-      â†’ New-born process â†’ Ready queue â†’ Running on CPU â†’ Blocked waiting for I/O â†’ Terminated
-         Acronym: NEW â†’ READY â†’ RUN â†’ BLOCK â†’ TERM
-      â†’ FCFS: First come, first served â†’ SJF: Shortest job first â†’ RR: Round robin with time quantum â†’ Priority: Based on priority number
+  ■ Processes (Process lifecycle & scheduling)
+      → New-born process → Ready queue → Running on CPU → Blocked waiting for I/O → Terminated
+         Acronym: NEW → READY → RUN → BLOCK → TERM
+      → FCFS: First come, first served → SJF: Shortest job first → RR: Round robin with time quantum → Priority: Based on priority number
          Acronym: FCFS, SJF, RR, Priority
 
-  â–  Threads (Concurrency & synchronization)
-      â†’ Race condition â†’ Critical section â†’ Mutex lock â†’ Semaphore â†’ Monitor
-         Acronym: RACE â†’ CS â†’ MUTEX â†’ SEM â†’ MON
-      â†’ ...
+  ■ Threads (Concurrency & synchronization)
+      → Race condition → Critical section → Mutex lock → Semaphore → Monitor
+         Acronym: RACE → CS → MUTEX → SEM → MON
+      → ...
 
-  â–  Memory (Memory management & virtual memory)
-      â†’ Logical address â†’ MMU â†’ Physical address â†’ Page table â†’ Frame â†’ TLB cache
-         Acronym: LOGICAL â†’ MMU â†’ PHYSICAL â†’ PAGETBL â†’ FRAME â†’ TLB
-      â†’ ...
+  ■ Memory (Memory management & virtual memory)
+      → Logical address → MMU → Physical address → Page table → Frame → TLB cache
+         Acronym: LOGICAL → MMU → PHYSICAL → PAGETBL → FRAME → TLB
+      → ...
 
 Step 2: Expand 3 random acronyms (5 min)
-  Acronym: RACE â†’ CS â†’ MUTEX â†’ SEM â†’ MON
-  Expanded: Thread synchronization: Race condition (uncontrolled shared access) â†’ Critical Section (protected region) â†’ Mutex (binary lock) â†’ Semaphore (counting lock) â†’ Monitor (high-level construct)
+  Acronym: RACE → CS → MUTEX → SEM → MON
+  Expanded: Thread synchronization: Race condition (uncontrolled shared access) → Critical Section (protected region) → Mutex (binary lock) → Semaphore (counting lock) → Monitor (high-level construct)
   ...
 
 Step 3: Draw one cheat sheet from memory (5 min)
@@ -2776,7 +2776,7 @@ over the course of a semester.
 
 > **Try This:** Build a complete memory system for your current course using the 5-phase workflow. Use the diagnostic metrics to track your progress. After one week, measure whether your recall has improved compared to your previous study method.
 
-> **Pro Tip:** The daily 15-minute maintenance ritual is non-negotiable. Walking your memory palace once per day keeps all rooms fresh. Skipping 3 days means rebuilding weak chains. This is the spaced repetition principle applied to memory systems themselves â€” maintain the system, and it maintains the knowledge.
+> **Pro Tip:** The daily 15-minute maintenance ritual is non-negotiable. Walking your memory palace once per day keeps all rooms fresh. Skipping 3 days means rebuilding weak chains. This is the spaced repetition principle applied to memory systems themselves — maintain the system, and it maintains the knowledge.
 
 ---
 
@@ -2806,10 +2806,10 @@ d) Chaining cannot encode abstract concepts, only concrete objects
 **Answer:** c. Chaining requires walking through the entire story from the start to reach any item. The peg system provides random access by position because each peg is independent.
 
 **4. Using the standard rhyming peg system, what peg word corresponds to position 6, and how would you encode "Carbon" at that position?**
-a) Peg word "sticks" â€” imagine sticks of charcoal arranged in a diamond lattice
-b) Peg word "sicks" â€” imagine carbon sick from too much diamond pressure
-c) Peg word "six" â€” imagine the number 6 made of carbon
-d) Peg word "mix" â€” imagine mixing carbon with iron to make steel
+a) Peg word "sticks" — imagine sticks of charcoal arranged in a diamond lattice
+b) Peg word "sicks" — imagine carbon sick from too much diamond pressure
+c) Peg word "six" — imagine the number 6 made of carbon
+d) Peg word "mix" — imagine mixing carbon with iron to make steel
 **Answer:** a. The standard 1-10 peg list uses rhyming: 1=bun, 2=shoe, 3=tree, 4=door, 5=hive, 6=sticks, 7=heaven, 8=gate, 9=wine, 10=hen. Position 6 = sticks, so carbon (C) would be sticks of charcoal.
 
 **5. A student creates the acronym "ACID" to remember Atomicity, Consistency, Isolation, Durability. When reviewing, they try to recall the full meaning from just "ACID." This is an example of what technique?**
@@ -2827,10 +2827,10 @@ d) Creating exam-style questions and answering them during study
 **Answer:** c. When you re-read with notes present, the notes themselves become the retrieval cue. When the notes are gone during the exam, the cue disappears. Practicing retrieval without notes forces you to build self-sufficient memory traces.
 
 **7. A student studies for an exam while drinking coffee late at night. They perform poorly on the morning exam despite knowing the material. Which memory phenomenon best explains this?**
-a) Encoding specificity â€” the retrieval cue "reading a textbook section" mismatched the exam format
-b) State-dependent memory â€” their internal state (caffeinated, late-night) differed from the exam state (uncaffeinated, morning)
-c) Context-dependent memory â€” the physical room was different
-d) The generation effect â€” they should have generated answers instead of reading
+a) Encoding specificity — the retrieval cue "reading a textbook section" mismatched the exam format
+b) State-dependent memory — their internal state (caffeinated, late-night) differed from the exam state (uncaffeinated, morning)
+c) Context-dependent memory — the physical room was different
+d) The generation effect — they should have generated answers instead of reading
 **Answer:** b. State-dependent memory means information encoded in a particular physiological state (caffeinated, late-night) is better recalled in that same state. The internal state mismatch between studying and the exam reduced recall.
 
 **8. Godden & Baddeley (1975) had deep-sea divers learn word lists on land or underwater. What did they find?**
@@ -2838,9 +2838,9 @@ a) Divers who learned underwater performed better in both test conditions
 b) All divers performed equally well regardless of encoding or retrieval context
 c) Recall dropped 30-50% when the encoding and retrieval contexts mismatched
 d) Learning underwater produced stronger memories regardless of test context
-**Answer:** c. Divers who learned on land recalled best on land; those who learned underwater recalled best underwater. Recall dropped 30-50% when context mismatched â€” the canonical demonstration of context-dependent memory.
+**Answer:** c. Divers who learned on land recalled best on land; those who learned underwater recalled best underwater. Recall dropped 30-50% when context mismatched — the canonical demonstration of context-dependent memory.
 
-**9. Slamecka and Graf (1978) showed that students who generated the second word of a pair ("rapid â€” f???") remembered better than those who read the complete pair ("rapid â€” fast"). What is this called?**
+**9. Slamecka and Graf (1978) showed that students who generated the second word of a pair ("rapid — f???") remembered better than those who read the complete pair ("rapid — fast"). What is this called?**
 a) The testing effect
 b) The generation effect
 c) The desirable difficulty effect
@@ -2866,7 +2866,7 @@ a) The peg system with random access
 b) Layering multiple memory systems to reinforce each other
 c) Overlearning to automaticity
 d) State-dependent encoding
-**Answer:** b. The most powerful approach integrates multiple memory systems â€” palace (spatial), chaining (sequential), visual mnemonics (concrete), compression (acronyms), and retrieval practice â€” so that each layer reinforces the others.
+**Answer:** b. The most powerful approach integrates multiple memory systems — palace (spatial), chaining (sequential), visual mnemonics (concrete), compression (acronyms), and retrieval practice — so that each layer reinforces the others.
 
 ---
 
@@ -2874,15 +2874,15 @@ d) State-dependent encoding
 
 | Concept | Definition | Signal to Use | Pitfall |
 |---------|-----------|---------------|---------|
-| Memory Palace | Storing information along a familiar spatial route (method of loci) | When you need to recall ordered lists (speeches, timelines, hierarchies) | Using unfamiliar loci â€” the route must be completely automatic |
-| Visual Mnemonics | Encoding abstractions as vivid, bizarre, multisensory images | When standard memorization fails for abstract concepts | Making images too ordinary â€” bizarreness is the key to memorability |
-| Chaining | Linking items into a cause-effect narrative sequence | When remembering sequences of arbitrary items (steps, historical events) | Weak links between items â€” each transition must feel inevitable |
+| Memory Palace | Storing information along a familiar spatial route (method of loci) | When you need to recall ordered lists (speeches, timelines, hierarchies) | Using unfamiliar loci — the route must be completely automatic |
+| Visual Mnemonics | Encoding abstractions as vivid, bizarre, multisensory images | When standard memorization fails for abstract concepts | Making images too ordinary — bizarreness is the key to memorability |
+| Chaining | Linking items into a cause-effect narrative sequence | When remembering sequences of arbitrary items (steps, historical events) | Weak links between items — each transition must feel inevitable |
 | Peg System | Associating numbers with rhyming keywords for random-access recall | When you need numbered recall (bones, elements, chapters) | Using the same pegs for multiple lists without distinct contexts |
-| Encoding Specificity | Retrieval is strongest when encoding and retrieval contexts match | Before an exam â€” match the study environment to the test environment | Studying in perfect silence when the exam has distractions (or vice versa) |
-| Generation Effect | Producing answers yourself strengthens memory more than reading | When reviewing notes â€” cover and generate before checking | Reading and re-reading instead of actively generating |
+| Encoding Specificity | Retrieval is strongest when encoding and retrieval contexts match | Before an exam — match the study environment to the test environment | Studying in perfect silence when the exam has distractions (or vice versa) |
+| Generation Effect | Producing answers yourself strengthens memory more than reading | When reviewing notes — cover and generate before checking | Reading and re-reading instead of actively generating |
 | Testing Effect | Taking a test improves long-term retention more than re-studying | Any time you need durable learning beyond 48 hours | Using tests only for assessment instead of as a learning tool |
-| Desirable Difficulties | Challenges that impede short-term performance but boost long-term retention | When learning feels too easy and retention is poor | Adding difficulty that becomes frustration â€” keep success at 60-80% |
-| Overlearning | Practicing beyond the point of initial mastery | For high-speed recall skills (math facts, typing, language vocabulary) | Overlearning everything â€” once automaticity is reached, further reps have diminishing returns |
+| Desirable Difficulties | Challenges that impede short-term performance but boost long-term retention | When learning feels too easy and retention is poor | Adding difficulty that becomes frustration — keep success at 60-80% |
+| Overlearning | Practicing beyond the point of initial mastery | For high-speed recall skills (math facts, typing, language vocabulary) | Overlearning everything — once automaticity is reached, further reps have diminishing returns |
 | Cheat Sheet Design | Compressing a topic onto one page forces structural understanding | When preparing for a closed-book exam or building a reference | Spending more time decorating the sheet than doing the 3-pass compression |
 
 
@@ -2912,9 +2912,9 @@ d) State-dependent encoding
 ## Chapter Summary
 
 - **Memory palaces (method of loci)** leverage the brain's spatial processing machinery to store and retrieve ordered information by placing items along a familiar route or within a familiar space.
-- **Visual mnemonics, chaining, and peg systems** transform abstract information into vivid, multisensory images and narratives â€” making them "brain-native" and far more retrievable.
+- **Visual mnemonics, chaining, and peg systems** transform abstract information into vivid, multisensory images and narratives — making them "brain-native" and far more retrievable.
 - **Encoding specificity and state/context-dependent memory** teach us that the conditions at encoding become part of the memory itself; varying study contexts and matching retrieval cues to the exam environment dramatically improves recall.
-- **The generation effect and testing effect** show that active retrieval (generating answers, self-quizzing, teaching from memory) is far superior to passive re-reading â€” one test is worth more than one re-study.
+- **The generation effect and testing effect** show that active retrieval (generating answers, self-quizzing, teaching from memory) is far superior to passive re-reading — one test is worth more than one re-study.
 - **Desirable difficulties** (spacing, interleaving, generation, varied practice) feel harder in the moment but produce dramatically better long-term retention; calibrate difficulty to the 60-80% success sweet spot.
 
 ---
@@ -2931,7 +2931,7 @@ d) State-dependent encoding
 
 5. **Apply the generation effect.** Take a passage from your textbook. Cover it. Write everything you remember. Uncover and compare. Repeat once more. Measure how much more you retain compared to simply re-reading.
 
-6. **Design a cheat sheet.** Use the 3-pass method (dump â†’ select â†’ compact) to create a one-page cheat sheet for a topic you are studying. Time each pass. After 24 hours, try to reconstruct the cheat sheet from memory.
+6. **Design a cheat sheet.** Use the 3-pass method (dump → select → compact) to create a one-page cheat sheet for a topic you are studying. Time each pass. After 24 hours, try to reconstruct the cheat sheet from memory.
 
 7. **Build a complete memory system.** Following the 5-phase workflow from Q60, build a full memory system for one course or exam. Use the system health metrics to track your coverage. Maintain with 15-minute daily workouts.
 
@@ -2948,19 +2948,19 @@ d) State-dependent encoding
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B â€” A memory palace requires highly distinct, familiar loci that are completely automatic. If a locus blends into the next or the student has to think "what comes next," the spatial retrieval fails. Walk the route mentally 3+ times to lock it in.
+**Answer:** B — A memory palace requires highly distinct, familiar loci that are completely automatic. If a locus blends into the next or the student has to think "what comes next," the spatial retrieval fails. Walk the route mentally 3+ times to lock it in.
 </details>
 
 **Q2:** A student studies for a test while lying on their bed at night, caffeinated and anxious. The test is at 9 AM at a quiet desk. According to encoding specificity, what should they change?
 - A) The exam is testing pure knowledge, so study conditions do not matter
-- B) Match study conditions to test conditions â€” study at a desk, at a similar time, at a similar arousal level
+- B) Match study conditions to test conditions — study at a desk, at a similar time, at a similar arousal level
 - C) Caffeine before the exam will fix the mismatch
 - D) Study lying down and sitting up alternately to generalize
 
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B â€” Encoding specificity means retrieval is strongest when study and test contexts match (internal state, environment, modality). The mismatch between late-night caffeinated study and morning quiet test reduces recall. Varying study contexts helps, but matching the primary test context is most effective.
+**Answer:** B — Encoding specificity means retrieval is strongest when study and test contexts match (internal state, environment, modality). The mismatch between late-night caffeinated study and morning quiet test reduces recall. Varying study contexts helps, but matching the primary test context is most effective.
 </details>
 
 **Q3:** A student finds their Anki review success rate is consistently 95%. According to desirable difficulties, what does this suggest?
@@ -2972,10 +2972,10 @@ d) State-dependent encoding
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B â€” Desirable difficulties theory says the optimal success rate is 60-80%. Above 90% feels productive but produces minimal durable retention because the brain is not forced to do the difficult work of retrieval and reconsolidation.
+**Answer:** B — Desirable difficulties theory says the optimal success rate is 60-80%. Above 90% feels productive but produces minimal durable retention because the brain is not forced to do the difficult work of retrieval and reconsolidation.
 </details>
 
 ## Further Reading
 
-- **Chapter 3: Active Recall & Spaced Repetition** â€” The foundational retrieval techniques that amplify every memory system
-- **Chapter 6: Procrastination, Habits & Deep Work** â€” How to create the focus and consistency needed to build and maintain your memory systems
+- **Chapter 3: Active Recall & Spaced Repetition** — The foundational retrieval techniques that amplify every memory system
+- **Chapter 6: Procrastination, Habits & Deep Work** — How to create the focus and consistency needed to build and maintain your memory systems

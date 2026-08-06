@@ -1,4 +1,4 @@
-﻿# Chapter 2: Classes and Objects
+# Chapter 2: Classes and Objects
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Constructors](./03-constructors.md)
 
@@ -41,19 +41,19 @@ After studying this chapter, students will be able to:
 
 ```mermaid
 flowchart TD
-    A["ðŸ›ï¸ Class Concept<br/>Blueprint & Instance"] --> B["ðŸ” Access Specifiers<br/>public / private / protected"]
-    B --> C["ðŸ“¦ Member Functions<br/>Defined inside / outside"]
-    C --> D["ðŸ‘‰ this Pointer<br/>Implicit self-reference"]
-    D --> E["ðŸ”’ const Member Functions<br/>Read-only guarantee"]
-    E --> F["ðŸ“Š Static Members<br/>Class-level data & functions"]
-    F --> G["ðŸ¤ Friend Functions/Classes<br/>Controlled external access"]
-    G --> H["ðŸ“ Nested Classes<br/>Scoped type definitions"]
-    H --> I["ðŸ”„ mutable Keyword<br/>Exceptional modification in const"]
+    A["🏛️ Class Concept<br/>Blueprint & Instance"] --> B["🔐 Access Specifiers<br/>public / private / protected"]
+    B --> C["📦 Member Functions<br/>Defined inside / outside"]
+    C --> D["👉 this Pointer<br/>Implicit self-reference"]
+    D --> E["🔒 const Member Functions<br/>Read-only guarantee"]
+    E --> F["📊 Static Members<br/>Class-level data & functions"]
+    F --> G["🤝 Friend Functions/Classes<br/>Controlled external access"]
+    G --> H["📁 Nested Classes<br/>Scoped type definitions"]
+    H --> I["🔄 mutable Keyword<br/>Exceptional modification in const"]
 ```
 
 ---
 
-## 2.1 The Class Concept â€” Blueprint and Instance
+## 2.1 The Class Concept — Blueprint and Instance
 
 ### Real-World Analogy
 
@@ -69,18 +69,18 @@ Think of a **building blueprint**:
 | Electrical closet | Private implementation | Private members |
 | Builder | Constructor | Constructor function |
 
-A single blueprint can produce hundreds of identical buildings. Each building is independent â€” if you change the wallpaper in one building, the others are unaffected. Similarly, a class defines the *structure and behavior*, while each object has its *own copy* of the data members.
+A single blueprint can produce hundreds of identical buildings. Each building is independent — if you change the wallpaper in one building, the others are unaffected. Similarly, a class defines the *structure and behavior*, while each object has its *own copy* of the data members.
 
 ### Step-by-Step Process
 
 
-1. **Identify the entity** â€” What real-world thing are you modeling? (Bank account, Employee, Student)
-2. **List attributes** â€” What data describes this entity? (balance, name, age)
-3. **List behaviors** â€” What operations can this entity perform? (deposit, withdraw, getName)
-4. **Choose visibility** â€” Which data should be hidden (private) and which exposed (public)?
-5. **Write the class definition** â€” Combine attributes and behaviors into a `class` block
-6. **Instantiate objects** â€” Create concrete instances in `main()`
-7. **Use the objects** â€” Call member functions to interact with the objects
+1. **Identify the entity** — What real-world thing are you modeling? (Bank account, Employee, Student)
+2. **List attributes** — What data describes this entity? (balance, name, age)
+3. **List behaviors** — What operations can this entity perform? (deposit, withdraw, getName)
+4. **Choose visibility** — Which data should be hidden (private) and which exposed (public)?
+5. **Write the class definition** — Combine attributes and behaviors into a `class` block
+6. **Instantiate objects** — Create concrete instances in `main()`
+7. **Use the objects** — Call member functions to interact with the objects
 
 ### Pseudocode
 
@@ -185,13 +185,13 @@ Balance: $1250
 ### Memory Layout of an Object
 
 
-When an object is created, memory is allocated for all its **non-static** data members. Member functions are stored once in the code segment and shared by all objects â€” they receive the `this` pointer to know which object they're operating on.
+When an object is created, memory is allocated for all its **non-static** data members. Member functions are stored once in the code segment and shared by all objects — they receive the `this` pointer to know which object they're operating on.
 
 ```
 Stack (for object acc):
 +----------------------------+
-| owner_name_: "Alice"       |  â† 32 bytes (std::string)
-| balance_: 1250.0           |  â† 8 bytes (double)
+| owner_name_: "Alice"       |  ← 32 bytes (std::string)
+| balance_: 1250.0           |  ← 8 bytes (double)
 +----------------------------+
 Total size: ~40 bytes (platform-dependent)
 
@@ -217,7 +217,7 @@ Code Segment (shared):
 | Call a member function | O(1) | Function pointer resolved at compile time |
 | `sizeof(ClassName)` | O(1) | Sum of member sizes + padding (compile-time constant) |
 
-**Space Complexity:** O(n) where n = number of objects Ã— size of each object. Each object is independent.
+**Space Complexity:** O(n) where n = number of objects × size of each object. Each object is independent.
 
 ---
 
@@ -228,18 +228,18 @@ Code Segment (shared):
 
 | Specifier | Inside Class | Derived Class | Outside (Any Code) | Default for `class` | Default for `struct` |
 |-----------|:-----------:|:-------------:|:------------------:|:-------------------:|:--------------------:|
-| `private` | âœ… Yes | âŒ No | âŒ No | âœ… Default | âŒ |
-| `protected` | âœ… Yes | âœ… Yes | âŒ No | âŒ | âŒ |
-| `public` | âœ… Yes | âœ… Yes | âœ… Yes | âŒ | âœ… Default |
+| `private` | ✅ Yes | ❌ No | ❌ No | ✅ Default | ❌ |
+| `protected` | ✅ Yes | ✅ Yes | ❌ No | ❌ | ❌ |
+| `public` | ✅ Yes | ✅ Yes | ✅ Yes | ❌ | ✅ Default |
 
 ### Real-World Analogy
 
 
 Think of a **house**:
 
-- **Public** â€” The front door, mailbox, doorbell. Anyone on the street can access these.
-- **Private** â€” The master bedroom, safe, electrical panel. Only family members (the class itself) can access.
-- **Protected** â€” The guest bedroom, backyard. Family members (class) and extended family (derived classes) can access, but strangers cannot.
+- **Public** — The front door, mailbox, doorbell. Anyone on the street can access these.
+- **Private** — The master bedroom, safe, electrical panel. Only family members (the class itself) can access.
+- **Protected** — The guest bedroom, backyard. Family members (class) and extended family (derived classes) can access, but strangers cannot.
 
 ### Detailed Explanation
 
@@ -286,12 +286,12 @@ public:
         : House(addr, safe_val, guest_val) {}
 
     void show_guest_room() {
-        // âœ… OK: derived class can access protected member
+        // ✅ OK: derived class can access protected member
         std::cout << "Guest room worth: $" << guest_room_value_ << "\n";
     }
 
     void try_show_safe() {
-        // âŒ ERROR: private member is not accessible
+        // ❌ ERROR: private member is not accessible
         // std::cout << safe_deposit_;   // Would NOT compile
     }
 };
@@ -302,13 +302,13 @@ int main() {
     // Public access OK
     std::cout << "Address: " << h.address_ << "\n";
 
-    // Protected access âŒ
+    // Protected access ❌
     // std::cout << h.guest_room_value_;  // ERROR: not accessible
 
-    // Private access âŒ
+    // Private access ❌
     // std::cout << h.safe_deposit_;      // ERROR: not accessible
 
-    // âœ… OK via public member function
+    // ✅ OK via public member function
     std::cout << "Total wealth: $" << h.get_total_wealth() << "\n";
 
     return 0;
@@ -329,9 +329,9 @@ Total wealth: $150000
 3. Only the absolute minimum interface should be `public`
 4. Use `protected` only when you know derived classes will need direct access
 
-> **Pro Tip:** Don't expose data members as `public` "temporarily" â€” it's very hard to make them private later without breaking all callers. Always start with `private` and relax only when necessary.
+> **Pro Tip:** Don't expose data members as `public` "temporarily" — it's very hard to make them private later without breaking all callers. Always start with `private` and relax only when necessary.
 
-### class vs struct â€” Extended Comparison
+### class vs struct — Extended Comparison
 
 
 ```cpp
@@ -355,7 +355,7 @@ The only technical difference is the default access specifier:
 | Examples | `std::string`, `std::vector`, `BankAccount` | `std::pair`, `Point`, `Rectangle` |
 
 ```cpp
-// struct for plain data â€” brace initialization works
+// struct for plain data — brace initialization works
 struct Point {
     double x;
     double y;
@@ -374,9 +374,9 @@ public:
 };
 
 int main() {
-    Point p = {3.0, 4.0};               // âœ… brace init for struct
-    // Circle c = {0, 0, 5};            // âŒ cannot brace-init class with private members
-    Circle c(0, 0, 5);                  // âœ… use constructor
+    Point p = {3.0, 4.0};               // ✅ brace init for struct
+    // Circle c = {0, 0, 5};            // ❌ cannot brace-init class with private members
+    Circle c(0, 0, 5);                  // ✅ use constructor
     std::cout << "Area: " << c.area() << "\n";
     return 0;
 }
@@ -422,9 +422,9 @@ int Demo::get_value() const {
 
 | Type | `this` Available? | Can Access Static Members? | Can Access Non-static Members? |
 |------|:-----------------:|:--------------------------:|:------------------------------:|
-| Non-static, non-const | âœ… Yes | âœ… Yes | âœ… Yes |
-| Non-static, const | âœ… Yes (const*) | âœ… Yes | âœ… Yes (read-only) |
-| Static | âŒ No | âœ… Yes | âŒ No |
+| Non-static, non-const | ✅ Yes | ✅ Yes | ✅ Yes |
+| Non-static, const | ✅ Yes (const*) | ✅ Yes | ✅ Yes (read-only) |
+| Static | ❌ No | ✅ Yes | ❌ No |
 
 ### Inline Member Functions
 
@@ -434,10 +434,10 @@ Small functions (1-3 lines) defined inside the class body are implicitly `inline
 ```cpp
 class FastMath {
 public:
-    // Implicitly inline â€” compiler may expand this
+    // Implicitly inline — compiler may expand this
     int square(int x) { return x * x; }
 
-    // Not inline â€” defined outside
+    // Not inline — defined outside
     int cube(int x);
 };
 
@@ -447,10 +447,10 @@ int FastMath::cube(int x) {
 ```
 
 **When to inline:**
-- âœ… Tiny getters/setters
-- âœ… Simple computations
-- âŒ Large functions (bloats code)
-- âŒ Virtual functions (inlining is complex with vtable)
+- ✅ Tiny getters/setters
+- ✅ Simple computations
+- ❌ Large functions (bloats code)
+- ❌ Virtual functions (inlining is complex with vtable)
 
 ### Complexity Analysis
 
@@ -458,7 +458,7 @@ int FastMath::cube(int x) {
 | Operation | Complexity | Why |
 |-----------|------------|-----|
 | Non-inline member function call | O(1) | Standard call + `this` parameter push |
-| Inline member function expansion | O(1) | No call overhead â€” code substituted directly |
+| Inline member function expansion | O(1) | No call overhead — code substituted directly |
 | Virtual member function call | O(1) | Extra indirection through vtable (one extra pointer dereference) |
 | Static member function call | O(1) | Same as regular function call |
 
@@ -477,8 +477,8 @@ int FastMath::cube(int x) {
 
 ```
 obj.member_function(args)
-    â†’  compiler translates to:  member_function(&obj, args)
-    â†’  inside:                  this = &obj
+    →  compiler translates to:  member_function(&obj, args)
+    →  inside:                  this = &obj
 ```
 
 ### Implicit vs Explicit Usage
@@ -489,17 +489,17 @@ class Example {
 private:
     int value_;
 public:
-    // âŒ Ambiguous â€” compiler thinks value is the parameter
+    // ❌ Ambiguous — compiler thinks value is the parameter
     void set_value_ambiguous(int value) {
         value = value;   // Self-assignment! No effect
     }
 
-    // âœ… Explicit this to disambiguate
+    // ✅ Explicit this to disambiguate
     void set_value(int value) {
         this->value_ = value;   // this->value_ is the member
     }
 
-    // âœ… Implicit this â€” member accessed without qualification
+    // ✅ Implicit this — member accessed without qualification
     int get_value() const {
         return value_;   // compiler treats as this->value_
     }
@@ -577,7 +577,7 @@ The chained version is more concise and readable, especially for builder pattern
 | Compare objects | `if (this == &other)` | Identity check (same object?) |
 | CRTP (Curiously Recurring Template Pattern) | `static_cast<Derived*>(this)->f()` | Static polymorphism |
 
-### Compare Objects â€” Identity Check
+### Compare Objects — Identity Check
 
 
 ```cpp
@@ -626,10 +626,10 @@ a is same as c: true
 
 Think of a **company's break room**:
 
-- Each employee has their own desk (non-static member â€” per-object)
-- The break room fridge is shared by all employees (static member â€” per-class)
+- Each employee has their own desk (non-static member — per-object)
+- The break room fridge is shared by all employees (static member — per-class)
 - If someone puts food in the fridge, everyone can see it
-- If someone quits, the fridge stays â€” it doesn't belong to any single employee
+- If someone quits, the fridge stays — it doesn't belong to any single employee
 
 ### Static Data Members
 
@@ -639,8 +639,8 @@ class Employee {
 private:
     std::string name_;
     int id_;
-    static int next_id_;             // Declaration â€” shared by ALL employees
-    static inline int company_code_ = 1001;  // C++17 inline init â€” no .cpp needed
+    static int next_id_;             // Declaration — shared by ALL employees
+    static inline int company_code_ = 1001;  // C++17 inline init — no .cpp needed
 
 public:
     Employee(const std::string& name) : name_(name) {
@@ -659,7 +659,7 @@ public:
 int Employee::next_id_ = 1000;
 ```
 
-### Dry Run â€” Static Variable Increment
+### Dry Run — Static Variable Increment
 
 
 Let's trace what happens as we create Employee objects:
@@ -669,15 +669,15 @@ Initial State:
     next_id_ = 1000
 
 Step 1: Employee e1("Alice")
-    id_ = next_id_++ â†’ id_ = 1000, next_id_ = 1001
+    id_ = next_id_++ → id_ = 1000, next_id_ = 1001
     Object e1: { name_ = "Alice", id_ = 1000 }
 
 Step 2: Employee e2("Bob")
-    id_ = next_id_++ â†’ id_ = 1001, next_id_ = 1002
+    id_ = next_id_++ → id_ = 1001, next_id_ = 1002
     Object e2: { name_ = "Bob", id_ = 1001 }
 
 Step 3: Employee e3("Charlie")
-    id_ = next_id_++ â†’ id_ = 1002, next_id_ = 1003
+    id_ = next_id_++ → id_ = 1002, next_id_ = 1003
     Object e3: { name_ = "Charlie", id_ = 1002 }
 
 Static Variable next_id_ now = 1003 (shared across all instances)
@@ -688,12 +688,12 @@ Static Variable next_id_ now = 1003 (shared across all instances)
 
 | Step | Action | e1.id\_ | e2.id\_ | e3.id\_ | next\_id\_ (static) |
 |------|--------|:-------:|:-------:|:-------:|:-------------------:|
-| 0 | Initial state | â€” | â€” | â€” | **1000** |
-| 1 | `Employee e1("Alice")` | **1000** | â€” | â€” | **1001** |
-| 2 | `Employee e2("Bob")` | 1000 | **1001** | â€” | **1002** |
+| 0 | Initial state | — | — | — | **1000** |
+| 1 | `Employee e1("Alice")` | **1000** | — | — | **1001** |
+| 2 | `Employee e2("Bob")` | 1000 | **1001** | — | **1002** |
 | 3 | `Employee e3("Charlie")` | 1000 | 1001 | **1002** | **1003** |
-| 4 | `Employee::get_next_id()` | â€” | â€” | â€” | Returns **1003** |
-| 5 | `e1.get_next_id()` | â€” | â€” | â€” | Also returns **1003** |
+| 4 | `Employee::get_next_id()` | — | — | — | Returns **1003** |
+| 5 | `e1.get_next_id()` | — | — | — | Also returns **1003** |
 
 ### Static Member Functions
 
@@ -723,18 +723,18 @@ int main() {
 }
 ```
 
-### static vs Non-static â€” Comparison Table
+### static vs Non-static — Comparison Table
 
 
 | Feature | static Member | Non-static Member |
 |---------|:-------------:|:-----------------:|
 | Belongs to | Class | Object (instance) |
 | Number of copies | One for the entire class | One per object |
-| `this` pointer | âŒ Not available | âœ… Available |
-| Access to static members | âœ… Yes | âœ… Yes |
-| Access to non-static members | âŒ No | âœ… Yes |
-| Can be `const` | âŒ No | âœ… Yes |
-| Can be `virtual` | âŒ No | âœ… Yes |
+| `this` pointer | ❌ Not available | ✅ Available |
+| Access to static members | ✅ Yes | ✅ Yes |
+| Access to non-static members | ❌ No | ✅ Yes |
+| Can be `const` | ❌ No | ✅ Yes |
+| Can be `virtual` | ❌ No | ✅ Yes |
 | Storage duration | Static (program lifetime) | Automatic (object lifetime) |
 | Called on | `ClassName::member` or `obj.member` | `obj.member` |
 | Initialization | Outside class (pre-C++17) or `inline` (C++17) | Inside constructor or initializer list |
@@ -749,7 +749,7 @@ int main() {
 | Access non-static member | O(1) | Offset from object base address |
 | Compare: `e1.get_id()` vs `Employee::get_next_id()` | Both O(1) | Static call is slightly faster (one fewer parameter) |
 
-**Why static members exist:** They model class-level concepts â€” counters, factories, configuration constants, singletons â€” that logically belong to the type, not to any particular instance.
+**Why static members exist:** They model class-level concepts — counters, factories, configuration constants, singletons — that logically belong to the type, not to any particular instance.
 
 
 ---
@@ -764,7 +764,7 @@ Think of a **doctor** and a **pharmacy**:
 - The doctor (class) has your private medical records (private data)
 - The doctor can give a *prescription* (friend declaration) to a specific pharmacy (friend function)
 - The pharmacy can now access your records ONLY because the doctor authorized it
-- The pharmacy doesn't become part of the doctor's office â€” it's an external entity with special permission
+- The pharmacy doesn't become part of the doctor's office — it's an external entity with special permission
 
 ### What Is a Friend Function?
 
@@ -787,15 +787,15 @@ public:
     friend void display_account(const BankAccount& acc);
 };
 
-// Friend function definition â€” can access private members
+// Friend function definition — can access private members
 void display_account(const BankAccount& acc) {
-    std::cout << "Owner: " << acc.owner_ << "\n";       // âœ… private
-    std::cout << "Balance: $" << acc.balance_ << "\n";  // âœ… private
+    std::cout << "Owner: " << acc.owner_ << "\n";       // ✅ private
+    std::cout << "Balance: $" << acc.balance_ << "\n";  // ✅ private
 }
 
 int main() {
     BankAccount acc("Alice", 5000.0);
-    display_account(acc);    // âœ… friend function can access private data
+    display_account(acc);    // ✅ friend function can access private data
     return 0;
 }
 ```
@@ -835,8 +835,8 @@ public:
 
 // Friend function accessing private data of BOTH classes
 double max_area(const Square& sq, const Rectangle& rect) {
-    double sq_area = sq.side_ * sq.side_;               // âœ… Square::side_ (private)
-    double rect_area = rect.width_ * rect.height_;       // âœ… Rectangle::width_, height_ (private)
+    double sq_area = sq.side_ * sq.side_;               // ✅ Square::side_ (private)
+    double rect_area = rect.width_ * rect.height_;       // ✅ Rectangle::width_, height_ (private)
     return (sq_area > rect_area) ? sq_area : rect_area;
 }
 
@@ -881,7 +881,7 @@ public:
     PayrollSystem() : total_payroll_(0.0) {}
 
     void process_salary(Employee& emp) {
-        // âœ… Can access private salary_ because PayrollSystem is a friend
+        // ✅ Can access private salary_ because PayrollSystem is a friend
         total_payroll_ += emp.salary_;
 
         // Apply tax deduction
@@ -889,7 +889,7 @@ public:
     }
 
     void display_payslip(const Employee& emp) {
-        // âœ… Can access private name_ and salary_
+        // ✅ Can access private name_ and salary_
         std::cout << "Employee: " << emp.name_
                   << ", Net Salary: $" << emp.salary_ << "\n";
     }
@@ -920,17 +920,17 @@ Employee: Bob, Net Salary: $48000
 Total company payroll: $110000
 ```
 
-### Dry Run â€” Friend Function Access
+### Dry Run — Friend Function Access
 
 
 Trace `max_area(sq, rect)` where `sq.side_ = 5.0`, `rect.width_ = 3.0`, `rect.height_ = 10.0`:
 
 | Step | Code Executed | Square::side\_ | Rectangle::width\_ | Rectangle::height\_ | Result |
 |:----:|---------------|:--------------:|:------------------:|:-------------------:|:------:|
-| 0 | Initial state | 5.0 | 3.0 | 10.0 | â€” |
-| 1 | `sq_area = sq.side_ * sq.side_` | 5.0 (read) | â€” | â€” | sq\_area = 25.0 |
-| 2 | `rect_area = rect.width_ * rect.height_` | â€” | 3.0 (read) | 10.0 (read) | rect\_area = 30.0 |
-| 3 | `return sq_area > rect_area ? sq_area : rect_area` | â€” | â€” | â€” | 30.0 > 25.0 â†’ return **30.0** |
+| 0 | Initial state | 5.0 | 3.0 | 10.0 | — |
+| 1 | `sq_area = sq.side_ * sq.side_` | 5.0 (read) | — | — | sq\_area = 25.0 |
+| 2 | `rect_area = rect.width_ * rect.height_` | — | 3.0 (read) | 10.0 (read) | rect\_area = 30.0 |
+| 3 | `return sq_area > rect_area ? sq_area : rect_area` | — | — | — | 30.0 > 25.0 → return **30.0** |
 
 **Key observation:** Without friendship, `max_area()` could only access public members. With friendship, it reads private members of both classes directly, avoiding the need for public getters.
 
@@ -946,19 +946,19 @@ Trace `max_area(sq, rect)` where `sq.side_ = 5.0`, `rect.width_ = 3.0`, `rect.he
 | Friend declaration can be anywhere | Usually placed at the top of the class (in the private section) |
 | Number of friends is unlimited | But too many friends weakens encapsulation |
 
-### friend Function vs Member Function â€” Comparison
+### friend Function vs Member Function — Comparison
 
 
 | Feature | friend Function | Member Function |
 |---------|:--------------:|:---------------:|
-| Access to private members | âœ… Yes (if declared friend) | âœ… Yes |
+| Access to private members | ✅ Yes (if declared friend) | ✅ Yes |
 | Called with object | `func(obj)` | `obj.func()` |
-| `this` pointer | âŒ No | âœ… Yes |
-| Can be virtual | âŒ No | âœ… Yes (if non-static) |
-| Can be static | âœ… Yes (it's a regular function) | âœ… Yes |
-| Symmetric binary ops | âœ… Natural | âŒ Needs `const&` for left operand |
+| `this` pointer | ❌ No | ✅ Yes |
+| Can be virtual | ❌ No | ✅ Yes (if non-static) |
+| Can be static | ✅ Yes (it's a regular function) | ✅ Yes |
+| Symmetric binary ops | ✅ Natural | ❌ Needs `const&` for left operand |
 | Encapsulation impact | Moderate (controlled breach) | None (inside the class) |
-| Override in derived class | âŒ Not applicable | âœ… Yes (if virtual) |
+| Override in derived class | ❌ Not applicable | ✅ Yes (if virtual) |
 | Inheritance | Not inherited | Inherited normally |
 
 **When to use friend over member:**
@@ -975,12 +975,12 @@ private:
 public:
     Complex(double r, double i) : real_(r), imag_(i) {}
 
-    // Member function â€” left operand must be Complex
+    // Member function — left operand must be Complex
     Complex operator+(const Complex& other) const {
         return Complex(real_ + other.real_, imag_ + other.imag_);
     }
 
-    // Friend â€” can handle non-Complex left operand
+    // Friend — can handle non-Complex left operand
     friend Complex operator*(double scalar, const Complex& c) {
         return Complex(scalar * c.real_, scalar * c.imag_);
     }
@@ -1071,7 +1071,7 @@ public:
 int main() {
     Car my_car("Tesla Model 3", 80);
     // Access nested class type
-    Car::Engine motor(450);  // âœ… Nested class used outside
+    Car::Engine motor(450);  // ✅ Nested class used outside
 
     my_car.drive();
     motor.stop();
@@ -1091,22 +1091,22 @@ Engine stopped
 
 | Aspect | Rule |
 |--------|------|
-| Enclosing class â†’ nested class member | Must use nested class name or object |
-| Nested class â†’ enclosing class private | âŒ By default, cannot access enclosing class's `this` or private members |
-| Nested class â†’ enclosing class private (if granted friend) | âœ… Yes |
+| Enclosing class → nested class member | Must use nested class name or object |
+| Nested class → enclosing class private | ❌ By default, cannot access enclosing class's `this` or private members |
+| Nested class → enclosing class private (if granted friend) | ✅ Yes |
 | External scope | Referred to as `OuterClass::NestedClass` |
-| Nested class can be `private` | âœ… Yes â€” hidden from external code entirely |
+| Nested class can be `private` | ✅ Yes — hidden from external code entirely |
 
 ```cpp
 class Outer {
 private:
     int secret_;
 
-    // Private nested class â€” invisible outside Outer
+    // Private nested class — invisible outside Outer
     class InternalHelper {
     public:
         void do_work(Outer& o) {
-            // âŒ Cannot access Outer::secret_ by default
+            // ❌ Cannot access Outer::secret_ by default
             // Need friendship
         }
     };
@@ -1115,15 +1115,15 @@ public:
     class PublicNested {
     public:
         void show(const Outer& o) {
-            // âŒ Also cannot access secret_
+            // ❌ Also cannot access secret_
         }
     };
 };
 
 // main() can use PublicNested but NOT InternalHelper
 int main() {
-    Outer::PublicNested pn;   // âœ… OK
-    // Outer::InternalHelper ih;  // âŒ ERROR: private
+    Outer::PublicNested pn;   // ✅ OK
+    // Outer::InternalHelper ih;  // ❌ ERROR: private
     return 0;
 }
 ```
@@ -1144,7 +1144,7 @@ private:
 
 ---
 
-## 2.8 `const` Member Functions â€” Deep Dive
+## 2.8 `const` Member Functions — Deep Dive
 
 ### The Core Concept
 
@@ -1170,12 +1170,12 @@ When you write `void func() const`, the compiler treats `*this` as `const Widget
 ```
 
 This means inside a `const` member function:
-- âœ… You can **read** all data members
-- âŒ You cannot **write** to any data member
-- âŒ You cannot call non-`const` member functions on `*this`
-- âœ… You can call other `const` member functions
-- âœ… You can **write** to `static` members (they don't belong to the object)
-- âœ… You can **write** to `mutable` members (special exception)
+- ✅ You can **read** all data members
+- ❌ You cannot **write** to any data member
+- ❌ You cannot call non-`const` member functions on `*this`
+- ✅ You can call other `const` member functions
+- ✅ You can **write** to `static` members (they don't belong to the object)
+- ✅ You can **write** to `mutable` members (special exception)
 
 ### Why const-Correctness Matters
 
@@ -1188,23 +1188,23 @@ private:
 public:
     Student(const std::string& name, double gpa) : name_(name), gpa_(gpa) {}
 
-    // Read access â€” const
+    // Read access — const
     std::string get_name() const { return name_; }
     double get_gpa() const { return gpa_; }
 
-    // Write access â€” non-const
+    // Write access — non-const
     void set_gpa(double gpa) { gpa_ = gpa; }
 };
 
 void print_student(const Student& s) {
-    // s is a const reference â€” can ONLY call const functions
-    std::cout << s.get_name() << ": " << s.get_gpa() << "\n";  // âœ… OK
-    // s.set_gpa(4.0);  // âŒ ERROR: cannot call non-const on const reference
+    // s is a const reference — can ONLY call const functions
+    std::cout << s.get_name() << ": " << s.get_gpa() << "\n";  // ✅ OK
+    // s.set_gpa(4.0);  // ❌ ERROR: cannot call non-const on const reference
 }
 
 int main() {
     Student s("Alice", 3.8);
-    print_student(s);       // âœ… OK â€” const ref binds to non-const object
+    print_student(s);       // ✅ OK — const ref binds to non-const object
     return 0;
 }
 ```
@@ -1212,7 +1212,7 @@ int main() {
 ### const and Non-const Overloads
 
 
-You can provide **both** versions â€” the compiler selects the right one based on whether the object is `const`:
+You can provide **both** versions — the compiler selects the right one based on whether the object is `const`:
 
 ```cpp
 #include <iostream>
@@ -1224,13 +1224,13 @@ private:
 public:
     Matrix2x2(int a, int b, int c, int d) : data_{a, b, c, d} {}
 
-    // Non-const: returns reference â€” allows modification
+    // Non-const: returns reference — allows modification
     int& operator()(int row, int col) {
         std::cout << "non-const operator() called\n";
         return data_[row * 2 + col];
     }
 
-    // Const: returns const reference â€” read-only
+    // Const: returns const reference — read-only
     const int& operator()(int row, int col) const {
         std::cout << "const operator() called\n";
         return data_[row * 2 + col];
@@ -1245,11 +1245,11 @@ int main() {
     Matrix2x2 m(1, 2, 3, 4);
 
     // Non-const object can call both
-    m(0, 0) = 10;               // calls non-const â†’ modifies
+    m(0, 0) = 10;               // calls non-const → modifies
     std::cout << m(0, 0) << "\n"; // calls non-const (non-const object, read)
 
     const Matrix2x2 cm(5, 6, 7, 8);
-    // cm(0, 0) = 99;           // âŒ ERROR: const object, returns const ref
+    // cm(0, 0) = 99;           // ❌ ERROR: const object, returns const ref
     std::cout << cm(0, 0) << "\n"; // calls const version
 
     inspect(m);                  // calls const version
@@ -1273,20 +1273,20 @@ const operator() called
 
 | Common Misconception | Reality |
 |---------------------|---------|
-| "const function guarantees thread safety" | âŒ No â€” mutable members can be modified, causing data races |
-| "const function makes all members const" | âŒ No â€” `mutable` members bypass const |
-| "const function is enforced at runtime" | âŒ No â€” compile-time enforcement only |
-| "const object can call any function" | âŒ No â€” can only call const member functions |
+| "const function guarantees thread safety" | ❌ No — mutable members can be modified, causing data races |
+| "const function makes all members const" | ❌ No — `mutable` members bypass const |
+| "const function is enforced at runtime" | ❌ No — compile-time enforcement only |
+| "const object can call any function" | ❌ No — can only call const member functions |
 
 ### The `mutable` Keyword
 
 
 `mutable` allows a data member to be modified even inside a `const` member function. Use it for:
 
-- **Caching** â€” Lazily computed values
-- **Mutexes** â€” Thread synchronization
-- **Reference counting** â€” Internal bookkeeping
-- **Logging** â€” Debug counters
+- **Caching** — Lazily computed values
+- **Mutexes** — Thread synchronization
+- **Reference counting** — Internal bookkeeping
+- **Logging** — Debug counters
 
 ```cpp
 #include <iostream>
@@ -1303,24 +1303,24 @@ public:
     CachedData(const std::string& data)
         : raw_data_(data), cache_valid_(false), access_count_(0) {}
 
-    // const member function â€” but modifies cache
+    // const member function — but modifies cache
     std::string get_processed() const {
-        ++access_count_;  // âœ… OK â€” mutable
+        ++access_count_;  // ✅ OK — mutable
         if (!cache_valid_) {
             // Expensive computation
             cache_ = "[[PROCESSED]] " + raw_data_ + " [[END]]";
-            cache_valid_ = true;   // âœ… OK â€” mutable
+            cache_valid_ = true;   // ✅ OK — mutable
         }
         return cache_;
     }
 
     int get_access_count() const {
-        return access_count_;  // âœ… OK â€” mutable
+        return access_count_;  // ✅ OK — mutable
     }
 
     // Force cache refresh
     void refresh() {
-        cache_valid_ = false;  // Non-const â€” naturally modifies
+        cache_valid_ = false;  // Non-const — naturally modifies
     }
 };
 
@@ -1342,7 +1342,7 @@ int main() {
 Accessed 2 times
 ```
 
-### Mutable â€” Dry Run
+### Mutable — Dry Run
 
 
 ```cpp
@@ -1353,7 +1353,7 @@ private:
 public:
     Counter() : debug_count_(0), value_(0) {}
     int get_value() const {
-        ++debug_count_;    // âœ… mutable
+        ++debug_count_;    // ✅ mutable
         return value_;
     }
     void increment() { ++value_; }
@@ -1384,17 +1384,17 @@ private:
 public:
     // const function: can read normal_, read/write mutable_, read/write static_
     int reader() const {
-        // normal_ = 5;        // âŒ ERROR
-        mutable_ = 5;          // âœ…
-        static_ = 5;           // âœ… (static doesn't belong to object)
+        // normal_ = 5;        // ❌ ERROR
+        mutable_ = 5;          // ✅
+        static_ = 5;           // ✅ (static doesn't belong to object)
         return normal_;
     }
 
     // non-const function: read/write everything
     void writer() {
-        normal_ = 5;           // âœ…
-        mutable_ = 5;          // âœ…
-        static_ = 5;           // âœ…
+        normal_ = 5;           // ✅
+        mutable_ = 5;          // ✅
+        static_ = 5;           // ✅
     }
 };
 ```
@@ -1404,16 +1404,16 @@ public:
 
 | Aspect | Complexity | Why |
 |--------|------------|-----|
-| Adding `const` to a function | O(1) â€” no runtime cost | Compile-time check only |
+| Adding `const` to a function | O(1) — no runtime cost | Compile-time check only |
 | Calling a `const` function | Same as non-const | No extra instructions generated |
 | Mutable member access in `const` | Same as normal access | No overhead |
 | Compiler checking `const` violations | O(n) compile time | Scans function body for writes to non-mutable members |
 
-**Space:** Zero overhead â€” `const` is purely a compile-time concept.
+**Space:** Zero overhead — `const` is purely a compile-time concept.
 
 ---
 
-## 2.9 Advanced Topics â€” Putting It All Together
+## 2.9 Advanced Topics — Putting It All Together
 
 ### Logger with Static Counter and Friend Access
 
@@ -1456,7 +1456,7 @@ public:
 };
 
 void emergency_dump(const Logger& l) {
-    std::cout << "EMERGENCY â€” " << l.local_logs_.size() << " entries\n";
+    std::cout << "EMERGENCY — " << l.local_logs_.size() << " entries\n";
     for (const auto& entry : l.local_logs_) {
         std::cout << "[EMERGENCY] " << entry << "\n";
     }
@@ -1488,7 +1488,7 @@ int main() {
 [MyApp][1] User logged in
 [MyApp][2] File opened
 Total logs: 3
-EMERGENCY â€” 2 entries
+EMERGENCY — 2 entries
 [EMERGENCY] [MyApp][1] User logged in
 [EMERGENCY] [MyApp][2] File opened
 ```
@@ -1530,7 +1530,7 @@ You **must** use `this->` explicitly in these scenarios:
 5. **Resolve name in derived class with shadowing:**
    If a derived class declares a function that hides a base class member, `this->` can help resolve (though `Base::` is cleaner).
 
-**Common interview follow-up:** "What is the type of `this` inside a `const` member function of class `Foo`?" â†’ Answer: `const Foo*` (pointer to const Foo). The object cannot be modified through this pointer.
+**Common interview follow-up:** "What is the type of `this` inside a `const` member function of class `Foo`?" → Answer: `const Foo*` (pointer to const Foo). The object cannot be modified through this pointer.
 
 ---
 
@@ -1539,7 +1539,7 @@ You **must** use `this->` explicitly in these scenarios:
 
 **Answer:**
 
-`class` and `struct` are **almost identical** â€” the C++ standard treats them the same way. There are only **two** differences:
+`class` and `struct` are **almost identical** — the C++ standard treats them the same way. There are only **two** differences:
 
 | Difference | `class` | `struct` |
 |------------|---------|----------|
@@ -1556,14 +1556,14 @@ struct DerivedS : S { };    // inheritance is PUBLIC
 
 **Convention** (not enforced by the compiler):
 
-- Use `struct` for **plain data aggregates** â€” no invariants, all members public, no private data, no virtual functions.
-- Use `class` for **types with invariants** â€” private data, public interface, constructors enforce validity.
+- Use `struct` for **plain data aggregates** — no invariants, all members public, no private data, no virtual functions.
+- Use `class` for **types with invariants** — private data, public interface, constructors enforce validity.
 
 ```cpp
-// struct â€” plain data, no invariants
+// struct — plain data, no invariants
 struct Point { double x; double y; };
 
-// class â€” invariant: balance_ must never be negative
+// class — invariant: balance_ must never be negative
 class BankAccount {
 private:
     double balance_;
@@ -1572,7 +1572,7 @@ public:
 };
 ```
 
-**Trick question:** "Can you have a class with all public members and a struct with private members?" â†’ Yes, absolutely. The only difference is the default.
+**Trick question:** "Can you have a class with all public members and a struct with private members?" → Yes, absolutely. The only difference is the default.
 
 ---
 
@@ -1585,7 +1585,7 @@ By default, a `const` member function **cannot** modify the object's data member
 
 **However**, there are **three exceptions** where modification is possible:
 
-1. **`mutable` data members** â€” explicitly designed for modification in const contexts:
+1. **`mutable` data members** — explicitly designed for modification in const contexts:
    ```cpp
    class Cache {
        mutable bool dirty_;
@@ -1598,13 +1598,13 @@ By default, a `const` member function **cannot** modify the object's data member
    };
    ```
 
-2. **Static data members** â€” they don't belong to the object:
+2. **Static data members** — they don't belong to the object:
    ```cpp
    class Logger {
        static inline int call_count_ = 0;
    public:
        void log() const {
-           ++call_count_;  // OK â€” static, not part of *this
+           ++call_count_;  // OK — static, not part of *this
        }
    };
    ```
@@ -1615,8 +1615,8 @@ By default, a `const` member function **cannot** modify the object's data member
        int* ptr_;
    public:
        void set_ptr_value(int v) const {
-           *ptr_ = v;  // OK â€” the pointed-to memory is not const
-           // ptr_ = nullptr;  // âŒ ERROR: ptr_ itself is const
+           *ptr_ = v;  // OK — the pointed-to memory is not const
+           // ptr_ = nullptr;  // ❌ ERROR: ptr_ itself is const
        }
    };
    ```
@@ -1638,21 +1638,21 @@ By default, a `const` member function **cannot** modify the object's data member
 
 **Static member functions:**
 - Belong to the class, not to any instance
-- Have **no `this` pointer** â€” this is the critical point
+- Have **no `this` pointer** — this is the critical point
 - **Cannot access non-static members** directly (because there's no `this` to resolve which object's member)
 
 ```cpp
 class Demo {
-    int x_;              // non-static â€” belongs to objects
-    static int count_;   // static â€” belongs to class
+    int x_;              // non-static — belongs to objects
+    static int count_;   // static — belongs to class
 public:
     static void s_func() {
-        // count_ = 5;      // âœ… OK â€” count_ is static
-        // x_ = 5;          // âŒ ERROR â€” which x_? No this pointer!
+        // count_ = 5;      // ✅ OK — count_ is static
+        // x_ = 5;          // ❌ ERROR — which x_? No this pointer!
     }
     void ns_func() {
-        x_ = 5;             // âœ… OK â€” this->x_
-        count_ = 5;         // âœ… OK â€” Demo::count_
+        x_ = 5;             // ✅ OK — this->x_
+        count_ = 5;         // ✅ OK — Demo::count_
     }
 };
 ```
@@ -1660,28 +1660,28 @@ public:
 **Why the restriction makes sense:** If `s_func()` could access `x_`, which object's `x_` would it modify? Static functions can be called without any object existing:
 
 ```cpp
-Demo::s_func();  // No Demo object exists â€” accessing x_ would be impossible
+Demo::s_func();  // No Demo object exists — accessing x_ would be impossible
 ```
 
-**Common interview question:** "Can a non-static member function access a static member?" â†’ Yes. Non-static functions have `this`, but they also have access to the class scope, so `ClassName::static_member` works perfectly.
+**Common interview question:** "Can a non-static member function access a static member?" → Yes. Non-static functions have `this`, but they also have access to the class scope, so `ClassName::static_member` works perfectly.
 
 ---
 
-### Q5: Friend functions vs member functions â€” when to use each?
+### Q5: Friend functions vs member functions — when to use each?
 
 
 **Answer:**
 
 | Criterion | Choose Member Function | Choose Friend Function |
 |-----------|----------------------|----------------------|
-| Left operand is `this` class | âœ… Natural | âŒ Awkward |
-| Left operand is NOT this class | âŒ Can't work | âœ… Required |
-| Symmetric binary operation | âŒ Loses symmetry | âœ… Natural |
-| `operator<<`, `operator>>` | âŒ Left is `ostream` | âœ… Required |
-| Needs virtual dispatch | âœ… Yes | âŒ No |
-| Needs `this` pointer | âœ… Yes | âŒ No |
-| Needs private access of ONE class | âœ… Yes | âœ… Also yes |
-| Needs private access of MULTIPLE classes | âŒ Can't | âœ… Perfect |
+| Left operand is `this` class | ✅ Natural | ❌ Awkward |
+| Left operand is NOT this class | ❌ Can't work | ✅ Required |
+| Symmetric binary operation | ❌ Loses symmetry | ✅ Natural |
+| `operator<<`, `operator>>` | ❌ Left is `ostream` | ✅ Required |
+| Needs virtual dispatch | ✅ Yes | ❌ No |
+| Needs `this` pointer | ✅ Yes | ❌ No |
+| Needs private access of ONE class | ✅ Yes | ✅ Also yes |
+| Needs private access of MULTIPLE classes | ❌ Can't | ✅ Perfect |
 
 **Rule of thumb:** If the function operates primarily on `this` object, make it a member. If it operates symmetrically on two or more objects (or the first argument isn't your class), make it a friend or free function.
 
@@ -1696,12 +1696,12 @@ public:
         return Rational(num_ * r.den_ + r.num_ * den_, den_ * r.den_);
     }
 
-    // Friend: left operand is int â€” cannot be a member
+    // Friend: left operand is int — cannot be a member
     friend Rational operator+(int lhs, const Rational& rhs) {
         return Rational(lhs * rhs.den_ + rhs.num_, rhs.den_);
     }
 
-    // Friend: output stream â€” first argument is ostream
+    // Friend: output stream — first argument is ostream
     friend std::ostream& operator<<(std::ostream& os, const Rational& r) {
         os << r.num_ << "/" << r.den_;
         return os;
@@ -1711,8 +1711,8 @@ public:
 int main() {
     Rational r(3, 4);
     std::cout << r << "\n";          // 3/4
-    std::cout << (r + Rational(1,2)) << "\n";  // 5/4 â€” member
-    std::cout << (2 + r) << "\n";    // 11/4 â€” friend
+    std::cout << (r + Rational(1,2)) << "\n";  // 5/4 — member
+    std::cout << (2 + r) << "\n";    // 11/4 — friend
     return 0;
 }
 ```
@@ -1753,7 +1753,7 @@ class Derived : Base {
 // sizeof(Derived) == sizeof(int)  // Empty base doesn't add size
 ```
 
-**Follow-up:** "Can you have a zero-size array?" â†’ No, C++ forbids zero-size arrays. `int arr[0];` is a compiler error (though some compilers allow it as an extension for GCC's struct hack).
+**Follow-up:** "Can you have a zero-size array?" → No, C++ forbids zero-size arrays. `int arr[0];` is a compiler error (though some compilers allow it as an extension for GCC's struct hack).
 
 ---
 
@@ -1789,7 +1789,7 @@ int main() {
 **From a const member function:**
 - YES, you can call a virtual function
 - The `const` qualifier affects `this`, not the vtable
-- However, the called virtual function must itself be callable through the const pointer â€” it must be `const` compatible
+- However, the called virtual function must itself be callable through the const pointer — it must be `const` compatible
 
 ---
 
@@ -1803,15 +1803,15 @@ This is a classic "prefer composition over inheritance" question.
 | Aspect | Private Inheritance | Composition |
 |--------|-------------------|-------------|
 | Relationship | "Is-implemented-in-terms-of" | "Has-a" |
-| Access to protected members | âœ… Yes | âŒ No |
-| Can override virtual functions | âœ… Yes | âŒ No |
-| Tight coupling | âœ… Strong | âŒ Weak |
-| Reusability of component | âŒ Restricted | âœ… Independent |
+| Access to protected members | ✅ Yes | ❌ No |
+| Can override virtual functions | ✅ Yes | ❌ No |
+| Tight coupling | ✅ Strong | ❌ Weak |
+| Reusability of component | ❌ Restricted | ✅ Independent |
 | Interface exposure | Base interface is hidden | Only exposed members |
 | Preferred when | Need protected access or virtual override | Everything else |
 
 ```cpp
-// Composition â€” "has a"
+// Composition — "has a"
 class Engine { public: void start(); };
 class Car {
     Engine engine_;  // Car HAS-A Engine
@@ -1819,7 +1819,7 @@ public:
     void drive() { engine_.start(); }
 };
 
-// Private inheritance â€” "is implemented in terms of"
+// Private inheritance — "is implemented in terms of"
 class Timer { public: virtual void on_tick(); };
 class Stopwatch : private Timer {
     // Stopwatch is implemented in terms of Timer
@@ -1833,7 +1833,7 @@ class Stopwatch : private Timer {
 
 ## 2.11 Applications in Real Systems
 
-### 1. `std::string` â€” A Well-Designed Class
+### 1. `std::string` — A Well-Designed Class
 
 
 The C++ Standard Library `std::string` is a textbook example of class design:
@@ -1847,7 +1847,7 @@ private:
     size_t capacity_;   // Allocated capacity
     // ...
 public:
-    // Const member functions â€” safe for const objects
+    // Const member functions — safe for const objects
     size_t size() const noexcept;
     const char* c_str() const noexcept;
     const char& at(size_t pos) const;   // const overload
@@ -1999,13 +1999,13 @@ Widgets remaining: 0
 ```
 
 **Design patterns demonstrated:**
-- **Encapsulation** â€” Private position/size data with controlled access
-- **Static member** â€” Global widget count tracking
-- **Mutable** â€” Hover state in const draw function
-- **Const correctness** â€” All getters marked const
-- **Method chaining** â€” Fluent interface for property setting
-- **Friend function** â€” operator&lt;< for debugging output
-- **Polymorphism** â€” Virtual draw() for different widget types
+- **Encapsulation** — Private position/size data with controlled access
+- **Static member** — Global widget count tracking
+- **Mutable** — Hover state in const draw function
+- **Const correctness** — All getters marked const
+- **Method chaining** — Fluent interface for property setting
+- **Friend function** — operator&lt;< for debugging output
+- **Polymorphism** — Virtual draw() for different widget types
 
 ### 3. Smart Pointer (std::unique_ptr Internals)
 
@@ -2021,7 +2021,7 @@ public:
     explicit UniquePtr(T* p = nullptr) : ptr_(p) {}
     ~UniquePtr() { delete ptr_; }
 
-    // Move semantics â€” transfer ownership
+    // Move semantics — transfer ownership
     UniquePtr(UniquePtr&& other) noexcept : ptr_(other.ptr_) {
         other.ptr_ = nullptr;      // Transfer via this->ptr_ = other.ptr_ then other.ptr_ = null
     }
@@ -2070,11 +2070,11 @@ void send_char(char c) {
 }
 ```
 
-This uses `struct` for the register map (public by default) and `static constexpr` for bit-field flags â€” perfectly matching the embedded domain.
+This uses `struct` for the register map (public by default) and `static constexpr` for bit-field flags — perfectly matching the embedded domain.
 
 ---
 
-## 2.12 Summary â€” Key Takeaways
+## 2.12 Summary — Key Takeaways
 
 | Topic | Core Idea | Syntax Pattern |
 |-------|-----------|---------------|
@@ -2083,7 +2083,7 @@ This uses `struct` for the register map (public by default) and `static constexp
 | **Member Functions** | Functions operating on object's data | `void func() const;` |
 | **`this` Pointer** | Implicit address of current object; enables disambiguation and chaining | `return *this;` |
 | **`const` Member Function** | Promise not to modify object's logical state; enables const-correctness | `void get() const { }` |
-| **`mutable`** | Exception to const â€” allows modification in const functions | `mutable int counter_;` |
+| **`mutable`** | Exception to const — allows modification in const functions | `mutable int counter_;` |
 | **Static Members** | Belong to class, not instance; one copy shared | `static int count_;` |
 | **Friend Function** | External function granted private access | `friend void f(Class&);` |
 | **Friend Class** | Entire class granted private access | `friend class Other;` |

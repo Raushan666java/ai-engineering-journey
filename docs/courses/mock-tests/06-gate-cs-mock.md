@@ -1,6 +1,6 @@
-﻿# GATE CS â€” Full-Length Mock Test
+# GATE CS — Full-Length Mock Test
 
-> **Exam:** Graduate Aptitude Test in Engineering â€” Computer Science (GATE CS)  
+> **Exam:** Graduate Aptitude Test in Engineering — Computer Science (GATE CS)  
 > **Total Questions:** 65 | **Duration:** 180 minutes | **Max Marks:** 100  
 > **Negative Marking:** 1/3 for 1-mark questions, 2/3 for 2-mark questions
 
@@ -28,8 +28,8 @@
 
 | Section | Questions | Marks | Type | Duration |
 |---------|-----------|-------|------|----------|
-| General Aptitude (GA) | 10 | 15 | 5Ã—1 mark + 5Ã—2 marks | 180 min |
-| Technical (CS) | 55 | 85 | 25Ã—1 mark + 30Ã—2 marks | (combined) |
+| General Aptitude (GA) | 10 | 15 | 5×1 mark + 5×2 marks | 180 min |
+| Technical (CS) | 55 | 85 | 25×1 mark + 30×2 marks | (combined) |
 | **Total** | **65** | **100** | **MCQ + MSQ + NAT** | **180 min** |
 
 **Note:** GATE CS includes Multiple Choice Questions (MCQ), Multiple Select Questions (MSQ), and Numerical Answer Type (NAT) questions.
@@ -39,7 +39,7 @@
 ## Exam Pattern Visualization
 
 ```mermaid
-pie title GATE CS â€” Mark Distribution
+pie title GATE CS — Mark Distribution
     "General Aptitude (1-mark)" : 5
     "General Aptitude (2-mark)" : 10
     "Technical (1-mark)" : 25
@@ -88,10 +88,10 @@ A) 200 m  B) 250 m  C) 300 m  D) 350 m
 **Answer:** C) 300 m
 
 **Explanation:**
-Speed = 72 km/h = 72 Ã— 5/18 = 20 m/s.
-Length = Speed Ã— Time = 20 Ã— 15 = 300 m.
+Speed = 72 km/h = 72 × 5/18 = 20 m/s.
+Length = Speed × Time = 20 × 15 = 300 m.
 
-**Key Takeaway:** km/h to m/s: multiply by 5/18. Distance = Speed Ã— Time when crossing a pole (train length).
+**Key Takeaway:** km/h to m/s: multiply by 5/18. Distance = Speed × Time when crossing a pole (train length).
 </details>
 
 ---
@@ -186,10 +186,10 @@ A) 8 days  B) 9 days  C) 10 days  D) 11 days
 
 **Explanation:**
 A's efficiency = 1/12 per day.
-B is 20% more efficient, so B's efficiency = 1/12 Ã— 1.2 = 1.2/12 = 1/10 per day.
+B is 20% more efficient, so B's efficiency = 1/12 × 1.2 = 1.2/12 = 1/10 per day.
 So B takes 10 days.
 
-Alternatively: Efficiency ratio A:B = 100:120 = 5:6. Time ratio = 6:5. B's time = 12 Ã— 5/6 = 10 days.
+Alternatively: Efficiency ratio A:B = 100:120 = 5:6. Time ratio = 6:5. B's time = 12 × 5/6 = 10 days.
 
 **Key Takeaway:** Efficiency and time are inversely proportional. More efficient = less time.
 </details>
@@ -217,9 +217,9 @@ A) 18%  B) 20%  C) 22%  D) 25%
 **Answer:** B) 20%
 
 **Explanation:**
-Profit % in 2023 = (Profit / Sales) Ã— 100 = (18/90) Ã— 100 = 20%.
+Profit % in 2023 = (Profit / Sales) × 100 = (18/90) × 100 = 20%.
 
-**Key Takeaway:** Profit percentage = (Profit / Sales) Ã— 100%.
+**Key Takeaway:** Profit percentage = (Profit / Sales) × 100%.
 </details>
 
 ---
@@ -237,7 +237,7 @@ A) 108  B) 162  C) 172  D) 182
 
 **Explanation:**
 Pattern: multiply by 3 each time.
-2 Ã— 3 = 6, 6 Ã— 3 = 18, 18 Ã— 3 = 54, 54 Ã— 3 = 162.
+2 × 3 = 6, 6 × 3 = 18, 18 × 3 = 54, 54 × 3 = 162.
 
 **Key Takeaway:** Geometric progression with common ratio 3.
 </details>
@@ -246,7 +246,7 @@ Pattern: multiply by 3 each time.
 
 ### Q9. [Numerical Ability] | 2 Marks | General Aptitude
 
-**If logâ‚‚(x) = 5, what is the value of x?**
+**If log₂(x) = 5, what is the value of x?**
 
 A) 16  B) 25  C) 32  D) 64
 
@@ -256,10 +256,10 @@ A) 16  B) 25  C) 32  D) 64
 **Answer:** C) 32
 
 **Explanation:**
-logâ‚‚(x) = 5 means 2âµ = x.
-x = 2âµ = 32.
+log₂(x) = 5 means 2⁵ = x.
+x = 2⁵ = 32.
 
-**Key Takeaway:** logâ‚(b) = c means a^c = b.
+**Key Takeaway:** logₐ(b) = c means a^c = b.
 </details>
 
 ---
@@ -282,7 +282,7 @@ A) Accomodation  B) Acommodation  C) Accommodation  D) Acomodation
 
 ---
 
-## Section 2: Technical â€” Computer Science (55 Questions)
+## Section 2: Technical — Computer Science (55 Questions)
 
 **Topic Weightage:** Data Structures & Algorithms (8), Programming Languages (6), Theory of Computation (5), Compiler Design (4), Operating Systems (6), Databases (5), Computer Networks (5), Discrete Mathematics (6), Linear Algebra (4), Calculus (3), Digital Logic (3)
 
@@ -292,7 +292,7 @@ A) Accomodation  B) Acommodation  C) Accommodation  D) Acomodation
 
 **What is the time complexity of searching for an element in a balanced Binary Search Tree?**
 
-A) O(1)  B) O(log n)  C) O(n)  D) O(nÂ²)
+A) O(1)  B) O(log n)  C) O(n)  D) O(n²)
 
 <details>
 <summary>Show Answer</summary>
@@ -340,20 +340,20 @@ Note: In C, this is actually undefined behavior (modifying x twice between seque
 
 **Which of the following languages is NOT regular?**
 
-A) {aâ¿ | n â‰¥ 0}  B) {aâ¿bâ¿ | n â‰¥ 0}  C) {aâ¿báµ | n,m â‰¥ 0}  D) {w | w has an even number of a's}
+A) {aⁿ | n ≥ 0}  B) {aⁿbⁿ | n ≥ 0}  C) {aⁿbᵐ | n,m ≥ 0}  D) {w | w has an even number of a's}
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) {aâ¿bâ¿ | n â‰¥ 0}
+**Answer:** B) {aⁿbⁿ | n ≥ 0}
 
 **Explanation:**
-- {aâ¿ | n â‰¥ 0}: Regular (single symbol, can be represented by a*).
-- {aâ¿bâ¿ | n â‰¥ 0}: Not regular (requires counting equal numbers, needs PDA). Proved by pumping lemma.
-- {aâ¿báµ | n,m â‰¥ 0}: Regular (a*b*).
+- {aⁿ | n ≥ 0}: Regular (single symbol, can be represented by a*).
+- {aⁿbⁿ | n ≥ 0}: Not regular (requires counting equal numbers, needs PDA). Proved by pumping lemma.
+- {aⁿbᵐ | n,m ≥ 0}: Regular (a*b*).
 - {w | w has even number of a's}: Regular (finite automaton with 2 states).
 
-**Key Takeaway:** Languages requiring counting of equal numbers (aâ¿bâ¿) are context-free, not regular.
+**Key Takeaway:** Languages requiring counting of equal numbers (aⁿbⁿ) are context-free, not regular.
 </details>
 
 ---
@@ -371,7 +371,7 @@ A) Lexical Analysis  B) Syntax Analysis  C) Semantic Analysis  D) Code Generatio
 
 **Explanation:** The syntax analysis phase (parser) takes tokens from the lexical analyzer and constructs a parse tree / abstract syntax tree (AST) based on the grammar rules of the language.
 
-**Key Takeaway:** Lexical analysis â†’ tokens. Syntax analysis â†’ AST/parse tree. Semantic analysis â†’ type checking.
+**Key Takeaway:** Lexical analysis → tokens. Syntax analysis → AST/parse tree. Semantic analysis → type checking.
 </details>
 
 ---
@@ -442,9 +442,9 @@ A) 10  B) 12  C) 15  D) 18
 **Answer:** C) 15
 
 **Explanation:**
-Number of edges in Kâ‚™ = n(n-1)/2 = 6Ã—5/2 = 15.
+Number of edges in Kₙ = n(n-1)/2 = 6×5/2 = 15.
 
-**Key Takeaway:** Complete graph Kâ‚™ has n(n-1)/2 edges.
+**Key Takeaway:** Complete graph Kₙ has n(n-1)/2 edges.
 </details>
 
 ---
@@ -469,7 +469,7 @@ A) 0  B) 1  C) X (don't care)  D) High impedance
 
 ### Q20. [Linear Algebra] | 1 Mark | Technical
 
-**If A is a 3Ã—3 matrix with determinant 5, what is det(2A)?**
+**If A is a 3×3 matrix with determinant 5, what is det(2A)?**
 
 A) 10  B) 20  C) 40  D) 80
 
@@ -479,30 +479,30 @@ A) 10  B) 20  C) 40  D) 80
 **Answer:** C) 40
 
 **Explanation:**
-det(cA) = câ¿ Ã— det(A) where n is the order of the matrix.
-det(2A) = 2Â³ Ã— 5 = 8 Ã— 5 = 40.
+det(cA) = cⁿ × det(A) where n is the order of the matrix.
+det(2A) = 2³ × 5 = 8 × 5 = 40.
 
-**Key Takeaway:** det(cAâ‚™â‚“â‚™) = câ¿ Ã— det(A).
+**Key Takeaway:** det(cAₙₓₙ) = cⁿ × det(A).
 </details>
 
 ---
 
 ### Q21. [Calculus] | 1 Mark | Technical
 
-**What is the derivative of f(x) = eË£ Ã— sin(x)?**
+**What is the derivative of f(x) = eˣ × sin(x)?**
 
-A) eË£(sin x + cos x)  B) eË£(sin x - cos x)  C) eË£(cos x - sin x)  D) eË£ Ã— cos x
+A) eˣ(sin x + cos x)  B) eˣ(sin x - cos x)  C) eˣ(cos x - sin x)  D) eˣ × cos x
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** A) eË£(sin x + cos x)
+**Answer:** A) eˣ(sin x + cos x)
 
 **Explanation:**
 Using product rule: d/dx[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
-d/dx(eË£ sin x) = eË£(sin x) + eË£(cos x) = eË£(sin x + cos x).
+d/dx(eˣ sin x) = eˣ(sin x) + eˣ(cos x) = eˣ(sin x + cos x).
 
-**Key Takeaway:** Product rule: (fg)' = f'g + fg'. Derivative of eË£ is eË£. Derivative of sin x is cos x.
+**Key Takeaway:** Product rule: (fg)' = f'g + fg'. Derivative of eˣ is eˣ. Derivative of sin x is cos x.
 </details>
 
 ---
@@ -521,15 +521,15 @@ A) 8  B) 9  C) 10  D) 11
 **Explanation:**
 Evaluation using stack:
 - 5 push, 3 push, 2 push
-- *: pop 2, pop 3 â†’ 3*2 = 6, push 6
-- +: pop 6, pop 5 â†’ 5+6 = 11, push 11
+- *: pop 2, pop 3 → 3*2 = 6, push 6
+- +: pop 6, pop 5 → 5+6 = 11, push 11
 - 8 push, 4 push
-- /: pop 4, pop 8 â†’ 8/4 = 2, push 2
-- -: pop 2, pop 11 â†’ 11-2 = 9, push 9
+- /: pop 4, pop 8 → 8/4 = 2, push 2
+- -: pop 2, pop 11 → 11-2 = 9, push 9
 
 Result: 9.
 
-**Key Takeaway:** Postfix evaluation: operand â†’ push, operator â†’ pop two operands, apply, push result.
+**Key Takeaway:** Postfix evaluation: operand → push, operator → pop two operands, apply, push result.
 </details>
 
 ---
@@ -547,10 +547,10 @@ A) 10  B) 12  C) 14  D) 16
 
 **Explanation:**
 Number of distinct BSTs with n distinct keys = nth Catalan number.
-Câ‚™ = (2n)! / ((n+1)! Ã— n!)
-Câ‚„ = (8)! / (5! Ã— 4!) = 40320 / (120 Ã— 24) = 40320 / 2880 = 14.
+Cₙ = (2n)! / ((n+1)! × n!)
+C₄ = (8)! / (5! × 4!) = 40320 / (120 × 24) = 40320 / 2880 = 14.
 
-**Key Takeaway:** Catalan numbers: Câ‚€=1, Câ‚=1, Câ‚‚=2, Câ‚ƒ=5, Câ‚„=14, Câ‚…=42.
+**Key Takeaway:** Catalan numbers: C₀=1, C₁=1, C₂=2, C₃=5, C₄=14, C₅=42.
 </details>
 
 ---
@@ -569,11 +569,11 @@ A) 8  B) 10  C) 12  D) 14
 
 **Explanation:**
 Using the divide-and-conquer approach (tournament method):
-For n elements, minimum comparisons = âŒˆ3n/2âŒ‰ - 2 = âŒˆ3Ã—8/2âŒ‰ - 2 = 12 - 2 = 10.
+For n elements, minimum comparisons = ⌈3n/2⌉ - 2 = ⌈3×8/2⌉ - 2 = 12 - 2 = 10.
 
-Alternatively: Pair elements (4 comparisons for min of pairs, 4 for max of pairs), then 1 more for global min and 1 for global max â†’ but in optimized approach it's 10.
+Alternatively: Pair elements (4 comparisons for min of pairs, 4 for max of pairs), then 1 more for global min and 1 for global max → but in optimized approach it's 10.
 
-**Key Takeaway:** Min and max in âŒˆ3n/2âŒ‰ - 2 comparisons using tournament method.
+**Key Takeaway:** Min and max in ⌈3n/2⌉ - 2 comparisons using tournament method.
 </details>
 
 ---
@@ -664,7 +664,7 @@ Array indexing: a[i] is equivalent to *(a + i).
 
 ### Q28. [Theory of Computation] | 2 Marks | Technical
 
-**Which of the following is TRUE about the language L = {aâ¿bâ¿câ¿ | n â‰¥ 0}?**
+**Which of the following is TRUE about the language L = {aⁿbⁿcⁿ | n ≥ 0}?**
 
 A) Regular  B) Context-free but not regular  C) Context-sensitive but not context-free  D) Recursively enumerable but not context-sensitive
 
@@ -674,9 +674,9 @@ A) Regular  B) Context-free but not regular  C) Context-sensitive but not contex
 **Answer:** C) Context-sensitive but not context-free
 
 **Explanation:**
-L = {aâ¿bâ¿câ¿ | n â‰¥ 0} requires counting and matching three equal numbers, which requires two stacks (or a linear bounded automaton). It is a classic example of a context-sensitive language that is NOT context-free (proved by pumping lemma for CFLs).
+L = {aⁿbⁿcⁿ | n ≥ 0} requires counting and matching three equal numbers, which requires two stacks (or a linear bounded automaton). It is a classic example of a context-sensitive language that is NOT context-free (proved by pumping lemma for CFLs).
 
-**Key Takeaway:** aâ¿bâ¿ is context-free. aâ¿bâ¿câ¿ is context-sensitive. aâ¿ is regular.
+**Key Takeaway:** aⁿbⁿ is context-free. aⁿbⁿcⁿ is context-sensitive. aⁿ is regular.
 </details>
 
 ---
@@ -701,7 +701,7 @@ A) Whether a DFA accepts a given string  B) Whether a CFG generates an empty lan
 
 ### Q30. [Compiler Design] | 2 Marks | Technical
 
-**Which grammar has no Îµ-productions and no unit productions?**
+**Which grammar has no ε-productions and no unit productions?**
 
 A) Chomsky Normal Form (CNF)  B) Greibach Normal Form (GNF)  C) LL(1) grammar  D) LR(1) grammar
 
@@ -710,9 +710,9 @@ A) Chomsky Normal Form (CNF)  B) Greibach Normal Form (GNF)  C) LL(1) grammar  D
 
 **Answer:** A) Chomsky Normal Form (CNF)
 
-**Explanation:** CNF restricts productions to: A â†’ BC (two non-terminals) or A â†’ a (terminal). No Îµ-productions (except possibly S â†’ Îµ) and no unit productions (A â†’ B).
+**Explanation:** CNF restricts productions to: A → BC (two non-terminals) or A → a (terminal). No ε-productions (except possibly S → ε) and no unit productions (A → B).
 
-**Key Takeaway:** CNF: A â†’ BC or A â†’ a. No Îµ, no unit productions. GNF: A â†’ aÎ± (terminal followed by non-terminals).
+**Key Takeaway:** CNF: A → BC or A → a. No ε, no unit productions. GNF: A → aα (terminal followed by non-terminals).
 </details>
 
 ---
@@ -730,7 +730,7 @@ A) Lexical analyzer generator  B) Parser generator  C) Code optimizer  D) Symbol
 
 **Explanation:** YACC is a parser generator (generates LALR(1) parsers from grammar specifications). LEX is the lexical analyzer generator. YACC takes grammar rules with semantic actions and generates C code for the parser.
 
-**Key Takeaway:** LEX â†’ tokenizer/lexer. YACC â†’ parser generator (LALR(1)). Both are compiler construction tools.
+**Key Takeaway:** LEX → tokenizer/lexer. YACC → parser generator (LALR(1)). Both are compiler construction tools.
 </details>
 
 ---
@@ -780,14 +780,14 @@ Starvation is a related concept but not a necessary condition for deadlock.
 
 **What is the size of virtual address space if the logical address has 32 bits?**
 
-A) 2Â³Â² bytes  B) 2Â³Â² words  C) 4 GB  D) Both A and C
+A) 2³² bytes  B) 2³² words  C) 4 GB  D) Both A and C
 
 <details>
 <summary>Show Answer</summary>
 
 **Answer:** D) Both A and C
 
-**Explanation:** With 32-bit logical addresses, the virtual address space = 2Â³Â² bytes = 4 GB (assuming byte-addressable memory).
+**Explanation:** With 32-bit logical addresses, the virtual address space = 2³² bytes = 4 GB (assuming byte-addressable memory).
 
 **Key Takeaway:** Virtual address space size = 2^(number of address bits). 32-bit = 4 GB, 48-bit = 256 TB.
 </details>
@@ -807,14 +807,14 @@ A) WHERE  B) HAVING  C) GROUP BY  D) ORDER BY
 
 **Explanation:** WHERE filters rows before aggregation. HAVING filters groups after GROUP BY and aggregation. ORDER BY sorts the result.
 
-**Key Takeaway:** WHERE â†’ before GROUP BY (row filter). HAVING â†’ after GROUP BY (group filter).
+**Key Takeaway:** WHERE → before GROUP BY (row filter). HAVING → after GROUP BY (group filter).
 </details>
 
 ---
 
 ### Q36. [Databases] | 2 Marks | Technical
 
-**If a relation R(A,B,C) has functional dependencies A â†’ B and B â†’ C, which normal form violation is present?**
+**If a relation R(A,B,C) has functional dependencies A → B and B → C, which normal form violation is present?**
 
 A) 1NF violation  B) 2NF violation  C) 3NF violation  D) BCNF violation
 
@@ -824,16 +824,16 @@ A) 1NF violation  B) 2NF violation  C) 3NF violation  D) BCNF violation
 **Answer:** D) BCNF violation
 
 **Explanation:**
-Given FDs: A â†’ B, B â†’ C.
-Candidate key: A (since A â†’ B â†’ C).
-A â†’ B: A is a candidate key, so this is fine for BCNF.
-B â†’ C: B is NOT a candidate key (A is the key). So the determinant B is not a superkey. This violates BCNF.
+Given FDs: A → B, B → C.
+Candidate key: A (since A → B → C).
+A → B: A is a candidate key, so this is fine for BCNF.
+B → C: B is NOT a candidate key (A is the key). So the determinant B is not a superkey. This violates BCNF.
 
-The relation is in 3NF (no transitive dependency on key since B â†’ C and B is not a subset of key, but in 3NF we allow non-key â†’ non-key as long as it's not the key itself transitively â€” actually B â†’ C IS a transitive dependency since A â†’ B â†’ C, so 3NF is violated too). Wait â€” in 3NF, a non-trivial FD X â†’ Y is allowed if either X is a superkey OR Y is part of a candidate key. Here B â†’ C: B is not superkey, C is not part of any candidate key. So 3NF is also violated.
+The relation is in 3NF (no transitive dependency on key since B → C and B is not a subset of key, but in 3NF we allow non-key → non-key as long as it's not the key itself transitively — actually B → C IS a transitive dependency since A → B → C, so 3NF is violated too). Wait — in 3NF, a non-trivial FD X → Y is allowed if either X is a superkey OR Y is part of a candidate key. Here B → C: B is not superkey, C is not part of any candidate key. So 3NF is also violated.
 
 The question asks which normal form violation. BCNF is the strongest violated. Answer is D.
 
-**Key Takeaway:** Check BCNF: every determinant (LHS of FD) must be a candidate key. A â†’ B (A is key, ok). B â†’ C (B is not key, violates BCNF).
+**Key Takeaway:** Check BCNF: every determinant (LHS of FD) must be a candidate key. A → B (A is key, ok). B → C (B is not key, violates BCNF).
 </details>
 
 ---
@@ -851,7 +851,7 @@ A) DNS  B) ARP  C) DHCP  D) ICMP
 
 **Explanation:** ARP resolves IP addresses to MAC addresses within a local network. DNS resolves domain names to IP addresses. DHCP assigns IP addresses dynamically. ICMP is used for error reporting (ping).
 
-**Key Takeaway:** ARP: IP â†’ MAC. DNS: domain â†’ IP. DHCP: dynamic IP assignment. ICMP: network diagnostics.
+**Key Takeaway:** ARP: IP → MAC. DNS: domain → IP. DHCP: dynamic IP assignment. ICMP: network diagnostics.
 </details>
 
 ---
@@ -860,16 +860,16 @@ A) DNS  B) ARP  C) DHCP  D) ICMP
 
 **What is the maximum window size in Go-Back-N ARQ with n-bit sequence numbers?**
 
-A) n  B) 2â¿  C) 2â¿ - 1  D) 2â¿â»Â¹
+A) n  B) 2ⁿ  C) 2ⁿ - 1  D) 2ⁿ⁻¹
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) 2â¿ - 1
+**Answer:** C) 2ⁿ - 1
 
-**Explanation:** In Go-Back-N ARQ, the maximum window size is 2â¿ - 1 (where n is the number of bits in the sequence number). This prevents ambiguity between new and old frames. For Selective Repeat, the maximum window size is 2â¿â»Â¹.
+**Explanation:** In Go-Back-N ARQ, the maximum window size is 2ⁿ - 1 (where n is the number of bits in the sequence number). This prevents ambiguity between new and old frames. For Selective Repeat, the maximum window size is 2ⁿ⁻¹.
 
-**Key Takeaway:** Go-Back-N: window size â‰¤ 2â¿ - 1. Selective Repeat: window size â‰¤ 2â¿â»Â¹. Stop-and-Wait: window = 1.
+**Key Takeaway:** Go-Back-N: window size ≤ 2ⁿ - 1. Selective Repeat: window size ≤ 2ⁿ⁻¹. Stop-and-Wait: window = 1.
 </details>
 
 ---
@@ -904,9 +904,9 @@ A) 10  B) 16  C) 25  D) 32
 **Answer:** D) 32
 
 **Explanation:**
-|P(S)| = 2^|S| = 2âµ = 32.
+|P(S)| = 2^|S| = 2⁵ = 32.
 
-**Key Takeaway:** Power set size = 2â¿ where n = number of elements.
+**Key Takeaway:** Power set size = 2ⁿ where n = number of elements.
 </details>
 
 ---
@@ -933,7 +933,7 @@ Number of circular permutations of n distinct objects = (n-1)!
 
 ### Q42. [Discrete Mathematics] | 2 Marks | Technical
 
-**If p â†’ q is false, which of the following is true?**
+**If p → q is false, which of the following is true?**
 
 A) p is true, q is true  B) p is true, q is false  C) p is false, q is true  D) p is false, q is false
 
@@ -943,11 +943,11 @@ A) p is true, q is true  B) p is true, q is false  C) p is false, q is true  D) 
 **Answer:** B) p is true, q is false
 
 **Explanation:**
-p â†’ q is false ONLY when p is true and q is false (the implication is violated).
+p → q is false ONLY when p is true and q is false (the implication is violated).
 
-Truth table: pâ†’q is false only in the Tâ†’F case. In all other cases (Tâ†’T, Fâ†’T, Fâ†’F), it is true.
+Truth table: p→q is false only in the T→F case. In all other cases (T→T, F→T, F→F), it is true.
 
-**Key Takeaway:** Implication p â†’ q is false only when p = T and q = F.
+**Key Takeaway:** Implication p → q is false only when p = T and q = F.
 </details>
 
 ---
@@ -959,12 +959,12 @@ Truth table: pâ†’q is false only in the Tâ†’F case. In all other cases
 **2x + 3y + 4z = 5**
 **x + 2y + kz = 3**
 
-A) k â‰  3  B) k = 3  C) k = 4  D) k â‰  4
+A) k ≠ 3  B) k = 3  C) k = 4  D) k ≠ 4
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** A) k â‰  3
+**Answer:** A) k ≠ 3
 
 **Explanation:**
 Determinant of coefficient matrix:
@@ -973,9 +973,9 @@ Determinant of coefficient matrix:
 |1 2 k|
 
 det = 1(3k-8) - 1(2k-4) + 1(4-3) = 3k-8-2k+4+1 = k-3.
-For unique solution, det â‰  0, so k â‰  3.
+For unique solution, det ≠ 0, so k ≠ 3.
 
-**Key Takeaway:** A linear system has a unique solution if the coefficient matrix is non-singular (det â‰  0).
+**Key Takeaway:** A linear system has a unique solution if the coefficient matrix is non-singular (det ≠ 0).
 </details>
 
 ---
@@ -995,8 +995,8 @@ A) 2 and 5  B) -2 and -5  C) 0 and 10  D) 3 and 4
 For a diagonal matrix, the eigenvalues are the diagonal elements.
 Matrix [[2,0],[0,5]] is diagonal, so eigenvalues = 2 and 5.
 
-Alternatively, characteristic equation: det(A - Î»I) = (2-Î»)(5-Î») - 0 = 0.
-So Î» = 2 or Î» = 5.
+Alternatively, characteristic equation: det(A - λI) = (2-λ)(5-λ) - 0 = 0.
+So λ = 2 or λ = 5.
 
 **Key Takeaway:** Eigenvalues of a diagonal matrix are its diagonal entries. Trace = sum of eigenvalues = 7. det = product of eigenvalues = 10.
 </details>
@@ -1005,7 +1005,7 @@ So Î» = 2 or Î» = 5.
 
 ### Q45. [Calculus] | 2 Marks | Technical
 
-**What is the value of âˆ«â‚€Â¹ xÂ² dx?**
+**What is the value of ∫₀¹ x² dx?**
 
 A) 1/4  B) 1/3  C) 1/2  D) 2/3
 
@@ -1015,28 +1015,28 @@ A) 1/4  B) 1/3  C) 1/2  D) 2/3
 **Answer:** B) 1/3
 
 **Explanation:**
-âˆ«â‚€Â¹ xÂ² dx = [xÂ³/3]â‚€Â¹ = 1Â³/3 - 0Â³/3 = 1/3.
+∫₀¹ x² dx = [x³/3]₀¹ = 1³/3 - 0³/3 = 1/3.
 
-**Key Takeaway:** âˆ« xâ¿ dx = xâ¿âºÂ¹/(n+1) + C. âˆ«â‚€Â¹ xÂ² = 1/3.
+**Key Takeaway:** ∫ xⁿ dx = xⁿ⁺¹/(n+1) + C. ∫₀¹ x² = 1/3.
 </details>
 
 ---
 
 ### Q46. [Calculus] | 2 Marks | Technical
 
-**What is âˆ« eË£ dx?**
+**What is ∫ eˣ dx?**
 
-A) eË£ + C  B) ln|x| + C  C) xeË£â»Â¹ + C  D) eË£/x + C
+A) eˣ + C  B) ln|x| + C  C) xeˣ⁻¹ + C  D) eˣ/x + C
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** A) eË£ + C
+**Answer:** A) eˣ + C
 
 **Explanation:**
-The integral of eË£ is eË£ + C (since the derivative of eË£ is eË£).
+The integral of eˣ is eˣ + C (since the derivative of eˣ is eˣ).
 
-**Key Takeaway:** âˆ« eË£ dx = eË£ + C. âˆ« aË£ dx = aË£/ln(a) + C.
+**Key Takeaway:** ∫ eˣ dx = eˣ + C. ∫ aˣ dx = aˣ/ln(a) + C.
 </details>
 
 ---
@@ -1081,10 +1081,10 @@ A) 1  B) 2  C) 3  D) 4
 **Answer:** B) 2
 
 **Explanation:**
-An M:1 multiplexer requires logâ‚‚(M) select lines.
-For 4:1 MUX, logâ‚‚(4) = 2 select lines.
+An M:1 multiplexer requires log₂(M) select lines.
+For 4:1 MUX, log₂(4) = 2 select lines.
 
-**Key Takeaway:** M:1 MUX needs logâ‚‚(M) select lines. 2:1 MUX â†’ 1 select, 4:1 â†’ 2 select, 8:1 â†’ 3 select.
+**Key Takeaway:** M:1 MUX needs log₂(M) select lines. 2:1 MUX → 1 select, 4:1 → 2 select, 8:1 → 3 select.
 </details>
 
 ---
@@ -1093,24 +1093,24 @@ For 4:1 MUX, logâ‚‚(4) = 2 select lines.
 
 **The worst-case time complexity of QuickSort is:**
 
-A) O(n log n)  B) O(nÂ²)  C) O(n)  D) O(log n)
+A) O(n log n)  B) O(n²)  C) O(n)  D) O(log n)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) O(nÂ²)
+**Answer:** B) O(n²)
 
 **Explanation:**
-Best/Average case: O(n log n). Worst case: O(nÂ²) when the pivot is always the smallest or largest element (already sorted or reverse sorted array). Randomized QuickSort mitigates this.
+Best/Average case: O(n log n). Worst case: O(n²) when the pivot is always the smallest or largest element (already sorted or reverse sorted array). Randomized QuickSort mitigates this.
 
-**Key Takeaway:** QuickSort: average O(n log n), worst O(nÂ²). MergeSort: O(n log n) always. HeapSort: O(n log n) always.
+**Key Takeaway:** QuickSort: average O(n log n), worst O(n²). MergeSort: O(n log n) always. HeapSort: O(n log n) always.
 </details>
 
 ---
 
 ### Q50. [DS & Algorithms] | 2 Marks | Technical
 
-**In hashing with separate chaining, what is the load factor Î±?**
+**In hashing with separate chaining, what is the load factor α?**
 
 A) Number of slots / Number of keys  B) Number of keys / Number of slots  C) Number of collisions  D) Hash table size
 
@@ -1119,9 +1119,9 @@ A) Number of slots / Number of keys  B) Number of keys / Number of slots  C) Num
 
 **Answer:** B) Number of keys / Number of slots
 
-**Explanation:** Load factor Î± = n/m where n = number of keys and m = number of slots. Average chain length = Î±. For open addressing, Î± â‰¤ 1. For chaining, Î± can be > 1.
+**Explanation:** Load factor α = n/m where n = number of keys and m = number of slots. Average chain length = α. For open addressing, α ≤ 1. For chaining, α can be > 1.
 
-**Key Takeaway:** Î± = n/m. Chaining: average search time = O(1 + Î±). Open addressing: average search time = O(1/(1-Î±)).
+**Key Takeaway:** α = n/m. Chaining: average search time = O(1 + α). Open addressing: average search time = O(1/(1-α)).
 </details>
 
 ---
@@ -1139,7 +1139,7 @@ A) Stack  B) Queue  C) Priority Queue (Min-Heap)  D) Linked List
 
 **Explanation:** Dijkstra's algorithm uses a priority queue (min-heap) to efficiently extract the vertex with the minimum distance in each iteration. Using a binary heap gives O((V+E) log V) complexity.
 
-**Key Takeaway:** Dijkstra: Priority Queue (min-heap) â†’ O((V+E) log V). Without heap â†’ O(VÂ²).
+**Key Takeaway:** Dijkstra: Priority Queue (min-heap) → O((V+E) log V). Without heap → O(V²).
 </details>
 
 ---
@@ -1148,7 +1148,7 @@ A) Stack  B) Queue  C) Priority Queue (Min-Heap)  D) Linked List
 
 **What is the time complexity of inserting a node at the beginning of a singly linked list?**
 
-A) O(1)  B) O(n)  C) O(log n)  D) O(nÂ²)
+A) O(1)  B) O(n)  C) O(log n)  D) O(n²)
 
 <details>
 <summary>Show Answer</summary>
@@ -1220,16 +1220,16 @@ A) Paging  B) Segmentation  C) Both paging and segmentation  D) Neither
 
 **In a B+ Tree of order m, what is the maximum number of children a non-root node can have?**
 
-A) m  B) m+1  C) âŒˆm/2âŒ‰  D) âŒŠm/2âŒ‹
+A) m  B) m+1  C) ⌈m/2⌉  D) ⌊m/2⌋
 
 <details>
 <summary>Show Answer</summary>
 
 **Answer:** A) m
 
-**Explanation:** In a B+ Tree of order m, the maximum number of children for any node (including root) is m. Non-root nodes must have at least âŒˆm/2âŒ‰ children. The root can have as few as 2 children.
+**Explanation:** In a B+ Tree of order m, the maximum number of children for any node (including root) is m. Non-root nodes must have at least ⌈m/2⌉ children. The root can have as few as 2 children.
 
-**Key Takeaway:** B+ Tree: max children = m, min children (non-root) = âŒˆm/2âŒ‰. Keys = children - 1 for internal nodes.
+**Key Takeaway:** B+ Tree: max children = m, min children (non-root) = ⌈m/2⌉. Keys = children - 1 for internal nodes.
 </details>
 
 ---
@@ -1246,13 +1246,13 @@ A) 40 Mbps  B) 80 Mbps  C) 120 Mbps  D) 160 Mbps
 **Answer:** A) 40 Mbps
 
 **Explanation:**
-Shannon's theorem: C = B Ã— logâ‚‚(1 + SNR)
-C = 4 Ã— 10â¶ Ã— logâ‚‚(1 + 1023)
-C = 4 Ã— 10â¶ Ã— logâ‚‚(1024)
-C = 4 Ã— 10â¶ Ã— 10
-C = 40 Ã— 10â¶ = 40 Mbps.
+Shannon's theorem: C = B × log₂(1 + SNR)
+C = 4 × 10⁶ × log₂(1 + 1023)
+C = 4 × 10⁶ × log₂(1024)
+C = 4 × 10⁶ × 10
+C = 40 × 10⁶ = 40 Mbps.
 
-**Key Takeaway:** Shannon's Capacity: C = B logâ‚‚(1 + SNR). Nyquist: R = 2B logâ‚‚(L) where L = levels.
+**Key Takeaway:** Shannon's Capacity: C = B log₂(1 + SNR). Nyquist: R = 2B log₂(L) where L = levels.
 </details>
 
 ---
@@ -1269,29 +1269,29 @@ A) 4  B) 6  C) 8  D) 12
 **Answer:** C) 8
 
 **Explanation:**
-Sum of degrees = 2 Ã— |E| = 2 Ã— 12 = 24.
+Sum of degrees = 2 × |E| = 2 × 12 = 24.
 For a 3-regular graph: each vertex has degree 3.
 Number of vertices = Sum of degrees / 3 = 24 / 3 = 8.
 
-**Key Takeaway:** Handshaking lemma: Î£ deg(v) = 2|E|. For k-regular graph: n = 2|E|/k.
+**Key Takeaway:** Handshaking lemma: Σ deg(v) = 2|E|. For k-regular graph: n = 2|E|/k.
 </details>
 
 ---
 
 ### Q59. [Linear Algebra] | 2 Marks | Technical
 
-**If A and B are two nÃ—n matrices, which of the following is TRUE?**
+**If A and B are two n×n matrices, which of the following is TRUE?**
 
-A) det(A + B) = det(A) + det(B)  B) det(AB) = det(A) Ã— det(B)  C) det(AB) = det(A) + det(B)  D) det(A - B) = det(A) - det(B)
+A) det(A + B) = det(A) + det(B)  B) det(AB) = det(A) × det(B)  C) det(AB) = det(A) + det(B)  D) det(A - B) = det(A) - det(B)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) det(AB) = det(A) Ã— det(B)
+**Answer:** B) det(AB) = det(A) × det(B)
 
-**Explanation:** det(AB) = det(A) Ã— det(B) is a fundamental property of determinants. The determinant is a multiplicative function, not additive.
+**Explanation:** det(AB) = det(A) × det(B) is a fundamental property of determinants. The determinant is a multiplicative function, not additive.
 
-**Key Takeaway:** det(AB) = det(A) Ã— det(B). det(A+B) â‰  det(A) + det(B). det(Aâ»Â¹) = 1/det(A).
+**Key Takeaway:** det(AB) = det(A) × det(B). det(A+B) ≠ det(A) + det(B). det(A⁻¹) = 1/det(A).
 </details>
 
 ---
@@ -1310,10 +1310,10 @@ A) 1010  B) 1111  C) 1100  D) 1011
 **Explanation:**
 Binary to Gray: MSB same, then XOR each adjacent pair.
 Binary: 1 0 1 0
-Gray:  1 (1âŠ•0=1) (0âŠ•1=1) (1âŠ•0=1)
+Gray:  1 (1⊕0=1) (0⊕1=1) (1⊕0=1)
 Gray = 1111.
 
-**Key Takeaway:** Gray code: Gâ‚€ = Bâ‚€, Gáµ¢ = Báµ¢ âŠ• Báµ¢â‚‹â‚. Gray code ensures adjacent values differ by exactly one bit.
+**Key Takeaway:** Gray code: G₀ = B₀, Gᵢ = Bᵢ ⊕ Bᵢ₋₁. Gray code ensures adjacent values differ by exactly one bit.
 </details>
 
 ---
@@ -1406,7 +1406,7 @@ We need to track 4 states: (even 0s, even 1s) - accepting, (even 0s, odd 1s), (o
 
 ### Q65. [Databases] | 2 Marks | Technical
 
-**Consider a relation R(A,B,C,D,E) with FDs: A â†’ B, A â†’ C, B â†’ C, B â†’ D, A â†’ E. What is the candidate key?**
+**Consider a relation R(A,B,C,D,E) with FDs: A → B, A → C, B → C, B → D, A → E. What is the candidate key?**
 
 A) A  B) B  C) AB  D) AE
 
@@ -1416,7 +1416,7 @@ A) A  B) B  C) AB  D) AE
 **Answer:** A) A
 
 **Explanation:**
-A determines: A â†’ B, A â†’ C, A â†’ E. Also B â†’ C and B â†’ D.
+A determines: A → B, A → C, A → E. Also B → C and B → D.
 From A: we get A, B, C, E. Through B: we get D.
 So A determines all attributes {A,B,C,D,E}. A is a candidate key.
 No proper subset of A exists. So A is the only candidate key.
@@ -1506,7 +1506,7 @@ No proper subset of A exists. So A is the only candidate key.
 | Technical (Q11-65) | ___/55 | ___ | ___ | ___/85 | ___% |
 | **Total** | **___/65** | **___** | **___** | **___/100** | **___%** |
 
-**Score = (Correct_1M Ã— 1 + Correct_2M Ã— 2) - (Wrong_MCQ_1M Ã— 1/3) - (Wrong_MCQ_2M Ã— 2/3)**
+**Score = (Correct_1M × 1 + Correct_2M × 2) - (Wrong_MCQ_1M × 1/3) - (Wrong_MCQ_2M × 2/3)**
 
 ---
 
@@ -1529,13 +1529,13 @@ No proper subset of A exists. So A is the only candidate key.
 |-------|---------------|--------------|
 | DS & Algorithms | Confusing worst and average case complexities | Memorize time complexities for all standard algorithms |
 | Programming | Sequence point violations in C | Avoid modifying a variable twice in the same expression |
-| TOC | Confusing regular vs context-free vs context-sensitive | Remember: aâ¿ (regular), aâ¿bâ¿ (CFL), aâ¿bâ¿câ¿ (CSL) |
+| TOC | Confusing regular vs context-free vs context-sensitive | Remember: aⁿ (regular), aⁿbⁿ (CFL), aⁿbⁿcⁿ (CSL) |
 | OS | Belady's Anomaly - which algorithm? | FIFO shows Belady's; LRU and Optimal don't |
-| DBMS | Normal forms hierarchy | Check: 1NF â†’ 2NF â†’ 3NF â†’ BCNF (increasing constraints) |
+| DBMS | Normal forms hierarchy | Check: 1NF → 2NF → 3NF → BCNF (increasing constraints) |
 | CN | OSI vs TCP/IP model layers | Memorize OSI: Physical, Data Link, Network, Transport, Session, Presentation, Application |
 | Discrete Math | nCr vs nPr | Permutations: order matters (nPr). Combinations: order doesn't (nCr) |
-| Linear Algebra | det(cA) vs cÃ—det(A) | det(cA) = câ¿Ã—det(A), not cÃ—det(A) |
-| Digital Logic | Gray code encoding | MSB same, rest: Gáµ¢ = Báµ¢ XOR Báµ¢â‚‹â‚ |
+| Linear Algebra | det(cA) vs c×det(A) | det(cA) = cⁿ×det(A), not c×det(A) |
+| Digital Logic | Gray code encoding | MSB same, rest: Gᵢ = Bᵢ XOR Bᵢ₋₁ |
 
 ---
 
@@ -1546,7 +1546,7 @@ No proper subset of A exists. So A is the only candidate key.
 | General Aptitude | 10 | 15 min | 1.5 min/Q |
 | Technical (easy + medium) | ~35 | 90 min | ~2.5 min/Q |
 | Technical (hard) | ~20 | 60 min | ~3 min/Q |
-| Review | â€” | 15 min | â€” |
+| Review | — | 15 min | — |
 
 ---
 

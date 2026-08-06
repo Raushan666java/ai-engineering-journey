@@ -1,4 +1,4 @@
-﻿# Chapter 18: Automation Patterns & Workflows
+# Chapter 18: Automation Patterns & Workflows
 
 > **Previous:** [Laravel Boost](./17-boost.md) | **Next:** [Architecture Patterns](./19-architecture-patterns.md)
 
@@ -178,7 +178,7 @@ class EventServiceProvider extends ServiceProvider
 }
 ```
 
-For complex event handling, use **event subscribers** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â classes that subscribe to multiple events:
+For complex event handling, use **event subscribers** — classes that subscribe to multiple events:
 
 ```php
 <?php
@@ -235,7 +235,7 @@ OrderShipped::dispatch($order)->delay(now()->addHours(24));
 
 Queues are essential for non-blocking automation. Laravel provides several patterns for composing work:
 
-**Job Chaining** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Run jobs sequentially, stopping if any fails:
+**Job Chaining** — Run jobs sequentially, stopping if any fails:
 
 ```php
 <?php
@@ -270,7 +270,7 @@ class CheckoutController extends Controller
 
 Each job in the chain receives the same `$order` instance. If `ProcessPayment` throws an exception, none of the subsequent jobs run.
 
-**Job Batching** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Run jobs in parallel and react when the batch completes:
+**Job Batching** — Run jobs in parallel and react when the batch completes:
 
 ```php
 <?php
@@ -358,7 +358,7 @@ class BatchProgressController extends Controller
 }
 ```
 
-**Unique Jobs** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Prevent duplicate instances of the same job in the queue:
+**Unique Jobs** — Prevent duplicate instances of the same job in the queue:
 
 ```php
 <?php
@@ -400,7 +400,7 @@ class SyncUserToCrm implements ShouldQueue, ShouldBeUnique
 }
 ```
 
-**Job Middleware** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Add rate limiting or throttling to jobs:
+**Job Middleware** — Add rate limiting or throttling to jobs:
 
 ```php
 <?php
@@ -455,7 +455,7 @@ RateLimiter::for('email-campaign', function () {
 });
 ```
 
-**Job Events for Monitoring** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Hook into the job lifecycle:
+**Job Events for Monitoring** — Hook into the job lifecycle:
 
 ```php
 <?php
@@ -1807,7 +1807,7 @@ Test your understanding of Automation Patterns.
 - CI/CD integration runs tests and deployments with zero-downtime and rollback strategies
 - Monitoring alerts track queue health, cache hit ratios, and job failures through custom notification channels
 - Business process automation handles approval workflows, document pipelines, and scheduled report generation
-- The complete document processing example demonstrates event ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ job chain ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ AI analysis ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ notification ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ broadcast
+- The complete document processing example demonstrates event → job chain → AI analysis → notification → broadcast
 
 ## Exercises
 
@@ -1834,7 +1834,7 @@ Test your understanding of Automation Patterns.
 
 ### Challenge Problem
 Build a complete order fulfillment automation system:
-- An `OrderCreated` event triggers a job chain: authorize payment ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ check inventory ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ allocate stock ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ generate packing slip ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ update shipping provider
+- An `OrderCreated` event triggers a job chain: authorize payment → check inventory → allocate stock → generate packing slip → update shipping provider
 - If inventory is insufficient, the chain catches the failure, notifies the warehouse team, and marks the order as `backordered`
 - A scheduled task runs hourly to check backordered orders against restocked inventory and dispatches fulfillment when stock is available
 - A webhook endpoint receives shipping carrier updates (delivered, delayed, returned) and updates the order status accordingly

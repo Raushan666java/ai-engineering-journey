@@ -1,6 +1,6 @@
-﻿# Chapter 13: Network Flow
+# Chapter 13: Network Flow
 
-> **Prerequisites:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) â€” Graph theory, cuts, and greedy algorithms | **Next:** [Chapter 14: String Algorithms](./14-string-algorithms.md) â€” From flow optimization to pattern matching
+> **Prerequisites:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — Graph theory, cuts, and greedy algorithms | **Next:** [Chapter 14: String Algorithms](./14-string-algorithms.md) — From flow optimization to pattern matching
 
 ## Learning Objectives
 
@@ -34,7 +34,7 @@ By the end of this chapter, students will be able to:
 
 ## Why Network Flow Matters
 
-Imagine a city's water supply system. Water flows from a reservoir (source) through an intricate network of pipes (edges), each with a maximum capacity (liters per minute). Your job: determine the maximum water that can reach the city (sink) without bursting any pipe. Now replace water with data packets and pipes with fiber-optic cables â€” you've just described internet traffic routing.
+Imagine a city's water supply system. Water flows from a reservoir (source) through an intricate network of pipes (edges), each with a maximum capacity (liters per minute). Your job: determine the maximum water that can reach the city (sink) without bursting any pipe. Now replace water with data packets and pipes with fiber-optic cables — you've just described internet traffic routing.
 
 Network flow is the mathematical backbone of:
 - **Internet routing** (maximizing data throughput across congested links)
@@ -106,7 +106,7 @@ The **value** of a flow is \( |f| = \sum_{v} f(s,v) - \sum_{v} f(v,s) \).
 c_f(u,v) = c(u,v) - f(u,v) + f(v,u)
 \]
 
-A forward edge holds remaining capacity; a backward edge allows "undoing" flow â€” this is what makes the augmenting path approach correct.
+A forward edge holds remaining capacity; a backward edge allows "undoing" flow — this is what makes the augmenting path approach correct.
 
 **Edge Cases:**
 - **Disconnected source and sink:** No path exists; max flow = 0.
@@ -114,7 +114,7 @@ A forward edge holds remaining capacity; a backward edge allows "undoing" flow �
 - **Multiple sources/sinks:** Add a super-source connected to all sources with infinite capacity, and a super-sink from all sinks with infinite capacity.
 - **Undirected edges:** Replace with two directed edges of the same capacity.
 
-> **Pro Tip:** The residual graph is the key concept for all flow algorithms. Forward edges carry remaining capacity, backward edges allow "undoing" flow â€” this is what makes the augmenting path approach correct.
+> **Pro Tip:** The residual graph is the key concept for all flow algorithms. Forward edges carry remaining capacity, backward edges allow "undoing" flow — this is what makes the augmenting path approach correct.
 >
 > **Remember:** Flow conservation: flow in = flow out for all non-source/sink vertices. Check this invariant when debugging flow implementations.
 
@@ -133,11 +133,11 @@ c(S, T) = \sum_{u \in S, v \in T} c(u,v)
 
 **Proof sketch.** Let \( f \) be a maximum flow. The residual network has no augmenting path. Define \( S \) as the set of vertices reachable from \( s \) in the residual network. Then \( (S, V \setminus S) \) is a cut with capacity equal to \( |f| \). No cut can have smaller capacity because any flow must cross any cut by the amount \( |f| \).
 
-**Intuition:** Think of the cut as a set of pipes that, if severed, would disconnect the source from the sink. The bottleneck of the entire network is the minimum total capacity of pipes that must be cut. The maximum flow can never exceed this bottleneck â€” and the theorem says it always exactly equals it.
+**Intuition:** Think of the cut as a set of pipes that, if severed, would disconnect the source from the sink. The bottleneck of the entire network is the minimum total capacity of pipes that must be cut. The maximum flow can never exceed this bottleneck — and the theorem says it always exactly equals it.
 
 **Recovering the Min Cut:** After running max flow, set \( S = \{ \text{vertices reachable from } s \text{ in the residual graph} \} \). The min cut is \( (S, V \setminus S) \).
 
-> **Pro Tip:** The max-flow min-cut theorem is the most important result in network flow â€” it ties together optimization (max flow) and partitioning (min cut). Use it to prove that a given flow is optimal: if you find a cut with capacity equal to the flow, both are optimal.
+> **Pro Tip:** The max-flow min-cut theorem is the most important result in network flow — it ties together optimization (max flow) and partitioning (min cut). Use it to prove that a given flow is optimal: if you find a cut with capacity equal to the flow, both are optimal.
 >
 > **Remember:** The min cut can be directly recovered from the residual graph after max flow: S = vertices reachable from s, T = the rest.
 
@@ -190,17 +190,17 @@ We deliberately pick a suboptimal first path to demonstrate backward edge usage.
 
 | Step | Augmenting Path | Bottleneck | Flow Added | Residual Graph Changes |
 |------|----------------|------------|------------|----------------------|
-| 1 | s â†’ a â†’ b â†’ t | min(4,2,4) = 2 | 2 | sâ†’a:4â†’2, aâ†’s:0â†’2; aâ†’b:2â†’0, bâ†’a:0â†’2; bâ†’t:4â†’2, tâ†’b:0â†’2 |
-| 2 | s â†’ a â†’ t | min(2,3) = 2 | 2 | sâ†’a:2â†’0, aâ†’s:2â†’4; aâ†’t:3â†’1, tâ†’a:0â†’2 |
-| 3 | s â†’ b â†’ t | min(3,2) = 2 | 2 | sâ†’b:3â†’1, bâ†’s:0â†’2; bâ†’t:2â†’0, tâ†’b:2â†’4 |
-| 4 | s â†’ b â†’ a â†’ t | min(1,2,1) = 1 | 1 | sâ†’b:1â†’0, bâ†’s:2â†’3; bâ†’a:2â†’1, aâ†’b:0â†’1; aâ†’t:1â†’0, tâ†’a:2â†’3 |
+| 1 | s → a → b → t | min(4,2,4) = 2 | 2 | s→a:4→2, a→s:0→2; a→b:2→0, b→a:0→2; b→t:4→2, t→b:0→2 |
+| 2 | s → a → t | min(2,3) = 2 | 2 | s→a:2→0, a→s:2→4; a→t:3→1, t→a:0→2 |
+| 3 | s → b → t | min(3,2) = 2 | 2 | s→b:3→1, b→s:0→2; b→t:2→0, t→b:2→4 |
+| 4 | s → b → a → t | min(1,2,1) = 1 | 1 | s→b:1→0, b→s:2→3; b→a:2→1, a→b:0→1; a→t:1→0, t→a:2→3 |
 
 **Final flow:** f(s,a)=4, f(s,b)=3, f(a,b)=1, f(a,t)=3, f(b,t)=4. Total = 7.
 
 **Implementations:**
 
 ```cpp
-// C++ â€” Ford-Fulkerson (adjacency matrix, DFS-based path finding)
+// C++ — Ford-Fulkerson (adjacency matrix, DFS-based path finding)
 #include <vector>
 #include <algorithm>
 #include <climits>
@@ -247,7 +247,7 @@ public:
 ```
 
 ```python
-# Python â€” Ford-Fulkerson
+# Python — Ford-Fulkerson
 class FordFulkerson:
     def __init__(self, n):
         self.n = n
@@ -282,7 +282,7 @@ class FordFulkerson:
 ```
 
 ```java
-// Java â€” Ford-Fulkerson
+// Java — Ford-Fulkerson
 import java.util.*;
 
 class FordFulkerson {
@@ -338,7 +338,7 @@ Ford-Fulkerson runs in \( O(E \cdot |f^*|) \) where \( |f^*| \) is the maximum f
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Conceptually simple to understand and implement | Pseudo-polynomial â€” slow for large capacities |
+| Conceptually simple to understand and implement | Pseudo-polynomial — slow for large capacities |
 | Works for any capacity values (integer or rational) | May never terminate for irrational capacities |
 | General framework adapted by all other algorithms | DFS can pick long, inefficient augmenting paths |
 | Naturally handles backward edges via residual graph | Poor worst-case on pathological networks |
@@ -349,13 +349,13 @@ Ford-Fulkerson runs in \( O(E \cdot |f^*|) \) where \( |f^*| \) is the maximum f
 - **Zero capacity edges:** The DFS skips them (cap = 0). Correct.
 - **Multiple sources:** Add a super-source with infinite capacity edges to each source.
 - **Multiple sinks:** Add a super-sink with infinite capacity edges from each sink.
-- **Large capacities:** Integer overflow possible â€” use `long long` or `BigInteger`.
+- **Large capacities:** Integer overflow possible — use `long long` or `BigInteger`.
 - **Irrational capacities:** The algorithm may never terminate (infinite loop). Always use integer or rational capacities.
 
 ### 13.4 Edmonds-Karp Algorithm
 
 
-**Real-World Analogy:** Instead of picking an arbitrary route each day (Ford-Fulkerson), always take the route with the fewest pipes. This guarantees you'll never get stuck making unnecessary detours â€” you'll always saturate the shortest bottleneck first, and the overall process finishes in a predictable number of steps.
+**Real-World Analogy:** Instead of picking an arbitrary route each day (Ford-Fulkerson), always take the route with the fewest pipes. This guarantees you'll never get stuck making unnecessary detours — you'll always saturate the shortest bottleneck first, and the overall process finishes in a predictable number of steps.
 
 **Algorithm Steps:**
 
@@ -411,20 +411,20 @@ EdmondsKarp(G, s, t):
 
 Same network: \( s \to a(4), s \to b(3), a \to b(2), a \to t(3), b \to t(4) \).
 
-BFS always picks the shortest path (in edges). The shortest paths from s to t are: sâ†’aâ†’t (2 edges), sâ†’bâ†’t (2 edges).
+BFS always picks the shortest path (in edges). The shortest paths from s to t are: s→a→t (2 edges), s→b→t (2 edges).
 
 | Step | BFS Path | Bottleneck | Flow Added | Residual Graph |
 |------|----------|------------|------------|----------------|
-| 1 | s â†’ a â†’ t | min(4,3) = 3 | 3 | sâ†’a:4â†’1, aâ†’s:0â†’3; aâ†’t:3â†’0, tâ†’a:0â†’3; sâ†’b:3, bâ†’t:4 |
-| 2 | s â†’ b â†’ t | min(3,4) = 3 | 3 | sâ†’b:3â†’0, bâ†’s:0â†’3; bâ†’t:4â†’1, tâ†’b:0â†’3 |
-| 3 | s â†’ a â†’ b â†’ t | min(1,2,1) = 1 | 1 | sâ†’a:1â†’0, aâ†’s:3â†’4; aâ†’b:2â†’1, bâ†’a:0â†’1; bâ†’t:1â†’0, tâ†’b:3â†’4 |
+| 1 | s → a → t | min(4,3) = 3 | 3 | s→a:4→1, a→s:0→3; a→t:3→0, t→a:0→3; s→b:3, b→t:4 |
+| 2 | s → b → t | min(3,4) = 3 | 3 | s→b:3→0, b→s:0→3; b→t:4→1, t→b:0→3 |
+| 3 | s → a → b → t | min(1,2,1) = 1 | 1 | s→a:1→0, a→s:3→4; a→b:2→1, b→a:0→1; b→t:1→0, t→b:3→4 |
 
 **Final flow:** Total = 7. Same as Ford-Fulkerson, but only 3 BFS iterations instead of 4 DFS iterations.
 
 **Implementations:**
 
 ```cpp
-// C++ â€” Edmonds-Karp
+// C++ — Edmonds-Karp
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -479,7 +479,7 @@ public:
 ```
 
 ```python
-# Python â€” Edmonds-Karp
+# Python — Edmonds-Karp
 from collections import deque
 
 class EdmondsKarp:
@@ -528,7 +528,7 @@ class EdmondsKarp:
 ```
 
 ```java
-// Java â€” Edmonds-Karp
+// Java — Edmonds-Karp
 import java.util.*;
 
 class EdmondsKarp {
@@ -587,7 +587,7 @@ Edmonds-Karp runs in \( O(VE^2) \).
 
 - **Why BFS?** BFS finds the shortest path in \( O(E) \). The key insight: each edge becomes saturated at most \( O(V) \) times because each saturation increases the distance from s to at least one vertex along the path. With \( O(E) \) edges and at most \( O(V) \) saturations per edge, we get \( O(V \cdot E) \) augmentations. Each augmentation costs \( O(E) \) for BFS.
 - **Why polynomial?** Unlike Ford-Fulkerson, the number of iterations depends only on the graph size, not the capacity values. This guarantees polynomial time regardless of how large capacities are.
-- **Tight bound:** The \( O(VE^2) \) bound is tight â€” there exist networks where Edmonds-Karp performs \( \Theta(VE) \) augmentations.
+- **Tight bound:** The \( O(VE^2) \) bound is tight — there exist networks where Edmonds-Karp performs \( \Theta(VE) \) augmentations.
 
 **Advantages & Disadvantages:**
 
@@ -602,7 +602,7 @@ Edmonds-Karp runs in \( O(VE^2) \).
 
 - **Same as Ford-Fulkerson** for disconnected, zero capacity, multiple sources/sinks.
 - **Unit-capacity networks:** BFS still works but is overkill. Dinic is \( O(E\sqrt{V}) \) for these.
-- **Dense graphs:** With \( E = O(V^2) \), complexity becomes \( O(V^5) \) â€” impractical.
+- **Dense graphs:** With \( E = O(V^2) \), complexity becomes \( O(V^5) \) — impractical.
 
 ### 13.5 Dinic's Algorithm
 
@@ -627,7 +627,7 @@ Dinic(G, s, t):
     n = number of vertices
     
     while true:
-        // BFS â€” build level graph
+        // BFS — build level graph
         level = array of size n, initialized to -1
         level[s] = 0
         queue = {s}
@@ -640,7 +640,7 @@ Dinic(G, s, t):
         
         if level[t] == -1: break
         
-        // DFS â€” send blocking flow
+        // DFS — send blocking flow
         ptr = array of size n, initialized to 0
         while true:
             pushed = DFS(s, t, INF, level, ptr)
@@ -667,26 +667,26 @@ DFS(v, t, f, level, ptr):
 
 Same network: \( s \to a(4), s \to b(3), a \to b(2), a \to t(3), b \to t(4) \).
 
-**Phase 1 â€” Level graph:**
+**Phase 1 — Level graph:**
 BFS from s: level[s]=0, level[a]=1, level[b]=1, level[t]=2.
 
-Edges in level graph: sâ†’a, sâ†’b, aâ†’t, bâ†’t. (aâ†’b goes from level 1 to level 1, so it's excluded.)
+Edges in level graph: s→a, s→b, a→t, b→t. (a→b goes from level 1 to level 1, so it's excluded.)
 
 DFS blocking flow:
-- Path 1: sâ†’aâ†’t, push min(4,3) = 3. Flow = 3.
-- Path 2: sâ†’bâ†’t, push min(3,4) = 3. Flow = 3.
+- Path 1: s→a→t, push min(4,3) = 3. Flow = 3.
+- Path 2: s→b→t, push min(3,4) = 3. Flow = 3.
 
 Blocking flow total = 6. Overall flow = 6.
 
-After Phase 1 residual: sâ†’a(1), aâ†’t(0), sâ†’b(0), bâ†’t(1), plus backward edges.
+After Phase 1 residual: s→a(1), a→t(0), s→b(0), b→t(1), plus backward edges.
 
-**Phase 2 â€” Level graph:**
-BFS from s: level[s]=0, level[a]=1, level[b]=1, level[t]=2 (via aâ†’bâ†’t or sâ†’aâ†’bâ†’t).
+**Phase 2 — Level graph:**
+BFS from s: level[s]=0, level[a]=1, level[b]=1, level[t]=2 (via a→b→t or s→a→b→t).
 
-Edges in level graph: sâ†’a(1), sâ†’b(0 â€” no), aâ†’b(2), bâ†’t(1).
+Edges in level graph: s→a(1), s→b(0 — no), a→b(2), b→t(1).
 
 DFS blocking flow:
-- Path 1: sâ†’aâ†’bâ†’t, push min(1,2,1) = 1. Flow = 1.
+- Path 1: s→a→b→t, push min(1,2,1) = 1. Flow = 1.
 
 Blocking flow total = 1. Overall flow = 7.
 
@@ -695,7 +695,7 @@ Blocking flow total = 1. Overall flow = 7.
 **Implementations:**
 
 ```cpp
-// C++ â€” Dinic (adjacency list with edge struct)
+// C++ — Dinic (adjacency list with edge struct)
 #include <vector>
 #include <queue>
 #include <algorithm>
@@ -766,7 +766,7 @@ public:
 ```
 
 ```python
-# Python â€” Dinic
+# Python — Dinic
 from collections import deque
 
 class Dinic:
@@ -821,7 +821,7 @@ class Dinic:
 ```
 
 ```java
-// Java â€” Dinic
+// Java — Dinic
 import java.util.*;
 
 class Dinic {
@@ -920,8 +920,8 @@ Dinic runs in \( O(V^2 E) \) general, \( O(E \sqrt{V}) \) for unit-capacity netw
 
 **Edge Cases:**
 
-- **Unit-capacity networks:** Dinic shines here â€” complexity drops to \( O(E \sqrt{V}) \).
-- **Dense graphs:** \( O(V^2 E) = O(V^4) \) â€” consider push-relabel instead.
+- **Unit-capacity networks:** Dinic shines here — complexity drops to \( O(E \sqrt{V}) \).
+- **Dense graphs:** \( O(V^2 E) = O(V^4) \) — consider push-relabel instead.
 - **Multiple sources/sinks:** Super-source/super-sink reduction works identically.
 - **Layered networks:** If the level graph is deep, Dinic may need many phases.
 
@@ -947,7 +947,7 @@ PushRelabel(G, s, t):
     excess = array of size n, initialized to 0
     height[s] = n
     
-    // Initialize â€” push from source
+    // Initialize — push from source
     for each neighbor v of s:
         excess[v] = cap(s,v)
         cap(s,v) = 0
@@ -973,7 +973,7 @@ PushRelabel(G, s, t):
 **Implementations:**
 
 ```cpp
-// C++ â€” Push-Relabel (highest-label selection)
+// C++ — Push-Relabel (highest-label selection)
 #include <vector>
 #include <algorithm>
 #include <climits>
@@ -1049,7 +1049,7 @@ public:
 ```
 
 ```python
-# Python â€” Push-Relabel
+# Python — Push-Relabel
 class PushRelabel:
     def __init__(self, n):
         self.n = n
@@ -1068,7 +1068,7 @@ class PushRelabel:
         excess = [0] * n
         height[s] = n
 
-        # Initialize â€” push from source
+        # Initialize — push from source
         for e in self.graph[s]:
             e[1] = 0
             e[2][1] = e[2][1] + e[1]  # Actually this is wrong for initialization
@@ -1128,13 +1128,13 @@ Push-Relabel runs in \( O(V^2 \sqrt{E}) \) with highest-label selection, \( O(V^
 **Edge Cases:**
 
 - **Same as other algorithms** for disconnected, zero capacity, multiple sources/sinks.
-- **Very dense graphs:** Push-relabel is the algorithm of choice here â€” it avoids the \( O(V^4) \) worst case of Dinic.
+- **Very dense graphs:** Push-relabel is the algorithm of choice here — it avoids the \( O(V^4) \) worst case of Dinic.
 - **Floating-point capacities:** Push-relabel handles these well since there's no path-length dependency.
 
 ### 13.7 Min-Cut (Finding the Bottleneck)
 
 
-**Real-World Analogy:** After computing the maximum flow in a water network, the min cut tells you which pipes are the bottleneck. Upgrading these pipes (increasing their capacity) directly increases the maximum flow. All other pipes have spare capacity â€” upgrading them is wasteful.
+**Real-World Analogy:** After computing the maximum flow in a water network, the min cut tells you which pipes are the bottleneck. Upgrading these pipes (increasing their capacity) directly increases the maximum flow. All other pipes have spare capacity — upgrading them is wasteful.
 
 **Algorithm to Find Min Cut:**
 
@@ -1147,22 +1147,22 @@ After running any max flow algorithm:
 
 **Step-by-Step Dry Run:**
 
-After running max flow on our example network (sâ†’a(4), sâ†’b(3), aâ†’b(2), aâ†’t(3), bâ†’t(4)), the final residual graph has:
+After running max flow on our example network (s→a(4), s→b(3), a→b(2), a→t(3), b→t(4)), the final residual graph has:
 
-- s â†’ a: cap 0 (saturated)
-- a â†’ s: cap 4 (backward)
-- s â†’ b: cap 0 (saturated)
-- b â†’ s: cap 3 (backward)
-- a â†’ b: cap 1 (forward)
-- b â†’ a: cap 1 (backward)
-- a â†’ t: cap 0 (saturated)
-- t â†’ a: cap 3 (backward)
-- b â†’ t: cap 0 (saturated)
-- t â†’ b: cap 4 (backward)
+- s → a: cap 0 (saturated)
+- a → s: cap 4 (backward)
+- s → b: cap 0 (saturated)
+- b → s: cap 3 (backward)
+- a → b: cap 1 (forward)
+- b → a: cap 1 (backward)
+- a → t: cap 0 (saturated)
+- t → a: cap 3 (backward)
+- b → t: cap 0 (saturated)
+- t → b: cap 4 (backward)
 
 **BFS from s** following edges with residual capacity > 0:
-- From s: aâ†’s(4) âœ“, bâ†’s(3) âœ“ â€” but those go back to s.
-- Wait â€” from s, outgoing edges: sâ†’a(0), sâ†’b(0). Both are 0.
+- From s: a→s(4) ✓, b→s(3) ✓ — but those go back to s.
+- Wait — from s, outgoing edges: s→a(0), s→b(0). Both are 0.
 - So only s itself is reachable.
 
 **Min cut:** \( S = \{s\}, T = \{a, b, t\} \). Cut capacity = c(s,a) + c(s,b) = 4 + 3 = 7. This equals the max flow.
@@ -1234,11 +1234,11 @@ std::pair<int, std::vector<bool>> minCut(
 
 **Real-World Application:** Dating apps match users, job portals match candidates to positions, cloud schedulers match tasks to servers.
 
-> **Pro Tip:** Bipartite matching via max flow is one of the most elegant reductions â€” source â†’ left â†’ right â†’ sink with unit capacities transforms a combinatorial problem into flow.
+> **Pro Tip:** Bipartite matching via max flow is one of the most elegant reductions — source → left → right → sink with unit capacities transforms a combinatorial problem into flow.
 >
 > **Remember:** The Hungarian algorithm handles weighted matching; max flow is faster for unweighted cases.
 
-**One-Sentence Takeaway:** Maximum bipartite matching reduces to max flow by connecting source â†’ left nodes â†’ right nodes â†’ sink with unit capacities.
+**One-Sentence Takeaway:** Maximum bipartite matching reduces to max flow by connecting source → left nodes → right nodes → sink with unit capacities.
 
 ### 13.9 Assignment Problem
 
@@ -1249,7 +1249,7 @@ std::pair<int, std::vector<bool>> minCut(
 
 > **Pro Tip:** The assignment problem is a min-cost max flow with exactly n units of flow. The Hungarian algorithm solves it in O(n^3) without general flow machinery.
 >
-> **Remember:** Both bipartite matching and assignment use the same source â†’ left â†’ right â†’ sink structure â€” costs differentiate them.
+> **Remember:** Both bipartite matching and assignment use the same source → left → right → sink structure — costs differentiate them.
 
 **One-Sentence Takeaway:** The assignment problem finds minimum-cost perfect matching via min-cost max flow or the specialized Hungarian algorithm in O(n^3).
 
@@ -1438,8 +1438,8 @@ public class MinCutExample {
 | **Edmonds-Karp** | BFS shortest path; O(VE^2); polynomial always |
 | **Dinic** | Level graph + blocking flow; O(V^2 E); CP standard |
 | **Push-Relabel** | Local push/relabel; O(V^2 sqrt(E)); parallel |
-| **Bipartite Matching** | Reduce to max flow: s â†’ U â†’ V â†’ t with unit caps |
-| **Assignment** | Bipartite matching + edge costs â†’ min-cost max flow |
+| **Bipartite Matching** | Reduce to max flow: s → U → V → t with unit caps |
+| **Assignment** | Bipartite matching + edge costs → min-cost max flow |
 
 ### Cross-Application Matrix
 
@@ -1459,9 +1459,9 @@ public class MinCutExample {
 
 **Question:** Given N left nodes and M right nodes with edges between them, find the maximum matching.
 
-**Approach:** Add source â†’ left (cap 1), left â†’ right (cap 1), right â†’ sink (cap 1). Run Dinic.
+**Approach:** Add source → left (cap 1), left → right (cap 1), right → sink (cap 1). Run Dinic.
 
-**Time:** \( O(E \sqrt{V}) \) â€” optimal for unweighted bipartite matching.
+**Time:** \( O(E \sqrt{V}) \) — optimal for unweighted bipartite matching.
 
 ```python
 def maximumMatching(n_left, n_right, edges):
@@ -1479,7 +1479,7 @@ def maximumMatching(n_left, n_right, edges):
     return dinic.max_flow(S, T)
 ```
 
-### Problem 2: Min-Cut for Vertex Cover (KÅ‘nig's Theorem)
+### Problem 2: Min-Cut for Vertex Cover (Kőnig's Theorem)
 
 **Question:** In a bipartite graph, the size of the minimum vertex cover equals the size of the maximum matching.
 
@@ -1487,7 +1487,7 @@ def maximumMatching(n_left, n_right, edges):
 - From the residual graph after max flow, find vertices reachable from s in the residual.
 - Left vertices NOT reachable + right vertices reachable = minimum vertex cover.
 
-**Why this works:** KÅ‘nig's theorem establishes the duality between matching and vertex cover in bipartite graphs. The min cut in the flow network directly gives the vertex cover.
+**Why this works:** Kőnig's theorem establishes the duality between matching and vertex cover in bipartite graphs. The min cut in the flow network directly gives the vertex cover.
 
 ### Problem 3: Flow Decomposition
 
@@ -1509,7 +1509,7 @@ def maximumMatching(n_left, n_right, edges):
 
 **Approach:** Assign capacity 1 to all edges. Run max flow. The flow value equals the maximum number of edge-disjoint paths. Each unit of flow traces one path.
 
-**Variation:** For vertex-disjoint paths, split each vertex v into v_in â†’ v_out with capacity 1.
+**Variation:** For vertex-disjoint paths, split each vertex v into v_in → v_out with capacity 1.
 
 ---
 
@@ -1538,9 +1538,9 @@ def maximumMatching(n_left, n_right, edges):
 **Problem:** Dunn (a logistics company) needs to assign N delivery drivers to M delivery routes. Each driver can handle a subset of routes based on vehicle type, license, and location. Maximize the number of assigned routes.
 
 **Solution:** This is a textbook bipartite matching via max flow. The flow network has:
-- Source â†’ each driver (cap 1)
-- Each driver â†’ each eligible route (cap 1)
-- Each route â†’ sink (cap 1)
+- Source → each driver (cap 1)
+- Each driver → each eligible route (cap 1)
+- Each route → sink (cap 1)
 
 Max flow = maximum number of routes assigned. With 500 drivers and 500 routes, Dinic solves this in milliseconds.
 

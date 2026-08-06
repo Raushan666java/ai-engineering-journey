@@ -1,4 +1,4 @@
-﻿# Chapter 4: Marketing in Banking Sector
+# Chapter 4: Marketing in Banking Sector
 
 ## Learning Objectives
 
@@ -35,14 +35,14 @@ By the end of this chapter, you will be able to:
 
 ### 4.1 Introduction to Banking Marketing
 
-Banking marketing applies marketing principles to financial services. Unlike product marketing, banking marketing must address the unique characteristics of services â€” intangibility, inseparability, variability, and perishability.
+Banking marketing applies marketing principles to financial services. Unlike product marketing, banking marketing must address the unique characteristics of services — intangibility, inseparability, variability, and perishability.
 
 **Why banking marketing is different:**
-- **Intangibility** â€” Cannot be displayed or demonstrated before purchase
-- **Trust-based** â€” Customers must trust the institution with their money
-- **Regulatory constraints** â€” RBI heavily regulates marketing communications
-- **Long-term relationships** â€” Customer relationships span years and decades
-- **Risk involvement** â€” Financial products carry inherent risk
+- **Intangibility** — Cannot be displayed or demonstrated before purchase
+- **Trust-based** — Customers must trust the institution with their money
+- **Regulatory constraints** — RBI heavily regulates marketing communications
+- **Long-term relationships** — Customer relationships span years and decades
+- **Risk involvement** — Financial products carry inherent risk
 
 ```mermaid
 mindmap
@@ -87,8 +87,8 @@ Retail banking (also called personal or consumer banking) serves individual cust
 #### Savings Account Marketing
 
 Key differentiators banks use for savings accounts:
-- Interest rate (currently 2.5%â€“7% p.a.)
-- Minimum balance requirement (â‚¹0 to â‚¹10,000)
+- Interest rate (currently 2.5%–7% p.a.)
+- Minimum balance requirement (₹0 to ₹10,000)
 - Free transactions, ATM withdrawals, cheque books
 - Digital banking features (mobile app, UPI)
 - Insurance covers (accidental, life)
@@ -121,9 +121,9 @@ Wealth management provides high-net-worth individuals (HNIs) with comprehensive 
 
 | Segment | Investible Assets | Service Approach |
 |---------|------------------|------------------|
-| **Mass Affluent** | â‚¹10â€“50 lakh | Standard advisory, robo-advisory |
-| **High Net Worth (HNI)** | â‚¹50 lakhâ€“â‚¹5 crore | Dedicated relationship manager |
-| **Ultra HNI** | â‚¹5 crore+ | Family office, bespoke solutions |
+| **Mass Affluent** | ₹10–50 lakh | Standard advisory, robo-advisory |
+| **High Net Worth (HNI)** | ₹50 lakh–₹5 crore | Dedicated relationship manager |
+| **Ultra HNI** | ₹5 crore+ | Family office, bespoke solutions |
 
 ### 4.5 Customer Lifecycle in Banking
 
@@ -160,7 +160,7 @@ flowchart TD
 |---------|-------------|------|------------|
 | **Branch walk-in** | Customer visits branch | Low | High (high intent) |
 | **Direct sales agents** | Field sales force | High | Moderate |
-| **Digital acquisition** | Website, app, online ads | Lowâ€“Moderate | Lowâ€“Moderate |
+| **Digital acquisition** | Website, app, online ads | Low–Moderate | Low–Moderate |
 | **Referral programmes** | Existing customers refer | Low | Very high |
 | **Partnerships** | Corporate salary accounts, co-branded cards | Moderate | High |
 | **Events** | Financial literacy camps, seminars | Moderate | Moderate |
@@ -173,8 +173,8 @@ flowchart TD
 
 ### 4.7 Cross-Selling and Upselling
 
-**Cross-selling** â€” Selling additional, related products to existing customers.
-**Upselling** â€” Selling a higher-value version of the same product.
+**Cross-selling** — Selling additional, related products to existing customers.
+**Upselling** — Selling a higher-value version of the same product.
 
 ```typescript
 // TypeScript: Bank Cross-Sell Recommender Engine
@@ -202,7 +202,7 @@ class CrossSellEngine {
     if (customer.hasSavings && !customer.hasCreditCard && customer.income > 5) {
       recommendations.push({
         product: "Platinum Credit Card",
-        reason: "High-income savings customer â€” eligible for premium card with travel benefits",
+        reason: "High-income savings customer — eligible for premium card with travel benefits",
         priority: 1,
       });
     }
@@ -256,7 +256,7 @@ console.log(CrossSellEngine.recommend(customer));
 
 | Metric | Definition | Target |
 |--------|------------|--------|
-| **Cross-sell ratio** | Products per customer | 3â€“5 per customer (industry avg: 2â€“3) |
+| **Cross-sell ratio** | Products per customer | 3–5 per customer (industry avg: 2–3) |
 | **Penetration rate** | % of eligible customers who bought the product | > 30% |
 | **Conversion rate** | % of offers accepted | > 15% |
 | **Time to cross-sell** | Days from account opening to first cross-sell | < 90 days |
@@ -311,11 +311,11 @@ graph TD
 | **Technology** | High | App usability, digital features, security |
 
 **Net Promoter Score (NPS) in banking:**
-- **Promoters (9â€“10):** Loyal, enthusiastic customers who recommend
-- **Passives (7â€“8):** Satisfied but unenthusiastic
-- **Detractors (0â€“6):** Unhappy customers who may spread negative word-of-mouth
+- **Promoters (9–10):** Loyal, enthusiastic customers who recommend
+- **Passives (7–8):** Satisfied but unenthusiastic
+- **Detractors (0–6):** Unhappy customers who may spread negative word-of-mouth
 
-NPS = % Promoters âˆ’ % Detractors
+NPS = % Promoters − % Detractors
 
 ```typescript
 // TypeScript: Banking NPS Calculator
@@ -404,7 +404,7 @@ The Reserve Bank of India regulates marketing practices of banks and financial i
 | **KYC Norms** | Mandatory identity verification for all account relationships |
 | **Data Protection** | Customer information must not be shared without consent |
 | **Customer Grievance Redressal** | Banks must have a structured complaint resolution mechanism |
-| **Telemarketing Guidelines** | Do-Not-Disturb (DND) registry must be respected; calls only between 9 AMâ€“9 PM |
+| **Telemarketing Guidelines** | Do-Not-Disturb (DND) registry must be respected; calls only between 9 AM–9 PM |
 | **Code of Bank's Commitment to Customers** | Published standards of service, including turnaround times |
 
 **Prohibited marketing practices:**
@@ -467,7 +467,7 @@ class MarketingCompliance {
 }
 
 const ad = {
-  content: "Earn 8% returns on our new Fixed Deposit â€” guaranteed returns with zero risk!",
+  content: "Earn 8% returns on our new Fixed Deposit — guaranteed returns with zero risk!",
   mentionsInterestRate: true,
   mentionsRisks: false,
   hasDisclaimers: false,
@@ -481,14 +481,14 @@ console.log(MarketingCompliance.checkCompliance(ad));
 
 | Metric | Formula | Target (Retail Banking) |
 |--------|---------|------------------------|
-| **Customer Acquisition Cost (CAC)** | Total marketing spend / New customers | â‚¹200â€“â‚¹500 per account |
-| **Cost-to-Income Ratio** | Operating expenses / Operating income | 40â€“50% |
+| **Customer Acquisition Cost (CAC)** | Total marketing spend / New customers | ₹200–₹500 per account |
+| **Cost-to-Income Ratio** | Operating expenses / Operating income | 40–50% |
 | **Cross-sell Ratio** | Total products / Total customers | 3+ per customer |
 | **Customer Churn Rate** | Customers lost / Total customers | < 5% annually |
-| **Net Interest Margin (NIM)** | (Interest earned âˆ’ Interest paid) / Assets | 2.5â€“4% |
+| **Net Interest Margin (NIM)** | (Interest earned − Interest paid) / Assets | 2.5–4% |
 | **Share of Wallet** | Business with us / Total customer financial business | 40%+ |
 | **Digital Adoption Rate** | Digital active customers / Total customers | 60%+ |
-| **Branch Productivity** | Revenue per branch | â‚¹2â€“5 crore per branch |
+| **Branch Productivity** | Revenue per branch | ₹2–5 crore per branch |
 
 ### 4.13 Liability vs Asset Marketing in Banking
 
@@ -521,7 +521,7 @@ graph TD
 | **Cross-sell opportunity** | Sell loans to depositors | Sell insurance to borrowers |
 | **Profitability** | Low margin per account | High margin per loan |
 
-**NIM (Net Interest Margin)** = (Interest earned on assets âˆ’ Interest paid on liabilities) / Total assets
+**NIM (Net Interest Margin)** = (Interest earned on assets − Interest paid on liabilities) / Total assets
 
 ### 4.14 Bancassurance
 
@@ -545,7 +545,7 @@ graph LR
 | **Products sold** | Life insurance, health insurance, general insurance, ULIPs |
 | **Benefits for bank** | Fee income without credit risk, deeper customer relationships |
 | **Benefits for insurer** | Access to bank's large customer base at lower acquisition cost |
-| **Benefits for customer** | Convenience â€” one-stop shop for banking and insurance |
+| **Benefits for customer** | Convenience — one-stop shop for banking and insurance |
 | **Regulation** | IRDAI regulates bancassurance partnerships; banks can partner with up to 3 insurers |
 | **Key metric** | Cross-sell ratio, bancassurance penetration rate |
 
@@ -679,7 +679,7 @@ d) Advocacy
 
 <details>
 <summary>Answer</summary>
-**c) Cross-sell.** Offering a personal loan to an existing salary account customer is cross-selling â€” selling additional products to existing customers. Pre-approved offers leverage the existing relationship to reduce risk.
+**c) Cross-sell.** Offering a personal loan to an existing salary account customer is cross-selling — selling additional products to existing customers. Pre-approved offers leverage the existing relationship to reduce risk.
 </details>
 
 ---
@@ -700,7 +700,7 @@ d) Advocacy
 
 ### Example 3: Cross-Selling and Upselling
 
-**Q5.** A bank offers a customer with a â‚¹30 lakh home loan an upgrade to a â‚¹50 lakh loan. This is:
+**Q5.** A bank offers a customer with a ₹30 lakh home loan an upgrade to a ₹50 lakh loan. This is:
 
 a) Cross-selling
 b) Upselling
@@ -723,7 +723,7 @@ d) Reducing interest rates
 
 <details>
 <summary>Answer</summary>
-**b) Selling a term insurance plan to a home loan customer.** This is cross-selling â€” the home loan and insurance are different products. Increasing credit limit is upselling; renewal is retention; reducing rates is retention/pricing.
+**b) Selling a term insurance plan to a home loan customer.** This is cross-selling — the home loan and insurance are different products. Increasing credit limit is upselling; renewal is retention; reducing rates is retention/pricing.
 </details>
 
 ---
@@ -746,9 +746,9 @@ d) International banking
 
 **Q8.** The minimum balance requirement for a PMJDY account is:
 
-a) â‚¹1,000
-b) â‚¹500
-c) â‚¹100
+a) ₹1,000
+b) ₹500
+c) ₹100
 d) Zero
 
 <details>
@@ -769,7 +769,7 @@ d) IMPS
 
 <details>
 <summary>Answer</summary>
-**c) BHIM (Bharat Interface for Money).** BHIM is a UPI-based payment app developed by NPCI that lets users create a virtual payment address (VPØ¢) to send and receive money directly from bank accounts without entering account numbers.
+**c) BHIM (Bharat Interface for Money).** BHIM is a UPI-based payment app developed by NPCI that lets users create a virtual payment address (VPآ) to send and receive money directly from bank accounts without entering account numbers.
 </details>
 
 ---
@@ -783,7 +783,7 @@ d) It is not regulated
 
 <details>
 <summary>Answer</summary>
-**b) It operates without physical branches.** Neo banks are digital-only banks without branch networks. However, in India most neo banks partner with traditional banks for the banking license â€” they are not unregulated.
+**b) It operates without physical branches.** Neo banks are digital-only banks without branch networks. However, in India most neo banks partner with traditional banks for the banking license — they are not unregulated.
 </details>
 
 ---
@@ -799,7 +799,7 @@ d) Empathy
 
 <details>
 <summary>Answer</summary>
-**b) Reliability.** Reliability is the most important SERVQUAL dimension â€” doing what you promised, accurately. In banking, this means correct transactions, error-free statements, and honoured commitments.
+**b) Reliability.** Reliability is the most important SERVQUAL dimension — doing what you promised, accurately. In banking, this means correct transactions, error-free statements, and honoured commitments.
 </details>
 
 ---
@@ -887,7 +887,7 @@ d) Neutral
 
 <details>
 <summary>Answer</summary>
-**c) Promoter.** On the 0â€“10 NPS scale, promoters (9â€“10) are loyal enthusiasts who will keep buying and refer others. Passives (7â€“8) are satisfied but vulnerable to competition. Detractors (0â€“6) are unhappy customers.
+**c) Promoter.** On the 0–10 NPS scale, promoters (9–10) are loyal enthusiasts who will keep buying and refer others. Passives (7–8) are satisfied but vulnerable to competition. Detractors (0–6) are unhappy customers.
 </details>
 
 ---
@@ -901,7 +901,7 @@ d) Consumer expectation vs management perception
 
 <details>
 <summary>Answer</summary>
-**c) Expected service vs perceived service.** Gap 5 is the overall service quality gap â€” the discrepancy between what customers expect and what they perceive they received. All other gaps contribute to Gap 5.
+**c) Expected service vs perceived service.** Gap 5 is the overall service quality gap — the discrepancy between what customers expect and what they perceive they received. All other gaps contribute to Gap 5.
 </details>
 
 ---
@@ -917,7 +917,7 @@ d) Students
 
 <details>
 <summary>Answer</summary>
-**c) High Net Worth (HNI).** HNIs (investible assets â‚¹50 lakh+) typically receive a dedicated relationship manager who provides personalised financial advice, portfolio management, and priority service. Mass affluent may get robo-advisory or shared RM.
+**c) High Net Worth (HNI).** HNIs (investible assets ₹50 lakh+) typically receive a dedicated relationship manager who provides personalised financial advice, portfolio management, and priority service. Mass affluent may get robo-advisory or shared RM.
 </details>
 
 ---
@@ -955,23 +955,23 @@ console.log("Cross-sell ratio:", calculateCrossSellRatio(customers)); // 2.5
 
 <details>
 <summary>Answer</summary>
-**b) On average, each customer holds 2.5 products.** Cross-sell ratio = Total products / Total customers. A ratio of 2.5 indicates the average product holding per customer. The industry benchmark for Indian banks is 2â€“3 products per customer.
+**b) On average, each customer holds 2.5 products.** Cross-sell ratio = Total products / Total customers. A ratio of 2.5 indicates the average product holding per customer. The industry benchmark for Indian banks is 2–3 products per customer.
 </details>
 
 ---
 
-### Example 11: Liability vs Asset Marketing (Q21â€“Q23)
+### Example 11: Liability vs Asset Marketing (Q21–Q23)
 
 **Q21.** A bank's Net Interest Margin (NIM) is calculated as:
 
 a) Total deposits / Total loans
-b) (Interest earned âˆ’ Interest paid) / Total assets
+b) (Interest earned − Interest paid) / Total assets
 c) Total income / Total expenses
 d) Loan disbursements / Deposit mobilisation
 
 <details>
 <summary>Answer</summary>
-**b) (Interest earned âˆ’ Interest paid) / Total assets.** NIM measures the difference between what a bank earns on its assets (loans, investments) and what it pays on its liabilities (deposits), expressed as a percentage of total assets. It is a key measure of banking profitability.
+**b) (Interest earned − Interest paid) / Total assets.** NIM measures the difference between what a bank earns on its assets (loans, investments) and what it pays on its liabilities (deposits), expressed as a percentage of total assets. It is a key measure of banking profitability.
 </details>
 
 ---
@@ -999,12 +999,12 @@ d) Current Account
 
 <details>
 <summary>Answer</summary>
-**c) Personal Loan.** Personal loans have the highest interest rates (10â€“24% p.a.) among common banking products, generating the highest NIM. Savings accounts pay low interest (2.5â€“4%), while FDs cost the bank 5â€“8%. The spread (loan rate minus deposit rate) is highest for personal loans.
+**c) Personal Loan.** Personal loans have the highest interest rates (10–24% p.a.) among common banking products, generating the highest NIM. Savings accounts pay low interest (2.5–4%), while FDs cost the bank 5–8%. The spread (loan rate minus deposit rate) is highest for personal loans.
 </details>
 
 ---
 
-### Example 12: Bancassurance (Q24â€“Q25)
+### Example 12: Bancassurance (Q24–Q25)
 
 **Q24.** Bancassurance refers to:
 
@@ -1034,9 +1034,9 @@ d) Exemption from IRDAI regulations
 
 ---
 
-### Example 13: Customer Segmentation (Q26â€“Q27)
+### Example 13: Customer Segmentation (Q26–Q27)
 
-**Q26.** A customer with investible assets of â‚¹2 crore should be classified as which segment for wealth management?
+**Q26.** A customer with investible assets of ₹2 crore should be classified as which segment for wealth management?
 
 a) Mass market
 b) Mass affluent
@@ -1045,7 +1045,7 @@ d) Ultra HNI
 
 <details>
 <summary>Answer</summary>
-**d) Ultra HNI.** Ultra HNI segment typically includes customers with investible assets of â‚¹5 crore or more (some banks use â‚¹2 crore+). They receive family office services, bespoke investment solutions, and a dedicated team of relationship managers and wealth advisors.
+**d) Ultra HNI.** Ultra HNI segment typically includes customers with investible assets of ₹5 crore or more (some banks use ₹2 crore+). They receive family office services, bespoke investment solutions, and a dedicated team of relationship managers and wealth advisors.
 </details>
 
 ---
@@ -1059,12 +1059,12 @@ d) Ultra HNI
 
 <details>
 <summary>Answer</summary>
-**b) Mass affluent.** Mass affluent customers (â‚¹10â€“50 lakh investible assets) may receive robo-advisory services and digital-first relationship management. While they have higher potential than mass market customers, their profitability does not justify a dedicated relationship manager.
+**b) Mass affluent.** Mass affluent customers (₹10–50 lakh investible assets) may receive robo-advisory services and digital-first relationship management. While they have higher potential than mass market customers, their profitability does not justify a dedicated relationship manager.
 </details>
 
 ---
 
-### Example 14: Traditional vs Neo Bank (Q28â€“Q30)
+### Example 14: Traditional vs Neo Bank (Q28–Q30)
 
 **Q28.** Which of the following is a characteristic of a neo bank?
 
@@ -1114,7 +1114,7 @@ d) Lower fees
 - **Retail banking products** include savings accounts, loans, cards, insurance, and investments, each with distinct marketing approaches
 - **Corporate banking** serves businesses with working capital, trade finance, cash management, and treasury services
 - **Wealth management** segments clients into mass affluent, HNI, and ultra HNI with escalating service levels
-- The **customer lifecycle** spans awareness â†’ acquisition â†’ onboarding â†’ engagement â†’ cross-sell â†’ retention â†’ advocacy
+- The **customer lifecycle** spans awareness → acquisition → onboarding → engagement → cross-sell → retention → advocacy
 - **Cross-selling** and **upselling** increase wallet share; a good cross-sell ratio is 3+ products per customer
 - The **SERVQUAL model** measures service quality across five dimensions: Reliability, Responsiveness, Assurance, Empathy, Tangibles
 - **Digital banking** has evolved from ATMs and internet banking to UPI, mobile apps, and neo banks
@@ -1125,9 +1125,9 @@ d) Lower fees
 
 1. **For exams**: Remember the five SERVQUAL dimensions (RATER: Reliability, Assurance, Tangibles, Empathy, Responsiveness) and the customer lifecycle stages
 2. **For interviews**: Be prepared to explain how you would cross-sell a specific product to a banking customer
-3. **For banking professionals**: Always lead with customer need analysis before product recommendation â€” trust is the most valuable asset
-4. **For digital strategy**: Push digital adoption among existing customers through targeted campaigns; digital customers are 2â€“3Ã— more profitable
-5. **For compliance**: Every marketing communication in banking must be reviewed for regulatory compliance â€” no "guaranteed returns" or "zero risk" claims
+3. **For banking professionals**: Always lead with customer need analysis before product recommendation — trust is the most valuable asset
+4. **For digital strategy**: Push digital adoption among existing customers through targeted campaigns; digital customers are 2–3× more profitable
+5. **For compliance**: Every marketing communication in banking must be reviewed for regulatory compliance — no "guaranteed returns" or "zero risk" claims
 
 ## Chapter Quiz
 
@@ -1154,14 +1154,14 @@ d) Lower fees
 </details>
 
 3. As per RBI guidelines, telemarketing calls are permitted only between:
-   - A) 8 AMâ€“8 PM
-   - B) 9 AMâ€“9 PM
-   - C) 10 AMâ€“6 PM
+   - A) 8 AM–8 PM
+   - B) 9 AM–9 PM
+   - C) 10 AM–6 PM
    - D) 24 hours with consent
 
 <details>
 <summary>Answer</summary>
-**B) 9 AMâ€“9 PM.** RBI telemarketing guidelines restrict calls to between 9:00 AM and 9:00 PM. Calls outside these hours are prohibited.
+**B) 9 AM–9 PM.** RBI telemarketing guidelines restrict calls to between 9:00 AM and 9:00 PM. Calls outside these hours are prohibited.
 </details>
 
 4. Gap 5 in the SERVQUAL gap model is the gap between:
@@ -1172,7 +1172,7 @@ d) Lower fees
 
 <details>
 <summary>Answer</summary>
-**B) Expected service and perceived service.** Gap 5 is the overall service quality gap â€” what customers expect vs what they actually experience.
+**B) Expected service and perceived service.** Gap 5 is the overall service quality gap — what customers expect vs what they actually experience.
 </details>
 
 5. A neo bank differs from a traditional bank primarily because it:
@@ -1188,7 +1188,7 @@ d) Lower fees
 
 ## Exercises
 
-### Section A: Conceptual Questions (Q1â€“Q10)
+### Section A: Conceptual Questions (Q1–Q10)
 
 1. Explain the key differences between marketing banking products and marketing physical consumer goods.
 2. What are the stages of a banking customer lifecycle? Explain each stage with marketing activities.
@@ -1201,11 +1201,11 @@ d) Lower fees
 9. What is the role of digital banking in customer acquisition and retention?
 10. Explain the RBI's Fair Practices Code for banks.
 
-### Section B: Application Problems (Q11â€“Q20)
+### Section B: Application Problems (Q11–Q20)
 
 11. A bank wants to cross-sell insurance products to its home loan customers. Design a marketing campaign including targeting criteria and messaging.
 12. Calculate NPS for a branch with the following survey responses: 10, 9, 8, 6, 9, 10, 4, 7, 9, 8, 5, 10, 8, 7, 9.
-13. A savings account customer has â‚¹5 lakh average balance but uses only the savings account. Recommend three cross-selling opportunities.
+13. A savings account customer has ₹5 lakh average balance but uses only the savings account. Recommend three cross-selling opportunities.
 14. A rural bank branch has high footfall but low digital adoption. Suggest a strategy to increase digital banking usage.
 15. A customer complains that the bank's app crashes repeatedly. Which SERVQUAL dimension(s) are affected? Suggest improvements.
 16. A bank launches a new credit card targeting young professionals. Design the marketing mix (7Ps).
@@ -1214,7 +1214,7 @@ d) Lower fees
 19. Analyse the marketing implications of RBI's guidelines on "misleading advertisements" for a bank launching a new FD product.
 20. A wealth management firm wants to segment its clients. Create a segmentation framework and marketing strategy for each segment.
 
-### Section C: Advanced Questions (Q21â€“Q30)
+### Section C: Advanced Questions (Q21–Q30)
 
 21. "Trust is the most important currency in banking marketing." Discuss with reference to customer acquisition and retention.
 22. How has UPI transformed banking marketing in India? Analyse from a customer engagement perspective.
@@ -1225,29 +1225,29 @@ d) Lower fees
 27. Evaluate the role of relationship managers in wealth management marketing. How can technology augment their effectiveness?
 28. A fintech startup wants to partner with a bank to offer digital loans. What marketing considerations should both parties address?
 29. Explain the concept of "share of wallet" in banking. How can banks increase their share of wallet through targeted marketing?
-30. A bank's marketing team proposes an ad claiming "India's highest FD interest rate â€” 9% guaranteed returns." Evaluate its compliance with RBI guidelines.
+30. A bank's marketing team proposes an ad claiming "India's highest FD interest rate — 9% guaranteed returns." Evaluate its compliance with RBI guidelines.
 
 ### Answer Key
 
 | Q | Ans | Key Explanation |
 |---|-----|-----------------|
 | 1 | Banking: intangible, trust-based, regulated, long-term; Goods: tangible, less regulated, transactional | Services marketing principles applied to banking |
-| 2 | Awareness â†’ Acquisition â†’ Onboarding â†’ Engagement â†’ Cross-sell â†’ Retention â†’ Advocacy | Full lifecycle |
+| 2 | Awareness → Acquisition → Onboarding → Engagement → Cross-sell → Retention → Advocacy | Full lifecycle |
 | 3 | Cross-sell: insurance to loan customer; Upsell: higher credit card limit | Different products vs same product upgrade |
 | 4 | Reliability (correct transactions), Assurance (trust), Tangibles (branch), Empathy (care), Responsiveness (prompt) | RATER acronym |
 | 5 | Fair Practices Code, Advertising Code, DND registry, data protection, KYC norms | RBI regulatory framework |
-| 6 | NPS = %Promoters âˆ’ %Detractors; measures loyalty and willingness to recommend | Leading indicator of growth |
+| 6 | NPS = %Promoters − %Detractors; measures loyalty and willingness to recommend | Leading indicator of growth |
 | 7 | Financial inclusion = access to formal banking for all; PMJDY = zero-balance accounts for unbanked | Government's flagship programme |
 | 8 | Retail = individuals; Corporate = businesses; Wealth = HNI clients | Different segments, different strategies |
-| 9 | Digital = lower cost, higher engagement, 24Ã—7 access, data for personalisation | Key growth driver |
+| 9 | Digital = lower cost, higher engagement, 24×7 access, data for personalisation | Key growth driver |
 | 10 | Transparency in rates, fair treatment, grievance redressal, no forced bundling | Customer protection |
-| 11 | Target: home loan customers with EMI > â‚¹20K; Message: "Protect your home, protect your family"; Channel: SMS, RM call | Cross-sell campaign design |
-| 12 | Promoters = 7 (47%), Detractors = 3 (20%), Passives = 5 (33%). NPS = 47 âˆ’ 20 = 27 | Calculation and interpretation |
+| 11 | Target: home loan customers with EMI > ₹20K; Message: "Protect your home, protect your family"; Channel: SMS, RM call | Cross-sell campaign design |
+| 12 | Promoters = 7 (47%), Detractors = 3 (20%), Passives = 5 (33%). NPS = 47 − 20 = 27 | Calculation and interpretation |
 | 13 | Mutual Funds (SIP), Fixed Deposit (better rate), Credit Card (spending needs) | Identify unmet needs |
 | 14 | Digital literacy camps, incentivise first digital transaction, install user-friendly kiosks with assistance | Rural digital adoption |
 | 15 | Reliability (app crash = service failure), Responsiveness (how quickly fixed); invest in app stability | Technology as service quality |
 | 16 | Product (rewards), Price (fee + interest), Place (app + branch), Promotion (social media, referrals), People (support), Process (instant approval), Physical Evidence (card design, app) | 7Ps for credit card launch |
-| 17 | Branch: CAC â‚¹500, CLV â‚¹8,000; Digital: CAC â‚¹200, CLV â‚¹6,000 | Digital has lower cost but lower initial CLV |
+| 17 | Branch: CAC ₹500, CLV ₹8,000; Digital: CAC ₹200, CLV ₹6,000 | Digital has lower cost but lower initial CLV |
 | 18 | Target: 2.5 in 1 year. Plan: (1) Analyse product gaps, (2) Train RMs on cross-sell, (3) Launch targeted offers | Cross-sell improvement plan |
 | 19 | Cannot claim "highest" without proof; must disclose that rates are subject to change; T&C must be visible | Compliance checklist |
 | 20 | Segment by assets: Mass Affluent (robo-advisory, digital-first), HNI (dedicated RM), Ultra HNI (family office) | Wealth management segmentation |
@@ -1256,7 +1256,7 @@ d) Lower fees
 | 23 | Personalised offers, priority service, loyalty points, surprise benefits, loyalty manager | Retention programme design |
 | 24 | SBI: trust, reach, security; Jupiter: UX, speed, features; both effective for different segments | Incumbent vs disruptor |
 | 25 | (1) Spending pattern analysis for card offers, (2) Life event triggers for loans, (3) Savings behaviour for investment products | Data-driven personalisation |
-| 26 | Gap 3 (service delivery) â€” poor queue management. Solution: appointment system, digital queue, more tellers during peak | Gap model application |
+| 26 | Gap 3 (service delivery) — poor queue management. Solution: appointment system, digital queue, more tellers during peak | Gap model application |
 | 27 | RMs provide personalised advice; technology (CRM, robo-advisory) augments their effectiveness for scale | Human + technology |
 | 28 | Brand trust (bank), speed + UX (fintech); joint marketing should emphasise both | Partnership marketing |
 | 29 | Share of wallet = % of customer's financial business held by the bank. Increase through product bundling, personalised offers | Wallet expansion strategy |
@@ -1266,13 +1266,13 @@ d) Lower fees
 
 **31.** As per RBI guidelines, a bank's advertisement claiming "guaranteed returns" on a mutual fund investment is:
    - a) Acceptable if the fund has performed well historically
-   - b) Prohibited â€” mutual funds are subject to market risks
+   - b) Prohibited — mutual funds are subject to market risks
    - c) Allowed only for senior citizens
    - d) Allowed if approved by the bank's board
 
 <details>
 <summary>Answer</summary>
-**b) Prohibited â€” mutual funds are subject to market risks.** RBI and SEBI regulations strictly prohibit "guaranteed returns" claims for market-linked products like mutual funds. All mutual fund ads must include the disclaimer "Mutual fund investments are subject to market risks, read all scheme-related documents carefully."
+**b) Prohibited — mutual funds are subject to market risks.** RBI and SEBI regulations strictly prohibit "guaranteed returns" claims for market-linked products like mutual funds. All mutual fund ads must include the disclaimer "Mutual fund investments are subject to market risks, read all scheme-related documents carefully."
 </details>
 
 **32.** Which of the following is NOT a liability product for a bank?
@@ -1283,18 +1283,18 @@ d) Lower fees
 
 <details>
 <summary>Answer</summary>
-**c) Home loan.** A home loan is an asset product for the bank â€” the bank lends money to the customer and earns interest. Savings accounts, fixed deposits, and recurring deposits are liability products where the bank borrows from customers and pays interest.
+**c) Home loan.** A home loan is an asset product for the bank — the bank lends money to the customer and earns interest. Savings accounts, fixed deposits, and recurring deposits are liability products where the bank borrows from customers and pays interest.
 </details>
 
 **33.** Pradhan Mantri Jan Dhan Yojana (PMJDY) accounts come with which of the following benefits?
-   - a) Overdraft facility of â‚¹10,000
+   - a) Overdraft facility of ₹10,000
    - b) Free credit card
    - c) International banking access
    - d) Fixed deposit at 8% interest
 
 <details>
 <summary>Answer</summary>
-**a) Overdraft facility of â‚¹10,000.** PMJDY accounts offer an overdraft facility of up to â‚¹10,000 (after satisfactory operation of the account for 6 months), along with zero balance requirement, RuPay debit card, and accidental insurance cover of â‚¹1â€“2 lakh.
+**a) Overdraft facility of ₹10,000.** PMJDY accounts offer an overdraft facility of up to ₹10,000 (after satisfactory operation of the account for 6 months), along with zero balance requirement, RuPay debit card, and accidental insurance cover of ₹1–2 lakh.
 </details>
 
 **34.** Under the RBI's Fair Practices Code, banks are required to:
@@ -1316,7 +1316,7 @@ d) Lower fees
 
 <details>
 <summary>Answer</summary>
-**a) Demographic segmentation.** Segmenting customers by age (senior citizens) is demographic segmentation. Banks offer senior citizens 25â€“50 basis points higher interest rates on FDs as a social responsibility and because seniors have a higher propensity to save.
+**a) Demographic segmentation.** Segmenting customers by age (senior citizens) is demographic segmentation. Banks offer senior citizens 25–50 basis points higher interest rates on FDs as a social responsibility and because seniors have a higher propensity to save.
 </details>
 
 **36.** What is the primary purpose of Aadhaar-based e-KYC in banking customer acquisition?
@@ -1338,7 +1338,7 @@ d) Lower fees
 
 <details>
 <summary>Answer</summary>
-**d) Gap 5.** Gap 5 is the difference between expected service and perceived service â€” the overall service quality gap. All other gaps (Gap 1â€“4) contribute to Gap 5. Closing Gap 5 requires closing all underlying gaps in the service delivery process.
+**d) Gap 5.** Gap 5 is the difference between expected service and perceived service — the overall service quality gap. All other gaps (Gap 1–4) contribute to Gap 5. Closing Gap 5 requires closing all underlying gaps in the service delivery process.
 </details>
 
 **38.** "Share of Wallet" in banking marketing refers to:
@@ -1360,29 +1360,29 @@ d) Lower fees
 
 <details>
 <summary>Answer</summary>
-**b) Convenience and speed.** The key value proposition of digital savings accounts is convenience â€” opening an account from home, anytime, with instant activation. The messaging focuses on saving the customer's time and effort, not necessarily on higher returns or product variety.
+**b) Convenience and speed.** The key value proposition of digital savings accounts is convenience — opening an account from home, anytime, with instant activation. The messaging focuses on saving the customer's time and effort, not necessarily on higher returns or product variety.
 </details>
 
 **40.** The "Cost-to-Income Ratio" for a well-managed retail bank should ideally be:
    - a) Below 20%
-   - b) Between 40â€“50%
-   - c) Between 70â€“80%
+   - b) Between 40–50%
+   - c) Between 70–80%
    - d) Above 100%
 
 <details>
 <summary>Answer</summary>
-**b) Between 40â€“50%.** Cost-to-Income Ratio = Operating Expenses / Operating Income. A ratio of 40â€“50% is considered healthy for retail banks. Lower is better, indicating the bank is efficiently converting expenses into income. Ratios above 60% indicate inefficiency.
+**b) Between 40–50%.** Cost-to-Income Ratio = Operating Expenses / Operating Income. A ratio of 40–50% is considered healthy for retail banks. Lower is better, indicating the bank is efficiently converting expenses into income. Ratios above 60% indicate inefficiency.
 </details>
 
-### Section D: Exam-Oriented Questions (Q31â€“Q40)
+### Section D: Exam-Oriented Questions (Q31–Q40)
 
-31. "Digital banking is not just about technology â€” it is about changing customer behaviour." Discuss this statement with reference to marketing strategies for digital adoption.
+31. "Digital banking is not just about technology — it is about changing customer behaviour." Discuss this statement with reference to marketing strategies for digital adoption.
 32. A public sector bank wants to increase its share of wallet among existing customers. Design a comprehensive cross-selling strategy.
 33. Compare the liability-side and asset-side marketing strategies for a retail bank. Why must both be balanced?
 34. How has the Pradhan Mantri Jan Dhan Yojana (PMJDY) changed the marketing approach for banks in rural India?
 35. A private bank experiences 10% customer churn annually. Analyse the financial impact and design a retention programme using CRM tools.
 36. "Bancassurance is a win-win-win for banks, insurers, and customers." Explain each stakeholder's perspective.
-37. A bank wants to target the affluent millennial segment (25â€“35 years, â‚¹15â€“50 lakh income). Design a customised product bundle and marketing campaign.
+37. A bank wants to target the affluent millennial segment (25–35 years, ₹15–50 lakh income). Design a customised product bundle and marketing campaign.
 38. Evaluate the role of video KYC in transforming customer acquisition for Indian banks. What marketing opportunities does it create?
 39. A bank's customer satisfaction scores have declined due to long branch wait times. Use the SERVQUAL gap model to diagnose and propose solutions across all five gaps.
 40. "Neo banks will eventually replace traditional banks." Critically analyse this statement with reference to marketing advantages and limitations of each model.

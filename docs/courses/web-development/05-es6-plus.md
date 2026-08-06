@@ -1,4 +1,4 @@
-﻿# Chapter 5 â€” ES6+ JavaScript
+# Chapter 5 — ES6+ JavaScript
 
 > **Previous:** [04-js-dom](./04-js-dom.md) | **Next:** [06-react-basics](./06-react-basics.md)
 
@@ -92,7 +92,7 @@ ES6 introduced `let` and `const` to address the function-scoping pitfalls of `va
 if (true) {
   var message = 'Hello';
 }
-console.log(message); // 'Hello' â€” leaks
+console.log(message); // 'Hello' — leaks
 
 // let respects block scope
 if (true) {
@@ -134,7 +134,7 @@ const now = () => Date.now();
 // Returning an object literal (parenthesize)
 const createUser = (name) => ({ name, role: 'user' });
 
-// Lexical this â€” critical for callbacks
+// Lexical this — critical for callbacks
 class Timer {
   constructor() {
     this.seconds = 0;
@@ -172,7 +172,7 @@ const html = `
   </div>
 `;
 
-// Tagged templates â€” custom processing
+// Tagged templates — custom processing
 function highlight(strings, ...values) {
   return strings.reduce((result, str, i) => {
     const value = values[i] ? `<strong>${values[i]}</strong>` : '';
@@ -229,7 +229,7 @@ const { data: { items, total } } = response;
 
 // Function parameter destructuring
 function renderUser({ name, email, role = 'user' }) {
-  return `${name} (${email}) â€” ${role}`;
+  return `${name} (${email}) — ${role}`;
 }
 ```
 
@@ -321,7 +321,7 @@ class Dog extends Animal {
 const dog = new Dog('Rex', 'German Shepherd');
 console.log(dog.speak()); // 'Rex barks.'
 console.log(dog.breed);   // 'German Shepherd'
-// console.log(dog.#breed); // SyntaxError â€” private
+// console.log(dog.#breed); // SyntaxError — private
 ```
 
 ### 5.7 Modules
@@ -415,18 +415,18 @@ fetchUser(1)
 const p1 = fetch('/api/users');
 const p2 = fetch('/api/roles');
 
-// All â€” wait for all to settle, reject if any reject
+// All — wait for all to settle, reject if any reject
 const [users, roles] = await Promise.all([p1, p2]);
 
-// allSettled â€” wait for all, never reject
+// allSettled — wait for all, never reject
 const results = await Promise.allSettled([p1, p2]);
 const fulfilled = results.filter((r) => r.status === 'fulfilled').map((r) => r.value);
 const rejected = results.filter((r) => r.status === 'rejected').map((r) => r.reason);
 
-// race â€” first settled (reject or resolve)
+// race — first settled (reject or resolve)
 const fastest = await Promise.race([p1, p2]);
 
-// any â€” first fulfilled, reject only if all reject (ES2021)
+// any — first fulfilled, reject only if all reject (ES2021)
 const firstSuccess = await Promise.any([p1, p2]);
 ```
 
@@ -441,7 +441,7 @@ async function loadDashboard() {
     const user = await fetchUser(1);
     const posts = await fetch(`/api/users/${user.id}/posts`);
     const data = await posts.json();
-    // Sequential â€” each waits for the previous
+    // Sequential — each waits for the previous
   } catch (error) {
     console.error('Failed to load dashboard:', error);
   }
@@ -477,7 +477,7 @@ const obj = {
 Object.getOwnPropertySymbols(obj); // [Symbol(id)]
 ```
 
-**Map** â€” key-value collections with any type as key:
+**Map** — key-value collections with any type as key:
 
 ```javascript
 const userRoles = new Map();
@@ -493,7 +493,7 @@ for (const [user, role] of userRoles) {
 }
 ```
 
-**Set** â€” unique values:
+**Set** — unique values:
 
 ```javascript
 const tags = new Set(['react', 'javascript', 'react', 'css']);
@@ -506,7 +506,7 @@ console.log(tags.has('react')); // true
 const unique = [...tags];
 ```
 
-**WeakMap** â€” keys must be objects, held weakly (no memory leak):
+**WeakMap** — keys must be objects, held weakly (no memory leak):
 
 ```javascript
 const cache = new WeakMap();
@@ -850,10 +850,10 @@ export { Processor, Task }
 ### Challenge Problem
 
 8. Implement an `EventBus` class (typed publish-subscribe system) using `Map` and `Symbol` that supports:
-   - `on(event, handler)` â€” subscribe with optional symbol-based wildcard patterns
-   - `off(event, handler)` â€” unsubscribe specific handler
-   - `emit(event, payload)` â€” publish to all matching subscribers synchronously
-   - `once(event, handler)` â€” auto-unsubscribe after first emission
+   - `on(event, handler)` — subscribe with optional symbol-based wildcard patterns
+   - `off(event, handler)` — unsubscribe specific handler
+   - `emit(event, payload)` — publish to all matching subscribers synchronously
+   - `once(event, handler)` — auto-unsubscribe after first emission
    - Priority ordering: handlers with higher priority execute first
    - Middleware: `use(middlewareFn)` to intercept all events
    - Context: subscribers should not be able to affect each other through shared mutable state in the payload

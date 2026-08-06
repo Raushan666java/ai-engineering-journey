@@ -1,6 +1,6 @@
-﻿# Chapter 35: Legal & Compliance Agents
+# Chapter 35: Legal & Compliance Agents
 
-> **Previous:** [Real Estate & Property â€” AI-Powered Real Estate Agents](./34-real-estate.md) | **Next:** [Manufacturing & Industrial â€” AI-Powered Factory Agents](./36-manufacturing.md)
+> **Previous:** [Real Estate & Property — AI-Powered Real Estate Agents](./34-real-estate.md) | **Next:** [Manufacturing & Industrial — AI-Powered Factory Agents](./36-manufacturing.md)
 
 
 
@@ -136,10 +136,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Legal Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/35-legal.png)
 
@@ -891,7 +891,7 @@ PROMPT;
 ### 35.4 Compliance Monitoring Agents
 
 
-Organizations must comply with a growing web of regulations â†’ GDPR, HIPAA, SOX, FINRA, SEC rules. A `ComplianceMonitoringAgent` checks regulatory requirements against records, flags violations, and dispatches alerts. The agent runs on a schedule, checking rules across data sources.
+Organizations must comply with a growing web of regulations → GDPR, HIPAA, SOX, FINRA, SEC rules. A `ComplianceMonitoringAgent` checks regulatory requirements against records, flags violations, and dispatches alerts. The agent runs on a schedule, checking rules across data sources.
 
 ```php
 <?php
@@ -1625,7 +1625,7 @@ PROMPT;
 ### 35.7 E-Discovery Pipelines
 
 
-E-discovery follows a strict lifecycle: Identification â†’ Preservation â†’ Collection â†’ Processing â†’ Review â†’ Analysis â†’ Production. An `EDiscoveryPipeline` orchestrates these stages, deduplicates documents, logs privilege determinations, and generates production sets for opposing counsel.
+E-discovery follows a strict lifecycle: Identification → Preservation → Collection → Processing → Review → Analysis → Production. An `EDiscoveryPipeline` orchestrates these stages, deduplicates documents, logs privilege determinations, and generates production sets for opposing counsel.
 
 ```php
 <?php

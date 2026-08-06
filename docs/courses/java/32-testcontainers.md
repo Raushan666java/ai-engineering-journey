@@ -1,4 +1,4 @@
-﻿# Testcontainers & Integration Testing
+# Testcontainers & Integration Testing
 > **Previous:** [Spring Boot Testing](31-spring-boot-test.md) | **Next:** [Security & Performance Testing](33-security-perf-test.md)
 
 ## Learning Objectives
@@ -43,9 +43,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Testcontainers â†’ disposable containers for integration tests | PostgreSQL, Redis, Kafka, and more as throwaway containers |
-| Container Lifecycle â†’ automatic start/stop with JUnit 5 | `@Container` annotation manages container lifecycle |
-| Dynamic Properties â†’ inject container connection details | `DynamicPropertySource` to override `application.properties` |
+| Testcontainers → disposable containers for integration tests | PostgreSQL, Redis, Kafka, and more as throwaway containers |
+| Container Lifecycle → automatic start/stop with JUnit 5 | `@Container` annotation manages container lifecycle |
+| Dynamic Properties → inject container connection details | `DynamicPropertySource` to override `application.properties` |
 
 ---
 ## Chapter Roadmap
@@ -105,35 +105,35 @@ flowchart TD
 
 ![Testcontainers Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/32-testcontainers.png)
 
-Testcontainers is a Java library that wraps Docker containers inside your test lifecycle. Instead of mocking a database or running a heavy local install, you spin up a disposable container per test suite ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â identical to production, every time.
+Testcontainers is a Java library that wraps Docker containers inside your test lifecycle. Instead of mocking a database or running a heavy local install, you spin up a disposable container per test suite — identical to production, every time.
 
 ### 1.1 How It Works
 
 
 ```
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡               Test Suite                      ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  @Testcontainers  (JUnit 5 Extension) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  @Container                           ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  PostgreSQLContainer postgres = ...    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡             ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡ start()                         ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡             ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¼                                 ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡       Docker Daemon (local/remote)    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Pulls image ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Creates container     ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Exposes port ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Waits for readiness  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡             ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                 ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡             ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡ jdbc:postgresql://localhost:54321ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡             ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¼                                 ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡      Spring Boot ApplicationContext    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  DataSource ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ HikariCP ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ JPA/HibernateÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Queries hit the real PostgreSQL      ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“
+┌──────────────────────────────────────────────┐
+│               Test Suite                      │
+│  ┌──────────────────────────────────────┐    │
+│  │  @Testcontainers  (JUnit 5 Extension) │    │
+│  │  @Container                           │    │
+│  │  PostgreSQLContainer postgres = ...    │    │
+│  └──────────┬───────────────────────────┘    │
+│             │ start()                         │
+│             ▼                                 │
+│  ┌──────────────────────────────────────┐    │
+│  │       Docker Daemon (local/remote)    │    │
+│  │  Pulls image → Creates container     │    │
+│  │  Exposes port → Waits for readiness  │    │
+│  └──────────────────────────────────────┘    │
+│             │                                 │
+│             │ jdbc:postgresql://localhost:54321│
+│             ▼                                 │
+│  ┌──────────────────────────────────────┐    │
+│  │      Spring Boot ApplicationContext    │    │
+│  │  DataSource → HikariCP → JPA/Hibernate│    │
+│  │  Queries hit the real PostgreSQL      │    │
+│  └──────────────────────────────────────┘    │
+└──────────────────────────────────────────────┘
 ```
 
 ```java
@@ -182,14 +182,14 @@ System.out.println("Docker available: " + dockerAvailable);
 ```
 
 > [!TIP]
-> Container reuse (`withReuse(true)`) dramatically speeds up local development â†’ containers stay running between test runs.
+> Container reuse (`withReuse(true)`) dramatically speeds up local development → containers stay running between test runs.
 
 > [!WARNING]
 > Testcontainers requires a Docker runtime. CI environments must have Docker installed and configured.
 
 ---
 
-## 2. GenericContainer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Universal Container
+## 2. GenericContainer — The Universal Container
 
 `GenericContainer` is the most flexible container type. Use it when there is no specialized container for your image.
 
@@ -229,19 +229,19 @@ class GenericContainerExampleTest {
 
 When `@Testcontainers` is active, the extension manages start/stop:
 
-- `@Container` static fields ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ container starts once for the entire test class (shared)
-- `@Container` instance fields ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ container starts before each test (isolated)
+- `@Container` static fields → container starts once for the entire test class (shared)
+- `@Container` instance fields → container starts before each test (isolated)
 
 ```java
 @Testcontainers
 class LifecycleTest {
 
-    // STATIC ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â shared across all tests in the class
+    // STATIC — shared across all tests in the class
     @Container
     static GenericContainer<?> shared = new GenericContainer<>("nginx:alpine")
         .withExposedPorts(80);
 
-    // INSTANCE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â created fresh for each test method
+    // INSTANCE — created fresh for each test method
     @Container
     GenericContainer<?> isolated = new GenericContainer<>("nginx:alpine")
         .withExposedPorts(80);
@@ -263,7 +263,7 @@ class LifecycleTest {
 ### 2.3 Manual Start/Stop Without @Testcontainers
 
 
-You can control the lifecycle manually ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â useful when containers must start before the Spring context.
+You can control the lifecycle manually — useful when containers must start before the Spring context.
 
 ```java
 import org.testcontainers.containers.GenericContainer;
@@ -363,7 +363,7 @@ class MySQLTest {
 ```
 
 **MySQL notes:**
-- MySQL 8+ requires explicit image name tag ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â do not use `mysql:latest`
+- MySQL 8+ requires explicit image name tag — do not use `mysql:latest`
 - Use `withCommand("--default-authentication-plugin=mysql_native_password")` for legacy auth
 - On Apple Silicon, add `?permuteDNS=false` to the JDBC URL
 
@@ -390,7 +390,7 @@ class MSSQLTest {
 
 **MSSQL notes:**
 - You **must** call `acceptLicense()` to agree to the EULA
-- Image is ~1.5GB ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â pull once, cache forever
+- Image is ~1.5GB — pull once, cache forever
 - `getPassword()` returns the auto-generated SA password (32 chars)
 
 ### 3.4 OracleContainer
@@ -561,7 +561,7 @@ Containers take time to start. Wait strategies define when a container is "ready
 ### 4.1 Wait.forListeningPort
 
 
-The simplest strategy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â waits for the container to open a TCP port.
+The simplest strategy — waits for the container to open a TCP port.
 
 ```java
 @Container
@@ -687,7 +687,7 @@ static KafkaContainer kafka = new KafkaContainer(
 ### 5.2 RedpandaContainer
 
 
-Redpanda is Kafka-compatible without Zookeeper ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â lighter and faster.
+Redpanda is Kafka-compatible without Zookeeper — lighter and faster.
 
 ```java
 import org.testcontainers.redpanda.RedpandaContainer;
@@ -705,7 +705,7 @@ class RedpandaTest {
         String bootstrapServers = redpanda.getBootstrapServers();
         System.out.println("Redpanda bootstrap: " + bootstrapServers);
 
-        // Identical Kafka API ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â just swap the bootstrap URL
+        // Identical Kafka API — just swap the bootstrap URL
     }
 }
 
@@ -736,7 +736,7 @@ class KafkaSpringTest {
         // Act
         kafkaTemplate.send(topic, payload).get(5, TimeUnit.SECONDS);
 
-        // Assert ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â use a test consumer or EmbeddedKafkaBroker
+        // Assert — use a test consumer or EmbeddedKafkaBroker
     }
 }
 ```
@@ -900,7 +900,7 @@ class ElasticsearchSpringTest {
 ### 5.6 LocalStackContainer (AWS)
 
 
-LocalStack emulates AWS services locally ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â S3, SQS, SNS, DynamoDB, and more.
+LocalStack emulates AWS services locally — S3, SQS, SNS, DynamoDB, and more.
 
 ```java
 import org.testcontainers.containers.localstack.LocalStackContainer;
@@ -1321,7 +1321,7 @@ static DockerComposeContainer<?> environment =
 ### 9.1 @ServiceConnection (Spring Boot 3.1+)
 
 
-Spring Boot 3.1 introduced `@ServiceConnection` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no more `@DynamicPropertySource` boilerplate for standard containers.
+Spring Boot 3.1 introduced `@ServiceConnection` — no more `@DynamicPropertySource` boilerplate for standard containers.
 
 ```java
 @SpringBootTest
@@ -1407,10 +1407,10 @@ class RedisServiceConnectionTest {
 **How @ServiceConnection works under the hood:**
 
 ```java
-// Simplified ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each container type registers a ConnectionFactory bean
-// PostgreSQLContainer ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ PostgresContainerConnectionDetails
-// KafkaContainer ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ KafkaContainerConnectionDetails
-// GenericContainer ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ GenericContainerConnectionDetails (via @DynamicPropertySource or manual)
+// Simplified — each container type registers a ConnectionFactory bean
+// PostgreSQLContainer → PostgresContainerConnectionDetails
+// KafkaContainer → KafkaContainerConnectionDetails
+// GenericContainer → GenericContainerConnectionDetails (via @DynamicPropertySource or manual)
 
 // PostgreSQLContainer registers:
 @Bean
@@ -1472,7 +1472,7 @@ class TcDriverSpringTest {
 ### 10.1 withReuse
 
 
-By default, Testcontainers destroys every container after the test JVM exits. `withReuse` keeps the container running across test runs ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â dramatically faster local development.
+By default, Testcontainers destroys every container after the test JVM exits. `withReuse` keeps the container running across test runs — dramatically faster local development.
 
 ```java
 @Container
@@ -1488,7 +1488,7 @@ static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16-
 Create this file at `~/.testcontainers.properties` or `~/.testcontainers/.testcontainers.properties`:
 
 ```properties
-# Global reuse enable ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â required for withReuse to work
+# Global reuse enable — required for withReuse to work
 testcontainers.reuse.enable=true
 
 # Docker host override (optional)
@@ -1511,7 +1511,7 @@ testcontainers.reuse.enable=true
 ### 10.3 Reusable Containers in CI (Ryuk)
 
 
-Ryuk is Testcontainers' resource reaper ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it kills containers after the JVM exits. In CI, Ryuk is essential to prevent orphan containers.
+Ryuk is Testcontainers' resource reaper — it kills containers after the JVM exits. In CI, Ryuk is essential to prevent orphan containers.
 
 ```java
 // Ryuk runs automatically. To disable (e.g., when debugging in CI):
@@ -1523,7 +1523,7 @@ class CiTest {
 
 ```properties
 # CI .testcontainers.properties
-testcontainers.reuse.enable=false   # Don't reuse ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â fresh each CI run
+testcontainers.reuse.enable=false   # Don't reuse — fresh each CI run
 
 # If Ryuk causes issues (uncommon):
 # testcontainers.ryuk.disabled=true
@@ -1590,7 +1590,7 @@ static {
 
 ---
 
-## 11. Complete Example ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Spring Boot Integration Test
+## 11. Complete Example — Full Spring Boot Integration Test
 
 A complete, real-world example tying everything together.
 
@@ -1842,7 +1842,7 @@ class OrderEventIntegrationTest {
 - **`@Testcontainers`** / **`@Container`** is the JUnit 5 extension. Static fields share one container per class; instance fields create one per test.
 - **Lifecycle** defaults to start-on-annotation, stop-after-class. Use manual `start()`/`stop()` for programmatic control and singleton patterns.
 - **Database containers** (`PostgreSQLContainer`, `MySQLContainer`, `MSSQLServerContainer`, `OracleContainer`) pre-set credentials, driver, and JDBC URL. Use `withInitScript` for schema setup.
-- **JDBC tc driver** (`jdbc:tc:postgresql://`) auto-starts containers from the JDBC URL ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no `@Container` needed.
+- **JDBC tc driver** (`jdbc:tc:postgresql://`) auto-starts containers from the JDBC URL — no `@Container` needed.
 - **`@DynamicPropertySource`** injects container connection details into the Spring `Environment` before context creation.
 - **Wait strategies** (`Wait.forListeningPort`, `Wait.forLogMessage`, `Wait.forHttp`) ensure containers are ready before tests execute.
 - **Middleware containers** (`KafkaContainer`, `RedpandaContainer`, `RabbitMQContainer`, `GenericContainer` for Redis, `ElasticsearchContainer`, `LocalStackContainer`) handle complex service configuration automatically.
@@ -1858,7 +1858,7 @@ class OrderEventIntegrationTest {
 
 1. **GenericContainer:** Create a test that starts a `generic-container` from the `nginx:alpine` image. Use `@Testcontainers` and `@Container`. Verify the container is running by checking `getMappedPort(80)`. Implement wait strategies: first using `Wait.forListeningPort()`, then `Wait.forHttp("/")`. Compare startup times.
 
-2. **Database Container:** Write a test using `PostgreSQLContainer` with `@DynamicPropertySource`. Create a `users` table, insert a row, and query it back. Use `withInitScript` for the table creation. Then convert the test to use `@ServiceConnection` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â remove the `@DynamicPropertySource` method.
+2. **Database Container:** Write a test using `PostgreSQLContainer` with `@DynamicPropertySource`. Create a `users` table, insert a row, and query it back. Use `withInitScript` for the table creation. Then convert the test to use `@ServiceConnection` — remove the `@DynamicPropertySource` method.
 
 3. **TC JDBC Driver:** Configure `spring.datasource.url=jdbc:tc:postgresql:16-alpine:///testdb` in test properties. Write a `@SpringBootTest` that injects `JdbcTemplate` and runs `SELECT 1`. Do NOT declare any `@Container` fields. Explain how the tc driver starts the container automatically.
 

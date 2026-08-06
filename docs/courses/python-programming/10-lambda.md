@@ -1,4 +1,4 @@
-﻿# Chapter 10: Lambda and Functional Programming
+# Chapter 10: Lambda and Functional Programming
 
 
 > **Previous:** [Functions](./09-functions.md) | **Next:** [Modules and Packages](./11-modules.md)
@@ -37,9 +37,9 @@ By the end of this chapter, students will be able to:
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-|10.1 Lambda Functions||Lambdas are anonymous single-expression functions â€” use them where `def` is overkill.|
+|10.1 Lambda Functions||Lambdas are anonymous single-expression functions — use them where `def` is overkill.|
 |10.2 map()||`map()` and `filter()` are lazy; list comprehensions often read better.|
-|10.3 filter()||`reduce()` cumulatively applies a binary function â€” explicit loops are often clearer.|
+|10.3 filter()||`reduce()` cumulatively applies a binary function — explicit loops are often clearer.|
 |10.4 reduce()||`partial()` fixes arguments; `operator` module replaces common lambdas for speed.|
 |10.5 functools.partial||Function composition chains transformations; Python supports both left-to-right (pipe) and right-to-left (compose).|
 |10.6 The operator Module||undefined|
@@ -69,7 +69,7 @@ flowchart LR
 ```
 ## 10.1 Lambda Functions
 
-> **One-Sentence Takeaway:** Lambdas are anonymous single-expression functions â€” use them where `def` is overkill.
+> **One-Sentence Takeaway:** Lambdas are anonymous single-expression functions — use them where `def` is overkill.
 
 
 A lambda is an anonymous function defined with the `lambda` keyword:
@@ -113,7 +113,7 @@ Use a lambda when the function logic is simple and only needed once. Use `def` f
 ## 10.2 map()
 
 > **One-Sentence Takeaway:** `map()` and `filter()` are lazy; list comprehensions often read better.
-> **Remember:** List comprehensions are often more readable than map/filter â€” use the functional form only when it improves clarity.
+> **Remember:** List comprehensions are often more readable than map/filter — use the functional form only when it improves clarity.
 
 
 
@@ -132,7 +132,7 @@ summed = list(map(lambda x, y: x + y, a, b))
 print(summed)  # [11, 22, 33]
 ```
 
-`map()` is lazy â†’ it returns an iterator. Wrap with `list()` to materialise:
+`map()` is lazy → it returns an iterator. Wrap with `list()` to materialise:
 
 ```python
 result = map(str, [1, 2, 3])
@@ -152,7 +152,7 @@ print(squares1 == squares2)  # True
 
 ## 10.3 filter()
 
-> **One-Sentence Takeaway:** `reduce()` cumulatively applies a binary function â€” explicit loops are often clearer.
+> **One-Sentence Takeaway:** `reduce()` cumulatively applies a binary function — explicit loops are often clearer.
 
 
 `filter()` keeps elements for which the function returns truthy:
@@ -200,9 +200,9 @@ print(factorial)  # 120
 
 Tracing `reduce(lambda a, b: a + b, [1, 2, 3, 4])`:
 
-1. `a=1, b=2` â†’ `3`
-2. `a=3, b=3` â†’ `6`
-3. `a=6, b=4` â†’ `10`
+1. `a=1, b=2` → `3`
+2. `a=3, b=3` → `6`
+3. `a=6, b=4` → `10`
 
 With `functools.reduce`, the function must take two arguments. `reduce` is powerful but less readable than explicit loops for many cases:
 
@@ -241,7 +241,7 @@ print(cube(3))    # 27
 # Real-world: decimal with fixed precision
 from decimal import Decimal, ROUND_HALF_UP
 round_decimal = partial(Decimal.quantize, exp=Decimal("0.01"), rounding=ROUND_HALF_UP)
-# Not quite right â†’ partial on bound method needs care. Better:
+# Not quite right → partial on bound method needs care. Better:
 def round_to_2dp(value):
     return Decimal(value).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
 
@@ -268,7 +268,7 @@ from operator import add, mul, itemgetter, attrgetter, methodcaller
 print(add(3, 4))    # 7
 print(mul(5, 6))    # 30
 
-# itemgetter â†’ instead of lambda x: x[0]
+# itemgetter → instead of lambda x: x[0]
 people = [("Alice", 30), ("Bob", 25), ("Charlie", 35)]
 sorted_by_age = sorted(people, key=itemgetter(1))
 print(sorted_by_age)  # [('Bob', 25), ('Alice', 30), ('Charlie', 35)]
@@ -277,7 +277,7 @@ print(sorted_by_age)  # [('Bob', 25), ('Alice', 30), ('Charlie', 35)]
 points = [(3, 4, 5), (1, 2, 3), (6, 7, 8)]
 print(itemgetter(0, 2)(points[0]))  # (3, 5)
 
-# attrgetter â†’ instead of lambda x: x.attribute
+# attrgetter → instead of lambda x: x.attribute
 from collections import namedtuple
 Person = namedtuple("Person", "name age")
 people2 = [Person("Alice", 30), Person("Bob", 25), Person("Charlie", 35)]
@@ -641,17 +641,17 @@ console.log(positive);  // [3, 5]
 // Python: reduce(lambda a, b: a + b, numbers)
 const sum: number = nums.reduce((acc, n) => acc + n, 0);
 
-// Python: functools.partial â†’ TypeScript: .bind() or closure
+// Python: functools.partial → TypeScript: .bind() or closure
 const multiply = (a: number, b: number): number => a * b;
 const double2 = (x: number): number => multiply(2, x);
 console.log(double2(5));  // 10
 
-// Python: operator.itemgetter(1) â†’ TypeScript: destructuring
+// Python: operator.itemgetter(1) → TypeScript: destructuring
 const getSecond = <T,>(_: unknown, index: number, arr: T[]): T => arr[index];
 // More idiomatic: destructure in callback
 pairs.forEach(([key, val]) => console.log(key, val));
 
-// Python: lambda limitations (single expression) â€” same for arrow functions
+// Python: lambda limitations (single expression) — same for arrow functions
 // But TypeScript arrow functions can have blocks:
 const safeDivide = (a: number, b: number): number => {
   if (b === 0) throw new Error("Division by zero");
@@ -662,11 +662,11 @@ const safeDivide = (a: number, b: number): number => {
 ### TypeScript Functional Composition Patterns
 
 ```typescript
-// Python: multiple lambdas composed â†’ TypeScript: pipes
+// Python: multiple lambdas composed → TypeScript: pipes
 const add = (x: number) => (y: number) => x + y;
 const multiply = (x: number) => (y: number) => x * y;
 
-// Function composition: (f âˆ˜ g)(x) = f(g(x))
+// Function composition: (f ∘ g)(x) = f(g(x))
 function compose<T>(...fns: ((x: T) => T)[]): (x: T) => T {
   return (x: T) => fns.reduceRight((acc, fn) => fn(acc), x);
 }
@@ -674,23 +674,23 @@ function compose<T>(...fns: ((x: T) => T)[]): (x: T) => T {
 const addThenMultiply = compose(add(2), multiply(3));
 console.log(addThenMultiply(5));  // (5 * 3) + 2 = 17
 
-// Python: partial() â†’ TypeScript: arrow function binding
+// Python: partial() → TypeScript: arrow function binding
 const pow = (base: number, exp: number): number => base ** exp;
 const square = (x: number): number => pow(x, 2);
 const cube = (x: number): number => pow(x, 3);
 console.log(square(4), cube(4));  // 16, 64
 
-// Python: operator functions â†’ TypeScript: explicit functions
+// Python: operator functions → TypeScript: explicit functions
 const gt = (a: number) => (b: number) => b > a;
 const greaterThan5 = gt(5);
 [1, 6, 3, 8].filter(greaterThan5);  // [6, 8]
 
-// Python: reduce with lambda â†’ TypeScript: reduce with arrow
+// Python: reduce with lambda → TypeScript: reduce with arrow
 const numbers: number[] = [1, 2, 3, 4, 5];
 const product = numbers.reduce((a, b) => a * b, 1);
 console.log(product);  // 120
 
-// Python: sorted with key=lambda â†’ TypeScript: sort with comparator
+// Python: sorted with key=lambda → TypeScript: sort with comparator
 type Person = { name: string; age: number };
 const people: Person[] = [
   { name: "Alice", age: 30 },
@@ -700,7 +700,7 @@ const people: Person[] = [
 people.sort((a, b) => a.age - b.age);  // sort by age ascending
 console.log(people.map((p) => p.name));  // ["Bob", "Alice", "Charlie"]
 
-// Python: map and filter with lambda â†’ TypeScript: chained array methods
+// Python: map and filter with lambda → TypeScript: chained array methods
 const result = [1, 2, 3, 4, 5, 6]
   .filter((x) => x % 2 === 0)
   .map((x) => x ** 2);
@@ -710,12 +710,12 @@ console.log(result);  // [4, 16, 36]
 ### TypeScript Currying & Advanced Functional Patterns
 
 ```typescript
-// Python: currying with lambda â†’ TypeScript: curried arrow functions
+// Python: currying with lambda → TypeScript: curried arrow functions
 const curriedAdd = (a: number) => (b: number) => (c: number) => a + b + c;
 console.log(curriedAdd(1)(2)(3));  // 6
 // Python equivalent: lambda a: lambda b: lambda c: a + b + c
 
-// Python: functools.compose â†’ TypeScript: pipe function
+// Python: functools.compose → TypeScript: pipe function
 function pipe<T>(...fns: Array<(arg: T) => T>): (arg: T) => T {
   return (x: T) => fns.reduce((acc, fn) => fn(acc), x);
 }
@@ -725,7 +725,7 @@ const truncate = (s: string) => s.slice(0, 10);
 const clean = pipe(trim, lower, truncate);
 console.log(clean("  HELLO WORLD  "));  // "hello worl"
 
-// Python: filter(None, items) â†’ TypeScript: Boolean constructor
+// Python: filter(None, items) → TypeScript: Boolean constructor
 const mixed2 = [0, 1, "", "hello", null, undefined, false, 42];
 const truthy = mixed2.filter(Boolean);
 console.log(truthy);  // [1, "hello", 42]
@@ -747,7 +747,7 @@ function fetchApi(endpoint: string, params: Record<string, string>): Promise<Res
 const fetchUsers = (params: Record<string, string>) => fetchApi("/api/users", params);
 const fetchProducts = (params: Record<string, string>) => fetchApi("/api/products", params);
 
-// Python: map with multiple iterables â†’ TypeScript: Function.apply or zip
+// Python: map with multiple iterables → TypeScript: Function.apply or zip
 function elementWise<T>(a: T[], b: T[], fn: (x: T, y: T) => T): T[] {
   return a.map((val, i) => fn(val, b[i]));
 }

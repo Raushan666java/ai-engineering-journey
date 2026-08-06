@@ -1,4 +1,4 @@
-﻿# RBI Grade B Phase 1 â€” Full-Length Mock Test
+# RBI Grade B Phase 1 — Full-Length Mock Test
 
 > **Exam:** Reserve Bank of India Grade B (Phase 1)  
 > **Total Questions:** 150 | **Duration:** 120 minutes | **Max Marks:** 200  
@@ -39,7 +39,7 @@
 ## Exam Pattern Visualization
 
 ```mermaid
-pie title RBI Grade B Phase 1 â€” Section Weightage
+pie title RBI Grade B Phase 1 — Section Weightage
     "General Awareness" : 40
     "Reasoning" : 40
     "Quantitative Aptitude" : 40
@@ -56,7 +56,7 @@ pie title RBI Grade B Phase 1 â€” Section Weightage
 | 2 | Reasoning (puzzles first, then rest) | 30 min | 35 min |
 | 3 | Quantitative Aptitude | 30 min | 35 min |
 | 4 | English Language | 25 min | 30 min |
-| Buffer | Review & marked questions | 10 min | â€” |
+| Buffer | Review & marked questions | 10 min | — |
 
 ---
 
@@ -160,12 +160,12 @@ A) Rs. 1 lakh  B) Rs. 5 lakh  C) Rs. 10 lakh  D) Rs. 2 lakh
 
 **What is GDP?**
 
-A) Gross Domestic Product â€” total value of goods and services produced within India's borders  B) Gross Demand Product  C) General Domestic Product  D) Gross Development Product
+A) Gross Domestic Product — total value of goods and services produced within India's borders  B) Gross Demand Product  C) General Domestic Product  D) Gross Development Product
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** A) Gross Domestic Product â€” total value of final goods and services produced within domestic territory
+**Answer:** A) Gross Domestic Product — total value of final goods and services produced within domestic territory
 
 **Explanation:** GDP measures economic output within a country's borders. GNP includes income from abroad. GDP = C + I + G + (X-M) where C=Consumption, I=Investment, G=Government spending, X-M=Net exports.
 
@@ -579,7 +579,7 @@ A) Free electricity for farmers  B) Income support of Rs. 6000/year to farmer fa
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) Pradhan Mantri Kisan Samman Nidhi â€” income support of Rs. 6000 per year (Rs. 2000 quarterly) to eligible farmer families
+**Answer:** B) Pradhan Mantri Kisan Samman Nidhi — income support of Rs. 6000 per year (Rs. 2000 quarterly) to eligible farmer families
 
 **Explanation:** PM-KISAN was launched in 2019. It provides direct income support to landholding farmer families. Funds are transferred directly to bank accounts.
 
@@ -823,7 +823,7 @@ A) 20 kg  B) 30 kg  C) 40 kg  D) 50 kg
 
 **Explanation:** 50 not at either end. Heaviest among remaining (40 kg) at left end. 10 left of 20: sequence 10-20. 40 right of 30: sequence 30-40. So arrangement: Left: 40(heaviest remaining), then 30-40... wait 40 is at left and also right of 30? That's contradictory unless 30 is also at left. 40 at left end (position 1). 30-40 means 30 at position... but 40 is at position 1. So 30 must be before 40... impossible since 40 is at leftmost. 
 
-Let me re-read: "The 40 kg box is to the immediate right of 30 kg." So 30-40 sequence. "The heaviest among the remaining is at the left end" â€” 50 is heaviest, but not at end. So 40 is heaviest among remaining = second heaviest. So 40 at left end (position 1). But 40 is right of 30, so 30 must be at position... but 40 is at 1. Contradiction!
+Let me re-read: "The 40 kg box is to the immediate right of 30 kg." So 30-40 sequence. "The heaviest among the remaining is at the left end" — 50 is heaviest, but not at end. So 40 is heaviest among remaining = second heaviest. So 40 at left end (position 1). But 40 is right of 30, so 30 must be at position... but 40 is at 1. Contradiction!
 
 Unless "left end" means something else. Let me re-read: "The heaviest among the remaining is at the left end." Remaining after taking away 50? "The 50 kg box is not at either end." So 50 is in positions 2-4. The heaviest among remaining = 40 is at left end (position 1). 40 right of 30 means 30 is to the left of 40... but position 1 is left end. So 40 at position 1 and 30 must be before 40... impossible.
 
@@ -865,7 +865,7 @@ A) C  B) D  C) E  D) F
 
 **Answer:** B) D
 
-**Explanation:** Fix B at position 1. A second left of B = position 5 (counting anticlockwise). C immediate right of D. E between F and C: F-E-C or C-E-F. F not adjacent to A. Arranging: B(1), F(2), E(3), C(4), A(5), D(6). Check: A(5) second left of B(1): positions 5,4,3 = 3 steps left? In a circle, second left from B(1) going left: 6(D), 5(A) â€” yes. C(4) right of D(6): from D(6), right is 1(B)... no. Let me re-arrange.
+**Explanation:** Fix B at position 1. A second left of B = position 5 (counting anticlockwise). C immediate right of D. E between F and C: F-E-C or C-E-F. F not adjacent to A. Arranging: B(1), F(2), E(3), C(4), A(5), D(6). Check: A(5) second left of B(1): positions 5,4,3 = 3 steps left? In a circle, second left from B(1) going left: 6(D), 5(A) — yes. C(4) right of D(6): from D(6), right is 1(B)... no. Let me re-arrange.
 
 In a 6-person circle: positions 1-6 clockwise. Second left from B: going anticlockwise through positions 6,5. So if B at 1, A at 5.
 
@@ -887,7 +887,7 @@ Try: D at 6, C at 1. But B at 1.
 
 This is getting complex. For the answer, let me just provide the correct final arrangement.
 
-Arrangement: B(1), F(2), E(3), C(4), D(5), A(6). Check: A(6) second left of B(1): going left (anticlockwise) from 1: 6(A), 5(D) â€” second is D not A. Hmm.
+Arrangement: B(1), F(2), E(3), C(4), D(5), A(6). Check: A(6) second left of B(1): going left (anticlockwise) from 1: 6(A), 5(D) — second is D not A. Hmm.
 
 Let me try: B at 1, D at 2, C at 3. E between F and C: if F at 4, E at... no. Let me try: C at 4, D at 3. C immediate right of D. E between F and C. If F at 5, E at 6, C at 1... no C at 4. F at 2, E at 3, C at 4, D at... E is at 3 and D needs to be immediate left of C(4) so D at 3... but E is there.
 
@@ -1009,7 +1009,7 @@ A) 121  B) 144  C) 169  D) 185
 
 **Explanation:** 121=11^2, 144=12^2, 169=13^2, 196=14^2. 185 is not a perfect square (13.6^2). So 185 is the odd one.
 
-**Key Takeaway:** Identify the pattern first â€” all are squares except one.
+**Key Takeaway:** Identify the pattern first — all are squares except one.
 </details>
 
 ---
@@ -1179,7 +1179,7 @@ A) I follows  B) II follows  C) Both follow  D) Neither follows
 
 **Answer:** D) Neither follows
 
-**Explanation:** Fruits are healthy. Some healthy are tasty â€” the tasty healthy items could be non-fruits. So I doesn't follow. For II: fruits are healthy, healthy and tasty intersect, tasty and salty are disjoint. No chain from fruits to salty. So neither follows.
+**Explanation:** Fruits are healthy. Some healthy are tasty — the tasty healthy items could be non-fruits. So I doesn't follow. For II: fruits are healthy, healthy and tasty intersect, tasty and salty are disjoint. No chain from fruits to salty. So neither follows.
 
 **Key Takeaway:** All A are B + Some B are C does NOT imply Some A are C. Need to track the Venn diagram regions carefully.
 </details>
@@ -1325,7 +1325,7 @@ A) 10  B) 20  C) 30  D) 40
 
 **Explanation:** Total = Tea only + Coffee only + Both + Neither. Tea only = 70-40=30. Coffee only = 60-40=20. Both = 40. So 30+20+40=90 like at least one. Neither = 100-90=10.
 
-**Key Takeaway:** n(AâˆªB) = n(A) + n(B) - n(Aâˆ©B). Neither = Total - n(AâˆªB). Venn diagrams help visualize.
+**Key Takeaway:** n(A∪B) = n(A) + n(B) - n(A∩B). Neither = Total - n(A∪B). Venn diagrams help visualize.
 </details>
 
 ---
@@ -1343,7 +1343,7 @@ A) 12  B) 16  C) 18  D) 24
 
 **Explanation:** LCM(6,8) = 24. Multiples of 6: 6,12,18,24... Multiples of 8: 8,16,24... Smallest common = 24.
 
-**Key Takeaway:** LCM = Least Common Multiple. Method: prime factorization or division method. Formula: LCM(a,b) = aÃ—b/GCD(a,b).
+**Key Takeaway:** LCM = Least Common Multiple. Method: prime factorization or division method. Formula: LCM(a,b) = a×b/GCD(a,b).
 </details>
 
 ---
@@ -1377,7 +1377,7 @@ A) I alone  B) II alone  C) Both needed  D) Neither
 
 **Answer:** C) Both needed
 
-**Explanation:** I alone: x = Â±4 (two solutions). II alone: x > 0 (infinite possibilities). Together: x = 4 (unique positive solution).
+**Explanation:** I alone: x = ±4 (two solutions). II alone: x > 0 (infinite possibilities). Together: x = 4 (unique positive solution).
 
 **Key Takeaway:** Squaring introduces extraneous solutions. Always check if additional constraints are needed to narrow down.
 </details>
@@ -1395,9 +1395,9 @@ A) I only  B) II only  C) Both  D) Neither
 
 **Answer:** C) Both
 
-**Explanation:** A subset of B. B and C disjoint. So A and C disjoint (I follows). All A are B means some B are A (some B are A), not "some B are not A." Actually "All A are B" does NOT imply "some B are not A" â€” it's possible that B = A (all B are also A). So II doesn't necessarily follow. So only I follows. Answer should be A.
+**Explanation:** A subset of B. B and C disjoint. So A and C disjoint (I follows). All A are B means some B are A (some B are A), not "some B are not A." Actually "All A are B" does NOT imply "some B are not A" — it's possible that B = A (all B are also A). So II doesn't necessarily follow. So only I follows. Answer should be A.
 
-Hmm wait, "some B are not A" â€” this is only true if B has elements that A doesn't. Since All A are B, B could be equal to A or larger. If B = A, then no B is not A. So II is not necessarily true.
+Hmm wait, "some B are not A" — this is only true if B has elements that A doesn't. Since All A are B, B could be equal to A or larger. If B = A, then no B is not A. So II is not necessarily true.
 
 So answer should be A) Only I follows.
 
@@ -1435,7 +1435,7 @@ A) I only  B) II only  C) Both  D) Neither
 
 **Answer:** D) Neither
 
-**Explanation:** All birds are animals (B subset of A). Some animals are pets (A intersects P). The animals that are pets may not be birds. So I doesn't follow. II says all pets are animals â€” this is not stated.
+**Explanation:** All birds are animals (B subset of A). Some animals are pets (A intersects P). The animals that are pets may not be birds. So I doesn't follow. II says all pets are animals — this is not stated.
 
 **Key Takeaway:** All A are B + Some B are C does not imply Some A are C.
 </details>
@@ -1852,9 +1852,9 @@ A) 144  B) 154  C) 164  D) 174
 
 **Answer:** B) 154
 
-**Explanation:** Area = Ï€r^2 = (22/7) x 49 = 22 x 7 = 154 cm^2.
+**Explanation:** Area = πr^2 = (22/7) x 49 = 22 x 7 = 154 cm^2.
 
-**Key Takeaway:** Circle: Area = Ï€r^2, Circumference = 2Ï€r. Use Ï€=22/7 when r is multiple of 7, Ï€=3.14 otherwise.
+**Key Takeaway:** Circle: Area = πr^2, Circumference = 2πr. Use π=22/7 when r is multiple of 7, π=3.14 otherwise.
 </details>
 
 ---
@@ -2008,7 +2008,7 @@ A) A  B) B  C) C  D) D  E) No error
 
 **Answer:** B) B (are increasing)
 
-**Explanation:** "The number of" is singular â€” it refers to the single concept of "the number." Correct: "The number of applicants is increasing." Compare: "A number of applicants are increasing" (plural, meaning several).
+**Explanation:** "The number of" is singular — it refers to the single concept of "the number." Correct: "The number of applicants is increasing." Compare: "A number of applicants are increasing" (plural, meaning several).
 
 **Key Takeaway:** "The number of" = singular verb. "A number of" = plural verb. This is a high-frequency exam distinction.
 </details>
@@ -2028,7 +2028,7 @@ A) A  B) B  C) C  D) D  E) No error
 
 **Explanation:** "Each" is singular, so the verb should be "has submitted." "Each of the students has submitted" is correct.
 
-**Key Takeaway:** Each, either, neither, every â€” followed by singular verb. Even if followed by "of + plural noun."
+**Key Takeaway:** Each, either, neither, every — followed by singular verb. Even if followed by "of + plural noun."
 </details>
 
 ---
@@ -2082,7 +2082,7 @@ A) A  B) B  C) C  D) D  E) No error
 
 **Explanation:** "Data" is the plural of "datum." In formal English, it takes a plural verb: "The data show." However, modern usage accepts singular. In competitive exams, the formal rule (plural) is preferred.
 
-**Key Takeaway:** Data/datum, Media/medium, Criteria/criterion, Agenda/agendum â€” these Latin plurals follow their original plural rules in formal English.
+**Key Takeaway:** Data/datum, Media/medium, Criteria/criterion, Agenda/agendum — these Latin plurals follow their original plural rules in formal English.
 </details>
 
 ---
@@ -2126,7 +2126,7 @@ A) A  B) B  C) C  D) D  E) No error
 
 **Answer:** C) initiatives
 
-**Explanation:** "Various initiatives" â€” plural noun. "Initiatives" means programs or schemes.
+**Explanation:** "Various initiatives" — plural noun. "Initiatives" means programs or schemes.
 
 **Key Takeaway:** Various/different/several + plural noun. An initiative = a new plan/action.
 </details>
@@ -2140,7 +2140,7 @@ A) A  B) B  C) C  D) D  E) No error
 
 **Answer:** A) benefits
 
-**Explanation:** "Tax benefits" â€” plural noun meaning advantages or incentives. The phrase "funding schemes and tax benefits" is parallel.
+**Explanation:** "Tax benefits" — plural noun meaning advantages or incentives. The phrase "funding schemes and tax benefits" is parallel.
 
 **Key Takeaway:** Benefit (noun) = advantage. Benefit (verb) = to gain advantage. Beneficial (adjective) = advantageous.
 </details>
@@ -2154,7 +2154,7 @@ A) A  B) B  C) C  D) D  E) No error
 
 **Answer:** A) challenge
 
-**Explanation:** "Remains a challenge" â€” singular noun. The article "a" requires a singular noun.
+**Explanation:** "Remains a challenge" — singular noun. The article "a" requires a singular noun.
 
 **Key Takeaway:** After "a/an," use singular countable noun. "Remains a challenge" is a standard collocation.
 </details>

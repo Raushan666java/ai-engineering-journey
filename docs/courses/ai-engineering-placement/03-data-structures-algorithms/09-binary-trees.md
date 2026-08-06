@@ -539,37 +539,37 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 
 ## True/False
 
-1. **True or False:** Binary Trees builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
-2. **True or False:** You should write at least one code example for Binary Trees before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
-3. **True or False:** The complexity analysis for Binary Trees is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
-4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Binary Trees in production. â€” **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Binary Trees chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+1. **True or False:** Binary Trees builds directly on the fundamentals covered in the earlier chapters of this module. — **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Binary Trees before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Binary Trees is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Binary Trees in production. — **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Binary Trees chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
-1. The chapter that covers Binary Trees is Chapter ___ of this module. â€” Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Binary Trees is ___. â€” Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Binary Trees is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
-4. The tools commonly used to debug Binary Trees issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
-5. The related topic that connects to Binary Trees in the next chapter is ___. â€” Answer: see the Next Topic section.
+1. The chapter that covers Binary Trees is Chapter ___ of this module. — Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Binary Trees is ___. — Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Binary Trees is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Binary Trees issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Binary Trees in the next chapter is ___. — Answer: see the Next Topic section.
 
 ## Scenario Questions
 
-1. **Scenario:** A teammate ships a change involving Binary Trees that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+1. **Scenario:** A teammate ships a change involving Binary Trees that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Binary Trees is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of Binary Trees is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
-3. **Scenario:** A new hire asks you to explain Binary Trees in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+3. **Scenario:** A new hire asks you to explain Binary Trees in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
-4. **Scenario:** Your team's codebase has three different patterns for Binary Trees and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+4. **Scenario:** Your team's codebase has three different patterns for Binary Trees and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Binary Trees on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
-2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
-3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
-4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
-5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+1. **What is the output of the simplest correct implementation of Binary Trees on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 

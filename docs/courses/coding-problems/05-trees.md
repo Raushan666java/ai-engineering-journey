@@ -1,4 +1,4 @@
-﻿# Chapter 05: Trees
+# Chapter 05: Trees
 
 > Tree problems are among the most common interview topics. They test your understanding of recursion, BFS/DFS traversal, and data structure design. Mastering trees is essential for every software engineer.
 
@@ -57,10 +57,10 @@ flowchart TD
 mindmap
   root((Tree Patterns))
     DFS Traversals
-      Inorder â†’ sorted for BST
-      Preorder â†’ root first
-      Postorder â†’ children before parent
-      Morris â†’ O(1) space
+      Inorder → sorted for BST
+      Preorder → root first
+      Postorder → children before parent
+      Morris → O(1) space
     BFS Traversals
       Level order
       Zigzag level order
@@ -101,11 +101,11 @@ xychart-beta
 
 ### Problem 1: Binary Tree Inorder Traversal
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, Stack, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, Stack, Recursion]
 
-**Problem:** Given the root of a binary tree, return the inorder traversal (left â†’ root â†’ right).
+**Problem:** Given the root of a binary tree, return the inorder traversal (left → root → right).
 
 **Example 1:**
 ```
@@ -114,10 +114,10 @@ Output: [1, 3, 2]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 100
+- 0 ≤ nodes ≤ 100
 
 **Solution Approach:**
-- **Recursive:** D â†’ left, visit, right. Time O(n), Space O(h).
+- **Recursive:** D → left, visit, right. Time O(n), Space O(h).
 - **Iterative (Stack):** Push left, pop, visit, go right. Time O(n), Space O(h).
 
 ```typescript
@@ -185,9 +185,9 @@ console.log(inorderTraversal(arrayToTree([]))); // []
 
 ### Problem 2: Maximum Depth of Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, DFS, BFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, DFS, BFS]
 
 **Problem:** Find the maximum depth (number of nodes along the longest path from root to farthest leaf).
 
@@ -198,7 +198,7 @@ Output: 3
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 10â´
+- 0 ≤ nodes ≤ 10⁴
 
 ```typescript
 function maxDepth(root: TreeNode | null): number {
@@ -221,9 +221,9 @@ console.log(maxDepth(null)); // 0
 
 ### Problem 3: Same Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, DFS, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, DFS, Recursion]
 
 **Problem:** Given two binary trees, check if they are structurally identical and have same values.
 
@@ -259,9 +259,9 @@ console.log(isSameTree(tree1, tree3)); // false
 
 ### Problem 4: Symmetric Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, DFS, BFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, DFS, BFS]
 
 **Problem:** Given a binary tree, check if it is a mirror of itself.
 
@@ -298,9 +298,9 @@ console.log(isSymmetric(arrayToTree([1, 2, 2, null, 3, null, 3]))); // false
 
 ### Problem 5: Binary Tree Level Order Traversal
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, BFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, BFS]
 
 **Problem:** Return the level order traversal of a binary tree's nodes' values (left to right, level by level).
 
@@ -348,9 +348,9 @@ console.log(levelOrder(null)); // []
 
 ### Problem 6: Convert Sorted Array to BST
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, BST, Divide and Conquer]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, BST, Divide and Conquer]
 
 **Problem:** Given an integer array sorted in ascending order, convert it to a height-balanced BST.
 
@@ -388,11 +388,11 @@ console.log(inorderTraversal(bst)); // [-10, -3, 0, 5, 9]
 
 ### Problem 7: Balanced Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, DFS]
 
-**Problem:** Determine if a binary tree is height-balanced (left and right subtrees differ by â‰¤1 in height).
+**Problem:** Determine if a binary tree is height-balanced (left and right subtrees differ by ≤1 in height).
 
 **Example 1:**
 ```
@@ -431,9 +431,9 @@ console.log(isBalanced(arrayToTree([1, 2, 2, 3, 3, null, null, 4, 4]))); // fals
 
 ### Problem 8: Minimum Depth of Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, BFS, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, BFS, DFS]
 
 **Problem:** Find the minimum depth (shortest path from root to nearest leaf).
 
@@ -478,9 +478,9 @@ console.log(minDepth(arrayToTree([2, null, 3, null, 4]))); // 3
 
 ### Problem 9: Path Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, DFS]
 
 **Problem:** Given a target sum, determine if the tree has a root-to-leaf path that sums to target.
 
@@ -513,9 +513,9 @@ console.log(hasPathSum(null, 0)); // false
 
 ### Problem 10: Invert Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Tree, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Tree, Recursion]
 
 **Problem:** Given the root of a binary tree, invert the tree (mirror it).
 
@@ -553,9 +553,9 @@ console.log(levelOrder(inverted));
 
 ### Problem 11: Validate Binary Search Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, BST, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, BST, DFS]
 
 **Problem:** Determine if a binary tree is a valid BST. Left subtree values must be < root value; right > root.
 
@@ -566,8 +566,8 @@ Output: true
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 10â´
-- -2Â³Â¹ â‰¤ Node.val â‰¤ 2Â³Â¹ - 1
+- 0 ≤ nodes ≤ 10⁴
+- -2³¹ ≤ Node.val ≤ 2³¹ - 1
 
 **Solution Approach:**
 - **Inorder check:** Inorder traversal must be strictly increasing.
@@ -599,11 +599,11 @@ console.log(isValidBST(arrayToTree([5, 1, 4, null, null, 3, 6]))); // false
 
 ### Problem 12: Binary Tree Zigzag Level Order Traversal
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, BFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, BFS]
 
-**Problem:** Return zigzag level order: leftâ†’right, then rightâ†’left, alternating.
+**Problem:** Return zigzag level order: left→right, then right→left, alternating.
 
 **Example 1:**
 ```
@@ -654,9 +654,9 @@ console.log(zigzagLevelOrder(arrayToTree([3, 9, 20, null, null, 15, 7])));
 
 ### Problem 13: Construct Binary Tree from Preorder and Inorder
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, Array, Divide and Conquer]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, Array, Divide and Conquer]
 
 **Problem:** Build a binary tree from preorder and inorder traversal arrays.
 
@@ -695,16 +695,16 @@ console.log(levelOrder(buildTree(preorder, inorder)));
 // [[3], [9, 20], [15, 7]]
 ```
 
-**Time Complexity:** O(nÂ²) naive, O(n) with hash map
+**Time Complexity:** O(n²) naive, O(n) with hash map
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 14: Binary Tree Right Side View
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, BFS, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, BFS, DFS]
 
 **Problem:** Return the values of nodes you can see from the right side of the tree (top to bottom).
 
@@ -747,9 +747,9 @@ console.log(rightSideView(arrayToTree([1, 2, 3, null, 5, null, 4])));
 
 ### Problem 15: Kth Smallest Element in a BST
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, BST, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, BST, DFS]
 
 **Problem:** Find the kth smallest element in a BST.
 
@@ -760,7 +760,7 @@ Output: 1
 ```
 
 **Constraints:**
-- 1 â‰¤ k â‰¤ nodes â‰¤ 10â´
+- 1 ≤ k ≤ nodes ≤ 10⁴
 
 ```typescript
 function kthSmallest(root: TreeNode | null, k: number): number {
@@ -796,9 +796,9 @@ console.log(kthSmallest(arrayToTree([5, 3, 6, 2, 4, null, null, 1]), 3)); // 3
 
 ### Problem 16: Lowest Common Ancestor of a BST
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, BST]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, BST]
 
 **Problem:** Find the lowest common ancestor of two nodes in a BST.
 
@@ -838,9 +838,9 @@ console.log(lowestCommonAncestorBST(bstTree, p, q)?.val); // 6
 
 ### Problem 17: Lowest Common Ancestor of a Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, DFS]
 
 **Problem:** Find the LCA of two nodes in a binary tree (not necessarily BST).
 
@@ -877,9 +877,9 @@ console.log(lowestCommonAncestor(treeLCA, pNode, qNode)?.val); // 3
 
 ### Problem 18: Binary Tree Maximum Path Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Tree, DFS, DP]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Tree, DFS, DP]
 
 **Problem:** Find the maximum path sum in a binary tree. Path can start and end at any node.
 
@@ -887,11 +887,11 @@ console.log(lowestCommonAncestor(treeLCA, pNode, qNode)?.val); // 3
 ```
 Input: root = [-10, 9, 20, null, null, 15, 7]
 Output: 42
-Explanation: Path 15 â†’ 20 â†’ 7 = 42
+Explanation: Path 15 → 20 → 7 = 42
 ```
 
 **Constraints:**
-- 1 â‰¤ nodes â‰¤ 3 Ã— 10â´
+- 1 ≤ nodes ≤ 3 × 10⁴
 
 ```typescript
 function maxPathSum(root: TreeNode | null): number {
@@ -926,9 +926,9 @@ console.log(maxPathSum(arrayToTree([1, 2, 3]))); // 6
 
 ### Problem 19: Binary Tree Level Order Traversal II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, BFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, BFS]
 
 **Problem:** Return bottom-up level order (leaf to root).
 
@@ -973,9 +973,9 @@ console.log(levelOrderBottom(arrayToTree([3, 9, 20, null, null, 15, 7])));
 
 ### Problem 20: Count Complete Tree Nodes
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, Binary Search]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, Binary Search]
 
 **Problem:** Count the number of nodes in a complete binary tree in O(n) time (or better).
 
@@ -986,7 +986,7 @@ Output: 6
 ```
 
 **Solution Approach:**
-- O(n) is trivial (traverse all). Optimize: use complete tree property â€” check full height.
+- O(n) is trivial (traverse all). Optimize: use complete tree property — check full height.
 
 ```typescript
 function countNodes(root: TreeNode | null): number {
@@ -1018,16 +1018,16 @@ console.log(countNodes(arrayToTree([1, 2, 3, 4, 5, 6]))); // 6
 console.log(countNodes(arrayToTree([]))); // 0
 ```
 
-**Time Complexity:** O(logÂ² n)
+**Time Complexity:** O(log² n)
 **Space Complexity:** O(log n)
 
 ---
 
 ### Problem 21: Binary Tree Paths
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, DFS, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, DFS, String]
 
 **Problem:** Return all root-to-leaf paths.
 
@@ -1069,9 +1069,9 @@ console.log(binaryTreePaths(arrayToTree([1, 2, 3, null, 5])));
 
 ### Problem 22: Sum Root to Leaf Numbers
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, DFS]
 
 **Problem:** Each root-to-leaf path represents a number. Return total sum of all root-to-leaf numbers.
 
@@ -1108,9 +1108,9 @@ console.log(sumNumbers(arrayToTree([4, 9, 0, 5, 1]))); // 1026
 
 ### Problem 23: Flatten Binary Tree to Linked List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, DFS, Stack]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, DFS, Stack]
 
 **Problem:** Flatten a binary tree to a right-skewed linked list (in-place, preorder order).
 
@@ -1151,9 +1151,9 @@ console.log(rightSideView(flatTree)); // [1, 2, 3, 4, 5, 6]
 
 ### Problem 24: Populating Next Right Pointers in Each Node
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Tree, BFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Tree, BFS]
 
 **Problem:** Connect each node to its next right node (perfect binary tree).
 
@@ -1207,9 +1207,9 @@ function connect(root: NodeWithNext | null): NodeWithNext | null {
 
 ### Problem 25: Serialize and Deserialize Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Tree, Design, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Tree, Design, String]
 
 **Problem:** Design algorithms to serialize and deserialize a binary tree.
 
@@ -1278,9 +1278,9 @@ console.log(levelOrder(deserialized));
 
 ### Problem 26: Binary Tree Cameras
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Tree, DFS, Greedy, DP]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Tree, DFS, Greedy, DP]
 
 **Problem:** Given a binary tree, we install cameras on nodes where each camera monitors its parent, itself, and immediate children. Return the minimum number of cameras needed to monitor all nodes.
 
@@ -1291,7 +1291,7 @@ Output: 1
 ```
 
 **Constraints:**
-- 1 â‰¤ nodes â‰¤ 1000
+- 1 ≤ nodes ≤ 1000
 
 ```typescript
 function minCameraCover(root: TreeNode | null): number {
@@ -1332,9 +1332,9 @@ console.log(minCameraCover(arrayToTree([0, 0, null, 0, null, 0, null, null, 0]))
 
 ### Problem 27: Binary Tree Maximum Path Sum (with variations)
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Tree, DFS, DP]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Tree, DFS, DP]
 
 **Problem:** Given a binary tree, find the maximum path sum that can start and end at any node. The path must not pass through the same node twice.
 
@@ -1350,9 +1350,9 @@ Output: 6
 
 ### Problem 28: Recover Binary Search Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Tree, BST, DFS]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Tree, BST, DFS]
 
 **Problem:** Two elements of a BST are swapped by mistake. Recover the tree without changing its structure.
 
@@ -1403,9 +1403,9 @@ console.log(inorderTraversal(broken)); // [1, 2, 3]
 
 ### Problem 29: Vertical Order Traversal of a Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Tree, BFS, Hash Table]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Tree, BFS, Hash Table]
 
 **Problem:** Return the vertical order traversal from leftmost to rightmost. If two nodes are in the same row and column, sort by value.
 
@@ -1458,9 +1458,9 @@ console.log(verticalTraversal(arrayToTree([3, 9, 20, null, null, 15, 7])));
 
 ### Problem 30: All Nodes Distance K in Binary Tree
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Tree, BFS, Graph, Hash Table]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Tree, BFS, Graph, Hash Table]
 
 **Problem:** Given a target node, return all nodes at distance K from the target.
 
@@ -1545,7 +1545,7 @@ console.log(distanceK(treeKD, target, 2)); // [7, 4, 1]
 | 17 | LCA in Binary Tree | Medium | Multiple | O(n) | O(h) |
 | 18 | Max Path Sum | Hard | Multiple | O(n) | O(h) |
 | 19 | Level Order II | Medium | Amazon, Google | O(n) | O(n) |
-| 20 | Count Complete Nodes | Medium | Amazon, Google | O(logÂ² n) | O(log n) |
+| 20 | Count Complete Nodes | Medium | Amazon, Google | O(log² n) | O(log n) |
 | 21 | Binary Tree Paths | Medium | Amazon, Google | O(n) | O(h) |
 | 22 | Sum Root to Leaf | Medium | Amazon, Google | O(n) | O(h) |
 | 23 | Flatten to Linked List | Medium | Multiple | O(n) | O(h) |

@@ -1,4 +1,4 @@
-﻿# Chapter 6: Queues, Jobs, Notifications & Mail
+# Chapter 6: Queues, Jobs, Notifications & Mail
 > **Previous:** [Authentication, Authorization & Security](./05-auth-security) | **Next:** [API Development & Integration](./07-api-development)
 
 ---
@@ -717,7 +717,7 @@ Laravel's notification system sends messages across multiple channels with a sin
 ```php
 php artisan make:notification OrderShipped
 
-> **Remember:** Implement `ShouldQueue` on notification classes that send mail â€” otherwise the email is sent synchronously during the HTTP request, increasing response time by hundreds of milliseconds.
+> **Remember:** Implement `ShouldQueue` on notification classes that send mail — otherwise the email is sent synchronously during the HTTP request, increasing response time by hundreds of milliseconds.
 ```
 
 ```php
@@ -1429,7 +1429,7 @@ class ChargePayment implements ShouldQueue
 | Use Case | Payment \u2192 Ship \u2192 Notify | Process multiple uploads |
 | Ordering | Strict order guaranteed | No ordering guarantee |
 
-## Quick Reference â€” Queue Artisan Commands
+## Quick Reference — Queue Artisan Commands
 
 | Command | Purpose |
 |---------|---------|
@@ -1445,7 +1445,7 @@ class ChargePayment implements ShouldQueue
 | Concept | Blog | E-Commerce | SaaS |
 |---------|------|-----------|------|
 | Queue Driver | redis (single) | sqs + redis | redis (multiple queues) |
-| High Priority Queue | â€” | Payment processing | Subscription billing |
+| High Priority Queue | — | Payment processing | Subscription billing |
 | Batched Jobs | Image thumbnailing | Bulk order import | CSV user import |
 | Notified Channels | Email + database | Email + SMS + Slack | Email + Slack + Webhook |
 | Horizon Supervisors | 1 (default) | 3 (payments, email, default) | 5 per service tier |

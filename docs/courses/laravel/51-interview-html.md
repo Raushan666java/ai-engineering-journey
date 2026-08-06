@@ -1,4 +1,4 @@
-﻿# HTML Interview Q&A
+# HTML Interview Q&A
 
 > **Previous:** [MySQL & Database Interview Q&A](./50-interview-mysql.md) | **Next:** [CSS Interview Q&A](./52-interview-css.md)
 
@@ -132,7 +132,7 @@ flowchart LR
 
 ### Q4: When should you use `<article>` versus `<section>`?
 
-**Answer:** Use `<article>` for self-contained, independently distributable content â†’ a blog post, news story, forum comment, or product card. Use `<section>` for thematic groupings within a larger document, typically with its own heading. An `<article>` can contain multiple `<section>` elements, and a `<section>` can contain multiple `<article>` elements.
+**Answer:** Use `<article>` for self-contained, independently distributable content → a blog post, news story, forum comment, or product card. Use `<section>` for thematic groupings within a larger document, typically with its own heading. An `<article>` can contain multiple `<section>` elements, and a `<section>` can contain multiple `<article>` elements.
 
 ```html
 <article>
@@ -154,7 +154,7 @@ flowchart LR
 
 ### Q5: What is the purpose of the `<main>` element and how many can a page have?
 
-**Answer:** `<main>` represents the dominant content of the `<body>` â†’ content unique to the document that is not repeated across pages (unlike headers, navs, or footers). A document **must** have only one `<main>` element that is visible. It should not be a descendant of `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>`.
+**Answer:** `<main>` represents the dominant content of the `<body>` → content unique to the document that is not repeated across pages (unlike headers, navs, or footers). A document **must** have only one `<main>` element that is visible. It should not be a descendant of `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>`.
 
 ```html
 <body>
@@ -197,7 +197,7 @@ flowchart LR
 
 ### Q8: What is the correct usage of the `<nav>` element?
 
-**Answer:** `<nav>` identifies a section with navigation links. Use it for primary site navigation, table of contents, breadcrumbs, pagination, or any group of links where navigation is the primary purpose. Not every group of links needs `<nav>` â†’ a footer with legal links, for example, typically does not.
+**Answer:** `<nav>` identifies a section with navigation links. Use it for primary site navigation, table of contents, breadcrumbs, pagination, or any group of links where navigation is the primary purpose. Not every group of links needs `<nav>` → a footer with legal links, for example, typically does not.
 
 ```html
 <nav aria-label="Breadcrumb">
@@ -219,7 +219,7 @@ flowchart LR
 
 ### Q9: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?
 
-**Answer:** `<b>` and `<i>` are presentational â†’ they apply bold and italic styling without semantic meaning. `<strong>` indicates strong importance or urgency (screen readers may change vocal emphasis). `<em>` indicates stress emphasis, changing the meaning of a sentence. Use `<strong>` and `<em>` for meaning; use `<b>` and `<i>` only when no semantic element fits (e.g., product names, taxonomic terms).
+**Answer:** `<b>` and `<i>` are presentational → they apply bold and italic styling without semantic meaning. `<strong>` indicates strong importance or urgency (screen readers may change vocal emphasis). `<em>` indicates stress emphasis, changing the meaning of a sentence. Use `<strong>` and `<em>` for meaning; use `<b>` and `<i>` only when no semantic element fits (e.g., product names, taxonomic terms).
 
 ```html
 <p><strong>Warning:</strong> This action cannot be undone.</p>
@@ -243,7 +243,7 @@ flowchart LR
 
 ### Q11: What is the purpose of the `<address>` element?
 
-**Answer:** `<address>` supplies contact information for the nearest `<article>` or `<body>` ancestor. It should contain the author's or organization's contact details â†’ email, physical address, phone, social media links. It is **not** for arbitrary postal addresses (use a `<p>` for that).
+**Answer:** `<address>` supplies contact information for the nearest `<article>` or `<body>` ancestor. It should contain the author's or organization's contact details → email, physical address, phone, social media links. It is **not** for arbitrary postal addresses (use a `<p>` for that).
 
 ```html
 <footer>
@@ -266,7 +266,7 @@ flowchart LR
 
 ### Q13: What is the difference between `<div>` and `<span>`?
 
-**Answer:** `<div>` is a block-level container that starts on a new line and takes full width. `<span>` is an inline container that flows within text. Both are semantically neutral â†’ use them only when no semantic element applies, and prefer semantic elements first.
+**Answer:** `<div>` is a block-level container that starts on a new line and takes full width. `<span>` is an inline container that flows within text. Both are semantically neutral → use them only when no semantic element applies, and prefer semantic elements first.
 
 ```html
 <div class="card">
@@ -277,7 +277,7 @@ flowchart LR
 
 ### Q14: Why is a logical heading hierarchy important for SEO?
 
-**Answer:** Search engines use headings to understand page structure and topical relevance. An `<h1>` signals the primary topic. Proper nesting (h1 â†’ h2 â†’ h3, never skipping) helps crawlers index content correctly. Keyword-rich, descriptive headings improve search ranking and click-through rates.
+**Answer:** Search engines use headings to understand page structure and topical relevance. An `<h1>` signals the primary topic. Proper nesting (h1 → h2 → h3, never skipping) helps crawlers index content correctly. Keyword-rich, descriptive headings improve search ranking and click-through rates.
 
 ```html
 <h1>Complete Guide to Laravel Deployment</h1>
@@ -334,7 +334,7 @@ flowchart LR
 
 ### Q17: How do you associate a `<label>` with an `<input>` and why is it required?
 
-**Answer:** Use the `for` attribute on `<label>` matching the `id` on `<input>`, or wrap the input inside the label. Labels are required for accessibility â†’ screen readers announce the label when the input receives focus, and clicking the label toggles the input, increasing the hit target area.
+**Answer:** Use the `for` attribute on `<label>` matching the `id` on `<input>`, or wrap the input inside the label. Labels are required for accessibility → screen readers announce the label when the input receives focus, and clicking the label toggles the input, increasing the hit target area.
 
 ```html
 <!-- Method 1: for/id association -->
@@ -408,7 +408,7 @@ function validateCode(input) {
 
 ### Q21: What is the `<fieldset>` and `<legend>` used for?
 
-**Answer:** `<fieldset>` groups related form controls visually and semantically. `<legend>` provides the group's label. This is critical for accessibility â†’ screen readers announce the legend before each control within the fieldset. Use for radio button groups, address sections, payment details, etc.
+**Answer:** `<fieldset>` groups related form controls visually and semantically. `<legend>` provides the group's label. This is critical for accessibility → screen readers announce the legend before each control within the fieldset. Use for radio button groups, address sections, payment details, etc.
 
 ```html
 <form>
@@ -452,7 +452,7 @@ function validateCode(input) {
 
 ### Q23: What are the differences between `<button>` and `<input type="submit">`?
 
-**Answer:** Both submit forms, but `<button>` is more flexible â†’ it can contain HTML content (icons, text, nested elements) and defaults to `type="submit"` (be careful: in IE/Edge it defaulted to `type="button"`). `<input type="submit">` is a void element and can only display a `value` text string. Always explicitly set `type` on `<button>` to avoid cross-browser issues.
+**Answer:** Both submit forms, but `<button>` is more flexible → it can contain HTML content (icons, text, nested elements) and defaults to `type="submit"` (be careful: in IE/Edge it defaulted to `type="button"`). `<input type="submit">` is a void element and can only display a `value` text string. Always explicitly set `type` on `<button>` to avoid cross-browser issues.
 
 ```html
 <!-- Button with icon -->
@@ -485,7 +485,7 @@ function validateCode(input) {
 
 ### Q25: How do you implement the `placeholder` attribute and what are its accessibility concerns?
 
-**Answer:** `placeholder` provides a hint about the expected input format. However, it is **not a substitute for `<label>`** â†’ placeholders disappear on input, fail contrast requirements in many browsers, and are often announced incorrectly by screen readers. Always pair with a visible `<label>`.
+**Answer:** `placeholder` provides a hint about the expected input format. However, it is **not a substitute for `<label>`** → placeholders disappear on input, fail contrast requirements in many browsers, and are often announced incorrectly by screen readers. Always pair with a visible `<label>`.
 
 ```html
 <!-- Correct: label + placeholder -->
@@ -524,7 +524,7 @@ function validateCode(input) {
 
 ### Q28: How do you handle file upload size and type restrictions?
 
-**Answer:** File type is restricted via the `accept` attribute on the input, but this is client-side only â†’ always validate on the server. File size cannot be restricted via HTML alone; use JavaScript with the File API to check `file.size` before submission, and always enforce limits server-side.
+**Answer:** File type is restricted via the `accept` attribute on the input, but this is client-side only → always validate on the server. File size cannot be restricted via HTML alone; use JavaScript with the File API to check `file.size` before submission, and always enforce limits server-side.
 
 ```html
 <form id="upload-form">
@@ -586,7 +586,7 @@ function validateFile(input) {
 
 ### Q31: What is ARIA and when should you use it?
 
-**Answer:** ARIA (Accessible Rich Internet Applications) is a set of attributes that supplement HTML to improve accessibility for assistive technologies. Use ARIA when native HTML semantics are insufficient â†’ for custom widgets, dynamic content, or complex interactions. **First rule of ARIA**: use native HTML elements before adding ARIA. A `<button>` is better than a `<div role="button">`.
+**Answer:** ARIA (Accessible Rich Internet Applications) is a set of attributes that supplement HTML to improve accessibility for assistive technologies. Use ARIA when native HTML semantics are insufficient → for custom widgets, dynamic content, or complex interactions. **First rule of ARIA**: use native HTML elements before adding ARIA. A `<button>` is better than a `<div role="button">`.
 
 ```html
 <!-- Bad: div as button -->
@@ -657,10 +657,10 @@ function addNotification(msg) {
 
 ```html
 <style>
-  /* 4.5:1 ratio on white (#ffffff) â†’ passes AA */
+  /* 4.5:1 ratio on white (#ffffff) → passes AA */
   .body-text { color: #595959; }         /* dark gray */
 
-  /* 7:1 ratio on white â†’ passes AAA */
+  /* 7:1 ratio on white → passes AAA */
   .high-contrast-text { color: #333333; }
 
   /* Focus indicator with 3:1 contrast */
@@ -751,7 +751,7 @@ function addNotification(msg) {
 
 ### Q38: What are `aria-hidden` and `role="presentation"` / `role="none"`?
 
-**Answer:** `aria-hidden="true"` removes an element (and its children) from the accessibility tree, hiding it from screen readers. Use for decorative icons, repeated content, or offscreen panels. `role="presentation"` (or `role="none"`) removes semantic meaning while keeping content accessible â†’ use for layout-only tables or decorative list containers.
+**Answer:** `aria-hidden="true"` removes an element (and its children) from the accessibility tree, hiding it from screen readers. Use for decorative icons, repeated content, or offscreen panels. `role="presentation"` (or `role="none"`) removes semantic meaning while keeping content accessible → use for layout-only tables or decorative list containers.
 
 ```html
 <!-- Decorative icon: hide from screen readers -->
@@ -925,13 +925,13 @@ function onDrop(event) {
 
 ```html
 <script>
-// localStorage â†’ persists across sessions
+// localStorage → persists across sessions
 localStorage.setItem('theme', 'dark');
 localStorage.setItem('preferences', JSON.stringify({ fontSize: 16, sidebar: true }));
 const theme = localStorage.getItem('theme');
 localStorage.removeItem('preferences');
 
-// sessionStorage â†’ per tab session
+// sessionStorage → per tab session
 sessionStorage.setItem('formProgress', JSON.stringify({ step: 2, valid: true }));
 const progress = JSON.parse(sessionStorage.getItem('formProgress'));
 
@@ -1080,11 +1080,11 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden') {
     pauseVideo();
     throttleAnimations();
-    console.log('Tab hidden â†’ conserving resources');
+    console.log('Tab hidden → conserving resources');
   } else {
     resumeVideo();
     resumeAnimations();
-    console.log('Tab visible â†’ resuming activity');
+    console.log('Tab visible → resuming activity');
   }
 });
 
@@ -1102,7 +1102,7 @@ function resumeVideo() {
 
 ### Q48: How does the Intersection Observer API work?
 
-**Answer:** `IntersectionObserver` efficiently detects when an element enters or exits the viewport (or another container). It fires a callback with `entries`, each containing `isIntersecting`, `intersectionRatio`, and `boundingClientRect`. Use for lazy loading images, infinite scroll, animation triggers, and ad visibility tracking â†’ much more performant than scroll event listeners.
+**Answer:** `IntersectionObserver` efficiently detects when an element enters or exits the viewport (or another container). It fires a callback with `entries`, each containing `isIntersecting`, `intersectionRatio`, and `boundingClientRect`. Use for lazy loading images, infinite scroll, animation triggers, and ad visibility tracking → much more performant than scroll event listeners.
 
 ```html
 <img class="lazy" data-src="hero.webp" alt="Hero image" width="1200" height="600">
@@ -1180,7 +1180,7 @@ document.addEventListener('fullscreenchange', () => {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Engineering Journey â†’ Learn Laravel, Python, and Modern Web Development</title>
+  <title>AI Engineering Journey → Learn Laravel, Python, and Modern Web Development</title>
   <meta name="description" content="Comprehensive courses on Laravel, AI SDKs, Python, and full-stack web development. Build real-world applications with step-by-step tutorials.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://example.com/courses/laravel">
@@ -1369,11 +1369,11 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q59: What is the purpose of the `<title>` tag format for SEO?
 
-**Answer:** The `<title>` is the most important on-page SEO factor. It appears as the clickable headline in search results and the browser tab. Best practices: include primary keyword near the front, keep under 60 characters, use the brand name at the end (separated by a pipe `|` or dash `â†’`), make it unique per page, and make it compelling to drive clicks.
+**Answer:** The `<title>` is the most important on-page SEO factor. It appears as the clickable headline in search results and the browser tab. Best practices: include primary keyword near the front, keep under 60 characters, use the brand name at the end (separated by a pipe `|` or dash `→`), make it unique per page, and make it compelling to drive clicks.
 
 ```html
 <!-- Good title patterns -->
-<title>Laravel Blade Templates â†’ Complete Guide | AI Engineering Journey</title>
+<title>Laravel Blade Templates → Complete Guide | AI Engineering Journey</title>
 <title>How to Build REST APIs with Laravel | AI Engineering Journey</title>
 <title>Laravel vs Django: Which Framework Should You Choose? | AI Engineering Journey</title>
 
@@ -1442,7 +1442,7 @@ Sitemap: https://example.com/sitemap.xml
 **Answer:** HTML forms only support GET and POST methods. Laravel's `@method('PUT')`, `@method('PATCH')`, and `@method('DELETE')` directives generate a hidden `_method` input. The middleware `HandlePrecognitiveRequests` or the HTTP kernel converts this back to the intended method before routing.
 
 ```blade
-<!-- Edit form â†’ PUT request -->
+<!-- Edit form → PUT request -->
 <form method="POST" action="{{ route('posts.update', $post) }}">
     @csrf
     @method('PUT')
@@ -1453,7 +1453,7 @@ Sitemap: https://example.com/sitemap.xml
     <button type="submit">Update Post</button>
 </form>
 
-<!-- Delete form â†’ DELETE request -->
+<!-- Delete form → DELETE request -->
 <form method="POST" action="{{ route('posts.destroy', $post) }}">
     @csrf
     @method('DELETE')
@@ -1715,14 +1715,14 @@ class Alert extends Component
 
 ### Q70: How do you render safe HTML content and prevent XSS in Blade?
 
-**Answer:** By default, Blade uses `{{ $var }}` which escapes all output via `htmlspecialchars()` â†’ this prevents XSS. To render trusted HTML (e.g., from a WYSIWYG editor), use `{!! $var !!}` (unescaped output). Always sanitize HTML before storing, and never use `{!! !!}` on user input without purification. Use `Str::markdown()` or HTML Purifier for safe rendering.
+**Answer:** By default, Blade uses `{{ $var }}` which escapes all output via `htmlspecialchars()` → this prevents XSS. To render trusted HTML (e.g., from a WYSIWYG editor), use `{!! $var !!}` (unescaped output). Always sanitize HTML before storing, and never use `{!! !!}` on user input without purification. Use `Str::markdown()` or HTML Purifier for safe rendering.
 
 ```blade
 {{-- Safe: automatically escaped --}}
 <p>{{ $user->bio }}</p>
 {{-- If bio contains <script>alert('xss')</script>, it renders as text --}}
 
-{{-- Unsafe: renders raw HTML â†’ use carefully --}}
+{{-- Unsafe: renders raw HTML → use carefully --}}
 <article class="post-body">
     {!! $post->body !!}
 </article>

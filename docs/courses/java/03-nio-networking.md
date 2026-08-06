@@ -1,4 +1,4 @@
-﻿# Java NIO & Networking
+# Java NIO & Networking
 
 > **Previous:** [Multithreading & Concurrency](./02-concurrency.md) | **Next:** [Java Modules & Packaging](./04-jpms-packaging.md)
 
@@ -86,9 +86,9 @@ Java NIO (New I/O, introduced in Java 1.4 and enhanced in Java 7 as NIO.2) provi
 
 NIO is built on three core abstractions:
 
-- **Buffers** â†’ containers for data
-- **Channels** â†’ connections to I/O sources/sinks
-- **Selectors** â†’ multiplexers for non-blocking channels
+- **Buffers** → containers for data
+- **Channels** → connections to I/O sources/sinks
+- **Selectors** → multiplexers for non-blocking channels
 
 ---
 
@@ -278,8 +278,8 @@ public class BufferOperations {
 ### 2.4 Direct vs. Heap Buffers
 
 
-- **Heap buffers** (`ByteBuffer.allocate(cap)`) â†’ allocated on the JVM heap, subject to GC, may involve an extra copy during I/O operations.
-- **Direct buffers** (`ByteBuffer.allocateDirect(cap)`) â†’ allocated outside the JVM heap, used directly by native I/O operations, avoiding intermediate copies. Allocation and deallocation are more expensive, so they should be reused.
+- **Heap buffers** (`ByteBuffer.allocate(cap)`) → allocated on the JVM heap, subject to GC, may involve an extra copy during I/O operations.
+- **Direct buffers** (`ByteBuffer.allocateDirect(cap)`) → allocated outside the JVM heap, used directly by native I/O operations, avoiding intermediate copies. Allocation and deallocation are more expensive, so they should be reused.
 
 ```java
 package chapter3;
@@ -395,15 +395,15 @@ A `Channel` represents an open connection to an I/O source or sink. Channels are
 
 ```
 Channel (interface)
-â”œâ”€â”€ ReadableByteChannel
-â”‚   â””â”€â”€ ScatteringByteChannel
-â”œâ”€â”€ WritableByteChannel
-â”‚   â””â”€â”€ GatheringByteChannel
-â”œâ”€â”€ InterruptibleChannel
-â”œâ”€â”€ FileChannel
-â”œâ”€â”€ SocketChannel
-â”œâ”€â”€ ServerSocketChannel
-â””â”€â”€ DatagramChannel
+├── ReadableByteChannel
+│   └── ScatteringByteChannel
+├── WritableByteChannel
+│   └── GatheringByteChannel
+├── InterruptibleChannel
+├── FileChannel
+├── SocketChannel
+├── ServerSocketChannel
+└── DatagramChannel
 ```
 
 ### 3.2 FileChannel
@@ -500,7 +500,7 @@ public class FileChannelPosition {
             ch.truncate(8);
             System.out.println("Size after truncate(8): " + ch.size());
 
-            // Force (fsync) â†’ flush to disk
+            // Force (fsync) → flush to disk
             ch.force(true);
             System.out.println("Forced to disk");
 
@@ -681,7 +681,7 @@ public class MemoryMappedFile {
             System.out.println("File size: " + Files.size(path));
         }
 
-        // --- MapMode.READ_WRITE (private â†’ copy-on-write) ---
+        // --- MapMode.READ_WRITE (private → copy-on-write) ---
         try (RandomAccessFile file = new RandomAccessFile(path.toFile(), "rw");
              FileChannel channel = file.getChannel()) {
 
@@ -865,7 +865,7 @@ public class NonBlockingEchoServer {
                 // Block until at least one channel is ready (or timeout)
                 int readyChannels = selector.select(5000);
 
-                // Demonstrate selectNow() â†’ non-blocking variant
+                // Demonstrate selectNow() → non-blocking variant
                 // int readyChannels = selector.selectNow();
 
                 // Demonstrate select(timeout) with 5s timeout
@@ -955,11 +955,11 @@ public class NonBlockingEchoServer {
         clientChannel.write(buffer);
 
         if (buffer.hasRemaining()) {
-            // Incomplete write â†’ remain in WRITE mode
+            // Incomplete write → remain in WRITE mode
             return;
         }
 
-        // All done â†’ switch back to READ mode
+        // All done → switch back to READ mode
         buffer.clear();
         key.interestOps(SelectionKey.OP_READ);
     }
@@ -2452,7 +2452,7 @@ import java.nio.file.attribute.*;
 
 /**
  * Demonstrates POSIX file attributes (Linux/macOS only).
- * Will fail on Windows â†’ demonstrates conditional support.
+ * Will fail on Windows → demonstrates conditional support.
  */
 public class PosixAttributesDemo {
 
@@ -3041,7 +3041,7 @@ public class Exercise8 {
         // TODO: Implement async file copy with CompletionHandler
         // 1. Open AsynchronousFileChannel for source (READ)
         // 2. Open AsynchronousFileChannel for dest (WRITE, CREATE)
-        // 3. Use a CompletionHandler to chain read â†’ write â†’ read
+        // 3. Use a CompletionHandler to chain read → write → read
         // 4. When complete, verify files are identical
         // 5. Print elapsed time
     }

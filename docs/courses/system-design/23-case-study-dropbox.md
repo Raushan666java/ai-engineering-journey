@@ -1,4 +1,4 @@
-﻿# Chapter 23: Case Study â€” Dropbox and File Storage
+# Chapter 23: Case Study — Dropbox and File Storage
 > **Previous:** [22 Case Study Twitter](./22-case-study-twitter.md) | **Next:** [24 Interview Preparation](./24-interview-preparation.md)
 
 ---
@@ -81,13 +81,13 @@ flowchart LR
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
-Dropbox serves over 700 million users storing more than 500 billion files across Windows, macOS, Linux, iOS, Android, and the web. The core promise is simple: a file saved on one device appears on all others within seconds. Behind this simplicity lies one of the most complex engineering challenges in distributed systems â€” synchronizing billions of file changes across heterogeneous devices with unreliable network connections, limited battery life, and widely varying storage capacities.
+Dropbox serves over 700 million users storing more than 500 billion files across Windows, macOS, Linux, iOS, Android, and the web. The core promise is simple: a file saved on one device appears on all others within seconds. Behind this simplicity lies one of the most complex engineering challenges in distributed systems — synchronizing billions of file changes across heterogeneous devices with unreliable network connections, limited battery life, and widely varying storage capacities.
 
-The requirements are deceptively demanding. Conflict detection for small files must complete within 100 milliseconds â€” the user should not see a sync conflict icon persist after saving a file. Sync must work across platforms with fundamentally different file system event notification APIs: Windows uses ReadDirectoryChangesW, macOS uses FSEvents, and Linux uses inotify. The system must handle files up to hundreds of gigabytes (CAD files, video projects, database dumps) while also optimizing for the common case of small text documents and photos.
+The requirements are deceptively demanding. Conflict detection for small files must complete within 100 milliseconds — the user should not see a sync conflict icon persist after saving a file. Sync must work across platforms with fundamentally different file system event notification APIs: Windows uses ReadDirectoryChangesW, macOS uses FSEvents, and Linux uses inotify. The system must handle files up to hundreds of gigabytes (CAD files, video projects, database dumps) while also optimizing for the common case of small text documents and photos.
 
 Non-functional requirements include strong read-after-write consistency within a single user's namespace (if I save a file on my laptop and open it on my phone 10 seconds later, I must see the latest version), bi-directional sync that converges to the same state on all devices, and graceful handling of offline periods lasting days or weeks. For business users, the system must support team folders with shared ownership, granular permissions, and audit logging.
 
-The scale is staggering. Users store over 500 billion files. The average user stores 10,000 files across 500 folders. The total data stored exceeds 10 exabytes (10 million terabytes). On the desktop client alone, the file watcher must track changes to millions of files without consuming more than 5% of CPU or 200MB of memory â€” the client cannot degrade the user's computing experience. The mobile app must handle photo uploads from the camera roll, selective sync (choose which folders to sync to mobile), and offline access with local caching. The web client must serve file previews for 100+ file types, including Office documents, PDFs, videos, and RAW photos â€” all within a browser tab.
+The scale is staggering. Users store over 500 billion files. The average user stores 10,000 files across 500 folders. The total data stored exceeds 10 exabytes (10 million terabytes). On the desktop client alone, the file watcher must track changes to millions of files without consuming more than 5% of CPU or 200MB of memory — the client cannot degrade the user's computing experience. The mobile app must handle photo uploads from the camera roll, selective sync (choose which folders to sync to mobile), and offline access with local caching. The web client must serve file previews for 100+ file types, including Office documents, PDFs, videos, and RAW photos — all within a browser tab.
 
 ### Phase 2: Client Architecture
 
@@ -108,7 +108,7 @@ The file watcher monitors the Dropbox folder for changes. On each platform, it u
 
 The file watcher must handle several edge cases:
 - **Rapid successive saves**: An application may save a file dozens of times per second (auto-save in IDEs, Excel auto-recovery). The watcher debounces events with a 200ms coalescing window.
-- **Atomic moves**: When an application saves a file by writing to a temp file and renaming, the watcher sees a delete event followed by a create event â€” it must recognize this as a modification, not a delete-and-recreate.
+- **Atomic moves**: When an application saves a file by writing to a temp file and renaming, the watcher sees a delete event followed by a create event — it must recognize this as a modification, not a delete-and-recreate.
 - **Symlinks**: On macOS and Linux, symlinks within the Dropbox folder are followed; symlinks pointing outside are ignored (to avoid syncing system files).
 
 **Indexing Engine**
@@ -164,7 +164,7 @@ Implementation differs by platform:
 - **Windows**: Uses the `CfApi` (Cloud Files API) introduced in Windows 10. The client registers sync root IDs and uses `CfCreatePlaceholders`, `CfGetPlaceholderInfo`, and `CfHydratePlaceholder` for the same functionality.
 - **Linux**: Selective sync is supported but Smart Sync is not available due to the lack of a standardized cloud files API in the Linux kernel.
 
-Smart Sync dramatically reduces local storage requirements. An enterprise user with a team folder containing 500GB of files might only store 5GB locally â€” the files they actually use â€” while seeing all 500GB in their file system.
+Smart Sync dramatically reduces local storage requirements. An enterprise user with a team folder containing 500GB of files might only store 5GB locally — the files they actually use — while seeing all 500GB in their file system.
 
 ### Phase 3: Sync Protocol and Block-Level Transfer
 
@@ -191,7 +191,7 @@ The savings are dramatic. For a 100MB presentation where one slide image is repl
 Dropbox uses content-defined chunking with a rolling hash based on Rabin fingerprinting. Unlike fixed-size block boundaries (which shift every time a byte is inserted or deleted near a boundary), CDC determines block boundaries based on the content itself.
 
 The Rabin fingerprint is a polynomial hash computed over a sliding window of bytes. When the fingerprint modulo a target value hits zero, a block boundary is declared. This means:
-- Inserting or deleting bytes in the middle of a file only affects the local block boundary â€” most block boundaries remain stable.
+- Inserting or deleting bytes in the middle of a file only affects the local block boundary — most block boundaries remain stable.
 - The same content chunk in different files produces the same block hash, enabling cross-file deduplication.
 - The average block size is configurable (Dropbox uses ~4MB), but blocks can be as small as 512KB or as large as 16MB.
 
@@ -203,7 +203,7 @@ At the server side, Dropbox stores each unique block exactly once. The block is 
 file_block_list = ["hash1", "hash2", "hash3", ...]
 ```
 
-When the server receives a block upload, it checks if a block with that hash already exists. If yes, the block is not stored again â€” the file's block list simply references the existing block. This provides:
+When the server receives a block upload, it checks if a block with that hash already exists. If yes, the block is not stored again — the file's block list simply references the existing block. This provides:
 
 - **Block-level deduplication across files**: If 1 million users each have a copy of the same 100MB video file, the server stores it once (roughly 100MB) instead of 1 million times (100PB). Each user's block list references the same set of block hashes.
 - **Block-level deduplication across versions**: When a file is edited, only the changed blocks consume new storage space.
@@ -240,7 +240,7 @@ The metadata store must be highly available. Write operations go to the MySQL ma
 
 **Storage Architecture: From S3 to Magic Pocket**
 
-Dropbox initially stored all file blocks on Amazon S3. As the platform grew to hundreds of petabytes, the S3 bill became one of Dropbox's largest operational expenses. In 2015, Dropbox began migrating to Magic Pocket â€” a custom object storage system built from commodity hardware.
+Dropbox initially stored all file blocks on Amazon S3. As the platform grew to hundreds of petabytes, the S3 bill became one of Dropbox's largest operational expenses. In 2015, Dropbox began migrating to Magic Pocket — a custom object storage system built from commodity hardware.
 
 Magic Pocket's key design decisions:
 - **Commodity servers**: Standard x86 servers with directly attached hard drives (12-16 drives per server). No SAN, no NAS.
@@ -300,7 +300,7 @@ The mobile sync strategy is optimized for the most common mobile use case: photo
 
 For file access, the mobile client does not maintain a full local copy of the Dropbox folder. Instead, it keeps a lightweight index (file names, sizes, thumbnails) in the local SQLite database. Full file content is downloaded on demand when the user taps a file. Recently viewed files are cached locally; the cache is evicted using an LRU policy bounded by a configurable storage limit (default: 2GB on iOS, varies by Android device).
 
-Offline access is implemented through "favorites." When the user marks a file or folder as a favorite, the client downloads all content (files in the folder) to the local cache and marks it as "pinned" â€” exempt from LRU eviction. Pinned files are updated whenever the device has connectivity and the file changes on the server.
+Offline access is implemented through "favorites." When the user marks a file or folder as a favorite, the client downloads all content (files in the folder) to the local cache and marks it as "pinned" — exempt from LRU eviction. Pinned files are updated whenever the device has connectivity and the file changes on the server.
 
 **Web Client Architecture**
 
@@ -409,7 +409,7 @@ graph TB
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory / Case Study | Core topic covered in Chapter 23: Case Study â€” Dropbox and File Storage | Defined by specific measurable attributes |
+| Theory / Case Study | Core topic covered in Chapter 23: Case Study — Dropbox and File Storage | Defined by specific measurable attributes |
 
 ---
 
@@ -418,7 +418,7 @@ graph TB
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Fundamental concept for Chapter 23: Case Study â€” Dropbox and File Storage |
+| Theory / Case Study | Fundamental concept for Chapter 23: Case Study — Dropbox and File Storage |
 
 ---
 
@@ -1061,9 +1061,9 @@ graph TB
 
 ## Case Study: Large File Sync with Delta Optimization
 
-A video editor is working on a 50GB 4K video project stored in Dropbox. The editor makes a 200MB change â€” adding a 30-second title sequence at the beginning of the video. Under a naive sync strategy, the entire 50GB file would be re-uploaded. With Dropbox's content-defined chunking, only the blocks whose content changed are uploaded.
+A video editor is working on a 50GB 4K video project stored in Dropbox. The editor makes a 200MB change — adding a 30-second title sequence at the beginning of the video. Under a naive sync strategy, the entire 50GB file would be re-uploaded. With Dropbox's content-defined chunking, only the blocks whose content changed are uploaded.
 
-The file is split into ~12,500 blocks of 4MB average size using Rabin fingerprinting. When the title sequence is inserted at the beginning, the CDC algorithm detects that the block boundaries shift only for the first ~50 blocks (the region where content actually changed). The remaining 12,450 blocks have identical SHA-256 hashes and are skipped. The upload is 50 blocks Ã— 4MB = 200MB instead of 50GB â€” a 250x bandwidth savings.
+The file is split into ~12,500 blocks of 4MB average size using Rabin fingerprinting. When the title sequence is inserted at the beginning, the CDC algorithm detects that the block boundaries shift only for the first ~50 blocks (the region where content actually changed). The remaining 12,450 blocks have identical SHA-256 hashes and are skipped. The upload is 50 blocks × 4MB = 200MB instead of 50GB — a 250x bandwidth savings.
 
 The sync engine on the server side receives the 50 new blocks. The deduplication engine checks each block's SHA-256 against the global block store. Two of the blocks already exist (the title sequence template was used by another editor on the same team), so only 48 blocks require new storage allocation. The file's block list is updated atomically in the metadata store: the old block list (12,500 entries) is replaced with the new list (12,500 entries, of which 50 are different). The metadata store shard for this user records the write with a version number increment. Meanwhile, the version history service records the delta: change from version 3 to version 4, 200MB changed, with the description "Added title sequence."
 
@@ -1076,7 +1076,7 @@ Three team members edit a shared spreadsheet simultaneously:
 - Bob edits rows 51-100 on his laptop (offline for 2 hours)
 - Charlie renames the file from "Q4-Budget.xlsx" to "Q4-Budget-Final.xlsx" on his phone
 
-Alice's changes sync to the server immediately. Bob comes online 2 hours later. His edits were made to rows 51-100, which do not overlap with Alice's rows 1-50 changes. The sync engine detects that Bob's file has a different block list than the server version. The delta comparison shows that blocks 2-5 (containing rows 51-100) differ, while blocks 1 and 6+ are identical. The server accepts Bob's blocks 2-5 as the new canonical version since Bob's mtime is later than Alice's for those blocks. The merge is automatic â€” no conflict.
+Alice's changes sync to the server immediately. Bob comes online 2 hours later. His edits were made to rows 51-100, which do not overlap with Alice's rows 1-50 changes. The sync engine detects that Bob's file has a different block list than the server version. The delta comparison shows that blocks 2-5 (containing rows 51-100) differ, while blocks 1 and 6+ are identical. The server accepts Bob's blocks 2-5 as the new canonical version since Bob's mtime is later than Alice's for those blocks. The merge is automatic — no conflict.
 
 Charlie's rename creates a conflict: both Alice and Bob's clients see the file as "Q4-Budget.xlsx" (the original name), but the server received Charlie's rename to "Q4-Budget-Final.xlsx" while Bob's changes were being processed. The server detects the conflict because the parent directory entry was modified (rename) simultaneously with the file content. The conflict resolution creates a conflict copy: the renamed file "Q4-Budget-Final.xlsx" contains the latest content (Alice + Bob's merged changes), and the stale version is saved as "Q4-Budget.xlsx (Charlie's conflicted copy 2024-10-15)." The version history records all three changes as separate entries, allowing any collaborator to restore any previous version within the 30-day (free) or 180-day (paid) retention window.
 
@@ -1097,9 +1097,9 @@ Charlie's rename creates a conflict: both Alice and Bob's clients see the file a
 
 ### Review Questions
 
-<details><summary>Solution</summary>1. **Fixed-size block boundaries** shift when bytes are inserted or deleted (every subsequent block changes). **CDC** uses Rabin fingerprinting on a sliding window â€” block boundaries are determined by content hash modulo target value, so insertions/deletions only affect local boundaries. Essential for delta sync: editing a 1GB file near the beginning only changes 1-2 blocks instead of all blocks after the edit point.
+<details><summary>Solution</summary>1. **Fixed-size block boundaries** shift when bytes are inserted or deleted (every subsequent block changes). **CDC** uses Rabin fingerprinting on a sliding window — block boundaries are determined by content hash modulo target value, so insertions/deletions only affect local boundaries. Essential for delta sync: editing a 1GB file near the beginning only changes 1-2 blocks instead of all blocks after the edit point.
 
-2. **Local vs Remote**: if local changed but remote didn't â†’ upload. **Local vs Desired**: if desired state is remote version â†’ download. **Remote vs Desired**: if desired is local version â†’ upload. The engine continuously reconciles toward convergence.
+2. **Local vs Remote**: if local changed but remote didn't → upload. **Local vs Desired**: if desired state is remote version → download. **Remote vs Desired**: if desired is local version → upload. The engine continuously reconciles toward convergence.
 
 3. **Read-after-write** within a user namespace is handled by routing reads to the MySQL master for N seconds after a write by the same user. **Cross-region**: eventual consistency with async replication; version vectors detect staleness.
 
@@ -1112,13 +1112,13 @@ Charlie's rename creates a conflict: both Alice and Bob's clients see the file a
 
 ### Application Problems
 
-<details><summary>Solution</summary>1. **Deduplication Analysis**: Without dedup: 10,000 Ã— 2GB = 20TB. With dedup: 500MB (OS) + 200MB Ã— 5 (departments) + 1.3GB Ã— 10,000 (per-user) = 500MB + 1GB + 13TB â‰ˆ 13.0015TB. Dedup ratio: 20TB / 13TB â‰ˆ 1.54:1. Savings: 7TB Ã— $0.023/GB = $161/month Ã— 12 = $1,932/year.
+<details><summary>Solution</summary>1. **Deduplication Analysis**: Without dedup: 10,000 × 2GB = 20TB. With dedup: 500MB (OS) + 200MB × 5 (departments) + 1.3GB × 10,000 (per-user) = 500MB + 1GB + 13TB ≈ 13.0015TB. Dedup ratio: 20TB / 13TB ≈ 1.54:1. Savings: 7TB × $0.023/GB = $161/month × 12 = $1,932/year.
 
-2. **Conflict Resolution**: Use a page-level bitmap (100 bits for 100 pages) to track edited pages per editor. Non-overlapping bits â†’ auto-merge. Overlapping bits â†’ flag for manual review with diff view. Data structure: `Map<page_number, { editor_id, old_text, new_text, timestamp }>`. For paragraph move + edit: detect via content hash â€” same text in different position is a move, not a conflict. Rename conflict: use `(file_id, new_name, editor_id, timestamp)` with LWW.
+2. **Conflict Resolution**: Use a page-level bitmap (100 bits for 100 pages) to track edited pages per editor. Non-overlapping bits → auto-merge. Overlapping bits → flag for manual review with diff view. Data structure: `Map<page_number, { editor_id, old_text, new_text, timestamp }>`. For paragraph move + edit: detect via content hash — same text in different position is a move, not a conflict. Rename conflict: use `(file_id, new_name, editor_id, timestamp)` with LWW.
 
-3. **Bandwidth Optimization**: Priority score = 0.4 Ã— recency (days since modified) + 0.3 Ã— file_size_score + 0.2 Ã— access_frequency + 0.1 Ã— is_placeholder. On user open: immediately promote to priority queue head. Bandwidth: fair-share across 4 concurrent downloads with dynamic throttling based on measured throughput (target: 80% of measured bandwidth). WiFi: 4 concurrent. Cellular: 1 concurrent, only files < 50MB. Metered: pause non-critical sync, notify user.
+3. **Bandwidth Optimization**: Priority score = 0.4 × recency (days since modified) + 0.3 × file_size_score + 0.2 × access_frequency + 0.1 × is_placeholder. On user open: immediately promote to priority queue head. Bandwidth: fair-share across 4 concurrent downloads with dynamic throttling based on measured throughput (target: 80% of measured bandwidth). WiFi: 4 concurrent. Cellular: 1 concurrent, only files < 50MB. Metered: pause non-critical sync, notify user.
 
-4. **Capacity Planning**: (a) Raw capacity per server: 12 Ã— 12TB Ã— 70% = 100.8TB. Servers/year: 500PB / 100.8TB â‰ˆ 4,961. (b) Racks: 4,961 / 40 â‰ˆ 125. (c) Power: 4,961 Ã— (200 Ã— 0.2 + 350 Ã— 0.8) = 4,961 Ã— 320W = 1.59MW. Annual: 1.59MW Ã— 8760h = 13.9M kWh. (d) (12,8) = 1.5x usable-to-raw vs 3x replication = 3x. (e) Floor space: 125 Ã— 8 = 1,000 sq ft.
+4. **Capacity Planning**: (a) Raw capacity per server: 12 × 12TB × 70% = 100.8TB. Servers/year: 500PB / 100.8TB ≈ 4,961. (b) Racks: 4,961 / 40 ≈ 125. (c) Power: 4,961 × (200 × 0.2 + 350 × 0.8) = 4,961 × 320W = 1.59MW. Annual: 1.59MW × 8760h = 13.9M kWh. (d) (12,8) = 1.5x usable-to-raw vs 3x replication = 3x. (e) Floor space: 125 × 8 = 1,000 sq ft.
 </details>
 
 ### Challenge Problem
@@ -1126,11 +1126,11 @@ Charlie's rename creates a conflict: both Alice and Bob's clients see the file a
 <details><summary>Solution>
 **Exabyte-Scale Storage**
 
-**Data Placement**: Three-tier â€” Hot (daily access): home region, 2x replication. Warm (weekly): primary in home + secondary in paired region (US-East â†” EU-West, SE-Asia â†” NE-Asia, South America â†” Australia). Cold (rare): erasure coding (12,8) spanning 3 regions. Promotion: 3 accesses in 24h â†’ coldâ†’warm. 10 accesses in 24h â†’ warmâ†’hot. Demotion: 7 days no access â†’ hotâ†’warm. 30 days no access â†’ warmâ†’cold.
+**Data Placement**: Three-tier — Hot (daily access): home region, 2x replication. Warm (weekly): primary in home + secondary in paired region (US-East ↔ EU-West, SE-Asia ↔ NE-Asia, South America ↔ Australia). Cold (rare): erasure coding (12,8) spanning 3 regions. Promotion: 3 accesses in 24h → cold→warm. 10 accesses in 24h → warm→hot. Demotion: 7 days no access → hot→warm. 30 days no access → warm→cold.
 
 **Metadata Consistency**: Geographic partitioning with authoritative region per user. Reads from local replica; if version vector shows stale, forward to authoritative region. Writes go through authoritative region with async replication. Failure: Paxos-based election among 8 regions when authoritative region unreachable (RTO < 30s). Use Raft for leader election within a region.
 
 **Cross-Region Sharing**: Sharing updates only metadata (no block copy). Redirect on access via signed URL (1h TTL). Cache: if >5 accesses/week, async replicate blocks to requestor's region. Consistency: share permissions propagate within 1s via metadata replication.
 
-**Storage**: Raw: 50EB user data. Cold tier (80% = 40EB): 40EB Ã— 2.25 = 90EB. Warm/hot (20% = 10EB): 10EB Ã— 4 = 40EB. Total: 130EB raw. Servers: 130EB / 100TB = 1.3M. Racks: 32,500. Power: 1.3M Ã— 300W = 390MW.
+**Storage**: Raw: 50EB user data. Cold tier (80% = 40EB): 40EB × 2.25 = 90EB. Warm/hot (20% = 10EB): 10EB × 4 = 40EB. Total: 130EB raw. Servers: 130EB / 100TB = 1.3M. Racks: 32,500. Power: 1.3M × 300W = 390MW.
 </details>

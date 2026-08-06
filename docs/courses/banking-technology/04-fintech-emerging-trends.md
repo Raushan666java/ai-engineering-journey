@@ -1,4 +1,4 @@
-﻿# Chapter 04: Fintech and Emerging Trends
+# Chapter 04: Fintech and Emerging Trends
 
 ## Learning Objectives
 
@@ -24,7 +24,7 @@ By the end of this chapter, you will be able to:
 
 - Explain the Account Aggregator (AA) framework and its consent artefact mechanism
 - Understand Open Banking under NDHP (National Data Health Platform)
-- Describe the Digital Rupee (CBDC) architecture â€” token-based, dual offline, wholesale vs retail
+- Describe the Digital Rupee (CBDC) architecture — token-based, dual offline, wholesale vs retail
 - Analyze RegTech and SupTech developments including RBI's DAKSH platform
 - Compare neo bank architecture (Jupiter, Fi) with legacy banks
 - Understand lending tech (underwriting engines, credit scoring 2.0)
@@ -72,11 +72,11 @@ The framework was created by RBI under the Master Direction dated September 2, 2
 | **AA (Account Aggregator)** | Licensed data intermediary (NBFC) | Sahamati, Finvu, CAMS Finserv |
 | **FIP (Financial Information Provider)** | Holds user data (banks, MFs, insurers) | SBI, HDFC, ICICI, NSDL, CDSL |
 | **FIU (Financial Information User)** | Consumes data (lenders, wealth managers) | Banks, NBFCs, fintechs |
-| **Customer** | Data owner â€” controls consent | Individual user |
+| **Customer** | Data owner — controls consent | Individual user |
 
 #### 1.2 Consent Artefact
 
-The consent artefact is the core technical mechanism of the AA framework â€” a machine-readable JSON document specifying exactly what data can be shared, for how long, and with whom.
+The consent artefact is the core technical mechanism of the AA framework — a machine-readable JSON document specifying exactly what data can be shared, for how long, and with whom.
 
 **Consent Artefact Structure (JSON):**
 
@@ -119,7 +119,7 @@ The consent artefact is the core technical mechanism of the AA framework â€�
 
 | Parameter | Description |
 |-----------|-------------|
-| consentId | UUID v4 â€” unique identifier |
+| consentId | UUID v4 — unique identifier |
 | consentStart/End | Validity window for consent |
 | fetchType | ONETIME / PERIODIC |
 | fiTypes | Account types: DEPOSIT, EQUITY, MUTUAL_FUND, INSURANCE, etc. |
@@ -135,10 +135,10 @@ The consent artefact is the core technical mechanism of the AA framework â€�
 2. FIU requests data via AA
 3. AA generates consent artefact and presents to customer (mobile app)
 4. Customer reviews:
-   â”œâ”€â”€ Which data (accounts, transactions, balances)
-   â”œâ”€â”€ How long (30 days, 1 year)
-   â”œâ”€â”€ Purpose (loan underwriting)
-   â””â”€â”€ Data consumer (the lender)
+   ├── Which data (accounts, transactions, balances)
+   ├── How long (30 days, 1 year)
+   ├── Purpose (loan underwriting)
+   └── Data consumer (the lender)
 5. Customer provides Aadhaar OTP / net banking auth to approve
 6. Consent artefact is encrypted and stored at AA
 7. AA fetches data from FIPs using the consent
@@ -171,7 +171,7 @@ Open Banking is the practice of sharing financial data securely through APIs, wi
 +------------------+---------------------------+
 ```
 
-**Key Open Banking APIs (developed by ReBIT â€” Reserve Bank Information Technology):**
+**Key Open Banking APIs (developed by ReBIT — Reserve Bank Information Technology):**
 
 | API Category | Description | Standards |
 |-------------|-------------|-----------|
@@ -189,12 +189,12 @@ NDHP (also called **Account Aggregator Network**) is India's federated data-shar
 
 ```
 NDHP Components:
-â”œâ”€â”€ Identity Layer: Aadhaar-based consent authentication
-â”œâ”€â”€ Consent Layer: Digital consent artefacts (machine-readable)
-â”œâ”€â”€ Data Layer: Encrypted data exchange between FIP-FIU
-â”œâ”€â”€ Discovery Layer: Find accounts linked to a user
-â”œâ”€â”€ Monitoring Layer: Real-time consent tracking
-â””â”€â”€ Settlement Layer: Fee settlement between AAs, FIPs, FIUs
+├── Identity Layer: Aadhaar-based consent authentication
+├── Consent Layer: Digital consent artefacts (machine-readable)
+├── Data Layer: Encrypted data exchange between FIP-FIU
+├── Discovery Layer: Find accounts linked to a user
+├── Monitoring Layer: Real-time consent tracking
+└── Settlement Layer: Fee settlement between AAs, FIPs, FIUs
 ```
 
 **Current Status (2026):** NDHP has over 100 FIPs (including all major banks), 150+ FIUs, and 10+ licensed AAs. Over 5 crore consented accounts are live.
@@ -203,16 +203,16 @@ NDHP Components:
 
 #### 3.1 CBDC Overview
 
-Central Bank Digital Currency (CBDC) is a digital form of fiat currency issued by RBI. India's CBDC is called **Digital Rupee** or **e-Rupee** (eâ‚¹).
+Central Bank Digital Currency (CBDC) is a digital form of fiat currency issued by RBI. India's CBDC is called **Digital Rupee** or **e-Rupee** (e₹).
 
 **Two Versions:**
 
 | Type | Symbol | Target | Purpose |
 |------|--------|--------|---------|
-| eâ‚¹-W (Wholesale) | eâ‚¹-W | Interbank settlement | Settlement of secondary market transactions in government securities |
-| eâ‚¹-R (Retail) | eâ‚¹-R | General public | Retail transactions, person-to-person, person-to-merchant |
+| e₹-W (Wholesale) | e₹-W | Interbank settlement | Settlement of secondary market transactions in government securities |
+| e₹-R (Retail) | e₹-R | General public | Retail transactions, person-to-person, person-to-merchant |
 
-#### 3.2 CBDC Architecture â€” Token-Based Model
+#### 3.2 CBDC Architecture — Token-Based Model
 
 The Digital Rupee uses a token-based model (as opposed to the account-based model of traditional digital payments).
 
@@ -221,28 +221,28 @@ The Digital Rupee uses a token-based model (as opposed to the account-based mode
 ```
 Account-Based (Traditional Banking):
 Account X -> Debit -> Credit -> Account Y
-â”œâ”€â”€ Identity required to transact
-â”œâ”€â”€ Bank maintains ledger
-â””â”€â”€ Requires internet banking/mobile app
+├── Identity required to transact
+├── Bank maintains ledger
+└── Requires internet banking/mobile app
 
 Token-Based (CBDC):
-Token (eâ‚¹) -> Transfer -> Token (eâ‚¹)
-â”œâ”€â”€ Token is the money (digital bearer instrument)
-â”œâ”€â”€ No identity required for transfer
-â”œâ”€â”€ Peer-to-peer (offline capable)
-â””â”€â”€ Anonymity (for small values)
+Token (e₹) -> Transfer -> Token (e₹)
+├── Token is the money (digital bearer instrument)
+├── No identity required for transfer
+├── Peer-to-peer (offline capable)
+└── Anonymity (for small values)
 ```
 
 **CBDC Token Structure:**
 
 ```
-eâ‚¹ Token:
-â”œâ”€â”€ Token ID: UUID (unique, non-reusable)
-â”œâ”€â”€ Denomination: Rs. 10 / 50 / 100 / 200 / 500
-â”œâ”€â”€ Issuer: RBI (digital signature)
-â”œâ”€â”€ Serial Number: Issuer-specific
-â”œâ”€â”€ Issuance Timestamp: When token was minted
-â””â”€â”€ Status: UNSPENT / SPENT / CANCELLED
+e₹ Token:
+├── Token ID: UUID (unique, non-reusable)
+├── Denomination: Rs. 10 / 50 / 100 / 200 / 500
+├── Issuer: RBI (digital signature)
+├── Serial Number: Issuer-specific
+├── Issuance Timestamp: When token was minted
+└── Status: UNSPENT / SPENT / CANCELLED
 
 Digital Signature (RBI signs each token):
   Sign(SK_RBI, TokenID || Denom || Serial) = TokenSignature
@@ -283,7 +283,7 @@ Digital Signature (RBI signs each token):
 
 #### 3.4 Dual Offline CBDC
 
-A key feature of CBDC is the ability to transact without internet connectivity â€” using NFC or Bluetooth between two devices.
+A key feature of CBDC is the ability to transact without internet connectivity — using NFC or Bluetooth between two devices.
 
 **Dual Offline Technical Flow:**
 
@@ -291,15 +291,15 @@ A key feature of CBDC is the ability to transact without internet connectivity �
 1. Payer and Payee are both offline (no internet)
 2. Payer app sends token to Payee app via NFC/Bluetooth
 3. Payee app verifies:
-   â”œâ”€â”€ RBI digital signature on token (pre-verified)
-   â”œâ”€â”€ Token not in local spent cache
-   â””â”€â”€ Amount matches
+   ├── RBI digital signature on token (pre-verified)
+   ├── Token not in local spent cache
+   └── Amount matches
 4. Payee app stores token locally
 5. When connectivity is restored:
-   â”œâ”€â”€ Payee app syncs token to bank server
-   â”œâ”€â”€ Bank validates token against RBI
-   â”œâ”€â”€ RBI marks token as SPENT
-   â””â”€â”€ Payee account credited (or token re-issued)
+   ├── Payee app syncs token to bank server
+   ├── Bank validates token against RBI
+   ├── RBI marks token as SPENT
+   └── Payee account credited (or token re-issued)
 ```
 
 **Offline Limits (RBI proposed):**
@@ -309,7 +309,7 @@ A key feature of CBDC is the ability to transact without internet connectivity �
 
 #### 3.5 CBDC Comparison with UPI
 
-| Feature | CBDC (eâ‚¹) | UPI |
+| Feature | CBDC (e₹) | UPI |
 |---------|-----------|-----|
 | Issuer | RBI (central bank liability) | NPCI (payment system) |
 | Settlement | Final (like cash) | Final after clearing |
@@ -350,10 +350,10 @@ RegTech uses technology to manage regulatory compliance processes efficiently.
 |                RegTech Platform                        |
 |  +--------------------------------------------------+  |
 |  | Rule Engine (Business rules + ML models)         |  |
-|  | â”œâ”€â”€ AML Rules (PEP, Sanctions, High-risk)        |  |
-|  | â”œâ”€â”€ Fraud Rules (velocity, device, geo)          |  |
-|  | â”œâ”€â”€ KYC Rules (document expiry, risk category)    |  |
-|  | â””â”€â”€ Regulatory Rules (CRAR, LCR, NSFR)           |  |
+|  | ├── AML Rules (PEP, Sanctions, High-risk)        |  |
+|  | ├── Fraud Rules (velocity, device, geo)          |  |
+|  | ├── KYC Rules (document expiry, risk category)    |  |
+|  | └── Regulatory Rules (CRAR, LCR, NSFR)           |  |
 |  +--------------------------------------------------+  |
 |  | Reporting Engine (XBRL/PDF/CSV)                   |  |
 +-------+-------------------+---------------------------+
@@ -374,23 +374,23 @@ DAKSH (Data Analytics, Knowledge, and Supervision Hub) is RBI's SupTech platform
 
 ```
 DAKSH Modules:
-â”œâ”€â”€ Data Aggregation: Automated collection from banks via API
-â”‚   â”œâ”€â”€ XBRL-based statutory returns
-â”‚   â”œâ”€â”€ CBS data extracts (daily)
-â”‚   â””â”€â”€ Real-time transaction monitoring
-â”œâ”€â”€ Analytics Engine:
-â”‚   â”œâ”€â”€ Anomaly detection (AI/ML)
-â”‚   â”œâ”€â”€ Peer comparison analytics
-â”‚   â”œâ”€â”€ Off-site surveillance (OSS)
-â”‚   â””â”€â”€ Trend analysis (NPA, capital, liquidity)
-â”œâ”€â”€ Visualization Dashboards:
-â”‚   â”œâ”€â”€ Financial health indicators
-â”‚   â”œâ”€â”€ Cybersecurity posture (color-coded)
-â”‚   â””â”€â”€ Compliance status tracking
-â””â”€â”€ Reporting:
-    â”œâ”€â”€ Automated inspection reports
-    â”œâ”€â”€ Risk assessment reports (RAR)
-    â””â”€â”€ Financial stability reports
+├── Data Aggregation: Automated collection from banks via API
+│   ├── XBRL-based statutory returns
+│   ├── CBS data extracts (daily)
+│   └── Real-time transaction monitoring
+├── Analytics Engine:
+│   ├── Anomaly detection (AI/ML)
+│   ├── Peer comparison analytics
+│   ├── Off-site surveillance (OSS)
+│   └── Trend analysis (NPA, capital, liquidity)
+├── Visualization Dashboards:
+│   ├── Financial health indicators
+│   ├── Cybersecurity posture (color-coded)
+│   └── Compliance status tracking
+└── Reporting:
+    ├── Automated inspection reports
+    ├── Risk assessment reports (RAR)
+    └── Financial stability reports
 ```
 
 **Other RBI SupTech Initiatives:**
@@ -487,16 +487,16 @@ Neo Bank Architecture (Microservices):
 
 ```
 Fi Tech Stack (Representative):
-â”œâ”€â”€ Frontend: React Native (iOS + Android)
-â”œâ”€â”€ Backend: Go microservices on Kubernetes
-â”œâ”€â”€ Database: PostgreSQL (sharded by customer_id)
-â”œâ”€â”€ Queue: Apache Kafka for event streaming
-â”œâ”€â”€ Cache: Redis for session + rate limiting
-â”œâ”€â”€ Partner Integration: Federal Bank CBS (Finacle) via APIs
-â”œâ”€â”€ AA Integration: For account aggregation
-â”œâ”€â”€ UPI: NPCI UPI APIs through partner bank
-â”œâ”€â”€ Security: Aadhaar e-KYC, device binding, biometric auth
-â””â”€â”€ Analytics: Apache Spark, Redshift for real-time analytics
+├── Frontend: React Native (iOS + Android)
+├── Backend: Go microservices on Kubernetes
+├── Database: PostgreSQL (sharded by customer_id)
+├── Queue: Apache Kafka for event streaming
+├── Cache: Redis for session + rate limiting
+├── Partner Integration: Federal Bank CBS (Finacle) via APIs
+├── AA Integration: For account aggregation
+├── UPI: NPCI UPI APIs through partner bank
+├── Security: Aadhaar e-KYC, device binding, biometric auth
+└── Analytics: Apache Spark, Redshift for real-time analytics
 ```
 
 ### 6. Lending Technology
@@ -509,29 +509,29 @@ Modern lending tech replaces manual underwriting with automated decision engines
 
 ```
 Data Inputs:
-â”œâ”€â”€ Credit Bureau: CIBIL/Experian/Equifax (credit score + history)
-â”œâ”€â”€ Bank Statements: via AA (6-12 months)
-â”œâ”€â”€ Income Proof: Salary slips, IT returns (OCR + AI validation)
-â”œâ”€â”€ GST Data: GST returns (for businesses)
-â”œâ”€â”€ Demographic Data: Age, location, occupation
-â”œâ”€â”€ Digital Footprint: e-commerce data, social media (optional)
-â”œâ”€â”€ Device Data: Device fingerprint, location consistency
-â””â”€â”€ Employment Data: Employment verification APIs
+├── Credit Bureau: CIBIL/Experian/Equifax (credit score + history)
+├── Bank Statements: via AA (6-12 months)
+├── Income Proof: Salary slips, IT returns (OCR + AI validation)
+├── GST Data: GST returns (for businesses)
+├── Demographic Data: Age, location, occupation
+├── Digital Footprint: e-commerce data, social media (optional)
+├── Device Data: Device fingerprint, location consistency
+└── Employment Data: Employment verification APIs
 
 Underwriting Engine (Rules + ML):
-â”œâ”€â”€ Rule Engine: Pre-qualification rules (age, bureau score min)
-â”œâ”€â”€ ML Score: Custom credit scoring model
-â”‚   â”œâ”€â”€ XGBoost / LightGBM on 500+ features
-â”‚   â”œâ”€â”€ Model trained on historical repayment data
-â”‚   â””â”€â”€ Output: Probability of Default (PD)
-â”œâ”€â”€ Affordability Calculator: DTI (Debt-to-Income) ratio
-â”œâ”€â”€ Fraud Detection: ML-based anomaly detection
-â””â”€â”€ Policy Engine: Risk segment -> product/rate offered
+├── Rule Engine: Pre-qualification rules (age, bureau score min)
+├── ML Score: Custom credit scoring model
+│   ├── XGBoost / LightGBM on 500+ features
+│   ├── Model trained on historical repayment data
+│   └── Output: Probability of Default (PD)
+├── Affordability Calculator: DTI (Debt-to-Income) ratio
+├── Fraud Detection: ML-based anomaly detection
+└── Policy Engine: Risk segment -> product/rate offered
 
 Output:
-â”œâ”€â”€ Approved: Loan amount, interest rate, tenure
-â”œâ”€â”€ Referred: Manual underwriting review
-â””â”€â”€ Rejected: Decline reason (mandatory)
+├── Approved: Loan amount, interest rate, tenure
+├── Referred: Manual underwriting review
+└── Rejected: Decline reason (mandatory)
 ```
 
 #### 6.2 Credit Scoring 2.0
@@ -542,34 +542,34 @@ Traditional credit scoring (CIBIL 300-900) relies on credit history. Credit Scor
 
 ```
 Traditional Credit Score:
-â”œâ”€â”€ Factors: Payment history (35%), Credit utilization (30%),
-â”‚            Credit age (15%), Credit mix (10%), New inquiries (10%)
-â”œâ”€â”€ Coverage: ~40% of Indian adults (with formal credit history)
-â””â”€â”€ Limitations: Excludes new-to-credit, gig workers, rural
+├── Factors: Payment history (35%), Credit utilization (30%),
+│            Credit age (15%), Credit mix (10%), New inquiries (10%)
+├── Coverage: ~40% of Indian adults (with formal credit history)
+└── Limitations: Excludes new-to-credit, gig workers, rural
 
 Alternative Credit Score (2.0):
-â”œâ”€â”€ Data Sources:
-â”‚   â”œâ”€â”€ UPI transaction history
-â”‚   â”œâ”€â”€ Recharge and bill payment patterns
-â”‚   â”œâ”€â”€ GST data (business cash flows)
-â”‚   â”œâ”€â”€ E-commerce purchase patterns
-â”‚   â”œâ”€â”€ Telecom data (bill payment, recharge regularity)
-â”‚   â””â”€â”€ Social media signals (optional, consent-based)
-â”œâ”€â”€ Coverage: ~80% of Indian adults
-â””â”€â”€ Example: Experian Boost, OneScore
+├── Data Sources:
+│   ├── UPI transaction history
+│   ├── Recharge and bill payment patterns
+│   ├── GST data (business cash flows)
+│   ├── E-commerce purchase patterns
+│   ├── Telecom data (bill payment, recharge regularity)
+│   └── Social media signals (optional, consent-based)
+├── Coverage: ~80% of Indian adults
+└── Example: Experian Boost, OneScore
 ```
 
 **Alternative Scoring Model (Example):**
 
 ```
 Feature Engineering for UPI-based Score:
-â”œâ”€â”€ Transaction volume (monthly average)
-â”œâ”€â”€ Income inflow patterns (regular salary credits)
-â”œâ”€â”€ Expense categories (% on food, travel, utilities)
-â”œâ”€â”€ Savings behaviour (periodic transfers to FD/savings)
-â”œâ”€â”€ Repayment behaviour (SIPs, insurance premiums paid on time)
-â”œâ”€â”€ Transaction velocity (high velocity = potential stress)
-â””â”€â”€ Peer group comparison (similar demographics)
+├── Transaction volume (monthly average)
+├── Income inflow patterns (regular salary credits)
+├── Expense categories (% on food, travel, utilities)
+├── Savings behaviour (periodic transfers to FD/savings)
+├── Repayment behaviour (SIPs, insurance premiums paid on time)
+├── Transaction velocity (high velocity = potential stress)
+└── Peer group comparison (similar demographics)
 ```
 
 ### 7. Blockchain in Trade Finance
@@ -580,18 +580,18 @@ Trade finance involves multiple parties (importer, exporter, banks, customs, shi
 
 ```
 Traditional Trade Finance:
-â”œâ”€â”€ Paper: 20+ documents for a single transaction
-â”œâ”€â”€ Time: 5-10 days for document processing
-â”œâ”€â”€ Fraud: Invoice fraud, double financing
-â”œâ”€â”€ Cost: 3-5% of transaction value
-â””â”€â”€ Participants: Disconnected systems
+├── Paper: 20+ documents for a single transaction
+├── Time: 5-10 days for document processing
+├── Fraud: Invoice fraud, double financing
+├── Cost: 3-5% of transaction value
+└── Participants: Disconnected systems
 
 Blockchain Trade Finance:
-â”œâ”€â”€ Digital: Smart contracts for LC (Letter of Credit)
-â”œâ”€â”€ Time: Minutes to hours
-â”œâ”€â”€ Trust: Immutable record, fraud-resistant
-â”œâ”€â”€ Cost: &lt; 1% of transaction value
-â””â”€â”€ Participants: Shared ledger, real-time updates
+├── Digital: Smart contracts for LC (Letter of Credit)
+├── Time: Minutes to hours
+├── Trust: Immutable record, fraud-resistant
+├── Cost: &lt; 1% of transaction value
+└── Participants: Shared ledger, real-time updates
 ```
 
 #### 7.2 How Blockchain Trade Finance Works
@@ -599,24 +599,24 @@ Blockchain Trade Finance:
 ```
 1. Exporter and Importer agree on terms
 2. Smart contract created on blockchain:
-   â”œâ”€â”€ LC terms (amount, shipping date, quality specs)
-   â”œâ”€â”€ Conditional: Payment released on proof of shipment
-   â””â”€â”€ Multi-signature: Requires bank + customs + shipping approval
+   ├── LC terms (amount, shipping date, quality specs)
+   ├── Conditional: Payment released on proof of shipment
+   └── Multi-signature: Requires bank + customs + shipping approval
 
 3. Importer's Bank issues LC on blockchain
-   â””â”€â”€ Smart contract records LC as a digital asset
+   └── Smart contract records LC as a digital asset
 
 4. Exporter ships goods
-   â”œâ”€â”€ Shipping company records Bill of Lading on blockchain
-   â””â”€â”€ GPS tracking data fed into smart contract
+   ├── Shipping company records Bill of Lading on blockchain
+   └── GPS tracking data fed into smart contract
 
 5. Customs verification
-   â””â”€â”€ Customs officer digitally signs on blockchain
+   └── Customs officer digitally signs on blockchain
 
 6. Automatic Payment Release
-   â”œâ”€â”€ Smart contract verifies all conditions met
-   â”œâ”€â”€ Payment released from Importer's bank to Exporter's bank
-   â””â”€â”€ All parties have immutable audit trail
+   ├── Smart contract verifies all conditions met
+   ├── Payment released from Importer's bank to Exporter's bank
+   └── All parties have immutable audit trail
 ```
 
 **Blockchain Platforms Used by Indian Banks:**
@@ -632,7 +632,7 @@ Blockchain Trade Finance:
 
 #### 8.1 Cardless Cash Withdrawal via UPI
 
-RBI and NPCI have enabled UPI-based ATM withdrawals â€” customers can withdraw cash without a physical debit card.
+RBI and NPCI have enabled UPI-based ATM withdrawals — customers can withdraw cash without a physical debit card.
 
 **Technical Flow:**
 
@@ -643,9 +643,9 @@ RBI and NPCI have enabled UPI-based ATM withdrawals â€” customers can withd
 4. UPI app validates ATM location, amount
 5. Customer enters UPI PIN
 6. Transaction flows:
-   â”œâ”€â”€ UPI App -> PSP -> NPCI UPI -> Issuer Bank
-   â”œâ”€â”€ Issuer bank debits savings account
-   â””â”€â”€ UPI Ref No generated
+   ├── UPI App -> PSP -> NPCI UPI -> Issuer Bank
+   ├── Issuer bank debits savings account
+   └── UPI Ref No generated
 7. ATM receives approval signal
 8. ATM dispenses cash
 9. Customer gets UPI confirmation on phone
@@ -672,7 +672,7 @@ RBI and NPCI have enabled UPI-based ATM withdrawals â€” customers can withd
 
 #### 9.1 Overview
 
-3D Secure 2.0 (3DS 2.0) is the latest version of the authentication protocol for card-not-present (CNP) transactions â€” online payments.
+3D Secure 2.0 (3DS 2.0) is the latest version of the authentication protocol for card-not-present (CNP) transactions — online payments.
 
 **3DS 1.0 vs 2.0:**
 
@@ -690,21 +690,21 @@ RBI and NPCI have enabled UPI-based ATM withdrawals â€” customers can withd
 
 ```
 3DS Server collects 150+ data points:
-â”œâ”€â”€ Cardholder Account Info
-â”‚   â”œâ”€â”€ Account age, password changes, transaction history
-â”‚   â””â”€â”€ Device registration date
-â”œâ”€â”€ Device Info
-â”‚   â”œâ”€â”€ Device fingerprint (screen, OS, browser)
-â”‚   â”œâ”€â”€ IP address, geolocation
-â”‚   â””â”€â”€ Device language, timezone
-â”œâ”€â”€ Transaction Info
-â”‚   â”œâ”€â”€ Amount, currency, merchant category
-â”‚   â”œâ”€â”€ Shipping address match
-â”‚   â””â”€â”€ Items in cart (digital/physical)
-â””â”€â”€ Behavioral Biometrics
-    â”œâ”€â”€ Typing speed
-    â”œâ”€â”€ Mouse movement patterns
-    â””â”€â”€ Touch pressure (mobile)
+├── Cardholder Account Info
+│   ├── Account age, password changes, transaction history
+│   └── Device registration date
+├── Device Info
+│   ├── Device fingerprint (screen, OS, browser)
+│   ├── IP address, geolocation
+│   └── Device language, timezone
+├── Transaction Info
+│   ├── Amount, currency, merchant category
+│   ├── Shipping address match
+│   └── Items in cart (digital/physical)
+└── Behavioral Biometrics
+    ├── Typing speed
+    ├── Mouse movement patterns
+    └── Touch pressure (mobile)
 ```
 
 **3DS 2.0 Flow (Frictionless):**
@@ -771,13 +771,13 @@ Internet of Things (IoT) in banking enables physical devices to interact with ba
 
 ```
 IoT Security Considerations:
-â”œâ”€â”€ Device Authentication: PKI certificates per device
-â”œâ”€â”€ Secure Boot: TPM (Trusted Platform Module) on gateways
-â”œâ”€â”€ Encrypted Communication: TLS / DTLS for all device traffic
-â”œâ”€â”€ Firmware Signing: Only signed firmware can be installed
-â”œâ”€â”€ Device Lifecycle: Decommission process for retired devices
-â”œâ”€â”€ Data Minimization: Only necessary data collected
-â””â”€â”€ Network Segmentation: IoT devices in separate VLAN
+├── Device Authentication: PKI certificates per device
+├── Secure Boot: TPM (Trusted Platform Module) on gateways
+├── Encrypted Communication: TLS / DTLS for all device traffic
+├── Firmware Signing: Only signed firmware can be installed
+├── Device Lifecycle: Decommission process for retired devices
+├── Data Minimization: Only necessary data collected
+└── Network Segmentation: IoT devices in separate VLAN
 ```
 
 ### 11. Architecture Diagrams
@@ -846,18 +846,18 @@ Account Aggregators (AAs) are RBI-licensed NBFCs that act as consent-based data 
 </details>
 
 **Example 2:**
-What is the key difference between wholesale (eâ‚¹-W) and retail (eâ‚¹-R) CBDC?
+What is the key difference between wholesale (e₹-W) and retail (e₹-R) CBDC?
 
-A) eâ‚¹-W uses blockchain, eâ‚¹-R uses centralized database
-B) eâ‚¹-W is for interbank settlement, eâ‚¹-R is for public transactions
-C) eâ‚¹-W has offline capability, eâ‚¹-R does not
-D) eâ‚¹-W is token-based, eâ‚¹-R is account-based
+A) e₹-W uses blockchain, e₹-R uses centralized database
+B) e₹-W is for interbank settlement, e₹-R is for public transactions
+C) e₹-W has offline capability, e₹-R does not
+D) e₹-W is token-based, e₹-R is account-based
 
 <details>
 <summary>Answer</summary>
-**Answer: B) eâ‚¹-W is for interbank settlement, eâ‚¹-R is for public transactions**
+**Answer: B) e₹-W is for interbank settlement, e₹-R is for public transactions**
 
-eâ‚¹-W (Wholesale) is used for interbank settlement of government securities. eâ‚¹-R (Retail) is for the general public. Both are token-based and both have offline capability in the roadmap.
+e₹-W (Wholesale) is used for interbank settlement of government securities. e₹-R (Retail) is for the general public. Both are token-based and both have offline capability in the roadmap.
 </details>
 
 **Example 3:**
@@ -887,7 +887,7 @@ D) Apache Thrift
 <summary>Answer</summary>
 **Answer: B) JSON (REST)**
 
-3DS 2.0 uses JSON (REST) messaging â€” a significant upgrade from 3DS 1.0's XML (SOAP). This enables faster, lighter-weight communication between merchant, ACS, and issuer.
+3DS 2.0 uses JSON (REST) messaging — a significant upgrade from 3DS 1.0's XML (SOAP). This enables faster, lighter-weight communication between merchant, ACS, and issuer.
 </details>
 
 **Example 5:**
@@ -1338,7 +1338,7 @@ neo.onboardCustomer('Ravi Kumar', 'ravi@email.com', '9876543210').then(async (cu
 });
 ```
 
-### 13. Architecture Diagrams â€” Additional
+### 13. Architecture Diagrams — Additional
 
 #### Account Aggregator Consent Flow with Encryption
 
@@ -1467,27 +1467,27 @@ flowchart LR
 
 #### 14.2 CBDC / e-Rupee Developments
 
-- **2024:** RBI expanded eâ‚¹-R pilot to 50+ cities with 15 banks. Daily transaction volume crossed 1 million. Interoperability with UPI QR codes launched â€” merchants can accept CBDC using existing UPI QR.
-- **2025:** eâ‚¹-W (Wholesale) used for clearing of government securities â€” reduced settlement time from T+1 to T+0. RBI proposed programmability features (CBDC for specific use cases like fertilizer subsidy, education).
+- **2024:** RBI expanded e₹-R pilot to 50+ cities with 15 banks. Daily transaction volume crossed 1 million. Interoperability with UPI QR codes launched — merchants can accept CBDC using existing UPI QR.
+- **2025:** e₹-W (Wholesale) used for clearing of government securities — reduced settlement time from T+1 to T+0. RBI proposed programmability features (CBDC for specific use cases like fertilizer subsidy, education).
 - **2026:** Full-scale CBDC rollout expected. Dual-offline feature launched in 10 cities (hill stations, remote areas). CBDC-UPI bridge enables seamless transfer between CBDC wallets and bank accounts. RBI considering limited anonymity up to Rs. 50,000.
 
 #### 14.3 Neo Bank and Fintech Developments
 
-- **2024:** Jupiter acquired 4 million+ customers. Fi reached 3 million users. Kotak 811 crossed 10 million digital accounts. RBI issued stricter norms for neo banks â€” mandatory physical presence for certain operations.
+- **2024:** Jupiter acquired 4 million+ customers. Fi reached 3 million users. Kotak 811 crossed 10 million digital accounts. RBI issued stricter norms for neo banks — mandatory physical presence for certain operations.
 - **2025:** Open (RazorpayX) launched full-stack business banking (current accounts, credit cards, working capital). Niyo launched global accounts for students/workers. Fintech funding recovered after 2023 winter.
 - **2026:** Neo banks pivoted to profitability focus. Jupiter turned EBITDA positive. New BaaS entrants (Setu, Decentro) enabling smaller fintechs. RBI introduced "Digital Banking Unit" license framework for fully digital banks.
 
 #### 14.4 OCEN (Open Credit Enablement Network)
 
 - **2024:** OCEN v4.0 launched with standard APIs for credit product discovery, application, underwriting, and disbursement. 50+ lenders and 100+ LSPs live.
-- **2025:** OCEN integrated with AA framework â€” lenders get real-time financial data for underwriting. First OCEN-based micro-credit products launched (Rs. 10,000-50,000 loans in under 5 minutes).
+- **2025:** OCEN integrated with AA framework — lenders get real-time financial data for underwriting. First OCEN-based micro-credit products launched (Rs. 10,000-50,000 loans in under 5 minutes).
 - **2026:** OCEN expanded to agri-credit and MSME supply chain financing. Millet-based credit scoring (alt data from UPI, GST, telecom) enabled sub-500 CIBIL score borrowers to access credit.
 
 #### 14.5 RegTech and SupTech Updates
 
 - **2024:** RBI DAKSH 2.0 launched with AI-based anomaly detection across all regulated entities. Real-time data ingestion from 200+ banks. Machine learning models for early warning signals of financial stress.
 - **2025:** RBI mandated API-based regulatory reporting for all banks (replacing XBRL upload). Real-time CRAR, NPA, and LCR monitoring. Automated breach alerts generated.
-- **2026:** SupTech integrated with AA network â€” RBI can view aggregate credit exposure across the banking system in real-time. AI-based supervisory assessment models deployed.
+- **2026:** SupTech integrated with AA network — RBI can view aggregate credit exposure across the banking system in real-time. AI-based supervisory assessment models deployed.
 
 #### 14.6 3D Secure 2.0 Adoption
 
@@ -1501,7 +1501,7 @@ flowchart LR
 - **2025:** UPI-ATM enabled in UAE (through NPCI-NPCI International), Singapore (through PayNow-UPI linkage), and Japan (through JCB partnership).
 - **2026:** Global UPI-ATM coverage expanded to 20+ countries. NRIs can use Indian UPI app for cash withdrawals abroad. Daily limit of Rs. 25,000 for international UPI-ATM.
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **1.** In the Account Aggregator framework, which entity is licensed by RBI to act as a data intermediary?
 
@@ -1517,7 +1517,7 @@ D) Sahamati
 Account Aggregators are RBI-licensed NBFCs that act as consent-based intermediaries. FIPs provide data, FIUs consume data. Sahamati is the industry body, not a licensed entity.
 </details>
 
-**2.** What is the maximum wallet balance allowed for CBDC retail (eâ‚¹-R)?
+**2.** What is the maximum wallet balance allowed for CBDC retail (e₹-R)?
 
 A) Rs. 5,000
 B) Rs. 10,000
@@ -1556,7 +1556,7 @@ D) Token uses blockchain, account uses centralized database
 <summary>Answer</summary>
 **Answer: B) Token is a bearer instrument (no identity needed for transfer), account requires identity**
 
-In CBDC's token-based model, the token itself is the money (like a digital banknote). Transfer does not require identity verification â€” the token is just passed from one wallet to another. Account-based models require identity for every transaction.
+In CBDC's token-based model, the token itself is the money (like a digital banknote). Transfer does not require identity verification — the token is just passed from one wallet to another. Account-based models require identity for every transaction.
 </details>
 
 **5.** Which technology architecture do neo banks use to enable rapid feature deployment?
@@ -1629,7 +1629,7 @@ D) A type of consent artefact
 Sahamati is a not-for-profit industry collective of AA ecosystem participants. It sets technical standards, certifies AAs, maintains the ReBIT specification, and promotes AA adoption. It is NOT a licensed AA itself.
 </details>
 
-**10.** What is the primary use case for eâ‚¹-W (Wholesale CBDC)?
+**10.** What is the primary use case for e₹-W (Wholesale CBDC)?
 
 A) Person-to-person retail payments
 B) Merchant payments
@@ -1640,7 +1640,7 @@ D) Cross-border remittances
 <summary>Answer</summary>
 **Answer: C) Interbank settlement of government securities**
 
-eâ‚¹-W (Wholesale) is used for interbank settlement, specifically for secondary market transactions in government securities. It reduced settlement time from T+1 to T+0. eâ‚¹-R (Retail) is for public transactions.
+e₹-W (Wholesale) is used for interbank settlement, specifically for secondary market transactions in government securities. It reduced settlement time from T+1 to T+0. e₹-R (Retail) is for public transactions.
 </details>
 
 **11.** In the AA framework, who generates the consent artefact?
@@ -1738,7 +1738,7 @@ D) Rs. 25,000
 <summary>Answer</summary>
 **Answer: B) Rs. 5,000**
 
-UPI-ATM cash withdrawal has a per-transaction limit of Rs. 5,000 (standard UPI transaction limit). No physical card is required â€” the ATM displays a QR code, and the customer scans it with the UPI app to authenticate and withdraw cash.
+UPI-ATM cash withdrawal has a per-transaction limit of Rs. 5,000 (standard UPI transaction limit). No physical card is required — the ATM displays a QR code, and the customer scans it with the UPI app to authenticate and withdraw cash.
 </details>
 
 **18.** In the neo bank vs legacy bank comparison, what is the approximate cost to acquire a customer for neo banks?
@@ -1783,7 +1783,7 @@ D) Two-factor authentication
 Each CBDC token is digitally signed by RBI (Sign(SK_RBI, TokenID || Denom || Serial) = TokenSignature). This signature is verified by wallets before accepting tokens. Combined with the spent cache, this prevents double-spending and counterfeiting.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 ### Section A: Short Answer (Questions 1-10)
 
@@ -1856,9 +1856,9 @@ Each CBDC token is digitally signed by RBI (Sign(SK_RBI, TokenID || Denom || Ser
 <details>
 <summary>Section A Answers (1-10)</summary>
 
-**1.** AA (Account Aggregator) â€” RBI-licensed data intermediary. FIP (Financial Information Provider) â€” holds user data (banks, MFs). FIU (Financial Information User) â€” consumes data (lenders). Customer â€” data owner who controls consent.
+**1.** AA (Account Aggregator) — RBI-licensed data intermediary. FIP (Financial Information Provider) — holds user data (banks, MFs). FIU (Financial Information User) — consumes data (lenders). Customer — data owner who controls consent.
 
-**2.** eâ‚¹-W (Wholesale) â€” for interbank settlement of government securities. eâ‚¹-R (Retail) â€” for general public transactions (P2P, P2M).
+**2.** e₹-W (Wholesale) — for interbank settlement of government securities. e₹-R (Retail) — for general public transactions (P2P, P2M).
 
 **3.** Token-based: the token itself is money (digital bearer instrument), no identity required for transfer, offline capable. Account-based: requires identity and account, must be online, bank maintains ledger.
 
@@ -1880,37 +1880,37 @@ Each CBDC token is digitally signed by RBI (Sign(SK_RBI, TokenID || Denom || Ser
 <details>
 <summary>Section B Answers (11-20)</summary>
 
-**11.** FIU requests data from AA â†’ AA generates consent artefact â†’ AA presents to customer â†’ Customer reviews (data, duration, purpose) â†’ Customer approves (Aadhaar OTP) â†’ AA sends consent to FIP â†’ FIP validates & sends encrypted data â†’ AA forwards to FIU (end-to-end encrypted) â†’ FIU decrypts and uses for underwriting.
+**11.** FIU requests data from AA → AA generates consent artefact → AA presents to customer → Customer reviews (data, duration, purpose) → Customer approves (Aadhaar OTP) → AA sends consent to FIP → FIP validates & sends encrypted data → AA forwards to FIU (end-to-end encrypted) → FIU decrypts and uses for underwriting.
 
 **12.** Token struct: {TokenID, Denomination, Issuer=RBI, SerialNo, Timestamp, Status, Signature}. Minting: RBI signs with private key. Transfer: wallet validates signature, checks spent cache, sends token. Redemption: bank validates token against RBI, marks SPENT, credits account.
 
 **13.** Legacy: monolithic CBS (T24/Finacle), quarterly releases, Java/COBOL+Oracle, Rs. 500-1000 acquisition cost. Neo: microservices on K8s, daily releases, Go/Node.js+PostgreSQL+Kafka, Rs. 50-100 acquisition cost, API-first, BaaS partnership for core ledger.
 
-**14.** Borrower â†’ LSP (fintech app) â†’ OCEN generates loan request â†’ OCEN broadcasts to lenders â†’ Lenders pull AA data (consent-based) â†’ Lenders run underwriting â†’ Offers returned via OCEN â†’ LSP shows best offers â†’ Borrower accepts â†’ Disbursement via OCEN.
+**14.** Borrower → LSP (fintech app) → OCEN generates loan request → OCEN broadcasts to lenders → Lenders pull AA data (consent-based) → Lenders run underwriting → Offers returned via OCEN → LSP shows best offers → Borrower accepts → Disbursement via OCEN.
 
-**15.** Inputs: credit bureau, AA bank statements, income proof, GST, demographic, digital footprint, device data. Engine: rules (pre-qualification), ML (XGBoost on 500+ features â†’ PD score), affordability (DTI ratio), fraud detection. Output: approved with terms/referred/rejected.
+**15.** Inputs: credit bureau, AA bank statements, income proof, GST, demographic, digital footprint, device data. Engine: rules (pre-qualification), ML (XGBoost on 500+ features → PD score), affordability (DTI ratio), fraud detection. Output: approved with terms/referred/rejected.
 
 **16.** Traditional LC: 20+ documents, 5-10 days, paper-based, disconnected systems. Blockchain: Smart contract with LC terms, multi-signature (bank+customs+shipping), automatic payment on condition fulfillment, immutable audit trail, minutes to hours.
 
-**17.** ATM displays QR â†’ Customer scans with UPI app â†’ App validates ATM location â†’ Customer enters UPI PIN â†’ Transaction: UPI app â†’ PSP â†’ NPCI â†’ Issuer bank debits â†’ ATM receives approval signal â†’ Cash dispensed â†’ UPI confirmation on phone.
+**17.** ATM displays QR → Customer scans with UPI app → App validates ATM location → Customer enters UPI PIN → Transaction: UPI app → PSP → NPCI → Issuer bank debits → ATM receives approval signal → Cash dispensed → UPI confirmation on phone.
 
-**18.** 150+ data points: cardholder account info (age, history), device info (fingerprint, IP, geo), transaction info (amount, merchant, items), behavioral biometrics (typing, mouse). ACS risk engine evaluates â†’ low risk = frictionless (no challenge), medium = challenge (biometric/OTP), high = decline.
+**18.** 150+ data points: cardholder account info (age, history), device info (fingerprint, IP, geo), transaction info (amount, merchant, items), behavioral biometrics (typing, mouse). ACS risk engine evaluates → low risk = frictionless (no challenge), medium = challenge (biometric/OTP), high = decline.
 
 **19.** India AA: consent-based data sharing, Aadhaar auth, Sahamati standards, NPCI for payments. UK Open Banking: CMA-regulated, API standards by OBIE, screen scraping banned. EU PSD2: mandatory API access, SCA requirements. Australia CDR: consumer data right, accreditation scheme.
 
-**20.** IoT in banking: ATM sensors (vibration, temperature) â†’ IoT platform (AWS IoT, Kafka) â†’ CMS integration â†’ predictive maintenance alerts. GPS trackers on cash vans â†’ real-time tracking â†’ geo-fencing â†’ route optimization â†’ Bank CBS for reconciliation.
+**20.** IoT in banking: ATM sensors (vibration, temperature) → IoT platform (AWS IoT, Kafka) → CMS integration → predictive maintenance alerts. GPS trackers on cash vans → real-time tracking → geo-fencing → route optimization → Bank CBS for reconciliation.
 </details>
 
 <details>
 <summary>Section C Answers (21-30)</summary>
 
-**21.** TypeScript: ConsentArtefactGenerator with createConsent(fiuId, fiTypes, purpose, duration) â†’ returns ConsentArtefact object with UUID, timestamps, scope, encryptedDetail. Validate with JSON schema before sending to customer.
+**21.** TypeScript: ConsentArtefactGenerator with createConsent(fiuId, fiTypes, purpose, duration) → returns ConsentArtefact object with UUID, timestamps, scope, encryptedDetail. Validate with JSON schema before sending to customer.
 
 **22.** CBDCTransferSystem: Online = validate token, check signature, update status, notify receiver. Offline = validate locally (signature + spent cache), store pending, sync later. SpentCache prevents double-spending offline.
 
-**23.** NeoBankOnboarding: Step 1 â€” e-KYC via Aadhaar OTP/Video KYC; Step 2 â€” Customer record created in local DB; Step 3 â€” Account opened via Partner Bank BaaS API; Step 4 â€” UPI handle created; Step 5 â€” Virtual debit card issued; Step 6 â€” Welcome notification sent.
+**23.** NeoBankOnboarding: Step 1 — e-KYC via Aadhaar OTP/Video KYC; Step 2 — Customer record created in local DB; Step 3 — Account opened via Partner Bank BaaS API; Step 4 — UPI handle created; Step 5 — Virtual debit card issued; Step 6 — Welcome notification sent.
 
-**24.** OCENMarketplace: LoanRequest â†’ Query lenders (filter by credit score, amount, tenure) â†’ Generate offers (interest rate, EMI, fees) â†’ Sort by best terms â†’ Present to borrower â†’ Accept â†’ Disburse via NEFT/IMPS.
+**24.** OCENMarketplace: LoanRequest → Query lenders (filter by credit score, amount, tenure) → Generate offers (interest rate, EMI, fees) → Sort by best terms → Present to borrower → Accept → Disburse via NEFT/IMPS.
 
 **25.** UPI-based score: features = monthly transaction count, income credits regularity (std dev of inter-arrival times), savings ratio, bill payment timeliness, merchant vs P2P ratio, ATM usage frequency. Model: gradient boosting on labeled repayment data.
 
@@ -1918,9 +1918,9 @@ Each CBDC token is digitally signed by RBI (Sign(SK_RBI, TokenID || Denom || Ser
 
 **27.** 3DS2 Risk Engine: Input device fingerprinter, IP geo-location, account age, transaction amount, merchant category, item type. Score 0-100: 0-30 = frictionless (no challenge), 31-70 = challenge (biometric/OTP), 71-100 = decline. Response in under 1 second.
 
-**28.** Neo Tx Processor: Receive from user â†’ Apply business rules (limits, fraud check) â†’ Update local state (optimistic) â†’ Call BaaS API on partner bank CBS â†’ On success: commit local state; On failure: rollback, notify user. Kafka for event log.
+**28.** Neo Tx Processor: Receive from user → Apply business rules (limits, fraud check) → Update local state (optimistic) → Call BaaS API on partner bank CBS → On success: commit local state; On failure: rollback, notify user. Kafka for event log.
 
-**29.** UPI-ATM: ATM generates unique session QR (expires 60s) â†’ UPI app reads QR â†’ Creates UPI payment request to ATM's merchant VPA â†’ NPCI processes â†’ ATM listens for success webhook â†’ Dispense cash â†’ Close session. All encrypted.
+**29.** UPI-ATM: ATM generates unique session QR (expires 60s) → UPI app reads QR → Creates UPI payment request to ATM's merchant VPA → NPCI processes → ATM listens for success webhook → Dispense cash → Close session. All encrypted.
 
 **30.** IoT ATM Monitoring: Vibration sensors (motor health), temperature (cash jam risk), cash cassette weight sensors. ML predicts replenishment need 24hrs in advance. Optimizes CIT routes using GPS data. Alerts on tamper/offline status.
 </details>
@@ -1929,7 +1929,7 @@ Each CBDC token is digitally signed by RBI (Sign(SK_RBI, TokenID || Denom || Ser
 
 The Account Aggregator framework is India's consent-based data sharing system with four participants: AA (RBI-licensed intermediary), FIP (data provider), FIU (data user), and Customer (data owner). The consent artefact is a machine-readable JSON document specifying data scope, duration, purpose, and fetch frequency.
 
-NDHP (National Data Health Platform) is the production AA network with over 100 FIPs. The Digital Rupee (CBDC) uses a token-based model (digital bearer instrument) with dual offline transaction capability via NFC. Wholesale (eâ‚¹-W) targets interbank settlement while Retail (eâ‚¹-R) targets public transactions.
+NDHP (National Data Health Platform) is the production AA network with over 100 FIPs. The Digital Rupee (CBDC) uses a token-based model (digital bearer instrument) with dual offline transaction capability via NFC. Wholesale (e₹-W) targets interbank settlement while Retail (e₹-R) targets public transactions.
 
 RegTech uses AI/ML for automated compliance (AML, KYC, reporting). RBI's DAKSH platform is the SupTech system for data-driven supervision. Neo banks (Jupiter, Fi) use microservices architecture on Kubernetes with BaaS partnerships, while legacy banks use monolithic CBS. Underwriting engines use ML models (XGBoost) with alternative data for Credit Scoring 2.0, covering 80% of Indian adults.
 
@@ -1937,17 +1937,17 @@ Blockchain in trade finance (InTrade, Corda, Hyperledger Fabric) enables smart c
 
 ## Practical Takeaways
 
-1. **AA Integration:** Build AA API integration early â€” it is becoming mandatory for all banks (RBI directive). Implement the consent artefact lifecycle correctly (create -> approve -> fetch -> revoke).
+1. **AA Integration:** Build AA API integration early — it is becoming mandatory for all banks (RBI directive). Implement the consent artefact lifecycle correctly (create -> approve -> fetch -> revoke).
 
 2. **CBDC Wallet Security:** Since CBDC tokens are bearer instruments, wallet security is critical. Implement hardware-backed key storage (SE/TEE) on mobile devices. Lost phone = lost tokens if not backed up.
 
-3. **Neo Bank Architecture:** Use the strangler fig pattern when migrating from legacy CBS to microservices. Don't attempt big-bang replacement of Finacle/T24 â€” build BaaS layer incrementally.
+3. **Neo Bank Architecture:** Use the strangler fig pattern when migrating from legacy CBS to microservices. Don't attempt big-bang replacement of Finacle/T24 — build BaaS layer incrementally.
 
-4. **Credit Scoring 2.0:** Start with UPI transaction data as an alternative data source. Analyze transaction regularity, income patterns, and bill payments. Monitor model drift â€” alternative data models degrade faster than traditional ones.
+4. **Credit Scoring 2.0:** Start with UPI transaction data as an alternative data source. Analyze transaction regularity, income patterns, and bill payments. Monitor model drift — alternative data models degrade faster than traditional ones.
 
 5. **3DS 2.0 Frictionless Rate:** Aim for 80%+ frictionless rate by sending all 150+ data points to the ACS. The more data you send, the less likely the issuer is to challenge the transaction.
 
-6. **Blockchain Trade Finance:** Start with invoice financing (simpler use case) before moving to LC. Ensure all participants have node access â€” a consortium blockchain is only useful if all parties are connected.
+6. **Blockchain Trade Finance:** Start with invoice financing (simpler use case) before moving to LC. Ensure all participants have node access — a consortium blockchain is only useful if all parties are connected.
 
 7. **UPI-ATM Deployment:** ATM software upgrade is the critical path. Work with ATM switch vendors (Diebold NCR, Hitachi) to enable QR code display and UPI transaction support.
 
@@ -2020,5 +2020,5 @@ D) Transaction declined
 <summary>Answer</summary>
 **Answer: B) Frictionless (no user interaction)**
 
-When the issuer's ACS (Access Control Server) determines the transaction is low-risk based on the 150+ data points, it returns a "Frictionless" result â€” the transaction proceeds without any additional authentication challenge to the customer.
+When the issuer's ACS (Access Control Server) determines the transaction is low-risk based on the 150+ data points, it returns a "Frictionless" result — the transaction proceeds without any additional authentication challenge to the customer.
 </details>

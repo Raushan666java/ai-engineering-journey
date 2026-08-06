@@ -1,4 +1,4 @@
-﻿# Chapter 5: Loops (Comprehensive)
+# Chapter 5: Loops (Comprehensive)
 
 > **Previous:** [Control Flow](./04-control-flow.md) | **Next:** [Arrays](./06-arrays.md)
 
@@ -60,7 +60,7 @@ flowchart LR
 ### Real-World Analogy
 
 
-A `for` loop is like running laps around a track: you know exactly how many laps you need to run before you start. The coach says "run 5 laps" â€” you initialize your lap counter to 0, check if you've reached 5, run one lap, increment the counter, and repeat until done.
+A `for` loop is like running laps around a track: you know exactly how many laps you need to run before you start. The coach says "run 5 laps" — you initialize your lap counter to 0, check if you've reached 5, run one lap, increment the counter, and repeat until done.
 
 | Step | Track Analogy | Code Equivalent |
 |------|--------------|-----------------|
@@ -117,7 +117,7 @@ for (int i = 1; i <= 3; i++) {
 | 1 (init)  | (init: i = 1)   | true (enter)       | sum = 0 + 1 = 1 | i becomes 2 |
 | 2         | 2               | true (enter)       | sum = 1 + 2 = 3 | i becomes 3 |
 | 3         | 3               | true (enter)       | sum = 3 + 3 = 6 | i becomes 4 |
-| 4         | 4               | **false (exit)**   | â€”                | â€” |
+| 4         | 4               | **false (exit)**   | —                | — |
 
 **Final:** sum = 6, loop executed 3 times.
 
@@ -242,21 +242,21 @@ int main(void) {
 ### Complexity Analysis
 
 
-- **Time:** O(n) â€” the loop body executes n times. Each iteration does O(1) work.
-- **Space:** O(1) â€” only a single loop counter variable is needed.
+- **Time:** O(n) — the loop body executes n times. Each iteration does O(1) work.
+- **Space:** O(1) — only a single loop counter variable is needed.
 
-**Why O(n)?** The number of iterations is directly proportional to the loop bound. If the bound doubles, runtime doubles. This is linear time because each iteration introduces constant overhead (condition check, update, body execution). The total work = n Ã— (cost of condition + cost of body + cost of update).
+**Why O(n)?** The number of iterations is directly proportional to the loop bound. If the bound doubles, runtime doubles. This is linear time because each iteration introduces constant overhead (condition check, update, body execution). The total work = n × (cost of condition + cost of body + cost of update).
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Compact â€” init, condition, update in one line | Can be overkill for simple conditions |
+| Compact — init, condition, update in one line | Can be overkill for simple conditions |
 | Self-documenting iteration count | Complex expressions hurt readability |
 | Loop variable scoped to loop (C99+) | Cannot easily skip or rearrange clauses |
 | Ideal for array traversal | Not suitable for unknown iteration counts |
-| Multiple variables supported | â€” |
+| Multiple variables supported | — |
 
 ### Edge Cases
 
@@ -278,7 +278,7 @@ int main(void) {
 ### Real-World Analogy
 
 
-A `while` loop is like checking your phone for a ride arrival: "While the Uber has not arrived, keep checking." You don't know how many times you'll check â€” you keep doing it until the condition (arrival) changes.
+A `while` loop is like checking your phone for a ride arrival: "While the Uber has not arrived, keep checking." You don't know how many times you'll check — you keep doing it until the condition (arrival) changes.
 
 ### Syntax
 
@@ -327,7 +327,7 @@ while (n > 0) {
 | 1         | 3                | true              | Print 3        | 2             |
 | 2         | 2                | true              | Print 2        | 1             |
 | 3         | 1                | true              | Print 1        | 0             |
-| (exit)    | 0                | **false**         | no             | â€”             |
+| (exit)    | 0                | **false**         | no             | —             |
 
 **Final:** Output: "3 2 1 ", 3 iterations.
 
@@ -432,8 +432,8 @@ int main(void) {
 ### Complexity Analysis
 
 
-- **Time:** O(n) â€” the loop runs as many times as the condition allows, typically proportional to input size n.
-- **Space:** O(1) â€” no extra space proportional to input.
+- **Time:** O(n) — the loop runs as many times as the condition allows, typically proportional to input size n.
+- **Space:** O(1) — no extra space proportional to input.
 
 **Why O(n)?** Each iteration processes one element of input (one digit, one character, one node). The number of iterations equals the number of elements to process. The condition evaluation and body together do constant work per iteration.
 
@@ -446,7 +446,7 @@ int main(void) {
 | Clean for I/O and sentinel patterns | Update variable can be forgotten |
 | One condition, no boilerplate | More verbose than `for` for counted loops |
 | Natural for pointer/iterator traversal | Update logic can be scattered in body |
-| Easier to read for state-driven loops | â€” |
+| Easier to read for state-driven loops | — |
 
 ### Edge Cases
 
@@ -467,7 +467,7 @@ int main(void) {
 ### Real-World Analogy
 
 
-A `do-while` loop is like ordering at a restaurant: "Here is the menu â€” order your food, then we'll ask if you want to order more." You always order at least once, then decide if you want more after each order.
+A `do-while` loop is like ordering at a restaurant: "Here is the menu — order your food, then we'll ask if you want to order more." You always order at least once, then decide if you want more after each order.
 
 ### Syntax
 
@@ -615,10 +615,10 @@ Reversed: 4321
 ### Complexity Analysis
 
 
-- **Time:** O(n) â€” the body executes n times (at least once). Each iteration is O(1).
-- **Space:** O(1) â€” only loop variables and input.
+- **Time:** O(n) — the body executes n times (at least once). Each iteration is O(1).
+- **Space:** O(1) — only loop variables and input.
 
-**Why O(n)?** The `do-while` has the same time complexity class as `while`. The "at least once" guarantee does not change the asymptotic behavior â€” it only shifts the minimum from 0 to 1. For large n, the +1 is negligible.
+**Why O(n)?** The `do-while` has the same time complexity class as `while`. The "at least once" guarantee does not change the asymptotic behavior — it only shifts the minimum from 0 to 1. For large n, the +1 is negligible.
 
 ### Advantages & Disadvantages
 
@@ -648,7 +648,7 @@ Reversed: 4321
 ### 5.4.1 `break`
 
 
-**Real-world analogy:** You're searching a bookshelf for a specific book. "Break" means you stop searching as soon as you find it â€” no need to check the remaining books.
+**Real-world analogy:** You're searching a bookshelf for a specific book. "Break" means you stop searching as soon as you find it — no need to check the remaining books.
 
 **Behavior:** Exits the innermost loop (or `switch`) immediately. Control transfers to the statement after the loop.
 
@@ -670,7 +670,7 @@ for (int i = 1; i <= 10; i++) {
 | 2         | 2 | false             | "2 "  | continue |
 | 3         | 3 | false             | "3 "  | continue |
 | 4         | 4 | false             | "4 "  | continue |
-| 5         | 5 | **true**          | â€”     | break (exit loop) |
+| 5         | 5 | **true**          | —     | break (exit loop) |
 
 **Final output:** `1 2 3 4 `
 
@@ -734,7 +734,7 @@ Only the inner loop breaks when `i==2 && j==2`. The outer loop continues normall
 ### 5.4.2 `continue`
 
 
-**Real-world analogy:** You're checking items off a shopping list. If an item is out of stock, you skip it and move to the next item â€” you don't abandon the entire trip.
+**Real-world analogy:** You're checking items off a shopping list. If an item is out of stock, you skip it and move to the next item — you don't abandon the entire trip.
 
 **Behavior:** Skips the rest of the current iteration and proceeds to the next iteration (condition check for `while`/`do-while`, update step for `for`).
 
@@ -757,7 +757,7 @@ for (int i = 1; i <= 5; i++) {
 | 3         | 3               | false       | Print "3 " | 4 |
 | 4         | 4               | **true**    | continue | 5 |
 | 5         | 5               | false       | Print "5 " | 6 |
-| (exit)    | 6               | false (6 &lt;= 5 false) | â€” | â€” |
+| (exit)    | 6               | false (6 &lt;= 5 false) | — | — |
 
 **Final output:** `1 3 5 `
 
@@ -782,7 +782,7 @@ int main(void) {
 1 2 4 5 7 8 10
 ```
 
-**Example 2: continue in while loop â€” update BEFORE continue**
+**Example 2: continue in while loop — update BEFORE continue**
 ```c
 #include <stdio.h>
 
@@ -819,7 +819,7 @@ int main(void) {
 ### 5.4.3 `goto`
 
 
-**Real-world analogy:** An emergency exit in a building â€” you use it only in exceptional circumstances to get out immediately, not for normal traffic flow.
+**Real-world analogy:** An emergency exit in a building — you use it only in exceptional circumstances to get out immediately, not for normal traffic flow.
 
 **Behavior:** Unconditionally jumps to a labeled statement in the same function.
 
@@ -909,9 +909,9 @@ for (outer initialization; outer condition; outer update) {
 
 
 1. Outer loop initialization (once).
-2. Outer condition check â€” if false, exit entirely.
+2. Outer condition check — if false, exit entirely.
 3. Inner loop initialization.
-4. Inner condition check â€” if false, go to step 7.
+4. Inner condition check — if false, go to step 7.
 5. Execute inner body.
 6. Inner update, go to step 4.
 7. Outer update, go to step 2.
@@ -945,16 +945,16 @@ for (int i = 1; i <= 3; i++) {
 
 | Outer i | Inner j init | i loop condition | j loop condition | Print | After inner update | After outer update |
 |---------|-------------|-----------------|------------------|-------|-------------------|-------------------|
-| 1       | j = 1       | true (enter)    | true             | (1,1) | j = 2             | â€” |
-| 1       | â€”           | â€”               | true             | (1,2) | j = 3             | â€” |
-| 1       | â€”           | â€”               | **false** (exit inner) | â€” | â€” | i = 2 |
-| 2       | j = 1       | true (enter)    | true             | (2,1) | j = 2             | â€” |
-| 2       | â€”           | â€”               | true             | (2,2) | j = 3             | â€” |
-| 2       | â€”           | â€”               | **false** (exit inner) | â€” | â€” | i = 3 |
-| 3       | j = 1       | true (enter)    | true             | (3,1) | j = 2             | â€” |
-| 3       | â€”           | â€”               | true             | (3,2) | j = 3             | â€” |
-| 3       | â€”           | â€”               | **false** (exit inner) | â€” | â€” | i = 4 |
-| (exit)  | â€”           | **false** (i=4, 4 &lt;= 3 false) | â€” | â€” | â€” | â€” |
+| 1       | j = 1       | true (enter)    | true             | (1,1) | j = 2             | — |
+| 1       | —           | —               | true             | (1,2) | j = 3             | — |
+| 1       | —           | —               | **false** (exit inner) | — | — | i = 2 |
+| 2       | j = 1       | true (enter)    | true             | (2,1) | j = 2             | — |
+| 2       | —           | —               | true             | (2,2) | j = 3             | — |
+| 2       | —           | —               | **false** (exit inner) | — | — | i = 3 |
+| 3       | j = 1       | true (enter)    | true             | (3,1) | j = 2             | — |
+| 3       | —           | —               | true             | (3,2) | j = 3             | — |
+| 3       | —           | —               | **false** (exit inner) | — | — | i = 4 |
+| (exit)  | —           | **false** (i=4, 4 &lt;= 3 false) | — | — | — | — |
 
 **Output:**
 ```
@@ -1072,22 +1072,22 @@ int main(void) {
 
 | Nesting Depth | Pattern | Time Complexity | Space | Example |
 |--------------|---------|-----------------|-------|---------|
-| 2 levels, independent | `for i in 0..n: for j in 0..m:` | O(n Ã— m) | O(1) | Matrix traversal |
-| 2 levels, dependent | `for i in 0..n: for j in 0..i:` | O(nÂ²) | O(1) | Triangle pattern |
-| 2 levels, equal bounds | `for i in 0..n: for j in 0..n:` | O(nÂ²) | O(1) | Multiplication table |
-| 3 levels, equal bounds | `for i in 0..n: for j in 0..n: for k in 0..n:` | O(nÂ³) | O(1) | Matrix multiplication |
-| 2 levels, data-dependent | `for each node: for each neighbor:` | O(n Ã— d) | O(1) | Graph adjacency |
+| 2 levels, independent | `for i in 0..n: for j in 0..m:` | O(n × m) | O(1) | Matrix traversal |
+| 2 levels, dependent | `for i in 0..n: for j in 0..i:` | O(n²) | O(1) | Triangle pattern |
+| 2 levels, equal bounds | `for i in 0..n: for j in 0..n:` | O(n²) | O(1) | Multiplication table |
+| 3 levels, equal bounds | `for i in 0..n: for j in 0..n: for k in 0..n:` | O(n³) | O(1) | Matrix multiplication |
+| 2 levels, data-dependent | `for each node: for each neighbor:` | O(n × d) | O(1) | Graph adjacency |
 
-**Why O(nÂ²) for double nested?** If outer runs n times and inner runs m times, total operations = n Ã— m. When n == m, this is nÂ². Doubling n quadruples the work.
+**Why O(n²) for double nested?** If outer runs n times and inner runs m times, total operations = n × m. When n == m, this is n². Doubling n quadruples the work.
 
-### Why Dependent Inner Loops Are Still O(nÂ²)
+### Why Dependent Inner Loops Are Still O(n²)
 
 
 For `for (i=0; i<n; i++) for (j=0; j<i; j++)`:
 - Total iterations = 0 + 1 + 2 + ... + (n-1) = n(n-1)/2
-- This is (nÂ² - n)/2 â†’ O(nÂ²)
+- This is (n² - n)/2 → O(n²)
 
-The constant factor (Ã—Â½) doesn't change the complexity class. For n = 1000, nÂ²/2 = 500,000 vs nÂ² = 1,000,000 â€” both are O(nÂ²).
+The constant factor (׽) doesn't change the complexity class. For n = 1000, n²/2 = 500,000 vs n² = 1,000,000 — both are O(n²).
 
 ### Advantages & Disadvantages
 
@@ -1108,7 +1108,7 @@ The constant factor (Ã—Â½) doesn't change the complexity class. For n = 100
 | Empty inner loop bound | Inner loop never runs (e.g., j &lt; 0) |
 | Break inside inner | Exits only inner; outer continues unaffected |
 | Continue inside inner | Skips to next inner iteration (not outer) |
-| Outer i, inner uses i | Inner loop depends on outer value â€” dynamic bound |
+| Outer i, inner uses i | Inner loop depends on outer value — dynamic bound |
 | Modifying outer variable inside inner | Changes outer loop behavior (usually a bug) |
 
 ---
@@ -1118,7 +1118,7 @@ The constant factor (Ã—Â½) doesn't change the complexity class. For n = 100
 ### Real-World Analogy
 
 
-A traffic light controller in an intersection runs forever: "While the system is powered on, cycle through red â†’ green â†’ yellow." The loop never stops because the system must never stop.
+A traffic light controller in an intersection runs forever: "While the system is powered on, cycle through red → green → yellow." The loop never stops because the system must never stop.
 
 ### Intentional Infinite Loops
 
@@ -1216,7 +1216,7 @@ while (i > 0) {
 **Bug 4: Assignment instead of comparison**
 ```c
 int done = 0;
-while (done = 0) {   /* assigns 0, which is false â€” loop NEVER runs */
+while (done = 0) {   /* assigns 0, which is false — loop NEVER runs */
     /* ... */
 }
 ```
@@ -1346,7 +1346,7 @@ int main(void) {
 | `for (i=0; i<n; i++)` | O(n) | O(1) | 1 iteration (with break) | n iterations |
 | `while (p != NULL)` | O(n) | O(1) | 1 iteration | n iterations (list length) |
 | `do { } while (cond)` | O(n) | O(1) | 1 iteration | n iterations |
-| Nested (2-level equal) | O(nÂ²) | O(1) | Depends on break | nÂ² iterations |
+| Nested (2-level equal) | O(n²) | O(1) | Depends on break | n² iterations |
 
 **Why space is O(1) for all:** No auxiliary data structure grows with input size. Only scalar variables (counters, accumulators) are allocated on the stack.
 
@@ -1514,7 +1514,7 @@ for (;;) {
     /* ... */
 }
 
-/* Rare â€” do-while infinite */
+/* Rare — do-while infinite */
 do {
     /* ... */
 } while (1);
@@ -1558,7 +1558,7 @@ do {
    /* Cache-unfriendly: column-major access */
    for (int j = 0; j < m; j++)
        for (int i = 0; i < n; i++)
-           sum += arr[i][j];   /* bad â€” striding over rows */
+           sum += arr[i][j];   /* bad — striding over rows */
    ```
 
 5. **Loop unrolling** (manual or compiler):
@@ -1602,12 +1602,12 @@ for (int i = 0; i < 8; i += 2) {
 | **Function return** | `return` from helper function | Clean abstraction | Restructuring needed |
 | **Longjmp** | `setjmp`/`longjmp` | Exits any depth | Very rarely appropriate |
 
-**Recommendation:** Use `goto` for breaking deep nesting â€” it's the cleanest solution for this specific, well-understood case in C.
+**Recommendation:** Use `goto` for breaking deep nesting — it's the cleanest solution for this specific, well-understood case in C.
 
-### Q7: What is the time complexity of three nested loops each running n times? Why O(nÂ³)?
+### Q7: What is the time complexity of three nested loops each running n times? Why O(n³)?
 
 
-**Answer:** Three nested loops with equal bounds produce O(nÂ³) complexity. Each level multiplies: outer runs n, middle runs n, inner runs n. Total iterations = n Ã— n Ã— n = nÂ³. If n doubles, work increases 8Ã—. This is cubic time.
+**Answer:** Three nested loops with equal bounds produce O(n³) complexity. Each level multiplies: outer runs n, middle runs n, inner runs n. Total iterations = n × n × n = n³. If n doubles, work increases 8×. This is cubic time.
 
 ---
 
@@ -1639,7 +1639,7 @@ int main(void) {
 }
 ```
 
-This "super loop" architecture is the foundation of countless embedded systems â€” microwaves, washing machines, thermostats, automotive controllers, IoT devices. The infinite `while(1)` is the core idiom.
+This "super loop" architecture is the foundation of countless embedded systems — microwaves, washing machines, thermostats, automotive controllers, IoT devices. The infinite `while(1)` is the core idiom.
 
 ### Event-Driven System
 
@@ -1674,7 +1674,7 @@ int main(void) {
 }
 ```
 
-Used in GUI frameworks, game engines, network servers â€” any system where actions are triggered by external events.
+Used in GUI frameworks, game engines, network servers — any system where actions are triggered by external events.
 
 ### Finite State Machine Loop
 
@@ -1704,7 +1704,7 @@ int main(void) {
                 else state = IDLE;
                 break;
             case ERROR:
-                printf("Error state â€” exiting\n");
+                printf("Error state — exiting\n");
                 break;
         }
     }
@@ -1916,7 +1916,7 @@ while (i < n) {
    C) 012234
    D) 012345
 
-<details><summary>Answer&lt;/summary&gt;**C)** i=0: j=0â†’0, j=1â†’1. i=1: j=0â†’1, j=1â†’2. i=2: j=0â†’2, j=1â†’3. Output: "0 1 1 2 2 3" = 012234.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** i=0: j=0→0, j=1→1. i=1: j=0→1, j=1→2. i=2: j=0→2, j=1→3. Output: "0 1 1 2 2 3" = 012234.</details>
 
 5. Which of these is NOT an entry-controlled loop?
    A) `for`
@@ -1924,7 +1924,7 @@ while (i < n) {
    C) `do-while`
    D) Both A and B
 
-<details><summary>Answer&lt;/summary&gt;**C)** `do-while` is exit-controlled â€” the condition is checked after the body executes.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** `do-while` is exit-controlled — the condition is checked after the body executes.</details>
 
 6. What is the time complexity of this code?
    ```c
@@ -1933,11 +1933,11 @@ while (i < n) {
            printf("*");
    ```
    A) O(n)
-   B) O(nÂ²)
+   B) O(n²)
    C) O(log n)
    D) O(1)
 
-<details><summary>Answer&lt;/summary&gt;**B)** O(nÂ²) â€” the inner loop runs n times for each of the n outer iterations, giving n Ã— n = nÂ² total iterations.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** O(n²) — the inner loop runs n times for each of the n outer iterations, giving n × n = n² total iterations.</details>
 
 7. How do you write an infinite loop in C?
    A) `while (1)`
@@ -1984,10 +1984,10 @@ while (i < n) {
 ## Summary
 
 - `while` loops check the condition before each iteration; `do-while` checks after, guaranteeing at least one execution.
-- `for` loops consolidate initialization, condition, and update in one line â€” ideal for counted iteration (O(n) time, O(1) space).
+- `for` loops consolidate initialization, condition, and update in one line — ideal for counted iteration (O(n) time, O(1) space).
 - `break` exits the innermost loop immediately; `continue` skips to the next iteration (update step in `for`, condition in `while`).
 - `goto` provides unstructured jumps; best reserved for breaking out of deeply nested loops.
-- Nested loops multiply iterations: an outer loop of n and inner of m yields O(n Ã— m) total work. Dependent inner loops still yield O(nÂ²) but with a smaller constant factor.
+- Nested loops multiply iterations: an outer loop of n and inner of m yields O(n × m) total work. Dependent inner loops still yield O(n²) but with a smaller constant factor.
 - Infinite loops are written with `while (1)` or `for (;;)`; they are standard in embedded firmware, server event loops, and animation frames.
 - Off-by-one errors occur when using `<=` instead of `<` in zero-based iteration.
 - Loop optimization techniques include hoisting invariant code, cache-friendly access patterns, and (rarely) manual loop unrolling.
@@ -2032,7 +2032,7 @@ while (i < n) {
 
 6. **Guess the number:** Write a number guessing game using `do-while`. The program picks a random number between 1 and 100, and the user guesses until they get it right. Print "Too high" or "Too low" after each guess.
 
-7. **Matrix addition:** Write a program that reads two 3Ã—3 matrices and prints their sum using nested loops.
+7. **Matrix addition:** Write a program that reads two 3×3 matrices and prints their sum using nested loops.
 
 8. **Palindrome check:** Write a program that checks if a given integer is a palindrome (reads the same forwards and backwards) using a `while` loop to reverse the digits.
 

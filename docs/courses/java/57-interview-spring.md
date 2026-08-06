@@ -1,4 +1,4 @@
-﻿# Spring & Spring Boot Interview Q&A
+# Spring & Spring Boot Interview Q&A
 
 > **Previous:** [Java Core Interview Q&amp;A](./56-interview-java.md) | **Next:** [REST API Interview Q&amp;A](./58-interview-rest-api.md)
 
@@ -225,7 +225,7 @@ interface AuditService {}
 
 @Autowired resolution: byType -> @Qualifier -> @Primary -> field name. Inject List/Map to get all beans of a type. @Autowired(required=false) for optional dependencies (prefer Optional or ObjectProvider).
 
-### Q3: Circular dependencies â†’ how does Spring handle them?
+### Q3: Circular dependencies → how does Spring handle them?
 
 
 **Answer:** Spring resolves circular dependencies through three-level singleton cache (early exposure). For prototype-scoped beans, circular deps cannot be resolved and throw BeanCurrentlyInCreationException.
@@ -287,7 +287,7 @@ class ServiceALazy {
     public String doA() { return "A" + serviceB.doB(); }
 }
 
-// === Fix 3: Refactor â†’ extract shared interface ===
+// === Fix 3: Refactor → extract shared interface ===
 interface DataStore {
     String getData();
 }
@@ -310,9 +310,9 @@ class ServiceBRefactored {
 }
 ```
 
-Spring singleton cache: singletonObjects (fully created) -> earlySingletonObjects (exposed but not fully initialized) -> singletonFactories (raw object before post-processing). Constructor injection + circular deps fails â†’ use setter or @Lazy. Best fix: redesign to eliminate circular deps.
+Spring singleton cache: singletonObjects (fully created) -> earlySingletonObjects (exposed but not fully initialized) -> singletonFactories (raw object before post-processing). Constructor injection + circular deps fails → use setter or @Lazy. Best fix: redesign to eliminate circular deps.
 
-### Q4: Bean lifecycle â†’ from creation to destruction.
+### Q4: Bean lifecycle → from creation to destruction.
 
 
 **Answer:** Spring bean lifecycle: instantiation -> populate properties -> set bean name/classloader -> post-process before init (postProcessBeforeInitialization) -> @PostConstruct/InitializingBean/init-method -> post-process after init (postProcessAfterInitialization) -> ready -> @PreDestroy/DisposableBean/destroy-method.
@@ -836,7 +836,7 @@ interface AuthorReportRepository extends JpaRepository<Author, Long> {
 
 N+1 detection: enable SQL logging (spring.jpa.show-sql=true), use datasource-proxy appender. JOIN FETCH may cause cartesian product for multiple collections (use Set instead of List, or multiple queries). EntityGraph is declarative alternative to JOIN FETCH.
 
-### Q9: Fetch strategies â†’ EAGER vs LAZY.
+### Q9: Fetch strategies → EAGER vs LAZY.
 
 
 **Answer:** EAGER loads the association immediately (join query or second select). LAZY loads on first access (proxy or bytecode enhancement). LAZY is default for @OneToMany/@ManyToMany. EAGER is default for @ManyToOne/@OneToOne.
@@ -1028,7 +1028,7 @@ class BlogService {
 
 CascadeType.ALL: convenience for all operations. orphanRemoval: deletes children removed from the collection (requires a collection association). CascadeType.REMOVE without orphanRemoval: deletes children only when parent is explicitly removed. Best practice: use cascade sparingly. CascadeType.ALL on @OneToMany is common for parent-owned associations. Never cascade REMOVE across many-to-many.
 
-### Q11: Transaction management â†’ @Transactional propagation.
+### Q11: Transaction management → @Transactional propagation.
 
 
 **Answer:** @Transactional defines transaction boundaries with seven propagation behaviors: REQUIRED (default), REQUIRES_NEW, NESTED, SUPPORTS, NOT_SUPPORTED, MANDATORY, NEVER.
@@ -1120,7 +1120,7 @@ class OrderService {
     public void processWithAudit(Long orderId) {
         // This outer tx rolls back on failure
         paymentService.deductBalance(BigDecimal.valueOf(100));
-        // auditLog uses REQUIRES_NEW â†’ commits regardless of outer rollback
+        // auditLog uses REQUIRES_NEW → commits regardless of outer rollback
         paymentService.auditLog("Order " + orderId + " processed");
         throw new RuntimeException("Simulated failure");
         // Outer rolls back, but auditLog already committed!
@@ -1259,7 +1259,7 @@ MVCC details: each row has visibility information (transaction ID, commit timest
 ### Q13: Optimistic vs Pessimistic locking.
 
 
-**Answer:** Optimistic locking assumes conflicts are rare â†’ checks at commit time using version column. Pessimistic locking locks the row at read time and holds until transaction completes.
+**Answer:** Optimistic locking assumes conflicts are rare → checks at commit time using version column. Pessimistic locking locks the row at read time and holds until transaction completes.
 
 ```java
 import jakarta.persistence.*;
@@ -1324,7 +1324,7 @@ class PortalService {
     @Transactional
     public void bookSeat(Long seatId, String userId) {
         Seat seat = em.find(Seat.class, seatId, LockModeType.PESSIMISTIC_WRITE);
-        // SELECT ... FOR UPDATE â†’ row locked until tx commits
+        // SELECT ... FOR UPDATE → row locked until tx commits
         // Other transactions trying to read this seat with PESSIMISTIC_WRITE will wait
 
         if (seat.booked) throw new RuntimeException("Already booked");
@@ -1383,7 +1383,7 @@ class LockTimeoutExample {
 
 Optimistic: good for low contention, high performance, no connection held. Pessimistic: good for high contention, critical resources, shorter transactions. Version cannot be null on first persist (set @ColumnDefault("0") or initialize field).
 
-### Q14: @Transactional â†’ readOnly flag.
+### Q14: @Transactional → readOnly flag.
 
 
 **Answer:** readOnly=true optimizes read-only transactions. Hibernate skips dirty checking, flushes only if explicitly requested. Some databases optimize read-only transactions. Spring also configures FlushMode to MANUAL.
@@ -1464,9 +1464,9 @@ class TransactionBoundaryDemo {
 }
 ```
 
-readOnly at service layer vs query level: service @Transactional(readOnly=true) covers all repository operations. Can still write programmatically (via flush()) â†’ readOnly is a hint, not enforced. Forced by some databases (PostgreSQL throws error on write in read-only tx).
+readOnly at service layer vs query level: service @Transactional(readOnly=true) covers all repository operations. Can still write programmatically (via flush()) → readOnly is a hint, not enforced. Forced by some databases (PostgreSQL throws error on write in read-only tx).
 
-### Q15: Spring Data JPA â†’ custom queries and projections.
+### Q15: Spring Data JPA → custom queries and projections.
 
 
 **Answer:** Spring Data JPA supports derived queries (method name parsing), @Query (JPQL/native), projections (interface/record/DTO), and specifications for dynamic queries.
@@ -1574,7 +1574,7 @@ class EmployeeService {
 
 Derived query keywords: And, Or, Between, LessThan, GreaterThan, Like, In, IgnoreCase, OrderBy, NotNull, IsNull. @Modifying for UPDATE/DELETE queries (requires @Transactional). @QueryHints for query-level hints (e.g., cacheable).
 
-### Q16: Spring Security â†’ SecurityFilterChain.
+### Q16: Spring Security → SecurityFilterChain.
 
 
 **Answer:** SecurityFilterChain defines the filter chain for securing requests. It replaces the old WebSecurityConfigurerAdapter approach. Each chain matches a pattern and applies configured filters.
@@ -1732,9 +1732,9 @@ interface UserRepository {
 record UserRecord(String email, String password, String role, boolean locked) {}
 ```
 
-SecurityFilterChain replaced WebSecurityConfigurerAdapter in Spring Security 5.7+. Each chain has a securityMatcher pattern. Order matters â†’ first matching chain wins. Stateless (JWT) APIs: disable CSRF, set STATELESS session policy.
+SecurityFilterChain replaced WebSecurityConfigurerAdapter in Spring Security 5.7+. Each chain has a securityMatcher pattern. Order matters → first matching chain wins. Stateless (JWT) APIs: disable CSRF, set STATELESS session policy.
 
-### Q17: Spring Security â†’ OAuth2 client and resource server.
+### Q17: Spring Security → OAuth2 client and resource server.
 
 
 **Answer:** Spring Security supports OAuth2 client (login via Google/GitHub) and resource server (JWT validation for APIs). JWT decoder validates token signature, expiration, and claims.
@@ -2036,7 +2036,7 @@ record CreateProductRequest(String name, String category) {}
 
 Problem Details (RFC 7807): standardized error response format. Spring 6+ provides ProblemDetail class. Use @ControllerAdvice for global handling, per-controller @ExceptionHandler for specific cases. Override handleXxx from ResponseEntityExceptionHandler for default Spring exceptions.
 
-### Q19: Testing â†’ @WebMvcTest, @DataJpaTest, @SpringBootTest.
+### Q19: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest.
 
 
 **Answer:** Spring Boot provides slice tests that load only relevant beans. @WebMvcTest loads only web layer (controllers, filters). @DataJpaTest loads JPA repositories. @SpringBootTest loads full context.
@@ -2207,7 +2207,7 @@ class UserService {
 }
 ```
 
-@WebMvcTest auto-configures MockMvc. @DataJpaTest auto-configures TestEntityManager, repositories. @SpringBootTest loads full context â†’ use for integration tests. @MockBean replaces beans with Mockito mocks. Testcontainers for real database testing.
+@WebMvcTest auto-configures MockMvc. @DataJpaTest auto-configures TestEntityManager, repositories. @SpringBootTest loads full context → use for integration tests. @MockBean replaces beans with Mockito mocks. Testcontainers for real database testing.
 ### Q20: What is AOP in Spring and how does it work?
 
 
@@ -2284,18 +2284,18 @@ class PaymentServiceImpl {
 // === Pointcut expression patterns ===
 // execution(modifiers-pattern? return-type-pattern declaring-type-pattern? method-name-pattern(param-pattern) throws-pattern?)
 // Examples:
-// execution(* com.example.service.*.*(..))      â†’ all methods in service package
-// execution(public * com.example..*.*(..))       â†’ all public methods in com.example and subpackages
-// execution(* set*(*))                           â†’ all setters with single param
-// execution(* com.example.dao.*.find*(Long, ..)) â†’ methods starting with find, first param Long
-// @annotation(com.example.Timed)                â†’ methods annotated with @Timed
-// within(com.example.service.*)                 â†’ all methods in service package
-// this(com.example.SomeInterface)               â†’ proxy implements SomeInterface
-// target(com.example.SomeImpl)                   â†’ target object is SomeImpl
-// args(String, Long, ..)                        â†’ methods with String and Long as first two params
-// @args(com.example.Validated)                  â†’ methods whose runtime params have @Validated
-// @within(org.springframework.stereotype.Service) â†’ classes annotated with @Service
-// @target(org.springframework.transaction.annotation.Transactional) â†’ target class has @Transactional
+// execution(* com.example.service.*.*(..))      → all methods in service package
+// execution(public * com.example..*.*(..))       → all public methods in com.example and subpackages
+// execution(* set*(*))                           → all setters with single param
+// execution(* com.example.dao.*.find*(Long, ..)) → methods starting with find, first param Long
+// @annotation(com.example.Timed)                → methods annotated with @Timed
+// within(com.example.service.*)                 → all methods in service package
+// this(com.example.SomeInterface)               → proxy implements SomeInterface
+// target(com.example.SomeImpl)                   → target object is SomeImpl
+// args(String, Long, ..)                        → methods with String and Long as first two params
+// @args(com.example.Validated)                  → methods whose runtime params have @Validated
+// @within(org.springframework.stereotype.Service) → classes annotated with @Service
+// @target(org.springframework.transaction.annotation.Transactional) → target class has @Transactional
 
 // === Combining pointcuts ===
 public class PointcutCombinations {
@@ -2365,9 +2365,9 @@ class AuditServiceImpl implements Auditable {
 }
 ```
 
-AOP guide: `@EnableAspectJAutoProxy` enables annotation-driven AOP. JDK dynamic proxy requires interface; CGLIB proxies concrete classes. Only public methods can be proxied. Self-invocation bypasses proxy (no AOP for internal calls). Spring AOP is method-level only â†’ AspectJ provides field/constructor interception with compile-time weaving.
+AOP guide: `@EnableAspectJAutoProxy` enables annotation-driven AOP. JDK dynamic proxy requires interface; CGLIB proxies concrete classes. Only public methods can be proxied. Self-invocation bypasses proxy (no AOP for internal calls). Spring AOP is method-level only → AspectJ provides field/constructor interception with compile-time weaving.
 
-### Q21: Spring Boot Actuator â†’ endpoints and metrics.
+### Q21: Spring Boot Actuator → endpoints and metrics.
 
 
 **Answer:** Actuator provides production-ready endpoints for monitoring and managing applications. Exposes health, metrics, info, env, loggers, and more via HTTP or JMX.
@@ -2544,22 +2544,22 @@ class FeaturesEndpoint {
 
 // === Key actuator endpoints ===
 /*
-GET  /actuator          â†’ List all enabled endpoints
-GET  /actuator/health   â†’ Application health (cascading)
-GET  /actuator/info     â†’ Application info
-GET  /actuator/metrics  â†’ Available metric names
-GET  /actuator/metrics/{name} â†’ Metric details
-GET  /actuator/env      â†’ Environment properties
-GET  /actuator/env/{name} â†’ Specific property
-GET  /actuator/loggers  â†’ Logger levels
-POST /actuator/loggers/{name} â†’ Change log level at runtime
-GET  /actuator/threaddump â†’ Thread dump
-GET  /actuator/heapdump   â†’ Heap dump (triggers download)
-GET  /actuator/beans      â†’ All Spring beans
-GET  /actuator/configprops â†’ Configuration properties
-GET  /actuator/mappings   â†’ Request mapping details
-POST /actuator/shutdown   â†’ Graceful shutdown (disabled by default)
-GET  /actuator/prometheus â†’ Prometheus-format metrics (if micrometer-registry-prometheus)
+GET  /actuator          → List all enabled endpoints
+GET  /actuator/health   → Application health (cascading)
+GET  /actuator/info     → Application info
+GET  /actuator/metrics  → Available metric names
+GET  /actuator/metrics/{name} → Metric details
+GET  /actuator/env      → Environment properties
+GET  /actuator/env/{name} → Specific property
+GET  /actuator/loggers  → Logger levels
+POST /actuator/loggers/{name} → Change log level at runtime
+GET  /actuator/threaddump → Thread dump
+GET  /actuator/heapdump   → Heap dump (triggers download)
+GET  /actuator/beans      → All Spring beans
+GET  /actuator/configprops → Configuration properties
+GET  /actuator/mappings   → Request mapping details
+POST /actuator/shutdown   → Graceful shutdown (disabled by default)
+GET  /actuator/prometheus → Prometheus-format metrics (if micrometer-registry-prometheus)
 */
 
 // === Health group ===
@@ -2569,13 +2569,13 @@ GET  /actuator/prometheus â†’ Prometheus-format metrics (if micrometer-regi
 
 // === Readiness and liveness probes (Kubernetes) ===
 // management.endpoint.health.probes.enabled=true
-// GET /actuator/health/readiness  â†’ app ready to serve traffic
-// GET /actuator/health/liveness   â†’ app is alive
+// GET /actuator/health/readiness  → app ready to serve traffic
+// GET /actuator/health/liveness   → app is alive
 ```
 
 Actuator endpoints can be exposed over JMX (default) and HTTP. Use `management.endpoints.web.exposure.include` and `exclude` for fine-grained control. Always secure actuator endpoints in production (separate port, internal network, RBAC).
 
-### Q22: Caching with Spring â†’ @Cacheable, @CacheEvict, @CachePut.
+### Q22: Caching with Spring → @Cacheable, @CacheEvict, @CachePut.
 
 
 **Answer:** Spring's Cache abstraction delegates to a cache provider (Redis, Caffeine, EhCache, Hazelcast) through CacheManager. Annotations control caching behavior declaratively.
@@ -2808,7 +2808,7 @@ class StringUtils {
 
 @Cacheable: checks cache first, executes method on miss. @CachePut: always executes, updates cache. @CacheEvict: removes entries. @Caching: groups multiple cache annotations. `sync=true` prevents concurrent cache misses (method-level locking). Redis, Caffeine, EhCache are production-ready providers.
 
-### Q23: Spring Scheduling â†’ @Scheduled and @Async.
+### Q23: Spring Scheduling → @Scheduled and @Async.
 
 
 **Answer:** @Scheduled triggers methods on a cron/fixed-delay/fixed-rate schedule. @Async executes methods asynchronously on a thread pool. Both require @EnableScheduling and @EnableAsync respectively.
@@ -3031,20 +3031,20 @@ class ExecutorConfig {
 
 // === Cron expression reference ===
 /*
- â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ second (0-59)
- â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ minute (0-59)
- â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ hour (0-23)
- â”‚ â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ day of month (1-31)
- â”‚ â”‚ â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ month (1-12 or JAN-DEC)
- â”‚ â”‚ â”‚ â”‚ â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€ day of week (0-7 or SUN-SAT, 0 and 7 = SUN)
- â”‚ â”‚ â”‚ â”‚ â”‚ â”‚
+ ┌───────── second (0-59)
+ │ ┌───────── minute (0-59)
+ │ │ ┌───────── hour (0-23)
+ │ │ │ ┌───────── day of month (1-31)
+ │ │ │ │ ┌───────── month (1-12 or JAN-DEC)
+ │ │ │ │ │ ┌───────── day of week (0-7 or SUN-SAT, 0 and 7 = SUN)
+ │ │ │ │ │ │
  * * * * * *
- 0 0 * * * *     â†’ every hour
- 0 */5 * * * *   â†’ every 5 minutes
- 0 0 8-17 * * MON-FRI â†’ every hour 8AM-5PM weekdays
- 0 0 0 1 * *     â†’ midnight on first day of month
- 0 0 0 ? * MON   â†’ midnight every Monday
- 0 0 0 1 JAN *   â†’ midnight on January 1st
+ 0 0 * * * *     → every hour
+ 0 */5 * * * *   → every 5 minutes
+ 0 0 8-17 * * MON-FRI → every hour 8AM-5PM weekdays
+ 0 0 0 1 * *     → midnight on first day of month
+ 0 0 0 ? * MON   → midnight every Monday
+ 0 0 0 1 JAN *   → midnight on January 1st
 */
 
 // === Important notes ===
@@ -3311,11 +3311,11 @@ app:
 
 // === Relaxed binding ===
 /*
-app.datasource.url           â†’ kebab case
-app.datasource.url           â†’ camel case
-app.datasource.url           â†’ underscore notation
-APP_DATASOURCE_URL            â†’ uppercase (environment variable)
-app.datasource.url            â†’ lowercase
+app.datasource.url           → kebab case
+app.datasource.url           → camel case
+app.datasource.url           → underscore notation
+APP_DATASOURCE_URL            → uppercase (environment variable)
+app.datasource.url            → lowercase
 */
 
 // === 3rd-party configuration ===
@@ -3336,14 +3336,14 @@ app.datasource.url            â†’ lowercase
 10. OS environment variables
 11. RandomValuePropertySource (random.*)
 12. Profile-specific application-{profile}.properties
-13. Application properties (application.yml/properties) â†’ last loaded wins
+13. Application properties (application.yml/properties) → last loaded wins
 14. @PropertySource on @Configuration classes
 */
 ```
 
 @ConfigurationProperties is the preferred way over @Value for structured config groups. Provides IDE autocompletion with spring-boot-configuration-processor. Supports relaxed binding, validation, and hierarchical structures. @Value is better for single, simple values.
 
-### Q25: Spring Profiles â†’ environment-specific configuration.
+### Q25: Spring Profiles → environment-specific configuration.
 
 
 **Answer:** Profiles activate different beans, properties, and configurations per environment. Use @Profile annotation, profile-specific files (application-dev.yml), or programmatic activation.
@@ -3442,7 +3442,7 @@ class ProdSpecificConfig {
 class DevOrStagingService {}
 
 @Service
-@Profile("dev & cloud") // AND condition â†’ both must be active
+@Profile("dev & cloud") // AND condition → both must be active
 class DevCloudService {}
 
 @Service
@@ -3484,11 +3484,11 @@ class PaymentApplication {
 // }
 
 // === Profile-specific properties files ===
-// application.yml           â†’ shared across all profiles
-// application-dev.yml       â†’ development overrides
-// application-staging.yml   â†’ staging overrides
-// application-prod.yml      â†’ production overrides
-// application-cloud.yml     â†’ cloud-specific (included via spring.profiles.include)
+// application.yml           → shared across all profiles
+// application-dev.yml       → development overrides
+// application-staging.yml   → staging overrides
+// application-prod.yml      → production overrides
+// application-cloud.yml     → cloud-specific (included via spring.profiles.include)
 
 // === @Profile on @Configuration classes ===
 @Configuration
@@ -3551,7 +3551,7 @@ class ProfileAwareService {
 @ConditionalOnExpression("${app.features.premium:false} and '${spring.profiles.active}' != 'dev'")
 class PremiumFeatureService {
     public void premiumOnly() {
-        System.out.println("Premium feature â†’ not available in dev");
+        System.out.println("Premium feature → not available in dev");
     }
 }
 
@@ -3606,9 +3606,9 @@ class JavaMailSenderImpl implements JavaMailSender {}
 interface JavaMailSender {}
 ```
 
-Profile groups simplify multi-profile environments. Use `spring.profiles.include` for cross-cutting profiles (monitoring, audit). Never hardcode prod credentials in profile config â†’ use environment variables or vault secrets. @Profile("!prod") for dev-only tools.
+Profile groups simplify multi-profile environments. Use `spring.profiles.include` for cross-cutting profiles (monitoring, audit). Never hardcode prod credentials in profile config → use environment variables or vault secrets. @Profile("!prod") for dev-only tools.
 
-### Q26: Spring Events â†’ ApplicationEventPublisher.
+### Q26: Spring Events → ApplicationEventPublisher.
 
 
 **Answer:** Spring's event mechanism enables loose coupling between components. ApplicationEventPublisher publishes events synchronously (default) or asynchronously (@Async on @EventListener). Events can be any Object (since Spring 4.2).
@@ -3875,17 +3875,17 @@ class EventTest {
 
 // === Spring built-in events ===
 /*
-ApplicationStartingEvent         â†’ before context refresh
-ApplicationEnvironmentPreparedEvent â†’ after env is available
+ApplicationStartingEvent         → before context refresh
+ApplicationEnvironmentPreparedEvent → after env is available
 ApplicationContextInitializedEvent
 ApplicationPreparedEvent
-ApplicationStartedEvent           â†’ context refreshed, app started
-AvailabilityChangeEvent           â†’ readiness/liveness state
-ApplicationReadyEvent             â†’ application is ready to serve
-ApplicationFailedEvent            â†’ on startup failure
-ContextRefreshedEvent             â†’ context refreshed
-ContextClosedEvent                â†’ context closed
-RequestHandledEvent               â†’ web request handled
+ApplicationStartedEvent           → context refreshed, app started
+AvailabilityChangeEvent           → readiness/liveness state
+ApplicationReadyEvent             → application is ready to serve
+ApplicationFailedEvent            → on startup failure
+ContextRefreshedEvent             → context refreshed
+ContextClosedEvent                → context closed
+RequestHandledEvent               → web request handled
 */
 
 // === Payload application event ===
@@ -3905,7 +3905,7 @@ class DirectPayloadListener {
 
 Events decouple publishers from listeners. Transactional events prevent sending notifications when DB operations fail. @Async on listeners prevents blocking the publisher. @Order controls listener execution sequence. Generic events enable typed payloads.
 
-### Q27: Spring Boot validation â†’ @Valid, @Validated, and custom validators.
+### Q27: Spring Boot validation → @Valid, @Validated, and custom validators.
 
 
 **Answer:** Bean Validation (Jakarta Validation) with Hibernate Validator enforces constraints on request bodies, method parameters, and fields. @Valid triggers validation. @Validated enables validation groups and method-level validation.
@@ -4215,23 +4215,23 @@ class UserService {
 
 // === Common built-in constraints ===
 /*
-@NotNull       â†’ value is not null
-@Null          â†’ value is null
-@NotBlank      â†’ string not null and trimmed length > 0
-@NotEmpty      â†’ collection/map/array not empty
-@Size          â†’ size between min/max (String, Collection, Map, Array)
-@Min / @Max    â†’ numeric min/max
-@Positive      â†’ positive number (> 0)
-@PositiveOrZero â†’ >= 0
-@Negative      â†’ < 0
-@Past          â†’ date in the past
-@PastOrPresent â†’ date in past or now
-@Future        â†’ date in the future
-@Email         â†’ email format
-@Pattern       â†’ regex match
-@Digits        â†’ integer and fraction digit count
-@AssertTrue    â†’ must be true
-@AssertFalse   â†’ must be false
+@NotNull       → value is not null
+@Null          → value is null
+@NotBlank      → string not null and trimmed length > 0
+@NotEmpty      → collection/map/array not empty
+@Size          → size between min/max (String, Collection, Map, Array)
+@Min / @Max    → numeric min/max
+@Positive      → positive number (> 0)
+@PositiveOrZero → >= 0
+@Negative      → < 0
+@Past          → date in the past
+@PastOrPresent → date in past or now
+@Future        → date in the future
+@Email         → email format
+@Pattern       → regex match
+@Digits        → integer and fraction digit count
+@AssertTrue    → must be true
+@AssertFalse   → must be false
 */
 ```
 
@@ -4278,14 +4278,14 @@ class PublicApiController {
 
     @GetMapping("/info")
     public String info() {
-        return "Public info â†’ open to all origins";
+        return "Public info → open to all origins";
     }
 
     // Override class-level CORS
     @CrossOrigin(origins = "https://trusted.partner.com")
     @GetMapping("/partner-data")
     public String partnerData() {
-        return "Sensitive data â†’ only trusted partner";
+        return "Sensitive data → only trusted partner";
     }
 
     @CrossOrigin(origins = {"https://admin.mycompany.com", "https://dashboard.mycompany.com"})
@@ -4393,11 +4393,11 @@ Preflighted: PUT, DELETE, PATCH, custom headers, non-simple Content-Type
 // === CORS debugging ===
 /*
 Common issues:
-1. No Access-Control-Allow-Origin in response â†’ check CORS config
-2. Credentials not allowed with wildcard origin â†’ specify exact origins
-3. Missing Access-Control-Allow-Headers â†’ check allowed headers
-4. Preflight cache too short â†’ increase maxAge
-5. Spring Security blocks before CORS â†’ ensure .cors() is configured
+1. No Access-Control-Allow-Origin in response → check CORS config
+2. Credentials not allowed with wildcard origin → specify exact origins
+3. Missing Access-Control-Allow-Headers → check allowed headers
+4. Preflight cache too short → increase maxAge
+5. Spring Security blocks before CORS → ensure .cors() is configured
 */
 
 // === Test endpoints for CORS debugging ===
@@ -4421,7 +4421,7 @@ class CorsDebugController {
 }
 ```
 
-CORS config in Spring Security must precede authorization rules. Use exact origins (not `*`) with `allowCredentials(true)`. Per-controller @CrossOrigin can override global config. Preflight OPTIONS requests are handled automatically but consume resources â†’ cache with maxAge.
+CORS config in Spring Security must precede authorization rules. Use exact origins (not `*`) with `allowCredentials(true)`. Per-controller @CrossOrigin can override global config. Preflight OPTIONS requests are handled automatically but consume resources → cache with maxAge.
 
 ### Q29: WebSocket support in Spring Boot.
 
@@ -4964,7 +4964,7 @@ class ErrorPageConfig implements WebServerFactoryCustomizer<ConfigurableServletW
 
 Embedded container choice affects memory, startup time, and throughput. Tomcat: most compatible. Jetty: lighter, faster startup. Undertow: async, lower memory. Graceful shutdown allows in-flight requests to complete. Compression reduces bandwidth at CPU cost.
 
-### Q31: Spring Boot DevTools â†’ restarts, LiveReload, and remote debugging.
+### Q31: Spring Boot DevTools → restarts, LiveReload, and remote debugging.
 
 
 **Answer:** DevTools improves development experience with automatic restarts, LiveReload, remote debugging, and H2 console. Disabled in production by default. Restart is faster than cold start thanks to classloader splitting.
@@ -5103,7 +5103,7 @@ spring.h2.console.enabled=true
 */
 ```
 
-DevTools restart relies on classloader splitting â†’ application code changes trigger context restart, while library JARs stay loaded, making restarts fast. Use trigger-file for explicit restart control. Never enable in production (auto-deactivates via packaging detection).
+DevTools restart relies on classloader splitting → application code changes trigger context restart, while library JARs stay loaded, making restarts fast. Use trigger-file for explicit restart control. Never enable in production (auto-deactivates via packaging detection).
 
 ### Q32: Content negotiation in Spring MVC.
 
@@ -5357,8 +5357,8 @@ Built-in HttpMessageConverters (order):
 5. SourceHttpMessageConverter
 6. AllEncompassingFormHttpMessageConverter
 7. MappingJackson2HttpMessageConverter (JSON)
-8. MappingJackson2XmlHttpMessageConverter (XML â†’ if Jackson XML extension on classpath)
-9. Jaxb2RootElementHttpMessageConverter (XML â†’ if JAXB on classpath)
+8. MappingJackson2XmlHttpMessageConverter (XML → if Jackson XML extension on classpath)
+9. Jaxb2RootElementHttpMessageConverter (XML → if JAXB on classpath)
 10. ProtobufHttpMessageConverter
 11. GsonHttpMessageConverter
 12. JsonbHttpMessageConverter
@@ -5369,7 +5369,7 @@ record Product(Long id, String name, Double price) {}
 
 Content negotiation enables REST API versioning through Accept header (vnd.myapp.v1+json). Use produces/consumes for fine-grained control. Custom message converters for non-standard formats (YAML, CSV, Protobuf). Extension-based negotiation is discouraged (removed in Spring MVC default config in recent versions).
 
-### Q33: Spring Boot externalized configuration â†’ Environment, @PropertySource, and property binding.
+### Q33: Spring Boot externalized configuration → Environment, @PropertySource, and property binding.
 
 
 **Answer:** Spring Boot's Environment abstraction provides unified access to property sources with ordered precedence. @PropertySource adds custom property files. Relaxed binding maps environment variables to @ConfigurationProperties.
@@ -5525,11 +5525,11 @@ Lowest priority:
 // === Relaxed binding examples ===
 /*
 Property source         Binds to @ConfigurationProperties(prefix="app.datasource")
-app.datasource.url      Ã¢Å“â€œ kebab case
-app.datasource.url      Ã¢Å“â€œ camel case (same)
-app.datasource.url      Ã¢Å“â€œ underscore
-APP_DATASOURCE_URL       Ã¢Å“â€œ uppercase (env variable)
-app.datasource.url      Ã¢Å“â€œ lowercase
+app.datasource.url      ✓ kebab case
+app.datasource.url      ✓ camel case (same)
+app.datasource.url      ✓ underscore
+APP_DATASOURCE_URL       ✓ uppercase (env variable)
+app.datasource.url      ✓ lowercase
 */
 
 // === Using @Value ===
@@ -5565,12 +5565,12 @@ class ValueAnnotationDemo {
 // String -> int, long, boolean, double, float, Duration, DataSize, Class, etc.
 // application.yml:
 // app:
-//   timeout: 30s           â†’ Duration
-//   max-size: 10MB         â†’ DataSize
-//   active: true           â†’ boolean
-//   threshold: 0.95        â†’ double
-//   role: ADMIN            â†’ Enum
-//   emails: a@x.com,b@x.com â†’ String[]
+//   timeout: 30s           → Duration
+//   max-size: 10MB         → DataSize
+//   active: true           → boolean
+//   threshold: 0.95        → double
+//   role: ADMIN            → Enum
+//   emails: a@x.com,b@x.com → String[]
 
 // === Custom PropertySourceFactory ===
 class YamlPropertySourceFactory extends DefaultPropertySourceFactory {
@@ -5616,7 +5616,7 @@ class YamlPropertySourceConfig {}
 
 Use @Value for simple properties, @ConfigurationProperties for structured groups. Environment is available anywhere Spring-managed. PropertySource ordering is critical for override behavior. Relaxed binding handles naming convention differences between property files and environment variables.
 
-### Q34: Spring Boot data access â†’ JdbcTemplate vs JPA vs Spring Data JDBC.
+### Q34: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC.
 
 
 **Answer:** Three approaches for data access: JdbcTemplate (full control, SQL), JPA/Hibernate (ORM, automatic schema management), Spring Data JDBC (aggregate-oriented, no lazy loading, simpler than JPA). Choose based on complexity and requirements.
@@ -6085,7 +6085,7 @@ class OrderLogger {
 
         log.info("Processing with MDC context");
 
-        // MDC is thread-local â†’ must clear in async scenarios
+        // MDC is thread-local → must clear in async scenarios
         MDC.clear();
     }
 }
@@ -6113,7 +6113,7 @@ class OrderLogger {
 //   include-application-name: true
 
 // === Color coding (console) ===
-// %highlight(%-5level) â†’ colors levels: ERROR=red, WARN=yellow, INFO=cyan, DEBUG=green, TRACE=gray
+// %highlight(%-5level) → colors levels: ERROR=red, WARN=yellow, INFO=cyan, DEBUG=green, TRACE=gray
 
 // === Conditional logging with properties ===
 @Service
@@ -6303,19 +6303,19 @@ class MdcFilter implements Filter {
 
 // === Log level hierarchy ===
 /*
-TRACE â†’ Most detailed, development only
-DEBUG â†’ Detailed info for debugging
-INFO  â†’ Important business events (startup, shutdown, major operations)
-WARN  â†’ Potentially harmful situations (deprecated API, unusual conditions)
-ERROR â†’ Errors that don't prevent app from running
-FATAL â†’ Severe errors causing termination (usually mapped to ERROR in Spring Boot)
-OFF  â†’ No logging
+TRACE → Most detailed, development only
+DEBUG → Detailed info for debugging
+INFO  → Important business events (startup, shutdown, major operations)
+WARN  → Potentially harmful situations (deprecated API, unusual conditions)
+ERROR → Errors that don't prevent app from running
+FATAL → Severe errors causing termination (usually mapped to ERROR in Spring Boot)
+OFF  → No logging
 */
 
 // === Changing log level at runtime (Actuator) ===
 // POST /actuator/loggers/com.example
 // {"configuredLevel": "DEBUG"}
-// GET /actuator/loggers â†’ list all loggers with current levels
+// GET /actuator/loggers → list all loggers with current levels
 ```
 
 Logback is default and sufficient for most applications. MDC provides contextual logging without passing state through method calls. Use structured logging (JSON) for log aggregation systems (ELK, Datadog, Splunk). Async appender prevents logging I/O from blocking application threads.
@@ -6525,7 +6525,7 @@ class ServiceInspector {
 // === Service mesh comparison ===
 /*
 Feature          Eureka            Kubernetes          Consul
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────────────
 Registration     Auto via client   Pod registration    Agent-based
 Health check     Configurable      Liveness/Readiness   Script/TTL
 Self-healing     Client eviction   Pod restart         Deregister
@@ -6843,7 +6843,7 @@ Spring Cloud Gateway is non-blocking end-to-end (Netty runtime). Key advantages 
 ### Q40: How do you use Resilience4j for fault tolerance?
 
 
-**Answer:** Resilience4j is a lightweight fault-tolerance library for Spring Boot that replaces the deprecated Hystrix. It provides CircuitBreaker, RateLimiter, Retry, Bulkhead, TimeLimiter, and Cache modules. Each module works independently, and they can be composed â†’ for example, retry wrapping a circuit breaker wrapping a rate limiter.
+**Answer:** Resilience4j is a lightweight fault-tolerance library for Spring Boot that replaces the deprecated Hystrix. It provides CircuitBreaker, RateLimiter, Retry, Bulkhead, TimeLimiter, and Cache modules. Each module works independently, and they can be composed → for example, retry wrapping a circuit breaker wrapping a rate limiter.
 
 ```java
 // === Dependencies ===
@@ -7032,14 +7032,14 @@ class CircuitBreakerLogger {
 }
 ```
 
-Resilience4j follows the decorator pattern. Modules are composable (RateLimiter â†’ CircuitBreaker â†’ Retry). Use Micrometer integration for Prometheus/Grafana dashboards. Always test circuit breaker transitions in integration tests by simulating failures.
+Resilience4j follows the decorator pattern. Modules are composable (RateLimiter → CircuitBreaker → Retry). Use Micrometer integration for Prometheus/Grafana dashboards. Always test circuit breaker transitions in integration tests by simulating failures.
 ### Q41: How does WebClient differ from RestTemplate?
 
 
 **Answer:** WebClient is the reactive, non-blocking HTTP client introduced in Spring WebFlux. Unlike RestTemplate (which blocks the calling thread per request), WebClient uses Reactor's event loop model to handle many concurrent requests with few threads. RestTemplate is deprecated in Spring Boot 3.x and will be removed in a future version.
 
 ```java
-// === RestTemplate (blocking â†’ deprecated) ===
+// === RestTemplate (blocking → deprecated) ===
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
@@ -7063,7 +7063,7 @@ class RestTemplateExample {
             orderData, String.class);
     }
 
-    // Blocking â†’ each call uses one thread
+    // Blocking → each call uses one thread
     public void sequentialCalls() {
         long start = System.currentTimeMillis();
         String order = getOrderSync("123");
@@ -7074,7 +7074,7 @@ class RestTemplateExample {
     }
 }
 
-// === WebClient (reactive â†’ non-blocking) ===
+// === WebClient (reactive → non-blocking) ===
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -7105,7 +7105,7 @@ class WebClientExample {
             .bodyToMono(String.class);
     }
 
-    // Parallel calls â†’ all 3 execute concurrently
+    // Parallel calls → all 3 execute concurrently
     public Mono<Long> parallelCalls() {
         long start = System.currentTimeMillis();
         Mono<String> order = getOrderReactive("123");
@@ -7170,7 +7170,7 @@ class WebClientConfig {
 // === Migration guide ===
 /*
 Concept              RestTemplate                WebClient
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────────────────
 Request method       getForObject()              .get().retrieve()
 POST body            postForObject()             .post().bodyValue()
 URI params           Object... args              uri(..., args)
@@ -7184,11 +7184,11 @@ Timeouts             setConnectTimeout           HttpClient config
 */
 ```
 
-Use WebClient for all new development. For existing RestTemplate code, migrate incrementally â†’ the reactive API can be adapted to blocking with `.block()` when necessary. WebClient works equally well in both WebFlux and traditional Spring MVC applications.
+Use WebClient for all new development. For existing RestTemplate code, migrate incrementally → the reactive API can be adapted to blocking with `.block()` when necessary. WebClient works equally well in both WebFlux and traditional Spring MVC applications.
 ### Q42: What is Spring Batch and how does it work?
 
 
-**Answer:** Spring Batch provides a robust framework for batch processing â†’ reading large datasets, transforming them, and writing results. Core concepts: Job (containing steps), Step (chunk-oriented: ItemReader â†’ ItemProcessor â†’ ItemWriter), JobRepository (metadata persistence), and JobLauncher (execution trigger). It supports restart, skip, retry, partitioning, and multi-threaded steps.
+**Answer:** Spring Batch provides a robust framework for batch processing → reading large datasets, transforming them, and writing results. Core concepts: Job (containing steps), Step (chunk-oriented: ItemReader → ItemProcessor → ItemWriter), JobRepository (metadata persistence), and JobLauncher (execution trigger). It supports restart, skip, retry, partitioning, and multi-threaded steps.
 
 ```java
 // === Dependencies ===
@@ -7371,10 +7371,10 @@ spring:
 
 // === Batch metadata tables ===
 /*
-BATCH_JOB_INSTANCE       â†’ Job identity (job name + job key)
-BATCH_JOB_EXECUTION      â†’ Job execution with status
-BATCH_JOB_EXECUTION_PARAMS â†’ Parameters used for execution
-BATCH_STEP_EXECUTION     â†’ Step-level execution details
+BATCH_JOB_INSTANCE       → Job identity (job name + job key)
+BATCH_JOB_EXECUTION      → Job execution with status
+BATCH_JOB_EXECUTION_PARAMS → Parameters used for execution
+BATCH_STEP_EXECUTION     → Step-level execution details
 */
 ```
 
@@ -7562,7 +7562,7 @@ class RedisDirectOperations {
 @Cacheable(value = "products", sync = true)  // Locks per key
 
 Feature           Redis            Caffeine         Hazelcast
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+───────────────────────────────────────────────────────────────
 Architecture      External server  In-process        Distributed
 Speed             1-5ms (network)  <1ms              <1ms (local)
 Persistence       Yes              No                Yes
@@ -7572,7 +7572,7 @@ Distributed       Yes              No                Yes (clustered)
 */
 ```
 
-Use @Cacheable(sync=true) for hot keys to prevent cache stampede. Monitor cache hit ratios via Actuator metrics â†’ ratios below 80% indicate poor cache configuration. For production, configure Redis Sentinel or Cluster for high availability.
+Use @Cacheable(sync=true) for hot keys to prevent cache stampede. Monitor cache hit ratios via Actuator metrics → ratios below 80% indicate poor cache configuration. For production, configure Redis Sentinel or Cluster for high availability.
 ### Q44: How do you use MongoDB with Spring Data?
 
 
@@ -7729,7 +7729,7 @@ class OrderService {
 // === MongoDB vs RDBMS ===
 /*
 Concept         RDBMS               MongoDB
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────
 Table           table               collection
 Row             row                 document
 Column          column              field
@@ -7747,7 +7747,7 @@ Design documents around query patterns, not normalization rules. Use embedded do
 **Answer:** Docker containers package Spring Boot apps with their runtime environment. Spring Boot supports multiple Docker image-building strategies: layered JARs (efficient caching), Cloud Native Buildpacks (no Dockerfile needed), and multi-stage Dockerfiles. Layered JARs separate application code from dependencies, enabling faster rebuilds by caching unchanged layers.
 
 ```java
-// === 1. Layered JAR (Spring Boot 2.3+ â†’ best for Docker) ===
+// === 1. Layered JAR (Spring Boot 2.3+ → best for Docker) ===
 /*
 # pom.xml
 
@@ -7900,7 +7900,7 @@ ENTRYPOINT ["java", \
   "-Djava.security.egd=file:/dev/./urandom", \
   "-jar", "app.jar"]
 
-# Memory: container limit 512m â†’ 384m heap (75%), 128m for native
+# Memory: container limit 512m → 384m heap (75%), 128m for native
 
 > **Previous:** [Java Core Interview Q&amp;A](./56-interview-java.md) | **Next:** [REST API Interview Q&amp;A](./58-interview-rest-api.md)
 */
@@ -7917,14 +7917,14 @@ target/
 // === 8. Image optimization ===
 /*
 1. Use slim JRE images: eclipse-temurin:21-jre (~110MB)
-2. Layer caching â†’ copy pom.xml before source
+2. Layer caching → copy pom.xml before source
 3. .dockerignore to reduce Docker context
 4. DOCKER_BUILDKIT=1 for parallel builds
 5. Distroless: gcr.io/distroless/java21 (~90MB)
 */
 ```
 
-Docker containerizes apps for consistent environments. Layered JAR is most efficient for iterative development â†’ dependency layers cached, only app code changes. Buildpacks offer zero-config images. For production: health checks, non-root user, proper JVM memory settings.
+Docker containerizes apps for consistent environments. Layered JAR is most efficient for iterative development → dependency layers cached, only app code changes. Buildpacks offer zero-config images. For production: health checks, non-root user, proper JVM memory settings.
 ### Q46: What are custom Actuator endpoints and health indicators?
 
 
@@ -8095,7 +8095,7 @@ management:
 // === Built-in endpoints ===
 /*
 Endpoint         ID              Exposed  Description
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────
 Health           health          Yes      App + dependency health
 Info             info            Yes      App metadata
 Metrics          metrics         Yes      Micrometer metrics
@@ -8107,8 +8107,8 @@ Heapdump         heapdump        No       JVM heap dump
 */
 ```
 
-Health indicators should implement lightweight, fast checks â†’ never make heavy computation in a health check. Use custom endpoints for administrative operations (feature flags, cache warming) that don't belong in the main API surface.
-### Q47: Filter vs Interceptor vs AOP â†’ when to use which?
+Health indicators should implement lightweight, fast checks → never make heavy computation in a health check. Use custom endpoints for administrative operations (feature flags, cache warming) that don't belong in the main API surface.
+### Q47: Filter vs Interceptor vs AOP → when to use which?
 
 
 **Answer:** Spring provides three layers for cross-cutting behavior: Filters (Servlet level), Interceptors (Handler/MVC level), and AOP (Method level). Filters operate on raw HTTP request/response before any Spring processing. Interceptors work after HandlerMapping but before/after controller execution. AOP applies to Spring beans at the method execution level. Filters lack Spring context awareness; AOP provides the finest granularity.
@@ -8138,7 +8138,7 @@ class RequestTimingFilter implements Filter {
             HttpServletResponse httpResponse = (HttpServletResponse) response;
             Duration elapsed = Duration.between(start, Instant.now());
             System.out.println("[Filter] " + httpRequest.getMethod() + " " +
-                httpRequest.getRequestURI() + " â†’ " +
+                httpRequest.getRequestURI() + " → " +
                 httpResponse.getStatus() + " (" + elapsed.toMillis() + "ms)");
         }
     }
@@ -8240,7 +8240,7 @@ class MethodLoggingAspect {
 // === Comparison ===
 /*
 Feature         Filter            Interceptor          AOP
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────────
 Level           Servlet           Spring MVC           Method (bean)
 Access to       Request/Response  Request/Response +   Method params,
                                     Handler + Model      annotations
@@ -8259,7 +8259,7 @@ Use cases:
 // === Spring Boot auto-configured filters ===
 /*
 Filter                  Class                    Purpose
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────────────────
 CharacterEncodingFilter CharacterEncodingFilter  Request encoding
 HiddenHttpMethodFilter  HiddenHttpMethodFilter   _method override
 FormContentFilter       FormContentFilter        PUT/DELETE form data
@@ -8267,13 +8267,13 @@ FormContentFilter       FormContentFilter        PUT/DELETE form data
 ```
 
 Choose the right layer: Filters for HTTP, Interceptors for MVC, AOP for method-level concerns. Overusing AOP makes code harder to debug. Filter if no handler needed, Interceptor if handler needed, AOP if method internals needed.
-### Q48: Spring Boot 3.x migration â†’ key changes and considerations?
+### Q48: Spring Boot 3.x migration → key changes and considerations?
 
 
-**Answer:** Spring Boot 3.x migrates from Java EE to Jakarta EE (javax.* â†’ jakarta.*), requires Java 17+, and introduces AOT (Ahead-of-Time) compilation for GraalVM native images. Key changes include Micrometer Observation API, ProblemDetails (RFC 7807) for errors, and removal of deprecated classes. Migration requires updating all imports, upgrading dependencies, and testing native image compatibility.
+**Answer:** Spring Boot 3.x migrates from Java EE to Jakarta EE (javax.* → jakarta.*), requires Java 17+, and introduces AOT (Ahead-of-Time) compilation for GraalVM native images. Key changes include Micrometer Observation API, ProblemDetails (RFC 7807) for errors, and removal of deprecated classes. Migration requires updating all imports, upgrading dependencies, and testing native image compatibility.
 
 ```java
-// === 1. Jakarta EE migration (javax.* â†’ jakarta.*) ===
+// === 1. Jakarta EE migration (javax.* → jakarta.*) ===
 // Before (SB 2.x):             After (SB 3.x):
 // import javax.persistence.*;  import jakarta.persistence.*;
 // import javax.validation.*;   import jakarta.validation.*;
@@ -8328,7 +8328,7 @@ Deprecated:
 # mvn -Pnative native:compile
 
 > **Previous:** [Java Core Interview Q&amp;A](./56-interview-java.md) | **Next:** [REST API Interview Q&amp;A](./58-interview-rest-api.md)
-# ./target/myapp  â†’ starts in <100ms
+# ./target/myapp  → starts in <100ms
 
 > **Previous:** [Java Core Interview Q&amp;A](./56-interview-java.md) | **Next:** [REST API Interview Q&amp;A](./58-interview-rest-api.md)
 */
@@ -8382,7 +8382,7 @@ class ProblemDetailsExceptionHandler {
 // === 8. Dependency versions ===
 /*
 Dependency         SB 2.7.x        SB 3.2.x
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+────────────────────────────────────────────
 Java               8/11/17         17
 Spring Framework   5.3.x           6.1.x
 Jakarta EE         8 (javax.*)     10 (jakarta.*)
@@ -8396,9 +8396,9 @@ JUnit              5.8.x           5.10.x
 /*
 [ ] Java 17+
 [ ] Update Spring Boot version
-[ ] Run OpenRewrite (javax.* â†’ jakarta.*)
+[ ] Run OpenRewrite (javax.* → jakarta.*)
 [ ] Update dependencies for Jakarta compatibility
-[ ] Replace deprecated APIs (RestTemplate â†’ WebClient)
+[ ] Replace deprecated APIs (RestTemplate → WebClient)
 [ ] Update auto-configuration to new .imports format
 [ ] Update Docker base images
 [ ] Run full test suite
@@ -8406,8 +8406,8 @@ JUnit              5.8.x           5.10.x
 */
 ```
 
-Use OpenRewrite to automate the javaxâ†’jakarta migration. AOT/native compilation is optional but provides dramatic startup improvements (100ms vs 3-5s). ProblemDetail standardizes error responses. Plan 2-4 weeks migration for enterprise apps.
-### Q49: BeanFactory vs ApplicationContext â†’ what's the difference?
+Use OpenRewrite to automate the javax→jakarta migration. AOT/native compilation is optional but provides dramatic startup improvements (100ms vs 3-5s). ProblemDetail standardizes error responses. Plan 2-4 weeks migration for enterprise apps.
+### Q49: BeanFactory vs ApplicationContext → what's the difference?
 
 
 **Answer:** ApplicationContext is a superset of BeanFactory. BeanFactory provides basic IoC (lazy initialization, dependency injection). ApplicationContext adds enterprise features: AOP integration, internationalization (MessageSource), event publishing (ApplicationEventPublisher), and annotation-based configuration. In Spring Boot, ApplicationContext is always used.
@@ -8519,7 +8519,7 @@ class ConfigurableContextExample {
 // === Comparison ===
 /*
 Feature              BeanFactory                        ApplicationContext
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────────────────────────────────────────────────────────
 Initialization       Lazy (on getBean)                  Eager (on refresh)
 Annotation support   No                                 Yes (@Autowired, etc.)
 AOP support          No                                 Yes (auto-proxying)
@@ -8580,8 +8580,8 @@ ApplicationContext adds:
 */
 ```
 
-ApplicationContext is the container you should always use. BeanFactory is an implementation detail â†’ Spring Boot never exposes it directly. The lazy vs eager distinction affects startup time, but ApplicationContext's features (AOP, events, @Autowired) are essential for any non-trivial application.
-### Q50: Spring ecosystem comparison â†’ Spring MVC vs WebFlux vs WebMvc.fn?
+ApplicationContext is the container you should always use. BeanFactory is an implementation detail → Spring Boot never exposes it directly. The lazy vs eager distinction affects startup time, but ApplicationContext's features (AOP, events, @Autowired) are essential for any non-trivial application.
+### Q50: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?
 
 
 **Answer:** Spring MVC (annotation-based, blocking I/O) is the standard for traditional web apps. Spring WebFlux (functional, reactive, non-blocking) excels at high concurrency and streaming. WebMvc.fn (functional DSL for MVC) provides a concise alternative to annotations within the blocking stack. Choose based on your concurrency model, data layer, and team familiarity.
@@ -8779,7 +8779,7 @@ class OrderHandler {
 // === Comparison ===
 /*
 Feature         Spring MVC          WebFlux              WebMvc.fn
-â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+─────────────────────────────────────────────────────────────────────
 I/O model       Blocking            Non-blocking         Blocking
 Thread model    Thread-per-request  Event loop           Thread-per-request
 Server          Tomcat/Jetty        Netty                Tomcat/Jetty
@@ -8794,13 +8794,13 @@ When to choose:
 - WebFlux: High concurrency (10K+ connections), streaming, WebSockets
 - WebMvc.fn: MVC benefits + functional style (testable, composable)
 
-Do NOT choose WebFlux just for "better performance" â†’ it's only beneficial
+Do NOT choose WebFlux just for "better performance" → it's only beneficial
 when your data layer is also reactive. Pairing WebFlux with blocking JPA
 gives the worst of both worlds.
 */
 ```
 
-Spring MVC is the right choice for most applications. WebFlux excels at high concurrency (10K+ connections) and streaming â†’ but requires a reactive data layer (R2DBC, MongoDB Reactive). WebMvc.fn offers functional composition within the familiar MVC stack. Don't mix WebFlux with blocking JPA.
+Spring MVC is the right choice for most applications. WebFlux excels at high concurrency (10K+ connections) and streaming → but requires a reactive data layer (R2DBC, MongoDB Reactive). WebMvc.fn offers functional composition within the familiar MVC stack. Don't mix WebFlux with blocking JPA.
 
 ## Concept Comparison Table
 

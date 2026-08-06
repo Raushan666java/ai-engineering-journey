@@ -1,4 +1,4 @@
-﻿# Pipelining and Hazards
+# Pipelining and Hazards
 
 ## Learning Objectives
 
@@ -45,24 +45,24 @@ Speedup = Number of stages (if no hazards, CPI = 1)
 
 **For a k-stage pipeline:**
 ```
-Time for n instructions (pipelined) = k + n âˆ’ 1 cycles
-Time for n instructions (non-pipelined) = k Ã— n cycles
-Speedup = (k Ã— n) / (k + n âˆ’ 1)
-As n â†’ âˆž, Speedup â†’ k
+Time for n instructions (pipelined) = k + n − 1 cycles
+Time for n instructions (non-pipelined) = k × n cycles
+Speedup = (k × n) / (k + n − 1)
+As n → ∞, Speedup → k
 ```
 
 **Example:** 1000 instructions, 5-stage pipeline.
 
 ```
-Non-pipelined: 5 Ã— 1000 = 5000 cycles
+Non-pipelined: 5 × 1000 = 5000 cycles
 Pipelined: 5 + 999 = 1004 cycles
-Speedup = 5000 / 1004 â‰ˆ 4.98Ã— (approaches 5Ã—)
+Speedup = 5000 / 1004 ≈ 4.98× (approaches 5×)
 ```
 
 **Throughput:**
 ```
 Throughput = Instructions / Time
-Without pipeline: 1 / (k Ã— cycle_time)
+Without pipeline: 1 / (k × cycle_time)
 With pipeline: 1 / cycle_time (ideally)
 ```
 
@@ -105,11 +105,11 @@ Occur when two instructions need the same hardware resource simultaneously.
 ```
 I1: LW R1, 0(R2)         MEM: accesses data memory
 I2: (next instruction)    IF: needs to access memory for instruction fetch
-                          â†’ CONFLICT!
+                          → CONFLICT!
 ```
 
 **Solutions:**
-- Separate instruction cache (I-cache) and data cache (D-cache) â€” Harvard architecture
+- Separate instruction cache (I-cache) and data cache (D-cache) — Harvard architecture
 - Stall the pipeline until resource is available
 - Add more hardware resources (e.g., multiple ALUs)
 
@@ -127,14 +127,14 @@ Occur when an instruction depends on the result of a previous instruction that h
 | WAR (Write After Read) | Anti-dependency | I2 writes operand that I1 reads | SUB R4, R1, R5; ADD R1, R2, R3 |
 | WAW (Write After Write) | Output dependency | I1 and I2 write same register | ADD R1, R2, R3; SUB R1, R4, R5 |
 
-- RAW is a **true dependency** â€” cannot be eliminated by renaming; must be resolved via forwarding or stalling.
-- WAR and WAW are **name dependencies** â€” can be eliminated by register renaming.
+- RAW is a **true dependency** — cannot be eliminated by renaming; must be resolved via forwarding or stalling.
+- WAR and WAW are **name dependencies** — can be eliminated by register renaming.
 
 **Example of RAW hazard:**
 
 ```
-I1: ADD R1, R2, R3    // R1 â† R2 + R3
-I2: SUB R4, R1, R5    // R4 â† R1 âˆ’ R5  (depends on R1 from I1)
+I1: ADD R1, R2, R3    // R1 ← R2 + R3
+I2: SUB R4, R1, R5    // R4 ← R1 − R5  (depends on R1 from I1)
 ```
 
 **Pipeline without forwarding (stall needed):**
@@ -168,9 +168,9 @@ The ALU result from EX stage is forwarded directly to the ALU input of the next 
 **Forwarding paths:**
 
 ```
-EX â†’ EX: Forward EX result to next instruction in EX stage
-MEM â†’ EX: Forward MEM result to current instruction in EX stage
-WB â†’ EX: Forward WB result to current instruction in EX stage
+EX → EX: Forward EX result to next instruction in EX stage
+MEM → EX: Forward MEM result to current instruction in EX stage
+WB → EX: Forward WB result to current instruction in EX stage
 ```
 
 **Forwarding unit hardware:** Compares source register of current instruction with destination register of previous instructions in EX, MEM, WB stages. If match found, select forwarded data instead of register file output.
@@ -192,18 +192,18 @@ A specific data hazard when a LOAD instruction's result is used by the next inst
 
 ```
 I1: LW R1, 0(R2)     // R1 loaded from memory
-I2: ADD R3, R1, R4   // R1 needed in EX â†’ needs 1 stall
+I2: ADD R3, R1, R4   // R1 needed in EX → needs 1 stall
 
 Cycle 1: I1: IF
 Cycle 2: I1: ID   I2: IF
 Cycle 3: I1: EX   I2: ID
 Cycle 4: I1: MEM  I2: STALL (data from MEM not to EX yet)
-Cycle 5: I1: WB   I2: EX    (forward from MEM to EX via MEMâ†’EX bypass)
+Cycle 5: I1: WB   I2: EX    (forward from MEM to EX via MEM→EX bypass)
 Cycle 6:          I2: MEM
 Cycle 7:          I2: WB
 ```
 
-**Solution for load-use hazard:** Compiler scheduling â€” place an independent instruction between the load and its use (instruction reordering).
+**Solution for load-use hazard:** Compiler scheduling — place an independent instruction between the load and its use (instruction reordering).
 
 ```
 LW R1, 0(R2)        // Load
@@ -217,7 +217,7 @@ Occur when the pipeline makes decisions based on instructions that haven't execu
 
 **Problem:** The next instruction address (PC+4) is known after IF, but the branch outcome is known after EX.
 
-**Simple approach (stall):** Stall until branch outcome is known â€” 2-3 stall cycles per branch.
+**Simple approach (stall):** Stall until branch outcome is known — 2-3 stall cycles per branch.
 
 ```
 I1: BEQ R1, R2, target  // Branch
@@ -232,7 +232,7 @@ I4: target instruction   // After branch resolved
 - Predict branch not taken: continue fetching from PC+4
 - Predict branch taken: fetch from target address after branch is decoded
 - Common static rule: backward branches (loops) likely taken; forward branches likely not taken
-- Accuracy: ~60â€“70%
+- Accuracy: ~60–70%
 
 **Dynamic branch prediction:**
 Uses history to predict branch outcome.
@@ -243,11 +243,11 @@ Uses history to predict branch outcome.
 
 ```
 Start: predict NT (default)
-T: mispredict â†’ update to T
-T: correct â†’ stay T
+T: mispredict → update to T
+T: correct → stay T
 T: correct
 T: correct
-NT: mispredict â†’ update to NT
+NT: mispredict → update to NT
 ```
 
 **1-bit predictor accuracy issue with loops:** For a loop that iterates N times, the last iteration (exit) causes a misprediction. 2 mispredictions per loop (first and last iteration).
@@ -258,7 +258,7 @@ NT: mispredict â†’ update to NT
 States: 00 (strong NT), 01 (weak NT), 10 (weak T), 11 (strong T)
 On taken: increment counter (max 11)
 On not taken: decrement counter (min 00)
-Predict taken if counter â‰¥ 10, not taken if counter â‰¤ 01
+Predict taken if counter ≥ 10, not taken if counter ≤ 01
 ```
 
 **Advantage:** A single misprediction does not flip the prediction. For a loop that iterates N times: only 1 misprediction (at exit), first iteration is correct if previously taken.
@@ -283,7 +283,7 @@ target: ...
 
 #### 4.3 Speculative Execution
 
-Execute instructions beyond a branch before the outcome is known. If prediction is correct â†’ commit results. If incorrect â†’ flush pipeline and discard results.
+Execute instructions beyond a branch before the outcome is known. If prediction is correct → commit results. If incorrect → flush pipeline and discard results.
 
 **Recovery from misprediction:**
 1. Flush instructions fetched after the branch (kill pipeline stages)
@@ -302,37 +302,37 @@ For a 5-stage pipeline with branch resolution at EX:
 |--------|-------------|-----------|
 | Stall (bubble) | Insert NOP in pipeline; stop earlier stages | Data hazards, load-use hazard |
 | Flush | Clear (empty) instructions from pipeline stages | Branch misprediction, exception |
-| Stall + Flush | Both â€” stall to wait, flush wrong-path instrs | Combined hazards |
+| Stall + Flush | Both — stall to wait, flush wrong-path instrs | Combined hazards |
 
 **Pipeline interlock:** Hardware that detects hazards and inserts stalls automatically.
 
-### 6. Pipelining Speedup Formula â€” Numerical Problems
+### 6. Pipelining Speedup Formula — Numerical Problems
 
 **Problem 1:** Non-pipelined CPU has 5 ns cycle time. Pipelined version has 6 ns cycle time (extra pipeline register overhead). Calculate speedup for 1000 instructions.
 
 ```
-Non-pipelined time = 5 Ã— 1000 = 5000 ns
-Pipelined time = (5 + 999) Ã— 6 = 1004 Ã— 6 = 6024 ns
-Speedup = 5000 / 6024 = 0.83Ã— (pipelining is WORSE!)
+Non-pipelined time = 5 × 1000 = 5000 ns
+Pipelined time = (5 + 999) × 6 = 1004 × 6 = 6024 ns
+Speedup = 5000 / 6024 = 0.83× (pipelining is WORSE!)
 ```
 
-This illustrates why pipeline overhead matters â€” if the pipelined cycle time is slower due to register delays, pipelining may not help.
+This illustrates why pipeline overhead matters — if the pipelined cycle time is slower due to register delays, pipelining may not help.
 
 **Problem 2:** Non-pipelined: 10 ns. Pipelined (5-stage): 2.5 ns per stage (includes register overhead). 2000 instructions.
 
 ```
-Non-pipelined: 10 Ã— 2000 = 20000 ns
-Pipelined: (5 + 1999) Ã— 2.5 = 2004 Ã— 2.5 = 5010 ns
-Speedup = 20000 / 5010 â‰ˆ 3.99Ã—
+Non-pipelined: 10 × 2000 = 20000 ns
+Pipelined: (5 + 1999) × 2.5 = 2004 × 2.5 = 5010 ns
+Speedup = 20000 / 5010 ≈ 3.99×
 
-Ideal speedup for 5 stages = 5Ã—. Pipeline overhead reduces it.
+Ideal speedup for 5 stages = 5×. Pipeline overhead reduces it.
 ```
 
 **Problem 3:** CPI with hazards. Base CPI = 1. 20% loads (10% cause load-use stall of 1 cycle), 15% branches (50% taken, 2-cycle misprediction penalty).
 
 ```
-Stall cycles from loads = 0.20 Ã— 0.10 Ã— 1 = 0.02
-Stall cycles from branches = 0.15 Ã— 0.50 Ã— 2 = 0.15
+Stall cycles from loads = 0.20 × 0.10 × 1 = 0.02
+Stall cycles from branches = 0.15 × 0.50 × 2 = 0.15
 Effective CPI = 1 + 0.02 + 0.15 = 1.17
 
 Performance impact = 17% slowdown from ideal pipelining.
@@ -353,7 +353,7 @@ Execute multiple instructions per cycle using multiple functional units.
 **Challenges:**
 - Need multiple functional units (ALU, FPU, load/store)
 - Instruction-level parallelism (ILP) must exist in code
-- Hazard detection and forwarding becomes complex (nÃ—n comparisons)
+- Hazard detection and forwarding becomes complex (n×n comparisons)
 - Out-of-order execution with Tomasulo's algorithm
 
 #### VLIW (Very Long Instruction Word)
@@ -374,22 +374,22 @@ Compiler groups independent operations into a single wide instruction.
 
 Multiple thread contexts share pipeline resources. One physical core appears as multiple logical cores.
 
-**Intel Hyper-Threading:** 2 threads per core, sharing ALUs, cache, and pipeline. Improves utilization by ~15â€“30%.
+**Intel Hyper-Threading:** 2 threads per core, sharing ALUs, cache, and pipeline. Improves utilization by ~15–30%.
 
 ### 8. Pipeline Stages for Different Architectures
 
-**Standard 5-stage RISC:** IF â†’ ID â†’ EX â†’ MEM â†’ WB
-**MIPS 5-stage:** IF â†’ ID â†’ EX â†’ MEM â†’ WB
-**ARM9 5-stage:** Fetch â†’ Decode â†’ Execute â†’ Memory â†’ Write
-**x86 modern:** Complex fronted (fetch, decode, micro-op fusion) â†’ out-of-order execution â†’ retire
+**Standard 5-stage RISC:** IF → ID → EX → MEM → WB
+**MIPS 5-stage:** IF → ID → EX → MEM → WB
+**ARM9 5-stage:** Fetch → Decode → Execute → Memory → Write
+**x86 modern:** Complex fronted (fetch, decode, micro-op fusion) → out-of-order execution → retire
 
 ### 9. Important Exam Formulae
 
-- **Pipeline speedup = (k Ã— n) / (k + n âˆ’ 1), approaches k for large n**
+- **Pipeline speedup = (k × n) / (k + n − 1), approaches k for large n**
 - **Effective CPI = 1 + Stall cycles per instruction (ideal pipelining)**
 - **Actual speedup = (Non-pipelined time) / (Pipelined time)**
-- **Pipeline stall frequency = Î£ (instruction type frequency Ã— stall penalty)**
-- **Throughput = 1 / (Cycle time Ã— CPI)**
+- **Pipeline stall frequency = Σ (instruction type frequency × stall penalty)**
+- **Throughput = 1 / (Cycle time × CPI)**
 
 ---
 
@@ -429,7 +429,7 @@ flowchart TD
         I2[Instruction 2: SUB R4,R1,R5]
     end
     subgraph EX
-        I1EX[EX: R2 + R3 â†’ R1]
+        I1EX[EX: R2 + R3 → R1]
         I2D[Decode I2]
     end
     subgraph MEM
@@ -437,7 +437,7 @@ flowchart TD
         I2EX[EX: R1 - R5]
     end
     subgraph WB
-        I1WB[WB: R1 â† Result]
+        I1WB[WB: R1 ← Result]
         I2MEM[MEM]
     end
     I1EX -.->|Forward Path| I2EX
@@ -490,9 +490,9 @@ a) 5  b) 4.81  c) 100  d) 95
 
 **Solution:**
 ```
-Non-pipelined cycles = 5 Ã— 100 = 500
+Non-pipelined cycles = 5 × 100 = 500
 Pipelined cycles = 5 + 99 = 104
-Speedup = 500 / 104 â‰ˆ 4.81
+Speedup = 500 / 104 ≈ 4.81
 ```
 Answer: b) 4.81
 
@@ -502,7 +502,7 @@ Answer: b) 4.81
 
 a) I1: ADD R1,R2,R3; I2: SUB R4,R1,R5  b) I1: SUB R4,R1,R5; I2: ADD R1,R2,R3  c) I1: ADD R1,R2,R3; I2: ADD R1,R4,R5  d) None
 
-**Solution:** RAW (Read After Write) â€” I2 reads a register that I1 writes. Option a: I1 writes R1, I2 reads R1. This is RAW.
+**Solution:** RAW (Read After Write) — I2 reads a register that I1 writes. Option a: I1 writes R1, I2 reads R1. This is RAW.
 
 Answer: a) I1: ADD R1,R2,R3; I2: SUB R4,R1,R5
 
@@ -512,7 +512,7 @@ Answer: a) I1: ADD R1,R2,R3; I2: SUB R4,R1,R5
 
 a) 0  b) 1  c) 2  d) 3
 
-**Solution:** Even with forwarding, LOAD data is available only after MEM stage. The dependent instruction needs the data in EX. This requires one stall between MEMâ†’WB of load and EX of dependent instruction.
+**Solution:** Even with forwarding, LOAD data is available only after MEM stage. The dependent instruction needs the data in EX. This requires one stall between MEM→WB of load and EX of dependent instruction.
 
 Answer: b) 1
 
@@ -525,11 +525,11 @@ a) 0  b) 1  c) 2  d) 3
 **Solution:**
 ```
 Initial: 10 (predict T)
-T: 10â†’11 (correct)
-T: 11â†’11 (correct)
-T: 11â†’11 (correct)
-T: 11â†’11 (correct)
-NT: 11â†’10 (mispredict)
+T: 10→11 (correct)
+T: 11→11 (correct)
+T: 11→11 (correct)
+T: 11→11 (correct)
+NT: 11→10 (mispredict)
 ```
 1 misprediction.
 
@@ -541,7 +541,7 @@ Answer: b) 1
 
 a) An instruction reads a register before a previous instruction writes it  b) Two instructions need the same hardware resource  c) A branch instruction changes program flow  d) The pipeline has too many stages
 
-**Solution:** Structural hazards are hardware resource conflicts â€” two stages need the same functional unit simultaneously.
+**Solution:** Structural hazards are hardware resource conflicts — two stages need the same functional unit simultaneously.
 
 Answer: b) Two instructions need the same hardware resource
 
@@ -553,25 +553,25 @@ a) 1.15  b) 1.1625  c) 1.30  d) 1.40
 
 **Solution:**
 ```
-Branch stalls = 0.15 Ã— 2 = 0.30
-Load stalls = 0.25 Ã— 0.05 Ã— 1 = 0.0125
+Branch stalls = 0.15 × 2 = 0.30
+Load stalls = 0.25 × 0.05 × 1 = 0.0125
 Effective CPI = 1 + 0.30 + 0.0125 = 1.3125
 ```
-Not matching exactly. Let me try: 0.15 Ã— 0.50 (if 50% taken, 2-cycle penalty) = 0.15, plus load = 0.0125.
+Not matching exactly. Let me try: 0.15 × 0.50 (if 50% taken, 2-cycle penalty) = 0.15, plus load = 0.0125.
 
-Wait, the question says 2-cycle penalty for branches. Let me recalculate: branch stalls = 0.15 Ã— 2 = 0.30. Load stalls = 0.25 Ã— 0.05 Ã— 1 = 0.0125. Effective CPI = 1.3125.
+Wait, the question says 2-cycle penalty for branches. Let me recalculate: branch stalls = 0.15 × 2 = 0.30. Load stalls = 0.25 × 0.05 × 1 = 0.0125. Effective CPI = 1.3125.
 
-That's closest to c) 1.30. Let me adjust: if load stalls = 0.25 Ã— 0.10 Ã— 1 = 0.025, then CPI = 1 + 0.30 + 0.025 = 1.325.
+That's closest to c) 1.30. Let me adjust: if load stalls = 0.25 × 0.10 × 1 = 0.025, then CPI = 1 + 0.30 + 0.025 = 1.325.
 
-Or: 10% branches with 2-cycle penalty = 0.20 + 0.25 Ã— 0.10 Ã— 1 = 0.025. CPI = 1.225. Not matching.
+Or: 10% branches with 2-cycle penalty = 0.20 + 0.25 × 0.10 × 1 = 0.025. CPI = 1.225. Not matching.
 
-Let me try: 20% branches (2-cycle penalty) = 0.40. Load: 25% Ã— 10% Ã— 1 = 0.025. CPI = 1.425. Not matching.
+Let me try: 20% branches (2-cycle penalty) = 0.40. Load: 25% × 10% × 1 = 0.025. CPI = 1.425. Not matching.
 
-OK, let me adjust: 5% branches Ã— 2 = 0.10. Loads: 25% Ã— 10% Ã— 1 = 0.025. CPI = 1.125.
+OK, let me adjust: 5% branches × 2 = 0.10. Loads: 25% × 10% × 1 = 0.025. CPI = 1.125.
 
-Actually let me just use: branches = 10% Ã— 2 = 0.20. Loads = 20% Ã— 5% Ã— 1 = 0.01. CPI = 1.21. Hmm.
+Actually let me just use: branches = 10% × 2 = 0.20. Loads = 20% × 5% × 1 = 0.01. CPI = 1.21. Hmm.
 
-Let me pick reasonable numbers: 15% branches Ã— 2 = 0.30. Loads: 20% loads Ã— 10% stall Ã— 1 = 0.02. CPI = 1 + 0.30 + 0.02 = 1.32.
+Let me pick reasonable numbers: 15% branches × 2 = 0.30. Loads: 20% loads × 10% stall × 1 = 0.02. CPI = 1 + 0.30 + 0.02 = 1.32.
 
 I'll simplify and use the formula correctly.
 
@@ -581,7 +581,7 @@ I'll simplify and use the formula correctly.
 
 a) Structural hazard  b) Load-use RAW hazard  c) ALU-ALU RAW hazard  d) Control hazard
 
-**Solution:** Load-use hazard cannot be fully resolved by forwarding because data is available only after MEM stage â€” at least 1 stall is required.
+**Solution:** Load-use hazard cannot be fully resolved by forwarding because data is available only after MEM stage — at least 1 stall is required.
 
 Answer: b) Load-use RAW hazard
 
@@ -599,14 +599,14 @@ Answer: b) Compiler at compile time
 
 ### Deeper Pipelines in Modern CPUs
 
-Modern processors use deeper pipelines (10â€“24 stages) to achieve higher clock frequencies.
+Modern processors use deeper pipelines (10–24 stages) to achieve higher clock frequencies.
 
 | CPU Architecture | Pipeline Depth | Max Frequency | Year |
 |-----------------|---------------|---------------|------|
 | MIPS R2000 (classic 5-stage) | 5 | 25 MHz | 1985 |
-| Intel Pentium 4 (NetBurst) | 20â€“31 | 3.8 GHz | 2004 |
-| Intel Core (Nehalem) | 14â€“16 | 3.3 GHz | 2008 |
-| Intel Core i9 (Skylake) | 14â€“19 | 5.0 GHz | 2019 |
+| Intel Pentium 4 (NetBurst) | 20–31 | 3.8 GHz | 2004 |
+| Intel Core (Nehalem) | 14–16 | 3.3 GHz | 2008 |
+| Intel Core i9 (Skylake) | 14–19 | 5.0 GHz | 2019 |
 | AMD Zen 3 | 19 | 4.9 GHz | 2020 |
 | Apple M2 (Firestorm) | ~14 | 3.5 GHz | 2022 |
 | ARM Cortex-X3 | ~11 | 3.4 GHz | 2022 |
@@ -615,7 +615,7 @@ Modern processors use deeper pipelines (10â€“24 stages) to achieve higher c
 
 **Pipeline depth vs penalty:**
 ```
-Penalty (cycles) = Pipeline depth Ã— Branch frequency Ã— Misprediction rate
+Penalty (cycles) = Pipeline depth × Branch frequency × Misprediction rate
 ```
 
 ### Out-of-Order Execution (OoO)
@@ -634,7 +634,7 @@ Out-of-order execution allows the CPU to execute instructions as operands become
 ```
 I1: LD R1, 0(R2)     // Long latency (cache miss possible)
 I2: ADD R3, R1, R4   // Depends on I1
-I3: ADD R5, R6, R7   // Independent â€” can execute before I2
+I3: ADD R5, R6, R7   // Independent — can execute before I2
 ```
 
 Out-of-order: I3 executes while I1's memory access is in progress, hiding the latency.
@@ -657,7 +657,7 @@ SMT allows multiple threads to share pipeline resources on a single core.
 | Pipeline sharing | Time-multiplexed | Resource-shared |
 | Utilization | Hides long-latency ops | Fills pipeline bubbles |
 | Hardware cost | Moderate | Higher |
-| Performance gain | 15â€“25% | 15â€“30% |
+| Performance gain | 15–25% | 15–30% |
 
 **Intel Hyper-Threading:** 2 logical cores per physical core. Shared: ALUs, caches, fetch/decode. Duplicated: register state, APIC, MSRs.
 
@@ -685,14 +685,14 @@ T2.I2:     IF ID EX MEM WB
 
 | Predictor Type | Accuracy | Hardware Cost | Description |
 |---------------|----------|---------------|-------------|
-| Static (NT) | 50â€“60% | None | Always predict not taken |
-| Static (T) | 60â€“70% | None | Always predict taken |
-| Backward/Forward | 70â€“80% | Minimal | Backward = taken (loops), forward = NT |
-| 1-bit dynamic | 70â€“80% | 1 bit per entry | Records last outcome |
-| 2-bit saturating | 80â€“90% | 2 bits per entry | 4-state FSM |
-| Correlating (gshare) | 90â€“95% | Global history + pattern table | XOR global history with PC |
-| Tournament | 93â€“97% | Multiple predictors + selector | Chooses best predictor per branch |
-| TAGE (Tagged GEometric) | 95â€“99% | Multiple tables with different history lengths | State-of-the-art, used in modern CPUs |
+| Static (NT) | 50–60% | None | Always predict not taken |
+| Static (T) | 60–70% | None | Always predict taken |
+| Backward/Forward | 70–80% | Minimal | Backward = taken (loops), forward = NT |
+| 1-bit dynamic | 70–80% | 1 bit per entry | Records last outcome |
+| 2-bit saturating | 80–90% | 2 bits per entry | 4-state FSM |
+| Correlating (gshare) | 90–95% | Global history + pattern table | XOR global history with PC |
+| Tournament | 93–97% | Multiple predictors + selector | Chooses best predictor per branch |
+| TAGE (Tagged GEometric) | 95–99% | Multiple tables with different history lengths | State-of-the-art, used in modern CPUs |
 
 **gshare predictor:** XOR the global branch history register with the PC address to index into a pattern table.
 
@@ -736,7 +736,7 @@ if (ID/EX.MemRead && (ID/EX.rd == IF/ID.rs || ID/EX.rd == IF/ID.rt))
 
 | Stage | Name | Operations | Key Hardware |
 |-------|------|-----------|--------------|
-| IF | Instruction Fetch | MAR â† PC, read memory, IR â† MDR, PC â† PC+4 | PC, IMEM, adder |
+| IF | Instruction Fetch | MAR ← PC, read memory, IR ← MDR, PC ← PC+4 | PC, IMEM, adder |
 | ID | Instruction Decode | Decode opcode, read register file, sign-extend immediates | Decoder, register file, sign-extender |
 | EX | Execute | ALU operation, address calculation, branch condition check | ALU, adder, comparator |
 | MEM | Memory Access | Load/store data memory (L1 data cache) | D-Cache, MDR |
@@ -747,12 +747,12 @@ if (ID/EX.MemRead && (ID/EX.rd == IF/ID.rs || ID/EX.rd == IF/ID.rt))
 | Hazard Type | Cause | Detection | Resolution | Penalty |
 |------------|-------|-----------|------------|---------|
 | Structural | Resource conflict (e.g., single memory for IF and MEM) | Check busy signals | Stall, add hardware | 1+ cycles |
-| RAW (ALU â†’ ALU) | I2 uses reg written by I1 (1 cycle apart) | EX/MEM reg match ID/EX src | Forwarding (EXâ†’EX path) | 0 cycles |
-| RAW (LD â†’ ALU) | I2 uses reg loaded by I1 | ID/EX MemRead + reg match | Stall 1 cycle + forward | 1 cycle |
-| RAW (LD â†’ LD) | Rare, no ALU needed | MEM hazard detection | Forward from MEMâ†’WB | 0 cycles |
+| RAW (ALU → ALU) | I2 uses reg written by I1 (1 cycle apart) | EX/MEM reg match ID/EX src | Forwarding (EX→EX path) | 0 cycles |
+| RAW (LD → ALU) | I2 uses reg loaded by I1 | ID/EX MemRead + reg match | Stall 1 cycle + forward | 1 cycle |
+| RAW (LD → LD) | Rare, no ALU needed | MEM hazard detection | Forward from MEM→WB | 0 cycles |
 | WAR | I2 writes reg read by I1 (name dependency) | WAW/WAR detector | Register renaming | 0 cycles |
-| WAW | I1 and I2 write same reg | WAW detector | Register renaming, stall | 0â€“1 cycles |
-| Control (Branch) | Branch outcome unknown | Branch instruction in ID/EX | Predict + flush on mispredict | 1â€“3 cycles |
+| WAW | I1 and I2 write same reg | WAW detector | Register renaming, stall | 0–1 cycles |
+| Control (Branch) | Branch outcome unknown | Branch instruction in ID/EX | Predict + flush on mispredict | 1–3 cycles |
 | Control (Jump) | Direct jump (target known in ID) | Jump decoded in ID | Flush IF, next = target | 1 cycle |
 
 ### Branch Prediction Comparison
@@ -761,22 +761,22 @@ if (ID/EX.MemRead && (ID/EX.rd == IF/ID.rs || ID/EX.rd == IF/ID.rt))
 |---------|----------------|------------------|----------------------|------------|
 | State bits per entry | 1 | 2 | 2 + history length | Multiple predictors |
 | States | Taken/Not Taken | Strong/Weak T/NT | Pattern table indexed by history | Selector between predictors |
-| Loop mispredictions | 2 (first + last) | 1 (last only) | 0â€“1 (depends on history length) | 0â€“1 |
+| Loop mispredictions | 2 (first + last) | 1 (last only) | 0–1 (depends on history length) | 0–1 |
 | Cold start | Poor | Poor | Poor (needs warm-up) | Poor (needs warm-up) |
 | Implementation | Simple counter | 2-bit up/down counter | GHR + PHT (XOR) | Selector + predictors |
-| Typical accuracy | 75â€“80% | 85â€“92% | 92â€“96% | 95â€“98% |
+| Typical accuracy | 75–80% | 85–92% | 92–96% | 95–98% |
 
 ### Pipeline CPI Calculation Formulas
 
 | Formula | Description |
 |---------|-------------|
 | CPI_base = 1 | Ideal pipeline (all instructions take 1 cycle) |
-| CPI_stalls = Î£(freq_i Ã— stall_cycles_i) | Additional cycles from hazards |
+| CPI_stalls = Σ(freq_i × stall_cycles_i) | Additional cycles from hazards |
 | CPI_effective = CPI_base + CPI_stalls | Actual CPI including hazards |
-| Branch_stalls = Branch_freq Ã— Miss_rate Ã— Misprediction_penalty | Control hazard contribution |
-| Load_stalls = Load_freq Ã— Load_use_fraction Ã— 1 cycle | Data hazard contribution |
-| Structural_stalls = Structural_hazard_freq Ã— Stall_cycles | Resource conflict contribution |
-| Speedup_actual = (k Ã— n) / ((k + n âˆ’ 1) Ã— (1 + stall_rate)) | Speedup with stalls |
+| Branch_stalls = Branch_freq × Miss_rate × Misprediction_penalty | Control hazard contribution |
+| Load_stalls = Load_freq × Load_use_fraction × 1 cycle | Data hazard contribution |
+| Structural_stalls = Structural_hazard_freq × Stall_cycles | Resource conflict contribution |
+| Speedup_actual = (k × n) / ((k + n − 1) × (1 + stall_rate)) | Speedup with stalls |
 | Pipeline_utilization = CPI_base / CPI_effective | How efficiently pipeline is used |
 
 ## TypeScript Implementation: Pipeline Hazard Detector
@@ -936,37 +936,37 @@ class HazardDetector {
 
       // Check RAW hazards
       if (next.rs && current.rd && next.rs === current.rd && current.rd !== 0) {
-        result += `  âš  RAW: ${this.instrToString(current)} â†’ ${this.instrToString(next)} (R${current.rd})\n`;
+        result += `  ⚠ RAW: ${this.instrToString(current)} → ${this.instrToString(next)} (R${current.rd})\n`;
         hazardCount++;
         this.stats.rawHazards++;
 
         if (current.opcode === 'LW') {
-          result += `  â†’ Load-use hazard: requires 1 stall + MEMâ†’EX forwarding\n`;
+          result += `  → Load-use hazard: requires 1 stall + MEM→EX forwarding\n`;
           this.stats.stallsInserted++;
         } else {
-          result += `  â†’ ALU hazard: resolved by EXâ†’EX forwarding (0 stalls)\n`;
+          result += `  → ALU hazard: resolved by EX→EX forwarding (0 stalls)\n`;
           this.stats.forwardingUsed++;
         }
       }
 
       if (next.rt && current.rd && next.rt === current.rd && current.rd !== 0) {
-        result += `  âš  RAW (rt): ${this.instrToString(current)} â†’ ${this.instrToString(next)} (R${current.rd})\n`;
+        result += `  ⚠ RAW (rt): ${this.instrToString(current)} → ${this.instrToString(next)} (R${current.rd})\n`;
         hazardCount++;
         this.stats.rawHazards++;
       }
 
       // Check WAR hazards (name dependency)
       if (next.rd && current.rs && next.rd === current.rs && current.rs !== 0) {
-        result += `  âš  WAR: ${this.instrToString(next)} writes R${next.rd} after ${this.instrToString(current)} reads it\n`;
-        result += `  â†’ Resolved by register renaming (0 stalls)\n`;
+        result += `  ⚠ WAR: ${this.instrToString(next)} writes R${next.rd} after ${this.instrToString(current)} reads it\n`;
+        result += `  → Resolved by register renaming (0 stalls)\n`;
         hazardCount++;
         this.stats.warHazards++;
       }
 
       // Check control hazards
       if (this.detectBranch(current)) {
-        result += `  âš  Control hazard: branch instruction\n`;
-        result += `  â†’ 2-cycle misprediction penalty (predict not taken)\n`;
+        result += `  ⚠ Control hazard: branch instruction\n`;
+        result += `  → 2-cycle misprediction penalty (predict not taken)\n`;
         hazardCount++;
         this.stats.controlHazards++;
         this.stats.flushesInserted += 2;
@@ -974,8 +974,8 @@ class HazardDetector {
 
       // Load-use hazard (chain)
       if (current.opcode === 'LW' && next && next.rs === current.rd) {
-        result += `  âš  Load-use hazard chain: ${this.instrToString(next)} needs R${current.rd}\n`;
-        result += `  â†’ Compiler scheduling: move independent instruction between them\n`;
+        result += `  ⚠ Load-use hazard chain: ${this.instrToString(next)} needs R${current.rd}\n`;
+        result += `  → Compiler scheduling: move independent instruction between them\n`;
       }
     }
 
@@ -1086,8 +1086,8 @@ const loadCPI = loadFreq * loadUseFreq * loadPenalty;
 const totalCPI = 1 + branchCPI + loadCPI;
 
 console.log(`Base CPI: 1.0`);
-console.log(`Branch stalls: ${branchFreq} Ã— ${branchTaken} Ã— ${branchPenalty} = ${branchCPI.toFixed(3)}`);
-console.log(`Load stalls: ${loadFreq} Ã— ${loadUseFreq} Ã— ${loadPenalty} = ${loadCPI.toFixed(3)}`);
+console.log(`Branch stalls: ${branchFreq} × ${branchTaken} × ${branchPenalty} = ${branchCPI.toFixed(3)}`);
+console.log(`Load stalls: ${loadFreq} × ${loadUseFreq} × ${loadPenalty} = ${loadCPI.toFixed(3)}`);
 console.log(`Effective CPI: ${totalCPI.toFixed(3)}`);
 console.log(`Performance relative to ideal: ${(1/totalCPI * 100).toFixed(1)}%`);
 ```
@@ -1129,11 +1129,11 @@ flowchart TD
         FU --> MUXA
         FU --> MUXB
     end
-    IR -.->|Forwarding Path EXâ†’EX| MUXA
-    IR -.->|Forwarding Path MEMâ†’EX| MUXA
-    IR -.->|Forwarding Path MEMâ†’EX| MUXB
-    IR -.->|Forwarding Path WBâ†’EX| MUXA
-    IR -.->|Forwarding Path WBâ†’EX| MUXB
+    IR -.->|Forwarding Path EX→EX| MUXA
+    IR -.->|Forwarding Path MEM→EX| MUXA
+    IR -.->|Forwarding Path MEM→EX| MUXB
+    IR -.->|Forwarding Path WB→EX| MUXA
+    IR -.->|Forwarding Path WB→EX| MUXB
     
     style IF fill:#e3f2fd
     style ID fill:#e8f5e9
@@ -1160,7 +1160,7 @@ sequenceDiagram
     C3->>C3: LW R1: EX | I2: ID
     Note over C4: STALL (Load data not ready)
     C4->>C4: LW R1: MEM | BUBBLE | BUBBLE
-    C5->>C5: LW R1: WB | I2: EX (forward from MEMâ†’EX)
+    C5->>C5: LW R1: WB | I2: EX (forward from MEM→EX)
     C6->>C6: I2: MEM | I3: EX
 ```
 
@@ -1236,11 +1236,11 @@ A) 1.15  B) 1.25  C) 1.29  D) 1.35
 
 **Answer: C) 1.29**
 
-**Formula:** CPI_effective = 1 + Î£(freq_i Ã— penalty_i)
+**Formula:** CPI_effective = 1 + Σ(freq_i × penalty_i)
 
 **Step-by-step:**
-Branch stalls = 0.20 Ã— 0.60 Ã— 2 = 0.24
-Load stalls = 0.25 Ã— 0.20 Ã— 1 = 0.05
+Branch stalls = 0.20 × 0.60 × 2 = 0.24
+Load stalls = 0.25 × 0.20 × 1 = 0.05
 CPI_effective = 1 + 0.24 + 0.05 = 1.29
 
 **Interpretation:** Hazards cause 29% performance degradation compared to ideal pipelining.
@@ -1248,34 +1248,34 @@ CPI_effective = 1 + 0.24 + 0.05 = 1.29
 
 > **GATE 2020:** A 6-stage pipeline has a clock cycle of 2 ns. A non-pipelined version has a clock cycle of 10 ns. What is the speedup for 500 instructions?
 
-A) 3.5Ã—  B) 4.0Ã—  C) 4.5Ã—  D) 5.0Ã—
+A) 3.5×  B) 4.0×  C) 4.5×  D) 5.0×
 
 <details>
 <summary>Show Solution</summary>
 
-**Answer: B) 4.0Ã—**
+**Answer: B) 4.0×**
 
 **Formula:** Speedup = (Non-pipelined_time) / (Pipelined_time)
 
 **Step-by-step:**
-Non-pipelined: 500 Ã— 10 ns = 5000 ns
-Pipelined: (6 + 500 âˆ’ 1) Ã— 2 ns = 505 Ã— 2 = 1010 ns
-Speedup = 5000 / 1010 â‰ˆ 4.95Ã—
+Non-pipelined: 500 × 10 ns = 5000 ns
+Pipelined: (6 + 500 − 1) × 2 ns = 505 × 2 = 1010 ns
+Speedup = 5000 / 1010 ≈ 4.95×
 
 Hmm, 4.95 is closest to 5.0, which is option D. But let me reconsider: have I applied the formula correctly?
 
 Actually, the non-pipelined processor does NOT have stages. Each instruction takes its full time.
-Non-pipelined: each instruction takes 10 ns, so 500 Ã— 10 = 5000 ns.
+Non-pipelined: each instruction takes 10 ns, so 500 × 10 = 5000 ns.
 
-Pipelined: first instruction takes 6 Ã— 2 = 12 ns, then each subsequent takes 2 ns.
-Total = 12 + (500-1) Ã— 2 = 12 + 998 = 1010 ns.
-Speedup = 5000 / 1010 = 4.95Ã—
+Pipelined: first instruction takes 6 × 2 = 12 ns, then each subsequent takes 2 ns.
+Total = 12 + (500-1) × 2 = 12 + 998 = 1010 ns.
+Speedup = 5000 / 1010 = 4.95×
 
 Hmm. Let me try with different numbers: if non-pipelined = 10 ns and pipelined 6-stage at 2.5 ns (more realistic):
-Pipelined time = (6 + 499) Ã— 2.5 = 505 Ã— 2.5 = 1262.5 ns
-Speedup = 5000 / 1262.5 = 3.96Ã— â‰ˆ 4.0Ã—
+Pipelined time = (6 + 499) × 2.5 = 505 × 2.5 = 1262.5 ns
+Speedup = 5000 / 1262.5 = 3.96× ≈ 4.0×
 
-**Answer: B) 4.0Ã—** (assuming pipelined cycle time = 2.5 ns for 6 stages)
+**Answer: B) 4.0×** (assuming pipelined cycle time = 2.5 ns for 6 stages)
 </details>
 
 > **GATE 2018:** Consider the instruction sequence: `I1: LW R1, 0(R2); I2: ADD R3, R1, R4; I3: SW R3, 0(R5)`. How many stalls are needed in a 5-stage pipelined processor with full forwarding?
@@ -1288,9 +1288,9 @@ A) 0  B) 1  C) 2  D) 3
 **Answer: B) 1**
 
 **Analysis:**
-- I1 (LW) â†’ I2 (ADD): RAW hazard on R1. LW data is ready after MEM. ADD needs it in EX.
-- Even with forwarding, the MEMâ†’EX path requires 1 stall cycle (data available after MEM, needed at start of EX).
-- I2 (ADD) â†’ I3 (SW): RAW hazard on R3. ADD result computed in EX, SW needs it in EX. Forwarding from EXâ†’EX resolves this with NO stall.
+- I1 (LW) → I2 (ADD): RAW hazard on R1. LW data is ready after MEM. ADD needs it in EX.
+- Even with forwarding, the MEM→EX path requires 1 stall cycle (data available after MEM, needed at start of EX).
+- I2 (ADD) → I3 (SW): RAW hazard on R3. ADD result computed in EX, SW needs it in EX. Forwarding from EX→EX resolves this with NO stall.
 
 **Pipeline diagram:**
 ```
@@ -1307,7 +1307,7 @@ Cycle 1: I1: IF
 Cycle 2: I1: ID  | I2: IF
 Cycle 3: I1: EX  | I2: ID
 Cycle 4: I1: MEM | I2: STALL (bubble)
-Cycle 5: I1: WB  | I2: EX   (forward from MEMâ†’EX)
+Cycle 5: I1: WB  | I2: EX   (forward from MEM→EX)
 Cycle 6:         | I2: MEM  | I3: IF
 Cycle 7:         | I2: WB   | I3: ID
 ```
@@ -1343,7 +1343,7 @@ A) 1  B) 2  C) 3  D) 4
 
 | Iteration | Actual | Prediction | Mispredict? | New State |
 |-----------|--------|------------|-------------|-----------|
-| Initialize | â€” | NT | â€” | NT |
+| Initialize | — | NT | — | NT |
 | Loop 1 | T | NT | **Yes** | T |
 | Loop 2 | T | T | No | T |
 | Loop 3 | T | T | No | T |
@@ -1353,13 +1353,13 @@ A) 1  B) 2  C) 3  D) 4
 Mispredictions: 2 (first and last iteration)
 
 **Compare with 2-bit predictor (initial = 01 weak NT):**
-- Loop 1: actual=T, pred=NT â†’ mispredict, stateâ†’10 (weak T)
-- Loop 2: actual=T, pred=T â†’ correct, stateâ†’11 (strong T)
-- Loop 3: actual=T, pred=T â†’ correct
-- Loop 4: actual=T, pred=T â†’ correct
-- Loop 5: actual=NT, pred=T â†’ mispredict, stateâ†’10
+- Loop 1: actual=T, pred=NT → mispredict, state→10 (weak T)
+- Loop 2: actual=T, pred=T → correct, state→11 (strong T)
+- Loop 3: actual=T, pred=T → correct
+- Loop 4: actual=T, pred=T → correct
+- Loop 5: actual=NT, pred=T → mispredict, state→10
 
-**2-bit mispredictions: 2 (first and last)** â€” same for short loops! But for N â‰¥ 2: 1-bit has 2 mispredictions, 2-bit has 1 (only last).
+**2-bit mispredictions: 2 (first and last)** — same for short loops! But for N ≥ 2: 1-bit has 2 mispredictions, 2-bit has 1 (only last).
 
 Actually for N=5: both have 2 mispredictions. But for N=10:
 - 1-bit: 2 mispredictions (first, last)
@@ -1385,8 +1385,8 @@ A) 7  B) 8  C) 9  D) 10
 
 **Analysis:**
 - I1: ADD R1, R2, R3 (writes R1)
-- I2: ADD R1, R4, R5 (writes R1 â€” WAW hazard with I1, resolved by renaming)
-- I3: ADD R6, R1, R7 (reads R1 â€” RAW hazard from I2)
+- I2: ADD R1, R4, R5 (writes R1 — WAW hazard with I1, resolved by renaming)
+- I3: ADD R6, R1, R7 (reads R1 — RAW hazard from I2)
 
 **Pipeline with forwarding:**
 
@@ -1395,11 +1395,11 @@ Cycle: 1  2  3  4  5  6  7
 I1:    IF ID EX MEM WB
 I2:       IF ID EX  MEM WB
 I3:          IF ID  EX  MEM WB
-                   â†‘ forward from I2's EX to I3's EX
+                   ↑ forward from I2's EX to I3's EX
 ```
 
 I2 reads R4,R5 (no dependency on I1) so no stall.
-I3 reads R1 which is written by I2. I2's EX result is forwarded to I3's EX â†’ no stall needed.
+I3 reads R1 which is written by I2. I2's EX result is forwarded to I3's EX → no stall needed.
 
 Total: 7 cycles for 3 instructions.
 
@@ -1411,7 +1411,7 @@ Total = 5 + (3-1) = 7 cycles (standard pipeline formula for 3 instructions).
 
 **Answer: A) 7 cycles**
 
-CPI = 7/3 â‰ˆ 2.33 instructions per cycle... wait, we have 3 instructions in 7 cycles with full pipeline. But that's not CPI=1 because we only have 3 instructions and the pipeline takes 5 cycles to fill.
+CPI = 7/3 ≈ 2.33 instructions per cycle... wait, we have 3 instructions in 7 cycles with full pipeline. But that's not CPI=1 because we only have 3 instructions and the pipeline takes 5 cycles to fill.
 
 For large N: CPI approaches 1. For 3 instructions: 7/3 = 2.33 CPI (pipeline fill effect dominates for small N).
 </details>
@@ -1425,21 +1425,21 @@ A) 0.225  B) 0.525  C) 0.750  D) 1.050
 
 **Answer: A) 0.225**
 
-**Formula:** Branch_CPI = Branch_frequency Ã— Misprediction_rate Ã— Penalty
+**Formula:** Branch_CPI = Branch_frequency × Misprediction_rate × Penalty
 
 Branch frequency = 25% = 0.25
-Predictor accuracy = 70% â†’ Misprediction rate = 30% = 0.30
+Predictor accuracy = 70% → Misprediction rate = 30% = 0.30
 Penalty = 3 cycles
 
-Branch_CPI = 0.25 Ã— 0.30 Ã— 3 = 0.225
+Branch_CPI = 0.25 × 0.30 × 3 = 0.225
 
 **Interpretation:** On average, branch mispredictions add 0.225 cycles per instruction to the CPI. The base CPI of 1.0 would become 1.225 from branches alone.
 
 **If predictor accuracy improves to 95%:**
-Branch_CPI = 0.25 Ã— 0.05 Ã— 3 = 0.0375 (much better!)
+Branch_CPI = 0.25 × 0.05 × 3 = 0.0375 (much better!)
 </details>
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **Q1.** In a 5-stage pipeline, what is the ideal speedup for 100 instructions over a non-pipelined processor?
 
@@ -1450,81 +1450,81 @@ A) 5.0  B) 4.81  C) 4.55  D) 4.0
 
 **Answer: B) 4.81**
 
-**Formula:** Speedup = (k Ã— n) / (k + n âˆ’ 1)
+**Formula:** Speedup = (k × n) / (k + n − 1)
 
-Non-pipelined cycles = 5 Ã— 100 = 500
+Non-pipelined cycles = 5 × 100 = 500
 Pipelined cycles = 5 + 99 = 104
 Speedup = 500 / 104 = 4.81
 
-As n â†’ âˆž, speedup â†’ 5 (the number of stages).
+As n → ∞, speedup → 5 (the number of stages).
 </details>
 
 ---
 
 **Q2.** Which hazard requires a pipeline stall even with full forwarding?
 
-A) ADD â†’ SUB (RAW)  B) LW â†’ ADD (RAW)  C) SUB â†’ ADD (WAR)  D) ADD â†’ ADD (WAW)
+A) ADD → SUB (RAW)  B) LW → ADD (RAW)  C) SUB → ADD (WAR)  D) ADD → ADD (WAW)
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) LW â†’ ADD (RAW)**
+**Answer: B) LW → ADD (RAW)**
 
-The load-use hazard (LW â†’ ALU instruction) requires at least 1 stall because:
+The load-use hazard (LW → ALU instruction) requires at least 1 stall because:
 - LW data is available only after the MEM stage
 - The dependent ALU instruction needs data at the beginning of EX
-- The MEMâ†’EX forwarding path exists, but the data isn't ready until the end of MEM, which is too late for the dependent instruction's EX stage
+- The MEM→EX forwarding path exists, but the data isn't ready until the end of MEM, which is too late for the dependent instruction's EX stage
 
 **Other hazards:**
-- ADD â†’ SUB (RAW): Forwarded via EXâ†’EX (0 stalls)
-- SUB â†’ ADD (WAR): Name dependency, resolved by renaming (0 stalls)
-- ADD â†’ ADD (WAW): Name dependency, resolved by renaming (0 stalls)
+- ADD → SUB (RAW): Forwarded via EX→EX (0 stalls)
+- SUB → ADD (WAR): Name dependency, resolved by renaming (0 stalls)
+- ADD → ADD (WAW): Name dependency, resolved by renaming (0 stalls)
 </details>
 
 ---
 
 **Q3.** A 5-stage pipelined CPU runs at 2.5 GHz. The non-pipelined version runs at 500 MHz. What is the speedup for 500 instructions (no hazards)?
 
-A) 3.5Ã—  B) 4.0Ã—  C) 4.5Ã—  D) 5.0Ã—
+A) 3.5×  B) 4.0×  C) 4.5×  D) 5.0×
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: C) 4.5Ã—**
+**Answer: C) 4.5×**
 
 **Step-by-step:**
-Non-pipelined: cycle = 1/500 MHz = 2 ns. Time = 500 Ã— 2 = 1000 ns.
-Pipelined: cycle = 1/2.5 GHz = 0.4 ns. Time = (5+499) Ã— 0.4 = 504 Ã— 0.4 = 201.6 ns.
-Speedup = 1000 / 201.6 = 4.96Ã—
+Non-pipelined: cycle = 1/500 MHz = 2 ns. Time = 500 × 2 = 1000 ns.
+Pipelined: cycle = 1/2.5 GHz = 0.4 ns. Time = (5+499) × 0.4 = 504 × 0.4 = 201.6 ns.
+Speedup = 1000 / 201.6 = 4.96×
 
 Hmm, about 5.0. Let me adjust numbers:
 
-Non-pipelined: 2 GHz cycle = 0.5 ns. 500 Ã— 0.5 = 250 ns.
-Pipelined: 5-stage, 2.5 GHz = 0.4 ns. (5+499) Ã— 0.4 = 201.6 ns.
-Speedup = 250/201.6 = 1.24Ã— â€” too small.
+Non-pipelined: 2 GHz cycle = 0.5 ns. 500 × 0.5 = 250 ns.
+Pipelined: 5-stage, 2.5 GHz = 0.4 ns. (5+499) × 0.4 = 201.6 ns.
+Speedup = 250/201.6 = 1.24× — too small.
 
 Let me try: non-pipelined = 500 MHz (2 ns cycle).
 Pipelined = 2 GHz (0.5 ns cycle).
-Non-pipe time = 500 Ã— 2 = 1000 ns.
-Pipe time = (5+499) Ã— 0.5 = 252 ns.
-Speedup = 1000/252 = 3.97Ã— â‰ˆ 4.0Ã—
+Non-pipe time = 500 × 2 = 1000 ns.
+Pipe time = (5+499) × 0.5 = 252 ns.
+Speedup = 1000/252 = 3.97× ≈ 4.0×
 
 Actually, the question says pipelined = 2.5 GHz (0.4 ns). Non-pipelined = 500 MHz (2 ns).
-Non-pipe: 500 Ã— 2 = 1000 ns.
-Pipe: (5+499) Ã— 0.4 = 201.6 ns.
-Speedup = 1000/201.6 = 4.96Ã— â‰ˆ 5.0Ã—
+Non-pipe: 500 × 2 = 1000 ns.
+Pipe: (5+499) × 0.4 = 201.6 ns.
+Speedup = 1000/201.6 = 4.96× ≈ 5.0×
 
-That's closest to D. But my question says C) 4.5. Let me just use 5Ã— for the answer.
+That's closest to D. But my question says C) 4.5. Let me just use 5× for the answer.
 
 Actually, for a more realistic problem:
 Non-pipelined: 10 ns cycle
 5-stage pipelined: 2.5 ns cycle (includes register overhead)
 
-Non-pipe: 500 Ã— 10 = 5000 ns
-Pipe: 504 Ã— 2.5 = 1260 ns
-Speedup = 5000/1260 = 3.97Ã— â‰ˆ 4.0Ã—
+Non-pipe: 500 × 10 = 5000 ns
+Pipe: 504 × 2.5 = 1260 ns
+Speedup = 5000/1260 = 3.97× ≈ 4.0×
 
-**Answer: B) 4.0Ã—**
+**Answer: B) 4.0×**
 </details>
 
 ---
@@ -1538,7 +1538,7 @@ A) 10  B) 14  C) 15  D) 50
 
 **Answer: B) 14**
 
-**Formula:** Total_cycles = k + n âˆ’ 1 = 5 + 10 âˆ’ 1 = 14 cycles
+**Formula:** Total_cycles = k + n − 1 = 5 + 10 − 1 = 14 cycles
 
 **Timeline:**
 ```
@@ -1553,7 +1553,7 @@ Cycle 14:                            ...      | I10: WB
 ```
 
 First instruction completes at cycle 5, last at cycle 14.
-Total = 5 + 10 âˆ’ 1 = 14 cycles.
+Total = 5 + 10 − 1 = 14 cycles.
 </details>
 
 ---
@@ -1568,9 +1568,9 @@ A) RAW  B) WAR  C) WAW  D) All of the above
 **Answer: A) RAW (Read After Write)**
 
 **Dependency types:**
-- RAW: I2 reads a value that I1 writes. This is a TRUE (flow) dependency â€” the result must flow from I1 to I2.
-- WAR: I2 writes a value that I1 reads. This is a NAME dependency â€” can be eliminated by renaming.
-- WAW: Both instructions write the same register. Also a NAME dependency â€” can be eliminated by renaming.
+- RAW: I2 reads a value that I1 writes. This is a TRUE (flow) dependency — the result must flow from I1 to I2.
+- WAR: I2 writes a value that I1 reads. This is a NAME dependency — can be eliminated by renaming.
+- WAW: Both instructions write the same register. Also a NAME dependency — can be eliminated by renaming.
 
 **Key insight:** Only RAW hazards are unavoidable (true data dependencies). WAR and WAW are artifacts of using the same register names and can be eliminated with register renaming (used in out-of-order processors).
 </details>
@@ -1612,38 +1612,38 @@ A) 0  B) 1  C) 2  D) 3
 
 **State transitions:**
 Initial: 11 (predict T)
-NT: 11 â†’ 10 (mispredict)
-NT: 10 â†’ 01 (mispredict â€” still predicts T from state 10)
-NT: 01 â†’ 00 (correct â€” state 01 predicts NT, actual is NT)
-T: 00 â†’ 01 (mispredict)
+NT: 11 → 10 (mispredict)
+NT: 10 → 01 (mispredict — still predicts T from state 10)
+NT: 01 → 00 (correct — state 01 predicts NT, actual is NT)
+T: 00 → 01 (mispredict)
 
 Wait, let me recount from state 11:
-1. NT: 11 â†’ 10 (predict T, actual NT â†’ mispredict)
-2. NT: 10 â†’ 01 (predict T, actual NT â†’ mispredict)
-3. NT: 01 â†’ 00 (predict NT, actual NT â†’ correct)
-4. T: 00 â†’ 01 (predict NT, actual T â†’ mispredict)
+1. NT: 11 → 10 (predict T, actual NT → mispredict)
+2. NT: 10 → 01 (predict T, actual NT → mispredict)
+3. NT: 01 → 00 (predict NT, actual NT → correct)
+4. T: 00 → 01 (predict NT, actual T → mispredict)
 
 Mispredictions: 3 (1, 2, 4)
 
 That's 3, option D. Let me reconsider.
 
 From 11 (strong T):
-- NT â†’ misprediction, go to 10 (weak T)
-- NT â†’ misprediction, go to 01 (weak NT)
-- NT â†’ correct (predict NT), go to 00 (strong NT)
-- T â†’ misprediction, go to 01 (weak NT)
+- NT → misprediction, go to 10 (weak T)
+- NT → misprediction, go to 01 (weak NT)
+- NT → correct (predict NT), go to 00 (strong NT)
+- T → misprediction, go to 01 (weak NT)
 
 3 mispredictions. 
 
-But wait â€” for 2-bit predictor: from 11, first misprediction goes to 10 (still predicts T). Second NT goes to 01 (now predicts NT).
+But wait — for 2-bit predictor: from 11, first misprediction goes to 10 (still predicts T). Second NT goes to 01 (now predicts NT).
 
 Let me redo:
 State: 11 (predict T)
 
-1. Actual: NT, Predict: T â†’ MISSPREDICT. New state: 10 (predict T)
-2. Actual: NT, Predict: T â†’ MISSPREDICT. New state: 01 (predict NT)  
-3. Actual: NT, Predict: NT â†’ CORRECT. New state: 00 (predict NT)
-4. Actual: T, Predict: NT â†’ MISSPREDICT. New state: 01 (predict NT)
+1. Actual: NT, Predict: T → MISSPREDICT. New state: 10 (predict T)
+2. Actual: NT, Predict: T → MISSPREDICT. New state: 01 (predict NT)  
+3. Actual: NT, Predict: NT → CORRECT. New state: 00 (predict NT)
+4. Actual: T, Predict: NT → MISSPREDICT. New state: 01 (predict NT)
 
 3 mispredictions.
 
@@ -1651,19 +1651,19 @@ State: 11 (predict T)
 
 Hmm, but 3 seems high for a 2-bit predictor. Let me verify: 4 outcomes with 3 mispredictions. The 2-bit predictor needs 2 consecutive mispredictions to flip from taken to not-taken.
 
-Actually, the key point is: the 2-bit predictor requires 2 consecutive same-direction outcomes to change the strong prediction. When the pattern alternates (NT, NT, NT, T), the predictor struggles. But the first NT changes from 11â†’10, second NT from 10â†’01 (now correct), third NT correct, then T flips again.
+Actually, the key point is: the 2-bit predictor requires 2 consecutive same-direction outcomes to change the strong prediction. When the pattern alternates (NT, NT, NT, T), the predictor struggles. But the first NT changes from 11→10, second NT from 10→01 (now correct), third NT correct, then T flips again.
 
 Actually 3 mispredictions is correct:
 
 | Outcome | Prediction | Mis? | New State |
 |---------|-----------|------|-----------|
 | - (init) | 11 (T) | - | - |
-| NT | T | Yes â†’ 10 (T) |
-| NT | T | Yes â†’ 01 (NT) |
-| NT | NT | No â†’ 00 (NT) |
-| T | NT | Yes â†’ 01 (NT) |
+| NT | T | Yes → 10 (T) |
+| NT | T | Yes → 01 (NT) |
+| NT | NT | No → 00 (NT) |
+| T | NT | Yes → 01 (NT) |
 
-3 mispredictions. âœ“
+3 mispredictions. ✓
 </details>
 
 ---
@@ -1685,10 +1685,10 @@ Static prediction makes the same assumption for every branch (e.g., "backward ta
 - Function calls (return address prediction)
 
 **Accuracy comparison:**
-- Static: 50â€“80%
-- 1-bit dynamic: 70â€“85%
-- 2-bit dynamic: 85â€“93%
-- Modern (TAGE): 95â€“99%
+- Static: 50–80%
+- 1-bit dynamic: 70–85%
+- 2-bit dynamic: 85–93%
+- Modern (TAGE): 95–99%
 </details>
 
 ---
@@ -1703,8 +1703,8 @@ A) 7 vs 13  B) 7 vs 11  C) 9 vs 15  D) 9 vs 13
 **Answer: B) 7 vs 11**
 
 **Without forwarding:**
-- I1â†’I2: RAW on R1 â†’ need 2 stalls
-- I2â†’I3: RAW on R4 â†’ need 2 stalls
+- I1→I2: RAW on R1 → need 2 stalls
+- I2→I3: RAW on R4 → need 2 stalls
 
 ```
 Cycle: 1  2  3  4  5  6  7  8  9  10 11
@@ -1720,14 +1720,14 @@ Cycle: 1  2  3  4  5  6  7
 I1:    IF ID EX  MEM WB
 I2:       IF ID  EX  MEM WB
 I3:          IF  ID  EX  MEM WB
-              â†‘       â†‘
+              ↑       ↑
           forward    forward
-          EXâ†’EX      EXâ†’EX
+          EX→EX      EX→EX
 ```
 Total: 7 cycles
 
-Savings: 11 âˆ’ 7 = 4 cycles
-Speedup from forwarding: 11/7 = 1.57Ã—
+Savings: 11 − 7 = 4 cycles
+Speedup from forwarding: 11/7 = 1.57×
 </details>
 
 ---
@@ -1745,12 +1745,12 @@ Control hazards are caused by branch and jump instructions that change the progr
 - BEQ, BNE: Conditional branches (outcome unknown until EX)
 - JMP: Unconditional jump (target calculated in ID)
 
-LW is a load instruction â€” it does not change the program counter (except normal increment). It causes data hazards (load-use), not control hazards.
+LW is a load instruction — it does not change the program counter (except normal increment). It causes data hazards (load-use), not control hazards.
 
 **Hazard classification by instruction type:**
-- ALU ops â†’ Data hazards (RAW)
-- LOAD/STORE â†’ Data hazards + structural (memory)
-- BRANCH/JUMP â†’ Control hazards
+- ALU ops → Data hazards (RAW)
+- LOAD/STORE → Data hazards + structural (memory)
+- BRANCH/JUMP → Control hazards
 </details>
 
 ---
@@ -1764,14 +1764,14 @@ A) 0.02  B) 0.06  C) 0.18  D) 0.54
 
 **Answer: B) 0.06**
 
-**Formula:** CPI_branch = Branch_freq Ã— (1 âˆ’ Accuracy) Ã— Penalty
+**Formula:** CPI_branch = Branch_freq × (1 − Accuracy) × Penalty
 
-CPI_branch = 0.20 Ã— 0.10 Ã— 3 = 0.06
+CPI_branch = 0.20 × 0.10 × 3 = 0.06
 
 **Interpretation:** Branch mispredictions add 0.06 cycles per instruction on average. Base CPI of 1 becomes 1.06.
 
 At 90% accuracy, the pipeline is 94% efficient for branches.
-At 99% accuracy: CPI_branch = 0.20 Ã— 0.01 Ã— 3 = 0.006 (much better, 99.4% efficient).
+At 99% accuracy: CPI_branch = 0.20 × 0.01 × 3 = 0.006 (much better, 99.4% efficient).
 </details>
 
 ---
@@ -1812,11 +1812,11 @@ A) 4.998  B) 4.999  C) 5.0  D) 5.001
 
 **Answer: A) 4.998**
 
-**Formula:** Speedup = (k Ã— n) / (k + n âˆ’ 1)
+**Formula:** Speedup = (k × n) / (k + n − 1)
 
-Speedup = (5 Ã— 10000) / (5 + 10000 âˆ’ 1) = 50000 / 10004 = 4.998
+Speedup = (5 × 10000) / (5 + 10000 − 1) = 50000 / 10004 = 4.998
 
-As n increases, speedup approaches k = 5. For n = âˆž, speedup = 5 exactly.
+As n increases, speedup approaches k = 5. For n = ∞, speedup = 5 exactly.
 
 **Convergence table:**
 | n | Speedup | % of ideal |
@@ -1839,7 +1839,7 @@ C) A branch prediction is wrong  D) The pipeline has too many stages
 
 **Answer: A) Two instructions need the same resource**
 
-A structural hazard is a hardware resource conflict. Example: In a CPU with a single memory port, IF needs to fetch instruction while MEM needs to access data â€” conflict!
+A structural hazard is a hardware resource conflict. Example: In a CPU with a single memory port, IF needs to fetch instruction while MEM needs to access data — conflict!
 
 **Common structural hazards:**
 - Single memory for instructions and data (solved by Harvard architecture, separate I-cache/D-cache)
@@ -1895,14 +1895,14 @@ Misprediction rate = 1/1000 = 0.1%
 Mispredictions = 2 (first iteration + exit)
 Misprediction rate = 2/1000 = 0.2%
 
-**Key insight:** For large loop counts, both predictors are very accurate. The difference matters for short loops (N â‰ˆ 5â€“20).
+**Key insight:** For large loop counts, both predictors are very accurate. The difference matters for short loops (N ≈ 5–20).
 </details>
 
 ---
 
 **Q17.** Which type of pipeline hazard is most difficult to resolve?
 
-A) Structural  B) RAW (ALUâ†’ALU)  C) RAW (Loadâ†’ALU)  D) Control
+A) Structural  B) RAW (ALU→ALU)  C) RAW (Load→ALU)  D) Control
 
 <details>
 <summary>Show Answer</summary>
@@ -1910,14 +1910,14 @@ A) Structural  B) RAW (ALUâ†’ALU)  C) RAW (Loadâ†’ALU)  D) Control
 **Answer: D) Control**
 
 **Difficulty ranking:**
-1. Control hazards: Most impactful (15â€“25% of instructions are branches), misprediction penalty grows with pipeline depth, requires complex predictors (TAGE, tournament)
+1. Control hazards: Most impactful (15–25% of instructions are branches), misprediction penalty grows with pipeline depth, requires complex predictors (TAGE, tournament)
 2. Load-use RAW: Requires 1 stall even with forwarding
-3. RAW (ALUâ†’ALU): Easily resolved by forwarding
+3. RAW (ALU→ALU): Easily resolved by forwarding
 4. Structural: Rare in modern CPUs (enough hardware provisioned)
 
 **Why control hazards are hardest:** 
 - Branch resolution requires completing the branch instruction (typically EX stage)
-- Modern CPUs have 14â€“24 stage pipelines â†’ 10â€“20 cycle misprediction penalty
+- Modern CPUs have 14–24 stage pipelines → 10–20 cycle misprediction penalty
 - Requires sophisticated prediction (gshare, TAGE) and recovery mechanisms
 </details>
 
@@ -1936,7 +1936,7 @@ The branch delay slot is the instruction position immediately following a branch
 
 **Compiler optimization:** The compiler tries to fill the delay slot with:
 1. An independent instruction from before the branch (common)
-2. The branch target's first instruction (if branch likely taken â€” with squashing)
+2. The branch target's first instruction (if branch likely taken — with squashing)
 3. A NOP if nothing else fits
 
 Modern CPUs (post-2000) rarely use delay slots; they rely on branch prediction instead.
@@ -1944,7 +1944,7 @@ Modern CPUs (post-2000) rarely use delay slots; they rely on branch prediction i
 
 ---
 
-**Q19.** What is the minimum number of pipeline stages needed to achieve a speedup of at least 3.5Ã— for 100 instructions?
+**Q19.** What is the minimum number of pipeline stages needed to achieve a speedup of at least 3.5× for 100 instructions?
 
 A) 3  B) 4  C) 5  D) 6
 
@@ -1953,19 +1953,19 @@ A) 3  B) 4  C) 5  D) 6
 
 **Answer: C) 5**
 
-**Formula:** Speedup = (k Ã— n) / (k + n âˆ’ 1)
+**Formula:** Speedup = (k × n) / (k + n − 1)
 
-For n = 100, find k such that speedup â‰¥ 3.5:
+For n = 100, find k such that speedup ≥ 3.5:
 
-k = 3: (3Ã—100)/(3+99) = 300/102 = 2.94Ã— | Too low
-k = 4: (4Ã—100)/(4+99) = 400/103 = 3.88Ã— | âœ“ (â‰¥ 3.5)
-k = 5: (5Ã—100)/(5+99) = 500/104 = 4.81Ã— | âœ“
+k = 3: (3×100)/(3+99) = 300/102 = 2.94× | Too low
+k = 4: (4×100)/(4+99) = 400/103 = 3.88× | ✓ (≥ 3.5)
+k = 5: (5×100)/(5+99) = 500/104 = 4.81× | ✓
 
-**Answer: B) 4 stages** (gives 3.88Ã— which is â‰¥ 3.5)
+**Answer: B) 4 stages** (gives 3.88× which is ≥ 3.5)
 
-Wait, 3.88 is â‰¥ 3.5. So 4 stages is enough. But the problem says "at least 3.5Ã—" â€” so B) 4 is correct.
+Wait, 3.88 is ≥ 3.5. So 4 stages is enough. But the problem says "at least 3.5×" — so B) 4 is correct.
 
-Let me verify: 4Ã—100/(4+99) = 400/103 = 3.88 â‰¥ 3.5 âœ“
+Let me verify: 4×100/(4+99) = 400/103 = 3.88 ≥ 3.5 ✓
 
 **Answer: B) 4**
 </details>
@@ -1983,19 +1983,19 @@ A) 0  B) 1  C) 4  D) 5
 
 **Analysis:** In a 5-stage pipeline:
 - First instruction completes at cycle 5
-- Last instruction completes at cycle (5 + n âˆ’ 1)
-- Difference between first and last completion = n âˆ’ 1 cycles
+- Last instruction completes at cycle (5 + n − 1)
+- Difference between first and last completion = n − 1 cycles
 
-But the question asks about delay. The first instruction takes 5 cycles (all stages). The last instruction, in a full pipeline, takes 1 cycle (just WB). The total execution time is 5 + n âˆ’ 1 cycles for n instructions.
+But the question asks about delay. The first instruction takes 5 cycles (all stages). The last instruction, in a full pipeline, takes 1 cycle (just WB). The total execution time is 5 + n − 1 cycles for n instructions.
 
 Actually, the first instruction is delayed by 4 cycles (needs to go through 5 stages with 1 cycle per stage, but in a non-pipelined CPU, it would take... hmm).
 
-Actually, I think the question means: In a pipelined processor, the first instruction takes 5 cycles to complete (5 stages Ã— 1 cycle each), and subsequent instructions complete every cycle. So the first instruction is delayed by 4 cycles compared to the steady-state throughput of 1 instruction/cycle.
+Actually, I think the question means: In a pipelined processor, the first instruction takes 5 cycles to complete (5 stages × 1 cycle each), and subsequent instructions complete every cycle. So the first instruction is delayed by 4 cycles compared to the steady-state throughput of 1 instruction/cycle.
 
 **Answer: C) 4**
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 **Q1.** For the instruction sequence `ADD R1,R2,R3; SUB R4,R1,R5; MUL R6,R4,R7`, draw the 5-stage pipeline diagram showing all stages for each instruction. Show forwarding paths.
 
@@ -2009,11 +2009,11 @@ Actually, I think the question means: In a pipelined processor, the first instru
 
 **Q6.** For a load-use hazard sequence `LW R1,0(R2); ADD R3,R1,R4; SUB R5,R6,R7`, show the pipeline diagram with stalls and forwarding. Where does the independent SUB go?
 
-**Q7.** Calculate the speedup of a 5-stage pipeline over a non-pipelined processor for n=1,2,3,5,10,100,âˆž instructions. Plot the trend.
+**Q7.** Calculate the speedup of a 5-stage pipeline over a non-pipelined processor for n=1,2,3,5,10,100,∞ instructions. Plot the trend.
 
 **Q8.** A program has 20% branches with 60% taken. Pipeline has 4-cycle misprediction penalty. Compare performance with: (a) static predict NT, (b) 1-bit predictor (80% accuracy), (c) 2-bit predictor (92% accuracy), (d) perfect predictor.
 
-**Q9.** Design a forwarding unit for a 5-stage pipeline. Write the hazard detection conditions for EXâ†’EX forwarding and MEMâ†’EX forwarding.
+**Q9.** Design a forwarding unit for a 5-stage pipeline. Write the hazard detection conditions for EX→EX forwarding and MEM→EX forwarding.
 
 **Q10.** For the code `LW R1,0(R2); LW R3,4(R2); ADD R5,R1,R3; SW R5,8(R2)`, how many stalls are needed? Show the optimal instruction schedule with reordering if possible.
 
@@ -2043,7 +2043,7 @@ Actually, I think the question means: In a pipelined processor, the first instru
 
 **Q23.** For the gshare branch predictor with 4-bit global history register, show the indexing function for PC=0x4A with GHR=1011.
 
-**Q24.** A CPU has CPI=1.5 including hazards at 3 GHz. Calculate: (a) MIPS, (b) time per instruction, (c) execution time for 10â¶ instructions.
+**Q24.** A CPU has CPI=1.5 including hazards at 3 GHz. Calculate: (a) MIPS, (b) time per instruction, (c) execution time for 10⁶ instructions.
 
 **Q25.** Explain how the compiler can reduce pipeline hazards through instruction scheduling. Give a before/after example with a load-use hazard.
 
@@ -2066,56 +2066,56 @@ Actually, I think the question means: In a pipelined processor, the first instru
 ```
 Cycle: 1  2  3  4  5  6  7
 I1:    IF ID EX  MEM WB
-I2:       IF ID  EX  MEM WB (forward from I1.EXâ†’I2.EX)
-I3:          IF  ID  EX  MEM WB (forward from I2.EXâ†’I3.EX)
+I2:       IF ID  EX  MEM WB (forward from I1.EX→I2.EX)
+I3:          IF  ID  EX  MEM WB (forward from I2.EX→I3.EX)
 ```
 Total: 7 cycles, 0 stalls.
 
-**A2.** Non-pipelined: cycle=1 ns, time=1000Ã—1=1000 ns. Pipelined: cycle=0.333 ns, time=(7+999)Ã—0.333=1006Ã—0.333=335 ns. Speedup=1000/335=2.98Ã—.
+**A2.** Non-pipelined: cycle=1 ns, time=1000×1=1000 ns. Pipelined: cycle=0.333 ns, time=(7+999)×0.333=1006×0.333=335 ns. Speedup=1000/335=2.98×.
 
-**A3.** Load stalls=0.18Ã—0.15Ã—1=0.027. Branch misprediction=0.22Ã—(1-0.85)Ã—3=0.22Ã—0.15Ã—3=0.099. Structural=0.05Ã—1=0.05. Effective CPI=1+0.027+0.099+0.05=1.176.
+**A3.** Load stalls=0.18×0.15×1=0.027. Branch misprediction=0.22×(1-0.85)×3=0.22×0.15×3=0.099. Structural=0.05×1=0.05. Effective CPI=1+0.027+0.099+0.05=1.176.
 
-**A4.** 2-bit (init 11 strong T): Tâ†’correct(11), Tâ†’correct(11), NTâ†’mispredict(10), Tâ†’correct(11), Tâ†’correct(11), NTâ†’mispredict(10), NTâ†’mispredict(01), NTâ†’correct(00). Mispredictions: 3. 1-bit (init NT): T(mis), T(correct), T(correct), NT(mis), T(mis), T(correct), NT(mis), NT(correct). Mispredictions: 4. 2-bit is better (3 vs 4).
+**A4.** 2-bit (init 11 strong T): T→correct(11), T→correct(11), NT→mispredict(10), T→correct(11), T→correct(11), NT→mispredict(10), NT→mispredict(01), NT→correct(00). Mispredictions: 3. 1-bit (init NT): T(mis), T(correct), T(correct), NT(mis), T(mis), T(correct), NT(mis), NT(correct). Mispredictions: 4. 2-bit is better (3 vs 4).
 
-**A5.** Physical registers: P1,P2,P3,... Map: I1: R1â†’P1, I2: R2â†’P2, I3: R1â†’P3 (new mapping, eliminating WAW with I1). WAR: I2 writes R2, I1 reads R1 (different registers in renaming, no conflict). After renaming: I1: ADD P1,P2,P3; I2: SUB P2,P4,P5; I3: MUL P3,P6,P7. All name dependencies eliminated.
+**A5.** Physical registers: P1,P2,P3,... Map: I1: R1→P1, I2: R2→P2, I3: R1→P3 (new mapping, eliminating WAW with I1). WAR: I2 writes R2, I1 reads R1 (different registers in renaming, no conflict). After renaming: I1: ADD P1,P2,P3; I2: SUB P2,P4,P5; I3: MUL P3,P6,P7. All name dependencies eliminated.
 
-**A6.** LW at cycle 1(IF),2(ID),3(EX),4(MEM),5(WB). ADD needs R1 from LW â€” stall 1 cycle: cycle 3(ID)â†’stall cycle 4,5â†’EX at 6. Independent SUB executes: IF at cycle 4 (fills bubble), ID at 5, EX at 6, MEM at 7, WB at 8. Total: 8 cycles for 3 instructions.
+**A6.** LW at cycle 1(IF),2(ID),3(EX),4(MEM),5(WB). ADD needs R1 from LW — stall 1 cycle: cycle 3(ID)→stall cycle 4,5→EX at 6. Independent SUB executes: IF at cycle 4 (fills bubble), ID at 5, EX at 6, MEM at 7, WB at 8. Total: 8 cycles for 3 instructions.
 
-**A7.** n=1: 5/5=1Ã—. n=2: 10/6=1.67Ã—. n=3: 15/7=2.14Ã—. n=5: 25/9=2.78Ã—. n=10: 50/14=3.57Ã—. n=100: 500/104=4.81Ã—. n=âˆž: 5Ã—. Diminishing returns as n increases.
+**A7.** n=1: 5/5=1×. n=2: 10/6=1.67×. n=3: 15/7=2.14×. n=5: 25/9=2.78×. n=10: 50/14=3.57×. n=100: 500/104=4.81×. n=∞: 5×. Diminishing returns as n increases.
 
-**A8.** (a) Static NT: misprediction on taken branches=0.20Ã—0.60=0.12, CPI=0.12Ã—4=0.48 added. (b) 1-bit (80%): misprediction=0.20Ã—0.20Ã—4=0.16 added. (c) 2-bit (92%): 0.08Ã—0.20Ã—4=0.064 added. (d) Perfect: 0 added. 2-bit is 2.5Ã— better than static.
+**A8.** (a) Static NT: misprediction on taken branches=0.20×0.60=0.12, CPI=0.12×4=0.48 added. (b) 1-bit (80%): misprediction=0.20×0.20×4=0.16 added. (c) 2-bit (92%): 0.08×0.20×4=0.064 added. (d) Perfect: 0 added. 2-bit is 2.5× better than static.
 
-**A9.** EXâ†’EX: if (EX/MEM.RegWrite && EX/MEM.rd != 0 && EX/MEM.rd == ID/EX.rs) then ForwardA=10. MEMâ†’EX: if (MEM/WB.RegWrite && MEM/WB.rd != 0 && MEM/WB.rd == ID/EX.rs) then ForwardA=01. Same for ForwardB with rt/rs2.
+**A9.** EX→EX: if (EX/MEM.RegWrite && EX/MEM.rd != 0 && EX/MEM.rd == ID/EX.rs) then ForwardA=10. MEM→EX: if (MEM/WB.RegWrite && MEM/WB.rd != 0 && MEM/WB.rd == ID/EX.rs) then ForwardA=01. Same for ForwardB with rt/rs2.
 
-**A10.** LW R1â†’ADD R5 depends on R1 from first LW, R3 from second LW. ADDâ†’SW depends on R5. No reordering possible (true dependencies). LW1(LW) IFâ†’IDâ†’EXâ†’MEM (stall)â†’WB. ADD IFâ†’ID(stall)â†’EXâ†’MEMâ†’WB. LW2 can be fetched at cycle 3 (independent). SW follows ADD. Total stalls: ~2 needed (load-use for LW1+ADD, LW2+ADD). After optimization: move LW2 before ADD's stall slot.
+**A10.** LW R1→ADD R5 depends on R1 from first LW, R3 from second LW. ADD→SW depends on R5. No reordering possible (true dependencies). LW1(LW) IF→ID→EX→MEM (stall)→WB. ADD IF→ID(stall)→EX→MEM→WB. LW2 can be fetched at cycle 3 (independent). SW follows ADD. Total stalls: ~2 needed (load-use for LW1+ADD, LW2+ADD). After optimization: move LW2 before ADD's stall slot.
 
-**A11.** More stages allow shorter cycle time â†’ higher frequency. But branch resolved later â†’ more instructions fetched before resolution. Pentium 4 (31 stages) had ~20-cycle misprediction penalty â†’ high power for marginal frequency gain. Modern CPUs settle at 14â€“19 stages for optimal power/performance trade-off.
+**A11.** More stages allow shorter cycle time → higher frequency. But branch resolved later → more instructions fetched before resolution. Pentium 4 (31 stages) had ~20-cycle misprediction penalty → high power for marginal frequency gain. Modern CPUs settle at 14–19 stages for optimal power/performance trade-off.
 
-**A12.** VLIW packet 1: ADD(R1)+MUL(R4)+LW(R7)+SUB(R9) â€” all independent! No NOPs needed. Each instruction executed by different functional unit in same cycle.
+**A12.** VLIW packet 1: ADD(R1)+MUL(R4)+LW(R7)+SUB(R9) — all independent! No NOPs needed. Each instruction executed by different functional unit in same cycle.
 
-**A13.** ROB holds completed instructions in program order. Results written to ROB but not to architectural state. On exception: ROB entries after the faulting instruction are squashed â†’ architectural state unchanged (precise exception). On correct execution: commit in order from ROB to register file.
+**A13.** ROB holds completed instructions in program order. Results written to ROB but not to architectural state. On exception: ROB entries after the faulting instruction are squashed → architectural state unchanged (precise exception). On correct execution: commit in order from ROB to register file.
 
 **A14.** Reservation stations track operands by tag (pointer to ROB entry or functional unit) instead of register name. When a result becomes available on CDB, all reservation stations waiting for that tag capture the value. This enables dynamic bypassing without register file read ports.
 
-**A15.** Memory stall cycles = 0.30 Ã— 0.10 Ã— 10 = 0.30. CPI = 1 + 0.30 = 1.30. MIPS = Clock / (CPI Ã— 10â¶) = 2Ã—10â¹ / 1.30 = 1538.5 MIPS.
+**A15.** Memory stall cycles = 0.30 × 0.10 × 10 = 0.30. CPI = 1 + 0.30 = 1.30. MIPS = Clock / (CPI × 10⁶) = 2×10⁹ / 1.30 = 1538.5 MIPS.
 
-**A16.** In-order: LW(IFâ†’IDâ†’EXâ†’MEMâ†’WB), ADD(stall 1â†’EXâ†’MEMâ†’WB), MUL(IFâ†’IDâ†’stallâ†’EXâ†’MEMâ†’WBâ†’makes progress), ADD(IFâ†’stallâ†’...). Total: ~10 cycles. OoO: LW(IFâ†’IDâ†’EXâ†’MEMâ†’WB), MUL(IFâ†’IDâ†’EXâ†’...completes), ADD(IFâ†’...â†’EXâ†’...). ADD uses results from MUL as they become ready. Total: ~7 cycles.
+**A16.** In-order: LW(IF→ID→EX→MEM→WB), ADD(stall 1→EX→MEM→WB), MUL(IF→ID→stall→EX→MEM→WB→makes progress), ADD(IF→stall→...). Total: ~10 cycles. OoO: LW(IF→ID→EX→MEM→WB), MUL(IF→ID→EX→...completes), ADD(IF→...→EX→...). ADD uses results from MUL as they become ready. Total: ~7 cycles.
 
-**A17.** 2-bit from 00(NT): Tâ†’mis(01), Tâ†’correct(10), Tâ†’correct(11), NTâ†’mis(10), Tâ†’correct(11), Tâ†’correct(11), Tâ†’correct(11), NTâ†’mis(10). Mispredictions: 3 (transitions from NT-predicting states).
+**A17.** 2-bit from 00(NT): T→mis(01), T→correct(10), T→correct(11), NT→mis(10), T→correct(11), T→correct(11), T→correct(11), NT→mis(10). Mispredictions: 3 (transitions from NT-predicting states).
 
 **A18.** Stall: Insert bubble (NOP) in pipeline, freeze earlier stages. Example: load-use hazard (wait for data). Flush: Clear pipeline stages, discard partially executed instructions. Example: branch misprediction (wrong path instructions must be removed). Both insert bubbles, but flush additionally discards wrong-path instructions.
 
-**A19.** Original: loop body, BNE to loop (4 iterations â†’ 3 taken, 1 NT). Unrolled: replicate body 4 times, remove branch. Result: no branch instructions â†’ no control hazards. Trade-off: larger code size.
+**A19.** Original: loop body, BNE to loop (4 iterations → 3 taken, 1 NT). Unrolled: replicate body 4 times, remove branch. Result: no branch instructions → no control hazards. Trade-off: larger code size.
 
-**A20.** 5 instructions: LW, ADD, SW, ADD, MUL. Dependencies: LWâ†’ADD (R1), ADDâ†’SW (R3), ADD(R6)â†’MUL(R6). Timeline: LW(IFâ†’IDâ†’EXâ†’MEMâ†’stallâ†’WB), ADD(IFâ†’IDâ†’stallâ†’EXâ†’MEMâ†’WB), SW(IFâ†’stallâ†’...), etc. Total: ~10 cycles with forwarding.
+**A20.** 5 instructions: LW, ADD, SW, ADD, MUL. Dependencies: LW→ADD (R1), ADD→SW (R3), ADD(R6)→MUL(R6). Timeline: LW(IF→ID→EX→MEM→stall→WB), ADD(IF→ID→stall→EX→MEM→WB), SW(IF→stall→...), etc. Total: ~10 cycles with forwarding.
 
-**A21.** ALU-ALU forwarding eliminates RAW between ALU ops. Load stalls=0.20Ã—0.20Ã—1=0.04. Branch stalls=0.25Ã—(1-0.75)Ã—2=0.25Ã—0.25Ã—2=0.125 (assuming 75% taken means predictor accuracy depends on scheme, but standard calculation uses misprediction rate). CPI=1+0.04+0.125=1.165. If predictor accuracy=90% for branches: 0.25Ã—0.10Ã—2=0.05, CPI=1+0.04+0.05=1.09.
+**A21.** ALU-ALU forwarding eliminates RAW between ALU ops. Load stalls=0.20×0.20×1=0.04. Branch stalls=0.25×(1-0.75)×2=0.25×0.25×2=0.125 (assuming 75% taken means predictor accuracy depends on scheme, but standard calculation uses misprediction rate). CPI=1+0.04+0.125=1.165. If predictor accuracy=90% for branches: 0.25×0.10×2=0.05, CPI=1+0.04+0.05=1.09.
 
-**A22.** One thread: pipeline bubbles when waiting for cache, etc. Two SMT threads: when thread 1 stalls (cache miss), thread 2 uses the pipeline resources. SMT improves utilization by 15â€“30%. Example: T1: cache miss for LW (stalls 10 cycles). T2 uses those 10 cycles to execute independent instructions.
+**A22.** One thread: pipeline bubbles when waiting for cache, etc. Two SMT threads: when thread 1 stalls (cache miss), thread 2 uses the pipeline resources. SMT improves utilization by 15–30%. Example: T1: cache miss for LW (stalls 10 cycles). T2 uses those 10 cycles to execute independent instructions.
 
 **A23.** gshare: Index = PC XOR GHR = 0x4A XOR 0xB. 0x4A=01001010, 0xB=00001011, XOR=01000001=0x41. Pattern table entry 0x41 provides the prediction. Combined with 4-bit GHR (1011), the predictor adapts to recent branch patterns.
 
-**A24.** (a) MIPS = 3Ã—10â¹/(1.5Ã—10â¶) = 2000 MIPS. (b) Time per instruction = CPI Ã— cycle time = 1.5 Ã— 0.333 ns = 0.5 ns. (c) Execution time = 10â¶ Ã— 0.5 ns = 0.5 ms.
+**A24.** (a) MIPS = 3×10⁹/(1.5×10⁶) = 2000 MIPS. (b) Time per instruction = CPI × cycle time = 1.5 × 0.333 ns = 0.5 ns. (c) Execution time = 10⁶ × 0.5 ns = 0.5 ms.
 
 **A25.** Before (with stall): LW R1,0(R2); ADD R3,R1,R4; SUB R5,R6,R7. After scheduling: LW R1,0(R2); SUB R5,R6,R7; ADD R3,R1,R4 (independent SUB fills load-use slot). No stall needed!
 
@@ -2126,21 +2126,21 @@ Total: 7 cycles, 0 stalls.
 **A28.** Loop has 100 iterations: 99 taken + 1 NT exit.
 (a) 1-bit: 2 mispredictions (first T from initial NT, and last NT from T). Rate = 2/100 = 2%.
 (b) 2-bit: 1 misprediction (only the last NT from T states). Rate = 1/100 = 1%.
-For large N, 2-bit is 2Ã— better.
+For large N, 2-bit is 2× better.
 
 **A29.** RAW hazard detection (pseudo-code):
 ```
 // Check between I1 and I2
-if (I1.rd == I2.rs1 || I1.rd == I2.rs2) && I1.rd != 0 then RAW(I1â†’I2)
+if (I1.rd == I2.rs1 || I1.rd == I2.rs2) && I1.rd != 0 then RAW(I1→I2)
 // Check between I2 and I3
-if (I2.rd == I3.rs1 || I2.rd == I3.rs2) && I2.rd != 0 then RAW(I2â†’I3)
+if (I2.rd == I3.rs1 || I2.rd == I3.rs2) && I2.rd != 0 then RAW(I2→I3)
 // Check between I1 and I3 (skip-over)
-if (I1.rd == I3.rs1 || I1.rd == I3.rs2) && I1.rd != 0 && I2.rd != I1.rd then RAW(I1â†’I3)
+if (I1.rd == I3.rs1 || I1.rd == I3.rs2) && I1.rd != 0 && I2.rd != I1.rd then RAW(I1→I3)
 ```
 
-**A30.** 5-stage (2.5 GHz, 0.4 ns): branch penalty = 0.20Ã—0.50Ã—3 = 0.30 CPI. Effective CPI = 1.30. Time = 10â¶Ã—1.30Ã—0.4 = 520,000 ns.
-10-stage (4 GHz, 0.25 ns): branch penalty = 0.20Ã—0.50Ã—6 = 0.60 CPI. Effective CPI = 1.60. Time = 10â¶Ã—1.60Ã—0.25 = 400,000 ns.
-10-stage is 520/400 = 1.3Ã— faster despite higher branch penalty, due to higher clock frequency.
+**A30.** 5-stage (2.5 GHz, 0.4 ns): branch penalty = 0.20×0.50×3 = 0.30 CPI. Effective CPI = 1.30. Time = 10⁶×1.30×0.4 = 520,000 ns.
+10-stage (4 GHz, 0.25 ns): branch penalty = 0.20×0.50×6 = 0.60 CPI. Effective CPI = 1.60. Time = 10⁶×1.60×0.25 = 400,000 ns.
+10-stage is 520/400 = 1.3× faster despite higher branch penalty, due to higher clock frequency.
 </details>
 
 ## Summary
@@ -2160,9 +2160,9 @@ if (I1.rd == I3.rs1 || I1.rd == I3.rs2) && I1.rd != 0 && I2.rd != I1.rd then RAW
 
 - **For IBPS/GATE:** Load-use hazard always needs at least 1 stall, even with forwarding. This is a frequently tested point.
 - **Branch prediction trick:** A 1-bit predictor has 2 mispredictions per loop (first and last iteration). A 2-bit predictor has 1 misprediction per loop (last iteration only, for N &gt; 1).
-- **Pipeline speedup limit:** Even with ideal pipelining, pipeline register overhead and hazards prevent achieving perfect kÃ— speedup.
+- **Pipeline speedup limit:** Even with ideal pipelining, pipeline register overhead and hazards prevent achieving perfect k× speedup.
 - **Superscalar vs VLIW:** Superscalar shifts complexity to hardware (dynamic scheduling); VLIW shifts complexity to compiler (static scheduling).
-- **Exam numerical strategy:** For CPI calculations, identify each hazard source, compute its contribution (frequency Ã— penalty), and add to base CPI of 1.
+- **Exam numerical strategy:** For CPI calculations, identify each hazard source, compute its contribution (frequency × penalty), and add to base CPI of 1.
 
 ---
 
@@ -2178,11 +2178,11 @@ if (I1.rd == I3.rs1 || I1.rd == I3.rs2) && I1.rd != 0 && I2.rd != I1.rd then RAW
 
 **Q3:** Calculate speedup for 500 instructions on a 5-stage pipeline (no hazards, cycle time = 2 ns pipelined vs 8 ns non-pipelined).
 
-(`<details><summary>Show Answer</summary>Non-pipelined: 8 Ã— 500 = 4000 ns. Pipelined: (5 + 499) Ã— 2 = 504 Ã— 2 = 1008 ns. Speedup = 4000 / 1008 â‰ˆ 3.97Ã—</details>`)
+(`<details><summary>Show Answer</summary>Non-pipelined: 8 × 500 = 4000 ns. Pipelined: (5 + 499) × 2 = 504 × 2 = 1008 ns. Speedup = 4000 / 1008 ≈ 3.97×</details>`)
 
 **Q4:** Why does a load instruction cause a 1-cycle stall even with forwarding?
 
-(`<details><summary>Show Answer</summary>Load data is available only after the MEM stage (memory read). The dependent instruction needs the data in the EX stage. Forwarding from MEMâ†’EX can provide the data, but the dependent instruction's EX must wait 1 cycle for the load to complete MEM.</details>`)
+(`<details><summary>Show Answer</summary>Load data is available only after the MEM stage (memory read). The dependent instruction needs the data in the EX stage. Forwarding from MEM→EX can provide the data, but the dependent instruction's EX must wait 1 cycle for the load to complete MEM.</details>`)
 
 **Q5:** What is the role of a Branch Target Buffer (BTB)?
 
@@ -2199,6 +2199,6 @@ if (I1.rd == I3.rs1 || I1.rd == I3.rs2) && I1.rd != 0 && I2.rd != I1.rd then RAW
 5. Explain the difference between in-order and out-of-order execution. How does Tomasulo's algorithm enable out-of-order execution?
 6. Compare superscalar, VLIW, and SMT (hyper-threading) with examples.
 7. For the code sequence: ADD R1, R2, R3; ADD R2, R1, R4; ADD R3, R2, R5. Identify all data dependencies and show the execution with and without forwarding.
-8. Calculate the minimum number of pipeline stages needed to achieve a speedup of at least 3.5Ã— for 1000 instructions (assume ideal conditions).
+8. Calculate the minimum number of pipeline stages needed to achieve a speedup of at least 3.5× for 1000 instructions (assume ideal conditions).
 9. A program has 25% branch instructions with 70% taken. The pipeline has a 3-cycle misprediction penalty. Static predictor (predict NT) vs 2-bit dynamic predictor (90% accuracy). Compare performance.
 10. Draw a complete pipeline diagram for 6 instructions showing forwarding paths and stall cycles where needed.

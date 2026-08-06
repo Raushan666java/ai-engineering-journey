@@ -1,4 +1,4 @@
-﻿# Chapter 4: Control Flow
+# Chapter 4: Control Flow
 
 > **Previous:** [Operators](./03-operators.md) | **Next:** [Loops](./05-loops.md)
 
@@ -39,7 +39,7 @@
 | if-else Statements | Conditional branching based on boolean expressions | Always use braces even for single-line bodies to avoid bugs |
 | switch-case | Multi-way branch on integer expressions | Every non-empty case needs a `break` or explicit fall-through comment |
 | Ternary Operator | Inline conditional expression `condition ? true : false` | Use for simple assignments, not complex logic |
-| goto Statement | Unconditional jump to a labeled statement | Use sparingly â€” typically only for error cleanup in nested contexts |
+| goto Statement | Unconditional jump to a labeled statement | Use sparingly — typically only for error cleanup in nested contexts |
 | break vs continue | Loop control vs skip iteration | break exits the loop; continue skips to next iteration |
 | return vs exit() | Function return vs program termination | return cleans up local scope; exit() terminates immediately |
 | Short-Circuit Evaluation | `&&` and `||` stop evaluating once result is known | Rely on this for safe null-pointer checks before dereferencing |
@@ -71,10 +71,10 @@ flowchart LR
 ### Numbered Steps of Decision Making
 
 
-1. **Evaluate condition** â€” The program evaluates a boolean expression (any expression yielding zero/non-zero)
-2. **Branch selection** â€” Based on the truth value, the corresponding code block is selected for execution
-3. **Execute selected block** â€” The statements inside the selected branch run
-4. **Resume sequential flow** â€” After the branch completes, execution continues with the next statement after the construct
+1. **Evaluate condition** — The program evaluates a boolean expression (any expression yielding zero/non-zero)
+2. **Branch selection** — Based on the truth value, the corresponding code block is selected for execution
+3. **Execute selected block** — The statements inside the selected branch run
+4. **Resume sequential flow** — After the branch completes, execution continues with the next statement after the construct
 
 ### Pseudocode
 
@@ -106,7 +106,7 @@ CONTINUE with rest of program
 
 ## 4.1 The `if` Statement
 
-The `if` statement executes a block of code only when a condition evaluates to true (non-zero). It is the simplest form of control flow â€” a single gate.
+The `if` statement executes a block of code only when a condition evaluates to true (non-zero). It is the simplest form of control flow — a single gate.
 
 ### Real-World Analogy
 
@@ -162,18 +162,18 @@ int main(void)
 
 | Step | Line | Code | temperature | Condition (temp > 25) | Action |
 |------|------|------|-------------|----------------------|--------|
-| 1 | 5 | `int temperature = 30;` | 30 | â€” | Variable initialized |
-| 2 | 7 | `if (temperature > 25)` | 30 | `30 > 25` â†’ **true** (1) | Enter if block |
-| 3 | 8 | `printf(...)` | 30 | â€” | Output: "It is a warm day." |
-| 4 | 10 | `return 0;` | 30 | â€” | Program ends |
+| 1 | 5 | `int temperature = 30;` | 30 | — | Variable initialized |
+| 2 | 7 | `if (temperature > 25)` | 30 | `30 > 25` → **true** (1) | Enter if block |
+| 3 | 8 | `printf(...)` | 30 | — | Output: "It is a warm day." |
+| 4 | 10 | `return 0;` | 30 | — | Program ends |
 
 **Trace Table (temperature = 10):**
 
 | Step | Line | Code | temperature | Condition (temp > 25) | Action |
 |------|------|------|-------------|----------------------|--------|
-| 1 | 5 | `int temperature = 10;` | 10 | â€” | Variable initialized |
-| 2 | 7 | `if (temperature > 25)` | 10 | `10 > 25` â†’ **false** (0) | Skip if block |
-| 3 | 10 | `return 0;` | 10 | â€” | Program ends |
+| 1 | 5 | `int temperature = 10;` | 10 | — | Variable initialized |
+| 2 | 7 | `if (temperature > 25)` | 10 | `10 > 25` → **false** (0) | Skip if block |
+| 3 | 10 | `return 0;` | 10 | — | Program ends |
 
 ### C Code Examples
 
@@ -213,7 +213,7 @@ int main(void)
 {
     int x = 0;
 
-    /* BUG: assignment instead of comparison â€” always true */
+    /* BUG: assignment instead of comparison — always true */
     if (x = 5) {
         printf("This ALWAYS prints because x = 5 evaluates to 5 (true)\n");
     }
@@ -238,8 +238,8 @@ x is 5
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(1) â€” The condition expression is evaluated once in constant time regardless of input size
-- **Space Complexity:** O(1) â€” No additional memory is allocated beyond the condition evaluation
+- **Time Complexity:** O(1) — The condition expression is evaluated once in constant time regardless of input size
+- **Space Complexity:** O(1) — No additional memory is allocated beyond the condition evaluation
 
 ### Advantages & Disadvantages
 
@@ -248,7 +248,7 @@ x is 5
 |------------|---------------|
 | Simplest control flow construct | Only handles a single condition |
 | Easy to read and understand | No else path for false case |
-| Fast â€” single branch prediction | Can lead to many separate if statements |
+| Fast — single branch prediction | Can lead to many separate if statements |
 | No fall-through issues (unlike switch) | Repeated condition evaluation if naive |
 
 ### Edge Cases
@@ -266,12 +266,12 @@ x is 5
 
 ## 4.2 The `if-else` Statement
 
-The `if-else` statement provides two mutually exclusive code paths â€” one for when the condition is true, another for when it is false.
+The `if-else` statement provides two mutually exclusive code paths — one for when the condition is true, another for when it is false.
 
 ### Real-World Analogy
 
 
-An `if-else` is like a fork in a hiking trail. A signpost asks: "Is the bridge ahead safe?" If yes (true), take the short path across the bridge. If no (false), take the longer detour around the ravine. You must take exactly one path â€” never both, never neither.
+An `if-else` is like a fork in a hiking trail. A signpost asks: "Is the bridge ahead safe?" If yes (true), take the short path across the bridge. If no (false), take the longer detour around the ravine. You must take exactly one path — never both, never neither.
 
 ### Syntax
 
@@ -328,19 +328,19 @@ int main(void)
 
 | Step | Line | Code | number | number % 2 | Condition (== 0) | Action |
 |------|------|------|--------|------------|------------------|--------|
-| 1 | 5 | `int number = 7;` | 7 | â€” | â€” | Variable initialized |
-| 2 | 7 | `if (number % 2 == 0)` | 7 | 1 | `1 == 0` â†’ **false** (0) | Skip if block, enter else |
-| 3 | 10 | `printf(...)` | 7 | â€” | â€” | Output: "7 is odd." |
-| 4 | 12 | `return 0;` | 7 | â€” | â€” | Program ends |
+| 1 | 5 | `int number = 7;` | 7 | — | — | Variable initialized |
+| 2 | 7 | `if (number % 2 == 0)` | 7 | 1 | `1 == 0` → **false** (0) | Skip if block, enter else |
+| 3 | 10 | `printf(...)` | 7 | — | — | Output: "7 is odd." |
+| 4 | 12 | `return 0;` | 7 | — | — | Program ends |
 
 **Trace Table (number = 8):**
 
 | Step | Line | Code | number | number % 2 | Condition (== 0) | Action |
 |------|------|------|--------|------------|------------------|--------|
-| 1 | 5 | `int number = 8;` | 8 | â€” | â€” | Variable initialized |
-| 2 | 7 | `if (number % 2 == 0)` | 8 | 0 | `0 == 0` â†’ **true** (1) | Enter if block |
-| 3 | 8 | `printf(...)` | 8 | â€” | â€” | Output: "8 is even." |
-| 4 | 12 | `return 0;` | 8 | â€” | â€” | Program ends |
+| 1 | 5 | `int number = 8;` | 8 | — | — | Variable initialized |
+| 2 | 7 | `if (number % 2 == 0)` | 8 | 0 | `0 == 0` → **true** (1) | Enter if block |
+| 3 | 8 | `printf(...)` | 8 | — | — | Output: "8 is even." |
+| 4 | 12 | `return 0;` | 8 | — | — | Program ends |
 
 ### C Code Examples
 
@@ -383,7 +383,7 @@ int main(void)
         printf("Marks: %d\n", marks);
     } else {
         printf("Result: FAIL\n");
-        printf("Marks: %d â€” Need %d more\n", marks, 40 - marks);
+        printf("Marks: %d — Need %d more\n", marks, 40 - marks);
     }
 
     return 0;
@@ -405,14 +405,14 @@ int main(void)
 {
     int x = 0;
 
-    /* Without braces â€” only first statement is in the else branch */
+    /* Without braces — only first statement is in the else branch */
     if (x > 0)
         printf("Positive\n");
     else
         printf("Non-positive\n");
-        printf("This ALWAYS prints â€” not part of else!\n");
+        printf("This ALWAYS prints — not part of else!\n");
 
-    /* Same logic WITH braces â€” correct */
+    /* Same logic WITH braces — correct */
     if (x > 0) {
         printf("Positive\n");
     } else {
@@ -427,7 +427,7 @@ int main(void)
 **Output:**
 ```
 Non-positive
-This ALWAYS prints â€” not part of else!
+This ALWAYS prints — not part of else!
 Non-positive
 This prints only when x <= 0
 ```
@@ -435,8 +435,8 @@ This prints only when x <= 0
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(1) â€” The condition is evaluated once; exactly one branch executes
-- **Space Complexity:** O(1) â€” No additional memory allocation
+- **Time Complexity:** O(1) — The condition is evaluated once; exactly one branch executes
+- **Space Complexity:** O(1) — No additional memory allocation
 
 ### Advantages & Disadvantages
 
@@ -444,7 +444,7 @@ This prints only when x <= 0
 | Advantages | Disadvantages |
 |------------|---------------|
 | Covers both true and false paths explicitly | Only two possible outcomes |
-| Mutually exclusive â€” guarantees exactly one path | Cannot express multi-way branching directly |
+| Mutually exclusive — guarantees exactly one path | Cannot express multi-way branching directly |
 | Clear, readable logic | Nested if-else reduces readability |
 | Compiler optimizes with conditional jumps | Expression evaluated even when false branch is trivial |
 
@@ -468,7 +468,7 @@ The `if-else if` ladder tests multiple conditions in sequence and executes the b
 ### Real-World Analogy
 
 
-The `if-else if` ladder is like a medical triage system in an emergency room. A nurse evaluates patients one at a time: "Is this patient critical?" â†’ "Is this patient serious?" â†’ "Is this patient stable?" â†’ "Is this patient minor?" The first category that matches determines the treatment path. Once a patient is categorized, no further checks occur.
+The `if-else if` ladder is like a medical triage system in an emergency room. A nurse evaluates patients one at a time: "Is this patient critical?" → "Is this patient serious?" → "Is this patient stable?" → "Is this patient minor?" The first category that matches determines the treatment path. Once a patient is categorized, no further checks occur.
 
 ### Syntax
 
@@ -488,9 +488,9 @@ if (condition1) {
 ### Numbered Execution Steps
 
 
-1. Evaluate `condition1` â€” if true, execute block 1 and jump to step 5
-2. Evaluate `condition2` â€” if true, execute block 2 and jump to step 5
-3. Evaluate `condition3` â€” if true, execute block 3 and jump to step 5
+1. Evaluate `condition1` — if true, execute block 1 and jump to step 5
+2. Evaluate `condition2` — if true, execute block 2 and jump to step 5
+3. Evaluate `condition3` — if true, execute block 3 and jump to step 5
 4. If **no** condition was true, execute the `else` block (if present)
 5. Continue with the next statement after the ladder
 
@@ -540,23 +540,23 @@ int main(void)
 
 | Step | Line | Code | score | Condition | Result | Action |
 |------|------|------|-------|-----------|--------|--------|
-| 1 | 5 | `int score = 85;` | 85 | â€” | â€” | Variable initialized |
+| 1 | 5 | `int score = 85;` | 85 | — | — | Variable initialized |
 | 2 | 7 | `if (score >= 90)` | 85 | `85 >= 90` | **false** | Move to next else-if |
 | 3 | 9 | `else if (score >= 80)` | 85 | `85 >= 80` | **true** | Enter this block |
-| 4 | 10 | `printf("Grade: B\n")` | 85 | â€” | â€” | **Output:** Grade: B |
-| 5 | 11 | End of this else-if | 85 | â€” | â€” | Skip remaining else-if/else |
+| 4 | 10 | `printf("Grade: B\n")` | 85 | — | — | **Output:** Grade: B |
+| 5 | 11 | End of this else-if | 85 | — | — | Skip remaining else-if/else |
 
 **Trace Table (score = 45):**
 
 | Step | Line | Code | score | Condition | Result | Action |
 |------|------|------|-------|-----------|--------|--------|
-| 1 | 5 | `int score = 45;` | 45 | â€” | â€” | Variable initialized |
+| 1 | 5 | `int score = 45;` | 45 | — | — | Variable initialized |
 | 2 | 7 | `if (score >= 90)` | 45 | `45 >= 90` | **false** | Next |
 | 3 | 9 | `else if (score >= 80)` | 45 | `45 >= 80` | **false** | Next |
 | 4 | 11 | `else if (score >= 70)` | 45 | `45 >= 70` | **false** | Next |
 | 5 | 13 | `else if (score >= 60)` | 45 | `45 >= 60` | **false** | Next |
-| 6 | 15 | `else` | 45 | â€” | â€” | Enter default else |
-| 7 | 16 | `printf("Grade: F\n")` | 45 | â€” | â€” | **Output:** Grade: F |
+| 6 | 15 | `else` | 45 | — | — | Enter default else |
+| 7 | 16 | `printf("Grade: F\n")` | 45 | — | — | **Output:** Grade: F |
 
 ### C Code Examples
 
@@ -592,8 +592,8 @@ int main(void)
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(n) where n is the number of conditions â€” in the worst case, all conditions are evaluated before finding a match (or reaching the else)
-- **Space Complexity:** O(1) â€” No additional memory allocation
+- **Time Complexity:** O(n) where n is the number of conditions — in the worst case, all conditions are evaluated before finding a match (or reaching the else)
+- **Space Complexity:** O(1) — No additional memory allocation
 
 ### Advantages & Disadvantages
 
@@ -603,7 +603,7 @@ int main(void)
 | Handles multiple mutually exclusive conditions | Worst case evaluates all conditions (O(n)) |
 | Conditions can be arbitrary boolean expressions | Less readable than switch for value-based dispatch |
 | Conditions checked top-down (priority order) | Not suitable for value-based dispatch (use switch) |
-| Flexible â€” each condition can test different variables | Can encourage deeply nested logic |
+| Flexible — each condition can test different variables | Can encourage deeply nested logic |
 
 ### Important Rule: Order Matters
 
@@ -611,7 +611,7 @@ int main(void)
 Conditions are evaluated **top-down**. Once a condition is true, the rest are **skipped**. Order conditions from most specific (or most restrictive) to least.
 
 ```c
-/* WRONG â€” the >= 60 condition catches everything >= 60,
+/* WRONG — the >= 60 condition catches everything >= 60,
    so the >= 70, >= 80, >= 90 branches NEVER execute */
 if (score >= 60) {
     printf("Grade D");
@@ -631,7 +631,7 @@ if (score >= 60) {
 |-----------|---------|-------------|
 | **Overlapping conditions** | `if (x > 0)` then `else if (x > 10)` | Second condition never true if first is true |
 | **Missing final else** | Omission of final `else` block | No action taken when all conditions are false |
-| **Empty condition body** | `if (x > 0); else if (y > 0);` | Semicolons create empty bodies â€” no code runs |
+| **Empty condition body** | `if (x > 0); else if (y > 0);` | Semicolons create empty bodies — no code runs |
 | **Deep ladder (8+ conditions)** | 10+ else-if branches | Consider switch-case or function pointer array |
 
 ---
@@ -696,10 +696,10 @@ int main(void)
 
 | Step | Code | a | b | c | Condition | Result | Action |
 |------|------|---|---|---|-----------|--------|--------|
-| 1 | `int a=10, b=25, c=15` | 10 | 25 | 15 | â€” | â€” | Variables initialized |
+| 1 | `int a=10, b=25, c=15` | 10 | 25 | 15 | — | — | Variables initialized |
 | 2 | `if (a >= b)` | 10 | 25 | 15 | `10 >= 25` | **false** | Enter outer else |
 | 3 | `if (b >= c)` | 10 | 25 | 15 | `25 >= 15` | **true** | Enter inner if |
-| 4 | `printf("Largest: %d", b)` | 10 | 25 | 15 | â€” | â€” | **Output:** Largest: 25 |
+| 4 | `printf("Largest: %d", b)` | 10 | 25 | 15 | — | — | **Output:** Largest: 25 |
 
 ### Code Example
 
@@ -737,15 +737,15 @@ Largest: 25
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(d) where d is the nesting depth â€” at most d comparisons in the worst case
-- **Space Complexity:** O(1) â€” No additional memory
+- **Time Complexity:** O(d) where d is the nesting depth — at most d comparisons in the worst case
+- **Space Complexity:** O(1) — No additional memory
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Models hierarchical decision logic | Reduced readability at depth â‰¥ 3 |
+| Models hierarchical decision logic | Reduced readability at depth ≥ 3 |
 | All conditions available at each level | Increased cyclomatic complexity |
 | No redundant condition re-evaluation | Easy to introduce logic errors |
 
@@ -754,7 +754,7 @@ Largest: 25
 
 | Edge Case | Explanation |
 |-----------|-------------|
-| **Deep nesting (4+ levels)** | Code becomes pyramid of doom â€” refactor into functions |
+| **Deep nesting (4+ levels)** | Code becomes pyramid of doom — refactor into functions |
 | **Missing braces** | Inner else binds ambiguously to nearest unmatched if |
 | **Incomplete branch coverage** | Forgetting to handle all combinations |
 
@@ -769,13 +769,13 @@ The dangling else is a classic ambiguity in C: when `if` statements are nested w
 ### Real-World Analogy
 
 
-The dangling else is like a sign in a building that says "If you see the reception desk, turn left. If you see the elevator, turn right. Else go straight." The "else" is ambiguous â€” does it attach to the first "if" or the second? In C, it always attaches to the nearest `if`.
+The dangling else is like a sign in a building that says "If you see the reception desk, turn left. If you see the elevator, turn right. Else go straight." The "else" is ambiguous — does it attach to the first "if" or the second? In C, it always attaches to the nearest `if`.
 
 ### The Problem
 
 
 ```c
-/* BAD â€” misleading indentation */
+/* BAD — misleading indentation */
 if (x > 0)
     if (y > 0)
         printf("both positive\n");
@@ -783,13 +783,13 @@ else
     printf("x is not positive\n");   /* binds to inner if! */
 ```
 
-Despite the indentation suggesting `else` belongs to `if (x > 0)`, the compiler binds it to `if (y > 0)`. So "x is not positive" prints when `x > 0` AND `y <= 0` â€” the opposite of what the indentation suggests.
+Despite the indentation suggesting `else` belongs to `if (x > 0)`, the compiler binds it to `if (y > 0)`. So "x is not positive" prints when `x > 0` AND `y <= 0` — the opposite of what the indentation suggests.
 
 ### The Fix
 
 
 ```c
-/* CORRECT â€” braces clarify intent */
+/* CORRECT — braces clarify intent */
 if (x > 0) {
     if (y > 0) {
         printf("both positive\n");
@@ -808,7 +808,7 @@ if (x > 0) {
 |------|-----------|-------------|--------|
 | 1 | `x > 0` (5 > 0) | **true** | Enter outer if |
 | 2 | `y > 0` (-1 > 0) | **false** | Skip inner if body |
-| 3 | `else` clause | â€” | **Executes!** "x is not positive" printed â€” WRONG! |
+| 3 | `else` clause | — | **Executes!** "x is not positive" printed — WRONG! |
 
 ### Code Example
 
@@ -820,7 +820,7 @@ int main(void)
 {
     int x = 5, y = -1;
 
-    /* MISLEADING INDENTATION â€” buggy */
+    /* MISLEADING INDENTATION — buggy */
     if (x > 0)
         if (y > 0)
             printf("both positive\n");
@@ -841,8 +841,8 @@ x is not positive
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(1) â€” No additional overhead for using braces
-- **Space Complexity:** O(1) â€” Braces do not affect memory
+- **Time Complexity:** O(1) — No additional overhead for using braces
+- **Space Complexity:** O(1) — Braces do not affect memory
 
 ### Edge Cases
 
@@ -850,7 +850,7 @@ x is not positive
 | Edge Case | Explanation |
 |-----------|-------------|
 | **Deep nesting without braces** | Each additional level doubles ambiguity potential |
-| **Mixed bracing** | Some if blocks braced, others not â€” inconsistent and error-prone |
+| **Mixed bracing** | Some if blocks braced, others not — inconsistent and error-prone |
 
 ---
 
@@ -861,7 +861,7 @@ x is not positive
 ### Real-World Analogy
 
 
-A `switch` statement is like a vending machine. You press a button (the expression). The machine checks: "Is button 1 pressed? 2? 3? ..." Instead of asking each question sequentially, the vending machine directly routes to the correct column based on the button number. This is exactly how `switch` works â€” it jumps directly to the matching case.
+A `switch` statement is like a vending machine. You press a button (the expression). The machine checks: "Is button 1 pressed? 2? 3? ..." Instead of asking each question sequentially, the vending machine directly routes to the correct column based on the button number. This is exactly how `switch` works — it jumps directly to the matching case.
 
 ### Syntax
 
@@ -941,9 +941,9 @@ int main(void)
 | Step | Code | day | Action |
 |------|------|-----|--------|
 | 1 | `int day = 3;` | 3 | Variable initialized |
-| 2 | `switch (day)` | 3 | Evaluate expression â†’ value is 3 |
-| 3 | `case 1:` | 3 | No match â€” skip |
-| 4 | `case 2:` | 3 | No match â€” skip |
+| 2 | `switch (day)` | 3 | Evaluate expression → value is 3 |
+| 3 | `case 1:` | 3 | No match — skip |
+| 4 | `case 2:` | 3 | No match — skip |
 | 5 | `case 3:` | 3 | **Match!** Jump to this case |
 | 6 | `printf("Wednesday\n")` | 3 | **Output:** Wednesday |
 | 7 | `break;` | 3 | Exit switch |
@@ -1048,8 +1048,8 @@ int main(void)
 
 
 - **Time Complexity:** 
-  - **Without jump table:** O(n) â€” linear search through cases (compiler falls back to if-else chain)
-  - **With jump table:** O(1) â€” direct jump to the matching case (typical for compact range of values)
+  - **Without jump table:** O(n) — linear search through cases (compiler falls back to if-else chain)
+  - **With jump table:** O(1) — direct jump to the matching case (typical for compact range of values)
   - Compiler typically implements `switch` as a **jump table** (lookup table of addresses) for compact case ranges, making it faster than an `if-else if` chain
 - **Space Complexity:** O(k) where k is the number of cases (for the jump table)
 
@@ -1067,7 +1067,7 @@ int main(void)
 ### Switch Rules and Limitations
 
 
-- The controlling expression must be integer type (`int`, `char`, `enum`, etc.) â€” **not** `float`, `double`, or string
+- The controlling expression must be integer type (`int`, `char`, `enum`, etc.) — **not** `float`, `double`, or string
 - Case labels must be **compile-time constants** (`const int` variables not allowed in C89/C99; use `#define` or literals)
 - No two case labels may have the same value
 - The `default` case is optional; if present, it can be placed anywhere in the switch body
@@ -1142,7 +1142,7 @@ The ternary operator `?:` is an **expression** (it yields a value). It is the on
 ### Real-World Analogy
 
 
-The ternary operator is like a coin flip decision at a crossroads: "Heads? Go left. Tails? Go right." The coin flip (condition) immediately determines the outcome with no further branching. You get a value directly â†’ left path or right path â†’ and continue moving.
+The ternary operator is like a coin flip decision at a crossroads: "Heads? Go left. Tails? Go right." The coin flip (condition) immediately determines the outcome with no further branching. You get a value directly → left path or right path → and continue moving.
 
 ### Syntax
 
@@ -1188,10 +1188,10 @@ int main(void)
 
 | Step | Code | x | y | Condition (x > y) | Result | Action |
 |------|------|---|---|-------------------|--------|--------|
-| 1 | `int x=10, y=20` | 10 | 20 | â†’ | â†’ | Vars initialized |
-| 2 | `(x > y) ? x : y` | 10 | 20 | `10 > 20` â†’ **false** | 20 | max = 20 |
-| 3 | `printf("The maximum is %d", max)` | 10 | 20 | â†’ | â†’ | Output: The maximum is 20 |
-| 4 | `(x % 2 == 0) ? "even" : "odd"` | 10 | 20 | `10 % 2 == 0` â†’ **true** | "even" | Output: 10 is even |
+| 1 | `int x=10, y=20` | 10 | 20 | → | → | Vars initialized |
+| 2 | `(x > y) ? x : y` | 10 | 20 | `10 > 20` → **false** | 20 | max = 20 |
+| 3 | `printf("The maximum is %d", max)` | 10 | 20 | → | → | Output: The maximum is 20 |
+| 4 | `(x % 2 == 0) ? "even" : "odd"` | 10 | 20 | `10 % 2 == 0` → **true** | "even" | Output: 10 is even |
 
 ### C Code Examples
 
@@ -1262,8 +1262,8 @@ if (a > b) {
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(1) â†’ Condition evaluated once; one of two values is selected
-- **Space Complexity:** O(1) â†’ No additional memory
+- **Time Complexity:** O(1) → Condition evaluated once; one of two values is selected
+- **Space Complexity:** O(1) → No additional memory
 
 ### Advantages & Disadvantages
 
@@ -1296,7 +1296,7 @@ if (a > b) {
 ### Real-World Analogy
 
 
-`goto` is like an emergency exit slide on an airplane. Under normal operation, you follow the structured flow (boarding, taxiing, flying). But in an emergency, you pull the handle and go directly to the exit â†’ bypassing all normal procedure. You use it rarely, only when the structured path would be slower or unsafe.
+`goto` is like an emergency exit slide on an airplane. Under normal operation, you follow the structured flow (boarding, taxiing, flying). But in an emergency, you pull the handle and go directly to the exit → bypassing all normal procedure. You use it rarely, only when the structured path would be slower or unsafe.
 
 ### Syntax
 
@@ -1351,16 +1351,16 @@ start:
 
 | Step | Code | i | Condition (i &lt; 5) | Action |
 |------|------|---|-------------------|--------|
-| 1 | `int i = 0;` | 0 | â†’ | Var initialized |
-| 2 | `start:` | 0 | â†’ | Label reached |
-| 3 | `printf("i = %d", i)` | 0 | â†’ | Output: i = 0 |
-| 4 | `i++` | 1 | â†’ | Increment |
-| 5 | `if (i < 5)` | 1 | `1 < 5` â†’ **true** | goto start |
-| 6 | `start:` | 1 | â†’ | Jump back |
-| 7 | `printf("i = %d", i)` | 1 | â†’ | Output: i = 1 |
+| 1 | `int i = 0;` | 0 | → | Var initialized |
+| 2 | `start:` | 0 | → | Label reached |
+| 3 | `printf("i = %d", i)` | 0 | → | Output: i = 0 |
+| 4 | `i++` | 1 | → | Increment |
+| 5 | `if (i < 5)` | 1 | `1 < 5` → **true** | goto start |
+| 6 | `start:` | 1 | → | Jump back |
+| 7 | `printf("i = %d", i)` | 1 | → | Output: i = 1 |
 | 8 | ... iterates until i = 5 | | | |
-| 9 | `if (i < 5)` | 5 | `5 < 5` â†’ **false** | Skip goto |
-| 10 | `return 0;` | 5 | â†’ | Program ends |
+| 9 | `if (i < 5)` | 5 | `5 < 5` → **false** | Skip goto |
+| 10 | `return 0;` | 5 | → | Program ends |
 
 ### C Code Examples
 
@@ -1468,8 +1468,8 @@ cleanup:
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(1) â†’ Single unconditional jump
-- **Space Complexity:** O(1) â†’ No additional memory
+- **Time Complexity:** O(1) → Single unconditional jump
+- **Space Complexity:** O(1) → No additional memory
 
 ### Advantages & Disadvantages
 
@@ -1484,7 +1484,7 @@ cleanup:
 ### Legitimate Uses of `goto`
 
 
-1. **Breaking out of deeply nested loops** â†’ when `break` cannot reach all levels:
+1. **Breaking out of deeply nested loops** → when `break` cannot reach all levels:
 ```c
 for (i = 0; i < N; i++) {
     for (j = 0; j < M; j++) {
@@ -1499,7 +1499,7 @@ exit_all:
     /* clean up */
 ```
 
-2. **Single-point cleanup in functions** â†’ the classic Linux kernel pattern:
+2. **Single-point cleanup in functions** → the classic Linux kernel pattern:
 ```c
 char *buffer = malloc(1024);
 FILE *fp = fopen("file.txt", "r");
@@ -1516,8 +1516,8 @@ cleanup_buffer:
 
 | Edge Case | Example | Explanation |
 |-----------|---------|-------------|
-| **Jumping over initialization** | `goto skip; int x = 5; skip: printf("%d", x);` | Undefined behavior â†’ x is uninitialized |
-| **Jumping into a block** | `goto inside; { inside: ; }` | Legal but confusing â†’ avoid |
+| **Jumping over initialization** | `goto skip; int x = 5; skip: printf("%d", x);` | Undefined behavior → x is uninitialized |
+| **Jumping into a block** | `goto inside; { inside: ; }` | Legal but confusing → avoid |
 | **goto out of scope** | Cannot jump between functions | Labels are function-scoped |
 | **goto in macros** | Macros containing goto | Creates confusing control flow |
 
@@ -1532,21 +1532,21 @@ cleanup_buffer:
 ### Real-World Analogy
 
 
-- **break** is like a fire alarm in a movie theater. No matter what scene is playing, everyone exits immediately â†’ the "loop" of watching the movie terminates entirely.
+- **break** is like a fire alarm in a movie theater. No matter what scene is playing, everyone exits immediately → the "loop" of watching the movie terminates entirely.
 - **continue** is like skipping a song on a playlist. You don't stop listening to music; you just skip to the next song, continuing the overall listening experience.
 
 ### Syntax
 
 
 ```c
-/* break â†’ exit the loop */
+/* break → exit the loop */
 while (condition) {
     if (exit_early) {
         break;
     }
 }
 
-/* continue â†’ skip to next iteration */
+/* continue → skip to next iteration */
 for (int i = 0; i < 10; i++) {
     if (should_skip) {
         continue;
@@ -1572,10 +1572,10 @@ for (int i = 0; i < 10; i++) {
 ```
 FOR each iteration:
     IF exit_condition THEN
-        BREAK    â†’ exit loop entirely
+        BREAK    → exit loop entirely
     END IF
     IF skip_condition THEN
-        CONTINUE â†’ skip to next iteration
+        CONTINUE → skip to next iteration
     END IF
     normal_processing()
 END FOR
@@ -1621,25 +1621,25 @@ int main(void)
 1 2 4 5
 ```
 
-**Trace Table â†’ break (i == 3 triggers break):**
+**Trace Table → break (i == 3 triggers break):**
 
 | Step | i | i &lt;= 5 | i == 3 | Action |
 |------|---|--------|--------|--------|
 | 1 | 1 | true | false | Print "1 " |
 | 2 | 2 | true | false | Print "2 " |
-| 3 | 3 | true | **true** | **break** â†’ exit loop |
-| 4 | â†’ | â†’ | â†’ | Loop terminated, continue after loop |
+| 3 | 3 | true | **true** | **break** → exit loop |
+| 4 | → | → | → | Loop terminated, continue after loop |
 
-**Trace Table â†’ continue (i == 3 triggers continue):**
+**Trace Table → continue (i == 3 triggers continue):**
 
 | Step | i | i &lt;= 5 | i == 3 | Action |
 |------|---|--------|--------|--------|
 | 1 | 1 | true | false | Print "1 " |
 | 2 | 2 | true | false | Print "2 " |
-| 3 | 3 | true | **true** | **continue** â†’ skip to i++ |
+| 3 | 3 | true | **true** | **continue** → skip to i++ |
 | 4 | 4 | true | false | Print "4 " |
 | 5 | 5 | true | false | Print "5 " |
-| 6 | 6 | false | â†’ | Loop ends naturally |
+| 6 | 6 | false | → | Loop ends naturally |
 
 ### C Code Examples
 
@@ -1731,10 +1731,10 @@ In this example, when `i == 5`, `continue` jumps to the condition check without 
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(1) â†’ Single branch instruction for both break and continue
-- **Space Complexity:** O(1) â†’ No additional memory
+- **Time Complexity:** O(1) → Single branch instruction for both break and continue
+- **Space Complexity:** O(1) → No additional memory
 
-### break vs continue â†’ Comparison Table
+### break vs continue → Comparison Table
 
 
 | Aspect | `break` | `continue` |
@@ -1745,7 +1745,7 @@ In this example, when `i == 5`, `continue` jumps to the condition check without 
 | **In switch** | Exits switch block | Not applicable |
 | **In nested loops** | Breaks only innermost loop | Continues only innermost loop |
 | **Use case** | Early exit when goal is found | Skip invalid items |
-| **Analogy** | Fire alarm â†’ everyone leaves | Skip song â†’ playlist continues |
+| **Analogy** | Fire alarm → everyone leaves | Skip song → playlist continues |
 
 ### Edge Cases
 
@@ -1753,7 +1753,7 @@ In this example, when `i == 5`, `continue` jumps to the condition check without 
 | Edge Case | Example | Explanation |
 |-----------|---------|-------------|
 | **Nested loops** | `break` inside inner loop | Only exits the inner loop, not outer |
-| **continue in while with increment after** | `while(i<10){if(i==5)continue; i++;}` | Infinite loop â†’ i never reaches 6 |
+| **continue in while with increment after** | `while(i<10){if(i==5)continue; i++;}` | Infinite loop → i never reaches 6 |
 | **break in switch inside loop** | `for(...){switch(x){case 1: break;}}` | break exits switch, not the loop |
 | **continue not in switch** | N/A | continue is not used within switch |
 
@@ -1766,13 +1766,13 @@ The `return` statement terminates the current function and optionally returns a 
 ### Real-World Analogy
 
 
-The `return` statement is like a cashier handing you your change and receipt after a purchase. The transaction (function) is complete, and you walk away with the result (return value). If the function is `void`, it is like a doorman saying "have a nice day" with nothing in hand â†’ the interaction is simply over.
+The `return` statement is like a cashier handing you your change and receipt after a purchase. The transaction (function) is complete, and you walk away with the result (return value). If the function is `void`, it is like a doorman saying "have a nice day" with nothing in hand → the interaction is simply over.
 
 ### Syntax
 
 
 ```c
-return;           /* void function â†’ no value */
+return;           /* void function → no value */
 return expression; /* returns the value of expression */
 ```
 
@@ -1807,21 +1807,21 @@ int main(void)
 }
 ```
 
-**Trace Table â†’ is_even(4):**
+**Trace Table → is_even(4):**
 
 | Step | Function | n | n % 2 | Condition (== 0) | Action |
 |------|----------|---|-------|------------------|--------|
-| 1 | `is_even(4)` | 4 | â†’ | â†’ | Function called |
-| 2 | `if (n % 2 == 0)` | 4 | 0 | `0 == 0` â†’ true | Enter if block |
-| 3 | `return 1;` | 4 | 0 | â†’ | **Returns 1**, function exits |
+| 1 | `is_even(4)` | 4 | → | → | Function called |
+| 2 | `if (n % 2 == 0)` | 4 | 0 | `0 == 0` → true | Enter if block |
+| 3 | `return 1;` | 4 | 0 | → | **Returns 1**, function exits |
 
-**Trace Table â†’ is_even(7):**
+**Trace Table → is_even(7):**
 
 | Step | Function | n | n % 2 | Condition (== 0) | Action |
 |------|----------|---|-------|------------------|--------|
-| 1 | `is_even(7)` | 7 | â†’ | â†’ | Function called |
-| 2 | `if (n % 2 == 0)` | 7 | 1 | `1 == 0` â†’ false | Skip if block |
-| 3 | `return 0;` | 7 | 1 | â†’ | **Returns 0**, function exits |
+| 1 | `is_even(7)` | 7 | → | → | Function called |
+| 2 | `if (n % 2 == 0)` | 7 | 1 | `1 == 0` → false | Skip if block |
+| 3 | `return 0;` | 7 | 1 | → | **Returns 0**, function exits |
 
 ### C Code Examples
 
@@ -1882,8 +1882,8 @@ Hello, Alice!
 ### Complexity Analysis
 
 
-- **Time Complexity:** O(1) â†’ Single jump instruction
-- **Space Complexity:** O(1) â†’ Return value passed in register
+- **Time Complexity:** O(1) → Single jump instruction
+- **Space Complexity:** O(1) → Return value passed in register
 
 ### Advantages & Disadvantages
 
@@ -1913,7 +1913,7 @@ Hello, Alice!
 ### Real-World Analogy
 
 
-`exit()` is like pulling the master emergency stop in a factory. Everything stops immediately â†’ all machines (buffers) are safely powered down, all processes are recorded, and the facility shuts down in a controlled manner.
+`exit()` is like pulling the master emergency stop in a factory. Everything stops immediately → all machines (buffers) are safely powered down, all processes are recorded, and the facility shuts down in a controlled manner.
 
 ### Syntax
 
@@ -1924,8 +1924,8 @@ Hello, Alice!
 exit(int status);
 ```
 
-- `EXIT_SUCCESS` (0) â†’ normal termination
-- `EXIT_FAILURE` (1) â†’ abnormal termination
+- `EXIT_SUCCESS` (0) → normal termination
+- `EXIT_FAILURE` (1) → abnormal termination
 
 ### C Code Examples
 
@@ -1986,7 +1986,7 @@ Program starting...
 Cleanup: atexit handler called
 ```
 
-### `return` vs `exit()` â†’ Comparison
+### `return` vs `exit()` → Comparison
 
 
 | Aspect | `return` | `exit()` |
@@ -2102,7 +2102,7 @@ if (count != 0) {
 | **In switch** | Exits switch block | Not applicable |
 | **In nested loops** | Breaks only innermost loop | Continues only innermost loop |
 | **Use case** | Early exit when goal is found | Skip invalid items |
-| **Analogy** | Fire alarm â†’ everyone leaves | Skip song â†’ playlist continues |
+| **Analogy** | Fire alarm → everyone leaves | Skip song → playlist continues |
 
 ### 4.13.3 `goto` vs Structured Jumps
 
@@ -2166,7 +2166,7 @@ if (x) {
 **Answer:** Use `switch` when:
 - The condition is a single integral expression (int, char, enum)
 - There are 3 or more discrete constant values to match
-- Performance matters â†’ compilers can implement switch as a **jump table** (O(1)) while if-else if chains are O(n)
+- Performance matters → compilers can implement switch as a **jump table** (O(1)) while if-else if chains are O(n)
 
 Use `if-else if` when:
 - Conditions involve ranges, comparisons, or complex boolean logic
@@ -2261,7 +2261,7 @@ while (i < 5 && arr[i] > 0) {
 }
 ```
 
-If `i` reaches 5, `i < 5` is false and `arr[i]` is never evaluated â†’ preventing undefined behavior.
+If `i` reaches 5, `i < 5` is false and `arr[i]` is never evaluated → preventing undefined behavior.
 
 ### 4.14.7 The `==` vs `=` Trap
 
@@ -2276,7 +2276,7 @@ if (x = 0) {
 
 **Answer:** `x = 0` is an assignment, not comparison. It assigns 0 to x and the expression evaluates to 0 (false). The printf never executes. Modern compilers warn: "suggest parentheses around assignment used as truth value."
 
-**Defense:** Write `if (0 == x)` â†’ Yoda conditions. If you accidentally write `if (0 = x)`, the compiler gives an error because you cannot assign to a literal.
+**Defense:** Write `if (0 == x)` → Yoda conditions. If you accidentally write `if (0 = x)`, the compiler gives an error because you cannot assign to a literal.
 
 ### 4.14.8 Nested switch
 
@@ -2298,7 +2298,7 @@ switch (outer) {
 }
 ```
 
-Use with caution â†’ deeply nested switches are hard to read.
+Use with caution → deeply nested switches are hard to read.
 
 ---
 
@@ -2434,13 +2434,13 @@ void parse_packet(unsigned char *packet)
 ### 4.15.4 Compiler Optimizations: Jump Tables
 
 
-For a compact range of case values (e.g., 0Ã¢â‚¬â€œ255), compilers generate a **jump table** â†’ an array of code addresses indexed by the switch expression:
+For a compact range of case values (e.g., 0–255), compilers generate a **jump table** → an array of code addresses indexed by the switch expression:
 
 ```asm
 ; Pseudocode for switch(x) with cases 0-3
 ; Jump table at address JUMP_TABLE
     mov eax, x
-    jmp [JUMP_TABLE + eax*4]  ; Direct jump â†’ O(1)
+    jmp [JUMP_TABLE + eax*4]  ; Direct jump → O(1)
 
 JUMP_TABLE:
     dd case0_addr
@@ -2566,7 +2566,7 @@ if (ptr && *ptr == 42) {
 FILE *f1 = fopen("a.txt", "r");
 FILE *f2 = fopen("b.txt", "r");
 if (f1 && f2) {
-    /* both opened successfully â†’ use them */
+    /* both opened successfully → use them */
 }
 ```
 
@@ -2574,7 +2574,7 @@ if (f1 && f2) {
 
 
 ```c
-/* Map integer to string â†’ concise alternative to switch for simple cases */
+/* Map integer to string → concise alternative to switch for simple cases */
 const char *name = (n == 1) ? "One" :
                    (n == 2) ? "Two" :
                    (n == 3) ? "Three" : "Unknown";
@@ -2763,7 +2763,7 @@ while (!done && !error) {
 
 ### Application Problems
 
-1. **Days in Month:** Write a program that reads an integer month number (1Ã¢â‚¬â€œ12) and prints the number of days in that month. Use a `switch` statement. Account for February having 28 days (ignore leap years).
+1. **Days in Month:** Write a program that reads an integer month number (1–12) and prints the number of days in that month. Use a `switch` statement. Account for February having 28 days (ignore leap years).
 
 2. **Triangle Type:** Write a program that reads three sides of a triangle and determines whether it is equilateral, isosceles, or scalene. Use `if-else` chains.
 
@@ -2787,7 +2787,7 @@ while (!done && !error) {
 
 ### Challenge Problem
 
-**Calendar Printer:** Write a program that reads a year and a month (1Ã¢â‚¬â€œ12) and prints the calendar for that month. Use `switch` to determine the number of days. To determine the starting day of the month, use Zeller's congruence (research the formula). Print the calendar in the format:
+**Calendar Printer:** Write a program that reads a year and a month (1–12) and prints the calendar for that month. Use `switch` to determine the number of days. To determine the starting day of the month, use Zeller's congruence (research the formula). Print the calendar in the format:
 ```
      March 2025
 Su Mo Tu We Th Fr Sa

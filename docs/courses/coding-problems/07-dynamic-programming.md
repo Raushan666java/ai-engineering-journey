@@ -1,4 +1,4 @@
-﻿# Chapter 07: Dynamic Programming
+# Chapter 07: Dynamic Programming
 
 > Dynamic Programming is the most important algorithmic technique for coding interviews. It involves breaking problems into overlapping subproblems, solving each once, and storing results. Master DP and you master interviews.
 
@@ -62,9 +62,9 @@ mindmap
       Min Path Sum
       Dungeon Game
     Subsequence
-      LIS â†’ O(n log n) possible
-      LCS â†’ 2D DP
-      Edit Distance â†’ 2D DP
+      LIS → O(n log n) possible
+      LCS → 2D DP
+      Edit Distance → 2D DP
     Knapsack
       0/1 Knapsack
       Partition Equal Subset Sum
@@ -100,9 +100,9 @@ xychart-beta
 
 ### Problem 1: Climbing Stairs
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Math, Memoization]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Math, Memoization]
 
 **Problem:** You are climbing a staircase with n steps. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
@@ -114,10 +114,10 @@ Explanation: 1+1, 2
 ```
 
 **Constraints:**
-- 1 â‰¤ n â‰¤ 45
+- 1 ≤ n ≤ 45
 
 **Solution Approach:**
-- **Recursion:** fib(n) = fib(n-1) + fib(n-2) â€” but exponential.
+- **Recursion:** fib(n) = fib(n-1) + fib(n-2) — but exponential.
 - **DP:** Bottom-up with O(n) time, O(1) space.
 
 ```typescript
@@ -151,9 +151,9 @@ console.log(climbStairs(5)); // 8
 
 ### Problem 2: House Robber
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Array]
 
 **Problem:** Given an array of money in houses, rob the maximum amount without robbing adjacent houses.
 
@@ -165,7 +165,7 @@ Explanation: Rob house 1 (1) + house 3 (3) = 4
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 100
+- 1 ≤ nums.length ≤ 100
 
 ```typescript
 function rob(nums: number[]): number {
@@ -198,9 +198,9 @@ console.log(rob([5])); // 5
 
 ### Problem 3: Maximum Subarray (Kadane's Algorithm)
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [LinkedIn]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Array, Divide and Conquer]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [LinkedIn]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Array, Divide and Conquer]
 
 **Problem:** Find the contiguous subarray with the largest sum.
 
@@ -241,9 +241,9 @@ console.log(maxSubArray([-1])); // -1
 
 ### Problem 4: Fibonacci Number
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Math, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Math, Recursion]
 
 **Problem:** Return the nth Fibonacci number.
 
@@ -284,9 +284,9 @@ console.log(fib(10)); // 55
 
 ### Problem 5: Min Cost Climbing Stairs
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Array]
 
 **Problem:** Given an array where cost[i] is the cost of stepping on stair i, find the minimum cost to reach the top. You can start from step 0 or 1, and climb 1 or 2 steps.
 
@@ -325,9 +325,9 @@ console.log(minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1])); // 6
 
 ### Problem 6: Pascal's Triangle
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Array]
 
 **Problem:** Generate the first numRows of Pascal's triangle.
 
@@ -359,16 +359,16 @@ console.log(generate(5));
 // [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 ```
 
-**Time Complexity:** O(nÂ²)
-**Space Complexity:** O(nÂ²)
+**Time Complexity:** O(n²)
+**Space Complexity:** O(n²)
 
 ---
 
 ### Problem 7: Divisor Game
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Math]
+🏷️ **Companies:** [Amazon] [Google]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Math]
 
 **Problem:** Alice and Bob take turns. On each turn, choose x where 0 < x < n and n % x == 0, replace n with n - x. If a player cannot move, they lose. Alice starts. Return true if she wins with optimal play.
 
@@ -401,11 +401,11 @@ console.log(divisorGame(3)); // false
 
 ### Problem 8: Tribonacci Number
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Math]
+🏷️ **Companies:** [Amazon] [Google]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Math]
 
-**Problem:** Tâ‚€ = 0, Tâ‚ = 1, Tâ‚‚ = 1, Tâ‚™ = Tâ‚™â‚‹â‚ + Tâ‚™â‚‹â‚‚ + Tâ‚™â‚‹â‚ƒ. Return Tâ‚™.
+**Problem:** T₀ = 0, T₁ = 1, T₂ = 1, Tₙ = Tₙ₋₁ + Tₙ₋₂ + Tₙ₋₃. Return Tₙ.
 
 **Example 1:**
 ```
@@ -443,9 +443,9 @@ console.log(tribonacci(25)); // 1389537
 
 ### Problem 9: Maximum Product of Three Numbers
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Math]
+🏷️ **Companies:** [Amazon] [Google]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Math]
 
 **Problem:** Find the maximum product of any three numbers from the array.
 
@@ -482,9 +482,9 @@ console.log(maximumProduct([-100, -98, 1, 2, 3, 4])); // 39200
 
 ### Problem 10: Counting Bits
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [DP, Bit Manipulation]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Easy
+📂 **Topics:** [DP, Bit Manipulation]
 
 **Problem:** Given n, return an array of length n+1 where ans[i] is the number of 1 bits in binary representation of i.
 
@@ -526,9 +526,9 @@ console.log(countBits(5)); // [0, 1, 1, 2, 1, 2]
 
 ### Problem 11: Coin Change
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, BFS, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, BFS, Array]
 
 **Problem:** Given coins of different denominations and a total amount, return the fewest coins needed to make that amount. Return -1 if impossible.
 
@@ -539,8 +539,8 @@ Output: 3 (5 + 5 + 1)
 ```
 
 **Constraints:**
-- 1 â‰¤ coins.length â‰¤ 12
-- 0 â‰¤ amount â‰¤ 10â´
+- 1 ≤ coins.length ≤ 12
+- 0 ≤ amount ≤ 10⁴
 
 ```typescript
 function coinChange(coins: number[], amount: number): number {
@@ -566,16 +566,16 @@ console.log(coinChange([2], 3)); // -1
 console.log(coinChange([1], 0)); // 0
 ```
 
-**Time Complexity:** O(n Ã— amount)
+**Time Complexity:** O(n × amount)
 **Space Complexity:** O(amount)
 
 ---
 
 ### Problem 12: Longest Increasing Subsequence
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Binary Search]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Binary Search]
 
 **Problem:** Find the length of the longest strictly increasing subsequence.
 
@@ -586,10 +586,10 @@ Output: 4 ([2, 3, 7, 101])
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 2500
+- 1 ≤ nums.length ≤ 2500
 
 **Solution Approach:**
-- **DP:** dp[i] = 1 + max(dp[j]) for j < i and nums[j] < nums[i]. O(nÂ²).
+- **DP:** dp[i] = 1 + max(dp[j]) for j < i and nums[j] < nums[i]. O(n²).
 - **Optimal (Patience Sorting):** Maintain tails array, binary search. O(n log n).
 
 ```typescript
@@ -634,9 +634,9 @@ console.log(lengthOfLIS([7, 7, 7, 7])); // 1
 
 ### Problem 13: Longest Common Subsequence
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, String]
 
 **Problem:** Given two strings, find the length of their longest common subsequence.
 
@@ -647,7 +647,7 @@ Output: 3 ("ace")
 ```
 
 **Constraints:**
-- 1 â‰¤ text1.length, text2.length â‰¤ 1000
+- 1 ≤ text1.length, text2.length ≤ 1000
 
 ```typescript
 function longestCommonSubsequence(text1: string, text2: string): number {
@@ -676,18 +676,18 @@ console.log(longestCommonSubsequence("abc", "abc")); // 3
 console.log(longestCommonSubsequence("abc", "def")); // 0
 ```
 
-**Time Complexity:** O(m Ã— n)
-**Space Complexity:** O(m Ã— n)
+**Time Complexity:** O(m × n)
+**Space Complexity:** O(m × n)
 
 ---
 
 ### Problem 14: Unique Paths
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Math, Combinatorics]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Math, Combinatorics]
 
-**Problem:** A robot is at top-left of an mÃ—n grid. It can only move down or right. How many unique paths to bottom-right?
+**Problem:** A robot is at top-left of an m×n grid. It can only move down or right. How many unique paths to bottom-right?
 
 **Example 1:**
 ```
@@ -696,7 +696,7 @@ Output: 28
 ```
 
 **Constraints:**
-- 1 â‰¤ m, n â‰¤ 100
+- 1 ≤ m, n ≤ 100
 
 **Solution Approach:**
 - **DP:** dp[i][j] = dp[i-1][j] + dp[i][j-1].
@@ -722,16 +722,16 @@ console.log(uniquePaths(3, 7)); // 28
 console.log(uniquePaths(3, 2)); // 3
 ```
 
-**Time Complexity:** O(m Ã— n)
+**Time Complexity:** O(m × n)
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 15: Unique Paths II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Matrix]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Matrix]
 
 **Problem:** Same as Unique Paths but with obstacles (1 = obstacle).
 
@@ -768,16 +768,16 @@ console.log(uniquePathsWithObstacles([[0,0,0],[0,1,0],[0,0,0]])); // 2
 console.log(uniquePathsWithObstacles([[0,1],[0,0]])); // 1
 ```
 
-**Time Complexity:** O(m Ã— n)
+**Time Complexity:** O(m × n)
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 16: Jump Game
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Greedy, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Greedy, Array]
 
 **Problem:** Given an array where nums[i] is max jump length, determine if you can reach the last index.
 
@@ -818,9 +818,9 @@ console.log(canJump([3, 2, 1, 0, 4])); // false
 
 ### Problem 17: Word Break
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Trie, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Trie, String]
 
 **Problem:** Given a string s and a dictionary of words, return true if s can be segmented into dictionary words.
 
@@ -831,7 +831,7 @@ Output: true
 ```
 
 **Constraints:**
-- 1 â‰¤ s.length â‰¤ 300
+- 1 ≤ s.length ≤ 300
 
 ```typescript
 function wordBreak(s: string, wordDict: string[]): boolean {
@@ -859,18 +859,18 @@ console.log(wordBreak("applepenapple", ["apple", "pen"])); // true
 console.log(wordBreak("catsandog", ["cats","dog","sand","and","cat"])); // false
 ```
 
-**Time Complexity:** O(nÂ² Ã— m) where m = max word length
+**Time Complexity:** O(n² × m) where m = max word length
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 18: Decode Ways
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, String]
 
-**Problem:** A message containing A-Z can be encoded to numbers ('A' â†’ 1 ... 'Z' â†’ 26). Count the number of ways to decode a digit string.
+**Problem:** A message containing A-Z can be encoded to numbers ('A' → 1 ... 'Z' → 26). Count the number of ways to decode a digit string.
 
 **Example 1:**
 ```
@@ -879,7 +879,7 @@ Output: 3 (BZ, VF, BBF)
 ```
 
 **Constraints:**
-- 1 â‰¤ s.length â‰¤ 100
+- 1 ≤ s.length ≤ 100
 
 ```typescript
 function numDecodings(s: string): number {
@@ -916,9 +916,9 @@ console.log(numDecodings("06")); // 0
 
 ### Problem 19: Target Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, DFS, Memoization]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, DFS, Memoization]
 
 **Problem:** Given an array of integers and a target, assign + or - signs to each element to reach the target sum. Count number of such assignments.
 
@@ -929,7 +929,7 @@ Output: 5
 ```
 
 **Solution Approach:**
-- Convert to subset sum: sum(P) - sum(N) = target â†’ sum(P) = (target + totalSum) / 2.
+- Convert to subset sum: sum(P) - sum(N) = target → sum(P) = (target + totalSum) / 2.
 
 ```typescript
 function findTargetSumWays(nums: number[], target: number): number {
@@ -957,16 +957,16 @@ console.log(findTargetSumWays([1, 1, 1, 1, 1], 3)); // 5
 console.log(findTargetSumWays([1], 1)); // 1
 ```
 
-**Time Complexity:** O(n Ã— sum)
+**Time Complexity:** O(n × sum)
 **Space Complexity:** O(sum)
 
 ---
 
 ### Problem 20: Partition Equal Subset Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Array]
 
 **Problem:** Given an array, return true if it can be partitioned into two subsets with equal sum.
 
@@ -977,7 +977,7 @@ Output: true ([1, 5, 5] and [11])
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 200
+- 1 ≤ nums.length ≤ 200
 
 ```typescript
 function canPartition(nums: number[]): boolean {
@@ -1004,23 +1004,23 @@ console.log(canPartition([1, 5, 11, 5])); // true
 console.log(canPartition([1, 2, 3, 5])); // false
 ```
 
-**Time Complexity:** O(n Ã— target)
+**Time Complexity:** O(n × target)
 **Space Complexity:** O(target)
 
 ---
 
 ### Problem 21: Minimum Path Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Grid]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Grid]
 
 **Problem:** Find the minimum path sum from top-left to bottom-right, moving only down or right.
 
 **Example 1:**
 ```
 Input: grid = [[1,3,1],[1,5,1],[4,2,1]]
-Output: 7 (1â†’3â†’1â†’1â†’1)
+Output: 7 (1→3→1→1→1)
 ```
 
 ```typescript
@@ -1048,16 +1048,16 @@ console.log(minPathSum([[1,3,1],[1,5,1],[4,2,1]])); // 7
 console.log(minPathSum([[1,2,3],[4,5,6]])); // 12
 ```
 
-**Time Complexity:** O(m Ã— n)
+**Time Complexity:** O(m × n)
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 22: Maximum Length of Repeated Subarray
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Array, Binary Search]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Array, Binary Search]
 
 **Problem:** Find the maximum length of a subarray that appears in both arrays.
 
@@ -1092,16 +1092,16 @@ function findLength(nums1: number[], nums2: number[]): number {
 console.log(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7])); // 3
 ```
 
-**Time Complexity:** O(m Ã— n)
-**Space Complexity:** O(m Ã— n)
+**Time Complexity:** O(m × n)
+**Space Complexity:** O(m × n)
 
 ---
 
 ### Problem 23: Maximum Alternating Subsequence Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Array]
 
 **Problem:** Find the maximum sum of an alternating subsequence (a[index] - a[index+1] + a[index+2] - ...).
 
@@ -1138,9 +1138,9 @@ console.log(maxAlternatingSum([5, 6, 7, 8])); // 8
 
 ### Problem 24: Coin Change II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Array]
 
 **Problem:** Count the number of combinations that make up a given amount.
 
@@ -1171,16 +1171,16 @@ console.log(change(5, [1, 2, 5])); // 4
 console.log(change(3, [2])); // 0
 ```
 
-**Time Complexity:** O(n Ã— amount)
+**Time Complexity:** O(n × amount)
 **Space Complexity:** O(amount)
 
 ---
 
 ### Problem 25: House Robber II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Array]
 
 **Problem:** Houses are arranged in a circle. You cannot rob adjacent houses.
 
@@ -1222,9 +1222,9 @@ console.log(robII([1, 2, 3, 1])); // 4
 
 ### Problem 26: Longest Palindromic Substring (DP)
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, String, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, String, Two Pointers]
 
 **Problem:** Find the longest palindromic substring.
 
@@ -1269,16 +1269,16 @@ console.log(longestPalindrome("babad")); // "bab" or "aba"
 console.log(longestPalindrome("cbbd")); // "bb"
 ```
 
-**Time Complexity:** O(nÂ²)
-**Space Complexity:** O(nÂ²)
+**Time Complexity:** O(n²)
+**Space Complexity:** O(n²)
 
 ---
 
 ### Problem 27: Longest Increasing Path in a Matrix (DP)
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [DP, DFS, Memoization, Graph]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [DP, DFS, Memoization, Graph]
 
 **Problem:** Find the length of the longest increasing path in a matrix.
 
@@ -1288,9 +1288,9 @@ console.log(longestPalindrome("cbbd")); // "bb"
 
 ### Problem 28: Best Time to Buy and Sell Stock with Cooldown
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, State Machine, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, State Machine, Array]
 
 **Problem:** You can complete unlimited transactions, but after selling you must wait one day before buying again.
 
@@ -1328,9 +1328,9 @@ console.log(maxProfitCooldown([1])); // 0
 
 ### Problem 29: 0/1 Knapsack
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, Array]
 
 **Problem:** Given weights and values of n items, and a knapsack capacity, find the maximum value you can fit.
 
@@ -1361,16 +1361,16 @@ console.log(knapsack([1, 3, 4, 5], [1, 4, 5, 7], 7)); // 9
 console.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12
 ```
 
-**Time Complexity:** O(n Ã— capacity)
+**Time Complexity:** O(n × capacity)
 **Space Complexity:** O(capacity)
 
 ---
 
 ### Problem 30: Edit Distance (DP)
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [DP, String]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [DP, String]
 
 **Problem:** Given two strings, find the minimum number of operations (insert, delete, replace) to convert one to the other.
 
@@ -1384,9 +1384,9 @@ console.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12
 
 ### Problem 31: Burst Balloons
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [DP, Divide and Conquer]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [DP, Divide and Conquer]
 
 **Problem:** Given n balloons (each with a coin value), bursting balloon i earns nums[i-1] * nums[i] * nums[i+1]. Find the maximum coins you can collect.
 
@@ -1394,11 +1394,11 @@ console.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12
 ```
 Input: nums = [3, 1, 5, 8]
 Output: 167
-Explanation: nums = [3,1,5,8] â†’ [3,5,8] â†’ [3,8] â†’ [8] â†’ []. Coins: 3*1*5 + 3*5*8 + 3*8*1 + 1*8*1 = 167
+Explanation: nums = [3,1,5,8] → [3,5,8] → [3,8] → [8] → []. Coins: 3*1*5 + 3*5*8 + 3*8*1 + 1*8*1 = 167
 ```
 
 **Constraints:**
-- 1 â‰¤ n â‰¤ 300
+- 1 ≤ n ≤ 300
 
 ```typescript
 function maxCoins(nums: number[]): number {
@@ -1429,16 +1429,16 @@ console.log(maxCoins([3, 1, 5, 8])); // 167
 console.log(maxCoins([1, 5])); // 10
 ```
 
-**Time Complexity:** O(nÂ³)
-**Space Complexity:** O(nÂ²)
+**Time Complexity:** O(n³)
+**Space Complexity:** O(n²)
 
 ---
 
 ### Problem 32: Regular Expression Matching
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [DP, String, Backtracking]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [DP, String, Backtracking]
 
 **Problem:** Implement regex matching with '.' and '*'.
 
@@ -1448,9 +1448,9 @@ console.log(maxCoins([1, 5])); // 10
 
 ### Problem 33: Distinct Subsequences
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [DP, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Hard
+📂 **Topics:** [DP, String]
 
 **Problem:** Count the number of distinct subsequences of s that equal t.
 
@@ -1460,9 +1460,9 @@ console.log(maxCoins([1, 5])); // 10
 
 ### Problem 34: Best Time to Buy and Sell Stock IV
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [DP, Array, State Machine]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Hard
+📂 **Topics:** [DP, Array, State Machine]
 
 **Problem:** You can complete at most k transactions. Find maximum profit.
 
@@ -1503,16 +1503,16 @@ console.log(maxProfitIV(2, [3, 2, 6, 5, 0, 3])); // 7
 console.log(maxProfitIV(2, [2, 4, 1])); // 2
 ```
 
-**Time Complexity:** O(k Ã— n)
-**Space Complexity:** O(k Ã— n)
+**Time Complexity:** O(k × n)
+**Space Complexity:** O(k × n)
 
 ---
 
 ### Problem 35: Frog Jump
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [DP, Hash Table]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Hard
+📂 **Topics:** [DP, Hash Table]
 
 **Problem:** A frog starts at stone 0 and can jump k units. After jumping k units, it can jump k-1, k, or k+1 units. Determine if it can reach the last stone.
 
@@ -1548,8 +1548,8 @@ console.log(canCross([0, 1, 3, 5, 6, 8, 12, 17])); // true
 console.log(canCross([0, 1, 2, 3, 4, 8, 9, 11])); // false
 ```
 
-**Time Complexity:** O(nÂ²)
-**Space Complexity:** O(nÂ²)
+**Time Complexity:** O(n²)
+**Space Complexity:** O(n²)
 
 ---
 
@@ -1562,33 +1562,33 @@ console.log(canCross([0, 1, 2, 3, 4, 8, 9, 11])); // false
 | 3 | Maximum Subarray | Easy | Multiple | O(n) | O(1) |
 | 4 | Fibonacci Number | Easy | Amazon, Google | O(n) | O(1) |
 | 5 | Min Cost Climbing Stairs | Easy | Amazon, Google | O(n) | O(1) |
-| 6 | Pascal's Triangle | Easy | Amazon, Google, Meta | O(nÂ²) | O(nÂ²) |
+| 6 | Pascal's Triangle | Easy | Amazon, Google, Meta | O(n²) | O(n²) |
 | 7 | Divisor Game | Easy | Amazon, Google | O(1) | O(1) |
 | 8 | Tribonacci | Easy | Amazon, Google | O(n) | O(1) |
 | 9 | Max Product of Three | Easy | Amazon, Google | O(n log n) | O(1) |
 | 10 | Counting Bits | Easy | Amazon, Google, Meta | O(n) | O(n) |
-| 11 | Coin Change | Medium | Multiple | O(nÃ—amt) | O(amt) |
+| 11 | Coin Change | Medium | Multiple | O(n×amt) | O(amt) |
 | 12 | Longest Increasing Subseq | Medium | Multiple | O(n log n) | O(n) |
-| 13 | Longest Common Subseq | Medium | Multiple | O(mÃ—n) | O(mÃ—n) |
-| 14 | Unique Paths | Medium | Multiple | O(mÃ—n) | O(n) |
-| 15 | Unique Paths II | Medium | Amazon, Google | O(mÃ—n) | O(n) |
+| 13 | Longest Common Subseq | Medium | Multiple | O(m×n) | O(m×n) |
+| 14 | Unique Paths | Medium | Multiple | O(m×n) | O(n) |
+| 15 | Unique Paths II | Medium | Amazon, Google | O(m×n) | O(n) |
 | 16 | Jump Game | Medium | Multiple | O(n) | O(1) |
-| 17 | Word Break | Medium | Multiple | O(nÂ²Ã—m) | O(n) |
+| 17 | Word Break | Medium | Multiple | O(n²×m) | O(n) |
 | 18 | Decode Ways | Medium | Multiple | O(n) | O(n) |
-| 19 | Target Sum | Medium | Amazon, Google | O(nÃ—sum) | O(sum) |
-| 20 | Partition Equal Subset | Medium | Multiple | O(nÃ—target) | O(target) |
-| 21 | Minimum Path Sum | Medium | Multiple | O(mÃ—n) | O(n) |
-| 22 | Max Length Repeated Subarray | Medium | Amazon, Google | O(mÃ—n) | O(mÃ—n) |
+| 19 | Target Sum | Medium | Amazon, Google | O(n×sum) | O(sum) |
+| 20 | Partition Equal Subset | Medium | Multiple | O(n×target) | O(target) |
+| 21 | Minimum Path Sum | Medium | Multiple | O(m×n) | O(n) |
+| 22 | Max Length Repeated Subarray | Medium | Amazon, Google | O(m×n) | O(m×n) |
 | 23 | Max Alternating Sum | Medium | Amazon, Google | O(n) | O(1) |
-| 24 | Coin Change II | Medium | Multiple | O(nÃ—amt) | O(amt) |
+| 24 | Coin Change II | Medium | Multiple | O(n×amt) | O(amt) |
 | 25 | House Robber II | Medium | Multiple | O(n) | O(1) |
-| 26 | Longest Palindromic Substr (DP) | Medium | Multiple | O(nÂ²) | O(nÂ²) |
+| 26 | Longest Palindromic Substr (DP) | Medium | Multiple | O(n²) | O(n²) |
 | 27 | Longest Increasing Path Matrix | Hard | Multiple | O(mn) | O(mn) |
 | 28 | Stock with Cooldown | Medium | Multiple | O(n) | O(1) |
-| 29 | 0/1 Knapsack | Medium | Multiple | O(nÃ—cap) | O(cap) |
-| 30 | Edit Distance | Medium | Multiple | O(mÃ—n) | O(mÃ—n) |
-| 31 | Burst Balloons | Hard | Multiple | O(nÂ³) | O(nÂ²) |
-| 32 | Regex Matching | Hard | Multiple | O(mÃ—n) | O(mÃ—n) |
-| 33 | Distinct Subsequences | Hard | Amazon, Google | O(mÃ—n) | O(mÃ—n) |
-| 34 | Best Time to Buy/Sell IV | Hard | Amazon, Google | O(kÃ—n) | O(kÃ—n) |
-| 35 | Frog Jump | Hard | Amazon, Google | O(nÂ²) | O(nÂ²) |
+| 29 | 0/1 Knapsack | Medium | Multiple | O(n×cap) | O(cap) |
+| 30 | Edit Distance | Medium | Multiple | O(m×n) | O(m×n) |
+| 31 | Burst Balloons | Hard | Multiple | O(n³) | O(n²) |
+| 32 | Regex Matching | Hard | Multiple | O(m×n) | O(m×n) |
+| 33 | Distinct Subsequences | Hard | Amazon, Google | O(m×n) | O(m×n) |
+| 34 | Best Time to Buy/Sell IV | Hard | Amazon, Google | O(k×n) | O(k×n) |
+| 35 | Frog Jump | Hard | Amazon, Google | O(n²) | O(n²) |

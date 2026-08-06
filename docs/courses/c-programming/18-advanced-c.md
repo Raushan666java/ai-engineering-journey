@@ -1,4 +1,4 @@
-﻿# Chapter 18: Advanced C
+# Chapter 18: Advanced C
 
 > **Previous:** [The C Standard Library](./17-standard-library.md)
 
@@ -42,7 +42,7 @@
 | Multi-File Projects | Split `.h` (interface) and `.c` (implementation) | Use header guards; each `.c` includes only what it needs |
 | Function Pointers | Store and pass function addresses | Enables callbacks, dispatch tables, and OOP patterns in C |
 | Variadic Functions | Functions with variable argument lists | Use `<stdarg.h>`: `va_list`, `va_start`, `va_arg`, `va_end` |
-| Complex Declarations | Spiral rule: start at identifier, spiral outward | `int (*(*fp)(int))[5]` â†’ fp is ptr to fn(int) returning ptr to array[5] of int |
+| Complex Declarations | Spiral rule: start at identifier, spiral outward | `int (*(*fp)(int))[5]` → fp is ptr to fn(int) returning ptr to array[5] of int |
 | `volatile` | Prevents compiler from optimizing away memory accesses | Essential for hardware registers, signal handlers, shared variables |
 | `restrict` | Promises exclusive pointer access | Enables auto-vectorization and better code generation |
 | `setjmp`/`longjmp` | Non-local goto for deep error unwinding | More portable than inline assembly; skips destructors |
@@ -81,7 +81,7 @@ A header file `.h` declares functions, types, and macros that multiple `.c` file
 
 **Why header guards matter:** Without them, double inclusion causes redefinition errors for types, structs, and enums.
 
-**Pattern 1 â†’ Traditional `#ifndef` guard (most portable):**
+**Pattern 1 → Traditional `#ifndef` guard (most portable):**
 
 ```c
 // math_utils.h
@@ -101,7 +101,7 @@ int multiply(int a, int b);
 | 3 | If not: defines `MATH_UTILS_H`, includes entire content |
 | 4 | If yes: skips entire content (file is idempotent) |
 
-**Pattern 2 â†’ `#pragma once` (shorter, compiler-specific but widely supported):**
+**Pattern 2 → `#pragma once` (shorter, compiler-specific but widely supported):**
 
 ```c
 // math_utils.h
@@ -123,19 +123,19 @@ int multiply(int a, int b);
 ### 18.1.2 The `extern` Keyword
 
 
-`extern` declares a variable or function that is defined in **another translation unit**. It does **not** allocate storage â†’ it tells the linker to resolve the symbol elsewhere.
+`extern` declares a variable or function that is defined in **another translation unit**. It does **not** allocate storage → it tells the linker to resolve the symbol elsewhere.
 
-**Pattern â†’ one definition, multiple declarations:**
+**Pattern → one definition, multiple declarations:**
 
 ```c
 // counter.h
 #pragma once
-extern int global_counter;   /* declaration â†’ no storage */
+extern int global_counter;   /* declaration → no storage */
 void increment_counter(void);
 
 // counter.c
 #include "counter.h"
-int global_counter = 0;      /* definition â†’ storage allocated HERE */
+int global_counter = 0;      /* definition → storage allocated HERE */
 
 void increment_counter(void) { global_counter++; }
 
@@ -158,18 +158,18 @@ Counter: 2
 
 **Rules for `extern`:**
 1. `extern` declaration at file scope = "promise this exists elsewhere"
-2. Exactly **one** definition across all translation units (ODR â†’ One Definition Rule)
+2. Exactly **one** definition across all translation units (ODR → One Definition Rule)
 3. `extern` can appear in header files; `#include` propagates it
-4. Arrays: `extern int arr[]` (size omitted â†’ linker fills in)
+4. Arrays: `extern int arr[]` (size omitted → linker fills in)
 5. Functions are implicitly `extern`; writing `extern` is redundant but stylistically clear
 
-**Edge Case â†’ Conflicting Linkage:**
+**Edge Case → Conflicting Linkage:**
 ```c
 // a.c
 int x = 10;
 
 // b.c
-extern int x;   /* OK â†’ refers to a.c's x */
+extern int x;   /* OK → refers to a.c's x */
 
 // c.c
 static int x;   /* ERROR at link: static x in c.c conflicts with external x from a.c */
@@ -194,7 +194,7 @@ target: prerequisites
 | `prerequisites` | Files the target depends on |
 | `recipe` | Shell command(s) to build the target (must be preceded by a **tab**, not spaces) |
 
-**Complete Example â†’ three-file project:**
+**Complete Example → three-file project:**
 
 ```makefile
 # Makefile
@@ -227,7 +227,7 @@ clean:
 | `test` | Build and run tests |
 | `debug` | Build with debug symbols (`-g`) |
 
-**Dry Run â†’ what happens when you type `make`:**
+**Dry Run → what happens when you type `make`:**
 
 | Step | What Make Checks | Action |
 |------|-----------------|--------|
@@ -237,7 +237,7 @@ clean:
 | 4 | Link `main.o` + `math_utils.o` -> `program` | Run linker |
 
 **Edge Cases:**
-- **Spaces instead of tab:** Make refuses to run recipe lines â†’ "missing separator" error
+- **Spaces instead of tab:** Make refuses to run recipe lines → "missing separator" error
 - **Header changes:** If `math_utils.h` changes, both `.o` files rebuild (correct)
 - **Phony targets:** `.PHONY` tells Make that `clean` is not a real file (prevents confusion if a file named `clean` exists)
 
@@ -245,7 +245,7 @@ clean:
 
 ## 18.2 Function Pointers
 
-**Real-World Analogy:** A TV remote has buttons. Each button points to a different function (volume up, channel change, mute). Pressing a button calls whatever function it's currently mapped to â†’ you don't need to know which circuit handles it.
+**Real-World Analogy:** A TV remote has buttons. Each button points to a different function (volume up, channel change, mute). Pressing a button calls whatever function it's currently mapped to → you don't need to know which circuit handles it.
 
 ### 18.2.1 Function Pointer Basics
 
@@ -283,10 +283,10 @@ sub(5,3) = 2
 **Step-by-step declaration reading (see 18.4 for full spiral rule):**
 ```c
 int (*fp)(int, int);
-// 1. fp                          â†’ identifier
-// 2. *fp                         â†’ pointer to
-// 3. (*fp)(int, int)             â†’ function taking (int, int)
-// 4. int (*fp)(int, int)         â†’ returning int
+// 1. fp                          → identifier
+// 2. *fp                         → pointer to
+// 3. (*fp)(int, int)             → function taking (int, int)
+// 4. int (*fp)(int, int)         → returning int
 ```
 
 ### 18.2.2 Callbacks
@@ -294,7 +294,7 @@ int (*fp)(int, int);
 
 A **callback** is a function pointer passed as an argument to another function. The receiving function "calls back" through the pointer.
 
-**Example â†’ `qsort` from the standard library:**
+**Example → `qsort` from the standard library:**
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -348,7 +348,7 @@ A **dispatch table** is an array of function pointers. It replaces long `switch`
 
 **Real-World Analogy:** An elevator panel. Floor numbers (indices) map to buttons, each button triggers a different action. No if-else chain needed.
 
-**Example â†’ calculator with dispatch table:**
+**Example → calculator with dispatch table:**
 ```c
 #include <stdio.h>
 
@@ -395,9 +395,9 @@ div(10,3) = 3
 ---
 ## 18.3 Variadic Functions
 
-**Real-World Analogy:** A buffet restaurant. Every customer pays a fixed entry (the named parameter `count`), then takes a variable number of dishes. The kitchen doesn't know how many dishes each customer will take â†’ the customer communicates the count upfront.
+**Real-World Analogy:** A buffet restaurant. Every customer pays a fixed entry (the named parameter `count`), then takes a variable number of dishes. The kitchen doesn't know how many dishes each customer will take → the customer communicates the count upfront.
 
-### 18.3.1 Mechanics â†’ `stdarg.h` Macros
+### 18.3.1 Mechanics → `stdarg.h` Macros
 
 
 ```c
@@ -437,7 +437,7 @@ Avg of 5: 30.00
 Avg of 0: 0.00
 ```
 
-**Step-by-step â†’ what `va_start` actually does:**
+**Step-by-step → what `va_start` actually does:**
 
 | Step | Operation | Effect |
 |------|-----------|--------|
@@ -495,8 +495,8 @@ Name: Alice, Score: 85/100 (85.0%)
 
 1. At least one named parameter before `...` (required by standard)
 2. Default argument promotions: `float` -> `double`, `char`/`short` -> `int`
-3. No type checking on variadic arguments â†’ if you pass an `int` but read a `double`, UB
-4. No way for the function to know argument count â†’ you must pass it (count, format string, sentinel)
+3. No type checking on variadic arguments → if you pass an `int` but read a `double`, UB
+4. No way for the function to know argument count → you must pass it (count, format string, sentinel)
 5. Always pair `va_start` with `va_end`
 
 **Edge Cases:**
@@ -529,34 +529,34 @@ Also called the **right-left rule**: start at the identifier, move right as far 
 | Step | Rule |
 |------|------|
 | 1 | Start at the identifier |
-| 2 | Look right â†’ if `[n]` -> array, `(params)` -> function |
-| 3 | Look left â†’ if `*` -> pointer |
+| 2 | Look right → if `[n]` -> array, `(params)` -> function |
+| 3 | Look left → if `*` -> pointer |
 | 4 | If a closing `)` is hit, go back right from there |
 | 5 | Repeat until the type is fully parsed |
 
-**Example 1 â†’ Simple pointer to function:**
+**Example 1 → Simple pointer to function:**
 ```c
 int (*fp)(int);
 // Start at fp
-// Right: ) â†’ pause (parenthesis closed)
-// Left: *  â†’ fp is a pointer
-// Right: (int) â†’ to a function taking int
-// Left: int â†’ returning int
+// Right: ) → pause (parenthesis closed)
+// Left: *  → fp is a pointer
+// Right: (int) → to a function taking int
+// Left: int → returning int
 // Result: fp is a pointer to a function taking int returning int
 ```
 
-**Example 2 â†’ Array of pointers to functions:**
+**Example 2 → Array of pointers to functions:**
 ```c
 int (*fpa[5])(double);
 // Start at fpa
-// Right: [5] â†’ fpa is an array of 5
-// Left: *   â†’ pointers
-// Right: (double) â†’ to functions taking double
-// Left: int â†’ returning int
+// Right: [5] → fpa is an array of 5
+// Left: *   → pointers
+// Right: (double) → to functions taking double
+// Left: int → returning int
 // Result: fpa is an array[5] of pointers to functions taking double returning int
 ```
 
-**Example 3 â†’ The "complex declaration" classic:**
+**Example 3 → The "complex declaration" classic:**
 ```c
 int (*(*fp)(int))[5];
 // Start at fp
@@ -569,7 +569,7 @@ int (*(*fp)(int))[5];
 // Result: fp is a pointer to a function taking int returning a pointer to an array[5] of int
 ```
 
-**Example 4 â†’ Signal handler (actual prototype of `signal()`):**
+**Example 4 → Signal handler (actual prototype of `signal()`):**
 ```c
 void (*signal(int sig, void (*handler)(int)))(int);
 // Start at signal
@@ -625,7 +625,7 @@ int main(void) {
     printf("Press Ctrl+C...\n");
 
     /* Without volatile, the compiler might hoist flag into a register
-       and never re-read it â†’ loop would never terminate */
+       and never re-read it → loop would never terminate */
     while (!flag) {
         /* wait */
     }
@@ -635,9 +635,9 @@ int main(void) {
 }
 ```
 
-**Without `volatile` â†’ what could happen:**
+**Without `volatile` → what could happen:**
 ```c
-int flag = 0;   /* non-volatile â†’ BUG */
+int flag = 0;   /* non-volatile → BUG */
 while (!flag) {
     /* Compiler optimizes:
        if (!flag) goto loop;   <- flag is read ONCE, then infinite loop */
@@ -648,9 +648,9 @@ while (!flag) {
 
 | Use Case | Why |
 |----------|-----|
-| Memory-mapped I/O registers | Hardware changes the value â†’ compiler must not cache it |
-| Signal handlers | Handler writes, main loop reads â†’ no synchronizing code path |
-| Multi-threaded flags | Thread A writes, Thread B spins â†’ not atomic but prevents caching |
+| Memory-mapped I/O registers | Hardware changes the value → compiler must not cache it |
+| Signal handlers | Handler writes, main loop reads → no synchronizing code path |
+| Multi-threaded flags | Thread A writes, Thread B spins → not atomic but prevents caching |
 | `setjmp`/`longjmp` variables | Values modified between `setjmp` and `longjmp` may be indeterminate |
 
 ### 18.5.2 The `restrict` Qualifier
@@ -694,13 +694,13 @@ int main(void)
 
 Without `restrict`, the compiler must assume `c` and `a` could overlap, so every iteration re-reads `a[i]` and `b[i]` from memory. With `restrict`, the compiler can keep values in registers.
 
-**Violating `restrict` â†’ undefined behavior:**
+**Violating `restrict` → undefined behavior:**
 ```c
 int arr[] = {1, 2, 3, 4, 5};
 vector_add(arr, arr, arr + 2, 3);   /* UB: c and a alias */
 ```
 
-### 18.5.3 `volatile` vs `const` vs `restrict` â†’ Comparison
+### 18.5.3 `volatile` vs `const` vs `restrict` → Comparison
 
 
 | Qualifier | What It Means | Compiler Effect | Typical Use |
@@ -711,12 +711,12 @@ vector_add(arr, arr, arr + 2, 3);   /* UB: c and a alias */
 
 **Combined examples:**
 ```c
-/* Read-only hardware register â†’ value changes externally but program can't write */
+/* Read-only hardware register → value changes externally but program can't write */
 const volatile uint32_t *status_reg = (uint32_t *)0xFF200000;
 //   ^^^^^   ^^^^^^^^
 //   can't write   must re-read every time
 
-/* Restrict + const â†’ read-only, no aliasing */
+/* Restrict + const → read-only, no aliasing */
 int sum_array(const int *restrict arr, int n) {
     int s = 0;
     for (int i = 0; i < n; i++) s += arr[i];
@@ -725,7 +725,7 @@ int sum_array(const int *restrict arr, int n) {
 ```
 
 **Edge Cases:**
-- **`volatile` is not atomic:** `volatile int x = 0;` in thread A `x++`, thread B reads `x` â†’ race condition. Use `_Atomic` (C11) for atomics.
+- **`volatile` is not atomic:** `volatile int x = 0;` in thread A `x++`, thread B reads `x` → race condition. Use `_Atomic` (C11) for atomics.
 - **`volatile` does not prevent all optimizations:** The compiler still reorders **non-volatile** accesses around volatile ones.
 - **`restrict` is a promise, not a check:** The compiler will not warn you if you violate it. The resulting UB is often silent data corruption.
 
@@ -744,7 +744,7 @@ int sum_array(const int *restrict arr, int n) {
 jmp_buf env;
 
 void risky_function(void) {
-    printf("  In risky_function â†’ about to longjmp!\n");
+    printf("  In risky_function → about to longjmp!\n");
     longjmp(env, 42);   /* 42 = return value seen by setjmp */
 }
 
@@ -767,7 +767,7 @@ int main(void) {
 **Output:**
 ```
 Calling risky_function...
-  In risky_function â†’ about to longjmp!
+  In risky_function → about to longjmp!
 Back in main after longjmp. Code: 42
 ```
 
@@ -776,8 +776,8 @@ Back in main after longjmp. Code: 42
 | Step | Line | Stack Depth | What Happens |
 |------|------|-------------|-------------|
 | 1 | `ret = setjmp(env)` | 1 | Saves registers/stack pointer -> returns 0 |
-| 2 | `risky_function()` | 2 | Normal call â†’ pushes frame |
-| 3 | `longjmp(env, 42)` | 2 | Restores saved context â†’ pops frame back to 1 |
+| 2 | `risky_function()` | 2 | Normal call → pushes frame |
+| 3 | `longjmp(env, 42)` | 2 | Restores saved context → pops frame back to 1 |
 | 4 | `ret = setjmp(env)` | 1 | Returns 42 (the value from longjmp) |
 
 ### 18.6.2 Practical Error Recovery Pattern
@@ -824,11 +824,11 @@ int main(void) {
 | Aspect | `setjmp`/`longjmp` | `try-catch` (C++ / Java) |
 |--------|-------------------|--------------------------|
 | Language | C only | C++, Java, C# |
-| Resource cleanup | Manual â†’ stack is unwound without destructors | Automatic â†’ destructors run (stack unwinding) |
-| Performance | Very fast â†’ just restore registers | Moderate â†’ type matching, stack unwinding |
+| Resource cleanup | Manual → stack is unwound without destructors | Automatic → destructors run (stack unwinding) |
+| Performance | Very fast → just restore registers | Moderate → type matching, stack unwinding |
 | Type safety | `longjmp` passes an `int` | Can throw any type |
 | Nested handlers | One active `jmp_buf` per scope | Lexical nesting with `try` blocks |
-| Intermediate frames | Skipped â†’ no cleanup runs | All local objects destroyed |
+| Intermediate frames | Skipped → no cleanup runs | All local objects destroyed |
 
 **Critical Resource Cleanup Example:**
 ```c
@@ -869,7 +869,7 @@ void func(void) {
 
 ## 18.7 Signal Handling
 
-**Real-World Analogy:** A smoke alarm in a building. It interrupts whatever you're doing (asynchronously). You have a predefined response: stop cooking, open windows, investigate. You don't call `printf` while handling the alarm â†’ you do minimal safe actions.
+**Real-World Analogy:** A smoke alarm in a building. It interrupts whatever you're doing (asynchronously). You have a predefined response: stop cooking, open windows, investigate. You don't call `printf` while handling the alarm → you do minimal safe actions.
 
 ### 18.7.1 Standard Signals
 
@@ -885,7 +885,7 @@ void func(void) {
 | `SIGUSR1` | Terminate | User-defined |
 | `SIGALRM` | Terminate | Timer expired (`alarm()`) |
 
-### 18.7.2 Safe Signal Handling â†’ the `volatile sig_atomic_t` Pattern
+### 18.7.2 Safe Signal Handling → the `volatile sig_atomic_t` Pattern
 
 
 ```c
@@ -945,8 +945,8 @@ int main(void) {
 ```
 
 **Edge Cases:**
-- **Reentrancy:** Signal handler might interrupt itself if the same signal arrives twice â†’ use `volatile sig_atomic_t` which guarantees lock-free read/write.
-- **`signal()` vs `sigaction()`:** `sigaction()` (POSIX) is preferred for production â†’ it's more portable and gives finer control over signal masks.
+- **Reentrancy:** Signal handler might interrupt itself if the same signal arrives twice → use `volatile sig_atomic_t` which guarantees lock-free read/write.
+- **`signal()` vs `sigaction()`:** `sigaction()` (POSIX) is preferred for production → it's more portable and gives finer control over signal masks.
 - **Undefined behavior:** Calling non-async-signal-safe functions in a handler is UB, often manifesting as deadlocks (if `malloc`'s internal lock is held when the signal arrives).
 
 ---
@@ -967,7 +967,7 @@ int main(void) {
     printf("Enter array size: ");
     scanf("%d", &n);
 
-    int arr[n];                /* VLA â†’ size determined at runtime */
+    int arr[n];                /* VLA → size determined at runtime */
     printf("Size of VLA: %zu bytes\n", sizeof(arr));
 
     for (int i = 0; i < n; i++) {
@@ -1026,7 +1026,7 @@ int main(void) {
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Declaration | O(1) | O(n) | Allocate n elements on stack (single `alloca`-like instruction) |
-| Access | O(1) | -- | Same as fixed array â†’ pointer + offset |
+| Access | O(1) | -- | Same as fixed array → pointer + offset |
 | `sizeof` | O(1) | -- | Runtime value stored in hidden local |
 
 ---
@@ -1046,7 +1046,7 @@ A **flexible array member** is the last member of a struct with no specified siz
 
 struct buffer {
     size_t length;
-    char data[];          /* flexible array member â†’ no size */
+    char data[];          /* flexible array member → no size */
 };
 
 int main(void) {
@@ -1094,15 +1094,15 @@ Offset 8:  data[0], data[1], ... data[n-1]
 | Copy is shallow | `memcpy` copies the struct header only |
 
 **Edge Cases:**
-- **Array of flexible structs:** Not possible â†’ `struct buffer arr[5];` is invalid (elements would overlap).
-- **Assignment:** `struct buffer b = *buf;` copies only the fixed members â†’ `data` not copied.
-- **Zero-length:** `malloc(sizeof(struct buffer) + 0)` is legal â†’ `data` points to nothing useful.
+- **Array of flexible structs:** Not possible → `struct buffer arr[5];` is invalid (elements would overlap).
+- **Assignment:** `struct buffer b = *buf;` copies only the fixed members → `data` not copied.
+- **Zero-length:** `malloc(sizeof(struct buffer) + 0)` is legal → `data` points to nothing useful.
 
 **Comparison with fixed-size array:**
 
 | Aspect | Flexible Array | Fixed Array `char data[256]` |
 |--------|---------------|------------------------------|
-| Memory waste | None â†’ exact fit | Wasted if actual data &lt; 256 |
+| Memory waste | None → exact fit | Wasted if actual data &lt; 256 |
 | Max size | Limited by heap | Limited by struct size |
 | `sizeof` | Excludes array | Includes full size |
 | Pointer arithmetic | Manual offset | Automatic |
@@ -1228,7 +1228,7 @@ Expected: 2000000
 Got:      1823491   <- race condition: lost updates
 ```
 
-### 18.10.3 Condition Variables â†’ Producer/Consumer
+### 18.10.3 Condition Variables → Producer/Consumer
 
 
 ```c
@@ -1293,10 +1293,10 @@ Consumer: got data!
 | `pthread_detach` | Make thread unjoinable |
 
 **Edge Cases:**
-- **Deadlock:** Thread A locks mutex1 then mutex2; Thread B locks mutex2 then mutex1 â†’ both wait forever. Fix: always acquire locks in the same order.
-- **Priority inversion:** Low-priority thread holds lock needed by high-priority thread â†’ solved by priority inheritance.
-- **Detached threads:** `pthread_detach` â†’ no need to join, but you lose the return value.
-- **Spurious wakeup:** `pthread_cond_wait` may return without signal â†’ always use `while (!condition)` loop.
+- **Deadlock:** Thread A locks mutex1 then mutex2; Thread B locks mutex2 then mutex1 → both wait forever. Fix: always acquire locks in the same order.
+- **Priority inversion:** Low-priority thread holds lock needed by high-priority thread → solved by priority inheritance.
+- **Detached threads:** `pthread_detach` → no need to join, but you lose the return value.
+- **Spurious wakeup:** `pthread_cond_wait` may return without signal → always use `while (!condition)` loop.
 
 **Complexity:**
 
@@ -1311,7 +1311,7 @@ Consumer: got data!
 
 ## 18.11 Type Punning and Strict Aliasing
 
-**Real-World Analogy:** A USB-C port can carry power, video, or data â†’ different protocols through the same physical connector. If you plug in a charger and try to read it as a display signal, you get garbage. The **strict aliasing rule** says: don't read a memory location as a type different from what was last written.
+**Real-World Analogy:** A USB-C port can carry power, video, or data → different protocols through the same physical connector. If you plug in a charger and try to read it as a display signal, you get garbage. The **strict aliasing rule** says: don't read a memory location as a type different from what was last written.
 
 ### 18.11.1 The Strict Aliasing Rule (C99 6.5)
 
@@ -1327,7 +1327,7 @@ Consumer: got data!
 ```c
 float f = 3.14f;
 int *p = (int *)&f;
-printf("%d\n", *p);   /* UB â†’ reading float bits as int */
+printf("%d\n", *p);   /* UB → reading float bits as int */
 ```
 
 **Why it's UB:** The compiler may optimize based on the assumption that `int*` and `float*` never alias. When they do, the optimizer produces wrong code.
@@ -1335,7 +1335,7 @@ printf("%d\n", *p);   /* UB â†’ reading float bits as int */
 ### 18.11.2 Legal Type Punning
 
 
-**Method 1 â†’ `memcpy` (the portable way):**
+**Method 1 → `memcpy` (the portable way):**
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -1343,7 +1343,7 @@ printf("%d\n", *p);   /* UB â†’ reading float bits as int */
 
 float bits_to_float(uint32_t bits) {
     float f;
-    memcpy(&f, &bits, sizeof(f));   /* Always legal â†’ char* exception */
+    memcpy(&f, &bits, sizeof(f));   /* Always legal → char* exception */
     return f;
 }
 
@@ -1360,7 +1360,7 @@ int main(void) {
 pi = 3.14159
 ```
 
-**Method 2 â†’ Union (legal in C, undefined in C++):**
+**Method 2 → Union (legal in C, undefined in C++):**
 ```c
 #include <stdio.h>
 #include <stdint.h>
@@ -1431,7 +1431,7 @@ void set_bytes(uint32_t *w, uint8_t b) {
 /* Embedded: reading a status register */
 int *status = (int *)0xFF200000;
 while (!(*status & 0x01)) {  /* Compiler may read status ONCE into register */
-    /* infinite loop â†’ status never re-read from hardware */
+    /* infinite loop → status never re-read from hardware */
 }
 ```
 
@@ -1448,13 +1448,13 @@ while (!(*status & 0x01)) {  /* Compiler may read status ONCE into register */
 
 The common fix: `memcpy` or `union` (if staying in C).
 
-### Q3: Function pointer vs `switch` â†’ when to use which?
+### Q3: Function pointer vs `switch` → when to use which?
 
 
 | Criterion | Function Pointer Table | `switch` Statement |
 |-----------|----------------------|-------------------|
 | Dispatching cost | O(1) indirect call | O(1) jump table or O(n) comparison chain |
-| Dynamic extension | Yes â†’ load from plugin | No â†’ compile-time only |
+| Dynamic extension | Yes → load from plugin | No → compile-time only |
 | Readability | Callback patterns can be opaque | Clear, explicit cases |
 | Inlining | Not possible (indirect call) | Possible (direct call) |
 | Best for | Plugin architectures, state machines | Fixed, known-at-compile dispatch |
@@ -1482,7 +1482,7 @@ The common fix: `memcpy` or `union` (if staying in C).
 ### Q6: Explain the spiral rule for complex declarations.
 
 
-**Answer:** Start at the identifier, move right as far as possible (respecting parentheses), then left, spiraling outward. Each `[n]` = array of, `(params)` = function taking, `*` = pointer to. Parentheses override the default right-left precedence. Example: `int (*(*fp)(int))[5]` â†’ `fp` is a pointer to a function taking `int` and returning a pointer to an array[5] of `int`.
+**Answer:** Start at the identifier, move right as far as possible (respecting parentheses), then left, spiraling outward. Each `[n]` = array of, `(params)` = function taking, `*` = pointer to. Parentheses override the default right-left precedence. Example: `int (*(*fp)(int))[5]` → `fp` is a pointer to a function taking `int` and returning a pointer to an array[5] of `int`.
 
 ### Q7: What's the difference between `#ifndef` guard and `#pragma once`?
 
@@ -1501,27 +1501,27 @@ The common fix: `memcpy` or `union` (if staying in C).
 ### Linux Kernel
 
 
-- **`volatile`:** Used sparingly â†’ mostly for `jiffies` (system timer tick) and memory-mapped I/O. The kernel developers prefer `READ_ONCE()`/`WRITE_ONCE()` macros instead of raw `volatile`.
+- **`volatile`:** Used sparingly → mostly for `jiffies` (system timer tick) and memory-mapped I/O. The kernel developers prefer `READ_ONCE()`/`WRITE_ONCE()` macros instead of raw `volatile`.
 - **`restrict`:** Used extensively in `copy_from_user`/`copy_to_user`, crypto routines, and `memcpy` implementations.
-- **Function pointers:** The VFS (Virtual File System) uses dispatch tables â†’ every filesystem implements `struct file_operations` with function pointers for `open`, `read`, `write`, `ioctl`, etc.
+- **Function pointers:** The VFS (Virtual File System) uses dispatch tables → every filesystem implements `struct file_operations` with function pointers for `open`, `read`, `write`, `ioctl`, etc.
 - **Signals:** Kernel delivers signals to user-space via `force_sig()`. Signal delivery involves saving/restoring the interrupted context on the user stack.
 - **setjmp/longjmp:** Used internally in some arch-specific code for exception handling (e.g., page fault recovery in `do_page_fault`).
 
 ### Embedded Systems
 
 
-- **`volatile`:** Every memory-mapped peripheral register is declared `volatile` â†’ UART status registers, GPIO pin values, ADC conversion results, interrupt status flags.
-- **Interrupt handlers (ISRs):** Direct analog of signal handlers â†’ do minimal work (clear flag, read/write hardware), set a volatile flag, return.
+- **`volatile`:** Every memory-mapped peripheral register is declared `volatile` → UART status registers, GPIO pin values, ADC conversion results, interrupt status flags.
+- **Interrupt handlers (ISRs):** Direct analog of signal handlers → do minimal work (clear flag, read/write hardware), set a volatile flag, return.
 - **Flexible array members:** Common in communication protocol buffers (variable-length CAN frames, UART packets).
 - **Function pointers:** State machines for protocol handling (e.g., TCP/IP stack, I2C master/slave).
-- **`const volatile`:** Read-only hardware registers (e.g., device ID registers) â†’ the value changes externally but firmware must not write.
+- **`const volatile`:** Read-only hardware registers (e.g., device ID registers) → the value changes externally but firmware must not write.
 
 ### Database Engines (SQLite, MySQL internals)
 
 
 - **Dispatch tables:** SQL execution engines use function pointer tables for each operation (scan, join, sort, aggregate).
 - **`restrict`:** Buffer pool operations use `restrict` for page copies (memcpy of database pages).
-- **Threading:** Connection pools, background writers, checkpoint threads, replication â†’ all built on pthreads.
+- **Threading:** Connection pools, background writers, checkpoint threads, replication → all built on pthreads.
 - **Makefiles:** Complex build systems with multiple targets (debug, release, embedded, with/without features).
 
 ---
@@ -1533,8 +1533,8 @@ The common fix: `memcpy` or `union` (if staying in C).
 
 | Aspect | Return Codes | setjmp/longjmp | Signals |
 |--------|-------------|----------------|---------|
-| Error propagation | Manual â†’ every caller checks | Automatic â†’ jump to handler | OS-driven â†’ process-wide |
-| Intermediate cleanup | Runs on each return | Skipped â†’ must clean before longjmp | Limited â†’ async-signal-safe only |
+| Error propagation | Manual → every caller checks | Automatic → jump to handler | OS-driven → process-wide |
+| Intermediate cleanup | Runs on each return | Skipped → must clean before longjmp | Limited → async-signal-safe only |
 | Stack depth | Any depth | Any depth (instant) | Current instruction |
 | Performance | O(depth) | O(1) | O(context switch) |
 | Type safety | Full | Integer code only | Signal number only |
@@ -1589,7 +1589,7 @@ The common fix: `memcpy` or `union` (if staying in C).
 | Function pointer type | `typedef int (*op_t)(int, int);` |
 | Dispatch table | `int (*ops[])(int,int) = {add, sub, mul, div};` |
 | Variadic function | `void log(const char *fmt, ...) { va_list ap; va_start(ap, fmt); ... va_end(ap); }` |
-| Complex decl parse | `int (*(*fp)(int))[5]` â†’ start at `fp`, spiral outward |
+| Complex decl parse | `int (*(*fp)(int))[5]` → start at `fp`, spiral outward |
 | Volatile read | `volatile uint32_t *reg = (uint32_t *)0x4000;` |
 | restrict promise | `void *memcpy(void *restrict d, const void *restrict s, size_t n)` |
 | setjmp/longjmp | `if (setjmp(buf)) /* error */; ... longjmp(buf, 1);` |
@@ -1619,7 +1619,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) `int *(*fp)(int);`
    D) `int *(fp)(int);`
 
-<details><summary>Answer&lt;/summary&gt;**B)** `int (*fp)(int);` â†’ parentheses around `*fp` bind the pointer before the function call.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `int (*fp)(int);` → parentheses around `*fp` bind the pointer before the function call.</details>
 
 3. What does `volatile` guarantee?
    A) Atomic access
@@ -1635,7 +1635,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) The pointed-to data is read-only
    D) The pointer is aligned
 
-<details><summary>Answer&lt;/summary&gt;**B)** `restrict` promises exclusive access â†’ violating it is undefined behavior.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `restrict` promises exclusive access → violating it is undefined behavior.</details>
 
 5. Which of the following is a strict aliasing violation?
    A) `memcpy(&f, &i, sizeof(f));`
@@ -1646,10 +1646,10 @@ The common fix: `memcpy` or `union` (if staying in C).
 <details><summary>Answer&lt;/summary&gt;**B)** Casting `int*` to `float*` and dereferencing violates strict aliasing. `memcpy` and `char*` access are legal.</details>
 
 6. What is wrong with calling `printf` inside a signal handler?
-   A) `printf` is not async-signal-safe â†’ it may deadlock on internal locks
+   A) `printf` is not async-signal-safe → it may deadlock on internal locks
    B) Signals cannot call library functions
    C) `printf` will corrupt the stack
-   D) Nothing â†’ it's perfectly safe
+   D) Nothing → it's perfectly safe
 
 <details><summary>Answer&lt;/summary&gt;**A)** `printf` uses internal locks (for `stdout` buffering) that could be held when the signal arrives, causing deadlock.</details>
 
@@ -1667,7 +1667,7 @@ The common fix: `memcpy` or `union` (if staying in C).
    C) `malloc(sizeof(struct buffer) + n);`
    D) Accessing `buf->data[i]` for i &lt; n
 
-<details><summary>Answer&lt;/summary&gt;**B)** You cannot create an array of structs with flexible array members â†’ each element would have unknown size.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** You cannot create an array of structs with flexible array members → each element would have unknown size.</details>
 
 9. What is a Makefile `.PHONY` target used for?
    A) To build faster
@@ -1690,18 +1690,18 @@ The common fix: `memcpy` or `union` (if staying in C).
 ## Summary
 
 - **Multi-file programming** separates interface (`.h`) from implementation (`.c`) using header guards and `extern`
-- **Makefiles** automate builds with timestamp-based dependency tracking â†’ targets, prerequisites, recipes
+- **Makefiles** automate builds with timestamp-based dependency tracking → targets, prerequisites, recipes
 - **Function pointers** enable callbacks (e.g., `qsort`) and O(1) dispatch tables replacing `switch`
-- **Variadic functions** use `<stdarg.h>` but pass type info explicitly â†’ no compiler type checking
+- **Variadic functions** use `<stdarg.h>` but pass type info explicitly → no compiler type checking
 - **Complex declarations** are parsed with the spiral rule: start at identifier, go right, then left
 - **`volatile`** prevents compiler from caching values that change externally (hardware, signals)
-- **`restrict`** promises alias-free pointers â†’ enables auto-vectorization (violation = UB)
-- **`setjmp`/`longjmp`** provide non-local error recovery â†’ skip destructors, require manual cleanup
+- **`restrict`** promises alias-free pointers → enables auto-vectorization (violation = UB)
+- **`setjmp`/`longjmp`** provide non-local error recovery → skip destructors, require manual cleanup
 - **Signal handlers** must be minimal: set a `volatile sig_atomic_t` flag, return
-- **VLAs** are runtime-sized stack arrays â†’ convenient but risk stack overflow; optional in C11
-- **Flexible array members** are variable-sized trailing arrays in structs â†’ efficient for variable-length data
+- **VLAs** are runtime-sized stack arrays → convenient but risk stack overflow; optional in C11
+- **Flexible array members** are variable-sized trailing arrays in structs → efficient for variable-length data
 - **pthreads** provide threading with mutexes + condition variables for synchronization
-- **Strict aliasing** forbids accessing memory via incompatible pointer types â†’ use `memcpy` or union
+- **Strict aliasing** forbids accessing memory via incompatible pointer types → use `memcpy` or union
 
 ## Exercises
 

@@ -1,4 +1,4 @@
-﻿# Chapter 5: Banking Terminology & Acts
+# Chapter 5: Banking Terminology & Acts
 
 ## Learning Objectives
 
@@ -52,7 +52,7 @@ The **Negotiable Instruments (NI) Act, 1881** governs the use of **promissory no
 
 | Section | Provision | Significance |
 |---------|-----------|--------------|
-| Section 138 | Dishonour of cheque for insufficiency of funds | **Criminal liability** â€” punishable with up to 2 years imprisonment or fine (up to twice the cheque amount) or both |
+| Section 138 | Dishonour of cheque for insufficiency of funds | **Criminal liability** — punishable with up to 2 years imprisonment or fine (up to twice the cheque amount) or both |
 | Section 139 | Presumption in favour of holder | Court **presumes** the cheque was issued for a legally enforceable debt/liability |
 | Section 142 | Cognizance of offences | Complaint must be filed within **30 days** of the dishonour notice period expiring |
 | Section 143 | Summary trial | Cases under Section 138 to be tried summarily (fast-track) |
@@ -69,8 +69,8 @@ The **Negotiable Instruments (NI) Act, 1881** governs the use of **promissory no
 |------|---------|
 | **General crossing** | Two parallel lines on the top-left; payment only through bank account |
 | **Special crossing** | Bank name written between the lines; payment only to that bank |
-| **Not Negotiable crossing** | "Not Negotiable" written â€” restricts transferability |
-| **Account Payee crossing** | "A/c Payee" â€” proceeds only to the named payee |
+| **Not Negotiable crossing** | "Not Negotiable" written — restricts transferability |
+| **Account Payee crossing** | "A/c Payee" — proceeds only to the named payee |
 
 #### B. Foreign Exchange Management Act (FEMA), 1999
 
@@ -83,10 +83,10 @@ The **Negotiable Instruments (NI) Act, 1881** governs the use of **promissory no
 
 | Aspect | FERA (1973) | FEMA (1999) |
 |--------|-------------|-------------|
-| Philosophy | **Negative** â€” Everything prohibited unless permitted | **Positive** â€” Everything permitted unless restricted |
+| Philosophy | **Negative** — Everything prohibited unless permitted | **Positive** — Everything permitted unless restricted |
 | Approach | Strict enforcement | Liberalisation and facilitation |
-| Presumption of guilt | **Yes** â€” accused was presumed guilty | **No** â€” normal criminal law presumption of innocence |
-| Penalty | Criminal offence + imprisonment | **Civil offence** â€” monetary penalty |
+| Presumption of guilt | **Yes** — accused was presumed guilty | **No** — normal criminal law presumption of innocence |
+| Penalty | Criminal offence + imprisonment | **Civil offence** — monetary penalty |
 | RBI's role | Extensive control | Regulator of current and capital account |
 
 **Key provisions:**
@@ -95,10 +95,10 @@ The **Negotiable Instruments (NI) Act, 1881** governs the use of **promissory no
 |---------|-----------|
 | Section 3 | Restriction on dealing in foreign exchange without authorisation |
 | Section 4 | Restrictions on holding foreign exchange |
-| Section 5 | Current account transactions â€” **freely permitted** |
-| Section 6 | Capital account transactions â€” subject to RBI/Government approval |
-| Section 7 | Export of goods and services â€” realisation of foreign exchange |
-| Section 8 | Import of goods â€” payment provisions |
+| Section 5 | Current account transactions — **freely permitted** |
+| Section 6 | Capital account transactions — subject to RBI/Government approval |
+| Section 7 | Export of goods and services — realisation of foreign exchange |
+| Section 8 | Import of goods — payment provisions |
 | Section 9 | Realisation and repatriation of foreign exchange |
 
 **FEMA Authorities:**
@@ -133,8 +133,8 @@ flowchart LR
 
 | Section | Provision |
 |---------|-----------|
-| Section 3 | Definition of money laundering â€” directly or indirectly attempts to derive property from proceeds of crime |
-| Section 4 | Punishment â€” rigorous imprisonment for **3 to 7 years** (up to 10 years for certain offences) |
+| Section 3 | Definition of money laundering — directly or indirectly attempts to derive property from proceeds of crime |
+| Section 4 | Punishment — rigorous imprisonment for **3 to 7 years** (up to 10 years for certain offences) |
 | Section 5 | Attachment of property involved in money laundering |
 | Section 8 | Issue of show cause notice before confiscation |
 | Section 12 | Obligations of **banking companies, FIs, and intermediaries** to maintain records |
@@ -142,14 +142,14 @@ flowchart LR
 | Section 45 | Offences are **cognizable and non-bailable** |
 
 **Obligations on banks under PMLA:**
-- Maintain records of **Cash Transaction Reports (CTRs)** for transactions > â‚¹10 lakh
+- Maintain records of **Cash Transaction Reports (CTRs)** for transactions > ₹10 lakh
 - File **Suspicious Transaction Reports (STRs)** with FIU-IND
 - Maintain records for **10 years** from the date of transaction
 - Appoint a **Principal Officer** for compliance
 - Conduct **on-site KYC verification**
 
 **Enforcement agencies:**
-- **Financial Intelligence Unit â€” India (FIU-IND):** Receives, analyses, and disseminates financial intelligence
+- **Financial Intelligence Unit — India (FIU-IND):** Receives, analyses, and disseminates financial intelligence
 - **Enforcement Directorate (ED):** Investigates PMLA cases and prosecutes offenders
 - **Adjudicating Authority (PMLA):** Adjudicates attachment and confiscation orders
 
@@ -162,7 +162,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    A[Default occurs<br/>(> â‚¹1 lakh)] --> B[Financial Creditor /<br/>Operational Creditor /<br/>Corporate Applicant files application]
+    A[Default occurs<br/>(> ₹1 lakh)] --> B[Financial Creditor /<br/>Operational Creditor /<br/>Corporate Applicant files application]
     B --> C[NCLT Adjudication<br/>90 days to admit/reject]
     C --> D{Admitted?}
     D -->|Yes| E[Moratorium declared<br/>(Section 14)]
@@ -183,9 +183,9 @@ flowchart TD
 
 | Aspect | Details |
 |--------|---------|
-| **Minimum default threshold** | â‚¹1 crore (raised from â‚¹1 lakh in 2020) |
-| **CIRP timeline** | 180 days (extendable by 90 days) â€” total **330 days** including litigation |
-| **Timeline for resolution** | Fixed â€” promotes faster resolution of NPAs |
+| **Minimum default threshold** | ₹1 crore (raised from ₹1 lakh in 2020) |
+| **CIRP timeline** | 180 days (extendable by 90 days) — total **330 days** including litigation |
+| **Timeline for resolution** | Fixed — promotes faster resolution of NPAs |
 | **Moratorium (Section 14)** | No legal proceedings, asset transfer, or recovery during CIRP |
 | **Committee of Creditors (CoC)** | Makes decisions on resolution plan |
 | **Waterfall mechanism** | Section 53 specifies prioritised distribution of proceeds |
@@ -228,11 +228,11 @@ flowchart TD
 |----------|---------|-------------|
 | **Anti-competitive agreements** | Section 3 | Cartels, price-fixing, bid rigging, market allocation |
 | **Abuse of dominant position** | Section 4 | Predatory pricing, discriminatory pricing, denial of market access |
-| **Combinations regulation** | Sections 5-6 | Merger control â€” combinations above asset/turnover thresholds require CCI approval |
+| **Combinations regulation** | Sections 5-6 | Merger control — combinations above asset/turnover thresholds require CCI approval |
 
 **Thresholds for merger notification:**
-- Combined assets > â‚¹2,000 crore OR combined turnover > â‚¹6,000 crore
-- For group: Assets > â‚¹8,000 crore OR turnover > â‚¹24,000 crore
+- Combined assets > ₹2,000 crore OR combined turnover > ₹6,000 crore
+- For group: Assets > ₹8,000 crore OR turnover > ₹24,000 crore
 
 ### 5.2 Banking Terminology
 
@@ -259,12 +259,12 @@ flowchart TD
 
 | Category | Classification | Provisioning |
 |----------|---------------|--------------|
-| **Standard Asset** | Not NPA (â‰¤ 90 days overdue) | 0.25% for banks, 0.40% for NBFCs |
+| **Standard Asset** | Not NPA (≤ 90 days overdue) | 0.25% for banks, 0.40% for NBFCs |
 | **Standard Asset (Farm)** | Agricultural advances | 0.25% direct, 2.5% indirect |
-| **Sub-Standard Asset** | NPA for â‰¤ 12 months | 15% on secured portion; 25% on unsecured |
-| **Sub-Standard (RE)** | Real estate â€” restructured | Higher provisioning |
+| **Sub-Standard Asset** | NPA for ≤ 12 months | 15% on secured portion; 25% on unsecured |
+| **Sub-Standard (RE)** | Real estate — restructured | Higher provisioning |
 | **Doubtful Asset** | NPA for > 12 months | 25% to 100% depending on age (D1, D2, D3) |
-| **Doubtful D1** | â‰¤ 1 year after sub-standard | 25% |
+| **Doubtful D1** | ≤ 1 year after sub-standard | 25% |
 | **Doubtful D2** | 1-3 years | 40% |
 | **Doubtful D3** | > 3 years | 100% |
 | **Loss Asset** | Identified as unrecoverable | 100% |
@@ -274,8 +274,8 @@ flowchart TD
 | Ratio | Formula | Meaning |
 |-------|---------|---------|
 | Gross NPA Ratio | Gross NPAs / Gross Advances | Total NPA exposure |
-| Net NPA Ratio | (Gross NPA â€” Provisions) / (Gross Advances â€” Provisions) | NPAs net of provisions |
-| Provision Coverage Ratio (PCR) | (Total Provisions / Gross NPAs) Ã— 100 | Ability to cover NPAs |
+| Net NPA Ratio | (Gross NPA — Provisions) / (Gross Advances — Provisions) | NPAs net of provisions |
+| Provision Coverage Ratio (PCR) | (Total Provisions / Gross NPAs) × 100 | Ability to cover NPAs |
 
 #### B. Capital Adequacy Ratio (CAR)
 
@@ -284,7 +284,7 @@ CAR = (Tier 1 Capital + Tier 2 Capital) / Risk-Weighted Assets (RWA)
 ```
 
 **Components:**
-- **Tier 1 Capital:** Core capital (equity, reserves, retained earnings) â€” absorbs losses without ceasing operations
+- **Tier 1 Capital:** Core capital (equity, reserves, retained earnings) — absorbs losses without ceasing operations
 - **Tier 2 Capital:** Supplementary capital (subordinated debt, revaluation reserves, general provisions)
 - **Risk-Weighted Assets:** Assets weighted by credit risk, market risk, and operational risk
 
@@ -295,8 +295,8 @@ CASA Ratio = (Current Account + Savings Account Deposits) / Total Deposits
 ```
 
 - Measures the proportion of **low-cost deposits** (CASA) in total deposits
-- Higher CASA â†’ lower cost of funds â†’ better net interest margin (NIM)
-- Industry average: 35â€“45%
+- Higher CASA → lower cost of funds → better net interest margin (NIM)
+- Industry average: 35–45%
 
 #### D. Credit-Deposit (CD) Ratio
 
@@ -305,7 +305,7 @@ CD Ratio = Total Advances / Total Deposits
 ```
 
 - Measures the proportion of deposits deployed as loans
-- Higher CD ratio â†’ more aggressive lending (but may indicate liquidity pressure)
+- Higher CD ratio → more aggressive lending (but may indicate liquidity pressure)
 - RBI guideline: CD ratio should not exceed 75% for comfortable liquidity
 
 #### E. Base Rate and BPLR
@@ -315,13 +315,13 @@ CD Ratio = Total Advances / Total Deposits
 | **Base Rate** | Minimum lending rate (2010-2016) | Replaced BPLR in July 2010; minimum rate below which banks could not lend |
 | **BPLR** | Benchmark Prime Lending Rate | Pre-2010 system; opaque and non-transparent |
 | **MCLR** | Marginal Cost of Funds-based Lending Rate | Replaced Base Rate in April 2016 |
-| **EBLR** | External Benchmark Lending Rate | From October 2019 â€” linked to Repo Rate or T-bill yield |
+| **EBLR** | External Benchmark Lending Rate | From October 2019 — linked to Repo Rate or T-bill yield |
 
 #### F. Other Important Ratios
 
 | Ratio | Formula | Significance |
 |-------|---------|--------------|
-| **Net Interest Margin (NIM)** | (Interest Earned â€” Interest Expended) / Average Earning Assets | Profitability measure |
+| **Net Interest Margin (NIM)** | (Interest Earned — Interest Expended) / Average Earning Assets | Profitability measure |
 | **Return on Assets (RoA)** | Net Profit / Average Total Assets | Efficiency measure |
 | **Return on Equity (RoE)** | Net Profit / Shareholders' Equity | Returns to shareholders |
 | **Cost-to-Income Ratio** | Operating Expenses / Net Income + Other Income | Operational efficiency |
@@ -339,10 +339,10 @@ Banks must lend a specified percentage of Adjusted Net Bank Credit (ANBC) to **p
 | Agriculture | 18% (of which 8% to small and marginal farmers) |
 | Micro Enterprises | 7.5% |
 | Weaker Sections | 10% |
-| Education (up to â‚¹10 lakh) | Within overall 40% |
-| Housing (up to â‚¹35 lakh) | Within overall 40% |
+| Education (up to ₹10 lakh) | Within overall 40% |
+| Housing (up to ₹35 lakh) | Within overall 40% |
 | Social Infrastructure | Within overall 40% |
-| Export Credit (up to â‚¹2 crore) | Within overall 40% |
+| Export Credit (up to ₹2 crore) | Within overall 40% |
 | Renewable Energy | Within overall 40% |
 
 **Sub-targets for agriculture:**
@@ -382,22 +382,22 @@ flowchart TD
     A --> H[NETC - National<br/>Electronic Toll Collection]
     
     B --> B1[Volume: 15B+<br/>transactions/month]
-    B --> B2[Value: â‚¹20L+ Cr/month]
+    B --> B2[Value: ₹20L+ Cr/month]
     B --> B3[Powered by NPCI]
 ```
 
 | System | Launch | Description | Volume (monthly) |
 |--------|--------|-------------|------------------|
-| **NEFT** | 2005 | Deferred net settlement (batches 24Ã—7) | ~30 crore |
-| **RTGS** | 2004 | Real-time gross settlement (â‚¹2 lakh+) | ~1.5 crore |
-| **IMPS** | 2010 | Instant 24Ã—7 interbank transfer | ~5 crore |
+| **NEFT** | 2005 | Deferred net settlement (batches 24×7) | ~30 crore |
+| **RTGS** | 2004 | Real-time gross settlement (₹2 lakh+) | ~1.5 crore |
+| **IMPS** | 2010 | Instant 24×7 interbank transfer | ~5 crore |
 | **UPI** | 2016 | Mobile-based instant payment platform | 15+ billion |
 | **BBPS** | 2017 | Centralised bill payment system | ~8 crore |
 
 **Other digital payment milestones:**
 - **RuPay card:** India's domestic card network (launched by NPCI in 2012)
 - **Account Aggregator (AA) framework:** Launched 2021; enables data sharing with consent
-- **CBDC (e-Rupee):** RBI's Central Bank Digital Currency â€” pilot launched 2022
+- **CBDC (e-Rupee):** RBI's Central Bank Digital Currency — pilot launched 2022
 - **Faster Payment System (FPS):** UPI now linked to Singapore's PayNow and the UAE's AANI
 
 #### C. Financial Inclusion Initiatives
@@ -408,10 +408,10 @@ flowchart TD
 | **PM Mudra Yojana** | 2015 | Credit to non-corporate microenterprises |
 | **PM SVANidhi** | 2020 | Working capital loans to street vendors |
 | **Digital Saksharta Abhiyan** | 2014 | Digital literacy for rural India |
-| **PM Suraksha Bima Yojana** | 2015 | Accident insurance (â‚¹2 lakh) at â‚¹12/year |
-| **PM Jeevan Jyoti Bima Yojana** | 2015 | Life insurance (â‚¹2 lakh) at â‚¹330/year |
+| **PM Suraksha Bima Yojana** | 2015 | Accident insurance (₹2 lakh) at ₹12/year |
+| **PM Jeevan Jyoti Bima Yojana** | 2015 | Life insurance (₹2 lakh) at ₹330/year |
 | **PM Fasal Bima Yojana** | 2016 | Crop insurance for farmers |
-| **National Pension System (NPS)** | 2004 | Retirement savings â€” regulated by PFRDA |
+| **National Pension System (NPS)** | 2004 | Retirement savings — regulated by PFRDA |
 
 #### D. Foreign Trade and Banking
 
@@ -680,13 +680,13 @@ The Competition Act, 2002 replaced the Monopolies and Restrictive Trade Practice
 
 **Q10.** Under the PMLA, Cash Transaction Reports (CTRs) must be filed for transactions above:
 
-a) â‚¹5 lakh b) â‚¹10 lakh c) â‚¹25 lakh d) â‚¹50 lakh
+a) ₹5 lakh b) ₹10 lakh c) ₹25 lakh d) ₹50 lakh
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) â‚¹10 lakh
+**Answer:** b) ₹10 lakh
 
-Banks must report all cash transactions exceeding â‚¹10 lakh to FIU-IND through Cash Transaction Reports (CTRs) under PMLA rules.
+Banks must report all cash transactions exceeding ₹10 lakh to FIU-IND through Cash Transaction Reports (CTRs) under PMLA rules.
 </details>
 
 ---
@@ -727,8 +727,8 @@ function calculateProvisioning(
 }
 
 const prov = calculateProvisioning('Sub-Standard', 500000, true);
-console.log(`Provision required for ${prov.loanCategory} (unsecured): â‚¹${prov.provisionRequired}`);
-// Output: Provision required for Sub-Standard (unsecured): â‚¹125000
+console.log(`Provision required for ${prov.loanCategory} (unsecured): ₹${prov.provisionRequired}`);
+// Output: Provision required for Sub-Standard (unsecured): ₹125000
 ```
 
 **Q11.** A Doubtful Asset is defined as an NPA that has remained in the sub-standard category for:
@@ -746,13 +746,13 @@ An asset becomes doubtful when it has remained in the sub-standard category for 
 
 **Q12.** What is the minimum default threshold for filing an insolvency application under IBC 2016?
 
-a) â‚¹1 lakh b) â‚¹10 lakh c) â‚¹1 crore d) â‚¹10 crore
+a) ₹1 lakh b) ₹10 lakh c) ₹1 crore d) ₹10 crore
 
 <details>
 <summary>Answer</summary>
-**Answer:** c) â‚¹1 crore
+**Answer:** c) ₹1 crore
 
-The minimum default threshold under IBC was raised from â‚¹1 lakh to â‚¹1 crore in 2020 to prevent excessive filings against small borrowers and focus on larger defaults.
+The minimum default threshold under IBC was raised from ₹1 lakh to ₹1 crore in 2020 to prevent excessive filings against small borrowers and focus on larger defaults.
 </details>
 
 ---
@@ -765,7 +765,7 @@ a) Primary Credit Ratio b) Provision Coverage Ratio c) Profit Capital Ratio d) P
 <summary>Answer</summary>
 **Answer:** b) Provision Coverage Ratio
 
-Provision Coverage Ratio = (Total Provisions / Gross NPAs) Ã— 100. It measures the extent of NPA coverage through provisions. Higher PCR indicates better risk management.
+Provision Coverage Ratio = (Total Provisions / Gross NPAs) × 100. It measures the extent of NPA coverage through provisions. Higher PCR indicates better risk management.
 </details>
 
 ---
@@ -778,7 +778,7 @@ a) Government dues b) Secured creditors c) Workmen dues d) Insolvency resolution
 <summary>Answer</summary>
 **Answer:** d) Insolvency resolution costs
 
-The IBC water-fall mechanism (Section 53) prioritises: 1st â€” Insolvency resolution costs, 2nd â€” Workmen dues + Secured creditors, then employees, unsecured creditors, government, etc.
+The IBC water-fall mechanism (Section 53) prioritises: 1st — Insolvency resolution costs, 2nd — Workmen dues + Secured creditors, then employees, unsecured creditors, government, etc.
 </details>
 
 ---
@@ -834,8 +834,8 @@ function analyseLiquidity(
 }
 
 const liquidity = analyseLiquidity(1000000, 780000, 18, 4.5, 50000);
-console.log(`CD Ratio: ${liquidity.cdRatio}%, Liquid Assets: â‚¹${liquidity.liquidAssets}`);
-// Output: CD Ratio: 78%, Liquid Assets: â‚¹230000
+console.log(`CD Ratio: ${liquidity.cdRatio}%, Liquid Assets: ₹${liquidity.liquidAssets}`);
+// Output: CD Ratio: 78%, Liquid Assets: ₹230000
 ```
 
 **Q16.** Which of the following is NOT a negotiable instrument under the NI Act, 1881?
@@ -962,7 +962,7 @@ d) January 2023
 <summary>Answer</summary>
 **Answer:** c) December 2022
 
-The CBDC-Retail (eâ‚¹-R) pilot was launched on December 1, 2022. The wholesale pilot (eâ‚¹-W) had been launched earlier in November 2022 for interbank settlement.
+The CBDC-Retail (e₹-R) pilot was launched on December 1, 2022. The wholesale pilot (e₹-W) had been launched earlier in November 2022 for interbank settlement.
 </details>
 
 ---
@@ -1050,7 +1050,7 @@ Blockchain provides an immutable, transparent record of all transactions, making
 **Q30.** The RBI's position on private cryptocurrencies is best described as:
 
 a) Fully supportive
-b) Neutral â€” no official position
+b) Neutral — no official position
 c) Concerned about macroeconomic stability, advocates global regulation
 d) Actively promoting cryptocurrency adoption
 
@@ -1181,10 +1181,10 @@ Prudential regulation refers to the set of rules and standards designed to ensur
 
 | Component | Description | Regulatory Requirement |
 |-----------|-------------|----------------------|
-| **Capital Adequacy** | Minimum capital to cover risks | CAR â‰¥ 11.5% (including CCB) |
+| **Capital Adequacy** | Minimum capital to cover risks | CAR ≥ 11.5% (including CCB) |
 | **Asset Quality** | Classification and provisioning for NPAs | NPA norms per RBI circulars |
-| **Liquidity Standards** | Ensure banks can meet short-term obligations | LCR â‰¥ 100%, NSFR â‰¥ 100% |
-| **Leverage Ratio** | Limit excessive borrowing | Tier 1 Capital / Total Exposure â‰¥ 4% |
+| **Liquidity Standards** | Ensure banks can meet short-term obligations | LCR ≥ 100%, NSFR ≥ 100% |
+| **Leverage Ratio** | Limit excessive borrowing | Tier 1 Capital / Total Exposure ≥ 4% |
 | **Risk Management** | Systems to identify, measure, and mitigate risks | Board-approved risk policies |
 | **Corporate Governance** | Board composition, fit & proper criteria | At least 51% board with special knowledge |
 | **Disclosure Requirements** | Transparency through periodic reporting | Pillar 3 disclosures under Basel |
@@ -1224,7 +1224,7 @@ flowchart TD
 - **IRDA:** Solvency and investment norms for insurers
 - **PFRDA:** Prudential regulation of pension funds
 
-### 5.6 Technology in Finance â€” Digital Banking, Blockchain, and Cryptocurrencies
+### 5.6 Technology in Finance — Digital Banking, Blockchain, and Cryptocurrencies
 
 #### A. Digital Banking Evolution
 
@@ -1288,12 +1288,12 @@ flowchart LR
 | Aspect | Cryptocurrency | CBDC (e-Rupee) |
 |--------|---------------|----------------|
 | **Issuer** | Decentralised (no central issuer) | Central Bank (RBI) |
-| **Legal Tender** | Not legal tender in India | Yes â€” equivalent to physical currency |
-| **Value Stability** | Highly volatile | Stable â€” same value as fiat rupee |
+| **Legal Tender** | Not legal tender in India | Yes — equivalent to physical currency |
+| **Value Stability** | Highly volatile | Stable — same value as fiat rupee |
 | **Anonymity** | Pseudonymous (traceable on blockchain) | Controlled anonymity (RBI can track) |
 | **Regulation** | Not regulated in India (taxable but not legal) | Fully regulated by RBI |
 | **Technology** | Public blockchain | Permissioned DLT |
-| **Examples** | Bitcoin, Ethereum, Ripple | Digital Rupee (eâ‚¹) â€” launched 2022 |
+| **Examples** | Bitcoin, Ethereum, Ripple | Digital Rupee (e₹) — launched 2022 |
 
 **India's stance on cryptocurrencies:**
 - **Supreme Court (2020):** Set aside RBI's 2018 banking ban on crypto
@@ -1301,8 +1301,8 @@ flowchart LR
 - **RBI's position:** "Serious concerns" about macroeconomic stability; advocates for global regulation
 - **Current status (2025):** No comprehensive crypto law; crypto assets are taxed but not recognised as legal tender
 
-**e-Rupee (CBDC) â€” Key Features:**
-| Feature | Wholesale (eâ‚¹-W) | Retail (eâ‚¹-R) |
+**e-Rupee (CBDC) — Key Features:**
+| Feature | Wholesale (e₹-W) | Retail (e₹-R) |
 |---------|-----------------|---------------|
 | **Purpose** | Interbank settlement | General public use |
 | **Launch** | November 2022 | December 2022 |
@@ -1332,7 +1332,7 @@ flowchart LR
 | **RBI Grade B** | PMLA provisions (Section 3, 4, 12), FEMA (Section 5 vs 6), IBC waterfall (Section 53), prudential regulation norms | Focus on section numbers; study recent AML/CFT guidelines; understand Basel III implementation details |
 | **SBI PO** | NI Act Section 138 (timelines, punishment), priority sector targets, NPA classification and provisioning, CASA/CD/PCR ratios | Practice numerical on NPA ratios and provisioning; memorise all priority sector percentages |
 | **IBPS SO** | Competition Act (Sections 3, 4), KYC norms (4 tiers), digital banking, blockchain basics, cryptocurrency taxation | Use comparison tables for acts (year + objective + administering body); understand e-Rupee features |
-| **Common tips** | Section 138 timelines are frequently asked; memorise the sequence: 30 days notice â†’ 15 days payment â†’ 30 days complaint; know all important years and section numbers | Create a matrix of acts with years and administering agencies; revise weekly |
+| **Common tips** | Section 138 timelines are frequently asked; memorise the sequence: 30 days notice → 15 days payment → 30 days complaint; know all important years and section numbers | Create a matrix of acts with years and administering agencies; revise weekly |
 
 ---
 
@@ -1379,22 +1379,22 @@ function calculateCryptoTax(
 }
 
 const crypto = calculateCryptoTax(2000000, 3500000, 1, 30, 1);
-console.log(`Capital Gains: â‚¹${crypto.capitalGains}, Tax: â‚¹${crypto.taxAmount}, TDS: â‚¹${crypto.tdsAmount}`);
-console.log(`Net Proceeds after tax: â‚¹${crypto.netProceeds}`);
-// Output: Capital Gains: â‚¹1500000, Tax: â‚¹450000, TDS: â‚¹35000
-// Output: Net Proceeds after tax: â‚¹3015000
+console.log(`Capital Gains: ₹${crypto.capitalGains}, Tax: ₹${crypto.taxAmount}, TDS: ₹${crypto.tdsAmount}`);
+console.log(`Net Proceeds after tax: ₹${crypto.netProceeds}`);
+// Output: Capital Gains: ₹1500000, Tax: ₹450000, TDS: ₹35000
+// Output: Net Proceeds after tax: ₹3015000
 ```
 
 ---
 
 ## Summary
 
-- The **Negotiable Instruments Act, 1881** governs cheques, promissory notes, and bills of exchange. Section 138 deals with cheque dishonour â€” 30 days to send notice, 15 days to pay, then file complaint within 30 days.
+- The **Negotiable Instruments Act, 1881** governs cheques, promissory notes, and bills of exchange. Section 138 deals with cheque dishonour — 30 days to send notice, 15 days to pay, then file complaint within 30 days.
 - **FEMA (1999)** replaced FERA (1973) with a liberalised, positive approach to foreign exchange management. Current account transactions are freely permitted; capital account transactions require RBI approval.
-- **PMLA (2002)** targets money laundering through three stages: placement, layering, and integration. Banks must file CTRs (> â‚¹10 lakh) and STRs with FIU-IND. Records must be kept for 10 years.
+- **PMLA (2002)** targets money laundering through three stages: placement, layering, and integration. Banks must file CTRs (> ₹10 lakh) and STRs with FIU-IND. Records must be kept for 10 years.
 - **IBC (2016)** provides a time-bound (330 days max) insolvency resolution process. Section 14 imposes a moratorium. Section 53 lays down the waterfall priority for distribution.
 - **Competition Act (2002)** replaced MRTP Act and established CCI to prevent anti-competitive agreements, abuse of dominance, and regulate combinations (mergers).
-- **NPA classification:** Standard (â‰¤ 90 days overdue) â†’ Sub-Standard (â‰¤ 12 months) â†’ Doubtful (> 12 months) â†’ Loss (unrecoverable). Provisioning increases from 0.25% to 100%.
+- **NPA classification:** Standard (≤ 90 days overdue) → Sub-Standard (≤ 12 months) → Doubtful (> 12 months) → Loss (unrecoverable). Provisioning increases from 0.25% to 100%.
 - **CASA ratio** (Current + Savings / Total deposits) indicates low-cost funding base. **CD ratio** measures lending aggressiveness. **PCR** measures provision coverage.
 - **Priority sector lending:** Banks must lend 40% of ANBC to priority sectors (agriculture 18%, micro enterprises 7.5%, weaker sections 10%).
 - **PSB mergers (2019-20)** reduced 10 banks to 4. **UPI** processes 15+ billion transactions monthly.
@@ -1409,11 +1409,11 @@ console.log(`Net Proceeds after tax: â‚¹${crypto.netProceeds}`);
 | NI Act Year | 1881 | "NI = 18 (years after 1863 founding of modern banking) + 81" |
 | Section 138 | Cheque dishonour: 2 years jail | "138 = 1-3-8 = 1 notice, 3 steps, 8 sections after 130" |
 | FEMA Year | 1999 | "FEMA = 1999 (end of 20th century reform)" |
-| PMLA CTR Limit | â‚¹10 lakh cash transaction | "PMLA CTR = 10 lakh" |
+| PMLA CTR Limit | ₹10 lakh cash transaction | "PMLA CTR = 10 lakh" |
 | IBC Timeline | 330 days total | "IBC = 330 (think 3-3-0 as max days)" |
 | CIRP Failure | Liquidation in 90 days | "90 days to liquidate" |
 | NPA Classification | 90 days overdue | "90 = NPA trigger" |
-| Sub-Standard vs Doubtful | 12 months dividing line | "Sub â‰¤ 12 months, Doubtful > 12 months" |
+| Sub-Standard vs Doubtful | 12 months dividing line | "Sub ≤ 12 months, Doubtful > 12 months" |
 | PSL Target | 40% of ANBC | "PSL = 40 for domestic banks" |
 | UPI Launch | 2016 | "UPI = 2016 = 20-16 = same as MCLR year!" |
 
@@ -1430,7 +1430,7 @@ a) 7 days b) 15 days c) 30 days d) 45 days
 
 **Answer:** c) 30 days
 
-The payee must file the complaint within **30 days** from the date on which the 15-day notice period expires. Total timeline: Cheque return â†’ 30 days to send notice â†’ 15 days to pay â†’ 30 days to file complaint.
+The payee must file the complaint within **30 days** from the date on which the 15-day notice period expires. Total timeline: Cheque return → 30 days to send notice → 15 days to pay → 30 days to file complaint.
 </details>
 
 ---
@@ -1499,7 +1499,7 @@ The IBC waterfall (Section 53) gives first priority to insolvency resolution cos
    a) 1856 b) 1881 c) 1900 d) 1949
 
 2. Under Section 138 of NI Act, the maximum fine for cheque dishonour is:
-   a) Equal to the cheque amount b) Twice the cheque amount c) â‚¹5 lakh d) â‚¹10 lakh
+   a) Equal to the cheque amount b) Twice the cheque amount c) ₹5 lakh d) ₹10 lakh
 
 3. FERA was replaced by FEMA in:
    a) 1991 b) 1999 c) 2002 d) 2005
@@ -1508,7 +1508,7 @@ The IBC waterfall (Section 53) gives first priority to insolvency resolution cos
    a) 5 years b) 7 years c) 10 years d) 15 years
 
 5. The minimum default threshold for filing an insolvency application under IBC is:
-   a) â‚¹50,000 b) â‚¹1 lakh c) â‚¹10 lakh d) â‚¹1 crore
+   a) ₹50,000 b) ₹1 lakh c) ₹10 lakh d) ₹1 crore
 
 6. What is the provisioning requirement for a Loss Asset?
    a) 50% b) 75% c) 85% d) 100%
@@ -1523,7 +1523,7 @@ The IBC waterfall (Section 53) gives first priority to insolvency resolution cos
    a) CGST b) SGST c) IGST d) UTGST
 
 10. Which of the following is a Doubtful Asset classification criterion?
-    a) NPA for â‰¤ 6 months b) NPA for â‰¤ 12 months c) NPA for > 12 months d) NPA for > 3 years
+    a) NPA for ≤ 6 months b) NPA for ≤ 12 months c) NPA for > 12 months d) NPA for > 3 years
 
 ### Section B: Fill in the Blanks
 
@@ -1537,7 +1537,7 @@ The IBC waterfall (Section 53) gives first priority to insolvency resolution cos
 18. A cheque that has "_________" written between two parallel lines can only be paid to that specific bank.
 19. The UPI system was launched by the _________ in 2016.
 20. The _________ Act governs the credit information companies in India.
-21. The CBDC retail pilot (eâ‚¹-R) was launched in _________ 2022.
+21. The CBDC retail pilot (e₹-R) was launched in _________ 2022.
 22. The TDS rate applicable on cryptocurrency transactions is _________%.
 23. _________ is a distributed ledger technology where transactions are recorded in immutable blocks.
 24. Self-executing contracts with coded terms on blockchain are called _________.
@@ -1565,12 +1565,12 @@ The IBC waterfall (Section 53) gives first priority to insolvency resolution cos
 
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
-| 1 | b (1881) | 2 | b (Twice the cheque amount) | 3 | b (1999) | 4 | c (10 years) | 5 | d (â‚¹1 crore) |
+| 1 | b (1881) | 2 | b (Twice the cheque amount) | 3 | b (1999) | 4 | c (10 years) | 5 | d (₹1 crore) |
 | 6 | d (100%) | 7 | c (FIU-IND) | 8 | c (MRTP Act) | 9 | c (IGST) | 10 | c (NPA for > 12 months) |
 | 11 | Layering | 12 | NCLT | 13 | low-cost / current and savings | 14 | Provision Coverage Ratio | 15 | 40 |
 | 16 | 2009 | 17 | Capital | 18 | special crossing | 19 | NPCI | 20 | Credit Information Companies (Regulation) Act, 2005 / CICRA |
 | 21 | December | 22 | 1% | 23 | Blockchain | 24 | Smart contracts | 25 | Credit |
-| 26 | False (â‰¤ 90 days overdue) | 27 | True | 28 | True | 29 | False (330 days with extensions) | 30 | True |
+| 26 | False (≤ 90 days overdue) | 27 | True | 28 | True | 29 | False (330 days with extensions) | 30 | True |
 | 31 | False (promissory notes, bills of exchange, cheques) | 32 | False (very high CD ratio may indicate liquidity risk) | 33 | True | 34 | True | 35 | True |
 | 36 | False (government-issued, permissioned DLT) | 37 | True | 38 | False (safety and soundness, not just profitability) | 39 | True | 40 | True |
 

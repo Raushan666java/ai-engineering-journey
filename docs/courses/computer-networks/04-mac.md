@@ -1,6 +1,6 @@
-﻿# Chapter 4: Medium Access Control (MAC)
+# Chapter 4: Medium Access Control (MAC)
 
-> **Prerequisites:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) â€” Framing and error control | **Next:** [Chapter 5: Ethernet & Switching](./05-ethernet-switching.md) â€” From MAC protocols to switched networks
+> **Prerequisites:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) — Framing and error control | **Next:** [Chapter 5: Ethernet & Switching](./05-ethernet-switching.md) — From MAC protocols to switched networks
 
 ## Learning Objectives
 
@@ -37,7 +37,7 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| ALOHA | Pure: 18.4% max throughput; Slotted: 36.8% | Vulnerable period is the fundamental limit â€” slotted halves it |
+| ALOHA | Pure: 18.4% max throughput; Slotted: 36.8% | Vulnerable period is the fundamental limit — slotted halves it |
 | CSMA | Sense before transmit improves efficiency | 1-persistent is greedy; non-persistent reduces collisions at cost of idle time |
 | CSMA/CD | Detect collisions during transmission | Binary exponential backoff adapts to load; minimum frame size ensures detection |
 | CSMA/CA | Virtual carrier sensing (NAV) for wireless | RTS/CTS mitigates hidden terminal problem |
@@ -136,16 +136,16 @@ The **Medium Access Control (MAC) sublayer** is the lower sublayer of the data l
 ### Real-World Analogy
 
 
-> **A conference room with one microphone.** Imagine 10 people in a meeting room with a single microphone. If two people speak at once, nobody understands anything. The MAC protocol is the **meeting chair's rules**: you raise your hand (carrier sense), the chair calls on you (collision-free), or you just speak and deal with interruptions (random access). The "vulnerable period" is the time between when you start speaking and when someone else also starts speaking â€” the longer this window, the more likely a "collision" (crosstalk).
+> **A conference room with one microphone.** Imagine 10 people in a meeting room with a single microphone. If two people speak at once, nobody understands anything. The MAC protocol is the **meeting chair's rules**: you raise your hand (carrier sense), the chair calls on you (collision-free), or you just speak and deal with interruptions (random access). The "vulnerable period" is the time between when you start speaking and when someone else also starts speaking — the longer this window, the more likely a "collision" (crosstalk).
 
 ### Responsibilities of the MAC Sublayer
 
 
-1. **Frame delimiting and synchronization** â€” Identify frame boundaries on the raw bit stream.
-2. **Addressing** â€” Assign and interpret 48-bit MAC addresses for source and destination.
-3. **Channel access control** â€” Decide which station transmits next on a shared medium.
-4. **Error detection** â€” CRC-32 frame check sequence in Ethernet.
-5. **Collision handling** â€” Detect collisions and schedule retransmissions.
+1. **Frame delimiting and synchronization** — Identify frame boundaries on the raw bit stream.
+2. **Addressing** — Assign and interpret 48-bit MAC addresses for source and destination.
+3. **Channel access control** — Decide which station transmits next on a shared medium.
+4. **Error detection** — CRC-32 frame check sequence in Ethernet.
+5. **Collision handling** — Detect collisions and schedule retransmissions.
 
 ### Classification of MAC Protocols
 
@@ -919,7 +919,7 @@ class CSMACDBackoffSimulator {
       if (Math.random() < 0.5) { // simplified: 50% channel success
         return { attempts, totalWaitUs: totalWait, success: true };
       }
-      // Collision â†’ exponential backoff
+      // Collision → exponential backoff
       const window = Math.min(Math.pow(2, i), 1024);
       const k = Math.floor(Math.random() * window);
       totalWait += k * CSMACDBackoffSimulator.SLOT_TIME_US;
@@ -1254,7 +1254,7 @@ class TokenPassingSimulator {
   simulate(rounds: number): void {
     for (let r = 0; r < rounds; r++) {
       if (!this.ringUp) {
-        console.log("Ring is down â€” cannot transmit");
+        console.log("Ring is down — cannot transmit");
         return;
       }
 
@@ -1272,12 +1272,12 @@ class TokenPassingSimulator {
           const dest = this.stations[destIdx];
           console.log(`  ${station.data[0]} -> ${dest.data[0]}: forwarding frame`);
           if (dest.id === station.id) {
-            console.log(`  Frame returned to sender â€” ${station.data[0]} removes it`);
+            console.log(`  Frame returned to sender — ${station.data[0]} removes it`);
             break;
           }
         }
       } else {
-        console.log(`  Station ${station.id} has no data â€” passes token`);
+        console.log(`  Station ${station.id} has no data — passes token`);
       }
 
       // Pass token to next station
@@ -1295,7 +1295,7 @@ class TokenPassingSimulator {
 
   recoverRing(): void {
     this.ringUp = true;
-    console.log("Ring recovered â€” monitoring station regenerated token");
+    console.log("Ring recovered — monitoring station regenerated token");
   }
 }
 
@@ -1873,12 +1873,12 @@ Bluetooth uses a **polling-based** approach: the master polls each slave, and th
 **Background:** A law firm's office used a 16 Mbps Token Ring network (IEEE 802.5) with 40 workstations. As the firm grew, complaints increased: "network slow" during morning logins, printer timeouts, and inability to support VoIP phones. IT measured peak utilization at 72 % of the 16 Mbps ring.
 
 **Challenges with Token Ring:**
-- **Deterministic but limited:** At 50 % load, average access delay = 40 stations Ã— (max frame tx time + token pass) â‰ˆ 40 Ã— 5 ms = 200 ms â€” too high for VoIP.
+- **Deterministic but limited:** At 50 % load, average access delay = 40 stations × (max frame tx time + token pass) ≈ 40 × 5 ms = 200 ms — too high for VoIP.
 - **Single point of failure:** A single station with a bad NIC could beacon and bring down the ring.
-- **Expensive hardware:** Token Ring switches cost 3Ã— equivalent Ethernet switches.
-- **Upgrade path:** Max speed was 100 Mbps (HSTR) â€” limited future growth.
+- **Expensive hardware:** Token Ring switches cost 3× equivalent Ethernet switches.
+- **Upgrade path:** Max speed was 100 Mbps (HSTR) — limited future growth.
 
-**Solution â€” Switched Ethernet Migration:**
+**Solution — Switched Ethernet Migration:**
 1. Replace MAUs (Multistation Access Units) with a 48-port Gigabit Ethernet switch
 2. Replace Token Ring NICs with Gigabit Ethernet NICs (Cat 6a cabling existing)
 3. Configure VLANs: voice VLAN for 10 VoIP phones, data VLAN for workstations
@@ -1893,7 +1893,7 @@ Bluetooth uses a **polling-based** approach: the master polls each slave, and th
 | Cost per port | $150 (Token Ring switch) | $25 (GigE switch) |
 | Failure impact | Single station could disable network | Isolated per port |
 
-**Lesson:** While Token Ring provides deterministic access, the cost, complexity, and limited bandwidth made switched Ethernet the clear winner. Modern switched Ethernet with full-duplex operation has no contention â€” each port is its own collision domain.
+**Lesson:** While Token Ring provides deterministic access, the cost, complexity, and limited bandwidth made switched Ethernet the clear winner. Modern switched Ethernet with full-duplex operation has no contention — each port is its own collision domain.
 
 ## Practical Takeaways
 
@@ -1901,10 +1901,10 @@ Bluetooth uses a **polling-based** approach: the master polls each slave, and th
 |----------|------------|
 | **ALOHA throughput** is fundamentally limited by vulnerable period | Pure: 18.4 %, Slotted: 36.8 %. Never use ALOHA for high-throughput links |
 | **Carrier sensing** dramatically improves channel utilization | CSMA always beats ALOHA because it avoids transmitting into a busy channel |
-| **Minimum frame size** is a physical constraint tied to propagation delay | $F_{min} \ge 2 \times T_{prop} \times R$ â€” increasing speed or distance requires larger minimum frames |
+| **Minimum frame size** is a physical constraint tied to propagation delay | $F_{min} \ge 2 \times T_{prop} \times R$ — increasing speed or distance requires larger minimum frames |
 | **Exponential backoff** is essential for stability | Without it, throughput collapses under load (Aloha stability problem) |
 | **CSMA/CA virtual carrier sensing** (NAV + RTS/CTS) solves hidden terminal problem | Always enable RTS/CTS above a threshold in WiFi for large frames |
-| **Switch vs hub** â€” always use switches | Each switch port is an isolated collision domain; hubs share one collision domain |
+| **Switch vs hub** — always use switches | Each switch port is an isolated collision domain; hubs share one collision domain |
 | **Token Passing** provides bounded delay but poor light-load performance | Best for industrial/real-time networks where determinism matters more than peak throughput |
 
 ## Summary
@@ -1934,17 +1934,17 @@ Ethernet, the dominant LAN technology, uses CSMA/CD with a 48-bit MAC address sp
 <details>
 <summary>Solution Hints</summary>
 
-1. A frame transmitted at time $t$ sees collisions from any frame starting in $[t - T_f, t + T_f]$ (where $T_f$ = frame time) â†’ vulnerable period = $2T_f$.
+1. A frame transmitted at time $t$ sees collisions from any frame starting in $[t - T_f, t + T_f]$ (where $T_f$ = frame time) → vulnerable period = $2T_f$.
 2. Max throughput = 36.8 % (1/e) at G = 1.0.
-3. All stations waiting for the busy channel to become idle immediately attempt transmission simultaneously â†’ guaranteed collision.
-4. After each collision, the backoff window doubles. Light load â†’ small windows â†’ quick retransmission. Heavy load â†’ large windows â†’ reduced collision rate.
-5. WiFi radios operate half-duplex â€” transmitting drowns out received signals, making collision detection impossible.
-6. NAV is a timer set by RTS/CTS frames that tells other stations how long to defer access â†’ virtual carrier sensing.
+3. All stations waiting for the busy channel to become idle immediately attempt transmission simultaneously → guaranteed collision.
+4. After each collision, the backoff window doubles. Light load → small windows → quick retransmission. Heavy load → large windows → reduced collision rate.
+5. WiFi radios operate half-duplex — transmitting drowns out received signals, making collision detection impossible.
+6. NAV is a timer set by RTS/CTS frames that tells other stations how long to defer access → virtual carrier sensing.
 7. RTS from sender reaches all stations in sender's range; CTS from receiver reaches all stations in receiver's range. Hidden terminals hear CTS and defer.
 8. Collision domain: segment where frames can collide. Broadcast domain: set of devices that receive each other's broadcast frames.
 9. Ethernet was simpler, cheaper, and scaled better (switched Ethernet eliminated collisions). Token Ring was more complex and had a single point of failure.
 10. FDMA: simple, no synchronization needed, but inflexible and wastes bandwidth on silent users. TDMA: efficient for bursty traffic, requires synchronization.
-11. CDMA assigns orthogonal spreading codes. Receiver correlates with desired code â€” other users' signals appear as noise.
+11. CDMA assigns orthogonal spreading codes. Receiver correlates with desired code — other users' signals appear as noise.
 12. Guard bands prevent adjacent-channel interference due to imperfect filters and frequency drift.
 </details>
 

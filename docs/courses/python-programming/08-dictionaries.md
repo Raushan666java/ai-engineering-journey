@@ -1,4 +1,4 @@
-﻿# Chapter 8: Dictionaries
+# Chapter 8: Dictionaries
 
 
 > **Previous:** [Tuples and Sets](./07-tuples-sets.md) | **Next:** [Functions](./09-functions.md)
@@ -105,8 +105,8 @@ print(zipped)   # {'x': 10, 'y': 20}
 d = {"a": 1, "b": 2, "c": 3}
 
 # Access
-print(d["a"])            # 1 â†’ raises KeyError if missing
-print(d.get("x", 0))     # 0 â†’ safe access with default
+print(d["a"])            # 1 → raises KeyError if missing
+print(d.get("x", 0))     # 0 → safe access with default
 print(d.get("a"))        # 1
 
 # Modification
@@ -121,7 +121,7 @@ d.pop("x", None)         # safe pop with default
 last = d.popitem()       # removes and returns (key, value) in LIFO order
 
 # Membership
-print("a" in d)          # True â†’ checks keys only
+print("a" in d)          # True → checks keys only
 print(1 in d)            # False
 
 # Length
@@ -189,7 +189,7 @@ print(with_tax)
 ```python
 from collections import defaultdict
 
-# List factory â†’ group items
+# List factory → group items
 words = ["apple", "banana", "apricot", "blueberry", "cherry"]
 by_first = defaultdict(list)
 for word in words:
@@ -197,14 +197,14 @@ for word in words:
 print(dict(by_first))
 # {'a': ['apple', 'apricot'], 'b': ['banana', 'blueberry'], 'c': ['cherry']}
 
-# Int factory â†’ counting
+# Int factory → counting
 counter = defaultdict(int)
 for c in "hello world":
     counter[c] += 1
 print(dict(counter))
 # {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
 
-# Set factory â†’ collecting unique values
+# Set factory → collecting unique values
 adjacency = defaultdict(set)
 edges = [(1, 2), (1, 3), (2, 3), (2, 4)]
 for a, b in edges:
@@ -363,7 +363,7 @@ JSON keys must be strings. Python dict keys are automatically converted:
 
 ```python
 d = {1: "one", True: "true"}
-print(json.dumps(d))   # {"1": "true"}  â†’ True is a subclass of int
+print(json.dumps(d))   # {"1": "true"}  → True is a subclass of int
 ```
 
 ## 8.11 Memory and Performance
@@ -621,7 +621,7 @@ class LRUCache:
 ```
 ```typescript
 // Chapter 8: TypeScript Dictionary/Map Equivalents
-// Python: dict literal â†’ TypeScript: object or Map
+// Python: dict literal → TypeScript: object or Map
 const user: Record<string, string | number> = {
   name: "Alice",
   email: "alice@example.com",
@@ -629,30 +629,30 @@ const user: Record<string, string | number> = {
 };
 // Equivalent Python: user = {"name": "Alice", "email": "alice@example.com", "age": 30}
 
-// Python: d[key] â†’ TypeScript: bracket or dot notation
+// Python: d[key] → TypeScript: bracket or dot notation
 console.log(user["name"]);  // "Alice"
 console.log(user.name);     // "Alice" (if key is a valid identifier)
 
-// Python: d.get(key, default) â†’ TypeScript: ?? operator
+// Python: d.get(key, default) → TypeScript: ?? operator
 const city: string = (user.city as string) ?? "Unknown";
 // Equivalent Python: user.get("city", "Unknown")
 
-// Python: key in d â†’ TypeScript: "key" in obj
+// Python: key in d → TypeScript: "key" in obj
 console.log("name" in user);  // true
 
-// Python: d.keys() / d.values() / d.items() â†’ TypeScript: Object.keys/values/entries
+// Python: d.keys() / d.values() / d.items() → TypeScript: Object.keys/values/entries
 console.log(Object.keys(user));    // ["name", "email", "age"]
 console.log(Object.values(user));  // ["Alice", "alice@example.com", 30]
 console.log(Object.entries(user)); // [["name","Alice"],["email","alice@example.com"],["age",30]]
 
-// Python: dict comprehension â†’ TypeScript: Object.fromEntries + map
+// Python: dict comprehension → TypeScript: Object.fromEntries + map
 const keys: string[] = ["a", "b", "c"];
 const dict: Record<string, number> = Object.fromEntries(
   keys.map((k, i) => [k, i])
 );
 console.log(dict);  // {a: 0, b: 1, c: 2}
 
-// Python: defaultdict(list) â†’ TypeScript: manual or Map with default
+// Python: defaultdict(list) → TypeScript: manual or Map with default
 const groups: Map<string, number[]> = new Map();
 const addToGroup = (key: string, value: number): void => {
   if (!groups.has(key)) groups.set(key, []);
@@ -661,7 +661,7 @@ const addToGroup = (key: string, value: number): void => {
 addToGroup("even", 2);
 addToGroup("odd", 1);
 
-// Python: Counter â†’ TypeScript: manual reduce
+// Python: Counter → TypeScript: manual reduce
 const items: string[] = ["a", "b", "a", "c", "a", "b"];
 const counter: Record<string, number> = items.reduce((acc, item) => {
   acc[item] = (acc[item] ?? 0) + 1;
@@ -673,14 +673,14 @@ console.log(counter);  // {a: 3, b: 2, c: 1}
 ### TypeScript Map & Advanced Dictionary Patterns
 
 ```typescript
-// Python: dict merge (|) â†’ TypeScript: spread
+// Python: dict merge (|) → TypeScript: spread
 const defaults: Record<string, number> = { timeout: 30, retries: 3 };
 const overrides: Record<string, number> = { timeout: 60 };
 const config = { ...defaults, ...overrides };
 console.log(config);  // { timeout: 60, retries: 3 }
 // Python: {**defaults, **overrides} or defaults | overrides
 
-// Python: defaultdict(int) â†’ TypeScript: Map with default
+// Python: defaultdict(int) → TypeScript: Map with default
 function defaultDict<K, V>(factory: () => V): Map<K, V> {
   const map = new Map<K, V>();
   return new Proxy(map as any, {
@@ -696,7 +696,7 @@ function defaultDict<K, V>(factory: () => V): Map<K, V> {
   }) as Map<K, V>;
 }
 
-// Python: Counter.most_common() â†’ TypeScript
+// Python: Counter.most_common() → TypeScript
 function mostCommon<T>(items: T[], n: number): [T, number][] {
   const counts = new Map<T, number>();
   for (const item of items) {
@@ -716,7 +716,7 @@ for (let i = 1; i <= 5; i++) {
 }
 console.log(squares2);  // {2: 4, 4: 16}
 
-// Python: deep_merge â†’ TypeScript: recursive merge
+// Python: deep_merge → TypeScript: recursive merge
 function deepMerge<T extends Record<string, any>>(a: T, b: Partial<T>): T {
   const result = { ...a };
   for (const key of Object.keys(b)) {
@@ -733,14 +733,14 @@ function deepMerge<T extends Record<string, any>>(a: T, b: Partial<T>): T {
 ### TypeScript Dictionary Performance & Edge Cases
 
 ```typescript
-// Python: dict.get with sentinel â†’ TypeScript: Map.get with undefined
+// Python: dict.get with sentinel → TypeScript: Map.get with undefined
 const phoneBook = new Map<string, string>([
   ["Alice", "555-0100"],
   ["Bob", "555-0101"],
 ]);
 console.log(phoneBook.get("Charlie") ?? "Not found");  // "Not found"
 
-// Python: dict.setdefault â†’ TypeScript: Map custom get-or-set
+// Python: dict.setdefault → TypeScript: Map custom get-or-set
 function getOrSet<K, V>(map: Map<K, V>, key: K, factory: () => V): V {
   if (!map.has(key)) map.set(key, factory());
   return map.get(key)!;
@@ -756,12 +756,12 @@ for (const [k, v] of ordered) {
   console.log(k, v);  // first 1, second 2, third 3
 }
 
-// Python: dict.fromkeys â†’ TypeScript: Object.fromEntries
+// Python: dict.fromkeys → TypeScript: Object.fromEntries
 const keys2 = ["x", "y", "z"];
 const fromKeys = Object.fromEntries(keys2.map((k) => [k, 0]));
 console.log(fromKeys);  // {x: 0, y: 0, z: 0}
 
-// Python: nested dict get â†’ TypeScript: optional chaining
+// Python: nested dict get → TypeScript: optional chaining
 interface DeepConfig {
   database?: { connection?: { host?: string; port?: number } };
 }
@@ -769,7 +769,7 @@ const cfg: DeepConfig = {};
 const host = cfg.database?.connection?.host ?? "localhost";
 // Python: cfg.get("database", {}).get("connection", {}).get("host", "localhost")
 
-// Python: dict popitem â†’ TypeScript: Map iteration + delete
+// Python: dict popitem → TypeScript: Map iteration + delete
 function popFirst<K, V>(map: Map<K, V>): [K, V] | undefined {
   const entry = map.entries().next().value;
   if (entry) map.delete(entry[0]);
@@ -866,34 +866,34 @@ console.log(dd.entries()); // [["a", [1,2,3]], ["b", [4]]]
 // === Python dict methods mapped to TypeScript ===
 const pyDict = { name: "Alice", age: 30, city: "Paris" };
 
-// Python: d.keys() â†’ Object.keys()
+// Python: d.keys() → Object.keys()
 console.log(Object.keys(pyDict));     // ["name", "age", "city"]
-// Python: d.values() â†’ Object.values()
+// Python: d.values() → Object.values()
 console.log(Object.values(pyDict));   // ["Alice", 30, "Paris"]
-// Python: d.items() â†’ Object.entries()
+// Python: d.items() → Object.entries()
 console.log(Object.entries(pyDict));  // [["name","Alice"],["age",30],["city","Paris"]]
 
-// Python: d.get(k, default) â†’ ?? or ||
+// Python: d.get(k, default) → ?? or ||
 const score = { alice: 95, bob: 87 };
 console.log(score.alice ?? 0);        // 95
 console.log(score.charlie ?? 0);      // 0
 
-// Python: d.update() â†’ Object.assign()
+// Python: d.update() → Object.assign()
 const defaults = { theme: "light", lang: "en" };
 const userPrefs = { theme: "dark" };
 const merged = Object.assign({}, defaults, userPrefs);
 console.log(merged);                  // { theme: "dark", lang: "en" }
 
-// Python: dict comprehension â†’ Object.fromEntries()
+// Python: dict comprehension → Object.fromEntries()
 const nums = [1, 2, 3, 4, 5];
 const squares = Object.fromEntries(nums.map(n => [n, n * n]));
 console.log(squares);                 // {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
-// Python: dict.pop(k) â†’ delete + rest
+// Python: dict.pop(k) → delete + rest
 const { age: _, ...rest } = pyDict;
 console.log(rest);                    // { name: "Alice", city: "Paris" }
 
-// Python: dict.setdefault â†’ custom helper
+// Python: dict.setdefault → custom helper
 function setDefault<K, V>(map: Map<K, V>, key: K, factory: () => V): V {
   if (!map.has(key)) map.set(key, factory());
   return map.get(key)!;

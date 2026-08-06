@@ -1,4 +1,4 @@
-﻿# Chapter 15: CDN, DNS, and Edge Computing
+# Chapter 15: CDN, DNS, and Edge Computing
 > **Previous:** [14 Distributed Data Structures](./14-distributed-data-structures.md) | **Next:** [16 Api Gateways Cqrs](./16-api-gateways-cqrs.md)
 
 ---
@@ -118,7 +118,7 @@ Client (stub resolver)
 ```
 
 **Step-by-step**:
-1. Application calls `getaddrinfo("api.example.com", ...)` â€” the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
+1. Application calls `getaddrinfo("api.example.com", ...)` — the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
 2. Recursive resolver checks its cache; on miss, sends query to a root server (built-in root hints file)
 3. Root server responds with NS records for .com TLD, plus glue A records for those NS IPs
 4. Resolver queries .com TLD server, which returns NS records for example.com
@@ -138,7 +138,7 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 **OS cache (stub resolver cache)**: Windows caches positive results for 86400s (1 day) by default, negative results for 300s (5 min). Linux glibc nscd or systemd-resolved provides nameserver caching. Accessible via `ipconfig /displaydns` on Windows.
 
-**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load â€” problematic for fast failover.
+**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load — problematic for fast failover.
 
 **Negative caching**: NXDOMAIN results (domain doesn't exist) and NODATA (domain exists but record type missing) are cached per RFC 2308. SOA minimum TTL field controls negative cache duration, typically 300-3600 seconds.
 
@@ -165,12 +165,12 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 | SRV   | Service location                  | priority weight port target            |
 | SOA   | Start of authority                | Primary NS, admin email, serial, refresh, retry, expire, minimum |
 
-**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME â€” use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
+**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME — use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
 
 ### 5. DNS-Based Load Balancing
 
 
-**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless â€” does not consider server health or load. If one server fails, clients with cached results still connect to it.
+**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless — does not consider server health or load. If one server fails, clients with cached results still connect to it.
 
 ```
 api.example.com  ?  10.0.0.1 (TTL=60)
@@ -178,7 +178,7 @@ api.example.com  ?  10.0.0.1 (TTL=60)
                    10.0.0.3 (TTL=60)
 ```
 
-**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3Ã— the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
+**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3× the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
 
 **Geo-based DNS**: Return different IPs based on the resolver's geographic location (GeoIP database). Direct US users to us-east servers, EU users to eu-west. Imprecise because resolver location may differ from client location (especially with public resolvers like 8.8.8.8).
 
@@ -263,7 +263,7 @@ Key parameters: `w` (width), `h` (height), `q` (quality), `f` (format), `fit` (c
 ### 11. Origin Shielding
 
 
-Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs â€” a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
+Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs — a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
 
 ```
 User ? Edge PoP (miss) ? Shield PoP (miss) ? Origin
@@ -294,7 +294,7 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 **Lambda@Edge**: AWS Lambda functions triggered by CloudFront events (viewer request, origin request, viewer response, origin response). Use cases: rewrite URLs, A/B testing, authentication (JWT validation at edge), header normalization, redirects. Execution limited to 5 seconds, 128 MB, Node.js/Python.
 
-**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100Âµs processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
+**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100µs processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
 
 **EdgeKV**: Distributed key-value storage at edge. Cloudflare Workers KV (eventually consistent, 1s-60s propagation), AWS EdgeKV (via Lambda@Edge + DynamoDB global tables). Use cases: feature flags, configuration, A/B test assignments, redirect maps, JWT public keys.
 
@@ -389,7 +389,7 @@ async function handleRequest(request) {
 }
 ```
 
-This worker runs in 330+ locations globally. JWT verification completes in ~200Âµs per request, adding no perceptible latency.
+This worker runs in 330+ locations globally. JWT verification completes in ~200µs per request, adding no perceptible latency.
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -436,9 +436,9 @@ This worker runs in 330+ locations globally. JWT verification completes in ~200�
 |----------|-------------|
 | Use short TTLs (30-300s) for failover-critical records; long TTLs (86400s+) for static records | DNS-based leader election: 5s TTL. Static assets: 86400s TTL with content-hashed URLs for instant invalidation |
 | Cache-Control: s-maxage overrides max-age for CDNs; use no-cache for sensitive data | Set s-maxage=0 for authenticated API responses; s-maxage=86400 for public static assets |
-| Origin shielding prevents thundering herd â€” always enable for popular content | Configure a single shield region per origin; all edge misses route through the shield |
+| Origin shielding prevents thundering herd — always enable for popular content | Configure a single shield region per origin; all edge misses route through the shield |
 | Edge computing (Workers/Lambda@Edge) handles auth, rewrite, A/B testing at sub-ms overhead | Move JWT validation from origin to edge: validate token, inject user headers, forward to origin |
-| Anycast routing provides automatic DDoS absorption â€” traffic spreads across all PoPs | Advertise same IP from all PoPs via BGP; each PoP absorbs its share of attack traffic |
+| Anycast routing provides automatic DDoS absorption — traffic spreads across all PoPs | Advertise same IP from all PoPs via BGP; each PoP absorbs its share of attack traffic |
 | Image optimization at edge reduces bandwidth by 50-87% | Use on-the-fly AVIF/WebP conversion with quality negotiation via Accept header |
 | WAF + rate limiting at edge blocks attacks before they reach origin | Deploy OWASP Core Ruleset with anomaly scoring; rate-limit per IP at 100 req/min |
 
@@ -450,7 +450,7 @@ A video streaming service with 200 million monthly active users deploys content 
 
 The team redesigns the architecture in three phases. First, they migrate to anycast DNS (Cloudflare) so every user automatically reaches the nearest PoP. Second, they implement an origin shield: a single shield PoP in us-east-1 intercepts all cache misses. Third, they deploy edge workers (Cloudflare Workers) for request-level routing: each worker checks a latency map in EdgeKV, selects the optimal origin region, and sets a `x-region` header for geo-specific content. Cache hit ratio improves from 45% to 92%, P95 latency drops from 850ms to 45ms, and the 3 Tbps DDoS attack that would have saturated a single origin is now absorbed across 330+ PoPs with no user impact.
 
-The edge workers also handle A/B testing: 5% of users see a new UI variant, validated via JWT tokens at the edge before any origin request. Image thumbnails are resized on-the-fly from a single 4K source, saving 80% bandwidth compared to pre-generating 12 variants. The total infrastructure cost decreases by 40% because fewer origin servers are needed, even as traffic grows 3Ã— year-over-year.
+The edge workers also handle A/B testing: 5% of users see a new UI variant, validated via JWT tokens at the edge before any origin request. Image thumbnails are resized on-the-fly from a single 4K source, saving 80% bandwidth compared to pre-generating 12 variants. The total infrastructure cost decreases by 40% because fewer origin servers are needed, even as traffic grows 3× year-over-year.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
@@ -1000,7 +1000,7 @@ async function demoDNS() {
   const resolver = new DNSResolver();
   const result = await resolver.resolve('example.com', 'A');
   console.log(`Resolved to ${result.ip} in ${result.timeMs}ms`);
-  console.log(`Hops: ${result.hops.join(' â†’ ')}`);
+  console.log(`Hops: ${result.hops.join(' → ')}`);
   const cached = await resolver.resolve('example.com', 'A');
   console.log(`Cached result: ${cached.ip} (${cached.hops[0]}, ${cached.timeMs}ms)`);
 }
@@ -1178,7 +1178,7 @@ flowchart TB
     subgraph RESPONSE["Response Types"]
         A_REC["A Record<br/>93.184.216.34"]
         AAAA_REC["AAAA Record<br/>2606:2800:220:1:..."]
-        CNAME_REC["CNAME Record<br/>www â†’ example.com"]
+        CNAME_REC["CNAME Record<br/>www → example.com"]
         MX_REC["MX Record<br/>mail.example.com"]
     end
 
@@ -1327,7 +1327,7 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver â€” each delegation step is a query from resolver to nameserver
+- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver — each delegation step is a query from resolver to nameserver
 - DNS caching occurs at 4 layers (browser, OS, resolver, app) with TTL controlling refresh frequency
 - Round-robin DNS is simple but health-unaware; latency-based routing (Route53 LBR) is more sophisticated
 - Anycast routing (same IP from multiple locations via BGP) provides automatic DDoS absorption and latency reduction
@@ -1343,27 +1343,27 @@ export { Cache, Logger, computeHash, CacheEntry }
 ## Exercises
 
 ### Review Questions
-<details><summary>Solution</summary>1. (1) Stub resolver queries recursive resolver for mail.example.org. (2) Resolver queries root server â†’ referral to .org TLD. (3) Resolver queries .org TLD server â†’ referral to example.org authoritative NS. (4) Resolver queries example.org authoritative â†’ returns A record for mail.example.org (or CNAME + A). Each step: query type NS â†’ referral, final query type A â†’ answer. Total: 4 queries, ~80ms.
+<details><summary>Solution</summary>1. (1) Stub resolver queries recursive resolver for mail.example.org. (2) Resolver queries root server → referral to .org TLD. (3) Resolver queries .org TLD server → referral to example.org authoritative NS. (4) Resolver queries example.org authoritative → returns A record for mail.example.org (or CNAME + A). Each step: query type NS → referral, final query type A → answer. Total: 4 queries, ~80ms.
 2. CNAME is an alias that replaces the query name entirely. If other records exist at the same name, query resolution becomes ambiguous. Workarounds: ALIAS/ANAME record (DNS provider resolves at authoritative server), use a subdomain (www.example.com), or serve the apex from a web server that redirects to www.
 3. Round-robin returns IPs in order regardless of server health or geographic proximity. Anycast routes via BGP to the topologically nearest location. Round-robin produces uneven distribution when client resolvers are not uniformly distributed (e.g., 80% of traffic from Google's 8.8.8.8), or when servers have different capacities.
-4. (1) Edge receives request, checks cache â†’ MISS. (2) Forward to shield PoP â†’ MISS. (3) Shield fetches from origin. Origin returns 200 with Cache-Control: public, max-age=86400, ETag: "abc123". (4) Shield caches response. (5) Shield returns to edge. (6) Edge caches and serves user. Subsequent requests: edge HIT. After TTL expires: edge sends If-None-Match to shield â†’ 304 Not Modified â†’ serve cached content.
-5. V8 isolates are lighter than containers: startup in microseconds vs milliseconds, share the same OS process, memory isolation via V8 heap sandbox. Security: each isolate has no access to other isolates' memory. Performance: near-zero cold start, 50-100Âµs per request overhead. Limitation: no arbitrary system calls, limited to 128MB memory, 50ms CPU per request.</details>
+4. (1) Edge receives request, checks cache → MISS. (2) Forward to shield PoP → MISS. (3) Shield fetches from origin. Origin returns 200 with Cache-Control: public, max-age=86400, ETag: "abc123". (4) Shield caches response. (5) Shield returns to edge. (6) Edge caches and serves user. Subsequent requests: edge HIT. After TTL expires: edge sends If-None-Match to shield → 304 Not Modified → serve cached content.
+5. V8 isolates are lighter than containers: startup in microseconds vs milliseconds, share the same OS process, memory isolation via V8 heap sandbox. Security: each isolate has no access to other isolates' memory. Performance: near-zero cold start, 50-100µs per request overhead. Limitation: no arbitrary system calls, limited to 128MB memory, 50ms CPU per request.</details>
 
 ### Application Problems
-<details><summary>Solution</summary>1. First domain: 1 root + 1 TLD + 1 authoritative = 3 queries Ã— 20ms = 60ms. Remaining 7 domains: resolver has root/TLD cached â†’ 1 query each = 7 Ã— 20ms = 140ms. Total DNS: 200ms. Page load: 120 resources Ã— 50ms RTT (6 parallel connections) â‰ˆ 1s + 200ms DNS = 1.2s. DNS contribution: 200/1200 â‰ˆ 16.7%.
-2. Each PoP handles (attack + clean) / N PoPs. With 330 Cloudflare PoPs: (3500 Gbps) / 330 â‰ˆ 10.6 Gbps per PoP, within 100 Gbps uplink. With 4,150 Akamai PoPs: 3500/4150 â‰ˆ 0.84 Gbps per PoP. Minimum PoPs: ceil(3500/100) = 35 PoPs for Cloudflare; ceil(3500/100) = 35 for Akamai. Both exceed minimum.
+<details><summary>Solution</summary>1. First domain: 1 root + 1 TLD + 1 authoritative = 3 queries × 20ms = 60ms. Remaining 7 domains: resolver has root/TLD cached → 1 query each = 7 × 20ms = 140ms. Total DNS: 200ms. Page load: 120 resources × 50ms RTT (6 parallel connections) ≈ 1s + 200ms DNS = 1.2s. DNS contribution: 200/1200 ≈ 16.7%.
+2. Each PoP handles (attack + clean) / N PoPs. With 330 Cloudflare PoPs: (3500 Gbps) / 330 ≈ 10.6 Gbps per PoP, within 100 Gbps uplink. With 4,150 Akamai PoPs: 3500/4150 ≈ 0.84 Gbps per PoP. Minimum PoPs: ceil(3500/100) = 35 PoPs for Cloudflare; ceil(3500/100) = 35 for Akamai. Both exceed minimum.
 3. Assets with content hash in filename: Cache-Control: public, immutable, max-age=31536000 (1 year). HTML files (no hash): Cache-Control: public, max-age=0, must-revalidate. API responses: Cache-Control: public, max-age=60. Purge strategy: after deploy, purge all HTML and API cache keys (selective purge by cache tag), but not hashed assets (they have new filenames). Use surrogate-key headers to tag all HTML as "html" and all API as "api" for batch purge.
-4. (a) Without CDN: 10M Ã— 200KB = 2000 GB/day Ã— $0.09 = $180/day. (b) With 30% hit ratio: CDN serves 3M hits (600 GB Ã— $0.02 = $12) + origin serves 7M misses (1400 GB Ã— $0.09 = $126) = $138/day. (c) At 90% hit ratio: CDN 9M hits (1800 GB Ã— $0.02 = $36) + origin 1M misses (200 GB Ã— $0.09 = $18) = $54/day. Edge computing: 100K Ã— $0.0000001 = $0.01/day, negligible.</details>
+4. (a) Without CDN: 10M × 200KB = 2000 GB/day × $0.09 = $180/day. (b) With 30% hit ratio: CDN serves 3M hits (600 GB × $0.02 = $12) + origin serves 7M misses (1400 GB × $0.09 = $126) = $138/day. (c) At 90% hit ratio: CDN 9M hits (1800 GB × $0.02 = $36) + origin 1M misses (200 GB × $0.09 = $18) = $54/day. Edge computing: 100K × $0.0000001 = $0.01/day, negligible.</details>
 
 ### Challenge Problem
 <details><summary>Solution</summary>Design a global edge architecture for a multiplayer game:
 
-**DNS**: Use anycastDNS (Cloudflare) â€” all PoPs advertise the same IP. Players automatically reach the nearest PoP without geo-IP lookups. TTL = 30s for fast failover.
+**DNS**: Use anycastDNS (Cloudflare) — all PoPs advertise the same IP. Players automatically reach the nearest PoP without geo-IP lookups. TTL = 30s for fast failover.
 
 **CDN**: Pull zone for static assets (game clients hosted on S3 with CloudFront). Push zone for game patches (pre-deployed to all PoPs). Origin shield in us-west-2 and eu-west-1 for redundancy. Image optimization: on-the-fly WebP conversion for game screenshots.
 
-**Edge Compute**: Cloudflare Workers for JWT validation at every PoP (sub-ms overhead). Workers validate token against EdgeKV (stores JWKS keys, synced every 60s). Leaderboard reads use HLL sketches stored in EdgeKV â€” 12KB per leaderboard, merged globally every minute. Matchmaking state uses Durable Objects (strong consistency per game region, global via DO multi-region replication).
+**Edge Compute**: Cloudflare Workers for JWT validation at every PoP (sub-ms overhead). Workers validate token against EdgeKV (stores JWKS keys, synced every 60s). Leaderboard reads use HLL sketches stored in EdgeKV — 12KB per leaderboard, merged globally every minute. Matchmaking state uses Durable Objects (strong consistency per game region, global via DO multi-region replication).
 
 **DDoS Mitigation**: Layer 3/4: anycast absorption (each PoP handles its share). Layer 7: WAF (OWASP ruleset, rate limiting at 100 req/s per IP). Scrubbing: traffic over 100 Gbps per PoP triggers automatic BGP diversion to scrubbing centers. Game-specific: validate game protocol packets before forwarding to matchmaking services.
 
-**Bandwidth**: 50M DAU Ã— 100 requests/day Ã— 2KB avg API response = 10 TB/day. Static patches: 500MB per patch Ã— 10M updates/month = 5 TB/month. CDN egress: ~$0.02/GB Ã— 10 TB = $200/day. Total monthly: ~$6,000 + $2,000 edge compute = ~$8,000/month.</details>
+**Bandwidth**: 50M DAU × 100 requests/day × 2KB avg API response = 10 TB/day. Static patches: 500MB per patch × 10M updates/month = 5 TB/month. CDN egress: ~$0.02/GB × 10 TB = $200/day. Total monthly: ~$6,000 + $2,000 edge compute = ~$8,000/month.</details>

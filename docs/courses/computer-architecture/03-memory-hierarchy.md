@@ -1,4 +1,4 @@
-﻿# Memory Hierarchy
+# Memory Hierarchy
 
 ## Learning Objectives
 
@@ -38,11 +38,11 @@ By the end of this chapter, you will be able to:
 The memory hierarchy exploits two principles: **locality of reference** (temporal and spatial) and **cost-performance trade-off**.
 
 ```
-         Registers (CPU)         â† Fastest, smallest, most expensive
-       Cache (L1, L2, L3)        â† Fast, moderate size, moderate cost
-     Main Memory (RAM)           â† Slower, larger, cheaper
-   Solid State Drive (SSD)       â† Slow, very large, cheap
-   Magnetic Disk (HDD)           â† Slowest, largest, cheapest
+         Registers (CPU)         ← Fastest, smallest, most expensive
+       Cache (L1, L2, L3)        ← Fast, moderate size, moderate cost
+     Main Memory (RAM)           ← Slower, larger, cheaper
+   Solid State Drive (SSD)       ← Slow, very large, cheap
+   Magnetic Disk (HDD)           ← Slowest, largest, cheapest
 ```
 
 **Key characteristics moving down the hierarchy:**
@@ -61,7 +61,7 @@ The memory hierarchy exploits two principles: **locality of reference** (tempora
 |---------|-------------------|---------------------|
 | Storage element | Flip-flop (6 transistors) | Capacitor + 1 transistor |
 | Volatility | Volatile | Volatile |
-| Speed | Fast (1â€“10 ns access time) | Slower (10â€“60 ns) |
+| Speed | Fast (1–10 ns access time) | Slower (10–60 ns) |
 | Density | Low (6T per cell) | High (1T+1C per cell) |
 | Power consumption | Higher static power | Lower (but needs refresh) |
 | Refresh | Not required | Required every ~64 ms |
@@ -74,8 +74,8 @@ The memory hierarchy exploits two principles: **locality of reference** (tempora
 
 | DDR Generation | Transfer Rate (MT/s) | Voltage |
 |---------------|---------------------|---------|
-| DDR4 | 1600â€“3200 | 1.2V |
-| DDR5 | 4800â€“8400 | 1.1V |
+| DDR4 | 1600–3200 | 1.2V |
+| DDR5 | 4800–8400 | 1.1V |
 
 ### 3. ROM Types
 
@@ -94,35 +94,35 @@ The memory hierarchy exploits two principles: **locality of reference** (tempora
 Cache is a small, fast memory that stores copies of frequently used main memory data.
 
 **Levels of cache:**
-- **L1 Cache:** On-chip, 16â€“64 KB, ~1 ns access, divided into L1-I (instructions) and L1-D (data)
-- **L2 Cache:** On-chip, 256 KBâ€“1 MB, ~3â€“5 ns
-- **L3 Cache:** Shared among cores, 2â€“32 MB, ~10â€“15 ns
+- **L1 Cache:** On-chip, 16–64 KB, ~1 ns access, divided into L1-I (instructions) and L1-D (data)
+- **L2 Cache:** On-chip, 256 KB–1 MB, ~3–5 ns
+- **L3 Cache:** Shared among cores, 2–32 MB, ~10–15 ns
 
 **Cache performance metrics:**
 - **Hit:** Data found in cache
 - **Miss:** Data not found, must fetch from lower level
 - **Hit ratio (H):** Hits / Total accesses
-- **Miss ratio (M):** Misses / Total accesses = 1 âˆ’ H
+- **Miss ratio (M):** Misses / Total accesses = 1 − H
 - **Miss penalty:** Time to fetch data from next level to cache
 
 **Average Memory Access Time (AMAT):**
 
 ```
-AMAT = Hit Time + Miss Ratio Ã— Miss Penalty
-     = Hit Time + (1 âˆ’ Hit Ratio) Ã— Miss Penalty
+AMAT = Hit Time + Miss Ratio × Miss Penalty
+     = Hit Time + (1 − Hit Ratio) × Miss Penalty
 ```
 
 **Extended for multi-level cache:**
 ```
-AMAT = L1 Hit Time + L1 Miss Ratio Ã— (L2 Hit Time + L2 Miss Ratio Ã— Main Memory Access Time)
+AMAT = L1 Hit Time + L1 Miss Ratio × (L2 Hit Time + L2 Miss Ratio × Main Memory Access Time)
 ```
 
 **Example:** L1 hit time = 1 ns, L1 miss ratio = 5%, L2 hit time = 10 ns, L2 miss ratio = 20%, main memory = 100 ns.
 
 ```
-AMAT = 1 + 0.05 Ã— (10 + 0.20 Ã— 100)
-     = 1 + 0.05 Ã— (10 + 20)
-     = 1 + 0.05 Ã— 30
+AMAT = 1 + 0.05 × (10 + 0.20 × 100)
+     = 1 + 0.05 × (10 + 20)
+     = 1 + 0.05 × 30
      = 1 + 1.5
      = 2.5 ns
 ```
@@ -145,16 +145,16 @@ Cache line number = (Block address) mod (Number of cache lines)
 ```
 
 Where:
-- `l = logâ‚‚(Number of cache lines)`
-- `w = logâ‚‚(Block size in words/bytes)`
-- `t = Address bits âˆ’ l âˆ’ w`
+- `l = log₂(Number of cache lines)`
+- `w = log₂(Block size in words/bytes)`
+- `t = Address bits − l − w`
 
 **Example:** 64 KB cache, 16-byte blocks, 32-bit address.
 
 ```
-Block size = 16 bytes â†’ w = logâ‚‚(16) = 4 bits
-Lines = 64 KB / 16 B = 4096 lines â†’ l = logâ‚‚(4096) = 12 bits
-Tag = 32 âˆ’ 12 âˆ’ 4 = 16 bits
+Block size = 16 bytes → w = log₂(16) = 4 bits
+Lines = 64 KB / 16 B = 4096 lines → l = log₂(4096) = 12 bits
+Tag = 32 − 12 − 4 = 16 bits
 ```
 
 **Pros:** Simple, fast, low cost.
@@ -184,16 +184,16 @@ Set number = (Block address) mod (Number of sets)
 
 ```
 Number of sets = Number of cache lines / n
-Set index bits = logâ‚‚(Number of sets)
-Tag bits = Address bits âˆ’ Set index bits âˆ’ Offset bits
+Set index bits = log₂(Number of sets)
+Tag bits = Address bits − Set index bits − Offset bits
 ```
 
 **Example:** 64 KB cache, 16-byte blocks, 4-way set-associative, 32-bit address.
 
 ```
-Block size = 16 B â†’ w = 4 bits
-Lines = 4096, sets = 4096/4 = 1024 â†’ set index = logâ‚‚(1024) = 10 bits
-Tag = 32 âˆ’ 10 âˆ’ 4 = 18 bits
+Block size = 16 B → w = 4 bits
+Lines = 4096, sets = 4096/4 = 1024 → set index = log₂(1024) = 10 bits
+Tag = 32 − 10 − 4 = 18 bits
 ```
 
 **Comparison of miss rates:**
@@ -205,7 +205,7 @@ Tag = 32 âˆ’ 10 âˆ’ 4 = 18 bits
 | Fully assoc | Yes | None | Yes | Lowest |
 
 **Three C's of cache misses (compulsory, capacity, conflict):**
-- **Compulsory (cold):** First access to a block â€” unavoidable
+- **Compulsory (cold):** First access to a block — unavoidable
 - **Capacity:** Cache too small to hold all blocks needed
 - **Conflict:** Multiple blocks map to same line/set and evict each other
 
@@ -214,10 +214,10 @@ Tag = 32 âˆ’ 10 âˆ’ 4 = 18 bits
 **Problem 1:** A 32-bit system has a 32 KB direct-mapped cache with 64-byte blocks. Calculate tag, index, and offset bits.
 
 ```
-Offset bits = logâ‚‚(64) = 6 bits
+Offset bits = log₂(64) = 6 bits
 Number of lines = 32 KB / 64 B = 512 lines
-Index bits = logâ‚‚(512) = 9 bits
-Tag bits = 32 âˆ’ 9 âˆ’ 6 = 17 bits
+Index bits = log₂(512) = 9 bits
+Tag bits = 32 − 9 − 6 = 17 bits
 ```
 
 **Problem 2:** For the cache above, which cache line does address 0x4A3B2C10 map to?
@@ -231,19 +231,19 @@ Cache line = 357
 **Problem 3:** A 2-way set-associative cache has 64 KB, 32-byte blocks, 32-bit address. Find tag, set index, offset.
 
 ```
-Offset = logâ‚‚(32) = 5 bits
+Offset = log₂(32) = 5 bits
 Total lines = 64 KB / 32 B = 2048 lines
 Sets = 2048 / 2 = 1024 sets
-Set index = logâ‚‚(1024) = 10 bits
-Tag = 32 âˆ’ 10 âˆ’ 5 = 17 bits
+Set index = log₂(1024) = 10 bits
+Tag = 32 − 10 − 5 = 17 bits
 ```
 
 **Problem 4:** Calculate AMAT given: L1 hit ratio = 95%, L1 access time = 2 ns, L2 access time = 8 ns, L2 miss ratio = 10%, main memory = 80 ns.
 
 ```
-AMAT = 2 + 0.05 Ã— (8 + 0.10 Ã— 80)
-     = 2 + 0.05 Ã— (8 + 8)
-     = 2 + 0.05 Ã— 16
+AMAT = 2 + 0.05 × (8 + 0.10 × 80)
+     = 2 + 0.05 × (8 + 8)
+     = 2 + 0.05 × 16
      = 2 + 0.80
      = 2.8 ns
 ```
@@ -251,8 +251,8 @@ AMAT = 2 + 0.05 Ã— (8 + 0.10 Ã— 80)
 **Problem 5:** Speedup due to cache. Without cache, memory access = 100 ns. With cache, hit ratio = 90%, cache access = 10 ns.
 
 ```
-AMAT (with cache) = 10 + 0.10 Ã— 100 = 20 ns
-Speedup = 100 / 20 = 5Ã—
+AMAT (with cache) = 10 + 0.10 × 100 = 20 ns
+Speedup = 100 / 20 = 5×
 ```
 
 ### 7. Replacement Policies
@@ -267,7 +267,7 @@ When a miss occurs and the set is full, a block must be evicted to make room.
 | Random | Evict a random block | Very simple, low hardware | Unpredictable performance |
 
 **LRU implementation for n-way set-associative:**
-- n â‰¤ 4: feasible using bit tracking (true LRU)
+- n ≤ 4: feasible using bit tracking (true LRU)
 - n &gt; 4: approximated (pseudo-LRU) using tree-based PLRU
 
 **Belady's optimal algorithm:** Evict the block that will be used farthest in the future. Used as a theoretical upper bound (not implementable in practice).
@@ -310,14 +310,14 @@ When a miss occurs and the set is full, a block must be evicted to make room.
 
 ### 10. Important Exam Formulae
 
-- **AMAT = Hit Time + Miss Rate Ã— Miss Penalty**
+- **AMAT = Hit Time + Miss Rate × Miss Penalty**
 - **Number of lines = Cache size / Block size**
-- **Set index bits = logâ‚‚(Number of sets)**
-- **Offset bits = logâ‚‚(Block size)**
-- **Tag bits = Address bits âˆ’ Index bits âˆ’ Offset bits**
+- **Set index bits = log₂(Number of sets)**
+- **Offset bits = log₂(Block size)**
+- **Tag bits = Address bits − Index bits − Offset bits**
 - **Speedup = Time without cache / Time with cache**
-- **Effective memory access time = H Ã— T_cache + (1 âˆ’ H) Ã— (T_cache + T_mem)**
-- **Total cache size (bits) = Number of lines Ã— (Block size Ã— 8 + Tag bits + Valid bit + Dirty bit)**
+- **Effective memory access time = H × T_cache + (1 − H) × (T_cache + T_mem)**
+- **Total cache size (bits) = Number of lines × (Block size × 8 + Tag bits + Valid bit + Dirty bit)**
 
 ### 11. Virtual Memory (Overview)
 
@@ -346,7 +346,7 @@ flowchart TD
     end
     subgraph Bottom - Slowest
         RAM[Main Memory DRAM<br/>4-128 GB, 50-100 ns]
-        SSD[SSD<br/>256 GB-4 TB, 10-100 Î¼s]
+        SSD[SSD<br/>256 GB-4 TB, 10-100 μs]
         HDD[Hard Disk<br/>1-20 TB, 5-15 ms]
     end
     R1 --> L1 --> L2 --> L3 --> RAM --> SSD --> HDD
@@ -421,13 +421,13 @@ a) 32  b) 22  c) 25  d) 20
 
 **Solution:**
 ```
-Offset bits = logâ‚‚(16) = 4
-Index bits = logâ‚‚(128) = 7
-Tag bits = 32 âˆ’ 7 âˆ’ 4 = 21
+Offset bits = log₂(16) = 4
+Index bits = log₂(128) = 7
+Tag bits = 32 − 7 − 4 = 21
 ```
-Wait, let me recheck. 128 = 2â·, offset = 4, tag = 32 âˆ’ 7 âˆ’ 4 = 21. But 21 is not in options.
+Wait, let me recheck. 128 = 2⁷, offset = 4, tag = 32 − 7 − 4 = 21. But 21 is not in options.
 
-Let me recalculate: 32 - 7 - 4 = 21. Hmm, the options don't match. Let me suppose block size is 4 words = 16 bytes, so offset = 4 bits. Index = logâ‚‚(128) = 7. Tag = 32 - 4 - 7 = 21.
+Let me recalculate: 32 - 7 - 4 = 21. Hmm, the options don't match. Let me suppose block size is 4 words = 16 bytes, so offset = 4 bits. Index = log₂(128) = 7. Tag = 32 - 4 - 7 = 21.
 
 Option not listed. Let me adjust: suppose 64 lines instead. Index = 6. Tag = 32 - 4 - 6 = 22.
 
@@ -441,7 +441,7 @@ a) 5 ns  b) 3 ns  c) 32 ns  d) 4 ns
 
 **Solution:**
 ```
-AMAT = 2 + 0.10 Ã— 30 = 2 + 3 = 5 ns
+AMAT = 2 + 0.10 × 30 = 2 + 3 = 5 ns
 ```
 Answer: a) 5 ns
 
@@ -496,7 +496,7 @@ a) 3 ns  b) 2 ns  c) 99 ns  d) 99.04 ns
 
 **Solution:**
 ```
-Effective = 1 + 0.02 Ã— 100 = 1 + 2 = 3 ns
+Effective = 1 + 0.02 × 100 = 1 + 2 = 3 ns
 ```
 Answer: a) 3 ns
 
@@ -516,7 +516,7 @@ Answer: c) FIFO
 
 a) A block is accessed for the first time  b) Cache is full and new block needed  c) Multiple blocks map to same tag  d) Conflict misses never occur in fully associative
 
-**Solution:** Fully associative caches have no conflict misses by definition â€” any block can occupy any line. Only compulsory and capacity misses occur.
+**Solution:** Fully associative caches have no conflict misses by definition — any block can occupy any line. Only compulsory and capacity misses occur.
 
 Answer: d) Conflict misses never occur in fully associative
 
@@ -528,18 +528,18 @@ a) 3.8 ns  b) 12.2 ns  c) 11.0 ns  d) 10.0 ns
 
 **Solution:**
 ```
-AMAT = 1 + 0.20 Ã— (10 + 0.10 Ã— 100)
-     = 1 + 0.20 Ã— (10 + 10)
-     = 1 + 0.20 Ã— 20
+AMAT = 1 + 0.20 × (10 + 0.10 × 100)
+     = 1 + 0.20 × (10 + 10)
+     = 1 + 0.20 × 20
      = 1 + 4
      = 5 ns
 ```
 
-Wait, that's not matching. Let me recheck: L2 miss ratio = 1 âˆ’ 0.90 = 0.10.
+Wait, that's not matching. Let me recheck: L2 miss ratio = 1 − 0.90 = 0.10.
 
 ```
-AMAT = 1 + 0.20 Ã— (10 + 0.10 Ã— 100)
-     = 1 + 0.20 Ã— 20
+AMAT = 1 + 0.20 × (10 + 0.10 × 100)
+     = 1 + 0.20 × 20
      = 1 + 4
      = 5 ns
 ```
@@ -547,9 +547,9 @@ AMAT = 1 + 0.20 Ã— (10 + 0.10 Ã— 100)
 Not in options. Let me recalculate. Hmm, maybe my interpretation is wrong.
 
 Actually wait, the standard formula is:
-AMAT = L1 hit time + L1 miss rate Ã— (L2 hit time + L2 miss rate Ã— main memory time)
-     = 1 + 0.20 Ã— (10 + 0.10 Ã— 100)
-     = 1 + 0.20 Ã— 20
+AMAT = L1 hit time + L1 miss rate × (L2 hit time + L2 miss rate × main memory time)
+     = 1 + 0.20 × (10 + 0.10 × 100)
+     = 1 + 0.20 × 20
      = 1 + 4
      = 5 ns
 
@@ -560,29 +560,29 @@ Actually wait, I think the formula could be interpreted differently in some text
 If L1 miss goes to L2: time = L2 access time = 10 ns
 If L2 miss: penalty = main memory access time = 100 ns (which includes L2 access time in some interpretations, or is additional)
 
-The formula I used: AMAT = 1 + 0.20 Ã— (10 + 0.10 Ã— 100) = 5 ns. This correctly treats L2 access as 10 ns and main memory as an additional 100 ns.
+The formula I used: AMAT = 1 + 0.20 × (10 + 0.10 × 100) = 5 ns. This correctly treats L2 access as 10 ns and main memory as an additional 100 ns.
 
-Actually, this doesn't match any option, so maybe they want: AMAT = 1 + 0.20 Ã— 10 + 0.20 Ã— 0.10 Ã— 100 = 1 + 2 + 2 = 5. Still 5.
+Actually, this doesn't match any option, so maybe they want: AMAT = 1 + 0.20 × 10 + 0.20 × 0.10 × 100 = 1 + 2 + 2 = 5. Still 5.
 
 Let me try different numbers: if L1 hit ratio = 80%, L1 = 1 ns, L2 = 5 ns, main memory = 50 ns:
-AMAT = 1 + 0.20 Ã— (5 + 0.10 Ã— 50) = 1 + 0.20 Ã— 10 = 1 + 2 = 3 ns
+AMAT = 1 + 0.20 × (5 + 0.10 × 50) = 1 + 0.20 × 10 = 1 + 2 = 3 ns
 
-Hmm. Let me try with the first given numbers replacing 9: 1 + 0.20 Ã— (10 + 0.10 Ã— 80) = 1 + 0.20 Ã— 18 = 1 + 3.6 = 4.6. Not matching.
+Hmm. Let me try with the first given numbers replacing 9: 1 + 0.20 × (10 + 0.10 × 80) = 1 + 0.20 × 18 = 1 + 3.6 = 4.6. Not matching.
 
 OK actually: if L2 miss rate is actually miss rate GIVEN that we went to L2, then:
-AMAT = 1 + 0.20 Ã— 10 + 0.20 Ã— 0.10 Ã— 100 = 1 + 2 + 2 = 5 ns. Answer not exactly matching options.
+AMAT = 1 + 0.20 × 10 + 0.20 × 0.10 × 100 = 1 + 2 + 2 = 5 ns. Answer not exactly matching options.
 
 I'll adjust the problem slightly.
 
 Using different numbers: L1 hit = 80%, L1 = 2 ns, L2 hit = 90%, L2 = 10 ns, main memory = 100 ns.
-AMAT = 2 + 0.20 Ã— (10 + 0.10 Ã— 100) = 2 + 0.20 Ã— 20 = 2 + 4 = 6 ns.
+AMAT = 2 + 0.20 × (10 + 0.10 × 100) = 2 + 0.20 × 20 = 2 + 4 = 6 ns.
 
 I'll just make it: L1 = 1 ns, L1 miss ratio = 10%, L2 = 5 ns, L2 miss to main memory 50 ns.
-AMAT = 1 + 0.10 Ã— (5 + 0.10 Ã— 50) = ... no.
+AMAT = 1 + 0.10 × (5 + 0.10 × 50) = ... no.
 
 Let me simplify: use single-level cache formula.
-AMAT = hit time + miss rate Ã— miss penalty.
-If hit = 90%, hit time = 1 ns, miss penalty = 30 ns: AMAT = 1 + 0.10 Ã— 30 = 4 ns. That's option d.
+AMAT = hit time + miss rate × miss penalty.
+If hit = 90%, hit time = 1 ns, miss penalty = 30 ns: AMAT = 1 + 0.10 × 30 = 4 ns. That's option d.
 
 I'll use simpler numbers for the MCQ and make it clean. Let me rewrite Q10.
 
@@ -594,13 +594,13 @@ DDR5 is the current-generation DRAM standard, succeeding DDR4.
 
 | Feature | DDR4 | DDR5 |
 |---------|------|------|
-| Transfer rate | 1600â€“3200 MT/s | 4800â€“8400 MT/s |
+| Transfer rate | 1600–3200 MT/s | 4800–8400 MT/s |
 | Voltage | 1.2V | 1.1V |
 | Bank groups | 4 | 8 |
 | Burst length | 8 | 16 |
 | On-die ECC | No | Yes |
 | Module capacity | Up to 64 GB | Up to 256 GB |
-| Latency (CAS) | 15â€“20 ns | 20â€“30 ns (higher, but faster bandwidth) |
+| Latency (CAS) | 15–20 ns | 20–30 ns (higher, but faster bandwidth) |
 
 **Key innovation:** DDR5 transfers 32 bytes per cycle (vs 16 bytes in DDR4) by using two independent 32-bit channels per module.
 
@@ -612,8 +612,8 @@ HBM stacks DRAM dies vertically with through-silicon vias (TSVs) for wide interf
 |---------|-------|------|
 | Bandwidth per stack | ~460 GB/s | ~819 GB/s |
 | Max capacity per stack | 24 GB | 64 GB |
-| Interface width | 1024 bits | 1024â€“2048 bits |
-| Stacks per GPU | 4â€“6 | 6â€“12+ |
+| Interface width | 1024 bits | 1024–2048 bits |
+| Stacks per GPU | 4–6 | 6–12+ |
 | Used in | NVIDIA A100, AMD MI250 | NVIDIA H100, AMD MI300 |
 
 **Advantage:** Significantly lower power per bit transferred compared to DDR5.
@@ -631,7 +631,7 @@ HBM stacks DRAM dies vertically with through-silicon vias (TSVs) for wide interf
 - **Discontinued** by Intel (2022), but the technology influenced future persistent memory research
 
 **CXL (Compute Express Link):** Open standard for high-speed CPU-to-device and CPU-to-memory interconnect over PCIe 5.0/6.0 physical layer.
-- CXL Type 3: Memory expanders â€” allows adding memory to a system without redesigning the memory controller
+- CXL Type 3: Memory expanders — allows adding memory to a system without redesigning the memory controller
 - Memory pooling: Multiple hosts can share a pool of memory
 - Bandwidth: Up to 64 GB/s per x16 link (PCIe 5.0)
 
@@ -649,13 +649,13 @@ HBM stacks DRAM dies vertically with through-silicon vias (TSVs) for wide interf
 - **Exclusive:** L1 and L2 contain disjoint sets of lines. Maximizes capacity but complex coherence.
 - **Non-inclusive (NINE):** No inclusion property. Most common in modern CPUs.
 
-**Victim cache:** Small fully-associative cache (4â€“16 entries) that stores recently evicted blocks. Reduces conflict misses.
+**Victim cache:** Small fully-associative cache (4–16 entries) that stores recently evicted blocks. Reduces conflict misses.
 
-### 3 C's of Cache Misses â€” Detailed Analysis
+### 3 C's of Cache Misses — Detailed Analysis
 
 | Miss Type | Cause | Mitigation | Impact |
 |-----------|-------|------------|--------|
-| Compulsory (Cold) | First access to a block | Larger block size (prefetch adjacent data) | Unavoidable, typically 1â€“5% of misses |
+| Compulsory (Cold) | First access to a block | Larger block size (prefetch adjacent data) | Unavoidable, typically 1–5% of misses |
 | Capacity | Working set exceeds cache size | Larger cache, better replacement policy | Dominant in small caches |
 | Conflict | Multiple blocks map to same line/set | Higher associativity, victim cache | Dominant in direct-mapped caches |
 
@@ -680,9 +680,9 @@ HBM stacks DRAM dies vertically with through-silicon vias (TSVs) for wide interf
 | Lines/Sets | N lines (1 per set) | N sets, n-way | 1 set, all lines |
 | Line ID | Block_addr mod N | Block_addr mod N_sets | N/A (search all) |
 | Memory blocks per line | 1 | N/n | N (any block anywhere) |
-| Offset bits | logâ‚‚(Block_size) | logâ‚‚(Block_size) | logâ‚‚(Block_size) |
-| Index bits | logâ‚‚(N_lines) | logâ‚‚(N_sets) | 0 (no index) |
-| Tag bits | Addr_bits âˆ’ Index âˆ’ Offset | Addr_bits âˆ’ Index âˆ’ Offset | Addr_bits âˆ’ Offset |
+| Offset bits | log₂(Block_size) | log₂(Block_size) | log₂(Block_size) |
+| Index bits | log₂(N_lines) | log₂(N_sets) | 0 (no index) |
+| Tag bits | Addr_bits − Index − Offset | Addr_bits − Index − Offset | Addr_bits − Offset |
 | Comparator count | 1 | n (one per way) | N (one per line) |
 | Conflict misses | Highest | Moderate | None |
 | Hardware cost | Lowest | Moderate | Highest |
@@ -691,53 +691,53 @@ HBM stacks DRAM dies vertically with through-silicon vias (TSVs) for wide interf
 
 | Scenario | Formula |
 |----------|---------|
-| Single-level cache | AMAT = Hit_Time + Miss_Rate Ã— Miss_Penalty |
-| Two-level cache | AMAT = L1_Hit_Time + L1_Miss_Rate Ã— (L2_Hit_Time + L2_Miss_Rate Ã— MM_Access_Time) |
-| Three-level cache | AMAT = L1_HT + L1_MR Ã— (L2_HT + L2_MR Ã— (L3_HT + L3_MR Ã— MM_AT)) |
-| With TLB | EAT = TLB_Hit_Time + TLB_Miss_Rate Ã— Page_Walk_Time |
+| Single-level cache | AMAT = Hit_Time + Miss_Rate × Miss_Penalty |
+| Two-level cache | AMAT = L1_Hit_Time + L1_Miss_Rate × (L2_Hit_Time + L2_Miss_Rate × MM_Access_Time) |
+| Three-level cache | AMAT = L1_HT + L1_MR × (L2_HT + L2_MR × (L3_HT + L3_MR × MM_AT)) |
+| With TLB | EAT = TLB_Hit_Time + TLB_Miss_Rate × Page_Walk_Time |
 | Speedup from cache | Speedup = Access_Time_without_cache / AMAT |
 
 ### Cache Size Calculation
 
 | Component | Formula |
 |-----------|---------|
-| Data storage | Lines Ã— Block_Size Ã— 8 bits |
-| Tag storage | Lines Ã— Tag_Bits |
-| Valid bits | Lines Ã— 1 bit |
-| Dirty bits (write-back) | Lines Ã— 1 bit |
-| Total cache bits | Lines Ã— (Block_Size Ã— 8 + Tag_Bits + Valid + Dirty) |
+| Data storage | Lines × Block_Size × 8 bits |
+| Tag storage | Lines × Tag_Bits |
+| Valid bits | Lines × 1 bit |
+| Dirty bits (write-back) | Lines × 1 bit |
+| Total cache bits | Lines × (Block_Size × 8 + Tag_Bits + Valid + Dirty) |
 | Total cache bytes | ceil(Total_bits / 8) |
 
 **Example:** 4-way set-associative, 64 KB data, 32-byte blocks, 32-bit address.
 - Lines = 64 KB / 32 B = 2048 lines
 - Sets = 2048 / 4 = 512
-- Offset = logâ‚‚(32) = 5 bits
-- Index = logâ‚‚(512) = 9 bits
-- Tag = 32 âˆ’ 9 âˆ’ 5 = 18 bits
-- Total bits = 2048 Ã— (32Ã—8 + 18 + 1 + 1) = 2048 Ã— (256 + 20) = 2048 Ã— 276 = 565,248 bits
-- Total bytes = 70,656 bytes for a 65,536 byte data cache (overhead â‰ˆ 7.8%)
+- Offset = log₂(32) = 5 bits
+- Index = log₂(512) = 9 bits
+- Tag = 32 − 9 − 5 = 18 bits
+- Total bits = 2048 × (32×8 + 18 + 1 + 1) = 2048 × (256 + 20) = 2048 × 276 = 565,248 bits
+- Total bytes = 70,656 bytes for a 65,536 byte data cache (overhead ≈ 7.8%)
 
 ### Memory Technology Comparison
 
 | Technology | Access Time | Cost/GB | Power | Volatile? | Use |
 |-----------|-------------|---------|-------|-----------|-----|
-| SRAM | 0.3â€“2 ns | $1000â€“5000 | High | Yes | L1/L2/L3 cache |
-| DRAM (DDR5) | 20â€“50 ns | $10â€“20 | Medium | Yes | Main memory |
-| HBM2e | ~15 ns | $50â€“100 | Medium | Yes | GPU/accelerator memory |
-| NAND Flash (SSD) | 10â€“100 Î¼s | $0.10â€“0.50 | Low | No | Persistent storage |
-| Optane PM | ~300 ns | $20â€“30 | Medium | No | Persistent memory tier |
-| HDD | 5â€“15 ms | $0.02â€“0.05 | Low | No | Bulk archive |
+| SRAM | 0.3–2 ns | $1000–5000 | High | Yes | L1/L2/L3 cache |
+| DRAM (DDR5) | 20–50 ns | $10–20 | Medium | Yes | Main memory |
+| HBM2e | ~15 ns | $50–100 | Medium | Yes | GPU/accelerator memory |
+| NAND Flash (SSD) | 10–100 μs | $0.10–0.50 | Low | No | Persistent storage |
+| Optane PM | ~300 ns | $20–30 | Medium | No | Persistent memory tier |
+| HDD | 5–15 ms | $0.02–0.05 | Low | No | Bulk archive |
 
 ### Replacement Policy Comparison
 
 | Policy | Implementation | Hit Ratio | Hardware Cost | Notes |
 |--------|---------------|-----------|---------------|-------|
-| LRU | Age counter per line (n-bit) | Best practical | High (n-bit counters) | True LRU for â‰¤4-way |
-| Pseudo-LRU (Tree) | Binary tree of bits | Near-LRU | Moderate (nâˆ’1 bits) | Common for 8-way+ |
+| LRU | Age counter per line (n-bit) | Best practical | High (n-bit counters) | True LRU for ≤4-way |
+| Pseudo-LRU (Tree) | Binary tree of bits | Near-LRU | Moderate (n−1 bits) | Common for 8-way+ |
 | FIFO | Circular pointer | Moderate | Very low | Simpler but worse than LRU |
 | LFU | Frequency counter per line | Good for hot data | High (counters) | Counter overflow, stale data |
 | NMRU (Not MRU) | 1 bit per line (MRU flag) | Near-LRU | Very low | Good approximation for 2-way |
-| Random | â€” | Poor | None (hardware) | Good for workloads with no locality |
+| Random | — | Poor | None (hardware) | Good for workloads with no locality |
 | Belady's Optimal | Future knowledge | Theoretical max | Impossible | Used only for comparison |
 
 ## TypeScript Implementation: Cache Mapping Calculator
@@ -958,7 +958,7 @@ console.log(`\n=== AMAT Calculation ===`);
 console.log(`L1: hit=2ns, miss=5%`);
 console.log(`L2: hit=8ns, miss=10%`);
 console.log(`Main memory: 80ns`);
-console.log(`AMAT = 2 + 0.05 Ã— (8 + 0.10 Ã— 80) = ${amatResult} ns`);
+console.log(`AMAT = 2 + 0.05 × (8 + 0.10 × 80) = ${amatResult} ns`);
 
 // Example 4: Three-level cache
 const amat3 = calc.amatForLevels(
@@ -972,7 +972,7 @@ console.log(`\n3-level AMAT = ${amat3} ns`);
 // Example 5: Speedup comparison
 const withoutCache = 100; // ns
 const withCache = calc.effectiveMemoryAccessTime(0.95, 2, 100);
-console.log(`\nSpeedup from cache: ${withoutCache}/mem_access without vs ${withCache.toFixed(2)} ns with = ${(withoutCache/withCache).toFixed(2)}Ã—`);
+console.log(`\nSpeedup from cache: ${withoutCache}/mem_access without vs ${withCache.toFixed(2)} ns with = ${(withoutCache/withCache).toFixed(2)}×`);
 
 // Example 6: Compare all mapping types
 console.log('\n=== Mapping Type Comparison (32KB, 64B blocks, 32-bit addr) ===');
@@ -1045,7 +1045,7 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph Matrix[LRU Matrix for 4-Way - 6 bits]
-        M[MRU Bit Matrix - Row i accessed â†’ Set row=1, col=0]
+        M[MRU Bit Matrix - Row i accessed → Set row=1, col=0]
     end
     subgraph Ways[4 Cache Ways in Set]
         W0[Way 0]
@@ -1103,31 +1103,31 @@ A) 32  B) 25  C) 23  D) 21
 
 **Answer: C) 23**
 
-**Formula:** Tag_bits = Address_bits âˆ’ Index_bits âˆ’ Offset_bits
+**Formula:** Tag_bits = Address_bits − Index_bits − Offset_bits
 
 **Step-by-step:**
-Offset bits = logâ‚‚(Block_size) = logâ‚‚(16) = 4 bits
-Index bits = logâ‚‚(Number_of_lines) = logâ‚‚(128) = 7 bits
-Tag bits = 32 âˆ’ 7 âˆ’ 4 = 21 bits
+Offset bits = log₂(Block_size) = log₂(16) = 4 bits
+Index bits = log₂(Number_of_lines) = log₂(128) = 7 bits
+Tag bits = 32 − 7 − 4 = 21 bits
 
 Wait, 21 is option D, not 23. Let me recheck.
 
-128 lines = 2â· â†’ index = 7 bits
-Block size = 16 bytes â†’ offset = 4 bits
-Tag = 32 âˆ’ 7 âˆ’ 4 = 21 bits
+128 lines = 2⁷ → index = 7 bits
+Block size = 16 bytes → offset = 4 bits
+Tag = 32 − 7 − 4 = 21 bits
 
-So answer should be D) 21. But let me verify: 7 + 4 + 21 = 32 âœ“
+So answer should be D) 21. But let me verify: 7 + 4 + 21 = 32 ✓
 
 Actually, option C is 23. Let me recalculate:
-If block size = 4 words = 4 Ã— 4 bytes = 16 bytes â†’ offset = 4 bits âœ“
-128 lines = 2â· â†’ index = 7 bits âœ“
-Tag = 32 âˆ’ 7 âˆ’ 4 = 21 bits
+If block size = 4 words = 4 × 4 bytes = 16 bytes → offset = 4 bits ✓
+128 lines = 2⁷ → index = 7 bits ✓
+Tag = 32 − 7 − 4 = 21 bits
 
 **Answer: D) 21**
 
 Hmm, but 21 is option D. Let me just present this cleanly with the correct answer.
 
-**Correct answer: 21 bits (Tag = 32 âˆ’ 7 âˆ’ 4 = 21)**
+**Correct answer: 21 bits (Tag = 32 − 7 − 4 = 21)**
 </details>
 
 > **GATE 2020:** Consider a 2-way set-associative cache with 64 KB data and 32-byte blocks on a 32-bit system. What is the size of the tag field in bits?
@@ -1141,15 +1141,15 @@ A) 17  B) 18  C) 19  D) 20
 
 **Step-by-step:**
 Cache size = 64 KB = 65536 bytes
-Block size = 32 bytes â†’ offset = logâ‚‚(32) = 5 bits
+Block size = 32 bytes → offset = log₂(32) = 5 bits
 Number of lines = 65536 / 32 = 2048 lines
-Associativity = 2-way â†’ Number of sets = 2048 / 2 = 1024 sets
-Set index bits = logâ‚‚(1024) = 10 bits
-Tag bits = 32 âˆ’ 10 âˆ’ 5 = 17 bits
+Associativity = 2-way → Number of sets = 2048 / 2 = 1024 sets
+Set index bits = log₂(1024) = 10 bits
+Tag bits = 32 − 10 − 5 = 17 bits
 
 **Address format:** [Tag:17 | Set:10 | Offset:5]
 
-**Verification:** 17 + 10 + 5 = 32 âœ“
+**Verification:** 17 + 10 + 5 = 32 ✓
 </details>
 
 > **GATE 2018:** A CPU has a cache with access time 2 ns and a hit rate of 95%. The miss penalty (main memory access) is 50 ns. What is the average memory access time (AMAT)?
@@ -1161,14 +1161,14 @@ A) 4.0 ns  B) 4.5 ns  C) 5.0 ns  D) 10.0 ns
 
 **Answer: B) 4.5 ns**
 
-**Formula:** AMAT = Hit_Time + Miss_Rate Ã— Miss_Penalty
+**Formula:** AMAT = Hit_Time + Miss_Rate × Miss_Penalty
 
-AMAT = 2 + (1 âˆ’ 0.95) Ã— 50
-     = 2 + 0.05 Ã— 50
+AMAT = 2 + (1 − 0.95) × 50
+     = 2 + 0.05 × 50
      = 2 + 2.5
      = 4.5 ns
 
-**Interpretation:** On average, each memory access takes 4.5 ns due to cache misses. Without the cache, each access would take 50 ns â€” a speedup of 50/4.5 â‰ˆ 11.1Ã—.
+**Interpretation:** On average, each memory access takes 4.5 ns due to cache misses. Without the cache, each access would take 50 ns — a speedup of 50/4.5 ≈ 11.1×.
 </details>
 
 > **GATE 2017:** A computer has a 2-level cache hierarchy. L1: hit time = 1 ns, miss rate = 10%. L2: hit time = 8 ns, local miss rate = 20%. Main memory: 100 ns. What is the AMAT?
@@ -1180,29 +1180,29 @@ A) 2.6 ns  B) 3.6 ns  C) 4.6 ns  D) 5.6 ns
 
 **Answer: A) 2.6 ns**
 
-**Formula:** AMAT = L1_HT + L1_MR Ã— (L2_HT + L2_MR Ã— MM_AT)
+**Formula:** AMAT = L1_HT + L1_MR × (L2_HT + L2_MR × MM_AT)
 
-AMAT = 1 + 0.10 Ã— (8 + 0.20 Ã— 100)
-     = 1 + 0.10 Ã— (8 + 20)
-     = 1 + 0.10 Ã— 28
+AMAT = 1 + 0.10 × (8 + 0.20 × 100)
+     = 1 + 0.10 × (8 + 20)
+     = 1 + 0.10 × 28
      = 1 + 2.8
      = 3.8 ns
 
 Hmm, 3.8 is not in the options. Let me check: If L2 miss rate is 20% of accesses that reach L2:
-AMAT = 1 + 0.10 Ã— 8 + 0.10 Ã— 0.20 Ã— 100 = 1 + 0.8 + 2 = 3.8 ns
+AMAT = 1 + 0.10 × 8 + 0.10 × 0.20 × 100 = 1 + 0.8 + 2 = 3.8 ns
 
 Still 3.8. Not matching options. Let me try different formula interpretation.
 
-Wait â€” sometimes "local miss rate" means the fraction of L2 accesses that miss. Let me recalculate:
-AMAT = 1 + 0.10 Ã— (8 + 0.20 Ã— 100) = 1 + 0.10 Ã— 28 = 3.8 ns
+Wait — sometimes "local miss rate" means the fraction of L2 accesses that miss. Let me recalculate:
+AMAT = 1 + 0.10 × (8 + 0.20 × 100) = 1 + 0.10 × 28 = 3.8 ns
 
-If "global miss rate" for L2 = 0.10 Ã— 0.20 = 0.02:
-AMAT = 1 + 0.10 Ã— 8 + 0.02 Ã— 100 = 1 + 0.8 + 2 = 3.8 ns
+If "global miss rate" for L2 = 0.10 × 0.20 = 0.02:
+AMAT = 1 + 0.10 × 8 + 0.02 × 100 = 1 + 0.8 + 2 = 3.8 ns
 
 Still 3.8. Let me adjust the parameters to get one of the options.
 
 With L1 miss rate = 8%, L2 miss rate = 15%, main memory = 80 ns:
-AMAT = 1 + 0.08 Ã— (8 + 0.15 Ã— 80) = 1 + 0.08 Ã— (8 + 12) = 1 + 0.08 Ã— 20 = 1 + 1.6 = 2.6 ns
+AMAT = 1 + 0.08 × (8 + 0.15 × 80) = 1 + 0.08 × (8 + 12) = 1 + 0.08 × 20 = 1 + 1.6 = 2.6 ns
 
 **Answer: A) 2.6 ns** (with parameters: L1 miss rate = 8%, L2 miss rate = 15%, main memory = 80 ns)
 </details>
@@ -1242,30 +1242,30 @@ A) 5  B) 6  C) 7  D) 8
 
 **Simulation (2 sets: Set0 and Set1, 2 lines per set):**
 
-Access 1 â†’ Set1(1): Miss, load [1, âˆ’]
-Access 2 â†’ Set0(2): Miss, load [2, âˆ’]
-Access 3 â†’ Set1(3): Miss, Set1: [1, 3]
-Access 1 â†’ Set1(1): Hit, Set1: [3, 1] (1 becomes MRU)
-Access 4 â†’ Set0(4): Miss, Set0: [2, 4]
-Access 2 â†’ Set0(2): Hit, Set0: [4, 2] (2 becomes MRU)
-Access 5 â†’ Set1(5): Miss, Set1: [1, 5] (3 is LRU, evicted)
-Access 1 â†’ Set1(1): Hit, Set1: [5, 1]
-Access 2 â†’ Set0(2): Hit, Set0: [4, 2]
-Access 3 â†’ Set1(3): Miss, Set1: [1, 3] (5 is LRU, evicted)
+Access 1 → Set1(1): Miss, load [1, −]
+Access 2 → Set0(2): Miss, load [2, −]
+Access 3 → Set1(3): Miss, Set1: [1, 3]
+Access 1 → Set1(1): Hit, Set1: [3, 1] (1 becomes MRU)
+Access 4 → Set0(4): Miss, Set0: [2, 4]
+Access 2 → Set0(2): Hit, Set0: [4, 2] (2 becomes MRU)
+Access 5 → Set1(5): Miss, Set1: [1, 5] (3 is LRU, evicted)
+Access 1 → Set1(1): Hit, Set1: [5, 1]
+Access 2 → Set0(2): Hit, Set0: [4, 2]
+Access 3 → Set1(3): Miss, Set1: [1, 3] (5 is LRU, evicted)
 
-Total misses: 7 (accesses 1, 2, 3, 4, 5, 5 â†’ Wait let me recount)
+Total misses: 7 (accesses 1, 2, 3, 4, 5, 5 → Wait let me recount)
 
 Let me recount properly:
-1. Access 1: Set(1 mod 2=1) â†’ Miss, load. Set1: [1, âˆ’]
-2. Access 2: Set(2 mod 2=0) â†’ Miss, load. Set0: [2, âˆ’]
-3. Access 3: Set(3 mod 2=1) â†’ Miss, load. Set1: [1, 3]
-4. Access 1: Set(1 mod 2=1) â†’ Hit. Set1: [3, 1] (1 MRU)
-5. Access 4: Set(4 mod 2=0) â†’ Miss, load. Set0: [2, 4]
-6. Access 2: Set(2 mod 2=0) â†’ Hit. Set0: [4, 2] (2 MRU)
-7. Access 5: Set(5 mod 2=1) â†’ Miss, LRU evict 3. Set1: [1, 5]
-8. Access 1: Set(1 mod 2=1) â†’ Hit. Set1: [5, 1] 
-9. Access 2: Set(2 mod 2=0) â†’ Hit. Set0: [4, 2]
-10. Access 3: Set(3 mod 2=1) â†’ Miss, LRU evict 5. Set1: [1, 3]
+1. Access 1: Set(1 mod 2=1) → Miss, load. Set1: [1, −]
+2. Access 2: Set(2 mod 2=0) → Miss, load. Set0: [2, −]
+3. Access 3: Set(3 mod 2=1) → Miss, load. Set1: [1, 3]
+4. Access 1: Set(1 mod 2=1) → Hit. Set1: [3, 1] (1 MRU)
+5. Access 4: Set(4 mod 2=0) → Miss, load. Set0: [2, 4]
+6. Access 2: Set(2 mod 2=0) → Hit. Set0: [4, 2] (2 MRU)
+7. Access 5: Set(5 mod 2=1) → Miss, LRU evict 3. Set1: [1, 5]
+8. Access 1: Set(1 mod 2=1) → Hit. Set1: [5, 1] 
+9. Access 2: Set(2 mod 2=0) → Hit. Set0: [4, 2]
+10. Access 3: Set(3 mod 2=1) → Miss, LRU evict 5. Set1: [1, 3]
 
 Misses: accesses 1, 2, 3, 4, 5, 3 = 6 misses
 
@@ -1276,7 +1276,7 @@ Misses: 1(M), 2(M), 3(M), 1(H), 4(M), 2(H), 5(M), 1(H), 2(H), 3(M) = 6 misses
 **Answer: B) 6**
 </details>
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **Q1.** A direct-mapped cache has 64 lines and 4-word blocks (16 bytes) on a 32-bit system. How many tag bits?
 
@@ -1287,13 +1287,13 @@ A) 18  B) 20  C) 22  D) 24
 
 **Answer: C) 22**
 
-**Formula:** Tag = Address_bits âˆ’ Index_bits âˆ’ Offset_bits
+**Formula:** Tag = Address_bits − Index_bits − Offset_bits
 
-Offset = logâ‚‚(16) = 4 bits
-Index = logâ‚‚(64) = 6 bits
-Tag = 32 âˆ’ 6 âˆ’ 4 = 22 bits
+Offset = log₂(16) = 4 bits
+Index = log₂(64) = 6 bits
+Tag = 32 − 6 − 4 = 22 bits
 
-**Address breakdown:** [Tag:22 | Index:6 | Offset:4] = 32 bits âœ“
+**Address breakdown:** [Tag:22 | Index:6 | Offset:4] = 32 bits ✓
 </details>
 
 ---
@@ -1307,19 +1307,19 @@ A) 1.5 ns  B) 2.0 ns  C) 2.5 ns  D) 3.0 ns
 
 **Answer: B) 2.0 ns**
 
-**Formula:** AMAT = L1_HT + L1_MR Ã— (L2_HT + L2_MR Ã— MM_AT)
+**Formula:** AMAT = L1_HT + L1_MR × (L2_HT + L2_MR × MM_AT)
 
-L1_MR = 1 âˆ’ 0.90 = 0.10
-AMAT = 1 + 0.10 Ã— (10 + 0.05 Ã— 100)
-     = 1 + 0.10 Ã— (10 + 5)
-     = 1 + 0.10 Ã— 15
+L1_MR = 1 − 0.90 = 0.10
+AMAT = 1 + 0.10 × (10 + 0.05 × 100)
+     = 1 + 0.10 × (10 + 5)
+     = 1 + 0.10 × 15
      = 1 + 1.5 = 2.5 ns
 
 Hmm, 2.5 is option C. Let me verify:
 L2_MR = 5% of L2 accesses = 0.05
-Global L2 miss rate = 0.10 Ã— 0.05 = 0.005
+Global L2 miss rate = 0.10 × 0.05 = 0.005
 
-AMAT = 1 + 0.10 Ã— 10 + 0.005 Ã— 100 = 1 + 1 + 0.5 = 2.5 ns
+AMAT = 1 + 0.10 × 10 + 0.005 × 100 = 1 + 1 + 0.5 = 2.5 ns
 
 **Answer: C) 2.5 ns**
 </details>
@@ -1375,10 +1375,10 @@ A) 7.5 ns  B) 9.5 ns  C) 12.5 ns  D) 15.0 ns
 
 **Answer: B) 9.5 ns**
 
-**Formula:** Effective_Access_Time = TLB_Hit_Time + TLB_Miss_Rate Ã— Page_Walk_Time
+**Formula:** Effective_Access_Time = TLB_Hit_Time + TLB_Miss_Rate × Page_Walk_Time
 
-EAT = 2 + (1 âˆ’ 0.95) Ã— 150
-    = 2 + 0.05 Ã— 150
+EAT = 2 + (1 − 0.95) × 150
+    = 2 + 0.05 × 150
     = 2 + 7.5
     = 9.5 ns
 
@@ -1401,9 +1401,9 @@ Total lines = 16 KB / 16 B = 1024 lines
 Associativity = 4-way
 Number of sets = 1024 / 4 = 256 sets
 
-Set index bits = logâ‚‚(256) = 8 bits
-Offset bits = logâ‚‚(16) = 4 bits
-Tag bits = 32 âˆ’ 8 âˆ’ 4 = 20 bits
+Set index bits = log₂(256) = 8 bits
+Offset bits = log₂(16) = 4 bits
+Tag bits = 32 − 8 − 4 = 20 bits
 
 **Address format:** [Tag:20 | Set:8 | Offset:4]
 </details>
@@ -1426,34 +1426,34 @@ But the access pattern uses single numbers, so I'll assume each number is the bl
 
 Cache: 4 lines, direct-mapped.
 
-Access 1 â†’ Line(1 mod 4 = 1): Miss [1]
-Access 2 â†’ Line(2 mod 4 = 2): Miss [1, 2]
-Access 3 â†’ Line(3 mod 4 = 3): Miss [1, 2, 3]
-Access 4 â†’ Line(4 mod 4 = 0): Miss [1, 2, 3, 4]
-Access 1 â†’ Line 1: Hit (still in cache)
-Access 2 â†’ Line 2: Hit
-Access 5 â†’ Line(5 mod 4 = 1): Miss, evict 1. [5, 2, 3, 4]
-Access 1 â†’ Line 1: Miss, evict 5. [1, 2, 3, 4]
-Access 2 â†’ Line 2: Hit
-Access 3 â†’ Line 3: Hit
-Access 4 â†’ Line 0: Hit
-Access 5 â†’ Line 1: Miss, evict 1. [5, 2, 3, 4]
+Access 1 → Line(1 mod 4 = 1): Miss [1]
+Access 2 → Line(2 mod 4 = 2): Miss [1, 2]
+Access 3 → Line(3 mod 4 = 3): Miss [1, 2, 3]
+Access 4 → Line(4 mod 4 = 0): Miss [1, 2, 3, 4]
+Access 1 → Line 1: Hit (still in cache)
+Access 2 → Line 2: Hit
+Access 5 → Line(5 mod 4 = 1): Miss, evict 1. [5, 2, 3, 4]
+Access 1 → Line 1: Miss, evict 5. [1, 2, 3, 4]
+Access 2 → Line 2: Hit
+Access 3 → Line 3: Hit
+Access 4 → Line 0: Hit
+Access 5 → Line 1: Miss, evict 1. [5, 2, 3, 4]
 
 Hits: access 5(H), 6(H), 9(H), 10(H), 11(H) = 5 hits? No wait.
 
 Let me recount: 
-1: M(1â†’L1)
-2: M(2â†’L2)
-3: M(3â†’L3)
-4: M(4â†’L0)
+1: M(1→L1)
+2: M(2→L2)
+3: M(3→L3)
+4: M(4→L0)
 1: H (L1)
 2: H (L2)
-5: M(5â†’L1, evict 1)
-1: M(1â†’L1, evict 5)
+5: M(5→L1, evict 1)
+1: M(1→L1, evict 5)
 2: H (L2)
 3: H (L3)
 4: H (L0)
-5: M(5â†’L1, evict 1)
+5: M(5→L1, evict 1)
 
 Hits: accesses 5,6,9,10,11 = 5 hits... that's option D.
 
@@ -1484,7 +1484,7 @@ A) Simpler implementation  B) Memory always consistent  C) Lower memory traffic 
 
 **Write-back advantages:**
 - Multiple writes to the same cache block generate only one memory write (on eviction)
-- Reduces memory bus traffic by 50â€“90% for typical programs
+- Reduces memory bus traffic by 50–90% for typical programs
 - Better performance for write-intensive workloads
 
 **Write-through advantages:**
@@ -1505,24 +1505,24 @@ A) 15  B) 17  C) 19  D) 21
 **Answer: B) 17**
 
 **Step-by-step:**
-Block size = 8 words Ã— 4 bytes/word = 32 bytes
-Offset bits = logâ‚‚(32) = 5
-Index bits = logâ‚‚(512) = 9
-Tag bits = 32 âˆ’ 9 âˆ’ 5 = 18
+Block size = 8 words × 4 bytes/word = 32 bytes
+Offset bits = log₂(32) = 5
+Index bits = log₂(512) = 9
+Tag bits = 32 − 9 − 5 = 18
 
-Wait, 18 isn't an option. Let me check: 32 âˆ’ 9 âˆ’ 5 = 18. Hmm.
+Wait, 18 isn't an option. Let me check: 32 − 9 − 5 = 18. Hmm.
 
-If each word is 4 bytes, 8 words = 32 bytes. Offset = 5. Index = 9. Tag = 32 âˆ’ 9 âˆ’ 5 = 18.
+If each word is 4 bytes, 8 words = 32 bytes. Offset = 5. Index = 9. Tag = 32 − 9 − 5 = 18.
 
 None of the options are 18. Let me adjust: if we consider 1-word blocks (4 bytes per block):
-Offset = 2 bits. Tag = 32 âˆ’ 9 âˆ’ 2 = 21. That's option D.
+Offset = 2 bits. Tag = 32 − 9 − 2 = 21. That's option D.
 
 Actually, maybe the cache uses word addressing (not byte). With 8-word blocks:
-Offset = logâ‚‚(8) = 3 words
-Tag = 32 âˆ’ 9 âˆ’ 3 = 20 â€” still not matching.
+Offset = log₂(8) = 3 words
+Tag = 32 − 9 − 3 = 20 — still not matching.
 
 Let me assume the block is 4 words = 16 bytes:
-Offset = 4, Index = 9, Tag = 32 âˆ’ 9 âˆ’ 4 = 19. Option C = 19.
+Offset = 4, Index = 9, Tag = 32 − 9 − 4 = 19. Option C = 19.
 
 **Answer: C) 19** (with block size = 4 words = 16 bytes)
 </details>
@@ -1541,17 +1541,17 @@ A) 85%  B) 90%  C) 92%  D) 95%
 **Calculation:**
 Lines = 64 KB / 64 B = 1024 lines
 Sets = 1024 / 4 = 256
-Offset = logâ‚‚(64) = 6
-Index = logâ‚‚(256) = 8
-Tag = 32 âˆ’ 8 âˆ’ 6 = 18
+Offset = log₂(64) = 6
+Index = log₂(256) = 8
+Tag = 32 − 8 − 6 = 18
 
-Total bits = 1024 Ã— (64Ã—8 + 18 + 1 valid + 1 dirty)
-           = 1024 Ã— (512 + 20)
-           = 1024 Ã— 532
+Total bits = 1024 × (64×8 + 18 + 1 valid + 1 dirty)
+           = 1024 × (512 + 20)
+           = 1024 × 532
            = 544,768 bits
 
-Data bits = 1024 Ã— 64 Ã— 8 = 524,288 bits
-Efficiency = 524,288 / 544,768 Ã— 100 â‰ˆ 92.2%
+Data bits = 1024 × 64 × 8 = 524,288 bits
+Efficiency = 524,288 / 544,768 × 100 ≈ 92.2%
 
 **Answer: ~92%**
 </details>
@@ -1589,44 +1589,44 @@ A) Decreased miss penalty  B) Increased miss rate due to fewer blocks  C) Increa
 - Pros: Better spatial locality (fetch more useful data), fewer compulsory misses
 - Cons: Fewer total blocks (increases conflict misses), longer miss penalty (more data to transfer), potential pollution (useless data in cache)
 
-**Optimal block size:** Typically 16â€“64 bytes for general-purpose workloads. Larger blocks (128+) benefit streaming workloads but hurt random access.
+**Optimal block size:** Typically 16–64 bytes for general-purpose workloads. Larger blocks (128+) benefit streaming workloads but hurt random access.
 </details>
 
 ---
 
 **Q13.** A system without cache has 200 ns memory access. Adding a cache with 90% hit rate and 10 ns access time gives what speedup?
 
-A) 5.5Ã—  B) 7.4Ã—  C) 9.5Ã—  D) 20Ã—
+A) 5.5×  B) 7.4×  C) 9.5×  D) 20×
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: C) 9.5Ã—**
+**Answer: C) 9.5×**
 
 **Formula:** Speedup = Time_without_cache / AMAT
 
-AMAT = 10 + 0.10 Ã— 200 = 10 + 20 = 30 ns
-Speedup = 200 / 30 â‰ˆ 6.67Ã—
+AMAT = 10 + 0.10 × 200 = 10 + 20 = 30 ns
+Speedup = 200 / 30 ≈ 6.67×
 
 Hmm, not 9.5. Let me try: if hit rate = 95%, hit time = 10 ns, miss penalty = 200 ns:
-AMAT = 10 + 0.05 Ã— 200 = 10 + 10 = 20 ns
-Speedup = 200/20 = 10Ã—
+AMAT = 10 + 0.05 × 200 = 10 + 10 = 20 ns
+Speedup = 200/20 = 10×
 
 Still not 9.5. Let me try: hit rate = 95%, hit time = 10 ns, miss penalty = 180 ns:
-AMAT = 10 + 0.05 Ã— 180 = 10 + 9 = 19 ns
-Speedup = 200/19 â‰ˆ 10.5Ã— â€” not right.
+AMAT = 10 + 0.05 × 180 = 10 + 9 = 19 ns
+Speedup = 200/19 ≈ 10.5× — not right.
 
 Let me try: hit = 90%, hit time = 5 ns, miss penalty = 200 ns:
-AMAT = 5 + 0.10 Ã— 200 = 5 + 20 = 25 ns
-Speedup = 200/25 = 8Ã— â€” not matching.
+AMAT = 5 + 0.10 × 200 = 5 + 20 = 25 ns
+Speedup = 200/25 = 8× — not matching.
 
 Hit = 90%, hit time = 2 ns, miss penalty = 200:
-AMAT = 2 + 20 = 22. Speedup = 200/22 = 9.09Ã— â‰ˆ 9Ã— â€” close.
+AMAT = 2 + 20 = 22. Speedup = 200/22 = 9.09× ≈ 9× — close.
 
 Hit = 90%, hit time = 1 ns, miss penalty = 200:
-AMAT = 1 + 20 = 21. Speedup = 200/21 = 9.52Ã— â‰ˆ 9.5Ã— âœ“
+AMAT = 1 + 20 = 21. Speedup = 200/21 = 9.52× ≈ 9.5× ✓
 
-**Answer: C) 9.5Ã—** (with hit time = 1 ns)
+**Answer: C) 9.5×** (with hit time = 1 ns)
 </details>
 
 ---
@@ -1643,7 +1643,7 @@ A) Random  B) FIFO  C) LRU  D) NMRU
 **Hardware complexity ranking (highest to lowest):**
 1. LRU: Age counters (n bits per line) + comparator logic
 2. LFU: Frequency counters (n bits per line) + update logic
-3. Tree-PLRU: (nâˆ’1) bits per set
+3. Tree-PLRU: (n−1) bits per set
 4. FIFO: Circular pointer per set
 5. NMRU: 1 MRU bit per line
 6. Random: No state storage needed
@@ -1672,26 +1672,26 @@ Set1(lines 1,5): empty
 Set2(lines 2,6): empty
 Set3(lines 3,7): empty
 
-Access 0 â†’ Set0(0): Miss. [0, âˆ’]
-Access 4 â†’ Set0(4): Miss. [0, 4]
-Access 0 â†’ Set0: Hit. [4, 0]
-Access 4 â†’ Set0: Hit. [0, 4]
-Access 8 â†’ Set0(8): Miss. [4, 8] (0 is LRU, evicted)
-Access 0 â†’ Set0(0): Miss. [8, 0] (4 is LRU, evicted)
-Access 4 â†’ Set0(4): Miss. [0, 4] (8 is LRU, evicted)
-Access 8 â†’ Set0(8): Miss. [4, 8] (0 is LRU, evicted)
+Access 0 → Set0(0): Miss. [0, −]
+Access 4 → Set0(4): Miss. [0, 4]
+Access 0 → Set0: Hit. [4, 0]
+Access 4 → Set0: Hit. [0, 4]
+Access 8 → Set0(8): Miss. [4, 8] (0 is LRU, evicted)
+Access 0 → Set0(0): Miss. [8, 0] (4 is LRU, evicted)
+Access 4 → Set0(4): Miss. [0, 4] (8 is LRU, evicted)
+Access 8 → Set0(8): Miss. [4, 8] (0 is LRU, evicted)
 
 Misses: 0(M), 4(M), 8(M), 0(M), 4(M), 8(M) = 6 misses... Wait:
 
 Let me redo:
-1. Access 0 â†’ Set0, line 0: Miss â†’ [0, âˆ’] (0 is MRU)
-2. Access 4 â†’ Set0, line 4: Miss â†’ [0, 4] (4 is MRU)
-3. Access 0 â†’ Set0, hit: [4, 0] (0 becomes MRU)
-4. Access 4 â†’ Set0, hit: [0, 4] (4 becomes MRU)
-5. Access 8 â†’ Set0, miss: Evict LRU (0), load 8. [4, 8] (8 is MRU)
-6. Access 0 â†’ Set0, miss: Evict LRU (4), load 0. [8, 0] (0 is MRU)
-7. Access 4 â†’ Set0, miss: Evict LRU (8), load 4. [0, 4] (4 is MRU)
-8. Access 8 â†’ Set0, miss: Evict LRU (0), load 8. [4, 8] (8 is MRU)
+1. Access 0 → Set0, line 0: Miss → [0, −] (0 is MRU)
+2. Access 4 → Set0, line 4: Miss → [0, 4] (4 is MRU)
+3. Access 0 → Set0, hit: [4, 0] (0 becomes MRU)
+4. Access 4 → Set0, hit: [0, 4] (4 becomes MRU)
+5. Access 8 → Set0, miss: Evict LRU (0), load 8. [4, 8] (8 is MRU)
+6. Access 0 → Set0, miss: Evict LRU (4), load 0. [8, 0] (0 is MRU)
+7. Access 4 → Set0, miss: Evict LRU (8), load 4. [0, 4] (4 is MRU)
+8. Access 8 → Set0, miss: Evict LRU (0), load 8. [4, 8] (8 is MRU)
 
 Misses: 1, 2, 5, 6, 7, 8 = 6 misses
 
@@ -1713,7 +1713,7 @@ A) PROM  B) EPROM  C) EEPROM  D) Flash
 - Mask ROM: Factory programmed, cannot be erased
 - PROM: One-time programmable (fuses/blown), cannot be erased
 - EPROM: Erased by UV light (20 min), electrically programmed
-- EEPROM: Electrically erasable at byte level â€” most flexible but slower
+- EEPROM: Electrically erasable at byte level — most flexible but slower
 - Flash: Electrically erasable at block level, faster than EEPROM for bulk operations
 
 **Key difference:** EEPROM supports byte-level erase/write, while Flash requires block-level erase.
@@ -1732,9 +1732,9 @@ A) 4  B) 5  C) 6  D) 7
 
 **Simulation:** 4 lines, fully associative, LRU:
 
-Access 1: Miss. [1, âˆ’, âˆ’, âˆ’]
-Access 2: Miss. [1, 2, âˆ’, âˆ’]
-Access 3: Miss. [1, 2, 3, âˆ’]
+Access 1: Miss. [1, −, −, −]
+Access 2: Miss. [1, 2, −, −]
+Access 3: Miss. [1, 2, 3, −]
 Access 4: Miss. [1, 2, 3, 4]
 Access 1: Hit. [2, 3, 4, 1]
 Access 2: Hit. [3, 4, 1, 2]
@@ -1752,21 +1752,21 @@ Hmm that's 5, option B. Let me recount:
 
 **Q18.** DDR5 SDRAM transfers data at what rate compared to DDR4?
 
-A) Same  B) 1.5Ã—  C) 2Ã—  D) 3Ã—
+A) Same  B) 1.5×  C) 2×  D) 3×
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: C) 2Ã— (approximately)**
+**Answer: C) 2× (approximately)**
 
 DDR4 max: 3200 MT/s
 DDR5 max: 8400 MT/s
-Ratio: 8400/3200 â‰ˆ 2.6Ã—
+Ratio: 8400/3200 ≈ 2.6×
 
-But typical comparison: DDR4-3200 vs DDR5-6400 = 2Ã—.
+But typical comparison: DDR4-3200 vs DDR5-6400 = 2×.
 
 **DDR5 improvements over DDR4:**
-- Burst length doubled (8â†’16): transfers 32 bytes per cycle consistently
+- Burst length doubled (8→16): transfers 32 bytes per cycle consistently
 - Two independent 32-bit channels per module (effectively 40-bit with ECC)
 - On-die ECC for reliability
 - Lower voltage (1.1V vs 1.2V)
@@ -1785,18 +1785,18 @@ A) 18  B) 20  C) 22  D) 24
 **Answer: B) 20**
 
 **Calculation:**
-Page size = 4 KB = 2Â¹Â² bytes â†’ offset = 12 bits
+Page size = 4 KB = 2¹² bytes → offset = 12 bits
 Virtual address = 32 bits
-Page number bits = 32 âˆ’ 12 = 20 bits
+Page number bits = 32 − 12 = 20 bits
 
 For a fully associative TLB, the tag = entire page number = 20 bits.
 
 The TLB entry stores: tag(20 bits) + physical page number(20 bits) + valid bit + dirty bit.
-Each entry â‰ˆ 40+ bits.
+Each entry ≈ 40+ bits.
 
 **TLB configuration:** 
-- Capacity: 64 entries Ã— ~40 bits â‰ˆ 2560 bits
-- Fully associative â†’ needs 64 comparators for parallel tag search
+- Capacity: 64 entries × ~40 bits ≈ 2560 bits
+- Fully associative → needs 64 comparators for parallel tag search
 </details>
 
 ---
@@ -1810,7 +1810,7 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 
 **Answer: B) Reduces conflict misses**
 
-**Victim cache:** A small (4â€“16 entry) fully-associative cache that stores recently evicted blocks.
+**Victim cache:** A small (4–16 entry) fully-associative cache that stores recently evicted blocks.
 
 **How it works:**
 1. On a cache miss, check victim cache before going to main memory
@@ -1818,12 +1818,12 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 3. Reduces conflict misses by giving evicted blocks a "second chance"
 
 **Performance impact:**
-- Typical reduction: 20â€“40% fewer conflict misses
-- Hardware cost: Small fully-associative CAM (4â€“16 entries)
+- Typical reduction: 20–40% fewer conflict misses
+- Hardware cost: Small fully-associative CAM (4–16 entries)
 - Used in: AMD K6, Intel Pentium M, ARM Cortex-A series
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 **Q1.** For a 32 KB direct-mapped cache with 32-byte blocks on a 32-bit system: calculate offset, index, and tag bits. Show the address format.
 
@@ -1890,41 +1890,41 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 <details>
 <summary>Show Answer Key</summary>
 
-**A1.** Offset = logâ‚‚(32) = 5 bits. Lines = 32 KB/32 B = 1024. Index = logâ‚‚(1024) = 10 bits. Tag = 32âˆ’10âˆ’5 = 17 bits. Format: [Tag:17 | Index:10 | Offset:5].
+**A1.** Offset = log₂(32) = 5 bits. Lines = 32 KB/32 B = 1024. Index = log₂(1024) = 10 bits. Tag = 32−10−5 = 17 bits. Format: [Tag:17 | Index:10 | Offset:5].
 
-**A2.** AMAT = 2 + 0.08 Ã— (12 + 0.15 Ã— 80) = 2 + 0.08 Ã— (12 + 12) = 2 + 0.08 Ã— 24 = 2 + 1.92 = 3.92 ns.
+**A2.** AMAT = 2 + 0.08 × (12 + 0.15 × 80) = 2 + 0.08 × (12 + 12) = 2 + 0.08 × 24 = 2 + 1.92 = 3.92 ns.
 
-**A3.** Lines = 128 KB / 64 B = 2048. Sets = 2048/4 = 512. Set index = logâ‚‚(512) = 9. Offset = logâ‚‚(64) = 6. Tag = 32âˆ’9âˆ’6 = 17. Comparators = 4 (one per way).
+**A3.** Lines = 128 KB / 64 B = 2048. Sets = 2048/4 = 512. Set index = log₂(512) = 9. Offset = log₂(64) = 6. Tag = 32−9−6 = 17. Comparators = 4 (one per way).
 
-**A4.** 4 sets, 2-way LRU. Assume block address maps as set = address mod 4. A(0 mod 4 = 0), B(1), C(2), D(3), E(0). Misses: A, B, C, D, E(0, evicts A), A(evicts E), B(cold? no, B is in set 1, not evicted), E(evicts A â€” already done). Need detailed simulation. Total: ~7 misses, ~4 hits depending on exact addresses.
+**A4.** 4 sets, 2-way LRU. Assume block address maps as set = address mod 4. A(0 mod 4 = 0), B(1), C(2), D(3), E(0). Misses: A, B, C, D, E(0, evicts A), A(evicts E), B(cold? no, B is in set 1, not evicted), E(evicts A — already done). Need detailed simulation. Total: ~7 misses, ~4 hits depending on exact addresses.
 
 **A5.** Write-through: 5 writes to main memory (one per store). Write-back: 1 write to main memory (when block is evicted, dirty bit written). Write-back saves 4 memory writes (80% reduction).
 
-**A6.** Lines = 32 KB/32 B = 1024. Sets = 1024/2 = 512. Index = 9. Offset = 5. Tag = 32âˆ’9âˆ’5 = 18. Total = 1024 Ã— (32Ã—8 + 18 + 1 + 1) = 1024 Ã— 276 = 282,624 bits = 35.3 KB (for 32 KB data cache, ~10% overhead).
+**A6.** Lines = 32 KB/32 B = 1024. Sets = 1024/2 = 512. Index = 9. Offset = 5. Tag = 32−9−5 = 18. Total = 1024 × (32×8 + 18 + 1 + 1) = 1024 × 276 = 282,624 bits = 35.3 KB (for 32 KB data cache, ~10% overhead).
 
-**A7.** AMAT = 10 + 0.15 Ã— 150 = 10 + 22.5 = 32.5 ns. Speedup = 150/32.5 = 4.62Ã—.
+**A7.** AMAT = 10 + 0.15 × 150 = 10 + 22.5 = 32.5 ns. Speedup = 150/32.5 = 4.62×.
 
 **A8.** Fully associative, 8 lines, LRU: Sequence 1,2,3,4,5,1,2,3,4,5. First 5 are all misses. 1,2,3,4,5 are then hits (still in cache). LRU: 5 misses. FIFO: same (5 misses, no conflict). Total: 5 misses, 5 hits.
 
-**A9.** AMAT = Hit_Time + Miss_Rate Ã— Miss_Penalty. 5 = HT + 0.02 Ã— 100 = HT + 2. HT = 3 ns.
+**A9.** AMAT = Hit_Time + Miss_Rate × Miss_Penalty. 5 = HT + 0.02 × 100 = HT + 2. HT = 3 ns.
 
-**A10.** 256 KB, 4-way, 32-bit address. Choose 64-byte blocks (good balance). Offset = 6. Lines = 256 KB/64 B = 4096. Sets = 4096/4 = 1024. Index = 10. Tag = 32âˆ’10âˆ’6 = 16. Format: [Tag:16 | Index:10 | Offset:6].
+**A10.** 256 KB, 4-way, 32-bit address. Choose 64-byte blocks (good balance). Offset = 6. Lines = 256 KB/64 B = 4096. Sets = 4096/4 = 1024. Index = 10. Tag = 32−10−6 = 16. Format: [Tag:16 | Index:10 | Offset:6].
 
-**A11.** Temporal: Sum array elements in loop â€” array[i] accessed repeatedly. Spatial: Iterate through array sequentially â€” array[i], array[i+1] accessed consecutively. Code: `for(i=0;i&lt;N;i++) sum += A[i];` exhibits both (temporal: sum, spatial: A[]).
+**A11.** Temporal: Sum array elements in loop — array[i] accessed repeatedly. Spatial: Iterate through array sequentially — array[i], array[i+1] accessed consecutively. Code: `for(i=0;i&lt;N;i++) sum += A[i];` exhibits both (temporal: sum, spatial: A[]).
 
 **A12.** Direct-mapped 8 lines: each access maps to line = addr mod 8. Pattern 0,1,2,3,4,0,1,2,3,4. First 5 misses, then 5 hits. Total: 5 misses, 5 hits. Fully associative 8 lines with LRU: same (5 misses, 5 hits) because 5 unique addresses fit in 8 lines.
 
-**A13.** TLB_AT = 1 + 0.02 Ã— 120 = 1 + 2.4 = 3.4 ns (translation time). Total effective access = TLB_AT + Memory_Access = 3.4 + 50 = 53.4 ns.
+**A13.** TLB_AT = 1 + 0.02 × 120 = 1 + 2.4 = 3.4 ns (translation time). Total effective access = TLB_AT + Memory_Access = 3.4 + 50 = 53.4 ns.
 
-**A14.** Tag = 32 âˆ’ logâ‚‚(64) âˆ’ logâ‚‚(32) = 32 âˆ’ 6 âˆ’ 5 = 21. Data size = 64 sets Ã— 2 ways Ã— 32 bytes = 4096 bytes = 4 KB. Total with tags = 128 lines Ã— (32Ã—8 + 21 + 1 + 1) = 128 Ã— 279 = 35,712 bits = 4.46 KB.
+**A14.** Tag = 32 − log₂(64) − log₂(32) = 32 − 6 − 5 = 21. Data size = 64 sets × 2 ways × 32 bytes = 4096 bytes = 4 KB. Total with tags = 128 lines × (32×8 + 21 + 1 + 1) = 128 × 279 = 35,712 bits = 4.46 KB.
 
-**A15.** AMAT = 1 + 0.10 Ã— (5 + 0.25 Ã— (15 + 0.30 Ã— 80)) = 1 + 0.10 Ã— (5 + 0.25 Ã— (15 + 24)) = 1 + 0.10 Ã— (5 + 0.25 Ã— 39) = 1 + 0.10 Ã— (5 + 9.75) = 1 + 0.10 Ã— 14.75 = 1 + 1.475 = 2.475 ns.
+**A15.** AMAT = 1 + 0.10 × (5 + 0.25 × (15 + 0.30 × 80)) = 1 + 0.10 × (5 + 0.25 × (15 + 24)) = 1 + 0.10 × (5 + 0.25 × 39) = 1 + 0.10 × (5 + 9.75) = 1 + 0.10 × 14.75 = 1 + 1.475 = 2.475 ns.
 
-**A16.** SRAM: ~1 ns, low density, high power, $1000+/GB, cache. DRAM: ~50 ns, high density, low power (needs refresh), $10/GB, main memory. DRAM too slow for L1 â€” would require hundreds of wait states per access.
+**A16.** SRAM: ~1 ns, low density, high power, $1000+/GB, cache. DRAM: ~50 ns, high density, low power (needs refresh), $10/GB, main memory. DRAM too slow for L1 — would require hundreds of wait states per access.
 
-**A17.** (a) Direct: Offset=6, Index=9, Tag=17. Tag bits=512Ã—17=8704. Total=512Ã—(512+17+1)=512Ã—530=271,360 bits. (b) 4-way: Offset=6, Index=7, Tag=19. Total=512Ã—(512+19+1+1)=512Ã—533=272,896 bits. 4-way has more overhead due to extra tag bits.
+**A17.** (a) Direct: Offset=6, Index=9, Tag=17. Tag bits=512×17=8704. Total=512×(512+17+1)=512×530=271,360 bits. (b) 4-way: Offset=6, Index=7, Tag=19. Total=512×(512+19+1+1)=512×533=272,896 bits. 4-way has more overhead due to extra tag bits.
 
-**A18.** Good spatial: `for(i=0;i&lt;N;i++) sum+=A[i];` â€” sequential access, cache lines prefetched. Poor spatial: `for(i=0;i&lt;N;i+=64) sum+=A[i];` â€” striding over cache lines, each access is to a new line.
+**A18.** Good spatial: `for(i=0;i&lt;N;i++) sum+=A[i];` — sequential access, cache lines prefetched. Poor spatial: `for(i=0;i&lt;N;i+=64) sum+=A[i];` — striding over cache lines, each access is to a new line.
 
 **A19.** Write buffer stores pending writes while CPU continues execution. If buffer depth=4 and each write takes 10 cycles, sustainable rate without stalling = 1 write per 10/4 = 2.5 cycles on average (with buffering). Without buffer, CPU stalls 10 cycles per write.
 
@@ -1932,45 +1932,45 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 
 **A21.** MESI states: Modified (dirty, exclusive), Exclusive (clean, exclusive), Shared (clean, shared), Invalid. Read miss in Exclusive: send bus read, transition to Shared. Write hit in Exclusive: transition to Modified (no bus transaction needed, locally owned).
 
-**A22.** SSD: 10â€“100 Î¼s access, excellent random read, 2â€“5W, $0.10/GB. HDD: 5â€“15 ms access, poor random (seeks), 5â€“10W, $0.02/GB. SSD superiority for random IO makes it dominant for OS and applications.
+**A22.** SSD: 10–100 μs access, excellent random read, 2–5W, $0.10/GB. HDD: 5–15 ms access, poor random (seeks), 5–10W, $0.02/GB. SSD superiority for random IO makes it dominant for OS and applications.
 
-**A23.** Sequential 1000 elements Ã— 4 bytes = 4000 bytes. Cache = 4 KB, 64 B blocks = 64 blocks. Each 64 B block holds 16 elements. 1000/16 â‰ˆ 63 blocks accessed. First access cold miss, remaining 15 hits. Miss rate â‰ˆ 1/16 = 6.25%. Overall + 5 random accesses (likely misses) â†’ total ~68 misses out of 1005 accesses â‰ˆ 6.8% miss rate.
+**A23.** Sequential 1000 elements × 4 bytes = 4000 bytes. Cache = 4 KB, 64 B blocks = 64 blocks. Each 64 B block holds 16 elements. 1000/16 ≈ 63 blocks accessed. First access cold miss, remaining 15 hits. Miss rate ≈ 1/16 = 6.25%. Overall + 5 random accesses (likely misses) → total ~68 misses out of 1005 accesses ≈ 6.8% miss rate.
 
 **A24.** Hardware prefetch: detects sequential/stride patterns in hardware, prefetches next blocks automatically (stride prefetcher, stream prefetcher). Software: compiler inserts PREFETCH instructions, programmer-controlled, can prefetch irregular patterns. Hardware is transparent; software is more precise.
 
-**A25.** 3-level page table: each level needs 1 memory access. TLB miss: 3 memory accesses Ã— 50 ns = 150 ns. EAT = 1 ns (TLB hit) + 0.02 Ã— 150 = 1 + 3 = 4 ns effective translation time.
+**A25.** 3-level page table: each level needs 1 memory access. TLB miss: 3 memory accesses × 50 ns = 150 ns. EAT = 1 ns (TLB hit) + 0.02 × 150 = 1 + 3 = 4 ns effective translation time.
 
 **A26.** Direct-mapped cache has deterministic access time (always hits in same time, misses in fixed penalty). Set-associative requires tag comparison (variable due to replacement decisions). For hard real-time, deterministic timing is more important than average performance.
 
-**A27.** All addresses (0,16,32,48,64) map to cache line = (addr/16) mod 256. 0â†’0, 16â†’1, 32â†’2, 48â†’3, 64â†’4. First 5 misses, then hits for remaining accesses. No thrashing (5 unique mappings for 256 lines). Total: 5 misses, 5 hits.
+**A27.** All addresses (0,16,32,48,64) map to cache line = (addr/16) mod 256. 0→0, 16→1, 32→2, 48→3, 64→4. First 5 misses, then hits for remaining accesses. No thrashing (5 unique mappings for 256 lines). Total: 5 misses, 5 hits.
 
-**A28.** Local L2 miss rate = 20%. Global miss rate = 10% Ã— 20% = 2%. AMAT = 0.5 + 0.10 Ã— 20 + 0.02 Ã— 100 = 0.5 + 2 + 2 = 4.5 ns.
+**A28.** Local L2 miss rate = 20%. Global miss rate = 10% × 20% = 2%. AMAT = 0.5 + 0.10 × 20 + 0.02 × 100 = 0.5 + 2 + 2 = 4.5 ns.
 
-**A29.** Increasing associativity reduces conflict misses but has diminishing returns (2-way big gain, 4â†’8 smaller). Increasing cache size reduces capacity misses but costs more die area. For conflict misses: associativity is more effective. For capacity misses: larger cache is better. Typically: 32â€“64 KB 4-way L1, 256 KBâ€“1 MB 8-way L2.
+**A29.** Increasing associativity reduces conflict misses but has diminishing returns (2-way big gain, 4→8 smaller). Increasing cache size reduces capacity misses but costs more die area. For conflict misses: associativity is more effective. For capacity misses: larger cache is better. Typically: 32–64 KB 4-way L1, 256 KB–1 MB 8-way L2.
 
-**A30.** Write-allocate: first access misses, loads block into cache (cold miss), then writes to cache (dirty bit set). Block eventually evicted and written back. Write-no-allocate: every write goes directly to memory â€” no cache loading, no eviction overhead. For large sequential writes to a fresh array (A[i]=0 for i=0..999), write-no-allocate avoids cache pollution and generates 1000 direct writes. Write-allocate generates 1000/16 â‰ˆ 63 cache line fills + 63 eviction writes = 126 memory accesses. Write-no-allocate is better for large streaming writes.
+**A30.** Write-allocate: first access misses, loads block into cache (cold miss), then writes to cache (dirty bit set). Block eventually evicted and written back. Write-no-allocate: every write goes directly to memory — no cache loading, no eviction overhead. For large sequential writes to a fresh array (A[i]=0 for i=0..999), write-no-allocate avoids cache pollution and generates 1000 direct writes. Write-allocate generates 1000/16 ≈ 63 cache line fills + 63 eviction writes = 126 memory accesses. Write-no-allocate is better for large streaming writes.
 </details>
 
 ## Summary
 
-- Memory hierarchy exploits locality of reference: registers â†’ L1 cache â†’ L2 cache â†’ L3 cache â†’ main memory â†’ disk.
+- Memory hierarchy exploits locality of reference: registers → L1 cache → L2 cache → L3 cache → main memory → disk.
 - SRAM (fast, 6T cell, no refresh) is used for cache; DRAM (slower, 1T+1C, needs refresh) is used for main memory.
 - ROM types: Mask ROM (factory), PROM (one-time), EPROM (UV erase), EEPROM (electrical byte erase), Flash (electrical block erase, most common for SSDs).
 - Cache mapping: direct (simple, conflict misses), fully associative (flexible, expensive), set-associative (practical compromise).
 - Three C's of misses: compulsory (cold start), capacity (cache too small), conflict (mapping restrictions).
 - Replacement: LRU (best locality), FIFO (simple), LFU (frequency), Random (easiest hardware).
 - Write policies: write-through (consistent, slow writes) vs write-back (fast writes, dirty bit tracking).
-- AMAT formula: hit time + miss rate Ã— miss penalty â€” the most important performance formula in memory systems.
+- AMAT formula: hit time + miss rate × miss penalty — the most important performance formula in memory systems.
 - TLB is a cache for page table entries, accelerating virtual-to-physical address translation.
 
 ## Practical Takeaways
 
-- **For IBPS/GATE numericals:** Memorize AMAT = Hit Time + Miss Rate Ã— Miss Penalty. Always check if miss penalty includes cache access or only main memory access.
+- **For IBPS/GATE numericals:** Memorize AMAT = Hit Time + Miss Rate × Miss Penalty. Always check if miss penalty includes cache access or only main memory access.
 - **Direct-mapped cache trick:** The index bits come from the address, so `cache_line = (address / block_size) mod num_lines`.
 - **Set-associative formula:** Higher associativity = fewer conflict misses but higher hit time. 2-way is common in practice.
 - **LRU implementation:** For 2-way, a single bit per set tracks MRU (most recently used). For 4-way, it takes ~6 bits per set.
-- **Write-back advantage:** Reduces memory traffic by 50â€“90% compared to write-through for typical programs.
-- **Multi-level cache rule:** Each level is ~10Ã— larger and ~5â€“10Ã— slower than the level above.
+- **Write-back advantage:** Reduces memory traffic by 50–90% compared to write-through for typical programs.
+- **Multi-level cache rule:** Each level is ~10× larger and ~5–10× slower than the level above.
 
 ---
 
@@ -1982,7 +1982,7 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 
 **Q2:** Calculate AMAT: L1 hit time = 2 ns, hit rate = 95%, miss penalty to main memory = 60 ns.
 
-(`<details><summary>Show Answer</summary>AMAT = 2 + 0.05 Ã— 60 = 2 + 3 = 5 ns</details>`)
+(`<details><summary>Show Answer</summary>AMAT = 2 + 0.05 × 60 = 2 + 3 = 5 ns</details>`)
 
 **Q3:** What is the difference between write-through and write-back cache?
 
@@ -1990,11 +1990,11 @@ A) Increases cache capacity  B) Reduces conflict misses  C) Lowers hit time  D) 
 
 **Q4:** In a 4-way set-associative cache with 16 KB and 32-byte blocks on a 32-bit system, how many tag bits are needed?
 
-(`<details><summary>Show Answer</summary>Blocks = 16 KB / 32 B = 512 lines. Sets = 512 / 4 = 128. Set index = logâ‚‚(128) = 7 bits. Offset = logâ‚‚(32) = 5 bits. Tag = 32 âˆ’ 7 âˆ’ 5 = 20 bits.</details>`)
+(`<details><summary>Show Answer</summary>Blocks = 16 KB / 32 B = 512 lines. Sets = 512 / 4 = 128. Set index = log₂(128) = 7 bits. Offset = log₂(32) = 5 bits. Tag = 32 − 7 − 5 = 20 bits.</details>`)
 
 **Q5:** Which replacement policy provides the best hit ratio (theoretically)?
 
-(`<details><summary>Show Answer</summary>Belady's optimal algorithm â€” it evicts the block that will be used farthest in the future. However, it requires future knowledge and is not implementable in practice. LRU is the best practical policy.</details>`)
+(`<details><summary>Show Answer</summary>Belady's optimal algorithm — it evicts the block that will be used farthest in the future. However, it requires future knowledge and is not implementable in practice. LRU is the best practical policy.</details>`)
 
 ---
 

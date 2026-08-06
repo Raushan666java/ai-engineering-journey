@@ -1,7 +1,7 @@
-﻿# Keycloak & Identity Federation
+# Keycloak & Identity Federation
 > **Previous:** [Method Security, CORS & CSRF](27-method-cors-csrf.md) | **Next:** [JUnit 5](29-junit5.md)
 
-Keycloak is an open-source identity and access management (IAM) platform that provides authentication, authorization, single sign-on (SSO), social login, user federation, and identity brokering ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â all behind a unified administration console.
+Keycloak is an open-source identity and access management (IAM) platform that provides authentication, authorization, single sign-on (SSO), social login, user federation, and identity brokering — all behind a unified administration console.
 
 This chapter covers Keycloak from zero to production: setting up Keycloak with Docker, configuring realms and clients, securing Spring Boot applications, exchanging tokens between services, federating identities from external providers (Google, GitHub, LDAP), and implementing fine-grained authorization with resources, scopes, and policies.
 
@@ -45,9 +45,9 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Keycloak â†’ open-source identity and access management | Self-hosted IdP with OAuth2/OIDC support |
-| Realm, Client, User â†’ core Keycloak data model | Each realm is a tenant isolation boundary |
-| Spring Boot Adapter â†’ secure apps via Keycloak integration | Use keycloak-spring-boot-starter or OIDC configuration |
+| Keycloak → open-source identity and access management | Self-hosted IdP with OAuth2/OIDC support |
+| Realm, Client, User → core Keycloak data model | Each realm is a tenant isolation boundary |
+| Spring Boot Adapter → secure apps via Keycloak integration | Use keycloak-spring-boot-starter or OIDC configuration |
 
 ---
 ## Chapter Roadmap
@@ -99,7 +99,7 @@ flowchart TD
 
 1. What is the tenant isolation unit in Keycloak? **Answer:** Realm
 2. Which annotation maps roles from Keycloak to Spring Security authorities? **Answer:** `@KeycloakConfiguration` handles role mapping automatically
-3. Is the Keycloak Spring Boot adapter recommended for new projects? **Answer:** No â†’ use the standard OIDC resource server configuration
+3. Is the Keycloak Spring Boot adapter recommended for new projects? **Answer:** No → use the standard OIDC resource server configuration
 
 ---
 
@@ -187,7 +187,7 @@ A **realm** is the Keycloak equivalent of a tenant. It manages a set of users, c
 #### Creating a Realm via Admin Console
 
 1. Navigate to `http://localhost:8080/admin/`
-2. Hover over "master" realm ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Click "Create Realm"
+2. Hover over "master" realm → Click "Create Realm"
 3. Enter realm name: `demo-engineering`
 4. Click "Create"
 
@@ -290,10 +290,10 @@ A **client** represents an application or service that requests authentication.
 
 ```
 Realm Roles:
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ admin          (composite: engineer + viewer)
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ engineer       (composite: viewer)
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ viewer
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ offline_access (built-in)
+├── admin          (composite: engineer + viewer)
+├── engineer       (composite: viewer)
+├── viewer
+└── offline_access (built-in)
 ```
 
 #### Role JSON
@@ -575,7 +575,7 @@ public class KeycloakAdminClient {
 ```
 
 > [!TIP]
-> For new projects, prefer the standard Spring Security OIDC configuration over the Keycloak adapter â†’ it is more portable and actively maintained.
+> For new projects, prefer the standard Spring Security OIDC configuration over the Keycloak adapter → it is more portable and actively maintained.
 
 > [!WARNING]
 > Never commit Keycloak client secrets to version control. Use environment variables or a secret manager.
@@ -590,7 +590,7 @@ Keycloak provides a dedicated Spring Boot adapter. Note: the adapter is deprecat
 
 
 ```xml
-<!-- pom.xml ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Keycloak Spring Boot Adapter (Legacy) -->
+<!-- pom.xml — Keycloak Spring Boot Adapter (Legacy) -->
 <properties>
     <keycloak.version>25.0.0</keycloak.version>
 </properties>
@@ -801,7 +801,7 @@ public class OAuth2ResourceServerConfig {
 
 
 ```properties
-# application.yml ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â OAuth2 Resource Server
+# application.yml — OAuth2 Resource Server
 spring:
   security:
     oauth2:
@@ -850,7 +850,7 @@ public class KeycloakSecuredController {
         );
     }
 
-    // Role-based ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SpEL
+    // Role-based — SpEL
     @GetMapping("/admin/dashboard")
     @PreAuthorize("hasRole('ADMIN')")
     public Map<String, String> adminDashboard() {
@@ -863,14 +863,14 @@ public class KeycloakSecuredController {
         return Map.of("users", List.of("alice", "bob", "charlie"));
     }
 
-    // Role-based ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â @Secured
+    // Role-based — @Secured
     @PostMapping("/engineer/projects")
     @Secured("ROLE_ENGINEER")
     public Map<String, String> createProject(@RequestBody Map<String, String> project) {
         return Map.of("status", "created", "name", project.get("name"));
     }
 
-    // Role-based ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â @RolesAllowed (JSR-250)
+    // Role-based — @RolesAllowed (JSR-250)
     @PutMapping("/engineer/projects/{id}")
     @RolesAllowed({"admin", "engineer"})
     public Map<String, String> updateProject(
@@ -879,14 +879,14 @@ public class KeycloakSecuredController {
         return Map.of("status", "updated", "id", id);
     }
 
-    // Hierarchical role checkÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â admin inherits engineer rights
+    // Hierarchical role check— admin inherits engineer rights
     @GetMapping("/engineer/tasks")
     @PreAuthorize("hasAnyRole('ENGINEER', 'ADMIN')")
     public Map<String, Object> getTasks() {
         return Map.of("tasks", List.of("Task 1", "Task 2", "Task 3"));
     }
 
-    // Custom SpEL ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â check specific claim
+    // Custom SpEL — check specific claim
     @GetMapping("/sensitive")
     @PreAuthorize("authentication.token.claims['email_verified'] == true")
     public Map<String, String> sensitiveData() {
@@ -913,18 +913,18 @@ Token exchange allows one client or user to exchange a token for another token t
 
 
 ```
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â         ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â         ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Client A ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬JWTÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¶ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡ Keycloak ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡ÃƒÂ¢â†’Ã¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬JWTÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Client B ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡(Frontend) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡         ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡          ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡         ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡ (Backend) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“         ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“         ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“
-                          ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+┌──────────┐         ┌──────────┐         ┌──────────┐
+│  Client A │───JWT──▶│ Keycloak │â→€──JWT───│  Client B │
+│(Frontend) │         │          │         │ (Backend) │
+└──────────┘         └────┬─────┘         └──────────┘
+                          │
                     Token Exchange
-                          ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-                          ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¼
-                   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â
-                   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   Target     ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-                   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   Service    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
-                   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“
+                          │
+                          ▼
+                   ┌──────────────┐
+                   │   Target     │
+                   │   Service    │
+                   └──────────────┘
 ```
 
 ### 3.2 Token Exchange Between Clients
@@ -1211,11 +1211,11 @@ public class DelegationService {
 To enable impersonation, assign the `impersonation` role to the client:
 
 ```java
-// Keycloak Admin API ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â grant impersonation to client
-// 1. Go to Clients ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ spring-backend ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Service Account Roles
+// Keycloak Admin API — grant impersonation to client
+// 1. Go to Clients → spring-backend → Service Account Roles
 // 2. Add "impersonation" from realm roles
 // 3. For user impersonation, also assign "realm-admin" or:
-//    Clients ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ spring-backend ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Roles ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Add "impersonation"
+//    Clients → spring-backend → Roles → Add "impersonation"
 
 // Programmatic approach:
 public void grantImpersonationToClient(String token) throws Exception {
@@ -1238,7 +1238,7 @@ public void grantImpersonationToClient(String token) throws Exception {
 
 Identity brokering allows Keycloak to delegate authentication to external identity providers (IdPs) and federate users from different sources.
 
-### 4.1 Social Login ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Google
+### 4.1 Social Login — Google
 
 
 #### Step 1: Google Cloud Console Setup
@@ -1317,7 +1317,7 @@ public class IdentityProviderConfig {
 }
 ```
 
-### 4.2 Social Login ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â GitHub
+### 4.2 Social Login — GitHub
 
 
 ```json
@@ -1338,7 +1338,7 @@ public class IdentityProviderConfig {
 }
 ```
 
-### 4.3 Social Login ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Facebook
+### 4.3 Social Login — Facebook
 
 
 ```java
@@ -1591,7 +1591,7 @@ User federation allows Keycloak to integrate with external user stores such as L
 
 #### Keycloak Admin Console Configuration
 
-1. Navigate to User Federation ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Add provider ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ ldap
+1. Navigate to User Federation → Add provider → ldap
 2. Configure the connection:
 
 ```
@@ -1708,12 +1708,12 @@ Mappers define how LDAP attributes map to Keycloak user attributes and vice vers
 
 | Mapper Type | Description | LDAP Attribute | User Attribute |
 |-------------|-------------|----------------|----------------|
-| User Attribute | Map LDAP attr to user attr | `mail` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ `email` |
-| Full Name | Concatenates first + last name | `givenName` + `sn` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ `fullName` |
-| Groups | LDAP groups ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Keycloak groups | `memberOf` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ group membership |
-| Role | LDAP attr ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Keycloak role | `department` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ role |
-| Certificate | LDAP certificate mapping | `userCertificate` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ certificate |
-| Kerberos Principal | Map Kerberos principal | `krb5PrincipalName` ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ principal |
+| User Attribute | Map LDAP attr to user attr | `mail` → `email` |
+| Full Name | Concatenates first + last name | `givenName` + `sn` → `fullName` |
+| Groups | LDAP groups → Keycloak groups | `memberOf` → group membership |
+| Role | LDAP attr → Keycloak role | `department` → role |
+| Certificate | LDAP certificate mapping | `userCertificate` → certificate |
+| Kerberos Principal | Map Kerberos principal | `krb5PrincipalName` → principal |
 
 ```java
 public UserFederationMapperRepresentation createGroupMapper() {
@@ -2040,7 +2040,7 @@ public class CustomUserStorageProvider implements
         String passwordHash
     ) {}
 
-    // External user service (stub ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â would call the actual user store)
+    // External user service (stub — would call the actual user store)
     public static class ExternalUserService {
         private final Map<String, ExternalUser> store = new java.util.concurrent.ConcurrentHashMap<>();
 
@@ -2103,24 +2103,24 @@ Keycloak Authorization Services provides resource-based, scope-based, and policy
 
 ```
 Resource Server (Keycloak)
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Resources ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Protected assets (e.g., /api/documents/{id})
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Scopes ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Actions on resources (read, write, delete, share)
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Permissions ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Resource + Scope + Policy
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Policies ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Conditions that evaluate to true/false
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Role Policy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Checks if user has a specific role
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ User Policy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Checks if user is in a list
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Client Policy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Checks if client matches
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Time Policy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Checks time constraints
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Aggregate Policy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Combines multiple policies (AND/OR)
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ JS Policy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Custom JavaScript condition
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Rule Policy ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Custom JBoss Drools rule
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Policy Enforcer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Intercepts requests and enforces permissions
+├── Resources — Protected assets (e.g., /api/documents/{id})
+├── Scopes — Actions on resources (read, write, delete, share)
+├── Permissions — Resource + Scope + Policy
+├── Policies — Conditions that evaluate to true/false
+│   ├── Role Policy — Checks if user has a specific role
+│   ├── User Policy — Checks if user is in a list
+│   ├── Client Policy — Checks if client matches
+│   ├── Time Policy — Checks time constraints
+│   ├── Aggregate Policy — Combines multiple policies (AND/OR)
+│   ├── JS Policy — Custom JavaScript condition
+│   └── Rule Policy — Custom JBoss Drools rule
+└── Policy Enforcer — Intercepts requests and enforces permissions
 ```
 
 ### 6.2 Enabling Authorization Services
 
 
-1. Go to Clients ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ spring-backend
+1. Go to Clients → spring-backend
 2. Enable "Authorization Services" (already enabled in our client config)
 3. Navigate to the "Authorization" tab
 
@@ -2368,7 +2368,7 @@ public class PolicyEnforcerConfig {
 }
 ```
 
-### 6.7 UMA 2.0 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â User-Managed Access
+### 6.7 UMA 2.0 — User-Managed Access
 
 
 UMA 2.0 allows resource owners to delegate access to other users.
@@ -2573,7 +2573,7 @@ public class UmaService {
         private final StringBuilder sb = new StringBuilder();
 
         public StringJoiner(String delimiter) {
-            // placeholder ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â in real code use java.util.StringJoiner
+            // placeholder — in real code use java.util.StringJoiner
         }
 
         public void add(String param) {
@@ -2824,7 +2824,7 @@ public class UmaDocumentController {
                 doc.scopes()
             );
         } catch (Exception e) {
-            // Log but continue ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â document is created locally
+            // Log but continue — document is created locally
             System.err.println("UMA registration failed: " + e.getMessage());
         }
 
@@ -2904,7 +2904,7 @@ public class UmaDocumentController {
 ```
 
 > [!NOTE]
-> Each realm is fully isolated â†’ users, roles, and clients in one realm cannot access another realm without explicit federation.
+> Each realm is fully isolated → users, roles, and clients in one realm cannot access another realm without explicit federation.
 
 ---
 
@@ -3137,7 +3137,7 @@ public class DocumentService {
 
 2. **Spring Boot integration**: Create a Spring Boot application with OAuth2 resource server configuration pointing to your local Keycloak. Secure endpoints so `/api/grades/**` requires the `faculty` role and `/api/courses/**` requires any authenticated user.
 
-3. **Token exchange**: Set up two clients ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â `user-service` and `reporting-service`. Implement a REST endpoint in `user-service` that exchanges its JWT for a token targeting `reporting-service` and fetches a report on the user's behalf.
+3. **Token exchange**: Set up two clients — `user-service` and `reporting-service`. Implement a REST endpoint in `user-service` that exchanges its JWT for a token targeting `reporting-service` and fetches a report on the user's behalf.
 
 4. **Social login**: Configure Google as an identity provider in Keycloak. Set up the first broker login flow to link new Google users to existing Keycloak accounts by email.
 

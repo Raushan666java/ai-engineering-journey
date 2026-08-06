@@ -1,4 +1,4 @@
-﻿# Microservices Architecture Principles
+# Microservices Architecture Principles
 > **Previous:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md) | **Next:** [Service Discovery](39-discovery.md)
 
 ## Learning Objectives
@@ -36,9 +36,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Microservices â†’ independently deployable, loosely coupled services | Bounded contexts, autonomous teams, polyglot persistence |
-| Communication â†’ synchronous (REST/gRPC) vs async (events/messaging) | Choose sync for queries, async for commands and events |
-| Observability â†’ logging, metrics, and distributed tracing | Centralized logging (ELK), metrics (Prometheus + Grafana), tracing (Jaeger/Zipkin) |
+| Microservices → independently deployable, loosely coupled services | Bounded contexts, autonomous teams, polyglot persistence |
+| Communication → synchronous (REST/gRPC) vs async (events/messaging) | Choose sync for queries, async for commands and events |
+| Observability → logging, metrics, and distributed tracing | Centralized logging (ELK), metrics (Prometheus + Grafana), tracing (Jaeger/Zipkin) |
 
 ---
 ## Chapter Roadmap
@@ -91,14 +91,14 @@ flowchart TD
 
 1. What is a bounded context in Domain-Driven Design? **Answer:** A logical boundary where a particular domain model applies, with its own ubiquitous language
 2. What are the three pillars of observability? **Answer:** Logging, Metrics, Distributed Tracing
-3. Why prefer async communication over sync in microservices? **Answer:** Loose coupling â†’ services do not need to be available simultaneously
+3. Why prefer async communication over sync in microservices? **Answer:** Loose coupling → services do not need to be available simultaneously
 
 ## Theory
 
 ### Domain-Driven Design and Bounded Context
 
 
-Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
+Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** — a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
 
 ![Microservices Architecture Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/38-microservices-principles.png)
 
@@ -118,7 +118,7 @@ Three primary strategies guide service decomposition:
 
 1. **By Business Capability**: Map each business capability (e.g., Order Management, Inventory, Shipping) to a separate service
 2. **By Subdomain**: Use DDD subdomains (core, supporting, generic) to identify service boundaries
-3. **By Conway's Law**: Structure services to match the team organization ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â "organizations design systems that mirror their communication structure"
+3. **By Conway's Law**: Structure services to match the team organization — "organizations design systems that mirror their communication structure"
 
 ### Inter-Service Communication
 
@@ -132,7 +132,7 @@ Three primary strategies guide service decomposition:
 ### Data Ownership
 
 
-**Database-per-service** is the preferred pattern ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each service owns its data exclusively and exposes it only through its API. The **shared-database anti-pattern** couples services at the data layer, creating hidden dependencies that prevent independent evolution.
+**Database-per-service** is the preferred pattern — each service owns its data exclusively and exposes it only through its API. The **shared-database anti-pattern** couples services at the data layer, creating hidden dependencies that prevent independent evolution.
 
 ### Service Mesh
 
@@ -147,13 +147,13 @@ A service mesh manages inter-service communication through a dedicated infrastru
 - **Security**: mTLS between sidecars, fine-grained access policies
 
 > [!TIP]
-> Start with a monolith. Extract microservices only when you understand the domain boundaries â†’ premature decomposition adds complexity without benefit.
+> Start with a monolith. Extract microservices only when you understand the domain boundaries → premature decomposition adds complexity without benefit.
 
 > [!WARNING]
 > Synchronous calls between services (REST/gRPC) create runtime coupling. Use circuit breakers and timeouts to prevent cascading failures.
 
 > [!NOTE]
-> Every service must expose health, metrics, and distributed tracing â†’ without observability, a microservices architecture is unmanageable.
+> Every service must expose health, metrics, and distributed tracing → without observability, a microservices architecture is unmanageable.
 
 ## Complete Code Examples
 
@@ -335,7 +335,7 @@ management:
         include: health,info,metrics
 ```
 
-### Domain Model ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Value Objects
+### Domain Model — Value Objects
 
 ```java
 package com.course.microservices.order.domain.vo;
@@ -855,7 +855,7 @@ public class PaymentReceivedEvent extends DomainEvent {
 }
 ```
 
-### Domain Model ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Entity & Aggregate
+### Domain Model — Entity & Aggregate
 
 ```java
 package com.course.microservices.order.domain.model;

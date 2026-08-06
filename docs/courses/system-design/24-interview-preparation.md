@@ -1,4 +1,4 @@
-﻿# Chapter 24: System Design Interview Preparation
+# Chapter 24: System Design Interview Preparation
 > **Previous:** [23 Case Study Dropbox](./23-case-study-dropbox.md) | **Next:** None
 
 ---
@@ -79,8 +79,8 @@ flowchart TB
     end
 
     subgraph Outcome["Interview Outcome"]
-        O1["Score â‰¥ 7/10 â†’ E5 Ready"]:::action
-        O2["Score â‰¥ 9/10 â†’ E6 Ready"]:::action
+        O1["Score ≥ 7/10 → E5 Ready"]:::action
+        O2["Score ≥ 9/10 → E6 Ready"]:::action
     end
 
     Framework --> Skills
@@ -126,7 +126,7 @@ The interviewer is evaluating four dimensions simultaneously:
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-The most reliable approach to any system design question follows six phases. The time allocations are guidelines â€” adjust based on the question's emphasis and the interviewer's signals.
+The most reliable approach to any system design question follows six phases. The time allocations are guidelines — adjust based on the question's emphasis and the interviewer's signals.
 
 **Phase 1: Requirements Clarification (1-2 minutes)**
 
@@ -161,26 +161,26 @@ Traffic estimation:
 DAU = 500M
 Daily views = DAU * views_per_user = 500M * 5 = 2.5B
 Writes: uploads per day = 5M * 1 = 5M
-Reads: video views per second = 2.5B / 86400 Ëœ 29,000 QPS
-Peak QPS: 3-5x average Ëœ 100,000 QPS
+Reads: video views per second = 2.5B / 86400 ˜ 29,000 QPS
+Peak QPS: 3-5x average ˜ 100,000 QPS
 ```
 
 Storage estimation:
 ```
 Average video size: 50MB (compressed, various resolutions)
 Daily new video storage: 5M * 50MB = 250TB/day
-Yearly storage: 250TB * 365 Ëœ 91PB/year
+Yearly storage: 250TB * 365 ˜ 91PB/year
 Total storage (5 years): ~455PB
 Metadata per video: 1KB
-Total metadata: 5 years * 5M * 365 * 1KB Ëœ 9TB
+Total metadata: 5 years * 5M * 365 * 1KB ˜ 9TB
 ```
 
 Bandwidth estimation:
 ```
-Upload bandwidth: 5M videos/day * 50MB / 86400s Ëœ 2.9 GB/s
+Upload bandwidth: 5M videos/day * 50MB / 86400s ˜ 2.9 GB/s
 Download bandwidth: 29,000 QPS * 50MB = 1.45 TB/s
-CDN bandwidth: 95% of download served by CDN Ëœ 1.38 TB/s
-Origin bandwidth: remaining 5% Ëœ 72.5 GB/s
+CDN bandwidth: 95% of download served by CDN ˜ 1.38 TB/s
+Origin bandwidth: remaining 5% ˜ 72.5 GB/s
 ```
 
 Memory estimation:
@@ -287,9 +287,9 @@ This is the most important phase. Pick 2-3 components from your high-level desig
 **Caching strategy**:
 ```
 Multi-tier caching for YouTube:
-  L1: Browser cache (video segments, API responses) â€” TTL 5 minutes
-  L2: CDN cache (video content, thumbnails) â€” 95% hit rate
-  L3: Application cache (Redis â€” video metadata, user sessions) â€” 99% hit rate
+  L1: Browser cache (video segments, API responses) — TTL 5 minutes
+  L2: CDN cache (video content, thumbnails) — 95% hit rate
+  L3: Application cache (Redis — video metadata, user sessions) — 99% hit rate
   L4: Database replica cache (MySQL query cache if needed)
 ```
 
@@ -324,7 +324,7 @@ This phase is your opportunity to show that you understand engineering as a seri
 
 Google interviewers favor questions that test algorithmic thinking and scalability. Their questions often have a search or data processing angle:
 
-- Design YouTube (most common â€” video streaming, upload, search, recommendations)
+- Design YouTube (most common — video streaming, upload, search, recommendations)
 - Design Google Docs (real-time collaboration, OT/CRDT, conflict resolution, operational transformation)
 - Design Google Maps (geospatial indexing, route optimization, real-time traffic, ETA)
 - Design a Web Crawler (distributed crawling, politeness policy, deduplication, prioritization)
@@ -339,7 +339,7 @@ Google emphasizes estimation and data structures. They may ask you to compute th
 
 Meta interviewers focus on social graph traversal, real-time communication, and news feed algorithms:
 
-- Design News Feed (the original system design interview question â€” ranking, storage, fan-out, personalization)
+- Design News Feed (the original system design interview question — ranking, storage, fan-out, personalization)
 - Design Messenger/Chat (WebSocket, presence detection, message ordering, delivery guarantees, encryption)
 - Design Nearby Friends (geospatial indexing, WebSocket push, battery optimization, privacy controls)
 - Design Facebook Live (streaming protocol, latency optimization, transcoding, interactive features)
@@ -358,7 +358,7 @@ Amazon's leadership principle "Bias for Action" means they want to see you make 
 - Design Fulfillment Center (warehouse layout optimization, inventory placement, picking routes, shipping optimization)
 - Design Product Search (inverted index, faceted navigation, spelling correction, ML ranking)
 
-Amazon interviewers care deeply about failure modes. For every component, be ready to answer "What happens when this fails?" They also expect detailed understanding of consistency models â€” Amazon's Dynamo paper (eventual consistency, vector clocks) is required reading.
+Amazon interviewers care deeply about failure modes. For every component, be ready to answer "What happens when this fails?" They also expect detailed understanding of consistency models — Amazon's Dynamo paper (eventual consistency, vector clocks) is required reading.
 
 **Netflix/Spotify**
 
@@ -368,7 +368,7 @@ These companies focus on media streaming, recommendation, and encoding pipelines
 - Design Music Recommendation (collaborative filtering, audio features, playlists, real-time personalization, A/B testing)
 - Design Audio Encoding Pipeline (parallel encoding, codec selection, metadata extraction, CDN distribution)
 
-Netflix questions often probe CDN and caching architecture. Understand Open Connect (Netflix's CDN appliance), adaptive bitrate algorithms (BOLA, MPC), and the encoding ladder (resolution Ã— bitrate combinations).
+Netflix questions often probe CDN and caching architecture. Understand Open Connect (Netflix's CDN appliance), adaptive bitrate algorithms (BOLA, MPC), and the encoding ladder (resolution × bitrate combinations).
 
 **Uber**
 
@@ -377,7 +377,7 @@ Uber questions focus on real-time systems, geospatial data, and marketplace dyna
 - Design Ride Matching (geospatial index, bipartite matching, real-time streaming, surge pricing)
 - Design ETA Prediction (ML features, map matching, real-time traffic, Kalman filtering)
 - Design Surge Pricing (demand-supply curves, real-time pricing, geographic granularity, fairness)
-- Design Geospatial Indexing (S2, H3, QuadTree, GeoHash â€” compare and contrast)
+- Design Geospatial Indexing (S2, H3, QuadTree, GeoHash — compare and contrast)
 
 **LLD-Focused Questions**
 
@@ -391,7 +391,7 @@ Some companies (especially for mid-level roles) focus on low-level design:
 - Distributed Cache Library (LRU/LFU eviction, sharding, replication, serialization)
 - Rate Limiter Library (token bucket, sliding window, distributed counters, per-user limits)
 
-For LLD questions, draw a class diagram with relationships (inheritance, composition, dependency). Use design patterns appropriately: Strategy (for pricing algorithms), Observer (for event-driven updates), Factory (for creating domain objects), Singleton (for loggers â€” with thread safety considerations).
+For LLD questions, draw a class diagram with relationships (inheritance, composition, dependency). Use design patterns appropriately: Strategy (for pricing algorithms), Observer (for event-driven updates), Factory (for creating domain objects), Singleton (for loggers — with thread safety considerations).
 
 ### Phase 4: Common Pitfalls
 
@@ -513,25 +513,25 @@ Practice with a timer. The following schedule simulates a real interview:
 |---|----------|----------------|
 | 1 | Always start with requirements clarification: functional scope, scale (DAU, QPS, storage), and non-functional constraints (latency, consistency, availability) before drawing a single box | Prevents designing the wrong system and shows structured thinking |
 | 2 | Estimation is non-negotiable: compute QPS, storage, bandwidth, and cache memory in under 3 minutes using order-of-magnitude arithmetic | Demonstrates quantitative reasoning; every architecture decision follows from these numbers |
-| 3 | Phase your answer: Requirements â†’ Estimation â†’ HLD â†’ Data Model â†’ Deep Dive â†’ Trade-offs, with strict time allocation | Covers all evaluation dimensions (structured thinking, depth, breadth, communication) |
-| 4 | In the Deep Dive phase, pick 2-3 components and explore them with caching strategy, replication model, bottleneck analysis, and failure handling | This is where senior vs junior differentiation happens â€” depth over breadth |
+| 3 | Phase your answer: Requirements → Estimation → HLD → Data Model → Deep Dive → Trade-offs, with strict time allocation | Covers all evaluation dimensions (structured thinking, depth, breadth, communication) |
+| 4 | In the Deep Dive phase, pick 2-3 components and explore them with caching strategy, replication model, bottleneck analysis, and failure handling | This is where senior vs junior differentiation happens — depth over breadth |
 | 5 | Always address fault tolerance for every tier: DB failover, cache node loss, broker outage, CDN fallback | Missing failure modes is the most common reason for "no hire" at E5+ |
-| 6 | Match complexity to scale: a URL shortener for 1M users does not need Paxos, CRDTs, and multi-region deployment | Interviewers test judgment â€” over-engineering is as bad as under-engineering |
+| 6 | Match complexity to scale: a URL shortener for 1M users does not need Paxos, CRDTs, and multi-region deployment | Interviewers test judgment — over-engineering is as bad as under-engineering |
 | 7 | Know the company's question patterns: Google tests algorithms/search, Meta tests social graph/realtime, Amazon tests failure modes/decision speed, Uber tests geospatial/realtime | Tailoring your preparation to the company doubles your pass rate |
 
 ## Case Study 1: Amazon Shopping Cart Mock Interview
 
-A senior engineer candidate is asked to "Design Amazon's Shopping Cart" in a 45-minute interview. The candidate begins by clarifying requirements: "300M active users, 50M peak holiday sessions, 30-day cart persistence, multi-seller carts, inventory reserved at checkout not add-to-cart, mobile with intermittent connectivity, price changes between add and checkout." They then estimate: cart read QPS = 50M sessions Ã— 10 item checks / 86400 â‰ˆ 5,800 QPS; cart write QPS = 2,900 QPS; storage = 50M sessions Ã— 30 days Ã— 256 bytes â‰ˆ 384 GB.
+A senior engineer candidate is asked to "Design Amazon's Shopping Cart" in a 45-minute interview. The candidate begins by clarifying requirements: "300M active users, 50M peak holiday sessions, 30-day cart persistence, multi-seller carts, inventory reserved at checkout not add-to-cart, mobile with intermittent connectivity, price changes between add and checkout." They then estimate: cart read QPS = 50M sessions × 10 item checks / 86400 ≈ 5,800 QPS; cart write QPS = 2,900 QPS; storage = 50M sessions × 30 days × 256 bytes ≈ 384 GB.
 
-The high-level design includes: client â†’ CDN â†’ API Gateway â†’ Cart Service (stateless, auto-scaled) â†’ Session Store (Redis with persistence) â†’ Cart DB (DynamoDB with user_id as partition key + item_id as sort key) â†’ Inventory Service â†’ Pricing Service. The deep dive focuses on 30-day persistence using Redis with AOF persistence and DynamoDB as the source of truth, with a reconciliation cron job that syncs Redis â†’ DynamoDB every 5 minutes. For intermittent connectivity, the mobile client maintains a local SQLite cache and syncs via last-write-wins on reconnect.
+The high-level design includes: client → CDN → API Gateway → Cart Service (stateless, auto-scaled) → Session Store (Redis with persistence) → Cart DB (DynamoDB with user_id as partition key + item_id as sort key) → Inventory Service → Pricing Service. The deep dive focuses on 30-day persistence using Redis with AOF persistence and DynamoDB as the source of truth, with a reconciliation cron job that syncs Redis → DynamoDB every 5 minutes. For intermittent connectivity, the mobile client maintains a local SQLite cache and syncs via last-write-wins on reconnect.
 
 Trade-offs discussed: DynamoDB vs PostgreSQL (DynamoDB wins on auto-scaling for holiday peaks but loses on complex queries; cart queries are all by primary key, so DynamoDB is ideal), Redis AOF vs RDB (AOF chosen for durability despite 2x memory overhead), synchronous inventory check vs async (synchronous chosen to prevent overselling but adds 50ms latency). Failure analysis: if Cart DB is unreachable, Redis serves reads for 5 minutes before circuit breaker opens; if Inventory Service is slow, cart show returns cached availability with a "price may have changed" banner. The candidate scores 9/10 and receives an E6 offer.
 
-## Case Study 2: Real-World Design Failure â€” Knight Capital
+## Case Study 2: Real-World Design Failure — Knight Capital
 
 In 2012, Knight Capital lost $440M in 45 minutes due to a flawed system design deployment. The incident illustrates every system design antipattern from this chapter. Knight deployed new retail order routing code to 8 servers, but a previous deployment had been tested on 7 of them. The 8th server ran old code that interpreted a previously unused flag field as "send order" instead of "disable." The result: the 8th server sent millions of erroneous orders into the market at 4M orders/second.
 
-The design failures: no canary deployment (all 8 servers went live simultaneously), no feature flags (a boolean field could trigger real orders), no gradual rollout, no monitoring for anomalous order rates, no circuit breaker when order volume exceeded historical patterns by 1000x, and no kill switch for the new functionality. The post-mortem recommends: phased rollouts (10% â†’ 30% â†’ 100%), feature flags that gate new behavior independently of deployment, real-time anomaly detection with automatic rollback, circuit breakers on external order flow, and a manual kill switch that an operator can trigger within 2 seconds.
+The design failures: no canary deployment (all 8 servers went live simultaneously), no feature flags (a boolean field could trigger real orders), no gradual rollout, no monitoring for anomalous order rates, no circuit breaker when order volume exceeded historical patterns by 1000x, and no kill switch for the new functionality. The post-mortem recommends: phased rollouts (10% → 30% → 100%), feature flags that gate new behavior independently of deployment, real-time anomaly detection with automatic rollback, circuit breakers on external order flow, and a manual kill switch that an operator can trigger within 2 seconds.
 
 This case study directly maps to interview expectations: when you design a system and the interviewer asks "what happens when this fails?", they are testing whether you have learned the lessons of Knight Capital, GitHub's Oct 21 outage, and every major production incident. Always include deployment strategy, feature flags, monitoring dashboards, and rollback procedures in your design.
 
@@ -540,7 +540,7 @@ This case study directly maps to interview expectations: when you design a syste
 | # | Question | Options | Answer |
 |---|----------|---------|--------|
 | 1 | What is the first phase of the six-phase system design interview framework? | A) Deep Dive, B) High-Level Design, C) Requirements Clarification, D) Estimation | C |
-| 2 | A system with 500M DAU, each performing 5 actions per day, has approximately what average QPS? | A) 5,000, B) 29,000, C) 100,000, D) 500,000 | B (500MÃ—5/86400 â‰ˆ 28,935) |
+| 2 | A system with 500M DAU, each performing 5 actions per day, has approximately what average QPS? | A) 5,000, B) 29,000, C) 100,000, D) 500,000 | B (500M×5/86400 ≈ 28,935) |
 | 3 | Which company's interview questions most heavily emphasize failure mode analysis and decision-making under ambiguity? | A) Google, B) Meta, C) Amazon, D) Uber | C |
 | 4 | What distinguishes an E5 answer from an E6 answer in a system design interview? | A) E6 designs for 1B+ users, B) E6 handles multi-region, C) E6 designs for multiple orgs, D) E5 doesn't need estimation | B (E5: 100M+ users; E6: global-scale 500M+, multi-region, all failure modes) |
 | 5 | Which pattern should you use when a system has heavy writes AND heavy reads with different data shapes? | A) Master-slave replication, B) CQRS, C) Read replicas, D) Multi-master | B |
@@ -713,12 +713,12 @@ class InterviewScorer {
   generateReport(): string {
     const lines: string[] = ['--- Interview Score Report ---']
     for (const [name, c] of this.criteria) {
-      const bar = 'â–ˆ'.repeat(c.score) + 'â–‘'.repeat(c.maxScore - c.score)
-      lines.push(`${name}: ${bar} ${c.score}/${c.maxScore} â€” ${c.feedback}`)
+      const bar = '█'.repeat(c.score) + '░'.repeat(c.maxScore - c.score)
+      lines.push(`${name}: ${bar} ${c.score}/${c.maxScore} — ${c.feedback}`)
     }
     const r = this.readiness()
     lines.push(`\nTotal: ${this.total()}/${this.maxTotal()} (${this.percentage()}%)`)
-    lines.push(`Level: ${r.level} â€” ${r.readyFor}`)
+    lines.push(`Level: ${r.level} — ${r.readyFor}`)
     if (r.gaps.length) {
       lines.push(`Gaps:\n  ${r.gaps.join('\n  ')}`)
     }
@@ -856,43 +856,43 @@ export { InterviewScorer, QuestionBank, CapacityPlanner }
 
 ### Review Questions
 
-<details><summary>Solution</summary>1. **Six-phase framework**: (1) Requirements Clarification (1-2 min) â€” clarify scope, users, features, non-functional constraints. (2) Estimation (2-3 min) â€” QPS, storage, bandwidth, memory. (3) High-Level Design (5-8 min) â€” box diagram with components and connections. (4) Data Model (3-5 min) â€” schema or key-value design with indexing strategy. (5) Deep Dive (15-20 min) â€” pick 2-3 components, explore caching, replication, bottlenecks, failure modes. (6) Trade-offs (5-10 min) â€” discuss alternatives and justify your choices.
+<details><summary>Solution</summary>1. **Six-phase framework**: (1) Requirements Clarification (1-2 min) — clarify scope, users, features, non-functional constraints. (2) Estimation (2-3 min) — QPS, storage, bandwidth, memory. (3) High-Level Design (5-8 min) — box diagram with components and connections. (4) Data Model (3-5 min) — schema or key-value design with indexing strategy. (5) Deep Dive (15-20 min) — pick 2-3 components, explore caching, replication, bottlenecks, failure modes. (6) Trade-offs (5-10 min) — discuss alternatives and justify your choices.
 
-2. **URL shortener estimation**: Daily writes = 100M. 10-year storage = 100M Ã— 365 Ã— 10 Ã— 1KB = 365TB. Read QPS = 100M Ã— 100 / 86400 â‰ˆ 115,740 QPS. Bandwidth = 115,740 Ã— 1KB â‰ˆ 115 MB/s. Peak bandwidth (5x) â‰ˆ 575 MB/s.
+2. **URL shortener estimation**: Daily writes = 100M. 10-year storage = 100M × 365 × 10 × 1KB = 365TB. Read QPS = 100M × 100 / 86400 ≈ 115,740 QPS. Bandwidth = 115,740 × 1KB ≈ 115 MB/s. Peak bandwidth (5x) ≈ 575 MB/s.
 
 3. **E5 vs E6**: E5 independently designs for 100M+ users with minimal guidance. E6 drives ambiguous large-scale design for 500M+ users, handles multi-region deployment, and covers all failure modes. Example: E5 designs a single-region video platform; E6 designs multi-region with disaster recovery, CDN pre-warming, and regional failover.
 
-4. **Five pitfalls**: (1) Jumping to solution â€” always spend 1-2 min on requirements. (2) Ignoring data modeling â€” schema reveals access patterns. (3) Forgetting fault tolerance â€” discuss failure for every tier. (4) Missing caching â€” identify hot paths and add caching. (5) Over-engineering â€” match complexity to scale.
+4. **Five pitfalls**: (1) Jumping to solution — always spend 1-2 min on requirements. (2) Ignoring data modeling — schema reveals access patterns. (3) Forgetting fault tolerance — discuss failure for every tier. (4) Missing caching — identify hot paths and add caching. (5) Over-engineering — match complexity to scale.
 
-5. **Company patterns**: Google â€” algorithmic thinking (search, KV stores, data processing). Meta â€” social graph traversal, real-time communication, news feed. Amazon â€” failure modes, decisions under ambiguity, leadership principles. Uber â€” geospatial indexing, real-time matching, marketplace dynamics.
+5. **Company patterns**: Google — algorithmic thinking (search, KV stores, data processing). Meta — social graph traversal, real-time communication, news feed. Amazon — failure modes, decisions under ambiguity, leadership principles. Uber — geospatial indexing, real-time matching, marketplace dynamics.
 </details>
 
 ### Application Problems
 
 <details><summary>Solution</summary>1. **Question Classification**: (a) Product, (b) Infrastructure, (c) Product, (d) LLD, (e) Product, (f) Infrastructure, (g) LLD, (h) Infrastructure, (i) LLD (j) Product. Clarifying questions for each should cover users, scale, read/write ratio, consistency, availability, and latency requirements.
 
-2. **Uber estimation**: DAU = 50M Ã— 0.4 = 20M. Peak hour ride requests = 20M Ã— 0.1 / 1h = 2M requests/hour â‰ˆ 556 QPS. Trip storage = 500M Ã— 2KB Ã— 365 Ã— 5 = 1.825PB. Bandwidth for GPS: 10M Ã— 1KB Ã— (1/4) = 2.5 GB/s inbound. The system is write-heavy (GPS updates far exceed ride requests).
+2. **Uber estimation**: DAU = 50M × 0.4 = 20M. Peak hour ride requests = 20M × 0.1 / 1h = 2M requests/hour ≈ 556 QPS. Trip storage = 500M × 2KB × 365 × 5 = 1.825PB. Bandwidth for GPS: 10M × 1KB × (1/4) = 2.5 GB/s inbound. The system is write-heavy (GPS updates far exceed ride requests).
 
 3. **Trade-off analysis (example: SQL vs NoSQL for URL shortener)**:
-   SQL (PostgreSQL): pros â€” ACID transactions, joins for analytics, strong consistency for redirects (no stale reads), well-understood tooling. Cons â€” harder to shard, write bottleneck on master, read replicas add eventual consistency. NoSQL (DynamoDB/Cassandra): pros â€” auto-scaling, partition-tolerant, high write throughput. Cons â€” no joins (need denormalized tables), eventual consistency (risk of stale redirects for recently created URLs). Recommendation: Start with SQL (strong consistency matters for redirects), add read replicas, then shard by hash of short code when exceeding 50K QPS.
+   SQL (PostgreSQL): pros — ACID transactions, joins for analytics, strong consistency for redirects (no stale reads), well-understood tooling. Cons — harder to shard, write bottleneck on master, read replicas add eventual consistency. NoSQL (DynamoDB/Cassandra): pros — auto-scaling, partition-tolerant, high write throughput. Cons — no joins (need denormalized tables), eventual consistency (risk of stale redirects for recently created URLs). Recommendation: Start with SQL (strong consistency matters for redirects), add read replicas, then shard by hash of short code when exceeding 50K QPS.
 </details>
 
 ### Challenge Problem
 
 <details><summary>Solution>
-**Amazon Shopping Cart â€” Mock Interview Solution**
+**Amazon Shopping Cart — Mock Interview Solution**
 
 **Clarifying questions**: V1 vs V2 features? Guest vs logged-in carts? Multi-device sync? Tax/shipping calculation at cart stage? Cart size limits? Abandoned cart recovery?
 
-**Estimation**: Cart reads = 50M sessions Ã— 10 item checks / 86400 â‰ˆ 5,800 QPS. Writes = 50M sessions Ã— 2 items/session / 86400 â‰ˆ 1,160 QPS. Storage = 50M sessions Ã— 30 days Ã— 256 bytes â‰ˆ 384 GB. Bandwidth = 5,800 QPS Ã— 2KB response â‰ˆ 11.6 MB/s.
+**Estimation**: Cart reads = 50M sessions × 10 item checks / 86400 ≈ 5,800 QPS. Writes = 50M sessions × 2 items/session / 86400 ≈ 1,160 QPS. Storage = 50M sessions × 30 days × 256 bytes ≈ 384 GB. Bandwidth = 5,800 QPS × 2KB response ≈ 11.6 MB/s.
 
-**Architecture**: Client â†’ CDN â†’ API Gateway â†’ Cart Service (stateless, auto-scaled) â†’ Session Store (Redis + DynamoDB) â†’ Cart DB (DynamoDB, user_id PK + item_id SK) â†’ Inventory Service â†’ Pricing Service.
+**Architecture**: Client → CDN → API Gateway → Cart Service (stateless, auto-scaled) → Session Store (Redis + DynamoDB) → Cart DB (DynamoDB, user_id PK + item_id SK) → Inventory Service → Pricing Service.
 
-**Deep Dive â€” 30-day persistence**: Redis with AOF persistence for fast reads. DynamoDB as source of truth. Reconciliation cron job syncs Redisâ†’DynamoDB every 5 min. Mobile: local SQLite cache, sync via last-write-wins on reconnect.
+**Deep Dive — 30-day persistence**: Redis with AOF persistence for fast reads. DynamoDB as source of truth. Reconciliation cron job syncs Redis→DynamoDB every 5 min. Mobile: local SQLite cache, sync via last-write-wins on reconnect.
 
 **Trade-offs**: DynamoDB vs PostgreSQL (DynamoDB for auto-scaling holiday peaks, cart queries are all PK-based); Redis AOF vs RDB (AOF chosen for durability); synchronous vs async inventory check (synchronous prevents overselling at cost of 50ms latency).
 
-**Failure modes**: Cart DB unreachable â†’ Redis serves reads for 5 min, circuit breaker opens. Inventory service slow â†’ show cached availability with "price may have changed" banner. Cross-DC session â†’ use route-53 latency-based routing with DynamoDB global tables.
+**Failure modes**: Cart DB unreachable → Redis serves reads for 5 min, circuit breaker opens. Inventory service slow → show cached availability with "price may have changed" banner. Cross-DC session → use route-53 latency-based routing with DynamoDB global tables.
 </details>
 
 ### TypeScript: Estimation Utilities and Design Patterns
@@ -1002,22 +1002,22 @@ class MockInterviewScorer {
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Books (ranked by difficulty)**
-- ???: "System Design Interview â€” An Insider's Guide" (Alex Xu) â€” Best for beginners, covers 15 common questions step by step
-- ???: "Designing Data-Intensive Applications" (Martin Kleppmann) â€” Required reading for distributed systems fundamentals
-- ???: "The Art of Scalability" (Abbott & Fisher) â€” Comprehensive but dense, covers organizational and process scalability
-- ???: "Building Microservices" (Sam Newman) â€” Practical guidance on service boundaries, communication patterns, and deployment
-- ???: "Distributed Systems" (van Steen & Tanenbaum) â€” Academic textbook covering theory behind replication, consensus, and consistency
+- ???: "System Design Interview — An Insider's Guide" (Alex Xu) — Best for beginners, covers 15 common questions step by step
+- ???: "Designing Data-Intensive Applications" (Martin Kleppmann) — Required reading for distributed systems fundamentals
+- ???: "The Art of Scalability" (Abbott & Fisher) — Comprehensive but dense, covers organizational and process scalability
+- ???: "Building Microservices" (Sam Newman) — Practical guidance on service boundaries, communication patterns, and deployment
+- ???: "Distributed Systems" (van Steen & Tanenbaum) — Academic textbook covering theory behind replication, consensus, and consistency
 
 **YouTube Channels**
-- Gaurav Sen (System Design) â€” Best format: clear diagrams, real system examples, multiple perspectives per topic
-- Tech Dummies (Design YouTube, Netflix, Uber) â€” Deep dives with whiteboard diagrams, good for visual learners
-- Hello Interview (asynchronous mock interviews) â€” Recorded mock interviews with real-time feedback
-- System Design Interview (codeKarle) â€” Clean, well-structured walkthroughs of common questions
+- Gaurav Sen (System Design) — Best format: clear diagrams, real system examples, multiple perspectives per topic
+- Tech Dummies (Design YouTube, Netflix, Uber) — Deep dives with whiteboard diagrams, good for visual learners
+- Hello Interview (asynchronous mock interviews) — Recorded mock interviews with real-time feedback
+- System Design Interview (codeKarle) — Clean, well-structured walkthroughs of common questions
 
 **Mock Interview Platforms**
-- Pramp â€” Free peer-to-peer mock interviews with structured feedback forms
-- interviewing.io â€” Anonymous technical interviews with engineers from FAANG companies
-- DesignGurus â€” Mock interviews specifically for system design with expert reviewers
+- Pramp — Free peer-to-peer mock interviews with structured feedback forms
+- interviewing.io — Anonymous technical interviews with engineers from FAANG companies
+- DesignGurus — Mock interviews specifically for system design with expert reviewers
 
 **Cheat Sheet to Memorize**
 

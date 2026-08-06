@@ -1,4 +1,4 @@
-﻿# Chapter 03: Linked Lists
+# Chapter 03: Linked Lists
 
 > Linked lists test your understanding of pointer manipulation, memory management, and recursive thinking. They are deceptively simple but require careful handling of edge cases.
 
@@ -104,9 +104,9 @@ flowchart LR
 
 ### Problem 1: Reverse Linked List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Linked List, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Linked List, Recursion]
 
 **Problem:** Given the head of a singly linked list, reverse the list and return the new head.
 
@@ -117,8 +117,8 @@ Output: [5, 4, 3, 2, 1]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 5000
-- -5000 â‰¤ Node.val â‰¤ 5000
+- 0 ≤ nodes ≤ 5000
+- -5000 ≤ Node.val ≤ 5000
 
 **Solution Approach:**
 - **Iterative:** Use three pointers (prev, curr, next). Time O(n), Space O(1).
@@ -186,9 +186,9 @@ console.log(listToArray(reverseList(null)));
 
 ### Problem 2: Merge Two Sorted Lists
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Linked List, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Linked List, Recursion]
 
 **Problem:** Merge two sorted linked lists into one sorted list.
 
@@ -199,8 +199,8 @@ Output: [1, 1, 2, 3, 4, 4]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 50
-- -100 â‰¤ Node.val â‰¤ 100
+- 0 ≤ nodes ≤ 50
+- -100 ≤ Node.val ≤ 100
 
 **Solution Approach:**
 - **Iterative:** Use dummy head, compare and attach smaller node.
@@ -245,9 +245,9 @@ console.log(listToArray(mergeTwoLists(null, arrayToList([0]))));
 
 ### Problem 3: Linked List Cycle
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Linked List, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Linked List, Two Pointers]
 
 **Problem:** Given head of a linked list, determine if there is a cycle.
 
@@ -258,8 +258,8 @@ Output: true
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 10â´
-- -10âµ â‰¤ Node.val â‰¤ 10âµ
+- 0 ≤ nodes ≤ 10⁴
+- -10⁵ ≤ Node.val ≤ 10⁵
 
 **Solution Approach:**
 - **Hash Set:** Track visited nodes. Time O(n), Space O(n).
@@ -303,9 +303,9 @@ console.log(hasCycle(list)); // false
 
 ### Problem 4: Remove Duplicates from Sorted List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Linked List]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Linked List]
 
 **Problem:** Given a sorted linked list, delete all duplicates such that each element appears only once.
 
@@ -316,7 +316,7 @@ Output: [1, 2]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 300
+- 0 ≤ nodes ≤ 300
 
 ```typescript
 function deleteDuplicates(head: ListNode | null): ListNode | null {
@@ -349,9 +349,9 @@ console.log(listToArray(deleteDuplicates(arrayToList([1, 1, 2, 3, 3]))));
 
 ### Problem 5: Middle of the Linked List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Linked List, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Linked List, Two Pointers]
 
 **Problem:** Return the middle node of the linked list. If there are two middle nodes, return the second middle.
 
@@ -362,7 +362,7 @@ Output: 3
 ```
 
 **Constraints:**
-- 1 â‰¤ nodes â‰¤ 100
+- 1 ≤ nodes ≤ 100
 
 ```typescript
 function middleNode(head: ListNode | null): ListNode | null {
@@ -391,9 +391,9 @@ console.log(middleNode(arrayToList([1, 2, 3, 4, 5, 6]))?.val); // 4
 
 ### Problem 6: Remove Linked List Elements
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Linked List]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Linked List]
 
 **Problem:** Remove all nodes with a given value.
 
@@ -435,9 +435,9 @@ console.log(listToArray(removeElements(arrayToList([]), 1)));
 
 ### Problem 7: Palindrome Linked List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Linked List, Two Pointers, Stack]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Linked List, Two Pointers, Stack]
 
 **Problem:** Given the head of a linked list, determine if it's a palindrome.
 
@@ -448,7 +448,7 @@ Output: true
 ```
 
 **Constraints:**
-- 1 â‰¤ nodes â‰¤ 10âµ
+- 1 ≤ nodes ≤ 10⁵
 
 **Solution Approach:**
 - Find mid, reverse second half, compare both halves.
@@ -509,9 +509,9 @@ console.log(isPalindrome(arrayToList([1]))); // true
 
 ### Problem 8: Add Two Numbers
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List, Math]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List, Math]
 
 **Problem:** Given two non-empty linked lists representing two non-negative integers (digits stored in reverse order), add them and return the sum as a linked list.
 
@@ -522,7 +522,7 @@ Output: [7, 0, 8] (807)
 ```
 
 **Constraints:**
-- 1 â‰¤ nodes â‰¤ 100
+- 1 ≤ nodes ≤ 100
 
 ```typescript
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
@@ -563,9 +563,9 @@ console.log(listToArray(addTwoNumbers(
 
 ### Problem 9: Remove Nth Node From End of List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List, Two Pointers]
 
 **Problem:** Remove the nth node from the end of the list.
 
@@ -576,8 +576,8 @@ Output: [1, 2, 3, 5]
 ```
 
 **Constraints:**
-- 1 â‰¤ nodes â‰¤ 30
-- 1 â‰¤ n â‰¤ nodes
+- 1 ≤ nodes ≤ 30
+- 1 ≤ n ≤ nodes
 
 **Solution Approach:**
 - **Two passes:** Find length, then remove len-n.
@@ -618,9 +618,9 @@ console.log(listToArray(removeNthFromEnd(arrayToList([1]), 1)));
 
 ### Problem 10: Swap Nodes in Pairs
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List, Recursion]
 
 **Problem:** Swap every two adjacent nodes in a linked list.
 
@@ -631,7 +631,7 @@ Output: [2, 1, 4, 3]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 100
+- 0 ≤ nodes ≤ 100
 
 ```typescript
 function swapPairs(head: ListNode | null): ListNode | null {
@@ -668,9 +668,9 @@ console.log(listToArray(swapPairs(arrayToList([1, 2, 3]))));
 
 ### Problem 11: Odd Even Linked List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List]
 
 **Problem:** Group all odd-indexed nodes together followed by even-indexed nodes.
 
@@ -681,7 +681,7 @@ Output: [1, 3, 5, 2, 4]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 10â´
+- 0 ≤ nodes ≤ 10⁴
 
 ```typescript
 function oddEvenList(head: ListNode | null): ListNode | null {
@@ -718,9 +718,9 @@ console.log(listToArray(oddEvenList(arrayToList([1]))));
 
 ### Problem 12: Intersection of Two Linked Lists
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List, Two Pointers]
 
 **Problem:** Find the node at which the intersection of two singly linked lists begins.
 
@@ -731,7 +731,7 @@ Output: Intersected at '8'
 ```
 
 **Constraints:**
-- 1 â‰¤ nodes â‰¤ 3 Ã— 10â´
+- 1 ≤ nodes ≤ 3 × 10⁴
 
 **Solution Approach:**
 - **Hash Set:** Store visited nodes. Time O(n+m), Space O(n).
@@ -767,9 +767,9 @@ console.log(getIntersectionNode(headA, headB)?.val); // 8
 
 ### Problem 13: Rotate List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List, Two Pointers]
 
 **Problem:** Rotate the linked list to the right by k places.
 
@@ -780,7 +780,7 @@ Output: [4, 5, 1, 2, 3]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 500
+- 0 ≤ nodes ≤ 500
 
 ```typescript
 function rotateRight(head: ListNode | null, k: number): ListNode | null {
@@ -825,11 +825,11 @@ console.log(listToArray(rotateRight(arrayToList([1, 2]), 1)));
 
 ### Problem 14: Reorder List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List, Two Pointers]
 
-**Problem:** Given L0 â†’ L1 â†’ â€¦ â†’ Ln-1 â†’ Ln, reorder to L0 â†’ Ln â†’ L1 â†’ Ln-1 â†’ L2 â†’ Ln-2 â†’ â€¦
+**Problem:** Given L0 → L1 → … → Ln-1 → Ln, reorder to L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …
 
 **Example 1:**
 ```
@@ -885,9 +885,9 @@ console.log(listToArray(list)); // [1, 4, 2, 3]
 
 ### Problem 15: Sort List
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List, Sorting, Merge Sort]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List, Sorting, Merge Sort]
 
 **Problem:** Sort a linked list in O(n log n) time and O(1) space.
 
@@ -898,7 +898,7 @@ Output: [1, 2, 3, 4]
 ```
 
 **Constraints:**
-- 0 â‰¤ nodes â‰¤ 5 Ã— 10â´
+- 0 ≤ nodes ≤ 5 × 10⁴
 
 ```typescript
 function sortList(head: ListNode | null): ListNode | null {
@@ -936,9 +936,9 @@ console.log(listToArray(sortList(arrayToList([-1, 5, 3, 4, 0]))));
 
 ### Problem 16: Remove Duplicates from Sorted List II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List]
 
 **Problem:** Remove all nodes that have duplicate numbers, leaving only distinct numbers.
 
@@ -985,9 +985,9 @@ console.log(listToArray(deleteDuplicates2(arrayToList([1, 1, 1, 2, 3]))));
 
 ### Problem 17: Reverse Linked List II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Linked List]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Linked List]
 
 **Problem:** Reverse a linked list from position left to right. 1-indexed.
 
@@ -1035,9 +1035,9 @@ console.log(listToArray(reverseBetween(arrayToList([1, 2, 3, 4, 5]), 2, 4)));
 
 ### Problem 18: Merge K Sorted Lists
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Linked List, Divide and Conquer, Heap]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Linked List, Divide and Conquer, Heap]
 
 **Problem:** Merge k sorted linked lists into one sorted list.
 
@@ -1049,8 +1049,8 @@ Output: [1, 1, 2, 3, 4, 4, 5, 6]
 
 **Constraints:**
 - k == lists.length
-- 0 â‰¤ k â‰¤ 10â´
-- 0 â‰¤ nodes per list â‰¤ 500
+- 0 ≤ k ≤ 10⁴
+- 0 ≤ nodes per list ≤ 500
 
 **Solution Approach:**
 - **Divide & Conquer:** Merge pairs recursively. Time O(n log k), Space O(log k).
@@ -1089,9 +1089,9 @@ console.log(listToArray(mergeKLists(lists)));
 
 ### Problem 19: Copy List with Random Pointer
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Linked List, Hash Table]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Linked List, Hash Table]
 
 **Problem:** A linked list has an additional random pointer that could point to any node or null. Create a deep copy.
 
@@ -1172,9 +1172,9 @@ console.log(copied?.next?.random?.val); // 7
 
 ### Problem 20: Reverse Nodes in k-Group
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Linked List, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Linked List, Recursion]
 
 **Problem:** Reverse nodes in groups of k. If remaining nodes < k, keep original order.
 
@@ -1185,7 +1185,7 @@ Output: [2, 1, 4, 3, 5]
 ```
 
 **Constraints:**
-- 1 â‰¤ k â‰¤ nodes â‰¤ 5000
+- 1 ≤ k ≤ nodes ≤ 5000
 
 ```typescript
 function reverseKGroup(head: ListNode | null, k: number): ListNode | null {
@@ -1222,7 +1222,7 @@ console.log(listToArray(reverseKGroup(arrayToList([1, 2, 3, 4, 5]), 3)));
 ```
 
 **Time Complexity:** O(n)
-**Space Complexity:** O(n/k) â‰ˆ O(n) recursion stack in worst case
+**Space Complexity:** O(n/k) ≈ O(n) recursion stack in worst case
 
 ---
 

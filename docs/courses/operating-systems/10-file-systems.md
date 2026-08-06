@@ -1,4 +1,4 @@
-﻿# Chapter 10: File Systems
+# Chapter 10: File Systems
 
 **<< [Virtual Memory](./09-virtual-memory.md)** | [**Next: File System Implementation**](./11-file-system-impl.md) >>
 
@@ -73,7 +73,7 @@ A **file** is a named collection of related information recorded on secondary st
 
 **Real-world analogy:** A file is like a library book. The book has a title (file name), call number (inode/identifier), content (data), borrower card (protection), and due-date stamp (timestamps). The library shelf (directory) organises books so you can find them.
 
-**Numbered steps â€” how a file is created (OS perspective):**
+**Numbered steps — how a file is created (OS perspective):**
 
 1. Application calls `open()` with O_CREAT flag
 2. OS allocates a free inode from the inode table
@@ -82,14 +82,14 @@ A **file** is a named collection of related information recorded on secondary st
 5. OS returns a file descriptor to the calling process
 6. File now exists but occupies zero data blocks
 
-**Pseudocode â€” file creation:**
+**Pseudocode — file creation:**
 
 ```
 FUNCTION create_file(path, permissions):
     inode_table <- read_superblock().inode_table
     free_inode <- find_free_inode(inode_table)
     IF free_inode IS NULL:
-        RETURN ERROR("Disk full â€” no free inodes")
+        RETURN ERROR("Disk full — no free inodes")
     init_inode(free_inode, permissions, current_time(), 0)
     parent_dir <- get_parent_dir(path)
     name <- get_filename(path)
@@ -99,7 +99,7 @@ FUNCTION create_file(path, permissions):
     RETURN SUCCESS
 ```
 
-**C++ Implementation â€” file create/write/read:**
+**C++ Implementation — file create/write/read:**
 
 ```cpp
 #include <iostream>
@@ -165,7 +165,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” file operations:**
+**Python Implementation — file operations:**
 
 ```python
 import os
@@ -205,7 +205,7 @@ if __name__ == "__main__":
     os.remove("demo.txt")
 ```
 
- **TypeScript Implementation â€” File System Permissions Simulator:**
+ **TypeScript Implementation — File System Permissions Simulator:**
 
 ```typescript
 /**
@@ -265,7 +265,7 @@ class FileSystemPermissions {
 
     for (const t of tests) {
       const result = this.checkAccess(42, t.uid, t.gid, t.perm);
-      const status = result === t.expect ? 'âœ“ PASS' : 'âœ— FAIL';
+      const status = result === t.expect ? '✓ PASS' : '✗ FAIL';
       console.log(`${status} | ${t.desc}: ${result} (expected ${t.expect})`);
     }
   }
@@ -276,7 +276,7 @@ const fsPerms = new FileSystemPermissions();
 fsPerms.simulate();
 ```
 
-**Mermaid Diagram â€” File Operation Lifecycle:**
+**Mermaid Diagram — File Operation Lifecycle:**
 
 ```mermaid
 sequenceDiagram
@@ -286,7 +286,7 @@ sequenceDiagram
     participant Disk as Disk
     
     P->>OS: open("/data.txt", O_RDONLY)
-    OS->>FS: path_walk("/" â†’ "data.txt")
+    OS->>FS: path_walk("/" → "data.txt")
     FS->>Disk: read inode #42
     Disk-->>FS: inode metadata
     FS-->>OS: permission check OK
@@ -321,7 +321,7 @@ sequenceDiagram
 | Write   | O(n) where n = bytes written | O(1) | May trigger block allocation if file grows |
 | Delete  | O(1) amortised + O(d) path walk | O(1) | Free inode + remove directory entry |
 
-**A&D Table â€” File Concept:**
+**A&D Table — File Concept:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -358,7 +358,7 @@ Every file has metadata stored in its **inode** (Unix) or **file control block**
 | Timestamps | Creation, last access, last modification times | 2026-06-23 10:00 |
 | User identification | Owner, group | uid=1000, gid=100 |
 
-**C++ â€” reading file attributes:**
+**C++ — reading file attributes:**
 
 ```cpp
 #include <iostream>
@@ -391,22 +391,22 @@ The OS provides system calls for these fundamental file operations:
 
 **Real-world analogy:** A restaurant order: **Create** = chef prepares a new recipe card; **Open** = waiter brings the menu; **Read** = you read the menu items; **Write** = you write your order; **Seek** = you skip to the dessert section; **Delete** = order is finished and cleared; **Close** = waiter takes the menu away.
 
-**Numbered steps â€” Open + Read cycle:**
+**Numbered steps — Open + Read cycle:**
 
 1. Process calls `open("/home/user/file.txt", O_RDONLY)`
-2. OS looks up path in directory tree (traverses `/` â†’ `home` â†’ `user` â†’ `file.txt`)
+2. OS looks up path in directory tree (traverses `/` → `home` → `user` → `file.txt`)
 3. OS reads inode for `file.txt`, checks read permission
 4. OS allocates a file descriptor (FD) in the process's FD table
 5. OS creates a system-wide open-file entry with current offset = 0
 6. OS returns FD to process
 7. Process calls `read(fd, buf, 100)`
-8. OS uses FD to find open-file entry â†’ inode â†’ block pointers
+8. OS uses FD to find open-file entry → inode → block pointers
 9. OS reads disk block(s) containing next 100 bytes
 10. OS copies data to user buffer, advances offset by 100
 11. Process calls `close(fd)`
 12. OS decrements open-file reference count; if zero, removes entry
 
-**Pseudocode â€” open system call:**
+**Pseudocode — open system call:**
 
 ```
 FUNCTION open_file(path, flags):
@@ -435,7 +435,7 @@ FUNCTION path_walk(path):
     RETURN current_inode
 ```
 
-**C++ Implementation â€” file operations with error handling:**
+**C++ Implementation — file operations with error handling:**
 
 ```cpp
 #include <iostream>
@@ -492,7 +492,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” all file operations:**
+**Python Implementation — all file operations:**
 
 ```python
 import os
@@ -548,7 +548,7 @@ if __name__ == "__main__":
     print("All operations passed.")
 ```
 
-**A&D Table â€” File Operations:**
+**A&D Table — File Operations:**
 
 | Operation | Advantage | Disadvantage |
 |-----------|-----------|-------------|
@@ -559,7 +559,7 @@ if __name__ == "__main__":
 | Seek | O(1) reposition | Only works on random-access devices |
 | Close | Releases kernel resources | Must flush buffers first |
 
-**Edge Cases â€” File Operations:**
+**Edge Cases — File Operations:**
 
 | Edge Case | Description | Handling |
 |-----------|-------------|----------|
@@ -567,35 +567,35 @@ if __name__ == "__main__":
 | Write to read-only FD | Permission mismatch | Return EBADF or EPERM |
 | Read past EOF | Partial read | Return fewer bytes than requested |
 | Close already closed FD | Double close | Return EBADF |
-| Seek beyond EOF | Hole creation | Sparse file â€” reads return zeros |
+| Seek beyond EOF | Hole creation | Sparse file — reads return zeros |
 
 ---
 
 #### File Types
 
-**Real-world analogy:** A package's shipping label indicates its contents: FRAGILE (image file delivers visual data), PERISHABLE (temp file must be consumed quickly), DOCUMENTS (text file). The postal service uses the label to decide how to handle each package â€” just as the OS uses file type to decide how to interpret data.
+**Real-world analogy:** A package's shipping label indicates its contents: FRAGILE (image file delivers visual data), PERISHABLE (temp file must be consumed quickly), DOCUMENTS (text file). The postal service uses the label to decide how to handle each package — just as the OS uses file type to decide how to interpret data.
 
 Most OS recognise file types to determine how to handle the data:
 
 ```
 Common file types:
-  .exe, .com     â€” Executable files
-  .txt, .doc     â€” Text/document files
-  .c, .java      â€” Source code
-  .o, .obj       â€” Object files
-  .lib, .a       â€” Libraries
-  .jpg, .png     â€” Image files
-  .mp3, .wav     â€” Audio files
-  .mp4, .mov     â€” Video files
-  .tar, .zip     â€” Archive/compressed files
-  .sh, .bat      â€” Script files
-  .so, .dll, .dylib â€” Shared libraries
-  .conf, .ini, .json, .yaml â€” Configuration files
+  .exe, .com     — Executable files
+  .txt, .doc     — Text/document files
+  .c, .java      — Source code
+  .o, .obj       — Object files
+  .lib, .a       — Libraries
+  .jpg, .png     — Image files
+  .mp3, .wav     — Audio files
+  .mp4, .mov     — Video files
+  .tar, .zip     — Archive/compressed files
+  .sh, .bat      — Script files
+  .so, .dll, .dylib — Shared libraries
+  .conf, .ini, .json, .yaml — Configuration files
 ```
 
 Unix-like systems use the file's **magic number** (first few bytes) to determine type, not the extension. Windows uses the extension.
 
-**C++ â€” detect file type via magic number:**
+**C++ — detect file type via magic number:**
 
 ```cpp
 #include <iostream>
@@ -641,7 +641,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-**Python â€” detect file type:**
+**Python — detect file type:**
 
 ```python
 import struct
@@ -674,11 +674,11 @@ if __name__ == "__main__":
     print(d.detect("image.png"))  # PNG Image
 ```
 
-**Edge Cases â€” File Type Mismatch:**
+**Edge Cases — File Type Mismatch:**
 
 | Scenario | Problem | Consequence |
 |----------|---------|-------------|
-| .exe renamed to .txt | Type confusion | OS may try to execute text â†’ error |
+| .exe renamed to .txt | Type confusion | OS may try to execute text → error |
 | Magic number mismatch | Extension lies | Unix ignores extension; reads magic |
 | No magic number | Plain text file | Treated as text regardless of extension |
 | Corrupt header | Unreadable file | Magic bytes gone; type detection fails |
@@ -693,23 +693,23 @@ if __name__ == "__main__":
 
 The simplest method. Data is read in order, from beginning to end.
 
-**Real-world analogy:** A cassette tape. To get to song #5, you must fast-forward through songs 1-4. You cannot jump directly. Reading a scroll â€” you unroll from left to right.
+**Real-world analogy:** A cassette tape. To get to song #5, you must fast-forward through songs 1-4. You cannot jump directly. Reading a scroll — you unroll from left to right.
 
-**Numbered steps â€” sequential read of 3 records:**
+**Numbered steps — sequential read of 3 records:**
 
 1. File pointer at offset 0
-2. Read record 1 â†’ pointer advances past record 1
-3. Read record 2 â†’ pointer advances past record 2
-4. Read record 3 â†’ pointer advances past record 3
+2. Read record 1 → pointer advances past record 1
+3. Read record 2 → pointer advances past record 2
+4. Read record 3 → pointer advances past record 3
 5. To re-read record 2, you must reset to 0 and read 1 and 2
 
 ```
-read next    â†’ read next block, advance pointer
-write next   â†’ write block, advance pointer
-reset        â†’ set pointer to beginning
+read next    → read next block, advance pointer
+write next   → write block, advance pointer
+reset        → set pointer to beginning
 ```
 
-**Pseudocode â€” sequential file read:**
+**Pseudocode — sequential file read:**
 
 ```
 FUNCTION sequential_read(file_descriptor, buffer, n):
@@ -729,7 +729,7 @@ FUNCTION reset(file_descriptor):
     file_descriptor.offset <- 0
 ```
 
-**Dry Run â€” Sequential Read (file contains [A, B, C, D, E]):**
+**Dry Run — Sequential Read (file contains [A, B, C, D, E]):**
 
 | Step | Operation | Offset Before | Bytes Read | Offset After | Result |
 |------|-----------|---------------|------------|--------------|--------|
@@ -740,7 +740,7 @@ FUNCTION reset(file_descriptor):
 | 5 | read buf 3 | 3 | 2 | 5 | D, E |
 | 6 | read buf 1 | 5 | 0 | 5 | EOF |
 
-**C++ Implementation â€” sequential file processing:**
+**C++ Implementation — sequential file processing:**
 
 ```cpp
 #include <iostream>
@@ -795,7 +795,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” sequential access:**
+**Python Implementation — sequential access:**
 
 ```python
 import os
@@ -845,7 +845,7 @@ if __name__ == "__main__":
 | Space overhead | O(1) | No index structures needed |
 | reset | O(1) | Just set pointer to 0 |
 
-**A&D Table â€” Sequential Access:**
+**A&D Table — Sequential Access:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -860,9 +860,9 @@ if __name__ == "__main__":
 
 A file is composed of fixed-length logical records. A program can read or write records in any order.
 
-**Real-world analogy:** A vinyl record player. The tonearm can be placed directly on any track. A filing cabinet â€” each folder has a tab number; you open drawer, go directly to tab #47.
+**Real-world analogy:** A vinyl record player. The tonearm can be placed directly on any track. A filing cabinet — each folder has a tab number; you open drawer, go directly to tab #47.
 
-**Numbered steps â€” direct read of record n:**
+**Numbered steps — direct read of record n:**
 
 1. Compute byte offset = (record_number - 1) * record_size
 2. `lseek(fd, offset, SEEK_SET)` repositions the file pointer
@@ -870,12 +870,12 @@ A file is composed of fixed-length logical records. A program can read or write 
 4. File pointer is now at the start of the next record
 
 ```
-read n       â†’ read block n (where n is a logical record number)
-write n      â†’ write block n
-seek n       â†’ position to record n
+read n       → read block n (where n is a logical record number)
+write n      → write block n
+seek n       → position to record n
 ```
 
-**Pseudocode â€” direct access:**
+**Pseudocode — direct access:**
 
 ```
 FUNCTION direct_read(file_descriptor, record_number, record_size):
@@ -893,7 +893,7 @@ FUNCTION direct_write(file_descriptor, record_number, record_size, data):
     RETURN bytes_written
 ```
 
-**Dry Run â€” Direct Access (file with record_size=4 bytes, records=[ABCD, EFGH, IJKL, MNOP]):**
+**Dry Run — Direct Access (file with record_size=4 bytes, records=[ABCD, EFGH, IJKL, MNOP]):**
 
 | Step | Operation | Compute Offset | Read | Result |
 |------|-----------|---------------|------|--------|
@@ -903,7 +903,7 @@ FUNCTION direct_write(file_descriptor, record_number, record_size, data):
 | 4 | write record 2 with "WXYZ" | (2-1)*4 = 4 | write bytes 4-7 | WXYZ |
 | 5 | read record 2 | (2-1)*4 = 4 | bytes 4-7 | WXYZ |
 
-**C++ Implementation â€” direct access file:**
+**C++ Implementation — direct access file:**
 
 ```cpp
 #include <iostream>
@@ -953,7 +953,7 @@ int main() {
     DirectAccessFile daf("direct.dat");
     daf.write(1, Record{"Alice"});
     daf.write(2, Record{"Bob"});
-    daf.write(5, Record{"Eve â€” sparse write"});
+    daf.write(5, Record{"Eve — sparse write"});
     Record r1 = daf.read(5);
     std::cout << "Record 5: " << r1.data << "\n";
     Record r2 = daf.read(1);
@@ -963,7 +963,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” direct access:**
+**Python Implementation — direct access:**
 
 ```python
 import os
@@ -1002,7 +1002,7 @@ class DirectAccessFile:
 if __name__ == "__main__":
     daf = DirectAccessFile("direct_test.db", 16)
     daf.write_record(1, b"Alice")
-    daf.write_record(3, b"Charlie")  # Sparse â€” record 2 is zeros
+    daf.write_record(3, b"Charlie")  # Sparse — record 2 is zeros
     print(daf.read_record(1))  # Alice
     print(daf.read_record(2))  # zeros
     print(daf.read_record(3))  # Charlie
@@ -1019,7 +1019,7 @@ if __name__ == "__main__":
 | Sparse write | O(1) if hole supported | File system creates holes |
 | Sequential scan all records | O(N) | Must iterate all blocks |
 
-**A&D Table â€” Direct Access:**
+**A&D Table — Direct Access:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -1037,12 +1037,12 @@ Builds an index on top of direct access. The index contains pointers to blocks h
 
 ```
 Customer Index:
-  Key: Smith, J. â†’ Record in block 47
-  Key: Jones, A. â†’ Record in block 12
-  Key: Lee, C.   â†’ Record in block 89
+  Key: Smith, J. → Record in block 47
+  Key: Jones, A. → Record in block 12
+  Key: Lee, C.   → Record in block 89
 ```
 
-**Numbered steps â€” indexed lookup for "Smith":**
+**Numbered steps — indexed lookup for "Smith":**
 
 1. Search index for key "Smith, J." (binary search if sorted, hash if hash index)
 2. Index entry maps key to block number 47
@@ -1050,7 +1050,7 @@ Customer Index:
 4. Seek to offset and read the record
 5. If index is multi-level and block is not in first-level, follow the pointer
 
-**Pseudocode â€” indexed access:**
+**Pseudocode — indexed access:**
 
 ```
 FUNCTION indexed_read(index_file, data_file, key):
@@ -1076,12 +1076,12 @@ FUNCTION search_index(index, key):
     RETURN NULL
 ```
 
-**Dry Run â€” Indexed Access (index table with 4 entries):**
+**Dry Run — Indexed Access (index table with 4 entries):**
 
 | Step | Operation | Key Searched | Mid | Compare | Range | Result |
 |------|-----------|-------------|-----|---------|-------|--------|
 | 1 | binary search | Lee | mid=1 (Jones) | Lee > Jones | low=2, high=3 |
-| 2 | binary search | Lee | mid=2 (Lee) | Lee == Lee | Found â†’ block 47 |
+| 2 | binary search | Lee | mid=2 (Lee) | Lee == Lee | Found → block 47 |
 | 3 | direct read | - | block 47 | offset = (47-1)*32 = 1472 | Read record |
 
 Index Table:
@@ -1093,7 +1093,7 @@ Index Table:
 | Lee, C. | 47 |
 | Smith, J. | 89 |
 
-**C++ Implementation â€” simple indexed file:**
+**C++ Implementation — simple indexed file:**
 
 ```cpp
 #include <iostream>
@@ -1164,7 +1164,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” indexed file with binary search:**
+**Python Implementation — indexed file with binary search:**
 
 ```python
 import os
@@ -1238,7 +1238,7 @@ if __name__ == "__main__":
 | Index rebuild | O(M log M) | Sort all entries |
 | Data retrieval | O(1) | Direct offset from index |
 
-**A&D Table â€” Indexed Access:**
+**A&D Table — Indexed Access:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -1275,29 +1275,29 @@ Directories provide a way to organise files in a hierarchical structure. Each di
 
 - **Single-Level:** One giant bookshelf in a room. Every book on one shelf.
 - **Two-Level:** A bookshelf per person. Alice has her shelf, Bob has his. Same book title on different shelves is fine.
-- **Tree-structured:** A library with sections (Fiction, Science), sub-sections (Computer Science â†’ OS), and books.
+- **Tree-structured:** A library with sections (Fiction, Science), sub-sections (Computer Science → OS), and books.
 - **Acyclic-graph:** Two library sections both reference the same reference book (shared via link).
-- **General-graph:** The reference book's appendix points back to earlier chapters (cycle) â€” a reader could loop forever.
+- **General-graph:** The reference book's appendix points back to earlier chapters (cycle) — a reader could loop forever.
 
 #### Single-Level Directory
 
 All files are in one directory. Simple, but naming conflicts are inevitable in multi-user systems.
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚   / Directory          â”‚
-â”‚   â”œâ”€â”€ thesis.docx      â”‚
-â”‚   â”œâ”€â”€ report.pdf       â”‚
-â”‚   â”œâ”€â”€ data.csv         â”‚
-â”‚   â””â”€â”€ photo.jpg        â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌───────────────────────┐
+│   / Directory          │
+│   ├── thesis.docx      │
+│   ├── report.pdf       │
+│   ├── data.csv         │
+│   └── photo.jpg        │
+└───────────────────────┘
 ```
 
 **Problem**: Two users cannot each have a file called `readme.txt`.
 
-**Real-world analogy:** A single kitchen drawer where everyone throws all utensils. Spoons, knives, peelers â€” all mixed. Two people cannot each own "favourite knife" without conflict.
+**Real-world analogy:** A single kitchen drawer where everyone throws all utensils. Spoons, knives, peelers — all mixed. Two people cannot each own "favourite knife" without conflict.
 
-**Pseudocode â€” single-level directory search:**
+**Pseudocode — single-level directory search:**
 
 ```
 FUNCTION single_level_lookup(directory, filename):
@@ -1308,7 +1308,7 @@ FUNCTION single_level_lookup(directory, filename):
     RETURN NULL
 ```
 
-**C++ â€” single-level directory simulation:**
+**C++ — single-level directory simulation:**
 
 ```cpp
 #include <iostream>
@@ -1350,7 +1350,7 @@ int main() {
 }
 ```
 
-**A&D Table â€” Single-Level Directory:**
+**A&D Table — Single-Level Directory:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -1365,10 +1365,10 @@ int main() {
 Each user has their own directory. A master file directory (MFD) is indexed by user.
 
 ```
-MFD: â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-     â”‚ User1 â”€â”€â†’ UFD1               â”‚
-     â”‚ User2 â”€â”€â†’ UFD2               â”‚
-     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+MFD: ┌──────────────────────────────┐
+     │ User1 ──→ UFD1               │
+     │ User2 ──→ UFD2               │
+     └──────────────────────────────┘
 
 UFD1:        UFD2:
 thesis.docx  readme.txt
@@ -1380,7 +1380,7 @@ data.csv     project.c
 
 **Real-world analogy:** Apartment building mailboxes. Each resident (user) has their own mailbox (UFD). The lobby directory (MFD) lists all residents. You cannot put mail in someone else's box.
 
-**Pseudocode â€” two-level directory lookup:**
+**Pseudocode — two-level directory lookup:**
 
 ```
 FUNCTION two_level_lookup(mfd, username, filename):
@@ -1394,7 +1394,7 @@ FUNCTION two_level_lookup(mfd, username, filename):
     RETURN NULL
 ```
 
-**C++ â€” two-level directory simulation:**
+**C++ — two-level directory simulation:**
 
 ```cpp
 #include <iostream>
@@ -1429,14 +1429,14 @@ public:
 int main() {
     TwoLevelDir fs;
     fs.createFile("alice", "thesis.docx");
-    fs.createFile("bob", "thesis.docx");  // Same name, different user â€” OK
+    fs.createFile("bob", "thesis.docx");  // Same name, different user — OK
     std::cout << "Alice's files:\n"; fs.listUser("alice");
     std::cout << "Bob's files:\n";   fs.listUser("bob");
     return 0;
 }
 ```
 
-**A&D Table â€” Two-Level Directory:**
+**A&D Table — Two-Level Directory:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -1452,36 +1452,36 @@ A tree of arbitrary depth. Each directory may contain files and subdirectories.
 
 ```
 /
-â”œâ”€â”€ home/
-â”‚   â”œâ”€â”€ user1/
-â”‚   â”‚   â”œâ”€â”€ docs/
-â”‚   â”‚   â””â”€â”€ pics/
-â”‚   â””â”€â”€ user2/
-â”‚       â””â”€â”€ project/
-â”œâ”€â”€ etc/
-â”‚   â”œâ”€â”€ passwd
-â”‚   â””â”€â”€ hosts
-â”œâ”€â”€ usr/
-â”‚   â”œâ”€â”€ bin/
-â”‚   â””â”€â”€ lib/
-â””â”€â”€ var/
-    â””â”€â”€ log/
+├── home/
+│   ├── user1/
+│   │   ├── docs/
+│   │   └── pics/
+│   └── user2/
+│       └── project/
+├── etc/
+│   ├── passwd
+│   └── hosts
+├── usr/
+│   ├── bin/
+│   └── lib/
+└── var/
+    └── log/
 ```
 
 Unix/Linux: root is `/`. Windows: each volume has a root like `C:\`.
 
 **Real-world analogy:** A company org chart. CEO (root) has VPs (subdirs), who have managers, who have ICs (files). To find an employee, you follow the reporting chain from the CEO down.
 
-**Numbered steps â€” lookup `/home/user1/docs/report.pdf`:**
+**Numbered steps — lookup `/home/user1/docs/report.pdf`:**
 
 1. Start at root inode `/` (inode 2 on ext4)
-2. Read root directory entries, find `home` â†’ inode #128
-3. Read directory inode #128, find `user1` â†’ inode #200
-4. Read directory inode #200, find `docs` â†’ inode #310
-5. Read directory inode #310, find `report.pdf` â†’ inode #512
+2. Read root directory entries, find `home` → inode #128
+3. Read directory inode #128, find `user1` → inode #200
+4. Read directory inode #200, find `docs` → inode #310
+5. Read directory inode #310, find `report.pdf` → inode #512
 6. Return inode #512 for further operations
 
-**Pseudocode â€” tree-structured directory traversal:**
+**Pseudocode — tree-structured directory traversal:**
 
 ```
 FUNCTION path_walk(path):
@@ -1501,17 +1501,17 @@ FUNCTION path_walk(path):
     RETURN current_inode
 ```
 
-**Dry Run Trace â€” path walk for `/home/user1/docs/report.pdf`:**
+**Dry Run Trace — path walk for `/home/user1/docs/report.pdf`:**
 
 | Step | Component | Current Inode | Directory Entries | Found? | Next Inode |
 |------|-----------|---------------|-------------------|--------|------------|
 | 1 | (start) | 2 (/) | [etc, home, usr, var] | - | - |
-| 2 | home | 2 | etcâ†’4, homeâ†’8, usrâ†’16, varâ†’32 | Yes | 8 |
-| 3 | user1 | 8 | user1â†’50, user2â†’60 | Yes | 50 |
-| 4 | docs | 50 | docsâ†’70, picsâ†’75 | Yes | 70 |
-| 5 | report.pdf | 70 | report.pdfâ†’100, notes.txtâ†’101 | Yes | 100 (file inode) |
+| 2 | home | 2 | etc→4, home→8, usr→16, var→32 | Yes | 8 |
+| 3 | user1 | 8 | user1→50, user2→60 | Yes | 50 |
+| 4 | docs | 50 | docs→70, pics→75 | Yes | 70 |
+| 5 | report.pdf | 70 | report.pdf→100, notes.txt→101 | Yes | 100 (file inode) |
 
-**C++ Implementation â€” tree directory traversal:**
+**C++ Implementation — tree directory traversal:**
 
 ```cpp
 #include <iostream>
@@ -1571,7 +1571,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-**Python Implementation â€” tree directory walk:**
+**Python Implementation — tree directory walk:**
 
 ```python
 import os
@@ -1623,7 +1623,7 @@ if __name__ == "__main__":
     print(f"\nTotal: {fc} files, {tb} bytes")
 ```
 
-**A&D Table â€” Tree-Structured Directory:**
+**A&D Table — Tree-Structured Directory:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -1640,10 +1640,10 @@ A tree with shared subdirectories and files (via links). Allows a file to appear
 
 ```
 /home/user1/
-    â”œâ”€â”€ docs/
-    â”‚   â””â”€â”€ report.pdf
-    â”œâ”€â”€ pics/ â”€â”€â”€ link â”€â”€â”€â†’ /home/user2/shared_pics/
-    â””â”€â”€ note.txt â†â”€â”€ link â”€â”€â”€â”€ /home/user2/memo.txt
+    ├── docs/
+    │   └── report.pdf
+    ├── pics/ ─── link ───→ /home/user2/shared_pics/
+    └── note.txt ←── link ──── /home/user2/memo.txt
 ```
 
 **Real-world analogy:** A shared Google Drive folder. Two teams each have the folder in their drive tree, but it points to the same physical storage. If one team updates a file, both see the change.
@@ -1652,7 +1652,7 @@ A tree with shared subdirectories and files (via links). Allows a file to appear
 
 **Symbolic links** (symlinks): A special file containing a path to another file. If the target is deleted, the symlink becomes dangling.
 
-**C++ â€” hard link and symlink creation:**
+**C++ — hard link and symlink creation:**
 
 ```cpp
 #include <iostream>
@@ -1666,15 +1666,15 @@ int main() {
     // Create original file
     { std::ofstream ofs(original); ofs << "Shared content\n"; }
 
-    // Hard link â€” same inode
+    // Hard link — same inode
     fs::create_hard_link(original, "hard_link.txt");
 
-    // Symbolic link â€” new inode pointing to path
+    // Symbolic link — new inode pointing to path
     fs::create_symlink(original, "sym_link.txt");
 
     auto printStat = [](const fs::path& p) {
         auto s = fs::status(p);
-        std::cout << p << " â€” inode: "
+        std::cout << p << " — inode: "
                   << fs::equivalent(p, original)
                   << ", type: " << static_cast<int>(s.type()) << "\n";
     };
@@ -1697,7 +1697,7 @@ int main() {
 }
 ```
 
-**Python â€” hard links and symlinks:**
+**Python — hard links and symlinks:**
 
 ```python
 import os
@@ -1730,7 +1730,7 @@ if __name__ == "__main__":
     demonstrate_links()
 ```
 
-**A&D Table â€” Links:**
+**A&D Table — Links:**
 
 | Property | Hard Link | Symbolic Link |
 |----------|-----------|---------------|
@@ -1747,13 +1747,13 @@ if __name__ == "__main__":
 
 Allows cycles through symbolic links. A directory can point back to an ancestor, creating a cycle.
 
-**Real-world analogy:** A museum exhibit with mirrors arranged so that looking into one shows you an earlier exhibit behind you â€” creating a visual loop. If you follow the reflections, you see the same exhibit repeatedly.
+**Real-world analogy:** A museum exhibit with mirrors arranged so that looking into one shows you an earlier exhibit behind you — creating a visual loop. If you follow the reflections, you see the same exhibit repeatedly.
 
 **Problem**: `ls -R` can loop forever. Implementations must detect cycles.
 
-**Dry Run â€” cycle detection during directory traversal:**
+**Dry Run — cycle detection during directory traversal:**
 
-Directory tree with cycle: `/a/b/c/` â†’ symlink back to `/a/`
+Directory tree with cycle: `/a/b/c/` → symlink back to `/a/`
 
 | Step | Current Dir | Visited Set | Action |
 |------|------------|-------------|--------|
@@ -1762,7 +1762,7 @@ Directory tree with cycle: `/a/b/c/` â†’ symlink back to `/a/`
 | 3 | /a/b/c | {/a, /a/b, /a/b/c} | Read entries -> symlink to /a |
 | 4 | /a (via symlink) | Already in {/a, /a/b, /a/b/c} | **Cycle detected! Stop.** |
 
-**C++ â€” cycle-safe directory traversal using visited set:**
+**C++ — cycle-safe directory traversal using visited set:**
 
 ```cpp
 #include <iostream>
@@ -1806,7 +1806,7 @@ int main() {
 }
 ```
 
-**Python â€” cycle detection with resolved paths:**
+**Python — cycle detection with resolved paths:**
 
 ```python
 import os
@@ -1842,7 +1842,7 @@ if __name__ == "__main__":
     walk_cycle_safe(".")
 ```
 
-**A&D Table â€” General-Graph Directory:**
+**A&D Table — General-Graph Directory:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -1880,7 +1880,7 @@ mount /dev/sdb1 /mnt/usb
 # After mounting, files on /dev/sdb1 are accessible at /mnt/usb/
 ```
 
-**Numbered steps â€” mount operation:**
+**Numbered steps — mount operation:**
 
 1. OS validates the device (`/dev/sdb1`) exists and is accessible
 2. OS reads the superblock from the device to confirm valid file system type
@@ -1890,7 +1890,7 @@ mount /dev/sdb1 /mnt/usb
 6. OS marks the mount point's inode with a "mount point" flag
 7. Subsequent access to `/mnt/usb` is redirected to the root inode of the mounted FS
 
-**Pseudocode â€” mount system call (simplified):**
+**Pseudocode — mount system call (simplified):**
 
 ```
 FUNCTION mount(device_path, mount_point, fs_type, flags):
@@ -1917,7 +1917,7 @@ FUNCTION mount(device_path, mount_point, fs_type, flags):
     RETURN SUCCESS
 ```
 
-**C++ â€” mount simulation (using platform API):**
+**C++ — mount simulation (using platform API):**
 
 ```cpp
 #include <iostream>
@@ -1953,7 +1953,7 @@ int main() {
 }
 ```
 
-**Python â€” mount simulation with os module:**
+**Python — mount simulation with os module:**
 
 ```python
 import os
@@ -2006,7 +2006,7 @@ if __name__ == "__main__":
 | Access via mount point | O(depth) + O(1) redirect | Path walk to mount point then redirect |
 | Path walk crossing mount | O(depth1 + depth2) | Walk to mount point + walk inside mounted FS |
 
-**A&D Table â€” Mounting:**
+**A&D Table — Mounting:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -2015,7 +2015,7 @@ if __name__ == "__main__":
 | Multiple FS types coexist | Mount point hides existing directory contents |
 | Security via mount flags (ro, noexec, nosuid) | Bind mounts can confuse path resolution |
 
-**Edge Cases â€” Mounting:**
+**Edge Cases — Mounting:**
 
 | Edge Case | Description | Handling |
 |-----------|-------------|----------|
@@ -2036,9 +2036,9 @@ File allocation strategies determine how disk blocks are assigned to files. Thes
 
 **Real-world analogy:** Three ways to store a novel across multiple notebooks:
 
-- **Contiguous**: Write the entire novel in one continuous section of notebooks â€” fast to read, but hard to extend.
-- **Linked**: Each notebook page has a note saying "continued on page X" â€” flexible but slow.
-- **Indexed**: A table of contents page lists all page numbers for each chapter â€” fast access with some overhead.
+- **Contiguous**: Write the entire novel in one continuous section of notebooks — fast to read, but hard to extend.
+- **Linked**: Each notebook page has a note saying "continued on page X" — flexible but slow.
+- **Indexed**: A table of contents page lists all page numbers for each chapter — fast access with some overhead.
 
 | Feature | Contiguous | Linked | Indexed |
 |---------|-----------|--------|---------|
@@ -2050,7 +2050,7 @@ File allocation strategies determine how disk blocks are assigned to files. Thes
 | Use case | Tape, ISO files | Early FAT | Unix ext2/3, NTFS |
 | Max file size | Contiguous space available | (Block size * 2^address_bits) | Pointers per index * blocks |
 
-**A&D Table â€” File Allocation:**
+**A&D Table — File Allocation:**
 
 | Strategy | Advantage | Disadvantage |
 |----------|-----------|-------------|
@@ -2078,7 +2078,7 @@ $ ls -l thesis.docx
 **Real-world analogy:** An office building key system:
 - **Owner key** (rwx): Opens all doors, including the executive suite.
 - **Group key** (r-x): Opens your department's floor but not the executive suite.
-- **Other key** (---): Visitor â€” cannot enter any locked door without escort.
+- **Other key** (---): Visitor — cannot enter any locked door without escort.
 
 Extended permissions allowing fine-grained access for specific users:
 
@@ -2092,20 +2092,20 @@ setfacl -m g:staff:rx thesis.docx  # Give staff read+execute
 
 A capability is an unforgeable token that grants specific rights to an object. Unlike ACLs (which list who can access an object), capabilities list what objects a process can access.
 
-**Real-world analogy:** A concert wristband. The wristband (capability) itself proves you have access to the VIP area. You don't need to check a guest list (ACL) â€” the band is the credential.
+**Real-world analogy:** A concert wristband. The wristband (capability) itself proves you have access to the VIP area. You don't need to check a guest list (ACL) — the band is the credential.
 
 **ACL vs Capabilities Comparison:**
 
 | Aspect | ACL | Capability |
 |--------|-----|------------|
 | Association | "Who can access this object?" | "What can this process access?" |
-| Revocation | Easy â€” modify ACL entry | Hard â€” must revoke and reissue capabilities |
+| Revocation | Easy — modify ACL entry | Hard — must revoke and reissue capabilities |
 | Granularity | Per-user or per-group | Per-object per-process |
 | Implementation | Extended attributes | File descriptor (FD) table |
 | Example | `setfacl` on Linux | `fd = open(...)` returns capability token |
 | Confused deputy | More vulnerable | Resistant (capability = right + reference) |
 
-**C++ â€” checking file permissions:**
+**C++ — checking file permissions:**
 
 ```cpp
 #include <iostream>
@@ -2137,7 +2137,7 @@ int main() {
 }
 ```
 
-**Python â€” checking and setting permissions:**
+**Python — checking and setting permissions:**
 
 ```python
 import os
@@ -2185,13 +2185,13 @@ if __name__ == "__main__":
 
 **When to use each:**
 - Hard link: When you need the same file to appear in multiple directories without duplication, and both are on the same file system.
-- Symlink: When you need cross-file-system references, directory links, or human-readable path pointers (e.g., `/usr/bin/python3` â†’ `python3.11`).
+- Symlink: When you need cross-file-system references, directory links, or human-readable path pointers (e.g., `/usr/bin/python3` → `python3.11`).
 
 #### Q2: What happens when you mount a file system to a non-empty directory?
 
 The original directory contents become **hidden** for the duration of the mount. They reappear when the file system is unmounted. This is why mount points are conventionally empty directories.
 
-#### Q3: File System vs DBMS â€” when to use which?
+#### Q3: File System vs DBMS — when to use which?
 
 | Aspect | File System | DBMS |
 |--------|-------------|------|
@@ -2203,7 +2203,7 @@ The original directory contents become **hidden** for the duration of the mount.
 | Recovery | fsck / chkdsk | Write-ahead log (WAL) |
 | Use case | Documents, binaries, logs | Structured data with relationships |
 
-**Interview tip:** "A file system is like a warehouse â€” you put boxes on shelves and remember where they are. A DBMS is like a librarian â€” you ask for all books by 'Smith' published after 2020, and the librarian brings them."
+**Interview tip:** "A file system is like a warehouse — you put boxes on shelves and remember where they are. A DBMS is like a librarian — you ask for all books by 'Smith' published after 2020, and the librarian brings them."
 
 #### Q4: What is a mount point, and how does the VFS handle cross-FS mounts?
 
@@ -2215,11 +2215,11 @@ Only the superuser can create hard links to directories (and it is almost never 
 
 #### Q6: Explain the "inode" concept in 30 seconds.
 
-An inode (index node) is the on-disk metadata structure for a file. It stores everything *except* the file name and data: permissions, timestamps, size, owner, and 12-15 block pointers that locate the file's data on disk. The file name lives in a directory entry that maps name â†’ inode number.
+An inode (index node) is the on-disk metadata structure for a file. It stores everything *except* the file name and data: permissions, timestamps, size, owner, and 12-15 block pointers that locate the file's data on disk. The file name lives in a directory entry that maps name → inode number.
 
 #### Q7: What is the difference between `stat()` and `lstat()`?
 
-- `stat()` follows symbolic links â€” returns info about the target file.
+- `stat()` follows symbolic links — returns info about the target file.
 - `lstat()` returns info about the symlink itself (not the target).
 - `fstat()` operates on an open file descriptor.
 
@@ -2235,7 +2235,7 @@ An inode (index node) is the on-disk metadata structure for a file. It stores ev
 ### Applications in Real Systems
 
 
-#### ext4 (Fourth Extended File System) â€” Linux
+#### ext4 (Fourth Extended File System) — Linux
 
 - Journaling file system (default on most Linux distros)
 - Max file size: 16 TB (with 4K blocks)
@@ -2246,20 +2246,20 @@ An inode (index node) is the on-disk metadata structure for a file. It stores ev
 
 **Key innovation (extents):** Instead of listing every block, ext4 records contiguous block ranges as (start block, length) pairs. A 128 MB file might need just 1 extent entry instead of 32,768 individual block pointers.
 
-#### NTFS (New Technology File System) â€” Windows
+#### NTFS (New Technology File System) — Windows
 
 - Journaling file system (default on Windows NT+)
 - Max file size: 16 EB (theoretical)
 - Max volume size: 256 TB (practical)
-- Uses **Master File Table ($MFT)** â€” a relational database of file records
+- Uses **Master File Table ($MFT)** — a relational database of file records
 - Features: Alternate data streams (ADS), compression, encryption (EFS), disk quotas, sparse files, reparse points (junction points)
 - ACL-based security model (inheritable permissions)
 
-**Key innovation ($MFT):** A B-tree of file records. Small files (< 512 bytes) are stored *inside* the MFT record itself (resident data) â€” no separate data blocks needed. This is called **immediate file** or **resident file**.
+**Key innovation ($MFT):** A B-tree of file records. Small files (< 512 bytes) are stored *inside* the MFT record itself (resident data) — no separate data blocks needed. This is called **immediate file** or **resident file**.
 
-#### FAT32 (File Allocation Table) â€” Legacy / Removable Media
+#### FAT32 (File Allocation Table) — Legacy / Removable Media
 
-- No journaling â€” vulnerable to corruption on unclean shutdown
+- No journaling — vulnerable to corruption on unclean shutdown
 - Max file size: 4 GB (minus 1 byte)
 - Max volume size: 2 TB (with 512-byte sectors)
 - Max files per directory: 65,536 (root: 512 entries)
@@ -2268,14 +2268,14 @@ An inode (index node) is the on-disk metadata structure for a file. It stores ev
 
 **Key limitation (4 GB file cap):** The 32-bit block pointer restricts individual files to 4 GB. This is why FAT32 cannot store HD video files larger than 4 GB.
 
-#### APFS (Apple File System) â€” macOS / iOS
+#### APFS (Apple File System) — macOS / iOS
 
 - Modern copy-on-write (CoW) file system
 - Snapshots, cloning, encryption (per-file key)
 - Space sharing (multiple volumes share same free space pool)
 - Fast directory sizing (O(1) for file count)
 - Sparse files by default
-- Crash-safe (fsync not needed for metadata â€” Apple's controversial "safe" model)
+- Crash-safe (fsync not needed for metadata — Apple's controversial "safe" model)
 
 **Key innovation (cloning):** `cp --clone` copies a file in O(1) by sharing data blocks. Actual copying happens only when either file is modified (copy-on-write). This makes Time Machine snapshots instant and space-efficient.
 
@@ -2302,17 +2302,17 @@ The **Virtual File System** (VFS) provides an abstraction layer that allows the 
 
 ```
 Application
-    â†“
+    ↓
 System Calls (open, read, write, close)
-    â†“
+    ↓
 VFS Interface (generic operations)
-    â†“
-â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”
-â”‚ext4 â”‚btrfsâ”‚xfs  â”‚ntfs â”‚nfs  â”‚
-â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”˜
-    â†“
+    ↓
+┌─────┬─────┬─────┬─────┬─────┐
+│ext4 │btrfs│xfs  │ntfs │nfs  │
+└─────┴─────┴─────┴─────┴─────┘
+    ↓
 Device Drivers
-    â†“
+    ↓
 Physical Storage
 ```
 
@@ -2331,7 +2331,7 @@ The VFS defines a set of operations that every file system must implement:
 |-----------|---------|
 | **super_block** | Mounted FS metadata (type, root inode, block size) |
 | **inode** | File metadata (permissions, size, block pointers) |
-| **dentry** | Directory entry (name â†’ inode mapping, with caching) |
+| **dentry** | Directory entry (name → inode mapping, with caching) |
 | **file** | Open file instance (current offset, flags, inode ref) |
 | **file_operations** | Function pointers for read/write/seek/ioctl |
 | **inode_operations** | Function pointers for create/lookup/mkdir/unlink |
@@ -2449,17 +2449,17 @@ int main() {
 ```bash
 $ echo "original content" > original.txt
 
-# Hard link â€” same inode, same data
+# Hard link — same inode, same data
 $ ln original.txt hardlink.txt
 $ ls -li original.txt hardlink.txt
 12345 -rw-r--r-- 2 alice staff 17 Jun 1 10:00 original.txt
 12345 -rw-r--r-- 2 alice staff 17 Jun 1 10:00 hardlink.txt
-# Same inode (12345) â€” they are the same file!
+# Same inode (12345) — they are the same file!
 
-# Symbolic link â€” separate file pointing to original
+# Symbolic link — separate file pointing to original
 $ ln -s original.txt symlink.txt
 $ ls -li symlink.txt
-12346 lrwxr-xr-x 1 alice staff 12 Jun 1 10:01 symlink.txt â†’ original.txt
+12346 lrwxr-xr-x 1 alice staff 12 Jun 1 10:01 symlink.txt → original.txt
 # Different inode, different file
 
 # Delete original
@@ -2468,7 +2468,7 @@ $ cat hardlink.txt   # Works! (data still exists)
 $ cat symlink.txt    # Fails: No such file or directory
 ```
 
-### Example 4: Python â€” mount table reader
+### Example 4: Python — mount table reader
 
 ```python
 def read_mount_table(path="/proc/mounts"):
@@ -2492,7 +2492,7 @@ if __name__ == "__main__":
               f"type {m['fs_type']:8s} ({m['options']})")
 ```
 
-### Example 5: C++ â€” detect cyclic directory
+### Example 5: C++ — detect cyclic directory
 
 ```cpp
 #include <iostream>
@@ -2596,9 +2596,9 @@ int main(int argc, char* argv[]) {
 | **Hard Link** | Directory entry to an inode (same file system only) |
 | **VFS** | Abstraction layer allowing multiple FS types under uniform API |
 | **Superblock** | FS metadata (type, block size, inode count, free blocks) |
-| **MFT** | Master File Table â€” NTFS's relational database of file records |
+| **MFT** | Master File Table — NTFS's relational database of file records |
 | **Extent** | Contiguous block range (ext4: start block + length) |
-| **ACL** | Access Control List â€” fine-grained per-user permissions |
+| **ACL** | Access Control List — fine-grained per-user permissions |
 | **Capability** | Unforgeable token granting access rights to an object |
 | **File Descriptor** | Integer handle for an open file in a process |
 | **Dirent** | Directory entry (name + inode number) |
@@ -2733,7 +2733,7 @@ int main(int argc, char* argv[]) {
 
 ## Summary
 
-- A file is the OS's primary abstraction for persistent storage â€” named, typed, protected
+- A file is the OS's primary abstraction for persistent storage — named, typed, protected
 - File operations: create, open, read, write, seek (lseek), delete, close
 - File access: sequential (most common), direct (databases), indexed (DBMS with key lookup)
 - Directory structure evolved from flat (single-level) to two-level to tree-structured to acyclic-graph
@@ -2743,7 +2743,7 @@ int main(int argc, char* argv[]) {
 - File sharing is controlled by permissions (rwx), ACLs, and capability lists
 - File allocation: contiguous (fast, fragmented), linked (flexible, slow), indexed (balanced)
 - VFS allows multiple file system types to coexist under a uniform API
-- Real systems: ext4 (Linux â€” extents, journaling), NTFS (Windows â€” MFT, ADS), FAT32 (universal, 4 GB cap), APFS (macOS â€” CoW, cloning)
+- Real systems: ext4 (Linux — extents, journaling), NTFS (Windows — MFT, ADS), FAT32 (universal, 4 GB cap), APFS (macOS — CoW, cloning)
 - `open()`, `read()`, `write()`, `close()`, `lseek()` are the fundamental file operations
 - Hard links survive deletion of the original; symbolic links become dangling
 - Complexity: path walk = O(depth), direct access = O(1), indexed lookup = O(log M), sequential read = O(n)
@@ -2774,7 +2774,7 @@ int main(int argc, char* argv[]) {
 12. The `strace` tool shows system calls. Run `strace -e trace=open,read,write,close cat /etc/passwd` and explain each system call and its role in file access.
 13. Implement a FUSE (Filesystem in Userspace) file system that presents a read-only view of a tar file. When `readdir()` is called, list the tar's contents. When `read()` is called, extract and return the data from the tar. Use libfuse.
 14. Implement a simple file protection simulator: a file has an owner (UID), group (GID), and 9-bit permission mask. Write a `check_access(uid, gid, request)` function that returns true/false based on Unix permission semantics.
-15. Compare the performance of sequential vs direct access on a 1 GB file. Write a benchmark that reads 10,000 records of 1024 bytes each â€” first sequentially, then randomly. Measure and explain the difference.
+15. Compare the performance of sequential vs direct access on a 1 GB file. Write a benchmark that reads 10,000 records of 1024 bytes each — first sequentially, then randomly. Measure and explain the difference.
 
 ### Additional Exercises
 
@@ -2786,11 +2786,11 @@ int main(int argc, char* argv[]) {
 
 19. **File system mount simulator**: Implement a simplified mount table simulator in TypeScript. Support `mount(device, mountPoint, fsType)` and `unmount(mountPoint)`. Resolve path lookups by walking the mount table to find the correct device.
 
-20. **Access control list (ACL) simulator**: Extend the Unix permission model to support ACLs â€” a list of (user, permission) entries. Implement `setAcl(path, user, permissions)` and `checkAccess(path, uid, operation)`. ACL entries should override the basic Unix permissions.
+20. **Access control list (ACL) simulator**: Extend the Unix permission model to support ACLs — a list of (user, permission) entries. Implement `setAcl(path, user, permissions)` and `checkAccess(path, uid, operation)`. ACL entries should override the basic Unix permissions.
 
 21. **Sparse file detector**: Write a program that detects sparse files (files with holes) by examining the number of allocated blocks vs the file size. On Linux, use `stat()` to compare `st_blocks * 512` with `st_size`. Create a sparse file by seeking past the end and writing.
 
-22. **File system benchmarking suite**: Write a benchmark that measures and compares: create throughput (files/sec), read throughput (MB/s), write throughput (MB/s), delete throughput (files/sec), metadata operation latency (stat/open/close in Î¼s), and directory traversal speed for directories with 10, 100, 1000, and 10000 entries.
+22. **File system benchmarking suite**: Write a benchmark that measures and compares: create throughput (files/sec), read throughput (MB/s), write throughput (MB/s), delete throughput (files/sec), metadata operation latency (stat/open/close in μs), and directory traversal speed for directories with 10, 100, 1000, and 10000 entries.
 
 23. **Inode usage analyzer**: Write a program that reads the ext4 superblock from a disk image or mounted partition and reports: total inodes, free inodes, used inodes, inode utilization percentage, and inode size. Use `statfs()` or parse the superblock directly.
 

@@ -1,10 +1,10 @@
-﻿> **Previous:** [Migrations](./22-migrations.md) | **Next:** [Transactions](./24-transactions.md)
+> **Previous:** [Migrations](./22-migrations.md) | **Next:** [Transactions](./24-transactions.md)
 
 # Spring Data for NoSQL
 
-Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â repositories, templates, and consistent exception hierarchies.
+Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar — repositories, templates, and consistent exception hierarchies.
 
-This chapter covers three major NoSQL engines ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â through the lens of Spring Data. Every example is complete and compilable against the respective database.
+This chapter covers three major NoSQL engines — MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) — through the lens of Spring Data. Every example is complete and compilable against the respective database.
 
 ---
 
@@ -65,7 +65,7 @@ flowchart LR
     F --> G[Multi-Model Patterns]
 ```
 
-> **Pro Tip:** Use Redis for caching and session storage, MongoDB for persistent documents, and Elasticsearch for full-text search. Each database excels in its own domain â†’ choose the right tool for each job.
+> **Pro Tip:** Use Redis for caching and session storage, MongoDB for persistent documents, and Elasticsearch for full-text search. Each database excels in its own domain → choose the right tool for each job.
 
 ## MongoDB with Spring Data
 
@@ -188,7 +188,7 @@ public class Product {
 }
 ```
 
-Embedded documents do not need `@Document` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they are serialized inline:
+Embedded documents do not need `@Document` — they are serialized inline:
 
 ```java
 package com.course.nosql.mongo;
@@ -715,7 +715,7 @@ public class CategoryStats {
 ### Geo-Spatial Queries
 
 
-MongoDB supports rich geo-spatial queries ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â finding documents near a point, within a polygon, or intersecting a geometry.
+MongoDB supports rich geo-spatial queries — finding documents near a point, within a polygon, or intersecting a geometry.
 
 ```java
 package com.course.nosql.mongo;
@@ -2795,7 +2795,7 @@ public class MultiStoreProductService {
         try {
             articleRepository.deleteById("product_" + id);
         } catch (Exception e) {
-            // Log but continue ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MongoDB is source of truth
+            // Log but continue — MongoDB is source of truth
         }
         redisTemplate.delete("product:" + id);
     }
@@ -2983,10 +2983,10 @@ ummary
 ### Application Problems
 
 1. **Product Search API**: Build a REST controller with endpoints:
-   - `POST /api/products` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â create a product in MongoDB
-   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â search across MongoDB and Elasticsearch
-   - `GET /api/products/{id}` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â read from Redis cache with MongoDB fallback
-   - `DELETE /api/products/{id}` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â delete from all three stores with compensating actions for partial failures
+   - `POST /api/products` — create a product in MongoDB
+   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` — search across MongoDB and Elasticsearch
+   - `GET /api/products/{id}` — read from Redis cache with MongoDB fallback
+   - `DELETE /api/products/{id}` — delete from all three stores with compensating actions for partial failures
 
 2. **Session Store**: Implement a Redis-backed session store that:
    - Stores user sessions with `@RedisHash` and configurable TTL
@@ -2995,7 +2995,7 @@ ummary
    - Handles bulk session invalidation for a user
 
 3. **Analytics Dashboard**: Build MongoDB aggregation pipelines that produce:
-   - Top 10 products by revenue (quantity ÃƒÆ’â†’ price)
+   - Top 10 products by revenue (quantity Ã→ price)
    - Product count by category with average rating
    - Monthly sales trends with running totals
    - Supplier performance metrics (total products, average price, stock levels)
@@ -3036,7 +3036,7 @@ ummary
    - Incremental Elasticsearch indexing on content publish
    - Search with highlighting, faceted by content type and tags
    - Scheduled re-indexing for consistency verification
-   - Graceful degradation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â if Elasticsearch is down, fall back to MongoDB regex search
+   - Graceful degradation — if Elasticsearch is down, fall back to MongoDB regex search
 
 5. **Redis Streams Order Pipeline**: Implement an order processing pipeline entirely with Redis Streams:
    - Orders published to a stream from a REST endpoint

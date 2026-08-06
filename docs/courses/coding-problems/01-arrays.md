@@ -1,4 +1,4 @@
-﻿# Chapter 01: Arrays
+# Chapter 01: Arrays
 
 > Array problems are the backbone of coding interviews. Mastering array manipulation, traversal, and optimization techniques is essential for every software engineer.
 
@@ -42,8 +42,8 @@ flowchart TD
     B -->|Partial| I[Kadane's / Partitioning]
     
     G --> J{Window size fixed?}
-    J -->|Yes| K[Fixed window â†’ deque]
-    J -->|No| L[Variable window â†’ two pointers]
+    J -->|Yes| K[Fixed window → deque]
+    J -->|No| L[Variable window → two pointers]
     
     D --> M[Set / Map for O(1) lookup]
     E --> M
@@ -90,8 +90,8 @@ quadrantChart
     y-axis Low Space --> High Space
     quadrant-1 Sweet Spot: O(n) time O(1) space
     quadrant-2 Space Trade: O(n) time O(n) space
-    quadrant-3 Slow but Lean: O(nÂ²) time O(1) space
-    quadrant-4 Costly: O(nÂ²) time O(n) space
+    quadrant-3 Slow but Lean: O(n²) time O(1) space
+    quadrant-4 Costly: O(n²) time O(n) space
     Two Sum (HashMap): [0.12, 0.4]
     Two Pointers: [0.2, 0.15]
     Sorting + Binary Search: [0.35, 0.2]
@@ -110,9 +110,9 @@ quadrantChart
 
 ### Problem 1: Two Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Hash Table]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Hash Table]
 
 **Problem:** Given an array of integers `nums` and an integer `target`, return indices of the two numbers that add up to `target`. You may assume that each input has exactly one solution, and you may not use the same element twice.
 
@@ -130,13 +130,13 @@ Output: [1, 2]
 ```
 
 **Constraints:**
-- 2 â‰¤ nums.length â‰¤ 10â´
-- -10â¹ â‰¤ nums[i] â‰¤ 10â¹
-- -10â¹ â‰¤ target â‰¤ 10â¹
+- 2 ≤ nums.length ≤ 10⁴
+- -10⁹ ≤ nums[i] ≤ 10⁹
+- -10⁹ ≤ target ≤ 10⁹
 - Only one valid answer exists
 
 **Solution Approach:**
-- **Brute Force:** Use nested loops to check every pair. Time O(nÂ²), Space O(1).
+- **Brute Force:** Use nested loops to check every pair. Time O(n²), Space O(1).
 - **Optimal:** Use a hash map to store each number's index as we iterate. For each number, check if `target - num` exists in the map. Return indices if found. Time O(n), Space O(n).
 
 ```typescript
@@ -163,16 +163,16 @@ console.log(twoSum([3, 3], 6));           // [0, 1]
 console.log(twoSum([1, 5, 3, 7], 8));     // [1, 3] or [0, 2]
 ```
 
-**Time Complexity:** O(n) â€” single pass through the array
-**Space Complexity:** O(n) â€” hash map storing up to n elements
+**Time Complexity:** O(n) — single pass through the array
+**Space Complexity:** O(n) — hash map storing up to n elements
 
 ---
 
 ### Problem 2: Best Time to Buy and Sell Stock
 
-ðŸ·ï¸ **Companies:** [Amazon] [Meta] [Microsoft] [Apple] [Google]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Dynamic Programming]
+🏷️ **Companies:** [Amazon] [Meta] [Microsoft] [Apple] [Google]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Dynamic Programming]
 
 **Problem:** You are given an array `prices` where `prices[i]` is the price of a given stock on day `i`. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve. If no profit can be made, return 0.
 
@@ -191,11 +191,11 @@ Explanation: No profit possible, return 0.
 ```
 
 **Constraints:**
-- 1 â‰¤ prices.length â‰¤ 10âµ
-- 0 â‰¤ prices[i] â‰¤ 10â´
+- 1 ≤ prices.length ≤ 10⁵
+- 0 ≤ prices[i] ≤ 10⁴
 
 **Solution Approach:**
-- **Brute Force:** Check every buying-selling pair. Time O(nÂ²), Space O(1).
+- **Brute Force:** Check every buying-selling pair. Time O(n²), Space O(1).
 - **Optimal (Kadane's):** Track the minimum price seen so far and the maximum profit. Iterate once: update min price, then compute potential profit = current price - min price, track max profit. Time O(n), Space O(1).
 
 ```typescript
@@ -224,16 +224,16 @@ console.log(maxProfit([3, 3, 3]));            // 0
 console.log(maxProfit([2, 4, 1]));            // 2
 ```
 
-**Time Complexity:** O(n) â€” single pass
-**Space Complexity:** O(1) â€” constant space
+**Time Complexity:** O(n) — single pass
+**Space Complexity:** O(1) — constant space
 
 ---
 
 ### Problem 3: Maximum Subarray (Kadane's Algorithm)
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta] [LinkedIn]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Divide and Conquer, DP]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta] [LinkedIn]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Divide and Conquer, DP]
 
 **Problem:** Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 
@@ -251,11 +251,11 @@ Output: 1
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10âµ
-- -10â´ â‰¤ nums[i] â‰¤ 10â´
+- 1 ≤ nums.length ≤ 10⁵
+- -10⁴ ≤ nums[i] ≤ 10⁴
 
 **Solution Approach:**
-- **Brute Force:** Generate all subarrays, compute each sum. Time O(nÂ³), Space O(1).
+- **Brute Force:** Generate all subarrays, compute each sum. Time O(n³), Space O(1).
 - **Optimal (Kadane's):** Track `currentSum` (max ending at current position) and `maxSum` (global max). For each element, extend the current subarray or start fresh. Time O(n), Space O(1).
 
 ```typescript
@@ -281,16 +281,16 @@ console.log(maxSubArray([-1]));                              // -1
 console.log(maxSubArray([-2, -1]));                          // -1
 ```
 
-**Time Complexity:** O(n) â€” single pass
-**Space Complexity:** O(1) â€” constant space
+**Time Complexity:** O(n) — single pass
+**Space Complexity:** O(1) — constant space
 
 ---
 
 ### Problem 4: Move Zeroes
 
-ðŸ·ï¸ **Companies:** [Amazon] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Two Pointers]
+🏷️ **Companies:** [Amazon] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Two Pointers]
 
 **Problem:** Given an integer array `nums`, move all 0's to the end of it while maintaining the relative order of the non-zero elements. Do this in-place without making a copy of the array.
 
@@ -301,8 +301,8 @@ Output: [1, 3, 12, 0, 0]
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10â´
-- -2Â³Â¹ â‰¤ nums[i] â‰¤ 2Â³Â¹ - 1
+- 1 ≤ nums.length ≤ 10⁴
+- -2³¹ ≤ nums[i] ≤ 2³¹ - 1
 
 **Solution Approach:**
 - **Brute Force:** Create a new array, copy non-zero elements, then fill zeros. Time O(n), Space O(n).
@@ -336,16 +336,16 @@ moveZeroes(arr3);
 console.log(arr3); // [1, 2, 3]
 ```
 
-**Time Complexity:** O(n) â€” single pass
-**Space Complexity:** O(1) â€” in-place
+**Time Complexity:** O(n) — single pass
+**Space Complexity:** O(1) — in-place
 
 ---
 
 ### Problem 5: Contains Duplicate
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Hash Table, Sorting]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Hash Table, Sorting]
 
 **Problem:** Given an integer array `nums`, return `true` if any value appears at least twice in the array, and return `false` if every element is distinct.
 
@@ -362,11 +362,11 @@ Output: false
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10âµ
-- -10â¹ â‰¤ nums[i] â‰¤ 10â¹
+- 1 ≤ nums.length ≤ 10⁵
+- -10⁹ ≤ nums[i] ≤ 10⁹
 
 **Solution Approach:**
-- **Brute Force:** Nested loop to check each pair. Time O(nÂ²), Space O(1).
+- **Brute Force:** Nested loop to check each pair. Time O(n²), Space O(1).
 - **Optimal:** Use a Set. Iterate and check if element is already in set. Time O(n), Space O(n).
 
 ```typescript
@@ -397,9 +397,9 @@ console.log(containsDuplicate([1, 1, 1]));     // true
 
 ### Problem 6: Missing Number
 
-ðŸ·ï¸ **Companies:** [Amazon] [Microsoft] [Meta] [Google]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Math, Bit Manipulation]
+🏷️ **Companies:** [Amazon] [Microsoft] [Meta] [Google]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Math, Bit Manipulation]
 
 **Problem:** Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array.
 
@@ -418,8 +418,8 @@ Output: 2
 
 **Constraints:**
 - n == nums.length
-- 1 â‰¤ n â‰¤ 10â´
-- 0 â‰¤ nums[i] â‰¤ n
+- 1 ≤ n ≤ 10⁴
+- 0 ≤ nums[i] ≤ n
 - All numbers are unique
 
 **Solution Approach:**
@@ -452,9 +452,9 @@ console.log(missingNumber([0]));          // 1
 
 ### Problem 7: Find All Numbers Disappeared in an Array
 
-ðŸ·ï¸ **Companies:** [Google] [Amazon]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Hash Table]
+🏷️ **Companies:** [Google] [Amazon]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Hash Table]
 
 **Problem:** Given an array `nums` of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
@@ -466,8 +466,8 @@ Output: [5, 6]
 
 **Constraints:**
 - n == nums.length
-- 1 â‰¤ n â‰¤ 10âµ
-- 1 â‰¤ nums[i] â‰¤ n
+- 1 ≤ n ≤ 10⁵
+- 1 ≤ nums[i] ≤ n
 
 **Solution Approach:**
 - **Hash Set:** Add all numbers to set, then check 1..n. Time O(n), Space O(n).
@@ -508,9 +508,9 @@ console.log(findDisappearedNumbers([2, 2]));                    // [1]
 
 ### Problem 8: Single Number
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Bit Manipulation]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Bit Manipulation]
 
 **Problem:** Given a non-empty array of integers `nums`, every element appears twice except for one. Find that single one. Implement a solution with linear runtime complexity and constant extra space.
 
@@ -527,13 +527,13 @@ Output: 4
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 3 Ã— 10â´
-- -3 Ã— 10â´ â‰¤ nums[i] â‰¤ 3 Ã— 10â´
+- 1 ≤ nums.length ≤ 3 × 10⁴
+- -3 × 10⁴ ≤ nums[i] ≤ 3 × 10⁴
 - Each element appears twice except one
 
 **Solution Approach:**
 - **Hash Map:** Count frequencies, return the one with count 1. Time O(n), Space O(n).
-- **Optimal (XOR):** XOR all numbers. aâŠ•a=0 and aâŠ•0=a, so the single number remains. Time O(n), Space O(1).
+- **Optimal (XOR):** XOR all numbers. a⊕a=0 and a⊕0=a, so the single number remains. Time O(n), Space O(1).
 
 ```typescript
 function singleNumber(nums: number[]): number {
@@ -559,9 +559,9 @@ console.log(singleNumber([1]));                 // 1
 
 ### Problem 9: Intersection of Two Arrays II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Hash Table, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Hash Table, Two Pointers]
 
 **Problem:** Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result should appear as many times as it appears in both arrays.
 
@@ -572,8 +572,8 @@ Output: [2, 2]
 ```
 
 **Constraints:**
-- 1 â‰¤ nums1.length, nums2.length â‰¤ 1000
-- 0 â‰¤ nums[i] â‰¤ 1000
+- 1 ≤ nums1.length, nums2.length ≤ 1000
+- 0 ≤ nums[i] ≤ 1000
 
 **Solution Approach:**
 - **Hash Map:** Count frequencies of smaller array, iterate through larger, decrement count when found. Time O(n+m), Space O(min(n,m)).
@@ -613,9 +613,9 @@ console.log(intersect([4, 9, 5], [9, 4, 9, 8, 4])); // [4, 9] or [9, 4]
 
 ### Problem 10: Plus One
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Array, Math]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Array, Math]
 
 **Problem:** You are given a large integer represented as an integer array `digits`, where each digit is an element of the array. Increment the large integer by one and return the resulting array.
 
@@ -632,8 +632,8 @@ Output: [1, 0]
 ```
 
 **Constraints:**
-- 1 â‰¤ digits.length â‰¤ 100
-- 0 â‰¤ digits[i] â‰¤ 9
+- 1 ≤ digits.length ≤ 100
+- 0 ≤ digits[i] ≤ 9
 
 **Solution Approach:**
 - Iterate from the right, add 1, handle carry. If all digits become 0, prepend 1.
@@ -669,9 +669,9 @@ console.log(plusOne([9, 9]));    // [1, 0, 0]
 
 ### Problem 11: Three Sum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Two Pointers, Sorting]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Two Pointers, Sorting]
 
 **Problem:** Given an integer array `nums`, return all unique triplets `[nums[i], nums[j], nums[k]]` such that i, j, k are distinct and sum to zero.
 
@@ -682,12 +682,12 @@ Output: [[-1, -1, 2], [-1, 0, 1]]
 ```
 
 **Constraints:**
-- 3 â‰¤ nums.length â‰¤ 3000
-- -10âµ â‰¤ nums[i] â‰¤ 10âµ
+- 3 ≤ nums.length ≤ 3000
+- -10⁵ ≤ nums[i] ≤ 10⁵
 
 **Solution Approach:**
-- **Brute Force:** Triple nested loop. Time O(nÂ³), Space O(1).
-- **Optimal:** Sort array, then fix one element and use two pointers on the rest. Skip duplicates. Time O(nÂ²), Space O(1) or O(n) for sorting.
+- **Brute Force:** Triple nested loop. Time O(n³), Space O(1).
+- **Optimal:** Sort array, then fix one element and use two pointers on the rest. Skip duplicates. Time O(n²), Space O(1) or O(n) for sorting.
 
 ```typescript
 function threeSum(nums: number[]): number[][] {
@@ -729,16 +729,16 @@ console.log(threeSum([0, 0, 0])); // [[0, 0, 0]]
 console.log(threeSum([1, 2, -2, -1])); // []
 ```
 
-**Time Complexity:** O(nÂ²)
+**Time Complexity:** O(n²)
 **Space Complexity:** O(1) (excluding sorting)
 
 ---
 
 ### Problem 12: Product of Array Except Self
 
-ðŸ·ï¸ **Companies:** [Amazon] [Meta] [Google] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Prefix Sum]
+🏷️ **Companies:** [Amazon] [Meta] [Google] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Prefix Sum]
 
 **Problem:** Given an integer array `nums`, return an array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`. Solve without division and in O(n) time.
 
@@ -749,8 +749,8 @@ Output: [24, 12, 8, 6]
 ```
 
 **Constraints:**
-- 2 â‰¤ nums.length â‰¤ 10âµ
-- -30 â‰¤ nums[i] â‰¤ 30
+- 2 ≤ nums.length ≤ 10⁵
+- -30 ≤ nums[i] ≤ 30
 
 **Solution Approach:**
 - **With Division:** Product of all / nums[i]. Fails with zeros.
@@ -789,9 +789,9 @@ console.log(productExceptSelf([-1, 1, 0, -3, 3])); // [0, 0, 9, 0, 0]
 
 ### Problem 13: Container With Most Water
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Two Pointers, Greedy]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Two Pointers, Greedy]
 
 **Problem:** Given n non-negative integers `height` representing vertical lines, find two lines that together with the x-axis form a container that holds the most water.
 
@@ -803,11 +803,11 @@ Output: 49
 
 **Constraints:**
 - n == height.length
-- 2 â‰¤ n â‰¤ 10âµ
-- 0 â‰¤ height[i] â‰¤ 10â´
+- 2 ≤ n ≤ 10⁵
+- 0 ≤ height[i] ≤ 10⁴
 
 **Solution Approach:**
-- **Brute Force:** Check every pair. Time O(nÂ²), Space O(1).
+- **Brute Force:** Check every pair. Time O(n²), Space O(1).
 - **Optimal:** Two pointers from both ends. Move the shorter line inward, track max area. Time O(n), Space O(1).
 
 ```typescript
@@ -846,9 +846,9 @@ console.log(maxArea([4, 3, 2, 1, 4])); // 16
 
 ### Problem 14: Find the Duplicate Number
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Two Pointers, Binary Search]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Two Pointers, Binary Search]
 
 **Problem:** Given an array of integers `nums` containing n+1 integers where each integer is in [1, n], there is exactly one repeated number. Find the duplicate without modifying the array and using O(1) extra space.
 
@@ -859,9 +859,9 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 â‰¤ n â‰¤ 10âµ
+- 1 ≤ n ≤ 10⁵
 - nums.length == n + 1
-- 1 â‰¤ nums[i] â‰¤ n
+- 1 ≤ nums[i] ≤ n
 
 **Solution Approach:**
 - **Hash Set:** Track seen numbers. Time O(n), Space O(n).
@@ -902,9 +902,9 @@ console.log(findDuplicate([1, 1])); // 1
 
 ### Problem 15: Subarray Sum Equals K
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Hash Table, Prefix Sum]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Hash Table, Prefix Sum]
 
 **Problem:** Given an array of integers `nums` and an integer `k`, return the total number of subarrays whose sum equals `k`.
 
@@ -915,12 +915,12 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 2 Ã— 10â´
-- -1000 â‰¤ nums[i] â‰¤ 1000
-- -10â· â‰¤ k â‰¤ 10â·
+- 1 ≤ nums.length ≤ 2 × 10⁴
+- -1000 ≤ nums[i] ≤ 1000
+- -10⁷ ≤ k ≤ 10⁷
 
 **Solution Approach:**
-- **Brute Force:** Check all subarrays. Time O(nÂ²), Space O(1).
+- **Brute Force:** Check all subarrays. Time O(n²), Space O(1).
 - **Optimal (Prefix Sum + Map):** Track cumulative sum. At each position, check if `cumulative - k` has been seen before. Count matches in a hash map. Time O(n), Space O(n).
 
 ```typescript
@@ -956,9 +956,9 @@ console.log(subarraySum([-1, -1, 1], 0)); // 1
 
 ### Problem 16: Merge Intervals
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Sorting]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Sorting]
 
 **Problem:** Given an array of intervals `intervals[i] = [starti, endi]`, merge all overlapping intervals and return an array of the non-overlapping intervals.
 
@@ -969,8 +969,8 @@ Output: [[1, 6], [8, 10], [15, 18]]
 ```
 
 **Constraints:**
-- 1 â‰¤ intervals.length â‰¤ 10â´
-- 0 â‰¤ starti â‰¤ endi â‰¤ 10â´
+- 1 ≤ intervals.length ≤ 10⁴
+- 0 ≤ starti ≤ endi ≤ 10⁴
 
 **Solution Approach:**
 - Sort by start time, then merge when current end >= next start.
@@ -1003,16 +1003,16 @@ console.log(merge([[1, 4], [4, 5]])); // [[1, 5]]
 console.log(merge([[1, 4], [2, 3]])); // [[1, 4]]
 ```
 
-**Time Complexity:** O(n log n) â€” due to sorting
+**Time Complexity:** O(n log n) — due to sorting
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 17: Next Permutation
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Two Pointers]
 
 **Problem:** Implement next permutation, which rearranges numbers into the lexicographically next greater permutation. If not possible, rearrange as the lowest possible order.
 
@@ -1023,8 +1023,8 @@ Output: [1, 3, 2]
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 100
-- 0 â‰¤ nums[i] â‰¤ 100
+- 1 ≤ nums.length ≤ 100
+- 0 ≤ nums[i] ≤ 100
 
 **Solution Approach:**
 - Find first decreasing element from right. Find the next larger element to swap. Reverse the suffix.
@@ -1073,9 +1073,9 @@ console.log(arr2); // [1, 2, 3]
 
 ### Problem 18: Sort Colors (Dutch National Flag)
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Two Pointers, Sorting]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Two Pointers, Sorting]
 
 **Problem:** Given an array `nums` with n objects colored red (0), white (1), or blue (2), sort them in-place so that same colors are adjacent. Do not use the library's sort function.
 
@@ -1087,7 +1087,7 @@ Output: [0, 0, 1, 1, 2, 2]
 
 **Constraints:**
 - n == nums.length
-- 1 â‰¤ n â‰¤ 300
+- 1 ≤ n ≤ 300
 - nums[i] is 0, 1, or 2
 
 **Solution Approach:**
@@ -1133,9 +1133,9 @@ console.log(arr2); // [0, 1, 2]
 
 ### Problem 19: Rotate Array
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Math, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Math, Two Pointers]
 
 **Problem:** Given an array, rotate the array to the right by k steps, where k is non-negative.
 
@@ -1146,8 +1146,8 @@ Output: [5, 6, 7, 1, 2, 3, 4]
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10âµ
-- 0 â‰¤ k â‰¤ 10âµ
+- 1 ≤ nums.length ≤ 10⁵
+- 0 ≤ k ≤ 10⁵
 
 **Solution Approach:**
 - **Brute Force:** Rotate one step k times. Time O(n*k), Space O(1).
@@ -1189,9 +1189,9 @@ console.log(arr2); // [3, 99, -1, -100]
 
 ### Problem 20: Maximum Product Subarray
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Dynamic Programming]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Dynamic Programming]
 
 **Problem:** Given an integer array `nums`, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
 
@@ -1203,8 +1203,8 @@ Explanation: Subarray [2, 3] has product 6.
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 2 Ã— 10â´
-- -10 â‰¤ nums[i] â‰¤ 10
+- 1 ≤ nums.length ≤ 2 × 10⁴
+- -10 ≤ nums[i] ≤ 10
 
 **Solution Approach:**
 - Track both max and min product ending at each position (because negative * negative = positive).
@@ -1240,9 +1240,9 @@ console.log(maxProduct([-2, 3, -4]));   // 24
 
 ### Problem 21: Search in Rotated Sorted Array
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Binary Search]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Binary Search]
 
 **Problem:** Given a rotated sorted array and a target, return its index. If not found, return -1. Must be O(log n).
 
@@ -1253,8 +1253,8 @@ Output: 4
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 5000
-- -10â´ â‰¤ nums[i] â‰¤ 10â´
+- 1 ≤ nums.length ≤ 5000
+- -10⁴ ≤ nums[i] ≤ 10⁴
 - All values unique
 
 **Solution Approach:**
@@ -1303,9 +1303,9 @@ console.log(search([1], 0)); // -1
 
 ### Problem 22: First and Last Position of Element in Sorted Array
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Binary Search]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Binary Search]
 
 **Problem:** Find the starting and ending position of a given target value in a sorted array. If not found, return [-1, -1]. O(log n) required.
 
@@ -1316,8 +1316,8 @@ Output: [3, 4]
 ```
 
 **Constraints:**
-- 0 â‰¤ nums.length â‰¤ 10âµ
-- -10â¹ â‰¤ nums[i] â‰¤ 10â¹
+- 0 ≤ nums.length ≤ 10⁵
+- -10⁹ ≤ nums[i] ≤ 10⁹
 
 **Solution Approach:**
 - Two binary searches: one for leftmost, one for rightmost occurrence.
@@ -1366,9 +1366,9 @@ console.log(searchRange([], 0)); // [-1, -1]
 
 ### Problem 23: Find Minimum in Rotated Sorted Array
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Binary Search]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Binary Search]
 
 **Problem:** Given a rotated sorted array of unique elements, find the minimum element in O(log n).
 
@@ -1413,9 +1413,9 @@ console.log(findMin([11, 13, 15, 17])); // 11
 
 ### Problem 24: Jump Game II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Array, Greedy]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Array, Greedy]
 
 **Problem:** Given an array where nums[i] is max jump length from position i, return minimum jumps to reach the last index.
 
@@ -1426,8 +1426,8 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10â´
-- 0 â‰¤ nums[i] â‰¤ 1000
+- 1 ≤ nums.length ≤ 10⁴
+- 0 ≤ nums[i] ≤ 1000
 
 **Solution Approach:**
 - BFS-like greedy. Track current reach and next reach.
@@ -1453,7 +1453,7 @@ function jump(nums: number[]): number {
 **Test Cases:**
 ```typescript
 console.log(jump([2, 3, 1, 1, 4])); // 2
-console.log(jump([2, 0, 0]));       // 1? actually can't reach â€” but constraints say reachable
+console.log(jump([2, 0, 0]));       // 1? actually can't reach — but constraints say reachable
 console.log(jump([0]));             // 0
 ```
 
@@ -1464,11 +1464,11 @@ console.log(jump([0]));             // 0
 
 ### Problem 25: Majority Element
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-ðŸ“Š **Difficulty:** Easy â†’ Medium
-ðŸ“‚ **Topics:** [Array, Voting Algorithm]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+📊 **Difficulty:** Easy → Medium
+📂 **Topics:** [Array, Voting Algorithm]
 
-**Problem:** Find the majority element (appears more than âŒŠn/2âŒ‹ times). Assume majority always exists.
+**Problem:** Find the majority element (appears more than ⌊n/2⌋ times). Assume majority always exists.
 
 **Example 1:**
 ```
@@ -1516,9 +1516,9 @@ console.log(majorityElement([2, 2, 1, 1, 1, 2, 2])); // 2
 
 ### Problem 26: First Missing Positive
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Array, Hash Table]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Array, Hash Table]
 
 **Problem:** Given an unsorted integer array, find the smallest missing positive integer. O(n) time, O(1) space.
 
@@ -1535,8 +1535,8 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10âµ
-- -2Â³Â¹ â‰¤ nums[i] â‰¤ 2Â³Â¹ - 1
+- 1 ≤ nums.length ≤ 10⁵
+- -2³¹ ≤ nums[i] ≤ 2³¹ - 1
 
 **Solution Approach:**
 - Place each number in its correct position (1 at index 0, 2 at index 1, etc.). Then find first mismatch.
@@ -1575,9 +1575,9 @@ console.log(firstMissingPositive([7, 8, 9, 11, 12])); // 1
 
 ### Problem 27: Trapping Rain Water
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Array, Two Pointers, Stack, DP]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Array, Two Pointers, Stack, DP]
 
 **Problem:** Given n non-negative integers representing elevation map, compute how much water it can trap after raining.
 
@@ -1589,8 +1589,8 @@ Output: 6
 
 **Constraints:**
 - n == height.length
-- 1 â‰¤ n â‰¤ 2 Ã— 10â´
-- 0 â‰¤ height[i] â‰¤ 10âµ
+- 1 ≤ n ≤ 2 × 10⁴
+- 0 ≤ height[i] ≤ 10⁵
 
 **Solution Approach:**
 - **DP:** Compute left max and right max arrays. Time O(n), Space O(n).
@@ -1640,9 +1640,9 @@ console.log(trap([1, 0, 1])); // 1
 
 ### Problem 28: Median of Two Sorted Arrays
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Array, Binary Search, Divide and Conquer]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Array, Binary Search, Divide and Conquer]
 
 **Problem:** Given two sorted arrays nums1 and nums2 of size m and n, return the median of the two sorted arrays. O(log(m+n)) time.
 
@@ -1653,11 +1653,11 @@ Output: 2.0
 ```
 
 **Constraints:**
-- 0 â‰¤ m, n â‰¤ 1000
-- -10â¶ â‰¤ nums[i] â‰¤ 10â¶
+- 0 ≤ m, n ≤ 1000
+- -10⁶ ≤ nums[i] ≤ 10⁶
 
 **Solution Approach:**
-- Binary search on the smaller array. Partition both arrays such that left half â‰¤ right half.
+- Binary search on the smaller array. Partition both arrays such that left half ≤ right half.
 
 ```typescript
 function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
@@ -1710,9 +1710,9 @@ console.log(findMedianSortedArrays([0, 0], [0, 0]));    // 0
 
 ### Problem 29: Maximum Gap
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Array, Bucket Sort, Radix Sort]
+🏷️ **Companies:** [Amazon] [Google]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Array, Bucket Sort, Radix Sort]
 
 **Problem:** Given an unsorted array, find the maximum difference between successive elements in its sorted form. Linear time and space.
 
@@ -1723,8 +1723,8 @@ Output: 3
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10âµ
-- 0 â‰¤ nums[i] â‰¤ 10â¹
+- 1 ≤ nums.length ≤ 10⁵
+- 0 ≤ nums[i] ≤ 10⁹
 
 **Solution Approach:**
 - **Pigeonhole Principle / Bucket Sort:** n-2 numbers into n-1 buckets. Max gap must be between buckets.
@@ -1775,9 +1775,9 @@ console.log(maximumGap([1, 10000000]));  // 9999999
 
 ### Problem 30: Count of Smaller Numbers After Self
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Array, Binary Search, Divide and Conquer, Fenwick Tree]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Array, Binary Search, Divide and Conquer, Fenwick Tree]
 
 **Problem:** Given an integer array nums, return a new array counts where counts[i] is the number of smaller elements to the right of nums[i].
 
@@ -1788,8 +1788,8 @@ Output: [2, 1, 1, 0]
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10âµ
-- -10â´ â‰¤ nums[i] â‰¤ 10â´
+- 1 ≤ nums.length ≤ 10⁵
+- -10⁴ ≤ nums[i] ≤ 10⁴
 
 **Solution Approach:**
 - **Merge Sort:** While merging, count inversions (smaller elements to the right).
@@ -1874,7 +1874,7 @@ console.log(countSmaller([-1, -1]));      // [0, 0]
 | 8 | Single Number | Easy | Amazon, Google, Microsoft, Apple | O(n) | O(1) |
 | 9 | Intersection of Two Arrays II | Easy | Amazon, Google, Microsoft | O(n+m) | O(min(n,m)) |
 | 10 | Plus One | Easy | Amazon, Google, Microsoft | O(n) | O(1) |
-| 11 | Three Sum | Medium | Amazon, Google, Meta, Microsoft, Apple | O(nÂ²) | O(1) |
+| 11 | Three Sum | Medium | Amazon, Google, Meta, Microsoft, Apple | O(n²) | O(1) |
 | 12 | Product of Array Except Self | Medium | Amazon, Meta, Google, Microsoft, Apple | O(n) | O(1) |
 | 13 | Container With Most Water | Medium | Amazon, Google, Meta, Microsoft | O(n) | O(1) |
 | 14 | Find the Duplicate Number | Medium | Amazon, Google, Microsoft, Meta | O(n) | O(1) |

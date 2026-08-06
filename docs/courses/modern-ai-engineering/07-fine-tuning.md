@@ -1,4 +1,4 @@
-﻿# Chapter 7: Fine-Tuning
+# Chapter 7: Fine-Tuning
 
 > **Learning Objectives**
 >
@@ -38,7 +38,7 @@ The primary scenarios where fine-tuning is warranted include:
 
 - **Domain specialization**: The base model lacks knowledge of specialized terminology, code syntax, legal language, medical knowledge, or proprietary APIs.
 - **Format adherence**: The model cannot reliably produce structured output (JSON, XML, markdown tables) even with detailed prompting.
-- **Style and tone control**: The application demands a consistent voice â€” customer support should always be polite and empathetic, technical docs should be concise.
+- **Style and tone control**: The application demands a consistent voice — customer support should always be polite and empathetic, technical docs should be concise.
 - **Latency or cost reduction**: A smaller fine-tuned model can match or exceed a larger general model's performance, reducing inference cost and latency.
 - **Multi-task instruction following**: The model struggles with complex multi-step instructions or tasks that require chaining reasoning and action.
 
@@ -59,7 +59,7 @@ flowchart TD
     L -->|No| N[Consider RLHF / Preference Tuning]
 ```
 
-A practical heuristic: if you can fix the problem with 5â€“10 well-crafted examples in the prompt, use few-shot. If you need 100â€“1000 examples, consider RAG. If you need 1000+ examples and the model still underperforms, it is time to fine-tune.
+A practical heuristic: if you can fix the problem with 5–10 well-crafted examples in the prompt, use few-shot. If you need 100–1000 examples, consider RAG. If you need 1000+ examples and the model still underperforms, it is time to fine-tune.
 
 ---
 
@@ -70,12 +70,12 @@ Full fine-tuning updates **all parameters** of the pre-trained model on a task-s
 **How it works**: A pre-trained model (e.g., Llama 3 70B, GPT-2, BERT) is loaded with its pre-trained weights. The training loop runs on a supervised dataset where each example consists of an input and a target output. Backpropagation computes gradients for every parameter, and the optimizer (typically AdamW) updates all weights.
 
 **Requirements**:
-- **Computation**: For a 7B parameter model, full fine-tuning requires 4â€“8 A100 GPUs (80 GB each) with gradient checkpointing, mixed precision (bf16/fp16), and possibly distributed data parallelism (DDP) or fully sharded data parallelism (FSDP).
-- **Memory**: Each parameter consumes at least 2 bytes (bf16) plus optimizer states (8 bytes per parameter with AdamW). A 7B model may need 70â€“140 GB of GPU memory just for parameters, gradients, and optimizer states.
-- **Data**: At least 1000â€“10,000 high-quality examples. More data is generally better, but data quality matters more than quantity.
+- **Computation**: For a 7B parameter model, full fine-tuning requires 4–8 A100 GPUs (80 GB each) with gradient checkpointing, mixed precision (bf16/fp16), and possibly distributed data parallelism (DDP) or fully sharded data parallelism (FSDP).
+- **Memory**: Each parameter consumes at least 2 bytes (bf16) plus optimizer states (8 bytes per parameter with AdamW). A 7B model may need 70–140 GB of GPU memory just for parameters, gradients, and optimizer states.
+- **Data**: At least 1000–10,000 high-quality examples. More data is generally better, but data quality matters more than quantity.
 
 **Catastrophic forgetting**: The most significant risk of full fine-tuning. As the model updates its weights to perform well on the new task, it can lose capabilities learned during pre-training. For example, fine-tuning a code model on legal documents may degrade its code generation ability. Mitigations include:
-- Mixing in general-domain data during fine-tuning (10â€“20% replay buffer)
+- Mixing in general-domain data during fine-tuning (10–20% replay buffer)
 - Using Elastic Weight Consolidation (EWC) to penalize changes to important parameters
 - Lower learning rates (1e-5 to 5e-5)
 - Early stopping based on validation loss
@@ -85,9 +85,9 @@ Full fine-tuning updates **all parameters** of the pre-trained model on a task-s
 | Method | Params Updated | Memory (7B) | Speed | Forgetting Risk |
 |--------|---------------|-------------|-------|-----------------|
 | Full Fine-Tuning | 100% | ~140 GB | Slow | High |
-| LoRA | 0.1â€“1% | ~16 GB | Fast | Low |
-| QLoRA | 0.1â€“1% | ~10 GB | Fast | Low |
-| Adapters | 1â€“3% | ~20 GB | Moderate | Low |
+| LoRA | 0.1–1% | ~16 GB | Fast | Low |
+| QLoRA | 0.1–1% | ~10 GB | Fast | Low |
+| Adapters | 1–3% | ~20 GB | Moderate | Low |
 
 ---
 
@@ -95,23 +95,23 @@ Full fine-tuning updates **all parameters** of the pre-trained model on a task-s
 
 PEFT methods update only a small subset of model parameters while keeping the pre-trained weights frozen. This dramatically reduces memory requirements, training time, and the risk of catastrophic forgetting.
 
-**LoRA (Low-Rank Adaptation)**: The most popular PEFT method. LoRA injects trainable low-rank decomposition matrices into attention layers. For a weight matrix W of shape dÃ—k, LoRA learns A (dÃ—r) and B (rÃ—k) where r << min(d,k). The update is Î”W = AB, so the modified forward pass becomes h = Wx + ABx. At inference time, LoRA weights can be merged into the original weights with zero added latency.
+**LoRA (Low-Rank Adaptation)**: The most popular PEFT method. LoRA injects trainable low-rank decomposition matrices into attention layers. For a weight matrix W of shape d×k, LoRA learns A (d×r) and B (r×k) where r << min(d,k). The update is ΔW = AB, so the modified forward pass becomes h = Wx + ABx. At inference time, LoRA weights can be merged into the original weights with zero added latency.
 
 **QLoRA**: Quantizes the base model to 4-bit NormalFloat and adds LoRA adapters on top. Enables fine-tuning of 65B models on a single 48GB GPU. Uses double quantization to reduce memory further and paged optimizers to handle memory spikes.
 
-**Adapters**: Small bottleneck layers inserted between transformer layers. Each adapter is a down-projection (d â†’ h) followed by a non-linearity and up-projection (h â†’ d), where h << d. Adapters add serial computation, increasing latency slightly at inference.
+**Adapters**: Small bottleneck layers inserted between transformer layers. Each adapter is a down-projection (d → h) followed by a non-linearity and up-projection (h → d), where h << d. Adapters add serial computation, increasing latency slightly at inference.
 
-**Prefix Tuning**: Prepends learnable continuous vectors (soft prompts) to the input of each transformer layer. Unlike discrete prompt tokens, these vectors are optimized via gradient descent. The prefix length (typically 10â€“200 tokens) controls expressiveness.
+**Prefix Tuning**: Prepends learnable continuous vectors (soft prompts) to the input of each transformer layer. Unlike discrete prompt tokens, these vectors are optimized via gradient descent. The prefix length (typically 10–200 tokens) controls expressiveness.
 
 **Prompt Tuning**: A simpler variant where learnable tokens are only prepended to the input embedding layer (not every layer). More parameter-efficient but less expressive than prefix tuning.
 
 | Method | Trainable Params | Inference Overhead | Expressiveness | Memory Saving |
 |--------|-----------------|--------------------|---------------|---------------|
-| LoRA | 0.1â€“1% | None (mergeable) | High | 10â€“20Ã— |
-| QLoRA | 0.1â€“1% | None (mergeable) | High | 15â€“25Ã— |
-| Adapters | 1â€“3% | Slight (serial) | Medium-High | 5â€“10Ã— |
-| Prefix Tuning | 0.01â€“0.1% | None | Medium | 20â€“50Ã— |
-| Prompt Tuning | 0.001â€“0.01% | None | Low-Medium | 50â€“100Ã— |
+| LoRA | 0.1–1% | None (mergeable) | High | 10–20× |
+| QLoRA | 0.1–1% | None (mergeable) | High | 15–25× |
+| Adapters | 1–3% | Slight (serial) | Medium-High | 5–10× |
+| Prefix Tuning | 0.01–0.1% | None | Medium | 20–50× |
+| Prompt Tuning | 0.001–0.01% | None | Low-Medium | 50–100× |
 
 In practice, LoRA is the most widely adopted due to its mergeable weights, no inference latency, and strong empirical performance across tasks. QLoRA is preferred when GPU memory is constrained.
 
@@ -119,30 +119,30 @@ In practice, LoRA is the most widely adopted due to its mergeable weights, no in
 
 ## 7.4 LoRA Deep Dive
 
-LoRA is based on the observation that learned over-parameterized models lie on a low intrinsic dimension. During adaptation, weight changes also have low intrinsic rank, allowing us to decompose Î”W into two low-rank matrices.
+LoRA is based on the observation that learned over-parameterized models lie on a low intrinsic dimension. During adaptation, weight changes also have low intrinsic rank, allowing us to decompose ΔW into two low-rank matrices.
 
-**Low-rank decomposition**: For a pre-trained weight matrix Wâ‚€ of dimensions dÃ—k, the update is:
+**Low-rank decomposition**: For a pre-trained weight matrix W₀ of dimensions d×k, the update is:
 
 ```
-W = Wâ‚€ + Î”W = Wâ‚€ + BA
+W = W₀ + ΔW = W₀ + BA
 ```
 
-Where B âˆˆ â„^{dÃ—r}, A âˆˆ â„^{rÃ—k}, and r << min(d,k). A is initialized with random Gaussian (Ïƒ=0.02), B is initialized to zero, so Î”W starts at zero.
+Where B ∈ ℝ^{d×r}, A ∈ ℝ^{r×k}, and r << min(d,k). A is initialized with random Gaussian (σ=0.02), B is initialized to zero, so ΔW starts at zero.
 
 **Rank selection**: The rank r controls the expressiveness of the adapter. Common values range from 4 to 64. Higher ranks capture more task-specific patterns but increase trainable parameters and risk overfitting. For most tasks, r=8 or r=16 provides a good balance.
 
 **Target modules**: LoRA is typically applied to attention projection matrices (Q, K, V, O) in transformer layers. Some implementations also target feed-forward network (FFN) layers. Applying LoRA to all attention matrices generally yields the best results, while targeting only Q and V is a common cost-saving simplification.
 
-**Alpha scaling**: The LoRA update is scaled by Î±/r before adding to the base weights. The hyperparameter Î± controls the magnitude of the adaptation. Higher Î± values amplify the LoRA contribution. A common rule of thumb is to set Î± to 2Ã— the rank (e.g., r=8, Î±=16).
+**Alpha scaling**: The LoRA update is scaled by α/r before adding to the base weights. The hyperparameter α controls the magnitude of the adaptation. Higher α values amplify the LoRA contribution. A common rule of thumb is to set α to 2× the rank (e.g., r=8, α=16).
 
 ```mermaid
 architecture-beta
     group transformer[Transformer Layer]
     service pretrained(server)[Pretrained Weights] in transformer
-    service lora_a(database)[LoRA A dÃ—r] in transformer
-    service lora_b(database)[LoRA B rÃ—k] in transformer
-    service scaling(disk)[Scale Î±/r] in transformer
-    service sum(cloud)[Wâ‚€ + BA]
+    service lora_a(database)[LoRA A d×r] in transformer
+    service lora_b(database)[LoRA B r×k] in transformer
+    service scaling(disk)[Scale α/r] in transformer
+    service sum(cloud)[W₀ + BA]
     service output(database)[Output]
 
     pretrained --> sum
@@ -152,7 +152,7 @@ architecture-beta
     sum --> output
 ```
 
-**Merge at inference**: After training, the LoRA weights (scaled BA) can be added to the original weights: `W_merged = Wâ‚€ + (Î±/r) Ã— BA`. This produces a single weight matrix with no additional computation during inference.
+**Merge at inference**: After training, the LoRA weights (scaled BA) can be added to the original weights: `W_merged = W₀ + (α/r) × BA`. This produces a single weight matrix with no additional computation during inference.
 
 **Multiple LoRA adapters**: A single base model can host multiple LoRA adapters simultaneously. During inference, the appropriate adapter is selected per request, enabling task-specific behavior without model reloads. Platforms like vLLM and TGI support dynamic LoRA adapter swapping.
 
@@ -204,7 +204,7 @@ Reinforcement Learning from Human Feedback (RLHF) aligns language models with hu
 
 **RLHF Pipeline**:
 1. **Supervised Fine-Tuning (SFT)**: The base model is instruction-tuned on high-quality demonstrations.
-2. **Reward Modeling**: A separate reward model is trained on pairwise comparisons â€” given two responses to the same prompt, humans indicate which is better. The reward model learns to predict human preference.
+2. **Reward Modeling**: A separate reward model is trained on pairwise comparisons — given two responses to the same prompt, humans indicate which is better. The reward model learns to predict human preference.
 3. **PPO (Proximal Policy Optimization)**: The SFT model generates responses, the reward model scores them, and PPO updates the policy (the language model) to maximize expected reward. A KL divergence penalty prevents the policy from diverging too far from the SFT model.
 
 ```mermaid
@@ -223,12 +223,12 @@ flowchart LR
 **DPO (Direct Preference Optimization)**: DPO eliminates the need for a separate reward model and PPO training. It directly optimizes the policy using preference pairs, reparameterizing the reward function in terms of the policy. The DPO loss function is:
 
 ```
-L = -E[log Ïƒ(Î² log(Ï€_Î¸(y_w|x) / Ï€_ref(y_w|x)) - Î² log(Ï€_Î¸(y_l|x) / Ï€_ref(y_l|x)))]
+L = -E[log σ(β log(π_θ(y_w|x) / π_ref(y_w|x)) - β log(π_θ(y_l|x) / π_ref(y_l|x)))]
 ```
 
-Where y_w is the preferred response, y_l is the dispreferred response, and Î² controls the deviation from the reference policy. DPO is simpler, more stable, and requires less compute than RLHF-PPO, making it the preferred choice for most teams.
+Where y_w is the preferred response, y_l is the dispreferred response, and β controls the deviation from the reference policy. DPO is simpler, more stable, and requires less compute than RLHF-PPO, making it the preferred choice for most teams.
 
-**KTO (Kahneman-Tversky Optimization)**: Uses unpaired preference data â€” only requires knowing whether a response is good or bad, not pairwise comparisons. Based on prospect theory (Kahneman-Tversky), KTO models human utility as asymmetric: the disutility of a bad response outweighs the utility of a good one.
+**KTO (Kahneman-Tversky Optimization)**: Uses unpaired preference data — only requires knowing whether a response is good or bad, not pairwise comparisons. Based on prospect theory (Kahneman-Tversky), KTO models human utility as asymmetric: the disutility of a bad response outweighs the utility of a good one.
 
 **ORPO (Odds Ratio Preference Optimization)**: Combines SFT and preference optimization into a single stage. During supervised training, ORPO adds an odds ratio loss that penalizes the model for generating dispreferred responses and rewards preferred ones. This eliminates the need for a separate SFT phase.
 
@@ -258,7 +258,7 @@ Data quality is the single most important factor in fine-tuning success. A well-
 
 **Deduplication**: Remove near-duplicate examples. Even exact duplicates can bias training. MinHash LSH (locality-sensitive hashing) efficiently finds near-duplicates in large datasets. Deduplication against the pre-training corpus also prevents test set contamination.
 
-**Train/test split**: Reserve 5â€“10% of your data for evaluation. Ensure the split is stratified by task (if multi-task) and that no prompt appears in both train and test (no leakage).
+**Train/test split**: Reserve 5–10% of your data for evaluation. Ensure the split is stratified by task (if multi-task) and that no prompt appears in both train and test (no leakage).
 
 ---
 
@@ -269,7 +269,7 @@ Evaluation before and after fine-tuning is essential to measure improvements and
 **Before/after comparison**: Run the same evaluation benchmarks on the base model and the fine-tuned model. This quantifies improvements on target tasks and detects regression on general capabilities.
 
 **Task-specific benchmarks**:
-- **MMLU** (knowledge): Massive Multitask Language Understanding â€” 57 subjects
+- **MMLU** (knowledge): Massive Multitask Language Understanding — 57 subjects
 - **HumanEval** (code): Function completion tasks with unit tests
 - **GSM8K** (math): Grade school math word problems
 - **MT-Bench** (multi-turn): Multi-turn conversation quality scored by GPT-4
@@ -615,7 +615,7 @@ Fine-tuning adapts pre-trained foundation models to specialized tasks when promp
 3. Adapters
 4. Prefix tuning
 
-**Q2**: What is the primary purpose of the Î± (alpha) hyperparameter in LoRA?
+**Q2**: What is the primary purpose of the α (alpha) hyperparameter in LoRA?
 1. Controls the learning rate
 2. Scales the LoRA update contribution
 3. Determines the rank of the decomposition
@@ -628,9 +628,9 @@ Fine-tuning adapts pre-trained foundation models to specialized tasks when promp
 4. Reward modeling
 
 **Q4**: What is the recommended validation split percentage for fine-tuning datasets?
-1. 0â€“1%
-2. 5â€“10%
-3. 20â€“30%
+1. 0–1%
+2. 5–10%
+3. 20–30%
 4. 50%
 
 **Q5**: In the ReAct pattern, what comes after the "Action" step?
@@ -650,7 +650,7 @@ Fine-tuning adapts pre-trained foundation models to specialized tasks when promp
 <details>
 <summary>Solution</summary>
 
-A proper decision flow would: (1) check if prompt engineering with 3 examples achieves >90% quality â†’ if yes, use prompting; (2) check if 10 examples + RAG on support docs works â†’ if yes, use RAG; (3) check if the model needs to follow strict JSON schemas â†’ if yes, fine-tune for format; (4) check if latency must be under 200ms â†’ if yes, fine-tune a smaller model; (5) use LoRA with rank 8 on a 7B model as default.
+A proper decision flow would: (1) check if prompt engineering with 3 examples achieves >90% quality → if yes, use prompting; (2) check if 10 examples + RAG on support docs works → if yes, use RAG; (3) check if the model needs to follow strict JSON schemas → if yes, fine-tune for format; (4) check if latency must be under 200ms → if yes, fine-tune a smaller model; (5) use LoRA with rank 8 on a 7B model as default.
 </details>
 
 **Exercise 2**: Given a pre-trained 7B model with 32 layers, each with attention dimensions d=4096, calculate the number of trainable parameters for LoRA with rank 16 applied to Q, K, V, O projections. Compare this to full fine-tuning (7B parameters).
@@ -658,7 +658,7 @@ A proper decision flow would: (1) check if prompt engineering with 3 examples ac
 <details>
 <summary>Solution</summary>
 
-For each layer and each projection (Q/K/V/O): LoRA adds A (4096Ã—16) + B (16Ã—4096) = 65,536 + 65,536 = 131,072 parameters per projection. Four projections Ã— 32 layers = 128 Ã— 131,072 = 16,777,216 trainable parameters (~16.8M). Full fine-tuning = 7B. LoRA trains only 0.24% of parameters.
+For each layer and each projection (Q/K/V/O): LoRA adds A (4096×16) + B (16×4096) = 65,536 + 65,536 = 131,072 parameters per projection. Four projections × 32 layers = 128 × 131,072 = 16,777,216 trainable parameters (~16.8M). Full fine-tuning = 7B. LoRA trains only 0.24% of parameters.
 </details>
 
 **Exercise 3**: Convert the following conversation into Llama 3 chat template format: System: "You are a math tutor." User: "What is 2+2?" Assistant: "2+2 equals 4."
@@ -702,5 +702,5 @@ function dpoLoss(
 <details>
 <summary>Solution</summary>
 
-(1) Add 10â€“20% general-domain data (code, general QA) to the training mix as a replay buffer. (2) Use Elastic Weight Consolidation (EWC) to penalize weight changes important for code generation. (3) Lower the learning rate to 1e-5 and use early stopping based on a combined loss that includes a general benchmark score.
+(1) Add 10–20% general-domain data (code, general QA) to the training mix as a replay buffer. (2) Use Elastic Weight Consolidation (EWC) to penalize weight changes important for code generation. (3) Lower the learning rate to 1e-5 and use early stopping based on a combined loss that includes a general benchmark score.
 </details>

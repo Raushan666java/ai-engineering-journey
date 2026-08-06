@@ -1,4 +1,4 @@
-﻿# Chapter 15: OT/ICS & SCADA Security
+# Chapter 15: OT/ICS & SCADA Security
 
 **Next:** [Chapter 16: Supply Chain & CI/CD Security](./16-supply-chain-cicd.md)
 
@@ -8,7 +8,7 @@
 
 - Understand the OT/ICS/SCADA landscape including the Purdue model, ISA-99/IEC 62443 standards, and the fundamental differences between IT and OT security
 - Analyze PLC security architectures for Allen-Bradley, Siemens S7, and Modicon/M340 families including memory layout, programming interfaces, and remote access protocols
-- Deep-dive into industrial protocols â€” Modbus TCP/RTU, DNP3, Siemens S7comm, Profinet, OPC UA, and BACnet â€” with TypeScript implementations for scanning and fuzzing
+- Deep-dive into industrial protocols — Modbus TCP/RTU, DNP3, Siemens S7comm, Profinet, OPC UA, and BACnet — with TypeScript implementations for scanning and fuzzing
 - Reconstruct major ICS attacks (Stuxnet, TRITON/TRISIS, Industroyer, Incontroller/Pipedream) and extract defensive lessons
 - Design OT network segmentation using ISA-99 zones/conduits, unidirectional gateways, data diodes, and OT firewalls
 - Implement OT monitoring strategies with passive vs active techniques, OT-SIEM, Wireshark dissectors, and Zeek scripts
@@ -121,24 +121,24 @@ flowchart BT
 ```
 
 **Security implications per level:**
-- **Level 0â€“1:** No security; devices are resource-constrained. Physical access control is critical.
+- **Level 0–1:** No security; devices are resource-constrained. Physical access control is critical.
 - **Level 2:** HMIs often run Windows with limited patching. App whitelisting and credential hardening needed.
 - **Level 3:** Historians and domain controllers are prime targets. EDR deployment and strict network segmentation required.
-- **Level 4:** Standard IT security applies, but trust from OT side must be zero â€” never allow direct inbound connections.
+- **Level 4:** Standard IT security applies, but trust from OT side must be zero — never allow direct inbound connections.
 
-### 1.3 ISAâ€‘99 / IEC 62443 Standards
+### 1.3 ISA‑99 / IEC 62443 Standards
 
-IEC 62443 (formerly ISAâ€‘99) is the international standard series for ICS security:
+IEC 62443 (formerly ISA‑99) is the international standard series for ICS security:
 
 | Part | Title | Focus |
 |------|-------|-------|
-|IEC 62443â€‘1â€‘1|Terminology, concepts, and models|Foundations|
-|IEC 62443â€‘2â€‘1|Establishing an IACS security program|Program management|
-|IEC 62443â€‘2â€‘4|Security requirements for integrators|Supply chain|
-|IEC 62443â€‘3â€‘2|Security risk assessment and system design|Risk assessment|
-|IEC 62443â€‘3â€‘3|System security requirements and security levels|SL 1â€“4 requirements|
-|IEC 62443â€‘4â€‘1|Secure product development lifecycle|Vendor processes|
-|IEC 62443â€‘4â€‘2|Technical security requirements for components|Product certification|
+|IEC 62443‑1‑1|Terminology, concepts, and models|Foundations|
+|IEC 62443‑2‑1|Establishing an IACS security program|Program management|
+|IEC 62443‑2‑4|Security requirements for integrators|Supply chain|
+|IEC 62443‑3‑2|Security risk assessment and system design|Risk assessment|
+|IEC 62443‑3‑3|System security requirements and security levels|SL 1–4 requirements|
+|IEC 62443‑4‑1|Secure product development lifecycle|Vendor processes|
+|IEC 62443‑4‑2|Technical security requirements for components|Product certification|
 
 **Security Levels (SL) defined by IEC 62443:**
 - **SL 1:** Protection against casual or coincidental violation
@@ -152,7 +152,7 @@ IEC 62443 (formerly ISAâ€‘99) is the international standard series for ICS 
 |-----------|-------------|-------------|
 |**Primary goal**|Confidentiality > Integrity > Availability|Availability > Integrity > Confidentiality|
 |**Patch cycle**|Monthly (automated)|Yearly or never (requires plant shutdown)|
-|**Lifetime**|3â€“5 years|15â€“30 years|
+|**Lifetime**|3–5 years|15–30 years|
 |**Communication**|Request/response (HTTP, SQL)|Real-time deterministic (Modbus, DNP3)|
 |**Security controls**|AV, EDR, firewalls, IDS|Application whitelisting, air gaps, data diodes|
 |**Risk tolerance**|Reboot acceptable|Reboot = production loss > $1M/hr|
@@ -311,7 +311,7 @@ flowchart LR
 - Weakness: If SA is not enforced, the session proceeds in clear-text
 - Aggressive mode allows session key establishment in one round trip
 
-**Attack vector:** DNP3 fragmentation â€” an attacker can inject malicious fragments that reassemble into a legitimate-looking message, bypassing signature-based IDS.
+**Attack vector:** DNP3 fragmentation — an attacker can inject malicious fragments that reassemble into a legitimate-looking message, bypassing signature-based IDS.
 
 ### 3.3 Siemens S7comm
 
@@ -320,20 +320,20 @@ S7comm is Siemens' proprietary protocol for S7-300/400/1200/1500 PLCs. It operat
 **Key S7comm services:**
 - **Session setup:** Establish a communication channel (needs ISO-1573 CR/CC)
 - **Copy block (0xDD):** Write data to a PLC memory block
-- **SZL read (0x31):** Read system status list â€” returns firmware version, module name, serial number
+- **SZL read (0x31):** Read system status list — returns firmware version, module name, serial number
 - **SZL write (0x33):** Write system status list (restricted on newer firmware)
 - **Password (0x1D):** Send password hash comparison or set password
-- **PI (0x42):** Program input â€” download blocks, start/stop PLC
-- **PL (0x38):** Program load â€” used by Step 7 to load hardware configuration
+- **PI (0x42):** Program input — download blocks, start/stop PLC
+- **PL (0x38):** Program load — used by Step 7 to load hardware configuration
 
-**Password cracking:** S7-1200 (pre-V4.x) sends a plaintext session ID instead of a challenge. S7-1500 uses SHA-512 for password verification â€” offline cracking with a dictionary is feasible if the hash is captured.
+**Password cracking:** S7-1200 (pre-V4.x) sends a plaintext session ID instead of a challenge. S7-1500 uses SHA-512 for password verification — offline cracking with a dictionary is feasible if the hash is captured.
 
 ### 3.4 Profinet
 
 Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 - **RT (Real-Time):** Cyclic I/O data, cycle times ~1ms
-- **IRT (Isochronous Real-Time):** Deterministic communication for motion control, <1Âµs jitter
+- **IRT (Isochronous Real-Time):** Deterministic communication for motion control, <1µs jitter
 - **DCP (Discovery and Configuration Protocol):** Set IP addresses with no authentication
 - **LLDP (Link Layer Discovery Protocol):** Network topology discovery
 - **Attack vector:** A rogue Profinet IO device can inject false I/O data; DCP can be used to change IPs of real devices (DoS)
@@ -370,12 +370,12 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 |**Propagation**|Four Windows zero-days, signed with stolen Realtek/JMicron certificates|
 |**Payload**|Rootkit on S7-315: .lnf file modified to hide attacks; Roo (Step 7 DLL) intercepted read/write calls|
 |**Effect**|Changed centrifuge rotor speeds to 1410 Hz (destructive resonance), then reported normal 1064 Hz to operators|
-|**Key innovation**|Man-in-the-middle on Profibus â€” PLC saw legitimate commands, real hardware saw destructive commands|
+|**Key innovation**|Man-in-the-middle on Profibus — PLC saw legitimate commands, real hardware saw destructive commands|
 
 **Stuxnet code characteristics:**
 - S7-315 communication via S7comm (TCP/102)
 - Used `s7blk_find` and `s7blk_write` to inject malicious OB1 (main cycle) and OB35 (cyclic interrupt)
-- Ladder logic blocks modified via `s7blk_write` â€” no authentication check on S7-315
+- Ladder logic blocks modified via `s7blk_write` — no authentication check on S7-315
 - Rootkit intercepted `s7blk_read` to return clean data to Step 7
 
 ### 4.2 TRITON / TRISIS (2017)
@@ -383,8 +383,8 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 | Attribute | Detail |
 |-----------|--------|
 |**Target**|Saudi Arabian petrochemical facility (Safety Instrumented System)|
-|**PLC**|Schneider Electric Triconex Safety Controller (Tricon v9â€“10)|
-|**Initial vector**|Spear-phishing â€” credentials captured for Engineering Workstation|
+|**PLC**|Schneider Electric Triconex Safety Controller (Tricon v9–10)|
+|**Initial vector**|Spear-phishing — credentials captured for Engineering Workstation|
 |**Payload**|Malicious TriStation program (Triconex-specific protocol over TCP)|
 |**Effect**|Safety system forced into halt/run cycle; facility manually shut down|
 
@@ -403,7 +403,7 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 |**Protocols**|IEC 60870-6 (TASE.2/ICCP), IEC 60870-5-104, OPC DA|
 |**Initial vector**|Spear-phishing with macro-enabled Office document (BlackEnergy APT)|
 |**Payload**|Modular framework supporting IEC 104, OPC, serial IEC 101|
-|**Effect**|Three substations disconnected, 230,000 customers without power for 1â€“6 hours|
+|**Effect**|Three substations disconnected, 230,000 customers without power for 1–6 hours|
 
 **Industroyer technical details:**
 - IEC 104 module: Issued `C_SC_NA_1` (select/execute control commands) to open circuit breakers
@@ -437,7 +437,7 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 The ISA-99 model divides the ICS network into **zones** (groups of assets with similar security requirements) connected by **conduits** (secured communication channels).
 
 **Zone types:**
-- **Safety zone:** Safety Instrumented System (SIS) â€” highest security; physical separation required
+- **Safety zone:** Safety Instrumented System (SIS) — highest security; physical separation required
 - **Control zone:** PLCs, DCS, SCADA servers
 - **Site operations zone:** HMIs, historians, engineering workstations
 - **DMZ:** Shared services (patch management, AV updates, domain authentication)
@@ -452,15 +452,15 @@ The ISA-99 model divides the ICS network into **zones** (groups of assets with s
 
 ### 5.2 Unidirectional Gateways and Data Diodes
 
-A **data diode** (unidirectional gateway) physically enforces one-way data flow using fiber optics â€” data can only travel from OT to IT, never IT to OT.
+A **data diode** (unidirectional gateway) physically enforces one-way data flow using fiber optics — data can only travel from OT to IT, never IT to OT.
 
 ```
             OT Network               Data Diode                IT Network
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  PLC / Historian  â”‚â”€â”€â”€â”€â”€â”€â”€â–¶â”‚  TX Fiber RX  â”‚â”€â”€â”€â”€â”€â”€â”€â–¶â”‚  OPC UA Server   â”‚
-    â”‚   Level 0â€“2       â”‚        â”‚  (hardware     â”‚        â”‚  Historian       â”‚
-    â”‚                   â”‚        â”‚   unidirectional)â”‚        â”‚  Level 4         â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    ┌──────────────────┐        ┌───────────────┐        ┌──────────────────┐
+    │  PLC / Historian  │───────▶│  TX Fiber RX  │───────▶│  OPC UA Server   │
+    │   Level 0–2       │        │  (hardware     │        │  Historian       │
+    │                   │        │   unidirectional)│        │  Level 4         │
+    └──────────────────┘        └───────────────┘        └──────────────────┘
 ```
 
 **Benefits:**
@@ -475,7 +475,7 @@ A **data diode** (unidirectional gateway) physically enforces one-way data flow 
 
 ### 5.3 OT Firewalls (Protocol-Aware)
 
-Standard firewalls block at layers 3â€“4 but cannot inspect Modbus, DNP3, or S7comm application payloads. OT firewalls perform **Deep Packet Inspection (DPI)** for industrial protocols:
+Standard firewalls block at layers 3–4 but cannot inspect Modbus, DNP3, or S7comm application payloads. OT firewalls perform **Deep Packet Inspection (DPI)** for industrial protocols:
 
 | Firewall | Protocol Support | Key Capability |
 |----------|-----------------|----------------|
@@ -502,7 +502,7 @@ DENY Modbus-TCP from any to any except registered masters
 | Aspect | Passive Monitoring | Active Monitoring |
 |--------|-------------------|-------------------|
 |**Method**|SPAN port / network TAP|Asset scanning (nmap, Nessus)|
-|**Risk**|None â€” no packets injected|Can crash PLCs with aggressive scanning|
+|**Risk**|None — no packets injected|Can crash PLCs with aggressive scanning|
 |**Protocol coverage**|Depends on parser|Generic (TCP banners, SNMP)|
 |**Real-time**|Yes|Snapshot only|
 |**Typical tooling**|Wireshark, Zeek, Nozomi, Claroty|Tenable OT, Dragos OSINT|
@@ -513,31 +513,31 @@ DENY Modbus-TCP from any to any except registered masters
 ### 6.2 OT-SIEM Architecture
 
 ```
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚                  OT-SIEM (Splunk / ELK)               â”‚
-    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
-    â”‚  â”‚ Modbus Parserâ”‚ â”‚ DNP3 Parser â”‚ â”‚ S7comm Parser â”‚  â”‚
-    â”‚  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
-    â”‚         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜           â”‚
-    â”‚                         â–¼                            â”‚
-    â”‚              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                     â”‚
-    â”‚              â”‚ Anomaly Detection â”‚                    â”‚
-    â”‚              â”‚ (Baseline + ML)   â”‚                    â”‚
-    â”‚              â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                    â”‚
-    â”‚                       â–¼                               â”‚
-    â”‚              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                     â”‚
-    â”‚              â”‚ Alert Correlationâ”‚                    â”‚
-    â”‚              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                     â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                         â–²
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  Log Collection    â”‚                        â”‚
-    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”‚ â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”    â”‚
-    â”‚  â”‚Modbusâ”‚ â”‚ DNP3 â”‚ â”‚ â”‚S7commâ”‚ â”‚Syslogâ”‚    â”‚
-    â”‚  â”‚Logs  â”‚ â”‚ Logs â”‚ â”‚ â”‚Logs  â”‚ â”‚Logs  â”‚    â”‚
-    â”‚  â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â”‚ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜    â”‚
-    â”‚  OT Firewall  PLCs â”‚  HMI   Engineering WS â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    ┌──────────────────────────────────────────────────────┐
+    │                  OT-SIEM (Splunk / ELK)               │
+    │  ┌─────────────┐ ┌─────────────┐ ┌───────────────┐  │
+    │  │ Modbus Parser│ │ DNP3 Parser │ │ S7comm Parser │  │
+    │  └──────┬──────┘ └──────┬──────┘ └───────┬───────┘  │
+    │         └───────────────┼────────────────┘           │
+    │                         ▼                            │
+    │              ┌──────────────────┐                     │
+    │              │ Anomaly Detection │                    │
+    │              │ (Baseline + ML)   │                    │
+    │              └────────┬─────────┘                    │
+    │                       ▼                               │
+    │              ┌──────────────────┐                     │
+    │              │ Alert Correlation│                    │
+    │              └──────────────────┘                     │
+    └──────────────────────────────────────────────────────┘
+                         ▲
+    ┌────────────────────┼────────────────────────┐
+    │  Log Collection    │                        │
+    │  ┌──────┐ ┌──────┐ │ ┌──────┐ ┌──────┐    │
+    │  │Modbus│ │ DNP3 │ │ │S7comm│ │Syslog│    │
+    │  │Logs  │ │ Logs │ │ │Logs  │ │Logs  │    │
+    │  └──────┘ └──────┘ │ └──────┘ └──────┘    │
+    │  OT Firewall  PLCs │  HMI   Engineering WS │
+    └────────────────────┼────────────────────────┘
 ```
 
 ### 6.3 Wireshark Dissectors for Industrial Protocols
@@ -622,12 +622,12 @@ A **jump box** (bastion host) is a hardened gateway that mediates all remote con
 
 ```
     Remote Vendor           Jump Box (DMZ)          OT Network
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚ Vendor Laptopâ”‚â”€â”€â”€â”€â”€â”€â”€â–¶â”‚  RDP / SSH   â”‚â”€â”€â”€â”€â”€â”€â”€â–¶â”‚  HMI   â”‚
-    â”‚ + MFA token â”‚         â”‚ + Session Rec â”‚        â”‚        â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜         â”‚ + File Xfer â”‚        â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”¤
-                           â”‚   Scan      â”‚        â”‚  PLC   â”‚
-                           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    ┌────────────┐         ┌──────────────┐        ┌────────┐
+    │ Vendor Laptop│───────▶│  RDP / SSH   │───────▶│  HMI   │
+    │ + MFA token │         │ + Session Rec │        │        │
+    └────────────┘         │ + File Xfer │        ├────────┤
+                           │   Scan      │        │  PLC   │
+                           └──────────────┘        └────────┘
 ```
 
 **Jump box security requirements:**
@@ -655,7 +655,7 @@ A **jump box** (bastion host) is a hardened gateway that mediates all remote con
 A true **air gap** (no network connectivity between OT and IT) is the most secure but operationally challenging:
 
 - **Positive air gap:** No physical connection at all. Data moves via USB drives ("sneakernet"). 100% secure against network-based attacks, but fragile and slow.
-- **Logical air gap:** Unidirectional gateway (data diode) allows OTâ†’IT data, blocks ITâ†’OT. Realistic alternative for most plants.
+- **Logical air gap:** Unidirectional gateway (data diode) allows OT→IT data, blocks IT→OT. Realistic alternative for most plants.
 - **Hybrid air gap:** Data diode for historian data + physically isolated maintenance port for engineering access (requires physical presence).
 
 ---
@@ -665,7 +665,7 @@ A true **air gap** (no network connectivity between OT and IT) is the most secur
 ### 8.1 Modbus TCP Scanner
 
 ```typescript
-// modbus-scanner.ts â€” Enumerate function codes, read coils/registers, write coils on Modbus TCP slaves
+// modbus-scanner.ts — Enumerate function codes, read coils/registers, write coils on Modbus TCP slaves
 import * as net from 'net';
 
 interface ModbusSlave {
@@ -748,7 +748,7 @@ async function readModbusDeviceIdentification(ip: string, unitId: number): Promi
   return new Promise((resolve) => {
     const socket = new net.Socket();
     socket.setTimeout(3000);
-    // Encapsulated interface read â€” object ID 0x00 (vendor), category 0x01 (basic)
+    // Encapsulated interface read — object ID 0x00 (vendor), category 0x01 (basic)
     const frame = Buffer.from([
       0x00, 0x01, 0x00, 0x00, 0x00, 0x06, unitId,
       0x2B, 0x0E, 0x01, 0x00,
@@ -862,7 +862,7 @@ async function writeSingleCoil(ip: string, unitId: number, address: number, valu
 ### 8.2 S7comm Packet Builder and PLC Info Reader
 
 ```typescript
-// s7comm-info.ts â€” Read S7-1200/1500 PLC information via S7comm
+// s7comm-info.ts — Read S7-1200/1500 PLC information via S7comm
 import * as net from 'net';
 
 interface S7PlcInfo {
@@ -963,7 +963,7 @@ async function readS7PlcInfo(ip: string, rack: number = 0, slot: number = 2): Pr
         socket.write(buildTPKT(Buffer.concat([dt, s7pkt])));
       } else if (step === 1) {
         step = 2;
-        // Parse SZL read response (simplified â€” extract text from data section)
+        // Parse SZL read response (simplified — extract text from data section)
         let raw = data.toString('ascii').replace(/[^\x20-\x7E]/g, ' ');
         const info: S7PlcInfo = {
           moduleName: raw.substring(30, 50).trim() || 'S7-1500 (simulated)',
@@ -1007,7 +1007,7 @@ if (require.main === module) {
 ### 8.3 DNP3 Frame Parser
 
 ```typescript
-// dnp3-parser.ts â€” Parse DNP3 frames, extract application fragments and object headers
+// dnp3-parser.ts — Parse DNP3 frames, extract application fragments and object headers
 interface Dnp3TransportHeader {
   fir: boolean;
   fin: boolean;
@@ -1145,7 +1145,7 @@ if (process.argv[2]) {
 ### 8.4 Purdue Model Validator
 
 ```typescript
-// purdue-validator.ts â€” Check zone isolation compliance based on traffic flows
+// purdue-validator.ts — Check zone isolation compliance based on traffic flows
 interface NetworkFlow {
   source: string;
   destination: string;
@@ -1267,14 +1267,14 @@ class PurdueValidator {
 
     // Safety zone: NO inbound traffic allowed
     if (srcConfig.level < dstConfig.level) {
-      // Traffic flowing from Level N to Level N-M (upward) is usually OTâ†’IT data
+      // Traffic flowing from Level N to Level N-M (upward) is usually OT→IT data
       // This is allowed only through DMZ
       if (dstZone !== 'Operations-DMZ' && dstZone !== 'Enterprise-IT') {
         return {
           flow,
           ruleSource: 'purdue-level-direction',
           severity: 'CRITICAL',
-          description: `Reverse flow: ${srcZone}(L${srcConfig.level}) â†’ ${dstZone}(L${dstConfig.level}). OTâ†’IT traffic must go through DMZ.`,
+          description: `Reverse flow: ${srcZone}(L${srcConfig.level}) → ${dstZone}(L${dstConfig.level}). OT→IT traffic must go through DMZ.`,
         };
       }
     }
@@ -1303,13 +1303,13 @@ class PurdueValidator {
       }
     }
 
-    // Check for direct ITâ†’OT violations (Level 4 â†’ Level 0-2)
+    // Check for direct IT→OT violations (Level 4 → Level 0-2)
     if (srcConfig.level === 4 && dstConfig.level <= 2) {
       return {
         flow,
         ruleSource: 'purdue-level-isolation',
         severity: 'CRITICAL',
-        description: `DIRECT ITâ†’OT flow: ${srcZone}(L${srcConfig.level}) â†’ ${dstZone}(L${dstConfig.level}). Traffic must pass through DMZ and Site-Operations.`,
+        description: `DIRECT IT→OT flow: ${srcZone}(L${srcConfig.level}) → ${dstZone}(L${dstConfig.level}). Traffic must pass through DMZ and Site-Operations.`,
       };
     }
 
@@ -1330,19 +1330,19 @@ class PurdueValidator {
     report += `Violations found: ${violations.length} (${critical.length} critical, ${high.length} high)\n\n`;
 
     if (violations.length === 0) {
-      report += 'âœ“ ALL FLOWS COMPLIANT with Purdue model zone isolation\n';
+      report += '✓ ALL FLOWS COMPLIANT with Purdue model zone isolation\n';
       return report;
     }
 
     for (const v of violations) {
       report += `[${v.severity}] ${v.description}\n`;
-      report += `       ${v.flow.sourceIp}:${v.flow.port} â†’ ${v.flow.destIp}:${v.flow.port} (${v.flow.protocol})\n\n`;
+      report += `       ${v.flow.sourceIp}:${v.flow.port} → ${v.flow.destIp}:${v.flow.port} (${v.flow.protocol})\n\n`;
     }
 
     report += 'Recommended actions:\n';
     if (critical.length > 0) {
       report += '- CRITICAL: Deploy unidirectional gateways or data diodes for all reverse flows\n';
-      report += '- CRITICAL: Remove direct ITâ†’OT connections; route through DMZ + Site-Ops\n';
+      report += '- CRITICAL: Remove direct IT→OT connections; route through DMZ + Site-Ops\n';
     }
     report += '- HIGH: Implement firewall rules per ISA-99 zone/conduit model\n';
     report += '- HIGH: Enable OT DPI firewall to whitelist specific function codes\n';
@@ -1374,7 +1374,7 @@ console.log(validator.generateReport(flows));
 ### 8.5 ICS Threat Detection Rules
 
 ```typescript
-// ics-threat-detection.ts â€” Anomalous protocol behavior detection rules
+// ics-threat-detection.ts — Anomalous protocol behavior detection rules
 interface PacketEvent {
   timestamp: Date;
   srcIp: string;
@@ -1465,12 +1465,12 @@ class ICSThreatDetector {
     }
     report += '\nRecent alerts:\n';
     for (const a of this.alerts.slice(-10)) {
-      report += `[${a.severity}] ${a.ruleName}: ${a.description} (${a.srcIp} â†’ ${a.dstIp} FC=0x${a.functionCode.toString(16)})\n`;
+      report += `[${a.severity}] ${a.ruleName}: ${a.description} (${a.srcIp} → ${a.dstIp} FC=0x${a.functionCode.toString(16)})\n`;
     }
     return report;
   }
 
-  // â”€â”€ Rule implementations â”€â”€
+  // ── Rule implementations ──
 
   private modbusWriteCoilFloodRule(): DetectionRule {
     const stateKey = 'modbus-write-count';
@@ -1540,7 +1540,7 @@ class ICSThreatDetector {
             timestamp: event.timestamp,
             ruleName: this.name,
             severity: this.severity,
-            description: `S7comm block write (0xDD) to PLC â€” possible code injection`,
+            description: `S7comm block write (0xDD) to PLC — possible code injection`,
             srcIp: event.srcIp,
             dstIp: event.dstIp,
             protocol: event.protocol,
@@ -1567,7 +1567,7 @@ class ICSThreatDetector {
             timestamp: event.timestamp,
             ruleName: this.name,
             severity: this.severity,
-            description: `High volume of unsolicited DNP3 responses (${count}) â€” possible auth bypass`,
+            description: `High volume of unsolicited DNP3 responses (${count}) — possible auth bypass`,
             srcIp: event.srcIp,
             dstIp: event.dstIp,
             protocol: event.protocol,
@@ -1622,7 +1622,7 @@ class ICSThreatDetector {
               timestamp: event.timestamp,
               ruleName: this.name,
               severity: 'MEDIUM',
-              description: `SZL read from ${event.srcIp} â€” PLC reconnaissance`,
+              description: `SZL read from ${event.srcIp} — PLC reconnaissance`,
               srcIp: event.srcIp,
               dstIp: event.dstIp,
               protocol: event.protocol,
@@ -1683,7 +1683,7 @@ class ICSThreatDetector {
               timestamp: event.timestamp,
               ruleName: this.name,
               severity: this.severity,
-              description: `IEC 104 command spike: ${recent.length} select/execute in 2s â€” possible Industroyer`,
+              description: `IEC 104 command spike: ${recent.length} select/execute in 2s — possible Industroyer`,
               srcIp: event.srcIp,
               dstIp: event.dstIp,
               protocol: event.protocol,
@@ -1723,7 +1723,7 @@ console.log(detector.generateReport());
 ### 8.6 BACnet Who-Is Service Scanner
 
 ```typescript
-// bacnet-whois-scanner.ts â€” Send BACnet Who-Is broadcasts and collect I-Am responses
+// bacnet-whois-scanner.ts — Send BACnet Who-Is broadcasts and collect I-Am responses
 import * as dgram from 'dgram';
 
 interface BacnetDevice {
@@ -1920,7 +1920,7 @@ if (require.main === module) {
 |8|Enable PLC password protection with >15 character complex passwords|High|IEC 62443-4-2 CR 1.2|
 |9|Deploy passive OT monitoring (SPAN port + OT-SIEM)|Medium|IEC 62443-3-3 SR 6.1|
 |10|Log all engineering access (who, when, what block was modified)|Medium|IEC 62443-3-3 SR 2.8|
-|11|Use signed firmware updates only â€” disable unsigned firmware loading|Medium|IEC 62443-4-1|
+|11|Use signed firmware updates only — disable unsigned firmware loading|Medium|IEC 62443-4-1|
 |12|Separate safety controllers (SIS) from control PLCs with data diodes|Critical|IEC 61511 / IEC 62443|
 |13|Implement jump box for all remote access with MFA + session recording|High|NIST SP 800-82 Rev 3|
 |14|Conduct annual OT penetration testing (with plant shutdown coordination)|High|IEC 62443-2-1|
@@ -2003,7 +2003,7 @@ flowchart TD
 | Date | Attack | Target | Impact | Key OT Technique |
 |------|--------|--------|--------|------------------|
 |**Jun 2010**|Stuxnet discovered|Natanz, Iran (centrifuges)|~1,000 centrifuges destroyed|S7-315 rootkit, Profibus MITM, .lnf file manipulation|
-|**Dec 2015**|BlackEnergy/Industroyer (Ukraine grid)|Kyivoblenergo substations|230,000 customers without power for 1â€“6 hr|IEC 60870-5-104 command injection, wiper module|
+|**Dec 2015**|BlackEnergy/Industroyer (Ukraine grid)|Kyivoblenergo substations|230,000 customers without power for 1–6 hr|IEC 60870-5-104 command injection, wiper module|
 |**Dec 2016**|CRASHOVERRIDE (Ukraine grid second wave)|Ukrainian substation|One substation disconnected|Modular ICS attack framework with IEC 104, OPC, serial IEC 101 modules|
 |**Aug 2017**|TRITON/TRISIS|Saudi petrochemical plant|Safety system forced into halt/run cycle; plant shut down|Triconex TriStation 1131 protocol reverse-engineering|
 |**Mar 2019**|XT RAT (Water utility)|US water utility (undisclosed)|Remote access to water treatment PLCs|Modbus TCP manipulation via VPN jump|
@@ -2011,7 +2011,7 @@ flowchart TD
 |**Feb 2022**|Incontroller/Pipedream|Multiple vendors (Siemens, Schneider, Omron, Rockwell)|Pre-positioned framework; no destructive deployment|Cross-vendor Modbus/S7/FINS/CIP manipulation framework|
 |**Apr 2022**|VPNFilter (re-emergence)|Siemens industrial routers|Remote access to industrial networking gear|Router-level persistence with modular OT plugin architecture|
 
-**Colonial Pipeline lessons:** Even though the ransomware only impacted IT billing systems, the company proactively shut down OT pipelines to prevent potential cascading effects. This highlights the critical need for IT/OT separation â€” but also the operational dependency of OT on IT for scheduling and billing.
+**Colonial Pipeline lessons:** Even though the ransomware only impacted IT billing systems, the company proactively shut down OT pipelines to prevent potential cascading effects. This highlights the critical need for IT/OT separation — but also the operational dependency of OT on IT for scheduling and billing.
 
 ---
 
@@ -2031,11 +2031,11 @@ flowchart TD
 
 ## Summary
 
-OT/ICS/SCADA security is fundamentally different from traditional IT security. The priority shift from Confidentiality â†’ Availability, combined with 15â€“30 year device lifetimes, lack of authentication in legacy industrial protocols, and safety-critical process dependencies, requires specialized knowledge and tools.
+OT/ICS/SCADA security is fundamentally different from traditional IT security. The priority shift from Confidentiality → Availability, combined with 15–30 year device lifetimes, lack of authentication in legacy industrial protocols, and safety-critical process dependencies, requires specialized knowledge and tools.
 
 **Key takeaways from this chapter:**
 
-1. **The Purdue model remains the foundational architecture** for OT security. Every ICS environment must be mapped to Levels 0â€“4, with zone-based security controls per ISA-99/IEC 62443.
+1. **The Purdue model remains the foundational architecture** for OT security. Every ICS environment must be mapped to Levels 0–4, with zone-based security controls per ISA-99/IEC 62443.
 
 2. **Industrial protocols are designed without security.** Modbus, DNP3 (without SA), S7comm, and Profinet DCP all lack authentication, encryption, or integrity checking. Deep packet inspection firewalls are essential for compensating controls.
 
@@ -2047,7 +2047,7 @@ OT/ICS/SCADA security is fundamentally different from traditional IT security. T
 
 6. **Remote access must be treated as a critical control point.** Jump boxes, session recording, and vendor MFA should be mandatory; air-gapped systems should remain physically isolated.
 
-7. **TypeScript tooling can simulate OT security tools** for testing, training, and validation â€” Modbus scanners, S7 PLC info readers, DNP3 parsers, and Purdue model validators help practitioners understand protocol behavior without needing expensive testbeds.
+7. **TypeScript tooling can simulate OT security tools** for testing, training, and validation — Modbus scanners, S7 PLC info readers, DNP3 parsers, and Purdue model validators help practitioners understand protocol behavior without needing expensive testbeds.
 
 ---
 
@@ -2055,7 +2055,7 @@ OT/ICS/SCADA security is fundamentally different from traditional IT security. T
 
 | # | Question | A | B | C | D | Answer |
 |---|----------|---|---|---|---|--------|
-| 1 | Which Purdue model level contains the actual sensors, actuators, and physical process equipment? | Level 0 â€” Physical Process | Level 1 â€” Basic Control | Level 2 â€” Supervisory Control | Level 4 â€” Enterprise IT | **A** |
+| 1 | Which Purdue model level contains the actual sensors, actuators, and physical process equipment? | Level 0 — Physical Process | Level 1 — Basic Control | Level 2 — Supervisory Control | Level 4 — Enterprise IT | **A** |
 | 2 | What is the primary difference between IT and OT security priorities? | IT prioritizes Availability; OT prioritizes Confidentiality | IT prioritizes Confidentiality; OT prioritizes Availability | Both prioritize Integrity above all | OT has no security priorities | **B** |
 | 3 | Which Modbus function code writes a single holding register? | 0x01 (Read Coils) | 0x06 (Write Single Register) | 0x0F (Write Multiple Coils) | 0x11 (Report Server ID) | **B** |
 | 4 | In the Stuxnet attack, how did the rootkit hide malicious modifications from the Step 7 engineering software? | By encrypting the PLC configuration | By intercepting `s7blk_read` calls and returning clean data | By changing the PLC IP address | By deleting the engineering software logs | **B** |
@@ -2075,15 +2075,15 @@ OT/ICS/SCADA security is fundamentally different from traditional IT security. T
 
 ### Exercise 1: Modbus Network Discovery
 Using the `modbus-scanner.ts` implementation from Section 8.1, extend it to:
-- Scan a range of IP addresses (e.g., 192.168.1.1â€“254) and build a Modbus slave inventory table
-- For each discovered slave, read holding registers 0â€“9 and display their values
+- Scan a range of IP addresses (e.g., 192.168.1.1–254) and build a Modbus slave inventory table
+- For each discovered slave, read holding registers 0–9 and display their values
 - Write a function `detectVulnerableSlaves()` that flags slaves supporting write function codes (0x05, 0x06, 0x0F, 0x10)
 
 ### Exercise 2: Purdue Model Audit Script
 Using the `PurdueValidator` class from Section 8.4, create a new validation rule:
 - A zone must not have more than one path to any other zone (no redundant conduits between same zones)
-- Detect "flat network" violations where Level 0â€“1 devices appear in the same subnet as Level 3+ devices
-- Generate a compliance score from 0â€“100 based on violations found
+- Detect "flat network" violations where Level 0–1 devices appear in the same subnet as Level 3+ devices
+- Generate a compliance score from 0–100 based on violations found
 
 ### Exercise 3: S7comm Session Logger
 Extend the `s7comm-info.ts` implementation to:
@@ -2107,9 +2107,9 @@ Extend the `ICSThreatDetector` from Section 8.5 with:
 
 ### Exercise 6: Secure Remote Access Design
 Design a complete secure remote access architecture for a chemical plant:
-- Draw the network diagram (text-based or ASCII) showing vendor â†’ Internet â†’ DMZ â†’ Jump Box â†’ OT Zones
+- Draw the network diagram (text-based or ASCII) showing vendor → Internet → DMZ → Jump Box → OT Zones
 - Specify firewall rule sets for each conduit
-- Define the access lifecycle: request â†’ approval â†’ provision â†’ authenticate â†’ authorize â†’ monitor â†’ deprovision
+- Define the access lifecycle: request → approval → provision → authenticate → authorize → monitor → deprovision
 - Calculate the total number of firewall rule changes needed for a 3-day vendor maintenance window
 
 ### Challenge Problem
@@ -2118,7 +2118,7 @@ Design a complete secure remote access architecture for a chemical plant:
 
 Build a TypeScript script `ot-assessment.ts` that orchestrates the following pipeline:
 
-1. **Discovery Phase:** Use the BACnet Who-Is scanner + Modbus TCP scanner to discover all devices on Level 1â€“2 subnets
+1. **Discovery Phase:** Use the BACnet Who-Is scanner + Modbus TCP scanner to discover all devices on Level 1–2 subnets
 2. **Protocol Analysis Phase:** For each discovered device, determine which protocols respond (Modbus, S7comm, DNP3, BACnet) and build a protocol matrix
 3. **Vulnerability Assessment Phase:**
    - Flag devices that support write function codes on Modbus
@@ -2128,7 +2128,7 @@ Build a TypeScript script `ot-assessment.ts` that orchestrates the following pip
 5. **Report Generation Phase:** Output a combined Markdown report with:
    - Asset inventory table (IP, MAC, vendor, protocols, risk score)
    - Violations table (severity, description, recommendation)
-   - Overall OT security posture score (0â€“100)
+   - Overall OT security posture score (0–100)
    - Remediation priority list
 
 **Constraints:**

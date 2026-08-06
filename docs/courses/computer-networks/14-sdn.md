@@ -1,4 +1,4 @@
-﻿# Chapter 14: Software-Defined Networking
+# Chapter 14: Software-Defined Networking
 
 ## Learning Objectives
 
@@ -823,7 +823,7 @@ if __name__ == "__main__":
 
 **Why linear flow table lookup is acceptable in software switches (Open vSwitch):** Software switches handle millions of flows but cannot use TCAM. They use microflow caching (exact-match hash table) for the first few packets, then megaflow caching (wildcard patterns) via kernel datapath. The first packet of each flow takes O(F) in userspace, but subsequent packets are O(1) in the kernel cache.
 
-**Why Dijkstra is preferred over Bellman-Ford in SDN:** SDN controllers have a complete topology view. Dijkstra with a Fibonacci heap gives O(V log V + E), optimal for static graphs. Bellman-Ford's O(VE) is needed only for distributed convergence where nodes lack global topology â€” unnecessary in SDN.
+**Why Dijkstra is preferred over Bellman-Ford in SDN:** SDN controllers have a complete topology view. Dijkstra with a Fibonacci heap gives O(V log V + E), optimal for static graphs. Bellman-Ford's O(VE) is needed only for distributed convergence where nodes lack global topology — unnecessary in SDN.
 
 ### Advantages and Disadvantages of SDN
 
@@ -846,7 +846,7 @@ if __name__ == "__main__":
 
 When the SDN controller crashes:
 - Existing flow entries remain in the switch (hardware continues forwarding).
-- New flows that miss the flow table cannot be resolved â€” PACKET_INs go unanswered.
+- New flows that miss the flow table cannot be resolved — PACKET_INs go unanswered.
 - The switch may enter "fail-secure" mode (drop unmatched packets) or "fail-standalone" mode (fall back to traditional L2/L3 forwarding).
 - OpenFlow 1.3 defines the `OFPC_FAIL_MODE_SECURE` flag.
 - Recovery: when the controller reconnects, it must re-install all flow entries.
@@ -870,7 +870,7 @@ When the TCP connection drops:
 When the switch TCAM or SRAM is full:
 - The switch sends OFPT_ERROR with OFPET_FLOW_MOD_FAILED and code OFPFMFC_TABLE_FULL.
 - The controller must either: evict low-priority entries (controller-driven eviction), aggregate specific flows into wildcard entries (e.g., /24 instead of /32), or use multiple flow tables to split matching across stages.
-- Flow table size on real hardware: 1Kâ€“4K entries in TCAM; 32Kâ€“256K entries in SRAM.
+- Flow table size on real hardware: 1K–4K entries in TCAM; 32K–256K entries in SRAM.
 
 **Edge Case 4: Loop Prevention During Flow Installation**
 
@@ -883,7 +883,7 @@ When a new flow entry creates a forwarding loop:
 
 When two controller instances install conflicting flow entries:
 - Distributed databases (ONOS with Atomix/Raft) use optimistic concurrency control: the second write fails if modified since read.
-- OpenFlow cookies serve as version numbers â€” the switch rejects FLOW_MOD with an outdated cookie.
+- OpenFlow cookies serve as version numbers — the switch rejects FLOW_MOD with an outdated cookie.
 - Use idempotent operations and sequence numbers.
 
 ## 14.2 OpenFlow
@@ -1037,7 +1037,7 @@ ON_RECEIVE_MESSAGE(switch, message, controller_state):
         RETURN "Error handled"
 ```
 
-## TypeScript Implementation: OpenFlowSwitch â€” Flow Table & Pipeline
+## TypeScript Implementation: OpenFlowSwitch — Flow Table & Pipeline
 
 ```typescript
 interface FlowMatch {
@@ -1113,7 +1113,7 @@ class OpenFlowSwitch {
         return flow.instructions;
       }
     }
-    console.log('Table-miss â€” sending PACKET_IN to controller');
+    console.log('Table-miss — sending PACKET_IN to controller');
     return [{ type: 'OUTPUT', port: 1 }];
   }
 
@@ -1220,13 +1220,13 @@ An SDN controller is a software platform that provides:
 - **START**: Initial boot, no switches connected.
 - **SWITCH_DISCOVER**: TCP connection established, HELLO messages exchanged.
 - **NEGOTIATING**: OpenFlow version negotiation and feature discovery.
-- **ACTIVE**: Normal operation â€” processing PACKET_IN, installing flow_mods.
+- **ACTIVE**: Normal operation — processing PACKET_IN, installing flow_mods.
 - **RECONNECT**: TCP connection lost; switch enters failover mode.
 - **ERROR**: Protocol error; controller may attempt recovery.
 - **DEAD**: Controller process terminated.
 - **SHUTDOWN**: Graceful shutdown; barrier request to flush pending operations.
 
-## TypeScript Implementation: SDNController â€” Topology Discovery, Flow Programming & Event Handling
+## TypeScript Implementation: SDNController — Topology Discovery, Flow Programming & Event Handling
 
 ```typescript
 interface Link {
@@ -1304,7 +1304,7 @@ class SDNController {
   }
 
   handlePacketIn(switchId: string, packet: { srcMac: string; dstMac: string; inPort: number }): void {
-    this.logEvent('PACKET_IN', `Switch ${switchId} port ${packet.inPort} â€” ${packet.srcMac} -> ${packet.dstMac}`);
+    this.logEvent('PACKET_IN', `Switch ${switchId} port ${packet.inPort} — ${packet.srcMac} -> ${packet.dstMac}`);
 
     const path = this.computeShortestPath(this.switches.keys().next().value!, switchId);
     if (path.length > 1) {
@@ -1411,7 +1411,7 @@ Geneve (Generic Network Virtualization Encapsulation, RFC 8926) provides a flexi
 
 NVGRE (Network Virtualization using Generic Routing Encapsulation) uses GRE tunnels instead of UDP encapsulation, requiring hardware support for large GRE offload.
 
-## TypeScript Implementation: NetworkVirtualization â€” Network Slice Manager, vSwitch & Traffic Isolation
+## TypeScript Implementation: NetworkVirtualization — Network Slice Manager, vSwitch & Traffic Isolation
 
 ```typescript
 interface VNIConfig {
@@ -1538,7 +1538,7 @@ console.log(nvm.getStats());
 | Orchestration | MANO (VNF lifecycle) | Controller (flow rule management) |
 | Resource Pool | Compute, storage, network (unified NFVI) | Only network forwarding resources |
 
-**How they work together:** SDN provides network programmability to steer traffic through the correct sequence of VNFs. The SDN controller knows the topology and dynamically inserts/removes VNFs from the traffic path. NFV provides elastic scaling â€” spin up more firewall VNF instances under load â€” and SDN updates flow tables to load-balance across them.
+**How they work together:** SDN provides network programmability to steer traffic through the correct sequence of VNFs. The SDN controller knows the topology and dynamically inserts/removes VNFs from the traffic path. NFV provides elastic scaling — spin up more firewall VNF instances under load — and SDN updates flow tables to load-balance across them.
 
 ### Numbered Steps: Deploying a VNF Chain with SDN Steering
 
@@ -1548,7 +1548,7 @@ console.log(nvm.getStats());
 3. The orchestrator notifies the SDN controller of each VNF's location (IP, port, switch attachment point).
 4. The SDN controller computes the path from client to web server that passes through each VNF in order.
 5. The controller installs flow entries: client -> firewall (port A), firewall -> IDS (port B), IDS -> load balancer (port C), load balancer -> web server (port D).
-6. VNFs process traffic transparently â€” endpoints are unaware of intermediate functions.
+6. VNFs process traffic transparently — endpoints are unaware of intermediate functions.
 7. If a VNF fails, the controller detects via port status and reroutes traffic around the failed VNF (or to a standby VNF).
 
 ## 14.7 SDN Applications
@@ -1566,7 +1566,7 @@ console.log(nvm.getStats());
 
 **Real-World Analogy: GPS Navigation**
 
-Traditional networking is like asking for turn-by-turn directions at each intersection. Intent-based networking is like entering a destination in GPS â€” the system plans the route, adapts to traffic, and handles detours automatically.
+Traditional networking is like asking for turn-by-turn directions at each intersection. Intent-based networking is like entering a destination in GPS — the system plans the route, adapts to traffic, and handles detours automatically.
 
 | IBN Concept | GPS Analogy |
 |-------------|-------------|
@@ -1624,7 +1624,7 @@ COMPILE_INTENT(intent, topology_db):
 
 **Real-World Analogy: Adaptive Highway Lanes**
 
-SD-WAN is like a smart highway system that dynamically assigns lanes based on traffic type â€” emergency vehicles get express lanes (real-time traffic), commuters use regular lanes (bulk data), and the system redirects flow around accidents automatically.
+SD-WAN is like a smart highway system that dynamically assigns lanes based on traffic type — emergency vehicles get express lanes (real-time traffic), commuters use regular lanes (bulk data), and the system redirects flow around accidents automatically.
 
 | SD-WAN Concept | Highway Analogy |
 |----------------|-----------------|
@@ -1721,17 +1721,17 @@ Open vSwitch is a production-quality open-source virtual switch supporting OpenF
 
 ## Interview Corner
 
-### Q1: SDN vs Traditional Routing â€” What's the fundamental difference?
+### Q1: SDN vs Traditional Routing — What's the fundamental difference?
 
 
 **Short answer:** Traditional routing uses distributed protocols where each device independently computes paths. SDN centralizes path computation and pushes forwarding rules to switches.
 
 **Detailed answer:**
 - Traditional: OSPF routers flood link-state advertisements, each runs SPF independently, forwarding table is locally computed. Convergence time is 10+ seconds for large networks.
-- SDN: A controller with global topology computes paths centrally. Switches have no routing logic â€” just match-action tables. Re-convergence on failure is milliseconds.
+- SDN: A controller with global topology computes paths centrally. Switches have no routing logic — just match-action tables. Re-convergence on failure is milliseconds.
 - Trade-off: SDN adds latency for the first packet of each flow (PACKET_IN/FLOW_MOD round trip). Traditional routing handles all packets at line rate natively.
 
-### Q2: OpenFlow vs NETCONF â€” Which one to use?
+### Q2: OpenFlow vs NETCONF — Which one to use?
 
 
 | Aspect | OpenFlow | NETCONF |
@@ -1784,7 +1784,7 @@ SDN controllers face the Consistency-Availability-Partition tolerance trade-off:
 - **A (Availability):** The system continues to operate despite failures. OpenDaylight uses weak consistency for higher availability.
 - **P (Partition tolerance):** The system functions despite network partitions.
 
-In SDN, **strong consistency is critical** â€” two controllers installing conflicting flow entries would cause forwarding loops. Production controllers (ONOS, OpenDaylight) prefer CP over AP. During a partition, they sacrifice availability (some switches can't install new flows) to maintain consistency.
+In SDN, **strong consistency is critical** — two controllers installing conflicting flow entries would cause forwarding loops. Production controllers (ONOS, OpenDaylight) prefer CP over AP. During a partition, they sacrifice availability (some switches can't install new flows) to maintain consistency.
 
 ## Pro Tips
 
@@ -1904,9 +1904,9 @@ graph TB
 
 **Problem.** Google operates a private WAN connecting 12+ data centers globally. By 2015, the WAN carried a mix of user-facing traffic (search, YouTube, Gmail, Maps) and internal traffic (MapReduce, Bigtable replication, Spanner writes, GFS chunk transfers). Traditional distributed routing (BGP/IS-IS) achieved only 30-40% WAN link utilization because traffic followed shortest paths regardless of available bandwidth. Google needed to push utilization above 90% while maintaining latency SLAs for user-facing traffic.
 
-**Solution.** Google deployed B4, an SDN-based WAN using OpenFlow (1.0 initially, upgraded to 1.3) with the following design: (1) **Hardware**: Custom OpenFlow switches built from merchant silicon (Broadcom Trident2 ASICs) â€” 128Ã—10GbE per switch, ~$1/port vs $10K/port for traditional core routers. (2) **Centralized TE**: B4's centralized Traffic Engineering (TE) server collected link utilization from all switches every 5 seconds, computed a global traffic matrix, and solved a max-min fair allocation using linear programming (MCF). (3) **Tunnels**: Traffic was classified into tunnels (hundreds per site). The TE server assigned each tunnel a rate and path, then installed corresponding OpenFlow group table entries (SELECT buckets with weighted ECMP). (4) **Enforcement**: Edge switches marked packets with DSCP (AF4 for user traffic, AF3 for internal). Core switches applied WFQ scheduling per DSCP class to guarantee latency. (5) **Hedging**: User-facing traffic could preempt internal traffic; spare bandwidth was filled with internal transfers using a weighted fair bottleneck scheduler.
+**Solution.** Google deployed B4, an SDN-based WAN using OpenFlow (1.0 initially, upgraded to 1.3) with the following design: (1) **Hardware**: Custom OpenFlow switches built from merchant silicon (Broadcom Trident2 ASICs) — 128×10GbE per switch, ~$1/port vs $10K/port for traditional core routers. (2) **Centralized TE**: B4's centralized Traffic Engineering (TE) server collected link utilization from all switches every 5 seconds, computed a global traffic matrix, and solved a max-min fair allocation using linear programming (MCF). (3) **Tunnels**: Traffic was classified into tunnels (hundreds per site). The TE server assigned each tunnel a rate and path, then installed corresponding OpenFlow group table entries (SELECT buckets with weighted ECMP). (4) **Enforcement**: Edge switches marked packets with DSCP (AF4 for user traffic, AF3 for internal). Core switches applied WFQ scheduling per DSCP class to guarantee latency. (5) **Hedging**: User-facing traffic could preempt internal traffic; spare bandwidth was filled with internal transfers using a weighted fair bottleneck scheduler.
 
-**Outcome.** B4 achieved >90% WAN link utilization (up from ~35%), saving over $1B in bandwidth costs by deferring new fiber builds. Site-to-site latency for user traffic remained under 5 ms at p99. Failure recovery was sub-second â€” B4 detected link flaps via OpenFlow PortStats, recomputed the TE solution in 200ms, and installed new flow_mods in <10ms. B4 handled 100+ simultaneous link failures per year without SLA violations. This design became the blueprint for SD-WAN, inspiring follow-on systems at Microsoft (SWAN), Amazon, and Alibaba.
+**Outcome.** B4 achieved >90% WAN link utilization (up from ~35%), saving over $1B in bandwidth costs by deferring new fiber builds. Site-to-site latency for user traffic remained under 5 ms at p99. Failure recovery was sub-second — B4 detected link flaps via OpenFlow PortStats, recomputed the TE solution in 200ms, and installed new flow_mods in <10ms. B4 handled 100+ simultaneous link failures per year without SLA violations. This design became the blueprint for SD-WAN, inspiring follow-on systems at Microsoft (SWAN), Amazon, and Alibaba.
 
 ## Practical Takeaways
 
@@ -1917,7 +1917,7 @@ graph TB
 | Traffic class prioritization protects user SLAs | Mark traffic at edge with DSCP; apply WFQ/DRR at core; allow user traffic to preempt bulk/batch data |
 | Sub-second failure recovery requires fast topology detection | Use OpenFlow PortStats polling (every 1s); maintain pre-computed backup paths; install failover group buckets for fast switch-over |
 | OpenFlow group tables enable weighted ECMP at line rate | Use SELECT type groups with weighted buckets; the switch distributes traffic across paths with hardware hashing (no controller involvement per packet) |
-| SDN workflows (measure â†’ model â†’ optimize â†’ push) enable rapid iteration | Automate the closed loop: every 5s collect stats, recompute flows, push diffs only; roll back within one iteration on validation failure |
+| SDN workflows (measure → model → optimize → push) enable rapid iteration | Automate the closed loop: every 5s collect stats, recompute flows, push diffs only; roll back within one iteration on validation failure |
 | Intent-based policies abstract away low-level flow rules | Define SLAs (latency, bandwidth, priority) in a policy language; let the controller compile intents to flow entries and verify them against network state before deployment |
 
 ## Chapter Quiz
@@ -1971,17 +1971,17 @@ SDN separates the control plane from the data plane, enabling centralized, progr
 <details>
 <summary>Solution</summary>
 
-1. **Control plane** makes forwarding decisions (computes routes, installs flow entries). **Data plane** forwards packets based on those decisions (matches flow tables, executes actions). SDN physically separates them â€” the controller runs on a server, and switches only forward.
+1. **Control plane** makes forwarding decisions (computes routes, installs flow entries). **Data plane** forwards packets based on those decisions (matches flow tables, executes actions). SDN physically separates them — the controller runs on a server, and switches only forward.
 
 2. The switch sends a **PACKET_IN** message to the controller containing the packet buffer (or first bytes). The controller decides the action (e.g., install a flow entry and forward via PACKET_OUT). If the controller doesn't respond, the packet is dropped after a timeout.
 
-3. VXLAN uses 24-bit VNIs (16 million segments) vs VLAN's 12-bit (4094). VXLAN encapsulates L2 frames in UDP over IP, enabling L2 extension across L3 network boundaries â€” critical for VM mobility, cloud multi-tenancy, and data center interconnect.
+3. VXLAN uses 24-bit VNIs (16 million segments) vs VLAN's 12-bit (4094). VXLAN encapsulates L2 frames in UDP over IP, enabling L2 extension across L3 network boundaries — critical for VM mobility, cloud multi-tenancy, and data center interconnect.
 
 4. **SDN** separates control and data planes for centralized, programmable forwarding. **NFV** virtualizes network functions (firewall, LB, IDS) to run on commodity hardware. They are complementary: SDN provides the network fabric; NFV provides the services running on that fabric.
 
 5. SFC directs traffic through an ordered sequence of VNFs (e.g., FW -> IDS -> LB). Each VNF processes the packet and returns it to the network for the next hop. NSH (Network Service Header) or policy-based routing ensures the correct traversal path.
 
-6. In distributed controllers (e.g., ONOS with Raft), **consistency** requires every controller to have the same network view before acting, but **availability** means the system must continue operating during partitions. Raft sacrifices availability during leader election (CP) â€” some controllers are unavailable for writes during a partition.
+6. In distributed controllers (e.g., ONOS with Raft), **consistency** requires every controller to have the same network view before acting, but **availability** means the system must continue operating during partitions. Raft sacrifices availability during leader election (CP) — some controllers are unavailable for writes during a partition.
 
 7. CPP determines the optimal locations for controllers in an SDN network to minimize switch-to-controller latency. It's NP-hard because it reduces to the facility location problem (k-median/k-center) on general graphs, with additional constraints for controller capacity and fault tolerance.
 </details>
@@ -1991,15 +1991,15 @@ SDN separates the control plane from the data plane, enabling centralized, progr
 <details>
 <summary>Solution</summary>
 
-8. **Flow entries:** (1) match: tcp_dst=80, priority=100, action=OUTPUT(1). (2) match: tcp_dst=22, priority=100, action=OUTPUT(2). For unknown port (e.g., tcp_dst=443), no match â†’ PACKET_IN to controller. The controller learns the MAC and installs a new flow: match: tcp_dst=443, priority=100, action=OUTPUT(3).
+8. **Flow entries:** (1) match: tcp_dst=80, priority=100, action=OUTPUT(1). (2) match: tcp_dst=22, priority=100, action=OUTPUT(2). For unknown port (e.g., tcp_dst=443), no match → PACKET_IN to controller. The controller learns the MAC and installs a new flow: match: tcp_dst=443, priority=100, action=OUTPUT(3).
 
-9. **DC1**: VTEP IP 10.1.0.1, VNI 100â†”VLAN100, VNI 101â†”VLAN101. **DC2**: VTEP IP 10.2.0.1, VNI 200â†”VLAN200. Inter-DC: VXLAN tunnel between VTEPs over IP WAN. Routing: each VTEP needs a route to the other VTEP's IP. For stretched subnets (VNI 100 in both DCs), BGP EVPN advertises MAC/VTEP mappings.
+9. **DC1**: VTEP IP 10.1.0.1, VNI 100↔VLAN100, VNI 101↔VLAN101. **DC2**: VTEP IP 10.2.0.1, VNI 200↔VLAN200. Inter-DC: VXLAN tunnel between VTEPs over IP WAN. Routing: each VTEP needs a route to the other VTEP's IP. For stretched subnets (VNI 100 in both DCs), BGP EVPN advertises MAC/VTEP mappings.
 
-10. Traffic enters via Switch A â†’ PBR matches dst=server:80 â†’ route to Firewall â†’ returned to Switch A â†’ match src=FW,dst=server â†’ route to IDS â†’ returned â†’ match src=IDS,dst=server â†’ route to LB â†’ LB selects backend. Failures: VNF failure triggers VNF health check timeout â†’ controller updates flow tables to bypass the failed VNF or redirect to a standby.
+10. Traffic enters via Switch A → PBR matches dst=server:80 → route to Firewall → returned to Switch A → match src=FW,dst=server → route to IDS → returned → match src=IDS,dst=server → route to LB → LB selects backend. Failures: VNF failure triggers VNF health check timeout → controller updates flow tables to bypass the failed VNF or redirect to a standby.
 
-11. 4Ã—5 grid â†’ 20 switches. Greedy placement: first controller at the center switch (row 2, col 2 â€” switch (2,2)). Remaining switches have max distance 2-3 hops. Second controller at (4,4) or (1,4) to minimize the farthest switch distance. Result: worst-case latency = 2 hops vs 5+ without optimal placement.
+11. 4×5 grid → 20 switches. Greedy placement: first controller at the center switch (row 2, col 2 — switch (2,2)). Remaining switches have max distance 2-3 hops. Second controller at (4,4) or (1,4) to minimize the farthest switch distance. Result: worst-case latency = 2 hops vs 5+ without optimal placement.
 
-12. See section 14.2.1 for the matching algorithm: sort by priority descending, iterate, check each match field with wildcard mask, verify idle/hard timeout hasn't expired. Return first match or null (table-miss â†’ PACKET_IN).
+12. See section 14.2.1 for the matching algorithm: sort by priority descending, iterate, check each match field with wildcard mask, verify idle/hard timeout hasn't expired. Return first match or null (table-miss → PACKET_IN).
 </details>
 
 ### Challenge Problem
@@ -2013,7 +2013,7 @@ SDN separates the control plane from the data plane, enabling centralized, progr
 
 **Flow installation:** Apps submit intents via northbound API: `{app: "video", match: {dscp: EF}, constraints: {bandwidth: "10Mbps", latency: "50ms", priority: 100}}`. The controller compiles intents to meter entries (rate-limiting at 10 Mbps per flow for video), queue configurations (strict priority), and flow entries with DSCP-based matching.
 
-**Policy verification:** Before deployment, the controller runs a **what-if simulation**: model the current traffic matrix, add new flows, check link capacities and latency constraints. Violation â†’ roll back with clear error message. Example verification function:
+**Policy verification:** Before deployment, the controller runs a **what-if simulation**: model the current traffic matrix, add new flows, check link capacities and latency constraints. Violation → roll back with clear error message. Example verification function:
 
 ```
 verify_policy(intents, topology):

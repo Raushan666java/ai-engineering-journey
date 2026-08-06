@@ -1,4 +1,4 @@
-﻿# Chapter 8: AI Agents and Tool Use
+# Chapter 8: AI Agents and Tool Use
 
 > **Learning Objectives**
 >
@@ -39,7 +39,7 @@ The five core components of an AI agent are:
 
 - **Planning**: Decomposing a complex task into sub-steps, selecting actions, and ordering operations. Planning can be single-step (the model generates one action at a time) or multi-step (the model produces a full plan upfront).
 - **Memory**: Retaining information across interactions. Short-term memory is the context window; long-term memory uses external storage (vector databases, key-value stores). Episodic memory stores past experiences.
-- **Tool Use**: Interfacing with external systems â€” APIs, databases, search engines, file systems, calculators, code interpreters. Tools extend the agent's capabilities beyond text generation.
+- **Tool Use**: Interfacing with external systems — APIs, databases, search engines, file systems, calculators, code interpreters. Tools extend the agent's capabilities beyond text generation.
 - **Self-Reflection**: Evaluating the quality of generated actions and outcomes. The agent can critique its own reasoning, detect errors, and adjust its approach.
 - **Autonomy**: The agent operates without continuous human intervention, deciding when to ask for help and when to proceed independently.
 
@@ -89,7 +89,7 @@ flowchart LR
     F --> G[Output]
 ```
 
-The key insight of ReAct is that **reasoning traces improve action quality** and **action outcomes improve reasoning**. By externalizing the reasoning process, ReAct also provides interpretability â€” developers can read the model's chain of thought to understand why it took a particular action.
+The key insight of ReAct is that **reasoning traces improve action quality** and **action outcomes improve reasoning**. By externalizing the reasoning process, ReAct also provides interpretability — developers can read the model's chain of thought to understand why it took a particular action.
 
 **Implementation in practice**: ReAct prompts typically include:
 1. A system message describing available tools and their signatures
@@ -150,7 +150,7 @@ flowchart TD
 - Executing the tool function with proper error boundaries
 - Formatting results and errors into observation strings
 
-**Error handling**: Tool calls can fail for many reasons â€” network errors, invalid arguments, rate limits, timeouts. The agent must handle these gracefully:
+**Error handling**: Tool calls can fail for many reasons — network errors, invalid arguments, rate limits, timeouts. The agent must handle these gracefully:
 - Catch all errors and return meaningful error observations
 - Implement retry logic with exponential backoff for transient failures
 - Set per-tool timeouts to prevent agent loops
@@ -168,7 +168,7 @@ Different tasks require different planning approaches. The choice depends on tas
 
 **Plan-and-Solve**: The model generates a complete plan upfront, then executes each step sequentially. Reduces the reasoning burden during execution but cannot adapt to unexpected observations. Good for deterministic workflows.
 
-**Tree-of-Thought (ToT)**: Maintains multiple reasoning paths simultaneously. At each step, the model generates several candidate "thoughts," evaluates them, and prunes weak branches. Uses BFS or DFS to explore the reasoning tree. Highest quality but also highest cost (5â€“20Ã— more tokens).
+**Tree-of-Thought (ToT)**: Maintains multiple reasoning paths simultaneously. At each step, the model generates several candidate "thoughts," evaluates them, and prunes weak branches. Uses BFS or DFS to explore the reasoning tree. Highest quality but also highest cost (5–20× more tokens).
 
 **LLM Compiler**: Frames task execution as a program. The model generates a "program" of hierarchical steps with dependencies. A separate executor runs the program, parallelizing independent steps. Good for complex, decomposable tasks with clear dependencies.
 
@@ -188,14 +188,14 @@ In practice, the majority of production agents use **ReAct** as their default st
 
 Memory is what distinguishes a stateful agent from a stateless LLM call. Agents need memory to maintain context across multiple turns, recall past decisions, and learn from experience.
 
-**Short-term memory (Context window)**: The model's immediate context. Includes the task description, conversation history, and recent observations. Limited by the model's maximum context length (4Kâ€“200K tokens). Managed by sliding window or summarization when approaching the limit.
+**Short-term memory (Context window)**: The model's immediate context. Includes the task description, conversation history, and recent observations. Limited by the model's maximum context length (4K–200K tokens). Managed by sliding window or summarization when approaching the limit.
 
 **Long-term memory (Retrieval)**: External storage accessed via retrieval. Common implementations:
 - **Vector databases** (Chroma, Pinecone, Qdrant): Store embeddings of past interactions. Retrieved by semantic similarity when the agent needs relevant history.
 - **Key-value stores** (Redis): Store structured facts. Retrieved by exact key match.
 - **SQL databases**: Store structured logs of past actions and outcomes.
 
-**Episodic memory**: Stores specific past episodes â€” what task was attempted, what plan was used, what went wrong. The agent can query episodic memory to avoid repeating mistakes. Implemented as a vector store with episode-level granularity.
+**Episodic memory**: Stores specific past episodes — what task was attempted, what plan was used, what went wrong. The agent can query episodic memory to avoid repeating mistakes. Implemented as a vector store with episode-level granularity.
 
 **Working memory**: A scratchpad where the agent writes intermediate reasoning, partial calculations, and in-progress plans. Cleared when the task completes. Often implemented as a simple string buffer within the context.
 
@@ -255,7 +255,7 @@ AI agents are powerful but prone to several failure modes that must be anticipat
 | Hallucination Propagation | Using a fake company name in a calculation | Fact-checking, grounding |
 | Tool Misuse | Calling `send_email` when `search_contacts` was needed | Better descriptions, validation |
 | Context Overflow | Losing the original task after 20 steps | Summarization, checkpointing |
-| Cascading Error | Wrong address â†’ wrong route â†’ missed deadline | Verification at each step |
+| Cascading Error | Wrong address → wrong route → missed deadline | Verification at each step |
 | Cost Explosion | 100+ tool calls for a simple task | Budget limits, cost tracking |
 
 ---
@@ -268,7 +268,7 @@ Evaluating agents is more complex than evaluating single LLM calls because agent
 
 **Efficiency**: Measured as steps per task, tokens per task, or wall-clock time. A high-completion-rate agent that uses 50 steps per task may be impractical compared to one that uses 10 steps with similar quality.
 
-**Robustness**: How the agent handles unexpected situations â€” tool failures, ambiguous instructions, missing information. Measured by injecting perturbations into the evaluation set (missing parameters, API timeouts, irrelevant context).
+**Robustness**: How the agent handles unexpected situations — tool failures, ambiguous instructions, missing information. Measured by injecting perturbations into the evaluation set (missing parameters, API timeouts, irrelevant context).
 
 **Cost per task**: Combines LLM inference cost (per-token pricing) and tool execution cost (API calls, compute). A cheaper agent that completes 85% of tasks may be preferable to an expensive one at 95%, depending on the use case.
 
@@ -671,7 +671,7 @@ class ToolRegistry {
 
 ## Summary
 
-AI agents combine planning, memory, tool use, and self-reflection to autonomously solve complex tasks. The ReAct pattern â€” interleaving reasoning traces with tool actions and observations â€” is the dominant architecture. Tools are defined using JSON Schema and managed through a centralized registry. Agents employ various planning strategies (ReAct, Plan-and-Solve, Tree-of-Thought) depending on task complexity. Memory management across short-term and long-term storage is critical for maintaining context over long sessions. Multi-agent patterns (supervisor, delegation, debate) enable specialization and collaboration. Evaluation must consider completion rate, efficiency, robustness, and cost. Common failure modes like loops, hallucination propagation, and context overflow require proactive mitigation.
+AI agents combine planning, memory, tool use, and self-reflection to autonomously solve complex tasks. The ReAct pattern — interleaving reasoning traces with tool actions and observations — is the dominant architecture. Tools are defined using JSON Schema and managed through a centralized registry. Agents employ various planning strategies (ReAct, Plan-and-Solve, Tree-of-Thought) depending on task complexity. Memory management across short-term and long-term storage is critical for maintaining context over long sessions. Multi-agent patterns (supervisor, delegation, debate) enable specialization and collaboration. Evaluation must consider completion rate, efficiency, robustness, and cost. Common failure modes like loops, hallucination propagation, and context overflow require proactive mitigation.
 
 ---
 
@@ -776,7 +776,7 @@ async function retryWithBackoff<T>(fn: () => Promise<T>, maxRetries: number = 3)
 <details>
 <summary>Solution</summary>
 
-Detection: (1) Track the set of past actions â€” if the same (tool, args) pair repeats, flag it. (2) Monitor the observation content â€” if observations are identical across steps, the agent is looping. (3) Count consecutive tool calls without a final answer â€” alert after N steps with no progress.
+Detection: (1) Track the set of past actions — if the same (tool, args) pair repeats, flag it. (2) Monitor the observation content — if observations are identical across steps, the agent is looping. (3) Count consecutive tool calls without a final answer — alert after N steps with no progress.
 
 Mitigations: (1) Force the agent to try a different query or tool after a repeated call. (2) Inject a prompt that says "You have already searched X. Use the existing result or try a different approach."
 </details>

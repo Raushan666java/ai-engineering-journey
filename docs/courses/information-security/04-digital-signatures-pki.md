@@ -1,6 +1,6 @@
-﻿# Chapter 4: Digital Signatures & PKI
+# Chapter 4: Digital Signatures & PKI
 
-> **Exam Weightage:** 3â€“5 Qs in IBPS SO IT Officer Mains (Digital signatures, certificates, authentication protocols)
+> **Exam Weightage:** 3–5 Qs in IBPS SO IT Officer Mains (Digital signatures, certificates, authentication protocols)
 >
 > **Key Topics:** Digital signature process, PKI (CA, RA, VA, CRL), X.509 certificates, Certificate trust chain, OAuth 2.0, SAML, Kerberos
 
@@ -45,21 +45,21 @@ After completing this chapter you will be able to:
 
 A digital signature provides **integrity**, **authentication**, and **non-repudiation** for digital messages or documents.
 
-#### 4.1.1 Digital Signature Process â€” Signing
+#### 4.1.1 Digital Signature Process — Signing
 
 1. **Hash the message:** Compute the cryptographic hash H(M) using a hash function (SHA-256). Hash is fixed-size regardless of message length.
-2. **Encrypt hash with private key:** Encrypt the hash using the sender's private key â†’ this produces the digital signature S = E(K_priv, H(M)).
+2. **Encrypt hash with private key:** Encrypt the hash using the sender's private key → this produces the digital signature S = E(K_priv, H(M)).
 3. **Attach signature:** Send the message M along with the digital signature S.
 
 **Formula:** Signature = Encrypt(K_sender_private, Hash(message))
 
-#### 4.1.2 Digital Signature Process â€” Verification
+#### 4.1.2 Digital Signature Process — Verification
 
-1. **Decrypt signature with public key:** Receiver decrypts S using the sender's public key â†’ obtains hashâ‚ = Decrypt(K_sender_public, S).
-2. **Compute hash locally:** Receiver computes hashâ‚‚ = Hash(M) from the received message.
-3. **Compare hashes:** If hashâ‚ = hashâ‚‚, signature is valid â†’ message is authentic and untampered.
+1. **Decrypt signature with public key:** Receiver decrypts S using the sender's public key → obtains hash₁ = Decrypt(K_sender_public, S).
+2. **Compute hash locally:** Receiver computes hash₂ = Hash(M) from the received message.
+3. **Compare hashes:** If hash₁ = hash₂, signature is valid → message is authentic and untampered.
 
-**Formula:** Hash(message) = Decrypt(K_sender_public, Signature) â†’ if equal, signature verified
+**Formula:** Hash(message) = Decrypt(K_sender_public, Signature) → if equal, signature verified
 
 #### 4.1.3 Properties Provided by Digital Signatures
 
@@ -72,7 +72,7 @@ A digital signature provides **integrity**, **authentication**, and **non-repudi
 
 #### 4.1.4 Why Sign the Hash, Not the Message?
 
-- **Performance:** Asymmetric encryption is slow (100â€“1000Ã— slower than symmetric). Signing a 256-bit hash is much faster than signing a multi-MB message.
+- **Performance:** Asymmetric encryption is slow (100–1000× slower than symmetric). Signing a 256-bit hash is much faster than signing a multi-MB message.
 - **Message size:** Hash is fixed-size (SHA-256 = 256 bits). Without hash, signature size grows with message.
 - **Security:** Hash provides pre-image and collision resistance; signing the hash inherits these properties.
 
@@ -80,10 +80,10 @@ A digital signature provides **integrity**, **authentication**, and **non-repudi
 
 | Algorithm | Hash Used | Key Sizes | Status |
 |-----------|-----------|-----------|--------|
-| RSA-PSS | SHA-256 | 2048â€“4096 bits | Secure (widely used) |
-| ECDSA | SHA-256 | 256â€“521 bits (ECC) | Secure (efficient) |
+| RSA-PSS | SHA-256 | 2048–4096 bits | Secure (widely used) |
+| ECDSA | SHA-256 | 256–521 bits (ECC) | Secure (efficient) |
 | EdDSA (Ed25519) | SHA-512 (internal) | 256-bit curve | Excellent (modern standard) |
-| DSA | SHA-1/SHA-256 | 1024â€“3072 bits | Deprecated (slow) |
+| DSA | SHA-1/SHA-256 | 1024–3072 bits | Deprecated (slow) |
 
 ```mermaid
 flowchart TD
@@ -99,7 +99,7 @@ flowchart TD
         S2 --> D["Decrypt Signature<br/>with Sender's<br/>Public Key"]
         H2 --> C["Compare"]
         D --> C
-        C --> V["âœ… Valid if match<br/>âŒ Invalid if mismatch"]
+        C --> V["✅ Valid if match<br/>❌ Invalid if mismatch"]
     end
     style Signing fill:#e8f5e9
     style Verification fill:#e3f2fd
@@ -127,44 +127,44 @@ PKI is the framework of policies, hardware, software, and procedures needed to c
 |--------|-------------|------|------|
 | **CRL** (RFC 5280) | Periodic list of revoked certificates issued by CA | Simple, no real-time queries | Outdated between CRL publishing intervals; large download size |
 | **Delta CRL** | Only new revocations since last full CRL | Smaller downloads | Additional complexity |
-| **OCSP** (RFC 6960) | Real-time query â†’ response with certificate status | Current status, small response | Privacy (CA knows which certificates you're checking); adds latency |
-| **OCSP Stapling** | Server fetches OCSP response and "staples" it to TLS handshake | No clientâ†’CA query; no CA tracking; faster | Server must fetch OCSP response periodically |
+| **OCSP** (RFC 6960) | Real-time query → response with certificate status | Current status, small response | Privacy (CA knows which certificates you're checking); adds latency |
+| **OCSP Stapling** | Server fetches OCSP response and "staples" it to TLS handshake | No client→CA query; no CA tracking; faster | Server must fetch OCSP response periodically |
 | **CRLite** | Aggregated CRL with Bloom filter (Firefox) | Compact, efficient | Complex implementation |
 
 #### 4.2.3 PKI Hierarchy
 
 ```
-                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                  â”‚   Root CA       â”‚ (Self-signed, offline, highest security)
-                  â”‚   "Trust Anchor"â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                           â”‚
-                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”
-                  â”‚ Intermediate CA1â”‚ (Signed by Root CA)
-                  â”‚ (Policy CA)     â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                           â”‚
-                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”
-                  â”‚ Intermediate CA2â”‚ (Signed by CA1)
-                  â”‚ (Issuing CA)    â”‚
-                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                           â”‚
-            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-            â”‚              â”‚              â”‚
-   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
-   â”‚ Server Cert   â”‚ â”‚ Client    â”‚ â”‚ Code       â”‚
-   â”‚ (SSL/TLS)     â”‚ â”‚ Cert      â”‚ â”‚ Signing    â”‚
-   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                  ┌─────────────────┐
+                  │   Root CA       │ (Self-signed, offline, highest security)
+                  │   "Trust Anchor"│
+                  └────────┬────────┘
+                           │
+                  ┌────────┴────────┐
+                  │ Intermediate CA1│ (Signed by Root CA)
+                  │ (Policy CA)     │
+                  └────────┬────────┘
+                           │
+                  ┌────────┴────────┐
+                  │ Intermediate CA2│ (Signed by CA1)
+                  │ (Issuing CA)    │
+                  └────────┬────────┘
+                           │
+            ┌──────────────┼──────────────┐
+            │              │              │
+   ┌────────┴──────┐ ┌────┴──────┐ ┌────┴──────┐
+   │ Server Cert   │ │ Client    │ │ Code       │
+   │ (SSL/TLS)     │ │ Cert      │ │ Signing    │
+   └───────────────┘ └───────────┘ └───────────┘
 ```
 
 **Trust model:** The Root CA's public key is pre-installed in browsers/OS trust stores. Any certificate signed (directly or through intermediates) by a trusted root forms a **trust chain** and is inherently trusted.
 
 #### 4.2.4 Certificate Validation Process
 
-1. Build chain from leaf certificate â†’ intermediate CA(s) â†’ root CA
+1. Build chain from leaf certificate → intermediate CA(s) → root CA
 2. Verify each certificate's digital signature (parent's public key decrypts child's signature)
-3. Check certificate validity period (notBefore â‰¤ now â‰¤ notAfter)
-4. Check revocation status (CRL or OCSP) â€” verify certificate hasn't been revoked
+3. Check certificate validity period (notBefore ≤ now ≤ notAfter)
+4. Check revocation status (CRL or OCSP) — verify certificate hasn't been revoked
 5. Check key usage extensions (e.g., TLS Web Server Authentication for HTTPS certificates)
 6. Verify domain name matches certificate's Subject Alternative Names (SAN)
 
@@ -176,10 +176,10 @@ flowchart TD
     Leaf --> V1["1. Verify signature<br/>using CA1's public key"]
     CA1 --> V2["2. Verify signature<br/>using Root's public key"]
     Root --> V3["3. Root verified<br/>against trust store"]
-    V1 --> Chain["âœ… Trust Chain Valid"]
+    V1 --> Chain["✅ Trust Chain Valid"]
     V2 --> Chain
     V3 --> Chain
-    Chain --> Check["4. Validity period âœ…<br/>5. Revocation check âœ…<br/>6. Key usage âœ…<br/>7. Domain match âœ…"]
+    Chain --> Check["4. Validity period ✅<br/>5. Revocation check ✅<br/>6. Key usage ✅<br/>7. Domain match ✅"]
     style Root fill:#fff9c4
     style Trust fill:#c8e6c9
     style Chain fill:#a5d6a7
@@ -197,13 +197,13 @@ X.509 is the standard defining the format of public key certificates. Version 3 
 | **Version** | Certificate format version (1, 2, or 3) | v3 (most common) |
 | **Serial Number** | Unique integer assigned by CA | 04:8E:71:... |
 | **Signature Algorithm** | Algorithm used by CA to sign the certificate | sha256WithRSAEncryption |
-| **Issuer** | CA that issued the certificate (DN â€” Distinguished Name) | CN = ISRG Root X1, O = Internet Security Research Group |
+| **Issuer** | CA that issued the certificate (DN — Distinguished Name) | CN = ISRG Root X1, O = Internet Security Research Group |
 | **Validity** | Period: notBefore to notAfter | 2024-01-01 to 2025-01-01 |
 | **Subject** | Entity the certificate is issued to (DN) | CN = www.example.com |
 | **Subject Public Key Info** | Public key algorithm + public key value | RSA 2048-bit / ECDSA P-256 |
-| **Issuer Unique ID** | Optional v2/v3 (deprecated) | â€” |
-| **Subject Unique ID** | Optional v2/v3 (deprecated) | â€” |
-| **Extensions** | v3 only â€” additional properties (key usage, SAN, basic constraints, CRL distribution points, etc.) | |
+| **Issuer Unique ID** | Optional v2/v3 (deprecated) | — |
+| **Subject Unique ID** | Optional v2/v3 (deprecated) | — |
+| **Extensions** | v3 only — additional properties (key usage, SAN, basic constraints, CRL distribution points, etc.) | |
 | **Signature** | CA's digital signature covering all above fields | 256-byte RSA signature |
 
 #### 4.3.2 Important X.509 v3 Extensions
@@ -237,10 +237,10 @@ OAuth 2.0 is an authorization framework that enables applications to obtain limi
 
 | Grant Type | Use Case | Access Token Delivery | Refresh Token? | Security Note |
 |------------|----------|----------------------|----------------|---------------|
-| **Authorization Code** | Server-side web apps | Authorization code â†’ exchanged for token (server-to-server) | Yes | Most secure â€” token never exposed to browser |
+| **Authorization Code** | Server-side web apps | Authorization code → exchanged for token (server-to-server) | Yes | Most secure — token never exposed to browser |
 | **Implicit** | Single-page apps (browser-only) | Token in URL fragment (deprecated in favor of PKCE) | No | Token exposed in URL; less secure |
 | **Resource Owner Password Credentials** | Trusted apps (first-party) | Directly exchange username + password for token | Yes | Requires credentials exposure; avoid |
-| **Client Credentials** | Machine-to-machine (no user) | Client ID + Secret â†’ direct token | Yes | No user involvement |
+| **Client Credentials** | Machine-to-machine (no user) | Client ID + Secret → direct token | Yes | No user involvement |
 | **Device Code** | Devices without browser (TV, CLI) | User completes login on separate device | No | Device displays code, user enters on another device |
 | **Authorization Code + PKCE** | Mobile apps, SPAs (current best practice) | Code challenge + verifier (no client secret needed) | Yes | Prevents authorization code interception |
 
@@ -266,7 +266,7 @@ SAML 2.0 is an XML-based framework for exchanging authentication and authorizati
 | **Identity Provider (IdP)** | Authenticates users | Creates and issues SAML assertions (e.g., Azure AD, Okta, Keycloak) |
 | **Service Provider (SP)** | Provides service to user | Trusts IdP for authentication (e.g., Salesforce, AWS, SaaS apps) |
 | **SAML Assertion** | XML document containing auth/attribute/decision statements | Signed by IdP, contains user identity, attributes, and conditions |
-| **SAML Request/Response** | XML messages exchanged between SP and IdP | AuthnRequest (SPâ†’IdP), Response (IdPâ†’SP) |
+| **SAML Request/Response** | XML messages exchanged between SP and IdP | AuthnRequest (SP→IdP), Response (IdP→SP) |
 | **Subject** | Entity being authenticated (usually a user) | NameID element in assertion |
 
 #### 4.5.2 SAML SSO Flow (SP-Initiated)
@@ -295,7 +295,7 @@ SAML 2.0 is an XML-based framework for exchanging authentication and authorizati
 
 ### 4.6 Kerberos
 
-Kerberos is a network authentication protocol that uses **secret-key cryptography** (symmetric) and a **trusted third party** (Key Distribution Center â€” KDC) to authenticate clients to services without transmitting passwords over the network.
+Kerberos is a network authentication protocol that uses **secret-key cryptography** (symmetric) and a **trusted third party** (Key Distribution Center — KDC) to authenticate clients to services without transmitting passwords over the network.
 
 #### 4.6.1 Kerberos Components
 
@@ -311,33 +311,33 @@ Kerberos is a network authentication protocol that uses **secret-key cryptograph
 
 #### 4.6.2 Kerberos Authentication Flow (6 steps)
 
-1. **AS-REQ (Client â†’ AS):** Client sends username to Authentication Service (in cleartext)
-2. **AS-REP (AS â†’ Client):** AS retrieves user's password hash (from database), generates:
-   - **TGT:** Encrypted with KDC's secret key â€” contains client identity, TGS session key, expiration
+1. **AS-REQ (Client → AS):** Client sends username to Authentication Service (in cleartext)
+2. **AS-REP (AS → Client):** AS retrieves user's password hash (from database), generates:
+   - **TGT:** Encrypted with KDC's secret key — contains client identity, TGS session key, expiration
    - **TGS Session Key:** Encrypted with user's password hash (derived from password)
    - Client decrypts TGS session key (using password hash), discards password from memory
-3. **TGS-REQ (Client â†’ TGS):** Client requests service ticket for service S:
-   - Sends TGT (encrypted with KDC's key â€” client cannot see/modify)
+3. **TGS-REQ (Client → TGS):** Client requests service ticket for service S:
+   - Sends TGT (encrypted with KDC's key — client cannot see/modify)
    - Sends **Authenticator** (client ID + timestamp) encrypted with TGS session key
-4. **TGS-REP (TGS â†’ Client):** TGS decrypts TGT (verifies client identity), validates authenticator, generates:
-   - **Service Ticket (ST):** Encrypted with service S's secret key â€” contains client identity, service session key
+4. **TGS-REP (TGS → Client):** TGS decrypts TGT (verifies client identity), validates authenticator, generates:
+   - **Service Ticket (ST):** Encrypted with service S's secret key — contains client identity, service session key
    - **Service Session Key:** Encrypted with TGS session key
-5. **AP-REQ (Client â†’ SS):** Client requests access to service S:
-   - Sends ST (encrypted with service's secret key â€” client cannot see/modify)
+5. **AP-REQ (Client → SS):** Client requests access to service S:
+   - Sends ST (encrypted with service's secret key — client cannot see/modify)
    - Sends new Authenticator encrypted with service session key
-6. **AP-REP (SS â†’ Client, optional):** Service decrypts ST (confirms identity), validates authenticator, optionally sends response encrypted with service session key
+6. **AP-REP (SS → Client, optional):** Service decrypts ST (confirms identity), validates authenticator, optionally sends response encrypted with service session key
 
 ```
 Client                  KDC (AS+TGS)                Service Server
-  â”‚                         â”‚                          â”‚
-  â”‚â”€â”€â”€â”€ AS-REQ (user) â”€â”€â”€â”€â”€â”€â–¶â”‚                          â”‚
-  â”‚â—€â”€â”€â”€â”€ AS-REP (TGT + TGS session key) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚
-  â”‚                         â”‚                          â”‚
-  â”‚â”€â”€â”€â”€ TGS-REQ (TGT + authenticator) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¶â”‚
-  â”‚â—€â”€â”€â”€â”€ TGS-REP (ST + service session key) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚
-  â”‚                         â”‚                          â”‚
-  â”‚â”€â”€â”€â”€ AP-REQ (ST + authenticator) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¶â”‚
-  â”‚â—€â”€â”€â”€â”€ AP-REP (optional) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+  │                         │                          │
+  │──── AS-REQ (user) ──────▶│                          │
+  │◀──── AS-REP (TGT + TGS session key) ──────────────│
+  │                         │                          │
+  │──── TGS-REQ (TGT + authenticator) ────────────────▶│
+  │◀──── TGS-REP (ST + service session key) ──────────│
+  │                         │                          │
+  │──── AP-REQ (ST + authenticator) ──────────────────▶│
+  │◀──── AP-REP (optional) ───────────────────────────┤
 ```
 
 #### 4.6.3 Kerberos Security Properties
@@ -357,7 +357,7 @@ Client                  KDC (AS+TGS)                Service Server
 |------------|-------------|
 | **Clock synchronization** | Requires all hosts to have synchronized clocks (within 5 min default skew) |
 | **Single point of failure** | KDC must be available for authentication |
-| **Dictionary attack on password** | AS-REP for TGS session key encrypted with password hash â€” offline brute-force possible if attacker captures AS-REP |
+| **Dictionary attack on password** | AS-REP for TGS session key encrypted with password hash — offline brute-force possible if attacker captures AS-REP |
 | **Not suitable for internet** | Designed for local network; TCP/UDP port 88 must be open |
 
 ```mermaid
@@ -371,7 +371,7 @@ flowchart LR
         TGS --> ST["Service Ticket<br/>+ Service Session Key"]
         ST --> C
         C --> SS["SS<br/>(Service Server)"]
-        SS --> OK["âœ… Access Granted"]
+        SS --> OK["✅ Access Granted"]
     end
     style Kerberos_Flow fill:#fce4ec
     style AS fill:#ffcc80
@@ -410,7 +410,7 @@ D) The TGS session key
 
 **Answer: C) The KDC's secret key**
 
-**Explanation:** The TGT is encrypted with the KDC's secret key (known only to the KDC). The client cannot decrypt the TGT â€” they can only present it to the TGS. This prevents tampering with TGT contents. The TGT contains: client ID, TGS session key, expiration time, and other metadata. The TGS session key (a separate component of the AS-REP) is encrypted with the client's password hash so the client can decrypt it.
+**Explanation:** The TGT is encrypted with the KDC's secret key (known only to the KDC). The client cannot decrypt the TGT — they can only present it to the TGS. This prevents tampering with TGT contents. The TGT contains: client ID, TGS session key, expiration time, and other metadata. The TGS session key (a separate component of the AS-REP) is encrypted with the client's password hash so the client can decrypt it.
 </details>
 
 ---
@@ -478,7 +478,7 @@ D) The encryption algorithm
 
 **Answer: B) The authenticator timestamp**
 
-**Explanation:** The authenticator contains the client ID and a timestamp, encrypted with the session key. The service server checks that the timestamp is within the allowed time skew (typically Â±5 minutes) and that no authenticator with the same timestamp has been received before. If an attacker captures and re-sends the authenticator, the server will reject it because the timestamp is now outside the acceptable window or has been seen before.
+**Explanation:** The authenticator contains the client ID and a timestamp, encrypted with the session key. The service server checks that the timestamp is within the allowed time skew (typically ±5 minutes) and that no authenticator with the same timestamp has been received before. If an attacker captures and re-sends the authenticator, the server will reject it because the timestamp is now outside the acceptable window or has been seen before.
 </details>
 
 ---
@@ -495,7 +495,7 @@ D) They are issued by the Service Provider
 
 **Answer: C) They contain statements about authentication, attributes, and authorization decisions**
 
-**Explanation:** A SAML assertion is an XML document signed by the Identity Provider (IdP) that contains three types of statements: (1) Authentication Statement â€” when and how the subject was authenticated, (2) Attribute Statement â€” additional attributes about the subject (email, role, department), and (3) Authorization Decision Statement â€” whether the subject is authorized to access a specific resource. Assertions are always signed (not unsigned) and are XML-based (not JSON).
+**Explanation:** A SAML assertion is an XML document signed by the Identity Provider (IdP) that contains three types of statements: (1) Authentication Statement — when and how the subject was authenticated, (2) Attribute Statement — additional attributes about the subject (email, role, department), and (3) Authorization Decision Statement — whether the subject is authorized to access a specific resource. Assertions are always signed (not unsigned) and are XML-based (not JSON).
 </details>
 
 ---
@@ -512,7 +512,7 @@ D) Generating a new signature
 
 **Answer: B) Decrypting the received signature**
 
-**Explanation:** The recipient decrypts the received digital signature using the signer's PUBLIC key. This reveals hashâ‚ = Decrypt(K_public, Signature). The recipient then computes hashâ‚‚ = Hash(received message) independently. If hashâ‚ = hashâ‚‚, the signature is valid. This confirms: (1) the message was signed by the holder of the corresponding private key (authentication), (2) the message hasn't been modified (integrity), and (3) the signer cannot deny signing (non-repudiation).
+**Explanation:** The recipient decrypts the received digital signature using the signer's PUBLIC key. This reveals hash₁ = Decrypt(K_public, Signature). The recipient then computes hash₂ = Hash(received message) independently. If hash₁ = hash₂, the signature is valid. This confirms: (1) the message was signed by the holder of the corresponding private key (authentication), (2) the message hasn't been modified (integrity), and (3) the signer cannot deny signing (non-repudiation).
 </details>
 
 ---
@@ -551,7 +551,7 @@ D) Device Code
 
 ---
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 **Q1.** In a digital signature scheme, if an attacker wants to forge a signature on a message, what must they possess?
 
@@ -565,7 +565,7 @@ D) The hash of the message
 
 **Answer: B) The signer's private key**
 
-**Explanation:** A digital signature can only be created by the holder of the private key corresponding to the public key used for verification. For RSA signatures: Signature = Encrypt(Hash(message), K_private). The private key is the "signing key" â€” it must be kept secret. The public key is the "verification key" â€” anyone can verify. Without the private key, forging a signature requires solving the RSA problem (factoring n) or finding a hash collision â€” both computationally infeasible for proper key sizes.
+**Explanation:** A digital signature can only be created by the holder of the private key corresponding to the public key used for verification. For RSA signatures: Signature = Encrypt(Hash(message), K_private). The private key is the "signing key" — it must be kept secret. The public key is the "verification key" — anyone can verify. Without the private key, forging a signature requires solving the RSA problem (factoring n) or finding a hash collision — both computationally infeasible for proper key sizes.
 
 The security property "non-repudiation" relies on this: only the signer could have created the signature, so they cannot deny it.
 </details>
@@ -585,8 +585,8 @@ D) Subject Alternative Name
 **Answer: C) Basic Constraints**
 
 **Explanation:** The Basic Constraints extension contains:
-- `CA:TRUE` â€” This is a CA certificate; can sign other certificates
-- `CA:FALSE` â€” This is an end-entity certificate; cannot sign other certificates
+- `CA:TRUE` — This is a CA certificate; can sign other certificates
+- `CA:FALSE` — This is an end-entity certificate; cannot sign other certificates
 - `pathLenConstraint`: Maximum number of subordinate CAs below this CA
 
 Key Usage (`keyCertSign`, `cRLSign`) must also be set for CA certificates. Extended Key Usage specifies purposes like `serverAuth` (TLS), `clientAuth`, `codeSigning`. SAN lists domain names (for HTTPS certificates).
@@ -607,11 +607,11 @@ D) In an HTTP header from the authorization server
 **Answer: C) Directly to the client via server-to-server POST**
 
 **Explanation:** The Authorization Code flow delivers the access token through a secure server-to-server exchange:
-1. User authorizes â†’ Authorization Server redirects to `callback?code=AUTH_CODE` (authorization code, not token)
+1. User authorizes → Authorization Server redirects to `callback?code=AUTH_CODE` (authorization code, not token)
 2. Client sends `POST /token` with the code + client credentials (client_id + client_secret) DIRECTLY to the authorization server
 3. Authorization Server returns `{"access_token":"...", "refresh_token":"..."}` in the HTTPS response body
 
-The token is never exposed to the browser â€” this is why Authorization Code is more secure than Implicit grant (which returned token in URL fragment).
+The token is never exposed to the browser — this is why Authorization Code is more secure than Implicit grant (which returned token in URL fragment).
 </details>
 
 ---
@@ -630,8 +630,8 @@ D) The service server checks for duplicate authenticator timestamps
 
 **Explanation:** The authenticator (encrypted with the service session key) contains a timestamp. The service server:
 1. Decrypts the authenticator using the service session key
-2. Checks the timestamp is within the allowed time skew (typically Â±5 minutes)
-3. **Caches previously seen authenticator timestamps** â€” rejects duplicates
+2. Checks the timestamp is within the allowed time skew (typically ±5 minutes)
+3. **Caches previously seen authenticator timestamps** — rejects duplicates
 
 Even if an attacker captures the ST (which they can't decrypt) and the authenticator, replaying them will fail because the service already recorded that timestamp. Additionally, ticket lifetime limits the window. Both factors combine: timestamp uniqueness + short ticket lifetime.
 </details>
@@ -650,7 +650,7 @@ D) The end-entity certificate
 
 **Answer: B) The Root CA's public key (self-signed certificate)**
 
-**Explanation:** The trust anchor is the Root CA certificate that is trusted by fiat â€” it's self-signed and its public key is pre-installed in the trust store (browser, OS, or application). For example:
+**Explanation:** The trust anchor is the Root CA certificate that is trusted by fiat — it's self-signed and its public key is pre-installed in the trust store (browser, OS, or application). For example:
 - Browsers ship with ~100-150 root CA certificates pre-installed
 - Microsoft Windows: root certificates via Microsoft Root Certificate Program
 - Apple: Apple Root Certificate Program
@@ -675,9 +675,9 @@ D) The browser
 
 **Explanation:** In SP-initiated SSO:
 1. User attempts to access SP resource (unauthenticated)
-2. SP generates AuthnRequest (signed XML) â†’ redirects user to IdP
+2. SP generates AuthnRequest (signed XML) → redirects user to IdP
 3. User authenticates to IdP (password, 2FA, cert)
-4. **IdP creates the SAML assertion** â€” XML document containing:
+4. **IdP creates the SAML assertion** — XML document containing:
    - Authentication Statement (when/how user authenticated)
    - Attribute Statement (user identity, email, roles)
    - Conditions (validity period, audience restriction)
@@ -703,11 +703,11 @@ D) 128 bits
 **Answer: B) 512 bits (signature is 64 bytes)**
 
 **Explanation:** For ECDSA with curve P-256 (secp256r1):
-- Private key: 256 bits (32 bytes) â€” random integer mod n
-- Public key: 512 bits (64 bytes) â€” two 256-bit coordinates (x, y), uncompressed
-- **Signature: 512 bits (64 bytes)** â€” two 256-bit integers (r, s) per signature
+- Private key: 256 bits (32 bytes) — random integer mod n
+- Public key: 512 bits (64 bytes) — two 256-bit coordinates (x, y), uncompressed
+- **Signature: 512 bits (64 bytes)** — two 256-bit integers (r, s) per signature
 
-The signature is 2 Ã— the key size because ECDSA produces two values (r, s), each of order n (256-bit for P-256). EdDSA (Ed25519) produces a 64-byte signature for a comparable security level with deterministic signing (no RNG dependency).
+The signature is 2 × the key size because ECDSA produces two values (r, s), each of order n (256-bit for P-256). EdDSA (Ed25519) produces a 64-byte signature for a comparable security level with deterministic signing (no RNG dependency).
 
 **Exam comparison:**
 | Algorithm | Private Key | Signature Size |
@@ -755,9 +755,9 @@ D) To identify the client application
 **Answer: B) To specify the permissions the client is requesting**
 
 **Explanation:** The `scope` parameter defines the specific permissions the client needs. Examples:
-- `scope=openid profile email` â€” OpenID Connect scopes (identity)
-- `scope=read write` â€” basic read/write access
-- `scope=https://www.googleapis.com/auth/drive.file` â€” Google API scope
+- `scope=openid profile email` — OpenID Connect scopes (identity)
+- `scope=read write` — basic read/write access
+- `scope=https://www.googleapis.com/auth/drive.file` — Google API scope
 
 Scopes are agreed between the authorization server and resource server. The resource owner (user) sees the requested scopes during consent. Authorization server issues an access token limited to the approved scopes. OAuth scope is one of the key differences from SAML (which uses attributes rather than scopes).
 </details>
@@ -776,13 +776,13 @@ D) The Root CA automatically renews the intermediate
 
 **Answer: B) All leaf certificates under it become invalid (chain fails)**
 
-**Explanation:** Certificate chain validation requires ALL certificates in the chain to be within their validity period (notBefore â‰¤ now â‰¤ notAfter). If the intermediate CA certificate has expired:
+**Explanation:** Certificate chain validation requires ALL certificates in the chain to be within their validity period (notBefore ≤ now ≤ notAfter). If the intermediate CA certificate has expired:
 - The leaf certificate may still be valid (current date within leaf's validity)
-- But the intermediate CA's signature on the leaf is "expired" â€” there is no valid chain
+- But the intermediate CA's signature on the leaf is "expired" — there is no valid chain
 - The root CA's certificate is typically valid for 20-30 years (root CAs are long-lived)
 - Solution: The intermediate CA must get a new certificate from the root CA before expiry
 
-This is why certificate lifecycle management is critical â€” organizations must renew intermediate CAs well before expiry to avoid cascading failures.
+This is why certificate lifecycle management is critical — organizations must renew intermediate CAs well before expiry to avoid cascading failures.
 </details>
 
 ---
@@ -829,7 +829,7 @@ D) To publish CRLs
 - Forwards approved requests to the CA for actual certificate issuance
 - May handle revocation requests
 
-The RA does NOT issue/sign certificates (that's the CA's role) and typically does NOT run the OCSP responder (VA's role). Separating RA from CA provides security through separation of duties â€” even if RA is compromised, the CA's signing keys remain secure.
+The RA does NOT issue/sign certificates (that's the CA's role) and typically does NOT run the OCSP responder (VA's role). Separating RA from CA provides security through separation of duties — even if RA is compromised, the CA's signing keys remain secure.
 </details>
 
 ---
@@ -847,12 +847,12 @@ D) Both hash and sign independently
 **Answer: A) Sign the hash of the message instead of the full message**
 
 **Explanation:** Hash-then-sign is the standard approach:
-1. **Compute hash:** h = H(M) â€” produces fixed-size digest (e.g., 256 bits for SHA-256)
-2. **Sign hash:** Ïƒ = E(K_private, h)
-3. **Verification:** h' = D(K_public, Ïƒ), then compare h' with H(M)
+1. **Compute hash:** h = H(M) — produces fixed-size digest (e.g., 256 bits for SHA-256)
+2. **Sign hash:** σ = E(K_private, h)
+3. **Verification:** h' = D(K_public, σ), then compare h' with H(M)
 
 **Why not sign the full message?**
-- **Performance:** Asymmetric signing is 100-1000Ã— slower than symmetric. Signing a 256-bit hash is far faster than signing a multi-MB message
+- **Performance:** Asymmetric signing is 100-1000× slower than symmetric. Signing a 256-bit hash is far faster than signing a multi-MB message
 - **Size:** Signature is fixed-size regardless of message length
 - **Security:** Hash collision resistance prevents two different messages from producing the same signature
 - **Compatibility:** Hashed message can be signed once but verified by multiple parties without re-signing
@@ -874,7 +874,7 @@ D) Identifies the user
 
 **Explanation:** JWT claims:
 - `iss` (issuer): Who created/signed the token (e.g., `accounts.google.com`)
-- **`aud` (audience):** Intended recipient â€” the resource server that should accept this token. Prevents token reuse across different services
+- **`aud` (audience):** Intended recipient — the resource server that should accept this token. Prevents token reuse across different services
 - `sub` (subject): The user/entity the token is about
 - `exp` (expiration): Token expiry timestamp
 - `iat` (issued at): When token was created
@@ -924,7 +924,7 @@ D) Unlimited
 **Answer: C) 2**
 
 **Explanation:** The `pathLenConstraint` specifies the maximum number of CA certificates that can follow this certificate in the chain (NOT including the leaf end-entity certificate). With pathLenConstraint=2:
-- Root CA (pathLen=2) â†’ Intermediate CA1 (pathLen=1) â†’ Intermediate CA2 (pathLen=0) â†’ End-entity cert
+- Root CA (pathLen=2) → Intermediate CA1 (pathLen=1) → Intermediate CA2 (pathLen=0) → End-entity cert
 - That's 2 levels of CA below root, plus the leaf
 
 If pathLenConstraint is not specified, there is no limit. The constraint prevents CA key compromise from affecting too many downstream certificates.
@@ -972,10 +972,10 @@ D) Multivariate cryptography
 
 **Answer: C) Lattice-based cryptography**
 
-**Explanation:** CRYSTALS-Kyber (standardized as ML-KEM in FIPS 203) is based on the **Module Learning With Errors (MLWE)** problem â€” a lattice-based cryptographic assumption. Key properties:
+**Explanation:** CRYSTALS-Kyber (standardized as ML-KEM in FIPS 203) is based on the **Module Learning With Errors (MLWE)** problem — a lattice-based cryptographic assumption. Key properties:
 - **Security:** Believed to be computationally hard for both classical and quantum computers
 - **Efficiency:** Fast key generation, encapsulation, and decapsulation (comparable to ECDH)
-- **Key sizes:** Public key ~800 bytes (Kyber-512), ciphertext ~768 bytes â€” larger than ECC but practical
+- **Key sizes:** Public key ~800 bytes (Kyber-512), ciphertext ~768 bytes — larger than ECC but practical
 - **NIST selection:** Primary KEM for general public-key encryption (August 2024)
 
 NIST also selected: CRYSTALS-Dilithium (ML-DSA, lattice-based signatures), FALCON (FN-DSA, lattice-based, smaller signatures), and SPHINCS+ (SLH-DSA, hash-based, conservative backup).
@@ -996,12 +996,12 @@ D) The leaf certificate's private key
 **Answer: B) The parent CA's digital signature on the child CA's certificate**
 
 **Explanation:** Certificate chain validation proceeds bottom-up:
-1. Start with leaf certificate â†’ extract "Issuer DN" â†’ find intermediate CA cert
+1. Start with leaf certificate → extract "Issuer DN" → find intermediate CA cert
 2. **Verify leaf cert's signature using intermediate CA's public key**
-3. Extract intermediate CA's "Issuer DN" â†’ find next CA in chain
+3. Extract intermediate CA's "Issuer DN" → find next CA in chain
 4. **Verify intermediate CA's signature using next CA's public key**
 5. Repeat until reaching Root CA
-6. **Verify Root CA's signature using its own public key** (self-signed â€” trust anchor)
+6. **Verify Root CA's signature using its own public key** (self-signed — trust anchor)
 7. Check all certificates are still within validity period
 8. Check revocation status (CRL/OCSP) for each cert
 9. Verify key usage extensions
@@ -1282,7 +1282,7 @@ class PKIValidator {
 
     // Step 2: Check if leaf is end-entity (not a CA, unless it's a cross-cert)
     if (currentCert.isCA) {
-      result.warnings.push('Leaf certificate has CA:TRUE â€” expected end-entity cert');
+      result.warnings.push('Leaf certificate has CA:TRUE — expected end-entity cert');
     }
 
     // Step 3: Build and verify chain
@@ -1296,7 +1296,7 @@ class PKIValidator {
       if (issuer) {
         // Found trusted root
         if (!this.verifySignature(currentCert, issuer)) {
-          result.errors.push(`Signature verification failed: ${currentCert.subject} â† ${issuer.subject}`);
+          result.errors.push(`Signature verification failed: ${currentCert.subject} ← ${issuer.subject}`);
           return result;
         }
 
@@ -1378,7 +1378,7 @@ console.log(`Warnings: ${result.warnings.length ? result.warnings.join(', ') : '
 ```mermaid
 flowchart TD
     subgraph PKI_Hierarchy[PKI Hierarchy]
-        Root["ðŸ”’ Root CA<br/>(Self-signed)<br/>Trust Anchor<br/>20-30 year lifetime"] --> ICA1["Intermediate CA 1<br/>(Policy CA)<br/>10 year lifetime"]
+        Root["🔒 Root CA<br/>(Self-signed)<br/>Trust Anchor<br/>20-30 year lifetime"] --> ICA1["Intermediate CA 1<br/>(Policy CA)<br/>10 year lifetime"]
         Root --> ICA2["Intermediate CA 2<br/>(Issuing CA)<br/>5 year lifetime"]
         ICA1 --> ICA3["Intermediate CA 3<br/>(Subordinate)"]
         ICA2 --> Leaf1["Leaf: Server Cert<br/>www.example.com<br/>1-2 year lifetime"]
@@ -1393,16 +1393,16 @@ flowchart TD
         V_Root -->|"Yes"| V_Revoke["5. Check revocation<br/>(CRL / OCSP)"]
         V_Revoke --> V_KeyUsage["6. Verify key usage"]
         V_KeyUsage --> V_SAN["7. Match domain (SAN)"]
-        V_SAN --> V_Done["âœ… Certificate Valid"]
+        V_SAN --> V_Done["✅ Certificate Valid"]
     end
     style Root fill:#fff9c4
     style Validation fill:#e3f2fd
     style V_Done fill:#a5d6a7
 ```
 
-### Post-Quantum Cryptography â€” Detailed Overview
+### Post-Quantum Cryptography — Detailed Overview
 
-**Why Post-Quantum Cryptography?** Shor's algorithm (1994) can solve integer factorization and discrete logarithms in polynomial time on a sufficiently large quantum computer. This breaks RSA, ECDSA, ECDH, DSA, and all current public-key cryptography. Grover's algorithm halves the security of symmetric ciphers (AES-128 â†’ 64-bit quantum security).
+**Why Post-Quantum Cryptography?** Shor's algorithm (1994) can solve integer factorization and discrete logarithms in polynomial time on a sufficiently large quantum computer. This breaks RSA, ECDSA, ECDH, DSA, and all current public-key cryptography. Grover's algorithm halves the security of symmetric ciphers (AES-128 → 64-bit quantum security).
 
 **NIST Post-Quantum Cryptography Standardization (2024 Finalists):**
 
@@ -1424,7 +1424,7 @@ flowchart TD
 - **2028-2030:** Transition to pure post-quantum for most applications
 - **2030+:** Full post-quantum ecosystem expected
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 **Q1.** In RSA digital signatures, explain why signing the hash (not the message) is both a performance and security requirement.
 
@@ -1491,78 +1491,78 @@ flowchart TD
 <details>
 <summary>Show Answer Key</summary>
 
-**A1.** Performance: asymmetric signing is 100-1000Ã— slower than symmetric hashing. Signing a fixed 256-bit hash instead of a multi-MB message saves enormous CPU. Security: signing the hash inherits the hash's collision resistance â€” if Mâ‚ and Mâ‚‚ have same hash, they produce the same signature, so collision resistance prevents signature forgery across different messages.
+**A1.** Performance: asymmetric signing is 100-1000× slower than symmetric hashing. Signing a fixed 256-bit hash instead of a multi-MB message saves enormous CPU. Security: signing the hash inherits the hash's collision resistance — if M₁ and M₂ have same hash, they produce the same signature, so collision resistance prevents signature forgery across different messages.
 
-**A2.** pathLenConstraint=1 means 1 intermediate CA level allowed below this CA. Maximum chain: Root (pathLen=1) â†’ Intermediate (pathLen=0) â†’ Leaf. Total 3 certificates in chain. The intermediate cannot issue another CA certificate because pathLen=0 limits it to issuing end-entity certs only.
+**A2.** pathLenConstraint=1 means 1 intermediate CA level allowed below this CA. Maximum chain: Root (pathLen=1) → Intermediate (pathLen=0) → Leaf. Total 3 certificates in chain. The intermediate cannot issue another CA certificate because pathLen=0 limits it to issuing end-entity certs only.
 
 **A3.** PKCE binds the authorization code to the client via code_verifier. When exchanging code for token, the client must present the code_verifier. The authorization server computes SHA-256(verifier) and compares with the stored code_challenge. An attacker who intercepts only the authorization code cannot provide the verifier.
 
-**A4.** (1) AS-REQ: Client â†’ AS (username in cleartext). (2) AS-REP: AS â†’ Client (TGT encrypted with KDC key + TGS session key encrypted with client password hash). (3) TGS-REQ: Client â†’ TGS (TGT + Authenticator encrypted with TGS session key). (4) TGS-REP: TGS â†’ Client (ST encrypted with service key + service session key encrypted with TGS session key). (5) AP-REQ: Client â†’ SS (ST + Authenticator encrypted with service session key). (6) AP-REP: SS â†’ Client (optional, encrypted with service session key).
+**A4.** (1) AS-REQ: Client → AS (username in cleartext). (2) AS-REP: AS → Client (TGT encrypted with KDC key + TGS session key encrypted with client password hash). (3) TGS-REQ: Client → TGS (TGT + Authenticator encrypted with TGS session key). (4) TGS-REP: TGS → Client (ST encrypted with service key + service session key encrypted with TGS session key). (5) AP-REQ: Client → SS (ST + Authenticator encrypted with service session key). (6) AP-REP: SS → Client (optional, encrypted with service session key).
 
 **A5.** Recovery: (1) Immediately revoke old root CA cert (publish CRL). (2) Generate new root key pair in HSM. (3) Create new root self-signed certificate (new key, new subject if needed). (4) Issue new intermediate CA certs from new root. (5) Re-issue all leaf certificates from new intermediates. (6) Distribute new root cert to all trust stores (browsers, OS, apps). (7) Remove old root from trust stores after original expiry. This can take weeks/months for full deployment.
 
-**A6.** SP-initiated: user accesses SP first â†’ SP redirects to IdP â†’ auth â†’ assertion back to SP. More common for user-facing apps. IdP-initiated: user accesses IdP first â†’ clicks on SP â†’ IdP pushes assertion to SP. Used for enterprise portals (user logs into Okta, clicks Salesforce tile). SP-initiated is more common and better supported.
+**A6.** SP-initiated: user accesses SP first → SP redirects to IdP → auth → assertion back to SP. More common for user-facing apps. IdP-initiated: user accesses IdP first → clicks on SP → IdP pushes assertion to SP. Used for enterprise portals (user logs into Okta, clicks Salesforce tile). SP-initiated is more common and better supported.
 
-**A7.** 3 Ã— 2 KB = 6 KB for the full chain. OCSP staple: ~500-1000 bytes (certID + status + signature + timestamps). OCSP stapling saves ~5 KB of bandwidth and eliminates the clientâ†’CA OCSP query.
+**A7.** 3 × 2 KB = 6 KB for the full chain. OCSP staple: ~500-1000 bytes (certID + status + signature + timestamps). OCSP stapling saves ~5 KB of bandwidth and eliminates the client→CA OCSP query.
 
 **A8.** `nonce` is a random value generated by the client (RP) and included in the authentication request. The IdP includes the same nonce in the ID Token. Client verifies nonce matches. This prevents replay attacks: if an attacker captures an ID Token, they can't replay it because the nonce value won't match (each request has a unique nonce).
 
-**A9.** Probability that two different messages produce the same ECDSA signature: For P-256, r and s are each 256-bit values. A signature collision would require the same (r, s) pair, which depends on both the message hash AND the randomly generated k (ephemeral key). Probability â‰ˆ 1/2^512 (extremely low). However, if k is reused across signatures, the private key can be recovered (Sony PS3 incident, Android Bitcoin wallet bug).
+**A9.** Probability that two different messages produce the same ECDSA signature: For P-256, r and s are each 256-bit values. A signature collision would require the same (r, s) pair, which depends on both the message hash AND the randomly generated k (ephemeral key). Probability ≈ 1/2^512 (extremely low). However, if k is reused across signatures, the private key can be recovered (Sony PS3 incident, Android Bitcoin wallet bug).
 
-**A10.** Full CRL: complete list of all revoked certificates. Size grows linearly with revocations. Delta CRL: only certificates revoked since the last full CRL was issued. Smaller and fresher. Use case: Delta CRL between full CRL updates â€” reduces download size. Clients must have both the base CRL and the delta CRL for complete revocation status.
+**A10.** Full CRL: complete list of all revoked certificates. Size grows linearly with revocations. Delta CRL: only certificates revoked since the last full CRL was issued. Smaller and fresher. Use case: Delta CRL between full CRL updates — reduces download size. Clients must have both the base CRL and the delta CRL for complete revocation status.
 
-**A11.** Client Credentials grant: client authenticates itself (client_id + client_secret) and receives an access token directly â€” no user involved. Use case: server-to-server API calls, cron jobs, microservice-to-microservice auth. Example: A backend reporting service authenticates to the analytics API to fetch data daily. No user session needed.
+**A11.** Client Credentials grant: client authenticates itself (client_id + client_secret) and receives an access token directly — no user involved. Use case: server-to-server API calls, cron jobs, microservice-to-microservice auth. Example: A backend reporting service authenticates to the analytics API to fetch data daily. No user session needed.
 
 **A12.** Cross-realm Kerberos: (1) User obtains TGT from Realm A's KDC. (2) User requests TGT for Realm B from Realm A's KDC (referral ticket). (3) User presents referral TGT to Realm B's KDC to obtain service ticket for Realm B's service. (4) Requires a trust relationship (shared key) between Realm A's and Realm B's KDCs. Microsoft Active Directory domains implement this as domain trusts.
 
-**A13.** With serverAuth + clientAuth: can be used both as TLS server cert (HTTPS) and TLS client cert (mutual TLS). With only codeSigning: cannot be used for TLS at all â€” only for code signing (signing executables, drivers). Browsers would reject a codeSigning-only cert used for HTTPS.
+**A13.** With serverAuth + clientAuth: can be used both as TLS server cert (HTTPS) and TLS client cert (mutual TLS). With only codeSigning: cannot be used for TLS at all — only for code signing (signing executables, drivers). Browsers would reject a codeSigning-only cert used for HTTPS.
 
-**A14.** RSA-PSS: largest key/signature sizes (256 bytes for 2048-bit), proven security, slowest. ECDSA (P-256): small (64-byte signature), efficient, requires secure RNG (nonce k). EdDSA (Ed25519): best overall â€” tiny (32-byte key, 64-byte sig), fast, deterministic (no RNG needed), side-channel resistant. Security equivalence: Ed25519 â‰ˆ ECDSA P-256 â‰ˆ RSA-3072.
+**A14.** RSA-PSS: largest key/signature sizes (256 bytes for 2048-bit), proven security, slowest. ECDSA (P-256): small (64-byte signature), efficient, requires secure RNG (nonce k). EdDSA (Ed25519): best overall — tiny (32-byte key, 64-byte sig), fast, deterministic (no RNG needed), side-channel resistant. Security equivalence: Ed25519 ≈ ECDSA P-256 ≈ RSA-3072.
 
-**A15.** SKI: unique identifier for the subject's public key (usually SHA-1 hash of public key). AKI: identifies the issuer's public key (references issuer's SKI). During chain building, the validator matches AKI of child cert with SKI of potential parent cert â€” this narrows the search for the correct issuer certificate. Accelerates chain building especially when multiple CAs have similar DNs.
+**A15.** SKI: unique identifier for the subject's public key (usually SHA-1 hash of public key). AKI: identifies the issuer's public key (references issuer's SKI). During chain building, the validator matches AKI of child cert with SKI of potential parent cert — this narrows the search for the correct issuer certificate. Accelerates chain building especially when multiple CAs have similar DNs.
 
 **A16.** (1) GET /authorize?response_type=code&client_id=app&redirect_uri=cb&code_challenge_method=S256&code_challenge=h2Dz... (2) 302 redirect to cb?code=AUTH_CODE. (3) POST /token with code=CODE&code_verifier=VERIFIER&client_id=app&redirect_uri=cb (no secret for public client). (4) Response: {access_token, token_type, expires_in}. Step 3 must include code_verifier; client_secret is NOT used for PKCE public clients.
 
-**A17.** TLS KDF: Pre-Master Secret ( PMS) â†’ Master Secret (MS, 48 bytes) via PRF: MS = PRF(PMS, "master secret", ClientRandom + ServerRandom). Then key material derived from MS: encryption keys, MAC keys, IVs for both directions. TLS 1.3 uses HKDF (HKDF-Extract â†’ HKDF-Expand) with labeled derivation.
+**A17.** TLS KDF: Pre-Master Secret ( PMS) → Master Secret (MS, 48 bytes) via PRF: MS = PRF(PMS, "master secret", ClientRandom + ServerRandom). Then key material derived from MS: encryption keys, MAC keys, IVs for both directions. TLS 1.3 uses HKDF (HKDF-Extract → HKDF-Expand) with labeled derivation.
 
-**A18.** SAML Conditions element specifies: (1) NotBefore/NotOnOrAfter â€” assertion validity period, (2) AudienceRestriction â€” which SP can accept this assertion, (3) OneTimeUse â€” assertion can only be used once, (4) ProxyRestriction â€” prevents re-authentication delegation. Without conditions, an assertion could be reused indefinitely across any service.
+**A18.** SAML Conditions element specifies: (1) NotBefore/NotOnOrAfter — assertion validity period, (2) AudienceRestriction — which SP can accept this assertion, (3) OneTimeUse — assertion can only be used once, (4) ProxyRestriction — prevents re-authentication delegation. Without conditions, an assertion could be reused indefinitely across any service.
 
 **A19.** `alg: none` means the JWT has no signature. An attacker can modify the payload (change sub, role to "admin"), remove the signature, and set alg to none. Defenses: (1) Always reject tokens with alg: none, (2) Validate algorithm against a whitelist (only RS256, ES256), (3) Use a JWT library that rejects unsigned tokens by default.
 
-**A20.** CRL: less fresh (hours/days update cycle), high bandwidth (full list), privacy OK (public list), scalable (download once), higher latency (must fetch CRL before validating). OCSP: fresh (real-time), low bandwidth (single request), privacy concern (CA sees query), less scalable (CA server load), lower latency (immediate for cached responses). OCSP Stapling is best â€” combines freshness + privacy + scalability.
+**A20.** CRL: less fresh (hours/days update cycle), high bandwidth (full list), privacy OK (public list), scalable (download once), higher latency (must fetch CRL before validating). OCSP: fresh (real-time), low bandwidth (single request), privacy concern (CA sees query), less scalable (CA server load), lower latency (immediate for cached responses). OCSP Stapling is best — combines freshness + privacy + scalability.
 
-**A21.** Existential forgery: attacker can forge a signature on SOME message (possibly garbage). Selective forgery: attacker can forge a signature on a SPECIFIC message. Hash collision resistance prevents existential forgery because attacker cannot find two messages with the same hash. Without collision resistance: attacker finds Mâ‚ and Mâ‚‚ with H(Mâ‚)=H(Mâ‚‚), gets Mâ‚ signed, then claims the signature is for Mâ‚‚ (existential forgery).
+**A21.** Existential forgery: attacker can forge a signature on SOME message (possibly garbage). Selective forgery: attacker can forge a signature on a SPECIFIC message. Hash collision resistance prevents existential forgery because attacker cannot find two messages with the same hash. Without collision resistance: attacker finds M₁ and M₂ with H(M₁)=H(M₂), gets M₁ signed, then claims the signature is for M₂ (existential forgery).
 
 **A22.** CT logs are append-only public ledgers of TLS certificates. CAs must submit all certificates to CT logs. Logs issue Signed Certificate Timestamps (SCTs). Browsers require SCTs for TLS certificates to be trusted. CT detects mis-issuance (CAs issuing certs for domains without authorization). Prevents incidents like DigiNotar (2011) where a CA was compromised and issued fake Google certificates.
 
-**A23.** Pre-authentication timestamp: The client sends a timestamp encrypted with the user's password hash in the AS-REQ. The KDC decrypts to verify the client knows the password BEFORE issuing the TGT. Prevents offline dictionary attack on the AS-REP â€” without it, the AS-REP (containing TGS session key encrypted with password hash) could be captured and brute-forced offline.
+**A23.** Pre-authentication timestamp: The client sends a timestamp encrypted with the user's password hash in the AS-REQ. The KDC decrypts to verify the client knows the password BEFORE issuing the TGT. Prevents offline dictionary attack on the AS-REP — without it, the AS-REP (containing TGS session key encrypted with password hash) could be captured and brute-forced offline.
 
 **A24.** Implicit flow: access token returned in URL fragment, no client authentication, no refresh token. Vulnerable to: token interception (XSS, URL leakage), man-in-the-fragment attacks. PKCE is mandatory for OIDC to ensure only the legitimate client can exchange the code for tokens, even without a client_secret (public clients).
 
-**A25.** Public clients (mobile apps, SPAs) cannot securely store a client_secret â€” it would be extractable from the app binary or browser. Without PKCE, an attacker could intercept the authorization code and exchange it for a token. PKCE provides cryptographic binding between the initial request and token exchange using code_verifier, making the code useless to an interceptor even without a client_secret.
+**A25.** Public clients (mobile apps, SPAs) cannot securely store a client_secret — it would be extractable from the app binary or browser. Without PKCE, an attacker could intercept the authorization code and exchange it for a token. PKCE provides cryptographic binding between the initial request and token exchange using code_verifier, making the code useless to an interceptor even without a client_secret.
 
-**A26.** Kyber is a KEM because lattice-based encryption is not directly practical â€” ciphertexts would be large and decryption would be complex. KEM generates a shared secret (encapsulation) that's used as input to a symmetric DEM (AES-GCM). KEM: Alice gets Bob's public key â†’ encapsulates â†’ generates shared key K + ciphertext C. Bob decapsulates (C + private key) â†’ same K. Then K is used with AES-GCM (DEM) for bulk data.
+**A26.** Kyber is a KEM because lattice-based encryption is not directly practical — ciphertexts would be large and decryption would be complex. KEM generates a shared secret (encapsulation) that's used as input to a symmetric DEM (AES-GCM). KEM: Alice gets Bob's public key → encapsulates → generates shared key K + ciphertext C. Bob decapsulates (C + private key) → same K. Then K is used with AES-GCM (DEM) for bulk data.
 
 **A27.** HSM is a tamper-resistant hardware device that generates, stores, and manages cryptographic keys. Private keys never leave the HSM in plaintext. All signing/decryption operations happen inside the HSM. FIPS 140-2/3 security levels: Level 2 (tamper-evident coating), Level 3 (tamper-resistant, zeroization upon tamper), Level 4 (environmentally sealed, complete protection). CA root private keys are typically stored in HSMs at Level 3+.
 
-**A28.** In Web of Trust: Alice signs Bob's public key if she verifies his identity (e.g., sees his passport). Bob's key accumulates signatures. Carol trusts Alice and encounters Bob's key signed by Alice â†’ Carol considers Bob's key valid if there's a trust path. Trust path â‰  PKI hierarchy â€” it's a decentralized graph, not a tree. Attacker would need to get their key signed by a trusted introducer. The strength is decentralization; the weakness is no global standard for identity verification.
+**A28.** In Web of Trust: Alice signs Bob's public key if she verifies his identity (e.g., sees his passport). Bob's key accumulates signatures. Carol trusts Alice and encounters Bob's key signed by Alice → Carol considers Bob's key valid if there's a trust path. Trust path ≠ PKI hierarchy — it's a decentralized graph, not a tree. Attacker would need to get their key signed by a trusted introducer. The strength is decentralization; the weakness is no global standard for identity verification.
 
 **A29.** TLS 1.3 CertificateRequest contains a list of acceptable Certificate Authorities (Distinguished Names). The server signals it wants the client to present a certificate. Used in mutual TLS (mTLS) for: API-to-API authentication, IoT device authentication, zero-trust network access. The client responds with Certificate + CertificateVerify (proves possession of private key by signing handshake transcript).
 
-**A30.** Dilithium (ML-DSA): hardness based on Module Learning With Errors (MLWE). ML-DSA-65 (â‰ˆ AES-128): public key ~1184 bytes, signature ~2044 bytes. ML-DSA-87 (â‰ˆ AES-256): public key ~1760 bytes, signature ~3366 bytes. RSA-3072: public key ~426 bytes, signature ~384 bytes. Dilithium signatures are ~5-8Ã— larger than RSA signatures. However, key generation and signing are much faster.
+**A30.** Dilithium (ML-DSA): hardness based on Module Learning With Errors (MLWE). ML-DSA-65 (≈ AES-128): public key ~1184 bytes, signature ~2044 bytes. ML-DSA-87 (≈ AES-256): public key ~1760 bytes, signature ~3366 bytes. RSA-3072: public key ~426 bytes, signature ~384 bytes. Dilithium signatures are ~5-8× larger than RSA signatures. However, key generation and signing are much faster.
 </details>
 
 ## Summary
 
-1. **Digital signatures** provide integrity, authentication, and non-repudiation. Process: Hash message â†’ encrypt hash with signer's private key. Verification: decrypt signature with public key â†’ compare hashes.
+1. **Digital signatures** provide integrity, authentication, and non-repudiation. Process: Hash message → encrypt hash with signer's private key. Verification: decrypt signature with public key → compare hashes.
 
-2. **PKI hierarchy** establishes trust: Root CA (self-signed, trusted anchor) â†’ Intermediate CAs â†’ End-entity certificates. Trust flows downward. Certificate validation includes: chain building, signature verification, validity period, revocation checking (CRL/OCSP), and key usage.
+2. **PKI hierarchy** establishes trust: Root CA (self-signed, trusted anchor) → Intermediate CAs → End-entity certificates. Trust flows downward. Certificate validation includes: chain building, signature verification, validity period, revocation checking (CRL/OCSP), and key usage.
 
 3. **X.509 v3 certificate** structure: Version, Serial Number, Signature Algorithm, Issuer, Validity, Subject, Subject Public Key Info, Extensions (Basic Constraints, Key Usage, SAN, CRL Distribution Points), and CA's signature.
 
-4. **Revocation:** CRL (periodic list â€” scalable but not real-time), OCSP (real-time query â€” current but adds latency), OCSP Stapling (best â€” server provides cached OCSP response).
+4. **Revocation:** CRL (periodic list — scalable but not real-time), OCSP (real-time query — current but adds latency), OCSP Stapling (best — server provides cached OCSP response).
 
-5. **OAuth 2.0** is an authorization framework. Authorization Code + PKCE is the recommended grant for mobile/SPA. Client Credentials for machine-to-machine. Access tokens (usually JWT) are bearer tokens â€” possession = authorization.
+5. **OAuth 2.0** is an authorization framework. Authorization Code + PKCE is the recommended grant for mobile/SPA. Client Credentials for machine-to-machine. Access tokens (usually JWT) are bearer tokens — possession = authorization.
 
 6. **SAML 2.0** is XML-based SSO authentication protocol. IdP authenticates user and issues signed assertion. SP validates assertion and grants access. Heavier than OAuth but widely adopted in enterprise.
 
@@ -1570,8 +1570,8 @@ flowchart TD
 
 ## Practical Takeaways
 
-- **For exam:** Know the digital signature flow (private key signs, public key verifies). Understand PKI component roles (CA issues, RA verifies, VA validates). Memorize X.509 extensions (Basic Constraints for CA vs end-entity). Differentiate OAuth (authorization) from SAML (authentication). Know Kerberos flows â€” especially what each ticket is encrypted with.
-- **For deployment:** Use OCSP stapling for TLS certificate status. Implement automated certificate lifecycle management (ACME â€” Let's Encrypt). For APIs, use OAuth 2.0 with JWT access tokens. For enterprise SSO, use SAML 2.0 or OpenID Connect.
+- **For exam:** Know the digital signature flow (private key signs, public key verifies). Understand PKI component roles (CA issues, RA verifies, VA validates). Memorize X.509 extensions (Basic Constraints for CA vs end-entity). Differentiate OAuth (authorization) from SAML (authentication). Know Kerberos flows — especially what each ticket is encrypted with.
+- **For deployment:** Use OCSP stapling for TLS certificate status. Implement automated certificate lifecycle management (ACME — Let's Encrypt). For APIs, use OAuth 2.0 with JWT access tokens. For enterprise SSO, use SAML 2.0 or OpenID Connect.
 - **For security:** Ensure certificate private keys are stored in HSMs. Implement CRL distribution points in issued certificates. Set appropriate key usage extensions (never allow key signing on end-entity certs). Use short-lived certificates when possible.
 
 ---
@@ -1641,7 +1641,7 @@ D) HMAC provides non-repudiation; digital signatures do not
 
 **Answer: A) Digital signatures use asymmetric keys; HMAC uses symmetric keys**
 
-**Explanation:** Digital signatures use asymmetric cryptography (signer's private key to sign, signer's public key to verify). HMAC (Hash-based Message Authentication Code) uses a shared symmetric key known to both parties. Because the HMAC key is shared, HMAC does NOT provide non-repudiation â€” either party could have created the HMAC. Digital signatures provide non-repudiation because only the signer possesses the private key.
+**Explanation:** Digital signatures use asymmetric cryptography (signer's private key to sign, signer's public key to verify). HMAC (Hash-based Message Authentication Code) uses a shared symmetric key known to both parties. Because the HMAC key is shared, HMAC does NOT provide non-repudiation — either party could have created the HMAC. Digital signatures provide non-repudiation because only the signer possesses the private key.
 </details>
 
 ---
@@ -1658,9 +1658,9 @@ D) Plain text with certificate serial number and status
 
 **Answer: C) ASN.1 DER-encoded response signed by the CA**
 
-**Explanation:** OCSP responses are encoded in ASN.1 DER (Distinguished Encoding Rules) format, signed by the CA or an authorized OCSP responder. The response contains: certificate ID (hash of issuer name + issuer public key + serial number), certificate status (good, revoked, unknown), thisUpdate, nextUpdate, and the responder's digital signature. The DER encoding is compact binary format â€” not XML or JSON.
+**Explanation:** OCSP responses are encoded in ASN.1 DER (Distinguished Encoding Rules) format, signed by the CA or an authorized OCSP responder. The response contains: certificate ID (hash of issuer name + issuer public key + serial number), certificate status (good, revoked, unknown), thisUpdate, nextUpdate, and the responder's digital signature. The DER encoding is compact binary format — not XML or JSON.
 </details>
 
 ---
 
-> **Next Chapter:** [Chapter 5 â€” Banking & Payment Security](/courses/information-security/05-banking-payment-security/)
+> **Next Chapter:** [Chapter 5 — Banking & Payment Security](/courses/information-security/05-banking-payment-security/)

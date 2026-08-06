@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Blockchain
+# Chapter 1: Introduction to Blockchain
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: Cryptography for Blockchain](./02-cryptography.md)
 
@@ -38,7 +38,7 @@
 |-------|-------------|--------------------|
 | Decentralization | Shifts trust from intermediaries to protocol and consensus | No single point of failure or control |
 | Block Anatomy | Header (metadata + prev hash) + body (transactions) | Chain integrity depends on cryptographic linking |
-| Blockchain Types | Public, private, consortium â€” different access models | Choose based on trust assumptions and privacy needs |
+| Blockchain Types | Public, private, consortium — different access models | Choose based on trust assumptions and privacy needs |
 | Transaction Flow | Request ? Broadcast ? Validation ? Mining ? Confirmation | Every full node validates every transaction |
 | Blockchain Trilemma | Trade-off between security, scalability, decentralization | No blockchain optimizes all three simultaneously |
 | Byzantine Generals Problem | Distributed agreement despite faulty actors | Consensus mechanisms solve this fundamental problem |
@@ -349,7 +349,7 @@ flowchart LR
     Block --> Chain
 ```
 
-> **Pro Tip:** When evaluating a blockchain platform, always identify which two corners of the trilemma it sacrifices. No project delivers all three â€” if they claim otherwise, they're likely compromising on decentralization (fewer nodes) or security (weaker consensus).
+> **Pro Tip:** When evaluating a blockchain platform, always identify which two corners of the trilemma it sacrifices. No project delivers all three — if they claim otherwise, they're likely compromising on decentralization (fewer nodes) or security (weaker consensus).
 
 ---
 
@@ -387,7 +387,7 @@ flowchart LR
 | **Block Header Fields** | Timestamp, version, prev hash, Merkle root, nonce | Every field has a specific security purpose |
 | **Blockchain Types** | Public, Private, Consortium | Determines trust model and performance |
 | **Key Properties** | Immutability, Decentralization, Transparency | Achieved through cryptography + consensus |
-| **Trilemma Corners** | Security, Scalability, Decentralization | Pick two â€” the third is sacrificed |
+| **Trilemma Corners** | Security, Scalability, Decentralization | Pick two — the third is sacrificed |
 | **Consensus** | PoW, PoS, BFT, DPoS | Each has different trade-offs |
 | **Byzantine Fault Tolerance** | n > 3f | f = number of faulty nodes |
 
@@ -408,7 +408,7 @@ flowchart LR
    - A) Only that block would be affected
    - B) All subsequent blocks would become invalid because their hashes depend on the altered block
    - C) The network would automatically recalculate the hashes
-   - D) Nothing â€” hashes are just metadata
+   - D) Nothing — hashes are just metadata
 
 <details>
 <summary>Answer&lt;/summary&gt;
@@ -802,8 +802,8 @@ export { Processor, Task }
 ## Practical Takeaways
 
 1. Choose your blockchain type (public/private/consortium) based on your trust model and privacy requirements.
-2. Understand that all blockchains make trade-offs â€” there is no perfect solution for every use case.
-3. Immutability is probabilistic, not absolute â€” it depends on the amount of hashing power or stake securing the chain.
+2. Understand that all blockchains make trade-offs — there is no perfect solution for every use case.
+3. Immutability is probabilistic, not absolute — it depends on the amount of hashing power or stake securing the chain.
 4. Transaction costs and throughput vary dramatically between blockchain types and consensus mechanisms.
 5. Always evaluate the governance model before committing to a blockchain platform.
 

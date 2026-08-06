@@ -1,4 +1,4 @@
-﻿# Chapter 4: Loops and Iteration
+# Chapter 4: Loops and Iteration
 
 
 > **Previous:** [Control Flow](./03-control-flow.md) | **Next:** [Strings](./05-strings.md)
@@ -788,12 +788,12 @@ for (let i = 0; i < 5; i++) {
   console.log(i);  // 0, 1, 2, 3, 4
 }
 
-// Python: enumerate() â†’ TypeScript: entries()
+// Python: enumerate() → TypeScript: entries()
 for (const [index, value] of items.entries()) {
   console.log(`${index}: ${value}`);
 }
 
-// Python: zip() â†’ TypeScript: manual or utility
+// Python: zip() → TypeScript: manual or utility
 const names: string[] = ["Alice", "Bob", "Charlie"];
 const scores: number[] = [92, 85, 78];
 for (let i = 0; i < names.length && i < scores.length; i++) {
@@ -824,7 +824,7 @@ for (const name of names) {
 if (!found) console.log("Not found");
 // Python: for name in names: ... else: print("Not found")
 
-// Python: reversed() â†’ TypeScript: reverse() or manual loop
+// Python: reversed() → TypeScript: reverse() or manual loop
 for (let i = items.length - 1; i >= 0; i--) {
   console.log(items[i]);  // cherry, banana, apple
 }

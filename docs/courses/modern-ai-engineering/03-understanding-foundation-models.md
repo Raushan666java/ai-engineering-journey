@@ -1,4 +1,4 @@
-﻿# Chapter 3: Understanding Foundation Models
+# Chapter 3: Understanding Foundation Models
 
 ## Learning Objectives
 
@@ -113,10 +113,10 @@ flowchart LR
         X1[Embedding<br>Vectors]
     end
     subgraph Project[Linear Projection]
-        P1[Qâ‚ Kâ‚ Vâ‚<br>Head 1]
-        P2[Qâ‚‚ Kâ‚‚ Vâ‚‚<br>Head 2]
+        P1[Q₁ K₁ V₁<br>Head 1]
+        P2[Q₂ K₂ V₂<br>Head 2]
         P3[...]
-        P4[Qâ‚• Kâ‚• Vâ‚•<br>Head H]
+        P4[Qₕ Kₕ Vₕ<br>Head H]
     end
     subgraph Attend[Scaled Dot-Product Attention]
         A1[Attention<br>Head 1]
@@ -154,7 +154,7 @@ flowchart LR
 - Head 3: Positional patterns (token distance)
 - Head 4: Entity tracking (coreference resolution)
 
-With 8â€“128 heads in modern models, the combined representations capture rich linguistic and reasoning patterns.
+With 8–128 heads in modern models, the combined representations capture rich linguistic and reasoning patterns.
 
 **The Transformer Block**
 
@@ -173,9 +173,9 @@ Pretraining is the process of training a foundation model on a large, diverse co
 
 | Objective | Description | Used By | Example |
 |-----------|-------------|---------|---------|
-| Next Token Prediction (Causal LM) | Predict the next token given all previous tokens (autoregressive) | GPT family, Llama, Mistral, Claude | Input: "The cat sat on the" â†’ Target: "mat" |
-| Masked Language Modeling | Predict randomly masked tokens given bidirectional context | BERT, RoBERTa, DeBERTa | Input: "The [MASK] sat on the mat" â†’ Target: "cat" |
-| Prefix LM | Attend bidirectionally to prefix, autoregressively generate continuation | T5, PaLM | Prefix: "translate English to French: The cat" â†’ Generate: "Le chat" |
+| Next Token Prediction (Causal LM) | Predict the next token given all previous tokens (autoregressive) | GPT family, Llama, Mistral, Claude | Input: "The cat sat on the" → Target: "mat" |
+| Masked Language Modeling | Predict randomly masked tokens given bidirectional context | BERT, RoBERTa, DeBERTa | Input: "The [MASK] sat on the mat" → Target: "cat" |
+| Prefix LM | Attend bidirectionally to prefix, autoregressively generate continuation | T5, PaLM | Prefix: "translate English to French: The cat" → Generate: "Le chat" |
 | Multi-Task Pretraining | Combined objectives across modalities and tasks | Gemini, GPT-5 | Next token prediction + image captioning + code completion |
 
 **Scaling Laws**
@@ -184,7 +184,7 @@ Research from Kaplan et al. (2020) and Hoffmann et al. (2022, Chinchilla scaling
 
 1. **Model performance follows a power law** with compute, data, and parameters. Doubling compute consistently improves performance, though with diminishing returns.
 
-2. **The Chinchilla optimum**: For a given compute budget, the optimal model size and data size are roughly equal â€” a 10B parameter model should be trained on ~200B tokens. Many earlier models (GPT-3, Llama 1) were undertrained by this standard.
+2. **The Chinchilla optimum**: For a given compute budget, the optimal model size and data size are roughly equal — a 10B parameter model should be trained on ~200B tokens. Many earlier models (GPT-3, Llama 1) were undertrained by this standard.
 
 3. **Emergent abilities**: Certain capabilities (e.g., multi-step reasoning, in-context learning) only appear above a threshold model size. These abilities cannot be predicted by extrapolating from smaller models.
 
@@ -194,12 +194,12 @@ Modern pretraining datasets are massive (15T+ tokens) and diverse:
 
 | Data Source | Typical Proportion | Example |
 |-------------|-------------------|---------|
-| Web crawl (CommonCrawl, C4) | 50â€“60% | Filtered web pages |
-| Books | 10â€“15% | Project Gutenberg, publisher corpora |
-| Academic papers | 5â€“10% | arXiv, PubMed, Semantic Scholar |
-| Code | 10â€“20% | GitHub (permissively licensed) |
-| Social media | 5â€“10% | Reddit, Wikipedia discussions |
-| Multilingual | 10â€“15% | Non-English web, translated corpora |
+| Web crawl (CommonCrawl, C4) | 50–60% | Filtered web pages |
+| Books | 10–15% | Project Gutenberg, publisher corpora |
+| Academic papers | 5–10% | arXiv, PubMed, Semantic Scholar |
+| Code | 10–20% | GitHub (permissively licensed) |
+| Social media | 5–10% | Reddit, Wikipedia discussions |
+| Multilingual | 10–15% | Non-English web, translated corpora |
 
 Data filtering is critical: deduplication at the document and paragraph level, quality filtering (perplexity-based, heuristic-based), and toxicity filtering all affect downstream performance.
 
@@ -257,7 +257,7 @@ radar
 
 **Reasoning**: Foundation models can perform multi-step logical reasoning, mathematical problem-solving, and common-sense inference. Chain-of-thought prompting (asking the model to "think step by step") dramatically improves reasoning performance. GPT-5 and Claude 4 achieve ~95% accuracy on GSM-8K (grade school math) and ~85% on MATH (competition-level math).
 
-**In-Context Learning**: The ability to learn from examples provided in the prompt without weight updates. A model can perform a new task by seeing 2â€“5 input-output pairs in the context. This capability is an emergent property of models above 10B parameters and scales with model size.
+**In-Context Learning**: The ability to learn from examples provided in the prompt without weight updates. A model can perform a new task by seeing 2–5 input-output pairs in the context. This capability is an emergent property of models above 10B parameters and scales with model size.
 
 **Instruction Following**: Models trained with RLHF (reinforcement learning from human feedback) or DPO (direct preference optimization) can follow complex, multi-part instructions. This includes format constraints, persona adoption, chain-of-thought instructions, and output structure requirements.
 
@@ -265,7 +265,7 @@ radar
 
 **Translation**: While not specialized translation systems, foundation models achieve competitive BLEU scores across high-resource language pairs. Their strength is handling contextual nuance, idioms, and domain-specific terminology that traditional MT systems struggle with.
 
-**Summarization**: Models generate abstractive summaries that capture key information without extractive copying. Performance degrades with very long documents â€” this is where long-context models (1M+ tokens) excel.
+**Summarization**: Models generate abstractive summaries that capture key information without extractive copying. Performance degrades with very long documents — this is where long-context models (1M+ tokens) excel.
 
 ## 3.5 Limitations
 
@@ -276,9 +276,9 @@ Despite impressive capabilities, foundation models have fundamental limitations 
 | Hallucinations | Model generates factually incorrect content with high confidence | Misinformation, legal liability | RAG with source citation, factual consistency checking, constrained decoding |
 | Knowledge Cutoff | Model only knows information up to its training date | Outdated responses for time-sensitive queries | RAG with up-to-date documents, explicit cutoff disclosure |
 | Recency Bias | Model overweights recent tokens in context | Poor performance on tasks requiring long-range reasoning | Prompt structuring (put key info at beginning and end), sliding window attention |
-| Context Window Limits | Fixed maximum input length (128Kâ€“2M tokens) | Cannot process very long documents or conversations | Chunking, summarization, sliding windows |
+| Context Window Limits | Fixed maximum input length (128K–2M tokens) | Cannot process very long documents or conversations | Chunking, summarization, sliding windows |
 | Cost | High per-token inference cost at scale | Unsustainable unit economics for high-volume apps | Caching, model distillation, smaller models for simple tasks |
-| Latency | Slow inference (500msâ€“10s) for real-time use | Poor UX for interactive applications | Speculative decoding, KV-cache optimization, smaller models |
+| Latency | Slow inference (500ms–10s) for real-time use | Poor UX for interactive applications | Speculative decoding, KV-cache optimization, smaller models |
 | Bias | Training data biases reflected in outputs | Unfair, stereotyped, or harmful outputs | RLHF, constitutional AI, bias testing, diverse training data |
 | Lack of True Understanding | Models manipulate symbols without genuine comprehension | Brittle performance on adversarial inputs | Adversarial testing, robust prompt design |
 
@@ -353,10 +353,10 @@ The choice between open-weight and closed-source foundation models is one of the
 | **Customization** | Limited to prompt engineering, function calling | Full fine-tuning, architecture modification, pruning |
 | **Data Privacy** | Data sent to external servers | Data stays on own infrastructure |
 | **Cost at low volume** | Pay-per-token, no upfront | Free for < 70B models |
-| **Cost at high volume** | Expensive ($0.01â€“$0.03/1K output tokens) | Hardware cost only (~$1/hr for 70B on A100) |
+| **Cost at high volume** | Expensive ($0.01–$0.03/1K output tokens) | Hardware cost only (~$1/hr for 70B on A100) |
 | **Latency** | Managed infrastructure, predictable | Variable based on hardware, can be optimized |
-| **Vendor Lock-in** | High â€” API changes, deprecation risk | None â€” full control over deployment |
-| **Licensing** | Proprietary â€” outputs may have restrictions | Varied â€” Apache 2.0 (Llama), MIT (Mistral), custom (DeepSeek) |
+| **Vendor Lock-in** | High — API changes, deprecation risk | None — full control over deployment |
+| **Licensing** | Proprietary — outputs may have restrictions | Varied — Apache 2.0 (Llama), MIT (Mistral), custom (DeepSeek) |
 | **Licensing note** | Output ownership varies by provider | Most open models allow commercial use of outputs |
 | **Safety** | Provider-managed guardrails, RLHF | Self-managed safety; capability to remove guardrails |
 | **Release cadence** | Provider-driven, infrequent major releases | Community-driven, frequent fine-tuned variants |
@@ -392,7 +392,7 @@ A production-ready class that scores models by capability, cost, and latency to 
 
 ```typescript
 /**
- * ModelSelector â€” Scores and recommends foundation models based on
+ * ModelSelector — Scores and recommends foundation models based on
  * task requirements, cost constraints, and latency targets.
  */
 
@@ -669,7 +669,7 @@ A utility for computing per-token costs, total cost projections, and cross-model
 
 ```typescript
 /**
- * CostAnalyzer â€” Computes and compares inference costs across models.
+ * CostAnalyzer — Computes and compares inference costs across models.
  * Supports detailed cost projections with caching, batch processing,
  * and scenario analysis.
  */
@@ -847,15 +847,15 @@ class CostAnalyzer {
 
 ## Summary
 
-Foundation models are built on the transformer architecture, whose self-attention mechanism allows each token to attend to all other tokens in the sequence, with multi-head attention enabling parallel learning of diverse relationship patterns. Pretraining at massive scale using next-token prediction or masked language modeling produces models that exhibit emergent capabilities including reasoning, in-context learning, and instruction following. The model landscape has diversified into specialized types â€” LLMs, multimodal models, embedding models, code models, and vision models â€” each suited to different tasks. Despite impressive capabilities, foundation models suffer from fundamental limitations including hallucinations, knowledge cutoff, context window constraints, cost, latency, and bias that require deliberate mitigation. Model selection requires a systematic framework that maps task requirements to model capabilities, cost constraints, and deployment context. The open vs closed model decision involves tradeoffs in capability, customization, data privacy, cost, and vendor lock-in. The `ModelSelector` and `CostAnalyzer` TypeScript classes provide production-quality tools for making data-driven model selection decisions and projecting costs across different usage scenarios.
+Foundation models are built on the transformer architecture, whose self-attention mechanism allows each token to attend to all other tokens in the sequence, with multi-head attention enabling parallel learning of diverse relationship patterns. Pretraining at massive scale using next-token prediction or masked language modeling produces models that exhibit emergent capabilities including reasoning, in-context learning, and instruction following. The model landscape has diversified into specialized types — LLMs, multimodal models, embedding models, code models, and vision models — each suited to different tasks. Despite impressive capabilities, foundation models suffer from fundamental limitations including hallucinations, knowledge cutoff, context window constraints, cost, latency, and bias that require deliberate mitigation. Model selection requires a systematic framework that maps task requirements to model capabilities, cost constraints, and deployment context. The open vs closed model decision involves tradeoffs in capability, customization, data privacy, cost, and vendor lock-in. The `ModelSelector` and `CostAnalyzer` TypeScript classes provide production-quality tools for making data-driven model selection decisions and projecting costs across different usage scenarios.
 
 ## Practical Takeaways
 
 1. **Match the model to the task, not the hype**: Use the `ModelSelector` framework to systematically score models on capability, cost, and latency for your specific use case.
-2. **Assume models will hallucinate â€” design for it**: Every production system must have hallucination mitigation (RAG, factual consistency checking, human review) regardless of model choice.
+2. **Assume models will hallucinate — design for it**: Every production system must have hallucination mitigation (RAG, factual consistency checking, human review) regardless of model choice.
 3. **Cost at scale determines architecture**: At low volume (<100K queries/month), API-based closed models are ideal. At high volume (>1M queries/month), self-hosted open models save 10-100x.
 4. **Know your model's knowledge cutoff**: Always supplement model knowledge with up-to-date context via RAG for time-sensitive applications.
-5. **The best model is the one you can evaluate**: Model selection is meaningless without task-specific evaluation â€” build evals before choosing a model.
+5. **The best model is the one you can evaluate**: Model selection is meaningless without task-specific evaluation — build evals before choosing a model.
 
 ## Chapter Quiz
 
@@ -925,7 +925,7 @@ Each attention head operates in a 128-dimensional space. With 96 heads, the mode
 - **Semantic heads**: Capture synonymy, antonymy, and topic coherence
 - **Entity heads**: Track entities across long distances in the text
 
-With 96 heads, the model has significant redundancy â€” some heads learn similar patterns, providing robustness if individual heads are pruned. Research shows that 30-50% of heads can often be pruned without significant performance loss, enabling inference speedups.
+With 96 heads, the model has significant redundancy — some heads learn similar patterns, providing robustness if individual heads are pruned. Research shows that 30-50% of heads can often be pruned without significant performance loss, enabling inference speedups.
 
 Larger d_k per head (e.g., 128 vs 64) allows each head to capture more nuanced relationships but increases computational cost quadratically. The trend in modern models is toward more heads with smaller d_k (multi-query attention variants).
 </details>
@@ -938,7 +938,7 @@ You are building a financial analysis application that processes quarterly earni
 <summary>Solution</summary>
 
 **Requirements Analysis:**
-- Long document processing (100 pages â‰ˆ 50Kâ€“100K tokens)
+- Long document processing (100 pages ≈ 50K–100K tokens)
 - Numerical reasoning and comparison
 - Structured output generation (table format)
 - High accuracy required (financial risk)
@@ -960,7 +960,7 @@ You are building a financial analysis application that processes quarterly earni
 **Recommendation:**
 - **Primary**: DeepSeek V4 for cost efficiency and self-hosting for financial data privacy
 - **Fallback**: Claude 4 for highest accuracy on complex numerical reasoning when needed
-- **Cost projection at 50K queries/month**: DeepSeek V4 â‰ˆ $200/month, Claude 4 â‰ˆ $4,500/month
+- **Cost projection at 50K queries/month**: DeepSeek V4 ≈ $200/month, Claude 4 ≈ $4,500/month
 </details>
 
 **Exercise 3**
@@ -1085,7 +1085,7 @@ Compare and contrast the open-source ecosystem (Llama 4, Mistral, DeepSeek) with
 
 | Dimension | Winner | When The Other Is Preferred |
 |-----------|--------|----------------------------|
-| **Capability ceiling** | Closed (GPT-5) | Open models are within 5-10% â€” acceptable for most production use cases |
+| **Capability ceiling** | Closed (GPT-5) | Open models are within 5-10% — acceptable for most production use cases |
 | **Customization** | Open (full fine-tuning) | Closed models with prompt engineering suffice for 80% of tasks |
 | **Data privacy** | Open (self-hosted) | Closed models with data retention agreements and anonymization |
 | **Cost at scale** | Open (hardware cost < API cost above ~100K queries/month) | Closed APIs are cheaper at low volume (no hardware fixed cost) |

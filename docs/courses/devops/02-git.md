@@ -1,4 +1,4 @@
-﻿# Chapter 2: Advanced Git
+# Chapter 2: Advanced Git
 
 > **Prev:** [Introduction](./01-introduction.md) | **Prev Section:** [Linux Basics](./02-linux-basics.md)
 
@@ -39,7 +39,7 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Git Internals | Objects and references | Understanding SHA hashes demystifies Git |
-| Branching | Lightweight pointers to commits | Branches are cheap â€” create them freely |
+| Branching | Lightweight pointers to commits | Branches are cheap — create them freely |
 | Merging | Fast-forward vs 3-way merges | Choose strategy based on team workflow |
 | Rebasing | Linearizing commit history | Rebase feature branches, merge main branches |
 | GitFlow | Structured release management | Good for versioned releases, bad for continuous delivery |
@@ -73,9 +73,9 @@ Git is fundamentally a content-addressable filesystem with a VCS interface. Ever
 
 **Four object types:**
 
-**Blob:** Stores file content. Named by SHA-1 of the content. Does not store the filename â€” that's in the tree. Two files with identical content share the same blob.
+**Blob:** Stores file content. Named by SHA-1 of the content. Does not store the filename — that's in the tree. Two files with identical content share the same blob.
 
-**Tree:** Stores directory listings â€” filenames, permissions, and references to blobs or subtrees. Analogous to a filesystem directory.
+**Tree:** Stores directory listings — filenames, permissions, and references to blobs or subtrees. Analogous to a filesystem directory.
 
 **Commit:** Snapshot of the entire repository at a point in time. Contains:
 - Pointer to the root tree object
@@ -111,10 +111,10 @@ flowchart TD
 ```
 
 **References (refs):** Pointers to commits stored in `.git/refs/`:
-- `refs/heads/main` â€” Local branch pointer
-- `refs/remotes/origin/main` â€” Remote tracking branch
-- `refs/tags/v1.0` â€” Tag pointer
-- `HEAD` â€” Current branch or commit
+- `refs/heads/main` — Local branch pointer
+- `refs/remotes/origin/main` — Remote tracking branch
+- `refs/tags/v1.0` — Tag pointer
+- `HEAD` — Current branch or commit
 
 **The staging area (index):** Stored in `.git/index`. When you run `git add`, Git creates blob objects and updates the index with the new tree structure. When you run `git commit`, Git creates a commit object pointing to the staged tree.
 
@@ -122,11 +122,11 @@ flowchart TD
 
 
 **GitFlow (Vincent Driessen, 2010):**
-- `main` â€” Production-ready code
-- `develop` â€” Integration branch for features
-- `feature/*` â€” Branched from `develop`
-- `release/*` â€” Branched from `develop` when preparing release
-- `hotfix/*` â€” Branched from `main` for critical fixes
+- `main` — Production-ready code
+- `develop` — Integration branch for features
+- `feature/*` — Branched from `develop`
+- `release/*` — Branched from `develop` when preparing release
+- `hotfix/*` — Branched from `main` for critical fixes
 
 GitFlow works well for projects with scheduled releases and multiple concurrent versions. It is overly complex for continuous delivery.
 
@@ -175,20 +175,20 @@ Before:  A---B---C (main)
 After:   A---B---C---D'---E' (feature)
 ```
 
-Rebasing rewrites history â€” never rebase shared/published branches.
+Rebasing rewrites history — never rebase shared/published branches.
 
 ### Interactive Rebase
 
 
 Interactive rebase (`git rebase -i HEAD~N`) enables editing commits before applying. Options per commit:
 
-- `pick` â€” Use as-is
-- `reword` â€” Change commit message
-- `edit` â€” Amend commit content
-- `squash` â€” Combine with previous commit
-- `fixup` â€” Combine but discard message
-- `drop` â€” Remove commit
-- `exec` â€” Run a shell command
+- `pick` — Use as-is
+- `reword` — Change commit message
+- `edit` — Amend commit content
+- `squash` — Combine with previous commit
+- `fixup` — Combine but discard message
+- `drop` — Remove commit
+- `exec` — Run a shell command
 
 ### Cherry-Picking
 
@@ -206,16 +206,16 @@ git cherry-pick -x <commit-hash>  # Adds source reference
 Hooks are scripts that run automatically at specific Git lifecycle events. They live in `.git/hooks/` and must be executable.
 
 **Client-side hooks (run on developer machine):**
-- `pre-commit` â€” Check code style, run linters
-- `prepare-commit-msg` â€” Edit default commit message
-- `commit-msg` â€” Validate commit message format
-- `pre-push` â€” Run tests before pushing
-- `post-merge` â€” Reindex after merge
+- `pre-commit` — Check code style, run linters
+- `prepare-commit-msg` — Edit default commit message
+- `commit-msg` — Validate commit message format
+- `pre-push` — Run tests before pushing
+- `post-merge` — Reindex after merge
 
 **Server-side hooks (run on remote repository):**
-- `pre-receive` â€” Enforce policies on incoming pushes
-- `update` â€” Per-branch policy enforcement
-- `post-receive` â€” Trigger CI/CD, deployments, notifications
+- `pre-receive` — Enforce policies on incoming pushes
+- `update` — Per-branch policy enforcement
+- `post-receive` — Trigger CI/CD, deployments, notifications
 
 **Example pre-commit hook:**
 

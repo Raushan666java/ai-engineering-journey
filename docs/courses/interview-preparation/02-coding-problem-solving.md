@@ -1,4 +1,4 @@
-﻿# Chapter 2: Coding Problem Solving
+# Chapter 2: Coding Problem Solving
 
 ## Learning Objectives
 
@@ -69,10 +69,10 @@ flowchart TD
 
 **Problem:** Given an array of integers `nums` and an integer `target`, return indices of two numbers that add up to target.
 
-**Example:** `nums = [2, 7, 11, 15], target = 9` â†’ `[0, 1]`
+**Example:** `nums = [2, 7, 11, 15], target = 9` → `[0, 1]`
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ²) time, O(1) space</b></summary>
+<summary><b>Approach 1: Brute Force — O(n²) time, O(1) space</b></summary>
 
 ```typescript
 function twoSumBrute(nums: number[], target: number): number[] {
@@ -89,7 +89,7 @@ function twoSumBrute(nums: number[], target: number): number[] {
 </details>
 
 <details>
-<summary><b>Approach 2: Better â€” HashMap â€” O(n) time, O(n) space</b></summary>
+<summary><b>Approach 2: Better — HashMap — O(n) time, O(n) space</b></summary>
 
 ```typescript
 function twoSum(nums: number[], target: number): number[] {
@@ -115,10 +115,10 @@ function twoSum(nums: number[], target: number): number[] {
 
 **Problem:** Given an array, return true if any value appears at least twice.
 
-**Example:** `[1, 2, 3, 1]` â†’ `true`
+**Example:** `[1, 2, 3, 1]` → `true`
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ²)</b></summary>
+<summary><b>Approach 1: Brute Force — O(n²)</b></summary>
 
 ```typescript
 function containsDuplicateBrute(nums: number[]): boolean {
@@ -133,7 +133,7 @@ function containsDuplicateBrute(nums: number[]): boolean {
 </details>
 
 <details>
-<summary><b>Approach 2: Better â€” Sort â€” O(n log n)</b></summary>
+<summary><b>Approach 2: Better — Sort — O(n log n)</b></summary>
 
 ```typescript
 function containsDuplicateSort(nums: number[]): boolean {
@@ -147,7 +147,7 @@ function containsDuplicateSort(nums: number[]): boolean {
 </details>
 
 <details>
-<summary><b>Approach 3: Optimal â€” HashSet â€” O(n) time, O(n) space</b></summary>
+<summary><b>Approach 3: Optimal — HashSet — O(n) time, O(n) space</b></summary>
 
 ```typescript
 function containsDuplicate(nums: number[]): boolean {
@@ -167,10 +167,10 @@ function containsDuplicate(nums: number[]): boolean {
 
 **Problem:** Find contiguous subarray with the largest sum.
 
-**Example:** `[-2, 1, -3, 4, -1, 2, 1, -5, 4]` â†’ `6` (subarray `[4, -1, 2, 1]`)
+**Example:** `[-2, 1, -3, 4, -1, 2, 1, -5, 4]` → `6` (subarray `[4, -1, 2, 1]`)
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ²)</b></summary>
+<summary><b>Approach 1: Brute Force — O(n²)</b></summary>
 
 ```typescript
 function maxSubArrayBrute(nums: number[]): number {
@@ -188,7 +188,7 @@ function maxSubArrayBrute(nums: number[]): number {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” Kadane's Algorithm â€” O(n) time, O(1) space</b></summary>
+<summary><b>Approach 2: Optimal — Kadane's Algorithm — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function maxSubArray(nums: number[]): number {
@@ -235,10 +235,10 @@ function maxSubArrayWithElements(nums: number[]): number[] {
 
 **Problem:** Return array where `answer[i]` equals product of all elements except `nums[i]`. Cannot use division.
 
-**Example:** `[1, 2, 3, 4]` â†’ `[24, 12, 8, 6]`
+**Example:** `[1, 2, 3, 4]` → `[24, 12, 8, 6]`
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ²)</b></summary>
+<summary><b>Approach 1: Brute Force — O(n²)</b></summary>
 
 ```typescript
 function productExceptSelfBrute(nums: number[]): number[] {
@@ -256,7 +256,7 @@ function productExceptSelfBrute(nums: number[]): number[] {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” Prefix/Suffix Products â€” O(n) time, O(1) extra space</b></summary>
+<summary><b>Approach 2: Optimal — Prefix/Suffix Products — O(n) time, O(1) extra space</b></summary>
 
 ```typescript
 function productExceptSelf(nums: number[]): number[] {
@@ -290,10 +290,10 @@ function productExceptSelf(nums: number[]): number[] {
 
 **Problem:** Given stock prices array, find maximum profit from one buy followed by one sell.
 
-**Example:** `[7, 1, 5, 3, 6, 4]` â†’ `5` (buy at 1, sell at 6)
+**Example:** `[7, 1, 5, 3, 6, 4]` → `5` (buy at 1, sell at 6)
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ²)</b></summary>
+<summary><b>Approach 1: Brute Force — O(n²)</b></summary>
 
 ```typescript
 function maxProfitBrute(prices: number[]): number {
@@ -309,7 +309,7 @@ function maxProfitBrute(prices: number[]): number {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” One Pass â€” O(n) time, O(1) space</b></summary>
+<summary><b>Approach 2: Optimal — One Pass — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function maxProfit(prices: number[]): number {
@@ -336,10 +336,10 @@ function maxProfit(prices: number[]): number {
 
 **Problem:** Move all zeros to the end maintaining relative order of non-zero elements.
 
-**Example:** `[0, 1, 0, 3, 12]` â†’ `[1, 3, 12, 0, 0]`
+**Example:** `[0, 1, 0, 3, 12]` → `[1, 3, 12, 0, 0]`
 
 <details>
-<summary><b>Two Pointer â€” O(n) time, O(1) space</b></summary>
+<summary><b>Two Pointer — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function moveZeroes(nums: number[]): void {
@@ -378,10 +378,10 @@ function moveZeroesSwap(nums: number[]): void {
 
 **Problem:** Find all unique triplets that sum to zero.
 
-**Example:** `[-1, 0, 1, 2, -1, -4]` â†’ `[[-1, -1, 2], [-1, 0, 1]]`
+**Example:** `[-1, 0, 1, 2, -1, -4]` → `[[-1, -1, 2], [-1, 0, 1]]`
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ³)</b></summary>
+<summary><b>Approach 1: Brute Force — O(n³)</b></summary>
 
 ```typescript
 function threeSumBrute(nums: number[]): number[][] {
@@ -408,7 +408,7 @@ function threeSumBrute(nums: number[]): number[][] {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” Sort + Two Pointers â€” O(nÂ²) time, O(1) space (excl. output)</b></summary>
+<summary><b>Approach 2: Optimal — Sort + Two Pointers — O(n²) time, O(1) space (excl. output)</b></summary>
 
 ```typescript
 function threeSum(nums: number[]): number[][] {
@@ -453,10 +453,10 @@ function threeSum(nums: number[]): number[][] {
 
 **Problem:** Find two lines that together with x-axis form a container holding maximum water.
 
-**Example:** `[1, 8, 6, 2, 5, 4, 8, 3, 7]` â†’ `49`
+**Example:** `[1, 8, 6, 2, 5, 4, 8, 3, 7]` → `49`
 
 <details>
-<summary><b>Two Pointer â€” O(n) time, O(1) space</b></summary>
+<summary><b>Two Pointer — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function maxArea(height: number[]): number {
@@ -490,10 +490,10 @@ function maxArea(height: number[]): number {
 
 **Problem:** Find minimum element in a rotated sorted array.
 
-**Example:** `[3, 4, 5, 1, 2]` â†’ `1`
+**Example:** `[3, 4, 5, 1, 2]` → `1`
 
 <details>
-<summary><b>Binary Search â€” O(log n) time, O(1) space</b></summary>
+<summary><b>Binary Search — O(log n) time, O(1) space</b></summary>
 
 ```typescript
 function findMin(nums: number[]): number {
@@ -525,10 +525,10 @@ function findMin(nums: number[]): number {
 
 **Problem:** Merge all overlapping intervals.
 
-**Example:** `[[1,3],[2,6],[8,10],[15,18]]` â†’ `[[1,6],[8,10],[15,18]]`
+**Example:** `[[1,3],[2,6],[8,10],[15,18]]` → `[[1,6],[8,10],[15,18]]`
 
 <details>
-<summary><b>Sort + Linear Scan â€” O(n log n) time, O(n) space</b></summary>
+<summary><b>Sort + Linear Scan — O(n log n) time, O(n) space</b></summary>
 
 ```typescript
 function merge(intervals: number[][]): number[][] {
@@ -565,10 +565,10 @@ function merge(intervals: number[][]): number[][] {
 
 **Problem:** Return true if string is palindrome considering only alphanumeric chars, ignoring case.
 
-**Example:** `"A man, a plan, a canal: Panama"` â†’ `true`
+**Example:** `"A man, a plan, a canal: Panama"` → `true`
 
 <details>
-<summary><b>Two Pointer â€” O(n) time, O(1) space</b></summary>
+<summary><b>Two Pointer — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function isPalindrome(s: string): boolean {
@@ -603,10 +603,10 @@ function isAlphanumeric(ch: string): boolean {
 
 **Problem:** Find length of longest substring without repeating characters.
 
-**Example:** `"abcabcbb"` â†’ `3` (substring `"abc"`)
+**Example:** `"abcabcbb"` → `3` (substring `"abc"`)
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ³)</b></summary>
+<summary><b>Approach 1: Brute Force — O(n³)</b></summary>
 
 ```typescript
 function lengthOfLongestSubstringBrute(s: string): number {
@@ -625,7 +625,7 @@ function lengthOfLongestSubstringBrute(s: string): number {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” Sliding Window â€” O(n) time, O(min(m, n)) space</b></summary>
+<summary><b>Approach 2: Optimal — Sliding Window — O(n) time, O(min(m, n)) space</b></summary>
 
 ```typescript
 function lengthOfLongestSubstring(s: string): number {
@@ -657,10 +657,10 @@ function lengthOfLongestSubstring(s: string): number {
 
 **Problem:** Return true if `t` is an anagram of `s`.
 
-**Example:** `s = "anagram", t = "nagaram"` â†’ `true`
+**Example:** `s = "anagram", t = "nagaram"` → `true`
 
 <details>
-<summary><b>Approach 1: Sort â€” O(n log n)</b></summary>
+<summary><b>Approach 1: Sort — O(n log n)</b></summary>
 
 ```typescript
 function isAnagramSort(s: string, t: string): boolean {
@@ -671,7 +671,7 @@ function isAnagramSort(s: string, t: string): boolean {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” HashMap/Frequency Counter â€” O(n) time, O(1) space</b></summary>
+<summary><b>Approach 2: Optimal — HashMap/Frequency Counter — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function isAnagram(s: string, t: string): boolean {
@@ -695,10 +695,10 @@ function isAnagram(s: string, t: string): boolean {
 
 **Problem:** Group anagrams together from an array of strings.
 
-**Example:** `["eat","tea","tan","ate","nat","bat"]` â†’ `[["bat"],["nat","tan"],["ate","eat","tea"]]`
+**Example:** `["eat","tea","tan","ate","nat","bat"]` → `[["bat"],["nat","tan"],["ate","eat","tea"]]`
 
 <details>
-<summary><b>HashMap + Sorted Key â€” O(n * k log k) time, O(nk) space</b></summary>
+<summary><b>HashMap + Sorted Key — O(n * k log k) time, O(nk) space</b></summary>
 
 ```typescript
 function groupAnagrams(strs: string[]): string[][] {
@@ -744,10 +744,10 @@ function groupAnagramsOptimized(strs: string[]): string[][] {
 
 **Problem:** Return longest palindromic substring.
 
-**Example:** `"babad"` â†’ `"bab"` or `"aba"`
+**Example:** `"babad"` → `"bab"` or `"aba"`
 
 <details>
-<summary><b>Approach 1: Brute Force â€” O(nÂ³)</b></summary>
+<summary><b>Approach 1: Brute Force — O(n³)</b></summary>
 
 ```typescript
 function longestPalindromeBrute(s: string): string {
@@ -768,7 +768,7 @@ function longestPalindromeBrute(s: string): string {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” Expand Around Center â€” O(nÂ²) time, O(1) space</b></summary>
+<summary><b>Approach 2: Optimal — Expand Around Center — O(n²) time, O(1) space</b></summary>
 
 ```typescript
 function longestPalindrome(s: string): string {
@@ -805,10 +805,10 @@ function longestPalindrome(s: string): string {
 
 **Problem:** Find first non-repeating character index; return -1 if none.
 
-**Example:** `"leetcode"` â†’ `0` (l), `"loveleetcode"` â†’ `2` (v)
+**Example:** `"leetcode"` → `0` (l), `"loveleetcode"` → `2` (v)
 
 <details>
-<summary><b>HashMap â€” O(n) time, O(1) space</b></summary>
+<summary><b>HashMap — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function firstUniqChar(s: string): number {
@@ -834,7 +834,7 @@ function firstUniqChar(s: string): number {
 ### Problem 17: Reverse a Linked List
 
 <details>
-<summary><b>Approach 1: Iterative â€” O(n) time, O(1) space</b></summary>
+<summary><b>Approach 1: Iterative — O(n) time, O(1) space</b></summary>
 
 ```typescript
 class ListNode<T> {
@@ -861,7 +861,7 @@ function reverseList<T>(head: ListNode<T> | null): ListNode<T> | null {
 </details>
 
 <details>
-<summary><b>Approach 2: Recursive â€” O(n) time, O(n) space (call stack)</b></summary>
+<summary><b>Approach 2: Recursive — O(n) time, O(n) space (call stack)</b></summary>
 
 ```typescript
 function reverseListRecursive<T>(head: ListNode<T> | null): ListNode<T> | null {
@@ -881,7 +881,7 @@ function reverseListRecursive<T>(head: ListNode<T> | null): ListNode<T> | null {
 ### Problem 18: Detect Cycle in Linked List
 
 <details>
-<summary><b>Floyd's Cycle Detection (Fast & Slow) â€” O(n) time, O(1) space</b></summary>
+<summary><b>Floyd's Cycle Detection (Fast & Slow) — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function hasCycle<T>(head: ListNode<T> | null): boolean {
@@ -935,7 +935,7 @@ function detectCycle<T>(head: ListNode<T> | null): ListNode<T> | null {
 ### Problem 19: Merge Two Sorted Lists
 
 <details>
-<summary><b>Approach 1: Iterative with Dummy Node â€” O(n+m) time, O(1) space</b></summary>
+<summary><b>Approach 1: Iterative with Dummy Node — O(n+m) time, O(1) space</b></summary>
 
 ```typescript
 function mergeTwoLists<T>(
@@ -964,7 +964,7 @@ function mergeTwoLists<T>(
 </details>
 
 <details>
-<summary><b>Approach 2: Recursive â€” O(n+m) time, O(n+m) space</b></summary>
+<summary><b>Approach 2: Recursive — O(n+m) time, O(n+m) space</b></summary>
 
 ```typescript
 function mergeTwoListsRecursive<T extends number | string>(
@@ -990,7 +990,7 @@ function mergeTwoListsRecursive<T extends number | string>(
 ### Problem 20: Remove Nth Node From End
 
 <details>
-<summary><b>Two Pass â€” O(n) time, O(1) space</b></summary>
+<summary><b>Two Pass — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function removeNthFromEnd<T>(head: ListNode<T> | null, n: number): ListNode<T> | null {
@@ -1016,7 +1016,7 @@ function removeNthFromEnd<T>(head: ListNode<T> | null, n: number): ListNode<T> |
 </details>
 
 <details>
-<summary><b>One Pass â€” Fast & Slow Pointer â€” O(n) time, O(1) space</b></summary>
+<summary><b>One Pass — Fast & Slow Pointer — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function removeNthFromEndOnePass<T>(head: ListNode<T> | null, n: number): ListNode<T> | null {
@@ -1050,7 +1050,7 @@ function removeNthFromEndOnePass<T>(head: ListNode<T> | null, n: number): ListNo
 ### Problem 21: Maximum Depth of Binary Tree
 
 <details>
-<summary><b>Approach 1: Recursive â€” DFS â€” O(n) time, O(h) space</b></summary>
+<summary><b>Approach 1: Recursive — DFS — O(n) time, O(h) space</b></summary>
 
 ```typescript
 class TreeNode<T> {
@@ -1069,7 +1069,7 @@ function maxDepth<T>(root: TreeNode<T> | null): number {
 </details>
 
 <details>
-<summary><b>Approach 2: Iterative â€” BFS â€” O(n) time, O(w) space</b></summary>
+<summary><b>Approach 2: Iterative — BFS — O(n) time, O(w) space</b></summary>
 
 ```typescript
 function maxDepthBFS<T>(root: TreeNode<T> | null): number {
@@ -1098,7 +1098,7 @@ function maxDepthBFS<T>(root: TreeNode<T> | null): number {
 ### Problem 22: Invert Binary Tree
 
 <details>
-<summary><b>Recursive â€” O(n) time, O(h) space</b></summary>
+<summary><b>Recursive — O(n) time, O(h) space</b></summary>
 
 ```typescript
 function invertTree<T>(root: TreeNode<T> | null): TreeNode<T> | null {
@@ -1136,7 +1136,7 @@ function invertTreeIterative<T>(root: TreeNode<T> | null): TreeNode<T> | null {
 ### Problem 23: Validate Binary Search Tree
 
 <details>
-<summary><b>Inorder Traversal â€” O(n) time, O(h) space</b></summary>
+<summary><b>Inorder Traversal — O(n) time, O(h) space</b></summary>
 
 ```typescript
 function isValidBST(root: TreeNode<number> | null): boolean {
@@ -1158,7 +1158,7 @@ function isValidBST(root: TreeNode<number> | null): boolean {
   return true;
 }
 
-// Optimal: Recursive with bounds â€” O(n)
+// Optimal: Recursive with bounds — O(n)
 function isValidBSTRange(root: TreeNode<number> | null, min = -Infinity, max = Infinity): boolean {
   if (!root) return true;
   if (root.val <= min || root.val >= max) return false;
@@ -1172,7 +1172,7 @@ function isValidBSTRange(root: TreeNode<number> | null, min = -Infinity, max = I
 ### Problem 24: Binary Tree Level Order Traversal
 
 <details>
-<summary><b>BFS â€” O(n) time, O(w) space</b></summary>
+<summary><b>BFS — O(n) time, O(w) space</b></summary>
 
 ```typescript
 function levelOrder<T>(root: TreeNode<T> | null): T[][] {
@@ -1205,7 +1205,7 @@ function levelOrder<T>(root: TreeNode<T> | null): T[][] {
 ### Problem 25: Lowest Common Ancestor of BST
 
 <details>
-<summary><b>Recursive â€” O(h) time, O(h) space</b></summary>
+<summary><b>Recursive — O(h) time, O(h) space</b></summary>
 
 ```typescript
 function lowestCommonAncestor(
@@ -1225,7 +1225,7 @@ function lowestCommonAncestor(
   return root; // Found split point
 }
 
-// Iterative â€” O(h) time, O(1) space
+// Iterative — O(h) time, O(1) space
 function lowestCommonAncestorIterative(
   root: TreeNode<number> | null,
   p: TreeNode<number>,
@@ -1263,10 +1263,10 @@ function lowestCommonAncestorIterative(
 11000
 00000
 ```
-â†’ `1` island
+→ `1` island
 
 <details>
-<summary><b>DFS â€” O(m*n) time, O(m*n) space (worst case)</b></summary>
+<summary><b>DFS — O(m*n) time, O(m*n) space (worst case)</b></summary>
 
 ```typescript
 function numIslands(grid: string[][]): number {
@@ -1308,7 +1308,7 @@ function numIslands(grid: string[][]): number {
 ### Problem 27: Clone Graph
 
 <details>
-<summary><b>DFS with HashMap â€” O(V+E) time, O(V) space</b></summary>
+<summary><b>DFS with HashMap — O(V+E) time, O(V) space</b></summary>
 
 ```typescript
 class GraphNode {
@@ -1350,7 +1350,7 @@ function cloneGraph(node: GraphNode | null): GraphNode | null {
 **Problem:** Can you finish all courses given prerequisites? (Detect cycle in DAG)
 
 <details>
-<summary><b>Kahn's Algorithm (BFS) â€” O(V+E) time, O(V+E) space</b></summary>
+<summary><b>Kahn's Algorithm (BFS) — O(V+E) time, O(V+E) space</b></summary>
 
 ```typescript
 function canFinish(numCourses: number, prerequisites: number[][]): boolean {
@@ -1396,7 +1396,7 @@ function canFinish(numCourses: number, prerequisites: number[][]): boolean {
 **Problem:** Return length of shortest transformation sequence from beginWord to endWord.
 
 <details>
-<summary><b>BFS â€” O(MÂ² * N) time, O(MÂ² * N) space</b></summary>
+<summary><b>BFS — O(M² * N) time, O(M² * N) space</b></summary>
 
 ```typescript
 function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {
@@ -1443,7 +1443,7 @@ function ladderLength(beginWord: string, endWord: string, wordList: string[]): n
 **Problem:** Return minutes until all oranges rot, or -1 if impossible.
 
 <details>
-<summary><b>Multi-source BFS â€” O(m*n) time, O(m*n) space</b></summary>
+<summary><b>Multi-source BFS — O(m*n) time, O(m*n) space</b></summary>
 
 ```typescript
 function orangesRotting(grid: number[][]): number {
@@ -1498,7 +1498,7 @@ function orangesRotting(grid: number[][]): number {
 ### Problem 31: Fibonacci Number
 
 <details>
-<summary><b>Approach 1: Recursive â€” O(2â¿) time, O(n) space</b></summary>
+<summary><b>Approach 1: Recursive — O(2ⁿ) time, O(n) space</b></summary>
 
 ```typescript
 function fibRecursive(n: number): number {
@@ -1509,7 +1509,7 @@ function fibRecursive(n: number): number {
 </details>
 
 <details>
-<summary><b>Approach 2: DP â€” Tabulation â€” O(n) time, O(n) space</b></summary>
+<summary><b>Approach 2: DP — Tabulation — O(n) time, O(n) space</b></summary>
 
 ```typescript
 function fibDP(n: number): number {
@@ -1525,7 +1525,7 @@ function fibDP(n: number): number {
 </details>
 
 <details>
-<summary><b>Approach 3: Optimal â€” Two Variables â€” O(n) time, O(1) space</b></summary>
+<summary><b>Approach 3: Optimal — Two Variables — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function fib(n: number): number {
@@ -1546,7 +1546,7 @@ function fib(n: number): number {
 **Problem:** n steps, can climb 1 or 2 steps at a time. Count distinct ways to reach top.
 
 <details>
-<summary><b>DP â€” O(n) time, O(1) space</b></summary>
+<summary><b>DP — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function climbStairs(n: number): number {
@@ -1575,7 +1575,7 @@ function climbStairs(n: number): number {
 **Problem:** Return fewest coins needed to make up amount, or -1 if impossible.
 
 <details>
-<summary><b>DP â€” Tabulation â€” O(amount * coins) time, O(amount) space</b></summary>
+<summary><b>DP — Tabulation — O(amount * coins) time, O(amount) space</b></summary>
 
 ```typescript
 function coinChange(coins: number[], amount: number): number {
@@ -1602,7 +1602,7 @@ function coinChange(coins: number[], amount: number): number {
 ### Problem 34: Longest Increasing Subsequence (LIS)
 
 <details>
-<summary><b>Approach 1: DP â€” O(nÂ²) time, O(n) space</b></summary>
+<summary><b>Approach 1: DP — O(n²) time, O(n) space</b></summary>
 
 ```typescript
 function lengthOfLIS(nums: number[]): number {
@@ -1624,7 +1624,7 @@ function lengthOfLIS(nums: number[]): number {
 </details>
 
 <details>
-<summary><b>Approach 2: Optimal â€” Binary Search â€” O(n log n) time, O(n) space</b></summary>
+<summary><b>Approach 2: Optimal — Binary Search — O(n log n) time, O(n) space</b></summary>
 
 ```typescript
 function lengthOfLISOptimized(nums: number[]): number {
@@ -1663,7 +1663,7 @@ function lengthOfLISOptimized(nums: number[]): number {
 ### Problem 35: Maximum Product Subarray
 
 <details>
-<summary><b>DP â€” Track min and max â€” O(n) time, O(1) space</b></summary>
+<summary><b>DP — Track min and max — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function maxProduct(nums: number[]): number {
@@ -1693,7 +1693,7 @@ function maxProduct(nums: number[]): number {
 ### Problem 36: Edit Distance (Levenshtein Distance)
 
 <details>
-<summary><b>DP â€” O(m*n) time, O(m*n) space</b></summary>
+<summary><b>DP — O(m*n) time, O(m*n) space</b></summary>
 
 ```typescript
 function minDistance(word1: string, word2: string): number {
@@ -1730,7 +1730,7 @@ function minDistance(word1: string, word2: string): number {
 ### Problem 37: 0/1 Knapsack
 
 <details>
-<summary><b>DP â€” O(n*W) time, O(n*W) space</b></summary>
+<summary><b>DP — O(n*W) time, O(n*W) space</b></summary>
 
 ```typescript
 function knapsack(weights: number[], values: number[], capacity: number): number {
@@ -1772,10 +1772,10 @@ function knapsackOptimized(weights: number[], values: number[], capacity: number
 
 ### Problem 38: Unique Paths
 
-**Problem:** Robot at top-left of mÃ—n grid, moves only right/down. Count paths to bottom-right.
+**Problem:** Robot at top-left of m×n grid, moves only right/down. Count paths to bottom-right.
 
 <details>
-<summary><b>DP â€” O(m*n) time, O(n) space</b></summary>
+<summary><b>DP — O(m*n) time, O(n) space</b></summary>
 
 ```typescript
 function uniquePaths(m: number, n: number): number {
@@ -1810,7 +1810,7 @@ function uniquePathsMath(m: number, n: number): number {
 ### Problem 39: Longest Common Subsequence (LCS)
 
 <details>
-<summary><b>DP â€” O(m*n) time, O(m*n) space</b></summary>
+<summary><b>DP — O(m*n) time, O(m*n) space</b></summary>
 
 ```typescript
 function longestCommonSubsequence(text1: string, text2: string): number {
@@ -1874,7 +1874,7 @@ function getLCS(text1: string, text2: string): string {
 **Problem:** Maximum money you can rob without alerting police (cannot rob adjacent houses).
 
 <details>
-<summary><b>DP â€” O(n) time, O(1) space</b></summary>
+<summary><b>DP — O(n) time, O(1) space</b></summary>
 
 ```typescript
 function rob(nums: number[]): number {
@@ -1961,14 +1961,14 @@ This chapter covered 40 coding problems across 7 categories:
 
 4. **Handle edge cases first:** Empty input, single element, duplicates, negative numbers, overflow.
 
-5. **Use UMPIRE:** Understand, Match, Plan, Implement, Review, Evaluate â€” this framework works for every coding problem.
+5. **Use UMPIRE:** Understand, Match, Plan, Implement, Review, Evaluate — this framework works for every coding problem.
 
 6. **Practice on paper:** In interviews, you won't have an IDE. Practice writing code on paper or a whiteboard.
 
 7. **Verbalize your thinking:** Talk through your approach even before you start coding. The interviewer wants to see your thought process.
 
-8. **Optimal â‰  always needed:** Sometimes a clean O(nÂ²) solution with good explanation scores better than a complex O(n log n) solution you can't explain.
+8. **Optimal ≠ always needed:** Sometimes a clean O(n²) solution with good explanation scores better than a complex O(n log n) solution you can't explain.
 
 9. **For government exams:** Focus on arrays, strings, recursion, and basic trees. DP and graphs are less frequently asked in PSU interviews.
 
-10. **â­ Must Know:** Two Sum, Max Subarray, Reverse Linked List, Valid BST, Number of Islands, Coin Change, Longest Common Subsequence.
+10. **⭐ Must Know:** Two Sum, Max Subarray, Reverse Linked List, Valid BST, Number of Islands, Coin Change, Longest Common Subsequence.

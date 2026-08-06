@@ -1,4 +1,4 @@
-﻿# 63. Tools & DevOps â€” Interview Q&A
+# 63. Tools & DevOps — Interview Q&A
 
 > **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 
@@ -52,11 +52,11 @@ flowchart LR
 > **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
 
 
-**Answer:** Maven is a build automation and dependency management tool for Java projects. Before Maven, Java projects had no standardized build process â€” developers used Ant with hand-written XML build files that required manually specifying every compile, test, and packaging step. Dependencies were downloaded and stored in `lib/` folders checked into version control, leading to bloated repositories and version conflicts.
+**Answer:** Maven is a build automation and dependency management tool for Java projects. Before Maven, Java projects had no standardized build process — developers used Ant with hand-written XML build files that required manually specifying every compile, test, and packaging step. Dependencies were downloaded and stored in `lib/` folders checked into version control, leading to bloated repositories and version conflicts.
 
 Maven introduced two key innovations:
-1. **Convention over configuration** â€” a standard project layout (`src/main/java`, `src/test/java`, etc.) means a Maven project can be built without any custom configuration for standard cases.
-2. **Declarative dependency management** â€” dependencies are declared in `pom.xml` with groupId, artifactId, and version; Maven automatically downloads them from repositories (Maven Central) and manages transitive dependencies.
+1. **Convention over configuration** — a standard project layout (`src/main/java`, `src/test/java`, etc.) means a Maven project can be built without any custom configuration for standard cases.
+2. **Declarative dependency management** — dependencies are declared in `pom.xml` with groupId, artifactId, and version; Maven automatically downloads them from repositories (Maven Central) and manages transitive dependencies.
 
 ```xml
 <project>
@@ -86,10 +86,10 @@ Maven also provides a lifecycle (validate, compile, test, package, verify, insta
 | Aspect | Maven | Gradle |
 |--------|-------|--------|
 | **Build file** | XML (`pom.xml`) | Groovy or Kotlin DSL |
-| **Performance** | Slower â€” sequential phases | Faster â€” incremental builds, build cache |
-| **Flexibility** | Rigid lifecycle â€” hard to inject custom logic | Highly flexible â€” tasks with custom dependencies |
+| **Performance** | Slower — sequential phases | Faster — incremental builds, build cache |
+| **Flexibility** | Rigid lifecycle — hard to inject custom logic | Highly flexible — tasks with custom dependencies |
 | **Dependency mgmt** | `<dependencyManagement>` BOM style | `platform()` and version catalogs |
-| **Build script logic** | Plugins only â€” no imperative logic | Full programming language available |
+| **Build script logic** | Plugins only — no imperative logic | Full programming language available |
 | **Ecosystem** | Older, more established | Newer, rapidly growing |
 
 Choose **Maven** for teams that value predictability and strict conventions. Choose **Gradle** for large monorepos needing incremental builds or when custom build logic is required.
@@ -102,16 +102,16 @@ Choose **Maven** for teams that value predictability and strict conventions. Cho
 **Answer:** Maven has three built-in lifecycles: **default** (main build), **clean** (cleanup), and **site** (documentation). The default lifecycle phases in order:
 
 ```
-validate   â†’ Project is correct and all necessary info is available
-compile    â†’ Compiles the source code
-test       â†’ Tests using a unit test framework
-package    â†’ Packages into JAR/WAR
-verify     â†’ Integration tests and quality checks
-install    â†’ Installs into local repository for use as dependency
-deploy     â†’ Copies to remote repository for sharing
+validate   → Project is correct and all necessary info is available
+compile    → Compiles the source code
+test       → Tests using a unit test framework
+package    → Packages into JAR/WAR
+verify     → Integration tests and quality checks
+install    → Installs into local repository for use as dependency
+deploy     → Copies to remote repository for sharing
 ```
 
-Each phase executes sequentially â€” `mvn package` runs validate, compile, test, and package. Plugins bind goals to lifecycle phases.
+Each phase executes sequentially — `mvn package` runs validate, compile, test, and package. Plugins bind goals to lifecycle phases.
 
 ---
 
@@ -120,7 +120,7 @@ Each phase executes sequentially â€” `mvn package` runs validate, compile, 
 
 **Answer:** Gradle tracks **inputs** and **outputs** for every task. If neither inputs nor outputs have changed since the last execution, the task is marked `UP-TO-DATE` and skipped entirely. Inputs include source files, task configuration, and system properties. Outputs include files and directories produced by the task.
 
-The **build cache** extends this across machines â€” CI can publish cache entries to a shared cache (HTTP or S3), and developer machines pull those entries instead of rebuilding.
+The **build cache** extends this across machines — CI can publish cache entries to a shared cache (HTTP or S3), and developer machines pull those entries instead of rebuilding.
 
 ---
 
@@ -143,7 +143,7 @@ The **build cache** extends this across machines â€” CI can publish cache e
 </dependencyManagement>
 ```
 
-Spring Boot provides `spring-boot-dependencies` as a BOM â€” that's why you don't specify versions for most Spring dependencies when using `spring-boot-starter-parent`.
+Spring Boot provides `spring-boot-dependencies` as a BOM — that's why you don't specify versions for most Spring dependencies when using `spring-boot-starter-parent`.
 
 ---
 
@@ -183,13 +183,13 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 **Answer:**
 
-1. **Use specific base image tags** â€” never `:latest`. Pin to specific versions.
-2. **Leverage layer caching** â€” order commands from least to most frequently changing. Copy `pom.xml` and download dependencies before source code.
-3. **Use multi-stage builds** â€” keep JDK and build tools out of runtime images.
-4. **Run as non-root user** â€” create a dedicated user: `RUN addgroup -S appgroup && adduser -S appuser -G appgroup`
-5. **Optimize JVM for containers** â€” `-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0`
-6. **Set memory limits** â€” `docker run -m 512m my-app`
-7. **Use health checks** â€” `HEALTHCHECK --interval=30s --timeout=3s CMD wget --spider http://localhost:8080/actuator/health`
+1. **Use specific base image tags** — never `:latest`. Pin to specific versions.
+2. **Leverage layer caching** — order commands from least to most frequently changing. Copy `pom.xml` and download dependencies before source code.
+3. **Use multi-stage builds** — keep JDK and build tools out of runtime images.
+4. **Run as non-root user** — create a dedicated user: `RUN addgroup -S appgroup && adduser -S appuser -G appgroup`
+5. **Optimize JVM for containers** — `-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0`
+6. **Set memory limits** — `docker run -m 512m my-app`
+7. **Use health checks** — `HEALTHCHECK --interval=30s --timeout=3s CMD wget --spider http://localhost:8080/actuator/health`
 
 ---
 
@@ -225,7 +225,7 @@ volumes:
   pgdata:
 ```
 
-Use for: local development, CI test environments, staging. Not for production â€” use Kubernetes.
+Use for: local development, CI test environments, staging. Not for production — use Kubernetes.
 
 ---
 
@@ -234,12 +234,12 @@ Use for: local development, CI test environments, staging. Not for production â
 
 **Answer:** Kubernetes (K8s) is a container orchestration platform that automates deployment, scaling, and management of containerized applications. For Java microservices, it solves:
 
-1. **Service discovery** â€” pods get DNS names and find each other via Services
-2. **Self-healing** â€” restarts failed containers, reschedules failed nodes
-3. **Horizontal scaling** â€” auto-scales pods based on CPU/memory or custom metrics
-4. **Rolling updates** â€” deploys new versions without downtime
-5. **Configuration management** â€” ConfigMaps and Secrets inject configuration
-6. **Resource management** â€” CPU/memory requests and limits per pod
+1. **Service discovery** — pods get DNS names and find each other via Services
+2. **Self-healing** — restarts failed containers, reschedules failed nodes
+3. **Horizontal scaling** — auto-scales pods based on CPU/memory or custom metrics
+4. **Rolling updates** — deploys new versions without downtime
+5. **Configuration management** — ConfigMaps and Secrets inject configuration
+6. **Resource management** — CPU/memory requests and limits per pod
 
 ```yaml
 apiVersion: apps/v1
@@ -314,7 +314,7 @@ management:
 
 This exposes `/actuator/health/liveness` (is the app alive? restart if stuck) and `/actuator/health/readiness` (can the app accept traffic? remove from Service if not).
 
-The readiness probe should include database connectivity but the liveness probe should not â€” a database being down doesn't mean the app should be killed.
+The readiness probe should include database connectivity but the liveness probe should not — a database being down doesn't mean the app should be killed.
 
 ---
 
@@ -356,7 +356,7 @@ jobs:
           tags: registry.example.com/my-app:${{ github.sha }}
 ```
 
-Stages: Checkout â†’ Compile â†’ Unit tests â†’ Integration tests â†’ Static analysis â†’ Package â†’ Docker build â†’ Push â†’ Deploy
+Stages: Checkout → Compile → Unit tests → Integration tests → Static analysis → Package → Docker build → Push → Deploy
 
 ---
 
@@ -365,9 +365,9 @@ Stages: Checkout â†’ Compile â†’ Unit tests â†’ Integration tests
 
 **Answer:**
 
-**Blue-Green:** Two identical environments (blue = current, green = new). Deploy to green, switch the router to green once verified. Rollback is instant â€” switch back to blue.
+**Blue-Green:** Two identical environments (blue = current, green = new). Deploy to green, switch the router to green once verified. Rollback is instant — switch back to blue.
 
-**Canary:** Gradually shift traffic to the new version (1% â†’ 5% â†’ 10% â†’ 50% â†’ 100%). Monitor errors at each step and rollback if needed.
+**Canary:** Gradually shift traffic to the new version (1% → 5% → 10% → 50% → 100%). Monitor errors at each step and rollback if needed.
 
 | Aspect | Blue-Green | Canary |
 |--------|-----------|--------|
@@ -483,9 +483,9 @@ Propagate via RestClient interceptor to downstream services.
 **Answer:** Health checks expose the operational status of an application so orchestrators, load balancers, and monitoring systems know whether the application can serve traffic.
 
 Three types:
-- **Liveness probe** â€” Is the app running? Restart if stuck (deadlocks, infinite loops).
-- **Readiness probe** â€” Can the app accept traffic? Remove from load balancer if not (DB down, cache warming).
-- **Startup probe** â€” Has the app initialized? Delay liveness checks for slow-starting apps.
+- **Liveness probe** — Is the app running? Restart if stuck (deadlocks, infinite loops).
+- **Readiness probe** — Can the app accept traffic? Remove from load balancer if not (DB down, cache warming).
+- **Startup probe** — Has the app initialized? Delay liveness checks for slow-starting apps.
 
 **Custom health indicator:**
 
@@ -517,9 +517,9 @@ public class ExternalApiHealthIndicator implements HealthIndicator {
 ### Q16: What Git branching strategy works best for microservices?
 
 
-**Answer:** **Trunk-based development** or **GitHub Flow** work best for microservices. Avoid Git Flow â€” it's too heavyweight for independently deployable services.
+**Answer:** **Trunk-based development** or **GitHub Flow** work best for microservices. Avoid Git Flow — it's too heavyweight for independently deployable services.
 
-**GitHub Flow:** Feature branches â†’ PR â†’ merge to main â†’ deploy immediately.
+**GitHub Flow:** Feature branches → PR → merge to main → deploy immediately.
 
 **Trunk-based:** Short-lived branches (hours), merged to main via PR. Feature flags control unfinished features:
 
@@ -590,7 +590,7 @@ spring:
 | Aspect | Flyway | Liquibase |
 |--------|--------|-----------|
 | Format | SQL files | XML, YAML, JSON, SQL |
-| Learning curve | Low â€” just write SQL | Medium â€” must learn changelog syntax |
+| Learning curve | Low — just write SQL | Medium — must learn changelog syntax |
 | Rollback | Paid version or manual scripts | Built-in rollback support |
 | Idempotent re-runs | No (checksum mismatch) | Supported with `runAlways` |
 | Complexity | Simple, straightforward | More features, more complex |
@@ -605,12 +605,12 @@ Choose Flyway for SQL-first teams that value simplicity. Choose Liquibase if you
 
 **Answer:**
 
-1. **Backward-compatible changes only** â€” add columns with `DEFAULT NULL`, never rename or drop in one deploy
-2. **Expand-Migrate-Contract pattern:** Add column â†’ Migrate data â†’ Drop old column (across 3 deploys)
-3. **Lock migration** â€” Spring Boot + Flyway acquires a lock automatically
-4. **Test against production-size data** â€” timing matters (1ms local vs 10min on 50M rows)
-5. **Never modify applied migrations** â€” creates checksum mismatch; always create new migration
-6. **Validate in CI** â€” `mvn flyway:validate`
+1. **Backward-compatible changes only** — add columns with `DEFAULT NULL`, never rename or drop in one deploy
+2. **Expand-Migrate-Contract pattern:** Add column → Migrate data → Drop old column (across 3 deploys)
+3. **Lock migration** — Spring Boot + Flyway acquires a lock automatically
+4. **Test against production-size data** — timing matters (1ms local vs 10min on 50M rows)
+5. **Never modify applied migrations** — creates checksum mismatch; always create new migration
+6. **Validate in CI** — `mvn flyway:validate`
 
 ---
 
@@ -619,18 +619,18 @@ Choose Flyway for SQL-first teams that value simplicity. Choose Liquibase if you
 
 **Answer:** Twelve-Factor App is a methodology for building SaaS applications. The 12 factors:
 
-1. **Codebase** â€” One codebase, many deploys
-2. **Dependencies** â€” Explicitly declare and isolate (Maven/Gradle + Docker)
-3. **Config** â€” Store in environment variables, not code
-4. **Backing services** â€” Treat databases, queues, caches as attached resources
-5. **Build, release, run** â€” Strictly separate stages
-6. **Processes** â€” Stateless (no sticky sessions)
-7. **Port binding** â€” Export services via port (embedded Tomcat)
-8. **Concurrency** â€” Scale out via process model
-9. **Disposability** â€” Fast startup and graceful shutdown
-10. **Dev/prod parity** â€” Keep environments similar (Docker)
-11. **Logs** â€” Treat as event streams (stdout)
-12. **Admin processes** â€” Run as one-off tasks (migrations)
+1. **Codebase** — One codebase, many deploys
+2. **Dependencies** — Explicitly declare and isolate (Maven/Gradle + Docker)
+3. **Config** — Store in environment variables, not code
+4. **Backing services** — Treat databases, queues, caches as attached resources
+5. **Build, release, run** — Strictly separate stages
+6. **Processes** — Stateless (no sticky sessions)
+7. **Port binding** — Export services via port (embedded Tomcat)
+8. **Concurrency** — Scale out via process model
+9. **Disposability** — Fast startup and graceful shutdown
+10. **Dev/prod parity** — Keep environments similar (Docker)
+11. **Logs** — Treat as event streams (stdout)
+12. **Admin processes** — Run as one-off tasks (migrations)
 
 ---
 
@@ -666,10 +666,10 @@ lifecycle:
 **Answer:** SLF4J (Simple Logging Facade for Java) decouples application code from the logging implementation. Your code logs via SLF4J API, and at deployment time you choose the backend (Logback, Log4j2, java.util.logging).
 
 Benefits:
-- **Swappable backends** â€” change logging library without touching application code
-- **Parameterized logging** â€” avoids string concatenation: `log.debug("Order {} for user {}", orderId, userId)`
-- **MDC (Mapped Diagnostic Context)** â€” thread-local map for correlation IDs
-- **Marker support** â€” filter or route log events programmatically
+- **Swappable backends** — change logging library without touching application code
+- **Parameterized logging** — avoids string concatenation: `log.debug("Order {} for user {}", orderId, userId)`
+- **MDC (Mapped Diagnostic Context)** — thread-local map for correlation IDs
+- **Marker support** — filter or route log events programmatically
 
 ---
 
@@ -678,7 +678,7 @@ Benefits:
 
 **Answer:** Use a systematic top-down approach:
 
-1. **Check dashboards** â€” CPU, memory, latency, error rate, GC activity
+1. **Check dashboards** — CPU, memory, latency, error rate, GC activity
 2. **Thread dump analysis** (high CPU, thread contention):
    ```
    jstack <pid> > threaddump.txt
@@ -691,11 +691,11 @@ Benefits:
    ```
    Use Eclipse MAT or VisualVM to analyze.
 4. **Common issues:**
-   - High CPU + RUNNABLE threads â†’ infinite loop or tight polling
-   - GC > 20% CPU â†’ too many object allocations
-   - OOM â†’ memory leak or too small heap
-   - High p99 latency â†’ GC pauses or slow external API calls
-   - Connection pool exhaustion â†’ slow queries or connection leaks
+   - High CPU + RUNNABLE threads → infinite loop or tight polling
+   - GC > 20% CPU → too many object allocations
+   - OOM → memory leak or too small heap
+   - High p99 latency → GC pauses or slow external API calls
+   - Connection pool exhaustion → slow queries or connection leaks
 
 ---
 
@@ -708,7 +708,7 @@ Benefits:
 |------|---------|
 | Performance | Measure response time and throughput under normal conditions |
 | Load | Verify system behavior under expected load |
-| Stress | Find the breaking point â€” when does it fail? |
+| Stress | Find the breaking point — when does it fail? |
 | Endurance | Stability over extended periods (detect memory leaks) |
 | Spike | Behavior with sudden traffic surges |
 | Scalability | How adding resources improves performance |
@@ -722,11 +722,11 @@ Tools: JMH (microbenchmarking), Gatling/k6 (load testing)
 
 **Answer:** Never hardcode secrets in source code or configuration files.
 
-1. **Environment variables** â€” basic, not suitable for production
-2. **Kubernetes Secrets** â€” mounted as environment variables or files
-3. **HashiCorp Vault** â€” dynamic secrets, rotation, audit logging
-4. **AWS Secrets Manager / GCP Secret Manager** â€” cloud-native
-5. **External Secrets Operator** â€” syncs secrets from providers into K8s Secrets
+1. **Environment variables** — basic, not suitable for production
+2. **Kubernetes Secrets** — mounted as environment variables or files
+3. **HashiCorp Vault** — dynamic secrets, rotation, audit logging
+4. **AWS Secrets Manager / GCP Secret Manager** — cloud-native
+5. **External Secrets Operator** — syncs secrets from providers into K8s Secrets
 
 Best practices: rotate regularly, audit access, least privilege, never log secrets.
 
@@ -798,9 +798,9 @@ Use when: 10+ services, need mTLS, canary deployments, or consistent observabili
 
 
 **Answer:**
-1. **Named volumes** â€” Docker-managed, persisted in `/var/lib/docker/volumes/`. Most portable.
-2. **Bind mounts** â€” host directory mapped into container. Useful for development (hot-reload).
-3. **tmpfs mounts** â€” stored in memory only. Suitable for sensitive temporary data.
+1. **Named volumes** — Docker-managed, persisted in `/var/lib/docker/volumes/`. Most portable.
+2. **Bind mounts** — host directory mapped into container. Useful for development (hot-reload).
+3. **tmpfs mounts** — stored in memory only. Suitable for sensitive temporary data.
 
 Use named volumes for databases, bind mounts for development, tmpfs for secrets.
 
@@ -810,9 +810,9 @@ Use named volumes for databases, bind mounts for development, tmpfs for secrets.
 
 
 **Answer:** Through Docker networks:
-- **Bridge** (default) â€” private internal network with DNS-based service discovery
-- **Host** â€” container shares host network stack (no isolation, better performance)
-- **Overlay** â€” multi-host networking (Docker Swarm, Kubernetes)
+- **Bridge** (default) — private internal network with DNS-based service discovery
+- **Host** — container shares host network stack (no isolation, better performance)
+- **Overlay** — multi-host networking (Docker Swarm, Kubernetes)
 
 In Docker Compose, services reach each other by service name (`db:5432`, `redis:6379`).
 
@@ -822,11 +822,11 @@ In Docker Compose, services reach each other by service name (`db:5432`, `redis:
 
 
 **Answer:** Stores and distributes Docker images. Common options:
-- **Docker Hub** â€” public, rate-limited for anonymous pulls
-- **GitHub Container Registry (ghcr.io)** â€” integrated with GitHub Actions
-- **AWS ECR** â€” IAM integration, VPC endpoints
-- **Azure Container Registry (ACR)** â€” geo-replication
-- **Harbor** â€” open-source, vulnerability scanning, replication
+- **Docker Hub** — public, rate-limited for anonymous pulls
+- **GitHub Container Registry (ghcr.io)** — integrated with GitHub Actions
+- **AWS ECR** — IAM integration, VPC endpoints
+- **Azure Container Registry (ACR)** — geo-replication
+- **Harbor** — open-source, vulnerability scanning, replication
 
 ---
 
@@ -920,7 +920,7 @@ Provides path-based routing, host-based routing, TLS termination, and controller
 
 **Answer:** Service = Layer 4 (TCP/UDP), stable internal endpoint for pods, simple load balancing. Ingress = Layer 7 (HTTP/S), external traffic routing, path-based, TLS termination, rate limiting.
 
-Flow: `Ingress â†’ Service â†’ Pod(s)`
+Flow: `Ingress → Service → Pod(s)`
 
 ---
 
@@ -928,8 +928,8 @@ Flow: `Ingress â†’ Service â†’ Pod(s)`
 
 
 **Answer:**
-- **Requests** â€” minimum guaranteed resources. Used for scheduling.
-- **Limits** â€” maximum allowed resources. CPU throttles, memory OOMKills.
+- **Requests** — minimum guaranteed resources. Used for scheduling.
+- **Limits** — maximum allowed resources. CPU throttles, memory OOMKills.
 
 ```yaml
 resources:
@@ -952,12 +952,12 @@ QoS classes: Guaranteed (request = limit), Burstable (request &lt; limit), BestE
 
 **Answer:** Combine multiple features:
 
-1. **Readiness probes** â€” only route traffic to healthy pods
-2. **Graceful shutdown** â€” `server.shutdown: graceful` with 30s timeout
-3. **Rolling update strategy** â€” `maxSurge: 1, maxUnavailable: 0`
-4. **preStop hook** â€” `sleep 5` to let endpoints update before shutdown
-5. **PodDisruptionBudget** â€” `minAvailable: 2` prevents voluntary disruptions
-6. **Anti-affinity** â€” spread pods across nodes
+1. **Readiness probes** — only route traffic to healthy pods
+2. **Graceful shutdown** — `server.shutdown: graceful` with 30s timeout
+3. **Rolling update strategy** — `maxSurge: 1, maxUnavailable: 0`
+4. **preStop hook** — `sleep 5` to let endpoints update before shutdown
+5. **PodDisruptionBudget** — `minAvailable: 2` prevents voluntary disruptions
+6. **Anti-affinity** — spread pods across nodes
 
 ---
 
@@ -965,8 +965,8 @@ QoS classes: Guaranteed (request = limit), Burstable (request &lt; limit), BestE
 
 
 **Answer:**
-- **Forward proxy** â€” sits between clients and the internet. Hides client IP, used for content filtering and access control. (Corporate proxy, Squid)
-- **Reverse proxy** â€” sits in front of servers. Hides server topology, provides load balancing, SSL termination, caching. (NGINX, Traefik, HAProxy)
+- **Forward proxy** — sits between clients and the internet. Hides client IP, used for content filtering and access control. (Corporate proxy, Squid)
+- **Reverse proxy** — sits in front of servers. Hides server topology, provides load balancing, SSL termination, caching. (NGINX, Traefik, HAProxy)
 
 ---
 
@@ -974,10 +974,10 @@ QoS classes: Guaranteed (request = limit), Burstable (request &lt; limit), BestE
 
 
 **Answer:** Enables asynchronous communication between services. Benefits:
-- **Decoupling** â€” services don't know each other, only the message format
-- **Resilience** â€” messages persist if consumer is down
-- **Buffering** â€” handle traffic spikes without data loss
-- **Fan-out** â€” one event triggers multiple actions
+- **Decoupling** — services don't know each other, only the message format
+- **Resilience** — messages persist if consumer is down
+- **Buffering** — handle traffic spikes without data loss
+- **Fan-out** — one event triggers multiple actions
 
 Common brokers: RabbitMQ (AMQP), Apache Kafka (event streaming, replayable), Amazon SQS/SNS (managed).
 
@@ -1025,7 +1025,7 @@ public PaymentResult paymentFallback(Order order, Throwable t) {
 ### Q43: Retry vs Circuit Breaker?
 
 
-**Answer:** Retry for transient failures (network hiccup, connection timeout). Circuit Breaker for persistent failures (service down, DB disconnected). They complement each other â€” retry first, then circuit breaker.
+**Answer:** Retry for transient failures (network hiccup, connection timeout). Circuit Breaker for persistent failures (service down, DB disconnected). They complement each other — retry first, then circuit breaker.
 
 ---
 
@@ -1033,8 +1033,8 @@ public PaymentResult paymentFallback(Order order, Throwable t) {
 
 
 **Answer:** Isolates resources so a failure in one part doesn't take down others. Two types:
-- **Thread pool isolation** â€” each service gets its own thread pool (max 10 threads for payment, max 20 for orders)
-- **Semaphore isolation** â€” limit concurrent calls without separate thread pools
+- **Thread pool isolation** — each service gets its own thread pool (max 10 threads for payment, max 20 for orders)
+- **Semaphore isolation** — limit concurrent calls without separate thread pools
 
 ```java
 @Bulkhead(name = "paymentBulkhead", type = Bulkhead.Type.THREADPOOL)
@@ -1049,9 +1049,9 @@ public PaymentResult processPayment(Order order) {
 
 
 **Answer:** Three pillars:
-1. **Logging** â€” structured JSON with correlation IDs. Centralized in Elasticsearch/Loki.
-2. **Metrics** â€” Prometheus + Micrometer. Request rates, error rates, latency, JVM stats.
-3. **Tracing** â€” Micrometer Tracing + OpenTelemetry + Jaeger/Tempo. Distributed traces across services.
+1. **Logging** — structured JSON with correlation IDs. Centralized in Elasticsearch/Loki.
+2. **Metrics** — Prometheus + Micrometer. Request rates, error rates, latency, JVM stats.
+3. **Tracing** — Micrometer Tracing + OpenTelemetry + Jaeger/Tempo. Distributed traces across services.
 
 Spring Boot 3.x setup:
 
@@ -1077,7 +1077,7 @@ management:
 
 **Answer:** Prometheus is a time-series monitoring system that scrapes metrics from instrumented applications. Spring Boot exposes `/actuator/prometheus` via Micrometer. PromQL queries metrics for dashboards and alerts.
 
-Workflow: `Spring Boot â†’ /actuator/prometheus â†’ Prometheus (scrape) â†’ Grafana (visualize)`
+Workflow: `Spring Boot → /actuator/prometheus → Prometheus (scrape) → Grafana (visualize)`
 
 ---
 
@@ -1091,7 +1091,7 @@ Workflow: `Spring Boot â†’ /actuator/prometheus â†’ Prometheus (scrape
 ### Q48: APM vs traditional monitoring?
 
 
-**Answer:** APM provides code-level visibility â€” method-level profiling, distributed traces, transaction breakdowns. Traditional monitoring shows infrastructure metrics (CPU, memory, disk). APM answers "why was this request slow?" with a detailed breakdown.
+**Answer:** APM provides code-level visibility — method-level profiling, distributed traces, transaction breakdowns. Traditional monitoring shows infrastructure metrics (CPU, memory, disk). APM answers "why was this request slow?" with a detailed breakdown.
 
 ---
 
@@ -1106,10 +1106,10 @@ Workflow: `Spring Boot â†’ /actuator/prometheus â†’ Prometheus (scrape
 
 
 **Answer:**
-- **ERROR** â€” needs immediate attention (data loss, service unreachable)
-- **WARN** â€” unexpected but recovered gracefully (rate limited, used cache)
-- **INFO** â€” important business events (order created, payment processed)
-- **DEBUG** â€” detailed diagnostics (off in production normally)
+- **ERROR** — needs immediate attention (data loss, service unreachable)
+- **WARN** — unexpected but recovered gracefully (rate limited, used cache)
+- **INFO** — important business events (order created, payment processed)
+- **DEBUG** — detailed diagnostics (off in production normally)
 
 Never log sensitive data. Include context (orderId, userId). Use dynamic level changes via Actuator without restart.
 
@@ -1120,7 +1120,7 @@ Never log sensitive data. Include context (orderId, userId). Use dynamic level c
 
 **Answer:** Implement `HealthIndicator` for each dependency. Spring Boot auto-configures DataSource, Redis, Mongo, RabbitMQ, Kafka health checks. Add custom ones for external APIs.
 
-Group health by purpose â€” readiness checks include external dependencies, liveness checks should be minimal (just the app process).
+Group health by purpose — readiness checks include external dependencies, liveness checks should be minimal (just the app process).
 
 ---
 
@@ -1309,10 +1309,10 @@ Use `.dockerignore` to exclude unnecessary files (`.git`, `target/`, `node_modul
 
 
 **Answer:**
-1. **Spring profiles** â€” `application-dev.yml`, `application-prod.yml`
-2. **Kubernetes ConfigMaps/Secrets** â€” per-environment with Kustomize overlays or Helm value files
-3. **External config servers** â€” Spring Cloud Config, Vault
-4. **Environment variables** â€” deployment-specific settings (DB URLs, API keys)
+1. **Spring profiles** — `application-dev.yml`, `application-prod.yml`
+2. **Kubernetes ConfigMaps/Secrets** — per-environment with Kustomize overlays or Helm value files
+3. **External config servers** — Spring Cloud Config, Vault
+4. **Environment variables** — deployment-specific settings (DB URLs, API keys)
 
 ```yaml
 # application.yml
@@ -1334,7 +1334,7 @@ spring.datasource.url: ${DB_URL}
 
 **Answer:** ELK = Elasticsearch (storage/search) + Logstash (ingestion/transformation) + Kibana (visualization). EFK replaces Logstash with Fluentd (lighter, Kubernetes-native).
 
-Services emit JSON logs to stdout â†’ Fluentd collects â†’ ships to Elasticsearch â†’ Kibana provides search and dashboards.
+Services emit JSON logs to stdout → Fluentd collects → ships to Elasticsearch → Kibana provides search and dashboards.
 
 ---
 
@@ -1353,9 +1353,9 @@ Both are essential for observability in microservices.
 
 
 **Answer:** Don't store on pod filesystem (ephemeral). Options:
-1. **Cloud storage** â€” AWS S3, GCS, Azure Blob (preferred)
-2. **Persistent Volume Claim** â€” shared filesystem with ReadWriteMany access mode
-3. **MinIO** â€” self-hosted S3-compatible object storage
+1. **Cloud storage** — AWS S3, GCS, Azure Blob (preferred)
+2. **Persistent Volume Claim** — shared filesystem with ReadWriteMany access mode
+3. **MinIO** — self-hosted S3-compatible object storage
 
 ---
 
@@ -1383,7 +1383,7 @@ spec:
 
 **Answer:** Beyond basic container orchestration, Docker Compose provides several advanced features for robust multi-container setups.
 
-**depends_on with healthcheck conditions** â€” wait for a service to be healthy before starting:
+**depends_on with healthcheck conditions** — wait for a service to be healthy before starting:
 
 ```yaml
 services:
@@ -1405,7 +1405,7 @@ services:
     image: redis:7-alpine
 ```
 
-**Profiles** â€” conditionally enable services:
+**Profiles** — conditionally enable services:
 
 ```yaml
 services:
@@ -1423,7 +1423,7 @@ services:
 
 Run with `docker compose --profile dev up` to include only app, db, and mailhog.
 
-**Extends** â€” share common configuration:
+**Extends** — share common configuration:
 
 ```yaml
 # base.yml
@@ -1483,15 +1483,15 @@ networks:
 
 **Answer:** A well-optimized Dockerfile builds faster, produces smaller images, and is more secure.
 
-**COPY vs ADD:** Prefer COPY â€” it's explicit about only copying local files. ADD has extra magic (tar auto-extraction, URL download) that can be surprising:
+**COPY vs ADD:** Prefer COPY — it's explicit about only copying local files. ADD has extra magic (tar auto-extraction, URL download) that can be surprising:
 
 ```dockerfile
-# COPY â€” simple, predictable
+# COPY — simple, predictable
 
 > **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 COPY --from=builder /app/target/*.jar app.jar
 
-# ADD â€” auto-extracts tar archives
+# ADD — auto-extracts tar archives
 
 > **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 ADD build.tar.gz /app/
@@ -1502,7 +1502,7 @@ ADD build.tar.gz /app/
 ADD jre.tar.gz /opt/java/
 ```
 
-**.dockerignore â€” essential for build context size:**
+**.dockerignore — essential for build context size:**
 
 ```
 .git
@@ -1516,7 +1516,7 @@ docker-compose*.yml
 *.iml
 ```
 
-**Layer cache ordering â€” most stable first:**
+**Layer cache ordering — most stable first:**
 
 ```dockerfile
 # 1. Base image (rarely changes)
@@ -1540,14 +1540,14 @@ COPY src/main/resources/application.yml ./src/main/resources/
 > **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 RUN mvn dependency:go-offline -q
 
-# 5. Copy source (changes most often â€” last)
+# 5. Copy source (changes most often — last)
 
 > **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 COPY src src/
 RUN mvn package -DskipTests
 ```
 
-**Multi-stage build optimization â€” slim final image:**
+**Multi-stage build optimization — slim final image:**
 
 ```dockerfile
 # Stage 1: full JDK for compilation
@@ -1591,7 +1591,7 @@ This reduces image size from ~200MB to ~50MB by using only the JVM modules neede
 
 **Answer:** Kubernetes stateful workloads need persistent storage that survives pod restarts.
 
-**PersistentVolume (PV)** â€” cluster storage resource provisioned by an admin:
+**PersistentVolume (PV)** — cluster storage resource provisioned by an admin:
 
 ```yaml
 apiVersion: v1
@@ -1610,7 +1610,7 @@ spec:
     path: /mnt/data/postgres
 ```
 
-**PersistentVolumeClaim (PVC)** â€” request for storage by a user/pod:
+**PersistentVolumeClaim (PVC)** — request for storage by a user/pod:
 
 ```yaml
 apiVersion: v1
@@ -1656,7 +1656,7 @@ spec:
           claimName: postgres-pvc
 ```
 
-**StorageClasses** â€” dynamic provisioning. Instead of pre-creating PVs, define a StorageClass and the cluster provisions PVs automatically:
+**StorageClasses** — dynamic provisioning. Instead of pre-creating PVs, define a StorageClass and the cluster provisions PVs automatically:
 
 ```yaml
 apiVersion: storage.k8s.io/v1
@@ -1689,9 +1689,9 @@ spec:
 ```
 
 **Access Modes:**
-- `ReadWriteOnce` (RWO) â€” single node read-write (databases)
-- `ReadOnlyMany` (ROX) â€” many nodes read-only
-- `ReadWriteMany` (RWX) â€” many nodes read-write (shared filesystems, requires NFS/Ceph)
+- `ReadWriteOnce` (RWO) — single node read-write (databases)
+- `ReadOnlyMany` (ROX) — many nodes read-only
+- `ReadWriteMany` (RWX) — many nodes read-write (shared filesystems, requires NFS/Ceph)
 
 **Reclaim Policies:** Retain (manual cleanup), Delete (auto-delete on PVC removal), Recycle (deprecated).
 
@@ -1706,15 +1706,15 @@ spec:
 
 ```
 order-service/
-â”œâ”€â”€ Chart.yaml          # metadata, dependencies
-â”œâ”€â”€ values.yaml         # default values
-â”œâ”€â”€ templates/
-â”‚   â”œâ”€â”€ deployment.yaml
-â”‚   â”œâ”€â”€ service.yaml
-â”‚   â”œâ”€â”€ ingress.yaml
-â”‚   â”œâ”€â”€ _helpers.tpl    # reusable template snippets
-â”‚   â””â”€â”€ configmap.yaml
-â””â”€â”€ charts/             # dependencies (extracted)
+├── Chart.yaml          # metadata, dependencies
+├── values.yaml         # default values
+├── templates/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── ingress.yaml
+│   ├── _helpers.tpl    # reusable template snippets
+│   └── configmap.yaml
+└── charts/             # dependencies (extracted)
 ```
 
 **Templating with Go templates:**
@@ -1780,7 +1780,7 @@ app.kubernetes.io/version: {{ .Chart.AppVersion }}
 {{- end }}
 ```
 
-**Hooks** â€” run jobs at specific lifecycle points:
+**Hooks** — run jobs at specific lifecycle points:
 
 ```yaml
 # templates/migrate-job.yaml
@@ -1856,7 +1856,7 @@ helm template order-service ./order-service -f prod-values.yaml
 
 **Answer:** RBAC controls who can access what Kubernetes resources. It's the primary authorization mechanism.
 
-**Role** â€” namespace-scoped permissions:
+**Role** — namespace-scoped permissions:
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -1873,7 +1873,7 @@ rules:
   verbs: ["create"]
 ```
 
-**RoleBinding** â€” binds a Role to users, groups, or ServiceAccounts within the namespace:
+**RoleBinding** — binds a Role to users, groups, or ServiceAccounts within the namespace:
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -1894,7 +1894,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-**ClusterRole** â€” cluster-scoped (nodes, PVs, namespaces) or accessible across all namespaces:
+**ClusterRole** — cluster-scoped (nodes, PVs, namespaces) or accessible across all namespaces:
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -1909,7 +1909,7 @@ rules:
   verbs: ["get"]
 ```
 
-**ClusterRoleBinding** â€” binds ClusterRole across the entire cluster:
+**ClusterRoleBinding** — binds ClusterRole across the entire cluster:
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -1926,7 +1926,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-**ServiceAccount** â€” identity for pods to authenticate with the API:
+**ServiceAccount** — identity for pods to authenticate with the API:
 
 ```yaml
 apiVersion: v1
@@ -1955,7 +1955,7 @@ spec:
     image: my-app
 ```
 
-**Aggregated ClusterRoles** â€” compose permissions from multiple rules:
+**Aggregated ClusterRoles** — compose permissions from multiple rules:
 
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
@@ -1970,7 +1970,7 @@ rules: []
 ```
 
 **Best practices:**
-- Use least privilege â€” never grant wildcards unless absolutely necessary
+- Use least privilege — never grant wildcards unless absolutely necessary
 - Prefer Roles over ClusterRoles where possible
 - Create unique ServiceAccounts per application (don't use `default`)
 - Rotate tokens regularly
@@ -1983,7 +1983,7 @@ rules: []
 
 **Answer:** Network policies control pod-to-pod communication. Pod Security Admission (PSA) restricts pod security contexts.
 
-**NetworkPolicy** â€” firewall rules for pods, selecting by labels:
+**NetworkPolicy** — firewall rules for pods, selecting by labels:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -2045,12 +2045,12 @@ spec:
   - Egress
 ```
 
-**Pod Security Admission (PSA)** â€” built-in admission controller replacing PodSecurityPolicy (deprecated in 1.25, removed in 1.25):
+**Pod Security Admission (PSA)** — built-in admission controller replacing PodSecurityPolicy (deprecated in 1.25, removed in 1.25):
 
 Three levels:
-- **Privileged** â€” unrestricted (system-critical pods)
-- **Baseline** â€” minimal restrictions (prevent known privilege escalations)
-- **Restricted** â€” hardened (current best practices)
+- **Privileged** — unrestricted (system-critical pods)
+- **Baseline** — minimal restrictions (prevent known privilege escalations)
+- **Restricted** — hardened (current best practices)
 
 Enforce via namespace labels:
 
@@ -2101,7 +2101,7 @@ spec:
 
 **Answer:** A production Kubernetes monitoring stack has three layers: resource metrics, cluster state metrics, and application metrics.
 
-**metrics-server** â€” lightweight cluster-wide resource usage aggregator:
+**metrics-server** — lightweight cluster-wide resource usage aggregator:
 
 ```bash
 # Install via kubectl
@@ -2118,7 +2118,7 @@ kubectl top nodes
 
 Outputs CPU and memory per pod/node. Required for HorizontalPodAutoscaler (HPA).
 
-**Prometheus operator** â€” deploys and manages Prometheus instances declaratively:
+**Prometheus operator** — deploys and manages Prometheus instances declaratively:
 
 ```yaml
 # ServiceMonitor telling Prometheus what to scrape
@@ -2161,7 +2161,7 @@ spec:
   retention: 30d
 ```
 
-**kube-state-metrics** â€” exposes cluster state metrics (deployment replicas, pod status, PVC usage):
+**kube-state-metrics** — exposes cluster state metrics (deployment replicas, pod status, PVC usage):
 
 ```yaml
 apiVersion: apps/v1
@@ -2193,7 +2193,7 @@ Key metrics exposed:
 - `kube_node_status_condition`
 - `kube_persistentvolumeclaim_resource_requests_storage_bytes`
 
-**node-exporter** â€” host-level metrics (CPU, memory, disk, network):
+**node-exporter** — host-level metrics (CPU, memory, disk, network):
 
 ```yaml
 apiVersion: apps/v1
@@ -2237,9 +2237,9 @@ spec:
 ```
 
 **Grafana dashboards:**
-- ID 315 â€” Kubernetes cluster monitoring (via Prometheus)
-- ID 10280 â€” Spring Boot / JVM (Micrometer)
-- ID 1860 â€” Node Exporter full
+- ID 315 — Kubernetes cluster monitoring (via Prometheus)
+- ID 10280 — Spring Boot / JVM (Micrometer)
+- ID 1860 — Node Exporter full
 
 **HorizontalPodAutoscaler using resource metrics:**
 
@@ -2277,7 +2277,7 @@ spec:
 
 **Answer:** GitHub Actions provides two mechanisms for sharing workflow logic across repositories or jobs.
 
-**Reusable workflows** â€” call one workflow from another. Define with `on: workflow_call`:
+**Reusable workflows** — call one workflow from another. Define with `on: workflow_call`:
 
 ```yaml
 # .github/workflows/build-java.yml (called workflow)
@@ -2351,7 +2351,7 @@ jobs:
       java-version: "17"
 ```
 
-**Composite actions** â€” bundle multiple steps into a single action for reuse within a job:
+**Composite actions** — bundle multiple steps into a single action for reuse within a job:
 
 ```yaml
 # .github/actions/setup-java-cache/action.yml
@@ -2401,7 +2401,7 @@ jobs:
     - run: mvn verify -B
 ```
 
-**Environment protection rules** â€” restrict deployments to specific environments:
+**Environment protection rules** — restrict deployments to specific environments:
 
 ```yaml
 name: Deploy
@@ -2417,7 +2417,7 @@ jobs:
     - run: echo "Deploying to production"
 ```
 
-Configure environment protection in repository Settings â†’ Environments:
+Configure environment protection in repository Settings → Environments:
 - Required reviewers (one or more people must approve)
 - Wait timer (delay before deployment)
 - Deployment branches (limit to specific branch patterns)
@@ -2430,7 +2430,7 @@ Configure environment protection in repository Settings â†’ Environments:
 
 **Answer:** ArgoCD is a declarative GitOps tool that continuously synchronizes Kubernetes cluster state with manifests stored in Git.
 
-**Application** â€” the core resource linking a Git repo to a cluster:
+**Application** — the core resource linking a Git repo to a cluster:
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
@@ -2468,7 +2468,7 @@ spec:
         maxDuration: 3m
 ```
 
-**Sync waves** â€” control the order of resource application:
+**Sync waves** — control the order of resource application:
 
 ```yaml
 # 1. Namespace and ConfigMaps first (wave -5)
@@ -2535,7 +2535,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "5"
 ```
 
-**ApplicationSet** â€” generate Applications dynamically from templates:
+**ApplicationSet** — generate Applications dynamically from templates:
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
@@ -2573,23 +2573,23 @@ Other generators: `list`, `cluster`, `matrix`, `merge`, `pull-request` (ephemera
 **Sync phases and hooks:**
 
 ```
-â—€â”€â”€â”€ PreSync (db migration, schema validation) â”€â”€â”€â–¶ Sync (apply manifests) â”€â”€â”€â–¶ PostSync (smoke tests, notifications)
+◀─── PreSync (db migration, schema validation) ───▶ Sync (apply manifests) ───▶ PostSync (smoke tests, notifications)
 ```
 
 Hook types: PreSync, Sync, PostSync, Skip, SyncFail.
 
 **Sync options explained:**
-- `Prune=true` â€” delete resources removed from Git
-- `SelfHeal=true` â€” auto-correct manual changes to match Git
-- `CreateNamespace=true` â€” auto-create destination namespace
-- `PruneLast=true` â€” prune only after all sync waves succeed
+- `Prune=true` — delete resources removed from Git
+- `SelfHeal=true` — auto-correct manual changes to match Git
+- `CreateNamespace=true` — auto-create destination namespace
+- `PruneLast=true` — prune only after all sync waves succeed
 
 ---
 
 ### Q80: Terraform IaC (state, providers, modules, workspaces, remote state)?
 
 
-**Answer:** Terraform manages infrastructure as code â€” define resources, plan changes, apply to cloud providers.
+**Answer:** Terraform manages infrastructure as code — define resources, plan changes, apply to cloud providers.
 
 **Basic Terraform with AWS provider:**
 
@@ -2657,7 +2657,7 @@ output "db_arn" {
 }
 ```
 
-**Terraform state** â€” maps resource declarations to real-world resources:
+**Terraform state** — maps resource declarations to real-world resources:
 
 ```bash
 # State is stored locally in terraform.tfstate by default
@@ -2666,7 +2666,7 @@ output "db_arn" {
 terraform apply
 ```
 
-**Remote state** â€” store state in a shared backend for team collaboration:
+**Remote state** — store state in a shared backend for team collaboration:
 
 ```hcl
 terraform {
@@ -2680,9 +2680,9 @@ terraform {
 }
 ```
 
-The DynamoDB table enables state locking â€” prevents concurrent applies.
+The DynamoDB table enables state locking — prevents concurrent applies.
 
-**Modules** â€” reusable infrastructure components:
+**Modules** — reusable infrastructure components:
 
 ```hcl
 # modules/rds-postgres/main.tf
@@ -2736,7 +2736,7 @@ module "orders_db" {
 }
 ```
 
-**Workspaces** â€” manage multiple environments with the same configuration:
+**Workspaces** — manage multiple environments with the same configuration:
 
 ```bash
 # Create workspaces
@@ -2813,7 +2813,7 @@ terraform destroy -var-file=production.tfvars
 
 **Answer:** Application Performance Monitoring (APM) tools provide code-level observability: distributed tracing, error tracking, transaction breakdowns, and profiling.
 
-**Sentry** â€” focused on error tracking and performance:
+**Sentry** — focused on error tracking and performance:
 
 ```xml
 <!-- pom.xml -->
@@ -2857,7 +2857,7 @@ try {
 
 Sentry excels at attaching breadcrumbs (user events, HTTP requests, DB queries leading to an error) and grouping similar errors into issues. Performance monitoring includes distributed tracing and profiling.
 
-**DataDog** â€” full-stack observability platform:
+**DataDog** — full-stack observability platform:
 
 ```xml
 <dependency>
@@ -2883,9 +2883,9 @@ DataDog automatically instruments Spring Boot (controllers, RestTemplate, JDBC, 
 - **Distributed tracing** with flame graphs and service maps
 - **Logs** with automatic correlation to traces (`dd.trace_id`, `dd.span_id` in MDC)
 - **Metrics** from Micrometer automatically submitted
-- **Profiling** â€” method-level CPU, memory allocation, and wall-clock profiling
-- **Synthetics** â€” synthetic browser and API tests
-- **Watchdog** â€” ML-based anomaly detection
+- **Profiling** — method-level CPU, memory allocation, and wall-clock profiling
+- **Synthetics** — synthetic browser and API tests
+- **Watchdog** — ML-based anomaly detection
 
 ```yaml
 # logback-spring.xml with DataDog trace injection
@@ -2902,7 +2902,7 @@ DataDog automatically instruments Spring Boot (controllers, RestTemplate, JDBC, 
 </configuration>
 ```
 
-**NewRelic** â€” agent-based APM with deep transaction insights:
+**NewRelic** — agent-based APM with deep transaction insights:
 
 ```bash
 java -javaagent:newrelic-agent.jar \
@@ -2927,11 +2927,11 @@ slow_sql:
 ```
 
 NewRelic highlights:
-- **Transaction traces** â€” detailed per-request breakdowns with SQL, external calls, and method timings
-- **Apdex** â€” user satisfaction score based on configurable response time thresholds
+- **Transaction traces** — detailed per-request breakdowns with SQL, external calls, and method timings
+- **Apdex** — user satisfaction score based on configurable response time thresholds
 - **Distributed tracing** with cross-service correlations
-- **Infrastructure monitoring** â€” server, container, and cloud integration
-- **AI monitoring** â€” LLM prompt/response tracking
+- **Infrastructure monitoring** — server, container, and cloud integration
+- **AI monitoring** — LLM prompt/response tracking
 
 **Comparison:**
 
@@ -2960,7 +2960,7 @@ NewRelic highlights:
 
 **Answer:** Database administration and query tools are essential for Java developers working with databases.
 
-**pgAdmin** â€” open-source PostgreSQL admin:
+**pgAdmin** — open-source PostgreSQL admin:
 
 ```bash
 # Docker Compose for local pgAdmin + Postgres
@@ -2998,25 +2998,25 @@ volumes:
 
 pgAdmin features: SQL query editor with syntax highlighting, ERD diagram viewer, server group organization, backup/restore wizard, auto-vacuum monitoring, query plan visualization, and role management.
 
-**DBeaver** â€” universal database tool (supports 80+ databases):
+**DBeaver** — universal database tool (supports 80+ databases):
 
 ```
 Key features for Java developers:
-â”œâ”€â”€ Universal driver management (JDBC-based)
-â”œâ”€â”€ Connection profiles (Spring Boot datasource auto-detect)
-â”œâ”€â”€ ER diagrams (reverse engineer schema)
-â”œâ”€â”€ SQL editor with autocomplete and formatting
-â”œâ”€â”€ Data export (CSV, JSON, Excel, SQL insert)
-â”œâ”€â”€ SSH tunneling for remote databases
-â”œâ”€â”€ Compare (schema diff, data diff)
-â”œâ”€â”€ Metadata browser (tables, views, procedures, indexes)
-â”œâ”€â”€ Execution plan viewer
-â””â”€â”€ Version control integration (Git, SVN)
+├── Universal driver management (JDBC-based)
+├── Connection profiles (Spring Boot datasource auto-detect)
+├── ER diagrams (reverse engineer schema)
+├── SQL editor with autocomplete and formatting
+├── Data export (CSV, JSON, Excel, SQL insert)
+├── SSH tunneling for remote databases
+├── Compare (schema diff, data diff)
+├── Metadata browser (tables, views, procedures, indexes)
+├── Execution plan viewer
+└── Version control integration (Git, SVN)
 ```
 
 DBeaver Community Edition is free. DBeaver Pro adds Redis, MongoDB, Cassandra, and NoSQL support.
 
-**DataGrip** â€” JetBrains IDE for databases:
+**DataGrip** — JetBrains IDE for databases:
 
 ```sql
 -- Smart code completion
@@ -3035,12 +3035,12 @@ ORDER BY o.total DESC;
 
 DataGrip integrates with IntelliJ IDEA Ultimate, sharing credentials and connection settings. Features: context-aware completion, full-text search across all database objects, diagram visualization, SQL file versioning, SSH/SSL tunneling, and read-only mode for production.
 
-**MySQL Workbench** â€” official MySQL GUI:
+**MySQL Workbench** — official MySQL GUI:
 
 ```sql
 -- Workbench provides visual schema designer
--- Forward engineer: model â†’ DDL script â†’ database
--- Reverse engineer: database â†’ ER diagram â†’ model
+-- Forward engineer: model → DDL script → database
+-- Reverse engineer: database → ER diagram → model
 
 -- Performance dashboard: real-time query monitoring
 SHOW FULL PROCESSLIST;
@@ -3083,7 +3083,7 @@ spring:
 For DataGrip/DBeaver, use the same JDBC URL and credentials. For Docker Compose scenarios, connect clients to `localhost:5432` with the same credentials defined in `docker-compose.yml`.
 
 **Best practices:**
-- Never use GUI tools for production schema changes â€” use Flyway/Liquibase migrations
+- Never use GUI tools for production schema changes — use Flyway/Liquibase migrations
 - Use read-only roles for production access
 - Use SSH tunnels for secure remote connections
 - Enable connection pooling (HikariCP in application, connection manager in GUI tool)

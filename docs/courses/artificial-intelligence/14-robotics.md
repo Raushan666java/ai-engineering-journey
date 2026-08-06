@@ -1,4 +1,4 @@
-﻿# Chapter 14: Robotics
+# Chapter 14: Robotics
 
 **Previous:** [Chapter 13: Computer Vision](13-computer-vision.md) | **Next:** [Chapter 15: Ethics of AI](15-ethics-ai.md)
 
@@ -29,9 +29,9 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## Why Robotics Matters
 
-Imagine your **own arm** reaching for a glass of water. Your eyes (sensors) see the glass. Your brain (controller) estimates its position, plans a trajectory, and sends signals through your nervous system (communication bus). Your muscles (actuators) contract to move your arm. Your sense of touch (proprioception) confirms you've grasped it. If someone bumps you, your arm automatically compensates â€” that's a **feedback control loop** running at subconscious speed.
+Imagine your **own arm** reaching for a glass of water. Your eyes (sensors) see the glass. Your brain (controller) estimates its position, plans a trajectory, and sends signals through your nervous system (communication bus). Your muscles (actuators) contract to move your arm. Your sense of touch (proprioception) confirms you've grasped it. If someone bumps you, your arm automatically compensates — that's a **feedback control loop** running at subconscious speed.
 
-A robot is the same architecture built from silicon and steel. Sensors collect data, a control loop estimates state and plans actions, actuators execute motion, and the cycle repeats hundreds of times per second. Every autonomous system â€” from a Roomba vacuuming your floor to a self-driving car navigating highways â€” runs this **sense-plan-act** loop. Robotics is where AI meets the physical world, and understanding it is essential for any engineer building systems that move.
+A robot is the same architecture built from silicon and steel. Sensors collect data, a control loop estimates state and plans actions, actuators execute motion, and the cycle repeats hundreds of times per second. Every autonomous system — from a Roomba vacuuming your floor to a self-driving car navigating highways — runs this **sense-plan-act** loop. Robotics is where AI meets the physical world, and understanding it is essential for any engineer building systems that move.
 
 ---
 
@@ -94,9 +94,9 @@ Every robotic system follows a cyclic pipeline:
 2. **Process:** Filter noise, extract features, estimate state (pose, velocity).
 3. **Plan:** Decide what action to take (path to follow, joint to move).
 4. **Act:** Send commands to actuators (motor PWM, gripper close).
-5. **Repeat:** Loop back to Sense, typically at 10â€“1000 Hz.
+5. **Repeat:** Loop back to Sense, typically at 10–1000 Hz.
 
-### 14.1.2 Algorithm â€” Sense-Plan-Act Loop
+### 14.1.2 Algorithm — Sense-Plan-Act Loop
 
 
 ```
@@ -106,33 +106,33 @@ Output: actuator_commands (motor/throttle/gripper signals)
 1.  INITIALIZE robot state s = (x, y, theta, velocity)
 2.  INITIALIZE control parameters (PID gains, planning horizon)
 3.  while RUNNING do
-4.      raw_data â† READ_ALL_SENSORS()
-5.      filtered_data â† APPLY_FILTER(raw_data)   // e.g., median, Kalman
-6.      s â† ESTIMATE_STATE(filtered_data, s)     // update belief
-7.      goal â† GET_CURRENT_GOAL()                // target pose or task
-8.      path â† PLAN_PATH(s, goal)                // e.g., RRT, A*
-9.      control_signal â† COMPUTE_CONTROL(s, path) // e.g., PID
+4.      raw_data ← READ_ALL_SENSORS()
+5.      filtered_data ← APPLY_FILTER(raw_data)   // e.g., median, Kalman
+6.      s ← ESTIMATE_STATE(filtered_data, s)     // update belief
+7.      goal ← GET_CURRENT_GOAL()                // target pose or task
+8.      path ← PLAN_PATH(s, goal)                // e.g., RRT, A*
+9.      control_signal ← COMPUTE_CONTROL(s, path) // e.g., PID
 10.     SEND_ACTUATOR_COMMANDS(control_signal)
 11.     WAIT(TIMESTEP)                           // maintain loop rate
 12. end while
 ```
 
-### 14.1.3 Dry Run â€” Sense-Plan-Act for a Line-Following Robot
+### 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot
 
 
 **Scenario:** Robot follows a black line on a white surface. Goal: stay centered.
 
 | Step | State (x, error) | Sensor Raw | Filtered | Plan | Act |
 |------|------------------|------------|----------|------|-----|
-| Init | (0, 0) | â€” | â€” | â€” | â€” |
-| t=1 | (0, +15 px) | 8 IR readings [0,0,1,1,1,1,0,0] | line offset = +15px | turn left 10Â° | left motor PWM=150, right=200 |
-| t=2 | (0.5, +5 px) | [0,1,1,1,1,1,1,0] | offset = +5px | slight left 3Â° | left=180, right=200 |
-| t=3 | (1.0, âˆ’2 px) | [0,0,1,1,1,1,0,0] | offset = âˆ’2px | slight right 2Â° | left=200, right=190 |
+| Init | (0, 0) | — | — | — | — |
+| t=1 | (0, +15 px) | 8 IR readings [0,0,1,1,1,1,0,0] | line offset = +15px | turn left 10° | left motor PWM=150, right=200 |
+| t=2 | (0.5, +5 px) | [0,1,1,1,1,1,1,0] | offset = +5px | slight left 3° | left=180, right=200 |
+| t=3 | (1.0, −2 px) | [0,0,1,1,1,1,0,0] | offset = −2px | slight right 2° | left=200, right=190 |
 | t=4 | (1.5, 0 px) | [0,0,1,1,1,1,0,0] | offset = 0px | straight | left=200, right=200 |
 
-**Observation:** At t=1, error is large â†’ aggressive correction. By t=4, the steady-state error approaches zero. PID gains determine how quickly the robot converges without overshooting.
+**Observation:** At t=1, error is large → aggressive correction. By t=4, the steady-state error approaches zero. PID gains determine how quickly the robot converges without overshooting.
 
-### 14.1.4 Python â€” Sense-Plan-Act Loop
+### 14.1.4 Python — Sense-Plan-Act Loop
 
 
 ```python
@@ -182,10 +182,10 @@ def sense_plan_act_loop(runtime: float = 5.0, dt: float = 0.1):
         raw = sensors.read_all()
         ir_center = raw["ir"][3] - raw["ir"][4]  # line offset estimate
 
-        # Plan â€” compute heading error
+        # Plan — compute heading error
         heading_error = goal_heading - state.theta + ir_center * 0.1
 
-        # Act â€” compute motor correction
+        # Act — compute motor correction
         correction = controller.compute(heading_error, dt)
         left_pwm = 150 - int(correction)
         right_pwm = 150 + int(correction)
@@ -208,13 +208,13 @@ if __name__ == "__main__":
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Sensor read | O(S) where S = sensor count | O(S) | Each sensor produces one reading; S is typically 5â€“20 |
-| Kalman prediction | O(nÂ²) for n-D state | O(nÂ²) | Covariance matrix multiplication dominates |
+| Sensor read | O(S) where S = sensor count | O(S) | Each sensor produces one reading; S is typically 5–20 |
+| Kalman prediction | O(n²) for n-D state | O(n²) | Covariance matrix multiplication dominates |
 | Path planning (RRT) | O(K log N) for K iterations, N tree nodes | O(N) | Nearest-neighbor search in KD-tree |
 | PID control law | O(1) | O(1) | Simple arithmetic; no state beyond integral/derivative |
 | Actuator write | O(A) where A = actuator count | O(A) | One command per actuator channel |
 
-**Why O(nÂ²) for Kalman?** The covariance matrix P is nÃ—n; the prediction step performs P = F P Fáµ€ + Q, which is two matrix multiplications of O(nÂ³) naively, but optimized BLAS routines bring it to O(nÂ²Â·â¸). For SLAM with thousands of landmarks, nÂ² becomes prohibitive â€” that's why GraphSLAM uses sparse solvers.
+**Why O(n²) for Kalman?** The covariance matrix P is n×n; the prediction step performs P = F P Fᵀ + Q, which is two matrix multiplications of O(n³) naively, but optimized BLAS routines bring it to O(n²·⁸). For SLAM with thousands of landmarks, n² becomes prohibitive — that's why GraphSLAM uses sparse solvers.
 
 ### 14.1.6 Advantages & Disadvantages
 
@@ -245,14 +245,14 @@ Robots are classified by their morphology, mobility, and application domain. The
 
 | Type | Example | DOF | Mobility | Environment | Key Challenge |
 |------|---------|:---:|:--------:|-------------|---------------|
-| **Manipulator** (industrial arm) | KUKA KR 6, Fanuc R-2000iB | 6â€“7 | Fixed base | Factory floor | Precision, payload, cycle time |
-| **Mobile (wheeled)** | Roomba, TurtleBot, Clearpath Jackal | 2â€“3 | 2D planar | Indoor/outdoor | Odometry drift, slip |
-| **Mobile (legged)** | Spot, Atlas, ANYmal | 12â€“20+ | Rough terrain | Unstructured | Balance, gait generation |
+| **Manipulator** (industrial arm) | KUKA KR 6, Fanuc R-2000iB | 6–7 | Fixed base | Factory floor | Precision, payload, cycle time |
+| **Mobile (wheeled)** | Roomba, TurtleBot, Clearpath Jackal | 2–3 | 2D planar | Indoor/outdoor | Odometry drift, slip |
+| **Mobile (legged)** | Spot, Atlas, ANYmal | 12–20+ | Rough terrain | Unstructured | Balance, gait generation |
 | **Aerial (UAV)** | DJI Phantom, Crazyflie, PX4-based | 4 (quad) | 3D flight | Open air/high-alt | Battery life, wind rejection |
-| **Underwater (ROV/AUV)** | BlueROV, REMUS, Slocum glider | 4â€“6 | 3D underwater | Subsea | Pressure, acoustic comms |
-| **Humanoid** | Atlas, ASIMO, Pepper | 26â€“32 | Bipedal | Human spaces | Balance, whole-body control |
-| **Swarm** | Kilobot, Crazyflie swarm, Ant bots | 2â€“4 each | Collective | Varied | Coordination, comms range |
-| **Soft robot** | Octopus gripper, fish-bot | âˆž (continuous) | Variable | Confined spaces | Modeling, control |
+| **Underwater (ROV/AUV)** | BlueROV, REMUS, Slocum glider | 4–6 | 3D underwater | Subsea | Pressure, acoustic comms |
+| **Humanoid** | Atlas, ASIMO, Pepper | 26–32 | Bipedal | Human spaces | Balance, whole-body control |
+| **Swarm** | Kilobot, Crazyflie swarm, Ant bots | 2–4 each | Collective | Varied | Coordination, comms range |
+| **Soft robot** | Octopus gripper, fish-bot | ∞ (continuous) | Variable | Confined spaces | Modeling, control |
 
 **Key takeaway:** The number of degrees of freedom (DOF), environment type, and task constraints determine the robot class. Most AI algorithms (localization, planning, control) apply across types with appropriate adaptations.
 
@@ -267,14 +267,14 @@ Robots are classified by their morphology, mobility, and application domain. The
 
 | Category | Sensor | Measures | Rate | Noise Model |
 |----------|--------|----------|:----:|-------------|
-| Exteroceptive | Camera | RGB/D intensity | 30â€“90 Hz | Gaussian + shot noise |
-| Exteroceptive | LIDAR (2D/3D) | Distance to surfaces | 5â€“40 Hz | Gaussian range + outliers |
-| Exteroceptive | Ultrasonic | Distance (wide cone) | 20â€“50 Hz | Speckle noise, multipath |
-| Exteroceptive | GPS | Lat/Lon/Alt | 1â€“10 Hz | Gaussian ~1â€“5m stddev |
-| Proprioceptive | IMU (accel + gyro) | Acceleration, rotation rate | 100â€“1000 Hz | Bias + white noise, drift |
-| Proprioceptive | Wheel encoder | Rotations | 100â€“1000 Hz | Quantization, slip |
-| Proprioceptive | Joint angle | Angular position | 100â€“1000 Hz | Encoder quantization |
-| Proprioceptive | Force/torque | Contact forces | 100â€“1000 Hz | Bias, thermal drift |
+| Exteroceptive | Camera | RGB/D intensity | 30–90 Hz | Gaussian + shot noise |
+| Exteroceptive | LIDAR (2D/3D) | Distance to surfaces | 5–40 Hz | Gaussian range + outliers |
+| Exteroceptive | Ultrasonic | Distance (wide cone) | 20–50 Hz | Speckle noise, multipath |
+| Exteroceptive | GPS | Lat/Lon/Alt | 1–10 Hz | Gaussian ~1–5m stddev |
+| Proprioceptive | IMU (accel + gyro) | Acceleration, rotation rate | 100–1000 Hz | Bias + white noise, drift |
+| Proprioceptive | Wheel encoder | Rotations | 100–1000 Hz | Quantization, slip |
+| Proprioceptive | Joint angle | Angular position | 100–1000 Hz | Encoder quantization |
+| Proprioceptive | Force/torque | Contact forces | 100–1000 Hz | Bias, thermal drift |
 
 ### 14.3.2 Sensor Fusion Pipeline
 
@@ -286,7 +286,7 @@ Robots are classified by their morphology, mobility, and application domain. The
 5. **Fuse:** Combine measurements using Kalman filter or complementary filter.
 6. **Publish:** Output fused estimate (pose, velocity) to other ROS nodes.
 
-### 14.3.3 Algorithm â€” IMU + GPS Sensor Fusion (Complementary Filter)
+### 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)
 
 
 ```
@@ -294,32 +294,32 @@ Algorithm: COMPLEMENTARY-FUSION
 Input:  accel (ax, ay, az), gyro (gx, gy, gz), gps (lat, lon, heading)
         alpha = 0.98  (weight for gyro integration)
 Output: roll, pitch, yaw (fused orientation)
-1.  accel_roll â† ATAN2(-ay, -az)
-2.  accel_pitch â† ATAN2(ax, SQRT(ayÂ² + azÂ²))
-3.  gps_yaw â† ATAN2(dy, dx) from GPS displacement
+1.  accel_roll ← ATAN2(-ay, -az)
+2.  accel_pitch ← ATAN2(ax, SQRT(ay² + az²))
+3.  gps_yaw ← ATAN2(dy, dx) from GPS displacement
 4.  // complementary filter: gyro dominates high frequencies, accel/GPS low
-5.  fused_roll â† alpha * (prev_roll + gyro_x * dt) + (1 - alpha) * accel_roll
-6.  fused_pitch â† alpha * (prev_pitch + gyro_y * dt) + (1 - alpha) * accel_pitch
-7.  fused_yaw â† alpha * (prev_yaw + gyro_z * dt) + (1 - alpha) * gps_yaw
+5.  fused_roll ← alpha * (prev_roll + gyro_x * dt) + (1 - alpha) * accel_roll
+6.  fused_pitch ← alpha * (prev_pitch + gyro_y * dt) + (1 - alpha) * accel_pitch
+7.  fused_yaw ← alpha * (prev_yaw + gyro_z * dt) + (1 - alpha) * gps_yaw
 8.  return fused_roll, fused_pitch, fused_yaw
 ```
 
-### 14.3.4 Dry Run â€” Sensor Fusion for a Drone
+### 14.3.4 Dry Run — Sensor Fusion for a Drone
 
 
 **Scenario:** Drone hovering at 10m altitude. GPS gives periodic fixes; IMU runs at 200 Hz.
 
-| t (s) | Gyro (rad/s) | Accel (m/sÂ²) | GPS heading | Raw roll (Â°) | Fused roll (Â°) | Notes |
+| t (s) | Gyro (rad/s) | Accel (m/s²) | GPS heading | Raw roll (°) | Fused roll (°) | Notes |
 |-------|--------------|--------------|-------------|--------------|----------------|-------|
 | 0.00 | 0.0, 0.0, 0.0 | 0, 0, 9.81 | 0.0 | 0.0 | 0.0 | Initialized |
-| 0.05 | 0.02, 0.0, 0.0 | âˆ’0.01, 0.0, 9.82 | â€” | 0.06 | 0.057 | Gyro integration dominates |
-| 0.10 | 0.01, 0.0, 0.0 | âˆ’0.005, 0.0, 9.80 | â€” | 0.03 | 0.084 | Accumulating drift |
-| 0.50 | 0.0, 0.0, 0.0 | 0.0, 0.0, 9.81 | 0.1Â° | 0.0 | 0.089 | GPS update pulls toward 0.1Â° |
-| 1.00 | 0.0, 0.0, 0.0 | 0.0, 0.0, 9.81 | 0.08Â° | 0.0 | 0.067 | GPS slowly corrects bias |
+| 0.05 | 0.02, 0.0, 0.0 | −0.01, 0.0, 9.82 | — | 0.06 | 0.057 | Gyro integration dominates |
+| 0.10 | 0.01, 0.0, 0.0 | −0.005, 0.0, 9.80 | — | 0.03 | 0.084 | Accumulating drift |
+| 0.50 | 0.0, 0.0, 0.0 | 0.0, 0.0, 9.81 | 0.1° | 0.0 | 0.089 | GPS update pulls toward 0.1° |
+| 1.00 | 0.0, 0.0, 0.0 | 0.0, 0.0, 9.81 | 0.08° | 0.0 | 0.067 | GPS slowly corrects bias |
 
 **Observation:** The complementary filter lets the high-rate gyro track fast motions (t=0.05-0.10) while the low-rate GPS/accel slowly corrects gyro drift (t=0.50-1.00). Alpha=0.98 means 98% weight on gyro, 2% on absolute reference.
 
-### 14.3.5 Python â€” IMU + GPS Sensor Fusion
+### 14.3.5 Python — IMU + GPS Sensor Fusion
 
 
 ```python
@@ -369,8 +369,8 @@ for step in range(200):
         filt.update_gps(gps_heading=0.0)
     if step % 20 == 0:
         r, p, y = filt.get_orientation()
-        print(f"t={t:.2f} roll={math.degrees(r):.2f}Â° pitch={math.degrees(p):.2f}Â° "
-              f"yaw={math.degrees(y):.2f}Â°")
+        print(f"t={t:.2f} roll={math.degrees(r):.2f}° pitch={math.degrees(p):.2f}° "
+              f"yaw={math.degrees(y):.2f}°")
 ```
 
 ### 14.3.6 Complexity Analysis
@@ -381,10 +381,10 @@ for step in range(200):
 | Sensor read | O(1) per sensor | O(1) | Hardware register read |
 | Median filter (LIDAR) | O(n log n) per scan | O(n) | Sorting n range measurements |
 | Complementary filter | O(1) | O(1) | 3 arithmetic operations per axis |
-| Kalman fusion | O(nÂ²) state | O(nÂ²) | Covariance matrix operations |
-| Coordinate transform | O(1) via precomputed matrix | O(1) | 4Ã—4 homogeneous transform |
+| Kalman fusion | O(n²) state | O(n²) | Covariance matrix operations |
+| Coordinate transform | O(1) via precomputed matrix | O(1) | 4×4 homogeneous transform |
 
-**Why complementary filter over Kalman for simple fusion?** The complementary filter is O(1) vs Kalman's O(nÂ²), requires no noise model tuning, and works well when sensor frequency separation is clear (gyro handles high frequencies, accel/GPS handle low). Use Kalman when accurate covariance propagation is needed.
+**Why complementary filter over Kalman for simple fusion?** The complementary filter is O(1) vs Kalman's O(n²), requires no noise model tuning, and works well when sensor frequency separation is clear (gyro handles high frequencies, accel/GPS handle low). Use Kalman when accurate covariance propagation is needed.
 
 ### 14.3.7 Advantages & Disadvantages
 
@@ -413,7 +413,7 @@ for step in range(200):
 
 ## 14.4 Actuators
 
-**Real-world analogy:** Your bicep and triceps work as an antagonistic pair â€” one contracts while the other relaxes to move your forearm. A robotic arm's DC motor and gearbox play the same role: electrical energy converts to mechanical torque, amplified through gearing to lift a load.
+**Real-world analogy:** Your bicep and triceps work as an antagonistic pair — one contracts while the other relaxes to move your forearm. A robotic arm's DC motor and gearbox play the same role: electrical energy converts to mechanical torque, amplified through gearing to lift a load.
 
 ### 14.4.1 Actuator Taxonomy
 
@@ -429,7 +429,7 @@ for step in range(200):
 | Piezoelectric | Crystal deformation | Very low | Very fast | Sub-nm | Micropositioning, AFM |
 | Shape-memory alloy | Thermal phase change | Med | Slow | Med | Soft robotics, grippers |
 
-### 14.4.2 Algorithm â€” DC Motor Speed Control (Open-Loop + Closed-Loop)
+### 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)
 
 
 ```
@@ -437,37 +437,37 @@ Algorithm: DC-MOTOR-CONTROL
 Input:  target_rpm, current_rpm (from encoder), Kp, Ki, Kd
 Output: pwm_duty_cycle (0-255)
 // Open-loop feedforward
-1.  ff_pwm â† TARGET_RPM * RPM_TO_PWM_SCALE
+1.  ff_pwm ← TARGET_RPM * RPM_TO_PWM_SCALE
 // Closed-loop PID correction
-2.  error â† target_rpm - current_rpm
-3.  integral â† integral + error * dt
-4.  derivative â† (error - prev_error) / dt
-5.  fb_pwm â† Kp * error + Ki * integral + Kd * derivative
+2.  error ← target_rpm - current_rpm
+3.  integral ← integral + error * dt
+4.  derivative ← (error - prev_error) / dt
+5.  fb_pwm ← Kp * error + Ki * integral + Kd * derivative
 // Combine
-6.  pwm_out â† CLAMP(ff_pwm + fb_pwm, 0, 255)
-7.  prev_error â† error
+6.  pwm_out ← CLAMP(ff_pwm + fb_pwm, 0, 255)
+7.  prev_error ← error
 8.  return pwm_out
 ```
 
-### 14.4.3 Dry Run â€” DC Motor Speed Regulation
+### 14.4.3 Dry Run — DC Motor Speed Regulation
 
 
 **Scenario:** Target 1000 RPM, motor with encoder, P=0.5, I=0.1, D=0.01.
 
 | t (s) | Target | Actual | Error | Integral | Derivative | FF | FB | PWM | Notes |
 |-------|:------:|:------:|:-----:|:--------:|:----------:|:--:|:--:|:---:|-------|
-| 0.00 | 1000 | 0 | 1000 | 0 | 0 | 128 | 500 | 255 | Saturated â€” max acceleration |
-| 0.05 | 1000 | 200 | 800 | 50 | âˆ’4000 | 128 | 350 | 255 | Still saturated |
-| 0.10 | 1000 | 500 | 500 | 75 | âˆ’6000 | 128 | 175 | 255 | Approaching target |
-| 0.15 | 1000 | 750 | 250 | 87.5 | âˆ’5000 | 128 | 75 | 203 | Leaving saturation |
-| 0.20 | 1000 | 920 | 80 | 91.5 | âˆ’3400 | 128 | âˆ’6 | 122 | Slight overshoot |
-| 0.25 | 1000 | 1050 | âˆ’50 | 89.0 | âˆ’2600 | 128 | âˆ’71 | 57 | Overshoot correction |
+| 0.00 | 1000 | 0 | 1000 | 0 | 0 | 128 | 500 | 255 | Saturated — max acceleration |
+| 0.05 | 1000 | 200 | 800 | 50 | −4000 | 128 | 350 | 255 | Still saturated |
+| 0.10 | 1000 | 500 | 500 | 75 | −6000 | 128 | 175 | 255 | Approaching target |
+| 0.15 | 1000 | 750 | 250 | 87.5 | −5000 | 128 | 75 | 203 | Leaving saturation |
+| 0.20 | 1000 | 920 | 80 | 91.5 | −3400 | 128 | −6 | 122 | Slight overshoot |
+| 0.25 | 1000 | 1050 | −50 | 89.0 | −2600 | 128 | −71 | 57 | Overshoot correction |
 | 0.30 | 1000 | 980 | 20 | 90.0 | 1400 | 128 | 34 | 162 | Convergence |
-| 0.50 | 1000 | 1005 | âˆ’5 | 88.0 | âˆ’500 | 128 | âˆ’9 | 119 | Steady state |
+| 0.50 | 1000 | 1005 | −5 | 88.0 | −500 | 128 | −9 | 119 | Steady state |
 
 **Observation:** The combination of feedforward (FF=128 provides ~500 RPM open-loop) and feedback allows quick convergence. Without integral term, steady-state error of ~20 RPM would persist.
 
-### 14.4.4 Python â€” DC Motor PID Controller
+### 14.4.4 Python — DC Motor PID Controller
 
 
 ```python
@@ -529,7 +529,7 @@ for i in range(100):
 | PWM generation | O(1) | O(1) | Timer register write |
 | Gear ratio transform | O(1) | O(1) | Single multiplication |
 
-**Why PID is O(1):** Every computation is a simple arithmetic operation on scalar values. No loops, no allocation. This is critical for real-time control running at 1â€“10 kHz where every microsecond matters.
+**Why PID is O(1):** Every computation is a simple arithmetic operation on scalar values. No loops, no allocation. This is critical for real-time control running at 1–10 kHz where every microsecond matters.
 
 ### 14.4.6 Advantages & Disadvantages
 
@@ -558,7 +558,7 @@ for i in range(100):
 
 ## 14.5 Localization
 
-**Real-world analogy:** Imagine you wake up in a dark room you've never seen. You shuffle to a wall (range sensor), feel along it (odometry), find a corner (feature). You've built a mental map while tracking your position â€” that's localization. If someone suddenly picks you up and spins you around (kidnapped robot problem), you must reorient by re-exploring.
+**Real-world analogy:** Imagine you wake up in a dark room you've never seen. You shuffle to a wall (range sensor), feel along it (odometry), find a corner (feature). You've built a mental map while tracking your position — that's localization. If someone suddenly picks you up and spins you around (kidnapped robot problem), you must reorient by re-exploring.
 
 **Localization** is the problem of estimating the robot's pose (position and orientation) given sensor data and a map. The core challenge: sensors are noisy, actuators slip, and the world is ambiguous.
 
@@ -572,50 +572,50 @@ for i in range(100):
 5. **Resample** (particle filter only): Draw new samples proportional to weight.
 6. **Repeat:** Cycle at the sensor update rate.
 
-### 14.5.2 Algorithm â€” Monte Carlo Localization (Particle Filter)
+### 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)
 
 
 ```
 Algorithm: MONTE-CARLO-LOCALIZATION
 Input:  X_{t-1} (previous particles), u_t (control), z_t (observation), m (map)
 Output: X_t (updated particles)
-1.  X_t â† empty set
+1.  X_t ← empty set
 2.  for each particle x in X_{t-1}:
 3.      // Motion model: apply control + noise
-4.      x' â† SAMPLE_MOTION_MODEL(x, u_t)
+4.      x' ← SAMPLE_MOTION_MODEL(x, u_t)
 5.      // Measurement model: compute importance weight
-6.      w â† MEASUREMENT_PROB(z_t, x', m)
+6.      w ← MEASUREMENT_PROB(z_t, x', m)
 7.      add (x', w) to temporary set
 8.  // Normalize weights
-9.  total â† SUM(weights of temporary set)
+9.  total ← SUM(weights of temporary set)
 10. for each (x', w) in temporary set:
-11.     w â† w / total
+11.     w ← w / total
 12. // Resample N particles with replacement proportional to weight
-13. X_t â† RESAMPLE(temporary_set, N)
+13. X_t ← RESAMPLE(temporary_set, N)
 14. // Inject random particles for kidnapped robot recovery
 15. if ROBUST_MODE:
 16.     replace 5% of X_t with uniform random poses
 17. return X_t
 ```
 
-### 14.5.3 Dry Run â€” MCL in a 1D Corridor
+### 14.5.3 Dry Run — MCL in a 1D Corridor
 
 
 **Scenario:** Robot in a 1D hallway of length 10m. Three particles. Robot receives control "move +1m" then observes "I am at distance 7m from left wall."
 
 | Step | Particle | Pose (m) | Weight | Notes |
 |------|----------|:---------:|:------:|-------|
-| Init | pâ‚, pâ‚‚, pâ‚ƒ | 2.0, 5.0, 8.0 | 0.33, 0.33, 0.33 | Uniform initial belief |
-| Predict (move +1m) | pâ‚', pâ‚‚', pâ‚ƒ' | 3.1, 5.9, 8.9 | â€” | Added Gaussian noise Ïƒ=0.2 |
-| Observe (z=7.0m) | pâ‚' | 3.1 | 0.01 | Far from 7m â€” low weight |
-| | pâ‚‚' | 5.9 | 0.12 | Moderate |
-| | pâ‚ƒ' | 8.9 | 0.02 | Close-ish |
-| Normalize | pâ‚', pâ‚‚', pâ‚ƒ' | â€” | 0.07, 0.80, 0.13 | pâ‚‚ dominates |
-| Resample | pâ‚'', pâ‚‚'', pâ‚ƒ'' | 5.8, 6.1, 6.0 | 0.33, 0.33, 0.33 | Particles cluster near truth |
+| Init | p₁, p₂, p₃ | 2.0, 5.0, 8.0 | 0.33, 0.33, 0.33 | Uniform initial belief |
+| Predict (move +1m) | p₁', p₂', p₃' | 3.1, 5.9, 8.9 | — | Added Gaussian noise σ=0.2 |
+| Observe (z=7.0m) | p₁' | 3.1 | 0.01 | Far from 7m — low weight |
+| | p₂' | 5.9 | 0.12 | Moderate |
+| | p₃' | 8.9 | 0.02 | Close-ish |
+| Normalize | p₁', p₂', p₃' | — | 0.07, 0.80, 0.13 | p₂ dominates |
+| Resample | p₁'', p₂'', p₃'' | 5.8, 6.1, 6.0 | 0.33, 0.33, 0.33 | Particles cluster near truth |
 
 **Observation:** After one observation, the particle cloud collapses around the true pose (~6m). With more particles, the convergence is smoother and more robust.
 
-### 14.5.4 Python â€” Monte Carlo Localization (1D)
+### 14.5.4 Python — Monte Carlo Localization (1D)
 
 
 ```python
@@ -691,12 +691,12 @@ for step in range(10):
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Motion model (N particles) | O(N) | O(N) | Each particle sampled independently |
-| Measurement update (N) | O(N Ã— M) | O(N) | Each particle compares against M map features |
+| Measurement update (N) | O(N × M) | O(N) | Each particle compares against M map features |
 | Weight normalization | O(N) | O(1) | Single sum + division loop |
 | Resampling | O(N) | O(N) | Multinomial or systematic sampling |
-| Random injection | O(k) | O(1) | Replace k = fraction Ã— N particles |
+| Random injection | O(k) | O(1) | Replace k = fraction × N particles |
 
-**Why O(N Ã— M) for measurement?** Each of N particles must compute likelihood against M measurements (e.g., 360 LIDAR beams). At N=1000, M=360, that's 360,000 likelihood evaluations per update. Reducing N via adaptive resampling is critical for real-time operation.
+**Why O(N × M) for measurement?** Each of N particles must compute likelihood against M measurements (e.g., 360 LIDAR beams). At N=1000, M=360, that's 360,000 likelihood evaluations per update. Reducing N via adaptive resampling is critical for real-time operation.
 
 ### 14.5.6 Advantages & Disadvantages
 
@@ -704,7 +704,7 @@ for step in range(10):
 | Method | Advantages | Disadvantages |
 |--------|------------|---------------|
 | MCL (Particle Filter) | Multi-modal beliefs; robust to kidnapping; any sensor model | Large N needed for high-dim state; particle deprivation |
-| Kalman Filter | Optimal for linear-Gaussian; O(nÂ²) efficient | Unimodal Gaussian; fails on non-Gaussian noise |
+| Kalman Filter | Optimal for linear-Gaussian; O(n²) efficient | Unimodal Gaussian; fails on non-Gaussian noise |
 | Grid/Markov Localization | Globally convergent; discrete | Resolution-limited; exponential in state dim |
 | Histogram filter | Simple; bounded memory | Coarse discretization error |
 
@@ -713,7 +713,7 @@ for step in range(10):
 
 | Edge Case | Problem | Mitigation |
 |-----------|---------|------------|
-| Kidnapped robot | Particles stuck on wrong mode | Inject random particles (5â€“10%) each iteration |
+| Kidnapped robot | Particles stuck on wrong mode | Inject random particles (5–10%) each iteration |
 | Perceptual aliasing | Two places look identical | Use multiple sensor types; add odometry memory |
 | Particle deprivation | Too few particles near true pose | Adaptive resampling; increase N in high-likelihood regions |
 | Sudden sensor failure | All weights go to zero | Detection heuristic: if max weight &lt; threshold, reinitialize |
@@ -726,12 +726,12 @@ for step in range(10):
 |-----------|:----------------------------:|:----------------------------:|:--------------:|
 | **State representation** | Weighted samples | Gaussian (mean + covariance) | Discrete grid |
 | **Belief type** | Multi-modal | Uni-modal (Gaussian) | Discrete distribution |
-| **Computational cost** | O(N Ã— M) | O(nÂ²) | O(âˆ G_i) per grid dim |
+| **Computational cost** | O(N × M) | O(n²) | O(∏ G_i) per grid dim |
 | **Accuracy** | High with enough particles | High for approx. linear systems | Resolution-limited |
-| **Robust to kidnapping** | âœ… (with random injection) | âŒ (single Gaussian) | âœ… (global search) |
+| **Robust to kidnapping** | ✅ (with random injection) | ❌ (single Gaussian) | ✅ (global search) |
 | **Sensor model** | Any (arbitrary likelihood) | Gaussian | Any (discrete lookup) |
-| **Memory** | O(N) | O(nÂ²) | O(G^d) exponential |
-| **Real-time on embedded** | Moderate (N=500â€“2000) | âœ… Efficient | âŒ High-dim maps |
+| **Memory** | O(N) | O(n²) | O(G^d) exponential |
+| **Real-time on embedded** | Moderate (N=500–2000) | ✅ Efficient | ❌ High-dim maps |
 | **Typical use case** | Indoor mobile robots | Drone/auto state estimation | Known map, small space |
 
 **When to use which:**
@@ -743,7 +743,7 @@ for step in range(10):
 
 ## 14.6 Mapping and SLAM
 
-**Real-world analogy:** You're exploring a dark, unfamiliar house with a blindfold. Every step forward (odometry) accumulates small errors. Every time you touch a wall (range sensor), you update your mental map. When you recognize a previously visited room by its shape (loop closure), you suddenly correct all accumulated drift. This is SLAM â€” Simultaneous Localization and Mapping.
+**Real-world analogy:** You're exploring a dark, unfamiliar house with a blindfold. Every step forward (odometry) accumulates small errors. Every time you touch a wall (range sensor), you update your mental map. When you recognize a previously visited room by its shape (loop closure), you suddenly correct all accumulated drift. This is SLAM — Simultaneous Localization and Mapping.
 
 **Simultaneous Localization and Mapping (SLAM)** addresses the chicken-and-egg problem: the robot needs a map to localize and its pose to build a map. The two must be solved jointly.
 
@@ -758,7 +758,7 @@ for step in range(10):
 6. **Loop closure detection:** Detect revisiting a known location and optimize the graph.
 7. **Repeat:** Every sensor cycle.
 
-### 14.6.2 Algorithm â€” EKF-SLAM
+### 14.6.2 Algorithm — EKF-SLAM
 
 
 ```
@@ -766,40 +766,40 @@ Algorithm: EKF-SLAM
 Input:  mu_{t-1} (mean), Sigma_{t-1} (covariance), u_t (control), z_t (obs)
 Output: mu_t, Sigma_t (updated mean and covariance)
 1.  // Predict step
-2.  mu_t â† g(mu_{t-1}, u_t)           // motion model
-3.  G_t â† JACOBIAN_G(mu_{t-1}, u_t)  // Jacobian of motion
-4.  Sigma_t â† G_t * Sigma_{t-1} * G_t^T + R_t  // motion noise
+2.  mu_t ← g(mu_{t-1}, u_t)           // motion model
+3.  G_t ← JACOBIAN_G(mu_{t-1}, u_t)  // Jacobian of motion
+4.  Sigma_t ← G_t * Sigma_{t-1} * G_t^T + R_t  // motion noise
 5.
 6.  // Update step for each observed landmark z_i in z_t
 7.  for each z_i in z_t:
-8.      j â† DATA_ASSOCIATION(z_i, mu_t, map)
+8.      j ← DATA_ASSOCIATION(z_i, mu_t, map)
 9.      if j == NEW_LANDMARK:
 10.         INITIALIZE_LANDMARK(mu_t, Sigma_t, z_i)
 11.     else:
-12.         z_pred â† h(mu_t, landmark_j)     // predicted measurement
-13.         H_t â† JACOBIAN_H(mu_t, landmark_j)
-14.         K â† Sigma_t * H_t^T * (H_t * Sigma_t * H_t^T + Q_t)^{-1}
-15.         mu_t â† mu_t + K * (z_i - z_pred)
-16.         Sigma_t â† (I - K * H_t) * Sigma_t
+12.         z_pred ← h(mu_t, landmark_j)     // predicted measurement
+13.         H_t ← JACOBIAN_H(mu_t, landmark_j)
+14.         K ← Sigma_t * H_t^T * (H_t * Sigma_t * H_t^T + Q_t)^{-1}
+15.         mu_t ← mu_t + K * (z_i - z_pred)
+16.         Sigma_t ← (I - K * H_t) * Sigma_t
 17. return mu_t, Sigma_t
 ```
 
-### 14.6.3 Dry Run â€” EKF-SLAM with 2 Landmarks
+### 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks
 
 
 **Scenario:** Robot moves in 1D with two landmarks at positions 3m and 7m. Robot starts at 0m.
 
 | Step | Action | Robot pose | Landmark 1 | Landmark 2 | Covariance diag | Notes |
 |------|--------|:----------:|:----------:|:----------:|:----------------:|-------|
-| Init | â€” | 0.0 | â€” | â€” | [0.01, 0.01, 0.01] | Small initial uncertainty |
-| t=1 | Move +2m â†’ observe L1 at range 1.2m | 2.0 â†’ 2.1 | 3.0 â†’ 3.3 | â€” | [0.05, 0.02, 0.01] | Pose and L1 uncertainty coupled |
-| t=2 | Move +2m â†’ observe L2 at range 1.1m | 4.0 â†’ 3.9 | 3.3 | 7.0 â†’ 5.0 | [0.08, 0.03, 0.03] | L2 initialized |
-| t=3 | Observe L1 again at range 0.9m | 3.9 â†’ 3.0 | 3.3 â†’ 3.1 | 5.0 | [0.04, 0.01, 0.02] | Correction: pose snaps back to match L1 |
-| t=4 | Observe L2 again at range 2.1m | 3.0 â†’ 3.0 | 3.1 | 5.0 â†’ 5.1 | [0.03, 0.01, 0.01] | Both landmarks converge |
+| Init | — | 0.0 | — | — | [0.01, 0.01, 0.01] | Small initial uncertainty |
+| t=1 | Move +2m → observe L1 at range 1.2m | 2.0 → 2.1 | 3.0 → 3.3 | — | [0.05, 0.02, 0.01] | Pose and L1 uncertainty coupled |
+| t=2 | Move +2m → observe L2 at range 1.1m | 4.0 → 3.9 | 3.3 | 7.0 → 5.0 | [0.08, 0.03, 0.03] | L2 initialized |
+| t=3 | Observe L1 again at range 0.9m | 3.9 → 3.0 | 3.3 → 3.1 | 5.0 | [0.04, 0.01, 0.02] | Correction: pose snaps back to match L1 |
+| t=4 | Observe L2 again at range 2.1m | 3.0 → 3.0 | 3.1 | 5.0 → 5.1 | [0.03, 0.01, 0.01] | Both landmarks converge |
 
-**Key insight:** At t=3, re-observing L1 corrects all accumulated pose drift from t=1â€“2. The covariance shrinks because two independent measurements of the same landmark reduce uncertainty.
+**Key insight:** At t=3, re-observing L1 corrects all accumulated pose drift from t=1–2. The covariance shrinks because two independent measurements of the same landmark reduce uncertainty.
 
-### 14.6.4 Python â€” EKF-SLAM (1D, 1 Landmark)
+### 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)
 
 
 ```python
@@ -861,13 +861,13 @@ for step in range(6):
 
 | Algorithm | Time | Space | Why |
 |-----------|------|-------|-----|
-| EKF-SLAM predict | O(nÂ²) | O(nÂ²) | Covariance multiplication; n = 3 + 2L for L landmarks |
-| EKF-SLAM update | O(nÂ²) | O(nÂ²) | Kalman gain computation inverts nÃ—n innovation matrix |
+| EKF-SLAM predict | O(n²) | O(n²) | Covariance multiplication; n = 3 + 2L for L landmarks |
+| EKF-SLAM update | O(n²) | O(n²) | Kalman gain computation inverts n×n innovation matrix |
 | GraphSLAM build | O(N + M) | O(N + M) | N poses, M constraints; edges stored sparsely |
-| GraphSLAM solve | O(NÂ³) â†’ O(N log N) | O(N + M) | Sparse Cholesky factorization exploits graph structure |
-| Loop closure detection | O(FÂ²) | O(F) | F features compared pairwise for geometric verification |
+| GraphSLAM solve | O(N³) → O(N log N) | O(N + M) | Sparse Cholesky factorization exploits graph structure |
+| Loop closure detection | O(F²) | O(F) | F features compared pairwise for geometric verification |
 
-**Why nÂ² kills EKF-SLAM at scale:** With L=1000 landmarks, state vector is 2003-dimensional. The covariance matrix has ~4M entries, and the Kalman gain computation inverts a matrix of similar size. GraphSLAM's sparse structure reduces this to O(N log N) for N poses.
+**Why n² kills EKF-SLAM at scale:** With L=1000 landmarks, state vector is 2003-dimensional. The covariance matrix has ~4M entries, and the Kalman gain computation inverts a matrix of similar size. GraphSLAM's sparse structure reduces this to O(N log N) for N poses.
 
 ### 14.6.6 EKF-SLAM vs GraphSLAM
 
@@ -877,10 +877,10 @@ for step in range(6):
 | Formulation | Online (recursive filter) | Batch (full trajectory) |
 | State | Current pose + all landmarks | All poses + all landmarks |
 | Representation | Dense covariance | Sparse graph (nodes = poses, edges = constraints) |
-| Complexity | O(nÂ²) per step | O(N log N) for sparse solve |
+| Complexity | O(n²) per step | O(N log N) for sparse solve |
 | Loop closure | Corrects current estimate | Re-optimizes full trajectory |
-| Memory | O(nÂ²) dense matrix | O(N + M) sparse |
-| Real-time | âœ… Yes | âŒ Batch (offline loop closure) |
+| Memory | O(n²) dense matrix | O(N + M) sparse |
+| Real-time | ✅ Yes | ❌ Batch (offline loop closure) |
 | Accuracy | Drifts between corrections | Globally consistent after optimization |
 
 ### 14.6.7 Advantages & Disadvantages
@@ -889,7 +889,7 @@ for step in range(6):
 | Aspect | Advantages | Disadvantages |
 |--------|------------|---------------|
 | EKF-SLAM | Online, real-time; proven in many systems | Quadratic in landmarks; linearization errors |
-| GraphSLAM | Globally consistent; exploits sparsity | Batch â€” not real-time; memory grows with trajectory |
+| GraphSLAM | Globally consistent; exploits sparsity | Batch — not real-time; memory grows with trajectory |
 | Visual SLAM (ORB-SLAM) | Rich features; relocalization | Computationally intensive; lighting dependent |
 | LIDAR SLAM (Cartographer) | Accurate range; works in dark | LIDAR cost; poor in featureless environments |
 
@@ -908,7 +908,7 @@ for step in range(6):
 
 ## 14.7 Motion Planning
 
-**Real-world analogy:** You need to cross a crowded room to reach the exit. Your brain evaluates multiple paths: go around the sofa (collision check), squeeze between two people (narrow passage), wait for someone to move (dynamic obstacle). You don't plan every step in advance â€” you explore promising routes and commit once you see a clear path. RRT does exactly this.
+**Real-world analogy:** You need to cross a crowded room to reach the exit. Your brain evaluates multiple paths: go around the sofa (collision check), squeeze between two people (narrow passage), wait for someone to move (dynamic obstacle). You don't plan every step in advance — you explore promising routes and commit once you see a clear path. RRT does exactly this.
 
 ### 14.7.1 Motion Planning Pipeline
 
@@ -920,7 +920,7 @@ for step in range(6):
 5. **Smooth:** Optimize the path for shorter distance or smoother curvature.
 6. **Execute:** Feed the path to the controller for tracking.
 
-### 14.7.2 Algorithm â€” RRT (Rapidly-Exploring Random Tree)
+### 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)
 
 
 ```
@@ -928,26 +928,26 @@ Algorithm: RRT-PLAN
 Input:  q_start, q_goal (configurations), max_iter (iterations),
         step_size (extension length), threshold (goal radius)
 Output: path (list of configurations), or failure
-1.  tree â† {q_start}          // vertex set
-2.  edges â† {}                // edge set
+1.  tree ← {q_start}          // vertex set
+2.  edges ← {}                // edge set
 3.  for i = 1 to max_iter:
-4.      q_rand â† SAMPLE_UNIFORM(C_free)   // random configuration
-5.      q_near â† NEAREST(tree, q_rand)     // nearest vertex by distance
-6.      q_new â† EXTEND(q_near, q_rand, step_size)
+4.      q_rand ← SAMPLE_UNIFORM(C_free)   // random configuration
+5.      q_near ← NEAREST(tree, q_rand)     // nearest vertex by distance
+6.      q_new ← EXTEND(q_near, q_rand, step_size)
 7.      if COLLISION_FREE(q_near, q_new):
-8.          tree â† tree âˆª {q_new}
-9.          edges â† edges âˆª {(q_near, q_new)}
+8.          tree ← tree ∪ {q_new}
+9.          edges ← edges ∪ {(q_near, q_new)}
 10.         if DISTANCE(q_new, q_goal) < threshold:
-11.             path â† EXTRACT_PATH(tree, q_start, q_new)
-12.             path â† APPEND(path, q_goal)
+11.             path ← EXTRACT_PATH(tree, q_start, q_new)
+12.             path ← APPEND(path, q_goal)
 13.             return path
 14. return FAILURE
 ```
 
-### 14.7.3 Dry Run â€” RRT in a 2D Square World
+### 14.7.3 Dry Run — RRT in a 2D Square World
 
 
-**Scenario:** 10Ã—10 world with one rectangular obstacle (3,3)â€“(7,7). Start at (1,1), goal at (9,9). Step size = 1.0.
+**Scenario:** 10×10 world with one rectangular obstacle (3,3)–(7,7). Start at (1,1), goal at (9,9). Step size = 1.0.
 
 | Iter | q_rand | q_near | q_new | Collision? | Tree size | Notes |
 |:----:|:------:|:------:|:-----:|:----------:|:---------:|-------|
@@ -957,14 +957,14 @@ Output: path (list of configurations), or failure
 | 4 | (5, 5) | (3.7, 3.0) | (4.7, 3.8) | No | 5 | |
 | 5 | (6, 6) | (4.7, 3.8) | (5.5, 4.6) | No | 6 | |
 | 6 | (7, 7) | (5.5, 4.6) | (6.3, 5.4) | No | 7 | |
-| 7 | (8, 8) | (6.3, 5.4) | (7.1, 6.2) | **Yes** | 7 | Blocked by obstacle â€” rejected |
+| 7 | (8, 8) | (6.3, 5.4) | (7.1, 6.2) | **Yes** | 7 | Blocked by obstacle — rejected |
 | 8 | (9, 5) | (6.3, 5.4) | (7.1, 5.8) | No | 8 | Grows above obstacle |
-| â‹® | â‹® | â‹® | â‹® | â‹® | â‹® | â‹® |
+| ⋮ | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ | ⋮ |
 | 18 | (9, 9) | (8.0, 8.5) | (9.0, 9.0) | No | 15 | Reached goal! |
 
 **Observation:** RRT rapidly explores the free space through random sampling. The tree naturally avoids the central obstacle because samples inside it are rejected. After ~18 iterations, the tree reaches the goal region.
 
-### 14.7.4 Python â€” RRT for 2D Configuration Space
+### 14.7.4 Python — RRT for 2D Configuration Space
 
 
 ```python
@@ -1080,26 +1080,26 @@ if __name__ == "__main__":
         print("No path found")
 ```
 
-### 14.7.5 RRT* â€” Optimal Extension with Rewiring
+### 14.7.5 RRT* — Optimal Extension with Rewiring
 
 
-RRT* adds a **rewiring** step that reconnects the tree when a better path to a node is found, providing **asymptotic optimality** â€” the path converges to the optimal (shortest) as samples â†’ âˆž.
+RRT* adds a **rewiring** step that reconnects the tree when a better path to a node is found, providing **asymptotic optimality** — the path converges to the optimal (shortest) as samples → ∞.
 
 ```
 Algorithm: RRT*-EXTEND (additional steps)
-1.  q_new â† EXTEND(q_near, q_rand, step_size)
+1.  q_new ← EXTEND(q_near, q_rand, step_size)
 2.  if COLLISION_FREE(q_near, q_new):
-3.      q_min â† q_near
+3.      q_min ← q_near
 4.      // Find all nearby nodes within radius r
-5.      near_nodes â† NEAR(tree, q_new, r)
+5.      near_nodes ← NEAR(tree, q_new, r)
 6.      for q_n in near_nodes:
 7.          if COLLISION_FREE(q_n, q_new):
 8.              // Choose cheapest connection
 9.              if COST(q_n) + DIST(q_n, q_new) < COST(q_min) + DIST(q_min, q_new):
-10.                 q_min â† q_n
+10.                 q_min ← q_n
 11.     // Insert q_new with cheapest parent
-12.     tree â† tree âˆª {q_new}
-13.     edges â† edges âˆª {(q_min, q_new)}
+12.     tree ← tree ∪ {q_new}
+13.     edges ← edges ∪ {(q_min, q_new)}
 14.     // Rewire: check if q_new provides cheaper path to any near node
 15.     for q_n in near_nodes:
 16.         if COLLISION_FREE(q_new, q_n):
@@ -1107,7 +1107,7 @@ Algorithm: RRT*-EXTEND (additional steps)
 18.                 REWIRE(q_n, q_new)
 ```
 
-**Complexity:** RRT* rewiring radius r â‰ˆ Î³ (log n/n)^{1/d} for d-dimensional space. This ensures O(n log n) amortized cost versus RRT's O(n) per iteration.
+**Complexity:** RRT* rewiring radius r ≈ γ (log n/n)^{1/d} for d-dimensional space. This ensures O(n log n) amortized cost versus RRT's O(n) per iteration.
 
 ### 14.7.6 Complexity Analysis
 
@@ -1118,9 +1118,9 @@ Algorithm: RRT*-EXTEND (additional steps)
 | RRT with KD-tree | O(log N) | O(N) | KD-tree reduces nearest-neighbor to O(log N) |
 | RRT* (per iteration) | O(N log N) | O(N) | Rewiring queries near neighbors within radius r |
 | Path smoothing | O(K) | O(1) | K path nodes; shortcut short-cutting iterations |
-| Collision checking | O(M Ã— L) | O(1) | M obstacles, L interpolation points along segment |
+| Collision checking | O(M × L) | O(1) | M obstacles, L interpolation points along segment |
 
-**Why nearest-neighbor matters:** With N=10,000 nodes, naive O(N) search means 10,000 distance computations per iteration. A KD-tree drops this to O(log N) â‰ˆ 14 comparisons. For real-time planning at 10+ Hz, KD-tree or R-tree acceleration is mandatory.
+**Why nearest-neighbor matters:** With N=10,000 nodes, naive O(N) search means 10,000 distance computations per iteration. A KD-tree drops this to O(log N) ≈ 14 comparisons. For real-time planning at 10+ Hz, KD-tree or R-tree acceleration is mandatory.
 
 ### 14.7.7 Advantages & Disadvantages
 
@@ -1148,16 +1148,16 @@ Algorithm: RRT*-EXTEND (additional steps)
 
 ## 14.8 Control
 
-**Real-world analogy:** Cruise control in your car. You set a target speed (setpoint). The system measures current speed (feedback), computes the difference (error), and adjusts the throttle (control output). Going uphill? Error increases â†’ more throttle. Going downhill? Error decreases â†’ less throttle or brake. This **feedback loop** runs continuously, rejecting disturbances without knowing they exist.
+**Real-world analogy:** Cruise control in your car. You set a target speed (setpoint). The system measures current speed (feedback), computes the difference (error), and adjusts the throttle (control output). Going uphill? Error increases → more throttle. Going downhill? Error decreases → less throttle or brake. This **feedback loop** runs continuously, rejecting disturbances without knowing they exist.
 
 ### 14.8.1 The Control Pipeline
 
 
 1. **Measure:** Read sensor feedback (encoder, IMU, camera).
-2. **Compare:** Compute error = desired âˆ’ actual.
+2. **Compare:** Compute error = desired − actual.
 3. **Compute control:** Apply control law (PID, MPC).
 4. **Output:** Send command to actuator (PWM, torque, voltage).
-5. **Wait:** Timestep (typically 1â€“100 ms).
+5. **Wait:** Timestep (typically 1–100 ms).
 6. **Repeat:** Feedback loop continues indefinitely.
 
 ### 14.8.2 PID Control
@@ -1175,42 +1175,42 @@ where $e(t)$ is the error.
 | **Integral** | Accumulates past error | Eliminates steady-state error; causes windup |
 | **Derivative** | Predicts future error | Dampens oscillations; amplifies sensor noise |
 
-### 14.8.3 Algorithm â€” PID with Anti-Windup
+### 14.8.3 Algorithm — PID with Anti-Windup
 
 
 ```
 Algorithm: PID-CONTROL
 Input:  setpoint, measurement, Kp, Ki, Kd, dt, integral_limit
 Output: control_signal
-1.  error â† setpoint - measurement
-2.  proportional â† Kp * error
-3.  integral â† integral + Ki * error * dt
-4.  integral â† CLAMP(integral, -integral_limit, integral_limit)  // anti-windup
-5.  derivative â† Kd * (error - prev_error) / dt
-6.  output â† proportional + integral + derivative
-7.  output â† CLAMP(output, -output_limit, output_limit)
-8.  prev_error â† error
+1.  error ← setpoint - measurement
+2.  proportional ← Kp * error
+3.  integral ← integral + Ki * error * dt
+4.  integral ← CLAMP(integral, -integral_limit, integral_limit)  // anti-windup
+5.  derivative ← Kd * (error - prev_error) / dt
+6.  output ← proportional + integral + derivative
+7.  output ← CLAMP(output, -output_limit, output_limit)
+8.  prev_error ← error
 9.  return output
 ```
 
-### 14.8.4 Dry Run â€” PID for Ball Balancing on a Beam
+### 14.8.4 Dry Run — PID for Ball Balancing on a Beam
 
 
 **Scenario:** Balance a ball at position 0. Beam angle is controlled by a servo. Kp=2.0, Ki=0.5, Kd=0.1.
 
-| t (s) | Setpoint | Ball pos | Error | P | I | D | Output | Beam angle (Â°) |
+| t (s) | Setpoint | Ball pos | Error | P | I | D | Output | Beam angle (°) |
 |:-----:|:--------:|:--------:|:-----:|:-:|:-:|:-:|:------:|:--------------:|
-| 0.0 | 0.0 | 0.5 | âˆ’0.5 | âˆ’1.0 | 0 | â€” | âˆ’1.0 | 0 â†’ tilt left 10Â° |
-| 0.1 | 0.0 | 0.3 | âˆ’0.3 | âˆ’0.6 | âˆ’0.25 | 2.0 | 1.15 | +11.5Â° tilt right |
-| 0.2 | 0.0 | 0.1 | âˆ’0.1 | âˆ’0.2 | âˆ’0.30 | 2.0 | 1.50 | +15Â° (overshoot correction) |
-| 0.3 | 0.0 | âˆ’0.05 | +0.05 | +0.1 | âˆ’0.28 | âˆ’1.5 | âˆ’1.68 | âˆ’16.8Â° braking |
-| 0.4 | 0.0 | âˆ’0.02 | +0.02 | +0.04 | âˆ’0.27 | âˆ’0.7 | âˆ’0.93 | âˆ’9.3Â° settling |
-| 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | âˆ’0.27 | âˆ’0.2 | âˆ’0.47 | âˆ’4.7Â° |
-| 0.6 | 0.0 | 0.01 | âˆ’0.01 | âˆ’0.02 | âˆ’0.28 | 0.1 | âˆ’0.20 | âˆ’2.0Â° near steady state |
+| 0.0 | 0.0 | 0.5 | −0.5 | −1.0 | 0 | — | −1.0 | 0 → tilt left 10° |
+| 0.1 | 0.0 | 0.3 | −0.3 | −0.6 | −0.25 | 2.0 | 1.15 | +11.5° tilt right |
+| 0.2 | 0.0 | 0.1 | −0.1 | −0.2 | −0.30 | 2.0 | 1.50 | +15° (overshoot correction) |
+| 0.3 | 0.0 | −0.05 | +0.05 | +0.1 | −0.28 | −1.5 | −1.68 | −16.8° braking |
+| 0.4 | 0.0 | −0.02 | +0.02 | +0.04 | −0.27 | −0.7 | −0.93 | −9.3° settling |
+| 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | −0.27 | −0.2 | −0.47 | −4.7° |
+| 0.6 | 0.0 | 0.01 | −0.01 | −0.02 | −0.28 | 0.1 | −0.20 | −2.0° near steady state |
 
 **Observation:** The ball converges to setpoint within ~0.5s. Without derivative, the ball would oscillate several times. Without integral, a small steady-state error would persist due to gravity bias.
 
-### 14.8.5 Python â€” PID Controller
+### 14.8.5 Python — PID Controller
 
 
 ```python
@@ -1261,7 +1261,7 @@ import math
 pid = PID(Kp=2.0, Ki=0.5, Kd=0.1)
 system = BallBeamSystem()
 dt = 0.02
-print("Time(s)  Pos(m)  Error   P       I       D       Output  Angle(Â°)")
+print("Time(s)  Pos(m)  Error   P       I       D       Output  Angle(°)")
 for i in range(50):
     t = i * dt
     pos = system.position
@@ -1286,7 +1286,7 @@ $$\text{subject to } x_{k+1} = f(x_k, u_k), \quad x_k \in \mathcal{X}, \quad u_k
 
 Only the first control $u_t^*$ is applied; then the horizon recedes.
 
-**Key advantage over PID:** MPC handles **constraints** natively (joint limits, maximum torque, obstacle avoidance). **Disadvantage:** requires solving an optimization problem at each step â€” orders of magnitude more computation than PID.
+**Key advantage over PID:** MPC handles **constraints** natively (joint limits, maximum torque, obstacle avoidance). **Disadvantage:** requires solving an optimization problem at each step — orders of magnitude more computation than PID.
 
 ### 14.8.7 Complexity Analysis
 
@@ -1294,12 +1294,12 @@ Only the first control $u_t^*$ is applied; then the horizon recedes.
 | Controller | Time | Space | Why |
 |------------|------|-------|-----|
 | PID | O(1) | O(1) | Three terms, two state variables (integral, prev_error) |
-| LQR (linear) | O(nÂ³) once | O(nÂ²) | Algebraic Riccati equation solved offline |
-| LQR (time-varying) | O(nÂ²) per step | O(nÂ²) | Backward Riccati propagation |
-| MPC (linear, QP) | O(HÂ³ nÂ³) | O(HÂ² nÂ²) | H-step horizon, n-D state â€” quadratic program |
-| MPC (nonlinear) | O(H N_iter nÂ³) | O(HÂ² nÂ²) | Iterative SQP solves per step |
+| LQR (linear) | O(n³) once | O(n²) | Algebraic Riccati equation solved offline |
+| LQR (time-varying) | O(n²) per step | O(n²) | Backward Riccati propagation |
+| MPC (linear, QP) | O(H³ n³) | O(H² n²) | H-step horizon, n-D state — quadratic program |
+| MPC (nonlinear) | O(H N_iter n³) | O(H² n²) | Iterative SQP solves per step |
 
-**Why PID dominates industry:** At a 1 kHz control rate (1 ms budget), a PID controller consumes ~1 Î¼s. An MPC may consume 10â€“100 ms, limiting loop rate to 10â€“100 Hz. For fast systems (drones, motor drives), PID's simplicity is a feature.
+**Why PID dominates industry:** At a 1 kHz control rate (1 ms budget), a PID controller consumes ~1 μs. An MPC may consume 10–100 ms, limiting loop rate to 10–100 Hz. For fast systems (drones, motor drives), PID's simplicity is a feature.
 
 ### 14.8.8 Advantages & Disadvantages
 
@@ -1317,7 +1317,7 @@ Only the first control $u_t^*$ is applied; then the horizon recedes.
 
 | Edge Case | Problem | Mitigation |
 |-----------|---------|------------|
-| Integral windup | Large sustained error â†’ integral saturates | Clamp integral; conditional integration |
+| Integral windup | Large sustained error → integral saturates | Clamp integral; conditional integration |
 | Derivative kick | Step change in setpoint causes spike | Setpoint filtering; derivative on measurement only |
 | Actuator saturation | Control signal exceeds hardware limits | Anti-windup integrator clamping |
 | Sensor noise | Derivative amplifies high-frequency noise | Low-pass filter on D term; use measurement derivative |
@@ -1332,13 +1332,13 @@ Only the first control $u_t^*$ is applied; then the horizon recedes.
 
 | Feature | Description | Analogy |
 |---------|-------------|---------|
-| **Nodes** | Executable processes for specific functions | Like microservices â€” one node for camera, one for planner |
-| **Topics** | Named buses for asynchronous pub/sub message passing | Like a message queue â€” publisher sends, any subscriber receives |
-| **Services** | Synchronous request-response (call + wait + reply) | Like an RPC call â€” "get_map" returns the map |
-| **Actions** | Goal-oriented async tasks with feedback and cancellation | Like a background job â€” "go_to_pose" reports progress |
-| **tf (transform)** | Coordinate frame tree with time-stamped transforms | Like a global coordinate registry â€” "where is the camera relative to base?" |
+| **Nodes** | Executable processes for specific functions | Like microservices — one node for camera, one for planner |
+| **Topics** | Named buses for asynchronous pub/sub message passing | Like a message queue — publisher sends, any subscriber receives |
+| **Services** | Synchronous request-response (call + wait + reply) | Like an RPC call — "get_map" returns the map |
+| **Actions** | Goal-oriented async tasks with feedback and cancellation | Like a background job — "go_to_pose" reports progress |
+| **tf (transform)** | Coordinate frame tree with time-stamped transforms | Like a global coordinate registry — "where is the camera relative to base?" |
 | **Launch files** | XML/JSON/YAML files that start multiple nodes | Like docker-compose for robot processes |
-| **Bags** | Recorded ROS message logs for debugging | Like a flight data recorder â€” replay sensor data offline |
+| **Bags** | Recorded ROS message logs for debugging | Like a flight data recorder — replay sensor data offline |
 
 ### 14.9.1 ROS Communication Patterns
 
@@ -1382,11 +1382,11 @@ node navigation:
 |---------|-------|-------|
 | Transport | Custom TCPROS/UDPROS | DDS (RTPS) |
 | Discovery | Centralized (roscore) | Distributed (DDS discovery) |
-| Real-time | âŒ Not supported | âœ… Supported via DDS |
-| Security | âŒ None | âœ… SROS2 (DDS security) |
+| Real-time | ❌ Not supported | ✅ Supported via DDS |
+| Security | ❌ None | ✅ SROS2 (DDS security) |
 | Multi-robot | Difficult | Native via DDS partitions |
 | Python version | Python 2 | Python 3 |
-| Lifecycle | âŒ | âœ… Managed nodes |
+| Lifecycle | ❌ | ✅ Managed nodes |
 | Target | Research | Production |
 | Simulation | Stage (2D, lightweight) | Gazebo (3D, full physics) |
 
@@ -1415,14 +1415,14 @@ Robotics interview questions typically span three pillars: **SLAM**, **sensor fu
 ### Q1: Explain the SLAM problem. Why can't you solve localization and mapping separately?
 
 
-**Answer:** SLAM is the joint estimation problem of a robot's trajectory and the map of its environment given noisy sensor data. The two are coupled â€” to build a map you need to know where you are (localization), and to know where you are you need a map. This creates a chicken-and-egg dependency.
+**Answer:** SLAM is the joint estimation problem of a robot's trajectory and the map of its environment given noisy sensor data. The two are coupled — to build a map you need to know where you are (localization), and to know where you are you need a map. This creates a chicken-and-egg dependency.
 
 Solving them separately fails because:
 - **If you guess the map first:** Errors in the assumed map cause systematic localization bias.
 - **If you localize first:** Odometry drift grows unboundedly without map corrections.
 - **Only the joint posterior** $P(x_{1:t}, m \mid z_{1:t}, u_{1:t})$ correctly captures the mutual uncertainty.
 
-Approaches: EKF-SLAM (online, O(nÂ²) in landmarks) and GraphSLAM (batch, exploits sparsity). Modern visual SLAM (ORB-SLAM3) operates in real-time with loop closure correcting long-term drift.
+Approaches: EKF-SLAM (online, O(n²) in landmarks) and GraphSLAM (batch, exploits sparsity). Modern visual SLAM (ORB-SLAM3) operates in real-time with loop closure correcting long-term drift.
 
 ### Q2: How does a Kalman filter fuse multiple sensors? Walk through the math.
 
@@ -1437,11 +1437,11 @@ $$P_t = (I - K H) P_t^-$$
 
 For sensor fusion with heterogeneous sensors:
 - Each sensor contributes a measurement equation: $z_i = H_i x + v_i$
-- Sensors with low noise $R_i$ â†’ high Kalman gain â†’ more weight
-- Sensors with high noise $R_i$ â†’ low Kalman gain â†’ less weight
-- Sensors can run at different rates â€” process each as it arrives
+- Sensors with low noise $R_i$ → high Kalman gain → more weight
+- Sensors with high noise $R_i$ → low Kalman gain → less weight
+- Sensors can run at different rates — process each as it arrives
 
-Example: GPS (R â‰ˆ 25 mÂ², 5 Hz) + IMU (R â‰ˆ 0.01 mÂ²/sÂ², 200 Hz). At 200 Hz, IMU predicts forward. When GPS arrives every 0.2s, the filter corrects accumulated IMU drift. The effective noise of the fused estimate is lower than either sensor alone â€” this is the **sensor fusion advantage**.
+Example: GPS (R ≈ 25 m², 5 Hz) + IMU (R ≈ 0.01 m²/s², 200 Hz). At 200 Hz, IMU predicts forward. When GPS arrives every 0.2s, the filter corrects accumulated IMU drift. The effective noise of the fused estimate is lower than either sensor alone — this is the **sensor fusion advantage**.
 
 ### Q3: Compare PID and MPC. When would you use each?
 
@@ -1454,30 +1454,30 @@ Example: GPS (R â‰ˆ 25 mÂ², 5 Hz) + IMU (R â‰ˆ 0.01 mÂ²/sÂ², 200 H
 | **Constraints** | Cannot handle natively | Handles input/state/output constraints |
 | **Multi-variable** | SISO (single-input, single-output) | MIMO (multi-input, multi-output) |
 | **Horizon** | Instantaneous | Predictive (looks ahead H steps) |
-| **Computation** | O(1), ~1 Î¼s | O(HÂ³ nÂ³), ~1â€“100 ms |
+| **Computation** | O(1), ~1 μs | O(H³ n³), ~1–100 ms |
 | **Tuning parameters** | 3 (Kp, Ki, Kd) | Many (Q, R, horizon, constraints) |
 
-**Use PID when:** The system is SISO, linear-ish, and you need very high loop rates (1â€“10 kHz). Example: motor speed control, quadcopter rate control.
+**Use PID when:** The system is SISO, linear-ish, and you need very high loop rates (1–10 kHz). Example: motor speed control, quadcopter rate control.
 
 **Use MPC when:** The system has constraints (joint limits, torque bounds), multiple coupled inputs, or you need preview capability. Example: autonomous driving (steering + throttle + brake coordinated with lookahead).
 
-Real systems often **cascade** them: MPC plans a trajectory at 10â€“50 Hz, and a low-level PID tracks it at 1 kHz.
+Real systems often **cascade** them: MPC plans a trajectory at 10–50 Hz, and a low-level PID tracks it at 1 kHz.
 
 ### Q4: What is the kidnapped robot problem and how does MCL handle it?
 
 
 **Answer:** The kidnapped robot problem occurs when a robot is suddenly teleported to a new location without being told. The true pose diverges discontinuously from the filter's belief. MCL handles this by:
 
-1. **Random injection:** Each resampling step replaces a small fraction (1â€“10%) of particles with uniform random poses across the state space.
+1. **Random injection:** Each resampling step replaces a small fraction (1–10%) of particles with uniform random poses across the state space.
 2. **Multi-modal belief:** Unlike the Kalman filter's single Gaussian, MCL maintains multiple hypotheses. If the robot was in one mode and gets teleported, particles in the new mode gain weight.
 3. **Recovery:** When enough random particles land near the true pose and accumulate high weight, the cloud converges to the correct mode.
 
-Without random injection, particles trapped in the wrong mode never recover â€” MCL becomes effectively uni-modal and behaves like a failed Kalman filter.
+Without random injection, particles trapped in the wrong mode never recover — MCL becomes effectively uni-modal and behaves like a failed Kalman filter.
 
 ### Q5: Explain data association in SLAM and why it's hard.
 
 
-**Answer:** Data association is the problem of determining which observed landmark corresponds to which map landmark. It's the perceptual aliasing problem â€” two different places can look identical through the sensor.
+**Answer:** Data association is the problem of determining which observed landmark corresponds to which map landmark. It's the perceptual aliasing problem — two different places can look identical through the sensor.
 
 **Why it's hard:**
 - **Ambiguity:** In a hallway, every door looks identical from 5m away.
@@ -1486,7 +1486,7 @@ Without random injection, particles trapped in the wrong mode never recover â�
 - **Spurious measurements:** LIDAR reflections, camera artifacts.
 
 **Solutions:**
-- **Nearest-neighbor gating:** Match if Mahalanobis distance &lt; Ï‡Â² threshold.
+- **Nearest-neighbor gating:** Match if Mahalanobis distance &lt; χ² threshold.
 - **JCBB (Joint Compatibility Branch and Bound):** Checks joint compatibility of all matches.
 - **RANSAC:** Random sampling to find geometrically consistent matches.
 - **Appearance-based:** Use visual features (SIFT, SuperPoint) that are more distinctive than geometry alone.
@@ -1512,7 +1512,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ## 14.11 Applications in Real Systems
 
-### 14.11.1 Roomba (iRobot) â€” Consumer Cleaning Robot
+### 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot
 
 
 | Component | Implementation |
@@ -1520,12 +1520,12 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 | **Sensors** | IR cliff sensors (drop detection), bump switches, optical encoders, dirt detection |
 | **Localization** | Low-cost: dead-reckoning + IR wall tracking (no full SLAM) |
 | **Planning** | Random bounce + spiral + wall-follow (no explicit path planning) |
-| **Control** | Simple threshold-based: if bumper â†’ reverse and turn |
+| **Control** | Simple threshold-based: if bumper → reverse and turn |
 | **Why it works** | In small homes, random coverage is sufficient and much cheaper than SLAM |
 
-**AI lesson:** Roomba proves that clever dumb algorithms often beat complex intelligent ones in practice. A full SLAM-enabled vacuum would cost 10Ã— more but clean only marginally better.
+**AI lesson:** Roomba proves that clever dumb algorithms often beat complex intelligent ones in practice. A full SLAM-enabled vacuum would cost 10× more but clean only marginally better.
 
-### 14.11.2 Boston Dynamics â€” Atlas and Spot
+### 14.11.2 Boston Dynamics — Atlas and Spot
 
 
 | Capability | Technique |
@@ -1544,8 +1544,8 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 | Module | Technology |
 |--------|-----------|
 | **Localization** | GPS + IMU + wheel odometry fused via EKF at 100 Hz; LIDAR map matching at 10 Hz |
-| **Map** | Pre-built HD maps (5â€“10 cm accuracy) with lane markings, poles, curbs |
-| **SLAM** | Not real-time â€” HD maps are built offline by survey vehicles. Live SLAM only for construction zones |
+| **Map** | Pre-built HD maps (5–10 cm accuracy) with lane markings, poles, curbs |
+| **SLAM** | Not real-time — HD maps are built offline by survey vehicles. Live SLAM only for construction zones |
 | **Planning** | Hybrid A* (search) + optimization (smoothing) + MPC (trajectory tracking) |
 | **Control** | Cascaded PID (steering servo) + MPC (speed/longitudinal) |
 
@@ -1556,9 +1556,9 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 | Aspect | Implementation |
 |--------|---------------|
-| **Control** | Cascaded: position loop â†’ velocity loop â†’ current loop, each PID, at 1â€“8 kHz |
+| **Control** | Cascaded: position loop → velocity loop → current loop, each PID, at 1–8 kHz |
 | **Planning** | Cartesian space via inverse kinematics + smoothing splines |
-| **Sensors** | Joint encoders (17â€“24 bit) + torque sensors in collaborative versions |
+| **Sensors** | Joint encoders (17–24 bit) + torque sensors in collaborative versions |
 | **AI component** | Pick-and-place uses computer vision for object detection and grasp pose estimation |
 | **Safety** | Force limiting (cobot) via current monitoring + torque sensors |
 
@@ -1581,25 +1581,25 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 | Task | Algorithm | State | Sensor | Online? |
 |------|-----------|:---:|:---:|:---:|
-| Localization | MCL (Particle Filter) | x, y, Î¸ | Range finder | âœ… |
-| Localization | Extended Kalman Filter | x, y, Î¸ | Various | âœ… |
-| SLAM | EKF-SLAM | Pose + landmarks | Camera/LIDAR | âœ… |
-| SLAM | GraphSLAM | Full trajectory | Camera/LIDAR | âŒ (batch) |
-| Planning | RRT | Configuration space | None | âœ… |
-| Planning | RRT* | Configuration space | None | âœ… (asymp. opt.) |
-| Control | PID | Error state | Feedback sensor | âœ… |
-| Control | MPC | Full state + horizon | Model prediction | âœ… |
-| Fusion | Complementary | Orientation | IMU + absolute ref | âœ… |
-| Fusion | Kalman filter | Linear state | Multiple sensors | âœ… |
+| Localization | MCL (Particle Filter) | x, y, θ | Range finder | ✅ |
+| Localization | Extended Kalman Filter | x, y, θ | Various | ✅ |
+| SLAM | EKF-SLAM | Pose + landmarks | Camera/LIDAR | ✅ |
+| SLAM | GraphSLAM | Full trajectory | Camera/LIDAR | ❌ (batch) |
+| Planning | RRT | Configuration space | None | ✅ |
+| Planning | RRT* | Configuration space | None | ✅ (asymp. opt.) |
+| Control | PID | Error state | Feedback sensor | ✅ |
+| Control | MPC | Full state + horizon | Model prediction | ✅ |
+| Fusion | Complementary | Orientation | IMU + absolute ref | ✅ |
+| Fusion | Kalman filter | Linear state | Multiple sensors | ✅ |
 
 ---
 
-## Quick Reference â€” PID Control
+## Quick Reference — PID Control
 
 | Term | Name | Effect | Formula |
 |:---:|------|--------|---------|
 | P | Proportional | Corrects current error | K_p e(t) |
-| I | Integral | Eliminates steady-state error | K_i âˆ«e(t)dt |
+| I | Integral | Eliminates steady-state error | K_i ∫e(t)dt |
 | D | Derivative | Dampens oscillations | K_d de/dt |
 
 ### PID Tuning Heuristics
@@ -1617,11 +1617,11 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 | Application | K_p | K_i | K_d |
 |-------------|:---:|:---:|:---:|
-| DC motor speed | 0.5â€“2.0 | 0.1â€“0.5 | 0.01â€“0.1 |
-| Quadcopter angle | 4.0â€“8.0 | 0.0â€“0.5 | 0.1â€“0.5 |
-| Line-follower | 1.0â€“3.0 | 0.0â€“0.1 | 0.1â€“0.3 |
-| Temperature | 5.0â€“20.0 | 0.5â€“5.0 | 0.0 (noise sensitive) |
-| Joint position | 10.0â€“50.0 | 0.0â€“1.0 | 1.0â€“10.0 |
+| DC motor speed | 0.5–2.0 | 0.1–0.5 | 0.01–0.1 |
+| Quadcopter angle | 4.0–8.0 | 0.0–0.5 | 0.1–0.5 |
+| Line-follower | 1.0–3.0 | 0.0–0.1 | 0.1–0.3 |
+| Temperature | 5.0–20.0 | 0.5–5.0 | 0.0 (noise sensitive) |
+| Joint position | 10.0–50.0 | 0.0–1.0 | 1.0–10.0 |
 
 ---
 
@@ -1629,14 +1629,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 | Technique | ML | CV | NLP | Robotics | Research |
 |-----------|:---:|:---:|:---:|:--------:|:--------:|
-| MCL (Particle Filter) | â†” | âœ… | â†” | âœ… | âœ… |
-| Kalman Filter | âœ… | âœ… | â†” | âœ… | âœ… |
-| SLAM | â†” | âœ… | â†” | âœ… | âœ… |
-| RRT Planning | â†” | â†” | â†” | âœ… | âœ… |
-| PID Control | â†” | â†” | â†” | âœ… | âœ… |
-| ROS | â†” | â†” | â†” | âœ… | âœ… |
-| Sensor Fusion | âœ… | âœ… | â†” | âœ… | âœ… |
-| Model Predictive Control | âœ… | â†” | â†” | âœ… | âœ… |
+| MCL (Particle Filter) | ↔ | ✅ | ↔ | ✅ | ✅ |
+| Kalman Filter | ✅ | ✅ | ↔ | ✅ | ✅ |
+| SLAM | ↔ | ✅ | ↔ | ✅ | ✅ |
+| RRT Planning | ↔ | ↔ | ↔ | ✅ | ✅ |
+| PID Control | ↔ | ↔ | ↔ | ✅ | ✅ |
+| ROS | ↔ | ↔ | ↔ | ✅ | ✅ |
+| Sensor Fusion | ✅ | ✅ | ↔ | ✅ | ✅ |
+| Model Predictive Control | ✅ | ↔ | ↔ | ✅ | ✅ |
 
 ---
 
@@ -1652,7 +1652,7 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 **Q2:** RRT* improves on RRT by providing what guarantee?
 - A) Faster convergence
-- B) Asymptotic optimality â€” the solution converges to the optimal path as samples â†’ âˆž
+- B) Asymptotic optimality — the solution converges to the optimal path as samples → ∞
 - C) Deterministic paths
 - D) Guaranteed collision avoidance
 
@@ -1676,11 +1676,11 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 **Q5:** Why does EKF-SLAM scale poorly to large environments?
 - A) The robot runs out of battery
-- B) The covariance matrix grows as O(nÂ²) for n landmarks, making updates quadratic
+- B) The covariance matrix grows as O(n²) for n landmarks, making updates quadratic
 - C) LIDAR has limited range
 - D) GPS is unavailable indoors
 
-<details><summary>Answer&lt;/summary&gt;B) EKF-SLAM maintains a dense covariance matrix over the robot pose and all landmark positions. With L=10,000 landmarks, the state is ~20,003-dimensional and the covariance matrix has ~400M entries. Update complexity O(nÂ²) becomes prohibitive.</details>
+<details><summary>Answer&lt;/summary&gt;B) EKF-SLAM maintains a dense covariance matrix over the robot pose and all landmark positions. With L=10,000 landmarks, the state is ~20,003-dimensional and the covariance matrix has ~400M entries. Update complexity O(n²) becomes prohibitive.</details>
 
 **Q6:** Which robot type uses MPC for whole-body control including balance?
 - A) Roomba
@@ -1691,10 +1691,10 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 <details><summary>Answer&lt;/summary&gt;C) Atlas uses model predictive control (MPC) that solves a full-body dynamics optimization at 50 Hz to maintain balance during dynamic locomotion. This is far beyond the simple threshold or PID controllers used in other platforms.</details>
 
 **Q7:** Place the following steps in the correct sense-plan-act order:
-- A) Send PWM to motors â†’ read LIDAR scan â†’ compute path â†’ filter noise
-- B) Read LIDAR scan â†’ filter noise â†’ compute path â†’ send PWM to motors
-- C) Compute path â†’ filter noise â†’ read LIDAR scan â†’ send PWM
-- D) Send PWM â†’ compute path â†’ filter noise â†’ read LIDAR
+- A) Send PWM to motors → read LIDAR scan → compute path → filter noise
+- B) Read LIDAR scan → filter noise → compute path → send PWM to motors
+- C) Compute path → filter noise → read LIDAR scan → send PWM
+- D) Send PWM → compute path → filter noise → read LIDAR
 
 <details><summary>Answer&lt;/summary&gt;B) The correct order is: sense (read LIDAR), process (filter noise), plan (compute path), act (send PWM). This is the fundamental sense-plan-act cycle.</details>
 
@@ -1719,10 +1719,10 @@ Robotics integrates sensing, state estimation, planning, and control to create p
 - **SLAM:** EKF-SLAM and GraphSLAM solve the joint mapping-localization problem, with trade-offs between online operation and global consistency.
 - **Motion planning:** RRT and RRT* explore configuration space through random sampling; RRT* provides asymptotic optimality through rewiring.
 - **Control:** PID dominates for simple, fast systems; MPC enables constraint-aware optimal control for complex systems.
-- **ROS:** The Robot Operating System provides the middleware layer â€” nodes, topics, services, actions, and tf.
+- **ROS:** The Robot Operating System provides the middleware layer — nodes, topics, services, actions, and tf.
 - **Real systems:** Roomba (random coverage), Boston Dynamics (MPC whole-body control), self-driving cars (HD maps + EKF), and industrial arms (cascaded PID) demonstrate the spectrum of robotics AI.
 
-Probabilistic reasoning is the thread connecting all these components â€” from the particle filter's weighted samples to the Kalman filter's covariance propagation to SLAM's joint posterior over pose and map. The robot's fundamental challenge is acting reliably despite uncertainty, and these algorithms provide the mathematical tools to do so.
+Probabilistic reasoning is the thread connecting all these components — from the particle filter's weighted samples to the Kalman filter's covariance propagation to SLAM's joint posterior over pose and map. The robot's fundamental challenge is acting reliably despite uncertainty, and these algorithms provide the mathematical tools to do so.
 
 ---
 
@@ -1746,7 +1746,7 @@ Probabilistic reasoning is the thread connecting all these components â€” f
 ### Challenge Problems
 
 10. Implement a 2D SLAM system using GraphSLAM. Generate a simulated environment with 20 landmarks. Evaluate map accuracy against ground truth as trajectory length increases from 10m to 100m.
-11. Design and simulate a controller for a quadcopter hovering at 1m altitude. Start with cascaded PID (outer position â†’ middle velocity â†’ inner attitude), then replace the inner loop with MPC. Compare disturbance rejection.
+11. Design and simulate a controller for a quadcopter hovering at 1m altitude. Start with cascaded PID (outer position → middle velocity → inner attitude), then replace the inner loop with MPC. Compare disturbance rejection.
 12. Implement sensor fusion for a mobile robot using an EKF that combines wheel odometry (100 Hz), IMU (200 Hz), and LIDAR scan matching (10 Hz). Measure drift reduction compared to odometry-only.
 
 ---

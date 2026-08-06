@@ -1,4 +1,4 @@
-﻿# Chapter 7: Web Technologies â€” Exam Quick Revision
+# Chapter 7: Web Technologies — Exam Quick Revision
 
 ## Learning Objectives
 - Distinguish 2-tier, 3-tier, and n-tier client-server architectures
@@ -33,14 +33,14 @@
 
 | Architecture | Description | Pros | Cons |
 |-------------|-------------|------|------|
-| **2-Tier** | Client â†” Server (DB) | Simple, fast for small apps | Scalability issues, fat client |
-| **3-Tier** | Client â†” App Server â†” DB Server | Scalable, thin client, security | More complex, more latency |
+| **2-Tier** | Client ↔ Server (DB) | Simple, fast for small apps | Scalability issues, fat client |
+| **3-Tier** | Client ↔ App Server ↔ DB Server | Scalable, thin client, security | More complex, more latency |
 | **n-Tier** | Multiple specialized servers | Highly scalable, modular | Complex deployment, expensive |
 
 ```
-2-Tier: [Browser] â†â†’ [DB Server]
-3-Tier: [Browser] â†â†’ [Web/App Server] â†â†’ [DB Server]
-n-Tier: [Browser] â†â†’ [Load Balancer] â†â†’ [Web Server] â†â†’ [App Server] â†â†’ [DB Server]
+2-Tier: [Browser] ←→ [DB Server]
+3-Tier: [Browser] ←→ [Web/App Server] ←→ [DB Server]
+n-Tier: [Browser] ←→ [Load Balancer] ←→ [Web Server] ←→ [App Server] ←→ [DB Server]
 ```
 
 ---
@@ -75,10 +75,10 @@ n-Tier: [Browser] â†â†’ [Load Balancer] â†â†’ [Web Server] �
 | Class | `.class` | `.highlight { background: yellow; }` |
 | ID | `#id` | `#header { height: 60px; }` |
 | Attribute | `[attr=value]` | `[type="text"] { border: 1px solid; }` |
-| Descendant | `A B` | `div p { }` â€” any p inside div |
-| Child | `A > B` | `ul > li { }` â€” direct child only |
-| Adjacent sibling | `A + B` | `h2 + p { }` â€” p immediately after h2 |
-| General sibling | `A ~ B` | `h2 ~ p { }` â€” any p after h2 |
+| Descendant | `A B` | `div p { }` — any p inside div |
+| Child | `A > B` | `ul > li { }` — direct child only |
+| Adjacent sibling | `A + B` | `h2 + p { }` — p immediately after h2 |
+| General sibling | `A ~ B` | `h2 ~ p { }` — any p after h2 |
 | Pseudo-class | `:pseudo` | `a:hover { }`, `:first-child`, `:nth-child(n)` |
 | Pseudo-element | `::pseudo` | `::before`, `::after`, `::first-line` |
 
@@ -87,17 +87,17 @@ n-Tier: [Browser] â†â†’ [Load Balancer] â†â†’ [Web Server] �
 **Formula:** (Number of ID selectors, Number of class/pseudo-class/attribute selectors, Number of type/pseudo-element selectors)
 
 ```
-#header .nav li â†’ (1, 1, 1) â†’ specificity = 1-1-1
-.nav a:hover â†’ (0, 2, 1) â†’ specificity = 0-2-1
-div p â†’ (0, 0, 2) â†’ specificity = 0-0-2
-* â†’ (0, 0, 0) â†’ specificity = 0-0-0
+#header .nav li → (1, 1, 1) → specificity = 1-1-1
+.nav a:hover → (0, 2, 1) → specificity = 0-2-1
+div p → (0, 0, 2) → specificity = 0-0-2
+* → (0, 0, 0) → specificity = 0-0-0
 ```
 
 **Inline styles** override all (specificity = 1-0-0-0). `!important` overrides everything (use sparingly).
 
 ---
 
-## 4. JavaScript â€” DOM Manipulation &amp; Events
+## 4. JavaScript — DOM Manipulation &amp; Events
 
 ### DOM Traversal &amp; Manipulation
 
@@ -137,7 +137,7 @@ element.addEventListener('click', function(e) {
     e.stopPropagation();          // stop bubbling
 }, false);                        // false = bubble phase (default)
 
-// Event delegation â€” single listener on parent
+// Event delegation — single listener on parent
 document.querySelector('ul').addEventListener('click', function(e) {
     if (e.target.tagName === 'LI') {
         console.log('Clicked li:', e.target.textContent);
@@ -147,9 +147,9 @@ document.querySelector('ul').addEventListener('click', function(e) {
 
 ### Event Phases
 
-1. **Capturing phase:** Window â†’ Document â†’ ... â†’ Target
+1. **Capturing phase:** Window → Document → ... → Target
 2. **Target phase:** Event reaches target element
-3. **Bubbling phase:** Target â†’ ... â†’ Document â†’ Window (default)
+3. **Bubbling phase:** Target → ... → Document → Window (default)
 
 ---
 
@@ -159,7 +159,7 @@ document.querySelector('ul').addEventListener('click', function(e) {
 |--------|------|-----|
 | Full form | JavaScript Object Notation | Extensible Markup Language |
 | Syntax | `{"key": "value"}` | `<key>value</key>` |
-| Data types | string, number, boolean, null, array, object | All text â€” types declared via schema |
+| Data types | string, number, boolean, null, array, object | All text — types declared via schema |
 | Parsing | Native `JSON.parse()` in JS, fast | Requires XML parser, slower |
 | Namespace | No | Yes (`xmlns:`) |
 | Comments | Not supported | `<!-- comment -->` |
@@ -173,13 +173,13 @@ document.querySelector('ul').addEventListener('click', function(e) {
 
 | Method | Safe | Idempotent | Cacheable | Body in Request | Use Case |
 |--------|------|------------|-----------|-----------------|----------|
-| **GET** | âœ… | âœ… | âœ… | âŒ | Retrieve resource |
-| **HEAD** | âœ… | âœ… | âœ… | âŒ | Headers only (no body) |
-| **POST** | âŒ | âŒ | âš ï¸ | âœ… | Create resource |
-| **PUT** | âŒ | âœ… | âŒ | âœ… | Full update/replace |
-| **PATCH** | âŒ | âŒ | âŒ | âœ… | Partial update |
-| **DELETE** | âŒ | âœ… | âŒ | âŒ (usually) | Remove resource |
-| **OPTIONS** | âœ… | âœ… | âŒ | âŒ | Allowed methods for resource |
+| **GET** | ✅ | ✅ | ✅ | ❌ | Retrieve resource |
+| **HEAD** | ✅ | ✅ | ✅ | ❌ | Headers only (no body) |
+| **POST** | ❌ | ❌ | ⚠️ | ✅ | Create resource |
+| **PUT** | ❌ | ✅ | ❌ | ✅ | Full update/replace |
+| **PATCH** | ❌ | ❌ | ❌ | ✅ | Partial update |
+| **DELETE** | ❌ | ✅ | ❌ | ❌ (usually) | Remove resource |
+| **OPTIONS** | ✅ | ✅ | ❌ | ❌ | Allowed methods for resource |
 
 **Safe:** Does not modify server state. **Idempotent:** N identical requests have same effect as one.
 
@@ -221,7 +221,7 @@ document.querySelector('ul').addEventListener('click', function(e) {
 |---------|--------|----------------|---------------|
 | **Capacity** | 4 KB | 5-10 MB | 5-10 MB |
 | **Persistence** | Set via expires/max-age | Cleared on tab close | Persistent until cleared |
-| **Sent to server?** | âœ… Yes (automatic with requests) | âŒ No | âŒ No |
+| **Sent to server?** | ✅ Yes (automatic with requests) | ❌ No | ❌ No |
 | **Accessible from** | Client + Server | Client only (same tab) | Client only |
 | **Scope** | Domain + path | Single tab/window | Origin (protocol + domain + port) |
 | **Security** | HttpOnly, Secure, SameSite flags | Not accessible by server | Not accessible by server |
@@ -247,19 +247,19 @@ Set-Cookie: sessionId=abc123; Expires=Wed, 21 Oct 2026 07:28:00 GMT;
 | **HTTP methods** | GET/read, POST/create, PUT/update, DELETE | `POST /users` |
 | **Stateless** | Each request has all info (no server session) | Auth token in header |
 | **HATEOAS** | Responses include links to related resources | `{"links": {"self": "/users/123"}}` |
-| **Idempotent** | Same request â†’ same result | PUT, DELETE |
+| **Idempotent** | Same request → same result | PUT, DELETE |
 | **Representation** | Client receives resource representation | JSON, XML |
 
 ### REST API Design Example
 
 ```
-GET    /users              â†’ List all users
-POST   /users              â†’ Create new user
-GET    /users/{id}         â†’ Get specific user
-PUT    /users/{id}         â†’ Full update user
-PATCH  /users/{id}         â†’ Partial update user
-DELETE /users/{id}         â†’ Delete user
-GET    /users/{id}/orders  â†’ Get user's orders
+GET    /users              → List all users
+POST   /users              → Create new user
+GET    /users/{id}         → Get specific user
+PUT    /users/{id}         → Full update user
+PATCH  /users/{id}         → Partial update user
+DELETE /users/{id}         → Delete user
+GET    /users/{id}/orders  → Get user's orders
 ```
 
 ### REST vs SOAP
@@ -292,17 +292,17 @@ GET    /users/{id}/orders  â†’ Get user's orders
 ## 11. Browser Rendering Pipeline
 
 ```
-HTML â†’ DOM (Document Object Model)
-   â†“
-CSS â†’ CSSOM (CSS Object Model)
-   â†“
-DOM + CSSOM â†’ Render Tree (visible elements only)
-   â†“
-Layout (Reflow) â€” calculate position/size
-   â†“
-Paint â€” fill pixels (colors, images, text)
-   â†“
-Compositing â€” layers assembled for display
+HTML → DOM (Document Object Model)
+   ↓
+CSS → CSSOM (CSS Object Model)
+   ↓
+DOM + CSSOM → Render Tree (visible elements only)
+   ↓
+Layout (Reflow) — calculate position/size
+   ↓
+Paint — fill pixels (colors, images, text)
+   ↓
+Compositing — layers assembled for display
 ```
 
 ### Critical Rendering Path Optimizations
@@ -310,8 +310,8 @@ Compositing â€” layers assembled for display
 1. **Minimize critical resources:** Inline CSS, defer JS
 2. **Reduce render-blocking:** `<script async defer>`, media queries on CSS
 3. **Optimize reflows:** Batch DOM writes, avoid layout thrashing
-4. **Virtual DOM (React):** Batches DOM updates â€” diff + patch
-5. **CSS containment:** `contain: layout style paint` â€” isolate rendering
+4. **Virtual DOM (React):** Batches DOM updates — diff + patch
+5. **CSS containment:** `contain: layout style paint` — isolate rendering
 
 ---
 
@@ -323,7 +323,7 @@ Compositing â€” layers assembled for display
 - (c) 1-1-3
 - (d) 0-2-2
 
-**Answer:** (a) 1-2-1. IDs: #main = 1. Classes/attributes/pseudo-classes: .content, :hover = 2. Elements: div, a = 2? Actually div and a are 2 elements. Wait: div#main .content a:hover â†’ IDs: 1, Classes/pseudo-classes: .content and :hover = 2, Elements: div and a = 2. So (1, 2, 2) = 1-2-2. None of the options match. Let me reconsider: div#main .content a:hover â€” IDs: #main (1), attributes/classes: .content (1), pseudo-classes: :hover (1), elements: div + a (2). So (1, 2, 2). Closest is (a) 1-2-1 but that doesn't match. I need to be more careful.
+**Answer:** (a) 1-2-1. IDs: #main = 1. Classes/attributes/pseudo-classes: .content, :hover = 2. Elements: div, a = 2? Actually div and a are 2 elements. Wait: div#main .content a:hover → IDs: 1, Classes/pseudo-classes: .content and :hover = 2, Elements: div and a = 2. So (1, 2, 2) = 1-2-2. None of the options match. Let me reconsider: div#main .content a:hover — IDs: #main (1), attributes/classes: .content (1), pseudo-classes: :hover (1), elements: div + a (2). So (1, 2, 2). Closest is (a) 1-2-1 but that doesn't match. I need to be more careful.
 
 Actually I'll simplify the MCQ.
 
@@ -426,7 +426,7 @@ async function getUsers() {
 
 ## 13. CSS Flexbox &amp; Grid
 
-### Flexbox (1D layout â€” row or column)
+### Flexbox (1D layout — row or column)
 
 ```css
 .container {
@@ -442,7 +442,7 @@ async function getUsers() {
 }
 ```
 
-### CSS Grid (2D layout â€” rows and columns)
+### CSS Grid (2D layout — rows and columns)
 
 ```css
 .grid {
@@ -499,8 +499,8 @@ body { font-size: 16px; }
 | Device | Width |
 |--------|-------|
 | Mobile | &lt; 576px |
-| Tablet | 576px â€“ 992px |
-| Desktop | 992px â€“ 1200px |
+| Tablet | 576px – 992px |
+| Desktop | 992px – 1200px |
 | Large Desktop | &gt; 1200px |
 
 ## 15. CORS (Cross-Origin Resource Sharing)
@@ -544,7 +544,7 @@ Access-Control-Allow-Credentials: true
 3. **Compress** with Gzip/Brotli
 4. **Lazy load** images and non-critical resources
 5. **Preload** critical resources (`&lt;link rel="preload"&gt;`)
-6. **HTTP/2 multiplexing** â€” multiple requests over one connection
+6. **HTTP/2 multiplexing** — multiple requests over one connection
 7. **CDN** for static assets (edge caching)
 8. **Web Workers** for CPU-intensive tasks off main thread
 
@@ -552,9 +552,9 @@ Access-Control-Allow-Credentials: true
 
 ---
 
-## ðŸ“Œ Extended Theory â€” Deep Dive for IBPS SO Mains (2024â€“2026 Trends)
+## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
-### HTTP Server Simulation â€” TypeScript
+### HTTP Server Simulation — TypeScript
 
 ```typescript
 type HTTPMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'HEAD' | 'OPTIONS';
@@ -638,7 +638,7 @@ server.route('POST', '/api/users', (req) => ({
 }));
 ```
 
-### DOM Tree Builder â€” TypeScript
+### DOM Tree Builder — TypeScript
 
 ```typescript
 interface DOMNode {
@@ -667,7 +667,7 @@ class DOMParser {
     const innerContent = html.slice(openTagMatch[0].length, closeIdx);
     const children: DOMNode[] = [];
     
-    // Parse children (simplified â€” handles direct text and elements)
+    // Parse children (simplified — handles direct text and elements)
     let remaining = innerContent;
     while (remaining.length > 0) {
       const nextChild = remaining.match(/^([^<]*)(?:<(\w+)([^>]*)>(.*?)<\/\2>)?/s);
@@ -703,7 +703,7 @@ class DOMParser {
 }
 ```
 
-### JSON/XML Parser â€” TypeScript
+### JSON/XML Parser — TypeScript
 
 ```typescript
 class JSONValidator {
@@ -740,7 +740,7 @@ class XMLSimpleParser {
 }
 ```
 
-### HTTP Methods and Status Codes â€” Comprehensive Reference
+### HTTP Methods and Status Codes — Comprehensive Reference
 
 **Request/Response Flow:**
 ```mermaid
@@ -764,7 +764,7 @@ sequenceDiagram
 | Remove resource | DELETE | Optional | Yes | No |
 | Check options | OPTIONS | No | Yes | Yes |
 
-### Browser Rendering Pipeline â€” In-Depth
+### Browser Rendering Pipeline — In-Depth
 
 > **PYQ 2024:** What is the difference between reflow and repaint? Which is more expensive?
 
@@ -780,21 +780,21 @@ interface RenderStats {
 
 class RenderPipelineSimulator {
   simulate(html: string, css: string): RenderStats {
-    // Step 1: Parse HTML â†’ DOM
+    // Step 1: Parse HTML → DOM
     const startDOM = performance.now();
     const dom = new DOMParser().parse(html);
     const domTime = performance.now() - startDOM;
 
-    // Step 2: Parse CSS â†’ CSSOM
+    // Step 2: Parse CSS → CSSOM
     const domNodes = this.countNodes(dom);
     
     // Step 3: Render Tree = DOM + CSSOM (visible elements)
     const renderTreeSize = domNodes * 0.7; // ~70% visible
     
-    // Step 4: Layout (reflow) â€” calculate positions
+    // Step 4: Layout (reflow) — calculate positions
     const layoutDuration = renderTreeSize * 0.05; // heuristic
 
-    // Step 5: Paint â€” fill pixels
+    // Step 5: Paint — fill pixels
     const paintDuration = renderTreeSize * 0.03;
 
     return {
@@ -812,7 +812,7 @@ class RenderPipelineSimulator {
 }
 ```
 
-### CORS â€” Complete TypeScript Handler
+### CORS — Complete TypeScript Handler
 
 ```typescript
 interface CORSConfig {
@@ -854,7 +854,7 @@ class CORSMiddleware {
 }
 ```
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 <details>
 <summary>Q1: Which HTTP method is idempotent but NOT safe?</summary>
@@ -876,8 +876,8 @@ class CORSMiddleware {
 
 <details>
 <summary>Q4: The browser event propagation order is:</summary>
-(a) Bubbling â†’ Target â†’ Capturing (b) Capturing â†’ Target â†’ Bubbling (c) Target â†’ Capturing â†’ Bubbling (d) Bubbling â†’ Capturing â†’ Target
-**Answer:** (b) Capturing â†’ Target â†’ Bubbling. Event travels down (capture), reaches target, then bubbles up.
+(a) Bubbling → Target → Capturing (b) Capturing → Target → Bubbling (c) Target → Capturing → Bubbling (d) Bubbling → Capturing → Target
+**Answer:** (b) Capturing → Target → Bubbling. Event travels down (capture), reaches target, then bubbles up.
 </details>
 
 <details>
@@ -967,7 +967,7 @@ class CORSMiddleware {
 <details>
 <summary>Q19: In the browser rendering pipeline, what follows the Render Tree construction?</summary>
 (a) Paint (b) Layout (c) Composite (d) JavaScript execution
-**Answer:** (b) Layout. Render Tree â†’ Layout (reflow) â†’ Paint â†’ Composite.
+**Answer:** (b) Layout. Render Tree → Layout (reflow) → Paint → Composite.
 </details>
 
 <details>
@@ -976,7 +976,7 @@ class CORSMiddleware {
 **Answer:** (b) Multiplexing. HTTP/2 allows multiple concurrent streams over one TCP connection, eliminating head-of-line blocking.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
 1. Write a TypeScript HTTP client that sends GET, POST, PUT, DELETE requests and handles status codes.
 2. Calculate CSS specificity for: `div.container ul#nav li.active a[href="/home"]:hover`
@@ -1012,58 +1012,58 @@ class CORSMiddleware {
 **Answer Key:**
 
 2. IDs: #nav = 1. Classes/pseudo/attributes: .active, :hover, [href="/home"] = 3. Elements: div, ul, li, a = 4. Specificity = (1, 3, 4)
-3. #app â†’ header â†’ h1 "Title", main â†’ p "Content"
+3. #app → header → h1 "Title", main → p "Content"
 5. Cookie: 4KB, per-domain, sent to server. localStorage: 5-10MB, persistent, client-only. sessionStorage: 5-10MB, per-tab. IndexedDB: unlimited, structured data
-6. Route pattern â†’ regex conversion. Extract named groups. Match against URL
+6. Route pattern → regex conversion. Extract named groups. Match against URL
 8. WebSocket connects, onmessage handles incoming, onclose reconnects with exponential backoff
 9. PUT: replace entire resource (idempotent). PATCH: partial update (fields merged)
 10. GET /posts, POST /posts, GET /posts/:id, PUT /posts/:id, DELETE /posts/:id, GET /posts/:id/comments
 11. Base64 decode header and payload. Verify HMAC signature using secret
 12. install: cache assets. activate: clean old caches. fetch: serve from cache, update from network (stale-while-revalidate)
 14. Split on &, then on =. DecodeURIComponent both key and value. Handle arrays with []
-15. Auth code flow: /authorize â†’ redirect â†’ /callback with code â†’ POST /token â†’ access token
-16. Token bucket: tokens refill at rate. Request consumes token. If no tokens â†’ 429
+15. Auth code flow: /authorize → redirect → /callback with code → POST /token → access token
+16. Token bucket: tokens refill at rate. Request consumes token. If no tokens → 429
 18. Strip &lt;script&gt;, onerror, onload, javascript: URLs. Use DOMPurify or regex + allowlist
-19. WebSocket: bidirectional, persistent. SSE: serverâ†’client, auto-reconnect. Long-polling: requestâ†’waitâ†’responseâ†’repeat
+19. WebSocket: bidirectional, persistent. SSE: server→client, auto-reconnect. Long-polling: request→wait→response→repeat
 20. Define schema with type, properties, required. Validate each property type, pattern, enum
-22. class extends HTMLElement. constructorâ†’attachShadow. connectedCallbackâ†’render. observedAttributesâ†’attributeChangedCallback
-23. Cache-Control: max-age=3600. ETag: hash of content. If-None-Match: request with ETag â†’ 304 Not Modified
+22. class extends HTMLElement. constructor→attachShadow. connectedCallback→render. observedAttributes→attributeChangedCallback
+23. Cache-Control: max-age=3600. ETag: hash of content. If-None-Match: request with ETag → 304 Not Modified
 24. Debounce: wait X ms after last call. Throttle: at most once per X ms
-26. renderToString(component) â†’ HTML string â†’ send as response
-28. Try loading a bait script (doubleclick.net). If blocked or fails â†’ ad-blocker detected
+26. renderToString(component) → HTML string → send as response
+28. Try loading a bait script (doubleclick.net). If blocked or fails → ad-blocker detected
 29. new IntersectionObserver((entries) => entries.forEach(e => if(e.isIntersecting) { e.target.src = e.target.dataset.src }))
 
 ---
 
 ## Summary
-- **Architecture:** 2-tier (clientâ†’DB), 3-tier (clientâ†’appâ†’DB), n-tier (scalable)
+- **Architecture:** 2-tier (client→DB), 3-tier (client→app→DB), n-tier (scalable)
 - **HTML5:** Semantic tags (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`)
 - **CSS:** Selectors (element/class/ID/attribute/pseudo), specificity = (IDs, classes, elements)
-- **JavaScript:** DOM traversal/manipulation, events (capturing â†’ target â†’ bubbling)
+- **JavaScript:** DOM traversal/manipulation, events (capturing → target → bubbling)
 - **JSON vs XML:** JSON (lighter, native JS) vs XML (verbose, namespaces, schema)
 - **HTTP methods:** GET (safe/idempotent), POST (create), PUT (full update, idempotent), PATCH (partial), DELETE (idempotent)
 - **Status codes:** 2xx success, 3xx redirect, 4xx client error, 5xx server error
 - **Storage:** Cookies (4 KB, sent to server), localStorage (5-10 MB, persistent), sessionStorage (5-10 MB, per tab)
 - **REST:** Resource-based URIs, stateless, HTTP methods as actions
-- **Browser rendering:** DOM â†’ CSSOM â†’ Render Tree â†’ Layout â†’ Paint â†’ Composite
-- **AJAX/Fetch:** XHR (old) â†’ Fetch (modern, promise-based) â†’ Async/await
+- **Browser rendering:** DOM → CSSOM → Render Tree → Layout → Paint → Composite
+- **AJAX/Fetch:** XHR (old) → Fetch (modern, promise-based) → Async/await
 - **CSS Layout:** Flexbox (1D) vs Grid (2D) for responsive design
 - **CORS:** Same-origin policy, preflight for non-simple requests
-- **Performance:** FCP, LCP, FID, CLS, TTI â€” optimize with minification, bundling, CDN
+- **Performance:** FCP, LCP, FID, CLS, TTI — optimize with minification, bundling, CDN
 
 ---
 
 ## HOT Topics (Frequently Asked in IBPS SO IT Mains)
-1. CSS specificity calculation â€” compare two selectors
-2. HTTP methods â€” safe/idempotent classification, status code scenarios
-3. Cookies vs HTML5 storage â€” capacity, persistence, server visibility
-4. Browser rendering â€” what causes reflow vs repaint
-5. RESTful API design â€” resource naming conventions, best practices
-6. HTML5 semantic elements â€” choose correct element for given content
-7. Event propagation â€” stopPropagation vs preventDefault vs stopImmediatePropagation
-8. Cross-Origin Resource Sharing (CORS) â€” simple vs preflight requests
-9. Same-origin policy â€” what is allowed vs blocked
-10. WebSocket vs HTTP/2 Server-Sent Events (SSE) â€” when to use which
+1. CSS specificity calculation — compare two selectors
+2. HTTP methods — safe/idempotent classification, status code scenarios
+3. Cookies vs HTML5 storage — capacity, persistence, server visibility
+4. Browser rendering — what causes reflow vs repaint
+5. RESTful API design — resource naming conventions, best practices
+6. HTML5 semantic elements — choose correct element for given content
+7. Event propagation — stopPropagation vs preventDefault vs stopImmediatePropagation
+8. Cross-Origin Resource Sharing (CORS) — simple vs preflight requests
+9. Same-origin policy — what is allowed vs blocked
+10. WebSocket vs HTTP/2 Server-Sent Events (SSE) — when to use which
 
 ---
 

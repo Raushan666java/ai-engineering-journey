@@ -1,4 +1,4 @@
-ï»¿# Chapter 10: Data Structures & Algorithms Ã¢â€ â€™ GATE CS Preparation
+﻿# Chapter 10: Data Structures & Algorithms → GATE CS Preparation
 
 ---
 
@@ -59,21 +59,21 @@ flowchart LR
 > **Remember:** Graph algorithms (DFS/BFS, MST, Shortest Path) and Dynamic Programming are the highest weightage topics in GATE CS.
 
 
-## Topic Weightage Table (GATE 2010ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2025)
+## Topic Weightage Table (GATE 2010–2025)
 
 ![Data Structures and Algorithms Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms.png)
 
 | Topic | Avg Marks | 2025 | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018 | 2017 | 2016 | 2015 |
 |-------|-----------|------|------|------|------|------|------|------|------|------|------|------|
-| Complexity Analysis | 3ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5 | 4 | 3 | 5 | 4 | 3 | 5 | 3 | 4 | 5 | 3 | 4 |
-| Arrays & Matrices | 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 | 3 | 2 | 3 | 2 | 4 | 2 | 3 | 2 | 2 | 3 | 2 |
-| Linked Lists | 1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“3 | 2 | 1 | 2 | 1 | 2 | 2 | 1 | 3 | 2 | 1 | 2 |
-| Stacks & Queues | 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 | 3 | 4 | 2 | 3 | 2 | 3 | 4 | 2 | 3 | 4 | 2 |
-| Trees (BST, AVL, B/B+) | 5ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“8 | 6 | 7 | 8 | 5 | 7 | 6 | 5 | 8 | 6 | 7 | 5 |
-| Heaps & Heap Sort | 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 | 3 | 2 | 4 | 3 | 2 | 3 | 2 | 4 | 3 | 2 | 3 |
-| Graphs | 6ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“10 | 8 | 7 | 9 | 10 | 6 | 8 | 7 | 6 | 9 | 8 | 7 |
-| Sorting | 3ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5 | 4 | 3 | 5 | 4 | 3 | 4 | 5 | 3 | 4 | 5 | 3 |
-| Searching & Hashing | 2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 | 3 | 4 | 2 | 3 | 4 | 2 | 3 | 4 | 2 | 3 | 4 |
+| Complexity Analysis | 3–5 | 4 | 3 | 5 | 4 | 3 | 5 | 3 | 4 | 5 | 3 | 4 |
+| Arrays & Matrices | 2–4 | 3 | 2 | 3 | 2 | 4 | 2 | 3 | 2 | 2 | 3 | 2 |
+| Linked Lists | 1–3 | 2 | 1 | 2 | 1 | 2 | 2 | 1 | 3 | 2 | 1 | 2 |
+| Stacks & Queues | 2–4 | 3 | 4 | 2 | 3 | 2 | 3 | 4 | 2 | 3 | 4 | 2 |
+| Trees (BST, AVL, B/B+) | 5–8 | 6 | 7 | 8 | 5 | 7 | 6 | 5 | 8 | 6 | 7 | 5 |
+| Heaps & Heap Sort | 2–4 | 3 | 2 | 4 | 3 | 2 | 3 | 2 | 4 | 3 | 2 | 3 |
+| Graphs | 6–10 | 8 | 7 | 9 | 10 | 6 | 8 | 7 | 6 | 9 | 8 | 7 |
+| Sorting | 3–5 | 4 | 3 | 5 | 4 | 3 | 4 | 5 | 3 | 4 | 5 | 3 |
+| Searching & Hashing | 2–4 | 3 | 4 | 2 | 3 | 4 | 2 | 3 | 4 | 2 | 3 | 4 |
 
 ---
 
@@ -84,21 +84,21 @@ flowchart LR
 
 | Notation | Definition | Intuition |
 |----------|-----------|-----------|
-| **O(g(n))** | { f(n) \| ÃƒÂ¢Ã‹â€ Ã†â€™ c > 0, nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ > 0 such that 0 ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ f(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ cÃƒâ€šÃ‚Â·g(n) ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ } | Upper bound |
-| **ÃƒÅ½Ã‚Â©(g(n))** | { f(n) \| ÃƒÂ¢Ã‹â€ Ã†â€™ c > 0, nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ > 0 such that 0 ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ cÃƒâ€šÃ‚Â·g(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ f(n) ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ } | Lower bound |
-| **ÃƒÅ½Ã‹Å“(g(n))** | { f(n) \| ÃƒÂ¢Ã‹â€ Ã†â€™ cÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�, cÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡ > 0, nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ > 0 such that cÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�Ãƒâ€šÃ‚Â·g(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ f(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ cÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·g(n) ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ } | Tight bound |
-| **o(g(n))** | { f(n) \| ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ c > 0, ÃƒÂ¢Ã‹â€ Ã†â€™ nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ > 0 such that 0 ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ f(n) &lt; cÃƒâ€šÃ‚Â·g(n) ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ } | Loose upper |
-| **ÃƒÂ�Ã¢â‚¬Â°(g(n))** | { f(n) \| ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ c > 0, ÃƒÂ¢Ã‹â€ Ã†â€™ nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ > 0 such that 0 ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ cÃƒâ€šÃ‚Â·g(n) &lt; f(n) ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ nÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ } | Loose lower |
+| **O(g(n))** | { f(n) \| ∃ c > 0, n₀ > 0 such that 0 ≤ f(n) ≤ c·g(n) ∀ n ≥ n₀ } | Upper bound |
+| **Ω(g(n))** | { f(n) \| ∃ c > 0, n₀ > 0 such that 0 ≤ c·g(n) ≤ f(n) ∀ n ≥ n₀ } | Lower bound |
+| **Θ(g(n))** | { f(n) \| ∃ câ‚ÂÂ�, c₂ > 0, n₀ > 0 such that câ‚ÂÂ�·g(n) ≤ f(n) ≤ c₂·g(n) ∀ n ≥ n₀ } | Tight bound |
+| **o(g(n))** | { f(n) \| ∀ c > 0, ∃ n₀ > 0 such that 0 ≤ f(n) &lt; c·g(n) ∀ n ≥ n₀ } | Loose upper |
+| **ÃÂ�‰(g(n))** | { f(n) \| ∀ c > 0, ∃ n₀ > 0 such that 0 ≤ c·g(n) &lt; f(n) ∀ n ≥ n₀ } | Loose lower |
 
 **Properties:**
-- Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) Ã¢â€¡â€™ f(n) = O(h(n))
+- Transitive: f(n) = O(g(n)) and g(n) = O(h(n)) ⇒ f(n) = O(h(n))
 - Reflexive: f(n) = O(f(n))
-- Symmetric for ÃƒÅ½Ã‹Å“ only: f(n) = ÃƒÅ½Ã‹Å“(g(n)) Ã¢â€¡â€� g(n) = ÃƒÅ½Ã‹Å“(f(n))
-- Addition: fÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�(n) + fÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(n) = O(max(fÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�(n), fÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(n)))
-- Multiplication: fÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�(n) Ãƒâ€šÃ‚Â· fÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(n) = O(fÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�(n) Ãƒâ€šÃ‚Â· fÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(n))
+- Symmetric for Θ only: f(n) = Θ(g(n)) â‡â€� g(n) = Θ(f(n))
+- Addition: fâ‚ÂÂ�(n) + f₂(n) = O(max(fâ‚ÂÂ�(n), f₂(n)))
+- Multiplication: fâ‚ÂÂ�(n) · f₂(n) = O(fâ‚ÂÂ�(n) · f₂(n))
 
 **Common Functions (ordered by growth rate):**
-O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢Ã‹â€ Ã…Â¡n) < O(n) < O(n log n) < O(nÃƒâ€šÃ‚Â²) < O(nÃƒâ€šÃ‚Â³) < O(2ÃƒÂ¢Ã‚Â�Ã‚Â¿) < O(n!) < O(nÃƒÂ¢Ã‚Â�Ã‚Â¿)
+O(1) &lt; O(log log n) < O(log n) < O((log n)²) < O(√n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2âÂÂ�¿) < O(n!) < O(nâÂÂ�¿)
 
 ### 1.2 Recurrence Relations
 
@@ -107,27 +107,27 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢�
 
 **Recurrence Tree Method:** Expand recurrence into a tree, sum costs per level.
 
-**Master Theorem:** For T(n) = aÃƒâ€šÃ‚Â·T(n/b) + f(n), a ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1, b > 1:
+**Master Theorem:** For T(n) = a·T(n/b) + f(n), a ≥ 1, b > 1:
 
 | Case | Condition | Solution |
 |------|-----------|----------|
-| 1 | f(n) = O(n^{log_b a ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ ÃƒÅ½Ã‚Âµ}) for ÃƒÅ½Ã‚Âµ > 0 | T(n) = ÃƒÅ½Ã‹Å“(n^{log_b a}) |
-| 2 | f(n) = ÃƒÅ½Ã‹Å“(n^{log_b a}Ãƒâ€šÃ‚Â·log^k n) for k ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 0 | T(n) = ÃƒÅ½Ã‹Å“(n^{log_b a}Ãƒâ€šÃ‚Â·log^{k+1} n) |
-| 3 | f(n) = ÃƒÅ½Ã‚Â©(n^{log_b a + ÃƒÅ½Ã‚Âµ}) for ÃƒÅ½Ã‚Âµ > 0 AND aÃƒâ€šÃ‚Â·f(n/b) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ cÃƒâ€šÃ‚Â·f(n) for c &lt; 1 | T(n) = ÃƒÅ½Ã‹Å“(f(n)) |
+| 1 | f(n) = O(n^{log_b a − ε}) for ε > 0 | T(n) = Θ(n^{log_b a}) |
+| 2 | f(n) = Θ(n^{log_b a}·log^k n) for k ≥ 0 | T(n) = Θ(n^{log_b a}·log^{k+1} n) |
+| 3 | f(n) = Ω(n^{log_b a + ε}) for ε > 0 AND a·f(n/b) ≤ c·f(n) for c &lt; 1 | T(n) = Θ(f(n)) |
 
 **Common Recurrences:**
 
 | Recurrence | Algorithm | Complexity |
 |------------|-----------|------------|
-| T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + 1 | n! | ÃƒÅ½Ã‹Å“(n) |
-| T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + n | Selection sort | ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â²) |
-| T(n) = 2T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + 1 | Tower of Hanoi | ÃƒÅ½Ã‹Å“(2ÃƒÂ¢Ã‚Â�Ã‚Â¿) |
-| T(n) = T(n/2) + 1 | Binary search | ÃƒÅ½Ã‹Å“(log n) |
-| T(n) = T(n/2) + n | Ã¢â€ â€™ | ÃƒÅ½Ã‹Å“(n) |
-| T(n) = 2T(n/2) + n | Merge sort | ÃƒÅ½Ã‹Å“(n log n) |
-| T(n) = 2T(n/2) + 1 | Tree traversal | ÃƒÅ½Ã‹Å“(n) |
-| T(n) = 2T(n/2) + nÃƒâ€šÃ‚Â² | Ã¢â€ â€™ | ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â²) |
-| T(n) = 7T(n/2) + nÃƒâ€šÃ‚Â² | Strassen's MM | ÃƒÅ½Ã‹Å“(n^{logÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡7}) ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  ÃƒÅ½Ã‹Å“(n^{2.81}) |
+| T(n) = T(n−1) + 1 | n! | Θ(n) |
+| T(n) = T(n−1) + n | Selection sort | Θ(n²) |
+| T(n) = 2T(n−1) + 1 | Tower of Hanoi | Θ(2âÂÂ�¿) |
+| T(n) = T(n/2) + 1 | Binary search | Θ(log n) |
+| T(n) = T(n/2) + n | → | Θ(n) |
+| T(n) = 2T(n/2) + n | Merge sort | Θ(n log n) |
+| T(n) = 2T(n/2) + 1 | Tree traversal | Θ(n) |
+| T(n) = 2T(n/2) + n² | → | Θ(n²) |
+| T(n) = 7T(n/2) + n² | Strassen's MM | Θ(n^{log₂7}) ≈ Θ(n^{2.81}) |
 
 ### 1.3 Amortized Analysis
 
@@ -136,9 +136,9 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢�
 
 **Accounting Method:** Assign different amortized costs; credit accumulates for expensive ops.
 
-**Potential Method:** Define potential function ÃƒÅ½Ã‚Â¦(DÃƒÂ¡Ã‚ÂµÃ‚Â¢). Amortized cost = actual cost + ÃƒÅ½Ã‚Â¦(DÃƒÂ¡Ã‚ÂµÃ‚Â¢) ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ ÃƒÅ½Ã‚Â¦(D_{iÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1}).
+**Potential Method:** Define potential function Φ(Dᵢ). Amortized cost = actual cost + Φ(Dᵢ) − Φ(D_{i−1}).
 
-**Example Ã¢â€ â€™ Dynamic Array (table doubling):**
+**Example → Dynamic Array (table doubling):**
 - Actual cost of push: O(1) (most), O(n) (when resizing)
 - Amortized cost: O(1) per push
 - Aggregate: n pushes cost O(n), so amortized = O(1)
@@ -150,25 +150,25 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢�
 ### 2.1 Representation in Memory
 
 
-**Row-major order (C/C++):** Address(A[i][j]) = Base + (i ÃƒÆ’Ã¢â‚¬â€� n + j) ÃƒÆ’Ã¢â‚¬â€� size
+**Row-major order (C/C++):** Address(A[i][j]) = Base + (i Ãâ€â€� n + j) Ãâ€â€� size
 
-**Column-major order (Fortran):** Address(A[i][j]) = Base + (j ÃƒÆ’Ã¢â‚¬â€� m + i) ÃƒÆ’Ã¢â‚¬â€� size
+**Column-major order (Fortran):** Address(A[i][j]) = Base + (j Ãâ€â€� m + i) Ãâ€â€� size
 
-**For n-dimensional array A[dÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�][dÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡]...[dÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢]:**
-- Address = Base + ÃƒÅ½Ã‚Â£_{k=1}^{n} (iÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬â€œ ÃƒÆ’Ã¢â‚¬â€� ÃƒÅ½Ã‚Â _{t=k+1}^{n} dÃƒÂ¢Ã¢â‚¬Å¡Ã…â€œ) ÃƒÆ’Ã¢â‚¬â€� size
+**For n-dimensional array A[dâ‚ÂÂ�][d₂]...[dₙ]:**
+- Address = Base + Σ_{k=1}^{n} (iₖ Ãâ€â€� Π_{t=k+1}^{n} dₜ) Ãâ€â€� size
 
 ### 2.2 Sparse Matrices
 
 
-**Definition:** Matrix with mostly zero entries (nnz &lt;< m ÃƒÆ’Ã¢â‚¬â€� n).
+**Definition:** Matrix with mostly zero entries (nnz &lt;< m Ãâ€â€� n).
 
 **Representations:**
 
 | Method | Storage | Description |
 |--------|---------|-------------|
-| Coordinate (COO) | O(nnz ÃƒÆ’Ã¢â‚¬â€� 3) | (row, col, value) triples |
-| CSR (Compressed Sparse Row) | O(nnz ÃƒÆ’Ã¢â‚¬â€� 2 + m + 1) | value[], col_index[], row_ptr[] |
-| CSC (Compressed Sparse Column) | O(nnz ÃƒÆ’Ã¢â‚¬â€� 2 + n + 1) | value[], row_index[], col_ptr[] |
+| Coordinate (COO) | O(nnz Ãâ€â€� 3) | (row, col, value) triples |
+| CSR (Compressed Sparse Row) | O(nnz Ãâ€â€� 2 + m + 1) | value[], col_index[], row_ptr[] |
+| CSC (Compressed Sparse Column) | O(nnz Ãâ€â€� 2 + n + 1) | value[], row_index[], col_ptr[] |
 
 **CSR Example:**
 ```
@@ -186,13 +186,13 @@ row_ptr   = [0, 2, 3, 5]
 
 
 **2D array A[m][n] stored row-major:**
-- A[i][j] = Base + (i ÃƒÆ’Ã¢â‚¬â€� n + j) ÃƒÆ’Ã¢â‚¬â€� element_size
+- A[i][j] = Base + (i Ãâ€â€� n + j) Ãâ€â€� element_size
 
 **2D array A[m][n] stored column-major:**
-- A[i][j] = Base + (j ÃƒÆ’Ã¢â‚¬â€� m + i) ÃƒÆ’Ã¢â‚¬â€� element_size
+- A[i][j] = Base + (j Ãâ€â€� m + i) Ãâ€â€� element_size
 
 **Triangular matrix (lower) in 1D array:**
-- Index of A[i][j] (i ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ j) = i(i+1)/2 + j
+- Index of A[i][j] (i ≥ j) = i(i+1)/2 + j
 - Total size = n(n+1)/2
 
 ---
@@ -206,9 +206,9 @@ row_ptr   = [0, 2, 3, 5]
 |------|---------------|--------|-----------|
 | Singly | data + next | O(n) | Forward only |
 | Doubly | prev + data + next | O(2n) | Both directions |
-| Circular (Singly) | data + next (last Ã¢â€ â€™ head) | O(n) | Continuous |
+| Circular (Singly) | data + next (last → head) | O(n) | Continuous |
 | Circular (Doubly) | prev + data + next (circular) | O(2n) | Both, continuous |
-| XOR List | data + (prev ÃƒÂ¢Ã…Â Ã¢â‚¬Â¢ next) | O(n) (compressed) | Both (XOR trick) |
+| XOR List | data + (prev ⊕ next) | O(n) (compressed) | Both (XOR trick) |
 
 ### 3.2 Operations Complexity
 
@@ -227,7 +227,7 @@ row_ptr   = [0, 2, 3, 5]
 ```
 function hasCycle(head):
     slow = fast = head
-    while fast ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  null and fast.next ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  null:
+    while fast ≠ null and fast.next ≠ null:
         slow = slow.next
         fast = fast.next.next
         if slow == fast: return True
@@ -237,9 +237,9 @@ function hasCycle(head):
 **To find start of cycle:**
 1. Detect meeting point p
 2. Move slow to head, keep fast at p
-3. Both move 1 step at a time Ã¢â€ â€™ meet at cycle start
+3. Both move 1 step at a time → meet at cycle start
 
-**Proof:** Let cycle length = L, head-to-cycle-start = k. When slow enters cycle, fast is k ahead. They meet at distance (L ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ k mod L) from cycle start. Resetting one pointer to head and moving both at speed 1 gives meeting at cycle start after exactly k steps.
+**Proof:** Let cycle length = L, head-to-cycle-start = k. When slow enters cycle, fast is k ahead. They meet at distance (L − k mod L) from cycle start. Resetting one pointer to head and moving both at speed 1 gives meeting at cycle start after exactly k steps.
 
 ---
 
@@ -266,7 +266,7 @@ function hasCycle(head):
 
 **Circular Queue:** rear = (rear + 1) mod SIZE; front = (front + 1) mod SIZE
 
-**Two-stack queue:** enqueue = push to s1; dequeue = if s2 empty, pop all s1Ã¢â€ â€™s2, then pop s2.
+**Two-stack queue:** enqueue = push to s1; dequeue = if s2 empty, pop all s1→s2, then pop s2.
 
 ### 4.3 Applications
 
@@ -282,9 +282,9 @@ function isValid(s):
 ```
 
 **Infix to Postfix (Shunting Yard):**
-- Operands Ã¢â€ â€™ output directly
-- Operators: pop while stack top has ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ precedence (left-assoc) or > (right-assoc), then push
-- '(' Ã¢â€ â€™ push; ')' Ã¢â€ â€™ pop until '('
+- Operands → output directly
+- Operators: pop while stack top has ≥ precedence (left-assoc) or > (right-assoc), then push
+- '(' → push; ')' → pop until '('
 
 **Postfix Evaluation:**
 ```
@@ -299,9 +299,9 @@ return pop()
 
 | Expression | Order | Example |
 |------------|-------|---------|
-| Infix | operand operator operand | A + B ÃƒÆ’Ã¢â‚¬â€� C |
-| Prefix | operator operand operand | + A ÃƒÆ’Ã¢â‚¬â€� B C |
-| Postfix | operand operand operator | A B C ÃƒÆ’Ã¢â‚¬â€� + |
+| Infix | operand operator operand | A + B Ãâ€â€� C |
+| Prefix | operator operand operand | + A Ãâ€â€� B C |
+| Postfix | operand operand operator | A B C Ãâ€â€� + |
 
 **Evaluation direction:** Postfix uses a single stack. Prefix can be evaluated right-to-left.
 
@@ -314,9 +314,9 @@ return pop()
 
 | Property | Formula |
 |----------|---------|
-| Max nodes at level i | 2ÃƒÂ¢Ã‚Â�Ã‚Â± |
-| Max nodes in tree of height h | 2ÃƒÅ Ã‚Â°ÃƒÂ¢Ã‚Â�Ã‚ÂºÃƒâ€šÃ‚Â¹ ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1 |
-| Min height for n nodes | ÃƒÂ¢Ã…â€™Ã‹â€ logÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(n+1)ÃƒÂ¢Ã…â€™Ã¢â‚¬Â° ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1 |
+| Max nodes at level i | 2âÂÂ�± |
+| Max nodes in tree of height h | 2ʰâÂÂ�º¹ − 1 |
+| Min height for n nodes | ⌈log₂(n+1)⌉ − 1 |
 | For n nodes, leaf count L | L = I + 1 (I = internal nodes with degree 2) |
 | Full binary tree | Every node has 0 or 2 children |
 | Complete binary tree | All levels full except possibly last, left-packed |
@@ -327,23 +327,23 @@ return pop()
 
 | Traversal | Order | Use Case |
 |-----------|-------|----------|
-| Preorder | Root Ã¢â€ â€™ Left Ã¢â€ â€™ Right | Copy tree, serialize |
-| Inorder | Left Ã¢â€ â€™ Root Ã¢â€ â€™ Right | BST sort |
-| Postorder | Left Ã¢â€ â€™ Right Ã¢â€ â€™ Root | Delete tree, expression eval |
+| Preorder | Root → Left → Right | Copy tree, serialize |
+| Inorder | Left → Root → Right | BST sort |
+| Postorder | Left → Right → Root | Delete tree, expression eval |
 | Level-order | BFS by level | Min height, shortest path |
 
-**From traversals:** Inorder + (preorder/postorder) Ã¢â€ â€™ unique tree. Only inorder alone Ã¢â€ â€™ no.
+**From traversals:** Inorder + (preorder/postorder) → unique tree. Only inorder alone → no.
 
 **Morris Traversal (Threaded, O(1) space):**
 ```
 function morrisInorder(root):
     curr = root
-    while curr ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  null:
+    while curr ≠ null:
         if curr.left == null:
             visit(curr); curr = curr.right
         else:
             pred = curr.left
-            while pred.right ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  null and pred.right ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  curr:
+            while pred.right ≠ null and pred.right ≠ curr:
                 pred = pred.right
             if pred.right == null:
                 pred.right = curr; curr = curr.left
@@ -420,7 +420,7 @@ function lca(root, p, q):
 ### 5.7 AVL Trees
 
 
-**Balance Factor:** bf(node) = height(left) ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ height(right) ÃƒÂ¢Ã‹â€ Ã‹â€  {ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1, 0, 1}
+**Balance Factor:** bf(node) = height(left) − height(right) ∈ {−1, 0, 1}
 
 **Rotations:**
 
@@ -433,7 +433,7 @@ function lca(root, p, q):
 
 **Complexity:** Search O(log n), Insert O(log n), Delete O(log n)
 
-**Minimum nodes in AVL tree of height h:** N(h) = N(hÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + N(hÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2) + 1, N(0) = 1, N(1) = 2
+**Minimum nodes in AVL tree of height h:** N(h) = N(h−1) + N(h−2) + 1, N(0) = 1, N(1) = 2
 
 ### 5.8 B-Trees and B+ Trees
 
@@ -464,7 +464,7 @@ function lca(root, p, q):
 
 **Insertion fix-up:** Depending on uncle's color and relative position, perform rotations and color flips.
 
-**Black-height:** bh(x) = number of black nodes on path from x to leaf (excluding x). Tree height ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 2 ÃƒÆ’Ã¢â‚¬â€� black-height.
+**Black-height:** bh(x) = number of black nodes on path from x to leaf (excluding x). Tree height ≤ 2 Ãâ€â€� black-height.
 
 **2-3-4 tree correspondence:** Every Red-Black tree corresponds to a 2-3-4 tree.
 
@@ -476,7 +476,7 @@ function lca(root, p, q):
 - Insert: O(|s|) where |s| = string length
 - Search: O(|s|)
 - Prefix search: O(|prefix|) + O(number of completions)
-- Space: O(ÃƒÅ½Ã‚Â£ total chars)
+- Space: O(Σ total chars)
 
 **Compressed Trie (Radix Tree / Patricia Trie):** Compress chains of single-child nodes.
 
@@ -490,11 +490,11 @@ function lca(root, p, q):
 | Property | Min-Heap | Max-Heap |
 |----------|----------|----------|
 | Root | Minimum element | Maximum element |
-| Parent of i | ÃƒÂ¢Ã…â€™Ã…Â (iÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2ÃƒÂ¢Ã…â€™Ã¢â‚¬Â¹ | Same |
+| Parent of i | ⌊(i−1)/2⌋ | Same |
 | Left child of i | 2i + 1 | Same |
 | Right child of i | 2i + 2 | Same |
-| A[parent] ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ A[child] | Yes | No |
-| A[parent] ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ A[child] | No | Yes |
+| A[parent] ≤ A[child] | Yes | No |
+| A[parent] ≥ A[child] | No | Yes |
 
 ### 6.2 Operations
 
@@ -506,9 +506,9 @@ function lca(root, p, q):
 | extractMin() | O(log n) | Swap root with last, bubble-down |
 | getMin() | O(1) | Return root |
 | decreaseKey(i, val) | O(log n) | Bubble-up from i |
-| delete(i) | O(log n) | decreaseKey to -ÃƒÂ¢Ã‹â€ Ã…Â¾, extractMin |
+| delete(i) | O(log n) | decreaseKey to -∞, extractMin |
 
-**Build heap proof:** Sum of heights of nodes = n ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ (number of leaves at levels except last) = O(n)
+**Build heap proof:** Sum of heights of nodes = n − (number of leaves at levels except last) = O(n)
 
 ### 6.3 Heap Sort
 
@@ -525,7 +525,7 @@ function heapSort(arr):
 **Complexity:** O(n log n)
 **Space:** O(1) in-place
 **Stability:** NOT stable
-**Not adaptive** Ã¢â€ â€™ always O(n log n)
+**Not adaptive** → always O(n log n)
 
 ### 6.4 Priority Queue
 
@@ -545,13 +545,13 @@ function heapSort(arr):
 
 | Representation | Space | Edge Check | Neighbors | Add Edge |
 |----------------|-------|------------|-----------|----------|
-| Adjacency Matrix | O(VÃƒâ€šÃ‚Â²) | O(1) | O(V) | O(1) |
+| Adjacency Matrix | O(V²) | O(1) | O(V) | O(1) |
 | Adjacency List | O(V + E) | O(deg(v)) | O(deg(v)) | O(1) |
 | Edge List | O(E) | O(E) | O(E) | O(1) |
 
 **When to use what:**
-- Dense graph (E ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  VÃƒâ€šÃ‚Â²) Ã¢â€ â€™ Adjacency Matrix
-- Sparse graph (E &lt;< VÃƒâ€šÃ‚Â²) Ã¢â€ â€™ Adjacency List
+- Dense graph (E ≈ V²) → Adjacency Matrix
+- Sparse graph (E &lt;< V²) → Adjacency List
 
 ### 7.2 BFS (Breadth-First Search)
 
@@ -600,14 +600,14 @@ function dfs(start):
 | Cross | None of the above |
 
 **Applications:**
-- Cycle detection (back edge exists) Ã¢â€ â€™ O(V + E)
+- Cycle detection (back edge exists) → O(V + E)
 - Topological sort (reverse of finish times)
 - Strongly connected components
 
 ### 7.4 Topological Sort
 
 
-**Definition:** Linear ordering of DAG vertices such that for every edge uÃ¢â€ â€™v, u appears before v.
+**Definition:** Linear ordering of DAG vertices such that for every edge u→v, u appears before v.
 
 **Kahn's algorithm (BFS-based):**
 ```
@@ -672,13 +672,13 @@ function kruskal(edges, V):
 |-----------|------|------------|------------|
 | Dijkstra | Single-source | O((V+E) log V) | No negative edges |
 | Bellman-Ford | Single-source | O(VE) | Handles negative, detects cycles |
-| Floyd-Warshall | All-pairs | O(VÃƒâ€šÃ‚Â³) | Handles negative, no neg cycles |
+| Floyd-Warshall | All-pairs | O(V³) | Handles negative, no neg cycles |
 | DAG Shortest Path | Single-source (DAG) | O(V+E) | Works only on DAGs |
 
 **Dijkstra's Algorithm:**
 ```
 function dijkstra(graph, start):
-    dist = [ÃƒÂ¢Ã‹â€ Ã…Â¾] * V; dist[start] = 0
+    dist = [∞] * V; dist[start] = 0
     pq = [(0, start)]
     while pq not empty:
         d, v = pq.extractMin()
@@ -693,14 +693,14 @@ function dijkstra(graph, start):
 **Bellman-Ford Algorithm:**
 ```
 function bellmanFord(edges, V, start):
-    dist = [ÃƒÂ¢Ã‹â€ Ã…Â¾] * V; dist[start] = 0
+    dist = [∞] * V; dist[start] = 0
     for i in range(V-1):
         for (u, v, w) in edges:
-            if dist[u] != ÃƒÂ¢Ã‹â€ Ã…Â¾ and dist[u] + w < dist[v]:
+            if dist[u] != ∞ and dist[u] + w < dist[v]:
                 dist[v] = dist[u] + w
     // Vth iteration for negative cycle detection
     for (u, v, w) in edges:
-        if dist[u] != ÃƒÂ¢Ã‹â€ Ã…Â¾ and dist[u] + w < dist[v]:
+        if dist[u] != ∞ and dist[u] + w < dist[v]:
             return "Negative cycle"
     return dist
 ```
@@ -742,27 +742,27 @@ class UnionFind:
         return True
 ```
 
-**Complexity:** O(ÃƒÅ½Ã‚Â±(n)) per operation where ÃƒÅ½Ã‚Â± is inverse Ackermann function (essentially O(1)).
+**Complexity:** O(α(n)) per operation where α is inverse Ackermann function (essentially O(1)).
 
 ---
 
 ## 8. Sorting
 
-### 8.1 Comparison Sorts Ã¢â€ â€™ Complexity Summary
+### 8.1 Comparison Sorts → Complexity Summary
 
 
 | Algorithm | Best | Average | Worst | Space | Stable | In-place | Adaptive |
 |-----------|------|---------|-------|-------|--------|----------|----------|
-| Bubble | O(n) | O(nÃƒâ€šÃ‚Â²) | O(nÃƒâ€šÃ‚Â²) | O(1) | Yes | Yes | Yes |
-| Insertion | O(n) | O(nÃƒâ€šÃ‚Â²) | O(nÃƒâ€šÃ‚Â²) | O(1) | Yes | Yes | Yes |
-| Selection | O(nÃƒâ€šÃ‚Â²) | O(nÃƒâ€šÃ‚Â²) | O(nÃƒâ€šÃ‚Â²) | O(1) | No | Yes | No |
+| Bubble | O(n) | O(n²) | O(n²) | O(1) | Yes | Yes | Yes |
+| Insertion | O(n) | O(n²) | O(n²) | O(1) | Yes | Yes | Yes |
+| Selection | O(n²) | O(n²) | O(n²) | O(1) | No | Yes | No |
 | Merge | O(n log n) | O(n log n) | O(n log n) | O(n) | Yes | No | No |
-| Quick | O(n log n) | O(n log n) | O(nÃƒâ€šÃ‚Â²) | O(log n) | No | Yes | No |
+| Quick | O(n log n) | O(n log n) | O(n²) | O(log n) | No | Yes | No |
 | Heap | O(n log n) | O(n log n) | O(n log n) | O(1) | No | Yes | No |
 | Shell | O(n log n) | O(n^{4/3}) | O(n^{3/2}) | O(1) | No | Yes | Yes |
 | Timsort | O(n) | O(n log n) | O(n log n) | O(n) | Yes | Yes | Yes |
 
-**Comparison-based sort lower bound:** ÃƒÅ½Ã‚Â©(n log n) Ã¢â€ â€™ proven by decision tree with n! leaves.
+**Comparison-based sort lower bound:** Ω(n log n) → proven by decision tree with n! leaves.
 
 ### 8.2 Quick Sort Details
 
@@ -818,7 +818,7 @@ function mergeSort(arr, left, right):
 | Algorithm | Type | Complexity | Space | Stable | Constraint |
 |-----------|------|------------|-------|--------|------------|
 | Counting Sort | Integer | O(n + k) | O(k) | Yes | Integer range k |
-| Radix Sort | Integer | O(dÃƒâ€šÃ‚Â·(n + b)) | O(n + b) | Yes | d digits, base b |
+| Radix Sort | Integer | O(d·(n + b)) | O(n + b) | Yes | d digits, base b |
 | Bucket Sort | Float | O(n + k) avg | O(n) | Yes | Uniform distribution |
 
 **Counting Sort:**
@@ -829,20 +829,20 @@ function mergeSort(arr, left, right):
 **Radix Sort:**
 - LSD first: sort by least significant digit up to most significant
 - Each pass uses a stable sort (usually Counting Sort)
-- Complexity: O(dÃƒâ€šÃ‚Â·(n + b)) where d = #digits, b = base
+- Complexity: O(d·(n + b)) where d = #digits, b = base
 
 ### 8.5 Stability and In-Place Properties
 
 
 | Sorting | Stable? | In-Place? | GATE Trap |
 |---------|---------|-----------|-----------|
-| Bubble | Yes | Yes | Ã¢â€ â€™ |
-| Insertion | Yes | Yes | Ã¢â€ â€™ |
+| Bubble | Yes | Yes | → |
+| Insertion | Yes | Yes | → |
 | Selection | No | Yes | Often asked: not stable |
-| Merge | Yes | No (needs O(n) aux) | In-place variant is O(n logÃƒâ€šÃ‚Â² n) |
+| Merge | Yes | No (needs O(n) aux) | In-place variant is O(n log² n) |
 | Quick | No | Yes (recursive stack) | Lomuto not stable; Hoare also not stable |
-| Heap | No | Yes | Ã¢â€ â€™ |
-| Counting | Yes | No (needs O(k)) | Ã¢â€ â€™ |
+| Heap | No | Yes | → |
+| Counting | Yes | No (needs O(k)) | → |
 | Radix | Yes | No | Stable inner sort is critical |
 
 ---
@@ -896,7 +896,7 @@ function interpolationSearch(arr, target):
 
 
 - Divide array into 3 parts, compare target with two midpoints
-- Complexity: O(logÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™ n) Ã¢â€ â€™ same as binary search asymptotically (worse constant)
+- Complexity: O(log₃ n) → same as binary search asymptotically (worse constant)
 - Used for unimodal functions (finding maximum/minimum of a bitonic sequence)
 
 ---
@@ -909,37 +909,37 @@ function interpolationSearch(arr, target):
 Good hash function properties: deterministic, uniform distribution, fast computation.
 
 **Common hash functions:**
-- Division method: h(k) = k mod m (avoid m = 2ÃƒÂ¡Ã‚ÂµÃ¢â‚¬â€œ Ã¢â€ â€™ use prime)
-- Multiplication method: h(k) = ÃƒÂ¢Ã…â€™Ã…Â mÃƒâ€šÃ‚Â·(kÃƒâ€šÃ‚Â·A mod 1)ÃƒÂ¢Ã…â€™Ã¢â‚¬Â¹ where A ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  (ÃƒÂ¢Ã‹â€ Ã…Â¡5ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2
-- Universal hashing: h(k) = ((aÃƒâ€šÃ‚Â·k + b) mod p) mod m
+- Division method: h(k) = k mod m (avoid m = 2ᵖ → use prime)
+- Multiplication method: h(k) = ⌊m·(k·A mod 1)⌋ where A ≈ (√5−1)/2
+- Universal hashing: h(k) = ((a·k + b) mod p) mod m
 
 ### 10.2 Collision Resolution
 
 
 **Chaining:**
 - Each slot holds linked list of keys
-- Load factor ÃƒÅ½Ã‚Â± = n/m
-- Expected search: O(1 + ÃƒÅ½Ã‚Â±)
+- Load factor α = n/m
+- Expected search: O(1 + α)
 - Worst case: O(n) (all keys hash to same slot)
 
 **Open Addressing:**
 - All keys stored in table slots directly
-- Load factor ÃƒÅ½Ã‚Â± < 1
+- Load factor α < 1
 - Probe sequence determines search path
 
 | Probing | Sequence | Primary Clustering | Secondary Clustering |
 |---------|----------|-------------------|---------------------|
-| Linear | h(k,i) = (hÃƒÂ¢Ã¢â€šÂ¬Ã‚Â²(k) + i) mod m | Yes | N/A |
-| Quadratic | h(k,i) = (hÃƒÂ¢Ã¢â€šÂ¬Ã‚Â²(k) + cÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�i + cÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡iÃƒâ€šÃ‚Â²) mod m | No | Yes |
-| Double | h(k,i) = (hÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�(k) + iÃƒâ€šÃ‚Â·hÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(k)) mod m | No | No |
+| Linear | h(k,i) = (h′(k) + i) mod m | Yes | N/A |
+| Quadratic | h(k,i) = (h′(k) + câ‚ÂÂ�i + c₂i²) mod m | No | Yes |
+| Double | h(k,i) = (hâ‚ÂÂ�(k) + i·h₂(k)) mod m | No | No |
 
-**Linear probing average search time:** Ãƒâ€šÃ‚Â½(1 + 1/(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÅ½Ã‚Â±)) for successful, Ãƒâ€šÃ‚Â½(1 + 1/(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÅ½Ã‚Â±)Ãƒâ€šÃ‚Â²) for unsuccessful.
+**Linear probing average search time:** ½(1 + 1/(1−α)) for successful, ½(1 + 1/(1−α)²) for unsuccessful.
 
 ### 10.3 Rehashing
 
 
 When load factor exceeds threshold (typically 0.75):
-1. Allocate new table (usually 2ÃƒÆ’Ã¢â‚¬â€� size)
+1. Allocate new table (usually 2Ãâ€â€� size)
 2. Recompute hash for every key
 3. Insert into new table
 - Complexity: O(n) per rehash, amortized O(1) per insertion
@@ -962,32 +962,32 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) 300 (B) 310 (C) 320 (D) 330
 
-**Answer:** B. A[5][10] = 100 + (5ÃƒÆ’Ã¢â‚¬â€�20 + 10)ÃƒÆ’Ã¢â‚¬â€�2 = 100 + 110ÃƒÆ’Ã¢â‚¬â€�2 = 100 + 220 = 320.
+**Answer:** B. A[5][10] = 100 + (5Ãâ€â€�20 + 10)Ãâ€â€�2 = 100 + 110Ãâ€â€�2 = 100 + 220 = 320.
 
-**A2** [GATE 2017, 2 marks, Arrays] A lower triangular matrix L[n][n] is stored in 1D array of size n(n+1)/2. Index of L[i][j] (i ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ j) in 1D array (0-indexed) is:
+**A2** [GATE 2017, 2 marks, Arrays] A lower triangular matrix L[n][n] is stored in 1D array of size n(n+1)/2. Index of L[i][j] (i ≥ j) in 1D array (0-indexed) is:
 
-- (A) i(iÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2 + j (B) i(i+1)/2 + j (C) i(iÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2 + jÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 (D) i(i+1)/2 + jÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1
+- (A) i(i−1)/2 + j (B) i(i+1)/2 + j (C) i(i−1)/2 + j−1 (D) i(i+1)/2 + j−1
 
-**Answer:** C. For 1-indexed: i(iÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2 + j. For 0-indexed: i(i+1)/2 + j.
+**Answer:** C. For 1-indexed: i(i−1)/2 + j. For 0-indexed: i(i+1)/2 + j.
 
 ### Linked Lists
 
 
 **A3** [GATE 2016, 2 marks, Linked Lists] What is the worst-case time for inserting an element at the tail of a singly linked list with a head pointer?
 
-- (A) O(1) (B) O(log n) (C) O(n) (D) O(nÃƒâ€šÃ‚Â²)
+- (A) O(1) (B) O(log n) (C) O(n) (D) O(n²)
 
-**Answer:** C. Without tail pointer, we traverse to end Ã¢â€ â€™ O(n).
+**Answer:** C. Without tail pointer, we traverse to end → O(n).
 
 **A4** [GATE 2018, 2 marks, Linked Lists] Floyd's cycle detection algorithm uses two pointers moving at speeds 1 and 2. If the list has a cycle, they will always meet. What is the minimum number of steps before meeting?
 
-- (A) O(n) (B) O(nÃƒâ€šÃ‚Â²) (C) O(ÃƒÂ¢Ã‹â€ Ã…Â¡n) (D) O(n log n)
+- (A) O(n) (B) O(n²) (C) O(√n) (D) O(n log n)
 
 **Answer:** A. In worst case O(n), and guaranteed to detect cycle in O(n) time.
 
 **A5** [GATE 2020, 2 marks, Linked Lists] Let P be a singly linked list. Let Q be the pointer to an intermediate node (not last). Deleting Q from P can be done in:
 
-- (A) O(1) time (B) O(n) time (C) O(log n) time (D) O(nÃƒâ€šÃ‚Â²) time
+- (A) O(1) time (B) O(n) time (C) O(log n) time (D) O(n²) time
 
 **Answer:** A. Copy next node's data to Q, then delete next node.
 
@@ -996,27 +996,27 @@ When load factor exceeds threshold (typically 0.75):
 
 **A6** [GATE 2016, 2 marks, Stacks] A stack is implemented with an array of size N. What is the worst-case time for N push operations?
 
-- (A) O(N) (B) O(N log N) (C) O(NÃƒâ€šÃ‚Â²) (D) O(2ÃƒÂ¡Ã‚Â´Ã‚Âº)
+- (A) O(N) (B) O(N log N) (C) O(N²) (D) O(2ᴺ)
 
 **Answer:** A. Each push is O(1), total O(N). If dynamic array with doubling: O(N) amortized.
 
-**A7** [GATE 2019, 2 marks, Stacks] The postfix expression for (A + B) ÃƒÆ’Ã¢â‚¬â€� (C ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ D) is:
+**A7** [GATE 2019, 2 marks, Stacks] The postfix expression for (A + B) Ãâ€â€� (C − D) is:
 
-- (A) AB+CDÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬â€� (B) AB+CDÃƒÆ’Ã¢â‚¬â€�ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ (C) +ABÃƒÆ’Ã¢â‚¬â€�ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢CD (D) ÃƒÆ’Ã¢â‚¬â€�+ABÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢CD
+- (A) AB+CD−Ãâ€â€� (B) AB+CDÃâ€â€�− (C) +ABÃâ€â€�−CD (D) Ãâ€â€�+AB−CD
 
-**Answer:** A. Infix: (A+B)ÃƒÆ’Ã¢â‚¬â€�(CÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢D); Postfix: AB+CDÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬â€�.
+**Answer:** A. Infix: (A+B)Ãâ€â€�(C−D); Postfix: AB+CD−Ãâ€â€�.
 
 **A8** [GATE 2021, 2 marks, Queues] A circular queue has size 5. front = 2, rear = 4 (0-indexed). How many elements are in the queue?
 
 - (A) 2 (B) 3 (C) 4 (D) 5
 
-**Answer:** B. Number of elements = (rear ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ front + size) mod size = (4 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 2 + 5) mod 5 = 2. Wait: actually 3: positions 2, 3, 4 Ã¢â€ â€™ rear ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ front + 1 = 3.
+**Answer:** B. Number of elements = (rear − front + size) mod size = (4 − 2 + 5) mod 5 = 2. Wait: actually 3: positions 2, 3, 4 → rear − front + 1 = 3.
 
-**A9** [GATE 2017, 2 marks, Stacks] Evaluate postfix: 2 3 4 ÃƒÆ’Ã¢â‚¬â€� + 5 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢. Result:
+**A9** [GATE 2017, 2 marks, Stacks] Evaluate postfix: 2 3 4 Ãâ€â€� + 5 −. Result:
 
 - (A) 5 (B) 9 (C) 11 (D) 15
 
-**Answer:** B. Stack: push 2, push 3, push 4 Ã¢â€ â€™ pop 4, pop 3 Ã¢â€ â€™ 3ÃƒÆ’Ã¢â‚¬â€�4=12 push Ã¢â€ â€™ pop 12, pop 2 Ã¢â€ â€™ 2+12=14 push Ã¢â€ â€™ push 5 Ã¢â€ â€™ pop 5, pop 14 Ã¢â€ â€™ 14ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢5=9.
+**Answer:** B. Stack: push 2, push 3, push 4 → pop 4, pop 3 → 3Ãâ€â€�4=12 push → pop 12, pop 2 → 2+12=14 push → push 5 → pop 5, pop 14 → 14−5=9.
 
 ### Trees
 
@@ -1025,14 +1025,14 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) 2 (B) 3 (C) 5 (D) 6
 
-**Answer:** C. Catalan number CÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™ = (2n)!/((n+1)!n!) = 5.
+**Answer:** C. Catalan number C₃ = (2n)!/((n+1)!n!) = 5.
 
 **A11** [GATE 2014, 2 marks, BST] Preorder traversal of BST: 50, 30, 20, 40, 70, 60, 80. Postorder traversal is:
 
 - (A) 20, 40, 30, 60, 80, 70, 50 (B) 20, 40, 30, 60, 80, 70, 50
 - (C) 20, 40, 30, 60, 80, 70, 50 (D) 80, 60, 40, 20, 30, 50, 70
 
-**Answer:** A. BST: root=50. Left subtree has 30 as root with 20 left, 40 right. Right subtree has 70 as root with 60 left, 80 right. Postorder: LRN Ã¢â€ â€™ 20, 40, 30, 60, 80, 70, 50.
+**Answer:** A. BST: root=50. Left subtree has 30 as root with 20 left, 40 right. Right subtree has 70 as root with 60 left, 80 right. Postorder: LRN → 20, 40, 30, 60, 80, 70, 50.
 
 **A12** [GATE 2017, 2 marks, AVL] Insert 43, 55, 67, 83, 94, 71 into empty AVL tree. How many rotations needed for 94?
 
@@ -1044,7 +1044,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) 7 (B) 8 (C) 15 (D) 16
 
-**Answer:** A. Each node (except root) min keys = ÃƒÂ¢Ã…â€™Ã‹â€ m/2ÃƒÂ¢Ã…â€™Ã¢â‚¬Â°ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 = 1. Root min = 1. Level 0: 1 node. Level 1: 2 nodes. Level 2: 4 nodes. Total = 7.
+**Answer:** A. Each node (except root) min keys = ⌈m/2⌉−1 = 1. Root min = 1. Level 0: 1 node. Level 1: 2 nodes. Level 2: 4 nodes. Total = 7.
 
 **A14** [GATE 2020, 2 marks, BST] Inorder predecessor of a node in BST is:
 
@@ -1060,15 +1060,15 @@ When load factor exceeds threshold (typically 0.75):
 
 **A16** [GATE 2022, 2 marks, Trees] The height of a binary tree with n nodes in the worst case is:
 
-- (A) O(log n) (B) O(n) (C) O(n log n) (D) O(nÃƒâ€šÃ‚Â²)
+- (A) O(log n) (B) O(n) (C) O(n log n) (D) O(n²)
 
-**Answer:** B. Skewed tree: height = nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 = O(n).
+**Answer:** B. Skewed tree: height = n−1 = O(n).
 
 **A17** [GATE 2016, 2 marks, Trees] The number of leaf nodes in a complete binary tree with n nodes is:
 
-- (A) ÃƒÂ¢Ã…â€™Ã…Â n/2ÃƒÂ¢Ã…â€™Ã¢â‚¬Â¹ (B) ÃƒÂ¢Ã…â€™Ã‹â€ n/2ÃƒÂ¢Ã…â€™Ã¢â‚¬Â° (C) nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 (D) logÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(n+1)
+- (A) ⌊n/2⌋ (B) ⌈n/2⌉ (C) n−1 (D) log₂(n+1)
 
-**Answer:** B. Leaves = ÃƒÂ¢Ã…â€™Ã‹â€ n/2ÃƒÂ¢Ã…â€™Ã¢â‚¬Â° for complete binary tree.
+**Answer:** B. Leaves = ⌈n/2⌉ for complete binary tree.
 
 ### Heaps
 
@@ -1077,7 +1077,7 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) O(1) (B) O(log n) (C) O(n) (D) O(n log n)
 
-**Answer:** A. The 7th smallest is at one of the first 7 positions (depth ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 2). Extract min 7 times Ã¢â€ â€™ O(7 log n) but the question asks about finding Ã¢â€ â€™ the element is guaranteed within first 7 positions.
+**Answer:** A. The 7th smallest is at one of the first 7 positions (depth ≤ 2). Extract min 7 times → O(7 log n) but the question asks about finding → the element is guaranteed within first 7 positions.
 
 **A19** [GATE 2017, 2 marks, Heaps] Array [12, 10, 15, 8, 9, 14, 13, 6, 7]. Is this a max-heap?
 
@@ -1096,7 +1096,7 @@ When load factor exceeds threshold (typically 0.75):
 
 **A21** [GATE 2015, 2 marks, BFS/DFS] BFS of an undirected graph with V vertices and E edges has complexity:
 
-- (A) O(VÃƒâ€šÃ‚Â²) (B) O(E log V) (C) O(V + E) (D) O(VE)
+- (A) O(V²) (B) O(E log V) (C) O(V + E) (D) O(VE)
 
 **Answer:** C. BFS using adjacency list is O(V + E).
 
@@ -1116,33 +1116,33 @@ When load factor exceeds threshold (typically 0.75):
 
 **A24** [GATE 2018, 2 marks, Kruskal] Kruskal's algorithm finds MST in:
 
-- (A) O(VÃƒâ€šÃ‚Â²) (B) O(E log V) (C) O(V log E) (D) O(VE)
+- (A) O(V²) (B) O(E log V) (C) O(V log E) (D) O(VE)
 
-**Answer:** B. Sorting edges O(E log E) = O(E log V) plus DSU operations O(EÃƒâ€šÃ‚Â·ÃƒÅ½Ã‚Â±(V)).
+**Answer:** B. Sorting edges O(E log E) = O(E log V) plus DSU operations O(E·α(V)).
 
 **A25** [GATE 2019, 2 marks, Floyd-Warshall] Floyd-Warshall all-pairs shortest path complexity:
 
-- (A) O(VÃƒâ€šÃ‚Â²) (B) O(VÃƒâ€šÃ‚Â³) (C) O(VE) (D) O(E log V)
+- (A) O(V²) (B) O(V³) (C) O(VE) (D) O(E log V)
 
-**Answer:** B. Three nested loops Ã¢â€ â€™ O(VÃƒâ€šÃ‚Â³).
+**Answer:** B. Three nested loops → O(V³).
 
 **A26** [GATE 2021, 2 marks, Bellman-Ford] Bellman-Ford for V vertices, E edges. Number of relaxations:
 
-- (A) VÃƒÆ’Ã¢â‚¬â€�E (B) (VÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)ÃƒÆ’Ã¢â‚¬â€�E (C) VÃƒâ€šÃ‚Â² (D) VEÃƒâ€šÃ‚Â²
+- (A) VÃâ€â€�E (B) (V−1)Ãâ€â€�E (C) V² (D) VE²
 
-**Answer:** B. VÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 iterations, each relaxing all E edges: (VÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)Ãƒâ€šÃ‚Â·E.
+**Answer:** B. V−1 iterations, each relaxing all E edges: (V−1)·E.
 
 **A27** [GATE 2022, 1 mark, SCC] Number of strongly connected components in a DAG with V vertices:
 
-- (A) 1 (B) V (C) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ V (D) depends on edges
+- (A) 1 (B) V (C) ≤ V (D) depends on edges
 
 **Answer:** B. Every vertex in a DAG is its own SCC (no cycles). So = V.
 
 **A28** [GATE 2014, 2 marks, Prim] Prim's algorithm with adjacency matrix has complexity:
 
-- (A) O(VÃƒâ€šÃ‚Â²) (B) O(E log V) (C) O(V log V) (D) O(VE)
+- (A) O(V²) (B) O(E log V) (C) O(V log V) (D) O(VE)
 
-**Answer:** A. With adjacency matrix, each extract-min scans V vertices Ã¢â€ â€™ O(VÃƒâ€šÃ‚Â²).
+**Answer:** A. With adjacency matrix, each extract-min scans V vertices → O(V²).
 
 ### Sorting
 
@@ -1151,26 +1151,26 @@ When load factor exceeds threshold (typically 0.75):
 
 - (A) Merge sort (B) Heap sort (C) Quick sort (D) Insertion sort
 
-**Answer:** D. Insertion sort is adaptive Ã¢â€ â€™ O(n) when input is already sorted.
+**Answer:** D. Insertion sort is adaptive → O(n) when input is already sorted.
 
 **A30** [GATE 2016, 2 marks, Sorting] Which of the following is O(n log n) in worst case?
 
 - (A) Quick sort (B) Insertion sort (C) Merge sort (D) Selection sort
 
-**Answer:** C. Quick sort worst is O(nÃƒâ€šÃ‚Â²). Merge sort is always O(n log n).
+**Answer:** C. Quick sort worst is O(n²). Merge sort is always O(n log n).
 
 **A31** [GATE 2017, 2 marks, Sorting] Number of swaps in selection sort for array descending [5,4,3,2,1] sorted ascending:
 
 - (A) 2 (B) 3 (C) 4 (D) 5
 
-**Answer:** C. nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 = 4 swaps (each selects min and swaps to correct position).
+**Answer:** C. n−1 = 4 swaps (each selects min and swaps to correct position).
 
 **A32** [GATE 2018, 2 marks, Counting Sort] Counting sort complexity is O(n + k). The value k represents:
 
 - (A) Number of distinct keys (B) Range of input values
 - (C) Number of elements (D) Number of passes
 
-**Answer:** B. k is the range of input values (max ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ min + 1).
+**Answer:** B. k is the range of input values (max − min + 1).
 
 **A33** [GATE 2019, 2 marks, Sorting Stability] Which of these is NOT stable?
 
@@ -1184,93 +1184,93 @@ When load factor exceeds threshold (typically 0.75):
 
 **Answer:** C. Counting sort is the typical stable sort used for each digit pass in Radix sort.
 
-**A35** [GATE 2021, 2 marks, Quick Sort] Worst-case time for Quick sort is O(nÃƒâ€šÃ‚Â²). Which pivot choice causes this for sorted input?
+**A35** [GATE 2021, 2 marks, Quick Sort] Worst-case time for Quick sort is O(n²). Which pivot choice causes this for sorted input?
 
 - (A) First element (B) Random element (C) Median-of-three (D) Last element
 
-**Answer:** A or D (for L-R ordered). Both first and last pivot cause O(nÃƒâ€šÃ‚Â²) on sorted arrays for Lomuto partition.
+**Answer:** A or D (for L-R ordered). Both first and last pivot cause O(n²) on sorted arrays for Lomuto partition.
 
 ### Searching & Hashing
 
 
 **A36** [GATE 2015, 2 marks, Binary Search] Binary search on a sorted array of n elements. Worst case comparisons:
 
-- (A) n (B) log n (C) n/2 (D) nÃƒâ€šÃ‚Â²
+- (A) n (B) log n (C) n/2 (D) n²
 
-**Answer:** B. ÃƒÅ½Ã‹Å“(log n) comparisons.
+**Answer:** B. Θ(log n) comparisons.
 
 **A37** [GATE 2016, 2 marks, Hashing] Hash table size = 10, h(k) = k mod 10. Insert keys 12, 22, 32, 42, 52 using linear probing. How many collisions?
 
 - (A) 2 (B) 3 (C) 4 (D) 5
 
-**Answer:** C. 12 Ã¢â€ â€™ slot 2. 22 Ã¢â€ â€™ slot 2 (collision) Ã¢â€ â€™ slot 3. 32 Ã¢â€ â€™ slot 2 (collision) Ã¢â€ â€™ slot 3 (collision) Ã¢â€ â€™ slot 4. 42 Ã¢â€ â€™ ... Ã¢â€ â€™ slot 5. 52 Ã¢â€ â€™ ... Ã¢â€ â€™ slot 6. Total collisions = 4.
+**Answer:** C. 12 → slot 2. 22 → slot 2 (collision) → slot 3. 32 → slot 2 (collision) → slot 3 (collision) → slot 4. 42 → ... → slot 5. 52 → ... → slot 6. Total collisions = 4.
 
-**A38** [GATE 2018, 2 marks, Hashing] Load factor ÃƒÅ½Ã‚Â± = 0.75. Expected probes in successful search with linear probing:
+**A38** [GATE 2018, 2 marks, Hashing] Load factor α = 0.75. Expected probes in successful search with linear probing:
 
-- (A) Ãƒâ€šÃ‚Â½(1 + 1/(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÅ½Ã‚Â±)) (B) Ãƒâ€šÃ‚Â½(1 + 1/(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÅ½Ã‚Â±)Ãƒâ€šÃ‚Â²) (C) ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ln(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÅ½Ã‚Â±)/ÃƒÅ½Ã‚Â± (D) 1/(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÅ½Ã‚Â±)
+- (A) ½(1 + 1/(1−α)) (B) ½(1 + 1/(1−α)²) (C) −ln(1−α)/α (D) 1/(1−α)
 
-**Answer:** A. For linear probing, successful search ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  Ãƒâ€šÃ‚Â½(1 + 1/(1ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÅ½Ã‚Â±)). With ÃƒÅ½Ã‚Â± = 0.75: ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  2.5 probes.
+**Answer:** A. For linear probing, successful search ≈ ½(1 + 1/(1−α)). With α = 0.75: ≈ 2.5 probes.
 
-**A39** [GATE 2020, 2 marks, Hashing] Double hashing: h(k) = k mod 11, hÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(k) = 1 + (k mod 7). Probe sequence for key 38:
+**A39** [GATE 2020, 2 marks, Hashing] Double hashing: h(k) = k mod 11, h₂(k) = 1 + (k mod 7). Probe sequence for key 38:
 
 - (A) 5, 9, 2, ... (B) 5, 8, 0, ... (C) 5, 10, 4, ... (D) 5, 1, 8, ...
 
-**Answer:** C. h(38) = 38 mod 11 = 5. hÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(38) = 1 + (38 mod 7) = 1 + 3 = 4. Probe: 5, 9, 2, ...
+**Answer:** C. h(38) = 38 mod 11 = 5. h₂(38) = 1 + (38 mod 7) = 1 + 3 = 4. Probe: 5, 9, 2, ...
 
 ### Complexity Analysis
 
 
 **A40** [GATE 2015, 2 marks, Recurrence] T(n) = 2T(n/2) + n. T(1) = 1. T(n) = ?
 
-- (A) ÃƒÅ½Ã‹Å“(n) (B) ÃƒÅ½Ã‹Å“(n log n) (C) ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â²) (D) ÃƒÅ½Ã‹Å“(log n)
+- (A) Θ(n) (B) Θ(n log n) (C) Θ(n²) (D) Θ(log n)
 
-**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = nÃƒâ€šÃ‚Â¹Ãƒâ€šÃ‚Â·logÃƒÂ¢Ã‚Â�Ã‚Â° n Ã¢â€ â€™ T(n) = ÃƒÅ½Ã‹Å“(n log n).
+**Answer:** B. Master theorem case 2: a=2, b=2, log_b a = 1, f(n)=n = n¹·logâÂÂ�° n → T(n) = Θ(n log n).
 
-**A41** [GATE 2016, 1 mark, Recurrence] T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + n. T(1) = 1. T(n) = ?
+**A41** [GATE 2016, 1 mark, Recurrence] T(n) = T(n−1) + n. T(1) = 1. T(n) = ?
 
-- (A) ÃƒÅ½Ã‹Å“(n) (B) ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â²) (C) ÃƒÅ½Ã‹Å“(n log n) (D) ÃƒÅ½Ã‹Å“(2ÃƒÂ¢Ã‚Â�Ã‚Â¿)
+- (A) Θ(n) (B) Θ(n²) (C) Θ(n log n) (D) Θ(2âÂÂ�¿)
 
-**Answer:** B. Summation: 1 + 2 + 3 + ... + n = n(n+1)/2 = ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â²).
+**Answer:** B. Summation: 1 + 2 + 3 + ... + n = n(n+1)/2 = Θ(n²).
 
-**A42** [GATE 2017, 2 marks, Complexity] f(n) = nÃƒâ€šÃ‚Â², g(n) = n^{logÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡7}. Which is true?
+**A42** [GATE 2017, 2 marks, Complexity] f(n) = n², g(n) = n^{log₂7}. Which is true?
 
-- (A) f = O(g) (B) f = ÃƒÅ½Ã‚Â©(g) (C) f = ÃƒÅ½Ã‹Å“(g) (D) None
+- (A) f = O(g) (B) f = Ω(g) (C) f = Θ(g) (D) None
 
-**Answer:** A. n^{logÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡7} ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  n^{2.81}. nÃƒâ€šÃ‚Â² = O(n^{2.81}).
+**Answer:** A. n^{log₂7} ≈ n^{2.81}. n² = O(n^{2.81}).
 
 **A43** [GATE 2018, 2 marks, Complexity] Which notation expresses tightest upper bound?
 
-- (A) O (B) ÃƒÅ½Ã‚Â© (C) ÃƒÅ½Ã‹Å“ (D) o
+- (A) O (B) Ω (C) Θ (D) o
 
-**Answer:** A. O gives upper bound. ÃƒÅ½Ã‹Å“ gives tight bound but O is the standard for worst-case complexity.
+**Answer:** A. O gives upper bound. Θ gives tight bound but O is the standard for worst-case complexity.
 
 **A44** [GATE 2020, 2 marks, Recurrence] T(n) = 3T(n/4) + n log n. Solve:
 
-- (A) ÃƒÅ½Ã‹Å“(n^{logÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¾3}) (B) ÃƒÅ½Ã‹Å“(n log n) (C) ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â² log n) (D) ÃƒÅ½Ã‹Å“(n^{logÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™4})
+- (A) Θ(n^{log₄3}) (B) Θ(n log n) (C) Θ(n² log n) (D) Θ(n^{log₃4})
 
-**Answer:** B. a=3, b=4, log_b a = logÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¾3 ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  0.792. f(n) = n log n = ÃƒÅ½Ã‚Â©(n^{0.792+ÃƒÅ½Ã‚Âµ}). Check regularity: aÃƒâ€šÃ‚Â·f(n/b) = 3Ãƒâ€šÃ‚Â·(n/4)Ãƒâ€šÃ‚Â·log(n/4) = 0.75Ãƒâ€šÃ‚Â·nÃƒâ€šÃ‚Â·log(n/4) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ cÃƒâ€šÃ‚Â·nÃƒâ€šÃ‚Â·log n for c &lt; 1. So Case 3: ÃƒÅ½Ã‹Å“(n log n).
+**Answer:** B. a=3, b=4, log_b a = log₄3 ≈ 0.792. f(n) = n log n = Ω(n^{0.792+ε}). Check regularity: a·f(n/b) = 3·(n/4)·log(n/4) = 0.75·n·log(n/4) ≤ c·n·log n for c &lt; 1. So Case 3: Θ(n log n).
 
 **A45** [GATE 2021, 2 marks, Complexity] Let f(n) = O(g(n)). Then log f(n) = O(log g(n)) if:
 
-- (A) f(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1 and g(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 2 (B) f(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 0 and g(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1
-- (C) f(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 0 and g(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 1 (D) Always
+- (A) f(n) ≥ 1 and g(n) ≥ 2 (B) f(n) ≥ 0 and g(n) ≥ 1
+- (C) f(n) ≤ 0 and g(n) ≤ 1 (D) Always
 
-**Answer:** A. Need f(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1 and g(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 2 for log to be defined and monotonic.
+**Answer:** A. Need f(n) ≥ 1 and g(n) ≥ 2 for log to be defined and monotonic.
 
 ### Mixed
 
 
 **A46** [GATE 2022, 2 marks, Trees] A strictly binary tree (every node has 0 or 2 children) with n leaves has how many internal nodes?
 
-- (A) nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 (B) n (C) n+1 (D) 2n
+- (A) n−1 (B) n (C) n+1 (D) 2n
 
-**Answer:** A. For a full binary tree: I = L ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1 = n ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1.
+**Answer:** A. For a full binary tree: I = L − 1 = n − 1.
 
-**A47** [GATE 2023, 2 marks, Graphs] In an undirected graph G with n vertices, if every vertex has degree at least ÃƒÅ½Ã‚Â´, the graph is connected if:
+**A47** [GATE 2023, 2 marks, Graphs] In an undirected graph G with n vertices, if every vertex has degree at least δ, the graph is connected if:
 
-- (A) ÃƒÅ½Ã‚Â´ ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ n/2 (B) ÃƒÅ½Ã‚Â´ ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ (nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2 (C) ÃƒÅ½Ã‚Â´ ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1 (D) ÃƒÅ½Ã‚Â´ ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 2
+- (A) δ ≥ n/2 (B) δ ≥ (n−1)/2 (C) δ ≥ n−1 (D) δ ≥ 2
 
-**Answer:** B. Dirac's theorem: if ÃƒÅ½Ã‚Â´ ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ n/2, graph is Hamiltonian (stronger). For connectivity: ÃƒÅ½Ã‚Â´ ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ (nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2.
+**Answer:** B. Dirac's theorem: if δ ≥ n/2, graph is Hamiltonian (stronger). For connectivity: δ ≥ (n−1)/2.
 
 **A48** [GATE 2023, 1 mark, Sorting] Which of the following sorts is NOT in-place?
 
@@ -1278,17 +1278,17 @@ When load factor exceeds threshold (typically 0.75):
 
 **Answer:** C. Merge sort requires O(n) auxiliary space. All others are in-place.
 
-**A49** [GATE 2024, 2 marks, Hashing] A hash table of size 10 uses double hashing: hÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�(k) = k mod 10, hÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(k) = 7 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ (k mod 7). Insert keys 89, 18, 49, 58, 79. After all insertions, what is the load factor?
+**A49** [GATE 2024, 2 marks, Hashing] A hash table of size 10 uses double hashing: hâ‚ÂÂ�(k) = k mod 10, h₂(k) = 7 − (k mod 7). Insert keys 89, 18, 49, 58, 79. After all insertions, what is the load factor?
 
 - (A) 0.3 (B) 0.5 (C) 0.7 (D) 0.9
 
 **Answer:** B. 5 elements / 10 slots = 0.5.
 
-**A50** [GATE 2024, 2 marks, Complexity] T(n) = 2T(ÃƒÂ¢Ã‹â€ Ã…Â¡n) + log n. Solve:
+**A50** [GATE 2024, 2 marks, Complexity] T(n) = 2T(√n) + log n. Solve:
 
-- (A) ÃƒÅ½Ã‹Å“(log n) (B) ÃƒÅ½Ã‹Å“(logÃƒâ€šÃ‚Â² n) (C) ÃƒÅ½Ã‹Å“(ÃƒÂ¢Ã‹â€ Ã…Â¡n) (D) ÃƒÅ½Ã‹Å“(log nÃƒâ€šÃ‚Â·log log n)
+- (A) Θ(log n) (B) Θ(log² n) (C) Θ(√n) (D) Θ(log n·log log n)
 
-**Answer:** B. Let n = 2ÃƒÂ¡Ã‚ÂµÃ‚Â�. T(2ÃƒÂ¡Ã‚ÂµÃ‚Â�) = 2T(2^{m/2}) + m. S(m) = T(2ÃƒÂ¡Ã‚ÂµÃ‚Â�). S(m) = 2S(m/2) + m Ã¢â€ â€™ ÃƒÅ½Ã‹Å“(m log m) = ÃƒÅ½Ã‹Å“(log nÃƒâ€šÃ‚Â·log log n). Wait: Master theorem: a=2, b=2, S(m) = 2S(m/2) + m Ã¢â€ â€™ Case 2: ÃƒÅ½Ã‹Å“(m log m) = ÃƒÅ½Ã‹Å“(log nÃƒâ€šÃ‚Â·log log n).
+**Answer:** B. Let n = 2áµÂÂ�. T(2áµÂÂ�) = 2T(2^{m/2}) + m. S(m) = T(2áµÂÂ�). S(m) = 2S(m/2) + m → Θ(m log m) = Θ(log n·log log n). Wait: Master theorem: a=2, b=2, S(m) = 2S(m/2) + m → Case 2: Θ(m log m) = Θ(log n·log log n).
 
 **A51** [GATE 2025, 2 marks, Graph] Which graph algorithm uses a stack as its primary data structure?
 
@@ -1298,9 +1298,9 @@ When load factor exceeds threshold (typically 0.75):
 
 **A52** [GATE 2025, 2 marks, Sorting] The number of comparisons in merge sort for merging two sorted lists of size m and n is:
 
-- (A) m + n ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1 (B) m + n (C) max(m, n) (D) min(m, n)
+- (A) m + n − 1 (B) m + n (C) max(m, n) (D) min(m, n)
 
-**Answer:** A. In worst case, m + n ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1 comparisons until one list exhausts.
+**Answer:** A. In worst case, m + n − 1 comparisons until one list exhausts.
 
 **A53** [GATE 2025, 1 mark, Trees] Which traversal gives non-decreasing order in BST?
 
@@ -1310,7 +1310,7 @@ When load factor exceeds threshold (typically 0.75):
 
 **A54** [GATE 2025, 2 marks, Heaps] Building a max-heap from an array of n elements takes:
 
-- (A) O(n) (B) O(n log n) (C) O(log n) (D) O(nÃƒâ€šÃ‚Â²)
+- (A) O(n) (B) O(n log n) (C) O(log n) (D) O(n²)
 
 **Answer:** A. buildHeap() runs in O(n) time (tight bound).
 
@@ -1323,17 +1323,17 @@ When load factor exceeds threshold (typically 0.75):
 
 **Common errors:**
 - Applying Master theorem incorrectly (wrong a, b values)
-- Forgetting that T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + ... is NOT Master theorem solvable
+- Forgetting that T(n) = T(n−1) + ... is NOT Master theorem solvable
 - Misidentifying f(n) for divide-and-conquer recurrences
 
 **Examples:**
 | Recurrence | Trap | Correct |
 |------------|------|---------|
-| T(n) = 2T(n/2) + n | Think O(n) | O(n log n) Ã¢â€ â€™ Master case 2 |
-| T(n) = T(n/2) + n | Think O(log n) | O(n) Ã¢â€ â€™ Master case 3 |
-| T(n) = 2T(ÃƒÂ¢Ã‹â€ Ã…Â¡n) + log n | Try n directly | Let n=2ÃƒÂ¡Ã‚ÂµÃ‚Â�, get ÃƒÅ½Ã‹Å“(log nÃƒâ€šÃ‚Â·log log n) |
-| T(n) = 3T(n/3) + n/2 | Think O(n) | O(n log n) Ã¢â€ â€™ Master case 2 |
-| T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + 1/n | Think O(n) | O(log n) Ã¢â€ â€™ Harmonic series |
+| T(n) = 2T(n/2) + n | Think O(n) | O(n log n) → Master case 2 |
+| T(n) = T(n/2) + n | Think O(log n) | O(n) → Master case 3 |
+| T(n) = 2T(√n) + log n | Try n directly | Let n=2áµÂÂ�, get Θ(log n·log log n) |
+| T(n) = 3T(n/3) + n/2 | Think O(n) | O(n log n) → Master case 2 |
+| T(n) = T(n−1) + 1/n | Think O(n) | O(log n) → Harmonic series |
 
 ### Trap 2: BST Deletion
 
@@ -1352,17 +1352,17 @@ When load factor exceeds threshold (typically 0.75):
 | BFS for shortest path | Weighted graph | BFS assumes all edges weight 1 |
 | Kruskal's/Prim's | Directed graph | MST definitions apply to undirected graphs |
 | Bellman-Ford | Negative cycles | No shortest path exists (can detect, not compute) |
-| Floyd-Warshall | Negative cycles | Distance becomes ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ÃƒÂ¢Ã‹â€ Ã…Â¾ |
+| Floyd-Warshall | Negative cycles | Distance becomes −∞ |
 
 ### Trap 4: Hash Table Probing Sequences
 
 
-- **Linear probing:** Primary clustering Ã¢â€ â€™ long runs of occupied slots
-- **Quadratic probing:** Secondary clustering Ã¢â€ â€™ keys with same initial hash follow same probe sequence
-- **Double hashing:** Best Ã¢â€ â€™ two independent hash functions
+- **Linear probing:** Primary clustering → long runs of occupied slots
+- **Quadratic probing:** Secondary clustering → keys with same initial hash follow same probe sequence
+- **Double hashing:** Best → two independent hash functions
 - **GATE trick:** Calculate probe sequence for a given key; determine if insertion succeeds
 
-**Common question pattern:** "Key x cannot be inserted due to infinite loop" Ã¢â€ â€™ check if probe sequence covers all slots (depends on m being prime for quadratic probing).
+**Common question pattern:** "Key x cannot be inserted due to infinite loop" → check if probe sequence covers all slots (depends on m being prime for quadratic probing).
 
 ### Trap 5: Sorting Stability and In-Place
 
@@ -1379,18 +1379,18 @@ When load factor exceeds threshold (typically 0.75):
 ### Trap 6: MST Edge Weights
 
 
-- **Unique MST:** If all edge weights are distinct Ã¢â€ â€™ MST is unique
-- **Non-unique MST:** If edges have equal weights Ã¢â€ â€™ multiple MSTs possible
+- **Unique MST:** If all edge weights are distinct → MST is unique
+- **Non-unique MST:** If edges have equal weights → multiple MSTs possible
 - **Lightest edge:** Not necessarily in every MST (if it creates a cycle with lighter alternatives)
 - **Heaviest edge in a cycle:** Never in any MST (cycle property)
 
 ### Trap 7: Asymptotic Growth Subtleties
 
 
-- n^{log n} vs 2^{ÃƒÂ¢Ã‹â€ Ã…Â¡n}: Take log of both: (log n)Ãƒâ€šÃ‚Â² vs ÃƒÂ¢Ã‹â€ Ã…Â¡nÃƒâ€šÃ‚Â·log 2. Since (log n)Ãƒâ€šÃ‚Â² = o(ÃƒÂ¢Ã‹â€ Ã…Â¡n), we get n^{log n} = o(2^{ÃƒÂ¢Ã‹â€ Ã…Â¡n})
-- (log n)^{log n} vs n/log n: Take log: log log n Ãƒâ€šÃ‚Â· log n vs log n ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ log log n. First = ÃƒÅ½Ã‹Å“(log nÃƒâ€šÃ‚Â·log log n), second = ÃƒÅ½Ã‹Å“(log n). So (log n)^{log n} = ÃƒÂ�Ã¢â‚¬Â°(n/log n)
-- log(n!) = ÃƒÅ½Ã‹Å“(n log n) via Stirling's approximation
-- n^{1/n} Ã¢â€ â€™ 1 as n Ã¢â€ â€™ ÃƒÂ¢Ã‹â€ Ã…Â¾
+- n^{log n} vs 2^{√n}: Take log of both: (log n)² vs √n·log 2. Since (log n)² = o(√n), we get n^{log n} = o(2^{√n})
+- (log n)^{log n} vs n/log n: Take log: log log n · log n vs log n − log log n. First = Θ(log n·log log n), second = Θ(log n). So (log n)^{log n} = ÃÂ�‰(n/log n)
+- log(n!) = Θ(n log n) via Stirling's approximation
+- n^{1/n} → 1 as n → ∞
 
 ---
 
@@ -1404,15 +1404,15 @@ When load factor exceeds threshold (typically 0.75):
 | Binary Search | O(log n) | O(1) |
 | Quick Select (avg) | O(n) | O(1) |
 | Median of Medians | O(n) | O(log n) |
-| Tower of Hanoi | O(2ÃƒÂ¢Ã‚Â�Ã‚Â¿) | O(n) |
-| Fibonacci (naive) | O(ÃƒÂ�Ã¢â‚¬Â ÃƒÂ¢Ã‚Â�Ã‚Â¿) | O(n) |
+| Tower of Hanoi | O(2âÂÂ�¿) | O(n) |
+| Fibonacci (naive) | O(ÃÂ�†âÂÂ�¿) | O(n) |
 | Fibonacci (DP) | O(n) | O(1) |
-| Matrix Multiplication (naive) | O(nÃƒâ€šÃ‚Â³) | O(nÃƒâ€šÃ‚Â²) |
-| Strassen's MM | O(n^{2.81}) | O(nÃƒâ€šÃ‚Â²) |
+| Matrix Multiplication (naive) | O(n³) | O(n²) |
+| Strassen's MM | O(n^{2.81}) | O(n²) |
 | Dijkstra (binary heap) | O((V+E) log V) | O(V) |
 | Bellman-Ford | O(VE) | O(V) |
-| Floyd-Warshall | O(VÃƒâ€šÃ‚Â³) | O(VÃƒâ€šÃ‚Â²) |
-| Prim's (adj matrix) | O(VÃƒâ€šÃ‚Â²) | O(V) |
+| Floyd-Warshall | O(V³) | O(V²) |
+| Prim's (adj matrix) | O(V²) | O(V) |
 | Kruskal's | O(E log V) | O(V) |
 | Topological Sort | O(V+E) | O(V) |
 | Kosaraju's SCC | O(V+E) | O(V) |
@@ -1439,7 +1439,7 @@ When load factor exceeds threshold (typically 0.75):
 | Hash Table (avg) | N/A | O(1) | O(1) | O(1) | O(n) |
 | Hash Table (worst) | N/A | O(n) | O(n) | O(n) | O(n) |
 | Min-Heap | O(1) (min) | O(n) | O(log n) | O(log n) | O(n) |
-| Trie | O(|s|) | O(|s|) | O(|s|) | O(|s|) | O(ÃƒÅ½Ã‚Â£|sÃƒÂ¡Ã‚ÂµÃ‚Â¢|) |
+| Trie | O(|s|) | O(|s|) | O(|s|) | O(|s|) | O(Σ|sᵢ|) |
 
 *At head (given pointer). Tail insert in singly linked = O(n).
 
@@ -1447,84 +1447,84 @@ When load factor exceeds threshold (typically 0.75):
 
 ## 14. Recurrence Relation Quick Reference
 
-### 14.1 Master Theorem Ã¢â€ â€™ Detailed Cases
+### 14.1 Master Theorem → Detailed Cases
 
 
-Given T(n) = aÃƒâ€šÃ‚Â·T(n/b) + f(n), compare f(n) with n^{log_b a}:
+Given T(n) = a·T(n/b) + f(n), compare f(n) with n^{log_b a}:
 
-**Case 1 (Leaf-heavy):** f(n) = O(n^{log_b a ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ ÃƒÅ½Ã‚Âµ})
-- T(n) = ÃƒÅ½Ã‹Å“(n^{log_b a})
-- Example: T(n) = 2T(n/2) + 1 Ã¢â€ â€™ ÃƒÅ½Ã‹Å“(n)
+**Case 1 (Leaf-heavy):** f(n) = O(n^{log_b a − ε})
+- T(n) = Θ(n^{log_b a})
+- Example: T(n) = 2T(n/2) + 1 → Θ(n)
 
-**Case 2 (Equal):** f(n) = ÃƒÅ½Ã‹Å“(n^{log_b a}Ãƒâ€šÃ‚Â·log^k n)
-- T(n) = ÃƒÅ½Ã‹Å“(n^{log_b a}Ãƒâ€šÃ‚Â·log^{k+1} n)
-- Example: T(n) = 2T(n/2) + n Ã¢â€ â€™ ÃƒÅ½Ã‹Å“(n log n)
-- Example: T(n) = 2T(n/2) + n log n Ã¢â€ â€™ ÃƒÅ½Ã‹Å“(n logÃƒâ€šÃ‚Â² n)
+**Case 2 (Equal):** f(n) = Θ(n^{log_b a}·log^k n)
+- T(n) = Θ(n^{log_b a}·log^{k+1} n)
+- Example: T(n) = 2T(n/2) + n → Θ(n log n)
+- Example: T(n) = 2T(n/2) + n log n → Θ(n log² n)
 
-**Case 3 (Root-heavy):** f(n) = ÃƒÅ½Ã‚Â©(n^{log_b a + ÃƒÅ½Ã‚Âµ}) + regularity
-- T(n) = ÃƒÅ½Ã‹Å“(f(n))
-- Example: T(n) = T(n/2) + n Ã¢â€ â€™ ÃƒÅ½Ã‹Å“(n)
+**Case 3 (Root-heavy):** f(n) = Ω(n^{log_b a + ε}) + regularity
+- T(n) = Θ(f(n))
+- Example: T(n) = T(n/2) + n → Θ(n)
 
 ### 14.2 Extended Master Theorem
 
 
-For T(n) = ÃƒÅ½Ã‚Â£_{i=1}^{k} a_iÃƒâ€šÃ‚Â·T(n/b_i) + f(n):
-- Find p such that ÃƒÅ½Ã‚Â£ a_i / b_i^p = 1
-- T(n) = ÃƒÅ½Ã‹Å“(n^pÃƒâ€šÃ‚Â·(1 + ÃƒÂ¢Ã‹â€ Ã‚Â«ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�ÃƒÂ¢Ã‚Â�Ã‚Â¿ f(u)/u^{p+1} du))
+For T(n) = Σ_{i=1}^{k} a_i·T(n/b_i) + f(n):
+- Find p such that Σ a_i / b_i^p = 1
+- T(n) = Θ(n^p·(1 + ∫â‚ÂÂ�âÂÂ�¿ f(u)/u^{p+1} du))
 
 ### 14.3 Akra-Bazzi Method
 
 
-For T(n) = ÃƒÅ½Ã‚Â£ a_iÃƒâ€šÃ‚Â·T(b_iÃƒâ€šÃ‚Â·n + h_i(n)) + g(n):
-1. Find p: ÃƒÅ½Ã‚Â£ a_iÃƒâ€šÃ‚Â·b_i^p = 1
-2. T(n) = ÃƒÅ½Ã‹Å“(n^pÃƒâ€šÃ‚Â·(1 + ÃƒÂ¢Ã‹â€ Ã‚Â«ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�ÃƒÂ¢Ã‚Â�Ã‚Â¿ g(u)/u^{p+1} du))
+For T(n) = Σ a_i·T(b_i·n + h_i(n)) + g(n):
+1. Find p: Σ a_i·b_i^p = 1
+2. T(n) = Θ(n^p·(1 + ∫â‚ÂÂ�âÂÂ�¿ g(u)/u^{p+1} du))
 
 ### 14.4 Special Recurrences
 
 
 | Recurrence | Method | Result |
 |------------|--------|--------|
-| T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + n | Unrolling | ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â²) |
-| T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + 1 | Unrolling | ÃƒÅ½Ã‹Å“(n) |
-| T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + log n | Unrolling | ÃƒÅ½Ã‹Å“(n log n) |
-| T(n) = T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2) + 1 | Unrolling | ÃƒÅ½Ã‹Å“(n) |
-| T(n) = 2T(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + 1 | Unrolling | ÃƒÅ½Ã‹Å“(2ÃƒÂ¢Ã‚Â�Ã‚Â¿) |
-| T(n) = T(ÃƒÂ¢Ã‹â€ Ã…Â¡n) + 1 | Change var | ÃƒÅ½Ã‹Å“(log log n) |
-| T(n) = 2T(ÃƒÂ¢Ã‹â€ Ã…Â¡n) + log n | Change var | ÃƒÅ½Ã‹Å“(log nÃƒâ€šÃ‚Â·log log n) |
-| T(n) = T(n/2) + T(n/2) + 1 | Master | ÃƒÅ½Ã‹Å“(n) |
-| T(n) = 3T(n/2) + nÃƒâ€šÃ‚Â² | Master case 3 | ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â²) |
-| T(n) = 4T(n/2) + nÃƒâ€šÃ‚Â² | Master case 2 | ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â² log n) |
+| T(n) = T(n−1) + n | Unrolling | Θ(n²) |
+| T(n) = T(n−1) + 1 | Unrolling | Θ(n) |
+| T(n) = T(n−1) + log n | Unrolling | Θ(n log n) |
+| T(n) = T(n−2) + 1 | Unrolling | Θ(n) |
+| T(n) = 2T(n−1) + 1 | Unrolling | Θ(2âÂÂ�¿) |
+| T(n) = T(√n) + 1 | Change var | Θ(log log n) |
+| T(n) = 2T(√n) + log n | Change var | Θ(log n·log log n) |
+| T(n) = T(n/2) + T(n/2) + 1 | Master | Θ(n) |
+| T(n) = 3T(n/2) + n² | Master case 3 | Θ(n²) |
+| T(n) = 4T(n/2) + n² | Master case 2 | Θ(n² log n) |
 
 ### 14.5 Generating Functions for Recurrences
 
 
-Fibonacci: F(n) = F(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + F(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2)
-- Characteristic: xÃƒâ€šÃ‚Â² ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ x ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 1 = 0
-- Roots: ÃƒÂ�Ã¢â‚¬Â  = (1 + ÃƒÂ¢Ã‹â€ Ã…Â¡5)/2, ÃƒÂ�Ã‹â€  = (1 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ ÃƒÂ¢Ã‹â€ Ã…Â¡5)/2
-- Closed form: F(n) = (ÃƒÂ�Ã¢â‚¬Â ÃƒÂ¢Ã‚Â�Ã‚Â¿ ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ ÃƒÂ�Ã‹â€ ÃƒÂ¢Ã‚Â�Ã‚Â¿)/ÃƒÂ¢Ã‹â€ Ã…Â¡5 Ã¢â€ â€™ exponential growth O(ÃƒÂ�Ã¢â‚¬Â ÃƒÂ¢Ã‚Â�Ã‚Â¿)
+Fibonacci: F(n) = F(n−1) + F(n−2)
+- Characteristic: x² − x − 1 = 0
+- Roots: ÃÂ�† = (1 + √5)/2, ÃÂ�ˆ = (1 − √5)/2
+- Closed form: F(n) = (ÃÂ�†âÂÂ�¿ − ÃÂ�ˆâÂÂ�¿)/√5 → exponential growth O(ÃÂ�†âÂÂ�¿)
 
 ---
 
 ## 15. GATE Exam Strategy for DSA
 
 **Priority order by weight:**
-1. **Graphs** (6ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“10 marks) Ã¢â€ â€™ BFS/DFS, MST algorithms, shortest paths, topological sort
-2. **Trees** (5ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“8 marks) Ã¢â€ â€™ BST operations, AVL rotations, B/B+ tree properties, traversals
-3. **Sorting** (3ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5 marks) Ã¢â€ â€™ Complexity, stability, in-place, non-comparison sorts
-4. **Complexity Analysis** (3ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“5 marks) Ã¢â€ â€™ Master theorem, recurrence solving, asymptotic notations
-5. **Hashing** (2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 marks) Ã¢â€ â€™ Probing sequences, load factor, rehashing
-6. **Stacks & Queues** (2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 marks) Ã¢â€ â€™ Expression evaluation, postfix/prefix/infix conversion
-7. **Heaps** (2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 marks) Ã¢â€ â€™ Heapify, heap sort, priority queue
-8. **Arrays** (2ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“4 marks) Ã¢â€ â€™ Address calculation, sparse matrices
-9. **Linked Lists** (1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“3 marks) Ã¢â€ â€™ Operations, cycle detection
-10. **Searching** (1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2 marks) Ã¢â€ â€™ Binary search, interpolation search
+1. **Graphs** (6–10 marks) → BFS/DFS, MST algorithms, shortest paths, topological sort
+2. **Trees** (5–8 marks) → BST operations, AVL rotations, B/B+ tree properties, traversals
+3. **Sorting** (3–5 marks) → Complexity, stability, in-place, non-comparison sorts
+4. **Complexity Analysis** (3–5 marks) → Master theorem, recurrence solving, asymptotic notations
+5. **Hashing** (2–4 marks) → Probing sequences, load factor, rehashing
+6. **Stacks & Queues** (2–4 marks) → Expression evaluation, postfix/prefix/infix conversion
+7. **Heaps** (2–4 marks) → Heapify, heap sort, priority queue
+8. **Arrays** (2–4 marks) → Address calculation, sparse matrices
+9. **Linked Lists** (1–3 marks) → Operations, cycle detection
+10. **Searching** (1–2 marks) → Binary search, interpolation search
 
 **Key formulas to memorize:**
-- Catalan number: CÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢ = (2n)!/((n+1)!n!)
+- Catalan number: Cₙ = (2n)!/((n+1)!n!)
 - Sum of first n: n(n+1)/2
 - Sum of squares: n(n+1)(2n+1)/6
-- Sum of cubes: [n(n+1)/2]Ãƒâ€šÃ‚Â²
-- log a^b = bÃƒâ€šÃ‚Â·log a
+- Sum of cubes: [n(n+1)/2]²
+- log a^b = b·log a
 - log_a b = log_c b / log_c a
 - a^{log_b c} = c^{log_b a}
 
@@ -1542,7 +1542,7 @@ Fibonacci: F(n) = F(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + F(nÃƒÂ¢Ã‹
 
 ## Summary
 
-Data Structures & Algorithms (DSA) carries the highest weight in GATE CS (10-14 marks, ~12% of the paper) and covers arrays, linked lists, stacks, queues, trees (BST, AVL, B/B+ trees), graphs (BFS, DFS, MST algorithms Ã¢â‚¬â€� Kruskal, Prim; shortest paths Ã¢â‚¬â€� Dijkstra, Bellman-Ford, Floyd-Warshall), sorting (comparison-based and non-comparison, stability, in-place), searching (binary search, interpolation search), hashing (open/closed addressing, probing, load factor), and asymptotic complexity analysis (Big-O, Master theorem, recurrence solving). Graph algorithms (6-10 marks) and trees (5-8 marks) are the highest-weight topics, followed by sorting complexity analysis (3-5 marks) and hashing (2-4 marks). The key to success is choosing the right data structure for each operation Ã¢â‚¬â€� understanding trade-offs between insertion, deletion, search, and space complexity across different structures. The Master theorem for solving recurrences T(n) = aT(n/b) + f(n) is essential for complexity analysis of recursive algorithms. GATE questions often ask about underlying algorithm invariants and edge cases rather than straightforward implementation.
+Data Structures & Algorithms (DSA) carries the highest weight in GATE CS (10-14 marks, ~12% of the paper) and covers arrays, linked lists, stacks, queues, trees (BST, AVL, B/B+ trees), graphs (BFS, DFS, MST algorithms â€â€� Kruskal, Prim; shortest paths â€â€� Dijkstra, Bellman-Ford, Floyd-Warshall), sorting (comparison-based and non-comparison, stability, in-place), searching (binary search, interpolation search), hashing (open/closed addressing, probing, load factor), and asymptotic complexity analysis (Big-O, Master theorem, recurrence solving). Graph algorithms (6-10 marks) and trees (5-8 marks) are the highest-weight topics, followed by sorting complexity analysis (3-5 marks) and hashing (2-4 marks). The key to success is choosing the right data structure for each operation â€â€� understanding trade-offs between insertion, deletion, search, and space complexity across different structures. The Master theorem for solving recurrences T(n) = aT(n/b) + f(n) is essential for complexity analysis of recursive algorithms. GATE questions often ask about underlying algorithm invariants and edge cases rather than straightforward implementation.
 
 ```mermaid
 flowchart TD
@@ -1567,7 +1567,7 @@ flowchart TD
 
 ```typescript
 /**
- * BinarySearchTreeOps Ã¢â‚¬â€� BST Operations Suite
+ * BinarySearchTreeOps â€â€� BST Operations Suite
  * -----------------------------------------------
  * Implements BST construction, search, insertion, deletion,
  * traversals, and balancing check (for AVL-style height balance).
@@ -1636,7 +1636,7 @@ class BinarySearchTreeOps {
     return current;
   }
 
-  /** Inorder traversal Ã¢â‚¬â€� returns sorted array */
+  /** Inorder traversal â€â€� returns sorted array */
   inorder(): number[] {
     const result: number[] = [];
     this.inorderTraversal(this.root, result);
@@ -1732,10 +1732,10 @@ console.log('After deleting 30, inorder:', bst.inorder().join(', '));
 
 | Q# | Question | Options | Answer |
 |:--:|---------|---------|:------:|
-| 1 | The worst-case time complexity of Quicksort is: | A) O(n log n), B) O(nÃ‚Â²), C) O(n), D) O(log n) | **B** |
+| 1 | The worst-case time complexity of Quicksort is: | A) O(n log n), B) O(n²), C) O(n), D) O(log n) | **B** |
 | 2 | Which traversal of a BST yields sorted order? | A) Preorder, B) Inorder, C) Postorder, D) Level order | **B** |
 | 3 | Minimum nodes in an AVL tree of height h is: | A) F_{h+2} - 1 (Fibonacci), B) 2^h - 1, C) h + 1, D) 2h | **A** |
-| 4 | Kruskal's MST algorithm has time complexity: | A) O(VÃ‚Â²), B) O(E log V), C) O(V+E), D) O(E log E) | **D** |
+| 4 | Kruskal's MST algorithm has time complexity: | A) O(V²), B) O(E log V), C) O(V+E), D) O(E log E) | **D** |
 | 5 | A full binary tree with n internal nodes has how many leaves? | A) n, B) n+1, C) 2n, D) n-1 | **B** |
 
 ## Exercises
@@ -1744,34 +1744,34 @@ console.log('After deleting 30, inorder:', bst.inorder().join(', '));
 
 <details>
 <summary><strong>Exercise 1:</strong> Recurrence Solving</summary>
-<p>Solve T(n) = 2T(n/2) + nÃ‚Â² using the Master theorem.</p>
-<p><strong>Solution:</strong> a=2, b=2, f(n)=nÃ‚Â². log_b(a)=1. n^1 vs nÃ‚Â² Ã¢â€ â€™ case 3: f(n) = ÃŽÂ©(n^{1+ÃŽÂµ}), and af(n/b) = 2(n/2)Ã‚Â² = nÃ‚Â²/2 Ã¢â€°Â¤ cnÃ‚Â² for c=0.5 < 1. T(n) = ÃŽËœ(nÃ‚Â²).</p>
+<p>Solve T(n) = 2T(n/2) + n² using the Master theorem.</p>
+<p><strong>Solution:</strong> a=2, b=2, f(n)=n². log_b(a)=1. n^1 vs n² → case 3: f(n) = Ω(n^{1+ε}), and af(n/b) = 2(n/2)² = n²/2 ≤ cn² for c=0.5 < 1. T(n) = Θ(n²).</p>
 </details>
 
 <details>
 <summary><strong>Exercise 2:</strong> Tree Reconstruction</summary>
 <p>Preorder: ABDECF, Inorder: DBEAFC. Reconstruct the binary tree.</p>
-<p><strong>Solution:</strong> Root A (from preorder). Inorder splits: left={DBE}, right={FC}. Preorder left: BDE Ã¢â€ â€™ B is left child. Inorder: DBE Ã¢â€ â€™ D left, E right of B. Preorder right: CF Ã¢â€ â€™ C is right child. Inorder: FC Ã¢â€ â€™ F left of C. Tree: A(B(D,E), C(F,null)).</p>
+<p><strong>Solution:</strong> Root A (from preorder). Inorder splits: left={DBE}, right={FC}. Preorder left: BDE → B is left child. Inorder: DBE → D left, E right of B. Preorder right: CF → C is right child. Inorder: FC → F left of C. Tree: A(B(D,E), C(F,null)).</p>
 </details>
 
 <details>
 <summary><strong>Exercise 3:</strong> Shortest Path</summary>
 <p>Graph edges: A-B(4), A-C(2), B-C(1), B-D(5), C-D(8), C-E(10), D-E(2), D-F(6), E-F(3). Find shortest path A to F.</p>
-<p><strong>Solution:</strong> Dijkstra: A(0)Ã¢â€ â€™C(2)Ã¢â€ â€™B(3)Ã¢â€ â€™D(8)Ã¢â€ â€™E(10)Ã¢â€ â€™F(13). Path: A-C-B-D-E-F = 2+1+5+2+3=13.</p>
+<p><strong>Solution:</strong> Dijkstra: A(0)→C(2)→B(3)→D(8)→E(10)→F(13). Path: A-C-B-D-E-F = 2+1+5+2+3=13.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 4:</strong> Hashing with Linear Probing</summary>
 <p>Insert 12,22,32,42,52 into table size 10 with h(k)=k mod 10, linear probing. Count total collisions.</p>
-<p><strong>Solution:</strong> 12(h=2):0, 22(h=2):1(c)Ã¢â€ â€™3, 32(h=2):2(c)Ã¢â€ â€™4, 42(h=2):3(c)Ã¢â€ â€™5, 52(h=2):4(c)Ã¢â€ â€™6. Collisions: 0+1+2+3+4=10.</p>
+<p><strong>Solution:</strong> 12(h=2):0, 22(h=2):1(c)→3, 32(h=2):2(c)→4, 42(h=2):3(c)→5, 52(h=2):4(c)→6. Collisions: 0+1+2+3+4=10.</p>
 </details>
 
 <details>
 <summary><strong>Exercise 5:</strong> Postfix Evaluation</summary>
 <p>Evaluate: 5 3 + 8 2 - * 4 /</p>
-<p><strong>Solution:</strong> Push 5,3 Ã¢â€ â€™ pop 3,5 = 5+3=8 Ã¢â€ â€™ push 8. Push 8,2 Ã¢â€ â€™ pop 2,8 = 8-2=6 Ã¢â€ â€™ push 6. Pop 6,8 = 8*6=48 Ã¢â€ â€™ push 48. Push 4 Ã¢â€ â€™ pop 4,48 = 48/4=12. Result: 12.</p>
+<p><strong>Solution:</strong> Push 5,3 → pop 3,5 = 5+3=8 → push 8. Push 8,2 → pop 2,8 = 8-2=6 → push 6. Pop 6,8 = 8*6=48 → push 48. Push 4 → pop 4,48 = 48/4=12. Result: 12.</p>
 </details>
 
 ---
 
-*End of Chapter 10 Ã¢â‚¬â€� Data Structures & Algorithms for GATE CS. Extended with summary, TypeScript implementations, quiz, and exercises.* Ã¢â€ â€™ Data Structures & Algorithms for GATE CS. Target: 1200ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2000 lines covering all GATE-relevant DSA topics with 50+ PYQs (2010ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“2025), complexity cheat sheet, recurrence reference, and trap analysis.*
+*End of Chapter 10 â€â€� Data Structures & Algorithms for GATE CS. Extended with summary, TypeScript implementations, quiz, and exercises.* → Data Structures & Algorithms for GATE CS. Target: 1200–2000 lines covering all GATE-relevant DSA topics with 50+ PYQs (2010–2025), complexity cheat sheet, recurrence reference, and trap analysis.*

@@ -1,4 +1,4 @@
-﻿# Chapter 2 â†’ CSS3
+# Chapter 2 → CSS3
 
 > **Previous:** [01-html](./01-html.md) | **Next:** [03-js-basics](./03-js-basics.md)
 
@@ -29,7 +29,7 @@ By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance
 
-> **One-Sentence Takeaway:** The box model consists of content, padding, border, and margin â€” always use `box-sizing: border-box`.
+> **One-Sentence Takeaway:** The box model consists of content, padding, border, and margin — always use `box-sizing: border-box`.
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -152,12 +152,12 @@ By default, `width` and `height` apply only to the **content box**. Setting `box
 
 **Display values** control how boxes participate in the layout:
 
-- `block` â†’ Fills available width, respects `width`/`height`, forces new line.
-- `inline` â†’ Shrinks to content, ignores `width`/`height`, flows with text.
-- `inline-block` â†’ Shrinks to content but respects `width`/`height`.
-- `flex` â†’ Establishes a flex formatting context for children.
-- `grid` â†’ Establishes a grid formatting context for children.
-- `none` â†’ Removes element from the layout tree entirely.
+- `block` → Fills available width, respects `width`/`height`, forces new line.
+- `inline` → Shrinks to content, ignores `width`/`height`, flows with text.
+- `inline-block` → Shrinks to content but respects `width`/`height`.
+- `flex` → Establishes a flex formatting context for children.
+- `grid` → Establishes a grid formatting context for children.
+- `none` → Removes element from the layout tree entirely.
 
 ### 2.3 Flexbox
 
@@ -275,12 +275,12 @@ Responsive design ensures content renders well on any device width.
 
 **Relative units:**
 
-- `%` â†’ Relative to parent
-- `em` â†’ Relative to element's font-size
-- `rem` â†’ Relative to root font-size (typically 16px)
-- `vw` / `vh` â†’ Percentage of viewport width/height
-- `dvw` / `dvh` â†’ Dynamic viewport units (account for mobile toolbars)
-- `clamp(min, preferred, max)` â†’ Fluid value between bounds
+- `%` → Relative to parent
+- `em` → Relative to element's font-size
+- `rem` → Relative to root font-size (typically 16px)
+- `vw` / `vh` → Percentage of viewport width/height
+- `dvw` / `dvh` → Dynamic viewport units (account for mobile toolbars)
+- `clamp(min, preferred, max)` → Fluid value between bounds
 
 **Media queries:**
 
@@ -480,7 +480,7 @@ The `font-display: swap` ensures text remains visible while the custom font load
 > Margin collapsing only affects vertical margins. Horizontal margins never collapse.
 
 > [!REMEMBER]
-> `auto-fill` preserves empty grid tracks while `auto-fit` collapses them â€” choose based on whether ghost columns matter.
+> `auto-fill` preserves empty grid tracks while `auto-fit` collapses them — choose based on whether ghost columns matter.
 
 
 
@@ -641,7 +641,7 @@ class CSSSpecificity {
 
     static explain(selector: string): string {
         const s = this.calculate(selector);
-        return `Selector "${selector}": ${s.id} ID Ã— 1000 = ${s.id * 1000}, ${s.class} class/attr/pseudo Ã— 100 = ${s.class * 100}, ${s.tag} tags Ã— 1 = ${s.tag}, total = ${s.total}`;
+        return `Selector "${selector}": ${s.id} ID × 1000 = ${s.id * 1000}, ${s.class} class/attr/pseudo × 100 = ${s.class * 100}, ${s.tag} tags × 1 = ${s.tag}, total = ${s.total}`;
     }
 }
 
@@ -703,7 +703,7 @@ class ColorContrastChecker {
         if (r >= 7) return "Excellent (AAA)";
         if (r >= 4.5) return "Good (AA)";
         if (r >= 3) return "Minimum (AA large text)";
-        return "FAIL â€” insufficient contrast";
+        return "FAIL — insufficient contrast";
     }
 }
 
@@ -790,11 +790,11 @@ export { Processor, Task }
 
 ### Practical Takeaways
 
-1. **Always use `box-sizing: border-box` globally** â€” this single rule prevents countless layout headaches by including padding and border in element width calculations.
-2. **Master Flexbox for one-dimensional layouts** â€” learn `justify-content` (main axis), `align-items` (cross axis), and `flex: grow shrink basis` for 90% of layout needs.
-3. **Use CSS Grid for two-dimensional layouts** â€” `grid-template-areas` makes layout intent readable at a glance. Reserve Flexbox for content within grid cells.
-4. **Build mobile-first with `min-width` breakpoints** â€” base styles are for narrow screens; media queries add complexity as space increases.
-5. **Use container queries for reusable components** â€” container queries let a component adapt to its parent's size, not the viewport, making the component truly reusable in any context.
+1. **Always use `box-sizing: border-box` globally** — this single rule prevents countless layout headaches by including padding and border in element width calculations.
+2. **Master Flexbox for one-dimensional layouts** — learn `justify-content` (main axis), `align-items` (cross axis), and `flex: grow shrink basis` for 90% of layout needs.
+3. **Use CSS Grid for two-dimensional layouts** — `grid-template-areas` makes layout intent readable at a glance. Reserve Flexbox for content within grid cells.
+4. **Build mobile-first with `min-width` breakpoints** — base styles are for narrow screens; media queries add complexity as space increases.
+5. **Use container queries for reusable components** — container queries let a component adapt to its parent's size, not the viewport, making the component truly reusable in any context.
 
 ### CSS Cascade Layers and @layer
 
@@ -804,7 +804,7 @@ Cascade layers let authors control specificity order at the layer level.
 /* Declare layer order (first declared = lowest precedence) */
 @layer reset, base, components, utilities;
 
-/* Reset layer â€” zero specificity wins */
+/* Reset layer — zero specificity wins */
 @layer reset {
   *,
   *::before,
@@ -815,7 +815,7 @@ Cascade layers let authors control specificity order at the layer level.
   }
 }
 
-/* Base layer â€” element defaults */
+/* Base layer — element defaults */
 @layer base {
   body {
     font-family: system-ui, sans-serif;
@@ -823,7 +823,7 @@ Cascade layers let authors control specificity order at the layer level.
   }
 }
 
-/* Component layer â€” class-based styles */
+/* Component layer — class-based styles */
 @layer components {
   .card {
     background: var(--color-surface);
@@ -832,7 +832,7 @@ Cascade layers let authors control specificity order at the layer level.
   }
 }
 
-/* Utilities layer â€” highest precedence */
+/* Utilities layer — highest precedence */
 @layer utilities {
   .sr-only {
     position: absolute;
@@ -870,7 +870,7 @@ Container queries let components respond to their parent size, not the viewport.
   }
 }
 
-/* Style queries â€” check container style values */
+/* Style queries — check container style values */
 @container card style(--theme: dark) {
   .card { background: #222; color: #fff; }
 }

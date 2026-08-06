@@ -1,16 +1,16 @@
-﻿# Design and Implementation
+# Design and Implementation
 
 ## Learning Objectives
 
 ```
-âœ“ Understand and apply the five SOLID principles of object-oriented design
-âœ“ Distinguish between coupling and cohesion and their impact on design quality
-âœ“ Implement GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) in TypeScript
-âœ“ Apply clean code principles: meaningful names, small functions, no side effects
-âœ“ Detect code smells and apply refactoring patterns systematically
-âœ“ Use design by contract with preconditions, postconditions, and invariants
-âœ“ Conduct structured design reviews with actionable feedback
-âœ“ Map architectural decisions to implementation-level code effectively
+✓ Understand and apply the five SOLID principles of object-oriented design
+✓ Distinguish between coupling and cohesion and their impact on design quality
+✓ Implement GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) in TypeScript
+✓ Apply clean code principles: meaningful names, small functions, no side effects
+✓ Detect code smells and apply refactoring patterns systematically
+✓ Use design by contract with preconditions, postconditions, and invariants
+✓ Conduct structured design reviews with actionable feedback
+✓ Map architectural decisions to implementation-level code effectively
 ```
 
 <!-- Image Gallery -->
@@ -55,18 +55,18 @@ graph TD
     I[ISP: Interface Segregation]:::principle -->|Small, focused interfaces| CLASS
     D[DIP: Dependency Inversion]:::principle -->|Depend on abstractions, not concretions| CLASS
 
-    CLASS --> TEST[âœ“ Testable]:::benefit
-    CLASS --> MAINTAIN[âœ“ Maintainable]:::benefit
-    CLASS --> EXTEND[âœ“ Extensible]:::benefit
-    CLASS --> REUSE[âœ“ Reusable]:::benefit
+    CLASS --> TEST[✓ Testable]:::benefit
+    CLASS --> MAINTAIN[✓ Maintainable]:::benefit
+    CLASS --> EXTEND[✓ Extensible]:::benefit
+    CLASS --> REUSE[✓ Reusable]:::benefit
 
-    CLASS --> OVERENG[âš  Risk of over-engineering]:::risk
-    CLASS --> PREMATURE[âš  Premature abstraction]:::risk
+    CLASS --> OVERENG[⚠ Risk of over-engineering]:::risk
+    CLASS --> PREMATURE[⚠ Premature abstraction]:::risk
 ```
 
 #### Single Responsibility Principle (SRP)
 
-A class should have only one reason to change. Each class should be responsible for a single part of the functionality. When a class has multiple responsibilities, changes to one responsibility may affect the other. This principle is closely related to **cohesion** â€” a class with a single responsibility has maximal functional cohesion.
+A class should have only one reason to change. Each class should be responsible for a single part of the functionality. When a class has multiple responsibilities, changes to one responsibility may affect the other. This principle is closely related to **cohesion** — a class with a single responsibility has maximal functional cohesion.
 
 **Violation:**
 ```typescript
@@ -99,7 +99,7 @@ The refactored design allows each class to evolve independently. If the email te
 
 #### Open-Closed Principle (OCP)
 
-Classes should be open for extension but closed for modification. The behaviour should be extendable without modifying the class itself. This is achieved through abstraction â€” typically interfaces or abstract classes.
+Classes should be open for extension but closed for modification. The behaviour should be extendable without modifying the class itself. This is achieved through abstraction — typically interfaces or abstract classes.
 
 **Violation:**
 ```typescript
@@ -135,7 +135,7 @@ class DiscountCalculator {
 }
 ```
 
-To add a new discount type, we simply create a new class implementing `DiscountStrategy`. The `DiscountCalculator` class never needs modification â€” it is closed for modification but open for extension.
+To add a new discount type, we simply create a new class implementing `DiscountStrategy`. The `DiscountCalculator` class never needs modification — it is closed for modification but open for extension.
 
 #### Liskov Substitution Principle (LSP)
 
@@ -152,7 +152,7 @@ class Rectangle {
 class Square extends Rectangle {
   setWidth(w: number): void {
     this.width = w;
-    this.height = w; // Violates LSP â€” changes height unexpectedly
+    this.height = w; // Violates LSP — changes height unexpectedly
   }
 }
 ```
@@ -240,7 +240,7 @@ interface UserRepository {
 }
 ```
 
-DIP is the foundation of dependency injection. By depending on abstractions, we can swap implementations (PostgreSQL â†’ MongoDB, production â†’ test) without modifying the dependent class.
+DIP is the foundation of dependency injection. By depending on abstractions, we can swap implementations (PostgreSQL → MongoDB, production → test) without modifying the dependent class.
 
 ### DRY, KISS, and YAGNI
 
@@ -648,19 +648,19 @@ graph TD
     INTERCHANGE --> CHOOSE
     STEPS --> CHOOSE
 
-    CHOOSE --> RESULT[âœ“ Problem Solved]
+    CHOOSE --> RESULT[✓ Problem Solved]
 ```
 
 ## Examples
 
 ### Case Study 1: E-Commerce Platform Redesign
 
-A growing e-commerce company had a monolithic order processing system violating all five SOLID principles. The `OrderManager` class contained 8,000 lines handling validation, pricing, inventory, shipping, notifications, and payment processing. Adding a new payment method required modifying the class and retesting the entire system â€” a two-week cycle.
+A growing e-commerce company had a monolithic order processing system violating all five SOLID principles. The `OrderManager` class contained 8,000 lines handling validation, pricing, inventory, shipping, notifications, and payment processing. Adding a new payment method required modifying the class and retesting the entire system — a two-week cycle.
 
 **Solution:** The team applied systematic refactoring over three months:
 1. **SRP:** Split `OrderManager` into `OrderValidator`, `PricingEngine`, `InventoryManager`, `ShippingCoordinator`, `NotificationService`, and `PaymentProcessor`.
-2. **OCP:** Introduced `PaymentStrategy` interface â€” adding PayPal took one day instead of two weeks.
-3. **DIP:** Created repository interfaces â€” switched from PostgreSQL to MongoDB without changing business logic.
+2. **OCP:** Introduced `PaymentStrategy` interface — adding PayPal took one day instead of two weeks.
+3. **DIP:** Created repository interfaces — switched from PostgreSQL to MongoDB without changing business logic.
 4. **Factory:** Used a `PaymentProcessorFactory` to instantiate the correct payment handler based on configuration.
 
 **Result:** Cycle time for new payment methods dropped from 10 days to 1 day. Bug rate decreased by 65%. The system could now be tested at the unit level (2,000+ unit tests) instead of requiring full regression.
@@ -706,7 +706,7 @@ class DataProviderFactory {
 
 ### Case Study 3: Healthcare Records System Modernization
 
-A legacy healthcare records system used a single `PatientRecord` class containing medical data, billing information, insurance details, and appointment scheduling â€” a clear SRP violation with tight coupling causing frequent bugs.
+A legacy healthcare records system used a single `PatientRecord` class containing medical data, billing information, insurance details, and appointment scheduling — a clear SRP violation with tight coupling causing frequent bugs.
 
 **Solution:** The team refactored using clean code principles:
 1. Extracted separate domain classes: `MedicalRecord`, `BillingInfo`, `InsurancePolicy`, `AppointmentSchedule`.
@@ -813,10 +813,10 @@ const violations = checker.checkAll([
   },
 ]);
 console.log('SOLID Violations:');
-violations.forEach((v) => console.log(`  [${v.severity}] ${v.principle}: ${v.className} â€” ${v.description}`));
+violations.forEach((v) => console.log(`  [${v.severity}] ${v.principle}: ${v.className} — ${v.description}`));
 ```
 
-### Refactoring Engine â€” Code Smell Detector
+### Refactoring Engine — Code Smell Detector
 
 ```typescript
 interface CodeSmell {
@@ -917,7 +917,7 @@ class RefactoringEngine {
     prioritized.forEach((smell, i) => {
       plan.push(`  ${i + 1}. [${smell.severity.toUpperCase()}] ${smell.type} at ${smell.location}`);
       plan.push(`     ${smell.description}`);
-      plan.push(`     â†’ ${smell.suggestedRefactoring}`);
+      plan.push(`     → ${smell.suggestedRefactoring}`);
     });
     plan.push('', `Total: ${smells.length} code smells detected. Estimated effort: ${smells.length * 4}h`);
     return plan;
@@ -1161,22 +1161,22 @@ graph TD
 
 ## Summary
 
-Design and implementation are the core technical activities of software engineering. Design principles â€” SOLID, DRY, KISS, YAGNI â€” provide proven guidance for creating maintainable, testable, and adaptable software. The SOLID principles address class-level design: SRP ensures each class has a single responsibility; OCP enables extension without modification; LSP guarantees substitutability; ISP prevents clients from depending on interfaces they don't use; and DIP decouples high-level modules from low-level implementations.
+Design and implementation are the core technical activities of software engineering. Design principles — SOLID, DRY, KISS, YAGNI — provide proven guidance for creating maintainable, testable, and adaptable software. The SOLID principles address class-level design: SRP ensures each class has a single responsibility; OCP enables extension without modification; LSP guarantees substitutability; ISP prevents clients from depending on interfaces they don't use; and DIP decouples high-level modules from low-level implementations.
 
-GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) offer reusable solutions to recurring design problems. Patterns should be applied to solve specific problems, not as decoration. Clean code principles â€” meaningful names, small functions, no side effects â€” complement patterns by ensuring the resulting code is readable and maintainable.
+GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) offer reusable solutions to recurring design problems. Patterns should be applied to solve specific problems, not as decoration. Clean code principles — meaningful names, small functions, no side effects — complement patterns by ensuring the resulting code is readable and maintainable.
 
 Coupling and cohesion are the most practical indicators of design quality. Low coupling between modules and high cohesion within modules consistently correlate with systems that are easier to understand, test, and change. Design by contract formalises expectations through preconditions, postconditions, and invariants. Refactoring systematically improves design without changing external behaviour, and code smell detectors can automatically flag areas needing attention. Together, these principles and practices form the foundation of professional software design and implementation.
 
 ## Practical Takeaways
 
-1. **SOLID is a toolkit, not a checklist** â€” apply principles where they reduce complexity, not everywhere. Over-applying SOLID leads to unnecessary abstraction.
-2. **Patterns solve problems, they don't create them** â€” don't use a pattern just because you studied it. Let the problem drive the pattern selection.
-3. **Design for the specific, not the abstract** â€” YAGNI and KISS prevent over-engineering. Build for what you know today.
-4. **Testability is a design quality indicator** â€” if a design is hard to test, it's probably a bad design. Write tests first to validate your design decisions.
-5. **Refactor early, refactor often** â€” small continuous improvements prevent structural degradation. Dedicate 20% of each sprint to refactoring.
-6. **Coupling and cohesion are the most practical design metrics** â€” high cohesion + low coupling = good design. Use these as your primary quality gates.
-7. **Design reviews catch problems early** â€” invest in structured design reviews before writing code. A 1-hour review can save 10 hours of rework.
-8. **Clean code is a professional obligation** â€” readable code reduces maintenance costs. Write code for the next developer, not for the compiler.
+1. **SOLID is a toolkit, not a checklist** — apply principles where they reduce complexity, not everywhere. Over-applying SOLID leads to unnecessary abstraction.
+2. **Patterns solve problems, they don't create them** — don't use a pattern just because you studied it. Let the problem drive the pattern selection.
+3. **Design for the specific, not the abstract** — YAGNI and KISS prevent over-engineering. Build for what you know today.
+4. **Testability is a design quality indicator** — if a design is hard to test, it's probably a bad design. Write tests first to validate your design decisions.
+5. **Refactor early, refactor often** — small continuous improvements prevent structural degradation. Dedicate 20% of each sprint to refactoring.
+6. **Coupling and cohesion are the most practical design metrics** — high cohesion + low coupling = good design. Use these as your primary quality gates.
+7. **Design reviews catch problems early** — invest in structured design reviews before writing code. A 1-hour review can save 10 hours of rework.
+8. **Clean code is a professional obligation** — readable code reduces maintenance costs. Write code for the next developer, not for the compiler.
 
 ## Chapter Quiz
 
@@ -1234,7 +1234,7 @@ Coupling and cohesion are the most practical indicators of design quality. Low c
 
 6. Describe the seven levels of cohesion from worst to best.
 
-7. Explain design by contract â€” what are preconditions, postconditions, and invariants?
+7. Explain design by contract — what are preconditions, postconditions, and invariants?
 
 8. When would you use the Strategy pattern instead of a switch statement?
 
@@ -1353,7 +1353,7 @@ class WeatherStation {
 
 class CurrentConditionsDisplay implements WeatherObserver {
   update(temp: number, humidity: number, _pressure: number): void {
-    console.log(`Current: ${temp}Â°C, ${humidity}% humidity`);
+    console.log(`Current: ${temp}°C, ${humidity}% humidity`);
   }
 }
 
@@ -1362,7 +1362,7 @@ class StatisticsDisplay implements WeatherObserver {
   update(temp: number, _humidity: number, _pressure: number): void {
     this.temps.push(temp);
     const avg = this.temps.reduce((s, t) => s + t, 0) / this.temps.length;
-    console.log(`Avg temperature: ${avg.toFixed(1)}Â°C`);
+    console.log(`Avg temperature: ${avg.toFixed(1)}°C`);
   }
 }
 
@@ -1432,32 +1432,32 @@ console.log(doc.process());
 <details>
 <summary>Click for solution</summary>
 
-**Month 1 â€” Establish Safety Net:**
+**Month 1 — Establish Safety Net:**
 1. Add characterization tests (record input/output of existing behavior)
 2. Set up CI pipeline
 3. Extract database access behind repository interfaces
 
-**Month 2 â€” Decompose by Responsibility:**
+**Month 2 — Decompose by Responsibility:**
 1. Identify distinct responsibility groups in the monolith (e.g., orders, inventory, payments, users)
 2. Extract each group into its own class (SRP)
 3. Keep the original class as a facade delegating to extracted classes
 
-**Month 3 â€” Introduce Abstractions:**
+**Month 3 — Introduce Abstractions:**
 1. Create interfaces for all extracted classes (DIP)
 2. Replace global variables with constructor-injected dependencies
 3. Make methods private where possible
 
-**Month 4 â€” Apply Patterns:**
+**Month 4 — Apply Patterns:**
 1. Replace type-based conditionals with Strategy pattern (OCP)
 2. Extract object creation into Factory methods
 3. Add Observer for cross-cutting notifications
 
-**Month 5 â€” Add Unit Tests:**
+**Month 5 — Add Unit Tests:**
 1. Write unit tests for each extracted class
 2. Achieve 70%+ code coverage
 3. Remove the facade class
 
-**Month 6 â€” Continuous Improvement:**
+**Month 6 — Continuous Improvement:**
 1. Monitor code quality metrics
 2. Address remaining code smells
 3. Establish refactoring as part of Definition of Done

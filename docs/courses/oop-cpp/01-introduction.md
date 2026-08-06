@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Object-Oriented Programming
+# Chapter 1: Introduction to Object-Oriented Programming
 
 > **Previous:** None | **Next:** [Classes and Objects](./02-classes-objects.md)
 
@@ -67,29 +67,29 @@ flowchart LR
 
 ## 1.1 What is Object-Oriented Programming?
 
-> **One-Sentence Takeaway:** OOP is a programming paradigm that organises code around objectsâ†’bundles of data (attributes) and behaviour (methods)â†’rather than around functions and logic.
+> **One-Sentence Takeaway:** OOP is a programming paradigm that organises code around objects→bundles of data (attributes) and behaviour (methods)→rather than around functions and logic.
 
 ### 1.1.1 The Core Idea
 
 
-Object-Oriented Programming (OOP) is a paradigm that models software as a collection of interacting objects rather than as a sequence of procedures. Each object represents a real-world entityâ†’a user, a bank account, a GUI button, a game characterâ†’and holds both the data describing that entity and the operations that can be performed on it.
+Object-Oriented Programming (OOP) is a paradigm that models software as a collection of interacting objects rather than as a sequence of procedures. Each object represents a real-world entity→a user, a bank account, a GUI button, a game character→and holds both the data describing that entity and the operations that can be performed on it.
 
-In procedural programming, the unit of organisation is the **function**. Data flows into a function, gets transformed, and flows out. In OOP, the unit of organisation is the **object**â†’a self-contained unit that owns its data and exposes a controlled set of operations.
+In procedural programming, the unit of organisation is the **function**. Data flows into a function, gets transformed, and flows out. In OOP, the unit of organisation is the **object**→a self-contained unit that owns its data and exposes a controlled set of operations.
 
 | Aspect | Procedural Thinking | OOP Thinking |
 |--------|-------------------|--------------|
 | "I need to compute a salary" | Call `compute_salary(emp_id, hours, rate)` | Ask `employee.computeSalary()` |
 | "I need to save a record" | Call `save_to_db(record_struct, table_name)` | Ask `record.save()` |
-| "I need to draw a shape" | Switch on `shape_type` in a big function | Ask `shape.draw()` â†’ each shape knows how |
+| "I need to draw a shape" | Switch on `shape_type` in a big function | Ask `shape.draw()` → each shape knows how |
 
 ### 1.1.2 The Three Dimensions of an Object
 
 
 Every object has three essential dimensions:
 
-1. **Identity** â†’ a unique handle that distinguishes this object from all others (its memory address or a unique ID).
-2. **State** â†’ the data stored inside the object (member variables).
-3. **Behaviour** â†’ the operations the object can perform (member functions / methods).
+1. **Identity** → a unique handle that distinguishes this object from all others (its memory address or a unique ID).
+2. **State** → the data stored inside the object (member variables).
+3. **Behaviour** → the operations the object can perform (member functions / methods).
 
 ```cpp
 #include <iostream>
@@ -143,12 +143,12 @@ A002 balance: 400
 
 | Step | Line(s) | What Happens | acc1 State | acc2 State |
 |------|---------|-------------|------------|------------|
-| 1 | `BankAccount acc1("A001", 1000.0)` | Constructor runs; accountId="A001", balance=1000.0 | {A001, 1000.0} | â†’ |
+| 1 | `BankAccount acc1("A001", 1000.0)` | Constructor runs; accountId="A001", balance=1000.0 | {A001, 1000.0} | → |
 | 2 | `BankAccount acc2("A002", 500.0)` | Constructor runs; accountId="A002", balance=500.0 | {A001, 1000.0} | {A002, 500.0} |
 | 3 | `acc1.deposit(250.0)` | balance = 1000.0 + 250.0 = 1250.0 | {A001, 1250.0} | {A002, 500.0} |
-| 4 | `acc2.withdraw(100.0)` | 100.0 &lt;= 500.0 â†’ true; balance = 500.0 - 100.0 = 400.0 | {A001, 1250.0} | {A002, 400.0} |
-| 5 | `acc1.getBalance()` | Returns 1250.0 | printed | â†’ |
-| 6 | `acc2.getBalance()` | Returns 400.0 | â†’ | printed |
+| 4 | `acc2.withdraw(100.0)` | 100.0 &lt;= 500.0 → true; balance = 500.0 - 100.0 = 400.0 | {A001, 1250.0} | {A002, 400.0} |
+| 5 | `acc1.getBalance()` | Returns 1250.0 | printed | → |
+| 6 | `acc2.getBalance()` | Returns 400.0 | → | printed |
 
 **Complexity Analysis:**
 
@@ -164,15 +164,15 @@ A002 balance: 400
 
 ## 1.2 Procedural Programming vs OOP
 
-> **One-Sentence Takeaway:** Procedural code separates data from behaviour; OOP unites themâ†’making large systems easier to reason about, extend, and maintain.
+> **One-Sentence Takeaway:** Procedural code separates data from behaviour; OOP unites them→making large systems easier to reason about, extend, and maintain.
 
-### 1.2.1 Procedural Style â†’ Data and Functions Are Separate
+### 1.2.1 Procedural Style → Data and Functions Are Separate
 
 
 In procedural programming, data structures (structs) hold only data, and functions operate on those structures. The programmer must remember which function works with which struct.
 
 ```cpp
-// Procedural approach â†’ data and functions are separate
+// Procedural approach → data and functions are separate
 
 #include <iostream>
 #include <string>
@@ -224,15 +224,15 @@ A002: 400
 
 **Problems with this approach as systems grow:**
 
-1. **No ownership** â†’ any function can modify any field of any struct.
-2. **Scattered logic** â†’ `deposit`, `withdraw`, `print` all live independently; nothing groups them.
-3. **Easy to misuse** â†’ passing a `nullptr` or the wrong struct type compiles fine.
-4. **Poor scalability** â†’ adding a new account type (e.g., `SavingsAccount`) requires editing all functions.
+1. **No ownership** → any function can modify any field of any struct.
+2. **Scattered logic** → `deposit`, `withdraw`, `print` all live independently; nothing groups them.
+3. **Easy to misuse** → passing a `nullptr` or the wrong struct type compiles fine.
+4. **Poor scalability** → adding a new account type (e.g., `SavingsAccount`) requires editing all functions.
 
-### 1.2.2 OOP Style â†’ Data and Behaviour Are United
+### 1.2.2 OOP Style → Data and Behaviour Are United
 
 
-The same logic in OOP style (as shown in Ã‚Â§1.1.2) groups data and behaviour inside the class. The object protects its data and exposes only intentional operations.
+The same logic in OOP style (as shown in §1.1.2) groups data and behaviour inside the class. The object protects its data and exposes only intentional operations.
 
 ### 1.2.3 Deep Comparison Table
 
@@ -260,12 +260,12 @@ The same logic in OOP style (as shown in Ã‚Â§1.1.2) groups data and behavio
 
 | Scenario | Use Procedural | Use OOP |
 |----------|---------------|---------|
-| Write a 50-line data-crunching script | Ã¢Å“â€œ | Decent but overkill |
-| Build a GUI with 200 buttons, windows, dialogs | Painful | Ã¢Å“â€œ Natural fit |
-| Implement a physics engine | Ã¢Å“â€œ Core algorithms are functional | Some OOP for entities |
-| Design a banking system with 50 account types | Maintenance nightmare | Ã¢Å“â€œ Inheritance handles this |
-| Write firmware for a microcontroller | Ã¢Å“â€œ (limited resources) | Needle in a haystack |
-| Build a web framework (e.g., Spring, ASP.NET) | Not practical | Ã¢Å“â€œ Framework design demands OOP |
+| Write a 50-line data-crunching script | ✓ | Decent but overkill |
+| Build a GUI with 200 buttons, windows, dialogs | Painful | ✓ Natural fit |
+| Implement a physics engine | ✓ Core algorithms are functional | Some OOP for entities |
+| Design a banking system with 50 account types | Maintenance nightmare | ✓ Inheritance handles this |
+| Write firmware for a microcontroller | ✓ (limited resources) | Needle in a haystack |
+| Build a web framework (e.g., Spring, ASP.NET) | Not practical | ✓ Framework design demands OOP |
 
 ---
 
@@ -276,7 +276,7 @@ The same logic in OOP style (as shown in Ã‚Â§1.1.2) groups data and behavio
 ### 1.3.1 The Blueprint Analogy
 
 
-A **class** is a compile-time conceptâ†’it defines the structure (which data members exist) and the behaviour (which methods exist) but occupies no runtime memory by itself. An **object** is a runtime entityâ†’a concrete instance of a class that has its own memory, its own copy of member variables, and a distinct identity.
+A **class** is a compile-time concept→it defines the structure (which data members exist) and the behaviour (which methods exist) but occupies no runtime memory by itself. An **object** is a runtime entity→a concrete instance of a class that has its own memory, its own copy of member variables, and a distinct identity.
 
 | Aspect | Class | Object |
 |--------|-------|--------|
@@ -363,7 +363,7 @@ CLASS (compile time)                OBJECTS (runtime)
 
 ---
 
-## 1.4 History of OOP â†’ A Timeline
+## 1.4 History of OOP → A Timeline
 
 > **One-Sentence Takeaway:** OOP evolved over five decades from simulation languages to the dominant paradigm in enterprise, web, and systems programming.
 
@@ -384,18 +384,18 @@ CLASS (compile time)                OBJECTS (runtime)
 | **2000** | **C# 1.0** released | Anders Hejlsberg at Microsoft | Java-like OOP with component-oriented features. Properties, events, delegates. |
 | **2000** | **PHP 4** adds OOP | Zend Technologies | Classes and objects introduced to the web scripting world. |
 | **2005** | **PHP 5** major OOP overhaul | Zend | Real OOP with `private`/`protected`/`public`, interfaces, exceptions. |
-| **2011** | **C++11** â†’ modern C++ | ISO C++ Committee | Major OOP enhancements: move semantics, `auto`, lambdas, `nullptr`. Modern C++ idiom established. |
+| **2011** | **C++11** → modern C++ | ISO C++ Committee | Major OOP enhancements: move semantics, `auto`, lambdas, `nullptr`. Modern C++ idiom established. |
 | **2014** | **Swift 1.0** released | Apple (Chris Lattner) | Protocol-oriented + OOP. Protocols (interfaces) as primary abstraction mechanism. |
 | **2020s** | OOP influence absorbed by all mainstream languages | Community | Even functional languages (Scala, Kotlin) include classes; OOP patterns ubiquitous in frameworks. |
 
 ### Key Observations from the Timeline
 
 
-1. **OOP started with simulation** â†’ Dahl and Nygaard needed to model real-world entities (ships, queues, cargo). Objects were the natural unit.
-2. **Smalltalk defined the vision** â†’ Alan Kay coined "object-oriented programming" and imagined a world of communicating objects (inspired by biological cells and computers on the ARPANET).
-3. **C++ made OOP practical for systems programming** â†’ Stroustrup's hybrid approach let programmers choose when to use OOP, enabling gradual adoption.
-4. **Java made OOP mainstream** â†’ Sun's marketing and the web boom catapulted OOP to the dominant paradigm.
-5. **Modern languages are multi-paradigm** â†’ Pure OOP is rare now; most languages mix OOP, functional, and procedural styles.
+1. **OOP started with simulation** → Dahl and Nygaard needed to model real-world entities (ships, queues, cargo). Objects were the natural unit.
+2. **Smalltalk defined the vision** → Alan Kay coined "object-oriented programming" and imagined a world of communicating objects (inspired by biological cells and computers on the ARPANET).
+3. **C++ made OOP practical for systems programming** → Stroustrup's hybrid approach let programmers choose when to use OOP, enabling gradual adoption.
+4. **Java made OOP mainstream** → Sun's marketing and the web boom catapulted OOP to the dominant paradigm.
+5. **Modern languages are multi-paradigm** → Pure OOP is rare now; most languages mix OOP, functional, and procedural styles.
 
 ---
 
@@ -446,8 +446,8 @@ public:
 };
 
 int main() {
-    Car redCar("Red", 10);    // Blueprint â†’ object (red car with 10L fuel)
-    Car blueCar("Blue", 5);   // Blueprint â†’ object (blue car with 5L fuel)
+    Car redCar("Red", 10);    // Blueprint → object (red car with 10L fuel)
+    Car blueCar("Blue", 5);   // Blueprint → object (blue car with 5L fuel)
 
     redCar.accelerate(20);    // Send "accelerate" message to redCar
     redCar.accelerate(10);    // Send "accelerate" message again
@@ -473,16 +473,16 @@ Blue car fuel: 4 L
 
 | Step | Code | Effect | redCar state | blueCar state |
 |------|------|--------|-------------|-------------|
-| 1 | `Car redCar("Red", 10)` | Constructor | color=Red, speed=0, fuel=10 | â†’ |
+| 1 | `Car redCar("Red", 10)` | Constructor | color=Red, speed=0, fuel=10 | → |
 | 2 | `Car blueCar("Blue", 5)` | Constructor | as above | color=Blue, speed=0, fuel=5 |
 | 3 | `redCar.accelerate(20)` | speed=0+20=20, fuel=10-1=9 | speed=20, fuel=9 | unchanged |
 | 4 | `redCar.accelerate(10)` | speed=20+10=30, fuel=9-1=8 | speed=30, fuel=8 | unchanged |
 | 5 | `blueCar.accelerate(30)` | speed=0+30=30, fuel=5-1=4 | unchanged | speed=30, fuel=4 |
-| 6 | `redCar.getSpeed()` | returns 30 | â†’ | â†’ |
+| 6 | `redCar.getSpeed()` | returns 30 | → | → |
 
 ---
 
-### Analogy 2: Restaurant Kitchen â†’ Chef, Orders, and Plates
+### Analogy 2: Restaurant Kitchen → Chef, Orders, and Plates
 
 
 This analogy models **object collaboration** (message passing).
@@ -492,8 +492,8 @@ This analogy models **object collaboration** (message passing).
 | Chef | `class Chef { ... };` |
 | Order ticket | `class Order { ... };` |
 | Plate of food | `class Plate { ... };` |
-| Chef receives order | `Chef.cook(order)` â†’ message passing |
-| Order has items | `Order::items_` â†’ member data |
+| Chef receives order | `Chef.cook(order)` → message passing |
+| Order has items | `Order::items_` → member data |
 
 ```cpp
 #include <iostream>
@@ -542,7 +542,7 @@ public:
 
     void serve(const Order& order) {
         std::cout << "Waiter delivers order to chef...\n";
-        Plate plate = chef_.cook(order);   // Message passing: Waiter â†’ Chef
+        Plate plate = chef_.cook(order);   // Message passing: Waiter → Chef
         std::cout << "Serving \"" << plate.food
                   << "\" to table " << plate.tableNumber << "\n";
     }
@@ -578,7 +578,7 @@ Serving "Steak Fries Salad " to table 7
 
 ---
 
-### Analogy 3: ATM Machine â†’ State, Behaviour, Encapsulation
+### Analogy 3: ATM Machine → State, Behaviour, Encapsulation
 
 
 ```cpp
@@ -618,7 +618,7 @@ int main() {
     ATM atm("Main Street Branch", 10000.0);
 
     atm.dispenseCash(2000.0);   // Customer withdraws
-    atm.dispenseCash(9000.0);   // Another withdrawal â†’ may fail
+    atm.dispenseCash(9000.0);   // Another withdrawal → may fail
     atm.dispenseCash(500.0);    // After cash runs low
 
     std::cout << "Remaining cash: $" << atm.getCashLevel() << "\n";
@@ -644,9 +644,9 @@ Remaining cash: $800
 
 ---
 
-## 1.6 The Four Pillars of OOP â†’ Overview
+## 1.6 The Four Pillars of OOP → Overview
 
-> **One-Sentence Takeaway:** Encapsulation hides data, inheritance reuses code, polymorphism swaps behaviour, abstraction simplifies interfaces â†’ together they enable scalable, maintainable software.
+> **One-Sentence Takeaway:** Encapsulation hides data, inheritance reuses code, polymorphism swaps behaviour, abstraction simplifies interfaces → together they enable scalable, maintainable software.
 
 | Pillar | Definition | Real-World Analogy | C++ Mechanism | Key Benefit |
 |--------|------------|-------------------|---------------|-------------|
@@ -655,10 +655,10 @@ Remaining cash: $800
 | **Polymorphism** | One interface, many implementations | A "play" button works on DVD, Spotify, YouTube differently | Virtual functions + overriding | Extensibility, generic code |
 | **Abstraction** | Hide complexity; expose only what's needed | Driving a car: you use steering wheel + pedals, not the engine internals | Pure virtual classes / interfaces | Reduce cognitive load, decouple usage from implementation |
 
-### Detailed Exploration of Each Pillar (Sections 1.6.1Ã¢â‚¬â€œ1.6.4)
+### Detailed Exploration of Each Pillar (Sections 1.6.1–1.6.4)
 
 
-### 1.6.1 Encapsulation â†’ The First Pillar
+### 1.6.1 Encapsulation → The First Pillar
 
 
 > **One-Sentence Takeaway:** Encapsulation wraps data and functions into a single unit and restricts direct access to an object's internal state.
@@ -687,12 +687,12 @@ public:
     Employee(std::string name, int age, double salary)
         : name_(name), age_(age), salary_(salary) {}
 
-    // Getter â†’ controlled read access
+    // Getter → controlled read access
     std::string getName() const { return name_; }
     int getAge() const { return age_; }
     double getSalary() const { return salary_; }
 
-    // Setter with validation â†’ controlled write access
+    // Setter with validation → controlled write access
     void setAge(int age) {
         if (age >= 18 && age <= 90) {
             age_ = age;
@@ -725,7 +725,7 @@ int main() {
     std::cout << emp.getName() << " earns $"
               << emp.getSalary() << "\n";
 
-    emp.setAge(150);           // Invalid â†’ will be rejected
+    emp.setAge(150);           // Invalid → will be rejected
     std::cout << "Age remains: " << emp.getAge() << "\n";
 
     return 0;
@@ -743,9 +743,9 @@ Age remains: 30
 
 | Step | Code | Calculation | Result |
 |------|------|-------------|--------|
-| 1 | `giveRaise(10.0)` | percent = 10.0 > 0 â†’ true | Enters if-block |
+| 1 | `giveRaise(10.0)` | percent = 10.0 > 0 → true | Enters if-block |
 | 2 | `salary_ *= (1.0 + 10.0/100.0)` | salary_ = 50000.0 * 1.10 | salary_ = 55000.0 |
-| 3 | Return | â†’ | salary_ now 55000 |
+| 3 | Return | → | salary_ now 55000 |
 
 **Why encapsulation works for large teams:**
 
@@ -755,7 +755,7 @@ Age remains: 30
 
 ---
 
-### 1.6.2 Inheritance â†’ The Second Pillar
+### 1.6.2 Inheritance → The Second Pillar
 
 
 > **One-Sentence Takeaway:** Inheritance lets a class acquire properties and behaviour from a parent class, establishing an is-a relationship.
@@ -791,14 +791,14 @@ public:
         std::cout << name_ << " is sleeping.\n";
     }
 
-    virtual void sound() const {             // Virtual â†’ can be overridden
+    virtual void sound() const {             // Virtual → can be overridden
         std::cout << name_ << " makes a sound.\n";
     }
 
     std::string getName() const { return name_; }
 };
 
-class Dog : public Animal {                  // Derived class â†’ Dog is an Animal
+class Dog : public Animal {                  // Derived class → Dog is an Animal
 public:
     Dog(std::string name, int age)
         : Animal(name, age) {}              // Call base constructor
@@ -872,29 +872,29 @@ Whiskers is purring.
 |-----------|------------|-----|
 | Base class method call via derived object | O(1) | Direct dispatch (non-virtual) |
 | Virtual method call (overridden) | O(1) | V-table lookup (constant, ~2 extra instructions) |
-| Constructor chain (base â†’ derived) | O(1) per constructor | Linear in depth of hierarchy |
+| Constructor chain (base → derived) | O(1) per constructor | Linear in depth of hierarchy |
 | Memory per object | `sizeof(Base) + sizeof(Derived members)` | Base sub-object stored first in memory |
 
 **What is inherited and what is not:**
 
 | Member type | Inherited? | Notes |
 |-------------|-----------|-------|
-| Public member functions | Ã¢Å“â€œ Yes | Accessible through derived object |
-| Protected member variables | Ã¢Å“â€œ Yes | Accessible inside derived class methods |
-| Private member variables | Ã¢Å“â€” Not directly | Exist in memory but inaccessible by name |
-| Constructors | Ã¢Å“â€” Not inherited | Must be called explicitly from derived ctor |
-| Destructors | Ã¢Å“â€œ Yes (virtual recommended) | Automatically called in reverse order |
-| Friend functions | Ã¢Å“â€” Not inherited | Friendship is not transitive |
-| Assignment operator | Ã¢Å“â€” Not inherited | Compiler-generated if not user-defined |
+| Public member functions | ✓ Yes | Accessible through derived object |
+| Protected member variables | ✓ Yes | Accessible inside derived class methods |
+| Private member variables | ✗ Not directly | Exist in memory but inaccessible by name |
+| Constructors | ✗ Not inherited | Must be called explicitly from derived ctor |
+| Destructors | ✓ Yes (virtual recommended) | Automatically called in reverse order |
+| Friend functions | ✗ Not inherited | Friendship is not transitive |
+| Assignment operator | ✗ Not inherited | Compiler-generated if not user-defined |
 
 ---
 
-### 1.6.3 Polymorphism â†’ The Third Pillar
+### 1.6.3 Polymorphism → The Third Pillar
 
 
-> **One-Sentence Takeaway:** Polymorphism lets one interface work with multiple types â†’ the same function call behaves differently depending on the object's actual type.
+> **One-Sentence Takeaway:** Polymorphism lets one interface work with multiple types → the same function call behaves differently depending on the object's actual type.
 
-**Etymology:** From Greek *polys* (many) + *morphÃ„â€œ* (form) = "many forms."
+**Etymology:** From Greek *polys* (many) + *morphē* (form) = "many forms."
 
 **Why it matters:** Without polymorphism, every type check requires explicit conditional logic. With polymorphism, adding a new type requires zero changes to existing code.
 
@@ -903,7 +903,7 @@ Whiskers is purring.
 1. Declare a virtual function in the base class using the `virtual` keyword.
 2. Override the function in derived classes using `override`.
 3. Use pointers or references to the base class to refer to derived objects.
-4. Call the virtual function â†’ the compiler dispatches to the correct override at runtime.
+4. Call the virtual function → the compiler dispatches to the correct override at runtime.
 5. This is called **dynamic dispatch** and uses a **v-table** (virtual method table).
 
 ```cpp
@@ -913,7 +913,7 @@ Whiskers is purring.
 
 class Shape {
 public:
-    virtual double area() const = 0;        // Pure virtual â†’ abstract
+    virtual double area() const = 0;        // Pure virtual → abstract
     virtual void draw() const = 0;
     virtual ~Shape() = default;             // Virtual destructor for safe deletion
 };
@@ -1022,12 +1022,12 @@ Total area of all shapes: 46.3988
 Memory layout for Circle object c:
 
   +---------------------+
-  | vptr  â†’ [Circle vtable]  |
-  |   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  |
-  |   â”‚ Circle::area()â”‚  |
-  |   â”‚ Circle::draw()â”‚  |
-  |   â”‚ ~Circle()     â”‚  |
-  |   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  |
+  | vptr  → [Circle vtable]  |
+  |   ┌──────────────┐  |
+  |   │ Circle::area()│  |
+  |   │ Circle::draw()│  |
+  |   │ ~Circle()     │  |
+  |   └──────────────┘  |
   | radius_ = 5.0       |
   +---------------------+
 
@@ -1051,9 +1051,9 @@ At compile time:
 | Aspect | Cost | Why |
 |--------|------|-----|
 | Non-virtual function call | ~1-2 CPU cycles | Direct jump to known address |
-| Virtual function call | ~3-5 CPU cycles | Two indirections: vptr â†’ vtable â†’ function address |
-| Non-virtual call â†’ wrong type | Compile error | Caught before execution |
-| Virtual call â†’ wrong type | Impossible | Always dispatched to correct override |
+| Virtual function call | ~3-5 CPU cycles | Two indirections: vptr → vtable → function address |
+| Non-virtual call → wrong type | Compile error | Caught before execution |
+| Virtual call → wrong type | Impossible | Always dispatched to correct override |
 | Branch misprediction (if-else chain) | 10-20 cycles per mispredict | Virtual dispatch avoids branches entirely |
 
 **Polymorphism eliminates conditionals:**
@@ -1082,7 +1082,7 @@ double totalAreaOOP(const std::vector<Shape*>& shapes) {
 
 ---
 
-### 1.6.4 Abstraction â†’ The Fourth Pillar
+### 1.6.4 Abstraction → The Fourth Pillar
 
 
 > **One-Sentence Takeaway:** Abstraction separates what something does from how it does it, letting users work with high-level concepts without managing low-level details.
@@ -1200,14 +1200,14 @@ Sales report: [PostgreSQL result set]
 
 | Without Abstraction | With Abstraction |
 |---------------------|------------------|
-| `ReportGeneratorMySQL`, `ReportGeneratorPostgres`, `ReportGeneratorSQLite` â†’ 3 independent classes | One `ReportGenerator` + 3 database implementations |
+| `ReportGeneratorMySQL`, `ReportGeneratorPostgres`, `ReportGeneratorSQLite` → 3 independent classes | One `ReportGenerator` + 3 database implementations |
 | Adding a new DB: write new report generator + test | Adding a new DB: write DB adapter only |
 | Fixing a report bug: fix N versions | Fixing a report bug: fix one place |
 
 ---
 ## 1.7 Message Passing
 
-> **One-Sentence Takeaway:** Objects collaborate by sending messages (calling methods) to each other â†’ the fundamental mechanism of interaction in an object-oriented system.
+> **One-Sentence Takeaway:** Objects collaborate by sending messages (calling methods) to each other → the fundamental mechanism of interaction in an object-oriented system.
 
 ### 1.7.1 What is Message Passing?
 
@@ -1216,10 +1216,10 @@ Message passing is the process by which objects communicate. In OOP, one object 
 
 **Key characteristics:**
 
-1. **Decoupling** â†’ the sender does not need to know how the receiver fulfils the request.
-2. **Encapsulation** â†’ the receiver's internal state is never directly exposed.
-3. **Polymorphism** â†’ different receivers can respond to the same message differently.
-4. **Late binding** â†’ which `respondTo` is called can be determined at runtime.
+1. **Decoupling** → the sender does not need to know how the receiver fulfils the request.
+2. **Encapsulation** → the receiver's internal state is never directly exposed.
+3. **Polymorphism** → different receivers can respond to the same message differently.
+4. **Late binding** → which `respondTo` is called can be determined at runtime.
 
 ### 1.7.2 Anatomy of a Message
 
@@ -1266,7 +1266,7 @@ public:
         waterLevel_ -= 200;
         beanLevel_  -= 20;
 
-        return "Here is your " + type + "! Ã¢Ëœâ€¢";
+        return "Here is your " + type + "! ☕";
     }
 
     int getWaterLevel() const { return waterLevel_; }
@@ -1292,7 +1292,7 @@ public:
     void refillMachine(CoffeeMachine& machine) {
         std::cout << name_ << " refills the machine.\n";
         // In real OOP, this would go through a public interface
-        // Here, we'd ideally call machine.refill() â†’ illustrating the need
+        // Here, we'd ideally call machine.refill() → illustrating the need
         // for proper encapsulation of refill logic
     }
 };
@@ -1302,11 +1302,11 @@ int main() {
     Person alice("Alice");
     Person bob("Bob");
 
-    alice.makeCoffee(machine, "Espresso");   // Message: Person â†’ CoffeeMachine
-    machine.turnOn();                         // Message: main â†’ CoffeeMachine
+    alice.makeCoffee(machine, "Espresso");   // Message: Person → CoffeeMachine
+    machine.turnOn();                         // Message: main → CoffeeMachine
 
-    alice.makeCoffee(machine, "Latte");      // Message: Person â†’ CoffeeMachine
-    bob.makeCoffee(machine, "Cappuccino");   // Message: Person â†’ CoffeeMachine
+    alice.makeCoffee(machine, "Latte");      // Message: Person → CoffeeMachine
+    bob.makeCoffee(machine, "Cappuccino");   // Message: Person → CoffeeMachine
 
     std::cout << "\nWater left: " << machine.getWaterLevel() << " ml\n";
     std::cout << "Beans left: " << machine.getBeanLevel() << " g\n";
@@ -1320,9 +1320,9 @@ int main() {
 Alice asks for Espresso
 CoffeeMachine: Machine is off!
 Alice asks for Latte
-CoffeeMachine: Here is your Latte! Ã¢Ëœâ€¢
+CoffeeMachine: Here is your Latte! ☕
 Bob asks for Cappuccino
-CoffeeMachine: Here is your Cappuccino! Ã¢Ëœâ€¢
+CoffeeMachine: Here is your Cappuccino! ☕
 
 Water left: 600 ml
 Beans left: 460 g
@@ -1394,7 +1394,7 @@ Bob()                           CoffeeMachine
 | 6 | **Readability** | Code mirrors real-world structure. A `BankAccount` object is more intuitive than a `struct Account` + 20 functions. | Class names map to domain concepts |
 | 7 | **Testability** | Each class can be tested independently. Mock objects replace real dependencies for isolated tests. | Dependency injection, virtual interfaces |
 
-### 1.8.2 Empirical Advantages â†’ What Studies Show
+### 1.8.2 Empirical Advantages → What Studies Show
 
 
 - **Defect density**: OOP projects show 30-50% fewer defects compared to procedural projects of equivalent size (Capers Jones, "Applied Software Measurement").
@@ -1417,17 +1417,17 @@ Bob()                           CoffeeMachine
 
 | Benefit | How it reduces complexity | Measurable metric |
 |---------|--------------------------|-------------------|
-| Encapsulation | Reduces coupling â†’ fewer modules affected per change | Lower Coupling Between Objects (CBO) metric |
-| Inheritance | Eliminates duplicate code â†’ one base class replaces N copies | Higher reuse ratio |
-| Polymorphism | Eliminates conditional branches â†’ no switch-on-type | Lower cyclomatic complexity |
-| Abstraction | Reduces cognitive load â†’ programmer sees interface, not implementation | Fewer concepts to hold in working memory |
-| Modularity | Isolates failure â†’ bug in one class doesn't crash others | Smaller Mean Time to Repair (MTTR) |
+| Encapsulation | Reduces coupling → fewer modules affected per change | Lower Coupling Between Objects (CBO) metric |
+| Inheritance | Eliminates duplicate code → one base class replaces N copies | Higher reuse ratio |
+| Polymorphism | Eliminates conditional branches → no switch-on-type | Lower cyclomatic complexity |
+| Abstraction | Reduces cognitive load → programmer sees interface, not implementation | Fewer concepts to hold in working memory |
+| Modularity | Isolates failure → bug in one class doesn't crash others | Smaller Mean Time to Repair (MTTR) |
 
 ---
 
 ## 1.9 Applications of OOP in Real Systems
 
-> **One-Sentence Takeaway:** Every major software system you interact with â†’ from your phone's UI to the video game you played last night â†’ is built on OOP principles.
+> **One-Sentence Takeaway:** Every major software system you interact with → from your phone's UI to the video game you played last night → is built on OOP principles.
 
 ### 1.9.1 GUI Frameworks (Qt, wxWidgets, MFC)
 
@@ -1600,7 +1600,7 @@ public:
     GameObject(std::string name, int x, int y, int hp)
         : name_(name), x_(x), y_(y), health_(hp) {}
 
-    virtual void update() {                 // Called every frame â†’ polymorphic
+    virtual void update() {                 // Called every frame → polymorphic
         std::cout << name_ << " at (" << x_ << "," << y_ << ")\n";
     }
 
@@ -1681,7 +1681,7 @@ public:
     }
 
     void update() override {
-        // Coins just sparkle â†’ no movement
+        // Coins just sparkle → no movement
         std::cout << "Coin sparkles at (" << x_ << "," << y_ << ")\n";
     }
 };
@@ -1737,7 +1737,7 @@ int main() {
 }
 ```
 
-**Output (representative â†’ varies with rand):**
+**Output (representative → varies with rand):**
 ```
 === Frame 0 ===
 Player Hero HP:100 Score:0
@@ -1758,7 +1758,7 @@ Coin collected! +100 points
 ...
 ```
 
-**OOP in game engines â†’ key takeaway:** The game loop (`for each object: update()`) is the signature OOP pattern â†’ it treats all objects uniformly through a polymorphic interface. Adding a new entity type (e.g., `PowerUp`, `Boss`, `Door`) requires zero changes to the game loop.
+**OOP in game engines → key takeaway:** The game loop (`for each object: update()`) is the signature OOP pattern → it treats all objects uniformly through a polymorphic interface. Adding a new entity type (e.g., `PowerUp`, `Boss`, `Door`) requires zero changes to the game loop.
 
 ---
 
@@ -1793,7 +1793,7 @@ class Ext4FS : public FileSystem {
 private:
     std::string device_;
     bool mounted_ = false;
-    // Internal: inode tables, block groups, journal â†’ all hidden
+    // Internal: inode tables, block groups, journal → all hidden
 
 public:
     bool mount(const std::string& device) override {
@@ -1831,7 +1831,7 @@ class NTFS : public FileSystem {
 private:
     std::string device_;
     bool mounted_ = false;
-    // Internal: MFT, clusters, USN journal â†’ all hidden
+    // Internal: MFT, clusters, USN journal → all hidden
 
 public:
     bool mount(const std::string& device) override {
@@ -1865,7 +1865,7 @@ public:
     }
 };
 
-class VFS {                                 // Virtual File System â†’ the OS layer
+class VFS {                                 // Virtual File System → the OS layer
 private:
     FileSystem* mountedFS_ = nullptr;
 
@@ -1933,7 +1933,7 @@ NTFS: Reading \Users\Admin\doc.txt (MFT record lookup)
 VFS: User read -> [Data from \Users\Admin\doc.txt]
 ```
 
-**The power of the abstraction:** `VFS` never knows which filesystem it is using. Same code, completely different internal implementations. Linux's VFS layer works exactly this way â†’ it's why you can `mount` ext4, NTFS, FAT32, or XFS with the same system calls.
+**The power of the abstraction:** `VFS` never knows which filesystem it is using. Same code, completely different internal implementations. Linux's VFS layer works exactly this way → it's why you can `mount` ext4, NTFS, FAT32, or XFS with the same system calls.
 
 ---
 
@@ -1945,7 +1945,7 @@ VFS: User read -> [Data from \Users\Admin\doc.txt]
 | **Web Frameworks** | Controllers, models, views as objects | ASP.NET MVC, Spring, Django, Ruby on Rails |
 | **Database Drivers** | Abstract connection/query interfaces | JDBC (`Connection`, `Statement`, `ResultSet`) |
 | **UI Component Libraries** | Widget hierarchies with polymorphic rendering | Qt, wxWidgets, FLTK |
-| **Compilers** | AST nodes as polymorphic objects | `class Expr` â†’ `class BinaryExpr`, `class NumberExpr` |
+| **Compilers** | AST nodes as polymorphic objects | `class Expr` → `class BinaryExpr`, `class NumberExpr` |
 | **Networking** | Protocol abstractions, socket wrappers | `class TCPSocket : public Socket`, Boost.Asio |
 | **Graphics Engines** | Shapes, textures, shaders as objects | OpenSceneGraph, OGRE3D |
 | **Financial Systems** | Account, trade, order as objects | Bloomberg, FIX protocol handlers |
@@ -1963,9 +1963,9 @@ VFS: User read -> [Data from \Users\Admin\doc.txt]
 
 **Answer:**
 
-A **class** is a blueprint or template that defines the structure (member variables) and behaviour (member functions) that objects of that type will have. An **object** is a concrete instance of a class â†’ it has its own memory, its own copy of member variables, and its own identity.
+A **class** is a blueprint or template that defines the structure (member variables) and behaviour (member functions) that objects of that type will have. An **object** is a concrete instance of a class → it has its own memory, its own copy of member variables, and its own identity.
 
-**Real-world analogy:** A class is like the blueprint for a house. The blueprint defines how many rooms, where the doors are, and the roof shape â†’ but it is not a house. The house built from that blueprint is the object. You can build 100 identical houses from one blueprint, each occupying different land, having different occupants, and existing independently.
+**Real-world analogy:** A class is like the blueprint for a house. The blueprint defines how many rooms, where the doors are, and the roof shape → but it is not a house. The house built from that blueprint is the object. You can build 100 identical houses from one blueprint, each occupying different land, having different occupants, and existing independently.
 
 ```cpp
 class House {                               // Blueprint (class)
@@ -1977,7 +1977,7 @@ public:
 
 int main() {
     House h1(3, true);                      // Object 1
-    House h2(4, false);                     // Object 2 â†’ separate instance
+    House h2(4, false);                     // Object 2 → separate instance
     House h3(2, true);                      // Object 3
     // One class, three objects
     return 0;
@@ -2037,7 +2037,7 @@ C++ implements runtime polymorphism through **virtual functions** and the **virt
 **How it works:**
 
 1. When a class declares a `virtual` function, the compiler creates a hidden array called the **v-table** for that class.
-2. The v-table contains function pointers â†’ one per virtual function â†’ pointing to the most-derived override.
+2. The v-table contains function pointers → one per virtual function → pointing to the most-derived override.
 3. Each object of a class with virtual functions has a hidden pointer (the **v-pointer** or `vptr`) added as its first member (usually).
 4. When a virtual function is called through a base class pointer or reference, the compiler generates code that:
    a. Reads the object's `vptr`
@@ -2068,12 +2068,12 @@ public:
 //
 // Calling:
 // Base* p = new Derived();
-// p->foo();    // vptr â†’ vtable[0] â†’ Derived::foo  (5 CPU cycles)
-// p->bar();    // vptr â†’ vtable[1] â†’ Base::bar     (5 CPU cycles)
+// p->foo();    // vptr → vtable[0] → Derived::foo  (5 CPU cycles)
+// p->bar();    // vptr → vtable[1] → Base::bar     (5 CPU cycles)
 // p->nonVirtual(); // compiled to direct call: Base::nonVirtual (1-2 CPU cycles)
 ```
 
-**Why not always virtual?** Non-virtual calls are resolved at compile time (static dispatch) â†’ the compiler emits a direct `call` instruction. Virtual calls require two indirections (object â†’ v-table â†’ function) which prevents inlining and adds ~3 extra CPU cycles plus a cache miss potential.
+**Why not always virtual?** Non-virtual calls are resolved at compile time (static dispatch) → the compiler emits a direct `call` instruction. Virtual calls require two indirections (object → v-table → function) which prevents inlining and adds ~3 extra CPU cycles plus a cache miss potential.
 
 ---
 
@@ -2093,7 +2093,7 @@ public:
 **Can you have one without the other?**
 - Encapsulation without abstraction: A class with all `private` data but no inheritance hierarchy. It's encapsulated but still exposes full complexity.
 - Abstraction without encapsulation: An interface is abstract. But if the concrete class exposes all its internal data publicly, it's abstract but not encapsulated.
-- **Best practice**: Both together â†’ abstract interfaces that hide complexity **and** encapsulated implementations that protect data.
+- **Best practice**: Both together → abstract interfaces that hide complexity **and** encapsulated implementations that protect data.
 
 ```cpp
 // ABSTRACT but NOT encapsulated
@@ -2110,7 +2110,7 @@ private:
 public:
     double getBalance() const { return balance_; }
     void deposit(double amt) { if (amt > 0) balance_ += amt; }
-    // No virtual functions, no inheritance â†’ concrete but protected
+    // No virtual functions, no inheritance → concrete but protected
 };
 ```
 
@@ -2134,7 +2134,7 @@ class Animal { public: virtual void eat() = 0; };
 class Dog : public Animal {
     void eat() override { /* chew */ }
 };
-// Dog IS an Animal â†’ correct use of inheritance
+// Dog IS an Animal → correct use of inheritance
 
 // has-a: Composition
 class Engine {
@@ -2148,7 +2148,7 @@ private:
 public:
     void start() { engine_.start(); }
 };
-// Car HAS an Engine â†’ correct use of composition
+// Car HAS an Engine → correct use of composition
 ```
 
 **Why "prefer composition over inheritance"?**
@@ -2207,7 +2207,7 @@ Yes. Encapsulation + polymorphism can exist without inheritance through **compil
 In C++, templates provide polymorphism without a common base class:
 
 ```cpp
-// No inheritance â†’ yet each type behaves polymorphically
+// No inheritance → yet each type behaves polymorphically
 template <typename T>
 void process(T& obj) {
     obj.doWork();    // Any type that has doWork() works
@@ -2225,8 +2225,8 @@ public:
 
 int main() {
     A a; B b;
-    process(a);     // Works â†’ A has doWork()
-    process(b);     // Works â†’ B has doWork()
+    process(a);     // Works → A has doWork()
+    process(b);     // Works → B has doWork()
     // No inheritance anywhere in this code!
     return 0;
 }
@@ -2234,7 +2234,7 @@ int main() {
 
 This is called **static polymorphism** or **compile-time polymorphism**. It is more efficient (no v-table, no runtime overhead) but less flexible (types must be known at compile time).
 
-Alan Kay, who coined the term "object-oriented programming," considered **message passing** to be more fundamental than inheritance. In his view, OOP is about encapsulated objects communicating â†’ whether or not they share a type hierarchy.
+Alan Kay, who coined the term "object-oriented programming," considered **message passing** to be more fundamental than inheritance. In his view, OOP is about encapsulated objects communicating → whether or not they share a type hierarchy.
 
 ---
 
@@ -2253,7 +2253,7 @@ Mammal   Bird
    Bat
 ```
 
-`Bat` inherits `Animal` data twice (once through `Mammal`, once through `Bird`), leading to ambiguity â†’ which `Animal::age` are we referring to?
+`Bat` inherits `Animal` data twice (once through `Mammal`, once through `Bird`), leading to ambiguity → which `Animal::age` are we referring to?
 
 ```cpp
 class Animal { public: int age; };
@@ -2263,8 +2263,8 @@ class Bat : public Mammal, public Bird {};  // Two copies of Animal
 
 int main() {
     Bat bat;
-    bat.age = 5;        // ERROR: ambiguous â†’ which Animal::age?
-    bat.Mammal::age = 5; // OK â†’ explicitly specify path
+    bat.age = 5;        // ERROR: ambiguous → which Animal::age?
+    bat.Mammal::age = 5; // OK → explicitly specify path
 }
 ```
 
@@ -2279,7 +2279,7 @@ class Bat    : public Mammal, public Bird {};
 
 int main() {
     Bat bat;
-    bat.age = 5;        // OK â†’ only one Animal subobject
+    bat.age = 5;        // OK → only one Animal subobject
     return 0;
 }
 ```
@@ -2298,7 +2298,7 @@ int main() {
 | **When resolved** | Compile time | Runtime |
 | **C++ mechanism** | Non-virtual functions, function overloading, templates | Virtual functions |
 | **Performance** | Faster (direct call, can be inlined) | Slightly slower (v-table lookup, cannot inline) |
-| **Flexibility** | Less flexible â†’ function determined by static type | More flexible â†’ function determined by dynamic type |
+| **Flexibility** | Less flexible → function determined by static type | More flexible → function determined by dynamic type |
 | **When to use** | Performance-critical, known types at compile time | Extensibility, polymorphic behaviour needed |
 
 ```cpp
@@ -2316,8 +2316,8 @@ public:
 
 int main() {
     Shape* s = new Circle();
-    s->drawEarly();     // "Shape"   â†’ early binding uses Shape::drawEarly
-    s->drawLate();      // "Circle"  â†’ late binding uses Circle::drawLate
+    s->drawEarly();     // "Shape"   → early binding uses Shape::drawEarly
+    s->drawLate();      // "Circle"  → late binding uses Circle::drawLate
     delete s;
     return 0;
 }
@@ -2349,7 +2349,7 @@ class PubDerived : public Base {
 
 class ProtDerived : protected Base {
     // pub is protected, prot is protected, priv is inaccessible
-    void f() { pub = 1; prot = 1; }  // OK â†’ both accessible here
+    void f() { pub = 1; prot = 1; }  // OK → both accessible here
 };
 
 class PrivDerived : private Base {
@@ -2357,9 +2357,9 @@ class PrivDerived : private Base {
 };
 
 int main() {
-    PubDerived  pd;  pd.pub = 1;      // OK â†’ pub is public
-    ProtDerived pod; // pod.pub = 1;  // ERROR â†’ pub is now protected
-    PrivDerived prd; // prd.pub = 1;  // ERROR â†’ pub is now private
+    PubDerived  pd;  pd.pub = 1;      // OK → pub is public
+    ProtDerived pod; // pod.pub = 1;  // ERROR → pub is now protected
+    PrivDerived prd; // prd.pub = 1;  // ERROR → pub is now private
     return 0;
 }
 ```
@@ -2373,7 +2373,7 @@ int main() {
 
 **Answer:**
 
-A **pure virtual function** is a virtual function declared with `= 0`. It has no implementation in the base class and forces all concrete derived classes to provide an implementation. A class containing at least one pure virtual function is **abstract** â†’ you cannot instantiate it.
+A **pure virtual function** is a virtual function declared with `= 0`. It has no implementation in the base class and forces all concrete derived classes to provide an implementation. A class containing at least one pure virtual function is **abstract** → you cannot instantiate it.
 
 ```cpp
 class Shape {                           // Abstract class
@@ -2391,16 +2391,16 @@ public:
     double area() const override { return 3.14159 * r_ * r_; }
     void draw() const override { /* ... */ }
 };
-// Circle is concrete â†’ can instantiate
+// Circle is concrete → can instantiate
 ```
 
 **Why use pure virtual functions:**
 
-1. **Define an interface** â†’ specify WHAT but not HOW.
-2. **Force implementation** â†’ derived classes must provide behaviour or remain abstract.
-3. **Polymorphic base** â†’ enables runtime polymorphism through base class pointers.
-4. **Design tool** â†’ the abstract class communicates "this is a contract, not a default."
-5. **Prevent instantiation** â†’ some classes exist purely to be base classes (e.g., `Shape`, `Animal`).
+1. **Define an interface** → specify WHAT but not HOW.
+2. **Force implementation** → derived classes must provide behaviour or remain abstract.
+3. **Polymorphic base** → enables runtime polymorphism through base class pointers.
+4. **Design tool** → the abstract class communicates "this is a contract, not a default."
+5. **Prevent instantiation** → some classes exist purely to be base classes (e.g., `Shape`, `Animal`).
 
 ---
 
@@ -2412,7 +2412,7 @@ public:
 A single class that knows too much or does too much.
 
 ```cpp
-// Bad: God class â†’ does everything
+// Bad: God class → does everything
 class Application {
 public:
     void handleUserInput();
@@ -2439,7 +2439,7 @@ class B : public A {};
 class C : public B {};
 class D : public C {};
 class E : public D {};
-class F : public E {};  // 6 levels deep â†’ WHY?
+class F : public E {};  // 6 levels deep → WHY?
 ```
 
 **Problems:** Fragile base class, hard to understand, tight coupling, hard to test.
@@ -2480,9 +2480,9 @@ void process(Rectangle& r) {
 
 int main() {
     Rectangle r;
-    process(r);     // Area = 20  Ã¢Å“â€œ
+    process(r);     // Area = 20  ✓
     Square s;
-    process(s);     // Area = 16  Ã¢Å“â€” (called with Square, gets 16 not 20!)
+    process(s);     // Area = 16  ✗ (called with Square, gets 16 not 20!)
     return 0;
 }
 ```
@@ -2519,7 +2519,7 @@ public:
 
 ## 1.12 Chapter Summary
 
-Object-Oriented Programming is a paradigm that organises code around objectsâ†’bundles of data and behaviourâ†’rather than around functions and logic. This chapter introduced the foundational concepts:
+Object-Oriented Programming is a paradigm that organises code around objects→bundles of data and behaviour→rather than around functions and logic. This chapter introduced the foundational concepts:
 
 | Concept | Key Takeaway | C++ Mechanism |
 |---------|-------------|---------------|
@@ -2535,14 +2535,14 @@ Object-Oriented Programming is a paradigm that organises code around objectsâ�
 ### Key Design Guidelines
 
 
-1. **Prefer composition over inheritance** â†’ "has-a" is more flexible than "is-a" in most scenarios.
-2. **Keep inheritance shallow** â†’ 3-4 levels maximum; deep hierarchies are brittle.
-3. **Use abstraction at module boundaries** â†’ program to interfaces, not implementations.
-4. **Encapsulate aggressively** â†’ make member variables private, provide getters only when needed.
-5. **Design for polymorphism** â†’ write functions that accept base class references, not concrete types.
-6. **Follow the Liskov Substitution Principle** â†’ derived classes should be replaceable for their base.
-7. **Single Responsibility** â†’ each class should have exactly one reason to change.
-8. **Favour composition for behaviour reuse** â†’ strategy pattern over deep inheritance.
+1. **Prefer composition over inheritance** → "has-a" is more flexible than "is-a" in most scenarios.
+2. **Keep inheritance shallow** → 3-4 levels maximum; deep hierarchies are brittle.
+3. **Use abstraction at module boundaries** → program to interfaces, not implementations.
+4. **Encapsulate aggressively** → make member variables private, provide getters only when needed.
+5. **Design for polymorphism** → write functions that accept base class references, not concrete types.
+6. **Follow the Liskov Substitution Principle** → derived classes should be replaceable for their base.
+7. **Single Responsibility** → each class should have exactly one reason to change.
+8. **Favour composition for behaviour reuse** → strategy pattern over deep inheritance.
 
 ### OOP is Not a Silver Bullet
 
@@ -2553,7 +2553,7 @@ OOP excels at modelling complex systems with many interacting entities. But for:
 - **Performance-critical hot paths**: careful procedural code can be faster (no v-table, no indirection).
 - **Concurrent systems**: functional purity avoids shared mutable state.
 
-The best programmers are **multi-paradigm** â†’ they choose the right tool for the job.
+The best programmers are **multi-paradigm** → they choose the right tool for the job.
 
 ---
 
@@ -2649,19 +2649,19 @@ The best programmers are **multi-paradigm** â†’ they choose the right tool 
 ### Coding Problems
 
 
-1. **Design a Library System**: Create classes `Book`, `Member`, and `Librarian`. Use encapsulation (private ISBN, public borrow/return), inheritance (`Member` â†’ `PremiumMember` with extra borrowing limit), and polymorphism (a `displayInfo()` virtual method).
+1. **Design a Library System**: Create classes `Book`, `Member`, and `Librarian`. Use encapsulation (private ISBN, public borrow/return), inheritance (`Member` → `PremiumMember` with extra borrowing limit), and polymorphism (a `displayInfo()` virtual method).
 
 2. **Shape Hierarchy**: Build an abstract `Shape` class with `area()` and `perimeter()`. Derive `Circle`, `Rectangle`, `Triangle`. Demonstrate polymorphism by storing pointers to all shapes in a `vector<Shape*>` and computing total area.
 
-3. **Vehicle System**: Model `Vehicle` â†’ `Car`, `Bike`, `Truck`. Add a pure virtual `move()`. Demonstrate message passing by modelling a `Driver` object that sends `drive(Vehicle*)` messages.
+3. **Vehicle System**: Model `Vehicle` → `Car`, `Bike`, `Truck`. Add a pure virtual `move()`. Demonstrate message passing by modelling a `Driver` object that sends `drive(Vehicle*)` messages.
 
 4. **Implement Encapsulation Bug**: Write a class `BankAccount` with a `public` balance that gets corrupted. Fix it by making balance `private` and providing validated deposit/withdraw methods. Show the before and after.
 
-5. **Game Entity Prototype**: Implement a mini OOP game where `Entity` â†’ `Player`, `Enemy`, `Projectile`. Each has `update()` (polymorphic) and `render()`. The game loop stores all entities in a single polymorphic container.
+5. **Game Entity Prototype**: Implement a mini OOP game where `Entity` → `Player`, `Enemy`, `Projectile`. Each has `update()` (polymorphic) and `render()`. The game loop stores all entities in a single polymorphic container.
 
 ### Challenge Problems
 
-6. **Refactor Procedural to OOP**: Take the procedural `Account` code from Ã‚Â§1.2.1 and refactor it to OOP. Add at least two new account types (SavingsAccount, CheckingAccount) using inheritance. Demonstrate polymorphism in a single loop.
+6. **Refactor Procedural to OOP**: Take the procedural `Account` code from §1.2.1 and refactor it to OOP. Add at least two new account types (SavingsAccount, CheckingAccount) using inheritance. Demonstrate polymorphism in a single loop.
 
 7. **Design a Messaging System**: Model a simplified email system with classes `Message`, `Inbox`, `User`. Demonstrate message passing where `User` sends a `Message` to another `User`, and the receiving `User`'s `Inbox` stores it. Add a `SpamFilter` as a polymorphic component.
 
@@ -2675,4 +2675,4 @@ The best programmers are **multi-paradigm** â†’ they choose the right tool 
 - Kay, A. "The Early History of Smalltalk." History of Programming Languages II, ACM, 1996.
 - Dahl, O.-J. & Nygaard, K. "SIMULA: An ALGOL-Based Simulation Language." Communications of the ACM, 1966.
 - Martin, R. C. "Clean Architecture: A Craftsman's Guide to Software Structure and Design." Prentice Hall, 2017.
-- C++ Standard â†’ ISO/IEC 14882:2020 (C++20). Sections 11 (Classes), 12 (Derived classes), 13 (Member access control), 14 (Virtual functions).
+- C++ Standard → ISO/IEC 14882:2020 (C++20). Sections 11 (Classes), 12 (Derived classes), 13 (Member access control), 14 (Virtual functions).

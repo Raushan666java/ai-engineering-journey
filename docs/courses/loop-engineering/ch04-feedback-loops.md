@@ -1,4 +1,4 @@
-﻿# Chapter 4: Feedback Loops
+# Chapter 4: Feedback Loops
 
 > **Previous:** [Human-in-the-Loop](./ch03-human-in-the-loop.md) | **Next:** [Self-Improvement Loops](./ch05-self-improvement-loops.md)
 
@@ -37,11 +37,11 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Eval-Driven Loops | Generate â†’ score â†’ adjust â†’ repeat | Converge on quality through iterative scoring |
-| Code Review Loops | AI writes â†’ human reviews â†’ AI fixes | Pair AI breadth with human judgment |
-| Test-Driven Loops | Write test first â†’ implement â†’ verify | Tests are executable specifications |
-| Failure-to-Task | Failed attempt â†’ structured subtask | Never throw away partial progress |
-| Sweep Loops | Scan â†’ detect â†’ fix â†’ verify | Automated maintenance at scale |
+| Eval-Driven Loops | Generate → score → adjust → repeat | Converge on quality through iterative scoring |
+| Code Review Loops | AI writes → human reviews → AI fixes | Pair AI breadth with human judgment |
+| Test-Driven Loops | Write test first → implement → verify | Tests are executable specifications |
+| Failure-to-Task | Failed attempt → structured subtask | Never throw away partial progress |
+| Sweep Loops | Scan → detect → fix → verify | Automated maintenance at scale |
 
 ---
 
@@ -53,11 +53,11 @@ By the end of this chapter, you will be able to:
 An eval-driven loop is the most general form of agentic feedback. The agent produces an output, evaluates it against a set of criteria, adjusts its approach based on the evaluation, and repeats.
 
 ```
- â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   generate   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”   score    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”
- â”‚  Agent   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>â”‚ Output  â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€> â”‚  Eval  â”‚
- â”‚          â”‚<â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”‚         â”‚<â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”‚  (LLM  â”‚
- â”‚  (LLM)   â”‚   adjust     â”‚         â”‚   scores   â”‚  or fx)â”‚
- â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+ ┌──────────┐   generate   ┌─────────┐   score    ┌────────┐
+ │  Agent   │ ────────────>│ Output  │ ──────────> │  Eval  │
+ │          │<──────────── │         │<────────── │  (LLM  │
+ │  (LLM)   │   adjust     │         │   scores   │  or fx)│
+ └──────────┘              └─────────┘            └────────┘
 ```
 
 **Key parameters:**
@@ -67,14 +67,14 @@ An eval-driven loop is the most general form of agentic feedback. The agent prod
 | `max_iterations` | Hard cap on retries | 3-10 |
 | `min_score` | Bar to clear for acceptance | 0.7-0.9 |
 | `decay_factor` | How much to penalize repeated failures | 0.5-0.95 |
-| `early_stop` | Stop if score stops improving | Î” &lt; 0.05 |
+| `early_stop` | Stop if score stops improving | Δ &lt; 0.05 |
 
 **Termination conditions.** The loop must always have a stopping rule:
 
-1. **Score threshold met** â€” normal success, exit.
-2. **Max iterations reached** â€” escalate or return best effort.
-3. **Score plateau** â€” no improvement over last N rounds, exit.
-4. **Score regression** â€” latest round scored worse than previous, roll back.
+1. **Score threshold met** — normal success, exit.
+2. **Max iterations reached** — escalate or return best effort.
+3. **Score plateau** — no improvement over last N rounds, exit.
+4. **Score regression** — latest round scored worse than previous, roll back.
 
 ### 2. Code Review Loops
 
@@ -82,8 +82,8 @@ An eval-driven loop is the most general form of agentic feedback. The agent prod
 In a code review loop, the AI authors code and a human plays the role of reviewer. This mirrors real engineering workflows and is one of the most practical agent patterns.
 
 ```
-Round 1:  AI writes code â”€â”€> Human reviews â”€â”€> Feedback
-Round 2:  AI applies feedback â”€â”€> Human re-reviews â”€â”€> Approve or iterate
+Round 1:  AI writes code ──> Human reviews ──> Feedback
+Round 2:  AI applies feedback ──> Human re-reviews ──> Approve or iterate
 Round N:  (repeat until approval or max rounds)
 ```
 
@@ -103,13 +103,13 @@ The agent should restate its understanding of each comment before making changes
 Test-driven agent loops invert the normal flow: a human (or automated test generator) writes a failing test first, then the agent implements code to make it pass.
 
 ```
-Step 1:  Write test (fails) â”€â”€> Agent implements â”€â”€> Run test
-Step 2:  Test passes? â”€â”€> Done.  Test fails? â”€â”€> Agent debugs and retries.
+Step 1:  Write test (fails) ──> Agent implements ──> Run test
+Step 2:  Test passes? ──> Done.  Test fails? ──> Agent debugs and retries.
 ```
 
 This pattern is especially powerful because:
 
-- Tests provide an unambiguous pass/fail signal â€” no LLM-as-judge needed.
+- Tests provide an unambiguous pass/fail signal — no LLM-as-judge needed.
 - The test suite becomes the specification. If the agent passes all tests, the task is done.
 - Regression is automatic: the test suite catches regressions on subsequent iterations.
 
@@ -118,15 +118,15 @@ This pattern is especially powerful because:
 ### 4. Failure-to-Task Conversion
 
 
-When an agent fails at a step, the failure should not be discarded â€” it should be converted into a new subtask. This is the agentic equivalent of "fail fast, fail forward."
+When an agent fails at a step, the failure should not be discarded — it should be converted into a new subtask. This is the agentic equivalent of "fail fast, fail forward."
 
 ```
 Task: "Implement user authentication"
-  â”œâ”€ Step 1: Add password hashing â”€â”€> FAIL (bcrypt import error)
-  â”‚      â””â”€ New subtask: "Install bcrypt package and verify import"
-  â”œâ”€ Step 2: Add login endpoint â”€â”€> FAIL (missing JWT secret)
-  â”‚      â””â”€ New subtask: "Add JWT secret to config and wire into login flow"
-  â””â”€ Step 3: Add session middleware â”€â”€> SUCCESS
+  ├─ Step 1: Add password hashing ──> FAIL (bcrypt import error)
+  │      └─ New subtask: "Install bcrypt package and verify import"
+  ├─ Step 2: Add login endpoint ──> FAIL (missing JWT secret)
+  │      └─ New subtask: "Add JWT secret to config and wire into login flow"
+  └─ Step 3: Add session middleware ──> SUCCESS
 ```
 
 **Design rules:**
@@ -134,7 +134,7 @@ Task: "Implement user authentication"
 - The subtask must be smaller and more specific than the parent task.
 - The subtask must include the error message from the failure.
 - The subtask should inherit the parent's context (files, imports, types).
-- If a subtask also fails, escalate to a human â€” do not create subtasks of subtasks indefinitely.
+- If a subtask also fails, escalate to a human — do not create subtasks of subtasks indefinitely.
 
 ### 5. Sweep Loops
 
@@ -142,16 +142,16 @@ Task: "Implement user authentication"
 A sweep loop processes a collection of items (bugs, tasks, PRs) and automatically creates fix tasks for any that fail. It is the batch-processing counterpart to the eval-driven loop.
 
 ```
- â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   for each    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   pass     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”
- â”‚  Input   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€> â”‚  Process  â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>â”‚  Done  â”‚
- â”‚  Queue   â”‚               â”‚  Agent    â”‚            â”‚        â”‚
- â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜               â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                  â”‚ fail
+ ┌──────────┐   for each    ┌───────────┐   pass     ┌────────┐
+ │  Input   │ ────────────> │  Process  │ ──────────>│  Done  │
+ │  Queue   │               │  Agent    │            │        │
+ └──────────┘               └───────────┘            └────────┘
+                                  │ fail
                                   v
-                            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                            â”‚  Create   â”‚
-                            â”‚  Fix Task â”‚
-                            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                            ┌──────────┐
+                            │  Create   │
+                            │  Fix Task │
+                            └──────────┘
 ```
 
 Sweep loops are common in:
@@ -165,7 +165,7 @@ Sweep loops are common in:
 
 ## Examples
 
-### Example 1: EvalLoopAgent â€” Generate, Score, Adjust, Repeat
+### Example 1: EvalLoopAgent — Generate, Score, Adjust, Repeat
 
 ```typescript
 // ch04-example1-eval-loop.ts
@@ -362,7 +362,7 @@ async function main() {
 await main();
 ```
 
-### Example 2: ReviewLoopAgent â€” AI Writes, Human Reviews, AI Fixes
+### Example 2: ReviewLoopAgent — AI Writes, Human Reviews, AI Fixes
 
 ```typescript
 // ch04-example2-review-loop.ts
@@ -558,7 +558,7 @@ async function main() {
 await main();
 ```
 
-### Example 3: SweepLoop â€” Process, Detect Failures, Create Fix Tasks
+### Example 3: SweepLoop — Process, Detect Failures, Create Fix Tasks
 
 ```typescript
 // ch04-example3-sweep-loop.ts
@@ -785,7 +785,7 @@ This section builds advanced feedback infrastructure: a generic `FeedbackControl
 // ch04-advanced-feedback.ts
 // bun run ch04-advanced-feedback.ts
 
-// â”€â”€â”€ Generic Feedback Controller â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Generic Feedback Controller ───────────────────────────────────────
 
 interface Sensor {
   read(): number;
@@ -842,7 +842,7 @@ class FeedbackController {
   }
 }
 
-// â”€â”€â”€ PID Controller (imported pattern, re-implemented for feedback context) â”€â”€â”€
+// ─── PID Controller (imported pattern, re-implemented for feedback context) ───
 
 class PIDFeedbackController implements Controller {
   private integral = 0;
@@ -879,7 +879,7 @@ class PIDFeedbackController implements Controller {
   }
 }
 
-// â”€â”€â”€ Reinforcement Feedback Loop (Q-Learning Update) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Reinforcement Feedback Loop (Q-Learning Update) ───────────────────
 
 interface QLearningConfig {
   learningRate: number;
@@ -954,7 +954,7 @@ class ReinforcementFeedbackLoop {
   }
 }
 
-// â”€â”€â”€ Adaptive Threshold Detector â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Adaptive Threshold Detector ────────────────────────────────────────
 
 class AdaptiveThresholdDetector {
   private window: number[] = [];
@@ -997,7 +997,7 @@ class AdaptiveThresholdDetector {
   }
 }
 
-// â”€â”€â”€ Multi-Signal Fusion â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Multi-Signal Fusion ───────────────────────────────────────────────
 
 type FusionMethod = "weighted" | "median" | "min" | "max" | "product";
 
@@ -1057,7 +1057,7 @@ class MultiSignalFusion {
   }
 }
 
-// â”€â”€â”€ Feedback Delay Compensator (Smith Predictor) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Feedback Delay Compensator (Smith Predictor) ──────────────────────
 
 class SmithPredictor {
   private delayBuffer: number[] = [];
@@ -1090,7 +1090,7 @@ class SmithPredictor {
   }
 }
 
-// â”€â”€â”€ Saturation / Anti-Windup Protection â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Saturation / Anti-Windup Protection ───────────────────────────────
 
 class AntiWindupProtector {
   private accumulatedError = 0;
@@ -1122,7 +1122,7 @@ class AntiWindupProtector {
   }
 }
 
-// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Demo ──────────────────────────────────────────────────────────────
 
 async function main() {
   console.log("=== Extended Feedback Demo ===\n");
@@ -1159,7 +1159,7 @@ async function main() {
   console.log("\nAdaptive Threshold:");
   for (const v of values) {
     detector.update(v);
-    const anomalous = detector.isAnomalous(v) ? " âš  ANOMALOUS" : "";
+    const anomalous = detector.isAnomalous(v) ? " ⚠ ANOMALOUS" : "";
     if (anomalous) console.log(`  value=${v.toFixed(1)} threshold=${detector.getThreshold().toFixed(2)}${anomalous}`);
   }
 
@@ -1191,10 +1191,10 @@ await main();
 ```
 
 **Key concepts demonstrated:**
-- **FeedbackController** separates sensor, actuator, and controller concerns â€” any component can be swapped independently
+- **FeedbackController** separates sensor, actuator, and controller concerns — any component can be swapped independently
 - **PIDFeedbackController** implements proportional-integral-derivative control with integral clamping for anti-windup
 - **ReinforcementFeedbackLoop** uses Q-learning update rules (Bellman equation) to learn optimal actions from delayed rewards
-- **AdaptiveThresholdDetector** computes a moving-window mean and standard deviation, flagging values beyond `mean + kÂ·Ïƒ`
+- **AdaptiveThresholdDetector** computes a moving-window mean and standard deviation, flagging values beyond `mean + k·σ`
 - **MultiSignalFusion** combines signals via weighted, median, min, max, or product fusion strategies
 - **SmithPredictor** compensates for known feedback delays by modeling the plant and subtracting the delayed component
 - **AntiWindupProtector** prevents integral windup by decaying the accumulated error when the actuator is saturated
@@ -1232,7 +1232,7 @@ graph TD
 */
 */
 
-// â”€â”€â”€ OscillationDetector â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── OscillationDetector ───────────────────────────────────────────────
 
 interface OscillationResult {
   oscillating: boolean;
@@ -1313,7 +1313,7 @@ class OscillationDetector {
   }
 }
 
-// â”€â”€â”€ CascadeController â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── CascadeController ────────────────────────────────────────────────
 
 interface CascadeStage {
   controller: {
@@ -1396,7 +1396,7 @@ class CascadeController {
   }
 }
 
-// â”€â”€â”€ FeedForwardController â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── FeedForwardController ─────────────────────────────────────────────
 
 interface FeedForwardConfig {
   disturbanceGain: number;
@@ -1474,7 +1474,7 @@ class FeedForwardController {
   }
 }
 
-// â”€â”€â”€ BumpTestAnalyzer (System Identification) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── BumpTestAnalyzer (System Identification) ─────────────────────────
 
 interface ProcessModel {
   gain: number;
@@ -1552,7 +1552,7 @@ class BumpTestAnalyzer {
   }
 }
 
-// â”€â”€â”€ DeadbandFilter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── DeadbandFilter ────────────────────────────────────────────────────
 
 class DeadbandFilter {
   private readonly threshold: number;
@@ -1616,7 +1616,7 @@ class DeadbandFilter {
   }
 }
 
-// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Demo ──────────────────────────────────────────────────────────────
 
 async function main() {
   console.log("=== Advanced Feedback Tools Demo ===\n");
@@ -1641,7 +1641,7 @@ async function main() {
   const plant = (u: number) => u * 0.05 + (Math.random() - 0.5) * 0.2;
   const cascadeTrace = cascade.simulate(100, 0, plant, 30);
   const lastC = cascadeTrace[cascadeTrace.length - 1];
-  console.log(`\nCascade Controller (${cascade.getStageNames().join(" â†’ ")}):`);
+  console.log(`\nCascade Controller (${cascade.getStageNames().join(" → ")}):`);
   console.log(`  Stages: ${cascade.getStageNames().length}`);
   console.log(`  Final measurement: ${lastC.measurement.toFixed(2)}`);
   console.log(`  Final control: ${lastC.control.toFixed(2)}`);
@@ -1698,7 +1698,7 @@ await main();
 - **OscillationDetector** analyzes error signal zero crossings and amplitude trends to detect sustained or growing oscillations; provides concrete recommendations (reduce gain, apply damping, monitor)
 - **CascadeController** chains multiple control stages in series (e.g., inner velocity loop feeding outer position loop), enabling tighter control of complex dynamics than a single controller
 - **FeedForwardController** anticipates known disturbances using a model-inverse approach, compensating before the feedback loop can react; includes disturbance prediction via trend extrapolation
-- **BumpTestAnalyzer** performs system identification from step response data â€” estimates process gain, time constant, dead time, and model fit quality; recommends PID tuning parameters based on dead-time-to-time-constant ratio
+- **BumpTestAnalyzer** performs system identification from step response data — estimates process gain, time constant, dead time, and model fit quality; recommends PID tuning parameters based on dead-time-to-time-constant ratio
 - **DeadbandFilter** ignores error changes below a configurable threshold, reducing actuator dithering and controller chatter; includes hysteresis mode that widens the band after repeated suppression
 
 ---
@@ -1707,9 +1707,9 @@ await main();
 
 - **Eval-driven loops** are the general-purpose feedback mechanism: generate, score against explicit criteria, adjust parameters, and retry until quality converges.
 - **Code review loops** mirror real engineering workflows: AI authors, humans review with actionable line-level comments, AI applies fixes, and the cycle repeats until approval.
-- **Test-driven loops** use tests as executable specifications â€” a passing test suite is the most objective success signal available to an agent.
+- **Test-driven loops** use tests as executable specifications — a passing test suite is the most objective success signal available to an agent.
 - **Failure-to-task conversion** ensures that failures produce concrete next steps instead of dead ends. Each failed attempt shrinks the problem space.
-- **Sweep loops** scale feedback to entire collections â€” process items, detect failures, generate fix tasks, and iterate the fixes until resolution or escalation.
+- **Sweep loops** scale feedback to entire collections — process items, detect failures, generate fix tasks, and iterate the fixes until resolution or escalation.
 - All feedback loops must have explicit termination conditions: score thresholds, max iterations, plateau detection, and escalation paths.
 
 ---
@@ -1732,7 +1732,7 @@ await main();
 
 1. **Weight-aware eval loop.** Modify Example 1 so that when a dimension scores below 0.5, its weight is temporarily doubled for the next iteration. This forces the agent to focus on its weakest area.
 
-2. **Multi-file review.** Extend Example 2 so that the review loop handles multiple files in a single review round. The `ReviewComment` type already has a `file` field â€” modify `ReviewLoopAgent` to track changes round by round across a `Map<string, string>` of file paths to code contents.
+2. **Multi-file review.** Extend Example 2 so that the review loop handles multiple files in a single review round. The `ReviewComment` type already has a `file` field — modify `ReviewLoopAgent` to track changes round by round across a `Map<string, string>` of file paths to code contents.
 
 3. **Sweep with dependency ordering.** Modify Example 3 so that tasks can declare dependencies (`dependsOn: string[]`). If task B depends on task A and A fails, B is deferred until A's fix task succeeds. If A's fix also fails, B is escalated without attempting execution.
 

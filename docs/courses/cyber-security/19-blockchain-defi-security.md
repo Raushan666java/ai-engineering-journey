@@ -1,4 +1,4 @@
-﻿# Chapter 19: Blockchain, Smart Contract & DeFi Security
+# Chapter 19: Blockchain, Smart Contract & DeFi Security
 
 > **Prereq:** Chapters 2 (Cryptography), 3 (Network Security); familiarity with basic blockchain concepts (blocks, transactions, wallets).
 > **Next:** [Chapter 20: Emerging Threats & Post-Quantum Cryptography] (planned)
@@ -89,8 +89,8 @@ The attacker monopolises all incoming/outgoing connections to a target node, iso
 
 **Attack flow:**
 ```
-Attacker â†â†’ [Victim Node] â†â†’ Attacker
-     â†•                          â†•
+Attacker ←→ [Victim Node] ←→ Attacker
+     ↕                          ↕
 [Fake Blockchain]          [Fake Peers]
 ```
 
@@ -116,7 +116,7 @@ An attacker manipulates a node's network time counter by sending false timestamp
 
 ## 2. Consensus Security
 
-### 2.1 Proof-of-Work â€” Double-Spend Probability
+### 2.1 Proof-of-Work — Double-Spend Probability
 
 The probability that an attacker with proportion \( q \) of the total hash rate can overwrite \( z \) confirmations follows the **Meni Rosenfeld** formula:
 
@@ -156,11 +156,11 @@ console.log(doubleSpendProbability(0.3, 24)); // ~1.6e-6
 
 ### 2.3 PBFT (Practical Byzantine Fault Tolerance)
 
-PBFT requires \( 3f + 1 \) nodes to tolerate \( f \) Byzantine faults. Communication is O(nÂ²). The protocol reaches finality in three phases:
+PBFT requires \( 3f + 1 \) nodes to tolerate \( f \) Byzantine faults. Communication is O(n²). The protocol reaches finality in three phases:
 
 1. **Pre-prepare**: Primary proposes a block.
 2. **Prepare**: Nodes broadcast acceptance.
-3. **Commit**: Nodes broadcast commit â€” at \( 2f + 1 \) commits, finality is reached.
+3. **Commit**: Nodes broadcast commit — at \( 2f + 1 \) commits, finality is reached.
 
 **Security property:** Under \( f < n/3 \) Byzantine nodes, the protocol guarantees safety and liveness.
 
@@ -176,9 +176,9 @@ A small set of elected block producers (e.g., 21 in EOS) create blocks. While th
 
 ## 3. Smart Contract Vulnerabilities
 
-### 3.1 Reentrancy â€” The DAO Hack (2016)
+### 3.1 Reentrancy — The DAO Hack (2016)
 
-**The DAO Hack (June 2016) â€” $60M stolen**
+**The DAO Hack (June 2016) — $60M stolen**
 
 The DAO was a decentralised venture capital fund on Ethereum. An attacker exploited a reentrancy vulnerability in the `splitDAO` function:
 
@@ -249,7 +249,7 @@ function transfer(address to, uint amount) public {
 ```
 
 **Example:** If `amount = 100` and `balance = 50`:
-- `50 - 100 = 2^256 - 50` (underflow â†’ enormous balance)
+- `50 - 100 = 2^256 - 50` (underflow → enormous balance)
 
 **Post-0.8:** Built-in checked arithmetic reverts on overflow. Use `unchecked` blocks only when overflow is explicitly intended (e.g., gas optimisation in Solidity 0.8+).
 
@@ -330,8 +330,8 @@ Flash loans allow borrowing any amount of assets *without collateral* as long as
 
 ```mermaid
 flowchart LR
-    A[Flash Loan: Borrow $1B DAI] --> B[Swap DAI â†’ USDC on AMM A]
-    B --> C[Swap USDC â†’ DAI on AMM B]
+    A[Flash Loan: Borrow $1B DAI] --> B[Swap DAI → USDC on AMM A]
+    B --> C[Swap USDC → DAI on AMM B]
     C --> D[Arbitrage profit captured]
     D --> E[Repay flash loan]
     E --> F[Profit: difference minus fees]
@@ -354,7 +354,7 @@ Oracles feed external data (e.g., asset prices) onto the blockchain. Manipulatin
 If a protocol uses a Uniswap TWAP (time-weighted average price) with a short window (e.g., 10 minutes), an attacker can:
 
 1. Flash loan a large amount of Token A.
-2. Swap Token A â†’ Token B on Uniswap, crashing the price.
+2. Swap Token A → Token B on Uniswap, crashing the price.
 3. Trigger a liquidation or borrow against inflated collateral.
 4. Swap back and repay the flash loan.
 
@@ -403,12 +403,12 @@ function calculatePriceImpact(
 
 const pool: AMMPool = { reserve0: BigInt(1000e18), reserve1: BigInt(1000e18) };
 console.log(`Price impact for 100 ETH swap: ${calculatePriceImpact(pool, BigInt(100e18), true).toFixed(2)}%`);
-// Large swap â†’ high price impact, exploitable by sandwich attacks
+// Large swap → high price impact, exploitable by sandwich attacks
 ```
 
 ### 4.2 Impermanent Loss
 
-Liquidity providers (LPs) suffer impermanent loss when the price ratio between pooled assets changes. The loss is "impermanent" until withdrawal â€” if the price ratio returns to the deposit ratio, IL disappears.
+Liquidity providers (LPs) suffer impermanent loss when the price ratio between pooled assets changes. The loss is "impermanent" until withdrawal — if the price ratio returns to the deposit ratio, IL disappears.
 
 \[
 IL = \frac{2 \times \sqrt{r}}{1 + r} - 1
@@ -423,14 +423,14 @@ function impermanentLoss(priceRatio: number): number {
 
 const ratios = [1.25, 1.5, 2.0, 3.0, 5.0];
 for (const r of ratios) {
-    console.log(`Price ratio ${r}x â†’ IL: ${(impermanentLoss(r) * 100).toFixed(2)}%`);
+    console.log(`Price ratio ${r}x → IL: ${(impermanentLoss(r) * 100).toFixed(2)}%`);
 }
-// Price ratio 1.25x â†’ IL: -0.49%
-// Price ratio 2.0x  â†’ IL: -5.72%
-// Price ratio 5.0x  â†’ IL: -25.46%
+// Price ratio 1.25x → IL: -0.49%
+// Price ratio 2.0x  → IL: -5.72%
+// Price ratio 5.0x  → IL: -25.46%
 ```
 
-### 4.3 MEV â€” Miner Extractable Value
+### 4.3 MEV — Miner Extractable Value
 
 MEV refers to value extracted by reordering, including, or excluding transactions within a block.
 
@@ -455,7 +455,7 @@ sequenceDiagram
     Searcher->>Mempool: Detect victim's pending tx
     Searcher->>Mempool: Front-run tx: BUY 50 ETH (higher gas)
     Searcher->>Mempool: Back-run tx: SELL 50 ETH (after victim)
-    BlockBuilder->>BlockBuilder: Order: Front-run â†’ Victim â†’ Back-run
+    BlockBuilder->>BlockBuilder: Order: Front-run → Victim → Back-run
     Note over Searcher: Profit = back-run sale - front-run buy - fees
 ```
 
@@ -464,7 +464,7 @@ sequenceDiagram
 Lending protocols (Aave, Compound) allow over-collateralised borrowing. If collateral value falls below the liquidation threshold, anyone can liquidate the position for a bonus.
 
 **Attack vector:**
-1. Deposit large collateral â†’ borrow maximum.
+1. Deposit large collateral → borrow maximum.
 2. Manipulate the oracle to trigger a false "health factor drop."
 3. Liquidator (often the attacker themselves) claims the liquidation bonus.
 4. Repay the loan and profit from the bonus.
@@ -478,7 +478,7 @@ Lending protocols (Aave, Compound) allow over-collateralised borrowing. If colla
 | Attribute | `tx.origin` | `msg.sender` |
 |-----------|-------------|--------------|
 | Value | Original EOA that initiated the tx | Immediate caller (could be contract) |
-| Security | **VULNERABLE** â€” phishing attacks | Safe for auth |
+| Security | **VULNERABLE** — phishing attacks | Safe for auth |
 | Gas cost | Cheaper (SLOAD vs CALLER) | Normal |
 
 ```solidity
@@ -498,9 +498,9 @@ function withdrawAll() public {
 
 ### 5.2 Delegatecall Proxy Patterns
 
-`delegatecall` executes a contract's code in the caller's storage context. This is the foundation of upgradeable contracts â€” but it's dangerous.
+`delegatecall` executes a contract's code in the caller's storage context. This is the foundation of upgradeable contracts — but it's dangerous.
 
-**The Parity Wallet Hack (2017) â€” $280M frozen**
+**The Parity Wallet Hack (2017) — $280M frozen**
 
 The Parity multi-sig wallet used a library contract with `delegatecall`. An attacker called the library's `initWallet()` function (which set the owner) after the library was initialised, then called `kill()` to selfdestruct the library, freezing all funds.
 
@@ -524,7 +524,7 @@ uint160 smaller = uint160(large); // Truncation! Information loss
 
 // VULNERABLE: unsafe downcast
 uint32 a = 0xFFFFFFFF;
-uint16 b = uint16(a); // b = 0xFFFF â€” value truncated silently
+uint16 b = uint16(a); // b = 0xFFFF — value truncated silently
 
 // Solidity 0.8+ safe casting
 import "@openzeppelin/contracts/utils/math/SafeCast.sol";
@@ -571,37 +571,37 @@ flowchart LR
 
 ### 6.2 Major Bridge Hacks
 
-**Ronin Bridge (Axie Infinity) â€” March 2022 â€” $625M**
+**Ronin Bridge (Axie Infinity) — March 2022 — $625M**
 
 | Event | Details |
 |-------|---------|
-| **Target** | Ronin bridge (Ethereum â†” Ronin sidechain) |
+| **Target** | Ronin bridge (Ethereum ↔ Ronin sidechain) |
 | **Root Cause** | 5/9 validator keys compromised |
 | **Attack** | Attacker used compromised private keys to forge withdrawal transactions |
-| **Discovery** | 6 days after exploit â€” user couldn't withdraw 5,000 ETH |
+| **Discovery** | 6 days after exploit — user couldn't withdraw 5,000 ETH |
 | **Aftermath** | Axie Infinity token crashed 40%; US Treasury sanctioned North Korea's Lazarus Group |
 
-**Wormhole Bridge â€” February 2022 â€” $320M**
+**Wormhole Bridge — February 2022 — $320M**
 
 | Event | Details |
 |-------|---------|
-| **Target** | Wormhole (Ethereum â†” Solana) |
+| **Target** | Wormhole (Ethereum ↔ Solana) |
 | **Root Cause** | Solana `Secp256k1` instruction verification bypass |
 | **Attack** | Attacker minted 120,000 wrapped ETH on Solana without depositing on Ethereum |
 | **Fix** | Patched signature verification; Jump Crypto replenished funds |
 
-**Nomad Bridge â€” August 2022 â€” $190M**
+**Nomad Bridge — August 2022 — $190M**
 
 | Event | Details |
 |-------|---------|
 | **Target** | Nomad (optimistic bridge, multiple chains) |
-| **Root Cause** | Incorrect initialisation â€” a "0x00" root hash was accepted as valid |
+| **Root Cause** | Incorrect initialisation — a "0x00" root hash was accepted as valid |
 | **Attack** | Attacker spoofed a legitimate message; copycat attackers drained remaining funds |
 | **Aftermath** | $32M recovered via bounty; bridge permanently shut |
 
 ### 6.3 Atomic Swaps
 
-An atomic swap is a trustless cross-chain exchange using hashed timelock contracts (HTLCs). It is "atomic" â€” either both parties receive funds, or neither does.
+An atomic swap is a trustless cross-chain exchange using hashed timelock contracts (HTLCs). It is "atomic" — either both parties receive funds, or neither does.
 
 ```typescript
 interface HTLC {
@@ -631,16 +631,16 @@ Hierarchical Deterministic (HD) wallets derive keys from a single seed phrase.
 **Hierarchy:**
 
 ```
-Mnemonic (BIP39) â†’ Seed (PBKDF2) â†’ Master Private Key â†’ Child Keys
+Mnemonic (BIP39) → Seed (PBKDF2) → Master Private Key → Child Keys
 
 BIP44 Path: m / purpose' / coin_type' / account' / change / address_index
 Example:     m / 44'     / 60'       / 0'        / 0      / 0
-                                            â†•
+                                            ↕
                                     Ethereum mainnet address
 ```
 
 ```typescript
-// HD Wallet Key Derivation (BIP32/39/44) â€” TypeScript Implementation
+// HD Wallet Key Derivation (BIP32/39/44) — TypeScript Implementation
 import { createHmac, randomBytes } from "crypto";
 
 interface HDNode {
@@ -664,7 +664,7 @@ function bip39MnemonicToSeed(mnemonic: string, passphrase = ""): Buffer {
     );
 }
 
-// Simplified CKD (Child Key Derivation) â€” secp256k1
+// Simplified CKD (Child Key Derivation) — secp256k1
 function ckdPriv(parent: HDNode, index: number): HDNode {
     const indexBuffer = Buffer.alloc(4);
     indexBuffer.writeUInt32BE(index, 0);
@@ -734,7 +734,7 @@ console.log(`Depth: ${wallet.depth}`);
 |--------|-------------|------------|
 | **Physical theft** | Seed phrase written on paper stolen | Steel plates (Cryptosteel, Billfodl) |
 | **Phishing** | Fake wallet apps that capture seed | Verify app signatures, use hardware wallets |
-| **Social engineering** | Attacker poses as support asking for seed | Never share seed phrase â€” ever |
+| **Social engineering** | Attacker poses as support asking for seed | Never share seed phrase — ever |
 | **Cloud leak** | Seed stored in iCloud/Google Drive accidentally | Multi-factor, encrypted backup |
 | **Supply chain** | Pre-generated seed cards | Generate seeds on-device only |
 
@@ -754,10 +754,10 @@ A multisig wallet requires M-of-N signatures to execute a transaction. This prev
 
 ```
 Gnosis Safe: 2-of-3 multisig
-        â”Œâ”€â”€â”€â”€â”€â”
-Owner 1 â”œâ”€â”€â”€â”€â”€â”¤  Sign Tx
-Owner 2 â”œâ”€â”€â”€â”€â”€â”¤  Sign Tx  â†’  Execute
-Owner 3 â””â”€â”€â”€â”€â”€â”˜  (not required)
+        ┌─────┐
+Owner 1 ├─────┤  Sign Tx
+Owner 2 ├─────┤  Sign Tx  →  Execute
+Owner 3 └─────┘  (not required)
 ```
 
 **Security properties:**
@@ -873,7 +873,7 @@ function modInverse(a: bigint, m: bigint): bigint {
 
 ### 8.4 BLS Signatures
 
-BLS (Bonehâ€“Lynnâ€“Shacham) signatures enable:
+BLS (Boneh–Lynn–Shacham) signatures enable:
 - **Signature aggregation**: Combine N signatures into one constant-size signature.
 - **Key aggregation**: Combine N public keys into one.
 - **Subgroup verification**: Verify N-of-N signatures in O(1) time.
@@ -904,7 +904,7 @@ EIP-2981 standardises royalty payments, but royalties are **not enforced on-chai
 | Blur | Optional | Most trading volume bypasses royalties |
 | LooksRare | No | Zero mandatory royalties |
 
-**Attack:** Buy NFT on Blur (no royalty), sell on OpenSea (with royalty) â€” wash trading and royalty arbitrage.
+**Attack:** Buy NFT on Blur (no royalty), sell on OpenSea (with royalty) — wash trading and royalty arbitrage.
 
 ### 9.3 Token Standard Issues
 
@@ -929,7 +929,7 @@ EIP-2981 standardises royalty payments, but royalties are **not enforced on-chai
 Attackers move funds across blockchains (L1s, bridges, DEXs) to obfuscate the trail. Forensic trace must follow:
 
 ```
-BTC â†’ Binance â†’ ETH â†’ Tornado Cash â†’ Arbitrum â†’ DEX â†’ Solana â†’ ...
+BTC → Binance → ETH → Tornado Cash → Arbitrum → DEX → Solana → ...
 ```
 
 **Tools:** Chainalysis, Elliptic, CipherTrace, Dune Analytics.
@@ -939,7 +939,7 @@ BTC â†’ Binance â†’ ETH â†’ Tornado Cash â†’ Arbitrum â†�
 Taint analysis tracks the provenance of specific UTXOs or token amounts through the transaction graph.
 
 ```typescript
-// Blockchain Transaction Graph Analyzer â€” Taint Flow Tracking
+// Blockchain Transaction Graph Analyzer — Taint Flow Tracking
 interface TxInput {
     txHash: string;
     outputIndex: number;
@@ -1110,7 +1110,7 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 1. Attacker deployed a malicious contract that called `splitDAO`.
 2. `splitDAO` sent ETH to the attacker's contract via `call.value()`.
 3. The attacker's `fallback()` function re-entered `splitDAO` before the balance was updated.
-4. Each re-entry sent more ETH â€” totalling ~3.6M ETH (~$60M at the time).
+4. Each re-entry sent more ETH — totalling ~3.6M ETH (~$60M at the time).
 
 **Aftermath:** Ethereum hard-forked at block 1,920,000 to reverse the theft. The original chain (Ethereum Classic) refused.
 
@@ -1132,9 +1132,9 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 
 **Exploit anatomy:**
 1. Flash loan 90M USDC.
-2. Deposit into Harvest's Curve USDC pool â€” inflating the share price.
+2. Deposit into Harvest's Curve USDC pool — inflating the share price.
 3. Deposit a small amount of USDC at the inflated share price.
-4. Withdraw â€” the small deposit redeemed far more than expected.
+4. Withdraw — the small deposit redeemed far more than expected.
 5. Repay flash loan. Profit: ~$24M.
 
 **Root cause:** The share price was calculated using the pool balance without accounting for the flash loan deposit artificially inflating it.
@@ -1158,7 +1158,7 @@ KYT is a regulatory framework requiring VASPs (Virtual Asset Service Providers) 
 ### 13.1 Block Header Validator
 
 ```typescript
-// Block Header Validator â€” verify PoW difficulty and merkle root
+// Block Header Validator — verify PoW difficulty and merkle root
 import { createHash } from "crypto";
 
 interface BlockHeader {
@@ -1320,7 +1320,7 @@ class SolidityVulnScanner {
                         "Reentrancy",
                         "High",
                         i + 1,
-                        "External call before state update â€” potential reentrancy"
+                        "External call before state update — potential reentrancy"
                     );
                 }
             }
@@ -1342,7 +1342,7 @@ class SolidityVulnScanner {
                     "Unchecked Arithmetic",
                     "Medium",
                     i + 1,
-                    "Unchecked block with arithmetic â€” potential overflow/underflow"
+                    "Unchecked block with arithmetic — potential overflow/underflow"
                 );
             }
         }
@@ -1363,7 +1363,7 @@ class SolidityVulnScanner {
                     "tx.origin Authentication",
                     "Critical",
                     i + 1,
-                    "tx.origin used for authentication â€” use msg.sender instead"
+                    "tx.origin used for authentication — use msg.sender instead"
                 );
             }
         }
@@ -1381,7 +1381,7 @@ class SolidityVulnScanner {
                     "Selfdestruct",
                     "High",
                     i + 1,
-                    "selfdestruct present â€” contract can be destroyed"
+                    "selfdestruct present — contract can be destroyed"
                 );
             }
         }
@@ -1399,7 +1399,7 @@ class SolidityVulnScanner {
                     "Delegatecall",
                     "High",
                     i + 1,
-                    "delegatecall used â€” verify storage compatibility and target trust"
+                    "delegatecall used — verify storage compatibility and target trust"
                 );
             }
         }
@@ -1417,7 +1417,7 @@ class SolidityVulnScanner {
                     "Floating Pragma",
                     "Low",
                     i + 1,
-                    "Floating pragma â€” lock to specific compiler version"
+                    "Floating pragma — lock to specific compiler version"
                 );
             }
         }
@@ -1468,7 +1468,7 @@ for (const v of results) {
 ### 13.3 Flash Loan Attack Simulator
 
 ```typescript
-// Flash Loan Attack Simulator â€” arbitrage between two AMMs
+// Flash Loan Attack Simulator — arbitrage between two AMMs
 interface SimAMMPool {
     name: string;
     reserveA: bigint;  // Token A reserve
@@ -1500,15 +1500,15 @@ function flashLoanArbitrage(
     poolB: SimAMMPool,
     borrowAmount: bigint
 ): bigint {
-    // Step 1: Swap borrow on Pool A (e.g., Token A â†’ Token B)
+    // Step 1: Swap borrow on Pool A (e.g., Token A → Token B)
     const { amountOut: tokenBFromA, newPool: poolA2 } = simulateSwap(poolA, borrowAmount, true);
     
     // Step 2: Swap Token B back to Token A on Pool B
     const { amountOut: tokenARepaid, newPool: poolB2 } = simulateSwap(poolB, tokenBFromA, false);
     
     console.log(`Borrowed: ${borrowAmount} A`);
-    console.log(`Swapped Aâ†’B on ${poolA.name}: ${tokenBFromA} B`);
-    console.log(`Swapped Bâ†’A on ${poolB.name}: ${tokenARepaid} A`);
+    console.log(`Swapped A→B on ${poolA.name}: ${tokenBFromA} B`);
+    console.log(`Swapped B→A on ${poolB.name}: ${tokenARepaid} A`);
     
     const profit = tokenARepaid - borrowAmount;
     const flashLoanFee = borrowAmount / BigInt(10000); // 0.01% fee (e.g., dYdX)
@@ -1524,8 +1524,8 @@ function flashLoanArbitrage(
 }
 
 // Test: Two pools with different prices
-// Pool A: 1000 A, 1000 B â†’ price 1:1
-// Pool B: 800 A, 1000 B â†’ price 1 A = 1.25 B (more expensive A on Pool B)
+// Pool A: 1000 A, 1000 B → price 1:1
+// Pool B: 800 A, 1000 B → price 1 A = 1.25 B (more expensive A on Pool B)
 const poolA: SimAMMPool = { name: "UniswapV3", reserveA: BigInt(1000e18), reserveB: BigInt(1000e18) };
 const poolB: SimAMMPool = { name: "SushiSwap", reserveA: BigInt(800e18), reserveB: BigInt(1000e18) };
 
@@ -1655,12 +1655,12 @@ const daiPool = { reserveA: BigInt(10_000_000e18), reserveB: BigInt(10_000_000e1
 const smallTrade = ammPriceImpact(
     daiPool.reserveA, daiPool.reserveB, BigInt(100e18), true
 );
-console.log(`Small trade (100 DAI â†’): Impact ${smallTrade.priceImpactPct.toFixed(4)}%`);
+console.log(`Small trade (100 DAI →): Impact ${smallTrade.priceImpactPct.toFixed(4)}%`);
 
 const largeTrade = ammPriceImpact(
     daiPool.reserveA, daiPool.reserveB, BigInt(5_000_000e18), true
 );
-console.log(`Large trade (5M DAI â†’): Impact ${largeTrade.priceImpactPct.toFixed(2)}%`);
+console.log(`Large trade (5M DAI →): Impact ${largeTrade.priceImpactPct.toFixed(2)}%`);
 // Demonstrates why large swaps are vulnerable to MEV
 ```
 
@@ -1708,7 +1708,7 @@ function verifyAndRecoverSigner(
     
     // Replay protection checks:
     if (tx.chainId === 0) {
-        console.warn("No chain ID â€” transaction replayable across chains!");
+        console.warn("No chain ID — transaction replayable across chains!");
         return null;
     }
     if (tx.nonce < 0) {
@@ -1718,7 +1718,7 @@ function verifyAndRecoverSigner(
     
     console.log(`Transaction hash: ${txHash}`);
     console.log(`Recovery ID: ${recoveryId}`);
-    console.log(`Chain ID: ${tx.chainId} â€” replay protection active`);
+    console.log(`Chain ID: ${tx.chainId} — replay protection active`);
     
     // Return recovered address (simplified)
     return `0xRecoveredAddress_${recoveryId}`;
@@ -1729,7 +1729,7 @@ const tx: SecureTx = {
     to: "0xRecipient",
     value: BigInt(1e18),
     nonce: 42,
-    chainId: 1, // Ethereum mainnet â€” prevents replay on Goerli, Polygon, etc.
+    chainId: 1, // Ethereum mainnet — prevents replay on Goerli, Polygon, etc.
     gasLimit: 21000,
     data: "0x",
 };
@@ -1780,7 +1780,7 @@ Over $7B has been lost to blockchain security exploits since 2016. Understanding
 | 1 | What percentage of hash rate does an attacker need for selfish mining to become more profitable than honest mining? | 20% | 25% | 40% | 51% | **C** |
 | 2 | In PBFT consensus, how many Byzantine nodes can be tolerated with 7 nodes? | 1 | 2 | 3 | 4 | **B** |
 | 3 | Which of the following is the correct mitigation for reentrancy attacks? | Use tx.origin for authentication | Update state before making external calls | Use delegatecall instead of call | Increase gas limit | **B** |
-| 4 | What is the constant product formula used by Uniswap? | x + y = k | x Ã— y = k | xÂ² + yÂ² = k | x âˆ’ y = k | **B** |
+| 4 | What is the constant product formula used by Uniswap? | x + y = k | x × y = k | x² + y² = k | x − y = k | **B** |
 | 5 | Which attack involves buying an asset before a victim's transaction executes and selling immediately after? | Flash loan attack | Sandwich attack | Long-range attack | Eclipse attack | **B** |
 | 6 | In Solidity, which of the following is safer for authentication? | tx.origin | msg.sender | block.coinbase | address(this) | **B** |
 | 7 | What was the root cause of the 2017 Parity Wallet hack that froze $280M? | Reentrancy | Integer overflow | Exploitable delegatecall to a selfdestructed library | 51% attack on Ethereum | **C** |
@@ -1797,7 +1797,7 @@ Over $7B has been lost to blockchain security exploits since 2016. Understanding
 
 ### Theory
 
-1. **Double-Spend Probability.** An attacker controls 15% of the total hash rate on a PoW chain. Calculate the probability of successfully double-spending after 3, 6, and 12 confirmations using `doubleSpendProbability`. At what confirmation depth does the probability drop below 10â»â¶?
+1. **Double-Spend Probability.** An attacker controls 15% of the total hash rate on a PoW chain. Calculate the probability of successfully double-spending after 3, 6, and 12 confirmations using `doubleSpendProbability`. At what confirmation depth does the probability drop below 10⁻⁶?
 
 2. **51% Attack Cost Estimation.** Assume a blockchain has a total hash rate of 100 PH/s. Mining hardware costs $50 per TH/s per day (rental). How much would it cost to sustain a 51% attack for 6 hours? Include a 20% safety margin for variance.
 
@@ -1817,16 +1817,16 @@ function redeem(uint256 amount) external {
 
 ### Application (Hands-On)
 
-5. **Vulnerability Scanner Extension.** Extend the `SolidityVulnScanner` from Â§13.2 with a new check for **unprotected initializer functions** (detect `initialize` functions without an `initializer` modifier). Write the TypeScript check and test it against a sample contract.
+5. **Vulnerability Scanner Extension.** Extend the `SolidityVulnScanner` from §13.2 with a new check for **unprotected initializer functions** (detect `initialize` functions without an `initializer` modifier). Write the TypeScript check and test it against a sample contract.
 
-6. **Flash Loan Simulator â€” Three-Pool Arbitrage.** Extend the `flashLoanArbitrage` function from Â§13.3 to handle three AMM pools. Given:
+6. **Flash Loan Simulator — Three-Pool Arbitrage.** Extend the `flashLoanArbitrage` function from §13.3 to handle three AMM pools. Given:
    - Pool A: 2000 USDC / 1 ETH
    - Pool B: 1800 USDC / 1 ETH
    - Pool C: 1 USDC / 1 USDT (stable swap)
    
    Find the optimal route for a 500 USDC flash loan that maximises profit.
 
-7. **Taint Analysis â€” Multi-Hop Trace.** Using the `TaintAnalyzer` from Â§11.2, simulate a three-hop taint flow:
+7. **Taint Analysis — Multi-Hop Trace.** Using the `TaintAnalyzer` from §11.2, simulate a three-hop taint flow:
    - Hacker sends 100 ETH to Mixer A.
    - Mixer A sends 50 ETH to Exchange 1 and 50 ETH to Exchange 2.
    - Exchange 2 sends 25 ETH to Exchange 1.
@@ -1835,16 +1835,16 @@ function redeem(uint256 amount) external {
 
 ### Challenge (Advanced)
 
-8. **BIP32 HD Wallet â€” Path Derivation & Address Generation.** Implement a full BIP44 derivation that generates the first 5 Ethereum addresses from a mnemonic. For each address, output the derivation path, public key (uncompressed hex), and address (keccak256 of the public key, last 20 bytes). Use the `crypto` module for HMAC-SHA512 and PBKDF2.
+8. **BIP32 HD Wallet — Path Derivation & Address Generation.** Implement a full BIP44 derivation that generates the first 5 Ethereum addresses from a mnemonic. For each address, output the derivation path, public key (uncompressed hex), and address (keccak256 of the public key, last 20 bytes). Use the `crypto` module for HMAC-SHA512 and PBKDF2.
 
-9. **MEV Sandwich Simulator â€” Optimisation.** Given the `calculateSandwichProfit` function from Â§13.4, write a solver that finds the optimal front-run amount (0.1 ETH to 50 ETH) that maximises attacker profit, assuming:
+9. **MEV Sandwich Simulator — Optimisation.** Given the `calculateSandwichProfit` function from §13.4, write a solver that finds the optimal front-run amount (0.1 ETH to 50 ETH) that maximises attacker profit, assuming:
    - Pool reserves: 500 ETH / 1,000,000 USDC
    - Victim amount: 100 ETH
    - Gas cost: 0.01 ETH (subtract from profit)
    
    Report the optimal front-run amount and the net profit.
 
-10. **Smart Contract Audit Report.** Perform a complete audit of the following minimal lending protocol using the checklist from Â§12. For each finding, provide:
+10. **Smart Contract Audit Report.** Perform a complete audit of the following minimal lending protocol using the checklist from §12. For each finding, provide:
     - Type and severity
     - Line number and description
     - Code snippet of vulnerability
@@ -1882,7 +1882,7 @@ function redeem(uint256 amount) external {
 
 ## References
 
-- Mastering Ethereum (Antonopoulos & Wood), Ch. 9 â€” Smart Contract Security
+- Mastering Ethereum (Antonopoulos & Wood), Ch. 9 — Smart Contract Security
 - OWASP Smart Contract Top 10
 - Trail of Bits: "Ethereum Security Deterministic Audit Guide"
 - Samczsun's Smart Contract Security Research

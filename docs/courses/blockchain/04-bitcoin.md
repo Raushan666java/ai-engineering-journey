@@ -1,4 +1,4 @@
-﻿# Chapter 4: The Bitcoin Network
+# Chapter 4: The Bitcoin Network
 
 > **Previous:** [Chapter 3: Consensus Mechanisms](./03-consensus.md) | **Next:** [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md)
 
@@ -36,7 +36,7 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| UTXO Model | No balances â€” only unspent transaction outputs | Your "balance" is the sum of UTXOs you can unlock |
+| UTXO Model | No balances — only unspent transaction outputs | Your "balance" is the sum of UTXOs you can unlock |
 | Transaction Structure | Inputs (reference UTXOs) + Outputs (new UTXOs) | Every transaction consumes and creates UTXOs |
 | Bitcoin Script | Stack-based, non-Turing complete language | Intentionally limited to prevent DoS attacks |
 | Mining | Hash power secures the network + new coin issuance | Halving every 4 years enforces 21M supply cap |
@@ -92,7 +92,7 @@ flowchart LR
 - Every transaction consumes one or more existing UTXOs as **Inputs**. These UTXOs are marked as spent and removed from the UTXO set.
 - Every transaction creates one or more new UTXOs as **Outputs**. These are added to the UTXO set.
 - Your "balance" is simply the sum of all UTXOs associated with your addresses.
-- The **UTXO set** is the canonical state of the Bitcoin ledger â€” every full node maintains it.
+- The **UTXO set** is the canonical state of the Bitcoin ledger — every full node maintains it.
 
 ### UTXO Lifecycle
 
@@ -506,7 +506,7 @@ interface CoinbaseScript {
 
 > **Pro Tip:** Bitcoin transaction fees increase with transaction size (in bytes), not transaction value. To save on fees, consolidate many small UTXOs into one larger UTXO during low-fee periods.
 
-> **Warning:** If you lose your private keys, your Bitcoin is gone forever. There is no "forgot password" or customer support â€” Bitcoin's security model means you are solely responsible for key custody. Use hierarchical deterministic (HD) wallets with BIP39 seed phrases backed up offline.
+> **Warning:** If you lose your private keys, your Bitcoin is gone forever. There is no "forgot password" or customer support — Bitcoin's security model means you are solely responsible for key custody. Use hierarchical deterministic (HD) wallets with BIP39 seed phrases backed up offline.
 
 ---
 
@@ -532,7 +532,7 @@ interface CoinbaseScript {
 | **Mining** | Hash rate, Difficulty, Block reward, Halving | Reward halves every 210K blocks |
 | **Supply** | 21M total, ~19.5M mined (2026) | Last Bitcoin mined ~2140 |
 | **Transaction** | Version, Inputs, Outputs, Locktime | Locktime enables time-locked transactions |
-| **Fee Estimation** | Fee = size Ã— fee_rate | Input size ~148B, output ~34B |
+| **Fee Estimation** | Fee = size × fee_rate | Input size ~148B, output ~34B |
 | **Difficulty** | Target threshold for PoW | Adjusts every 2016 blocks |
 | **Mempool** | ~300 MB default limit | Transactions with fees below ~1 sat/vB may be evicted |
 
@@ -562,14 +562,14 @@ interface CoinbaseScript {
 </details>
 
 2. What prevents Bitcoin Script from being used for infinite loops?
-   - A) It has no looping constructs â€” it's intentionally non-Turing complete
+   - A) It has no looping constructs — it's intentionally non-Turing complete
    - B) It has a maximum gas limit
    - C) It times out after 10 minutes
    - D) It requires user confirmation for each operation
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**A) It has no looping constructs â€” it's intentionally non-Turing complete.** Satoshi deliberately omitted loops and jumps to prevent denial-of-service attacks where scripts could run indefinitely.
+**A) It has no looping constructs — it's intentionally non-Turing complete.** Satoshi deliberately omitted loops and jumps to prevent denial-of-service attacks where scripts could run indefinitely.
 </details>
 
 3. Why does Bitcoin's block reward halve approximately every 4 years?
@@ -881,8 +881,8 @@ export { Processor, Task }
 1. Consolidate small UTXOs during low-fee periods to save on future transaction costs.
 2. Use a wallet that supports RBF to avoid stuck transactions during network congestion.
 3. Wait for 6+ confirmations (Bitcoin) before considering a transaction final for high-value transfers.
-4. Transaction fees depend on byte size, not value â€” optimize by minimizing input count.
-5. Back up your seed phrase offline â€” hardware wallets are the gold standard for key management.
+4. Transaction fees depend on byte size, not value — optimize by minimizing input count.
+5. Back up your seed phrase offline — hardware wallets are the gold standard for key management.
 
 ---
 

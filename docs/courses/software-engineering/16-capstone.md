@@ -1,4 +1,4 @@
-﻿# Capstone: Building a Complete Software System
+# Capstone: Building a Complete Software System
 
 ## Learning Objectives
 
@@ -340,7 +340,7 @@ graph TD
 | **Event-Driven** | Kafka event bus for cross-service communication | Loose coupling, async processing, audit trail |
 | **CQRS** | Separate read/write paths for reporting | Optimise reads (ElasticSearch) without impacting write performance |
 | **API Gateway** | Kong for routing, rate limiting, auth | Centralised cross-cutting concerns |
-| **Saga Pattern** | Distributed transactions via Kafka | Handle multi-service operations (e.g., change order â†’ budget + schedule) |
+| **Saga Pattern** | Distributed transactions via Kafka | Handle multi-service operations (e.g., change order → budget + schedule) |
 | **Strangler Fig** | Incremental migration path | Allow phased adoption of microservices |
 
 ### 4-Layer Architecture
@@ -577,7 +577,7 @@ class SmartBuildSystem {
           };
           this.services.set(svc.name, status);
           started++;
-          console.log(`  âœ“ ${svc.name} started on port ${svc.port}`);
+          console.log(`  ✓ ${svc.name} started on port ${svc.port}`);
         } catch (error) {
           errors.push(`Failed to start ${svc.name}: ${error}`);
         }
@@ -947,7 +947,7 @@ class NotificationService {
 
 ```mermaid
 graph TD
-    subgraph "Risk Matrix (Probability Ã— Impact)"
+    subgraph "Risk Matrix (Probability × Impact)"
         direction LR
         L1[Likelihood]
     end
@@ -969,7 +969,7 @@ graph TD
     end
 ```
 
-| Risk ID | Risk Description | Probability (1-5) | Impact (1-5) | Exposure (PÃ—I) | Response Strategy | Mitigation Plan |
+| Risk ID | Risk Description | Probability (1-5) | Impact (1-5) | Exposure (P×I) | Response Strategy | Mitigation Plan |
 |---------|-----------------|-------------------|--------------|----------------|-------------------|-----------------|
 | R-01 | Scope creep due to changing construction regulations | 4 | 4 | 16 (High) | Mitigate | Weekly regulatory review, buffer in backlog, change control board |
 | R-02 | Integration complexity with legacy construction ERP systems | 3 | 5 | 15 (High) | Mitigate | API-first design, adapter pattern, contract testing |
@@ -1011,8 +1011,8 @@ class RiskAssessmentMatrix {
 
   public getRiskHeatmap(): { quadrant: string; risks: RiskItem[]; count: number }[] {
     const quadrants = [
-      { quadrant: 'Critical (High P Ã— High I)', filter: (r: RiskItem) => r.probability >= 3 && r.impact >= 4 },
-      { quadrant: 'High Priority (High P Ã— Med I / Med P Ã— High I)', filter: (r: RiskItem) => (r.probability >= 4 && r.impact >= 2) || (r.probability >= 2 && r.impact >= 4) },
+      { quadrant: 'Critical (High P × High I)', filter: (r: RiskItem) => r.probability >= 3 && r.impact >= 4 },
+      { quadrant: 'High Priority (High P × Med I / Med P × High I)', filter: (r: RiskItem) => (r.probability >= 4 && r.impact >= 2) || (r.probability >= 2 && r.impact >= 4) },
       { quadrant: 'Medium Priority', filter: (r: RiskItem) => r.exposure >= 6 && r.exposure < 12 },
       { quadrant: 'Low Priority', filter: (r: RiskItem) => r.exposure < 6 },
     ];
@@ -1036,7 +1036,7 @@ class RiskAssessmentMatrix {
     const lines: string[] = ['=== Risk Assessment Report ==='];
     const byExposure = [...this.risks].sort((a, b) => b.exposure - a.exposure);
     for (const r of byExposure) {
-      const statusIcon = r.status === 'closed' ? 'âœ“' : r.status === 'monitoring' ? 'â—‰' : 'âœ—';
+      const statusIcon = r.status === 'closed' ? '✓' : r.status === 'monitoring' ? '◉' : '✗';
       lines.push(`${statusIcon} ${r.id} [${r.exposure}] ${r.description} (P=${r.probability}, I=${r.impact})`);
       lines.push(`  Response: ${r.response} | Owner: ${r.owner} | Status: ${r.status}`);
       lines.push(`  Mitigation: ${r.mitigation}`);
@@ -1189,7 +1189,7 @@ class SprintPlanner {
       'Tasks:',
     ];
     for (const t of sprint.tasks.sort((a, b) => a.status.localeCompare(b.status))) {
-      const icon = t.status === 'done' ? 'âœ“' : t.status === 'in_progress' ? 'â—‰' : t.status === 'review' ? 'â—' : 'â—‹';
+      const icon = t.status === 'done' ? '✓' : t.status === 'in_progress' ? '◉' : t.status === 'review' ? '◐' : '○';
       lines.push(`  ${icon} [${t.priority}] ${t.name} (${t.estimatedHours}h) - ${t.assignee}`);
     }
     return lines.join('\n');
@@ -1301,13 +1301,13 @@ class QualityDashboard {
       lines.push('');
       lines.push('Quality Metrics:');
       for (const m of latest.metrics) {
-        const icon = m.value >= m.target ? 'âœ“' : 'âœ—';
-        const trendIcon = m.trend === 'improving' ? 'â†‘' : m.trend === 'declining' ? 'â†“' : 'â†’';
+        const icon = m.value >= m.target ? '✓' : '✗';
+        const trendIcon = m.trend === 'improving' ? '↑' : m.trend === 'declining' ? '↓' : '→';
         lines.push(`  ${icon} ${m.name}: ${m.value}${m.unit} (target: ${m.target}) ${trendIcon}`);
       }
       if (latest.failures.length > 0) {
         lines.push('\nGate Failures:');
-        for (const f of latest.failures) lines.push(`  âœ— ${f}`);
+        for (const f of latest.failures) lines.push(`  ✗ ${f}`);
       }
     }
     return lines.join('\n');
@@ -1646,21 +1646,21 @@ deployer.deploy({
 
 | Artifact | Description | Completed |
 |----------|-------------|-----------|
-| Project plan & schedule | Gantt chart, WBS, risk register | â˜ |
-| SRS document | 22 functional + 12 non-functional requirements | â˜ |
-| Use case document | 10 use cases with pre/post conditions | â˜ |
-| Architecture document | Microservices, CQRS, event-driven, 4-layer | â˜ |
-| ADRs | Architecture Decision Records | â˜ |
-| Database schema | Domain model with all entities | â˜ |
-| OpenAPI specification | Full API documentation | â˜ |
-| Source code | Complete implementation (8 microservices) | â˜ |
-| Test suite | Unit, integration, contract, E2E, performance | â˜ |
-| CI/CD pipeline | GitHub Actions + ArgoCD | â˜ |
-| Security review | Threat model, SAST/SCA/DAST results | â˜ |
-| Quality metrics | Coverage, complexity, gate compliance | â˜ |
-| Deployment config | Docker Compose + K8s manifests + blue-green | â˜ |
-| Monitoring setup | Prometheus, Grafana, Loki, Tempo | â˜ |
-| User documentation | README, API guide, admin manual | â˜ |
+| Project plan & schedule | Gantt chart, WBS, risk register | ☐ |
+| SRS document | 22 functional + 12 non-functional requirements | ☐ |
+| Use case document | 10 use cases with pre/post conditions | ☐ |
+| Architecture document | Microservices, CQRS, event-driven, 4-layer | ☐ |
+| ADRs | Architecture Decision Records | ☐ |
+| Database schema | Domain model with all entities | ☐ |
+| OpenAPI specification | Full API documentation | ☐ |
+| Source code | Complete implementation (8 microservices) | ☐ |
+| Test suite | Unit, integration, contract, E2E, performance | ☐ |
+| CI/CD pipeline | GitHub Actions + ArgoCD | ☐ |
+| Security review | Threat model, SAST/SCA/DAST results | ☐ |
+| Quality metrics | Coverage, complexity, gate compliance | ☐ |
+| Deployment config | Docker Compose + K8s manifests + blue-green | ☐ |
+| Monitoring setup | Prometheus, Grafana, Loki, Tempo | ☐ |
+| User documentation | README, API guide, admin manual | ☐ |
 
 ## Phase 10: Final Competency Checklist
 
@@ -1698,7 +1698,7 @@ class TraceabilityMatrix {
     if (link) link.status = 'covered';
   }
   report(): { total: number; covered: number; gaps: string[] } {
-    const gaps = this.links.filter(l => l.status !== 'covered').map(l => `${l.reqId} â†’ ${l.testId} (${l.category})`);
+    const gaps = this.links.filter(l => l.status !== 'covered').map(l => `${l.reqId} → ${l.testId} (${l.category})`);
     return { total: this.links.length, covered: this.links.filter(l => l.status === 'covered').length, gaps };
   }
 }
@@ -1796,17 +1796,17 @@ console.log('Pipeline:', pipeline.verify([
 
 ## Summary
 
-This capstone chapter integrates all 15 preceding chapters into the development of SmartBuild, a construction project management system. The complete software engineering lifecycle is demonstrated: process selection (Scrum with 6 sprints), requirements specification (22 functional + 12 non-functional requirements, 10 use cases), architecture design (microservices, event-driven, CQRS, 4-layer), detailed design (domain model with 10+ entities), implementation (TypeScript with 8 microservices, Kafka, PostgreSQL, Redis), testing (unit, integration, contract, E2E, performance, security), quality management (CI/CD gates, quality dashboard, metrics), configuration management (Git, GitHub Actions, ArgoCD), security (threat model, SAST, SCA, DAST), risk management (probability Ã— impact matrix), and deployment (Docker Compose, Kubernetes, blue-green deployment). Each phase references the relevant chapter for deeper study. The final deliverable is a production-ready software system with full documentation â€” the culmination of all skills taught in this course.
+This capstone chapter integrates all 15 preceding chapters into the development of SmartBuild, a construction project management system. The complete software engineering lifecycle is demonstrated: process selection (Scrum with 6 sprints), requirements specification (22 functional + 12 non-functional requirements, 10 use cases), architecture design (microservices, event-driven, CQRS, 4-layer), detailed design (domain model with 10+ entities), implementation (TypeScript with 8 microservices, Kafka, PostgreSQL, Redis), testing (unit, integration, contract, E2E, performance, security), quality management (CI/CD gates, quality dashboard, metrics), configuration management (Git, GitHub Actions, ArgoCD), security (threat model, SAST, SCA, DAST), risk management (probability × impact matrix), and deployment (Docker Compose, Kubernetes, blue-green deployment). Each phase references the relevant chapter for deeper study. The final deliverable is a production-ready software system with full documentation — the culmination of all skills taught in this course.
 
 ## Practical Takeaways
 
-1. **Integrate from day one** â€” every phase of the lifecycle impacts every other; process selection affects requirements, which affects architecture, which affects testing, which affects deployment
-2. **Traceability is the backbone of professional software engineering** â€” every requirement must trace to architecture decisions, design elements, code modules, and test cases
-3. **CI/CD is not optional** â€” automated pipelines enforce quality gates and catch integration issues before they reach production
-4. **Event-driven architecture enables loose coupling** â€” Kafka decouples services and provides durable event sourcing
-5. **Blue-green deployment eliminates downtime** â€” switching traffic between identical environments enables zero-downtime releases with instant rollback
-6. **Risk management is continuous** â€” the risk matrix should be reviewed and updated every sprint, not created once and forgotten
-7. **Every architecture decision has trade-offs** â€” document ADRs with context, decision, and consequences for future engineers
+1. **Integrate from day one** — every phase of the lifecycle impacts every other; process selection affects requirements, which affects architecture, which affects testing, which affects deployment
+2. **Traceability is the backbone of professional software engineering** — every requirement must trace to architecture decisions, design elements, code modules, and test cases
+3. **CI/CD is not optional** — automated pipelines enforce quality gates and catch integration issues before they reach production
+4. **Event-driven architecture enables loose coupling** — Kafka decouples services and provides durable event sourcing
+5. **Blue-green deployment eliminates downtime** — switching traffic between identical environments enables zero-downtime releases with instant rollback
+6. **Risk management is continuous** — the risk matrix should be reviewed and updated every sprint, not created once and forgotten
+7. **Every architecture decision has trade-offs** — document ADRs with context, decision, and consequences for future engineers
 
 ## Chapter Quiz
 
@@ -1816,7 +1816,7 @@ This capstone chapter integrates all 15 preceding chapters into the development 
 - C) Distributed Locking
 - D) Single Database
 
-**Answer: B** â€” The Saga pattern with Kafka event sourcing coordinates multi-service transactions without blocking, ensuring eventual consistency.
+**Answer: B** — The Saga pattern with Kafka event sourcing coordinates multi-service transactions without blocking, ensuring eventual consistency.
 
 **Q2: What is the purpose of CQRS in the SmartBuild architecture?**
 - A) To reduce database storage costs
@@ -1824,7 +1824,7 @@ This capstone chapter integrates all 15 preceding chapters into the development 
 - C) To encrypt all data at rest
 - D) To replace REST APIs
 
-**Answer: B** â€” CQRS separates commands (writes to PostgreSQL) from queries (reads from ElasticSearch), allowing each to be optimised independently.
+**Answer: B** — CQRS separates commands (writes to PostgreSQL) from queries (reads from ElasticSearch), allowing each to be optimised independently.
 
 **Q3: In the blue-green deployment strategy, what happens if health checks fail on the new environment?**
 - A) The deployment continues anyway
@@ -1832,7 +1832,7 @@ This capstone chapter integrates all 15 preceding chapters into the development 
 - C) The pipeline pauses for manual approval
 - D) Both environments are taken offline
 
-**Answer: B** â€” If health checks fail, traffic remains on the previous (stable) environment, and the deployment is aborted with a rollback.
+**Answer: B** — If health checks fail, traffic remains on the previous (stable) environment, and the deployment is aborted with a rollback.
 
 **Q4: How many functional requirements are defined in the SmartBuild SRS?**
 - A) 10
@@ -1840,7 +1840,7 @@ This capstone chapter integrates all 15 preceding chapters into the development 
 - C) 22
 - D) 30
 
-**Answer: C** â€” The SRS defines 22 functional requirements (FR-01 through FR-22).
+**Answer: C** — The SRS defines 22 functional requirements (FR-01 through FR-22).
 
 **Q5: What is the risk response strategy for R-02 (ERP integration complexity) in the risk matrix?**
 - A) Accept
@@ -1848,7 +1848,7 @@ This capstone chapter integrates all 15 preceding chapters into the development 
 - C) Mitigate
 - D) Avoid
 
-**Answer: C** â€” The risk is mitigated through API-first design, adapter pattern, and contract testing.
+**Answer: C** — The risk is mitigated through API-first design, adapter pattern, and contract testing.
 
 **Q6: Which layer is NOT part of the 4-layer architecture?**
 - A) Presentation
@@ -1856,7 +1856,7 @@ This capstone chapter integrates all 15 preceding chapters into the development 
 - C) Domain/Service
 - D) Security
 
-**Answer: D** â€” The four layers are Presentation, API/Application, Domain/Service, and Infrastructure/Data. Security cross-cuts all layers.
+**Answer: D** — The four layers are Presentation, API/Application, Domain/Service, and Infrastructure/Data. Security cross-cuts all layers.
 
 **Q7: What Kafka topic would a budget change event be published to?**
 - A) sb.budget.updated
@@ -1864,7 +1864,7 @@ This capstone chapter integrates all 15 preceding chapters into the development 
 - C) sb.events
 - D) smartbuild-all
 
-**Answer: A** â€” Events follow the format `{topicPrefix}.{domain}.{action}`, so budget updates go to `sb.budget.updated`.
+**Answer: A** — Events follow the format `{topicPrefix}.{domain}.{action}`, so budget updates go to `sb.budget.updated`.
 
 ## Exercises
 

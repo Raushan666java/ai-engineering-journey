@@ -1,4 +1,4 @@
-﻿# Chapter 8: Properties of Context-Free Languages
+# Chapter 8: Properties of Context-Free Languages
 
 > **Previous:** [Pushdown Automata](./07-pda.md) | **Next:** [Turing Machines](./09-turing.md)
 
@@ -40,7 +40,7 @@
 | Pumping Lemma for CFL | Two pumpable substrings v and y | Proves languages not context-free |
 | CNF | A ? BC or A ? a | Enables CYK parsing algorithm |
 | GNF | A ? aa (terminal first) | Simplifies PDA construction |
-| CYK Algorithm | O(nÂ³) CFG parsing | Practical membership testing |
+| CYK Algorithm | O(n³) CFG parsing | Practical membership testing |
 | Closure | CFLs closed under ?, concat, *; not n | Explains limits of CFGs |
 
 
@@ -63,25 +63,25 @@ flowchart LR
 ### 7.1 Pumping Lemma for Context-Free Languages
 
 
-Just as regular languages have a pumping lemma, context-free languages have one too â†’ but it's more complex because derivation trees provide two pumpable subtrees.
+Just as regular languages have a pumping lemma, context-free languages have one too → but it's more complex because derivation trees provide two pumpable subtrees.
 
 **Pumping Lemma for CFLs:**
 
-If L is a CFL, then there exists an integer **p Ã¢â€°Â¥ 1** (the pumping length) such that every string s Ã¢Ë†Ë† L with |s| Ã¢â€°Â¥ p can be written as s = uvxyz satisfying:
+If L is a CFL, then there exists an integer **p ≥ 1** (the pumping length) such that every string s ∈ L with |s| ≥ p can be written as s = uvxyz satisfying:
 
-1. uvÃ¢ÂÂ±xyÃ¢ÂÂ±z Ã¢Ë†Ë† L for all i Ã¢â€°Â¥ 0.
-2. |vy| Ã¢â€°Â¥ 1 (v and y are not both empty).
-3. |vxy| Ã¢â€°Â¤ p (the pumpable part is bounded in length).
+1. uvⁱxyⁱz ∈ L for all i ≥ 0.
+2. |vy| ≥ 1 (v and y are not both empty).
+3. |vxy| ≤ p (the pumpable part is bounded in length).
 
 **Proof sketch:** If L is a CFL, there is a CFG G in Chomsky Normal Form for L. The parse tree for a sufficiently long string has a path of length > |V|. By the pigeonhole principle, some variable repeats on this path. The two occurrences define two pumpable subtrees corresponding to v and y.
 
 ### 7.2 Ogden's Lemma
 
 
-Ogden's lemma strengthens the pumping lemma by allowing us to "mark" certain positions in the string and guarantee that the pumpable part contains marked positions. This is useful for languages where the basic pumping lemma's constraint |vxy| Ã¢â€°Â¤ p is too restrictive.
+Ogden's lemma strengthens the pumping lemma by allowing us to "mark" certain positions in the string and guarantee that the pumpable part contains marked positions. This is useful for languages where the basic pumping lemma's constraint |vxy| ≤ p is too restrictive.
 
-**Ogden's Lemma:** If L is a CFL, there exists p such that for any s Ã¢Ë†Ë† L with Ã¢â€°Â¥ p marked positions, s = uvxyz satisfying:
-1. uvÃ¢ÂÂ±xyÃ¢ÂÂ±z Ã¢Ë†Ë† L for all i Ã¢â€°Â¥ 0.
+**Ogden's Lemma:** If L is a CFL, there exists p such that for any s ∈ L with ≥ p marked positions, s = uvxyz satisfying:
+1. uvⁱxyⁱz ∈ L for all i ≥ 0.
 2. v or y has at least one marked position.
 3. vxy has at most p marked positions.
 
@@ -92,18 +92,18 @@ Context-free languages are closed under:
 
 | Operation | Closure? | Construction |
 |-----------|----------|-------------|
-| Union | Yes | S â†’ SÃ¢â€šÂ | SÃ¢â€šâ€š |
-| Concatenation | Yes | S â†’ SÃ¢â€šÂSÃ¢â€šâ€š |
-| Kleene star | Yes | S â†’ SÃ¢â€šÂS | ÃŽÂµ |
+| Union | Yes | S → S₁ | S₂ |
+| Concatenation | Yes | S → S₁S₂ |
+| Kleene star | Yes | S → S₁S | ε |
 | Reversal | Yes | Reverse each RHS |
 | Homomorphism | Yes | Replace terminals in productions |
-| Intersection with regular language | Yes | PDA Ãƒâ€” DFA product |
+| Intersection with regular language | Yes | PDA × DFA product |
 
 CFLs are **NOT** closed under:
 
 | Operation | Counterexample |
 |-----------|---------------|
-| Intersection | { aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¡ÂµÂ } Ã¢Ë†Â© { aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¡ÂµÂ } = { aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢ÂÂ¿ } (not CFL) |
+| Intersection | { aⁿbⁿcᵐ } ∩ { aⁿbᵐcᵐ } = { aⁿbⁿcⁿ } (not CFL) |
 | Complement | Follows from non-closure under intersection |
 | Difference | Follows from non-closure under complement |
 
@@ -111,17 +111,17 @@ CFLs are **NOT** closed under:
 
 
 A CFG is in **Chomsky Normal Form** if every production is of the form:
-- A â†’ BC (two non-terminals)
-- A â†’ a (terminal)
-- S â†’ ÃŽÂµ (only allowed for the start variable)
+- A → BC (two non-terminals)
+- A → a (terminal)
+- S → ε (only allowed for the start variable)
 
 **Conversion to CNF:**
 
-1. **Add new start variable** SÃ¢â€šâ‚¬ â†’ S.
-2. **Eliminate ÃŽÂµ-productions:** Remove nullable variables (those deriving ÃŽÂµ).
-3. **Eliminate unit productions:** Remove A â†’ B productions.
-4. **Convert long productions:** Replace A â†’ BÃ¢â€šÂBÃ¢â€šâ€šÃ¢â‚¬Â¦BÃ¢â€šâ€“ (k Ã¢â€°Â¥ 3) with A â†’ BÃ¢â€šÂCÃ¢â€šÂ, CÃ¢â€šÂ â†’ BÃ¢â€šâ€šCÃ¢â€šâ€š, Ã¢â‚¬Â¦, C_{k-2} â†’ B_{k-1}BÃ¢â€šâ€“.
-5. **Replace terminals in mixed productions:** For A â†’ bC, create new variable B with B â†’ b, then A â†’ BC.
+1. **Add new start variable** S₀ → S.
+2. **Eliminate ε-productions:** Remove nullable variables (those deriving ε).
+3. **Eliminate unit productions:** Remove A → B productions.
+4. **Convert long productions:** Replace A → B₁B₂…Bₖ (k ≥ 3) with A → B₁C₁, C₁ → B₂C₂, …, C_{k-2} → B_{k-1}Bₖ.
+5. **Replace terminals in mixed productions:** For A → bC, create new variable B with B → b, then A → BC.
 
 Every CFG can be converted to an equivalent grammar in CNF. The parse trees in CNF are binary trees, which is useful for the CYK algorithm.
 
@@ -129,8 +129,8 @@ Every CFG can be converted to an equivalent grammar in CNF. The parse trees in C
 
 
 A CFG is in **Greibach Normal Form** if every production is of the form:
-- A â†’ aÃŽÂ± (a terminal followed by a string of variables)
-- S â†’ ÃŽÂµ (allowed)
+- A → aα (a terminal followed by a string of variables)
+- S → ε (allowed)
 
 **Conversion to GNF:**
 1. Eliminate left recursion.
@@ -142,27 +142,27 @@ GNF is useful for constructing PDAs with a single state (where the PDA can deter
 ### 7.6 CYK Algorithm
 
 
-The **Cocke-Younger-Kasami (CYK) algorithm** determines whether a string w is generated by a given CFG in CNF. It uses dynamic programming in O(nÃ‚Â³) time where n = |w|.
+The **Cocke-Younger-Kasami (CYK) algorithm** determines whether a string w is generated by a given CFG in CNF. It uses dynamic programming in O(n³) time where n = |w|.
 
 **Algorithm:**
-Input: CFG G in CNF, string w = wÃ¢â€šÂwÃ¢â€šâ€šÃ¢â‚¬Â¦wÃ¢â€šâ„¢.
-Output: Whether w Ã¢Ë†Ë† L(G).
+Input: CFG G in CNF, string w = w₁w₂…wₙ.
+Output: Whether w ∈ L(G).
 
-1. Create a table T[i,j] = set of variables that can derive wÃ¡ÂµÂ¢Ã¢â‚¬Â¦wÃ¢Â±Â¼.
-2. For each i: T[i,i] = { A | A â†’ wÃ¡ÂµÂ¢ is a production }.
+1. Create a table T[i,j] = set of variables that can derive wᵢ…wⱼ.
+2. For each i: T[i,i] = { A | A → wᵢ is a production }.
 3. For length = 2 to n:
    For i = 1 to n-length+1:
      j = i + length - 1
      For k = i to j-1:
-       T[i,j] Ã¢Ë†Âª= { A | A â†’ BC, B Ã¢Ë†Ë† T[i,k], C Ã¢Ë†Ë† T[k+1,j] }
-4. Accept if S Ã¢Ë†Ë† T[1,n].
+       T[i,j] ∪= { A | A → BC, B ∈ T[i,k], C ∈ T[k+1,j] }
+4. Accept if S ∈ T[1,n].
 
 ### 7.7 Decision Properties of CFLs
 
 
 | Problem | Status | Notes |
 |---------|--------|-------|
-| Membership | Decidable (O(nÃ‚Â³)) | CYK algorithm |
+| Membership | Decidable (O(n³)) | CYK algorithm |
 | Emptiness | Decidable | Check if S generates a terminal string |
 | Finiteness | Decidable | Check for cycles in the derivation graph |
 | Equivalence | **Undecidable** | No algorithm exists |
@@ -172,78 +172,78 @@ Output: Whether w Ã¢Ë†Ë† L(G).
 
 ## Examples
 
-### Example 7.1: Pumping Lemma â†’ Prove L = { aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0 } is Not Context-Free
+### Example 7.1: Pumping Lemma → Prove L = { aⁿbⁿcⁿ | n ≥ 0 } is Not Context-Free
 
-**Proof:** Assume L is a CFL with pumping length p. Choose s = aÃ¡Âµâ€“bÃ¡Âµâ€“cÃ¡Âµâ€“ Ã¢Ë†Ë† L. By the pumping lemma, s = uvxyz with |vxy| Ã¢â€°Â¤ p and |vy| Ã¢â€°Â¥ 1.
+**Proof:** Assume L is a CFL with pumping length p. Choose s = aᵖbᵖcᵖ ∈ L. By the pumping lemma, s = uvxyz with |vxy| ≤ p and |vy| ≥ 1.
 
-Since |vxy| Ã¢â€°Â¤ p, vxy can contain at most two distinct symbols (it can't stretch across all three blocks aÃ¡Âµâ€“, bÃ¡Âµâ€“, cÃ¡Âµâ€“ simultaneously). Two cases:
+Since |vxy| ≤ p, vxy can contain at most two distinct symbols (it can't stretch across all three blocks aᵖ, bᵖ, cᵖ simultaneously). Two cases:
 
 1. vxy contains no c's: Then pumping up (i=2) adds more a's or b's but not c's, breaking the equality.
 2. vxy contains no a's: Then pumping up adds more b's or c's but not a's, breaking the equality.
 
-Either way, uvÃ‚Â²xyÃ‚Â²z Ã¢Ë†â€° L. Contradiction. Therefore L is not context-free.
+Either way, uv²xy²z ∉ L. Contradiction. Therefore L is not context-free.
 
-### Example 7.2: Pumping Lemma â†’ Prove L = { aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¡ÂµÂdÃ¡ÂµÂ | n, m Ã¢â€°Â¥ 0 } is Not Context-Free
+### Example 7.2: Pumping Lemma → Prove L = { aⁿbⁿcᵐdᵐ | n, m ≥ 0 } is Not Context-Free
 
-Actually, this IS context-free: S â†’ AB, A â†’ aAb | ÃŽÂµ, B â†’ cBd | ÃŽÂµ.
+Actually, this IS context-free: S → AB, A → aAb | ε, B → cBd | ε.
 
-But L = { aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢ÂÂ¿dÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0 } is not context-free. Proof similar to Example 7.1: choose s = aÃ¡Âµâ€“bÃ¡Âµâ€“cÃ¡Âµâ€“dÃ¡Âµâ€“. The pumpable part cannot cover all four symbols.
+But L = { aⁿbⁿcⁿdⁿ | n ≥ 0 } is not context-free. Proof similar to Example 7.1: choose s = aᵖbᵖcᵖdᵖ. The pumpable part cannot cover all four symbols.
 
 ### Example 7.3: Converting to Chomsky Normal Form
 
-Convert G: S â†’ aSb | ÃŽÂµ to CNF.
+Convert G: S → aSb | ε to CNF.
 
-**Step 1:** Add SÃ¢â€šâ‚¬ â†’ S.
+**Step 1:** Add S₀ → S.
 
-**Step 2:** Eliminate ÃŽÂµ-productions. S â†’ ÃŽÂµ is the only one (S is nullable).
+**Step 2:** Eliminate ε-productions. S → ε is the only one (S is nullable).
 - For each production containing S on RHS, add variants without S:
-  - S â†’ aSb becomes S â†’ aSb | ab
-  - SÃ¢â€šâ‚¬ â†’ S becomes SÃ¢â€šâ‚¬ â†’ S | ÃŽÂµ
+  - S → aSb becomes S → aSb | ab
+  - S₀ → S becomes S₀ → S | ε
 
-Grammar after: SÃ¢â€šâ‚¬ â†’ S | ÃŽÂµ, S â†’ aSb | ab.
+Grammar after: S₀ → S | ε, S → aSb | ab.
 
-**Step 3:** Eliminate unit productions: SÃ¢â€šâ‚¬ â†’ S (replace with SÃ¢â€šâ‚¬ â†’ aSb | ab | ÃŽÂµ).
+**Step 3:** Eliminate unit productions: S₀ → S (replace with S₀ → aSb | ab | ε).
 
-**Step 4:** Convert to CNF. Introduce A â†’ a, B â†’ b.
-- SÃ¢â€šâ‚¬ â†’ ASB | AB | ÃŽÂµ
-- S â†’ ASB | AB
-- A â†’ a
-- B â†’ b
+**Step 4:** Convert to CNF. Introduce A → a, B → b.
+- S₀ → ASB | AB | ε
+- S → ASB | AB
+- A → a
+- B → b
 
 Now replace ASB (three variables): introduce C.
-- SÃ¢â€šâ‚¬ â†’ A C | AB | ÃŽÂµ
-- S â†’ A C | AB
-- C â†’ SB
-- A â†’ a
-- B â†’ b
+- S₀ → A C | AB | ε
+- S → A C | AB
+- C → SB
+- A → a
+- B → b
 
 Final CNF grammar.
 
 ### Example 7.4: CYK Algorithm
 
 Test if "aabb" is generated by:
-- S â†’ AB | BC
-- A â†’ BA | a
-- B â†’ CC | b
-- C â†’ AB | a
+- S → AB | BC
+- A → BA | a
+- B → CC | b
+- C → AB | a
 
 **Table T:**
 
 | Cell | Content | How |
 |------|---------|-----|
-| T[1,1] | {A, C} | A â†’ a, C â†’ a |
-| T[2,2] | {B} | B â†’ b |
-| T[3,3] | {B} | B â†’ b |
-| T[4,4] | {A, C} | A â†’ a, C â†’ a |
-| T[1,2] | {S} | S â†’ AB with AÃ¢Ë†Ë†T[1,1], BÃ¢Ë†Ë†T[2,2] |
-| T[2,3] | {A} | A â†’ BA with BÃ¢Ë†Ë†T[2,2], AÃ¢Ë†Ë†T[3,3]... actually no. Let's compute: A â†’ BA, BÃ¢Ë†Ë†T[2,2]={B}, AÃ¢Ë†Ë†T[3,3]={B} â†’ BÃ¢Ë†â€°{B} so no. S â†’ BC: BÃ¢Ë†Ë†T[2,2]={B}, CÃ¢Ë†Ë†T[3,3]={B} â†’ no. S â†’ AB: AÃ¢Ë†Ë†T[2,2]={B}, BÃ¢Ë†Ë†T[3,3]={B} â†’ no. So T[2,3] = Ã¢Ë†â€¦. Actually wait, we need to check all productions. Let me re-examine: |
-| T[3,4] | {S} | S â†’ AB, AÃ¢Ë†Ë†T[3,3]={B}... BÃ¢Ë†â€°{B}? No, AÃ¢Ë†â€°{B}. T[3,4] with k=3: {B}Ãƒâ€”{A,C} â†’ no match for any production. Hmm. Let me just show the concept without getting into the weeds. |
+| T[1,1] | {A, C} | A → a, C → a |
+| T[2,2] | {B} | B → b |
+| T[3,3] | {B} | B → b |
+| T[4,4] | {A, C} | A → a, C → a |
+| T[1,2] | {S} | S → AB with A∈T[1,1], B∈T[2,2] |
+| T[2,3] | {A} | A → BA with B∈T[2,2], A∈T[3,3]... actually no. Let's compute: A → BA, B∈T[2,2]={B}, A∈T[3,3]={B} → B∉{B} so no. S → BC: B∈T[2,2]={B}, C∈T[3,3]={B} → no. S → AB: A∈T[2,2]={B}, B∈T[3,3]={B} → no. So T[2,3] = ∅. Actually wait, we need to check all productions. Let me re-examine: |
+| T[3,4] | {S} | S → AB, A∈T[3,3]={B}... B∉{B}? No, A∉{B}. T[3,4] with k=3: {B}×{A,C} → no match for any production. Hmm. Let me just show the concept without getting into the weeds. |
 
-This demonstrates why CYK is O(nÃ‚Â³): we need to try all k between i and j-1 for each cell.
+This demonstrates why CYK is O(n³): we need to try all k between i and j-1 for each cell.
 
 ### Example 7.5: Closure Under Intersection with Regular Languages
 
-Given CFG G for L_C and DFA M for L_R, construct PDA P for L_C Ã¢Ë†Â© L_R.
+Given CFG G for L_C and DFA M for L_R, construct PDA P for L_C ∩ L_R.
 
 The key idea: simulate both the PDA for L_C and the DFA for L_R simultaneously. The stack handles the CFL part; the state tracks the DFA's state. Since we're integrating the DFA's state into the PDA's state, the product is still a PDA.
 
@@ -262,7 +262,7 @@ This construction works because the DFA's finite memory can be absorbed into the
 | CFL Property | Status | Method |
 |-------------|--------|--------|
 | Pumping lemma | Necessary condition | Prove non-CFL |
-| Membership | Decidable O(nÂ³) | CYK algorithm |
+| Membership | Decidable O(n³) | CYK algorithm |
 | Emptiness | Decidable | Reachability |
 | Equivalence | Undecidable | No algorithm |
 | Ambiguity | Undecidable | No algorithm |
@@ -291,13 +291,13 @@ This construction works because the DFA's finite memory can be absorbed into the
 
 **Q2.** CYK algorithm runs in:
 - A) O(n)
-- B) O(nÂ²)
-- C) O(nÂ³) ?
+- B) O(n²)
+- C) O(n³) ?
 - D) O(2n)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**C)** CYK uses dynamic programming with O(nÂ³) time and O(nÂ²) space.
+**C)** CYK uses dynamic programming with O(n³) time and O(n²) space.
 </details>
 
 **Q3.** CFLs are NOT closed under:
@@ -319,7 +319,7 @@ This construction works because the DFA's finite memory can be absorbed into the
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B)** uv?xy?z â€” two substrings v and y can be pumped independently.
+**B)** uv?xy?z — two substrings v and y can be pumped independently.
 </details>
 
 **Q5.** GNF requires each production to start with:
@@ -337,11 +337,11 @@ This construction works because the DFA's finite memory can be absorbed into the
 
 1. **Normal forms are parsing prerequisites.** Before applying any parsing algorithm (CYK, Earley, LR), convert the grammar to CNF or GNF. This standardization simplifies implementation and guarantees correctness.
 
-2. **Closure properties determine language class membership.** If a language is the intersection of two CFLs and you need to recognize it, you'll need a context-sensitive grammar or accept using a Turing machine â€” CFL intersection is not context-free.
+2. **Closure properties determine language class membership.** If a language is the intersection of two CFLs and you need to recognize it, you'll need a context-sensitive grammar or accept using a Turing machine — CFL intersection is not context-free.
 
 3. **Undecidability starts with CFLs.** While many regular language problems are decidable, CFL equivalence and ambiguity are undecidable. When designing programming languages, ambiguity must be proven manually, not automatically.
 
-4. **The CYK algorithm is a practical parser.** With O(nÂ³) time and O(nÂ²) space, CYK is one of the most practical general CFG parsing algorithms. It handles all context-free grammars without restriction.
+4. **The CYK algorithm is a practical parser.** With O(n³) time and O(n²) space, CYK is one of the most practical general CFG parsing algorithms. It handles all context-free grammars without restriction.
 
 ## TypeScript Implementation: CFL Pumping Lemma Checker and Closure Verifier
 
@@ -381,14 +381,14 @@ class CFLPumpingLemma {
               witness: s,
               proof: [
                 `Found decomposition: u=${u}, v=${v}, x=${x}, y=${y}, z=${z}`,
-                `uvÂ°xyÂ°z = "${pumped0}" ? L`, `uvÂ²xyÂ²z = "${pumped2}" ? L`
+                `uv°xy°z = "${pumped0}" ? L`, `uv²xy²z = "${pumped2}" ? L`
               ]
             };
           }
         }
       }
     }
-    return { canPump: false, proof: ["No pumpable decomposition found â€” likely not CFL"] };
+    return { canPump: false, proof: ["No pumpable decomposition found — likely not CFL"] };
   }
 
   static proveNonCFL(languageName: string,
@@ -412,7 +412,7 @@ class CFLPumpingLemma {
           const pumped2 = u + v + v + x + y + y + z;
           if (!language(pumped2)) {
             proof.push(`Split: u=${u}, v=${v}, x=${x}, y=${y}, z=${z}`);
-            proof.push(`uvÂ²xyÂ²z = "${pumped2}" ? ${languageName} ? contradiction.`);
+            proof.push(`uv²xy²z = "${pumped2}" ? ${languageName} ? contradiction.`);
             return proof;
           }
         }
@@ -476,7 +476,7 @@ console.log(intersect("aaabbb")); // false (odd length)
 ```
 
 // -----------------------------------------------------
-// CFL Closure Property Tester â€” verifies whether
+// CFL Closure Property Tester — verifies whether
 // CFLs are closed under various operations by
 // checking known closure properties programmatically.
 // -----------------------------------------------------
@@ -521,17 +521,17 @@ class CFLClosureTester {
       "",
       "  L1 = {anbn | n = 0}  (CFL)",
       "  L2 = {bncn | n = 0}  (CFL)",
-      "  L1 n L2 = {bn | n = 0}  (still CFL â€” intersection of two CFLs happens to be CFL here)",
+      "  L1 n L2 = {bn | n = 0}  (still CFL — intersection of two CFLs happens to be CFL here)",
       "",
       "  L1 = {anbnc? | n,m = 0}  (CFL)",
       "  L2 = {anb?c? | n,m = 0}  (CFL)",
-      "  L1 n L2 = {anbncn | n = 0}  (NOT CFL â€” canonical non-CFL example)"
+      "  L1 n L2 = {anbncn | n = 0}  (NOT CFL — canonical non-CFL example)"
     ];
   }
 }
 
 // -----------------------------------------------------
-// CFL Ambiguty Checker â€” tests whether a grammar in CNF
+// CFL Ambiguty Checker — tests whether a grammar in CNF
 // has multiple parse trees for any derived string by
 // enumerating all parse trees for short strings.
 // -----------------------------------------------------
@@ -663,30 +663,30 @@ export { Processor, Task }
 - CFLs are NOT closed under intersection or complement.
 - Chomsky Normal Form restricts productions to A ? BC or A ? a (plus S ? e).
 - Greibach Normal Form restricts productions to A ? aa (terminal first).
-- The CYK algorithm parses any CFG in CNF in O(nÂ³) time.
+- The CYK algorithm parses any CFG in CNF in O(n³) time.
 - Several important problems (equivalence, ambiguity) are undecidable for CFLs.
 
 ## Exercises
 
 ### Basic
 
-1. Prove that { aÃ¢ÂÂ¿bÃ¢ÂÂ¿aÃ¢ÂÂ¿bÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0 } is not context-free.
-2. Convert S â†’ aS | Sb | ÃŽÂµ to CNF.
-3. Convert S â†’ AB, A â†’ aAb | ÃŽÂµ, B â†’ cBd | ÃŽÂµ to GNF.
-4. Use CYK to determine if "baaba" is generated by S â†’ AB, A â†’ a | BA, B â†’ b | BC, C â†’ a | AB.
+1. Prove that { aⁿbⁿaⁿbⁿ | n ≥ 0 } is not context-free.
+2. Convert S → aS | Sb | ε to CNF.
+3. Convert S → AB, A → aAb | ε, B → cBd | ε to GNF.
+4. Use CYK to determine if "baaba" is generated by S → AB, A → a | BA, B → b | BC, C → a | AB.
 5. Prove that the regular language { a,b }* is context-free by giving a CFG.
 
 ### Intermediate
 
-6. Prove that L = { aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¢ÂÂ¿dÃ¡ÂµÂ | n, m Ã¢â€°Â¥ 0 } is context-free by giving a grammar. Then prove { aÃ¢ÂÂ¿bÃ¢ÂÂ¿cÃ¢ÂÂ¿dÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0 } is not context-free.
-7. Use Ogden's lemma to prove { aÃ¢ÂÂ¿bÃ¡ÂµÂcÃ¡ÂµÂ | n, m, k Ã¢â€°Â¥ 0, n = m or n = k } is not context-free (note: this language IS context-free â†’ find the flaw in this proof attempt, or find the actual non-CFL to test Ogden's on).
+6. Prove that L = { aⁿbᵐcⁿdᵐ | n, m ≥ 0 } is context-free by giving a grammar. Then prove { aⁿbⁿcⁿdⁿ | n ≥ 0 } is not context-free.
+7. Use Ogden's lemma to prove { aⁿbᵐcᵏ | n, m, k ≥ 0, n = m or n = k } is not context-free (note: this language IS context-free → find the flaw in this proof attempt, or find the actual non-CFL to test Ogden's on).
 8. Show that CFLs are closed under reversal by constructing a new CFG.
-9. Show that the language { w Ã¢Ë†Ë† {a,b,c}* | |w|Ã¢â€šÂ = |w|_b = |w|_c } is not context-free.
-10. Convert the expression grammar E â†’ E+T | T, T â†’ T*F | F, F â†’ (E) | i to CNF.
+9. Show that the language { w ∈ {a,b,c}* | |w|ₐ = |w|_b = |w|_c } is not context-free.
+10. Convert the expression grammar E → E+T | T, T → T*F | F, F → (E) | i to CNF.
 
 ### Advanced
 
-11. Prove that the CYK algorithm runs in O(nÂ³) time and O(nÂ²) space.
+11. Prove that the CYK algorithm runs in O(n³) time and O(n²) space.
 12. Show that { a^p | p is prime } is not context-free.
 13. Prove that if L is a CFL and R is regular, then L - R is a CFL.
 14. Show that the grammar S -> aSb | aSbb | epsilon is inherently ambiguous by finding a string with two distinct parse trees.
@@ -764,9 +764,9 @@ graph TD
         T22 --- T33["T[3,3] = {B}<br/>w3=b"]
         T33 --- T44["T[4,4] = {A,C}<br/>w4=a"]
         
-        T12["T[1,2] = {S}<br/>AB from T[1,1]Ã—T[2,2]"]
+        T12["T[1,2] = {S}<br/>AB from T[1,1]×T[2,2]"]
         T23["T[2,3]"]
-        T34["T[3,4] = {S}<br/>AB from T[3,3]Ã—T[4,4]"]
+        T34["T[3,4] = {S}<br/>AB from T[3,3]×T[4,4]"]
         
         T13["T[1,3]"]
         T24["T[2,4]"]
@@ -854,10 +854,10 @@ For context-free languages, several important questions are **decidable**, but o
 
 | Problem | Algorithm | Complexity |
 |---------|-----------|------------|
-| **Membership** | CYK / Earley parsing | O(nÂ³) / O(nÂ²) |
+| **Membership** | CYK / Earley parsing | O(n³) / O(n²) |
 | **Emptiness** | Graph reachability from start variable | O(\|G\|) |
 | **Finiteness** | Cycle detection in dependency graph | O(\|G\|) |
-| **Non-emptiness of intersection with RL** | Product construction | O(\|G\| Ã— \|D\|) |
+| **Non-emptiness of intersection with RL** | Product construction | O(\|G\| × \|D\|) |
 
 ### Undecidable Problems
 
@@ -866,7 +866,7 @@ For context-free languages, several important questions are **decidable**, but o
 | **Equivalence** | Given two CFGs G1, G2, is L(G1) = L(G2)? |
 | **Ambiguity** | Is a given CFG inherently ambiguous? |
 | **Universality** | Does a CFG generate all possible strings? |
-| **Intersection emptiness** | Given two CFGs, is L(G1) n L(G2) = Ã˜? |
+| **Intersection emptiness** | Given two CFGs, is L(G1) n L(G2) = Ø? |
 | **Inclusion** | Is L(G1) ? L(G2)? |
 
 ### TypeScript: Membership and Emptiness Checker
@@ -959,11 +959,11 @@ Parikh's theorem is a powerful result that relates context-free languages to reg
 
 ### Implications
 
-1. **CFLs and counting:** CFLs cannot distinguish all counting patterns â€” only a restricted class of counting constraints (those expressible as semilinear sets).
+1. **CFLs and counting:** CFLs cannot distinguish all counting patterns — only a restricted class of counting constraints (those expressible as semilinear sets).
 
 2. **Non-CFL by Parikh:** If a language's Parikh image is not semilinear, it cannot be context-free. For example, \(\Psi(\{ a^{n^2} \}) = \{(n^2)\}\) is not semilinear, proving \(\{ a^{n^2} \}\) is not context-free without using the pumping lemma.
 
-3. **Ogmden's lemma vs. Parikh:** Ogden's lemma detects non-context-freeness that Parikh cannot. For example, \(\{ a^n b^m c^n d^m \}\) has a semilinear Parikh image but is not context-free â€” Ogden's lemma catches this where Parikh does not.
+3. **Ogmden's lemma vs. Parikh:** Ogden's lemma detects non-context-freeness that Parikh cannot. For example, \(\{ a^n b^m c^n d^m \}\) has a semilinear Parikh image but is not context-free — Ogden's lemma catches this where Parikh does not.
 
 ### TypeScript: Parikh Vector Computations
 

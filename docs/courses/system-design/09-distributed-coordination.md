@@ -1,4 +1,4 @@
-﻿# Chapter 9: Distributed Coordination and Service Discovery
+# Chapter 9: Distributed Coordination and Service Discovery
 > **Previous:** [08 Microservices Apis](./08-microservices-apis.md) | **Next:** [10 Lld Solid Oop](./10-lld-solid-oop.md)
 
 ---
@@ -1161,14 +1161,14 @@ graph TD
 | ZooKeeper's Zab protocol provides linearizable writes via leader-based atomic broadcast | Use ZooKeeper when you need hierarchical namespace + watches (Kafka, HBase) |
 | Raft consensus is designed for understandability with explicit leader election and log replication | Use Raft (Etcd) for new systems; simpler implementation than Paxos or Zab |
 | Distributed locks require fencing tokens to prevent stale lock holder corruption | Always validate fencing tokens on the resource side; never trust lock expiry alone |
-| Phi-accrual failure detectors adapt to network conditions using statistical modeling | Configure phi thresholds based on observed heartbeat variance â€” higher variance needs higher thresholds |
+| Phi-accrual failure detectors adapt to network conditions using statistical modeling | Configure phi thresholds based on observed heartbeat variance — higher variance needs higher thresholds |
 | Coordination-free systems avoid consensus using CRDTs and idempotent operations | Prefer CRDTs (state-based or operation-based) for eventually consistent workloads that can tolerate staleness |
 
 ## Case Study
 
 **Kubernetes Cluster Coordination with Etcd**
 
-A SaaS company running 500+ microservices on Kubernetes experienced periodic API Server timeouts during Etcd leader elections. Their Etcd cluster (3 nodes) was co-located with Kubernetes control plane components. During a routine rolling update of the Kubernetes API Server, a network blip caused the Etcd leader to miss heartbeats â€” triggering a Raft election that took 800ms (above the typical 300-500ms). During this window, all API Server write operations failed, causing cascading failures: deployment controllers stalled, service registration lagged, and new pods failed to schedule.
+A SaaS company running 500+ microservices on Kubernetes experienced periodic API Server timeouts during Etcd leader elections. Their Etcd cluster (3 nodes) was co-located with Kubernetes control plane components. During a routine rolling update of the Kubernetes API Server, a network blip caused the Etcd leader to miss heartbeats — triggering a Raft election that took 800ms (above the typical 300-500ms). During this window, all API Server write operations failed, causing cascading failures: deployment controllers stalled, service registration lagged, and new pods failed to schedule.
 
 The root cause was identified as resource contention: Etcd nodes were competing for CPU with kube-apiserver and kube-scheduler on the same hosts. The team re-architected with dedicated Etcd nodes (c5.xlarge instances with gp3 SSDs), spread across 3 availability zones. They tuned Etcd's heartbeat interval from 100ms to 50ms and election timeout from 1000ms to 500ms. The leader election time dropped to under 200ms p99. They also implemented Etcd defragmentation (every 8 hours) to prevent the key-value store from exceeding the 100MB database size limit, which had caused OOM kills.
 
@@ -1193,12 +1193,12 @@ A second incident involved a split-brain scenario when the Etcd cluster lost its
 
 <details>
 <summary>Solution for Review Question 1</summary>
-ZooKeeper watches are one-shot â€” they fire once and must be re-registered. When the client disconnects, the watch remains registered on the server. On reconnect, ZooKeeper fires the watch to inform the client that it may have missed changes during the disconnection. This is a safety mechanism: ZooKeeper cannot guarantee that no changes occurred while the client was disconnected, so it fires the watch to force the client to re-read the data and re-register the watch. To design around this, always expect spurious watch firings â€” re-read the data on watch fire and check if an actual change occurred before taking action.
+ZooKeeper watches are one-shot — they fire once and must be re-registered. When the client disconnects, the watch remains registered on the server. On reconnect, ZooKeeper fires the watch to inform the client that it may have missed changes during the disconnection. This is a safety mechanism: ZooKeeper cannot guarantee that no changes occurred while the client was disconnected, so it fires the watch to force the client to re-read the data and re-register the watch. To design around this, always expect spurious watch firings — re-read the data on watch fire and check if an actual change occurred before taking action.
 </details>
 
 <details>
 <summary>Solution for Review Question 2</summary>
-The candidate (term 4) should immediately revert to follower and accept the AppendEntries from the leader (term 5). This is because the leader with term 5 has a higher term â€” Raft's safety property ensures that the leader with the highest term is the authoritative leader. The candidate's election is abandoned because its term is stale. This prevents two leaders from coexisting and ensures log consistency (election safety property).
+The candidate (term 4) should immediately revert to follower and accept the AppendEntries from the leader (term 5). This is because the leader with term 5 has a higher term — Raft's safety property ensures that the leader with the highest term is the authoritative leader. The candidate's election is abandoned because its term is stale. This prevents two leaders from coexisting and ensures log consistency (election safety property).
 </details>
 
 <details>
@@ -1208,24 +1208,24 @@ A fencing token is necessary because ZooKeeper ephemeral znodes alone do not pro
 
 <details>
 <summary>Solution for Review Question 4</summary>
-The herd effect occurs when the leader fails and **all** watching candidates receive a notification simultaneously. Each candidate then tries to create its own sequential znode and check if it has the lowest sequence â€” causing N simultaneous ZK operations. Sequential chaining mitigates this by having each candidate watch only its predecessor (the next lower sequence number). When the leader fails, only the candidate with the second-lowest sequence number is notified â€” it checks if it's now the minimum and becomes leader, or sets a watch on its new predecessor. This limits notifications to O(1) per failure instead of O(N).
+The herd effect occurs when the leader fails and **all** watching candidates receive a notification simultaneously. Each candidate then tries to create its own sequential znode and check if it has the lowest sequence — causing N simultaneous ZK operations. Sequential chaining mitigates this by having each candidate watch only its predecessor (the next lower sequence number). When the leader fails, only the candidate with the second-lowest sequence number is notified — it checks if it's now the minimum and becomes leader, or sets a watch on its new predecessor. This limits notifications to O(1) per failure instead of O(N).
 </details>
 
 ### Application Problems
 
 <details>
 <summary>Solution for Application Problem 1: ZooKeeper 10-Candidate Election</summary>
-Initial state: znodes `/election/node-000000001` through `node-000000010`. Process 1 (lowest seq) is leader. Processes 2-10 watch their predecessor (2 watches 1, 3 watches 2, ...). When process 1 crashes: (1) Its ephemeral znode `node-000000001` is deleted by ZK. (2) Process 2's watch fires because its predecessor (node-1) is deleted. (3) Process 2 creates a new ephemeral sequential znode (now `node-000000011` â€” because ZK sequence counter continues incrementing). (4) Process 2 checks: the new minimum is `node-000000002` (original process 2's znode). Process 2 becomes leader. **Total rounds: 1.** Worst-case time: 1 deletion notification + 1 create + 1 get-children = 3 operations Ã— 5ms = 15ms.
+Initial state: znodes `/election/node-000000001` through `node-000000010`. Process 1 (lowest seq) is leader. Processes 2-10 watch their predecessor (2 watches 1, 3 watches 2, ...). When process 1 crashes: (1) Its ephemeral znode `node-000000001` is deleted by ZK. (2) Process 2's watch fires because its predecessor (node-1) is deleted. (3) Process 2 creates a new ephemeral sequential znode (now `node-000000011` — because ZK sequence counter continues incrementing). (4) Process 2 checks: the new minimum is `node-000000002` (original process 2's znode). Process 2 becomes leader. **Total rounds: 1.** Worst-case time: 1 deletion notification + 1 create + 1 get-children = 3 operations × 5ms = 15ms.
 </details>
 
 <details>
 <summary>Solution for Application Problem 2: Raft Log Recovery</summary>
-Leader S1 wants to replicate index 5. It starts with `nextIndex[3] = 4`, `nextIndex[4] = 2`. **S3 (nextIndex=4):** S1 sends AppendEntries for index 4 (term 4, `set(w=4)`) with prevLogIndex=3, prevLogTerm=3. S3 has index 3 with term 3 â†’ match! S3 appends entry 4 and acks. nextIndex[3] becomes 5. **S4 (nextIndex=2):** S1 sends AppendEntries for index 2 (term 1, `set(y=2)`) with prevLogIndex=1, prevLogTerm=1. S4 has index 1 with term 1 â†’ match! S4 appends entry 2 (term 1). But S1 detects mismatch: it needs to send entries 3, 4, 5. nextIndex[4] stays at 2, decrementing... Actually Raft decrements nextIndex: S1 sends index 1 (prevLogIndex=0), S4 matches, then S1 appends entries 2, 3, 4, 5 one by one. NextIndex converges. **Rounds for S4:** ~3 rounds (decrement, match, replicate).
+Leader S1 wants to replicate index 5. It starts with `nextIndex[3] = 4`, `nextIndex[4] = 2`. **S3 (nextIndex=4):** S1 sends AppendEntries for index 4 (term 4, `set(w=4)`) with prevLogIndex=3, prevLogTerm=3. S3 has index 3 with term 3 → match! S3 appends entry 4 and acks. nextIndex[3] becomes 5. **S4 (nextIndex=2):** S1 sends AppendEntries for index 2 (term 1, `set(y=2)`) with prevLogIndex=1, prevLogTerm=1. S4 has index 1 with term 1 → match! S4 appends entry 2 (term 1). But S1 detects mismatch: it needs to send entries 3, 4, 5. nextIndex[4] stays at 2, decrementing... Actually Raft decrements nextIndex: S1 sends index 1 (prevLogIndex=0), S4 matches, then S1 appends entries 2, 3, 4, 5 one by one. NextIndex converges. **Rounds for S4:** ~3 rounds (decrement, match, replicate).
 </details>
 
 <details>
 <summary>Solution for Application Problem 3: Phi-Accrual Threshold</summary>
-Mean 100ms, std 20ms. To detect within 500ms: compute P(gap >= 500ms) under normal distribution. Z = (500-100)/20 = 20 standard deviations. P(Z >= 20) is virtually 0 (< 1e-88). phi = -log10(1e-88) â‰ˆ 88. **Threshold: phi = 5** (corresponds to ~400ms gap: Z = (400-100)/20 = 15, P â‰ˆ 1e-50, phi = 50 â€” extremely improbable). In practice, with phi=5: a gap of 100 + 5*20 = 200ms would trigger suspicion (phi ~= -log10(P(Z >= 5)) = -log10(2.87e-7) â‰ˆ 6.5). For < 1% false positives at 500ms, phi threshold of 3-5 is safe.
+Mean 100ms, std 20ms. To detect within 500ms: compute P(gap >= 500ms) under normal distribution. Z = (500-100)/20 = 20 standard deviations. P(Z >= 20) is virtually 0 (< 1e-88). phi = -log10(1e-88) ≈ 88. **Threshold: phi = 5** (corresponds to ~400ms gap: Z = (400-100)/20 = 15, P ≈ 1e-50, phi = 50 — extremely improbable). In practice, with phi=5: a gap of 100 + 5*20 = 200ms would trigger suspicion (phi ~= -log10(P(Z >= 5)) = -log10(2.87e-7) ≈ 6.5). For < 1% false positives at 500ms, phi threshold of 3-5 is safe.
 </details>
 
 ### Challenge Problem
@@ -1234,7 +1234,7 @@ Mean 100ms, std 20ms. To detect within 500ms: compute P(gap >= 500ms) under norm
 
 <details>
 <summary>Solution: Global Leader Election System</summary>
-**1. Architecture: Etcd** â€” best fit for new systems with Raft consensus, simple API, watch streaming. Paxos too complex; Zab tied to ZooKeeper. **2. Topology:** 5 Etcd nodes per region (15 total). Quorum size = 8 (majority of 15). Leader preference: primary region (US-East) gets priority via lower election timeout. Region failure: remaining 2 regions (10 nodes) still have quorum (6 needed). **3. Leader election pseudocode:** Use Etcd's built-in Raft election. Implement lease-based leadership: candidate creates `/election/leader` with TTL=3s, refreshes via heartbeat. On leader failure, lease expires, other candidates race to acquire. **4. Latency:** Election (US-East fails): 2 RTTs to EU-West = 60ms + 2 to Asia-Pacific = 300ms = ~360ms p99. Query from Asia-Pacific: read from local Etcd follower (0-2ms) or forward to leader (150ms). **5. Failure handling:** All US-East nodes fail â†’ quorum still exists in EU-West + Asia-Pacific. Link severed between US-East and EU-West â†’ US-East becomes partitioned and cannot form quorum alone (5 < 8), EU-West + Asia-Pacific (10 nodes) maintain quorum. Throttling: jitter election timeouts (150-300ms randomized).
+**1. Architecture: Etcd** — best fit for new systems with Raft consensus, simple API, watch streaming. Paxos too complex; Zab tied to ZooKeeper. **2. Topology:** 5 Etcd nodes per region (15 total). Quorum size = 8 (majority of 15). Leader preference: primary region (US-East) gets priority via lower election timeout. Region failure: remaining 2 regions (10 nodes) still have quorum (6 needed). **3. Leader election pseudocode:** Use Etcd's built-in Raft election. Implement lease-based leadership: candidate creates `/election/leader` with TTL=3s, refreshes via heartbeat. On leader failure, lease expires, other candidates race to acquire. **4. Latency:** Election (US-East fails): 2 RTTs to EU-West = 60ms + 2 to Asia-Pacific = 300ms = ~360ms p99. Query from Asia-Pacific: read from local Etcd follower (0-2ms) or forward to leader (150ms). **5. Failure handling:** All US-East nodes fail → quorum still exists in EU-West + Asia-Pacific. Link severed between US-East and EU-West → US-East becomes partitioned and cannot form quorum alone (5 < 8), EU-West + Asia-Pacific (10 nodes) maintain quorum. Throttling: jitter election timeouts (150-300ms randomized).
 </details>
 
 ---

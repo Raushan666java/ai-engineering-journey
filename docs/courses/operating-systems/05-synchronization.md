@@ -1,4 +1,4 @@
-﻿# Chapter 5: Process Synchronization
+# Chapter 5: Process Synchronization
 
 **<< [Threads](./04-threads.md)** | [**Next: Semaphores and Monitors**](./06-semaphores-monitors.md) >>
 
@@ -67,10 +67,10 @@ A **race condition** occurs when multiple processes or threads access shared dat
 
 ```
 ATM 1 (left)                    ATM 2 (right)
-â”œâ”€â”€ Check balance: $1000        â”œâ”€â”€ Check balance: $1000
-â”œâ”€â”€ Deduct $800 â†’ $200          â”œâ”€â”€ Deduct $800 â†’ $200
-â”œâ”€â”€ Write new balance: $200     â”œâ”€â”€ Write new balance: $200
-â””â”€â”€ Dispense cash               â””â”€â”€ Dispense cash
+├── Check balance: $1000        ├── Check balance: $1000
+├── Deduct $800 → $200          ├── Deduct $800 → $200
+├── Write new balance: $200     ├── Write new balance: $200
+└── Dispense cash               └── Dispense cash
 ```
 
 **Result**: Both ATMs dispense $800, but the final balance is $200 instead of -$600. The bank lost $600 because each ATM read the balance before the other wrote its update. This is a race condition in the real world.
@@ -79,9 +79,9 @@ ATM 1 (left)                    ATM 2 (right)
 
 1. Thread A loads shared variable `counter` from memory into register (value = 5)
 2. Thread A increments register (value = 6)
-3. **Context switch** â†’ Thread B loads `counter` from memory (value = 5 â€” stale!)
+3. **Context switch** → Thread B loads `counter` from memory (value = 5 — stale!)
 4. Thread B increments register (value = 6)
-5. **Context switch** â†’ Thread A stores register to `counter` (counter = 6)
+5. **Context switch** → Thread A stores register to `counter` (counter = 6)
 6. Thread B stores register to `counter` (counter = 6)
 
 **Final value**: 6 instead of 7. One increment is lost.
@@ -105,7 +105,7 @@ function increment():
 #include <thread>
 #include <vector>
 
-int counter = 0;  // UNSYNCHRONIZED â€” shared global
+int counter = 0;  // UNSYNCHRONIZED — shared global
 
 void increment(int iterations) {
     for (int i = 0; i < iterations; ++i) {
@@ -158,15 +158,15 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 |------|--------|--------|-----------------:|-----------------:|-------|
 | 1 | A | LOAD counter | 5 | 5 | |
 | 2 | A | INCREMENT | 6 | 5 | |
-| 3 | Aâ†’B | Context switch | â€” | 5 | |
+| 3 | A→B | Context switch | — | 5 | |
 | 4 | B | LOAD counter | 5 | 5 | **Stale read!** |
 | 5 | B | INCREMENT | 6 | 5 | |
 | 6 | B | STORE | 6 | **6** | |
 | 7 | B | LOAD counter | 6 | 6 | |
 | 8 | B | INCREMENT | 7 | 6 | |
-| 9 | B | STORE | â€” | **7** | |
-| 10 | Bâ†’A | Context switch | â€” | 7 | |
-| 11 | A | STORE (old reg=6) | â€” | **6** | **Overwrites B's work!** |
+| 9 | B | STORE | — | **7** | |
+| 10 | B→A | Context switch | — | 7 | |
+| 11 | A | STORE (old reg=6) | — | **6** | **Overwrites B's work!** |
 | **FINAL** | | | | **6** (expected: 7) | **One increment lost** |
 
 ### Complexity Analysis
@@ -185,9 +185,9 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 |------------|--------------|
 | Zero synchronization overhead (when race doesn't trigger) | Non-deterministic results |
 | Maximum throughput in uncontended scenarios | Extremely hard to reproduce and debug |
-| Simple code (no lock primitives) | Heisenbugs â€” disappear under debugger |
+| Simple code (no lock primitives) | Heisenbugs — disappear under debugger |
 | | Results may vary across runs, CPUs, and load levels |
-| | Security risk â€” race windows can be exploited |
+| | Security risk — race windows can be exploited |
 
 ### Edge Cases
 
@@ -207,15 +207,15 @@ These terms are often confused but are technically distinct:
 | Dimension | Race Condition | Data Race |
 |-----------|---------------|-----------|
 | **Definition** | A timing-dependent error where the output depends on the uncontrolled order of execution | Two or more threads concurrently access the same memory location, at least one is a write, and there is no synchronization |
-| **Scope** | Logical / semantic â€” about program correctness | Hardware / memory model â€” about low-level memory access |
+| **Scope** | Logical / semantic — about program correctness | Hardware / memory model — about low-level memory access |
 | **Involves** | Shared state and scheduling order | Concurrent read/write or write/write to same memory without happens-before |
 | **Always a bug?** | Sometimes intended (deliberate races in lock-free algorithms) | Almost always a bug (formally undefined behavior in C/C++) |
 | **Example** | Bank account balance depending on which ATM runs first | Two threads writing to the same `int` without a mutex |
 | **Detection** | Behavioral testing, stress testing | Thread sanitizers (TSan), happens-before analysis |
-| **C/C++ effect** | Logic error; program still runs | **Undefined behavior** â€” compiler may generate broken code |
+| **C/C++ effect** | Logic error; program still runs | **Undefined behavior** — compiler may generate broken code |
 | **Relationship** | A data race can *cause* a race condition, but a race condition can exist without a data race (e.g., mutex-protected code with wrong logic) | All data races in properly synchronized code are bugs, but some race conditions (e.g., work-stealing) are intentional |
 
-**Key insight**: All data races are potential race conditions, but not all race conditions involve data races. For example, a race between two threads checking `if (account.balance >= amount)` before debiting â€” both protected by the same mutex â€” is a race condition (logic error) but not a data race (the mutex prevents concurrent access).
+**Key insight**: All data races are potential race conditions, but not all race conditions involve data races. For example, a race between two threads checking `if (account.balance >= amount)` before debiting — both protected by the same mutex — is a race condition (logic error) but not a data race (the mutex prevents concurrent access).
 
 ## 1.3 The Critical Section Problem
 
@@ -228,13 +228,13 @@ These terms are often confused but are technically distinct:
 
 ### Formal Definition
 
-Consider a system with n processes {Pâ‚€, Pâ‚, ..., Pâ‚™â‚‹â‚}. Each process has a segment of code called the **critical section** (CS) where it accesses shared data. The critical section problem is to design a protocol that processes can use to coordinate access.
+Consider a system with n processes {P₀, P₁, ..., Pₙ₋₁}. Each process has a segment of code called the **critical section** (CS) where it accesses shared data. The critical section problem is to design a protocol that processes can use to coordinate access.
 
 ### Requirements for a Valid Solution
 
 A valid solution must satisfy three requirements:
 
-1. **Mutual Exclusion (ME)**: If process Páµ¢ is executing in its critical section, no other process can be executing in its critical section
+1. **Mutual Exclusion (ME)**: If process Pᵢ is executing in its critical section, no other process can be executing in its critical section
 2. **Progress**: If no process is in its critical section and some processes want to enter, only those not in their remainder sections can participate in deciding which will enter next; this selection cannot be postponed indefinitely
 3. **Bounded Waiting (BW)**: There exists a bound on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter
 
@@ -294,16 +294,16 @@ process(i):
 | Nested critical sections | Deadlock if ordering violated | Lock ordering discipline |
 | Preemptive kernel | Race even in kernel code | Spinlocks for short sections |
 
-## 1.4 Critical Section Requirements â€” Detailed
+## 1.4 Critical Section Requirements — Detailed
 
-### Mutual Exclusion â€” Formal Proof Structure
+### Mutual Exclusion — Formal Proof Structure
 
 To prove mutual exclusion, show:
 - At most one process can have `flag[self] = true AND turn == self`
-- If Pâ‚€ is in CS, then `flag[0] == true AND turn == 0`
-- Pâ‚ cannot enter because `flag[0] == true AND turn == 0` makes Pâ‚ spin-wait
+- If P₀ is in CS, then `flag[0] == true AND turn == 0`
+- P₁ cannot enter because `flag[0] == true AND turn == 0` makes P₁ spin-wait
 
-### Progress â€” Formal Statement
+### Progress — Formal Statement
 
 If:
 1. No process is executing in its CS
@@ -313,9 +313,9 @@ Then:
 - Only processes that are not in their remainder section can participate in the decision
 - The decision cannot be postponed indefinitely
 
-### Bounded Waiting â€” Formal Statement
+### Bounded Waiting — Formal Statement
 
-After process Páµ¢ makes a request to enter its CS, there exists a bound on the number of times other processes may enter their CS before Páµ¢'s request is granted.
+After process Pᵢ makes a request to enter its CS, there exists a bound on the number of times other processes may enter their CS before Pᵢ's request is granted.
 
 ---
 
@@ -336,7 +336,7 @@ After process Páµ¢ makes a request to enter its CS, there exists a bound on t
 ### Numbered Steps of Peterson's Algorithm
 
 ```
-Páµ¢ wants to enter critical section:
+Pᵢ wants to enter critical section:
 Step 1: flag[i] = true          // Announce intent
 Step 2: turn = j                // Defer to other process
 Step 3: while (flag[j] && turn == j) {}  // Wait if both want and it's other's turn
@@ -356,7 +356,7 @@ process(i):
         flag[i] = true               // I want to enter
         turn = other                 // I yield to the other process
         while flag[other] and turn == other:
-            // busy wait â€” spin until it's my turn
+            // busy wait — spin until it's my turn
         // critical section
         flag[i] = false              // I'm done
         // remainder section
@@ -430,7 +430,7 @@ class PetersonLock:
         self.flag[self_id] = True
         self.turn = other
         while self.flag[other] and self.turn == other:
-            pass  # Busy wait â€” spinning
+            pass  # Busy wait — spinning
 
     def unlock(self, self_id):
         self.flag[self_id] = False
@@ -457,71 +457,71 @@ t2.join()
 print(f"Counter: {counter} (expected: {2 * iterations})")
 ```
 
-## 2.2 Peterson's Algorithm â€” Full Dry Run
+## 2.2 Peterson's Algorithm — Full Dry Run
 
-### Scenario: Pâ‚€ tries to enter CS, then Pâ‚ tries, then Pâ‚€ exits
-
-| Step | Process | Action | flag[0] | flag[1] | turn | Who is in CS? | Explanation |
-|------|---------|--------|:-------:|:-------:|:----:|:------------:|-------------|
-| 0 | â€” | Initial state | F | F | 0 | None | Nobody wants CS |
-| 1 | Pâ‚€ | `flag[0] = true` | **T** | F | 0 | None | Pâ‚€ announces intent |
-| 2 | Pâ‚€ | `turn = 1` | T | F | **1** | None | Pâ‚€ defers to Pâ‚ |
-| 3 | Pâ‚€ | Check: `flag[1]==F` â†’ skip loop | T | F | 1 | **Pâ‚€** | Pâ‚ doesn't want CS, so Pâ‚€ enters |
-| 4 | Pâ‚ | `flag[1] = true` | T | **T** | 1 | Pâ‚€ | Pâ‚ announces intent |
-| 5 | Pâ‚ | `turn = 0` | T | T | **0** | Pâ‚€ | Pâ‚ defers to Pâ‚€ |
-| 6 | Pâ‚ | Check: `flag[0]==T && turn==0` â†’ **spin** | T | T | 0 | Pâ‚€ | Pâ‚€ in CS, Pâ‚ waits |
-| 7 | Pâ‚€ | `flag[0] = false` (exits CS) | **F** | T | 0 | None | Pâ‚€ releases |
-| 8 | Pâ‚ | Re-check: `flag[0]==F` â†’ skip loop | F | T | 0 | **Pâ‚** | Pâ‚ enters CS |
-| 9 | Pâ‚ | `flag[1] = false` (exits CS) | F | **F** | 0 | None | Pâ‚ releases |
-
-### Scenario: Both Pâ‚€ and Pâ‚ want CS simultaneously
+### Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits
 
 | Step | Process | Action | flag[0] | flag[1] | turn | Who is in CS? | Explanation |
 |------|---------|--------|:-------:|:-------:|:----:|:------------:|-------------|
-| 0 | â€” | Initial state | F | F | 0 | None | |
-| 1 | Pâ‚€ | `flag[0] = true` | **T** | F | 0 | None | |
-| 2 | Pâ‚ | `flag[1] = true` | T | **T** | 0 | None | Both now want CS |
-| 3 | Pâ‚€ | `turn = 1` | T | T | **1** | None | Pâ‚€ defers |
-| 4 | Pâ‚€ | Check: `flag[1]==T && turn==1` â†’ **spin** | T | T | 1 | None | Pâ‚€ waits |
-| 5 | Pâ‚ | `turn = 0` | T | T | **0** | None | Pâ‚ defers |
-| 6 | Pâ‚ | Check: `flag[0]==T && turn==0` â†’ **spin** | T | T | 0 | None | Pâ‚ waits |
-| 7 | Pâ‚ | Re-check: `flag[0]==T && turn==0` â†’ spin | T | T | 0 | None | |
-| 8 | Pâ‚€ | Re-check: `flag[1]==T && turn==1`? `turn==0` now â†’ **skip** | T | T | 0 | **Pâ‚€** | Pâ‚€ enters because turnâ‰ 1 |
-| 9 | Pâ‚€ | `flag[0] = false` (exits CS) | **F** | T | 0 | None | |
-| 10 | Pâ‚ | Re-check: `flag[0]==F` â†’ skip loop | F | T | 0 | **Pâ‚** | Pâ‚ enters |
-| 11 | Pâ‚ | `flag[1] = false` | F | **F** | 0 | None | |
+| 0 | — | Initial state | F | F | 0 | None | Nobody wants CS |
+| 1 | P₀ | `flag[0] = true` | **T** | F | 0 | None | P₀ announces intent |
+| 2 | P₀ | `turn = 1` | T | F | **1** | None | P₀ defers to P₁ |
+| 3 | P₀ | Check: `flag[1]==F` → skip loop | T | F | 1 | **P₀** | P₁ doesn't want CS, so P₀ enters |
+| 4 | P₁ | `flag[1] = true` | T | **T** | 1 | P₀ | P₁ announces intent |
+| 5 | P₁ | `turn = 0` | T | T | **0** | P₀ | P₁ defers to P₀ |
+| 6 | P₁ | Check: `flag[0]==T && turn==0` → **spin** | T | T | 0 | P₀ | P₀ in CS, P₁ waits |
+| 7 | P₀ | `flag[0] = false` (exits CS) | **F** | T | 0 | None | P₀ releases |
+| 8 | P₁ | Re-check: `flag[0]==F` → skip loop | F | T | 0 | **P₁** | P₁ enters CS |
+| 9 | P₁ | `flag[1] = false` (exits CS) | F | **F** | 0 | None | P₁ releases |
+
+### Scenario: Both P₀ and P₁ want CS simultaneously
+
+| Step | Process | Action | flag[0] | flag[1] | turn | Who is in CS? | Explanation |
+|------|---------|--------|:-------:|:-------:|:----:|:------------:|-------------|
+| 0 | — | Initial state | F | F | 0 | None | |
+| 1 | P₀ | `flag[0] = true` | **T** | F | 0 | None | |
+| 2 | P₁ | `flag[1] = true` | T | **T** | 0 | None | Both now want CS |
+| 3 | P₀ | `turn = 1` | T | T | **1** | None | P₀ defers |
+| 4 | P₀ | Check: `flag[1]==T && turn==1` → **spin** | T | T | 1 | None | P₀ waits |
+| 5 | P₁ | `turn = 0` | T | T | **0** | None | P₁ defers |
+| 6 | P₁ | Check: `flag[0]==T && turn==0` → **spin** | T | T | 0 | None | P₁ waits |
+| 7 | P₁ | Re-check: `flag[0]==T && turn==0` → spin | T | T | 0 | None | |
+| 8 | P₀ | Re-check: `flag[1]==T && turn==1`? `turn==0` now → **skip** | T | T | 0 | **P₀** | P₀ enters because turn≠1 |
+| 9 | P₀ | `flag[0] = false` (exits CS) | **F** | T | 0 | None | |
+| 10 | P₁ | Re-check: `flag[0]==F` → skip loop | F | T | 0 | **P₁** | P₁ enters |
+| 11 | P₁ | `flag[1] = false` | F | **F** | 0 | None | |
 
 ## 2.3 Proof of Correctness
 
 ### Mutual Exclusion Proof
 
-Assume Pâ‚€ and Pâ‚ are both in CS simultaneously. Then:
-- Pâ‚€ entered CS only when `flag[1] == false OR turn == 0`
-- Pâ‚ entered CS only when `flag[0] == false OR turn == 1`
+Assume P₀ and P₁ are both in CS simultaneously. Then:
+- P₀ entered CS only when `flag[1] == false OR turn == 0`
+- P₁ entered CS only when `flag[0] == false OR turn == 1`
 
 If both are in CS, then either:
-- `turn == 0` (so Pâ‚ must have found `flag[0] == false`) AND `turn == 1` (so Pâ‚€ must have found `flag[1] == false`) â†’ contradiction because turn cannot be both 0 and 1
+- `turn == 0` (so P₁ must have found `flag[0] == false`) AND `turn == 1` (so P₀ must have found `flag[1] == false`) → contradiction because turn cannot be both 0 and 1
 
 By contradiction, both cannot be in CS simultaneously. **ME holds.**
 
 ### Progress Proof
 
-If Pâ‚€ is in its remainder section (`flag[0] == false`) and Pâ‚ wants CS:
-- Pâ‚'s while condition: `flag[0] == false` â†’ loop skipped immediately
-- Pâ‚ enters CS without waiting
+If P₀ is in its remainder section (`flag[0] == false`) and P₁ wants CS:
+- P₁'s while condition: `flag[0] == false` → loop skipped immediately
+- P₁ enters CS without waiting
 
-If Pâ‚ is waiting (`flag[1] == true`) and Pâ‚€ is in remainder section:
-- Pâ‚€ will not set `flag[0] = true` (it's in remainder)
-- Pâ‚'s while condition: `flag[0] == false` â†’ loop exits
+If P₁ is waiting (`flag[1] == true`) and P₀ is in remainder section:
+- P₀ will not set `flag[0] = true` (it's in remainder)
+- P₁'s while condition: `flag[0] == false` → loop exits
 - **Progress holds.**
 
 ### Bounded Waiting Proof
 
-If Pâ‚€ wants CS and Pâ‚ is in CS:
-- Pâ‚€ sets `flag[0] = true`, `turn = 1`
-- Pâ‚€ waits while `flag[1] == true && turn == 1`
-- Pâ‚ will eventually exit CS and set `flag[1] = false`
-- At most one entry by Pâ‚ before Pâ‚€ enters (Pâ‚ may re-enter before Pâ‚€, but then on Pâ‚'s next attempt, `turn == 1` makes Pâ‚ wait)
+If P₀ wants CS and P₁ is in CS:
+- P₀ sets `flag[0] = true`, `turn = 1`
+- P₀ waits while `flag[1] == true && turn == 1`
+- P₁ will eventually exit CS and set `flag[1] = false`
+- At most one entry by P₁ before P₀ enters (P₁ may re-enter before P₀, but then on P₁'s next attempt, `turn == 1` makes P₁ wait)
 
 Bound = 1. **Bounded waiting holds.**
 
@@ -532,7 +532,7 @@ Bound = 1. **Bounded waiting holds.**
 | Lock (uncontended) | O(1) | O(1) | Two stores, one load |
 | Lock (contended) | O(k) wait | O(1) | Spin until other releases; k = duration of CS |
 | Memory | 2 booleans + 1 int | 3 bytes + padding | Constant, independent of critical section size |
-| Context switches | 0 (spinlock) | â€” | No yield to kernel; CPU spins |
+| Context switches | 0 (spinlock) | — | No yield to kernel; CPU spins |
 
 **Why Peterson is impractical on modern hardware**: Modern CPUs (ARM, PowerPC) implement weak memory ordering. Without memory barriers, the compiler or CPU may reorder the `flag[i] = true` and `turn = j` stores, breaking the algorithm. Hardware requires assembly-level `dmb` (data memory barrier) instructions.
 
@@ -540,7 +540,7 @@ Bound = 1. **Bounded waiting holds.**
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Pure software â€” no special hardware needed | Only works for 2 processes |
+| Pure software — no special hardware needed | Only works for 2 processes |
 | Elegant and simple to understand | Busy-waiting wastes CPU |
 | Satisfies all three CS requirements | Fails on weakly-ordered CPUs without barriers |
 | No starvation | Not practical for real systems |
@@ -565,7 +565,7 @@ Modern hardware provides atomic (non-interruptible) instructions that allow lock
 
 ### Real-World Analogy
 
-**The Cash Register "Total" Button**: When a cashier presses "Total" on a register, the machine atomically reads all item prices, computes the sum, and displays it â€” all in one uninterruptible operation. Another cashier cannot interfere mid-computation. This is exactly what a hardware atomic instruction does: read-modify-write as one indivisible step.
+**The Cash Register "Total" Button**: When a cashier presses "Total" on a register, the machine atomically reads all item prices, computes the sum, and displays it — all in one uninterruptible operation. Another cashier cannot interfere mid-computation. This is exactly what a hardware atomic instruction does: read-modify-write as one indivisible step.
 
 ### Why Hardware Support?
 
@@ -590,7 +590,7 @@ Hardware atomic instructions solve this by guaranteeing that no other core can m
 **Airline Seat Reservation**: When two agents try to book the last seat:
 - Agent 1: "Is seat 14A available?" (read)
 - Agent 1: "Mark it as sold!" (write)
-- Agent 2: "Is seat 14A available?" â†’ already sold â†’ tries next seat
+- Agent 2: "Is seat 14A available?" → already sold → tries next seat
 
 The check-and-mark must happen as one atomic operation, which is exactly what test-and-set provides.
 
@@ -599,8 +599,8 @@ The check-and-mark must happen as one atomic operation, which is exactly what te
 ```
 acquire(lock):
 1. Call test_and_set(&lock)
-2. If return value == 1 â†’ another thread holds the lock â†’ goto 1 (spin)
-3. If return value == 0 â†’ lock was free â†’ we now hold it â†’ enter CS
+2. If return value == 1 → another thread holds the lock → goto 1 (spin)
+3. If return value == 0 → lock was free → we now hold it → enter CS
 
 release(lock):
 1. Set lock = 0
@@ -610,7 +610,7 @@ release(lock):
 ### Pseudocode
 
 ```
-// Atomic hardware instruction â€” executes as one uninterruptible step
+// Atomic hardware instruction — executes as one uninterruptible step
 function test_and_set(int *target) -> int:
     old = *target
     *target = 1
@@ -621,7 +621,7 @@ struct Spinlock:
 
 function acquire(Spinlock *lock):
     while test_and_set(&lock->flag) == 1:
-        // busy wait â€” spinning
+        // busy wait — spinning
 
 function release(Spinlock *lock):
     lock->flag = 0
@@ -639,7 +639,7 @@ struct TASLock {
 
     void lock() {
         while (flag.exchange(1, std::memory_order_acquire) == 1) {
-            // Spin â€” busy wait
+            // Spin — busy wait
         }
     }
 
@@ -676,7 +676,7 @@ int main() {
 import threading
 import ctypes
 
-# Python doesn't have hardware TAS â€” simulate with threading.Lock
+# Python doesn't have hardware TAS — simulate with threading.Lock
 # In CPython, the GIL protects individual bytecodes, but we use
 # threading.Lock which wraps the platform's native mutex.
 
@@ -696,7 +696,7 @@ class TASLock:
             # Spin
 
     def release(self):
-        self._flag = 0  # Not thread-safe in real Python â€” use actual Lock
+        self._flag = 0  # Not thread-safe in real Python — use actual Lock
 
 counter = 0
 lock = TASLock()
@@ -717,14 +717,14 @@ def worker():
 
 | Step | Thread | Action | lock->flag | Return value | Who holds lock? |
 |------|--------|--------|:----------:|:------------:|:---------------:|
-| 0 | â€” | Initial | 0 | â€” | None |
-| 1 | A | TAS(&lock) | **1** | **0** â†’ free | **A** |
-| 2 | A | Enter CS | 1 | â€” | A |
-| 3 | B | TAS(&lock) | **1** | **1** â†’ held | A |
-| 4 | B | Spin (loop) | 1 | â€” | A |
-| 5 | A | Exit CS â†’ flag=0 | **0** | â€” | None |
-| 6 | B | TAS(&lock) | **1** | **0** â†’ free | **B** |
-| 7 | B | Enter CS | 1 | â€” | B |
+| 0 | — | Initial | 0 | — | None |
+| 1 | A | TAS(&lock) | **1** | **0** → free | **A** |
+| 2 | A | Enter CS | 1 | — | A |
+| 3 | B | TAS(&lock) | **1** | **1** → held | A |
+| 4 | B | Spin (loop) | 1 | — | A |
+| 5 | A | Exit CS → flag=0 | **0** | — | None |
+| 6 | B | TAS(&lock) | **1** | **0** → free | **B** |
+| 7 | B | Enter CS | 1 | — | B |
 
 ### Complexity Analysis
 
@@ -745,7 +745,7 @@ def worker():
 | Simple hardware implementation | No bounded waiting guarantee (may starve) |
 | Foundation for all OS locks | Cache coherence traffic on multi-core |
 | Can be used in interrupt handlers | Priority inversion possible |
-| Fast uncontended acquisition | Not fair â€” later threads may acquire before earlier ones |
+| Fast uncontended acquisition | Not fair — later threads may acquire before earlier ones |
 
 ### Edge Cases
 
@@ -753,7 +753,7 @@ def worker():
 |----------|----------|------------|
 | Interrupt handler acquires lock held by interrupted thread | **Deadlock** | Disable interrupts or use spin_lock_irqsave() |
 | Single core, no preemption | Lock always acquired immediately | Spinning never happens |
-| N threads contending same lock | Unfair â€” one thread may starve | Ticket lock (provides FIFO) |
+| N threads contending same lock | Unfair — one thread may starve | Ticket lock (provides FIFO) |
 | Very long critical section | CPU waste from spinning | Use blocking mutex instead |
 | Thread dies holding lock | All spinners spin forever | Lock fencing / recovery |
 
@@ -768,7 +768,7 @@ def worker():
 
 ### Real-World Analogy
 
-**Vending Machine Coin Slot**: The machine checks: "Is the coin exactly $1? If yes, accept it and dispense a soda. If not, reject it." The check-and-accept must be atomic â€” otherwise someone could trick it with a half-accepted coin.
+**Vending Machine Coin Slot**: The machine checks: "Is the coin exactly $1? If yes, accept it and dispense a soda. If not, reject it." The check-and-accept must be atomic — otherwise someone could trick it with a half-accepted coin.
 
 ### Numbered Steps
 
@@ -777,13 +777,13 @@ compare_and_swap(int *value, int expected, int new_value):
 Step 1: old = *value
 Step 2: if old == expected: *value = new_value
 Step 3: return old
-(all three steps execute atomically â€” no interleaving)
+(all three steps execute atomically — no interleaving)
 ```
 
 ### Pseudocode
 
 ```
-// Atomic â€” implemented as a single CPU instruction (CMPXCHG on x86)
+// Atomic — implemented as a single CPU instruction (CMPXCHG on x86)
 function compare_and_swap(int *value, int expected, int new_value) -> int:
     old = *value
     if old == expected:
@@ -805,7 +805,7 @@ void lock_free_increment(std::atomic<int> &val) {
     int expected = val.load(std::memory_order_relaxed);
     while (!val.compare_exchange_weak(expected, expected + 1,
                                       std::memory_order_acq_rel)) {
-        // CAS failed â€” expected was updated with current value; retry
+        // CAS failed — expected was updated with current value; retry
     }
 }
 
@@ -859,11 +859,11 @@ class CASLock:
 
 | Step | Thread | Action | counter (shared) | expected (local) | CAS success? |
 |------|--------|--------|:----------------:|:----------------:|:------------:|
-| 0 | â€” | Initial | 5 | â€” | â€” |
-| 1 | A | Load counter â†’ expected=5 | 5 | 5 | â€” |
-| 2 | B | CAS(5, 6) â†’ succeeds | **6** | â€” | **Yes** |
-| 3 | A | CAS(5, 6) â†’ fails (counter=6 â‰  expected=5) | 6 | updated to **6** | **No** |
-| 4 | A | Retry: CAS(6, 7) â†’ succeeds | **7** | 6 | **Yes** |
+| 0 | — | Initial | 5 | — | — |
+| 1 | A | Load counter → expected=5 | 5 | 5 | — |
+| 2 | B | CAS(5, 6) → succeeds | **6** | — | **Yes** |
+| 3 | A | CAS(5, 6) → fails (counter=6 ≠ expected=5) | 6 | updated to **6** | **No** |
+| 4 | A | Retry: CAS(6, 7) → succeeds | **7** | 6 | **Yes** |
 | **FINAL** | | | **7** | | |
 
 ### Complexity Analysis
@@ -877,14 +877,14 @@ class CASLock:
 
 **Why CAS enables lock-free programming**: Unlike TAS, CAS can be retried on failure without holding any lock. This means a thread can help another thread complete its operation rather than blocking. This is the foundation of lock-free data structures.
 
-### CAS vs TAS â€” Key Difference
+### CAS vs TAS — Key Difference
 
 | Property | TAS | CAS |
 |----------|-----|-----|
 | Always writes? | **Yes** (always sets to 1) | Only when match succeeds |
 | Cache behavior | Poor (always invalidates) | Good (most CAS attempts succeed) |
 | Lock-free possible? | No | Yes (foundation of lock-free) |
-| ABA problem? | No | **Yes** â€” value can change Aâ†’Bâ†’A and CAS won't detect |
+| ABA problem? | No | **Yes** — value can change A→B→A and CAS won't detect |
 | x86 instruction | `xchg` | `cmpxchg` |
 
 ## 3.4 Memory Barriers (Fences)
@@ -912,11 +912,11 @@ A **memory barrier** is a CPU instruction that enforces ordering constraints on 
 std::atomic<int> data;
 std::atomic<bool> ready{false};
 
-// Thread 1 â€” producer
+// Thread 1 — producer
 data.store(42, std::memory_order_relaxed);
 ready.store(true, std::memory_order_release);
 
-// Thread 2 â€” consumer
+// Thread 2 — consumer
 while (!ready.load(std::memory_order_acquire)) {}
 // Guaranteed to see data == 42
 std::cout << data.load(std::memory_order_relaxed);  // 42
@@ -943,33 +943,33 @@ A **mutex** (mutual exclusion) is a synchronization primitive that protects a cr
 ```
 acquire(mutex):
 Step 1: Try to grab the lock
-Step 2: If lock is free â†’ mark as held, return
-Step 3: If lock is held â†’ add thread to wait queue, call scheduler to block
-Step 4: When woken â†’ try again (Step 1)
+Step 2: If lock is free → mark as held, return
+Step 3: If lock is held → add thread to wait queue, call scheduler to block
+Step 4: When woken → try again (Step 1)
 
 release(mutex):
 Step 1: Mark lock as free
-Step 2: If any threads are in wait queue â†’ move one to ready queue (wake up)
+Step 2: If any threads are in wait queue → move one to ready queue (wake up)
 ```
 
 ### Pseudocode
 
 ```
 struct Mutex:
-    int value = 1           // 1 = free, â‰¤0 = held
+    int value = 1           // 1 = free, ≤0 = held
     Queue waiting           // Queue of blocked processes
 
 function acquire(Mutex *m):
     m->value--
     if m->value < 0:
-        // Lock was already held â†’ block this thread
+        // Lock was already held → block this thread
         add this thread to m->waiting
         block()  // Yield CPU
 
 function release(Mutex *m):
     m->value++
     if m->value <= 0:
-        // Someone is waiting â†’ wake one
+        // Someone is waiting → wake one
         remove a thread from m->waiting
         wakeup(thread)  // Move to ready queue
 ```
@@ -986,7 +986,7 @@ int counter = 0;
 
 void worker(int iterations) {
     for (int i = 0; i < iterations; ++i) {
-        std::lock_guard<std::mutex> lock(mtx);  // RAII â€” acquire on construction
+        std::lock_guard<std::mutex> lock(mtx);  // RAII — acquire on construction
         counter++;                                // Critical section
     }  // Release on destruction (unlock automatically)
 }
@@ -1065,20 +1065,20 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 | Step | Thread | Action | mutex value | Waiting queue | Notes |
 |------|--------|--------|:-----------:|:-------------:|-------|
-| 0 | â€” | Initial | 1 | empty | Lock is free |
-| 1 | A | acquire â†’ value-- | **0** | empty | A holds lock |
+| 0 | — | Initial | 1 | empty | Lock is free |
+| 1 | A | acquire → value-- | **0** | empty | A holds lock |
 | 2 | A | Enter CS | 0 | empty | |
-| 3 | B | acquire â†’ value-- | **-1** | **[B]** | B blocked |
-| 4 | A | Exit CS â†’ release â†’ value++ | **0** | **[B]** | B's turn |
-| 5 | A | release â†’ queue not empty â†’ wake B | 0 | **empty** | B moved to ready |
-| 6 | B | acquire â†’ value-- | **-1** | empty | B acquired (scheduler ran B) |
-| 7 | B | Exit CS â†’ release â†’ value++ | **0** | empty | |
+| 3 | B | acquire → value-- | **-1** | **[B]** | B blocked |
+| 4 | A | Exit CS → release → value++ | **0** | **[B]** | B's turn |
+| 5 | A | release → queue not empty → wake B | 0 | **empty** | B moved to ready |
+| 6 | B | acquire → value-- | **-1** | empty | B acquired (scheduler ran B) |
+| 7 | B | Exit CS → release → value++ | **0** | empty | |
 
-### Spinlock vs Mutex â€” Detailed Comparison
+### Spinlock vs Mutex — Detailed Comparison
 
 | Property | Spinlock | Blocking Mutex |
 |----------|----------|---------------|
-| **CPU usage while waiting** | 100% â€” busy loops | ~0% â€” thread is blocked |
+| **CPU usage while waiting** | 100% — busy loops | ~0% — thread is blocked |
 | **Context switch on contention** | None | Yes (2 switches: block + wake) |
 | **Latency to acquire** | Nanoseconds (if short wait) | Microseconds (switch overhead) |
 | **Best for** | Very short CS (< context switch time) | Long CS or I/O-bound |
@@ -1086,9 +1086,9 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 | **Priority inversion risk** | Low (no scheduler involvement) | Higher (OS may boost holder) |
 | **Preemption** | No preemption needed | OS scheduler must preempt |
 | **Fairness** | Usually not fair (TAS) | Usually FIFO or priority-based |
-| **Memory** | O(1) â€” just a flag | O(n) â€” wait queue per lock |
+| **Memory** | O(1) — just a flag | O(n) — wait queue per lock |
 
-**Decision rule**: If the critical section is shorter than the time to do two context switches (~1-5Âµs), use a spinlock. Otherwise, use a blocking mutex.
+**Decision rule**: If the critical section is shorter than the time to do two context switches (~1-5µs), use a spinlock. Otherwise, use a blocking mutex.
 
 ### Recursive Mutex
 
@@ -1144,7 +1144,7 @@ int main() {
 | Thread exits holding mutex | All waiters wait forever | Robust mutex (pthread_mutex_robust) |
 | Mutex destroyed while held | Undefined behavior | Ensure all threads have released |
 | Low-priority thread holds mutex, high-priority waits | Priority inversion | Priority inheritance protocol |
-| Signal delivered while holding mutex | Signal handler may try to acquire â†’ deadlock | Async-signal-safe only functions |
+| Signal delivered while holding mutex | Signal handler may try to acquire → deadlock | Async-signal-safe only functions |
 | Nested critical sections, different order | Deadlock | Enforce global lock ordering |
 ---
 
@@ -2224,7 +2224,7 @@ class TicketLock {
   lock(): number {
     const myTicket = AtomicUtils.fetchAndAdd(this.nextTicket, 1);
     while (this.nowServing[0] !== myTicket) {
-      // Busy wait â€” but fair (FIFO)
+      // Busy wait — but fair (FIFO)
     }
     return myTicket;
   }
@@ -2245,7 +2245,7 @@ class MCSLock {
     if (prev !== null) {
       prev.next = node;
       while (node.locked) {
-        // Spin on local flag â€” cache-friendly
+        // Spin on local flag — cache-friendly
       }
     }
   }
@@ -2281,7 +2281,7 @@ class CounterSimulator {
 
   async unsafeIncrement(threadId: number, iterations: number): Promise<void> {
     for (let i = 0; i < iterations; i++) {
-      // Race: load, increment, store â€” no synchronization
+      // Race: load, increment, store — no synchronization
       const val = this.counter;
       this.log.push(`Thread ${threadId}: read counter=${val}`);
       await new Promise(r => setImmediate(r)); // Forced context switch
@@ -2350,8 +2350,8 @@ const sim = new CounterSimulator();
 console.log(await sim.compareRaceVsSafe(3, 100));
 
 console.log('\n=== Lock Benchmark ===');
-console.log(benchmarkLocks(100));   // Short CS â†’ spinlock
-console.log(benchmarkLocks(10000)); // Long CS â†’ mutex
+console.log(benchmarkLocks(100));   // Short CS → spinlock
+console.log(benchmarkLocks(10000)); // Long CS → mutex
 ```
 
 ### Memory Barriers and Instruction Reordering
@@ -2366,9 +2366,9 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 | **Read-to-read reordering** | Reads can be reordered | Rare on x86, common on ARM/PowerPC |
 
 **Memory barrier types:**
-- `mfence` (x86): Full memory barrier â€” all loads/stores before fence complete before any after
-- `lfence` (x86): Load barrier â€” all loads before fence complete before any after
-- `sfence` (x86): Store barrier â€” all stores before fence complete before any after
+- `mfence` (x86): Full memory barrier — all loads/stores before fence complete before any after
+- `lfence` (x86): Load barrier — all loads before fence complete before any after
+- `sfence` (x86): Store barrier — all stores before fence complete before any after
 - `dmb` (ARM): Data memory barrier
 - `atomic_thread_fence(memory_order_seq_cst)` (C++): Sequential consistency fence
 

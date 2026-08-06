@@ -1,4 +1,4 @@
-﻿# Chapter 9: Terraform & Infrastructure as Code
+# Chapter 9: Terraform & Infrastructure as Code
 
 > **Prev:** [Continuous Delivery](./09-continuous-delivery.md)
 > **Next:** [Advanced Configuration Mgmt](./10-configuration-mgmt.md)
@@ -138,7 +138,7 @@ resource "aws_ecs_service" "app" {
 ### Terraform Provisioners
 
 
-Provisioners execute scripts on resources after creation (use sparingly â€” prefer user_data or configuration management):
+Provisioners execute scripts on resources after creation (use sparingly — prefer user_data or configuration management):
 
 ```hcl
 resource "aws_instance" "web" {
@@ -490,7 +490,7 @@ console.log(ts);
 
 ### Drift Remediation Engine
 
-Infrastructure drift â€” when actual infrastructure state diverges from declared configuration â€” is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
+Infrastructure drift — when actual infrastructure state diverges from declared configuration — is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
 
 ```typescript
 // drift-remediation.ts

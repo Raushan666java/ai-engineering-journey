@@ -1,4 +1,4 @@
-﻿# API Gateway (Spring Cloud Gateway)
+# API Gateway (Spring Cloud Gateway)
 > **Previous:** [Service Discovery](39-discovery.md) | **Next:** [Resilience and Circuit Breakers](41-resilience.md)
 
 ## Learning Objectives
@@ -38,9 +38,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| API Gateway â†’ single entry point for all client requests | Routing, filtering, cross-cutting concerns in one layer |
-| Spring Cloud Gateway â†’ reactive, non-blocking gateway | Route definitions with predicates and filters |
-| Advanced Features â†’ rate limiting, circuit breaking, security | Global and per-route filters; integration with Resilience4j |
+| API Gateway → single entry point for all client requests | Routing, filtering, cross-cutting concerns in one layer |
+| Spring Cloud Gateway → reactive, non-blocking gateway | Route definitions with predicates and filters |
+| Advanced Features → rate limiting, circuit breaking, security | Global and per-route filters; integration with Resilience4j |
 
 ---
 ## Chapter Roadmap
@@ -93,7 +93,7 @@ flowchart TD
 
 1. On which reactive framework is Spring Cloud Gateway built? **Answer:** Spring WebFlux (Project Reactor)
 2. Which two components make up a route definition? **Answer:** Predicate (match condition) and Filter (request/response transformation)
-3. What is the main advantage of a gateway in a microservices architecture? **Answer:** Centralized cross-cutting concerns â†’ auth, rate limiting, logging â†’ without per-service duplication
+3. What is the main advantage of a gateway in a microservices architecture? **Answer:** Centralized cross-cutting concerns → auth, rate limiting, logging → without per-service duplication
 
 ## Theory
 
@@ -130,7 +130,7 @@ The `RequestRateLimiter` filter uses Redis and the Token Bucket algorithm. The `
 > Use `lb://service-name` as the URI in route definitions to leverage Eureka load balancing through the gateway.
 
 > [!WARNING]
-> Spring Cloud Gateway is reactive and uses Netty â†’ do not depend on `spring-boot-starter-web` (Tomcat) as they conflict.
+> Spring Cloud Gateway is reactive and uses Netty → do not depend on `spring-boot-starter-web` (Tomcat) as they conflict.
 
 > [!NOTE]
 > Enable `RouteDefinitionMetrics` via Micrometer to monitor route hit rates, latency, and error responses.

@@ -1,4 +1,4 @@
-﻿# Aptitude Test Preparation for IT Companies &amp; PSUs
+# Aptitude Test Preparation for IT Companies &amp; PSUs
 
 ## Learning Objectives
 
@@ -58,7 +58,7 @@ By the end of this chapter, you will be able to:
 | Technical Aptitude | 50-100 | 40-60 min | ~40-50 seconds |
 | General Awareness | 25-50 | 10-15 min | ~20-30 seconds |
 
-## Quantitative Aptitude â€” 100 Shortcut Formulas
+## Quantitative Aptitude — 100 Shortcut Formulas
 
 ### Number Systems and HCF-LCM
 
@@ -188,7 +188,7 @@ By the end of this chapter, you will be able to:
 | AP nth term = a + (n-1)d | AP |
 | AP sum = n/2[2a + (n-1)d] | AP sum |
 
-## Logical Reasoning â€” All Question Types
+## Logical Reasoning — All Question Types
 
 ### Classification
 
@@ -265,7 +265,7 @@ By the end of this chapter, you will be able to:
 | Paper Folding | Trace hole positions |
 | Dice/Cube | Adjacent faces tell opposite |
 
-## Verbal Ability â€” Quick Drills
+## Verbal Ability — Quick Drills
 
 ### Common Errors
 
@@ -305,7 +305,7 @@ By the end of this chapter, you will be able to:
 4. Answer questions (1-2 min)
 5. Review against passage (30 sec)
 
-## Technical Aptitude â€” CS Fundamentals
+## Technical Aptitude — CS Fundamentals
 
 ### Operating Systems
 

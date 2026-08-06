@@ -1,4 +1,4 @@
-﻿# Chapter 15: Database DevOps
+# Chapter 15: Database DevOps
 
 > **Previous:** [DevSecOps](./14-devsecops.md) | **Next:** [Container Networking](./16-networking.md)
 
@@ -41,7 +41,7 @@ By the end of this chapter, students will be able to:
 | Schema Migration Tools | Flyway, Liquibase, Alembic | Choose based on language (Alembic for Python, Flyway for SQL) |
 | Database CI/CD | Validate, test, stage, production pipeline | Always test migrations on a production-like database copy |
 | Blue-Green DB Deployments | Backward-compatible changes enable zero-downtime | Three-phase approach for column renames |
-| Backup & PITR | Full backup, WAL shipping, point-in-time recovery | Test backups regularly â€” untested backups are useless |
+| Backup & PITR | Full backup, WAL shipping, point-in-time recovery | Test backups regularly — untested backups are useless |
 | Rollback Strategies | Forward-only vs with rollback | Prepare downgrade paths for every migration |
 | Migration Validation | Syntax, empty DB, prod-like, rollback tests | Four-stage validation before production |
 
@@ -82,7 +82,7 @@ Database as Code stores schema definitions, migrations, and configuration in Git
 ### 15.2 Schema Migration Tools
 
 
-**Flyway** â€” Open-source database migration tool. Migrations are SQL files named with versioned or repeatable conventions:
+**Flyway** — Open-source database migration tool. Migrations are SQL files named with versioned or repeatable conventions:
 
 ```
 V1__create_users.sql
@@ -102,9 +102,9 @@ flyway info
 flyway undo
 ```
 
-Flyway records applied migrations in a schema history table (`flyway_schema_history`). It calculates which migrations are pending by comparing available migration files against this table. Each migration is applied exactly once â€” Flyway validates checksums to detect tampering.
+Flyway records applied migrations in a schema history table (`flyway_schema_history`). It calculates which migrations are pending by comparing available migration files against this table. Each migration is applied exactly once — Flyway validates checksums to detect tampering.
 
-**Liquibase** â€” More feature-rich than Flyway:
+**Liquibase** — More feature-rich than Flyway:
 - Supports SQL, XML, JSON, and YAML changelog formats
 - Provides rollback (built-in, not Pro-only)
 - Context-aware execution (run certain changesets only in specific environments)
@@ -132,7 +132,7 @@ liquibase rollbackCount 3
 liquibase rollbackSQL --tag v2.0.0
 ```
 
-**Alembic** â€” Python-specific migration tool for SQLAlchemy:
+**Alembic** — Python-specific migration tool for SQLAlchemy:
 - Auto-generates migrations from model changes
 - Supports branching, merging, and multiple databases
 - Python-based migration scripts (not plain SQL)
@@ -162,10 +162,10 @@ Integrating database changes into CI/CD requires careful design. The pipeline mu
 
 **Pipeline Stages:**
 
-1. **Validate** â€” Check migration file naming convention, SQL syntax, and history consistency
-2. **Test** â€” Apply migrations to a test database, run integration tests, verify data integrity
-3. **Stage** â€” Apply migrations to staging environment with production-like data for performance testing
-4. **Production** â€” Apply with health monitoring and automatic rollback on failure
+1. **Validate** — Check migration file naming convention, SQL syntax, and history consistency
+2. **Test** — Apply migrations to a test database, run integration tests, verify data integrity
+3. **Stage** — Apply migrations to staging environment with production-like data for performance testing
+4. **Production** — Apply with health monitoring and automatic rollback on failure
 
 **Database as Code CI/CD Example:**
 
@@ -232,18 +232,18 @@ Database changes that are backward-compatible enable zero-downtime deployments:
 
 **Backup Strategies:**
 
-**Full Backup** â€” Complete copy of the database:
+**Full Backup** — Complete copy of the database:
 - Slowest to create, fastest to restore
 - Typical nightly schedule
 - File size equals database size
 - `pg_dump` (logical), `pg_basebackup` (physical)
 
-**Incremental Backup** â€” Only changes since last backup:
+**Incremental Backup** — Only changes since last backup:
 - Fast to create, small size
 - Complex to restore (requires base + all increments)
 - Reduces backup window and storage
 
-**Continuous Archiving (WAL shipping)** â€” Streams transaction logs to archive:
+**Continuous Archiving (WAL shipping)** — Streams transaction logs to archive:
 - Enables point-in-time recovery to any moment
 - Minimal data loss potential (seconds)
 - Required for production databases
@@ -286,12 +286,12 @@ PITR restores a database to a specific moment, not just the last backup. Require
 ### 15.7 Database Testing
 
 
-**Unit Tests** â€” Test database functions, stored procedures, and triggers in isolation:
+**Unit Tests** — Test database functions, stored procedures, and triggers in isolation:
 - Test individual SQL functions and procedures
 - Mock table data as needed
 - Fast execution (milliseconds per test)
 
-**Integration Tests** â€” Test application code with a real database:
+**Integration Tests** — Test application code with a real database:
 - Use migration tools to create the schema from scratch
 - Seed test data (fixtures)
 - Run application tests against the database
@@ -314,13 +314,13 @@ services:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
 ```
 
-**Transaction Tests** â€” Test concurrent access:
+**Transaction Tests** — Test concurrent access:
 - Isolation levels (READ COMMITTED, REPEATABLE READ, SERIALIZABLE)
 - Deadlock handling
 - Rollback behavior on failure
 - Optimistic locking verification
 
-**Performance Tests** â€” Query performance regression detection:
+**Performance Tests** — Query performance regression detection:
 - Capture query plans before and after schema changes
 - Measure execution time for critical queries
 - Compare index usage
@@ -331,29 +331,29 @@ services:
 
 Validate migrations before production application:
 
-1. **Syntax check** â€” Parse SQL for syntax errors. Catch typos and missing keywords.
-2. **Empty database test** â€” Apply to a clean database, verify schema matches expectations.
-3. **Production-like test** â€” Apply to a copy of production data, measure execution time. Slow migrations (hours) need optimization or online schema change tools (pt-online-schema-change, gh-ost).
-4. **Rollback test** â€” Verify downgrade works correctly. Test that data is preserved or correctly handled.
-5. **Data preservation** â€” Verify no data loss occurs during migration. Run before/after data counts.
+1. **Syntax check** — Parse SQL for syntax errors. Catch typos and missing keywords.
+2. **Empty database test** — Apply to a clean database, verify schema matches expectations.
+3. **Production-like test** — Apply to a copy of production data, measure execution time. Slow migrations (hours) need optimization or online schema change tools (pt-online-schema-change, gh-ost).
+4. **Rollback test** — Verify downgrade works correctly. Test that data is preserved or correctly handled.
+5. **Data preservation** — Verify no data loss occurs during migration. Run before/after data counts.
 
 ### 15.9 Rollback Strategies
 
 
-**Variant A: Forward-only** â€” Rollback is a new forward migration that reverses the change:
+**Variant A: Forward-only** — Rollback is a new forward migration that reverses the change:
 ```
 V2__add_column.sql ? V3__remove_column.sql
 ```
 Simple, works with all tools. All actions are audited. Best practice for most teams.
 
-**Variant B: With rollback** â€” Flyway Pro and Liquibase support versioned rollbacks:
+**Variant B: With rollback** — Flyway Pro and Liquibase support versioned rollbacks:
 ```bash
 flyway undo   # Applies the down migration
 liquibase rollbackCount 1
 ```
 Down migration reverses the up migration. Must be written and tested alongside the up migration.
 
-**Variant C: Blue-green schema** â€” Maintain two schema versions simultaneously:
+**Variant C: Blue-green schema** — Maintain two schema versions simultaneously:
 - Traffic switches after rollback capability is verified
 - Both schemas must be backward-compatible
 - Complex but enables instant rollback
@@ -556,7 +556,7 @@ class BackupManager {
 
     const unverified = this.backups.filter(b => !b.verified);
     if (unverified.length > 5) {
-      issues.push(`Unverified backups: ${unverified.length} â€” restore test needed`);
+      issues.push(`Unverified backups: ${unverified.length} — restore test needed`);
     }
 
     return issues;
@@ -693,8 +693,8 @@ console.log(detector.generateReport({ description: 'Drop index on user_id', migr
 | PITR | Full backup + WAL stream to any point in time |
 | Blue-Green DB | Backward-compat changes for zero-downtime |
 | Migration Validation | Syntax, empty DB, prod-like, rollback tests |
-| RPO | Recovery Point Objective â€” max acceptable data loss |
-| RTO | Recovery Time Objective â€” max acceptable downtime |
+| RPO | Recovery Point Objective — max acceptable data loss |
+| RTO | Recovery Time Objective — max acceptable downtime |
 
 ## Quick Reference
 
@@ -727,7 +727,7 @@ console.log(detector.generateReport({ description: 'Drop index on user_id', migr
 
 <details><summary>Question 4: What is the primary purpose of a rollback migration?</summary>**A)** Revert schema changes safely<br>**B)** Delete old data<br>**C)** Speed up deployments<br>**D)** Create backups<br><br>**Answer: A)** Revert schema changes safely&lt;/details&gt;
 
-<details><summary>Question 5: What does RTO measure?</summary>**A)** Recovery Point Objective â€” max data loss<br>**B)** Recovery Time Objective â€” max downtime<br>**C)** Return to Operations<br>**D)** Runtime Optimization<br><br>**Answer: B)** Recovery Time Objective â€” max downtime&lt;/details&gt;
+<details><summary>Question 5: What does RTO measure?</summary>**A)** Recovery Point Objective — max data loss<br>**B)** Recovery Time Objective — max downtime<br>**C)** Return to Operations<br>**D)** Runtime Optimization<br><br>**Answer: B)** Recovery Time Objective — max downtime&lt;/details&gt;
 
 ---
 

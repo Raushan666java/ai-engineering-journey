@@ -1,4 +1,4 @@
-﻿# Chapter 9: Reasoning Under Uncertainty
+# Chapter 9: Reasoning Under Uncertainty
 
 **Previous:** [Chapter 8: Planning](08-planning.md) | **Next:** [Chapter 10: Probabilistic Reasoning](10-probabilistic-reasoning.md)
 
@@ -27,12 +27,12 @@ By the conclusion of this chapter, the student will be able to: (1) apply probab
 
 ## Why Probabilistic Reasoning Matters
 
-**Real-World Analogy â€” Diagnosing Disease from Symptoms:** Imagine you are a doctor. A patient walks in with a fever, cough, and fatigue. These symptoms could indicate flu, COVID-19, common cold, or even something benign. You cannot be certain â€” but you must act. You weigh:
+**Real-World Analogy — Diagnosing Disease from Symptoms:** Imagine you are a doctor. A patient walks in with a fever, cough, and fatigue. These symptoms could indicate flu, COVID-19, common cold, or even something benign. You cannot be certain — but you must act. You weigh:
 - **Prior knowledge:** Flu is common in winter (~10% of patients). COVID-19 is less common but present (~2%).
 - **Evidence:** Fever + cough are *likely* given flu (80%), but also possible with COVID (70%) and cold (30%).
 - **Posterior judgment:** Given the symptoms, flu becomes most probable (say 65%), COVID next (20%), cold (10%), other (5%).
 
-This is **probabilistic reasoning** â€” updating beliefs in light of evidence. Every AI system facing uncertainty (speech recognition, medical diagnosis, self-driving cars, spam filters) uses the same framework. Without it, AI would be paralyzed by ambiguity.
+This is **probabilistic reasoning** — updating beliefs in light of evidence. Every AI system facing uncertainty (speech recognition, medical diagnosis, self-driving cars, spam filters) uses the same framework. Without it, AI would be paralyzed by ambiguity.
 
 ## Chapter at a Glance
 
@@ -100,7 +100,7 @@ $$P(A \land B \mid C) = P(A \mid C) P(B \mid C)$$
 
 Conditional independence assumptions dramatically reduce the complexity of probabilistic models.
 
-### Real-World Analogy â€” Spam Detection with Bayes
+### Real-World Analogy — Spam Detection with Bayes
 
 
 You receive an email containing the word "FREE". You want to know: is it spam?
@@ -111,7 +111,7 @@ You receive an email containing the word "FREE". You want to know: is it spam?
 
 The email is 96.4% likely to be spam.
 
-### Algorithmic Steps â€” Applying Bayes' Rule
+### Algorithmic Steps — Applying Bayes' Rule
 
 
 **Input:** Prior $P(H)$, likelihood $P(E \mid H)$, evidence probability $P(E)$
@@ -148,7 +148,7 @@ function BAYES-RULE-MARGINALIZE(Prior, LikelihoodFunc, hypotheses) returns poste
     return posterior
 ```
 
-### Step-by-Step Dry Run â€” Medical Test
+### Step-by-Step Dry Run — Medical Test
 
 
 **Scenario:** Disease prevalence = 0.1%, test sensitivity = 99%, false positive rate = 2%.
@@ -159,9 +159,9 @@ function BAYES-RULE-MARGINALIZE(Prior, LikelihoodFunc, hypotheses) returns poste
 | 1 | Identify H and E | H="disease", E="positive" | Problem setup |
 | 2 | Prior $P(D)$ | 0.001 | Disease prevalence |
 | 3 | Likelihood $P(Pos \mid D)$ | 0.99 | Test sensitivity |
-| 4 | $P(Pos) = 0.99 \times 0.001 + 0.02 \times 0.999$ | 0.02097 | Marginalization over D and Â¬D |
-| 5 | Numerator $0.99 \times 0.001$ | 0.00099 | Likelihood Ã— Prior |
-| 6 | Posterior $P(D \mid Pos)$ | 0.00099 / 0.02097 â‰ˆ 0.0472 | Only 4.72% despite positive test! |
+| 4 | $P(Pos) = 0.99 \times 0.001 + 0.02 \times 0.999$ | 0.02097 | Marginalization over D and ¬D |
+| 5 | Numerator $0.99 \times 0.001$ | 0.00099 | Likelihood × Prior |
+| 6 | Posterior $P(D \mid Pos)$ | 0.00099 / 0.02097 ≈ 0.0472 | Only 4.72% despite positive test! |
 
 **Key insight:** The disease is so rare that even a 98% accurate test produces mostly false positives.
 
@@ -196,7 +196,7 @@ print(f"P(no_disease | positive) = {posteriors['no_disease']:.4f}")
 ### Complexity Analysis
 
 
-**Why O(n):** Bayes' rule marginalizes over $n$ hypotheses. Each hypothesis contributes one multiplication and one addition to the evidence sum. Work scales linearly â€” you cannot compute a weighted sum without examining every term. This is optimal.
+**Why O(n):** Bayes' rule marginalizes over $n$ hypotheses. Each hypothesis contributes one multiplication and one addition to the evidence sum. Work scales linearly — you cannot compute a weighted sum without examining every term. This is optimal.
 
 | Scenario | Time Complexity | Space Complexity |
 |----------|:--------------:|:----------------:|
@@ -225,7 +225,7 @@ print(f"P(no_disease | positive) = {posteriors['no_disease']:.4f}")
 
 ## 9.2 Bayesian Networks
 
-### Real-World Analogy â€” Car Won't Start
+### Real-World Analogy — Car Won't Start
 
 
 Your car doesn't start in the morning. Several causes interact:
@@ -252,9 +252,9 @@ Burglary and Earthquake cause Alarm, which triggers calls from John and Mary. Th
 
 $$P(B, E, A, J, M) = P(B) P(E) P(A \mid B, E) P(J \mid A) P(M \mid A)$$
 
-A BN with $n$ nodes, each with at most $k$ parents and $d$ values, requires at most $n d^{k+1}$ parameters â€” a dramatic reduction from the full $d^n$ joint table.
+A BN with $n$ nodes, each with at most $k$ parents and $d$ values, requires at most $n d^{k+1}$ parameters — a dramatic reduction from the full $d^n$ joint table.
 
-### Algorithmic Steps â€” Constructing a Bayesian Network
+### Algorithmic Steps — Constructing a Bayesian Network
 
 
 **Input:** Set of random variables $X_1, \ldots, X_n$, domain knowledge or data
@@ -293,7 +293,7 @@ function BN-JOINT-PROB(bn, assignment) returns probability
     return prob
 ```
 
-### Step-by-Step Dry Run â€” Alarm Network Joint Probability
+### Step-by-Step Dry Run — Alarm Network Joint Probability
 
 
 **CPTs:** P(B)=0.001, P(E)=0.002, P(A|B,E): TT=0.95, TF=0.94, FT=0.29, FF=0.001
@@ -303,8 +303,8 @@ P(J|A): T=0.90, F=0.05; P(M|A): T=0.70, F=0.01
 
 | Step | Var | Value | Parents | CPT Entry | Running Product |
 |------|-----|-------|---------|-----------|----------------|
-| 1 | B | True | â€” | 0.001 | 0.001 |
-| 2 | E | True | â€” | 0.002 | 0.000002 |
+| 1 | B | True | — | 0.001 | 0.001 |
+| 2 | E | True | — | 0.002 | 0.000002 |
 | 3 | A | True | B=T, E=T | 0.95 | 0.0000019 |
 | 4 | J | True | A=T | 0.90 | 0.00000171 |
 | 5 | M | True | A=T | 0.70 | 0.000001197 |
@@ -365,7 +365,7 @@ print(f"P(B,E,A,J,M) = {p:.10f}")
 ### Complexity Analysis
 
 
-**Why BN parameter count is $O(n d^{k+1})$:** Each of $n$ nodes stores a CPT. For a node with $k$ parents and $d$ values, the CPT has $d^{k+1}$ entries (one combination per parent assignment per self value). The full joint table would have $d^n$ entries â€” exponential in all variables. The BN reduces this to exponential only in the *maximum number of parents* ($k \ll n$). This is why BNs are called "compact representations."
+**Why BN parameter count is $O(n d^{k+1})$:** Each of $n$ nodes stores a CPT. For a node with $k$ parents and $d$ values, the CPT has $d^{k+1}$ entries (one combination per parent assignment per self value). The full joint table would have $d^n$ entries — exponential in all variables. The BN reduces this to exponential only in the *maximum number of parents* ($k \ll n$). This is why BNs are called "compact representations."
 
 | Metric | Full Joint Table | Bayesian Network |
 |--------|:----------------:|:-----------------:|
@@ -394,7 +394,7 @@ print(f"P(B,E,A,J,M) = {p:.10f}")
 
 ## 9.3 d-Separation
 
-### Real-World Analogy â€” Family Traits
+### Real-World Analogy — Family Traits
 
 
 Three generations: Grandparent (G), Parent (P), Child (C).
@@ -416,7 +416,7 @@ Three generations: Grandparent (G), Parent (P), Child (C).
 
 $X$ and $Y$ are d-separated by $\mathcal{Z}$ if every path between them is blocked.
 
-### Algorithmic Steps â€” Checking d-Separation
+### Algorithmic Steps — Checking d-Separation
 
 
 **Input:** DAG, nodes X and Y, evidence set Z
@@ -464,7 +464,7 @@ function IS-ACTIVE(path, Z) returns Boolean
 |--------|------|-----------|----------|
 | (A, B, C) | Chain (A$\to$B$\to$C) | B is in Z $\to$ BLOCKED | Yes |
 | (B, C, D) | Collider (B$\to$C$\leftarrow$D) | C NOT in Z, no descendant in Z $\to$ blocked | Yes |
-| (C, D, E) | Chain (C$\leftarrow$D$\to$E) | D NOT in Z $\to$ unblocked (path already blocked) | â€” |
+| (C, D, E) | Chain (C$\leftarrow$D$\to$E) | D NOT in Z $\to$ unblocked (path already blocked) | — |
 
 All paths blocked $\to$ **A and E ARE d-separated by {B}**.
 
@@ -563,11 +563,11 @@ print(d_separated(dag, "A", "E", {"C"}))  # False
 1. **Empty evidence set (Z = {}):** Chains and forks remain active; colliders block unless a descendant is observed.
 2. **X = Y:** Trivially d-connected (zero-length path always exists).
 3. **Evidence on collider descendant:** Partially opens path, creating weak dependence between collider parents.
-4. **Multiple active paths:** One active path suffices to break d-separation â€” a single "open" path bypasses all blocked portions.
+4. **Multiple active paths:** One active path suffices to break d-separation — a single "open" path bypasses all blocked portions.
 
 ## 9.4 Inference by Enumeration
 
-### Real-World Analogy â€” Finding a Lost Key
+### Real-World Analogy — Finding a Lost Key
 
 
 You lost your key in a house with 3 rooms. P(Kitchen)=0.3, P(Living)=0.5, P(Bedroom)=0.2. You hear a jingle from the bedroom: P(Jingle|K)=0.1, P(Jingle|L)=0.2, P(Jingle|B)=0.9.
@@ -612,7 +612,7 @@ function ENUMERATE-ALL(vars, assignment, evidence) returns probability
         return sum
 ```
 
-### Step-by-Step Dry Run â€” $P(\text{Burglary} \mid \text{JohnCalls}, \text{MaryCalls})$
+### Step-by-Step Dry Run — $P(\text{Burglary} \mid \text{JohnCalls}, \text{MaryCalls})$
 
 
 **Step 1: Sum over all assignments with B=1, J=1, M=1**
@@ -678,7 +678,7 @@ print(f"P(Burglary=False | J,M) = {result[False]:.4f}")
 ### Complexity Analysis
 
 
-**Why $O(d^n)$ â€” exponential in all variables:** Enumeration sums over every possible assignment of $n$ unobserved variables. If each has $d$ values, there are $d^n$ assignments. Each requires $n$ CPT multiplications. Total work: $O(n d^n)$. Feasible for $n \leq 15$ but intractable for $n > 30$.
+**Why $O(d^n)$ — exponential in all variables:** Enumeration sums over every possible assignment of $n$ unobserved variables. If each has $d$ values, there are $d^n$ assignments. Each requires $n$ CPT multiplications. Total work: $O(n d^n)$. Feasible for $n \leq 15$ but intractable for $n > 30$.
 
 | Aspect | Complexity | Why |
 |--------|:----------:|-----|
@@ -706,16 +706,16 @@ print(f"P(Burglary=False | J,M) = {result[False]:.4f}")
 
 ## 9.5 Variable Elimination
 
-### Real-World Analogy â€” Summing a Multi-Column Ledger
+### Real-World Analogy — Summing a Multi-Column Ledger
 
 
 You have a spreadsheet with columns A, B, C, D and need totals for A=1. Instead of listing every row (enumeration):
-1. **Eliminate D:** Sum over D for each (A,B,C) â€” reduces one dimension.
+1. **Eliminate D:** Sum over D for each (A,B,C) — reduces one dimension.
 2. **Eliminate C:** Sum the result over C for each (A,B).
 3. **Eliminate B:** Sum over B for each A.
 4. **Read off:** Result for A=1.
 
-Variable Elimination sums out (eliminates) variables one at a time, reusing intermediate results â€” like compressing a spreadsheet dimension by dimension.
+Variable Elimination sums out (eliminates) variables one at a time, reusing intermediate results — like compressing a spreadsheet dimension by dimension.
 
 ### Algorithmic Steps
 
@@ -753,14 +753,14 @@ function VARIABLE-ELIMINATION(bn, query, evidence, order) returns distribution
     return NORMALIZE(result)
 ```
 
-### Step-by-Step Dry Run â€” VE on Alarm Network
+### Step-by-Step Dry Run — VE on Alarm Network
 
 
 **Query:** $P(B \mid J=1, M=1)$ with elimination order: [A, E]
 
 **Initial factors:** $f_B(B), f_E(E), f_A(A,B,E), f_J(A)$ [J=1], $f_M(A)$ [M=1]
 
-**Step 1: Eliminate A** â€” multiply $f_A, f_J, f_M$, sum out A
+**Step 1: Eliminate A** — multiply $f_A, f_J, f_M$, sum out A
 
 | B | E | A=0 Product | A=1 Product | Sum Over A |
 |---|---|-------------|-------------|-----------|
@@ -771,7 +771,7 @@ function VARIABLE-ELIMINATION(bn, query, evidence, order) returns distribution
 
 New factor $f_1(B,E)$ created.
 
-**Step 2: Eliminate E** â€” multiply $f_E$ with $f_1$, sum out E
+**Step 2: Eliminate E** — multiply $f_E$ with $f_1$, sum out E
 
 | B | E=F Product | E=T Product | Sum Over E |
 |---|---|-------------|-------------|-----------|
@@ -852,7 +852,7 @@ print(f"VE: P(Burglary=True | J,M) = {result_ve[True]:.4f}")
 ### Complexity Analysis
 
 
-**Why $O(d^{tw+1})$ where tw = treewidth:** Complexity is dominated by the largest intermediate factor created during elimination. Treewidth = (max variables in any factor) - 1. If the largest factor has $tw+1$ variables with $d$ values each, the factor has $d^{tw+1}$ entries. Elimination order dramatically affects treewidth â€” a good order can reduce tw from 15 to 3.
+**Why $O(d^{tw+1})$ where tw = treewidth:** Complexity is dominated by the largest intermediate factor created during elimination. Treewidth = (max variables in any factor) - 1. If the largest factor has $tw+1$ variables with $d$ values each, the factor has $d^{tw+1}$ entries. Elimination order dramatically affects treewidth — a good order can reduce tw from 15 to 3.
 
 | Aspect | Complexity | Why |
 |--------|:----------:|-----|
@@ -877,7 +877,7 @@ print(f"VE: P(Burglary=True | J,M) = {result_ve[True]:.4f}")
 
 1. **Empty network (no edges):** All factors involve single variables. $O(n)$.
 2. **Polytree:** Treewidth = max parents. Polynomial $O(n d^{k+1})$.
-3. **Near-complete graph:** Treewidth $\approx n-1$. Degrades to $O(n d^n)$ â€” no better than enumeration.
+3. **Near-complete graph:** Treewidth $\approx n-1$. Degrades to $O(n d^n)$ — no better than enumeration.
 4. **Elimination order heuristics:** Min-degree (eliminate fewest neighbors) and min-fill (eliminate adding fewest moral edges) are standard. A bad order (e.g., eliminating a highly-connected variable first) creates a huge intermediate factor.
 
 ## 9.6 Approximate Inference via Sampling
@@ -902,7 +902,7 @@ function REJECTION-SAMPLING(bn, query, evidence, N) returns estimate
 ### 9.6.2 Likelihood Weighting
 
 
-**Idea:** Fix evidence variables to observed values; weight each sample by the probability of evidence given sampled ancestors. No samples are rejected â€” all contribute proportionally.
+**Idea:** Fix evidence variables to observed values; weight each sample by the probability of evidence given sampled ancestors. No samples are rejected — all contribute proportionally.
 
 ```text
 function LIKELIHOOD-WEIGHTING(bn, query, evidence, N) returns estimate
@@ -923,7 +923,7 @@ function LIKELIHOOD-WEIGHTING(bn, query, evidence, N) returns estimate
 
 **Idea:** Resample each non-evidence variable conditioned on its Markov blanket (parents, children, co-parents). Converges to true posterior as sample size increases.
 
-### Complexity Analysis â€” Sampling Methods
+### Complexity Analysis — Sampling Methods
 
 
 | Method | Time per Sample | Convergence Rate | Handles Rare Evidence |
@@ -1005,9 +1005,9 @@ No. Correlation does not imply causation. This is the central warning of probabi
 In Bayesian networks, this is a **fork** structure: Weather $\to$ Ice Cream and Weather $\to$ Drowning. Conditioning on Weather makes Ice Cream and Drowning independent.
 
 **Pearl's Causal Hierarchy:**
-1. **Association** â€” "seeing": correlation, mutual information (Layer 1)
-2. **Intervention** â€” "doing": what happens if we force a variable (Layer 2)
-3. **Counterfactuals** â€” "imagining": what would have happened differently (Layer 3)
+1. **Association** — "seeing": correlation, mutual information (Layer 1)
+2. **Intervention** — "doing": what happens if we force a variable (Layer 2)
+3. **Counterfactuals** — "imagining": what would have happened differently (Layer 3)
 
 Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning via do-calculus.
 
@@ -1074,9 +1074,9 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 | Variable Elimination | Yes | Exact | O(exp treewidth) | Yes |
 | Rejection Sampling | No | Asymptotic | O(N / P(e)) | Rare evidence fails |
 | Likelihood Weighting | No | Asymptotic | O(N) | Yes |
-| Gibbs Sampling (MCMC) | No | Asymptotic | O(N Ã— vars) | Yes |
+| Gibbs Sampling (MCMC) | No | Asymptotic | O(N × vars) | Yes |
 
-## Quick Reference â€” d-Separation Rules
+## Quick Reference — d-Separation Rules
 
 | Structure | Path Type | Condition to Block Path |
 |-----------|:---------:|:----------------------:|
@@ -1138,7 +1138,7 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 
 ## 9.11 Summary
 
-Bayesian networks provide a compact graphical representation of joint probability distributions. Exact inference via variable elimination is efficient for low-treewidth networks; approximate methods scale to larger networks. Temporal models extend static BNs to sequential domains. The key principle throughout is that conditional independence â€” captured by the graph structure â€” makes probabilistic reasoning tractable.
+Bayesian networks provide a compact graphical representation of joint probability distributions. Exact inference via variable elimination is efficient for low-treewidth networks; approximate methods scale to larger networks. Temporal models extend static BNs to sequential domains. The key principle throughout is that conditional independence — captured by the graph structure — makes probabilistic reasoning tractable.
 
 **Key Takeaways:**
 - Bayes' rule is the foundation: posterior $\propto$ likelihood $\times$ prior

@@ -1,4 +1,4 @@
-﻿# Chapter 13: Observability
+# Chapter 13: Observability
 
 > **Previous:** [Monitoring and Logging](./12-monitoring-logging.md) | **Next:** [DevSecOps](./14-devsecops.md)
 
@@ -71,11 +71,11 @@ flowchart LR
 
 Observability is the ability to understand a system's internal state by examining its outputs. The three pillars provide complementary views:
 
-**Logs** â€” Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for debugging specific errors and tracing request lifecycles.
+**Logs** — Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for debugging specific errors and tracing request lifecycles.
 
-**Metrics** â€” Numeric aggregations over time. Provide system health at a glance. Low cardinality, efficient storage. Best for alerting, dashboards, and trend analysis.
+**Metrics** — Numeric aggregations over time. Provide system health at a glance. Low cardinality, efficient storage. Best for alerting, dashboards, and trend analysis.
 
-**Traces** â€” End-to-end request flow across distributed services. Show causality and timing. Best for understanding latency bottlenecks and service dependencies.
+**Traces** — End-to-end request flow across distributed services. Show causality and timing. Best for understanding latency bottlenecks and service dependencies.
 
 The pillars are interconnected. A metric alert leads to a dashboard, which reveals a trace with a slow span, which links to error logs containing the root cause. Modern observability platforms correlate these signals automatically.
 
@@ -86,11 +86,11 @@ OpenTelemetry (OTel) is the industry standard for observability instrumentation.
 
 **Core Components:**
 
-- **API** â€” Standard interfaces for creating traces, metrics, and logs. Language-specific (TypeScript, Java, Python, Go, etc.).
-- **SDK** â€” Language-specific implementations with configuration, batching, sampling, and exporting. Pluggable processors and exporters.
-- **Collector** â€” Vendor-agnostic telemetry processing pipeline. Receives telemetry in OTLP format, processes (filter, transform, sample), and exports to one or more backends.
-- **Instrumentation Libraries** â€” Automatic instrumentation for popular frameworks: Express, gRPC, database clients (PostgreSQL, MySQL, MongoDB), message queues (Kafka, RabbitMQ), HTTP clients, and more.
-- **Exporter** â€” Sends data to backends (Jaeger, Prometheus, Datadog, New Relic, AWS X-Ray, Azure Monitor).
+- **API** — Standard interfaces for creating traces, metrics, and logs. Language-specific (TypeScript, Java, Python, Go, etc.).
+- **SDK** — Language-specific implementations with configuration, batching, sampling, and exporting. Pluggable processors and exporters.
+- **Collector** — Vendor-agnostic telemetry processing pipeline. Receives telemetry in OTLP format, processes (filter, transform, sample), and exports to one or more backends.
+- **Instrumentation Libraries** — Automatic instrumentation for popular frameworks: Express, gRPC, database clients (PostgreSQL, MySQL, MongoDB), message queues (Kafka, RabbitMQ), HTTP clients, and more.
+- **Exporter** — Sends data to backends (Jaeger, Prometheus, Datadog, New Relic, AWS X-Ray, Azure Monitor).
 
 **Context Propagation:**
 OpenTelemetry propagates trace context across service boundaries via W3C Trace-Context headers:
@@ -107,10 +107,10 @@ This header is automatically injected into outgoing HTTP requests and extracted 
 Distributed tracing tracks a single request as it traverses multiple services.
 
 **Core Concepts:**
-- **Trace** â€” The full path of a request through the system. Identified by a Trace ID. A trace is a tree of spans.
-- **Span** â€” A single unit of work within a trace. Has a start time, duration, status (OK/ERROR), and attributes (key-value metadata). A span represents one operation in one service.
-- **Span Context** â€” Trace ID, Span ID, and propagation metadata (W3C Trace-Context).
-- **Parent-Child Relationship** â€” Spans form a tree structure. The root span represents the initial request entry point. Child spans represent downstream operations.
+- **Trace** — The full path of a request through the system. Identified by a Trace ID. A trace is a tree of spans.
+- **Span** — A single unit of work within a trace. Has a start time, duration, status (OK/ERROR), and attributes (key-value metadata). A span represents one operation in one service.
+- **Span Context** — Trace ID, Span ID, and propagation metadata (W3C Trace-Context).
+- **Parent-Child Relationship** — Spans form a tree structure. The root span represents the initial request entry point. Child spans represent downstream operations.
 
 **Instrumentation Example:**
 
@@ -152,8 +152,8 @@ async function processPayment(paymentId: string, amount: number) {
 | Grafana Tempo | Object store (S3, GCS) | Time range + service + operation | TraceQL | Cheap at scale (no content indexing) |
 
 **Sampling Strategies:**
-- **Head-based sampling** â€” Decision made at the root span. Simple but cannot prioritize by interestingness.
-- **Tail-based sampling** â€” Decision made after the trace is complete. Can keep traces with errors or high latency. More complex and resource-intensive.
+- **Head-based sampling** — Decision made at the root span. Simple but cannot prioritize by interestingness.
+- **Tail-based sampling** — Decision made after the trace is complete. Can keep traces with errors or high latency. More complex and resource-intensive.
 
 ### 13.4 Service Maps and Dependency Analysis
 
@@ -170,35 +170,35 @@ Service maps reveal unknown dependencies, single points of failure, unexpected t
 ### 13.5 RED Metrics and the USE Method
 
 
-**RED Method** (Rate, Errors, Duration) â€” For service-level monitoring:
-- **Rate** â€” Requests per second. Indicates traffic patterns and load.
-- **Errors** â€” Failed requests per second (explicit 5xx, implicit failures like wrong results or slow responses).
-- **Duration** â€” Latency distributions (average, p50, p90, p95, p99). Distinguish between successful and failed request latency.
+**RED Method** (Rate, Errors, Duration) — For service-level monitoring:
+- **Rate** — Requests per second. Indicates traffic patterns and load.
+- **Errors** — Failed requests per second (explicit 5xx, implicit failures like wrong results or slow responses).
+- **Duration** — Latency distributions (average, p50, p90, p95, p99). Distinguish between successful and failed request latency.
 
 RED applies to each service in the architecture. Every service should have RED metrics instrumented and dashboarded.
 
-**USE Method** (Utilization, Saturation, Errors) â€” For resource-level monitoring:
-- **Utilization** â€” Percentage of resource being used (CPU %, memory %, disk space %, network bandwidth %)
-- **Saturation** â€” Degree of resource contention (CPU run queue length, disk I/O queue depth, memory swap usage)
-- **Errors** â€” Error counts or rates (disk I/O errors, network interface errors/drops, memory allocation failures)
+**USE Method** (Utilization, Saturation, Errors) — For resource-level monitoring:
+- **Utilization** — Percentage of resource being used (CPU %, memory %, disk space %, network bandwidth %)
+- **Saturation** — Degree of resource contention (CPU run queue length, disk I/O queue depth, memory swap usage)
+- **Errors** — Error counts or rates (disk I/O errors, network interface errors/drops, memory allocation failures)
 
 USE applies to every resource in the system: CPU, memory, disk, network, and system limits (file descriptors, connection pools, thread pools).
 
 ### 13.6 SLOs and Error Budgets
 
 
-**Service Level Objective (SLO)** â€” Target level of reliability for a service. Example: 99.9% availability over a 30-day rolling window.
+**Service Level Objective (SLO)** — Target level of reliability for a service. Example: 99.9% availability over a 30-day rolling window.
 
-**Service Level Indicator (SLI)** â€” The actual measurement of reliability. Example: fraction of HTTP requests that complete successfully in under 500ms.
+**Service Level Indicator (SLI)** — The actual measurement of reliability. Example: fraction of HTTP requests that complete successfully in under 500ms.
 
-**Service Level Agreement (SLA)** â€” Contractual commitment to a customer. SLAs must be less stringent than internal SLOs.
+**Service Level Agreement (SLA)** — Contractual commitment to a customer. SLAs must be less stringent than internal SLOs.
 
-**Error Budget** â€” The allowed amount of unreliability. For a 99.9% SLO over 30 days:
+**Error Budget** — The allowed amount of unreliability. For a 99.9% SLO over 30 days:
 
 ```
-Error Budget = (1 - SLO) Ã— Time Window
-             = 0.001 Ã— (30 Ã— 24 Ã— 60 Ã— 60)
-             = 2,592 seconds Ëœ 43 minutes
+Error Budget = (1 - SLO) × Time Window
+             = 0.001 × (30 × 24 × 60 × 60)
+             = 2,592 seconds ˜ 43 minutes
 ```
 
 **Error Budget Mechanics:**
@@ -228,13 +228,13 @@ groups:
 
 Observability infrastructure can become a significant cost driver. Optimization strategies:
 
-- **Sampling** â€” Head-based or tail-based trace sampling. Start with 10% sampling for high-volume services.
-- **Retention Tiers** â€” Raw data at short retention (7 days), aggregated data longer (90 days), summaries for archive (1 year+).
-- **Aggregation** â€” Precompute and store aggregations rather than raw data. Recording rules reduce Prometheus query costs.
-- **Cardinality Control** â€” Limit label cardinality to prevent metric explosion. A label with 10000 unique values creates 10000 time series. Monitor cardinality with `prometheus_tsdb_head_series`.
-- **Log Levels** â€” Store INFO+ in production; DEBUG rotated quickly (24-48 hours).
-- **Log Content** â€” Avoid logging large payloads or sensitive data. Use sampling for high-volume debug logs.
-- **Efficient Exporters** â€” Batch telemetry before export. Configure appropriate batch size and export interval.
+- **Sampling** — Head-based or tail-based trace sampling. Start with 10% sampling for high-volume services.
+- **Retention Tiers** — Raw data at short retention (7 days), aggregated data longer (90 days), summaries for archive (1 year+).
+- **Aggregation** — Precompute and store aggregations rather than raw data. Recording rules reduce Prometheus query costs.
+- **Cardinality Control** — Limit label cardinality to prevent metric explosion. A label with 10000 unique values creates 10000 time series. Monitor cardinality with `prometheus_tsdb_head_series`.
+- **Log Levels** — Store INFO+ in production; DEBUG rotated quickly (24-48 hours).
+- **Log Content** — Avoid logging large payloads or sensitive data. Use sampling for high-volume debug logs.
+- **Efficient Exporters** — Batch telemetry before export. Configure appropriate batch size and export interval.
 
 ---
 
@@ -466,7 +466,7 @@ console.log(calculator.generateDashboard(slos, [999000, 994000, 999800], [100000
 | OpenTelemetry | Standard API/SDK/Collector for telemetry |
 | Jaeger/Tempo | Distributed tracing backends |
 | SLO | Target reliability level for a service |
-| Error Budget | Allowed unreliability = (1 - SLO) Ã— window |
+| Error Budget | Allowed unreliability = (1 - SLO) × window |
 
 ## Quick Reference
 

@@ -1,4 +1,4 @@
-﻿# Chapter 8: Mock Interview Scenarios
+# Chapter 8: Mock Interview Scenarios
 
 ## Learning Objectives
 
@@ -31,14 +31,14 @@
 1. **Read each scenario** to understand the flow and format of different interview types
 2. **Cover the candidate's response** and try answering yourself first
 3. **Check against the rubric** to evaluate your own performance
-4. **Role-play with a friend** â€” one person reads the interviewer, the other responds
+4. **Role-play with a friend** — one person reads the interviewer, the other responds
 5. **Record yourself** performing the candidate role and play it back for self-improvement
 
 ---
 
 ## Scenario 1: Government Panel Interview (NIC Scientist-B)
 
-**Setting:** A panel of 4 members â€” Chairman (Senior Director), Two Technical Experts, HR Representative.
+**Setting:** A panel of 4 members — Chairman (Senior Director), Two Technical Experts, HR Representative.
 **Duration:** 25 minutes
 **Candidate:** Rahul, B.Tech CSE, 2022 graduate, GATE qualified.
 
@@ -108,8 +108,8 @@ a higher salary?
 Candidate: Sir, I believe technology for public service has a deeper impact.
 At NIC, my work on DigiLocker or e-Office could serve 100+ crore citizens.
 That scale of impact is unmatched in the private sector. Additionally, the
-variety of projects at NIC â€” from AI-based language translation (Bhashini)
-to blockchain for certificates â€” offers tremendous learning opportunities.
+variety of projects at NIC — from AI-based language translation (Bhashini)
+to blockchain for certificates — offers tremendous learning opportunities.
 Salary is important, but long-term satisfaction comes from meaningful work.
 
 Panel Chair: Thank you, Rahul. Do you have any questions for us?
@@ -136,7 +136,7 @@ Candidate: Thank you, sir. Thank you, ma'am. It was a pleasure.
 
 ---
 
-## Scenario 2: Technical Round â€” Product-Based Company (Amazon SDE-1)
+## Scenario 2: Technical Round — Product-Based Company (Amazon SDE-1)
 
 **Setting:** 2 interviewers (Backend + Frontend expert). Remote via video call.
 **Duration:** 60 minutes (coding + system design)
@@ -151,9 +151,9 @@ longest contiguous substring that reads the same forwards and backwards?
 
 Interviewer 1: Yes. For example, "babad" should return "bab" or "aba".
 
-Candidate: Let me think about approaches. The brute force would be O(nÂ³) â€”
+Candidate: Let me think about approaches. The brute force would be O(n³) —
 check every substring. But I can use the "expand around center" approach
-which gives O(nÂ²) with O(1) space.
+which gives O(n²) with O(1) space.
 
 [Priya writes code on shared editor]
 
@@ -182,7 +182,7 @@ function longestPalindrome(s: string): string {
 
 Interviewer 1: What's the time complexity? Can you optimize further?
 
-Candidate: Time is O(nÂ²) â€” for each of n centers, we expand up to n times.
+Candidate: Time is O(n²) — for each of n centers, we expand up to n times.
 Space is O(1) excluding output. We could use Manacher's algorithm for O(n)
 time, but it's significantly more complex and only beneficial for very large
 strings. For most cases, the expand-around-center approach is preferred.
@@ -199,7 +199,7 @@ console.log(longestPalindrome("racecar"));// "racecar"
 Interviewer 2: Let's move to system design. Design a URL shortening service
 like TinyURL. Start with requirements.
 
-Candidate: [Walks through complete solution â€” see Chapter 3 for detailed
+Candidate: [Walks through complete solution — see Chapter 3 for detailed
 approach with API design, database schema, caching strategy, and scaling]
 
 Interviewer 2: How would you handle custom short URLs?
@@ -215,7 +215,7 @@ Candidate: Custom short URLs need a separate validation flow:
 
 Interviewer 1: Tell me about a time you had a disagreement with a colleague.
 
-Candidate: [Uses STAR method â€” see Chapter 5 for detailed response]
+Candidate: [Uses STAR method — see Chapter 5 for detailed response]
 
 Interviewer 2: Do you have questions for us?
 
@@ -236,7 +236,7 @@ the most common type of production issue you encounter?
 
 ---
 
-## Scenario 3: HR Round â€” Service-Based Company (TCS Ninja/Digital)
+## Scenario 3: HR Round — Service-Based Company (TCS Ninja/Digital)
 
 **Setting:** 1 HR Manager. Face-to-face.
 **Duration:** 15 minutes
@@ -251,7 +251,7 @@ HR: I'm good. Let's start. Tell me about yourself.
 
 Candidate: I'm Amit, a final year Computer Science student from SRM
 Institute of Science and Technology. I have a CGPA of 8.5. I'm passionate
-about full-stack development â€” I've built a hostel management portal using
+about full-stack development — I've built a hostel management portal using
 React and Node.js that's being used by our college. I've also completed
 a virtual internship in web development and solved 200+ problems on
 LeetCode. I'm looking for a role where I can work on real-world products
@@ -261,11 +261,11 @@ HR: Why TCS?
 
 Candidate: TCS is India's largest IT services company with a presence in
 50+ countries. What attracts me specifically is:
-1. The learning ecosystem â€” TCS has amazing internal training platforms
-2. The variety of domains â€” from banking to healthcare to retail
-3. The culture of innovation â€” I've read about TCS's research in AI and
+1. The learning ecosystem — TCS has amazing internal training platforms
+2. The variety of domains — from banking to healthcare to retail
+3. The culture of innovation — I've read about TCS's research in AI and
    quantum computing
-4. The structured career growth â€” the TCS Digital program is exactly
+4. The structured career growth — the TCS Digital program is exactly
    the kind of challenging role I'm seeking
 5. The work-life balance that TCS is known for
 
@@ -284,7 +284,7 @@ HR: Are you willing to relocate to any TCS office in India?
 
 Candidate: Absolutely. One of the reasons I'm excited about TCS is the
 opportunity to work across different locations and projects. I'm open to
-relocating anywhere in India â€” whether it's Bangalore, Mumbai, Hyderabad,
+relocating anywhere in India — whether it's Bangalore, Mumbai, Hyderabad,
 or even overseas opportunities later.
 
 HR: Do you have any questions for me?
@@ -304,14 +304,14 @@ Candidate: Thank you, ma'am. I look forward to hearing from TCS.
 |----------|-----------|------|---------|------|
 | Self-introduction | Structured, relevant, confident | Clear | Too long/short | Incoherent |
 | Company research | Specific, shows genuine interest | Generic | "Good company" | None |
-| Strengths/Weaknesses | Real examples, improvement plan | Real but generic | ClichÃ© | "Perfectionist" |
+| Strengths/Weaknesses | Real examples, improvement plan | Real but generic | Cliché | "Perfectionist" |
 | Attitude | Enthusiastic, open, positive | Positive but generic | Neutral | Negative/arrogant |
 | Communication | Clear, confident, articulate | Good | Fillers | Mumbling |
 | Questions asked | Insightful questions | Good questions | Basic | None |
 
 ---
 
-## Scenario 4: System Design Round (Senior Role â€” Uber/Flipkart)
+## Scenario 4: System Design Round (Senior Role — Uber/Flipkart)
 
 **Setting:** 2 senior engineers. Whiteboard (or virtual whiteboard).
 **Duration:** 75 minutes
@@ -336,7 +336,7 @@ Functional Requirements:
 3. System: Match riders to drivers, calculate fare, ETA
 
 Non-Functional Requirements:
-- 1M rides/day â†’ ~12 rides/second peak
+- 1M rides/day → ~12 rides/second peak
 - Matching latency &lt;5 seconds
 - 99.99% availability for matching
 - Driver location updates every 5 seconds
@@ -344,21 +344,21 @@ Non-Functional Requirements:
 Scale estimation:
 - 100K drivers online during peak
 - 1M requests per minute location updates
-- Each update: ~100 bytes â†’ 100 MB/min writes
-- Trips data: 1M/day Ã— 2KB = 2GB/day â†’ 730GB/year
+- Each update: ~100 bytes → 100 MB/min writes
+- Trips data: 1M/day × 2KB = 2GB/day → 730GB/year
 
 Interviewer 2: Walk me through the high-level architecture.
 
 Candidate: [Draws architecture on whiteboard]
 
-[API Gateway] â†’ [Ride Service] â†’ [Matching Service] â†’ [Neo4j for geo index]
-             â†’ [Driver Service]  â†’ [Location Service] â†’ [Redis Geo]
-             â†’ [Trip Service]    â†’ [Cassandra for trips]
-             â†’ [Payment Service] â†’ [PostgreSQL]
-             â†’ [Kafka] â†’ [Analytics, Surge Pricing, ETA Calculator]
+[API Gateway] → [Ride Service] → [Matching Service] → [Neo4j for geo index]
+             → [Driver Service]  → [Location Service] → [Redis Geo]
+             → [Trip Service]    → [Cassandra for trips]
+             → [Payment Service] → [PostgreSQL]
+             → [Kafka] → [Analytics, Surge Pricing, ETA Calculator]
 
-Rider App â†’ WebSocket â†’ Location Service â†’ Redis Geo â†’ Matching Service
-Driver App â†’ WebSocket â†’ Location Service
+Rider App → WebSocket → Location Service → Redis Geo → Matching Service
+Driver App → WebSocket → Location Service
 
 [Candidate then deep-dives into each component]
 
@@ -381,10 +381,10 @@ Interviewer 2: How do you handle surge pricing?
 
 Candidate: Surge pricing algorithm:
 
-1. Divide city into geohash grids (level 7 â†’ ~150m resolution)
+1. Divide city into geohash grids (level 7 → ~150m resolution)
 2. Every 5 minutes, calculate supply/demand ratio per grid
 3. If demand/supply > threshold(1.5x), trigger surge
-4. Surge multiplier: base Ã— min(3, function(demand/supply))
+4. Surge multiplier: base × min(3, function(demand/supply))
 5. Surge communicated to riders before request
 6. Drivers in surge areas get priority matching
 7. Surge pricing decays over 15 minutes as supply normalizes
@@ -396,14 +396,14 @@ Candidate: Multiple strategies:
 2. Kafka for asynchronous communication (cushions traffic spikes)
 3. Redis cluster with sentinel for high availability
 4. Cassandra for trip data (no single point of failure)
-5. Graceful degradation: if surge unavailable â†’ use flat pricing
-6. If matching service down â†’ fallback to round-robin among nearby drivers
+5. Graceful degradation: if surge unavailable → use flat pricing
+6. If matching service down → fallback to round-robin among nearby drivers
 7. Location updates stored in a buffer (local storage) if network fails
 
 Interviewer 1: Good. What's the most critical thing you'd monitor?
 
 Candidate: The top 5 metrics:
-1. Match success rate (ride requested â†’ driver assigned)
+1. Match success rate (ride requested → driver assigned)
 2. Matching latency P99
 3. ETA accuracy (predicted vs actual)
 4. System-wide supply/demand ratio
@@ -428,7 +428,7 @@ what's the observability stack you use?
 
 ---
 
-## Scenario 5: Coding Round â€” FAANG (Google/Microsoft)
+## Scenario 5: Coding Round — FAANG (Google/Microsoft)
 
 **Setting:** 2 coding interviews, each 45 minutes. Google Docs.
 **Duration:** 90 minutes total
@@ -440,7 +440,7 @@ Interviewer: Let's start. Given a 2D grid of '1's (land) and '0's (water),
 count the number of islands. An island is surrounded by water and formed
 by connecting adjacent lands horizontally or vertically.
 
-Candidate: Let me understand â€” adjacent means up, down, left, right? Not
+Candidate: Let me understand — adjacent means up, down, left, right? Not
 diagonal? And can I modify the input grid?
 
 Interviewer: Correct on adjacency. Yes, you can modify.
@@ -482,9 +482,9 @@ function numIslands(grid: string[][]): number {
 
 Interviewer: Time and space complexity?
 
-Candidate: Time is O(m Ã— n) â€” we visit each cell once. Space is O(m Ã— n)
+Candidate: Time is O(m × n) — we visit each cell once. Space is O(m × n)
 in the worst case (if the grid is all land, the recursion stack can be
-m Ã— n deep).
+m × n deep).
 
 Interviewer: What if the grid is very large and DFS recursion causes stack
 overflow? How would you handle it?
@@ -517,25 +517,25 @@ and getRandom in O(1) average time.
 
 Candidate: I'll use a combination of a HashMap and an ArrayList.
 
-HashMap: maps value â†’ index in array
+HashMap: maps value → index in array
 ArrayList: stores values
 
 insert(val):
-  - Add to end of array â†’ O(1)
-  - Map val â†’ array.length - 1 â†’ O(1)
+  - Add to end of array → O(1)
+  - Map val → array.length - 1 → O(1)
 
 delete(val):
-  - Get index from map â†’ O(1)
-  - Swap with last element â†’ O(1)
-  - Update map for swapped element â†’ O(1)
-  - Remove last element â†’ O(1)
-  - Remove val from map â†’ O(1)
+  - Get index from map → O(1)
+  - Swap with last element → O(1)
+  - Update map for swapped element → O(1)
+  - Remove last element → O(1)
+  - Remove val from map → O(1)
 
 search(val):
-  - Check map.has(val) â†’ O(1)
+  - Check map.has(val) → O(1)
 
 getRandom():
-  - Random index, return array[index] â†’ O(1)
+  - Random index, return array[index] → O(1)
 
 [Writes implementation]
 
@@ -590,7 +590,7 @@ remove operation becomes slightly more complex.
 [Candidates are given 2 minutes to think, then discussion begins]
 
 Candidate A (Opens): Good morning everyone. I believe regulation is
-necessary but must be balanced. AI poses real risks â€” job displacement,
+necessary but must be balanced. AI poses real risks — job displacement,
 bias in algorithms, privacy concerns. However, over-regulation could
 stifle innovation and put India behind China and the US. I propose a
 tiered regulatory approach: high-risk AI (healthcare, criminal justice)
@@ -656,8 +656,8 @@ Candidate: [Gives structured self-introduction]
 Chairman: What core banking system does SBI use? What are its advantages?
 
 Candidate: SBI uses TCS BaNCS as its core banking solution. Advantages:
-1. Handles SBI's massive scale â€” 50,000+ branches, 45Cr+ customers
-2. Supports multi-channel integration â€” ATM, mobile, internet banking
+1. Handles SBI's massive scale — 50,000+ branches, 45Cr+ customers
+2. Supports multi-channel integration — ATM, mobile, internet banking
 3. Real-time transaction processing across all channels
 4. Modular architecture allowing easy feature additions
 5. Robust security and audit framework for compliance
@@ -684,7 +684,7 @@ Candidate: BASEL III is a global regulatory framework for bank capital
 adequacy, stress testing, and market liquidity risk. IT implications:
 1. Need for robust risk management systems to calculate capital ratios
 2. Data aggregation and reporting systems for regulatory compliance
-3. Stress testing automation â€” scenario analysis systems
+3. Stress testing automation — scenario analysis systems
 4. Real-time monitoring dashboards for liquidity coverage ratio (LCR)
 5. Enhanced data quality and lineage tracking for audit
 
@@ -725,7 +725,7 @@ Candidate: Key differences:
 
 Interviewer: Explain polymorphism with an example.
 
-Candidate: Polymorphism means "many forms" â€” same method name, different
+Candidate: Polymorphism means "many forms" — same method name, different
 implementations. There are two types:
 [Gives examples of compile-time (overloading) and runtime (overriding)]
 
@@ -736,10 +736,10 @@ indefinitely for resources held by each other. Four conditions:
 Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait.
 
 Avoidance strategies:
-1. Lock ordering â€” always acquire locks in a fixed order
-2. Lock timeout â€” release if unable to acquire within time
-3. Deadlock detection â€” wait-for graph cycle detection
-4. Banker's algorithm â€” resource allocation in safe state
+1. Lock ordering — always acquire locks in a fixed order
+2. Lock timeout — release if unable to acquire within time
+3. Deadlock detection — wait-for graph cycle detection
+4. Banker's algorithm — resource allocation in safe state
 
 Interviewer: Write a SQL query to find the second highest salary.
 
@@ -772,25 +772,25 @@ improve the "Buy Again" feature?
 Candidate: Let me start by understanding the current state.
 
 What problems do users face with "Buy Again"?
-1. Irrelevant suggestions â€” showing items bought as gifts
-2. Cluttered UI â€” too many items, no categorization
-3. Missing context â€” no info on why items are suggested
-4. No pricing updates â€” shows old prices without changes
+1. Irrelevant suggestions — showing items bought as gifts
+2. Cluttered UI — too many items, no categorization
+3. Missing context — no info on why items are suggested
+4. No pricing updates — shows old prices without changes
 
 My proposed improvements:
 
-Phase 1 â€” Quick wins (1 month):
-- Show price change indicator (â†‘â†“) next to previously bought items
+Phase 1 — Quick wins (1 month):
+- Show price change indicator (↑↓) next to previously bought items
 - Allow users to hide specific items from "Buy Again"
 - Add category filters (Groceries, Electronics, etc.)
 
-Phase 2 â€” ML improvements (3 months):
+Phase 2 — ML improvements (3 months):
 - Train model to distinguish personal vs gift purchases
-- "Smart Frequency" â€” show items based on typical repurchase cycles
+- "Smart Frequency" — show items based on typical repurchase cycles
   (toothpaste every 2 months, phone every 3 years)
-- Bundle recommendations â€” "You bought this last time, also consider..."
+- Bundle recommendations — "You bought this last time, also consider..."
 
-Phase 3 â€” Personalization (6 months):
+Phase 3 — Personalization (6 months):
 - Subscription integration: show subscription items first
 - Budget-conscious: show price drops and deals on past purchases
 - Bulk reorder: "Add all from today's Buy Again" for frequent shoppers
@@ -804,9 +804,9 @@ Success metrics:
 Interviewer: How would you decide which phase to build first?
 
 Candidate: I'd prioritize by impact/effort:
-Phase 1: High impact (user satisfaction), low effort â†’ Build first
-Phase 2: High impact (revenue), medium effort â†’ Build second
-Phase 3: Medium impact, high effort â†’ Build last
+Phase 1: High impact (user satisfaction), low effort → Build first
+Phase 2: High impact (revenue), medium effort → Build second
+Phase 3: Medium impact, high effort → Build last
 
 I'd run A/B tests for each phase before full rollout.
 ```
@@ -834,7 +834,7 @@ Proposed Architecture:
 
 [Draws diagram]
 
-API Gateway (Kong) â†’ [Product Service] [Order Service] [Payment Service]
+API Gateway (Kong) → [Product Service] [Order Service] [Payment Service]
                      [User Service]   [Cart Service]  [Notification Service]
 
 Each service:
@@ -847,30 +847,30 @@ Migration Strategy:
 Strangler Fig Pattern:
 1. Identify bounded contexts (catalog, orders, payment, users)
 2. Extract one service at a time starting with lowest risk (Users)
-3. Route traffic gradually â€” 10% â†’ 50% â†’ 100%
+3. Route traffic gradually — 10% → 50% → 100%
 4. Each extraction: 2 weeks of development, 1 week of testing, 1 week of
-   phased rollout â†’ 24 weeks total for 4 services
+   phased rollout → 24 weeks total for 4 services
 
 Key Concerns Addressed:
-1. Data consistency â†’ Saga pattern with compensating transactions
-2. Service discovery â†’ Kubernetes DNS + Consul
-3. Monitoring â†’ Prometheus + Grafana + Jaeger tracing
-4. Deployment â†’ ArgoCD for GitOps, blue-green deployments
+1. Data consistency → Saga pattern with compensating transactions
+2. Service discovery → Kubernetes DNS + Consul
+3. Monitoring → Prometheus + Grafana + Jaeger tracing
+4. Deployment → ArgoCD for GitOps, blue-green deployments
 
 Risks and Mitigations:
-- Risk: Network latency between services â†’ Use gRPC + service mesh
-- Risk: Debugging across services â†’ Distributed tracing + structured logging
-- Risk: Team learning curve â†’ 2-week spike training before migration starts
-- Risk: Database per service â†’ Eventual consistency acceptable for most flows
+- Risk: Network latency between services → Use gRPC + service mesh
+- Risk: Debugging across services → Distributed tracing + structured logging
+- Risk: Team learning curve → 2-week spike training before migration starts
+- Risk: Database per service → Eventual consistency acceptable for most flows
 
 Panel: How do you handle distributed transactions for payments?
 
 Candidate: For payments, I'd use the Saga pattern with choreography:
 
 Step 1: Order Service creates order (PENDING)
-Step 2: Payment Service reserves amount â†’ emits PAYMENT_RESERVED
-Step 3: Inventory Service deducts stock â†’ emits INVENTORY_DEDUCTED
-Step 4: Shipping Service creates shipment â†’ emits SHIPMENT_CREATED
+Step 2: Payment Service reserves amount → emits PAYMENT_RESERVED
+Step 3: Inventory Service deducts stock → emits INVENTORY_DEDUCTED
+Step 4: Shipping Service creates shipment → emits SHIPMENT_CREATED
 Step 5: Order Service marks order CONFIRMED
 
 If any step fails:
@@ -878,7 +878,7 @@ If any step fails:
 - Example: Payment reservation expires in 15 minutes if not confirmed
 - Dead letter queue for manual intervention
 
-Panel: What's your recommendation â€” build or buy for this migration?
+Panel: What's your recommendation — build or buy for this migration?
 
 Candidate: I recommend a hybrid approach:
 - Build: Core business logic services (we need differentiation)
@@ -914,7 +914,7 @@ I'm impressed. Can you tell me a bit about your experience with distributed
 systems?
 
 You: [2-minute answer focusing on one key project involving distributed
-systems â€” architecture, scale, challenges, results]
+systems — architecture, scale, challenges, results]
 
 Recruiter: Great. Let me ask a quick coding question. Given a string,
 find the first non-repeating character. Can you explain your approach?
@@ -932,11 +932,11 @@ for in terms of technical depth for this role?
 ### Micro-Scenario 2: Take-Home Assignment Review (45 min)
 
 ```
-Interviewer: We've reviewed your take-home assignment â€” an event booking
+Interviewer: We've reviewed your take-home assignment — an event booking
 API. Walk me through your architecture decisions.
 
-You: [Structure your answer around: requirements â†’ design decisions â†’
-trade-offs â†’ what you'd improve]
+You: [Structure your answer around: requirements → design decisions →
+trade-offs → what you'd improve]
 
 Key points to cover:
 1. Why you chose SQL over NoSQL (ACID for bookings)
@@ -974,12 +974,12 @@ You: [Structured estimation approach]
 2. Smartphone users: ~4 billion (50%)
 3. WhatsApp users: ~2.5 billion (25-30% of total, ~60% of smartphone users)
 4. Average messages per user per day:
-   - Power users: 20% send 100 messages â†’ 2B Ã— 0.2 Ã— 100 = 40B
-   - Moderate users: 50% send 20 messages â†’ 2B Ã— 0.5 Ã— 20 = 20B
-   - Light users: 30% send 3 messages â†’ 2B Ã— 0.3 Ã— 3 = 1.8B
+   - Power users: 20% send 100 messages → 2B × 0.2 × 100 = 40B
+   - Moderate users: 50% send 20 messages → 2B × 0.5 × 20 = 20B
+   - Light users: 30% send 3 messages → 2B × 0.3 × 3 = 1.8B
    Total: ~62 billion messages per day
 
-Check: This is about 1.6 bytes per message Ã— 62B = ~100 GB/day metadata
+Check: This is about 1.6 bytes per message × 62B = ~100 GB/day metadata
 (not including media). Seems reasonable for a service handling 100B+
 messages daily.
 ```
@@ -1015,14 +1015,14 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 | Criterion | Unsatisfactory (0) | Developing (1) | Competent (2) | Excellent (3) |
 |-----------|-------------------|---------------|---------------|----------------|
 | Understanding | Jumps to code without clarifying | Asks basic questions | Clarifies inputs/outputs/edge cases | Clarifies + discusses constraints |
-| Approach | No plan, random attempts | One approach only | Brute force â†’ optimal | Multiple approaches with trade-offs |
+| Approach | No plan, random attempts | One approach only | Brute force → optimal | Multiple approaches with trade-offs |
 | Correctness | Wrong answer | Works for sample only | Works for all test cases | Handles all edge cases |
 | Code quality | Unreadable | Works but messy | Clean, well-named | Production-quality code |
 | Complexity | No analysis | Incorrect analysis | Correct time & space | Trade-off discussion |
 | Testing | No testing | One test case | Multiple cases + edge cases | Systematic testing strategy |
 | Communication | Silent coding | Minimal explanation | Good thought process | Excellent verbalization |
 
-**Scoring:** 0-7 â†’ Need significant improvement, 8-14 â†’ Getting there, 15-18 â†’ Good, 19-21 â†’ Excellent
+**Scoring:** 0-7 → Need significant improvement, 8-14 → Getting there, 15-18 → Good, 19-21 → Excellent
 
 ### Behavioral Interview Self-Rubric
 
@@ -1075,20 +1075,20 @@ R: VP agreed to the pilot approach, the spike revealed 3x more effort
 
 | Technique | How It Works |
 |-----------|-------------|
-| Box breathing | Inhale 4s â†’ Hold 4s â†’ Exhale 4s â†’ Hold 4s |
+| Box breathing | Inhale 4s → Hold 4s → Exhale 4s → Hold 4s |
 | Power pose | 2 minutes of open-body posture before interview |
 | Reframe nervousness as excitement | "I'm excited, not nervous" changes physiology |
 | Preparation overconfidence | Over-prepare to the point where anxiety is replaced by confidence |
 | Arrive early | 15 minutes early reduces time-pressure anxiety |
-| First question strategy | Prepare a strong answer to "Tell me about yourself" â€” getting the first answer right builds momentum |
+| First question strategy | Prepare a strong answer to "Tell me about yourself" — getting the first answer right builds momentum |
 
 ### The STAR Delivery Technique
 
 When delivering a STAR answer:
-1. **Situation** â€” 15 seconds. Set context concisely.
-2. **Task** â€” 10 seconds. Your specific role.
-3. **Action** â€” 45 seconds. The bulk of your answer. Use "I" statements.
-4. **Result** â€” 20 seconds. Quantified impact. Numbers matter.
+1. **Situation** — 15 seconds. Set context concisely.
+2. **Task** — 10 seconds. Your specific role.
+3. **Action** — 45 seconds. The bulk of your answer. Use "I" statements.
+4. **Result** — 20 seconds. Quantified impact. Numbers matter.
 
 Total target: 90 seconds per behavioral answer.
 
@@ -1130,16 +1130,16 @@ Total target: 90 seconds per behavioral answer.
 
 This chapter presented 10 detailed mock interview scenarios:
 
-1. **NIC Panel Interview** â€” Government technical interview with project defense and core CS questions
-2. **Amazon SDE-1** â€” Coding (longest palindrome) + System design (URL shortener) + Behavioral
-3. **TCS HR** â€” Service-based company HR round with typical questions
-4. **Uber System Design** â€” Ride-hailing system deep dive with matching and surge pricing
-5. **Google Coding** â€” Two coding rounds (Number of Islands, Randomized Set)
-6. **PSU Group Discussion** â€” AI regulation topic with structured discussion
-7. **IBPS SO** â€” Banking IT interview covering CBS, UPI, BASEL III
-8. **Campus Placement** â€” Quick 10-minute mass recruitment interview
-9. **PM Interview** â€” Product case study (Amazon Buy Again feature)
-10. **Tech Lead Review** â€” Architecture migration proposal with promotion panel
+1. **NIC Panel Interview** — Government technical interview with project defense and core CS questions
+2. **Amazon SDE-1** — Coding (longest palindrome) + System design (URL shortener) + Behavioral
+3. **TCS HR** — Service-based company HR round with typical questions
+4. **Uber System Design** — Ride-hailing system deep dive with matching and surge pricing
+5. **Google Coding** — Two coding rounds (Number of Islands, Randomized Set)
+6. **PSU Group Discussion** — AI regulation topic with structured discussion
+7. **IBPS SO** — Banking IT interview covering CBS, UPI, BASEL III
+8. **Campus Placement** — Quick 10-minute mass recruitment interview
+9. **PM Interview** — Product case study (Amazon Buy Again feature)
+10. **Tech Lead Review** — Architecture migration proposal with promotion panel
 
 ## Practical Takeaways
 
@@ -1151,10 +1151,10 @@ This chapter presented 10 detailed mock interview scenarios:
 
 4. **Adapt to the interview type:** Government interviews reward depth and humility. FAANG rewards optimization and speed. Service companies reward communication and fundamentals.
 
-5. **â­ Role-play all 10 scenarios** with a friend before your actual interview. At minimum, practice Scenarios 1, 2, 3, and 5.
+5. **⭐ Role-play all 10 scenarios** with a friend before your actual interview. At minimum, practice Scenarios 1, 2, 3, and 5.
 
-6. **For each scenario, prepare:** What would YOUR answer be? Don't just read â€” actively respond.
+6. **For each scenario, prepare:** What would YOUR answer be? Don't just read — actively respond.
 
-7. **The STAR method works everywhere** â€” for code, system design, and behavioral answers. Structure is key.
+7. **The STAR method works everywhere** — for code, system design, and behavioral answers. Structure is key.
 
-8. **Ask questions at the end** â€” every scenario should end with 2-3 thoughtful questions. This is your chance to show genuine interest.
+8. **Ask questions at the end** — every scenario should end with 2-3 thoughtful questions. This is your chance to show genuine interest.

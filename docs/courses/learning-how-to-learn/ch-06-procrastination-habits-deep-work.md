@@ -1,12 +1,12 @@
-﻿# Chapter 6: Procrastination, Habits & Deep Work
+# Chapter 6: Procrastination, Habits & Deep Work
 
-> **Prerequisites:** [Chapter 5: Memory Systems & Mnemonics](./ch-05-memory-systems.md) â€” Memory techniques for encoding and retrieval.
-> **Next:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) â€” Apply all learning techniques to coding interview preparation.
+> **Prerequisites:** [Chapter 5: Memory Systems & Mnemonics](./ch-05-memory-systems.md) — Memory techniques for encoding and retrieval.
+> **Next:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) — Apply all learning techniques to coding interview preparation.
 
-> **Understanding why you procrastinate â€” and what to do about it â€” is the single highest-leverage skill in learning.**
-> 20 Q&As Â· Practical frameworks grounded in behavioral psychology and cognitive science.
+> **Understanding why you procrastinate — and what to do about it — is the single highest-leverage skill in learning.**
+> 20 Q&As · Practical frameworks grounded in behavioral psychology and cognitive science.
 
-You know what to study. You have the resources. You've set your goals. And yet â€” somehow â€” you're on YouTube, cleaning your desk, or reorganizing your bookmarks. Procrastination isn't laziness; it's an emotional regulation problem. Your brain perceives studying as a threat (boring, difficult, uncertain) and reaches for a guaranteed dopamine hit instead.
+You know what to study. You have the resources. You've set your goals. And yet — somehow — you're on YouTube, cleaning your desk, or reorganizing your bookmarks. Procrastination isn't laziness; it's an emotional regulation problem. Your brain perceives studying as a threat (boring, difficult, uncertain) and reaches for a guaranteed dopamine hit instead.
 
 This chapter gives you the toolkit to hack that response. You'll learn:
 
@@ -15,7 +15,7 @@ This chapter gives you the toolkit to hack that response. You'll learn:
 - **How** to protect deep focus (deep work, attention residue, the 4DX framework)
 - **How** to sustain progress over months (weekly reviews, streak tracking, compound effect)
 
-These aren't abstract theories. Every technique here is something you can apply today â€” often in two minutes or less.
+These aren't abstract theories. Every technique here is something you can apply today — often in two minutes or less.
 
 ---
 
@@ -58,8 +58,8 @@ After completing this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Procrastination Loop | Trigger â†’ negative feeling â†’ coping â†’ relief â†’ guilt | Break the loop at the trigger stage with a 2-minute start |
-| 2-Minute Rule | Starting is the only hard part â€” lowering the barrier bypasses the threat response | Commit to 2 minutes of any task; allow yourself to stop after â€” you rarely will |
+| Procrastination Loop | Trigger → negative feeling → coping → relief → guilt | Break the loop at the trigger stage with a 2-minute start |
+| 2-Minute Rule | Starting is the only hard part — lowering the barrier bypasses the threat response | Commit to 2 minutes of any task; allow yourself to stop after — you rarely will |
 | Habit Stacking | Attaching a new habit to an existing one makes it automatic | "After [existing habit], I will [2-minute learning action]" |
 | Implementation Intentions | If-then plans automate decision-making and reduce willpower dependence | "If it's 7 PM at my desk, then I will open my problem set" |
 | Deep Work | Distraction-free concentration that pushes cognitive limits | Schedule 90-minute deep work blocks; ritualize transitions |
@@ -87,14 +87,14 @@ flowchart LR
 
 **Answer:**
 
-Procrastination isn't a time-management problem â€” it's an **emotional-regulation problem**. When you face a task you find boring, difficult, or ambiguous, your brain's anterior cingulate cortex (ACC) detects conflict and triggers a mild pain response. Your limbic system â€” the part of the brain that prioritizes immediate rewards â€” hijacks your decision-making and steers you toward a more pleasant activity.
+Procrastination isn't a time-management problem — it's an **emotional-regulation problem**. When you face a task you find boring, difficult, or ambiguous, your brain's anterior cingulate cortex (ACC) detects conflict and triggers a mild pain response. Your limbic system — the part of the brain that prioritizes immediate rewards — hijacks your decision-making and steers you toward a more pleasant activity.
 
 This creates the **procrastination loop**:
 
 ```
-Trigger (study task) â†’ Negative feeling (boredom, anxiety) â†’ 
-Coping behavior (social media, snacks) â†’ Temporary relief â†’ 
-Guilt + increased pressure â†’ Even stronger negative feeling next time
+Trigger (study task) → Negative feeling (boredom, anxiety) → 
+Coping behavior (social media, snacks) → Temporary relief → 
+Guilt + increased pressure → Even stronger negative feeling next time
 ```
 
 ```mermaid
@@ -109,7 +109,7 @@ flowchart TD
     G -.->|Break with| R3[Temptation Bundling]
 ```
 
-Each iteration strengthens the neural pathway. Over time, the task becomes conditioned to trigger avoidance automatically â€” you don't *decide* to procrastinate; your brain does it before you're consciously aware.
+Each iteration strengthens the neural pathway. Over time, the task becomes conditioned to trigger avoidance automatically — you don't *decide* to procrastinate; your brain does it before you're consciously aware.
 
 **The four components of the loop:**
 
@@ -118,7 +118,7 @@ Each iteration strengthens the neural pathway. Over time, the task becomes condi
 | Trigger | Cue that activates avoidance | Opening your textbook at 7 PM |
 | Negative feeling | Discomfort, boredom, anxiety | "This is hard. I don't get it." |
 | Coping behavior | Easy, rewarding alternative | Checking YouTube, cleaning |
-| Relief + guilt | Short-term gain, long-term pain | "I'll start tomorrow â€” for real this time." |
+| Relief + guilt | Short-term gain, long-term pain | "I'll start tomorrow — for real this time." |
 
 **Breaking the loop** requires interrupting at the trigger stage (before the feeling arises) or substituting the coping behavior with a learning-adjacent action.
 
@@ -152,7 +152,7 @@ class ProcrastinationLoop {
         System.out.println("Coping: " + behavior);
 
         boolean guilt = true;
-        System.out.println("Guilt: yes â€” loop strengthened");
+        System.out.println("Guilt: yes — loop strengthened");
 
         return new Cycle(trigger, feeling, behavior, guilt);
     }
@@ -169,9 +169,9 @@ class ProcrastinationLoop {
 }
 ```
 
-**Key insight:** The guilt after procrastinating makes you *more* likely to procrastinate next time â€” it increases the emotional weight of the task. Self-compassion, paradoxically, is more effective than self-criticism.
+**Key insight:** The guilt after procrastinating makes you *more* likely to procrastinate next time — it increases the emotional weight of the task. Self-compassion, paradoxically, is more effective than self-criticism.
 
-> **Remember:** The procrastination loop is not a character flaw â€” it's a neural pattern. Each time you catch yourself early and redirect, you weaken the loop and strengthen a new pathway. The goal isn't to eliminate the feeling; it's to change your response to it.
+> **Remember:** The procrastination loop is not a character flaw — it's a neural pattern. Each time you catch yourself early and redirect, you weaken the loop and strengthen a new pathway. The goal isn't to eliminate the feeling; it's to change your response to it.
 
 ---
 
@@ -182,7 +182,7 @@ class ProcrastinationLoop {
 
 The **2-minute rule** states: *If a task takes less than two minutes, do it immediately.* But for learning, the more powerful version is: *When starting a difficult study session, commit to just two minutes of work.*
 
-This works because the **activation energy** for two minutes is tiny. Your brain doesn't perceive it as a threat. Once you start, momentum carries you forward â€” the **Zeigarnik effect** (Q65) kicks in, and your brain wants to finish what it started.
+This works because the **activation energy** for two minutes is tiny. Your brain doesn't perceive it as a threat. Once you start, momentum carries you forward — the **Zeigarnik effect** (Q65) kicks in, and your brain wants to finish what it started.
 
 ```java
 import java.time.LocalTime;
@@ -197,18 +197,18 @@ class TwoMinuteRule {
     public static void main(String[] args) {
         String task = "Learn AVL tree rotations";
 
-        // Normal approach â€” overwhelming
+        // Normal approach — overwhelming
         System.out.println("Normal thought: 'I'll study AVL trees for 2 hours'");
         System.out.println("Result: Feels heavy. Opens YouTube instead.");
         System.out.println();
 
-        // 2-minute approach â€” trivial
+        // 2-minute approach — trivial
         System.out.println("2-minute thought: 'I'll open my notes and read one paragraph'");
 
         StudyTask twoMinutes = (min) -> {
             System.out.println("> Studying " + task + " for " + min + " minute(s)...");
             System.out.println("> 1 minute in: 'This isn't so bad...'");
-            System.out.println("> 2 minutes in: hit by curiosity â€” keeps going");
+            System.out.println("> 2 minutes in: hit by curiosity — keeps going");
             System.out.println("> Actual time spent: 47 minutes");
         };
 
@@ -224,12 +224,12 @@ class TwoMinuteRule {
 
 1. Pick the smallest possible unit of the task: "Open the PDF" not "Master recursion"
 2. Set a timer for 2 minutes (use Pomodoro if you have one)
-3. Allow yourself to stop after 2 minutes â€” no guilt
+3. Allow yourself to stop after 2 minutes — no guilt
 4. Observe that you almost never actually stop
 
-**Why it works:** Behavioral activation â€” action precedes motivation, not the other way around. You don't wait until you feel like studying; you study for 2 minutes, and the feeling follows.
+**Why it works:** Behavioral activation — action precedes motivation, not the other way around. You don't wait until you feel like studying; you study for 2 minutes, and the feeling follows.
 
-> **Pro Tip:** The 2-minute rule works because of the Zeigarnik effect (Q65) â€” once you start, your brain wants to finish. But it only works if you genuinely allow yourself to stop after 2 minutes. If you secretly guilt-trip yourself into continuing, the starting barrier stays high. Mean what you say: 2 minutes is enough.
+> **Pro Tip:** The 2-minute rule works because of the Zeigarnik effect (Q65) — once you start, your brain wants to finish. But it only works if you genuinely allow yourself to stop after 2 minutes. If you secretly guilt-trip yourself into continuing, the starting barrier stays high. Mean what you say: 2 minutes is enough.
 
 ---
 
@@ -241,7 +241,7 @@ An **implementation intention** is a concrete plan that specifies *when, where, 
 
 > **If** [situation], **then** I will [specific action].
 
-This works because the situation becomes a trigger that automatically activates the behavior â€” no willpower required. The concept comes from Peter Gollwitzer's research, which shows that implementation intentions double or triple the probability of following through on a goal.
+This works because the situation becomes a trigger that automatically activates the behavior — no willpower required. The concept comes from Peter Gollwitzer's research, which shows that implementation intentions double or triple the probability of following through on a goal.
 
 ```java
 class ImplementationIntention {
@@ -317,7 +317,7 @@ class RobustIntention {
         RobustIntention plan = new RobustIntention(
             "Study recursion for 30 minutes at my desk",
             "My desk is occupied (roommate on call)",
-            "Study at the kitchen table instead â€” same 30 minutes"
+            "Study at the kitchen table instead — same 30 minutes"
         );
         plan.execute(true);
     }
@@ -326,7 +326,7 @@ class RobustIntention {
 
 **Research result:** In a study by Milne et al. (2002), 91% of participants who formed implementation intentions exercised, compared to 39% who only had the goal. For learning, the effect is similar: specificity creates automaticity.
 
-> **Remember:** The most common failure with implementation intentions is a vague trigger. "After work" is not a trigger â€” it's a time window that can stretch 5 hours. "After I close my laptop at 6 PM and stand up from my desk" is a trigger. The more specific the trigger, the more automatic the response.
+> **Remember:** The most common failure with implementation intentions is a vague trigger. "After work" is not a trigger — it's a time window that can stretch 5 hours. "After I close my laptop at 6 PM and stand up from my desk" is a trigger. The more specific the trigger, the more automatic the response.
 
 ---
 
@@ -339,7 +339,7 @@ class RobustIntention {
 **The formula:**
 
 ```
-Temptation bundling = Desired behavior (learning) Ã— Guilty pleasure (reward)
+Temptation bundling = Desired behavior (learning) × Guilty pleasure (reward)
 ```
 
 **Examples for developers:**
@@ -395,8 +395,8 @@ class TemptationBundle {
 
 **Important rules:**
 
-1. **The temptation must be reserved** â€” if you allow the podcast/coffee/treat at other times, the bundling loses power. The rule is: *Only do X while studying.*
-2. **The temptation can't be too distracting** â€” watching Netflix while studying doesn't work (split attention). Ideal bundles are ambient: nice environment, audio in the background, tactile satisfaction.
+1. **The temptation must be reserved** — if you allow the podcast/coffee/treat at other times, the bundling loses power. The rule is: *Only do X while studying.*
+2. **The temptation can't be too distracting** — watching Netflix while studying doesn't work (split attention). Ideal bundles are ambient: nice environment, audio in the background, tactile satisfaction.
 3. **Start with the temptation first** for 30 seconds to build anticipation, then switch to the learning task with the temptation running in the background.
 
 **Pro tip for coding:** Use a terminal theme or IDE color scheme you find visually beautiful as a low-level temptation. Or use a focus app with aesthetic rewards (Forest app grows trees, Habitica gamifies tasks). The visual pleasure becomes a trigger for study mode.
@@ -407,7 +407,7 @@ class TemptationBundle {
 
 **Answer:**
 
-The **Zeigarnik effect** is the psychological phenomenon where interrupted or incomplete tasks are remembered better than completed ones. Named after Soviet psychologist Bluma Zeigarnik, who noticed that waiters remembered orders only until they were delivered â€” then forgot them instantly.
+The **Zeigarnik effect** is the psychological phenomenon where interrupted or incomplete tasks are remembered better than completed ones. Named after Soviet psychologist Bluma Zeigarnik, who noticed that waiters remembered orders only until they were delivered — then forgot them instantly.
 
 **Why it matters for learning:**
 
@@ -431,7 +431,7 @@ class ZeigarnikEffect {
         StudySession(String topic, boolean isIncomplete) {
             this.topic = topic;
             this.isIncomplete = isIncomplete;
-            this.status = isIncomplete ? "INTERRUPTED â€” tension active" : "COMPLETED â€” tension released";
+            this.status = isIncomplete ? "INTERRUPTED — tension active" : "COMPLETED — tension released";
         }
     }
 
@@ -466,9 +466,9 @@ class ZeigarnikEffect {
 2. **Leave a question unanswered.** Before bed, read a challenging problem statement but don't solve it. Your brain works on it during sleep (diffuse mode).
 3. **Start multiple threads.** Begin 2-3 learning topics in parallel. The Zeigarnik tension across multiple incomplete tasks creates a productive mental buzz.
 
-**The dark side:** Too many incomplete tasks creates overwhelm (open loops everywhere). Use Zeigarnik strategically â€” keep 2-3 at most. Track open loops in a notebook to get them off your mental stack.
+**The dark side:** Too many incomplete tasks creates overwhelm (open loops everywhere). Use Zeigarnik strategically — keep 2-3 at most. Track open loops in a notebook to get them off your mental stack.
 
-> **Pro Tip:** The Zeigarnik effect is strongest when you stop at a point of high interest, not at a natural stopping point. If you stop mid-problem (not after solving it), your brain keeps working on it subconsciously. This is how "sleep on it" actually works â€” diffuse mode processes incomplete problems during rest.
+> **Pro Tip:** The Zeigarnik effect is strongest when you stop at a point of high interest, not at a natural stopping point. If you stop mid-problem (not after solving it), your brain keeps working on it subconsciously. This is how "sleep on it" actually works — diffuse mode processes incomplete problems during rest.
 
 ---
 
@@ -508,7 +508,7 @@ class TwentySecondRule {
         System.out.println("=== Default State ===");
         System.out.println("Study likelihood: " + (studying.getLikelihood() * 100) + "%");
         System.out.println("Distraction likelihood: " + (distractions.getLikelihood() * 100) + "%");
-        System.out.println("No contest â€” brain picks the 3-second option.\n");
+        System.out.println("No contest — brain picks the 3-second option.\n");
 
         // Apply 20-second rule: reduce friction for studying, increase for distraction
         studying.activationEnergySeconds = 10; // laptop already open, IDE ready
@@ -552,7 +552,7 @@ class EnvironmentPrep {
 }
 ```
 
-> **Remember:** The 20-second rule applies to digital friction too. Turn off notifications, close Slack, and put your phone in another room before starting a study session. The tiny effort to reach for your phone is often enough to break focus â€” increase it to 20 seconds by putting it in a drawer.
+> **Remember:** The 20-second rule applies to digital friction too. Turn off notifications, close Slack, and put your phone in another room before starting a study session. The tiny effort to reach for your phone is often enough to break focus — increase it to 20 seconds by putting it in a drawer.
 
 ---
 
@@ -564,7 +564,7 @@ class EnvironmentPrep {
 
 > **After/Before [CURRENT HABIT], I will [NEW HABIT].**
 
-This works because the existing habit is already automatic â€” it serves as a reliable trigger. You don't need to remember to do the new habit; the old habit cues it.
+This works because the existing habit is already automatic — it serves as a reliable trigger. You don't need to remember to do the new habit; the old habit cues it.
 
 ```mermaid
 flowchart LR
@@ -624,7 +624,7 @@ class HabitStack {
             "Open my IDE and read yesterday's code for 2 minutes"
         ));
         morningRoutine.add(new StackedHabit(
-            "After lunch â€” brush teeth",
+            "After lunch — brush teeth",
             "Solve one LeetCode easy problem"
         ));
         morningRoutine.add(new StackedHabit(
@@ -657,10 +657,10 @@ class HabitStack {
 **The minimum viable stack:** Don't try to stack 5 habits at once. Start with one stack and execute it for 2 weeks. The pattern to aim for:
 
 ```
-[Strong existing habit] â†’ [Tiny new habit] â†’ [Immediate reward]
+[Strong existing habit] → [Tiny new habit] → [Immediate reward]
 ```
 
-Example: *After I pour my morning coffee â†’ I open Anki and review 5 cards â†’ I enjoy the coffee while the answers load.* The reward reinforces the chain.
+Example: *After I pour my morning coffee → I open Anki and review 5 cards → I enjoy the coffee while the answers load.* The reward reinforces the chain.
 
 > **Warning:** The most common habit stacking failure is choosing an existing habit that's too variable. "After I finish work" fails because work ends at different times with different energy levels. Better stacks use fixed triggers like "After I brush my teeth" or "After I pour my morning coffee."
 
@@ -670,7 +670,7 @@ Example: *After I pour my morning coffee â†’ I open Anki and review 5 cards
 
 **Answer:**
 
-**Keystone habits** are habits that, once established, trigger a cascade of positive changes across unrelated areas of your life. They create a **ripple effect** â€” improving one habit naturally improves others. The concept comes from Charles Duhigg's *The Power of Habit*.
+**Keystone habits** are habits that, once established, trigger a cascade of positive changes across unrelated areas of your life. They create a **ripple effect** — improving one habit naturally improves others. The concept comes from Charles Duhigg's *The Power of Habit*.
 
 For a software engineer/learner, the keystone habits that matter most are:
 
@@ -733,7 +733,7 @@ class KeystoneHabitAnalysis {
         Keystone weeklyReview = new Keystone(
             "30-minute weekly learning review (Sunday)",
             new String[]{
-                "Prevents drift â€” keeps goals aligned",
+                "Prevents drift — keeps goals aligned",
                 "Identifies gaps before they become problems",
                 "Builds metacognitive awareness",
                 "Strengthens motivation through visible progress"
@@ -754,13 +754,13 @@ class KeystoneHabitAnalysis {
 
 **How to identify YOUR keystone habits:**
 
-1. **Track correlation.** For one week, log your habits and your daily learning output. Look for patterns â€” what habit correlates with good days?
+1. **Track correlation.** For one week, log your habits and your daily learning output. Look for patterns — what habit correlates with good days?
 2. **Start with sleep.** If you fix nothing else, fix your sleep. It's the foundation habit that affects everything.
 3. **Pick ONE.** Don't try to install all keystone habits at once. Choose one and practice it until it's automatic (usually 4-6 weeks).
 
 **For developers specifically:** The single highest-leverage keystone habit is *the morning deep work block before checking email/slack/Twitter*. This one habit alone can double your learning output.
 
-> **Pro Tip:** Don't try to identify your keystone habits by intuition. Log your daily habits and learning output for one week, then look for correlations. You might discover that your learning doubles on days you exercise â€” or plummets on days you skip breakfast. Data beats guessing.
+> **Pro Tip:** Don't try to identify your keystone habits by intuition. Log your daily habits and learning output for one week, then look for correlations. You might discover that your learning doubles on days you exercise — or plummets on days you skip breakfast. Data beats guessing.
 
 ---
 
@@ -795,7 +795,7 @@ class WillpowerDepletion {
             System.out.println("  [SPENT " + d.willpowerCost + "] " + d.action);
             System.out.println("  Remaining willpower: " + remainingWillpower);
         } else {
-            System.out.println("  [FAILED] " + d.action + " â€” no willpower left");
+            System.out.println("  [FAILED] " + d.action + " — no willpower left");
         }
     }
 
@@ -806,8 +806,8 @@ class WillpowerDepletion {
 
         spend(new Decision("Wake up, decide what to wear", 3));
         spend(new Decision("Decide what to eat for breakfast", 3));
-        spend(new Decision("Commute â€” resist checking phone at red lights", 5));
-        spend(new Decision("Morning standup â€” stay focused, don't zone out", 8));
+        spend(new Decision("Commute — resist checking phone at red lights", 5));
+        spend(new Decision("Morning standup — stay focused, don't zone out", 8));
         spend(new Decision("Decide which bug to fix first", 6));
         spend(new Decision("Resist urge to check HN/Twitter (x3)", 15));
         spend(new Decision("Decide what to eat for lunch", 4));
@@ -816,7 +816,7 @@ class WillpowerDepletion {
         System.out.println();
         System.out.println("Willpower remaining by 3 PM: " + remainingWillpower);
         System.out.println("Enough for focused study? " +
-            (remainingWillpower > 30 ? "LIKELY YES" : "UNLIKELY â€” will procrastinate"));
+            (remainingWillpower > 30 ? "LIKELY YES" : "UNLIKELY — will procrastinate"));
         System.out.println();
         System.out.println("SOLUTION: Schedule learning for MORNING, not evening.");
         System.out.println("Morning willpower remaining: ~75");
@@ -832,21 +832,21 @@ class WillpowerDepletion {
 |------|---------|-----|
 | 6 AM - 10 AM | **Deep learning** (new concepts, hard problems) | Willpower at peak, distractions minimal |
 | 10 AM - 12 PM | **Practice** (solve problems, write code) | Good concentration, some fatigue |
-| 12 PM - 2 PM | **Review** (Anki, notes, light reading) | Post-lunch dip â€” low cognitive demand |
-| 2 PM - 5 PM | **Shallow work** (organize notes, plan) | Willpower declining â€” avoid new concepts |
-| 5 PM - 8 PM | **Exercise, rest, social** | Recovery â€” willpower bank replenishes |
+| 12 PM - 2 PM | **Review** (Anki, notes, light reading) | Post-lunch dip — low cognitive demand |
+| 2 PM - 5 PM | **Shallow work** (organize notes, plan) | Willpower declining — avoid new concepts |
+| 5 PM - 8 PM | **Exercise, rest, social** | Recovery — willpower bank replenishes |
 | 8 PM - 10 PM | **Diffuse mode** (browse related topics) | Low-pressure exposure, incidental learning |
 | 10 PM+ | **Sleep prep** | No screens, consolidate learning via sleep |
 
 **Important nuance:** Willpower depletion is reduced by:
 - **Habits** (automatic behaviors don't draw from the willpower pool)
-- **Implementation intentions** (Q63) â€” they automate decision-making
+- **Implementation intentions** (Q63) — they automate decision-making
 - **Glucose** (stable blood sugar supports self-control)
 - **Belief** (if you don't believe willpower is limited, depletion is less pronounced)
 
 **The practical takeaway:** Don't fight your biology. Schedule your hardest learning for the morning. Use evenings for review, organization, and low-cognitive-load tasks.
 
-> **Remember:** Willpower depletion research has been partially challenged (the "ego depletion" replication crisis), but the practical advice still holds: decision fatigue is real. The mechanism may be motivational rather than energetic, but the result is the same â€” you make worse choices about studying as the day goes on. Schedule learning early.
+> **Remember:** Willpower depletion research has been partially challenged (the "ego depletion" replication crisis), but the practical advice still holds: decision fatigue is real. The mechanism may be motivational rather than energetic, but the result is the same — you make worse choices about studying as the day goes on. Schedule learning early.
 
 ---
 
@@ -858,14 +858,14 @@ class WillpowerDepletion {
 
 > *"Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit."*
 
-The opposite is **shallow work** â€” non-cognitively demanding, logistical tasks performed while distracted. These include email, Slack messages, browsing documentation, and reorganizing files.
+The opposite is **shallow work** — non-cognitively demanding, logistical tasks performed while distracted. These include email, Slack messages, browsing documentation, and reorganizing files.
 
 **Why deep work is essential for learning:**
 
-1. **Chunk formation** â€” your brain needs sustained focus to build strong neural chunks. Distraction prevents consolidation.
-2. **Diffuse mode activation** â€” deep work requires intense focus, but it's followed by diffuse processing. Without deep focus, diffuse mode has nothing to work on.
-3. **Deliberate practice** â€” you can't do deliberate practice (Chapter 2) in a distracted state. It requires full cognitive engagement with timely feedback.
-4. **Attention residue** (Q74) â€” each shift of attention leaves residue that impairs subsequent performance. Deep work minimizes context switching.
+1. **Chunk formation** — your brain needs sustained focus to build strong neural chunks. Distraction prevents consolidation.
+2. **Diffuse mode activation** — deep work requires intense focus, but it's followed by diffuse processing. Without deep focus, diffuse mode has nothing to work on.
+3. **Deliberate practice** — you can't do deliberate practice (Chapter 2) in a distracted state. It requires full cognitive engagement with timely feedback.
+4. **Attention residue** (Q74) — each shift of attention leaves residue that impairs subsequent performance. Deep work minimizes context switching.
 
 ```java
 import java.time.LocalTime;
@@ -883,8 +883,8 @@ class DeepWork {
             this.durationMinutes = duration;
             this.distractionsBlocked = blocked;
             this.outcome = blocked
-                ? "Deep understanding achieved â€” chunks formed"
-                : "Surface familiarity only â€” shallow engagement";
+                ? "Deep understanding achieved — chunks formed"
+                : "Surface familiarity only — shallow engagement";
         }
     }
 
@@ -898,10 +898,10 @@ class DeepWork {
                 System.out.println("  [interruption: Slack notification]");
             }
             if (i == 22 && !deep) {
-                System.out.println("  [interruption: email pops up â€” read it]");
+                System.out.println("  [interruption: email pops up — read it]");
             }
             if (i == 33 && !deep) {
-                System.out.println("  [interruption: phone buzzes â€” check it]");
+                System.out.println("  [interruption: phone buzzes — check it]");
             }
         }
 
@@ -933,9 +933,9 @@ class DeepWork {
 | 60 - 90 min | Peak deep work | Complex systems, creative work |
 | 90+ min | Diminishing returns (for most) | Only after weeks of practice |
 
-**The 4-hour rule:** Most people can produce a maximum of 4 hours of genuine deep work per day. Schedule learning accordingly â€” one 90-minute block and one 60-minute block is more realistic than trying to "study all day."
+**The 4-hour rule:** Most people can produce a maximum of 4 hours of genuine deep work per day. Schedule learning accordingly — one 90-minute block and one 60-minute block is more realistic than trying to "study all day."
 
-> **Pro Tip:** Deep work is a skill that needs training. If 25 minutes of focus feels hard now, that's normal. Start with 25-minute deep work blocks (your Pomodoro timer), then add 5 minutes each week. Within 2 months, you'll be doing 60-minute blocks comfortably. Your attention span is a muscle â€” train it progressively.
+> **Pro Tip:** Deep work is a skill that needs training. If 25 minutes of focus feels hard now, that's normal. Start with 25-minute deep work blocks (your Pomodoro timer), then add 5 minutes each week. Within 2 months, you'll be doing 60-minute blocks comfortably. Your attention span is a muscle — train it progressively.
 
 ---
 
@@ -954,7 +954,7 @@ One of the most common learning mistakes is confusing *learning something new* w
 | What you need | Structured introduction, analogies | Active recall, spaced repetition |
 | Best technique | Feynman, chunking, worked examples | Retrieval practice, flash cards, problem sets |
 | Time needed | Hours to weeks | Minutes to hours |
-| Depth of understanding | Shallow â†’ building toward deep | Deepening existing connections |
+| Depth of understanding | Shallow → building toward deep | Deepening existing connections |
 
 ```java
 enum LearningMode {
@@ -999,7 +999,7 @@ class LearningDecision {
 }
 ```
 
-**The heuristic:** If you've seen the material before and feel like you "should know it but can't remember," you don't need MORE resources â€” you need ACTIVE RECALL. Read Q21-Q25 in Chapter 3 for the retrieval practice protocol.
+**The heuristic:** If you've seen the material before and feel like you "should know it but can't remember," you don't need MORE resources — you need ACTIVE RECALL. Read Q21-Q25 in Chapter 3 for the retrieval practice protocol.
 
 If you've NEVER seen the material, don't start with active recall (you have nothing to recall). Start with the Feynman technique (Q33-Q36): read, explain simply, identify gaps, repeat.
 
@@ -1017,10 +1017,10 @@ If you've NEVER seen the material, don't start with active recall (you have noth
 
 **The 4 Disciplines:**
 
-1. **Focus on the wildly important** â€” Choose 1-2 learning goals (not 10)
-2. **Act on lead measures** â€” Track the inputs, not just the outcomes
-3. **Keep a compelling scoreboard** â€” Visual tracking of progress
-4. **Create a cadence of accountability** â€” Weekly review and commitment
+1. **Focus on the wildly important** — Choose 1-2 learning goals (not 10)
+2. **Act on lead measures** — Track the inputs, not just the outcomes
+3. **Keep a compelling scoreboard** — Visual tracking of progress
+4. **Create a cadence of accountability** — Weekly review and commitment
 
 ```java
 import java.time.LocalDate;
@@ -1076,7 +1076,7 @@ class FourDXForLearning {
         System.out.println("Deadline: " + wig.deadline);
         System.out.println("Lead Measure 1: " + wig.leadMeasure1);
         System.out.println("Lead Measure 2: " + wig.leadMeasure2);
-        System.out.println("(Lead measures are 100% in your control â€” lag is not)");
+        System.out.println("(Lead measures are 100% in your control — lag is not)");
         System.out.println();
 
         // 2 & 3. Scoreboard
@@ -1109,9 +1109,9 @@ class FourDXForLearning {
 | **Scoreboard** | A simple spreadsheet or habit tracker. Can you see at a glance whether you're winning? |
 | **Cadence** | Every Sunday: review the week, set next week's lead measure targets, solve obstacles |
 
-> **Pro Tip:** The 4DX framework's most powerful insight is "lead measures" â€” tracking inputs (hours studied, problems solved) rather than outcomes (exam scores). Lead measures are within your control; lag measures aren't. When you optimize for lead measures, the lag measures (scores, promotions) follow automatically.
+> **Pro Tip:** The 4DX framework's most powerful insight is "lead measures" — tracking inputs (hours studied, problems solved) rather than outcomes (exam scores). Lead measures are within your control; lag measures aren't. When you optimize for lead measures, the lag measures (scores, promotions) follow automatically.
 
-**The most common failure:** Choosing lag measures as your primary metric. "I want to learn Java" is a lag measure â€” it's the outcome, not the process. Lead measures are: *I will write 100 lines of Java code per day* and *I will pass 3 Java tests on Hyperskill per week.*
+**The most common failure:** Choosing lag measures as your primary metric. "I want to learn Java" is a lag measure — it's the outcome, not the process. Lead measures are: *I will write 100 lines of Java code per day* and *I will pass 3 Java tests on Hyperskill per week.*
 
 ---
 
@@ -1119,7 +1119,7 @@ class FourDXForLearning {
 
 **Answer:**
 
-This is the #1 question from professional developers. You have a full-time job, possibly a commute, family responsibilities, and a life. The idea of finding 2-3 hours for deep learning seems impossible â€” but it's not.
+This is the #1 question from professional developers. You have a full-time job, possibly a commute, family responsibilities, and a life. The idea of finding 2-3 hours for deep learning seems impossible — but it's not.
 
 The answer is a combination of **segmentation, batching, and energy management**.
 
@@ -1157,7 +1157,7 @@ class WorkingDevSchedule {
 
         // Day job
         schedule.add(new TimeBlock(LocalTime.of(9, 0), LocalTime.of(17, 0),
-            "Work â€” stay focused, minimize context switching", "VARIED"));
+            "Work — stay focused, minimize context switching", "VARIED"));
 
         // Strategy 2: Evening micro-sessions
         schedule.add(new TimeBlock(LocalTime.of(20, 0), LocalTime.of(20, 30),
@@ -1184,7 +1184,7 @@ class WorkingDevSchedule {
 **The five strategies:**
 
 **1. The morning block (highest leverage)**
-Wake up 60 minutes earlier. No phone, no email â€” go straight to learning. Your willpower is at peak, your notifications are silent, and the rest of the world isn't demanding your attention yet. This one habit is worth more than all other strategies combined.
+Wake up 60 minutes earlier. No phone, no email — go straight to learning. Your willpower is at peak, your notifications are silent, and the rest of the world isn't demanding your attention yet. This one habit is worth more than all other strategies combined.
 
 **2. The commute window**
 If you commute via public transit, that's 30-90 minutes of potential learning. Use Anki (mobile app), listen to technical podcasts, or read documentation. Even 15 minutes daily = 90 hours/year.
@@ -1196,7 +1196,7 @@ Eat lunch in 20 minutes at your desk. Spend the remaining 40 minutes on learning
 After dinner but before screen-off time. Use this for review and encoding: recap what you learned today, update your notes, do 10 minutes of Anki.
 
 **5. Weekend deep dives**
-Reserve one weekend morning (Saturday or Sunday) for a 2-hour deep work session. This is where you tackle the hardest material â€” the stuff that requires sustained concentration.
+Reserve one weekend morning (Saturday or Sunday) for a 2-hour deep work session. This is where you tackle the hardest material — the stuff that requires sustained concentration.
 
 **Energy alignment:**
 
@@ -1207,7 +1207,7 @@ Reserve one weekend morning (Saturday or Sunday) for a 2-hour deep work session.
 | Low | Review notes, passive reading, organize bookmarks |
 | Very Low | Listen to a podcast, do light Anki review |
 
-**The cost of NOT learning:** A developer who studies 5 hours/week accumulates ~250 hours/year of deliberate skill building. Over 3 years, that's 750 hours â€” roughly the difference between a junior and a senior engineer. The question isn't "can I afford the time?" â€” it's "can I afford NOT to make the time?"
+**The cost of NOT learning:** A developer who studies 5 hours/week accumulates ~250 hours/year of deliberate skill building. Over 3 years, that's 750 hours — roughly the difference between a junior and a senior engineer. The question isn't "can I afford the time?" — it's "can I afford NOT to make the time?"
 
 ---
 
@@ -1215,7 +1215,7 @@ Reserve one weekend morning (Saturday or Sunday) for a 2-hour deep work session.
 
 **Answer:**
 
-**Attention residue** is the phenomenon where after switching from Task A to Task B, part of your attention remains stuck on Task A. Your brain takes time â€” sometimes 10-20 minutes â€” to fully disengage from the previous task.
+**Attention residue** is the phenomenon where after switching from Task A to Task B, part of your attention remains stuck on Task A. Your brain takes time — sometimes 10-20 minutes — to fully disengage from the previous task.
 
 The term was coined by Sophie Leroy, a University of Washington professor who studied multitasking in knowledge workers. Her research showed that when people switch tasks, their performance on Task B is measurably impaired by the lingering thoughts about Task A.
 
@@ -1235,9 +1235,9 @@ class AttentionResidue {
         // Scenario 1: Interruption-heavy day
         System.out.println("Scenario 1: Typical day with many switches");
         System.out.println("9:00 - Debug production issue (complex task)");
-        System.out.println("9:45 - Slack message â†’ reply â†’ switch back to debugging");
-        System.out.println("10:00 - Quick code review â†’ switch back to debugging");
-        System.out.println("10:15 - Standup meeting â†’ ... try to remember where you were");
+        System.out.println("9:45 - Slack message → reply → switch back to debugging");
+        System.out.println("10:00 - Quick code review → switch back to debugging");
+        System.out.println("10:15 - Standup meeting → ... try to remember where you were");
 
         double loss1 = productivityLoss(3, 3);
         System.out.println("Productivity loss: ~" + loss1 + "%");
@@ -1267,10 +1267,10 @@ class AttentionResidue {
 |----------|--------|
 | You glance at Slack before starting your study block | 10-15 minutes of residue = degraded learning |
 | You check email during a Pomodoro break | Carry-over thoughts interrupt consolidation |
-| You study 3 different topics in 1 hour | Each switch costs residue â€” all 3 topics learned badly |
+| You study 3 different topics in 1 hour | Each switch costs residue — all 3 topics learned badly |
 | You keep your phone on the desk | Residue from the last notification lingers |
 
-**The solution â€” ritualize transitions:**
+**The solution — ritualize transitions:**
 
 ```java
 class TransitionRitual {
@@ -1296,7 +1296,7 @@ class TransitionRitual {
 
 **The rule:** Any interruption during a learning session costs more than the interruption time. A 30-second glance at a notification costs 10-15 minutes of attention residue. Batch. Protect. Focus.
 
-> **Warning:** Attention residue is why "just checking Slack quickly" during a study break is self-deception. Your brain spends the next 10-15 minutes processing that Slack message instead of focusing on the material. True breaks require complete context switching â€” walk, stretch, stare out a window. No screens.
+> **Warning:** Attention residue is why "just checking Slack quickly" during a study break is self-deception. Your brain spends the next 10-15 minutes processing that Slack message instead of focusing on the material. True breaks require complete context switching — walk, stretch, stare out a window. No screens.
 
 ---
 
@@ -1330,15 +1330,15 @@ class GCSError {
 
         double getMotivationLevel() {
             if (!hasStrategy) {
-                return 0.15; // 15% â€” feels hopeless
+                return 0.15; // 15% — feels hopeless
             }
 
             // Even with strategy, assess gap perception
             int gap = Math.abs(goal.length() - currentState.length()); // crude proxy
             if (gap > 50) {
-                return 0.35; // 35% â€” overwhelming gap
+                return 0.35; // 35% — overwhelming gap
             }
-            return 0.85; // 85% â€” manageable
+            return 0.85; // 85% — manageable
         }
     }
 
@@ -1400,7 +1400,7 @@ class GCSError {
 
 **Answer:**
 
-The **weekly review** is a 30-minute ritual, ideally on Sunday, where you step back from the week's learning activity and evaluate what's working, what's not, and what to adjust. It's the most underrated learning practice â€” and the one most consistently practiced by top performers.
+The **weekly review** is a 30-minute ritual, ideally on Sunday, where you step back from the week's learning activity and evaluate what's working, what's not, and what to adjust. It's the most underrated learning practice — and the one most consistently practiced by top performers.
 
 Based on David Allen's *Getting Things Done* weekly review model, adapted for learning:
 
@@ -1454,7 +1454,7 @@ class WeeklyLearningReview {
         );
 
         System.out.println("1. How many hours did I study? " + week.hoursStudied);
-        System.out.println("   (target: 12 â€” exceeded!)");
+        System.out.println("   (target: 12 — exceeded!)");
         System.out.println();
         System.out.println("2. What did I complete? " + week.topicsCompleted + " topic(s)");
         System.out.println("3. What did I start that's still open? " + week.topicsStarted + " topic(s)");
@@ -1513,15 +1513,15 @@ Date: [Sunday, Date]
 
 **Why it works:**
 
-1. **Prevents drift** â€” without review, weeks blur into months of unfocused effort
-2. **Catches problems early** â€” a bad week becomes data, not a spiral
-3. **Builds self-efficacy** â€” seeing your progress week over week is deeply motivating
-4. **Forces strategic thinking** â€” you can't optimize what you don't measure
-5. **Maintains momentum** â€” the act of committing publicly creates accountability
+1. **Prevents drift** — without review, weeks blur into months of unfocused effort
+2. **Catches problems early** — a bad week becomes data, not a spiral
+3. **Builds self-efficacy** — seeing your progress week over week is deeply motivating
+4. **Forces strategic thinking** — you can't optimize what you don't measure
+5. **Maintains momentum** — the act of committing publicly creates accountability
 
 **Tooling:** A simple text file, a Google Doc, a Notion database, or a dedicated journal. The format matters less than the consistency. Never skip two weeks in a row.
 
-> **Pro Tip:** The weekly review doesn't need to be long. Five minutes answering three questions is enough: (1) What did I learn this week? (2) What went well? (3) What will I change next week? The act of writing forces consolidation. Skip the format debates â€” use a text file.
+> **Pro Tip:** The weekly review doesn't need to be long. Five minutes answering three questions is enough: (1) What did I learn this week? (2) What went well? (3) What will I change next week? The act of writing forces consolidation. Skip the format debates — use a text file.
 
 ---
 
@@ -1566,10 +1566,10 @@ class MonthlyRetrospective {
 
         months.add(new Retro(
             "Morning deep work blocks were highly effective",
-            "Evening study sessions were low quality â€” stopped after 2 weeks",
+            "Evening study sessions were low quality — stopped after 2 weeks",
             "Drop evening sessions entirely, extend morning block by 30 min",
-            new String[]{"Studying after 9 PM â€” low retention"},
-            new String[]{"Weekly review on Sunday 7 PM â€” mandatory calendar event"},
+            new String[]{"Studying after 9 PM — low retention"},
+            new String[]{"Weekly review on Sunday 7 PM — mandatory calendar event"},
             new String[]{"Morning Anki review before work"},
             7.0
         ));
@@ -1641,7 +1641,7 @@ Continue doing: _______  (one high-value behavior to maintain)
 
 **When to do it:** Last Sunday of every month, after your weekly review. Block 45 minutes.
 
-> **Pro Tip:** The "Stop" column of the monthly retrospective is the most valuable one. Most people focus on adding new habits, but the fastest path to better learning is often removing things â€” unsubscribe from distracting newsletters, delete social media apps, stop attending meetings that don't need you. Subtraction compounds.
+> **Pro Tip:** The "Stop" column of the monthly retrospective is the most valuable one. Most people focus on adding new habits, but the fastest path to better learning is often removing things — unsubscribe from distracting newsletters, delete social media apps, stop attending meetings that don't need you. Subtraction compounds.
 
 ---
 
@@ -1651,7 +1651,7 @@ Continue doing: _______  (one high-value behavior to maintain)
 
 **Answer:**
 
-**Streak tracking** â€” the practice of logging consecutive days of learning â€” is one of the most effective motivation tools available. It leverages the **loss aversion** bias: the pain of breaking a 30-day streak is more motivating than the pleasure of starting a new one.
+**Streak tracking** — the practice of logging consecutive days of learning — is one of the most effective motivation tools available. It leverages the **loss aversion** bias: the pain of breaking a 30-day streak is more motivating than the pleasure of starting a new one.
 
 However, streak tracking has a dark side: **all-or-nothing thinking**. If you miss one day, you feel like you've failed completely, which triggers procrastination (the "what the hell" effect: "I already broke my streak, might as well take the whole week off").
 
@@ -1760,12 +1760,12 @@ class StreakTracker {
 | **No zero days** | Even on your worst day, do the minimum. The streak survives. |
 | **Forgive and restart** | If you break the streak, don't binge or give up. Start fresh the next day. |
 | **Streak is a tool, not identity** | Your streak measures consistency, not worth. A broken streak doesn't mean you failed. |
-| **Celebrate streaks, mourn breakage minimally** | Each streak day gets a checkbox âœ“. A break is just a data point. |
+| **Celebrate streaks, mourn breakage minimally** | Each streak day gets a checkbox ✓. A break is just a data point. |
 
 **Tools for tracking:**
-- **Don't Break the Chain** (Jerry Seinfeld's method) â€” mark an X on each calendar day you study. The chain becomes the motivation.
-- **Habit trackers** (Habitica, Streaks, Loop Habit Tracker) â€” automatic logging with reminders
-- **Plain notebook** â€” simplest, most reliable
+- **Don't Break the Chain** (Jerry Seinfeld's method) — mark an X on each calendar day you study. The chain becomes the motivation.
+- **Habit trackers** (Habitica, Streaks, Loop Habit Tracker) — automatic logging with reminders
+- **Plain notebook** — simplest, most reliable
 
 **The compound effect of streaks:**
 - 1 problem/day = 365 problems/year
@@ -1774,7 +1774,7 @@ class StreakTracker {
 
 Streaks aren't about intensity. They're about identity. Someone who studies every day starts to see themselves as "a learner." That identity shift is the real prize.
 
-> **Warning:** Streaks are a tool, not an identity. If you break a 50-day streak, the risk is catastrophic thinking: "I've lost my progress, I might as well stop." This is false â€” the 50 days of learning still happened. A broken streak is just a data point. Forgive, restart, and keep going.
+> **Warning:** Streaks are a tool, not an identity. If you break a 50-day streak, the risk is catastrophic thinking: "I've lost my progress, I might as well stop." This is false — the 50 days of learning still happened. A broken streak is just a data point. Forgive, restart, and keep going.
 
 ---
 
@@ -1782,15 +1782,15 @@ Streaks aren't about intensity. They're about identity. Someone who studies ever
 
 **Answer:**
 
-**Slumps and plateaus are not signs of failure â€” they're signs that you've passed the easy growth stage and entered the real learning zone.** Every learner hits them, and every successful learner has strategies for navigating through.
+**Slumps and plateaus are not signs of failure — they're signs that you've passed the easy growth stage and entered the real learning zone.** Every learner hits them, and every successful learner has strategies for navigating through.
 
 **The learning curve reality:**
 
 ```
-Phase 1: Rapid progress (days 1-10)  â€” everything is new, every session yields progress
-Phase 2: The plateau (days 10-40)    â€” feels like no progress, motivation dips
-Phase 3: Breakthrough (around day 40) â€” things click, visible improvement
-Phase 4: New plateau (days 40-80)    â€” repeat
+Phase 1: Rapid progress (days 1-10)  — everything is new, every session yields progress
+Phase 2: The plateau (days 10-40)    — feels like no progress, motivation dips
+Phase 3: Breakthrough (around day 40) — things click, visible improvement
+Phase 4: New plateau (days 40-80)    — repeat
 ```
 
 The problem is that most people quit during Phase 2, mistaking the plateau for a permanent ceiling.
@@ -1835,20 +1835,20 @@ class SlumpNavigator {
                 return new Slump(SlumpType.PHYSICAL, 3, "Sleep deprivation / overwork", new String[]{
                     "Sleep 8+ hours for 3 consecutive nights",
                     "Reduce study load by 50% for a week",
-                    "Add light exercise â€” 15 min walk before sessions"
+                    "Add light exercise — 15 min walk before sessions"
                 });
             }
             if (s.contains("bored") || s.contains("why") || s.contains("pointless")) {
                 return new Slump(SlumpType.MOTIVATIONAL, 5, "Lost sight of the goal", new String[]{
                     "Re-read your 'why' document (why you're learning this)",
                     "Connect current topic to a project you care about",
-                    "Change format: tutorial â†’ build something â†’ tutorial",
-                    "Tell someone what you're learning â€” social accountability"
+                    "Change format: tutorial → build something → tutorial",
+                    "Tell someone what you're learning — social accountability"
                 });
             }
             if (s.contains("confused") || s.contains("stuck") || s.contains("no progress")) {
                 return new Slump(SlumpType.COGNITIVE, 7, "Hit the edge of current understanding", new String[]{
-                    "Go back to prerequisites â€” what foundation is weak?",
+                    "Go back to prerequisites — what foundation is weak?",
                     "Use Feynman technique: explain it to a 5-year-old",
                     "Switch to a different resource (different explanation)",
                     "Take a 2-day break from this topic; your brain needs incubation",
@@ -1858,7 +1858,7 @@ class SlumpNavigator {
         }
         return new Slump(SlumpType.LOGISTICAL, 2, "Environmental friction", new String[]{
             "Fix your study environment (desk, lighting, noise)",
-            "Review your learning schedule â€” does it need adjustment?",
+            "Review your learning schedule — does it need adjustment?",
             "Remove one commitment to free up mental space"
         });
     }
@@ -1887,15 +1887,15 @@ class SlumpNavigator {
 
 **When a slump is actually a signal:**
 
-Sometimes the slump isn't about learning â€” it's about the wrong goal. If you've been stuck for weeks with no enjoyment and no progress, ask:
+Sometimes the slump isn't about learning — it's about the wrong goal. If you've been stuck for weeks with no enjoyment and no progress, ask:
 
 - Do I actually WANT to learn this?
 - Is this goal mine, or someone else's (parent, manager, peer pressure)?
 - Would a different approach (building a project vs. taking a course) re-engage me?
 
-Learning should involve struggle, but it shouldn't feel like punishment. If you're consistently miserable, reconsider the goal â€” not the effort.
+Learning should involve struggle, but it shouldn't feel like punishment. If you're consistently miserable, reconsider the goal — not the effort.
 
-> **Pro Tip:** Slumps come in two flavors: motivational (you don't want to study) and strategic (your current approach isn't working). The fix is different for each. For motivational slumps, lower the bar to 5 minutes and trust momentum. For strategic slumps, change the method â€” switch from reading to building, or from solo to pair learning.
+> **Pro Tip:** Slumps come in two flavors: motivational (you don't want to study) and strategic (your current approach isn't working). The fix is different for each. For motivational slumps, lower the bar to 5 minutes and trust momentum. For strategic slumps, change the method — switch from reading to building, or from solo to pair learning.
 
 ---
 
@@ -1903,7 +1903,7 @@ Learning should involve struggle, but it shouldn't feel like punishment. If you'
 
 **Answer:**
 
-The **compound effect** is the principle that small, consistent actions produce massive results over time â€” but the payoff is delayed. It's the most important concept in this entire chapter, because it reframes everything else.
+The **compound effect** is the principle that small, consistent actions produce massive results over time — but the payoff is delayed. It's the most important concept in this entire chapter, because it reframes everything else.
 
 A 1% improvement every day doesn't feel like much. But:
 
@@ -1911,7 +1911,7 @@ A 1% improvement every day doesn't feel like much. But:
 1.01^365 = 37.78
 ```
 
-A 1% daily improvement compounds to 38x over a year. The same math applies to learning: 30 minutes of focused study daily equals 182 hours per year â€” roughly 23 full workdays of deliberate skill building.
+A 1% daily improvement compounds to 38x over a year. The same math applies to learning: 30 minutes of focused study daily equals 182 hours per year — roughly 23 full workdays of deliberate skill building.
 
 ```mermaid
 flowchart TD
@@ -2023,7 +2023,7 @@ They quit during the seed phase. They compare their Day 30 to someone else's Yea
 
 **The antidote:** Trust the math. The compound effect doesn't care about your feelings. 30 minutes daily for 3 years will make you an expert in almost any area of software engineering. The only way to fail is to stop showing up.
 
-**Your daily minimum:** 5 minutes. Do 5 minutes on your worst day. That's 30 hours over a year â€” enough to become dangerous in any new topic. Compound works even at 5 minutes.
+**Your daily minimum:** 5 minutes. Do 5 minutes on your worst day. That's 30 hours over a year — enough to become dangerous in any new topic. Compound works even at 5 minutes.
 
 ---
 
@@ -2032,11 +2032,11 @@ They quit during the seed phase. They compare their Day 30 to someone else's Yea
 
 
 **1. What are the four components of the procrastination loop, in order?**
-a) Trigger â†’ coping behavior â†’ negative feeling â†’ relief + guilt
-b) Trigger â†’ negative feeling â†’ coping behavior â†’ relief + guilt
-c) Negative feeling â†’ trigger â†’ coping behavior â†’ relief + guilt
-d) Coping behavior â†’ trigger â†’ negative feeling â†’ guilt + relief
-**Answer:** B. Trigger (cue) â†’ negative feeling (boredom/anxiety) â†’ coping behavior (avoidance) â†’ temporary relief followed by guilt, which strengthens the loop for next time.
+a) Trigger → coping behavior → negative feeling → relief + guilt
+b) Trigger → negative feeling → coping behavior → relief + guilt
+c) Negative feeling → trigger → coping behavior → relief + guilt
+d) Coping behavior → trigger → negative feeling → guilt + relief
+**Answer:** B. Trigger (cue) → negative feeling (boredom/anxiety) → coping behavior (avoidance) → temporary relief followed by guilt, which strengthens the loop for next time.
 
 **2. Why does the 2-minute rule effectively overcome procrastination?**
 a) Two minutes of work burns more calories than sitting idle
@@ -2064,7 +2064,7 @@ a) Completed tasks are remembered better than interrupted ones
 b) Interrupted or incomplete tasks are remembered better than completed ones
 c) Tasks completed in the morning are recalled more accurately
 d) Multitasking improves overall task completion rates
-**Answer:** B. Named after Bluma Zeigarnik, this effect explains why your brain maintains subconscious tension around unfinished tasks â€” and why stopping a study session mid-stream pulls you back to continue later.
+**Answer:** B. Named after Bluma Zeigarnik, this effect explains why your brain maintains subconscious tension around unfinished tasks — and why stopping a study session mid-stream pulls you back to continue later.
 
 **6. According to the 20-second rule (Shawn Achor), how does environmental design influence habit formation?**
 a) Every 20 seconds of willpower replenishes one unit of self-control
@@ -2075,7 +2075,7 @@ d) Twenty-second study bursts are the optimal learning interval
 
 **7. What is habit stacking and what formula does it follow?**
 a) Performing all habits simultaneously to save time
-b) After/Before [current habit], I will [new habit] â€” attaching a new behavior to an existing automatic one
+b) After/Before [current habit], I will [new habit] — attaching a new behavior to an existing automatic one
 c) Stacking multiple new habits at once for faster results
 d) Replacing one bad habit with one good habit each week
 **Answer:** B. Habit stacking (James Clear, *Atomic Habits*) leverages an existing automatic behavior as a reliable trigger. The new habit inherits the reliability of the old one, making it far more likely to stick than if started in isolation.
@@ -2085,14 +2085,14 @@ a) Regular sleep schedule
 b) Morning deep work block before checking notifications
 c) Checking email every 15 minutes to stay responsive
 d) Weekly review and reflection
-**Answer:** C. Keystone habits trigger positive cascades across many areas. Checking email frequently fragments attention and undermines deep work â€” it is an anti-pattern, not a keystone. The real keystones are sleep, morning deep work, weekly review, exercise, and consistent Pomodoro practice.
+**Answer:** C. Keystone habits trigger positive cascades across many areas. Checking email frequently fragments attention and undermines deep work — it is an anti-pattern, not a keystone. The real keystones are sleep, morning deep work, weekly review, exercise, and consistent Pomodoro practice.
 
 **9. What does willpower depletion (ego depletion) imply for scheduling learning?**
 a) Willpower is unlimited, so schedule doesn't matter
 b) Willpower replenishes fastest during exercise
 c) Self-control is a finite resource that declines through the day, so the hardest learning should be scheduled in the morning
 d) Learning in the evening is more effective because the brain has warmed up
-**Answer:** C. Research shows that decision fatigue and self-control depletion accumulate throughout the day. Morning hours â€” when willpower is at its peak â€” are optimal for difficult new concepts and deep problem-solving.
+**Answer:** C. Research shows that decision fatigue and self-control depletion accumulate throughout the day. Morning hours — when willpower is at its peak — are optimal for difficult new concepts and deep problem-solving.
 
 **10. Which of the following best describes Cal Newport's four philosophies of deep work?**
 a) Pomodoro, Eisenhower, GTD, and Getting Things Done
@@ -2106,14 +2106,14 @@ a) The ability to pay attention to multiple things at once
 b) The phenomenon where after switching tasks, part of your attention remains stuck on the previous task, impairing performance for 10-20 minutes
 c) The mental energy left over after a deep work session
 d) A meditation technique for clearing the mind before studying
-**Answer:** B. Coined by Sophie Leroy, attention residue means every task switch costs more than the interruption time â€” a 30-second glance at a notification can cause 10-15 minutes of degraded focus. Batching switches and ritualizing transitions protect against this.
+**Answer:** B. Coined by Sophie Leroy, attention residue means every task switch costs more than the interruption time — a 30-second glance at a notification can cause 10-15 minutes of degraded focus. Batching switches and ritualizing transitions protect against this.
 
 **12. What is the purpose of a weekly review and which practice does it complement?**
 a) To plan every hour of the upcoming week in detail; complements deep work
 b) To step back and evaluate what worked, what didn't, and what to adjust; complements the 4DX framework's "cadence of accountability"
 c) To re-read all notes from the week; complements spaced repetition
 d) To set annual goals; complements the compound effect
-**Answer:** B. The weekly review (adapted from David Allen's GTD) is the fourth discipline of 4DX â€” it creates a cadence of accountability. By reviewing lead measures, wins, struggles, and commitments every Sunday, you prevent drift and maintain strategic alignment.
+**Answer:** B. The weekly review (adapted from David Allen's GTD) is the fourth discipline of 4DX — it creates a cadence of accountability. By reviewing lead measures, wins, struggles, and commitments every Sunday, you prevent drift and maintain strategic alignment.
 
 ---
 
@@ -2121,16 +2121,16 @@ d) To set annual goals; complements the compound effect
 
 | Concept | Definition | Signal to Use | Pitfall |
 |---------|-----------|---------------|---------|
-| Procrastination Loop | Cycle of trigger â†’ negative feeling â†’ coping relief â†’ guilt | When you find yourself avoiding studying despite knowing you should | Treating the symptom (coping behavior) instead of the trigger |
-| 2-Minute Rule | Starting any task for just 2 minutes bypasses the brain's threat response | When you feel resistance to starting any task | Setting a timer and actually stopping at 2 minutes â€” you almost never will |
-| Habit Stacking | Linking a new habit to an existing automatic behavior | When you need a new habit to stick without relying on motivation | Choosing too many habits at once â€” stack just ONE new habit per week |
-| Implementation Intentions | Pre-decided if-then plans that remove in-the-moment decision fatigue | When willpower is low or you're prone to rationalization | Making the plan too vague â€” "If X at Y, then Z" must be concrete and specific |
-| Deep Work | Intense, distraction-free cognitive focus on a single task | When you need to learn something complex or solve a hard problem | Staying in shallow work because it feels productive â€” check email is not deep work |
-| Attention Residue | Lingering mental focus on a previous task that degrades current performance | After any context switch â€” before starting deep work | Multitasking between learning tasks â€” batch study topics in Pomodoro blocks |
+| Procrastination Loop | Cycle of trigger → negative feeling → coping relief → guilt | When you find yourself avoiding studying despite knowing you should | Treating the symptom (coping behavior) instead of the trigger |
+| 2-Minute Rule | Starting any task for just 2 minutes bypasses the brain's threat response | When you feel resistance to starting any task | Setting a timer and actually stopping at 2 minutes — you almost never will |
+| Habit Stacking | Linking a new habit to an existing automatic behavior | When you need a new habit to stick without relying on motivation | Choosing too many habits at once — stack just ONE new habit per week |
+| Implementation Intentions | Pre-decided if-then plans that remove in-the-moment decision fatigue | When willpower is low or you're prone to rationalization | Making the plan too vague — "If X at Y, then Z" must be concrete and specific |
+| Deep Work | Intense, distraction-free cognitive focus on a single task | When you need to learn something complex or solve a hard problem | Staying in shallow work because it feels productive — check email is not deep work |
+| Attention Residue | Lingering mental focus on a previous task that degrades current performance | After any context switch — before starting deep work | Multitasking between learning tasks — batch study topics in Pomodoro blocks |
 | 4DX Framework | Four Disciplines of Execution: WIG, lead measures, scoreboard, cadence | When you have vague goals that never materialize into daily action | Tracking lag measures (outcomes) instead of lead measures (daily behaviors) |
-| Weekly Review | Structured 30-minute weekly check-in to catch drift early | Every Sunday to maintain alignment with learning goals | Skipping it when you're "too busy" â€” the weeks you skip are when you need it most |
+| Weekly Review | Structured 30-minute weekly check-in to catch drift early | Every Sunday to maintain alignment with learning goals | Skipping it when you're "too busy" — the weeks you skip are when you need it most |
 | Compound Effect | Small consistent actions producing exponential results over time | When you feel like daily 5-minute learning sessions aren't enough | Stopping during the invisible seed phase before results compound |
-| Keystone Habits | One habit that naturally triggers positive downstream behaviors | When you want maximum behavioral leverage per unit of effort | Adding keystone habits from the wrong domain â€” pick one that directly triggers learning |
+| Keystone Habits | One habit that naturally triggers positive downstream behaviors | When you want maximum behavioral leverage per unit of effort | Adding keystone habits from the wrong domain — pick one that directly triggers learning |
 
 
 
@@ -2149,7 +2149,7 @@ d) To set annual goals; complements the compound effect
 
 | Category | Key Points |
 |----------|-----------|
-| Procrastination | - Loop: trigger â†’ negative feeling â†’ coping â†’ guilt - Break it at the trigger with the 2-minute rule - Use implementation intentions (If/Then plans) - Reduce activation energy with the 20-second rule |
+| Procrastination | - Loop: trigger → negative feeling → coping → guilt - Break it at the trigger with the 2-minute rule - Use implementation intentions (If/Then plans) - Reduce activation energy with the 20-second rule |
 | Habits & Systems | - Habit stacking: attach new habit to existing one - Keystone habits (sleep, morning block, review) trigger cascades - Temptation bundling: reserve a guilty pleasure for study time - Stack one new habit per week, not many at once |
 | Deep Work | - Distraction-free, intense cognitive focus on one task - Use 90-min blocks with zero interruptions - Ritualize transitions to clear attention residue - Four philosophies: Monastic, Bimodal, Rhythmic, Journalistic |
 | Tracking & Review | - Weekly review (Sunday, 30 min): 7 questions to catch drift - Monthly retrospective: Stop/Start/Continue - Track streaks with minimum viable day (5 min) - Use 4DX: WIG + lead measures + scoreboard + cadence |
@@ -2158,11 +2158,11 @@ d) To set annual goals; complements the compound effect
 
 ## Chapter Summary
 
-- **Procrastination is emotional, not logical.** The procrastination loop (trigger â†’ negative feeling â†’ coping â†’ relief â†’ guilt) can be broken at the trigger stage using the 2-minute rule, implementation intentions, and temptation bundling. Reducing activation energy (20-second rule) and using habit stacking makes good habits automatic.
-- **Deep work is the foundation of mastery.** Distraction-free concentration pushes cognitive limits and enables chunk formation. Attention residue from context switching is the hidden killer of focus â€” batch your switches and ritualize transitions to protect deep work time.
+- **Procrastination is emotional, not logical.** The procrastination loop (trigger → negative feeling → coping → relief → guilt) can be broken at the trigger stage using the 2-minute rule, implementation intentions, and temptation bundling. Reducing activation energy (20-second rule) and using habit stacking makes good habits automatic.
+- **Deep work is the foundation of mastery.** Distraction-free concentration pushes cognitive limits and enables chunk formation. Attention residue from context switching is the hidden killer of focus — batch your switches and ritualize transitions to protect deep work time.
 - **Systems beat goals.** The 4DX framework (wildly important goal, lead measures, scoreboard, weekly cadence) turns vague aspirations into measurable progress. Weekly reviews catch drift early; monthly retrospectives ensure you're on the right path.
 - **Consistency compounds exponentially.** 1% daily improvement yields 38x growth over a year. Small daily actions (5 minutes minimum) outperform massive binges. Streaks and habit tracking maintain momentum through the seed phase when results are invisible.
-- **Plateaus are not failure â€” they are the real learning zone.** Most progress happens during the invisible seed phase. When you hit a slump, diagnose the type (motivational, cognitive, logistical, or physical) and apply the targeted remedy. The only true failure is quitting before the compound effect kicks in.
+- **Plateaus are not failure — they are the real learning zone.** Most progress happens during the invisible seed phase. When you hit a slump, diagnose the type (motivational, cognitive, logistical, or physical) and apply the targeted remedy. The only true failure is quitting before the compound effect kicks in.
 
 ---
 
@@ -2214,11 +2214,11 @@ Write them down. Post them where you'll see them daily for the next 30 days.
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B â€” Procrastination is an emotional regulation problem, not a willpower deficit. The brain interprets studying as a threat (difficult, boring, uncertain). The 2-minute rule lowers the activation barrier below the threat threshold, making starting nearly effortless.
+**Answer:** B — Procrastination is an emotional regulation problem, not a willpower deficit. The brain interprets studying as a threat (difficult, boring, uncertain). The 2-minute rule lowers the activation barrier below the threat threshold, making starting nearly effortless.
 </details>
 
 **Q2:** A student checks Slack for 30 seconds mid-way through a deep work session. What is the hidden cost beyond those 30 seconds?
-- A) None â€” they will immediately refocus
+- A) None — they will immediately refocus
 - B) Attention residue causes 10-20 minutes of degraded focus after resuming
 - C) Slack notifications permanently break concentration for the entire session
 - D) They will lose 30 seconds of data in working memory
@@ -2226,11 +2226,11 @@ Write them down. Post them where you'll see them daily for the next 30 days.
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B â€” Attention residue means part of your attention remains on the previous task after switching. A 30-second notification check creates lingering cognitive drag that takes 10-20 minutes to fully dissipate, making the true cost far higher than the interruption itself.
+**Answer:** B — Attention residue means part of your attention remains on the previous task after switching. A 30-second notification check creates lingering cognitive drag that takes 10-20 minutes to fully dissipate, making the true cost far higher than the interruption itself.
 </details>
 
 **Q3:** A student creates a wildly important goal to "master dynamic programming" and tracks "hours studied" on a scoreboard. What is wrong with this 4DX setup?
-- A) "Hours studied" is a lag measure, not a lead measure â€” they should track problems solved per day
+- A) "Hours studied" is a lag measure, not a lead measure — they should track problems solved per day
 - B) The WIG is not ambitious enough
 - C) The scoreboard should track weekly hours, not daily
 - D) 4DX only works for teams, not individuals
@@ -2238,15 +2238,15 @@ Write them down. Post them where you'll see them daily for the next 30 days.
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** A â€” The 4DX framework requires lead measures (actions you control that drive the goal), not lag measures (outcomes you want). "Problems solved per day" is a lead measure; "mastering DP" is the lag measure. Tracking lead measures gives actionable daily feedback.
+**Answer:** A — The 4DX framework requires lead measures (actions you control that drive the goal), not lag measures (outcomes you want). "Problems solved per day" is a lead measure; "mastering DP" is the lag measure. Tracking lead measures gives actionable daily feedback.
 </details>
 
 ## Further Reading
 
-- **â† Chapter 5: Memory Systems & Mnemonics** ([ch-05-memory-systems-mnemonics.md](./ch-05-memory-systems.md)) â€” Memory palaces, the peg system, desirable difficulties, and encoding specificity. Before you can learn deeply, you need reliable storage and retrieval.
-- **Chapter 7: DSA & Coding Interview Prep â†’** ([ch-07-dsa-coding-interview.md](./ch-07-dsa-coding-interview.md)) â€” Domain-specific applications of everything you've learned. The 3-pass method for problem-solving, pattern recognition, and the interview workflow.
-- **Atomic Habits by James Clear** â€” The definitive practical guide to habit formation. Habit stacking, the 4 laws of behavior change, and how to build systems that make good habits inevitable.
-- **Deep Work by Cal Newport** â€” The book that defined deep work. Rules for focused success in a distracted world, including the 4DX framework applied to knowledge work.
-- **The Power of Habit by Charles Duhigg** â€” The science of habit formation in organizations and individuals. The source material for keystone habits and the habit loop.
-- **Getting Things Done by David Allen** â€” The source of the weekly review practice. A complete productivity system that complements the learning-focused approach in this chapter.
-- **Mindset by Carol Dweck** â€” The psychology of how your beliefs about learning shape your outcomes. Essential context for why growth mindset makes the compound effect possible.
+- **← Chapter 5: Memory Systems & Mnemonics** ([ch-05-memory-systems-mnemonics.md](./ch-05-memory-systems.md)) — Memory palaces, the peg system, desirable difficulties, and encoding specificity. Before you can learn deeply, you need reliable storage and retrieval.
+- **Chapter 7: DSA & Coding Interview Prep →** ([ch-07-dsa-coding-interview.md](./ch-07-dsa-coding-interview.md)) — Domain-specific applications of everything you've learned. The 3-pass method for problem-solving, pattern recognition, and the interview workflow.
+- **Atomic Habits by James Clear** — The definitive practical guide to habit formation. Habit stacking, the 4 laws of behavior change, and how to build systems that make good habits inevitable.
+- **Deep Work by Cal Newport** — The book that defined deep work. Rules for focused success in a distracted world, including the 4DX framework applied to knowledge work.
+- **The Power of Habit by Charles Duhigg** — The science of habit formation in organizations and individuals. The source material for keystone habits and the habit loop.
+- **Getting Things Done by David Allen** — The source of the weekly review practice. A complete productivity system that complements the learning-focused approach in this chapter.
+- **Mindset by Carol Dweck** — The psychology of how your beliefs about learning shape your outcomes. Essential context for why growth mindset makes the compound effect possible.

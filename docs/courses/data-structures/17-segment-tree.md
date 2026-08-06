@@ -1,6 +1,6 @@
-﻿# Chapter 17: Segment Tree
+# Chapter 17: Segment Tree
 
-> **Prerequisites:** [Chapter 8: Binary Trees](./08-binary-trees.md) â€” Tree concepts, recursion, array-based tree storage | **Next:** [Chapter 18: Union-Find (Disjoint Set Union)](./18-union-find.md) â€” From range queries to connectivity
+> **Prerequisites:** [Chapter 8: Binary Trees](./08-binary-trees.md) — Tree concepts, recursion, array-based tree storage | **Next:** [Chapter 18: Union-Find (Disjoint Set Union)](./18-union-find.md) — From range queries to connectivity
 
 ## Learning Objectives
 
@@ -35,9 +35,9 @@ By the end of this chapter, students will be able to:
 
 ## Why Segment Trees Matter
 
-**Real-World Analogy:** Imagine you and 7 friends split a restaurant bill of $240. The waiter needs to answer two kinds of questions: "What's the total for the table?" (range sum) and "Who has the most expensive item?" (range max). Between questions, people keep changing their orders (point updates). Calculating from scratch every time is O(n) per query â€” painfully slow when the restaurant has 10,000 tables of 8. A segment tree is like organizing each table's items into a hierarchy of subtotals: each waiter manages 2 people, each head waiter manages 2 waiters, and the manager has the grand total. Any question about any range can be answered by combining just a handful of subtotals, and any change only affects the log(n) subtotals that contain it.
+**Real-World Analogy:** Imagine you and 7 friends split a restaurant bill of $240. The waiter needs to answer two kinds of questions: "What's the total for the table?" (range sum) and "Who has the most expensive item?" (range max). Between questions, people keep changing their orders (point updates). Calculating from scratch every time is O(n) per query — painfully slow when the restaurant has 10,000 tables of 8. A segment tree is like organizing each table's items into a hierarchy of subtotals: each waiter manages 2 people, each head waiter manages 2 waiters, and the manager has the grand total. Any question about any range can be answered by combining just a handful of subtotals, and any change only affects the log(n) subtotals that contain it.
 
-This pattern â€” **precompute aggregations in a balanced binary tree** â€” is the core insight behind segment trees. They power database range-sum analytics, competitive programming solutions, and image processing pipelines worldwide.
+This pattern — **precompute aggregations in a balanced binary tree** — is the core insight behind segment trees. They power database range-sum analytics, competitive programming solutions, and image processing pipelines worldwide.
 
 ---
 
@@ -50,7 +50,7 @@ This pattern â€” **precompute aggregations in a balanced binary tree** â�
 | Point update | Update leaf, propagate up to root | O(log n) per update |
 | Lazy propagation | Defer range updates with pending flags | Range updates also O(log n) |
 | Fenwick tree (BIT) | Binary indexing for prefix sums | Simpler, n space, but prefix-only |
-| 4Ã— array size | Standard allocation: 4n nodes | Safe upper bound for any n |
+| 4× array size | Standard allocation: 4n nodes | Safe upper bound for any n |
 | Segment tree vs BIT vs Sparse Table | Trade-off: update speed vs query speed vs space | Pick by update frequency |
 
 ### Chapter Roadmap
@@ -62,9 +62,9 @@ flowchart TD
     B --> C[Prefix Sum / Point Updates Only]
     B --> D[Min/Max/GCD with Updates]
     B --> E[Range Updates Needed]
-    C --> F[Fenwick BIT â€” O&#40;log n&#41;]
-    D --> G[Segment Tree â€” O&#40;log n&#41;]
-    E --> H[Segment Tree + Lazy â€” O&#40;log n&#41;]
+    C --> F[Fenwick BIT — O&#40;log n&#41;]
+    D --> G[Segment Tree — O&#40;log n&#41;]
+    E --> H[Segment Tree + Lazy — O&#40;log n&#41;]
     F --> I[Build O&#40;n&#41;, Space n]
     G --> J[Build O&#40;n&#41;, Space 4n]
     H --> J
@@ -84,7 +84,7 @@ flowchart TD
 A **segment tree** is a binary tree where each node represents a contiguous segment (interval) of the array. The root covers the full array `[0, n-1]`. Each leaf represents a single element `[i, i]`. Internal nodes store aggregate information (sum, min, max, GCD, etc.) computed from their two children.
 
 **Key properties:**
-- Complete binary tree â€” stored in an array (1-indexed) of size `4n`.
+- Complete binary tree — stored in an array (1-indexed) of size `4n`.
 - Node `i` has left child at `2*i` and right child at `2*i + 1`.
 - A node covering `[l, r]` splits at `mid = l + (r - l) / 2`:
   - Left child covers `[l, mid]`
@@ -133,21 +133,21 @@ Tree array (1-indexed, size 24) shown after each completed build step:
 | 1 | 1 | [0,5] | mid=2, recurse left | `[-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
 | 2 | 2 | [0,2] | mid=1, recurse left | same |
 | 3 | 4 | [0,1] | mid=0, recurse left | same |
-| 4 | 8 | [0,0] | leaf â†’ tree[8]=1 | `[-,1,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
-| 5 | 9 | [1,1] | leaf â†’ tree[9]=3 | `[-,1,3,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
+| 4 | 8 | [0,0] | leaf → tree[8]=1 | `[-,1,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
+| 5 | 9 | [1,1] | leaf → tree[9]=3 | `[-,1,3,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
 | 6 | 4 | combine | tree[4]=tree[8]+tree[9]=4 | `[-,4,3,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
-| 7 | 5 | [2,2] | leaf â†’ tree[5]=5 | `[-,4,3,5,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
+| 7 | 5 | [2,2] | leaf → tree[5]=5 | `[-,4,3,5,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
 | 8 | 2 | combine | tree[2]=tree[4]+tree[5]=9 | `[-,9,3,5,4,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-]` |
 | 9 | 3 | [3,5] | mid=4, recurse left | same |
 | 10 | 6 | [3,4] | mid=3, recurse left | same |
-| 11 | 12 | [3,3] | leaf â†’ tree[12]=7 | `[-,9,-,5,4,-,-,-,-,-,7,-,-,-,-,-,-,-,-,-,-,-,-]` |
-| 12 | 13 | [4,4] | leaf â†’ tree[13]=9 | `[-,9,-,5,4,-,-,-,-,-,7,9,-,-,-,-,-,-,-,-,-,-,-]` |
+| 11 | 12 | [3,3] | leaf → tree[12]=7 | `[-,9,-,5,4,-,-,-,-,-,7,-,-,-,-,-,-,-,-,-,-,-,-]` |
+| 12 | 13 | [4,4] | leaf → tree[13]=9 | `[-,9,-,5,4,-,-,-,-,-,7,9,-,-,-,-,-,-,-,-,-,-,-]` |
 | 13 | 6 | combine | tree[6]=tree[12]+tree[13]=16 | `[-,9,-,5,4,16,-,-,-,-,7,9,-,-,-,-,-,-,-,-,-,-,-]` |
-| 14 | 7 | [5,5] | leaf â†’ tree[7]=11 | `[-,9,-,5,4,16,11,-,-,-,7,9,-,-,-,-,-,-,-,-,-,-,-]` |
+| 14 | 7 | [5,5] | leaf → tree[7]=11 | `[-,9,-,5,4,16,11,-,-,-,7,9,-,-,-,-,-,-,-,-,-,-,-]` |
 | 15 | 3 | combine | tree[3]=tree[6]+tree[7]=27 | `[-,9,27,5,4,16,11,-,-,-,7,9,-,-,-,-,-,-,-,-,-,-,-]` |
 | 16 | 1 | combine | tree[1]=tree[2]+tree[3]=36 | `[-,36,27,9,4,16,11,5,1,3,-,-,7,9,-,-,-,-,-,-,-,-,-,-]` |
 
-**Final Tree Array:** (1-indexed, showing indices 1â€“16)
+**Final Tree Array:** (1-indexed, showing indices 1–16)
 
 ```
 Index:      1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
@@ -172,15 +172,15 @@ Value:     36   9  27   4   5  16  11   1   3   -   -   7   9   -   -   -
 | Case | Complexity | When |
 |------|-----------|------|
 | **Build** | O(n) | Each of ~2n nodes visited once |
-| **Space** | O(n) â€” exactly 4n | Worst-case allocation |
+| **Space** | O(n) — exactly 4n | Worst-case allocation |
 
 **Why O(n)?** The build visits each node exactly once. The segment tree has ~2n nodes for n elements (n leaves + n-1 internal nodes). The `4n` allocation is a safe upper bound that works for any n. The recurrence is:
 
-T(n) = 2T(n/2) + O(1) â†’ by Master Theorem case 1: T(n) = O(n)
+T(n) = 2T(n/2) + O(1) → by Master Theorem case 1: T(n) = O(n)
 
 Each node does O(1) work (two recursive calls + one addition). With ~2n nodes total, total work is O(n).
 
-**Why 4n space?** The exact size needed is `2 * 2^âŒˆlogâ‚‚nâŒ‰ - 1`, which ranges from ~2n to ~4n. Allocating `4n` avoids computing this exact value and is always sufficient.
+**Why 4n space?** The exact size needed is `2 * 2^⌈log₂n⌉ - 1`, which ranges from ~2n to ~4n. Allocating `4n` avoids computing this exact value and is always sufficient.
 
 ### Implementations
 
@@ -278,34 +278,34 @@ public class SegmentTree {
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| O(log n) queries and updates | 4n space â€” high memory for large n |
-| Works with any associative operation (sum, min, max, GCD, XOR) | Complex to implement â€” ~60 lines vs BIT's ~20 |
-| Handles both point and range updates (with lazy) | Static size â€” cannot grow after construction |
+| O(log n) queries and updates | 4n space — high memory for large n |
+| Works with any associative operation (sum, min, max, GCD, XOR) | Complex to implement — ~60 lines vs BIT's ~20 |
+| Handles both point and range updates (with lazy) | Static size — cannot grow after construction |
 | Built-in for competitive programming standard library | Overkill for prefix-only problems |
 | No extra data structures needed | Recursive implementation risks stack overflow for n > 10^6 |
 
 ### Edge Cases
 
 
-- **Empty array:** Segment tree with n = 0 â€” skip build entirely, all queries return identity (0 for sum, INF for min, -INF for max).
-- **Single element:** n = 1 â€” tree has only root at index 1 covering [0,0]. Works correctly for all operations.
+- **Empty array:** Segment tree with n = 0 — skip build entirely, all queries return identity (0 for sum, INF for min, -INF for max).
+- **Single element:** n = 1 — tree has only root at index 1 covering [0,0]. Works correctly for all operations.
 - **n = 1:** Tree array is just `[0, arr[0]]` (1-indexed). Children at indices 2 and 3 are never accessed.
-- **Large n (>10^6):** Recursive build may overflow the call stack. Use iterative build or increase stack size. The 4n allocation may use ~32 MB for ints (4 bytes Ã— 4 Ã— 10^6).
-- **Non-power-of-2 n:** The tree still works correctly. Internal nodes cover uneven splits (e.g., [0,2] â†’ left [0,1], right [2,2] for n=3).
+- **Large n (>10^6):** Recursive build may overflow the call stack. Use iterative build or increase stack size. The 4n allocation may use ~32 MB for ints (4 bytes × 4 × 10^6).
+- **Non-power-of-2 n:** The tree still works correctly. Internal nodes cover uneven splits (e.g., [0,2] → left [0,1], right [2,2] for n=3).
 
 ---
 
 ## 17.2 Range Query (Sum / Min / Max)
 
-**Real-World Analogy:** The CEO asks, "What's the total salary for departments 3 through 7?" Each VP checks: if their department is fully inside the range, they report its precomputed total. If it's partially inside, they delegate to their managers and combine the results. They never drill down to individual employees unless they have to â€” and most queries stop at the VP level.
+**Real-World Analogy:** The CEO asks, "What's the total salary for departments 3 through 7?" Each VP checks: if their department is fully inside the range, they report its precomputed total. If it's partially inside, they delegate to their managers and combine the results. They never drill down to individual employees unless they have to — and most queries stop at the VP level.
 
 ### Definition
 
 
 A range query computes the aggregate (sum, minimum, maximum, etc.) of elements in `[ql, qr]`. Starting at the root, three cases arise:
 
-- **Full overlap:** Node's segment is completely inside `[ql, qr]` â†’ return its stored value.
-- **No overlap:** Node's segment is completely outside `[ql, qr]` â†’ return identity (0 for sum, INT_MAX for min, INT_MIN for max).
+- **Full overlap:** Node's segment is completely inside `[ql, qr]` → return its stored value.
+- **No overlap:** Node's segment is completely outside `[ql, qr]` → return identity (0 for sum, INT_MAX for min, INT_MIN for max).
 - **Partial overlap:** Recurse to both children and combine results.
 
 ### Algorithm Steps (Range Sum Query)
@@ -347,27 +347,27 @@ Index:  1   2   3   4   5   6   7   8   9  10  11  12  13
 Value: 36   9  27   4   5  16  11   1   3   -   -   7   9
 ```
 
-**Query:** `sum(1, 4)` â€” indices 1 through 4 inclusive.
+**Query:** `sum(1, 4)` — indices 1 through 4 inclusive.
 
 | Step | Node | Seg `[l,r]` | Overlap? | Action |
 |------|------|-------------|----------|--------|
 | 1 | 1 | [0,5] | Partial | mid=2, recurse left (2) and right (3) |
 | 2 | 2 | [0,2] | Partial | mid=1, recurse left (4) and right (5) |
 | 3 | 4 | [0,1] | Partial | mid=0, recurse left (8) and right (9) |
-| 4 | 8 | [0,0] | ql=1 > r=0 â†’ **None** | Return 0 |
-| 5 | 9 | [1,1] | Full [1,1] âŠ† [1,4] | Return tree[9] = **3** |
+| 4 | 8 | [0,0] | ql=1 > r=0 → **None** | Return 0 |
+| 5 | 9 | [1,1] | Full [1,1] ⊆ [1,4] | Return tree[9] = **3** |
 | 6 | 4 | combine | left=0, right=3 | Return **3** |
-| 7 | 5 | [2,2] | Full [2,2] âŠ† [1,4] | Return tree[5] = **5** |
+| 7 | 5 | [2,2] | Full [2,2] ⊆ [1,4] | Return tree[5] = **5** |
 | 8 | 2 | combine | left=3, right=5 | Return **8** |
 | 9 | 3 | [3,5] | Partial | mid=4, recurse left (6) and right (7) |
-| 10 | 6 | [3,4] | Full [3,4] âŠ† [1,4] | Return tree[6] = **16** |
-| 11 | 7 | [5,5] | ql=1 > r=5? No. qr=4 &lt; l=5 â†’ **None** | Return 0 |
+| 10 | 6 | [3,4] | Full [3,4] ⊆ [1,4] | Return tree[6] = **16** |
+| 11 | 7 | [5,5] | ql=1 > r=5? No. qr=4 &lt; l=5 → **None** | Return 0 |
 | 12 | 3 | combine | left=16, right=0 | Return **16** |
 | 13 | 1 | combine | left=8, right=16 | **Return 24** |
 
-Manual verification: `arr[1]+arr[2]+arr[3]+arr[4] = 3+5+7+9 = 24`. âœ…
+Manual verification: `arr[1]+arr[2]+arr[3]+arr[4] = 3+5+7+9 = 24`. ✅
 
-**Nodes visited:** 1, 2, 3, 4, 5, 6, 7, 8, 9 â€” only 9 of ~12 nodes. Without the segment tree, all 4 elements would be visited. For large n, the segment tree visits O(log n) nodes.
+**Nodes visited:** 1, 2, 3, 4, 5, 6, 7, 8, 9 — only 9 of ~12 nodes. Without the segment tree, all 4 elements would be visited. For large n, the segment tree visits O(log n) nodes.
 
 ### Complexity Analysis
 
@@ -378,15 +378,15 @@ Manual verification: `arr[1]+arr[2]+arr[3]+arr[4] = 3+5+7+9 = 24`. âœ…
 | **Worst** | O(log n) | Query at leaf level, visiting O(log n) nodes per level |
 | **Average** | O(log n) | |
 
-**Why O(log n)?** The query visits at most 4 nodes per level of the tree. Reason: at each level, you can have at most 2 partially overlapping nodes (one on the left boundary, one on the right boundary), and any fully covered nodes between them return immediately. With logâ‚‚n levels, total nodes visited â‰¤ 4 logâ‚‚n = O(log n).
+**Why O(log n)?** The query visits at most 4 nodes per level of the tree. Reason: at each level, you can have at most 2 partially overlapping nodes (one on the left boundary, one on the right boundary), and any fully covered nodes between them return immediately. With log₂n levels, total nodes visited ≤ 4 log₂n = O(log n).
 
-For n = 1,000,000: at most 4 Ã— 20 = 80 node visits vs 1,000,000 for a linear scan.
+For n = 1,000,000: at most 4 × 20 = 80 node visits vs 1,000,000 for a linear scan.
 
 ### Implementations
 
 
 ```cpp
-// C++ â€” Range Sum Query
+// C++ — Range Sum Query
 int query(int node, int l, int r, int ql, int qr) {
     if (ql > r || qr < l) return 0;
     if (ql <= l && r <= qr) return tree[node];
@@ -401,7 +401,7 @@ int rangeSum(int l, int r) {
 ```
 
 ```python
-# Python â€” Range Sum Query
+# Python — Range Sum Query
 def _query(self, node, l, r, ql, qr):
     if ql > r or qr < l:
         return 0
@@ -417,7 +417,7 @@ def range_sum(self, l, r):
 ```
 
 ```java
-// Java â€” Range Sum Query
+// Java — Range Sum Query
 private int query(int node, int l, int r, int ql, int qr) {
     if (ql > r || qr < l) return 0;
     if (ql <= l && r <= qr) return tree[node];
@@ -462,18 +462,18 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| O(log n) for any range â€” no preprocessing per query | Identity value depends on operation (0 for sum, INF for min) |
-| Works for sum, min, max, GCD, XOR â€” any associative operation | Recursive queries may stack overflow in some languages |
+| O(log n) for any range — no preprocessing per query | Identity value depends on operation (0 for sum, INF for min) |
+| Works for sum, min, max, GCD, XOR — any associative operation | Recursive queries may stack overflow in some languages |
 | Can answer first/last occurrence of value in range (with extensions) | Constant factor higher than BIT for prefix sums |
 | Multiple aggregate types can share one tree | Must decide identity at compile time in static languages |
 
 ### Edge Cases
 
 
-- **Query outside bounds:** `query(0, 5)` when n=6 â€” no overlap returns 0 (for sum). Should be validated at the public API level.
-- **Query single element:** `query(3, 3)` â€” finds the leaf node [3,3] in O(log n) and returns its stored value.
-- **Query entire array:** `query(0, n-1)` â€” root is fully covered, returns tree[1] in O(1).
-- **Query with l > r:** `query(5, 3)` â€” no overlap â†’ returns 0 immediately. Guard against this at the public interface.
+- **Query outside bounds:** `query(0, 5)` when n=6 — no overlap returns 0 (for sum). Should be validated at the public API level.
+- **Query single element:** `query(3, 3)` — finds the leaf node [3,3] in O(log n) and returns its stored value.
+- **Query entire array:** `query(0, n-1)` — root is fully covered, returns tree[1] in O(1).
+- **Query with l > r:** `query(5, 3)` — no overlap → returns 0 immediately. Guard against this at the public interface.
 - **Negative numbers:** Range sum handles negatives naturally. Min query correctly returns the most negative value.
 - **Large queries on sparse trees:** Same O(log n) behavior regardless of query range size.
 
@@ -481,7 +481,7 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 
 ## 17.3 Point Update
 
-**Real-World Analogy:** One employee gets a raise. Instead of recalculating every department's total from scratch, you update the employee's salary in the ledger, then update their team lead's subtotal, that team's manager's subtotal, the VP's total, and finally the CEO's grand total. Only log(n) people need to update their records â€” everyone else's numbers are unchanged.
+**Real-World Analogy:** One employee gets a raise. Instead of recalculating every department's total from scratch, you update the employee's salary in the ledger, then update their team lead's subtotal, that team's manager's subtotal, the VP's total, and finally the CEO's grand total. Only log(n) people need to update their records — everyone else's numbers are unchanged.
 
 ### Definition
 
@@ -526,13 +526,13 @@ Index:  1   2   3   4   5   6   7   8   9  10  11  12  13
 Value: 36   9  27   4   5  16  11   1   3   -   -   7   9
 ```
 
-**Update:** `pointUpdate(2, 10)` â€” set `arr[2] = 10` (was 5).
+**Update:** `pointUpdate(2, 10)` — set `arr[2] = 10` (was 5).
 
 | Step | Node | Seg `[l,r]` | Action | tree after update |
 |------|------|-------------|--------|-------------------|
-| 1 | 1 | [0,5] | mid=2, idx=2 â‰¤ 2, go left | â€” |
-| 2 | 2 | [0,2] | mid=1, idx=2 > 1, go right | â€” |
-| 3 | 5 | [2,2] | leaf â†’ tree[5] = **10** | tree[5]=10 |
+| 1 | 1 | [0,5] | mid=2, idx=2 ≤ 2, go left | — |
+| 2 | 2 | [0,2] | mid=1, idx=2 > 1, go right | — |
+| 3 | 5 | [2,2] | leaf → tree[5] = **10** | tree[5]=10 |
 | 4 | 2 | recompute | tree[2] = tree[4]+tree[5] = 4+10 = **14** | tree[2]=14 |
 | 5 | 1 | recompute | tree[1] = tree[2]+tree[3] = 14+27 = **41** | tree[1]=41 |
 
@@ -542,7 +542,7 @@ Index:  1   2   3   4   5   6   7   8   9  10  11  12  13
 Value: 41  14  27   4  10  16  11   1   3   -   -   7   9
 ```
 
-Verification: New sum of all elements = 1+3+10+7+9+11 = 41 âœ…. Old sum was 36, difference is +5 (10-5).
+Verification: New sum of all elements = 1+3+10+7+9+11 = 41 ✅. Old sum was 36, difference is +5 (10-5).
 
 ### Complexity Analysis
 
@@ -551,7 +551,7 @@ Verification: New sum of all elements = 1+3+10+7+9+11 = 41 âœ…. Old sum was 
 |------|-----------|------|
 | **All cases** | O(log n) | Always travels root-to-leaf and back |
 
-**Why O(log n)?** The update path follows a single root-to-leaf path of length logâ‚‚n. At each of the logâ‚‚n levels, we do O(1) work (compare idx, recurse). On the way back, we update logâ‚‚n ancestors. Total: 2 Ã— logâ‚‚n = O(log n).
+**Why O(log n)?** The update path follows a single root-to-leaf path of length log₂n. At each of the log₂n levels, we do O(1) work (compare idx, recurse). On the way back, we update log₂n ancestors. Total: 2 × log₂n = O(log n).
 
 Compare to naively rebuilding the entire tree: O(n). A point update is exponentially faster for large arrays.
 
@@ -620,15 +620,15 @@ public void pointUpdate(int idx, int value) {
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| O(log n) â€” much faster than rebuilding O(n) | Must recalculate all ancestors |
-| Same function works for sum, min, max â€” only combine changes | Recursion depth = logâ‚‚n, still risks stack overflow for huge n |
+| O(log n) — much faster than rebuilding O(n) | Must recalculate all ancestors |
+| Same function works for sum, min, max — only combine changes | Recursion depth = log₂n, still risks stack overflow for huge n |
 | Supports delta-update pattern (`arr[i] += delta`) with minor modification | Updating non-existent index crashes without bounds check |
 
 ### Edge Cases
 
 
-- **Update last element:** `pointUpdate(n-1, value)` â€” reaches rightmost leaf, path includes only right children.
-- **Update first element:** `pointUpdate(0, value)` â€” path includes only left children.
+- **Update last element:** `pointUpdate(n-1, value)` — reaches rightmost leaf, path includes only right children.
+- **Update first element:** `pointUpdate(0, value)` — path includes only left children.
 - **Same value:** If `newValue == oldValue`, the tree is unchanged but O(log n) work is still done. Add an early-exit check if needed.
 - **Index out of bounds:** Should throw or return an error before entering recursion.
 - **Empty tree (n=0):** pointUpdate should be a no-op or throw.
@@ -637,7 +637,7 @@ public void pointUpdate(int idx, int value) {
 
 ## 17.4 Lazy Propagation (Range Update)
 
-**Real-World Analogy:** The CEO announces a company-wide 5% bonus. Without lazy propagation, HR would update every single employee's salary individually â€” O(n) work. With lazy propagation, the CEO tells each VP: "Give everyone in your department a 5% bonus." The VP tells each manager the same. A manager with a team of 5 people writes a note: "Pending: +5% for team of 5" and stops there. The actual salary math only happens when someone asks for a specific employee's number. If nobody ever asks the individual, the note stays as a note â€” O(log n) to propagate the instruction, O(1) per employee when actually needed.
+**Real-World Analogy:** The CEO announces a company-wide 5% bonus. Without lazy propagation, HR would update every single employee's salary individually — O(n) work. With lazy propagation, the CEO tells each VP: "Give everyone in your department a 5% bonus." The VP tells each manager the same. A manager with a team of 5 people writes a note: "Pending: +5% for team of 5" and stops there. The actual salary math only happens when someone asks for a specific employee's number. If nobody ever asks the individual, the note stays as a note — O(log n) to propagate the instruction, O(1) per employee when actually needed.
 
 ### Definition
 
@@ -646,7 +646,7 @@ public void pointUpdate(int idx, int value) {
 
 1. Mark covering nodes with a "pending update" value in a separate `lazy` array.
 2. Update the node's aggregate value immediately (it knows the full effect of the pending update on its segment).
-3. When a query or subsequent update needs to go deeper, "push" the pending value to children first â€” then clear the current node's lazy flag.
+3. When a query or subsequent update needs to go deeper, "push" the pending value to children first — then clear the current node's lazy flag.
 
 This keeps both range updates and range queries at O(log n).
 
@@ -739,16 +739,16 @@ Visual structure:
 
 | Step | Node | Seg `[l,r]` | Action | tree/after | lazy/after |
 |------|------|-------------|--------|-----------|-----------|
-| 1 | 1 | [0,4] | Partial, mid=2, push(1) â€” lazy[1]=0, nothing to push | â€” | â€” |
-| 2 | 2 | [0,1] | Partial, mid=0, push(2) | â€” | â€” |
-| 3 | 4 | [0,0] | ql=1 > r=0 â†’ No overlap | return | â€” |
-| 4 | 5 | [1,1] | Full [1,1] âŠ† [1,3] â†’ apply: tree[5]+=(1-1+1)Ã—10=+10 | tree[5]=12 | lazy[5]+=10 |
-| 5 | 2 | combine | tree[2]=tree[4]+tree[5]=1+12=13 | tree[2]=13 | â€” |
-| 6 | 3 | [2,4] | Partial, mid=3, push(3) | â€” | â€” |
-| 7 | 6 | [2,3] | Full [2,3] âŠ† [1,3] â†’ apply: tree[6]+=(3-2+1)Ã—10=+20 | tree[6]=27 | lazy[6]+=10 |
-| 8 | 7 | [4,4] | ql=1 > r=4? No. qr=3 &lt; l=4 â†’ No overlap | return | â€” |
-| 9 | 3 | combine | tree[3]=tree[6]+tree[7]=27+5=32 | tree[3]=32 | â€” |
-| 10 | 1 | combine | tree[1]=tree[2]+tree[3]=13+32=45 | tree[1]=45 | â€” |
+| 1 | 1 | [0,4] | Partial, mid=2, push(1) — lazy[1]=0, nothing to push | — | — |
+| 2 | 2 | [0,1] | Partial, mid=0, push(2) | — | — |
+| 3 | 4 | [0,0] | ql=1 > r=0 → No overlap | return | — |
+| 4 | 5 | [1,1] | Full [1,1] ⊆ [1,3] → apply: tree[5]+=(1-1+1)×10=+10 | tree[5]=12 | lazy[5]+=10 |
+| 5 | 2 | combine | tree[2]=tree[4]+tree[5]=1+12=13 | tree[2]=13 | — |
+| 6 | 3 | [2,4] | Partial, mid=3, push(3) | — | — |
+| 7 | 6 | [2,3] | Full [2,3] ⊆ [1,3] → apply: tree[6]+=(3-2+1)×10=+20 | tree[6]=27 | lazy[6]+=10 |
+| 8 | 7 | [4,4] | ql=1 > r=4? No. qr=3 &lt; l=4 → No overlap | return | — |
+| 9 | 3 | combine | tree[3]=tree[6]+tree[7]=27+5=32 | tree[3]=32 | — |
+| 10 | 1 | combine | tree[1]=tree[2]+tree[3]=13+32=45 | tree[1]=45 | — |
 
 State after Operation 1:
 ```
@@ -757,28 +757,28 @@ Value:    45   13   32    1   12   27    5    1    2    3
 lazy:      0    0    0    0   10   10    0    0    0    0
 ```
 
-Note: `tree[6]` and `tree[5]` were updated immediately. Their children ([2,2], [3,3] for node 6; [1,1] for node 5) still have stale values because the update is "lazy" â€” stored at node 6 and node 5.
+Note: `tree[6]` and `tree[5]` were updated immediately. Their children ([2,2], [3,3] for node 6; [1,1] for node 5) still have stale values because the update is "lazy" — stored at node 6 and node 5.
 
 **Operation 2:** Query sum of range [0, 4]
 
 | Step | Node | Seg `[l,r]` | Action | Result |
 |------|------|-------------|--------|--------|
-| 1 | 1 | [0,4] | Full overlap â†’ **Return tree[1] = 45** | 45 |
+| 1 | 1 | [0,4] | Full overlap → **Return tree[1] = 45** | 45 |
 
-Verification: Original sum = 15. Added 10 to indices 1,2,3 (3 elements Ã— 10 = 30). New sum = 15 + 30 = 45 âœ…. O(1) because root was fully covered.
+Verification: Original sum = 15. Added 10 to indices 1,2,3 (3 elements × 10 = 30). New sum = 15 + 30 = 45 ✅. O(1) because root was fully covered.
 
 **Operation 3:** Query sum of range [2, 2] (needs to push lazy)
 
 | Step | Node | Seg `[l,r]` | Action | Result |
 |------|------|-------------|--------|--------|
-| 1 | 1 | [0,4] | Partial, mid=2, push(1) â€” lazy=0, skip | â€” |
-| 2 | 2 | [0,1] | ql=2 > r=1 â†’ No overlap | 0 |
-| 3 | 3 | [2,4] | Partial, mid=3, push(3) â€” lazy[3]=0 | â€” |
-| 4 | 6 | [2,3] | Partial, mid=2, push(6) â€” lazy[6]=**10** ! | â€” |
-| 5 | push(6) | | apply(12, 2, 2, 10): tree[12] += (1Ã—10) â†’ +=10<br>apply(13, 3, 3, 10): tree[13] += (1Ã—10) â†’ +=10<br>lazy[6] = 0 | tree[12]=13<br>tree[13]=14<br>lazy[6]=0 |
-| 6 | 12 | [2,2] | Full overlap â†’ Return tree[12] = 13 | 13 |
+| 1 | 1 | [0,4] | Partial, mid=2, push(1) — lazy=0, skip | — |
+| 2 | 2 | [0,1] | ql=2 > r=1 → No overlap | 0 |
+| 3 | 3 | [2,4] | Partial, mid=3, push(3) — lazy[3]=0 | — |
+| 4 | 6 | [2,3] | Partial, mid=2, push(6) — lazy[6]=**10** ! | — |
+| 5 | push(6) | | apply(12, 2, 2, 10): tree[12] += (1×10) → +=10<br>apply(13, 3, 3, 10): tree[13] += (1×10) → +=10<br>lazy[6] = 0 | tree[12]=13<br>tree[13]=14<br>lazy[6]=0 |
+| 6 | 12 | [2,2] | Full overlap → Return tree[12] = 13 | 13 |
 
-Result: `sum(2, 2) = 13`. Manual: arr[2] was 3, +10 = 13 âœ…. The lazy value was pushed down only when the query needed the actual leaf value.
+Result: `sum(2, 2) = 13`. Manual: arr[2] was 3, +10 = 13 ✅. The lazy value was pushed down only when the query needed the actual leaf value.
 
 ### Complexity Analysis
 
@@ -789,13 +789,13 @@ Result: `sum(2, 2) = 13`. Manual: arr[2] was 3, +10 = 13 âœ…. The lazy value
 | Range query with lazy | O(log n) | Push only on the path, at most 4 nodes per level |
 | Point update with lazy | O(log n) | Push lazy along the root-to-leaf path, then update |
 
-**Why O(log n) for range updates?** Without lazy propagation, updating range [l, r] requires updating each of (r-l+1) leaves â€” O(n). With lazy propagation, we cover the range with O(log n) maximal nodes (nodes whose segments are fully inside the range and whose parent is not). These nodes are marked lazy and their subtrees are skipped. The same O(log n) bound applies to both updates and queries.
+**Why O(log n) for range updates?** Without lazy propagation, updating range [l, r] requires updating each of (r-l+1) leaves — O(n). With lazy propagation, we cover the range with O(log n) maximal nodes (nodes whose segments are fully inside the range and whose parent is not). These nodes are marked lazy and their subtrees are skipped. The same O(log n) bound applies to both updates and queries.
 
 ### Implementations
 
 
 ```cpp
-// C++ â€” Lazy Segment Tree (Range Add, Range Sum)
+// C++ — Lazy Segment Tree (Range Add, Range Sum)
 #include <vector>
 
 class LazySegmentTree {
@@ -875,7 +875,7 @@ public:
 ```
 
 ```python
-# Python â€” Lazy Segment Tree (Range Add, Range Sum)
+# Python — Lazy Segment Tree (Range Add, Range Sum)
 class LazySegmentTree:
     def __init__(self, arr):
         self.n = len(arr)
@@ -934,7 +934,7 @@ class LazySegmentTree:
 ```
 
 ```java
-// Java â€” Lazy Segment Tree (Range Add, Range Sum)
+// Java — Lazy Segment Tree (Range Add, Range Sum)
 public class LazySegmentTree {
     private long[] tree;
     private long[] lazy;
@@ -1009,21 +1009,21 @@ public class LazySegmentTree {
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| O(log n) range updates â€” exponentially faster than naive O(n) | Extra memory for lazy array (another 4n) |
-| Queries still O(log n) â€” lazy push only when needed | Complex to debug â€” lazy values can cascade in unexpected ways |
+| O(log n) range updates — exponentially faster than naive O(n) | Extra memory for lazy array (another 4n) |
+| Queries still O(log n) — lazy push only when needed | Complex to debug — lazy values can cascade in unexpected ways |
 | Multiple overlapping updates work correctly | Not suitable for non-associative operations |
 | Can combine different update types (add + assign) with extensions | Recursive push risks stack overflow with deep lazy cascades |
 
 ### Edge Cases
 
 
-- **No lazy pending:** `lazy[node] == 0` â€” push is a no-op, same as regular segment tree.
-- **Full range update on root:** `addRange(0, n-1, val)` â€” apply at root, O(1). All lazy remains at root.
-- **Multiple overlapping updates:** Adding 10 to [1,3] then 5 to [2,4] â€” lazy values accumulate at covering nodes. The second update pushes where needed and applies new lazy on top.
-- **Query causing deep push cascade:** Querying a leaf that has lazy values at multiple ancestors â€” each ancestor pushes once, so total pushes = O(log n).
-- **Large values:** Use `long long` / `long` to avoid overflow when `val Ã— segment_length` exceeds 32-bit int. For n = 10^5 and val = 10^9, the sum can reach 10^14.
+- **No lazy pending:** `lazy[node] == 0` — push is a no-op, same as regular segment tree.
+- **Full range update on root:** `addRange(0, n-1, val)` — apply at root, O(1). All lazy remains at root.
+- **Multiple overlapping updates:** Adding 10 to [1,3] then 5 to [2,4] — lazy values accumulate at covering nodes. The second update pushes where needed and applies new lazy on top.
+- **Query causing deep push cascade:** Querying a leaf that has lazy values at multiple ancestors — each ancestor pushes once, so total pushes = O(log n).
+- **Large values:** Use `long long` / `long` to avoid overflow when `val × segment_length` exceeds 32-bit int. For n = 10^5 and val = 10^9, the sum can reach 10^14.
 - **Range update with val = 0:** A no-op but still does O(log n) work. Guard at the public interface if needed.
-- **Negative values:** Works correctly â€” `addRange(l, r, -5)` subtracts 5 from every element in the range.
+- **Negative values:** Works correctly — `addRange(l, r, -5)` subtracts 5 from every element in the range.
 
 ---
 
@@ -1036,7 +1036,7 @@ public class LazySegmentTree {
 
 A **Fenwick tree** (Binary Indexed Tree, BIT) is a data structure that supports prefix sum queries and point updates in O(log n). It uses the binary representation of indices: the value at index `i` stores the sum of a range of length `LSB(i)` (Least Significant Set Bit).
 
-**Key formula:** `LSB(i) = i & (-i)` â€” isolates the lowest set bit.
+**Key formula:** `LSB(i) = i & (-i)` — isolates the lowest set bit.
 
 ### Algorithm Steps
 
@@ -1084,12 +1084,12 @@ BIT construction by adding each element:
 
 | Step | Add `arr[i]` | i (1-indexed) | bit array state (indices 1-6) |
 |------|-------------|----------------|------------------------------|
-| 0 | Initial | â€” | `[0, 0, 0, 0, 0, 0]` |
-| 1 | add(0, 1) | i=1â†’2â†’4 | `[1, 1, 0, 1, 0, 0]` |
-| 2 | add(1, 3) | i=2â†’4 | `[1, 4, 0, 4, 0, 0]` |
-| 3 | add(2, 5) | i=3â†’4 | `[1, 4, 5, 9, 0, 0]` |
-| 4 | add(3, 7) | i=4â†’8(>6) | `[1, 4, 5, 16, 0, 0]` |
-| 5 | add(4, 9) | i=5â†’6 | `[1, 4, 5, 16, 9, 9]` |
+| 0 | Initial | — | `[0, 0, 0, 0, 0, 0]` |
+| 1 | add(0, 1) | i=1→2→4 | `[1, 1, 0, 1, 0, 0]` |
+| 2 | add(1, 3) | i=2→4 | `[1, 4, 0, 4, 0, 0]` |
+| 3 | add(2, 5) | i=3→4 | `[1, 4, 5, 9, 0, 0]` |
+| 4 | add(3, 7) | i=4→8(>6) | `[1, 4, 5, 16, 0, 0]` |
+| 5 | add(4, 9) | i=5→6 | `[1, 4, 5, 16, 9, 9]` |
 | 6 | add(5, 11) | i=6 | `[1, 4, 5, 16, 9, 20]` |
 
 Final BIT: `[1, 4, 5, 16, 9, 20]`
@@ -1100,9 +1100,9 @@ Final BIT: `[1, 4, 5, 16, 9, 20]`
 |------|---|--------|--------|------------|
 | 1 | 5 | bit[5]=9 | sum += 9 | 9 |
 | 2 | 4 | bit[4]=16 | sum += 16 | 25 |
-| 3 | 0 | â€” | stop | 25 |
+| 3 | 0 | — | stop | 25 |
 
-Manual: 1+3+5+7+9 = 25 âœ….
+Manual: 1+3+5+7+9 = 25 ✅.
 
 ### Implementations
 
@@ -1242,11 +1242,11 @@ public class FenwickTree {
 |---------|-------------|-------------------|--------------|
 | **Build time** | O(n) | O(n) | O(n log n) |
 | **Range query** | O(log n) | O(log n) (prefix sum only) | O(1) |
-| **Point update** | O(log n) | O(log n) | O(n log n) â€” full rebuild |
+| **Point update** | O(log n) | O(log n) | O(n log n) — full rebuild |
 | **Range update (lazy)** | O(log n) | Not supported (range add needs 2 BITs) | Not supported |
 | **Query types** | Sum, min, max, GCD, XOR (any associative) | Prefix sum only (native) | Sum, min, max, GCD (idempotent) |
 | **Space** | 4n | n | n log n |
-| **Memory for n=10^6** | ~32 MB (int) | ~8 MB (int) | ~80 MB (int, log n â‰ˆ 20) |
+| **Memory for n=10^6** | ~32 MB (int) | ~8 MB (int) | ~80 MB (int, log n ≈ 20) |
 | **Implementation complexity** | High (~60 lines) | Low (~20 lines) | Medium (~30 lines) |
 | **Supports dynamic updates** | Yes | Yes | No |
 | **Idempotent ops (min, max, GCD)** | Both O(log n) query and update | Only BIT for range sum | O(1) query, no updates |
@@ -1257,11 +1257,11 @@ public class FenwickTree {
 
 ```
 Need range queries?
-â”œâ”€â”€ No updates at all â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ Sparse Table (O(1) query)
-â”œâ”€â”€ Point updates only?
-â”‚   â”œâ”€â”€ Need min/max/GCD? â”€â”€â”€â”€â”€â”€â”€â†’ Segment Tree
-â”‚   â””â”€â”€ Only prefix sums? â”€â”€â”€â”€â”€â”€â†’ Fenwick Tree (simpler, less memory)
-â””â”€â”€ Range updates needed? â”€â”€â”€â”€â”€â”€â†’ Segment Tree with Lazy Propagation
+├── No updates at all ───────────→ Sparse Table (O(1) query)
+├── Point updates only?
+│   ├── Need min/max/GCD? ───────→ Segment Tree
+│   └── Only prefix sums? ──────→ Fenwick Tree (simpler, less memory)
+└── Range updates needed? ──────→ Segment Tree with Lazy Propagation
 ```
 
 ---
@@ -1271,15 +1271,15 @@ Need range queries?
 ### Common Problems and Solutions
 
 
-**1. Range Sum Query with Point Updates (LeetCode 307 â€” Range Sum Query - Mutable)**
+**1. Range Sum Query with Point Updates (LeetCode 307 — Range Sum Query - Mutable)**
 
 Problem: Given an array, implement `sumRange(l, r)` and `update(idx, val)` efficiently.
 
-Solution: Standard segment tree for range sum. Build in O(n), both operations O(log n). Alternatively, a Fenwick tree works â€” simpler code but same complexity.
+Solution: Standard segment tree for range sum. Build in O(n), both operations O(log n). Alternatively, a Fenwick tree works — simpler code but same complexity.
 
 Key insight: The naive O(n) per operation fails for large arrays with many queries. Segment tree reduces each to O(log n).
 
-**2. Range Minimum Query (RMQ) with Point Updates (LeetCode 1526 â€” or standard competitive programming)**
+**2. Range Minimum Query (RMQ) with Point Updates (LeetCode 1526 — or standard competitive programming)**
 
 Problem: Given an array, support `minInRange(l, r)` and `update(idx, val)`.
 
@@ -1295,7 +1295,7 @@ Solution: Process the array from right to left. Maintain a Fenwick tree (or segm
 
 Time: O(n log n), Space: O(n). This is a classic application of BIT for inversion-like counting.
 
-**4. Range Sum Query with Lazy Propagation (LeetCode 370 â€” Range Addition, or Codeforces 52C)**
+**4. Range Sum Query with Lazy Propagation (LeetCode 370 — Range Addition, or Codeforces 52C)**
 
 Problem: Given an array, support `addRange(l, r, val)` and `queryRange(l, r)` efficiently.
 
@@ -1308,7 +1308,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 
 | Pitfall | Solution |
 |---------|----------|
-| Using 2n instead of 4n for tree size | Always use 4n â€” 2n is insufficient for non-power-of-2 sizes |
+| Using 2n instead of 4n for tree size | Always use 4n — 2n is insufficient for non-power-of-2 sizes |
 | Forgetting identity values | Sum: 0, Min: INT_MAX, Max: INT_MIN, GCD: 0, XOR: 0, Product: 1 |
 | Not pushing lazy before query | Always push at partial overlap nodes before recursing |
 | Integer overflow in tree sums | Use long long (64-bit) for sum queries on large arrays |
@@ -1321,10 +1321,10 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 
 | Approach | Build | Each Query/Update | Total Time |
 |----------|-------|------------------|------------|
-| Naive array + loop | O(1) | O(n) | ~10^10 ops â†’ hours |
-| Segment tree | O(n) | O(log n) | ~1.7 Ã— 10^6 ops â†’ milliseconds |
-| Fenwick tree (sum only) | O(n) | O(log n) | ~1.7 Ã— 10^6 ops â†’ milliseconds |
-| Sparse table (no updates) | O(n log n) | O(1) | ~1.7 Ã— 10^6 ops â†’ milliseconds |
+| Naive array + loop | O(1) | O(n) | ~10^10 ops → hours |
+| Segment tree | O(n) | O(log n) | ~1.7 × 10^6 ops → milliseconds |
+| Fenwick tree (sum only) | O(n) | O(log n) | ~1.7 × 10^6 ops → milliseconds |
+| Sparse table (no updates) | O(n log n) | O(1) | ~1.7 × 10^6 ops → milliseconds |
 
 ---
 
@@ -1340,7 +1340,7 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 | **Online gaming** | Leaderboard range queries | Segment tree storing player scores; query rank range sums (how many players between ranks X and Y) |
 | **Telecommunications** | Network traffic monitoring | Segment tree tracking packet counts per time bucket; query total traffic in any time window |
 | **Text editors** | Undo/redo with range operations | Persistent segment tree stores versions; range updates represent text insertions/deletions |
-| **CPU scheduling** | Process memory allocation tracking | Segment tree tracking free memory blocks; find first block of size â‰¥ k (lower_bound on segment tree) |
+| **CPU scheduling** | Process memory allocation tracking | Segment tree tracking free memory blocks; find first block of size ≥ k (lower_bound on segment tree) |
 
 ---
 
@@ -1350,9 +1350,9 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 |---------|-------------|-------------------|--------------|--------------------------|
 | Build time | O(n) | O(n) | O(n log n) | O(n) |
 | Point update | O(log n) | O(log n) | O(n log n) | O(1) |
-| Range query | O(log n) | O(log n) (prefix) | O(1) | O(âˆšn) |
-| Range update (lazy) | O(log n) | Not supported | Not supported | O(âˆšn) |
-| Space | 4n | n | n log n | n + âˆšn |
+| Range query | O(log n) | O(log n) (prefix) | O(1) | O(√n) |
+| Range update (lazy) | O(log n) | Not supported | Not supported | O(√n) |
+| Space | 4n | n | n log n | n + √n |
 | Works with min/max | Yes | No | Yes | Yes |
 | Supports dynamic updates | Yes | Yes | No | Yes |
 | Implementation complexity | High | Low | Medium | Low |
@@ -1364,9 +1364,9 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 | Range sum | 0 | left + right | Sum of children | Leaf value, propagate sum |
 | Range minimum | INT_MAX | min(left, right) | Min of children | Leaf value, propagate min |
 | Range maximum | INT_MIN | max(left, right) | Max of children | Leaf value, propagate max |
-| Lazy sum (range add) | 0 | left + right | Push before recurse | Apply += val Ã— segLen, mark lazy |
+| Lazy sum (range add) | 0 | left + right | Push before recurse | Apply += val × segLen, mark lazy |
 | GCD | 0 | gcd(left, right) | GCD of children | Leaf value, propagate GCD |
-| Range product | 1 | left Ã— right | Product of children | Leaf value, propagate product |
+| Range product | 1 | left × right | Product of children | Leaf value, propagate product |
 | Range XOR | 0 | left ^ right | XOR of children | Leaf value, propagate XOR |
 
 ## Cross-Application Matrix
@@ -1391,9 +1391,9 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 
 | Mistake | Why It's Wrong | Correct Approach |
 |---------|----------------|------------------|
-| Allocating 2n instead of 4n array for segment tree | n may not be a power of 2; size 4n guarantees safe bounds even for worst case | Always allocate 4 Ã— n (or next power of 2 Ã— 2) |
+| Allocating 2n instead of 4n array for segment tree | n may not be a power of 2; size 4n guarantees safe bounds even for worst case | Always allocate 4 × n (or next power of 2 × 2) |
 | Off-by-one errors in range query (inclusive vs exclusive) | Query uses [l, r] inclusive but segment tree stores [l, r] or [l, r) inconsistently | Be consistent: use inclusive-inclusive [l, r] or inclusive-exclusive [l, r); document choice |
-| Forgetting to handle overlapping ranges in query | Without checking if query fully contains â†’ partial â†’ disjoint, recursion is infinite | if (qs â‰¤ l && r â‰¤ qe) return tree[node]; if (qe < l || r < qs) return identity; else recurse |
+| Forgetting to handle overlapping ranges in query | Without checking if query fully contains → partial → disjoint, recursion is infinite | if (qs ≤ l && r ≤ qe) return tree[node]; if (qe < l || r < qs) return identity; else recurse |
 | Not returning proper identity element for the operation | Sum needs 0, product needs 1, min needs Infinity, max needs -Infinity | Each operation has a unique identity: `f(identity, x) = x` |
 | Lazy propagation: not pushing updates before traversing children | Deferred updates accumulate and never reach the leaves | Always push lazy values to children before recursing during query/update |
 | Confusing lazy propagation with range update | Without lazy, range update becomes O(n) at each leaf | Lazy defers updates to O(log n) by storing pending ops in nodes |
@@ -1527,37 +1527,37 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 8. **The size of the tree array for a segment tree of n = 10 elements (worst-case) is:**
    - a) 20
-   - b) 40 âœ“ (4 Ã— 10)
+   - b) 40 ✓ (4 × 10)
    - c) 100
    - d) 1024
 
 9. **Lazy propagation reduces range update time from:**
    - a) O(log n) to O(1)
-   - b) O(n) to O(log n) âœ“
-   - c) O(nÂ²) to O(n)
+   - b) O(n) to O(log n) ✓
+   - c) O(n²) to O(n)
    - d) O(log n) to O(n)
 
 10. **What is the identity element for a range minimum query segment tree?**
     - a) 0
-    - b) Infinity âœ“
+    - b) Infinity ✓
     - c) -Infinity
     - d) 1
 
 11. **Fenwick Tree (BIT) supports which operations natively?**
     - a) Range update, range query
-    - b) Point update, prefix sum query âœ“
+    - b) Point update, prefix sum query ✓
     - c) Range update, point query
     - d) All of the above (with extensions)
 
 12. **In a segment tree, the update and query operations visit at most how many nodes?**
     - a) O(1)
-    - b) O(log n) âœ“
+    - b) O(log n) ✓
     - c) O(n)
-    - d) O(âˆšn)
+    - d) O(√n)
 
 13. **The iterative segment tree (size = power of 2) stores leaf values at indices:**
     - a) 0 to n-1
-    - b) n to 2n-1 âœ“
+    - b) n to 2n-1 ✓
     - c) 1 to n
     - d) 2n to 4n-1
 
@@ -1576,7 +1576,7 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 16. **Range frequency queries**: Given an array, answer queries of the form "how many times does x appear in range [l, r]?" Use segment tree with hash maps at each node.
 
-17. **Merge sort tree**: Store sorted arrays at each segment tree node. Answer "count of elements â‰¤ k in range [l, r]" in O(logÂ² n).
+17. **Merge sort tree**: Store sorted arrays at each segment tree node. Answer "count of elements ≤ k in range [l, r]" in O(log² n).
 
 18. **Segment tree with XOR operation**: Implement a segment tree where the operation is XOR. Answer range XOR queries.
 
@@ -1593,18 +1593,18 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 | Iterative (bottom-up) | O(n) | O(log n) | O(log n) | Not supported | 2n |
 | Fenwick Tree (BIT) | O(n log n) | O(log n) | O(log n) | O(log n)* | n+1 |
 | Sparse Table | O(n log n) | O(1) | Not supported | Not supported | n log n |
-| SQRT Decomposition | O(n) | O(âˆšn) | O(1) | O(âˆšn) | n + âˆšn |
+| SQRT Decomposition | O(n) | O(√n) | O(1) | O(√n) | n + √n |
 | Segment Tree + Lazy | O(n) | O(log n) | O(log n) | O(log n) | 4n + 4n (lazy) |
-| Merge Sort Tree | O(n log n) | O(logÂ² n) | Not supported | Not supported | n log n |
+| Merge Sort Tree | O(n log n) | O(log² n) | Not supported | Not supported | n log n |
 
 *Fenwick tree: with range update and point query, or point update and range query. Not both simultaneously without extra structure.
 - B) 2n
 - C) 4n
-- D) nÂ²
+- D) n²
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**C)** 4n is the safe upper bound. The exact size is `2 * 2^âŒˆlogâ‚‚nâŒ‰ - 1`, which never exceeds 4n.
+**C)** 4n is the safe upper bound. The exact size is `2 * 2^⌈log₂n⌉ - 1`, which never exceeds 4n.
 </details>
 
 **Q2.** What does lazy propagation enable?
@@ -1636,7 +1636,7 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 - A) 4n
 - B) n
 - C) n log n
-- D) âˆšn
+- D) √n
 
 <details>
 <summary>Answer&lt;/summary&gt;
@@ -1672,11 +1672,11 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 - A) O(1)
 - B) O(log n)
 - C) O(n)
-- D) O(âˆšn)
+- D) O(√n)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B)** At most 4 Ã— logâ‚‚n nodes. At each level, at most 2 nodes are partially overlapping (boundary nodes) and any fully covered nodes between them return immediately.
+**B)** At most 4 × log₂n nodes. At each level, at most 2 nodes are partially overlapping (boundary nodes) and any fully covered nodes between them return immediately.
 </details>
 
 **Q8.** What happens in a lazy segment tree when you query a leaf with a pending update at an ancestor?
@@ -1699,7 +1699,7 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ### Review Questions
 
-1. Why does a segment tree require approximately 4Ã— the input size? Derive the exact formula.
+1. Why does a segment tree require approximately 4× the input size? Derive the exact formula.
 2. What is the advantage of lazy propagation? What specific problem does it solve?
 3. How does the Fenwick tree use binary representation to compute prefix sums? Explain with an example using n = 10.
 4. Compare the query time complexity of segment trees, Fenwick trees, and sparse tables. When is each the best choice?
@@ -1719,7 +1719,7 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 12. **Persistent segment tree:** Implement a segment tree that supports querying historical versions. Each update creates a new root; old versions remain accessible. This is the foundation of "chairman tree" used in Codeforces problems for k-th smallest in range.
 
-13. **2D segment tree:** Build a segment tree over rows, where each row-node contains a segment tree over columns. Support rectangle sum queries (x1, y1, x2, y2) and point updates (x, y, newVal) â€” both in O(logÂ² n).
+13. **2D segment tree:** Build a segment tree over rows, where each row-node contains a segment tree over columns. Support rectangle sum queries (x1, y1, x2, y2) and point updates (x, y, newVal) — both in O(log² n).
 
 14. **Segment tree with range assignment (not addition):** Modify lazy propagation to support assignment `[l, r] = val` instead of addition. Hint: you need a "set" lazy flag that overrides any previous lazy values on a node.
 
@@ -1727,18 +1727,18 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ## Summary
 
-- **Segment tree** â€” A binary tree storing aggregate information over array segments. Supports range queries and point updates in O(log n).
-- **Construction** â€” Recursive bottom-up build in O(n) time using 4n space.
-- **Range query** â€” Visit O(log n) nodes by checking full/no/partial overlap. Combine results using the aggregate operation.
-- **Point update** â€” Update leaf node, then recompute all ancestors in O(log n).
-- **Lazy propagation** â€” Extends segment trees to O(log n) range updates by deferring work with a pending lazy flag array.
-- **Fenwick tree (BIT)** â€” Compact (n space) alternative for prefix sum queries with point updates. Simpler to implement but limited to prefix operations.
-- **Sparse table** â€” Best for static data with O(1) queries, but no update support and O(n log n) build/memory.
+- **Segment tree** — A binary tree storing aggregate information over array segments. Supports range queries and point updates in O(log n).
+- **Construction** — Recursive bottom-up build in O(n) time using 4n space.
+- **Range query** — Visit O(log n) nodes by checking full/no/partial overlap. Combine results using the aggregate operation.
+- **Point update** — Update leaf node, then recompute all ancestors in O(log n).
+- **Lazy propagation** — Extends segment trees to O(log n) range updates by deferring work with a pending lazy flag array.
+- **Fenwick tree (BIT)** — Compact (n space) alternative for prefix sum queries with point updates. Simpler to implement but limited to prefix operations.
+- **Sparse table** — Best for static data with O(1) queries, but no update support and O(n log n) build/memory.
 
 ### Key Takeaway
 
 
-If you need range queries on a **dynamic array** (values change), use a **segment tree**. If you only need **prefix sums** with point updates, use a **Fenwick tree** for simplicity and memory efficiency. If your data is **static** and queries are many, use a **sparse table** for O(1) queries. For range updates, use a segment tree with **lazy propagation** â€” it's the only structure that handles both range updates and range queries in O(log n).
+If you need range queries on a **dynamic array** (values change), use a **segment tree**. If you only need **prefix sums** with point updates, use a **Fenwick tree** for simplicity and memory efficiency. If your data is **static** and queries are many, use a **sparse table** for O(1) queries. For range updates, use a segment tree with **lazy propagation** — it's the only structure that handles both range updates and range queries in O(log n).
 
 > **Pro Tip:** In competitive programming, 80% of segment tree problems follow one of three patterns: range sum with updates, range min/max with updates, or range add + range sum (lazy). Master these three and you can adapt to any variant.
 

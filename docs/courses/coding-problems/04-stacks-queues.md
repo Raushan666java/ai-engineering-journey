@@ -1,6 +1,6 @@
-﻿# Chapter 04: Stacks & Queues
+# Chapter 04: Stacks & Queues
 
-> Stacks and queues are fundamental linear data structures that enforce specific ordering rules â€” LIFO for stacks and FIFO for queues. They power everything from expression evaluation to breadth-first search.
+> Stacks and queues are fundamental linear data structures that enforce specific ordering rules — LIFO for stacks and FIFO for queues. They power everything from expression evaluation to breadth-first search.
 
 ## Learning Objectives
 
@@ -58,10 +58,10 @@ flowchart LR
     B -->|No| D{Need next smaller?}
     D -->|Yes| E[Monotonic Increasing Stack]
     
-    C --> F[Iterate right to left: pop while stack top â‰¤ current]
+    C --> F[Iterate right to left: pop while stack top ≤ current]
     C --> G[Iterate left to right: pop while stack top < current]
     
-    E --> H[Iterate right to left: pop while stack top â‰¥ current]
+    E --> H[Iterate right to left: pop while stack top ≥ current]
     E --> I[Iterate left to right: pop while stack top > current]
 ```
 
@@ -82,9 +82,9 @@ flowchart LR
 
 ### Problem 1: Valid Parentheses
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Stack, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Stack, String]
 
 **Problem:** Given a string containing '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -95,7 +95,7 @@ Output: true
 ```
 
 **Constraints:**
-- 1 â‰¤ s.length â‰¤ 10â´
+- 1 ≤ s.length ≤ 10⁴
 
 ```typescript
 function isValid(s: string): boolean {
@@ -132,9 +132,9 @@ console.log(isValid("{[]}")); // true
 
 ### Problem 2: Min Stack
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Stack, Design]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Stack, Design]
 
 **Problem:** Design a stack that supports push, pop, top, and retrieving the minimum element in O(1) time.
 
@@ -201,9 +201,9 @@ console.log(minStack.getMin()); // -2
 
 ### Problem 3: Implement Queue using Stacks
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Stack, Queue, Design]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Stack, Queue, Design]
 
 **Problem:** Implement a FIFO queue using two stacks.
 
@@ -265,9 +265,9 @@ console.log(q.empty()); // false
 
 ### Problem 4: Baseball Game
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Stack, Array]
+🏷️ **Companies:** [Amazon] [Google]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Stack, Array]
 
 **Problem:** You are keeping score. Operations: integer (record), '+' (sum of last two), 'D' (double last), 'C' (remove last). Return sum of all scores.
 
@@ -275,7 +275,7 @@ console.log(q.empty()); // false
 ```
 Input: ops = ["5", "2", "C", "D", "+"]
 Output: 30
-Explanation: 5 â†’ 5,2 â†’ 5, â†’ 5,10 â†’ 5,10,15 = 30
+Explanation: 5 → 5,2 → 5, → 5,10 → 5,10,15 = 30
 ```
 
 ```typescript
@@ -315,9 +315,9 @@ console.log(calPoints(["5", "-2", "4", "C", "D", "9", "+", "+"])); // 27
 
 ### Problem 5: Backspace String Compare
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Stack, Two Pointers]
+🏷️ **Companies:** [Amazon] [Google] [Microsoft]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Stack, Two Pointers]
 
 **Problem:** Given two strings where '#' represents backspace, return true if they're equal when typed into an empty text editor.
 
@@ -364,9 +364,9 @@ console.log(backspaceCompare("a#c", "b")); // false
 
 ### Problem 6: Remove All Adjacent Duplicates In String
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Stack, String]
+🏷️ **Companies:** [Amazon] [Google]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Stack, String]
 
 **Problem:** Repeatedly remove adjacent duplicate characters until no more duplicates exist.
 
@@ -374,7 +374,7 @@ console.log(backspaceCompare("a#c", "b")); // false
 ```
 Input: s = "abbaca"
 Output: "ca"
-Explanation: "abbaca" â†’ "aaca" â†’ "ca"
+Explanation: "abbaca" → "aaca" → "ca"
 ```
 
 ```typescript
@@ -407,9 +407,9 @@ console.log(removeDuplicates("a")); // "a"
 
 ### Problem 7: Next Greater Element I
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Easy
-ðŸ“‚ **Topics:** [Stack, Hash Table]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Easy
+📂 **Topics:** [Stack, Hash Table]
 
 **Problem:** Find the next greater element for each element in nums1 from nums2.
 
@@ -455,9 +455,9 @@ console.log(nextGreaterElement([2, 4], [1, 2, 3, 4])); // [3, -1]
 
 ### Problem 8: Next Greater Element II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Array]
 
 **Problem:** Given a circular array, find the next greater element for each element.
 
@@ -501,9 +501,9 @@ console.log(nextGreaterElements([1, 2, 3, 4, 3])); // [2, 3, 4, -1, 4]
 
 ### Problem 9: Daily Temperatures
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Array, Monotonic Stack]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Array, Monotonic Stack]
 
 **Problem:** Given an array of temperatures, return an array such that answer[i] is the number of days until a warmer temperature.
 
@@ -548,9 +548,9 @@ console.log(dailyTemperatures([30, 40, 50, 60])); // [1, 1, 1, 0]
 
 ### Problem 10: Evaluate Reverse Polish Notation
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Math]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Math]
 
 **Problem:** Evaluate the value of an arithmetic expression in Reverse Polish Notation.
 
@@ -562,7 +562,7 @@ Explanation: (2 + 1) * 3 = 9
 ```
 
 **Constraints:**
-- 1 â‰¤ tokens.length â‰¤ 10â´
+- 1 ≤ tokens.length ≤ 10⁴
 
 ```typescript
 function evalRPN(tokens: string[]): number {
@@ -602,11 +602,11 @@ console.log(evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", 
 
 ### Problem 11: Decode String
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, String, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, String, Recursion]
 
-**Problem:** Decode a string encoded as k[encoded_string]. E.g., "3[a]2[bc]" â†’ "aaabcbc".
+**Problem:** Decode a string encoded as k[encoded_string]. E.g., "3[a]2[bc]" → "aaabcbc".
 
 **Example 1:**
 ```
@@ -615,7 +615,7 @@ Output: "aaabcbc"
 ```
 
 **Constraints:**
-- 1 â‰¤ s.length â‰¤ 30
+- 1 ≤ s.length ≤ 30
 
 ```typescript
 function decodeString(s: string): string {
@@ -658,9 +658,9 @@ console.log(decodeString("2[abc]3[cd]ef")); // "abcabccdcdcdef"
 
 ### Problem 12: Asteroid Collision
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Array]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Array]
 
 **Problem:** We are given an array asteroids of integers representing asteroids in a row. The absolute value represents its size, and the sign represents its direction (positive = right, negative = left). Find out the state of the asteroids after all collisions.
 
@@ -671,7 +671,7 @@ Output: [5, 10]
 ```
 
 **Constraints:**
-- 2 â‰¤ asteroids.length â‰¤ 10â´
+- 2 ≤ asteroids.length ≤ 10⁴
 
 ```typescript
 function asteroidCollision(asteroids: number[]): number[] {
@@ -711,9 +711,9 @@ console.log(asteroidCollision([10, 2, -5])); // [10]
 
 ### Problem 13: Online Stock Span
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Monotonic Stack, Design]
+🏷️ **Companies:** [Amazon] [Google]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Monotonic Stack, Design]
 
 **Problem:** Design a class that returns the number of consecutive days (including today) the stock price has been less than or equal to today's price.
 
@@ -762,9 +762,9 @@ console.log(spanner.next(85)); // 6
 
 ### Problem 14: Remove K Digits
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Greedy]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Greedy]
 
 **Problem:** Given a string num representing a non-negative integer, and an integer k, return the smallest possible integer after removing k digits.
 
@@ -775,8 +775,8 @@ Output: "1219"
 ```
 
 **Constraints:**
-- 1 â‰¤ num.length â‰¤ 10âµ
-- 0 â‰¤ k â‰¤ num.length
+- 1 ≤ num.length ≤ 10⁵
+- 0 ≤ k ≤ num.length
 
 **Solution Approach:**
 - Use a stack as a monotonic increasing sequence. Remove when top > current digit.
@@ -817,9 +817,9 @@ console.log(removeKdigits("10", 2)); // "0"
 
 ### Problem 15: Simplify Path
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, String]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, String]
 
 **Problem:** Given an absolute path for a Unix-style file system, simplify it.
 
@@ -830,7 +830,7 @@ Output: "/home/foo"
 ```
 
 **Constraints:**
-- 1 â‰¤ path.length â‰¤ 3000
+- 1 ≤ path.length ≤ 3000
 
 ```typescript
 function simplifyPath(path: string): string {
@@ -863,9 +863,9 @@ console.log(simplifyPath("/../")); // "/"
 
 ### Problem 16: Validate Stack Sequences
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Simulation]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Simulation]
 
 **Problem:** Given pushed and popped sequences, return true if they represent valid push/pop operations on an initially empty stack.
 
@@ -905,9 +905,9 @@ console.log(validateStackSequences([1, 2, 3, 4, 5], [4, 3, 5, 1, 2])); // false
 
 ### Problem 17: Flatten Nested List Iterator
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Medium
-ðŸ“‚ **Topics:** [Stack, Design, Recursion]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Medium
+📂 **Topics:** [Stack, Design, Recursion]
 
 **Problem:** Design an iterator that flattens a nested list of integers.
 
@@ -947,9 +947,9 @@ class NestedIterator {
 
 ### Problem 18: Largest Rectangle in Histogram
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Stack, Array, Monotonic Stack]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Stack, Array, Monotonic Stack]
 
 **Problem:** Given an array of heights representing a histogram, find the largest rectangle area.
 
@@ -960,8 +960,8 @@ Output: 10
 ```
 
 **Constraints:**
-- 1 â‰¤ heights.length â‰¤ 10âµ
-- 0 â‰¤ heights[i] â‰¤ 10â´
+- 1 ≤ heights.length ≤ 10⁵
+- 0 ≤ heights[i] ≤ 10⁴
 
 **Solution Approach:**
 - Monotonic increasing stack. For each bar, compute area using it as the shortest bar.
@@ -999,9 +999,9 @@ console.log(largestRectangleArea([1])); // 1
 
 ### Problem 19: Sliding Window Maximum
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Queue, Deque, Sliding Window]
+🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Queue, Deque, Sliding Window]
 
 **Problem:** You are given an array of integers nums, and a sliding window of size k moving from left to right. Return the max in each window.
 
@@ -1012,8 +1012,8 @@ Output: [3, 3, 5, 5, 6, 7]
 ```
 
 **Constraints:**
-- 1 â‰¤ nums.length â‰¤ 10âµ
-- 1 â‰¤ k â‰¤ nums.length
+- 1 ≤ nums.length ≤ 10⁵
+- 1 ≤ k ≤ nums.length
 
 **Solution Approach:**
 - Use a deque storing indices. Maintain decreasing order. Remove out-of-window indices.
@@ -1058,9 +1058,9 @@ console.log(maxSlidingWindow([1, -1], 1)); // [1, -1]
 
 ### Problem 20: Trapping Rain Water II
 
-ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
-ðŸ“Š **Difficulty:** Hard
-ðŸ“‚ **Topics:** [Heap, BFS, Matrix]
+🏷️ **Companies:** [Amazon] [Google] [Meta]
+📊 **Difficulty:** Hard
+📂 **Topics:** [Heap, BFS, Matrix]
 
 **Problem:** Given an m x n matrix of heights, compute how much water it can trap after raining. Water flows to any of the four adjacent cells with lower height.
 
@@ -1071,7 +1071,7 @@ Output: 4
 ```
 
 **Constraints:**
-- 1 â‰¤ m, n â‰¤ 200
+- 1 ≤ m, n ≤ 200
 
 **Solution Approach:**
 - Min-heap of boundary cells. Pop smallest, check neighbors, track water.

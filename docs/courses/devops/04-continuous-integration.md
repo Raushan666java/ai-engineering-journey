@@ -1,4 +1,4 @@
-﻿# Chapter 4: Continuous Integration
+# Chapter 4: Continuous Integration
 
 > **Prev:** [CI/CD](./04-cicd.md)
 > **Next:** [Containerization](./05-containerization.md)
@@ -95,7 +95,7 @@ flowchart TD
 
 **Unit tests (70-80%):** Test individual functions, methods, and classes in isolation. Mock external dependencies. Fast execution (milliseconds each).
 
-**Integration tests (15-20%):** Test interactions between components â€” database queries, API endpoints, service-to-service communication. Verify real behavior of integrated parts.
+**Integration tests (15-20%):** Test interactions between components — database queries, API endpoints, service-to-service communication. Verify real behavior of integrated parts.
 
 **E2E tests (5-10%):** Test complete user workflows from UI to database. Slow and brittle. Cover critical paths only.
 

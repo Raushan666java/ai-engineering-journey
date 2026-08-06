@@ -1,8 +1,8 @@
-﻿# System Modelling
+# System Modelling
 
 ## Learning Objectives
 
-> âœ… After completing this chapter, the student will be able to:
+> ✅ After completing this chapter, the student will be able to:
 > - Explain the purpose of system modelling from multiple perspectives
 > - Construct UML use case, class, sequence, activity, and state machine diagrams
 > - Describe component, deployment, package, and object diagrams
@@ -289,8 +289,8 @@ sequenceDiagram
 | `critical` | Critical region (must be atomic) |
 | `ignore` | Ignore certain message types |
 | `consider` | Only consider certain message types |
-| `assert` | Assertion â€” must be true |
-| `neg` | Negative â€” invalid interaction |
+| `assert` | Assertion — must be true |
+| `neg` | Negative — invalid interaction |
 
 ### Activity Diagrams
 
@@ -428,20 +428,20 @@ Deployment diagrams show the physical deployment of software components on hardw
 
 ```mermaid
 graph TD
-    subgraph "Production Environment â€” us-east-1"
+    subgraph "Production Environment — us-east-1"
         subgraph "Load Balancer"
             LB[ALB:443 HTTPS]
         end
-        subgraph "App Cluster â€” Auto Scaling Group"
+        subgraph "App Cluster — Auto Scaling Group"
             A1[EC2 App Server 1<br/>Node.js 18 :8080]
             A2[EC2 App Server 2<br/>Node.js 18 :8080]
             A3[EC2 App Server 3<br/>Node.js 18 :8080]
         end
-        subgraph "Database Cluster â€” RDS Multi-AZ"
+        subgraph "Database Cluster — RDS Multi-AZ"
             DB1[(Primary<br/>PostgreSQL 16 :5432<br/>us-east-1a)]
             DB2[(Standby Replica<br/>PostgreSQL 16 :5432<br/>us-east-1b)]
         end
-        subgraph "Cache Layer â€” ElastiCache"
+        subgraph "Cache Layer — ElastiCache"
             REDIS[(Redis 7<br/>:6379<br/>Cluster Mode Enabled)]
         end
         subgraph "CDN"
@@ -608,7 +608,7 @@ graph LR
 
 ## Examples
 
-### Example 1: ClassDiagramGenerator â€” from TypeScript Source
+### Example 1: ClassDiagramGenerator — from TypeScript Source
 
 ```typescript
 interface ClassInfo {
@@ -777,7 +777,7 @@ gen.addEnum('BookStatus', ['AVAILABLE', 'ON_LOAN', 'RESERVED', 'LOST', 'WITHDRAW
 console.log(gen.generateUMLMermaid());
 ```
 
-### Example 2: SequenceDiagramRenderer â€” from Trace Logs
+### Example 2: SequenceDiagramRenderer — from Trace Logs
 
 ```typescript
 interface TraceEvent {
@@ -904,7 +904,7 @@ console.log(renderer.renderMermaid());
 console.log(renderer.getTimeline());
 ```
 
-### Example 3: StateMachineEngine â€” with Guards, Actions, Nested States
+### Example 3: StateMachineEngine — with Guards, Actions, Nested States
 
 ```typescript
 type State = string;
@@ -1159,8 +1159,8 @@ class ModelConsistencyChecker {
   public getReport(): { errors: string[]; warnings: string[]; valid: boolean; summary: string } {
     const valid = this.errors.length === 0;
     const summary = valid
-      ? `âœ… Model consistent: ${this.warnings.length} warnings`
-      : `âŒ Model inconsistent: ${this.errors.length} errors, ${this.warnings.length} warnings`;
+      ? `✅ Model consistent: ${this.warnings.length} warnings`
+      : `❌ Model inconsistent: ${this.errors.length} errors, ${this.warnings.length} warnings`;
     return { errors: this.errors, warnings: this.warnings, valid, summary };
   }
 }
@@ -1324,18 +1324,18 @@ console.log('Detected patterns:', patterns);
 
 System modelling provides multiple complementary perspectives on a software system, each highlighting different aspects while suppressing others. UML remains the standard modelling language with thirteen diagram types divided into structure and behaviour diagrams. Use case diagrams establish system boundaries and identify actors and their goals. Class diagrams define the static structure with classes, relationships, and multiplicities. Sequence diagrams detail interactions over time with combined fragments for alternatives, options, loops, and parallel execution. Activity diagrams model control flow including concurrent execution and swimlanes. State machine diagrams capture lifecycle behaviour with guards, actions, events, and nested states.
 
-Deployment and component diagrams bridge the gap between logical design and physical infrastructure. Data flow diagrams and ER diagrams remain valuable for data-oriented modelling. OCL adds formal precision to UML models through invariants, preconditions, and postconditions. Model-driven engineering transforms models from documentation artefacts into primary development artefacts through platform-independent and platform-specific modelling. In modern practice, tools that generate TypeScript from UML models â€” and vice versa â€” help maintain consistency between design and implementation. Consistency checking across diagram types ensures that classes referenced in sequence diagrams exist in class diagrams and that state machines have reachable states and complete transitions.
+Deployment and component diagrams bridge the gap between logical design and physical infrastructure. Data flow diagrams and ER diagrams remain valuable for data-oriented modelling. OCL adds formal precision to UML models through invariants, preconditions, and postconditions. Model-driven engineering transforms models from documentation artefacts into primary development artefacts through platform-independent and platform-specific modelling. In modern practice, tools that generate TypeScript from UML models — and vice versa — help maintain consistency between design and implementation. Consistency checking across diagram types ensures that classes referenced in sequence diagrams exist in class diagrams and that state machines have reachable states and complete transitions.
 
 ## Practical Takeaways
 
-1. **Model what matters** â€” not every detail needs a model; focus on complex, critical, or frequently misunderstood aspects
-2. **Keep diagrams consistent** â€” the same class, actor, or state should appear identically across all diagrams
-3. **Use the right diagram for the audience** â€” use case diagrams for stakeholders, class diagrams for developers, deployment diagrams for operations
-4. **Don't over-model** â€” excessive detail makes diagrams hard to read; use multiple levels of abstraction and zoom in on complexity
-5. **Models should be living documents** â€” update them as the code evolves, or they quickly become misleading and ignored
-6. **Combine UML with code generation** â€” generate skeleton code from class diagrams and reverse-engineer diagrams from code to maintain consistency
-7. **Use consistency checkers** â€” automate validation that sequence diagram participants exist in class models and state transitions reference valid states
-8. **Consider the model-driven engineering pipeline** â€” for large systems, invest in model transformations (PIM â†’ PSM â†’ Code) to automate tedious translation work
+1. **Model what matters** — not every detail needs a model; focus on complex, critical, or frequently misunderstood aspects
+2. **Keep diagrams consistent** — the same class, actor, or state should appear identically across all diagrams
+3. **Use the right diagram for the audience** — use case diagrams for stakeholders, class diagrams for developers, deployment diagrams for operations
+4. **Don't over-model** — excessive detail makes diagrams hard to read; use multiple levels of abstraction and zoom in on complexity
+5. **Models should be living documents** — update them as the code evolves, or they quickly become misleading and ignored
+6. **Combine UML with code generation** — generate skeleton code from class diagrams and reverse-engineer diagrams from code to maintain consistency
+7. **Use consistency checkers** — automate validation that sequence diagram participants exist in class models and state transitions reference valid states
+8. **Consider the model-driven engineering pipeline** — for large systems, invest in model transformations (PIM → PSM → Code) to automate tedious translation work
 
 ## Chapter Quiz
 
@@ -1344,7 +1344,7 @@ Deployment and component diagrams bridge the gap between logical design and phys
 | Q1 | B | Activity diagrams model control flow across actors using swimlanes and decision nodes. |
 | Q2 | B | `<<include>>` means the base use case always incorporates the included use case's behaviour. |
 | Q3 | A | In composition (filled diamond), the part's lifecycle depends on the whole; the part cannot exist independently. |
-| Q4 | B | Model checking faces the state explosion problem â€” the number of states grows exponentially with system components. |
+| Q4 | B | Model checking faces the state explosion problem — the number of states grows exponentially with system components. |
 | Q5 | A | A Platform-Independent Model (PIM) describes the system without platform-specific implementation details. |
 
 **Q1: Which UML diagram is best suited for showing the flow of control across multiple actors?**
@@ -1385,11 +1385,11 @@ Deployment and component diagrams bridge the gap between logical design and phys
 
 Draw a use case diagram for an e-commerce platform with the following actors: Customer, Admin, Payment Gateway, Shipping Provider. Include at least 10 use cases with include/extend relationships.
 
-**Solution â€” Use Cases:**
+**Solution — Use Cases:**
 - Customer: Browse Products, Search Products, Add to Cart, Checkout, View Order History, Track Order, Write Review
 - Admin: Manage Products, Process Refunds, Generate Reports
-- Include: Checkout â†’ Process Payment, Checkout â†’ Update Inventory
-- Extend: Browse Products â†’ Write Review, Track Order â†’ Contact Support
+- Include: Checkout → Process Payment, Checkout → Update Inventory
+- Extend: Browse Products → Write Review, Track Order → Contact Support
 </details>
 
 ### Exercise 2: Full UML Model for a Library System
@@ -1398,20 +1398,20 @@ Draw a use case diagram for an e-commerce platform with the following actors: Cu
 
 Develop a class diagram, sequence diagram, and state machine diagram for a library book borrowing system. The class diagram should include Book, Patron, Loan, Fine, and Reservation classes. The sequence diagram should show the borrow book flow. The state machine should model the lifecycle of a book.
 
-**Solution â€” Class Diagram Key Elements:**
+**Solution — Class Diagram Key Elements:**
 - Book: isbn, title, author, status (enum), publicationYear
 - Patron: patronId, name, email, maxLoans
 - Loan: loanId, loanDate, dueDate, returnDate, fineAmount
 - Fine: fineId, amount, reason, paid
 - Reservation: reservationId, reservationDate, expiryDate, status
-- Relationships: Patron 1â†’* Loan, Book 1â†’* Loan, Loan 1â†’* Fine, Patron 1â†’* Reservation, Book 1â†’* Reservation
+- Relationships: Patron 1→* Loan, Book 1→* Loan, Loan 1→* Fine, Patron 1→* Reservation, Book 1→* Reservation
 
 **State Machine for Book:**
-- Available â†’ borrow() â†’ OnLoan â†’ return() â†’ Available
-- Available â†’ reserve() â†’ Reserved â†’ borrow() â†’ OnLoan
-- Available â†’ reserve() â†’ Reserved â†’ cancelReservation() â†’ Available
-- OnLoan â†’ daysPass() â†’ Overdue â†’ return() + payFine() â†’ Available
-- Overdue â†’ reportLost() â†’ Lost â†’ withdraw() â†’ [*]
+- Available → borrow() → OnLoan → return() → Available
+- Available → reserve() → Reserved → borrow() → OnLoan
+- Available → reserve() → Reserved → cancelReservation() → Available
+- OnLoan → daysPass() → Overdue → return() + payFine() → Available
+- Overdue → reportLost() → Lost → withdraw() → [*]
 </details>
 
 ### Exercise 3: Model Consistency Checking
@@ -1422,15 +1422,15 @@ Given the following models, identify all inconsistencies between them:
 
 **Class Model:** { User, AuthService, Database }
 **Sequence Steps:**
-1. User â†’ AuthService: login()
-2. AuthService â†’ UserDB: query()
-3. UserDB â†’ AuthService: results()
-4. AuthService â†’ User: token
+1. User → AuthService: login()
+2. AuthService → UserDB: query()
+3. UserDB → AuthService: results()
+4. AuthService → User: token
 
-**Solution â€” Inconsistencies Found:**
+**Solution — Inconsistencies Found:**
 1. Step 2: 'UserDB' is not in the class model (only 'Database' exists)
-2. Step 3: 'UserDB' returned to 'AuthService' â€” class mismatch
-3. Step 4: 'User' should be 'User' â€” no issue here
+2. Step 3: 'UserDB' returned to 'AuthService' — class mismatch
+3. Step 4: 'User' should be 'User' — no issue here
 4. The class 'Database' exists but never appears in any interaction
 
 **Correction options:**
@@ -1491,7 +1491,7 @@ A hospital information system needs to model Patients, Doctors, Appointments, an
 3. A sequence diagram for the "Book Appointment" use case
 4. A state machine for the lifecycle of an Appointment (Available, Booked, Confirmed, InProgress, Completed, Cancelled, NoShow)
 
-**Solution â€” TypeScript Implementation:**
+**Solution — TypeScript Implementation:**
 
 ```typescript
 enum Gender { MALE = 'MALE', FEMALE = 'FEMALE', OTHER = 'OTHER' }

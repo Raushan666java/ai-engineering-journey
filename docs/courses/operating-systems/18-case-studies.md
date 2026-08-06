@@ -1,4 +1,4 @@
-﻿# Chapter 18: Case Studies in Operating Systems
+# Chapter 18: Case Studies in Operating Systems
 
 **<< [Virtualization and Cloud Computing](./17-virtualization.md)**
 
@@ -82,7 +82,7 @@ Windows NT (New Technology) was designed by David Cutler, formerly of DEC's VAX/
 
 NT originally ran on x86, MIPS, Alpha AXP, and later PowerPC, Itanium, and ARM. Today's Windows 10/11 and Windows Server are direct descendants. The kernel has evolved through versions: NT 4.0 moved graphics into kernel (improved performance, reduced stability), Windows 2000 added Active Directory, Windows XP merged consumer/NT lines, Vista added WDDM driver model, Windows 8 added Metro/Modern UI, and Windows 11 added VBS (Virtualization-Based Security) and Pluton security processor support.
 
-**Real-world analogy**: Windows NT is like a luxury cruise ship â†’ it has multiple decks (layers), specialized departments (executive subsystems), a control bridge (kernel), and a hull that isolates passengers from the water (HAL abstracts hardware). Adding new engines is modular, but the ship is heavy and requires significant fuel (resources).
+**Real-world analogy**: Windows NT is like a luxury cruise ship → it has multiple decks (layers), specialized departments (executive subsystems), a control bridge (kernel), and a hull that isolates passengers from the water (HAL abstracts hardware). Adding new engines is modular, but the ship is heavy and requires significant fuel (resources).
 
 ### Architecture Diagram
 
@@ -380,13 +380,13 @@ int main() {
 
 ### Scheduling
 
-Windows implements a **priority-driven preemptive scheduler** with 32 priority levels (0Ã¢â‚¬â€œ31).
+Windows implements a **priority-driven preemptive scheduler** with 32 priority levels (0–31).
 
 | Priority Level | Category | Assignment | Boost Behavior |
 |----------------|----------|------------|----------------|
 | 0 | Zero page thread | System idle | Never boosted |
-| 1Ã¢â‚¬â€œ15 | Variable | Dynamic class | Priority boosted on I/O completion, GUI input |
-| 16Ã¢â‚¬â€œ31 | Real-time | Real-time class | No automatic boosting |
+| 1–15 | Variable | Dynamic class | Priority boosted on I/O completion, GUI input |
+| 16–31 | Real-time | Real-time class | No automatic boosting |
 
 **Scheduling policies**:
 - Priority boosts: Thread receives +6 for foreground window, +2 for I/O completion, +8 for GUI input
@@ -444,14 +444,14 @@ int main() {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch | ~1-2 Ã‚Âµs (user thread), ~5-10 Ã‚Âµs (cross-process) |
+| Context switch | ~1-2 µs (user thread), ~5-10 µs (cross-process) |
 | System call entry | ~200-500 cycles (syscall instruction) |
-| Process creation | O(n) where n = handle count, typically 200-1000 Ã‚Âµs |
+| Process creation | O(n) where n = handle count, typically 200-1000 µs |
 | Page fault handling | ~100 ns-10 ms (soft vs hard fault, disk I/O) |
 | Memory allocation (kernel) | O(log n) via look-aside lists |
 | Registry lookup | O(log n) via B-tree |
-| Thread wakeup latency | ~5-20 Ã‚Âµs (depends on priority, CPU load) |
-| ALPC message round-trip | ~3-5 Ã‚Âµs on same machine |
+| Thread wakeup latency | ~5-20 µs (depends on priority, CPU load) |
+| ALPC message round-trip | ~3-5 µs on same machine |
 
 ### A&D Table: Windows vs Others
 
@@ -475,11 +475,11 @@ int main() {
 
 Linux was created by Linus Torvalds in 1991 as a Unix-like kernel for x86. It was inspired by Minix but with a monolithic design (following the Unix tradition). Licensed under GPLv2, it became the centerpiece of the GNU/Linux operating system.
 
-The kernel has grown from 10,000 lines (v0.01, 1991) to over 28 million lines (v6.x, 2025). Major subsystems include: scheduler (CFS â†’ EEVDF in v6.6), memory manager (VMA, page cache, SLUB), VFS (ext4, XFS, btrfs), networking (TCP/IP stack, netfilter), device drivers (>60% of codebase), and architecture support (x86, ARM, RISC-V, MIPS, s390, etc.).
+The kernel has grown from 10,000 lines (v0.01, 1991) to over 28 million lines (v6.x, 2025). Major subsystems include: scheduler (CFS → EEVDF in v6.6), memory manager (VMA, page cache, SLUB), VFS (ext4, XFS, btrfs), networking (TCP/IP stack, netfilter), device drivers (>60% of codebase), and architecture support (x86, ARM, RISC-V, MIPS, s390, etc.).
 
 **Key historical milestones**: SMP support (v2.0, 1996), loadable modules (v2.0), O(1) scheduler (v2.6, 2003), CFS scheduler (v2.6.23, 2007), cgroups and namespaces (v2.6.24, 2008), live patching (v3.20, 2015), PREEMPT_RT merged (v6.2, 2023), Rust language support (v6.1, 2022), EEVDF scheduler (v6.6, 2023).
 
-**Real-world analogy**: Linux is like a city's public infrastructure â†’ anyone can contribute to its construction (open source), it's modular (you can add parks/bridges as needed), it runs everything from small apartments (IoT devices) to massive skyscrapers (supercomputers), and the community maintains standards (LKML, coding style) that keep the city running.
+**Real-world analogy**: Linux is like a city's public infrastructure → anyone can contribute to its construction (open source), it's modular (you can add parks/bridges as needed), it runs everything from small apartments (IoT devices) to massive skyscrapers (supercomputers), and the community maintains standards (LKML, coding style) that keep the city running.
 
 ### Architecture Diagram
 
@@ -492,12 +492,12 @@ Linux Monolithic Kernel Architecture
 |  | (bash)   |  | Server   |  | (MySQL)  |  | (gcc)    |                      |
 |  +----------+  +----------+  +----------+  +----------+                      |
 |  +-----------------------------------------------------------------------+  |
-|  | glibc / musl / uclibc (C library â†’ user-space syscall interface)       |  |
+|  | glibc / musl / uclibc (C library → user-space syscall interface)       |  |
 |  +-----------------------------------------------------------------------+  |
 ================================================================================
 |  KERNEL SPACE                                                                |
 |  +-----------------------------------------------------------------------+  |
-|  | System Call Interface (arch/x86/entry/syscall_64.c â†’ syscall table)    |  |
+|  | System Call Interface (arch/x86/entry/syscall_64.c → syscall table)    |  |
 |  +-----------------------------------------------------------------------+  |
 |  +----------+ +----------+ +----------+ +----------+ +----------+         |  |
 |  | VFS      | | Scheduler| | Memory   | | Network  | | Signal   |         |  |
@@ -511,11 +511,11 @@ Linux Monolithic Kernel Architecture
 |  | Drivers  | | Systems  | | (drivers, filesystems, network protocols)    |  |
 |  +----------+ +----------+ +----------------------------------------------+  |
 |  +-----------------------------------------------------------------------+  |
-|  | Architecture-specific code: x86, arm64, riscv, loongarch â†’ entry,      |  |
+|  | Architecture-specific code: x86, arm64, riscv, loongarch → entry,      |  |
 |  | MMU setup, interrupt controllers (APIC/GIC), page table management    |  |
 |  +-----------------------------------------------------------------------+  |
 |  +-----------------------------------------------------------------------+  |
-|  | RCU (Read-Copy-Update) â†’ lockless synchronization for read-mostly     |  |
+|  | RCU (Read-Copy-Update) → lockless synchronization for read-mostly     |  |
 |  | data structures (runs in interrupt context, grace period tracking)     |  |
 |  +-----------------------------------------------------------------------+  |
 ================================================================================
@@ -541,7 +541,7 @@ In Linux, **processes** and **threads** are both represented by the `task_struct
 - `cgroups` / `nsproxy`: Control groups and namespace information
 
 **Thread creation paths**:
-1. `clone()`: General-purpose â†’ fine-grained control of resource sharing via flags
+1. `clone()`: General-purpose → fine-grained control of resource sharing via flags
 2. `fork()`: Creates a new process (copy-on-write address space)
 3. `vfork()`: Parent blocks until child execs (no address space copy)
 
@@ -566,7 +566,7 @@ int main() {
     void* stack = malloc(STACK_SIZE);
     if (!stack) { perror("malloc"); return 1; }
 
-    // Clone â†’ share address space (= thread behavior)
+    // Clone → share address space (= thread behavior)
     pid_t tid = clone(child_func, stack + STACK_SIZE,
                       CLONE_VM | CLONE_SIGHAND | CLONE_FILES, NULL);
     if (tid == -1) { perror("clone"); free(stack); return 1; }
@@ -754,7 +754,7 @@ int main() {
 ### Security Model
 
 - **DAC (Discretionary Access Control)**: Traditional Unix rwx permissions + ACLs
-- **MAC (Mandatory Access Control)**: SELinux (NSA), AppArmor (Canonical) â†’ security modules via LSM
+- **MAC (Mandatory Access Control)**: SELinux (NSA), AppArmor (Canonical) → security modules via LSM
 - **Linux Security Module (LSM)**: Hook framework for security modules (SELinux, AppArmor, Smack, Tomoyo)
 - **Capabilities**: Break root privilege into 40+ independent capabilities (CAP_NET_ADMIN, CAP_SYS_ADMIN, etc.)
 - **Namespaces**: Isolate global resources: mount, PID, net, IPC, UTS, user, cgroup, time
@@ -785,27 +785,27 @@ int main() {
 
 ### Scheduling
 
-Linux historically used CFS (Completely Fair Scheduler, v2.6.23Ã¢â‚¬â€œv6.5), replaced by **EEVDF** (Earliest Eligible Virtual Deadline First) in v6.6 (2023).
+Linux historically used CFS (Completely Fair Scheduler, v2.6.23–v6.5), replaced by **EEVDF** (Earliest Eligible Virtual Deadline First) in v6.6 (2023).
 
-**CFS (legacy, v2.6.23Ã¢â‚¬â€œv6.5)**:
+**CFS (legacy, v2.6.23–v6.5)**:
 - Uses a **red-black tree** of tasks ordered by `vruntime` (virtual runtime)
-- Picks leftmost node (smallest vruntime) â†’ task with the most "unfair" scheduling deficit
-- Calculates time slice = `targeted_latency / nr_running` (typically 6Ã¢â‚¬â€œ24 ms)
+- Picks leftmost node (smallest vruntime) → task with the most "unfair" scheduling deficit
+- Calculates time slice = `targeted_latency / nr_running` (typically 6–24 ms)
 - **nice values** map to weight: `vruntime += (NICE_0_LOAD / weight) * actual_runtime`
 - Group scheduling: CFS can schedule task groups (cgroups) fairly
 
 **EEVDF (v6.6+, current) **:
 - Uses the deadline-based model: each task is assigned a virtual deadline
-- Selects the earliest eligible virtual deadline â†’ accounts for both past service and future deadlines
+- Selects the earliest eligible virtual deadline → accounts for both past service and future deadlines
 - Better latency isolation for interactive tasks
 - More deterministic behavior under heterogeneous workloads (big.LITTLE)
 
 **Scheduling classes** (in priority order):
 1. **Stop**: Highest priority, preempts everything (SMP hotplug, stop_machine)
-2. **Deadline**: SCHED_DEADLINE â†’ fixed-priority EDF with CBS (Constant Bandwidth Server)
-3. **RT**: SCHED_FIFO / SCHED_RR â†’ real-time, priority-driven
-4. **Fair**: CFS/EEVDF â†’ SCHED_NORMAL (default), SCHED_BATCH
-5. **Idle**: SCHED_IDLE â†’ runs only when nothing else is ready
+2. **Deadline**: SCHED_DEADLINE → fixed-priority EDF with CBS (Constant Bandwidth Server)
+3. **RT**: SCHED_FIFO / SCHED_RR → real-time, priority-driven
+4. **Fair**: CFS/EEVDF → SCHED_NORMAL (default), SCHED_BATCH
+5. **Idle**: SCHED_IDLE → runs only when nothing else is ready
 
 ```c
 // Linux scheduling policy and priority
@@ -826,9 +826,9 @@ int main() {
     printf("Current priority: %d\n", param.sched_priority);
     printf("Policy: %d (", policy);
     switch (policy) {
-        case SCHED_OTHER: printf("SCHED_OTHER â†’ normal"); break;
-        case SCHED_FIFO: printf("SCHED_FIFO â†’ real-time"); break;
-        case SCHED_RR: printf("SCHED_RR â†’ round-robin RT"); break;
+        case SCHED_OTHER: printf("SCHED_OTHER → normal"); break;
+        case SCHED_FIFO: printf("SCHED_FIFO → real-time"); break;
+        case SCHED_RR: printf("SCHED_RR → round-robin RT"); break;
         case SCHED_BATCH: printf("SCHED_BATCH"); break;
         case SCHED_IDLE: printf("SCHED_IDLE"); break;
         default: printf("unknown");
@@ -852,7 +852,7 @@ int main() {
 4. **Fsnotify + fanotify**: File system event monitoring (fanotify for container-aware monitoring)
 5. **io_uring**: Asynchronous I/O framework with shared submission/completion queues, zero-copy between user/kernel
 6. **Namespaces + cgroups**: Foundation for Docker/Podman containerization
-7. **KVM**: Kernel-based Virtual Machine â†’ turns Linux into a hypervisor
+7. **KVM**: Kernel-based Virtual Machine → turns Linux into a hypervisor
 8. **Transparent Huge Pages (THP)**: Automatically use 2 MB huge pages for performance
 9. **Live Patching (kpatch/kgraft)**: Apply security patches without reboot
 10. **OOM Killer**: When memory is exhausted, selects and kills a process based on `oom_score`
@@ -861,7 +861,7 @@ int main() {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch | ~0.5-3 Ã‚Âµs (same process), ~3-10 Ã‚Âµs (cross-process) |
+| Context switch | ~0.5-3 µs (same process), ~3-10 µs (cross-process) |
 | System call entry | ~100-300 cycles (syscall instruction) |
 | Process creation (fork) | O(1) copy-on-write (page tables + task_struct clone) |
 | Page fault (minor) | ~100-500 ns (page already in memory) |
@@ -897,7 +897,7 @@ The history: Apple acquired NeXT in 1997 for $429 million, bringing Steve Jobs b
 
 XNU is approximately 2.5 million lines of code, with ~1.5M from the BSD layer, ~800K from Mach, and ~200K from I/O Kit.
 
-**Real-world analogy**: macOS XNU is like a corporate merger â†’ Mach (the startup with innovative ideas about messaging) was acquired by BSD (the established company with solid processes). The combined entity (XNU Inc.) kept the startup's communication infrastructure (Mach IPC) while integrating BSD's mature departments (file systems, networking, process management). I/O Kit is the HR department that standardized device driver hiring (probe/match).
+**Real-world analogy**: macOS XNU is like a corporate merger → Mach (the startup with innovative ideas about messaging) was acquired by BSD (the established company with solid processes). The combined entity (XNU Inc.) kept the startup's communication infrastructure (Mach IPC) while integrating BSD's mature departments (file systems, networking, process management). I/O Kit is the HR department that standardized device driver hiring (probe/match).
 
 ### Architecture Diagram
 
@@ -944,7 +944,7 @@ macOS XNU Hybrid Kernel Architecture
 |  +-----------------------------------------------------------------------+  |
 ================================================================================
 |  HARDWARE                                                                   |
-|  Apple Silicon (M-series ARM64) or Intel x86_64 â†’ ACPI, GIC/APIC,          |
+|  Apple Silicon (M-series ARM64) or Intel x86_64 → ACPI, GIC/APIC,          |
 |  DART (IOMMU), SEP (Secure Enclave Processor), ANE (Apple Neural Engine)   |
 ================================================================================
 ```
@@ -1050,10 +1050,10 @@ int main() {
 
 **Memory Pressure Steps**:
 1. Memory Pressure Monitor (kernel thread) tracks free memory and compressor usage
-2. When crossing pressure thresholds (critical â†’ warning â†’ normal), kernel broadcasts memory pressure notifications
+2. When crossing pressure thresholds (critical → warning → normal), kernel broadcasts memory pressure notifications
 3. Applications respond by freeing caches, releasing memory via `vm_pressure_monitor` on macOS
 4. `memorystatus` (on iOS) kills jetsam candidate processes in priority order
-5. Compressor compresses pages that haven't been accessed â†’ WKdm algorithm averages 2-3x compression ratio
+5. Compressor compresses pages that haven't been accessed → WKdm algorithm averages 2-3x compression ratio
 6. If compression fails, swap to disk (SSD-backed)
 
 ### File System
@@ -1096,7 +1096,7 @@ int main() {
 
 ### Security Model
 
-- **SIP (System Integrity Protection)**: Root-level restrictions â†’ `/System`, `/usr/bin`, `/sbin` cannot be modified even by root; kernel extensions must be signed
+- **SIP (System Integrity Protection)**: Root-level restrictions → `/System`, `/usr/bin`, `/sbin` cannot be modified even by root; kernel extensions must be signed
 - **Sandboxing** (Seatbelt): App Store apps are sandboxed with per-entitlement resource access. Kernel extension `Sandbox.kext` enforces profiles
 - **Hardened Runtime**: Code signing + runtime integrity checks + library validation
 - **Gatekeeper**: Verifies app code signature and notarization before launch
@@ -1195,13 +1195,13 @@ int main() {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch (thread) | ~1-3 Ã‚Âµs (user thread) |
-| mach_msg round-trip | ~3-5 Ã‚Âµs (local IPC) |
+| Context switch (thread) | ~1-3 µs (user thread) |
+| mach_msg round-trip | ~3-5 µs (local IPC) |
 | Memory allocation (Mach zone) | O(1) from per-CPU zone caches |
 | Page fault (minor) | ~200-500 ns |
 | Task creation | O(n) where n = port count + thread count |
 | System call entry | ~200-400 cycles (syscall on Apple Silicon) |
-| QoS thread dispatch (GCD) | ~5-10 Ã‚Âµs |
+| QoS thread dispatch (GCD) | ~5-10 µs |
 | Sandbox policy check | ~50-200 ns (cached result) |
 
 ### A&D Table: macOS vs Others
@@ -1242,7 +1242,7 @@ Android is an open-source mobile operating system based on a modified Linux kern
 
 **Architecture layers**: Android is organized into 5 layers from bottom to top: Linux kernel, Hardware Abstraction Layer (HAL), Android Runtime (ART) + native C/C++ libraries, Java API Framework, and System Apps.
 
-**Real-world analogy**: Android is like a modular kitchen â†’ the Linux kernel is the foundation (counters, plumbing), HAL is the standard appliance connections (power outlets, gas lines), ART is the stove (cooks the Android apps), the Java framework is the pantry (ingredients available to every cook), and each manufacturer (Samsung, Xiaomi, etc.) adds their own spice rack (custom UI, features).
+**Real-world analogy**: Android is like a modular kitchen → the Linux kernel is the foundation (counters, plumbing), HAL is the standard appliance connections (power outlets, gas lines), ART is the stove (cooks the Android apps), the Java framework is the pantry (ingredients available to every cook), and each manufacturer (Samsung, Xiaomi, etc.) adds their own spice rack (custom UI, features).
 
 ### Architecture Diagram
 
@@ -1280,7 +1280,7 @@ Android OS Architecture
 |  |   .odex files     |  | +------+ +------+ +------+                     |  |
 |  +-------------------+  +------------------------------------------------+  |
 ================================================================================
-|  HARDWARE ABSTRACTION LAYER (HAL) â†’ Project Treble (Android 8+)              |
+|  HARDWARE ABSTRACTION LAYER (HAL) → Project Treble (Android 8+)              |
 |  +--------+ +--------+ +---------+ +---------+ +--------+ +--------+      |
 |  | Camera | | Audio  | | Sensors | | Bluetooth| | GPS    | | Wi-Fi  |      |
 |  | HAL     | | HAL    | | HAL     | | HAL      | | HAL    | | HAL    |      |
@@ -1299,7 +1299,7 @@ Android OS Architecture
 |  +------------------+  +------------------+  +------------------+           |
 ================================================================================
 |  HARDWARE                                                                   |
-|  ARM64 (primary), x86 (legacy), RISC-V (experimental) â†’ SoC: Qualcomm,     |
+|  ARM64 (primary), x86 (legacy), RISC-V (experimental) → SoC: Qualcomm,     |
 |  MediaTek, Samsung Exynos, Google Tensor                                   |
 ================================================================================
 ```
@@ -1367,10 +1367,10 @@ public class MainActivity extends Activity {
 - **AsyncTask** (deprecated in API 30): Lightweight background task
 - **Kernel threads**: kworker, kswapd, binder, etc.
 
-**Binder IPC**: The core Android IPC mechanism â†’ a character driver (`/dev/binder`). Binder uses a client-server model: proxy objects in client process communicate via Binder driver to stub objects in server process. Each Binder transaction carries a calling PID/UID for security.
+**Binder IPC**: The core Android IPC mechanism → a character driver (`/dev/binder`). Binder uses a client-server model: proxy objects in client process communicate via Binder driver to stub objects in server process. Each Binder transaction carries a calling PID/UID for security.
 
 ```java
-// AIDL (Android Interface Definition Language) â†’ Binder IPC
+// AIDL (Android Interface Definition Language) → Binder IPC
 // IMyService.aidl
 // interface IMyService {
 //     int add(int a, int b);
@@ -1415,7 +1415,7 @@ Android's memory management adds several components on top of Linux's MM:
 - **ION**: Contiguous and non-contiguous memory allocator from CMA (Contiguous Memory Allocator). Used by GPU, display, camera, video codecs. Replaces ashmem for device-specific allocations.
 - **dma-buf**: Buffer sharing framework between kernel drivers and between kernel and userspace
 - **Low Memory Killer (LMK)**: Replaces Linux OOM killer. Kills processes based on `oom_adj` score and system-wide memory pressure thresholds
-- **LMKD** (Android 11+): User-space low-memory daemon that communicates with kernel via PSI (Pressure Stall Information) â†’ more proactive than LMK
+- **LMKD** (Android 11+): User-space low-memory daemon that communicates with kernel via PSI (Pressure Stall Information) → more proactive than LMK
 - **Sparse Memory**: Virtual address space is not fully backed by physical pages; only used pages consume RAM
 
 **Process States and LMKD Operations** (numbered steps):
@@ -1479,7 +1479,7 @@ int main() {
 - **Scoped Storage** (Android 10+): Apps have restricted access to shared storage; use `MediaStore` API or SAF (Storage Access Framework); prevents broad storage access without permission
 
 ```java
-// Android: scoped storage â†’ MediaStore query
+// Android: scoped storage → MediaStore query
 import android.content.ContentResolver;
 import android.database.Cursor;
 import android.net.Uri;
@@ -1517,7 +1517,7 @@ public void queryImages(Context context) {
 - **Permissions**: Install-time (normal) and runtime (dangerous). `Manifest.permission` system. Android 11+ auto-resets unused app permissions
 - **SELinux (enforcing)**: Since Android 4.3 (partial), fully enforcing since 5.0. Mandatory access control labels for all system processes and apps (`system_app`, `untrusted_app`, `platform_app`)
 - **Verified Boot**: dm-verity (device-mapper integrity) checks block-level hashes of system partitions; AVB (Android Verified Boot) ensures chain of trust from bootloader to OS
-- **Keystore / Keymint**: Hardware-backed cryptographic operations via TEE (Trusted Execution Environment) â†’ usually ARM TrustZone
+- **Keystore / Keymint**: Hardware-backed cryptographic operations via TEE (Trusted Execution Environment) → usually ARM TrustZone
 - **Encryption**: File-Based Encryption (FBE, Android 7+) or Full-Disk Encryption (FDE, legacy). FBE uses per-file keys; direct boot allows limited operation before user unlocks
 - **Google Play Protect**: On-device app scanning with ML model (META, Mantis, etc.)
 - **Private Compute Core** (Android 12+): Isolated environment for ML processing (Live Caption, Smart Reply) without network access
@@ -1525,10 +1525,10 @@ public void queryImages(Context context) {
 ```xml
 <!-- Android Manifest permissions (AndroidManifest.xml) -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Normal permission â†’ auto-granted at install -->
+    <!-- Normal permission → auto-granted at install -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- Dangerous permission â†’ runtime request (Android 6+) -->
+    <!-- Dangerous permission → runtime request (Android 6+) -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>
 ```
@@ -1568,7 +1568,7 @@ import android.os.Process;
 
 // Set background thread to lowest priority
 new Thread(() -> {
-    // This is a hint â†’ the actual scheduling uses cgroups + uclamp
+    // This is a hint → the actual scheduling uses cgroups + uclamp
     android.os.Process.setThreadPriority(
         android.os.Process.THREAD_PRIORITY_URGENT_DISPLAY);
 
@@ -1584,12 +1584,12 @@ new Thread(() -> {
 1. **Binder IPC**: Android's custom IPC mechanism with proxy/stub pattern, per-transaction PID/UID checking, `/dev/binder` driver; the most used IPC in any OS ecosystem
 2. **Project Treble** (Android 8+): Modularizes vendor HAL implementations via HIDL/AIDL interfaces; allows Google to push OS updates without waiting for SoC vendors
 3. **ART (Android Runtime)**: AOT compilation at install time + JIT with profile-guided optimization. Pre-installed frameworks reduce app startup time
-4. **Dalvik â†’ ART transition**: Android 5.0 replaced Dalvik VM (JIT-only, register-based) with ART (AOT + JIT, improved GC)
-5. **Zygote**: Pre-loaded process template from which all apps fork â†’ reduces startup time and shares pages via COW
+4. **Dalvik → ART transition**: Android 5.0 replaced Dalvik VM (JIT-only, register-based) with ART (AOT + JIT, improved GC)
+5. **Zygote**: Pre-loaded process template from which all apps fork → reduces startup time and shares pages via COW
 6. **Project Mainline** (Android 10+): Critical system modules as APEX/APK-in-APEX; updatable via Google Play without full OTA
 7. **Slices / App Actions / Shortcuts**: UI components shown outside the app context (launcher, assistant)
 8. **Dynamic System Updates** (DSU, Android 10+): Load a GSI (Generic System Image) temporarily without flashing
-9. **MGLRU (Multi-Gen LRU)**: Page reclaim algorithm (Android 13+ mainline-merged into Linux 6.1) â†’ better reclaim efficiency with less CPU overhead
+9. **MGLRU (Multi-Gen LRU)**: Page reclaim algorithm (Android 13+ mainline-merged into Linux 6.1) → better reclaim efficiency with less CPU overhead
 10. **Ahmed / LMKD**: User-space low-memory management that replaced kernel-space LMK
 
 ### Complexity Analysis
@@ -1597,13 +1597,13 @@ new Thread(() -> {
 | Aspect | Complexity |
 |--------|------------|
 | App startup (cold start) | ~200-500 ms (depends on APK size, ART AOT state) |
-| Binder IPC transaction | ~5-30 Ã‚Âµs (same process), ~50-200 Ã‚Âµs (cross-process) |
+| Binder IPC transaction | ~5-30 µs (same process), ~50-200 µs (cross-process) |
 | Zygote fork | ~5-20 ms (pre-loaded page table copy) |
-| HAL call (HIDL/AIDL) | ~10-100 Ã‚Âµs (binderized HAL) |
+| HAL call (HIDL/AIDL) | ~10-100 µs (binderized HAL) |
 | Art GC pause | 2-8 ms (concurrent, most pauses &lt; 5 ms) |
-| ION allocation | ~50-500 Ã‚Âµs (depends on size and contiguous requirement) |
+| ION allocation | ~50-500 µs (depends on size and contiguous requirement) |
 | SELinux check | ~200-500 ns (AVC cache hit) |
-| LMK kill latency | ~5-50 ms (detection â†’ signal â†’ process cleanup) |
+| LMK kill latency | ~5-50 ms (detection → signal → process cleanup) |
 
 ### A&D Table: Android vs Others
 
@@ -1615,11 +1615,11 @@ new Thread(() -> {
 | IPC | Binder (primary) | D-Bus, sockets, pipes | XPC, Mach messages |
 | Security model | SELinux enforcing + permissions | DAC/MAC (configurable) | Sandbox + entitlements + SEP |
 | Driver model | HAL (HIDL/AIDL) + kernel modules | In-kernel .ko | I/O Kit + DriverKit |
-| Memory mgmt | ashmem â†’ ION + LMKD + PSI | Demand-paging, THP, KSM | Mach VM + memory pressure + jetsam |
+| Memory mgmt | ashmem → ION + LMKD + PSI | Demand-paging, THP, KSM | Mach VM + memory pressure + jetsam |
 | App distribution | Google Play, APK sideloading | Package managers (apt, dnf) | App Store (signed, notarized) |
 | Real-time | Soft via EAS + cgroups | PREEMPT_RT available | Limited (QoS-based) |
 | Open source | AOSP (Apache 2.0 / GPLv2) | Fully open (GPLv2) | Kernel open (APSL), UI proprietary |
-| Kernel version | Android 14 â†’ Linux 5.15 LTS | Latest mainline (6.x) | Based on XNU (Apple-sourced) |
+| Kernel version | Android 14 → Linux 5.15 LTS | Latest mainline (6.x) | Based on XNU (Apple-sourced) |
 
 ---
 
@@ -1644,7 +1644,7 @@ iOS is Apple's mobile operating system, first released in 2007 alongside the ori
 
 **Architecture layers** (bottom to top): Core OS (XNU kernel + device drivers), Core Services (foundation frameworks, CFNetwork, SQLite), Media (AVFoundation, Core Audio, Metal), Cocoa Touch (UIKit, EventKit, MapKit, etc.)
 
-**Real-world analogy**: iOS is like a luxury high-security apartment building â†’ the XNU kernel is the secure foundation and building services (electricity, plumbing), Core OS is the building security system, Core Services are the building amenities (gym, pool), Media layer is the entertainment system (cable, internet), and Cocoa Touch is the actual apartment interior (you live here but can't change load-bearing walls). Apple is the landlord who controls everything.
+**Real-world analogy**: iOS is like a luxury high-security apartment building → the XNU kernel is the secure foundation and building services (electricity, plumbing), Core OS is the building security system, Core Services are the building amenities (gym, pool), Media layer is the entertainment system (cable, internet), and Cocoa Touch is the actual apartment interior (you live here but can't change load-bearing walls). Apple is the landlord who controls everything.
 
 ### Architecture Diagram
 
@@ -1694,11 +1694,11 @@ iOS Architecture
 |  +-----------------------------------------------------------------------+  |
 |  | XNU Kernel (Mach + BSD + I/O Kit)                                     |  |
 |  | - Same kernel as macOS but with iOS-specific additions:                |  |
-|  |   + Jetsam (memory management â†’ kills processes under pressure)       |  |
+|  |   + Jetsam (memory management → kills processes under pressure)       |  |
 |  |   + Trust Cache (pre-approved code signatures)                         |  |
 |  |   + Sandbox (Seatbelt profiles enforced per app bundle ID)             |  |
-|  |   + Apple Mobile File Integrity (AMFI) â†’ code sign enforcement         |  |
-|  |   + PPL (Page Protection Layer) â†’ kernel code integrity on Apple Sil.  |  |
+|  |   + Apple Mobile File Integrity (AMFI) → code sign enforcement         |  |
+|  |   + PPL (Page Protection Layer) → kernel code integrity on Apple Sil.  |  |
 |  +-----------------------------------------------------------------------+  |
 |  +-----------------------------------------------------------------------+  |
 |  | Secure Enclave Processor (SEP): Biometric processing, crypto keys,    |  |
@@ -1711,7 +1711,7 @@ iOS Architecture
 |  +-----------------------------------------------------------------------+  |
 ================================================================================
 |  HARDWARE                                                                   |
-|  Apple Silicon (A-series, M-series) â†’ ARM64. Secure Enclave, Neural        |
+|  Apple Silicon (A-series, M-series) → ARM64. Secure Enclave, Neural        |
 |  Engine, Image Signal Processor, storage controller, display engine        |
 ================================================================================
 ```
@@ -1804,8 +1804,8 @@ class WorkerService: NSObject, WorkerProtocol {
 iOS uses the same Mach VM as macOS with iOS-specific additions:
 
 - **Jetsam** (memorystatus): iOS's memory manager. When free memory is low, Jetsam kills processes starting from the lowest priority (largest suspended apps first)
-- **Memory Limits**: Per-process memory limit (e.g., ~2-3 GB on modern devices, varies by device RAM). Exceeding triggers `EXC_RESOURCE_RESOURCE` â†’ `SIGKILL`
-- **Page Protection Layer (PPL)**: Apple Silicon feature that protects kernel page tables from modification even by kernel-level exploitsâ†’memory must be "unwired" through PPL to modify page table entries
+- **Memory Limits**: Per-process memory limit (e.g., ~2-3 GB on modern devices, varies by device RAM). Exceeding triggers `EXC_RESOURCE_RESOURCE` → `SIGKILL`
+- **Page Protection Layer (PPL)**: Apple Silicon feature that protects kernel page tables from modification even by kernel-level exploits→memory must be "unwired" through PPL to modify page table entries
 - **Wired memory**: Pinned, never paged. Includes kernel, launchd, essential daemons
 - **Compressed memory**: Same as macOS (WKdm compression of inactive pages)
 
@@ -1860,7 +1860,7 @@ if let protection = attrs[.protectionKey] as? FileProtectionType {
 
 iOS is widely considered the most secure consumer OS:
 
-- **Secure Boot Chain**: Boot ROM â†’ iBoot â†’ kernel â†’ OS. Each stage verifies the next via Apple root CA signatures. No unsigned code can run during boot (unlike Android's verified boot which permits custom ROMs)
+- **Secure Boot Chain**: Boot ROM → iBoot → kernel → OS. Each stage verifies the next via Apple root CA signatures. No unsigned code can run during boot (unlike Android's verified boot which permits custom ROMs)
 - **Secure Enclave (SEP)**: ARM Cortex-A7 coprocessor with its own secure OS (L4-based microkernel). Manages: biometric keys (Touch ID, Face ID), Apple Pay tokens, iCloud Keychain, file encryption keys, device UID (UID). The SEP has its own boot ROM, crypto engine, memory, and AES engine. Main CPU cannot directly access SEP memory
 - **Trust Cache**: Kernel-level list of approved code signatures. All executables must have a hash in the trust cache to run
 - **Sandbox (Seatbelt)**: Per-application sandbox profiles enforced by kernel-level Seatbelt extension. Every resource access (file, network, hardware) is checked against sandbox profile + entitlements
@@ -1919,13 +1919,13 @@ iOS uses the same MLFQ scheduler as macOS with additional iOS-specific adaptatio
 - **Energy-aware scheduling**: On Apple Silicon (starting with A7, 2013), the scheduler prefers high-efficiency cores (E-cores) for background tasks and high-performance cores (P-cores) for interactive work
 - **Timer throttling**: Background app timers are throttled to conserve battery (minimum interval 1 minute for suspended apps)
 - **Launchd-based service management**: launchd manages daemon startup, watchdog timers, and crash recovery
-- **System pressure**: Thermal and memory pressure feedback loops â†’ kernel can adjust max performance when device overheats
+- **System pressure**: Thermal and memory pressure feedback loops → kernel can adjust max performance when device overheats
 
 ```swift
 // iOS: Quality of Service (QoS) scheduling
 import Foundation
 
-// Background task â†’ runs on E-cores
+// Background task → runs on E-cores
 let backgroundQueue = OperationQueue()
 backgroundQueue.qualityOfService = .background
 backgroundQueue.addOperation {
@@ -1933,17 +1933,17 @@ backgroundQueue.addOperation {
     print("Current QoS: \(QualityOfService.background.rawValue)")
 }
 
-// User interactive â†’ runs on P-cores with highest priority
+// User interactive → runs on P-cores with highest priority
 DispatchQueue.main.async(qos: .userInteractive) {
-    print("UI work â†’ highest priority, P-cores")
+    print("UI work → highest priority, P-cores")
 }
 ```
 
 ### Unique Features
 
 1. **App Sandbox**: Every app runs in its own sandboxed directory; all resource access goes through `sandboxd` and the kernel seatbelt
-2. **Jetsam**: Proactive memory reclamation via process killing â†’ more aggressive than Android's LMKD
-3. **Secure Enclave**: Dedicated secure processor for biometric and encryption â†’ a unique hardware security feature unmatched in consumer mobile
+2. **Jetsam**: Proactive memory reclamation via process killing → more aggressive than Android's LMKD
+3. **Secure Enclave**: Dedicated secure processor for biometric and encryption → a unique hardware security feature unmatched in consumer mobile
 4. **M-series motion coprocessor** (legacy, now absorbed into main SoC): Dedicated low-power processor for accelerometer/gyroscope/compass processing
 5. **Core ML + Apple Neural Engine**: On-device ML inference with dedicated hardware (16-core ANE)
 6. **iOS Privacy Labels**: App Store mandatory disclosure of data collection (since iOS 14)
@@ -1956,8 +1956,8 @@ DispatchQueue.main.async(qos: .userInteractive) {
 
 | Aspect | Complexity |
 |--------|------------|
-| Context switch (Mach thread) | ~1-3 Ã‚Âµs |
-| Mach IPC (XPC) round-trip | ~5-20 Ã‚Âµs |
+| Context switch (Mach thread) | ~1-3 µs |
+| Mach IPC (XPC) round-trip | ~5-20 µs |
 | Jetsam kill + cleanup | ~10-100 ms |
 | App cold launch | ~200-600 ms |
 | Secure Enclave operation | ~5-50 ms (depending on biometric) |
@@ -1988,15 +1988,15 @@ DispatchQueue.main.async(qos: .userInteractive) {
 
 ### Overview and History
 
-**Real-Time Operating Systems** are designed for applications where timing determinism is critical â†’ meeting deadlines is part of correctness.
+**Real-Time Operating Systems** are designed for applications where timing determinism is critical → meeting deadlines is part of correctness.
 
 **FreeRTOS**: Created by Richard Barry in 2003. A small, open-source (MIT license), hard real-time kernel designed for deeply embedded systems. Runs on 40+ architectures (ARM Cortex-M, AVR, PIC, RISC-V, ESP32, etc.). Acquired by Amazon Web Services (AWS) in 2017, now maintained as part of FreeRTOS + AWS IoT integration. Code footprint: 6-12 KB typical kernel.
 
 **VxWorks**: Developed by Wind River (acquired by Intel in 2009, then acquired by Aptiv/TPG in 2018). First released in 1987. A commercial hard real-time RTOS with DO-178C certification (avionics safety). Used in: SpaceX Falcon 9/Dragon, Mars rovers (Perseverance, Ingenuity), Boeing 787 Dreamliner, medical devices (infusion pumps, ventilators), industrial robotics. VxWorks 7 (latest generation) supports 64-bit SMP, POSIX PSE54 certification, virtualization, and OPC UA.
 
-**Real-world analogy (FreeRTOS)**: FreeRTOS is like a Lego set â†’ small, modular, you build exactly what you need, no wasted pieces. Each task is a Lego brick; the scheduler is the instruction sheet.
+**Real-world analogy (FreeRTOS)**: FreeRTOS is like a Lego set → small, modular, you build exactly what you need, no wasted pieces. Each task is a Lego brick; the scheduler is the instruction sheet.
 
-**Real-world analogy (VxWorks)**: VxWorks is like the flight computer on a spaceship â†’ every single computation is validated, timed, and verified. If a calculation takes 1 ms longer than budgeted, the rocket could crash (literally).
+**Real-world analogy (VxWorks)**: VxWorks is like the flight computer on a spaceship → every single computation is validated, timed, and verified. If a calculation takes 1 ms longer than budgeted, the rocket could crash (literally).
 
 ### Architecture Diagram
 
@@ -2011,7 +2011,7 @@ FreeRTOS Architecture
 ================================================================================
 |  FREERTOS KERNEL                                                             |
 |  +-----------------------------------------------------------------------+  |
-|  | Task Control: Create, Delete, Suspend, Resume, Delay â†’ 1 task = 1    |  |
+|  | Task Control: Create, Delete, Suspend, Resume, Delay → 1 task = 1    |  |
 |  | function (void* pvParameters) with infinite loop. Stack allocated     |  |
 |  | statically or dynamically. ~4-8 kB stack per task.                    |  |
 |  +-----------------------------------------------------------------------+  |
@@ -2022,7 +2022,7 @@ FreeRTOS Architecture
 |  +-----------------------------------------------------------------------+  |
 |  +-----------------------------------------------------------------------+  |
 |  | Inter-Process Communication:                                          |  |
-|  | + Queues (message passing, bounded buffer) â†’ most common IPC          |  |
+|  | + Queues (message passing, bounded buffer) → most common IPC          |  |
 |  | + Semaphores (binary, counting, mutex with priority inheritance)      |  |
 |  | + Event groups (flags set/cleared/wait, 24 bits on 32-bit arch)       |  |
 |  | + Task notifications (lightweight, direct-to-task, ~45% faster than  |  |
@@ -2075,7 +2075,7 @@ VxWorks Architecture
 |  +-----------------------------------------------------------------------+  |
 |  | I/O System: VxWorks I/O subsystem with file descriptors, POSIX I/O.  |  |
 |  | Native file systems: dosFS, rt11FS, rawFS, tapeFS.                   |  |
-|  | USB stack, networking (IPnet â†’ dual IPv4/IPv6 stack).                |  |
+|  | USB stack, networking (IPnet → dual IPv4/IPv6 stack).                |  |
 |  +-----------------------------------------------------------------------+  |
 |  +-----------------------------------------------------------------------+  |
 |  | Safety & Certification: DO-178C DAL A, IEC 61508 SIL 3, IEC 62304,   |  |
@@ -2135,7 +2135,7 @@ int main(void) {
 }
 ```
 
-**VxWorks**: Supports both kernel mode (single address space, fastest context switch) and user mode (processes with protected address spaces, VxWorks 7+). Tasks are the fundamental execution unit (similar to threads). VxWorks processes (RTP â†’ Real-Time Processes) provide memory protection.
+**VxWorks**: Supports both kernel mode (single address space, fastest context switch) and user mode (processes with protected address spaces, VxWorks 7+). Tasks are the fundamental execution unit (similar to threads). VxWorks processes (RTP → Real-Time Processes) provide memory protection.
 
 ```c
 // VxWorks: Task creation (kernel mode)
@@ -2189,7 +2189,7 @@ void start(void) {
 
 ### File System
 
-**FreeRTOS**: Optional **FAT** file system (FreeRTOS+FAT) for SD cards and flash storage. No built-in FS is required (many FreeRTOS applications use no file system at all â†’ data in memory).
+**FreeRTOS**: Optional **FAT** file system (FreeRTOS+FAT) for SD cards and flash storage. No built-in FS is required (many FreeRTOS applications use no file system at all → data in memory).
 
 **VxWorks**: dosFS (FAT), rt11FS, rawFS, tapeFS, NFS client. Flash file system: TrueFFS. VxWorks 7 supports POSIX file I/O, pipes, sockets as file descriptors.
 
@@ -2253,7 +2253,7 @@ void vHighPriorityTask(void* pvParameters) {
     for (;;) {
         // This will block if low-priority task holds mutex
         if (xSemaphoreTake(xMutex, portMAX_DELAY) == pdTRUE) {
-            // Critical section â†’ low-priority task will be boosted
+            // Critical section → low-priority task will be boosted
             // to our priority via priority inheritance
             xSemaphoreGive(xMutex);
         }
@@ -2283,10 +2283,10 @@ void setup(void) {
 5. **Amazon FreeRTOS**: IoT integration with AWS IoT Core, OTA, Greengrass, Device Defender
 6. **Tracealyzer / FreeRTOS+Trace**: Visual task timeline and profiling
 7. **Over 40 architecture ports**: Cortex-M, AVR, RISC-V, ESP32, PIC, H8, etc.
-8. **MPU support**: For Cortex-M3/M4/M7 with MPU â†’ task-level memory protection
+8. **MPU support**: For Cortex-M3/M4/M7 with MPU → task-level memory protection
 
 **VxWorks**:
-1. **DO-178C DAL A certification**: Highest avionics safety level â†’ used in flight-critical systems
+1. **DO-178C DAL A certification**: Highest avionics safety level → used in flight-critical systems
 2. **Space heritage**: Mars Perseverance rover, Ingenuity helicopter, SpaceX Falcon 9/Dragon
 3. **Multi-core SMP**: Up to 32 cores with CPU affinity and cache-coherent SMP
 4. **ARINC 653 partitioning**: Space/time isolation for integrated modular avionics (IMA)
@@ -2301,12 +2301,12 @@ void setup(void) {
 |--------|----------|---------|
 | Context switch | ~200-500 cycles (Cortex-M) | ~500-1000 cycles |
 | ISR latency | ~50-200 cycles (deterministic) | ~100-300 cycles |
-| Task creation | ~5-20 Ã‚Âµs (static stack) | ~10-50 Ã‚Âµs |
-| Message queue send | ~1-5 Ã‚Âµs | ~3-10 Ã‚Âµs |
-| Semaphore give/take | ~1-3 Ã‚Âµs (no contention) | ~2-8 Ã‚Âµs |
+| Task creation | ~5-20 µs (static stack) | ~10-50 µs |
+| Message queue send | ~1-5 µs | ~3-10 µs |
+| Semaphore give/take | ~1-3 µs (no contention) | ~2-8 µs |
 | Minimal footprint | 6-12 KB kernel | ~200 KB (VxWorks 7) |
-| Heap malloc (heap_4) | ~5-50 Ã‚Âµs (first-fit) | ~10-100 Ã‚Âµs (partition) |
-| Tick interrupt | ~10-50 Ã‚Âµs (includes task switch) | ~20-100 Ã‚Âµs |
+| Heap malloc (heap_4) | ~5-50 µs (first-fit) | ~10-100 µs (partition) |
+| Tick interrupt | ~10-50 µs (includes task switch) | ~20-100 µs |
 
 ### A&D Table: RTOS vs GPOS
 
@@ -2334,11 +2334,11 @@ void setup(void) {
 
 ### Overview and History
 
-FreeBSD is a complete, open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD) lineage. It traces its roots to 1977 when the Computer Systems Research Group (CSRG) at UC Berkeley released 1BSD for the PDP-11. After the AT&T lawsuit settlement (USL v. BSDi, 1992Ã¢â‚¬â€œ1994), 4.4BSD-Lite was released free of licensing encumbrances. FreeBSD 1.0 followed in 1993.
+FreeBSD is a complete, open-source Unix-like operating system descended from the Berkeley Software Distribution (BSD) lineage. It traces its roots to 1977 when the Computer Systems Research Group (CSRG) at UC Berkeley released 1BSD for the PDP-11. After the AT&T lawsuit settlement (USL v. BSDi, 1992–1994), 4.4BSD-Lite was released free of licensing encumbrances. FreeBSD 1.0 followed in 1993.
 
-FreeBSD is known for **stability**, **performance**, and **advanced features** â†’ ZFS, DTrace, Jails, pf firewall, and the Ports Collection. It powers Netflix's CDN appliances (Open Connect), WhatsApp's messaging infrastructure, and PlayStation 4/5's system software. It has a permissive BSD license (2-clause), allowing commercial use without GPL obligations.
+FreeBSD is known for **stability**, **performance**, and **advanced features** → ZFS, DTrace, Jails, pf firewall, and the Ports Collection. It powers Netflix's CDN appliances (Open Connect), WhatsApp's messaging infrastructure, and PlayStation 4/5's system software. It has a permissive BSD license (2-clause), allowing commercial use without GPL obligations.
 
-**Real-world analogy**: FreeBSD is like a luxury German car (Mercedes S-Class) â†’ conservatively engineered, extremely reliable, not flashy but everything works perfectly. Where Linux is a Toyota (adaptable, runs everywhere on everything), FreeBSD is the S-Class (fewer models but each is meticulously engineered).
+**Real-world analogy**: FreeBSD is like a luxury German car (Mercedes S-Class) → conservatively engineered, extremely reliable, not flashy but everything works perfectly. Where Linux is a Toyota (adaptable, runs everywhere on everything), FreeBSD is the S-Class (fewer models but each is meticulously engineered).
 
 ### Architecture
 
@@ -2371,7 +2371,7 @@ FreeBSD Kernel Architecture
 |  +----------+                                                      |  |
 |  +--------------------------------------------------------------+  |
 |  | Device Drivers: Newbus (abstraction layer)                    |  |
-|  | GEOM (geometry transformation â†’ RAID, encryption, journaling) |  |
+|  | GEOM (geometry transformation → RAID, encryption, journaling) |  |
 |  +--------------------------------------------------------------+  |
 ====================================================================
 |  HARDWARE                                                          |
@@ -2390,7 +2390,7 @@ FreeBSD Kernel Architecture
 | **Network stack** | Highly optimized, zero-copy, multi-threaded. Used as reference for many TCP improvements |
 | **Security** | Capsicum (capability-based sandboxing), Mandatory Access Control (MAC) framework, Jail |
 | **Virtualization** | Jails (precursor to containers, ~5 years before Linux namespaces), bhyve (Type 2 hypervisor) |
-| **Licensing** | BSD 2-clause â†’ permissive, no GPL restrictions |
+| **Licensing** | BSD 2-clause → permissive, no GPL restrictions |
 
 #### FreeBSD Jails
 
@@ -2442,7 +2442,7 @@ Minix (Mini-Unix) was created by Andrew Tanenbaum in 1987 as an educational oper
 - Minix 3 (2006, latest stable) runs about 12,000 lines of kernel code
 - All device drivers are user-mode processes (crashed driver can be restarted without kernel panic)
 - Each driver runs in its own isolated process with restricted privileges
-- IPC latency: ~2-10 Ã‚Âµs (kernel-to-userspace message passing overhead)
+- IPC latency: ~2-10 µs (kernel-to-userspace message passing overhead)
 - Direct inspiration for the Microkernel vs Monolithic kernel debate (Tanenbaum-Torvalds debate, 1992)
 
 ```
@@ -2460,11 +2460,11 @@ Minix 3 Microkernel Architecture
 |  +----------+ +----------+ +----------+ +----------+              |
 |  +--------------------------------------------------------------+ |
 |  | IPC: Synchronous message passing between servers              | |
-|  | (send, receive, sendrec â†’ kernel forwards between processes)  | |
+|  | (send, receive, sendrec → kernel forwards between processes)  | |
 |  +--------------------------------------------------------------+ |
 ====================================================================
 |  KERNEL MODE (microkernel)                                        |
-|  ~12,000 lines â†’ IPC, scheduling, interrupt handling              |
+|  ~12,000 lines → IPC, scheduling, interrupt handling              |
 |  No file systems, no device drivers, no networking in kernel      |
 |  Scheduler: priority-based with multiple queues                   |
 ====================================================================
@@ -2484,7 +2484,7 @@ typedef struct {
     };
 } message;
 
-// Kernel kernel_call() pseudo â†’ microkernel IPC
+// Kernel kernel_call() pseudo → microkernel IPC
 int kernel_call(message* m) {
     // 1. Copy message from sender's address space
     // 2. Verify recipient is valid
@@ -2497,9 +2497,9 @@ int kernel_call(message* m) {
 
 **Microkernel advantage**: A crashed file server or device driver can be restarted without crashing the entire system. In Linux, a driver crash = kernel crash (panic/Oops).
 
-**Microkernel disadvantage**: IPC overhead â†’ every file read requires a message round-trip to the file server, which is slower than direct kernel function calls in a monolithic kernel.
+**Microkernel disadvantage**: IPC overhead → every file read requires a message round-trip to the file server, which is slower than direct kernel function calls in a monolithic kernel.
 
-### seL4 â†’ Formally Verified Microkernel
+### seL4 → Formally Verified Microkernel
 
 **seL4** is the first formally verified OS kernel in existence. Developed at NICTA (now CSIRO Data61) and UNSW, it is proven correct against its abstract specification using the Isabelle/HOL theorem prover.
 
@@ -2517,11 +2517,11 @@ int kernel_call(message* m) {
 - Context switch: ~200 cycles
 - Minimal kernel: ~8,700 lines of C + 600 lines of assembly
 
-**Capability-based security**: seL4 uses **capabilities** (protected object references) for all kernel resource management. A process can only access a resource (memory, IPC endpoint, thread) if it holds a capability. No other access control mechanism exists â†’ no UIDs, no ACLs, no MAC policies. This is mathematically simpler to reason about.
+**Capability-based security**: seL4 uses **capabilities** (protected object references) for all kernel resource management. A process can only access a resource (memory, IPC endpoint, thread) if it holds a capability. No other access control mechanism exists → no UIDs, no ACLs, no MAC policies. This is mathematically simpler to reason about.
 
 ```c
 // seL4: Capability-based invocation (conceptual)
-// seL4 uses a capability-space (cspace) â†’ a protected object table
+// seL4 uses a capability-space (cspace) → a protected object table
 
 // A thread must have the capability to:
 seL4_TCB_WriteRegisters(tcb_cap,  // requires cap to TCB
@@ -2544,7 +2544,7 @@ seL4_ARM_Page_Map(page_cap, vspace_cap, vaddr,
 
 ## OS Comparison Tables
 
-### All-OS Comparison (6 OS Ãƒâ€” 15 Criteria)
+### All-OS Comparison (6 OS × 15 Criteria)
 
 | Criterion | Linux | Windows | macOS | Android | iOS | RTOS (FreeRTOS/VxWorks) |
 |-----------|-------|---------|-------|---------|-----|------------------------|
@@ -2690,33 +2690,33 @@ seL4_ARM_Page_Map(page_cap, vspace_cap, vaddr,
 ```
 START: Does your system need guaranteed timing?
   |
-  +-- YES â†’ Does it need certification (DO-178C, ISO 26262)?
+  +-- YES → Does it need certification (DO-178C, ISO 26262)?
   |     |
-  |     +-- YES â†’ VxWorks (certified) or QNX
+  |     +-- YES → VxWorks (certified) or QNX
   |     |
-  |     +-- NO â†’ Is your MCU < 256 KB RAM?
+  |     +-- NO → Is your MCU < 256 KB RAM?
   |           |
-  |           +-- YES â†’ FreeRTOS (6-12 KB kernel)
+  |           +-- YES → FreeRTOS (6-12 KB kernel)
   |           |
-  |           +-- NO â†’ Is POSIX compatibility needed?
+  |           +-- NO → Is POSIX compatibility needed?
   |                 |
-  |                 +-- YES â†’ VxWorks (POSIX PSE54) or Zephyr
+  |                 +-- YES → VxWorks (POSIX PSE54) or Zephyr
   |                 |
-  |                 +-- NO â†’ FreeRTOS (simplest)
+  |                 +-- NO → FreeRTOS (simplest)
   |
-  +-- NO â†’ Does it need a GUI or human interaction?
+  +-- NO → Does it need a GUI or human interaction?
         |
-        +-- YES â†’ Does it need a file system + networking?
+        +-- YES → Does it need a file system + networking?
         |     |
-        |     +-- YES â†’ Linux (full GPOS)
+        |     +-- YES → Linux (full GPOS)
         |     |
-        |     +-- NO â†’ Embedded Linux (Yocto/Buildroot)
+        |     +-- NO → Embedded Linux (Yocto/Buildroot)
         |
-        +-- NO â†’ Is the hardware an MCU (< 2 MB flash)?
+        +-- NO → Is the hardware an MCU (< 2 MB flash)?
               |
-              +-- YES â†’ FreeRTOS / Zephyr
+              +-- YES → FreeRTOS / Zephyr
               |
-              +-- NO â†’ Linux (even small: ~5 MB kernel minimal)
+              +-- NO → Linux (even small: ~5 MB kernel minimal)
 ```
 
 ---
@@ -2725,7 +2725,7 @@ START: Does your system need guaranteed timing?
 
 ### AWS (Amazon Web Services)
 
-AWS runs on **Linux** â†’ specifically a custom distribution called Amazon Linux (based on Fedora/RHEL). Key OS features leveraged:
+AWS runs on **Linux** → specifically a custom distribution called Amazon Linux (based on Fedora/RHEL). Key OS features leveraged:
 - **KVM**: AWS Nitro hypervisor uses KVM for virtualization
 - **cgroups/namespaces**: AWS Lambda uses Firecracker microVMs, which use Linux namespaces for isolation
 - **XFS**: Most EBS volumes use XFS for high-performance file system
@@ -2735,8 +2735,8 @@ AWS runs on **Linux** â†’ specifically a custom distribution called Amazon 
 
 ### Microsoft Azure
 
-Azure uses a **custom Linux-based OS** for its hypervisor layer (Cloud Host â†’ based on Linux with custom kernel) and **customized Windows Server** for platform services.
-- **Azure Sphere**: Custom Linux (MCE) for IoT security â†’ hardened, minimal
+Azure uses a **custom Linux-based OS** for its hypervisor layer (Cloud Host → based on Linux with custom kernel) and **customized Windows Server** for platform services.
+- **Azure Sphere**: Custom Linux (MCE) for IoT security → hardened, minimal
 - **Azure Linux** (formerly CBL-Mariner): Internal Linux distribution for container hosts (AKS)
 - **Windows Server**: Used for Azure App Service, Azure SQL legacy, Azure AD/Entra ID domain controllers
 - **Hyper-V**: Type 1 hypervisor (ring -1) runs on Windows Server
@@ -2744,14 +2744,14 @@ Azure uses a **custom Linux-based OS** for its hypervisor layer (Cloud Host â�
 ### Google Cloud Platform (GCP)
 
 - **Google's internal infrastructure**: Runs on their own custom Linux kernel (gLinux, Debian-based)
-- **Google Kubernetes Engine (GKE)**: Uses Container-Optimized OS (COS) â†’ hardened Chrome OS Linux derivative
+- **Google Kubernetes Engine (GKE)**: Uses Container-Optimized OS (COS) → hardened Chrome OS Linux derivative
 - **gVisor**: User-space kernel for container sandboxing (intercepts syscalls)
 - **Google's Borg**: Cluster manager that predates Kubernetes; uses cgroup-based isolation
 
 ### Tesla
 
 Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the main infotainment system:
-- **Infotainment (MCU)**: Ubuntu-based Linux with QT UI (Model S/X 2012-2022) â†’ Custom Linux (Model 3/Y, refreshed S/X)
+- **Infotainment (MCU)**: Ubuntu-based Linux with QT UI (Model S/X 2012-2022) → Custom Linux (Model 3/Y, refreshed S/X)
 - **Autopilot (FSD Computer)**: Custom RTOS-like environment on Tesla's FSD chip (Hardware 3.0+)
 - **ROS (Robot Operating System)**: Foundation for some vehicle control modules
 - **OTA updates**: Full system updates via OSTree (atomic, delta-update)
@@ -2799,7 +2799,7 @@ Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the
 |---------|----------|-------|-----------|-------|---------|-----|---------|---------|
 | Kernel Type | Hybrid | Monolithic + modules | Hybrid (Mach+BSD) | Monolithic | Monolithic (Linux fork) | Hybrid (XNU) | Real-time executive | Real-time kernel |
 | Scheduling | Priority + boosts (32 levels) | EEVDF/CFS | MLFQ + QoS (6 levels) | ULE scheduler | CFS + EAS + cgroups | MLFQ + QoS | Fixed-priority preempt | Fixed-priority + RMS |
-| File System | NTFS, ReFS | VFS â†’ ext4/XFS/Btrfs | APFS | UFS, ZFS | ext4, F2FS, EROFS | APFS | FAT (optional) | dosFS, TrueFFS |
+| File System | NTFS, ReFS | VFS → ext4/XFS/Btrfs | APFS | UFS, ZFS | ext4, F2FS, EROFS | APFS | FAT (optional) | dosFS, TrueFFS |
 | Process creation | CreateProcess() | fork()/clone() | fork() + Mach tasks | fork() | Zygote fork | posix_spawn() | xTaskCreate() | taskSpawn() |
 | Security | ACL, VBS, BitLocker, MIC | SELinux, AppArmor | SIP, Sandbox, AMFI | Capsicum, MAC, Jails | SELinux + permissions | Sandbox + SEP + TrustCache | None (hardware-based) | DO-178C, ARINC 653 |
 | IPC primary | ALPC, COM | Pipe, socket, shared mem, D-Bus | Mach msg, XPC | Socket, pipe, POSIX IPC | Binder (custom kernel driver) | XPC (Mach msg) | Queue, semaphore | Msg queue, semaphore |
@@ -2815,41 +2815,41 @@ Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the
 | Term | Definition |
 |------|------------|
 | **NT Kernel** | Windows NT hybrid kernel: executive + kernel + HAL |
-| **XNU** | Apple hybrid kernel (Mach + BSD + I/O Kit) â†’ "X is Not Unix" |
+| **XNU** | Apple hybrid kernel (Mach + BSD + I/O Kit) → "X is Not Unix" |
 | **HAL** | Hardware Abstraction Layer: abstracts CPU architecture for NT portability |
 | **EPROCESS** | Windows kernel process object (executive process block) |
 | **ETHREAD** | Windows kernel thread object (executive thread block) |
-| **IRQL** | Interrupt Request Level â†’ Windows interrupt prioritization scheme |
+| **IRQL** | Interrupt Request Level → Windows interrupt prioritization scheme |
 | **DISPATCH_LEVEL** | IRQL level where thread scheduling occurs (no page faults allowed) |
-| **CFS** | Completely Fair Scheduler â†’ Linux's fair scheduling algorithm (v2.6.23Ã¢â‚¬â€œv6.5) |
-| **EEVDF** | Earliest Eligible Virtual Deadline First â†’ Linux scheduler (v6.6+) |
-| **VFS** | Virtual File System â†’ Linux abstraction layer over file system implementations |
+| **CFS** | Completely Fair Scheduler → Linux's fair scheduling algorithm (v2.6.23–v6.5) |
+| **EEVDF** | Earliest Eligible Virtual Deadline First → Linux scheduler (v6.6+) |
+| **VFS** | Virtual File System → Linux abstraction layer over file system implementations |
 | **task_struct** | Linux kernel structure representing a process or thread |
 | **Zygote** | Android pre-loaded process from which all app processes fork |
 | **Binder** | Android's custom IPC mechanism (/dev/binder driver) |
 | **ashmem** | Android shared memory allocator (deprecated in favor of ION) |
-| **LMK/LMKD** | Low Memory Killer / daemon â†’ Android proactive process reclamation |
+| **LMK/LMKD** | Low Memory Killer / daemon → Android proactive process reclamation |
 | **Jetsam** | iOS memory management process killer mechanism |
-| **ART** | Android Runtime â†’ AOT + JIT compilation for Java/Kotlin apps |
-| **SEP** | Secure Enclave Processor â†’ Apple's isolated security coprocessor |
-| **AMFI** | Apple Mobile File Integrity â†’ code signing enforcement |
-| **APFS** | Apple File System â†’ COW, encrypted, snapshots, clones (2017+) |
-| **SIP** | System Integrity Protection â†’ macOS root-level file protection |
-| **QoS** | Quality of Service â†’ macOS/iOS thread priority tiers |
+| **ART** | Android Runtime → AOT + JIT compilation for Java/Kotlin apps |
+| **SEP** | Secure Enclave Processor → Apple's isolated security coprocessor |
+| **AMFI** | Apple Mobile File Integrity → code signing enforcement |
+| **APFS** | Apple File System → COW, encrypted, snapshots, clones (2017+) |
+| **SIP** | System Integrity Protection → macOS root-level file protection |
+| **QoS** | Quality of Service → macOS/iOS thread priority tiers |
 | **XPC** | Apple IPC mechanism based on Mach messages (inter-process communication) |
 | **Jails** | FreeBSD OS-level virtualization (precursor to containers) |
 | **ZFS** | Advanced FS with snapshots, checksums, pooled storage (OpenZFS) |
 | **seL4** | Formally verified microkernel (Isabelle/HOL proof) |
 | **Minix** | Educational microkernel (Tanenbaum, 1987) |
-| **DO-178C** | Avionics software safety certification (up to DAL A â†’ catastrophic failure) |
+| **DO-178C** | Avionics software safety certification (up to DAL A → catastrophic failure) |
 | **PREEMPT_RT** | Linux kernel real-time preemption patch (merged in v6.2, 2023) |
 | **Tickless idle** | FreeRTOS power-saving mode: no periodic tick between task activations |
 | **Priority inversion** | High-priority task blocked by low-priority task holding a resource |
 | **Priority inheritance** | Protocol that boosts low-priority task's priority to match blocked high-priority task |
-| **EAS** | Energy-Aware Scheduling â†’ Android/Linux scheduler for big.LITTLE power efficiency |
+| **EAS** | Energy-Aware Scheduling → Android/Linux scheduler for big.LITTLE power efficiency |
 | **ION** | Android contiguous memory allocator for GPU/camera/display |
-| **PAC** | Pointer Authentication Code â†’ ARM64e hardware security against ROP/JOP |
-| **PPL** | Page Protection Layer â†’ Apple Silicon kernel page table protection |
+| **PAC** | Pointer Authentication Code → ARM64e hardware security against ROP/JOP |
+| **PPL** | Page Protection Layer → Apple Silicon kernel page table protection |
 
 ---
 
@@ -2981,7 +2981,7 @@ Tesla vehicles run **Linux** (specifically Ubuntu-based Yocto/Buildroot) for the
 
 ---
 
-## TypeScript Implementation â€” OS Architecture Comparison Framework
+## TypeScript Implementation — OS Architecture Comparison Framework
 
 ```typescript
 /**
@@ -3211,7 +3211,7 @@ analyzer.compareByMetric('kernelType');
 
 6. Write a **C program** demonstrating priority inheritance on Linux. Create three threads at different priorities that share a mutex (use `pthread_mutexattr_setprotocol` with `PTHREAD_PRIO_INHERIT`). Show the thread execution order with and without priority inheritance. Measure execution time of each thread.
 
-7. **FreeRTOS exercise**: Write a FreeRTOS application with 3 tasks: a temperature sensor reader (2 Hz), a display update task (1 Hz), and an alert task (triggered when temperature > 50Ã‚Â°C). Use a queue to pass data between the sensor reader and the display task. Use a binary semaphore for the alert task. Measure worst-case execution time.
+7. **FreeRTOS exercise**: Write a FreeRTOS application with 3 tasks: a temperature sensor reader (2 Hz), a display update task (1 Hz), and an alert task (triggered when temperature > 50°C). Use a queue to pass data between the sensor reader and the display task. Use a binary semaphore for the alert task. Measure worst-case execution time.
 
 8. **Linux scheduling**: Write a C program that creates 5 threads at different CFS nice values (-20, -10, 0, 10, 19). Each thread performs the same CPU-bound computation. Measure how many iterations each thread completes in 10 seconds. Explain the ratio of iterations in terms of the weight map in CFS/EEVDF.
 

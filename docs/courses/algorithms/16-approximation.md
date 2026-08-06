@@ -1,6 +1,6 @@
-﻿# Chapter 16: Approximation Algorithms
+# Chapter 16: Approximation Algorithms
 
-> **Prerequisites:** [Chapter 15: NP-Completeness](./15-np-completeness.md) â€” Understanding of NP-hard problems and reductions | **Next:** [Chapter 17: Randomized Algorithms](./17-randomized.md) â€” From deterministic approximation to probabilistic methods
+> **Prerequisites:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — Understanding of NP-hard problems and reductions | **Next:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — From deterministic approximation to probabilistic methods
 
 ## Learning Objectives
 
@@ -36,9 +36,9 @@ By the end of this chapter, students will be able to:
 
 ## Why Approximation Matters
 
-Imagine you run a delivery company and need to find the shortest route visiting 10,000 cities. The optimal route would save millions in fuel â€” but finding it is NP-hard. **Is it worth waiting years for the perfect answer, or can you get within 5% of optimal in seconds?** In business, "good enough" often wins. Approximation algorithms capture this trade-off: provably close to optimal, solvable in polynomial time.
+Imagine you run a delivery company and need to find the shortest route visiting 10,000 cities. The optimal route would save millions in fuel — but finding it is NP-hard. **Is it worth waiting years for the perfect answer, or can you get within 5% of optimal in seconds?** In business, "good enough" often wins. Approximation algorithms capture this trade-off: provably close to optimal, solvable in polynomial time.
 
-**Real-world analogy:** If Google Maps can't compute the absolute shortest route for a 50-stop delivery truck, it computes a route at most 2x longer â€” in milliseconds. The driver doesn't notice, and the company saves money. That's approximation in action.
+**Real-world analogy:** If Google Maps can't compute the absolute shortest route for a 50-stop delivery truck, it computes a route at most 2x longer — in milliseconds. The driver doesn't notice, and the company saves money. That's approximation in action.
 
 ---
 
@@ -46,12 +46,12 @@ Imagine you run a delivery company and need to find the shortest route visiting 
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Approximation Ratio | ALG / OPT â‰¤ c (minimization) | Measures how close an approximation gets to optimal |
+| Approximation Ratio | ALG / OPT ≤ c (minimization) | Measures how close an approximation gets to optimal |
 | Vertex Cover | Pick both endpoints of uncovered edge | Simple 2-approximation; greedy fails worse |
 | TSP (Metric) | MST-based tour + shortcutting | 2-approximation; triangle inequality is essential |
 | Set Cover | Pick set with best cost-per-new-element | O(log n)-approximation via greedy |
 | MAX-CUT | Random assignment cuts at least half the edges | 0.5-approximation; derandomizable |
-| Knapsack PTAS | Round profits, run DP | Achieves (1+Îµ)-approximation in polynomial time |
+| Knapsack PTAS | Round profits, run DP | Achieves (1+ε)-approximation in polynomial time |
 
 ### Chapter Roadmap
 
@@ -69,7 +69,7 @@ flowchart LR
     E --> K[Greedy per-element cost]
     F --> L[Random + Derandomize]
     G --> M[Round + DP]
-    H --> N[1+Îµ scheme types]
+    H --> N[1+ε scheme types]
 ```
 
 ---
@@ -100,7 +100,7 @@ A **fully polynomial-time approximation scheme (FPTAS)** runs in time polynomial
 
 **Problem:** Find the smallest set of vertices that covers all edges.
 
-**Real-world analogy:** A city needs security cameras to monitor every street intersection (edge). Each camera covers one intersection (vertex). Two cameras are needed per street â€” one at each endpoint. The city wants to minimize cameras while covering every street. Since finding the true minimum is NP-hard, they accept a solution with at most 2x the optimal number.
+**Real-world analogy:** A city needs security cameras to monitor every street intersection (edge). Each camera covers one intersection (vertex). Two cameras are needed per street — one at each endpoint. The city wants to minimize cameras while covering every street. Since finding the true minimum is NP-hard, they accept a solution with at most 2x the optimal number.
 
 **Algorithm Steps:**
 1. Initialize an empty cover set \( C \).
@@ -113,10 +113,10 @@ A **fully polynomial-time approximation scheme (FPTAS)** runs in time polynomial
 **Pseudocode:**
 ```
 ApproxVertexCover(G(V, E)):
-    C â† âˆ…
-    while E â‰  âˆ…:
-        pick any (u, v) âˆˆ E
-        C â† C âˆª {u, v}
+    C ← ∅
+    while E ≠ ∅:
+        pick any (u, v) ∈ E
+        C ← C ∪ {u, v}
         remove all edges incident to u or v from E
     return C
 ```
@@ -129,7 +129,7 @@ Graph: 4 vertices, edges: (1-2, 2-3, 3-4, 1-4, 2-4)
 |------|-----------------|-----------|-------------|---------|
 | 1 | (1-2, 2-3, 3-4, 1-4, 2-4) | (1-2) | {1, 2} | (1-2), (1-4), (2-3), (2-4) removed |
 | 2 | (3-4) | (3-4) | {1, 2, 3, 4} | (3-4) removed |
-| 3 | âˆ… | â€” | {1, 2, 3, 4} | Done |
+| 3 | ∅ | — | {1, 2, 3, 4} | Done |
 
 Result: Cover size = 4. Optimal cover = {2, 4} (size 2). Ratio = 4/2 = 2.
 
@@ -140,7 +140,7 @@ Result: Cover size = 4. Optimal cover = {2, 4} (size 2). Ratio = 4/2 = 2.
 **Proof.** Let \( M \) be the set of edges selected by the algorithm. These edges form a matching (no two share a vertex). Every vertex cover must include at least one endpoint of each edge in \( M \), so any optimal cover has size \( |C_{\text{opt}}| \ge |M| \). The algorithm selects \( 2|M| \) vertices (both endpoints of each matched edge), so \( |C_{\text{alg}}| = 2|M| \le 2|C_{\text{opt}}| \). Hence the ratio is at most 2.
 
 **Complexity Analysis:**
-- **Time:** \( O(V + E) \) â€” each edge examined at most once; removing incident edges can be done with adjacency tracking.
+- **Time:** \( O(V + E) \) — each edge examined at most once; removing incident edges can be done with adjacency tracking.
 - **Space:** \( O(V) \) for the cover set and removed flags.
 
 ---
@@ -203,19 +203,19 @@ List<Integer> approxVertexCover(int n, int[][] edges) {
 |------------|--------------|
 | Simple to implement; only requires edge list | May select twice as many vertices as optimal |
 | Runs in O(V+E) linear time | Order-dependent; different edge orderings can give different covers |
-| Provably optimal in the sense that (2âˆ’Îµ)-approximation is NP-hard | Does not exploit degree information |
+| Provably optimal in the sense that (2−ε)-approximation is NP-hard | Does not exploit degree information |
 | Works on any undirected graph | Not suitable for weighted vertex cover |
 
 **Edge Cases:**
 - **Disconnected graph:** Works correctly; each component handled independently.
 - **Single vertex, no edges:** Returns empty cover (correct).
-- **Complete graph K<sub>n&lt;/sub&gt;:** Picks a single edge, adds 2 vertices, removes all edges. Cover size = 2, optimal = nâˆ’1. Ratio improves as n grows.
+- **Complete graph K<sub>n&lt;/sub&gt;:** Picks a single edge, adds 2 vertices, removes all edges. Cover size = 2, optimal = n−1. Ratio improves as n grows.
 
-> **Pro Tip:** The elegant proof: the selected edges form a matching, so any vertex cover must include at least one endpoint per edge. The algorithm picks both â€” hence at most 2x optimal.
+> **Pro Tip:** The elegant proof: the selected edges form a matching, so any vertex cover must include at least one endpoint per edge. The algorithm picks both — hence at most 2x optimal.
 >
 > **Remember:** The greedy algorithm that picks the highest-degree vertex has a worse approximation ratio (O(log n)). The matching-based approach is simpler and better.
 
-**One-Sentence Takeaway:** The maximal-matching algorithm achieves a 2-approximation for vertex cover by selecting both endpoints of each matched edge â€” a canonical example of a pairing argument.
+**One-Sentence Takeaway:** The maximal-matching algorithm achieves a 2-approximation for vertex cover by selecting both endpoints of each matched edge — a canonical example of a pairing argument.
 
 ---
 
@@ -235,9 +235,9 @@ List<Integer> approxVertexCover(int n, int[][] edges) {
 **Pseudocode:**
 ```
 ApproxTSP(G):
-    T â† MST(G)
-    order â† preorder_walk(T)
-    tour â† order + [order[0]]
+    T ← MST(G)
+    order ← preorder_walk(T)
+    tour ← order + [order[0]]
     return tour
 ```
 
@@ -259,7 +259,7 @@ For a worse case: optimal might be A-C-B-D-A, but shortcutting preserves the bou
 
 **Theorem 16.2.** The MST-based algorithm is a 2-approximation for metric TSP.
 
-**Proof.** Let \( c(T) \) be the MST cost. The optimal tour \( C_{\text{opt}} \) has cost at least \( c(T) \) â€” removing any edge from the tour leaves a spanning tree, so OPT â‰¥ MST cost. A depth-first walk of the MST traverses each edge twice, giving cost \( 2c(T) \). Using the triangle inequality, shortcutting repeated vertices does not increase the cost. Thus \( c(C_{\text{alg}}) \le 2c(T) \le 2c(C_{\text{opt}}) \).
+**Proof.** Let \( c(T) \) be the MST cost. The optimal tour \( C_{\text{opt}} \) has cost at least \( c(T) \) — removing any edge from the tour leaves a spanning tree, so OPT ≥ MST cost. A depth-first walk of the MST traverses each edge twice, giving cost \( 2c(T) \). Using the triangle inequality, shortcutting repeated vertices does not increase the cost. Thus \( c(C_{\text{alg}}) \le 2c(T) \le 2c(C_{\text{opt}}) \).
 
 **Christofides' algorithm** improves this to a 1.5-approximation by combining an MST with a minimum-weight perfect matching on odd-degree vertices.
 
@@ -382,7 +382,7 @@ void dfs(int u, int p, List<Integer>[] mst, List<Integer> tour) {
 |------------|--------------|
 | Simple: MST + DFS are standard textbook algorithms | Requires triangle inequality; fails on general graphs |
 | 2-approximation guarantee is easy to prove | Christofides gives 1.5-approx with similar ideas |
-| Runs in O(VÂ²) time, practical up to thousands of nodes | Not suitable for asymmetric TSP |
+| Runs in O(V²) time, practical up to thousands of nodes | Not suitable for asymmetric TSP |
 | Forms the foundation for Christofides' improvement | May produce tours with self-intersections in Euclidean space |
 
 **Edge Cases:**
@@ -390,7 +390,7 @@ void dfs(int u, int p, List<Integer>[] mst, List<Integer> tour) {
 - **Collinear points:** Works; shortcutting may skip intermediate stops.
 - **Complete graph with uniform distances:** Returns any permutation tour; all tours equal cost.
 
-> **Pro Tip:** For Euclidean TSP in the plane, there exists a PTAS (Arora 1998) that achieves (1+Îµ)-approximation using divide-and-conquer with dynamic programming.
+> **Pro Tip:** For Euclidean TSP in the plane, there exists a PTAS (Arora 1998) that achieves (1+ε)-approximation using divide-and-conquer with dynamic programming.
 >
 > **Warning:** The 2-approximation does NOT work for general TSP (without triangle inequality). In general TSP, no polynomial-time constant-factor approximation exists unless P = NP.
 
@@ -406,7 +406,7 @@ void dfs(int u, int p, List<Integer>[] mst, List<Integer> tour) {
 **Algorithm Steps:**
 1. Initialize `uncovered` = all elements, `cover` = empty set.
 2. While `uncovered` is not empty:
-   a. Find the subset \( S_i \) that minimizes cost(\( S_i \)) / |\( S_i \) âˆ© uncovered| (cost per new element).
+   a. Find the subset \( S_i \) that minimizes cost(\( S_i \)) / |\( S_i \) ∩ uncovered| (cost per new element).
    b. Add \( S_i \) to the cover.
    c. Remove all elements of \( S_i \) from `uncovered`.
 3. Return the cover.
@@ -414,12 +414,12 @@ void dfs(int u, int p, List<Integer>[] mst, List<Integer> tour) {
 **Pseudocode:**
 ```
 GreedySetCover(U, S):
-    uncovered â† U
-    cover â† âˆ…
-    while uncovered â‰  âˆ…:
-        pick S_i minimizing cost(S_i) / |S_i âˆ© uncovered|
-        cover â† cover âˆª {S_i}
-        uncovered â† uncovered \ S_i
+    uncovered ← U
+    cover ← ∅
+    while uncovered ≠ ∅:
+        pick S_i minimizing cost(S_i) / |S_i ∩ uncovered|
+        cover ← cover ∪ {S_i}
+        uncovered ← uncovered \ S_i
     return cover
 ```
 
@@ -432,13 +432,13 @@ Universe: {1, 2, 3, 4, 5}. Subsets: S1={1,2,3} cost=3, S2={2,4} cost=2, S3={3,4}
 | 1 | {1,2,3,4,5} | S1=3/3=1, S2=2/2=1, S3=4/2=2, S4=1/2=0.5 | S4 | {1,2,3} | 1 |
 | 2 | {1,2,3} | S1=3/3=1, S2=2/1=2, S3=4/1=4 | S1 | {} | 4 |
 
-Cover = {S4, S1}, total cost = 4. Optimal cover = {S2, S4} cost = 3. Ratio = 4/3 â‰ˆ 1.33.
+Cover = {S4, S1}, total cost = 4. Optimal cover = {S2, S4} cost = 3. Ratio = 4/3 ≈ 1.33.
 
 ---
 
 **Theorem 16.3.** The greedy set cover algorithm achieves an approximation ratio of \( H_n = \sum_{i=1}^n 1/i \approx \ln n + \gamma \).
 
-**Proof.** When the optimal cover has cost \( C_{\text{opt}} \), at any step there must exist a set with cost per uncovered element at most \( C_{\text{opt}} / |\text{uncovered}| \). The greedy algorithm picks at least this efficiently. Summing the harmonic series gives the bound. Formal proof: assign each element a "price" equal to the cost-per-new-element of the set that covers it. The total cost of the greedy is the sum of these prices. Since OPT â‰¤ C_opt, each element's price is bounded by C_opt / (remaining elements at that stage). Summing over elements yields C_opt Â· H_n.
+**Proof.** When the optimal cover has cost \( C_{\text{opt}} \), at any step there must exist a set with cost per uncovered element at most \( C_{\text{opt}} / |\text{uncovered}| \). The greedy algorithm picks at least this efficiently. Summing the harmonic series gives the bound. Formal proof: assign each element a "price" equal to the cost-per-new-element of the set that covers it. The total cost of the greedy is the sum of these prices. Since OPT ≤ C_opt, each element's price is bounded by C_opt / (remaining elements at that stage). Summing over elements yields C_opt · H_n.
 
 **Tightness:** There exist instances where the greedy algorithm achieves exactly \( \ln n \) approximation.
 
@@ -560,7 +560,7 @@ double greedySetCover(List<Set<Integer>> subsets, double[] costs, int universeSi
 
 **Problem:** Given an undirected graph, partition the vertices into two sets such that the number of edges crossing between the sets is maximized.
 
-**Real-world analogy:** A social network wants to split users into two test groups for an A/B test such that as many friend connections as possible are between the two groups (to measure cross-group influence). Random assignment works surprisingly well â€” at least half the edges always cross the cut in expectation.
+**Real-world analogy:** A social network wants to split users into two test groups for an A/B test such that as many friend connections as possible are between the two groups (to measure cross-group influence). Random assignment works surprisingly well — at least half the edges always cross the cut in expectation.
 
 **Algorithm Steps:**
 1. Randomly assign each vertex to set A or B with probability 1/2.
@@ -593,12 +593,12 @@ Expected value = (2+2+2+0)/4 = 1.5. Optimal cut = 2. Expected ratio = 0.75.
 
 **Theorem 16.4.** The random assignment algorithm achieves an expected 0.5-approximation for MAX-CUT.
 
-**Proof.** For each edge (u,v), the probability that u and v are in different sets is 1/2. By linearity of expectation, the expected number of crossing edges = m/2, where m is the total number of edges. The maximum possible cut is at most m, so E[ALG] â‰¥ m/2 â‰¥ OPT/2. Thus the expected approximation ratio is at least 1/2.
+**Proof.** For each edge (u,v), the probability that u and v are in different sets is 1/2. By linearity of expectation, the expected number of crossing edges = m/2, where m is the total number of edges. The maximum possible cut is at most m, so E[ALG] ≥ m/2 ≥ OPT/2. Thus the expected approximation ratio is at least 1/2.
 
 **Derandomization using the method of conditional expectations:** Process vertices one at a time. When assigning vertex v, compute the conditional expectation of crossing edges for each choice (A or B), given the assignments so far. Choose the option with higher conditional expectation. This guarantees at least m/2 crossing edges deterministically.
 
 **Complexity Analysis:**
-- **Time:** \( O(V + E) \) â€” one pass to assign, one pass to count.
+- **Time:** \( O(V + E) \) — one pass to assign, one pass to count.
 - **Space:** \( O(V) \) for the assignment array.
 
 **Implementations:**
@@ -653,8 +653,8 @@ int randomMAXCUT(int n, int[][] edges) {
 
 **Edge Cases:**
 - **Empty graph:** Returns 0 (correct).
-- **Complete graph K<sub>n&lt;/sub&gt;:** Expected cut = n(nâˆ’1)/4. Optimal = floor(nÂ²/4). Ratio â†’ 1 as n â†’ âˆž.
-- **Bipartite graph:** Optimal cut = all edges. Random achieves m/2 in expectation â€” ratio = 0.5.
+- **Complete graph K<sub>n&lt;/sub&gt;:** Expected cut = n(n−1)/4. Optimal = floor(n²/4). Ratio → 1 as n → ∞.
+- **Bipartite graph:** Optimal cut = all edges. Random achieves m/2 in expectation — ratio = 0.5.
 
 > **Remember:** The Goemans-Williamson algorithm achieves 0.878-approximation using semidefinite programming, but that's beyond the scope of this chapter.
 
@@ -665,7 +665,7 @@ int randomMAXCUT(int n, int[][] edges) {
 
 **Problem:** Given n items with weights w_i and profits p_i, and a capacity W, select a subset maximizing total profit without exceeding capacity.
 
-**Real-world analogy:** A trucking company must choose which cargo items to load. Computing the optimal selection is NP-hard (subset sum). But a (1+Îµ)-approximation can be computed quickly by rounding profits to the nearest ÎµÂ·P_max/n, then running standard DP on the reduced profit space.
+**Real-world analogy:** A trucking company must choose which cargo items to load. Computing the optimal selection is NP-hard (subset sum). But a (1+ε)-approximation can be computed quickly by rounding profits to the nearest ε·P_max/n, then running standard DP on the reduced profit space.
 
 **Algorithm Steps (FPTAS via Profit Scaling):**
 1. Let \( P_{\max} = \max_i p_i \) and \( \varepsilon > 0 \).
@@ -673,51 +673,51 @@ int randomMAXCUT(int n, int[][] edges) {
 3. For each item, define scaled profit \( p'_i = \lfloor p_i / K \rfloor \).
 4. Run standard 0/1 Knapsack DP on the scaled profits with a maximum total scaled profit of \( \sum p'_i \):
    - DP[i][v] = minimum weight to achieve scaled profit v using first i items.
-5. Find the maximum v such that DP[n][v] â‰¤ W.
+5. Find the maximum v such that DP[n][v] ≤ W.
 6. Return the corresponding original profit.
 
 **Pseudocode:**
 ```
-ApproxKnapsack(items, W, Îµ):
-    Pmax â† max_i p_i
-    K â† Îµ Â· Pmax / n
+ApproxKnapsack(items, W, ε):
+    Pmax ← max_i p_i
+    K ← ε · Pmax / n
     for each item i:
-        p'_i â† floor(p_i / K)
-    maxV â† sum p'_i
-    dp[0..n][0..maxV] â† âˆž
-    dp[0][0] â† 0
-    for i â† 1 to n:
-        for v â† 0 to maxV:
-            dp[i][v] â† dp[i-1][v]
-            if v â‰¥ p'_i:
-                dp[i][v] â† min(dp[i][v], dp[i-1][v - p'_i] + w_i)
-    best â† max v where dp[n][v] â‰¤ W
-    return best Â· K
+        p'_i ← floor(p_i / K)
+    maxV ← sum p'_i
+    dp[0..n][0..maxV] ← ∞
+    dp[0][0] ← 0
+    for i ← 1 to n:
+        for v ← 0 to maxV:
+            dp[i][v] ← dp[i-1][v]
+            if v ≥ p'_i:
+                dp[i][v] ← min(dp[i][v], dp[i-1][v - p'_i] + w_i)
+    best ← max v where dp[n][v] ≤ W
+    return best · K
 ```
 
 **Step-by-Step Dry Run:**
 
-Items: (p=100, w=10), (p=60, w=8), (p=40, w=5), (p=20, w=3). W = 15. Îµ = 0.5.
+Items: (p=100, w=10), (p=60, w=8), (p=40, w=5), (p=20, w=3). W = 15. ε = 0.5.
 
 | Step | Computation | Result |
 |------|-------------|--------|
-| 1 | P_max = 100 | K = 0.5 Ã— 100 / 4 = 12.5 |
+| 1 | P_max = 100 | K = 0.5 × 100 / 4 = 12.5 |
 | 2 | Scaled profits | p' = [8, 4, 3, 1] |
 | 3 | Run DP on scaled profits | DP array of size [5][17] |
-| 4 | Find max v with weight â‰¤ 15 | v = 12 (items 1,2,3) |
-| 5 | Return original profit | Estimated = 12 Ã— 12.5 = 150 |
+| 4 | Find max v with weight ≤ 15 | v = 12 (items 1,2,3) |
+| 5 | Return original profit | Estimated = 12 × 12.5 = 150 |
 
 Original profit = 100 + 60 + 40 = 200. Ratio = 200/200 = 1 (this instance is exact due to scaling alignment).
 
 ---
 
-**Theorem 16.5.** The profit-scaling algorithm is a (1+Îµ)-approximation for 0/1 Knapsack.
+**Theorem 16.5.** The profit-scaling algorithm is a (1+ε)-approximation for 0/1 Knapsack.
 
-**Proof.** Let OPT be the optimal profit. For each item in OPT, the rounding error is at most K per item, so the total error â‰¤ nÂ·K = ÎµÂ·P_max â‰¤ ÎµÂ·OPT (since P_max â‰¤ OPT). Thus ALG â‰¥ OPT âˆ’ ÎµÂ·OPT = (1âˆ’Îµ)Â·OPT. The standard DP runs in O(nÂ²/Îµ) time, which is polynomial in n and 1/Îµ.
+**Proof.** Let OPT be the optimal profit. For each item in OPT, the rounding error is at most K per item, so the total error ≤ n·K = ε·P_max ≤ ε·OPT (since P_max ≤ OPT). Thus ALG ≥ OPT − ε·OPT = (1−ε)·OPT. The standard DP runs in O(n²/ε) time, which is polynomial in n and 1/ε.
 
 **Complexity Analysis:**
-- **Time:** \( O(n^2 / \varepsilon) \) â€” DP table size is n Ã— (nÂ·P_max / K) = n Ã— (nÂ²/Îµ).
-- **Space:** \( O(n^2 / \varepsilon) \) â€” can be reduced to \( O(n / \varepsilon) \) with 1D DP.
+- **Time:** \( O(n^2 / \varepsilon) \) — DP table size is n × (n·P_max / K) = n × (n²/ε).
+- **Space:** \( O(n^2 / \varepsilon) \) — can be reduced to \( O(n / \varepsilon) \) with 1D DP.
 
 **Implementations:**
 
@@ -794,14 +794,14 @@ double approxKnapsack(int[] profit, int[] weight, int W, double eps) {
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Achieves (1+Îµ)-approximation for any Îµ > 0 | DP table size grows as O(nÂ²/Îµ); large Îµ needed for small instances |
-| FPTAS: polynomial in both n and 1/Îµ | Profit rounding introduces approximation error |
+| Achieves (1+ε)-approximation for any ε > 0 | DP table size grows as O(n²/ε); large ε needed for small instances |
+| FPTAS: polynomial in both n and 1/ε | Profit rounding introduces approximation error |
 | Builds on standard 0/1 Knapsack DP | Does not extend to other packing problems easily |
-| Tunable: smaller Îµ = better accuracy but slower | Not suitable for fractional or unbounded variants |
+| Tunable: smaller ε = better accuracy but slower | Not suitable for fractional or unbounded variants |
 
 **Edge Cases:**
-- **Îµ very small (0.01):** Large DP table; algorithm becomes slow but highly accurate.
-- **Îµ â‰¥ 1:** K becomes large; approximation guarantee weakens.
+- **ε very small (0.01):** Large DP table; algorithm becomes slow but highly accurate.
+- **ε ≥ 1:** K becomes large; approximation guarantee weakens.
 - **Single item:** DP finds it directly; optimal.
 - **All items fit:** DP returns total profit; optimal.
 
@@ -810,18 +810,18 @@ double approxKnapsack(int[] profit, int[] weight, int W, double eps) {
 ### 16.7 Approximation Scheme Types: PTAS vs FPTAS
 
 
-Both PTAS and FPTAS give (1+Îµ)-approximation, but the running time differs crucially.
+Both PTAS and FPTAS give (1+ε)-approximation, but the running time differs crucially.
 
 | Feature | PTAS | FPTAS |
 |---------|------|-------|
-| Running Time | \( O(n^{f(1/\varepsilon)}) \) â€” polynomial in n, arbitrary in \( 1/\varepsilon \) | \( O(n^c \cdot g(1/\varepsilon)) \) â€” polynomial in both |
+| Running Time | \( O(n^{f(1/\varepsilon)}) \) — polynomial in n, arbitrary in \( 1/\varepsilon \) | \( O(n^c \cdot g(1/\varepsilon)) \) — polynomial in both |
 | Example | Euclidean TSP PTAS: \( O(n^{O(1/\varepsilon)}) \) | Knapsack FPTAS: \( O(n^2/\varepsilon) \) |
-| Practicality | Impractical for small Îµ (exponent grows) | Practical for moderate Îµ |
+| Practicality | Impractical for small ε (exponent grows) | Practical for moderate ε |
 | Existence | Many NP-hard problems have a PTAS | FPTAS requires more structure (Knapsack, Subset Sum) |
 
 **When to use which:**
-- **PTAS** is sufficient when Îµ is fixed in advance (e.g., Îµ = 0.1 for all deployments). The exponential in 1/Îµ is a constant factor.
-- **FPTAS** is needed when Îµ is an input parameter that can vary. Without it, the runtime blows up for small Îµ.
+- **PTAS** is sufficient when ε is fixed in advance (e.g., ε = 0.1 for all deployments). The exponential in 1/ε is a constant factor.
+- **FPTAS** is needed when ε is an input parameter that can vary. Without it, the runtime blows up for small ε.
 
 ---
 
@@ -851,10 +851,10 @@ Both PTAS and FPTAS give (1+Îµ)-approximation, but the running time differs cr
 
 ### Key Interview Questions
 
-1. **"Design a 2-approximation for Vertex Cover."** â€” Start with maximal matching, prove via pairing argument. Mention that (2âˆ’Îµ) is NP-hard.
-2. **"Why does TSP need the triangle inequality?"** â€” Without it, you can't shortcut without increasing cost. General TSP has no constant-factor approximation.
-3. **"What is the greedy ratio for Set Cover?"** â€” O(log n). Construct a tight example with exponentially sized sets.
-4. **"How do you derandomize MAX-CUT?"** â€” Method of conditional expectations: assign vertices one by one, always choosing the side that maximizes the conditional expectation given past assignments.
+1. **"Design a 2-approximation for Vertex Cover."** — Start with maximal matching, prove via pairing argument. Mention that (2−ε) is NP-hard.
+2. **"Why does TSP need the triangle inequality?"** — Without it, you can't shortcut without increasing cost. General TSP has no constant-factor approximation.
+3. **"What is the greedy ratio for Set Cover?"** — O(log n). Construct a tight example with exponentially sized sets.
+4. **"How do you derandomize MAX-CUT?"** — Method of conditional expectations: assign vertices one by one, always choosing the side that maximizes the conditional expectation given past assignments.
 
 ---
 
@@ -867,7 +867,7 @@ Both PTAS and FPTAS give (1+Îµ)-approximation, but the running time differs cr
 | **Ad Placement (Google Ads)** | Splitting ad slots between classes of advertisers | MAX-CUT / Goemans-Williamson | Random assignment guarantees 50% cross-traffic; SDP improves to 87.8% |
 | **Network Monitoring** | Placing monitors on network nodes to watch all links | Vertex Cover 2-approx | Each monitor watches incident links; factor-2 solution is deployable in hardware |
 | **Genome Assembly** | Choosing shortest superstring | Greedy approximation (4-approx) | Each read overlaps with others; assembly cost is within factor 4 of optimal |
-| **Resource Allocation** | Selecting projects under budget constraint | Knapsack FPTAS | Profit scaling gives (1+Îµ)-approx, critical when budgets are tight |
+| **Resource Allocation** | Selecting projects under budget constraint | Knapsack FPTAS | Profit scaling gives (1+ε)-approx, critical when budgets are tight |
 
 ---
 
@@ -985,20 +985,20 @@ double greedySetCover(const std::vector<std::unordered_set<int>>& subsets,
 | Christofides | Metric TSP | 1.5 | MST + perfect matching on odd vertices | N/A |
 | Greedy Set Cover | Set Cover | O(log n) | Min cost-per-new-element ratio | N/A |
 | Random MAX-CUT | MAX-CUT | 0.5 | Random assignment to two sets | Conditional expectation |
-| Profit-Scaling Knapsack | 0/1 Knapsack | 1+Îµ | Round profits, run DP on scaled values | N/A (deterministic) |
+| Profit-Scaling Knapsack | 0/1 Knapsack | 1+ε | Round profits, run DP on scaled values | N/A (deterministic) |
 
 ### Quick Reference
 
 | Category | Key Points |
 |----------|------------|
 | **Approximation Ratio** | ALG/OPT for minimization; OPT/ALG for maximization; always >= 1 |
-| **PTAS vs FPTAS** | PTAS poly in n (exp in 1/Îµ); FPTAS poly in both n and 1/Îµ |
+| **PTAS vs FPTAS** | PTAS poly in n (exp in 1/ε); FPTAS poly in both n and 1/ε |
 | **Vertex Cover** | Pick both endpoints of a maximal matching edge; ratio = 2 |
 | **Metric TSP** | MST cost &lt;= OPT; double + DFS + shortcut gives 2x |
 | **Christofides** | MST + perfect matching on odd-degree vertices = 1.5x |
 | **Set Cover** | Greedy picks min cost-per-new-element; O(log n) ratio |
 | **MAX-CUT** | Random assignment = 0.5-approx; conditional expectations derandomizes |
-| **Knapsack FPTAS** | Round profits to p'/K, DP on scaled values, return KÂ·bestV |
+| **Knapsack FPTAS** | Round profits to p'/K, DP on scaled values, return K·bestV |
 
 ### Cross-Application Matrix
 
@@ -1041,7 +1041,7 @@ double greedySetCover(const std::vector<std::unordered_set<int>>& subsets,
 7. Construct an instance where the maximal-matching vertex cover achieves exactly ratio 2.
 8. Apply greedy set cover to the universe {1,2,3,4,5} and subsets S1={1,2,3}, S2={2,4}, S3={3,4}, S4={4,5}. Compute the approximation ratio on this instance.
 9. Derandomize the MAX-CUT random assignment algorithm using the method of conditional expectations.
-10. Run the Knapsack FPTAS on items with profits [50, 30, 20, 10], weights [5, 4, 3, 2], W = 8, Îµ = 0.4. Show each step.
+10. Run the Knapsack FPTAS on items with profits [50, 30, 20, 10], weights [5, 4, 3, 2], W = 8, ε = 0.4. Show each step.
 
 ### Challenge Problem
 
@@ -1078,42 +1078,42 @@ B) The triangle inequality ensures that skipping repeated vertices (shortcutting
 **Q3.** What is the approximation ratio of greedy set cover?
 
 - A) 2
-- B) logâ‚‚ n
-- C) H_n â‰ˆ ln n
+- B) log₂ n
+- C) H_n ≈ ln n
 - D) 1.5
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) The greedy set cover achieves H_n â‰ˆ ln n + Î³, which is optimal up to constant factors unless P = NP.
+C) The greedy set cover achieves H_n ≈ ln n + γ, which is optimal up to constant factors unless P = NP.
 </details>
 
 **Q4.** What distinguishes an FPTAS from a PTAS?
 
 - A) FPTAS is faster
-- B) FPTAS runs in time polynomial in both n and 1/Îµ
+- B) FPTAS runs in time polynomial in both n and 1/ε
 - C) FPTAS achieves a better approximation ratio
 - D) FPTAS only works for maximization problems
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) FPTAS runs in time polynomial in both n and 1/Îµ, while PTAS can be exponential in 1/Îµ.
+B) FPTAS runs in time polynomial in both n and 1/ε, while PTAS can be exponential in 1/ε.
 </details>
 
 **Q5.** In the Knapsack FPTAS, what does the scaling factor K equal?
 
-- A) Îµ Â· W / n
-- B) Îµ Â· P_max / n
-- C) Îµ Â· n / P_max
-- D) P_max / (Îµ Â· n)
+- A) ε · W / n
+- B) ε · P_max / n
+- C) ε · n / P_max
+- D) P_max / (ε · n)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) K = Îµ Â· P_max / n, which bounds the total rounding error to Îµ Â· P_max â‰¤ Îµ Â· OPT.
+B) K = ε · P_max / n, which bounds the total rounding error to ε · P_max ≤ ε · OPT.
 </details>
 
 ---
 
-> **Pro Tip:** Approximation algorithms are the theoretical foundation for why NP-hard problems can still be solved usefully in practice. Every major tech company uses them â€” from Google Maps (TSP approximations) to AWS (set cover for VM packing).
+> **Pro Tip:** Approximation algorithms are the theoretical foundation for why NP-hard problems can still be solved usefully in practice. Every major tech company uses them — from Google Maps (TSP approximations) to AWS (set cover for VM packing).
 >
 > **Warning:** Always check whether your problem has a constant-factor approximation before implementing a heuristic. Some problems (clique, general TSP, graph coloring) resist any constant-factor approximation.
 >

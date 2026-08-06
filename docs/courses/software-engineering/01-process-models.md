@@ -1,8 +1,8 @@
-﻿# Software Process Models
+# Software Process Models
 
 ## Learning Objectives
 
-> âœ… After completing this chapter, the student will be able to:
+> ✅ After completing this chapter, the student will be able to:
 > - Differentiate between a software process and a process model
 > - Describe the activities common to all software processes
 > - Explain the Waterfall model and identify its limitations
@@ -43,10 +43,10 @@
 
 A software process is a structured set of activities required to develop a software system. These activities typically include:
 
-- **Specification** â€” defining what the system should do
-- **Design and implementation** â€” defining the system architecture and writing code
-- **Validation** â€” checking that the system does what the customer requires
-- **Evolution** â€” modifying the system in response to changing needs
+- **Specification** — defining what the system should do
+- **Design and implementation** — defining the system architecture and writing code
+- **Validation** — checking that the system does what the customer requires
+- **Evolution** — modifying the system in response to changing needs
 
 A **software process model** is an abstract representation of a process that describes how these activities are organised and enacted. Process models range from highly structured, plan-driven approaches to flexible, iterative approaches. The choice of process model depends on project characteristics including size, complexity, requirements stability, team expertise, and organisational culture.
 
@@ -98,7 +98,7 @@ graph LR
 
 **When to use:** Projects with stable requirements, simple systems, small teams, or when regulatory documentation requirements are stringent.
 
-### Waterfall vs Agile â€” Detailed Comparison
+### Waterfall vs Agile — Detailed Comparison
 
 | Dimension | Waterfall | Agile |
 |-----------|-----------|-------|
@@ -197,17 +197,17 @@ graph TD
 
 Each loop has four quadrants:
 1. **Determining objectives, alternatives, and constraints**
-2. **Evaluating alternatives and resolving risks** â€” prototyping and simulation
-3. **Developing and verifying the product** â€” design, code, test
-4. **Planning the next phase** â€” review and commitment
+2. **Evaluating alternatives and resolving risks** — prototyping and simulation
+3. **Developing and verifying the product** — design, code, test
+4. **Planning the next phase** — review and commitment
 
 **Risk analysis** is the distinguishing feature. Major risks are identified and analysed in each loop. Risk-driven prototyping resolves high-risk issues before committing to full-scale development.
 
 **Risk Analysis Example:** Consider a drone navigation system using the Spiral model:
-- **Loop 1 (Concept):** Risk â€” GPS accuracy in urban canyons. Mitigation â€” prototype with sensor fusion (GPS + IMU + vision).
-- **Loop 2 (Requirements):** Risk â€” real-time performance constraints. Mitigation â€” timing analysis simulation.
-- **Loop 3 (Design):** Risk â€” fault tolerance under motor failure. Mitigation â€” implement redundancy and test with fault injection.
-- **Loop 4 (Implementation):** Risk â€” integration with legacy ground station. Mitigation â€” staged integration with mock interfaces.
+- **Loop 1 (Concept):** Risk — GPS accuracy in urban canyons. Mitigation — prototype with sensor fusion (GPS + IMU + vision).
+- **Loop 2 (Requirements):** Risk — real-time performance constraints. Mitigation — timing analysis simulation.
+- **Loop 3 (Design):** Risk — fault tolerance under motor failure. Mitigation — implement redundancy and test with fault injection.
+- **Loop 4 (Implementation):** Risk — integration with legacy ground station. Mitigation — staged integration with mock interfaces.
 
 **When to use:** Large, complex systems where risk management is critical. The model relies on skilled risk assessment and may be impractical for small projects.
 
@@ -271,7 +271,7 @@ The accompanying **twelve principles** emphasise:
 - Working software as the primary measure of progress
 - Sustainable development pace
 - Technical excellence and good design
-- Simplicity â€” maximising work not done
+- Simplicity — maximising work not done
 - Self-organising teams produce the best architectures
 - Regular reflection and adjustment
 
@@ -351,10 +351,10 @@ graph TD
 
 Many real-world organisations adopt a **Water-Scrum-Fall** hybrid: upfront Waterfall-style requirements and architecture, Scrum-based development sprints, and a formal Waterfall-style deployment and maintenance phase.
 
-**Case Study â€” Financial Regulatory Platform:**
-- **Phase 1 (Waterfall â€” 3 months):** Requirements specification, regulatory compliance analysis, architecture design. Deliverable: 200-page SRS, architecture document.
-- **Phase 2 (Scrum â€” 8 months):** 4-week sprints. Backlog of 300+ stories. Team of 12 developers, 2 testers, 1 PO, 1 Scrum Master. Velocity stabilised at 25 SP/sprint.
-- **Phase 3 (Waterfall â€” 2 months):** System integration testing, security audit, deployment, knowledge transfer.
+**Case Study — Financial Regulatory Platform:**
+- **Phase 1 (Waterfall — 3 months):** Requirements specification, regulatory compliance analysis, architecture design. Deliverable: 200-page SRS, architecture document.
+- **Phase 2 (Scrum — 8 months):** 4-week sprints. Backlog of 300+ stories. Team of 12 developers, 2 testers, 1 PO, 1 Scrum Master. Velocity stabilised at 25 SP/sprint.
+- **Phase 3 (Waterfall — 2 months):** System integration testing, security audit, deployment, knowledge transfer.
 - **Result:** On-time delivery (13 months), 85% of requirements met in first release, remaining 15% as deferred scope.
 
 ### Kanban
@@ -362,11 +362,11 @@ Many real-world organisations adopt a **Water-Scrum-Fall** hybrid: upfront Water
 Kanban is a flow-based method that focuses on visualising work, limiting work in progress (WIP), and managing flow. Unlike Scrum, Kanban does not prescribe time-boxed iterations. Changes can be deployed continuously as soon as they are ready.
 
 **Kanban Practices:**
-- **Visualise the workflow** â€” typically with a column-based board (To Do, In Progress, Review, Done)
-- **Limit WIP** â€” cap the number of items in each column to expose bottlenecks
-- **Manage flow** â€” track lead time and cycle time
-- **Make policies explicit** â€” define when items move between columns
-- **Improve collaboratively** â€” retrospectives and metrics-driven improvements
+- **Visualise the workflow** — typically with a column-based board (To Do, In Progress, Review, Done)
+- **Limit WIP** — cap the number of items in each column to expose bottlenecks
+- **Manage flow** — track lead time and cycle time
+- **Make policies explicit** — define when items move between columns
+- **Improve collaboratively** — retrospectives and metrics-driven improvements
 
 ### DevSecOps
 
@@ -626,7 +626,7 @@ console.log(tracker.getVelocityTrend());
 ### Example 3: COCOMO Time Estimation Tool
 
 ```typescript
-// Constructive Cost Model (COCOMO) â€” Basic
+// Constructive Cost Model (COCOMO) — Basic
 type ProjectMode = 'organic' | 'semi-detached' | 'embedded';
 
 interface COCOMOResult {
@@ -682,7 +682,7 @@ console.log(cocomo.estimate(projectKLOC, mode));
 console.log(cocomo.estimateWithConfidence(projectKLOC));
 ```
 
-### Example 4: ProcessModelSelector â€” Decision Engine
+### Example 4: ProcessModelSelector — Decision Engine
 
 ```typescript
 interface ProjectProfile {
@@ -1026,56 +1026,56 @@ A large retail bank replaced its core banking system using a Water-Scrum-Fall hy
 
 ## Summary
 
-Software process models provide structure and guidance for development activities, but no single model is appropriate for all projects. The Waterfall model offers simplicity but lacks flexibility. The V-model emphasises verification and traceability, making it essential in safety-critical domains. Incremental and iterative approaches deliver early value and accommodate change. The Spiral model incorporates explicit risk management, making it suitable for high-risk, complex systems. The Unified Process provides an iterative, architecture-centric framework with disciplined phases. Agile methods â€” Scrum, XP, and Kanban â€” prioritise people, working software, and responsiveness to change over rigid processes.
+Software process models provide structure and guidance for development activities, but no single model is appropriate for all projects. The Waterfall model offers simplicity but lacks flexibility. The V-model emphasises verification and traceability, making it essential in safety-critical domains. Incremental and iterative approaches deliver early value and accommodate change. The Spiral model incorporates explicit risk management, making it suitable for high-risk, complex systems. The Unified Process provides an iterative, architecture-centric framework with disciplined phases. Agile methods — Scrum, XP, and Kanban — prioritise people, working software, and responsiveness to change over rigid processes.
 
-In practice, many organisations adopt hybrid models that blend plan-driven and agile elements. The Water-Scrum-Fall model is increasingly common: upfront architecture design, agile development sprints, and formal release management. Process selection should be a deliberate, criteria-driven decision based on requirements stability, risk profile, regulatory constraints, team capability, and organisational context. The most important lesson is that process is a tool, not a goal â€” any model can and should be adapted to the specific needs of the project and team.
+In practice, many organisations adopt hybrid models that blend plan-driven and agile elements. The Water-Scrum-Fall model is increasingly common: upfront architecture design, agile development sprints, and formal release management. Process selection should be a deliberate, criteria-driven decision based on requirements stability, risk profile, regulatory constraints, team capability, and organisational context. The most important lesson is that process is a tool, not a goal — any model can and should be adapted to the specific needs of the project and team.
 
 ## Practical Takeaways
 
-1. **No single model fits all projects** â€” evaluate requirements stability, risk profile, and team size before choosing
-2. **Hybrid models are the norm** â€” most real projects blend plan-driven and agile elements (e.g., Water-Scrum-Fall)
-3. **Risk-driven selection** â€” high-risk projects need more iterative feedback loops and explicit risk management
-4. **Regulatory constraints matter** â€” safety-critical domains often mandate V-model or strict documentation practices
-5. **Start agile, add ceremony as needed** â€” begin with Scrum/XP, introduce formal documentation only where justified
-6. **Process is a tool, not a goal** â€” any model must be adapted to context, not followed blindly
-7. **Use data to calibrate** â€” track velocity, cycle time, defect rates to continuously improve the process
-8. **Don't forget the people** â€” the best process model will fail without motivated, skilled, and well-supported teams
+1. **No single model fits all projects** — evaluate requirements stability, risk profile, and team size before choosing
+2. **Hybrid models are the norm** — most real projects blend plan-driven and agile elements (e.g., Water-Scrum-Fall)
+3. **Risk-driven selection** — high-risk projects need more iterative feedback loops and explicit risk management
+4. **Regulatory constraints matter** — safety-critical domains often mandate V-model or strict documentation practices
+5. **Start agile, add ceremony as needed** — begin with Scrum/XP, introduce formal documentation only where justified
+6. **Process is a tool, not a goal** — any model must be adapted to context, not followed blindly
+7. **Use data to calibrate** — track velocity, cycle time, defect rates to continuously improve the process
+8. **Don't forget the people** — the best process model will fail without motivated, skilled, and well-supported teams
 
 ### Real-World Scenario: Choosing a Model for a Government Healthcare Portal
 
 A government health agency needed a nationwide patient portal allowing citizens to book appointments, access medical records, and communicate with providers. The project had firm regulatory deadlines (24 months), mandated security certifications (HIPAA, SOC2), and involved 15 contractors across 3 time zones. Requirements were initially vague ("something like MyChart") but progressively refined through 4 months of stakeholder workshops.
 
 **Analysis:**
-- **Regulatory pressure** â†’ needed traceability and documentation â†’ V-model or Waterfall appealing
-- **Vague requirements** â†’ needed iterative feedback â†’ agile appealing
-- **Distributed teams** â†’ Scrum with daily stand-ups worked across time zones
-- **Fixed deadline** â†’ time-boxed sprints for predictable progress
+- **Regulatory pressure** → needed traceability and documentation → V-model or Waterfall appealing
+- **Vague requirements** → needed iterative feedback → agile appealing
+- **Distributed teams** → Scrum with daily stand-ups worked across time zones
+- **Fixed deadline** → time-boxed sprints for predictable progress
 
-**Decision:** Hybrid model â€” 4-month Waterfall inception (requirements, architecture, security blueprint), followed by 16 months of Scrum (2-week sprints, 5 teams of 6), finishing with 4 months of Waterfall-style system integration testing and certification. The hybrid approach allowed upfront regulatory planning while maintaining development agility.
+**Decision:** Hybrid model — 4-month Waterfall inception (requirements, architecture, security blueprint), followed by 16 months of Scrum (2-week sprints, 5 teams of 6), finishing with 4 months of Waterfall-style system integration testing and certification. The hybrid approach allowed upfront regulatory planning while maintaining development agility.
 
 ### Lean Software Development
 
 Lean Software Development, adapted from Toyota's Lean manufacturing principles by Mary and Tom Poppendieck, focuses on eliminating waste and optimising the value stream. The seven principles are:
 
-1. **Eliminate waste** â€” anything that doesn't add customer value (unnecessary features, waiting, handoffs, defects)
-2. **Amplify learning** â€” short iterations, frequent feedback, early testing
-3. **Decide as late as possible** â€” defer irreversible decisions, keep options open
-4. **Deliver as fast as possible** â€” shorter cycles increase feedback and reduce risk
-5. **Empower the team** â€” respect people, let teams make technical decisions
-6. **Build integrity in** â€” automated testing, continuous integration, clean code
-7. **See the whole** â€” optimise the entire value stream, not just individual steps
+1. **Eliminate waste** — anything that doesn't add customer value (unnecessary features, waiting, handoffs, defects)
+2. **Amplify learning** — short iterations, frequent feedback, early testing
+3. **Decide as late as possible** — defer irreversible decisions, keep options open
+4. **Deliver as fast as possible** — shorter cycles increase feedback and reduce risk
+5. **Empower the team** — respect people, let teams make technical decisions
+6. **Build integrity in** — automated testing, continuous integration, clean code
+7. **See the whole** — optimise the entire value stream, not just individual steps
 
 Lean provides a philosophical foundation that underlies both Kanban (flow-based) and Scrum (iteration-based) approaches.
 
 ### Feature-Driven Development (FDD)
 
-Feature-Driven Development (FDD) is a model-driven, short-iteration process organised around features â€” small, client-valued functions that can be implemented in 2-10 days. FDD has five processes:
+Feature-Driven Development (FDD) is a model-driven, short-iteration process organised around features — small, client-valued functions that can be implemented in 2-10 days. FDD has five processes:
 
-1. **Develop an overall model** â€” domain walkthrough, create class diagrams
-2. **Build a features list** â€” decompose domain into features
-3. **Plan by feature** â€” assign features to classes and owners
-4. **Design by feature** â€” detailed sequence diagrams for each feature
-5. **Build by feature** â€” implement, test, and promote
+1. **Develop an overall model** — domain walkthrough, create class diagrams
+2. **Build a features list** — decompose domain into features
+3. **Plan by feature** — assign features to classes and owners
+4. **Design by feature** — detailed sequence diagrams for each feature
+5. **Build by feature** — implement, test, and promote
 
 FDD emphasises regular builds (every 2 hours), feature teams (class owners), and milestones (25% of features designed, 25% built, 50% built, etc.). It scales well to larger teams (50+ developers) where pure Scrum may struggle with coordination.
 
@@ -1159,11 +1159,11 @@ Create a detailed comparison table evaluating Waterfall, Scrum, Spiral, and Kanb
 You are developing an autonomous warehouse robot coordination system. Identify four major technical risks and describe how the Spiral model would address each one across successive loops.
 
 **Solution:**
-- **Loop 1 (Concept):** Risk â€” collision avoidance accuracy. Mitigation â€” prototype with LIDAR + computer vision sensor fusion; test in simulation.
-- **Loop 2 (Requirements):** Risk â€” real-time path planning under 100ms latency. Mitigation â€” benchmark A*, RRT, and D* algorithms on target hardware.
-- **Loop 3 (Design):** Risk â€” robot-to-robot communication failure. Mitigation â€” implement redundant messaging (WiFi + Zigbee); test with fault injection.
-- **Loop 4 (Implementation):** Risk â€” battery management under heavy load. Mitigation â€” build power profiling subsystem; simulate worst-case mission profiles.
-- **Loop 5 (Integration):** Risk â€” warehouse management system integration. Mitigation â€” staged integration with mock APIs before production connection.
+- **Loop 1 (Concept):** Risk — collision avoidance accuracy. Mitigation — prototype with LIDAR + computer vision sensor fusion; test in simulation.
+- **Loop 2 (Requirements):** Risk — real-time path planning under 100ms latency. Mitigation — benchmark A*, RRT, and D* algorithms on target hardware.
+- **Loop 3 (Design):** Risk — robot-to-robot communication failure. Mitigation — implement redundant messaging (WiFi + Zigbee); test with fault injection.
+- **Loop 4 (Implementation):** Risk — battery management under heavy load. Mitigation — build power profiling subsystem; simulate worst-case mission profiles.
+- **Loop 5 (Integration):** Risk — warehouse management system integration. Mitigation — staged integration with mock APIs before production connection.
 </details>
 
 ### Exercise 3: Agile Transformation at a Traditional Company
@@ -1175,9 +1175,9 @@ A traditional manufacturing company with 200 developers organised in functional 
 **Solution:**
 
 **Challenges:**
-1. **Functional identity loss** â€” testers may resist joining development teams. Mitigation: keep a shared QA chapter/CoP for career development while assigning testers to specific teams.
-2. **Manager role ambiguity** â€” functional managers lose direct authority. Mitigation: convert managers to Scrum Masters or technical leads with servant-leadership training.
-3. **Organisational resistance** â€” command-and-control culture clashes with self-organisation. Mitigation: executive sponsorship, pilot with 2-3 teams for 3 months before scaling.
+1. **Functional identity loss** — testers may resist joining development teams. Mitigation: keep a shared QA chapter/CoP for career development while assigning testers to specific teams.
+2. **Manager role ambiguity** — functional managers lose direct authority. Mitigation: convert managers to Scrum Masters or technical leads with servant-leadership training.
+3. **Organisational resistance** — command-and-control culture clashes with self-organisation. Mitigation: executive sponsorship, pilot with 2-3 teams for 3 months before scaling.
 
 ```typescript
 interface TeamMember {
@@ -1222,7 +1222,7 @@ A project is estimated at 120,000 lines of code (120 KLOC). The team has mixed e
 - What if the project is embedded mode?
 
 **Solution:**
-- Semi-detached: PM = 3.0 * (120)^1.12 = 3.0 * 198.6 = 595.8 person-months. TDEV = 2.5 * (595.8)^0.35 = 2.5 * 8.67 = 21.7 months. Average staff = 595.8 / 21.7 â‰ˆ 27. Not feasible with 10 developers in the given timeline.
+- Semi-detached: PM = 3.0 * (120)^1.12 = 3.0 * 198.6 = 595.8 person-months. TDEV = 2.5 * (595.8)^0.35 = 2.5 * 8.67 = 21.7 months. Average staff = 595.8 / 21.7 ≈ 27. Not feasible with 10 developers in the given timeline.
 - Embedded: PM = 3.6 * (120)^1.20 = 3.6 * 278.5 = 1002.6 person-months. TDEV = 2.5 * (1002.6)^0.32 = 2.5 * 8.1 = 20.3 months. Even worse.
 - Organic: PM = 2.4 * (120)^1.05 = 2.4 * 142.3 = 341.5 person-months. TDEV = 2.5 * (341.5)^0.38 = 2.5 * 8.4 = 21 months. Staff = 16.
 </details>
@@ -1236,9 +1236,9 @@ A large financial institution plans to replace its core banking system over a th
 **Solution:**
 
 The proposed hybrid model uses three phases:
-1. **Inception & Elaboration (UP)** â€” 4 months: architecture, risk identification, regulatory analysis.
-2. **Incremental Development (Scrum + Spiral)** â€” 24 months: 2-week sprints with quarterly risk gates. Each quarter includes a spiral-style risk analysis loop.
-3. **Transition (UP)** â€” 8 months: staged roll-out, parallel running with legacy system, regulatory certification.
+1. **Inception & Elaboration (UP)** — 4 months: architecture, risk identification, regulatory analysis.
+2. **Incremental Development (Scrum + Spiral)** — 24 months: 2-week sprints with quarterly risk gates. Each quarter includes a spiral-style risk analysis loop.
+3. **Transition (UP)** — 8 months: staged roll-out, parallel running with legacy system, regulatory certification.
 
 ```typescript
 interface RiskGate {

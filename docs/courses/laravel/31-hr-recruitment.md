@@ -1,4 +1,4 @@
-﻿# Chapter 31: HR & Recruitment ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â AI-Powered Talent Agents
+# Chapter 31: HR & Recruitment — AI-Powered Talent Agents
 
 > **Previous:** [Logistics & Supply Chain Agents](./30-logistics.md) | **Next:** [Marketing & Advertising Agents](./32-marketing.md)
 
@@ -137,10 +137,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
 
 ![HR and Recruitment Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/31-hr-recruitment.png)
 
@@ -501,7 +501,7 @@ class HrDocument extends Model
 ### 31.2 Resume Screening & Ranking Agents
 
 
-The ResumeScreeningAgent ingests candidate resumes (PDF or text), uses AI to extract structured data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â skills, years of experience, education, previous roles ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â and scores each candidate against the requirements of a specific job posting. This automates the most time-consuming phase of recruiting: reviewing hundreds of resumes to find qualified candidates.
+The ResumeScreeningAgent ingests candidate resumes (PDF or text), uses AI to extract structured data — skills, years of experience, education, previous roles — and scores each candidate against the requirements of a specific job posting. This automates the most time-consuming phase of recruiting: reviewing hundreds of resumes to find qualified candidates.
 
 The agent works in three phases: **parse** (extract raw text from the uploaded file), **extract** (use an LLM to pull structured fields from unstructured text), and **rank** (compute a match score against job requirements using both keyword overlap and semantic understanding).
 
@@ -972,7 +972,7 @@ class InterviewSchedulingAgent
 ### 31.4 Candidate Matching Agents
 
 
-The CandidateMatchingAgent uses vector embeddings to perform semantic matching between job postings and candidates. Instead of relying solely on keyword overlap ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â which misses synonyms and context ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the agent embeds both the job description and the candidate's resume into high-dimensional vectors, then computes cosine similarity. Candidates whose profiles are semantically close to the job requirements surface to the top, even when they use different terminology.
+The CandidateMatchingAgent uses vector embeddings to perform semantic matching between job postings and candidates. Instead of relying solely on keyword overlap — which misses synonyms and context — the agent embeds both the job description and the candidate's resume into high-dimensional vectors, then computes cosine similarity. Candidates whose profiles are semantically close to the job requirements surface to the top, even when they use different terminology.
 
 ```php
 <?php
@@ -1688,17 +1688,17 @@ class SentimentAgent
         if ($score <= $this->alertThresholds['critical']) {
             $flags[] = [
                 'type' => 'critical',
-                'message' => 'Sentiment score critically low ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â immediate intervention recommended.',
+                'message' => 'Sentiment score critically low — immediate intervention recommended.',
             ];
         } elseif ($score <= $this->alertThresholds['warning']) {
             $flags[] = [
                 'type' => 'warning',
-                'message' => 'Sentiment score below warning threshold ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â monitor closely.',
+                'message' => 'Sentiment score below warning threshold — monitor closely.',
             ];
         } elseif ($score <= $this->alertThresholds['notice']) {
             $flags[] = [
                 'type' => 'notice',
-                'message' => 'Sentiment score slightly below average ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â review context.',
+                'message' => 'Sentiment score slightly below average — review context.',
             ];
         }
 
@@ -1709,7 +1709,7 @@ class SentimentAgent
                 if (str_contains($themeLower, $keyword)) {
                     $flags[] = [
                         'type' => 'critical',
-                        'message' => "Negative theme detected: \"{$theme}\" ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â requires investigation.",
+                        'message' => "Negative theme detected: \"{$theme}\" — requires investigation.",
                     ];
                     break;
                 }
@@ -2265,7 +2265,7 @@ class HrComplianceAgent
                 )->implode("\n") . "
 
                 Write 3-4 sentences summarizing the workforce composition and notable changes.
-                Do NOT include any recommendations ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â factual summary only.
+                Do NOT include any recommendations — factual summary only.
             ")->generate();
 
         $reportData['executive_summary'] = $narrativeSummary->text();
@@ -2323,11 +2323,11 @@ class HrComplianceAgent
         $issues = [];
 
         foreach ($certifications['expired'] as $expired) {
-            $issues[] = "EXPIRED CERTIFICATION: {$expired['employee']} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â {$expired['certification']} expired {$expired['expired_at']}";
+            $issues[] = "EXPIRED CERTIFICATION: {$expired['employee']} — {$expired['certification']} expired {$expired['expired_at']}";
         }
 
         foreach ($documents['expired_documents'] as $expired) {
-            $issues[] = "EXPIRED DOCUMENT: {$expired['employee']} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â {$expired['document']} ({$expired['type']})";
+            $issues[] = "EXPIRED DOCUMENT: {$expired['employee']} — {$expired['document']} ({$expired['type']})";
         }
 
         $response = $this->ai->agent()
@@ -2766,7 +2766,7 @@ class HrComplianceAgent
 
 ## Summary
 
-This chapter demonstrated how AI agents transform every phase of the HR and recruitment lifecycle within a Laravel 13 application. We began with the foundational data models ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Candidate, Employee, JobPosting, Review, TrainingRecord, and HrDocument ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â building the relational schema that all HR agents operate against.
+This chapter demonstrated how AI agents transform every phase of the HR and recruitment lifecycle within a Laravel 13 application. We began with the foundational data models — Candidate, Employee, JobPosting, Review, TrainingRecord, and HrDocument — building the relational schema that all HR agents operate against.
 
 The **ResumeScreeningAgent** automated the most labor-intensive recruiting task: parsing hundreds of resumes, extracting structured data with LLMs, and ranking candidates against job requirements. The **InterviewSchedulingAgent** eliminated the back-and-forth email chain by treating scheduling as a multi-constraint satisfaction problem, finding common availability across candidates and multiple interviewers.
 
@@ -2774,7 +2774,7 @@ The **CandidateMatchingAgent** introduced vector embeddings and cosine similarit
 
 For employee development, the **PerformanceReviewAgent** analyzed review text with sentiment scoring and trend detection, while the **SentimentAgent** provided an early-warning system for disengagement through survey analysis and automated escalation. The **TrainingRecommendationAgent** closed the loop by identifying skill gaps and building personalized 90-day development plans with targeted training recommendations.
 
-Finally, the **HrComplianceAgent** ensured regulatory adherence through certification tracking, document compliance monitoring, EEO-1 report generation, and full audit summaries ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â keeping the organization audit-ready at all times.
+Finally, the **HrComplianceAgent** ensured regulatory adherence through certification tracking, document compliance monitoring, EEO-1 report generation, and full audit summaries — keeping the organization audit-ready at all times.
 
 The architecture follows a consistent pattern: each agent encapsulates a single HR domain concern, is testable in isolation, stores its results back to the database for auditability, and communicates through Laravel's notification system for alerts and escalations. Together, these agents form a comprehensive AI-powered HR operations platform.
 
@@ -2786,7 +2786,7 @@ The architecture follows a consistent pattern: each agent encapsulates a single 
 
 2. **Interview Conflict Detection**: Extend the InterviewSchedulingAgent to detect and prevent double-booking of interviewers. Add a method `getInterviewerSchedule(int $interviewerId, string $date)` that queries existing interviews and returns all busy time blocks.
 
-3. **Skill Taxonomy Normalizer**: Build a service class `SkillNormalizer` that the CandidateMatchingAgent uses to normalize skill names (e.g., "JS", "JavaScript", "ECMAScript" ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ "JavaScript"). Use a combination of a lookup table and AI suggestion for unknown variants.
+3. **Skill Taxonomy Normalizer**: Build a service class `SkillNormalizer` that the CandidateMatchingAgent uses to normalize skill names (e.g., "JS", "JavaScript", "ECMAScript" → "JavaScript"). Use a combination of a lookup table and AI suggestion for unknown variants.
 
 4. **Onboarding Deadline Escalation**: Add an escalation chain to the OnboardingAgent: if a task is overdue by 1 day, notify the employee; by 3 days, notify the manager; by 7 days, notify HR. Implement this as a scheduled Artisan command.
 

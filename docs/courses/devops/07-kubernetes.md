@@ -1,4 +1,4 @@
-﻿# Chapter 7: Kubernetes
+# Chapter 7: Kubernetes
 
 > **Prev:** [Infrastructure as Code](./07-infrastructure-as-code.md)
 > **Next:** [Configuration Management](./08-configuration-management.md)
@@ -863,15 +863,15 @@ class PDBAnalyzer {
       riskLevel = 'safe';
     } else if (allowedDisruptions === 1) {
       riskLevel = 'caution';
-      recommendations.push('Only 1 pod can be disrupted at a time â€” rolling updates will be slow');
-      if (podsOnSingleNode > 0) recommendations.push(`${podsOnSingleNode} node(s) run more than allowed disruptions â€” consider pod anti-affinity`);
+      recommendations.push('Only 1 pod can be disrupted at a time — rolling updates will be slow');
+      if (podsOnSingleNode > 0) recommendations.push(`${podsOnSingleNode} node(s) run more than allowed disruptions — consider pod anti-affinity`);
     } else {
       riskLevel = 'risky';
-      recommendations.push('Zero disruptions allowed â€” consider increasing minAvailable or adding replicas');
+      recommendations.push('Zero disruptions allowed — consider increasing minAvailable or adding replicas');
     }
 
     if (podsOnSingleNode > 0 && allowedDisruptions > 0) {
-      recommendations.push(`Spread pods across nodes â€” ${podsOnSingleNode} node(s) are single points of failure`);
+      recommendations.push(`Spread pods across nodes — ${podsOnSingleNode} node(s) are single points of failure`);
     }
 
     return {

@@ -1,4 +1,4 @@
-﻿# Chapter 1: Indian Polity & Constitution
+# Chapter 1: Indian Polity & Constitution
 
 ## Learning Objectives
 
@@ -23,7 +23,7 @@ By the end of this chapter, you will be able to:
 <!-- End Image Gallery -->
 
 - Explain the key features, preamble, and sources of the Indian Constitution
-- Distinguish between Fundamental Rights (Articles 14â€“32) and Directive Principles (Articles 36â€“51)
+- Distinguish between Fundamental Rights (Articles 14–32) and Directive Principles (Articles 36–51)
 - Describe the structure and functioning of Parliament, Executive, and Judiciary
 - Analyse Centre-State relations and the federal system
 - Understand the constitutional amendment process and emergency provisions
@@ -33,7 +33,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-### 1.1 Constitution of India â€” An Overview
+### 1.1 Constitution of India — An Overview
 
 The Constitution of India was adopted on **26 November 1949** and came into effect on **26 January 1950**. It is the longest written constitution in the world, originally containing **395 Articles** divided into **22 Parts** and **8 Schedules** (now 448 Articles, 25 Parts, 12 Schedules).
 
@@ -79,27 +79,27 @@ Changes to the Preamble:
 - **42nd Amendment (1976):** Added "Socialist", "Secular", and "Integrity"
 - The Preamble is not enforceable in court but serves as the guiding light for interpretation
 
-### 1.2 Fundamental Rights (Articles 14â€“32)
+### 1.2 Fundamental Rights (Articles 14–32)
 
-Fundamental Rights are guaranteed by Part III of the Constitution. They are justiciable â€” enforceable by courts.
+Fundamental Rights are guaranteed by Part III of the Constitution. They are justiciable — enforceable by courts.
 
 | Right | Articles | Scope |
 |-------|----------|-------|
-| Right to Equality | 14â€“18 | Equality before law, prohibition of discrimination, abolition of untouchability |
-| Right to Freedom | 19â€“22 | Freedom of speech, assembly, association, movement, residence, profession; protection against arrest |
-| Right against Exploitation | 23â€“24 | Prohibition of human trafficking, forced labour, child labour (under 14) |
-| Right to Freedom of Religion | 25â€“28 | Freedom of conscience, practice and propagation of religion |
-| Cultural & Educational Rights | 29â€“30 | Protection of minorities, right to establish educational institutions |
+| Right to Equality | 14–18 | Equality before law, prohibition of discrimination, abolition of untouchability |
+| Right to Freedom | 19–22 | Freedom of speech, assembly, association, movement, residence, profession; protection against arrest |
+| Right against Exploitation | 23–24 | Prohibition of human trafficking, forced labour, child labour (under 14) |
+| Right to Freedom of Religion | 25–28 | Freedom of conscience, practice and propagation of religion |
+| Cultural & Educational Rights | 29–30 | Protection of minorities, right to establish educational institutions |
 | Right to Constitutional Remedies | 32 | Right to move Supreme Court via writs (Habeas Corpus, Mandamus, Prohibition, Certiorari, Quo Warranto) |
 
 **Important Notes:**
 - Article 32 is called the "heart and soul of the Constitution" by Dr. Ambedkar
 - Fundamental Rights can be suspended during a National Emergency (except Articles 20 and 21)
-- Article 21 (Right to Life and Personal Liberty) has been given the widest interpretation by courts â€” includes right to privacy, right to clean environment, right to education (86th Amendment)
+- Article 21 (Right to Life and Personal Liberty) has been given the widest interpretation by courts — includes right to privacy, right to clean environment, right to education (86th Amendment)
 
-### 1.3 Directive Principles of State Policy (Articles 36â€“51)
+### 1.3 Directive Principles of State Policy (Articles 36–51)
 
-Part IV contains DPSP â€” non-justiciable guidelines for the state to follow.
+Part IV contains DPSP — non-justiciable guidelines for the state to follow.
 
 **Classification:**
 
@@ -124,19 +124,19 @@ mindmap
       Article 51: International Peace
 ```
 
-**Key Differences â€” FR vs DPSP:**
+**Key Differences — FR vs DPSP:**
 
 | Aspect | Fundamental Rights | DPSP |
 |--------|-------------------|------|
 | Nature | Negative obligation (state shall NOT do) | Positive obligation (state SHALL do) |
 | Enforceability | Justiciable (court-enforceable) | Non-justiciable |
-| Part | Part III (Articles 14â€“32) | Part IV (Articles 36â€“51) |
+| Part | Part III (Articles 14–32) | Part IV (Articles 36–51) |
 | Amendment | Requires special majority | Can be amended by simple majority |
 | Basis | Individual rights | Social welfare |
 
 ### 1.4 Fundamental Duties (Article 51A)
 
-Added by the **42nd Amendment (1976)** â€” originally 10 duties, 11th added by 86th Amendment (2002).
+Added by the **42nd Amendment (1976)** — originally 10 duties, 11th added by 86th Amendment (2002).
 
 1. Respect the Constitution, national flag and national anthem
 2. Cherish noble ideals of the freedom struggle
@@ -148,7 +148,7 @@ Added by the **42nd Amendment (1976)** â€” originally 10 duties, 11th added
 8. Develop scientific temper and humanism
 9. Safeguard public property
 10. Strive for excellence in all spheres
-11. Provide opportunity for education to child/ward (6â€“14 years) â€” added by 86th Amendment
+11. Provide opportunity for education to child/ward (6–14 years) — added by 86th Amendment
 
 **Note:** Fundamental Duties are non-justiciable but serve as moral obligations.
 
@@ -159,10 +159,10 @@ Added by the **42nd Amendment (1976)** â€” originally 10 duties, 11th added
 | Aspect | Detail |
 |--------|--------|
 | Constitutional Head | Article 52 |
-| Election | Elected by Electoral College (MPs + MLAs) â€” proportional representation by STV |
+| Election | Elected by Electoral College (MPs + MLAs) — proportional representation by STV |
 | Tenure | 5 years |
 | Qualifications | Citizen of India, 35+ years, qualified for Lok Sabha membership |
-| Impeachment | For violation of Constitution â€” by special majority of Parliament |
+| Impeachment | For violation of Constitution — by special majority of Parliament |
 | Veto Power | Absolute veto, Suspensive veto, Pocket veto |
 
 #### 1.5.2 Prime Minister & Council of Ministers
@@ -195,7 +195,7 @@ flowchart LR
 | Rajya Sabha | 233 elected + 12 nominated by President | Permanent (1/3 retire every 2 years) | Vice President (ex-officio Chairman) |
 
 **Legislative Process:**
-1. Bill introduced in either house (except Money Bill â€” introduced only in Lok Sabha)
+1. Bill introduced in either house (except Money Bill — introduced only in Lok Sabha)
 2. Three readings in each house
 3. Passed by majority of present and voting
 4. President's assent (can return non-money bills for reconsideration)
@@ -215,7 +215,7 @@ flowchart LR
 | District Court | District-level | Civil & Criminal |
 
 **Judicial Review:** Power of courts to examine constitutionality of laws (Article 13, 32, 226, 227).
-**Judicial Activism:** Courts stepping beyond traditional role to enforce rights (PIL â€” Public Interest Litigation).
+**Judicial Activism:** Courts stepping beyond traditional role to enforce rights (PIL — Public Interest Litigation).
 
 ### 1.8 Federal Structure
 
@@ -247,8 +247,8 @@ flowchart TD
 
 ### 1.9 Panchayati Raj (73rd Amendment, 1992)
 
-- Part IX (Articles 243â€“243O)
-- Three-tier system: Gram Panchayat â†’ Block Panchayat â†’ Zila Parishad
+- Part IX (Articles 243–243O)
+- Three-tier system: Gram Panchayat → Block Panchayat → Zila Parishad
 - Direct elections for all seats
 - Reservation for SC/ST (proportional) and women (1/3 of seats)
 
@@ -265,7 +265,7 @@ flowchart TD
 | 61st | 1988 | Reduced voting age from 21 to 18 |
 | 73rd | 1992 | Panchayati Raj institutions |
 | 74th | 1992 | Municipalities (Urban Local Bodies) |
-| 86th | 2002 | Right to Education (Article 21A) â€” free and compulsory education for 6â€“14 years |
+| 86th | 2002 | Right to Education (Article 21A) — free and compulsory education for 6–14 years |
 | 101st | 2016 | Goods and Services Tax (GST) |
 | 103rd | 2019 | 10% EWS (Economically Weaker Sections) reservation |
 | 105th | 2021 | Restored states' power to identify OBCs |
@@ -347,7 +347,7 @@ class PolityQuizSimulator {
       const userChoice = 0;
       const isCorrect = userChoice === q.correctIndex;
       if (isCorrect) score++;
-      results.push(`Q${q.id}: ${isCorrect ? 'Correct' : 'Wrong'} â€” ${q.explanation}`);
+      results.push(`Q${q.id}: ${isCorrect ? 'Correct' : 'Wrong'} — ${q.explanation}`);
     }
     return { score, total: this.questions.length, results };
   }
@@ -360,7 +360,7 @@ console.log(`Score: ${result.score}/${result.total}`);
 result.results.forEach(r => console.log(r));
 ```
 
-**Output:** Score: 0/5 â€” because user always selects option 0 (first choice). This simulates the need for careful reading.
+**Output:** Score: 0/5 — because user always selects option 0 (first choice). This simulates the need for careful reading.
 
 ---
 
@@ -375,7 +375,7 @@ D) Eighth Schedule
 <summary>Answer</summary>
 **Answer: C) Seventh Schedule**
 
-The Seventh Schedule contains the three lists â€” Union List, State List, and Concurrent List â€” that define the legislative division of powers. The Fourth Schedule deals with Rajya Sabha seats, Fifth with Scheduled Areas, and Eighth with official languages.
+The Seventh Schedule contains the three lists — Union List, State List, and Concurrent List — that define the legislative division of powers. The Fourth Schedule deals with Rajya Sabha seats, Fifth with Scheduled Areas, and Eighth with official languages.
 </details>
 
 ---
@@ -391,7 +391,7 @@ D) Australia
 <summary>Answer</summary>
 **Answer: B) United States of America**
 
-Judicial Review â€” the power of courts to declare laws unconstitutional â€” is borrowed from the USA. The Indian Supreme Court and High Courts can declare laws void if they violate Fundamental Rights.
+Judicial Review — the power of courts to declare laws unconstitutional — is borrowed from the USA. The Indian Supreme Court and High Courts can declare laws void if they violate Fundamental Rights.
 </details>
 
 ---
@@ -519,7 +519,7 @@ D) Golaknath case (1967)
 <summary>Answer</summary>
 **Answer: B) Kesavananda Bharati case (1973)**
 
-In the Kesavananda Bharati case, the Supreme Court held that Parliament cannot amend the basic structure of the Constitution â€” including supremacy of the Constitution, democratic republic, secularism, separation of powers, and fundamental rights.
+In the Kesavananda Bharati case, the Supreme Court held that Parliament cannot amend the basic structure of the Constitution — including supremacy of the Constitution, democratic republic, secularism, separation of powers, and fundamental rights.
 </details>
 
 ---
@@ -583,7 +583,7 @@ D) Vice President
 <summary>Answer</summary>
 **Answer: B) President**
 
-The President appoints the Chief Election Commissioner (CEC) and Election Commissioners. The CEC can be removed only through impeachment â€” same process as Supreme Court judges â€” to ensure independence.
+The President appoints the Chief Election Commissioner (CEC) and Election Commissioners. The CEC can be removed only through impeachment — same process as Supreme Court judges — to ensure independence.
 </details>
 
 ---
@@ -688,89 +688,89 @@ The 13th Amendment created the state of Nagaland with special protections under 
 
 | # | President | Term | Key Fact |
 |---|-----------|------|----------|
-| 1 | Dr. Rajendra Prasad | 1950â€“1962 | First President; served two terms |
-| 2 | Dr. Sarvepalli Radhakrishnan | 1962â€“1967 | First philosopher-President; Teachers' Day celebrates his birthday |
-| 3 | Dr. Zakir Hussain | 1967â€“1969 | First Muslim President; died in office |
-| 4 | V.V. Giri | 1969â€“1974 | Only President elected as independent candidate |
-| 5 | Fakhruddin Ali Ahmed | 1974â€“1977 | Declared Emergency in 1975 |
-| 6 | Neelam Sanjiva Reddy | 1977â€“1982 | Youngest President; only one elected unopposed |
-| 7 | Giani Zail Singh | 1982â€“1987 | First Sikh President |
-| 8 | R. Venkataraman | 1987â€“1992 | Saw end of Cold War era |
-| 9 | Dr. Shankar Dayal Sharma | 1992â€“1997 | Governor of multiple states before Presidency |
-| 10 | K.R. Narayanan | 1997â€“2002 | First Dalit President |
-| 11 | Dr. A.P.J. Abdul Kalam | 2002â€“2007 | "People's President"; missile scientist |
-| 12 | Pratibha Patil | 2007â€“2012 | First woman President |
-| 13 | Pranab Mukherjee | 2012â€“2017 | Longest-serving Finance Minister before Presidency |
-| 14 | Ram Nath Kovind | 2017â€“2022 | Second Dalit President |
-| 15 | Droupadi Murmu | 2022â€“Present | First tribal President; youngest to assume office |
+| 1 | Dr. Rajendra Prasad | 1950–1962 | First President; served two terms |
+| 2 | Dr. Sarvepalli Radhakrishnan | 1962–1967 | First philosopher-President; Teachers' Day celebrates his birthday |
+| 3 | Dr. Zakir Hussain | 1967–1969 | First Muslim President; died in office |
+| 4 | V.V. Giri | 1969–1974 | Only President elected as independent candidate |
+| 5 | Fakhruddin Ali Ahmed | 1974–1977 | Declared Emergency in 1975 |
+| 6 | Neelam Sanjiva Reddy | 1977–1982 | Youngest President; only one elected unopposed |
+| 7 | Giani Zail Singh | 1982–1987 | First Sikh President |
+| 8 | R. Venkataraman | 1987–1992 | Saw end of Cold War era |
+| 9 | Dr. Shankar Dayal Sharma | 1992–1997 | Governor of multiple states before Presidency |
+| 10 | K.R. Narayanan | 1997–2002 | First Dalit President |
+| 11 | Dr. A.P.J. Abdul Kalam | 2002–2007 | "People's President"; missile scientist |
+| 12 | Pratibha Patil | 2007–2012 | First woman President |
+| 13 | Pranab Mukherjee | 2012–2017 | Longest-serving Finance Minister before Presidency |
+| 14 | Ram Nath Kovind | 2017–2022 | Second Dalit President |
+| 15 | Droupadi Murmu | 2022–Present | First tribal President; youngest to assume office |
 
 ### 1.17 List of Prime Ministers of India
 
 | # | PM | Term | Key Contribution |
 |---|----|------|------------------|
-| 1 | Jawaharlal Nehru | 1947â€“1964 | Longest-serving (17 years); architect of modern India |
+| 1 | Jawaharlal Nehru | 1947–1964 | Longest-serving (17 years); architect of modern India |
 | 2 | Gulzarilal Nanda | 1964 (13 days) | Acting PM twice; first interim |
-| 3 | Lal Bahadur Shastri | 1964â€“1966 | "Jai Jawan Jai Kisan"; died in Tashkent |
-| 4 | Indira Gandhi | 1966â€“1977, 1980â€“1984 | First woman PM; nationalised banks; Emergency |
-| 5 | Morarji Desai | 1977â€“1979 | First non-Congress PM |
-| 6 | Charan Singh | 1979â€“1980 | Only PM who never faced Parliament |
-| 7 | Rajiv Gandhi | 1984â€“1989 | Youngest PM (40 yrs); launched telecom/IT revolution |
-| 8 | V.P. Singh | 1989â€“1990 | Implemented Mandal Commission report |
-| 9 | Chandra Shekhar | 1990â€“1991 | "Young Turk" of Indian politics |
-| 10 | P.V. Narasimha Rao | 1991â€“1996 | Father of Indian economic reforms |
-| 11 | Atal Bihari Vajpayee | 1996, 1998â€“2004 | First non-Congress full-term PM; nuclear tests |
-| 12 | H.D. Deve Gowda | 1996â€“1997 | From Karnataka; United Front PM |
-| 13 | I.K. Gujral | 1997â€“1998 | Known for "Gujral Doctrine" in foreign policy |
-| 14 | Manmohan Singh | 2004â€“2014 | First Sikh PM; architect of 1991 reforms |
-| 15 | Narendra Modi | 2014â€“Present | Longest-serving non-Congress PM; three consecutive terms |
+| 3 | Lal Bahadur Shastri | 1964–1966 | "Jai Jawan Jai Kisan"; died in Tashkent |
+| 4 | Indira Gandhi | 1966–1977, 1980–1984 | First woman PM; nationalised banks; Emergency |
+| 5 | Morarji Desai | 1977–1979 | First non-Congress PM |
+| 6 | Charan Singh | 1979–1980 | Only PM who never faced Parliament |
+| 7 | Rajiv Gandhi | 1984–1989 | Youngest PM (40 yrs); launched telecom/IT revolution |
+| 8 | V.P. Singh | 1989–1990 | Implemented Mandal Commission report |
+| 9 | Chandra Shekhar | 1990–1991 | "Young Turk" of Indian politics |
+| 10 | P.V. Narasimha Rao | 1991–1996 | Father of Indian economic reforms |
+| 11 | Atal Bihari Vajpayee | 1996, 1998–2004 | First non-Congress full-term PM; nuclear tests |
+| 12 | H.D. Deve Gowda | 1996–1997 | From Karnataka; United Front PM |
+| 13 | I.K. Gujral | 1997–1998 | Known for "Gujral Doctrine" in foreign policy |
+| 14 | Manmohan Singh | 2004–2014 | First Sikh PM; architect of 1991 reforms |
+| 15 | Narendra Modi | 2014–Present | Longest-serving non-Congress PM; three consecutive terms |
 
 ### 1.18 Constitutional Schedules at a Glance
 
 | Schedule | Articles | Subject | Key Feature |
 |----------|----------|---------|-------------|
-| First | 1â€“4 | States and Union Territories | Names and territories of 28 states and 8 UTs |
+| First | 1–4 | States and Union Territories | Names and territories of 28 states and 8 UTs |
 | Second | 59, 65, 75, 97, 125, 148, 158, 164, 186, 221 | Salaries of dignitaries | Emoluments for President, Governors, CJI, Speaker, etc. |
 | Third | 75, 99, 124, 148, 164, 188, 219 | Oaths and affirmations | Forms of oath for Ministers, MPs, Judges, CAG |
 | Fourth | 80, 81 | Rajya Sabha seat allocation | Allocation of seats to states and UTs |
 | Fifth | 244(1) | Scheduled Areas administration | Administration and control of Scheduled Areas |
 | Sixth | 244(2) | Tribal Areas (NE states) | Administration of tribal areas in Assam, Meghalaya, Mizoram |
-| Seventh | 245â€“255 | Union, State, Concurrent Lists | 100 (Union) + 61 (State) + 52 (Concurrent) subjects |
+| Seventh | 245–255 | Union, State, Concurrent Lists | 100 (Union) + 61 (State) + 52 (Concurrent) subjects |
 | Eighth | 344(1), 351 | Official languages | 22 scheduled languages (added via amendments) |
 | Ninth | 31B | Land reforms validation | Acts and regulations protected from judicial review (added by 1st Amendment) |
 | Tenth | 102, 191 | Anti-Defection | Disqualification of MPs/MLAs on defection (added by 52nd Amendment, 1985) |
 | Eleventh | 243G | Panchayati Raj | Powers and functions of Panchayats (added by 73rd Amendment, 1992) |
 | Twelfth | 243W | Municipalities | Powers and functions of Municipalities (added by 74th Amendment, 1992) |
 
-### 1.19 Constitutional Parts â€” Quick Reference
+### 1.19 Constitutional Parts — Quick Reference
 
 | Part | Articles | Subject |
 |------|----------|---------|
-| I | 1â€“4 | Union and its Territory |
-| II | 5â€“11 | Citizenship |
-| III | 12â€“35 | Fundamental Rights |
-| IV | 36â€“51 | Directive Principles of State Policy |
+| I | 1–4 | Union and its Territory |
+| II | 5–11 | Citizenship |
+| III | 12–35 | Fundamental Rights |
+| IV | 36–51 | Directive Principles of State Policy |
 | IVA | 51A | Fundamental Duties |
-| V | 52â€“151 | Union Executive and Parliament |
-| VI | 152â€“237 | State Executive and Legislature |
+| V | 52–151 | Union Executive and Parliament |
+| VI | 152–237 | State Executive and Legislature |
 | VII | 238 | Repealed (by 7th Amendment) |
-| VIII | 239â€“242 | Union Territories |
-| IX | 243â€“243O | Panchayats |
-| IXA | 243Pâ€“243ZG | Municipalities |
-| IXB | 243ZHâ€“243ZT | Cooperative Societies |
-| X | 244â€“244A | Scheduled and Tribal Areas |
-| XI | 245â€“255 | Centre-State Relations |
-| XII | 256â€“263 | Finance, Property, Contracts |
-| XIII | 264â€“267 | Trade, Commerce within India |
-| XIV | 268â€“293 | Services under Union and States |
-| XIVA | 323Aâ€“323B | Tribunals |
-| XV | 324â€“329 | Elections |
-| XVI | 330â€“343 | Special provisions for SC/ST/OBC, Anglo-Indians |
-| XVII | 344â€“351 | Official Language |
-| XVIII | 352â€“360 | Emergency Provisions |
-| XIX | 361â€“367 | Miscellaneous |
+| VIII | 239–242 | Union Territories |
+| IX | 243–243O | Panchayats |
+| IXA | 243P–243ZG | Municipalities |
+| IXB | 243ZH–243ZT | Cooperative Societies |
+| X | 244–244A | Scheduled and Tribal Areas |
+| XI | 245–255 | Centre-State Relations |
+| XII | 256–263 | Finance, Property, Contracts |
+| XIII | 264–267 | Trade, Commerce within India |
+| XIV | 268–293 | Services under Union and States |
+| XIVA | 323A–323B | Tribunals |
+| XV | 324–329 | Elections |
+| XVI | 330–343 | Special provisions for SC/ST/OBC, Anglo-Indians |
+| XVII | 344–351 | Official Language |
+| XVIII | 352–360 | Emergency Provisions |
+| XIX | 361–367 | Miscellaneous |
 | XX | 368 | Amendment of Constitution |
-| XXI | 369â€“392 | Temporary, Transitional Provisions |
-| XXII | 393â€“395 | Short title, commencement, repeal |
+| XXI | 369–392 | Temporary, Transitional Provisions |
+| XXII | 393–395 | Short title, commencement, repeal |
 
 ### 1.20 TypeScript: Indian Polity Quiz Simulator
 
@@ -887,9 +887,9 @@ quiz.attemptQuestion(q.id, q.correctAnswer); // simulate correct answer
 console.log(quiz.getPerformanceReport());
 ```
 
-**Memory Trick for All Presidents:** "Raj Radha Zakir VV Fakhruddin Neelam Giani Venkat Shankar Narayan Kalam Pratibha Pranab Ram Murmu" â€” first names of all presidents in order.
+**Memory Trick for All Presidents:** "Raj Radha Zakir VV Fakhruddin Neelam Giani Venkat Shankar Narayan Kalam Pratibha Pranab Ram Murmu" — first names of all presidents in order.
 
-**Memory Trick for All PMs:** "Nehru Nanda Shastri Indira Morarji Charan Rajiv VP Chandra Rao Atal Deve Gujral Manmohan Modi" â€” first names of all PMs in order.
+**Memory Trick for All PMs:** "Nehru Nanda Shastri Indira Morarji Charan Rajiv VP Chandra Rao Atal Deve Gujral Manmohan Modi" — first names of all PMs in order.
 
 ---
 
@@ -897,9 +897,9 @@ console.log(quiz.getPerformanceReport());
 
 - The Indian Constitution is the world's longest written constitution, adopted on 26 Nov 1949 and effective from 26 Jan 1950.
 - It establishes a Sovereign Socialist Secular Democratic Republic with a Parliamentary system of government.
-- Part III (Fundamental Rights â€” Articles 14â€“32) provides justiciable individual rights enforceable through writs.
-- Part IV (Directive Principles â€” Articles 36â€“51) provides non-justiciable socio-economic goals.
-- Part IVA (Fundamental Duties â€” Article 51A) lists 11 moral obligations of citizens.
+- Part III (Fundamental Rights — Articles 14–32) provides justiciable individual rights enforceable through writs.
+- Part IV (Directive Principles — Articles 36–51) provides non-justiciable socio-economic goals.
+- Part IVA (Fundamental Duties — Article 51A) lists 11 moral obligations of citizens.
 - The Union Executive consists of the President (constitutional head), PM (real head), and Council of Ministers.
 - Parliament comprises Lok Sabha (545 seats, 5-year term) and Rajya Sabha (245 seats, permanent).
 - Supreme Court is the apex judiciary with powers of judicial review and constitutional interpretation.
@@ -909,8 +909,8 @@ console.log(quiz.getPerformanceReport());
 
 ## Practical Takeaways
 
-1. **For IBPS SO / RBI Exams:** Focus on Articles 14â€“32 (Fundamental Rights), 36â€“51 (DPSP), and major constitutional amendments (42nd, 44th, 73rd, 74th, 86th, 101st). Questions on these topics appear most frequently.
-2. **Writs Memory Trick:** "Habeas Corpus Mandamus Prohibition Certiorari Quo Warranto" â€” Remember as "Hello My PC Quits Work."
+1. **For IBPS SO / RBI Exams:** Focus on Articles 14–32 (Fundamental Rights), 36–51 (DPSP), and major constitutional amendments (42nd, 44th, 73rd, 74th, 86th, 101st). Questions on these topics appear most frequently.
+2. **Writs Memory Trick:** "Habeas Corpus Mandamus Prohibition Certiorari Quo Warranto" — Remember as "Hello My PC Quits Work."
 3. **Creation of States:** 7th Amendment (1956) reorganised states on linguistic lines. 13th Amendment created Nagaland. Key boundary changes are favourite exam topics.
 4. **Amendments to Remember:** 42nd (mini-Constitution), 44th (emergency reforms), 52nd (anti-defection), 61st (voting age 18), 73rd (Panchayati Raj), 74th (Municipalities), 101st (GST).
 5. **President vs Governor:** Both are constitutional heads, but Governor has more discretion in certain matters (reporting under Article 356). Understand the distinction.
@@ -957,7 +957,7 @@ D) Article 105
 <summary>Answer</summary>
 **Answer: B) Article 75(3)**
 
-Article 75(3) states that the Council of Ministers is collectively responsible to the Lok Sabha. This means the entire cabinet stands together â€” if a no-confidence motion is passed, the entire council must resign.
+Article 75(3) states that the Council of Ministers is collectively responsible to the Lok Sabha. This means the entire cabinet stands together — if a no-confidence motion is passed, the entire council must resign.
 </details>
 
 **Q4:** Under the Indian federal system, residuary powers (subjects not listed in any list) belong to:
@@ -997,9 +997,9 @@ D) Part IV
 
 <details>
 <summary>Answer</summary>
-**Answer: B) Part II (Articles 5â€“11)**
+**Answer: B) Part II (Articles 5–11)**
 
-Part II of the Constitution deals with Citizenship. Article 5 covers citizenship at commencement; Article 6â€“7 cover migrants from Pakistan; Article 8 covers overseas Indians; Article 9 covers voluntary acquisition of foreign citizenship; Article 11 gives Parliament power to regulate citizenship by law.
+Part II of the Constitution deals with Citizenship. Article 5 covers citizenship at commencement; Article 6–7 cover migrants from Pakistan; Article 8 covers overseas Indians; Article 9 covers voluntary acquisition of foreign citizenship; Article 11 gives Parliament power to regulate citizenship by law.
 </details>
 
 **Q7:** The "Doctrine of Basic Structure" was propounded in which landmark case?
@@ -1041,7 +1041,7 @@ D) 9
 <summary>Answer</summary>
 **Answer: B) 11**
 
-Originally 10 duties were added by the 42nd Amendment (1976). An 11th duty â€” "to provide opportunities for education to children between 6-14 years" â€” was added by the 86th Amendment (2002). Fundamental Duties are non-justiciable.
+Originally 10 duties were added by the 42nd Amendment (1976). An 11th duty — "to provide opportunities for education to children between 6-14 years" — was added by the 86th Amendment (2002). Fundamental Duties are non-justiciable.
 </details>
 
 **Q10:** The total number of Schedules in the Indian Constitution currently is:
@@ -1284,16 +1284,16 @@ D) 24
 **Section D (31-40):**
 31. B) Separate electorates for Muslims
 32. C) Article 17 (abolishes "untouchability" and its practice in any form)
-33. C) President (Article 267; amount is â‚¹500 crore as per Contingency Fund of India Act)
+33. C) President (Article 267; amount is ₹500 crore as per Contingency Fund of India Act)
 34. C) President (Article 155; Governor holds office during pleasure of the President)
 35. C) 552 (530 from states + 20 from UTs + 2 nominated Anglo-Indians; 543 elected + 2 nominated)
 36. A) Article 148 (CAG appointed by President; tenure 6 years or 65 years of age, whichever earlier)
 37. C) Tamil Nadu (abolished its Legislative Council in 1986; only 6 states have one currently)
 38. B) Directive Principles (Article 44: "State shall endeavour to secure UCC for citizens")
-39. B) B.R. Ambedkar (served as Law Minister from 1947â€“1951)
+39. B) B.R. Ambedkar (served as Law Minister from 1947–1951)
 40. C) 22 (originally 14 languages; expanded to 22 via amendments)
 </details>
 
 ---
 
-*Proceed to Chapter 2 â€” Indian Geography & Environment*
+*Proceed to Chapter 2 — Indian Geography & Environment*

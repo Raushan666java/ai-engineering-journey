@@ -1,4 +1,4 @@
-﻿# Chapter 3: Operating Systems â€” Exam Quick Revision
+# Chapter 3: Operating Systems — Exam Quick Revision
 
 ## Learning Objectives
 - Diagram process states and transitions
@@ -63,9 +63,9 @@
 
 | Scheduler | Frequency | Function |
 |-----------|-----------|----------|
-| **Long-term** (Job) | Low | Load processes from disk into memory â€” controls degree of multiprogramming |
-| **Short-term** (CPU) | Very high (ms) | Selects next process to run â€” dispatches from ready queue |
-| **Medium-term** | Medium | Swaps processes in/out of memory â€” for suspending/resuming |
+| **Long-term** (Job) | Low | Load processes from disk into memory — controls degree of multiprogramming |
+| **Short-term** (CPU) | Very high (ms) | Selects next process to run — dispatches from ready queue |
+| **Medium-term** | Medium | Swaps processes in/out of memory — for suspending/resuming |
 
 ---
 
@@ -79,7 +79,7 @@
 
 ### SJF (Shortest Job First)
 
-- Non-preemptive â€” choose process with smallest CPU burst next
+- Non-preemptive — choose process with smallest CPU burst next
 - **Optimal** for minimizing average waiting time
 - **Problem:** Starvation of long processes; need burst time prediction
 
@@ -91,9 +91,9 @@
 ### Round Robin (RR)
 
 - Each process gets time quantum q; circular ready queue
-- q too large â†’ degenerates to FCFS
-- q too small â†’ too many context switches (CPU overhead)
-- **Typical q:** 10â€“100 ms
+- q too large → degenerates to FCFS
+- q too small → too many context switches (CPU overhead)
+- **Typical q:** 10–100 ms
 
 ### Priority Scheduling
 
@@ -102,20 +102,20 @@
 - **Starvation:** Low-priority processes may never execute
 - **Aging:** Gradually increase priority of waiting processes
 
-### Solved Numerical â€” Gantt Chart
+### Solved Numerical — Gantt Chart
 
-**Processes:** P1(0,5), P2(1,3), P3(2,8), P4(3,2) â€” (arrival, burst)
+**Processes:** P1(0,5), P2(1,3), P3(2,8), P4(3,2) — (arrival, burst)
 
 **FCFS:**
 ```
 P1(0-5) | P2(5-8) | P3(8-16) | P4(16-18)
-Waiting times: 0,4,6,13 â†’ Average: 23/4 = 5.75
+Waiting times: 0,4,6,13 → Average: 23/4 = 5.75
 ```
 
 **SJF (non-preemptive):**
 ```
 P1(0-5) | P2(5-8) | P4(8-10) | P3(10-18)
-Waiting times: 0,4,8,5 â†’ Average: 17/4 = 4.25
+Waiting times: 0,4,8,5 → Average: 17/4 = 4.25
 ```
 
 **SRTF (preemptive):**
@@ -142,7 +142,7 @@ P1(0-4) | P2(4-7) | P3(7-11) | P1(11-12) | P3(12-16) | P4(16-18)
 ### Semaphore Operations
 
 - **S** is a non-negative integer variable
-- **wait(S) / P(S):** while (S â‰¤ 0) busy-wait; S--
+- **wait(S) / P(S):** while (S ≤ 0) busy-wait; S--
 - **signal(S) / V(S):** S++
 - **Binary semaphore:** 0 or 1 (like mutex)
 - **Counting semaphore:** Any non-negative integer
@@ -211,20 +211,20 @@ while (true) {
 | Strategy | Approach | Example |
 |----------|----------|---------|
 | Prevention | Break one of the 4 conditions | Order resources (eliminate circular wait) |
-| Avoidance | Banker's algorithm â€” safe state check | Resource allocation graph |
+| Avoidance | Banker's algorithm — safe state check | Resource allocation graph |
 | Detection | Wait-for graph cycle detection | Periodically check for cycles |
 | Recovery | Kill process or preempt resource | Victim selection, rollback |
 
 ### Banker's Algorithm
 
-**Data structures:** Available (resources free), Max (process max need), Allocation (currently held), Need = Max âˆ’ Allocation
+**Data structures:** Available (resources free), Max (process max need), Allocation (currently held), Need = Max − Allocation
 
 **Safety algorithm:**
 ```
 1. Work = Available; Finish[i] = false for all i
-2. Find i where Finish[i]==false AND Need[i] â‰¤ Work
+2. Find i where Finish[i]==false AND Need[i] ≤ Work
 3. Work = Work + Allocation[i]; Finish[i] = true
-4. If all Finish[i]==true â‡’ safe state
+4. If all Finish[i]==true ⇒ safe state
 ```
 
 **Solved Numerical:**
@@ -239,16 +239,16 @@ Available = [3, 3, 2]
 | P3 | [2,1,1] | [2,2,2] | [0,1,1] |
 | P4 | [0,0,2] | [4,3,3] | [4,3,1] |
 
-**Safe sequence:** P1 â†’ P3 â†’ P4 â†’ P0 â†’ P2 (or P1 â†’ P3 â†’ P0 â†’ P4 â†’ P2)
+**Safe sequence:** P1 → P3 → P4 → P0 → P2 (or P1 → P3 → P0 → P4 → P2)
 
 ---
 
-## 5. Memory Management â€” Paging
+## 5. Memory Management — Paging
 
 ### Logical to Physical Address Translation
 
 ```
-Logical Address (CPU) â†’ Segmentation â†’ Paging â†’ Physical Address (RAM)
+Logical Address (CPU) → Segmentation → Paging → Physical Address (RAM)
 ```
 
 **Formulas:**
@@ -256,24 +256,24 @@ Logical Address (CPU) â†’ Segmentation â†’ Paging â†’ Physical Ad
 - Page number (p) = logical_address / page_size
 - Offset (d) = logical_address % page_size
 - Frame number (f) = page_table[p]
-- Physical address = f Ã— page_size + d
+- Physical address = f × page_size + d
 
 **TLB (Translation Lookaside Buffer):**
 - Cache for page table entries
 - **Effective Access Time (EAT):**
-  - EAT = TLB_hit_ratio Ã— (TLB_access_time + memory_access)
-  - + (1 âˆ’ hit_ratio) Ã— (TLB_access_time + 2 Ã— memory_access)
+  - EAT = TLB_hit_ratio × (TLB_access_time + memory_access)
+  - + (1 − hit_ratio) × (TLB_access_time + 2 × memory_access)
 
 **Solved Example:**
 Logical address = 16 bits, page size = 4 KB, page table:
-Page 0 â†’ Frame 5; Page 1 â†’ Frame 8; Page 2 â†’ Frame 3
+Page 0 → Frame 5; Page 1 → Frame 8; Page 2 → Frame 3
 
 Address 0x2A3F:
 - Offset bits: 12 (page size = 2^12 = 4096 = 4 KB)
 - Page number: 0x2A3F / 0x1000 = 2
 - Offset: 0x2A3F % 0x1000 = 0xA3F
 - Frame: 3
-- Physical address = 3 Ã— 0x1000 + 0xA3F = 0x3A3F
+- Physical address = 3 × 0x1000 + 0xA3F = 0x3A3F
 
 ---
 
@@ -293,7 +293,7 @@ Address 0x2A3F:
 ### Optimal (MIN)
 
 - Replace page that will be used farthest in future
-- **Not implementable** in practice â€” used as benchmark
+- **Not implementable** in practice — used as benchmark
 
 ### Solved Numerical: Page Faults
 
@@ -325,16 +325,16 @@ Address 0x2A3F:
 
 Requests: 98, 183, 37, 122, 14, 124, 65, 67. Head starts at 53.
 
-**FCFS:** |98âˆ’53| + |183âˆ’98| + |37âˆ’183| + |122âˆ’37| + |14âˆ’122| + |124âˆ’14| + |65âˆ’124| + |67âˆ’65|
+**FCFS:** |98−53| + |183−98| + |37−183| + |122−37| + |14−122| + |124−14| + |65−124| + |67−65|
 = 45 + 85 + 146 + 85 + 108 + 110 + 59 + 2 = **640**
 
 **SCAN (moving upward, to 199):**
 Order: 37, 14, 67, 98, 122, 124, 183
-Wait, moving upward first: 53 â†’ 65 â†’ 67 â†’ 98 â†’ 122 â†’ 124 â†’ 183 â†’ 199 â†’ then back: 37 â†’ 14
+Wait, moving upward first: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → then back: 37 → 14
 Seek: 12+2+31+24+2+59+16 + 162+23 = **331**
 
 **C-SCAN (upward to 199, then jump to 0):**
-53â†’65â†’67â†’98â†’122â†’124â†’183â†’199, jump to 0, 14â†’37
+53→65→67→98→122→124→183→199, jump to 0, 14→37
 Seek: 12+2+31+24+2+59+16 + 199 + 14+23 = **382**
 
 ---
@@ -347,7 +347,7 @@ Seek: 12+2+31+24+2+59+16 + 199 + 14+23 = **382**
 - (c) 2^21
 - (d) 2^22
 
-**Answer:** (a) 2^19. Offset bits = log2(8192) = 13. Page number bits = 32 âˆ’ 13 = 19. So 2^19 pages.
+**Answer:** (a) 2^19. Offset bits = log2(8192) = 13. Page number bits = 32 − 13 = 19. So 2^19 pages.
 
 **Q2:** Consider reference string 1,2,3,4,1,2,5,1,2,3,4,5 with 3 frames. Using FIFO, how many page faults?
 - (a) 8
@@ -355,9 +355,9 @@ Seek: 12+2+31+24+2+59+16 + 199 + 14+23 = **382**
 - (c) 10
 - (d) 11
 
-**Answer:** (b) 9. Sequence: 1(F),2(F),3(F),4(F â†’ replace 1),1(F â†’ replace 2),2(F â†’ replace 3),5(F â†’ replace 4),1(F â†’ replace 1),2(F â†’ replace 2),3(F â†’ replace 5),4(F â†’ replace 1),5 â€” 9 faults.
+**Answer:** (b) 9. Sequence: 1(F),2(F),3(F),4(F → replace 1),1(F → replace 2),2(F → replace 3),5(F → replace 4),1(F → replace 1),2(F → replace 2),3(F → replace 5),4(F → replace 1),5 — 9 faults.
 
-**Q3:** Banker's algorithm â€” need = max âˆ’ allocation. If Need[i] â‰¤ Available, process is:
+**Q3:** Banker's algorithm — need = max − allocation. If Need[i] ≤ Available, process is:
 - (a) In deadlock
 - (b) Safe to execute
 - (c) In unsafe state
@@ -375,7 +375,7 @@ Seek: 12+2+31+24+2+59+16 + 199 + 14+23 = **382**
 |--------|--------------------|---------------------|
 | Managed by | Thread library (user space) | Kernel |
 | Context switch | Fast (no system call) | Slow (system call overhead) |
-| Blocking | One thread blocks â†’ all block | One thread blocks â†’ others run |
+| Blocking | One thread blocks → all block | One thread blocks → others run |
 | Parallelism | Limited (single core) | True parallelism on multi-core |
 | Example | POSIX Threads (pthreads in user mode) | Windows Threads, Linux Threads |
 | Mapping | Many-to-one | One-to-one / Many-to-many |
@@ -383,9 +383,9 @@ Seek: 12+2+31+24+2+59+16 + 199 + 14+23 = **382**
 ### Threading Models
 
 ```
-Many-to-One:   Many user threads â†’ 1 kernel thread (obsolete)
-One-to-One:    1 user thread â†’ 1 kernel thread (Linux, Windows)
-Many-to-Many:  Many user threads â†’ Many kernel threads (Solaris)
+Many-to-One:   Many user threads → 1 kernel thread (obsolete)
+One-to-One:    1 user thread → 1 kernel thread (Linux, Windows)
+Many-to-Many:  Many user threads → Many kernel threads (Solaris)
 ```
 
 ### Thread vs Process
@@ -396,9 +396,9 @@ Many-to-Many:  Many user threads â†’ Many kernel threads (Solaris)
 | Context switch | Heavy (page table, TLB flush) | Light (registers, stack) |
 | Communication | IPC (pipe, message queue, shared memory) | Shared memory directly |
 | Creation time | Slow (OS data structures) | Fast |
-| Protection | OS-enforced isolation | Within process â€” no isolation |
+| Protection | OS-enforced isolation | Within process — no isolation |
 
-## 9. Memory Management â€” Segmentation
+## 9. Memory Management — Segmentation
 
 ### Segmentation vs Paging
 
@@ -428,8 +428,8 @@ Many-to-Many:  Many user threads â†’ Many kernel threads (Solaris)
 
 ### Free Space Management
 
-- **Bit vector:** 1 bit per block (free/allocated) â€” fast, needs memory
-- **Linked list:** Free blocks linked â€” no extra memory, slow
+- **Bit vector:** 1 bit per block (free/allocated) — fast, needs memory
+- **Linked list:** Free blocks linked — no extra memory, slow
 - **Grouping:** Store pointers in free blocks
 - **Counting:** Track contiguous free blocks
 
@@ -445,7 +445,7 @@ Many-to-Many:  Many user threads â†’ Many kernel threads (Solaris)
 ### Demand Paging
 
 - Pages loaded only when referenced (lazy loading)
-- **Page fault:** Reference to non-resident page â†’ OS loads from disk
+- **Page fault:** Reference to non-resident page → OS loads from disk
 
 ### Thrashing
 
@@ -466,9 +466,9 @@ Many-to-Many:  Many user threads â†’ Many kernel threads (Solaris)
 
 ---
 
-## ðŸ“Œ Extended Theory â€” Deep Dive for IBPS SO Mains (2024â€“2026 Trends)
+## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
-### CPU Scheduling Simulator â€” TypeScript with Gantt Chart Output
+### CPU Scheduling Simulator — TypeScript with Gantt Chart Output
 
 ```typescript
 interface Process {
@@ -547,7 +547,7 @@ function roundRobin(processes: Process[], quantum: number): { gantt: GanttSegmen
 }
 ```
 
-### Banker's Algorithm â€” TypeScript Implementation
+### Banker's Algorithm — TypeScript Implementation
 
 ```typescript
 interface BankerState {
@@ -580,10 +580,10 @@ function isSafeState(state: BankerState): { safe: boolean; sequence: number[] } 
   return { safe: true, sequence };
 }
 
-// Example: Safe sequence P1â†’P3â†’P4â†’P0â†’P2
+// Example: Safe sequence P1→P3→P4→P0→P2
 ```
 
-### Page Replacement Simulator â€” TypeScript
+### Page Replacement Simulator — TypeScript
 
 ```typescript
 function pageFaults(reference: number[], frames: number, algorithm: 'FIFO' | 'LRU' | 'OPTIMAL'): number {
@@ -624,10 +624,10 @@ function pageFaults(reference: number[], frames: number, algorithm: 'FIFO' | 'LR
 
 > **PYQ 2025:** Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with 3 frames. Calculate page faults for LRU.
 
-**Answer:** LRU faults = 10. Sequence: 1(F),2(F),3(F),4(Fâ†’rep 1),1(Fâ†’rep 2),2(Fâ†’rep 3),5(Fâ†’rep 4),1(Fâ†’rep 5),2(Fâ†’rep 1),3(Fâ†’rep 2?),4(Fâ†’rep ?),5 â€” Let me trace carefully: Pages in memory (LRU order at each step):
+**Answer:** LRU faults = 10. Sequence: 1(F),2(F),3(F),4(F→rep 1),1(F→rep 2),2(F→rep 3),5(F→rep 4),1(F→rep 5),2(F→rep 1),3(F→rep 2?),4(F→rep ?),5 — Let me trace carefully: Pages in memory (LRU order at each step):
 1: [1] F=1. 2: [2,1] F=2. 3: [3,2,1] F=3. 4: [4,3,2] F=4 (rep 1 LRU). 1: [1,4,3] F=5 (rep 2 LRU). 2: [2,1,4] F=6 (rep 3 LRU). 5: [5,2,1] F=7 (rep 4 LRU). 1: [1,5,2] hit. 2: [2,1,5] hit. 3: [3,2,1] F=8 (rep 5 LRU). 4: [4,3,2] F=9 (rep 1 LRU). 5: [5,4,3] F=10 (rep 2 LRU). Total = 10.
 
-### Synchronization Problems â€” Producer-Consumer with TypeScript
+### Synchronization Problems — Producer-Consumer with TypeScript
 
 ```typescript
 class BoundedBuffer<T> {
@@ -663,7 +663,7 @@ class BoundedBuffer<T> {
 }
 ```
 
-### Dining Philosopher â€” Deadlock-Free Solution
+### Dining Philosopher — Deadlock-Free Solution
 
 ```typescript
 class DiningPhilosophers {
@@ -706,22 +706,22 @@ class DiningPhilosophers {
 }
 ```
 
-### Memory Management â€” Multi-Level Paging Numerical
+### Memory Management — Multi-Level Paging Numerical
 
 > **PYQ 2024:** A 32-bit system uses 4 KB pages and 4-byte page table entries. How many levels of page table are needed?
 
 **Solution:**
-- Page size = 4 KB = 2^12 â†’ offset = 12 bits
-- Virtual address bits = 32 â†’ VPN bits = 20
-- Page table size per process = 2^20 Ã— 4 bytes = 4 MB
+- Page size = 4 KB = 2^12 → offset = 12 bits
+- Virtual address bits = 32 → VPN bits = 20
+- Page table size per process = 2^20 × 4 bytes = 4 MB
 - Each page table page holds 4096/4 = 1024 = 2^10 entries
-- Levels needed: Level 1 (10 bits) â†’ 2^10 entries pointing to Level 2 pages
-- Level 2 (10 bits) â†’ 2^10 entries = 1024 PTEs â†’ covers 2^20 VPN space
+- Levels needed: Level 1 (10 bits) → 2^10 entries pointing to Level 2 pages
+- Level 2 (10 bits) → 2^10 entries = 1024 PTEs → covers 2^20 VPN space
 - So 2-level page table is sufficient.
 
 **Alternatively:** 20 VPN bits / 10 bits per level = 2 levels.
 
-### Disk Scheduling â€” TypeScript Simulator
+### Disk Scheduling — TypeScript Simulator
 
 ```typescript
 function diskScheduling(
@@ -748,7 +748,7 @@ function diskScheduling(
       const down = pending.filter(r => r < current).sort((a, b) => b - a);
       next = up.length > 0 ? up.shift()! : down.shift()!;
       if (up.length === 0 && down.length > 0) {
-        // reached end â€” reverse direction
+        // reached end — reverse direction
         pending.splice(0, pending.length, ...down, ...up);
         next = down.shift()!;
       } else {
@@ -767,7 +767,7 @@ function diskScheduling(
 }
 ```
 
-## ðŸ“ Solved Examples (20 MCQs)
+## 📝 Solved Examples (20 MCQs)
 
 <details>
 <summary>Q1: Which scheduling algorithm minimizes average waiting time?</summary>
@@ -784,13 +784,13 @@ function diskScheduling(
 <details>
 <summary>Q3: How many page faults occur for FIFO with reference 1,2,3,4,1,2,5,1,2,3,4,5 and 4 frames?</summary>
 (a) 9 (b) 10 (c) 11 (d) 12
-**Answer:** (b) 10. FIFO with 4 frames: 1(F),2(F),3(F),4(F) â†’ [1,2,3,4]. 1(hit),2(hit),5(Fâ†’rep 1) â†’ [2,3,4,5]. 1(Fâ†’rep 2) â†’ [3,4,5,1]. 2(Fâ†’rep 3) â†’ [4,5,1,2]. 3(Fâ†’rep 4) â†’ [5,1,2,3]. 4(Fâ†’rep 5) â†’ [1,2,3,4]. 5(Fâ†’rep 1) â†’ [2,3,4,5]. Total = 10.
+**Answer:** (b) 10. FIFO with 4 frames: 1(F),2(F),3(F),4(F) → [1,2,3,4]. 1(hit),2(hit),5(F→rep 1) → [2,3,4,5]. 1(F→rep 2) → [3,4,5,1]. 2(F→rep 3) → [4,5,1,2]. 3(F→rep 4) → [5,1,2,3]. 4(F→rep 5) → [1,2,3,4]. 5(F→rep 1) → [2,3,4,5]. Total = 10.
 </details>
 
 <details>
 <summary>Q4: In Banker's algorithm, if Available = [3,3,0], Need = [[7,4,3],[1,2,2],[6,0,0],[0,1,1],[4,3,1]], which process can execute?</summary>
 (a) P0 (b) P1 (c) P2 (d) None
-**Answer:** (b) P1. Need[1] = [1,2,2] â‰¤ [3,3,0]? 2 â‰¤ 0? No. Wait: Need[3] = [0,1,0] with correct numbers: Let me use the original table: Allocation [[0,1,0],[2,0,0],[3,0,2],[2,1,1],[0,0,2]], Need = [[7,4,3],[1,2,2],[6,0,0],[0,1,1],[4,3,1]]. Available = [3,3,2]. Need[3] = [0,1,1] â‰¤ [3,3,2] âœ“. So P3 is safe. Also P1 [1,2,2] â‰¤ [3,3,2] âœ“. Multiple safe.
+**Answer:** (b) P1. Need[1] = [1,2,2] ≤ [3,3,0]? 2 ≤ 0? No. Wait: Need[3] = [0,1,0] with correct numbers: Let me use the original table: Allocation [[0,1,0],[2,0,0],[3,0,2],[2,1,1],[0,0,2]], Need = [[7,4,3],[1,2,2],[6,0,0],[0,1,1],[4,3,1]]. Available = [3,3,2]. Need[3] = [0,1,1] ≤ [3,3,2] ✓. So P3 is safe. Also P1 [1,2,2] ≤ [3,3,2] ✓. Multiple safe.
 </details>
 
 <details>
@@ -814,25 +814,25 @@ function diskScheduling(
 <details>
 <summary>Q8: A counting semaphore initialized to 5 has 3 wait() and 1 signal() operations. What is the final value?</summary>
 (a) 1 (b) 2 (c) 3 (d) 7
-**Answer:** (c) 3. Initial = 5. After 3 waits: 5 âˆ’ 3 = 2. After 1 signal: 2 + 1 = 3.
+**Answer:** (c) 3. Initial = 5. After 3 waits: 5 − 3 = 2. After 1 signal: 2 + 1 = 3.
 </details>
 
 <details>
 <summary>Q9: In the readers-writers problem (first type), what happens if a writer is writing and a reader arrives?</summary>
 (a) Reader waits (b) Reader reads (c) Writer starves (d) Both abort
-**Answer:** (a) Reader waits. In the first R-W problem, readers have priority but mutual exclusion is maintained â€” no one reads while a writer writes.
+**Answer:** (a) Reader waits. In the first R-W problem, readers have priority but mutual exclusion is maintained — no one reads while a writer writes.
 </details>
 
 <details>
 <summary>Q10: What is the effective access time with TLB hit ratio = 98%, TLB access = 2ns, memory access = 50ns?</summary>
 (a) 51 ns (b) 53.96 ns (c) 54 ns (d) 100 ns
-**Answer:** (b) 53.96 ns. EAT = 0.98Ã—(2+50) + 0.02Ã—(2+100) = 0.98Ã—52 + 0.02Ã—102 = 50.96 + 2.04 = 53 ns.
+**Answer:** (b) 53.96 ns. EAT = 0.98×(2+50) + 0.02×(2+100) = 0.98×52 + 0.02×102 = 50.96 + 2.04 = 53 ns.
 </details>
 
 <details>
 <summary>Q11: Which process state transition is NOT possible?</summary>
-(a) Running â†’ Ready (b) Blocked â†’ Running (c) Ready â†’ Running (d) Running â†’ Blocked
-**Answer:** (b) Blocked â†’ Running. Blocked must go to Ready first (after I/O completion), then to Running (after dispatch).
+(a) Running → Ready (b) Blocked → Running (c) Ready → Running (d) Running → Blocked
+**Answer:** (b) Blocked → Running. Blocked must go to Ready first (after I/O completion), then to Running (after dispatch).
 </details>
 
 <details>
@@ -874,7 +874,7 @@ function diskScheduling(
 <details>
 <summary>Q18: What is the main advantage of multilevel feedback queue scheduling?</summary>
 (a) O(1) complexity (b) Starvation-free (c) Adapts to process behavior (d) Simple implementation
-**Answer:** (c) Adapts to process behavior. Processes move between queues based on CPU burst patterns â€” I/O-bound (higher priority) and CPU-bound (lower priority) are handled appropriately.
+**Answer:** (c) Adapts to process behavior. Processes move between queues based on CPU burst patterns — I/O-bound (higher priority) and CPU-bound (lower priority) are handled appropriately.
 </details>
 
 <details>
@@ -889,20 +889,20 @@ function diskScheduling(
 **Answer:** (b) pthread_create(). It takes thread ID, attributes, start routine, and argument.
 </details>
 
-## ðŸ“– Exercise Bank (30 Questions)
+## 📖 Exercise Bank (30 Questions)
 
-1. Processes: P1(0,6), P2(1,4), P3(2,3), P4(3,5) â€” (arrival, burst). Draw Gantt charts for FCFS, SJF, SRTF, RR(q=2). Compute avg waiting and turnaround time.
+1. Processes: P1(0,6), P2(1,4), P3(2,3), P4(3,5) — (arrival, burst). Draw Gantt charts for FCFS, SJF, SRTF, RR(q=2). Compute avg waiting and turnaround time.
 2. Given Available = [5,3,2], Allocation = [[0,1,0],[2,0,0],[3,0,2],[2,1,1],[0,0,2]], Max = [[7,5,3],[3,2,2],[9,0,2],[2,2,2],[4,3,3]]. Find Need matrix and check if safe state exists.
 3. Reference string: 4,7,3,0,1,7,3,0,4,7,3,0,1,4 with 3 frames. Compute page faults for FIFO, LRU, Optimal.
 4. Logical address space = 8 pages, page size = 1024 bytes, mapped to 32 frames. Physical address: How many bits? Page table entries?
 5. Solve: 5 philosophers, 5 chopsticks. Show how deadlock occurs and provide two solutions with pseudocode.
 6. Write a TypeScript program to compute average waiting time for Priority Scheduling (preemptive).
 7. Disk requests: 95, 180, 34, 119, 11, 123, 62, 64. Head at 50, direction toward 0. Calculate seek for FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK.
-8. For a system with 16-bit address and 4KB pages, translate logical address 0x2F3A to physical address given page table: P0â†’F5, P1â†’F2, P2â†’F8, P3â†’F1.
+8. For a system with 16-bit address and 4KB pages, translate logical address 0x2F3A to physical address given page table: P0→F5, P1→F2, P2→F8, P3→F1.
 9. Explain the Producer-Consumer problem. Write TypeScript code using async/await with proper synchronization.
 10. What is the difference between preemptive and non-preemptive scheduling? Give examples of each.
 11. Calculate EAT with: TLB hit = 95%, TLB access = 5ns, memory access = 80ns.
-12. For a process with 10 pages and working set window Î” = 5, trace the working set for reference: 1,2,3,2,1,4,3,2,1,5,4,3,2,1.
+12. For a process with 10 pages and working set window Δ = 5, trace the working set for reference: 1,2,3,2,1,4,3,2,1,5,4,3,2,1.
 13. Design a type-safe multilevel feedback queue scheduler in TypeScript.
 14. Compare contiguous, linked, and indexed file allocation with a file of 5 blocks.
 15. A system has 4 resources of type A and 3 of type B. Three processes: P0 (max A=2, B=2), P1 (max A=3, B=2), P2 (max A=2, B=2). Current allocation: P0=(1,1), P1=(2,1), P2=(1,0). Is this a safe state?
@@ -911,7 +911,7 @@ function diskScheduling(
 18. Write TypeScript code to simulate memory allocation using first-fit, best-fit, and worst-fit strategies.
 19. Given: Virtual address = 32 bits, page size = 16 KB, PTE = 4 bytes. Calculate the number of page table levels required.
 20. Explain the difference between monolithic kernel, microkernel, and hybrid kernel architectures with examples.
-21. For 4 processes with CPU/IO bursts: P1(5,2,3), P2(3,4,2), P3(4,1,4), P4(2,3,3) â€” simulate FCFS scheduling.
+21. For 4 processes with CPU/IO bursts: P1(5,2,3), P2(3,4,2), P3(4,1,4), P4(2,3,3) — simulate FCFS scheduling.
 22. What is the relationship between page size and TLB reach? Calculate TLB reach for 64 TLB entries and 4KB pages.
 23. Show how a counting semaphore can be implemented using binary semaphores.
 24. Write a TypeScript program to detect deadlock using wait-for graph cycle detection.
@@ -925,38 +925,38 @@ function diskScheduling(
 **Answer Key:**
 
 1. FCFS: P1(0-6), P2(6-10), P3(10-13), P4(13-18). WT: 0,5,8,10 avg=5.75. SJF: P1(0-6), P3(6-9), P2(9-13), P4(13-18). WT: 0,8,4,10 avg=5.5. SRTF: complex preemption. RR(q=2): P1(0-2), P2(2-4), P3(4-6), P1(6-8), P4(8-10), P2(10-12), P3(12-13), P4(13-16), P1(16-18)
-2. Need = [[7,4,3],[1,2,2],[6,0,0],[0,1,1],[4,3,1]]. Safe: P1â†’P3â†’P4â†’P0â†’P2
+2. Need = [[7,4,3],[1,2,2],[6,0,0],[0,1,1],[4,3,1]]. Safe: P1→P3→P4→P0→P2
 3. FIFO=9, LRU=10, OPT=7
 4. Page offset = 10 bits (1024=2^10). Logical address = 3+10=13 bits. Physical = 5+10=15 bits. Page table = 8 entries
 5. Deadlock: all pick left (right) simultaneously. Solutions: max 4 eaters, asymmetric pickup, mutex on eating
-7. FCFS: 45+85+146+85+108+112+61+2=644. SSTF: from 50â†’34â†’11â†’62â†’64â†’95â†’119â†’123â†’180=310. SCAN toward 0: 34â†’11â†’0â†’62â†’64â†’95â†’119â†’123â†’180=299
-8. Offset=12 bits. Page# = 0x2F3A >> 12 = 2. Frame = 8. Physical = 8Ã—4096 + 0xF3A = 0x8F3A
+7. FCFS: 45+85+146+85+108+112+61+2=644. SSTF: from 50→34→11→62→64→95→119→123→180=310. SCAN toward 0: 34→11→0→62→64→95→119→123→180=299
+8. Offset=12 bits. Page# = 0x2F3A >> 12 = 2. Frame = 8. Physical = 8×4096 + 0xF3A = 0x8F3A
 9. See Producer-Consumer code above in TypeScript section
-11. EAT = 0.95Ã—(5+80) + 0.05Ã—(5+160) = 80.75 + 8.25 = 89 ns
-12. Window Î”=5: {1,2,3}â†’{1,2,3}â†’{1,2,3}â†’{1,2,3,4}â†’{1,2,3,4}â†’{2,3,4}â†’{1,2,3,4}â†’...
+11. EAT = 0.95×(5+80) + 0.05×(5+160) = 80.75 + 8.25 = 89 ns
+12. Window Δ=5: {1,2,3}→{1,2,3}→{1,2,3}→{1,2,3,4}→{1,2,3,4}→{2,3,4}→{1,2,3,4}→...
 13. Multiple queues with different priorities. Process starts at highest, moves down on timeout, moves up on I/O wait
 14. Contiguous: blocks B0-B4 consecutive. Linked: each block has pointer to next. Indexed: single index block points to all data blocks
-15. Available = [2,1]. Need = [[1,1],[1,1],[1,2]]. Check P0: [1,1]â‰¤[2,1]â†’Allocateâ†’Avail=[3,2]. Check P1: [1,1]â‰¤[3,2]â†’Avail=[5,3]. Check P2: [1,2]â‰¤[5,3]â†’Safe. Sequence: P0â†’P1â†’P2
-16. Priority inversion: low-priority holds lock needed by high-priority â†’ medium-priority runs (no lock) â†’ high-priority starves. Priority inheritance: low-priority temporarily inherits high priority
-17. With 3 frames: we saw 9 faults. With 4 frames: 10 faults (more!) â†’ Belady's anomaly confirmed
+15. Available = [2,1]. Need = [[1,1],[1,1],[1,2]]. Check P0: [1,1]≤[2,1]→Allocate→Avail=[3,2]. Check P1: [1,1]≤[3,2]→Avail=[5,3]. Check P2: [1,2]≤[5,3]→Safe. Sequence: P0→P1→P2
+16. Priority inversion: low-priority holds lock needed by high-priority → medium-priority runs (no lock) → high-priority starves. Priority inheritance: low-priority temporarily inherits high priority
+17. With 3 frames: we saw 9 faults. With 4 frames: 10 faults (more!) → Belady's anomaly confirmed
 19. Page size = 2^14. Offset = 14. VPN = 32-14 = 18. Entries per page table page = 2^12/2^2 = 2^10 = 1024. Levels = ceil(18/10) = 2
-22. TLB reach = TLB entries Ã— page size = 64 Ã— 4KB = 256 KB
+22. TLB reach = TLB entries × page size = 64 × 4KB = 256 KB
 23. Counting semaphore: binary mutex + binary delay semaphore. Wait: P(mutex), if count==0 {V(mutex), P(delay), P(mutex)}; count--; V(mutex). Signal: P(mutex); count++; if count==1 {V(delay)}; V(mutex)
-24. Build wait-for graph adjacency matrix. Use DFS to detect cycles. If cycle exists â†’ deadlock
+24. Build wait-for graph adjacency matrix. Use DFS to detect cycles. If cycle exists → deadlock
 25. Approximation: with 6 distinct pages and 4 frames, expect ~75% fault rate = 15 faults
 26. Dispatcher: gives control of CPU to process selected by scheduler. Dispatch latency = time to stop one process and start another
 27. Paging: fixed size, internal fragmentation, transparent to user. Segmentation: variable size, external fragmentation, visible to user
-28. RAID-5 usable = (n-1)Ã—size = 3Ã—1TB = 3TB. Can tolerate 1 disk failure
-30. Fork creates child with same page tables. Pages marked read-only COW. On write â†’ page fault â†’ kernel copies page â†’ child gets private copy
+28. RAID-5 usable = (n-1)×size = 3×1TB = 3TB. Can tolerate 1 disk failure
+30. Fork creates child with same page tables. Pages marked read-only COW. On write → page fault → kernel copies page → child gets private copy
 
 ---
 
 ## Summary
-- **Process states:** New â†’ Ready â†’ Running â†’ Blocked â†’ Terminated
+- **Process states:** New → Ready → Running → Blocked → Terminated
 - **Scheduling:** FCFS (convoy), SJF (optimal avg wait), RR (time quantum), Priority (starvation)
 - **Sync:** Semaphores P/V, producer-consumer (counting sem), readers-writers, dining philosopher (deadlock risk)
 - **Deadlock:** 4 conditions (ME + H&amp;W + No-Preempt + Circular), Banker's algorithm (safe/unsafe state)
-- **Paging:** Logicalâ†’Physical via page table, TLB for speed, EAT formula
+- **Paging:** Logical→Physical via page table, TLB for speed, EAT formula
 - **Page replacement:** FIFO (Belady's anomaly), LRU (no anomaly), Optimal (benchmark)
 - **Disk scheduling:** SCAN (elevator), C-SCAN (uniform), SSTF (starvation possible)
 - **Threads:** User-level (fast, managed by library) vs Kernel-level (true parallelism)
@@ -968,13 +968,13 @@ function diskScheduling(
 
 ## HOT Topics (Frequently Asked in IBPS SO IT Mains)
 1. CPU scheduling Gantt chart and average waiting/turnaround time calculation
-2. Banker's algorithm â€” determine safe sequence from given allocation and max matrices
+2. Banker's algorithm — determine safe sequence from given allocation and max matrices
 3. Page fault calculation for FIFO, LRU, Optimal reference strings
 4. Logical to physical address translation with page table
-5. Semaphore-based synchronization code â€” find initial value(s) for correct execution
-6. Disk scheduling â€” total seek distance calculation for SCAN, C-SCAN, LOOK
-7. Deadlock detection â€” wait-for graph analysis
-8. Virtual memory concepts â€” page size tradeoff, thrashing detection
+5. Semaphore-based synchronization code — find initial value(s) for correct execution
+6. Disk scheduling — total seek distance calculation for SCAN, C-SCAN, LOOK
+7. Deadlock detection — wait-for graph analysis
+8. Virtual memory concepts — page size tradeoff, thrashing detection
 
 ---
 
@@ -997,7 +997,7 @@ A3: SSTF (Shortest Seek Time First). It always serves the closest request, leadi
 
 <details>
 <summary>Q4: What is the time quantum for Round Robin scheduling if the average context switch time is 0.5 ms and the desired CPU utilization is at least 90%?</summary>
-A4: The context switch overhead fraction = context_switch_time / quantum. For 90% utilization: 0.5/q â‰¤ 0.1 â†’ q â‰¥ 5 ms.
+A4: The context switch overhead fraction = context_switch_time / quantum. For 90% utilization: 0.5/q ≤ 0.1 → q ≥ 5 ms.
 </details>
 
 <details>

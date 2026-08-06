@@ -1,6 +1,6 @@
-﻿# Chapter 11: Graph Shortest Paths
+# Chapter 11: Graph Shortest Paths
 
-> **Prerequisites:** [Chapter 10: Dynamic Programming â€” Trees & Grids](./10-dp-trees-grids.md) â€” Recursive problem-solving on graph structures | **Next:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) â€” From shortest paths to minimum-cost spanning trees
+> **Prerequisites:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — Recursive problem-solving on graph structures | **Next:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — From shortest paths to minimum-cost spanning trees
 
 ## Learning Objectives
 
@@ -35,11 +35,11 @@ By the end of this chapter, students will be able to:
 
 ## Why Shortest Path Matters
 
-Imagine you are driving from New York to Los Angeles. Your GPS must compute the fastest route across thousands of highways, accounting for traffic, road closures, and distance. This is the **shortest path problem** â€” the computational bedrock of navigation systems.
+Imagine you are driving from New York to Los Angeles. Your GPS must compute the fastest route across thousands of highways, accounting for traffic, road closures, and distance. This is the **shortest path problem** — the computational bedrock of navigation systems.
 
-In computing, "shortest" rarely means literal meters. It means **minimum cost** â€” travel time, bandwidth delay, financial transaction fees, or even the number of social connections separating two people. Every time your phone routes a call, your email finds a server, or a delivery drone plots a course, a shortest-path algorithm runs underneath.
+In computing, "shortest" rarely means literal meters. It means **minimum cost** — travel time, bandwidth delay, financial transaction fees, or even the number of social connections separating two people. Every time your phone routes a call, your email finds a server, or a delivery drone plots a course, a shortest-path algorithm runs underneath.
 
-**Real-world analogy:** Consider a courier service dispatching a truck across a city. Each intersection is a vertex, each road is an edge, and the travel time is the edge weight. The dispatcher needs the route that minimizes total time. If some roads have tolls (positive weight) and others have discounts (negative weight), the problem becomes harder. If the city has a loop that somehow saves time each trip (negative cycle), the concept of "shortest" breaks entirely â€” you could drive forever and keep reducing cost.
+**Real-world analogy:** Consider a courier service dispatching a truck across a city. Each intersection is a vertex, each road is an edge, and the travel time is the edge weight. The dispatcher needs the route that minimizes total time. If some roads have tolls (positive weight) and others have discounts (negative weight), the problem becomes harder. If the city has a loop that somehow saves time each trip (negative cycle), the concept of "shortest" breaks entirely — you could drive forever and keep reducing cost.
 
 The four algorithms in this chapter represent different trade-offs: speed versus generality, simplicity versus power. Choosing the right one is the first real test of algorithmic maturity.
 
@@ -51,7 +51,7 @@ The four algorithms in this chapter represent different trade-offs: speed versus
 |-------|-------------|-------------------|
 | Dijkstra | Priority queue + relaxation | O(E log V) with binary heap; non-negative weights only |
 | Bellman-Ford | Relax all edges V-1 times | O(VE); detects negative cycles via Vth iteration |
-| Floyd-Warshall | dp[k][i][j] via intermediate k | O(VÂ³) for all-pairs; simple 3-loop implementation |
+| Floyd-Warshall | dp[k][i][j] via intermediate k | O(V³) for all-pairs; simple 3-loop implementation |
 | DAG Shortest Paths | Topological order + relaxation | O(V+E); linear time for DAGs |
 | A* Search | Heuristic-guided Dijkstra | Admissible heuristic guarantees optimality |
 
@@ -81,11 +81,11 @@ flowchart LR
 
 **Problem:** Find the shortest paths from a source vertex \( s \) to all other vertices in a weighted graph with non-negative edge weights.
 
-**Real-world analogy:** Your GPS calculates the shortest route from your current location to a destination. Each intersection is a vertex, each road segment is an edge with weight = travel time. The GPS maintains a list of "best known travel time" for each intersection. It always explores the intersection with the shortest current estimate first â€” you wouldn't drive 10 minutes in the wrong direction just to save 30 seconds later. This greedy approach works because travel times are never negative (you can't arrive before you left).
+**Real-world analogy:** Your GPS calculates the shortest route from your current location to a destination. Each intersection is a vertex, each road segment is an edge with weight = travel time. The GPS maintains a list of "best known travel time" for each intersection. It always explores the intersection with the shortest current estimate first — you wouldn't drive 10 minutes in the wrong direction just to save 30 seconds later. This greedy approach works because travel times are never negative (you can't arrive before you left).
 
 #### Algorithm Steps
 
-1. Initialize `dist[source] = 0` and `dist[v] = âˆž` for all other vertices.
+1. Initialize `dist[source] = 0` and `dist[v] = ∞` for all other vertices.
 2. Insert `(dist[v], v)` into a min-priority queue for all vertices.
 3. While the priority queue is not empty:
    - Extract the vertex `u` with the smallest distance.
@@ -118,27 +118,27 @@ Dijkstra(G, s):
 
 | Edge | Weight |
 |------|--------|
-| 0â†’1 | 4 |
-| 0â†’2 | 1 |
-| 2â†’1 | 2 |
-| 1â†’3 | 1 |
-| 2â†’3 | 5 |
-| 3â†’4 | 3 |
+| 0→1 | 4 |
+| 0→2 | 1 |
+| 2→1 | 2 |
+| 1→3 | 1 |
+| 2→3 | 5 |
+| 3→4 | 3 |
 
 **Step-by-step trace:**
 
 | Step | Extracted | dist[0] | dist[1] | dist[2] | dist[3] | dist[4] | Relaxed Edges |
 |------|-----------|---------|---------|---------|---------|---------|---------------|
-| Init | â€” | 0 | âˆž | âˆž | âˆž | âˆž | â€” |
-| 1 | 0 | **0** | 4 | 1 | âˆž | âˆž | 0â†’1 (4), 0â†’2 (1) |
-| 2 | 2 | **0** | min(4,1+2)=**3** | **1** | 1+5=6 | âˆž | 2â†’1 (2), 2â†’3 (5) |
-| 3 | 1 | **0** | **3** | **1** | min(6,3+1)=**4** | âˆž | 1â†’3 (1) |
-| 4 | 3 | **0** | **3** | **1** | **4** | 4+3=7 | 3â†’4 (3) |
-| 5 | 4 | **0** | **3** | **1** | **4** | **7** | â€” |
+| Init | — | 0 | ∞ | ∞ | ∞ | ∞ | — |
+| 1 | 0 | **0** | 4 | 1 | ∞ | ∞ | 0→1 (4), 0→2 (1) |
+| 2 | 2 | **0** | min(4,1+2)=**3** | **1** | 1+5=6 | ∞ | 2→1 (2), 2→3 (5) |
+| 3 | 1 | **0** | **3** | **1** | min(6,3+1)=**4** | ∞ | 1→3 (1) |
+| 4 | 3 | **0** | **3** | **1** | **4** | 4+3=7 | 3→4 (3) |
+| 5 | 4 | **0** | **3** | **1** | **4** | **7** | — |
 
 **Final distances:** dist[0]=0, dist[1]=3, dist[2]=1, dist[3]=4, dist[4]=7.
 
-**Path reconstruction:** 0â†’2â†’1â†’3â†’4 (total 7).
+**Path reconstruction:** 0→2→1→3→4 (total 7).
 
 #### C++ Implementation
 
@@ -233,7 +233,7 @@ public class Dijkstra {
 | Time (Fibonacci heap) | O(V log V + E) | DecreaseKey is O(1) amortized, ExtractMin remains O(log V) |
 | Space | O(V) | Distance array + priority queue stores at most V entries |
 
-**Why O(E log V) and not O(E)?** The priority queue operations â€” push and pop â€” each take O(log V) time. Since every edge may cause a push and every vertex causes a pop, the cost multiplies.
+**Why O(E log V) and not O(E)?** The priority queue operations — push and pop — each take O(log V) time. Since every edge may cause a push and every vertex causes a pop, the cost multiplies.
 
 #### Advantages & Disadvantages
 
@@ -242,19 +242,19 @@ public class Dijkstra {
 | Fastest single-source algorithm for non-negative weights | Fails completely with negative edge weights |
 | O(E log V) is efficient for sparse graphs | Cannot detect negative cycles |
 | Lazy deletion pattern is simple to implement | Not suitable for all-pairs shortest paths |
-| Works on directed and undirected graphs | Requires dense graph representation for worst-case O(VÂ²) if using simple array |
+| Works on directed and undirected graphs | Requires dense graph representation for worst-case O(V²) if using simple array |
 
 #### Edge Cases
 
 | Edge Case | Behavior |
 |-----------|----------|
 | **Single node** | dist[source] = 0, algorithm terminates immediately |
-| **Disconnected graph** | dist[v] remains âˆž for unreachable vertices |
+| **Disconnected graph** | dist[v] remains ∞ for unreachable vertices |
 | **Zero-weight edges** | Works correctly; zero-weight edges are handled as non-negative |
 | **Source = destination** | Returns 0; algorithm finds the shortest cycle through source if one exists |
 | **Large weights** | Use `long long` to avoid overflow when summing distances |
 
-> **Pro Tip:** Dijkstra's lazy deletion pattern (checking `d != dist[u]` before processing) is preferred over DecreaseKey â€” it's simpler and has the same asymptotic complexity with a binary heap.
+> **Pro Tip:** Dijkstra's lazy deletion pattern (checking `d != dist[u]` before processing) is preferred over DecreaseKey — it's simpler and has the same asymptotic complexity with a binary heap.
 >
 > **Remember:** Dijkstra fails with negative weights because a later negative edge could create a shorter path to an already-"settled" vertex.
 
@@ -267,11 +267,11 @@ public class Dijkstra {
 
 **Problem:** Find shortest paths when edge weights may be negative. Also detects negative cycles reachable from the source.
 
-**Real-world analogy:** Suppose you are trading currencies. Converting USD â†’ EUR â†’ GBP might cost you 0.2% each hop, but a rare triangular arbitrage opportunity exists: USD â†’ JPY â†’ EUR â†’ USD yields a net profit of 0.1% â€” a negative-weight cycle. You could keep trading in this loop and accumulate infinite profit. Bellman-Ford detects exactly such pathological situations.
+**Real-world analogy:** Suppose you are trading currencies. Converting USD → EUR → GBP might cost you 0.2% each hop, but a rare triangular arbitrage opportunity exists: USD → JPY → EUR → USD yields a net profit of 0.1% — a negative-weight cycle. You could keep trading in this loop and accumulate infinite profit. Bellman-Ford detects exactly such pathological situations.
 
 #### Algorithm Steps
 
-1. Initialize `dist[source] = 0` and `dist[v] = âˆž` for all other vertices.
+1. Initialize `dist[source] = 0` and `dist[v] = ∞` for all other vertices.
 2. Repeat |V| - 1 times:
    - For every edge (u, v) with weight w:
      - If `dist[u] + w < dist[v]`, update `dist[v] = dist[u] + w`.
@@ -300,32 +300,32 @@ BellmanFord(G, s):
 
 | Edge | Weight |
 |------|--------|
-| 0â†’1 | 6 |
-| 0â†’2 | 5 |
-| 1â†’3 | -1 |
-| 2â†’1 | -2 |
-| 2â†’3 | 4 |
+| 0→1 | 6 |
+| 0→2 | 5 |
+| 1→3 | -1 |
+| 2→1 | -2 |
+| 2→3 | 4 |
 
 **Step-by-step trace (each iteration relaxes ALL edges):**
 
 | Iteration | Edge Processed | dist[0] | dist[1] | dist[2] | dist[3] |
 |-----------|---------------|---------|---------|---------|---------|
-| Init | â€” | 0 | âˆž | âˆž | âˆž |
-| 1 | 0â†’1 | 0 | 6 | âˆž | âˆž |
-| 1 | 0â†’2 | 0 | 6 | 5 | âˆž |
-| 1 | 2â†’1 | 0 | min(6,5-2)=**3** | 5 | âˆž |
-| 1 | 2â†’3 | 0 | 3 | 5 | 5+4=9 |
-| 1 | 1â†’3 | 0 | 3 | 5 | min(9,3-1)=**2** |
-| 2 | 0â†’1 | 0 | min(3,0+6)=3 | 5 | 2 |
-| 2 | 0â†’2 | 0 | 3 | 5 | 2 |
-| 2 | 2â†’1 | 0 | min(3,5-2)=3 | 5 | 2 |
-| 2 | 2â†’3 | 0 | 3 | 5 | min(2,5+4)=2 |
-| 2 | 1â†’3 | 0 | 3 | 5 | min(2,3-1)=2 |
+| Init | — | 0 | ∞ | ∞ | ∞ |
+| 1 | 0→1 | 0 | 6 | ∞ | ∞ |
+| 1 | 0→2 | 0 | 6 | 5 | ∞ |
+| 1 | 2→1 | 0 | min(6,5-2)=**3** | 5 | ∞ |
+| 1 | 2→3 | 0 | 3 | 5 | 5+4=9 |
+| 1 | 1→3 | 0 | 3 | 5 | min(9,3-1)=**2** |
+| 2 | 0→1 | 0 | min(3,0+6)=3 | 5 | 2 |
+| 2 | 0→2 | 0 | 3 | 5 | 2 |
+| 2 | 2→1 | 0 | min(3,5-2)=3 | 5 | 2 |
+| 2 | 2→3 | 0 | 3 | 5 | min(2,5+4)=2 |
+| 2 | 1→3 | 0 | 3 | 5 | min(2,3-1)=2 |
 | 3 | (all edges) | 0 | 3 | 5 | 2 (no change) |
 
 **Final distances:** dist[0]=0, dist[1]=3, dist[2]=5, dist[3]=2.
 
-**Verification:** A 4th iteration produces no changes â€” no negative cycle.
+**Verification:** A 4th iteration produces no changes — no negative cycle.
 
 #### C++ Implementation
 
@@ -406,19 +406,19 @@ public class BellmanFord {
 
 | Aspect | Complexity | Why? |
 |--------|------------|------|
-| Time | O(VÂ·E) | Outer loop runs V-1 times; each iteration scans all E edges |
+| Time | O(V·E) | Outer loop runs V-1 times; each iteration scans all E edges |
 | Space | O(V) | Single distance array + edge list (O(E) if counting input) |
 
-**Why O(VÂ·E) and not faster?** Each iteration propagates distance information one edge further along every possible path. In the worst case, the shortest path visits every vertex, requiring V-1 full passes. The inner loop must check every edge each pass because you cannot know which edges are relevant without scanning.
+**Why O(V·E) and not faster?** Each iteration propagates distance information one edge further along every possible path. In the worst case, the shortest path visits every vertex, requiring V-1 full passes. The inner loop must check every edge each pass because you cannot know which edges are relevant without scanning.
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Handles negative edge weights | Much slower than Dijkstra â€” O(VÂ·E) vs O(E log V) |
+| Handles negative edge weights | Much slower than Dijkstra — O(V·E) vs O(E log V) |
 | Detects negative cycles | Slow for large graphs with many edges |
 | Simple to implement and debug | SPFA variant faster in practice but has adversarial worst-case |
-| Naturally distributed (used in routing protocols) | Cannot be used for all-pairs efficiently (V times = O(VÂ²Â·E)) |
+| Naturally distributed (used in routing protocols) | Cannot be used for all-pairs efficiently (V times = O(V²·E)) |
 
 #### Edge Cases
 
@@ -427,9 +427,9 @@ public class BellmanFord {
 | **Negative cycle reachable** | Detected in the Vth iteration; returns empty/None |
 | **Negative cycle unreachable** | Algorithm runs normally; correct distances for reachable vertices |
 | **Single node** | dist[0]=0; no edges to relax; no cycle detection |
-| **Disconnected graph** | Unreachable vertices remain âˆž |
+| **Disconnected graph** | Unreachable vertices remain ∞ |
 | **Graph with only negative edges** | Works correctly as long as no negative cycle exists |
-| **Source has no outgoing edges** | dist[source]=0, all others remain âˆž |
+| **Source has no outgoing edges** | dist[source]=0, all others remain ∞ |
 
 > **Pro Tip:** After V-1 relaxations, one more pass detects negative cycles. But this only detects cycles *reachable* from the source. Set all dist[v] = 0 before running to detect ANY negative cycle in the graph.
 >
@@ -448,7 +448,7 @@ public class BellmanFord {
 
 #### Algorithm Steps
 
-1. Create an nÃ—n distance matrix. Set `dist[i][j] = 0` if i=j, `w(i,j)` if edge exists, âˆž otherwise.
+1. Create an n×n distance matrix. Set `dist[i][j] = 0` if i=j, `w(i,j)` if edge exists, ∞ otherwise.
 2. For each intermediate vertex k from 0 to n-1:
    - For each source vertex i from 0 to n-1:
      - For each destination vertex j from 0 to n-1:
@@ -475,52 +475,52 @@ FloydWarshall(G):
 
 | Edge | Weight |
 |------|--------|
-| 0â†’1 | 3 |
-| 1â†’2 | 1 |
-| 0â†’2 | 7 |
+| 0→1 | 3 |
+| 1→2 | 1 |
+| 0→2 | 7 |
 
 **Initial matrix:**
 
 | dist | 0 | 1 | 2 |
 |------|---|---|---|
 | 0 | 0 | 3 | 7 |
-| 1 | âˆž | 0 | 1 |
-| 2 | âˆž | âˆž | 0 |
+| 1 | ∞ | 0 | 1 |
+| 2 | ∞ | ∞ | 0 |
 
 **k=0 (intermediate = 0):**
 
-Check all pairs (i,j): can we go iâ†’0â†’j cheaper than iâ†’j?
+Check all pairs (i,j): can we go i→0→j cheaper than i→j?
 
-| iâ†’j | Current | Via 0 | Update? |
+| i→j | Current | Via 0 | Update? |
 |-----|---------|-------|---------|
-| 1â†’2 | 1 | âˆž+7=âˆž | No |
-| 2â†’1 | âˆž | âˆž+3=âˆž | No |
+| 1→2 | 1 | ∞+7=∞ | No |
+| 2→1 | ∞ | ∞+3=∞ | No |
 
 No changes. Matrix unchanged.
 
 **k=1 (intermediate = 1):**
 
-| iâ†’j | Current | Via 1 | Update? |
+| i→j | Current | Via 1 | Update? |
 |-----|---------|-------|---------|
-| 0â†’2 | 7 | 3+1=**4** | **Yes** |
-| 2â†’0 | âˆž | âˆž+0=âˆž | No |
+| 0→2 | 7 | 3+1=**4** | **Yes** |
+| 2→0 | ∞ | ∞+0=∞ | No |
 
 Updated dist[0][2]=4.
 
 **k=2 (intermediate = 2):**
 
-| iâ†’j | Current | Via 2 | Update? |
+| i→j | Current | Via 2 | Update? |
 |-----|---------|-------|---------|
-| 0â†’1 | 3 | 4+1=5 | No |
-| 1â†’0 | âˆž | 1+âˆž=âˆž | No |
+| 0→1 | 3 | 4+1=5 | No |
+| 1→0 | ∞ | 1+∞=∞ | No |
 
 **Final matrix:**
 
 | dist | 0 | 1 | 2 |
 |------|---|---|---|
 | 0 | 0 | 3 | 4 |
-| 1 | âˆž | 0 | 1 |
-| 2 | âˆž | âˆž | 0 |
+| 1 | ∞ | 0 | 1 |
+| 2 | ∞ | ∞ | 0 |
 
 #### C++ Implementation
 
@@ -587,10 +587,10 @@ public class FloydWarshall {
 
 | Aspect | Complexity | Why? |
 |--------|------------|------|
-| Time | Î˜(VÂ³) | Three nested loops each iterating V times |
-| Space | Î˜(VÂ²) | VÃ—V distance matrix |
+| Time | Θ(V³) | Three nested loops each iterating V times |
+| Space | Θ(V²) | V×V distance matrix |
 
-**Why Î˜(VÂ³) and not O(VÂ³)?** The triple loop always runs exactly VÂ³ iterations regardless of graph density. This is both worst-case and best-case â€” Floyd-Warshall has no early termination.
+**Why Θ(V³) and not O(V³)?** The triple loop always runs exactly V³ iterations regardless of graph density. This is both worst-case and best-case — Floyd-Warshall has no early termination.
 
 **Why is k the outermost loop?** The DP recurrence `d[k][i][j] = min(d[k-1][i][j], d[k-1][i][k] + d[k-1][k][j])` requires that when computing the k-th layer, all values from the (k-1)-th layer remain available. If i or j were outermost, the in-place update would use already-modified k-th layer values, giving incorrect results.
 
@@ -598,9 +598,9 @@ public class FloydWarshall {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Extremely simple â€” just 3 nested loops | Î˜(VÂ³) is prohibitive for V > 1000 |
+| Extremely simple — just 3 nested loops | Θ(V³) is prohibitive for V > 1000 |
 | Works for negative edge weights | Fails on graphs with negative cycles |
-| Computes all-pairs in one shot | Î˜(VÂ²) memory is high for large V |
+| Computes all-pairs in one shot | Θ(V²) memory is high for large V |
 | Easy to modify for path reconstruction | Overkill for single-source queries |
 | Naturally handles disconnected components | Running Dijkstra V times is faster for sparse graphs |
 
@@ -610,15 +610,15 @@ public class FloydWarshall {
 |-----------|----------|
 | **Negative cycle** | `dist[i][i]` becomes negative; check diagonal after completion |
 | **Single node** | dist = [[0]]; trivially correct |
-| **Disconnected graph** | âˆž entries remain for unreachable pairs |
+| **Disconnected graph** | ∞ entries remain for unreachable pairs |
 | **Self-loop** | dist[i][i] initialized to 0; a negative self-loop would make it &lt; 0 |
-| **Dense graph** | Floyd-Warshall excels here â€” same Î˜(VÂ³) regardless of density |
+| **Dense graph** | Floyd-Warshall excels here — same Θ(V³) regardless of density |
 
-> **Pro Tip:** Floyd-Warshall's key insight is the k-loop ordering â€” k must be the outermost loop because d^{(k)} depends on d^{(k-1)}. The in-place update works because values only improve.
+> **Pro Tip:** Floyd-Warshall's key insight is the k-loop ordering — k must be the outermost loop because d^{(k)} depends on d^{(k-1)}. The in-place update works because values only improve.
 >
 > **Remember:** Floyd-Warshall works for negative edges but not negative cycles. Check diagonal dist[i][i] &lt; 0 afterward to detect cycles.
 
-**One-Sentence Takeaway:** Floyd-Warshall computes all-pairs shortest paths in O(VÂ³) using DP over intermediate vertices.
+**One-Sentence Takeaway:** Floyd-Warshall computes all-pairs shortest paths in O(V³) using DP over intermediate vertices.
 
 ---
 
@@ -627,12 +627,12 @@ public class FloydWarshall {
 
 **Problem:** Find shortest paths in a directed acyclic graph (DAG). The absence of cycles allows a linear-time solution.
 
-**Real-world analogy:** Planning a college degree program. Courses have prerequisites â€” you must take CS101 before CS201 before CS301. This is a DAG (no course can be its own prerequisite). The "shortest path" to complete a degree is finding the minimal sequence respecting all prerequisites. Because there are no cycles, you can process courses in topological order (prerequisites first) and compute distances in one pass.
+**Real-world analogy:** Planning a college degree program. Courses have prerequisites — you must take CS101 before CS201 before CS301. This is a DAG (no course can be its own prerequisite). The "shortest path" to complete a degree is finding the minimal sequence respecting all prerequisites. Because there are no cycles, you can process courses in topological order (prerequisites first) and compute distances in one pass.
 
 #### Algorithm Steps
 
 1. Compute topological order of the DAG (using DFS or Kahn's algorithm).
-2. Initialize `dist[source] = 0` and `dist[v] = âˆž` for all other vertices.
+2. Initialize `dist[source] = 0` and `dist[v] = ∞` for all other vertices.
 3. Process vertices in topological order:
    - For each outgoing edge (u, v) with weight w:
      - If `dist[u] + w < dist[v]`, update `dist[v]`.
@@ -653,18 +653,18 @@ DAGShortestPath(G, s):
 
 #### Dry Run with Distance Table Trace
 
-**Graph:** Vertices: 0, 1, 2, 3, 4. Edges: 0â†’1(2), 0â†’2(1), 1â†’3(3), 2â†’3(1), 3â†’4(2). Source: 0.
+**Graph:** Vertices: 0, 1, 2, 3, 4. Edges: 0→1(2), 0→2(1), 1→3(3), 2→3(1), 3→4(2). Source: 0.
 
-**Topological order:** 0, 1, 2, 3, 4 (or 0, 2, 1, 3, 4 â€” both valid).
+**Topological order:** 0, 1, 2, 3, 4 (or 0, 2, 1, 3, 4 — both valid).
 
 **Step-by-step trace:**
 
 | Step | Process u | dist[0] | dist[1] | dist[2] | dist[3] | dist[4] |
 |------|-----------|---------|---------|---------|---------|---------|
-| Init | â€” | 0 | âˆž | âˆž | âˆž | âˆž |
-| 1 | 0 | 0 | 2 | 1 | âˆž | âˆž |
-| 2 | 1 | 0 | **2** | 1 | min(âˆž, 2+3)=**5** | âˆž |
-| 3 | 2 | 0 | **2** | **1** | min(5, 1+1)=**2** | âˆž |
+| Init | — | 0 | ∞ | ∞ | ∞ | ∞ |
+| 1 | 0 | 0 | 2 | 1 | ∞ | ∞ |
+| 2 | 1 | 0 | **2** | 1 | min(∞, 2+3)=**5** | ∞ |
+| 3 | 2 | 0 | **2** | **1** | min(5, 1+1)=**2** | ∞ |
 | 4 | 3 | 0 | **2** | **1** | **2** | 2+2=**4** |
 | 5 | 4 | 0 | **2** | **1** | **2** | **4** |
 
@@ -788,13 +788,13 @@ public class DAGShortest {
 | Total time | O(V + E) | Both phases are linear |
 | Space | O(V) | Distance array + recursion stack (or explicit stack) |
 
-**Why is this faster than Dijkstra?** Dijkstra pays O(log V) per operation because it doesn't know which vertex to process next. A DAG provides the topological ordering for free â€” vertices that could have edges to u are guaranteed to appear before u in the order. No priority queue needed.
+**Why is this faster than Dijkstra?** Dijkstra pays O(log V) per operation because it doesn't know which vertex to process next. A DAG provides the topological ordering for free — vertices that could have edges to u are guaranteed to appear before u in the order. No priority queue needed.
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Fastest possible â€” O(V+E) | Works only on DAGs |
+| Fastest possible — O(V+E) | Works only on DAGs |
 | Handles negative weights (no cycles exist) | Requires topological sort (extra pass) |
 | Simple linear-time algorithm | Cannot handle cycles by definition |
 | Ideal for dependency resolution | Topological order is not unique; any valid order works |
@@ -805,13 +805,13 @@ public class DAGShortest {
 |-----------|----------|
 | **Empty graph (V=0)** | Returns empty distance array |
 | **Single node (V=1)** | dist[0]=0; trivially correct |
-| **Source has no path to some vertices** | Those vertices remain âˆž |
-| **Negative weight edges** | Works correctly â€” DAG has no cycles, so negative cycles impossible |
-| **Disconnected DAG** | Separate topological ordering per component; unreachable vertices are âˆž |
+| **Source has no path to some vertices** | Those vertices remain ∞ |
+| **Negative weight edges** | Works correctly — DAG has no cycles, so negative cycles impossible |
+| **Disconnected DAG** | Separate topological ordering per component; unreachable vertices are ∞ |
 
-> **Pro Tip:** DAG shortest paths is the fastest possible â€” O(V+E) because topological ordering eliminates the need for iterative relaxation. Always check if your graph is a DAG before using a slower algorithm.
+> **Pro Tip:** DAG shortest paths is the fastest possible — O(V+E) because topological ordering eliminates the need for iterative relaxation. Always check if your graph is a DAG before using a slower algorithm.
 >
-> **Remember:** The topological order ensures vertex u is processed before any of its descendants, so when you relax edges from u, dist[v] is final â€” no later pass can improve it.
+> **Remember:** The topological order ensures vertex u is processed before any of its descendants, so when you relax edges from u, dist[v] is final — no later pass can improve it.
 
 **One-Sentence Takeaway:** DAG shortest paths achieve O(V+E) time by combining topological sort with edge relaxation in a single pass.
 
@@ -822,13 +822,13 @@ public class DAGShortest {
 
 **Problem:** Find the shortest path from a single source s to a specific target t. A* uses domain knowledge (a heuristic) to explore fewer vertices than Dijkstra.
 
-**Real-world analogy:** When driving from home to the airport, you intuitively ignore roads heading away from the airport. You use your knowledge of the airport's location to guide your decisions. This is exactly what A* does â€” it uses a heuristic (straight-line distance) to prioritize roads that point toward the destination.
+**Real-world analogy:** When driving from home to the airport, you intuitively ignore roads heading away from the airport. You use your knowledge of the airport's location to guide your decisions. This is exactly what A* does — it uses a heuristic (straight-line distance) to prioritize roads that point toward the destination.
 
 A* is an informed search algorithm that uses a heuristic function \( h(v) \) to estimate the distance from \( v \) to the target. It combines the actual distance \( g(v) \) with the heuristic: \( f(v) = g(v) + h(v) \).
 
 #### Algorithm Steps
 
-1. Initialize `g[source] = 0`, `g[v] = âˆž` for all other vertices.
+1. Initialize `g[source] = 0`, `g[v] = ∞` for all other vertices.
 2. Insert `(f[source], source)` into a priority queue, where `f[v] = g[v] + h(v)`.
 3. While the priority queue is not empty:
    - Extract the vertex `u` with the smallest `f[u]`.
@@ -861,11 +861,11 @@ AStar(G, s, t, h):
 
 | Edge | Weight |
 |------|--------|
-| Aâ†’B | 2 |
-| Aâ†’C | 3 |
-| Bâ†’D | 3 |
-| Câ†’D | 1 |
-| Dâ†’E | 2 |
+| A→B | 2 |
+| A→C | 3 |
+| B→D | 3 |
+| C→D | 1 |
+| D→E | 2 |
 
 **Heuristic** (estimated cost to E):
 
@@ -881,13 +881,13 @@ AStar(G, s, t, h):
 
 | Step | Current | g(A) | g(B) | g(C) | g(D) | g(E) | f values in PQ |
 |------|---------|------|------|------|------|------|----------------|
-| Init | â€” | 0 | âˆž | âˆž | âˆž | âˆž | (5, A) |
-| 1 | A | **0** | 2 | 3 | âˆž | âˆž | (6, B), (6, C) |
-| 2 | C (f=6) | **0** | 2 | **3** | 3+1=4 | âˆž | (6, B), (5, D) |
+| Init | — | 0 | ∞ | ∞ | ∞ | ∞ | (5, A) |
+| 1 | A | **0** | 2 | 3 | ∞ | ∞ | (6, B), (6, C) |
+| 2 | C (f=6) | **0** | 2 | **3** | 3+1=4 | ∞ | (6, B), (5, D) |
 | 3 | D (f=5) | **0** | 2 | **3** | **4** | 4+2=6 | (6, B), (6, E) |
 | 4 | E (f=6) | **0** | 2 | **3** | **4** | **6** | **Goal reached!** |
 
-**Path:** A â†’ C â†’ D â†’ E (cost 6).
+**Path:** A → C → D → E (cost 6).
 
 Notice Dijkstra would have extracted B (f=2) before C (f=3), but A* correctly prioritizes C because its heuristic knows C is closer to the goal.
 
@@ -1019,7 +1019,7 @@ public class AStar {
 | Advantages | Disadvantages |
 |------------|---------------|
 | Much faster than Dijkstra with a good heuristic | Requires domain knowledge to design heuristic |
-| Guarantees optimality with admissible heuristic | Memory-heavy â€” stores entire explored frontier |
+| Guarantees optimality with admissible heuristic | Memory-heavy — stores entire explored frontier |
 | Flexible: works on grids, graphs, continuous spaces | Admissible heuristic may be hard to find |
 | Widely used in games and robotics | Inconsistent heuristics may re-explore nodes |
 
@@ -1051,8 +1051,8 @@ public class AStar {
 |----------|----------|--------------|----------------|--------------|-----|
 | **Type** | Single-source | Single-source | All-pairs | Single-source | s-to-t |
 | **Edge weights** | Non-negative only | Any (detects neg cycles) | Any (no neg cycles) | Any | Non-negative |
-| **Time** | O((V+E) log V) | O(VÂ·E) | Î˜(VÂ³) | O(V+E) | O(E) to O(V log V) |
-| **Space** | O(V) | O(V) | Î˜(VÂ²) | O(V) | O(V) |
+| **Time** | O((V+E) log V) | O(V·E) | Θ(V³) | O(V+E) | O(E) to O(V log V) |
+| **Space** | O(V) | O(V) | Θ(V²) | O(V) | O(V) |
 | **Negative cycles** | Not handled | Detected | Detected (diagonal) | N/A (acyclic) | Not handled |
 | **Heuristic** | None | None | None | None | Required |
 | **Graph type** | General | General | General | DAG only | General |
@@ -1064,7 +1064,7 @@ public class AStar {
 |-----------|---------------------|
 | Single-source, non-negative weights, sparse graph | **Dijkstra** |
 | Single-source, negative weights possible | **Bellman-Ford** |
-| Need distances between all pairs | **Floyd-Warshall** (dense) or **VÃ—Dijkstra** (sparse) |
+| Need distances between all pairs | **Floyd-Warshall** (dense) or **V×Dijkstra** (sparse) |
 | Graph is guaranteed acyclic | **DAG Shortest** (linear time!) |
 | Single s-t path with good heuristic available | **A\*** |
 | Need to detect negative cycles | **Bellman-Ford** |
@@ -1080,7 +1080,7 @@ public class AStar {
 
 Run the standard V-1 relaxations, then run one more pass. If any edge can still be relaxed in the Vth iteration, a negative cycle exists reachable from the source.
 
-**Implementation detail:** The detection loop must check if `dist[u]` is not INF before computing the sum â€” otherwise overflow or false positives may occur with large graphs.
+**Implementation detail:** The detection loop must check if `dist[u]` is not INF before computing the sum — otherwise overflow or false positives may occur with large graphs.
 
 ### Q2: Can Dijkstra handle a Directed Acyclic Graph (DAG) with negative weights?
 
@@ -1098,17 +1098,17 @@ All shortest-path algorithms can track a `parent[]` or `prev[]` array:
 
 ### Q4: How to handle graphs with negative cycles containing source?
 
-Bellman-Ford detects this. If the source can reach a negative cycle, no shortest path exists for vertices reachable from that cycle â€” distances can be made arbitrarily small by looping.
+Bellman-Ford detects this. If the source can reach a negative cycle, no shortest path exists for vertices reachable from that cycle — distances can be made arbitrarily small by looping.
 
 **Solution for interview:** Mark all vertices affected by a negative cycle. After detecting the cycle, propagate the "affected" status via BFS/DFS from any vertex that was relaxed in the Vth iteration.
 
 ### Q5: Floyd-Warshall path reconstruction
 
-Add a `next[i][j]` matrix initialized to `next[i][j] = j` for direct edges. When relaxing via k: `next[i][j] = next[i][k]`. After completion, follow `next[i][*]` to reconstruct iâ†’j path.
+Add a `next[i][j]` matrix initialized to `next[i][j] = j` for direct edges. When relaxing via k: `next[i][j] = next[i][k]`. After completion, follow `next[i][*]` to reconstruct i→j path.
 
 ### Q6: Dijkstra on unweighted graph
 
-Use **BFS** â€” it runs in O(V+E) vs Dijkstra's O((V+E) log V). BFS on an unweighted graph is effectively Dijkstra where every edge weight is 1.
+Use **BFS** — it runs in O(V+E) vs Dijkstra's O((V+E) log V). BFS on an unweighted graph is effectively Dijkstra where every edge weight is 1.
 
 ---
 
@@ -1118,7 +1118,7 @@ Use **BFS** â€” it runs in O(V+E) vs Dijkstra's O((V+E) log V). BFS on an u
 
 **Algorithm:** Dijkstra (with optimizations) + A* for point-to-point routing.
 
-Google Maps models intersections as vertices and road segments as edges weighted by estimated travel time. A* with an admissible heuristic (straight-line distance / speed limit) guides the search. Modern implementations use **Contraction Hierarchies** â€” a preprocessing technique that adds "shortcut" edges to skip through uninteresting intersections â€” reducing query time from seconds to milliseconds.
+Google Maps models intersections as vertices and road segments as edges weighted by estimated travel time. A* with an admissible heuristic (straight-line distance / speed limit) guides the search. Modern implementations use **Contraction Hierarchies** — a preprocessing technique that adds "shortcut" edges to skip through uninteresting intersections — reducing query time from seconds to milliseconds.
 
 **Why not Bellman-Ford?** Road networks have no negative edge weights (you cannot travel backward in time), so Dijkstra's faster complexity suffices.
 
@@ -1128,13 +1128,13 @@ Google Maps models intersections as vertices and road segments as edges weighted
 
 The **Open Shortest Path First (OSPF)** protocol uses Dijkstra to compute the shortest path tree from each router to all destinations. Each router maintains a complete map of the network topology (link-state database) and runs Dijkstra locally.
 
-The **Routing Information Protocol (RIP)** uses a distributed Bellman-Ford variant called the **Bellman-Ford distance-vector algorithm**. Routers exchange distance vectors with neighbors, "relaxing" routes one hop at a time. RIP's Bellman-Ford heritage gives it the **count-to-infinity problem** â€” a well-known convergence issue caused by the algorithm's slow propagation of negative information.
+The **Routing Information Protocol (RIP)** uses a distributed Bellman-Ford variant called the **Bellman-Ford distance-vector algorithm**. Routers exchange distance vectors with neighbors, "relaxing" routes one hop at a time. RIP's Bellman-Ford heritage gives it the **count-to-infinity problem** — a well-known convergence issue caused by the algorithm's slow propagation of negative information.
 
 ### Airline and Railway Scheduling
 
 **Algorithm:** Floyd-Warshall (small networks) or DAG shortest path (dependency graphs).
 
-Airlines compute shortest paths between all airport pairs to determine minimum flight times. With ~10,000 commercial airports worldwide, Floyd-Warshall (10Â¹Â² operations) is too slow, so they use repeated Dijkstra runs with preprocessing.
+Airlines compute shortest paths between all airport pairs to determine minimum flight times. With ~10,000 commercial airports worldwide, Floyd-Warshall (10¹² operations) is too slow, so they use repeated Dijkstra runs with preprocessing.
 
 **Task scheduling** in build systems (Make, Bazel) uses DAG shortest paths (or longest paths for critical path analysis). Each task is a vertex, dependencies are edges. The shortest path through the dependency DAG gives the minimum time to complete a build.
 
@@ -1142,13 +1142,13 @@ Airlines compute shortest paths between all airport pairs to determine minimum f
 
 **Algorithm:** A* (overwhelmingly dominant).
 
-Every major game engine â€” Unity, Unreal, Godot â€” implements A* for NPC movement. The grid map is a graph where each cell is a vertex. The heuristic is usually Manhattan distance or Euclidean distance. Hierarchical A* (HPA*) precomputes high-level paths across large maps, then refines locally.
+Every major game engine — Unity, Unreal, Godot — implements A* for NPC movement. The grid map is a graph where each cell is a vertex. The heuristic is usually Manhattan distance or Euclidean distance. Hierarchical A* (HPA*) precomputes high-level paths across large maps, then refines locally.
 
 ### Currency Arbitrage Detection
 
 **Algorithm:** Bellman-Ford with log transformation.
 
-Currency arbitrage is a practical application of negative cycle detection. Convert exchange rates to logarithms: `w(u,v) = -log(rate(u,v))`. In this transformed graph, a negative cycle corresponds to an arbitrage opportunity. Bellman-Ford detects these cycles in O(VÂ·E) time.
+Currency arbitrage is a practical application of negative cycle detection. Convert exchange rates to logarithms: `w(u,v) = -log(rate(u,v))`. In this transformed graph, a negative cycle corresponds to an arbitrage opportunity. Bellman-Ford detects these cycles in O(V·E) time.
 
 ### Social Network Analysis
 
@@ -1164,7 +1164,7 @@ LinkedIn's "People You May Know" and Facebook's friend recommendation use shorte
 |-----------|---------|-------------|------------|----------------|
 | Dijkstra | Single-source | Non-negative only | O((V+E) log V) | Fails with negative weights |
 | Bellman-Ford | Single-source | Any (detects neg cycles) | O(VE) | Slow for large graphs |
-| Floyd-Warshall | All-pairs | Any (no neg cycles) | Î˜(VÂ³) | O(VÂ²) memory |
+| Floyd-Warshall | All-pairs | Any (no neg cycles) | Θ(V³) | O(V²) memory |
 | DAG Shortest | Single-source (DAG) | Any | O(V+E) | Requires acyclic graph |
 | A* | s-t shortest | Non-negative | O(E) practical | Needs admissible heuristic |
 
@@ -1172,10 +1172,10 @@ LinkedIn's "People You May Know" and Facebook's friend recommendation use shorte
 
 | Category | Key Points |
 |----------|------------|
-| **Non-negative weights** | Dijkstra â€” always use this |
+| **Non-negative weights** | Dijkstra — always use this |
 | **Negative weights** | Bellman-Ford or SPFA |
-| **All-pairs** | Floyd-Warshall (dense) or V Ã— Dijkstra (sparse) |
-| **DAG guaranteed** | Topological sort + relax â€” O(V+E) |
+| **All-pairs** | Floyd-Warshall (dense) or V × Dijkstra (sparse) |
+| **DAG guaranteed** | Topological sort + relax — O(V+E) |
 | **Heuristic available** | A* with admissible heuristic |
 | **Detect negative cycle** | Bellman-Ford Vth iteration or Floyd diagonal |
 
@@ -1221,14 +1221,14 @@ B) Bellman-Ford handles negative weights and detects negative cycles. Dijkstra f
 
 **Q2.** What is the time complexity of Floyd-Warshall?
 
-- A) O(VÂ²)
+- A) O(V²)
 - B) O(VE)
-- C) Î˜(VÂ³)
+- C) Θ(V³)
 - D) O(E log V)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) Î˜(VÂ³) â€” triple nested loop over all vertices for the intermediate k and pairs (i,j).
+C) Θ(V³) — triple nested loop over all vertices for the intermediate k and pairs (i,j).
 </details>
 
 **Q3.** What property must an A* heuristic have to guarantee optimality?

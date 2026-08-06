@@ -1,4 +1,4 @@
-﻿# Chapter 7: API Development & Integration
+# Chapter 7: API Development & Integration
 > **Previous:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications) | **Next:** [Broadcasting, Events & Real-Time Features](./08-broadcasting-realtime)
 
 ---
@@ -79,7 +79,7 @@ REST treats server data as resources accessed through a uniform interface. API e
 | GET       | `/users/{id}`  | Show a specific user |
 | PUT       | `/users/{id}`  | Full user update     |
 
-> **Remember:** PUT replaces the entire resource â€” missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost always the better choice for update endpoints.
+> **Remember:** PUT replaces the entire resource — missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost always the better choice for update endpoints.
 | PATCH     | `/users/{id}`  | Partial user update  |
 | DELETE    | `/users/{id}`  | Delete a user        |
 
@@ -322,7 +322,7 @@ Response::macro('api', function (mixed $data, string $message = '', int $status 
 
 
 ```php
-Post::paginate(20);       // LengthAwarePaginator â†’ knows total pages
+Post::paginate(20);       // LengthAwarePaginator → knows total pages
 Post::simplePaginate(20); // Only "next" and "prev"
 Post::cursorPaginate(20); // Cursor-based for large datasets
 ```
@@ -559,7 +559,7 @@ Route::prefix('v1')->group(function () {
 | Caching | HTTP caching (ETag, Last-Modified) | Complex (per-query) |
 | Tooling | Swagger/OpenAPI | GraphiQL, Apollo DevTools |
 
-## Quick Reference â€” HTTP Status Codes
+## Quick Reference — HTTP Status Codes
 
 | Code | Meaning | Use Case |
 |------|---------|----------|

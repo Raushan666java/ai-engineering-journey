@@ -1,4 +1,4 @@
-﻿# Chapter 5: Containerization
+# Chapter 5: Containerization
 
 > **Prev:** [CI/CD](./04-continuous-integration.md)
 > **Next:** [Docker](./05-docker.md)
@@ -270,9 +270,9 @@ Container storage follows ephemeral-by-default with options for persistence:
 | CSI (Container Storage Interface) | Plugin-based storage for orchestrators | Orchestrator-managed | Production stateful workloads |
 
 **Container storage best practices:**
-- Separate compute from storage â€” use managed databases instead of database containers
+- Separate compute from storage — use managed databases instead of database containers
 - Use persistent volumes for logs that must survive container restarts
-- Avoid storing secrets in container images â€” use secret injection mechanisms
+- Avoid storing secrets in container images — use secret injection mechanisms
 - Configure storage quotas per container to prevent disk exhaustion
 - Use ReadWriteMany volumes for shared file access across replicas
 
@@ -811,7 +811,7 @@ class RegistryCleanupManager {
   generateReport(plan: CleanupPlan): string {
     return `## Registry Cleanup Plan\n\n` +
       `**To delete:** ${plan.tagsToDelete.length} tags\n` +
-      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (Ëœ $${plan.estimatedSavings}/month)\n` +
+      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (˜ $${plan.estimatedSavings}/month)\n` +
       `**After cleanup:** ${plan.afterCount} tags\n\n` +
       plan.tagsToDelete.slice(0, 20).map(t =>
         `- ${t.name} (${t.sizeMB}MB, ${Math.round((Date.now() - t.created.getTime()) / 86400000)} days old)`
@@ -941,7 +941,7 @@ services:
 **Seccomp Profiles:** Restrict system calls available to the container:
 ```text
 # Default Docker seccomp profile blocks 44 of 300+ syscalls
-# Custom profile â€” allow only specific syscalls
+# Custom profile — allow only specific syscalls
 {
   "defaultAction": "SCMP_ACT_ERRNO",
   "architectures": ["SCMP_ARCH_X86_64"],

@@ -1,4 +1,4 @@
-﻿# Chapter 2: Entity-Relationship Model
+# Chapter 2: Entity-Relationship Model
 ```
 > **Previous:** [Chapter 1: Introduction to Database Systems](./01-introduction.md) | **Next:** [Chapter 3: The Relational Model](./03-relational-model.md)
 ```
@@ -55,7 +55,7 @@ flowchart LR
 ```
 ## Theory
 ```
-> **One-Sentence Takeaway:** The ER model provides a high-level conceptual blueprint Ã¢â€ â€™ translating real-world requirements into visual diagrams before any SQL is written.
+> **One-Sentence Takeaway:** The ER model provides a high-level conceptual blueprint → translating real-world requirements into visual diagrams before any SQL is written.
 ```
 ![ER Model Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch02-er-model.png)
 ```
@@ -80,16 +80,16 @@ Just as an architect draws a blueprint before construction begins, a database de
 ```
 #### Numbered Steps to Build an ER Model
 ```
-1. **Identify entities** Ã¢â€ â€™ List all noun concepts from requirements (e.g., Student, Course, Professor)
-2. **Identify relationships** Ã¢â€ â€™ Find verb associations between entities (e.g., Student enrolls in Course)
-3. **Identify cardinality** Ã¢â€ â€™ Determine 1:1, 1:N, or M:N for each relationship
-4. **Identify attributes** Ã¢â€ â€™ List properties for each entity (e.g., student_id, name, email)
-5. **Classify attributes** Ã¢â€ â€™ Mark simple/composite, single-valued/multi-valued, stored/derived, key
-6. **Identify weak entities** Ã¢â€ â€™ Find entities that depend on others for identity
-7. **Apply constraints** Ã¢â€ â€™ Specify total/partial participation, disjointness, completeness
-8. **Draw ER diagram** Ã¢â€ â€™ Use rectangles, diamonds, ellipses with standard notation
-9. **Map to relational schema** Ã¢â€ â€™ Apply systematic conversion rules
-10. **Normalize** Ã¢â€ â€™ Check for redundancy and apply normal forms if needed
+1. **Identify entities** → List all noun concepts from requirements (e.g., Student, Course, Professor)
+2. **Identify relationships** → Find verb associations between entities (e.g., Student enrolls in Course)
+3. **Identify cardinality** → Determine 1:1, 1:N, or M:N for each relationship
+4. **Identify attributes** → List properties for each entity (e.g., student_id, name, email)
+5. **Classify attributes** → Mark simple/composite, single-valued/multi-valued, stored/derived, key
+6. **Identify weak entities** → Find entities that depend on others for identity
+7. **Apply constraints** → Specify total/partial participation, disjointness, completeness
+8. **Draw ER diagram** → Use rectangles, diamonds, ellipses with standard notation
+9. **Map to relational schema** → Apply systematic conversion rules
+10. **Normalize** → Check for redundancy and apply normal forms if needed
 ```
 #### Pseudocode: ER Model Builder
 ```
@@ -586,7 +586,7 @@ An **entity set** is a collection of entities that share the same properties. Fo
 | Relationship | "Parent of" connects two people |
 | Weak Entity | A childhood nickname tied to a specific person |
 ```
-In a family tree, each person exists independently (strong entity). But a "Family Nickname" (like "Little John" within the Smith family) is a weak entity Ã¢â€ â€™ it has meaning only within the context of a specific family.
+In a family tree, each person exists independently (strong entity). But a "Family Nickname" (like "Little John" within the Smith family) is a weak entity → it has meaning only within the context of a specific family.
 ```
 #### Numbered Steps to Identify Entities
 ```
@@ -658,12 +658,12 @@ Attributes describe the properties of entities. Each entity has a value for each
 Consider a university registration form:
 - **Simple:** Student ID (a single, atomic number)
 - **Composite:** Full Name = First Name + Middle Initial + Last Name (can be broken down)
-- **Multi-valued:** Phone Numbers (home, cell, work Ã¢â€ â€™ zero or more)
+- **Multi-valued:** Phone Numbers (home, cell, work → zero or more)
 - **Derived:** Age (calculated from Date of Birth and today's date)
 - **Stored:** Date of Birth (physically stored in database)
 - **Key:** Student ID (uniquely identifies each student)
 ```
-The form designer decides which fields are composite (they provide sub-boxes for first/last name) and which are simple (single box for ID). They know phone numbers need space for multiple entries. Age is never written on the form Ã¢â€ â€™ it is computed when needed.
+The form designer decides which fields are composite (they provide sub-boxes for first/last name) and which are simple (single box for ID). They know phone numbers need space for multiple entries. Age is never written on the form → it is computed when needed.
 ```
 #### Python Implementation: Attribute Type Validator
 ```
@@ -1115,16 +1115,16 @@ Without the invoice, a line item is meaningless. "2 x Laptop at $999" means noth
 ```
 #### Numbered Steps to Identify and Map Weak Entities
 ```
-1. **Check dependency** Ã¢â€ â€™ Ask: "Can this entity exist without another entity?" If no, it is weak
-2. **Identify owner** Ã¢â€ â€™ Find the entity on which it depends
-3. **Determine discriminator** Ã¢â€ â€™ Find the attribute that distinguishes weak entities within one owner (e.g., line_number, dependent_name)
-4. **Verify total participation** Ã¢â€ â€™ Confirm that every weak entity must belong to an owner
-5. **Verify M:1 identifying relationship** Ã¢â€ â€™ Confirm many weak entities belong to one owner
-6. **Map owner** Ã¢â€ â€™ Create table for strong entity first (standard mapping)
-7. **Map weak entity** Ã¢â€ â€™ Create table with composite PK = owner's PK + discriminator
-8. **Add FK constraint** Ã¢â€ â€™ owner's PK in weak entity table is also a FK
-9. **Add ON DELETE CASCADE** Ã¢â€ â€™ Deleting owner cascades to weak entities
-10. **Document** Ã¢â€ â€™ Note in schema comments that this is a weak entity
+1. **Check dependency** → Ask: "Can this entity exist without another entity?" If no, it is weak
+2. **Identify owner** → Find the entity on which it depends
+3. **Determine discriminator** → Find the attribute that distinguishes weak entities within one owner (e.g., line_number, dependent_name)
+4. **Verify total participation** → Confirm that every weak entity must belong to an owner
+5. **Verify M:1 identifying relationship** → Confirm many weak entities belong to one owner
+6. **Map owner** → Create table for strong entity first (standard mapping)
+7. **Map weak entity** → Create table with composite PK = owner's PK + discriminator
+8. **Add FK constraint** → owner's PK in weak entity table is also a FK
+9. **Add ON DELETE CASCADE** → Deleting owner cascades to weak entities
+10. **Document** → Note in schema comments that this is a weak entity
 ```
 #### Pseudocode: Weak Entity Mapping
 ```
@@ -1502,7 +1502,7 @@ int main() {
 ```
 **Generalization:** The process of defining a more general entity set from lower-level entity sets. Example: PERSON is a generalization of STUDENT and FACULTY. The common attributes (name, address, phone) are moved to PERSON, while specific attributes (GPA for STUDENT, salary for FACULTY) remain in the specialized sets.
 ```
-**Specialization:** The inverse Ã¢â€ â€™ defining sub-groupings within an entity set. Example: From EMPLOYEE, we define subtypes SECRETARY, ENGINEER, and MANAGER, each with additional attributes.
+**Specialization:** The inverse → defining sub-groupings within an entity set. Example: From EMPLOYEE, we define subtypes SECRETARY, ENGINEER, and MANAGER, each with additional attributes.
 ```
 **Constraints on Specialization/Generalization:**
 - **Disjointness:** Can an entity belong to more than one subclass?
@@ -1566,11 +1566,11 @@ int main() {
 ```
 #### Numbered Steps for Generalization/Specialization Mapping
 ```
-1. **Identify superclass entities** Ã¢â€ â€™ Find common attributes across similar entities
-2. **Identify subclasses** Ã¢â€ â€™ Determine distinct categories with specific attributes
-3. **Determine disjointness** Ã¢â€ â€™ Check if an entity can belong to multiple subclasses
-4. **Determine completeness** Ã¢â€ â€™ Check if every superclass entity must be in a subclass
-5. **Choose mapping strategy** Ã¢â€ â€™ A (single table), B (separate tables), or C (subclass only)
+1. **Identify superclass entities** → Find common attributes across similar entities
+2. **Identify subclasses** → Determine distinct categories with specific attributes
+3. **Determine disjointness** → Check if an entity can belong to multiple subclasses
+4. **Determine completeness** → Check if every superclass entity must be in a subclass
+5. **Choose mapping strategy** → A (single table), B (separate tables), or C (subclass only)
 6. **For Strategy B:** Create superclass table with common attributes and shared PK
 7. **For Strategy B:** Create subclass tables with FK to superclass (same PK value)
 8. **Add discriminator** (disjoint) or boolean flags (overlapping) to superclass
@@ -1774,7 +1774,7 @@ if __name__ == "__main__":
 ### 2.8 From ER to Relational Mapping
 
 ```
-ER diagrams are conceptual Ã¢â€ â€™ they must be converted to relational schemas for implementation. The mapping rules:
+ER diagrams are conceptual → they must be converted to relational schemas for implementation. The mapping rules:
 ```
 1. **Strong Entity Sets:** Create a table with all simple attributes. Composite attributes are flattened (each component becomes a column). The primary key becomes the table's primary key.
 ```
@@ -1870,7 +1870,7 @@ CREATE TABLE dependent (
 ```
 **Q2: How do you identify a weak entity?**
 ```
-**A:** A weak entity is identified by checking if its existence depends on another entity. Key indicators: it has no meaningful primary key of its own, it cannot exist without its owner, and deleting the owner must cascade-delete the weak entity. Example: LINE_ITEM on an INVOICE Ã¢â€ â€™ the line item has no meaning without the invoice.
+**A:** A weak entity is identified by checking if its existence depends on another entity. Key indicators: it has no meaningful primary key of its own, it cannot exist without its owner, and deleting the owner must cascade-delete the weak entity. Example: LINE_ITEM on an INVOICE → the line item has no meaning without the invoice.
 ```
 **Q3: What are participation constraints and why do they matter?**
 ```
@@ -1886,7 +1886,7 @@ CREATE TABLE dependent (
 ```
 **Q6: When should you use a ternary relationship vs. two binary relationships?**
 ```
-**A:** Use a ternary relationship when the relationship among three entities is atomic and cannot be decomposed. For example, a SUPPLIER supplies a PRODUCT to a WAREHOUSE Ã¢â€ â€™ the supply relationship involves all three simultaneously. Decomposing into SUPPLIER-supplies-PRODUCT and PRODUCT-stored-in-WAREHOUSE loses the constraint that a specific supplier supplies a specific product to a specific warehouse. Use binary when the relationships are independent.
+**A:** Use a ternary relationship when the relationship among three entities is atomic and cannot be decomposed. For example, a SUPPLIER supplies a PRODUCT to a WAREHOUSE → the supply relationship involves all three simultaneously. Decomposing into SUPPLIER-supplies-PRODUCT and PRODUCT-stored-in-WAREHOUSE loses the constraint that a specific supplier supplies a specific product to a specific warehouse. Use binary when the relationships are independent.
 ```
 **Q7: How do you map a unary (recursive) relationship?**
 ```
@@ -1918,7 +1918,7 @@ Draw.io is a free, web-based diagramming tool widely used for ER diagrams:
 ```
 Lucidchart is a premium diagramming tool with strong database modeling:
 - **ER Shapes:** Dedicated ER shape libraries with multiple notation styles
-- **Database Import:** Import schema from MySQL, PostgreSQL, SQL Server, Oracle Ã¢â€ â€™ auto-generates ER diagram
+- **Database Import:** Import schema from MySQL, PostgreSQL, SQL Server, Oracle → auto-generates ER diagram
 - **Data Linking:** Link shapes to spreadsheet data for attribute documentation
 - **Export:** Visio, PDF, SVG, PNG; integrates with Confluence, Jira, Slack
 - **Collaboration:** Real-time multi-user editing with comments and version history
@@ -1949,7 +1949,7 @@ Lucidchart is a premium diagramming tool with strong database modeling:
 ```
 ## Examples
 ```
-> **One-Sentence Takeaway:** Practicing ER-to-relational mapping with real examples Ã¢â€ â€™ from strong entities to weak entities to generalization Ã¢â€ â€™ builds the skill to design any database schema systematically.
+> **One-Sentence Takeaway:** Practicing ER-to-relational mapping with real examples → from strong entities to weak entities to generalization → builds the skill to design any database schema systematically.
 ```
 **Example 2.1: Mapping a University ER Diagram to Relations**
 ```
@@ -2049,9 +2049,9 @@ CREATE TABLE faculty (
 -- INSERT INTO faculty VALUES (1, 85000, 'CS');
 ```
 ```
-> **Warning:** Ternary relationships (degree 3) are often overused Ã¢â€ â€™ most scenarios modeled with three entities can be expressed as two binary relationships.
+> **Warning:** Ternary relationships (degree 3) are often overused → most scenarios modeled with three entities can be expressed as two binary relationships.
 >
-> **Remember:** The ER diagram is a communication tool, not just a design artifact Ã¢â€ â€™ use consistent notation so all stakeholders interpret it the same way.
+> **Remember:** The ER diagram is a communication tool, not just a design artifact → use consistent notation so all stakeholders interpret it the same way.
 ```
 ### 2.13 ER Model Implementation (TypeScript)
 
@@ -2059,7 +2059,7 @@ The following TypeScript code demonstrates how to programmatically represent and
 
 ```typescript
 // ============================================================
-// ER Model Implementation Ã¢â‚¬â€ TypeScript
+// ER Model Implementation — TypeScript
 // ============================================================
 
 enum AttributeType {
@@ -2378,14 +2378,14 @@ flowchart TD
 
 ## Pro Tips
 ```
-1. **Always start with an ER diagram** before writing a single CREATE TABLE statement Ã¢â€ â€™ it catches design flaws early and communicates structure to stakeholders.
-2. **Binary relationships cover 90% of real-world cases** Ã¢â€ â€™ avoid ternary relationships unless all three entity types are genuinely independent; they often hide design problems.
-3. **Be precise with cardinality and participation** Ã¢â€ â€™ confusing 1:N with M:N or total with partial participation leads to incorrect schemas that are expensive to fix later.
-4. **Weak entities are more common than you think** Ã¢â€ â€™ line items on an invoice, dependents of an employee, and seat assignments on a flight are all weak entities.
-5. **Use Strategy B (separate tables) for generalization** Ã¢â€ â€™ it preserves all constraints and handles overlapping subclasses cleanly, at the cost of more joins.
-6. **Name junction tables descriptively** Ã¢â€ â€™ use entity_relationship names like `student_course` or `enrolls_in`, not `junction_table`.
-7. **Avoid fan traps by validating query paths** Ã¢â€ â€™ before finalizing the schema, write sample queries for all common access patterns.
-8. **Document all assumptions** Ã¢â€ â€™ cardinality decisions are often ambiguous in requirements; document why you chose each one.
+1. **Always start with an ER diagram** before writing a single CREATE TABLE statement → it catches design flaws early and communicates structure to stakeholders.
+2. **Binary relationships cover 90% of real-world cases** → avoid ternary relationships unless all three entity types are genuinely independent; they often hide design problems.
+3. **Be precise with cardinality and participation** → confusing 1:N with M:N or total with partial participation leads to incorrect schemas that are expensive to fix later.
+4. **Weak entities are more common than you think** → line items on an invoice, dependents of an employee, and seat assignments on a flight are all weak entities.
+5. **Use Strategy B (separate tables) for generalization** → it preserves all constraints and handles overlapping subclasses cleanly, at the cost of more joins.
+6. **Name junction tables descriptively** → use entity_relationship names like `student_course` or `enrolls_in`, not `junction_table`.
+7. **Avoid fan traps by validating query paths** → before finalizing the schema, write sample queries for all common access patterns.
+8. **Document all assumptions** → cardinality decisions are often ambiguous in requirements; document why you chose each one.
 ```
 ## One-Sentence Takeaways
 ```
@@ -2394,7 +2394,7 @@ flowchart TD
 - **2.3:** Attributes describe entity properties and can be simple/composite, single-valued/multi-valued, or stored/derived.
 - **2.4:** Relationships connect entities with specified degree (unary, binary, ternary) and cardinality constraints (1:1, 1:N, M:N).
 - **2.5:** Weak entities depend on owner entities for their identity and combine an owner's key with a discriminator.
-- **2.6:** ER diagrams use standard symbols Ã¢â€ â€™ rectangles for entities, diamonds for relationships, ellipses for attributes.
+- **2.6:** ER diagrams use standard symbols → rectangles for entities, diamonds for relationships, ellipses for attributes.
 - **2.7:** Generalization creates a superclass from subclasses; specialization creates subclasses from a superclass.
 - **2.8:** ER-to-relational mapping converts conceptual designs into implementable SQL schemas using systematic rules.
 ```
@@ -2448,7 +2448,7 @@ flowchart TD
 |-----------|-----------|----------------|
 | **Weak Entities** | Invoicing, flight booking, payroll | Line items, seat assignments, dependents need parent |
 | **1:N Relationships** | Almost every business domain | Customers->Orders, Departments->Employees, Authors->Books |
-| **M:N Relationships** | Students->Courses, Products->Orders | Junction tables required Ã¢â€ â€™ common source of errors |
+| **M:N Relationships** | Students->Courses, Products->Orders | Junction tables required → common source of errors |
 | **Generalization** | Employee types, account types, media | Models inheritance: savings/checking, full-time/contract |
 | **Multi-valued Attributes** | Phone numbers, skills, tags | Never store as comma-separated strings |
 | **Total Participation** | Mandatory relationships | Ensures data completeness |

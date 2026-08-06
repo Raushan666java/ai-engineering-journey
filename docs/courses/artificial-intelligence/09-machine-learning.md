@@ -1,4 +1,4 @@
-﻿# Chapter 9: Machine Learning: Learning from Examples
+# Chapter 9: Machine Learning: Learning from Examples
 
 **Previous:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md) | **Next:** [Chapter 10: Probabilistic Reasoning](10-probabilistic-reasoning.md)
 
@@ -35,9 +35,9 @@
 
 ## Why Machine Learning Matters
 
-**Real-World Analogy:** A child learning to recognize animals does not need an explicit rulebook. Instead, the child is shown examples â€” "this furry animal that barks is a dog," "this feathered animal that quacks is a duck." Over time, the child's brain identifies patterns (four legs, fur, bark â†’ dog) and uses them to classify never-before-seen animals correctly. Machine learning algorithms follow the exact same principle: instead of hard-coding rules, we feed data and let the algorithm discover the underlying patterns.
+**Real-World Analogy:** A child learning to recognize animals does not need an explicit rulebook. Instead, the child is shown examples — "this furry animal that barks is a dog," "this feathered animal that quacks is a duck." Over time, the child's brain identifies patterns (four legs, fur, bark → dog) and uses them to classify never-before-seen animals correctly. Machine learning algorithms follow the exact same principle: instead of hard-coding rules, we feed data and let the algorithm discover the underlying patterns.
 
-**Why this shifts everything:** Traditional programming requires a human to write every rule. Machine Learning replaces manual rule-writing with automated pattern discovery â€” enabling systems that improve with experience, adapt to new data, and solve problems too complex for explicit rules (face recognition, speech transcription, game playing at superhuman level).
+**Why this shifts everything:** Traditional programming requires a human to write every rule. Machine Learning replaces manual rule-writing with automated pattern discovery — enabling systems that improve with experience, adapt to new data, and solve problems too complex for explicit rules (face recognition, speech transcription, game playing at superhuman level).
 
 ---
 
@@ -77,9 +77,9 @@ flowchart LR
 
 ![Machine Learning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch09-machine-learning.png)
 
-> **One-Sentence Takeaway:** Machine learning algorithms improve performance on a task with experience â€” the key challenge is generalizing from finite training data to unseen examples.
+> **One-Sentence Takeaway:** Machine learning algorithms improve performance on a task with experience — the key challenge is generalizing from finite training data to unseen examples.
 
-> **Pro Tip:** Decision trees with information gain naturally handle mixed data types and produce interpretable models. However, they can overfit badly â€” use pruning (min_samples_split, max_depth) or switch to ensemble methods (Random Forest) for better generalization.
+> **Pro Tip:** Decision trees with information gain naturally handle mixed data types and produce interpretable models. However, they can overfit badly — use pruning (min_samples_split, max_depth) or switch to ensemble methods (Random Forest) for better generalization.
 
 ---
 
@@ -94,11 +94,11 @@ Machine Learning (ML) is the study of algorithms that improve their performance 
 
 ---
 
-## Types of Machine Learning â€” Deep Dive
+## Types of Machine Learning — Deep Dive
 
 ### 1. Supervised Learning
 
-**Real-World Analogy:** A tutor showing a student labeled flashcards â€” "this is a cat" (image + label). After enough examples, the student can identify cats in new photos.
+**Real-World Analogy:** A tutor showing a student labeled flashcards — "this is a cat" (image + label). After enough examples, the student can identify cats in new photos.
 
 **Definition:** The algorithm learns a mapping function $f: X \to Y$ from input features $X$ to output labels $Y$ using a labeled training dataset.
 
@@ -115,13 +115,13 @@ Machine Learning (ML) is the study of algorithms that improve their performance 
 ```
 FUNCTION SupervisedLearning(Dataset D)
     Split D into D_train, D_val, D_test
-    Initialize model with hyperparameters Î¸
+    Initialize model with hyperparameters θ
     FOR epoch = 1 to max_epochs:
         FOR each batch (X_batch, y_batch) in D_train:
             y_pred = model.predict(X_batch)
             loss = loss_function(y_batch, y_pred)
             gradients = compute_gradients(loss)
-            Î¸ = Î¸ - learning_rate * gradients
+            θ = θ - learning_rate * gradients
         val_loss = evaluate(model, D_val)
         IF val_loss not improved for patience epochs:
             BREAK
@@ -135,14 +135,14 @@ FUNCTION SupervisedLearning(Dataset D)
 | Classification | Discrete class | Cross-entropy | Decision Tree, Logistic Regression |
 | Regression | Continuous value | Mean Squared Error | Linear Regression, SVR |
 
-**Python Implementation â€” k-Nearest Neighbors:**
+**Python Implementation — k-Nearest Neighbors:**
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import numpy as np
 
-# Sample dataset: [height, weight] â†’ species
+# Sample dataset: [height, weight] → species
 X = np.array([[150, 50], [160, 55], [170, 65],
               [140, 45], [180, 75], [155, 52]])
 y = np.array(['dog', 'dog', 'cat', 'dog', 'cat', 'cat'])
@@ -165,7 +165,7 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred):.2f}")
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| Training (k-NN) | $O(1)$ | k-NN is lazy â€” no actual training, just stores data |
+| Training (k-NN) | $O(1)$ | k-NN is lazy — no actual training, just stores data |
 | Prediction (k-NN) | $O(n \cdot d)$ | Must compute distance to all $n$ training points across $d$ features |
 | Training (Decision Tree) | $O(n \cdot d \cdot \log n)$ | Each split sorts features, tree height is $O(\log n)$ |
 | Prediction (Decision Tree) | $O(\log n)$ | Traverses tree from root to leaf, tree depth is $O(\log n)$ |
@@ -180,8 +180,8 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred):.2f}")
 | Direct performance metrics (accuracy, MSE) | Class imbalance can bias results |
 
 **Edge Cases:**
-- **Missing values**: Many algorithms cannot handle NaN â€” must impute (mean, median, KNN imputer) or drop
-- **Class imbalance**: 99% class A / 1% class B â†’ model achieves 99% accuracy by always predicting A. Fix with class weights, oversampling (SMOTE), or undersampling
+- **Missing values**: Many algorithms cannot handle NaN — must impute (mean, median, KNN imputer) or drop
+- **Class imbalance**: 99% class A / 1% class B → model achieves 99% accuracy by always predicting A. Fix with class weights, oversampling (SMOTE), or undersampling
 - **Outliers**: Single extreme value can skew linear regression coefficients. Use robust scalers or tree-based models
 - **Categorical features**: Must one-hot encode or label-encode; tree models handle categorical splits natively
 
@@ -189,7 +189,7 @@ print(f"Accuracy: {accuracy_score(y_test, y_pred):.2f}")
 
 ### 2. Unsupervised Learning
 
-**Real-World Analogy:** A librarian asked to organize a pile of books into groups without any labels. The librarian notices that some books have red covers, some have math equations, some are fiction â€” and groups them by similarity. The groups emerge naturally from the data.
+**Real-World Analogy:** A librarian asked to organize a pile of books into groups without any labels. The librarian notices that some books have red covers, some have math equations, some are fiction — and groups them by similarity. The groups emerge naturally from the data.
 
 **Definition:** The algorithm finds hidden patterns, groupings, or structure in unlabeled data. No ground-truth labels exist.
 
@@ -220,15 +220,15 @@ FUNCTION KMeans(Dataset D, int k)
     RETURN centroids, clusters
 ```
 
-**Dry Run â€” k-Means on 6 points with k=2:**
+**Dry Run — k-Means on 6 points with k=2:**
 
 | Iteration | Centroid 1 | Centroid 2 | Cluster Assignments | Converged? |
 |-----------|-----------|-----------|---------------------|:----------:|
-| Init | (2,3) | (8,5) | â€” | No |
-| 1 | (2.0, 3.0) | (8.0, 5.0) | A(1,2),B(2,4),C(3,3)â†’C1; D(7,5),E(8,6),F(9,4)â†’C2 | No |
+| Init | (2,3) | (8,5) | — | No |
+| 1 | (2.0, 3.0) | (8.0, 5.0) | A(1,2),B(2,4),C(3,3)→C1; D(7,5),E(8,6),F(9,4)→C2 | No |
 | 2 | (2.0, 3.0) | (8.0, 5.0) | Same as iteration 1 | **Yes** |
 
-**Python Implementation â€” k-Means:**
+**Python Implementation — k-Means:**
 ```python
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
@@ -260,22 +260,22 @@ print(f"Inertia (within-cluster variance): {kmeans.inertia_:.2f}")
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| No labels needed â€” works on raw data | Results are subjective â€” no ground truth to validate |
+| No labels needed — works on raw data | Results are subjective — no ground truth to validate |
 | Discovers hidden patterns | Must choose $k$ (number of clusters) in advance |
 | Scalable to large datasets (mini-batch k-Means) | Sensitive to initialization and scaling |
-| Useful for preprocessing and anomaly detection | Curse of dimensionality â€” distances become meaningless in high dimensions |
+| Useful for preprocessing and anomaly detection | Curse of dimensionality — distances become meaningless in high dimensions |
 
 **Edge Cases:**
-- **Non-spherical clusters**: k-Means fails on crescent-shaped or nested clusters â€” use DBSCAN or Spectral Clustering instead
-- **Varying density**: DBSCAN with fixed epsilon struggles â€” use OPTICS
-- **High dimensions**: Distance concentration (all points appear equally far) â€” use PCA first
+- **Non-spherical clusters**: k-Means fails on crescent-shaped or nested clusters — use DBSCAN or Spectral Clustering instead
+- **Varying density**: DBSCAN with fixed epsilon struggles — use OPTICS
+- **High dimensions**: Distance concentration (all points appear equally far) — use PCA first
 - **Deterministic initialization**: k-Means++ mitigates random initialization issues but does not guarantee global optimum
 
 ---
 
 ### 3. Reinforcement Learning
 
-**Real-World Analogy:** A puppy learning to fetch a ball. When the puppy brings the ball back, it gets a treat (reward). When it runs away, it gets nothing (no reward). The puppy learns which actions lead to treats through trial and error â€” not from being told the correct action.
+**Real-World Analogy:** A puppy learning to fetch a ball. When the puppy brings the ball back, it gets a treat (reward). When it runs away, it gets nothing (no reward). The puppy learns which actions lead to treats through trial and error — not from being told the correct action.
 
 **Definition:** An agent learns to make decisions by interacting with an environment. The agent receives a reward signal and learns a **policy** $\pi(a|s)$ that maps states to actions to maximize cumulative reward.
 
@@ -291,7 +291,7 @@ print(f"Inertia (within-cluster variance): {kmeans.inertia_:.2f}")
 **Pseudocode:**
 ```
 FUNCTION QLearning(Environment env, float alpha, float gamma, float epsilon)
-    Q = zero-initialized table [states Ã— actions]
+    Q = zero-initialized table [states × actions]
     FOR episode = 1 to max_episodes:
         s = env.reset()
         WHILE s is not terminal:
@@ -305,18 +305,18 @@ FUNCTION QLearning(Environment env, float alpha, float gamma, float epsilon)
     RETURN Q
 ```
 
-**Dry Run â€” Q-Learning on 4-state Grid World ($\alpha=0.1, \gamma=0.9, \epsilon=0.2$):**
+**Dry Run — Q-Learning on 4-state Grid World ($\alpha=0.1, \gamma=0.9, \epsilon=0.2$):**
 
 | Episode | State | Action | Reward | Q(s,a) Before | TD Target | Q(s,a) After |
 |:-------:|:-----:|:------:|:------:|:-------------:|:---------:|:------------:|
-| 1 | S0 | Right | 0 | 0 | 0 + 0.9Â·0 = 0 | 0 |
-| 5 | S0 | Right | 0 | 0 | 0 + 0.9Â·1 = 0.9 | 0.09 |
-| 5 | S1 | Right | 0 | 0 | 0 + 0.9Â·0 = 0 | 0 |
-| 10 | S0 | Right | 0 | 0.09 | 0 + 0.9Â·0.09 = 0.081 | 0.081 |
-| 20 | S2 | Right | +10 | 0 | 10 + 0.9Â·0 = 10 | 1.0 |
-| 50 | S0 | Right | 0 | 0.05 | 0 + 0.9Â·0.5 = 0.45 | 0.09 |
+| 1 | S0 | Right | 0 | 0 | 0 + 0.9·0 = 0 | 0 |
+| 5 | S0 | Right | 0 | 0 | 0 + 0.9·1 = 0.9 | 0.09 |
+| 5 | S1 | Right | 0 | 0 | 0 + 0.9·0 = 0 | 0 |
+| 10 | S0 | Right | 0 | 0.09 | 0 + 0.9·0.09 = 0.081 | 0.081 |
+| 20 | S2 | Right | +10 | 0 | 10 + 0.9·0 = 10 | 1.0 |
+| 50 | S0 | Right | 0 | 0.05 | 0 + 0.9·0.5 = 0.45 | 0.09 |
 
-**Python Implementation â€” Q-Learning:**
+**Python Implementation — Q-Learning:**
 ```python
 import numpy as np
 
@@ -347,9 +347,9 @@ print(Q)
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| Q-Learning update | $O(1)$ | Single table lookup and update â€” constant time |
+| Q-Learning update | $O(1)$ | Single table lookup and update — constant time |
 | Q-Learning (training) | $O(|S|^2 \cdot |A| \cdot E)$ | Each episode explores up to $|S|$ states, repeated $E$ times |
-| Deep Q-Network (forward) | $O(L)$ | $L$ layers in neural network â€” architecture-dependent |
+| Deep Q-Network (forward) | $O(L)$ | $L$ layers in neural network — architecture-dependent |
 | Policy Gradient | $O(|S| \cdot |A| \cdot T)$ | $T$ timesteps per episode, gradient computation per step |
 
 **Advantages & Disadvantages:**
@@ -362,16 +362,16 @@ print(Q)
 | Achieved superhuman performance (Go, Atari, robotics) | Reward engineering is often non-trivial |
 
 **Edge Cases:**
-- **Sparse rewards**: Agent explores for thousands of steps without feedback â€” use reward shaping, curiosity-driven exploration, or HER
-- **Non-stationary environments**: Transition probabilities change over time â€” use continual learning approaches
-- **Catastrophic forgetting**: Neural network agents forget earlier skills when learning new ones â€” use experience replay or periodic consolidation
-- **Exploration vs exploitation deadlock**: Purely greedy policy may miss better solutions â€” $\epsilon$-decay schedules are critical
+- **Sparse rewards**: Agent explores for thousands of steps without feedback — use reward shaping, curiosity-driven exploration, or HER
+- **Non-stationary environments**: Transition probabilities change over time — use continual learning approaches
+- **Catastrophic forgetting**: Neural network agents forget earlier skills when learning new ones — use experience replay or periodic consolidation
+- **Exploration vs exploitation deadlock**: Purely greedy policy may miss better solutions — $\epsilon$-decay schedules are critical
 
 ---
 
 ### Inductive Learning
 
-The goal of inductive learning is to find a hypothesis $h$ that approximates the true function $f$ using only a finite set of examples. Because many hypotheses can fit the data, the agent must have an **inductive bias** â€” a preference for one type of hypothesis over another (e.g., Occam's Razor prefers simpler hypotheses).
+The goal of inductive learning is to find a hypothesis $h$ that approximates the true function $f$ using only a finite set of examples. Because many hypotheses can fit the data, the agent must have an **inductive bias** — a preference for one type of hypothesis over another (e.g., Occam's Razor prefers simpler hypotheses).
 
 **Hypothesis Space:** The set of all possible functions the learning algorithm can produce. A larger hypothesis space increases expressiveness but makes finding the right hypothesis harder.
 
@@ -379,7 +379,7 @@ The goal of inductive learning is to find a hypothesis $h$ that approximates the
 
 ### Decision Trees
 
-**Real-World Analogy:** A doctor diagnosing a patient uses a series of yes/no questions â€” "Do you have a fever?" (yes â†’ "Is it above 102Â°F?" / no â†’ "Do you have a cough?"). Each question narrows down the possibilities until a diagnosis is reached. This is exactly how a decision tree works.
+**Real-World Analogy:** A doctor diagnosing a patient uses a series of yes/no questions — "Do you have a fever?" (yes → "Is it above 102°F?" / no → "Do you have a cough?"). Each question narrows down the possibilities until a diagnosis is reached. This is exactly how a decision tree works.
 
 A Decision Tree is a flowchart-like structure where each internal node represents a "test" on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label.
 
@@ -394,9 +394,9 @@ A Decision Tree is a flowchart-like structure where each internal node represent
 3. Select the attribute with the highest Information Gain as the splitting attribute
 4. Create a child node for each value of the selected attribute
 5. For each child node:
-   - If all examples belong to the same class â†’ make it a leaf node
-   - If no attributes remaining â†’ make it a leaf node with majority class
-   - Otherwise â†’ recurse (go to step 1)
+   - If all examples belong to the same class → make it a leaf node
+   - If no attributes remaining → make it a leaf node with majority class
+   - Otherwise → recurse (go to step 1)
 6. Apply pruning (post-pruning or pre-pruning) to reduce overfitting
 
 **Pseudocode:**
@@ -417,7 +417,7 @@ FUNCTION ID3(Dataset S, AttributeSet A)
     RETURN tree
 ```
 
-**Dry Run â€” Tennis Dataset:**
+**Dry Run — Tennis Dataset:**
 
 Dataset (14 examples, 4 features: Outlook, Temperature, Humidity, Wind):
 
@@ -438,42 +438,42 @@ Dataset (14 examples, 4 features: Outlook, Temperature, Humidity, Wind):
 | 13 | Overcast | Hot | Normal | Weak | Yes |
 | 14 | Rain | Mild | High | Strong | No |
 
-**Step 1 â€” Compute Entropy of the whole set:**
+**Step 1 — Compute Entropy of the whole set:**
 - 9 Yes, 5 No
 - $p_{yes} = 9/14$, $p_{no} = 5/14$
 - $H(S) = -(9/14)\log_2(9/14) - (5/14)\log_2(5/14)$
 - $H(S) = -(0.643)(-0.637) - (0.357)(-1.485)$
 - $H(S) = 0.409 + 0.530 = 0.940$
 
-**Step 2 â€” Information Gain for each attribute:**
+**Step 2 — Information Gain for each attribute:**
 
 **Outlook:**
-- Sunny: 2 Yes, 3 No â†’ $H = 0.971$
-- Overcast: 4 Yes, 0 No â†’ $H = 0.000$
-- Rain: 3 Yes, 2 No â†’ $H = 0.971$
+- Sunny: 2 Yes, 3 No → $H = 0.971$
+- Overcast: 4 Yes, 0 No → $H = 0.000$
+- Rain: 3 Yes, 2 No → $H = 0.971$
 - $IG(S, Outlook) = 0.940 - (5/14)(0.971) - (4/14)(0.000) - (5/14)(0.971)$
 - $= 0.940 - 0.347 - 0.000 - 0.347 = 0.246$
 
 **Temperature:**
-- Hot: 2 Yes, 2 No â†’ $H = 1.000$
-- Mild: 4 Yes, 2 No â†’ $H = 0.918$
-- Cool: 3 Yes, 1 No â†’ $H = 0.811$
+- Hot: 2 Yes, 2 No → $H = 1.000$
+- Mild: 4 Yes, 2 No → $H = 0.918$
+- Cool: 3 Yes, 1 No → $H = 0.811$
 - $IG(S, Temp) = 0.940 - (4/14)(1.000) - (6/14)(0.918) - (4/14)(0.811)$
 - $= 0.940 - 0.286 - 0.393 - 0.232 = 0.029$
 
 **Humidity:**
-- High: 3 Yes, 4 No â†’ $H = 0.985$
-- Normal: 6 Yes, 1 No â†’ $H = 0.592$
+- High: 3 Yes, 4 No → $H = 0.985$
+- Normal: 6 Yes, 1 No → $H = 0.592$
 - $IG(S, Humidity) = 0.940 - (7/14)(0.985) - (7/14)(0.592)$
 - $= 0.940 - 0.493 - 0.296 = 0.151$
 
 **Wind:**
-- Weak: 6 Yes, 2 No â†’ $H = 0.811$
-- Strong: 3 Yes, 3 No â†’ $H = 1.000$
+- Weak: 6 Yes, 2 No → $H = 0.811$
+- Strong: 3 Yes, 3 No → $H = 1.000$
 - $IG(S, Wind) = 0.940 - (8/14)(0.811) - (6/14)(1.000)$
 - $= 0.940 - 0.463 - 0.429 = 0.048$
 
-**Step 3 â€” Split on Outlook (highest IG = 0.246):**
+**Step 3 — Split on Outlook (highest IG = 0.246):**
 
 ```
           [Outlook]
@@ -484,7 +484,7 @@ Dataset (14 examples, 4 features: Outlook, Temperature, Humidity, Wind):
           Leaf: Yes
 ```
 
-**Step 4 â€” Recurse on Sunny branch:**
+**Step 4 — Recurse on Sunny branch:**
 Subset (Sunny): Days 1, 2, 8, 9, 11
 
 | Day | Temp | Humidity | Wind | Play? |
@@ -498,10 +498,10 @@ Subset (Sunny): Days 1, 2, 8, 9, 11
 - $H(S_{sunny}) = -(2/5)\log_2(2/5) - (3/5)\log_2(3/5) = 0.971$
 - IG(Temp) = 0.571, IG(Humidity) = 0.971, IG(Wind) = 0.020
 - **Split on Humidity** (IG = 0.971):
-  - High â†’ 0Y, 3N â†’ Leaf: **No**
-  - Normal â†’ 2Y, 0N â†’ Leaf: **Yes**
+  - High → 0Y, 3N → Leaf: **No**
+  - Normal → 2Y, 0N → Leaf: **Yes**
 
-**Step 5 â€” Recurse on Rain branch:**
+**Step 5 — Recurse on Rain branch:**
 Subset (Rain): Days 4, 5, 6, 10, 14
 
 | Day | Temp | Humidity | Wind | Play? |
@@ -515,8 +515,8 @@ Subset (Rain): Days 4, 5, 6, 10, 14
 - $H(S_{rain}) = 0.971$
 - IG(Temp) = 0.020, IG(Humidity) = 0.020, IG(Wind) = 0.971
 - **Split on Wind** (IG = 0.971):
-  - Weak â†’ 3Y, 0N â†’ Leaf: **Yes**
-  - Strong â†’ 0Y, 2N â†’ Leaf: **No**
+  - Weak → 3Y, 0N → Leaf: **Yes**
+  - Strong → 0Y, 2N → Leaf: **No**
 
 **Final Decision Tree:**
 ```
@@ -570,27 +570,27 @@ plt.show()
 | IG for one attribute | $O(n \cdot v)$ | Entropy per value $v$ times number of examples $n$ |
 | ID3 one split level | $O(n \cdot d \cdot v)$ | Compute IG for all $d$ attributes, each with $v$ values |
 | ID3 full tree | $O(n \cdot d \cdot v \cdot \log n)$ | Tree height is $O(\log n)$, each level runs all attributes |
-| Prediction | $O(\log n)$ | Traverse tree from root to leaf â€” depth is logarithmic |
+| Prediction | $O(\log n)$ | Traverse tree from root to leaf — depth is logarithmic |
 
-**Why complexity matters:** For large datasets with millions of examples, $O(n \cdot d)$ per level becomes expensive. This is why random forests sample both data and features â€” reducing effective $n$ and $d$ per tree.
+**Why complexity matters:** For large datasets with millions of examples, $O(n \cdot d)$ per level becomes expensive. This is why random forests sample both data and features — reducing effective $n$ and $d$ per tree.
 
 ---
 
 ### Generalization, Overfitting, and Underfitting
 
 **Real-World Analogy:** Preparing for an exam:
-- **Underfitting** (High Bias): Studying only the chapter titles â€” too simple to answer detailed questions.
+- **Underfitting** (High Bias): Studying only the chapter titles — too simple to answer detailed questions.
 - **Overfitting** (High Variance): Memorizing the exact wording of three sample exams. You ace those exact questions but fail any question phrased differently.
-- **Good Generalization**: Understanding the core concepts â€” you can answer any question on the topic, even ones you have never seen.
+- **Good Generalization**: Understanding the core concepts — you can answer any question on the topic, even ones you have never seen.
 
 - **Underfitting**: The model is too simple to capture the underlying structure (High Bias).
 - **Overfitting**: The model is too complex and captures the noise in the training data rather than the true pattern (High Variance).
 - **Generalization**: The ability of a model to perform well on unseen data.
 
 **How to detect these:**
-- Training accuracy high, validation accuracy low â†’ **Overfitting**
-- Training accuracy low, validation accuracy low â†’ **Underfitting**
-- Both high and close â†’ **Good Generalization**
+- Training accuracy high, validation accuracy low → **Overfitting**
+- Training accuracy low, validation accuracy low → **Underfitting**
+- Both high and close → **Good Generalization**
 
 ---
 
@@ -598,7 +598,7 @@ plt.show()
 
 | Feature | Supervised | Unsupervised | Reinforcement |
 |---------|:----------:|:------------:|:-------------:|
-| **Training Data** | Labeled (X, y) | Unlabeled (X only) | No dataset â€” environment interaction |
+| **Training Data** | Labeled (X, y) | Unlabeled (X only) | No dataset — environment interaction |
 | **Feedback** | Direct (target label) | None | Delayed (reward signal) |
 | **Goal** | Map inputs to outputs | Discover hidden structure | Maximize cumulative reward |
 | **Performance Metric** | Accuracy, F1, MSE | Inertia, silhouette score | Cumulative reward, episode return |
@@ -613,9 +613,9 @@ plt.show()
 ## Bias-Variance Tradeoff
 
 **Real-World Analogy:** An archer shooting arrows at a target:
-- **High Bias (Underfitting)**: All arrows cluster in the same wrong area â€” consistently off-target (systematic error).
-- **High Variance (Overfitting)**: Arrows are scattered everywhere â€” some hit the bullseye, most miss wildly (inconsistent).
-- **Optimal**: Arrows cluster tightly around the bullseye â€” low systematic error AND low inconsistency.
+- **High Bias (Underfitting)**: All arrows cluster in the same wrong area — consistently off-target (systematic error).
+- **High Variance (Overfitting)**: Arrows are scattered everywhere — some hit the bullseye, most miss wildly (inconsistent).
+- **Optimal**: Arrows cluster tightly around the bullseye — low systematic error AND low inconsistency.
 
 **Mathematical Decomposition:**
 
@@ -624,9 +624,9 @@ The expected generalization error of a model can be decomposed into three compon
 $$\text{Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Error}$$
 
 Where:
-- **Bias**: Error from approximating a complex real-world problem with a simplified model. High bias â†’ model misses relevant patterns.
-- **Variance**: Error from sensitivity to small fluctuations in the training set. High variance â†’ model learns noise instead of signal.
-- **Irreducible Error**: Noise inherent in the problem itself â€” no model can reduce it.
+- **Bias**: Error from approximating a complex real-world problem with a simplified model. High bias → model misses relevant patterns.
+- **Variance**: Error from sensitivity to small fluctuations in the training set. High variance → model learns noise instead of signal.
+- **Irreducible Error**: Noise inherent in the problem itself — no model can reduce it.
 
 **The Tradeoff:**
 
@@ -636,7 +636,7 @@ Where:
                        |
           +------------+------------+
           |                         |
-       BiasÂ²                   Variance
+       Bias²                   Variance
           |                         |
     (increases as model       (increases as model
      becomes simpler)          becomes complex)
@@ -654,10 +654,10 @@ Where:
 |---------|:----:|:--------:|-----|
 | Train error = 25%, Test error = 28% | High | Low | Increase model complexity, add features |
 | Train error = 0.1%, Test error = 18% | Low | High | Regularize, reduce features, get more data |
-| 5-fold CV: [72%, 73%, 72%, 74%, 73%] | High | Low | Model too simple â€” upgrade algorithm |
-| 5-fold CV: [98%, 72%, 97%, 71%, 96%] | Low | High | Model unstable â€” reduce complexity |
+| 5-fold CV: [72%, 73%, 72%, 74%, 73%] | High | Low | Model too simple — upgrade algorithm |
+| 5-fold CV: [98%, 72%, 97%, 71%, 96%] | Low | High | Model unstable — reduce complexity |
 
-**Python â€” Visualising Bias-Variance:**
+**Python — Visualising Bias-Variance:**
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -753,8 +753,8 @@ print(f"Mean accuracy: {scores.mean():.3f} (+/- {scores.std() * 2:.3f})")
 | Stratified k-Fold | High | Low | Medium | Imbalanced classes |
 
 **Edge Cases:**
-- **Time series**: Standard k-Fold leaks future information â€” use TimeSeriesSplit instead
-- **Grouped data**: Multiple rows from same patient â€” use GroupKFold to keep groups together
+- **Time series**: Standard k-Fold leaks future information — use TimeSeriesSplit instead
+- **Grouped data**: Multiple rows from same patient — use GroupKFold to keep groups together
 - **Severe class imbalance**: Stratified k-Fold preserves class proportions in each fold
 
 ---
@@ -775,10 +775,10 @@ print(f"Mean accuracy: {scores.mean():.3f} (+/- {scores.std() * 2:.3f})")
 ### Regularization
 
 **Q1: Explain L1 vs L2 regularization. When would you use each?**
-**Answer:** L1 (Lasso) adds $\lambda\|w\|_1$ to the loss â€” it drives some weights to exactly zero, performing automatic feature selection. L2 (Ridge) adds $\lambda\|w\|_2^2$ â€” it shrinks weights but never to zero, keeping all features. Use L1 when you suspect many features are irrelevant. Use L2 when all features contribute somewhat. ElasticNet combines both.
+**Answer:** L1 (Lasso) adds $\lambda\|w\|_1$ to the loss — it drives some weights to exactly zero, performing automatic feature selection. L2 (Ridge) adds $\lambda\|w\|_2^2$ — it shrinks weights but never to zero, keeping all features. Use L1 when you suspect many features are irrelevant. Use L2 when all features contribute somewhat. ElasticNet combines both.
 
 **Q2: How does regularization help the bias-variance tradeoff?**
-**Answer:** Regularization constrains model complexity (penalizes large weights), which increases bias slightly but reduces variance significantly. The net effect is lower total error. The $\lambda$ hyperparameter controls this balance â€” too high â†’ underfitting, too low â†’ overfitting.
+**Answer:** Regularization constrains model complexity (penalizes large weights), which increases bias slightly but reduces variance significantly. The net effect is lower total error. The $\lambda$ hyperparameter controls this balance — too high → underfitting, too low → overfitting.
 
 **Q3: What is dropout and why does it work?**
 **Answer:** Dropout randomly deactivates a fraction of neurons during each training iteration. This prevents co-adaptation (neurons relying too heavily on specific other neurons), effectively training an ensemble of thinned networks at each step. It forces each neuron to learn robust features that work independently.
@@ -786,13 +786,13 @@ print(f"Mean accuracy: {scores.mean():.3f} (+/- {scores.std() * 2:.3f})")
 ### Feature Engineering
 
 **Q1: How do you handle categorical features with high cardinality (1000+ unique values)?**
-**Answer:** Options include: (1) Target encoding â€” replace category with mean target value (risks overfitting, use smoothing); (2) Count encoding â€” replace with frequency; (3) Embedding â€” learn a dense vector representation; (4) Feature hashing â€” hash categories into a fixed number of buckets. One-hot encoding is impractical at this cardinality.
+**Answer:** Options include: (1) Target encoding — replace category with mean target value (risks overfitting, use smoothing); (2) Count encoding — replace with frequency; (3) Embedding — learn a dense vector representation; (4) Feature hashing — hash categories into a fixed number of buckets. One-hot encoding is impractical at this cardinality.
 
 **Q2: What is feature scaling and which algorithms require it?**
 **Answer:** Standardization (z-score) or normalization (min-max) ensures all features contribute equally. Required for: SVM, k-NN (distance-based), PCA, neural networks, logistic regression. NOT required for: Decision trees, Random Forest (tree models split on thresholds insensitive to scale).
 
 **Q3: What techniques handle missing data?**
-**Answer:** (1) Delete rows/columns (if missing proportion is small or large); (2) Mean/median imputation (simple but ignores correlations); (3) KNN imputation (uses similar rows); (4) MICE (Multiple Imputation by Chained Equations â€” iterative, state-of-the-art); (5) Model-based: set missing indicator + impute value, let the model learn the pattern.
+**Answer:** (1) Delete rows/columns (if missing proportion is small or large); (2) Mean/median imputation (simple but ignores correlations); (3) KNN imputation (uses similar rows); (4) MICE (Multiple Imputation by Chained Equations — iterative, state-of-the-art); (5) Model-based: set missing indicator + impute value, let the model learn the pattern.
 
 ---
 
@@ -807,7 +807,7 @@ print(f"Mean accuracy: {scores.mean():.3f} (+/- {scores.std() * 2:.3f})")
 - **Content-Based Filtering**: Recommend movies similar to ones the user has liked based on genre, actors, director.
 - **Hybrid**: Netflix uses a hybrid approach combining both.
 
-**Algorithm (Alternating Least Squares â€” ALS):**
+**Algorithm (Alternating Least Squares — ALS):**
 1. Initialize user matrix $U$ and item matrix $V$ randomly
 2. Fix $U$, solve for $V$ that minimizes error: $\min_V \|R - UV^T\|^2 + \lambda\|V\|^2$
 3. Fix $V$, solve for $U$ analogously
@@ -821,11 +821,11 @@ print(f"Mean accuracy: {scores.mean():.3f} (+/- {scores.std() * 2:.3f})")
 **Problem:** Identify fraudulent credit card transactions from millions of legitimate ones in real-time.
 
 **Approach:**
-- **Anomaly Detection** (Isolation Forest): Isolates outliers by randomly splitting features â€” frauds are few and different, so they are isolated in few splits.
+- **Anomaly Detection** (Isolation Forest): Isolates outliers by randomly splitting features — frauds are few and different, so they are isolated in few splits.
 - **Supervised Classification** (XGBoost): Trained on historical flagged transactions.
 - **Challenges:** Extreme class imbalance (typically &lt;0.1% are fraudulent).
 
-**Python â€” Fraud Detection Pipeline:**
+**Python — Fraud Detection Pipeline:**
 ```python
 from sklearn.ensemble import IsolationForest
 from sklearn.metrics import precision_recall_curve
@@ -849,7 +849,7 @@ print(f"Anomalies detected: {sum(preds == -1)}")
 
 **Problem:** Classify medical images (X-rays, MRIs) for disease diagnosis or identify objects (pedestrians, traffic signs) for self-driving cars.
 
-**Approach (Convolutional Neural Networks â€” CNNs):**
+**Approach (Convolutional Neural Networks — CNNs):**
 1. **Convolution layers**: Learn spatial features (edges, textures, shapes)
 2. **Pooling layers**: Reduce spatial dimensions while preserving important features
 3. **Fully connected layers**: Map extracted features to class probabilities
@@ -888,7 +888,7 @@ The dataset contains attributes like `Outlook`, `Humidity`, and `Wind`, with a l
 - **Step-by-step**:
   1. Calculate the entropy of the entire dataset ($H(S) = 0.940$).
   2. For each attribute, calculate the Information Gain.
-  3. `Outlook` has the highest gain (0.246) â€” make it the root node.
+  3. `Outlook` has the highest gain (0.246) — make it the root node.
   4. Repeat for each branch until pure or no attributes remain.
 - **Code snippet (Python with Scikit-Learn)**:
 ```python
@@ -919,7 +919,7 @@ Predict the price of a house based on its square footage.
 | Unsupervised | No | None | Discover hidden structure | Clustering, dimensionality reduction |
 | Reinforcement | No | Delayed (reward) | Maximize cumulative reward | Game playing, robot control |
 
-## Quick Reference â€” Key ML Concepts
+## Quick Reference — Key ML Concepts
 
 | Concept | Formula / Description | Purpose |
 |---------|----------------------|---------|
@@ -929,7 +929,7 @@ Predict the price of a house based on its square footage.
 | Gini Index | $1 - \sum p_i^2$ | Alternative to entropy (faster) |
 | MSE | $\frac{1}{n}\sum(y_i - \hat{y}_i)^2$ | Regression loss function |
 | Cross-Entropy | $-\sum y_i \log(\hat{y}_i)$ | Classification loss function |
-| BiasÂ² | Systematic error from simplifying assumptions | Error component (underfitting) |
+| Bias² | Systematic error from simplifying assumptions | Error component (underfitting) |
 | Variance | Sensitivity to training data fluctuations | Error component (overfitting) |
 
 ## Cross-Application Matrix
@@ -993,7 +993,7 @@ Predict the price of a house based on its square footage.
 - Supervised learning is the most common paradigm for classification and regression.
 - Decision trees are intuitive models that use information theory to split data effectively.
 - Overfitting is a primary challenge; it occurs when a model is "memorizing" rather than "learning."
-- The bias-variance tradeoff governs model generalization â€” optimal complexity lies in the middle.
+- The bias-variance tradeoff governs model generalization — optimal complexity lies in the middle.
 - k-Fold cross-validation provides a robust estimate of model performance.
 - Effective ML requires careful data preprocessing, feature engineering, and rigorous evaluation.
 - The choice of hypothesis space and inductive bias determines the success of a learning agent.

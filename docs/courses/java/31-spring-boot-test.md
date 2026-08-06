@@ -1,4 +1,4 @@
-﻿# Spring Boot Testing
+# Spring Boot Testing
 > **Previous:** [Mockito](30-mockito.md) | **Next:** [Testcontainers](32-testcontainers.md)
 
 Spring Boot provides first-class support for testing at every level of the application: unit tests with mocked slices, integration tests with the full application context, and end-to-end tests via HTTP clients. The testing layer builds on JUnit 5 and Mockito, adding Spring-specific annotations, test slices, and utilities that simplify wiring, configuration, and verification of Spring-managed components.
@@ -55,9 +55,9 @@ By the end of this chapter you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Spring Boot Testing â†’ full integration test support | `@SpringBootTest` loads the full application context |
-| Test Slices â†’ focused test contexts for specific layers | `@WebMvcTest`, `@DataJpaTest`, `@JsonTest` |
-| TestConfiguration â†’ override beans for testing | `@TestConfiguration` + `@Bean` for test-specific wiring |
+| Spring Boot Testing → full integration test support | `@SpringBootTest` loads the full application context |
+| Test Slices → focused test contexts for specific layers | `@WebMvcTest`, `@DataJpaTest`, `@JsonTest` |
+| TestConfiguration → override beans for testing | `@TestConfiguration` + `@Bean` for test-specific wiring |
 
 ---
 ## Chapter Roadmap
@@ -109,14 +109,14 @@ flowchart TD
 ## Chapter Quiz
 
 1. Which annotation loads the full application context for integration tests? **Answer:** `@SpringBootTest`
-2. What is the fastest Spring Boot test slice? **Answer:** `@JsonTest` â†’ only tests JSON serialization
+2. What is the fastest Spring Boot test slice? **Answer:** `@JsonTest` → only tests JSON serialization
 3. How do you make `MockMvc` available in a `@WebMvcTest`? **Answer:** It is auto-configured; inject via `@Autowired`
 
 ---
 
 ## Table of Contents
 
-1. [@SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Context Testing](#1-springboottest--full-context-testing)
+1. [@SpringBootTest — Full Context Testing](#1-springboottest--full-context-testing)
 2. [Web Environment Modes](#2-web-environment-modes)
 3. [TestRestTemplate](#3-testresttemplate)
 4. [WebTestClient](#4-webtestclient)
@@ -129,9 +129,9 @@ flowchart TD
 
 ---
 
-## 1. @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Context Testing
+## 1. @SpringBootTest — Full Context Testing
 
-`@SpringBootTest` starts the full Spring application context ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â all beans, auto-configuration, and external configuration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â just as if the application were running normally.
+`@SpringBootTest` starts the full Spring application context — all beans, auto-configuration, and external configuration — just as if the application were running normally.
 
 ```java
 package springboot.fullcontext;
@@ -311,7 +311,7 @@ class DirtyContextTest {
 > Use test slices like `@WebMvcTest` and `@DataJpaTest` instead of `@SpringBootTest` for faster, more focused tests.
 
 > [!WARNING]
-> Avoid `@SpringBootTest` in unit tests â†’ it starts the full context and dramatically slows down your test suite.
+> Avoid `@SpringBootTest` in unit tests → it starts the full context and dramatically slows down your test suite.
 
 ---
 
@@ -319,10 +319,10 @@ class DirtyContextTest {
 
 `@SpringBootTest(webEnvironment = ...)` controls how the web server is started:
 
-- `MOCK` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â loads a mock web environment (MockMvc), no real server
-- `RANDOM_PORT` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â starts the real server on a random available port
-- `DEFINED_PORT` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â starts the real server on the configured port
-- `NONE` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â loads the context without any web environment
+- `MOCK` — loads a mock web environment (MockMvc), no real server
+- `RANDOM_PORT` — starts the real server on a random available port
+- `DEFINED_PORT` — starts the real server on the configured port
+- `NONE` — loads the context without any web environment
 
 ```java
 package springboot.webenv;
@@ -338,7 +338,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 /**
- * MOCK ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â starts a mock Servlet environment without a real server.
+ * MOCK — starts a mock Servlet environment without a real server.
  * This is the default. Use @AutoConfigureMockMvc to inject MockMvc.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
@@ -365,7 +365,7 @@ class MockWebEnvironmentTest {
 }
 
 /**
- * RANDOM_PORT ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â real server on a random port. Use TestRestTemplate
+ * RANDOM_PORT — real server on a random port. Use TestRestTemplate
  * or WebTestClient as the HTTP client.
  */
 @SpringBootTest(
@@ -407,8 +407,8 @@ class RandomPortTest {
 }
 
 /**
- * DEFINED_PORT ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â real server on the configured port (e.g., server.port=8080).
- * Use caution in CI ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â port conflicts cause failures.
+ * DEFINED_PORT — real server on the configured port (e.g., server.port=8080).
+ * Use caution in CI — port conflicts cause failures.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 class DefinedPortTest {
@@ -426,7 +426,7 @@ class DefinedPortTest {
 }
 
 /**
- * NONE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no web environment at all. Use for testing services,
+ * NONE — no web environment at all. Use for testing services,
  * repositories, and non-web components in a full context.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
@@ -598,7 +598,7 @@ class TestRestTemplateTest {
     @Test
     void deleteRequest() {
         restTemplate.delete("/greet/42");
-        // No body expected ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â verify via subsequent GET or service mock
+        // No body expected — verify via subsequent GET or service mock
     }
 
     @Test
@@ -851,9 +851,9 @@ class ReactiveGreetingController {
 
 ## 5. Slicing Tests
 
-Test slices load only a subset of the application context ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â just the beans needed for a specific layer. This makes slice tests faster and more focused than `@SpringBootTest`.
+Test slices load only a subset of the application context — just the beans needed for a specific layer. This makes slice tests faster and more focused than `@SpringBootTest`.
 
-### 5.1 @WebMvcTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Testing Controllers Only
+### 5.1 @WebMvcTest — Testing Controllers Only
 
 
 ```java
@@ -980,7 +980,7 @@ class GlobalExceptionHandler {
 }
 ```
 
-### 5.2 @DataJpaTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Testing Repositories Only
+### 5.2 @DataJpaTest — Testing Repositories Only
 
 
 ```java
@@ -1044,7 +1044,7 @@ class DataJpaSliceTest {
 
     @Test
     void transactionRollback() {
-        // Each test is rolled back ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no data leaks between tests
+        // Each test is rolled back — no data leaks between tests
         userRepository.save(new UserEntity(null, "Temp", "temp@x.com"));
         assertThat(userRepository.count()).isEqualTo(1);
     }
@@ -1093,7 +1093,7 @@ interface UserRepository extends JpaRepository<UserEntity, Long> {
 }
 ```
 
-### 5.3 @JsonTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Testing Serialization
+### 5.3 @JsonTest — Testing Serialization
 
 
 ```java
@@ -1173,7 +1173,7 @@ class JsonSliceTest {
 record UserDto(Long id, String name, String email, LocalDate createdAt) {}
 ```
 
-### 5.4 @RestClientTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Testing REST Clients
+### 5.4 @RestClientTest — Testing REST Clients
 
 
 ```java
@@ -1538,7 +1538,7 @@ import static org.mockito.Mockito.*;
  * Spring ApplicationContext, replacing any existing bean of
  * the same type.
  *
- * The mock is RESET after each test method ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â stubs and
+ * The mock is RESET after each test method — stubs and
  * interaction data are cleared automatically.
  */
 @SpringBootTest
@@ -1742,7 +1742,7 @@ class AuditLogger {
 }
 ```
 
-### 6.3 DirtiesContext ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Resetting Between Tests
+### 6.3 DirtiesContext — Resetting Between Tests
 
 
 ```java
@@ -1776,7 +1776,7 @@ class DirtiesContextTest {
 
     @Test
     void testTwo() {
-        // configService mock is fresh ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no leftover stubs
+        // configService mock is fresh — no leftover stubs
         // Even without @DirtiesContext, @MockBean is reset automatically
         // This annotation is only needed for edge cases involving
         // bean definitions or singleton bean state
@@ -1811,7 +1811,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * @TestConfiguration defines additional beans or overrides
  * for the test context. Unlike @Configuration, it is NOT
- * picked up by component scanning ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it must be imported
+ * picked up by component scanning — it must be imported
  * explicitly or defined as an inner class.
  */
 @SpringBootTest
@@ -1949,7 +1949,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @DynamicPropertySource is used when property values must be
- * determined at runtime ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â for example, the port of a test
+ * determined at runtime — for example, the port of a test
  * container (Testcontainers), or the URL of a random resource.
  *
  * The method must be static and accept a DynamicPropertyRegistry.
@@ -2232,7 +2232,7 @@ class SpringBootOutputCaptureTest {
 
 This chapter covered the complete Spring Boot testing framework, from full-context integration tests with `@SpringBootTest` to focused slice tests that load only the beans needed for a specific layer.
 
-`@SpringBootTest` was introduced as the primary annotation for loading the full application context. The four web environment modes ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â `MOCK` (simulated web environment with MockMvc), `RANDOM_PORT` (real server on a dynamic port), `DEFINED_PORT` (real server on a fixed port), and `NONE` (no web environment) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â were demonstrated with concrete examples. The `@LocalServerPort` annotation was shown for accessing the dynamically assigned port.
+`@SpringBootTest` was introduced as the primary annotation for loading the full application context. The four web environment modes — `MOCK` (simulated web environment with MockMvc), `RANDOM_PORT` (real server on a dynamic port), `DEFINED_PORT` (real server on a fixed port), and `NONE` (no web environment) — were demonstrated with concrete examples. The `@LocalServerPort` annotation was shown for accessing the dynamically assigned port.
 
 `TestRestTemplate` was covered in detail with `getForEntity`, `postForEntity`, `exchange` with custom headers and request bodies, and basic authentication support. `WebTestClient` provided a reactive alternative with its fluent DSL, JSON Path assertions, and compatibility with both WebFlux and MVC applications.
 
@@ -2307,9 +2307,9 @@ Set up a `@SpringBootTest` that uses Testcontainers to start a PostgreSQL contai
 ### Exercise 7: ActiveProfiles
 
 Create three profile-specific configurations:
-- `@Profile("dev")` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â uses H2 in-memory database, verbose logging
-- `@Profile("test")` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â uses H2, minimal logging, mock mail server
-- `@Profile("prod")` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â uses PostgreSQL, WARN logging, real mail server
+- `@Profile("dev")` — uses H2 in-memory database, verbose logging
+- `@Profile("test")` — uses H2, minimal logging, mock mail server
+- `@Profile("prod")` — uses PostgreSQL, WARN logging, real mail server
 
 Write a `@SpringBootTest` with `@ActiveProfiles("test")` that verifies the correct beans are injected.
 
@@ -2335,10 +2335,10 @@ Write `@DataMongoTest` tests that verify each method. Use `MongoTemplate` for di
 
 Build a complete test suite for a `BlogController` with the following test types:
 
-1. `@WebMvcTest` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â test controller validation, error handling, response format
-2. `@DataJpaTest` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â test `PostRepository` queries, pagination, and sorting
-3. `@JsonTest` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â test `PostDto` serialization with comments, tags, and timestamps
-4. `@RestClientTest` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â test `ExternalCommentClient` that fetches comments from an external service
-5. `@SpringBootTest(RANDOM_PORT)` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â end-to-end test with `TestRestTemplate` using `@MockBean` for external dependencies
-6. `@SpringBootTest` with Testcontainers ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â test the full stack with a real PostgreSQL database
-7. `@OutputCaptureExtension` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â verify that blog operations log the correct audit trail
+1. `@WebMvcTest` — test controller validation, error handling, response format
+2. `@DataJpaTest` — test `PostRepository` queries, pagination, and sorting
+3. `@JsonTest` — test `PostDto` serialization with comments, tags, and timestamps
+4. `@RestClientTest` — test `ExternalCommentClient` that fetches comments from an external service
+5. `@SpringBootTest(RANDOM_PORT)` — end-to-end test with `TestRestTemplate` using `@MockBean` for external dependencies
+6. `@SpringBootTest` with Testcontainers — test the full stack with a real PostgreSQL database
+7. `@OutputCaptureExtension` — verify that blog operations log the correct audit trail

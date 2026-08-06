@@ -1,4 +1,4 @@
-﻿# Chapter 8: Functions
+# Chapter 8: Functions
 
 > **Previous:** [Strings](./07-strings.md) | **Next:** [Pointers](./09-pointers.md)
 
@@ -70,12 +70,12 @@ A **function** is a named, reusable block of code that performs a specific task.
 | Component | Vending Machine | C Function |
 |-----------|----------------|------------|
 | Declaration | Menu panel showing what you can buy (selection A1, A2, etc.) | Prototype telling compiler what the function accepts and returns |
-| Definition | Internal mechanism â†’ motors, coils, sensors that do the work | Function body with actual implementation code |
-| Call | Pressing A1 â†’ you request a specific item | Invoking the function with arguments |
+| Definition | Internal mechanism → motors, coils, sensors that do the work | Function body with actual implementation code |
+| Call | Pressing A1 → you request a specific item | Invoking the function with arguments |
 | Return Value | The soda can that drops into the tray | The value sent back via `return` |
-| Parameters | Coin slot â†’ you insert coins (inputs) | Arguments passed to the function |
+| Parameters | Coin slot → you insert coins (inputs) | Arguments passed to the function |
 
-Just as you don't need to know how the vending machine's motor works to press A1, you don't need to know a function's implementation to call it â†’ only its **prototype**.
+Just as you don't need to know how the vending machine's motor works to press A1, you don't need to know a function's implementation to call it → only its **prototype**.
 
 ### 8.1.1 Function Declaration (Prototype)
 
@@ -110,18 +110,18 @@ CHECK add(5, 3) against declaration:
 PROCEED with call
 ```
 
-**Dry Run â†’ Compiler's View:**
+**Dry Run → Compiler's View:**
 ```
-Line: int add(int a, int b);     â†’ Registers function signature in symbol table
+Line: int add(int a, int b);     → Registers function signature in symbol table
                                     Symbol: add
                                     Return: int
                                     Params: int, int
 
-Line: int result = add(5, 3);    â†’ Looks up "add" in symbol table
+Line: int result = add(5, 3);    → Looks up "add" in symbol table
                                     Found! Signature matches call.
                                     Generated call instruction.
 
-Line: int add(int a, int b) {    â†’ Matches existing declaration
+Line: int add(int a, int b) {    → Matches existing declaration
     return a + b;                   OK, body matches declaration.
 }
 ```
@@ -153,8 +153,8 @@ Sum = 30
 ```
 
 **Complexity:**
-- **Time:** O(1) â†’ declaration is a compile-time construct; no runtime cost
-- **Space:** O(1) â†’ stored in compiler's symbol table; no runtime memory
+- **Time:** O(1) → declaration is a compile-time construct; no runtime cost
+- **Space:** O(1) → stored in compiler's symbol table; no runtime memory
 
 **Edge Cases:**
 | Case | Behavior |
@@ -232,15 +232,15 @@ Max = 15
 - **Time:** O(1) for the function call overhead (constant); body complexity depends on logic
 - **Space:** O(n) where n = size of local variables + parameters on the stack frame
 
-**Dry Run â†’ Call Stack for max(15, 8):**
+**Dry Run → Call Stack for max(15, 8):**
 
 | Step | Stack Frame | Variables | Action |
 |------|-------------|-----------|--------|
 | 1 | main | (empty) | Before call |
-| 2 | main â†’ max | a=15, b=8 | Parameters copied to new frame |
-| 3 | main â†’ max | a=15, b=8, result=? | `result` created (uninitialized) |
-| 4 | main â†’ max | a=15, b=8, result=15 | `15 > 8` â†’ result = 15 |
-| 5 | main â†’ max | returns 15 | return value computed |
+| 2 | main → max | a=15, b=8 | Parameters copied to new frame |
+| 3 | main → max | a=15, b=8, result=? | `result` created (uninitialized) |
+| 4 | main → max | a=15, b=8, result=15 | `15 > 8` → result = 15 |
+| 5 | main → max | returns 15 | return value computed |
 | 6 | main | m=15 | max frame popped, result assigned |
 
 ### 8.1.3 Function Call
@@ -298,18 +298,18 @@ int main(void)
 5 * 4 = 20
 ```
 
-**Dry Run â†’ Complete Call Trace:**
+**Dry Run → Complete Call Trace:**
 
 | # | What Happens | main's vars | multiply's frame |
 |---|-------------|-------------|------------------|
-| 0 | main starts | x=?, y=?, product=? | â†’ |
-| 1 | x=5 | x=5 | â†’ |
-| 2 | y=4 | x=5, y=4 | â†’ |
-| 3 | multiply(x,y) evaluated | x=5, y=4 | â†’ |
+| 0 | main starts | x=?, y=?, product=? | → |
+| 1 | x=5 | x=5 | → |
+| 2 | y=4 | x=5, y=4 | → |
+| 3 | multiply(x,y) evaluated | x=5, y=4 | → |
 | 4 | Push frame for multiply | (suspended) | a=5, b=4 |
 | 5 | Body executes: a*b = 20 | (suspended) | returns 20 |
 | 6 | Pop frame, assign result | x=5, y=4, product=20 | (popped) |
-| 7 | printf executes | x=5, y=4, product=20 | â†’ |
+| 7 | printf executes | x=5, y=4, product=20 | → |
 
 **Edge Cases in Function Calls:**
 | Case | Behavior |
@@ -341,7 +341,7 @@ int main(void)
 
 **Formal parameters** are the variables listed in the function definition. **Actual parameters** (arguments) are the values passed at the call site.
 
-**Real-World Analogy:** A restaurant menu item (formal parameter) describes what the kitchen expects: "Burger with cheese." When you order, you say "Cheeseburger, no onions" â†’ that's the actual parameter. The kitchen slot (formal) receives your specific request (actual).
+**Real-World Analogy:** A restaurant menu item (formal parameter) describes what the kitchen expects: "Burger with cheese." When you order, you say "Cheeseburger, no onions" → that's the actual parameter. The kitchen slot (formal) receives your specific request (actual).
 
 **Numbered Steps:**
 1. Caller evaluates actual arguments
@@ -368,7 +368,7 @@ int main(void)
     display(a, ch);
 
     // type conversion example:
-    display(42.99, 100);  // doubleâ†’int truncates, intâ†’char converts
+    display(42.99, 100);  // double→int truncates, int→char converts
     return 0;
 }
 ```
@@ -379,15 +379,15 @@ Formal params: x = 65, y = Z
 Formal params: x = 42, y = d
 ```
 
-**Dry Run â†’ Parameter Binding:**
+**Dry Run → Parameter Binding:**
 
 | Step | Actual (call site) | Formal (function) | Binding |
 |------|-------------------|-------------------|---------|
-| 1 | a = 65 | x | 65 â†’ x |
-| 2 | ch = 'Z' | y | 'Z' â†’ y |
+| 1 | a = 65 | x | 65 → x |
+| 2 | ch = 'Z' | y | 'Z' → y |
 | 3 | display executes | x=65, y='Z' | Prints "65, Z" |
-| 4 | 42.99 (double) | x (int) | 42.99 â†’ 42 (truncated) |
-| 5 | 100 (int) | y (char) | 100 â†’ 'd' (ASCII 100) |
+| 4 | 42.99 (double) | x (int) | 42.99 → 42 (truncated) |
+| 5 | 100 (int) | y (char) | 100 → 'd' (ASCII 100) |
 
 **Edge Cases:**
 | Case | Behavior |
@@ -454,15 +454,15 @@ Before call: x = 42
 After call:  x = 42
 ```
 
-**Dry Run â†’ Stack Frames:**
+**Dry Run → Stack Frames:**
 
 | Step | main's frame | attempt_modify's frame | Action |
 |------|-------------|----------------------|--------|
-| 1 | x = 42 | â†’ | main running |
-| 2 | x = 42 (suspended) | a = 42 (COPY of x) | Call â†’ copy xâ†’a |
+| 1 | x = 42 | → | main running |
+| 2 | x = 42 (suspended) | a = 42 (COPY of x) | Call → copy x→a |
 | 3 | x = 42 (suspended) | a = 999 | a modified |
 | 4 | x = 42 (suspended) | (popped, destroyed) | Return, frame freed |
-| 5 | x = 42 | â†’ | main continues, x unchanged |
+| 5 | x = 42 | → | main continues, x unchanged |
 
 **Complexity Analysis:**
 - **Time:** O(1) for copying scalar values; O(n) for copying large structs
@@ -472,7 +472,7 @@ After call:  x = 42
 **Edge Cases:**
 | Case | Behavior |
 |------|----------|
-| Large struct passed by value | Full copy â†’ slow and memory-intensive |
+| Large struct passed by value | Full copy → slow and memory-intensive |
 | Array passed "by value" | Array decays to pointer; the pointer is copied, not the array |
 | Pointer passed by value | The pointer (address) is copied; target can be modified |
 | Double/float passed | Value copied exactly (IEEE 754) |
@@ -482,7 +482,7 @@ After call:  x = 42
 
 Since C has no true pass-by-reference, we simulate it by passing a **pointer to the variable**. The pointer itself is passed by value, but we dereference it to modify the original.
 
-**Real-World Analogy:** Instead of giving a photocopy (pass by value), you give the hotel your locker key (pointer). They don't have your locker, but they have the key â†’ and they can use it to open your locker and change what's inside. The key itself is a copy (the address), but it points to the original.
+**Real-World Analogy:** Instead of giving a photocopy (pass by value), you give the hotel your locker key (pointer). They don't have your locker, but they have the key → and they can use it to open your locker and change what's inside. The key itself is a copy (the address), but it points to the original.
 
 **Numbered Steps:**
 1. Caller evaluates the address of the variable (`&var`)
@@ -531,20 +531,20 @@ Before: a = 10, b = 20
 After:  a = 20, b = 10
 ```
 
-**Dry Run â†’ Memory and Stack Trace:**
+**Dry Run → Memory and Stack Trace:**
 
 | Step | main's frame | swap's frame | Memory at &a | Memory at &b |
 |------|-------------|-------------|-------------|-------------|
-| 1 | a=10, b=20 | â†’ | 10 | 20 |
+| 1 | a=10, b=20 | → | 10 | 20 |
 | 2 | a=10, b=20 (suspended) | ptr_x = &a, ptr_y = &b | 10 | 20 |
 | 3 | (suspended) | ptr_x=&a, ptr_y=&b, temp=10 | 10 | 20 |
-| 4 | (suspended) | *ptr_x = *ptr_y â†’ a = b | **a=20** | 20 |
-| 5 | (suspended) | *ptr_y = temp â†’ b = 10 | 20 | **b=10** |
+| 4 | (suspended) | *ptr_x = *ptr_y → a = b | **a=20** | 20 |
+| 5 | (suspended) | *ptr_y = temp → b = 10 | 20 | **b=10** |
 | 6 | a=20, b=10 | (popped) | 20 | 10 |
 
 **Complexity Analysis:**
-- **Time:** O(1) â†’ only address copied (4 or 8 bytes), regardless of what the pointer points to
-- **Space:** O(1) â†’ pointer size (4 bytes on 32-bit, 8 bytes on 64-bit)
+- **Time:** O(1) → only address copied (4 or 8 bytes), regardless of what the pointer points to
+- **Space:** O(1) → pointer size (4 bytes on 32-bit, 8 bytes on 64-bit)
 - **Why O(1) for large data?** We copy the address, not the data. Passing a 1 MB struct by pointer copies only 8 bytes.
 
 **Edge Cases:**
@@ -565,11 +565,11 @@ After:  a = 20, b = 10
 | Can modify original? | No | Yes (via dereference) |
 | Speed for small types | Fast (no indirection) | Slightly slower (indirection) |
 | Speed for large structs | Slow (full copy) | Fast (copy address only) |
-| Nullable? | N/A (always has a value) | Yes (can be NULL â†’ check it!) |
+| Nullable? | N/A (always has a value) | Yes (can be NULL → check it!) |
 | Syntax in function | `int a` | `int *a` |
 | Syntax at call | `func(var)` | `func(&var)` |
 | Use case | Read-only, small data | Modify original, large data |
-| Safety | Safe â†’ can't corrupt caller | Risk of NULL deref, aliasing |
+| Safety | Safe → can't corrupt caller | Risk of NULL deref, aliasing |
 | Const correctness | N/A | `const int *p` for read-only |
 
 ## 8.3 Return Values
@@ -579,7 +579,7 @@ After:  a = 20, b = 10
 
 A function returns a value of the declared return type using the `return` statement.
 
-**Real-World Analogy:** The vending machine's dispensing tray. You put money in (arguments), press a button; the machine processes your request and drops a soda can into the tray â†’ the return value.
+**Real-World Analogy:** The vending machine's dispensing tray. You put money in (arguments), press a button; the machine processes your request and drops a soda can into the tray → the return value.
 
 **Numbered Steps:**
 1. Function computes the return expression
@@ -630,13 +630,13 @@ int main(void)
 Area of r=5 = 78.5398
 ```
 
-**Dry Run â†’ Return Flow for square(7):**
+**Dry Run → Return Flow for square(7):**
 
 | Step | Action | stack state |
 |------|--------|------------|
-| 1 | Call square(7): n=7 | main â†’ square |
-| 2 | Compute 7*7 = 49 | main â†’ square |
-| 3 | Save 49 to return register | main â†’ square |
+| 1 | Call square(7): n=7 | main → square |
+| 2 | Compute 7*7 = 49 | main → square |
+| 3 | Save 49 to return register | main → square |
 | 4 | Pop square's stack frame | main |
 | 5 | Return value 49 available | main, result = 49 |
 
@@ -758,9 +758,9 @@ int main(void)
 **Why this fails:**
 | Step | Stack State | Value at &local |
 |------|------------|----------------|
-| dangerous() executing | main â†’ dangerous | 42 |
-| return &local executed | main â†’ dangerous | address returned |
-| dangerous() returns | main | **frame popped â†’ memory freed** |
+| dangerous() executing | main → dangerous | 42 |
+| return &local executed | main → dangerous | address returned |
+| dangerous() returns | main | **frame popped → memory freed** |
 | main prints *p | main | **memory may be overwritten by next call** |
 
 **Compiler Warning:** Most modern compilers warn: `function returns address of local variable`.
@@ -825,25 +825,25 @@ int main(void)
 Result = 49
 ```
 
-**Dry Run â†’ Call Stack Evolution:**
+**Dry Run → Call Stack Evolution:**
 
-| Step | Call Stack (top â†’) | Action | Value |
+| Step | Call Stack (top →) | Action | Value |
 |------|-------------------|--------|-------|
-| 1 | main | Starting | â†’ |
-| 2 | main â†’ multiply | Before args evaluated | â†’ |
-| 3 | main â†’ multiply â†’ add | Evaluate first arg: add(3,4) | â†’ |
-| 4 | main â†’ multiply | add returned 7 | Arg1 = 7 |
-| 5 | main â†’ multiply â†’ add | Evaluate second arg: add(5,2) | â†’ |
-| 6 | main â†’ multiply | add returned 7 | Arg2 = 7 |
-| 7 | main â†’ multiply | multiply(7,7) executes | Returns 49 |
-| 8 | main | Result = 49 | â†’ |
+| 1 | main | Starting | → |
+| 2 | main → multiply | Before args evaluated | → |
+| 3 | main → multiply → add | Evaluate first arg: add(3,4) | → |
+| 4 | main → multiply | add returned 7 | Arg1 = 7 |
+| 5 | main → multiply → add | Evaluate second arg: add(5,2) | → |
+| 6 | main → multiply | add returned 7 | Arg2 = 7 |
+| 7 | main → multiply | multiply(7,7) executes | Returns 49 |
+| 8 | main | Result = 49 | → |
 
 **Complexity Analysis:**
 - **Time:** O(n) where n = number of nested calls; each call adds overhead
 - **Space:** O(d) where d = depth of nesting (each level adds a stack frame)
 - **Why not O(1)?** Each nested level consumes stack space; deeply nested calls can overflow
 
-**Edge Case â†’ Order of Evaluation:**
+**Edge Case → Order of Evaluation:**
 ```c
 #include <stdio.h>
 
@@ -861,7 +861,7 @@ int main(void)
 {
     int n = 10;
     // Order of evaluation of arguments is UNSPECIFIED in C
-    // Could be add(next(&n), next(&n)) â†’ add(11, 12) or add(12, 11)
+    // Could be add(next(&n), next(&n)) → add(11, 12) or add(12, 11)
     int r = add(next(&n), next(&n));
     printf("n = %d, result = %d\n", n, r);
     return 0;
@@ -878,22 +878,22 @@ n = 12, result = 23   // or result = 23 either way
 ## 8.5 Recursion Basics
 
 A **recursive function** calls itself. Every recursive function needs:
-1. **Base case** â†’ a condition that stops the recursion
-2. **Recursive case** â†’ the function calls itself with a simpler problem
+1. **Base case** → a condition that stops the recursion
+2. **Recursive case** → the function calls itself with a simpler problem
 
-**Real-World Analogy:** Russian nesting dolls (matryoshka). To open the largest doll, you open it â†’ find a smaller one â†’ open it â†’ find a smaller one â†’ ... â†’ until you reach the smallest doll that doesn't open (the base case). Then you assemble them back.
+**Real-World Analogy:** Russian nesting dolls (matryoshka). To open the largest doll, you open it → find a smaller one → open it → find a smaller one → ... → until you reach the smallest doll that doesn't open (the base case). Then you assemble them back.
 
-### 8.5.1 Factorial â†’ Step-by-Step
+### 8.5.1 Factorial → Step-by-Step
 
 
 **Numbered Steps for factorial(4):**
-1. factorial(4): 4 > 1 â†’ 4 * factorial(3)
-2. factorial(3): 3 > 1 â†’ 3 * factorial(2)
-3. factorial(2): 2 > 1 â†’ 2 * factorial(1)
-4. factorial(1): 1 &lt;= 1 â†’ return 1 (BASE CASE)
-5. factorial(2) receives 1 â†’ 2 * 1 = 2 â†’ return 2
-6. factorial(3) receives 2 â†’ 3 * 2 = 6 â†’ return 6
-7. factorial(4) receives 6 â†’ 4 * 6 = 24 â†’ return 24
+1. factorial(4): 4 > 1 → 4 * factorial(3)
+2. factorial(3): 3 > 1 → 3 * factorial(2)
+3. factorial(2): 2 > 1 → 2 * factorial(1)
+4. factorial(1): 1 &lt;= 1 → return 1 (BASE CASE)
+5. factorial(2) receives 1 → 2 * 1 = 2 → return 2
+6. factorial(3) receives 2 → 3 * 2 = 6 → return 6
+7. factorial(4) receives 6 → 4 * 6 = 24 → return 24
 
 **Pseudocode:**
 ```
@@ -941,21 +941,21 @@ int main(void)
 Final: 4! = 24
 ```
 
-**Dry Run â†’ Call Stack Trace for factorial(4):**
+**Dry Run → Call Stack Trace for factorial(4):**
 
 | Step | Call Stack | n | Waiting for | Action |
 |------|-----------|-----|------------|--------|
-| 1 | main | â†’ | â†’ | Calls factorial(4) |
-| 2 | main â†’ fact(4) | 4 | fact(3) | 4 * fact(3) |
-| 3 | main â†’ fact(4) â†’ fact(3) | 3 | fact(2) | 3 * fact(2) |
-| 4 | main â†’ fact(4) â†’ fact(3) â†’ fact(2) | 2 | fact(1) | 2 * fact(1) |
-| 5 | main â†’ fact(4) â†’ fact(3) â†’ fact(2) â†’ fact(1) | 1 | â†’ | Base! Returns 1 |
-| 6 | main â†’ fact(4) â†’ fact(3) â†’ fact(2) | 2 | â†’ | Returns 2 * 1 = 2 |
-| 7 | main â†’ fact(4) â†’ fact(3) | 3 | â†’ | Returns 3 * 2 = 6 |
-| 8 | main â†’ fact(4) | 4 | â†’ | Returns 4 * 6 = 24 |
-| 9 | main | â†’ | â†’ | Prints 24 |
+| 1 | main | → | → | Calls factorial(4) |
+| 2 | main → fact(4) | 4 | fact(3) | 4 * fact(3) |
+| 3 | main → fact(4) → fact(3) | 3 | fact(2) | 3 * fact(2) |
+| 4 | main → fact(4) → fact(3) → fact(2) | 2 | fact(1) | 2 * fact(1) |
+| 5 | main → fact(4) → fact(3) → fact(2) → fact(1) | 1 | → | Base! Returns 1 |
+| 6 | main → fact(4) → fact(3) → fact(2) | 2 | → | Returns 2 * 1 = 2 |
+| 7 | main → fact(4) → fact(3) | 3 | → | Returns 3 * 2 = 6 |
+| 8 | main → fact(4) | 4 | → | Returns 4 * 6 = 24 |
+| 9 | main | → | → | Prints 24 |
 
-### 8.5.2 Fibonacci â†’ Two Recursive Calls
+### 8.5.2 Fibonacci → Two Recursive Calls
 
 
 ```c
@@ -982,15 +982,15 @@ fib(6) = 8
 ```
 
 **Complexity Analysis:**
-- **Time:** O(2^n) â†’ exponential! Each call spawns 2 more calls
-- **Space:** O(n) â†’ maximum stack depth = n
+- **Time:** O(2^n) → exponential! Each call spawns 2 more calls
+- **Space:** O(n) → maximum stack depth = n
 - **Why O(2^n)?** Fib(n) calls Fib(n-1) and Fib(n-2); this binary tree doubles at each level
 - **Optimization:** Use memoization or iterative approach for O(n)
 
 **Edge Cases:**
 | Case | Problem | Solution |
 |------|---------|----------|
-| No base case | Infinite recursion â†’ stack overflow | Always have a base case |
+| No base case | Infinite recursion → stack overflow | Always have a base case |
 | Negative input | May never reach base case | Check input validity |
 | Large n (e.g., n=100000) | Stack overflow | Use iteration instead |
 | Multiple recursive calls | Exponential time | Memoization or dynamic programming |
@@ -1079,31 +1079,31 @@ sum(5, 1,2,3,4,5)  = 15
 average(4, 1.0, 2.0, 3.0, 4.0) = 2.50
 ```
 
-**Dry Run â†’ Variadic Argument Retrieval for sum(3, 10, 20, 30):**
+**Dry Run → Variadic Argument Retrieval for sum(3, 10, 20, 30):**
 
 | Step | va_list state | Action | Return value |
 |------|-------------|--------|-------------|
-| 1 | va_start(args, count) | args points to first variadic arg | â†’ |
-| 2 | i=0 | va_arg(args, int) â†’ reads 10 | 10 |
-| 3 | i=1 | va_arg(args, int) â†’ reads 20 | 20 |
-| 4 | i=2 | va_arg(args, int) â†’ reads 30 | 30 |
+| 1 | va_start(args, count) | args points to first variadic arg | → |
+| 2 | i=0 | va_arg(args, int) → reads 10 | 10 |
+| 3 | i=1 | va_arg(args, int) → reads 20 | 20 |
+| 4 | i=2 | va_arg(args, int) → reads 30 | 30 |
 | 5 | va_end(args) | Cleanup | total = 60 |
 
 **Complexity Analysis:**
 - **Time:** O(n) where n = number of variadic arguments
-- **Space:** O(1) â†’ only the va_list pointer; arguments are on the stack
+- **Space:** O(1) → only the va_list pointer; arguments are on the stack
 - **Why not zero overhead?** Each va_arg call must advance the pointer and check default argument promotions
 
 **Edge Cases:**
 | Case | Issue |
 |------|-------|
-| No variadic arguments | va_arg called when none left â†’ UB |
+| No variadic arguments | va_arg called when none left → UB |
 | Wrong type in va_arg | Undefined behavior (default argument promotions apply) |
-| No fixed parameter | Not allowed â†’ must have at least one named parameter |
+| No fixed parameter | Not allowed → must have at least one named parameter |
 | va_start with wrong param | Undefined behavior (must use last named parameter) |
 | Forgetting va_end | Implementation-defined (may leak memory on some platforms) |
-| Passing float | Default promotion: float â†’ double; use va_arg(args, double) |
-| Passing char/short | Default promotion: char/short â†’ int; use va_arg(args, int) |
+| Passing float | Default promotion: float → double; use va_arg(args, double) |
+| Passing char/short | Default promotion: char/short → int; use va_arg(args, int) |
 
 ### Custom Printf-style Function
 
@@ -1227,7 +1227,7 @@ clamp(150, 0, 100) = 100
 **Macro Danger Example:**
 ```c
 #define SQUARE(x) ((x) * (x))
-// SQUARE(++a) expands to ((++a) * (++a)) â†’ UB!
+// SQUARE(++a) expands to ((++a) * (++a)) → UB!
 
 static inline int square_inline(int x) { return x * x; }
 // square_inline(++a) works correctly: ++a evaluated once
@@ -1243,7 +1243,7 @@ static inline int square_inline(int x) { return x * x; }
 
 A **function pointer** stores the address of a function. Function pointers enable callbacks, dispatch tables, and runtime polymorphism in C.
 
-**Real-World Analogy:** A TV remote's buttons. You press "Volume Up" (the function pointer), and it calls the TV's `increase_volume()` function. The remote doesn't know how the TV does it â†’ it just holds a reference to the function. Different TVs can have different implementations.
+**Real-World Analogy:** A TV remote's buttons. You press "Volume Up" (the function pointer), and it calls the TV's `increase_volume()` function. The remote doesn't know how the TV does it → it just holds a reference to the function. Different TVs can have different implementations.
 
 **Syntax:**
 ```c
@@ -1436,8 +1436,8 @@ int main(void)
 ```
 
 **Complexity Analysis:**
-- **Time:** O(1) â†’ indirect call through pointer (one extra indirection vs direct call)
-- **Space:** O(1) â†’ pointer size (4 or 8 bytes)
+- **Time:** O(1) → indirect call through pointer (one extra indirection vs direct call)
+- **Space:** O(1) → pointer size (4 or 8 bytes)
 - **Why not zero overhead?** Function pointer calls cannot be inlined (compiler doesn't know target at compile time)
 
 **Edge Cases:**
@@ -1451,8 +1451,8 @@ int main(void)
 ## 8.9 main() Arguments: argc and argv
 
 The `main` function receives command-line arguments through two parameters:
-- `argc` (argument count) â†’ number of command-line arguments including program name
-- `argv` (argument vector) â†’ array of strings, each is one argument
+- `argc` (argument count) → number of command-line arguments including program name
+- `argv` (argument vector) → array of strings, each is one argument
 
 **Real-World Analogy:** A restaurant order slip. `argc` is the number of items on the slip; `argv` is the slip itself: `argv[0]` = "waiter knows the restaurant name" (program name), `argv[1]` = "burger", `argv[2]` = "fries", etc.
 
@@ -1582,14 +1582,14 @@ Number: 42, Name: Alice
 ```c
 #include <stdio.h>
 
-int global = 100;          /* file scope â†’ accessible everywhere */
+int global = 100;          /* file scope → accessible everywhere */
 
-static int file_static = 200;  /* file scope â†’ restricted to this file */
+static int file_static = 200;  /* file scope → restricted to this file */
 
 void function(void)
 {
-    int local = 300;       /* block scope â†’ only inside function */
-    static int calls = 0;  /* static local â†’ persists across calls */
+    int local = 300;       /* block scope → only inside function */
+    static int calls = 0;  /* static local → persists across calls */
     calls++;
     printf("Called %d times\n", calls);
 }
@@ -1671,7 +1671,7 @@ void quick_sum(int arr[], int n) {
 | Real pass-by-reference (C++) | `void f(int &x)` | `x` is an alias; no dereference needed |
 
 ```c
-// This is NOT pass-by-reference â†’ it's pass-by-pointer
+// This is NOT pass-by-reference → it's pass-by-pointer
 void swap(int *x, int *y) {
     int t = *x; *x = *y; *y = t;
 }
@@ -1685,12 +1685,12 @@ void swap(int *x, int *y) {
 | Aspect | Function Pointer Array | If-Else/Select chain |
 |--------|----------------------|---------------------|
 | Speed | O(1) direct dispatch | O(n) linear search |
-| Maintainability | Add entry â†’ add function | Modify chain â†’ risk of bugs |
+| Maintainability | Add entry → add function | Modify chain → risk of bugs |
 | Code size | Small dispatch code | Repetitive condition checks |
 | Flexibility | Can be built at runtime | Fixed at compile time |
 | Readability | Cleaner with many options | Clearer with 2-3 options |
 
-**Rule of thumb:** 3+ operations â†’ use function pointer array; 2-3 â†’ if-else is fine.
+**Rule of thumb:** 3+ operations → use function pointer array; 2-3 → if-else is fine.
 
 ### Q3: Variadic vs Regular Arguments
 
@@ -1706,7 +1706,7 @@ void swap(int *x, int *y) {
 ### Q4: Inline vs Macro
 
 
-Covered in Ã‚Â§8.7. Key interview points:
+Covered in §8.7. Key interview points:
 - **Never** use macros when an inline works
 - Macros have no type safety, evaluate arguments multiple times
 - Inline functions follow scope rules; macros don't
@@ -1723,7 +1723,7 @@ Covered in Ã‚Â§8.7. Key interview points:
 | Can be NULL? | No | Yes |
 | Reentrant | Yes | No (if static) |
 
-**Interview tip:** "If the struct is larger than 16 bytes and performance matters, return a pointer. But document ownership clearly â†’ who frees the memory?"
+**Interview tip:** "If the struct is larger than 16 bytes and performance matters, return a pointer. But document ownership clearly → who frees the memory?"
 
 ### Q6: What happens if you forget the return statement?
 
@@ -1943,7 +1943,7 @@ Mouse moved
 | Call | `f(a)` | `f(&a)` |
 | Copied | Value of a | Address of a |
 | Modify original? | No | Yes (`*x = new_val;`) |
-| Copy cost | O(size of type) | O(1) â†’ 4/8 bytes |
+| Copy cost | O(size of type) | O(1) → 4/8 bytes |
 | Safety | Safe | Must check for NULL |
 | Use | Small, read-only data | Output params, large data |
 | Const correctness | N/A | `const int *x` for read-only |
@@ -1987,7 +1987,7 @@ int main() { int a = 5; f(a); printf("%d", a); return 0; }
 ```
 A) 5  B) 100  C) Compiler error  D) Undefined
 
-<details><summary>Answer&lt;/summary&gt;**A)** Pass by value â†’ `a` is unchanged.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** Pass by value → `a` is unchanged.</details>
 
 2. Which is NOT a valid main() signature?
 A) `int main(void)`  B) `int main(int argc, char *argv[])`  C) `void main()`  D) `int main()`

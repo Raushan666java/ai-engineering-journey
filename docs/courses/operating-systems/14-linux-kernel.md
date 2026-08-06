@@ -1,4 +1,4 @@
-﻿# Chapter 14: Linux Kernel Internals
+# Chapter 14: Linux Kernel Internals
 
 **<< [I/O Systems](./13-io-systems.md)** | [**Next: Shell Scripting**](./15-shell-scripting.md) >>
 
@@ -1941,7 +1941,7 @@ Containers leverage cgroups + namespaces for lightweight virtualization:
 
 ---
 
-## TypeScript Implementation â€” CFS Scheduler Simulator
+## TypeScript Implementation — CFS Scheduler Simulator
 
 ```typescript
 /**

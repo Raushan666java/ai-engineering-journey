@@ -1,4 +1,4 @@
-﻿# Chapter 7: Logical Reasoning and Inference
+# Chapter 7: Logical Reasoning and Inference
 
 **Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 8: Uncertainty in AI](08-uncertainty.md)
 
@@ -37,9 +37,9 @@ By the conclusion of this chapter, the student will be able to:
 
 ## Why Logical Reasoning Matters
 
-**Real-World Analogy:** A detective arrives at a crime scene. The victim is on the floor, a window is broken, a safe is open, and footprints lead outside. The detective doesn not see the suspect â€” but from these clues (facts) and knowledge of how the world works (rules), she deduces: someone broke the window, entered, opened the safe, and fled through that window. She then works backward from a hypothesis â€” "Was it the butler?" â€” to check whether available evidence supports or refutes it. This dual-direction reasoning â€” forward from facts and backward from goals â€” is exactly what logical inference engines do.
+**Real-World Analogy:** A detective arrives at a crime scene. The victim is on the floor, a window is broken, a safe is open, and footprints lead outside. The detective doesn not see the suspect — but from these clues (facts) and knowledge of how the world works (rules), she deduces: someone broke the window, entered, opened the safe, and fled through that window. She then works backward from a hypothesis — "Was it the butler?" — to check whether available evidence supports or refutes it. This dual-direction reasoning — forward from facts and backward from goals — is exactly what logical inference engines do.
 
-In AI, logical reasoning is the engine that turns a static knowledge base into intelligent conclusions. Expert systems diagnose diseases from symptoms, theorem provers verify mathematical proofs, and Prolog programs answer queries by chaining through rules. Without inference, a knowledge base is just a pile of facts â€” with it, the KB becomes an intelligent agent that can answer questions, make decisions, and explain its reasoning.
+In AI, logical reasoning is the engine that turns a static knowledge base into intelligent conclusions. Expert systems diagnose diseases from symptoms, theorem provers verify mathematical proofs, and Prolog programs answer queries by chaining through rules. Without inference, a knowledge base is just a pile of facts — with it, the KB becomes an intelligent agent that can answer questions, make decisions, and explain its reasoning.
 
 ---
 
@@ -47,7 +47,7 @@ In AI, logical reasoning is the engine that turns a static knowledge base into i
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Unification | Finds the MGU that makes two logical expressions identical | Foundation for all inference â€” pattern matching with variables |
+| Unification | Finds the MGU that makes two logical expressions identical | Foundation for all inference — pattern matching with variables |
 | Forward Chaining | Data-driven: apply rules to known facts to derive new facts | Best for monitoring, alerting, real-time systems |
 | Backward Chaining | Goal-driven: start from query, work backward to known facts | Best for diagnosis, Q&A, interactive systems |
 | Resolution | Refutation proof by contradiction via CNF clauses | Complete for full first-order logic |
@@ -79,14 +79,14 @@ flowchart LR
 
 ## 7.1 Unification
 
-**Real-World Analogy:** Two people are describing the same person. One says "the mother of X" and the other says "the mother of Alice." Unification finds that if X = Alice, both descriptions match â€” and it does so with the fewest assumptions possible (the Most General Unifier).
+**Real-World Analogy:** Two people are describing the same person. One says "the mother of X" and the other says "the mother of Alice." Unification finds that if X = Alice, both descriptions match — and it does so with the fewest assumptions possible (the Most General Unifier).
 
 ### Definition
 
 
 Unification is the process of finding a substitution $theta$ that makes two logical expressions identical. A substitution $theta = {v_1/t_1, v_2/t_2, ..., v_n/t_n}$ maps variables to terms. The application of $theta$ to expression $E$, written $Etheta$, replaces each variable $v_i$ with term $t_i$, with all occurrences replaced simultaneously.
 
-**Standardization apart** renames variables to avoid naming conflicts. The **most general unifier (MGU)** is the substitution that imposes the fewest constraints while achieving unification â€” any other unifier is a specialization of the MGU.
+**Standardization apart** renames variables to avoid naming conflicts. The **most general unifier (MGU)** is the substitution that imposes the fewest constraints while achieving unification — any other unifier is a specialization of the MGU.
 
 ### Algorithm Steps
 
@@ -305,7 +305,7 @@ public class Unifier {
 
 ## 7.2 Forward Chaining
 
-**Real-World Analogy:** A smart home system monitors sensors continuously. When motion is detected (fact) AND it is after sunset (fact), the system turns on the lights (new fact). New facts trigger further rules â€” if lights turned on AND no motion for 10 minutes, turn lights off. Reasoning flows from data forward to conclusions, like an assembly line processing raw materials into finished products.
+**Real-World Analogy:** A smart home system monitors sensors continuously. When motion is detected (fact) AND it is after sunset (fact), the system turns on the lights (new fact). New facts trigger further rules — if lights turned on AND no motion for 10 minutes, turn lights off. Reasoning flows from data forward to conclusions, like an assembly line processing raw materials into finished products.
 
 ### Definition
 
@@ -349,12 +349,12 @@ function FORWARD-CHAIN(KB, rules) returns new facts
 
 | Iteration | Facts | Rules Triggered | New Facts | Agenda |
 |-----------|-------|-----------------|-----------|--------|
-| 0 | {A, B} | â€” | â€” | Start |
+| 0 | {A, B} | — | — | Start |
 | 1 | {A, B} | A^B=>C, B=>D | {C, D} | A^B=>C -> C; B=>D -> D |
 | 2 | {A, B, C, D} | C^D=>E | {E} | C^D=>E -> E |
-| 3 | {A, B, C, D, E} | â€” | {} | Fixed point, stop |
+| 3 | {A, B, C, D, E} | — | {} | Fixed point, stop |
 
-**Query:** Does KB entail E? **Yes** â€” E is in the final fact set.
+**Query:** Does KB entail E? **Yes** — E is in the final fact set.
 
 ### Complexity Analysis
 
@@ -451,7 +451,7 @@ set<string> forwardChain(
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Sound and complete for Horn clause KBs | May derive many irrelevant facts |
-| Data-driven â€” ideal for monitoring/alerting | Inefficient if KB has many unrelated rules |
+| Data-driven — ideal for monitoring/alerting | Inefficient if KB has many unrelated rules |
 | Each new fact is derivable and explainable | Fixed-point iteration may take many rounds |
 | Linear-time for propositional Horn clauses | Requires all antecedents to match exactly |
 | Naturally handles continuous fact arrival | Not suitable for large FOL KBs |
@@ -460,7 +460,7 @@ set<string> forwardChain(
 
 
 - **Empty KB (no facts):** No rules trigger; returns empty set immediately.
-- **Cyclic rules:** A => B, B => A. With A only â€” first iteration adds B; second finds nothing new (A already present) -> fixed point in 2 iterations.
+- **Cyclic rules:** A => B, B => A. With A only — first iteration adds B; second finds nothing new (A already present) -> fixed point in 2 iterations.
 - **Conflicting rules:** Horn clauses cannot represent negation in consequents, so A => B and A => not-B does not arise.
 - **Deep chains:** K rules forming a chain need K iterations to reach fixed point.
 
@@ -521,13 +521,13 @@ function BACKWARD-CHAIN-LIST(KB, goals, theta) returns set of substitutions
 
 | Step | Goal Stack | Current Theta | KB Sentence | Unifies? | New Subgoals | Action |
 |------|-----------|---------------|-------------|----------|--------------|--------|
-| 1 | [E] | {} | â€” | â€” | â€” | Start with query |
+| 1 | [E] | {} | — | — | — | Start with query |
 | 2 | [E] | {} | C=>E | Yes, theta={} | [C] | Push premise C |
 | 3 | [C] | {} | A^B=>C | Yes, theta={} | [A, B] | Push premises A, B |
 | 4 | [A, B] | {} | A | Yes, theta={} | [B] | Pop A (fact found) |
 | 5 | [B] | {} | D=>B | Yes, theta={} | [D] | Push premise D |
 | 6 | [D] | {} | D | Yes, theta={} | [] | Pop D (fact found) |
-| 7 | [] | {} | â€” | â€” | â€” | Success! |
+| 7 | [] | {} | — | — | — | Success! |
 
 ### Complexity Analysis
 
@@ -563,7 +563,7 @@ def backward_chain(kb, query, theta=None, depth=0, max_depth=100):
         if new_theta is not False:
             if not body:  # Fact
                 return True, new_theta
-            # Rule â€” try to prove all subgoals
+            # Rule — try to prove all subgoals
             current_theta = dict(new_theta)
             success = True
             for subgoal in body:
@@ -611,18 +611,18 @@ print(f"Result: {ok}")
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Goal-directed â€” only explores relevant rules | DFS can loop on recursive rules |
+| Goal-directed — only explores relevant rules | DFS can loop on recursive rules |
 | Memory-efficient (O(d) space) | May miss solutions on infinite branches |
 | Natural for diagnosis and Q&A systems | Not complete for full FOL |
-| Easily explainable â€” shows proof chain | Branching causes exponential blowup |
+| Easily explainable — shows proof chain | Branching causes exponential blowup |
 | Forms the basis of Prolog execution | Sensitive to rule ordering in KB |
 
 ### Edge Cases
 
 
 - **Recursive rules without base case:** ancestor(X,Y) :- parent(X,Z), ancestor(Z,Y) without base fact -> infinite loop.
-- **Cyclic KB:** P :- Q and Q :- P â€” query loops forever without loop detection.
-- **Multiple matching rules:** May succeed with first match but fail on later subgoals â€” backtracking needed.
+- **Cyclic KB:** P :- Q and Q :- P — query loops forever without loop detection.
+- **Multiple matching rules:** May succeed with first match but fail on later subgoals — backtracking needed.
 - **Goal not in KB:** Returns failure after exhaustive search.
 - **Depth-limited search:** May miss valid proofs exceeding the depth bound.
 
@@ -637,7 +637,7 @@ print(f"Result: {ok}")
 | **Search strategy** | Breadth-first (all rules every iteration) | Depth-first (one proof path) |
 | **KB type** | Horn clauses | Horn clauses |
 | **Completeness** | Complete for Horn clauses | Incomplete (DFS can loop) |
-| **Memory** | O(n + m) â€” stores all facts | O(d) â€” stores one proof path |
+| **Memory** | O(n + m) — stores all facts | O(d) — stores one proof path |
 | **Irrelevant work** | May derive unnecessary facts | Only explores relevant rules |
 | **Best for** | Monitoring, alerting, real-time systems | Diagnosis, Q&A, interactive systems |
 | **Explainability** | Shows which facts triggered which rules | Shows which subgoals proved the query |
@@ -651,7 +651,7 @@ print(f"Result: {ok}")
 
 ## 7.4 Resolution
 
-**Real-World Analogy:** A lawyer in court tries to prove the defendant is guilty. She assumes the opposite â€” that the defendant is innocent â€” and shows this assumption leads to a contradiction with the evidence. Since the assumption is impossible, the defendant must be guilty. Resolution proves a statement by assuming its negation and deriving a contradiction (the empty clause).
+**Real-World Analogy:** A lawyer in court tries to prove the defendant is guilty. She assumes the opposite — that the defendant is innocent — and shows this assumption leads to a contradiction with the evidence. Since the assumption is impossible, the defendant must be guilty. Resolution proves a statement by assuming its negation and deriving a contradiction (the empty clause).
 
 ### Definition
 
@@ -672,18 +672,18 @@ Resolution requires all formulas to be in Conjunctive Normal Form: a conjunction
 5. **Drop universal quantifiers:** All remaining variables are universally quantified.
 6. **Distribute v over ^:** Convert to conjunction of disjunctions.
 
-### 7.4.2 Skolemization â€” Detailed Example
+### 7.4.2 Skolemization — Detailed Example
 
 
 Skolemization removes existential quantifiers by introducing fresh function symbols.
 
-**Original:** for all x, exists y, Loves(x, y) â€” "Everyone loves someone."
+**Original:** for all x, exists y, Loves(x, y) — "Everyone loves someone."
 
-**Skolemized:** for all x, Loves(x, f(x)) â€” Replace y with Skolem function f(x).
+**Skolemized:** for all x, Loves(x, f(x)) — Replace y with Skolem function f(x).
 
 **Without dependencies (exists outside for all):**
-- exists y, for all x, Loves(x, y) â€” "Someone is loved by everyone."
-- Skolemized: Loves(x, c) â€” Replace y with Skolem constant c (no dependency on x).
+- exists y, for all x, Loves(x, y) — "Someone is loved by everyone."
+- Skolemized: Loves(x, c) — Replace y with Skolem constant c (no dependency on x).
 
 ### 7.4.3 Resolution Rule
 
@@ -695,7 +695,7 @@ Resolve(C_1, C_2) = (C_1 * theta - l_1 * theta) U (C_2 * theta - l_2 * theta)
 ### Algorithm Steps
 
 
-1. Convert KB U {not-alpha} to CNF â€” this is the clause set.
+1. Convert KB U {not-alpha} to CNF — this is the clause set.
 2. Repeat:
    a. Select two clauses C_i and C_j containing complementary literals.
    b. Unify the complementary literals.
@@ -856,9 +856,9 @@ print(resolution_prover(["A => B", "B => C", "A"], "C"))
 
 A **Horn clause** is a clause with at most one positive literal. A **definite clause** has exactly one positive literal.
 
-- **Facts:** P (one positive, no negatives) â€” "It is raining."
-- **Rules:** not-P v not-Q v R (equivalent to P ^ Q => R) â€” "If raining and windy, take umbrella."
-- **Goal clauses:** not-P v not-Q (all negative) â€” "Prove P and Q."
+- **Facts:** P (one positive, no negatives) — "It is raining."
+- **Rules:** not-P v not-Q v R (equivalent to P ^ Q => R) — "If raining and windy, take umbrella."
+- **Goal clauses:** not-P v not-Q (all negative) — "Prove P and Q."
 
 ### Why Horn Clauses Matter
 
@@ -874,9 +874,9 @@ A **Horn clause** is a clause with at most one positive literal. A **definite cl
 ### Edge Cases
 
 
-- **Non-Horn clause:** P v Q (two positive literals) â€” requires full resolution.
+- **Non-Horn clause:** P v Q (two positive literals) — requires full resolution.
 - **Empty clause:** Represents contradiction/false.
-- **Unit clause:** Single literal â€” the simplest fact.
+- **Unit clause:** Single literal — the simplest fact.
 
 ---
 
@@ -887,14 +887,14 @@ A **Horn clause** is a clause with at most one positive literal. A **definite cl
 ### Definition
 
 
-Prolog (Programming in Logic) is a logic programming language based on Horn clauses. A Prolog program consists of facts, rules, and queries. Execution uses **SLD resolution** (Selective Linear Definite-clause resolution) â€” backward chaining with depth-first search.
+Prolog (Programming in Logic) is a logic programming language based on Horn clauses. A Prolog program consists of facts, rules, and queries. Execution uses **SLD resolution** (Selective Linear Definite-clause resolution) — backward chaining with depth-first search.
 
 ### Structure
 
 
-- **Facts:** `parent(john, mary).` â€” unconditional truths.
-- **Rules:** `grandparent(X, Z) :- parent(X, Y), parent(Y, Z).` â€” conditional truths.
-- **Queries:** `?- grandparent(john, Who).` â€” goals to prove.
+- **Facts:** `parent(john, mary).` — unconditional truths.
+- **Rules:** `grandparent(X, Z) :- parent(X, Y), parent(Y, Z).` — conditional truths.
+- **Queries:** `?- grandparent(john, Who).` — goals to prove.
 
 ### Example: Family Tree
 
@@ -926,7 +926,7 @@ For query `grandparent(john, ann)`:
 | 1 | grandparent(john, ann) | grandparent(X,Z) :- parent(X,Y), parent(Y,Z) | X=john, Z=ann |
 | 2 | parent(john, Y), parent(Y, ann) | parent(john, mary) | Y=mary |
 | 3 | parent(mary, ann) | parent(mary, ann) | {} |
-| 4 | [] | â€” | **Success** |
+| 4 | [] | — | **Success** |
 
 ### Limitations
 
@@ -1040,18 +1040,18 @@ signal(Gate, Output, Value) :-
 
 ---
 
-## Quick Reference â€” Unification Rules
+## Quick Reference — Unification Rules
 
 | Expression 1 | Expression 2 | MGU | Can Unify? |
 |-------------|-------------|:---:|:---------:|
 | P(x, A) | P(B, y) | {x/B, y/A} | Yes |
 | P(f(x), y) | P(z, g(z)) | {z/f(x), y/g(f(x))} | Yes |
-| P(x, f(x)) | P(y, y) | â€” | No (occur check) |
-| P(x, x) | P(A, B) | â€” | No (A != B) |
+| P(x, f(x)) | P(y, y) | — | No (occur check) |
+| P(x, x) | P(A, B) | — | No (A != B) |
 | P(A, B) | P(A, B) | {} | Yes (already identical) |
-| P(x) | Q(x) | â€” | No (different predicates) |
+| P(x) | Q(x) | — | No (different predicates) |
 
-## Quick Reference â€” CNF Conversion Example
+## Quick Reference — CNF Conversion Example
 
 | Step | Formula | Rule Applied |
 |------|---------|-------------|
@@ -1101,7 +1101,7 @@ signal(Gate, Output, Value) :-
 
 5. **What is Skolemization and when is it needed?**
 
-   Skolemization removes existential quantifiers by introducing fresh Skolem functions/constants. It is needed during CNF conversion for resolution. The key insight: if something exists, we can give it a name â€” but the name may depend on all enclosing universal variables.
+   Skolemization removes existential quantifiers by introducing fresh Skolem functions/constants. It is needed during CNF conversion for resolution. The key insight: if something exists, we can give it a name — but the name may depend on all enclosing universal variables.
 
 6. **Compare SLD resolution with general resolution.**
 
@@ -1226,15 +1226,15 @@ signal(Gate, Output, Value) :-
 
 ## Summary
 
-- **Unification** finds the MGU that makes two logical expressions identical â€” the foundation of all logical inference.
-- **Forward chaining** is data-driven inference over Horn clauses â€” linear time, complete, ideal for monitoring.
-- **Backward chaining** is goal-driven inference â€” depth-first, memory-efficient, forms the core of Prolog.
-- **Resolution** refutes the negation of the query to prove entailment â€” complete for full FOL but exponential.
-- **Horn clauses** (at most one positive literal) enable efficient linear-time inference â€” the backbone of practical logic programming.
-- **Prolog** implements SLD resolution â€” backward chaining with depth-first search and cut.
+- **Unification** finds the MGU that makes two logical expressions identical — the foundation of all logical inference.
+- **Forward chaining** is data-driven inference over Horn clauses — linear time, complete, ideal for monitoring.
+- **Backward chaining** is goal-driven inference — depth-first, memory-efficient, forms the core of Prolog.
+- **Resolution** refutes the negation of the query to prove entailment — complete for full FOL but exponential.
+- **Horn clauses** (at most one positive literal) enable efficient linear-time inference — the backbone of practical logic programming.
+- **Prolog** implements SLD resolution — backward chaining with depth-first search and cut.
 - **Knowledge engineering** provides a systematic methodology for building logic-based systems.
 
 ### Key Takeaway
 
 
-Logical reasoning transforms a static knowledge base into an intelligent agent capable of answering questions, making decisions, and explaining its reasoning. Master unification, chaining, and resolution â€” these are the engine behind expert systems, theorem provers, and logic programming languages that power real-world AI applications.
+Logical reasoning transforms a static knowledge base into an intelligent agent capable of answering questions, making decisions, and explaining its reasoning. Master unification, chaining, and resolution — these are the engine behind expert systems, theorem provers, and logic programming languages that power real-world AI applications.

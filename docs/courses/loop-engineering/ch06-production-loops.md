@@ -1,4 +1,4 @@
-﻿# Chapter 6: Production Loops
+# Chapter 6: Production Loops
 
 ## Learning Objectives
 
@@ -23,7 +23,7 @@ By the end of this chapter, you will be able to:
 <!-- End Image Gallery -->
 
 
-- Design and implement a deploy â†’ monitor â†’ drift-detect â†’ retrain â†’ redeploy pipeline
+- Design and implement a deploy → monitor → drift-detect → retrain → redeploy pipeline
 - Deploy shadow and canary deployments that compare production vs. candidate models
 - Build a cost governor loop that tracks token usage, per-iteration accounting, and auto-halting
 - Construct observability loops with structured traces, derived metrics, and alert thresholds
@@ -40,12 +40,12 @@ By the end of this chapter, you will be able to:
 The standard production loop for AI agents follows a continuous lifecycle:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Deploy  â”‚â”€â”€â–¶â”‚ Monitor  â”‚â”€â”€â–¶â”‚  Detect  â”‚â”€â”€â–¶â”‚ Retrain  â”‚â”€â”€â–¶â”‚ Redeploy â”‚
-â”‚          â”‚   â”‚          â”‚   â”‚  Drift   â”‚   â”‚          â”‚   â”‚          â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                                                    â”‚
-                                                                    â””â”€â”€â”€â”€â”€â”€â–¶ loop
+┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
+│  Deploy  │──▶│ Monitor  │──▶│  Detect  │──▶│ Retrain  │──▶│ Redeploy │
+│          │   │          │   │  Drift   │   │          │   │          │
+└──────────┘   └──────────┘   └──────────┘   └──────────┘   └──────────┘
+                                                                    │
+                                                                    └──────▶ loop
 ```
 
 Each phase has specific responsibilities:
@@ -54,7 +54,7 @@ Each phase has specific responsibilities:
 
 **Monitor.** Collect structured logs from every agent invocation: input, output, latency, token count, error code. Aggregate these into time-series metrics (5th, 50th, 95th percentiles) and expose them through a metrics endpoint.
 
-**Detect drift.** Compare current metrics against a baseline window. Common drift signals: rising latency, falling task-completion rate, increasing retry counts, shift in output-token distribution, spike in refusal or guardrail-hit rates. Use statistical tests (Kolmogorovâ€“Smirnov, Z-score) to trigger alerts.
+**Detect drift.** Compare current metrics against a baseline window. Common drift signals: rising latency, falling task-completion rate, increasing retry counts, shift in output-token distribution, spike in refusal or guardrail-hit rates. Use statistical tests (Kolmogorov–Smirnov, Z-score) to trigger alerts.
 
 **Retrain.** When drift exceeds a threshold, enqueue a retraining job. The retraining dataset includes recent production data (with PII scrubbed) plus any newly collected preference pairs or human corrections. The new model version is validated on a held-out test set before entering the deploy phase.
 
@@ -66,23 +66,23 @@ Each phase has specific responsibilities:
 **Shadow deployment.** Route production traffic to both the current model and a candidate model simultaneously, but only serve the current model's response to the user. The candidate's response is recorded and scored offline. Shadow deployment has zero user-facing risk because the candidate never affects the user.
 
 ```
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
- User â”€â”€requestâ”€â”€â”€â–¶â”‚  Traffic Split â”‚
-                    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
-                         â”‚    â”‚
-                         â”‚    â””â”€â”€â–¶ Candidate Model (scored, discarded)
-                         â”‚
-                         â””â”€â”€â–¶ Production Model (served to user)
+                    ┌────────────────┐
+ User ──request───▶│  Traffic Split │
+                    └────┬────┬──────┘
+                         │    │
+                         │    └──▶ Candidate Model (scored, discarded)
+                         │
+                         └──▶ Production Model (served to user)
 ```
 
 **Canary deployment.** Route a small percentage of real traffic (e.g. 5%) to the candidate model and serve its response to those users. Monitor error rates and quality metrics. If metrics stay within SLO for a window (e.g. 30 minutes), gradually increase the canary percentage to 25%, 50%, 100%. Roll back immediately if any metric breaches the threshold.
 
 ```
-Traffic: [â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‘â–‘â–‘â–‘] 80% production / 20% canary
-         â”€â”€â”€ monitor for N minutes â”€â”€â”€
-         [â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘] 60% production / 40% canary
-         â”€â”€â”€ monitor â”€â”€â”€
-         [â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘] 100% canary (promoted)
+Traffic: [████████████████░░░░] 80% production / 20% canary
+         ─── monitor for N minutes ───
+         [████████████░░░░░░░░] 60% production / 40% canary
+         ─── monitor ───
+         [░░░░░░░░░░░░░░░░░░░░] 100% canary (promoted)
 ```
 
 ### 6.3 Cost Governor Loops
@@ -97,15 +97,15 @@ Agent loops can execute hundreds of LLM calls per task. Without a cost governor,
 **Auto-halt.** When the budget is exhausted, the governor stops the agent mid-flight, persists its state, and raises an alert. Optionally it can switch to a cheaper fallback model (e.g. GPT-4o-mini) for the remaining steps.
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  Loop Step   â”‚â”€â”€â”€â”€â–¶â”‚  Record Cost â”‚â”€â”€â”€â”€â–¶â”‚  Budget OK?  â”‚â”€â”€yesâ”€â”€â–¶ continue
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                                                  â”‚ no
-                                                  â–¼
-                                          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                                          â”‚  Halt /      â”‚
-                                          â”‚  Fallback    â”‚
-                                          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+│  Loop Step   │────▶│  Record Cost │────▶│  Budget OK?  │──yes──▶ continue
+└──────────────┘     └──────────────┘     └──────┬───────┘
+                                                  │ no
+                                                  ▼
+                                          ┌──────────────┐
+                                          │  Halt /      │
+                                          │  Fallback    │
+                                          └──────────────┘
 ```
 
 ### 6.4 Observability Loops
@@ -116,16 +116,16 @@ Observability for AI systems goes beyond traditional application monitoring. The
 **Traces.** A trace represents one end-user request through the entire agent loop. Each span within the trace captures a single LLM call, tool invocation, or decision step. Spans carry metadata: model name, token counts, latency, retry count, the exact prompt and response.
 
 **Metrics.** Derived from traces at aggregation time. Key metrics:
-- `agent.latency.p50`, `agent.latency.p95` â€” response time distribution
-- `agent.tokens.prompt.avg`, `agent.tokens.completion.avg` â€” token consumption
-- `agent.steps.per_request` â€” loop iteration count
-- `agent.error_rate` â€” fraction of requests with errors
-- `agent.drift.score` â€” distribution shift relative to baseline
+- `agent.latency.p50`, `agent.latency.p95` — response time distribution
+- `agent.tokens.prompt.avg`, `agent.tokens.completion.avg` — token consumption
+- `agent.steps.per_request` — loop iteration count
+- `agent.error_rate` — fraction of requests with errors
+- `agent.drift.score` — distribution shift relative to baseline
 
 **Alerts.** Threshold-based and trend-based. Examples:
-- P95 latency > 5s for 5 consecutive minutes â†’ page
-- Error rate > 2% in 1-minute window â†’ warn
-- Drift score > 0.15 relative to 24h baseline â†’ investigate
+- P95 latency > 5s for 5 consecutive minutes → page
+- Error rate > 2% in 1-minute window → warn
+- Drift score > 0.15 relative to 24h baseline → investigate
 
 ### 6.5 SRE for AI Systems
 
@@ -134,24 +134,24 @@ Service-Level Objectives for agent loops require careful definition because qual
 
 | SLI | Definition | Target SLO |
 |---|---|---|
-| Task completion rate | Fraction of requests where the agent completes its stated goal | â‰¥ 99.0% |
-| Valid response rate | Fraction of responses that parse, pass validation, and contain no hallucinated facts | â‰¥ 99.5% |
-| Latency P95 | 95th percentile of end-to-end response time | â‰¤ 8 seconds |
-| Cost per request | Average LLM API cost per request | â‰¤ $0.03 |
-| Safety violation rate | Fraction of responses flagged by the constitutional critic | â‰¤ 0.1% |
+| Task completion rate | Fraction of requests where the agent completes its stated goal | ≥ 99.0% |
+| Valid response rate | Fraction of responses that parse, pass validation, and contain no hallucinated facts | ≥ 99.5% |
+| Latency P95 | 95th percentile of end-to-end response time | ≤ 8 seconds |
+| Cost per request | Average LLM API cost per request | ≤ $0.03 |
+| Safety violation rate | Fraction of responses flagged by the constitutional critic | ≤ 0.1% |
 
-An error budget of 100% âˆ’ SLO defines how much unreliability is acceptable per month. When the budget is depleted, all non-critical deployments freeze until reliability recovers.
+An error budget of 100% − SLO defines how much unreliability is acceptable per month. When the budget is depleted, all non-critical deployments freeze until reliability recovers.
 
 ## Examples
 
 ### Example 6.1: ProductionLoopManager
 
-A lifecycle manager that orchestrates deploy â†’ monitor â†’ drift-detect â†’ retrain â†’ redeploy with full timestamped logging.
+A lifecycle manager that orchestrates deploy → monitor → drift-detect → retrain → redeploy with full timestamped logging.
 
 ```typescript
 import { randomUUID } from "node:crypto";
 
-// â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Types ─────────────────────────────────────────────────────
 interface Deployment {
   id: string;
   modelVersion: string;
@@ -190,7 +190,7 @@ interface LifecycleEvent {
   detail: string;
 }
 
-// â”€â”€ Configuration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Configuration ─────────────────────────────────────────────
 interface ProductionLoopConfig {
   modelVersion: string;
   driftThreshold: number;
@@ -198,7 +198,7 @@ interface ProductionLoopConfig {
   retrainHook: () => Promise<string>; // returns new model version
 }
 
-// â”€â”€ Loop Manager â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Loop Manager ──────────────────────────────────────────────
 export class ProductionLoopManager {
   private config: ProductionLoopConfig;
   private events: LifecycleEvent[] = [];
@@ -216,7 +216,7 @@ export class ProductionLoopManager {
     };
   }
 
-  // â”€â”€ Logging â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Logging ─────────────────────────────────────────────────
   private log(
     step: LifecycleStep,
     detail: string,
@@ -233,7 +233,7 @@ export class ProductionLoopManager {
     return this.events;
   }
 
-  // â”€â”€ Deploy â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Deploy ──────────────────────────────────────────────────
   async deploy(version?: string): Promise<void> {
     if (version) {
       this.deployment = {
@@ -246,7 +246,7 @@ export class ProductionLoopManager {
     this.log("deploy", `Deployed ${this.deployment.modelVersion}`);
   }
 
-  // â”€â”€ Monitor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Monitor ─────────────────────────────────────────────────
   ingestMetric(snapshot: MetricSnapshot): void {
     this.metricsBuffer.push(snapshot);
 
@@ -265,7 +265,7 @@ export class ProductionLoopManager {
     return recent;
   }
 
-  // â”€â”€ Drift Detect â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Drift Detect ────────────────────────────────────────────
   async detectDrift(): Promise<DriftReport> {
     const current = this.currentMetrics();
     if (!current) {
@@ -309,7 +309,7 @@ export class ProductionLoopManager {
     return { detected, score, threshold: this.config.driftThreshold, signals, generatedAt: new Date() };
   }
 
-  // â”€â”€ Retrain â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Retrain ─────────────────────────────────────────────────
   async retrain(): Promise<void> {
     this.log("retrain", "Retraining triggered");
     const newVersion = await this.config.retrainHook();
@@ -318,7 +318,7 @@ export class ProductionLoopManager {
     this.baseline = null; // reset baseline for new model
   }
 
-  // â”€â”€ Full cycle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── Full cycle ──────────────────────────────────────────────
   async runCycle(): Promise<DriftReport> {
     this.log("deploy", `Cycle start, version ${this.deployment.modelVersion}`);
     const drift = await this.detectDrift();
@@ -329,7 +329,7 @@ export class ProductionLoopManager {
   }
 }
 
-// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Usage ─────────────────────────────────────────────────────
 const manager = new ProductionLoopManager({
   modelVersion: "gpt-4o-2025-08-01",
   driftThreshold: 0.5,
@@ -359,7 +359,7 @@ A budget-aware execution wrapper that tracks token usage, computes per-iteration
 ```typescript
 import { randomUUID } from "node:crypto";
 
-// â”€â”€ Cost model â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Cost model ────────────────────────────────────────────────
 interface ModelPricing {
   inputPricePer1kTokens: number;  // USD
   outputPricePer1kTokens: number;
@@ -371,7 +371,7 @@ const PRICING: Record<string, ModelPricing> = {
   "claude-3.5-sonnet": { inputPricePer1kTokens: 0.003, outputPricePer1kTokens: 0.015 },
 };
 
-// â”€â”€ Per-iteration record â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Per-iteration record ──────────────────────────────────────
 interface CostRecord {
   iteration: number;
   model: string;
@@ -392,7 +392,7 @@ interface BudgetConfig {
   fallbackModel?: string;
 }
 
-// â”€â”€ Checkpoint â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Checkpoint ────────────────────────────────────────────────
 interface Checkpoint {
   sessionId: string;
   step: number;
@@ -400,7 +400,7 @@ interface Checkpoint {
   accumulatedCost: number;
 }
 
-// â”€â”€ Cost Governor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Cost Governor ─────────────────────────────────────────────
 export class AgentCostGovernor {
   private config: BudgetConfig;
   private records: CostRecord[] = [];
@@ -509,7 +509,7 @@ export class AgentCostGovernor {
   }
 }
 
-// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Usage ─────────────────────────────────────────────────────
 const governor = new AgentCostGovernor({
   maxCostPerRequest: 0.10,
   sessionBudget: 1.0,
@@ -539,7 +539,7 @@ A shadow deployer that routes requests to both production and candidate models, 
 import { randomUUID } from "node:crypto";
 import { z } from "zod";
 
-// â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Types ─────────────────────────────────────────────────────
 interface ShadowResult {
   requestId: string;
   prompt: string;
@@ -553,7 +553,7 @@ interface ShadowResult {
 type ModelFn = (prompt: string) => Promise<{ output: string; latencyMs: number }>;
 type QualityScorer = (prompt: string, output: string) => Promise<number>;
 
-// â”€â”€ Promotion Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Promotion Config ──────────────────────────────────────────
 interface PromotionThresholds {
   /** Candidate must score at least this much higher than production. */
   minScoreDelta: number;
@@ -563,7 +563,7 @@ interface PromotionThresholds {
   minSamples: number;
 }
 
-// â”€â”€ Shadow Deployer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Shadow Deployer ───────────────────────────────────────────
 export class ShadowDeployer {
   private results: ShadowResult[] = [];
   private promoted = false;
@@ -685,7 +685,7 @@ export class ShadowDeployer {
   }
 }
 
-// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Usage ─────────────────────────────────────────────────────
 async function main() {
   const productionModel: ModelFn = async (prompt) => ({
     output: `Production answer: ${prompt}`,
@@ -733,7 +733,7 @@ main();
 
 import { randomUUID } from "node:crypto";
 
-// â”€â”€ Circuit Breaker State Machine â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Circuit Breaker State Machine ──────────────────────────────
 type CircuitState = "CLOSED" | "HALF_OPEN" | "OPEN";
 
 interface CircuitBreakerConfig {
@@ -763,7 +763,7 @@ class CircuitBreakerStateMachine {
         this.transitionTo("HALF_OPEN");
         return;
       }
-      throw new Error(`Circuit OPEN â€” call blocked for ${this.config.cooldownMs}ms`);
+      throw new Error(`Circuit OPEN — call blocked for ${this.config.cooldownMs}ms`);
     }
   }
 
@@ -804,7 +804,7 @@ class CircuitBreakerStateMachine {
   }
 }
 
-// â”€â”€ Retry Exhaustion Predictor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Retry Exhaustion Predictor ─────────────────────────────────
 interface RetryRecord {
   attempt: number;
   error: string;
@@ -852,7 +852,7 @@ class RetryExhaustionPredictor {
   }
 }
 
-// â”€â”€ Observability Collector â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Observability Collector ────────────────────────────────────
 interface LoopMetric {
   loopId: string;
   cycleNumber: number;
@@ -919,7 +919,7 @@ class ObservabilityCollector {
   }
 }
 
-// â”€â”€ Production Loop Health Checker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Production Loop Health Checker ─────────────────────────────
 interface HealthCheckResult {
   healthy: boolean;
   component: string;
@@ -984,7 +984,7 @@ class ProductionLoopHealthChecker {
   }
 }
 
-// â”€â”€ Canary Release Manager â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Canary Release Manager ─────────────────────────────────────
 interface CanaryStep {
   trafficPercent: number;
   observationWindowMs: number;
@@ -1065,7 +1065,7 @@ class CanaryReleaseManager {
   }
 }
 
-// â”€â”€ Fallback Strategy Executor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Fallback Strategy Executor ─────────────────────────────────
 type FallbackAction = () => Promise<{ success: boolean; output?: string; error?: string }>;
 
 interface FallbackStrategyConfig {
@@ -1109,7 +1109,7 @@ class FallbackStrategyExecutor {
   }
 }
 
-// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Usage ──────────────────────────────────────────────────────
 async function main() {
   // Circuit breaker demo
   const cb = new CircuitBreakerStateMachine({ failureThreshold: 3, successThreshold: 2, halfOpenTimeoutMs: 1000, cooldownMs: 5000 });
@@ -1216,7 +1216,7 @@ flowchart TD
 
 import { randomUUID } from "node:crypto";
 
-// â”€â”€ LoadShedder â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── LoadShedder ─────────────────────────────────────────────────
 type RequestPriority = "critical" | "high" | "normal" | "low";
 
 interface IncomingRequest {
@@ -1270,7 +1270,7 @@ class LoadShedder {
       return true;
     }
 
-    // Over capacity â€” apply drop strategy
+    // Over capacity — apply drop strategy
     this.dropped++;
     this.config.metricsCallback?.(this.dropped, this.accepted);
     return false;
@@ -1333,7 +1333,7 @@ class LoadShedder {
   }
 }
 
-// â”€â”€ AdaptiveTimeout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── AdaptiveTimeout ─────────────────────────────────────────────
 class AdaptiveTimeout {
   private latencies: number[] = [];
   private currentTimeout: number;
@@ -1401,7 +1401,7 @@ class AdaptiveTimeout {
   }
 }
 
-// â”€â”€ RateLimiter (Token Bucket) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── RateLimiter (Token Bucket) ──────────────────────────────────
 class TokenBucketRateLimiter {
   private tokens: number;
   private lastRefill: number;
@@ -1471,7 +1471,7 @@ class TokenBucketRateLimiter {
   }
 }
 
-// â”€â”€ HealthEndpoint â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── HealthEndpoint ──────────────────────────────────────────────
 interface HealthComponent {
   name: string;
   healthy: boolean;
@@ -1583,7 +1583,7 @@ class HealthEndpoint {
   }
 }
 
-// â”€â”€ PrometheusMetricsExporter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── PrometheusMetricsExporter ───────────────────────────────────
 interface MetricFamily {
   name: string;
   help: string;
@@ -1687,7 +1687,7 @@ class PrometheusMetricsExporter {
   }
 }
 
-// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Usage ──────────────────────────────────────────────────────
 async function main() {
   // LoadShedder demo
   const shedder = new LoadShedder({ maxConcurrent: 3, queueCapacity: 5, dropStrategy: "lowest_priority" });
@@ -1754,6 +1754,6 @@ main();
 
 4. **Observability trace exporter.** Implement a `TraceExporter` that wraps any agent loop and emits OpenTelemetry-compatible spans for each iteration. Each span should carry attributes: `model_name`, `input_tokens`, `output_tokens`, `iteration_number`, and a `loop_id` attribute linking all spans for one request.
 
-5. **Drift detector with KS test.** Replace the heuristic drift scoring in `ProductionLoopManager.detectDrift` with a two-sample Kolmogorovâ€“Smirnov test comparing the current window's latency distribution against the baseline. Use a significance threshold of p &lt; 0.05.
+5. **Drift detector with KS test.** Replace the heuristic drift scoring in `ProductionLoopManager.detectDrift` with a two-sample Kolmogorov–Smirnov test comparing the current window's latency distribution against the baseline. Use a significance threshold of p &lt; 0.05.
 
 6. **Alert router.** Implement an `AlertRouter` that accepts `DriftReport` and `CostRecord` events and routes them to configurable channels: Slack webhook, PagerDuty, email, or a silent log. Include a deduplication window so the same alert type fires at most once per 15 minutes.

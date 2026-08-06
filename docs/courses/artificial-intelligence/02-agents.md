@@ -1,4 +1,4 @@
-﻿# Chapter 2: Intelligent Agents
+# Chapter 2: Intelligent Agents
 
 **Previous:** [Chapter 1: Introduction to AI](01-introduction.md) | **Next:** [Chapter 3: Solving Problems by Searching](03-search.md)
 
@@ -35,9 +35,9 @@
 
 ## Why Intelligent Agents Matter
 
-> **Real-World Analogy:** A thermostat and a self-driving car are both agents â†’ but worlds apart in complexity. The thermostat perceives temperature (sensor), compares it to a setpoint (internal logic), and turns heating on/off (actuator). The self-driving car perceives roads, signs, pedestrians, and vehicles through cameras and LIDAR, maintains an internal world model, predicts future states, and chooses actions that maximize safety and speed. Both are agents; the difference lies in the sophistication of perception, reasoning, and action.
+> **Real-World Analogy:** A thermostat and a self-driving car are both agents → but worlds apart in complexity. The thermostat perceives temperature (sensor), compares it to a setpoint (internal logic), and turns heating on/off (actuator). The self-driving car perceives roads, signs, pedestrians, and vehicles through cameras and LIDAR, maintains an internal world model, predicts future states, and chooses actions that maximize safety and speed. Both are agents; the difference lies in the sophistication of perception, reasoning, and action.
 
-From smartphone assistants (Siri, Alexa) to recommendation engines (Netflix, Amazon) to autonomous robots â†’ intelligent agents are everywhere. Understanding how to design them is the foundation of building any AI system. Every AI application you interact with is, at its core, one or more agents perceiving an environment and acting on it.
+From smartphone assistants (Siri, Alexa) to recommendation engines (Netflix, Amazon) to autonomous robots → intelligent agents are everywhere. Understanding how to design them is the foundation of building any AI system. Every AI application you interact with is, at its core, one or more agents perceiving an environment and acting on it.
 
 ---
 
@@ -82,24 +82,24 @@ An **agent** is anything that can be viewed as perceiving its **environment** th
 
 #### How It Works (Step-by-Step)
 
-1. **Sense** â†’ The agent collects raw input from the environment via sensors (cameras, microphones, temperature probes).
-2. **Perceive** â†’ Raw sensor data is converted into a structured percept (e.g., pixel array â†’ "red light ahead").
-3. **Process** â†’ The agent function maps the percept (or percept sequence) to an action decision.
-4. **Act** â†’ The chosen action is executed via actuators (wheels, speakers, display), changing the environment.
-5. **Repeat** â†’ The cycle continues indefinitely; the environment may change in response to the agent's action or external factors.
+1. **Sense** → The agent collects raw input from the environment via sensors (cameras, microphones, temperature probes).
+2. **Perceive** → Raw sensor data is converted into a structured percept (e.g., pixel array → "red light ahead").
+3. **Process** → The agent function maps the percept (or percept sequence) to an action decision.
+4. **Act** → The chosen action is executed via actuators (wheels, speakers, display), changing the environment.
+5. **Repeat** → The cycle continues indefinitely; the environment may change in response to the agent's action or external factors.
 
 #### Pseudocode
 
 ```text
 FUNCTION Agent(percept):
-    agent_function â† MAP percept_sequence â†’ action
+    agent_function ← MAP percept_sequence → action
     RETURN agent_function(percept)
 END FUNCTION
 
 MAIN LOOP:
     WHILE TRUE:
-        percept â† SENSE(environment)
-        action â† Agent(percept)
+        percept ← SENSE(environment)
+        action ← Agent(percept)
         EXECUTE(action, environment)
     END WHILE
 END MAIN LOOP
@@ -131,7 +131,7 @@ class Agent:
             percept = self.sense(environment)
             self.percept_history.append(percept)
             action = self.agent_function(percept)
-            print(f"Step {step+1}: Percept={percept} â†’ Action={action}")
+            print(f"Step {step+1}: Percept={percept} → Action={action}")
             self.act(action, environment)
 
 
@@ -167,10 +167,10 @@ agent.run(env, steps=4)
 
 **Output** (varies):
 ```
-Step 1: Percept=('A', 'Dirty') â†’ Action=Suck
-Step 2: Percept=('A', 'Clean') â†’ Action=Right
-Step 3: Percept=('B', 'Dirty') â†’ Action=Suck
-Step 4: Percept=('B', 'Clean') â†’ Action=Left
+Step 1: Percept=('A', 'Dirty') → Action=Suck
+Step 2: Percept=('A', 'Clean') → Action=Right
+Step 3: Percept=('B', 'Dirty') → Action=Suck
+Step 4: Percept=('B', 'Clean') → Action=Left
 ```
 
 #### Step-by-Step Dry Run (Vacuum Cleaner)
@@ -185,7 +185,7 @@ Step 4: Percept=('B', 'Clean') â†’ Action=Left
 
 #### Complexity Analysis
 
-- **Time Complexity:** O(1) per step â†’ the agent function is a direct mapping, no search or iteration.
+- **Time Complexity:** O(1) per step → the agent function is a direct mapping, no search or iteration.
 - **Space Complexity:** O(P) where P is the length of percept history stored.
 - **Why:** The agent-environment loop runs in constant time per cycle. Storing percept history is the only memory cost; if history is not stored, space is O(1).
 
@@ -193,7 +193,7 @@ Step 4: Percept=('B', 'Clean') â†’ Action=Left
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Universal framework â†’ any AI system can be described as an agent | Abstract â†’ provides no concrete decision-making strategy |
+| Universal framework → any AI system can be described as an agent | Abstract → provides no concrete decision-making strategy |
 | Separates perception from action, enabling modular design | Real-world sensors and actuators are imperfect |
 | Simple loop is easy to implement and debug | Single-agent model does not capture multi-agent dynamics |
 
@@ -212,7 +212,7 @@ Step 4: Percept=('B', 'Clean') â†’ Action=Left
 ### Rationality
 
 
-> **Real-World Analogy:** A chess player who blunders still made rational moves earlier if those moves maximized their winning chance given what they knew. Rationality is not omniscience â†’ it is doing your best with what you have. Similarly, a doctor who prescribes the best known treatment based on symptoms, even if the patient has a rare condition the tests missed, is still rational.
+> **Real-World Analogy:** A chess player who blunders still made rational moves earlier if those moves maximized their winning chance given what they knew. Rationality is not omniscience → it is doing your best with what you have. Similarly, a doctor who prescribes the best known treatment based on symptoms, even if the patient has a rare condition the tests missed, is still rational.
 
 A **rational agent** is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome. Rationality depends on:
 1. The **performance measure** that defines the criterion of success.
@@ -220,29 +220,29 @@ A **rational agent** is one that acts so as to achieve the best outcome or, when
 3. The **actions** that the agent can perform.
 4. The agent's **percept sequence** to date.
 
-> **Important:** Rationality Ã¢â€°Â  Perfection. A rational agent may fail because of incomplete information. An omniscient agent knows the actual outcome; a rational agent maximizes expected outcome. A rational agent can fail; an omniscient agent cannot.
+> **Important:** Rationality ≠ Perfection. A rational agent may fail because of incomplete information. An omniscient agent knows the actual outcome; a rational agent maximizes expected outcome. A rational agent can fail; an omniscient agent cannot.
 
 #### Rationality Decision Process
 
-1. **Define performance measure** â†’ What counts as success? (e.g., points scored, safety, profit, patient survival rate)
-2. **Gather percepts** â†’ Collect available information from the environment.
-3. **Evaluate possible actions** â†’ For each action, estimate the expected outcome using the world model.
-4. **Select maximizer** â†’ Choose the action that maximizes the expected performance measure.
-5. **Execute and learn** â†’ Perform the action and update knowledge based on the observed result.
+1. **Define performance measure** → What counts as success? (e.g., points scored, safety, profit, patient survival rate)
+2. **Gather percepts** → Collect available information from the environment.
+3. **Evaluate possible actions** → For each action, estimate the expected outcome using the world model.
+4. **Select maximizer** → Choose the action that maximizes the expected performance measure.
+5. **Execute and learn** → Perform the action and update knowledge based on the observed result.
 
 #### Pseudocode
 
 ```text
 FUNCTION RationalAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
-    best_action â† NULL
-    best_value â† -INFINITY
+    state ← UPDATE_STATE(state, action, percept, model)
+    best_action ← NULL
+    best_value ← -INFINITY
     FOR EACH possible_action IN ACTIONS(state):
-        predicted_state â† SIMULATE(state, possible_action, model)
-        expected_value â† EXPECTED_UTILITY(predicted_state, performance_measure)
+        predicted_state ← SIMULATE(state, possible_action, model)
+        expected_value ← EXPECTED_UTILITY(predicted_state, performance_measure)
         IF expected_value > best_value THEN:
-            best_value â† expected_value
-            best_action â† possible_action
+            best_value ← expected_value
+            best_action ← possible_action
     RETURN best_action
 END FUNCTION
 ```
@@ -294,15 +294,15 @@ agent = RationalVacuumAgent()
 percepts = [('A', 'Dirty'), ('A', 'Clean'), ('B', 'Dirty'), ('B', 'Clean')]
 for p in percepts:
     action = agent.rational_agent(p)
-    print(f"Percept: {p}, State: {agent.state} â†’ Action: {action}")
+    print(f"Percept: {p}, State: {agent.state} → Action: {action}")
 ```
 
 **Output:**
 ```
-Percept: ('A', 'Dirty'), State: {'A': 'Dirty', 'B': 'Unknown'} â†’ Action: Suck
-Percept: ('A', 'Clean'), State: {'A': 'Clean', 'B': 'Unknown'} â†’ Action: Right
-Percept: ('B', 'Dirty'), State: {'A': 'Clean', 'B': 'Dirty'} â†’ Action: Suck
-Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} â†’ Action: NoOp
+Percept: ('A', 'Dirty'), State: {'A': 'Dirty', 'B': 'Unknown'} → Action: Suck
+Percept: ('A', 'Clean'), State: {'A': 'Clean', 'B': 'Unknown'} → Action: Right
+Percept: ('B', 'Dirty'), State: {'A': 'Clean', 'B': 'Dirty'} → Action: Suck
+Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} → Action: NoOp
 ```
 
 #### Step-by-Step Dry Run
@@ -316,7 +316,7 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} â†’ Action: No
 
 #### Complexity Analysis
 
-- **Time Complexity:** O(A Ãƒâ€” S) where A = number of possible actions and S = cost of simulating state transition per action.
+- **Time Complexity:** O(A × S) where A = number of possible actions and S = cost of simulating state transition per action.
 - **Space Complexity:** O(S) for state storage + O(A) for temporary action evaluation.
 - **Why:** Each decision cycle evaluates every possible action. If the simulation function is expensive (e.g., full physics simulation), this dominates the runtime.
 
@@ -327,7 +327,7 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} â†’ Action: No
 | Makes optimal decisions given available information | Requires a performance measure that captures all objectives |
 | Can incorporate uncertainty via expected values | Computationally heavier than reflex approaches |
 | Actions are grounded in a clear success metric | Performance measure design is subjective and difficult |
-| Naturally handles trade-offs between outcomes | Cannot guarantee success â†’ only expected optimality |
+| Naturally handles trade-offs between outcomes | Cannot guarantee success → only expected optimality |
 
 #### Edge Cases
 
@@ -337,14 +337,14 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} â†’ Action: No
 | No action has positive expected utility | All actions lead to poor outcomes | Choose least-bad action rather than NoOp |
 | Performance measure is gameable | Agent finds loophole that scores high but violates intent | Carefully constrain the measure; add penalties |
 | Unknown action outcomes | No model to predict consequences | Add exploration actions to learn the model |
-| Time pressure | Cannot evaluate all actions before deadline | Use bounded rationality â†’ evaluate best subset |
+| Time pressure | Cannot evaluate all actions before deadline | Use bounded rationality → evaluate best subset |
 
 ---
 
 ### Task Environments (PEAS)
 
 
-> **Real-World Analogy:** Before building a house, you need a blueprint. PEAS is the blueprint for designing an agent â†’ it specifies WHAT the agent should achieve (Performance), WHERE it operates (Environment), HOW it acts (Actuators), and HOW it perceives (Sensors). Without PEAS, you risk designing an agent that is effective in the wrong environment or optimized for the wrong metric.
+> **Real-World Analogy:** Before building a house, you need a blueprint. PEAS is the blueprint for designing an agent → it specifies WHAT the agent should achieve (Performance), WHERE it operates (Environment), HOW it acts (Actuators), and HOW it perceives (Sensors). Without PEAS, you risk designing an agent that is effective in the wrong environment or optimized for the wrong metric.
 
 To design an agent, we must specify the **PEAS** for the task environment:
 
@@ -354,21 +354,21 @@ To design an agent, we must specify the **PEAS** for the task environment:
 - **Sensors**: The mechanisms for perceiving (e.g., cameras, microphones, keyboard, LIDAR).
 #### How to Use PEAS (Step-by-Step)
 
-1. **Identify the Performance Measure** â†’ Ask: "What does success look like?" Define concrete, measurable criteria (e.g., minimize travel time, maximize classification accuracy).
-2. **Define the Environment** â†’ Ask: "What external factors affect the agent?" List all relevant entities, conditions, and constraints.
-3. **List the Actuators** â†’ Ask: "How can the agent change the world?" Enumerate every mechanism the agent can use to act.
-4. **List the Sensors** â†’ Ask: "How does the agent get information?" Enumerate every input mechanism available.
-5. **Validate Completeness** â†’ Ensure that for every action the agent might need, there is an actuator; for every piece of information it needs, there is a sensor.
+1. **Identify the Performance Measure** → Ask: "What does success look like?" Define concrete, measurable criteria (e.g., minimize travel time, maximize classification accuracy).
+2. **Define the Environment** → Ask: "What external factors affect the agent?" List all relevant entities, conditions, and constraints.
+3. **List the Actuators** → Ask: "How can the agent change the world?" Enumerate every mechanism the agent can use to act.
+4. **List the Sensors** → Ask: "How does the agent get information?" Enumerate every input mechanism available.
+5. **Validate Completeness** → Ensure that for every action the agent might need, there is an actuator; for every piece of information it needs, there is a sensor.
 
 #### Pseudocode
 
 ```text
 FUNCTION DesignAgent(task_description):
-    PEAS â† {}
-    PEAS.performance â† IDENTIFY_PERFORMANCE_METRICS(task_description)
-    PEAS.environment â† IDENTIFY_ENVIRONMENT_ENTITIES(task_description)
-    PEAS.actuators â† IDENTIFY_ACTUATORS(task_description)
-    PEAS.sensors â† IDENTIFY_SENSORS(task_description)
+    PEAS ← {}
+    PEAS.performance ← IDENTIFY_PERFORMANCE_METRICS(task_description)
+    PEAS.environment ← IDENTIFY_ENVIRONMENT_ENTITIES(task_description)
+    PEAS.actuators ← IDENTIFY_ACTUATORS(task_description)
+    PEAS.sensors ← IDENTIFY_SENSORS(task_description)
     RETURN PEAS
 END FUNCTION
 
@@ -403,12 +403,12 @@ END FUNCTION
 | 2 | What is the environment? | Roads, traffic signals, pedestrians, other vehicles, weather, GPS maps |
 | 3 | What are the actuators? | Steering wheel, accelerator, brake, turn signals, horn, display screen |
 | 4 | What are the sensors? | Cameras, LIDAR, radar, GPS, speedometer, odometer, microphone, accelerometer |
-| 5 | Can actuators achieve performance goals? | Yes â†’ steering navigates, brake ensures safety, accelerator controls speed |
-| 6 | Do sensors provide all needed info? | Yes â†’ cameras see lanes/signs, LIDAR detects obstacles, GPS provides location |
+| 5 | Can actuators achieve performance goals? | Yes → steering navigates, brake ensures safety, accelerator controls speed |
+| 6 | Do sensors provide all needed info? | Yes → cameras see lanes/signs, LIDAR detects obstacles, GPS provides location |
 
 #### Complexity Analysis
 
-- **Time Complexity:** O(N) where N is the number of PEAS elements to specify. Small â†’ typically 4-12 items per dimension.
+- **Time Complexity:** O(N) where N is the number of PEAS elements to specify. Small → typically 4-12 items per dimension.
 - **Space Complexity:** O(P + E + A + S) to store the specification.
 - **Why:** PEAS is a design-time specification, not a runtime algorithm. Its cost is negligible relative to the agent implementation it guides.
 
@@ -416,7 +416,7 @@ END FUNCTION
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Provides a complete, structured specification of the task | Does not specify how the agent should decide â†’ only what it needs |
+| Provides a complete, structured specification of the task | Does not specify how the agent should decide → only what it needs |
 | Easy to communicate and share across teams | Can miss subtle interactions between PEAS dimensions |
 | Makes implicit assumptions explicit | Performance measure design is subjective |
 | Framework works for any domain (robotics, software, games) | Does not account for multi-agent dynamics directly |
@@ -442,27 +442,27 @@ Environments are characterized by six key dimensions. Understanding these proper
 
 #### The Six Properties
 
-1. **Observability** (Fully vs. Partially) â†’ Can the agent access the complete state of the environment at each point in time?
+1. **Observability** (Fully vs. Partially) → Can the agent access the complete state of the environment at each point in time?
    - *Fully Observable:* Chess, Sudoku (all relevant info is visible)
    - *Partially Observable:* Poker (hidden cards), Self-driving (occluded objects)
 
-2. **Determinism** (Deterministic vs. Stochastic) â†’ Does the next state depend solely on the current state and the agent's action?
+2. **Determinism** (Deterministic vs. Stochastic) → Does the next state depend solely on the current state and the agent's action?
    - *Deterministic:* 8-Puzzle, Chess (no randomness)
    - *Stochastic:* Backgammon (dice), Self-driving (wind, tire slip)
 
-3. **Episodicity** (Episodic vs. Sequential) â†’ Is the current decision independent of previous decisions?
+3. **Episodicity** (Episodic vs. Sequential) → Is the current decision independent of previous decisions?
    - *Episodic:* Image classification (each image is independent)
    - *Sequential:* Robot navigation (current position depends on past moves)
 
-4. **Dynamics** (Static vs. Dynamic) â†’ Does the environment change while the agent is thinking?
+4. **Dynamics** (Static vs. Dynamic) → Does the environment change while the agent is thinking?
    - *Static:* Crossword puzzle (no change while you ponder)
    - *Dynamic:* Autonomous driving (world keeps moving)
 
-5. **Discreteness** (Discrete vs. Continuous) â†’ Are the states and actions finite and distinct?
+5. **Discreteness** (Discrete vs. Continuous) → Are the states and actions finite and distinct?
    - *Discrete:* Chess (finite board positions and moves)
    - *Continuous:* Taxi steering angle (infinite possible values)
 
-6. **Agent Count** (Single vs. Multi) â†’ Are there other agents operating in the same environment?
+6. **Agent Count** (Single vs. Multi) → Are there other agents operating in the same environment?
    - *Single:* Sudoku solver (no other agents)
    - *Multi:* Multiplayer game, stock market
 
@@ -470,13 +470,13 @@ Environments are characterized by six key dimensions. Understanding these proper
 
 ```text
 FUNCTION ClassifyEnvironment(environment_description):
-    properties â† {}
-    properties.observability â† CHECK_IF_FULLY_OBSERVABLE(environment_description)
-    properties.determinism â† CHECK_IF_DETERMINISTIC(environment_description)
-    properties.episodicity â† CHECK_IF_EPISODIC(environment_description)
-    properties.dynamics â† CHECK_IF_STATIC(environment_description)
-    properties.discreteness â† CHECK_IF_DISCRETE(environment_description)
-    properties.agent_count â† COUNT_AGENTS(environment_description)
+    properties ← {}
+    properties.observability ← CHECK_IF_FULLY_OBSERVABLE(environment_description)
+    properties.determinism ← CHECK_IF_DETERMINISTIC(environment_description)
+    properties.episodicity ← CHECK_IF_EPISODIC(environment_description)
+    properties.dynamics ← CHECK_IF_STATIC(environment_description)
+    properties.discreteness ← CHECK_IF_DISCRETE(environment_description)
+    properties.agent_count ← COUNT_AGENTS(environment_description)
     RETURN properties
 END FUNCTION
 
@@ -566,12 +566,12 @@ Recommended: Model-Based Agent (need internal state)
 
 | Property | Question | Answer | Implication |
 |----------|----------|--------|-------------|
-| Observability | Can the car see everything? | No â†’ partial (occluded vehicles, blind spots) | Need internal state to track hidden objects |
-| Determinism | Is the world predictable? | No â†’ stochastic (other drivers may behave unpredictably) | Need probabilistic reasoning |
-| Episodicity | Are decisions independent? | No â†’ sequential (turning now affects position later) | Need planning across time |
-| Dynamics | Does the world change while thinking? | Yes â†’ dynamic (other cars move continuously) | Need real-time response latency |
-| Discreteness | Are actions finite? | No â†’ continuous (infinite steering angles) | Need function approximation |
-| Agent Count | Are there other agents? | Yes â†’ multi (other drivers, pedestrians) | Need game-theoretic reasoning |
+| Observability | Can the car see everything? | No → partial (occluded vehicles, blind spots) | Need internal state to track hidden objects |
+| Determinism | Is the world predictable? | No → stochastic (other drivers may behave unpredictably) | Need probabilistic reasoning |
+| Episodicity | Are decisions independent? | No → sequential (turning now affects position later) | Need planning across time |
+| Dynamics | Does the world change while thinking? | Yes → dynamic (other cars move continuously) | Need real-time response latency |
+| Discreteness | Are actions finite? | No → continuous (infinite steering angles) | Need function approximation |
+| Agent Count | Are there other agents? | Yes → multi (other drivers, pedestrians) | Need game-theoretic reasoning |
 
 #### Complexity Analysis
 
@@ -584,7 +584,7 @@ Recommended: Model-Based Agent (need internal state)
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Provides clear guidance for architecture selection | Some environments fall in gray zones (e.g., mostly observable) |
-| Universal â†’ applies to any AI domain | Properties can change during operation |
+| Universal → applies to any AI domain | Properties can change during operation |
 | Helps identify design challenges early | No consensus on which dimension matters most |
 | Enables systematic comparison of task difficulty | Environment may be misclassified |
 
@@ -598,9 +598,9 @@ Recommended: Model-Based Agent (need internal state)
 | Multi-agent cooperation | Other agents are friendly, not adversarial | Single-agent simplification may suffice if communication is reliable |
 | Environment shifts during operation | Static environment becomes dynamic | Monitor environment properties at runtime and adapt architecture |
 
-> **Pro Tip:** The most critical environment dimension is **observability** â†’ whether the environment is fully or partially observable fundamentally determines which agent architecture you can use. Self-driving cars operate in partially observable environments and therefore require model-based agents with internal state. Simple reflex agents fail here because the current percept alone is insufficient.
+> **Pro Tip:** The most critical environment dimension is **observability** → whether the environment is fully or partially observable fundamentally determines which agent architecture you can use. Self-driving cars operate in partially observable environments and therefore require model-based agents with internal state. Simple reflex agents fail here because the current percept alone is insufficient.
 
-> **Warning:** A common mistake is confusing "rationality" with "omniscience." A rational agent makes the best decision based on what it knows â†’ it may still fail because of incomplete information. Rationality does not guarantee success.
+> **Warning:** A common mistake is confusing "rationality" with "omniscience." A rational agent makes the best decision based on what it knows → it may still fail because of incomplete information. Rationality does not guarantee success.
 
 ---
 
@@ -611,7 +611,7 @@ There are four basic types of agent programs, each building on the previous in s
 
 #### 1. Simple Reflex Agent
 
-> **Real-World Analogy:** A touch-lamp that turns on when you tap it. The percept (touch) maps directly to an action (light on). No memory, no internal state, no goals â†’ pure condition-action rule. Like a human reflex (pulling hand from a hot stove), the response is immediate and requires no thought.
+> **Real-World Analogy:** A touch-lamp that turns on when you tap it. The percept (touch) maps directly to an action (light on). No memory, no internal state, no goals → pure condition-action rule. Like a human reflex (pulling hand from a hot stove), the response is immediate and requires no thought.
 
 An agent that selects actions based only on the **current percept**, ignoring the rest of the percept history.
 
@@ -717,9 +717,9 @@ Maintains an **internal state** that tracks the parts of the environment not vis
 
 ```text
 FUNCTION ModelBasedReflexAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
-    rule â† RULE_MATCH(state, condition_action_rules)
-    action â† rule.action
+    state ← UPDATE_STATE(state, action, percept, model)
+    rule ← RULE_MATCH(state, condition_action_rules)
+    action ← rule.action
     RETURN action
 END FUNCTION
 ```
@@ -776,11 +776,11 @@ Percept: ('B', 'Clean'), Internal: {'A': False, 'B': False} -> Action: Left
 | 1 | (A, Dirty) | {A: F, B: F} | {A: T} | Suck |
 | 2 | (A, Clean) | {A: T, B: F} | {A: F} (after Suck) | Right |
 | 3 | (B, Dirty) | {A: F, B: F} | {B: T} | Suck |
-| 4 | (B, Clean) | {A: F, B: T} | {B: F} (after Suck) | Right (check A â†’ clean) |
+| 4 | (B, Clean) | {A: F, B: T} | {B: F} (after Suck) | Right (check A → clean) |
 
 ##### Complexity Analysis
 
-- **Time Complexity:** O(S + R) per step â†’ O(S) to update state (where S is state size) and O(R) for rule matching.
+- **Time Complexity:** O(S + R) per step → O(S) to update state (where S is state size) and O(R) for rule matching.
 - **Space Complexity:** O(S) for internal state + O(R) for rules.
 - **Why:** State update depends on model complexity. The model must infer unobserved variables from observed ones, which can range from O(1) (simple map update) to polynomial (probabilistic inference with Bayes nets). Rule matching remains the same as simple reflex.
 
@@ -824,13 +824,13 @@ Extends model-based agents by adding **goal information**. The agent considers f
 
 ```text
 FUNCTION GoalBasedAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
+    state ← UPDATE_STATE(state, action, percept, model)
     IF state == goal THEN:
         RETURN NoOp
-    goal_test â† IS_GOAL(state, goal)
+    goal_test ← IS_GOAL(state, goal)
     IF NOT goal_test:
-        actions â† SEARCH(state, model, goal)
-        action â† FIRST(actions)
+        actions ← SEARCH(state, model, goal)
+        action ← FIRST(actions)
     RETURN action
 END FUNCTION
 ```
@@ -911,8 +911,8 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'}, Goal Reached: True
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Can handle complex, multi-step problems | Slower â†’ requires search/planning |
-| Flexible â†’ change goal and behavior changes | Cannot prioritize between multiple goals |
+| Can handle complex, multi-step problems | Slower → requires search/planning |
+| Flexible → change goal and behavior changes | Cannot prioritize between multiple goals |
 | Explains its actions in terms of purpose | May get stuck if goal is unreachable |
 | Handles partially observable envs well | Requires accurate world model |
 | Naturally supports replanning | Search can be exponential in worst case |
@@ -949,16 +949,16 @@ Generalizes goal-based agents by using a **utility function** that maps a state 
 
 ```text
 FUNCTION UtilityBasedAgent(percept):
-    state â† UPDATE_STATE(state, action, percept, model)
-    actions â† GENERATE_ACTIONS(state)
-    best_utility â† -INFINITY
-    best_action â† NoOp
+    state ← UPDATE_STATE(state, action, percept, model)
+    actions ← GENERATE_ACTIONS(state)
+    best_utility ← -INFINITY
+    best_action ← NoOp
     FOR EACH action IN actions:
-        predicted_state â† PREDICT(state, action, model)
-        utility â† UTILITY(predicted_state)
+        predicted_state ← PREDICT(state, action, model)
+        utility ← UTILITY(predicted_state)
         IF utility > best_utility THEN:
-            best_utility â† utility
-            best_action â† action
+            best_utility ← utility
+            best_action ← action
     RETURN best_action
 END FUNCTION
 ```
@@ -1045,7 +1045,7 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} -> Action: NoOp
 
 - **Time Complexity:** O(A x C) where A = number of possible actions and C = cost of computing utility per action.
 - **Space Complexity:** O(S) for state + O(A) for action generation.
-- **Why:** The agent evaluates every action against the utility function. If utility computation requires simulation (e.g., rollouts in model-predictive control), C dominates. Unlike goal-based agents, utility-based agents do not search over sequences â†’ they evaluate one-step outcomes, making them faster than full search but slower than reflex.
+- **Why:** The agent evaluates every action against the utility function. If utility computation requires simulation (e.g., rollouts in model-predictive control), C dominates. Unlike goal-based agents, utility-based agents do not search over sequences → they evaluate one-step outcomes, making them faster than full search but slower than reflex.
 
 ##### Advantages & Disadvantages
 
@@ -1054,7 +1054,7 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} -> Action: NoOp
 | Handles trade-offs between conflicting objectives | Requires careful utility function design |
 | Produces nuanced, graded decisions | Utility values are subjective |
 | Most flexible agent architecture | Computationally heavier than goal-based |
-| Can handle uncertainty probabilistically | Hard to debug â†’ why was utility X chosen? |
+| Can handle uncertainty probabilistically | Hard to debug → why was utility X chosen? |
 | Naturally generalizes goal-based agents | Utility functions can be gamed |
 
 ##### Edge Cases
@@ -1074,13 +1074,13 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} -> Action: NoOp
 
 | Feature | Simple Reflex | Model-Based Reflex | Goal-Based | Utility-Based |
 |---------|:---:|:---:|:---:|:---:|
-| Internal State | x | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| World Model | x | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Goal Knowledge | x | x | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Utility Function | x | x | x | Ã¢Å“â€œ |
-| Handles Partial Observability | x | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Planning / Search | x | x | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Trade-off Decisions | x | x | x | Ã¢Å“â€œ |
+| Internal State | x | ✓ | ✓ | ✓ |
+| World Model | x | ✓ | ✓ | ✓ |
+| Goal Knowledge | x | x | ✓ | ✓ |
+| Utility Function | x | x | x | ✓ |
+| Handles Partial Observability | x | ✓ | ✓ | ✓ |
+| Planning / Search | x | x | ✓ | ✓ |
+| Trade-off Decisions | x | x | x | ✓ |
 | Computational Cost | O(1) | O(S) | O(b^d) | O(A-C) |
 | Memory Requirement | Minimal | Moderate | High (stores search tree) | Moderate |
 | Implementation Complexity | Very Low | Low | Medium | High |
@@ -1126,7 +1126,7 @@ A highly complex agent requiring sophisticated sensors and actuators.
   - **Actuators**: Steering, accelerator, brake, signal, horn, display.
   - **Sensors**: Cameras, LIDAR, speedometer, GPS, odometer, engine sensors.
 - **Environment Properties**: Partially observable, stochastic, sequential, dynamic, continuous, multi-agent.
-- **What it demonstrates**: Application of utility-based agent theory to high-stakes, real-world problems. The taxi must balance safety vs. speed, comfort vs. efficiency â†’ a perfect use case for utility-based reasoning.
+- **What it demonstrates**: Application of utility-based agent theory to high-stakes, real-world problems. The taxi must balance safety vs. speed, comfort vs. efficiency → a perfect use case for utility-based reasoning.
 
 ---
 
@@ -1139,7 +1139,7 @@ A highly complex agent requiring sophisticated sensors and actuators.
 | Goal-Based | Yes | Yes | No | Problems with clear success criteria |
 | Utility-Based | Yes | Yes | Yes | Trade-offs and conflicting objectives |
 
-## Quick Reference â†’ Environment Properties
+## Quick Reference → Environment Properties
 
 | Property | Two Poles | Example (Fully Observable) | Example (Not) |
 |----------|-----------|---------------------------|---------------|
@@ -1154,11 +1154,11 @@ A highly complex agent requiring sophisticated sensors and actuators.
 
 | Agent Type | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Simple Reflex | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€” | Ã¢Å“â€” |
-| Model-Based | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Goal-Based | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ |
-| Utility-Based | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€” | Ã¢Å“â€œ |
-| Learning Agent | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Simple Reflex | ✓ | ✗ | ✗ | ✗ |
+| Model-Based | ✓ | ✓ | ✓ | ✓ |
+| Goal-Based | ✓ | ✓ | ✓ | ✓ |
+| Utility-Based | ✓ | ✗ | ✗ | ✓ |
+| Learning Agent | ✓ | ✓ | ✓ | ✓ |
 
 ---
 
@@ -1168,19 +1168,19 @@ A highly complex agent requiring sophisticated sensors and actuators.
 
 **Answer:** For partially observable environments, a **model-based agent** with probabilistic state estimation is essential. Use these techniques:
 
-1. **Probabilistic State Representation**: Maintain a **belief state** â†’ a probability distribution over all possible world states, rather than a single deterministic state.
+1. **Probabilistic State Representation**: Maintain a **belief state** → a probability distribution over all possible world states, rather than a single deterministic state.
 2. **Bayesian Updating**: When a noisy percept arrives, update beliefs using Bayes' rule: P(state | percept) / P(percept | state) x P(state).
 3. **Prediction Step**: Before sensing, predict the next belief state using the world model and action taken.
 4. **Correction Step**: After sensing, correct the prediction using the actual sensor reading.
 5. **Decision Making Under Uncertainty**: Choose actions that maximize expected utility, accounting for the fact that the true state is uncertain.
 
-For example, a robot in a smoky room (limited visibility) might maintain a probability map of obstacle locations. When sonar returns a noisy reading, it updates probabilities rather than assuming exact positions. It might choose to move slowly (low utility cost if wrong) rather than fast (catastrophic if an unseen obstacle exists). This approach â†’ maintaining belief states with Bayesian updates â†’ is the foundation of modern robotics (particle filters, Kalman filters) and is used in systems from Roomba to self-driving cars.
+For example, a robot in a smoky room (limited visibility) might maintain a probability map of obstacle locations. When sonar returns a noisy reading, it updates probabilities rather than assuming exact positions. It might choose to move slowly (low utility cost if wrong) rather than fast (catastrophic if an unseen obstacle exists). This approach → maintaining belief states with Bayesian updates → is the foundation of modern robotics (particle filters, Kalman filters) and is used in systems from Roomba to self-driving cars.
 
 ### Q2: Compare how different agent architectures handle sensor failure.
 
 | Architecture | Sensor Failure Behavior |
 |-------------|------------------------|
-| Simple Reflex | Fails immediately â†’ depends entirely on current percept |
+| Simple Reflex | Fails immediately → depends entirely on current percept |
 | Model-Based | Can continue using internal state for some time; degrades gracefully |
 | Goal-Based | Can replan around uncertainty; may require explicit sensor failure detection |
 | Utility-Based | Weighs cost of acting without sensing vs. cost of stopping; may choose to stop if risk is too high |
@@ -1189,10 +1189,10 @@ For example, a robot in a smoky room (limited visibility) might maintain a proba
 
 **Answer:** A **model-based utility agent** with autonomous goal management is the best choice for these constraints:
 
-1. **Partial observability during dust storms** â†’ Model-based internal state is mandatory. The rover must maintain a probabilistic terrain map that it updates when sensors clear.
-2. **20-minute communication delay** â†’ The rover cannot wait for Earth commands for simple decisions. It must be autonomous, ruling out simple teleoperation. Goal-based reasoning with high-level goals from Earth ("explore region X") and low-level autonomy ("avoid that crater") is essential.
-3. **Unknown terrain** â†’ The model must be learned online. The rover should start with a prior (orbital imagery) and refine it through exploration.
-4. **Trade-offs under limited power** â†’ Utility-based reasoning is critical. The rover must trade science value against battery consumption, communication bandwidth, and thermal constraints. A pure goal-based agent ("go to X") would drain the battery if X is too far.
+1. **Partial observability during dust storms** → Model-based internal state is mandatory. The rover must maintain a probabilistic terrain map that it updates when sensors clear.
+2. **20-minute communication delay** → The rover cannot wait for Earth commands for simple decisions. It must be autonomous, ruling out simple teleoperation. Goal-based reasoning with high-level goals from Earth ("explore region X") and low-level autonomy ("avoid that crater") is essential.
+3. **Unknown terrain** → The model must be learned online. The rover should start with a prior (orbital imagery) and refine it through exploration.
+4. **Trade-offs under limited power** → Utility-based reasoning is critical. The rover must trade science value against battery consumption, communication bandwidth, and thermal constraints. A pure goal-based agent ("go to X") would drain the battery if X is too far.
 
 In practice, NASA's Mars rovers use a hierarchical architecture with model-based state estimation and utility-based planning for resource management, proving this combination works in the harshest environments.
 
@@ -1203,7 +1203,7 @@ In practice, NASA's Mars rovers use a hierarchical architecture with model-based
 1. **Define utility function**: U(temp, energy_cost, time_of_day) = -w1 x |temp - setpoint| - w2 x energy_cost - w3 x (rate if peak_hour)
 2. **Add predictive model**: Model how temperature changes when heat is on/off, accounting for outside temperature and insulation.
 3. **Evaluate trade-offs**: Instead of binary on/off, the agent might pre-heat before you wake (when energy is cheaper) or accept a 1 degree deviation during peak hours to save cost.
-4. **Result**: The utility-based thermostat outperforms the simple reflex one by saving 15-25% on energy bills while maintaining comfort â†’ because it understands trade-offs, not just thresholds.
+4. **Result**: The utility-based thermostat outperforms the simple reflex one by saving 15-25% on energy bills while maintaining comfort → because it understands trade-offs, not just thresholds.
 
 ---
 
@@ -1214,7 +1214,7 @@ In practice, NASA's Mars rovers use a hierarchical architecture with model-based
 Roomba uses a combination of simple reflex rules and basic model-based navigation:
 - **Simple Reflex**: When bump sensor triggers -> reverse and turn. When cliff sensor triggers -> stop. When dirt sensor detects debris -> slow down and clean thoroughly.
 - **Model-Based**: Tracks approximate position using wheel odometry to ensure coverage. Maintains a rough mental map of where it has been.
-- **Utility Considerations**: When battery drops below 20%, the utility of returning to dock exceeds the utility of continued cleaning â†’ a simple utility decision.
+- **Utility Considerations**: When battery drops below 20%, the utility of returning to dock exceeds the utility of continued cleaning → a simple utility decision.
 - **Why it works**: The environment (a home floor) is relatively static and predictable. Simple rules handle 90% of situations. The model-based component prevents the robot from cleaning the same spot all day.
 
 ### Self-Driving Cars (Utility-Based with Goal-Based Planning)
@@ -1225,7 +1225,7 @@ Autonomous vehicles like Waymo use a layered agent architecture:
 - **Goal Layer**: Destination is the high-level goal. Route planner finds a path through the road network.
 - **Utility Function**: Weighted combination of safety (collision probability x severity), progress (distance toward destination), legality (traffic law compliance), and comfort (jerk, acceleration).
 - **Decision**: At each intersection, the planner evaluates thousands of possible trajectories and picks the one maximizing expected utility. A trajectory that shaves 30 seconds off the trip but has 1% higher collision probability is rejected because the utility weight on safety dominates.
-- **Why it works**: The real world demands trade-offs at every moment â†’ speed vs. safety, comfort vs. urgency. Only utility-based agents can make these nuanced decisions.
+- **Why it works**: The real world demands trade-offs at every moment → speed vs. safety, comfort vs. urgency. Only utility-based agents can make these nuanced decisions.
 
 ### Recommendation Systems (Utility-Based / Learning Agent)
 
@@ -1234,8 +1234,8 @@ Netflix, Amazon, and YouTube recommend content using utility-based agents:
 - **Model**: Collaborative filtering neural network predicts user preference for each item. Matrix factorization captures latent user and item features.
 - **Utility Function**: Predicted engagement (watch time, click-through rate, conversion probability, retention probability).
 - **Action**: Display the top-N items sorted by predicted utility. The system continuously learns from user feedback to improve the utility model.
-- **Trade-offs**: The recommendation agent must balance relevance (show what you like) with diversity (show new things you might like) â†’ a classic utility trade-off between exploitation and exploration.
-- **Why it works**: User preferences are complex and cannot be reduced to a single goal. Utility-based modeling captures the gradient of preference â†’ "you might like this 87%" vs. just "relevant/not relevant."
+- **Trade-offs**: The recommendation agent must balance relevance (show what you like) with diversity (show new things you might like) → a classic utility trade-off between exploitation and exploration.
+- **Why it works**: User preferences are complex and cannot be reduced to a single goal. Utility-based modeling captures the gradient of preference → "you might like this 87%" vs. just "relevant/not relevant."
 
 ### Industrial Robot Arms (Goal-Based)
 
@@ -1243,7 +1243,7 @@ Factory robot arms are goal-based agents:
 - **Goal**: Pick part from conveyor, place at position (x, y, z) within +/-0.1mm tolerance.
 - **Planning**: Inverse kinematics solves joint angles to reach the target position. Path planning avoids obstacles in the workspace.
 - **Sensors**: Joint encoders, force/torque sensors at the wrist, vision system for part localization.
-- **Why goal-based**: The goal is clear and unambiguous â†’ move the part exactly here. No trade-offs needed â†’ just precision and speed within safety constraints. Utility adds nothing because there is no meaningful trade-off to optimize.
+- **Why goal-based**: The goal is clear and unambiguous → move the part exactly here. No trade-offs needed → just precision and speed within safety constraints. Utility adds nothing because there is no meaningful trade-off to optimize.
 
 ---
 
@@ -1276,7 +1276,7 @@ Factory robot arms are goal-based agents:
 - C) Actuators
 - D) Applications
 
-<details><summary>Answer&lt;/summary&gt;C) Actuators â†’ the mechanisms through which an agent acts upon its environment.</details>
+<details><summary>Answer&lt;/summary&gt;C) Actuators → the mechanisms through which an agent acts upon its environment.</details>
 
 **Q3:** Which environment property distinguishes chess from poker?
 - A) Deterministic vs. Stochastic

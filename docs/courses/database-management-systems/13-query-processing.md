@@ -1,4 +1,4 @@
-﻿# Chapter 13: Query Processing and Optimization
+# Chapter 13: Query Processing and Optimization
 
 > **Prev:** [Chapter 12: Indexing](12-indexing.md) | **Next:** [Chapter 14: NoSQL Databases](14-nosql.md)
 
@@ -122,15 +122,15 @@ The tokens are assembled into a parse tree according to SQL grammar rules.
 
 ```
 QUERY
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SELECT
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ e.name
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ (implicit all columns not shown)
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ FROM
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ employees AS e
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ WHERE
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Comparison (>)
-        Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Attribute: e.salary
-        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Literal: 50000
+├── SELECT
+│   ├── e.name
+│   └── (implicit all columns not shown)
+├── FROM
+│   └── employees AS e
+└── WHERE
+    └── Comparison (>)
+        ├── Attribute: e.salary
+        └── Literal: 50000
 ```
 
 The parser uses a context-free grammar (CFG) with rules like:
@@ -220,20 +220,20 @@ WHERE e.salary > 50000;
 Parse tree (conceptual):
 ```
 QUERY (type: SELECT)
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SELECT_LIST
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: e.name
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: d.dept_name
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ FROM_CLAUSE
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ TABLE_REFERENCE: employees (alias: e)
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ TABLE_REFERENCE: departments (alias: d)
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ JOIN_CONDITION
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ EQUALS
-Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: e.dept_id
-Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: d.dept_id
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ WHERE_CLAUSE
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ GREATER_THAN
-        Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: e.salary
-        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ LITERAL: 50000
+├── SELECT_LIST
+│   ├── QUALIFIED_COLUMN: e.name
+│   └── QUALIFIED_COLUMN: d.dept_name
+├── FROM_CLAUSE
+│   ├── TABLE_REFERENCE: employees (alias: e)
+│   └── TABLE_REFERENCE: departments (alias: d)
+├── JOIN_CONDITION
+│   └── EQUALS
+│       ├── QUALIFIED_COLUMN: e.dept_id
+│       └── QUALIFIED_COLUMN: d.dept_id
+└── WHERE_CLAUSE
+    └── GREATER_THAN
+        ├── QUALIFIED_COLUMN: e.salary
+        └── LITERAL: 50000
 ```
 
 **Preprocessing (Semantic Analysis):**
@@ -2609,7 +2609,7 @@ The following code simulates a query optimizer that estimates costs for differen
 
 ```typescript
 // ============================================================
-// Query Cost Model Simulator Ã¢â‚¬â€ TypeScript
+// Query Cost Model Simulator — TypeScript
 // ============================================================
 
 interface TableStats {
@@ -2753,7 +2753,7 @@ flowchart LR
     c) The number of indexes
     d) The number of columns selected
 
-14. In query optimization, selectivity of a predicate ÃÆ’<col='value'>(R) is:
+14. In query optimization, selectivity of a predicate σ<col='value'>(R) is:
     a) The number of rows in R
     b) The fraction of rows that satisfy the predicate
     c) The size of the index

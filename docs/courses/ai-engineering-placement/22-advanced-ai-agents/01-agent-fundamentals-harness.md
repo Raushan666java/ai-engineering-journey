@@ -736,33 +736,33 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 
 #### Google Style
 
-1. **Explain the core idea of Agent Fundamentals & Harness Engineering in under 60 seconds, then give a real-world analogy.** â€” Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
+1. **Explain the core idea of Agent Fundamentals & Harness Engineering in under 60 seconds, then give a real-world analogy.** — Structure: definition, how it works in one sentence, why it matters, analogy. Follow-up: what would break if you removed this from a production system?
 
-2. **Design a minimal, well-typed function that demonstrates Agent Fundamentals & Harness Engineering.** â€” Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
+2. **Design a minimal, well-typed function that demonstrates Agent Fundamentals & Harness Engineering.** — Interviewer checks: signature with type hints, edge cases, complexity, and a clean docstring. Follow-up: how does your design behave with empty or malformed input?
 
-3. **What are the common pitfalls when engineers first learn ** â€” List 3-4, then explain how you would prevent each in a code review.
+3. **What are the common pitfalls when engineers first learn ** — List 3-4, then explain how you would prevent each in a code review.
 
 #### Amazon Style
 
-4. **Describe a production bug caused by misunderstanding Agent Fundamentals & Harness Engineering. How did you diagnose and fix it?** â€” STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
+4. **Describe a production bug caused by misunderstanding Agent Fundamentals & Harness Engineering. How did you diagnose and fix it?** — STAR format: situation, task, action, result. Mention logs, reproduction, root-cause analysis, and the regression test you added.
 
-5. **How would you scale a system that relies on Agent Fundamentals & Harness Engineering from 10 users to 10 million?** â€” Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
+5. **How would you scale a system that relies on Agent Fundamentals & Harness Engineering from 10 users to 10 million?** — Discuss bottlenecks, caching, monitoring, and when to redesign. Follow-up: what metrics would you track?
 
 #### Microsoft Style
 
-6. **Compare Agent Fundamentals & Harness Engineering with the closest alternative approach. When would you choose each?** â€” Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
+6. **Compare Agent Fundamentals & Harness Engineering with the closest alternative approach. When would you choose each?** — Make a decision matrix: performance, maintainability, ecosystem, learning curve. Follow-up: what would change your decision?
 
-7. **Walk through how you would test a component that depends on Agent Fundamentals & Harness Engineering.** â€” Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
+7. **Walk through how you would test a component that depends on Agent Fundamentals & Harness Engineering.** — Unit, integration, property-based tests; mocking boundaries; golden files for outputs.
 
 #### NVIDIA Style
 
-8. **How does Agent Fundamentals & Harness Engineering behave differently at scale â€” memory, throughput, or precision-wise?** â€” Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
+8. **How does Agent Fundamentals & Harness Engineering behave differently at scale — memory, throughput, or precision-wise?** — Connect to data pipelines and model training if applicable. Follow-up: what happens to latency as input grows?
 
-9. **How would you make an implementation of Agent Fundamentals & Harness Engineering run faster on GPU hardware?** â€” Batch operations, vectorization, avoiding Python loops, reducing data movement.
+9. **How would you make an implementation of Agent Fundamentals & Harness Engineering run faster on GPU hardware?** — Batch operations, vectorization, avoiding Python loops, reducing data movement.
 
 #### AI Startup Style
 
-10. **Write the smallest possible implementation of Agent Fundamentals & Harness Engineering that is production-quality.** â€” Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
+10. **Write the smallest possible implementation of Agent Fundamentals & Harness Engineering that is production-quality.** — Include error handling, type hints, and a one-line docstring. Follow-up: what would you refactor first when it grows?
 
 ### Resume Tips
 
@@ -781,37 +781,37 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 
 ## True/False
 
-1. **True or False:** Agent Fundamentals & Harness Engineering builds directly on the fundamentals covered in the earlier chapters of this module. â€” **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
-2. **True or False:** You should write at least one code example for Agent Fundamentals & Harness Engineering before moving to the next chapter. â€” **True.** Active recall with hands-on code beats passive reading for retention.
-3. **True or False:** The complexity analysis for Agent Fundamentals & Harness Engineering is the same regardless of input size. â€” **False.** Complexity grows with input size; always state best, average, and worst case.
-4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Agent Fundamentals & Harness Engineering in production. â€” **True.** Most production bugs come from unhandled edge cases.
-5. **True or False:** You should memorize the Agent Fundamentals & Harness Engineering chapter content once and never review it again. â€” **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
+1. **True or False:** Agent Fundamentals & Harness Engineering builds directly on the fundamentals covered in the earlier chapters of this module. — **True.** Every advanced topic in this module assumes the core concepts from the previous chapters.
+2. **True or False:** You should write at least one code example for Agent Fundamentals & Harness Engineering before moving to the next chapter. — **True.** Active recall with hands-on code beats passive reading for retention.
+3. **True or False:** The complexity analysis for Agent Fundamentals & Harness Engineering is the same regardless of input size. — **False.** Complexity grows with input size; always state best, average, and worst case.
+4. **True or False:** Edge cases (empty input, invalid input, boundary values) matter for Agent Fundamentals & Harness Engineering in production. — **True.** Most production bugs come from unhandled edge cases.
+5. **True or False:** You should memorize the Agent Fundamentals & Harness Engineering chapter content once and never review it again. — **False.** Spaced repetition (24h, 3 days, 1 week) dramatically improves long-term recall.
 
 ## Fill in the Blank
 
-1. The chapter that covers Agent Fundamentals & Harness Engineering is Chapter ___ of this module. â€” Answer: check the module's table of contents.
-2. The time complexity of the standard approach to Agent Fundamentals & Harness Engineering is ___. â€” Answer: review the theory section and state big-O notation.
-3. The main edge case to handle when implementing Agent Fundamentals & Harness Engineering is ___. â€” Answer: empty or invalid input handling, as discussed in the chapter.
-4. The tools commonly used to debug Agent Fundamentals & Harness Engineering issues are ___ and ___. â€” Answer: refer to the Debugging Guide section of this chapter.
-5. The related topic that connects to Agent Fundamentals & Harness Engineering in the next chapter is ___. â€” Answer: see the Next Topic section.
+1. The chapter that covers Agent Fundamentals & Harness Engineering is Chapter ___ of this module. — Answer: check the module's table of contents.
+2. The time complexity of the standard approach to Agent Fundamentals & Harness Engineering is ___. — Answer: review the theory section and state big-O notation.
+3. The main edge case to handle when implementing Agent Fundamentals & Harness Engineering is ___. — Answer: empty or invalid input handling, as discussed in the chapter.
+4. The tools commonly used to debug Agent Fundamentals & Harness Engineering issues are ___ and ___. — Answer: refer to the Debugging Guide section of this chapter.
+5. The related topic that connects to Agent Fundamentals & Harness Engineering in the next chapter is ___. — Answer: see the Next Topic section.
 
 ## Scenario Questions
 
-1. **Scenario:** A teammate ships a change involving Agent Fundamentals & Harness Engineering that breaks production at 3 AM. â€” Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
+1. **Scenario:** A teammate ships a change involving Agent Fundamentals & Harness Engineering that breaks production at 3 AM. — Diagnosis: check the recent diff, reproduce locally with the failing input, check logs. Fix: revert, add a regression test, and review the root cause. Prevention: CI tests on edge cases and code review checklist.
 
-2. **Scenario:** Your implementation of Agent Fundamentals & Harness Engineering is correct but too slow for the required latency. â€” Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
+2. **Scenario:** Your implementation of Agent Fundamentals & Harness Engineering is correct but too slow for the required latency. — Measure first with a profiler. Common fixes: reduce redundant work, use built-in optimized functions, batch operations, or add caching. Only then consider algorithmic changes.
 
-3. **Scenario:** A new hire asks you to explain Agent Fundamentals & Harness Engineering in five minutes before a customer demo. â€” Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
+3. **Scenario:** A new hire asks you to explain Agent Fundamentals & Harness Engineering in five minutes before a customer demo. — Use the 3-part answer: what it is (one sentence), how it works (one example), why it matters (one business impact). Then offer to go deeper after the demo.
 
-4. **Scenario:** Your team's codebase has three different patterns for Agent Fundamentals & Harness Engineering and you must standardize. â€” Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
+4. **Scenario:** Your team's codebase has three different patterns for Agent Fundamentals & Harness Engineering and you must standardize. — Write a short ADR (architecture decision record), pick the pattern with best maintainability, migrate incrementally, and add a linter rule to enforce it.
 
 ## Output Questions
 
-1. **What is the output of the simplest correct implementation of Agent Fundamentals & Harness Engineering on an empty input?** â€” Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
-2. **What is the output when the input is at the boundary value?** â€” Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
-3. **What does the implementation return when given invalid input types?** â€” With type hints and validation, it raises a clear error; without, it may fail silently.
-4. **What is the output for the sample input given in the chapter's Examples section?** â€” Re-run the chapter's example code and compare against the documented output.
-5. **What is the time complexity output when you profile the implementation at 10x input size?** â€” Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
+1. **What is the output of the simplest correct implementation of Agent Fundamentals & Harness Engineering on an empty input?** — Trace through the code: it should return the documented default (None, 0, empty collection) without raising.
+2. **What is the output when the input is at the boundary value?** — Check off-by-one errors and inclusive/exclusive bounds in the chapter's examples.
+3. **What does the implementation return when given invalid input types?** — With type hints and validation, it raises a clear error; without, it may fail silently.
+4. **What is the output for the sample input given in the chapter's Examples section?** — Re-run the chapter's example code and compare against the documented output.
+5. **What is the time complexity output when you profile the implementation at 10x input size?** — Expect the curve matching the chapter's complexity analysis (linear, quadratic, log-linear).
 
 ## Difficulty Level
 
@@ -823,7 +823,7 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 
 ## Tips & Tricks
 
-- Always write a one-line example of Agent Fundamentals & Harness Engineering from memory before opening the chapter â€” active recall first.
+- Always write a one-line example of Agent Fundamentals & Harness Engineering from memory before opening the chapter — active recall first.
 - Use the chapter's Revision Notes as a checklist: you have mastered Agent Fundamentals & Harness Engineering when you can explain each bullet.
 - Pair the chapter quiz with the Flashcards: wrong answers become your next study session's focus.
 - For interviews, practice explaining Agent Fundamentals & Harness Engineering twice: once with a technical audience, once with a non-technical audience.
@@ -832,10 +832,10 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 ## Memory Tricks
 
 - **Acronym**: build a mnemonic from the 5 key concepts of Agent Fundamentals & Harness Engineering listed in the Chapter at a Glance table.
-- **Story**: link Agent Fundamentals & Harness Engineering to a familiar story â€” the analogy in the Visual Analogy section is designed to stick.
+- **Story**: link Agent Fundamentals & Harness Engineering to a familiar story — the analogy in the Visual Analogy section is designed to stick.
 - **Number anchor**: remember the complexity of Agent Fundamentals & Harness Engineering by connecting it to a known algorithm of the same class.
 - **Color code**: highlight the Theory, Examples, and Common Mistakes sections in different colors when reviewing.
-- **Teach-back**: explain Agent Fundamentals & Harness Engineering to an imaginary junior engineer for 2 minutes â€” gaps in your explanation are gaps in memory.
+- **Teach-back**: explain Agent Fundamentals & Harness Engineering to an imaginary junior engineer for 2 minutes — gaps in your explanation are gaps in memory.
 
 ## Further Reading
 
@@ -847,23 +847,23 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 
 ## Related Topics
 
-- The previous chapter in this module (see table of contents) â€” foundational for Agent Fundamentals & Harness Engineering
-- The next chapter (see Next Topic below) â€” builds on Agent Fundamentals & Harness Engineering
-- The system design chapters in Module 07 â€” how Agent Fundamentals & Harness Engineering fits into production architectures
-- The interview preparation module â€” how Agent Fundamentals & Harness Engineering is asked in screening rounds
-- The capstone project â€” where Agent Fundamentals & Harness Engineering is applied end-to-end
+- The previous chapter in this module (see table of contents) — foundational for Agent Fundamentals & Harness Engineering
+- The next chapter (see Next Topic below) — builds on Agent Fundamentals & Harness Engineering
+- The system design chapters in Module 07 — how Agent Fundamentals & Harness Engineering fits into production architectures
+- The interview preparation module — how Agent Fundamentals & Harness Engineering is asked in screening rounds
+- The capstone project — where Agent Fundamentals & Harness Engineering is applied end-to-end
 
 ## FAQs
 
-1. **Do I need to memorize all of Agent Fundamentals & Harness Engineering, or understand the big picture?** â€” Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
-2. **What if I get stuck on an exercise?** â€” Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
-3. **How much time should I spend on ** â€” Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
-4. **Is Agent Fundamentals & Harness Engineering asked in interviews?** â€” Yes â€” the Interview Q&A and Placement Section list the exact question styles used by top companies.
-5. **What's the fastest way to master ** â€” Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
+1. **Do I need to memorize all of Agent Fundamentals & Harness Engineering, or understand the big picture?** — Understand the big picture first, then memorize the key facts via flashcards and spaced repetition. Interviewers reward depth over breadth.
+2. **What if I get stuck on an exercise?** — Re-read the theory section, run the example code, then attempt again. If still stuck after 20 minutes, move on and return the next day.
+3. **How much time should I spend on ** — Follow the Study Plan below: 1-2 weeks at 30-60 minutes daily is typical for placement preparation.
+4. **Is Agent Fundamentals & Harness Engineering asked in interviews?** — Yes — the Interview Q&A and Placement Section list the exact question styles used by top companies.
+5. **What's the fastest way to master ** — Explain it out loud, write code without looking, and review the flashcards within 24 hours and again after 3 days.
 
 ## Important Notes
 
-- Agent Fundamentals & Harness Engineering is a core requirement for the rest of this module â€” do not skip the examples.
+- Agent Fundamentals & Harness Engineering is a core requirement for the rest of this module — do not skip the examples.
 - Always analyze complexity (time and space) when working with Agent Fundamentals & Harness Engineering.
 - Production correctness means handling edge cases, not just the happy path.
 - Interview answers should start with the definition, then the example, then the trade-offs.
@@ -871,9 +871,9 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 
 ## Historical Context
 
-- Agent Fundamentals & Harness Engineering emerged as a standard practice because early systems failed without it â€” understanding why helps you explain it in interviews.
+- Agent Fundamentals & Harness Engineering emerged as a standard practice because early systems failed without it — understanding why helps you explain it in interviews.
 - The tools used for Agent Fundamentals & Harness Engineering today evolved from simpler versions; the chapter covers the modern, recommended approach.
-- Interviewers value knowing one historical fact about Agent Fundamentals & Harness Engineering â€” it shows genuine interest, not just cramming.
+- Interviewers value knowing one historical fact about Agent Fundamentals & Harness Engineering — it shows genuine interest, not just cramming.
 - The library/tooling ecosystem around Agent Fundamentals & Harness Engineering changes quickly; focus on fundamentals that remain stable.
 
 ## Security Considerations
@@ -887,21 +887,21 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 ## ML Intuition
 
 - Agent Fundamentals & Harness Engineering appears in ML pipelines at the data-processing layer: feature preparation, batching, and validation.
-- Understanding Agent Fundamentals & Harness Engineering helps you debug why a model misbehaves â€” most ML bugs are data bugs, not model bugs.
+- Understanding Agent Fundamentals & Harness Engineering helps you debug why a model misbehaves — most ML bugs are data bugs, not model bugs.
 - In production ML, the Agent Fundamentals & Harness Engineering concepts from this chapter map directly to NumPy/PyTorch operations on tensors.
 - When optimizing ML systems, Agent Fundamentals & Harness Engineering skills let you profile and fix the data path, not just the training loop.
-- Interview follow-up: how would you apply Agent Fundamentals & Harness Engineering to a dataset of 10 million records? â€” Batching and vectorization.
+- Interview follow-up: how would you apply Agent Fundamentals & Harness Engineering to a dataset of 10 million records? — Batching and vectorization.
 
 ## Analogies
 
 - **Agent Fundamentals & Harness Engineering is like a recipe**: the theory is the ingredients, the examples are the cooking steps, and the exercises are your own kitchen practice.
 - **Complexity is like a delivery route**: a linear route visits each stop once; a nested route revisits stops, and you feel it at scale.
-- **Edge cases are like weather**: the happy path is a sunny day; production is the storm â€” build for the storm.
+- **Edge cases are like weather**: the happy path is a sunny day; production is the storm — build for the storm.
 - **The chapter roadmap is a journey map**: each section is a checkpoint; skipping one means getting lost later in the module.
 
 ## Capstone Project Link
 
-- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) â€” this chapter contributes the Agent Fundamentals & Harness Engineering skills used in the module's capstone project. Complete the exercises here before starting the capstone.
+- [Module Capstone: End-to-End Project](https://github.com/Raushan666java/ai-engineering-journey) — this chapter contributes the Agent Fundamentals & Harness Engineering skills used in the module's capstone project. Complete the exercises here before starting the capstone.
 
 ## Flashcards
 
@@ -975,24 +975,24 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 
 - Start with `print()` or a debugger to inspect intermediate values in Agent Fundamentals & Harness Engineering code.
 - Reproduce the failure with the smallest possible input before changing code.
-- Check the common failure modes listed in Common Mistakes â€” most bugs are listed there.
+- Check the common failure modes listed in Common Mistakes — most bugs are listed there.
 - For performance problems, profile before optimizing: measure, then fix.
 - When stuck, re-read the chapter's Examples and compare line by line with your code.
 - Use `pdb` or your IDE's debugger to step through the Agent Fundamentals & Harness Engineering example code.
 
 ## Mock Interview Section
 
-**Round 1 â€” Screening (15 min)**
+**Round 1 — Screening (15 min)**
 - Explain Agent Fundamentals & Harness Engineering in 60 seconds.
 - Write a minimal working example of Agent Fundamentals & Harness Engineering.
 - What is the complexity of your example?
 
-**Round 2 â€” Coding (45 min)**
+**Round 2 — Coding (45 min)**
 - Solve the Medium exercise from this chapter under time pressure.
 - State your assumptions, then implement with type hints.
 - Test with edge cases: empty input, boundary values, invalid input.
 
-**Round 3 â€” Behavioral + System (30 min)**
+**Round 3 — Behavioral + System (30 min)**
 - Tell me about a time you debugged a Agent Fundamentals & Harness Engineering problem in a project.
 - How would you design a system where Agent Fundamentals & Harness Engineering is used at scale?
 - What metrics would you monitor?
@@ -1035,7 +1035,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Real-World Examples
 
-- **Startup**: a small team uses Agent Fundamentals & Harness Engineering daily in their data pipeline â€” the chapter's examples mirror their code.
+- **Startup**: a small team uses Agent Fundamentals & Harness Engineering daily in their data pipeline — the chapter's examples mirror their code.
 - **E-commerce**: Agent Fundamentals & Harness Engineering patterns appear in order processing, inventory checks, and recommendation feeds.
 - **Fintech**: Agent Fundamentals & Harness Engineering principles apply to transaction validation and fraud detection flows.
 - **ML platform**: Agent Fundamentals & Harness Engineering shows up in feature engineering and model-serving infrastructure.
@@ -1047,7 +1047,7 @@ def demonstrate_topic(input_data: list[Any]) -> Optional[float]:
 
 ## Limitations
 
-- Agent Fundamentals & Harness Engineering, like any technique, is not a silver bullet â€” it has specific cases where it fits best (covered in the theory).
+- Agent Fundamentals & Harness Engineering, like any technique, is not a silver bullet — it has specific cases where it fits best (covered in the theory).
 - The examples in this chapter are simplified for learning; production systems add validation, monitoring, and error handling.
-- Performance of Agent Fundamentals & Harness Engineering depends on input size and distribution â€” always benchmark for your own data.
+- Performance of Agent Fundamentals & Harness Engineering depends on input size and distribution — always benchmark for your own data.
 - This chapter covers fundamentals; specialized edge cases are explored in later chapters and the capstone.

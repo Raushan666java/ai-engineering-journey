@@ -1,4 +1,4 @@
-﻿# Security Testing & Performance Testing
+# Security Testing & Performance Testing
 > **Previous:** [Testcontainers](32-testcontainers.md) | **Next:** [Async and Events](34-async-events.md)
 
 ## Learning Objectives
@@ -30,18 +30,18 @@ By the end of this chapter, you will be able to:
 4.  Test OAuth2 client and resource server with `@WithMockOAuth2Client` and mocked JWT decoders
 5.  Build JMeter test plans with thread groups, samplers, listeners, and assertions
 6.  Write Gatling simulations with scenarios, checks, feeds, and injection profiles
-7.  Profile Spring Boot endpoints under load ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â connection pools, query performance, latency percentiles
+7.  Profile Spring Boot endpoints under load — connection pools, query performance, latency percentiles
 8.  Execute stress tests (ramp-up, spike, soak) with proper thresholds and resource monitoring
-9.  Apply chaos engineering with Chaos Monkey for Spring Boot ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â latency, exceptions, service shutdown
+9.  Apply chaos engineering with Chaos Monkey for Spring Boot — latency, exceptions, service shutdown
 
 ---
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Security Testing â†’ verify auth and authorization controls | Use `@WithMockUser`, `@WithAnonymousUser`, and request post-processors |
-| Performance Testing â†’ measure throughput, latency, and resource usage | Java Microbenchmark Harness (JMH) for micro-benchmarks |
-| Load Testing â†’ simulate concurrent users with Gatling | Scenario-based DSL for HTTP, WebSocket, and JMS load tests |
+| Security Testing → verify auth and authorization controls | Use `@WithMockUser`, `@WithAnonymousUser`, and request post-processors |
+| Performance Testing → measure throughput, latency, and resource usage | Java Microbenchmark Harness (JMH) for micro-benchmarks |
+| Load Testing → simulate concurrent users with Gatling | Scenario-based DSL for HTTP, WebSocket, and JMS load tests |
 
 ---
 ## Chapter Roadmap
@@ -93,7 +93,7 @@ flowchart TD
 ## Chapter Quiz
 
 1. Which annotation creates a test user with specific roles without contacting the auth provider? **Answer:** `@WithMockUser`
-2. What is JMH? **Answer:** Java Microbenchmark Harness â†’ for accurate method-level performance measurement
+2. What is JMH? **Answer:** Java Microbenchmark Harness → for accurate method-level performance measurement
 3. What tool uses a Scala-based DSL for HTTP load testing? **Answer:** Gatling
 
 ---
@@ -147,7 +147,7 @@ class SecurityAnnotationTest {
             .andExpect(status().isOk());
     }
 
-    @Test  // No @WithMockUser ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â unauthenticated
+    @Test  // No @WithMockUser — unauthenticated
     void testUnauthenticatedAccess() throws Exception {
         mockMvc.perform(get("/api/users/me"))
             .andExpect(status().isUnauthorized());
@@ -709,7 +709,7 @@ class FullJwtTest {
     @Autowired
     private MockMvc mockMvc;
 
-    // When using @WithMockJwt, we don't need JwtDecoder ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the annotation
+    // When using @WithMockJwt, we don't need JwtDecoder — the annotation
     // populates the SecurityContext directly. But if the controller
     // or a filter calls JwtDecoder, we still need the mock.
 
@@ -774,23 +774,23 @@ A JMeter test plan follows this hierarchy:
 
 ```
 Test Plan
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ User Defined Variables
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HTTP Request Defaults
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Thread Group (simulates users)
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HTTP Request Sampler (GET /api/orders)
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HTTP Header Manager
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Assertions (Response Assertion)
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Listeners (Summary Report, Aggregate Report)
-ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Thread Group (admin users)
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HTTP Request Sampler (POST /api/orders)
-ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ View Results Tree
+├── User Defined Variables
+├── HTTP Request Defaults
+├── Thread Group (simulates users)
+│   ├── HTTP Request Sampler (GET /api/orders)
+│   ├── HTTP Header Manager
+│   ├── Assertions (Response Assertion)
+│   └── Listeners (Summary Report, Aggregate Report)
+├── Thread Group (admin users)
+│   └── HTTP Request Sampler (POST /api/orders)
+└── View Results Tree
 ```
 
 ### 3.2 Creating a JMeter Test Programmatically
 
 
 ```java
-// JMeterTestPlan.java ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â creates a JMX test plan programmatically
+// JMeterTestPlan.java — creates a JMX test plan programmatically
 import org.apache.jmeter.config.Arguments;
 import org.apache.jmeter.config.gui.ArgumentsPanel;
 import org.apache.jmeter.control.LoopController;
@@ -965,7 +965,7 @@ public class JmeterListeners {
 
 
 ```bash
-# Non-GUI mode (headless ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â for CI/CD)
+# Non-GUI mode (headless — for CI/CD)
 jmeter -n -t order-api-load-test.jmx -l results/raw-results.jtl -e -o results/report/
 
 # Parameters
@@ -986,7 +986,7 @@ jmeter -n -t order-api-load-test.jmx \
 
 
 ```java
-// JSON Assertion ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â validates JSON response body
+// JSON Assertion — validates JSON response body
 import org.apache.jmeter.assertions.JSONPathAssertion;
 
 public class JmeterAssertions {
@@ -1146,7 +1146,7 @@ class AdvancedOrderSimulation extends Simulation {
     .disableFollowRedirect
     .disableCaching
 
-  // CSV feeder ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â read test data from file
+  // CSV feeder — read test data from file
   val productFeeder = csv("data/products.csv").circular
   val userFeeder = csv("data/users.csv").random
   val tokenFeeder = Iterator.continually(Map(
@@ -1224,7 +1224,7 @@ object generateToken {
 
 
 ```xml
-<!-- pom.xml ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Gatling Maven plugin -->
+<!-- pom.xml — Gatling Maven plugin -->
 <plugin>
     <groupId>io.gatling</groupId>
     <artifactId>gatling-maven-plugin</artifactId>
@@ -1249,7 +1249,7 @@ mvn gatling:test \
 # Output: target/gatling/orderapisimulation-{timestamp}/index.html
 ```
 
-### 4.4 JMeter vs Gatling ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Comparison
+### 4.4 JMeter vs Gatling — Comparison
 
 
 | Feature | JMeter | Gatling |
@@ -1448,7 +1448,7 @@ public class LatencyMetricsFilter extends OncePerRequestFilter {
 ```
 
 ```yaml
-# application.yml ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Micrometer percentile config
+# application.yml — Micrometer percentile config
 management:
   metrics:
     distribution:
@@ -1464,7 +1464,7 @@ management:
 
 
 ```properties
-# application.properties ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â expose all metrics during load test
+# application.properties — expose all metrics during load test
 management.endpoints.web.exposure.include=health,metrics,prometheus,threaddump,heapdump
 management.endpoint.metrics.enabled=true
 management.metrics.export.prometheus.enabled=true
@@ -1493,7 +1493,7 @@ curl localhost:8080/actuator/metrics/jvm.memory.used
 ```
 
 > [!NOTE]
-> Always run load tests against a staging environment that mirrors production â†’ results from a developer laptop are not meaningful.
+> Always run load tests against a staging environment that mirrors production → results from a developer laptop are not meaningful.
 
 ---
 
@@ -1530,7 +1530,7 @@ public class RampUpSimulation extends Simulation {
         setUp(
             rampUp.inject(
                 rampUsersPerSec(1).to(500)
-                    .during(Duration.ofMinutes(10))  // 1 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 500 req/sec over 10 min
+                    .during(Duration.ofMinutes(10))  // 1 → 500 req/sec over 10 min
             )
         ).protocols(httpProtocol)
          .assertions(
@@ -1544,7 +1544,7 @@ public class RampUpSimulation extends Simulation {
 ### 6.2 Spike Test
 
 
-Sudden burst of traffic ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â tests auto-scaling and circuit breakers.
+Sudden burst of traffic — tests auto-scaling and circuit breakers.
 
 ```java
 // Gatling spike simulation
@@ -1588,7 +1588,7 @@ public class SoakSimulation extends Simulation {
         .baseUrl("http://localhost:8080")
         .acceptHeader("application/json");
 
-    ScenarioBuilder steadyLoad = scenario("Soak Test ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 8 hours sustained")
+    ScenarioBuilder steadyLoad = scenario("Soak Test — 8 hours sustained")
         .exec(http("GET /api/health")
             .get("/api/health")
             .check(status().is(200)))
@@ -1741,7 +1741,7 @@ Chaos Monkey is a Spring Boot actuator module that injects faults (latency, exce
 ```
 
 ```properties
-# application-chaos.properties ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enable Chaos Monkey
+# application-chaos.properties — enable Chaos Monkey
 # Enable Chaos Monkey
 chaos.monkey.enabled=true
 
@@ -1766,7 +1766,7 @@ chaos.monkey.watcher.component=true
 
 
 ```java
-// ChaosExperiment.java ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â programmatic chaos experiment
+// ChaosExperiment.java — programmatic chaos experiment
 import org.springframework.web.client.RestTemplate;
 
 public class ChaosExperiment {
@@ -1822,7 +1822,7 @@ public class ChaosExperiment {
 
         return new ExperimentResult("Latency Injection",
             duringAvg > beforeAvg + 2000, duringAvg, 0,
-            "Baseline: " + beforeAvg + "ms ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ During: " + duringAvg + "ms ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Recovery: " + afterAvg + "ms");
+            "Baseline: " + beforeAvg + "ms → During: " + duringAvg + "ms → Recovery: " + afterAvg + "ms");
     }
 
     // Experiment 2: Inject exceptions
@@ -1859,7 +1859,7 @@ public class ChaosExperiment {
 
         return new ExperimentResult("Exception Injection",
             duringErrors > beforeErrors, 0, duringErrors,
-            "Error rate: " + (beforeErrors * 100) + "% ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ " + (duringErrors * 100) + "%");
+            "Error rate: " + (beforeErrors * 100) + "% → " + (duringErrors * 100) + "%");
     }
 
     // Experiment 3: Kill application (test graceful shutdown + restart)
@@ -1879,7 +1879,7 @@ public class ChaosExperiment {
         try {
             restTemplate.getForEntity(baseUrl + "/actuator/health", String.class);
             return new ExperimentResult("Kill Application", false, 0, 0,
-                "Application did not die ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â kill failed");
+                "Application did not die — kill failed");
         } catch (Exception e) {
             return new ExperimentResult("Kill Application", true, 0, 1.0,
                 "Application died as expected");
@@ -1896,7 +1896,7 @@ public class ChaosExperiment {
                 total += System.currentTimeMillis() - start;
                 success++;
             } catch (Exception e) {
-                // Ignore ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â we're measuring latency, error handling is separate
+                // Ignore — we're measuring latency, error handling is separate
             }
         }
         return success > 0 ? total / success : -1;
@@ -1942,7 +1942,7 @@ public class ChaosExperiment {
 
 
 ```java
-// ChaosMonkeyConfig.java ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â programmatic configuration
+// ChaosMonkeyConfig.java — programmatic configuration
 import de.codecentric.spring.boot.chaos.monkey.configuration.AssaultProperties;
 import de.codecentric.spring.boot.chaos.monkey.configuration.ChaosMonkeySettings;
 import de.codecentric.spring.boot.chaos.monkey.configuration.WatcherProperties;
@@ -1985,11 +1985,11 @@ public class ChaosMonkeyConfig {
 }
 ```
 
-### 7.4 Chaos Experiment Framework ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Automated Resilience Tests
+### 7.4 Chaos Experiment Framework — Automated Resilience Tests
 
 
 ```java
-// AbstractChaosTest.java ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â base class for resilience tests
+// AbstractChaosTest.java — base class for resilience tests
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -2262,7 +2262,7 @@ class StressAndChaosTest {
             restTemplate.getForEntity("/api/health", String.class);
         }
 
-        // Step 2: Enable Chaos Monkey ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â latency injection
+        // Step 2: Enable Chaos Monkey — latency injection
         System.out.println("=== Phase 2: Enable latency chaos ===");
         restTemplate.postForEntity(
             "http://localhost:8080/actuator/chaosmonkey/assaults",
@@ -2311,7 +2311,7 @@ class StressAndChaosTest {
             %n""",
             futures.size(), successCount, failureCount, successRate * 100);
 
-        // Step 5: Clean up ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â disable chaos monkey
+        // Step 5: Clean up — disable chaos monkey
         restTemplate.postForEntity(
             "http://localhost:8080/actuator/chaosmonkey/assaults",
             Map.of("latencyActive", false, "exceptionsActive", false),
@@ -2333,7 +2333,7 @@ class StressAndChaosTest {
 ## Summary
 
 - **Security testing annotations** (`@WithMockUser`, `@WithAnonymousUser`, `@WithUserDetails`) simulate authenticated requests without actual authentication. They populate the `SecurityContext` before each test method.
-- **Custom security annotations** like `@WithMockJwt` use `@WithSecurityContext` with a `SecurityContextFactory` to create arbitrary `Authentication` objects ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â essential for JWT and OAuth2 resource server tests.
+- **Custom security annotations** like `@WithMockJwt` use `@WithSecurityContext` with a `SecurityContextFactory` to create arbitrary `Authentication` objects — essential for JWT and OAuth2 resource server tests.
 - **Method security testing** verifies `@PreAuthorize`, `@PostAuthorize`, and expression-based access control. Test each role and permission combination.
 - **CORS testing** validates `Access-Control-Allow-Origin` headers from allowed and blocked origins.
 - **CSRF test configuration** uses `SecurityMockMvcRequestPostProcessors.csrf()` to include tokens, or disables CSRF for non-state-changing endpoints.
@@ -2341,7 +2341,7 @@ class StressAndChaosTest {
 - **JMeter** provides GUI-based test plan creation with thread groups, samplers, assertions, and listeners. Best for teams that prefer visual test design.
 - **Gatling** offers code-first simulations in Scala with rich HTML reports, feeders, checks, and sophisticated injection profiles. Best for developer-driven CI pipelines.
 - **Load testing Spring Boot** involves profiling endpoints under load, monitoring connection pools (HikariCP), measuring query performance with Micrometer `@Timed`, and tracking latency percentiles.
-- **Stress testing** includes ramp-up (gradual load increase), spike (sudden traffic bursts), and soak (sustained load over hours) patterns ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each finding different failure modes.
+- **Stress testing** includes ramp-up (gradual load increase), spike (sudden traffic bursts), and soak (sustained load over hours) patterns — each finding different failure modes.
 - **Resource monitoring** during load tests tracks heap memory, thread counts, CPU load, and database connection pool utilization via Actuator and Micrometer metrics.
 - **Chaos testing** with Chaos Monkey for Spring Boot injects latency, exceptions, and application shutdown in controlled experiments. Combined with Resilience4j circuit breakers and fallbacks, it validates system resilience under real-world failure conditions.
 

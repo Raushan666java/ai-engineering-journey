@@ -1,6 +1,6 @@
-﻿# Chapter 11: MLOps for AI Engineering
+# Chapter 11: MLOps for AI Engineering
 
-> **Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model versioning, drift monitoring, testing strategies, and incident response playbooks â€” all with TypeScript.**
+> **Adapt MLOps practices for the unique challenges of AI engineering. Master experiment tracking, prompt management, CI/CD pipelines, data and model versioning, drift monitoring, testing strategies, and incident response playbooks — all with TypeScript.**
 
 ## Learning Objectives
 
@@ -50,7 +50,7 @@ AI engineering introduces fundamentally different operational challenges compare
 | 7. Testing | Unit tests for data transforms, model tests | + Prompt unit tests, eval regression tests, safety tests |
 | 8. Rollback | Revert to previous model version | Revert prompt, model, or combo independently |
 | 9. Monitoring | Prediction latency, model accuracy | + Token usage, cost, hallucination rate, cache hit rate |
-| 10. CI/CD | Train â†’ Validate â†’ Deploy | Prompt test â†’ Eval gate â†’ Canary â†’ Gradual rollout |
+| 10. CI/CD | Train → Validate → Deploy | Prompt test → Eval gate → Canary → Gradual rollout |
 
 ---
 
@@ -1708,15 +1708,15 @@ class DriftMonitor {
 
 ## Summary
 
-MLOps for AI engineering diverges from traditional MLOps in ten critical ways â€” prompts replace trained models as the primary artifact, change frequency shifts from weekly to daily, evaluation requires LLM-as-judge alongside traditional metrics, and drift monitoring must account for prompt drift and embedding drift. Experiment tracking must capture the full combinatorial space of prompts, models, parameters, retrieval strategies, and evaluation results, with automated comparison to identify winning configurations. Prompt management demands a rigorous lifecycle from draft through review, staging, canary, production, and archival â€” with version control, rollback capability, and automated eval gates at every promotion stage. CI/CD pipelines for AI must incorporate evaluation gates that block deployment if accuracy, safety, or cost thresholds are breached, and gradual rollout strategies (canary, blue-green, percentage-based) that auto-rollback on degradation. Data and model versioning requires hash-based content addressing and DVC-like pipeline locking to ensure reproducibility. Drift monitoring must operate across five dimensions â€” data, concept, prompt, model, and embedding â€” each with specific detection methods and response protocols. Testing spans four layers: unit tests for prompt rendering, integration tests for pipeline correctness, eval tests for output quality, and safety tests for harm prevention. Incident response playbooks must be pre-defined for quality degradation, cost spikes, safety breaches, model failures, and data issues, each with clear detection rules, immediate actions, investigation steps, and resolution procedures.
+MLOps for AI engineering diverges from traditional MLOps in ten critical ways — prompts replace trained models as the primary artifact, change frequency shifts from weekly to daily, evaluation requires LLM-as-judge alongside traditional metrics, and drift monitoring must account for prompt drift and embedding drift. Experiment tracking must capture the full combinatorial space of prompts, models, parameters, retrieval strategies, and evaluation results, with automated comparison to identify winning configurations. Prompt management demands a rigorous lifecycle from draft through review, staging, canary, production, and archival — with version control, rollback capability, and automated eval gates at every promotion stage. CI/CD pipelines for AI must incorporate evaluation gates that block deployment if accuracy, safety, or cost thresholds are breached, and gradual rollout strategies (canary, blue-green, percentage-based) that auto-rollback on degradation. Data and model versioning requires hash-based content addressing and DVC-like pipeline locking to ensure reproducibility. Drift monitoring must operate across five dimensions — data, concept, prompt, model, and embedding — each with specific detection methods and response protocols. Testing spans four layers: unit tests for prompt rendering, integration tests for pipeline correctness, eval tests for output quality, and safety tests for harm prevention. Incident response playbooks must be pre-defined for quality degradation, cost spikes, safety breaches, model failures, and data issues, each with clear detection rules, immediate actions, investigation steps, and resolution procedures.
 
 ## Practical Takeaways
 
-1. **Version everything** â€” prompts, model configs, eval datasets, and embedding indices all need hash-based versioning with full lineage tracking for reproducibility
-2. **Automate eval gates in CI/CD** â€” block deployments that degrade accuracy (>5% drop), safety (>2% drop), or cost (>20% increase). This prevents bad changes from reaching users
-3. **Monitor five drift dimensions** â€” track data drift (PSI), concept drift (error rate), prompt drift (score trends), model drift (output distribution), and embedding drift (cosine similarity). Each requires different detection and response
-4. **Implement graduated rollout by default** â€” use canary (5% â†’ 25% â†’ 50% â†’ 100%) with cooldown periods between stages and auto-rollback on any metric degradation
-5. **Pre-write incident playbooks** â€” define runbooks for the five most common AI incidents (quality, cost, safety, model, data) with clear SLA targets, immediate actions, and investigation steps before incidents occur
+1. **Version everything** — prompts, model configs, eval datasets, and embedding indices all need hash-based versioning with full lineage tracking for reproducibility
+2. **Automate eval gates in CI/CD** — block deployments that degrade accuracy (>5% drop), safety (>2% drop), or cost (>20% increase). This prevents bad changes from reaching users
+3. **Monitor five drift dimensions** — track data drift (PSI), concept drift (error rate), prompt drift (score trends), model drift (output distribution), and embedding drift (cosine similarity). Each requires different detection and response
+4. **Implement graduated rollout by default** — use canary (5% → 25% → 50% → 100%) with cooldown periods between stages and auto-rollback on any metric degradation
+5. **Pre-write incident playbooks** — define runbooks for the five most common AI incidents (quality, cost, safety, model, data) with clear SLA targets, immediate actions, and investigation steps before incidents occur
 
 ## Chapter Quiz
 
@@ -1773,7 +1773,7 @@ D) Notify stakeholders via email
 |----------|--------|-------------|
 | 1 | B | In AI engineering, prompts change frequently and are treated as versioned primary artifacts |
 | 2 | C | Prompt drift occurs when a prompt's effectiveness degrades over time due to model updates, user behavior shifts, or content changes |
-| 3 | B | Evaluation gates are blocking checks â€” if a prompt fails accuracy, safety, or cost thresholds, the deployment is blocked |
+| 3 | B | Evaluation gates are blocking checks — if a prompt fails accuracy, safety, or cost thresholds, the deployment is blocked |
 | 4 | B | PSI (Population Stability Index) measures distribution shifts in input data for data drift detection |
 | 5 | C | Immediate containment (blocking inputs, revoking keys) is the first priority; investigation and post-mortem come after mitigation |
 
@@ -2037,7 +2037,7 @@ executor.execute("safety", "Multiple users reporting toxic output");
 
 ### Exercise 5: Full MLOps Pipeline Simulator (Hard)
 
-Build a simulator that integrates experiment tracking, prompt versioning, CI/CD with eval gates, and drift monitoring. Simulate a complete workflow: create experiment â†’ register prompt â†’ run CI/CD â†’ monitor for drift â†’ detect incident â†’ execute playbook.
+Build a simulator that integrates experiment tracking, prompt versioning, CI/CD with eval gates, and drift monitoring. Simulate a complete workflow: create experiment → register prompt → run CI/CD → monitor for drift → detect incident → execute playbook.
 
 **Deliverable**: TypeScript class `MLOpsSimulator` with a `runFullCycle()` method that demonstrates the complete workflow with simulated data.
 
@@ -2128,4 +2128,4 @@ class MLOpsSimulator {
 
 ---
 
-> **Next**: [Chapter 12: Capstone â€” AI Customer Support Platform â†’](12-capstone-customer-support-platform.md)
+> **Next**: [Chapter 12: Capstone — AI Customer Support Platform →](12-capstone-customer-support-platform.md)

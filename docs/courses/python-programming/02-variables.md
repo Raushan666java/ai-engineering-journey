@@ -1,4 +1,4 @@
-﻿# Chapter 2: Variables, Types, and Operators
+# Chapter 2: Variables, Types, and Operators
 
 
 > **Previous:** [Introduction to Python](./01-introduction.md) | **Next:** [Control Flow](./03-control-flow.md)
@@ -783,13 +783,13 @@ const isValid: boolean = true;
 // Python: dynamic typing lets variables change type
 // TypeScript: static typing catches type mismatches at compile time
 let value: number = 10;
-// value = "hello";  // âŒ TypeScript error: Type 'string' not assignable to 'number'
+// value = "hello";  // ❌ TypeScript error: Type 'string' not assignable to 'number'
 
 // Python: type() vs TypeScript: typeof
 console.log(typeof x);                 // "number"
 console.log(typeof name);              // "string"
 
-// Python: isinstance(x, int) â†’ TypeScript: typeof / instanceof
+// Python: isinstance(x, int) → TypeScript: typeof / instanceof
 console.log(typeof x === "number");    // true
 
 // Python: None vs TypeScript: null / undefined
@@ -807,11 +807,11 @@ console.log(`Name: ${name}, Age: ${age}`);
 // Equivalent Python: print(f"Name: {name}, Age: {age}")
 
 // Python: chained comparisons are not available in TypeScript
-// Python: 1 < x < 10  â†’  TypeScript: x > 1 && x < 10
+// Python: 1 < x < 10  →  TypeScript: x > 1 && x < 10
 const checkRange = (x: number): boolean => x > 1 && x < 10;
 
 // Python: walrus operator (:=) has no TypeScript equivalent
-// Python: if (n := len(x)) > 0:  â†’  TypeScript: const n = x.length; if (n > 0)
+// Python: if (n := len(x)) > 0:  →  TypeScript: const n = x.length; if (n > 0)
 ```
 
 ### TypeScript Utilities

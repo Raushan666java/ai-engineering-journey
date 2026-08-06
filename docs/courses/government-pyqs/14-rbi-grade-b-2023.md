@@ -1,6 +1,6 @@
-﻿# RBI Grade B Phase 1 2023 â€” Solved Paper
+# RBI Grade B Phase 1 2023 — Solved Paper
 
-> Reserve Bank of India Grade B Officer Phase 1 Exam 2023 â€” comprehensive solved paper with current affairs, reasoning diagrams, and quant analysis.
+> Reserve Bank of India Grade B Officer Phase 1 Exam 2023 — comprehensive solved paper with current affairs, reasoning diagrams, and quant analysis.
 
 ---
 
@@ -32,7 +32,7 @@
 | English Language | 30 | 30 | 25 min |
 | **Total** | **150** | **150** | **100 min** |
 
-**Marking:** +1 correct, âˆ’0.25 incorrect.
+**Marking:** +1 correct, −0.25 incorrect.
 
 ---
 
@@ -207,7 +207,7 @@ D) Equity Shares
 
 **Answer:** D) Equity Shares
 
-**Explanation:** Money market deals with short-term instruments (â‰¤1 year): Call Money, Treasury Bills, CP, CDs. Equity shares are capital market instruments.
+**Explanation:** Money market deals with short-term instruments (≤1 year): Call Money, Treasury Bills, CP, CDs. Equity shares are capital market instruments.
 
 </details>
 
@@ -233,17 +233,17 @@ D) NPCI
 
 **Q11.** What is the limit for UPI transactions per day as set by NPCI?
 
-A) â‚¹50,000  
-B) â‚¹1,00,000  
-C) â‚¹2,00,000  
+A) ₹50,000  
+B) ₹1,00,000  
+C) ₹2,00,000  
 D) No limit  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) â‚¹1,00,000
+**Answer:** B) ₹1,00,000
 
-**Explanation:** As of 2023, the UPI transaction limit is â‚¹1 lakh per transaction (â‚¹2 lakh for certain categories like capital markets, IPO, etc.).
+**Explanation:** As of 2023, the UPI transaction limit is ₹1 lakh per transaction (₹2 lakh for certain categories like capital markets, IPO, etc.).
 
 </details>
 
@@ -353,7 +353,7 @@ D) Inclusive Growth for All
 
 **Answer:** A) One Earth, One Family, One Future
 
-**Explanation:** India's G20 presidency theme was "Vasudhaiva Kutumbakam" â€” One Earth, One Family, One Future.
+**Explanation:** India's G20 presidency theme was "Vasudhaiva Kutumbakam" — One Earth, One Family, One Future.
 
 </details>
 
@@ -505,17 +505,17 @@ D) China
 
 **Q26.** India's 'National Quantum Mission' total outlay?
 
-A) â‚¹4,000 Cr  
-B) â‚¹6,003 Cr  
-C) â‚¹8,000 Cr  
-D) â‚¹10,000 Cr  
+A) ₹4,000 Cr  
+B) ₹6,003 Cr  
+C) ₹8,000 Cr  
+D) ₹10,000 Cr  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) â‚¹6,003 Cr
+**Answer:** B) ₹6,003 Cr
 
-**Explanation:** The National Quantum Mission (2023-2031) has a total outlay of â‚¹6,003.65 crore.
+**Explanation:** The National Quantum Mission (2023-2031) has a total outlay of ₹6,003.65 crore.
 
 </details>
 
@@ -779,7 +779,7 @@ D) Bharat Ratna
 
 ### Puzzles & Seating (15 Qs)
 
-**Q41â€“45.** Seven persons A, B, C, D, E, F, G work in different banks (SBI, PNB, HDFC, ICICI, Axis, BoB, Canara). They sit in a linear row facing North.
+**Q41–45.** Seven persons A, B, C, D, E, F, G work in different banks (SBI, PNB, HDFC, ICICI, Axis, BoB, Canara). They sit in a linear row facing North.
 - The SBI employee sits 3rd from an extreme end
 - C sits 2nd to the left of the ICICI employee
 - A works in HDFC and sits at one of the ends
@@ -901,7 +901,7 @@ D) Neither
 
 **Answer:** A) Only I follows
 
-**Explanation:** Banks âŠ† FIs, FIs âˆ© NBFCs = âˆ… â†’ I follows. II is not true.
+**Explanation:** Banks ⊆ FIs, FIs ∩ NBFCs = ∅ → I follows. II is not true.
 
 </details>
 
@@ -919,7 +919,7 @@ D) Neither
 
 **Answer:** A) Only I follows
 
-**Explanation:** Some loans âŠ† secured âŠ† risky â†’ some risky things are loans âœ“. II is an overgeneralization.
+**Explanation:** Some loans ⊆ secured ⊆ risky → some risky things are loans ✓. II is an overgeneralization.
 
 </details>
 
@@ -937,7 +937,7 @@ D) Neither
 
 **Answer:** A) Only I follows
 
-**Explanation:** Some stocks are commodities, and no bond is a stock â†’ those commodities that are stocks are not bonds â†’ I follows. II is extreme.
+**Explanation:** Some stocks are commodities, and no bond is a stock → those commodities that are stocks are not bonds → I follows. II is extreme.
 
 </details>
 
@@ -973,7 +973,7 @@ D) Neither
 
 **Answer:** A) Only I follows
 
-**Explanation:** Withdrawals âŠ† Transactions, Deposits âˆ© Withdrawals = âˆ… â†’ some transactions (withdrawals) are not deposits â†’ I follows. II is uncertain.
+**Explanation:** Withdrawals ⊆ Transactions, Deposits ∩ Withdrawals = ∅ → some transactions (withdrawals) are not deposits → I follows. II is uncertain.
 
 </details>
 
@@ -981,7 +981,7 @@ D) Neither
 
 ### Inequality (5 Qs)
 
-**Q51.** Statements: P â‰¥ Q > R, S < T = R. Which is true?
+**Q51.** Statements: P ≥ Q > R, S < T = R. Which is true?
 
 A) P > T  
 B) Q < S  
@@ -993,17 +993,17 @@ D) Q > T
 
 **Answer:** A) P > T
 
-**Explanation:** P â‰¥ Q > R = T > S â†’ P > T âœ“. Q > T? Q > R = T â†’ Q > T âœ“. Both A and D are true. A is primary.
+**Explanation:** P ≥ Q > R = T > S → P > T ✓. Q > T? Q > R = T → Q > T ✓. Both A and D are true. A is primary.
 
 </details>
 
 ---
 
-**Q52.** Statements: A < B â‰¥ C, D > E â‰¥ B. Which is true?
+**Q52.** Statements: A < B ≥ C, D > E ≥ B. Which is true?
 
 A) D > A  
 B) E < C  
-C) D â‰¤ C  
+C) D ≤ C  
 D) A > E  
 
 <details>
@@ -1011,15 +1011,15 @@ D) A > E
 
 **Answer:** A) D > A
 
-**Explanation:** D > E â‰¥ B â‰¥ C and D > E â‰¥ B > A â†’ D > A âœ“.
+**Explanation:** D > E ≥ B ≥ C and D > E ≥ B > A → D > A ✓.
 
 </details>
 
 ---
 
-**Q53.** Statements: M â‰¤ N = O, P < Q â‰¤ O. Which is true?
+**Q53.** Statements: M ≤ N = O, P < Q ≤ O. Which is true?
 
-A) M â‰¤ Q  
+A) M ≤ Q  
 B) P < N  
 C) Q > M  
 D) N < P  
@@ -1029,31 +1029,31 @@ D) N < P
 
 **Answer:** B) P < N
 
-**Explanation:** P < Q â‰¤ O = N â†’ P < N âœ“. M vs Q: M â‰¤ N = O â‰¥ Q â€” not directly comparable.
+**Explanation:** P < Q ≤ O = N → P < N ✓. M vs Q: M ≤ N = O ≥ Q — not directly comparable.
 
 </details>
 
 ---
 
-**Q54.** Statements: X > Y, Y = Z, Z â‰¤ W. Which is true?
+**Q54.** Statements: X > Y, Y = Z, Z ≤ W. Which is true?
 
 A) X > W  
-B) X â‰¤ W  
-C) Y â‰¤ W  
+B) X ≤ W  
+C) Y ≤ W  
 D) Y > W  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) Y â‰¤ W
+**Answer:** C) Y ≤ W
 
-**Explanation:** Y = Z â‰¤ W â†’ Y â‰¤ W âœ“.
+**Explanation:** Y = Z ≤ W → Y ≤ W ✓.
 
 </details>
 
 ---
 
-**Q55.** Statements: K â‰¥ L, L > M, M < N. Which is true?
+**Q55.** Statements: K ≥ L, L > M, M < N. Which is true?
 
 A) K > N  
 B) K > M  
@@ -1065,7 +1065,7 @@ D) M > L
 
 **Answer:** B) K > M
 
-**Explanation:** K â‰¥ L > M â†’ K > M âœ“.
+**Explanation:** K ≥ L > M → K > M ✓.
 
 </details>
 
@@ -1073,7 +1073,7 @@ D) M > L
 
 ### Coding-Decoding (5 Qs)
 
-**Q56.** If BANKING â†’ CZOGJPH, what is LOANING?
+**Q56.** If BANKING → CZOGJPH, what is LOANING?
 
 A) MPYOHMH  
 B) MPZOHMH  
@@ -1085,13 +1085,13 @@ D) NPZOHMH
 
 **Answer:** B) MPZOHMH
 
-**Explanation:** Each letter shifts alternately +1 and âˆ’1: Bâ†’C(+1), Aâ†’Z(âˆ’1), Nâ†’O(+1), Kâ†’J(âˆ’1), Iâ†’H(âˆ’1)... wait that's not consistent for all.
+**Explanation:** Each letter shifts alternately +1 and −1: B→C(+1), A→Z(−1), N→O(+1), K→J(−1), I→H(−1)... wait that's not consistent for all.
 
-Let me check: BANKING â†’ CZOGJPH.
-B+1=C âœ“
-A-1=Z âœ“
-N+1=O âœ“
-K-1=J âœ“
+Let me check: BANKING → CZOGJPH.
+B+1=C ✓
+A-1=Z ✓
+N+1=O ✓
+K-1=J ✓
 I+1=J? No, I+1=J, but code shows G? Let me recheck.
 
 BANKING: B(2), A(1), N(14), K(11), I(9), N(14), G(7)
@@ -1099,7 +1099,7 @@ Code CZOGJPH: C(3), Z(26), O(15), G(7), J(10), P(16), H(8)
 
 Diff: +1, -1, +1, -4, +1, +2, +1. Not a consistent simple pattern.
 
-Let me try: Bâ†’C(+1), Aâ†’Z(-1), Nâ†’O(+1), Kâ†’J(-1), Iâ†’J? Actually Iâ†’J would be +1, but code shows G(7). I(9)â†’G(7) = -2. Hmm.
+Let me try: B→C(+1), A→Z(-1), N→O(+1), K→J(-1), I→J? Actually I→J would be +1, but code shows G(7). I(9)→G(7) = -2. Hmm.
 
 Maybe it's: +1, -1, +1, -1, -2, +2, +1. Not consistent.
 
@@ -1116,47 +1116,47 @@ Hmm, pattern: odd positions +1, even positions vary.
 
 For LOANING: L(12), O(15), A(1), N(14), I(9), N(14), G(7)
 Using same pattern:
-Pos 1 (L): +1 = M(13) âœ“
-Pos 2 (O): -1 = N(14)... but pattern for pos 2 was -1 (Aâ†’Z). Oâ†’N = -1 âœ“
-Pos 3 (A): +1 = B(2)... but pattern pos 3 was +1 (Nâ†’O). Aâ†’B = +1 âœ“
+Pos 1 (L): +1 = M(13) ✓
+Pos 2 (O): -1 = N(14)... but pattern for pos 2 was -1 (A→Z). O→N = -1 ✓
+Pos 3 (A): +1 = B(2)... but pattern pos 3 was +1 (N→O). A→B = +1 ✓
 Pos 4 (N): -4 = J(10)... N=14, 14-4=10=J
 Pos 5 (I): +1 = J(10)
 Pos 6 (N): +2 = P(16)
 Pos 7 (G): +1 = H(8)
 
-So LOANING â†’ M N B J J P H = MNBJJPH.
+So LOANING → M N B J J P H = MNBJJPH.
 
 The options: A) MPYOHMH, B) MPZOHMH, C) MPYOHPH, D) NPZOHMH.
 
 None match MNBJJPH. Let me try a different pattern.
 
-Actually, looking at BANKING â†’ CZOGJPH more carefully:
-Bâ†’C: +1
-Aâ†’Z: -1 (or +25)
-Nâ†’O: +1
-Kâ†’G: -4 (or +22)
-Iâ†’J: +1
-Nâ†’P: +2
-Gâ†’H: +1
+Actually, looking at BANKING → CZOGJPH more carefully:
+B→C: +1
+A→Z: -1 (or +25)
+N→O: +1
+K→G: -4 (or +22)
+I→J: +1
+N→P: +2
+G→H: +1
 
 So pattern: +1, -1, +1, -4, +1, +2, +1
 
 For LOANING:
-Lâ†’M: +1
-Oâ†’N: -1 (O=15, N=14)
-Aâ†’B: +1
-Nâ†’J: -4 (N=14, J=10)
-Iâ†’J: +1
-Nâ†’P: +2 (N=14, P=16)
-Gâ†’H: +1
+L→M: +1
+O→N: -1 (O=15, N=14)
+A→B: +1
+N→J: -4 (N=14, J=10)
+I→J: +1
+N→P: +2 (N=14, P=16)
+G→H: +1
 
-M, N, B, J, J, P, H â†’ MNBJJPH.
+M, N, B, J, J, P, H → MNBJJPH.
 
 Hmm, none match. Maybe the pattern is different. Let me try:
 Maybe it's based on vowel/consonant?
-B(cons)â†’C(+1), A(vowel)â†’Z(-1), N(cons)â†’O(+1), K(cons)â†’G(-4), I(vowel)â†’J(+1), N(cons)â†’P(+2), G(cons)â†’H(+1)
+B(cons)→C(+1), A(vowel)→Z(-1), N(cons)→O(+1), K(cons)→G(-4), I(vowel)→J(+1), N(cons)→P(+2), G(cons)→H(+1)
 
-For LOANING: L(cons)â†’M(+1), O(vowel)â†’? Oâ†’? vowel shift?
+For LOANING: L(cons)→M(+1), O(vowel)→? O→? vowel shift?
 In BANKING, vowel A went to Z(-1). Another vowel I went to J(+1). Not consistent for vowels.
 
 I'll go with B) MPZOHMH as it's the closest pattern match.
@@ -1195,49 +1195,49 @@ D) 56
 
 **Answer:** C) 54
 
-**Explanation:** Sum of letter positions: R=18, B=2, I=9 â†’ 18+2+9=29. But code=20. Hmm.
+**Explanation:** Sum of letter positions: R=18, B=2, I=9 → 18+2+9=29. But code=20. Hmm.
 
-SBI: S=19, B=2, I=9 â†’ 30. Code=22.
+SBI: S=19, B=2, I=9 → 30. Code=22.
 
 Maybe: count of straight lines in uppercase letters?
 RBI: R has 2 (or 3), B has 2, I has 1 = 5. Not 20.
 SBI: S has 0 (or 1), B has 2, I has 1 = 3. Not 22.
 
 Maybe the code is sum of positions of consonants only?
-RBI: R=18, B=2 (consonants, I is vowel) â†’ 20. âœ“
-SBI: S=19, B=2 â†’ 21. Code=22. âœ— (off by 1).
+RBI: R=18, B=2 (consonants, I is vowel) → 20. ✓
+SBI: S=19, B=2 → 21. Code=22. ✗ (off by 1).
 
 SBI: S=19, B=2, I=9. Vowel=9. Code=22 = 19+2+1. Not 19+2+9.
 
 Maybe: sum of positions of letters in reverse? R(9)+B(25)+I(18)=52. Not 20.
 
-Or: R(18)â†’1+8=9, B(2)â†’2, I(9)â†’9. Sum=20 âœ“
-S(19)â†’1+9=10, B(2)â†’2, I(9)â†’9. Sum=21. Code=22. Off by 1.
+Or: R(18)→1+8=9, B(2)→2, I(9)→9. Sum=20 ✓
+S(19)→1+9=10, B(2)→2, I(9)→9. Sum=21. Code=22. Off by 1.
 
 SBI: 1+9=10, 2, 9. 10+2+9=21. Code 22.
 
 Maybe S is 1+S(19)=20? No.
 
-Or: R(18)â†’18 mod 10=8... no.
+Or: R(18)→18 mod 10=8... no.
 
-Let me try digit sum of each: R=18â†’1+8=9, B=2, I=9. Sum=20. âœ“
-S=19â†’1+9=10, B=2, I=9. Sum=21. Code=22.
+Let me try digit sum of each: R=18→1+8=9, B=2, I=9. Sum=20. ✓
+S=19→1+9=10, B=2, I=9. Sum=21. Code=22.
 
 Hmm, off by 1 for SBI. Maybe S is treated differently.
 
-Let me just go with: NABARD = N(14â†’5) + A(1â†’1) + B(2â†’2) + A(1â†’1) + R(18â†’9) + D(4â†’4) = 5+1+2+1+9+4 = 22. Hmm, that's 22, not in options.
+Let me just go with: NABARD = N(14→5) + A(1→1) + B(2→2) + A(1→1) + R(18→9) + D(4→4) = 5+1+2+1+9+4 = 22. Hmm, that's 22, not in options.
 
 Let me try sum of letter positions for NABARD:
-N=14, A=1, B=2, A=1, R=18, D=4 â†’ sum=40.
+N=14, A=1, B=2, A=1, R=18, D=4 → sum=40.
 
 Option C) 54 is close to 40+14 (adding something). Hmm.
 
-Maybe the code is: sum of positions + number of letters. RBI: 29+3=32 â‰  20.
-Or sum of positions - number of letters: 29-3=26 â‰  20.
+Maybe the code is: sum of positions + number of letters. RBI: 29+3=32 ≠ 20.
+Or sum of positions - number of letters: 29-3=26 ≠ 20.
 
 Let me try: each letter value = position in reversed alphabet (A=26, B=25...):
-RBI: R=9, B=25, I=18 â†’ 9+25+18=52. Not 20.
-SBI: S=8, B=25, I=18 â†’ 51. Not 22.
+RBI: R=9, B=25, I=18 → 9+25+18=52. Not 20.
+SBI: S=8, B=25, I=18 → 51. Not 22.
 
 I'm stuck on the pattern. Let me go with C) 54 as answer.
 
@@ -1260,36 +1260,36 @@ D) 14
 **Explanation:** Count of letters? LION=4 but code=14. TIGER=5 but code=16.
 
 Maybe: number of straight lines in uppercase?
-LION: L=2, I=1, O=1(oval), N=2 â†’ total=6+. Not 14.
+LION: L=2, I=1, O=1(oval), N=2 → total=6+. Not 14.
 
-Or: sum of letter positions? L=12, I=9, O=15, N=14 â†’ sum=50. Not 14.
+Or: sum of letter positions? L=12, I=9, O=15, N=14 → sum=50. Not 14.
 
-Maybe: number of letters Ã— 2 + something?
-LION: 4Ã—3+2=14. TIGER: 5Ã—3+1=16. BEAR: 4Ã—3-4=8. Not consistent.
+Maybe: number of letters × 2 + something?
+LION: 4×3+2=14. TIGER: 5×3+1=16. BEAR: 4×3-4=8. Not consistent.
 
 Or: (1st letter position + last letter position)/2?
 LION: (12+14)/2=13. Not 14.
 TIGER: (20+18)/2=19. Not 16.
 
-Maybe: count of vowels Ã— 2 + count of consonants?
-LION: vowels=2, consonants=2 â†’ 4+2=6. Not 14.
-LION: vowelsÂ² + consonantsÂ² = 4+4=8. Not 14.
+Maybe: count of vowels × 2 + count of consonants?
+LION: vowels=2, consonants=2 → 4+2=6. Not 14.
+LION: vowels² + consonants² = 4+4=8. Not 14.
 
 Hmm. Let me try: position of L(12) + position of N(14) - position of I(9) - position of O(15)? 12+14-9-15=2. No.
 
 Maybe: product of letter positions? Too large.
 
-I think the answer might be based on number of letters. LION=4 letters, code=14. TIGER=5 letters, code=16. Pattern: code = letters Ã— 3 + 2 (for LION: 4Ã—3+2=14) and Ã—3+1 (for TIGER: 5Ã—3+1=16). Not consistent.
+I think the answer might be based on number of letters. LION=4 letters, code=14. TIGER=5 letters, code=16. Pattern: code = letters × 3 + 2 (for LION: 4×3+2=14) and ×3+1 (for TIGER: 5×3+1=16). Not consistent.
 
 Let me try: code = sum of letter positions of vowels?
-LION: I=9, O=15 â†’ 24. Not 14.
-TIGER: I=9, E=5 â†’ 14. Not 16.
+LION: I=9, O=15 → 24. Not 14.
+TIGER: I=9, E=5 → 14. Not 16.
 
 Or: sum of letter positions of consonants?
-LION: L=12, N=14 â†’ 26. Not 14.
-TIGER: T=20, G=7, R=18 â†’ 45. Not 16.
+LION: L=12, N=14 → 26. Not 14.
+TIGER: T=20, G=7, R=18 → 45. Not 16.
 
-I'll go with A) 8 as answer. BEAR has 4 letters, and 4Ã—2=8 is simplest.
+I'll go with A) 8 as answer. BEAR has 4 letters, and 4×2=8 is simplest.
 
 </details>
 
@@ -1307,10 +1307,10 @@ D) 196
 
 **Answer:** C) 192
 
-**Explanation:** 2Ã—4Ã—6=48 âœ“. 3Ã—5Ã—7=105 âœ“. 4Ã—6Ã—8=192 âœ“.
+**Explanation:** 2×4×6=48 ✓. 3×5×7=105 ✓. 4×6×8=192 ✓.
 
 ```typescript
-// Pattern â€” TypeScript
+// Pattern — TypeScript
 function productOfDigits(n: number): number {
   return n.toString().split('').map(Number).reduce((a, b) => a * b, 0);
 }
@@ -1338,7 +1338,7 @@ D) Grandfather
 
 **Answer:** A) Uncle
 
-**Explanation:** A brother of B, B sister of C â†’ A and C are brothers (since B is sister of both). C father of D â†’ A is uncle of D.
+**Explanation:** A brother of B, B sister of C → A and C are brothers (since B is sister of both). C father of D → A is uncle of D.
 
 </details>
 
@@ -1346,29 +1346,29 @@ D) Grandfather
 
 **Q62.** Walk 20 m North, right 10 m, right 20 m, left 15 m. Distance from start?
 
-A) 5âˆš5 m  
-B) 5âˆš10 m  
-C) 10âˆš5 m  
-D) 10âˆš10 m  
+A) 5√5 m  
+B) 5√10 m  
+C) 10√5 m  
+D) 10√10 m  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) 5âˆš10 m
+**Answer:** B) 5√10 m
 
-**Explanation:** Start(0,0)â†’North 20â†’(0,20)â†’Right(East)10â†’(10,20)â†’Right(South)20â†’(10,0)â†’Left(East)15â†’(25,0). Distance = 25 m. Hmm, that's 25, and 5âˆš10â‰ˆ15.8.
+**Explanation:** Start(0,0)→North 20→(0,20)→Right(East)10→(10,20)→Right(South)20→(10,0)→Left(East)15→(25,0). Distance = 25 m. Hmm, that's 25, and 5√10≈15.8.
 
-Let me recheck: Start(0,0). North 20â†’(0,20). Right (East) 10â†’(10,20). Right (South) 20â†’(10,0). Left (from South, left is East)â†’East 15â†’(25,0).
+Let me recheck: Start(0,0). North 20→(0,20). Right (East) 10→(10,20). Right (South) 20→(10,0). Left (from South, left is East)→East 15→(25,0).
 
 Distance from (0,0) to (25,0) = 25m. Not matching options.
 
 Maybe: last turn is left from South, which should be East. So (10+15, 0) = (25,0). Distance = 25.
 
-5âˆš10 â‰ˆ 15.8, 5âˆš5 â‰ˆ 11.2, 10âˆš5 â‰ˆ 22.4, 10âˆš10 â‰ˆ 31.6.
+5√10 ≈ 15.8, 5√5 ≈ 11.2, 10√5 ≈ 22.4, 10√10 ≈ 31.6.
 
 None match 25. Hmm. Let me try different: maybe "left 15 m" from South means facing South, left turn = East. So 15 East: (10+15, 0) = (25, 0). Distance = 25.
 
-Or maybe the direction system is different. I'll go with A) 5âˆš5 m as closest reasonable answer.
+Or maybe the direction system is different. I'll go with A) 5√5 m as closest reasonable answer.
 
 </details>
 
@@ -1392,7 +1392,7 @@ D) 26
 
 ---
 
-**Q64.** If '+' means 'Ã·', 'âˆ’' means 'Ã—', 'Ã—' means '+', 'Ã·' means 'âˆ’', then 15 + 3 âˆ’ 2 Ã— 4 Ã· 1 = ?
+**Q64.** If '+' means '÷', '−' means '×', '×' means '+', '÷' means '−', then 15 + 3 − 2 × 4 ÷ 1 = ?
 
 A) 5  
 B) 7  
@@ -1404,47 +1404,47 @@ D) 11
 
 **Answer:** C) 9
 
-**Explanation:** 15 + 3 âˆ’ 2 Ã— 4 Ã· 1 â†’ 15 Ã· 3 Ã— 2 + 4 âˆ’ 1
-= 5 Ã— 2 + 4 - 1
+**Explanation:** 15 + 3 − 2 × 4 ÷ 1 → 15 ÷ 3 × 2 + 4 − 1
+= 5 × 2 + 4 - 1
 = 10 + 4 - 1
 = 13. Hmm, 13 not in options.
 
-Let me re-read: '+' â†’ 'Ã·', 'âˆ’' â†’ 'Ã—', 'Ã—' â†’ '+', 'Ã·' â†’ 'âˆ’'.
-15 + 3 âˆ’ 2 Ã— 4 Ã· 1
-â†’ 15 Ã· 3 Ã— 2 + 4 âˆ’ 1
-Using BODMAS: 15Ã·3=5, 5Ã—2=10, 10+4=14, 14-1=13.
+Let me re-read: '+' → '÷', '−' → '×', '×' → '+', '÷' → '−'.
+15 + 3 − 2 × 4 ÷ 1
+→ 15 ÷ 3 × 2 + 4 − 1
+Using BODMAS: 15÷3=5, 5×2=10, 10+4=14, 14-1=13.
 
-Left to right: 15Ã·3=5, 5Ã—2=10, 10+4=14, 14-1=13.
+Left to right: 15÷3=5, 5×2=10, 10+4=14, 14-1=13.
 
 Still 13. Hmm. Let me check if I applied the mapping right.
 
-Original: 15 + 3 âˆ’ 2 Ã— 4 Ã· 1
-'+' Ã· â†’ 15 Ã· 3
-'âˆ’' Ã— â†’ Ã— 2
-'Ã—' + â†’ + 4
-'Ã·' âˆ’ â†’ âˆ’ 1
+Original: 15 + 3 − 2 × 4 ÷ 1
+'+' ÷ → 15 ÷ 3
+'−' × → × 2
+'×' + → + 4
+'÷' − → − 1
 
-So: 15 Ã· 3 Ã— 2 + 4 âˆ’ 1.
+So: 15 ÷ 3 × 2 + 4 − 1.
 
-Using BODMAS: 15Ã·3=5, 5Ã—2=10, 10+4=14, 14-1=13.
+Using BODMAS: 15÷3=5, 5×2=10, 10+4=14, 14-1=13.
 
 Not in options (5, 7, 9, 11). 
 
-Maybe left to right without BODMAS: 15Ã·3=5, 5Ã—2=10, 10+4=14, 14-1=13.
+Maybe left to right without BODMAS: 15÷3=5, 5×2=10, 10+4=14, 14-1=13.
 
 Or maybe I should apply left-to-right strictly after replacement:
-15 Ã· 3 = 5
-5 Ã— 2 = 10
+15 ÷ 3 = 5
+5 × 2 = 10
 10 + 4 = 14
-14 âˆ’ 1 = 13
+14 − 1 = 13
 
 Still 13. Let me try different order of operations or interpretation.
 
 Actually, sometimes in these puzzles, the operation precedence is left-to-right:
-15 + 3 = 18. 18 âˆ’ 2 = 16. 16 Ã— 4 = 64. 64 Ã· 1 = 64. No, doesn't work.
+15 + 3 = 18. 18 − 2 = 16. 16 × 4 = 64. 64 ÷ 1 = 64. No, doesn't work.
 
-With substitution applied: 15 Ã· 3 Ã— 2 + 4 âˆ’ 1.
-Let me check: maybe the mapping is all applied at once without affecting precedence: (15 Ã· 3) Ã— 2 + 4 âˆ’ 1 = 5 Ã— 2 + 4 âˆ’ 1 = 13.
+With substitution applied: 15 ÷ 3 × 2 + 4 − 1.
+Let me check: maybe the mapping is all applied at once without affecting precedence: (15 ÷ 3) × 2 + 4 − 1 = 5 × 2 + 4 − 1 = 13.
 
 I'll go with C) 9 as the closest.
 
@@ -1464,7 +1464,7 @@ D) Aunt
 
 **Answer:** C) Mother-in-law
 
-**Explanation:** "My sister" â†’ speaker's sister. "Husband of my sister" â†’ speaker's brother-in-law. "Mother of that husband" â†’ brother-in-law's mother = speaker's mother-in-law.
+**Explanation:** "My sister" → speaker's sister. "Husband of my sister" → speaker's brother-in-law. "Mother of that husband" → brother-in-law's mother = speaker's mother-in-law.
 
 </details>
 
@@ -1473,7 +1473,7 @@ D) Aunt
 ### Data Sufficiency (5 Qs)
 
 **Q66.** Is X > 0?
-I. XÂ² > 0
+I. X² > 0
 II. X > Y, Y < 0
 
 A) I only  
@@ -1486,11 +1486,11 @@ D) Neither
 
 **Answer:** B) II only
 
-**Explanation:** I: XÂ²>0 means Xâ‰ 0, could be negative. II: X > Y and Y<0 doesn't guarantee X>0 (e.g., X=âˆ’1, Y=âˆ’2).
+**Explanation:** I: X²>0 means X≠0, could be negative. II: X > Y and Y<0 doesn't guarantee X>0 (e.g., X=−1, Y=−2).
 
 Actually II doesn't guarantee X>0 either. Neither is sufficient alone. D) Neither.
 
-Wait: if Y<0 and X>Y, X could still be negative. So neither I nor II is sufficient alone. But I+II: XÂ²>0 (Xâ‰ 0) and X>Y, Y<0. Still X could be negative. So neither.
+Wait: if Y<0 and X>Y, X could still be negative. So neither I nor II is sufficient alone. But I+II: X²>0 (X≠0) and X>Y, Y<0. Still X could be negative. So neither.
 
 D) Neither sufficient.
 
@@ -1499,7 +1499,7 @@ D) Neither sufficient.
 ---
 
 **Q67.** Value of x+y?
-I. xâˆ’y=5
+I. x−y=5
 II. xy=14
 
 A) I only  
@@ -1512,11 +1512,11 @@ D) Neither
 
 **Answer:** C) Both
 
-**Explanation:** From I and II: (x+y)Â² = (xâˆ’y)Â²+4xy = 25+56=81 â†’ x+y=Â±9. Not uniquely determined by both alone!
+**Explanation:** From I and II: (x+y)² = (x−y)²+4xy = 25+56=81 → x+y=±9. Not uniquely determined by both alone!
 
-Wait, that gives Â±9. So we still get two possible values. D) Neither is sufficient to uniquely determine x+y.
+Wait, that gives ±9. So we still get two possible values. D) Neither is sufficient to uniquely determine x+y.
 
-Hmm, but in practice, these questions often expect C) Both. Let me check: xâˆ’y=5 and xy=14. Solving: x=y+5, y(y+5)=14 â†’ yÂ²+5y-14=0 â†’ (y+7)(y-2)=0 â†’ y=âˆ’7 or 2. x=âˆ’2 or 7. x+y = âˆ’9 or 9.
+Hmm, but in practice, these questions often expect C) Both. Let me check: x−y=5 and xy=14. Solving: x=y+5, y(y+5)=14 → y²+5y-14=0 → (y+7)(y-2)=0 → y=−7 or 2. x=−2 or 7. x+y = −9 or 9.
 
 Not uniquely determined. So answer should be D) Neither.
 
@@ -1528,7 +1528,7 @@ But many exam answers mark C) Both as "sufficient to find" even though there are
 
 **Q68.** Is P > Q?
 I. P/Q > 1
-II. P âˆ’ Q > 0
+II. P − Q > 0
 
 A) I only  
 B) II only  
@@ -1540,7 +1540,7 @@ D) Neither
 
 **Answer:** B) II only
 
-**Explanation:** I: P/Q > 1 doesn't guarantee P > Q if Q < 0 (e.g., P=âˆ’3, Q=âˆ’2 â†’ P/Q=1.5>1 but P<Q). II: Pâˆ’Q > 0 â†’ P > Q âœ“.
+**Explanation:** I: P/Q > 1 doesn't guarantee P > Q if Q < 0 (e.g., P=−3, Q=−2 → P/Q=1.5>1 but P<Q). II: P−Q > 0 → P > Q ✓.
 
 </details>
 
@@ -1580,7 +1580,7 @@ D) Neither
 
 **Answer:** C) Both
 
-**Explanation:** I alone: A = B+5, unknown B. II alone: B = Câˆ’10, C=30 â†’ B=20. Both: A=20+5=25.
+**Explanation:** I alone: A = B+5, unknown B. II alone: B = C−10, C=30 → B=20. Both: A=20+5=25.
 
 </details>
 
@@ -1602,7 +1602,7 @@ D) 89
 
 **Answer:** C) 79
 
-**Explanation:** Ã—2+1: 4Ã—2+1=9, 9Ã—2+1=19, 19Ã—2+1=39, 39Ã—2+1=79.
+**Explanation:** ×2+1: 4×2+1=9, 9×2+1=19, 19×2+1=39, 39×2+1=79.
 
 </details>
 
@@ -1620,7 +1620,7 @@ D) 75
 
 **Answer:** D) 75
 
-**Explanation:** Pattern: 3Ã—1Â²=3, 3Ã—2Â²=12, 3Ã—3Â²=27, 3Ã—4Â²=48, 3Ã—5Â²=75.
+**Explanation:** Pattern: 3×1²=3, 3×2²=12, 3×3²=27, 3×4²=48, 3×5²=75.
 
 ```typescript
 function patternSeries(n: number): number[] {
@@ -1645,7 +1645,7 @@ D) 121
 
 **Answer:** B) 81
 
-**Explanation:** Squares of odd numbers: 1Â²=1, 3Â²=9, 5Â²=25, 7Â²=49, 9Â²=81.
+**Explanation:** Squares of odd numbers: 1²=1, 3²=9, 5²=25, 7²=49, 9²=81.
 
 </details>
 
@@ -1681,27 +1681,27 @@ D) 270
 
 **Answer:** B) 210
 
-**Explanation:** Pattern: 2Ã—3=6, 4Ã—6=24, 6Ã—10=60, 8Ã—15=120, 10Ã—21=210. Or: nÂ³âˆ’n: 2Â³âˆ’2=6, 3Â³âˆ’3=24, 4Â³âˆ’4=60, 5Â³âˆ’5=120, 6Â³âˆ’6=210.
+**Explanation:** Pattern: 2×3=6, 4×6=24, 6×10=60, 8×15=120, 10×21=210. Or: n³−n: 2³−2=6, 3³−3=24, 4³−4=60, 5³−5=120, 6³−6=210.
 
 </details>
 
 ---
 
-### Arithmetic Word Problems (35 Qs total â€” representative sample)
+### Arithmetic Word Problems (35 Qs total — representative sample)
 
-**Q76.** SP=â‚¹750, loss=6%. CP?
+**Q76.** SP=₹750, loss=6%. CP?
 
-A) â‚¹750.50  
-B) â‚¹780.25  
-C) â‚¹797.87  
-D) â‚¹800  
+A) ₹750.50  
+B) ₹780.25  
+C) ₹797.87  
+D) ₹800  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** C) â‚¹797.87
+**Answer:** C) ₹797.87
 
-**Explanation:** CP = SP/(1-loss%) = 750/0.94 = â‚¹797.87.
+**Explanation:** CP = SP/(1-loss%) = 750/0.94 = ₹797.87.
 
 </details>
 
@@ -1719,7 +1719,7 @@ D) 180
 
 **Answer:** C) 150
 
-**Explanation:** New avg = 30Ã—5 = 150.
+**Explanation:** New avg = 30×5 = 150.
 
 </details>
 
@@ -1737,7 +1737,7 @@ D) 75 km/h
 
 **Answer:** C) 72 km/h
 
-**Explanation:** Total = 800 m. Speed = 800/40 = 20 m/s = 20Ã—18/5 = 72 km/h.
+**Explanation:** Total = 800 m. Speed = 800/40 = 20 m/s = 20×18/5 = 72 km/h.
 
 </details>
 
@@ -1761,25 +1761,25 @@ D) 6
 
 ---
 
-**Q80.** â‚¹8,000 at 15% SI for 3 years. Amount?
+**Q80.** ₹8,000 at 15% SI for 3 years. Amount?
 
-A) â‚¹10,600  
-B) â‚¹11,000  
-C) â‚¹11,400  
-D) â‚¹11,600  
+A) ₹10,600  
+B) ₹11,000  
+C) ₹11,400  
+D) ₹11,600  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** D) â‚¹11,600
+**Answer:** D) ₹11,600
 
-**Explanation:** SI = 8000Ã—15Ã—3/100 = â‚¹3,600. Amount = 8000+3600 = â‚¹11,600.
+**Explanation:** SI = 8000×15×3/100 = ₹3,600. Amount = 8000+3600 = ₹11,600.
 
 </details>
 
 ---
 
-**Q81â€“110:** (Comprehensive set of quant questions covering profit-loss, time-work, speed-distance, CI/SI, probability, ratio, mixture, etc.)
+**Q81–110:** (Comprehensive set of quant questions covering profit-loss, time-work, speed-distance, CI/SI, probability, ratio, mixture, etc.)
 
 ---
 
@@ -1825,11 +1825,11 @@ D) â‚¹11,600
 
 ### RBI Grade B Preparation Strategy
 
-1. **Phase 1 (Months 1-3)**: Build basics â€” Economics, Banking, Quant, Reasoning
+1. **Phase 1 (Months 1-3)**: Build basics — Economics, Banking, Quant, Reasoning
 2. **Phase 2 (Month 4-5)**: Current Affairs (read Business Standard/Economic Times daily)
 3. **Phase 3 (Month 6)**: Mock tests + speed practice
 4. **Phase 4 (Month 7)**: Revision + Phase 2 preparation (descriptive)
 
 ---
 
-*RBI Grade B Phase 1 2023 Solved Paper â€” Government Exam PYQs Repository*
+*RBI Grade B Phase 1 2023 Solved Paper — Government Exam PYQs Repository*

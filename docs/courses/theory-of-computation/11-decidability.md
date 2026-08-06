@@ -1,4 +1,4 @@
-﻿# Chapter 11: Decidability
+# Chapter 11: Decidability
 
 > **Previous:** [Turing Machine Extensions](./10-turing-extensions.md) | **Next:** [Reducibility](./12-reducibility.md)
 
@@ -64,12 +64,12 @@ flowchart LR
 
 A problem (language) is **decidable** if there exists an algorithm (Turing machine that always halts) that correctly answers yes/no for every instance. Otherwise, it is **undecidable**.
 
-**Decidable problems** â†’ the golden age of automata theory:
+**Decidable problems** → the golden age of automata theory:
 - All problems about DFAs (membership, emptiness, finiteness, equivalence) are decidable.
 - All problems about CFGs (membership, emptiness) are decidable.
 - Many problems about TMs (membership in specific cases) are decidable.
 
-**Undecidable problems** â†’ the frontier:
+**Undecidable problems** → the frontier:
 - The halting problem for Turing machines.
 - The equivalence problem for CFGs.
 - Hilbert's tenth problem (solving Diophantine equations).
@@ -79,42 +79,42 @@ A problem (language) is **decidable** if there exists an algorithm (Turing machi
 ### 10.2 The Halting Problem
 
 
-**HALT_TM = { Ã¢Å¸Â¨M, wÃ¢Å¸Â© | M is a TM and M halts on input w }**
+**HALT_TM = { ⟨M, w⟩ | M is a TM and M halts on input w }**
 
 **Theorem:** HALT_TM is undecidable.
 
 **Proof (by diagonalization, due to Turing 1936):**
 
 Assume for contradiction that HALT_TM is decidable. Then there exists a decider H that:
-- H(Ã¢Å¸Â¨M, wÃ¢Å¸Â©) = accept if M halts on w.
-- H(Ã¢Å¸Â¨M, wÃ¢Å¸Â©) = reject if M loops on w.
+- H(⟨M, w⟩) = accept if M halts on w.
+- H(⟨M, w⟩) = reject if M loops on w.
 
 Construct a new TM D:
-1. D takes as input Ã¢Å¸Â¨MÃ¢Å¸Â© (a TM description).
-2. D runs H(Ã¢Å¸Â¨M, Ã¢Å¸Â¨MÃ¢Å¸Â©Ã¢Å¸Â©).
+1. D takes as input ⟨M⟩ (a TM description).
+2. D runs H(⟨M, ⟨M⟩⟩).
 3. If H accepts (meaning M halts on its own description), D **loops forever**.
 4. If H rejects (meaning M loops on its own description), D **halts** (accepts).
 
-Now ask: what does D do on input Ã¢Å¸Â¨DÃ¢Å¸Â©?
-- If D halts on Ã¢Å¸Â¨DÃ¢Å¸Â©, then H(Ã¢Å¸Â¨D, Ã¢Å¸Â¨DÃ¢Å¸Â©Ã¢Å¸Â©) = accept. But then D would loop (by construction). Contradiction.
-- If D loops on Ã¢Å¸Â¨DÃ¢Å¸Â©, then H(Ã¢Å¸Â¨D, Ã¢Å¸Â¨DÃ¢Å¸Â©Ã¢Å¸Â©) = reject. But then D would halt. Contradiction.
+Now ask: what does D do on input ⟨D⟩?
+- If D halts on ⟨D⟩, then H(⟨D, ⟨D⟩⟩) = accept. But then D would loop (by construction). Contradiction.
+- If D loops on ⟨D⟩, then H(⟨D, ⟨D⟩⟩) = reject. But then D would halt. Contradiction.
 
 Thus H cannot exist. HALT_TM is undecidable.
 
-**Intuition:** The halting problem asks a TM to predict its own behavior â†’ a task that leads to paradox, much like the self-referential "This statement is false."
+**Intuition:** The halting problem asks a TM to predict its own behavior → a task that leads to paradox, much like the self-referential "This statement is false."
 
 ### 10.3 The Diagonalization Language
 
 
-Define A_TM = { Ã¢Å¸Â¨M, wÃ¢Å¸Â© | M accepts w }.
+Define A_TM = { ⟨M, w⟩ | M accepts w }.
 
 **Theorem:** A_TM is undecidable (but RE).
 
 **Proof:** Similar diagonalization. Assume decider H for A_TM. Construct D:
-- D(Ã¢Å¸Â¨MÃ¢Å¸Â©): Run H(Ã¢Å¸Â¨M, Ã¢Å¸Â¨MÃ¢Å¸Â©Ã¢Å¸Â©). If H accepts, D rejects; if H rejects, D accepts.
-- Question: does D accept Ã¢Å¸Â¨DÃ¢Å¸Â©?
-  - If D accepts Ã¢Å¸Â¨DÃ¢Å¸Â©, then H(Ã¢Å¸Â¨D, Ã¢Å¸Â¨DÃ¢Å¸Â©Ã¢Å¸Â©) = accept, so D should reject. Contradiction.
-  - If D rejects Ã¢Å¸Â¨DÃ¢Å¸Â©, then H(Ã¢Å¸Â¨D, Ã¢Å¸Â¨DÃ¢Å¸Â©Ã¢Å¸Â©) = reject, so D should accept. Contradiction.
+- D(⟨M⟩): Run H(⟨M, ⟨M⟩⟩). If H accepts, D rejects; if H rejects, D accepts.
+- Question: does D accept ⟨D⟩?
+  - If D accepts ⟨D⟩, then H(⟨D, ⟨D⟩⟩) = accept, so D should reject. Contradiction.
+  - If D rejects ⟨D⟩, then H(⟨D, ⟨D⟩⟩) = reject, so D should accept. Contradiction.
 - Therefore H cannot exist.
 
 ### 10.4 The Post Correspondence Problem (PCP)
@@ -146,15 +146,15 @@ A solution: 1, 3, 2, 3 gives:
 
 A **reduction** is a way to convert one problem to another so that a solution to the second can be used to solve the first.
 
-If A reduces to B (written A Ã¢â€°Â¤ B), then:
+If A reduces to B (written A ≤ B), then:
 - If B is decidable, then A is decidable.
 - If A is undecidable, then B is undecidable.
 
-**Mapping reduction (many-one reduction):** A Ã¢â€°Â¤_m B if there is a computable function f such that w Ã¢Ë†Ë† A iff f(w) Ã¢Ë†Ë† B.
+**Mapping reduction (many-one reduction):** A ≤_m B if there is a computable function f such that w ∈ A iff f(w) ∈ B.
 
 To prove B is undecidable using a reduction:
 1. Choose a known undecidable problem A (e.g., A_TM or HALT_TM).
-2. Show A Ã¢â€°Â¤_m B by constructing a computable function f mapping instances of A to instances of B.
+2. Show A ≤_m B by constructing a computable function f mapping instances of A to instances of B.
 3. Conclude B is undecidable.
 
 ### 10.5 Decidable Problems About Regular Languages
@@ -165,22 +165,22 @@ All of the following are decidable (proved in Chapter 4):
 1. **DFA acceptance:** Given DFA M and string w, does M accept w? (O(|w|) by simulation.)
 2. **NFA acceptance:** Given NFA M and string w, does M accept w? (Convert to DFA or simulate directly.)
 3. **RE acceptance:** Given regex r and string w, does r generate w? (Convert to DFA.)
-4. **DFA emptiness:** Given DFA M, is L(M) = Ã¢Ë†â€¦? (Check reachability of accepting states.)
-5. **DFA equivalence:** Given DFAs MÃ¢â€šÂ and MÃ¢â€šâ€š, is L(MÃ¢â€šÂ) = L(MÃ¢â€šâ€š)? (Minimize and check isomorphism.)
+4. **DFA emptiness:** Given DFA M, is L(M) = ∅? (Check reachability of accepting states.)
+5. **DFA equivalence:** Given DFAs M₁ and M₂, is L(M₁) = L(M₂)? (Minimize and check isomorphism.)
 6. **DFA finiteness:** Is L(M) finite? (Check for cycles that can reach an accept state.)
 
 ### 10.6 Decidable Problems About CFLs
 
 
-1. **CFG membership:** Given CFG G and string w, does G generate w? (CYK algorithm, O(nÃ‚Â³).)
-2. **CFG emptiness:** Given CFG G, is L(G) = Ã¢Ë†â€¦? (Check if S generates a terminal string.)
+1. **CFG membership:** Given CFG G and string w, does G generate w? (CYK algorithm, O(n³).)
+2. **CFG emptiness:** Given CFG G, is L(G) = ∅? (Check if S generates a terminal string.)
 3. **CFG finiteness:** Is L(G) finite? (Check for cycles in the variable dependency graph.)
 
 **Undecidable for CFLs:**
-1. **CFG equivalence:** Given two CFGs GÃ¢â€šÂ and GÃ¢â€šâ€š, is L(GÃ¢â€šÂ) = L(GÃ¢â€šâ€š)?
+1. **CFG equivalence:** Given two CFGs G₁ and G₂, is L(G₁) = L(G₂)?
 2. **CFG ambiguity:** Is G ambiguous?
-3. **CFG inclusion:** Is L(GÃ¢â€šÂ) Ã¢Å â€  L(GÃ¢â€šâ€š)?
-4. **CFG universality:** Does G generate ÃŽÂ£*?
+3. **CFG inclusion:** Is L(G₁) ⊆ L(G₂)?
+4. **CFG universality:** Does G generate Σ*?
 
 ### 10.7 Undecidable Problems About TMs
 
@@ -191,8 +191,8 @@ Once we have one undecidable problem (A_TM), we can prove many others undecidabl
 |---------|-------------|--------|
 | A_TM | Does TM M accept w? | Undecidable, RE |
 | HALT_TM | Does TM M halt on w? | Undecidable, RE |
-| EMPTY_TM | Is L(M) = Ã¢Ë†â€¦? | Undecidable, not RE |
-| EQ_TM | Do MÃ¢â€šÂ and MÃ¢â€šâ€š accept the same language? | Undecidable, not RE |
+| EMPTY_TM | Is L(M) = ∅? | Undecidable, not RE |
+| EQ_TM | Do M₁ and M₂ accept the same language? | Undecidable, not RE |
 | REGULAR_TM | Is L(M) regular? | Undecidable, not RE |
 | FINITE_TM | Is L(M) finite? | Undecidable, not RE |
 | TOTAL_TM | Does M halt on all inputs? | Undecidable, not RE |
@@ -220,7 +220,7 @@ Hilbert's tenth problem (1900) asked for an algorithm to determine whether a giv
 
 **Theorem (Matiyasevich, 1970):** Hilbert's tenth problem is undecidable.
 
-This was proved by showing that every RE language can be represented as the set of solutions to a Diophantine equation â€” the **MRDP theorem** (Matiyasevich, Robinson, Davis, Putnam). This means there is no general algorithm for solving polynomial equations over integers, a result with profound implications for number theory and automated theorem proving.
+This was proved by showing that every RE language can be represented as the set of solutions to a Diophantine equation — the **MRDP theorem** (Matiyasevich, Robinson, Davis, Putnam). This means there is no general algorithm for solving polynomial equations over integers, a result with profound implications for number theory and automated theorem proving.
 
 ```mermaid
 flowchart TD
@@ -239,47 +239,47 @@ flowchart TD
 
 Rice's theorem is a powerful generalization: any non-trivial property of the language of a TM is undecidable.
 
-**Rice's Theorem:** Let P be a set of RE languages (a "property"). If P is non-trivial (not empty and not all RE languages), then the language { Ã¢Å¸Â¨MÃ¢Å¸Â© | L(M) Ã¢Ë†Ë† P } is undecidable.
+**Rice's Theorem:** Let P be a set of RE languages (a "property"). If P is non-trivial (not empty and not all RE languages), then the language { ⟨M⟩ | L(M) ∈ P } is undecidable.
 
 **Examples of undecidable properties:**
-- Does M accept at least one string? (L(M) Ã¢â€°Â  Ã¢Ë†â€¦)
+- Does M accept at least one string? (L(M) ≠ ∅)
 - Does M accept exactly 42 strings? (|L(M)| = 42)
-- Does M accept all strings? (L(M) = ÃŽÂ£*)
+- Does M accept all strings? (L(M) = Σ*)
 - Is L(M) regular?
 - Is L(M) context-free?
 
 **Examples of decidable properties (trivial or syntactic):**
 - Does M have exactly 10 states? (Syntactic, not about the language.)
-- Is L(M) = Ã¢Ë†â€¦ where M is a DFA? (Not about TMs â†’ Rice's theorem applies to TMs only.)
+- Is L(M) = ∅ where M is a DFA? (Not about TMs → Rice's theorem applies to TMs only.)
 
 ## Examples
 
 ### Example 10.1: Reducing HALT_TM to EMPTY_TM
 
-Show that EMPTY_TM = { Ã¢Å¸Â¨MÃ¢Å¸Â© | L(M) = Ã¢Ë†â€¦ } is undecidable.
+Show that EMPTY_TM = { ⟨M⟩ | L(M) = ∅ } is undecidable.
 
-**Reduction:** Given Ã¢Å¸Â¨M, wÃ¢Å¸Â© (an instance of HALT_TM), construct M_w:
+**Reduction:** Given ⟨M, w⟩ (an instance of HALT_TM), construct M_w:
 - M_w(x): Simulate M on w. If M halts (accepts or rejects), accept x.
-- Note: If M halts on w, M_w accepts ALL inputs. L(M_w) = ÃŽÂ£* Ã¢â€°Â  Ã¢Ë†â€¦.
-- If M loops on w, M_w never finishes simulating, so M_w never accepts anything. L(M_w) = Ã¢Ë†â€¦.
+- Note: If M halts on w, M_w accepts ALL inputs. L(M_w) = Σ* ≠ ∅.
+- If M loops on w, M_w never finishes simulating, so M_w never accepts anything. L(M_w) = ∅.
 
-Thus: M halts on w Ã¢Å¸Â¹ L(M_w) Ã¢â€°Â  Ã¢Ë†â€¦. M loops on w Ã¢Å¸Â¹ L(M_w) = Ã¢Ë†â€¦.
-Therefore, HALT_TM Ã¢â€°Â¤_m EMPTY_TM.
+Thus: M halts on w ⟹ L(M_w) ≠ ∅. M loops on w ⟹ L(M_w) = ∅.
+Therefore, HALT_TM ≤_m EMPTY_TM.
 
-If EMPTY_TM were decidable, we could decide HALT_TM â†’ contradiction. So EMPTY_TM is undecidable.
+If EMPTY_TM were decidable, we could decide HALT_TM → contradiction. So EMPTY_TM is undecidable.
 
 ### Example 10.2: Reducing A_TM to REGULAR_TM
 
-Show REGULAR_TM = { Ã¢Å¸Â¨MÃ¢Å¸Â© | L(M) is regular } is undecidable.
+Show REGULAR_TM = { ⟨M⟩ | L(M) is regular } is undecidable.
 
-**Reduction:** Given Ã¢Å¸Â¨M, wÃ¢Å¸Â©, construct M':
-- M'(x): Simulate M on w. If M accepts w, then accept x if x Ã¢Ë†Ë† {0Ã¢ÂÂ¿1Ã¢ÂÂ¿ | n Ã¢â€°Â¥ 0}. If M rejects w, reject x.
-- If M doesn't accept w (rejects or loops), M' never accepts anything. L(M') = Ã¢Ë†â€¦ (regular).
-- If M accepts w, then M' accepts {0Ã¢ÂÂ¿1Ã¢ÂÂ¿ | n Ã¢â€°Â¥ 0} (non-regular).
+**Reduction:** Given ⟨M, w⟩, construct M':
+- M'(x): Simulate M on w. If M accepts w, then accept x if x ∈ {0ⁿ1ⁿ | n ≥ 0}. If M rejects w, reject x.
+- If M doesn't accept w (rejects or loops), M' never accepts anything. L(M') = ∅ (regular).
+- If M accepts w, then M' accepts {0ⁿ1ⁿ | n ≥ 0} (non-regular).
 
-Thus: Ã¢Å¸Â¨M, wÃ¢Å¸Â© Ã¢Ë†Ë† A_TM Ã¢Å¸Â¹ L(M') is non-regular. Ã¢Å¸Â¨M, wÃ¢Å¸Â© Ã¢Ë†â€° A_TM Ã¢Å¸Â¹ L(M') is regular (empty).
+Thus: ⟨M, w⟩ ∈ A_TM ⟹ L(M') is non-regular. ⟨M, w⟩ ∉ A_TM ⟹ L(M') is regular (empty).
 
-A decider for REGULAR_TM would decide A_TM â†’ contradiction.
+A decider for REGULAR_TM would decide A_TM → contradiction.
 
 ### Example 10.3: Applying Rice's Theorem
 
@@ -289,23 +289,23 @@ This is non-trivial:
 - Some TMs accept "hello" (e.g., a TM that accepts only "hello").
 - Some TMs don't (e.g., a TM that rejects everything).
 
-By Rice's theorem, { Ã¢Å¸Â¨MÃ¢Å¸Â© | "hello" Ã¢Ë†Ë† L(M) } is undecidable.
+By Rice's theorem, { ⟨M⟩ | "hello" ∈ L(M) } is undecidable.
 
-### Example 10.4: Decidable Problems â†’ DFA Emptiness
+### Example 10.4: Decidable Problems → DFA Emptiness
 
-**Algorithm** for EMPTY_DFA = { Ã¢Å¸Â¨MÃ¢Å¸Â© | M is a DFA and L(M) = Ã¢Ë†â€¦ }:
+**Algorithm** for EMPTY_DFA = { ⟨M⟩ | M is a DFA and L(M) = ∅ }:
 1. Mark the start state.
 2. Repeat: mark any state reachable from a marked state.
-3. If no accepting state is marked, accept (L(M) = Ã¢Ë†â€¦). Otherwise reject.
+3. If no accepting state is marked, accept (L(M) = ∅). Otherwise reject.
 This is essentially graph reachability, runtime O(|Q| + |E|).
 
-### Example 10.5: Decidable Problems â†’ CFG Membership
+### Example 10.5: Decidable Problems → CFG Membership
 
-**Algorithm** for A_CFG = { Ã¢Å¸Â¨G, wÃ¢Å¸Â© | G generates w }:
+**Algorithm** for A_CFG = { ⟨G, w⟩ | G generates w }:
 1. Convert G to CNF.
 2. Run the CYK algorithm on G and w.
-3. If S Ã¢Ë†Ë† T[1,n], accept. Otherwise reject.
-Runtime O(nÃ‚Â³) where n = |w|.
+3. If S ∈ T[1,n], accept. Otherwise reject.
+Runtime O(n³) where n = |w|.
 
 
 
@@ -313,9 +313,9 @@ Runtime O(nÃ‚Â³) where n = |w|.
 | Problem | Status | Class |
 |---------|--------|-------|
 | DFA membership | Decidable | P |
-| CFG membership | Decidable | P (O(nÂ³)) |
+| CFG membership | Decidable | P (O(n³)) |
 | DFA equivalence | Decidable | P |
-| CFG equivalence | Undecidable | â€” |
+| CFG equivalence | Undecidable | — |
 | Halting problem | Undecidable | RE |
 
 ## Quick Reference
@@ -407,7 +407,7 @@ function haltToEmptyReduction(
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B)** Diagonalization creates a self-referential contradiction â€” "what does D do on input ?D??"
+**B)** Diagonalization creates a self-referential contradiction — "what does D do on input ?D??"
 </details>
 
 **Q3.** Which is decidable?
@@ -418,7 +418,7 @@ function haltToEmptyReduction(
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B)** DFA membership is decidable â€” simply simulate the DFA on the input string.
+**B)** DFA membership is decidable — simply simulate the DFA on the input string.
 </details>
 
 **Q4.** Rice's theorem applies to:
@@ -491,7 +491,7 @@ class DecisionProblemClassifier {
       p.name.toLowerCase().includes(model.toLowerCase()) ||
       p.question.toLowerCase().includes(question.toLowerCase())
     );
-    return match || `Unknown problem: "${model}: ${question}" â€” research required`;
+    return match || `Unknown problem: "${model}: ${question}" — research required`;
   }
 
   static listUndecidable(): DecisionProblem[] {
@@ -544,7 +544,7 @@ class HaltingProblem {
   static undecidabilityReduction(): string[] {
     return [
       "Standard undecidability reduction chain:",
-      "HALT (Halting Problem) â€” PCP (Post Correspondence Problem)",
+      "HALT (Halting Problem) — PCP (Post Correspondence Problem)",
       "   ?                                            ?",
       "A_TM (TM Acceptance)                    EMPTY_TM (TM Emptiness)",
       "   ?                                            ?",
@@ -600,7 +600,7 @@ class ReductionMapper {
     m.set("A_TM (TM Acceptance)",
       "Given ?M, w?, does TM M accept input w?");
     m.set("EMPTY_TM (TM Emptiness)",
-      "Given TM M, does L(M) = Ã˜?");
+      "Given TM M, does L(M) = Ø?");
     m.set("EQ_TM (TM Equivalence)",
       "Given TMs M1, M2, do they recognize the same language?");
     m.set("REGULAR_TM (Regularity of TM languages)",
@@ -647,7 +647,7 @@ class DecidabilityClassifier {
   ]);
 
   static classify(problem: string): string {
-    return this.knownResults.get(problem) || "Unknown â€” research frontier";
+    return this.knownResults.get(problem) || "Unknown — research frontier";
   }
 
   static table(): string[] {
@@ -716,7 +716,7 @@ main().catch(console.error)
 export { Processor, Task }
 ## Summary
 
-- The halting problem (does TM M halt on w?) is undecidable â€” proved via diagonalization.
+- The halting problem (does TM M halt on w?) is undecidable — proved via diagonalization.
 - A_TM (does TM M accept w?) is undecidable but RE.
 - Reductions show new problems are undecidable by relating them to known undecidable problems.
 - All problems about DFAs (membership, emptiness, equivalence) are decidable.
@@ -732,7 +732,7 @@ export { Processor, Task }
 2. Show that the acceptance problem for DFAs (A_DFA) is decidable.
 3. Show that the emptiness problem for CFGs is decidable.
 4. Reduce HALT_TM to A_TM (show A_TM is at least as hard as HALT_TM).
-5. Apply Rice's theorem to prove that { Ã¢Å¸Â¨MÃ¢Å¸Â© | L(M) is finite } is undecidable.
+5. Apply Rice's theorem to prove that { ⟨M⟩ | L(M) is finite } is undecidable.
 
 ### Intermediate
 
@@ -846,10 +846,10 @@ While many problems are undecidable in general, practical tools use **conservati
 
 ### Example: Decidable Fragment of First-Order Logic
 
-The **Bernays-SchÃ¶nfinkel class** (?*?* formulas without function symbols) is decidable. This "effectively propositional" fragment underpins many SMT-based verification tools:
+The **Bernays-Schönfinkel class** (?*?* formulas without function symbols) is decidable. This "effectively propositional" fragment underpins many SMT-based verification tools:
 
 ```typescript
-// The Bernays-SchÃ¶nfinkel fragment is ?*?* quantifier prefix
+// The Bernays-Schönfinkel fragment is ?*?* quantifier prefix
 // Formulas like: ?x ?y ?z (P(x,y) ? Q(x,z) ? R(y,z))
 // are decidable because Herbrand's theorem limits the search space
 
@@ -860,7 +860,7 @@ type BSSentence = {
 };
 
 function checkBSDecidability(formula: BSSentence): boolean {
-  // The Bernays-SchÃ¶nfinkel class is decidable
+  // The Bernays-Schönfinkel class is decidable
   // because it satisfies the finite model property
   const baseSize = formula.existentialVars.length;
   const uVars = formula.universalVars.length;
@@ -870,7 +870,7 @@ function checkBSDecidability(formula: BSSentence): boolean {
   // Finite model check is guaranteed to terminate
 
   console.log(
-    `BS formula with ${baseSize} ? and ${uVars} ? vars â€” decidable`
+    `BS formula with ${baseSize} ? and ${uVars} ? vars — decidable`
   );
   return true; // Decision procedure exists
 }
@@ -886,7 +886,7 @@ flowchart TD
     C -->|No| E["Check syntactic<br/>or trivial"]
     B -->|No| F{Can we reduce<br/>known undecidable<br/>problem to P?}
     F -->|Yes| D
-    F -->|No| G["Unknown â€” may be<br/>decidable"]
+    F -->|No| G["Unknown — may be<br/>decidable"]
     E --> H{Is it about<br/>DFA/CFG?}
     H -->|Yes| I["Likely decidable"]
     H -->|No| F
